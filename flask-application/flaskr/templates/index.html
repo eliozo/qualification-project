@@ -18,5 +18,14 @@
     <div class="container">
     {{jsonfile}}
   </div>
+  <h2>Linki</h2>
+  {{ my_id }}
+  <ul>
+  {% for link in links %}
+  <li>
+    <a href="{{link.obj.value}}">{{ link.label.value }}</a>
+  </li>
+  {% endfor %}
+  </ul>
   </body>
 </html>
