@@ -11,14 +11,18 @@ def getSPARQLtopics():
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
-    'SELECT * WHERE { ?sub eozol:skill ?obj . ?obj skos:prefLabel ?label . } LIMIT 10\n'
+    # 'SELECT * WHERE { ?sub eozol:skill ?obj . ?obj skos:prefLabel ?label . } LIMIT 10\n'
+    'SELECT * WHERE { ?sub eozol:skill ?obj . } ORDER BY ?sub \n'
     }
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
 
     x = requests.post(url, myobj, head)
 
+    print(x)
+
     return x.text
+
 
 def create_app(test_config=None):
     # create and configure the app
@@ -46,6 +50,15 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World!'
 
+    @app.route('/')
+    def main():
+        return render_template('main.html')
+
+    @app.route('/skills')
+    def topics():
+        return render_template('skills.html')
+
+
     # json 
     @app.route("/json")
     def getJson():
@@ -56,9 +69,6 @@ def create_app(test_config=None):
 
     @app.route('/index', methods=['GET','POST'])
     def getIndex():
-        #with open('C:/Users/eliz_/Documents/qualification-project/flask-application/data/file.json', 'r', encoding="utf-8") as myfile:
-            #data = myfile.read()
-        #data = json.load(open('C:/Users/eliz_/Documents/qualification-project/flask-application/data/file.json', 'r', encoding='utf-8'))
         data = json.loads(getSPARQLtopics()) 
 
         template_context = {
@@ -67,7 +77,6 @@ def create_app(test_config=None):
         }
     
         return render_template('index.html', **template_context)
-
 
     # register the database commands
 

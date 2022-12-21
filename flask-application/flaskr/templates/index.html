@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <title>House</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
@@ -11,7 +12,7 @@
       crossorigin="anonymous"
     />
     <script>
-      var jsonfile ={{jsonfile}};
+ {# var jsonfile ={{ jsonfile }}; #}    
     </script>
   </head>
   <body>
@@ -20,12 +21,20 @@
   </div>
   <h2>Linki</h2>
   {{ my_id }}
-  <ul>
-  {% for link in links %}
-  <li>
-    <a href="{{link.obj.value}}">{{ link.label.value }}</a>
-  </li>
-  {% endfor %}
-  </ul>
+  <table class="tasks">
+    <colgroup>
+    <col class="aaa">
+    <col class="bbb">
+    <col class="ccc">
+    </colgroup><tbody>
+    <tr><th>Prasmes kods</th><th>Piemēri</th></tr>
+    {% for link in links %}
+    <tr class="{{ loop.cycle('odd', 'even') }}">{{ row }}
+    <td><a href="{{link.obj.value}}">{{ link.obj.value }}</a></td>
+    <td>&nbsp;</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
   </body>
 </html>

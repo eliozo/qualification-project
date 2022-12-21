@@ -1,0 +1,34 @@
+table.tasks, table.proofs {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-left: 5%;
+}
+
+table.tasks tr td, table.proofs tr td {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+table.tasks tr th, table.proofs tr th {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 120%;
+}
+
+table.tasks tr.odd, table.proofs tr.odd {
+    background-color: #eeeeee;
+}
+
+table.tasks col.aaa, table.proofs col.aaa {
+    width: 25%;
+}
+
+table.tasks col.bbb, table.proofs col.bbb {
+    width: 40%;
+}
+
+table.tasks col.ccc, table.proofs col.ccc {
+    width: 35%;
+}
