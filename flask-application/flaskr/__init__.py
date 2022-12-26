@@ -1,8 +1,9 @@
 import os
-from flask import Flask, render_template, abort, url_for, json, jsonify
+from flask import Flask, render_template, abort, url_for, json, jsonify, request
 import json
 import html
 import requests
+import re
 
 def getSPARQLtopics():
 
@@ -20,6 +21,24 @@ def getSPARQLtopics():
     x = requests.post(url, myobj, head)
 
     print(x)
+
+    return x.text
+
+def getSkillProblemsSPARQL(skillID):
+    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
+    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
+    'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
+    'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
+    # 'SELECT ?sub ?text WHERE { ?sub eozol:skill \''+skillID+'\' ; eozol:text ?text . } ORDER BY ?obj '
+    'SELECT ?problemid ?text WHERE { ?sub eozol:problemid ?problemid . ?sub eozol:skill \''+skillID+'\' . ?sub eozol:text ?text . } ORDER BY ?problemid'
+    }
+
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+
+    x = requests.post(url, myobj, head)
+
+    print(x.text)
 
     return x.text
 
@@ -44,11 +63,6 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
-    
-    # a simple page that says hello
-    @app.route('/hello')
-    def hello():
-        return 'Hello, World!'
 
     @app.route('/')
     def main():
@@ -77,6 +91,22 @@ def create_app(test_config=None):
         }
     
         return render_template('index.html', **template_context)
+
+    @app.route('/skill', methods=['GET','POST'])
+    def getSkill():
+        skill = request.args.get('skillID') 
+        data = json.loads(getSkillProblemsSPARQL(skill))
+        problem_list = []
+        for data_item in data['results']['bindings']:
+            a = data_item['text']['value']
+            b = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", a)
+            problem_list.append({'problemid': data_item['problemid']['value'], 'text': b})
+
+        template_context = {
+            'skill': skill,
+            'problem_list': problem_list
+        }
+        return render_template('skill.html', **template_context)
 
     # register the database commands
 

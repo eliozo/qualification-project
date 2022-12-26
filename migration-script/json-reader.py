@@ -41,11 +41,13 @@ def addToRdfGraph(title, text, country, olympiad, year, grade):
     problem_year_property = rdflib.URIRef(eozol_ns+'year')
     problem_grade_property = rdflib.URIRef(eozol_ns+'grade')
     problem_text = rdflib.term.Literal(text, lang=u'lv')
+    problem_id = rdflib.URIRef(eozol_ns+'problemid')
     g.add((problem_node, problem_text_property, problem_text))
     g.add((problem_node, problem_country_property, rdflib.term.Literal(country)))
     g.add((problem_node, problem_olympiad_property, rdflib.term.Literal(olympiad)))
     g.add((problem_node, problem_year_property, rdflib.term.Literal(year)))
     g.add((problem_node, problem_grade_property, rdflib.term.Literal(grade)))
+    g.add((problem_node, problem_id, rdflib.term.Literal(title)))
 
 current_problem_id = "NA"
 
@@ -103,7 +105,7 @@ for item in items:
             # print('#################{}'.format(skill_item))
             if skill_item['type'] == 'ListItem':
                 skill = skill_item['children'][0]['children'][0]['children'][0]['content']
-                print('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$${}'.format(skill))
+                print('{}'.format(skill))
                 addSkillToRdfGraph(current_problem_id, skill)
     else:
         state = 0

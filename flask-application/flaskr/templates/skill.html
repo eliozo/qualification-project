@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>Prasmes uzdevumi</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    type="text/javascript"></script>
+  <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+  <script>
+    {# var jsonfile = {{ jsonfile } }; #}    
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    {{jsonfile}}
+  </div>
+  <h2>{{ skill }}</h2>
+  <p>  <span class="math inline">\((a+b)^2\)</span> </p>
+  {% for problem in problem_list %}
+  <h3>Uzdevums: {{ problem.problemid }} </h3>
+  <p> {{ problem.text |safe }}</p>
+  <hr>
+  {% endfor %}
+</body>
+
+</html>

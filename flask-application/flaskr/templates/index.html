@@ -30,7 +30,7 @@
     <tr><th>Prasmes kods</th><th>Piemēri</th></tr>
     {% for link in links %}
     <tr class="{{ loop.cycle('odd', 'even') }}">{{ row }}
-    <td><a href="{{link.obj.value}}">{{ link.obj.value }}</a></td>
+    <td><a href="/skill?skillID={{link.obj.value}}">{{ link.obj.value }}</a></td>
     <td>&nbsp;</td>
     </tr>
     {% endfor %}
