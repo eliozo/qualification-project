@@ -14,8 +14,6 @@ g.bind("foaf", FOAF)
 g.bind("skos", SKOS)
 g.bind("eozol", EOZOL)
 
-
-
 # Opening JSON file
 f = open('out.json')
   
