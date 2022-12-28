@@ -3,6 +3,7 @@ import mistletoe
 import mistletoe.ast_renderer
 import requests
 import csv
+from json_reader import *
 
 file_path = "out.json"
 
@@ -39,6 +40,7 @@ def convertToJSON(URL_suffix):
             out_file = open(URL_suffix[1]+'-'+file_path, "w", encoding='utf-8')
             out_file.write(rendered)
             out_file.close()
+    produceRDF(URL_suffix[1]+'-'+file_path, URL_suffix[1]+'-'+'tbl.ttl')
     
 
 if __name__ == '__main__':
