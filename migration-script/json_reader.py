@@ -34,7 +34,6 @@ def addSkillToRdfGraph(g, title, skill):
 
 def produceRDF(in_file, out_file):
     EOZOL = rdflib.Namespace("http://www.dudajevagatve.lv/eozol#")
-    # SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
 
     g = rdflib.Graph()
 
