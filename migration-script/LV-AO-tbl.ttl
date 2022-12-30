@@ -52,44 +52,44 @@ tieši vienai no tām."""@lv ;
     eozol:year "2000" .
 
 eozol:LV.AO.2000.7.1 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2000.7.1" ;
-    eozol:skill "alg.tra.binom.square" ;
+    eozol:skill eozol:alg.tra.binom.square ;
     eozol:text """Dots, ka $a,b,c,d$ – naturāli skaitļi un $ab=cd$. Pierādīt, ka skaitli $a^2 + b^2 + c^2 + d^2$
 var izsacīt kā divu veselu skaitļu kvadrātu summu. Vai to noteikti var izsacīt kā divu naturālu skaitļu kvadrātu summu?"""@lv ;
     eozol:year "2000" .
 
 eozol:LV.AO.2000.7.2 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2000.7.2" ;
-    eozol:skill "div.fta.divisors",
-        "mod.exp.fermat" ;
+    eozol:skill eozol:div.fta.divisors,
+        eozol:mod.exp.fermat ;
     eozol:text "Atrast mazāko naturālo skaitli, kam visi cipari ir vienādi un kas dalās ar $49$?"@lv ;
     eozol:year "2000" .
 
 eozol:LV.AO.2000.7.4 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2000.7.4" ;
-    eozol:skill "comb.full",
-        "div.prop.primes.small",
-        "misc.extr.pigeon" ;
+    eozol:skill eozol:comb.full,
+        eozol:div.prop.primes.small,
+        eozol:misc.extr.pigeon ;
     eozol:text "Vai naturālos skaitļus"@lv ;
     eozol:year "2000" .
 
 eozol:LV.AO.2000.8.3 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2000.8.3" ;
-    eozol:skill "misc.extr.pigeon",
-        "misc.ind" ;
+    eozol:skill eozol:misc.extr.pigeon,
+        eozol:misc.ind ;
     eozol:text "Uz katras no vairākām kartītēm uzrakstīts pa naturālam skaitlim (starp tiem var būt arī vienādi); uz visām kartītēm uzrakstīto skaitļu summa ir $100$. Vai noteikti var atrast tādas kartītes (varbūt vienu pašu), uz kurām uzrakstīto skaitļu summa ir $50$, ja kartīšu skaits ir"@lv ;
     eozol:year "2000" .
 
 eozol:LV.AO.2000.9.2 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2000.9.2" ;
     eozol:text """Vai skaitli
@@ -100,7 +100,7 @@ kvadrātiem apgriezto lielumu summu?"""@lv ;
     eozol:year "2000" .
 
 eozol:LV.AO.2000.9.4 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2000.9.4" ;
     eozol:text """Apskatām pirmos $n$ naturālos skaitļus. No tiem jāizvēlas divus tā,
@@ -140,12 +140,12 @@ eozol:LV.AO.2001.12.2 eozol:country "LV" ;
     eozol:year "2001" .
 
 eozol:LV.AO.2001.7.2 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2001.7.2" ;
-    eozol:skill "mod.congr",
-        "nota.combine.poly",
-        "nota.divrule.1001" ;
+    eozol:skill eozol:mod.congr,
+        eozol:nota.combine.poly,
+        eozol:nota.divrule.1001 ;
     eozol:text """Naturālu skaitli sauc par simetrisku, ja tā pēdējais cipars
 nav $0$ un, uzrakstot tā ciparus apgrieztā secībā,
 skaitlis nemainās. Piemēram, $1221$ ir simetrisks skaitlis, bet $1231$ - nav.
@@ -154,12 +154,12 @@ skaitlis nemainās. Piemēram, $1221$ ir simetrisks skaitlis, bet $1231$ - nav.
     eozol:year "2001" .
 
 eozol:LV.AO.2001.8.3 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2001.8.3" ;
-    eozol:skill "alg.ineq.equations",
-        "alg.tra.factor",
-        "nota.combine.split" ;
+    eozol:skill eozol:alg.ineq.equations,
+        eozol:alg.tra.factor,
+        eozol:nota.combine.split ;
     eozol:text """Andrim vajadzēja sareizināt divus dažādus pozitīvus trīsciparu skaitļus.
 Izklaidības pēc viņš tos vienkārši uzrakstīja vienu otram galā.
 Iegūtais sešciparu skaitlis izrādījās $3$ reizes lielāks par reizinājumu,
@@ -167,7 +167,7 @@ kuru Andrim vajadzēja iegūt. Kādu sešciparu skaitli Andris uzrakstīja?"""@l
     eozol:year "2001" .
 
 eozol:LV.AO.2001.9.4 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2001.9.4" ;
     eozol:text """Dots, ka $x,y,z$ - naturāli skaitļi un katrs no
@@ -206,10 +206,10 @@ Kādiem $n$ skaitlis $a_n$ dalās ar $11$?"""@lv ;
     eozol:year "2002" .
 
 eozol:LV.AO.2002.7.4 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2002.7.4" ;
-    eozol:skill "comb.constr.partition" ;
+    eozol:skill eozol:comb.constr.partition ;
     eozol:text """Divi spēlētāji pamīšus raksta uz tāfeles pa vienam
 naturālam skaitlim no $1$ līdz $8$ ieskaitot.
 Nedrīkst rakstīt skaitļus, ar kuriem dalās kaut
@@ -219,22 +219,22 @@ Parādiet, kā tas, kas izdara pirmo gājienu, var uzvarēt."""@lv ;
     eozol:year "2002" .
 
 eozol:LV.AO.2002.7.5 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2002.7.5" ;
-    eozol:skill "misc.extr.pigeon",
-        "misc.symm.periodicity" ;
+    eozol:skill eozol:misc.extr.pigeon,
+        eozol:misc.symm.periodicity ;
     eozol:text """Kādu lielāko daudzumu dažādu naturālu skaitļu, kas nepārsniedz $100$, var izvēlēties tā,
 lai nekādu divu izvēlēto skaitļu starpība nebūtu ne $3$, ne $4$, ne $7$?"""@lv ;
     eozol:year "2002" .
 
 eozol:LV.AO.2002.8.2 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2002.8.2" ;
-    eozol:skill "alg.ineq.equations",
-        "alg.tra.factor",
-        "nota.combine.split" ;
+    eozol:skill eozol:alg.ineq.equations,
+        eozol:alg.tra.factor,
+        eozol:nota.combine.split ;
     eozol:text """Andrim vajadzēja sareizināt divus dažādus divciparu skaitļus. Izklaidības pēc
 viņš tos vienkārši uzrakstīja vienu otram galā. Iegūtais četrciparu skaitlis izrādījās
 $3$ reizes lielāks par reizinājumu, kuru Andrim vajadzēja iegūt.
@@ -242,10 +242,10 @@ Kādu četrciparu skaitli Andris uzrakstīja?"""@lv ;
     eozol:year "2002" .
 
 eozol:LV.AO.2002.8.3 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2002.8.3" ;
-    eozol:skill "misc.extr.param" ;
+    eozol:skill eozol:misc.extr.param ;
     eozol:text """Par Fibonači skaitļiem sauc skaitļus $1; 2; 3; 5; 8; \\ldots$
 (katru nākošo iegūst, saskaitot divus iepriekšējos).
 Vai var pastāvēt vienādība $a+b=c+d$,
@@ -253,7 +253,7 @@ ja $a$, $b$, $c$, $d$ ir dažādi Fibonači skaitļi?"""@lv ;
     eozol:year "2002" .
 
 eozol:LV.AO.2002.9.3 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2002.9.3" ;
     eozol:text """Dots, ka $x, y, z$ naturāli skaitļi un katrs no
@@ -290,10 +290,10 @@ cik naturālu dalītāju, kas dod atlikumu $2$, dalot ar $3$?"""@lv ;
     eozol:year "2003" .
 
 eozol:LV.AO.2003.7.3 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2003.7.3" ;
-    eozol:skill "comb.constr.partition" ;
+    eozol:skill eozol:comb.constr.partition ;
     eozol:text """Divi spēlētāji pamīšus raksta uz tāfeles pa vienam naturālam
 skaitlim no $1$ līdz $9$ ieskaitot. Nedrīkst rakstīt skaitļus, ar kuriem dalās
 kaut viens jau uzrakstīts skaitlis. Kas nevar izdarīt gājienu, zaudē.
@@ -301,12 +301,12 @@ Parādiet, kā tas, kas izdara pirmo gājienu, var uzvarēt."""@lv ;
     eozol:year "2003" .
 
 eozol:LV.AO.2003.7.5 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2003.7.5" ;
-    eozol:skill "comb.full",
-        "misc.invar.parity",
-        "seq.arithm.summation" ;
+    eozol:skill eozol:comb.full,
+        eozol:misc.invar.parity,
+        eozol:seq.arithm.summation ;
     eozol:text """Uz tāfeles pa reizei uzrakstīti visi naturālie skaitļi no $1$ līdz $n$ ieskaitot.
 Ar vienu gājienu var izvēlēties divus uz tāfeles uzrakstītus skaitļus
 (apzīmēsim tos ar $a$ un $b$), nodzēst tos un to vietā uzrakstīt $\\left| a^2-b^2 \\right|$.
@@ -315,23 +315,23 @@ Vai tas var būt $0$, ja  $n=8$,  $n=9$?"""@lv ;
     eozol:year "2003" .
 
 eozol:LV.AO.2003.8.3 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2003.8.3" ;
-    eozol:skill "div.prop.primes.small",
-        "misc.extr.param" ;
+    eozol:skill eozol:div.prop.primes.small,
+        eozol:misc.extr.param ;
     eozol:text """Kādā lielākajā daudzumā dažādu naturālu saskaitāmo,
 kas visi lielāki par $1$, var sadalīt skaitli $56$ tā, lai katru divu
 saskaitāmo lielākais kopīgais dalītājs būtu $1$?"""@lv ;
     eozol:year "2003" .
 
 eozol:LV.AO.2003.8.5 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2003.8.5" ;
-    eozol:skill "alg.tra.binom.square",
-        "comb.full",
-        "misc.symm.periodicity" ;
+    eozol:skill eozol:alg.tra.binom.square,
+        eozol:comb.full,
+        eozol:misc.symm.periodicity ;
     eozol:text """Uz katras no divām lapām jāuzraksta pa $n$ veseliem pozitīviem skaitļiem.
 Visiem $2n$ uzrakstītajiem skaitļiem jābūt dažādiem. Pie tam uz lapām uzrakstīto
 skaitļu summām jābūt vienādām savā starpā, un uzrakstīto skaitļu
@@ -340,7 +340,7 @@ Vai tas iespējams, ja  $n=3$,  $n=4$,  $n=2003$?"""@lv ;
     eozol:year "2003" .
 
 eozol:LV.AO.2003.9.3 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2003.9.3" ;
     eozol:text """Noskaidrot, kādiem dažādiem pirmskaitļiem
@@ -408,22 +408,22 @@ $(n-1)!$ nedalās ne ar $n$, ne ar $n+2$."""@lv ;
     eozol:year "2004" .
 
 eozol:LV.AO.2004.7.3 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2004.7.3" ;
-    eozol:skill "div.common.gcd.euclid",
-        "div.prop.primes.small" ;
+    eozol:skill eozol:div.common.gcd.euclid,
+        eozol:div.prop.primes.small ;
     eozol:text """Kādam mazākajam naturālajam $n$ visas daļas
 $$\\frac{5}{n+7}, \\frac{6}{n+8}, \\frac{7}{n+9}, \\ldots, \\frac{35}{n+37}, \\frac{36}{n+38}$$
 ir nesaīsināmas?"""@lv ;
     eozol:year "2004" .
 
 eozol:LV.AO.2004.8.3 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2004.8.3" ;
-    eozol:skill "div.fta.divisors",
-        "nota.combine.split" ;
+    eozol:skill eozol:div.fta.divisors,
+        eozol:nota.combine.split ;
     eozol:text """Dots, ka $A$ un $B$ – naturāli divciparu skaitļi. Skaitli $X$ iegūst,
 pierakstot skaitlim $A$ galā skaitli $B$; skaitli $Y$ iegūst,
 pierakstot skaitlim $B$ galā skaitli $A$.
@@ -431,12 +431,12 @@ Dots, ka $X-Y$ dalās ar $91$. Pierādīt, ka $A=B$."""@lv ;
     eozol:year "2004" .
 
 eozol:LV.AO.2004.8.5 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2004.8.5" ;
-    eozol:skill "seq.arithm.numestimate",
-        "seq.geom.estimate",
-        "seq.recur.other" ;
+    eozol:skill eozol:seq.arithm.numestimate,
+        eozol:seq.geom.estimate,
+        eozol:seq.recur.other ;
     eozol:text """Virknē augošā kārtībā izrakstīti naturālie skaitļi no $1$ līdz $2004$ ieskaitot,
 katrs vienu reizi. Izsvītrojam no tās skaitļus, kas atrodas
 $1., 4., 7., 10., \\ldots$ vietās. No palikušās virknes atkal
@@ -446,7 +446,7 @@ kamēr paliek neizsvītrots viens skaitlis. Kurš tas ir?"""@lv ;
     eozol:year "2004" .
 
 eozol:LV.AO.2004.9.5 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2004.9.5" ;
     eozol:text """Kvadrāts sastāv no $n \\times n$ rūtiņām.
@@ -510,27 +510,27 @@ Kurš spēlētājs uzvar, pareizi spēlējot?"""@lv ;
     eozol:year "2005" .
 
 eozol:LV.AO.2005.7.4 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2005.7.4" ;
-    eozol:skill "mod.congr.sumdiff",
-        "nota.divrule.2_5pow" ;
+    eozol:skill eozol:mod.congr.sumdiff,
+        eozol:nota.divrule.2_5pow ;
     eozol:text """Triju veselu pozitīvu skaitļu summa ir $407$.
 Ar kādu lielāko daudzumu nuļļu var beigties šo
 skaitļu reizinājums?"""@lv ;
     eozol:year "2005" .
 
 eozol:LV.AO.2005.8.3 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2005.8.3" ;
-    eozol:skill "comb.full.backtrack" ;
+    eozol:skill eozol:comb.full.backtrack ;
     eozol:text """Kā var sadalīt naturālos skaitļus no 1 līdz 9 ieskaitot divās daļās tā, lai vienas daļas visu skaitļu
 summa būtu vienāda ar otras daļas visu skaitļu reizinājumu?"""@lv ;
     eozol:year "2005" .
 
 eozol:LV.AO.2005.9.1 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2005.9.1" ;
     eozol:text """Atrast mazāko naturālo skaitli, kas dalās ar $225$
@@ -569,12 +569,12 @@ cik naturālu dalītāju, kas dod atlikumu $2$, dalot ar $3$?"""@lv ;
     eozol:year "2006" .
 
 eozol:LV.AO.2006.7.1 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2006.7.1" ;
-    eozol:skill "comb.full",
-        "seq.arithm.expr",
-        "seq.gaps" ;
+    eozol:skill eozol:comb.full,
+        eozol:seq.arithm.expr,
+        eozol:seq.gaps ;
     eozol:text """Vilcienā Rīga-Mehiko vietas numurētas ar naturāliem skaitļiem, sākot ar $1$
 (numerācija ir vienota visam vilcienam, t.i., ir tikai viena vieta ar numuru $1$,
 viena vieta ar numuru $2$ utt; numuri piešķirti virzienā no lokomotīves uz vilciena "asti").
@@ -584,11 +584,11 @@ kas pie tam nav blakus viens otram. Cik vietu ir katrā vagonā?"""@lv ;
     eozol:year "2006" .
 
 eozol:LV.AO.2006.8.3 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2006.8.3" ;
-    eozol:skill "nota.combine.padding",
-        "nota.divrule.2_5_10.divides" ;
+    eozol:skill eozol:nota.combine.padding,
+        eozol:nota.divrule.2_5_10.divides ;
     eozol:text """Naturāla skaitļa $x$ ciparu summu apzīmēsim ar $S(x)$.
 Pieņemsim, ka $n$ – tāds naturāls skaitlis, kam vienlaicīgi
 izpildās īpašības $S(n)=10$ un $S(5n)=5$.
@@ -598,7 +598,7 @@ izpildās īpašības $S(n)=10$ un $S(5n)=5$.
     eozol:year "2006" .
 
 eozol:LV.AO.2006.9.1 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2006.9.1" ;
     eozol:text """Kāda ir lielākā iespējamā ciparu summa septiņciparu
@@ -606,7 +606,7 @@ naturālam skaitlim, kas dalās ar $8$?"""@lv ;
     eozol:year "2006" .
 
 eozol:LV.AO.2006.9.5 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2006.9.5" ;
     eozol:text """Apskatām naturālos skaitļus no $1$ līdz $100$ ieskaitot.
@@ -625,22 +625,22 @@ $999999$. Vai tas var dalīties arī ar $1000001$?"""@lv ;
     eozol:year "2007" .
 
 eozol:LV.AO.2007.7.1 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2007.7.1" ;
-    eozol:skill "comb.graph.cycle",
-        "div.prop.primes.small" ;
+    eozol:skill eozol:comb.graph.cycle,
+        eozol:div.prop.primes.small ;
     eozol:text """Kādu lielāko daudzumu dažādu ciparu var izrakstīt pa apli tā,
 lai katri divi blakus uzrakstīti cipari, lasot tos vienalga
 kādā virzienā, veidotu pirmskaitļa pierakstu?"""@lv ;
     eozol:year "2007" .
 
 eozol:LV.AO.2007.7.3 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2007.7.3" ;
-    eozol:skill "misc.ind.descent",
-        "seq.gaps" ;
+    eozol:skill eozol:misc.ind.descent,
+        eozol:seq.gaps ;
     eozol:text """Uz tāfeles sākumā uzrakstīti $6$ divciparu naturāli skaitļi.
 Andris ar savu gājienu var pieskaitīt dažiem skaitļiem $1$, bet pārējiem skaitļiem $2$.
 (Var arī pieskaitīt visiem skaitļiem $1$ vai visiem skaitļiem $2$.)
@@ -651,18 +651,18 @@ Pierādīt, ka Maija var panākt, lai skaitļu uz tāfeles vairs nebūtu
     eozol:year "2007" .
 
 eozol:LV.AO.2007.8.3 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2007.8.3" ;
-    eozol:skill "alg.ineq.equations",
-        "div.fta" ;
+    eozol:skill eozol:alg.ineq.equations,
+        eozol:div.fta ;
     eozol:text """Juliata iedomājās naturālu skaitli, sareizināja visus tā ciparus un iegūto
 rezultātu pareizināja ar iedomāto skaitli. Gala rezultātā Juliata ieguva $1716$.
 Kādu skaitli viņa iedomājās sākumā?"""@lv ;
     eozol:year "2007" .
 
 eozol:LV.AO.2007.9.1 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2007.9.1" ;
     eozol:text """Kvadrātveida tabula sastāv no $10 \\times 10$ rūtiņām.
@@ -674,7 +674,7 @@ naturāls skaitlis. Vai var gadīties, ka tieši $19$ no
     eozol:year "2007" .
 
 eozol:LV.AO.2007.9.3 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2007.9.3" ;
     eozol:text """(a) katrs no naturāliem skaitļiem $a$ un $b$ ir izsakāms
@@ -753,17 +753,17 @@ dalās ar katru no abiem pārējiem skaitļiem?"""@lv ;
     eozol:year "2008" .
 
 eozol:LV.AO.2008.7.2 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2008.7.2" ;
-    eozol:skill "alg.tra.pow.prod",
-        "nota.divrule.2_5pow" ;
+    eozol:skill eozol:alg.tra.pow.prod,
+        eozol:nota.divrule.2_5pow ;
     eozol:text """Dots, ka $x$ un $y$ – tādi naturāli skaitļi, ka  $x \\cdot y = 10^{12}$.
 Vai var būt, ka ne $x$, ne $y$ nesatur savā pierakstā nevienu ciparu $0$?"""@lv ;
     eozol:year "2008" .
 
 eozol:LV.AO.2008.8.1 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2008.8.1" ;
     eozol:text """Kādu lielāko daudzumu dažādu ciparu var izrakstīt pa apli tā,
@@ -772,12 +772,12 @@ kādā virzienā, veidotu pirmskaitļa pierakstu?"""@lv ;
     eozol:year "2008" .
 
 eozol:LV.AO.2008.8.3 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2008.8.3" ;
-    eozol:skill "alg.series.sum",
-        "div.fta.divisors.num",
-        "div.fta.divisors.pair" ;
+    eozol:skill eozol:alg.series.sum,
+        eozol:div.fta.divisors.num,
+        eozol:div.fta.divisors.pair ;
     eozol:text """Dots, ka $n>1$ – naturāls skaitlis, kas nav pirmskaitlis.
 Pierādīt, ka var atrast vismaz trīs dažādus naturālus skaitļus $a_1,a_2,\\ldots,a_k$,
 kas apmierina sakarību
@@ -786,7 +786,7 @@ $$a_1 + a_2 + \\ldots + a_k = n \\cdot \\left( \\frac{1}{a_1} +
     eozol:year "2008" .
 
 eozol:LV.AO.2008.9.1 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2008.9.1" ;
     eozol:text """Kvadrātveida tabula sastāv no $12 \\times 12$ rūtiņām.
@@ -798,7 +798,7 @@ Vai var gadīties, ka tieši $23$ no šiem skaitļiem
     eozol:year "2008" .
 
 eozol:LV.AO.2008.9.4 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2008.9.4" ;
     eozol:text """Naturālie skaitļi no $1$ līdz $2008$ ieskaitot
@@ -862,23 +862,23 @@ uzvarēt."""@lv ;
     eozol:year "2009" .
 
 eozol:LV.AO.2009.7.3 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2009.7.3" ;
-    eozol:skill "comb.full",
-        "div.prop.primes.small",
-        "mod.fix.parity",
-        "seq.arithm.summation" ;
+    eozol:skill eozol:comb.full,
+        eozol:div.prop.primes.small,
+        eozol:mod.fix.parity,
+        eozol:seq.arithm.summation ;
     eozol:text """Tabula sastāv no $3 \\times 3$ rūtiņām. Rūtiņās ierakstīti naturāli skaitļi no $1$
 līdz $9$ (katrā rūtiņā cits skaitlis). Skaitļu summas rindās un kolonnās
 visas ir dažādas. Kāds lielākais daudzums šo summu var būt pirmskaitļi?"""@lv ;
     eozol:year "2009" .
 
 eozol:LV.AO.2009.7.5 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2009.7.5" ;
-    eozol:skill "misc.invar.congr" ;
+    eozol:skill eozol:misc.invar.congr ;
     eozol:text """Vairākiem rūķīšiem ir vienādi naudas daudzumi. Brīdi pa brīdim
 kāds no rūķīšiem paņem daļu savas naudas un sadala to pārējiem
 vienādās daļās. Pēc kāda laika izrādījās, ka vienam no rūķīšiem ir $8$
@@ -887,16 +887,16 @@ vienīgā rūķīšiem pieejamā naudas vienība.)"""@lv ;
     eozol:year "2009" .
 
 eozol:LV.AO.2009.8.4 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2009.8.4" ;
-    eozol:skill "comb.full",
-        "div.fta" ;
+    eozol:skill eozol:comb.full,
+        eozol:div.fta ;
     eozol:text "<div style=\"font-size:70%\">"@lv ;
     eozol:year "2009" .
 
 eozol:LV.AO.2009.9.4 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2009.9.4" ;
     eozol:text """Naturāla skaitļa $n$ pozitīvo dalītāju skaitu apzīmējam ar $d(n)$.
@@ -910,9 +910,9 @@ eozol:LV.AO.2010.10.4 eozol:country "LV" ;
     eozol:grade "10" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2010.10.4" ;
-    eozol:skill "comb.full",
-        "div.fta.proc",
-        "seq.arithm.summation" ;
+    eozol:skill eozol:comb.full,
+        eozol:div.fta.proc,
+        eozol:seq.arithm.summation ;
     eozol:text """Cik dažādos veidos skaitli $2010$ var izteikt kā vismaz divu pēc kārtas
 sekojošu naturālu skaitļu summu? Saskaitāmo secība nav svarīga."""@lv ;
     eozol:year "2010" .
@@ -970,30 +970,30 @@ tādu $n$, ka, pareizi spēlējot, otrais spēlētājs uzvar!"""@lv ;
     eozol:year "2010" .
 
 eozol:LV.AO.2010.7.1 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2010.7.1" ;
-    eozol:skill "div.fta",
-        "div.prop.primes.small" ;
+    eozol:skill eozol:div.fta,
+        eozol:div.prop.primes.small ;
     eozol:text """Uz tāfeles uzrakstīti pieci dažādi pirmskaitļi, kas nepārsniedz $100$. Par tiem
 zināms, ka"""@lv ;
     eozol:year "2010" .
 
 eozol:LV.AO.2010.7.3 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2010.7.3" ;
-    eozol:skill "alg.linear.comb",
-        "comb.full.backtrack" ;
+    eozol:skill eozol:alg.linear.comb,
+        eozol:comb.full.backtrack ;
     eozol:text """Ieraksti tabulas ar izmēriem $4 \\times 4$ rūtiņas katrā rūtiņā vienu naturālu skaitli
 tā, lai vienlaicīgi izpildītos šādas divas īpašības:"""@lv ;
     eozol:year "2010" .
 
 eozol:LV.AO.2010.7.4 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2010.7.4" ;
-    eozol:skill "misc.invar.congr" ;
+    eozol:skill eozol:misc.invar.congr ;
     eozol:text """Vairākiem bērniem visiem ir vienāds skaits konfekšu. Brīdi pa brīdim kāds
 no bērniem paņem daļu savu konfekšu un sadala to pārējiem vienādās
 daļās. Pēc kāda laika izrādījās, ka vienam no bērniem ir $4$ konfektes, bet
@@ -1002,10 +1002,10 @@ daļās, apēstas vai izmestas.)"""@lv ;
     eozol:year "2010" .
 
 eozol:LV.AO.2010.8.1 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2010.8.1" ;
-    eozol:skill "comb.full.syntax" ;
+    eozol:skill eozol:comb.full.syntax ;
     eozol:text """Starp skaitļiem
 $$6134,$$
 nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\ast$",
@@ -1015,11 +1015,11 @@ Vai to var izdarīt?"""@lv ;
     eozol:year "2010" .
 
 eozol:LV.AO.2010.8.2 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2010.8.2" ;
-    eozol:skill "alg.expr.prop",
-        "comb.full" ;
+    eozol:skill eozol:alg.expr.prop,
+        eozol:comb.full ;
     eozol:text """Andris un Juris katrs izvēlas trīs secīgus naturālus skaitļus tā, ka visi
 seši skaitļi ir atšķirīgi. Katru Andra skaitli sareizināja ar katru Jura
 skaitli, ieguva deviņus reizinājumus. Pierādi, ka starp iegūtajiem
@@ -1027,7 +1027,7 @@ deviņiem skaitļiem vismaz astoņi būs savā starpā atšķirīgi!"""@lv ;
     eozol:year "2010" .
 
 eozol:LV.AO.2010.9.1 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2010.9.1" ;
     eozol:text """Naturālus skaitļus no $1$ līdz $2N$ jāsadala $N$ pāros tā,
@@ -1039,7 +1039,7 @@ iespējams izdarīt, ja
     eozol:year "2010" .
 
 eozol:LV.AO.2010.9.3 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2010.9.3" ;
     eozol:text """Naturāla skaitļa $n$ pozitīvo dalītāju skaitu apzīmējam ar $d(n)$.
@@ -1050,7 +1050,7 @@ Sauksim skaitli $n$ par apaļīgu, ja tas dalās ar $d(n)$.
     eozol:year "2010" .
 
 eozol:LV.AO.2010.9.4 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2010.9.4" ;
     eozol:text "<hgroup>"@lv ;
@@ -1097,29 +1097,29 @@ katrā grupā aprēķināta tajā ietilpstošo skaitļu summa. Vai var būt, ka
     eozol:year "2011" .
 
 eozol:LV.AO.2011.7.1 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2011.7.1" ;
-    eozol:skill "div.prop.primes.small" ;
+    eozol:skill eozol:div.prop.primes.small ;
     eozol:text """Uz tāfeles augošā secībā uzrakstīti seši dažādi pirmskaitļi, kas
 nepārsniedz $100$. Par tiem zināms, ka"""@lv ;
     eozol:year "2011" .
 
 eozol:LV.AO.2011.7.3 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2011.7.3" ;
-    eozol:skill "mod.eq.chinese",
-        "seq.arithm.mod" ;
+    eozol:skill eozol:mod.eq.chinese,
+        eozol:seq.arithm.mod ;
     eozol:text """Atrodi naturālu skaitli, kuru, dalot ar $2010$, atlikumā iegūst $13$, bet,
 dalot ar $2011$, atlikumā iegūst $3$."""@lv ;
     eozol:year "2011" .
 
 eozol:LV.AO.2011.8.1 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2011.8.1" ;
-    eozol:skill "comb.full.syntax" ;
+    eozol:skill eozol:comb.full.syntax ;
     eozol:text """Starp skaitļiem
 $$8352,$$
 nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\ast$",
@@ -1127,21 +1127,21 @@ nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\ast
     eozol:year "2011" .
 
 eozol:LV.AO.2011.8.4 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2011.8.4" ;
-    eozol:skill "div.fta",
-        "nota.combine.split" ;
+    eozol:skill eozol:div.fta,
+        eozol:nota.combine.split ;
     eozol:text """Leonards izvēlējās patvaļīgu trīsciparu skaitli, pareizināja to ar $2$ un
 tam galā pierakstīja sākotnējo skaitli. Vai viņa jauniegūtais skaitlis
 noteikti dalās ar  $17$;  $23$?"""@lv ;
     eozol:year "2011" .
 
 eozol:LV.AO.2011.8.5 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2011.8.5" ;
-    eozol:skill "misc.invar.game" ;
+    eozol:skill eozol:misc.invar.game ;
     eozol:text """Jānis un Anna spēlē šādu spēli. Uz tāfeles ir uzrakstīts naturāls
 skaitlis. Spēlētāji pēc kārtas veic gājienu: no uzrakstītā skaitļa atņem
 kādu šī skaitļa ciparu (izņemot $0$), nodzēš uz tāfeles esošo skaitli un
@@ -1153,7 +1153,7 @@ jārīkojas!"""@lv ;
     eozol:year "2011" .
 
 eozol:LV.AO.2011.9.1 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2011.9.1" ;
     eozol:text """Atrodi visus naturālu skaitļu pārus $(x, y)$ tādus, ka $x\\neq y$ un
@@ -1161,7 +1161,7 @@ $$\\frac{1}{x^2 + 24} + \\frac{1}{y^2 + 24} = \\frac{2}{xy + 24}.$$"""@lv ;
     eozol:year "2011" .
 
 eozol:LV.AO.2011.9.3 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2011.9.3" ;
     eozol:text """Dots vienādojums $ x^2 −  x +  = 0$. Divi rūķīši spēlē spēli – pirmais
@@ -1171,7 +1171,7 @@ būtu vismaz viena racionāla sakne?"""@lv ;
     eozol:year "2011" .
 
 eozol:LV.AO.2011.9.4 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2011.9.4" ;
     eozol:text """Kāds lielākais skaits pēc kārtas sekojošu naturālu skaitļu var būt ar
@@ -1183,8 +1183,8 @@ eozol:LV.AO.2012.10.1 eozol:country "LV" ;
     eozol:grade "10" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2012.10.1" ;
-    eozol:skill "mod.congr.pow",
-        "mod.congr.sumdiff" ;
+    eozol:skill eozol:mod.congr.pow,
+        eozol:mod.congr.sumdiff ;
     eozol:text """Pierādi: ja $p$ un $14p^2+1$ ir pirmskaitļi, tad $14p^2-1$ ir naturāla
 skaitļa kubs."""@lv ;
     eozol:year "2012" .
@@ -1207,19 +1207,19 @@ Pierādi, ka $A$ nedalās ar $B$."""@lv ;
     eozol:year "2012" .
 
 eozol:LV.AO.2012.7.1 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2012.7.1" ;
-    eozol:skill "mod.fix.parity" ;
+    eozol:skill eozol:mod.fix.parity ;
     eozol:text """Vai var atrast tādus veselus skaitļus $a$ un $b$, kuriem izpildās vienādība
 $$ab(3a + 5b) = 1234567?$$"""@lv ;
     eozol:year "2012" .
 
 eozol:LV.AO.2012.8.1 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2012.8.1" ;
-    eozol:skill "comb.full.syntax" ;
+    eozol:skill eozol:comb.full.syntax ;
     eozol:text """Starp skaitļiem
 $$4157,$$
 nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\ast$",
@@ -1227,11 +1227,11 @@ nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\ast
     eozol:year "2012" .
 
 eozol:LV.AO.2012.8.3 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2012.8.3" ;
-    eozol:skill "alg.ineq.equations",
-        "alg.series.mean" ;
+    eozol:skill eozol:alg.ineq.equations,
+        eozol:alg.series.mean ;
     eozol:text """Skolas matemātikas olimpiādē piedalījās ne vairāk kā $60$ skolēnu.
 Vidējais punktu skaits, ko ieguva zēni, bija $21,6$. Vidējais punktu
 skaits, ko ieguva meitenes, bija $15$. Vidējais punktu skaits, ko ieguva
@@ -1239,24 +1239,24 @@ visi skolēni, bija $20$. Cik skolēnu piedalījās olimpiādē?"""@lv ;
     eozol:year "2012" .
 
 eozol:LV.AO.2012.8.4 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2012.8.4" ;
-    eozol:skill "mod.period" ;
+    eozol:skill eozol:mod.period ;
     eozol:text """Pa apli uzrakstīti $11$ veseli skaitļi. Jebkuru trīs pēc kārtas ņemtu
 skaitļu summa dalās ar $5$. Pierādi, ka visi uzrakstītie skaitļi dalās ar
 $5$."""@lv ;
     eozol:year "2012" .
 
 eozol:LV.AO.2012.9.1 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2012.9.1" ;
     eozol:text "Atrodi vienu skaitli, kuram ir tieši $12$ veseli pozitīvi dalītāji."@lv ;
     eozol:year "2012" .
 
 eozol:LV.AO.2012.9.3 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2012.9.3" ;
     eozol:text """Kvadrātvienādojuma $x^2 − 507x + a = 0$ saknes ir $p^2$ un $q$, kur $p$ un
@@ -1264,7 +1264,7 @@ $q$ ir pirmskaitļi. Aprēķini $a$ skaitlisko vērtību."""@lv ;
     eozol:year "2012" .
 
 eozol:LV.AO.2012.9.4 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2012.9.4" ;
     eozol:text """Uz tāfeles uzrakstītas deviņas zvaigznītes
@@ -1281,8 +1281,8 @@ eozol:LV.AO.2013.10.4 eozol:country "LV" ;
     eozol:grade "10" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2013.10.4" ;
-    eozol:skill "misc.extr.pigeon",
-        "seq.geom" ;
+    eozol:skill eozol:misc.extr.pigeon,
+        eozol:seq.geom ;
     eozol:text """No pirmajiem $100$ naturālajiem skaitļiem izvēlēts $51$ skaitlis.
 Pierādīt, ka no tiem var izvēlēties divus, no kuriem viens dalās ar
 otru."""@lv ;
@@ -1315,41 +1315,41 @@ vienādība $6^x + 13^y = 29^z$."""@lv ;
     eozol:year "2013" .
 
 eozol:LV.AO.2013.7.1 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2013.7.1" ;
-    eozol:skill "alg.ineq.monotonicity",
-        "misc.extr.param",
-        "nota.combine.poly" ;
+    eozol:skill eozol:alg.ineq.monotonicity,
+        eozol:misc.extr.param,
+        eozol:nota.combine.poly ;
     eozol:text """Naturālā divciparu skaitlī neviens no cipariem nav $0$. Pierādīt, ka,
 dalot šo skaitli ar tā ciparu reizinājumu, dalījums ir vismaz $\\frac{11}{9}$."""@lv ;
     eozol:year "2013" .
 
 eozol:LV.AO.2013.7.3 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2013.7.3" ;
-    eozol:skill "div.fta.pow.square",
-        "nota.divrule.2_5pow.divides",
-        "nota.divrule.3_9.rem",
-        "seq.arithm.summation" ;
+    eozol:skill eozol:div.fta.pow.square,
+        eozol:nota.divrule.2_5pow.divides,
+        eozol:nota.divrule.3_9.rem,
+        eozol:seq.arithm.summation ;
     eozol:text """Pierādīt, ka skaitlis $1234567891011\\ldots{}175176$ (pēc kārtas uzrakstīti
 visi naturālie skaitļi no $1$ līdz $176$) nav naturāla skaitļa kvadrāts.
 (Skaitļa kvadrāts ir skaitļa reizinājums pašam ar sevi.)"""@lv ;
     eozol:year "2013" .
 
 eozol:LV.AO.2013.8.1 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2013.8.1" ;
-    eozol:skill "alg.expr",
-        "nota.combine.poly.pieces" ;
+    eozol:skill eozol:alg.expr,
+        eozol:nota.combine.poly.pieces ;
     eozol:text """Atrast visus naturālos skaitļus, kas nepārsniedz $1000000$ un kuri,
 nosvītrojot to pirmo ciparu, samazinās $36$ reizes."""@lv ;
     eozol:year "2013" .
 
 eozol:LV.AO.2013.8.3 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2013.8.3" ;
     eozol:text """Doti četri dažādi cipari, neviens no kuriem nav $0$. Visu divciparu
@@ -1361,10 +1361,10 @@ eozol:LV.AO.2014.10.4 eozol:country "LV" ;
     eozol:grade "10" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2014.10.4" ;
-    eozol:skill "comb.constr.iterative",
-        "comb.graph.bipartite",
-        "mod.congr.sumdiff",
-        "mod.fix.parity" ;
+    eozol:skill eozol:comb.constr.iterative,
+        eozol:comb.graph.bipartite,
+        eozol:mod.congr.sumdiff,
+        eozol:mod.fix.parity ;
     eozol:text """Doti septiņi dažādi naturāli skaitļi; katriem diviem
 no dotajiem skaitļiem aprēķināja to
 summu. Kāds lielākais skaits no šīm summām var būt pirmskaitļi?"""@lv ;
@@ -1394,26 +1394,26 @@ eozol:LV.AO.2014.12.3 eozol:country "LV" ;
     eozol:grade "12" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2014.12.3" ;
-    eozol:skill "nota.divrule.11",
-        "nota.divrule.3_9.divides" ;
+    eozol:skill eozol:nota.divrule.11,
+        eozol:nota.divrule.3_9.divides ;
     eozol:text """Atrast visus pirmskaitļus $p$,
 kuriem $p^4 − 6$ arī ir pirmskaitlis!"""@lv ;
     eozol:year "2014" .
 
 eozol:LV.AO.2014.7.2 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2014.7.2" ;
-    eozol:skill "mod.fix.parity" ;
+    eozol:skill eozol:mod.fix.parity ;
     eozol:text """Vai var atrast tādus veselus skaitļus $a$ un $b$,
 kuriem izpildās vienādība $a \\cdot (3a + 5b) \\cdot 7b = 7654321$."""@lv ;
     eozol:year "2014" .
 
 eozol:LV.AO.2014.7.4 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2014.7.4" ;
-    eozol:skill "alg.expr.selectvar" ;
+    eozol:skill eozol:alg.expr.selectvar ;
     eozol:text """Tabulas $3 \\times 3$ rūtiņās katrā rūtiņā jāieraksta pa vienam naturālam skaitlim tā,
 lai katrā rindā,
 katrā kolonnā un katrā diagonālē ierakstīto skaitļu summas būtu vienādas. Ir zināmi divās
@@ -1422,33 +1422,33 @@ jautājuma zīmi? Atrodiet visas iespējamās vērtības un pamatojiet, ka citu 
     eozol:year "2014" .
 
 eozol:LV.AO.2014.8.1 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2014.8.1" ;
-    eozol:skill "mod.period",
-        "nota.algor" ;
+    eozol:skill eozol:mod.period,
+        eozol:nota.algor ;
     eozol:text """Skaitli $\\frac{1}{13}$
 pārveidoja par bezgalīgu decimāldaļu un tajā izsvītroja 2014. ciparu aiz komata.
 Kurš skaitlis lielāks – sākotnējais vai iegūtais?"""@lv ;
     eozol:year "2014" .
 
 eozol:LV.AO.2014.8.2 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2014.8.2" ;
-    eozol:skill "alg.expr",
-        "nota.combine.poly.pieces" ;
+    eozol:skill eozol:alg.expr,
+        eozol:nota.combine.poly.pieces ;
     eozol:text """Atrast visus naturālos skaitļus, kas nepārsniedz
 $1000000$ un kuri, nosvītrojot to pirmo
 ciparu, samazinās $15$ reizes!"""@lv ;
     eozol:year "2014" .
 
 eozol:LV.AO.2014.8.5 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2014.8.5" ;
-    eozol:skill "alg.expr.selectvar",
-        "comb.full.backtrack" ;
+    eozol:skill eozol:alg.expr.selectvar,
+        eozol:comb.full.backtrack ;
     eozol:text """Tabulas $3 \\times 3$ rūtiņās katrā rūtiņā jāieraksta pa vienam naturālam skaitlim tā, lai katrā rindā,
 katrā kolonnā un katrā diagonālē ierakstīto skaitļu summas būtu vienādas. Augšējās rindas
 vidējā rūtiņā ierakstīts skaitlis $24$ (skat.\\ zīm.). Vai rūtiņā, kas apzīmēta ar jautājuma
@@ -1456,7 +1456,7 @@ zīmi, var būt ierakstīts skaitlis  $7$,   $17$?"""@lv ;
     eozol:year "2014" .
 
 eozol:LV.AO.2014.9.2 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2014.9.2" ;
     eozol:text """Doti četri dažādi cipari, neviens no tiem nav $0$. Visu divciparu skaitļu,
@@ -1465,7 +1465,7 @@ kurus var izveidot no
     eozol:year "2014" .
 
 eozol:LV.AO.2014.9.4 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2014.9.4" ;
     eozol:text """Tabulas $3 \\times 3$ rūtiņās katrā rūtiņā jāieraksta pa vienam
@@ -1481,8 +1481,8 @@ eozol:LV.AO.2015.10.3 eozol:country "LV" ;
     eozol:grade "10" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2015.10.3" ;
-    eozol:skill "alg.ineq.transitive",
-        "misc.try" ;
+    eozol:skill eozol:alg.ineq.transitive,
+        eozol:misc.try ;
     eozol:text """Atrast visus naturālos skaitļus, kas ir vienādi ar savu ciparu reizinājumu.
 (Par viencipara skaitļa ciparu reizinājumu sauc tā vienīgo ciparu.)"""@lv ;
     eozol:year "2015" .
@@ -1515,27 +1515,27 @@ un $ab-1$ dalās ar c, $bc-1$ dalās ar $a$, $ac-1$ dalās ar $b$."""@lv ;
     eozol:year "2015" .
 
 eozol:LV.AO.2015.8.1 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2015.8.1" ;
-    eozol:skill "alg.tra.binom.square",
-        "misc.ind.descent" ;
+    eozol:skill eozol:alg.tra.binom.square,
+        eozol:misc.ind.descent ;
     eozol:text """Nosaki, vai izteiksmes $\\sqrt{6 + 2\\sqrt{5}} + \\sqrt{6 - 2\\sqrt{5}}$
 vērtība ir racionāls skaitlis!"""@lv ;
     eozol:year "2015" .
 
 eozol:LV.AO.2015.8.3 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2015.8.3" ;
-    eozol:skill "alg.tra.factor.sqdiff",
-        "div.prop.primes.small" ;
+    eozol:skill eozol:alg.tra.factor.sqdiff,
+        eozol:div.prop.primes.small ;
     eozol:text """Atrast vienu naturālu skaitli, kas lielāks nekā $2015$ un ko nevar izteikt kā
 naturāla skaitļa kvadrāta un pirmskaitļa summu."""@lv ;
     eozol:year "2015" .
 
 eozol:LV.AO.2015.9.3 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2015.9.3" ;
     eozol:text "Pierādi, ka $x^5 - 5x^3 + 4x$ dalās ar $120$, ja $x$ ir vesels skaitlis!"@lv ;
@@ -1545,10 +1545,10 @@ eozol:LV.AO.2016.10.2 eozol:country "LV" ;
     eozol:grade "10" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2016.10.2" ;
-    eozol:skill "div.fta.proc",
-        "mod.congr.poly",
-        "mod.eq.contradict",
-        "nota.divrule.3_9.rem" ;
+    eozol:skill eozol:div.fta.proc,
+        eozol:mod.congr.poly,
+        eozol:mod.eq.contradict,
+        eozol:nota.divrule.3_9.rem ;
     eozol:text """Vai var atrast tādus veselus skaitļus $x$, $y$ un $z$, ka
 $x^3 − 2016xyz = 120$?"""@lv ;
     eozol:year "2016" .
@@ -1557,9 +1557,9 @@ eozol:LV.AO.2016.10.3 eozol:country "LV" ;
     eozol:grade "10" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2016.10.3" ;
-    eozol:skill "alg.tra.binom.complsquare",
-        "alg.tra.binom.square",
-        "seq.arithm.expr" ;
+    eozol:skill eozol:alg.tra.binom.complsquare,
+        eozol:alg.tra.binom.square,
+        eozol:seq.arithm.expr ;
     eozol:text """Aritmētiskās progresijas četri pēc kārtas ņemti locekļi ir veseli
 skaitļi $A$, $B$, $C$ un $D$. Pierādīt, ka
 $A^2+2B^2+3C^2+4D^2$
@@ -1584,12 +1584,12 @@ atrisinājuma naturālos skaitļos!"""@lv ;
     eozol:year "2016" .
 
 eozol:LV.AO.2016.7.2 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2016.7.2" ;
-    eozol:skill "alg.expr",
-        "alg.expr.prop",
-        "alg.ineq.equations" ;
+    eozol:skill eozol:alg.expr,
+        eozol:alg.expr.prop,
+        eozol:alg.ineq.equations ;
     eozol:text """Karlsons sev pusdienām nopirka $8$ pīrādziņus un $15$ magoņmaizītes, bet
 Brālītis – vienu pīrādziņu un vienu magoņmaizīti. Karlsons par savām
 pusdienām samaksāja tieši divus eiro (katra maizīte un pīrādziņš maksā veselu
@@ -1597,36 +1597,36 @@ skaitu centu). Cik samaksāja Brālītis?"""@lv ;
     eozol:year "2016" .
 
 eozol:LV.AO.2016.8.1 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2016.8.1" ;
-    eozol:skill "alg.tra.factor.sqdiff" ;
+    eozol:skill eozol:alg.tra.factor.sqdiff ;
     eozol:text """Aprēķini dotās izteiksmes vērtību!
 $$\\frac{2000016 \\cdot 1999984}{5^{12} \\cdot 2^{13} - 128}$$"""@lv ;
     eozol:year "2016" .
 
 eozol:LV.AO.2016.8.2 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2016.8.2" ;
-    eozol:skill "mod.fix.parity" ;
+    eozol:skill eozol:mod.fix.parity ;
     eozol:text "Vai var atrast tādus veselus skaitļus $a$ un $b$, ka $ab(a+43b) = 434343$?"@lv ;
     eozol:year "2016" .
 
 eozol:LV.AO.2016.8.3 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2016.8.3" ;
-    eozol:skill "comb.full",
-        "nota.divrule.2_5pow.divides",
-        "nota.divrule.3_9.divides",
-        "nota.divrule.composite" ;
+    eozol:skill eozol:comb.full,
+        eozol:nota.divrule.2_5pow.divides,
+        eozol:nota.divrule.3_9.divides,
+        eozol:nota.divrule.composite ;
     eozol:text """Zināms, ka skaitlis dalās ar $2016$ un ka visi tā cipari ir dažādi. Kāds ir lielākais
 ciparu skaits, kas var būt šajā skaitlī?"""@lv ;
     eozol:year "2016" .
 
 eozol:LV.AO.2016.9.2 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2016.9.2" ;
     eozol:text """Vai var atrast tādus veselus skaitļus $x$, $y$ un $z$, ka
@@ -1634,7 +1634,7 @@ $x^3 − 2016xyz = 10$?"""@lv ;
     eozol:year "2016" .
 
 eozol:LV.AO.2016.9.4 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2016.9.4" ;
     eozol:text """Naturālu skaitļu virknes $1; 2; 2; 4; 8; 32; 48; \\ldots$
@@ -1647,9 +1647,9 @@ eozol:LV.AO.2017.10.5 eozol:country "LV" ;
     eozol:grade "10" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2017.10.5" ;
-    eozol:skill "comb.full",
-        "div.prop.prod",
-        "seq.arithm.mod.all" ;
+    eozol:skill eozol:comb.full,
+        eozol:div.prop.prod,
+        eozol:seq.arithm.mod.all ;
     eozol:text """Pierādīt, ja no trim naturāliem skaitļiem $n$; $n+11$ un $n+22$ divi ir
 pirmskaitļi, tad trešais skaitlis dalās ar $6$."""@lv ;
     eozol:year "2017" .
@@ -1678,7 +1678,7 @@ izdarīt, ja doti naturāli skaitļi no $1$ līdz $10$?"""@lv ;
     eozol:year "2017" .
 
 eozol:LV.AO.2017.7.5 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2017.7.5" ;
     eozol:text """Cik ir tādu naturālu divciparu skaitļu, kuriem ciparu reizinājums ir tieši divas
@@ -1686,7 +1686,7 @@ reizes mazāks nekā pats skaitlis?"""@lv ;
     eozol:year "2017" .
 
 eozol:LV.AO.2017.8.5 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2017.8.5" ;
     eozol:text """Vai var atrast tādu desmitciparu skaitli, kas ir vienāds ar visu savu ciparu
@@ -1694,7 +1694,7 @@ reizinājumu?"""@lv ;
     eozol:year "2017" .
 
 eozol:LV.AO.2017.9.5 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2017.9.5" ;
     eozol:text """Atrisināt naturālos skaitļos vienādojumu
@@ -1705,9 +1705,9 @@ eozol:LV.AO.2018.10.4 eozol:country "LV" ;
     eozol:grade "10" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2018.10.4" ;
-    eozol:skill "div.prop.prod",
-        "mod.congr.poly",
-        "nota.divrule.3_9.divides" ;
+    eozol:skill eozol:div.prop.prod,
+        eozol:mod.congr.poly,
+        eozol:nota.divrule.3_9.divides ;
     eozol:text """Pierādīt, ja $x$ - naturāls skaitlis, tad
 $x^8 - x^2$ dalās ar $252$."""@lv ;
     eozol:year "2018" .
@@ -1736,7 +1736,7 @@ Zināms, ka $A + B = 10^{45}$. Pierādīt, ka gan $A$, gan $B$ dalās ar $5$."""
     eozol:year "2018" .
 
 eozol:LV.AO.2018.7.4 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2018.7.4" ;
     eozol:text """Atrast tādu veselu skaitli $n$, lai vienādība
@@ -1745,7 +1745,7 @@ būtu patiesa!"""@lv ;
     eozol:year "2018" .
 
 eozol:LV.AO.2018.8.2 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2018.8.2" ;
     eozol:text """Naturālu skaitļu virknes $1; 8; 8; 64; 192; 432; \\ldots$
@@ -1755,7 +1755,7 @@ virknes 2018. loceklis?"""@lv ;
     eozol:year "2018" .
 
 eozol:LV.AO.2018.9.4 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2018.9.4" ;
     eozol:text """Atrast lielāko naturālo skaitli, kas dalās ar $7$, kura ciparu summa ir $100$ un
@@ -1766,7 +1766,7 @@ eozol:LV.AO.2019.10.1 eozol:country "LV" ;
     eozol:grade "10" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2019.10.1" ;
-    eozol:skill "misc.ind" ;
+    eozol:skill eozol:misc.ind ;
     eozol:text """Pierādīt, ka visām naturālām $n$ vērtībām ir spēkā vienādība
 $$6 + 24 + 60 + \\cdots + n(n + 1)(n + 2) =$$
 $$=\\frac{n(n+1)(n+2)(n+3)}{4}.$$"""@lv ;
@@ -1776,7 +1776,7 @@ eozol:LV.AO.2019.10.4 eozol:country "LV" ;
     eozol:grade "10" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2019.10.4" ;
-    eozol:skill "alg.tra.binom.square" ;
+    eozol:skill eozol:alg.tra.binom.square ;
     eozol:text """Kādām naturālām $n$ vērtībām izteiksme
 $n^2 + n + 19$ ir kāda naturāla skaitļa kvadrāts?"""@lv ;
     eozol:year "2019" .
@@ -1785,8 +1785,8 @@ eozol:LV.AO.2019.11.2 eozol:country "LV" ;
     eozol:grade "11" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2019.11.2" ;
-    eozol:skill "div.fta.divisors.struct",
-        "misc.invar.game" ;
+    eozol:skill eozol:div.fta.divisors.struct,
+        eozol:misc.invar.game ;
     eozol:text """Divi spēlētāji pamīšus raksta uz tāfeles skaitļa $216$
 naturālos dalītājus. Katrā gājienā jāievēro šādi noteikumi:"""@lv ;
     eozol:year "2019" .
@@ -1795,9 +1795,9 @@ eozol:LV.AO.2019.11.4 eozol:country "LV" ;
     eozol:grade "11" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2019.11.4" ;
-    eozol:skill "alg.ineq.transitive",
-        "comb.count.mult.norep",
-        "div.valu.prop.other" ;
+    eozol:skill eozol:alg.ineq.transitive,
+        eozol:comb.count.mult.norep,
+        eozol:div.valu.prop.other ;
     eozol:text """Sporta nometnē ir $100$ skolēni. Ar $N$ apzīmējam, cik veidos šos $100$ skolēnus
 var sadalīt $50$ pāros (pāru secība un arī skolēnu secība pārī nav svarīga). Ar
 kādu lielāko trijnieka pakāpi dalās $N$?"""@lv,
@@ -1817,14 +1817,14 @@ eozol:LV.AO.2019.12.2 eozol:country "LV" ;
     eozol:grade "12" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2019.12.2" ;
-    eozol:skill "div.fta.divisors.struct",
-        "misc.invar.game" ;
+    eozol:skill eozol:div.fta.divisors.struct,
+        eozol:misc.invar.game ;
     eozol:text """Divi spēlētāji pamīšus raksta uz tāfeles skaitļa $144$ naturālos dalītājus. Katrā
 gājienā jāievēro šādi noteikumi:"""@lv ;
     eozol:year "2019" .
 
 eozol:LV.AO.2019.7.5 eozol:country "LV" ;
-    eozol:grade "7" ;
+    eozol:grade "07" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2019.7.5" ;
     eozol:text """Kādai mazākajai naturālai $n$ vērtībai skaitli $10^n$
@@ -1834,7 +1834,7 @@ nevienam no tiem pēdējais cipars nesakrīt ar kāda cita skaitļa pēdējo cip
     eozol:year "2019" .
 
 eozol:LV.AO.2019.8.5 eozol:country "LV" ;
-    eozol:grade "8" ;
+    eozol:grade "08" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2019.8.5" ;
     eozol:text """Kādai mazākajai naturālai $n$ vērtībai skaitli $10^n$
@@ -1847,7 +1847,7 @@ ar kāda cita skaitļa pēdējo ciparu)?"""@lv ;
     eozol:year "2019" .
 
 eozol:LV.AO.2019.9.4 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2019.9.4" ;
     eozol:text """Ja naturāla sešciparu skaitļa visus nepāra ciparus aizvietotu ar $7$, iegūtu skaitli,
@@ -1857,7 +1857,7 @@ nekā sākotnējais. Atrast doto sešciparu skaitli!"""@lv ;
     eozol:year "2019" .
 
 eozol:LV.AO.2019.9.5 eozol:country "LV" ;
-    eozol:grade "9" ;
+    eozol:grade "09" ;
     eozol:olympiad "AO" ;
     eozol:problemid "LV.AO.2019.9.5" ;
     eozol:text """Vai eksistē tāds kvadrātvienādojums ar veseliem koeficientiem, kuram ir

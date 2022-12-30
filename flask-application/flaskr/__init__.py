@@ -42,6 +42,42 @@ def getSkillProblemsSPARQL(skillID):
 
     return x.text
 
+def getSPARQLOlympiads():
+    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
+    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
+    'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
+    'PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>\n'+
+    'SELECT DISTINCT ?country ?olympiad WHERE { ?problem eozol:country ?country ; eozol:olympiad ?olympiad . }'
+    }
+
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+
+    x = requests.post(url, myobj, head)
+
+    print(x.text)
+
+    return x.text
+
+def getSPARQLOlympiadYears(country, olympiad):
+    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
+    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
+    'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
+    'PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>\n'+
+    'SELECT DISTINCT ?year ?grade WHERE { ?problem eozol:country \''+country+
+    '\' ; eozol:olympiad \''+olympiad+
+    '\' ; eozol:year ?year ; eozol:grade ?grade . } ORDER BY ?year ?grade'
+    }
+
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+
+    x = requests.post(url, myobj, head)
+
+    print(x.text)
+
+    return x.text
+    
 
 def create_app(test_config=None):
     # create and configure the app
@@ -67,11 +103,6 @@ def create_app(test_config=None):
     @app.route('/')
     def main():
         return render_template('main.html')
-
-    @app.route('/skills')
-    def topics():
-        return render_template('skills.html')
-
 
     # json 
     @app.route("/json")
@@ -107,6 +138,47 @@ def create_app(test_config=None):
             'problem_list': problem_list
         }
         return render_template('skill.html', **template_context)
+
+    @app.route('/olympiads', methods=['GET', 'POST'])
+    def getOlympiads():
+        olympiads = json.loads(getSPARQLOlympiads())
+
+        template_context = {
+            'links': olympiads['results']['bindings']
+        }
+
+        return render_template('olympiads.html', **template_context)
+
+    @app.route('/olympiad', methods=['GET', 'POST'])
+    def getOlympiad():
+        country_id = request.args.get('country_id')
+        olympiad_id= request.args.get('olympiad_id')
+        x = getSPARQLOlympiadYears(country_id, olympiad_id)
+        print(x)
+        olympiads = json.loads(x)
+
+
+        all_years = []
+        all_grades = dict()
+
+        current_year = "NA"
+
+        for item in olympiads['results']['bindings']:
+            if item['year']['value'] != current_year:
+                all_years.append(item['year']['value']) # Pievienojam jaunu gadu sarakstam all_years
+                current_year = item['year']['value'] # Atceramies pēdējo pievienoto vērtību, lai neiespraustu atkārtoti
+                all_grades[current_year] = ['NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA'] # Sagatavojamies pievienot visas klases
+            grade = int(item['grade']['value'])
+            all_grades[current_year][grade-5] = item['grade']['value'] # 0. 5.klase, 1. 6.klase utt.
+
+        template_context = {
+            'all_years': all_years,
+            'all_grades': all_grades,
+            'country_id': country_id,
+            'olympiad_id': olympiad_id          
+        }
+
+        return render_template('olympiad.html', **template_context)
 
     # register the database commands
 

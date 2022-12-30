@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>Prasmes uzdevumi</title>
+  <title>Olimpiādes</title>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
@@ -13,21 +13,16 @@
   <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
-  <script>
-    {# var jsonfile = {{ jsonfile } }; #}    
-  </script>
 </head>
 
 <body>
   <div class="container">
     {{jsonfile}}
   </div>
-  <h2>{{ skill }}</h2>
-  <p>  <span class="math inline">\((a+b)^2\)</span> </p>
-  {% for problem in problem_list %}
-  <h3>Uzdevums: {{ problem.problemid }} </h3>
-  <p> {{ problem.text |safe }}</p>
-  <hr>
+  <h2> olympiad_archive </h2>
+  <p> Visas olimpiādes, kuras ir mūsu RDF krātuvē </p>
+  {% for link in links %}
+  <p>Olimpiāde: <a href='http://localhost:5000/olympiad?country_id={{link.country.value}}&olympiad_id={{link.olympiad.value}}'> {{ link.country.value }}.{{ link.olympiad.value }} </a> </p>
   {% endfor %}
 </body>
 

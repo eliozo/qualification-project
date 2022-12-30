@@ -4,8 +4,8 @@ eozol:EE.PK.1994.7B.2 eozol:country "NA" ;
     eozol:grade "NA" ;
     eozol:olympiad "NA" ;
     eozol:problemid "EE.PK.1994.7B.2" ;
-    eozol:skill "nota.divrule.2_5pow.divides",
-        "nota.divrule.3_9.divides" ;
+    eozol:skill eozol:nota.divrule.2_5pow.divides,
+        eozol:nota.divrule.3_9.divides ;
     eozol:text """Atrast mazāko naturālo skaitli, kura pierakstā ir tikai cipari $5$ un $9$,
 kurš satur tos vienādā skaitā un dalās ar $5$ un $9$."""@lv ;
     eozol:year "NA" .
@@ -423,10 +423,10 @@ eozol:EE.PK.2010.10.5 eozol:country "EE" ;
     eozol:grade "10" ;
     eozol:olympiad "PK" ;
     eozol:problemid "EE.PK.2010.10.5" ;
-    eozol:skill "alg.tra.factor.sqdiff",
-        "misc.try",
-        "nota.algor.fast",
-        "nota.est.numdigits.prod" ;
+    eozol:skill eozol:alg.tra.factor.sqdiff,
+        eozol:misc.try,
+        eozol:nota.algor.fast,
+        eozol:nota.est.numdigits.prod ;
     eozol:text """Pierādīt, ka jebkuram veselam $n \\geq 3$ atradīsies tāds $n$-ciparu
 skaitlis, kurš ir vesela skaitļa kvadrāts, un, pierakstot tam sākumā
 ciparu 1, arī rodas kāda vesela skaitļa kvadrāts."""@lv ;
@@ -455,8 +455,8 @@ eozol:EE.PK.2011.10.3 eozol:country "EE" ;
     eozol:grade "10" ;
     eozol:olympiad "PK" ;
     eozol:problemid "EE.PK.2011.10.3" ;
-    eozol:skill "mod.congr",
-        "mod.congr.classes" ;
+    eozol:skill eozol:mod.congr,
+        eozol:mod.congr.classes ;
     eozol:text """Matemātikas stundā Jüri dalīja naturālu skaitli $n$ ar naturālu
 skaitli $m$, iegūstot dalījumu un atlikumu.
 a) Pierādīt, ka, ja dalījums un atlikums ir savā starpā vienādi,
@@ -484,8 +484,8 @@ eozol:EE.PK.2012.10.4 eozol:country "EE" ;
     eozol:grade "10" ;
     eozol:olympiad "PK" ;
     eozol:problemid "EE.PK.2012.10.4" ;
-    eozol:skill "mod.fix.parity",
-        "nota.divrule.2_5_10.divides" ;
+    eozol:skill eozol:mod.fix.parity,
+        eozol:nota.divrule.2_5_10.divides ;
     eozol:text """Cik ir veselu skaitļu komplektu $(a, b, c)$,
 kuri apmierina vienādojumu $(a + b)(b + c)(c + a) = 123456789$?"""@lv ;
     eozol:year "2012" .
@@ -513,9 +513,9 @@ eozol:EE.PK.2013.10.3 eozol:country "EE" ;
     eozol:grade "10" ;
     eozol:olympiad "PK" ;
     eozol:problemid "EE.PK.2013.10.3" ;
-    eozol:skill "comb.full",
-        "misc.extr.pigeon",
-        "mod.congr.pow" ;
+    eozol:skill eozol:comb.full,
+        eozol:misc.extr.pigeon,
+        eozol:mod.congr.pow ;
     eozol:text """Atrast mazāko naturālo skaitli $n$, kuram starp jebkuriem $n$
 veselu skaitļu kvadrātiem atradīsies divi tādi, kuru starpība
 dalās ar $10$."""@lv ;
@@ -538,9 +538,9 @@ eozol:EE.PK.2014.10.3 eozol:country "EE" ;
     eozol:grade "10" ;
     eozol:olympiad "PK" ;
     eozol:problemid "EE.PK.2014.10.3" ;
-    eozol:skill "comb.full",
-        "div.common.lcm",
-        "div.common.lcm.mult" ;
+    eozol:skill eozol:comb.full,
+        eozol:div.common.lcm,
+        eozol:div.common.lcm.mult ;
     eozol:text """Vienādmalu trijstūra virsotnēs ierakstīti naturāli skaitļi $14$, $20$ un $n$.
 Jebkuru divu virsotņu skaitļu reizinājums dalās ar skaitli trešajā virsotnē.
 Atrast visas iespējamās $n$ vērtības."""@lv ;
@@ -565,10 +565,10 @@ eozol:EE.PK.2015.10.3 eozol:country "EE" ;
     eozol:grade "10" ;
     eozol:olympiad "PK" ;
     eozol:problemid "EE.PK.2015.10.3" ;
-    eozol:skill "alg.linear.equations",
-        "alg.tra.factor.sqdiff",
-        "comb.full",
-        "mod.fix.parity" ;
+    eozol:skill eozol:alg.linear.equations,
+        eozol:alg.tra.factor.sqdiff,
+        eozol:comb.full,
+        eozol:mod.fix.parity ;
     eozol:text """(а) Zināms, ka $x^2 − y^2 = 100$, kur $x$ un $y$ ir naturāli skaitļi. Atrast izteiksmes
 $x − y$ mazāko iespējamo vērtību.
 (b) Tas pats jautājums, ja $x$ un $y$ ir veseli skaitļi."""@lv ;
@@ -578,8 +578,8 @@ eozol:EE.PK.2015.10.6 eozol:country "EE" ;
     eozol:grade "10" ;
     eozol:olympiad "PK" ;
     eozol:problemid "EE.PK.2015.10.6" ;
-    eozol:skill "misc.ind",
-        "misc.try" ;
+    eozol:skill eozol:misc.ind,
+        eozol:misc.try ;
     eozol:text """Vai eksistē tāds naturāls skaitlis $n$, ka vairāk nekā pusei
 veselo skaitļu no $1$ līdz $n$ ciparu summa ir pāru skaitlis?"""@lv ;
     eozol:year "2015" .
@@ -597,8 +597,8 @@ eozol:EE.PK.2016.10.3 eozol:country "EE" ;
     eozol:grade "10" ;
     eozol:olympiad "PK" ;
     eozol:problemid "EE.PK.2016.10.3" ;
-    eozol:skill "alg.expr.prop",
-        "div.common.lcm.frac" ;
+    eozol:skill eozol:alg.expr.prop,
+        eozol:div.common.lcm.frac ;
     eozol:text """Vai var atrast tādus $n$ naturālus skaitļus, lai to summa
 būtu vienāda ar to mazāko kopīgo dalāmo, ja
 a) $n = 2$?
@@ -609,9 +609,9 @@ eozol:EE.PK.2016.10.4 eozol:country "EE" ;
     eozol:grade "10" ;
     eozol:olympiad "PK" ;
     eozol:problemid "EE.PK.2016.10.4" ;
-    eozol:skill "alg.ineq.equations",
-        "alg.ineq.square",
-        "alg.tra.binom.complsquare" ;
+    eozol:skill eozol:alg.ineq.equations,
+        eozol:alg.ineq.square,
+        eozol:alg.tra.binom.complsquare ;
     eozol:text """Vai eksistē tāds vienādojuma
 $x^2 + y^2 + z^2 + w^2 = 3 + xy + yz + zw$,
 atrisinājums, kuram $x$, $y$, $z$ un $w$ ir dažādi veseli skaitļi?"""@lv ;
@@ -639,10 +639,10 @@ eozol:EE.PK.2017.10.2 eozol:country "EE" ;
     eozol:grade "10" ;
     eozol:olympiad "PK" ;
     eozol:problemid "EE.PK.2017.10.2" ;
-    eozol:skill "alg.linear.equations",
-        "alg.tra.pow.prod",
-        "div.fta.pow.expsystem",
-        "div.fta.proc" ;
+    eozol:skill eozol:alg.linear.equations,
+        eozol:alg.tra.pow.prod,
+        eozol:div.fta.pow.expsystem,
+        eozol:div.fta.proc ;
     eozol:text """Atrast visus veselu skaitļu pārus $(x,y)$, kuriem
 $324^{x+y} = 2^{x−y} \\cdot 3^{x−3} \\cdot 4^{y−4}$."""@lv ;
     eozol:year "2017" .
@@ -651,10 +651,10 @@ eozol:EE.PK.2017.10.3 eozol:country "EE" ;
     eozol:grade "10" ;
     eozol:olympiad "PK" ;
     eozol:problemid "EE.PK.2017.10.3" ;
-    eozol:skill "alg.poly.homo",
-        "misc.symm",
-        "misc.try",
-        "seq.arithm.expr" ;
+    eozol:skill eozol:alg.poly.homo,
+        eozol:misc.symm,
+        eozol:misc.try,
+        eozol:seq.arithm.expr ;
     eozol:text """Pierādīt, ka atradīsies bezgalīgi daudz četrinieku, ko veido
 dažādi naturāli skaitļi, kuriem
 $$\\frac{1}{a} - \\frac{1}{b} =\\frac{1}{b} - \\frac{1}{c} =\\frac{1}{c} - \\frac{1}{d}.$$"""@lv ;
@@ -682,9 +682,9 @@ eozol:EE.PK.2018.10.3 eozol:country "EE" ;
     eozol:grade "10" ;
     eozol:olympiad "PK" ;
     eozol:problemid "EE.PK.2018.10.3" ;
-    eozol:skill "alg.expr",
-        "comb.full",
-        "nota.combine.poly" ;
+    eozol:skill eozol:alg.expr,
+        eozol:comb.full,
+        eozol:nota.combine.poly ;
     eozol:text """Mari iedomājās naturālu skaitli. Pareizinot šo skaitli ar $4$,
 viņa ieguva kādu trīsciparu skaitli. Bet, pareizinot sākotnējo
 skaitli ar $3$ un pārceļot rezultāta pēdējo ciparu uz sākumu,
@@ -696,10 +696,10 @@ eozol:EE.PK.2019.10.3 eozol:country "EE" ;
     eozol:grade "10" ;
     eozol:olympiad "PK" ;
     eozol:problemid "EE.PK.2019.10.3" ;
-    eozol:skill "misc.extr.param",
-        "misc.try",
-        "mod.congr.sumdiff",
-        "seq.arithm.mod.gaps" ;
+    eozol:skill eozol:misc.extr.param,
+        eozol:misc.try,
+        eozol:mod.congr.sumdiff,
+        eozol:seq.arithm.mod.gaps ;
     eozol:text """Cik ir tādu veselu negatīvu skaitļu pāru $(a,b)$,
 kas apmierina vienādību $22a + 15b = 2019$?"""@lv ;
     eozol:year "2019" .

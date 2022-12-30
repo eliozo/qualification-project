@@ -9,7 +9,6 @@ eozol_ns = "http://www.dudajevagatve.lv/eozol#"
 def addToRdfGraph(g, title, text, country, olympiad, year, grade):
     global eozol_ns
     problem_node = rdflib.URIRef(eozol_ns+title)
-    # print('country={}'.format(country))
     problem_text_property = rdflib.URIRef(eozol_ns+'text')
     problem_country_property = rdflib.URIRef(eozol_ns+'country')
     problem_olympiad_property = rdflib.URIRef(eozol_ns+'olympiad')
@@ -28,9 +27,10 @@ current_problem_id = "NA"
 
 def addSkillToRdfGraph(g, title, skill):
     global eozol_ns
-    problem_node = rdflib.URIRef(eozol_ns+title)
-    problem_skill_property = rdflib.URIRef(eozol_ns+'skill')
-    g.add((problem_node, problem_skill_property, rdflib.term.Literal(skill)))
+    problem_node = rdflib.URIRef(eozol_ns+title) # subjekts
+    problem_skill_property = rdflib.URIRef(eozol_ns+'skill') # property vienmēr eozol:skill, predikāts
+    problem_skill_object = rdflib.URIRef(eozol_ns+skill) # konkrētā prasme, īpašība var atkāroties, objekts
+    g.add((problem_node, problem_skill_property, problem_skill_object))
 
 def produceRDF(in_file, out_file):
     EOZOL = rdflib.Namespace("http://www.dudajevagatve.lv/eozol#")
@@ -85,6 +85,8 @@ def produceRDF(in_file, out_file):
                 olympiad = match_id.group(2)
                 year = match_id.group(3)
                 grade = match_id.group(4)
+                if int(grade) < 10:
+                    grade = '0'+ grade
             problem_text = ""
             for line in item['children']:
                 if line['type'] == 'RawText':
