@@ -112,8 +112,8 @@ def create_app(test_config=None):
             data = myfile.read()
         return render_template('index.html', title="page", jsonfile=json.dumps(data))
 
-    @app.route('/index', methods=['GET','POST'])
-    def getIndex():
+    @app.route('/skills', methods=['GET','POST']) # Kontrolieris, kas iegūst prasmes
+    def getSkills():
         data = json.loads(getSPARQLtopics()) 
 
         template_context = {
@@ -121,9 +121,9 @@ def create_app(test_config=None):
             'links': data['results']['bindings']
         }
     
-        return render_template('index.html', **template_context)
+        return render_template('skills.html', **template_context)
 
-    @app.route('/skill', methods=['GET','POST'])
+    @app.route('/skill_tasks', methods=['GET','POST']) # Kontrolieris, kas iegūst prasmes kopā ar uzdevumiem
     def getSkill():
         skill = request.args.get('skillID') 
         data = json.loads(getSkillProblemsSPARQL(skill))
@@ -137,7 +137,7 @@ def create_app(test_config=None):
             'skill': skill,
             'problem_list': problem_list
         }
-        return render_template('skill.html', **template_context)
+        return render_template('skill_tasks.html', **template_context)
 
     @app.route('/olympiads', methods=['GET', 'POST'])
     def getOlympiads():
