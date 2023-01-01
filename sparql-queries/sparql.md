@@ -15,7 +15,7 @@ SELECT ?sub WHERE {
 
 ## Atlasa prasmes, uzdevuma gadu un tekstu un sašķirots no zemākā gada uz augstāko
 
-```
+``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>
@@ -28,7 +28,7 @@ SELECT ?sub ?text WHERE {
 
 ## Atrod uzdevumus ar "alg.expr" prasmi no visām olimpiādēm
 
-```
+``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
@@ -42,7 +42,7 @@ SELECT ?problemid ?text WHERE {
 
 ## Atrod uzdevumus, kas ir apakšprasmes prasmei "alg"
 
-```
+``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -54,7 +54,7 @@ SELECT ?skillID WHERE {
 
 ## Atrod uzdevumus, kas ir apakšprasmes prasmei "alg" un sašķiro pēc uzdevumiem alfabēta secībā
 
-```
+``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -66,7 +66,7 @@ SELECT ?skillID ?desc WHERE {
 
 ## Atrod visas prasmes un apakšprasmes zem algebras
 
-```
+``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -81,7 +81,7 @@ WHERE {
 
 ## Atrod uzdevumus, kas ir apakšprasmes "alg.tra" prasmei
 
-```
+``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -96,7 +96,7 @@ WHERE {
 
 ## Atrod sakārtotas prasmes, kuras ir zem algebras
 
-```
+``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -110,7 +110,7 @@ SELECT ?parent_skill_id ?child WHERE {
 
 ## Atlasa visas unikālās olimpiādes un valsti
 
-```
+``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -123,7 +123,7 @@ WHERE {
 
 ## Atlasa visus gadus un klases secīgi pēc konkrētas olimpiādes
 
-```
+``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -138,7 +138,7 @@ WHERE {
 
 ## Atlasa prasmes identifikatoru, prasmes numuru un prasmes aprakstu un sakārto pēc prasmes numura
 
-```
+``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -153,7 +153,7 @@ WHERE {
 
 ## Atlasa prasmes identifikatoru, prasmes numuru, prasmes aprakstu un uzdevuma id un sakārto pēc prasmes numura
 
-```
+``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -170,7 +170,7 @@ SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?problemid WHERE
 
 Atlasa neobligātos atribūtus - uzdevuma tekstu, gadu, olimpiādi, klasi, valsti, prasmi un prasmes identifikatoru
 
-```
+``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
