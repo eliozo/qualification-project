@@ -37,6 +37,7 @@ def convertToJSON(URL_suffix):
             doc = mistletoe.Document(fin)              # parse the lines into AST
             rendered = renderer.render(doc)  # render the AST
             # internal lists of tokens to be parsed are automatically reset when exiting this `with` block
+            # print("URL Suffix: '{}' ".format(URL_suffix[1]))
             out_file = open(URL_suffix[1]+'-'+file_path, "w", encoding='utf-8')
             out_file.write(rendered)
             out_file.close()
@@ -51,5 +52,4 @@ if __name__ == '__main__':
         convertToJSON(result)
     # Kopē failus uz savu build direktoriju
     # Pārveidot par JSON
-    # Pārveidot par RDF
-     
+    # Pārveidot par RDF 
