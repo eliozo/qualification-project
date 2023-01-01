@@ -133,3 +133,20 @@ SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?problemid WHERE
   ?skill eozol:skillDescription ?skillDescription .
   OPTIONAL {?prob eozol:skill ?skill . ?prob eozol:problemid ?problemid . }.
 } ORDER BY ?skillNumber
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>
+SELECT * WHERE {
+  ?problem eozol:problemid 'LV.AO.2013.8.1' .
+  OPTIONAL {
+    ?problem eozol:text ?text ;
+             eozol:year ?year ;
+             eozol:olympiad ?olympiad ;
+             eozol:grade ?grade ;
+             eozol:country ?country ;
+             eozol:skill ?skill .
+    ?skill eozol:skillIdentifier ?skillIdentifier .
+  }.
+}
