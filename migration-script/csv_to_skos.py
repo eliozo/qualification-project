@@ -39,7 +39,7 @@ def addToRdfGraph(g, numeric_id, skillID, skillDescription, prefLabel, parentSki
     skill_node = rdflib.URIRef(eozol_ns+skillID) # RDF subjekts
     skill_numeric_id_property = rdflib.URIRef(eozol_ns+'skillNumber') # 1 0 0 0
     skill_id_property = rdflib.URIRef(eozol_ns+'skillIdentifier') # alg.expr
-    skill_description_property = rdflib.URIRef(SKOS+'skillDescription') # Fiksēts URL, kas apraksta RDF predikātu
+    skill_description_property = rdflib.URIRef(eozol_ns+'skillDescription') # Fiksēts URL, kas apraksta RDF predikātu
     skill_prefLabel_property = rdflib.URIRef(SKOS+'prefLabel')
     skill_broader_property = rdflib.URIRef(SKOS+'broader')
     skill_narrower_property = rdflib.URIRef(SKOS+'narrower')

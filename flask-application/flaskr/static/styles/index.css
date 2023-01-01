@@ -21,8 +21,8 @@ table.tasks tr.odd, table.proofs tr.odd {
     background-color: #eeeeee;
 }
 
-table.tasks col.aaa, table.proofs col.aaa {
-    width: 25%;
+/*table.tasks col.aaa, table.proofs col.aaa {
+    width: 15%;
 }
 
 table.tasks col.bbb, table.proofs col.bbb {
@@ -31,8 +31,20 @@ table.tasks col.bbb, table.proofs col.bbb {
 
 table.tasks col.ccc, table.proofs col.ccc {
     width: 35%;
-}
+}*/
 
 body {
-    margin: 5%;
+    margin-top: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 2%
+}
+
+h2.top {
+    margin-top: 0px;
+    color:black;
+}
+
+h2 {
+    color: blue;
 }

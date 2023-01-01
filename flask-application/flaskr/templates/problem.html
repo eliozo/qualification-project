@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>Prasmes uzdevumi</title>
+  <title>Uzdevums</title>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
@@ -20,11 +20,14 @@
   <div class="container">
     {{jsonfile}}
   </div>
-  <h2>{{ skill }}</h2>
-  {% for problem in problem_list %}
-  <h3>Uzdevums: {{ problem.problemid }} </h3>
-  <p> {{ problem.text |safe }}</p>
-  <hr>
+  <h3>Uzdevums: {{ problemid }} </h3>
+  <p> Klase {{ data[0].grade.value }}</p>
+  <p> Gads: {{ data[0].year.value }}</p>
+  <p> Prasmes: {% for item in data %}
+  <a href="/skill_tasks?skillIdentifier={{item.skillIdentifier.value}}">{{ item.skillIdentifier.value }} </a>
+  &nbsp;
   {% endfor %}
+  </p>
+  <p> {{ text |safe }}</p>
 </body>
 </html>

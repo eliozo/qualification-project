@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <title>Prasmes</title>
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        type="text/javascript"></script>
     <a class="navbar-brand" href="http://localhost:5000/">Atpakaļ</a>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-    {{jsonfile}}
-  </div>
-  <h2>Prasmes</h2>
-  <table class="tasks">
-    <colgroup>
-    <col class="aaa">
-    <col class="bbb">
-    <col class="ccc">
-    </colgroup><tbody>
-    <tr><th>Prasmes kods</th><th>Piemēri</th></tr>
-    {% for link in links %}
-    <tr class="{{ loop.cycle('odd', 'even') }}">{{ row }}
-    <td><a href="/skill?skillID={{link.obj.value}}">{{ link.obj.value }}</a></td>
-    <td>&nbsp;</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-  </table>
-  </body>
+        {{jsonfile}}
+    </div>
+    <h2>Prasmes</h2>
+    <table class="tasks">
+        <colgroup>
+            <col class="aaa">
+            <col class="bbb">
+            <col class="ccc">
+        </colgroup>
+        <tbody>
+            <tr>
+                <th>Prasmes kods</th>
+                <th>Prasmes numurs</th>
+                <th>Apraksts</th>
+                <th>Piemēri</th>
+            </tr>
+            {% for skill in all_skills %}
+            <tr class="{{ loop.cycle('odd', 'even') }}">
+                <td><a href="/skill_tasks?skillIdentifier={{skill}}">{{ skill }}</a></td>
+                <td>{{ all_skill_info[skill].skillNumber }}</td>
+                <td>{{ all_skill_info[skill].skillDescription |safe }}</td>
+                <td>{% for problem in all_skill_info[skill].problems %} <a href="/problem?problemid={{problem}}">{{
+                        problem }}</a>, {% endfor %} </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
 </html>

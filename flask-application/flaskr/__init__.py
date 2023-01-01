@@ -6,21 +6,51 @@ import requests
 import re
 
 def getSPARQLtopics():
-
     url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
-    # 'SELECT * WHERE { ?sub eozol:skill ?obj . ?obj skos:prefLabel ?label . } LIMIT 10\n'
-    'SELECT * WHERE { ?sub eozol:skill ?obj . } ORDER BY ?sub \n'
+    '''SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?problemid WHERE { 
+    ?skill eozol:skillIdentifier ?skillIdentifier .
+    ?skill eozol:skillNumber ?skillNumber .
+    ?skill eozol:skillDescription ?skillDescription .
+    OPTIONAL {?prob eozol:skill ?skill . ?prob eozol:problemid ?problemid . }.
+    } ORDER BY ?skillNumber'''
     }
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
 
     x = requests.post(url, myobj, head)
 
-    print(x)
+    print(x.text)
+
+    return x.text
+
+def getSPARQLProblem(arg):
+    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
+    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
+    'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
+    'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
+'SELECT * WHERE { \n'+ 
+  '?problem eozol:problemid \'{problemid}\' .\n' .format(problemid=arg)+
+  '''OPTIONAL {
+    ?problem eozol:text ?text ;
+             eozol:year ?year ;
+             eozol:olympiad ?olympiad ;
+             eozol:grade ?grade ;
+             eozol:country ?country ;
+             eozol:skill ?skill .
+    ?skill eozol:skillIdentifier ?skillIdentifier .
+  }.
+}'''
+  }
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+
+    x = requests.post(url, myobj, head)
+
+    print(x.text)
 
     return x.text
 
@@ -31,7 +61,8 @@ def getSkillProblemsSPARQL(skillID):
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
     # 'SELECT ?sub ?text WHERE { ?sub eozol:skill \''+skillID+'\' ; eozol:text ?text . } ORDER BY ?obj '
-    'SELECT ?problemid ?text WHERE { ?sub eozol:problemid ?problemid . ?sub eozol:skill \''+skillID+'\' . ?sub eozol:text ?text . } ORDER BY ?problemid'
+    'SELECT ?problemid ?text WHERE { ?sub eozol:problemid ?problemid . ?sub eozol:skill ?skill . ?sub eozol:text ?text . ?skill eozol:skillIdentifier \''+skillID+'\' . } ORDER BY ?problemid '
+    # 'SELECT ?problemid ?text WHERE { ?sub eozol:problemid ?problemid . ?sub eozol:skill \''+skillID+'\' . ?sub eozol:text ?text . } ORDER BY ?problemid'
     }
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
@@ -77,7 +108,11 @@ def getSPARQLOlympiadYears(country, olympiad):
     print(x.text)
 
     return x.text
-    
+
+def mathBeautify(a): # Izskaistina formulas ar MathJax Javascript bibliotēku
+    b0 = re.sub(r"\$\$([^\$]+)\$\$", r"<p><span class='math display'>\[\1\]</span></p>", a) # Aizstāj vairākrindu formulas $$..$$
+    b = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", b0) # Aizstāj inline formulas $...$ (Svarīga secība, kā aizstāj)
+    return b
 
 def create_app(test_config=None):
     # create and configure the app
@@ -112,25 +147,50 @@ def create_app(test_config=None):
             data = myfile.read()
         return render_template('index.html', title="page", jsonfile=json.dumps(data))
 
-    @app.route('/skills', methods=['GET','POST']) # Kontrolieris, kas iegūst prasmes
+    @app.route('/skills', methods=['GET','POST'])
     def getSkills():
-        data = json.loads(getSPARQLtopics()) 
+        data = json.loads(getSPARQLtopics())
+
+        all_skills = []
+        all_skill_info = dict() # Vārdnīca visai prasmju tabulai
+
+        current_skill = "NA"
+
+        for item in data['results']['bindings']:
+            if item['skillIdentifier']['value'] != current_skill:
+                all_skills.append(item['skillIdentifier']['value']) # Pievienojam jaunu prasmi sarakstam all_skills
+                current_skill = item['skillIdentifier']['value'] # Atceramies pēdējo pievienoto vērtību, lai neiespraustu atkārtoti
+                current_skill_info = dict() # Vārdnīca vienai tabulas rindai
+                current_skill_info['skillIdentifier'] = current_skill
+                current_skill_info['skillNumber'] = item['skillNumber']['value']
+                beautiful_description = mathBeautify(item['skillDescription']['value'])
+                current_skill_info['skillDescription'] = beautiful_description
+                if "problemid" in item:
+                    current_skill_info['problems'] = [item['problemid']['value']]
+                else:
+                    current_skill_info['problems'] = []
+                all_skill_info[current_skill] = current_skill_info # Lielajā vārdnīcā iesprauž mazo vārdnīcu
+            else:
+                current_skill_info['problems'].append(item['problemid']['value']) # Pievieno tikai jauno uzdevuma ID
 
         template_context = {
-            'my_id': 'index',
-            'links': data['results']['bindings']
+            'all_skills': all_skills,
+            'all_skill_info' : all_skill_info
         }
-    
+
         return render_template('skills.html', **template_context)
 
     @app.route('/skill_tasks', methods=['GET','POST']) # Kontrolieris, kas iegūst prasmes kopā ar uzdevumiem
     def getSkill():
-        skill = request.args.get('skillID') 
+        skill = request.args.get('skillIdentifier') 
         data = json.loads(getSkillProblemsSPARQL(skill))
         problem_list = []
+        # <p><span class="math display">\[x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.\]</span></p>
         for data_item in data['results']['bindings']:
             a = data_item['text']['value']
-            b = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", a)
+            b = mathBeautify(a)
+            # b0 = re.sub(r"\$\$([^\$]+)\$\$", r"<p><span class='math display'>\[\1\]</span></p>", a)
+            # b = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", b0)
             problem_list.append({'problemid': data_item['problemid']['value'], 'text': b})
 
         template_context = {
@@ -138,6 +198,26 @@ def create_app(test_config=None):
             'problem_list': problem_list
         }
         return render_template('skill_tasks.html', **template_context)
+
+
+    @app.route('/problem', methods=['GET','POST'])
+    def getProblem():
+        problemid = request.args.get('problemid')
+        data = json.loads(getSPARQLProblem(problemid))
+
+        a = data['results']['bindings'][0]['text']['value']
+        # b0 = re.sub(r"\$\$([^\$]+)\$\$", r"<p><span class='math display'>\[\1\]</span></p>", a)
+        # text = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", b0)
+        text = mathBeautify(a)
+
+        template_context = {
+            'problemid': problemid,
+            'data': data['results']['bindings'],
+            'text': text
+       }
+
+        return render_template('problem.html', **template_context)
+
 
     @app.route('/olympiads', methods=['GET', 'POST'])
     def getOlympiads():
