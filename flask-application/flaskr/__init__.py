@@ -142,10 +142,14 @@ def create_app(test_config=None):
     # json 
     @app.route("/json")
     def getJson():
-        # read file
+        # Lasa failu
         with open('C:/Users/eliz_/Documents/qualification-project/flask-application/data/file.json', 'r', encoding="utf-8") as myfile:
             data = myfile.read()
         return render_template('index.html', title="page", jsonfile=json.dumps(data))
+
+    @app.route("/info")
+    def getInfo():
+        return render_template("info.html")
 
     @app.route('/skills', methods=['GET','POST'])
     def getSkills():

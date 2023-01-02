@@ -7,12 +7,12 @@ eozol_ns = "http://www.dudajevagatve.lv/eozol#"
 
 SKOS = "http://www.w3.org/2004/02/skos/core#"
 
-def getGoogleSpreadsheet():
+def getGoogleSpreadsheet(): # Funkcija, kas iegūst Google Spreadsheet dokumentu ar olimpiāžu uzdevumu datiem
     URL_GOOGLE_SPREADSHEET = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQvAsYeFYhuFLmLgtMiYFeQFeeO4e0DgteRXRg1zpQ2iMcWZr-mIgdyDYnh1IoKq4l5v9C-JAE1-Qcy/pub?output=csv'
     response = requests.get(URL_GOOGLE_SPREADSHEET)
     open("spreadsheet_skos.csv", "wb").write(response.content)
 
-def readCSVfile(g):
+def readCSVfile(g): # Funkcija, kas lasa CSV failu
     result = []
     with open('spreadsheet_skos.csv', 'r',  encoding='utf-8') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
@@ -27,7 +27,6 @@ def readCSVfile(g):
             skill_description = row[6]
             x = skill_id.rfind(".")
             if x == -1:
-                print("Koka sakne")
                 parent_skill_id = '' # Nav vecāka
             else:
                 parent_skill_id = skill_id[:x]
@@ -54,7 +53,7 @@ def addToRdfGraph(g, numeric_id, skillID, skillDescription, prefLabel, parentSki
         g.add((parent_skill_node, skill_narrower_property, skill_node)) # vecāks iedur bērnam
     
 
-def produceRDF(in_file, out_file):
+def produceCSVtoRDF(in_file, out_file): # Pārveido CSV failu par RDF failu
 
     global SKOS
 
@@ -63,7 +62,7 @@ def produceRDF(in_file, out_file):
     g.bind("skos", SKOS)
     g.bind("eozol", eozol_ns)
 
-    # Opening JSON file
+    # Atver JSON failu
     f = open(in_file)
 
     readCSVfile(g)
@@ -71,6 +70,5 @@ def produceRDF(in_file, out_file):
     g.serialize(destination=out_file)
 
 if __name__ == '__main__':
-    # Izsauc funkciju, kas iegūst skos dokumentu CSV faila formātā
-    getGoogleSpreadsheet()
-    produceRDF(in_file="spreadsheet_skos.csv", out_file= "skos.ttl")
+    getGoogleSpreadsheet() # Izsauc funkciju, kas iegūst skos dokumentu CSV faila formātā
+    produceCSVtoRDF(in_file="spreadsheet_skos.csv", out_file= "skos.ttl")

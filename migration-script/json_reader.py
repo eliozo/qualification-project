@@ -6,7 +6,7 @@ from rdflib.namespace import RDF, FOAF, SKOS
 
 eozol_ns = "http://www.dudajevagatve.lv/eozol#"
 
-def addToRdfGraph(g, title, text, country, olympiad, year, grade):
+def addToRdfGraph(g, title, text, country, olympiad, year, grade): # Funkcija, kas pievieno RDF datus grafam
     global eozol_ns
     problem_node = rdflib.URIRef(eozol_ns+title)
     problem_text_property = rdflib.URIRef(eozol_ns+'text')
@@ -25,14 +25,14 @@ def addToRdfGraph(g, title, text, country, olympiad, year, grade):
 
 current_problem_id = "NA"
 
-def addSkillToRdfGraph(g, title, skill):
+def addSkillToRdfGraph(g, title, skill): # Funkcija, kas pievieno RDF prasmes datus grafam 
     global eozol_ns
     problem_node = rdflib.URIRef(eozol_ns+title) # subjekts
     problem_skill_property = rdflib.URIRef(eozol_ns+'skill') # property vienmēr eozol:skill, predikāts
     problem_skill_object = rdflib.URIRef(eozol_ns+skill) # konkrētā prasme, īpašība var atkāroties, objekts
     g.add((problem_node, problem_skill_property, problem_skill_object))
 
-def produceRDF(in_file, out_file):
+def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
     EOZOL = rdflib.Namespace("http://www.dudajevagatve.lv/eozol#")
 
     g = rdflib.Graph()
@@ -41,14 +41,10 @@ def produceRDF(in_file, out_file):
     g.bind("skos", SKOS)
     g.bind("eozol", EOZOL)
 
-    # Opening JSON file
-    f = open(in_file)
+    f = open(in_file) # Atver JSON failu
     
-    # returns JSON object as 
-    # a dictionary
-    data = json.load(f)
+    data = json.load(f) # Atgriež JSON objektu kā vārdnīcu
 
-    # print(data['children'][1])
     items = data['children']
 
     state = 0
@@ -56,9 +52,6 @@ def produceRDF(in_file, out_file):
     problem_title = 'undefined'
 
     for item in items:
-        # for subitem in item:
-            # if subitem.type == 'Heading':
-                # print(subitem)
         if item['type'] == 'Heading':
             state = 1
             problem_title = item['children'][0]['content']
@@ -69,8 +62,6 @@ def produceRDF(in_file, out_file):
                 print("************************")
             else:
                 state = 0
-    #    elif state == 1 and item['children'][0]['content'].startswith('<small>'):
-    #        state = 0
         elif state == 1 and item['type'] == 'Paragraph':
             country = "NA"
             olympiad = "NA"
@@ -101,7 +92,6 @@ def produceRDF(in_file, out_file):
         elif state == 2 and item['type'] == 'List':
             skill_items = item['children']
             for skill_item in skill_items:
-                # print('#################{}'.format(skill_item))
                 if skill_item['type'] == 'ListItem':
                     skill = skill_item['children'][0]['children'][0]['children'][0]['content']
                     print('{}'.format(skill))
@@ -109,5 +99,3 @@ def produceRDF(in_file, out_file):
         else:
             state = 0
     g.serialize(destination=out_file)
-
-# produceRDF(in_file="LV-AO-out.json", out_file="tbl.ttl")

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
-  <a class="navbar-brand" href="http://localhost:5000/">Atpakaļ</a>
+  <a href="http://localhost:5000/" class="button">Atpakaļ</a>
   <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
@@ -18,7 +18,7 @@
   <div class="container">
     {{jsonfile}}
   </div>
-  <h2 class="top"> olympiad_archive </h2>
+  <h2 class="top"> Olimpiāžu arhīvs </h2>
   <p> Visas olimpiādes, kuras ir mūsu RDF krātuvē </p>
   {% for link in links %}
   <p>Olimpiāde: <a
