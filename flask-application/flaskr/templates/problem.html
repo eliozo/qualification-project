@@ -10,7 +10,7 @@
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
     type="text/javascript"></script>
-    <a href="http://localhost:5000/skills" class="button">Atpakaļ</a>
+  <a href="http://localhost:5000/skills" class="button">Atpakaļ</a>
   <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
@@ -24,10 +24,11 @@
   <p> Klase {{ data[0].grade.value }}</p>
   <p> Gads: {{ data[0].year.value }}</p>
   <p> Prasmes: {% for item in data %}
-  <a href="/skill_tasks?skillIdentifier={{item.skillIdentifier.value}}">{{ item.skillIdentifier.value }} </a>
-  &nbsp;
-  {% endfor %}
+    <a href="/skill_tasks?skillIdentifier={{item.skillIdentifier.value}}">{{ item.skillIdentifier.value }} </a>
+    &nbsp;
+    {% endfor %}
   </p>
   <p> {{ text |safe }}</p>
 </body>
+
 </html>
