@@ -151,6 +151,10 @@ def create_app(test_config=None):
     def getInfo():
         return render_template("info.html")
 
+    @app.route("/video")
+    def getVideo():
+        return render_template("video.html")
+
     @app.route('/skills', methods=['GET','POST'])
     def getSkills():
         data = json.loads(getSPARQLtopics())
