@@ -109,6 +109,31 @@ def getSPARQLOlympiadYears(country, olympiad):
 
     return x.text
 
+def getSPARQLOlympiadGrades(year, country, grade, olympiad):
+    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
+    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
+    'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
+    'PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>\n'+
+    '''SELECT ?text ?problemid ?problem_number WHERE {
+  ?problem eozol:year \''''+year+'''\' .
+  ?problem eozol:country \''''+country+'''\' .
+  ?problem eozol:text ?text .
+  ?problem eozol:problemid ?problemid .
+  ?problem eozol:problem_number ?problem_number .
+  ?problem eozol:grade \''''+grade+'''\' .
+  ?problem eozol:olympiad \''''+olympiad+'''\' .
+} ORDER BY ?problem_number'''
+    }
+
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+
+    x = requests.post(url, myobj, head)
+
+    print(x.text)
+
+    return x.text
+
 def getSPARQLVideoBookmarks(problemid):
     url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
@@ -203,7 +228,8 @@ def create_app(test_config=None):
             'video_title': video_title,
             'video_length' : video_length,
             'video_youtube': video_youtube,
-            'bookmarks': bookmarks
+            'bookmarks': bookmarks,
+            'youtubeid': video_youtube[32:]
         }
 
         return render_template('video.html', **template_context)
@@ -320,6 +346,26 @@ def create_app(test_config=None):
         }
         # Kontrolieris izlemj, uz kuru skatu sūtīs klientu
         return render_template('olympiad.html', **template_context)
+
+#year, country, grade, olympiad
+    @app.route('/grade', methods=['GET', 'POST'])
+    def getGrades():
+        year = request.args.get('year')
+        country= request.args.get('country')
+        grade= request.args.get('grade')
+        olympiad= request.args.get('olympiad')
+        link = json.loads(getSPARQLOlympiadGrades(year,country,grade,olympiad))
+
+
+        template_context = {
+            'link': link['results']['bindings'],
+            'year': year,
+            'country': country,
+            'grade': grade,
+            'olympiad': olympiad
+        }
+
+        return render_template('grade.html', **template_context)
 
     # register the database commands
 

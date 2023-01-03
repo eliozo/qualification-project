@@ -20,14 +20,14 @@
         {{jsonfile}}
     </div>
     <h2> Olimpiāde: {{ country_id }}.{{ olympiad_id }} </h2>
-    <p> Visi gadi no šīs konkrētās olimpiādes </p>
+    <p> Visi gadi ar klasēm no šīs konkrētās olimpiādes </p>
     <table border="1" cellspacing="0">
         {% for year in all_years %}
         <tr>
             <th>{{ year }}</th>
             {% for grade in range(5,13) %}
             {% if all_grades[year][grade-5] != 'NA' %}
-            <td><a href="#">Klase: {{ grade }}</a></td>
+            <td><a href="http://localhost:5000/grade?year={{link.year.value}}&grade={{link.grade.value}}">Klase: {{ grade }}</a></td>
             {% else %}
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
             {% endif %}

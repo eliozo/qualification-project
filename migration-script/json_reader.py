@@ -6,7 +6,7 @@ from rdflib.namespace import RDF, FOAF, SKOS
 
 eozol_ns = "http://www.dudajevagatve.lv/eozol#"
 
-def addToRdfGraph(g, title, text, country, olympiad, year, grade): # Funkcija, kas pievieno RDF datus grafam
+def addToRdfGraph(g, title, text, country, olympiad, year, grade, problem_number): # Funkcija, kas pievieno RDF datus grafam
     global eozol_ns
     problem_node = rdflib.URIRef(eozol_ns+title)
     problem_text_property = rdflib.URIRef(eozol_ns+'text')
@@ -14,6 +14,7 @@ def addToRdfGraph(g, title, text, country, olympiad, year, grade): # Funkcija, k
     problem_olympiad_property = rdflib.URIRef(eozol_ns+'olympiad')
     problem_year_property = rdflib.URIRef(eozol_ns+'year')
     problem_grade_property = rdflib.URIRef(eozol_ns+'grade')
+    problem_number_property = rdflib.URIRef(eozol_ns+'problem_number')
     problem_text = rdflib.term.Literal(text, lang=u'lv')
     problem_id = rdflib.URIRef(eozol_ns+'problemid')
     g.add((problem_node, problem_text_property, problem_text))
@@ -21,6 +22,7 @@ def addToRdfGraph(g, title, text, country, olympiad, year, grade): # Funkcija, k
     g.add((problem_node, problem_olympiad_property, rdflib.term.Literal(olympiad)))
     g.add((problem_node, problem_year_property, rdflib.term.Literal(year)))
     g.add((problem_node, problem_grade_property, rdflib.term.Literal(grade)))
+    g.add((problem_node, problem_number_property, rdflib.term.Literal(problem_number)))
     g.add((problem_node, problem_id, rdflib.term.Literal(title)))
 
 current_problem_id = "NA"
@@ -67,6 +69,7 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
             olympiad = "NA"
             year = "NA"
             grade = "NA"
+            problem_number = "NA"
             problem_title = problem_title[13:]
             current_problem_id = problem_title
             problem_id = re.compile(r"([A-Z]{2})\.(\w+)\.(\d+)\.(\d+)([A-Za-z_]+\w*)?\.(\d+)")
@@ -76,6 +79,7 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
                 olympiad = match_id.group(2)
                 year = match_id.group(3)
                 grade = match_id.group(4)
+                problem_number = match_id.group(6)
                 if int(grade) < 10:
                     grade = '0'+ grade
             problem_text = ""
@@ -85,7 +89,7 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
                 elif line['type'] == 'LineBreak':
                     problem_text = problem_text+'\n'
             print(problem_text)
-            addToRdfGraph(g, problem_title, problem_text, country, olympiad, year, grade)
+            addToRdfGraph(g, problem_title, problem_text, country, olympiad, year, grade, problem_number)
             state = 0
         elif state == 0 and item['type'] == 'Paragraph' and ('content' in item['children'][0].keys()) and item['children'][0]['content'] == '<small>':
             state = 2
