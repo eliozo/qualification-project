@@ -1,0 +1,223 @@
+@prefix eozol: <http://www.dudajevagatve.lv/eozol#> .
+
+eozol:LT.VUMIF.2016.10.3 eozol:country "LT" ;
+    eozol:grade "10" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2016.10.3" ;
+    eozol:skill eozol:div.common.lcm.maxexp,
+        eozol:div.fta,
+        eozol:div.fta.pow.other,
+        eozol:mod.eq.chinese,
+        eozol:seq.arithm.mod.gaps ;
+    eozol:text """Atrodiet mazāko naturālo skaitli $n$, kuram skaitļi
+$\\sqrt[5]{5n}$, $\\sqrt[6]{6n}$, $\\sqrt[7]{7n}$
+ir naturāli."""@lv ;
+    eozol:year "2016" .
+
+eozol:LT.VUMIF.2016.11_12.1 eozol:country "LT" ;
+    eozol:grade "11" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2016.11_12.1" ;
+    eozol:text """Agne savā traukā ielēja $p$ litrus ūdens,
+bet Bens savā traukā ielēja $q$ litrus ūdens.
+Pārmaiņus veikdami gājienus, viņi spēlē sekojošu spēli.
+Gājiena laikā spēlētājs no sava trauka otra spēlētāja
+traukā ielej tik daudz ūdens,
+cik ūdens jau ir otrā spēlētāja traukā.
+Spēli sāk Agne. Pēc simts gājieniem Agnes traukā
+bija $q$ litri ūdens, bet Bena traukā - $p$ litri ūdens.
+Atrodiet $\\frac{p}{q}$."""@lv ;
+    eozol:year "2016" .
+
+eozol:LT.VUMIF.2016.11_12.3 eozol:country "LT" ;
+    eozol:grade "11" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2016.11_12.3" ;
+    eozol:text """Noskaidrojiet, vai eksistē tāds naturāls skaitlis $n$, ka
+skaitlis $n \\cdot 2^{2016} - 7$ ir
+naturāla skaitļa kvadrāts."""@lv ;
+    eozol:year "2016" .
+
+eozol:LT.VUMIF.2016.9.3 eozol:country "LT" ;
+    eozol:grade "09" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2016.9.3" ;
+    eozol:skill eozol:alg.ineq.equations,
+        eozol:alg.poly.division,
+        eozol:comb.full ;
+    eozol:text """Atrodiet visas naturālas $n$ vērtības, kurām skaitlis
+$\\frac{n^3 + 3}{n^2 + 7}$
+ir naturāls."""@lv ;
+    eozol:year "2016" .
+
+eozol:LT.VUMIF.2017.10.1 eozol:country "LT" ;
+    eozol:grade "10" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2017.10.1" ;
+    eozol:text """Atrodiet visus veselu skaitļu pārus $(a,b)$,
+kuriem eksistē tādi veseli skaitļi $x$ un
+$y$, ka
+$$8x^4 + 8y^4 = a^4 + 6a^2b^2 + b^4.$$"""@lv ;
+    eozol:year "2017" .
+
+eozol:LT.VUMIF.2017.10.2 eozol:country "LT" ;
+    eozol:grade "10" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2017.10.2" ;
+    eozol:skill eozol:alg.ineq.monotonicity,
+        eozol:alg.tra.binom.complsquare,
+        eozol:comb.full,
+        eozol:seq.gaps.squares ;
+    eozol:text """Atrodiet visus veselo skaitļu $m$ un $n$ pārus
+$(m,n)$, kas apmierina vienādību
+$$m^2 + 2m - 9 = n^2 + n.$$"""@lv ;
+    eozol:year "2017" .
+
+eozol:LT.VUMIF.2017.11_12.2 eozol:country "LT" ;
+    eozol:grade "11" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2017.11_12.2" ;
+    eozol:text """Atrodiet vienādojuma
+$$x^2y^2 + 208 + 4(\\mbox{LKD}(x,y) + \\mbox{MKD}(x,y))^2$$
+visus naturālos atrisinājumus $(x,y)$.
+Šeit $\\mbox{LKD}(x,y)$ un $\\mbox{MKD}(x,y)$ attiecīgi apzīmē skaitļu
+$x$ un $y$ lielāko kopīgo dalītāju un mazāko kopīgo dalāmo."""@lv ;
+    eozol:year "2017" .
+
+eozol:LT.VUMIF.2017.11_12.4 eozol:country "LT" ;
+    eozol:grade "11" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2017.11_12.4" ;
+    eozol:skill eozol:misc.invar.game ;
+    eozol:text """Uz tāfeles uzrakstīts skaitlis $636363$.
+Divi spēlētāji $A$ un $B$ pārmaiņus veic gājienus,
+pirmo gājienu izdara $A$.
+Gājiena laikā ir jānodzēš uz tāfeles esošais skaitlis un
+jāuzraksta tā starpība ar jebkuru viņa naturālu dalītāju.
+Spēlētājs, kurš uzraksta $0$, zaudē. Noskaidrojiet, kuram
+spēlētājam ir uzvaras stratēģija, un parādiet to."""@lv ;
+    eozol:year "2017" .
+
+eozol:LT.VUMIF.2017.9.2 eozol:country "LT" ;
+    eozol:grade "09" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2017.9.2" ;
+    eozol:skill eozol:comb.full,
+        eozol:nota.est.numdigits.prod ;
+    eozol:text """Vai izmantojot tieši pa vienai reizei visus desmit ciparus
+$0,1,2,\\ldots,9$ var uzrakstīt divus naturālus skaitļus, ka
+viens skaitlis būtu otra kvadrāts?
+ Pirmais skaitļa cipars nevar būt nulle."""@lv ;
+    eozol:year "2017" .
+
+eozol:LT.VUMIF.2018.10.4 eozol:country "LT" ;
+    eozol:grade "10" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2018.10.4" ;
+    eozol:skill eozol:div.fta.divisors.num,
+        eozol:div.fta.divisors.struct ;
+    eozol:text """Skaitļa $n>1$ visu pozitīvo dalītāju
+(ieskaitot $1$ un $n$) reizinājums vienāds ar $n^3$.
+Norādiet visas iespējamās skaitļa $n$ vērtības,
+uzrakstot, kāds var būt skaitļa $n$ sadalījums pirmreizinātājos."""@lv ;
+    eozol:year "2018" .
+
+eozol:LT.VUMIF.2018.11_12.4 eozol:country "LT" ;
+    eozol:grade "11" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2018.11_12.4" ;
+    eozol:text """Naturālie skaitļi $p$, $x$, $y$ apmierina vienādojumus:
+$$p + 1 = 2x^2,p^2 + 1 = 2y^2.$$
+Noskaidrojiet visas iespējamās skaitļa $p$ vērtības, ja
+zināms, ka šis skaitlis ir pirmskaitlis."""@lv ;
+    eozol:year "2018" .
+
+eozol:LT.VUMIF.2018.9.4 eozol:country "LT" ;
+    eozol:grade "09" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2018.9.4" ;
+    eozol:text """Naturālam skaitlim $M = 3N$
+ir tikpat ciparu, cik naturālam skaitlim $N > 10$.
+Lai iegūtu skaitli $M$, vajag palielināt
+ikvienu skaitļa $N$ ciparu: vienam no cipariem
+pieskaitīt $2$, bet pie atlikušajiem cipariem
+pieskaitīt pa nepāru naturālam skaitlim (ne obligāti
+visiem to pašu).
+Atrodiet visas iespējamās skaitļa $N$ pēdējā
+cipara vērtības."""@lv ;
+    eozol:year "2018" .
+
+eozol:LT.VUMIF.2019.10.4 eozol:country "LT" ;
+    eozol:grade "10" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2019.10.4" ;
+    eozol:skill eozol:misc.invar,
+        eozol:mod.congr.prod,
+        eozol:nota.divrule.3_9.rem ;
+    eozol:text """Naturālu skaitli sauksim par ,
+ja tam ir tieši $70$ ciparu: $10$ vieninieku,
+$10$ divnieku, $\\ldots$, $10$ septiņnkieku.
+Pierādīt, ka, ja viens septiņīgs skaitlis dalās
+ar citu septiņīgu skaitli, tad tie ir vienādi."""@lv ;
+    eozol:year "2019" .
+
+eozol:LT.VUMIF.2019.11_12.4 eozol:country "LT" ;
+    eozol:grade "11" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2019.11_12.4" ;
+    eozol:skill eozol:alg.ineq.monotonicity,
+        eozol:comb.full,
+        eozol:mod.congr.prod,
+        eozol:mod.eq.chinese,
+        eozol:nota.divrule.3_9.rem ;
+    eozol:text """Naturālu skaitli sauksim par , ja
+tam ir tieši $500$ ciparu: pa $100$ divnieku,
+trijnieku, četrinieku, piecinieku un sešinieku.
+Pie piecīga skaitļa $M$ labajā pusē pierakstot
+divus ciparus $81$, iegūts skaitlis
+$N = \\overline{M81}$. Pierādiet, ka
+a) $M$ nedalās ne ar vienu piecīgu skaitli, izņemot sevi pašu;
+b) $N$ nedalās ne ar vienu piecīgu skaitli."""@lv ;
+    eozol:year "2019" .
+
+eozol:LT.VUMIF.2019.9.1 eozol:country "LT" ;
+    eozol:grade "09" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2019.9.1" ;
+    eozol:text """Atrodiet visus veselu skaitļu trijniekus $(x,y,z)$,
+kas apmierina vienādojumu sistēmu
+$$
+\\left \\begin{array}{l}
+x^3 + y^3 = z^3 + 1,\\
+y^2 - x^2 = x+y,\\
+2x^3 - 6x = z^3 - 4x^2.
+\\end{array} \\right.$$"""@lv ;
+    eozol:year "2019" .
+
+eozol:LT.VUMIF.2019.9.2 eozol:country "LT" ;
+    eozol:grade "09" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2019.9.2" ;
+    eozol:skill eozol:misc.ind.least,
+        eozol:misc.invar.game,
+        eozol:mod.fix.parity ;
+    eozol:text "<div style=\"font-size:70%\">"@lv ;
+    eozol:year "2019" .
+
+eozol:LT.VUMIF.2019.9.4 eozol:country "LT" ;
+    eozol:grade "09" ;
+    eozol:olympiad "VUMIF" ;
+    eozol:problemid "LT.VUMIF.2019.9.4" ;
+    eozol:skill eozol:comb.full,
+        eozol:misc.symm,
+        eozol:mod.eq,
+        eozol:mod.fix.lastdigits,
+        eozol:nota.divrule.2_5pow.divides ;
+    eozol:text """Jurgis uzrakstīja trīs naturālus skaitļus,
+no kuriem katrs beidzas ar to pašu ciparu, ar kuru
+beidzas pārējo divu skaitļu summa, un sareizināja tos.
+Jurgis uzrakstīja tikai reizinājuma pēdējos trīs
+ciparus. Kādu ciparu trijnieku viņš varēja iegūt?
+Atrodiet visas iespējas."""@lv ;
+    eozol:year "2019" .
+

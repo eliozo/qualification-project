@@ -1,16 +1,25 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix eozol: <http://www.dudajevagatve.lv/eozol#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-eozol:LV.AO.2011.5.1 eozol:video eozol:LV.AO.2011.5.1.video .
-eozol:LV.AO.2011.5.1.video eozol:videoAuthor "@kalvisapsitis1" ;
-    rdf:type eozol:Video ;
-    eozol:videoYoutube "https://www.youtube.com/watch?v=tWx-UGFeuSA" ;
-    eozol:videoTitle "AMO2011, 5.klases 1.uzdevums" ;
-    eozol:videoLength "7:55" .
-eozol:LV.AO.2011.5.1.video eozol:videoBookmarks eozol:LV.AO.2011.5.1.bookmarks .
-eozol:LV.AO.2011.5.1.bookmarks a rdf:Seq;
-        rdf:_1 eozol:LV.AO.2011.5.1.bookmark1 .
-eozol:LV.AO.2011.5.1.bookmark1 eozol:tstamp "0:05" ;
-    eozol:bmtext "Uzdevuma saprašana: Piemērā abi reizinātāji ir īsti divciparu skaitļi." .
+eozol:LV.AO.2011.5.1 eozol:video [ a eozol:Video ;
+            eozol:videoBookmarks [ a rdf:Seq ;
+                    rdf:_1 [ eozol:bmtext "Uzdevuma saprašana: Piemērā abi reizinātāji ir īsti divciparu skaitļi." ;
+                            eozol:tstamp "0:05" ] ;
+                    rdf:_2 [ eozol:bmtext "Uzdevuma saprašana: Kādēļ pilnā pārlase neder?" ;
+                            eozol:tstamp "0:45" ] ;
+                    rdf:_3 [ eozol:bmtext "Uzdevuma saprašana: Izmantojam vienādības labo pusi, lai samazinātu meklējumu telpu." ;
+                            eozol:tstamp "1:18" ] ;
+                    rdf:_4 [ eozol:bmtext "Risinājums: Skaitļa 111 izteikšana ar reizinājumu. Metode: Dalīšana pirmreizinātājos." ;
+                            eozol:tstamp "2:00" ] ;
+                    rdf:_5 [ eozol:bmtext "Risinājums: Izsakām visus EEE skaitļus kā reizinājumus. Metode: Gadījumu pārlase." ;
+                            eozol:tstamp "2:55" ] ;
+                    rdf:_6 [ eozol:bmtext "Risinājums: Kādēļ kreisajā pusē jābūt 37 vai 74? Metode: Dalāmība veselu skaitļu vienādojumā." ;
+                            eozol:tstamp "3:40" ] ;
+                    rdf:_7 [ eozol:bmtext "Risinājums: Nederīgo reizinājumu atmešana. Metode: Izslēgšanas metode." ;
+                            eozol:tstamp "5:43" ] ;
+                    rdf:_8 [ eozol:bmtext "Atskats: Atbildes formulējums; reizinātāju mainīšana vietām atbilžu skaitu formāli palielina." ;
+                            eozol:tstamp "7:08" ] ] ;
+            eozol:videoLength "475" ;
+            eozol:videoTitle "AMO2011, 5.klases 1.uzdevums" ;
+            eozol:videoYoutube "https://www.youtube.com/watch?v=tWx-UGFeuSA" ] .
+

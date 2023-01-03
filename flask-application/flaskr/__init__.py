@@ -109,6 +109,35 @@ def getSPARQLOlympiadYears(country, olympiad):
 
     return x.text
 
+def getSPARQLVideoBookmarks(problemid):
+    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
+    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
+    'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
+    'PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>\n'+
+    '''SELECT * WHERE {
+  ?problem eozol:problemid \''''+problemid+'''\' .
+  OPTIONAL {
+    ?problem eozol:video ?video .
+    ?video eozol:videoLength ?videoLength ;
+           eozol:videoTitle ?videoTitle ;
+           eozol:videoYoutube ?videoYoutube ;
+           eozol:videoBookmarks ?videoBookmarks .
+    ?videoBookmarks ?predicate ?bookmark .
+    ?bookmark eozol:tstamp ?tstamp ;
+              eozol:bmtext ?bmtext .
+  }.
+} ORDER BY ?tstamp'''
+    }
+
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+
+    x = requests.post(url, myobj, head)
+
+    print(x.text)
+
+    return x.text
+
 def mathBeautify(a): # Izskaistina formulas ar MathJax Javascript bibliotēku
     b0 = re.sub(r"\$\$([^\$]+)\$\$", r"<p><span class='math display'>\[\1\]</span></p>", a) # Aizstāj vairākrindu formulas $$..$$
     b = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", b0) # Aizstāj inline formulas $...$ (Svarīga secība, kā aizstāj)
@@ -153,7 +182,31 @@ def create_app(test_config=None):
 
     @app.route("/video")
     def getVideo():
-        return render_template("video.html")
+        problemid = request.args.get('problemid')
+
+        problemid = "LV.AO.2011.5.1"
+
+        data = json.loads(getSPARQLVideoBookmarks(problemid))
+
+        bookmarks = []
+        video_title = "NA"
+        video_length = "NA"
+        video_youtube = "NA"
+
+        for item in data['results']['bindings']:
+            video_title = item['videoTitle']['value']
+            video_length = item['videoLength']['value']
+            video_youtube = item['videoYoutube']['value']
+            bookmarks.append({'tstamp': item['tstamp']['value'], 'bmtext': item['bmtext']['value']}) # Bookmarkos sakrāta informācija par tstamp un bmtext
+
+        template_context = {
+            'video_title': video_title,
+            'video_length' : video_length,
+            'video_youtube': video_youtube,
+            'bookmarks': bookmarks
+        }
+
+        return render_template('video.html', **template_context)
 
     @app.route('/skills', methods=['GET','POST'])
     def getSkills():
@@ -193,12 +246,9 @@ def create_app(test_config=None):
         skill = request.args.get('skillIdentifier') 
         data = json.loads(getSkillProblemsSPARQL(skill))
         problem_list = []
-        # <p><span class="math display">\[x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.\]</span></p>
         for data_item in data['results']['bindings']:
             a = data_item['text']['value']
             b = mathBeautify(a)
-            # b0 = re.sub(r"\$\$([^\$]+)\$\$", r"<p><span class='math display'>\[\1\]</span></p>", a)
-            # b = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", b0)
             problem_list.append({'problemid': data_item['problemid']['value'], 'text': b})
 
         template_context = {
@@ -241,6 +291,8 @@ def create_app(test_config=None):
     def getOlympiad():
         country_id = request.args.get('country_id')
         olympiad_id= request.args.get('olympiad_id')
+
+        # Sākas datu piekļuve (Modelis)
         x = getSPARQLOlympiadYears(country_id, olympiad_id)
         print(x)
         olympiads = json.loads(x)
@@ -259,13 +311,14 @@ def create_app(test_config=None):
             grade = int(item['grade']['value'])
             all_grades[current_year][grade-5] = item['grade']['value'] # 0. 5.klase, 1. 6.klase utt.
 
+        # Kontrolieris izlemj, kādus datus sūtīs klientam, saliek tos vārdnīcā
         template_context = {
             'all_years': all_years,
             'all_grades': all_grades,
             'country_id': country_id,
             'olympiad_id': olympiad_id          
         }
-
+        # Kontrolieris izlemj, uz kuru skatu sūtīs klientu
         return render_template('olympiad.html', **template_context)
 
     # register the database commands
