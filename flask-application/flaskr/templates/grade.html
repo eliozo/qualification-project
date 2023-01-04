@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
-    <a href="http://localhost:5000/olympiad" class="button">Atpakaļ</a>
+    <a href="http://localhost:5000/olympiad?country_id={{country}}&olympiad_id={{olympiad}}" class="button">Atpakaļ</a>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        type="text/javascript"></script>
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
@@ -20,12 +22,13 @@
     </div>
     <h2> Dotās klases uzdevumi </h2>
     <p> Visi uzdevumi, kas ir zem šīs olimpiādes, klases un gada </p>
-    {% for link in links %}
-    <p>Klases uzdevumi: <a href='http://localhost:5000/grade?year={{link.year.value}}&grade={{link.grade.value}}'>
-            {{link.year.value}}&grade={{link.grade.value}}
+    {% for problem in problems %}
+    <h3>{{ problem.problem_number }}. uzdevums</h3>
+    <p> Uzdevuma ID: <a href='http://localhost:5000/problem?problemid={{problem.problemid}}'>
+            {{ problem.problemid }}
         </a> </p>
+    {{ problem.text | safe }}
     {% endfor %}
 </body>
-<!--http://localhost:5000/grade?year={{link.year.value}}&grade={{link.grade.value}}-->
 
 </html>

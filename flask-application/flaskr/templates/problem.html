@@ -23,11 +23,13 @@
   <h3>Uzdevums: {{ problemid }} </h3>
   <p> Klase {{ data[0].grade.value }}</p>
   <p> Gads: {{ data[0].year.value }}</p>
+  {% if data[0].skill is defined %}
   <p> Prasmes: {% for item in data %}
     <a href="/skill_tasks?skillIdentifier={{item.skillIdentifier.value}}">{{ item.skillIdentifier.value }} </a>
     &nbsp;
-    {% endfor %}
+    {% endfor %}  
   </p>
+  {% endif %}
   <p> {{ text |safe }}</p>
 </body>
 

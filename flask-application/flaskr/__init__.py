@@ -40,15 +40,19 @@ def getSPARQLProblem(arg):
              eozol:year ?year ;
              eozol:olympiad ?olympiad ;
              eozol:grade ?grade ;
-             eozol:country ?country ;
-             eozol:skill ?skill .
-    ?skill eozol:skillIdentifier ?skillIdentifier .
-  }.
+             eozol:country ?country .
+             } .
+      OPTIONAL {
+        ?problem eozol:skill ?skill .
+        ?skill eozol:skillIdentifier ?skillIdentifier .
+    } .
 }'''
   }
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
 
     x = requests.post(url, myobj, head)
+
+    print("myobj= {}".format(myobj))
 
     print(x.text)
 
@@ -121,10 +125,12 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad):
   ?problem eozol:text ?text .
   ?problem eozol:problemid ?problemid .
   ?problem eozol:problem_number ?problem_number .
-  ?problem eozol:grade \''''+grade+'''\' .
+  ?problem eozol:grade '''+grade+''' .
   ?problem eozol:olympiad \''''+olympiad+'''\' .
 } ORDER BY ?problem_number'''
     }
+
+    print('**********myobj={}'.format(myobj))
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
 
@@ -290,8 +296,6 @@ def create_app(test_config=None):
         data = json.loads(getSPARQLProblem(problemid))
 
         a = data['results']['bindings'][0]['text']['value']
-        # b0 = re.sub(r"\$\$([^\$]+)\$\$", r"<p><span class='math display'>\[\1\]</span></p>", a)
-        # text = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", b0)
         text = mathBeautify(a)
 
         template_context = {
@@ -354,11 +358,23 @@ def create_app(test_config=None):
         country= request.args.get('country')
         grade= request.args.get('grade')
         olympiad= request.args.get('olympiad')
+        print('Gads = {}, country - {}, grade = {}, olympiad = {}'.format(year,country,grade,olympiad))
         link = json.loads(getSPARQLOlympiadGrades(year,country,grade,olympiad))
+
+        problems = []
+        
+        for item in link['results']['bindings']:
+            problem_id_value = item['problemid']['value']
+            problem_number_value = item['problem_number']['value']
+            problem_text_value = mathBeautify(item['text']['value'])
+
+            d = {'problemid': problem_id_value, 'problem_number':problem_number_value, 'text': problem_text_value}
+
+            problems.append(d)
 
 
         template_context = {
-            'link': link['results']['bindings'],
+            'problems': problems,
             'year': year,
             'country': country,
             'grade': grade,

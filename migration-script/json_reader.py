@@ -2,7 +2,7 @@ import json
 import re
 # from rdflib import Graph, URIRef, Literal, Namespace, BNode
 import rdflib
-from rdflib.namespace import RDF, FOAF, SKOS
+from rdflib.namespace import RDF, FOAF, SKOS, XSD
 
 eozol_ns = "http://www.dudajevagatve.lv/eozol#"
 
@@ -21,7 +21,7 @@ def addToRdfGraph(g, title, text, country, olympiad, year, grade, problem_number
     g.add((problem_node, problem_country_property, rdflib.term.Literal(country)))
     g.add((problem_node, problem_olympiad_property, rdflib.term.Literal(olympiad)))
     g.add((problem_node, problem_year_property, rdflib.term.Literal(year)))
-    g.add((problem_node, problem_grade_property, rdflib.term.Literal(grade)))
+    g.add((problem_node, problem_grade_property, rdflib.term.Literal(grade, datatype=XSD.integer)))
     g.add((problem_node, problem_number_property, rdflib.term.Literal(problem_number)))
     g.add((problem_node, problem_id, rdflib.term.Literal(title)))
 
@@ -80,8 +80,10 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
                 year = match_id.group(3)
                 grade = match_id.group(4)
                 problem_number = match_id.group(6)
-                if int(grade) < 10:
-                    grade = '0'+ grade
+            if grade == "NA":
+                grade = 0
+                # if int(grade) < 10:
+                #     grade = '0'+ grade
             problem_text = ""
             for line in item['children']:
                 if line['type'] == 'RawText':

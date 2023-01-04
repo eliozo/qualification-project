@@ -27,7 +27,7 @@
             <th>{{ year }}</th>
             {% for grade in range(5,13) %}
             {% if all_grades[year][grade-5] != 'NA' %}
-            <td><a href="http://localhost:5000/grade?year={{link.year.value}}&grade={{link.grade.value}}">Klase: {{ grade }}</a></td>
+            <td><a href="http://localhost:5000/grade?year={{year}}&grade={{grade}}&country={{country_id}}&olympiad={{olympiad_id}}">Klase: {{ grade }}</a></td>
             {% else %}
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
             {% endif %}
