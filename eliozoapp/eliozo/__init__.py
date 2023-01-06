@@ -385,7 +385,7 @@ def create_app(test_config=None):
 
     # register the database commands
 
-    from flaskr import db
+    from eliozo import db
     
     db.init_app(app)
 
