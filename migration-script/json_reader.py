@@ -34,6 +34,13 @@ def addSkillToRdfGraph(g, title, skill): # Funkcija, kas pievieno RDF prasmes da
     problem_skill_object = rdflib.URIRef(eozol_ns+skill) # konkrētā prasme, īpašība var atkāroties, objekts
     g.add((problem_node, problem_skill_property, problem_skill_object))
 
+def addImageToRDFGraph(g, title, image_src): 
+    global eozol_ns
+    problem_node = rdflib.URIRef(eozol_ns+title) # subjekts
+    problem_image_property = rdflib.URIRef(eozol_ns+'image') 
+    problem_image_object = rdflib.term.Literal(image_src) 
+    g.add((problem_node, problem_image_property, problem_image_object))
+
 def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
     EOZOL = rdflib.Namespace("http://www.dudajevagatve.lv/eozol#")
 
@@ -59,9 +66,10 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
             problem_title = item['children'][0]['content']
 
             if problem_title.startswith('<lo-sample/>'):
-                print()
-                print(problem_title)
-                print("************************")
+                pass
+                # print()
+                # print(problem_title)
+                # print("************************")
             else:
                 state = 0
         elif state == 1 and item['type'] == 'Paragraph':
@@ -90,7 +98,7 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
                     problem_text = problem_text+line['content']
                 elif line['type'] == 'LineBreak':
                     problem_text = problem_text+'\n'
-            print(problem_text)
+            # print(problem_text)
             addToRdfGraph(g, problem_title, problem_text, country, olympiad, year, grade, problem_number)
             state = 0
         elif state == 0 and item['type'] == 'Paragraph' and ('content' in item['children'][0].keys()) and item['children'][0]['content'] == '<small>':
@@ -100,8 +108,12 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
             for skill_item in skill_items:
                 if skill_item['type'] == 'ListItem':
                     skill = skill_item['children'][0]['children'][0]['children'][0]['content']
-                    print('{}'.format(skill))
+                    # print('{}'.format(skill))
                     addSkillToRdfGraph(g, current_problem_id, skill)
+        elif state == 0 and item['type'] == 'Paragraph' and item['children'][0]['type'] == 'Image':
+            image_src = item['children'][0]['src']
+            print('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa{}'.format(image_src))
+            addImageToRDFGraph(g, current_problem_id, image_src)
         else:
             state = 0
     g.serialize(destination=out_file)

@@ -19,7 +19,6 @@ def main():
             if extension in ['.cfg', '.in', '.ini', '.py', '.html'] or (len(path) > rootDirLen+2 and path[rootDirLen+2] in ['reveal.js.40', 'algorithms-slides']):
                 srcpath = list(path)
                 srcpath.append(file)
-                #destpath = ['c:', 'Users', 'kapsitis', 'tmp']
                 destpath = destRootDir.split(os.sep)
                 destpath = destpath + srcpath[rootDirLen:]
                 print('Copying ' + '/'.join(srcpath))

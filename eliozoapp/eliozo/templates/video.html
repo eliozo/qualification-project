@@ -37,7 +37,7 @@
                         player = new YT.Player('player', {
                             height: '390',
                             width: '640',
-                            videoId: '{{ youtubeid }}', // šo jāpārtaisa
+                            videoId: '{{ youtubeID }}', // šo jāpārtaisa
                             playerVars: {
                                 'playsinline': 1
                             },
@@ -59,7 +59,7 @@
                     var done = false;
                     function onPlayerStateChange(event) {
                         if (event.data == YT.PlayerState.PLAYING && !done) {
-                            setTimeout(stopVideo, 6000);
+                            setTimeout(stopVideo, 6000000);
                             done = true;
                         }
                     }
@@ -74,7 +74,7 @@
                     <ul>
                     {% for bookmark in bookmarks %}
                         <li>
-                        {{ bookmark.tstamp }} <a href="#"> {{ bookmark.bmtext }} </a>
+                        {{ bookmark.minutes }}:{{ bookmark.sec }} <a href="#">{{ bookmark.bmtext }} </a>
                         </li>
                     {% endfor %}
                     </ul>

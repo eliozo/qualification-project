@@ -46,6 +46,12 @@ def getSPARQLProblem(arg):
         ?problem eozol:skill ?skill .
         ?skill eozol:skillIdentifier ?skillIdentifier .
     } .
+      OPTIONAL {
+        ?problem eozol:video ?video .
+    } .
+      OPTIONAL {
+        ?problem eozol:image ?image .
+      }
 }'''
   }
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
@@ -146,15 +152,14 @@ def getSPARQLVideoBookmarks(problemid):
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>\n'+
-    '''SELECT * WHERE {
+    '''SELECT ?videoTitle ?youtubeID ?tstamp ?bmtext WHERE {
   ?problem eozol:problemid \''''+problemid+'''\' .
   OPTIONAL {
     ?problem eozol:video ?video .
-    ?video eozol:videoLength ?videoLength ;
-           eozol:videoTitle ?videoTitle ;
-           eozol:videoYoutube ?videoYoutube ;
+    ?video eozol:videoTitle ?videoTitle ;
+           eozol:youtubeID ?youtubeID ;
            eozol:videoBookmarks ?videoBookmarks .
-    ?videoBookmarks ?predicate ?bookmark .
+    ?videoBookmarks ?prop ?bookmark .
     ?bookmark eozol:tstamp ?tstamp ;
               eozol:bmtext ?bmtext .
   }.
@@ -221,21 +226,23 @@ def create_app(test_config=None):
 
         bookmarks = []
         video_title = "NA"
-        video_length = "NA"
-        video_youtube = "NA"
+        youtubeID = "NA"
 
         for item in data['results']['bindings']:
             video_title = item['videoTitle']['value']
-            video_length = item['videoLength']['value']
-            video_youtube = item['videoYoutube']['value']
-            bookmarks.append({'tstamp': item['tstamp']['value'], 'bmtext': item['bmtext']['value']}) # Bookmarkos sakrāta informācija par tstamp un bmtext
+            youtubeID = item['youtubeID']['value']
+            minutes = int(item['tstamp']['value']) // 60
+            if minutes < 10:
+                minutes = '0' + str(minutes)
+            seconds = int(item['tstamp']['value']) % 60
+            if seconds < 10:
+                seconds = '0' + str(seconds)
+            bookmarks.append({'tstamp': item['tstamp']['value'], 'bmtext': item['bmtext']['value'], 'minutes': minutes, 'sec': seconds}) # Bookmarkos sakrāta informācija par tstamp un bmtext
 
         template_context = {
             'video_title': video_title,
-            'video_length' : video_length,
-            'video_youtube': video_youtube,
             'bookmarks': bookmarks,
-            'youtubeid': video_youtube[32:]
+            'youtubeID': youtubeID
         }
 
         return render_template('video.html', **template_context)
@@ -298,12 +305,45 @@ def create_app(test_config=None):
         a = data['results']['bindings'][0]['text']['value']
         text = mathBeautify(a)
 
+        if 'video' in data['results']['bindings'][0]:
+            hasVideo = data['results']['bindings'][0]['video']['value'] != ''
+        else:
+            hasVideo = False
+
+        if 'image' in data['results']['bindings'][0]:
+            image_src = data['results']['bindings'][0]['image']['value']
+        else:
+            image_src = ''
+
+        bookmarks = []
+        video_title = "NA"
+        youtubeID = "NA"
+
+        if hasVideo:
+
+            video_data = json.loads(getSPARQLVideoBookmarks(problemid))
+
+            for item in video_data['results']['bindings']:
+                video_title = item['videoTitle']['value']
+                youtubeID = item['youtubeID']['value']
+                minutes = int(item['tstamp']['value']) // 60
+                if minutes < 10:
+                    minutes = '0' + str(minutes)
+                seconds = int(item['tstamp']['value']) % 60
+                if seconds < 10:
+                    seconds = '0' + str(seconds)
+                bookmarks.append({'tstamp': item['tstamp']['value'], 'bmtext': item['bmtext']['value'], 'minutes': minutes, 'sec': seconds}) # Bookmarkos sakrāta informācija par tstamp un bmtext
+
         template_context = {
             'problemid': problemid,
             'data': data['results']['bindings'],
-            'text': text
-       }
-
+            'text': text,
+            'hasVideo': hasVideo,
+            'video_title': video_title,
+            'bookmarks': bookmarks,
+            'youtubeID': youtubeID,
+            'image_src' : image_src
+        }
         return render_template('problem.html', **template_context)
 
 
