@@ -95,28 +95,6 @@ def addToRdfGraph(g, problem_id, youtube_id, video_title, bookmarks):
         g.add((current_bookmark, current_bookmark_text_property, rdflib.term.Literal(bmtext)))
         count += 1
 
-# def produceSingleYoutube(g, problem_id, youtube_id, video_youtube_link, video_title, bookmarks):
-#     addToRdfGraph(g, problem_id, youtube_id, video_youtube_link, video_title, bookmarks)
-
-# def produceCSVtoRDF(in_file, out_file):  # Pārveido CSV failu par RDF failu
-
-#     # problem_id = "LV.AO.2011.5.1"
-#     # video_id = "LV.AO.2011.5.1.video"
-#     # video_youtube_link = "https://www.youtube.com/watch?v=tWx-UGFeuSA"
-#     # video_title = "AMO2011, 5.klases 1.uzdevums"
-#     # video_length = "475"
-
-
-
-#     # bookmarks = [("0:05", "Uzdevuma saprašana: Piemērā abi reizinātāji ir īsti divciparu skaitļi."),
-#     #              ("0:45", "Uzdevuma saprašana: Kādēļ pilnā pārlase neder?"),
-#     #              ("1:18", "Uzdevuma saprašana: Izmantojam vienādības labo pusi, lai samazinātu meklējumu telpu."),
-#     #              ("2:00", "Risinājums: Skaitļa 111 izteikšana ar reizinājumu. Metode: Dalīšana pirmreizinātājos."),
-#     #              ("2:55", "Risinājums: Izsakām visus EEE skaitļus kā reizinājumus. Metode: Gadījumu pārlase."),
-#     #              ("3:40", "Risinājums: Kādēļ kreisajā pusē jābūt 37 vai 74? Metode: Dalāmība veselu skaitļu vienādojumā."),
-#     #              ("5:43", "Risinājums: Nederīgo reizinājumu atmešana. Metode: Izslēgšanas metode."),
-#     #              ("7:08", "Atskats: Atbildes formulējums; reizinātāju mainīšana vietām atbilžu skaitu formāli palielina.")]
-
 if __name__ == '__main__':
     getGoogleSpreadsheet()  # Izsauc funkciju, kas iegūst skos dokumentu CSV faila formātā
     readCSVfile(in_file="youtube.csv", out_file="youtube.ttl")

@@ -5,6 +5,7 @@ import html
 import requests
 import re
 
+# Integrācija ar Jena Fuseki serveri
 def getSPARQLtopics():
     url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
@@ -70,9 +71,40 @@ def getSkillProblemsSPARQL(skillID):
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
-    # 'SELECT ?sub ?text WHERE { ?sub eozol:skill \''+skillID+'\' ; eozol:text ?text . } ORDER BY ?obj '
-    'SELECT ?problemid ?text WHERE { ?sub eozol:problemid ?problemid . ?sub eozol:skill ?skill . ?sub eozol:text ?text . ?skill eozol:skillIdentifier \''+skillID+'\' . } ORDER BY ?problemid '
-    # 'SELECT ?problemid ?text WHERE { ?sub eozol:problemid ?problemid . ?sub eozol:skill \''+skillID+'\' . ?sub eozol:text ?text . } ORDER BY ?problemid'
+    '''SELECT DISTINCT ?problem ?problemid ?text ?grade
+WHERE {
+    ?parent skos:prefLabel \''''+skillID+'''\'  .
+    ?parent skos:narrower* ?subskill .
+    ?problem eozol:skill ?subskill ;
+             eozol:problemid ?problemid ;
+             eozol:text ?text ;
+             eozol:grade ?grade .
+} ORDER BY ?grade
+ '''
+
+}
+
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+
+    x = requests.post(url, myobj, head)
+
+    print(x.text)
+
+    return x.text
+
+def getAllSkillChildren(skillID):
+    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
+    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
+    'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
+    'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
+    '''SELECT ?skillID ?prefLabel ?num ?desc WHERE {
+	?alg skos:prefLabel \''''+skillID+'''\' .
+    ?skillID skos:broader ?alg ;
+             skos:prefLabel ?prefLabel ;
+             eozol:skillDescription ?desc ;
+  			 eozol:skillNumber ?num .
+} ORDER BY ?num'''
     }
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
@@ -282,7 +314,15 @@ def create_app(test_config=None):
 
     @app.route('/skill_tasks', methods=['GET','POST']) # Kontrolieris, kas iegūst prasmes kopā ar uzdevumiem
     def getSkill():
-        skill = request.args.get('skillIdentifier') 
+        skill = request.args.get('skillIdentifier')
+        all_skills = json.loads(getAllSkillChildren(skill))
+        skill_list = []
+        for skill_item in all_skills['results']['bindings']: # all_skills saraksts ar vārdnīcām
+            prefLabel = skill_item['prefLabel']['value']
+            desc = skill_item['desc']['value']
+            dd = {'prefLabel': prefLabel, 'desc' : desc}
+            skill_list.append(dd)
+
         data = json.loads(getSkillProblemsSPARQL(skill))
         problem_list = []
         for data_item in data['results']['bindings']:
@@ -292,7 +332,8 @@ def create_app(test_config=None):
 
         template_context = {
             'skill': skill,
-            'problem_list': problem_list
+            'problem_list': problem_list,
+            'skill_list' : skill_list
         }
         return render_template('skill_tasks.html', **template_context)
 

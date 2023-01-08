@@ -21,6 +21,14 @@
     {{jsonfile}}
   </div>
   <h2>{{ skill }}</h2>
+  <ol>
+    {% for skill in skill_list %}
+    <li>
+      <a href="http://localhost:5000/skill_tasks?skillIdentifier={{skill.prefLabel }}">{{ skill.prefLabel }}</a>: {{ skill.desc }}
+    </li>
+    {% endfor %}
+  </ol>
+  <hr style="width:60%; color:black;">
   {% for problem in problem_list %}
   <h3>Uzdevums: {{ problem.problemid }} </h3>
   <p> {{ problem.text |safe }}</p>
