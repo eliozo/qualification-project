@@ -1475,6 +1475,16 @@ dalās ar katru no abiem pārējiem skaitļiem?
 
 -----
 
+# LV.AO.2009.7.2
+
+Trijstūrim $T$ visas malas ir dažāda garuma. Par punktiem $M$ un $N$
+zināms tikai tas, ka tie atrodas trijstūra $T$ iekšpusē.  
+**(a)** vai var gadīties, ka nogrieznis $MN$ garāks par divām $T$ malām?  
+**(b)** vai var gadīties, ka nogrieznis $MN$ garāks par visām $T$ malām? 
+
+
+-----
+
 
 # <lo-sample/> LV.AO.2009.7.3
 
@@ -1505,6 +1515,14 @@ isHard=true
 
 **#Paritāte** **#Pirmskaitļi** **#ProgresijasSumma** **#SummasPārkārtošana** Nepāri kā pentomino "V". $(5,6,4)$,$(9,8,2)$,$(7,3,1)$. Nevar būt $p_1+p_2+p_3=45$.
 
+
+-----
+
+# <lo-sample/> LV.AO.2009.7.4
+
+Trijstūris $ABC$ ir šaurleņķu. Trijstūri $AMB$ un $BNC$ abi ir
+vienādmalu un atrodas ārpus $\bigtriangleup ABC$. Pierādīt, ka $AN=CM$.  
+![LV.AO.2016.7.3](geometry-grade07/LV.AO.2009.7.4.png)
 
 
 
@@ -1688,6 +1706,21 @@ questionType=Find.All
 
 -----
 
+# <lo-sample/> LV.AO.2010.7.2
+
+Caur trijstūra $ABC$ virsotni $A$ novilktā taisne $t$ sadala trijstūri divos
+vienādos trijstūros.
+Vai var gadīties, ka $AB>AC$? 
+
+<!--
+note=Ar ko atšķiras "vienādi trijstūri" no "vienlieliem trijstūriem"?
+-->
+
+
+
+
+-----
+
 # <lo-sample/> LV.AO.2010.7.3
 
 Ieraksti tabulas ar izmēriem $4 \times 4$ rūtiņas katrā rūtiņā vienu naturālu skaitli
@@ -1845,13 +1878,6 @@ Sauksim skaitli $n$ par apaļīgu, ja tas dalās ar $d(n)$.
 
 # <lo-sample/> LV.AO.2010.9.4
 
-<hgroup>
-
-![quadrant](LV.AO.2010.9.4.png)
-
-</hgroup>
-<hgroup style="font-size:70%">
-
 $2010 \times 2010$ rūtiņas lielā kvadrātā,
 sākot ar apakšējo kreiso rūtiņu,
 pēc kārtas tiek ierakstīti naturālie
@@ -1862,10 +1888,8 @@ Piemēram, skaitlis $19$ ierakstīts
 ceturtajā rindā, trešajā kolonnā.  
 (a) Kurš skaitlis ierakstīts 20. rindā, 10. kolonnā?  
 (b) Kurā rindā un kurā kolonnā atrodas rūtiņa, 
-kurā ierakstīts skaitlis $2010$?
-
-</hgroup>
-
+kurā ierakstīts skaitlis $2010$?  
+![quadrant](LV.AO.2010.9.4.png)
 
 
 -----
@@ -1946,8 +1970,223 @@ tādu $n$, ka, pareizi spēlējot, otrais spēlētājs uzvar!
 
 
 
+-----
+
+# <lo-sample/> LV.AO.2011.5.1
+
+Reizināšanas piemērā ciparus aizstāja ar burtiem un ieguva izteiksmi  
+$$AB \cdot CD = EEE.$$ . 
+Atjauno sākotnējo reizināšanas piemēru, ja zināms, ka vienādi burti
+apzīmē vienādus ciparus, bet dažādi burti – dažādus ciparus, pie tam
+ne $A$, ne $C$ nav $0$. Atrodi visus iespējamos atrisinājumus!
+
+<small>
+
+* [div.fta.divisors](#)
+* [comb.full](#)
+
+</small>
+
+<!--
+questionType=Find.All
+-->
+
+-----
+
+# <lo-sample/> LV.AO.2011.5.2
+
+Dotās $3 \times 3$ rūtiņu tabulas katrā rūtiņā
+jāieraksta pa vienam naturālam skaitlim tā,
+lai katrā rindā, katrā kolonnā un katrā
+diagonālē ierakstīto trīs skaitļu summas būtu
+vienādas. Ir zināmi trīs rūtiņās ierakstītie
+skaitļi (skat. 1. zīm.). Aizpildi pārējās tabulas
+rūtiņas!  
+![1.zīm](LV.AO.2011.5.2.png)
+
+<small>
+
+* [alg.expr.selectvar](#)
+* [alg.tra](#)
+
+</small>
+
+<!--
+questionType=Find.Only
+-->
+
+-----
+
+# <lo-sample/> LV.AO.2011.5.3
+
+Parādi, kā kvadrātu var sadalīt vairākos platleņķa trijstūros!
+
+<small>
+
+* [geom.constr.triangulate](#)
+* [geom.constr.small](#)
+* [geom.circle.inscribed](#)
+
+</small>
+
+<!--
+questionType=Prove.Exists
+-->
+
+-----
+
+# <lo-sample/> LV.AO.2011.5.4
+
+Vai naturālos skaitļus no $1$ līdz $12$, katru izmantojot tieši vienu reizi,
+var uzrakstīt pa apli tādā secībā, ka jebkuru divu blakus esošu skaitļu
+starpība ir  
+**(a)** $2$ vai $3$;  
+**(b)** $3$ vai $4$?
+
+<small>
+
+* [comb.constr.iterative](#)
+* [comb.graph](#)
+
+</small>
+
+<!--
+questionType=ProveDisprove.Exists
+-->
+
+-----
+
+# <lo-sample/> LV.AO.2011.5.5
+
+Kvadrātā ar izmēriem $7 \times 7$ rūtiņas jāizvieto $n$ "stūrīšus"
+(2. zīm. attēlotās figūras) tā, lai tajā vairāk nevarētu
+ievietot nevienu citu šādu "stūrīti". (Stūrīšu malām jāiet
+pa rūtiņu malām. Stūrīši var arī būt pagriezti citādāk.)
+Parādi, kā to var izdarīt, ja  
+**(a)** $n=9$;  
+**(b)** $n=8$.   
+![2.zīm.](LV.AO.2011.5.5.png)
+
+<small>
+
+* [misc.symm](#)
+* [comb.full.backtrack](#)
+
+</small>
+
+<!--
+questionType=Prove.Exists
+-->
 
 
+
+-----
+
+# <lo-sample/> LV.AO.2011.6.1
+
+
+Vai eksistē tādi naturāli skaitļi $a$ un $b$, kuriem izpildās vienādība
+$$a \cdot b \cdot (a+b) = 20102011 ?$$
+
+<small>
+
+* [div.fta.divisors](#)
+
+</small>
+
+<!--
+questionType=ProveDisprove.Exists
+-->
+
+
+-----
+
+# <lo-sample/> LV.AO.2011.6.2
+
+
+Sešdesmit pensionāri katru dienu *sociālajā tīklā*
+sarakstās savā starpā. Katrs kungs sarakstās ar tieši $17$ dāmām, 
+bet katra kundze sarakstās ar tieši $13$ kungiem. 
+Cik starp šiem pensionāriem ir kungu un cik – kundžu?
+
+<small>
+
+* [comb.graph.bipartite](#)
+
+</small>
+
+<!--
+questionType=Find.All
+-->
+
+-----
+
+# <lo-sample/> LV.AO.2011.6.3
+
+Kvadrātā ar izmēriem $8 \times 8$ rūtiņas sākotnēji 
+visas rūtiņas ir baltas. Kāds mazākais skaits rūtiņu 
+šajā kvadrātā jānokrāso zaļas, lai tajā nevarētu atrast 
+nevienu pilnībā baltu taisnstūri ar izmēriem $1 \times 3$ 
+rūtiņas (novietotu horizontāli vai vertikāli)?
+
+<small>
+
+* [comb.full](#)
+
+</small>
+
+<!--
+questionType=Find.Min
+-->
+
+
+-----
+
+# <lo-sample/> LV.AO.2011.6.4
+
+
+3. zīmējumā dota $3 \times 3$ rūtiņu tabula, 
+kurā ierakstīti veseli skaitļi. Vienā gājienā atļauts izvēlēties 
+divas dažādas tabulas rūtiņas -- apzīmēsim tajās ierakstītos 
+skaitļus attiecīgi ar $a$ un $b$, nodzēst šos divus skaitļus 
+un to vietā ierakstīt: a vietā -- skaitli $5a-2b$, bet b  vietā -- skaitli $5b-2a$.
+Vai, vairākkārt veicot šādus gājienus, var iegūt tabulu, kāda attēlota 4. zīm.?
+
+![3.zīm.](LV.AO.2011.6.4A.png)
+
+![4.zīm.](LV.AO.2011.6.4B.png)
+
+
+<small>
+
+* [misc.invar.congr](#)
+
+</small>
+
+<!--
+questionType=ProveDisprove.Exists
+-->
+
+-----
+
+# <lo-sample/> LV.AO.2011.6.5
+
+
+Betai bija $50$ konfektes, bet Almai un Danai bija vienāds konfekšu skaits. 
+Beta pazaudēja vienu konfekti un noskuma. Almai kļuva Betas žēl, un viņa atdeva māsai pusi 
+no savām konfektēm. Beta nomierinājās un nolēma, ka viņai tagad konfekšu ir par daudz un atdeva 
+pusi no savām Danai. Arī Dana izlēma padalīties ar Almu un atdeva pusi no savām konfektēm Almai. 
+Tagad Almai un Betai ir vienāds konfekšu skaits. Cik konfekšu sākumā bija katrai no māsām?
+
+<small>
+
+* [alg.tra](#)
+
+</small>
+
+<!--
+questionType=Find.Only
+-->
 
 
 
@@ -1969,7 +2208,6 @@ Atrodi visus šos skaitļus!
 
 <small>
 
-* [div.prop.primes.small](#)
 * [div.prop.primes.small](#)
 
 </small>
@@ -2006,6 +2244,25 @@ dalot ar $2011$, atlikumā iegūst $3$.
 <!--
 questionType=Find.Any
 -->
+
+
+-----
+
+# <lo-sample/> LV.AO.2011.7.4
+
+Kvadrāts sadalīts piecos taisnstūros tā, ka šo taisnstūru malu garumi
+centimetros ir visi naturālie skaitļi no $1$ līdz $10$. Parādi vienu
+piemēru, kā to var izdarīt! 
+
+
+-----
+
+# <lo-sample/> LV.AO.2011.7.5
+
+Taisne nokrāsota $10$ dažādās krāsās. Pierādi, ka uz tās var atrast
+divus vienas krāsas punktus, starp kuriem attālums centimetros ir
+vesels skaitlis.
+
 
 
 -----
@@ -2189,6 +2446,108 @@ katrā grupā aprēķināta tajā ietilpstošo skaitļu summa. Vai var būt, ka
 
 
 
+-----
+
+# <lo-sample/> LV.AO.2012.5.1
+
+Divu naturālu skaitļu pierakstā izmantoti tikai cipari $1$, $4$, $6$ un $9$. Vai
+var gadīties, ka viens skaitlis ir tieši septiņas reizes lielāks nekā otrs
+skaitlis? 
+
+<small>
+
+* [comb.full](#)
+
+</small>
+
+<!--
+questionType=ProveDisprove.Exists
+-->
+
+
+
+-----
+
+# <lo-sample/> LV.AO.2012.5.2
+
+Parādi, kā kvadrātu var sadalīt vairākos platleņķa trijstūros.
+(Trijstūri sauc par platleņķa trijstūri, ja tam ir viens plats leņķis un
+divi šauri leņķi.) 
+
+<small>
+
+* [geom.constr.triangulate](#)
+* [geom.circle.inscribed](#)
+
+</small>
+
+<!--
+sameAs=LV.AO.2011.5.3
+questionType=ProveDisprove.Exists
+-->
+
+
+-----
+
+# <lo-sample/> LV.AO.2012.5.3
+
+
+Maisā ir baltas, zaļas un sarkanas pogas (citu krāsu pogu maisā nav).
+Kādu mazāko skaitu pogu uz labu laimi (tās neredzot) ir jāizņem, lai
+noteikti būtu paņemtas vai nu $2$ baltas, vai $3$ zaļas, vai $4$ sarkanas
+pogas
+
+
+<small>
+
+* [misc.extr.pigeon.collection](#)
+
+</small>
+
+<!--
+questionType=ProveDisprove.Exists
+-->
+
+
+-----
+
+# <lo-sample/> LV.AO.2012.5.4
+
+
+$24$-stāvu mājā ir lifts, kuram ir divas pogas. Nospiežot vienu pogu,
+tas paceļas (ja iespējams) $17$ stāvus uz augšu, nospiežot otru --
+nolaižas $8$ stāvus uz leju (ja iespējams). Noskaidro, no kura stāva ar
+šo liftu var nokļūt uz jebkuru citu stāvu šajā mājā.
+(Lifts nevar uzbraukt augstāk par 24. stāvu un zemāk par 1. stāvu.) 
+
+<small>
+
+* [misc.ind](#)
+
+</small>
+
+<!--
+questionType=ProveDisprove.Exists
+-->
+
+
+-----
+
+# <lo-sample/> LV.AO.2012.5.5
+
+Sadali 1. zīmējumā attēloto figūru trīs vienādās figūrās.
+(Figūru un tās spoguļattēlu saucam par vienādām figūrām.) . 
+![1.zīm](LV.AO.2012.5.5.png)
+
+<small>
+
+* [comb.grid.shapes.cutting](#)
+
+</small>
+
+<!--
+questionType=ProveDisprove.Exists
+-->
 
 
 -----
@@ -2215,6 +2574,17 @@ questionType=ProveDisprove.Exists
 ## ABC
 
 **#Paritāte** Nepāru reizinājums nozīmē, ka $a,b$ ir nepāru. Bet tad $3a+5b$ ir pāru, kas ir pretruna. 
+
+
+-----
+
+# <lo-sample/> LV.AO.2012.7.2
+
+Doti seši nogriežņi ar garumiem $1\mbox{cm}$, $3\mbox{cm}$, $5\mbox{cm}$, 
+$7\mbox{cm}$, $9\mbox{cm}$, $11\mbox{cm}$. 
+Cik dažādos veidos no tiem var izvēlēties trīs nogriežņus
+tā, ka no tiem var izveidot trijstūri (katra trijstūra mala ir viens
+vesels nogrieznis)?
 
 
 
@@ -2314,7 +2684,37 @@ questionType=Prove.ForAll
 
 Atrodi vienu skaitli, kuram ir tieši $12$ veseli pozitīvi dalītāji.
 
+<small>
 
+* [mod.congr.pow](#)
+* [mod.congr.sumdiff](#)
+
+</small>
+
+
+<!--
+questionType=Find.Any
+-->
+
+
+-----
+
+# <lo-sample/> LV.AO.2012.9.2
+
+Trijstūrī $ABC$ $\angle ABC = 90^{\circ}$ , bet punkts $P$ atrodas uz malas $AB$.
+Punkti $M$ un $N$ ir attiecīgi nogriežņu $AC$ un $PC$ viduspunkti. Pierādi,
+ka $\angle BAC = \angle BMN$. 
+
+<small>
+
+* [geom.triangle.congruence](#)
+
+</small>
+
+
+<!--
+questionType=Prove.ForAll
+-->
 
 -----
 
@@ -2322,6 +2722,18 @@ Atrodi vienu skaitli, kuram ir tieši $12$ veseli pozitīvi dalītāji.
 
 Kvadrātvienādojuma $x^2 − 507x + a = 0$ saknes ir $p^2$ un $q$, kur $p$ un
 $q$ ir pirmskaitļi. Aprēķini $a$ skaitlisko vērtību.
+
+<small>
+
+* [mod.congr.pow](#)
+* [mod.congr.sumdiff](#)
+
+</small>
+
+
+<!--
+questionType=Find.All
+-->
 
 
 -----
@@ -2337,6 +2749,39 @@ reizes viņi atkārto šo darbību.
 Pēteris uzvar, ja iegūtais deviņciparu skaitlis dalās ar $37$. 
 Vai Pēteris vienmēr var uzvarēt?
 
+<small>
+
+* [mod.congr.pow](#)
+* [mod.congr.sumdiff](#)
+
+</small>
+
+
+<!--
+questionType=ProveDisprove.Exists
+-->
+
+-----
+
+# <lo-sample/> LV.AO.2012.9.5
+
+
+Dota trapece, kuras pamatu malu garumi ir $3$ un $13$.
+Pierādi, ka to nevar sadalīt piecos vienlielos trijstūros.
+(Figūras sauc par vienlielām, ja tām ir vienādi laukumi.)
+
+
+<small>
+
+* [geom.triangle.area.ah2](#)
+* [geom.quadrangle.trapezoid.area](#)
+
+</small>
+
+
+<!--
+questionType=Prove.NotExists
+-->
 
 
 
@@ -2393,6 +2838,111 @@ Pierādi, ka $A$ nedalās ar $B$.
 
 -----
 
+# <lo-sample/> LV.AO.2013.5.1
+
+
+Cik reizes diennaktī sakrīt pulksteņa stundu un minūšu
+rādītāji? (Plkst. 00:00 un 24:00 ieskaitīt vienu reizi.) *Atbildi pamatot!*
+
+
+-----
+
+# <lo-sample/> LV.AO.2013.5.2
+
+$24$-stāvu mājā ir lifts, kuram ir divas pogas. 
+Nospiežot vienu pogu,
+tas paceļas (ja iespējams) $17$ stāvus uz augšu, nospiežot otru –
+nolaižas $8$ stāvus uz leju (ja iespējams). Noskaidro, no kura stāva
+ar šo liftu var nokļūt uz jebkuru citu
+stāvu šajā mājā. (Lifts nevar uzbraukt
+augstāk par 24. stāvu un zemāk par 1.
+stāvu.)
+
+
+-----
+
+# <lo-sample/> LV.AO.2013.5.3
+
+
+1. zīmējumā katrā aplītī ierakstīt vienu
+ciparu, katrā aplītī – citu, tā, lai katros
+trīs aplīšos, kas atrodas uz vienas
+taisnes, ierakstīto skaitļu summa būtu
+viena un tā pati.  
+[1.zīm.](LV.AO.2013.5.3.png)
+
+-----
+
+# <lo-sample/> LV.AO.2013.5.4
+
+No 2. zīmējumā redzamajām figūrām salikt
+taisnstūri ar laukumu $40$ rūtiņas. Figūras nedrīkst
+pārklāties un katra veida figūra jāizmanto vismaz
+vienu reizi. (Figūras var būt pagrieztas vai
+apgrieztas otrādi.) . 
+[2.zīm.](LV.AO.2013.5.4.png)
+
+-----
+
+# <lo-sample/> LV.AO.2013.5.5
+
+Kuba katra skaldne sadalīta četros vienādos kvadrātos. Vai šos
+kvadrātus var nokrāsot a) divās; b) trīs krāsās tā, ka kvadrāti, kam
+ir kopīga mala, ir nokrāsoti dažādās krāsās? Katrs kvadrāts pilnībā
+ir jākrāso vienā krāsā. *Atbildi pamatot!*
+
+
+-----
+
+# <lo-sample/> LV.AO.2013.6.1
+
+Uz tāfeles uzrakstīti desmit skaitļi:
+$$1\;\;2\;\;3\;\;4\;\;5\;\;6\;\;7\;\;8\;\;9\;\;10.$$  
+Alfons nodzēš jebkurus divus no tiem (apzīmēsim tos ar $a$ un $b$)
+un to vietā uzraksta skaitli, kas vienāds ar  $a+b+2$. Šo operāciju
+viņš atkārto, kamēr uz tāfeles paliek viens skaitlis.
+Pamato, ka neatkarīgi no secības, kādā Alfons izpilda darbības,
+beigās tiek iegūts viens un tas pats skaitlis. Kāds tas ir?
+
+-----
+
+# <lo-sample/> LV.AO.2013.6.2
+
+Vai var atrast tādus divus viens otram sekojošus naturālus skaitļus,
+viens no kuriem dalās ar $3$ un kuru  
+**(a)** ciparu summas atšķiras par 3;   
+**(b)** ciparu reizinājumi atšķiras par 3?
+
+-----
+
+# <lo-sample/> LV.AO.2013.6.3
+
+Sagriezt 3. zīmējumā attēloto figūru $20$
+vienādās mazākās figūrās (figūras var būt
+pagrieztas vai apgrieztas otrādi).   
+![3.zīm.](LV.AO.2013.6.3.png)
+
+
+-----
+
+# <lo-sample/> LV.AO.2013.6.4
+
+Vai skaitļus no $100$ līdz $200$ var sadalīt divās grupās tā, ka skaitļu
+reizinājumi abās grupās ir vienādi?
+
+-----
+
+# <lo-sample/> LV.AO.2013.6.5
+
+Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem 5x5
+rūtiņas trīs **tukšās** vienas rindas vai kolonnas **blakus** rūtiņās
+ieraksta savu vārdu, katru burtu rakstot citā rūtiņā. Uzvar tas
+spēlētājs, kurš pēdējais ieraksta savu vārdu. Una izdara pirmo
+gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru?
+
+
+-----
+
 # <lo-sample/> LV.AO.2013.7.1
 
 Naturālā divciparu skaitlī neviens no cipariem nav $0$. Pierādīt, ka,
@@ -2420,6 +2970,21 @@ questionType=Prove.ForAll
 $\frac{10a+b}{ab}=\frac{10}{b}+\frac{1}{a}$ ir vismazākā, ja $a=b=9$.
 
 
+
+
+
+# <lo-sample/> LV.AO.2013.7.2
+
+Doti seši nogriežņi ar garumiem $1\mbox{cm}$, $3\mbox{cm}$, $5\mbox{cm}$, 
+$7\mbox{cm}$, $9\mbox{cm}$, $11\mbox{cm}$. 
+Cik dažādos veidos no tiem var izvēlēties trīs nogriežņus
+tā, ka no tiem var izveidot trijstūri (katra trijstūra mala ir viens
+vesels nogrieznis)?
+
+
+<!--
+sameAs=LV.AO.2012.7.2
+-->
 
 
 -----
@@ -2466,6 +3031,25 @@ nevar dalīties ar $8$ un nedalīties ar $16$ –
 saturēt pirmskaitli $2$ nepāru pakāpē.
 
 
+-----
+
+# <lo-sample/> LV.AO.2013.7.4
+
+Vai kvadrātā $5 \times 5$ rūtiņas var iekrāsot **(a)** $6$ rūtiņas; **(b)** $5$ rūtiņas tā,
+lai atlikušajā daļā nevarētu ievietot nevienu 4. zīmējumā redzamo
+figūru (tā var būt pagriezta vai apgāzta otrādi)?  
+![4.zīm](LV.AO.2013.7.4.png)
+
+
+-----
+
+# <lo-sample/> LV.AO.2013.7.5
+
+Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem $6 \times 6$
+rūtiņas trīs **tukšās** vienas rindas vai kolonnas **blakus** rūtiņās
+ieraksta savu vārdu, katru burtu rakstot citā rūtiņā. Uzvar tas
+spēlētājs, kurš pēdējais ieraksta savu vārdu. Una izdara pirmo
+gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru?
 
 
 
@@ -2496,15 +3080,118 @@ Tad $a = 7$, $b=2\cdot 10^{k-1}$.
 
 -----
 
+# <lo-sample/> LV.AO.2013.8.2
+
+Dots trijstūris $ABC$ un punkts $P$ tā iekšpusē. Pierādi, ka attālumu
+summa no punkta $P$ līdz dotā trijstūra virsotnēm ir lielāka nekā
+puse no trijstūra perimetra.
+
+
+-----
+
 # <lo-sample/> LV.AO.2013.8.3
+
+Doti tādi reāli skaitļi $t$ un $a$, ka 
+$t^2 - t \cdot sqrt(t) + a = 0$.  
+Pierādīt, ka $t \geq 4a$. 
+
+-----
+
+# <lo-sample/> LV.AO.2013.8.4
+
+Vai regulāru sešstūri var sadalīt **(a)** deviņos; **(b)** astoņos vienādos
+daudzstūros?
+
+
+-----
+
+# <lo-sample/> LV.AO.2013.8.5
+
+Rūķītis ir iedomājies skaitļus $x_1,x_2,x_3,x_4$, 
+katrs no tiem ir vai nu $0$, vai $1$. 
+Ja rūķītim pajautā: "Kāds ir $i$-tais skaitlis?" ($i = 1, 2, 3\ \mbox{vai}\ 4$ 
+pēc izvēles), tad viņš pasaka $x_i$ vērtību. 
+Pierādīt, ka ar $3$ jautājumiem pietiek, lai uzzinātu, vai virkne 
+$x_1,x_2,x_3,x_4$ ir monotona.  
+Skaitļu virkne $x_1,x_2,x_3,x_4$ ir monotona, ja tā ir nedilstoša vai neaugoša 
+(t. i., $x_1 \leq x_2 \leq x_3 \leq x_4$ vai
+$x_1 \geq x_2 \geq x_3 \geq x_4$).
+
+-----
+
+# <lo-sample/> LV.AO.2013.9.1
+
+Dota trapece, kuras pamatu malu garumi ir $3$ un $13$. Pierādīt, ka to
+nevar sadalīt piecos vienlielos trijstūros.
+(Figūras sauc par vienlielām, ja tām ir vienādi laukumi.)
+
+-----
+
+# <lo-sample/> LV.AO.2013.9.2
+
+Kvadrāta ar izmēriem $4 \times 4$ rūtiņas katra rūtiņu virsotne nokrāsota
+vienā no divām krāsām. Pierādīt, ka noteikti var atrast trīs punktus,
+kas nokrāsoti vienā krāsā un atrodas vienādsānu taisnleņķa
+trijstūra virsotnēs.
+
+-----
+
+# <lo-sample/> LV.AO.2013.9.3
 
 Doti četri dažādi cipari, neviens no kuriem nav $0$. Visu divciparu
 skaitļu, kurus var izveidot no šiem cipariem, summa ir $484$. Atrast
 dotos četrus ciparus.
 
+-----
+
+# <lo-sample/> LV.AO.2013.9.4
+
+Dota skaitļu virkne $x_0,x_1,x_2_,x_3,\ldots$, 
+kurā $x_0 \geq 0$ un $x_{n+1}=x_n + \frac{2}{x_n}$ visiem 
+$n \geq 0$. Pierādīt, ka $x_{100} \geq 20$. 
 
 
+-----
 
+# <lo-sample/> LV.AO.2013.9.5
+
+Dots izliekts četrstūris. Uzzīmēti četri riņķi, kuru diametri ir
+četrstūra malas. Pierādīt, ka šie riņķi pilnībā pārklāj doto četrstūri.
+
+-----
+
+# <lo-sample/> LV.AO.2013.10.1
+
+Dots, ka $x_1$ ir vienādojuma $x^2+px+q=0$ sakne, 
+bet $x_2$ ir vienādojuma $-x^2+px+q=0$ sakne. Pierādīt, ka vienādojumam 
+${\displaystyle \frac{1}{3}x^2+px+q=0 }$ noteikti ir sakne $x_3$, kas 
+atrodas starp $x_1$ un $x_2$ (t.i., $x_1 \leq x_3 \leq x_2$ vai 
+$x_2 \leq x_3 \leq x_1$).
+
+
+-----
+
+# <lo-sample/> LV.AO.2013.10.2
+
+Trijstūrī $ABC$ nogrieznis $CD$ ir bisektrise. Caur punktu $C$ novilkta
+riņķa līnija, kas pieskaras malai $AB$ punktā $D$. Tā krusto malas $AC$
+un $BC$ attiecīgi punktos $P$ un $Q$. Pierādīt, ka
+$AB \parallel PQ$.
+
+
+-----
+
+# <lo-sample/> LV.AO.2013.10.3
+
+Par $n$-heksu sauksim plaknes figūru, kas
+izveidota no $n$ regulāriem sešstūriem tā, ka
+katram sešstūrim ir kopīga mala ar vismaz
+vienu citu sešstūri.
+Kādam mazākajam $n$ ($n \geq 2$) eksistē tāds
+$n$-hekss, ar kuriem nevar pārklāt 5. zīm.
+attēloto figūru (tā sastāv no regulāriem
+sešstūriem ar caurumu centrā)?  
+![5.zīm](LV.AO.2013.10.3.png)
 
 -----
 
@@ -2552,12 +3239,26 @@ skaitlis, kurš rodas, ja atkārtoti dala ar $2$.
 
 -----
 
+# <lo-sample/> LV.AO.2013.10.5
+
+Vai pa riņķi var uzrakstīt $2013$ naturālus skaitļus tā, lai jebkuru
+divu blakus esošu skaitļu attiecība būtu $2$, $3$, $12$ vai $18$?
+
+
+-----
+
 # <lo-sample/> LV.AO.2013.11.1
 
 Pierādīt, ka nav tāda naturāla skaitļa $n$, ka skaitlis 
 $n^2-3n-1$ ar $169$.
 
 
+-----
+
+# <lo-sample/> LV.AO.2013.11.2
+
+Vai eksistē regulārs daudzstūris, kuram vienas diagonāles garums
+ir vienāds ar divu citu diagonāļu garumu summu?
 
 -----
 
@@ -2569,6 +3270,48 @@ kā $5$. Pierādīt, ka
 $$\frac{1}{a_1} + \frac{1}{a_2} + \frac{1}{a_3} + \ldots \frac{1}{a_n} < 2.$$ 
 
 
+-----
+
+# <lo-sample/> LV.AO.2013.11.4
+
+Kādā valstī ir $2013$ pilsētas, no katras uz katru var aizlidot ar
+lidmašīnu. Dažus no šiem reisiem apkalpo aviokompānija $A$,
+pārējos – aviokompānija $B$ (ir iespējams, ka no pilsētas $X$ uz
+pilsētu $Y$ lido aviokompānijas $A$ lidmašīna, bet no $Y$ uz $X$ --
+aviokompānijas $B$ lidmašīna).  
+Pierādīt, ka aviokompāniju atbildību par reisiem iespējams
+saplānot tā, ka ceļotājs, izlidojot no jebkuras pilsētas $Z$, pa ceļam
+apmeklējot vienu vai vairākas pilsētas un pēc tam atgriežoties
+pilsētā $Z$, **noteikti** būs lidojis ar abu aviokompāniju lidmašīnām,
+neatkarīgi no tā, kādu maršrutu viņš būs izvēlējies un kura ir
+sākotnējā pilsēta $Z$.
+
+
+-----
+
+# <lo-sample/> LV.AO.2013.11.5
+
+Uz galda virsmas, kurai ir taisnstūra forma, izvietoti vairāki
+vienādi kvadrātveida papīra gabaliņi, kuru malas ir paralēlas galda
+malām (kvadrātiņi var arī pārklāties). Pierādīt, ka galdā var iedurt
+dažas adatas tā, ka katrs papīra gabaliņš būs piesprausts pie galda
+tieši ar vienu adatu.
+
+-----
+
+# <lo-sample/> LV.AO.2013.12.1
+
+Atrisināt reālos skaitļos vienādojumu 
+${\displaystyle \log_{10} x  \cdot \log_{10} (4-x)=\frac{1}{4}}$.
+
+-----
+
+# <lo-sample/> LV.AO.2013.12.2
+
+Trijstūrī $ABC$ punkti $M$, $N$ un $K$ ir attiecīgi malu $AB$, $BC$ un $CA$
+viduspunkti. Ir novilktas trīs riņķa līnijas: caur punktiem $K$, $A$, $M$;
+caur punktiem $M$, $B$, $N$; caur punktiem $N$, $C$, $K$. Pierādīt, ka visas
+novilktās riņķa līnijas krustojas vienā punktā.
 
 
 -----
@@ -2577,6 +3320,135 @@ $$\frac{1}{a_1} + \frac{1}{a_2} + \frac{1}{a_3} + \ldots \frac{1}{a_n} < 2.$$
 
 Pierādīt, ka neeksistē tādi naturāli skaitļi $x, y, z$, ka izpildās
 vienādība $6^x + 13^y = 29^z$.
+
+
+-----
+
+# <lo-sample/> LV.AO.2013.12.4
+
+Kādas valodas alfabētā ir $i$ patskaņi ($i \geq 2$) un 
+$j$ līdzskaņi ($j \geq 2$).
+Šajā valodā par vārdu sauc jebkuru galīgu burtu (patskaņu un
+līdzskaņu) virkni, kas satur vismaz vienu burtu un kurā nekādi divi
+patskaņi neparādās pēc kārtas un pēc kārtas uzrakstīti līdzskaņi ir
+ne vairāk kā divi (piemēram, ja "A" ir patskanis, bet "B" –
+līdzskanis, tad, piemēram, "ABBA" ir vārds, turpretī "BAAB" un
+"ABBBA" nav vārdi).  
+Ar $S(n)$ apzīmēsim visu to vārdu skaitu, kuri sastāv no $n$ burtiem, $n \geq 1$. 
+Pierādīt, ka visiem naturāliem skaitļiem n ir spēkā vienādība  
+$$S(n+3) = i \cdot j \cdot S(n+1) + i \cdot j^2 \cdot S(n).$$
+
+
+-----
+
+# <lo-sample/> LV.AO.2013.12.5
+
+Dota kvadrātisku rūtiņu plakne, katras rūtiņas malas garums ir $1$.
+Pierādīt, ka eksistē trijstūris, kura virsotnes atrodas šīs plaknes
+rūtiņu virsotnēs un jebkuru divu tā malu garumi atšķiras ne vairāk
+kā par ${\displaystyle \frac{1}{2013 \cdot \sqrt{P}}}$, 
+kur $P$ ir šī trijstūra perimetrs.
+
+
+-----
+
+# <lo-sample/> LV.AO.2014.5.1
+
+Pūkainīšu ciemata bērniem Lieldienu zaķis atnesa olas. Katra no tām bija nokrāsota tieši
+vienā no krāsām – sarkanā, dzeltenā, zilā. Zināms, ka $20\%$ jeb $40$ olas bija sarkanas,
+$\frac{3}{4}$ no atlikušajām bija dzeltenas, bet pārējās -- zilas. Aprēķini:  
+**(1)** Cik olas bija zilā krāsā?  
+**(2)** Kāda daļa no visām olām bija zilas?  
+**(3)** Cik procenti no visām olām bija dzeltenas?
+
+<small>
+
+* [alg.equ](#)
+
+</small>
+
+<!--
+questionType=Find.Only
+-->
+
+
+-----
+
+# <lo-sample/> LV.AO.2014.5.2
+
+Divu naturālu skaitļu pierakstā izmantoti tikai cipari $2$, $3$, $7$ un $8$. Vai var gadīties, ka viens
+skaitlis ir tieši trīs reizes lielāks nekā otrs skaitlis?
+
+<small>
+
+* [mod.congr](#)
+
+</small>
+
+<!--
+questionType=ProveDisprove.Exists
+-->
+
+-----
+
+# <lo-sample/> LV.AO.2014.5.3
+
+Taisnstūra ABCD malu garumi izsakāmi veselos centimetros. Iekrāsotās daļas laukums ir 
+$6$ $\mbox{cm}^2$ (skat. 1. zīm.). Nogrieznis $AE$ ir $\frac{1}{3}$
+no taisnstūra malas $AD$. Aprēķini taisnstūra
+laukumu un perimetru, ja zināms, ka viena taisnstūra mala ir par $5$ $\mbox{cm}$ garāka nekā otra
+mala.  
+![1.zīm.](LV.AO.2014.5.3.png)
+
+<small>
+
+* [geom.quadrangle.rect](#)
+
+</small>
+
+<!--
+questionType=Find.Only
+-->
+
+-----
+
+# <lo-sample/> LV.AO.2014.5.4
+
+Kvadrāts sastāv no $8 \times 8$ vienādām kvadrātiskām rūtiņām. Tas sagriezts daļās tā, ka
+griezumi iet pa rūtiņu robežām.  
+Kāds lielākais skaits daļu var būt tādas kā 2. zīm. attēlotā figūra (figūras var būt pagrieztas
+jebkurā stāvoklī)?  
+![2.zīm.](LV.AO.2014.5.4.png)
+
+<small>
+
+* [comb.grid.shapes.cutting](#)
+
+</small>
+
+<!--
+questionType=Find.Max
+-->
+
+-----
+
+# <lo-sample/> LV.AO.2014.5.5
+
+Kāds ir **(a)** mazākais, **(b)** lielākais skaitlis, kuru var izteikt gan kā trīs, gan kā divu dažādu
+divciparu naturālu skaitļu reizinājumu?
+
+<small>
+
+* [alg.ineq.monotonicity](#)
+
+</small>
+
+<!--
+questionType=Find.Min,Find.Max
+-->
+
+
+
 
 
 
@@ -2607,6 +3479,13 @@ questionType=ProveDisprove.Exists
 
 **#Paritāte** Nepāru reizinājums nozīmē, ka $a,b$ ir nepāru. Bet tad $3a+5b$ ir pāru, kas ir pretruna. 
 
+
+-----
+
+# <lo-sample/> LV.AO.2014.7.1
+
+Trijstūrī $ABC$ novilkts augstums $BD$ un mediāna $BE$. Kāds var būt $AC$ garums, ja
+$ED = 4\mbox{cm}$ un $DC = 5\mbox{cm}$? 
 
 
 
@@ -2928,6 +3807,15 @@ questionType=Find.Any,ProveDisprove.Exists
 **(b)** $99k$ pāru/nepāru poz.cip.summa nevar būt $9$.
 
 
+-----
+
+# <lo-sample/> LV.AO.2015.7.4
+
+Vienādsānu trijstūrī $ABC$ uz pamata malas $BC$ atzīmēts iekšējs punkts $D$
+tā, ka arī trijstūri $ABD$ un $ACD$ ir vienādsānu. Aprēķini trijstūra $ABC$
+leņķus! Atrodi visus gadījumus un pamato, ka citu nav!
+
+
 
 
 -----
@@ -3092,12 +3980,25 @@ skaitu centu). Cik samaksāja Brālītis?
 questionType=Find.All
 -->
 
-
 -----
 
 ## ABC
 
 **#Dalāmība** **#Nevienādība** $200-8p=15m$, t.i. $m$ dalās ar $8$. Un $m$ nevar būt $16$, citādi $p<0$.  
+
+
+
+
+-----
+
+# <lo-sample/> LV.AO.2016.7.3
+
+Dots, ka $AB\parallel{}CD$ un $AD\parallel{}BC$ (skat. 1.att.).
+Nogriežņu $AC$ un $BD$ krustpunkts ir $M$. Uz taisnes
+$AB$ izvēlēts tāds punkts $N$, ka $AM=MN$. Pierādīt,
+ka $\angle ANC=90^{\circ}$.  
+![1.att.](geometry-grade07/LV.AO.2016.7.3.png)
+
 
 
 
@@ -3285,8 +4186,16 @@ atrisinājuma naturālos skaitļos!
 
 
 
+-----
+
+# <lo-sample/> LV.AO.2017.7.3
 
 
+Divus taisnstūra lapas stūrus nolocīja tā, kā parādīts 3.att. Izrādījās, ka lapas
+apakšējā mala tika sadalīta trīs vienāda garuma nogriežņos un augšējā mala –
+divos vienāda garuma nogriežņos. Pierādīt, ka iekrāsotais trijstūris ir
+vienādmalu!  
+![LV.AO.2017.7.3](LV.AO.2017.7.3.png)
 
 
 
@@ -3371,6 +4280,15 @@ izdarīt, ja doti naturāli skaitļi no $1$ līdz $10$?
 
 
 
+
+
+-----
+
+# <lo-sample/> LV.AO.2018.7.3
+
+
+Uz trijstūra $ABC$ malas $AB$ izvēlēts patvaļīgs iekšējs punkts $D$. Pierādīt, ka 
+$CD > \frac{1}{2}(CA+CB-AB)$.
 
 
 

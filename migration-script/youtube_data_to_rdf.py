@@ -12,7 +12,7 @@ RDF_NS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 def getGoogleSpreadsheet():  # Funkcija, kas iegūst Google Spreadsheet dokumentu ar olimpiāžu uzdevumu datiem
     URL_GOOGLE_SPREADSHEET = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSithTBvdSFhQeovJbYVCstpt7JkDUZAKXSPOjYraqfCFW2SqNjvN5Yd_xYeIfvtSjVktmBAPo2_dDf/pub?output=csv'
     response = requests.get(URL_GOOGLE_SPREADSHEET)
-    open("youtube.csv", "wb").write(response.content)
+    open("resources/youtube.csv", "wb").write(response.content)
 
 
 def readCSVfile(in_file, out_file):  # Funkcija, kas lasa CSV failu
@@ -97,5 +97,5 @@ def addToRdfGraph(g, problem_id, youtube_id, video_title, bookmarks):
 
 if __name__ == '__main__':
     getGoogleSpreadsheet()  # Izsauc funkciju, kas iegūst skos dokumentu CSV faila formātā
-    readCSVfile(in_file="youtube.csv", out_file="youtube.ttl")
+    readCSVfile(in_file="resources/youtube.csv", out_file="resources/youtube.ttl")
    # produceCSVtoRDF(in_file="youtube.csv", out_file="youtube.ttl")

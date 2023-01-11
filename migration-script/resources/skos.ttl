@@ -253,6 +253,12 @@ eozol:comb.graph.cycle eozol:skillDescription "Atrast orientētā/neorientētā 
     skos:broader eozol:comb.graph ;
     skos:prefLabel "comb.graph.cycle" .
 
+eozol:comb.grid.shapes.cutting eozol:skillDescription "Risināt rūtiņu laukumu sagriešanas uzdevumus" ;
+    eozol:skillIdentifier "comb.grid.shapes.cutting" ;
+    eozol:skillNumber "6.5.1.1.0" ;
+    skos:broader eozol:comb.grid.shapes ;
+    skos:prefLabel "comb.grid.shapes.cutting" .
+
 eozol:div.common.gcd.bezout eozol:skillDescription "Izmantot Bezū identitāti" ;
     eozol:skillIdentifier "div.common.gcd.bezout" ;
     eozol:skillNumber "2.3.2.3.0" ;
@@ -421,17 +427,83 @@ eozol:div.valu.prop.sum eozol:skillDescription "Izmantot faktu: skaitļu summas 
     skos:broader eozol:div.valu.prop ;
     skos:prefLabel "div.valu.prop.sum" .
 
+eozol:geom.circle.inscribed eozol:skillDescription "Izmantot riņķī ievilkta leņķa īpašības" ;
+    eozol:skillIdentifier "geom.circle.inscribed" ;
+    eozol:skillNumber "8.2.1.0.0" ;
+    skos:broader eozol:geom.circle ;
+    skos:prefLabel "geom.circle.inscribed" .
+
+eozol:geom.constr.small eozol:skillDescription "Izdarīt spriedumus, kuros ir \"ļoti mazi\" ģeometriski pārvietojumi" ;
+    eozol:skillIdentifier "geom.constr.small" ;
+    eozol:skillNumber "8.1.2.0.0" ;
+    skos:broader eozol:geom.constr ;
+    skos:prefLabel "geom.constr.small" .
+
+eozol:geom.constr.triangulate eozol:skillDescription "Veikt daudzstūru triangulāciju" ;
+    eozol:skillIdentifier "geom.constr.triangulate" ;
+    eozol:skillNumber "8.1.1.0.0" ;
+    skos:broader eozol:geom.constr ;
+    skos:prefLabel "geom.constr.triangulate" .
+
+eozol:geom.quadrangle.para eozol:skillDescription "Izmantot rombu un paralelogramu ģeometriskās īpašības" ;
+    eozol:skillIdentifier "geom.quadrangle.para" ;
+    eozol:skillNumber "8.4.2.0.0" ;
+    skos:broader eozol:geom.quadrangle ;
+    skos:prefLabel "geom.quadrangle.para" .
+
+eozol:geom.quadrangle.rect eozol:skillDescription "Izmantot kvadrātu un taisnstūru ģeometriskās īpašības" ;
+    eozol:skillIdentifier "geom.quadrangle.rect" ;
+    eozol:skillNumber "8.4.1.0.0" ;
+    skos:broader eozol:geom.quadrangle ;
+    skos:prefLabel "geom.quadrangle.rect" .
+
+eozol:geom.quadrangle.trapezoid.area eozol:skillDescription "Izmantot trapeču laukuma formulas" ;
+    eozol:skillIdentifier "geom.quadrangle.trapezoid.area" ;
+    eozol:skillNumber "8.4.3.1.0" ;
+    skos:broader eozol:geom.quadrangle.trapezoid ;
+    skos:prefLabel "geom.quadrangle.trapezoid.area" .
+
+eozol:geom.quandrangle eozol:skillDescription "Izmantot četrstūru ģeometriskās īpašības" ;
+    eozol:skillIdentifier "geom.quandrangle" ;
+    eozol:skillNumber "8.4.0.0.0" ;
+    skos:broader eozol:geom ;
+    skos:prefLabel "geom.quandrangle" .
+
+eozol:geom.triangle.area.ah2 eozol:skillDescription "Izmantot formulu $ah/2$" ;
+    eozol:skillIdentifier "geom.triangle.area.ah2" ;
+    eozol:skillNumber "8.3.1.1.0" ;
+    skos:broader eozol:geom.triangle.area ;
+    skos:prefLabel "geom.triangle.area.ah2" .
+
+eozol:geom.triangle.congruence eozol:skillDescription "Izmantot trijstūru vienādības pazīmes" ;
+    eozol:skillIdentifier "geom.triangle.congruence" ;
+    eozol:skillNumber "8.3.2.0.0" ;
+    skos:broader eozol:geom.triangle ;
+    skos:prefLabel "geom.triangle.congruence" .
+
 eozol:misc.extr.param eozol:skillDescription "Sākt risināt vienādojumu, ievietojot ekstrēmu parametra vai potenciālās saknes vērtību" ;
     eozol:skillIdentifier "misc.extr.param" ;
     eozol:skillNumber "7.2.2.0.0" ;
     skos:broader eozol:misc.extr ;
     skos:prefLabel "misc.extr.param" .
 
-eozol:misc.extr.pigeon eozol:skillDescription "Izmantot Dirihlē principu" ;
-    eozol:skillIdentifier "misc.extr.pigeon" ;
-    eozol:skillNumber "7.2.1.0.0" ;
-    skos:broader eozol:misc.extr ;
-    skos:prefLabel "misc.extr.pigeon" .
+eozol:misc.extr.pigeon.collection eozol:skillDescription "Izmantot Dirihlē principa vispārinājumu skaitļu komplektam" ;
+    eozol:skillIdentifier "misc.extr.pigeon.collection" ;
+    eozol:skillNumber "7.2.1.3.0" ;
+    skos:broader eozol:misc.extr.pigeon ;
+    skos:prefLabel "misc.extr.pigeon.collection" .
+
+eozol:misc.extr.pigeon.floor eozol:skillDescription "Izmantot Dirihlē principa vispārinājumu (n un m)" ;
+    eozol:skillIdentifier "misc.extr.pigeon.floor" ;
+    eozol:skillNumber "7.2.1.2.0" ;
+    skos:broader eozol:misc.extr.pigeon ;
+    skos:prefLabel "misc.extr.pigeon.floor" .
+
+eozol:misc.extr.pigeon.plain eozol:skillDescription "Izmantot Dirihlē principa tradicionālo formu (n un n+1)" ;
+    eozol:skillIdentifier "misc.extr.pigeon.plain" ;
+    eozol:skillNumber "7.2.1.1.0" ;
+    skos:broader eozol:misc.extr.pigeon ;
+    skos:prefLabel "misc.extr.pigeon.plain" .
 
 eozol:misc.ind.descent eozol:skillDescription "Lietot neierobežotā samazinājuma metodi (piemēram, pamatojot veselu skaitļu sakņu iracionalitāti, ja tās nav veseli skaitļi)" ;
     eozol:skillIdentifier "misc.ind.descent" ;
@@ -801,6 +873,41 @@ eozol:alg.sets.sqrt eozol:skillDescription "Secināt par kvadrātsakņu izteiksm
     skos:narrower eozol:alg.sets.sqrt.pythagoras ;
     skos:prefLabel "alg.sets.sqrt" .
 
+eozol:comb.grid eozol:skillDescription "Izmantot rūtiņu laukuma īpašības" ;
+    eozol:skillIdentifier "comb.grid" ;
+    eozol:skillNumber "6.5.0.0.0" ;
+    skos:broader eozol:comb ;
+    skos:narrower eozol:comb.grid.shapes ;
+    skos:prefLabel "comb.grid" .
+
+eozol:comb.grid.shapes eozol:skillDescription "Veidot figūriņas pa rūtiņu līnijām" ;
+    eozol:skillIdentifier "comb.grid.shapes" ;
+    eozol:skillNumber "6.5.1.0.0" ;
+    skos:broader eozol:comb.grid ;
+    skos:narrower eozol:comb.grid.shapes.cutting ;
+    skos:prefLabel "comb.grid.shapes" .
+
+eozol:geom.circle eozol:skillDescription "Izmantot riņķa līnijas ģeometriskās īpašības" ;
+    eozol:skillIdentifier "geom.circle" ;
+    eozol:skillNumber "8.2.0.0.0" ;
+    skos:broader eozol:geom ;
+    skos:narrower eozol:geom.circle.inscribed ;
+    skos:prefLabel "geom.circle" .
+
+eozol:geom.quadrangle.trapezoid eozol:skillDescription "Izmantot trapeču ģeometriskās īpašības" ;
+    eozol:skillIdentifier "geom.quadrangle.trapezoid" ;
+    eozol:skillNumber "8.4.3.0.0" ;
+    skos:broader eozol:geom.quadrangle ;
+    skos:narrower eozol:geom.quadrangle.trapezoid.area ;
+    skos:prefLabel "geom.quadrangle.trapezoid" .
+
+eozol:geom.triangle.area eozol:skillDescription "Izmantot trijstūru laukuma formulas" ;
+    eozol:skillIdentifier "geom.triangle.area" ;
+    eozol:skillNumber "8.3.1.0.0" ;
+    skos:broader eozol:geom.triangle ;
+    skos:narrower eozol:geom.triangle.area.ah2 ;
+    skos:prefLabel "geom.triangle.area" .
+
 eozol:nota.combine.poly eozol:skillDescription "Izteikt skaitli ar decimālpieraksta cipariem, reizinot ar $10^k$" ;
     eozol:skillIdentifier "nota.combine.poly" ;
     eozol:skillNumber "4.3.1.0.0" ;
@@ -903,6 +1010,26 @@ eozol:div.valu eozol:skillDescription "Izmantot spriedumus par valuāciju (liel�
         eozol:div.valu.prop ;
     skos:prefLabel "div.valu" .
 
+eozol:geom.constr eozol:skillDescription "Veikt ģeometriskas konstrukcijas uzdevumu risināšanā." ;
+    eozol:skillIdentifier "geom.constr" ;
+    eozol:skillNumber "8.1.0.0.0" ;
+    skos:broader eozol:geom ;
+    skos:narrower eozol:geom.constr.small,
+        eozol:geom.constr.triangulate ;
+    skos:prefLabel "geom.constr" .
+
+eozol:geom.quadrangle skos:narrower eozol:geom.quadrangle.para,
+        eozol:geom.quadrangle.rect,
+        eozol:geom.quadrangle.trapezoid .
+
+eozol:geom.triangle eozol:skillDescription "Izmantot trijstūru ģeometriskās īpašības" ;
+    eozol:skillIdentifier "geom.triangle" ;
+    eozol:skillNumber "8.3.0.0.0" ;
+    skos:broader eozol:geom ;
+    skos:narrower eozol:geom.triangle.area,
+        eozol:geom.triangle.congruence ;
+    skos:prefLabel "geom.triangle" .
+
 eozol:misc.extr eozol:skillDescription "Izmantot spriedumus par ekstrēmo elementu" ;
     eozol:skillIdentifier "misc.extr" ;
     eozol:skillNumber "7.2.0.0.0" ;
@@ -1003,15 +1130,6 @@ eozol:alg.tra.binom eozol:skillDescription "Pārveidot reizinājumus un pakāpes
         eozol:alg.tra.binom.square ;
     skos:prefLabel "alg.tra.binom" .
 
-eozol:comb eozol:skillDescription "Izmantot kombinatoriskus spriedumus" ;
-    eozol:skillIdentifier "comb" ;
-    eozol:skillNumber "6.0.0.0.0" ;
-    skos:narrower eozol:comb.constr,
-        eozol:comb.count,
-        eozol:comb.full,
-        eozol:comb.graph ;
-    skos:prefLabel "comb" .
-
 eozol:comb.count eozol:skillDescription "Saskaitīt variantus, izmantojot kombinatorisko analīzi" ;
     eozol:skillIdentifier "comb.count" ;
     eozol:skillNumber "6.2.0.0.0" ;
@@ -1065,6 +1183,24 @@ eozol:div.fta.pow eozol:skillDescription "Pazīt pilnus kvadrātus u.c. pilnas p
         eozol:div.fta.pow.other,
         eozol:div.fta.pow.square ;
     skos:prefLabel "div.fta.pow" .
+
+eozol:geom eozol:skillDescription "Izmantot ģeometrijas rezultātus un metodes." ;
+    eozol:skillIdentifier "geom" ;
+    eozol:skillNumber "8.0.0.0.0" ;
+    skos:narrower eozol:geom.circle,
+        eozol:geom.constr,
+        eozol:geom.quandrangle,
+        eozol:geom.triangle ;
+    skos:prefLabel "geom" .
+
+eozol:misc.extr.pigeon eozol:skillDescription "Izmantot Dirihlē principu" ;
+    eozol:skillIdentifier "misc.extr.pigeon" ;
+    eozol:skillNumber "7.2.1.0.0" ;
+    skos:broader eozol:misc.extr ;
+    skos:narrower eozol:misc.extr.pigeon.collection,
+        eozol:misc.extr.pigeon.floor,
+        eozol:misc.extr.pigeon.plain ;
+    skos:prefLabel "misc.extr.pigeon" .
 
 eozol:mod.eq eozol:skillDescription "Secināt par kongruenču vienādojumiem un risināt tos (t.sk. ar lineāriem pārveidojumiem - pieskaitot, atņemot vai reizinot ar skaitli)" ;
     eozol:skillIdentifier "mod.eq" ;
@@ -1147,6 +1283,16 @@ eozol:alg.tra eozol:skillDescription "Veikt algebriskus pārveidojumus" ;
         eozol:alg.tra.frac,
         eozol:alg.tra.pow ;
     skos:prefLabel "alg.tra" .
+
+eozol:comb eozol:skillDescription "Izmantot kombinatoriskus spriedumus" ;
+    eozol:skillIdentifier "comb" ;
+    eozol:skillNumber "6.0.0.0.0" ;
+    skos:narrower eozol:comb.constr,
+        eozol:comb.count,
+        eozol:comb.full,
+        eozol:comb.graph,
+        eozol:comb.grid ;
+    skos:prefLabel "comb" .
 
 eozol:comb.constr eozol:skillDescription "Konstruēt piemērus atbilstoši dotajām īpašībām" ;
     eozol:skillIdentifier "comb.constr" ;

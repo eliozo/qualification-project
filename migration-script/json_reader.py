@@ -67,9 +67,6 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
 
             if problem_title.startswith('<lo-sample/>'):
                 pass
-                # print()
-                # print(problem_title)
-                # print("************************")
             else:
                 state = 0
         elif state == 1 and item['type'] == 'Paragraph':
@@ -90,15 +87,12 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
                 problem_number = match_id.group(6)
             if grade == "NA":
                 grade = 0
-                # if int(grade) < 10:
-                #     grade = '0'+ grade
             problem_text = ""
             for line in item['children']:
                 if line['type'] == 'RawText':
                     problem_text = problem_text+line['content']
                 elif line['type'] == 'LineBreak':
                     problem_text = problem_text+'\n'
-            # print(problem_text)
             addToRdfGraph(g, problem_title, problem_text, country, olympiad, year, grade, problem_number)
             state = 0
         elif state == 0 and item['type'] == 'Paragraph' and ('content' in item['children'][0].keys()) and item['children'][0]['content'] == '<small>':
@@ -108,11 +102,10 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
             for skill_item in skill_items:
                 if skill_item['type'] == 'ListItem':
                     skill = skill_item['children'][0]['children'][0]['children'][0]['content']
-                    # print('{}'.format(skill))
                     addSkillToRdfGraph(g, current_problem_id, skill)
         elif state == 0 and item['type'] == 'Paragraph' and item['children'][0]['type'] == 'Image':
             image_src = item['children'][0]['src']
-            print('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa{}'.format(image_src))
+            # print('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa{}'.format(image_src))
             addImageToRDFGraph(g, current_problem_id, image_src)
         else:
             state = 0

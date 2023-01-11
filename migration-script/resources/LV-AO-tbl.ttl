@@ -956,6 +956,16 @@ līdz $9$ (katrā rūtiņā cits skaitlis). Skaitļu summas rindās un kolonnās
 visas ir dažādas. Kāds lielākais daudzums šo summu var būt pirmskaitļi?"""@lv ;
     eozol:year "2009" .
 
+eozol:LV.AO.2009.7.4 eozol:country "LV" ;
+    eozol:grade 7 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "4" ;
+    eozol:problemid "LV.AO.2009.7.4" ;
+    eozol:text """Trijstūris $ABC$ ir šaurleņķu. Trijstūri $AMB$ un $BNC$ abi ir
+vienādmalu un atrodas ārpus $\\bigtriangleup ABC$. Pierādīt, ka $AN=CM$.
+"""@lv ;
+    eozol:year "2009" .
+
 eozol:LV.AO.2009.7.5 eozol:country "LV" ;
     eozol:grade 7 ;
     eozol:olympiad "AO" ;
@@ -1070,6 +1080,16 @@ eozol:LV.AO.2010.7.1 eozol:country "LV" ;
 zināms, ka"""@lv ;
     eozol:year "2010" .
 
+eozol:LV.AO.2010.7.2 eozol:country "LV" ;
+    eozol:grade 7 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2010.7.2" ;
+    eozol:text """Caur trijstūra $ABC$ virsotni $A$ novilktā taisne $t$ sadala trijstūri divos
+vienādos trijstūros.
+Vai var gadīties, ka $AB>AC$?"""@lv ;
+    eozol:year "2010" .
+
 eozol:LV.AO.2010.7.3 eozol:country "LV" ;
     eozol:grade 7 ;
     eozol:olympiad "AO" ;
@@ -1148,11 +1168,21 @@ Sauksim skaitli $n$ par apaļīgu, ja tas dalās ar $d(n)$.
 
 eozol:LV.AO.2010.9.4 eozol:country "LV" ;
     eozol:grade 9 ;
-    eozol:image "LV.AO.2010.9.4.png" ;
     eozol:olympiad "AO" ;
     eozol:problem_number "4" ;
     eozol:problemid "LV.AO.2010.9.4" ;
-    eozol:text "<hgroup>"@lv ;
+    eozol:text """$2010 \\times 2010$ rūtiņas lielā kvadrātā,
+sākot ar apakšējo kreiso rūtiņu,
+pēc kārtas tiek ierakstīti naturālie
+skaitļi kā parādīts zīmējumā
+(katrā rūtiņā ierakstīts viens
+skaitlis).
+Piemēram, skaitlis $19$ ierakstīts
+ceturtajā rindā, trešajā kolonnā.
+(a) Kurš skaitlis ierakstīts 20. rindā, 10. kolonnā?
+(b) Kurā rindā un kurā kolonnā atrodas rūtiņa,
+kurā ierakstīts skaitlis $2010$?
+"""@lv ;
     eozol:year "2010" .
 
 eozol:LV.AO.2011.10.1 eozol:country "LV" ;
@@ -1204,8 +1234,10 @@ eozol:LV.AO.2011.5.1 eozol:country "LV" ;
     eozol:olympiad "AO" ;
     eozol:problem_number "1" ;
     eozol:problemid "LV.AO.2011.5.1" ;
+    eozol:skill eozol:comb.full,
+        eozol:div.fta.divisors ;
     eozol:text """Reizināšanas piemērā ciparus aizstāja ar burtiem un ieguva izteiksmi
-$$AB \\cdot CD=EEE.$$
+$$AB \\cdot CD = EEE.$$ .
 Atjauno sākotnējo reizināšanas piemēru, ja zināms, ka vienādi burti
 apzīmē vienādus ciparus, bet dažādi burti – dažādus ciparus, pie tam
 ne $A$, ne $C$ nav $0$. Atrodi visus iespējamos atrisinājumus!"""@lv ;
@@ -1216,6 +1248,8 @@ eozol:LV.AO.2011.5.2 eozol:country "LV" ;
     eozol:olympiad "AO" ;
     eozol:problem_number "2" ;
     eozol:problemid "LV.AO.2011.5.2" ;
+    eozol:skill eozol:alg.expr.selectvar,
+        eozol:alg.tra ;
     eozol:text """Dotās $3 \\times 3$ rūtiņu tabulas katrā rūtiņā
 jāieraksta pa vienam naturālam skaitlim tā,
 lai katrā rindā, katrā kolonnā un katrā
@@ -1231,6 +1265,9 @@ eozol:LV.AO.2011.5.3 eozol:country "LV" ;
     eozol:olympiad "AO" ;
     eozol:problem_number "3" ;
     eozol:problemid "LV.AO.2011.5.3" ;
+    eozol:skill eozol:geom.circle.inscribed,
+        eozol:geom.constr.small,
+        eozol:geom.constr.triangulate ;
     eozol:text "Parādi, kā kvadrātu var sadalīt vairākos platleņķa trijstūros!"@lv ;
     eozol:year "2011" .
 
@@ -1239,6 +1276,8 @@ eozol:LV.AO.2011.5.4 eozol:country "LV" ;
     eozol:olympiad "AO" ;
     eozol:problem_number "4" ;
     eozol:problemid "LV.AO.2011.5.4" ;
+    eozol:skill eozol:comb.constr.iterative,
+        eozol:comb.graph ;
     eozol:text """Vai naturālos skaitļus no $1$ līdz $12$, katru izmantojot tieši vienu reizi,
 var uzrakstīt pa apli tādā secībā, ka jebkuru divu blakus esošu skaitļu
 starpība ir
@@ -1251,14 +1290,67 @@ eozol:LV.AO.2011.5.5 eozol:country "LV" ;
     eozol:olympiad "AO" ;
     eozol:problem_number "5" ;
     eozol:problemid "LV.AO.2011.5.5" ;
-    eozol:text """Kvadrātā ar izmēriem $7 \\times 7$ rūtiņas jāizvieto $n$ „stūrīšus”
+    eozol:skill eozol:comb.full.backtrack,
+        eozol:misc.symm ;
+    eozol:text """Kvadrātā ar izmēriem $7 \\times 7$ rūtiņas jāizvieto $n$ "stūrīšus"
 (2. zīm. attēlotās figūras) tā, lai tajā vairāk nevarētu
-ievietot nevienu citu šādu „stūrīti”. (Stūrīšu malām jāiet
+ievietot nevienu citu šādu "stūrīti". (Stūrīšu malām jāiet
 pa rūtiņu malām. Stūrīši var arī būt pagriezti citādāk.)
 Parādi, kā to var izdarīt, ja
  $n=9$;
  $n=8$.
 """@lv ;
+    eozol:year "2011" .
+
+eozol:LV.AO.2011.6.1 eozol:country "LV" ;
+    eozol:grade 6 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "1" ;
+    eozol:problemid "LV.AO.2011.6.1" ;
+    eozol:skill eozol:div.fta.divisors ;
+    eozol:text """Vai eksistē tādi naturāli skaitļi $a$ un $b$, kuriem izpildās vienādība
+$$a \\cdot b \\cdot (a+b) = 20102011 ?$$"""@lv ;
+    eozol:year "2011" .
+
+eozol:LV.AO.2011.6.2 eozol:country "LV" ;
+    eozol:grade 6 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2011.6.2" ;
+    eozol:skill eozol:comb.graph.bipartite ;
+    eozol:text """Sešdesmit pensionāri katru dienu 
+sarakstās savā starpā. Katrs kungs sarakstās ar tieši $17$ dāmām,
+bet katra kundze sarakstās ar tieši $13$ kungiem.
+Cik starp šiem pensionāriem ir kungu un cik – kundžu?"""@lv ;
+    eozol:year "2011" .
+
+eozol:LV.AO.2011.6.3 eozol:country "LV" ;
+    eozol:grade 6 ;
+    eozol:image "LV.AO.2011.6.4A.png",
+        "LV.AO.2011.6.4B.png" ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "3" ;
+    eozol:problemid "LV.AO.2011.6.3" ;
+    eozol:skill eozol:comb.full,
+        eozol:misc.invar.congr ;
+    eozol:text """Kvadrātā ar izmēriem $8 \\times 8$ rūtiņas sākotnēji
+visas rūtiņas ir baltas. Kāds mazākais skaits rūtiņu
+šajā kvadrātā jānokrāso zaļas, lai tajā nevarētu atrast
+nevienu pilnībā baltu taisnstūri ar izmēriem $1 \\times 3$
+rūtiņas (novietotu horizontāli vai vertikāli)?"""@lv ;
+    eozol:year "2011" .
+
+eozol:LV.AO.2011.6.5 eozol:country "LV" ;
+    eozol:grade 6 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "5" ;
+    eozol:problemid "LV.AO.2011.6.5" ;
+    eozol:skill eozol:alg.tra ;
+    eozol:text """Betai bija $50$ konfektes, bet Almai un Danai bija vienāds konfekšu skaits.
+Beta pazaudēja vienu konfekti un noskuma. Almai kļuva Betas žēl, un viņa atdeva māsai pusi
+no savām konfektēm. Beta nomierinājās un nolēma, ka viņai tagad konfekšu ir par daudz un atdeva
+pusi no savām Danai. Arī Dana izlēma padalīties ar Almu un atdeva pusi no savām konfektēm Almai.
+Tagad Almai un Betai ir vienāds konfekšu skaits. Cik konfekšu sākumā bija katrai no māsām?"""@lv ;
     eozol:year "2011" .
 
 eozol:LV.AO.2011.7.1 eozol:country "LV" ;
@@ -1280,6 +1372,26 @@ eozol:LV.AO.2011.7.3 eozol:country "LV" ;
         eozol:seq.arithm.mod ;
     eozol:text """Atrodi naturālu skaitli, kuru, dalot ar $2010$, atlikumā iegūst $13$, bet,
 dalot ar $2011$, atlikumā iegūst $3$."""@lv ;
+    eozol:year "2011" .
+
+eozol:LV.AO.2011.7.4 eozol:country "LV" ;
+    eozol:grade 7 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "4" ;
+    eozol:problemid "LV.AO.2011.7.4" ;
+    eozol:text """Kvadrāts sadalīts piecos taisnstūros tā, ka šo taisnstūru malu garumi
+centimetros ir visi naturālie skaitļi no $1$ līdz $10$. Parādi vienu
+piemēru, kā to var izdarīt!"""@lv ;
+    eozol:year "2011" .
+
+eozol:LV.AO.2011.7.5 eozol:country "LV" ;
+    eozol:grade 7 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "5" ;
+    eozol:problemid "LV.AO.2011.7.5" ;
+    eozol:text """Taisne nokrāsota $10$ dažādās krāsās. Pierādi, ka uz tās var atrast
+divus vienas krāsas punktus, starp kuriem attālums centimetros ir
+vesels skaitlis."""@lv ;
     eozol:year "2011" .
 
 eozol:LV.AO.2011.8.1 eozol:country "LV" ;
@@ -1382,6 +1494,65 @@ kuri katrs satur visus ciparus no $1$ līdz $7$.
 Pierādi, ka $A$ nedalās ar $B$."""@lv ;
     eozol:year "2012" .
 
+eozol:LV.AO.2012.5.1 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "1" ;
+    eozol:problemid "LV.AO.2012.5.1" ;
+    eozol:skill eozol:comb.full ;
+    eozol:text """Divu naturālu skaitļu pierakstā izmantoti tikai cipari $1$, $4$, $6$ un $9$. Vai
+var gadīties, ka viens skaitlis ir tieši septiņas reizes lielāks nekā otrs
+skaitlis?"""@lv ;
+    eozol:year "2012" .
+
+eozol:LV.AO.2012.5.2 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2012.5.2" ;
+    eozol:skill eozol:geom.circle.inscribed,
+        eozol:geom.constr.triangulate ;
+    eozol:text """Parādi, kā kvadrātu var sadalīt vairākos platleņķa trijstūros.
+(Trijstūri sauc par platleņķa trijstūri, ja tam ir viens plats leņķis un
+divi šauri leņķi.)"""@lv ;
+    eozol:year "2012" .
+
+eozol:LV.AO.2012.5.3 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "3" ;
+    eozol:problemid "LV.AO.2012.5.3" ;
+    eozol:skill eozol:misc.extr.pigeon.collection ;
+    eozol:text """Maisā ir baltas, zaļas un sarkanas pogas (citu krāsu pogu maisā nav).
+Kādu mazāko skaitu pogu uz labu laimi (tās neredzot) ir jāizņem, lai
+noteikti būtu paņemtas vai nu $2$ baltas, vai $3$ zaļas, vai $4$ sarkanas
+pogas"""@lv ;
+    eozol:year "2012" .
+
+eozol:LV.AO.2012.5.4 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "4" ;
+    eozol:problemid "LV.AO.2012.5.4" ;
+    eozol:skill eozol:misc.ind ;
+    eozol:text """$24$-stāvu mājā ir lifts, kuram ir divas pogas. Nospiežot vienu pogu,
+tas paceļas (ja iespējams) $17$ stāvus uz augšu, nospiežot otru --
+nolaižas $8$ stāvus uz leju (ja iespējams). Noskaidro, no kura stāva ar
+šo liftu var nokļūt uz jebkuru citu stāvu šajā mājā.
+(Lifts nevar uzbraukt augstāk par 24. stāvu un zemāk par 1. stāvu.)"""@lv ;
+    eozol:year "2012" .
+
+eozol:LV.AO.2012.5.5 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "5" ;
+    eozol:problemid "LV.AO.2012.5.5" ;
+    eozol:skill eozol:comb.grid.shapes.cutting ;
+    eozol:text """Sadali 1. zīmējumā attēloto figūru trīs vienādās figūrās.
+(Figūru un tās spoguļattēlu saucam par vienādām figūrām.) .
+"""@lv ;
+    eozol:year "2012" .
+
 eozol:LV.AO.2012.7.1 eozol:country "LV" ;
     eozol:grade 7 ;
     eozol:olympiad "AO" ;
@@ -1390,6 +1561,18 @@ eozol:LV.AO.2012.7.1 eozol:country "LV" ;
     eozol:skill eozol:mod.fix.parity ;
     eozol:text """Vai var atrast tādus veselus skaitļus $a$ un $b$, kuriem izpildās vienādība
 $$ab(3a + 5b) = 1234567?$$"""@lv ;
+    eozol:year "2012" .
+
+eozol:LV.AO.2012.7.2 eozol:country "LV" ;
+    eozol:grade 7 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2012.7.2" ;
+    eozol:text """Doti seši nogriežņi ar garumiem $1\\mbox{cm}$, $3\\mbox{cm}$, $5\\mbox{cm}$,
+$7\\mbox{cm}$, $9\\mbox{cm}$, $11\\mbox{cm}$.
+Cik dažādos veidos no tiem var izvēlēties trīs nogriežņus
+tā, ka no tiem var izveidot trijstūri (katra trijstūra mala ir viens
+vesels nogrieznis)?"""@lv ;
     eozol:year "2012" .
 
 eozol:LV.AO.2012.8.1 eozol:country "LV" ;
@@ -1433,7 +1616,20 @@ eozol:LV.AO.2012.9.1 eozol:country "LV" ;
     eozol:olympiad "AO" ;
     eozol:problem_number "1" ;
     eozol:problemid "LV.AO.2012.9.1" ;
+    eozol:skill eozol:mod.congr.pow,
+        eozol:mod.congr.sumdiff ;
     eozol:text "Atrodi vienu skaitli, kuram ir tieši $12$ veseli pozitīvi dalītāji."@lv ;
+    eozol:year "2012" .
+
+eozol:LV.AO.2012.9.2 eozol:country "LV" ;
+    eozol:grade 9 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2012.9.2" ;
+    eozol:skill eozol:geom.triangle.congruence ;
+    eozol:text """Trijstūrī $ABC$ $\\angle ABC = 90^{\\circ}$ , bet punkts $P$ atrodas uz malas $AB$.
+Punkti $M$ un $N$ ir attiecīgi nogriežņu $AC$ un $PC$ viduspunkti. Pierādi,
+ka $\\angle BAC = \\angle BMN$."""@lv ;
     eozol:year "2012" .
 
 eozol:LV.AO.2012.9.3 eozol:country "LV" ;
@@ -1441,6 +1637,8 @@ eozol:LV.AO.2012.9.3 eozol:country "LV" ;
     eozol:olympiad "AO" ;
     eozol:problem_number "3" ;
     eozol:problemid "LV.AO.2012.9.3" ;
+    eozol:skill eozol:mod.congr.pow,
+        eozol:mod.congr.sumdiff ;
     eozol:text """Kvadrātvienādojuma $x^2 − 507x + a = 0$ saknes ir $p^2$ un $q$, kur $p$ un
 $q$ ir pirmskaitļi. Aprēķini $a$ skaitlisko vērtību."""@lv ;
     eozol:year "2012" .
@@ -1450,6 +1648,8 @@ eozol:LV.AO.2012.9.4 eozol:country "LV" ;
     eozol:olympiad "AO" ;
     eozol:problem_number "4" ;
     eozol:problemid "LV.AO.2012.9.4" ;
+    eozol:skill eozol:mod.congr.pow,
+        eozol:mod.congr.sumdiff ;
     eozol:text """Uz tāfeles uzrakstītas deviņas zvaigznītes
 $\\ast\\ast\\ast\\ast\\ast\\ast\\ast\\ast\\ast$.
 Jānis ieraksta kādas zvaigznītes vietā jebkuru ciparu no $1$ līdz $9$.
@@ -1459,6 +1659,57 @@ reizes viņi atkārto šo darbību.
 Pēteris uzvar, ja iegūtais deviņciparu skaitlis dalās ar $37$.
 Vai Pēteris vienmēr var uzvarēt?"""@lv ;
     eozol:year "2012" .
+
+eozol:LV.AO.2012.9.5 eozol:country "LV" ;
+    eozol:grade 9 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "5" ;
+    eozol:problemid "LV.AO.2012.9.5" ;
+    eozol:skill eozol:geom.quadrangle.trapezoid.area,
+        eozol:geom.triangle.area.ah2 ;
+    eozol:text """Dota trapece, kuras pamatu malu garumi ir $3$ un $13$.
+Pierādi, ka to nevar sadalīt piecos vienlielos trijstūros.
+(Figūras sauc par vienlielām, ja tām ir vienādi laukumi.)"""@lv ;
+    eozol:year "2012" .
+
+eozol:LV.AO.2013.10.1 eozol:country "LV" ;
+    eozol:grade 10 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "1" ;
+    eozol:problemid "LV.AO.2013.10.1" ;
+    eozol:text """Dots, ka $x_1$ ir vienādojuma $x^2+px+q=0$ sakne,
+bet $x_2$ ir vienādojuma $-x^2+px+q=0$ sakne. Pierādīt, ka vienādojumam
+${\\displaystyle \\frac{1}{3}x^2+px+q=0 }$ noteikti ir sakne $x_3$, kas
+atrodas starp $x_1$ un $x_2$ (t.i., $x_1 \\leq x_3 \\leq x_2$ vai
+$x_2 \\leq x_3 \\leq x_1$)."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.10.2 eozol:country "LV" ;
+    eozol:grade 10 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2013.10.2" ;
+    eozol:text """Trijstūrī $ABC$ nogrieznis $CD$ ir bisektrise. Caur punktu $C$ novilkta
+riņķa līnija, kas pieskaras malai $AB$ punktā $D$. Tā krusto malas $AC$
+un $BC$ attiecīgi punktos $P$ un $Q$. Pierādīt, ka
+$AB \\parallel PQ$."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.10.3 eozol:country "LV" ;
+    eozol:grade 10 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "3" ;
+    eozol:problemid "LV.AO.2013.10.3" ;
+    eozol:text """Par $n$-heksu sauksim plaknes figūru, kas
+izveidota no $n$ regulāriem sešstūriem tā, ka
+katram sešstūrim ir kopīga mala ar vismaz
+vienu citu sešstūri.
+Kādam mazākajam $n$ ($n \\geq 2$) eksistē tāds
+$n$-hekss, ar kuriem nevar pārklāt 5. zīm.
+attēloto figūru (tā sastāv no regulāriem
+sešstūriem ar caurumu centrā)?
+"""@lv ;
+    eozol:year "2013" .
 
 eozol:LV.AO.2013.10.4 eozol:country "LV" ;
     eozol:grade 10 ;
@@ -1472,6 +1723,15 @@ Pierādīt, ka no tiem var izvēlēties divus, no kuriem viens dalās ar
 otru."""@lv ;
     eozol:year "2013" .
 
+eozol:LV.AO.2013.10.5 eozol:country "LV" ;
+    eozol:grade 10 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "5" ;
+    eozol:problemid "LV.AO.2013.10.5" ;
+    eozol:text """Vai pa riņķi var uzrakstīt $2013$ naturālus skaitļus tā, lai jebkuru
+divu blakus esošu skaitļu attiecība būtu $2$, $3$, $12$ vai $18$?"""@lv ;
+    eozol:year "2013" .
+
 eozol:LV.AO.2013.11.1 eozol:country "LV" ;
     eozol:grade 11 ;
     eozol:olympiad "AO" ;
@@ -1479,6 +1739,15 @@ eozol:LV.AO.2013.11.1 eozol:country "LV" ;
     eozol:problemid "LV.AO.2013.11.1" ;
     eozol:text """Pierādīt, ka nav tāda naturāla skaitļa $n$, ka skaitlis
 $n^2-3n-1$ ar $169$."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.11.2 eozol:country "LV" ;
+    eozol:grade 11 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2013.11.2" ;
+    eozol:text """Vai eksistē regulārs daudzstūris, kuram vienas diagonāles garums
+ir vienāds ar divu citu diagonāļu garumu summu?"""@lv ;
     eozol:year "2013" .
 
 eozol:LV.AO.2013.11.3 eozol:country "LV" ;
@@ -1492,6 +1761,56 @@ kā $5$. Pierādīt, ka
 $$\\frac{1}{a_1} + \\frac{1}{a_2} + \\frac{1}{a_3} + \\ldots \\frac{1}{a_n} < 2.$$"""@lv ;
     eozol:year "2013" .
 
+eozol:LV.AO.2013.11.4 eozol:country "LV" ;
+    eozol:grade 11 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "4" ;
+    eozol:problemid "LV.AO.2013.11.4" ;
+    eozol:text """Kādā valstī ir $2013$ pilsētas, no katras uz katru var aizlidot ar
+lidmašīnu. Dažus no šiem reisiem apkalpo aviokompānija $A$,
+pārējos – aviokompānija $B$ (ir iespējams, ka no pilsētas $X$ uz
+pilsētu $Y$ lido aviokompānijas $A$ lidmašīna, bet no $Y$ uz $X$ --
+aviokompānijas $B$ lidmašīna).
+Pierādīt, ka aviokompāniju atbildību par reisiem iespējams
+saplānot tā, ka ceļotājs, izlidojot no jebkuras pilsētas $Z$, pa ceļam
+apmeklējot vienu vai vairākas pilsētas un pēc tam atgriežoties
+pilsētā $Z$,  būs lidojis ar abu aviokompāniju lidmašīnām,
+neatkarīgi no tā, kādu maršrutu viņš būs izvēlējies un kura ir
+sākotnējā pilsēta $Z$."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.11.5 eozol:country "LV" ;
+    eozol:grade 11 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "5" ;
+    eozol:problemid "LV.AO.2013.11.5" ;
+    eozol:text """Uz galda virsmas, kurai ir taisnstūra forma, izvietoti vairāki
+vienādi kvadrātveida papīra gabaliņi, kuru malas ir paralēlas galda
+malām (kvadrātiņi var arī pārklāties). Pierādīt, ka galdā var iedurt
+dažas adatas tā, ka katrs papīra gabaliņš būs piesprausts pie galda
+tieši ar vienu adatu."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.12.1 eozol:country "LV" ;
+    eozol:grade 12 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "1" ;
+    eozol:problemid "LV.AO.2013.12.1" ;
+    eozol:text """Atrisināt reālos skaitļos vienādojumu
+${\\displaystyle \\log_{10} x  \\cdot \\log_{10} (4-x)=\\frac{1}{4}}$."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.12.2 eozol:country "LV" ;
+    eozol:grade 12 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2013.12.2" ;
+    eozol:text """Trijstūrī $ABC$ punkti $M$, $N$ un $K$ ir attiecīgi malu $AB$, $BC$ un $CA$
+viduspunkti. Ir novilktas trīs riņķa līnijas: caur punktiem $K$, $A$, $M$;
+caur punktiem $M$, $B$, $N$; caur punktiem $N$, $C$, $K$. Pierādīt, ka visas
+novilktās riņķa līnijas krustojas vienā punktā."""@lv ;
+    eozol:year "2013" .
+
 eozol:LV.AO.2013.12.3 eozol:country "LV" ;
     eozol:grade 12 ;
     eozol:olympiad "AO" ;
@@ -1499,6 +1818,141 @@ eozol:LV.AO.2013.12.3 eozol:country "LV" ;
     eozol:problemid "LV.AO.2013.12.3" ;
     eozol:text """Pierādīt, ka neeksistē tādi naturāli skaitļi $x, y, z$, ka izpildās
 vienādība $6^x + 13^y = 29^z$."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.12.4 eozol:country "LV" ;
+    eozol:grade 12 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "4" ;
+    eozol:problemid "LV.AO.2013.12.4" ;
+    eozol:text """Kādas valodas alfabētā ir $i$ patskaņi ($i \\geq 2$) un
+$j$ līdzskaņi ($j \\geq 2$).
+Šajā valodā par vārdu sauc jebkuru galīgu burtu (patskaņu un
+līdzskaņu) virkni, kas satur vismaz vienu burtu un kurā nekādi divi
+patskaņi neparādās pēc kārtas un pēc kārtas uzrakstīti līdzskaņi ir
+ne vairāk kā divi (piemēram, ja "A" ir patskanis, bet "B" –
+līdzskanis, tad, piemēram, "ABBA" ir vārds, turpretī "BAAB" un
+"ABBBA" nav vārdi).
+Ar $S(n)$ apzīmēsim visu to vārdu skaitu, kuri sastāv no $n$ burtiem, $n \\geq 1$.
+Pierādīt, ka visiem naturāliem skaitļiem n ir spēkā vienādība
+$$S(n+3) = i \\cdot j \\cdot S(n+1) + i \\cdot j^2 \\cdot S(n).$$"""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.12.5 eozol:country "LV" ;
+    eozol:grade 12 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "5" ;
+    eozol:problemid "LV.AO.2013.12.5" ;
+    eozol:text """Dota kvadrātisku rūtiņu plakne, katras rūtiņas malas garums ir $1$.
+Pierādīt, ka eksistē trijstūris, kura virsotnes atrodas šīs plaknes
+rūtiņu virsotnēs un jebkuru divu tā malu garumi atšķiras ne vairāk
+kā par ${\\displaystyle \\frac{1}{2013 \\cdot \\sqrt{P}}}$,
+kur $P$ ir šī trijstūra perimetrs."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.5.1 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "1" ;
+    eozol:problemid "LV.AO.2013.5.1" ;
+    eozol:text """Cik reizes diennaktī sakrīt pulksteņa stundu un minūšu
+rādītāji? (Plkst. 00:00 un 24:00 ieskaitīt vienu reizi.) """@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.5.2 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2013.5.2" ;
+    eozol:text """$24$-stāvu mājā ir lifts, kuram ir divas pogas.
+Nospiežot vienu pogu,
+tas paceļas (ja iespējams) $17$ stāvus uz augšu, nospiežot otru –
+nolaižas $8$ stāvus uz leju (ja iespējams). Noskaidro, no kura stāva
+ar šo liftu var nokļūt uz jebkuru citu
+stāvu šajā mājā. (Lifts nevar uzbraukt
+augstāk par 24. stāvu un zemāk par 1.
+stāvu.)"""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.5.4 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "4" ;
+    eozol:problemid "LV.AO.2013.5.4" ;
+    eozol:text """No 2. zīmējumā redzamajām figūrām salikt
+taisnstūri ar laukumu $40$ rūtiņas. Figūras nedrīkst
+pārklāties un katra veida figūra jāizmanto vismaz
+vienu reizi. (Figūras var būt pagrieztas vai
+apgrieztas otrādi.) .
+"""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.5.5 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "5" ;
+    eozol:problemid "LV.AO.2013.5.5" ;
+    eozol:text """Kuba katra skaldne sadalīta četros vienādos kvadrātos. Vai šos
+kvadrātus var nokrāsot a) divās; b) trīs krāsās tā, ka kvadrāti, kam
+ir kopīga mala, ir nokrāsoti dažādās krāsās? Katrs kvadrāts pilnībā
+ir jākrāso vienā krāsā. """@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.6.1 eozol:country "LV" ;
+    eozol:grade 6 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "1" ;
+    eozol:problemid "LV.AO.2013.6.1" ;
+    eozol:text """Uz tāfeles uzrakstīti desmit skaitļi:
+$$12345678910.$$
+Alfons nodzēš jebkurus divus no tiem (apzīmēsim tos ar $a$ un $b$)
+un to vietā uzraksta skaitli, kas vienāds ar  $a+b+2$. Šo operāciju
+viņš atkārto, kamēr uz tāfeles paliek viens skaitlis.
+Pamato, ka neatkarīgi no secības, kādā Alfons izpilda darbības,
+beigās tiek iegūts viens un tas pats skaitlis. Kāds tas ir?"""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.6.2 eozol:country "LV" ;
+    eozol:grade 6 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2013.6.2" ;
+    eozol:text """Vai var atrast tādus divus viens otram sekojošus naturālus skaitļus,
+viens no kuriem dalās ar $3$ un kuru
+ ciparu summas atšķiras par 3;
+ ciparu reizinājumi atšķiras par 3?"""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.6.3 eozol:country "LV" ;
+    eozol:grade 6 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "3" ;
+    eozol:problemid "LV.AO.2013.6.3" ;
+    eozol:text """Sagriezt 3. zīmējumā attēloto figūru $20$
+vienādās mazākās figūrās (figūras var būt
+pagrieztas vai apgrieztas otrādi).
+"""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.6.4 eozol:country "LV" ;
+    eozol:grade 6 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "4" ;
+    eozol:problemid "LV.AO.2013.6.4" ;
+    eozol:text """Vai skaitļus no $100$ līdz $200$ var sadalīt divās grupās tā, ka skaitļu
+reizinājumi abās grupās ir vienādi?"""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.6.5 eozol:country "LV" ;
+    eozol:grade 6 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "5" ;
+    eozol:problemid "LV.AO.2013.6.5" ;
+    eozol:text """Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem 5x5
+rūtiņas trīs  vienas rindas vai kolonnas  rūtiņās
+ieraksta savu vārdu, katru burtu rakstot citā rūtiņā. Uzvar tas
+spēlētājs, kurš pēdējais ieraksta savu vārdu. Una izdara pirmo
+gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru?"""@lv ;
     eozol:year "2013" .
 
 eozol:LV.AO.2013.7.1 eozol:country "LV" ;
@@ -1511,6 +1965,18 @@ eozol:LV.AO.2013.7.1 eozol:country "LV" ;
         eozol:nota.combine.poly ;
     eozol:text """Naturālā divciparu skaitlī neviens no cipariem nav $0$. Pierādīt, ka,
 dalot šo skaitli ar tā ciparu reizinājumu, dalījums ir vismaz $\\frac{11}{9}$."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.7.2 eozol:country "LV" ;
+    eozol:grade 7 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2013.7.2" ;
+    eozol:text """Doti seši nogriežņi ar garumiem $1\\mbox{cm}$, $3\\mbox{cm}$, $5\\mbox{cm}$,
+$7\\mbox{cm}$, $9\\mbox{cm}$, $11\\mbox{cm}$.
+Cik dažādos veidos no tiem var izvēlēties trīs nogriežņus
+tā, ka no tiem var izveidot trijstūri (katra trijstūra mala ir viens
+vesels nogrieznis)?"""@lv ;
     eozol:year "2013" .
 
 eozol:LV.AO.2013.7.3 eozol:country "LV" ;
@@ -1527,6 +1993,29 @@ visi naturālie skaitļi no $1$ līdz $176$) nav naturāla skaitļa kvadrāts.
 (Skaitļa kvadrāts ir skaitļa reizinājums pašam ar sevi.)"""@lv ;
     eozol:year "2013" .
 
+eozol:LV.AO.2013.7.4 eozol:country "LV" ;
+    eozol:grade 7 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "4" ;
+    eozol:problemid "LV.AO.2013.7.4" ;
+    eozol:text """Vai kvadrātā $5 \\times 5$ rūtiņas var iekrāsot  $6$ rūtiņas;  $5$ rūtiņas tā,
+lai atlikušajā daļā nevarētu ievietot nevienu 4. zīmējumā redzamo
+figūru (tā var būt pagriezta vai apgāzta otrādi)?
+"""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.7.5 eozol:country "LV" ;
+    eozol:grade 7 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "5" ;
+    eozol:problemid "LV.AO.2013.7.5" ;
+    eozol:text """Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem $6 \\times 6$
+rūtiņas trīs  vienas rindas vai kolonnas  rūtiņās
+ieraksta savu vārdu, katru burtu rakstot citā rūtiņā. Uzvar tas
+spēlētājs, kurš pēdējais ieraksta savu vārdu. Una izdara pirmo
+gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru?"""@lv ;
+    eozol:year "2013" .
+
 eozol:LV.AO.2013.8.1 eozol:country "LV" ;
     eozol:grade 8 ;
     eozol:olympiad "AO" ;
@@ -1538,14 +2027,99 @@ eozol:LV.AO.2013.8.1 eozol:country "LV" ;
 nosvītrojot to pirmo ciparu, samazinās $36$ reizes."""@lv ;
     eozol:year "2013" .
 
+eozol:LV.AO.2013.8.2 eozol:country "LV" ;
+    eozol:grade 8 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2013.8.2" ;
+    eozol:text """Dots trijstūris $ABC$ un punkts $P$ tā iekšpusē. Pierādi, ka attālumu
+summa no punkta $P$ līdz dotā trijstūra virsotnēm ir lielāka nekā
+puse no trijstūra perimetra."""@lv ;
+    eozol:year "2013" .
+
 eozol:LV.AO.2013.8.3 eozol:country "LV" ;
     eozol:grade 8 ;
     eozol:olympiad "AO" ;
     eozol:problem_number "3" ;
     eozol:problemid "LV.AO.2013.8.3" ;
+    eozol:text """Doti tādi reāli skaitļi $t$ un $a$, ka
+$t^2 - t \\cdot sqrt(t) + a = 0$.
+Pierādīt, ka $t \\geq 4a$."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.8.4 eozol:country "LV" ;
+    eozol:grade 8 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "4" ;
+    eozol:problemid "LV.AO.2013.8.4" ;
+    eozol:text """Vai regulāru sešstūri var sadalīt  deviņos;  astoņos vienādos
+daudzstūros?"""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.8.5 eozol:country "LV" ;
+    eozol:grade 8 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "5" ;
+    eozol:problemid "LV.AO.2013.8.5" ;
+    eozol:text """Rūķītis ir iedomājies skaitļus $x_1,x_2,x_3,x_4$,
+katrs no tiem ir vai nu $0$, vai $1$.
+Ja rūķītim pajautā: "Kāds ir $i$-tais skaitlis?" ($i = 1, 2, 3\\ \\mbox{vai}\\ 4$
+pēc izvēles), tad viņš pasaka $x_i$ vērtību.
+Pierādīt, ka ar $3$ jautājumiem pietiek, lai uzzinātu, vai virkne
+$x_1,x_2,x_3,x_4$ ir monotona.
+Skaitļu virkne $x_1,x_2,x_3,x_4$ ir monotona, ja tā ir nedilstoša vai neaugoša
+(t. i., $x_1 \\leq x_2 \\leq x_3 \\leq x_4$ vai
+$x_1 \\geq x_2 \\geq x_3 \\geq x_4$)."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.9.1 eozol:country "LV" ;
+    eozol:grade 9 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "1" ;
+    eozol:problemid "LV.AO.2013.9.1" ;
+    eozol:text """Dota trapece, kuras pamatu malu garumi ir $3$ un $13$. Pierādīt, ka to
+nevar sadalīt piecos vienlielos trijstūros.
+(Figūras sauc par vienlielām, ja tām ir vienādi laukumi.)"""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.9.2 eozol:country "LV" ;
+    eozol:grade 9 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2013.9.2" ;
+    eozol:text """Kvadrāta ar izmēriem $4 \\times 4$ rūtiņas katra rūtiņu virsotne nokrāsota
+vienā no divām krāsām. Pierādīt, ka noteikti var atrast trīs punktus,
+kas nokrāsoti vienā krāsā un atrodas vienādsānu taisnleņķa
+trijstūra virsotnēs."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.9.3 eozol:country "LV" ;
+    eozol:grade 9 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "3" ;
+    eozol:problemid "LV.AO.2013.9.3" ;
     eozol:text """Doti četri dažādi cipari, neviens no kuriem nav $0$. Visu divciparu
 skaitļu, kurus var izveidot no šiem cipariem, summa ir $484$. Atrast
 dotos četrus ciparus."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.9.4 eozol:country "LV" ;
+    eozol:grade 9 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "4" ;
+    eozol:problemid "LV.AO.2013.9.4" ;
+    eozol:text """Dota skaitļu virkne $x_0,x_1,x_2_,x_3,\\ldots$,
+kurā $x_0 \\geq 0$ un $x_{n+1}=x_n + \\frac{2}{x_n}$ visiem
+$n \\geq 0$. Pierādīt, ka $x_{100} \\geq 20$."""@lv ;
+    eozol:year "2013" .
+
+eozol:LV.AO.2013.9.5 eozol:country "LV" ;
+    eozol:grade 9 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "5" ;
+    eozol:problemid "LV.AO.2013.9.5" ;
+    eozol:text """Dots izliekts četrstūris. Uzzīmēti četri riņķi, kuru diametri ir
+četrstūra malas. Pierādīt, ka šie riņķi pilnībā pārklāj doto četrstūri."""@lv ;
     eozol:year "2013" .
 
 eozol:LV.AO.2014.10.4 eozol:country "LV" ;
@@ -1595,6 +2169,76 @@ eozol:LV.AO.2014.12.3 eozol:country "LV" ;
         eozol:nota.divrule.3_9.divides ;
     eozol:text """Atrast visus pirmskaitļus $p$,
 kuriem $p^4 − 6$ arī ir pirmskaitlis!"""@lv ;
+    eozol:year "2014" .
+
+eozol:LV.AO.2014.5.1 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "1" ;
+    eozol:problemid "LV.AO.2014.5.1" ;
+    eozol:skill eozol:alg.equ ;
+    eozol:text """Pūkainīšu ciemata bērniem Lieldienu zaķis atnesa olas. Katra no tām bija nokrāsota tieši
+vienā no krāsām – sarkanā, dzeltenā, zilā. Zināms, ka $20$ jeb $40$ olas bija sarkanas,
+$\\frac{3}{4}$ no atlikušajām bija dzeltenas, bet pārējās -- zilas. Aprēķini:
+ Cik olas bija zilā krāsā?
+ Kāda daļa no visām olām bija zilas?
+ Cik procenti no visām olām bija dzeltenas?"""@lv ;
+    eozol:year "2014" .
+
+eozol:LV.AO.2014.5.2 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "2" ;
+    eozol:problemid "LV.AO.2014.5.2" ;
+    eozol:skill eozol:mod.congr ;
+    eozol:text """Divu naturālu skaitļu pierakstā izmantoti tikai cipari $2$, $3$, $7$ un $8$. Vai var gadīties, ka viens
+skaitlis ir tieši trīs reizes lielāks nekā otrs skaitlis?"""@lv ;
+    eozol:year "2014" .
+
+eozol:LV.AO.2014.5.3 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "3" ;
+    eozol:problemid "LV.AO.2014.5.3" ;
+    eozol:skill eozol:geom.quadrangle.rect ;
+    eozol:text """Taisnstūra ABCD malu garumi izsakāmi veselos centimetros. Iekrāsotās daļas laukums ir
+$6$ $\\mbox{cm}^2$ (skat. 1. zīm.). Nogrieznis $AE$ ir $\\frac{1}{3}$
+no taisnstūra malas $AD$. Aprēķini taisnstūra
+laukumu un perimetru, ja zināms, ka viena taisnstūra mala ir par $5$ $\\mbox{cm}$ garāka nekā otra
+mala.
+"""@lv ;
+    eozol:year "2014" .
+
+eozol:LV.AO.2014.5.4 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "4" ;
+    eozol:problemid "LV.AO.2014.5.4" ;
+    eozol:skill eozol:comb.grid.shapes.cutting ;
+    eozol:text """Kvadrāts sastāv no $8 \\times 8$ vienādām kvadrātiskām rūtiņām. Tas sagriezts daļās tā, ka
+griezumi iet pa rūtiņu robežām.
+Kāds lielākais skaits daļu var būt tādas kā 2. zīm. attēlotā figūra (figūras var būt pagrieztas
+jebkurā stāvoklī)?
+"""@lv ;
+    eozol:year "2014" .
+
+eozol:LV.AO.2014.5.5 eozol:country "LV" ;
+    eozol:grade 5 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "5" ;
+    eozol:problemid "LV.AO.2014.5.5" ;
+    eozol:skill eozol:alg.ineq.monotonicity ;
+    eozol:text """Kāds ir  mazākais,  lielākais skaitlis, kuru var izteikt gan kā trīs, gan kā divu dažādu
+divciparu naturālu skaitļu reizinājumu?"""@lv ;
+    eozol:year "2014" .
+
+eozol:LV.AO.2014.7.1 eozol:country "LV" ;
+    eozol:grade 7 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "1" ;
+    eozol:problemid "LV.AO.2014.7.1" ;
+    eozol:text """Trijstūrī $ABC$ novilkts augstums $BD$ un mediāna $BE$. Kāds var būt $AC$ garums, ja
+$ED = 4\\mbox{cm}$ un $DC = 5\\mbox{cm}$?"""@lv ;
     eozol:year "2014" .
 
 eozol:LV.AO.2014.7.2 eozol:country "LV" ;
@@ -1725,6 +2369,16 @@ $a \\geq b \\geq c \\geq 2$
 un $ab-1$ dalās ar c, $bc-1$ dalās ar $a$, $ac-1$ dalās ar $b$."""@lv ;
     eozol:year "2015" .
 
+eozol:LV.AO.2015.7.4 eozol:country "LV" ;
+    eozol:grade 7 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "4" ;
+    eozol:problemid "LV.AO.2015.7.4" ;
+    eozol:text """Vienādsānu trijstūrī $ABC$ uz pamata malas $BC$ atzīmēts iekšējs punkts $D$
+tā, ka arī trijstūri $ABD$ un $ACD$ ir vienādsānu. Aprēķini trijstūra $ABC$
+leņķus! Atrodi visus gadījumus un pamato, ka citu nav!"""@lv ;
+    eozol:year "2015" .
+
 eozol:LV.AO.2015.8.1 eozol:country "LV" ;
     eozol:grade 8 ;
     eozol:olympiad "AO" ;
@@ -1813,6 +2467,18 @@ eozol:LV.AO.2016.7.2 eozol:country "LV" ;
 Brālītis – vienu pīrādziņu un vienu magoņmaizīti. Karlsons par savām
 pusdienām samaksāja tieši divus eiro (katra maizīte un pīrādziņš maksā veselu
 skaitu centu). Cik samaksāja Brālītis?"""@lv ;
+    eozol:year "2016" .
+
+eozol:LV.AO.2016.7.3 eozol:country "LV" ;
+    eozol:grade 7 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "3" ;
+    eozol:problemid "LV.AO.2016.7.3" ;
+    eozol:text """Dots, ka $AB\\parallel{}CD$ un $AD\\parallel{}BC$ (skat. 1.att.).
+Nogriežņu $AC$ un $BD$ krustpunkts ir $M$. Uz taisnes
+$AB$ izvēlēts tāds punkts $N$, ka $AM=MN$. Pierādīt,
+ka $\\angle ANC=90^{\\circ}$.
+"""@lv ;
     eozol:year "2016" .
 
 eozol:LV.AO.2016.8.1 eozol:country "LV" ;
@@ -1904,6 +2570,18 @@ summa dalās ar $7$.
 izdarīt, ja doti naturāli skaitļi no $1$ līdz $10$?"""@lv ;
     eozol:year "2017" .
 
+eozol:LV.AO.2017.7.3 eozol:country "LV" ;
+    eozol:grade 7 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "3" ;
+    eozol:problemid "LV.AO.2017.7.3" ;
+    eozol:text """Divus taisnstūra lapas stūrus nolocīja tā, kā parādīts 3.att. Izrādījās, ka lapas
+apakšējā mala tika sadalīta trīs vienāda garuma nogriežņos un augšējā mala –
+divos vienāda garuma nogriežņos. Pierādīt, ka iekrāsotais trijstūris ir
+vienādmalu!
+"""@lv ;
+    eozol:year "2017" .
+
 eozol:LV.AO.2017.7.5 eozol:country "LV" ;
     eozol:grade 7 ;
     eozol:olympiad "AO" ;
@@ -1967,6 +2645,15 @@ eozol:LV.AO.2018.12.4 eozol:country "LV" ;
     eozol:problemid "LV.AO.2018.12.4" ;
     eozol:text """Naturāls skaitlis $B$ ir iegūts no naturāla skaitļa $A$, samainot vietām tā ciparus.
 Zināms, ka $A + B = 10^{45}$. Pierādīt, ka gan $A$, gan $B$ dalās ar $5$."""@lv ;
+    eozol:year "2018" .
+
+eozol:LV.AO.2018.7.3 eozol:country "LV" ;
+    eozol:grade 7 ;
+    eozol:olympiad "AO" ;
+    eozol:problem_number "3" ;
+    eozol:problemid "LV.AO.2018.7.3" ;
+    eozol:text """Uz trijstūra $ABC$ malas $AB$ izvēlēts patvaļīgs iekšējs punkts $D$. Pierādīt, ka
+$CD > \\frac{1}{2}(CA+CB-AB)$."""@lv ;
     eozol:year "2018" .
 
 eozol:LV.AO.2018.7.4 eozol:country "LV" ;

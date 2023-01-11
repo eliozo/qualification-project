@@ -10,11 +10,11 @@ SKOS = "http://www.w3.org/2004/02/skos/core#"
 def getGoogleSpreadsheet(): # Funkcija, kas iegūst Google Spreadsheet dokumentu ar olimpiāžu uzdevumu datiem
     URL_GOOGLE_SPREADSHEET = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQvAsYeFYhuFLmLgtMiYFeQFeeO4e0DgteRXRg1zpQ2iMcWZr-mIgdyDYnh1IoKq4l5v9C-JAE1-Qcy/pub?output=csv'
     response = requests.get(URL_GOOGLE_SPREADSHEET)
-    open("spreadsheet_skos.csv", "wb").write(response.content)
+    open("resources/spreadsheet_skos.csv", "wb").write(response.content)
 
 def readCSVfile(g): # Funkcija, kas lasa CSV failu
     result = []
-    with open('spreadsheet_skos.csv', 'r',  encoding='utf-8') as csv_file:
+    with open('resources/spreadsheet_skos.csv', 'r',  encoding='utf-8') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         line_count = 0
         for row in csv_reader:
@@ -71,4 +71,4 @@ def produceCSVtoRDF(in_file, out_file): # Pārveido CSV failu par RDF failu
 
 if __name__ == '__main__':
     getGoogleSpreadsheet() # Izsauc funkciju, kas iegūst skos dokumentu CSV faila formātā
-    produceCSVtoRDF(in_file="spreadsheet_skos.csv", out_file= "skos.ttl")
+    produceCSVtoRDF(in_file="resources/spreadsheet_skos.csv", out_file= "resources/skos.ttl")

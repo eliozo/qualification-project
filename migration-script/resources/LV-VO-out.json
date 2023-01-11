@@ -2756,40 +2756,6 @@
       "children": [
         {
           "type": "RawText",
-          "content": "<hgroup>"
-        }
-      ]
-    },
-    {
-      "type": "Paragraph",
-      "children": [
-        {
-          "type": "Image",
-          "src": "LV.VO.2003.12.4.png",
-          "title": "",
-          "children": [
-            {
-              "type": "RawText",
-              "content": "skait\u013cu tabula"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "Paragraph",
-      "children": [
-        {
-          "type": "RawText",
-          "content": "</hgroup><hgroup style=\"font-size:70%\">"
-        }
-      ]
-    },
-    {
-      "type": "Paragraph",
-      "children": [
-        {
-          "type": "RawText",
           "content": "\"Tabul\u0101\" aug\u0161\u0113j\u0101 rindi\u0146\u0101 p\u0113c k\u0101rtas izrakst\u012bti natur\u0101li skait\u013ci no $1$ l\u012bdz $5$;"
         },
         {
@@ -2827,15 +2793,22 @@
         {
           "type": "RawText",
           "content": "natur\u0101li skait\u013ci no $1$ l\u012bdz $2003$ ieskaitot?"
-        }
-      ]
-    },
-    {
-      "type": "Paragraph",
-      "children": [
+        },
         {
-          "type": "RawText",
-          "content": "</hgroup>"
+          "type": "LineBreak",
+          "soft": false,
+          "content": ""
+        },
+        {
+          "type": "Image",
+          "src": "LV.VO.2003.12.4.png",
+          "title": "",
+          "children": [
+            {
+              "type": "RawText",
+              "content": "skait\u013cu tabula"
+            }
+          ]
         }
       ]
     },
