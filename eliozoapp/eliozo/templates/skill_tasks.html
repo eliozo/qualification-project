@@ -5,18 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
   <title>Prasmes uzdevumi</title>
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
     type="text/javascript"></script>
-  <a href="http://localhost:5000/skills" class="button">Atpakaļ</a>
   <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
 </head>
 
 <body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://localhost:5000/" style="padding: 5px 5px"><a href="http://localhost:5000/"><img src="{{ url_for('static',filename='nms-logo.png') }}" style="width:80px;" alt="NMS-logo"></a></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="http://localhost:5000/">Sākumlapa</a></li>
+                <li><a href="http://localhost:5000/olympiads">Olimpiāžu arhīvs</a></li>
+                <li><a href="http://localhost:5000/skills">Prasmes</a></li>
+                <li><a href="http://localhost:5000/video">Video atrisinājumi</a></li>
+                <li><a href="http://localhost:5000/info">Bibliogrāfija</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<a href="http://localhost:5000/skills" class="button">Atpakaļ</a>
   <div class="container">
     {{jsonfile}}
   </div>

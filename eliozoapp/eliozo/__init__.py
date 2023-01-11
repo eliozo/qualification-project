@@ -71,7 +71,7 @@ def getSkillProblemsSPARQL(skillID):
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
-    '''SELECT DISTINCT ?problem ?problemid ?text ?grade
+    '''SELECT DISTINCT ?problem ?problemid ?subskill ?text ?grade
 WHERE {
     ?parent skos:prefLabel \''''+skillID+'''\'  .
     ?parent skos:narrower* ?subskill .
@@ -206,6 +206,34 @@ def getSPARQLVideoBookmarks(problemid):
 
     return x.text
 
+def getAllSPARQLVideos(problemid):
+    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
+    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
+    'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
+    'PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>\n'+
+    '''SELECT * WHERE {
+  ?problem eozol:problemid \''''+problemid+'''\' .
+  OPTIONAL {
+    ?problem eozol:text ?text ;
+             eozol:year ?year ;
+             eozol:olympiad ?olympiad ;
+             eozol:grade ?grade ;
+             eozol:country ?country .
+  }
+  	?problem eozol:video ?video .         
+  } ORDER BY ?grade'''
+    }
+
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+
+    x = requests.post(url, myobj, head)
+
+    print(x.text)
+
+    return x.text
+
+
 def mathBeautify(a): # Izskaistina formulas ar MathJax Javascript bibliotēku
     b0 = re.sub(r"\$\$([^\$]+)\$\$", r"<p><span class='math display'>\[\1\]</span></p>", a) # Aizstāj vairākrindu formulas $$..$$
     b = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", b0) # Aizstāj inline formulas $...$ (Svarīga secība, kā aizstāj)
@@ -274,7 +302,7 @@ def create_app(test_config=None):
         template_context = {
             'video_title': video_title,
             'bookmarks': bookmarks,
-            'youtubeID': youtubeID
+            'youtubeID': youtubeID,
         }
 
         return render_template('video.html', **template_context)

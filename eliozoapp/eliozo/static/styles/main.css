@@ -34,3 +34,79 @@ footer {
         height: auto;
     }
 }
+
+table.tasks, table.proofs {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-left: 5%;
+}
+
+table.tasks tr td, table.proofs tr td {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+table.tasks tr th, table.proofs tr th {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 120%;
+}
+
+table.tasks tr.odd, table.proofs tr.odd {
+    background-color: #eeeeee;
+}
+
+body {
+    margin-top: 0%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 2%
+}
+
+h2.top {
+    margin-top: 0px;
+    color:black;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+}
+
+/* CSS for info.html */
+a.info{
+    color: blue;
+}
+
+p.info{
+    color:black;
+}
+
+h2.info{
+    text-align:left;
+}
+
+/* CSS for buttons */
+a.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 24px;;
+    border-radius: 12px;
+    border: 1px solid darkgrey;
+    transition-duration: 0.5s;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-top:25px;
+  }
+
+a.button:hover {
+    background-color: gray;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
