@@ -4,10 +4,10 @@
         <title>Bibliogrāfija</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}" />
     </head>
     <body>
     <nav class="navbar navbar-inverse">
@@ -31,32 +31,35 @@
             </div>
         </div>
     </nav>
-    <a href="http://localhost:5000/" class="button">Atpakaļ</a>
-    <h1 class="info">Bibliogrāfija</h1>
-    <h2 class="info">Bibliogrāfija ar norādēm uz olimpiāžu uzdevumu pirmavotiem</h2>
-
-    <p>Šeit var atrast noderīgas saites uz dažādu veidu starptautiskajām matemātikas olimpiādēm. </p>
-
-    <p><a class="info" href="https://artofproblemsolving.com/community/c14_international_contests">Art of Problem
-            Solving: International Contests</a></p>
-    <p class="info">Forums, kur risināti IMO, IMO īso sarakstu, Baltijas ceļa, EGMO uzdevumu komplekti</p>
-    <hr>
-    <p><a class="info" href="https://artofproblemsolving.com/community/c58_national_olympiads">Art of Problem Solving:
-            National Olympiads</a></p>
-    <p class="info">Ķīnas u.c. valstu sacensību uzdevumi</p>
-    <hr>
-    <p><a class="info" href="http://nms.lu.lv/uzdevumu-arhivs/latvijas-olimpiades/"> NMS arhīvs </a></p>
-    <p class="info">Latvijas nacionālās olimpiādes</p>
-    <hr>
-    <p><a class="info" href="http://www.math.olympiaadid.ut.ee/html/index.php?id=piirk/">Igaunijas žūrijas arhīvs</a>
-    </p>
-    <p class="info">Uzdevumu teksti igauņu un krievu valodās.
-        Piirkonnavoorud (reģionu kārta), Lõppvoorud (gala/nacionālā kārta), Lahtised võistlused (rudens un ziemas
-        atklātie konkursi), Valikvõistlused (atlases sacensības).</p>
-    <hr>
-    <p><a class="info" href="http://mif.vu.lt/matematikos-olimpiados/">Lietuvas olimpiāžu uzdevumu arhīvs</a></p>
-    <p class="info">Uzdevumu teksti lietuviešu valodā.</p>
-    <hr>
+    <div class="container-fluid text-center">
+        <div class="col-sm-8 text-left">
+            <a href="http://localhost:5000/" class="button">Atpakaļ</a>
+            <h2 class="info">Bibliogrāfija ar norādēm uz olimpiāžu uzdevumu pirmavotiem</h2>
+        
+            <p>Šeit var atrast noderīgas saites uz dažādu veidu starptautiskajām matemātikas olimpiādēm. </p>
+        
+            <p><a class="info" href="https://artofproblemsolving.com/community/c14_international_contests">Art of Problem
+                    Solving: International Contests</a></p>
+            <p class="info">Forums, kur risināti IMO, IMO īso sarakstu, Baltijas ceļa, EGMO uzdevumu komplekti</p>
+            <hr>
+            <p><a class="info" href="https://artofproblemsolving.com/community/c58_national_olympiads">Art of Problem Solving:
+                    National Olympiads</a></p>
+            <p class="info">Ķīnas u.c. valstu sacensību uzdevumi</p>
+            <hr>
+            <p><a class="info" href="http://nms.lu.lv/uzdevumu-arhivs/latvijas-olimpiades/"> NMS arhīvs </a></p>
+            <p class="info">Latvijas nacionālās olimpiādes</p>
+            <hr>
+            <p><a class="info" href="http://www.math.olympiaadid.ut.ee/html/index.php?id=piirk/">Igaunijas žūrijas arhīvs</a>
+            </p>
+            <p class="info">Uzdevumu teksti igauņu un krievu valodās.
+                Piirkonnavoorud (reģionu kārta), Lõppvoorud (gala/nacionālā kārta), Lahtised võistlused (rudens un ziemas
+                atklātie konkursi), Valikvõistlused (atlases sacensības).</p>
+            <hr>
+            <p><a class="info" href="http://mif.vu.lt/matematikos-olimpiados/">Lietuvas olimpiāžu uzdevumu arhīvs</a></p>
+            <p class="info">Uzdevumu teksti lietuviešu valodā.</p>
+            <hr>
+        </div>
+        </div> 
 </body>
 
 </html>

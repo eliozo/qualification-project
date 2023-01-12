@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
   <title>Olimpiādes</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
   <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
@@ -35,17 +35,21 @@
         </div>
     </div>
 </nav>
-<a href="http://localhost:5000/" class="button">Atpakaļ</a>
-  <div class="container">
-    {{jsonfile}}
+<div class="container-fluid text-center">
+  <div class="col-sm-8 text-left">
+    <a href="http://localhost:5000/" class="button">Atpakaļ</a>
+    <div class="container">
+      {{jsonfile}}
+    </div>
+    <h2> Olimpiāžu arhīvs </h2>
+    <p> Visas olimpiādes, kuras ir mūsu RDF krātuvē </p>
+    {% for link in links %}
+    <p>Olimpiāde: <a
+        href='http://localhost:5000/olympiad?country_id={{link.country.value}}&olympiad_id={{link.olympiad.value}}'> {{
+        link.country.value }}.{{ link.olympiad.value }} </a> </p>
+    {% endfor %}
   </div>
-  <h2> Olimpiāžu arhīvs </h2>
-  <p> Visas olimpiādes, kuras ir mūsu RDF krātuvē </p>
-  {% for link in links %}
-  <p>Olimpiāde: <a
-      href='http://localhost:5000/olympiad?country_id={{link.country.value}}&olympiad_id={{link.olympiad.value}}'> {{
-      link.country.value }}.{{ link.olympiad.value }} </a> </p>
-  {% endfor %}
+  </div>
 </body>
 
 </html>

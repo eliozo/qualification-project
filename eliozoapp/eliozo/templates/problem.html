@@ -15,7 +15,7 @@
     <![endif]-->
 </head>
 
-<body style="margin-left:5%">
+<body>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -41,22 +41,22 @@
   <div class="container">
     {{jsonfile}}
   </div>
-  <h3>Uzdevums: {{ problemid }} </h3>
-  <p> Klase {{ data[0].grade.value }}</p>
-  <p> Gads: {{ data[0].year.value }}</p>
+  <h3 style="margin-left:5%">Uzdevums: {{ problemid }} </h3>
+  <p style="margin-left:5%"> Klase {{ data[0].grade.value }}</p>
+  <p style="margin-left:5%"> Gads: {{ data[0].year.value }}</p>
   {% if data[0].skill is defined %}
-  <p> Prasmes: {% for item in data %}
+  <p style="margin-left:5%"> Prasmes: {% for item in data %}
     <a href="/skill_tasks?skillIdentifier={{item.skillIdentifier.value}}">{{ item.skillIdentifier.value }} </a>
     &nbsp;
     {% endfor %}  
   </p>
   {% endif %}
-  <p> {{ text |safe }}</p>
+  <p style="margin-left:5%"> {{ text |safe }}</p>
   {% if image_src != '' %}
   <p><img src="./static/{{ image_src }}"/></p>
   {% endif %}
   {% if hasVideo %}
-  <table border="1" cellspacing="0" style="border:1px solid #eeeeee; width:80%;">
+  <table border="1" cellspacing="0" style="border:1px solid #eeeeee; width:80%; margin-left:5%">
     <tr>
         <td style="width:50%">
 <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <title>Olimpiādes</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}" />
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
@@ -36,26 +36,31 @@
             </div>
         </div>
     </nav>
-    <a href="http://localhost:5000/olympiads" class="button">Atpakaļ</a>
-    <div class="container">
-        {{jsonfile}}
-    </div>
-    <h2> Olimpiāde: {{ country_id }}.{{ olympiad_id }} </h2>
-    <p> Visi gadi ar klasēm no šīs konkrētās olimpiādes </p>
-    <table border="1" cellspacing="0">
-        {% for year in all_years %}
-        <tr>
-            <th>{{ year }}</th>
-            {% for grade in range(5,13) %}
-            {% if all_grades[year][grade-5] != 'NA' %}
-            <td><a href="http://localhost:5000/grade?year={{year}}&grade={{grade}}&country={{country_id}}&olympiad={{olympiad_id}}">Klase: {{ grade }}</a></td>
-            {% else %}
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-            {% endif %}
-            {% endfor %}
-        </tr>
-        {% endfor %}
-    </table>
+    <div class="container-fluid text-center">
+        <div class="col-sm-8 text-left">
+            <a href="http://localhost:5000/olympiads" class="button">Atpakaļ</a>
+            <div class="container">
+                {{jsonfile}}
+            </div>
+            <h2> Olimpiāde: {{ country_id }}.{{ olympiad_id }} </h2>
+            <p> Visi gadi ar klasēm no šīs konkrētās olimpiādes </p>
+            <table border="1" cellspacing="0">
+                {% for year in all_years %}
+                <tr>
+                    <th>{{ year }}</th>
+                    {% for grade in range(5,13) %}
+                    {% if all_grades[year][grade-5] != 'NA' %}
+                    <td><a href="http://localhost:5000/grade?year={{year}}&grade={{grade}}&country={{country_id}}&olympiad={{olympiad_id}}">Klase: {{ grade }}</a></td>
+                    {% else %}
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    {% endif %}
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        </div>
+
 </body>
 
 </html>

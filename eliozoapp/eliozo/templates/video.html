@@ -36,72 +36,12 @@
             </div>
         </nav>
         <a href="http://localhost:5000/" class="button">Atpakaļ</a>
-        <h1 class="info">Video</h1>
-        <table border="1" cellspacing="0" style="border:1px solid #eeeeee">
-            <tr>
-                <td style="width:50%">
-        <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-            <div id="player">
-
-                <script>
-                    // 2. This code loads the IFrame Player API code asynchronously.
-                    var tag = document.createElement('script');
-        
-                    tag.src = "https://www.youtube.com/iframe_api";
-                    var firstScriptTag = document.getElementsByTagName('script')[0];
-                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        
-                    // 3. This function creates an <iframe> (and YouTube player)
-                    //    after the API code downloads.
-                    var player;
-                    function onYouTubeIframeAPIReady() {
-                        player = new YT.Player('player', {
-                            height: '390',
-                            width: '640',
-                            videoId: '{{ youtubeID }}', // šo jāpārtaisa
-                            playerVars: {
-                                'playsinline': 1
-                            },
-                            events: {
-                                'onReady': onPlayerReady,
-                                'onStateChange': onPlayerStateChange
-                            }
-                        });
-                    }
-        
-                    // 4. The API will call this function when the video player is ready.
-                    function onPlayerReady(event) {
-                        // event.target.playVideo();
-                    }
-        
-                    // 5. The API calls this function when the player's state changes.
-                    //    The function indicates that when playing a video (state=1),
-                    //    the player should play for six seconds and then stop.
-                    var done = false;
-                    function onPlayerStateChange(event) {
-                        if (event.data == YT.PlayerState.PLAYING && !done) {
-                            setTimeout(stopVideo, 6000000);
-                            done = true;
-                        }
-                    }
-                    function stopVideo() {
-                        player.stopVideo();
-                    }
-                </script>
-            </div>
-                </td>
-                <td style="width:50%; vertical-align:top;">
-                    {{ video_title }}
-                    <ul>
-                    {% for bookmark in bookmarks %}
-                        <li>
-                        {{ bookmark.minutes }}:{{ bookmark.sec }} <a href="#">{{ bookmark.bmtext }} </a>
-                        </li>
-                    {% endfor %}
-                    </ul>
-                </td>
-            </tr>
-        </table>
+        <h1 class="info">Saites uz video</h1>
+        <ul>
+        {% for problem in all_problemids %}
+        <li><a href="http://localhost:5000/problem?problemid={{problem}}">{{ problem }}</a></li>
+        {% endfor %}
+        </ul>
 
     </body>
 

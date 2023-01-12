@@ -206,21 +206,14 @@ def getSPARQLVideoBookmarks(problemid):
 
     return x.text
 
-def getAllSPARQLVideos(problemid):
+def getAllSPARQLVideos():
     url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>\n'+
-    '''SELECT * WHERE {
-  ?problem eozol:problemid \''''+problemid+'''\' .
-  OPTIONAL {
-    ?problem eozol:text ?text ;
-             eozol:year ?year ;
-             eozol:olympiad ?olympiad ;
-             eozol:grade ?grade ;
-             eozol:country ?country .
-  }
+    '''SELECT ?problemid WHERE {
+  ?problem eozol:problemid ?problemid .
   	?problem eozol:video ?video .         
   } ORDER BY ?grade'''
     }
@@ -278,32 +271,44 @@ def create_app(test_config=None):
 
     @app.route("/video")
     def getVideo():
-        problemid = request.args.get('problemid')
+        data = json.loads(getAllSPARQLVideos())
 
-        problemid = "LV.AO.2011.5.1"
-
-        data = json.loads(getSPARQLVideoBookmarks(problemid))
-
-        bookmarks = []
-        video_title = "NA"
-        youtubeID = "NA"
+        all_problemids = []
 
         for item in data['results']['bindings']:
-            video_title = item['videoTitle']['value']
-            youtubeID = item['youtubeID']['value']
-            minutes = int(item['tstamp']['value']) // 60
-            if minutes < 10:
-                minutes = '0' + str(minutes)
-            seconds = int(item['tstamp']['value']) % 60
-            if seconds < 10:
-                seconds = '0' + str(seconds)
-            bookmarks.append({'tstamp': item['tstamp']['value'], 'bmtext': item['bmtext']['value'], 'minutes': minutes, 'sec': seconds}) # Bookmarkos sakrāta informācija par tstamp un bmtext
+            problem_id_with_video = item['problemid']['value']
+            all_problemids.append(problem_id_with_video)
 
         template_context = {
-            'video_title': video_title,
-            'bookmarks': bookmarks,
-            'youtubeID': youtubeID,
+            'all_problemids' : all_problemids
         }
+
+        # problemid = request.args.get('problemid')
+
+        # problemid = "LV.AO.2011.5.1"
+
+        # data = json.loads(getSPARQLVideoBookmarks(problemid))
+
+        # bookmarks = []
+        # video_title = "NA"
+        # youtubeID = "NA"
+
+        # for item in data['results']['bindings']:
+        #     video_title = item['videoTitle']['value']
+        #     youtubeID = item['youtubeID']['value']
+        #     minutes = int(item['tstamp']['value']) // 60
+        #     if minutes < 10:
+        #         minutes = '0' + str(minutes)
+        #     seconds = int(item['tstamp']['value']) % 60
+        #     if seconds < 10:
+        #         seconds = '0' + str(seconds)
+        #     bookmarks.append({'tstamp': item['tstamp']['value'], 'bmtext': item['bmtext']['value'], 'minutes': minutes, 'sec': seconds}) # Bookmarkos sakrāta informācija par tstamp un bmtext
+
+        # template_context = {
+        #     'video_title': video_title,
+        #     'bookmarks': bookmarks,
+        #     'youtubeID': youtubeID,
+        # }
 
         return render_template('video.html', **template_context)
 
