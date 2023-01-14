@@ -77,7 +77,7 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
             problem_number = "NA"
             problem_title = problem_title[13:]
             current_problem_id = problem_title
-            problem_id = re.compile(r"([A-Z]{2})\.(\w+)\.(\d+)\.(\d+)([A-Za-z_]+\w*)?\.(\d+)")
+            problem_id = re.compile(r"([A-Z]{2})\.(\w+)\.(\d+)\.(\d+)([A-Za-z_]+\w*)?\.(\d+)") # LV.AO.2000.7.1
             match_id = problem_id.match(problem_title)
             if (match_id):
                 country = match_id.group(1)
