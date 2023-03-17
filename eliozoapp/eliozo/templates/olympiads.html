@@ -44,9 +44,9 @@
     <h2> Olimpiāžu arhīvs </h2>
     <p> Visas olimpiādes, kuras ir mūsu RDF krātuvē </p>
     {% for link in links %}
-    <p>Olimpiāde: <a
-        href='http://localhost:5000/olympiad?country_id={{link.country.value}}&olympiad_id={{link.olympiad.value}}'> {{
-        link.country.value }}.{{ link.olympiad.value }} </a> </p>
+    <p>Olimpiāde:
+      <a href="{{ url_for('getOlympiad',country_id=link.country.value,olympiad_id=link.olympiad.value) }}">
+        {{ link.country.value }}.{{ link.olympiad.value }}</a></p>
     {% endfor %}
   </div>
   </div>
