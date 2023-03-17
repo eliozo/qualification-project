@@ -7,7 +7,7 @@ import re
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from werkzeug.wrappers import Response
 
-FUSEKI_URL = 'http://localhost:8080/jena-fuseki-war-4.7.0/abc/'
+FUSEKI_URL = 'http://127.0.0.1:8080/jena-fuseki-war-4.7.0/abc/'
 
 # Integrācija ar Jena Fuseki serveri
 def getSPARQLtopics():
@@ -129,7 +129,7 @@ def getSPARQLOlympiads():
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>\n'+
+    'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
     'SELECT DISTINCT ?country ?olympiad WHERE { ?problem eozol:country ?country ; eozol:olympiad ?olympiad . }'
     }
 
