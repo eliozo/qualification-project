@@ -4,10 +4,15 @@ import json
 import html
 import requests
 import re
+from werkzeug.middleware.dispatcher import DispatcherMiddleware
+from werkzeug.wrappers import Response
+
+FUSEKI_URL = 'http://127.0.0.1:8080/jena-fuseki-war-4.7.0/abc/'
 
 # Integrācija ar Jena Fuseki serveri
 def getSPARQLtopics():
-    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    ##url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    url = FUSEKI_URL
     myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
@@ -29,7 +34,8 @@ def getSPARQLtopics():
     return x.text
 
 def getSPARQLProblem(arg):
-    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    url = FUSEKI_URL
     myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
@@ -66,7 +72,8 @@ def getSPARQLProblem(arg):
     return x.text
 
 def getSkillProblemsSPARQL(skillID):
-    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    url = FUSEKI_URL
     myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
@@ -93,7 +100,8 @@ WHERE {
     return x.text
 
 def getAllSkillChildren(skillID):
-    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    url = FUSEKI_URL
     myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
@@ -116,11 +124,12 @@ def getAllSkillChildren(skillID):
     return x.text
 
 def getSPARQLOlympiads():
-    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    url = FUSEKI_URL
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>\n'+
+    'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
     'SELECT DISTINCT ?country ?olympiad WHERE { ?problem eozol:country ?country ; eozol:olympiad ?olympiad . }'
     }
 
@@ -133,7 +142,8 @@ def getSPARQLOlympiads():
     return x.text
 
 def getSPARQLOlympiadYears(country, olympiad):
-    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    url = FUSEKI_URL
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
@@ -152,7 +162,8 @@ def getSPARQLOlympiadYears(country, olympiad):
     return x.text
 
 def getSPARQLOlympiadGrades(year, country, grade, olympiad):
-    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    url = FUSEKI_URL
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
@@ -179,7 +190,8 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad):
     return x.text
 
 def getSPARQLVideoBookmarks(problemid):
-    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    url = FUSEKI_URL
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
@@ -207,7 +219,8 @@ def getSPARQLVideoBookmarks(problemid):
     return x.text
 
 def getAllSPARQLVideos():
-    url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    url = FUSEKI_URL
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
@@ -503,4 +516,11 @@ def create_app(test_config=None):
     
     db.init_app(app)
 
+    app.wsgi_app = DispatcherMiddleware(
+        Response('Not Found', status=404),
+        {'/eliozo': app.wsgi_app}
+    )   
+
     return app
+
+

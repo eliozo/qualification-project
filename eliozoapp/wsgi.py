@@ -1,4 +1,4 @@
-#'''WSGI entry'''
+import requests
 import eliozo
 handler = eliozo.create_app()
 
