@@ -26,3 +26,18 @@ Idejas, kā paplašināt ontoloģiju:
 - Katrai prasmei ir anchor tasks, raksturīgākie uzdevumi prasmēm, centrālais uzdevums, sākot mācīt par kādu no prasmēm
 - Katrai prasmei un tēmai ir zināma klase, no kuras sāk mācit konkrētu tēmu/prasmi eozol:startingGradeLV
 - alg.tra - derētu lasāmāki prasmju nosaukum
+
+
+# Studentu personas datu apstrādei noderīgi standarti
+
+1. **IMS Global Learning Consortium**: This is a non-profit collaborative group that develops and promotes interoperability standards, such as Learning Tools Interoperability (LTI) and Learning Information Services (LIS), to support the integration of diverse learning content, tools, and services.
+
+2. **Open Badges specification**: This is a standard for recognizing and verifying learning based on specific achievements or skills, including through competitions or online academies. It implements privacy-aware features, such as the ability to include detailed data about the achievement while encrypting or anonymizing learner-identifying information.
+
+3. **W3C's Verifiable Claims Working Group**: This group is developing open standards, such as Decentralized Identifiers (DIDs), for expressing and verifying credentials that respect user privacy and control.
+
+4. **GDPR**: The EU General Data Protection Regulation and its privacy principles provide crucial guidance about data protection that all LMS and competition organizers should comply, including data minimization, clear consent requirements, pseudonymization, and access controls.
+
+5. **Student Data Privacy Consortium (SPDC)**: An international community-driven organization that has crafted a suite of tools called the Student Data Privacy Accountability System (SDPAS) to assist in the privacy management and policy compliance process.
+
+6. **Civil Rights, Equity, and Inclusion (CREI) Working Group**: CREI focuses on the development of open standards and best practices to promote civil rights, accessibility, and inclusion in IMS standards and in the wider EdTech community.
