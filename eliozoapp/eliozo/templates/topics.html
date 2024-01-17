@@ -36,7 +36,8 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url_for('main') }}">Sākumlapa</a></li>
                     <li><a href="{{ url_for('getOlympiads') }}">Olimpiāžu arhīvs</a></li>
-                    <li class="active"><a href="{{ url_for('getSkills') }}">Prasmes</a></li>
+                    <li><a href="{{ url_for('getSkills') }}">Prasmes</a></li>
+                    <li class="active"><a href="{{ url_for('getTopics') }}">Prasmes</a></li>
                     <li><a href="{{ url_for('getVideo') }}">Video atrisinājumi</a></li>
                     <li><a href="{{ url_for('getInfo') }}">Bibliogrāfija</a></li>
                 </ul>
@@ -56,18 +57,15 @@
         </colgroup>
         <tbody>
             <tr>
-                <th>Prasmes kods</th>
-                <th>Prasmes numurs</th>
+                <th>Tēmas nosaukums</th>
                 <th>Apraksts</th>
                 <th>Piemēri</th>
             </tr>
-            {% for skill in all_skills %}
+            {% for skill in all_topics %}
             <tr class="{{ loop.cycle('odd', 'even') }}">
-                <td><a href="{{ url_for('getSkill',skillIdentifier=skill) }}">{{ skill }}</a></td>
-                <td>{{ all_skill_info[skill].skillNumber }}</td>
-                <td>{{ all_skill_info[skill].skillDescription |safe }}</td>
-                <td>{% for problem in all_skill_info[skill].problems %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
-                        problem }}</a>, {% endfor %} </td>
+                <td>{{skill}}</a></td>
+                <td>TBD</td>
+                <td>TBD</td>
             </tr>
             {% endfor %}
         </tbody>

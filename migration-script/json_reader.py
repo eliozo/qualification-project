@@ -4,19 +4,19 @@ import re
 import rdflib
 from rdflib.namespace import RDF, FOAF, SKOS, XSD
 
-eozol_ns = "http://www.dudajevagatve.lv/eozol#"
+eliozo_ns = "http://www.dudajevagatve.lv/eliozo#"
 
 def addToRdfGraph(g, title, text, country, olympiad, year, grade, problem_number): # Funkcija, kas pievieno RDF datus grafam
-    global eozol_ns
-    problem_node = rdflib.URIRef(eozol_ns+title)
-    problem_text_property = rdflib.URIRef(eozol_ns+'text')
-    problem_country_property = rdflib.URIRef(eozol_ns+'country')
-    problem_olympiad_property = rdflib.URIRef(eozol_ns+'olympiad')
-    problem_year_property = rdflib.URIRef(eozol_ns+'year')
-    problem_grade_property = rdflib.URIRef(eozol_ns+'grade')
-    problem_number_property = rdflib.URIRef(eozol_ns+'problem_number')
+    global eliozo_ns
+    problem_node = rdflib.URIRef(eliozo_ns+title)
+    problem_text_property = rdflib.URIRef(eliozo_ns+'text')
+    problem_country_property = rdflib.URIRef(eliozo_ns+'country')
+    problem_olympiad_property = rdflib.URIRef(eliozo_ns+'olympiad')
+    problem_year_property = rdflib.URIRef(eliozo_ns+'year')
+    problem_grade_property = rdflib.URIRef(eliozo_ns+'grade')
+    problem_number_property = rdflib.URIRef(eliozo_ns+'problem_number')
     problem_text = rdflib.term.Literal(text, lang=u'lv')
-    problem_id = rdflib.URIRef(eozol_ns+'problemid')
+    problem_id = rdflib.URIRef(eliozo_ns+'problemid')
     g.add((problem_node, problem_text_property, problem_text))
     g.add((problem_node, problem_country_property, rdflib.term.Literal(country)))
     g.add((problem_node, problem_olympiad_property, rdflib.term.Literal(olympiad)))
@@ -28,27 +28,27 @@ def addToRdfGraph(g, title, text, country, olympiad, year, grade, problem_number
 current_problem_id = "NA"
 
 def addSkillToRdfGraph(g, title, skill): # Funkcija, kas pievieno RDF prasmes datus grafam 
-    global eozol_ns
-    problem_node = rdflib.URIRef(eozol_ns+title) # subjekts
-    problem_skill_property = rdflib.URIRef(eozol_ns+'skill') # property vienmēr eozol:skill, predikāts
-    problem_skill_object = rdflib.URIRef(eozol_ns+skill) # konkrētā prasme, īpašība var atkāroties, objekts
+    global eliozo_ns
+    problem_node = rdflib.URIRef(eliozo_ns+title) # subjekts
+    problem_skill_property = rdflib.URIRef(eliozo_ns+'skill') # property vienmēr eliozo:skill, predikāts
+    problem_skill_object = rdflib.URIRef(eliozo_ns+skill) # konkrētā prasme, īpašība var atkāroties, objekts
     g.add((problem_node, problem_skill_property, problem_skill_object))
 
 def addImageToRDFGraph(g, title, image_src): 
-    global eozol_ns
-    problem_node = rdflib.URIRef(eozol_ns+title) # subjekts
-    problem_image_property = rdflib.URIRef(eozol_ns+'image') 
+    global eliozo_ns
+    problem_node = rdflib.URIRef(eliozo_ns+title) # subjekts
+    problem_image_property = rdflib.URIRef(eliozo_ns+'image') 
     problem_image_object = rdflib.term.Literal(image_src) 
     g.add((problem_node, problem_image_property, problem_image_object))
 
 def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
-    EOZOL = rdflib.Namespace("http://www.dudajevagatve.lv/eozol#")
+    ELIOZO = rdflib.Namespace("http://www.dudajevagatve.lv/eliozo#")
 
     g = rdflib.Graph()
 
     g.bind("foaf", FOAF)
     g.bind("skos", SKOS)
-    g.bind("eozol", EOZOL)
+    g.bind("eliozo", ELIOZO)
 
     f = open(in_file) # Atver JSON failu
     

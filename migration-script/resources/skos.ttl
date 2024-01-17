@@ -1,1458 +1,1458 @@
-@prefix eozol: <http://www.dudajevagatve.lv/eozol#> .
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-eozol:alg.equ.guess eozol:skillDescription "Ievietot dažas mainīgo vērtības sakņu uzminēšanai" ;
-    eozol:skillIdentifier "alg.equ.guess" ;
-    eozol:skillNumber "1.3.1.0.0" ;
-    skos:broader eozol:alg.equ ;
+eliozo:alg.equ.guess eliozo:skillDescription "Ievietot dažas mainīgo vērtības sakņu uzminēšanai" ;
+    eliozo:skillIdentifier "alg.equ.guess" ;
+    eliozo:skillNumber "1.3.1.0.0" ;
+    skos:broader eliozo:alg.equ ;
     skos:prefLabel "alg.equ.guess" .
 
-eozol:alg.equ.parametrize eozol:skillDescription "Parametrizēt vairāku mainīgo vienādojumu, pieņemot kādu no mainīgajiem par parametru" ;
-    eozol:skillIdentifier "alg.equ.parametrize" ;
-    eozol:skillNumber "1.3.3.0.0" ;
-    skos:broader eozol:alg.equ ;
+eliozo:alg.equ.parametrize eliozo:skillDescription "Parametrizēt vairāku mainīgo vienādojumu, pieņemot kādu no mainīgajiem par parametru" ;
+    eliozo:skillIdentifier "alg.equ.parametrize" ;
+    eliozo:skillNumber "1.3.3.0.0" ;
+    skos:broader eliozo:alg.equ ;
     skos:prefLabel "alg.equ.parametrize" .
 
-eozol:alg.equ.quadratic.discriminant eozol:skillDescription "Noteikt kvadrātvienādojuma sakņu skaitu pēc diskriminanta" ;
-    eozol:skillIdentifier "alg.equ.quadratic.discriminant" ;
-    eozol:skillNumber "1.3.2.1.0" ;
-    skos:broader eozol:alg.equ.quadratic ;
+eliozo:alg.equ.quadratic.discriminant eliozo:skillDescription "Noteikt kvadrātvienādojuma sakņu skaitu pēc diskriminanta" ;
+    eliozo:skillIdentifier "alg.equ.quadratic.discriminant" ;
+    eliozo:skillNumber "1.3.2.1.0" ;
+    skos:broader eliozo:alg.equ.quadratic ;
     skos:prefLabel "alg.equ.quadratic.discriminant" .
 
-eozol:alg.equ.quadratic.roots eozol:skillDescription "Noteikt kvadrātvienādojuma reālās saknes, ja tās ir" ;
-    eozol:skillIdentifier "alg.equ.quadratic.roots" ;
-    eozol:skillNumber "1.3.2.2.0" ;
-    skos:broader eozol:alg.equ.quadratic ;
+eliozo:alg.equ.quadratic.roots eliozo:skillDescription "Noteikt kvadrātvienādojuma reālās saknes, ja tās ir" ;
+    eliozo:skillIdentifier "alg.equ.quadratic.roots" ;
+    eliozo:skillNumber "1.3.2.2.0" ;
+    skos:broader eliozo:alg.equ.quadratic ;
     skos:prefLabel "alg.equ.quadratic.roots" .
 
-eozol:alg.expr.prop eozol:skillDescription "Izteikt kvalitatīvas skaitļu īpašības (dalāmi ar kko, pēc kārtas sekojoši, nepāru, pilni kvadrāti u.c.) ar mainīgo izteiksmēm" ;
-    eozol:skillIdentifier "alg.expr.prop" ;
-    eozol:skillNumber "1.1.1.0.0" ;
-    skos:broader eozol:alg.expr ;
+eliozo:alg.expr.prop eliozo:skillDescription "Izteikt kvalitatīvas skaitļu īpašības (dalāmi ar kko, pēc kārtas sekojoši, nepāru, pilni kvadrāti u.c.) ar mainīgo izteiksmēm" ;
+    eliozo:skillIdentifier "alg.expr.prop" ;
+    eliozo:skillNumber "1.1.1.0.0" ;
+    skos:broader eliozo:alg.expr ;
     skos:prefLabel "alg.expr.prop" .
 
-eozol:alg.expr.selectvar eozol:skillDescription "Izvēlēties vien nedaudzus nezināmos lielumus, ar ko izteikt citus" ;
-    eozol:skillIdentifier "alg.expr.selectvar" ;
-    eozol:skillNumber "1.1.2.0.0" ;
-    skos:broader eozol:alg.expr ;
+eliozo:alg.expr.selectvar eliozo:skillDescription "Izvēlēties vien nedaudzus nezināmos lielumus, ar ko izteikt citus" ;
+    eliozo:skillIdentifier "alg.expr.selectvar" ;
+    eliozo:skillNumber "1.1.2.0.0" ;
+    skos:broader eliozo:alg.expr ;
     skos:prefLabel "alg.expr.selectvar" .
 
-eozol:alg.ineq.equations eozol:skillDescription "Veselu skaitļu vienādojumos sašaurināt potenciālo atrisinājumu kopu, ja citi neapmierina novērtējumu. " ;
-    eozol:skillIdentifier "alg.ineq.equations" ;
-    eozol:skillNumber "1.5.1.0.0" ;
-    skos:broader eozol:alg.ineq ;
+eliozo:alg.ineq.equations eliozo:skillDescription "Veselu skaitļu vienādojumos sašaurināt potenciālo atrisinājumu kopu, ja citi neapmierina novērtējumu. " ;
+    eliozo:skillIdentifier "alg.ineq.equations" ;
+    eliozo:skillNumber "1.5.1.0.0" ;
+    skos:broader eliozo:alg.ineq ;
     skos:prefLabel "alg.ineq.equations" .
 
-eozol:alg.ineq.monotonicity eozol:skillDescription "Pamatot vienādojuma sakņu neesamību veselos skaitļos, izmantojot monotonitāti" ;
-    eozol:skillIdentifier "alg.ineq.monotonicity" ;
-    eozol:skillNumber "1.5.3.0.0" ;
-    skos:broader eozol:alg.ineq ;
+eliozo:alg.ineq.monotonicity eliozo:skillDescription "Pamatot vienādojuma sakņu neesamību veselos skaitļos, izmantojot monotonitāti" ;
+    eliozo:skillIdentifier "alg.ineq.monotonicity" ;
+    eliozo:skillNumber "1.5.3.0.0" ;
+    skos:broader eliozo:alg.ineq ;
     skos:prefLabel "alg.ineq.monotonicity" .
 
-eozol:alg.ineq.quadratic eozol:skillDescription "Risināt kvadrātnevienādības" ;
-    eozol:skillIdentifier "alg.ineq.quadratic" ;
-    eozol:skillNumber "1.5.5.0.0" ;
-    skos:broader eozol:alg.ineq ;
+eliozo:alg.ineq.quadratic eliozo:skillDescription "Risināt kvadrātnevienādības" ;
+    eliozo:skillIdentifier "alg.ineq.quadratic" ;
+    eliozo:skillNumber "1.5.5.0.0" ;
+    skos:broader eliozo:alg.ineq ;
     skos:prefLabel "alg.ineq.quadratic" .
 
-eozol:alg.ineq.square eozol:skillDescription "Izmantot to, ka kvadrāti ir nenegatīvi" ;
-    eozol:skillIdentifier "alg.ineq.square" ;
-    eozol:skillNumber "1.5.4.0.0" ;
-    skos:broader eozol:alg.ineq ;
+eliozo:alg.ineq.square eliozo:skillDescription "Izmantot to, ka kvadrāti ir nenegatīvi" ;
+    eliozo:skillIdentifier "alg.ineq.square" ;
+    eliozo:skillNumber "1.5.4.0.0" ;
+    skos:broader eliozo:alg.ineq ;
     skos:prefLabel "alg.ineq.square" .
 
-eozol:alg.ineq.transitive eozol:skillDescription "Pamatot nevienādību $a$ &lt; $c$, izmantojot $a$ &lt; $b$ un $b$ &lt; $c$" ;
-    eozol:skillIdentifier "alg.ineq.transitive" ;
-    eozol:skillNumber "1.5.2.0.0" ;
-    skos:broader eozol:alg.ineq ;
+eliozo:alg.ineq.transitive eliozo:skillDescription "Pamatot nevienādību $a$ &lt; $c$, izmantojot $a$ &lt; $b$ un $b$ &lt; $c$" ;
+    eliozo:skillIdentifier "alg.ineq.transitive" ;
+    eliozo:skillNumber "1.5.2.0.0" ;
+    skos:broader eliozo:alg.ineq ;
     skos:prefLabel "alg.ineq.transitive" .
 
-eozol:alg.linear.comb eozol:skillDescription "Veidot citas lineāras kombinācijas" ;
-    eozol:skillIdentifier "alg.linear.comb" ;
-    eozol:skillNumber "1.6.2.0.0" ;
-    skos:broader eozol:alg.linear ;
+eliozo:alg.linear.comb eliozo:skillDescription "Veidot citas lineāras kombinācijas" ;
+    eliozo:skillIdentifier "alg.linear.comb" ;
+    eliozo:skillNumber "1.6.2.0.0" ;
+    skos:broader eliozo:alg.linear ;
     skos:prefLabel "alg.linear.comb" .
 
-eozol:alg.linear.equations eozol:skillDescription "Veikt pārveidojumus ar lineāriem vienādojumiem" ;
-    eozol:skillIdentifier "alg.linear.equations" ;
-    eozol:skillNumber "1.6.1.0.0" ;
-    skos:broader eozol:alg.linear ;
+eliozo:alg.linear.equations eliozo:skillDescription "Veikt pārveidojumus ar lineāriem vienādojumiem" ;
+    eliozo:skillIdentifier "alg.linear.equations" ;
+    eliozo:skillNumber "1.6.1.0.0" ;
+    skos:broader eliozo:alg.linear ;
     skos:prefLabel "alg.linear.equations" .
 
-eozol:alg.poly.division eozol:skillDescription "Dalīt divus viena mainīgā polinomus, iegūstot dalījumu un atlikumu" ;
-    eozol:skillIdentifier "alg.poly.division" ;
-    eozol:skillNumber "1.7.1.0.0" ;
-    skos:broader eozol:alg.poly ;
+eliozo:alg.poly.division eliozo:skillDescription "Dalīt divus viena mainīgā polinomus, iegūstot dalījumu un atlikumu" ;
+    eliozo:skillIdentifier "alg.poly.division" ;
+    eliozo:skillNumber "1.7.1.0.0" ;
+    skos:broader eliozo:alg.poly ;
     skos:prefLabel "alg.poly.division" .
 
-eozol:alg.poly.homo eozol:skillDescription "Izmantot izteiksmju homogenitāti: saglabāt identitāti, to ar kaut ko piereizinot." ;
-    eozol:skillIdentifier "alg.poly.homo" ;
-    eozol:skillNumber "1.7.2.0.0" ;
-    skos:broader eozol:alg.poly ;
+eliozo:alg.poly.homo eliozo:skillDescription "Izmantot izteiksmju homogenitāti: saglabāt identitāti, to ar kaut ko piereizinot." ;
+    eliozo:skillIdentifier "alg.poly.homo" ;
+    eliozo:skillNumber "1.7.2.0.0" ;
+    skos:broader eliozo:alg.poly ;
     skos:prefLabel "alg.poly.homo" .
 
-eozol:alg.poly.prop.valdiff eozol:skillDescription "Secināt, ka veselu skaitļu polinoma vērtību starpība $P(a)-P(b)$ dalās ar $a-b$" ;
-    eozol:skillIdentifier "alg.poly.prop.valdiff" ;
-    eozol:skillNumber "1.7.3.1.0" ;
-    skos:broader eozol:alg.poly.prop ;
+eliozo:alg.poly.prop.valdiff eliozo:skillDescription "Secināt, ka veselu skaitļu polinoma vērtību starpība $P(a)-P(b)$ dalās ar $a-b$" ;
+    eliozo:skillIdentifier "alg.poly.prop.valdiff" ;
+    eliozo:skillNumber "1.7.3.1.0" ;
+    skos:broader eliozo:alg.poly.prop ;
     skos:prefLabel "alg.poly.prop.valdiff" .
 
-eozol:alg.series.mean eozol:skillDescription "Veikt darbības ar aritmētisko vidējo" ;
-    eozol:skillIdentifier "alg.series.mean" ;
-    eozol:skillNumber "1.4.2.0.0" ;
-    skos:broader eozol:alg.series ;
+eliozo:alg.series.mean eliozo:skillDescription "Veikt darbības ar aritmētisko vidējo" ;
+    eliozo:skillIdentifier "alg.series.mean" ;
+    eliozo:skillNumber "1.4.2.0.0" ;
+    skos:broader eliozo:alg.series ;
     skos:prefLabel "alg.series.mean" .
 
-eozol:alg.series.prod eozol:skillDescription "Pārkārtot locekļus reizinājumos (arī ar daudzpunktiem), saīsināt daļu reizinājumus" ;
-    eozol:skillIdentifier "alg.series.prod" ;
-    eozol:skillNumber "1.4.3.0.0" ;
-    skos:broader eozol:alg.series ;
+eliozo:alg.series.prod eliozo:skillDescription "Pārkārtot locekļus reizinājumos (arī ar daudzpunktiem), saīsināt daļu reizinājumus" ;
+    eliozo:skillIdentifier "alg.series.prod" ;
+    eliozo:skillNumber "1.4.3.0.0" ;
+    skos:broader eliozo:alg.series ;
     skos:prefLabel "alg.series.prod" .
 
-eozol:alg.series.sum eozol:skillDescription "Pārkārtot locekļus garās summās (arī ar daudzpunktiem)" ;
-    eozol:skillIdentifier "alg.series.sum" ;
-    eozol:skillNumber "1.4.1.0.0" ;
-    skos:broader eozol:alg.series ;
+eliozo:alg.series.sum eliozo:skillDescription "Pārkārtot locekļus garās summās (arī ar daudzpunktiem)" ;
+    eliozo:skillIdentifier "alg.series.sum" ;
+    eliozo:skillNumber "1.4.1.0.0" ;
+    skos:broader eliozo:alg.series ;
     skos:prefLabel "alg.series.sum" .
 
-eozol:alg.sets.irrat eozol:skillDescription "Secināt par skaitļu racionalitāti vai iracionalitāti" ;
-    eozol:skillIdentifier "alg.sets.irrat" ;
-    eozol:skillNumber "1.8.1.0.0" ;
-    skos:broader eozol:alg.sets ;
+eliozo:alg.sets.irrat eliozo:skillDescription "Secināt par skaitļu racionalitāti vai iracionalitāti" ;
+    eliozo:skillIdentifier "alg.sets.irrat" ;
+    eliozo:skillNumber "1.8.1.0.0" ;
+    skos:broader eliozo:alg.sets ;
     skos:prefLabel "alg.sets.irrat" .
 
-eozol:alg.sets.sqrt.pythagoras eozol:skillDescription "Secināt par Pitagora trijnieku, $a^2+b^2=c^2$, īpašībām" ;
-    eozol:skillIdentifier "alg.sets.sqrt.pythagoras" ;
-    eozol:skillNumber "1.8.2.1.0" ;
-    skos:broader eozol:alg.sets.sqrt ;
+eliozo:alg.sets.sqrt.pythagoras eliozo:skillDescription "Secināt par Pitagora trijnieku, $a^2+b^2=c^2$, īpašībām" ;
+    eliozo:skillIdentifier "alg.sets.sqrt.pythagoras" ;
+    eliozo:skillNumber "1.8.2.1.0" ;
+    skos:broader eliozo:alg.sets.sqrt ;
     skos:prefLabel "alg.sets.sqrt.pythagoras" .
 
-eozol:alg.tra.binom.complsquare eozol:skillDescription "Atdalīt pilnos kvadrātus" ;
-    eozol:skillIdentifier "alg.tra.binom.complsquare" ;
-    eozol:skillNumber "1.2.1.2.0" ;
-    skos:broader eozol:alg.tra.binom ;
+eliozo:alg.tra.binom.complsquare eliozo:skillDescription "Atdalīt pilnos kvadrātus" ;
+    eliozo:skillIdentifier "alg.tra.binom.complsquare" ;
+    eliozo:skillNumber "1.2.1.2.0" ;
+    skos:broader eliozo:alg.tra.binom ;
     skos:prefLabel "alg.tra.binom.complsquare" .
 
-eozol:alg.tra.binom.newton eozol:skillDescription "Atvērt iekavas izteiksmēs $(a+b)^n$ un $(a-b)^n$ (Ņūtona binomi)" ;
-    eozol:skillIdentifier "alg.tra.binom.newton" ;
-    eozol:skillNumber "1.2.1.3.0" ;
-    skos:broader eozol:alg.tra.binom ;
+eliozo:alg.tra.binom.newton eliozo:skillDescription "Atvērt iekavas izteiksmēs $(a+b)^n$ un $(a-b)^n$ (Ņūtona binomi)" ;
+    eliozo:skillIdentifier "alg.tra.binom.newton" ;
+    eliozo:skillNumber "1.2.1.3.0" ;
+    skos:broader eliozo:alg.tra.binom ;
     skos:prefLabel "alg.tra.binom.newton" .
 
-eozol:alg.tra.binom.square eozol:skillDescription "Atvērt iekavas izteiksmēs $(a+b)^2$ un $(a-b)^2$ un dalīt reizinātājos" ;
-    eozol:skillIdentifier "alg.tra.binom.square" ;
-    eozol:skillNumber "1.2.1.1.0" ;
-    skos:broader eozol:alg.tra.binom ;
+eliozo:alg.tra.binom.square eliozo:skillDescription "Atvērt iekavas izteiksmēs $(a+b)^2$ un $(a-b)^2$ un dalīt reizinātājos" ;
+    eliozo:skillIdentifier "alg.tra.binom.square" ;
+    eliozo:skillNumber "1.2.1.1.0" ;
+    skos:broader eliozo:alg.tra.binom ;
     skos:prefLabel "alg.tra.binom.square" .
 
-eozol:alg.tra.factor.powdiff eozol:skillDescription "Dalīt reizinātājos $a^n-b^n$" ;
-    eozol:skillIdentifier "alg.tra.factor.powdiff" ;
-    eozol:skillNumber "1.2.2.2.0" ;
-    skos:broader eozol:alg.tra.factor ;
+eliozo:alg.tra.factor.powdiff eliozo:skillDescription "Dalīt reizinātājos $a^n-b^n$" ;
+    eliozo:skillIdentifier "alg.tra.factor.powdiff" ;
+    eliozo:skillNumber "1.2.2.2.0" ;
+    skos:broader eliozo:alg.tra.factor ;
     skos:prefLabel "alg.tra.factor.powdiff" .
 
-eozol:alg.tra.factor.sqdiff eozol:skillDescription "Dalīt reizinātājos $a^2-b^2$" ;
-    eozol:skillIdentifier "alg.tra.factor.sqdiff" ;
-    eozol:skillNumber "1.2.2.1.0" ;
-    skos:broader eozol:alg.tra.factor ;
+eliozo:alg.tra.factor.sqdiff eliozo:skillDescription "Dalīt reizinātājos $a^2-b^2$" ;
+    eliozo:skillIdentifier "alg.tra.factor.sqdiff" ;
+    eliozo:skillNumber "1.2.2.1.0" ;
+    skos:broader eliozo:alg.tra.factor ;
     skos:prefLabel "alg.tra.factor.sqdiff" .
 
-eozol:alg.tra.frac eozol:skillDescription "Lietot daļu identiskos pārveidojumus" ;
-    eozol:skillIdentifier "alg.tra.frac" ;
-    eozol:skillNumber "1.2.4.0.0" ;
-    skos:broader eozol:alg.tra ;
+eliozo:alg.tra.frac eliozo:skillDescription "Lietot daļu identiskos pārveidojumus" ;
+    eliozo:skillIdentifier "alg.tra.frac" ;
+    eliozo:skillNumber "1.2.4.0.0" ;
+    skos:broader eliozo:alg.tra ;
     skos:prefLabel "alg.tra.frac" .
 
-eozol:alg.tra.pow.nest eozol:skillDescription "Atvērt iekavas izteiksmē $(a^m)^n$" ;
-    eozol:skillIdentifier "alg.tra.pow.nest" ;
-    eozol:skillNumber "1.2.3.1.0" ;
-    skos:broader eozol:alg.tra.pow ;
+eliozo:alg.tra.pow.nest eliozo:skillDescription "Atvērt iekavas izteiksmē $(a^m)^n$" ;
+    eliozo:skillIdentifier "alg.tra.pow.nest" ;
+    eliozo:skillNumber "1.2.3.1.0" ;
+    skos:broader eliozo:alg.tra.pow ;
     skos:prefLabel "alg.tra.pow.nest" .
 
-eozol:alg.tra.pow.prod eozol:skillDescription "Atvērt iekavas izteiksmē $(ab)^n$" ;
-    eozol:skillIdentifier "alg.tra.pow.prod" ;
-    eozol:skillNumber "1.2.3.2.0" ;
-    skos:broader eozol:alg.tra.pow ;
+eliozo:alg.tra.pow.prod eliozo:skillDescription "Atvērt iekavas izteiksmē $(ab)^n$" ;
+    eliozo:skillIdentifier "alg.tra.pow.prod" ;
+    eliozo:skillNumber "1.2.3.2.0" ;
+    skos:broader eliozo:alg.tra.pow ;
     skos:prefLabel "alg.tra.pow.prod" .
 
-eozol:comb.constr.alpha eozol:skillDescription "Konstruēt, aizpildot alfabētiskā secībā" ;
-    eozol:skillIdentifier "comb.constr.alpha" ;
-    eozol:skillNumber "6.4.1.0.0" ;
-    skos:broader eozol:comb.constr ;
+eliozo:comb.constr.alpha eliozo:skillDescription "Konstruēt, aizpildot alfabētiskā secībā" ;
+    eliozo:skillIdentifier "comb.constr.alpha" ;
+    eliozo:skillNumber "6.4.1.0.0" ;
+    skos:broader eliozo:comb.constr ;
     skos:prefLabel "comb.constr.alpha" .
 
-eozol:comb.constr.color eozol:skillDescription "Pielietot tabulai krāsojumu (izvietot skaitļus šaha galdiņa rakstā utml.)" ;
-    eozol:skillIdentifier "comb.constr.color" ;
-    eozol:skillNumber "6.4.3.0.0" ;
-    skos:broader eozol:comb.constr ;
+eliozo:comb.constr.color eliozo:skillDescription "Pielietot tabulai krāsojumu (izvietot skaitļus šaha galdiņa rakstā utml.)" ;
+    eliozo:skillIdentifier "comb.constr.color" ;
+    eliozo:skillNumber "6.4.3.0.0" ;
+    skos:broader eliozo:comb.constr ;
     skos:prefLabel "comb.constr.color" .
 
-eozol:comb.constr.iterative eozol:skillDescription "Konstruēt ar iteratīviem uzlabojumiem" ;
-    eozol:skillIdentifier "comb.constr.iterative" ;
-    eozol:skillNumber "6.4.2.0.0" ;
-    skos:broader eozol:comb.constr ;
+eliozo:comb.constr.iterative eliozo:skillDescription "Konstruēt ar iteratīviem uzlabojumiem" ;
+    eliozo:skillIdentifier "comb.constr.iterative" ;
+    eliozo:skillNumber "6.4.2.0.0" ;
+    skos:broader eliozo:comb.constr ;
     skos:prefLabel "comb.constr.iterative" .
 
-eozol:comb.constr.partition eozol:skillDescription "Pielietot citu dalījumu disjunktās apakškopās" ;
-    eozol:skillIdentifier "comb.constr.partition" ;
-    eozol:skillNumber "6.4.4.0.0" ;
-    skos:broader eozol:comb.constr ;
+eliozo:comb.constr.partition eliozo:skillDescription "Pielietot citu dalījumu disjunktās apakškopās" ;
+    eliozo:skillIdentifier "comb.constr.partition" ;
+    eliozo:skillNumber "6.4.4.0.0" ;
+    skos:broader eliozo:comb.constr ;
     skos:prefLabel "comb.constr.partition" .
 
-eozol:comb.count.complement eozol:skillDescription "Skaitīt elementus interesējošās kopas papildinājumam/starpībai" ;
-    eozol:skillIdentifier "comb.count.complement" ;
-    eozol:skillNumber "6.2.2.0.0" ;
-    skos:broader eozol:comb.count ;
+eliozo:comb.count.complement eliozo:skillDescription "Skaitīt elementus interesējošās kopas papildinājumam/starpībai" ;
+    eliozo:skillIdentifier "comb.count.complement" ;
+    eliozo:skillNumber "6.2.2.0.0" ;
+    skos:broader eliozo:comb.count ;
     skos:prefLabel "comb.count.complement" .
 
-eozol:comb.count.inclexcl eozol:skillDescription "Izmantot \"ieslēgšanas-izslēgšanas\" saskaitīšanu" ;
-    eozol:skillIdentifier "comb.count.inclexcl" ;
-    eozol:skillNumber "6.2.3.0.0" ;
-    skos:broader eozol:comb.count ;
+eliozo:comb.count.inclexcl eliozo:skillDescription "Izmantot \"ieslēgšanas-izslēgšanas\" saskaitīšanu" ;
+    eliozo:skillIdentifier "comb.count.inclexcl" ;
+    eliozo:skillNumber "6.2.3.0.0" ;
+    skos:broader eliozo:comb.count ;
     skos:prefLabel "comb.count.inclexcl" .
 
-eozol:comb.count.mult.norep eozol:skillDescription "Izmantot reizināšanas likumu bez atkārtojumiem" ;
-    eozol:skillIdentifier "comb.count.mult.norep" ;
-    eozol:skillNumber "6.2.1.2.0" ;
-    skos:broader eozol:comb.count.mult ;
+eliozo:comb.count.mult.norep eliozo:skillDescription "Izmantot reizināšanas likumu bez atkārtojumiem" ;
+    eliozo:skillIdentifier "comb.count.mult.norep" ;
+    eliozo:skillNumber "6.2.1.2.0" ;
+    skos:broader eliozo:comb.count.mult ;
     skos:prefLabel "comb.count.mult.norep" .
 
-eozol:comb.count.mult.rep eozol:skillDescription "Izmantot reizināšanas likumu,  ja iespējami atkārtojumi" ;
-    eozol:skillIdentifier "comb.count.mult.rep" ;
-    eozol:skillNumber "6.2.1.1.0" ;
-    skos:broader eozol:comb.count.mult ;
+eliozo:comb.count.mult.rep eliozo:skillDescription "Izmantot reizināšanas likumu,  ja iespējami atkārtojumi" ;
+    eliozo:skillIdentifier "comb.count.mult.rep" ;
+    eliozo:skillNumber "6.2.1.1.0" ;
+    skos:broader eliozo:comb.count.mult ;
     skos:prefLabel "comb.count.mult.rep" .
 
-eozol:comb.full.backtrack eozol:skillDescription "Meklēt ar apakšgadījumu koka apstaigāšanu" ;
-    eozol:skillIdentifier "comb.full.backtrack" ;
-    eozol:skillNumber "6.1.1.0.0" ;
-    skos:broader eozol:comb.full ;
+eliozo:comb.full.backtrack eliozo:skillDescription "Meklēt ar apakšgadījumu koka apstaigāšanu" ;
+    eliozo:skillIdentifier "comb.full.backtrack" ;
+    eliozo:skillNumber "6.1.1.0.0" ;
+    skos:broader eliozo:comb.full ;
     skos:prefLabel "comb.full.backtrack" .
 
-eozol:comb.full.syntax eozol:skillDescription "Sistemātiski pārbaudīt visus sintakses kokus (piemēram, aritmētisku izteiksmju rēbusos)" ;
-    eozol:skillIdentifier "comb.full.syntax" ;
-    eozol:skillNumber "6.1.2.0.0" ;
-    skos:broader eozol:comb.full ;
+eliozo:comb.full.syntax eliozo:skillDescription "Sistemātiski pārbaudīt visus sintakses kokus (piemēram, aritmētisku izteiksmju rēbusos)" ;
+    eliozo:skillIdentifier "comb.full.syntax" ;
+    eliozo:skillNumber "6.1.2.0.0" ;
+    skos:broader eliozo:comb.full ;
     skos:prefLabel "comb.full.syntax" .
 
-eozol:comb.graph.bfs eozol:skillDescription "Lietot \"breadth first search\" algoritmu kokveida grafa apstaigāšanai" ;
-    eozol:skillIdentifier "comb.graph.bfs" ;
-    eozol:skillNumber "6.3.2.0.0" ;
-    skos:broader eozol:comb.graph ;
+eliozo:comb.graph.bfs eliozo:skillDescription "Lietot \"breadth first search\" algoritmu kokveida grafa apstaigāšanai" ;
+    eliozo:skillIdentifier "comb.graph.bfs" ;
+    eliozo:skillNumber "6.3.2.0.0" ;
+    skos:broader eliozo:comb.graph ;
     skos:prefLabel "comb.graph.bfs" .
 
-eozol:comb.graph.bipartite eozol:skillDescription "Izmantot apgalvojumus par divdaļīgiem grafiem" ;
-    eozol:skillIdentifier "comb.graph.bipartite" ;
-    eozol:skillNumber "6.3.1.0.0" ;
-    skos:broader eozol:comb.graph ;
+eliozo:comb.graph.bipartite eliozo:skillDescription "Izmantot apgalvojumus par divdaļīgiem grafiem" ;
+    eliozo:skillIdentifier "comb.graph.bipartite" ;
+    eliozo:skillNumber "6.3.1.0.0" ;
+    skos:broader eliozo:comb.graph ;
     skos:prefLabel "comb.graph.bipartite" .
 
-eozol:comb.graph.cycle eozol:skillDescription "Atrast orientētā/neorientētā grafā ciklu ar īpašību (Eilera, Hamiltona, visgarāko, utml.)" ;
-    eozol:skillIdentifier "comb.graph.cycle" ;
-    eozol:skillNumber "6.3.3.0.0" ;
-    skos:broader eozol:comb.graph ;
+eliozo:comb.graph.cycle eliozo:skillDescription "Atrast orientētā/neorientētā grafā ciklu ar īpašību (Eilera, Hamiltona, visgarāko, utml.)" ;
+    eliozo:skillIdentifier "comb.graph.cycle" ;
+    eliozo:skillNumber "6.3.3.0.0" ;
+    skos:broader eliozo:comb.graph ;
     skos:prefLabel "comb.graph.cycle" .
 
-eozol:comb.grid.shapes.cutting eozol:skillDescription "Risināt rūtiņu laukumu sagriešanas uzdevumus" ;
-    eozol:skillIdentifier "comb.grid.shapes.cutting" ;
-    eozol:skillNumber "6.5.1.1.0" ;
-    skos:broader eozol:comb.grid.shapes ;
+eliozo:comb.grid.shapes.cutting eliozo:skillDescription "Risināt rūtiņu laukumu sagriešanas uzdevumus" ;
+    eliozo:skillIdentifier "comb.grid.shapes.cutting" ;
+    eliozo:skillNumber "6.5.1.1.0" ;
+    skos:broader eliozo:comb.grid.shapes ;
     skos:prefLabel "comb.grid.shapes.cutting" .
 
-eozol:div.common.gcd.bezout eozol:skillDescription "Izmantot Bezū identitāti" ;
-    eozol:skillIdentifier "div.common.gcd.bezout" ;
-    eozol:skillNumber "2.3.2.3.0" ;
-    skos:broader eozol:div.common.gcd ;
+eliozo:div.common.gcd.bezout eliozo:skillDescription "Izmantot Bezū identitāti" ;
+    eliozo:skillIdentifier "div.common.gcd.bezout" ;
+    eliozo:skillNumber "2.3.2.3.0" ;
+    skos:broader eliozo:div.common.gcd ;
     skos:prefLabel "div.common.gcd.bezout" .
 
-eozol:div.common.gcd.euclid eozol:skillDescription "Izmantot Eiklīda algoritmu" ;
-    eozol:skillIdentifier "div.common.gcd.euclid" ;
-    eozol:skillNumber "2.3.2.1.0" ;
-    skos:broader eozol:div.common.gcd ;
+eliozo:div.common.gcd.euclid eliozo:skillDescription "Izmantot Eiklīda algoritmu" ;
+    eliozo:skillIdentifier "div.common.gcd.euclid" ;
+    eliozo:skillNumber "2.3.2.1.0" ;
+    skos:broader eliozo:div.common.gcd ;
     skos:prefLabel "div.common.gcd.euclid" .
 
-eozol:div.common.gcd.subsequent eozol:skillDescription "Izmantot, ka $\\mbox{LKD}(n,n+1)=1$" ;
-    eozol:skillIdentifier "div.common.gcd.subsequent" ;
-    eozol:skillNumber "2.3.2.2.0" ;
-    skos:broader eozol:div.common.gcd ;
+eliozo:div.common.gcd.subsequent eliozo:skillDescription "Izmantot, ka $\\mbox{LKD}(n,n+1)=1$" ;
+    eliozo:skillIdentifier "div.common.gcd.subsequent" ;
+    eliozo:skillNumber "2.3.2.2.0" ;
+    skos:broader eliozo:div.common.gcd ;
     skos:prefLabel "div.common.gcd.subsequent" .
 
-eozol:div.common.lcm.frac eozol:skillDescription "Izmantot MKD racionālu daļu saskaitīšanā" ;
-    eozol:skillIdentifier "div.common.lcm.frac" ;
-    eozol:skillNumber "2.3.1.3.0" ;
-    skos:broader eozol:div.common.lcm ;
+eliozo:div.common.lcm.frac eliozo:skillDescription "Izmantot MKD racionālu daļu saskaitīšanā" ;
+    eliozo:skillIdentifier "div.common.lcm.frac" ;
+    eliozo:skillNumber "2.3.1.3.0" ;
+    skos:broader eliozo:div.common.lcm ;
     skos:prefLabel "div.common.lcm.frac" .
 
-eozol:div.common.lcm.maxexp eozol:skillDescription "Iegūt LKD vai MKD no skaitļu sadalījumiem pirmreizinātājos (attiecīgi minimums vai maksimums no pirmskaitļu pakāpēm)" ;
-    eozol:skillIdentifier "div.common.lcm.maxexp" ;
-    eozol:skillNumber "2.3.1.1.0" ;
-    skos:broader eozol:div.common.lcm ;
+eliozo:div.common.lcm.maxexp eliozo:skillDescription "Iegūt LKD vai MKD no skaitļu sadalījumiem pirmreizinātājos (attiecīgi minimums vai maksimums no pirmskaitļu pakāpēm)" ;
+    eliozo:skillIdentifier "div.common.lcm.maxexp" ;
+    eliozo:skillNumber "2.3.1.1.0" ;
+    skos:broader eliozo:div.common.lcm ;
     skos:prefLabel "div.common.lcm.maxexp" .
 
-eozol:div.common.lcm.mult eozol:skillDescription "Atrast visus divu skaitļu kopīgos dalāmos formā $\\mbox{MKD}(a,b) \\cdot k$" ;
-    eozol:skillIdentifier "div.common.lcm.mult" ;
-    eozol:skillNumber "2.3.1.2.0" ;
-    skos:broader eozol:div.common.lcm ;
+eliozo:div.common.lcm.mult eliozo:skillDescription "Atrast visus divu skaitļu kopīgos dalāmos formā $\\mbox{MKD}(a,b) \\cdot k$" ;
+    eliozo:skillIdentifier "div.common.lcm.mult" ;
+    eliozo:skillNumber "2.3.1.2.0" ;
+    skos:broader eliozo:div.common.lcm ;
     skos:prefLabel "div.common.lcm.mult" .
 
-eozol:div.fta.divisors.frac eozol:skillDescription "Pāriet no skaitļa dalītāju aplūkošanas uz daļskaitļu aplūkošanu" ;
-    eozol:skillIdentifier "div.fta.divisors.frac" ;
-    eozol:skillNumber "2.2.2.2.0" ;
-    skos:broader eozol:div.fta.divisors ;
+eliozo:div.fta.divisors.frac eliozo:skillDescription "Pāriet no skaitļa dalītāju aplūkošanas uz daļskaitļu aplūkošanu" ;
+    eliozo:skillIdentifier "div.fta.divisors.frac" ;
+    eliozo:skillNumber "2.2.2.2.0" ;
+    skos:broader eliozo:div.fta.divisors ;
     skos:prefLabel "div.fta.divisors.frac" .
 
-eozol:div.fta.divisors.num eozol:skillDescription "Atrast skaitļa dalītāju skaitu un visus dalītājus pēc tā sadalījuma pirmreizinātājos" ;
-    eozol:skillIdentifier "div.fta.divisors.num" ;
-    eozol:skillNumber "2.2.2.3.0" ;
-    skos:broader eozol:div.fta.divisors ;
+eliozo:div.fta.divisors.num eliozo:skillDescription "Atrast skaitļa dalītāju skaitu un visus dalītājus pēc tā sadalījuma pirmreizinātājos" ;
+    eliozo:skillIdentifier "div.fta.divisors.num" ;
+    eliozo:skillNumber "2.2.2.3.0" ;
+    skos:broader eliozo:div.fta.divisors ;
     skos:prefLabel "div.fta.divisors.num" .
 
-eozol:div.fta.divisors.pair eozol:skillDescription "Izmantot skaitļa pozitīvo dalītāju sadalāmību pāros" ;
-    eozol:skillIdentifier "div.fta.divisors.pair" ;
-    eozol:skillNumber "2.2.2.1.0" ;
-    skos:broader eozol:div.fta.divisors ;
+eliozo:div.fta.divisors.pair eliozo:skillDescription "Izmantot skaitļa pozitīvo dalītāju sadalāmību pāros" ;
+    eliozo:skillIdentifier "div.fta.divisors.pair" ;
+    eliozo:skillNumber "2.2.2.1.0" ;
+    skos:broader eliozo:div.fta.divisors ;
     skos:prefLabel "div.fta.divisors.pair" .
 
-eozol:div.fta.divisors.struct eozol:skillDescription "Izkārtot skaitļa visus pozitīvos dalītājus \"taisnstūrainā\" struktūrā, sadalot pa pāriem, u.c." ;
-    eozol:skillIdentifier "div.fta.divisors.struct" ;
-    eozol:skillNumber "2.2.2.5.0" ;
-    skos:broader eozol:div.fta.divisors ;
+eliozo:div.fta.divisors.struct eliozo:skillDescription "Izkārtot skaitļa visus pozitīvos dalītājus \"taisnstūrainā\" struktūrā, sadalot pa pāriem, u.c." ;
+    eliozo:skillIdentifier "div.fta.divisors.struct" ;
+    eliozo:skillNumber "2.2.2.5.0" ;
+    skos:broader eliozo:div.fta.divisors ;
     skos:prefLabel "div.fta.divisors.struct" .
 
-eozol:div.fta.divisors.test eozol:skillDescription "Pamatot dalāmību ar saliktu skaitli d, pārbaudot d pirmreizinātāju augstākās pakāpes" ;
-    eozol:skillIdentifier "div.fta.divisors.test" ;
-    eozol:skillNumber "2.2.2.4.0" ;
-    skos:broader eozol:div.fta.divisors ;
+eliozo:div.fta.divisors.test eliozo:skillDescription "Pamatot dalāmību ar saliktu skaitli d, pārbaudot d pirmreizinātāju augstākās pakāpes" ;
+    eliozo:skillIdentifier "div.fta.divisors.test" ;
+    eliozo:skillNumber "2.2.2.4.0" ;
+    skos:broader eliozo:div.fta.divisors ;
     skos:prefLabel "div.fta.divisors.test" .
 
-eozol:div.fta.factorial eozol:skillDescription "Izmantot faktoriāla dalījumu pirmreizinātājos" ;
-    eozol:skillIdentifier "div.fta.factorial" ;
-    eozol:skillNumber "2.2.5.0.0" ;
-    skos:broader eozol:div.fta ;
+eliozo:div.fta.factorial eliozo:skillDescription "Izmantot faktoriāla dalījumu pirmreizinātājos" ;
+    eliozo:skillIdentifier "div.fta.factorial" ;
+    eliozo:skillNumber "2.2.5.0.0" ;
+    skos:broader eliozo:div.fta ;
     skos:prefLabel "div.fta.factorial" .
 
-eozol:div.fta.pow.expsystem eozol:skillDescription "Pārveidot veselu skaitļu vienādojumu par sistēmu, pielīdzinot pirmskaitļu kāpinātājus." ;
-    eozol:skillIdentifier "div.fta.pow.expsystem" ;
-    eozol:skillNumber "2.2.4.0.0" ;
-    skos:broader eozol:div.fta.pow ;
+eliozo:div.fta.pow.expsystem eliozo:skillDescription "Pārveidot veselu skaitļu vienādojumu par sistēmu, pielīdzinot pirmskaitļu kāpinātājus." ;
+    eliozo:skillIdentifier "div.fta.pow.expsystem" ;
+    eliozo:skillNumber "2.2.4.0.0" ;
+    skos:broader eliozo:div.fta.pow ;
     skos:prefLabel "div.fta.pow.expsystem" .
 
-eozol:div.fta.pow.other eozol:skillDescription "Noteikt citas pilnas pakāpes pēc tā, ka pirmreizinātāju kāpinātāji dalās ar lielākiem skaitļiem" ;
-    eozol:skillIdentifier "div.fta.pow.other" ;
-    eozol:skillNumber "2.2.3.2.0" ;
-    skos:broader eozol:div.fta.pow ;
+eliozo:div.fta.pow.other eliozo:skillDescription "Noteikt citas pilnas pakāpes pēc tā, ka pirmreizinātāju kāpinātāji dalās ar lielākiem skaitļiem" ;
+    eliozo:skillIdentifier "div.fta.pow.other" ;
+    eliozo:skillNumber "2.2.3.2.0" ;
+    skos:broader eliozo:div.fta.pow ;
     skos:prefLabel "div.fta.pow.other" .
 
-eozol:div.fta.pow.square eozol:skillDescription "Noteikt pilnu kvadrātu pēc tā, ka pirmreizinātāju kāpinātāji ir pāru skaitļi" ;
-    eozol:skillIdentifier "div.fta.pow.square" ;
-    eozol:skillNumber "2.2.3.1.0" ;
-    skos:broader eozol:div.fta.pow ;
+eliozo:div.fta.pow.square eliozo:skillDescription "Noteikt pilnu kvadrātu pēc tā, ka pirmreizinātāju kāpinātāji ir pāru skaitļi" ;
+    eliozo:skillIdentifier "div.fta.pow.square" ;
+    eliozo:skillNumber "2.2.3.1.0" ;
+    skos:broader eliozo:div.fta.pow ;
     skos:prefLabel "div.fta.pow.square" .
 
-eozol:div.fta.proc eozol:skillDescription "Sadalīt skaitli ($<10000$) pirmreizinātājos, pārbaudot dalāmību līdz kvadrātsaknei." ;
-    eozol:skillIdentifier "div.fta.proc" ;
-    eozol:skillNumber "2.2.1.0.0" ;
-    skos:broader eozol:div.fta ;
+eliozo:div.fta.proc eliozo:skillDescription "Sadalīt skaitli ($<10000$) pirmreizinātājos, pārbaudot dalāmību līdz kvadrātsaknei." ;
+    eliozo:skillIdentifier "div.fta.proc" ;
+    eliozo:skillNumber "2.2.1.0.0" ;
+    skos:broader eliozo:div.fta ;
     skos:prefLabel "div.fta.proc" .
 
-eozol:div.prop.add eozol:skillDescription "Secināt, ka $d$ dala $a+b$ un $a-b$, ja $d \\mid a$ and $d \\mid b$" ;
-    eozol:skillIdentifier "div.prop.add" ;
-    eozol:skillNumber "2.1.1.0.0" ;
-    skos:broader eozol:div.prop ;
+eliozo:div.prop.add eliozo:skillDescription "Secināt, ka $d$ dala $a+b$ un $a-b$, ja $d \\mid a$ and $d \\mid b$" ;
+    eliozo:skillIdentifier "div.prop.add" ;
+    eliozo:skillNumber "2.1.1.0.0" ;
+    skos:broader eliozo:div.prop ;
     skos:prefLabel "div.prop.add" .
 
-eozol:div.prop.composite eozol:skillDescription "Pazīt saliktus skaitļus, pārbaudīt dalāmību līdz kvadrātsaknei" ;
-    eozol:skillIdentifier "div.prop.composite" ;
-    eozol:skillNumber "2.1.4.0.0" ;
-    skos:broader eozol:div.prop ;
+eliozo:div.prop.composite eliozo:skillDescription "Pazīt saliktus skaitļus, pārbaudīt dalāmību līdz kvadrātsaknei" ;
+    eliozo:skillIdentifier "div.prop.composite" ;
+    eliozo:skillNumber "2.1.4.0.0" ;
+    skos:broader eliozo:div.prop ;
     skos:prefLabel "div.prop.composite" .
 
-eozol:div.prop.euclidlemma eozol:skillDescription "Lietot Eiklīda lemmu (ja p dala ab, tad a vai b dalās ar p)" ;
-    eozol:skillIdentifier "div.prop.euclidlemma" ;
-    eozol:skillNumber "2.1.5.0.0" ;
-    skos:broader eozol:div.prop ;
+eliozo:div.prop.euclidlemma eliozo:skillDescription "Lietot Eiklīda lemmu (ja p dala ab, tad a vai b dalās ar p)" ;
+    eliozo:skillIdentifier "div.prop.euclidlemma" ;
+    eliozo:skillNumber "2.1.5.0.0" ;
+    skos:broader eliozo:div.prop ;
     skos:prefLabel "div.prop.euclidlemma" .
 
-eozol:div.prop.primes.inf eozol:skillDescription "Izmantot faktu, ka pirmskaitļu ir bezgalīgi daudz" ;
-    eozol:skillIdentifier "div.prop.primes.inf" ;
-    eozol:skillNumber "2.1.3.2.0" ;
-    skos:broader eozol:div.prop.primes ;
+eliozo:div.prop.primes.inf eliozo:skillDescription "Izmantot faktu, ka pirmskaitļu ir bezgalīgi daudz" ;
+    eliozo:skillIdentifier "div.prop.primes.inf" ;
+    eliozo:skillNumber "2.1.3.2.0" ;
+    skos:broader eliozo:div.prop.primes ;
     skos:prefLabel "div.prop.primes.inf" .
 
-eozol:div.prop.primes.small eozol:skillDescription "Pazīt pirmskaitļus un saliktus skaitļus intervālā $[1;100]$" ;
-    eozol:skillIdentifier "div.prop.primes.small" ;
-    eozol:skillNumber "2.1.3.1.0" ;
-    skos:broader eozol:div.prop.primes ;
+eliozo:div.prop.primes.small eliozo:skillDescription "Pazīt pirmskaitļus un saliktus skaitļus intervālā $[1;100]$" ;
+    eliozo:skillIdentifier "div.prop.primes.small" ;
+    eliozo:skillNumber "2.1.3.1.0" ;
+    skos:broader eliozo:div.prop.primes ;
     skos:prefLabel "div.prop.primes.small" .
 
-eozol:div.prop.prod eozol:skillDescription "Secināt, ka $xy$ dala $ab$, ja $x \\mid a$ and $y \\mid b$" ;
-    eozol:skillIdentifier "div.prop.prod" ;
-    eozol:skillNumber "2.1.2.0.0" ;
-    skos:broader eozol:div.prop ;
+eliozo:div.prop.prod eliozo:skillDescription "Secināt, ka $xy$ dala $ab$, ja $x \\mid a$ and $y \\mid b$" ;
+    eliozo:skillIdentifier "div.prop.prod" ;
+    eliozo:skillNumber "2.1.2.0.0" ;
+    skos:broader eliozo:div.prop ;
     skos:prefLabel "div.prop.prod" .
 
-eozol:div.valu.change eozol:skillDescription "Izmantot p-valuācijas funkcijas vērtību izmaiņas" ;
-    eozol:skillIdentifier "div.valu.change" ;
-    eozol:skillNumber "2.5.2.0.0" ;
-    skos:broader eozol:div.valu ;
+eliozo:div.valu.change eliozo:skillDescription "Izmantot p-valuācijas funkcijas vērtību izmaiņas" ;
+    eliozo:skillIdentifier "div.valu.change" ;
+    eliozo:skillNumber "2.5.2.0.0" ;
+    skos:broader eliozo:div.valu ;
     skos:prefLabel "div.valu.change" .
 
-eozol:div.valu.prop.legendre eozol:skillDescription "Lietot Ležandra formulu $v_p(n!)=[n/p]+[n/p^2]+\\ldots$" ;
-    eozol:skillIdentifier "div.valu.prop.legendre" ;
-    eozol:skillNumber "2.5.1.1.1" ;
-    skos:broader eozol:div.valu.prop ;
+eliozo:div.valu.prop.legendre eliozo:skillDescription "Lietot Ležandra formulu $v_p(n!)=[n/p]+[n/p^2]+\\ldots$" ;
+    eliozo:skillIdentifier "div.valu.prop.legendre" ;
+    eliozo:skillNumber "2.5.1.1.1" ;
+    skos:broader eliozo:div.valu.prop ;
     skos:prefLabel "div.valu.prop.legendre" .
 
-eozol:div.valu.prop.min eozol:skillDescription "Izmantot faktu: skaitļu summas valuācija ir saskaitāmo valuāciju minimums, ja tās atšķiras" ;
-    eozol:skillIdentifier "div.valu.prop.min" ;
-    eozol:skillNumber "2.5.1.3.0" ;
-    skos:broader eozol:div.valu.prop ;
+eliozo:div.valu.prop.min eliozo:skillDescription "Izmantot faktu: skaitļu summas valuācija ir saskaitāmo valuāciju minimums, ja tās atšķiras" ;
+    eliozo:skillIdentifier "div.valu.prop.min" ;
+    eliozo:skillNumber "2.5.1.3.0" ;
+    skos:broader eliozo:div.valu.prop ;
     skos:prefLabel "div.valu.prop.min" .
 
-eozol:div.valu.prop.other eozol:skillDescription "Izmantot valuāciju saskaitīšanu citiem gariem reizinājumiem" ;
-    eozol:skillIdentifier "div.valu.prop.other" ;
-    eozol:skillNumber "2.5.1.1.2" ;
-    skos:broader eozol:div.valu.prop ;
+eliozo:div.valu.prop.other eliozo:skillDescription "Izmantot valuāciju saskaitīšanu citiem gariem reizinājumiem" ;
+    eliozo:skillIdentifier "div.valu.prop.other" ;
+    eliozo:skillNumber "2.5.1.1.2" ;
+    skos:broader eliozo:div.valu.prop ;
     skos:prefLabel "div.valu.prop.other" .
 
-eozol:div.valu.prop.prod eozol:skillDescription "Izmantot faktu: skaitļu reizinājuma valuācija ir reizinātāju valuāciju summa" ;
-    eozol:skillIdentifier "div.valu.prop.prod" ;
-    eozol:skillNumber "2.5.1.1.0" ;
-    skos:broader eozol:div.valu.prop ;
+eliozo:div.valu.prop.prod eliozo:skillDescription "Izmantot faktu: skaitļu reizinājuma valuācija ir reizinātāju valuāciju summa" ;
+    eliozo:skillIdentifier "div.valu.prop.prod" ;
+    eliozo:skillNumber "2.5.1.1.0" ;
+    skos:broader eliozo:div.valu.prop ;
     skos:prefLabel "div.valu.prop.prod" .
 
-eozol:div.valu.prop.sum eozol:skillDescription "Izmantot faktu: skaitļu summas valuācija ir vismaz saskaitāmo valuāciju minimums" ;
-    eozol:skillIdentifier "div.valu.prop.sum" ;
-    eozol:skillNumber "2.5.1.2.0" ;
-    skos:broader eozol:div.valu.prop ;
+eliozo:div.valu.prop.sum eliozo:skillDescription "Izmantot faktu: skaitļu summas valuācija ir vismaz saskaitāmo valuāciju minimums" ;
+    eliozo:skillIdentifier "div.valu.prop.sum" ;
+    eliozo:skillNumber "2.5.1.2.0" ;
+    skos:broader eliozo:div.valu.prop ;
     skos:prefLabel "div.valu.prop.sum" .
 
-eozol:geom.circle.inscribed eozol:skillDescription "Izmantot riņķī ievilkta leņķa īpašības" ;
-    eozol:skillIdentifier "geom.circle.inscribed" ;
-    eozol:skillNumber "8.2.1.0.0" ;
-    skos:broader eozol:geom.circle ;
+eliozo:geom.circle.inscribed eliozo:skillDescription "Izmantot riņķī ievilkta leņķa īpašības" ;
+    eliozo:skillIdentifier "geom.circle.inscribed" ;
+    eliozo:skillNumber "8.2.1.0.0" ;
+    skos:broader eliozo:geom.circle ;
     skos:prefLabel "geom.circle.inscribed" .
 
-eozol:geom.constr.small eozol:skillDescription "Izdarīt spriedumus, kuros ir \"ļoti mazi\" ģeometriski pārvietojumi" ;
-    eozol:skillIdentifier "geom.constr.small" ;
-    eozol:skillNumber "8.1.2.0.0" ;
-    skos:broader eozol:geom.constr ;
+eliozo:geom.constr.small eliozo:skillDescription "Izdarīt spriedumus, kuros ir \"ļoti mazi\" ģeometriski pārvietojumi" ;
+    eliozo:skillIdentifier "geom.constr.small" ;
+    eliozo:skillNumber "8.1.2.0.0" ;
+    skos:broader eliozo:geom.constr ;
     skos:prefLabel "geom.constr.small" .
 
-eozol:geom.constr.triangulate eozol:skillDescription "Veikt daudzstūru triangulāciju" ;
-    eozol:skillIdentifier "geom.constr.triangulate" ;
-    eozol:skillNumber "8.1.1.0.0" ;
-    skos:broader eozol:geom.constr ;
+eliozo:geom.constr.triangulate eliozo:skillDescription "Veikt daudzstūru triangulāciju" ;
+    eliozo:skillIdentifier "geom.constr.triangulate" ;
+    eliozo:skillNumber "8.1.1.0.0" ;
+    skos:broader eliozo:geom.constr ;
     skos:prefLabel "geom.constr.triangulate" .
 
-eozol:geom.quadrangle.para eozol:skillDescription "Izmantot rombu un paralelogramu ģeometriskās īpašības" ;
-    eozol:skillIdentifier "geom.quadrangle.para" ;
-    eozol:skillNumber "8.4.2.0.0" ;
-    skos:broader eozol:geom.quadrangle ;
+eliozo:geom.quadrangle.para eliozo:skillDescription "Izmantot rombu un paralelogramu ģeometriskās īpašības" ;
+    eliozo:skillIdentifier "geom.quadrangle.para" ;
+    eliozo:skillNumber "8.4.2.0.0" ;
+    skos:broader eliozo:geom.quadrangle ;
     skos:prefLabel "geom.quadrangle.para" .
 
-eozol:geom.quadrangle.rect eozol:skillDescription "Izmantot kvadrātu un taisnstūru ģeometriskās īpašības" ;
-    eozol:skillIdentifier "geom.quadrangle.rect" ;
-    eozol:skillNumber "8.4.1.0.0" ;
-    skos:broader eozol:geom.quadrangle ;
+eliozo:geom.quadrangle.rect eliozo:skillDescription "Izmantot kvadrātu un taisnstūru ģeometriskās īpašības" ;
+    eliozo:skillIdentifier "geom.quadrangle.rect" ;
+    eliozo:skillNumber "8.4.1.0.0" ;
+    skos:broader eliozo:geom.quadrangle ;
     skos:prefLabel "geom.quadrangle.rect" .
 
-eozol:geom.quadrangle.trapezoid.area eozol:skillDescription "Izmantot trapeču laukuma formulas" ;
-    eozol:skillIdentifier "geom.quadrangle.trapezoid.area" ;
-    eozol:skillNumber "8.4.3.1.0" ;
-    skos:broader eozol:geom.quadrangle.trapezoid ;
+eliozo:geom.quadrangle.trapezoid.area eliozo:skillDescription "Izmantot trapeču laukuma formulas" ;
+    eliozo:skillIdentifier "geom.quadrangle.trapezoid.area" ;
+    eliozo:skillNumber "8.4.3.1.0" ;
+    skos:broader eliozo:geom.quadrangle.trapezoid ;
     skos:prefLabel "geom.quadrangle.trapezoid.area" .
 
-eozol:geom.quandrangle eozol:skillDescription "Izmantot četrstūru ģeometriskās īpašības" ;
-    eozol:skillIdentifier "geom.quandrangle" ;
-    eozol:skillNumber "8.4.0.0.0" ;
-    skos:broader eozol:geom ;
+eliozo:geom.quandrangle eliozo:skillDescription "Izmantot četrstūru ģeometriskās īpašības" ;
+    eliozo:skillIdentifier "geom.quandrangle" ;
+    eliozo:skillNumber "8.4.0.0.0" ;
+    skos:broader eliozo:geom ;
     skos:prefLabel "geom.quandrangle" .
 
-eozol:geom.triangle.area.ah2 eozol:skillDescription "Izmantot formulu $ah/2$" ;
-    eozol:skillIdentifier "geom.triangle.area.ah2" ;
-    eozol:skillNumber "8.3.1.1.0" ;
-    skos:broader eozol:geom.triangle.area ;
+eliozo:geom.triangle.area.ah2 eliozo:skillDescription "Izmantot formulu $ah/2$" ;
+    eliozo:skillIdentifier "geom.triangle.area.ah2" ;
+    eliozo:skillNumber "8.3.1.1.0" ;
+    skos:broader eliozo:geom.triangle.area ;
     skos:prefLabel "geom.triangle.area.ah2" .
 
-eozol:geom.triangle.congruence eozol:skillDescription "Izmantot trijstūru vienādības pazīmes" ;
-    eozol:skillIdentifier "geom.triangle.congruence" ;
-    eozol:skillNumber "8.3.2.0.0" ;
-    skos:broader eozol:geom.triangle ;
+eliozo:geom.triangle.congruence eliozo:skillDescription "Izmantot trijstūru vienādības pazīmes" ;
+    eliozo:skillIdentifier "geom.triangle.congruence" ;
+    eliozo:skillNumber "8.3.2.0.0" ;
+    skos:broader eliozo:geom.triangle ;
     skos:prefLabel "geom.triangle.congruence" .
 
-eozol:misc.extr.param eozol:skillDescription "Sākt risināt vienādojumu, ievietojot ekstrēmu parametra vai potenciālās saknes vērtību" ;
-    eozol:skillIdentifier "misc.extr.param" ;
-    eozol:skillNumber "7.2.2.0.0" ;
-    skos:broader eozol:misc.extr ;
+eliozo:misc.extr.param eliozo:skillDescription "Sākt risināt vienādojumu, ievietojot ekstrēmu parametra vai potenciālās saknes vērtību" ;
+    eliozo:skillIdentifier "misc.extr.param" ;
+    eliozo:skillNumber "7.2.2.0.0" ;
+    skos:broader eliozo:misc.extr ;
     skos:prefLabel "misc.extr.param" .
 
-eozol:misc.extr.pigeon.collection eozol:skillDescription "Izmantot Dirihlē principa vispārinājumu skaitļu komplektam" ;
-    eozol:skillIdentifier "misc.extr.pigeon.collection" ;
-    eozol:skillNumber "7.2.1.3.0" ;
-    skos:broader eozol:misc.extr.pigeon ;
+eliozo:misc.extr.pigeon.collection eliozo:skillDescription "Izmantot Dirihlē principa vispārinājumu skaitļu komplektam" ;
+    eliozo:skillIdentifier "misc.extr.pigeon.collection" ;
+    eliozo:skillNumber "7.2.1.3.0" ;
+    skos:broader eliozo:misc.extr.pigeon ;
     skos:prefLabel "misc.extr.pigeon.collection" .
 
-eozol:misc.extr.pigeon.floor eozol:skillDescription "Izmantot Dirihlē principa vispārinājumu (n un m)" ;
-    eozol:skillIdentifier "misc.extr.pigeon.floor" ;
-    eozol:skillNumber "7.2.1.2.0" ;
-    skos:broader eozol:misc.extr.pigeon ;
+eliozo:misc.extr.pigeon.floor eliozo:skillDescription "Izmantot Dirihlē principa vispārinājumu (n un m)" ;
+    eliozo:skillIdentifier "misc.extr.pigeon.floor" ;
+    eliozo:skillNumber "7.2.1.2.0" ;
+    skos:broader eliozo:misc.extr.pigeon ;
     skos:prefLabel "misc.extr.pigeon.floor" .
 
-eozol:misc.extr.pigeon.plain eozol:skillDescription "Izmantot Dirihlē principa tradicionālo formu (n un n+1)" ;
-    eozol:skillIdentifier "misc.extr.pigeon.plain" ;
-    eozol:skillNumber "7.2.1.1.0" ;
-    skos:broader eozol:misc.extr.pigeon ;
+eliozo:misc.extr.pigeon.plain eliozo:skillDescription "Izmantot Dirihlē principa tradicionālo formu (n un n+1)" ;
+    eliozo:skillIdentifier "misc.extr.pigeon.plain" ;
+    eliozo:skillNumber "7.2.1.1.0" ;
+    skos:broader eliozo:misc.extr.pigeon ;
     skos:prefLabel "misc.extr.pigeon.plain" .
 
-eozol:misc.ind.descent eozol:skillDescription "Lietot neierobežotā samazinājuma metodi (piemēram, pamatojot veselu skaitļu sakņu iracionalitāti, ja tās nav veseli skaitļi)" ;
-    eozol:skillIdentifier "misc.ind.descent" ;
-    eozol:skillNumber "7.4.2.0.0" ;
-    skos:broader eozol:misc.ind ;
+eliozo:misc.ind.descent eliozo:skillDescription "Lietot neierobežotā samazinājuma metodi (piemēram, pamatojot veselu skaitļu sakņu iracionalitāti, ja tās nav veseli skaitļi)" ;
+    eliozo:skillIdentifier "misc.ind.descent" ;
+    eliozo:skillNumber "7.4.2.0.0" ;
+    skos:broader eliozo:misc.ind ;
     skos:prefLabel "misc.ind.descent" .
 
-eozol:misc.ind.least eozol:skillDescription "Izmantot naturālo skaitļu sakārtojuma principu: katrā naturālu skaitļu kopā atradīsies vismazākais elements" ;
-    eozol:skillIdentifier "misc.ind.least" ;
-    eozol:skillNumber "7.4.1.0.0" ;
-    skos:broader eozol:misc.ind ;
+eliozo:misc.ind.least eliozo:skillDescription "Izmantot naturālo skaitļu sakārtojuma principu: katrā naturālu skaitļu kopā atradīsies vismazākais elements" ;
+    eliozo:skillIdentifier "misc.ind.least" ;
+    eliozo:skillNumber "7.4.1.0.0" ;
+    skos:broader eliozo:misc.ind ;
     skos:prefLabel "misc.ind.least" .
 
-eozol:misc.invar.congr eozol:skillDescription "Lietot atlikumu/kongruenci kā invariantu" ;
-    eozol:skillIdentifier "misc.invar.congr" ;
-    eozol:skillNumber "7.3.2.0.0" ;
-    skos:broader eozol:misc.invar ;
+eliozo:misc.invar.congr eliozo:skillDescription "Lietot atlikumu/kongruenci kā invariantu" ;
+    eliozo:skillIdentifier "misc.invar.congr" ;
+    eliozo:skillNumber "7.3.2.0.0" ;
+    skos:broader eliozo:misc.invar ;
     skos:prefLabel "misc.invar.congr" .
 
-eozol:misc.invar.expr eozol:skillDescription "Veidot un lietot citu izteiksmi kā invariantu" ;
-    eozol:skillIdentifier "misc.invar.expr" ;
-    eozol:skillNumber "7.3.3.0.0" ;
-    skos:broader eozol:misc.invar ;
+eliozo:misc.invar.expr eliozo:skillDescription "Veidot un lietot citu izteiksmi kā invariantu" ;
+    eliozo:skillIdentifier "misc.invar.expr" ;
+    eliozo:skillNumber "7.3.3.0.0" ;
+    skos:broader eliozo:misc.invar ;
     skos:prefLabel "misc.invar.expr" .
 
-eozol:misc.invar.game eozol:skillDescription "Izveidot invariantu, kurš izpildās pēc katra uzvarētāja gājiena kombinatoriskā spēlē" ;
-    eozol:skillIdentifier "misc.invar.game" ;
-    eozol:skillNumber "7.3.4.0.0" ;
-    skos:broader eozol:misc.invar ;
+eliozo:misc.invar.game eliozo:skillDescription "Izveidot invariantu, kurš izpildās pēc katra uzvarētāja gājiena kombinatoriskā spēlē" ;
+    eliozo:skillIdentifier "misc.invar.game" ;
+    eliozo:skillNumber "7.3.4.0.0" ;
+    skos:broader eliozo:misc.invar ;
     skos:prefLabel "misc.invar.game" .
 
-eozol:misc.invar.parity eozol:skillDescription "Lietot paritāti kā invariantu" ;
-    eozol:skillIdentifier "misc.invar.parity" ;
-    eozol:skillNumber "7.3.1.0.0" ;
-    skos:broader eozol:misc.invar ;
+eliozo:misc.invar.parity eliozo:skillDescription "Lietot paritāti kā invariantu" ;
+    eliozo:skillIdentifier "misc.invar.parity" ;
+    eliozo:skillNumber "7.3.1.0.0" ;
+    skos:broader eliozo:misc.invar ;
     skos:prefLabel "misc.invar.parity" .
 
-eozol:misc.symm.periodicity eozol:skillDescription "Izmantot virkņu periodiskumu, lai aplūkotu tikai vienu periodu. " ;
-    eozol:skillIdentifier "misc.symm.periodicity" ;
-    eozol:skillNumber "7.5.2.0.0" ;
-    skos:broader eozol:misc.symm ;
+eliozo:misc.symm.periodicity eliozo:skillDescription "Izmantot virkņu periodiskumu, lai aplūkotu tikai vienu periodu. " ;
+    eliozo:skillIdentifier "misc.symm.periodicity" ;
+    eliozo:skillNumber "7.5.2.0.0" ;
+    skos:broader eliozo:misc.symm ;
     skos:prefLabel "misc.symm.periodicity" .
 
-eozol:misc.symm.rename eozol:skillDescription "Izmantot mainīgo pārsaukšanu simetriskā izteiksmē, lai izdarītu papildu pieņēmumus (teiksim, $a$ &lt; $b$)" ;
-    eozol:skillIdentifier "misc.symm.rename" ;
-    eozol:skillNumber "7.5.1.0.0" ;
-    skos:broader eozol:misc.symm ;
+eliozo:misc.symm.rename eliozo:skillDescription "Izmantot mainīgo pārsaukšanu simetriskā izteiksmē, lai izdarītu papildu pieņēmumus (teiksim, $a$ &lt; $b$)" ;
+    eliozo:skillIdentifier "misc.symm.rename" ;
+    eliozo:skillNumber "7.5.1.0.0" ;
+    skos:broader eliozo:misc.symm ;
     skos:prefLabel "misc.symm.rename" .
 
-eozol:misc.try eozol:skillDescription "Ievietot dažas nelielas vērtības, apkopot datus tabulās, izdarīt hipotēzes ar nepilno indukciju" ;
-    eozol:skillIdentifier "misc.try" ;
-    eozol:skillNumber "7.1.0.0.0" ;
-    skos:broader eozol:misc ;
+eliozo:misc.try eliozo:skillDescription "Ievietot dažas nelielas vērtības, apkopot datus tabulās, izdarīt hipotēzes ar nepilno indukciju" ;
+    eliozo:skillIdentifier "misc.try" ;
+    eliozo:skillNumber "7.1.0.0.0" ;
+    skos:broader eliozo:misc ;
     skos:prefLabel "misc.try" .
 
-eozol:mod.congr.classes eozol:skillDescription "Izmantot apgalvojumu, ka atlikumi (mod d) pieņem d vērtības" ;
-    eozol:skillIdentifier "mod.congr.classes" ;
-    eozol:skillNumber "3.2.1.0.0" ;
-    skos:broader eozol:mod.congr ;
+eliozo:mod.congr.classes eliozo:skillDescription "Izmantot apgalvojumu, ka atlikumi (mod d) pieņem d vērtības" ;
+    eliozo:skillIdentifier "mod.congr.classes" ;
+    eliozo:skillNumber "3.2.1.0.0" ;
+    skos:broader eliozo:mod.congr ;
     skos:prefLabel "mod.congr.classes" .
 
-eozol:mod.congr.poly eozol:skillDescription "Secināt $P(x)$ vērtību kongruenci, ja polinoma argumenti ir kongruenti" ;
-    eozol:skillIdentifier "mod.congr.poly" ;
-    eozol:skillNumber "3.2.5.0.0" ;
-    skos:broader eozol:mod.congr ;
+eliozo:mod.congr.poly eliozo:skillDescription "Secināt $P(x)$ vērtību kongruenci, ja polinoma argumenti ir kongruenti" ;
+    eliozo:skillIdentifier "mod.congr.poly" ;
+    eliozo:skillNumber "3.2.5.0.0" ;
+    skos:broader eliozo:mod.congr ;
     skos:prefLabel "mod.congr.poly" .
 
-eozol:mod.congr.pow eozol:skillDescription "Secināt, ka $(a_1)^n$ un $(a_2)^n$ kongruenti (mod m), ja kongruenti $a_1$ ar $a_2$" ;
-    eozol:skillIdentifier "mod.congr.pow" ;
-    eozol:skillNumber "3.2.4.0.0" ;
-    skos:broader eozol:mod.congr ;
+eliozo:mod.congr.pow eliozo:skillDescription "Secināt, ka $(a_1)^n$ un $(a_2)^n$ kongruenti (mod m), ja kongruenti $a_1$ ar $a_2$" ;
+    eliozo:skillIdentifier "mod.congr.pow" ;
+    eliozo:skillNumber "3.2.4.0.0" ;
+    skos:broader eliozo:mod.congr ;
     skos:prefLabel "mod.congr.pow" .
 
-eozol:mod.congr.prod eozol:skillDescription "Secināt, ka $a_1 \\cdot b_1$ un $a_2 \\cdot b_2$ kongruenti (mod m), ja kongruenti $a_1$ ar $a_2$ un $b_1$ ar $b_2$" ;
-    eozol:skillIdentifier "mod.congr.prod" ;
-    eozol:skillNumber "3.2.3.0.0" ;
-    skos:broader eozol:mod.congr ;
+eliozo:mod.congr.prod eliozo:skillDescription "Secināt, ka $a_1 \\cdot b_1$ un $a_2 \\cdot b_2$ kongruenti (mod m), ja kongruenti $a_1$ ar $a_2$ un $b_1$ ar $b_2$" ;
+    eliozo:skillIdentifier "mod.congr.prod" ;
+    eliozo:skillNumber "3.2.3.0.0" ;
+    skos:broader eliozo:mod.congr ;
     skos:prefLabel "mod.congr.prod" .
 
-eozol:mod.congr.sumdiff eozol:skillDescription "Secināt, ka summas/starpības $a_1+b_1$ un $a_2+b_2$ kongruenti (mod m), ja kongruenti $a_1$ ar $a_2$ un $b_1$ ar $b_$" ;
-    eozol:skillIdentifier "mod.congr.sumdiff" ;
-    eozol:skillNumber "3.2.1.0.0" ;
-    skos:broader eozol:mod.congr ;
+eliozo:mod.congr.sumdiff eliozo:skillDescription "Secināt, ka summas/starpības $a_1+b_1$ un $a_2+b_2$ kongruenti (mod m), ja kongruenti $a_1$ ar $a_2$ un $b_1$ ar $b_$" ;
+    eliozo:skillIdentifier "mod.congr.sumdiff" ;
+    eliozo:skillNumber "3.2.1.0.0" ;
+    skos:broader eliozo:mod.congr ;
     skos:prefLabel "mod.congr.sumdiff" .
 
-eozol:mod.eq.chinese eozol:skillDescription "Izmantot ķīniešu atlikumu teorēmu" ;
-    eozol:skillIdentifier "mod.eq.chinese" ;
-    eozol:skillNumber "3.6.3.0.0" ;
-    skos:broader eozol:mod.eq ;
+eliozo:mod.eq.chinese eliozo:skillDescription "Izmantot ķīniešu atlikumu teorēmu" ;
+    eliozo:skillIdentifier "mod.eq.chinese" ;
+    eliozo:skillNumber "3.6.3.0.0" ;
+    skos:broader eliozo:mod.eq ;
     skos:prefLabel "mod.eq.chinese" .
 
-eozol:mod.eq.contradict eozol:skillDescription "Secināt, ka veselu skaitļu vienādojumam nav atrisinājumu kongruenču pretrunas dēļ" ;
-    eozol:skillIdentifier "mod.eq.contradict" ;
-    eozol:skillNumber "3.6.2.0.0" ;
-    skos:broader eozol:mod.eq ;
+eliozo:mod.eq.contradict eliozo:skillDescription "Secināt, ka veselu skaitļu vienādojumam nav atrisinājumu kongruenču pretrunas dēļ" ;
+    eliozo:skillIdentifier "mod.eq.contradict" ;
+    eliozo:skillNumber "3.6.2.0.0" ;
+    skos:broader eliozo:mod.eq ;
     skos:prefLabel "mod.eq.contradict" .
 
-eozol:mod.eq.linear eozol:skillDescription "Risināt lineāras kongruences, piemēram, izmantojot inversos elementus." ;
-    eozol:skillIdentifier "mod.eq.linear" ;
-    eozol:skillNumber "3.6.1.0.0" ;
-    skos:broader eozol:mod.eq ;
+eliozo:mod.eq.linear eliozo:skillDescription "Risināt lineāras kongruences, piemēram, izmantojot inversos elementus." ;
+    eliozo:skillIdentifier "mod.eq.linear" ;
+    eliozo:skillNumber "3.6.1.0.0" ;
+    skos:broader eliozo:mod.eq ;
     skos:prefLabel "mod.eq.linear" .
 
-eozol:mod.exp.fermat eozol:skillDescription "Lietot Mazo Fermā teorēmu: $a^{p-1}$ kongruents ar 1 katram pirmskaitlim $p$, ja $LKD(a,p)=1$" ;
-    eozol:skillIdentifier "mod.exp.fermat" ;
-    eozol:skillNumber "3.4.3.0.0" ;
-    skos:broader eozol:mod.exp ;
+eliozo:mod.exp.fermat eliozo:skillDescription "Lietot Mazo Fermā teorēmu: $a^{p-1}$ kongruents ar 1 katram pirmskaitlim $p$, ja $LKD(a,p)=1$" ;
+    eliozo:skillIdentifier "mod.exp.fermat" ;
+    eliozo:skillNumber "3.4.3.0.0" ;
+    skos:broader eliozo:mod.exp ;
     skos:prefLabel "mod.exp.fermat" .
 
-eozol:mod.exp.inverse eozol:skillDescription "Lietot inversās kongruenču klases, katram (mod m) noteikt, kad tās eksistē." ;
-    eozol:skillIdentifier "mod.exp.inverse" ;
-    eozol:skillNumber "3.4.2.0.0" ;
-    skos:broader eozol:mod.exp ;
+eliozo:mod.exp.inverse eliozo:skillDescription "Lietot inversās kongruenču klases, katram (mod m) noteikt, kad tās eksistē." ;
+    eliozo:skillIdentifier "mod.exp.inverse" ;
+    eliozo:skillNumber "3.4.2.0.0" ;
+    skos:broader eliozo:mod.exp ;
     skos:prefLabel "mod.exp.inverse" .
 
-eozol:mod.exp.period eozol:skillDescription "Izmantot eksponentfunkciju atlikumu periodiskumu." ;
-    eozol:skillIdentifier "mod.exp.period" ;
-    eozol:skillNumber "3.4.1.0.0" ;
-    skos:broader eozol:mod.exp ;
+eliozo:mod.exp.period eliozo:skillDescription "Izmantot eksponentfunkciju atlikumu periodiskumu." ;
+    eliozo:skillIdentifier "mod.exp.period" ;
+    eliozo:skillNumber "3.4.1.0.0" ;
+    skos:broader eliozo:mod.exp ;
     skos:prefLabel "mod.exp.period" .
 
-eozol:mod.fix.clock eozol:skillDescription "Secināt par saskaitīšanu un atņemšanu pēc 12 stundu ciparnīcas vai nedēļas cikla." ;
-    eozol:skillIdentifier "mod.fix.clock" ;
-    eozol:skillNumber "3.1.3.0.0" ;
-    skos:broader eozol:mod.fix ;
+eliozo:mod.fix.clock eliozo:skillDescription "Secināt par saskaitīšanu un atņemšanu pēc 12 stundu ciparnīcas vai nedēļas cikla." ;
+    eliozo:skillIdentifier "mod.fix.clock" ;
+    eliozo:skillNumber "3.1.3.0.0" ;
+    skos:broader eliozo:mod.fix ;
     skos:prefLabel "mod.fix.clock" .
 
-eozol:mod.fix.lastdigits eozol:skillDescription "Izmantot skaitļa pēdējos n ciparus kā atlikumu, dalot ar 10^n. Secināt par atlikumiem (dalot ar 10, 100, 2, 5 u.c.), zinot skaitļu decimālpieraksta pēdējo ciparu vai ciparus." ;
-    eozol:skillIdentifier "mod.fix.lastdigits" ;
-    eozol:skillNumber "3.1.2.0.0" ;
-    skos:broader eozol:mod.fix ;
+eliozo:mod.fix.lastdigits eliozo:skillDescription "Izmantot skaitļa pēdējos n ciparus kā atlikumu, dalot ar 10^n. Secināt par atlikumiem (dalot ar 10, 100, 2, 5 u.c.), zinot skaitļu decimālpieraksta pēdējo ciparu vai ciparus." ;
+    eliozo:skillIdentifier "mod.fix.lastdigits" ;
+    eliozo:skillNumber "3.1.2.0.0" ;
+    skos:broader eliozo:mod.fix ;
     skos:prefLabel "mod.fix.lastdigits" .
 
-eozol:mod.fix.parity eozol:skillDescription "Izmantot spriedumus par skaitļu paritāti; Pāriet uz galīga skaita gadījumu aplūkošanu atkarībā no pāra/nepāra" ;
-    eozol:skillIdentifier "mod.fix.parity" ;
-    eozol:skillNumber "3.1.1.0.0" ;
-    skos:broader eozol:mod.fix ;
+eliozo:mod.fix.parity eliozo:skillDescription "Izmantot spriedumus par skaitļu paritāti; Pāriet uz galīga skaita gadījumu aplūkošanu atkarībā no pāra/nepāra" ;
+    eliozo:skillIdentifier "mod.fix.parity" ;
+    eliozo:skillNumber "3.1.1.0.0" ;
+    skos:broader eliozo:mod.fix ;
     skos:prefLabel "mod.fix.parity" .
 
-eozol:mod.period eozol:skillDescription "Izmantot citu atlikumu virkņu periodiskumu, ja katru nākamo atlikumu nosaka iepriekšējais (vai galīgs skaits iepriekšējo)" ;
-    eozol:skillIdentifier "mod.period" ;
-    eozol:skillNumber "3.5.0.0.0" ;
-    skos:broader eozol:mod ;
+eliozo:mod.period eliozo:skillDescription "Izmantot citu atlikumu virkņu periodiskumu, ja katru nākamo atlikumu nosaka iepriekšējais (vai galīgs skaits iepriekšējo)" ;
+    eliozo:skillIdentifier "mod.period" ;
+    eliozo:skillNumber "3.5.0.0.0" ;
+    skos:broader eliozo:mod ;
     skos:prefLabel "mod.period" .
 
-eozol:nota.algor.arithm eozol:skillDescription "Veikt galīgas darbības stabiņā" ;
-    eozol:skillIdentifier "nota.algor.arithm" ;
-    eozol:skillNumber "4.4.1.0.0" ;
-    skos:broader eozol:nota.algor ;
+eliozo:nota.algor.arithm eliozo:skillDescription "Veikt galīgas darbības stabiņā" ;
+    eliozo:skillIdentifier "nota.algor.arithm" ;
+    eliozo:skillNumber "4.4.1.0.0" ;
+    skos:broader eliozo:nota.algor ;
     skos:prefLabel "nota.algor.arithm" .
 
-eozol:nota.algor.fast eozol:skillDescription "Ātri veikt darbības, piemēram, kāpināt kvadrātā skaitļus, kuri beidzas ar 5" ;
-    eozol:skillIdentifier "nota.algor.fast" ;
-    eozol:skillNumber "4.4.2.0.0" ;
-    skos:broader eozol:nota.algor ;
+eliozo:nota.algor.fast eliozo:skillDescription "Ātri veikt darbības, piemēram, kāpināt kvadrātā skaitļus, kuri beidzas ar 5" ;
+    eliozo:skillIdentifier "nota.algor.fast" ;
+    eliozo:skillNumber "4.4.2.0.0" ;
+    skos:broader eliozo:nota.algor ;
     skos:prefLabel "nota.algor.fast" .
 
-eozol:nota.algor.longdiv eozol:skillDescription "Veikt garo dalīšanu" ;
-    eozol:skillIdentifier "nota.algor.longdiv" ;
-    eozol:skillNumber "4.4.3.0.0" ;
-    skos:broader eozol:nota.algor ;
+eliozo:nota.algor.longdiv eliozo:skillDescription "Veikt garo dalīšanu" ;
+    eliozo:skillIdentifier "nota.algor.longdiv" ;
+    eliozo:skillNumber "4.4.3.0.0" ;
+    skos:broader eliozo:nota.algor ;
     skos:prefLabel "nota.algor.longdiv" .
 
-eozol:nota.algor.nondec eozol:skillDescription "Izmantot nedecimālās sistēmas" ;
-    eozol:skillIdentifier "nota.algor.nondec" ;
-    eozol:skillNumber "4.4.4.0.0" ;
-    skos:broader eozol:nota.algor ;
+eliozo:nota.algor.nondec eliozo:skillDescription "Izmantot nedecimālās sistēmas" ;
+    eliozo:skillIdentifier "nota.algor.nondec" ;
+    eliozo:skillNumber "4.4.4.0.0" ;
+    skos:broader eliozo:nota.algor ;
     skos:prefLabel "nota.algor.nondec" .
 
-eozol:nota.combine.padding eozol:skillDescription "Veidot jaunus piemērus, iespraužot skaitļa decimālpierakstā jaunus ciparus." ;
-    eozol:skillIdentifier "nota.combine.padding" ;
-    eozol:skillNumber "4.3.3.0.0" ;
-    skos:broader eozol:nota.combine ;
+eliozo:nota.combine.padding eliozo:skillDescription "Veidot jaunus piemērus, iespraužot skaitļa decimālpierakstā jaunus ciparus." ;
+    eliozo:skillIdentifier "nota.combine.padding" ;
+    eliozo:skillNumber "4.3.3.0.0" ;
+    skos:broader eliozo:nota.combine ;
     skos:prefLabel "nota.combine.padding" .
 
-eozol:nota.combine.poly.pieces eozol:skillDescription "Izteikt skaitli gan ar cipariem, gan garākiem gabaliem" ;
-    eozol:skillIdentifier "nota.combine.poly.pieces" ;
-    eozol:skillNumber "4.3.1.1.0" ;
-    skos:broader eozol:nota.combine.poly ;
+eliozo:nota.combine.poly.pieces eliozo:skillDescription "Izteikt skaitli gan ar cipariem, gan garākiem gabaliem" ;
+    eliozo:skillIdentifier "nota.combine.poly.pieces" ;
+    eliozo:skillNumber "4.3.1.1.0" ;
+    skos:broader eliozo:nota.combine.poly ;
     skos:prefLabel "nota.combine.poly.pieces" .
 
-eozol:nota.combine.split eozol:skillDescription "Izteikt garu skaitli divos gabalos, piereizinot vienu no tiem ar $10^k$" ;
-    eozol:skillIdentifier "nota.combine.split" ;
-    eozol:skillNumber "4.3.2.0.0" ;
-    skos:broader eozol:nota.combine ;
+eliozo:nota.combine.split eliozo:skillDescription "Izteikt garu skaitli divos gabalos, piereizinot vienu no tiem ar $10^k$" ;
+    eliozo:skillIdentifier "nota.combine.split" ;
+    eliozo:skillNumber "4.3.2.0.0" ;
+    skos:broader eliozo:nota.combine ;
     skos:prefLabel "nota.combine.split" .
 
-eozol:nota.divrule.1001 eozol:skillDescription "Izmantot dalāmības pazīmes 1001 dalītājiem" ;
-    eozol:skillIdentifier "nota.divrule.1001" ;
-    eozol:skillNumber "4.2.6.0.0" ;
-    skos:broader eozol:nota.divrule ;
+eliozo:nota.divrule.1001 eliozo:skillDescription "Izmantot dalāmības pazīmes 1001 dalītājiem" ;
+    eliozo:skillIdentifier "nota.divrule.1001" ;
+    eliozo:skillNumber "4.2.6.0.0" ;
+    skos:broader eliozo:nota.divrule ;
     skos:prefLabel "nota.divrule.1001" .
 
-eozol:nota.divrule.101 eozol:skillDescription "Izmantot dalāmības pazīmi ar 101 (no beigām pārmaiņus pieskaita un atņem 2 ciparu grupiņas)" ;
-    eozol:skillIdentifier "nota.divrule.101" ;
-    eozol:skillNumber "4.2.5.0.0" ;
-    skos:broader eozol:nota.divrule ;
+eliozo:nota.divrule.101 eliozo:skillDescription "Izmantot dalāmības pazīmi ar 101 (no beigām pārmaiņus pieskaita un atņem 2 ciparu grupiņas)" ;
+    eliozo:skillIdentifier "nota.divrule.101" ;
+    eliozo:skillNumber "4.2.5.0.0" ;
+    skos:broader eliozo:nota.divrule ;
     skos:prefLabel "nota.divrule.101" .
 
-eozol:nota.divrule.11 eozol:skillDescription "Izmantot dalāmības pazīmi ar 11" ;
-    eozol:skillIdentifier "nota.divrule.11" ;
-    eozol:skillNumber "4.2.4.0.0" ;
-    skos:broader eozol:nota.divrule ;
+eliozo:nota.divrule.11 eliozo:skillDescription "Izmantot dalāmības pazīmi ar 11" ;
+    eliozo:skillIdentifier "nota.divrule.11" ;
+    eliozo:skillNumber "4.2.4.0.0" ;
+    skos:broader eliozo:nota.divrule ;
     skos:prefLabel "nota.divrule.11" .
 
-eozol:nota.divrule.2_5_10.divides eozol:skillDescription "Secināt, ka skaitlis dalās ar 2 (vai 5, vai 10), ja tā pēdējais cipars dalās ar to un otrādi" ;
-    eozol:skillIdentifier "nota.divrule.2_5_10.divides" ;
-    eozol:skillNumber "4.2.1.1.0" ;
-    skos:broader eozol:nota.divrule.2_5_10 ;
+eliozo:nota.divrule.2_5_10.divides eliozo:skillDescription "Secināt, ka skaitlis dalās ar 2 (vai 5, vai 10), ja tā pēdējais cipars dalās ar to un otrādi" ;
+    eliozo:skillIdentifier "nota.divrule.2_5_10.divides" ;
+    eliozo:skillNumber "4.2.1.1.0" ;
+    skos:broader eliozo:nota.divrule.2_5_10 ;
     skos:prefLabel "nota.divrule.2_5_10.divides" .
 
-eozol:nota.divrule.2_5_10.rem eozol:skillDescription "Secināt, ka atlikums, dalot ar 2 (vai 5, vai 10), sakrīt ar pēdējā cipara atlikumu" ;
-    eozol:skillIdentifier "nota.divrule.2_5_10.rem" ;
-    eozol:skillNumber "4.2.1.2.0" ;
-    skos:broader eozol:nota.divrule.2_5_10 ;
+eliozo:nota.divrule.2_5_10.rem eliozo:skillDescription "Secināt, ka atlikums, dalot ar 2 (vai 5, vai 10), sakrīt ar pēdējā cipara atlikumu" ;
+    eliozo:skillIdentifier "nota.divrule.2_5_10.rem" ;
+    eliozo:skillNumber "4.2.1.2.0" ;
+    skos:broader eliozo:nota.divrule.2_5_10 ;
     skos:prefLabel "nota.divrule.2_5_10.rem" .
 
-eozol:nota.divrule.2_5pow.divides eozol:skillDescription "Secināt, ka skaitlis dalās ar $2^a \\cdot 5^b$, ja max(a,b) pēdējie cipari dalās ar to" ;
-    eozol:skillIdentifier "nota.divrule.2_5pow.divides" ;
-    eozol:skillNumber "4.2.2.1.0" ;
-    skos:broader eozol:nota.divrule.2_5pow ;
+eliozo:nota.divrule.2_5pow.divides eliozo:skillDescription "Secināt, ka skaitlis dalās ar $2^a \\cdot 5^b$, ja max(a,b) pēdējie cipari dalās ar to" ;
+    eliozo:skillIdentifier "nota.divrule.2_5pow.divides" ;
+    eliozo:skillNumber "4.2.2.1.0" ;
+    skos:broader eliozo:nota.divrule.2_5pow ;
     skos:prefLabel "nota.divrule.2_5pow.divides" .
 
-eozol:nota.divrule.2_5pow.rem eozol:skillDescription "Secināt, ka atlikums, dalot ar $2^a \\cdot 5^b$, sakrīt ar pēdējo max(a,b) ciparu atlikumu" ;
-    eozol:skillIdentifier "nota.divrule.2_5pow.rem" ;
-    eozol:skillNumber "4.2.2.2.0" ;
-    skos:broader eozol:nota.divrule.2_5pow ;
+eliozo:nota.divrule.2_5pow.rem eliozo:skillDescription "Secināt, ka atlikums, dalot ar $2^a \\cdot 5^b$, sakrīt ar pēdējo max(a,b) ciparu atlikumu" ;
+    eliozo:skillIdentifier "nota.divrule.2_5pow.rem" ;
+    eliozo:skillNumber "4.2.2.2.0" ;
+    skos:broader eliozo:nota.divrule.2_5pow ;
     skos:prefLabel "nota.divrule.2_5pow.rem" .
 
-eozol:nota.divrule.3_9.divides eozol:skillDescription "Secināt, ka skaitlis dalās ar 3 (vai 9), ja tā ciparu summa dalās ar 3 (vai 9) un otrādi" ;
-    eozol:skillIdentifier "nota.divrule.3_9.divides" ;
-    eozol:skillNumber "4.2.3.1.0" ;
-    skos:broader eozol:nota.divrule.3_9 ;
+eliozo:nota.divrule.3_9.divides eliozo:skillDescription "Secināt, ka skaitlis dalās ar 3 (vai 9), ja tā ciparu summa dalās ar 3 (vai 9) un otrādi" ;
+    eliozo:skillIdentifier "nota.divrule.3_9.divides" ;
+    eliozo:skillNumber "4.2.3.1.0" ;
+    skos:broader eliozo:nota.divrule.3_9 ;
     skos:prefLabel "nota.divrule.3_9.divides" .
 
-eozol:nota.divrule.3_9.rem eozol:skillDescription "Secināt, ka atlikums, dalot ar 3 (vai 9), sakrīt ar ciparu summas atlikumu" ;
-    eozol:skillIdentifier "nota.divrule.3_9.rem" ;
-    eozol:skillNumber "4.2.3.2.0" ;
-    skos:broader eozol:nota.divrule.3_9 ;
+eliozo:nota.divrule.3_9.rem eliozo:skillDescription "Secināt, ka atlikums, dalot ar 3 (vai 9), sakrīt ar ciparu summas atlikumu" ;
+    eliozo:skillIdentifier "nota.divrule.3_9.rem" ;
+    eliozo:skillNumber "4.2.3.2.0" ;
+    skos:broader eliozo:nota.divrule.3_9 ;
     skos:prefLabel "nota.divrule.3_9.rem" .
 
-eozol:nota.divrule.composite eozol:skillDescription "Izmantot kombinētās dalāmības pazīmes skaitļa decimālpierakstā (ar 2 un 3 utml.)" ;
-    eozol:skillIdentifier "nota.divrule.composite" ;
-    eozol:skillNumber "4.2.5.0.0" ;
-    skos:broader eozol:nota.divrule ;
+eliozo:nota.divrule.composite eliozo:skillDescription "Izmantot kombinētās dalāmības pazīmes skaitļa decimālpierakstā (ar 2 un 3 utml.)" ;
+    eliozo:skillIdentifier "nota.divrule.composite" ;
+    eliozo:skillNumber "4.2.5.0.0" ;
+    skos:broader eliozo:nota.divrule ;
     skos:prefLabel "nota.divrule.composite" .
 
-eozol:nota.est.numdigits.prod eozol:skillDescription "Novērtēt ciparu skaitu divu skaitļu reizinājumā" ;
-    eozol:skillIdentifier "nota.est.numdigits.prod" ;
-    eozol:skillNumber "4.1.1.2.0" ;
-    skos:broader eozol:nota.est.numdigits ;
+eliozo:nota.est.numdigits.prod eliozo:skillDescription "Novērtēt ciparu skaitu divu skaitļu reizinājumā" ;
+    eliozo:skillIdentifier "nota.est.numdigits.prod" ;
+    eliozo:skillNumber "4.1.1.2.0" ;
+    skos:broader eliozo:nota.est.numdigits ;
     skos:prefLabel "nota.est.numdigits.prod" .
 
-eozol:nota.est.numdigits.sum eozol:skillDescription "Novērtēt ciparu skaitu divu vai vairāku skaitļu summā" ;
-    eozol:skillIdentifier "nota.est.numdigits.sum" ;
-    eozol:skillNumber "4.1.1.1.0" ;
-    skos:broader eozol:nota.est.numdigits ;
+eliozo:nota.est.numdigits.sum eliozo:skillDescription "Novērtēt ciparu skaitu divu vai vairāku skaitļu summā" ;
+    eliozo:skillIdentifier "nota.est.numdigits.sum" ;
+    eliozo:skillNumber "4.1.1.1.0" ;
+    skos:broader eliozo:nota.est.numdigits ;
     skos:prefLabel "nota.est.numdigits.sum" .
 
-eozol:seq.arithm.expr eozol:skillDescription "Izmantot aritmētiskas progresijas vispārīgā locekļa formulu $a_n=a_1+(n-1) \\cdot d$" ;
-    eozol:skillIdentifier "seq.arithm.expr" ;
-    eozol:skillNumber "5.1.1.0.0" ;
-    skos:broader eozol:seq.arithm ;
+eliozo:seq.arithm.expr eliozo:skillDescription "Izmantot aritmētiskas progresijas vispārīgā locekļa formulu $a_n=a_1+(n-1) \\cdot d$" ;
+    eliozo:skillIdentifier "seq.arithm.expr" ;
+    eliozo:skillNumber "5.1.1.0.0" ;
+    skos:broader eliozo:seq.arithm ;
     skos:prefLabel "seq.arithm.expr" .
 
-eozol:seq.arithm.mod.all eozol:skillDescription "Secināt, ka aritm. progresija pieņem visus atlikumus, dalot ar p, ja $\\mbox{LKD}(d,p)=1$" ;
-    eozol:skillIdentifier "seq.arithm.mod.all" ;
-    eozol:skillNumber "5.1.5.2.0" ;
-    skos:broader eozol:seq.arithm.mod ;
+eliozo:seq.arithm.mod.all eliozo:skillDescription "Secināt, ka aritm. progresija pieņem visus atlikumus, dalot ar p, ja $\\mbox{LKD}(d,p)=1$" ;
+    eliozo:skillIdentifier "seq.arithm.mod.all" ;
+    eliozo:skillNumber "5.1.5.2.0" ;
+    skos:broader eliozo:seq.arithm.mod ;
     skos:prefLabel "seq.arithm.mod.all" .
 
-eozol:seq.arithm.mod.gaps eozol:skillDescription "Secināt, ka katrs p-tais aritm. progresijas loceklis dalās ar p, ja $\\mbox{LKD}(d,p)=1$" ;
-    eozol:skillIdentifier "seq.arithm.mod.gaps" ;
-    eozol:skillNumber "5.1.5.1.0" ;
-    skos:broader eozol:seq.arithm.mod ;
+eliozo:seq.arithm.mod.gaps eliozo:skillDescription "Secināt, ka katrs p-tais aritm. progresijas loceklis dalās ar p, ja $\\mbox{LKD}(d,p)=1$" ;
+    eliozo:skillIdentifier "seq.arithm.mod.gaps" ;
+    eliozo:skillNumber "5.1.5.1.0" ;
+    skos:broader eliozo:seq.arithm.mod ;
     skos:prefLabel "seq.arithm.mod.gaps" .
 
-eozol:seq.arithm.numestimate eozol:skillDescription "Novērtēt skaitļu skaitu, kas dalās ar d starp pirmajiem n skaitļiem ar [n/d] (un vispārināt citām aritmētiskām progresijām)" ;
-    eozol:skillIdentifier "seq.arithm.numestimate" ;
-    eozol:skillNumber "5.1.2.0.0" ;
-    skos:broader eozol:seq.arithm ;
+eliozo:seq.arithm.numestimate eliozo:skillDescription "Novērtēt skaitļu skaitu, kas dalās ar d starp pirmajiem n skaitļiem ar [n/d] (un vispārināt citām aritmētiskām progresijām)" ;
+    eliozo:skillIdentifier "seq.arithm.numestimate" ;
+    eliozo:skillNumber "5.1.2.0.0" ;
+    skos:broader eliozo:seq.arithm ;
     skos:prefLabel "seq.arithm.numestimate" .
 
-eozol:seq.arithm.pairsum eozol:skillDescription "Izmantot spriedumos aritmētiskas progresijas locekļu \"pretējo pāru\" summu vienādību" ;
-    eozol:skillIdentifier "seq.arithm.pairsum" ;
-    eozol:skillNumber "5.1.3.0.0" ;
-    skos:broader eozol:seq.arithm ;
+eliozo:seq.arithm.pairsum eliozo:skillDescription "Izmantot spriedumos aritmētiskas progresijas locekļu \"pretējo pāru\" summu vienādību" ;
+    eliozo:skillIdentifier "seq.arithm.pairsum" ;
+    eliozo:skillNumber "5.1.3.0.0" ;
+    skos:broader eliozo:seq.arithm ;
     skos:prefLabel "seq.arithm.pairsum" .
 
-eozol:seq.arithm.summation eozol:skillDescription "Izmantot aritmētiskas progresijas summas formulu" ;
-    eozol:skillIdentifier "seq.arithm.summation" ;
-    eozol:skillNumber "5.1.4.0.0" ;
-    skos:broader eozol:seq.arithm ;
+eliozo:seq.arithm.summation eliozo:skillDescription "Izmantot aritmētiskas progresijas summas formulu" ;
+    eliozo:skillIdentifier "seq.arithm.summation" ;
+    eliozo:skillNumber "5.1.4.0.0" ;
+    skos:broader eliozo:seq.arithm ;
     skos:prefLabel "seq.arithm.summation" .
 
-eozol:seq.gaps.cubes eozol:skillDescription "Izmantot to, ka pilnu kubu atstarpes aug kā kvadrātiska funkcija" ;
-    eozol:skillIdentifier "seq.gaps.cubes" ;
-    eozol:skillNumber "5.4.2.0.0" ;
-    skos:broader eozol:seq.gaps ;
+eliozo:seq.gaps.cubes eliozo:skillDescription "Izmantot to, ka pilnu kubu atstarpes aug kā kvadrātiska funkcija" ;
+    eliozo:skillIdentifier "seq.gaps.cubes" ;
+    eliozo:skillNumber "5.4.2.0.0" ;
+    skos:broader eliozo:seq.gaps ;
     skos:prefLabel "seq.gaps.cubes" .
 
-eozol:seq.gaps.geom eozol:skillDescription "Izmantot to, ka $2^n$ locekļu starpības aug ģeometriskā progresijā." ;
-    eozol:skillIdentifier "seq.gaps.geom" ;
-    eozol:skillNumber "5.4.3.0.0" ;
-    skos:broader eozol:seq.gaps ;
+eliozo:seq.gaps.geom eliozo:skillDescription "Izmantot to, ka $2^n$ locekļu starpības aug ģeometriskā progresijā." ;
+    eliozo:skillIdentifier "seq.gaps.geom" ;
+    eliozo:skillNumber "5.4.3.0.0" ;
+    skos:broader eliozo:seq.gaps ;
     skos:prefLabel "seq.gaps.geom" .
 
-eozol:seq.gaps.squares eozol:skillDescription "Izmantot to, ka pilnu kvadrātu atstarpes aug aritmētiskā progresijā." ;
-    eozol:skillIdentifier "seq.gaps.squares" ;
-    eozol:skillNumber "5.4.1.0.0" ;
-    skos:broader eozol:seq.gaps ;
+eliozo:seq.gaps.squares eliozo:skillDescription "Izmantot to, ka pilnu kvadrātu atstarpes aug aritmētiskā progresijā." ;
+    eliozo:skillIdentifier "seq.gaps.squares" ;
+    eliozo:skillNumber "5.4.1.0.0" ;
+    skos:broader eliozo:seq.gaps ;
     skos:prefLabel "seq.gaps.squares" .
 
-eozol:seq.geom.decnotation eozol:skillDescription "Izteikt skaitļus, kuru pierakstā atkārtojas ciparu grupas, ar ģeometrisku progresiju" ;
-    eozol:skillIdentifier "seq.geom.decnotation" ;
-    eozol:skillNumber "5.2.1.0.0" ;
-    skos:broader eozol:seq.geom ;
+eliozo:seq.geom.decnotation eliozo:skillDescription "Izteikt skaitļus, kuru pierakstā atkārtojas ciparu grupas, ar ģeometrisku progresiju" ;
+    eliozo:skillIdentifier "seq.geom.decnotation" ;
+    eliozo:skillNumber "5.2.1.0.0" ;
+    skos:broader eliozo:seq.geom ;
     skos:prefLabel "seq.geom.decnotation" .
 
-eozol:seq.geom.estimate eozol:skillDescription "Novērtēt, cik reizes skaitli vajag reizināt vai dalīt ar kaut ko, lai iegūtu vajadzīgo vērtību." ;
-    eozol:skillIdentifier "seq.geom.estimate" ;
-    eozol:skillNumber "5.2.3.0.0" ;
-    skos:broader eozol:seq.geom ;
+eliozo:seq.geom.estimate eliozo:skillDescription "Novērtēt, cik reizes skaitli vajag reizināt vai dalīt ar kaut ko, lai iegūtu vajadzīgo vērtību." ;
+    eliozo:skillIdentifier "seq.geom.estimate" ;
+    eliozo:skillNumber "5.2.3.0.0" ;
+    skos:broader eliozo:seq.geom ;
     skos:prefLabel "seq.geom.estimate" .
 
-eozol:seq.geom.infinite eozol:skillDescription "Izmantot bezgalīgas ģeometriskas progresijas, piemēram, nosakot bezgalīgas decimāldaļas" ;
-    eozol:skillIdentifier "seq.geom.infinite" ;
-    eozol:skillNumber "5.2.4.0.0" ;
-    skos:broader eozol:seq.geom ;
+eliozo:seq.geom.infinite eliozo:skillDescription "Izmantot bezgalīgas ģeometriskas progresijas, piemēram, nosakot bezgalīgas decimāldaļas" ;
+    eliozo:skillIdentifier "seq.geom.infinite" ;
+    eliozo:skillNumber "5.2.4.0.0" ;
+    skos:broader eliozo:seq.geom ;
     skos:prefLabel "seq.geom.infinite" .
 
-eozol:seq.geom.summation eozol:skillDescription "Izmantot galīgas ģeometriskas progresijas summas formulu" ;
-    eozol:skillIdentifier "seq.geom.summation" ;
-    eozol:skillNumber "5.2.2.0.0" ;
-    skos:broader eozol:seq.geom ;
+eliozo:seq.geom.summation eliozo:skillDescription "Izmantot galīgas ģeometriskas progresijas summas formulu" ;
+    eliozo:skillIdentifier "seq.geom.summation" ;
+    eliozo:skillNumber "5.2.2.0.0" ;
+    skos:broader eliozo:seq.geom ;
     skos:prefLabel "seq.geom.summation" .
 
-eozol:seq.recur.fibonacci eozol:skillDescription "Izmantot Fibonači skaitļu jēdzienu vienkāršu secinājumu izdarīšanai" ;
-    eozol:skillIdentifier "seq.recur.fibonacci" ;
-    eozol:skillNumber "5.3.1.0.0" ;
-    skos:broader eozol:seq.recur ;
+eliozo:seq.recur.fibonacci eliozo:skillDescription "Izmantot Fibonači skaitļu jēdzienu vienkāršu secinājumu izdarīšanai" ;
+    eliozo:skillIdentifier "seq.recur.fibonacci" ;
+    eliozo:skillNumber "5.3.1.0.0" ;
+    skos:broader eliozo:seq.recur ;
     skos:prefLabel "seq.recur.fibonacci" .
 
-eozol:seq.recur.linear eozol:skillDescription "Izmantot rekurentu virkņu īpašības, kas aprakstāmas ar lineāru izteiksmi" ;
-    eozol:skillIdentifier "seq.recur.linear" ;
-    eozol:skillNumber "5.3.2.0.0" ;
-    skos:broader eozol:seq.recur ;
+eliozo:seq.recur.linear eliozo:skillDescription "Izmantot rekurentu virkņu īpašības, kas aprakstāmas ar lineāru izteiksmi" ;
+    eliozo:skillIdentifier "seq.recur.linear" ;
+    eliozo:skillNumber "5.3.2.0.0" ;
+    skos:broader eliozo:seq.recur ;
     skos:prefLabel "seq.recur.linear" .
 
-eozol:seq.recur.other eozol:skillDescription "Izmantot citu rekurenti definētu virkņu īpašības" ;
-    eozol:skillIdentifier "seq.recur.other" ;
-    eozol:skillNumber "5.3.3.0.0" ;
-    skos:broader eozol:seq.recur ;
+eliozo:seq.recur.other eliozo:skillDescription "Izmantot citu rekurenti definētu virkņu īpašības" ;
+    eliozo:skillIdentifier "seq.recur.other" ;
+    eliozo:skillNumber "5.3.3.0.0" ;
+    skos:broader eliozo:seq.recur ;
     skos:prefLabel "seq.recur.other" .
 
-eozol:alg.poly.prop eozol:skillDescription "Lietot rezultātus par 1 mainīgā polinomiem ar veseliem koeficientiem" ;
-    eozol:skillIdentifier "alg.poly.prop" ;
-    eozol:skillNumber "1.7.3.0.0" ;
-    skos:broader eozol:alg.poly ;
-    skos:narrower eozol:alg.poly.prop.valdiff ;
+eliozo:alg.poly.prop eliozo:skillDescription "Lietot rezultātus par 1 mainīgā polinomiem ar veseliem koeficientiem" ;
+    eliozo:skillIdentifier "alg.poly.prop" ;
+    eliozo:skillNumber "1.7.3.0.0" ;
+    skos:broader eliozo:alg.poly ;
+    skos:narrower eliozo:alg.poly.prop.valdiff ;
     skos:prefLabel "alg.poly.prop" .
 
-eozol:alg.sets.sqrt eozol:skillDescription "Secināt par kvadrātsakņu izteiksmju racionalitāti vai iracionalitāti" ;
-    eozol:skillIdentifier "alg.sets.sqrt" ;
-    eozol:skillNumber "1.8.2.0.0" ;
-    skos:broader eozol:alg.sets ;
-    skos:narrower eozol:alg.sets.sqrt.pythagoras ;
+eliozo:alg.sets.sqrt eliozo:skillDescription "Secināt par kvadrātsakņu izteiksmju racionalitāti vai iracionalitāti" ;
+    eliozo:skillIdentifier "alg.sets.sqrt" ;
+    eliozo:skillNumber "1.8.2.0.0" ;
+    skos:broader eliozo:alg.sets ;
+    skos:narrower eliozo:alg.sets.sqrt.pythagoras ;
     skos:prefLabel "alg.sets.sqrt" .
 
-eozol:comb.grid eozol:skillDescription "Izmantot rūtiņu laukuma īpašības" ;
-    eozol:skillIdentifier "comb.grid" ;
-    eozol:skillNumber "6.5.0.0.0" ;
-    skos:broader eozol:comb ;
-    skos:narrower eozol:comb.grid.shapes ;
+eliozo:comb.grid eliozo:skillDescription "Izmantot rūtiņu laukuma īpašības" ;
+    eliozo:skillIdentifier "comb.grid" ;
+    eliozo:skillNumber "6.5.0.0.0" ;
+    skos:broader eliozo:comb ;
+    skos:narrower eliozo:comb.grid.shapes ;
     skos:prefLabel "comb.grid" .
 
-eozol:comb.grid.shapes eozol:skillDescription "Veidot figūriņas pa rūtiņu līnijām" ;
-    eozol:skillIdentifier "comb.grid.shapes" ;
-    eozol:skillNumber "6.5.1.0.0" ;
-    skos:broader eozol:comb.grid ;
-    skos:narrower eozol:comb.grid.shapes.cutting ;
+eliozo:comb.grid.shapes eliozo:skillDescription "Veidot figūriņas pa rūtiņu līnijām" ;
+    eliozo:skillIdentifier "comb.grid.shapes" ;
+    eliozo:skillNumber "6.5.1.0.0" ;
+    skos:broader eliozo:comb.grid ;
+    skos:narrower eliozo:comb.grid.shapes.cutting ;
     skos:prefLabel "comb.grid.shapes" .
 
-eozol:geom.circle eozol:skillDescription "Izmantot riņķa līnijas ģeometriskās īpašības" ;
-    eozol:skillIdentifier "geom.circle" ;
-    eozol:skillNumber "8.2.0.0.0" ;
-    skos:broader eozol:geom ;
-    skos:narrower eozol:geom.circle.inscribed ;
+eliozo:geom.circle eliozo:skillDescription "Izmantot riņķa līnijas ģeometriskās īpašības" ;
+    eliozo:skillIdentifier "geom.circle" ;
+    eliozo:skillNumber "8.2.0.0.0" ;
+    skos:broader eliozo:geom ;
+    skos:narrower eliozo:geom.circle.inscribed ;
     skos:prefLabel "geom.circle" .
 
-eozol:geom.quadrangle.trapezoid eozol:skillDescription "Izmantot trapeču ģeometriskās īpašības" ;
-    eozol:skillIdentifier "geom.quadrangle.trapezoid" ;
-    eozol:skillNumber "8.4.3.0.0" ;
-    skos:broader eozol:geom.quadrangle ;
-    skos:narrower eozol:geom.quadrangle.trapezoid.area ;
+eliozo:geom.quadrangle.trapezoid eliozo:skillDescription "Izmantot trapeču ģeometriskās īpašības" ;
+    eliozo:skillIdentifier "geom.quadrangle.trapezoid" ;
+    eliozo:skillNumber "8.4.3.0.0" ;
+    skos:broader eliozo:geom.quadrangle ;
+    skos:narrower eliozo:geom.quadrangle.trapezoid.area ;
     skos:prefLabel "geom.quadrangle.trapezoid" .
 
-eozol:geom.triangle.area eozol:skillDescription "Izmantot trijstūru laukuma formulas" ;
-    eozol:skillIdentifier "geom.triangle.area" ;
-    eozol:skillNumber "8.3.1.0.0" ;
-    skos:broader eozol:geom.triangle ;
-    skos:narrower eozol:geom.triangle.area.ah2 ;
+eliozo:geom.triangle.area eliozo:skillDescription "Izmantot trijstūru laukuma formulas" ;
+    eliozo:skillIdentifier "geom.triangle.area" ;
+    eliozo:skillNumber "8.3.1.0.0" ;
+    skos:broader eliozo:geom.triangle ;
+    skos:narrower eliozo:geom.triangle.area.ah2 ;
     skos:prefLabel "geom.triangle.area" .
 
-eozol:nota.combine.poly eozol:skillDescription "Izteikt skaitli ar decimālpieraksta cipariem, reizinot ar $10^k$" ;
-    eozol:skillIdentifier "nota.combine.poly" ;
-    eozol:skillNumber "4.3.1.0.0" ;
-    skos:broader eozol:nota.combine ;
-    skos:narrower eozol:nota.combine.poly.pieces ;
+eliozo:nota.combine.poly eliozo:skillDescription "Izteikt skaitli ar decimālpieraksta cipariem, reizinot ar $10^k$" ;
+    eliozo:skillIdentifier "nota.combine.poly" ;
+    eliozo:skillNumber "4.3.1.0.0" ;
+    skos:broader eliozo:nota.combine ;
+    skos:narrower eliozo:nota.combine.poly.pieces ;
     skos:prefLabel "nota.combine.poly" .
 
-eozol:nota.est eozol:skillDescription "Izmantot skaitļa decimālpierakstu" ;
-    eozol:skillIdentifier "nota.est" ;
-    eozol:skillNumber "4.1.0.0.0" ;
-    skos:broader eozol:nota ;
-    skos:narrower eozol:nota.est.numdigits ;
+eliozo:nota.est eliozo:skillDescription "Izmantot skaitļa decimālpierakstu" ;
+    eliozo:skillIdentifier "nota.est" ;
+    eliozo:skillNumber "4.1.0.0.0" ;
+    skos:broader eliozo:nota ;
+    skos:narrower eliozo:nota.est.numdigits ;
     skos:prefLabel "nota.est" .
 
-eozol:alg.equ.quadratic eozol:skillDescription "Analizēt un risināt kvadrātvienādojumus" ;
-    eozol:skillIdentifier "alg.equ.quadratic" ;
-    eozol:skillNumber "1.3.2.0.0" ;
-    skos:broader eozol:alg.equ ;
-    skos:narrower eozol:alg.equ.quadratic.discriminant,
-        eozol:alg.equ.quadratic.roots ;
+eliozo:alg.equ.quadratic eliozo:skillDescription "Analizēt un risināt kvadrātvienādojumus" ;
+    eliozo:skillIdentifier "alg.equ.quadratic" ;
+    eliozo:skillNumber "1.3.2.0.0" ;
+    skos:broader eliozo:alg.equ ;
+    skos:narrower eliozo:alg.equ.quadratic.discriminant,
+        eliozo:alg.equ.quadratic.roots ;
     skos:prefLabel "alg.equ.quadratic" .
 
-eozol:alg.expr eozol:skillDescription "Ieviest mainīgo apzīmējumus, sastādīt ar tiem izteiksmes" ;
-    eozol:skillIdentifier "alg.expr" ;
-    eozol:skillNumber "1.1.0.0.0" ;
-    skos:broader eozol:alg ;
-    skos:narrower eozol:alg.expr.prop,
-        eozol:alg.expr.selectvar ;
+eliozo:alg.expr eliozo:skillDescription "Ieviest mainīgo apzīmējumus, sastādīt ar tiem izteiksmes" ;
+    eliozo:skillIdentifier "alg.expr" ;
+    eliozo:skillNumber "1.1.0.0.0" ;
+    skos:broader eliozo:alg ;
+    skos:narrower eliozo:alg.expr.prop,
+        eliozo:alg.expr.selectvar ;
     skos:prefLabel "alg.expr" .
 
-eozol:alg.linear eozol:skillDescription "Izmantot linearitāti veicot pārveidojumus vai kombinējot rezultātus" ;
-    eozol:skillIdentifier "alg.linear" ;
-    eozol:skillNumber "1.6.0.0.0" ;
-    skos:broader eozol:alg ;
-    skos:narrower eozol:alg.linear.comb,
-        eozol:alg.linear.equations ;
+eliozo:alg.linear eliozo:skillDescription "Izmantot linearitāti veicot pārveidojumus vai kombinējot rezultātus" ;
+    eliozo:skillIdentifier "alg.linear" ;
+    eliozo:skillNumber "1.6.0.0.0" ;
+    skos:broader eliozo:alg ;
+    skos:narrower eliozo:alg.linear.comb,
+        eliozo:alg.linear.equations ;
     skos:prefLabel "alg.linear" .
 
-eozol:alg.sets eozol:skillDescription "Izmantot dažādu skaitļu kopu īpašības" ;
-    eozol:skillIdentifier "alg.sets" ;
-    eozol:skillNumber "1.8.0.0.0" ;
-    skos:broader eozol:alg ;
-    skos:narrower eozol:alg.sets.irrat,
-        eozol:alg.sets.sqrt ;
+eliozo:alg.sets eliozo:skillDescription "Izmantot dažādu skaitļu kopu īpašības" ;
+    eliozo:skillIdentifier "alg.sets" ;
+    eliozo:skillNumber "1.8.0.0.0" ;
+    skos:broader eliozo:alg ;
+    skos:narrower eliozo:alg.sets.irrat,
+        eliozo:alg.sets.sqrt ;
     skos:prefLabel "alg.sets" .
 
-eozol:alg.tra.factor eozol:skillDescription "Dalīt reizinātājos algebriskas izteiksmes" ;
-    eozol:skillIdentifier "alg.tra.factor" ;
-    eozol:skillNumber "1.2.2.0.0" ;
-    skos:broader eozol:alg.tra ;
-    skos:narrower eozol:alg.tra.factor.powdiff,
-        eozol:alg.tra.factor.sqdiff ;
+eliozo:alg.tra.factor eliozo:skillDescription "Dalīt reizinātājos algebriskas izteiksmes" ;
+    eliozo:skillIdentifier "alg.tra.factor" ;
+    eliozo:skillNumber "1.2.2.0.0" ;
+    skos:broader eliozo:alg.tra ;
+    skos:narrower eliozo:alg.tra.factor.powdiff,
+        eliozo:alg.tra.factor.sqdiff ;
     skos:prefLabel "alg.tra.factor" .
 
-eozol:alg.tra.pow eozol:skillDescription "Izmantot pakāpju īpašības" ;
-    eozol:skillIdentifier "alg.tra.pow" ;
-    eozol:skillNumber "1.2.3.0.0" ;
-    skos:broader eozol:alg.tra ;
-    skos:narrower eozol:alg.tra.pow.nest,
-        eozol:alg.tra.pow.prod ;
+eliozo:alg.tra.pow eliozo:skillDescription "Izmantot pakāpju īpašības" ;
+    eliozo:skillIdentifier "alg.tra.pow" ;
+    eliozo:skillNumber "1.2.3.0.0" ;
+    skos:broader eliozo:alg.tra ;
+    skos:narrower eliozo:alg.tra.pow.nest,
+        eliozo:alg.tra.pow.prod ;
     skos:prefLabel "alg.tra.pow" .
 
-eozol:comb.count.mult eozol:skillDescription "Izmantot \"reizināšanas likumu\" novērtējot kombināciju skaitu" ;
-    eozol:skillIdentifier "comb.count.mult" ;
-    eozol:skillNumber "6.2.1.0.0" ;
-    skos:broader eozol:comb.count ;
-    skos:narrower eozol:comb.count.mult.norep,
-        eozol:comb.count.mult.rep ;
+eliozo:comb.count.mult eliozo:skillDescription "Izmantot \"reizināšanas likumu\" novērtējot kombināciju skaitu" ;
+    eliozo:skillIdentifier "comb.count.mult" ;
+    eliozo:skillNumber "6.2.1.0.0" ;
+    skos:broader eliozo:comb.count ;
+    skos:narrower eliozo:comb.count.mult.norep,
+        eliozo:comb.count.mult.rep ;
     skos:prefLabel "comb.count.mult" .
 
-eozol:comb.full eozol:skillDescription "Veikt pilno pārlasi" ;
-    eozol:skillIdentifier "comb.full" ;
-    eozol:skillNumber "6.1.0.0.0" ;
-    skos:broader eozol:comb ;
-    skos:narrower eozol:comb.full.backtrack,
-        eozol:comb.full.syntax ;
+eliozo:comb.full eliozo:skillDescription "Veikt pilno pārlasi" ;
+    eliozo:skillIdentifier "comb.full" ;
+    eliozo:skillNumber "6.1.0.0.0" ;
+    skos:broader eliozo:comb ;
+    skos:narrower eliozo:comb.full.backtrack,
+        eliozo:comb.full.syntax ;
     skos:prefLabel "comb.full" .
 
-eozol:div.common eozol:skillDescription "Izmantot LKD un MKD jēdzienus (common multipliers, divisors)" ;
-    eozol:skillIdentifier "div.common" ;
-    eozol:skillNumber "2.3.0.0.0" ;
-    skos:broader eozol:div ;
-    skos:narrower eozol:div.common.gcd,
-        eozol:div.common.lcm ;
+eliozo:div.common eliozo:skillDescription "Izmantot LKD un MKD jēdzienus (common multipliers, divisors)" ;
+    eliozo:skillIdentifier "div.common" ;
+    eliozo:skillNumber "2.3.0.0.0" ;
+    skos:broader eliozo:div ;
+    skos:narrower eliozo:div.common.gcd,
+        eliozo:div.common.lcm ;
     skos:prefLabel "div.common" .
 
-eozol:div.prop.primes eozol:skillDescription "Izmantot pirmskaitļu īpašības" ;
-    eozol:skillIdentifier "div.prop.primes" ;
-    eozol:skillNumber "2.1.3.0.0" ;
-    skos:broader eozol:div.prop ;
-    skos:narrower eozol:div.prop.primes.inf,
-        eozol:div.prop.primes.small ;
+eliozo:div.prop.primes eliozo:skillDescription "Izmantot pirmskaitļu īpašības" ;
+    eliozo:skillIdentifier "div.prop.primes" ;
+    eliozo:skillNumber "2.1.3.0.0" ;
+    skos:broader eliozo:div.prop ;
+    skos:narrower eliozo:div.prop.primes.inf,
+        eliozo:div.prop.primes.small ;
     skos:prefLabel "div.prop.primes" .
 
-eozol:div.valu eozol:skillDescription "Izmantot spriedumus par valuāciju (lielāko pirmskaitļa pakāpi, ar ko dalās n)" ;
-    eozol:skillIdentifier "div.valu" ;
-    eozol:skillNumber "2.5.0.0.0" ;
-    skos:broader eozol:div ;
-    skos:narrower eozol:div.valu.change,
-        eozol:div.valu.prop ;
+eliozo:div.valu eliozo:skillDescription "Izmantot spriedumus par valuāciju (lielāko pirmskaitļa pakāpi, ar ko dalās n)" ;
+    eliozo:skillIdentifier "div.valu" ;
+    eliozo:skillNumber "2.5.0.0.0" ;
+    skos:broader eliozo:div ;
+    skos:narrower eliozo:div.valu.change,
+        eliozo:div.valu.prop ;
     skos:prefLabel "div.valu" .
 
-eozol:geom.constr eozol:skillDescription "Veikt ģeometriskas konstrukcijas uzdevumu risināšanā." ;
-    eozol:skillIdentifier "geom.constr" ;
-    eozol:skillNumber "8.1.0.0.0" ;
-    skos:broader eozol:geom ;
-    skos:narrower eozol:geom.constr.small,
-        eozol:geom.constr.triangulate ;
+eliozo:geom.constr eliozo:skillDescription "Veikt ģeometriskas konstrukcijas uzdevumu risināšanā." ;
+    eliozo:skillIdentifier "geom.constr" ;
+    eliozo:skillNumber "8.1.0.0.0" ;
+    skos:broader eliozo:geom ;
+    skos:narrower eliozo:geom.constr.small,
+        eliozo:geom.constr.triangulate ;
     skos:prefLabel "geom.constr" .
 
-eozol:geom.quadrangle skos:narrower eozol:geom.quadrangle.para,
-        eozol:geom.quadrangle.rect,
-        eozol:geom.quadrangle.trapezoid .
+eliozo:geom.quadrangle skos:narrower eliozo:geom.quadrangle.para,
+        eliozo:geom.quadrangle.rect,
+        eliozo:geom.quadrangle.trapezoid .
 
-eozol:geom.triangle eozol:skillDescription "Izmantot trijstūru ģeometriskās īpašības" ;
-    eozol:skillIdentifier "geom.triangle" ;
-    eozol:skillNumber "8.3.0.0.0" ;
-    skos:broader eozol:geom ;
-    skos:narrower eozol:geom.triangle.area,
-        eozol:geom.triangle.congruence ;
+eliozo:geom.triangle eliozo:skillDescription "Izmantot trijstūru ģeometriskās īpašības" ;
+    eliozo:skillIdentifier "geom.triangle" ;
+    eliozo:skillNumber "8.3.0.0.0" ;
+    skos:broader eliozo:geom ;
+    skos:narrower eliozo:geom.triangle.area,
+        eliozo:geom.triangle.congruence ;
     skos:prefLabel "geom.triangle" .
 
-eozol:misc.extr eozol:skillDescription "Izmantot spriedumus par ekstrēmo elementu" ;
-    eozol:skillIdentifier "misc.extr" ;
-    eozol:skillNumber "7.2.0.0.0" ;
-    skos:broader eozol:misc ;
-    skos:narrower eozol:misc.extr.param,
-        eozol:misc.extr.pigeon ;
+eliozo:misc.extr eliozo:skillDescription "Izmantot spriedumus par ekstrēmo elementu" ;
+    eliozo:skillIdentifier "misc.extr" ;
+    eliozo:skillNumber "7.2.0.0.0" ;
+    skos:broader eliozo:misc ;
+    skos:narrower eliozo:misc.extr.param,
+        eliozo:misc.extr.pigeon ;
     skos:prefLabel "misc.extr" .
 
-eozol:misc.ind eozol:skillDescription "Pamatot ar matemātisko indukciju" ;
-    eozol:skillIdentifier "misc.ind" ;
-    eozol:skillNumber "7.4.0.0.0" ;
-    skos:broader eozol:misc ;
-    skos:narrower eozol:misc.ind.descent,
-        eozol:misc.ind.least ;
+eliozo:misc.ind eliozo:skillDescription "Pamatot ar matemātisko indukciju" ;
+    eliozo:skillIdentifier "misc.ind" ;
+    eliozo:skillNumber "7.4.0.0.0" ;
+    skos:broader eliozo:misc ;
+    skos:narrower eliozo:misc.ind.descent,
+        eliozo:misc.ind.least ;
     skos:prefLabel "misc.ind" .
 
-eozol:misc.symm eozol:skillDescription "Izmantot uzdevumā esošo simetriju" ;
-    eozol:skillIdentifier "misc.symm" ;
-    eozol:skillNumber "7.5.0.0.0" ;
-    skos:broader eozol:misc ;
-    skos:narrower eozol:misc.symm.periodicity,
-        eozol:misc.symm.rename ;
+eliozo:misc.symm eliozo:skillDescription "Izmantot uzdevumā esošo simetriju" ;
+    eliozo:skillIdentifier "misc.symm" ;
+    eliozo:skillNumber "7.5.0.0.0" ;
+    skos:broader eliozo:misc ;
+    skos:narrower eliozo:misc.symm.periodicity,
+        eliozo:misc.symm.rename ;
     skos:prefLabel "misc.symm" .
 
-eozol:nota.divrule.2_5_10 eozol:skillDescription "Izmantot dalāmības pazīmes ar 2 vai 5, vai 10" ;
-    eozol:skillIdentifier "nota.divrule.2_5_10" ;
-    eozol:skillNumber "4.2.1.0.0" ;
-    skos:broader eozol:nota.divrule ;
-    skos:narrower eozol:nota.divrule.2_5_10.divides,
-        eozol:nota.divrule.2_5_10.rem ;
+eliozo:nota.divrule.2_5_10 eliozo:skillDescription "Izmantot dalāmības pazīmes ar 2 vai 5, vai 10" ;
+    eliozo:skillIdentifier "nota.divrule.2_5_10" ;
+    eliozo:skillNumber "4.2.1.0.0" ;
+    skos:broader eliozo:nota.divrule ;
+    skos:narrower eliozo:nota.divrule.2_5_10.divides,
+        eliozo:nota.divrule.2_5_10.rem ;
     skos:prefLabel "nota.divrule.2_5_10" .
 
-eozol:nota.divrule.2_5pow eozol:skillDescription "Izmantot dalāmības pazīmes ar $2^a \\cdot 5^b$" ;
-    eozol:skillIdentifier "nota.divrule.2_5pow" ;
-    eozol:skillNumber "4.2.2.0.0" ;
-    skos:broader eozol:nota.divrule ;
-    skos:narrower eozol:nota.divrule.2_5pow.divides,
-        eozol:nota.divrule.2_5pow.rem ;
+eliozo:nota.divrule.2_5pow eliozo:skillDescription "Izmantot dalāmības pazīmes ar $2^a \\cdot 5^b$" ;
+    eliozo:skillIdentifier "nota.divrule.2_5pow" ;
+    eliozo:skillNumber "4.2.2.0.0" ;
+    skos:broader eliozo:nota.divrule ;
+    skos:narrower eliozo:nota.divrule.2_5pow.divides,
+        eliozo:nota.divrule.2_5pow.rem ;
     skos:prefLabel "nota.divrule.2_5pow" .
 
-eozol:nota.divrule.3_9 eozol:skillDescription "Izmantot dalāmības pazīmes ar 3 vai 9" ;
-    eozol:skillIdentifier "nota.divrule.3_9" ;
-    eozol:skillNumber "4.2.3.0.0" ;
-    skos:broader eozol:nota.divrule ;
-    skos:narrower eozol:nota.divrule.3_9.divides,
-        eozol:nota.divrule.3_9.rem ;
+eliozo:nota.divrule.3_9 eliozo:skillDescription "Izmantot dalāmības pazīmes ar 3 vai 9" ;
+    eliozo:skillIdentifier "nota.divrule.3_9" ;
+    eliozo:skillNumber "4.2.3.0.0" ;
+    skos:broader eliozo:nota.divrule ;
+    skos:narrower eliozo:nota.divrule.3_9.divides,
+        eliozo:nota.divrule.3_9.rem ;
     skos:prefLabel "nota.divrule.3_9" .
 
-eozol:nota.est.numdigits eozol:skillDescription "Novērtēt ciparu skaitu dažādu darbību rezultātos" ;
-    eozol:skillIdentifier "nota.est.numdigits" ;
-    eozol:skillNumber "4.1.1.0.0" ;
-    skos:broader eozol:nota.est ;
-    skos:narrower eozol:nota.est.numdigits.prod,
-        eozol:nota.est.numdigits.sum ;
+eliozo:nota.est.numdigits eliozo:skillDescription "Novērtēt ciparu skaitu dažādu darbību rezultātos" ;
+    eliozo:skillIdentifier "nota.est.numdigits" ;
+    eliozo:skillNumber "4.1.1.0.0" ;
+    skos:broader eliozo:nota.est ;
+    skos:narrower eliozo:nota.est.numdigits.prod,
+        eliozo:nota.est.numdigits.sum ;
     skos:prefLabel "nota.est.numdigits" .
 
-eozol:seq.arithm.mod eozol:skillDescription "Secināt par aritmētiskas progresijas locekļu atlikumiem" ;
-    eozol:skillIdentifier "seq.arithm.mod" ;
-    eozol:skillNumber "5.1.5.0.0" ;
-    skos:broader eozol:seq.arithm ;
-    skos:narrower eozol:seq.arithm.mod.all,
-        eozol:seq.arithm.mod.gaps ;
+eliozo:seq.arithm.mod eliozo:skillDescription "Secināt par aritmētiskas progresijas locekļu atlikumiem" ;
+    eliozo:skillIdentifier "seq.arithm.mod" ;
+    eliozo:skillNumber "5.1.5.0.0" ;
+    skos:broader eliozo:seq.arithm ;
+    skos:narrower eliozo:seq.arithm.mod.all,
+        eliozo:seq.arithm.mod.gaps ;
     skos:prefLabel "seq.arithm.mod" .
 
-eozol:alg.equ eozol:skillDescription "Risināt algebriskus vienādojumus ar piemērotām standartmetodēm" ;
-    eozol:skillIdentifier "alg.equ" ;
-    eozol:skillNumber "1.3.0.0.0" ;
-    skos:broader eozol:alg ;
-    skos:narrower eozol:alg.equ.guess,
-        eozol:alg.equ.parametrize,
-        eozol:alg.equ.quadratic ;
+eliozo:alg.equ eliozo:skillDescription "Risināt algebriskus vienādojumus ar piemērotām standartmetodēm" ;
+    eliozo:skillIdentifier "alg.equ" ;
+    eliozo:skillNumber "1.3.0.0.0" ;
+    skos:broader eliozo:alg ;
+    skos:narrower eliozo:alg.equ.guess,
+        eliozo:alg.equ.parametrize,
+        eliozo:alg.equ.quadratic ;
     skos:prefLabel "alg.equ" .
 
-eozol:alg.poly eozol:skillDescription "Lietot polinomu īpašības" ;
-    eozol:skillIdentifier "alg.poly" ;
-    eozol:skillNumber "1.7.0.0.0" ;
-    skos:broader eozol:alg ;
-    skos:narrower eozol:alg.poly.division,
-        eozol:alg.poly.homo,
-        eozol:alg.poly.prop ;
+eliozo:alg.poly eliozo:skillDescription "Lietot polinomu īpašības" ;
+    eliozo:skillIdentifier "alg.poly" ;
+    eliozo:skillNumber "1.7.0.0.0" ;
+    skos:broader eliozo:alg ;
+    skos:narrower eliozo:alg.poly.division,
+        eliozo:alg.poly.homo,
+        eliozo:alg.poly.prop ;
     skos:prefLabel "alg.poly" .
 
-eozol:alg.series eozol:skillDescription "Pārveidot un secināt par garām summām un reizinājumiem" ;
-    eozol:skillIdentifier "alg.series" ;
-    eozol:skillNumber "1.4.0.0.0" ;
-    skos:broader eozol:alg ;
-    skos:narrower eozol:alg.series.mean,
-        eozol:alg.series.prod,
-        eozol:alg.series.sum ;
+eliozo:alg.series eliozo:skillDescription "Pārveidot un secināt par garām summām un reizinājumiem" ;
+    eliozo:skillIdentifier "alg.series" ;
+    eliozo:skillNumber "1.4.0.0.0" ;
+    skos:broader eliozo:alg ;
+    skos:narrower eliozo:alg.series.mean,
+        eliozo:alg.series.prod,
+        eliozo:alg.series.sum ;
     skos:prefLabel "alg.series" .
 
-eozol:alg.tra.binom eozol:skillDescription "Pārveidot reizinājumus un pakāpes, kuros ietilpst binomi" ;
-    eozol:skillIdentifier "alg.tra.binom" ;
-    eozol:skillNumber "1.2.1.0.0" ;
-    skos:broader eozol:alg.tra ;
-    skos:narrower eozol:alg.tra.binom.complsquare,
-        eozol:alg.tra.binom.newton,
-        eozol:alg.tra.binom.square ;
+eliozo:alg.tra.binom eliozo:skillDescription "Pārveidot reizinājumus un pakāpes, kuros ietilpst binomi" ;
+    eliozo:skillIdentifier "alg.tra.binom" ;
+    eliozo:skillNumber "1.2.1.0.0" ;
+    skos:broader eliozo:alg.tra ;
+    skos:narrower eliozo:alg.tra.binom.complsquare,
+        eliozo:alg.tra.binom.newton,
+        eliozo:alg.tra.binom.square ;
     skos:prefLabel "alg.tra.binom" .
 
-eozol:comb.count eozol:skillDescription "Saskaitīt variantus, izmantojot kombinatorisko analīzi" ;
-    eozol:skillIdentifier "comb.count" ;
-    eozol:skillNumber "6.2.0.0.0" ;
-    skos:broader eozol:comb ;
-    skos:narrower eozol:comb.count.complement,
-        eozol:comb.count.inclexcl,
-        eozol:comb.count.mult ;
+eliozo:comb.count eliozo:skillDescription "Saskaitīt variantus, izmantojot kombinatorisko analīzi" ;
+    eliozo:skillIdentifier "comb.count" ;
+    eliozo:skillNumber "6.2.0.0.0" ;
+    skos:broader eliozo:comb ;
+    skos:narrower eliozo:comb.count.complement,
+        eliozo:comb.count.inclexcl,
+        eliozo:comb.count.mult ;
     skos:prefLabel "comb.count" .
 
-eozol:comb.graph eozol:skillDescription "Izmantot grafu rezultātus" ;
-    eozol:skillIdentifier "comb.graph" ;
-    eozol:skillNumber "6.3.0.0.0" ;
-    skos:broader eozol:comb ;
-    skos:narrower eozol:comb.graph.bfs,
-        eozol:comb.graph.bipartite,
-        eozol:comb.graph.cycle ;
+eliozo:comb.graph eliozo:skillDescription "Izmantot grafu rezultātus" ;
+    eliozo:skillIdentifier "comb.graph" ;
+    eliozo:skillNumber "6.3.0.0.0" ;
+    skos:broader eliozo:comb ;
+    skos:narrower eliozo:comb.graph.bfs,
+        eliozo:comb.graph.bipartite,
+        eliozo:comb.graph.cycle ;
     skos:prefLabel "comb.graph" .
 
-eozol:div eozol:skillDescription "Izmantot veselu skaitļu dalāmību" ;
-    eozol:skillIdentifier "div" ;
-    eozol:skillNumber "2.0.0.0.0" ;
-    skos:narrower eozol:div.common,
-        eozol:div.fta,
-        eozol:div.prop,
-        eozol:div.valu ;
+eliozo:div eliozo:skillDescription "Izmantot veselu skaitļu dalāmību" ;
+    eliozo:skillIdentifier "div" ;
+    eliozo:skillNumber "2.0.0.0.0" ;
+    skos:narrower eliozo:div.common,
+        eliozo:div.fta,
+        eliozo:div.prop,
+        eliozo:div.valu ;
     skos:prefLabel "div" .
 
-eozol:div.common.gcd eozol:skillDescription "Izmantot LKD jēdzienu" ;
-    eozol:skillIdentifier "div.common.gcd" ;
-    eozol:skillNumber "2.3.2.0.0" ;
-    skos:broader eozol:div.common ;
-    skos:narrower eozol:div.common.gcd.bezout,
-        eozol:div.common.gcd.euclid,
-        eozol:div.common.gcd.subsequent ;
+eliozo:div.common.gcd eliozo:skillDescription "Izmantot LKD jēdzienu" ;
+    eliozo:skillIdentifier "div.common.gcd" ;
+    eliozo:skillNumber "2.3.2.0.0" ;
+    skos:broader eliozo:div.common ;
+    skos:narrower eliozo:div.common.gcd.bezout,
+        eliozo:div.common.gcd.euclid,
+        eliozo:div.common.gcd.subsequent ;
     skos:prefLabel "div.common.gcd" .
 
-eozol:div.common.lcm eozol:skillDescription "Atrast mazāko kopīgo dalāmo (MKD)" ;
-    eozol:skillIdentifier "div.common.lcm" ;
-    eozol:skillNumber "2.3.1.0.0" ;
-    skos:broader eozol:div.common ;
-    skos:narrower eozol:div.common.lcm.frac,
-        eozol:div.common.lcm.maxexp,
-        eozol:div.common.lcm.mult ;
+eliozo:div.common.lcm eliozo:skillDescription "Atrast mazāko kopīgo dalāmo (MKD)" ;
+    eliozo:skillIdentifier "div.common.lcm" ;
+    eliozo:skillNumber "2.3.1.0.0" ;
+    skos:broader eliozo:div.common ;
+    skos:narrower eliozo:div.common.lcm.frac,
+        eliozo:div.common.lcm.maxexp,
+        eliozo:div.common.lcm.mult ;
     skos:prefLabel "div.common.lcm" .
 
-eozol:div.fta.pow eozol:skillDescription "Pazīt pilnus kvadrātus u.c. pilnas pakāpes pēc skaitļa sadalījuma pirmreizinātājos" ;
-    eozol:skillIdentifier "div.fta.pow" ;
-    eozol:skillNumber "2.2.3.0.0" ;
-    skos:broader eozol:div.fta ;
-    skos:narrower eozol:div.fta.pow.expsystem,
-        eozol:div.fta.pow.other,
-        eozol:div.fta.pow.square ;
+eliozo:div.fta.pow eliozo:skillDescription "Pazīt pilnus kvadrātus u.c. pilnas pakāpes pēc skaitļa sadalījuma pirmreizinātājos" ;
+    eliozo:skillIdentifier "div.fta.pow" ;
+    eliozo:skillNumber "2.2.3.0.0" ;
+    skos:broader eliozo:div.fta ;
+    skos:narrower eliozo:div.fta.pow.expsystem,
+        eliozo:div.fta.pow.other,
+        eliozo:div.fta.pow.square ;
     skos:prefLabel "div.fta.pow" .
 
-eozol:geom eozol:skillDescription "Izmantot ģeometrijas rezultātus un metodes." ;
-    eozol:skillIdentifier "geom" ;
-    eozol:skillNumber "8.0.0.0.0" ;
-    skos:narrower eozol:geom.circle,
-        eozol:geom.constr,
-        eozol:geom.quandrangle,
-        eozol:geom.triangle ;
+eliozo:geom eliozo:skillDescription "Izmantot ģeometrijas rezultātus un metodes." ;
+    eliozo:skillIdentifier "geom" ;
+    eliozo:skillNumber "8.0.0.0.0" ;
+    skos:narrower eliozo:geom.circle,
+        eliozo:geom.constr,
+        eliozo:geom.quandrangle,
+        eliozo:geom.triangle ;
     skos:prefLabel "geom" .
 
-eozol:misc.extr.pigeon eozol:skillDescription "Izmantot Dirihlē principu" ;
-    eozol:skillIdentifier "misc.extr.pigeon" ;
-    eozol:skillNumber "7.2.1.0.0" ;
-    skos:broader eozol:misc.extr ;
-    skos:narrower eozol:misc.extr.pigeon.collection,
-        eozol:misc.extr.pigeon.floor,
-        eozol:misc.extr.pigeon.plain ;
+eliozo:misc.extr.pigeon eliozo:skillDescription "Izmantot Dirihlē principu" ;
+    eliozo:skillIdentifier "misc.extr.pigeon" ;
+    eliozo:skillNumber "7.2.1.0.0" ;
+    skos:broader eliozo:misc.extr ;
+    skos:narrower eliozo:misc.extr.pigeon.collection,
+        eliozo:misc.extr.pigeon.floor,
+        eliozo:misc.extr.pigeon.plain ;
     skos:prefLabel "misc.extr.pigeon" .
 
-eozol:mod.eq eozol:skillDescription "Secināt par kongruenču vienādojumiem un risināt tos (t.sk. ar lineāriem pārveidojumiem - pieskaitot, atņemot vai reizinot ar skaitli)" ;
-    eozol:skillIdentifier "mod.eq" ;
-    eozol:skillNumber "3.6.0.0.0" ;
-    skos:broader eozol:mod ;
-    skos:narrower eozol:mod.eq.chinese,
-        eozol:mod.eq.contradict,
-        eozol:mod.eq.linear ;
+eliozo:mod.eq eliozo:skillDescription "Secināt par kongruenču vienādojumiem un risināt tos (t.sk. ar lineāriem pārveidojumiem - pieskaitot, atņemot vai reizinot ar skaitli)" ;
+    eliozo:skillIdentifier "mod.eq" ;
+    eliozo:skillNumber "3.6.0.0.0" ;
+    skos:broader eliozo:mod ;
+    skos:narrower eliozo:mod.eq.chinese,
+        eliozo:mod.eq.contradict,
+        eliozo:mod.eq.linear ;
     skos:prefLabel "mod.eq" .
 
-eozol:mod.exp eozol:skillDescription "Izmantot eksponentfunkciju atlikumu īpašības." ;
-    eozol:skillIdentifier "mod.exp" ;
-    eozol:skillNumber "3.4.0.0.0" ;
-    skos:broader eozol:mod ;
-    skos:narrower eozol:mod.exp.fermat,
-        eozol:mod.exp.inverse,
-        eozol:mod.exp.period ;
+eliozo:mod.exp eliozo:skillDescription "Izmantot eksponentfunkciju atlikumu īpašības." ;
+    eliozo:skillIdentifier "mod.exp" ;
+    eliozo:skillNumber "3.4.0.0.0" ;
+    skos:broader eliozo:mod ;
+    skos:narrower eliozo:mod.exp.fermat,
+        eliozo:mod.exp.inverse,
+        eliozo:mod.exp.period ;
     skos:prefLabel "mod.exp" .
 
-eozol:mod.fix eozol:skillDescription "Izmantot atlikumu sistēmas galīgumu pēc neliela, fiksēta moduļa" ;
-    eozol:skillIdentifier "mod.fix" ;
-    eozol:skillNumber "3.1.0.0.0" ;
-    skos:broader eozol:mod ;
-    skos:narrower eozol:mod.fix.clock,
-        eozol:mod.fix.lastdigits,
-        eozol:mod.fix.parity ;
+eliozo:mod.fix eliozo:skillDescription "Izmantot atlikumu sistēmas galīgumu pēc neliela, fiksēta moduļa" ;
+    eliozo:skillIdentifier "mod.fix" ;
+    eliozo:skillNumber "3.1.0.0.0" ;
+    skos:broader eliozo:mod ;
+    skos:narrower eliozo:mod.fix.clock,
+        eliozo:mod.fix.lastdigits,
+        eliozo:mod.fix.parity ;
     skos:prefLabel "mod.fix" .
 
-eozol:nota eozol:skillDescription "Izmantot spriedumos skaitļa pierakstu" ;
-    eozol:skillIdentifier "nota" ;
-    eozol:skillNumber "4.0.0.0.0" ;
-    skos:narrower eozol:nota.algor,
-        eozol:nota.combine,
-        eozol:nota.divrule,
-        eozol:nota.est ;
+eliozo:nota eliozo:skillDescription "Izmantot spriedumos skaitļa pierakstu" ;
+    eliozo:skillIdentifier "nota" ;
+    eliozo:skillNumber "4.0.0.0.0" ;
+    skos:narrower eliozo:nota.algor,
+        eliozo:nota.combine,
+        eliozo:nota.divrule,
+        eliozo:nota.est ;
     skos:prefLabel "nota" .
 
-eozol:nota.combine eozol:skillDescription "Saprast, kā mainās skaitlis, ja tajā pārvieto vai iesprauž ciparus" ;
-    eozol:skillIdentifier "nota.combine" ;
-    eozol:skillNumber "4.3.0.0.0" ;
-    skos:broader eozol:nota ;
-    skos:narrower eozol:nota.combine.padding,
-        eozol:nota.combine.poly,
-        eozol:nota.combine.split ;
+eliozo:nota.combine eliozo:skillDescription "Saprast, kā mainās skaitlis, ja tajā pārvieto vai iesprauž ciparus" ;
+    eliozo:skillIdentifier "nota.combine" ;
+    eliozo:skillNumber "4.3.0.0.0" ;
+    skos:broader eliozo:nota ;
+    skos:narrower eliozo:nota.combine.padding,
+        eliozo:nota.combine.poly,
+        eliozo:nota.combine.split ;
     skos:prefLabel "nota.combine" .
 
-eozol:seq eozol:skillDescription "Lietot zināšanas par veselu skaitļu virknēm" ;
-    eozol:skillIdentifier "seq" ;
-    eozol:skillNumber "5.0.0.0.0" ;
-    skos:narrower eozol:seq.arithm,
-        eozol:seq.gaps,
-        eozol:seq.geom,
-        eozol:seq.recur ;
+eliozo:seq eliozo:skillDescription "Lietot zināšanas par veselu skaitļu virknēm" ;
+    eliozo:skillIdentifier "seq" ;
+    eliozo:skillNumber "5.0.0.0.0" ;
+    skos:narrower eliozo:seq.arithm,
+        eliozo:seq.gaps,
+        eliozo:seq.geom,
+        eliozo:seq.recur ;
     skos:prefLabel "seq" .
 
-eozol:seq.gaps eozol:skillDescription "Izmantot spriedumus par dažu virkņu kaimiņu locekļu starpībām" ;
-    eozol:skillIdentifier "seq.gaps" ;
-    eozol:skillNumber "5.4.0.0.0" ;
-    skos:broader eozol:seq ;
-    skos:narrower eozol:seq.gaps.cubes,
-        eozol:seq.gaps.geom,
-        eozol:seq.gaps.squares ;
+eliozo:seq.gaps eliozo:skillDescription "Izmantot spriedumus par dažu virkņu kaimiņu locekļu starpībām" ;
+    eliozo:skillIdentifier "seq.gaps" ;
+    eliozo:skillNumber "5.4.0.0.0" ;
+    skos:broader eliozo:seq ;
+    skos:narrower eliozo:seq.gaps.cubes,
+        eliozo:seq.gaps.geom,
+        eliozo:seq.gaps.squares ;
     skos:prefLabel "seq.gaps" .
 
-eozol:seq.recur eozol:skillDescription "Veikt spriedumus par pazīstamām virknēm, kas nav progresijas" ;
-    eozol:skillIdentifier "seq.recur" ;
-    eozol:skillNumber "5.3.0.0.0" ;
-    skos:broader eozol:seq ;
-    skos:narrower eozol:seq.recur.fibonacci,
-        eozol:seq.recur.linear,
-        eozol:seq.recur.other ;
+eliozo:seq.recur eliozo:skillDescription "Veikt spriedumus par pazīstamām virknēm, kas nav progresijas" ;
+    eliozo:skillIdentifier "seq.recur" ;
+    eliozo:skillNumber "5.3.0.0.0" ;
+    skos:broader eliozo:seq ;
+    skos:narrower eliozo:seq.recur.fibonacci,
+        eliozo:seq.recur.linear,
+        eliozo:seq.recur.other ;
     skos:prefLabel "seq.recur" .
 
-eozol:alg.tra eozol:skillDescription "Veikt algebriskus pārveidojumus" ;
-    eozol:skillIdentifier "alg.tra" ;
-    eozol:skillNumber "1.2.0.0.0" ;
-    skos:broader eozol:alg ;
-    skos:narrower eozol:alg.tra.binom,
-        eozol:alg.tra.factor,
-        eozol:alg.tra.frac,
-        eozol:alg.tra.pow ;
+eliozo:alg.tra eliozo:skillDescription "Veikt algebriskus pārveidojumus" ;
+    eliozo:skillIdentifier "alg.tra" ;
+    eliozo:skillNumber "1.2.0.0.0" ;
+    skos:broader eliozo:alg ;
+    skos:narrower eliozo:alg.tra.binom,
+        eliozo:alg.tra.factor,
+        eliozo:alg.tra.frac,
+        eliozo:alg.tra.pow ;
     skos:prefLabel "alg.tra" .
 
-eozol:comb eozol:skillDescription "Izmantot kombinatoriskus spriedumus" ;
-    eozol:skillIdentifier "comb" ;
-    eozol:skillNumber "6.0.0.0.0" ;
-    skos:narrower eozol:comb.constr,
-        eozol:comb.count,
-        eozol:comb.full,
-        eozol:comb.graph,
-        eozol:comb.grid ;
+eliozo:comb eliozo:skillDescription "Izmantot kombinatoriskus spriedumus" ;
+    eliozo:skillIdentifier "comb" ;
+    eliozo:skillNumber "6.0.0.0.0" ;
+    skos:narrower eliozo:comb.constr,
+        eliozo:comb.count,
+        eliozo:comb.full,
+        eliozo:comb.graph,
+        eliozo:comb.grid ;
     skos:prefLabel "comb" .
 
-eozol:comb.constr eozol:skillDescription "Konstruēt piemērus atbilstoši dotajām īpašībām" ;
-    eozol:skillIdentifier "comb.constr" ;
-    eozol:skillNumber "6.4.0.0.0" ;
-    skos:broader eozol:comb ;
-    skos:narrower eozol:comb.constr.alpha,
-        eozol:comb.constr.color,
-        eozol:comb.constr.iterative,
-        eozol:comb.constr.partition ;
+eliozo:comb.constr eliozo:skillDescription "Konstruēt piemērus atbilstoši dotajām īpašībām" ;
+    eliozo:skillIdentifier "comb.constr" ;
+    eliozo:skillNumber "6.4.0.0.0" ;
+    skos:broader eliozo:comb ;
+    skos:narrower eliozo:comb.constr.alpha,
+        eliozo:comb.constr.color,
+        eliozo:comb.constr.iterative,
+        eliozo:comb.constr.partition ;
     skos:prefLabel "comb.constr" .
 
-eozol:div.fta eozol:skillDescription "Izmantot vesela skaitļa izteiksmi pirmskaitļu reizinājumā (Fundamental theorem of arithmetic)" ;
-    eozol:skillIdentifier "div.fta" ;
-    eozol:skillNumber "2.2.0.0.0" ;
-    skos:broader eozol:div ;
-    skos:narrower eozol:div.fta.divisors,
-        eozol:div.fta.factorial,
-        eozol:div.fta.pow,
-        eozol:div.fta.proc ;
+eliozo:div.fta eliozo:skillDescription "Izmantot vesela skaitļa izteiksmi pirmskaitļu reizinājumā (Fundamental theorem of arithmetic)" ;
+    eliozo:skillIdentifier "div.fta" ;
+    eliozo:skillNumber "2.2.0.0.0" ;
+    skos:broader eliozo:div ;
+    skos:narrower eliozo:div.fta.divisors,
+        eliozo:div.fta.factorial,
+        eliozo:div.fta.pow,
+        eliozo:div.fta.proc ;
     skos:prefLabel "div.fta" .
 
-eozol:misc eozol:skillDescription "Izmantot dažādas ārpus skaitļu teorijas pazīstamas metodes" ;
-    eozol:skillIdentifier "misc" ;
-    eozol:skillNumber "7.0.0.0.0" ;
-    skos:narrower eozol:misc.extr,
-        eozol:misc.ind,
-        eozol:misc.invar,
-        eozol:misc.symm,
-        eozol:misc.try ;
+eliozo:misc eliozo:skillDescription "Izmantot dažādas ārpus skaitļu teorijas pazīstamas metodes" ;
+    eliozo:skillIdentifier "misc" ;
+    eliozo:skillNumber "7.0.0.0.0" ;
+    skos:narrower eliozo:misc.extr,
+        eliozo:misc.ind,
+        eliozo:misc.invar,
+        eliozo:misc.symm,
+        eliozo:misc.try ;
     skos:prefLabel "misc" .
 
-eozol:misc.invar eozol:skillDescription "Izmantot invariantus" ;
-    eozol:skillIdentifier "misc.invar" ;
-    eozol:skillNumber "7.3.0.0.0" ;
-    skos:broader eozol:misc ;
-    skos:narrower eozol:misc.invar.congr,
-        eozol:misc.invar.expr,
-        eozol:misc.invar.game,
-        eozol:misc.invar.parity ;
+eliozo:misc.invar eliozo:skillDescription "Izmantot invariantus" ;
+    eliozo:skillIdentifier "misc.invar" ;
+    eliozo:skillNumber "7.3.0.0.0" ;
+    skos:broader eliozo:misc ;
+    skos:narrower eliozo:misc.invar.congr,
+        eliozo:misc.invar.expr,
+        eliozo:misc.invar.game,
+        eliozo:misc.invar.parity ;
     skos:prefLabel "misc.invar" .
 
-eozol:mod eozol:skillDescription "Izmantot spriedumus par skaitļu atlikumiem, dalot ar to pašu" ;
-    eozol:skillIdentifier "mod" ;
-    eozol:skillNumber "3.0.0.0.0" ;
-    skos:narrower eozol:mod.congr,
-        eozol:mod.eq,
-        eozol:mod.exp,
-        eozol:mod.fix,
-        eozol:mod.period ;
+eliozo:mod eliozo:skillDescription "Izmantot spriedumus par skaitļu atlikumiem, dalot ar to pašu" ;
+    eliozo:skillIdentifier "mod" ;
+    eliozo:skillNumber "3.0.0.0.0" ;
+    skos:narrower eliozo:mod.congr,
+        eliozo:mod.eq,
+        eliozo:mod.exp,
+        eliozo:mod.fix,
+        eliozo:mod.period ;
     skos:prefLabel "mod" .
 
-eozol:nota.algor eozol:skillDescription "Izmantot ar pozicionālo pierakstu saistītos algoritmus" ;
-    eozol:skillIdentifier "nota.algor" ;
-    eozol:skillNumber "4.4.0.0.0" ;
-    skos:broader eozol:nota ;
-    skos:narrower eozol:nota.algor.arithm,
-        eozol:nota.algor.fast,
-        eozol:nota.algor.longdiv,
-        eozol:nota.algor.nondec ;
+eliozo:nota.algor eliozo:skillDescription "Izmantot ar pozicionālo pierakstu saistītos algoritmus" ;
+    eliozo:skillIdentifier "nota.algor" ;
+    eliozo:skillNumber "4.4.0.0.0" ;
+    skos:broader eliozo:nota ;
+    skos:narrower eliozo:nota.algor.arithm,
+        eliozo:nota.algor.fast,
+        eliozo:nota.algor.longdiv,
+        eliozo:nota.algor.nondec ;
     skos:prefLabel "nota.algor" .
 
-eozol:seq.geom eozol:skillDescription "Izmantot ģeometriskas progresijas īpašības" ;
-    eozol:skillIdentifier "seq.geom" ;
-    eozol:skillNumber "5.2.0.0.0" ;
-    skos:broader eozol:seq ;
-    skos:narrower eozol:seq.geom.decnotation,
-        eozol:seq.geom.estimate,
-        eozol:seq.geom.infinite,
-        eozol:seq.geom.summation ;
+eliozo:seq.geom eliozo:skillDescription "Izmantot ģeometriskas progresijas īpašības" ;
+    eliozo:skillIdentifier "seq.geom" ;
+    eliozo:skillNumber "5.2.0.0.0" ;
+    skos:broader eliozo:seq ;
+    skos:narrower eliozo:seq.geom.decnotation,
+        eliozo:seq.geom.estimate,
+        eliozo:seq.geom.infinite,
+        eliozo:seq.geom.summation ;
     skos:prefLabel "seq.geom" .
 
-eozol:alg.ineq eozol:skillDescription "Pamatot un izmantot nevienādības" ;
-    eozol:skillIdentifier "alg.ineq" ;
-    eozol:skillNumber "1.5.0.0.0" ;
-    skos:broader eozol:alg ;
-    skos:narrower eozol:alg.ineq.equations,
-        eozol:alg.ineq.monotonicity,
-        eozol:alg.ineq.quadratic,
-        eozol:alg.ineq.square,
-        eozol:alg.ineq.transitive ;
+eliozo:alg.ineq eliozo:skillDescription "Pamatot un izmantot nevienādības" ;
+    eliozo:skillIdentifier "alg.ineq" ;
+    eliozo:skillNumber "1.5.0.0.0" ;
+    skos:broader eliozo:alg ;
+    skos:narrower eliozo:alg.ineq.equations,
+        eliozo:alg.ineq.monotonicity,
+        eliozo:alg.ineq.quadratic,
+        eliozo:alg.ineq.square,
+        eliozo:alg.ineq.transitive ;
     skos:prefLabel "alg.ineq" .
 
-eozol:div.fta.divisors eozol:skillDescription "Izdarīt spriedumus par skaitļa dalītājiem, ja tas izteikts kā reizinājums." ;
-    eozol:skillIdentifier "div.fta.divisors" ;
-    eozol:skillNumber "2.2.2.0.0" ;
-    skos:broader eozol:div.fta ;
-    skos:narrower eozol:div.fta.divisors.frac,
-        eozol:div.fta.divisors.num,
-        eozol:div.fta.divisors.pair,
-        eozol:div.fta.divisors.struct,
-        eozol:div.fta.divisors.test ;
+eliozo:div.fta.divisors eliozo:skillDescription "Izdarīt spriedumus par skaitļa dalītājiem, ja tas izteikts kā reizinājums." ;
+    eliozo:skillIdentifier "div.fta.divisors" ;
+    eliozo:skillNumber "2.2.2.0.0" ;
+    skos:broader eliozo:div.fta ;
+    skos:narrower eliozo:div.fta.divisors.frac,
+        eliozo:div.fta.divisors.num,
+        eliozo:div.fta.divisors.pair,
+        eliozo:div.fta.divisors.struct,
+        eliozo:div.fta.divisors.test ;
     skos:prefLabel "div.fta.divisors" .
 
-eozol:div.prop eozol:skillDescription "Secināt, izmantojot vienkāršas dalāmības īpašības" ;
-    eozol:skillIdentifier "div.prop" ;
-    eozol:skillNumber "2.1.0.0.0" ;
-    skos:broader eozol:div ;
-    skos:narrower eozol:div.prop.add,
-        eozol:div.prop.composite,
-        eozol:div.prop.euclidlemma,
-        eozol:div.prop.primes,
-        eozol:div.prop.prod ;
+eliozo:div.prop eliozo:skillDescription "Secināt, izmantojot vienkāršas dalāmības īpašības" ;
+    eliozo:skillIdentifier "div.prop" ;
+    eliozo:skillNumber "2.1.0.0.0" ;
+    skos:broader eliozo:div ;
+    skos:narrower eliozo:div.prop.add,
+        eliozo:div.prop.composite,
+        eliozo:div.prop.euclidlemma,
+        eliozo:div.prop.primes,
+        eliozo:div.prop.prod ;
     skos:prefLabel "div.prop" .
 
-eozol:div.valu.prop eozol:skillDescription "Izmantot valuāciju īpašības" ;
-    eozol:skillIdentifier "div.valu.prop" ;
-    eozol:skillNumber "2.5.1.0.0" ;
-    skos:broader eozol:div.valu ;
-    skos:narrower eozol:div.valu.prop.legendre,
-        eozol:div.valu.prop.min,
-        eozol:div.valu.prop.other,
-        eozol:div.valu.prop.prod,
-        eozol:div.valu.prop.sum ;
+eliozo:div.valu.prop eliozo:skillDescription "Izmantot valuāciju īpašības" ;
+    eliozo:skillIdentifier "div.valu.prop" ;
+    eliozo:skillNumber "2.5.1.0.0" ;
+    skos:broader eliozo:div.valu ;
+    skos:narrower eliozo:div.valu.prop.legendre,
+        eliozo:div.valu.prop.min,
+        eliozo:div.valu.prop.other,
+        eliozo:div.valu.prop.prod,
+        eliozo:div.valu.prop.sum ;
     skos:prefLabel "div.valu.prop" .
 
-eozol:mod.congr eozol:skillDescription "Izmantot apgalvojumus par skaitļa izteikšanu ar dalījumu un atlikumu (a=bq+r) un kongruenču klases." ;
-    eozol:skillIdentifier "mod.congr" ;
-    eozol:skillNumber "3.2.0.0.0" ;
-    skos:broader eozol:mod ;
-    skos:narrower eozol:mod.congr.classes,
-        eozol:mod.congr.poly,
-        eozol:mod.congr.pow,
-        eozol:mod.congr.prod,
-        eozol:mod.congr.sumdiff ;
+eliozo:mod.congr eliozo:skillDescription "Izmantot apgalvojumus par skaitļa izteikšanu ar dalījumu un atlikumu (a=bq+r) un kongruenču klases." ;
+    eliozo:skillIdentifier "mod.congr" ;
+    eliozo:skillNumber "3.2.0.0.0" ;
+    skos:broader eliozo:mod ;
+    skos:narrower eliozo:mod.congr.classes,
+        eliozo:mod.congr.poly,
+        eliozo:mod.congr.pow,
+        eliozo:mod.congr.prod,
+        eliozo:mod.congr.sumdiff ;
     skos:prefLabel "mod.congr" .
 
-eozol:seq.arithm eozol:skillDescription "Lietot zināšanas par aritmētiskām progresijām" ;
-    eozol:skillIdentifier "seq.arithm" ;
-    eozol:skillNumber "5.1.0.0.0" ;
-    skos:broader eozol:seq ;
-    skos:narrower eozol:seq.arithm.expr,
-        eozol:seq.arithm.mod,
-        eozol:seq.arithm.numestimate,
-        eozol:seq.arithm.pairsum,
-        eozol:seq.arithm.summation ;
+eliozo:seq.arithm eliozo:skillDescription "Lietot zināšanas par aritmētiskām progresijām" ;
+    eliozo:skillIdentifier "seq.arithm" ;
+    eliozo:skillNumber "5.1.0.0.0" ;
+    skos:broader eliozo:seq ;
+    skos:narrower eliozo:seq.arithm.expr,
+        eliozo:seq.arithm.mod,
+        eliozo:seq.arithm.numestimate,
+        eliozo:seq.arithm.pairsum,
+        eliozo:seq.arithm.summation ;
     skos:prefLabel "seq.arithm" .
 
-eozol:alg eozol:skillDescription "Izmantot algebriskos apzīmējumus un metodes skaitļu teorijas uzdevumos" ;
-    eozol:skillIdentifier "alg" ;
-    eozol:skillNumber "1.0.0.0.0" ;
-    skos:narrower eozol:alg.equ,
-        eozol:alg.expr,
-        eozol:alg.ineq,
-        eozol:alg.linear,
-        eozol:alg.poly,
-        eozol:alg.series,
-        eozol:alg.sets,
-        eozol:alg.tra ;
+eliozo:alg eliozo:skillDescription "Izmantot algebriskos apzīmējumus un metodes skaitļu teorijas uzdevumos" ;
+    eliozo:skillIdentifier "alg" ;
+    eliozo:skillNumber "1.0.0.0.0" ;
+    skos:narrower eliozo:alg.equ,
+        eliozo:alg.expr,
+        eliozo:alg.ineq,
+        eliozo:alg.linear,
+        eliozo:alg.poly,
+        eliozo:alg.series,
+        eliozo:alg.sets,
+        eliozo:alg.tra ;
     skos:prefLabel "alg" .
 
-eozol:nota.divrule eozol:skillDescription "Izmantot dalāmības pazīmes" ;
-    eozol:skillIdentifier "nota.divrule" ;
-    eozol:skillNumber "4.2.0.0.0" ;
-    skos:broader eozol:nota ;
-    skos:narrower eozol:nota.divrule.1001,
-        eozol:nota.divrule.101,
-        eozol:nota.divrule.11,
-        eozol:nota.divrule.2_5_10,
-        eozol:nota.divrule.2_5pow,
-        eozol:nota.divrule.3_9,
-        eozol:nota.divrule.composite ;
+eliozo:nota.divrule eliozo:skillDescription "Izmantot dalāmības pazīmes" ;
+    eliozo:skillIdentifier "nota.divrule" ;
+    eliozo:skillNumber "4.2.0.0.0" ;
+    skos:broader eliozo:nota ;
+    skos:narrower eliozo:nota.divrule.1001,
+        eliozo:nota.divrule.101,
+        eliozo:nota.divrule.11,
+        eliozo:nota.divrule.2_5_10,
+        eliozo:nota.divrule.2_5pow,
+        eliozo:nota.divrule.3_9,
+        eliozo:nota.divrule.composite ;
     skos:prefLabel "nota.divrule" .
 

@@ -5,7 +5,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix eozol: <http://www.dudajevagatve.lv/eozol#> .
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
 <http://www.w3.org/TR/rdf-syntax-grammar>
@@ -15,58 +15,58 @@
     ex:homePage <http://purl.org/net/dajobe/>
   ] .
 
-eozol:algebra-arithmetics rdf:type skos:Concept ;
+eliozo:algebra-arithmetics rdf:type skos:Concept ;
     skos:prefLabel "Algebra and Arithmetics"@en ;
-    skos:narrower eozol:word-problems .
+    skos:narrower eliozo:word-problems .
 
-eozol:word-problems rdf:type skos:Concept ;
+eliozo:word-problems rdf:type skos:Concept ;
 	skos:prefLabel "Word problems"@en ;
-	skos:broader eozol:algebra-arithmetics .
+	skos:broader eliozo:algebra-arithmetics .
 	
-eozol:mod.exp
-	eozol:skillIdentifier "mod.exp" ;
-	eozol:skillDescription "Izmantot eksponentfunkciju atlikumu īpašības." ;
+eliozo:mod.exp
+	eliozo:skillIdentifier "mod.exp" ;
+	eliozo:skillDescription "Izmantot eksponentfunkciju atlikumu īpašības." ;
 	skos:prefLabel "Eksponentfunkciju atlikumi" ;
-	skos:narrower eozol:mod.exp.fermat .
+	skos:narrower eliozo:mod.exp.fermat .
 
-eozol:mod.exp.fermat
-	eozol:skillIdentifier "mod.exp.fermat" ;
-	eozol:skillDescription "Lietot Mazo Fermā teorēmu: $ap−1$ kongruents ar 1 katram pirmskaitlim p, ja gcd(a,p)=1" ;
+eliozo:mod.exp.fermat
+	eliozo:skillIdentifier "mod.exp.fermat" ;
+	eliozo:skillDescription "Lietot Mazo Fermā teorēmu: $ap−1$ kongruents ar 1 katram pirmskaitlim p, ja gcd(a,p)=1" ;
 	skos:prefLabel "M.Fermā teorēma" ;
-	skos:broader eozol:mod.exp .
+	skos:broader eliozo:mod.exp .
 	
-eozol:alg.tra.binom.square
-	eozol:skillIdentfier "tra.binom.square" ;
-	eozol:skillDescription "Atvērt iekavas izteiksmēs (a+b)2 un (a−b)2 un dalīt reizinātājos" ;
+eliozo:alg.tra.binom.square
+	eliozo:skillIdentfier "tra.binom.square" ;
+	eliozo:skillDescription "Atvērt iekavas izteiksmēs (a+b)2 un (a−b)2 un dalīt reizinātājos" ;
 	skos:prefLabel "Binoma kvadrāti" .
 	
-eozol:div.fta.divisors
-	eozol:skillIdentfier "div.fta.divisors" ;
-	eozol:skillDescription "Izdarīt spriedumus par skaitļa dalītājiem, ja tas izteikts kā reizinājums." ;
+eliozo:div.fta.divisors
+	eliozo:skillIdentfier "div.fta.divisors" ;
+	eliozo:skillDescription "Izdarīt spriedumus par skaitļa dalītājiem, ja tas izteikts kā reizinājums." ;
 	skos:prefLabel "Dalītāju atrašana" .
 	
-eozol:LV.AO.2000.7.1 
-	eozol:text "Dots, ka $a,b,c,d$ – naturāli skaitļi un $ab=cd$. Pierādīt, ka skaitli $a^2 + b^2 + c^2 + d^2$ var izsacīt kā divu veselu skaitļu kvadrātu summu. Vai to noteikti var izsacīt kā divu naturālu skaitļu kvadrātu summu?"@lv ;
-	eozol:problemid "LV.AO.2000.7.1";
-	eozol:year "2000" ;
-	eozol:grade "7" ;
-	eozol:olympiad "LV.AO" ;
-	eozol:skill eozol:alg.tra.binom.square ;
-	eozol:questionType eozol:Prove.Other ;
-	eozol:concepts "square" ;
-	eozol:hint eozol:LV.AO.2000.7.1.hint1 .
+eliozo:LV.AO.2000.7.1 
+	eliozo:text "Dots, ka $a,b,c,d$ – naturāli skaitļi un $ab=cd$. Pierādīt, ka skaitli $a^2 + b^2 + c^2 + d^2$ var izsacīt kā divu veselu skaitļu kvadrātu summu. Vai to noteikti var izsacīt kā divu naturālu skaitļu kvadrātu summu?"@lv ;
+	eliozo:problemid "LV.AO.2000.7.1";
+	eliozo:year "2000" ;
+	eliozo:grade "7" ;
+	eliozo:olympiad "LV.AO" ;
+	eliozo:skill eliozo:alg.tra.binom.square ;
+	eliozo:questionType eliozo:Prove.Other ;
+	eliozo:concepts "square" ;
+	eliozo:hint eliozo:LV.AO.2000.7.1.hint1 .
 
-eozol:LV.AO.2000.7.1.hint1
-	eozol:hintTitle "Kvadrātu atdalīšana" ;
-	eozol:hintText "Pieskaitīt $2ab$ un atņemt tam vienādo $2cd$, atdalīt kvadrātus. $1+1+1+1 \\neq x^2 + y^2$, $x, y \\in \\mathbb{N}$."@lv .
+eliozo:LV.AO.2000.7.1.hint1
+	eliozo:hintTitle "Kvadrātu atdalīšana" ;
+	eliozo:hintText "Pieskaitīt $2ab$ un atņemt tam vienādo $2cd$, atdalīt kvadrātus. $1+1+1+1 \\neq x^2 + y^2$, $x, y \\in \\mathbb{N}$."@lv .
 	
-eozol:LV.AO.2000.7.2
-	eozol:text "Atrast mazāko naturālo skaitli, kam visi cipari ir vienādi un kas dalās ar $49$?" ;
-	eozol:year "2000" ;
-	eozol:grade "7" ;
-	eozol:olympiad: "LV.AO" ;
-	eozol:skill eozol:mod.exp.fermat ;
-	eozol:skill eozol:div.fta.divisors ;
-	eozol:genre eozol:optimization ;
-	eozol:questionType eozol:Find.Min ;
-	eozol:concepts "decimal-notation" .
+eliozo:LV.AO.2000.7.2
+	eliozo:text "Atrast mazāko naturālo skaitli, kam visi cipari ir vienādi un kas dalās ar $49$?" ;
+	eliozo:year "2000" ;
+	eliozo:grade "7" ;
+	eliozo:olympiad: "LV.AO" ;
+	eliozo:skill eliozo:mod.exp.fermat ;
+	eliozo:skill eliozo:div.fta.divisors ;
+	eliozo:genre eliozo:optimization ;
+	eliozo:questionType eliozo:Find.Min ;
+	eliozo:concepts "decimal-notation" .

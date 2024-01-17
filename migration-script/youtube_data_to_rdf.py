@@ -3,7 +3,7 @@ import csv
 import rdflib
 import requests
 
-eozol_ns = "http://www.dudajevagatve.lv/eozol#"
+eliozo_ns = "http://www.dudajevagatve.lv/eliozo#"
 
 SKOS_NS = "http://www.w3.org/2004/02/skos/core#"
 
@@ -17,12 +17,12 @@ def getGoogleSpreadsheet():  # Funkcija, kas iegūst Google Spreadsheet dokument
 
 def readCSVfile(in_file, out_file):  # Funkcija, kas lasa CSV failu
     global SKOS_NS
-    global eozol_ns
+    global eliozo_ns
 
     g = rdflib.Graph()
 
     g.bind("skos", SKOS_NS)
-    g.bind("eozol", eozol_ns)
+    g.bind("eliozo", eliozo_ns)
     result = []
     with open(in_file, 'r', encoding='utf-8') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
@@ -54,20 +54,20 @@ def readCSVfile(in_file, out_file):  # Funkcija, kas lasa CSV failu
 
 # skillDescription ir string mainīgais, kurā glabājas RDF objekta vērtība
 def addToRdfGraph(g, problem_id, youtube_id, video_title, bookmarks):
-    global eozol_ns
+    global eliozo_ns
     global SKOS_NS
     global RDF_NS
-    problem_node = rdflib.URIRef(eozol_ns + problem_id)
-    problem_video_property = rdflib.URIRef(eozol_ns + 'video')
+    problem_node = rdflib.URIRef(eliozo_ns + problem_id)
+    problem_video_property = rdflib.URIRef(eliozo_ns + 'video')
     video_resource = rdflib.BNode()
 
     rdf_type_property = rdflib.URIRef(RDF_NS + "type")
-    rdf_type_value = rdflib.URIRef(eozol_ns + "Video")
+    rdf_type_value = rdflib.URIRef(eliozo_ns + "Video")
 
-    youtube_id_property = rdflib.URIRef(eozol_ns+'youtubeID')
+    youtube_id_property = rdflib.URIRef(eliozo_ns+'youtubeID')
     youtube_id_value = rdflib.term.Literal(youtube_id)
 
-    video_title_property = rdflib.URIRef(eozol_ns + "videoTitle")
+    video_title_property = rdflib.URIRef(eliozo_ns + "videoTitle")
     video_title_value = rdflib.term.Literal(video_title)
 
 
@@ -76,7 +76,7 @@ def addToRdfGraph(g, problem_id, youtube_id, video_title, bookmarks):
     g.add((video_resource, youtube_id_property, youtube_id_value))
     g.add((video_resource, video_title_property, video_title_value))
 
-    video_bookmark_property = rdflib.URIRef(eozol_ns + "videoBookmarks")
+    video_bookmark_property = rdflib.URIRef(eliozo_ns + "videoBookmarks")
 
     video_bookmarks = rdflib.BNode()
     g.add((video_resource, video_bookmark_property, video_bookmarks))
@@ -89,9 +89,9 @@ def addToRdfGraph(g, problem_id, youtube_id, video_title, bookmarks):
         seq_property = rdflib.URIRef(RDF_NS + "_{}".format(count))
         current_bookmark = rdflib.BNode()
         g.add((video_bookmarks, seq_property, current_bookmark))
-        current_bookmark_tstamp_property = rdflib.URIRef(eozol_ns + "tstamp")
+        current_bookmark_tstamp_property = rdflib.URIRef(eliozo_ns + "tstamp")
         g.add((current_bookmark, current_bookmark_tstamp_property, rdflib.term.Literal(tstamp, datatype=XSD.integer)))
-        current_bookmark_text_property = rdflib.URIRef(eozol_ns + "bmtext")
+        current_bookmark_text_property = rdflib.URIRef(eliozo_ns + "bmtext")
         g.add((current_bookmark, current_bookmark_text_property, rdflib.term.Literal(bmtext)))
         count += 1
 

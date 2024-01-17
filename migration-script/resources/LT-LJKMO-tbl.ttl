@@ -1,286 +1,286 @@
-@prefix eozol: <http://www.dudajevagatve.lv/eozol#> .
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-eozol:LT.LJKMO.1999.7_8.1 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:image "LT.LJKMO.1999.7_8.1.png" ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "1" ;
-    eozol:problemid "LT.LJKMO.1999.7_8.1" ;
-    eozol:skill eozol:alg.ineq.equations,
-        eozol:misc.extr.param,
-        eozol:nota.algor.arithm,
-        eozol:nota.est.numdigits ;
-    eozol:text """Atšifrējiet reizināšanu "stabiņā". Kā parasti, dažādiem
+eliozo:LT.LJKMO.1999.7_8.1 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:image "LT.LJKMO.1999.7_8.1.png" ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "1" ;
+    eliozo:problemid "LT.LJKMO.1999.7_8.1" ;
+    eliozo:skill eliozo:alg.ineq.equations,
+        eliozo:misc.extr.param,
+        eliozo:nota.algor.arithm,
+        eliozo:nota.est.numdigits ;
+    eliozo:text """Atšifrējiet reizināšanu "stabiņā". Kā parasti, dažādiem
 reizināmā un reizinātāja burtiem atbilst dažādi cipari.
 Visi citi cipari apzīmēti ar vienādu simbolu "x".
 Atšifrējiet reizinājumu:"""@lv ;
-    eozol:year "1999" .
+    eliozo:year "1999" .
 
-eozol:LT.LJKMO.1999.7_8.3 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "3" ;
-    eozol:problemid "LT.LJKMO.1999.7_8.3" ;
-    eozol:skill eozol:misc.extr,
-        eozol:nota.divrule.2_5pow.divides ;
-    eozol:text """Atrodiet kādu $100$-ciparu skaitli, kurš dalās ar $100$
+eliozo:LT.LJKMO.1999.7_8.3 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "3" ;
+    eliozo:problemid "LT.LJKMO.1999.7_8.3" ;
+    eliozo:skill eliozo:misc.extr,
+        eliozo:nota.divrule.2_5pow.divides ;
+    eliozo:text """Atrodiet kādu $100$-ciparu skaitli, kurš dalās ar $100$
 un kura visu ciparu summa ir $100$. Atrodiet pašu mazāko šādu skaitli."""@lv ;
-    eozol:year "1999" .
+    eliozo:year "1999" .
 
-eozol:LT.LJKMO.2000.7_8.3 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "3" ;
-    eozol:problemid "LT.LJKMO.2000.7_8.3" ;
-    eozol:skill eozol:comb.full,
-        eozol:div.fta.divisors,
-        eozol:nota.algor.longdiv,
-        eozol:seq.recur.linear ;
-    eozol:text """Kādu pašu mazāko summu var iegūt, saskaitot visus ciparus skaitlim,
+eliozo:LT.LJKMO.2000.7_8.3 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "3" ;
+    eliozo:problemid "LT.LJKMO.2000.7_8.3" ;
+    eliozo:skill eliozo:comb.full,
+        eliozo:div.fta.divisors,
+        eliozo:nota.algor.longdiv,
+        eliozo:seq.recur.linear ;
+    eliozo:text """Kādu pašu mazāko summu var iegūt, saskaitot visus ciparus skaitlim,
 kurš bez atlikuma dalās ar $23$?"""@lv ;
-    eozol:year "2000" .
+    eliozo:year "2000" .
 
-eozol:LT.LJKMO.2001.7_8.1 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "1" ;
-    eozol:problemid "LT.LJKMO.2001.7_8.1" ;
-    eozol:skill eozol:div.fta.divisors,
-        eozol:misc.extr ;
-    eozol:text """Vesels pozitīvs skaitlis uzrakstāms tikai ar trijniekiem un
+eliozo:LT.LJKMO.2001.7_8.1 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "1" ;
+    eliozo:problemid "LT.LJKMO.2001.7_8.1" ;
+    eliozo:skill eliozo:div.fta.divisors,
+        eliozo:misc.extr ;
+    eliozo:text """Vesels pozitīvs skaitlis uzrakstāms tikai ar trijniekiem un
 septiņniekiem, bet visu tā ciparu summa dalās gan ar $3$, gan ar $7$.
 Atrodiet pašu mazāko tādu skaitli."""@lv ;
-    eozol:year "2001" .
+    eliozo:year "2001" .
 
-eozol:LT.LJKMO.2001.7_8.2 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "2" ;
-    eozol:problemid "LT.LJKMO.2001.7_8.2" ;
-    eozol:skill eozol:alg.equ.guess,
-        eozol:alg.equ.parametrize,
-        eozol:alg.equ.quadratic.discriminant,
-        eozol:alg.ineq.quadratic ;
-    eozol:text """Atrodiet veselus atrisinājumus vienādojumam
+eliozo:LT.LJKMO.2001.7_8.2 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "2" ;
+    eliozo:problemid "LT.LJKMO.2001.7_8.2" ;
+    eliozo:skill eliozo:alg.equ.guess,
+        eliozo:alg.equ.parametrize,
+        eliozo:alg.equ.quadratic.discriminant,
+        eliozo:alg.ineq.quadratic ;
+    eliozo:text """Atrodiet veselus atrisinājumus vienādojumam
 $x-y= x^2 + xy+ y^2$."""@lv ;
-    eozol:year "2001" .
+    eliozo:year "2001" .
 
-eozol:LT.LJKMO.2002.7_8.1 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "1" ;
-    eozol:problemid "LT.LJKMO.2002.7_8.1" ;
-    eozol:skill eozol:div.fta.pow.square ;
-    eozol:text """Ja no skaitļu virknes $2$, $4$, $6$, $8$, $10$, $12$,
+eliozo:LT.LJKMO.2002.7_8.1 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "1" ;
+    eliozo:problemid "LT.LJKMO.2002.7_8.1" ;
+    eliozo:skill eliozo:div.fta.pow.square ;
+    eliozo:text """Ja no skaitļu virknes $2$, $4$, $6$, $8$, $10$, $12$,
 $14$ un $16$ izsvītrotu $4$, $8$, $10$, $14$ un $16$,
 tad atlikušo skaitļu $2$, $6$ un $12$ reizinājums būtu
 $144 = 12 \\cdot 12$, tātad būtu pilns kvadrāts.
 Kāds ir mazākais skaitļu skaits, ko jāizsvītro no sākotnējās virknes, lai
 atlikušo skaitļu reizinājums būtu pilns kvadrāts?"""@lv ;
-    eozol:year "2002" .
+    eliozo:year "2002" .
 
-eozol:LT.LJKMO.2002.7_8.2 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "2" ;
-    eozol:problemid "LT.LJKMO.2002.7_8.2" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2002" .
+eliozo:LT.LJKMO.2002.7_8.2 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "2" ;
+    eliozo:problemid "LT.LJKMO.2002.7_8.2" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2002" .
 
-eozol:LT.LJKMO.2002.7_8.4 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "4" ;
-    eozol:problemid "LT.LJKMO.2002.7_8.4" ;
-    eozol:text """Ar $S(n)$ apzīmējam naturāla skaitļa $n$ ciparu summu, piemēram,
+eliozo:LT.LJKMO.2002.7_8.4 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "4" ;
+    eliozo:problemid "LT.LJKMO.2002.7_8.4" ;
+    eliozo:text """Ar $S(n)$ apzīmējam naturāla skaitļa $n$ ciparu summu, piemēram,
 $S(129) = 1+2+9=12$. Skaitļus $n$ un $m$ sauksim par , ja
 $n+S(n)=m+S(m)$. Atrodiet:
  divus radniecīgus skaitļus;
  trīs savstarpēji radniecīgus skaitļus;
  vai eksistē $23$ savstarpēji radniecīgi skaitļi?"""@lv ;
-    eozol:year "2002" .
+    eliozo:year "2002" .
 
-eozol:LT.LJKMO.2003.7_8.3 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "3" ;
-    eozol:problemid "LT.LJKMO.2003.7_8.3" ;
-    eozol:skill eozol:misc.invar,
-        eozol:nota.combine.padding,
-        eozol:seq.arithm.mod ;
-    eozol:text """Atrodiet kaut vienu tādu skaitli, kas beidzas ar "2003",
+eliozo:LT.LJKMO.2003.7_8.3 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "3" ;
+    eliozo:problemid "LT.LJKMO.2003.7_8.3" ;
+    eliozo:skill eliozo:misc.invar,
+        eliozo:nota.combine.padding,
+        eliozo:seq.arithm.mod ;
+    eliozo:text """Atrodiet kaut vienu tādu skaitli, kas beidzas ar "2003",
 dalās ar $2003$ un kura ciparu summa vienāda ar $2003$."""@lv ;
-    eozol:year "2003" .
+    eliozo:year "2003" .
 
-eozol:LT.LJKMO.2003.7_8.4 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:image "LT.LJKMO.2003.7_8.4.png" ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "4" ;
-    eozol:problemid "LT.LJKMO.2003.7_8.4" ;
-    eozol:skill eozol:comb.graph.bipartite,
-        eozol:div.prop.primes ;
-    eozol:text """No naturāliem skaitļiem $1,2,\\ldots{},22$,
+eliozo:LT.LJKMO.2003.7_8.4 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:image "LT.LJKMO.2003.7_8.4.png" ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "4" ;
+    eliozo:problemid "LT.LJKMO.2003.7_8.4" ;
+    eliozo:skill eliozo:comb.graph.bipartite,
+        eliozo:div.prop.primes ;
+    eliozo:text """No naturāliem skaitļiem $1,2,\\ldots{},22$,
 izmantojot tos visus pa vienai reizei, tika
 izveidotas $11$ parastas daļas.
 Kāds lielākais skaits no šīm daļām var būt
 vienāds veseliem skaitļiem?"""@lv ;
-    eozol:year "2003" .
+    eliozo:year "2003" .
 
-eozol:LT.LJKMO.2004.7_8.1 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "1" ;
-    eozol:problemid "LT.LJKMO.2004.7_8.1" ;
-    eozol:text """$7$-ciparu skaitlis uzrakstāms ar $7$ dažādiem cipariem un dalās ar visiem
+eliozo:LT.LJKMO.2004.7_8.1 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "1" ;
+    eliozo:problemid "LT.LJKMO.2004.7_8.1" ;
+    eliozo:text """$7$-ciparu skaitlis uzrakstāms ar $7$ dažādiem cipariem un dalās ar visiem
 septiņiem saviem cipariem.
  Atrodiet vienu šādu $7$-ciparu skaitli;
  Atrodiet pašu lielāko tādu $7$-ciparu skaitli;
  Atrodiet pašu mazāko tādu $7$-ciparu skaitli."""@lv ;
-    eozol:year "2004" .
+    eliozo:year "2004" .
 
-eozol:LT.LJKMO.2004.7_8.3 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "3" ;
-    eozol:problemid "LT.LJKMO.2004.7_8.3" ;
-    eozol:text """Nenegatīvi veseli skaitļi $m$ un $n$ apmierina nosacījumu
+eliozo:LT.LJKMO.2004.7_8.3 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "3" ;
+    eliozo:problemid "LT.LJKMO.2004.7_8.3" ;
+    eliozo:text """Nenegatīvi veseli skaitļi $m$ un $n$ apmierina nosacījumu
 $$mn - n + m = 2004.$$
  Atrodiet vienu tādu skaitļu $m$ un $n$ pāri $(m; n)$;
  Atrodiet visus iespējamos tādus skaitļu $m$ un $n$ pārus."""@lv ;
-    eozol:year "2004" .
+    eliozo:year "2004" .
 
-eozol:LT.LJKMO.2005.7_8.2 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "2" ;
-    eozol:problemid "LT.LJKMO.2005.7_8.2" ;
-    eozol:text """Skaitļu $83$ un $89$ pāri $(83;89)$ sauc par , jo
+eliozo:LT.LJKMO.2005.7_8.2 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "2" ;
+    eliozo:problemid "LT.LJKMO.2005.7_8.2" ;
+    eliozo:text """Skaitļu $83$ un $89$ pāri $(83;89)$ sauc par , jo
 $83 + 8 + 9 = 100$ un $89 + 8 + 3 = 100$.
 Cik pavisam ir divciparu simta pāru? Atrodiet tos."""@lv ;
-    eozol:year "2005" .
+    eliozo:year "2005" .
 
-eozol:LT.LJKMO.2006.7_8.1 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "1" ;
-    eozol:problemid "LT.LJKMO.2006.7_8.1" ;
-    eozol:text """Tikai ar nullēm un vieniniekiem uzrakstāms $11$-ciparu skaitlis beidzas ar "11" un
+eliozo:LT.LJKMO.2006.7_8.1 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "1" ;
+    eliozo:problemid "LT.LJKMO.2006.7_8.1" ;
+    eliozo:text """Tikai ar nullēm un vieniniekiem uzrakstāms $11$-ciparu skaitlis beidzas ar "11" un
 dalās ar $11$.
  Atrodiet kaut vienu tādu $11$-ciparu skaitli.
  Atrodiet pašu mazāko tādu $11$-ciparu skaitli.
  Atrodiet pašu lielāko tādu $11$-ciparu skaitli."""@lv ;
-    eozol:year "2006" .
+    eliozo:year "2006" .
 
-eozol:LT.LJKMO.2006.7_8.4 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "4" ;
-    eozol:problemid "LT.LJKMO.2006.7_8.4" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2006" .
+eliozo:LT.LJKMO.2006.7_8.4 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "4" ;
+    eliozo:problemid "LT.LJKMO.2006.7_8.4" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2006" .
 
-eozol:LT.LJKMO.2007.7_8.2 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "2" ;
-    eozol:problemid "LT.LJKMO.2007.7_8.2" ;
-    eozol:skill eozol:comb.graph.cycle ;
-    eozol:text """ Barons Minhauzens netic, ka visus veselos pozitīvos skaitļus no $1$ līdz $16$
+eliozo:LT.LJKMO.2007.7_8.2 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "2" ;
+    eliozo:problemid "LT.LJKMO.2007.7_8.2" ;
+    eliozo:skill eliozo:comb.graph.cycle ;
+    eliozo:text """ Barons Minhauzens netic, ka visus veselos pozitīvos skaitļus no $1$ līdz $16$
 iespējams izrakstīt vienā rindā tā, ka jebkuru divu blakus esošu skaitļu
 summa būtu pilns kvadrāts. Vai baronam ir taisnība, tam neticot?
  Barons Minhauzens tic, ka visus veselos pozitīvos skaitļus no
 $1$ līdz $16$ var izrakstīt pa apli tā, ka jebkuru divu blakus esošu skaitļu
 summa būtu pilns kvadrāts. Vai baronam ir taisnība, šādi uzskatot?"""@lv ;
-    eozol:year "2007" .
+    eliozo:year "2007" .
 
-eozol:LT.LJKMO.2007.7_8.4 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "4" ;
-    eozol:problemid "LT.LJKMO.2007.7_8.4" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2007" .
+eliozo:LT.LJKMO.2007.7_8.4 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "4" ;
+    eliozo:problemid "LT.LJKMO.2007.7_8.4" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2007" .
 
-eozol:LT.LJKMO.2008.7_8.1 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "1" ;
-    eozol:problemid "LT.LJKMO.2008.7_8.1" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2008" .
+eliozo:LT.LJKMO.2008.7_8.1 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "1" ;
+    eliozo:problemid "LT.LJKMO.2008.7_8.1" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2008" .
 
-eozol:LT.LJKMO.2008.7_8.2 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:image "LT.LJKMO.2008.7_8.2.png" ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "2" ;
-    eozol:problemid "LT.LJKMO.2008.7_8.2" ;
-    eozol:text """Alisa raksta astoņus ciparus, kas lielāki par vienu - $2$, $3$, $4$, $5$, $6$, $7$,
+eliozo:LT.LJKMO.2008.7_8.2 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:image "LT.LJKMO.2008.7_8.2.png" ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "2" ;
+    eliozo:problemid "LT.LJKMO.2008.7_8.2" ;
+    eliozo:text """Alisa raksta astoņus ciparus, kas lielāki par vienu - $2$, $3$, $4$, $5$, $6$, $7$,
 $8$ un $9$ pa vienam katrā no $8$
 vienādības lodziņiem tā, lai vienādība būtu patiesa.
 Ar ko vienāda lielākā no trim daļām šajā vienādībā?"""@lv ;
-    eozol:year "2008" .
+    eliozo:year "2008" .
 
-eozol:LT.LJKMO.2008.7_8.4 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "4" ;
-    eozol:problemid "LT.LJKMO.2008.7_8.4" ;
-    eozol:text """Veselīgais skeptiķis Sančo Pansa neparko netic, ka
+eliozo:LT.LJKMO.2008.7_8.4 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "4" ;
+    eliozo:problemid "LT.LJKMO.2008.7_8.4" ;
+    eliozo:text """Veselīgais skeptiķis Sančo Pansa neparko netic, ka
 nepieredzējis meklētājs varētu atrast tādu naturālu
 skaitli $n$, ka lielais skaitlis $n^6 + 206$
 dalītos bez atlikuma ar citu palielu skaitli $n^2 + 2$,
 bet Dons Kihots arvien daudzina, ka tādi skaitļi ir.
 Varbūt tiešām iespējams noskaidrot, cik tādu ir
 un kādi tie ir?"""@lv ;
-    eozol:year "2008" .
+    eliozo:year "2008" .
 
-eozol:LT.LJKMO.2009.7_8.3 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "3" ;
-    eozol:problemid "LT.LJKMO.2009.7_8.3" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2009" .
+eliozo:LT.LJKMO.2009.7_8.3 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "3" ;
+    eliozo:problemid "LT.LJKMO.2009.7_8.3" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2009" .
 
-eozol:LT.LJKMO.2009.7_8.4 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:image "LT.LJKMO.2009.7_8.4.png" ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "4" ;
-    eozol:problemid "LT.LJKMO.2009.7_8.4" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2009" .
+eliozo:LT.LJKMO.2009.7_8.4 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:image "LT.LJKMO.2009.7_8.4.png" ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "4" ;
+    eliozo:problemid "LT.LJKMO.2009.7_8.4" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2009" .
 
-eozol:LT.LJKMO.2010.7_8.1 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "1" ;
-    eozol:problemid "LT.LJKMO.2010.7_8.1" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2010" .
+eliozo:LT.LJKMO.2010.7_8.1 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "1" ;
+    eliozo:problemid "LT.LJKMO.2010.7_8.1" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2010" .
 
-eozol:LT.LJKMO.2010.7_8.5 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "5" ;
-    eozol:problemid "LT.LJKMO.2010.7_8.5" ;
-    eozol:text """Princese lūdza Sinbadam visiem paskaidrot, vai skaitlis
+eliozo:LT.LJKMO.2010.7_8.5 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "5" ;
+    eliozo:problemid "LT.LJKMO.2010.7_8.5" ;
+    eliozo:text """Princese lūdza Sinbadam visiem paskaidrot, vai skaitlis
 $4^{20} + 2^{20} + 1$ tiešām dalās vēl ar kādu trešo naturālo skaitli,
 bet ne tikai ar $1$ un, zināms, pats ar sevi.
 (Zinātniski izsakoties, Princese apvaicājās, vai tas
 skaitlis ir pirmskaitlis, vai nē.)
 Kā tur ir? Atbildi princesei pamatojiet."""@lv ;
-    eozol:year "2010" .
+    eliozo:year "2010" .
 
-eozol:LT.LJKMO.2011.7_8.1 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "1" ;
-    eozol:problemid "LT.LJKMO.2011.7_8.1" ;
-    eozol:text """Ķīvīte Matilde no kaut kurienes atnesa trīsciparu skaitli,
+eliozo:LT.LJKMO.2011.7_8.1 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "1" ;
+    eliozo:problemid "LT.LJKMO.2011.7_8.1" ;
+    eliozo:text """Ķīvīte Matilde no kaut kurienes atnesa trīsciparu skaitli,
 cūka Kamila tūlīt rotaļīgi samainīja vietām tā vienu un desmitu
 ciparus, bet Ēzelītis Daiņus, neko negaidīdams un nevienam nevaicādams,
 ņēma un saskaitīja abus šos skaitļus.
@@ -289,152 +289,152 @@ Zirgs Dominiks pajautāja, kāda gan ir šī summa?
 summai ir $4$ cipari un tā sākas ar cipariem $173$.
 Zirgs Dominiks nolēma atrast, kāds varētu būt tas pēdējais,
 ceturtais vēl nezināmās summas (vienu pozīcijas) cipars."""@lv ;
-    eozol:year "2011" .
+    eliozo:year "2011" .
 
-eozol:LT.LJKMO.2011.7_8.2 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "2" ;
-    eozol:problemid "LT.LJKMO.2011.7_8.2" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2011" .
+eliozo:LT.LJKMO.2011.7_8.2 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "2" ;
+    eliozo:problemid "LT.LJKMO.2011.7_8.2" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2011" .
 
-eozol:LT.LJKMO.2012.7_8.1 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "1" ;
-    eozol:problemid "LT.LJKMO.2012.7_8.1" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2012" .
+eliozo:LT.LJKMO.2012.7_8.1 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "1" ;
+    eliozo:problemid "LT.LJKMO.2012.7_8.1" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2012" .
 
-eozol:LT.LJKMO.2012.7_8.2 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "2" ;
-    eozol:problemid "LT.LJKMO.2012.7_8.2" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2012" .
+eliozo:LT.LJKMO.2012.7_8.2 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "2" ;
+    eliozo:problemid "LT.LJKMO.2012.7_8.2" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2012" .
 
-eozol:LT.LJKMO.2012.7_8.4 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "4" ;
-    eozol:problemid "LT.LJKMO.2012.7_8.4" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2012" .
+eliozo:LT.LJKMO.2012.7_8.4 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "4" ;
+    eliozo:problemid "LT.LJKMO.2012.7_8.4" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2012" .
 
-eozol:LT.LJKMO.2012.7_8.6 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "6" ;
-    eozol:problemid "LT.LJKMO.2012.7_8.6" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2012" .
+eliozo:LT.LJKMO.2012.7_8.6 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "6" ;
+    eliozo:problemid "LT.LJKMO.2012.7_8.6" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2012" .
 
-eozol:LT.LJKMO.2013.7_8.2 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "2" ;
-    eozol:problemid "LT.LJKMO.2013.7_8.2" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2013" .
+eliozo:LT.LJKMO.2013.7_8.2 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "2" ;
+    eliozo:problemid "LT.LJKMO.2013.7_8.2" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2013" .
 
-eozol:LT.LJKMO.2013.7_8.6 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "6" ;
-    eozol:problemid "LT.LJKMO.2013.7_8.6" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2013" .
+eliozo:LT.LJKMO.2013.7_8.6 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "6" ;
+    eliozo:problemid "LT.LJKMO.2013.7_8.6" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2013" .
 
-eozol:LT.LJKMO.2014.7_8.1 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "1" ;
-    eozol:problemid "LT.LJKMO.2014.7_8.1" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2014" .
+eliozo:LT.LJKMO.2014.7_8.1 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "1" ;
+    eliozo:problemid "LT.LJKMO.2014.7_8.1" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2014" .
 
-eozol:LT.LJKMO.2014.7_8.2 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "2" ;
-    eozol:problemid "LT.LJKMO.2014.7_8.2" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2014" .
+eliozo:LT.LJKMO.2014.7_8.2 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "2" ;
+    eliozo:problemid "LT.LJKMO.2014.7_8.2" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2014" .
 
-eozol:LT.LJKMO.2015.7_8.5 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "5" ;
-    eozol:problemid "LT.LJKMO.2015.7_8.5" ;
-    eozol:text """Naturāls skaitlis ir , ja tas ir lielāks par $10$ un
+eliozo:LT.LJKMO.2015.7_8.5 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "5" ;
+    eliozo:problemid "LT.LJKMO.2015.7_8.5" ;
+    eliozo:text """Naturāls skaitlis ir , ja tas ir lielāks par $10$ un
 dalās ar savu ciparu reizinājumu. Cik daudzi naturāli skaitļi, kuri visi ir
 taizemiski apaļīgi, var sekot pēc kārtas?"""@lv ;
-    eozol:year "2015" .
+    eliozo:year "2015" .
 
-eozol:LT.LJKMO.2015.7_8.6 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "6" ;
-    eozol:problemid "LT.LJKMO.2015.7_8.6" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2015" .
+eliozo:LT.LJKMO.2015.7_8.6 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "6" ;
+    eliozo:problemid "LT.LJKMO.2015.7_8.6" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2015" .
 
-eozol:LT.LJKMO.2016.7_8.3 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "3" ;
-    eozol:problemid "LT.LJKMO.2016.7_8.3" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2016" .
+eliozo:LT.LJKMO.2016.7_8.3 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "3" ;
+    eliozo:problemid "LT.LJKMO.2016.7_8.3" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2016" .
 
-eozol:LT.LJKMO.2016.7_8.5 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "5" ;
-    eozol:problemid "LT.LJKMO.2016.7_8.5" ;
-    eozol:text """Netālu no Lielā Ķīnas mūra dzīvo tāds vientuļnieks, kurš saka, ka
+eliozo:LT.LJKMO.2016.7_8.5 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "5" ;
+    eliozo:problemid "LT.LJKMO.2016.7_8.5" ;
+    eliozo:text """Netālu no Lielā Ķīnas mūra dzīvo tāds vientuļnieks, kurš saka, ka
 īsto skaitlisko pilngadību viņš varētu atzīt tikai tādam jaunietim,
 kurš aizgājis tuksnesī spētu viens pats, vispār bez citu palīdzības atbildēt uz šādu
 jautājumu: Vai var tabuliņas $5 \\times 10$ lodziņos ierakstīt visus skaitļus no $1$ līdz $50$,
 pa vienam skaitlim katrā lodziņā tā, ka visu rindiņu un visu kolonnu skaitļu summas
 būtu vienādas $15$ dažādiem, pēc kārtas sekojošiem naturāliem skaitļiem?"""@lv ;
-    eozol:year "2016" .
+    eliozo:year "2016" .
 
-eozol:LT.LJKMO.2017.7_8.2 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "2" ;
-    eozol:problemid "LT.LJKMO.2017.7_8.2" ;
-    eozol:text """Šovasar Brazīlijas presē parādījās ziņojums par neticamu
+eliozo:LT.LJKMO.2017.7_8.2 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "2" ;
+    eliozo:problemid "LT.LJKMO.2017.7_8.2" ;
+    eliozo:text """Šovasar Brazīlijas presē parādījās ziņojums par neticamu
 aritmētikas mīļotāja Romario sasniegumu: viņš, izmantojot pa
 vienai reizei deviņus no desmit cipariem  $0$, $1$, $2$, $3$,
 $4$, $5$, $6$, $7$, $8$, $9$, uzrakstīja trīs naturālus skaitļus,
 un šo skaitļu summa ir $2017$. Vai tas tiešām iespējams?
 Vai to pašu var izdarīt, neizmantojot kādi citu ciparu (citu nekā tas,
 kuru neizmantoja Romario)?"""@lv ;
-    eozol:year "2017" .
+    eliozo:year "2017" .
 
-eozol:LT.LJKMO.2017.7_8.3 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "3" ;
-    eozol:problemid "LT.LJKMO.2017.7_8.3" ;
-    eozol:text """Naturālu skaitli $n$ sauc par , ja tas dalās
+eliozo:LT.LJKMO.2017.7_8.3 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "3" ;
+    eliozo:problemid "LT.LJKMO.2017.7_8.3" ;
+    eliozo:text """Naturālu skaitli $n$ sauc par , ja tas dalās
 ar $9$, tā decimālpierakstā ir visi $10$ cipari un ja, bez tam,
 tajā vieninieku ir vairāk nekā nuļļu, divnieku – vairāk nekā vieninieku,
 utt. (t.i. jo lielāks cipars, jo vairāk reižu tas izmantots, uzrakstot $n$).
 Pamēģiniet:
  uzrakstīt kaut vienu brazīliski nobriedušu skaitli;
  atrast vismazāko brazīliski nobriedušu skaitli."""@lv ;
-    eozol:year "2017" .
+    eliozo:year "2017" .
 
-eozol:LT.LJKMO.2018.7_8.6 eozol:country "LT" ;
-    eozol:grade 7 ;
-    eozol:olympiad "LJKMO" ;
-    eozol:problem_number "6" ;
-    eozol:problemid "LT.LJKMO.2018.7_8.6" ;
-    eozol:text "<div style=\"font-size:70%\">"@lv ;
-    eozol:year "2018" .
+eliozo:LT.LJKMO.2018.7_8.6 eliozo:country "LT" ;
+    eliozo:grade 7 ;
+    eliozo:olympiad "LJKMO" ;
+    eliozo:problem_number "6" ;
+    eliozo:problemid "LT.LJKMO.2018.7_8.6" ;
+    eliozo:text "<div style=\"font-size:70%\">"@lv ;
+    eliozo:year "2018" .
 
