@@ -7,7 +7,7 @@ import re
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from werkzeug.wrappers import Response
 
-FUSEKI_URL = 'http://127.0.0.1:8080/jena-fuseki-war-4.7.0/abc/'
+FUSEKI_URL = 'http://127.0.0.1:9080/jena-fuseki-war-4.7.0/abc/'
 
 # Integrācija ar Jena Fuseki serveri
 def getSPARQLtopics():

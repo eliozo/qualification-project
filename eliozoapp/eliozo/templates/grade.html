@@ -24,8 +24,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://localhost:5000/" style="padding: 5px 5px"><a
-                        href="http://localhost:5000/"><img src="{{ url_for('static',filename='nms-logo.png') }}"
+                <a class="navbar-brand" href="{{ url_for('main') }}" style="padding: 5px 5px"><a
+                        href="{{ url_for('main') }}"><img src="{{ url_for('static',filename='nms-logo.png') }}"
                             style="width:60px;" alt="NMS-logo"></a></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
@@ -41,7 +41,7 @@
     </nav>
     <div class="container-fluid text-center">
         <div class="col-sm-8 text-left">
-            <a href="http://localhost:5000/olympiad?country_id={{country}}&olympiad_id={{olympiad}}"
+            <a href="{{ url_for('getOlympiad',country_id=country,olympiad_id=olympiad) }}"
                 class="button">Atpakaļ</a>
             <div class="container">
                 {{jsonfile}}
@@ -50,7 +50,7 @@
             <p> Visi uzdevumi, kas ir zem šīs olimpiādes, klases un gada </p>
             {% for problem in problems %}
             <h3>{{ problem.problem_number }}. uzdevums</h3>
-            <p> Uzdevuma ID: <a href='http://localhost:5000/problem?problemid={{problem.problemid}}'>
+            <p> Uzdevuma ID: <a href="{{ url_for('getProblem',problemid=problem.problemid) }}">
                     {{ problem.problemid }}
                 </a> </p>
             {{ problem.text | safe }}

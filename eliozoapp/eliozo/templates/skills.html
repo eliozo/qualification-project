@@ -24,7 +24,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://localhost:5000/" style="padding: 5px 5px"><a href="http://localhost:5000/"><img src="{{ url_for('static',filename='nms-logo.png') }}" style="width:80px;" alt="NMS-logo"></a></a>
+                <a class="navbar-brand" href="{{ url_for('main') }}" style="padding: 5px 5px"><a href="{{ url_for('main') }}"><img src="{{ url_for('static',filename='nms-logo.png') }}" style="width:80px;" alt="NMS-logo"></a></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </nav>
-    <a href="http://localhost:5000/"class="button">Atpakaļ</a>
+    <a href="{{ url_for('main') }}"class="button">Atpakaļ</a>
     <div class="container">
         {{jsonfile}}
     </div>
@@ -57,10 +57,10 @@
             </tr>
             {% for skill in all_skills %}
             <tr class="{{ loop.cycle('odd', 'even') }}">
-                <td><a href="/skill_tasks?skillIdentifier={{skill}}">{{ skill }}</a></td>
+                <td><a href="{{ url_for('getSkill',skillIdentifier=skill) }}">{{ skill }}</a></td>
                 <td>{{ all_skill_info[skill].skillNumber }}</td>
                 <td>{{ all_skill_info[skill].skillDescription |safe }}</td>
-                <td>{% for problem in all_skill_info[skill].problems %} <a href="/problem?problemid={{problem}}">{{
+                <td>{% for problem in all_skill_info[skill].problems %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
                         problem }}</a>, {% endfor %} </td>
             </tr>
             {% endfor %}

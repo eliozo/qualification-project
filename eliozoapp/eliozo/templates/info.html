@@ -18,7 +18,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://localhost:5000/" style="padding: 5px 5px"><a href="http://localhost:5000/"><img src="{{ url_for('static',filename='nms-logo.png') }}" style="width:80px;" alt="NMS-logo"></a></a>
+                <a class="navbar-brand" href="{{ url_for('main') }}" style="padding: 5px 5px"><a href="{{ url_for('main') }}"><img src="{{ url_for('static',filename='nms-logo.png') }}" style="width:80px;" alt="NMS-logo"></a></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
@@ -33,31 +33,33 @@
     </nav>
     <div class="container-fluid text-center">
         <div class="col-sm-8 text-left">
-            <a href="http://localhost:5000/" class="button">Atpakaļ</a>
+            <a href="{{ url_for('main') }}" class="button">Atpakaļ</a>
             <h2 class="info">Bibliogrāfija ar norādēm uz olimpiāžu uzdevumu pirmavotiem</h2>
         
             <p>Šeit var atrast noderīgas saites uz dažādu veidu starptautiskajām matemātikas olimpiādēm. </p>
         
-            <p><a class="info" href="https://artofproblemsolving.com/community/c14_international_contests">Art of Problem
-                    Solving: International Contests</a></p>
-            <p class="info">Forums, kur risināti IMO, IMO īso sarakstu, Baltijas ceļa, EGMO uzdevumu komplekti</p>
-            <hr>
-            <p><a class="info" href="https://artofproblemsolving.com/community/c58_national_olympiads">Art of Problem Solving:
-                    National Olympiads</a></p>
-            <p class="info">Ķīnas u.c. valstu sacensību uzdevumi</p>
-            <hr>
-            <p><a class="info" href="http://nms.lu.lv/uzdevumu-arhivs/latvijas-olimpiades/"> NMS arhīvs </a></p>
-            <p class="info">Latvijas nacionālās olimpiādes</p>
-            <hr>
-            <p><a class="info" href="http://www.math.olympiaadid.ut.ee/html/index.php?id=piirk/">Igaunijas žūrijas arhīvs</a>
-            </p>
-            <p class="info">Uzdevumu teksti igauņu un krievu valodās.
+            <dl>
+            <dt><a class="info" href="https://artofproblemsolving.com/community/c14_international_contests">Art of Problem
+                    Solving: International Contests</a></dt>
+            <dd class="info">Forums, kur risināti IMO, IMO īso sarakstu, Baltijas ceļa, EGMO uzdevumu komplekti</dd>
+            
+            <dt><a class="info" href="https://artofproblemsolving.com/community/c58_national_olympiads">Art of Problem Solving:
+                    National Olympiads</a></dt>
+            <dd class="info">Ķīnas u.c. valstu sacensību uzdevumi</dd>
+            
+            <dt><a class="info" href="http://nms.lu.lv/uzdevumu-arhivs/latvijas-olimpiades/"> NMS arhīvs </a></dt>
+            <dd class="info">Latvijas nacionālās olimpiādes</dd>
+            
+            <dt><a class="info" href="http://www.math.olympiaadid.ut.ee/html/index.php?id=piirk/">Igaunijas žūrijas arhīvs</a>
+            </dt>
+            <dd class="info">Uzdevumu teksti igauņu un krievu valodās.
                 Piirkonnavoorud (reģionu kārta), Lõppvoorud (gala/nacionālā kārta), Lahtised võistlused (rudens un ziemas
-                atklātie konkursi), Valikvõistlused (atlases sacensības).</p>
-            <hr>
-            <p><a class="info" href="http://mif.vu.lt/matematikos-olimpiados/">Lietuvas olimpiāžu uzdevumu arhīvs</a></p>
-            <p class="info">Uzdevumu teksti lietuviešu valodā.</p>
-            <hr>
+                atklātie konkursi), Valikvõistlused (atlases sacensības).</dd>
+            
+            <dt><a class="info" href="http://mif.vu.lt/matematikos-olimpiados/">Lietuvas olimpiāžu uzdevumu arhīvs</a></dt>
+            <dd class="info">Uzdevumu teksti lietuviešu valodā.</dd>
+            
+            </dl>
         </div>
         </div> 
 </body>

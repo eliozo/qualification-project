@@ -1,6 +1,6 @@
 import requests
 
-url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+url = 'http://localhost:9080/jena-fuseki-war-4.7.0/abc/'
 myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
 'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
 'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
