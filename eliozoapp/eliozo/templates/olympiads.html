@@ -22,7 +22,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://localhost:5000/" style="padding: 5px 5px"><a href="http://localhost:5000/"><img src="{{ url_for('static',filename='nms-logo.png') }}" style="width:80px;" alt="NMS-logo"></a></a>
+            <a class="navbar-brand" href="{{ url_for('main') }}" style="padding: 5px 5px"><a href="{{ url_for('main') }}"><img src="{{ url_for('static',filename='nms-logo.png') }}" style="width:80px;" alt="NMS-logo"></a></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -37,7 +37,7 @@
 </nav>
 <div class="container-fluid text-center">
   <div class="col-sm-8 text-left">
-    <a href="http://localhost:5000/" class="button">Atpakaļ</a>
+    <a href="{{ url_for('main') }}" class="button">Atpakaļ</a>
     <div class="container">
       {{jsonfile}}
     </div>

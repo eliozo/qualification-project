@@ -3769,12 +3769,6 @@ kuriem $p^4 − 6$ arī ir pirmskaitlis!
 
 
 
-
-
-
-
-
-
 -----
 
 # <lo-sample/> LV.AO.2015.7.3
@@ -4554,6 +4548,13 @@ $n^2 + n + 19$ ir kāda naturāla skaitļa kvadrāts?
 questionType=Find.All
 -->
 
+-----
+    
+# <lo-sample/> LV.AO.2019.11.1
+
+Atrisināt nevienādību 
+
+$$\frac{(x-20)^{19} \cdot (x + 4)}{\left( \sqrt{x^2 + 4} \right) \left( 9-x^2 \right)} \geq 0.$
 
 -----
 
@@ -4580,6 +4581,16 @@ otrais – vienmēr var uzvarēt?
 <!--
 seeAlso=LV.AO.2019.12.2
 -->
+
+-----
+    
+# <lo-sample/> LV.AO.2019.11.3
+
+Uz trijstūra $ABC$ malām $AB$ un $BC$ izvēlēti attiecīgi tādi punkti $D$ un $E$, ka
+$AC \parallel DE$. Nogriežņi $AE$ un $CD$ krustojas punktā $F$. Punkti $B$, $D$, $E$ un $F$
+atrodas uz vienas riņķa līnijas. Taisne $BF$ krusto malu $AC$ punktā $H$ un
+trijstūrim $ABC$ apvilkto riņķa līniju punktā $G$. Pierādīt, ka $FH = GH$.
+
 
 
 -----
@@ -4619,8 +4630,19 @@ $2\cdot{} 2 \cdot{} 2 < 3 \cdot 3$.
 
 # <lo-sample/> LV.AO.2019.11.5
 
-Dots reāls skaitlis x un naturāls skaitlis $n$. Zināms, ka gan $x^2-nx$, 
+Dots reāls skaitlis $x$ un naturāls skaitlis $n$. Zināms, ka gan $x^2-nx$, 
 gan $x^3-nx$ ir racionāli skaitļi. Pierādīt, ka arī $x$ ir racionāls skaitlis!
+
+
+
+-----
+    
+# <lo-sample/> LV.AO.2019.12.1
+
+Atrisināt vienādojumu
+
+$$\cos 3x \cos 2x + \sin 2x \sin 3x = \left( \cos \frac{\pi}{10} - \sin \frac{\pi}{10} \right)
+\left( \sin \frac{\pi}{10} + \cos \frac{\pi}{10} \right).$$
 
 
 -----
@@ -4632,7 +4654,7 @@ gājienā jāievēro šādi noteikumi:
 
 * nedrīkst atkārtoti rakstīt jau uzrakstītu dalītāju;
 * nedrīkst rakstīt dalītāju, kurš ir tieši $2$ vai $3$ reizes lielāks vai mazāks nekā
-kāds jau uzrakstītais dalītājs.
+  kāds jau uzrakstītais dalītājs.
 
 Zaudē tas spēlētājs, kurš nevar izdarīt gājienu. Kurš spēlētājs – pirmais vai
 otrais – vienmēr var uzvarēt?
@@ -4662,9 +4684,23 @@ ir virzīšanās pa vienu asi, bet reizināšana ar $3$ - pa otru.
 atbild ar $144/d$.
 
 
+
+-----
+    
+# <lo-sample/> LV.AO.2019.12.3
+
+Dots četrstūris $ABCD$, kuram $AB = AD$ un $BC = CD$. Riņķa līnija, kas iet caur
+punktiem $A$, $B$ un $C$, krusto nogriežņus $AD$ un $CD$ attiecīgi to iekšējos punktos
+$E$ un $F$ un nogriezni $BD$ punktā $G$. Pierādīt, ka $EG = FG$. 
+
+
+
+
+
+
 -----
 
-# <lo-sample/> LV.AO.2019.11.4
+# <lo-sample/> LV.AO.2019.12.4
 
 Sporta nometnē ir $100$ skolēni. Ar $N$ apzīmējam, cik veidos šos $100$ skolēnus
 var sadalīt $50$ pāros (pāru secība un arī skolēnu secība pārī nav svarīga). Ar
@@ -4707,7 +4743,389 @@ $$9 \cdot 27 \cdot 45 \cdot 63 \cdot 81 \cdot 99$$
 
 
 
+-----
+
+# <lo-sample/> LV.AO.2019.12.5
+
+Miljonāru kluba visbagātākajam biedram ir tieši $8$ reizes mazāk naudas nekā
+visiem pārējiem biedriem kopā, ceturtajam bagātākajam biedram ir tieši $11$
+reizes mazāk naudas nekā visiem pārējiem biedriem kopā, bet
+visnabagākajam biedram ir tieši $13$ reizes mazāk naudas nekā visiem pārējiem
+biedriem kopā. Cik biedru ir šajā klubā?
 
 
 
 
+
+-----
+
+# <lo-sample/> LV.AO.2022.5.1
+
+Kāds ir mazākais naturālais skaitlis, kura pierakstā izmantoti tikai 
+cipari $0$ un $2$ un kurš dalās ar $15$?
+
+
+-----
+    
+# <lo-sample/> LV.AO.2022.5.2
+
+Pa rūtiņu līnijām uzzīmē tādu sešstūri, kuram perimetra un laukuma vērtības sakrīt!
+*Piezīme.* Laukums ir sešstūri veidojošo rūtiņu skaits un perimetrs ir 
+rūtiņu malu, kas pilnībā atrodas uz robežas, skaits.
+    
+
+-----
+    
+# <lo-sample/> LV.AO.2022.5.3
+
+Uz teātra izrādi tika izgatavotas $250$ biļetes un vismaz puse 
+no biļetēm tika pārdotas. Zināms, ka tieši trešdaļa
+no skatītājiem bija skolēni, tieši piektdaļa – studenti un tieši 
+septītdaļa – pensionāri. Cik biļetes tika pārdotas?
+
+
+-----
+    
+# <lo-sample/> LV.AO.2022.5.4
+
+Zināms, ka svari (a), (b) un (c) atrodas līdzsvarā. 
+Cik bultiņu jāliek jautājuma zīmes vietā, lai svari (d) atrastos
+līdzsvarā? Atbildi pamatot!  
+![bilde](LV.AO.2022.5.4.png)
+
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.5.5
+
+Katrai no trīs meitenēm Elīnai, Gunai un Marutai patīk viena no krāsām: zaļa, dzeltena, oranža (katrai cita krāsa),
+bet abas pārējās krāsas nepatīk. Zināms, ka tieši viens no apgalvojumiem ir patiess:
+
+* Gunai nepatīk oranža krāsa;
+* Elīnai nepatīk zaļa krāsa;
+* Elīnai nepatīk oranža krāsa.
+
+Kāda krāsa patīk katrai meitenei? Atbildi pamatot!
+
+
+-----
+    
+# <lo-sample/> LV.AO.2022.6.1
+
+Uz papīra lapas uzrakstīti visi naturālie skaitļi no $1$ līdz $2022$ (katrs vienu reizi). 
+Vispirms Amanda ar sarkanu zīmuli apvilka visus skaitļus, kas dalās ar $3$. 
+Tad viņa ar zilu zīmuli apvilka visus skaitļus, kas dalās ar $5$. 
+Un visbeidzot viņa ar zaļu zīmuli apvilka visus skaitļus, kas dalās ar $7$. 
+Cik ir tādu skaitļu, kas ir apvilkti ar vismaz divām dažādām krāsām?
+
+
+-----
+    
+# <lo-sample/> LV.AO.2022.6.2
+
+Parādi, kā no 1. att. dotās rūtiņu lapas var izgriezt desmit figūras, kādas dotas 2. att. (iezīmē, kur jāiet griezuma
+līnijām)! Figūras var būt arī pagrieztas.  
+![1.att., 2.att.](LV.AO.2022.6.2.png)
+
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.6.3
+
+Tumšā rudens vakarā Māris izdomāja saskaitīt visus naturālos skaitļus no $1$ līdz $n$, kur $n$ ir kāds naturāls skaitlis.
+Vai var gadīties, ka Māris ieguva summu, kuras pēdējais cipars ir **(a)** $8$, **(b)** $9$?
+
+
+
+-----
+    
+# <lo-sample/> LV.AO.2022.6.4
+
+Zināms, ka svari (a), (b) un (c) atrodas līdzsvarā. Cik aplīšu jāliek jautājuma zīmes vietā, lai svari (d) atrastos
+līdzsvarā? Atbildi pamatot!  
+![bilde](LV.AO.2022.6.4.png)
+
+
+
+-----
+    
+# <lo-sample/> LV.AO.2022.6.5
+
+Daži no 273 ciema iedzīvotājiem visu laiku saka patiesību, pārējie visu laiku melo. Katram no ciema iedzīvotājiem
+ir tieši viena mīļākā nedēļas diena. Aptaujājot iedzīvotājus, viņiem tika lūgts atbildēt uz septiņiem jautājumiem,
+katrā no tiem izvēloties vienu no dotajām atbildēm:  
+![bilde](LV.AO.2022.6.5.png)  
+Uz katru jautājumu saņemto apstiprinošo ("jā") atbilžu skaits bija šāds: pirmdiena – $51$, otrdiena – $52$,
+trešdiena – $53$, ceturtdiena – $54$, piektdiena – $55$, sestdiena – $56$, svētdiena – $57$. Cik ciema iedzīvotāji visu laiku
+melo?  
+
+
+
+
+-----
+    
+# <lo-sample/> LV.AO.2022.7.1
+
+Uz tāfeles bija uzrakstīts šāds teksts: $A869B$. Katrs no burtiem $A$ un $B$ jāaizstāj ar vienu ciparu (tie var būt arī
+vienādi) tā, lai iegūtais piecciparu skaitlis dalītos ar $15$. Cik dažādos veidos to var izdarīt?
+
+
+-----
+    
+# <lo-sample/> LV.AO.2022.7.2
+
+Vai var atrast **(a)** $5$; **(b)** $15$ naturālus skaitļus (ne obligāti dažādus), kuru summa ir vienāda ar to reizinājumu?
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.7.3
+
+Parādi, kā plaknē novilkt $6$ taisnes un uz tām atlikt $7$ punktus tā, lai uz katras no taisnēm būtu atzīmēti tieši trīs punkti!
+
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.7.4
+
+Uz galda ir kaudze ar konfektēm. Karlsons un Brālītis pēc kārtas izdara gājienus, Karlsons sāk spēli. Vienā gājienā
+spēlētājs var paņemt no kaudzes un apēst vai nu vienu, vai divas konfektes. Uzvar tas spēlētājs, kurš apēd pēdējo
+konfekti. Kurš spēlētājs, pareizi spēlējot, vienmēr var uzvarēt, ja sākumā kaudzē ir **(a)** $6$ konfektes;
+**(b)** $2022$ konfektes?
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.7.5
+
+Daži no 272 ciema iedzīvotājiem visu laiku saka patiesību, pārējie visu laiku melo. Katram no ciema iedzīvotājiem
+ir tieši viena mīļākā nedēļas diena. Aptaujājot iedzīvotājus, viņiem tika lūgts atbildēt uz septiņiem jautājumiem,
+katrā no tiem izvēloties vienu no dotajām atbildēm:  
+![bilde](LV.AO.2022.7.5.png)  
+Uz katru jautājumu saņemto apstiprinošo ("jā") atbilžu skaits bija šāds: pirmdiena – $53$, otrdiena – $54$,
+trešdiena – $55$, ceturtdiena – $56$, piektdiena – $57$, sestdiena – $58$, svētdiena – $59$. 
+Cik ciema iedzīvotāji visu laiku melo?
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.8.1
+
+Uz tāfeles bija uzrakstīts šāds teksts: $N597M$. Katrs no burtiem $N$ un $M$ jāaizstāj ar vienu ciparu (tie var būt arī
+vienādi) tā, lai iegūtais piecciparu skaitlis dalītos ar $12$. Cik dažādos veidos to var izdarīt?
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.8.2
+
+Skolēnam tika uzdots mājas darbs, kurā bija $20$ uzdevumi. Par katru pareizi atrisinātu uzdevumu tiek doti $8$
+punkti, par katru nepareizi atrisinātu uzdevumu tiek atņemti $5$ punkti, ja uzdevums nav risināts, tad par to ir $0$
+punkti. Cik uzdevumus atrisināja skolēns, ja kopā viņš ieguva $13$ punktus?
+
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.8.3
+
+Trijstūrī $ABC$ uz malas $BC$ atlikts tāds punkts $D$, ka $AD = BD$ un $AB = DC = AC$. Aprēķināt trijstūra $ABC$
+leņķus!
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.8.4
+
+Vai pa apli var uzrakstīt skaitļus  
+**(a)** $0;\;1;\;2;\;3;\;4;\;5;\;6;\;7;\;8;\;9$;
+**(b)** $0;\;1;\;2;\;3;\;4;\;5;\;6;\;7;\;8;\;9;\;10;\;11;\;12;\;13$;
+tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.8.5
+
+Piecu draugu lokā izvērsās strīds, kurā:
+
+* Elīna saka: “Es vienmēr saku taisnību.”
+* Guna saka: “Gan Elīna, gan Agnese melo.”
+* Maruta saka: “Visi saka taisnību.”
+* Agnese saka: “Elīna melo.”
+* Emīls saka: “Visi melo.”
+    
+Cik draugu saka taisnību?
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.9.1
+
+Cik ir tādu četrciparu skaitļu $\overline{ABBA}$, kas dalās ar $99$? (Vienādiem burtiem atbilst vienādi cipari, dažādiem burtiem
+var atbilst arī vienādi cipari.)
+    
+
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.9.2
+
+Vai noteikti $x + \frac{9}{x} > y + \frac{9}{y}$, ja **(a)** $x > y > 0$, **(b)** $x > y > 3$? 
+
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.9.3
+
+Taisnleņķa trijstūrī $ACB$ ($\sphericalangle C = 90^{\circ}$) novilkts augstums $CH$. Uz malas $AC$ atlikts punkts $K$ tā, ka 
+$\sphericalangle CBK = \sphericalangle BAC$.
+Pierādīt, ka taisne $CH$ dala nogriezni $BK$ divās vienādās daļās!
+
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.9.4
+
+Vai pa apli var uzrakstīt skaitļus  
+**(a)** 1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13;  
+**(b)** 1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14;  
+tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.9.5
+
+Mākslas muzeja plānojums ir taisnstūris ar izmēriem **(a)** $8 \times 9$; **(b)** $9 \times 11$ rūtiņas, 
+kur viena rūtiņa atbilst vienai muzeja telpai. Muzeja vadītājs vēlas izveidot apmeklētāju maršrutu, 
+kuram izpildās šādas īpašības:
+
+* maršruts sākas kādā no rūtiņām (telpām), kas atrodas pie taisnstūra malas;
+* apmeklētājs no vienas rūtiņas (telpas) var pāriet uz citu rūtiņu (telpu), ja tām ir kopīga mala;
+* apmeklētājs maršruta laikā apmeklē katru rūtiņu (telpu) tieši vienu reizi;
+* maršruts beidzas rūtiņā (telpā), kas atrodas pie taisnstūra malas blakus maršruta sākuma rūtiņai (telpai).
+
+Vai muzeja vadītājs var izveidot šādu maršrutu?
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.10.1
+
+Kāds ir skaitļa $2022^{2022}$ pēdējais cipars?
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.10.2
+
+Apskatām $n$ pēc kārtas ņemtus naturālus skaitļus. Vai var gadīties, ka tos var sadalīt divās grupās tā, ka katras
+grupas skaitļu summa ir pirmskaitlis, ja **(a)** $n = 8$, **(b)** $n = 10$? Katrā grupā jābūt vismaz $2$ skaitļiem.
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.10.3
+
+Uz taisnleņķa trijstūra $ACB$ hipotenūzas $AB$ atlikts punkts $O$, kas ir centrs riņķa līnijai ar rādiusu $3$, kura pieskaras
+abām katetēm. Aprēķināt trijstūra $ACB$ laukumu, ja $OB = 5$.
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.10.4
+
+Doti reāli skaitļi $a$, $b$ un $c$, kuriem $abc = 1$. Pierādīt, ka vienādojumam
+
+$$ax^4 + (2b + a)x^2 - 2cx + b^3c + bc + bc^3 = 0$$
+
+nav reālu sakņu!
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.10.5
+
+Restorānā ieradās pieci deputāti un pirms pusdienām daži no viņiem paspieda viens otram roku. 
+Zināms, ka, ja kādi divi deputāti nepaspieda viens otram roku, tad abi kopā viņi izdarīja vismaz 
+piecus rokasspiedienus. Pierādīt, ka deputātus var sasēdināt ap apaļu galdu tā, lai katrs būtu paspiedis 
+roku abiem saviem blakussēdētājiem!
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.11.1
+
+Vai skaitli 2022 var izteikt kā divu veselu skaitļu kubu summu?
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.11.2
+
+Kādām reālām $p$ vērtībām vienādojuma $x^2 + x + p = 0$ sakņu kvadrātu summa ir $16$?
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.11.3
+
+Trijstūrī $ABC$ ievilktā riņķa līnija pieskaras malai $AB$ punktā $D$ tā, ka $AD = 8$ un $BD = 1$. Aprēķināt malas $BC$
+garumu, ja trijstūra leņķa $B$ lielums ir $120^{\circ}$.
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.11.4
+
+Pierādīt, ka katru naturālu skaitli, kas ir lielāks nekā $3$, var vienā vienīgā veidā izteikt kā trīs naturālu
+skaitļu $x,y,z$ ($x \leq y \leq z$) summu tā, lai skaitļiem $x$, $y$, $z$ izpildītos nevienādība
+
+$$x^2 + y^2 + z^2 - xy - yz - xz \leq 1.$$
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.11.5
+
+Mākslas muzeja plānojums ir taisnstūris ar izmēriem $m \times n$ ($m \geq 2$, $n \geq 2$) rūtiņas, 
+kur viena rūtiņa atbilst vienai muzeja telpai. Muzeja vadītājs vēlas izveidot apmeklētāju maršrutu, kuram izpildās šādas īpašības:
+
+* maršruts sākas kādā no rūtiņām (telpām), kas atrodas pie taisnstūra malas;
+* apmeklētājs no vienas rūtiņas (telpas) var pāriet uz citu rūtiņu (telpu), ja tām ir kopīga mala;
+* apmeklētājs maršruta laikā apmeklē katru rūtiņu (telpu) tieši vienu reizi;
+* maršruts beidzas rūtiņā (telpā), kas atrodas pie taisnstūra malas blakus maršruta sākuma rūtiņai (telpai).
+
+Kādām $m$ un $n$ vērtībām muzeja vadītājs var izveidot šādu maršrutu?
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.12.1
+ 
+Vai skaitli $2023^2$ var izteikt kā trīs veselu skaitļu kubu summu?
+
+-----
+    
+# <lo-sample/> LV.AO.2022.12.2
+
+Kādām reālām $p$ vērtībām vienādojuma $x^2 + x + p$ sakņu kubu summa ir $(-16)$?
+
+
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.12.3
+
+Trijstūrī $ABC$ no virsotnes $A$ vilktā augstuma garums ir $1$, no virsotnes $C$ vilktās mediānas garums arī ir $1$, bet
+augstuma no virsotnes $B$ garums ir $\sqrt{3}$. Kāds var būt šī trijstūra laukums?
+
+
+
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.12.4
+
+Atrisināt reālos skaitļos vienādojumu $3 \sin x + 4 \cos x = 6$.
+    
+    
+-----
+    
+# <lo-sample/> LV.AO.2022.12.5
+    
+Dota rūtiņu tabula $n \times n$. Ilmārs un Kims spēlē šādu spēli. Viņi pēc kārtas kādā vēl tukšā rūtiņā ieraksta skaitli $1$
+vai $-1$. Spēli sāk Ilmārs. Ja pēc kāda spēlētāja gājiena tiek aizpildīta kāda rinda vai kolonna, tad tiek aprēķināts
+tajā esošo skaitļu reizinājums. Ja tas ir vienāds ar $-1$, tad spēlētājs, kurš veica pēdējo gājienu, iegūst $1$ punktu
+(ja spēlētājs ar savu gājienu vienlaicīgi pabeidz gan rindu, gan kolonnu un katrā skaitļu reizinājums ir $-1$, tad
+viņš iegūst divus punktus). Spēle beidzas, kad tabula ir pilnībā aizpildīta. Uzvar spēlētājs, kurš iegūst visvairāk
+punktu. Kuram spēlētājam ir uzvaroša stratēģija, ja **(a)** $n = 2021$; **(b)**  $n = 2022$?
+    
+    
+
+    
+    
+
+
+    

@@ -6,10 +6,10 @@
 ``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
 SELECT ?sub WHERE {
-?sub eozol:skill "alg.tra.binom.square" ;
-     eozol:year ?year
+?sub eliozo:skill "alg.tra.binom.square" ;
+     eliozo:year ?year
 } ORDER BY ASC(?year)
 ```
 
@@ -18,26 +18,25 @@ SELECT ?sub WHERE {
 ``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
 SELECT ?sub ?text WHERE {
-?sub eozol:skill "alg.tra.binom.square" ;
-     eozol:year ?year ;
-     eozol:text ?text
+?sub eliozo:skill "alg.tra.binom.square" ;
+     eliozo:year ?year ;
+     eliozo:text ?text
 } ORDER BY ASC(?year)
 ```
 
 ## Atrod uzdevumus ar "alg.expr" prasmi no visām olimpiādēm
 
 ``` sparql
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
-PREFIX eozol:<http://www.dudajevagatve.lv/eozol#> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#> 
 SELECT ?problemid ?text WHERE {
-?sub eozol:problemid ?problemid .
-?sub eozol:skill "alg.expr" .
-?sub eozol:text ?text .
-} ORDER BY ?obj
+  ?sub eliozo:problemid ?problemid ;
+       eliozo:skill ?skill ;
+       eliozo:text ?text .
+  ?skill skos:prefLabel "alg.expr" .
+} ORDER BY ?problemid
 ```
 
 ## Atrod uzdevumus, kas ir apakšprasmes prasmei "alg"
@@ -46,7 +45,7 @@ SELECT ?problemid ?text WHERE {
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
 SELECT ?skillID WHERE {
 ?alg skos:prefLabel "alg" . ?skillID skos:broader ?alg
 }
@@ -58,7 +57,7 @@ SELECT ?skillID WHERE {
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
 SELECT ?skillID ?desc WHERE {
 ?alg skos:prefLabel "alg" . ?skillID skos:broader ?alg ; skos:skillDescription ?desc
 }
@@ -70,7 +69,7 @@ SELECT ?skillID ?desc WHERE {
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
 SELECT ?parent ?child
 WHERE {
     ?parent skos:prefLabel "alg" .
@@ -85,12 +84,12 @@ WHERE {
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
 SELECT ?problem ?child
 WHERE {
     ?parent skos:prefLabel "alg.tra" .
     ?parent skos:narrower+ ?child .
-    ?problem eozol:skill ?child .
+    ?problem eliozo:skill ?child .
 }
 ```
 
@@ -100,11 +99,11 @@ WHERE {
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
 SELECT ?parent_skill_id ?child WHERE {
   ?parent_skill_id skos:prefLabel "alg" .
   ?child skos:broader+ ?parent_skill_id .
-  ?child eozol:skillNumber ?child_num .
+  ?child eliozo:skillNumber ?child_num .
 } ORDER BY ?child_num
 ```
 
@@ -114,10 +113,10 @@ SELECT ?parent_skill_id ?child WHERE {
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
 SELECT DISTINCT ?country ?olympiad
 WHERE {
-    ?problem eozol:country ?country ; eozol:olympiad ?olympiad .
+    ?problem eliozo:country ?country ; eliozo:olympiad ?olympiad .
 }
 ```
 
@@ -127,12 +126,12 @@ WHERE {
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
 SELECT DISTINCT ?year ?grade
 WHERE {
-    ?problem eozol:country 'LV' ; eozol:olympiad 'AO' ;
-    eozol:year ?year ;
-    eozol:grade ?grade .
+    ?problem eliozo:country 'LV' ; eliozo:olympiad 'AO' ;
+    eliozo:year ?year ;
+    eliozo:grade ?grade .
 } ORDER BY ?year ?grade
 ```
 
@@ -142,12 +141,12 @@ WHERE {
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
 SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription
 WHERE { 
-?obj eozol:skillIdentifier ?skillIdentifier .
-?obj eozol:skillNumber ?skillNumber .
-?obj eozol:skillDescription ?skillDescription .
+?obj eliozo:skillIdentifier ?skillIdentifier .
+?obj eliozo:skillNumber ?skillNumber .
+?obj eliozo:skillDescription ?skillDescription .
 } ORDER BY ?skillNumber
 ```
 
@@ -157,12 +156,12 @@ WHERE {
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
 SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?problemid WHERE { 
-  ?skill eozol:skillIdentifier ?skillIdentifier .
-  ?skill eozol:skillNumber ?skillNumber .
-  ?skill eozol:skillDescription ?skillDescription .
-  OPTIONAL {?prob eozol:skill ?skill . ?prob eozol:problemid ?problemid . }.
+  ?skill eliozo:skillIdentifier ?skillIdentifier .
+  ?skill eliozo:skillNumber ?skillNumber .
+  ?skill eliozo:skillDescription ?skillDescription .
+  OPTIONAL {?prob eliozo:skill ?skill . ?prob eliozo:problemid ?problemid . }.
 } ORDER BY ?skillNumber
 ```
 
@@ -174,17 +173,17 @@ Atlasa neobligātos atribūtus - uzdevuma tekstu, gadu, olimpiādi, klasi, valst
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
 SELECT * WHERE {
-  ?problem eozol:problemid 'LV.AO.2013.8.1' .
+  ?problem eliozo:problemid 'LV.AO.2013.8.1' .
   OPTIONAL {
-    ?problem eozol:text ?text ;
-             eozol:year ?year ;
-             eozol:olympiad ?olympiad ;
-             eozol:grade ?grade ;
-             eozol:country ?country ;
-             eozol:skill ?skill .
-    ?skill eozol:skillIdentifier ?skillIdentifier .
+    ?problem eliozo:text ?text ;
+             eliozo:year ?year ;
+             eliozo:olympiad ?olympiad ;
+             eliozo:grade ?grade ;
+             eliozo:country ?country ;
+             eliozo:skill ?skill .
+    ?skill eliozo:skillIdentifier ?skillIdentifier .
   }.
 }
 ```

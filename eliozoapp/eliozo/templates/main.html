@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://localhost:5000/" style="padding: 5px 5px"><a href="http://localhost:5000/"><img src="{{ url_for('static',filename='nms-logo.png') }}" style="width:80px;" alt="NMS-logo"></a></a>
+                <a class="navbar-brand" href="{{ url_for('main') }}" style="padding: 5px 5px"><a href="{{ url_for('main') }}"><img src="{{ url_for('static',filename='nms-logo.png') }}" style="width:80px;" alt="NMS-logo"></a></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
@@ -43,6 +43,18 @@
                     citu matemātikas olimpiāžu uzdevumu bibliogrāfijām. </p>
                 <hr>
             </div>
+
+    <form style="margin-left: 0px; text-align: left;" action="#" method="GET">
+    <table border="0" cellspacing="0">
+        <tr><td>Ierakstiet, kādus uzdevumus meklēt (<a href="#">Meklēšanas vaicājumu paraugi</a>)</td></tr>
+        <tr><td><textarea rows="5" cols="80" name="question">(Your text in English)
+        </textarea><input type="submit" title="Uz SPARQL" value="Uz SPARQL" name="toSparql"/></td></tr>
+        <tr><td>SPARQL vaicājumu var labot; sk. <a href="{{ url_for('getSkills') }}">prasmju</a> 
+            un <a href="{{ url_for('getTopics') }}">tēmu</a> sarakstus.</td></tr>
+        <tr><td><textarea rows="5" cols="80" name="question" disabled="true">
+        </textarea><input type="submit" title="Meklēt uzdevumus" value="Meklēt uzdevumus" name="searchProblems" disabled="true"/></td></tr>
+    </div>
+    </form>
 
 </body>
 

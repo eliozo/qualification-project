@@ -8,11 +8,16 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-    type="text/javascript"></script>
-  <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-    <![endif]-->
+
+ <!-- Load MathJax 3 with TeX input and HTML-CSS output -->
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+ <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+ <!--[if lt IE 9]>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+ <![endif]-->
+
+
+
 </head>
 
 <body>
@@ -24,7 +29,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://localhost:5000/" style="padding: 5px 5px"><a href="http://localhost:5000/"><img src="{{ url_for('static',filename='nms-logo.png') }}" style="width:80px;" alt="NMS-logo"></a></a>
+            <a class="navbar-brand" href="{{ url_for('main') }}" style="padding: 5px 5px"><a href="{{ url_for('main') }}"><img src="{{ url_for('static',filename='nms-logo.png') }}" style="width:80px;" alt="NMS-logo"></a></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -37,7 +42,7 @@
         </div>
     </div>
 </nav>
-<a href="http://localhost:5000/skills" class="button">Atpakaļ</a>
+<a href="{{ url_for('getSkills') }}" class="button">Atpakaļ</a>
   <div class="container">
     {{jsonfile}}
   </div>
@@ -45,7 +50,7 @@
   <ol>
     {% for skill in skill_list %}
     <li>
-      <a href="http://localhost:5000/skill_tasks?skillIdentifier={{skill.prefLabel }}">{{ skill.prefLabel }}</a>: {{ skill.desc }}
+      <a href="{{ url_for('getSkill',skillIdentifier=skill.prefLabel)}}">{{ skill.prefLabel }}</a>: {{ skill.desc }}
     </li>
     {% endfor %}
   </ol>

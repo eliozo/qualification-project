@@ -7,7 +7,7 @@ import re
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from werkzeug.wrappers import Response
 
-FUSEKI_URL = 'http://127.0.0.1:8080/jena-fuseki-war-4.7.0/abc/'
+FUSEKI_URL = 'http://127.0.0.1:9080/jena-fuseki-war-4.7.0/abc/'
 
 # Integrācija ar Jena Fuseki serveri
 def getSPARQLtopics():
@@ -16,12 +16,12 @@ def getSPARQLtopics():
     myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
+    'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
     '''SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?problemid WHERE { 
-    ?skill eozol:skillIdentifier ?skillIdentifier .
-    ?skill eozol:skillNumber ?skillNumber .
-    ?skill eozol:skillDescription ?skillDescription .
-    OPTIONAL {?prob eozol:skill ?skill . ?prob eozol:problemid ?problemid . }.
+    ?skill eliozo:skillIdentifier ?skillIdentifier .
+    ?skill eliozo:skillNumber ?skillNumber .
+    ?skill eliozo:skillDescription ?skillDescription .
+    OPTIONAL {?prob eliozo:skill ?skill . ?prob eliozo:problemid ?problemid . }.
     } ORDER BY ?skillNumber'''
     }
 
@@ -39,25 +39,25 @@ def getSPARQLProblem(arg):
     myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
+    'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
 'SELECT * WHERE { \n'+ 
-  '?problem eozol:problemid \'{problemid}\' .\n' .format(problemid=arg)+
+  '?problem eliozo:problemid \'{problemid}\' .\n' .format(problemid=arg)+
   '''OPTIONAL {
-    ?problem eozol:text ?text ;
-             eozol:year ?year ;
-             eozol:olympiad ?olympiad ;
-             eozol:grade ?grade ;
-             eozol:country ?country .
+    ?problem eliozo:text ?text ;
+             eliozo:year ?year ;
+             eliozo:olympiad ?olympiad ;
+             eliozo:grade ?grade ;
+             eliozo:country ?country .
              } .
       OPTIONAL {
-        ?problem eozol:skill ?skill .
-        ?skill eozol:skillIdentifier ?skillIdentifier .
+        ?problem eliozo:skill ?skill .
+        ?skill eliozo:skillIdentifier ?skillIdentifier .
     } .
       OPTIONAL {
-        ?problem eozol:video ?video .
+        ?problem eliozo:video ?video .
     } .
       OPTIONAL {
-        ?problem eozol:image ?image .
+        ?problem eliozo:image ?image .
       }
 }'''
   }
@@ -77,15 +77,15 @@ def getSkillProblemsSPARQL(skillID):
     myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
+    'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
     '''SELECT DISTINCT ?problem ?problemid ?subskill ?text ?grade
 WHERE {
     ?parent skos:prefLabel \''''+skillID+'''\'  .
     ?parent skos:narrower* ?subskill .
-    ?problem eozol:skill ?subskill ;
-             eozol:problemid ?problemid ;
-             eozol:text ?text ;
-             eozol:grade ?grade .
+    ?problem eliozo:skill ?subskill ;
+             eliozo:problemid ?problemid ;
+             eliozo:text ?text ;
+             eliozo:grade ?grade .
 } ORDER BY ?grade
  '''
 
@@ -105,13 +105,13 @@ def getAllSkillChildren(skillID):
     myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
+    'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
     '''SELECT ?skillID ?prefLabel ?num ?desc WHERE {
 	?alg skos:prefLabel \''''+skillID+'''\' .
     ?skillID skos:broader ?alg ;
              skos:prefLabel ?prefLabel ;
-             eozol:skillDescription ?desc ;
-  			 eozol:skillNumber ?num .
+             eliozo:skillDescription ?desc ;
+  			 eliozo:skillNumber ?num .
 } ORDER BY ?num'''
     }
 
@@ -129,8 +129,8 @@ def getSPARQLOlympiads():
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\n'+
-    'SELECT DISTINCT ?country ?olympiad WHERE { ?problem eozol:country ?country ; eozol:olympiad ?olympiad . }'
+    'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
+    'SELECT DISTINCT ?country ?olympiad WHERE { ?problem eliozo:country ?country ; eliozo:olympiad ?olympiad . }'
     }
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
@@ -147,10 +147,10 @@ def getSPARQLOlympiadYears(country, olympiad):
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>\n'+
-    'SELECT DISTINCT ?year ?grade WHERE { ?problem eozol:country \''+country+
-    '\' ; eozol:olympiad \''+olympiad+
-    '\' ; eozol:year ?year ; eozol:grade ?grade . } ORDER BY ?year ?grade'
+    'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\n'+
+    'SELECT DISTINCT ?year ?grade WHERE { ?problem eliozo:country \''+country+
+    '\' ; eliozo:olympiad \''+olympiad+
+    '\' ; eliozo:year ?year ; eliozo:grade ?grade . } ORDER BY ?year ?grade'
     }
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
@@ -167,15 +167,15 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad):
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>\n'+
+    'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\n'+
     '''SELECT ?text ?problemid ?problem_number WHERE {
-  ?problem eozol:year \''''+year+'''\' .
-  ?problem eozol:country \''''+country+'''\' .
-  ?problem eozol:text ?text .
-  ?problem eozol:problemid ?problemid .
-  ?problem eozol:problem_number ?problem_number .
-  ?problem eozol:grade '''+grade+''' .
-  ?problem eozol:olympiad \''''+olympiad+'''\' .
+  ?problem eliozo:year \''''+year+'''\' .
+  ?problem eliozo:country \''''+country+'''\' .
+  ?problem eliozo:text ?text .
+  ?problem eliozo:problemid ?problemid .
+  ?problem eliozo:problem_number ?problem_number .
+  ?problem eliozo:grade '''+grade+''' .
+  ?problem eliozo:olympiad \''''+olympiad+'''\' .
 } ORDER BY ?problem_number'''
     }
 
@@ -195,17 +195,17 @@ def getSPARQLVideoBookmarks(problemid):
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>\n'+
+    'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\n'+
     '''SELECT ?videoTitle ?youtubeID ?tstamp ?bmtext WHERE {
-  ?problem eozol:problemid \''''+problemid+'''\' .
+  ?problem eliozo:problemid \''''+problemid+'''\' .
   OPTIONAL {
-    ?problem eozol:video ?video .
-    ?video eozol:videoTitle ?videoTitle ;
-           eozol:youtubeID ?youtubeID ;
-           eozol:videoBookmarks ?videoBookmarks .
+    ?problem eliozo:video ?video .
+    ?video eliozo:videoTitle ?videoTitle ;
+           eliozo:youtubeID ?youtubeID ;
+           eliozo:videoBookmarks ?videoBookmarks .
     ?videoBookmarks ?prop ?bookmark .
-    ?bookmark eozol:tstamp ?tstamp ;
-              eozol:bmtext ?bmtext .
+    ?bookmark eliozo:tstamp ?tstamp ;
+              eliozo:bmtext ?bmtext .
   }.
 } ORDER BY ?tstamp'''
     }
@@ -224,10 +224,10 @@ def getAllSPARQLVideos():
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eozol:<http://www.dudajevagatve.lv/eozol#>\n'+
+    'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\n'+
     '''SELECT ?problemid WHERE {
-  ?problem eozol:problemid ?problemid .
-  	?problem eozol:video ?video .         
+  ?problem eliozo:problemid ?problemid .
+  	?problem eliozo:video ?video .         
   } ORDER BY ?grade'''
     }
 
@@ -357,6 +357,15 @@ def create_app(test_config=None):
         }
 
         return render_template('skills.html', **template_context)
+
+
+    @app.route('/topics', methods=['GET','POST'])
+    def getTopics():
+        all_topics = ["Pirmā tēma", "Otrā tēma"]
+        template_context = {
+            'all_topics': all_topics
+        }
+        return render_template('topics.html', **template_context)
 
     @app.route('/skill_tasks', methods=['GET','POST']) # Kontrolieris, kas iegūst prasmes kopā ar uzdevumiem
     def getSkill():
