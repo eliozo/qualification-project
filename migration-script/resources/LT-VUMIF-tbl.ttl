@@ -1,27 +1,28 @@
 @prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-eliozo:LT.VUMIF.2016.10.3 eliozo:country "LT" ;
-    eliozo:grade 10 ;
-    eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "3" ;
-    eliozo:problemid "LT.VUMIF.2016.10.3" ;
-    eliozo:skill eliozo:div.common.lcm.maxexp,
+eliozo:LT.VUMIF.2016.10.3 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:hasSkill eliozo:div.common.lcm.maxexp,
         eliozo:div.fta,
         eliozo:div.fta.pow.other,
         eliozo:mod.eq.chinese,
         eliozo:seq.arithm.mod.gaps ;
-    eliozo:text """Atrodiet mazāko naturālo skaitli $n$, kuram skaitļi
+    eliozo:olympiad "VUMIF" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LT.VUMIF.2016.10.3" ;
+    eliozo:problemText """Atrodiet mazāko naturālo skaitli $n$, kuram skaitļi
 $\\sqrt[5]{5n}$, $\\sqrt[6]{6n}$, $\\sqrt[7]{7n}$
 ir naturāli."""@lv ;
-    eliozo:year "2016" .
+    eliozo:problemYear "2016" ;
+    eliozo:problem_number "3" .
 
-eliozo:LT.VUMIF.2016.11_12.1 eliozo:country "LT" ;
-    eliozo:grade 11 ;
+eliozo:LT.VUMIF.2016.11_12.1 a eliozo:Problem ;
+    eliozo:country "LT" ;
     eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "1" ;
-    eliozo:problemid "LT.VUMIF.2016.11_12.1" ;
-    eliozo:text """Agne savā traukā ielēja $p$ litrus ūdens,
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LT.VUMIF.2016.11_12.1" ;
+    eliozo:problemText """Agne savā traukā ielēja $p$ litrus ūdens,
 bet Bens savā traukā ielēja $q$ litrus ūdens.
 Pārmaiņus veikdami gājienus, viņi spēlē sekojošu spēli.
 Gājiena laikā spēlētājs no sava trauka otra spēlētāja
@@ -30,127 +31,137 @@ cik ūdens jau ir otrā spēlētāja traukā.
 Spēli sāk Agne. Pēc simts gājieniem Agnes traukā
 bija $q$ litri ūdens, bet Bena traukā - $p$ litri ūdens.
 Atrodiet $\\frac{p}{q}$."""@lv ;
-    eliozo:year "2016" .
+    eliozo:problemYear "2016" ;
+    eliozo:problem_number "1" .
 
-eliozo:LT.VUMIF.2016.11_12.3 eliozo:country "LT" ;
-    eliozo:grade 11 ;
+eliozo:LT.VUMIF.2016.11_12.3 a eliozo:Problem ;
+    eliozo:country "LT" ;
     eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "3" ;
-    eliozo:problemid "LT.VUMIF.2016.11_12.3" ;
-    eliozo:text """Noskaidrojiet, vai eksistē tāds naturāls skaitlis $n$, ka
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LT.VUMIF.2016.11_12.3" ;
+    eliozo:problemText """Noskaidrojiet, vai eksistē tāds naturāls skaitlis $n$, ka
 skaitlis $n \\cdot 2^{2016} - 7$ ir
 naturāla skaitļa kvadrāts."""@lv ;
-    eliozo:year "2016" .
+    eliozo:problemYear "2016" ;
+    eliozo:problem_number "3" .
 
-eliozo:LT.VUMIF.2016.9.3 eliozo:country "LT" ;
-    eliozo:grade 9 ;
-    eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "3" ;
-    eliozo:problemid "LT.VUMIF.2016.9.3" ;
-    eliozo:skill eliozo:alg.ineq.equations,
+eliozo:LT.VUMIF.2016.9.3 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:hasSkill eliozo:alg.ineq.equations,
         eliozo:alg.poly.division,
         eliozo:comb.full ;
-    eliozo:text """Atrodiet visas naturālas $n$ vērtības, kurām skaitlis
+    eliozo:olympiad "VUMIF" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.VUMIF.2016.9.3" ;
+    eliozo:problemText """Atrodiet visas naturālas $n$ vērtības, kurām skaitlis
 $\\frac{n^3 + 3}{n^2 + 7}$
 ir naturāls."""@lv ;
-    eliozo:year "2016" .
+    eliozo:problemYear "2016" ;
+    eliozo:problem_number "3" .
 
-eliozo:LT.VUMIF.2017.10.1 eliozo:country "LT" ;
-    eliozo:grade 10 ;
+eliozo:LT.VUMIF.2017.10.1 a eliozo:Problem ;
+    eliozo:country "LT" ;
     eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "1" ;
-    eliozo:problemid "LT.VUMIF.2017.10.1" ;
-    eliozo:text """Atrodiet visus veselu skaitļu pārus $(a,b)$,
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LT.VUMIF.2017.10.1" ;
+    eliozo:problemText """Atrodiet visus veselu skaitļu pārus $(a,b)$,
 kuriem eksistē tādi veseli skaitļi $x$ un
 $y$, ka
 $$8x^4 + 8y^4 = a^4 + 6a^2b^2 + b^4.$$"""@lv ;
-    eliozo:year "2017" .
+    eliozo:problemYear "2017" ;
+    eliozo:problem_number "1" .
 
-eliozo:LT.VUMIF.2017.10.2 eliozo:country "LT" ;
-    eliozo:grade 10 ;
-    eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "2" ;
-    eliozo:problemid "LT.VUMIF.2017.10.2" ;
-    eliozo:skill eliozo:alg.ineq.monotonicity,
+eliozo:LT.VUMIF.2017.10.2 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:hasSkill eliozo:alg.ineq.monotonicity,
         eliozo:alg.tra.binom.complsquare,
         eliozo:comb.full,
         eliozo:seq.gaps.squares ;
-    eliozo:text """Atrodiet visus veselo skaitļu $m$ un $n$ pārus
+    eliozo:olympiad "VUMIF" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LT.VUMIF.2017.10.2" ;
+    eliozo:problemText """Atrodiet visus veselo skaitļu $m$ un $n$ pārus
 $(m,n)$, kas apmierina vienādību
 $$m^2 + 2m - 9 = n^2 + n.$$"""@lv ;
-    eliozo:year "2017" .
+    eliozo:problemYear "2017" ;
+    eliozo:problem_number "2" .
 
-eliozo:LT.VUMIF.2017.11_12.2 eliozo:country "LT" ;
-    eliozo:grade 11 ;
+eliozo:LT.VUMIF.2017.11_12.2 a eliozo:Problem ;
+    eliozo:country "LT" ;
     eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "2" ;
-    eliozo:problemid "LT.VUMIF.2017.11_12.2" ;
-    eliozo:text """Atrodiet vienādojuma
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LT.VUMIF.2017.11_12.2" ;
+    eliozo:problemText """Atrodiet vienādojuma
 $$x^2y^2 + 208 + 4(\\mbox{LKD}(x,y) + \\mbox{MKD}(x,y))^2$$
 visus naturālos atrisinājumus $(x,y)$.
 Šeit $\\mbox{LKD}(x,y)$ un $\\mbox{MKD}(x,y)$ attiecīgi apzīmē skaitļu
 $x$ un $y$ lielāko kopīgo dalītāju un mazāko kopīgo dalāmo."""@lv ;
-    eliozo:year "2017" .
+    eliozo:problemYear "2017" ;
+    eliozo:problem_number "2" .
 
-eliozo:LT.VUMIF.2017.11_12.4 eliozo:country "LT" ;
-    eliozo:grade 11 ;
+eliozo:LT.VUMIF.2017.11_12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:hasSkill eliozo:misc.invar.game ;
     eliozo:image "LT.VUMIF.2017.11_12.4.svg" ;
     eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "4" ;
-    eliozo:problemid "LT.VUMIF.2017.11_12.4" ;
-    eliozo:skill eliozo:misc.invar.game ;
-    eliozo:text """Uz tāfeles uzrakstīts skaitlis $636363$.
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LT.VUMIF.2017.11_12.4" ;
+    eliozo:problemText """Uz tāfeles uzrakstīts skaitlis $636363$.
 Divi spēlētāji $A$ un $B$ pārmaiņus veic gājienus,
 pirmo gājienu izdara $A$.
 Gājiena laikā ir jānodzēš uz tāfeles esošais skaitlis un
 jāuzraksta tā starpība ar jebkuru viņa naturālu dalītāju.
 Spēlētājs, kurš uzraksta $0$, zaudē. Noskaidrojiet, kuram
 spēlētājam ir uzvaras stratēģija, un parādiet to."""@lv ;
-    eliozo:year "2017" .
+    eliozo:problemYear "2017" ;
+    eliozo:problem_number "4" .
 
-eliozo:LT.VUMIF.2017.9.2 eliozo:country "LT" ;
-    eliozo:grade 9 ;
-    eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "2" ;
-    eliozo:problemid "LT.VUMIF.2017.9.2" ;
-    eliozo:skill eliozo:comb.full,
+eliozo:LT.VUMIF.2017.9.2 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:hasSkill eliozo:comb.full,
         eliozo:nota.est.numdigits.prod ;
-    eliozo:text """Vai izmantojot tieši pa vienai reizei visus desmit ciparus
+    eliozo:olympiad "VUMIF" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.VUMIF.2017.9.2" ;
+    eliozo:problemText """Vai izmantojot tieši pa vienai reizei visus desmit ciparus
 $0,1,2,\\ldots,9$ var uzrakstīt divus naturālus skaitļus, ka
 viens skaitlis būtu otra kvadrāts?
  Pirmais skaitļa cipars nevar būt nulle."""@lv ;
-    eliozo:year "2017" .
+    eliozo:problemYear "2017" ;
+    eliozo:problem_number "2" .
 
-eliozo:LT.VUMIF.2018.10.4 eliozo:country "LT" ;
-    eliozo:grade 10 ;
-    eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "4" ;
-    eliozo:problemid "LT.VUMIF.2018.10.4" ;
-    eliozo:skill eliozo:div.fta.divisors.num,
+eliozo:LT.VUMIF.2018.10.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:hasSkill eliozo:div.fta.divisors.num,
         eliozo:div.fta.divisors.struct ;
-    eliozo:text """Skaitļa $n>1$ visu pozitīvo dalītāju
+    eliozo:olympiad "VUMIF" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LT.VUMIF.2018.10.4" ;
+    eliozo:problemText """Skaitļa $n>1$ visu pozitīvo dalītāju
 (ieskaitot $1$ un $n$) reizinājums vienāds ar $n^3$.
 Norādiet visas iespējamās skaitļa $n$ vērtības,
 uzrakstot, kāds var būt skaitļa $n$ sadalījums pirmreizinātājos."""@lv ;
-    eliozo:year "2018" .
+    eliozo:problemYear "2018" ;
+    eliozo:problem_number "4" .
 
-eliozo:LT.VUMIF.2018.11_12.4 eliozo:country "LT" ;
-    eliozo:grade 11 ;
+eliozo:LT.VUMIF.2018.11_12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
     eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "4" ;
-    eliozo:problemid "LT.VUMIF.2018.11_12.4" ;
-    eliozo:text """Naturālie skaitļi $p$, $x$, $y$ apmierina vienādojumus:
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LT.VUMIF.2018.11_12.4" ;
+    eliozo:problemText """Naturālie skaitļi $p$, $x$, $y$ apmierina vienādojumus:
 $$p + 1 = 2x^2,p^2 + 1 = 2y^2.$$
 Noskaidrojiet visas iespējamās skaitļa $p$ vērtības, ja
 zināms, ka šis skaitlis ir pirmskaitlis."""@lv ;
-    eliozo:year "2018" .
+    eliozo:problemYear "2018" ;
+    eliozo:problem_number "4" .
 
-eliozo:LT.VUMIF.2018.9.4 eliozo:country "LT" ;
-    eliozo:grade 9 ;
+eliozo:LT.VUMIF.2018.9.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
     eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "4" ;
-    eliozo:problemid "LT.VUMIF.2018.9.4" ;
-    eliozo:text """Naturālam skaitlim $M = 3N$
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.VUMIF.2018.9.4" ;
+    eliozo:problemText """Naturālam skaitlim $M = 3N$
 ir tikpat ciparu, cik naturālam skaitlim $N > 10$.
 Lai iegūtu skaitli $M$, vajag palielināt
 ikvienu skaitļa $N$ ciparu: vienam no cipariem
@@ -159,34 +170,36 @@ pieskaitīt pa nepāru naturālam skaitlim (ne obligāti
 visiem to pašu).
 Atrodiet visas iespējamās skaitļa $N$ pēdējā
 cipara vērtības."""@lv ;
-    eliozo:year "2018" .
+    eliozo:problemYear "2018" ;
+    eliozo:problem_number "4" .
 
-eliozo:LT.VUMIF.2019.10.4 eliozo:country "LT" ;
-    eliozo:grade 10 ;
-    eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "4" ;
-    eliozo:problemid "LT.VUMIF.2019.10.4" ;
-    eliozo:skill eliozo:misc.invar,
+eliozo:LT.VUMIF.2019.10.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:hasSkill eliozo:misc.invar,
         eliozo:mod.congr.prod,
         eliozo:nota.divrule.3_9.rem ;
-    eliozo:text """Naturālu skaitli sauksim par ,
+    eliozo:olympiad "VUMIF" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LT.VUMIF.2019.10.4" ;
+    eliozo:problemText """Naturālu skaitli sauksim par ,
 ja tam ir tieši $70$ ciparu: $10$ vieninieku,
 $10$ divnieku, $\\ldots$, $10$ septiņnkieku.
 Pierādīt, ka, ja viens septiņīgs skaitlis dalās
 ar citu septiņīgu skaitli, tad tie ir vienādi."""@lv ;
-    eliozo:year "2019" .
+    eliozo:problemYear "2019" ;
+    eliozo:problem_number "4" .
 
-eliozo:LT.VUMIF.2019.11_12.4 eliozo:country "LT" ;
-    eliozo:grade 11 ;
-    eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "4" ;
-    eliozo:problemid "LT.VUMIF.2019.11_12.4" ;
-    eliozo:skill eliozo:alg.ineq.monotonicity,
+eliozo:LT.VUMIF.2019.11_12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:hasSkill eliozo:alg.ineq.monotonicity,
         eliozo:comb.full,
         eliozo:mod.congr.prod,
         eliozo:mod.eq.chinese,
         eliozo:nota.divrule.3_9.rem ;
-    eliozo:text """Naturālu skaitli sauksim par , ja
+    eliozo:olympiad "VUMIF" ;
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LT.VUMIF.2019.11_12.4" ;
+    eliozo:problemText """Naturālu skaitli sauksim par , ja
 tam ir tieši $500$ ciparu: pa $100$ divnieku,
 trijnieku, četrinieku, piecinieku un sešinieku.
 Pie piecīga skaitļa $M$ labajā pusē pierakstot
@@ -194,14 +207,15 @@ divus ciparus $81$, iegūts skaitlis
 $N = \\overline{M81}$. Pierādiet, ka
 a) $M$ nedalās ne ar vienu piecīgu skaitli, izņemot sevi pašu;
 b) $N$ nedalās ne ar vienu piecīgu skaitli."""@lv ;
-    eliozo:year "2019" .
+    eliozo:problemYear "2019" ;
+    eliozo:problem_number "4" .
 
-eliozo:LT.VUMIF.2019.9.1 eliozo:country "LT" ;
-    eliozo:grade 9 ;
+eliozo:LT.VUMIF.2019.9.1 a eliozo:Problem ;
+    eliozo:country "LT" ;
     eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "1" ;
-    eliozo:problemid "LT.VUMIF.2019.9.1" ;
-    eliozo:text """Atrodiet visus veselu skaitļu trijniekus $(x,y,z)$,
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.VUMIF.2019.9.1" ;
+    eliozo:problemText """Atrodiet visus veselu skaitļu trijniekus $(x,y,z)$,
 kas apmierina vienādojumu sistēmu
 $$
 \\left \\begin{array}{l}
@@ -209,34 +223,37 @@ x^3 + y^3 = z^3 + 1,\\
 y^2 - x^2 = x+y,\\
 2x^3 - 6x = z^3 - 4x^2.
 \\end{array} \\right.$$"""@lv ;
-    eliozo:year "2019" .
+    eliozo:problemYear "2019" ;
+    eliozo:problem_number "1" .
 
-eliozo:LT.VUMIF.2019.9.2 eliozo:country "LT" ;
-    eliozo:grade 9 ;
-    eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "2" ;
-    eliozo:problemid "LT.VUMIF.2019.9.2" ;
-    eliozo:skill eliozo:misc.ind.least,
+eliozo:LT.VUMIF.2019.9.2 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:hasSkill eliozo:misc.ind.least,
         eliozo:misc.invar.game,
         eliozo:mod.fix.parity ;
-    eliozo:text "<div style=\"font-size:70%\">"@lv ;
-    eliozo:year "2019" .
-
-eliozo:LT.VUMIF.2019.9.4 eliozo:country "LT" ;
-    eliozo:grade 9 ;
     eliozo:olympiad "VUMIF" ;
-    eliozo:problem_number "4" ;
-    eliozo:problemid "LT.VUMIF.2019.9.4" ;
-    eliozo:skill eliozo:comb.full,
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.VUMIF.2019.9.2" ;
+    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
+    eliozo:problemYear "2019" ;
+    eliozo:problem_number "2" .
+
+eliozo:LT.VUMIF.2019.9.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:hasSkill eliozo:comb.full,
         eliozo:misc.symm,
         eliozo:mod.eq,
         eliozo:mod.fix.lastdigits,
         eliozo:nota.divrule.2_5pow.divides ;
-    eliozo:text """Jurgis uzrakstīja trīs naturālus skaitļus,
+    eliozo:olympiad "VUMIF" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.VUMIF.2019.9.4" ;
+    eliozo:problemText """Jurgis uzrakstīja trīs naturālus skaitļus,
 no kuriem katrs beidzas ar to pašu ciparu, ar kuru
 beidzas pārējo divu skaitļu summa, un sareizināja tos.
 Jurgis uzrakstīja tikai reizinājuma pēdējos trīs
 ciparus. Kādu ciparu trijnieku viņš varēja iegūt?
 Atrodiet visas iespējas."""@lv ;
-    eliozo:year "2019" .
+    eliozo:problemYear "2019" ;
+    eliozo:problem_number "4" .
 

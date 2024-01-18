@@ -4,19 +4,21 @@ import re
 import rdflib
 from rdflib.namespace import RDF, FOAF, SKOS, XSD
 
+RDF_NS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 eliozo_ns = "http://www.dudajevagatve.lv/eliozo#"
 
 def addToRdfGraph(g, title, text, country, olympiad, year, grade, problem_number): # Funkcija, kas pievieno RDF datus grafam
     global eliozo_ns
     problem_node = rdflib.URIRef(eliozo_ns+title)
-    problem_text_property = rdflib.URIRef(eliozo_ns+'text')
+    problem_text_property = rdflib.URIRef(eliozo_ns+'problemText')
     problem_country_property = rdflib.URIRef(eliozo_ns+'country')
     problem_olympiad_property = rdflib.URIRef(eliozo_ns+'olympiad')
-    problem_year_property = rdflib.URIRef(eliozo_ns+'year')
-    problem_grade_property = rdflib.URIRef(eliozo_ns+'grade')
+    problem_year_property = rdflib.URIRef(eliozo_ns+'problemYear')
+    problem_grade_property = rdflib.URIRef(eliozo_ns+'problemGrade')
     problem_number_property = rdflib.URIRef(eliozo_ns+'problem_number')
+    problem_rdf_property = rdflib.URIRef(RDF_NS+'type')
     problem_text = rdflib.term.Literal(text, lang=u'lv')
-    problem_id = rdflib.URIRef(eliozo_ns+'problemid')
+    problem_id = rdflib.URIRef(eliozo_ns+'problemID')
     g.add((problem_node, problem_text_property, problem_text))
     g.add((problem_node, problem_country_property, rdflib.term.Literal(country)))
     g.add((problem_node, problem_olympiad_property, rdflib.term.Literal(olympiad)))
@@ -24,13 +26,14 @@ def addToRdfGraph(g, title, text, country, olympiad, year, grade, problem_number
     g.add((problem_node, problem_grade_property, rdflib.term.Literal(grade, datatype=XSD.integer)))
     g.add((problem_node, problem_number_property, rdflib.term.Literal(problem_number)))
     g.add((problem_node, problem_id, rdflib.term.Literal(title)))
+    g.add((problem_node, problem_rdf_property, rdflib.URIRef(eliozo_ns + "Problem")))
 
 current_problem_id = "NA"
 
 def addSkillToRdfGraph(g, title, skill): # Funkcija, kas pievieno RDF prasmes datus grafam 
     global eliozo_ns
     problem_node = rdflib.URIRef(eliozo_ns+title) # subjekts
-    problem_skill_property = rdflib.URIRef(eliozo_ns+'skill') # property vienmēr eliozo:skill, predikāts
+    problem_skill_property = rdflib.URIRef(eliozo_ns+'hasSkill') # property vienmēr eliozo:skill, predikāts
     problem_skill_object = rdflib.URIRef(eliozo_ns+skill) # konkrētā prasme, īpašība var atkāroties, objekts
     g.add((problem_node, problem_skill_property, problem_skill_object))
 

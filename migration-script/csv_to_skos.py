@@ -5,6 +5,7 @@ import requests
 
 eliozo_ns = "http://www.dudajevagatve.lv/eliozo#"
 
+RDF_NS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 SKOS = "http://www.w3.org/2004/02/skos/core#"
 
 def getGoogleSpreadsheet(): # Funkcija, kas iegūst Google Spreadsheet dokumentu ar olimpiāžu uzdevumu datiem
@@ -36,16 +37,20 @@ def readCSVfile(g): # Funkcija, kas lasa CSV failu
 def addToRdfGraph(g, numeric_id, skillID, skillDescription, prefLabel, parentSkill_id):
     global eliozo_ns
     skill_node = rdflib.URIRef(eliozo_ns+skillID) # RDF subjekts
-    skill_numeric_id_property = rdflib.URIRef(eliozo_ns+'skillNumber') # 1 0 0 0
-    skill_id_property = rdflib.URIRef(eliozo_ns+'skillIdentifier') # alg.expr
+    # skill_numeric_id_property = rdflib.URIRef(eliozo_ns+'skillNumber') # 1 0 0 0
+    skill_id_property = rdflib.URIRef(eliozo_ns+'skillID') # alg.expr
     skill_description_property = rdflib.URIRef(eliozo_ns+'skillDescription') # Fiksēts URL, kas apraksta RDF predikātu
+    skill_name_property = rdflib.URIRef(eliozo_ns+'skillName')
+    skill_rdf_type_property = rdflib.URIRef(RDF_NS+'type')
     skill_prefLabel_property = rdflib.URIRef(SKOS+'prefLabel')
     skill_broader_property = rdflib.URIRef(SKOS+'broader')
     skill_narrower_property = rdflib.URIRef(SKOS+'narrower')
     skill_description_object = rdflib.term.Literal(skillDescription)
     g.add((skill_node, skill_id_property, rdflib.term.Literal(skillID)))
     g.add((skill_node, skill_description_property, skill_description_object))
-    g.add((skill_node, skill_numeric_id_property, rdflib.term.Literal(numeric_id)))
+    g.add((skill_node, skill_name_property, rdflib.term.Literal('TBD')))
+    g.add((skill_node, skill_rdf_type_property, rdflib.URIRef(eliozo_ns+"Skill")))
+    # g.add((skill_node, skill_numeric_id_property, rdflib.term.Literal(numeric_id)))
     g.add((skill_node, skill_prefLabel_property, rdflib.term.Literal(prefLabel)))
     if parentSkill_id != '':
         parent_skill_node = rdflib.URIRef(eliozo_ns+parentSkill_id)

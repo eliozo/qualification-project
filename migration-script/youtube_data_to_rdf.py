@@ -58,13 +58,13 @@ def addToRdfGraph(g, problem_id, youtube_id, video_title, bookmarks):
     global SKOS_NS
     global RDF_NS
     problem_node = rdflib.URIRef(eliozo_ns + problem_id)
-    problem_video_property = rdflib.URIRef(eliozo_ns + 'video')
+    problem_video_property = rdflib.URIRef(eliozo_ns + 'hasVideo')
     video_resource = rdflib.BNode()
 
     rdf_type_property = rdflib.URIRef(RDF_NS + "type")
     rdf_type_value = rdflib.URIRef(eliozo_ns + "Video")
 
-    youtube_id_property = rdflib.URIRef(eliozo_ns+'youtubeID')
+    youtube_id_property = rdflib.URIRef(eliozo_ns+'videoYoutube')
     youtube_id_value = rdflib.term.Literal(youtube_id)
 
     video_title_property = rdflib.URIRef(eliozo_ns + "videoTitle")
@@ -89,10 +89,12 @@ def addToRdfGraph(g, problem_id, youtube_id, video_title, bookmarks):
         seq_property = rdflib.URIRef(RDF_NS + "_{}".format(count))
         current_bookmark = rdflib.BNode()
         g.add((video_bookmarks, seq_property, current_bookmark))
-        current_bookmark_tstamp_property = rdflib.URIRef(eliozo_ns + "tstamp")
+        current_bookmark_tstamp_property = rdflib.URIRef(eliozo_ns + "videoBookmarkTstamp")
         g.add((current_bookmark, current_bookmark_tstamp_property, rdflib.term.Literal(tstamp, datatype=XSD.integer)))
-        current_bookmark_text_property = rdflib.URIRef(eliozo_ns + "bmtext")
+        current_bookmark_text_property = rdflib.URIRef(eliozo_ns + "videoBookmarkText")
         g.add((current_bookmark, current_bookmark_text_property, rdflib.term.Literal(bmtext)))
+        current_bookmark_rdf_type_property = rdflib.URIRef(RDF_NS + "type")
+        g.add((current_bookmark, current_bookmark_rdf_type_property, rdflib.URIRef(eliozo_ns + "VideoBookmark")))
         count += 1
 
 if __name__ == '__main__':
