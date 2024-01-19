@@ -18,10 +18,10 @@ def getSPARQLtopics():
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
     '''SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?problemid WHERE { 
-    ?skill eliozo:skillIdentifier ?skillIdentifier .
+    ?skill eliozo:skillID ?skillIdentifier .
     ?skill eliozo:skillNumber ?skillNumber .
     ?skill eliozo:skillDescription ?skillDescription .
-    OPTIONAL {?prob eliozo:skill ?skill . ?prob eliozo:problemid ?problemid . }.
+    OPTIONAL {?prob eliozo:hasSkill ?skill . ?prob eliozo:problemID ?problemid . }.
     } ORDER BY ?skillNumber'''
     }
 
@@ -41,20 +41,20 @@ def getSPARQLProblem(arg):
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
 'SELECT * WHERE { \n'+ 
-  '?problem eliozo:problemid \'{problemid}\' .\n' .format(problemid=arg)+
+  '?problem eliozo:problemID \'{problemid}\' .\n' .format(problemid=arg)+
   '''OPTIONAL {
-    ?problem eliozo:text ?text ;
-             eliozo:year ?year ;
+    ?problem eliozo:problemText ?text ;
+             eliozo:problemYear ?year ;
              eliozo:olympiad ?olympiad ;
-             eliozo:grade ?grade ;
+             eliozo:problemGrade ?grade ;
              eliozo:country ?country .
              } .
       OPTIONAL {
-        ?problem eliozo:skill ?skill .
-        ?skill eliozo:skillIdentifier ?skillIdentifier .
+        ?problem eliozo:hasSkill ?skill .
+        ?skill eliozo:skillID ?skillIdentifier .
     } .
       OPTIONAL {
-        ?problem eliozo:video ?video .
+        ?problem eliozo:hasVideo ?video .
     } .
       OPTIONAL {
         ?problem eliozo:image ?image .
@@ -82,10 +82,10 @@ def getSkillProblemsSPARQL(skillID):
 WHERE {
     ?parent skos:prefLabel \''''+skillID+'''\'  .
     ?parent skos:narrower* ?subskill .
-    ?problem eliozo:skill ?subskill ;
-             eliozo:problemid ?problemid ;
-             eliozo:text ?text ;
-             eliozo:grade ?grade .
+    ?problem eliozo:hasSkill ?subskill ;
+             eliozo:problemID ?problemid ;
+             eliozo:problemText ?text ;
+             eliozo:problemGrade ?grade .
 } ORDER BY ?grade
  '''
 
@@ -150,7 +150,7 @@ def getSPARQLOlympiadYears(country, olympiad):
     'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\n'+
     'SELECT DISTINCT ?year ?grade WHERE { ?problem eliozo:country \''+country+
     '\' ; eliozo:olympiad \''+olympiad+
-    '\' ; eliozo:year ?year ; eliozo:grade ?grade . } ORDER BY ?year ?grade'
+    '\' ; eliozo:problemYear ?year ; eliozo:problemGrade ?grade . } ORDER BY ?year ?grade'
     }
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
@@ -169,12 +169,12 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad):
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\n'+
     '''SELECT ?text ?problemid ?problem_number WHERE {
-  ?problem eliozo:year \''''+year+'''\' .
+  ?problem eliozo:problemYear \''''+year+'''\' .
   ?problem eliozo:country \''''+country+'''\' .
-  ?problem eliozo:text ?text .
-  ?problem eliozo:problemid ?problemid .
+  ?problem eliozo:problemText ?text .
+  ?problem eliozo:problemID ?problemid .
   ?problem eliozo:problem_number ?problem_number .
-  ?problem eliozo:grade '''+grade+''' .
+  ?problem eliozo:problemGrade '''+grade+''' .
   ?problem eliozo:olympiad \''''+olympiad+'''\' .
 } ORDER BY ?problem_number'''
     }
@@ -197,15 +197,15 @@ def getSPARQLVideoBookmarks(problemid):
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\n'+
     '''SELECT ?videoTitle ?youtubeID ?tstamp ?bmtext WHERE {
-  ?problem eliozo:problemid \''''+problemid+'''\' .
+  ?problem eliozo:problemID \''''+problemid+'''\' .
   OPTIONAL {
-    ?problem eliozo:video ?video .
+    ?problem eliozo:hasVideo ?video .
     ?video eliozo:videoTitle ?videoTitle ;
-           eliozo:youtubeID ?youtubeID ;
+           eliozo:videoYoutube ?youtubeID ;
            eliozo:videoBookmarks ?videoBookmarks .
     ?videoBookmarks ?prop ?bookmark .
-    ?bookmark eliozo:tstamp ?tstamp ;
-              eliozo:bmtext ?bmtext .
+    ?bookmark eliozo:videoBookmarkTstamp ?tstamp ;
+              eliozo:videoBookmarkText ?bmtext .
   }.
 } ORDER BY ?tstamp'''
     }
@@ -226,8 +226,9 @@ def getAllSPARQLVideos():
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\n'+
     '''SELECT ?problemid WHERE {
-  ?problem eliozo:problemid ?problemid .
-  	?problem eliozo:video ?video .         
+  ?problem eliozo:problemID ?problemid ;
+           eliozo:problemGrade ?grade ;
+  	       eliozo:hasVideo ?video .         
   } ORDER BY ?grade'''
     }
 
