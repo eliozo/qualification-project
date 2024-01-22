@@ -34,6 +34,7 @@ def getMarkdownFile(URL, file_suffix): # Funkcija, kas iegūst Markdown failu no
     URL = URL.replace('github.com','raw.githubusercontent.com')
     URL = URL + '/content.md'
     URL = URL.replace('/tree', '')
+    print(f'Getting markdown: {URL}')
     response = requests.get(URL)
     open('resources/'+file_suffix+'-content.md', "wb").write(response.content)
 

@@ -5123,9 +5123,65 @@ viņš iegūst divus punktus). Spēle beidzas, kad tabula ir pilnībā aizpildī
 punktu. Kuram spēlētājam ir uzvaroša stratēģija, ja **(a)** $n = 2021$; **(b)**  $n = 2022$?
     
     
+-----
+    
+# <lo-sample/> LV.AO.2023.5.1
 
+Skaitļus no $1$ līdz $9$ ieraksti 1. att. redzamajos mazajos trijstūros (katrā trijstūrī citu naturālo skaitli) tā, 
+lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.
+*Piezīme.* Par blakus trijstūriem sauksim trijstūrus, kam ir kopīga mala.  
+![1.zīm.](LV.AO.2023.5.1.png)
+
+* [Topic:arithmetic](#)
+
+-----
     
+# <lo-sample/> LV.AO.2023.5.2
+
+Doti divi skaitļi. Zināms, ka viens no tiem ir tieši septiņas reizes lielāks nekā otrs un katram no tiem ir vismaz divi
+cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari 
+**(a)** $3$; $4$; $6$ un $7$; **(b)** $1$; $2$ un $3$?
+
+* [mod.fix.lastdigits](#)
+* [Topic:decimalNotation](#)
+
+
+-----
     
+# <lo-sample/> LV.AO.2023.5.3
+
+Rūtiņu lapā, kurā katras rūtiņas malas garums ir $1$, uzzīmē daudzstūri, kuram gan perimetra, gan laukuma vērtība
+ir tāda pati kā malu skaits!
+
+* [Topic:squareGridGeometry](#)
+
+
+-----
+    
+# <lo-sample/> LV.AO.2023.5.4
+
+Dots kvadrāts ar izmēriem $n \times n$ rūtiņas. 
+Vienā gājienā kauliņu var pārlikt tieši $2$ rūtiņas uz priekšu pa jebkuru
+no diagonālēm, kas iziet no tā lauciņa, kurā atrodas kauliņš (skat. 2. att., 
+kur kauliņš apzīmēts ar o un ar x
+atzīmētas tās rūtiņas, uz kurām to drīkst pārvietot). Vai, veicot vairākus gājienus, 
+kauliņu no kreisās apakšējās
+rūtiņas var pārvietot uz kreiso augšējo rūtiņu, ja kvadrāta izmēri ir: 
+**(a)** $9 \times 9$; **(b)** $10 \times 10$; **(c)** $11 \times 11$?
+
+* [Topic:otherAlgorithms](#)
+
+
+-----
+    
+# <lo-sample/> LV.AO.2023.5.5
+
+Gunai bija četru veidu konfektes: $8$ "Serenādes", $14$ "Lācīši Ķepainīši", 
+$20$ "Vāverītes" un $26$ "Sarkanās magones".
+Katru no saviem dzimšanas dienas viesiem viņa uzcienāja ar tieši $3$ dažādām konfektēm. Kāds ir lielākais
+iespējamais viesu skaits, kas bija ieradušies uz Gunas dzimšanas dienas svinībām?
+
+* [Topic:otherCombinatorics](#)  
 
 
     

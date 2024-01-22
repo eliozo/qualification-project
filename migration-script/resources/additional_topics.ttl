@@ -1,0 +1,75 @@
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+eliozo:geometry a eliozo:Topic ;
+    eliozo:topicID "geometry" ;
+    eliozo:topicTitle "Ģeometrija" ; 
+    eliozo:topicDescription "Vidusskolas ģeometrija" ;
+    skos:narrower eliozo:planimetry ,
+        eliozo:stereometry ,
+        eliozo:projectiveGeometry , 
+        eliozo:affineGeometry , 
+        eliozo:combinatorialGeometry ,
+        eliozo:topology , 
+        eliozo:convexAnalysis ,
+        eliozo:geometryOther ;
+    skos:prefLabel "geometry" .
+
+eliozo:planimetry a eliozo:Topic ;
+    eliozo:topicID "planimetry" ;
+    eliozo:topicTitle "Planimetrija" ; 
+    eliozo:topicDescription "Planimetrija" ;
+    skos:narrower eliozo:imaginativeGeometry ,
+        eliozo:planarLines ,
+        eliozo:triangles , 
+        eliozo:circles , 
+        eliozo:quadrilaterals ,
+        eliozo:polygons , 
+        eliozo:area ,
+        eliozo:vectors ,
+        eliozo:planeTransformations , 
+        eliozo:geometricInequalities , 
+        eliozo:geometricConstructions ,
+        eliozo:geometricLoci , 
+        eliozo:convexConcave , 
+        eliozo:geometricExtremes , 
+        eliozo:secondDegreeCurves ,
+        eliozo:planimetryOther ; 
+    skos:broader eliozo:geometry ;
+    skos:prefLabel "planimetry" . 
+
+eliozo:triangles a eliozo:Topic ;
+    eliozo:topicID "triangles" ;
+    eliozo:topicTitle "Trijstūri" ; 
+    eliozo:topicDescription "Trijstūri" ;
+    skos:narrower eliozo:triangleSumOfAngles ,
+        eliozo:trianglePerimeter ,
+        eliozo:isoscelesTriangles , 
+        eliozo:congruentTriangles , 
+        eliozo:similarTriangles , 
+        eliozo:specialTriangles , 
+        eliozo:inscribedCircumscribedTriangles , 
+        eliozo:triangleExcircles , 
+        eliozo:triangleSidesVsAngles , 
+        eliozo:triangleSpecialPoints , 
+        eliozo:triangleOther ; 
+    skos:broader eliozo:planimetry ;
+    skos:prefLabel "triangles" . 
+
+
+eliozo:triangleSumOfAngles a eliozo:Topic ;
+    eliozo:topicID "triangleSumOfAngles" ;
+    eliozo:topicTitle "Trijstūra leņķu summa" ; 
+    eliozo:topicDescription "Trijstūra leņķu summa, ārējā leņķa teorēma" ;
+    skos:broader eliozo:triangles ;
+    skos:prefLabel "triangleSumOfAngles" .
+
+
+eliozo:congruentTriangles a eliozo:Topic ;
+    eliozo:topicID "congruentTriangles" ;
+    eliozo:topicTitle "Vienādi trijstūri" ; 
+    eliozo:topicDescription "Vienādi trijstūri, vienādības pazīmes" ;
+    skos:broader eliozo:triangles ;
+    skos:prefLabel "congruentTriangles" .
+

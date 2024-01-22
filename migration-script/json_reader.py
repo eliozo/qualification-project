@@ -33,9 +33,17 @@ current_problem_id = "NA"
 def addSkillToRdfGraph(g, title, skill): # Funkcija, kas pievieno RDF prasmes datus grafam 
     global eliozo_ns
     problem_node = rdflib.URIRef(eliozo_ns+title) # subjekts
-    problem_skill_property = rdflib.URIRef(eliozo_ns+'hasSkill') # property vienmēr eliozo:skill, predikāts
+    problem_skill_property = rdflib.URIRef(eliozo_ns+'hasSkill') # property vienmēr eliozo:hasSkill, predikāts
     problem_skill_object = rdflib.URIRef(eliozo_ns+skill) # konkrētā prasme, īpašība var atkāroties, objekts
     g.add((problem_node, problem_skill_property, problem_skill_object))
+
+def addTopicToRdfGraph(g, title, topic): # Funkcija, kas pievieno RDF tēmu uzdevumam 
+    global eliozo_ns
+    print(f'Adding topic {topic}')
+    problem_node = rdflib.URIRef(eliozo_ns+title) # subjekts
+    problem_topic_property = rdflib.URIRef(eliozo_ns+'hasTopic') # property vienmēr eliozo:hasTopic, predikāts
+    problem_topic_object = rdflib.URIRef(eliozo_ns+topic) # konkrētā tēma, objekts
+    g.add((problem_node, problem_topic_property, problem_topic_object))
 
 def addImageToRDFGraph(g, title, image_src): 
     global eliozo_ns
@@ -67,6 +75,8 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
         if item['type'] == 'Heading':
             state = 1
             problem_title = item['children'][0]['content']
+
+            print(f'problem_title = {problem_title}')
 
             if problem_title.startswith('<lo-sample/>'):
                 pass
@@ -105,7 +115,12 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
             for skill_item in skill_items:
                 if skill_item['type'] == 'ListItem':
                     skill = skill_item['children'][0]['children'][0]['children'][0]['content']
-                    addSkillToRdfGraph(g, current_problem_id, skill)
+                    print(f'skill = {skill}')
+                    if skill.startswith('Topic:'):
+                        topic = skill[6:]
+                        addTopicToRdfGraph(g, current_problem_id, topic)
+                    else:
+                        addSkillToRdfGraph(g, current_problem_id, skill)
         elif state == 0 and item['type'] == 'Paragraph' and item['children'][0]['type'] == 'Image':
             image_src = item['children'][0]['src']
             # print('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa{}'.format(image_src))
