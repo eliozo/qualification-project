@@ -5132,7 +5132,11 @@ lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.
 *Piezīme.* Par blakus trijstūriem sauksim trijstūrus, kam ir kopīga mala.  
 ![1.zīm.](LV.AO.2023.5.1.png)
 
+<small>
+
 * [Topic:arithmetic](#)
+
+</small>
 
 -----
     
@@ -5142,9 +5146,12 @@ Doti divi skaitļi. Zināms, ka viens no tiem ir tieši septiņas reizes lielāk
 cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari 
 **(a)** $3$; $4$; $6$ un $7$; **(b)** $1$; $2$ un $3$?
 
+<small>
+
 * [mod.fix.lastdigits](#)
 * [Topic:decimalNotation](#)
 
+</small>
 
 -----
     
@@ -5153,8 +5160,11 @@ cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari
 Rūtiņu lapā, kurā katras rūtiņas malas garums ir $1$, uzzīmē daudzstūri, kuram gan perimetra, gan laukuma vērtība
 ir tāda pati kā malu skaits!
 
+<small>
+
 * [Topic:squareGridGeometry](#)
 
+</small>
 
 -----
     
@@ -5167,10 +5177,14 @@ kur kauliņš apzīmēts ar o un ar x
 atzīmētas tās rūtiņas, uz kurām to drīkst pārvietot). Vai, veicot vairākus gājienus, 
 kauliņu no kreisās apakšējās
 rūtiņas var pārvietot uz kreiso augšējo rūtiņu, ja kvadrāta izmēri ir: 
-**(a)** $9 \times 9$; **(b)** $10 \times 10$; **(c)** $11 \times 11$?
+**(a)** $9 \times 9$; **(b)** $10 \times 10$; **(c)** $11 \times 11$?  
+![2.zīm.](LV.AO.2023.5.4.png)
+
+<small>
 
 * [Topic:otherAlgorithms](#)
 
+</small>
 
 -----
     
@@ -5181,7 +5195,11 @@ $20$ "Vāverītes" un $26$ "Sarkanās magones".
 Katru no saviem dzimšanas dienas viesiem viņa uzcienāja ar tieši $3$ dažādām konfektēm. Kāds ir lielākais
 iespējamais viesu skaits, kas bija ieradušies uz Gunas dzimšanas dienas svinībām?
 
+<small>
+
 * [Topic:otherCombinatorics](#)  
+
+</small>
 
 
     

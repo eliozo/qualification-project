@@ -3516,6 +3516,7 @@ kuram izpildās šādas īpašības:"""@lv ;
 
 eliozo:LV.AO.2023.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:hasTopic eliozo:arithmetic ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AO.2023.5.1" ;
@@ -3528,6 +3529,8 @@ lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.
 
 eliozo:LV.AO.2023.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:hasSkill eliozo:mod.fix.lastdigits ;
+    eliozo:hasTopic eliozo:decimalNotation ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AO.2023.5.2" ;
@@ -3539,6 +3542,7 @@ cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari
 
 eliozo:LV.AO.2023.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:hasTopic eliozo:squareGridGeometry ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AO.2023.5.3" ;
@@ -3549,6 +3553,7 @@ ir tāda pati kā malu skaits!"""@lv ;
 
 eliozo:LV.AO.2023.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:hasTopic eliozo:otherAlgorithms ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AO.2023.5.4" ;
@@ -3559,12 +3564,14 @@ kur kauliņš apzīmēts ar o un ar x
 atzīmētas tās rūtiņas, uz kurām to drīkst pārvietot). Vai, veicot vairākus gājienus,
 kauliņu no kreisās apakšējās
 rūtiņas var pārvietot uz kreiso augšējo rūtiņu, ja kvadrāta izmēri ir:
- $9 \\times 9$;  $10 \\times 10$;  $11 \\times 11$?"""@lv ;
+ $9 \\times 9$;  $10 \\times 10$;  $11 \\times 11$?
+"""@lv ;
     eliozo:problemYear "2023" ;
     eliozo:problem_number "4" .
 
 eliozo:LV.AO.2023.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:hasTopic eliozo:otherCombinatorics ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AO.2023.5.5" ;
