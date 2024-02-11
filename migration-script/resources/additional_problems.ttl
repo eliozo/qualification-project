@@ -1,0 +1,32 @@
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+eliozo:LV.NO.2023.8.3 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:hasSkill eliozo:geom.triangle.isosceles.height ;
+    eliozo:olympiad "NO" ;
+    eliozo:problemGrade 8 ;
+    eliozo:problemID "LV.NO.2023.8.3" ;
+    eliozo:problemText """Dots vienādsānu trijstūris $ABC$, kuram $AB=BC$. Uz malas $AB$ izvēlēts punkts $M$ un uz malas $BC$ izvēlēts
+punkts $K$ tā, ka $AM=AK=AC$. Zināms, ka $AK \\perp MC$. Aprēķināt trijstūra $ABC$ leņķus!"""@lv ;
+    eliozo:problemYear "2023" ;
+    eliozo:problem_number "3" .
+
+
+eliozo:geom.triangle.isosceles a eliozo:Skill ;
+    eliozo:skillDescription "Lietot vienādsānu trijstūra īpašības" ;
+    eliozo:skillID "geom.triangle.isosceles" ;
+    eliozo:skillName "Lietot vienādsānu trijstūra īpašības" ;
+    eliozo:skillNumber "8.3.3.0.0" ;
+    skos:narrower eliozo:geom.triangle.isosceles.height ;
+    skos:broader eliozo:geom.triangle ;
+    skos:prefLabel "geom.triangle.isosceles" .
+
+eliozo:geom.triangle.isosceles.height a eliozo:Skill ;
+    eliozo:skillDescription "Lietot vienādsānu trijstūra augstuma īpašības" ;
+    eliozo:skillID "geom.triangle.isosceles.height" ;
+    eliozo:skillName "Lietot vienādsānu trijstūra augstuma īpašības" ;
+    eliozo:skillNumber "8.3.3.1.0" ;
+    skos:broader eliozo:geom.triangle.isosceles ;
+    skos:prefLabel "geom.triangle.isosceles.height" .

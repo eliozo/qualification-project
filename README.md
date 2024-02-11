@@ -25,7 +25,7 @@ Idejas, kā paplašināt ontoloģiju:
 - Klasificēt pēc tēmas, eliozo:topic (algebra, ģeometrija utt.)
 - Katrai prasmei ir anchor tasks, raksturīgākie uzdevumi prasmēm, centrālais uzdevums, sākot mācīt par kādu no prasmēm
 - Katrai prasmei un tēmai ir zināma klase, no kuras sāk mācit konkrētu tēmu/prasmi eliozo:startingGradeLV
-- alg.tra - derētu lasāmāki prasmju nosaukum
+- alg.tra - derētu lasāmāki prasmju nosaukumi
 
 
 # Studentu personas datu apstrādei noderīgi standarti
@@ -54,3 +54,19 @@ http://127.0.0.1:5000/eliozo/problem?problemid=LT.LJKMO.2018.7_8.6
 http://127.0.0.1:5000/eliozo/skill_tasks?skillIdentifier=comb.full
 (pirmajam uzdevumam pēc formulas lapas platumā ir sajaukta atkāpe). 
 Drusku zemāk salūzt fonti - kļūst ļoti mazi burti.
+
+<http://www.dudajevagatve.lv/eliozo#LV.AO.2000.7.4>
+Uzdevuma teksts aprauts: "Vai naturālos skaitļus"@lv
+
+
+Fixes to Ontology
+===================
+Remove Topic.topicHasSubtopic (use skos concepts narrower/broader instead)
+
+Add Skill.skillNumber 
+Add problem_number
+Add olympiad
+
+Remove country from Problem (can infer from olympiad)
+
+
