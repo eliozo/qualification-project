@@ -1,0 +1,11 @@
+<li>
+    <label for="{{ child }}">{{ child }}</label>
+    <input type="checkbox" id="{{ child }}" />
+    {% if tree[child] %}
+    <ul class="hidden" id="children-of-{{ child }}">
+        {%- for subchild in tree[child] %}
+        {% include "subtree.html" with context %}
+        {%- endfor %}
+    </ul>
+    {% endif %}
+</li>

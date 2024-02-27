@@ -10,7 +10,7 @@ from werkzeug.wrappers import Response
 FUSEKI_URL = 'http://127.0.0.1:9080/jena-fuseki-war-4.7.0/abc/'
 
 # Integrācija ar Jena Fuseki serveri
-def getSPARQLtopics():
+def getSPARQLskills():
     ##url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     url = FUSEKI_URL
     myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
@@ -33,6 +33,33 @@ def getSPARQLtopics():
 
     return x.text
 
+
+def getSPARQLtopics(root):
+    ##url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    url = FUSEKI_URL
+    myobj = {'query': '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+SELECT ?topicID ?topicParent ?topicTitle ?topicDesc WHERE {
+  ?topic rdf:type eliozo:Topic ; 
+         eliozo:topicID ?topicID ; 
+         eliozo:topicTitle ?topicTitle ;
+  		 eliozo:topicDescription ?topicDesc ;
+     	 skos:broader ?topicParent ;''' +
+         'skos:broader* {topParent} .'.format(topParent=root) +
+'''}'''
+    }
+
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+
+    x = requests.post(url, myobj, head)
+
+    print(x.text)
+
+    return x.text
+
+
 def getSPARQLProblem(arg):
     # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     url = FUSEKI_URL
@@ -40,7 +67,7 @@ def getSPARQLProblem(arg):
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
-'SELECT * WHERE { \n'+ 
+'SELECT * WHERE { \n'+
   '?problem eliozo:problemID \'{problemid}\' .\n' .format(problemid=arg)+
   '''OPTIONAL {
     ?problem eliozo:problemText ?text ;
@@ -168,7 +195,7 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad):
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\n'+
-    '''SELECT ?text ?problemid ?problem_number WHERE {
+    '''SELECT ?text ?problemid ?problem_number ?imagefile WHERE {
   ?problem eliozo:problemYear \''''+year+'''\' .
   ?problem eliozo:country \''''+country+'''\' .
   ?problem eliozo:problemText ?text .
@@ -176,6 +203,9 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad):
   ?problem eliozo:problem_number ?problem_number .
   ?problem eliozo:problemGrade '''+grade+''' .
   ?problem eliozo:olympiad \''''+olympiad+'''\' .
+  OPTIONAL {
+    ?problem eliozo:image ?imagefile .
+  } .
 } ORDER BY ?problem_number'''
     }
 
@@ -328,7 +358,7 @@ def create_app(test_config=None):
 
     @app.route('/skills', methods=['GET','POST'])
     def getSkills():
-        data = json.loads(getSPARQLtopics())
+        data = json.loads(getSPARQLskills())
 
         all_skills = []
         all_skill_info = dict() # Vārdnīca visai prasmju tabulai
@@ -362,9 +392,23 @@ def create_app(test_config=None):
 
     @app.route('/topics', methods=['GET','POST'])
     def getTopics():
-        all_topics = ["Pirmā tēma", "Otrā tēma"]
+
+        all_topics = json.loads(getSPARQLtopics('eliozo:analysis'))
+        topic_list = ["Pirmā tēma", "Otrā tēma"]
+        for item in all_topics['results']['bindings']:
+            topic_list.append(item['topicTitle']['value'])
+
+        myTree = {
+            "root": ["child1", "child2"],
+            "child1": ["grandchild1", "grandchild2"],
+            "child2": [],
+            "grandchild1": [],
+            "grandchild2": []
+        }
+
         template_context = {
-            'all_topics': all_topics
+            'all_topics': topic_list,
+            'tree': myTree
         }
         return render_template('topics.html', **template_context)
 
@@ -502,11 +546,12 @@ def create_app(test_config=None):
         
         for item in link['results']['bindings']:
             problem_id_value = item['problemid']['value']
+            problem_imagefile = ''
+            if 'imagefile' in item:
+                problem_imagefile = item['imagefile']['value']
             problem_number_value = item['problem_number']['value']
             problem_text_value = mathBeautify(item['text']['value'])
-
-            d = {'problemid': problem_id_value, 'problem_number':problem_number_value, 'text': problem_text_value}
-
+            d = {'problemid': problem_id_value, 'problem_number':problem_number_value, 'text': problem_text_value, 'imagefile': problem_imagefile}
             problems.append(d)
 
 

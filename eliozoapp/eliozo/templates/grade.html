@@ -56,6 +56,9 @@
                     {{ problem.problemid }}
                 </a> </p>
             {{ problem.text | safe }}
+            {% if problem.imagefile != '' %}
+            <p><img src="http://www.dudajevagatve.lv/static/eliozo/images/{{ problem.imagefile }}" width="250"/></p>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
