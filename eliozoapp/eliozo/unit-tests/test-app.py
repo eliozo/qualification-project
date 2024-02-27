@@ -1,4 +1,4 @@
-from flaskr import Flask # Flask instance of the API
+from eliozoapp import Flask # Flask instance of the API
 
 def test_index_route():
     response = Flask.test_client().get('/')
