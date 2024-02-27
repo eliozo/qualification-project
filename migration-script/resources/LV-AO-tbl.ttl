@@ -1367,9 +1367,9 @@ rūtiņas!
 
 eliozo:LV.AO.2011.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:hasSkill eliozo:geom.circle.inscribed,
-        eliozo:geom.constr.small,
-        eliozo:geom.constr.triangulate ;
+    eliozo:hasSkill eliozo:plan.circle.inscribed,
+        eliozo:plan.constr.small,
+        eliozo:plan.constr.triangulate ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AO.2011.5.3" ;
@@ -1633,8 +1633,8 @@ skaitlis?"""@lv ;
 
 eliozo:LV.AO.2012.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:hasSkill eliozo:geom.circle.inscribed,
-        eliozo:geom.constr.triangulate ;
+    eliozo:hasSkill eliozo:plan.circle.inscribed,
+        eliozo:plan.constr.triangulate ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AO.2012.5.2" ;
@@ -1759,7 +1759,7 @@ eliozo:LV.AO.2012.9.1 a eliozo:Problem ;
 
 eliozo:LV.AO.2012.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:hasSkill eliozo:geom.triangle.congruence ;
+    eliozo:hasSkill eliozo:plan.triangle.congruence ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AO.2012.9.2" ;
@@ -1801,8 +1801,8 @@ Vai Pēteris vienmēr var uzvarēt?"""@lv ;
 
 eliozo:LV.AO.2012.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:hasSkill eliozo:geom.quadrangle.trapezoid.area,
-        eliozo:geom.triangle.area.ah2 ;
+    eliozo:hasSkill eliozo:plan.quadrangle.trapezoid.area,
+        eliozo:plan.triangle.area.ah2 ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AO.2012.9.5" ;
@@ -2382,7 +2382,7 @@ skaitlis ir tieši trīs reizes lielāks nekā otrs skaitlis?"""@lv ;
 
 eliozo:LV.AO.2014.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:hasSkill eliozo:geom.quadrangle.rect ;
+    eliozo:hasSkill eliozo:plan.quadrangle.rect ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AO.2014.5.3" ;
@@ -3516,7 +3516,7 @@ kuram izpildās šādas īpašības:"""@lv ;
 
 eliozo:LV.AO.2023.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:hasTopic eliozo:arithmetic ;
+    eliozo:hasSkill <http://www.dudajevagatve.lv/eliozo#Topic:arithmetic> ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AO.2023.5.1" ;
@@ -3529,8 +3529,8 @@ lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.
 
 eliozo:LV.AO.2023.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:hasSkill eliozo:mod.fix.lastdigits ;
-    eliozo:hasTopic eliozo:decimalNotation ;
+    eliozo:hasSkill <http://www.dudajevagatve.lv/eliozo#Topic:decimalNotation>,
+        eliozo:mod.fix.lastdigits ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AO.2023.5.2" ;
@@ -3542,7 +3542,7 @@ cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari
 
 eliozo:LV.AO.2023.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:hasTopic eliozo:squareGridGeometry ;
+    eliozo:hasSkill <http://www.dudajevagatve.lv/eliozo#Topic:squareGridGeometry> ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AO.2023.5.3" ;
@@ -3553,7 +3553,7 @@ ir tāda pati kā malu skaits!"""@lv ;
 
 eliozo:LV.AO.2023.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:hasTopic eliozo:otherAlgorithms ;
+    eliozo:hasSkill <http://www.dudajevagatve.lv/eliozo#Topic:otherAlgorithms> ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AO.2023.5.4" ;
@@ -3571,7 +3571,7 @@ rūtiņas var pārvietot uz kreiso augšējo rūtiņu, ja kvadrāta izmēri ir:
 
 eliozo:LV.AO.2023.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:hasTopic eliozo:otherCombinatorics ;
+    eliozo:hasSkill <http://www.dudajevagatve.lv/eliozo#Topic:otherCombinatorics> ;
     eliozo:olympiad "AO" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AO.2023.5.5" ;

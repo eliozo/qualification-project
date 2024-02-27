@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <title>Prasmes</title>
+
+
+    <style>
+        .hidden {
+            display: none;
+        }
+        .tree ul {
+            list-style-type: none;
+        }
+        .tree label {
+            cursor: pointer;
+        }
+    </style>
+
+
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -37,7 +52,7 @@
                     <li><a href="{{ url_for('main') }}">Sākumlapa</a></li>
                     <li><a href="{{ url_for('getOlympiads') }}">Olimpiāžu arhīvs</a></li>
                     <li><a href="{{ url_for('getSkills') }}">Prasmes</a></li>
-                    <li class="active"><a href="{{ url_for('getTopics') }}">Prasmes</a></li>
+                    <li class="active"><a href="{{ url_for('getTopics') }}">Tēmas</a></li>
                     <li><a href="{{ url_for('getVideo') }}">Video atrisinājumi</a></li>
                     <li><a href="{{ url_for('getInfo') }}">Bibliogrāfija</a></li>
                 </ul>
@@ -48,7 +63,41 @@
     <div class="container">
         {{jsonfile}}
     </div>
-    <h2>Prasmes</h2>
+    {# <h2>Prasmes</h2> #}
+
+
+{#
+<div class="tree">
+    {% macro render_tree(tree) %}
+        <ul>
+            {% for name, children in tree.items() %}
+                <li>
+                    <label for="node-{{ name }}">{{ name }}</label>
+                    <input type="checkbox" id="node-{{ name }}" />
+                    {% if children %}
+                        <ul class="hidden">
+                            {{ render_tree(children) }}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endmacro %}
+
+    {{ render_tree(tree) }}
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('input[type="checkbox"]').change(function() {
+            let isChecked = $(this).is(':checked');
+            $(this).siblings('ul').toggleClass('hidden', !isChecked);
+        });
+    });
+</script>
+    #}
+
+
     <table class="tasks">
         <colgroup>
             <col class="aaa">
@@ -70,6 +119,9 @@
             {% endfor %}
         </tbody>
     </table>
+
+
+
 </body>
 
 </html>

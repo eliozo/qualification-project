@@ -2023,9 +2023,9 @@ Parādi, kā kvadrātu var sadalīt vairākos platleņķa trijstūros!
 
 <small>
 
-* [geom.constr.triangulate](#)
-* [geom.constr.small](#)
-* [geom.circle.inscribed](#)
+* [plan.constr.triangulate](#)
+* [plan.constr.small](#)
+* [plan.circle.inscribed](#)
 
 </small>
 
@@ -2476,8 +2476,8 @@ divi šauri leņķi.)
 
 <small>
 
-* [geom.constr.triangulate](#)
-* [geom.circle.inscribed](#)
+* [plan.constr.triangulate](#)
+* [plan.circle.inscribed](#)
 
 </small>
 
@@ -2707,7 +2707,7 @@ ka $\angle BAC = \angle BMN$.
 
 <small>
 
-* [geom.triangle.congruence](#)
+* [plan.triangle.congruence](#)
 
 </small>
 
@@ -2773,8 +2773,8 @@ Pierādi, ka to nevar sadalīt piecos vienlielos trijstūros.
 
 <small>
 
-* [geom.triangle.area.ah2](#)
-* [geom.quadrangle.trapezoid.area](#)
+* [plan.triangle.area.ah2](#)
+* [plan.quadrangle.trapezoid.area](#)
 
 </small>
 
@@ -3402,7 +3402,7 @@ mala.
 
 <small>
 
-* [geom.quadrangle.rect](#)
+* [plan.quadrangle.rect](#)
 
 </small>
 
