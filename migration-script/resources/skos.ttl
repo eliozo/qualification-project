@@ -569,78 +569,6 @@ eliozo:div.valu.prop.sum a eliozo:Skill ;
     skos:broader eliozo:div.valu.prop ;
     skos:prefLabel "div.valu.prop.sum" .
 
-eliozo:geom.circle.inscribed a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot riņķī ievilkta leņķa īpašības" ;
-    eliozo:skillID "geom.circle.inscribed" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.2.1.0.0" ;
-    skos:broader eliozo:geom.circle ;
-    skos:prefLabel "geom.circle.inscribed" .
-
-eliozo:geom.constr.small a eliozo:Skill ;
-    eliozo:skillDescription "Izdarīt spriedumus, kuros ir \"ļoti mazi\" ģeometriski pārvietojumi" ;
-    eliozo:skillID "geom.constr.small" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.1.2.0.0" ;
-    skos:broader eliozo:geom.constr ;
-    skos:prefLabel "geom.constr.small" .
-
-eliozo:geom.constr.triangulate a eliozo:Skill ;
-    eliozo:skillDescription "Veikt daudzstūru triangulāciju" ;
-    eliozo:skillID "geom.constr.triangulate" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.1.1.0.0" ;
-    skos:broader eliozo:geom.constr ;
-    skos:prefLabel "geom.constr.triangulate" .
-
-eliozo:geom.quadrangle.para a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot rombu un paralelogramu ģeometriskās īpašības" ;
-    eliozo:skillID "geom.quadrangle.para" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.4.2.0.0" ;
-    skos:broader eliozo:geom.quadrangle ;
-    skos:prefLabel "geom.quadrangle.para" .
-
-eliozo:geom.quadrangle.rect a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot kvadrātu un taisnstūru ģeometriskās īpašības" ;
-    eliozo:skillID "geom.quadrangle.rect" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.4.1.0.0" ;
-    skos:broader eliozo:geom.quadrangle ;
-    skos:prefLabel "geom.quadrangle.rect" .
-
-eliozo:geom.quadrangle.trapezoid.area a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot trapeču laukuma formulas" ;
-    eliozo:skillID "geom.quadrangle.trapezoid.area" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.4.3.1.0" ;
-    skos:broader eliozo:geom.quadrangle.trapezoid ;
-    skos:prefLabel "geom.quadrangle.trapezoid.area" .
-
-eliozo:geom.quandrangle a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot četrstūru ģeometriskās īpašības" ;
-    eliozo:skillID "geom.quandrangle" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.4.0.0.0" ;
-    skos:broader eliozo:geom ;
-    skos:prefLabel "geom.quandrangle" .
-
-eliozo:geom.triangle.area.ah2 a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot formulu $ah/2$" ;
-    eliozo:skillID "geom.triangle.area.ah2" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.3.1.1.0" ;
-    skos:broader eliozo:geom.triangle.area ;
-    skos:prefLabel "geom.triangle.area.ah2" .
-
-eliozo:geom.triangle.congruence a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot trijstūru vienādības pazīmes" ;
-    eliozo:skillID "geom.triangle.congruence" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.3.2.0.0" ;
-    skos:broader eliozo:geom.triangle ;
-    skos:prefLabel "geom.triangle.congruence" .
-
 eliozo:misc.extr.param a eliozo:Skill ;
     eliozo:skillDescription "Sākt risināt vienādojumu, ievietojot ekstrēmu parametra vai potenciālās saknes vērtību" ;
     eliozo:skillID "misc.extr.param" ;
@@ -1017,6 +945,166 @@ eliozo:nota.est.numdigits.sum a eliozo:Skill ;
     skos:broader eliozo:nota.est.numdigits ;
     skos:prefLabel "nota.est.numdigits.sum" .
 
+eliozo:plan.circle.angles a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot leņķu īpašības saistībā ar riņķi" ;
+    eliozo:skillID "plan.circle.angles" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.3.1.0.0" ;
+    skos:broader eliozo:plan.circle ;
+    skos:prefLabel "plan.circle.angles" .
+
+eliozo:plan.circle.inscribed a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot riņķī ievilkta leņķa īpašības" ;
+    eliozo:skillID "plan.circle.inscribed" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.3.2.0.0" ;
+    skos:broader eliozo:plan.circle ;
+    skos:prefLabel "plan.circle.inscribed" .
+
+eliozo:plan.constr.small a eliozo:Skill ;
+    eliozo:skillDescription "Izdarīt spriedumus, kuros ir \"ļoti mazi\" ģeometriski pārvietojumi" ;
+    eliozo:skillID "plan.constr.small" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.1.2.0.0" ;
+    skos:broader eliozo:plan.constr ;
+    skos:prefLabel "plan.constr.small" .
+
+eliozo:plan.constr.triangulate a eliozo:Skill ;
+    eliozo:skillDescription "Veikt daudzstūru triangulāciju" ;
+    eliozo:skillID "plan.constr.triangulate" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.1.1.0.0" ;
+    skos:broader eliozo:plan.constr ;
+    skos:prefLabel "plan.constr.triangulate" .
+
+eliozo:plan.measurements.angles.central a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot centra leņķu un sektoru metriskās sakarības" ;
+    eliozo:skillID "plan.measurements.angles.central" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.2.1.1.0" ;
+    skos:broader eliozo:plan.measurements.angles ;
+    skos:prefLabel "plan.measurements.angles.central" .
+
+eliozo:plan.measurements.angles.corresponding a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot kāpšļu leņķu īpašības paralēlām taisnēm, ko krusto trešā taisne" ;
+    eliozo:skillID "plan.measurements.angles.corresponding" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.2.1.6.0" ;
+    skos:broader eliozo:plan.measurements.angles ;
+    skos:prefLabel "plan.measurements.angles.corresponding" .
+
+eliozo:plan.measurements.angles.exterior a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot ārējo leņķu īpašības paralēlām taisnēm, ko krusto trešā taisne" ;
+    eliozo:skillID "plan.measurements.angles.exterior" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.2.1.5.0" ;
+    skos:broader eliozo:plan.measurements.angles ;
+    skos:prefLabel "plan.measurements.angles.exterior" .
+
+eliozo:plan.measurements.angles.interior a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot iekšējo šķērsleņķu un vienpusleņķu īpašības paralēlām taisnēm, ko krusto trešā taisne" ;
+    eliozo:skillID "plan.measurements.angles.interior" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.2.1.4.0" ;
+    skos:broader eliozo:plan.measurements.angles ;
+    skos:prefLabel "plan.measurements.angles.interior" .
+
+eliozo:plan.measurements.angles.linearpair a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot blakusleņķu īpašību" ;
+    eliozo:skillID "plan.measurements.angles.linearpair" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.2.1.2.0" ;
+    skos:broader eliozo:plan.measurements.angles ;
+    skos:prefLabel "plan.measurements.angles.linearpair" .
+
+eliozo:plan.measurements.angles.vertical a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot krustleņķu īpašību" ;
+    eliozo:skillID "plan.measurements.angles.vertical" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.2.1.3.0" ;
+    skos:broader eliozo:plan.measurements.angles ;
+    skos:prefLabel "plan.measurements.angles.vertical" .
+
+eliozo:plan.polygon.angles.internal a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot daudzstūru leņķu summas sakarību 180*(n-2)." ;
+    eliozo:skillID "plan.polygon.angles.internal" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.6.1.0.0" ;
+    skos:broader eliozo:plan.polygon.angles ;
+    skos:prefLabel "plan.polygon.angles.internal" .
+
+eliozo:plan.quadrangle.para a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot rombu un paralelogramu ģeometriskās īpašības" ;
+    eliozo:skillID "plan.quadrangle.para" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.5.2.0.0" ;
+    skos:broader eliozo:plan.quadrangle ;
+    skos:prefLabel "plan.quadrangle.para" .
+
+eliozo:plan.quadrangle.rect a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot kvadrātu un taisnstūru ģeometriskās īpašības" ;
+    eliozo:skillID "plan.quadrangle.rect" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.5.1.0.0" ;
+    skos:broader eliozo:plan.quadrangle ;
+    skos:prefLabel "plan.quadrangle.rect" .
+
+eliozo:plan.quadrangle.trapezoid.area a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot trapeču laukuma formulas" ;
+    eliozo:skillID "plan.quadrangle.trapezoid.area" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.5.3.1.0" ;
+    skos:broader eliozo:plan.quadrangle.trapezoid ;
+    skos:prefLabel "plan.quadrangle.trapezoid.area" .
+
+eliozo:plan.quandrangle a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot četrstūru ģeometriskās īpašības" ;
+    eliozo:skillID "plan.quandrangle" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.5.0.0.0" ;
+    skos:broader eliozo:plan ;
+    skos:prefLabel "plan.quandrangle" .
+
+eliozo:plan.triangle.angles.internal a eliozo:Skill ;
+    eliozo:skillDescription "Lietot trijstūra iekšējo leņķu summas formulu" ;
+    eliozo:skillID "plan.triangle.angles.internal" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.4.1.1.0" ;
+    skos:broader eliozo:plan.triangle.angles ;
+    skos:prefLabel "plan.triangle.angles.internal" .
+
+eliozo:plan.triangle.area.ah2 a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot formulu $ah/2$" ;
+    eliozo:skillID "plan.triangle.area.ah2" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.4.2.1.0" ;
+    skos:broader eliozo:plan.triangle.area ;
+    skos:prefLabel "plan.triangle.area.ah2" .
+
+eliozo:plan.triangle.congruence a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot trijstūru vienādības pazīmes" ;
+    eliozo:skillID "plan.triangle.congruence" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.4.3.0.0" ;
+    skos:broader eliozo:plan.triangle ;
+    skos:prefLabel "plan.triangle.congruence" .
+
+eliozo:plan.triangle.special.equilateral a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot vienādmalu trijstūru īpašības" ;
+    eliozo:skillID "plan.triangle.special.equilateral" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.4.4.1.0" ;
+    skos:broader eliozo:plan.triangle.special ;
+    skos:prefLabel "plan.triangle.special.equilateral" .
+
+eliozo:plan.triangle.special.isosceles a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot vienādsānu trijstūru īpašības" ;
+    eliozo:skillID "plan.triangle.special.isosceles" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.4.4.2.0" ;
+    skos:broader eliozo:plan.triangle.special ;
+    skos:prefLabel "plan.triangle.special.isosceles" .
+
 eliozo:seq.arithm.expr a eliozo:Skill ;
     eliozo:skillDescription "Izmantot aritmētiskas progresijas vispārīgā locekļa formulu $a_n=a_1+(n-1) \\cdot d$" ;
     eliozo:skillID "seq.arithm.expr" ;
@@ -1181,33 +1269,6 @@ eliozo:comb.grid.shapes a eliozo:Skill ;
     skos:narrower eliozo:comb.grid.shapes.cutting ;
     skos:prefLabel "comb.grid.shapes" .
 
-eliozo:geom.circle a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot riņķa līnijas ģeometriskās īpašības" ;
-    eliozo:skillID "geom.circle" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.2.0.0.0" ;
-    skos:broader eliozo:geom ;
-    skos:narrower eliozo:geom.circle.inscribed ;
-    skos:prefLabel "geom.circle" .
-
-eliozo:geom.quadrangle.trapezoid a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot trapeču ģeometriskās īpašības" ;
-    eliozo:skillID "geom.quadrangle.trapezoid" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.4.3.0.0" ;
-    skos:broader eliozo:geom.quadrangle ;
-    skos:narrower eliozo:geom.quadrangle.trapezoid.area ;
-    skos:prefLabel "geom.quadrangle.trapezoid" .
-
-eliozo:geom.triangle.area a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot trijstūru laukuma formulas" ;
-    eliozo:skillID "geom.triangle.area" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.3.1.0.0" ;
-    skos:broader eliozo:geom.triangle ;
-    skos:narrower eliozo:geom.triangle.area.ah2 ;
-    skos:prefLabel "geom.triangle.area" .
-
 eliozo:nota.combine.poly a eliozo:Skill ;
     eliozo:skillDescription "Izteikt skaitli ar decimālpieraksta cipariem, reizinot ar $10^k$" ;
     eliozo:skillID "nota.combine.poly" ;
@@ -1225,6 +1286,60 @@ eliozo:nota.est a eliozo:Skill ;
     skos:broader eliozo:nota ;
     skos:narrower eliozo:nota.est.numdigits ;
     skos:prefLabel "nota.est" .
+
+eliozo:plan.measurements a eliozo:Skill ;
+    eliozo:skillDescription "Lietot vienkāršus spriedumus par attālumu, leņķu, laukumu mērīšanu" ;
+    eliozo:skillID "plan.measurements" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.2.0.0.0" ;
+    skos:broader eliozo:plan ;
+    skos:narrower eliozo:plan.measurements.angles ;
+    skos:prefLabel "plan.measurements" .
+
+eliozo:plan.polygon a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot daudzstūru īpašības" ;
+    eliozo:skillID "plan.polygon" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.6.0.0.0" ;
+    skos:broader eliozo:plan ;
+    skos:narrower eliozo:plan.polygon.angles ;
+    skos:prefLabel "plan.polygon" .
+
+eliozo:plan.polygon.angles a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot daudzstūru leņķu īpašības" ;
+    eliozo:skillID "plan.polygon.angles" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.6.1.0.0" ;
+    skos:broader eliozo:plan.polygon ;
+    skos:narrower eliozo:plan.polygon.angles.internal ;
+    skos:prefLabel "plan.polygon.angles" .
+
+eliozo:plan.quadrangle.trapezoid a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot trapeču ģeometriskās īpašības" ;
+    eliozo:skillID "plan.quadrangle.trapezoid" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.5.3.0.0" ;
+    skos:broader eliozo:plan.quadrangle ;
+    skos:narrower eliozo:plan.quadrangle.trapezoid.area ;
+    skos:prefLabel "plan.quadrangle.trapezoid" .
+
+eliozo:plan.triangle.angles a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot trijstūra iekšējo un ārējo leņķu sakarības" ;
+    eliozo:skillID "plan.triangle.angles" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.4.1.0.0" ;
+    skos:broader eliozo:plan.triangle ;
+    skos:narrower eliozo:plan.triangle.angles.internal ;
+    skos:prefLabel "plan.triangle.angles" .
+
+eliozo:plan.triangle.area a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot trijstūru laukuma formulas" ;
+    eliozo:skillID "plan.triangle.area" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.4.2.0.0" ;
+    skos:broader eliozo:plan.triangle ;
+    skos:narrower eliozo:plan.triangle.area.ah2 ;
+    skos:prefLabel "plan.triangle.area" .
 
 eliozo:alg.equ.quadratic a eliozo:Skill ;
     eliozo:skillDescription "Analizēt un risināt kvadrātvienādojumus" ;
@@ -1336,30 +1451,6 @@ eliozo:div.valu a eliozo:Skill ;
         eliozo:div.valu.prop ;
     skos:prefLabel "div.valu" .
 
-eliozo:geom.constr a eliozo:Skill ;
-    eliozo:skillDescription "Veikt ģeometriskas konstrukcijas uzdevumu risināšanā." ;
-    eliozo:skillID "geom.constr" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.1.0.0.0" ;
-    skos:broader eliozo:geom ;
-    skos:narrower eliozo:geom.constr.small,
-        eliozo:geom.constr.triangulate ;
-    skos:prefLabel "geom.constr" .
-
-eliozo:geom.quadrangle skos:narrower eliozo:geom.quadrangle.para,
-        eliozo:geom.quadrangle.rect,
-        eliozo:geom.quadrangle.trapezoid .
-
-eliozo:geom.triangle a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot trijstūru ģeometriskās īpašības" ;
-    eliozo:skillID "geom.triangle" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.3.0.0.0" ;
-    skos:broader eliozo:geom ;
-    skos:narrower eliozo:geom.triangle.area,
-        eliozo:geom.triangle.congruence ;
-    skos:prefLabel "geom.triangle" .
-
 eliozo:misc.extr a eliozo:Skill ;
     eliozo:skillDescription "Izmantot spriedumus par ekstrēmo elementu" ;
     eliozo:skillID "misc.extr" ;
@@ -1429,6 +1520,40 @@ eliozo:nota.est.numdigits a eliozo:Skill ;
     skos:narrower eliozo:nota.est.numdigits.prod,
         eliozo:nota.est.numdigits.sum ;
     skos:prefLabel "nota.est.numdigits" .
+
+eliozo:plan.circle a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot riņķa līnijas ģeometriskās īpašības" ;
+    eliozo:skillID "plan.circle" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.3.0.0.0" ;
+    skos:broader eliozo:plan ;
+    skos:narrower eliozo:plan.circle.angles,
+        eliozo:plan.circle.inscribed ;
+    skos:prefLabel "plan.circle" .
+
+eliozo:plan.constr a eliozo:Skill ;
+    eliozo:skillDescription "Veikt planimetrijas konstrukcijas uzdevumu risināšanā." ;
+    eliozo:skillID "plan.constr" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.1.0.0.0" ;
+    skos:broader eliozo:plan ;
+    skos:narrower eliozo:plan.constr.small,
+        eliozo:plan.constr.triangulate ;
+    skos:prefLabel "plan.constr" .
+
+eliozo:plan.quadrangle skos:narrower eliozo:plan.quadrangle.para,
+        eliozo:plan.quadrangle.rect,
+        eliozo:plan.quadrangle.trapezoid .
+
+eliozo:plan.triangle.special a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot noteiktu trijstūru apakškopu īpašības" ;
+    eliozo:skillID "plan.triangle.special" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.4.4.0.0" ;
+    skos:broader eliozo:plan.triangle ;
+    skos:narrower eliozo:plan.triangle.special.equilateral,
+        eliozo:plan.triangle.special.isosceles ;
+    skos:prefLabel "plan.triangle.special" .
 
 eliozo:seq.arithm.mod a eliozo:Skill ;
     eliozo:skillDescription "Secināt par aritmētiskas progresijas locekļu atlikumiem" ;
@@ -1549,17 +1674,6 @@ eliozo:div.fta.pow a eliozo:Skill ;
         eliozo:div.fta.pow.other,
         eliozo:div.fta.pow.square ;
     skos:prefLabel "div.fta.pow" .
-
-eliozo:geom a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot ģeometrijas rezultātus un metodes." ;
-    eliozo:skillID "geom" ;
-    eliozo:skillName "TBD" ;
-    eliozo:skillNumber "8.0.0.0.0" ;
-    skos:narrower eliozo:geom.circle,
-        eliozo:geom.constr,
-        eliozo:geom.quandrangle,
-        eliozo:geom.triangle ;
-    skos:prefLabel "geom" .
 
 eliozo:misc.extr.pigeon a eliozo:Skill ;
     eliozo:skillDescription "Izmantot Dirihlē principu" ;
@@ -1756,6 +1870,18 @@ eliozo:nota.algor a eliozo:Skill ;
         eliozo:nota.algor.nondec ;
     skos:prefLabel "nota.algor" .
 
+eliozo:plan.triangle a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot trijstūru ģeometriskās īpašības" ;
+    eliozo:skillID "plan.triangle" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.4.0.0.0" ;
+    skos:broader eliozo:plan ;
+    skos:narrower eliozo:plan.triangle.angles,
+        eliozo:plan.triangle.area,
+        eliozo:plan.triangle.congruence,
+        eliozo:plan.triangle.special ;
+    skos:prefLabel "plan.triangle" .
+
 eliozo:seq.geom a eliozo:Skill ;
     eliozo:skillDescription "Izmantot ģeometriskas progresijas īpašības" ;
     eliozo:skillID "seq.geom" ;
@@ -1833,6 +1959,19 @@ eliozo:mod.congr a eliozo:Skill ;
         eliozo:mod.congr.sumdiff ;
     skos:prefLabel "mod.congr" .
 
+eliozo:plan a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot planimetrijas rezultātus un metodes." ;
+    eliozo:skillID "plan" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.0.0.0.0" ;
+    skos:narrower eliozo:plan.circle,
+        eliozo:plan.constr,
+        eliozo:plan.measurements,
+        eliozo:plan.polygon,
+        eliozo:plan.quandrangle,
+        eliozo:plan.triangle ;
+    skos:prefLabel "plan" .
+
 eliozo:seq.arithm a eliozo:Skill ;
     eliozo:skillDescription "Lietot zināšanas par aritmētiskām progresijām" ;
     eliozo:skillID "seq.arithm" ;
@@ -1845,6 +1984,20 @@ eliozo:seq.arithm a eliozo:Skill ;
         eliozo:seq.arithm.pairsum,
         eliozo:seq.arithm.summation ;
     skos:prefLabel "seq.arithm" .
+
+eliozo:plan.measurements.angles a eliozo:Skill ;
+    eliozo:skillDescription "Izmantot vienkāršas leņķu sakarības" ;
+    eliozo:skillID "plan.measurements.angles" ;
+    eliozo:skillName "TBD" ;
+    eliozo:skillNumber "8.2.1.0.0" ;
+    skos:broader eliozo:plan.measurements ;
+    skos:narrower eliozo:plan.measurements.angles.central,
+        eliozo:plan.measurements.angles.corresponding,
+        eliozo:plan.measurements.angles.exterior,
+        eliozo:plan.measurements.angles.interior,
+        eliozo:plan.measurements.angles.linearpair,
+        eliozo:plan.measurements.angles.vertical ;
+    skos:prefLabel "plan.measurements.angles" .
 
 eliozo:alg a eliozo:Skill ;
     eliozo:skillDescription "Izmantot algebriskos apzīmējumus un metodes skaitļu teorijas uzdevumos" ;
