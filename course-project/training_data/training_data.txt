@@ -1,0 +1,95 @@
+// First example
+"""
+Consider RDF dataset with the following namespace prefixes: 
+``` sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+```
+Consider the following training set with respective sparql queries and their description
+```
+{
+  "description": "Find all problems on Algebraic transactions involving binomial square formula. Skills are selected by year of assignment and sorted from lowest to highest year",
+  "SPARQL": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\nSELECT ?sub WHERE {\n?sub eliozo:skill \"alg.tra.binom.square\" ;\n     eliozo:year ?year\n} ORDER BY ASC(?year)"
+}
+```
+Please convert the following description to SPARQL: All problems on algebraic transactions binomial square formula for 2002.
+"""
+// Second example
+"""
+Consider RDF dataset with the following namespace prefixes: 
+``` sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+```
+Consider the following training set with respective sparql queries and their description
+```
+{
+  "description": "Find all skills which are direct subskills from skill Algebra.",
+  "SPARQL": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nSELECT ?skillID WHERE {\n?alg skos:prefLabel "alg" .\n ?skillID skos:broader ?alg .}"
+}
+```
+Please convert the following description to SPARQL: All skills which are direct subskills and upskills from skill "alg.expr"
+"""
+// Third example
+"""
+Consider RDF dataset with the following namespace prefixes: 
+``` sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+```
+Consider the following training set with respective sparql queries and their description
+```
+{
+  "description": "Find all unique olympiads and their countries",
+  "SPARQL": "PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\nSELECT DISTINCT ?country ?olympiad\nWHERE {\n?problem eliozo:country ?country ; eliozo:olympiad ?olympiad .\n}
+"
+}
+```
+Please convert the following description to SPARQL: Find olympiad which starts with letter A and country Latvia.
+"""
+// Fourth example
+"""
+Consider RDF dataset with the following namespace prefixes: 
+``` sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+```
+Consider the following training set with respective sparql queries and their description
+```
+{
+  "description": "Find all subskills of Algebra, sort alphabetically by description.",
+  "SPARQL": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\nSELECT ?child ?descr WHERE {\n?parent_skill_id skos:prefLabel "alg" . \n?child skos:broader+ ?parent_skill_id ;\neliozo:skillDescription ?descr .\n} ORDER BY ?descr
+"
+}
+```
+Please convert the following description to SPARQL: Find all subskills of Algebra, sort in reverse alphabetic order by description.
+"""
+// Fifth example
+"""
+Consider RDF dataset with the following namespace prefixes: 
+``` sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+```
+Consider the following training set with respective sparql queries and their description
+```
+{
+  "description": "Find all years and classes which have problems for “Atklātā olimpiāde” in Latvia.",
+  "SPARQL": "PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
+SELECT DISTINCT ?year ?grade
+WHERE {
+  ?problem eliozo:country 'LV' ; 
+           eliozo:olympiad 'AO' ;
+           eliozo:year ?year ;
+           eliozo:grade ?grade .
+} ORDER BY ?year ?grade
+"
+}
+```
+Please convert the following description to SPARQL: Find all years and class which have problems for "Novada olimpiāde" in Latvia.
+"""

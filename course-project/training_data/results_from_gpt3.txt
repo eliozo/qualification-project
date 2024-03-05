@@ -1,0 +1,49 @@
+gpt-3.5
+// First example
+SELECT ?sub WHERE {
+  ?sub eozol:skill "alg.tra.binom.square" ;
+   	eozol:year 2002
+}
+// Second example 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?skillID WHERE {
+	?algExpr skos:prefLabel "alg.expr" .
+	{ ?skillID skos:broader ?algExpr . } UNION { ?algExpr skos:broader ?skillID . }
+}
+// Third example
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
+SELECT ?country ?olympiad
+WHERE {
+  ?problem eliozo:country ?country ;
+       	eliozo:olympiad ?olympiad .
+  FILTER(strstarts(lcase(?olympiad), "a"))
+  FILTER(strstarts(lcase(?country), "lv"))
+} (Pielika jaunu funkcionalitāti, kur meklē olimpiādi, kura sākas ar A burtu)
+
+// Fourth example
+SELECT ?child ?descr WHERE {
+  ?parent_skill_id skos:prefLabel "alg" .
+  ?child skos:broader+ ?parent_skill_id ;
+	eliozo:skillDescription ?descr .
+} ORDER BY DESC(?descr)
+
+// Fifth example
+SELECT DISTINCT ?year ?class
+WHERE {
+  ?problem eozol:country 'LV' ;
+       	eozol:olympiad 'NO' ;
+       	eozol:year ?year ;
+       	eozol:class ?class .
+} ORDER BY ?year ?class
+
+Pareizs piemērs:
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
+SELECT ?problemID ?problemText WHERE {
+?sub eliozo:problemID ?problemID .
+?sub eliozo:hasSkill ?skill .
+?sub eliozo:problemText ?problemText .
+  ?skill eliozo:skillID "alg.expr" .
+} ORDER BY ?problemID
