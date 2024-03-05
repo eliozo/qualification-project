@@ -7,10 +7,11 @@ eliozo:LT.LJKMO.1999.7_8.1 a eliozo:Problem ;
         eliozo:misc.extr.param,
         eliozo:nota.algor.arithm,
         eliozo:nota.est.numdigits ;
-    eliozo:image "LT.LJKMO.1999.7_8.1.png" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.1999.7_8.1" ;
+    eliozo:problemImage eliozo:IMG.LT.LJKMO.1999.7_8.1 ;
     eliozo:problemText """Atšifrējiet reizināšanu "stabiņā". Kā parasti, dažādiem
 reizināmā un reizinātāja burtiem atbilst dažādi cipari.
 Visi citi cipari apzīmēti ar vienādu simbolu "x".
@@ -22,7 +23,8 @@ eliozo:LT.LJKMO.1999.7_8.3 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:hasSkill eliozo:misc.extr,
         eliozo:nota.divrule.2_5pow.divides ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.1999.7_8.3" ;
     eliozo:problemText """Atrodiet kādu $100$-ciparu skaitli, kurš dalās ar $100$
@@ -36,7 +38,8 @@ eliozo:LT.LJKMO.2000.7_8.3 a eliozo:Problem ;
         eliozo:div.fta.divisors,
         eliozo:nota.algor.longdiv,
         eliozo:seq.recur.linear ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2000.7_8.3" ;
     eliozo:problemText """Kādu pašu mazāko summu var iegūt, saskaitot visus ciparus skaitlim,
@@ -48,7 +51,8 @@ eliozo:LT.LJKMO.2001.7_8.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:hasSkill eliozo:div.fta.divisors,
         eliozo:misc.extr ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2001.7_8.1" ;
     eliozo:problemText """Vesels pozitīvs skaitlis uzrakstāms tikai ar trijniekiem un
@@ -63,7 +67,8 @@ eliozo:LT.LJKMO.2001.7_8.2 a eliozo:Problem ;
         eliozo:alg.equ.parametrize,
         eliozo:alg.equ.quadratic.discriminant,
         eliozo:alg.ineq.quadratic ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2001.7_8.2" ;
     eliozo:problemText """Atrodiet veselus atrisinājumus vienādojumam
@@ -74,7 +79,8 @@ $x-y= x^2 + xy+ y^2$."""@lv ;
 eliozo:LT.LJKMO.2002.7_8.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:hasSkill eliozo:div.fta.pow.square ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2002.7_8.1" ;
     eliozo:problemText """Ja no skaitļu virknes $2$, $4$, $6$, $8$, $10$, $12$,
@@ -88,24 +94,19 @@ atlikušo skaitļu reizinājums būtu pilns kvadrāts?"""@lv ;
 
 eliozo:LT.LJKMO.2002.7_8.2 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2002.7_8.2" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2002" ;
     eliozo:problem_number "2" .
 
 eliozo:LT.LJKMO.2002.7_8.4 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2002.7_8.4" ;
-    eliozo:problemText """Ar $S(n)$ apzīmējam naturāla skaitļa $n$ ciparu summu, piemēram,
-$S(129) = 1+2+9=12$. Skaitļus $n$ un $m$ sauksim par , ja
-$n+S(n)=m+S(m)$. Atrodiet:
- divus radniecīgus skaitļus;
- trīs savstarpēji radniecīgus skaitļus;
- vai eksistē $23$ savstarpēji radniecīgi skaitļi?"""@lv ;
     eliozo:problemYear "2002" ;
     eliozo:problem_number "4" .
 
@@ -114,7 +115,8 @@ eliozo:LT.LJKMO.2003.7_8.3 a eliozo:Problem ;
     eliozo:hasSkill eliozo:misc.invar,
         eliozo:nota.combine.padding,
         eliozo:seq.arithm.mod ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2003.7_8.3" ;
     eliozo:problemText """Atrodiet kaut vienu tādu skaitli, kas beidzas ar "2003",
@@ -126,8 +128,8 @@ eliozo:LT.LJKMO.2003.7_8.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:hasSkill eliozo:comb.graph.bipartite,
         eliozo:div.prop.primes ;
-    eliozo:image "LT.LJKMO.2003.7_8.4.png" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2003.7_8.4" ;
     eliozo:problemText """No naturāliem skaitļiem $1,2,\\ldots{},22$,
@@ -140,66 +142,54 @@ vienāds veseliem skaitļiem?"""@lv ;
 
 eliozo:LT.LJKMO.2004.7_8.1 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2004.7_8.1" ;
-    eliozo:problemText """$7$-ciparu skaitlis uzrakstāms ar $7$ dažādiem cipariem un dalās ar visiem
-septiņiem saviem cipariem.
- Atrodiet vienu šādu $7$-ciparu skaitli;
- Atrodiet pašu lielāko tādu $7$-ciparu skaitli;
- Atrodiet pašu mazāko tādu $7$-ciparu skaitli."""@lv ;
     eliozo:problemYear "2004" ;
     eliozo:problem_number "1" .
 
 eliozo:LT.LJKMO.2004.7_8.3 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2004.7_8.3" ;
-    eliozo:problemText """Nenegatīvi veseli skaitļi $m$ un $n$ apmierina nosacījumu
-$$mn - n + m = 2004.$$
- Atrodiet vienu tādu skaitļu $m$ un $n$ pāri $(m; n)$;
- Atrodiet visus iespējamos tādus skaitļu $m$ un $n$ pārus."""@lv ;
     eliozo:problemYear "2004" ;
     eliozo:problem_number "3" .
 
 eliozo:LT.LJKMO.2005.7_8.2 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2005.7_8.2" ;
-    eliozo:problemText """Skaitļu $83$ un $89$ pāri $(83;89)$ sauc par , jo
-$83 + 8 + 9 = 100$ un $89 + 8 + 3 = 100$.
-Cik pavisam ir divciparu simta pāru? Atrodiet tos."""@lv ;
     eliozo:problemYear "2005" ;
     eliozo:problem_number "2" .
 
 eliozo:LT.LJKMO.2006.7_8.1 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2006.7_8.1" ;
-    eliozo:problemText """Tikai ar nullēm un vieniniekiem uzrakstāms $11$-ciparu skaitlis beidzas ar "11" un
-dalās ar $11$.
- Atrodiet kaut vienu tādu $11$-ciparu skaitli.
- Atrodiet pašu mazāko tādu $11$-ciparu skaitli.
- Atrodiet pašu lielāko tādu $11$-ciparu skaitli."""@lv ;
     eliozo:problemYear "2006" ;
     eliozo:problem_number "1" .
 
 eliozo:LT.LJKMO.2006.7_8.4 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2006.7_8.4" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2006" ;
     eliozo:problem_number "4" .
 
 eliozo:LT.LJKMO.2007.7_8.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:hasSkill eliozo:comb.graph.cycle ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2007.7_8.2" ;
     eliozo:problemText """ Barons Minhauzens netic, ka visus veselos pozitīvos skaitļus no $1$ līdz $16$
@@ -213,269 +203,240 @@ summa būtu pilns kvadrāts. Vai baronam ir taisnība, šādi uzskatot?"""@lv ;
 
 eliozo:LT.LJKMO.2007.7_8.4 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2007.7_8.4" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2007" ;
     eliozo:problem_number "4" .
 
 eliozo:LT.LJKMO.2008.7_8.1 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2008.7_8.1" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2008" ;
     eliozo:problem_number "1" .
 
 eliozo:LT.LJKMO.2008.7_8.2 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:image "LT.LJKMO.2008.7_8.2.png" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2008.7_8.2" ;
-    eliozo:problemText """Alisa raksta astoņus ciparus, kas lielāki par vienu - $2$, $3$, $4$, $5$, $6$, $7$,
-$8$ un $9$ pa vienam katrā no $8$
-vienādības lodziņiem tā, lai vienādība būtu patiesa.
-Ar ko vienāda lielākā no trim daļām šajā vienādībā?"""@lv ;
+    eliozo:problemImage eliozo:IMG.LT.LJKMO.2008.7_8.2 ;
     eliozo:problemYear "2008" ;
     eliozo:problem_number "2" .
 
 eliozo:LT.LJKMO.2008.7_8.4 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2008.7_8.4" ;
-    eliozo:problemText """Veselīgais skeptiķis Sančo Pansa neparko netic, ka
-nepieredzējis meklētājs varētu atrast tādu naturālu
-skaitli $n$, ka lielais skaitlis $n^6 + 206$
-dalītos bez atlikuma ar citu palielu skaitli $n^2 + 2$,
-bet Dons Kihots arvien daudzina, ka tādi skaitļi ir.
-Varbūt tiešām iespējams noskaidrot, cik tādu ir
-un kādi tie ir?"""@lv ;
     eliozo:problemYear "2008" ;
     eliozo:problem_number "4" .
 
 eliozo:LT.LJKMO.2009.7_8.3 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2009.7_8.3" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2009" ;
     eliozo:problem_number "3" .
 
 eliozo:LT.LJKMO.2009.7_8.4 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:image "LT.LJKMO.2009.7_8.4.png" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2009.7_8.4" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
+    eliozo:problemImage eliozo:IMG.LT.LJKMO.2009.7_8.4 ;
     eliozo:problemYear "2009" ;
     eliozo:problem_number "4" .
 
 eliozo:LT.LJKMO.2010.7_8.1 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2010.7_8.1" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2010" ;
     eliozo:problem_number "1" .
 
 eliozo:LT.LJKMO.2010.7_8.5 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2010.7_8.5" ;
-    eliozo:problemText """Princese lūdza Sinbadam visiem paskaidrot, vai skaitlis
-$4^{20} + 2^{20} + 1$ tiešām dalās vēl ar kādu trešo naturālo skaitli,
-bet ne tikai ar $1$ un, zināms, pats ar sevi.
-(Zinātniski izsakoties, Princese apvaicājās, vai tas
-skaitlis ir pirmskaitlis, vai nē.)
-Kā tur ir? Atbildi princesei pamatojiet."""@lv ;
     eliozo:problemYear "2010" ;
     eliozo:problem_number "5" .
 
 eliozo:LT.LJKMO.2011.7_8.1 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2011.7_8.1" ;
-    eliozo:problemText """Ķīvīte Matilde no kaut kurienes atnesa trīsciparu skaitli,
-cūka Kamila tūlīt rotaļīgi samainīja vietām tā vienu un desmitu
-ciparus, bet Ēzelītis Daiņus, neko negaidīdams un nevienam nevaicādams,
-ņēma un saskaitīja abus šos skaitļus.
-Zirgs Dominiks pajautāja, kāda gan ir šī summa?
-Ēzelītis Daiņus pēkšņi kļuva ļoti noslēpumains un pateica, ka šo skaitļu
-summai ir $4$ cipari un tā sākas ar cipariem $173$.
-Zirgs Dominiks nolēma atrast, kāds varētu būt tas pēdējais,
-ceturtais vēl nezināmās summas (vienu pozīcijas) cipars."""@lv ;
     eliozo:problemYear "2011" ;
     eliozo:problem_number "1" .
 
 eliozo:LT.LJKMO.2011.7_8.2 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2011.7_8.2" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2011" ;
     eliozo:problem_number "2" .
 
 eliozo:LT.LJKMO.2012.7_8.1 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2012.7_8.1" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2012" ;
     eliozo:problem_number "1" .
 
 eliozo:LT.LJKMO.2012.7_8.2 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2012.7_8.2" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2012" ;
     eliozo:problem_number "2" .
 
 eliozo:LT.LJKMO.2012.7_8.4 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2012.7_8.4" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2012" ;
     eliozo:problem_number "4" .
 
 eliozo:LT.LJKMO.2012.7_8.6 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2012.7_8.6" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2012" ;
     eliozo:problem_number "6" .
 
 eliozo:LT.LJKMO.2013.7_8.2 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2013.7_8.2" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2013" ;
     eliozo:problem_number "2" .
 
 eliozo:LT.LJKMO.2013.7_8.6 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2013.7_8.6" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2013" ;
     eliozo:problem_number "6" .
 
 eliozo:LT.LJKMO.2014.7_8.1 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2014.7_8.1" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2014" ;
     eliozo:problem_number "1" .
 
 eliozo:LT.LJKMO.2014.7_8.2 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2014.7_8.2" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2014" ;
     eliozo:problem_number "2" .
 
 eliozo:LT.LJKMO.2015.7_8.5 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2015.7_8.5" ;
-    eliozo:problemText """Naturāls skaitlis ir , ja tas ir lielāks par $10$ un
-dalās ar savu ciparu reizinājumu. Cik daudzi naturāli skaitļi, kuri visi ir
-taizemiski apaļīgi, var sekot pēc kārtas?"""@lv ;
     eliozo:problemYear "2015" ;
     eliozo:problem_number "5" .
 
 eliozo:LT.LJKMO.2015.7_8.6 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2015.7_8.6" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2015" ;
     eliozo:problem_number "6" .
 
 eliozo:LT.LJKMO.2016.7_8.3 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2016.7_8.3" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2016" ;
     eliozo:problem_number "3" .
 
 eliozo:LT.LJKMO.2016.7_8.5 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2016.7_8.5" ;
-    eliozo:problemText """Netālu no Lielā Ķīnas mūra dzīvo tāds vientuļnieks, kurš saka, ka
-īsto skaitlisko pilngadību viņš varētu atzīt tikai tādam jaunietim,
-kurš aizgājis tuksnesī spētu viens pats, vispār bez citu palīdzības atbildēt uz šādu
-jautājumu: Vai var tabuliņas $5 \\times 10$ lodziņos ierakstīt visus skaitļus no $1$ līdz $50$,
-pa vienam skaitlim katrā lodziņā tā, ka visu rindiņu un visu kolonnu skaitļu summas
-būtu vienādas $15$ dažādiem, pēc kārtas sekojošiem naturāliem skaitļiem?"""@lv ;
     eliozo:problemYear "2016" ;
     eliozo:problem_number "5" .
 
 eliozo:LT.LJKMO.2017.7_8.2 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2017.7_8.2" ;
-    eliozo:problemText """Šovasar Brazīlijas presē parādījās ziņojums par neticamu
-aritmētikas mīļotāja Romario sasniegumu: viņš, izmantojot pa
-vienai reizei deviņus no desmit cipariem  $0$, $1$, $2$, $3$,
-$4$, $5$, $6$, $7$, $8$, $9$, uzrakstīja trīs naturālus skaitļus,
-un šo skaitļu summa ir $2017$. Vai tas tiešām iespējams?
-Vai to pašu var izdarīt, neizmantojot kādi citu ciparu (citu nekā tas,
-kuru neizmantoja Romario)?"""@lv ;
     eliozo:problemYear "2017" ;
     eliozo:problem_number "2" .
 
 eliozo:LT.LJKMO.2017.7_8.3 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2017.7_8.3" ;
-    eliozo:problemText """Naturālu skaitli $n$ sauc par , ja tas dalās
-ar $9$, tā decimālpierakstā ir visi $10$ cipari un ja, bez tam,
-tajā vieninieku ir vairāk nekā nuļļu, divnieku – vairāk nekā vieninieku,
-utt. (t.i. jo lielāks cipars, jo vairāk reižu tas izmantots, uzrakstot $n$).
-Pamēģiniet:
- uzrakstīt kaut vienu brazīliski nobriedušu skaitli;
- atrast vismazāko brazīliski nobriedušu skaitli."""@lv ;
     eliozo:problemYear "2017" ;
     eliozo:problem_number "3" .
 
 eliozo:LT.LJKMO.2018.7_8.6 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "LJKMO" ;
+    eliozo:olympiad eliozo:LT.LJKMO ;
+    eliozo:olympiadCode "LJKMO" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2018.7_8.6" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2018" ;
     eliozo:problem_number "6" .
+
+eliozo:IMG.LT.LJKMO.1999.7_8.1 a eliozo:Image ;
+    eliozo:imageSrc "LT.LJKMO.1999.7_8.1.png" ;
+    eliozo:imageWidth 0 .
+
+eliozo:IMG.LT.LJKMO.2008.7_8.2 a eliozo:Image ;
+    eliozo:imageSrc "LT.LJKMO.2008.7_8.2.png" ;
+    eliozo:imageWidth 0 .
+
+eliozo:IMG.LT.LJKMO.2009.7_8.4 a eliozo:Image ;
+    eliozo:imageSrc "LT.LJKMO.2009.7_8.4.png" ;
+    eliozo:imageWidth 0 .
 

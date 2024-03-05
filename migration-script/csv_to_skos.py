@@ -26,15 +26,16 @@ def readCSVfile(g): # Funkcija, kas lasa CSV failu
             skill_id = row[5]
             skill_prefLabel = row[5]
             skill_description = row[6]
+            skill_name = row[7]
             x = skill_id.rfind(".")
             if x == -1:
                 parent_skill_id = '' # Nav vecāka
             else:
                 parent_skill_id = skill_id[:x]
-            addToRdfGraph(g, skill_numeric_id, skill_id, skill_description, skill_prefLabel, parent_skill_id)
+            addToRdfGraph(g, skill_numeric_id, skill_id, skill_description, skill_prefLabel, skill_name, parent_skill_id)
 	
 # skillDescription ir string mainīgais, kurā glabājas RDF objekta vērtība
-def addToRdfGraph(g, numeric_id, skillID, skillDescription, prefLabel, parentSkill_id):
+def addToRdfGraph(g, numeric_id, skillID, skillDescription, prefLabel, skill_name, parentSkill_id):
     global eliozo_ns
     skill_node = rdflib.URIRef(eliozo_ns+skillID) # RDF subjekts
     skill_numeric_id_property = rdflib.URIRef(eliozo_ns+'skillNumber') # 1 0 0 0
@@ -48,7 +49,7 @@ def addToRdfGraph(g, numeric_id, skillID, skillDescription, prefLabel, parentSki
     skill_description_object = rdflib.term.Literal(skillDescription)
     g.add((skill_node, skill_id_property, rdflib.term.Literal(skillID)))
     g.add((skill_node, skill_description_property, skill_description_object))
-    g.add((skill_node, skill_name_property, rdflib.term.Literal('TBD')))
+    g.add((skill_node, skill_name_property, rdflib.term.Literal(skill_name)))
     g.add((skill_node, skill_rdf_type_property, rdflib.URIRef(eliozo_ns+"Skill")))
     g.add((skill_node, skill_numeric_id_property, rdflib.term.Literal(numeric_id)))
     g.add((skill_node, skill_prefLabel_property, rdflib.term.Literal(prefLabel)))

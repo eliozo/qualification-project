@@ -54,10 +54,14 @@ def convertToJSON(URL_suffix):  # Pārveido Markdown failu par JSON failu
 
 
 if __name__ == '__main__':
-    # Nolasīt visus URL suffixus no Google Spreadsheet
+    # Nolasa apstrādājamo olimpiāžu sarakstu no Google Docs izklājlapas
     getGoogleSpreadsheet()
-    # Lasa 4 apakšdirektorijas ar uzdevumiem AO, VO olimpiādēm utt.
+    # Pārīši [('https://github.com/kapsitis/math/tree/master/src/site/problembase/numtheory-lv-ao', 'LV-AO')] utml.
     results = readCSVfile()
+
+    # Testēšanai tikai viens pārītis:
+    # results = [('https://github.com/kapsitis/math/tree/master/src/site/problembase/ee-pktest', 'EE-PKTEST')]
+
     for result in results:
         getMarkdownFile(result[0], result[1])
         convertToJSON(result)

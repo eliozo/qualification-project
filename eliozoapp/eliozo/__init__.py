@@ -17,10 +17,11 @@ def getSPARQLskills():
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
-    '''SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?problemid WHERE { 
+    '''SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?skillName ?problemid WHERE { 
     ?skill eliozo:skillID ?skillIdentifier .
     ?skill eliozo:skillNumber ?skillNumber .
     ?skill eliozo:skillDescription ?skillDescription .
+    ?skill eliozo:skillName ?skillName .
     OPTIONAL {?prob eliozo:hasSkill ?skill . ?prob eliozo:problemID ?problemid . }.
     } ORDER BY ?skillNumber'''
     }
@@ -72,7 +73,7 @@ def getSPARQLProblem(arg):
   '''OPTIONAL {
     ?problem eliozo:problemText ?text ;
              eliozo:problemYear ?year ;
-             eliozo:olympiad ?olympiad ;
+             eliozo:olympiadCode ?olympiad ;
              eliozo:problemGrade ?grade ;
              eliozo:country ?country .
              } .
@@ -83,9 +84,11 @@ def getSPARQLProblem(arg):
       OPTIONAL {
         ?problem eliozo:hasVideo ?video .
     } .
-      OPTIONAL {
-        ?problem eliozo:image ?image .
-      }
+    OPTIONAL {
+        ?problem eliozo:problemImage ?imageRes .
+        ?imageRes eliozo:imageSrc ?imageSrc ;
+        eliozo:imageWidth ?imageWidth .
+    }
 }'''
   }
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
@@ -153,11 +156,16 @@ def getAllSkillChildren(skillID):
 def getSPARQLOlympiads():
     # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     url = FUSEKI_URL
-    myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
-    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
-    'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
-    'SELECT DISTINCT ?country ?olympiad WHERE { ?problem eliozo:country ?country ; eliozo:olympiad ?olympiad . }'
+    myobj = { 'query': '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+SELECT DISTINCT ?olympiadCountry ?olympiad ?olympiadName ?olympiadDescription WHERE { 
+    ?problem eliozo:olympiad ?olympiad .
+    ?olympiad eliozo:olympiadCountry ?olympiadCountry ;
+  				eliozo:olympiadName ?olympiadName ;
+                eliozo:olympiadDescription ?olympiadDescription .
+} ORDER BY ?olympiadCountry ?olympiadName'''
     }
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
@@ -176,7 +184,7 @@ def getSPARQLOlympiadYears(country, olympiad):
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\n'+
     'SELECT DISTINCT ?year ?grade WHERE { ?problem eliozo:country \''+country+
-    '\' ; eliozo:olympiad \''+olympiad+
+    '\' ; eliozo:olympiadCode \''+olympiad+
     '\' ; eliozo:problemYear ?year ; eliozo:problemGrade ?grade . } ORDER BY ?year ?grade'
     }
 
@@ -202,7 +210,7 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad):
   ?problem eliozo:problemID ?problemid .
   ?problem eliozo:problem_number ?problem_number .
   ?problem eliozo:problemGrade '''+grade+''' .
-  ?problem eliozo:olympiad \''''+olympiad+'''\' .
+  ?problem eliozo:olympiadCode \''''+olympiad+'''\' .
   OPTIONAL {
     ?problem eliozo:image ?imagefile .
   } .
@@ -372,8 +380,12 @@ def create_app(test_config=None):
                 current_skill_info = dict() # Vārdnīca vienai tabulas rindai
                 current_skill_info['skillIdentifier'] = current_skill
                 current_skill_info['skillNumber'] = item['skillNumber']['value']
+                number_items = item['skillNumber']['value'].split(".")
+                current_skill_info['skillIndent'] = '&nbsp;&nbsp;'*(4 - sum([theItem == "0" for theItem in number_items]))
+
                 beautiful_description = mathBeautify(item['skillDescription']['value'])
                 current_skill_info['skillDescription'] = beautiful_description
+                current_skill_info['skillName'] = item['skillName']['value']
                 if "problemid" in item:
                     current_skill_info['problems'] = [item['problemid']['value']]
                 else:
@@ -451,8 +463,8 @@ def create_app(test_config=None):
         else:
             hasVideo = False
 
-        if 'image' in data['results']['bindings'][0]:
-            image_src = data['results']['bindings'][0]['image']['value']
+        if 'imageSrc' in data['results']['bindings'][0]:
+            image_src = data['results']['bindings'][0]['imageSrc']['value']
         else:
             image_src = ''
 
@@ -491,9 +503,17 @@ def create_app(test_config=None):
     @app.route('/olympiads', methods=['GET', 'POST'])
     def getOlympiads():
         olympiads = json.loads(getSPARQLOlympiads())
+        print(olympiads)
+        olympiadData = []
+        for rr in olympiads['results']['bindings']:
+            olympiadName = rr['olympiadName']
+            olympiadDescription = rr['olympiadDescription']
+            olyString = rr['olympiad']['value'].split("#")[-1]
+            (olympiadCountry,olympiadCode) = olyString.split(".")
+            olympiadData.append({'olympiadName': olympiadName, 'olympiadDescription': olympiadDescription, 'olympiadCountry':olympiadCountry, 'olympiadCode': olympiadCode})
 
         template_context = {
-            'links': olympiads['results']['bindings']
+            'links': olympiadData
         }
 
         return render_template('olympiads.html', **template_context)

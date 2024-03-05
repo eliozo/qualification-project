@@ -8,40 +8,37 @@ eliozo:LT.VUMIF.2016.10.3 a eliozo:Problem ;
         eliozo:div.fta.pow.other,
         eliozo:mod.eq.chinese,
         eliozo:seq.arithm.mod.gaps ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2016.10.3" ;
     eliozo:problemText """Atrodiet mazāko naturālo skaitli $n$, kuram skaitļi
 $\\sqrt[5]{5n}$, $\\sqrt[6]{6n}$, $\\sqrt[7]{7n}$
-ir naturāli."""@lv ;
+ir naturāli.
+
+<!--
+Raskite mažiausią natūralųjį skaičių $n$, kuriam skaičiai
+$\\sqrt[5]{5n}$, $\\sqrt[6]{6n}$, $\\sqrt[7]{7n}$
+yra natūralieji.
+-->"""@lv ;
     eliozo:problemYear "2016" ;
     eliozo:problem_number "3" .
 
 eliozo:LT.VUMIF.2016.11_12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2016.11_12.1" ;
-    eliozo:problemText """Agne savā traukā ielēja $p$ litrus ūdens,
-bet Bens savā traukā ielēja $q$ litrus ūdens.
-Pārmaiņus veikdami gājienus, viņi spēlē sekojošu spēli.
-Gājiena laikā spēlētājs no sava trauka otra spēlētāja
-traukā ielej tik daudz ūdens,
-cik ūdens jau ir otrā spēlētāja traukā.
-Spēli sāk Agne. Pēc simts gājieniem Agnes traukā
-bija $q$ litri ūdens, bet Bena traukā - $p$ litri ūdens.
-Atrodiet $\\frac{p}{q}$."""@lv ;
     eliozo:problemYear "2016" ;
     eliozo:problem_number "1" .
 
 eliozo:LT.VUMIF.2016.11_12.3 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2016.11_12.3" ;
-    eliozo:problemText """Noskaidrojiet, vai eksistē tāds naturāls skaitlis $n$, ka
-skaitlis $n \\cdot 2^{2016} - 7$ ir
-naturāla skaitļa kvadrāts."""@lv ;
     eliozo:problemYear "2016" ;
     eliozo:problem_number "3" .
 
@@ -50,24 +47,28 @@ eliozo:LT.VUMIF.2016.9.3 a eliozo:Problem ;
     eliozo:hasSkill eliozo:alg.ineq.equations,
         eliozo:alg.poly.division,
         eliozo:comb.full ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2016.9.3" ;
     eliozo:problemText """Atrodiet visas naturālas $n$ vērtības, kurām skaitlis
 $\\frac{n^3 + 3}{n^2 + 7}$
-ir naturāls."""@lv ;
+ir naturāls.
+
+<!--
+Raskite visas natūraliąsias $n$ reikšmes, su kuriomis skaičius
+$\\frac{n^3 + 3}{n^2 + 7}$
+yra natūralusis.
+-->"""@lv ;
     eliozo:problemYear "2016" ;
     eliozo:problem_number "3" .
 
 eliozo:LT.VUMIF.2017.10.1 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2017.10.1" ;
-    eliozo:problemText """Atrodiet visus veselu skaitļu pārus $(a,b)$,
-kuriem eksistē tādi veseli skaitļi $x$ un
-$y$, ka
-$$8x^4 + 8y^4 = a^4 + 6a^2b^2 + b^4.$$"""@lv ;
     eliozo:problemYear "2017" ;
     eliozo:problem_number "1" .
 
@@ -77,33 +78,36 @@ eliozo:LT.VUMIF.2017.10.2 a eliozo:Problem ;
         eliozo:alg.tra.binom.complsquare,
         eliozo:comb.full,
         eliozo:seq.gaps.squares ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2017.10.2" ;
     eliozo:problemText """Atrodiet visus veselo skaitļu $m$ un $n$ pārus
 $(m,n)$, kas apmierina vienādību
-$$m^2 + 2m - 9 = n^2 + n.$$"""@lv ;
+$$m^2 + 2m - 9 = n^2 + n.$$
+
+<!--
+Raskite visas sveikųjų skaičių $m$ ir $n$ poras
+$(m, n)$, tenkinančias lygybę
+$$m^2 + 2m - 9 = n^2 + n.$$
+-->"""@lv ;
     eliozo:problemYear "2017" ;
     eliozo:problem_number "2" .
 
 eliozo:LT.VUMIF.2017.11_12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2017.11_12.2" ;
-    eliozo:problemText """Atrodiet vienādojuma
-$$x^2y^2 + 208 + 4(\\mbox{LKD}(x,y) + \\mbox{MKD}(x,y))^2$$
-visus naturālos atrisinājumus $(x,y)$.
-Šeit $\\mbox{LKD}(x,y)$ un $\\mbox{MKD}(x,y)$ attiecīgi apzīmē skaitļu
-$x$ un $y$ lielāko kopīgo dalītāju un mazāko kopīgo dalāmo."""@lv ;
     eliozo:problemYear "2017" ;
     eliozo:problem_number "2" .
 
 eliozo:LT.VUMIF.2017.11_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:hasSkill eliozo:misc.invar.game ;
-    eliozo:image "LT.VUMIF.2017.11_12.4.svg" ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2017.11_12.4" ;
     eliozo:problemText """Uz tāfeles uzrakstīts skaitlis $636363$.
@@ -112,7 +116,17 @@ pirmo gājienu izdara $A$.
 Gājiena laikā ir jānodzēš uz tāfeles esošais skaitlis un
 jāuzraksta tā starpība ar jebkuru viņa naturālu dalītāju.
 Spēlētājs, kurš uzraksta $0$, zaudē. Noskaidrojiet, kuram
-spēlētājam ir uzvaras stratēģija, un parādiet to."""@lv ;
+spēlētājam ir uzvaras stratēģija, un parādiet to.
+
+<!--
+Lentoje užrašytas skaičius $636363$.
+Du žaidėjai $A$ ir $B$ pakaitomis atlieka ėjimus, pirmąjį
+ėjimą atlieka $A$. Ėjimo metu reikia nutrinti
+lentoje esantį skaičių ir užrašyti jo ir bet kurio
+jo natūraliojo daliklio skirtumą. Žaidėjas, užrašęs
+skaičių $0$, pralaimi. Nustatykite, kuris
+žaidėjas turi pergalės strategiją, ir nurodykite ją.
+-->"""@lv ;
     eliozo:problemYear "2017" ;
     eliozo:problem_number "4" .
 
@@ -120,13 +134,21 @@ eliozo:LT.VUMIF.2017.9.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:hasSkill eliozo:comb.full,
         eliozo:nota.est.numdigits.prod ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2017.9.2" ;
     eliozo:problemText """Vai izmantojot tieši pa vienai reizei visus desmit ciparus
 $0,1,2,\\ldots,9$ var uzrakstīt divus naturālus skaitļus, ka
 viens skaitlis būtu otra kvadrāts?
- Pirmais skaitļa cipars nevar būt nulle."""@lv ;
+ Pirmais skaitļa cipars nevar būt nulle.
+
+<!--
+Ar panaudojus po lygiai vieną kartą visus dešimt skaitmenų
+$0,1,2,\\ldots,9$ galima užrašyti du natūraliuosius skaičius,
+kad vienas skaičius būtų kito kvadratas?
+ Pirmasis skaičiaus skaitmuo negali būti nulis.
+-->"""@lv ;
     eliozo:problemYear "2017" ;
     eliozo:problem_number "2" .
 
@@ -134,42 +156,40 @@ eliozo:LT.VUMIF.2018.10.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:hasSkill eliozo:div.fta.divisors.num,
         eliozo:div.fta.divisors.struct ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2018.10.4" ;
     eliozo:problemText """Skaitļa $n>1$ visu pozitīvo dalītāju
 (ieskaitot $1$ un $n$) reizinājums vienāds ar $n^3$.
 Norādiet visas iespējamās skaitļa $n$ vērtības,
-uzrakstot, kāds var būt skaitļa $n$ sadalījums pirmreizinātājos."""@lv ;
+uzrakstot, kāds var būt skaitļa $n$ sadalījums pirmreizinātājos.
+
+<!--
+Skaičiaus $n>1$ visų teigiamų daliklių
+(įskaitant $1$ ir $n$) sandauga lygi $n^3$.
+Nurodykite visas galimas skaičiaus $n$ reikšmes,
+užrašydami, koks gali būti skaičiaus $n$
+skaidinys pirminiais daugikliais.
+-->"""@lv ;
     eliozo:problemYear "2018" ;
     eliozo:problem_number "4" .
 
 eliozo:LT.VUMIF.2018.11_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2018.11_12.4" ;
-    eliozo:problemText """Naturālie skaitļi $p$, $x$, $y$ apmierina vienādojumus:
-$$p + 1 = 2x^2,p^2 + 1 = 2y^2.$$
-Noskaidrojiet visas iespējamās skaitļa $p$ vērtības, ja
-zināms, ka šis skaitlis ir pirmskaitlis."""@lv ;
     eliozo:problemYear "2018" ;
     eliozo:problem_number "4" .
 
 eliozo:LT.VUMIF.2018.9.4 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2018.9.4" ;
-    eliozo:problemText """Naturālam skaitlim $M = 3N$
-ir tikpat ciparu, cik naturālam skaitlim $N > 10$.
-Lai iegūtu skaitli $M$, vajag palielināt
-ikvienu skaitļa $N$ ciparu: vienam no cipariem
-pieskaitīt $2$, bet pie atlikušajiem cipariem
-pieskaitīt pa nepāru naturālam skaitlim (ne obligāti
-visiem to pašu).
-Atrodiet visas iespējamās skaitļa $N$ pēdējā
-cipara vērtības."""@lv ;
     eliozo:problemYear "2018" ;
     eliozo:problem_number "4" .
 
@@ -178,14 +198,23 @@ eliozo:LT.VUMIF.2019.10.4 a eliozo:Problem ;
     eliozo:hasSkill eliozo:misc.invar,
         eliozo:mod.congr.prod,
         eliozo:nota.divrule.3_9.rem ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2019.10.4" ;
     eliozo:problemText """Naturālu skaitli sauksim par ,
 ja tam ir tieši $70$ ciparu: $10$ vieninieku,
 $10$ divnieku, $\\ldots$, $10$ septiņnkieku.
 Pierādīt, ka, ja viens septiņīgs skaitlis dalās
-ar citu septiņīgu skaitli, tad tie ir vienādi."""@lv ;
+ar citu septiņīgu skaitli, tad tie ir vienādi.
+
+<!--
+Natūralųjį skaičių vadinsime ,
+jei jis turi lygiai $70$ skaitmenų: $10$
+vienetų, $10$ dvejetų, $\\ldots$, $10$ septynetų.
+Įrodykite, kad jei vienas septintinis
+skaičius dalijasi iš kito, tai jie lygūs.
+-->"""@lv ;
     eliozo:problemYear "2019" ;
     eliozo:problem_number "4" .
 
@@ -196,7 +225,8 @@ eliozo:LT.VUMIF.2019.11_12.4 a eliozo:Problem ;
         eliozo:mod.congr.prod,
         eliozo:mod.eq.chinese,
         eliozo:nota.divrule.3_9.rem ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2019.11_12.4" ;
     eliozo:problemText """Naturālu skaitli sauksim par , ja
@@ -206,35 +236,37 @@ Pie piecīga skaitļa $M$ labajā pusē pierakstot
 divus ciparus $81$, iegūts skaitlis
 $N = \\overline{M81}$. Pierādiet, ka
 a) $M$ nedalās ne ar vienu piecīgu skaitli, izņemot sevi pašu;
-b) $N$ nedalās ne ar vienu piecīgu skaitli."""@lv ;
+b) $N$ nedalās ne ar vienu piecīgu skaitli.
+
+<!--
+Natūralųjį skaičių vadinsime ,
+jei jis turi lygiai $500$ skaitmenų: po
+$100$ dvejetų, trejetų, ketvertų, penketų ir šešetų.
+Prie penktinio skaičiaus $M$
+iš dešinės prirašius du skaitmenis $81$,
+gautas skaičius $N = \\overline{M81}$. Įrodykite,
+kad a) $M$ nesidalija iš jokio penktinio skaičiaus,
+išskyrus save patį;
+b) $N$ nesidalija iš jokio penktinio skaičiaus.
+-->"""@lv ;
     eliozo:problemYear "2019" ;
     eliozo:problem_number "4" .
 
 eliozo:LT.VUMIF.2019.9.1 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2019.9.1" ;
-    eliozo:problemText """Atrodiet visus veselu skaitļu trijniekus $(x,y,z)$,
-kas apmierina vienādojumu sistēmu
-$$
-\\left \\begin{array}{l}
-x^3 + y^3 = z^3 + 1,\\
-y^2 - x^2 = x+y,\\
-2x^3 - 6x = z^3 - 4x^2.
-\\end{array} \\right.$$"""@lv ;
     eliozo:problemYear "2019" ;
     eliozo:problem_number "1" .
 
 eliozo:LT.VUMIF.2019.9.2 a eliozo:Problem ;
     eliozo:country "LT" ;
-    eliozo:hasSkill eliozo:misc.ind.least,
-        eliozo:misc.invar.game,
-        eliozo:mod.fix.parity ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2019.9.2" ;
-    eliozo:problemText "<div style=\"font-size:70%\">"@lv ;
     eliozo:problemYear "2019" ;
     eliozo:problem_number "2" .
 
@@ -245,7 +277,8 @@ eliozo:LT.VUMIF.2019.9.4 a eliozo:Problem ;
         eliozo:mod.eq,
         eliozo:mod.fix.lastdigits,
         eliozo:nota.divrule.2_5pow.divides ;
-    eliozo:olympiad "VUMIF" ;
+    eliozo:olympiad eliozo:LT.VUMIF ;
+    eliozo:olympiadCode "VUMIF" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2019.9.4" ;
     eliozo:problemText """Jurgis uzrakstīja trīs naturālus skaitļus,
@@ -253,7 +286,17 @@ no kuriem katrs beidzas ar to pašu ciparu, ar kuru
 beidzas pārējo divu skaitļu summa, un sareizināja tos.
 Jurgis uzrakstīja tikai reizinājuma pēdējos trīs
 ciparus. Kādu ciparu trijnieku viņš varēja iegūt?
-Atrodiet visas iespējas."""@lv ;
+Atrodiet visas iespējas.
+
+<!--
+Jurgis užrašė tris natūraliuosius skaičius,
+iš kurių kiekvienas baigiasi tuo
+pačiu skaitmeniu kaip kitų dviejų skaičių
+suma, ir sudaugino juos. Jurgis
+užrašė tik sandaugos paskutinius tris
+skaitmenis. Kokį skaitmenų trejetą jis
+galėjo gauti? Raskite visas galimybes.
+-->"""@lv ;
     eliozo:problemYear "2019" ;
     eliozo:problem_number "4" .
 
