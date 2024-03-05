@@ -17,10 +17,11 @@ def getSPARQLskills():
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
     'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
     'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
-    '''SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?problemid WHERE { 
+    '''SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?skillName ?problemid WHERE { 
     ?skill eliozo:skillID ?skillIdentifier .
     ?skill eliozo:skillNumber ?skillNumber .
     ?skill eliozo:skillDescription ?skillDescription .
+    ?skill eliozo:skillName ?skillName .
     OPTIONAL {?prob eliozo:hasSkill ?skill . ?prob eliozo:problemID ?problemid . }.
     } ORDER BY ?skillNumber'''
     }
@@ -379,8 +380,12 @@ def create_app(test_config=None):
                 current_skill_info = dict() # Vārdnīca vienai tabulas rindai
                 current_skill_info['skillIdentifier'] = current_skill
                 current_skill_info['skillNumber'] = item['skillNumber']['value']
+                number_items = item['skillNumber']['value'].split(".")
+                current_skill_info['skillIndent'] = '&nbsp;&nbsp;'*(4 - sum([theItem == "0" for theItem in number_items]))
+
                 beautiful_description = mathBeautify(item['skillDescription']['value'])
                 current_skill_info['skillDescription'] = beautiful_description
+                current_skill_info['skillName'] = item['skillName']['value']
                 if "problemid" in item:
                     current_skill_info['problems'] = [item['problemid']['value']]
                 else:

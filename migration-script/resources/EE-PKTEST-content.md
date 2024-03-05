@@ -22,6 +22,7 @@ Atrast $\sphericalangle BAC$, ja $\sphericalangle CED = 25^{\circ}$.
 * [plan.triangle.angles.internal](#)
 * [plan.triangle.special.isosceles](#)
 * [plan.measurements.angles.linearpair](#)
+* Hint:"Var izteikt vispirms ∠DCB, tad tā blakusleņķi ∠ACB."
 * Topic:triangleSumOfAngles
 * Answer:80
 * Grade:7,8
@@ -112,6 +113,7 @@ Aprēķināt leņķi $x$.
 * [plan.triangle.special.isosceles](#)
 * [plan.triangle.angles.internal](#)
 * [plan.measurements.angles.linearpair](#)
+* Hint:"Var vispirms izteikt leņķus abās pusēs leņķim x."
 * Topic:isoscelesTriangles
 * Answer:45
 * Grade:7,8
@@ -195,6 +197,7 @@ taisnstūra malu.
 
 * [plan.triangle.special.equilateral](#)
 * [plan.measurements.angles.interior](#)
+* Hint:"Vienādmalu trijstūra iekšējie leņķi ir 60 grādi. Leņķi α var ar to izteikt."
 * Topic:parallelAndIntersectingLines
 * Answer:120
 * Grade:7,8
@@ -320,6 +323,7 @@ Atrast leņķa $BDE$ lielumu.
 * [plan.triangle.special.isosceles](#)
 * [plan.triangle.angles.internal](#)
 * [plan.measurements.angles.linearpair](#)
+* Hint:"Vispirms izsaka ∠BED, tad izmanto trijstūra BDE iekšējo leņķu summu."
 * Topic:triangleSumOfAngles
 * Answer:20
 * Grade:7,8
@@ -399,6 +403,7 @@ malas $AC$ garumu.
 <small>
 
 * [plan.triangle.angles.internal](#)
+* Hint:"Izsakot leņķus, var pamanīt vienādsānu trijstūrus. Un tad izmantot tajos malu vienādības."
 * Topic:triangleSumOfAngles
 * Answer:30
 * Grade:7,8
@@ -491,6 +496,7 @@ Aprēķināt leņķi, kas apzīmēts ar $x$.
 
 * [plan.polygon.angles](#)
 * [plan.measurements.angles.linearpair](#)
+* Hint:"Izsaka četrstūra iekšējos leņķus - daži no tiem ir blakusleņķi dotajiem. Tad atrod x blakusleņķi."
 * Topic:polygonSumOfAngles
 * Answer:130
 * Grade:7,8
@@ -593,6 +599,7 @@ Atrast leņķi, kas apzīmēts ar $y$, ja ar $x$ apzīmētie leņķi ir vienādi
 
 * [plan.triangle.angles.internal](#)
 * [plan.measurements.angles.vertical](#)
+* Hint:"Vispirms izsaka x, izmantojot tā krustleņķi."
 * Topic:triangleSumOfAngles
 * Answer:48
 * Grade:7,8
@@ -679,6 +686,7 @@ Aprēķināt leņķi $DCE$.
 * [plan.triangle.angles.internal](#)
 * [plan.measurements.angles.interior](#)
 * [plan.measurements.angles.vertical](#)
+* Hint:"Ar meklējamo leņķi (α) izsaka citus - izmanto trijstūra iekšējo leņķu summu, šķērsleņķu un krustleņķu īpašības."
 * Topic:triangleSumOfAngles
 * Answer:20
 * Grade:7,8
@@ -763,6 +771,7 @@ Aprēķināt leņķi $ACD$.
 <small>
 
 * [plan.triangle.angles.internal](#)
+* Hint:"CAD un BCD arī ir taisnleņķa trijstūri; citus leņķus izsaka ar nezināmo ∠ACD un risina radušos vienādojumu."
 * Topic:triangleSumOfAngles
 * Answer:40
 * Grade:7,8
@@ -868,6 +877,7 @@ leņķis $x$ ir $23^{\circ}$ un leņķis $y$ ir $32^{\circ}$.
 
 * [plan.triangle.angles.internal](#)
 * [plan.polygon.angles.internal](#)
+* Hint:"Var izteikt pārējos leņķus trijstūrītī, kurā viens no leņķiem ir z."
 * Topic:triangleSumOfAngles
 * Answer:80
 * Grade:7,8
