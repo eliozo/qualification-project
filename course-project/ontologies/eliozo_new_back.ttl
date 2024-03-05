@@ -1,0 +1,389 @@
+@prefix : <http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
+@base <http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/> .
+
+<http://www.dudajevagatve.lv/eozol#> rdf:type owl:Ontology ;
+                                      owl:versionIRI <http://www.dudajevagatve.lv/eozol#1.0.0> ;
+                                      owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.dudajevagatve.lv/eliozo#hasSkill
+eliozo:hasSkill rdf:type owl:ObjectProperty ;
+                rdfs:domain eliozo:Problem ;
+                rdfs:range eliozo:Skill .
+
+
+###  http://www.dudajevagatve.lv/eliozo#hasVideo
+eliozo:hasVideo rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain eliozo:Problem ;
+                rdfs:range eliozo:Video .
+
+
+###  http://www.dudajevagatve.lv/eliozo#olympiadCountry
+eliozo:olympiadCountry rdf:type owl:ObjectProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain eliozo:Olympiad ;
+                       rdfs:range eliozo:Country .
+
+
+###  http://www.dudajevagatve.lv/eliozo#problemCountry
+eliozo:problemCountry rdf:type owl:ObjectProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain eliozo:Problem ;
+                      rdfs:range eliozo:Country .
+
+
+###  http://www.dudajevagatve.lv/eliozo#problemOlympiad
+eliozo:problemOlympiad rdf:type owl:ObjectProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain eliozo:Problem ;
+                       rdfs:range eliozo:Olympiad .
+
+
+###  http://www.dudajevagatve.lv/eliozo#problemQuestionType
+eliozo:problemQuestionType rdf:type owl:ObjectProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain eliozo:Problem ;
+                           rdfs:range eliozo:QuestionType .
+
+
+###  http://www.dudajevagatve.lv/eliozo#problemSeeAlso
+eliozo:problemSeeAlso rdf:type owl:ObjectProperty ,
+                               owl:SymmetricProperty ;
+                      rdfs:domain eliozo:Problem ;
+                      rdfs:range eliozo:Problem .
+
+
+###  http://www.dudajevagatve.lv/eliozo#problemTopic
+eliozo:problemTopic rdf:type owl:ObjectProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain eliozo:Problem ;
+                    rdfs:range eliozo:Topic .
+
+
+###  http://www.dudajevagatve.lv/eliozo#startingSkill
+eliozo:startingSkill rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Curriculum ;
+                     rdfs:range eliozo:Skill .
+
+
+###  http://www.dudajevagatve.lv/eliozo#startingTopic
+eliozo:startingTopic rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Curriculum ;
+                     rdfs:range eliozo:Topic .
+
+
+###  http://www.dudajevagatve.lv/eliozo#topicHasSubtopic
+eliozo:topicHasSubtopic rdf:type owl:ObjectProperty ,
+                                 owl:TransitiveProperty ;
+                        rdfs:domain eliozo:Topic ;
+                        rdfs:range eliozo:Topic .
+
+
+###  http://www.dudajevagatve.lv/eliozo#videoBookmarks
+eliozo:videoBookmarks rdf:type owl:ObjectProperty ;
+                      rdfs:domain eliozo:Video ;
+                      rdfs:range eliozo:VideoBookmark .
+
+
+###  http://www.dudajevagatve.lv/eozol#eozol:hasCanonicalExample
+:eozol:hasCanonicalExample rdf:type owl:ObjectProperty ;
+                           rdfs:domain eliozo:Skill ,
+                                       eliozo:Topic ;
+                           rdfs:range eliozo:Problem .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.dudajevagatve.lv/eliozo#olympiadDescription
+eliozo:olympiadDescription rdf:type owl:DatatypeProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain eliozo:Olympiad ;
+                           rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#olympiadID
+eliozo:olympiadID rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain eliozo:Olympiad ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#olympiadName
+eliozo:olympiadName rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain eliozo:Olympiad ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#problemGrade
+eliozo:problemGrade rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain eliozo:Problem ;
+                    rdfs:range xsd:int .
+
+
+###  http://www.dudajevagatve.lv/eliozo#problemHint
+eliozo:problemHint rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain eliozo:Problem ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#problemID
+eliozo:problemID rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain eliozo:Problem ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#problemSolution
+eliozo:problemSolution rdf:type owl:DatatypeProperty ;
+                       rdfs:domain eliozo:Problem ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#problemText
+eliozo:problemText rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain eliozo:Problem ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#problemYear
+eliozo:problemYear rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain eliozo:Problem ;
+                   rdfs:range xsd:int .
+
+
+###  http://www.dudajevagatve.lv/eliozo#skillDescription
+eliozo:skillDescription rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain eliozo:Skill ;
+                        rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#skillID
+eliozo:skillID rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain eliozo:Skill ;
+               rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#skillName
+eliozo:skillName rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain eliozo:Skill ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#topicDescription
+eliozo:topicDescription rdf:type owl:DatatypeProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain eliozo:Topic ;
+                        rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#topicID
+eliozo:topicID rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain eliozo:Topic ;
+               rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#topicTitle
+eliozo:topicTitle rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain eliozo:Topic ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#videoBookmarkText
+eliozo:videoBookmarkText rdf:type owl:DatatypeProperty ;
+                         rdfs:domain eliozo:Video ;
+                         rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#videoBookmarkTstamp
+eliozo:videoBookmarkTstamp rdf:type owl:DatatypeProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain eliozo:Video ;
+                           rdfs:range xsd:int .
+
+
+###  http://www.dudajevagatve.lv/eliozo#videoTitle
+eliozo:videoTitle rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain eliozo:Video ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#videoYoutube
+eliozo:videoYoutube rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain eliozo:Video ;
+                    rdfs:range xsd:anyURI .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.dudajevagatve.lv/eliozo#Country
+eliozo:Country rdf:type owl:Class .
+
+
+###  http://www.dudajevagatve.lv/eliozo#Olympiad
+eliozo:Olympiad rdf:type owl:Class .
+
+
+###  http://www.dudajevagatve.lv/eliozo#Problem
+eliozo:Problem rdf:type owl:Class .
+
+
+###  http://www.dudajevagatve.lv/eliozo#QuestionType
+eliozo:QuestionType rdf:type owl:Class .
+
+
+###  http://www.dudajevagatve.lv/eliozo#Skill
+eliozo:Skill rdf:type owl:Class ;
+             rdfs:subClassOf skos:Concept .
+
+
+###  http://www.dudajevagatve.lv/eliozo#Topic
+eliozo:Topic rdf:type owl:Class .
+
+
+###  http://www.dudajevagatve.lv/eliozo#Video
+eliozo:Video rdf:type owl:Class .
+
+
+###  http://www.dudajevagatve.lv/eliozo#VideoBookmark
+eliozo:VideoBookmark rdf:type owl:Class .
+
+
+###  http://www.dudajevagatve.lv/eozol#Curriculum
+:Curriculum rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.dudajevagatve.lv/eliozo#EE
+eliozo:EE rdf:type owl:NamedIndividual ,
+                   eliozo:Country .
+
+
+###  http://www.dudajevagatve.lv/eliozo#EE.PK
+eliozo:EE.PK rdf:type owl:NamedIndividual ,
+                      eliozo:Olympiad .
+
+
+###  http://www.dudajevagatve.lv/eliozo#LT
+eliozo:LT rdf:type owl:NamedIndividual ,
+                   eliozo:Country .
+
+
+###  http://www.dudajevagatve.lv/eliozo#LT.LJKMO
+eliozo:LT.LJKMO rdf:type owl:NamedIndividual ,
+                         eliozo:Olympiad .
+
+
+###  http://www.dudajevagatve.lv/eliozo#LT.VUMIF
+eliozo:LT.VUMIF rdf:type owl:NamedIndividual ,
+                         eliozo:Olympiad ;
+                eliozo:olympiadCountry eliozo:LT ;
+                eliozo:olympiadDescription "Lietuvas Viļņas Universitātes olimpiāde vecāko klašu skolēniem"@lv ;
+                eliozo:olympiadName "Lietuvas Viļņas Universitātes MIF olimpiāde"@lv .
+
+
+###  http://www.dudajevagatve.lv/eliozo#LV
+eliozo:LV rdf:type owl:NamedIndividual ,
+                   eliozo:Country .
+
+
+###  http://www.dudajevagatve.lv/eliozo#LV.AO
+eliozo:LV.AO rdf:type owl:NamedIndividual ,
+                      eliozo:Olympiad ;
+             eliozo:olympiadDescription "Latvijas Atklātā olimpiāde (tiek organizēta kopš 1974.gada)"@lv ;
+             eliozo:olympiadID "LV.AO"@lv ;
+             eliozo:olympiadName "Atklātā olimpiāde"@lv .
+
+
+###  http://www.dudajevagatve.lv/eliozo#LV.NO
+eliozo:LV.NO rdf:type owl:NamedIndividual ,
+                      eliozo:Olympiad ;
+             eliozo:olympiadDescription "Latvijas Valsts olimpiādes Novadu kārta (agrāk Rajona kārta)"@lv ;
+             eliozo:olympiadID "LV.NO"@lv ;
+             eliozo:olympiadName "Novada olimpiāde"@lv .
+
+
+###  http://www.dudajevagatve.lv/eliozo#LV.SO
+eliozo:LV.SO rdf:type owl:NamedIndividual ,
+                      eliozo:Olympiad .
+
+
+###  http://www.dudajevagatve.lv/eliozo#LV.TST
+eliozo:LV.TST rdf:type owl:NamedIndividual ,
+                       eliozo:Olympiad .
+
+
+###  http://www.dudajevagatve.lv/eliozo#LV.VO
+eliozo:LV.VO rdf:type owl:NamedIndividual ,
+                      eliozo:Olympiad .
+
+
+###  http://www.dudajevagatve.lv/eliozo#topicAlgebra
+eliozo:topicAlgebra rdf:type owl:NamedIndividual ,
+                             eliozo:Topic ;
+                    eliozo:topicHasSubtopic eliozo:topicArithmetic ;
+                    eliozo:topicDescription "Algebras olimpiāžu uzdevumi"@lv ;
+                    eliozo:topicID "Algebra"@lv ;
+                    eliozo:topicTitle "Algebra"@lv .
+
+
+###  http://www.dudajevagatve.lv/eliozo#topicArithmetic
+eliozo:topicArithmetic rdf:type owl:NamedIndividual ,
+                                eliozo:Topic .
+
+
+###  http://www.dudajevagatve.lv/eozol#Grade5_LV
+:Grade5_LV rdf:type owl:NamedIndividual ,
+                    :Curriculum .
+
+
+###  http://www.dudajevagatve.lv/eozol#Grade6_LV
+:Grade6_LV rdf:type owl:NamedIndividual ,
+                    :Curriculum .
+
+
+###  http://www.dudajevagatve.lv/eozol#Grade7_LV
+:Grade7_LV rdf:type owl:NamedIndividual ,
+                    :Curriculum .
+
+
+###  http://www.dudajevagatve.lv/eozol#Grade8_LV
+:Grade8_LV rdf:type owl:NamedIndividual ,
+                    :Curriculum .
+
+
+###  http://www.dudajevagatve.lv/eozol#Grade9_LV
+:Grade9_LV rdf:type owl:NamedIndividual ,
+                    :Curriculum .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
