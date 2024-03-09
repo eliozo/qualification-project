@@ -397,7 +397,7 @@ def create_app(test_config=None):
 
                 beautiful_description = mathBeautify(item['skillDescription']['value'])
                 current_skill_info['skillDescription'] = beautiful_description
-                current_skill_info['skillName'] = item['skillName']['value']
+                current_skill_info['skillName'] = mathBeautify(item['skillName']['value'])
                 if "problemid" in item:
                     current_skill_info['problems'] = [item['problemid']['value']]
                 else:
