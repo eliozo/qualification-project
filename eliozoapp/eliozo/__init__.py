@@ -93,6 +93,10 @@ def getSPARQLProblem(arg):
         ?problem eliozo:hasSkill ?skill .
         ?skill eliozo:skillID ?skillIdentifier .
     } .
+    OPTIONAL {
+      ?problem eliozo:problemSolution ?problemSolution . 
+      ?problemSolution eliozo:solutionText ?solutionText .
+    } .
       OPTIONAL {
         ?problem eliozo:hasVideo ?video .
     } .
@@ -480,6 +484,13 @@ def create_app(test_config=None):
         else:
             image_src = ''
 
+        if 'solutionText' in data['results']['bindings'][0]:
+            solutionText = data['results']['bindings'][0]['solutionText']['value']
+            solutionText = mathBeautify(solutionText)
+        else:
+            solutionText = ''
+        # solutionText = 'ass'
+
         bookmarks = []
         video_title = "NA"
         youtubeID = "NA"
@@ -507,7 +518,8 @@ def create_app(test_config=None):
             'video_title': video_title,
             'bookmarks': bookmarks,
             'youtubeID': youtubeID,
-            'image_src' : image_src
+            'image_src' : image_src,
+            'solutionText': solutionText
         }
         return render_template('problem.html', **template_context)
 

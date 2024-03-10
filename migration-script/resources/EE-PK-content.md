@@ -14,7 +14,7 @@
 
 -----
 
-# <lo-sample/> EE.PK.1994.7B.2 
+# <lo-sample/> EE.PK.1994.7.2 
 
 Atrast mazāko naturālo skaitli, kura pierakstā ir tikai cipari $5$ un $9$, 
 kurš satur tos vienādā skaitā un dalās ar $5$ un $9$. 
@@ -31,23 +31,25 @@ concepts=divisibility,decimal-notation
 questionType=Find.Min
 -->
 
------
 
+## Atrisinājums
 
-## Skaitļa īpašības
+Ievērojam, ka skaitlis ir nepāru, jo tajā nav pāru ciparu (neizpildās dalāmības pazīme ar $2$).  
+Tam jābeidzas ar ciparu $5$, jo tas dalās ar $5$ (lai izpildītos dalāmības pazīme ar $5$).  
 
-* Skaitlis ir nepāru, jo tajā nav pāru ciparu
-* Skaitlim jābeidzas ar $5$, jo tas dalās ar $5$
-* Skaitļa ciparu summai jādalās ar $9$, jo tas dalās ar $9$. 
+Turklāt skaitļa ciparu summai jādalās ar $9$ (lai izpildītos dalāmības pazīme ar $9$). 
 Tātad tajā jābūt vismaz deviņiem cipariem "5". 
-* Cipari "5", kur iespējams, jāliek skaitļa sākumā, lai 
-būtu iespējami mazāks.
 
-Atbilde: `555555559999999995`.
+Cipari "5", kur iespējams, jāliek skaitļa sākumā, lai 
+rezultāts būtu iespējami mazāks.
 
------
+**Atbilde:** `555555559999999995`.
 
-# <lo-sample/> EE.PK.1994.8B.2 
+
+
+
+
+# <lo-sample/> EE.PK.1994.8.2 
 
 Atrast visus veselos skaitļus $n$, kuriem skaitlis 
 ${\displaystyle \frac{n^2 - 4}{n^2 - 1}}$ ir vesels.
@@ -60,7 +62,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.1995.7B.2
+# <lo-sample/> EE.PK.1995.7.2
 
 Atrast mazāko pirmskaitli, kas dod atlikumu $1$, dalot
 ar katru no skaitļiem $3$, $4$, $5$ un $8$. 
@@ -73,7 +75,7 @@ questionType=Find.Min
 
 -----
 
-# <lo-sample/> EE.PK.1995.8B.3
+# <lo-sample/> EE.PK.1995.8.3
 
 Vai var aizpildīt tabulu, kas satur
 
@@ -96,7 +98,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> EE.PK.1996.7B.3
+# <lo-sample/> EE.PK.1996.7.3
 
 Kādus ciparus jāieraksta piecciparu skaitlim $517\ast\ast$ 
 zvaigznīšu vietā, lai iegūtais skaitlis dalītos vienlaikus
@@ -110,7 +112,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.1996.8B.3
+# <lo-sample/> EE.PK.1996.8.3
 
 Trīs skolnieku vecumi ir veseli skaitļi, kuru reizinājums ir $1872$. 
 Pie tam pēc vecuma vidējais skolēns ir vecāks par jaunāko 
@@ -125,7 +127,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.1996.9B.2
+# <lo-sample/> EE.PK.1996.9.2
 
 Atrast skaitli $c$, ja 
 $(a+b):(b+c):(c+a)=6:7:8$ un $a+b+c=14$. 
@@ -141,7 +143,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.1997.7B.1
+# <lo-sample/> EE.PK.1997.7.1
 
 Atrast naturālus skaitļus $x$, $y$ un $z$, lai izpildītos vienādība
 $$x + \frac{1}{y + \frac{1}{z}} = 1\frac{3}{7}.$$
@@ -153,7 +155,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.1997.8B.1
+# <lo-sample/> EE.PK.1997.8.1
 
 Veselam pozitīvam skaitlim $a$ visi cipari ir dažādi. 
 No šī skaitļa cipariem var izveidot sešus dažādus divciparu skaitļus, 
@@ -169,7 +171,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.1997.8B.1
+# <lo-sample/> EE.PK.1997.8.1
 
 Dalot veselu skaitli $N \geq 5$ ar $3$, 
 rodas atlikums $2$. Pierādīt, ka skaitļa $N$
@@ -183,7 +185,7 @@ questionType=Prove.Other
 
 -----
 
-# <lo-sample/> EE.PK.1998.7B.2
+# <lo-sample/> EE.PK.1998.7.2
 
 Trīsciparu skaitļa pēdējo ciparu pārliek pirmajā vietā, nemainot
 pārējo ciparu secību. Šādi iegūtais skaitlis ir lielāks par $400$ 
@@ -198,7 +200,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.1998.7B.3
+# <lo-sample/> EE.PK.1998.7.3
 
 Nošu krājuma lapas ir nesastiprinātas; visas tā lappuses,
 sākot ar pirmo, sanumurētas ar skaitļiem $1,2,3,4,\ldots$. 
@@ -219,7 +221,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> EE.PK.1998.8B.1
+# <lo-sample/> EE.PK.1998.8.1
 
 Trīsciparu skaitlī nodzēsa simtu ciparu un ieguva divciparu skaitli, kurš 
 septiņas reizes mazāks par sākotnējo skaitli. Atrast visus šādus 
@@ -232,7 +234,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.1998.9B.1
+# <lo-sample/> EE.PK.1998.9.1
 
 Atrast visus pirmskaitļus, ar kuriem dalās starpība
 $$6 \cdot 66 \cdot 666 \cdot 6666 - 
@@ -246,7 +248,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.1999.7B.1
+# <lo-sample/> EE.PK.1999.7.1
 
 No viena mēneša tabulkalendāra (datumi attēloti pa vienai nedēļai katrā rindiņā)
 izgrieza kvadrātu ar izmēriem $2 \times 2$ dienas.
@@ -261,7 +263,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.1999.7B.3
+# <lo-sample/> EE.PK.1999.7.3
 
 <div style="font-size:80%">
 
@@ -285,7 +287,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.1999.8B.3
+# <lo-sample/> EE.PK.1999.8.3
 
 Pazīstamais matemātiķis-izgudrotājs $N$ uzrakstīja uz vienas 
 kartītes vienu trīsciparu skaitli, bet uz otras kartītes citu 
@@ -301,7 +303,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.1999.9B.3
+# <lo-sample/> EE.PK.1999.9.3
 
 Vai eksistē skaitlis, kura pierakstā ir 
 $138$ cipari "1", $24$ cipari "6" 
@@ -316,7 +318,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> EE.PK.2000.7B.3
+# <lo-sample/> EE.PK.2000.7.3
 
 <div style="font-size:80%">
 
@@ -347,7 +349,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2000.8B.1
+# <lo-sample/> EE.PK.2000.8.1
 
 Atrast visus tos naturālos skaitļus, kuriem ciparu reizinājums 
 ir $2000$, starp cipariem nav cipara $1$ un jebkuriem 
@@ -361,7 +363,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2000.9B.1
+# <lo-sample/> EE.PK.2000.9.1
 
 Atrast visus pirmskaitļu četriniekus $(p,q,s,t)$, 
 kas apmierina vienādojumu sistēmu:
@@ -380,7 +382,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2001.7B.3
+# <lo-sample/> EE.PK.2001.7.3
 
 Zināms, ka $a$, $b$ un $10a+b$ ir pirmskaitļi un $a \leq b < 10$. 
 Atrast visas iespējamās reizinājuma $ab \cdot (10+b)$ vērtības. 
@@ -392,7 +394,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2001.8B.1
+# <lo-sample/> EE.PK.2001.8.1
 
 Ja Tāvi (*Taavi*) datorā ievada naturālu skaitli $n$, tad
 dators sareizinās visus naturālos skaitļus no $1$ līdz $n$ 
@@ -410,7 +412,7 @@ questionType=Find.Min
 
 -----
 
-# <lo-sample/> EE.PK.2001.9B.1
+# <lo-sample/> EE.PK.2001.9.1
 
 Rēķinvedis Juris ievērojis, ka 2001.gadā viņa 
 vecums kļūs vienāds ar viņa dzimšanas gada 
@@ -426,7 +428,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2001.9B.3
+# <lo-sample/> EE.PK.2001.9.3
 
 Dots vesels skaitlis $k$. Pierādīt, ka, ja 
 $k^2 -k$ nedalās ar $6$, tad $k^2 - k - 2$ 
@@ -439,7 +441,7 @@ questionType=Prove.ForAll
 
 -----
 
-# <lo-sample/> EE.PK.2002.7B.1 
+# <lo-sample/> EE.PK.2002.7.1 
 
 Trīs draugi Reins, Madis un Ahto apmeklē bibliotēkas kafejnīcu 
 vienmēr 14:00, bet Reins to dara katru ceturto, Madis –
@@ -456,7 +458,7 @@ questionType=Find.Only
 
 -----
 
-# <lo-sample/> EE.PK.2002.8B.1 
+# <lo-sample/> EE.PK.2002.8.1 
 
 Skaitli $15$ var izteikt gan kā trīs, gan kā piecu 
 pēc kārtas sekojošu naturālu skaitļu summu: 
@@ -472,7 +474,7 @@ questionType=Find.All,NoteOnProof
 
 -----
 
-# <lo-sample/> EE.PK.2003.7B.3 
+# <lo-sample/> EE.PK.2003.7.3 
 
 Uzvarošie numuri loterijā ir četri divciparu pirmskaitļi 
 $\overline{AB}$, $\overline{BC}$, $\overline{CD}$ un 
@@ -486,7 +488,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2003.8B.1 
+# <lo-sample/> EE.PK.2003.8.1 
 
 Doti trīs skaitļi, kuru summa ir $49$. Ja vienam no tiem 
 pieskaita $3$, no otra atņem $3$, bet trešo reizina ar $3$, 
@@ -499,7 +501,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2003.8B.3 
+# <lo-sample/> EE.PK.2003.8.3 
 
 Dārgumu krātuvē bija $N$ lādītes, kurās kopā bija pavisam 
 $462$ dārgakmeņi, pie tam katrā lādītē dārgakmeņu skaits bija 
@@ -515,7 +517,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2004.7B.1 
+# <lo-sample/> EE.PK.2004.7.1 
 
 Atrast visus tādus trīsciparu nepāru naturālus skaitļus $a$, 
 kuru reizinājums ar skaitli $748$ beidzas ar cipariem $2004$.
@@ -526,7 +528,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2004.8B.1 
+# <lo-sample/> EE.PK.2004.8.1 
 
 Atrast visus tos trīsciparu naturālos skaitļus, kuri 
 paši ir kāda naturāla skaitļa kvadrāti, un kuriem, 
@@ -541,7 +543,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2004.8B.3 
+# <lo-sample/> EE.PK.2004.8.3 
 
 Juris (*Jüri*) un Marija (*Mari*) dzīvo tajā pašā daudzdzīvokļu ēkā. 
 Katrā ēkas stāvā atrodas $10$ dzīvokļi $1, 2, \ldots, 10$, 
@@ -557,13 +559,14 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2005.7B.1 
+# <lo-sample/> EE.PK.2005.7.1 
 
 Ierakstīt katrā rūtiņā pa vienam ciparam tā, lai iegūtie divciparu 
 skaitļi nesāktos ar nulli un izpildītu zemāk izklāstītos nosacījumus. 
 Paskaidrot, kādē secībā tika aizpildītas rūtiņas un pamatot, 
-kādēļ citu iespēju aizpildīt rūtiņas, izņemot jūsu atrastās, nav.  
-![tabula](EE.PK.2005.7B.1.png)
+kādēļ citu iespēju aizpildīt rūtiņas, izņemot jūsu atrastās, nav.
+
+![tabula](EE.PK.2005.7.1.png)
 
 Pa labi:  
 (A) Skaitļa $3$ daudzkārtnis.  
@@ -585,14 +588,15 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2005.8B.1 
+# <lo-sample/> EE.PK.2005.8.1 
 
 
 Ierakstīt katrā rūtiņā pa vienam ciparam tā, lai iegūtie trīsciparu 
 skaitļi nesāktos ar nulli un izpildītu zemāk izklāstītos nosacījumus. 
 Paskaidrot, kādē secībā tika aizpildītas rūtiņas un pamatot, 
-kādēļ citu iespēju aizpildīt rūtiņas, izņemot jūsu atrastās, nav.  
-![tabula](EE.PK.2005.8B.1.png)
+kādēļ citu iespēju aizpildīt rūtiņas, izņemot jūsu atrastās, nav.
+
+![tabula](EE.PK.2005.8.1.png)
 
 Pa labi:  
 (A) Naturāla skaitļa kvadrāts, kas dalās ar $5$.   
@@ -614,7 +618,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2006.7B.3 
+# <lo-sample/> EE.PK.2006.7.3 
 
 Paroles izveidošanai Keita (*Keit*) paņēma divus pēdējos 
 ciparus savam dzimšanas gadam $1992$ un pievienoja tiem sākumā 
@@ -633,7 +637,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2006.8B.3 
+# <lo-sample/> EE.PK.2006.8.3 
 
 Līa (*Liia*) izvēlējusies paroli, kas sastāv no četriem 
 dažādiem cipariem; un, saskaitot katrus trīs no tiem, 
@@ -647,7 +651,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2007.7B.1 
+# <lo-sample/> EE.PK.2007.7.1 
 
 Ozoliņu (*Tammel*) ģimenē šis gads ir īpašs sekojošā nozīmē: 
 gada beigu brīdī katra ģimenes locekļa vecums ir divciparu 
@@ -664,7 +668,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2007.8B.1 
+# <lo-sample/> EE.PK.2007.8.1 
 
 Voldemārs (*Volli*) uzrakstīja uz tāfeles naturālu skaitli. 
 Viņš to pareizināja ar $9$ un nodzēsa reizinājuma pēdējo ciparu. 
@@ -679,7 +683,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2008.7B.2 
+# <lo-sample/> EE.PK.2008.7.2 
 
 Atrast visus tos skaitļus, kuriem gan pats skaitlis, gan arī skaitlis, 
 kas iegūts samainot ciparu secību uz pretējo, ir trīsciparu un 
@@ -693,7 +697,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2008.8B.2 
+# <lo-sample/> EE.PK.2008.8.2 
 
 Perts (*Pärt*) uzrakstīja uz papīra $5$ pozitīvus veselus skaitļus, 
 kas visi mazāki par $150$. Izrādījās, ka katrs skaitlis ir pusotru reizi lielāks 
@@ -707,7 +711,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2009.7B.2 
+# <lo-sample/> EE.PK.2009.7.2 
 
 Skaitļi $\overline{ab4}$, $\overline{b03}$, $\overline{b3c}$ un $\overline{ba1}$
 – ir četri trīsciparu skaitļi augošā secībā, 
@@ -725,7 +729,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2009.8B.2 
+# <lo-sample/> EE.PK.2009.8.2 
 
 Doti $a$, $b$, $c$, $d$, $e$ un $f$ – dažādi skaitļi 
 no saraksta $0$, $1$, $2$, $3$, $4$, $5$, $6$, $7$, $8$, $9$. 
@@ -754,7 +758,7 @@ questionType=Find.All
 -----
 
 
-# <lo-sample/> EE.PK.2010.7B.1 
+# <lo-sample/> EE.PK.2010.7.1 
 
 Divciparu skaitlim pieskaitīja trīsciparu skaitli un rezultātā 
 ieguva četrciparu skaitli. Visi šie trīs skaitļi ir ar šādu īpašību:
@@ -769,7 +773,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2010.8B.1 
+# <lo-sample/> EE.PK.2010.8.1 
 
 Nodzēšot vienu ciparu trīsciparu skaitlī, iegūst divciparu skaitli, 
 kuru saskaitot ar sākotnējo trīsciparu skaitli, summa ir $221$. 
@@ -818,34 +822,37 @@ strategy=begin-at-the-end
 
 -----
 
-## Vienādojumu sistēmas
+## Atrisinājums
+
+Mēģinām uzminēt kādu atrisinājumu.
 
 * Ja $n=3$, var aplūkot pilnus kvadrātus, kas satur četrus ciparus un
-sākas ar "1": $32^2=1024$, $33^2 = 1089$, $34^2 = 1156$ un 
-$35^2 = 1225$. Tas arī ir pirmais skaitlis, kuram nometot pirmo ciparu 
-iegūst kvadrātu: $225 = 15^2$. 
+  sākas ar "1": $32^2=1024$, $33^2 = 1089$, $34^2 = 1156$ un 
+  $35^2 = 1225$. Tas arī ir pirmais skaitlis, kuram nometot pirmo ciparu 
+  iegūst kvadrātu: $225 = 15^2$. 
 * Redzam arī, ka $35^2 - 15^2 = (35-15)(35+15)=20\cdot 50 = 1000$. 
-* Nākamā sistēmiņa: $a+b=200$, $a-b=50$. Tātad 
-$$a = 125,\;\; b = 75,\;\;125^2 - 75^2=10000.$$
 
+Pēc līdzīga šablona var sastādīt arī nākamo sistēmu: 
+$$\left\{ \begin{array}{l} a+b = 200 \\ a - b = 50 \\ \end{array} \right.$$  
+Tās atrisinājums ir $a = 125$, $b = 75$. Tādēļ $125^2 = 15625$ un $75^2 = 5625$. 
 
---
+Lai iegūtu jaunus atrisinājumu pārīšus papildus $(15,35)$ un $(75,125)$, 
+ievērosim, ka skaitļus $15$, $35$, $75$, $125$ u.c. var ātri kāpināt kvadrātā:
 
-## Algebriskās identitātes
+* $15^2 = 225$, jo $1 \cdot 2 = 2$.
+* $35^2 = 1225$, jo $3 \cdot 4 = 12$.
+* $75^2 = 5625$, jo $7 \cdot 8 = 56$.  
+* $125^2 = 15625$, jo $12 \cdot 13 = 156$.
 
-* Skaitļus $15$, $35$, $75$, $125$ u.c. var ātri kāpināt kvadrātā:
-
-$75^2 = 5625$, jo $7 \cdot 8 = 56$.  
-$125^2 = 15625$, jo $12 \cdot 13 = 156$.
-
-
+Visos šajos gadījumos var kāpināt kvadrātā skaitli $(10n + 5)^2$ ar sekojošu metodi: 
+vispirms aprēķina $n(n+1)$, pēc tam galā pieraksta ciparus "25". 
 
 
 
 
 -----
 
-# <lo-sample/> EE.PK.2011.7B.1 
+# <lo-sample/> EE.PK.2011.7.1 
 
 Aplūkosim naturālus skaitļus, kuriem izpildās sekojoši nosacījumi:
 
@@ -874,7 +881,7 @@ questionType=Find.Min,Find.Max,Prove.NotExists
 
 -----
 
-# <lo-sample/> EE.PK.2011.8B.3 
+# <lo-sample/> EE.PK.2011.8.3 
 
 Vienu cipars naturālu skaitļu $n$ un $n+2$ reizinājumā vienāds ar $4$. 
 
@@ -893,12 +900,16 @@ questionType=Find.All,Find.Min,Find.Max
 # <lo-sample/> EE.PK.2011.10.3
 
 Matemātikas stundā Jüri dalīja naturālu skaitli $n$ ar naturālu 
-skaitli $m$, iegūstot dalījumu un atlikumu.  
-a) Pierādīt, ka, ja dalījums un atlikums ir savā starpā vienādi, 
-tad $n$ dalās ar $m+1$.  
-b) Vai izpildās arī apgrieztais apgalvojums: Vienmēr, kad skaitlis
-$n$ dalās ar $m+1$, tad dalījums un atlikums, ja $n$ dala ar $m$, ir 
-savā starpā vienādi? 
+skaitli $m$, iegūstot dalījumu un atlikumu.
+
+**(A)** 
+  Pierādīt, ka, ja dalījums un atlikums ir savā starpā vienādi, 
+  tad $n$ dalās ar $m+1$.  
+
+**(B)**
+  Vai izpildās arī apgrieztais apgalvojums: Vienmēr, kad skaitlis
+  $n$ dalās ar $m+1$, tad dalījums un atlikums, ja $n$ dala ar $m$, ir 
+  savā starpā vienādi? 
 
 <small>
 
@@ -927,11 +938,12 @@ concepts=remainder
 -----
 
 
-## Algebriski pateikts apgalvojums par atlikumu
+## Atrisinājums
+
+Apgalvojumu par atlikumu izsakām algebriski: 
 
 Ja $n$ dalot ar $m$ rezultāts ir $a$ un atlikums ir $a$, tad
-$$n = am + a$$
-jeb $n = a(m+1)$. Redzam, ka $n$ dalās ar $(m+1)$. 
+$$n = am + a$$ jeb $n = a(m+1)$. Redzam, ka $n$ dalās ar $(m+1)$. 
 
 Otrā virzienā secināt nevar, jo var gadīties, ka $a\geq m$, bet
 atlikumi, dalot ar $m$ var būt tikai no kopas $\{ 0,\ldots,m-1 \}$.
@@ -944,9 +956,7 @@ un $0 \neq 25$.
 
 
 
------
-
-# <lo-sample/> EE.PK.2012.7B.3 
+# <lo-sample/> EE.PK.2012.7.3 
 
 Saskaitīšanas piemērā 
 $$KAKS + KOLM = VIIS$$
@@ -961,7 +971,7 @@ questionType=Find.Max
 
 -----
 
-# <lo-sample/> EE.PK.2012.8B.2 
+# <lo-sample/> EE.PK.2012.8.2 
 
 Atrast visus trīsciparu naturālos skaitļus, kuri dalās ar $4$, $5$ un $6$, 
 bet nedalās ar skaitļiem $7$, $8$ un $9$. 
@@ -1002,20 +1012,14 @@ questionType=Find.Count
 -----
 
 
-## Dalāmības pazīmes
+## Atrisinājums
 
 * $123456789$ ir nepāru skaitlis (pēdējais cipars)
 * $123456789$  arī dalās ar $9$ (ciparu summa)
 
 Ko var secināt par reizinājumu $(a+b)(b+c)(c+a)$? 
-
-* Izdevīgāk lietot pazīmes, ka reizinājums ar kaut ko *nedalās* 
+Izdevīgi lietot pazīmes, ka reizinājums ar kaut ko *nedalās* 
 (jo tad neviens reizinātājs nedalās). 
-
-
---
-
-## Paritāte
 
 Ja $(a + b)(b + c)(c + a)$ ir nepāru skaitlis, tad 
 
@@ -1030,7 +1034,7 @@ Iegūta pretruna: Ja $a$ ir pāru, tad $b$ ir nepāru, tad $c$ ir pāru, tad $a$
 -----
 
 
-# <lo-sample/> EE.PK.2013.8B.1 
+# <lo-sample/> EE.PK.2013.8.1 
 
 Doti seši pirmskaitļi $a$, $b$, $c$, $d$, $e$ un $f$, kuru reizinājums 
 ir pāru skaitlis. Zināms, ka skaitlis $c$ lielāks par skaitli $d$, bet
@@ -1079,7 +1083,7 @@ questionType=Find.Min
 
 -----
 
-## Dirihlē princips
+## Atrisinājums
 
 * Ievērojam, ka skaitļa kvadrāta atlikums, dalot ar $10$, atkarīgs tikai no paša skaitļa atlikuma.
 * Pārbaudām pilno kvadrātu atlikumus:
@@ -1102,12 +1106,12 @@ questionType=Find.Min
 -----
 
 
-# <lo-sample/> EE.PK.2014.7B.1 
+# <lo-sample/> EE.PK.2014.7.1 
 
 Dotajā reizināšanas piemērā atrast burtiem atbilstošos ciparus, 
 ja dažādiem burtiem atbilst dažādi cipari. 
 
-![rebuss](EE.PK.2014.7B.1.png)
+![rebuss](EE.PK.2014.7.1.png)
 
 
 <!--
@@ -1118,7 +1122,7 @@ questionType=Find.All
 -----
 
 
-# <lo-sample/> EE.PK.2014.8B.1 
+# <lo-sample/> EE.PK.2014.8.1 
 
 Uz tāfeles uzrakstīta izteiksme $m(m + n)(m + 3n)$.
 
@@ -1166,10 +1170,10 @@ concepts=divisibility
 questionType=Find.All
 -->
 
------
 
+## Atrisinājums
 
-## Par mazāko kopīgo dalāmo
+Izmantojam apgalvojumus par mazāko kopīgo dalāmo.
 
 * Prasības: $14 \cdot 20$ dalās ar $n$, $14n$ dalās ar $20$, $20n$ dalās ar $14$
 * $n$ ir $280$ dalītājs, vienlaikus $n$ dalās ar $2$, $5$, $7$. 
@@ -1185,7 +1189,7 @@ questionType=Find.All
 -----
 
 
-# <lo-sample/> EE.PK.2015.8B.1 
+# <lo-sample/> EE.PK.2015.8.1 
 
 Skaitli $2015$ var izteikt kā divu tādu naturālu skaitļu summu, 
 no kuriem pirmo skaitli iegūst, ja otrajā skaitlī nodzēš pēdējo ciparu. Atrast visus 
@@ -1201,9 +1205,12 @@ questionType=Find.All
 
 # <lo-sample/> EE.PK.2015.10.3
 
-(а) Zināms, ka $x^2 − y^2 = 100$, kur $x$ un $y$ ir naturāli skaitļi. Atrast izteiksmes 
-$x − y$ mazāko iespējamo vērtību.  
-(b) Tas pats jautājums, ja $x$ un $y$ ir veseli skaitļi.
+**(A)** 
+  Zināms, ka $x^2 − y^2 = 100$, kur $x$ un $y$ ir naturāli skaitļi. Atrast izteiksmes 
+  $x − y$ mazāko iespējamo vērtību.  
+
+**(B)** 
+  Tas pats jautājums, ja $x$ un $y$ ir veseli skaitļi.
 
 <small>
 
@@ -1229,18 +1236,18 @@ questionType=Find.Min
 -----
 
 
-## Dalīšana reizinātājos
+## Atrisinājums
 
 1. $x^2 - y^2$ dalās reizinātājos: $(x-y)(x+y)$. Lai iegūtu $100$, 
-gan $x-y$, gan $x+y$ ir $100$ dalītāji.
+   gan $x-y$, gan $x+y$ ir $100$ dalītāji.
 2. $x-y$ un $x+y$ ir vienāda paritāte; lai reizinājums būtu $100$, 
-tie abi ir pāru skaitļi. 
+   tie abi ir pāru skaitļi. 
 3. Aplūkojam visus gadījumus, kā $100$ var izteikt kā divu pāru 
-skaitļu reizinājumu: 
-$$2 \cdot 50 = 10 \cdot 10 = (-2) \cdot (-50) = (-10) \cdot (-10)$$
+   skaitļu reizinājumu: 
+   $$2 \cdot 50 = 10 \cdot 10 = (-2) \cdot (-50) = (-10) \cdot (-10)$$
 4. Citi veidi: $1 \cdot 100$, $4 \cdot 25$ vai $5 \cdot 20$ neder, 
-jo reizinātāju paritātes ir dažādas - neeksistēs veselos skaitļos atrisinājumi
-lineāru vienādojumu sistēmai  $x-y=1$ un $x+y=100$ utml.
+   jo reizinātāju paritātes ir dažādas - neeksistēs veselos skaitļos atrisinājumi
+   lineāru vienādojumu sistēmai  $x-y=1$ un $x+y=100$ utml.
 
 
 -----
@@ -1271,22 +1278,19 @@ questionType=ProveDisprove.Exists
 
 -----
 
-## Eksperimentēšana
+## Atrisinājums
 
-Definējam funkcijas:
+Lai eksperimentētu, definējam funkcijas:
 
 * $N(n)$ - cik daudziem skaitļiem no $1$ līdz $n$ ciparu summa ir nepāru skaitlis
 * $P(n)$ - cik daudziem skaitļiem no $1$ līdz $n$ ciparu summa ir pāru skaitlis
 * $f(n) = N(n) - P(n)$ - par cik nepāru ciparu summu bija vairāk nekā
-pāru ciparu summu skaitļiem intervālā $[1;n]$.
+  pāru ciparu summu skaitļiem intervālā $[1;n]$.
 
 **Apgalvojums:** Visiem $n$ ir spēkā $f(n) \geq 0$. T.i. vienmēr $N(n) \geq P(n)$. 
 
 
---
-
-## Induktīvā pāreja
-
+**Induktīvā pāreja:**
 Aplūkojam $f(n)$ vērtības dažiem pirmajiem $n$: 
 
 <table>
@@ -1317,7 +1321,7 @@ Tālāk - tiem $n$, kas dalās ar $10$.
 -----
 
 
-# <lo-sample/> EE.PK.2016.7B.3 
+# <lo-sample/> EE.PK.2016.7.3 
 
 Par četriem veseliem skaitļiem $a$, $b$, $c$ un $d$ zināms, ka 
 
@@ -1335,7 +1339,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2016.8B.2 
+# <lo-sample/> EE.PK.2016.8.2 
 
 Uzņēmējam bankas kontā bija $x$ eiro un $y$ eirocenti, turklāt 
 $x$ dalījās ar $7$, bet $y$ dalījās ar $3$. Pēc tam, kad viņš 
@@ -1355,8 +1359,9 @@ questionType=Find.All
 
 Vai var atrast tādus $n$ naturālus skaitļus, lai to summa 
 būtu vienāda ar to mazāko kopīgo dalāmo, ja 
-a) $n = 2$?  
-b) $n = 3$?
+
+(A) $n = 2$?  
+(B) $n = 3$?
 
 <small>
 
@@ -1379,24 +1384,22 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
+## Atrisinājums
 
-## Pārtulkojam apgalvojumu algebriski
+Pārtulkojam apgalvojumu algebriski
 
 **Gadījums n=2:**
 
 * Apzīmējam abu skaitļu $a,b$ mazāko kopīgo dalāmo ar $m$. 
 * Tad $m = xa$ un $m = yb$. Ja nu $m=a+b$, tad $m = m/x+m/y$ jeb
-$$1 = \frac{1}{x} + \frac{1}{y}.$$
+  $$1 = \frac{1}{x} + \frac{1}{y}.$$
 
 Šim vienādojumam nav atrisinājumu veselos skaitļos $x,y$, 
 jo nevar izvēlēties $x=y=2$ (šādā gadījumā $a=b$ un to 
 MKD nebūs divreiz lielāks).
 
 
---
-
-## Gadījums n=3
+**Gadījums n=3:**
 
 * Līdzīgi kā iepriekš apzīmējam $m=\mbox{MKD}(a,b,c)$. 
 * Apzīmējam $m=xa$, $m=yb$, $m=zc$.
@@ -1404,8 +1407,7 @@ MKD nebūs divreiz lielāks).
 
 $$1 = \frac{1}{x} + \frac{1}{y} + \frac{1}{z}.$$
 
-* Var izvēlēties $x=2$, $y=3$ un $z=6$. Ja $m=30$, tad
-$(a,b,c)=(15,10,5)$.  
+* Var izvēlēties $x=2$, $y=3$ un $z=6$. Ja $m=30$, tad $(a,b,c)=(15,10,5)$.  
 * Šis piemērs der, jo $\mbox{MKD}(15,10,5)=30$ un $15+10+5=30$.
 
 
@@ -1443,7 +1445,9 @@ questionType=ProveDisprove.Exists
 -----
 
 
-## Algebriski pārveidojumi nevienādībai
+## Atrisinājums
+
+Algebriski pārveidojumi nevienādībai
 
 $$2x^2 + 2y^2 + 2z^2 + 2w^2 = 6 + 2xy + 2yz + 2zw$$
 $$x^2+(x^2 - 2xy + y^2) + \ldots + (z^2 - 2zw + w^2) + w^2 = 6.$$
@@ -1461,7 +1465,7 @@ neviens no šiem kvadrātiem nevar būt $2^2$ vai lielāks.
 -----
 
 
-# <lo-sample/> EE.PK.2017.7B.1 
+# <lo-sample/> EE.PK.2017.7.1 
 
 Vienā virknē uzrakstīti $7$ naturāli skaitļi, no kuriem pirmais 
 ir $a$ un otrais $b$. Katru nākamo skaitli šajā virknē 
@@ -1469,7 +1473,7 @@ iegūst, saskaitot divus skaitļus, kuri ir tieši pirms viņa.
 
 1. Atrast pēdējo skaitli virknē, izsakot to ar $a$ un $b$.
 2. Atrast lielāko iespējamo $a$ vērtību, ja zināms, ka virknē pēdējais
-skaitlis ir $2017$. 
+   skaitlis ir $2017$. 
 
 
 <!--
@@ -1481,7 +1485,7 @@ questionType=Find.All,Find.Max
 -----
 
 
-# <lo-sample/> EE.PK.2017.8B.1 
+# <lo-sample/> EE.PK.2017.8.1 
 
 Daļas $\frac{1}{2}$ skaitītājam atļauts pieskaitīt jebkuru skaitu divnieku, 
 bet saucējam atļauts pieskaitīt jebkuru skaitu trijnieku. Vai iespējams rezultātā
@@ -1528,19 +1532,15 @@ questionType=Find.All
 
 -----
 
-## Dalām pirmreizinātājos
+## Atrisinājums
 
-Abās vienādojuma pusēs ir daži salikti skaitļi - 
+Dalām pirmreizinātājos. Abās vienādojuma pusēs ir daži salikti skaitļi - 
 $324$ un $4$. 
 
-1. Sadalām skaitli $324$ pirmreizinātājos:  
-$324=18 \cdot 18=(2 \cdot 3^2)^2 = 2^2 \cdot 3^4.$
-2. Sadalām arī $4$ pirmereizinātājos:  
-$4 = 2^2$. 
+1. Sadalām skaitli $324$ pirmreizinātājos: $324=18 \cdot 18=(2 \cdot 3^2)^2 = 2^2 \cdot 3^4.$
+2. Sadalām arī $4$ pirmereizinātājos: $4 = 2^2$. 
 
---
-
-## Pielīdzinām pirmskaitļu kāpinātājus
+**Pielīdzinām pirmskaitļu kāpinātājus:**
 
 Pārrakstām uzdevuma vienādojumu: 
 $$(2^2 \cdot 3^4)^{x+y} = 2^{x−y} \cdot 3^{x−3} \cdot (2^2)^{y−4}$$
@@ -1555,9 +1555,7 @@ $$\left\{ \begin{array}{l}
 \right.$$
 
 
---
-
-## Risinām lineāru sistēmu
+**Risinām lineāru sistēmu:**
 
 $$\left\{ \begin{array}{l}
 x+y = -8 \\
@@ -1601,33 +1599,28 @@ questionType=Prove.Other
 
 -----
 
-## Papildu pieņēmumi (simetrija)
+## Atrisinājums
+
+**Papildu pieņēmumi (simetrija):** 
 
 Tā kā visi skaitļi ir dažādi, tad varam ieviest apzīmējumus tā, 
 ka $\frac{1}{a} > \frac{1}{b} > \frac{1}{c} > \frac{1}{d}$ un 
 visas starpības ir pozitīvas. 
-
 Ja starpības patiesībā ir negatīvas, tad aizstājam $(a,b,c,d)$ ar
 pretējā secībā pārrakstītu skaitļu četrinieku $(d,c,b,a)$. 
-
 Varam tātad pieņemt, ka $a < b < c < d$ un tad tiem 
 apgrieztie skaitļi veido dilstošu aritmētisku progresiju. 
 
-
---
-
-## Sākam ievietot vērtības skaitlim a
+**Apskatām skaitļa "a" vērtības:**
 
 * Ja $a=2$, tad nesanāk, jo pat tuvākā starpība: $\frac{1}{2}-\frac{1}{3}$
-jeb aritmētiskās progresijas diference ir $1/6$ un no $\frac{1}{2}$ to 
-nevar atņemt trīsreiz, lai rezultāts joprojām būtu pozitīvs.
+  jeb aritmētiskās progresijas diference ir $1/6$ un no $\frac{1}{2}$ to 
+  nevar atņemt trīsreiz, lai rezultāts joprojām būtu pozitīvs.
 * Ja $a=3$, tad sanāk progresija: 
-$$\frac{1}{3},\frac{1}{4},\frac{1}{6},\frac{1}{12}$$
+  $$\frac{1}{3},\frac{1}{4},\frac{1}{6},\frac{1}{12}$$
 
 
---
-
-## Izmantojam linearitāti
+**Izmantojam linearitāti:** 
 
 Eksistējošu atrisinājumu var piereizināt
 ar vienu un to pašu skaitli $m$: 
@@ -1636,11 +1629,6 @@ No
 $$\frac{1}{a} - \frac{1}{b} =\frac{1}{b} - \frac{1}{c} =\frac{1}{c} - \frac{1}{d}.$$
 izriet, ka arī
 $$\frac{1}{ma} - \frac{1}{mb} =\frac{1}{mb} - \frac{1}{mc} =\frac{1}{mc} - \frac{1}{md}.$$
-
-
---
-
-## Atbildes
 
 Tātad bez $(a,b,c,d)=(3,4,6,12)$ var ņemt arī 
 $(a,b,c,d)=(6,8,12,24)$, utt.
@@ -1684,7 +1672,9 @@ questionType=Find.All
 -----
 
 
-## Vienādojuma sastādīšana
+## Atrisinājums
+
+Ieviešam mainīgo un sastādām vienādojumu
 
 * $x$ ... tāds bija Mari iedomātais skaitlis. 
 * Tad $3x=\overline{abc}$ un $4x=\overline{cab}$. 
@@ -1696,12 +1686,9 @@ $$40x - 3x = \overline{cab0}-\overline{abc}=\overline{c000} - c = 999\cdot{}c.$$
 Iegūstam, ka $37x = 999c$ jeb $x = 27c$, kur $c$ ir cipars. 
 
 
---
+**Gadījumu pārlase:**
 
-## Gadījumu pārlase
-
-* Cipars $c \neq 0$, jo citādi 
-$\overline{cab}$ nebūtu trīsciparu. 
+* Cipars $c \neq 0$, jo citādi $\overline{cab}$ nebūtu trīsciparu. 
 * Cipars $c \neq 1$, jo $3 \cdot 27 = 81$ nav trīsciparu.
 * Astoņas citas vērtības $c=2,3,4,5,6,7,8,9$ der. 
 
@@ -1730,7 +1717,7 @@ pēdējo ciparu uz sākumu.
 
 -----
 
-# <lo-sample/> EE.PK.2019.7B.1
+# <lo-sample/> EE.PK.2019.7.1
 
 Sven's uzrakstījis burtnīcā skaitļus $2, 3, 5, 7, 8, 10, 11$ 
 tādā secībā, ka pirmo četru skaitļu summa vienāda ar pēdējo 
@@ -1751,8 +1738,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> EE.PK.2019.8B.1
-
+# <lo-sample/> EE.PK.2019.8.1
 
 Esta izvēlējās divus naturālus skaitļus. Vienu no tiem viņa pareizināja 
 ar $20$, bet otru – ar $19$. Iegūto reizinājumu summa vienāda ar $292$. 
@@ -1802,7 +1788,7 @@ questionType=Find.Count
 
 -----
 
-## Lielākā iespējamā a vērtība
+## Atrisinājums
 
 Iedomāsimies, ka vispirms vēlamies atrast lielāko 
 iespējamo $a$ un mazāko $b$. T.i. cik reizes saskaitāmo 
@@ -1810,27 +1796,24 @@ $22$ var iekļaut garajā summā, kas ir $2019$.
 
 $$2019:22\;=\;91,\,\mbox{Atl.}17$$
 
-* Acīmredzot, $17$ nedalās ar $15$, t.i. pie $a=91$ vienādojumu 
-atrisināt nevar. 
+* Acīmredzot, $17$ nedalās ar $15$, t.i. pie $a=91$ vienādojumu atrisināt nevar. 
 * Pakāpeniski samazinām $a$ par $k=1,2,\ldots$.
 * Gaidām brīdi, kad $17+22k$ jeb $17+7k$ dalās ar $15$. 
 * Pie $k=4$ izteiksme $17 + 7\cdot{}4=17+28=45$ dalās ar $15$.
 * Tātad, $a=91$ jāsamazina par $4$, t.i. der $a=87$. 
 
 
---
-
-## 2 pretējas aritmētiskas progresijas
+Veidojam 2 pretējas aritmētiskas progresijas:
 
 Pirmais atrisinājums ir $(a,b)=(87,7)$, jo 
 $$87\cdot{}22+7\cdot{}15=2019$$. 
 
 * Aritmētiskajā progresijā $c_k=2019-15k$ katrs $22$-tais loceklis
-dalās ar $22$, jo diference $-15$ ir savstarpējs pirmskaitlis ar $22$. 
+  dalās ar $22$, jo diference $-15$ ir savstarpējs pirmskaitlis ar $22$. 
 * Tātad, der $b=7,29,51,\ldots$ savukārt $a$ vērtībai (ja $b$ pieaug
-par $22$) ir jāsamazinās par $15$, lai summa nemainītos. 
+  par $22$) ir jāsamazinās par $15$, lai summa nemainītos. 
 * Iegūstam atrisinājumus $(a;b)$:
-$$(87;7),\;(72;29),\;(57;51),\;(42;73),\;(27;95),\;(12;117).$$
+  $$(87;7),\;(72;29),\;(57;51),\;(42;73),\;(27;95),\;(12;117).$$
 
 
 

@@ -44,12 +44,28 @@
             </div>
             <h2> Olimpiāde: {{ country_id }}.{{ olympiad_id }} </h2>
             <p>Olimpiādes uzdevumi pa gadiem un klasēm</p>
+
+            <table>
+            {% for year in all_years %}
+            <tr>
+                <th style="font-weight:bold">{{ year }}:&nbsp;</th>
+                <td>
+                    {% for grade in range(5,13) %}
+                    {% if all_grades[year][grade-5] != 'NA' %}
+                    <a href="{{ url_for('getGrades',year=year,grade=grade,country=country_id,olympiad=olympiad_id) }}">G{{ grade }}</a>
+                    {% endif %}
+                    {% endfor %}
+                </td>
+            </tr>
+            {% endfor %}
+            </table>
+
+            {#
             <table border="1" cellspacing="0">
                 {% for year in all_years %}
                 <tr>
                     <th>{{ year }}</th>
-                    {% for grade in range(5,13) %}
-                    {% if all_grades[year][grade-5] != 'NA' %}
+                    {% for grade in range(5,13) %}{% if all_grades[year][grade-5] != 'NA' %}
                     <td><a href="{{ url_for('getGrades',year=year,grade=grade,country=country_id,olympiad=olympiad_id) }}">Klase: {{ grade }}</a></td>
                     {% else %}
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -58,6 +74,7 @@
                 </tr>
                 {% endfor %}
             </table>
+            #}
         </div>
         </div>
 

@@ -51,14 +51,22 @@
             <h2> {{ year }}.gada {{ grade }}. klases uzdevumi </h2>
             <p> Visi uzdevumi, kas ir zem šīs olimpiādes, klases un gada </p>
             {% for problem in problems %}
+
+            <h3 style="font-size: 120%; color: #1565C0;">{{ problem.problemid }}</h3>
+            {#
             <h3>{{ problem.problem_number }}. uzdevums</h3>
             <p> Uzdevuma ID: <a href="{{ url_for('getProblem',problemid=problem.problemid) }}">
                     {{ problem.problemid }}
                 </a> </p>
+            #}
+
             {{ problem.text | safe }}
             {% if problem.imagefile != '' %}
             <p><img src="http://www.dudajevagatve.lv/static/eliozo/images/{{ problem.imagefile }}" width="250"/></p>
             {% endif %}
+            <p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">
+                    Vairāk...
+            </a></p>
             {% endfor %}
         </div>
     </div>

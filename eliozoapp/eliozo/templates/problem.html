@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
   <title>Uzdevums</title>
+    <style>
+    .solution {
+        display: none;
+    }
+</style>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
@@ -58,6 +63,28 @@
   {% if image_src != '' %}
   <p><img src="http://www.dudajevagatve.lv/static/eliozo/images/{{ image_src }}"/></p>
   {% endif %}
+
+
+  {% if solutionText != ''%}
+    <p><a href="#" id="toggleSolutionLink">Show Solution</a></p>
+
+    <div id="solutionDiv" class="solution">{{solutionText | safe}}</div>
+
+    <script>
+    document.getElementById('toggleSolutionLink').addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent the default anchor action
+        var solutionDiv = document.getElementById('solutionDiv');
+        if (solutionDiv.style.display === 'none' || solutionDiv.style.display === '') {
+            solutionDiv.style.display = 'block';
+            this.textContent = 'Hide Solution';
+        } else {
+            solutionDiv.style.display = 'none';
+            this.textContent = 'Show Solution';
+        }
+    });
+    </script>
+  {% endif %}
+
   {% if hasVideo %}
   <table border="1" cellspacing="0" style="border:1px solid #eeeeee; width:80%; margin-left:5%">
     <tr>
