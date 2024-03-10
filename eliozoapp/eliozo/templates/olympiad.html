@@ -52,29 +52,13 @@
                 <td>
                     {% for grade in range(5,13) %}
                     {% if all_grades[year][grade-5] != 'NA' %}
-                    <a href="{{ url_for('getGrades',year=year,grade=grade,country=country_id,olympiad=olympiad_id) }}">G{{ grade }}</a>
+                    <a href="{{ url_for('getGrades',year=year,grade=grade,country=country_id,olympiad=olympiad_id) }}">{{ grade }}</a>
                     {% endif %}
                     {% endfor %}
                 </td>
             </tr>
             {% endfor %}
             </table>
-
-            {#
-            <table border="1" cellspacing="0">
-                {% for year in all_years %}
-                <tr>
-                    <th>{{ year }}</th>
-                    {% for grade in range(5,13) %}{% if all_grades[year][grade-5] != 'NA' %}
-                    <td><a href="{{ url_for('getGrades',year=year,grade=grade,country=country_id,olympiad=olympiad_id) }}">Klase: {{ grade }}</a></td>
-                    {% else %}
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                    {% endif %}
-                    {% endfor %}
-                </tr>
-                {% endfor %}
-            </table>
-            #}
         </div>
         </div>
 

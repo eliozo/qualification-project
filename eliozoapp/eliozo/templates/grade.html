@@ -53,12 +53,6 @@
             {% for problem in problems %}
 
             <h3 style="font-size: 120%; color: #1565C0;">{{ problem.problemid }}</h3>
-            {#
-            <h3>{{ problem.problem_number }}. uzdevums</h3>
-            <p> Uzdevuma ID: <a href="{{ url_for('getProblem',problemid=problem.problemid) }}">
-                    {{ problem.problemid }}
-                </a> </p>
-            #}
 
             {{ problem.text | safe }}
             {% if problem.imagefile != '' %}

@@ -243,6 +243,35 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad):
 
     return x.text
 
+def getSPARQLBook(bookid):
+    url = FUSEKI_URL
+    myobj = {'query' : '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
+    SELECT ?text ?problemid ?problem_number ?imagefile WHERE {
+  ?problem eliozo:problemText ?text .
+  ?problem eliozo:problemID ?problemid .
+  ?problem eliozo:problem_number ?problem_number .
+  ?problem eliozo:olympiadCode "NA" .
+  OPTIONAL {
+    ?problem eliozo:image ?imagefile .
+  } .
+} ORDER BY ?problem_number'''
+    }
+
+    print('**********myobj={}'.format(myobj))
+
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+
+    x = requests.post(url, myobj, head)
+
+    print(x.text)
+
+    return x.text
+              
+
+
 def getSPARQLVideoBookmarks(problemid):
     # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     url = FUSEKI_URL
@@ -464,6 +493,31 @@ def create_app(test_config=None):
             'skill_list' : skill_list
         }
         return render_template('skill_tasks.html', **template_context)
+    
+    @app.route('/book_problems', methods=['GET', 'POST'])
+    def getBook():
+        bookid = request.args.get('book_id')
+        link = json.loads(getSPARQLBook(bookid))
+
+        problems = []
+        
+        for item in link['results']['bindings']:
+            problem_id_value = item['problemid']['value']
+            problem_imagefile = ''
+            if 'imagefile' in item:
+                problem_imagefile = item['imagefile']['value']
+            problem_number_value = item['problem_number']['value']
+            problem_text_value = mathBeautify(item['text']['value'])
+            d = {'problemid': problem_id_value, 'problem_number':problem_number_value, 'text': problem_text_value, 'imagefile': problem_imagefile}
+            problems.append(d)
+
+
+        template_context = {
+            'problems': problems,
+            'bookid' : bookid
+        }
+
+        return render_template('book_problems.html', **template_context)
 
 
     @app.route('/problem', methods=['GET','POST'])
