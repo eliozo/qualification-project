@@ -136,7 +136,33 @@ WHERE {
  '''
 
 }
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
 
+    x = requests.post(url, myobj, head)
+
+    print(x.text)
+
+    return x.text
+
+def getProblemsByKeywordSPARQL(keyword):
+    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+    url = FUSEKI_URL
+    myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
+    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
+    'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
+    '''SELECT DISTINCT ?problem ?problemid ?text ?grade ?imagefile
+WHERE {
+    ?problem
+             eliozo:problemID ?problemid ;
+             eliozo:problemText ?text ;
+             eliozo:problemGrade ?grade .
+    OPTIONAL {
+        ?problem eliozo:image ?imagefile .
+    } .
+    FILTER(contains(lcase(?text), "'''+keyword+'''"))
+} ORDER BY ?problemid
+  LIMIT 10'''
+}
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
 
     x = requests.post(url, myobj, head)
@@ -350,9 +376,44 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+    def replace_non_ascii_with_unicode_escape(text):
+        non_ascii_characters = {'ā': '\\u0101', 'č': '\\u010D', 'ē': '\\u0113', 'ģ': '\\u0123', 'ī': '\\u012B',
+                            'ķ': '\\u0137', 'ļ': '\\u013C', 'ņ': '\\u0146', 'š': '\\u0161', 'ū': '\\u016B',
+                            'ž': '\\u017E'}
+        replaced_text = ''
+        for char in text:
+            if char in non_ascii_characters:
+                replaced_text += non_ascii_characters[char]
+            else:
+                replaced_text += char
+        return replaced_text
+
     @app.route('/')
     def main():
-        return render_template('main.html')
+        keyword = request.args.get('keyword')
+        if keyword is None or keyword == "":
+            return render_template('main.html')
+        new_keyword = replace_non_ascii_with_unicode_escape(keyword)
+        link = json.loads(getProblemsByKeywordSPARQL(new_keyword))
+
+        problems = []
+        
+        for item in link['results']['bindings']:
+            problem_id_value = item['problemid']['value']
+            problem_imagefile = ''
+            if 'imagefile' in item:
+                problem_imagefile = item['imagefile']['value']
+            problem_text_value = mathBeautify(item['text']['value'])
+            d = {'problemid': problem_id_value, 'text': problem_text_value, 'imagefile': problem_imagefile}
+            problems.append(d)
+
+
+        template_context = {
+            'problems': problems,
+            'keyword' : keyword
+        }
+
+        return render_template('main.html', **template_context)
 
     # json 
     @app.route("/json")
