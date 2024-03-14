@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
   <title>Olimpiādes</title>
+    <style>
+      dl.olympiads  dt {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 2px;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+}
+    </style>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
@@ -43,12 +52,33 @@
       {{jsonfile}}
     </div>
 
-      <dl>
+      {#
+- **Latvia (Forest Green):** `#228B22`
+- **Lithuania (Amber Gold):** `#FFBF00`
+- **Estonia (Sea Blue):** `#006994`
+      #}
+
+      <dl class="olympiads">
     {% for link in links %}
-
-    <dt><a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName['value'] }}</a></dt>
+          {% set first_two = link.olympiadName['value'][:2] %}
+          {% if first_two == 'EE' %}
+          <dt style="border-color: #006994;">
+              <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName['value'] }}</a>
+          </dt>
+          {% elif first_two == 'LV' %}
+          <dt style="border-color: #228B22;">
+              <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName['value'] }}</a>
+          </dt>
+          {% elif first_two == 'LT' %}
+          <dt style="border-color: #FFBF00;">
+              <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName['value'] }}</a>
+          </dt>
+          {% else %}
+          <dt style="border-color: black;">
+              <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName['value'] }}</a>
+          </dt>
+          {% endif %}
           <dd style="margin-left:20px">{{ link.olympiadDescription['value'] }}</dd>
-
     {% endfor %}
 
           </dl>
