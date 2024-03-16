@@ -1,0 +1,32 @@
+{% extends 'global.html' %}
+
+{% block content %}
+       <div class="col-sm-8 text-left">
+           <a href="{{ url_for('main') }}"class="button">Atpakaļ</a>
+           <div class="container">
+               {{jsonfile}}
+           </div>
+
+           <table class="tasks">
+        <colgroup>
+            <col class="aaa">
+            <col class="bbb">
+            <col class="ccc">
+        </colgroup>
+        <tbody>
+            <tr>
+                <th>Tēmas nosaukums</th>
+                <th>Apraksts</th>
+                <th>Piemēri</th>
+            </tr>
+            {% for skill in all_topics %}
+            <tr class="{{ loop.cycle('odd', 'even') }}">
+                <td>{{skill}}</a></td>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+        </div>
+{% endblock %}

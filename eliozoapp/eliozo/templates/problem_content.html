@@ -1,62 +1,22 @@
-<!DOCTYPE html>
-<html>
+{% extends 'global.html' %}
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta charset="UTF-8" />
-  <title>Uzdevums</title>
-    <style>
-    .solution {
-        display: none;
-    }
-</style>
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+{% block content %}
+<div class="col-sm-8 text-left">
 
- <!-- Load MathJax 3 with TeX input and HTML-CSS output -->
- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
- <!--[if lt IE 9]>
-     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
- <![endif]-->
-
-</head>
-
-<body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ url_for('main') }}" style="padding: 5px 5px"><a href="{{ url_for('main') }}"><img src="{{ url_for('static',filename='nms-logo.png') }}" style="width:80px;" alt="NMS-logo"></a></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="{{ url_for('main') }}">Sākumlapa</a></li>
-                <li><a href="{{ url_for('getOlympiads') }}">Olimpiāžu arhīvs</a></li>
-                <li><a href="{{ url_for('getSkills') }}">Prasmes</a></li>
-                <li><a href="{{ url_for('getVideo') }}">Video atrisinājumi</a></li>
-                <li><a href="{{ url_for('getInfo') }}">Bibliogrāfija</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<a href="{{ url_for('getSkills') }}" class="button">Atpakaļ</a>
+    <a href="{{ url_for('getSkills') }}" class="button">Atpakaļ</a>
   <div class="container">
     {{jsonfile}}
   </div>
-  <h3 style="margin-left:5%">Uzdevums: {{ problemid }} </h3>
-  <p style="margin-left:5%"> Klase {{ data[0].grade.value }}</p>
+
+    <h3 style="margin-left:5%">{{ problemid }} </h3>
+
+    <p style="margin-left:5%"> Klase {{ data[0].grade.value }}</p>
   <p style="margin-left:5%"> Gads: {{ data[0].year.value }}</p>
   {% if data[0].skill is defined %}
   <p style="margin-left:5%"> Prasmes: {% for item in data %}
     <a href="{{ url_for('getSkill',skillIdentifier=item.skillIdentifier.value) }}">{{ item.skillIdentifier.value }} </a>
     &nbsp;
-    {% endfor %}  
+    {% endfor %}
   </p>
   {% endif %}
   <p style="margin-left:5%"> {{ text | safe }}</p>
@@ -151,8 +111,6 @@
         </td>
     </tr>
 </table>
-
-  {% endif %}
-</body>
-
-</html>
+      {% endif %}
+</div>
+{% endblock %}

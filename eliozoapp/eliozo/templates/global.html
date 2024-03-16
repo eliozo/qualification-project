@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bibliogrāfija</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Load MathJax 3 with TeX input and HTML-CSS output -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
+    <style>
+            body {
+    background-color: #f9f9f9; /* Slightly off-white color */
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border: none;
+    margin-top: 12px; /* Adds margin to the top of the navbar */
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    background-color: #FFFFFF; /* Pure white background for each link */
+    border-radius: 20px; /* Adjust this value to control the roundness of the 'buttons' */
+    color: #333; /* Text color, can be adjusted as needed */
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin: 4px; /* Adds some space around each link */
+    padding: 10px 15px; /* Padding inside each link, making it appear larger */
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: #555; /* Slightly darker text on hover/focus for better accessibility */
+    background-color: #e7e7e7; /* Light grey background on hover/focus */
+}
+
+/* Additional styling to make sure the dropdown works nicely on mobile */
+.navbar-inverse .navbar-toggle {
+    border: none;
+    color: #333; /* Set the color of the 'hamburger' icon */
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        background-color: #FFFFFF; /* Ensure dropdown links on mobile also adhere to the styling */
+        color: #333;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+}
+
+dl.olympiads  dt {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 2px;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+}
+
+
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}"/>
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ url_for('main') }}" style="padding: 5px 5px"><a
+                    href="{{ url_for('main') }}"><img src="{{ url_for('static',filename='nms-logo.png') }}"
+                                                      style="width:80px;" alt="NMS-logo"></a></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="{{ 'active' if active == 'main' else '' }}"><a href="{{ url_for('main') }}">Sākumlapa</a>
+                </li>
+                <li class="{{ 'active' if active == 'olympiads' else '' }}"><a href="{{ url_for('getOlympiads') }}">Olimpiāžu
+                    arhīvs</a></li>
+                <li class="{{ 'active' if active == 'skills' else '' }}"><a
+                        href="{{ url_for('getSkills') }}">Prasmes</a></li>
+                <li class="{{ 'active' if active == 'topics' else '' }}"><a href="{{ url_for('getTopics') }}">Tēmas</a>
+                </li>
+                <li class="{{ 'active' if active == 'video' else '' }}"><a href="{{ url_for('getVideo') }}">Video
+                    atrisinājumi</a></li>
+                <li class="{{ 'active' if active == 'info' else '' }}"><a
+                        href="{{ url_for('getInfo') }}">Bibliogrāfija</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid text-center mycontainer" style="padding-left: 12px; padding-top: 12px;">
+    {% block content %}{% endblock %}
+</div>
+</body>
+</html>

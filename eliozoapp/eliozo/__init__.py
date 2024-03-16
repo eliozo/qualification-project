@@ -392,7 +392,10 @@ def create_app(test_config=None):
     def main():
         keyword = request.args.get('keyword')
         if keyword is None or keyword == "":
-            return render_template('main.html')
+            template_context = {
+                'active': 'main'
+            }
+            return render_template('main_content.html',  **template_context)
         new_keyword = replace_non_ascii_with_unicode_escape(keyword)
         link = json.loads(getProblemsByKeywordSPARQL(new_keyword))
 
@@ -410,10 +413,11 @@ def create_app(test_config=None):
 
         template_context = {
             'problems': problems,
-            'keyword' : keyword
+            'keyword' : keyword,
+            'active': 'main'
         }
 
-        return render_template('main.html', **template_context)
+        return render_template('main_content.html', **template_context)
 
     # json 
     @app.route("/json")
@@ -425,7 +429,12 @@ def create_app(test_config=None):
 
     @app.route("/info")
     def getInfo():
-        return render_template("info.html")
+        # return render_template("info.html")
+        template_context = {
+            'active': 'info'
+        }
+        return render_template('info_content.html', **template_context)
+
 
     @app.route("/video")
     def getVideo():
@@ -438,7 +447,8 @@ def create_app(test_config=None):
             all_problemids.append(problem_id_with_video)
 
         template_context = {
-            'all_problemids' : all_problemids
+            'all_problemids' : all_problemids,
+            'active': 'video'
         }
 
         # problemid = request.args.get('problemid')
@@ -468,7 +478,7 @@ def create_app(test_config=None):
         #     'youtubeID': youtubeID,
         # }
 
-        return render_template('video.html', **template_context)
+        return render_template('video_content.html', **template_context)
 
     @app.route('/skills', methods=['GET','POST'])
     def getSkills():
@@ -502,10 +512,11 @@ def create_app(test_config=None):
 
         template_context = {
             'all_skills': all_skills,
-            'all_skill_info' : all_skill_info
+            'all_skill_info' : all_skill_info,
+            'active': 'skills'
         }
 
-        return render_template('skills.html', **template_context)
+        return render_template('skills_content.html', **template_context)
 
 
     @app.route('/topics', methods=['GET','POST'])
@@ -526,9 +537,10 @@ def create_app(test_config=None):
 
         template_context = {
             'all_topics': topic_list,
-            'tree': myTree
+            'tree': myTree,
+            'active': 'topics'
         }
-        return render_template('topics.html', **template_context)
+        return render_template('topics_content.html', **template_context)
 
     @app.route('/skill_tasks', methods=['GET','POST']) # Kontrolieris, kas iegūst prasmes kopā ar uzdevumiem
     def getSkill():
@@ -551,9 +563,10 @@ def create_app(test_config=None):
         template_context = {
             'skill': skill,
             'problem_list': problem_list,
-            'skill_list' : skill_list
+            'skill_list' : skill_list,
+            'active': 'skills'
         }
-        return render_template('skill_tasks.html', **template_context)
+        return render_template('skill_tasks_content.html', **template_context)
     
     @app.route('/book_problems', methods=['GET', 'POST'])
     def getBook():
@@ -575,10 +588,11 @@ def create_app(test_config=None):
 
         template_context = {
             'problems': problems,
-            'bookid' : bookid
+            'bookid' : bookid,
+            'active': 'olympiads'
         }
 
-        return render_template('book_problems.html', **template_context)
+        return render_template('book_problems_content.html', **template_context)
 
 
     @app.route('/problem', methods=['GET','POST'])
@@ -634,9 +648,10 @@ def create_app(test_config=None):
             'bookmarks': bookmarks,
             'youtubeID': youtubeID,
             'image_src' : image_src,
-            'solutionText': solutionText
+            'solutionText': solutionText,
+            'active': 'olympiads'
         }
-        return render_template('problem.html', **template_context)
+        return render_template('problem_content.html', **template_context)
 
 
     @app.route('/olympiads', methods=['GET', 'POST'])
@@ -652,10 +667,11 @@ def create_app(test_config=None):
             olympiadData.append({'olympiadName': olympiadName, 'olympiadDescription': olympiadDescription, 'olympiadCountry':olympiadCountry, 'olympiadCode': olympiadCode})
 
         template_context = {
-            'links': olympiadData
+            'links': olympiadData,
+            'active': 'olympiads'
         }
 
-        return render_template('olympiads.html', **template_context)
+        return render_template('olympiads_content.html', **template_context)
 
     @app.route('/olympiad', methods=['GET', 'POST'])
     def getOlympiad():
@@ -686,10 +702,11 @@ def create_app(test_config=None):
             'all_years': all_years,
             'all_grades': all_grades,
             'country_id': country_id,
-            'olympiad_id': olympiad_id          
+            'olympiad_id': olympiad_id,
+            'active': 'olympiads'
         }
         # Kontrolieris izlemj, uz kuru skatu sūtīs klientu
-        return render_template('olympiad.html', **template_context)
+        return render_template('olympiad_content.html', **template_context)
 
 #year, country, grade, olympiad
     @app.route('/grade', methods=['GET', 'POST'])
@@ -719,10 +736,11 @@ def create_app(test_config=None):
             'year': year,
             'country': country,
             'grade': grade,
-            'olympiad': olympiad
+            'olympiad': olympiad,
+            'active': 'olympiads'
         }
 
-        return render_template('grade.html', **template_context)
+        return render_template('grade_content.html', **template_context)
 
     # register the database commands
 

@@ -1,0 +1,23 @@
+{% extends 'global.html' %}
+
+{% block content %}
+       <div class="col-sm-8 text-left">
+           <a href="{{ url_for('getSkills') }}" class="button">Atpakaļ</a>
+  <div class="container">
+    {{jsonfile}}
+  </div>
+  <h2>{{ skill }}</h2>
+  <ol>
+    {% for skill in skill_list %}
+    <li>
+      <a href="{{ url_for('getSkill',skillIdentifier=skill.prefLabel)}}">{{ skill.prefLabel }}</a>: {{ skill.desc }}
+    </li>
+    {% endfor %}
+  </ol>
+  <hr style="width:60%; color:black;">
+  {% for problem in problem_list %}
+  <h3 style="margin-left:5%; font-size: 120%; color: #1565C0;">{{ problem.problemid }}</h3>
+  <p style="margin-left:5%"> {{ problem.text |safe }}</p>
+  {% endfor %}
+        </div>
+{% endblock %}

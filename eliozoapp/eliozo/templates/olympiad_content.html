@@ -1,0 +1,28 @@
+{% extends 'global.html' %}
+
+{% block content %}
+       <div class="col-sm-8 text-left">
+                      <a href="{{ url_for('getOlympiads') }}" class="button">Atpakaļ</a>
+            <div class="container">
+                {{jsonfile}}
+            </div>
+            <h2> Olimpiāde: {{ country_id }}.{{ olympiad_id }} </h2>
+            <p>Olimpiādes uzdevumi pa gadiem un klasēm</p>
+
+            <table>
+            {% for year in all_years %}
+            <tr>
+                <th style="font-weight:bold">{{ year }}:&nbsp;</th>
+                <td>
+                    {% for grade in range(5,13) %}
+                    {% if all_grades[year][grade-5] != 'NA' %}
+                    <a href="{{ url_for('getGrades',year=year,grade=grade,country=country_id,olympiad=olympiad_id) }}">{{ grade }}</a>
+                    {% endif %}
+                    {% endfor %}
+                </td>
+            </tr>
+            {% endfor %}
+            </table>
+
+         </div>
+{% endblock %}

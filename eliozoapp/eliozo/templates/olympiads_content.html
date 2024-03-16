@@ -1,0 +1,47 @@
+{% extends 'global.html' %}
+
+{% block content %}
+       <div class="col-sm-8 text-left">
+               <a href="{{ url_for('main') }}" class="button">Atpakaļ</a>
+    <div class="container">
+      {{jsonfile}}
+    </div>
+
+      {#
+- **Latvia (Forest Green):** `#228B22`
+- **Lithuania (Amber Gold):** `#FFBF00`
+- **Estonia (Sea Blue):** `#006994`
+      #}
+
+      <dl class="olympiads">
+    {% for link in links %}
+          {% set first_two = link.olympiadName['value'][:2] %}
+          {% if first_two == 'EE' %}
+          <dt style="border-color: #006994;">
+              <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName['value'] }}</a>
+          </dt>
+          {% elif first_two == 'LV' %}
+          <dt style="border-color: #228B22;">
+              <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName['value'] }}</a>
+          </dt>
+          {% elif first_two == 'LT' %}
+          <dt style="border-color: #FFBF00;">
+              <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName['value'] }}</a>
+          </dt>
+          {% else %}
+          <dt style="border-color: black;">
+              <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName['value'] }}</a>
+          </dt>
+          {% endif %}
+          <dd style="margin-left:20px">{{ link.olympiadDescription['value'] }}</dd>
+    {% endfor %}
+
+          </dl>
+    <hr style="width:90%"/>
+    <dl>
+      <dt><a href="{{ url_for('getBook',book_id='BBK2012') }}">BBK</a></dt>
+      <dd style="margin-left:20px">A.Bērziņa grāmatu uzdevumi</dd>
+    </dl>
+
+        </div>
+{% endblock %}
