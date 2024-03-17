@@ -8,18 +8,15 @@
     {{jsonfile}}
   </div>
 
-    <h3 style="margin-left:5%">{{ problemid }} </h3>
+  <div class="problemDiv">
+      <h3 class="problem">{{ problemid }} </h3>
 
-    <p style="margin-left:5%"> Klase {{ data[0].grade.value }}</p>
-  <p style="margin-left:5%"> Gads: {{ data[0].year.value }}</p>
   {% if data[0].skill is defined %}
-  <p style="margin-left:5%"> Prasmes: {% for item in data %}
+  <p><i>Prasmes: {% for item in data %}
     <a href="{{ url_for('getSkill',skillIdentifier=item.skillIdentifier.value) }}">{{ item.skillIdentifier.value }} </a>
-    &nbsp;
-    {% endfor %}
-  </p>
+    {% endfor %}</i></p>
   {% endif %}
-  <p style="margin-left:5%"> {{ text | safe }}</p>
+  <p> {{ text | safe }}</p>
   {% if image_src != '' %}
   <p><img src="http://www.dudajevagatve.lv/static/eliozo/images/{{ image_src }}"/></p>
   {% endif %}
@@ -29,6 +26,9 @@
     <p><a href="#" id="toggleSolutionLink">Show Solution</a></p>
 
     <div id="solutionDiv" class="solution">{{solutionText | safe}}</div>
+
+  </div>
+
 
     <script>
     document.getElementById('toggleSolutionLink').addEventListener('click', function(e) {

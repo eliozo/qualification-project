@@ -23,7 +23,7 @@ def addToRdfGraph(g, title, country, olympiad, year, grade, problem_number): # F
     g.add((problem_node, problem_olympiad_property, rdflib.URIRef(eliozo_ns + country + '.' + olympiad)))
     g.add((problem_node, problem_year_property, rdflib.term.Literal(year)))
     g.add((problem_node, problem_grade_property, rdflib.term.Literal(grade, datatype=XSD.integer)))
-    g.add((problem_node, problem_number_property, rdflib.term.Literal(problem_number)))
+    g.add((problem_node, problem_number_property, rdflib.term.Literal(problem_number, datatype=XSD.integer)))
     g.add((problem_node, problem_id, rdflib.term.Literal(title)))
     g.add((problem_node, problem_rdf_property, rdflib.URIRef(eliozo_ns + "Problem")))
 
@@ -107,23 +107,16 @@ def addSolutionToRdfProblem(g, title, solution_text):
     g.add((problem_node, problem_problemsolution_property, solution_node))
 
 
-def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
+def jsonToGraph(data):
     ELIOZO = rdflib.Namespace("http://www.dudajevagatve.lv/eliozo#")
-
     g = rdflib.Graph()
-
     g.bind("foaf", FOAF)
     g.bind("skos", SKOS)
     g.bind("eliozo", ELIOZO)
 
-    f = open(in_file) # Atver JSON failu
-    
-    data = json.load(f) # Atgriež JSON objektu kā vārdnīcu
-
     items = data['children']
 
     state = 0
-
     problem_title = 'undefined'
     image_width_pattern = re.compile(r'\{\s+width\s*=\s*(\d+)px\s+\}')
 
@@ -165,6 +158,8 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
                 problem_number = match_id.group(6)
             if grade == "NA":
                 grade = 0
+            if problem_number == "NA":
+                problem_number = problem_title.split(".")[-1]
             problem_text = ""
             for line in item['children']:
                 if line['type'] == 'RawText':
@@ -277,4 +272,12 @@ def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
         else:
             # continue ignoring the input, if something is not recognized
             state = 0
-    g.serialize(destination=out_file)
+
+    return g
+
+
+def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
+    f = open(in_file)
+    data = json.load(f)
+    myGraph = jsonToGraph(data)
+    myGraph.serialize(destination=out_file)

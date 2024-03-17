@@ -1088,11 +1088,37 @@ questionType=Find.Min
 * Ievērojam, ka skaitļa kvadrāta atlikums, dalot ar $10$, atkarīgs tikai no paša skaitļa atlikuma.
 * Pārbaudām pilno kvadrātu atlikumus:
 
+
+<!--
 <table>
 <tr><th>$x$</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
 <tr><th>$x^2$</th><td>1</td><td>4</td><td>9</td><td>16</td><td>25</td><td>36</td><td>49</td><td>64</td><td>81</td><td>100</td></tr>
 <tr><th>$x^2\;\mbox{mod}\;10$</th><td>1</td><td>4</td><td>9</td><td>6</td><td>5</td><td>6</td><td>9</td><td>4</td><td>1</td><td>0</td></tr>
 </table>
+-->
+
+<!--
+
+| $x$    | $x^2$    | $x^2\;\mbox{mod}\;10$ |
+| ------ | -------- | --------------------- |
+| 1      | 1        | 1                     |
+| 2      | 4        | 4                     |
+| 3      | 9        | 9                     |
+| 4      | 16       | 6                     |
+| 5      | 25       | 5                     |
+| 6      | 36       | 6                     |
+| 7      | 49       | 9                     |
+| 8      | 64       | 4                     |
+| 9      | 81       | 1                     |
+| 10     | 100      | 0                     |
+-->
+
+| $x$                   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
+| --------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
+| $x^2$                 | 1   | 4   | 9   | 16  | 25  | 36  | 49  | 64  | 81  | 100 |
+| $x^2\;\mbox{mod}\;10$ | 1   | 4   | 9   | 6   | 5   | 6   | 9   | 4   | 1   | 0   |
+
+
 
 * Starp šiem atlikumiem ir seši atšķirīgi: $1,4,9,6,5,0$.
 * Ja izvēlas septiņus, tad divi sakritīs (Dirihlē princips). 
