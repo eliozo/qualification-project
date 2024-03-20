@@ -7,7 +7,7 @@ from rdflib.namespace import RDF, FOAF, SKOS, XSD
 RDF_NS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 eliozo_ns = "http://www.dudajevagatve.lv/eliozo#"
 
-def addToRdfGraph(g, title, country, olympiad, year, grade, problem_number): # Funkcija, kas pievieno RDF datus grafam
+def addToRdfGraph(g, title, country, olympiad, year, grade, book_name, section_name, problem_number): # Funkcija, kas pievieno RDF datus grafam
     global eliozo_ns
     problem_node = rdflib.URIRef(eliozo_ns+title)
     problem_country_property = rdflib.URIRef(eliozo_ns+'country')
@@ -15,6 +15,9 @@ def addToRdfGraph(g, title, country, olympiad, year, grade, problem_number): # F
     problem_olympiad_property = rdflib.URIRef(eliozo_ns + 'olympiad')
     problem_year_property = rdflib.URIRef(eliozo_ns+'problemYear')
     problem_grade_property = rdflib.URIRef(eliozo_ns+'problemGrade')
+    problem_book_property = rdflib.URIRef(eliozo_ns+'problemBook')
+    problem_book_section_property = rdflib.URIRef(eliozo_ns+'problemBookSection')
+
     problem_number_property = rdflib.URIRef(eliozo_ns+'problem_number')
     problem_rdf_property = rdflib.URIRef(RDF_NS+'type')
     problem_id = rdflib.URIRef(eliozo_ns+'problemID')
@@ -23,6 +26,8 @@ def addToRdfGraph(g, title, country, olympiad, year, grade, problem_number): # F
     g.add((problem_node, problem_olympiad_property, rdflib.URIRef(eliozo_ns + country + '.' + olympiad)))
     g.add((problem_node, problem_year_property, rdflib.term.Literal(year)))
     g.add((problem_node, problem_grade_property, rdflib.term.Literal(grade, datatype=XSD.integer)))
+    g.add((problem_node, problem_book_property, rdflib.term.Literal(book_name)))
+    g.add((problem_node, problem_book_section_property, rdflib.term.Literal(section_name)))
     g.add((problem_node, problem_number_property, rdflib.term.Literal(problem_number, datatype=XSD.integer)))
     g.add((problem_node, problem_id, rdflib.term.Literal(title)))
     g.add((problem_node, problem_rdf_property, rdflib.URIRef(eliozo_ns + "Problem")))
@@ -147,7 +152,8 @@ def jsonToGraph(data):
             olympiad = "NA"
             year = "NA"
             grade = "NA"
-            problem_number = "NA"
+            book_name = "NA"
+            section_name = "NA"
             problem_id = re.compile(r"([A-Z]{2})\.(\w+)\.(\d+)\.(\d+)([A-Za-z_]+\w*)?\.(\d+)") # LV.AO.2000.7.1
             match_id = problem_id.match(problem_title)
             if (match_id):
@@ -156,6 +162,12 @@ def jsonToGraph(data):
                 year = match_id.group(3)
                 grade = match_id.group(4)
                 problem_number = match_id.group(6)
+            else:
+                book_problem_id = re.compile(r"([A-Z0-9]*)\.(.*)\.(\d+)")  # BBK2012.P1.1 or BBK2012.P1.E2.1 or similar
+                book_match_id = book_problem_id.match(problem_title)
+                book_name = book_match_id.group(1)
+                section_name = book_match_id.group(2)
+                problem_number = book_match_id.group(3)
             if grade == "NA":
                 grade = 0
             if problem_number == "NA":
@@ -166,7 +178,7 @@ def jsonToGraph(data):
                     problem_text = problem_text+line['content']
                 elif line['type'] == 'LineBreak':
                     problem_text = problem_text+'\n'
-            addToRdfGraph(g, problem_title, country, olympiad, year, grade, problem_number)
+            addToRdfGraph(g, problem_title, country, olympiad, year, grade, book_name, section_name, problem_number)
             # print('State 1-to-2')
             state = 2  # continue reading problem
 
@@ -277,7 +289,7 @@ def jsonToGraph(data):
 
 
 def produceRDF(in_file, out_file): # Funkcija, kas pārveido JSON failu par RDF
-    f = open(in_file)
+    f = open(in_file + '.json')
     data = json.load(f)
     myGraph = jsonToGraph(data)
     myGraph.serialize(destination=out_file)

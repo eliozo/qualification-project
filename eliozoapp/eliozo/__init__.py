@@ -269,17 +269,18 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad):
 
     return x.text
 
-def getSPARQLBook(bookid):
+def getSPARQLBook(bookid, sectionid):
     url = FUSEKI_URL
     myobj = {'query' : '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
     SELECT ?text ?problemid ?problem_number ?imagefile WHERE {
-  ?problem eliozo:problemText ?text .
-  ?problem eliozo:problemID ?problemid .
-  ?problem eliozo:problem_number ?problem_number .
-  ?problem eliozo:olympiadCode "NA" .
+  ?problem eliozo:problemBook \'''' + bookid + '''\' ;
+           eliozo:problemBookSection \'''' + sectionid + '''\' ;
+           eliozo:problemText ?text ;
+           eliozo:problemID ?problemid ;
+           eliozo:problem_number ?problem_number .
   OPTIONAL {
     ?problem eliozo:image ?imagefile .
   } .
@@ -571,7 +572,8 @@ def create_app(test_config=None):
     @app.route('/book_problems', methods=['GET', 'POST'])
     def getBook():
         bookid = request.args.get('book_id')
-        link = json.loads(getSPARQLBook(bookid))
+        sectionid = request.args.get('section_id')
+        link = json.loads(getSPARQLBook(bookid, sectionid))
 
         problems = []
         

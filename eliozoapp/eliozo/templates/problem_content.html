@@ -23,26 +23,11 @@
 
 
   {% if solutionText != ''%}
-    <p><a href="#" id="toggleSolutionLink">Show Solution</a></p>
 
-    <div id="solutionDiv" class="solution">{{solutionText | safe}}</div>
+      <div id="solutionDiv" class="solution"><b>Atrisinājums:</b><br/>{{solutionText | safe}}</div>
 
   </div>
 
-
-    <script>
-    document.getElementById('toggleSolutionLink').addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent the default anchor action
-        var solutionDiv = document.getElementById('solutionDiv');
-        if (solutionDiv.style.display === 'none' || solutionDiv.style.display === '') {
-            solutionDiv.style.display = 'block';
-            this.textContent = 'Hide Solution';
-        } else {
-            solutionDiv.style.display = 'none';
-            this.textContent = 'Show Solution';
-        }
-    });
-    </script>
   {% endif %}
 
   {% if hasVideo %}
