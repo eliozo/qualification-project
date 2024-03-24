@@ -11,7 +11,7 @@
 
 -----
 
-# <lo-sample/> LV.AO.2000.7.1
+# <lo-sample/> LV.AMO.2000.7.1
 
 Dots, ka $a,b,c,d$ – naturāli skaitļi un $ab=cd$. Pierādīt, ka skaitli $a^2 + b^2 + c^2 + d^2$ 
 var izsacīt kā divu veselu skaitļu kvadrātu summu. Vai to noteikti var izsacīt kā divu naturālu skaitļu kvadrātu summu?
@@ -40,7 +40,7 @@ Pieskaitīt $2ab$ un atņemt tam vienādo $2cd$, atdalīt kvadrātus. $1+1+1+1 \
 
 -----
 
-# <lo-sample/> LV.AO.2000.7.2
+# <lo-sample/> LV.AMO.2000.7.2
 
 Atrast mazāko naturālo skaitli, kam visi cipari ir vienādi un kas dalās ar $49$?
 
@@ -67,7 +67,7 @@ concpts=decimal-notation
 
 
 
-# <lo-sample/> LV.AO.2000.7.4
+# <lo-sample/> LV.AMO.2000.7.4
 
 Vai naturālos skaitļus
 
@@ -104,7 +104,7 @@ genre=construction
 -----
 
 
-# <lo-sample/> LV.AO.2000.8.3
+# <lo-sample/> LV.AMO.2000.8.3
 
 Uz katras no vairākām kartītēm uzrakstīts pa naturālam skaitlim (starp tiem var būt arī vienādi); uz visām kartītēm uzrakstīto skaitļu summa ir $100$. Vai noteikti var atrast tādas kartītes (varbūt vienu pašu), uz kurām uzrakstīto skaitļu summa ir $50$, ja kartīšu skaits ir
 
@@ -137,7 +137,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2000.9.2
+# <lo-sample/> LV.AMO.2000.9.2
 
 Vai skaitli  
 (a) skaitli 2,  
@@ -148,7 +148,7 @@ kvadrātiem apgriezto lielumu summu?
 
 -----
 
-# <lo-sample/> LV.AO.2000.9.4
+# <lo-sample/> LV.AMO.2000.9.4
 
 Apskatām pirmos $n$ naturālos skaitļus. No tiem jāizvēlas divus tā, 
 lai to reizinājums būtu vienāds ar visu pārējo skaitļu summu. 
@@ -159,7 +159,7 @@ Vai tas ir iespējams, ja
 
 -----
 
-# <lo-sample/> LV.AO.2000.10.2
+# <lo-sample/> LV.AMO.2000.10.2
 
 Divu pirmskaitļu starpība ir $100$. Uzrakstot pirmo 
 galā otrajam, atkal iegūst pirmskaitli. 
@@ -169,7 +169,7 @@ Jūsu atrastajiem nav.
 
 -----
 
-# <lo-sample/> LV.AO.2000.11.1
+# <lo-sample/> LV.AMO.2000.11.1
 
 Dots, ka $x^2+y^2+z^2 = t^2$, kur $x,y,z,t$ – naturāli skaitļi. 
 Cik no skaitļiem $x,y,z,t$ var būt pāra skaitļi?
@@ -177,7 +177,7 @@ Cik no skaitļiem $x,y,z,t$ var būt pāra skaitļi?
 
 -----
 
-# <lo-sample/> LV.AO.2000.11.4
+# <lo-sample/> LV.AMO.2000.11.4
 
 Funkcijas $f(x)$ argumenti un vērtības ir naturāli skaitļi. 
 Katram naturālam $x$ izpildās vienādība
@@ -189,7 +189,7 @@ ka citu bez atrastajām nav.
 
 -----
 
-# <lo-sample/> LV.AO.2000.12.2
+# <lo-sample/> LV.AMO.2000.12.2
 
 Atrisināt naturālos skaitļos vienādojumu
 $$\left( 2a+b \right) \cdot \left( 2b + a \right) = 2^c.$$
@@ -197,7 +197,7 @@ $$\left( 2a+b \right) \cdot \left( 2b + a \right) = 2^c.$$
 
 -----
 
-# <lo-sample/> LV.AO.2000.12.5
+# <lo-sample/> LV.AMO.2000.12.5
 
 Naturālu skaitļu virkni sauc par $F$-virkni, 
 ja tā ir augoša, bezgalīga un katrs tās loceklis, 
@@ -216,7 +216,7 @@ tieši vienai no tām.
 
 -----
 
-# <lo-sample/> LV.AO.2001.7.2
+# <lo-sample/> LV.AMO.2001.7.2
 
 Naturālu skaitli sauc par simetrisku, ja tā pēdējais cipars 
 nav $0$ un, uzrakstot tā ciparus apgrieztā secībā, 
@@ -261,7 +261,7 @@ Tad $a-c$ dalās ar $13$ un $a=c$; aizstāj $c$ un dala ar $7$.
 -----
 
 
-# <lo-sample/> LV.AO.2001.8.3
+# <lo-sample/> LV.AMO.2001.8.3
 
 Andrim vajadzēja sareizināt divus dažādus pozitīvus trīsciparu skaitļus. 
 Izklaidības pēc viņš tos vienkārši uzrakstīja vienu otram galā. 
@@ -295,7 +295,7 @@ concepts=decimal-notation
 
 -----
 
-# <lo-sample/> LV.AO.2001.9.4
+# <lo-sample/> LV.AMO.2001.9.4
 
 Dots, ka $x,y,z$ - naturāli skaitļi un katrs no 
 skaitļiem $xy-z$, $xz-y$ un $yz-x$ dalās ar $3$. 
@@ -304,7 +304,7 @@ Pierādiet, ka $x^2+y^2+z^2$ dalās ar $3$.
 
 -----
 
-# <lo-sample/> LV.AO.2001.10.3
+# <lo-sample/> LV.AMO.2001.10.3
 
 Kāds ir mazākais pirmskaitlis $p$, kuram nevar atrast tādus 
 nenegatīvus veselus skaitļus $x$ un $y$, ka 
@@ -313,7 +313,7 @@ ${\displaystyle p = \left| 2^x - 3^y \right|}$?
 
 -----
 
-# <lo-sample/> LV.AO.2001.11.3
+# <lo-sample/> LV.AMO.2001.11.3
 
 Skaitļu virknes elementi ir naturāli skaitļi. 
 Pirmo elementu izvēlas patvaļīgi, bet katrs nākošais 
@@ -326,7 +326,7 @@ ja neviens tās elements nav naturāla skaitļa kvadrāts?
 
 -----
 
-# <lo-sample/> LV.AO.2001.12.2
+# <lo-sample/> LV.AMO.2001.12.2
 
 Atrisināt naturālos skaitļos vienādojumu $(2a+b)(2b+a)=2c$.
 
@@ -341,7 +341,7 @@ Atrisināt naturālos skaitļos vienādojumu $(2a+b)(2b+a)=2c$.
 
 -----
 
-# <lo-sample/> LV.AO.2002.7.4
+# <lo-sample/> LV.AMO.2002.7.4
 
 Divi spēlētāji pamīšus raksta uz tāfeles pa vienam 
 naturālam skaitlim no $1$ līdz $8$ ieskaitot. 
@@ -383,7 +383,7 @@ Sāk ar $2$, tad uz katru $(5; 7)$, $(6; 8)$ un $(4; 3)$ atbild ar otru sk. no p
 
 -----
 
-# <lo-sample/> LV.AO.2002.7.5
+# <lo-sample/> LV.AMO.2002.7.5
 
 Kādu lielāko daudzumu dažādu naturālu skaitļu, kas nepārsniedz $100$, var izvēlēties tā, 
 lai nekādu divu izvēlēto skaitļu starpība nebūtu ne $3$, ne $4$, ne $7$?
@@ -415,7 +415,7 @@ questionType=Find.Max
 
 -----
 
-# <lo-sample/> LV.AO.2002.8.2
+# <lo-sample/> LV.AMO.2002.8.2
 
 Andrim vajadzēja sareizināt divus dažādus divciparu skaitļus. Izklaidības pēc 
 viņš tos vienkārši uzrakstīja vienu otram galā. Iegūtais četrciparu skaitlis izrādījās 
@@ -432,7 +432,7 @@ Kādu četrciparu skaitli Andris uzrakstīja?
 
 
 <!--
-seeAlso=LV.AO.2001.8.3
+seeAlso=LV.AMO.2001.8.3
 questionType=Find.All
 genre=digit-manipulation
 concepts=decimal-notation
@@ -451,7 +451,7 @@ concepts=decimal-notation
 
 -----
 
-# <lo-sample/> LV.AO.2002.8.3
+# <lo-sample/> LV.AMO.2002.8.3
 
 Par Fibonači skaitļiem sauc skaitļus $1; 2; 3; 5; 8; \ldots$ 
 (katru nākošo iegūst, saskaitot divus iepriekšējos).
@@ -481,20 +481,20 @@ kur $a$,$b$ ir tieši pirms $d$. Bet $c>0$, t.i. $a+b<c+d$.
 
 -----
 
-# <lo-sample/> LV.AO.2002.9.3
+# <lo-sample/> LV.AMO.2002.9.3
 
 Dots, ka $x, y, z$ naturāli skaitļi un katrs no 
 skaitļiem $xy-z$, $xz-y$ un $yz-x$ dalās ar $3$. 
 Pierādīt, ka $x^2+y^2+z^2$ dalās ar $3$.
 
 <!--
-seeAlso=LV.AO.2001.9.4
+seeAlso=LV.AMO.2001.9.4
 -->
 
 
 -----
 
-# <lo-sample/> LV.AO.2002.10.3
+# <lo-sample/> LV.AMO.2002.10.3
 
 Katrs naturāls skaitlis nokrāsots vienā krāsā. 
 Ir zināms: ja divu naturālu skaitļu starpība ir pirmskaitlis, 
@@ -505,7 +505,7 @@ Kāds ir mazākais iespējamais krāsu skaits?
 
 -----
 
-# <lo-sample/> LV.AO.2002.11.3
+# <lo-sample/> LV.AMO.2002.11.3
 
 Zināms, ka naturāls skaitlis $n$ dalās ar pirmskaitli 
 $p$ un $p>\sqrt{n}$. Pierādīt, ka ne $n-1$, $n^3-1$ 
@@ -514,7 +514,7 @@ nav divu tādu naturālu skaitļu reizinājums, kuru starpība ir $2$.
 
 -----
 
-# <lo-sample/> LV.AO.2002.12.4
+# <lo-sample/> LV.AMO.2002.12.4
 
 Skaitļu virkni $a_1, a_2, a_3, \ldots$ veido sekojoši 
 $a_1=0$; $a_2=1$; pie $n>2$ skaitli $a_n$ iegūst, 
@@ -526,7 +526,7 @@ Kādiem $n$ skaitlis $a_n$ dalās ar $11$?
 
 -----
 
-# <lo-sample/> LV.AO.2003.7.3
+# <lo-sample/> LV.AMO.2003.7.3
 
 Divi spēlētāji pamīšus raksta uz tāfeles pa vienam naturālam 
 skaitlim no $1$ līdz $9$ ieskaitot. Nedrīkst rakstīt skaitļus, ar kuriem dalās 
@@ -568,7 +568,7 @@ Sāk ar $2$, tad katrā grupā $(5;7)$, $(3;8)$ un $(4;6;9)$ uzvar izolēti.
 
 -----
 
-# <lo-sample/> LV.AO.2003.7.5
+# <lo-sample/> LV.AMO.2003.7.5
 
 Uz tāfeles pa reizei uzrakstīti visi naturālie skaitļi no $1$ līdz $n$ ieskaitot. 
 Ar vienu gājienu var izvēlēties divus uz tāfeles uzrakstītus skaitļus 
@@ -605,7 +605,7 @@ questionType=Algorithm
 
 -----
 
-# <lo-sample/> LV.AO.2003.8.3
+# <lo-sample/> LV.AMO.2003.8.3
 
 Kādā lielākajā daudzumā dažādu naturālu saskaitāmo, 
 kas visi lielāki par $1$, var sadalīt skaitli $56$ tā, lai katru divu 
@@ -636,7 +636,7 @@ questionType=Find.Count
 
 -----
 
-# <lo-sample/> LV.AO.2003.8.5
+# <lo-sample/> LV.AMO.2003.8.5
 
 Uz katras no divām lapām jāuzraksta pa $n$ veseliem pozitīviem skaitļiem. 
 Visiem $2n$ uzrakstītajiem skaitļiem jābūt dažādiem. Pie tam uz lapām uzrakstīto 
@@ -669,7 +669,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2003.9.3
+# <lo-sample/> LV.AMO.2003.9.3
 
 Noskaidrot, kādiem dažādiem pirmskaitļiem 
 $p_1, p_2, \ldots, p_n$ pastāv īpašība: 
@@ -679,7 +679,7 @@ $(p_1-1)(p_2-1)\ldots(p_n-1)$.
 
 -----
 
-# <lo-sample/> LV.AO.2003.10.3
+# <lo-sample/> LV.AMO.2003.10.3
 
 Dots, ka $n$ - vesels pozitīvs skaitlis un skaitļi 
 $2n+1$ un $3n+1$ ir veselu skaitļu kvadrāti.  
@@ -689,7 +689,7 @@ $2n+1$ un $3n+1$ ir veselu skaitļu kvadrāti.
 
 -----
 
-# <lo-sample/> LV.AO.2003.11.3
+# <lo-sample/> LV.AMO.2003.11.3
 
 Vai eksistē tāds naturāls skaitlis $n$, 
 ka $6^n-1$ dalās ar $4^n-1$?
@@ -697,7 +697,7 @@ ka $6^n-1$ dalās ar $4^n-1$?
 
 -----
 
-# <lo-sample/> LV.AO.2003.12.2
+# <lo-sample/> LV.AMO.2003.12.2
 
 Vai eksistē tāds vesels pozitīvs skaitlis $n$, 
 ka skaitlim $n^2$ ir tikpat daudz naturālu dalītāju, 
@@ -715,7 +715,7 @@ cik naturālu dalītāju, kas dod atlikumu $2$, dalot ar $3$?
 
 -----
 
-# <lo-sample/> LV.AO.2004.7.3
+# <lo-sample/> LV.AMO.2004.7.3
 
 Kādam mazākajam naturālajam $n$ visas daļas
 $$\frac{5}{n+7}, \frac{6}{n+8}, \frac{7}{n+9}, \ldots, \frac{35}{n+37}, \frac{36}{n+38}$$
@@ -748,7 +748,7 @@ $n+2=37$ ir savstarpējs pirmskaitlis ar visiem $k$, t.i. $n=35$.
 
 -----
 
-# <lo-sample/> LV.AO.2004.8.3
+# <lo-sample/> LV.AMO.2004.8.3
 
 Dots, ka $A$ un $B$ – naturāli divciparu skaitļi. Skaitli $X$ iegūst, 
 pierakstot skaitlim $A$ galā skaitli $B$; skaitli $Y$ iegūst, 
@@ -781,7 +781,7 @@ questionType=Prove.ForAll
 
 -----
 
-# <lo-sample/> LV.AO.2004.8.5
+# <lo-sample/> LV.AMO.2004.8.5
 
 Virknē augošā kārtībā izrakstīti naturālie skaitļi no $1$ līdz $2004$ ieskaitot, 
 katrs vienu reizi. Izsvītrojam no tās skaitļus, kas atrodas 
@@ -816,7 +816,7 @@ questionType=Find.Only
 
 -----
 
-# <lo-sample/> LV.AO.2004.9.5
+# <lo-sample/> LV.AMO.2004.9.5
 
 Kvadrāts sastāv no $n \times n$ rūtiņām. 
 Katrā rūtiņā jāieraksta viens no skaitļiem $-1; 0; 1$ tā, lai $n$ rindās
@@ -826,7 +826,7 @@ Vai to var izdarīt, ja (a) $n=4$; (b) $n=5$?
 
 -----
 
-# <lo-sample/> LV.AO.2004.10.3
+# <lo-sample/> LV.AMO.2004.10.3
 
 Dots, ka $n$ – naturāls skaitlis.  
 (a) pierādīt, ka $n^2 + 11 n + 30$ nav naturāls skaitlis,  
@@ -835,7 +835,7 @@ Dots, ka $n$ – naturāls skaitlis.
 
 -----
 
-# <lo-sample/> LV.AO.2004.10.5
+# <lo-sample/> LV.AMO.2004.10.5
 
 Vai, izmantojot tikai $3$ dažādus ciparus, var uzrakstīt 
 $16$ trīsciparu skaitļus, kas visi dod dažādus
@@ -844,14 +844,14 @@ atlikumus, dalot ar $16$?
 
 -----
 
-# <lo-sample/> LV.AO.2004.11.1
+# <lo-sample/> LV.AMO.2004.11.1
 
 Vai eksistē tāds naturāls skaitlis $n$, ka $2004^n-1$ dalās ar $1500^n-1$?
 
 
 -----
 
-# <lo-sample/> LV.AO.2004.12.1
+# <lo-sample/> LV.AMO.2004.12.1
 
 Dots, ka $n$ – naturāls skaitlis, $n>1$. Vai izteiksmi
 $$\left( x^n + x^{n-1} + \ldots + x + 1 \right)^2 - x^n$$
@@ -864,7 +864,7 @@ koeficienti būtu veseli skaitļi?
 
 -----
 
-# <lo-sample/> LV.AO.2004.12.3
+# <lo-sample/> LV.AMO.2004.12.3
 
 Funkcijai $f(n)$ gan argumenti, gan vērtības 
 ir naturāli skaitļi, un katriem diviem naturāliem
@@ -875,7 +875,7 @@ Atrast visas šādas funkcijas $f$ un pierādīt, ka citu bez jūsu atrastajām 
 
 -----
 
-# <lo-sample/> LV.AO.2004.12.4
+# <lo-sample/> LV.AMO.2004.12.4
 
 Ar $n$ apzīmējam patvaļīgu nepāra naturālu skaitli, 
 kas lielāks par $1$. Pierādīt: abi skaitļi $n$ un $n+2$
@@ -887,7 +887,7 @@ $(n-1)!$ nedalās ne ar $n$, ne ar $n+2$.
 
 -----
 
-# <lo-sample/> LV.AO.2005.7.4
+# <lo-sample/> LV.AMO.2005.7.4
 
 Triju veselu pozitīvu skaitļu summa ir $407$. 
 Ar kādu lielāko daudzumu nuļļu var beigties šo
@@ -924,7 +924,7 @@ viens saskaitāmais beigsies ar nulli.
 
 -----
 
-# <lo-sample/> LV.AO.2005.8.3
+# <lo-sample/> LV.AMO.2005.8.3
 
 Kā var sadalīt naturālos skaitļus no 1 līdz 9 ieskaitot divās daļās tā, lai vienas daļas visu skaitļu
 summa būtu vienāda ar otras daļas visu skaitļu reizinājumu?
@@ -951,7 +951,7 @@ questionType=Find.Any
 
 -----
 
-# <lo-sample/> LV.AO.2005.9.1
+# <lo-sample/> LV.AMO.2005.9.1
 
 Atrast mazāko naturālo skaitli, kas dalās ar $225$
 un kura decimālajā pierakstā neizmanto nevienu
@@ -960,14 +960,14 @@ no cipariem $3; 4; 5; 6; 7; 8; 9$.
 
 -----
 
-# <lo-sample/> LV.AO.2005.10.3
+# <lo-sample/> LV.AMO.2005.10.3
 
 Kādiem naturāliem skaitļiem $n$ abi skaitļi 
 $2^n-1$ un $2^n+1$ ir pirmskaitļi?
 
 -----
 
-# <lo-sample/> LV.AO.2005.10.4
+# <lo-sample/> LV.AMO.2005.10.4
 
 Funkcijas $f(t)$ definīcijas apgabals un vērtību 
 apgabals ir kopa $\{ 1; 2; \ldots; n\}$, pie tam visas vērtības
@@ -978,7 +978,7 @@ $x=1; 2; \ldots; n$, ir dažādi, ja
 -----
 
 
-# <lo-sample/> LV.AO.2005.11.4
+# <lo-sample/> LV.AMO.2005.11.4
 
 Dots, ka $a < b \leq c < d$ ir pozitīvi veseli skaitļi, 
 $ad=bc$ un $d - a \leq 1$. Pierādīt, ka $a$ ir vesela skaitļa
@@ -987,7 +987,7 @@ kvadrāts.
 -----
 
 
-# <lo-sample/> LV.AO.2005.12.1
+# <lo-sample/> LV.AMO.2005.12.1
 
 Vai eksistē tāds vesels pozitīvs skaitlis $n$, 
 ka skaitlim $n^2$ ir tikpat daudz naturālu dalītāju, 
@@ -995,13 +995,13 @@ kas dod atlikumu $1$, dalot ar $3$,
 cik naturālu dalītāju, kas dod atlikumu $2$, dalot ar $3$?
 
 <!--
-seeAlso=LV.AO.2003.12.2
+seeAlso=LV.AMO.2003.12.2
 -->
 
 -----
 
 
-# <lo-sample/> LV.AO.2005.12.5
+# <lo-sample/> LV.AMO.2005.12.5
 
 Divi spēlētāji spēlē sekojošu spēli, izdarot gājienus 
 pēc kārtas. Sākumā doti divi stieņi: viens ar
@@ -1024,7 +1024,7 @@ Kurš spēlētājs uzvar, pareizi spēlējot?
 
 
 
-# <lo-sample/> LV.AO.2006.7.1
+# <lo-sample/> LV.AMO.2006.7.1
 
 Vilcienā Rīga-Mehiko vietas numurētas ar naturāliem skaitļiem, sākot ar $1$ 
 (numerācija ir vienota visam vilcienam, t.i., ir tikai viena vieta ar numuru $1$, 
@@ -1061,7 +1061,7 @@ kas pie tam nav blakus viens otram).
 
 
 
-# <lo-sample/> LV.AO.2006.8.3
+# <lo-sample/> LV.AMO.2006.8.3
 
 Naturāla skaitļa $x$ ciparu summu apzīmēsim ar $S(x)$. 
 Pieņemsim, ka $n$ – tāds naturāls skaitlis, kam vienlaicīgi 
@@ -1098,7 +1098,7 @@ Uzminēts piemērs (pāru cipari divreiz samazinās, ja reizina ar $5$).
 -----
 
 
-# <lo-sample/> LV.AO.2006.9.1
+# <lo-sample/> LV.AMO.2006.9.1
 
 Kāda ir lielākā iespējamā ciparu summa septiņciparu 
 naturālam skaitlim, kas dalās ar $8$?
@@ -1106,7 +1106,7 @@ naturālam skaitlim, kas dalās ar $8$?
 -----
 
 
-# <lo-sample/> LV.AO.2006.9.5
+# <lo-sample/> LV.AMO.2006.9.5
 
 Apskatām naturālos skaitļus no $1$ līdz $100$ ieskaitot. 
 Kādu lielāko daudzumu no tiem var izvēlēties tā, 
@@ -1118,7 +1118,7 @@ lielākais kopīgais dalītājs būtu lielāks par $1$?
 
 
 
-# <lo-sample/> LV.AO.2006.10.3
+# <lo-sample/> LV.AMO.2006.10.3
 
 Ir dots, ka, sareizinot visus naturālos skaitļus 
 no $1$ līdz $33$ ieskaitot, iegūst 
@@ -1130,7 +1130,7 @@ $y$, $z$ un $t$ vērtības.
 -----
 
 
-# <lo-sample/> LV.AO.2006.11.2
+# <lo-sample/> LV.AMO.2006.11.2
 
 Dots, ka $a<b \leq c < d$ ir pozitīvi veseli 
 skaitļi, $ad = bc$ un $\sqrt{d}-\sqrt{a} \leq 1$. 
@@ -1140,7 +1140,7 @@ Pierādīt, ka $a$ ir vesela skaitļa kvadrāts.
 -----
 
 
-# <lo-sample/> LV.AO.2006.12.1
+# <lo-sample/> LV.AMO.2006.12.1
 
 Vai eksistē tāds vesels pozitīvs skaitlis $n$, 
 ka skaitlim $n^2$ ir tikpat daudz naturālu dalītāju, 
@@ -1153,7 +1153,7 @@ cik naturālu dalītāju, kas dod atlikumu $2$, dalot ar $3$?
 
 
 
-# <lo-sample/> LV.AO.2007.7.1
+# <lo-sample/> LV.AMO.2007.7.1
 
 Kādu lielāko daudzumu dažādu ciparu var izrakstīt pa apli tā, 
 lai katri divi blakus uzrakstīti cipari, lasot tos vienalga 
@@ -1171,7 +1171,7 @@ kādā virzienā, veidotu pirmskaitļa pierakstu?
 genre=optimization
 concepts=primes
 questionType=Find.Max
-seeAlso=LV.AO.2008.7.2
+seeAlso=LV.AMO.2008.7.2
 -->
 
 -----
@@ -1188,7 +1188,7 @@ $(7,9)$. $4$-cikla nav, jo $9$ tikai viens kaimiņš. $3$-cikls $1-3-7-1$.
 
 
 
-# <lo-sample/> LV.AO.2007.7.3
+# <lo-sample/> LV.AMO.2007.7.3
 
 Uz tāfeles sākumā uzrakstīti $6$ divciparu naturāli skaitļi. 
 Andris ar savu gājienu var pieskaitīt dažiem skaitļiem $1$, bet pārējiem skaitļiem $2$. 
@@ -1225,7 +1225,7 @@ $(160;161)$, $(167;168)$, $(175;176)$ utt. Andris nevar tikt pāri.
 
 -----
 
-# <lo-sample/> LV.AO.2007.8.3
+# <lo-sample/> LV.AMO.2007.8.3
 
 Juliata iedomājās naturālu skaitli, sareizināja visus tā ciparus un iegūto 
 rezultātu pareizināja ar iedomāto skaitli. Gala rezultātā Juliata ieguva $1716$. 
@@ -1257,7 +1257,7 @@ questionType=Find.All
 -----
 
 
-# <lo-sample/> LV.AO.2007.9.1
+# <lo-sample/> LV.AMO.2007.9.1
 
 Kvadrātveida tabula sastāv no $10 \times 10$ rūtiņām. 
 Katrā rūtiņā ierakstīts nenulles cipars. 
@@ -1270,7 +1270,7 @@ naturāls skaitlis. Vai var gadīties, ka tieši $19$ no
 
 -----
 
-# <lo-sample/> LV.AO.2007.9.3
+# <lo-sample/> LV.AMO.2007.9.3
 
 (a) katrs no naturāliem skaitļiem $a$ un $b$ ir izsakāms 
 kā divu veselu skaitļu kvadrātu summa. 
@@ -1285,13 +1285,13 @@ $$= \left( x^2+1 \right)\left( x^2 + 4 \right)
 -----
 
 
-# <lo-sample/> LV.AO.2007.10.1
+# <lo-sample/> LV.AMO.2007.10.1
 
 Desmitciparu naturāls skaitlis dalās ar 
 $999\,999$. Vai tas var dalīties arī ar $1\,000\,001$?
 
 <!--
-seeAlso=LV.AO.2008.10.1
+seeAlso=LV.AMO.2008.10.1
 -->
 
 
@@ -1301,21 +1301,21 @@ seeAlso=LV.AO.2008.10.1
 -----
 
 
-# <lo-sample/> LV.AO.2008.8.1
+# <lo-sample/> LV.AMO.2008.8.1
 
 Kādu lielāko daudzumu dažādu ciparu var izrakstīt pa apli tā, 
 lai katri divi blakus uzrakstīti cipari, lasot tos vienalga 
 kādā virzienā, veidotu pirmskaitļa pierakstu?
 
 <!--
-seeAlso=LV.AO.2007.7.1
+seeAlso=LV.AMO.2007.7.1
 -->
 
 
 
 -----
 
-# <lo-sample/> LV.AO.2008.7.2
+# <lo-sample/> LV.AMO.2008.7.2
 
 Dots, ka $x$ un $y$ – tādi naturāli skaitļi, ka  $x \cdot y = 10^{12}$. 
 Vai var būt, ka ne $x$, ne $y$ nesatur savā pierakstā nevienu ciparu $0$?
@@ -1344,7 +1344,7 @@ Nē. $x$ vai $y = 2^{12} = 4096$. (Vai arī sareizināsies $2$ un $5$.)
 
 -----
 
-# <lo-sample/> LV.AO.2008.8.3
+# <lo-sample/> LV.AMO.2008.8.3
 
 Dots, ka $n>1$ – naturāls skaitlis, kas nav pirmskaitlis. 
 Pierādīt, ka var atrast vismaz trīs dažādus naturālus skaitļus $a_1,a_2,\ldots,a_k$, 
@@ -1377,7 +1377,7 @@ $$1+3+9 = 9 \cdot \left( \frac{1}{1} + \frac{1}{3} + \frac{1}{9} \right). $$
 
 -----
 
-# <lo-sample/> LV.AO.2008.9.1
+# <lo-sample/> LV.AMO.2008.9.1
 
 Kvadrātveida tabula sastāv no $12 \times 12$ rūtiņām. 
 Katrā rūtiņā ierakstīts nenulles cipars. No katras 
@@ -1389,7 +1389,7 @@ Vai var gadīties, ka tieši $23$ no šiem skaitļiem
 
 -----
 
-# <lo-sample/> LV.AO.2008.9.4
+# <lo-sample/> LV.AMO.2008.9.4
 
 Naturālie skaitļi no $1$ līdz $2008$ ieskaitot 
 jāsadala grupās tā, lai izpildītos sakarība: 
@@ -1402,21 +1402,21 @@ Kāds ir mazākais iespējamais grupu skaits?
 -----
 
 
-# <lo-sample/> LV.AO.2008.10.1
+# <lo-sample/> LV.AMO.2008.10.1
 
 Desmitciparu naturāls skaitlis dalās ar 9 999 999. 
 Vai tas var dalīties arī ar 10 000 001 ?
 
 
 <!--
-seeAlso=LV.AO.2007.10.1
+seeAlso=LV.AMO.2007.10.1
 -->
 
 -----
 
 
 
-# <lo-sample/> LV.AO.2008.10.4
+# <lo-sample/> LV.AMO.2008.10.4
 
 Uz $50$ kartiņām uzrakstīti naturāli skaitļi no 
 $1$ līdz $50$ ieskaitot (katrs skaitlis uz citas kartiņas). 
@@ -1432,7 +1432,7 @@ vairāk par $1250$ gājieniem.
 
 
 
-# <lo-sample/> LV.AO.2008.11.2
+# <lo-sample/> LV.AMO.2008.11.2
 
 Funkcija $f(n)$ definēta visiem veseliem $n$ un pieņem 
 veselas vērtības. Visiem veseliem $x$ un $y$ pastāv vienādība
@@ -1443,7 +1443,7 @@ Atrast visas tādas funkcijas $f$ un pierādīt, ka citu bez Jūsu atrastajām n
 -----
 
 
-# <lo-sample/> LV.AO.2008.11.3
+# <lo-sample/> LV.AMO.2008.11.3
 
 Dots, ka $n$ – naturāls skaitlis. Noskaidrojiet:  
 (a) vai var gadīties, ka skaitlim $n^2 - 1$ 
@@ -1455,7 +1455,7 @@ $10$ dažādi naturāli dalītāji, ja $n$ – pāra skaitlis?
 -----
 
 
-# <lo-sample/> LV.AO.2008.12.2
+# <lo-sample/> LV.AMO.2008.12.2
 
 Kādiem naturāliem $n$ skaitļu kopu  var sadalīt 
 divās daļās tā, lai vienlaicīgi izpildītos šādi nosacījumi:  
@@ -1466,7 +1466,7 @@ divās daļās tā, lai vienlaicīgi izpildītos šādi nosacījumi:
 
 -----
 
-# <lo-sample/> LV.AO.2008.12.4
+# <lo-sample/> LV.AMO.2008.12.4
 
 Vai eksistē tādi trīs naturāli skaitļi, kas visi 
 lielāki par $1$ un kam piemīt īpašība:
@@ -1475,7 +1475,7 @@ dalās ar katru no abiem pārējiem skaitļiem?
 
 -----
 
-# LV.AO.2009.7.2
+# LV.AMO.2009.7.2
 
 Trijstūrim $T$ visas malas ir dažāda garuma. Par punktiem $M$ un $N$
 zināms tikai tas, ka tie atrodas trijstūra $T$ iekšpusē.  
@@ -1486,7 +1486,7 @@ zināms tikai tas, ka tie atrodas trijstūra $T$ iekšpusē.
 -----
 
 
-# <lo-sample/> LV.AO.2009.7.3
+# <lo-sample/> LV.AMO.2009.7.3
 
 Tabula sastāv no $3 \times 3$ rūtiņām. Rūtiņās ierakstīti naturāli skaitļi no $1$
 līdz $9$ (katrā rūtiņā cits skaitlis). Skaitļu summas rindās un kolonnās
@@ -1518,18 +1518,18 @@ isHard=true
 
 -----
 
-# <lo-sample/> LV.AO.2009.7.4
+# <lo-sample/> LV.AMO.2009.7.4
 
 Trijstūris $ABC$ ir šaurleņķu. Trijstūri $AMB$ un $BNC$ abi ir
 vienādmalu un atrodas ārpus $\bigtriangleup ABC$. Pierādīt, ka $AN=CM$.  
-![LV.AO.2016.7.3](geometry-grade07/LV.AO.2009.7.4.png)
+![LV.AMO.2016.7.3](geometry-grade07/LV.AMO.2009.7.4.png)
 
 
 
 
 -----
 
-# <lo-sample/> LV.AO.2009.7.5
+# <lo-sample/> LV.AMO.2009.7.5
 
 Vairākiem rūķīšiem ir vienādi naudas daudzumi. Brīdi pa brīdim
 kāds no rūķīšiem paņem daļu savas naudas un sadala to pārējiem
@@ -1561,7 +1561,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> LV.AO.2009.8.4
+# <lo-sample/> LV.AMO.2009.8.4
 
 <div style="font-size:70%">
 
@@ -1602,7 +1602,7 @@ $(5,10,49)$ vai $(7,7,50)$. Otrā P.C. piebilde neļauj tos atšķirt.
 
 -----
 
-# <lo-sample/> LV.AO.2009.9.4
+# <lo-sample/> LV.AMO.2009.9.4
 
 Naturāla skaitļa $n$ pozitīvo dalītāju skaitu apzīmējam ar $d(n)$.
 Piemēram, $d(1)=1$; $d(6)=4$ utt. Sauksim skaitli $n$ par 
@@ -1614,7 +1614,7 @@ apaļīgu, ja tas dalās ar $d(n)$.
 
 -----
 
-# <lo-sample/> LV.AO.2009.10.2
+# <lo-sample/> LV.AMO.2009.10.2
 
 Dots, ka $p$ un $q$ ir divi viens otram sekojoši nepāra pirmskaitļi
 (piemēram, $13$ un $17$). Pierādīt: skaitli $p+q$ var sadalīt triju tādu
@@ -1624,7 +1624,7 @@ skaitļiem var būt arī vienādi).
 
 -----
 
-# <lo-sample/> LV.AO.2009.11.2
+# <lo-sample/> LV.AMO.2009.11.2
 
 Spēlē OP! piedalās $n$ spēlētāji ($n \geq 2$). Spēle notiek vairākas dienas.
 Katru dienu viens spēlētājs uzvar, bet pārējie zaudē. Sakaņā ar
@@ -1636,7 +1636,7 @@ gadīties, ka visiem atkal ir pa $0$ punktiem?
 
 -----
 
-# <lo-sample/> LV.AO.2009.11.3
+# <lo-sample/> LV.AMO.2009.11.3
 
 Dots, ka $a$ un $b$ – naturāli skaitļi un skaitļa 
 $S = a^2 + ab + b^2$ pēdējais
@@ -1645,7 +1645,7 @@ cipars ir $0$. Kāds ir skaitļa $S$ priekšpēdējais cipars?
 
 -----
 
-# <lo-sample/> LV.AO.2009.12.3
+# <lo-sample/> LV.AMO.2009.12.3
 
 Dots, ka $n$ - naturāls pāra skaitlis. Apskatām reizinājumu
 $$R = n(n + 1)(n + 2)(n + 3).$$
@@ -1655,7 +1655,7 @@ $$R = n(n + 1)(n + 2)(n + 3).$$
 
 -----
 
-# <lo-sample/> LV.AO.2009.12.5
+# <lo-sample/> LV.AMO.2009.12.5
 
 Uz galda atrodas $n$ konfektes, $n$ – naturāls skaitlis. Divi spēlētāji
 pamīšus ēd pa $x^2$ konfektēm, kur $x$ – naturāls skaitlis ($x$ var mainīties
@@ -1668,7 +1668,7 @@ uzvarēt.
 
 -----
 
-# <lo-sample/> LV.AO.2010.7.1
+# <lo-sample/> LV.AMO.2010.7.1
 
 Uz tāfeles uzrakstīti pieci dažādi pirmskaitļi, kas nepārsniedz $100$. Par tiem
 zināms, ka
@@ -1706,7 +1706,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> LV.AO.2010.7.2
+# <lo-sample/> LV.AMO.2010.7.2
 
 Caur trijstūra $ABC$ virsotni $A$ novilktā taisne $t$ sadala trijstūri divos
 vienādos trijstūros.
@@ -1721,7 +1721,7 @@ note=Ar ko atšķiras "vienādi trijstūri" no "vienlieliem trijstūriem"?
 
 -----
 
-# <lo-sample/> LV.AO.2010.7.3
+# <lo-sample/> LV.AMO.2010.7.3
 
 Ieraksti tabulas ar izmēriem $4 \times 4$ rūtiņas katrā rūtiņā vienu naturālu skaitli
 tā, lai vienlaicīgi izpildītos šādas divas īpašības:
@@ -1756,7 +1756,7 @@ questionType=Find.Any
 
 -----
 
-# <lo-sample/> LV.AO.2010.7.4
+# <lo-sample/> LV.AMO.2010.7.4
 
 Vairākiem bērniem visiem ir vienāds skaits konfekšu. Brīdi pa brīdim kāds
 no bērniem paņem daļu savu konfekšu un sadala to pārējiem vienādās
@@ -1788,7 +1788,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> LV.AO.2010.8.1
+# <lo-sample/> LV.AMO.2010.8.1
 
 Starp skaitļiem
 $$6\;\;1\;\;3\;\;4,$$
@@ -1821,7 +1821,7 @@ questionType=ProveDisprove.Exists
 -----
 
 
-# <lo-sample/> LV.AO.2010.8.2
+# <lo-sample/> LV.AMO.2010.8.2
 
 Andris un Juris katrs izvēlas trīs secīgus naturālus skaitļus tā, ka visi
 seši skaitļi ir atšķirīgi. Katru Andra skaitli sareizināja ar katru Jura
@@ -1854,7 +1854,7 @@ ja $b \pm 1 = 2a$ vai $a \pm 1 = 2b$.
 -----
 
 
-# <lo-sample/> LV.AO.2010.9.1
+# <lo-sample/> LV.AMO.2010.9.1
 
 Naturālus skaitļus no $1$ līdz $2N$ jāsadala $N$ pāros tā, 
 lai katra pāra skaitļu summa būtu pirmskaitlis, 
@@ -1865,7 +1865,7 @@ iespējams izdarīt, ja
 
 -----
 
-# <lo-sample/> LV.AO.2010.9.3
+# <lo-sample/> LV.AMO.2010.9.3
 
 Naturāla skaitļa $n$ pozitīvo dalītāju skaitu apzīmējam ar $d(n)$. 
 Piemēram, $d(1)=1$; $d(6)=4$ utt. 
@@ -1876,7 +1876,7 @@ Sauksim skaitli $n$ par apaļīgu, ja tas dalās ar $d(n)$.
 
 -----
 
-# <lo-sample/> LV.AO.2010.9.4
+# <lo-sample/> LV.AMO.2010.9.4
 
 $2010 \times 2010$ rūtiņas lielā kvadrātā,
 sākot ar apakšējo kreiso rūtiņu,
@@ -1889,13 +1889,13 @@ ceturtajā rindā, trešajā kolonnā.
 (a) Kurš skaitlis ierakstīts 20. rindā, 10. kolonnā?  
 (b) Kurā rindā un kurā kolonnā atrodas rūtiņa, 
 kurā ierakstīts skaitlis $2010$?  
-![quadrant](LV.AO.2010.9.4.png)
+![quadrant](LV.AMO.2010.9.4.png)
 
 
 -----
 
 
-# <lo-sample/> LV.AO.2010.10.4
+# <lo-sample/> LV.AMO.2010.10.4
 
 Cik dažādos veidos skaitli $2010$ var izteikt kā vismaz divu pēc kārtas
 sekojošu naturālu skaitļu summu? Saskaitāmo secība nav svarīga. 
@@ -1917,7 +1917,7 @@ questionType=Find.Count
 -----
 
 
-# <lo-sample/> LV.AO.2010.11.1
+# <lo-sample/> LV.AMO.2010.11.1
 
 Dotas trīs aritmētiskas progresijas:  
 (1) $8, 19, 30, 41, 52, \ldots$  
@@ -1932,7 +1932,7 @@ kas pieder visām trim dotajām virknēm!
 -----
 
 
-# <lo-sample/> LV.AO.2010.11.4
+# <lo-sample/> LV.AMO.2010.11.4
 
 Uz tāfeles uzrakstīts skaitlis $2010$. 
 Divi spēlētāji spēlē sekojošu spēli. Vienā
@@ -1948,7 +1948,7 @@ tas, kurš sāk, vai tas, kurš izdara otro gājienu?
 
 -----
 
-# <lo-sample/> LV.AO.2010.12.3
+# <lo-sample/> LV.AMO.2010.12.3
 
 Atrodi visus tādus naturālus skaitļus $n$, 
 ka skaitļi $n$, $d(n)$ un $d(d(n))$
@@ -1957,7 +1957,7 @@ skaitļa $x$ naturālo dalītāju skaits.)
 
 -----
 
-# <lo-sample/> LV.AO.2010.12.5
+# <lo-sample/> LV.AMO.2010.12.5
 
 Uz galda atrodas $n$ cepumi, kur $n$ – naturāls skaitlis. 
 Divi spēlētāji pamīšus ēd pa $x^3$ cepumiem, 
@@ -1972,7 +1972,7 @@ tādu $n$, ka, pareizi spēlējot, otrais spēlētājs uzvar!
 
 -----
 
-# <lo-sample/> LV.AO.2011.5.1
+# <lo-sample/> LV.AMO.2011.5.1
 
 Reizināšanas piemērā ciparus aizstāja ar burtiem un ieguva izteiksmi  
 $$AB \cdot CD = EEE.$$ . 
@@ -1993,7 +1993,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> LV.AO.2011.5.2
+# <lo-sample/> LV.AMO.2011.5.2
 
 Dotās $3 \times 3$ rūtiņu tabulas katrā rūtiņā
 jāieraksta pa vienam naturālam skaitlim tā,
@@ -2002,7 +2002,7 @@ diagonālē ierakstīto trīs skaitļu summas būtu
 vienādas. Ir zināmi trīs rūtiņās ierakstītie
 skaitļi (skat. 1. zīm.). Aizpildi pārējās tabulas
 rūtiņas!  
-![1.zīm](LV.AO.2011.5.2.png)
+![1.zīm](LV.AMO.2011.5.2.png)
 
 <small>
 
@@ -2017,7 +2017,7 @@ questionType=Find.Only
 
 -----
 
-# <lo-sample/> LV.AO.2011.5.3
+# <lo-sample/> LV.AMO.2011.5.3
 
 Parādi, kā kvadrātu var sadalīt vairākos platleņķa trijstūros!
 
@@ -2035,7 +2035,7 @@ questionType=Prove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2011.5.4
+# <lo-sample/> LV.AMO.2011.5.4
 
 Vai naturālos skaitļus no $1$ līdz $12$, katru izmantojot tieši vienu reizi,
 var uzrakstīt pa apli tādā secībā, ka jebkuru divu blakus esošu skaitļu
@@ -2056,7 +2056,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2011.5.5
+# <lo-sample/> LV.AMO.2011.5.5
 
 Kvadrātā ar izmēriem $7 \times 7$ rūtiņas jāizvieto $n$ "stūrīšus"
 (2. zīm. attēlotās figūras) tā, lai tajā vairāk nevarētu
@@ -2065,7 +2065,7 @@ pa rūtiņu malām. Stūrīši var arī būt pagriezti citādāk.)
 Parādi, kā to var izdarīt, ja  
 **(a)** $n=9$;  
 **(b)** $n=8$.   
-![2.zīm.](LV.AO.2011.5.5.png)
+![2.zīm.](LV.AMO.2011.5.5.png)
 
 <small>
 
@@ -2082,7 +2082,7 @@ questionType=Prove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2011.6.1
+# <lo-sample/> LV.AMO.2011.6.1
 
 
 Vai eksistē tādi naturāli skaitļi $a$ un $b$, kuriem izpildās vienādība
@@ -2101,7 +2101,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2011.6.2
+# <lo-sample/> LV.AMO.2011.6.2
 
 
 Sešdesmit pensionāri katru dienu *sociālajā tīklā*
@@ -2121,7 +2121,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> LV.AO.2011.6.3
+# <lo-sample/> LV.AMO.2011.6.3
 
 Kvadrātā ar izmēriem $8 \times 8$ rūtiņas sākotnēji 
 visas rūtiņas ir baltas. Kāds mazākais skaits rūtiņu 
@@ -2142,7 +2142,7 @@ questionType=Find.Min
 
 -----
 
-# <lo-sample/> LV.AO.2011.6.4
+# <lo-sample/> LV.AMO.2011.6.4
 
 
 3. zīmējumā dota $3 \times 3$ rūtiņu tabula, 
@@ -2152,9 +2152,9 @@ skaitļus attiecīgi ar $a$ un $b$, nodzēst šos divus skaitļus
 un to vietā ierakstīt: a vietā -- skaitli $5a-2b$, bet b  vietā -- skaitli $5b-2a$.
 Vai, vairākkārt veicot šādus gājienus, var iegūt tabulu, kāda attēlota 4. zīm.?
 
-![3.zīm.](LV.AO.2011.6.4A.png)
+![3.zīm.](LV.AMO.2011.6.4A.png)
 
-![4.zīm.](LV.AO.2011.6.4B.png)
+![4.zīm.](LV.AMO.2011.6.4B.png)
 
 
 <small>
@@ -2169,7 +2169,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2011.6.5
+# <lo-sample/> LV.AMO.2011.6.5
 
 
 Betai bija $50$ konfektes, bet Almai un Danai bija vienāds konfekšu skaits. 
@@ -2194,7 +2194,7 @@ questionType=Find.Only
 
 -----
 
-# <lo-sample/> LV.AO.2011.7.1
+# <lo-sample/> LV.AMO.2011.7.1
 
 Uz tāfeles augošā secībā uzrakstīti seši dažādi pirmskaitļi, kas
 nepārsniedz $100$. Par tiem zināms, ka
@@ -2229,7 +2229,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> LV.AO.2011.7.3
+# <lo-sample/> LV.AMO.2011.7.3
 
 Atrodi naturālu skaitli, kuru, dalot ar $2010$, atlikumā iegūst $13$, bet,
 dalot ar $2011$, atlikumā iegūst $3$.
@@ -2248,7 +2248,7 @@ questionType=Find.Any
 
 -----
 
-# <lo-sample/> LV.AO.2011.7.4
+# <lo-sample/> LV.AMO.2011.7.4
 
 Kvadrāts sadalīts piecos taisnstūros tā, ka šo taisnstūru malu garumi
 centimetros ir visi naturālie skaitļi no $1$ līdz $10$. Parādi vienu
@@ -2257,7 +2257,7 @@ piemēru, kā to var izdarīt!
 
 -----
 
-# <lo-sample/> LV.AO.2011.7.5
+# <lo-sample/> LV.AMO.2011.7.5
 
 Taisne nokrāsota $10$ dažādās krāsās. Pierādi, ka uz tās var atrast
 divus vienas krāsas punktus, starp kuriem attālums centimetros ir
@@ -2275,7 +2275,7 @@ vesels skaitlis.
 
 -----
 
-# <lo-sample/> LV.AO.2011.8.1
+# <lo-sample/> LV.AMO.2011.8.1
 
 Starp skaitļiem
 $$8\;\;3\;\;5\;\;2,$$
@@ -2304,7 +2304,7 @@ questionType=Find.Any
 
 -----
 
-# <lo-sample/> LV.AO.2011.8.4
+# <lo-sample/> LV.AMO.2011.8.4
 
 Leonards izvēlējās patvaļīgu trīsciparu skaitli, pareizināja to ar $2$ un
 tam galā pierakstīja sākotnējo skaitli. Vai viņa jauniegūtais skaitlis
@@ -2333,7 +2333,7 @@ questionType=ProveDisprove.ForAll
 
 -----
 
-# <lo-sample/> LV.AO.2011.8.5
+# <lo-sample/> LV.AMO.2011.8.5
 
 Jānis un Anna spēlē šādu spēli. Uz tāfeles ir uzrakstīts naturāls
 skaitlis. Spēlētāji pēc kārtas veic gājienu: no uzrakstītā skaitļa atņem
@@ -2366,7 +2366,7 @@ questionType=Algorithm,Prove.ForAll
 
 -----
 
-# <lo-sample/> LV.AO.2011.9.1
+# <lo-sample/> LV.AMO.2011.9.1
 
 Atrodi visus naturālu skaitļu pārus $(x, y)$ tādus, ka $x\neq y$ un
 $$\frac{1}{x^2 + 24} + \frac{1}{y^2 + 24} = \frac{2}{xy + 24}.$$
@@ -2374,7 +2374,7 @@ $$\frac{1}{x^2 + 24} + \frac{1}{y^2 + 24} = \frac{2}{xy + 24}.$$
 
 -----
 
-# <lo-sample/> LV.AO.2011.9.3
+# <lo-sample/> LV.AMO.2011.9.3
 
 Dots vienādojums $\# x^2 − \# x + \# = 0$. Divi rūķīši spēlē spēli – pirmais
 nosauc trīs dažādus skaitļus, bet otrais tos kaut kādā secībā saliek
@@ -2384,7 +2384,7 @@ būtu vismaz viena racionāla sakne?
 
 -----
 
-# <lo-sample/> LV.AO.2011.9.4
+# <lo-sample/> LV.AMO.2011.9.4
 
 Kāds lielākais skaits pēc kārtas sekojošu naturālu skaitļu var būt ar
 īpašību, ka katrs no tiem ir izsakāms kā divu naturālu skaitļu
@@ -2395,20 +2395,20 @@ kvadrātu starpība?
 
 -----
 
-# <lo-sample/> LV.AO.2011.10.1
+# <lo-sample/> LV.AMO.2011.10.1
 
 Cik dažādos veidos skaitli $2011$ var izteikt kā vismaz divu pēc kārtas
 sekojošu naturālu skaitļu summu? Saskaitāmo secība nav svarīga. 
 
 
 <!--
-seeAlso=LV.AO.2010.10.4
+seeAlso=LV.AMO.2010.10.4
 -->
 
 
 -----
 
-# <lo-sample/> LV.AO.2011.11.1
+# <lo-sample/> LV.AMO.2011.11.1
 
 Dotas trīs aritmētiskas progresijas:  
 (1) $1, 15, 29, 43, 57, 71, \ldots$  
@@ -2420,13 +2420,13 @@ dotajām virknēm!
 
 
 <!--
-seeAlso=LV.AO.2010.11.1
+seeAlso=LV.AMO.2010.11.1
 -->
 
 
 -----
 
-# <lo-sample/> LV.AO.2011.11.5
+# <lo-sample/> LV.AMO.2011.11.5
 
 Vai pa riņķa līniju var izvietot $2011$ dažādus naturālus skaitļus tā, ka
 jebkuriem diviem blakus esošiem skaitļiem lielākā skaitļa attiecība
@@ -2435,7 +2435,7 @@ pret mazāko ir pirmskaitlis?
 
 -----
 
-# <lo-sample/> LV.AO.2011.12.1
+# <lo-sample/> LV.AMO.2011.12.1
 
 Naturālie skaitļi no $1$ līdz $9$ sadalīti trīs grupās pa trim skaitļiem un
 katrā grupā aprēķināta tajā ietilpstošo skaitļu summa. Vai var būt, ka  
@@ -2448,7 +2448,7 @@ katrā grupā aprēķināta tajā ietilpstošo skaitļu summa. Vai var būt, ka
 
 -----
 
-# <lo-sample/> LV.AO.2012.5.1
+# <lo-sample/> LV.AMO.2012.5.1
 
 Divu naturālu skaitļu pierakstā izmantoti tikai cipari $1$, $4$, $6$ un $9$. Vai
 var gadīties, ka viens skaitlis ir tieši septiņas reizes lielāks nekā otrs
@@ -2468,7 +2468,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2012.5.2
+# <lo-sample/> LV.AMO.2012.5.2
 
 Parādi, kā kvadrātu var sadalīt vairākos platleņķa trijstūros.
 (Trijstūri sauc par platleņķa trijstūri, ja tam ir viens plats leņķis un
@@ -2482,14 +2482,14 @@ divi šauri leņķi.)
 </small>
 
 <!--
-sameAs=LV.AO.2011.5.3
+sameAs=LV.AMO.2011.5.3
 questionType=ProveDisprove.Exists
 -->
 
 
 -----
 
-# <lo-sample/> LV.AO.2012.5.3
+# <lo-sample/> LV.AMO.2012.5.3
 
 
 Maisā ir baltas, zaļas un sarkanas pogas (citu krāsu pogu maisā nav).
@@ -2511,7 +2511,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2012.5.4
+# <lo-sample/> LV.AMO.2012.5.4
 
 
 $24$-stāvu mājā ir lifts, kuram ir divas pogas. Nospiežot vienu pogu,
@@ -2533,11 +2533,11 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2012.5.5
+# <lo-sample/> LV.AMO.2012.5.5
 
 Sadali 1. zīmējumā attēloto figūru trīs vienādās figūrās.
 (Figūru un tās spoguļattēlu saucam par vienādām figūrām.) . 
-![1.zīm](LV.AO.2012.5.5.png)
+![1.zīm](LV.AMO.2012.5.5.png)
 
 <small>
 
@@ -2552,7 +2552,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2012.7.1
+# <lo-sample/> LV.AMO.2012.7.1
 
 Vai var atrast tādus veselus skaitļus $a$ un $b$, kuriem izpildās vienādība
 $$ab(3a + 5b) = 1234567?$$
@@ -2578,7 +2578,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2012.7.2
+# <lo-sample/> LV.AMO.2012.7.2
 
 Doti seši nogriežņi ar garumiem $1\mbox{cm}$, $3\mbox{cm}$, $5\mbox{cm}$, 
 $7\mbox{cm}$, $9\mbox{cm}$, $11\mbox{cm}$. 
@@ -2591,7 +2591,7 @@ vesels nogrieznis)?
 
 -----
 
-# <lo-sample/> LV.AO.2012.8.1
+# <lo-sample/> LV.AMO.2012.8.1
 
 Starp skaitļiem
 $$4\;\;1\;\;5\;\;7,$$
@@ -2622,7 +2622,7 @@ questionType=Find.Any
 
 -----
 
-# <lo-sample/> LV.AO.2012.8.3
+# <lo-sample/> LV.AMO.2012.8.3
 
 Skolas matemātikas olimpiādē piedalījās ne vairāk kā $60$ skolēnu.
 Vidējais punktu skaits, ko ieguva zēni, bija $21,6$. Vidējais punktu
@@ -2653,7 +2653,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> LV.AO.2012.8.4
+# <lo-sample/> LV.AMO.2012.8.4
 
 Pa apli uzrakstīti $11$ veseli skaitļi. Jebkuru trīs pēc kārtas ņemtu
 skaitļu summa dalās ar $5$. Pierādi, ka visi uzrakstītie skaitļi dalās ar
@@ -2680,7 +2680,7 @@ questionType=Prove.ForAll
 
 -----
 
-# <lo-sample/> LV.AO.2012.9.1
+# <lo-sample/> LV.AMO.2012.9.1
 
 Atrodi vienu skaitli, kuram ir tieši $12$ veseli pozitīvi dalītāji.
 
@@ -2699,7 +2699,7 @@ questionType=Find.Any
 
 -----
 
-# <lo-sample/> LV.AO.2012.9.2
+# <lo-sample/> LV.AMO.2012.9.2
 
 Trijstūrī $ABC$ $\angle ABC = 90^{\circ}$ , bet punkts $P$ atrodas uz malas $AB$.
 Punkti $M$ un $N$ ir attiecīgi nogriežņu $AC$ un $PC$ viduspunkti. Pierādi,
@@ -2718,7 +2718,7 @@ questionType=Prove.ForAll
 
 -----
 
-# <lo-sample/> LV.AO.2012.9.3
+# <lo-sample/> LV.AMO.2012.9.3
 
 Kvadrātvienādojuma $x^2 − 507x + a = 0$ saknes ir $p^2$ un $q$, kur $p$ un
 $q$ ir pirmskaitļi. Aprēķini $a$ skaitlisko vērtību.
@@ -2738,7 +2738,7 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> LV.AO.2012.9.4
+# <lo-sample/> LV.AMO.2012.9.4
 
 Uz tāfeles uzrakstītas deviņas zvaigznītes 
 $\ast\;\ast\;\ast\;\ast\;\ast\;\ast\;\ast\;\ast\;\ast\;$. 
@@ -2763,7 +2763,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2012.9.5
+# <lo-sample/> LV.AMO.2012.9.5
 
 
 Dota trapece, kuras pamatu malu garumi ir $3$ un $13$.
@@ -2787,7 +2787,7 @@ questionType=Prove.NotExists
 
 -----
 
-# <lo-sample/> LV.AO.2012.10.1
+# <lo-sample/> LV.AMO.2012.10.1
 
 Pierādi: ja $p$ un $14p^2+1$ ir pirmskaitļi, tad $14p^2-1$ ir naturāla
 skaitļa kubs.
@@ -2821,7 +2821,7 @@ $14p^2 +1 = 127$ un $14p^2 - 1 = 125$, kas tiešām ir pilns kubs $5^3$.
 
 -----
 
-# <lo-sample/> LV.AO.2012.11.1
+# <lo-sample/> LV.AMO.2012.11.1
 
 Pierādi, ka nav tāda naturāla skaitļa $n$, ka skaitlis 
 $n^2 − 3n − 1$ dalās ar $169$.
@@ -2829,7 +2829,7 @@ $n^2 − 3n − 1$ dalās ar $169$.
 
 -----
 
-# <lo-sample/> LV.AO.2012.12.1
+# <lo-sample/> LV.AMO.2012.12.1
 
 Skaitļi $A$ un $B$ ir divi dažādi $7$-ciparu skaitļi, 
 kuri katrs satur visus ciparus no $1$ līdz $7$. 
@@ -2838,7 +2838,7 @@ Pierādi, ka $A$ nedalās ar $B$.
 
 -----
 
-# <lo-sample/> LV.AO.2013.5.1
+# <lo-sample/> LV.AMO.2013.5.1
 
 
 Cik reizes diennaktī sakrīt pulksteņa stundu un minūšu
@@ -2847,7 +2847,7 @@ rādītāji? (Plkst. 00:00 un 24:00 ieskaitīt vienu reizi.) *Atbildi pamatot!*
 
 -----
 
-# <lo-sample/> LV.AO.2013.5.2
+# <lo-sample/> LV.AMO.2013.5.2
 
 $24$-stāvu mājā ir lifts, kuram ir divas pogas. 
 Nospiežot vienu pogu,
@@ -2861,7 +2861,7 @@ stāvu.)
 
 -----
 
-# <lo-sample/> LV.AO.2013.5.3
+# <lo-sample/> LV.AMO.2013.5.3
 
 
 1. zīmējumā katrā aplītī ierakstīt vienu
@@ -2869,22 +2869,22 @@ ciparu, katrā aplītī – citu, tā, lai katros
 trīs aplīšos, kas atrodas uz vienas
 taisnes, ierakstīto skaitļu summa būtu
 viena un tā pati.  
-[1.zīm.](LV.AO.2013.5.3.png)
+[1.zīm.](LV.AMO.2013.5.3.png)
 
 -----
 
-# <lo-sample/> LV.AO.2013.5.4
+# <lo-sample/> LV.AMO.2013.5.4
 
 No 2. zīmējumā redzamajām figūrām salikt
 taisnstūri ar laukumu $40$ rūtiņas. Figūras nedrīkst
 pārklāties un katra veida figūra jāizmanto vismaz
 vienu reizi. (Figūras var būt pagrieztas vai
 apgrieztas otrādi.) . 
-[2.zīm.](LV.AO.2013.5.4.png)
+[2.zīm.](LV.AMO.2013.5.4.png)
 
 -----
 
-# <lo-sample/> LV.AO.2013.5.5
+# <lo-sample/> LV.AMO.2013.5.5
 
 Kuba katra skaldne sadalīta četros vienādos kvadrātos. Vai šos
 kvadrātus var nokrāsot a) divās; b) trīs krāsās tā, ka kvadrāti, kam
@@ -2894,7 +2894,7 @@ ir jākrāso vienā krāsā. *Atbildi pamatot!*
 
 -----
 
-# <lo-sample/> LV.AO.2013.6.1
+# <lo-sample/> LV.AMO.2013.6.1
 
 Uz tāfeles uzrakstīti desmit skaitļi:
 $$1\;\;2\;\;3\;\;4\;\;5\;\;6\;\;7\;\;8\;\;9\;\;10.$$  
@@ -2906,7 +2906,7 @@ beigās tiek iegūts viens un tas pats skaitlis. Kāds tas ir?
 
 -----
 
-# <lo-sample/> LV.AO.2013.6.2
+# <lo-sample/> LV.AMO.2013.6.2
 
 Vai var atrast tādus divus viens otram sekojošus naturālus skaitļus,
 viens no kuriem dalās ar $3$ un kuru  
@@ -2915,24 +2915,24 @@ viens no kuriem dalās ar $3$ un kuru
 
 -----
 
-# <lo-sample/> LV.AO.2013.6.3
+# <lo-sample/> LV.AMO.2013.6.3
 
 Sagriezt 3. zīmējumā attēloto figūru $20$
 vienādās mazākās figūrās (figūras var būt
 pagrieztas vai apgrieztas otrādi).   
-![3.zīm.](LV.AO.2013.6.3.png)
+![3.zīm.](LV.AMO.2013.6.3.png)
 
 
 -----
 
-# <lo-sample/> LV.AO.2013.6.4
+# <lo-sample/> LV.AMO.2013.6.4
 
 Vai skaitļus no $100$ līdz $200$ var sadalīt divās grupās tā, ka skaitļu
 reizinājumi abās grupās ir vienādi?
 
 -----
 
-# <lo-sample/> LV.AO.2013.6.5
+# <lo-sample/> LV.AMO.2013.6.5
 
 Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem 5x5
 rūtiņas trīs **tukšās** vienas rindas vai kolonnas **blakus** rūtiņās
@@ -2943,7 +2943,7 @@ gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru?
 
 -----
 
-# <lo-sample/> LV.AO.2013.7.1
+# <lo-sample/> LV.AMO.2013.7.1
 
 Naturālā divciparu skaitlī neviens no cipariem nav $0$. Pierādīt, ka,
 dalot šo skaitli ar tā ciparu reizinājumu, dalījums ir vismaz $\frac{11}{9}$.
@@ -2973,7 +2973,7 @@ $\frac{10a+b}{ab}=\frac{10}{b}+\frac{1}{a}$ ir vismazākā, ja $a=b=9$.
 
 
 
-# <lo-sample/> LV.AO.2013.7.2
+# <lo-sample/> LV.AMO.2013.7.2
 
 Doti seši nogriežņi ar garumiem $1\mbox{cm}$, $3\mbox{cm}$, $5\mbox{cm}$, 
 $7\mbox{cm}$, $9\mbox{cm}$, $11\mbox{cm}$. 
@@ -2983,13 +2983,13 @@ vesels nogrieznis)?
 
 
 <!--
-sameAs=LV.AO.2012.7.2
+sameAs=LV.AMO.2012.7.2
 -->
 
 
 -----
 
-# <lo-sample/> LV.AO.2013.7.3
+# <lo-sample/> LV.AMO.2013.7.3
 
 Pierādīt, ka skaitlis $1234567891011\ldots{}175176$ (pēc kārtas uzrakstīti
 visi naturālie skaitļi no $1$ līdz $176$) nav naturāla skaitļa kvadrāts.
@@ -3033,17 +3033,17 @@ saturēt pirmskaitli $2$ nepāru pakāpē.
 
 -----
 
-# <lo-sample/> LV.AO.2013.7.4
+# <lo-sample/> LV.AMO.2013.7.4
 
 Vai kvadrātā $5 \times 5$ rūtiņas var iekrāsot **(a)** $6$ rūtiņas; **(b)** $5$ rūtiņas tā,
 lai atlikušajā daļā nevarētu ievietot nevienu 4. zīmējumā redzamo
 figūru (tā var būt pagriezta vai apgāzta otrādi)?  
-![4.zīm](LV.AO.2013.7.4.png)
+![4.zīm](LV.AMO.2013.7.4.png)
 
 
 -----
 
-# <lo-sample/> LV.AO.2013.7.5
+# <lo-sample/> LV.AMO.2013.7.5
 
 Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem $6 \times 6$
 rūtiņas trīs **tukšās** vienas rindas vai kolonnas **blakus** rūtiņās
@@ -3055,7 +3055,7 @@ gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru?
 
 -----
 
-# <lo-sample/> LV.AO.2013.8.1
+# <lo-sample/> LV.AMO.2013.8.1
 
 Atrast visus naturālos skaitļus, kas nepārsniedz $1000000$ un kuri,
 nosvītrojot to pirmo ciparu, samazinās $36$ reizes.
@@ -3080,7 +3080,7 @@ Tad $a = 7$, $b=2\cdot 10^{k-1}$.
 
 -----
 
-# <lo-sample/> LV.AO.2013.8.2
+# <lo-sample/> LV.AMO.2013.8.2
 
 Dots trijstūris $ABC$ un punkts $P$ tā iekšpusē. Pierādi, ka attālumu
 summa no punkta $P$ līdz dotā trijstūra virsotnēm ir lielāka nekā
@@ -3089,7 +3089,7 @@ puse no trijstūra perimetra.
 
 -----
 
-# <lo-sample/> LV.AO.2013.8.3
+# <lo-sample/> LV.AMO.2013.8.3
 
 Doti tādi reāli skaitļi $t$ un $a$, ka 
 $t^2 - t \cdot sqrt(t) + a = 0$.  
@@ -3097,7 +3097,7 @@ Pierādīt, ka $t \geq 4a$.
 
 -----
 
-# <lo-sample/> LV.AO.2013.8.4
+# <lo-sample/> LV.AMO.2013.8.4
 
 Vai regulāru sešstūri var sadalīt **(a)** deviņos; **(b)** astoņos vienādos
 daudzstūros?
@@ -3105,7 +3105,7 @@ daudzstūros?
 
 -----
 
-# <lo-sample/> LV.AO.2013.8.5
+# <lo-sample/> LV.AMO.2013.8.5
 
 Rūķītis ir iedomājies skaitļus $x_1,x_2,x_3,x_4$, 
 katrs no tiem ir vai nu $0$, vai $1$. 
@@ -3119,7 +3119,7 @@ $x_1 \geq x_2 \geq x_3 \geq x_4$).
 
 -----
 
-# <lo-sample/> LV.AO.2013.9.1
+# <lo-sample/> LV.AMO.2013.9.1
 
 Dota trapece, kuras pamatu malu garumi ir $3$ un $13$. Pierādīt, ka to
 nevar sadalīt piecos vienlielos trijstūros.
@@ -3127,7 +3127,7 @@ nevar sadalīt piecos vienlielos trijstūros.
 
 -----
 
-# <lo-sample/> LV.AO.2013.9.2
+# <lo-sample/> LV.AMO.2013.9.2
 
 Kvadrāta ar izmēriem $4 \times 4$ rūtiņas katra rūtiņu virsotne nokrāsota
 vienā no divām krāsām. Pierādīt, ka noteikti var atrast trīs punktus,
@@ -3136,7 +3136,7 @@ trijstūra virsotnēs.
 
 -----
 
-# <lo-sample/> LV.AO.2013.9.3
+# <lo-sample/> LV.AMO.2013.9.3
 
 Doti četri dažādi cipari, neviens no kuriem nav $0$. Visu divciparu
 skaitļu, kurus var izveidot no šiem cipariem, summa ir $484$. Atrast
@@ -3144,7 +3144,7 @@ dotos četrus ciparus.
 
 -----
 
-# <lo-sample/> LV.AO.2013.9.4
+# <lo-sample/> LV.AMO.2013.9.4
 
 Dota skaitļu virkne $x_0,x_1,x_2_,x_3,\ldots$, 
 kurā $x_0 \geq 0$ un $x_{n+1}=x_n + \frac{2}{x_n}$ visiem 
@@ -3153,14 +3153,14 @@ $n \geq 0$. Pierādīt, ka $x_{100} \geq 20$.
 
 -----
 
-# <lo-sample/> LV.AO.2013.9.5
+# <lo-sample/> LV.AMO.2013.9.5
 
 Dots izliekts četrstūris. Uzzīmēti četri riņķi, kuru diametri ir
 četrstūra malas. Pierādīt, ka šie riņķi pilnībā pārklāj doto četrstūri.
 
 -----
 
-# <lo-sample/> LV.AO.2013.10.1
+# <lo-sample/> LV.AMO.2013.10.1
 
 Dots, ka $x_1$ ir vienādojuma $x^2+px+q=0$ sakne, 
 bet $x_2$ ir vienādojuma $-x^2+px+q=0$ sakne. Pierādīt, ka vienādojumam 
@@ -3171,7 +3171,7 @@ $x_2 \leq x_3 \leq x_1$).
 
 -----
 
-# <lo-sample/> LV.AO.2013.10.2
+# <lo-sample/> LV.AMO.2013.10.2
 
 Trijstūrī $ABC$ nogrieznis $CD$ ir bisektrise. Caur punktu $C$ novilkta
 riņķa līnija, kas pieskaras malai $AB$ punktā $D$. Tā krusto malas $AC$
@@ -3181,7 +3181,7 @@ $AB \parallel PQ$.
 
 -----
 
-# <lo-sample/> LV.AO.2013.10.3
+# <lo-sample/> LV.AMO.2013.10.3
 
 Par $n$-heksu sauksim plaknes figūru, kas
 izveidota no $n$ regulāriem sešstūriem tā, ka
@@ -3191,11 +3191,11 @@ Kādam mazākajam $n$ ($n \geq 2$) eksistē tāds
 $n$-hekss, ar kuriem nevar pārklāt 5. zīm.
 attēloto figūru (tā sastāv no regulāriem
 sešstūriem ar caurumu centrā)?  
-![5.zīm](LV.AO.2013.10.3.png)
+![5.zīm](LV.AMO.2013.10.3.png)
 
 -----
 
-# <lo-sample/> LV.AO.2013.10.4
+# <lo-sample/> LV.AMO.2013.10.4
 
 No pirmajiem $100$ naturālajiem skaitļiem izvēlēts $51$ skaitlis.
 Pierādīt, ka no tiem var izvēlēties divus, no kuriem viens dalās ar
@@ -3239,7 +3239,7 @@ skaitlis, kurš rodas, ja atkārtoti dala ar $2$.
 
 -----
 
-# <lo-sample/> LV.AO.2013.10.5
+# <lo-sample/> LV.AMO.2013.10.5
 
 Vai pa riņķi var uzrakstīt $2013$ naturālus skaitļus tā, lai jebkuru
 divu blakus esošu skaitļu attiecība būtu $2$, $3$, $12$ vai $18$?
@@ -3247,7 +3247,7 @@ divu blakus esošu skaitļu attiecība būtu $2$, $3$, $12$ vai $18$?
 
 -----
 
-# <lo-sample/> LV.AO.2013.11.1
+# <lo-sample/> LV.AMO.2013.11.1
 
 Pierādīt, ka nav tāda naturāla skaitļa $n$, ka skaitlis 
 $n^2-3n-1$ ar $169$.
@@ -3255,14 +3255,14 @@ $n^2-3n-1$ ar $169$.
 
 -----
 
-# <lo-sample/> LV.AO.2013.11.2
+# <lo-sample/> LV.AMO.2013.11.2
 
 Vai eksistē regulārs daudzstūris, kuram vienas diagonāles garums
 ir vienāds ar divu citu diagonāļu garumu summu?
 
 -----
 
-# <lo-sample/> LV.AO.2013.11.3
+# <lo-sample/> LV.AMO.2013.11.3
 
 Doti dažādi nepāra naturāli skaitļi $a_1, a_2, \ldots, a_n$. 
 Neviens no tiem nedalās ne ar vienu pirmskaitli, kas lielāks 
@@ -3272,7 +3272,7 @@ $$\frac{1}{a_1} + \frac{1}{a_2} + \frac{1}{a_3} + \ldots \frac{1}{a_n} < 2.$$
 
 -----
 
-# <lo-sample/> LV.AO.2013.11.4
+# <lo-sample/> LV.AMO.2013.11.4
 
 Kādā valstī ir $2013$ pilsētas, no katras uz katru var aizlidot ar
 lidmašīnu. Dažus no šiem reisiem apkalpo aviokompānija $A$,
@@ -3289,7 +3289,7 @@ sākotnējā pilsēta $Z$.
 
 -----
 
-# <lo-sample/> LV.AO.2013.11.5
+# <lo-sample/> LV.AMO.2013.11.5
 
 Uz galda virsmas, kurai ir taisnstūra forma, izvietoti vairāki
 vienādi kvadrātveida papīra gabaliņi, kuru malas ir paralēlas galda
@@ -3299,14 +3299,14 @@ tieši ar vienu adatu.
 
 -----
 
-# <lo-sample/> LV.AO.2013.12.1
+# <lo-sample/> LV.AMO.2013.12.1
 
 Atrisināt reālos skaitļos vienādojumu 
 ${\displaystyle \log_{10} x  \cdot \log_{10} (4-x)=\frac{1}{4}}$.
 
 -----
 
-# <lo-sample/> LV.AO.2013.12.2
+# <lo-sample/> LV.AMO.2013.12.2
 
 Trijstūrī $ABC$ punkti $M$, $N$ un $K$ ir attiecīgi malu $AB$, $BC$ un $CA$
 viduspunkti. Ir novilktas trīs riņķa līnijas: caur punktiem $K$, $A$, $M$;
@@ -3316,7 +3316,7 @@ novilktās riņķa līnijas krustojas vienā punktā.
 
 -----
 
-# <lo-sample/> LV.AO.2013.12.3
+# <lo-sample/> LV.AMO.2013.12.3
 
 Pierādīt, ka neeksistē tādi naturāli skaitļi $x, y, z$, ka izpildās
 vienādība $6^x + 13^y = 29^z$.
@@ -3324,7 +3324,7 @@ vienādība $6^x + 13^y = 29^z$.
 
 -----
 
-# <lo-sample/> LV.AO.2013.12.4
+# <lo-sample/> LV.AMO.2013.12.4
 
 Kādas valodas alfabētā ir $i$ patskaņi ($i \geq 2$) un 
 $j$ līdzskaņi ($j \geq 2$).
@@ -3341,7 +3341,7 @@ $$S(n+3) = i \cdot j \cdot S(n+1) + i \cdot j^2 \cdot S(n).$$
 
 -----
 
-# <lo-sample/> LV.AO.2013.12.5
+# <lo-sample/> LV.AMO.2013.12.5
 
 Dota kvadrātisku rūtiņu plakne, katras rūtiņas malas garums ir $1$.
 Pierādīt, ka eksistē trijstūris, kura virsotnes atrodas šīs plaknes
@@ -3352,7 +3352,7 @@ kur $P$ ir šī trijstūra perimetrs.
 
 -----
 
-# <lo-sample/> LV.AO.2014.5.1
+# <lo-sample/> LV.AMO.2014.5.1
 
 Pūkainīšu ciemata bērniem Lieldienu zaķis atnesa olas. Katra no tām bija nokrāsota tieši
 vienā no krāsām – sarkanā, dzeltenā, zilā. Zināms, ka $20\%$ jeb $40$ olas bija sarkanas,
@@ -3374,7 +3374,7 @@ questionType=Find.Only
 
 -----
 
-# <lo-sample/> LV.AO.2014.5.2
+# <lo-sample/> LV.AMO.2014.5.2
 
 Divu naturālu skaitļu pierakstā izmantoti tikai cipari $2$, $3$, $7$ un $8$. Vai var gadīties, ka viens
 skaitlis ir tieši trīs reizes lielāks nekā otrs skaitlis?
@@ -3391,14 +3391,14 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2014.5.3
+# <lo-sample/> LV.AMO.2014.5.3
 
 Taisnstūra ABCD malu garumi izsakāmi veselos centimetros. Iekrāsotās daļas laukums ir 
 $6$ $\mbox{cm}^2$ (skat. 1. zīm.). Nogrieznis $AE$ ir $\frac{1}{3}$
 no taisnstūra malas $AD$. Aprēķini taisnstūra
 laukumu un perimetru, ja zināms, ka viena taisnstūra mala ir par $5$ $\mbox{cm}$ garāka nekā otra
 mala.  
-![1.zīm.](LV.AO.2014.5.3.png)
+![1.zīm.](LV.AMO.2014.5.3.png)
 
 <small>
 
@@ -3412,13 +3412,13 @@ questionType=Find.Only
 
 -----
 
-# <lo-sample/> LV.AO.2014.5.4
+# <lo-sample/> LV.AMO.2014.5.4
 
 Kvadrāts sastāv no $8 \times 8$ vienādām kvadrātiskām rūtiņām. Tas sagriezts daļās tā, ka
 griezumi iet pa rūtiņu robežām.  
 Kāds lielākais skaits daļu var būt tādas kā 2. zīm. attēlotā figūra (figūras var būt pagrieztas
 jebkurā stāvoklī)?  
-![2.zīm.](LV.AO.2014.5.4.png)
+![2.zīm.](LV.AMO.2014.5.4.png)
 
 <small>
 
@@ -3432,7 +3432,7 @@ questionType=Find.Max
 
 -----
 
-# <lo-sample/> LV.AO.2014.5.5
+# <lo-sample/> LV.AMO.2014.5.5
 
 Kāds ir **(a)** mazākais, **(b)** lielākais skaitlis, kuru var izteikt gan kā trīs, gan kā divu dažādu
 divciparu naturālu skaitļu reizinājumu?
@@ -3454,7 +3454,7 @@ questionType=Find.Min,Find.Max
 
 -----
 
-# <lo-sample/> LV.AO.2014.7.2
+# <lo-sample/> LV.AMO.2014.7.2
 
 Vai var atrast tādus veselus skaitļus $a$ un $b$, 
 kuriem izpildās vienādība $a \cdot (3a + 5b) \cdot 7b = 7654321$. 
@@ -3482,7 +3482,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2014.7.1
+# <lo-sample/> LV.AMO.2014.7.1
 
 Trijstūrī $ABC$ novilkts augstums $BD$ un mediāna $BE$. Kāds var būt $AC$ garums, ja
 $ED = 4\mbox{cm}$ un $DC = 5\mbox{cm}$? 
@@ -3492,7 +3492,7 @@ $ED = 4\mbox{cm}$ un $DC = 5\mbox{cm}$?
 
 -----
 
-# <lo-sample/> LV.AO.2014.7.4
+# <lo-sample/> LV.AMO.2014.7.4
 
 Tabulas $3 \times 3$ rūtiņās katrā rūtiņā jāieraksta pa vienam naturālam skaitlim tā, 
 lai katrā rindā,
@@ -3500,7 +3500,7 @@ katrā kolonnā un katrā diagonālē ierakstīto skaitļu summas būtu vienāda
 rūtiņās ierakstītie skaitļi (skat.\ zīm.). Kādam skaitlim jābūt rūtiņā, kas apzīmēta ar
 jautājuma zīmi? Atrodiet visas iespējamās vērtības un pamatojiet, ka citu nav!
 
-![magicsquare](LV.AO.2014.7.4.png)
+![magicsquare](LV.AMO.2014.7.4.png)
 
 
 <small>
@@ -3528,7 +3528,7 @@ Ja $a_{22}=x$, tad summas ir $3x$. Un $a_{13}=2x-13$, $a_{11}=x-11$, $a_{33}=x+1
 
 -----
 
-# <lo-sample/> LV.AO.2014.8.1
+# <lo-sample/> LV.AMO.2014.8.1
 
 Skaitli $\frac{1}{13}$
 pārveidoja par bezgalīgu decimāldaļu un tajā izsvītroja 2014. ciparu aiz komata.
@@ -3561,7 +3561,7 @@ genre=digit-manipulation
 
 -----
 
-# <lo-sample/> LV.AO.2014.8.2
+# <lo-sample/> LV.AMO.2014.8.2
 
 Atrast visus naturālos skaitļus, kas nepārsniedz 
 $1000000$ un kuri, nosvītrojot to pirmo
@@ -3592,14 +3592,14 @@ Tad $a = 7$, $b=5\cdot 10^{k-1}$.
 
 -----
 
-# <lo-sample/> LV.AO.2014.8.5
+# <lo-sample/> LV.AMO.2014.8.5
 
 Tabulas $3 \times 3$ rūtiņās katrā rūtiņā jāieraksta pa vienam naturālam skaitlim tā, lai katrā rindā,
 katrā kolonnā un katrā diagonālē ierakstīto skaitļu summas būtu vienādas. Augšējās rindas
 vidējā rūtiņā ierakstīts skaitlis $24$ (skat.\ zīm.). Vai rūtiņā, kas apzīmēta ar jautājuma
 zīmi, var būt ierakstīts skaitlis **(a)** $7$,  **(b)** $17$?
 
-![magicsquare](LV.AO.2014.8.5.png)
+![magicsquare](LV.AMO.2014.8.5.png)
 
 
 <small>
@@ -3624,7 +3624,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2014.9.2
+# <lo-sample/> LV.AMO.2014.9.2
 
 Doti četri dažādi cipari, neviens no tiem nav $0$. Visu divciparu skaitļu, 
 kurus var izveidot no
@@ -3634,7 +3634,7 @@ kurus var izveidot no
 
 -----
 
-# <lo-sample/> LV.AO.2014.9.4
+# <lo-sample/> LV.AMO.2014.9.4
 
 Tabulas $3 \times 3$ rūtiņās katrā rūtiņā jāieraksta pa vienam 
 naturālam skaitlim tā, lai katrā rindā,
@@ -3644,13 +3644,13 @@ ierakstītie skaitļi ir savā starpā atšķirīgi. Ir zināmi
 divās rūtiņās ierakstītie skaitļi (skat. zīm.). Kāds ir mazākais 
 skaitlis, kas var būt ierakstīts tabulas centrālajā rūtiņā?
 
-![magic square](LV.AO.2014.9.4.png)
+![magic square](LV.AMO.2014.9.4.png)
 
 
 
 -----
 
-# <lo-sample/> LV.AO.2014.10.4
+# <lo-sample/> LV.AMO.2014.10.4
 
 Doti septiņi dažādi naturāli skaitļi; katriem diviem 
 no dotajiem skaitļiem aprēķināja to
@@ -3706,7 +3706,7 @@ $$4\cdot{}3=12$$
 
 <hgroup>
 
-![bipartite](LV.AO.2014.10.4-01.svg)
+![bipartite](LV.AMO.2014.10.4-01.svg)
 
 * Nepāru skaitļi veido kopu $A$ ar $4$ elementiem, 
 pāru skaitļi veido kopu $B$ ar $3$ elementiem. 
@@ -3732,7 +3732,7 @@ tad tajā ir ne vairāk kā $a\cdot{}b$ šķautnes.
 ## Atlikumi, dalot ar 3
 
 
-![bipartite](LV.AO.2014.10.4-02.svg)
+![bipartite](LV.AMO.2014.10.4-02.svg)
 
 * Izvēloties vismazākos nepāru un pāru skaitļus, tikai $9$ no $12$ teorētiski iespējamajiem 
 ir pirmskaitļi (citas summas dalās ar $9$ - apzīmētas ar raustītu līniju). 
@@ -3742,7 +3742,7 @@ dalot ar $3$, var panākt, lai visas $12$ summas būtu pirmskaitļi.
 
 -----
 
-# <lo-sample/> LV.AO.2014.11.2
+# <lo-sample/> LV.AMO.2014.11.2
 
 Skaitļu virknei $(a_i)$ visiem $n>1$ ir spēkā sakarība 
 $a_1 + a_2 + \ldots + a_n = n^2 a_n$. Aprēķināt $a_{50}$,
@@ -3751,7 +3751,7 @@ ja zināms, ka $a_1 = 1000$.
 
 -----
 
-# <lo-sample/> LV.AO.2014.11.4
+# <lo-sample/> LV.AMO.2014.11.4
 
 Doti $99$ naturāli skaitļi. Zināms, ka nav tāda skaitļa, 
 ar ko dalītos visi šie skaitļi, un ka
@@ -3762,7 +3762,7 @@ skaitļu reizinājums ir naturāla skaitļa kvadrāts.
 
 -----
 
-# <lo-sample/> LV.AO.2014.12.3
+# <lo-sample/> LV.AMO.2014.12.3
 
 Atrast visus pirmskaitļus $p$, 
 kuriem $p^4 − 6$ arī ir pirmskaitlis!
@@ -3771,7 +3771,7 @@ kuriem $p^4 − 6$ arī ir pirmskaitlis!
 
 -----
 
-# <lo-sample/> LV.AO.2015.7.3
+# <lo-sample/> LV.AMO.2015.7.3
 
 
 1. Atrast tādu naturālu skaitli, kura ciparu summa ir $13$, pēdējie divi
@@ -3803,7 +3803,7 @@ questionType=Find.Any,ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2015.7.4
+# <lo-sample/> LV.AMO.2015.7.4
 
 Vienādsānu trijstūrī $ABC$ uz pamata malas $BC$ atzīmēts iekšējs punkts $D$
 tā, ka arī trijstūri $ABD$ un $ACD$ ir vienādsānu. Aprēķini trijstūra $ABC$
@@ -3814,7 +3814,7 @@ leņķus! Atrodi visus gadījumus un pamato, ka citu nav!
 
 -----
 
-# <lo-sample/> LV.AO.2015.8.1
+# <lo-sample/> LV.AMO.2015.8.1
 
 Nosaki, vai izteiksmes $\sqrt{6 + 2\sqrt{5}} + \sqrt{6 - 2\sqrt{5}}$ 
 vērtība ir racionāls skaitlis!
@@ -3843,7 +3843,7 @@ questionType=Find.Only
 
 -----
 
-# <lo-sample/> LV.AO.2015.8.3
+# <lo-sample/> LV.AMO.2015.8.3
 
 Atrast vienu naturālu skaitli, kas lielāks nekā $2015$ un ko nevar izteikt kā
 naturāla skaitļa kvadrāta un pirmskaitļa summu.
@@ -3870,7 +3870,7 @@ questionType=Find.Any
 liels pilns kvadrāts, tad $n^2 - a^2$ dalās reizinātājos $>2$.
 
 
-# <lo-sample/> LV.AO.2015.9.3
+# <lo-sample/> LV.AMO.2015.9.3
 
 Pierādi, ka $x^5 - 5x^3 + 4x$ dalās ar $120$, ja $x$ ir vesels skaitlis!
 
@@ -3883,7 +3883,7 @@ Pierādi, ka $x^5 - 5x^3 + 4x$ dalās ar $120$, ja $x$ ir vesels skaitlis!
 
 -----
 
-# <lo-sample/> LV.AO.2015.10.3
+# <lo-sample/> LV.AMO.2015.10.3
 
 Atrast visus naturālos skaitļus, kas ir vienādi ar savu ciparu reizinājumu.
 (Par viencipara skaitļa ciparu reizinājumu sauc tā vienīgo ciparu.)
@@ -3917,7 +3917,7 @@ mazāku rezultātu nekā reizinot ar $10^k$, jo katrs cipars ir mazāks par $10$
 
 -----
 
-# <lo-sample/> LV.AO.2015.11.1
+# <lo-sample/> LV.AMO.2015.11.1
 
 Aplūkojam visus deviņciparu skaitļus, kas nesatur $0$ un kam visi cipari ir
 dažādi. Pierādīt, ka starp tiem pāra skaitļu ir tieši divas reizes mazāk
@@ -3926,7 +3926,7 @@ nekā tādu, kas dalās ar $3$, bet nedalās ar $5$.
 
 -----
 
-# <lo-sample/> LV.AO.2015.11.3
+# <lo-sample/> LV.AMO.2015.11.3
 
 Naturālam skaitlim $n$ ar $M(n)$ apzīmēsim mazāko naturālo skaitli, kas
 beidzas ar $n$ un kura ciparu summa ir $n$. Piemēram, $M(13)=913$.
@@ -3936,7 +3936,7 @@ Pierādīt, ka ir bezgalīgi daudz tādu $n$, ka $M(n)$ dalās ar $n$.
 
 -----
 
-# <lo-sample/> LV.AO.2015.12.5
+# <lo-sample/> LV.AMO.2015.12.5
 
 Atrast visus naturālu skaitļu trijniekus $(a,b,c)$, tādus, ka 
 $a \geq b \geq c \geq 2$
@@ -3954,7 +3954,7 @@ un $ab-1$ dalās ar c, $bc-1$ dalās ar $a$, $ac-1$ dalās ar $b$.
 
 -----
 
-# <lo-sample/> LV.AO.2016.7.2
+# <lo-sample/> LV.AMO.2016.7.2
 
 Karlsons sev pusdienām nopirka $8$ pīrādziņus un $15$ magoņmaizītes, bet
 Brālītis – vienu pīrādziņu un vienu magoņmaizīti. Karlsons par savām
@@ -3985,13 +3985,13 @@ questionType=Find.All
 
 -----
 
-# <lo-sample/> LV.AO.2016.7.3
+# <lo-sample/> LV.AMO.2016.7.3
 
 Dots, ka $AB\parallel{}CD$ un $AD\parallel{}BC$ (skat. 1.att.).
 Nogriežņu $AC$ un $BD$ krustpunkts ir $M$. Uz taisnes
 $AB$ izvēlēts tāds punkts $N$, ka $AM=MN$. Pierādīt,
 ka $\angle ANC=90^{\circ}$.  
-![1.att.](geometry-grade07/LV.AO.2016.7.3.png)
+![1.att.](geometry-grade07/LV.AMO.2016.7.3.png)
 
 
 
@@ -3999,7 +3999,7 @@ ka $\angle ANC=90^{\circ}$.
 
 -----
 
-# <lo-sample/> LV.AO.2016.8.1
+# <lo-sample/> LV.AMO.2016.8.1
 
 Aprēķini dotās izteiksmes vērtību!
 $$\frac{2000016 \cdot 1999984}{5^{12} \cdot 2^{13} - 128}$$
@@ -4029,7 +4029,7 @@ $\frac{4(10^6 - 8)(10^6 + 8)}{2(10^{12} -64)} = \frac{4}{2}=2$.
 
 -----
 
-# <lo-sample/> LV.AO.2016.8.2
+# <lo-sample/> LV.AMO.2016.8.2
 
 Vai var atrast tādus veselus skaitļus $a$ un $b$, ka $ab(a+43b) = 434343$?
 
@@ -4058,7 +4058,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2016.8.3
+# <lo-sample/> LV.AMO.2016.8.3
 
 Zināms, ka skaitlis dalās ar $2016$ un ka visi tā cipari ir dažādi. Kāds ir lielākais
 ciparu skaits, kas var būt šajā skaitlī?
@@ -4091,20 +4091,20 @@ Ciparu summa dalās ar $9$. Samaisa $6,7,8,9,0$, lai dalās ar $7$.
 
 -----
 
-# <lo-sample/> LV.AO.2016.9.2
+# <lo-sample/> LV.AMO.2016.9.2
 
 Vai var atrast tādus veselus skaitļus $x$, $y$ un $z$, ka 
 $x^3 − 2016xyz = 10$?
 
 
 <!--
-seeAlso=LV.AO.2016.10.2
+seeAlso=LV.AMO.2016.10.2
 -->
 
 
 -----
 
-# <lo-sample/> LV.AO.2016.9.4
+# <lo-sample/> LV.AMO.2016.9.4
 
 Naturālu skaitļu virknes $1; 2; 2; 4; 8; 32; 48; \ldots$ 
 katrs loceklis, sākot ar trešo, ir
@@ -4115,7 +4115,7 @@ Kāds ir šīs virknes 2016. loceklis?
 
 -----
 
-# <lo-sample/> LV.AO.2016.10.2
+# <lo-sample/> LV.AMO.2016.10.2
 
 Vai var atrast tādus veselus skaitļus $x$, $y$ un $z$, ka
 $x^3 − 2016xyz = 120$?
@@ -4131,13 +4131,13 @@ $x^3 − 2016xyz = 120$?
 
 <!--
 questionType=ProveDisprove.Exists
-seeAlso=LV.AO.2016.9.2
+seeAlso=LV.AMO.2016.9.2
 -->
 
 
 -----
 
-# <lo-sample/> LV.AO.2016.10.3
+# <lo-sample/> LV.AMO.2016.10.3
 
 Aritmētiskās progresijas četri pēc kārtas ņemti locekļi ir veseli
 skaitļi $A$, $B$, $C$ un $D$. Pierādīt, ka
@@ -4161,7 +4161,7 @@ questionType=Prove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2016.11.2
+# <lo-sample/> LV.AMO.2016.11.2
 
 Vai var atrast tādus naturālus skaitļus $x$, $y$ un $z$, 
 ka $x^2 + y^2 + z^2 = \underbrace{1111 \ldots 1}_{2016}$?
@@ -4170,7 +4170,7 @@ ka $x^2 + y^2 + z^2 = \underbrace{1111 \ldots 1}_{2016}$?
 
 -----
 
-# <lo-sample/> LV.AO.2016.12.2
+# <lo-sample/> LV.AMO.2016.12.2
 
 Pierādīt, ka vienādojumam $10^x + 12^y = 34^z$ nav 
 atrisinājuma naturālos skaitļos!
@@ -4182,20 +4182,20 @@ atrisinājuma naturālos skaitļos!
 
 -----
 
-# <lo-sample/> LV.AO.2017.7.3
+# <lo-sample/> LV.AMO.2017.7.3
 
 
 Divus taisnstūra lapas stūrus nolocīja tā, kā parādīts 3.att. Izrādījās, ka lapas
 apakšējā mala tika sadalīta trīs vienāda garuma nogriežņos un augšējā mala –
 divos vienāda garuma nogriežņos. Pierādīt, ka iekrāsotais trijstūris ir
 vienādmalu!  
-![LV.AO.2017.7.3](LV.AO.2017.7.3.png)
+![LV.AMO.2017.7.3](LV.AMO.2017.7.3.png)
 
 
 
 -----
 
-# <lo-sample/> LV.AO.2017.7.5
+# <lo-sample/> LV.AMO.2017.7.5
 
 Cik ir tādu naturālu divciparu skaitļu, kuriem ciparu reizinājums ir tieši divas
 reizes mazāks nekā pats skaitlis?
@@ -4207,7 +4207,7 @@ questionType=Find.Count
 
 -----
 
-# <lo-sample/> LV.AO.2017.8.5
+# <lo-sample/> LV.AMO.2017.8.5
 
 Vai var atrast tādu desmitciparu skaitli, kas ir vienāds ar visu savu ciparu
 reizinājumu?
@@ -4221,7 +4221,7 @@ questionType=ProveDisprove.Exists
 
 -----
 
-# <lo-sample/> LV.AO.2017.9.5
+# <lo-sample/> LV.AMO.2017.9.5
 
 Atrisināt naturālos skaitļos vienādojumu 
 $x^3 + (x+1)^3 = (x+3)^3 + 1$.
@@ -4230,7 +4230,7 @@ $x^3 + (x+1)^3 = (x+3)^3 + 1$.
 
 -----
 
-# <lo-sample/> LV.AO.2017.10.5
+# <lo-sample/> LV.AMO.2017.10.5
 
 Pierādīt, ja no trim naturāliem skaitļiem $n$; $n+11$ un $n+22$ divi ir
 pirmskaitļi, tad trešais skaitlis dalās ar $6$.
@@ -4250,7 +4250,7 @@ questionType=Prove.ForAll
 
 -----
 
-# <lo-sample/> LV.AO.2017.11.5
+# <lo-sample/> LV.AMO.2017.11.5
 
 Doti naturāli skaitļi $k$ un $n$, $k \leq n$.  
 (a) Vai noteikti $C_n^k$ dalās ar $n$, ja $k$ un $n$ ir savstarpēji pirmskaitļi?  
@@ -4261,7 +4261,7 @@ elementiem.
 
 -----
 
-# <lo-sample/> LV.AO.2017.12.5
+# <lo-sample/> LV.AMO.2017.12.5
 
 (a) Doti naturāli skaitļi no $1$ līdz $11$. Izvēlieties deviņus no tiem 
 un ierakstiet tos $3 \times 3$ rūtiņu tabulā tā, lai katrā rindā, 
@@ -4278,7 +4278,7 @@ izdarīt, ja doti naturāli skaitļi no $1$ līdz $10$?
 
 -----
 
-# <lo-sample/> LV.AO.2018.7.3
+# <lo-sample/> LV.AMO.2018.7.3
 
 
 Uz trijstūra $ABC$ malas $AB$ izvēlēts patvaļīgs iekšējs punkts $D$. Pierādīt, ka 
@@ -4291,7 +4291,7 @@ $CD > \frac{1}{2}(CA+CB-AB)$.
 
 -----
 
-# <lo-sample/> LV.AO.2018.7.4
+# <lo-sample/> LV.AMO.2018.7.4
 
 Atrast tādu veselu skaitli $n$, lai vienādība
 $$(n - 2021)(n - 2018)(n - 2017)(n - 2016) = 2016$$
@@ -4304,7 +4304,7 @@ questionType=Find.Any
 
 -----
 
-# <lo-sample/> LV.AO.2018.8.2
+# <lo-sample/> LV.AMO.2018.8.2
 
 Naturālu skaitļu virknes $1; 8; 8; 64; 192; 432; \ldots$ 
 katrs loceklis, sākot ar trešo, ir vienāds ar divu iepriekšējo 
@@ -4319,7 +4319,7 @@ questionType=Find.Only
 
 -----
 
-# <lo-sample/> LV.AO.2018.9.4
+# <lo-sample/> LV.AMO.2018.9.4
 
 Atrast lielāko naturālo skaitli, kas dalās ar $7$, kura ciparu summa ir $100$ un
 kuram neviens cipars nav $0$.
@@ -4327,7 +4327,7 @@ kuram neviens cipars nav $0$.
 
 -----
 
-# <lo-sample/> LV.AO.2018.10.4
+# <lo-sample/> LV.AMO.2018.10.4
 
 Pierādīt, ja $x$ - naturāls skaitlis, tad
 $x^8 - x^2$ dalās ar $252$.
@@ -4420,7 +4420,7 @@ $$ x_1 \equiv x_2\;(\mbox{mod}\,m)\;\;\Rightarrow\;\;P(x_1) \equiv P(x_2)\;(\mbo
 
 -----
 
-# <lo-sample/> LV.AO.2018.11.1
+# <lo-sample/> LV.AMO.2018.11.1
 
 Pierādīt, ka visām naturālām $n$ vērtībām izpildās
 $$1^3 + 2^3 + 3^3 + \ldots + n^3 = (1 + 2 + 3 + \ldots + n)^2.$$
@@ -4430,7 +4430,7 @@ $$1^3 + 2^3 + 3^3 + \ldots + n^3 = (1 + 2 + 3 + \ldots + n)^2.$$
 
 -----
 
-# <lo-sample/> LV.AO.2018.11.4
+# <lo-sample/> LV.AMO.2018.11.4
 
 Vai eksistē tādi naturāli skaitļi $m$ un $n$, ka $m^2 - n^2 = 2mn$?
 
@@ -4438,7 +4438,7 @@ Vai eksistē tādi naturāli skaitļi $m$ un $n$, ka $m^2 - n^2 = 2mn$?
 
 -----
 
-# <lo-sample/> LV.AO.2018.12.4
+# <lo-sample/> LV.AMO.2018.12.4
 
 Naturāls skaitlis $B$ ir iegūts no naturāla skaitļa $A$, samainot vietām tā ciparus.
 Zināms, ka $A + B = 10^{45}$. Pierādīt, ka gan $A$, gan $B$ dalās ar $5$.
@@ -4454,7 +4454,7 @@ Zināms, ka $A + B = 10^{45}$. Pierādīt, ka gan $A$, gan $B$ dalās ar $5$.
 
 -----
 
-# <lo-sample/> LV.AO.2019.7.5
+# <lo-sample/> LV.AMO.2019.7.5
 
 Kādai mazākajai naturālai $n$ vērtībai skaitli $10^n$
 iespējams izteikt kā septiņu
@@ -4469,7 +4469,7 @@ questionType=Find.Min
 
 -----
 
-# <lo-sample/> LV.AO.2019.8.5
+# <lo-sample/> LV.AMO.2019.8.5
 
 Kādai mazākajai naturālai $n$ vērtībai skaitli $10^n$
 iespējams izteikt kā sešu
@@ -4488,7 +4488,7 @@ questionType=Find.Min
 
 -----
 
-# <lo-sample/> LV.AO.2019.9.4
+# <lo-sample/> LV.AMO.2019.9.4
 
 Ja naturāla sešciparu skaitļa visus nepāra ciparus aizvietotu ar $7$, iegūtu skaitli,
 kas ir par $5998$ lielāks nekā sākotnējais skaitlis. Savukārt, ja sākotnējā skaitlī
@@ -4501,7 +4501,7 @@ nekā sākotnējais. Atrast doto sešciparu skaitli!
 
 -----
 
-# <lo-sample/> LV.AO.2019.9.5
+# <lo-sample/> LV.AMO.2019.9.5
 
 
 Vai eksistē tāds kvadrātvienādojums ar veseliem koeficientiem, kuram ir
@@ -4514,7 +4514,7 @@ $$\times \left( \sqrt{2019} + \sqrt{2018} \right)
 
 -----
 
-# <lo-sample/> LV.AO.2019.10.1
+# <lo-sample/> LV.AMO.2019.10.1
 
 Pierādīt, ka visām naturālām $n$ vērtībām ir spēkā vienādība
 $$6 + 24 + 60 + \cdots + n(n + 1)(n + 2) =$$
@@ -4533,7 +4533,7 @@ questionType=Prove.ForAll
 
 -----
 
-# <lo-sample/> LV.AO.2019.10.4
+# <lo-sample/> LV.AMO.2019.10.4
 
 Kādām naturālām $n$ vērtībām izteiksme 
 $n^2 + n + 19$ ir kāda naturāla skaitļa kvadrāts?
@@ -4550,7 +4550,7 @@ questionType=Find.All
 
 -----
     
-# <lo-sample/> LV.AO.2019.11.1
+# <lo-sample/> LV.AMO.2019.11.1
 
 Atrisināt nevienādību 
 
@@ -4558,7 +4558,7 @@ $$\frac{(x-20)^{19} \cdot (x + 4)}{\left( \sqrt{x^2 + 4} \right) \left( 9-x^2 \r
 
 -----
 
-# <lo-sample/> LV.AO.2019.11.2
+# <lo-sample/> LV.AMO.2019.11.2
 
 Divi spēlētāji pamīšus raksta uz tāfeles skaitļa $216$ 
 naturālos dalītājus. Katrā gājienā jāievēro šādi noteikumi:
@@ -4579,12 +4579,12 @@ otrais – vienmēr var uzvarēt?
 
 
 <!--
-seeAlso=LV.AO.2019.12.2
+seeAlso=LV.AMO.2019.12.2
 -->
 
 -----
     
-# <lo-sample/> LV.AO.2019.11.3
+# <lo-sample/> LV.AMO.2019.11.3
 
 Uz trijstūra $ABC$ malām $AB$ un $BC$ izvēlēti attiecīgi tādi punkti $D$ un $E$, ka
 $AC \parallel DE$. Nogriežņi $AE$ un $CD$ krustojas punktā $F$. Punkti $B$, $D$, $E$ un $F$
@@ -4595,7 +4595,7 @@ trijstūrim $ABC$ apvilkto riņķa līniju punktā $G$. Pierādīt, ka $FH = GH$
 
 -----
 
-# <lo-sample/> LV.AO.2019.11.4
+# <lo-sample/> LV.AMO.2019.11.4
 
 Zināms, ka vairāku naturālu skaitļu summa ir **(a)** $2019$, **(b)** $2020$.   
 Kāds ir lielākais iespējamais šo skaitļu reizinājums? 
@@ -4628,7 +4628,7 @@ $2\cdot{} 2 \cdot{} 2 < 3 \cdot 3$.
 
 -----
 
-# <lo-sample/> LV.AO.2019.11.5
+# <lo-sample/> LV.AMO.2019.11.5
 
 Dots reāls skaitlis $x$ un naturāls skaitlis $n$. Zināms, ka gan $x^2-nx$, 
 gan $x^3-nx$ ir racionāli skaitļi. Pierādīt, ka arī $x$ ir racionāls skaitlis!
@@ -4637,7 +4637,7 @@ gan $x^3-nx$ ir racionāli skaitļi. Pierādīt, ka arī $x$ ir racionāls skait
 
 -----
     
-# <lo-sample/> LV.AO.2019.12.1
+# <lo-sample/> LV.AMO.2019.12.1
 
 Atrisināt vienādojumu
 
@@ -4647,7 +4647,7 @@ $$\cos 3x \cos 2x + \sin 2x \sin 3x = \left( \cos \frac{\pi}{10} - \sin \frac{\p
 
 -----
 
-# <lo-sample/> LV.AO.2019.12.2
+# <lo-sample/> LV.AMO.2019.12.2
 
 Divi spēlētāji pamīšus raksta uz tāfeles skaitļa $144$ naturālos dalītājus. Katrā
 gājienā jāievēro šādi noteikumi:
@@ -4668,7 +4668,7 @@ otrais – vienmēr var uzvarēt?
 
 
 <!--
-seeAlso=LV.AO.2019.11.2
+seeAlso=LV.AMO.2019.11.2
 -->
 
 
@@ -4687,7 +4687,7 @@ atbild ar $144/d$.
 
 -----
     
-# <lo-sample/> LV.AO.2019.12.3
+# <lo-sample/> LV.AMO.2019.12.3
 
 Dots četrstūris $ABCD$, kuram $AB = AD$ un $BC = CD$. Riņķa līnija, kas iet caur
 punktiem $A$, $B$ un $C$, krusto nogriežņus $AD$ un $CD$ attiecīgi to iekšējos punktos
@@ -4700,7 +4700,7 @@ $E$ un $F$ un nogriezni $BD$ punktā $G$. Pierādīt, ka $EG = FG$.
 
 -----
 
-# <lo-sample/> LV.AO.2019.12.4
+# <lo-sample/> LV.AMO.2019.12.4
 
 Sporta nometnē ir $100$ skolēni. Ar $N$ apzīmējam, cik veidos šos $100$ skolēnus
 var sadalīt $50$ pāros (pāru secība un arī skolēnu secība pārī nav svarīga). Ar
@@ -4745,7 +4745,7 @@ $$9 \cdot 27 \cdot 45 \cdot 63 \cdot 81 \cdot 99$$
 
 -----
 
-# <lo-sample/> LV.AO.2019.12.5
+# <lo-sample/> LV.AMO.2019.12.5
 
 Miljonāru kluba visbagātākajam biedram ir tieši $8$ reizes mazāk naudas nekā
 visiem pārējiem biedriem kopā, ceturtajam bagātākajam biedram ir tieši $11$
@@ -4759,7 +4759,7 @@ biedriem kopā. Cik biedru ir šajā klubā?
 
 -----
 
-# <lo-sample/> LV.AO.2022.5.1
+# <lo-sample/> LV.AMO.2022.5.1
 
 Kāds ir mazākais naturālais skaitlis, kura pierakstā izmantoti tikai 
 cipari $0$ un $2$ un kurš dalās ar $15$?
@@ -4767,7 +4767,7 @@ cipari $0$ un $2$ un kurš dalās ar $15$?
 
 -----
     
-# <lo-sample/> LV.AO.2022.5.2
+# <lo-sample/> LV.AMO.2022.5.2
 
 Pa rūtiņu līnijām uzzīmē tādu sešstūri, kuram perimetra un laukuma vērtības sakrīt!
 *Piezīme.* Laukums ir sešstūri veidojošo rūtiņu skaits un perimetrs ir 
@@ -4776,7 +4776,7 @@ rūtiņu malu, kas pilnībā atrodas uz robežas, skaits.
 
 -----
     
-# <lo-sample/> LV.AO.2022.5.3
+# <lo-sample/> LV.AMO.2022.5.3
 
 Uz teātra izrādi tika izgatavotas $250$ biļetes un vismaz puse 
 no biļetēm tika pārdotas. Zināms, ka tieši trešdaļa
@@ -4786,17 +4786,17 @@ septītdaļa – pensionāri. Cik biļetes tika pārdotas?
 
 -----
     
-# <lo-sample/> LV.AO.2022.5.4
+# <lo-sample/> LV.AMO.2022.5.4
 
 Zināms, ka svari (a), (b) un (c) atrodas līdzsvarā. 
 Cik bultiņu jāliek jautājuma zīmes vietā, lai svari (d) atrastos
 līdzsvarā? Atbildi pamatot!  
-![bilde](LV.AO.2022.5.4.png)
+![bilde](LV.AMO.2022.5.4.png)
 
     
 -----
     
-# <lo-sample/> LV.AO.2022.5.5
+# <lo-sample/> LV.AMO.2022.5.5
 
 Katrai no trīs meitenēm Elīnai, Gunai un Marutai patīk viena no krāsām: zaļa, dzeltena, oranža (katrai cita krāsa),
 bet abas pārējās krāsas nepatīk. Zināms, ka tieši viens no apgalvojumiem ir patiess:
@@ -4810,7 +4810,7 @@ Kāda krāsa patīk katrai meitenei? Atbildi pamatot!
 
 -----
     
-# <lo-sample/> LV.AO.2022.6.1
+# <lo-sample/> LV.AMO.2022.6.1
 
 Uz papīra lapas uzrakstīti visi naturālie skaitļi no $1$ līdz $2022$ (katrs vienu reizi). 
 Vispirms Amanda ar sarkanu zīmuli apvilka visus skaitļus, kas dalās ar $3$. 
@@ -4821,16 +4821,16 @@ Cik ir tādu skaitļu, kas ir apvilkti ar vismaz divām dažādām krāsām?
 
 -----
     
-# <lo-sample/> LV.AO.2022.6.2
+# <lo-sample/> LV.AMO.2022.6.2
 
 Parādi, kā no 1. att. dotās rūtiņu lapas var izgriezt desmit figūras, kādas dotas 2. att. (iezīmē, kur jāiet griezuma
 līnijām)! Figūras var būt arī pagrieztas.  
-![1.att., 2.att.](LV.AO.2022.6.2.png)
+![1.att., 2.att.](LV.AMO.2022.6.2.png)
 
     
 -----
     
-# <lo-sample/> LV.AO.2022.6.3
+# <lo-sample/> LV.AMO.2022.6.3
 
 Tumšā rudens vakarā Māris izdomāja saskaitīt visus naturālos skaitļus no $1$ līdz $n$, kur $n$ ir kāds naturāls skaitlis.
 Vai var gadīties, ka Māris ieguva summu, kuras pēdējais cipars ir **(a)** $8$, **(b)** $9$?
@@ -4839,22 +4839,22 @@ Vai var gadīties, ka Māris ieguva summu, kuras pēdējais cipars ir **(a)** $8
 
 -----
     
-# <lo-sample/> LV.AO.2022.6.4
+# <lo-sample/> LV.AMO.2022.6.4
 
 Zināms, ka svari (a), (b) un (c) atrodas līdzsvarā. Cik aplīšu jāliek jautājuma zīmes vietā, lai svari (d) atrastos
 līdzsvarā? Atbildi pamatot!  
-![bilde](LV.AO.2022.6.4.png)
+![bilde](LV.AMO.2022.6.4.png)
 
 
 
 -----
     
-# <lo-sample/> LV.AO.2022.6.5
+# <lo-sample/> LV.AMO.2022.6.5
 
 Daži no 273 ciema iedzīvotājiem visu laiku saka patiesību, pārējie visu laiku melo. Katram no ciema iedzīvotājiem
 ir tieši viena mīļākā nedēļas diena. Aptaujājot iedzīvotājus, viņiem tika lūgts atbildēt uz septiņiem jautājumiem,
 katrā no tiem izvēloties vienu no dotajām atbildēm:  
-![bilde](LV.AO.2022.6.5.png)  
+![bilde](LV.AMO.2022.6.5.png)  
 Uz katru jautājumu saņemto apstiprinošo ("jā") atbilžu skaits bija šāds: pirmdiena – $51$, otrdiena – $52$,
 trešdiena – $53$, ceturtdiena – $54$, piektdiena – $55$, sestdiena – $56$, svētdiena – $57$. Cik ciema iedzīvotāji visu laiku
 melo?  
@@ -4864,7 +4864,7 @@ melo?
 
 -----
     
-# <lo-sample/> LV.AO.2022.7.1
+# <lo-sample/> LV.AMO.2022.7.1
 
 Uz tāfeles bija uzrakstīts šāds teksts: $A869B$. Katrs no burtiem $A$ un $B$ jāaizstāj ar vienu ciparu (tie var būt arī
 vienādi) tā, lai iegūtais piecciparu skaitlis dalītos ar $15$. Cik dažādos veidos to var izdarīt?
@@ -4872,20 +4872,20 @@ vienādi) tā, lai iegūtais piecciparu skaitlis dalītos ar $15$. Cik dažādos
 
 -----
     
-# <lo-sample/> LV.AO.2022.7.2
+# <lo-sample/> LV.AMO.2022.7.2
 
 Vai var atrast **(a)** $5$; **(b)** $15$ naturālus skaitļus (ne obligāti dažādus), kuru summa ir vienāda ar to reizinājumu?
     
 -----
     
-# <lo-sample/> LV.AO.2022.7.3
+# <lo-sample/> LV.AMO.2022.7.3
 
 Parādi, kā plaknē novilkt $6$ taisnes un uz tām atlikt $7$ punktus tā, lai uz katras no taisnēm būtu atzīmēti tieši trīs punkti!
 
     
 -----
     
-# <lo-sample/> LV.AO.2022.7.4
+# <lo-sample/> LV.AMO.2022.7.4
 
 Uz galda ir kaudze ar konfektēm. Karlsons un Brālītis pēc kārtas izdara gājienus, Karlsons sāk spēli. Vienā gājienā
 spēlētājs var paņemt no kaudzes un apēst vai nu vienu, vai divas konfektes. Uzvar tas spēlētājs, kurš apēd pēdējo
@@ -4894,26 +4894,26 @@ konfekti. Kurš spēlētājs, pareizi spēlējot, vienmēr var uzvarēt, ja sāk
     
 -----
     
-# <lo-sample/> LV.AO.2022.7.5
+# <lo-sample/> LV.AMO.2022.7.5
 
 Daži no 272 ciema iedzīvotājiem visu laiku saka patiesību, pārējie visu laiku melo. Katram no ciema iedzīvotājiem
 ir tieši viena mīļākā nedēļas diena. Aptaujājot iedzīvotājus, viņiem tika lūgts atbildēt uz septiņiem jautājumiem,
 katrā no tiem izvēloties vienu no dotajām atbildēm:  
-![bilde](LV.AO.2022.7.5.png)  
+![bilde](LV.AMO.2022.7.5.png)  
 Uz katru jautājumu saņemto apstiprinošo ("jā") atbilžu skaits bija šāds: pirmdiena – $53$, otrdiena – $54$,
 trešdiena – $55$, ceturtdiena – $56$, piektdiena – $57$, sestdiena – $58$, svētdiena – $59$. 
 Cik ciema iedzīvotāji visu laiku melo?
     
 -----
     
-# <lo-sample/> LV.AO.2022.8.1
+# <lo-sample/> LV.AMO.2022.8.1
 
 Uz tāfeles bija uzrakstīts šāds teksts: $N597M$. Katrs no burtiem $N$ un $M$ jāaizstāj ar vienu ciparu (tie var būt arī
 vienādi) tā, lai iegūtais piecciparu skaitlis dalītos ar $12$. Cik dažādos veidos to var izdarīt?
     
 -----
     
-# <lo-sample/> LV.AO.2022.8.2
+# <lo-sample/> LV.AMO.2022.8.2
 
 Skolēnam tika uzdots mājas darbs, kurā bija $20$ uzdevumi. Par katru pareizi atrisinātu uzdevumu tiek doti $8$
 punkti, par katru nepareizi atrisinātu uzdevumu tiek atņemti $5$ punkti, ja uzdevums nav risināts, tad par to ir $0$
@@ -4922,14 +4922,14 @@ punkti. Cik uzdevumus atrisināja skolēns, ja kopā viņš ieguva $13$ punktus?
     
 -----
     
-# <lo-sample/> LV.AO.2022.8.3
+# <lo-sample/> LV.AMO.2022.8.3
 
 Trijstūrī $ABC$ uz malas $BC$ atlikts tāds punkts $D$, ka $AD = BD$ un $AB = DC = AC$. Aprēķināt trijstūra $ABC$
 leņķus!
     
 -----
     
-# <lo-sample/> LV.AO.2022.8.4
+# <lo-sample/> LV.AMO.2022.8.4
 
 Vai pa apli var uzrakstīt skaitļus  
 **(a)** $0;\;1;\;2;\;3;\;4;\;5;\;6;\;7;\;8;\;9$;
@@ -4938,7 +4938,7 @@ tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?
     
 -----
     
-# <lo-sample/> LV.AO.2022.8.5
+# <lo-sample/> LV.AMO.2022.8.5
 
 Piecu draugu lokā izvērsās strīds, kurā:
 
@@ -4952,7 +4952,7 @@ Cik draugu saka taisnību?
     
 -----
     
-# <lo-sample/> LV.AO.2022.9.1
+# <lo-sample/> LV.AMO.2022.9.1
 
 Cik ir tādu četrciparu skaitļu $\overline{ABBA}$, kas dalās ar $99$? (Vienādiem burtiem atbilst vienādi cipari, dažādiem burtiem
 var atbilst arī vienādi cipari.)
@@ -4961,14 +4961,14 @@ var atbilst arī vienādi cipari.)
     
 -----
     
-# <lo-sample/> LV.AO.2022.9.2
+# <lo-sample/> LV.AMO.2022.9.2
 
 Vai noteikti $x + \frac{9}{x} > y + \frac{9}{y}$, ja **(a)** $x > y > 0$, **(b)** $x > y > 3$? 
 
     
 -----
     
-# <lo-sample/> LV.AO.2022.9.3
+# <lo-sample/> LV.AMO.2022.9.3
 
 Taisnleņķa trijstūrī $ACB$ ($\sphericalangle C = 90^{\circ}$) novilkts augstums $CH$. Uz malas $AC$ atlikts punkts $K$ tā, ka 
 $\sphericalangle CBK = \sphericalangle BAC$.
@@ -4977,7 +4977,7 @@ Pierādīt, ka taisne $CH$ dala nogriezni $BK$ divās vienādās daļās!
     
 -----
     
-# <lo-sample/> LV.AO.2022.9.4
+# <lo-sample/> LV.AMO.2022.9.4
 
 Vai pa apli var uzrakstīt skaitļus  
 **(a)** 1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13;  
@@ -4986,7 +4986,7 @@ tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?
     
 -----
     
-# <lo-sample/> LV.AO.2022.9.5
+# <lo-sample/> LV.AMO.2022.9.5
 
 Mākslas muzeja plānojums ir taisnstūris ar izmēriem **(a)** $8 \times 9$; **(b)** $9 \times 11$ rūtiņas, 
 kur viena rūtiņa atbilst vienai muzeja telpai. Muzeja vadītājs vēlas izveidot apmeklētāju maršrutu, 
@@ -5001,27 +5001,27 @@ Vai muzeja vadītājs var izveidot šādu maršrutu?
     
 -----
     
-# <lo-sample/> LV.AO.2022.10.1
+# <lo-sample/> LV.AMO.2022.10.1
 
 Kāds ir skaitļa $2022^{2022}$ pēdējais cipars?
     
 -----
     
-# <lo-sample/> LV.AO.2022.10.2
+# <lo-sample/> LV.AMO.2022.10.2
 
 Apskatām $n$ pēc kārtas ņemtus naturālus skaitļus. Vai var gadīties, ka tos var sadalīt divās grupās tā, ka katras
 grupas skaitļu summa ir pirmskaitlis, ja **(a)** $n = 8$, **(b)** $n = 10$? Katrā grupā jābūt vismaz $2$ skaitļiem.
     
 -----
     
-# <lo-sample/> LV.AO.2022.10.3
+# <lo-sample/> LV.AMO.2022.10.3
 
 Uz taisnleņķa trijstūra $ACB$ hipotenūzas $AB$ atlikts punkts $O$, kas ir centrs riņķa līnijai ar rādiusu $3$, kura pieskaras
 abām katetēm. Aprēķināt trijstūra $ACB$ laukumu, ja $OB = 5$.
     
 -----
     
-# <lo-sample/> LV.AO.2022.10.4
+# <lo-sample/> LV.AMO.2022.10.4
 
 Doti reāli skaitļi $a$, $b$ un $c$, kuriem $abc = 1$. Pierādīt, ka vienādojumam
 
@@ -5031,7 +5031,7 @@ nav reālu sakņu!
     
 -----
     
-# <lo-sample/> LV.AO.2022.10.5
+# <lo-sample/> LV.AMO.2022.10.5
 
 Restorānā ieradās pieci deputāti un pirms pusdienām daži no viņiem paspieda viens otram roku. 
 Zināms, ka, ja kādi divi deputāti nepaspieda viens otram roku, tad abi kopā viņi izdarīja vismaz 
@@ -5040,26 +5040,26 @@ roku abiem saviem blakussēdētājiem!
     
 -----
     
-# <lo-sample/> LV.AO.2022.11.1
+# <lo-sample/> LV.AMO.2022.11.1
 
 Vai skaitli 2022 var izteikt kā divu veselu skaitļu kubu summu?
     
 -----
     
-# <lo-sample/> LV.AO.2022.11.2
+# <lo-sample/> LV.AMO.2022.11.2
 
 Kādām reālām $p$ vērtībām vienādojuma $x^2 + x + p = 0$ sakņu kvadrātu summa ir $16$?
     
 -----
     
-# <lo-sample/> LV.AO.2022.11.3
+# <lo-sample/> LV.AMO.2022.11.3
 
 Trijstūrī $ABC$ ievilktā riņķa līnija pieskaras malai $AB$ punktā $D$ tā, ka $AD = 8$ un $BD = 1$. Aprēķināt malas $BC$
 garumu, ja trijstūra leņķa $B$ lielums ir $120^{\circ}$.
     
 -----
     
-# <lo-sample/> LV.AO.2022.11.4
+# <lo-sample/> LV.AMO.2022.11.4
 
 Pierādīt, ka katru naturālu skaitli, kas ir lielāks nekā $3$, var vienā vienīgā veidā izteikt kā trīs naturālu
 skaitļu $x,y,z$ ($x \leq y \leq z$) summu tā, lai skaitļiem $x$, $y$, $z$ izpildītos nevienādība
@@ -5068,7 +5068,7 @@ $$x^2 + y^2 + z^2 - xy - yz - xz \leq 1.$$
     
 -----
     
-# <lo-sample/> LV.AO.2022.11.5
+# <lo-sample/> LV.AMO.2022.11.5
 
 Mākslas muzeja plānojums ir taisnstūris ar izmēriem $m \times n$ ($m \geq 2$, $n \geq 2$) rūtiņas, 
 kur viena rūtiņa atbilst vienai muzeja telpai. Muzeja vadītājs vēlas izveidot apmeklētāju maršrutu, kuram izpildās šādas īpašības:
@@ -5082,13 +5082,13 @@ Kādām $m$ un $n$ vērtībām muzeja vadītājs var izveidot šādu maršrutu?
     
 -----
     
-# <lo-sample/> LV.AO.2022.12.1
+# <lo-sample/> LV.AMO.2022.12.1
  
 Vai skaitli $2023^2$ var izteikt kā trīs veselu skaitļu kubu summu?
 
 -----
     
-# <lo-sample/> LV.AO.2022.12.2
+# <lo-sample/> LV.AMO.2022.12.2
 
 Kādām reālām $p$ vērtībām vienādojuma $x^2 + x + p$ sakņu kubu summa ir $(-16)$?
 
@@ -5096,7 +5096,7 @@ Kādām reālām $p$ vērtībām vienādojuma $x^2 + x + p$ sakņu kubu summa ir
     
 -----
     
-# <lo-sample/> LV.AO.2022.12.3
+# <lo-sample/> LV.AMO.2022.12.3
 
 Trijstūrī $ABC$ no virsotnes $A$ vilktā augstuma garums ir $1$, no virsotnes $C$ vilktās mediānas garums arī ir $1$, bet
 augstuma no virsotnes $B$ garums ir $\sqrt{3}$. Kāds var būt šī trijstūra laukums?
@@ -5106,14 +5106,14 @@ augstuma no virsotnes $B$ garums ir $\sqrt{3}$. Kāds var būt šī trijstūra l
     
 -----
     
-# <lo-sample/> LV.AO.2022.12.4
+# <lo-sample/> LV.AMO.2022.12.4
 
 Atrisināt reālos skaitļos vienādojumu $3 \sin x + 4 \cos x = 6$.
     
     
 -----
     
-# <lo-sample/> LV.AO.2022.12.5
+# <lo-sample/> LV.AMO.2022.12.5
     
 Dota rūtiņu tabula $n \times n$. Ilmārs un Kims spēlē šādu spēli. Viņi pēc kārtas kādā vēl tukšā rūtiņā ieraksta skaitli $1$
 vai $-1$. Spēli sāk Ilmārs. Ja pēc kāda spēlētāja gājiena tiek aizpildīta kāda rinda vai kolonna, tad tiek aprēķināts
@@ -5125,12 +5125,12 @@ punktu. Kuram spēlētājam ir uzvaroša stratēģija, ja **(a)** $n = 2021$; **
     
 -----
     
-# <lo-sample/> LV.AO.2023.5.1
+# <lo-sample/> LV.AMO.2023.5.1
 
 Skaitļus no $1$ līdz $9$ ieraksti 1. att. redzamajos mazajos trijstūros (katrā trijstūrī citu naturālo skaitli) tā, 
 lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.
 *Piezīme.* Par blakus trijstūriem sauksim trijstūrus, kam ir kopīga mala.  
-![1.zīm.](LV.AO.2023.5.1.png)
+![1.zīm.](LV.AMO.2023.5.1.png)
 
 <small>
 
@@ -5140,7 +5140,7 @@ lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.
 
 -----
     
-# <lo-sample/> LV.AO.2023.5.2
+# <lo-sample/> LV.AMO.2023.5.2
 
 Doti divi skaitļi. Zināms, ka viens no tiem ir tieši septiņas reizes lielāks nekā otrs un katram no tiem ir vismaz divi
 cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari 
@@ -5155,7 +5155,7 @@ cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari
 
 -----
     
-# <lo-sample/> LV.AO.2023.5.3
+# <lo-sample/> LV.AMO.2023.5.3
 
 Rūtiņu lapā, kurā katras rūtiņas malas garums ir $1$, uzzīmē daudzstūri, kuram gan perimetra, gan laukuma vērtība
 ir tāda pati kā malu skaits!
@@ -5168,7 +5168,7 @@ ir tāda pati kā malu skaits!
 
 -----
     
-# <lo-sample/> LV.AO.2023.5.4
+# <lo-sample/> LV.AMO.2023.5.4
 
 Dots kvadrāts ar izmēriem $n \times n$ rūtiņas. 
 Vienā gājienā kauliņu var pārlikt tieši $2$ rūtiņas uz priekšu pa jebkuru
@@ -5178,7 +5178,7 @@ atzīmētas tās rūtiņas, uz kurām to drīkst pārvietot). Vai, veicot vairā
 kauliņu no kreisās apakšējās
 rūtiņas var pārvietot uz kreiso augšējo rūtiņu, ja kvadrāta izmēri ir: 
 **(a)** $9 \times 9$; **(b)** $10 \times 10$; **(c)** $11 \times 11$?  
-![2.zīm.](LV.AO.2023.5.4.png)
+![2.zīm.](LV.AMO.2023.5.4.png)
 
 <small>
 
@@ -5188,7 +5188,7 @@ rūtiņas var pārvietot uz kreiso augšējo rūtiņu, ja kvadrāta izmēri ir:
 
 -----
     
-# <lo-sample/> LV.AO.2023.5.5
+# <lo-sample/> LV.AMO.2023.5.5
 
 Gunai bija četru veidu konfektes: $8$ "Serenādes", $14$ "Lācīši Ķepainīši", 
 $20$ "Vāverītes" un $26$ "Sarkanās magones".
