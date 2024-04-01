@@ -2166,3 +2166,6 @@ Pierādīt, ka eksistē bezgalīgi daudz tādu naturālu skaitļu četrinieku $(
 ka $a_1 \neq a_2$, $b_1 \neq b_2$ un
 $$2^{a_1} - \left( b_1 \right)^2 = 2^{a_2} - \left( b_2 \right)^2 > 0.$$
 
+
+
+
