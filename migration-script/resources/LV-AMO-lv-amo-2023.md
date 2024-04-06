@@ -7,6 +7,12 @@ lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.
 
 ![](LV.AMO.2023.5.1.png)
 
+<small>
+
+* concept:difference,distance
+* seeAlso:LV.AMO.2023.6.1
+
+</small>
 
 ## Atrisinājums
 
@@ -19,9 +25,18 @@ Sk., piemēram, 2. att., kur pelēkā krāsā norādītas atbilstošās starpīb
 
 # <lo-sample/> LV.AMO.2023.5.2
 
-Doti divi skaitļi. Zināms, ka viens no tiem ir tieši septiņas reizes lielāks nekā otrs un katram no tiem ir
-vismaz divi cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari: **(a)** $3$; $4$; $6$ un $7$;
+Doti divi skaitļi. Zināms, ka viens no tiem ir tieši septiņas reizes lielāks nekā otrs 
+un katram no tiem ir vismaz divi cipari. Vai var gadīties, ka abu skaitļu pierakstā 
+izmantoti tikai cipari: **(a)** $3$; $4$; $6$ un $7$;
 **(b)** $1$; $2$ un $3$?
+
+<small>
+
+* concept:decimal-notation
+* [] 
+* seeAlso:LV.AMO.2023.6.1
+
+</small>
 
 ## Atrisinājums
 
