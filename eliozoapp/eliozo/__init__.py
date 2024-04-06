@@ -8,7 +8,7 @@ from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from werkzeug.wrappers import Response
 
 FUSEKI_URL_LINUX = 'http://127.0.0.1:9080/jena-fuseki-war-4.7.0/abc/'
-FUSEKI_URL_WINDOWS = 'http://127.0.0.1:8080/jena-fuseki-war-4.6.1/abc/'
+# FUSEKI_URL_WINDOWS = 'http://127.0.0.1:8080/jena-fuseki-war-4.6.1/abc/'
 
 import platform
 
@@ -17,7 +17,7 @@ os_name = platform.system()
 
 # Check if it's Windows
 if os_name == 'Windows':
-    FUSEKI_URL=FUSEKI_URL_WINDOWS
+    FUSEKI_URL=FUSEKI_URL_LINUX
 else:
     FUSEKI_URL=FUSEKI_URL_LINUX
 
