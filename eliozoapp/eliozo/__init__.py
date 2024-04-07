@@ -203,7 +203,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
 SELECT DISTINCT ?olympiadCountry ?olympiad ?olympiadName ?olympiadDescription WHERE { 
-    ?problem eliozo:olympiad ?olympiad .
     ?olympiad eliozo:olympiadCountry ?olympiadCountry ;
   				eliozo:olympiadName ?olympiadName ;
                 eliozo:olympiadDescription ?olympiadDescription .
