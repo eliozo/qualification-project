@@ -3,6 +3,7 @@ import mistletoe.ast_renderer
 import requests
 import csv
 from json_reader import *
+from mdchunk_reader import *
 from csv_to_skos import *
 
 # file_path = "out.json"
@@ -63,4 +64,9 @@ if __name__ == '__main__':
     for result in results:
         # print("****{}, {}, {}".format(result[0], result[1], result[2]))
         getMarkdownFile(result[0], result[1], result[2])
-        convertToJSON(result)
+        md_path = 'resources/' + result[2] + '-' + result[1] + '.md'
+        ttl_path = 'resources/' + result[2] + '-' + result[1] + '.ttl'
+        md_to_rdf(md_path, ttl_path)
+
+
+        # convertToJSON(result)

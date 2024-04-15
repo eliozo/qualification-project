@@ -9,10 +9,12 @@ lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.
 
 <small>
 
+* [Topic:arithmetic](#)
 * concept:difference,distance
 * seeAlso:LV.AMO.2023.6.1
 
 </small>
+
 
 ## Atrisinājums
 
@@ -25,18 +27,19 @@ Sk., piemēram, 2. att., kur pelēkā krāsā norādītas atbilstošās starpīb
 
 # <lo-sample/> LV.AMO.2023.5.2
 
-Doti divi skaitļi. Zināms, ka viens no tiem ir tieši septiņas reizes lielāks nekā otrs 
-un katram no tiem ir vismaz divi cipari. Vai var gadīties, ka abu skaitļu pierakstā 
-izmantoti tikai cipari: **(a)** $3$; $4$; $6$ un $7$;
+Doti divi skaitļi. Zināms, ka viens no tiem ir tieši septiņas reizes lielāks nekā otrs un katram no tiem ir
+vismaz divi cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari: **(a)** $3$; $4$; $6$ un $7$;
 **(b)** $1$; $2$ un $3$?
+
 
 <small>
 
 * concept:decimal-notation
-* [] 
-* seeAlso:LV.AMO.2023.6.1
+* [mod.fix.lastdigits](#)
+* [Topic:decimalNotation](#)
 
 </small>
+
 
 ## Atrisinājums
 
@@ -51,6 +54,12 @@ nevar izmantot skaitļu pierakstā.
 
 Rūtiņu lapā, kurā katras rūtiņas malas garums ir $1$, uzzīmē daudzstūri, kuram gan perimetra, gan
 laukuma vērtība ir tāda pati kā malu skaits!
+
+<small>
+
+* [Topic:squareGridGeometry](#)
+
+</small>
 
 ## Atrisinājums
 
@@ -68,6 +77,12 @@ no kreisās apakšējās rūtiņas var pārvietot uz kreiso augšējo rūtiņu, 
 **(b)** $10 \times 10$; **(c)** $11 \times 11$?
 
 ![](LV.AMO.2023.5.4.png)
+
+<small>
+
+* [Topic:otherAlgorithms](#)
+
+</small>
 
 ## Atrisinājums
 
@@ -89,6 +104,13 @@ c), tad tajā kauliņš nevar nonākt.
 Gunai bija četru veidu konfektes: 8 “Serenādes”, 14 “Lācīši Ķepainīši”, 20 “Vāverītes” un 26 “Sarkanās
 magones”. Katru no saviem dzimšanas dienas viesiem viņa uzcienāja ar tieši 3 dažādām konfektēm.
 Kāds ir lielākais iespējamais viesu skaits, kas bija ieradušies uz Gunas dzimšanas dienas svinībām?
+
+
+<small>
+
+* [Topic:otherCombinatorics](#)  
+
+</small>
 
 
 ## Atrisinājums

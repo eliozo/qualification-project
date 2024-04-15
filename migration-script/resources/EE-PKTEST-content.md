@@ -1,12 +1,3 @@
-# &nbsp;
-
-<h1 style="font-size:28pt">Skaitļu teorija: Igaunijas olimpiādes</h1>
-
-* **EE.PK** - **Eesti Piirkonnavoor** (Igaunijas reģionu kārta) - īso atbilžu testi 7.-9.kl.
-* [Matemaatikaolümpiaadid ](http://www.math.olympiaadid.ut.ee/html/index.php)
-
-
-
 # <lo-sample/> EE.PKTEST.2010.7.6
 
 Uz vienādsānu trijstūra $ABC$ pamata $BC$ izvēlas punktu $D$, bet uz
@@ -30,12 +21,11 @@ Atrast $\sphericalangle BAC$, ja $\sphericalangle CED = 25^{\circ}$.
 </small>
 
 
-<!--
-ru=
+<text lang="ru">
 На основании $BC$ равнобедренного треугольника $ABC$ выбирают точку $D$, а на продолжении
 ребра $AC$ через точку $C$ выбирают точку $E$ так,
 что $|CD| = |CE|$. Найти величину угла $BAC$, если $\sphericalangle CED = 25^{\circ}$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -76,11 +66,10 @@ kas apzīmēti ar lociņiem.
 
 </small>
 
-<!-- 
-ru=
+<text lang="ru">
 На сторонах равнобедренного треугольника построены прямоугольники. Найти сумму величин
 углов, обозначенных дугами.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -120,12 +109,11 @@ Aprēķināt leņķi $x$.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 На рисунке изображены два равнобедренных треугольника, углы при вершинах которых равны
 $40^{\circ}$ и $50^{\circ}$, и основания которых лежат на одной
 прямой. Найти величину угла $x$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -162,10 +150,9 @@ Aprēķināt leņķu lielumu summu, kas zīmējumā apzīmēti ar $x$ un $y$.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Найти сумму величин углов, обозначенных на рисунке буквами $x$ и $y$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -205,12 +192,11 @@ taisnstūra malu.
 </small>
 
 
-<!--
-ru=
+<text lang="ru">
 На одной из сторон прямоугольника нарисовали равносторонний треугольник. Одну из сторон
 этого треугольника продлили так, как показано
 на рисунке. Найти величину тупого угла $\alpha$, который образовался между продолжением стороны треугольника и стороной прямоугольника.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -246,11 +232,10 @@ $CD$ ir šī trijstūra iekšējo leņķu bisektrises, un $\sphericalangle BDC$ 
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Найти величину $\alpha$ угла $\sphericalangle BAC$ треугольника $ABC$, если отрезки $BD$ и
 $CD$ делят углы этого треугольника пополам, а величина угла $BDC$ равна $5\alpha$.
--->
+</text>
 
 ## Atrisinājums
 
@@ -282,13 +267,12 @@ Kāda ir leņķu $\alpha$ un $\gamma$ summa?
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Из центра $O$ окружности проведены $3$ луча, которые делят круг на три
 сектора, величины углов которых равны $\alpha$, $\beta$ и $\gamma$. Сумма углов $\alpha$ и $\beta$
 является развёрнутым углом, а сумма углов $\beta$ и $\gamma$ равна $200^{\circ}$. 
 Какова величина суммы углов $\alpha$ и $\gamma$?
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -330,13 +314,12 @@ Atrast leņķa $BDE$ lielumu.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Дан прямоугольник $ABCD$, в котором
 $\sphearicalangle CBD = 25^{\circ}$. 
 Точку $E$ на стороне $BC$ выбрали так, чтобы $|CE| = |CD|$. 
 Найти величину угла $BDE$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -370,11 +353,10 @@ $AB = CD$. Atrast leņķa $\sphericalangle ABC$ lielumu.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 В изображённом на рисунке четырёхугольнике
 $|AB| = |CD|$. Найти величину угла $ABC$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -410,12 +392,11 @@ malas $AC$ garumu.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Треугольник $ABC$ прямоугольный. Точка $K$
 лежит на стороне $AC$ и $|KB| = 15\,\text{cm}$. Найти
 длину стороны $AC$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -456,14 +437,13 @@ $BC$ būtu vienādi. Aprēķināt ar $x$ apzīmēto leņķi.
 </small>
 
 
-<!-- 
-ru=
+<text lang="ru">
 В треугольнике $ABC$ длины сторон $AB$ и $AC$ равны
 между собой, а величина угла $ACB$ равна $70^{\circ}$. 
 На стороне $AC$ выбрали точку $P$ так, чтобы отрезки $BP$ и
 $BC$ оказались равной длины. Найти величину угла,
 обозначенного буквой $x$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -505,12 +485,11 @@ Aprēķināt leņķi, kas apzīmēts ar $x$.
 
 
 
-<!--
-ru=
+<text lang="ru">
 Четыре прямые пересекаются показанным
 на рисунке образом. Найти величину угла,
 обозначенного буквой $x$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -565,14 +544,13 @@ bet $\sphericalangle ABC$ ir $80^{\circ}$. Aprēķināt $y$.
 </small>
 
 
-<!--
-ru=
+<text lang="ru">
 Прямая $a$ пересекается с прямыми $s$ и $t$ в точке $A$, 
 а прямая $b$ пересекается с прямыми $s$ и $t$ соответственно в точках $B$ и $C$. 
 Прямые $a$ и $b$ являются параллельными. Величины двух обозначенных
 на рисунке углов равны $y$, а величина угла $\sphericalangle ABC$
 равна $80^{\circ}$. Найти $y$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -606,11 +584,10 @@ Atrast leņķi, kas apzīmēts ar $y$, ja ar $x$ apzīmētie leņķi ir vienādi
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Найти величину угла, обозначенного
 буквой $y$, если величины обозначенных буквой $x$ углов равны.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -650,11 +627,10 @@ Trijstūris $ACE$ ir vienādsānu. Atrast leņķi $\sphericalangle EAB$.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Точка $C$ является точкой пересечения отрезков $AD$ и $EB$. 
 Треугольник $ACE$ равнобедренный. Найти величину угла $\sphericalangle EAB$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -693,12 +669,11 @@ Aprēķināt leņķi $DCE$.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Прямые $DE$ и $AB$ параллельны. Прямые
 $AD$ и $BE$ пересекаются в точке $C$, и действует равенство $|DB| = |DC| = |BE|$.
 Найти величину угла $DCE$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -736,11 +711,10 @@ bet trijstūris $ACD$ ir vienādsānu. Aprēķināt leņķi $ACB$.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 На стороне $BC$ треугольника $ABC$ найдётся такая точка $D$, при которой
 треугольник $ABD$ является равносторонним, а треугольник $ACD$ равнобедренным. Найти величину угла $ACB$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -778,14 +752,13 @@ Aprēķināt leņķi $ACD$.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 В прямоугольном треугольнике $ABC$ из вершины
 прямого угла $C$ проведена высота $CD$, которая
 пересекает проведённую из вершины $B$ биссектрису в точке $L$. Величина угла $BLC$ 
 равна $110^{\circ}$.
 Найти величину угла $ACD$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -832,13 +805,12 @@ Aprēķināt leņķi $ACB$.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Из вершины $C$ остроугольного треугольника $ABC$ проведена биссектриса
 $CD$. Величина одного из внутренних углов треугольника $ACD$ равна $60^{\circ}$,
 а величина одного из внутренних углов треугольника $BCD$ равна $100^{\circ}$.
 Найти величину угла $ACB$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -885,12 +857,11 @@ leņķis $x$ ir $23^{\circ}$ un leņķis $y$ ir $32^{\circ}$.
 </small>
 
 
-<!--
-ru=
+<text lang="ru">
 Найти величину угла $z$, если изображенный на рисунке
 четырехугольник является квадратом, величина угла $x$
 равна $23^{\circ}$, а величина угла $y$ равна $32^{\circ}$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -929,10 +900,9 @@ Atrast leņķa $x$ lielumu, ja zīmējumā attēlotais četrstūris ir paralelog
 
 
 
-<!--
-ru=
+<text lang="ru">
 Найти величину угла $x$, если изображенный на рисунке четырехугольник является параллелограммом.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -972,11 +942,10 @@ $M$ ir tā malas viduspunkts.
 </small>
 
 
-<!--
-ru=
+<text lang="ru">
 Найти величину угла $x$, если изображенный
 на рисунке четырехугольник является ромбом и точка $M$ является серединой его стороны.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -1016,12 +985,11 @@ Aprēķināt $\sphericalangle ABC$.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 На стороне $AB$ прямоугольного треугольника $ABC$ лежит точка $D$ так, 
 что $|CD| = |DB|$ и величина угла $ACD$
 равна $24^{\circ}$. Найти величину угла $ABC$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -1057,14 +1025,13 @@ lielumu, ja $\sphericalangle ADK = 97^{\circ}$ un $\sphericalangle DKC = 123^{\c
 </small>
 
 
-<!--
-ru=
+<text lang="ru">
 В треугольнике $ABC$ стороны $AC$ и
 $BC$ равны. Из точки $D$, лежащей на
 стороне $AB$, провели отрезок $DE$,
 который пересёк сторону $AC$ в точке $K$. Найти величину угла $ACB$, 
 если $\sphericalangle ADK = 97^{\circ}$ и $\sphericalangle DKC = 123^{\circ}$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer
@@ -1099,12 +1066,11 @@ Atrast leņķi $\sphericalangle BKL$.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 На стороне $AB$ правильного пятиугольника $ABCDE$
 нарисовали квадрат $ABLM$, а на стороне $BC$ равносторонний треугольник $BCK$. Найти величину угла
 $\sphericalangle BKL$.
--->
+</text>
 
 <!--
 questionType=Test.ShortAnswer

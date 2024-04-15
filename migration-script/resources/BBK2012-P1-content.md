@@ -1,20 +1,3 @@
-# &nbsp;
-
-<p>Daži uzdevumi, kas citēti no grāmatas:</p>
-
-<h1 style="font-size:28pt">A.Bērziņa, A.Bērziņš, D.Kūma. 2012</h1>
-
-<p>Olimpiāžu un konkursu uzdevumu krājums skaitļu teorijā. Latvijas 
-Universitāte. 2012.g.</p>
-
-
-* <blue>1.nodaļa: Skaitļu dalāmība</blue>
-* 2.nodaļa: Aritmētikas pamatteorēma
-* 3.nodaļa: Skaitļu kongruence pēc fiksēta moduļa
-* 4.nodaļa: Moduļa izvēle
-
-
-
 # <lo-sample/> BBK2012.P1.1
 
 Vai eksistē 3 viens otram sekojoši skaitļi, kuru reizinājums ir 
@@ -559,13 +542,12 @@ nedalās ar $9$. Tas nozīmē, ka to izdarīt nevar.
 Trīs no aritmētiskās progresijas locekļiem ir $41$, $113$, $193$. 
 Atrast lielāko iespējamo diferences vērtību, ja zināms, ka tā ir vesels skaitlis.
 
-<!--
-questionType=Find.Max
--->
+
 
 <small>
 
 * [div.common.gcd](#)
+* questionType:Find.Max
 
 </small>
 
@@ -579,7 +561,6 @@ satur visus norādītos skaitļus.
 
 
 
------
 
 # <lo-sample/> BBK2012.P1.52
 
@@ -599,7 +580,6 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 # <lo-sample/>BBK2012.P1.72
 
@@ -615,7 +595,6 @@ concepts=square-root
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.89
 
@@ -629,7 +608,6 @@ sameAs=LV.OTHER.TST.1979.9.1
 
 
 
------
 
 # <lo-sample/> BBK2012.P1.93
 
@@ -642,7 +620,6 @@ sameAs=LV.OTHER.TST.1976.9.3
 
 
 
------
 
 # <lo-sample/> BBK2012.P1.94
 
@@ -662,7 +639,6 @@ questionType=Find.Max
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.97
 
@@ -677,7 +653,6 @@ sameAs=LV.OTHER.TST.1985.9.3
 
 
 
------
 
 # <lo-sample/> BBK2012.P1.99
 
@@ -696,7 +671,6 @@ seeAlso=LV.NO.2001.7.4
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.104
 
@@ -718,7 +692,6 @@ questionType=Find.Only
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.115
 
@@ -731,7 +704,6 @@ questionType=Find.All
 
 
 
------
 
 # <lo-sample/> BBK2012.P1.117
 
@@ -749,7 +721,6 @@ sameAs=LV.OTHER.TST.1981.9.2
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.119
 
@@ -768,7 +739,6 @@ questionType=Prove.Other
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.121
 
@@ -790,7 +760,6 @@ questionType=Find.Only
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.122
 
@@ -811,7 +780,6 @@ seeAlso=LV.VO.1983.8.1
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.123
 
@@ -833,7 +801,6 @@ questionType=Find.Count
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.124
 
@@ -854,7 +821,6 @@ questionType=Find.Only
 </small>
 
 
------
 
 # <lo-sample/> BBK2012.P1.125
 
@@ -873,7 +839,6 @@ questionType=Find.Count
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.126
 
@@ -894,7 +859,6 @@ questionType=Find.Any
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.127
 
@@ -908,7 +872,6 @@ questionType=Prove.ForAll
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.128
 
@@ -929,7 +892,6 @@ questionType=Prove.ForAll
 
 
 
------
 
 # <lo-sample/> BBK2012.P1.129
 	
@@ -943,7 +905,6 @@ questionType=Find.Only
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.130
 
@@ -958,7 +919,6 @@ questionType=Prove.ForAll
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.131
 
@@ -970,7 +930,6 @@ questionType=Find.All
 -->
 
 
------
 
 # <lo-sample/> BBK2012.P1.132
 

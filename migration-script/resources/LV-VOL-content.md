@@ -1,22 +1,9 @@
-# &nbsp;
-
-<h1 style="font-size:28pt">Skaitļu teorija: 10.kl. LV</h1>
-
-* 10.kl. skaitļu teorija (no 2010.g.)
-    - LV.NO - novadu olimpiāde (2.posms)
-    - <blue>LV.VO - valsts olimpiāde (3.posms)</blue>
-    - LV.AO - atklātā olimpiāde
-
-
------
-
 # <lo-sample/> LV.VOL.2000.9.1
 
 Dots, ka $n$ - vesels skaitlis. Cik daudzi no skaitļiem $n^2+1$,
 $n(n+1)$ un $3n^3-2$ ir pāra skaitļi?
 
 
------
 
 # <lo-sample/> LV.VOL.2000.9.4
 
@@ -26,7 +13,6 @@ kur $a_1, a_2, \ldots, a_{10}$ - naturāli skaitļi, starp
 kuriem var būt arī vienādi?
 
 
------
 
 # <lo-sample/> LV.VOL.2000.10.2
 
@@ -34,7 +20,6 @@ Kādu mazāko naturālo skaitli var iegūt kā vērtību, ievietojot
 iekavas izteiksmē $15:14:13:12:11:10:9:8:7:6:5:4:3:2$?
 
 
------
 
 # <lo-sample/> LV.VOL.2000.11.2
 
@@ -46,7 +31,6 @@ naturālam $n$ var atrast tādus naturālus
 $a$ un $b$, ka $a + \frac{b}{a} - \frac{1}{b} = n^2$?
 
 
------
 
 # <lo-sample/> LV.VOL.2000.11.4
 
@@ -56,7 +40,6 @@ skaitļi $x+y$, $x+z$, $y+z$ ir iracionāli.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2000.12.5
 
@@ -68,7 +51,6 @@ katri divi no izvēlētajiem ir savstarpēji pirmskaitļi.
 (b) pierādīt: var gadīties, ka $x=4$.
 
 
------
 
 # <lo-sample/> LV.VOL.2001.9.1
 
@@ -87,7 +69,6 @@ koordinātas ir veseli skaitļi.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2001.9.2
 
@@ -95,7 +76,6 @@ Naturāla skaitļa $A$ ciparus uzrakstīja pretējā secībā un ieguva skaitli 
 Izrādījās, ka $B$ dalās ar $A$. Kāds var būt dalījums?
 
 
------
 
 # <lo-sample/> LV.VOL.2001.10.5
 
@@ -113,7 +93,6 @@ skaitļa $2^n$ pirmo ciparu, iegūst divnieka pakāpi ar naturālu kāpinātāju
 </small>
 
 
------
 
 ## Eksperimentēšana
 
@@ -124,7 +103,6 @@ Piemēram:
 $$2^6-2^2 = 2^2(2^4-1)=2^2(8+4+2+1).$$ 
 
 
---
 
 ## Atlikumu periodiskums
 
@@ -142,7 +120,6 @@ ir periodiski ($2^{n-m} - 1$ dalās ar $3$ t.t.t. ja $n-m$ ir
 pāru). Bet tā kā $n-m$ dalās ar $4$, tad tas dalīsies arī ar $2$. 
 
 
---
 
 ## Citi pirmreizinātāji nevar būt
 
@@ -152,7 +129,6 @@ pāru). Bet tā kā $n-m$ dalās ar $4$, tad tas dalīsies arī ar $2$.
 iegūsim tikai pirmreizinātājus $3$ un $5$.
 
 
------
 
 # <lo-sample/> LV.VOL.2001.11.1
 
@@ -160,14 +136,12 @@ Pierādīt, ka
 $\sqrt[3]{5\sqrt{2} + 7} - \sqrt[3]{5\sqrt{2} - 7} = 2$.
 
 
------
 
 # <lo-sample/> LV.VOL.2001.11.3
 
 Atrisināt naturālos skaitļos vienādojumu $x^2+3^x=y^2$.
 
 
------
 
 # <lo-sample/> LV.VOL.2001.12.3
 
@@ -175,7 +149,6 @@ Atrisināt naturālos skaitļos vienādojumu $x^2-y!=2001$. (Piezīme: ar $y!$
 saprot visu naturālo skaitļu reizinājumu no $1$ līdz $y$ ieskaitot.)
 
 
------
 
 # <lo-sample/> LV.VOL.2002.9.1
 
@@ -191,7 +164,6 @@ skaitļa kubs. Kādas ir $x$ un $y$ vērtības?
 </small>
 
 
------
 
 ## Kādi skaitļi ir pilni kubi
 
@@ -205,7 +177,6 @@ x \neq 31;\;33;\;34;\;35;\;37;\;38;\;39\\
 y \neq 41;\;42;\;43;\;44;\;45;\;46;\;47;\;49\\
 \end{array} \right.$$
 
---
 
 ## Gadījumi
 
@@ -220,7 +191,6 @@ Der vienīgi $x=36$, $y=48$. Tad $xy=2^63^3$ un $\sqrt[3]{xy}=12$.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2002.10.4
 
@@ -228,7 +198,6 @@ Kādiem naturāliem skaitļiem $n$ skaitlis $n\cdot{}2^{n-1}$
 ir naturāla skaitļa kvadrāts?
 
 
------
 
 # <lo-sample/> LV.VOL.2002.10.5
 
@@ -245,7 +214,6 @@ sasniegt?
 
 
 
------
 
 # <lo-sample/> LV.VOL.2002.11.2
 
@@ -258,7 +226,6 @@ izdara pa vienam gājienam pēc kārtas; pirmais iet
 Andris. Kurš uzvar, pareizi spēlējot?
 
 
------
 
 # <lo-sample/> LV.VOL.2002.11.5
 
@@ -276,7 +243,6 @@ veido aritmētisku progresiju?
 </small>
 
 
------
 
 ## Nepilna pārlase
 
@@ -288,7 +254,6 @@ ir visi nepāru skaitļi:
 $$1,3,5,\ldots,2^k-3,2^k-1.$$
 
 
---
 
 ## Neder citi skaitļi
 
@@ -303,7 +268,6 @@ Līdzīgu iemeslu dēļ neder arī nepāru skaitļi, kas nav pirmskaitļi.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2002.12.1
 
@@ -313,7 +277,6 @@ $(4n+3,6n+1)$ vērtību, ja $n$ - naturāls skaitlis.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2003.9.1
 
@@ -332,7 +295,6 @@ dalās ar naturālu skaitli $x$. Kādas var būt $x$ vērtības?
 </small>
 
 
------
 
 ## Dalāmība ar 11
 
@@ -342,7 +304,6 @@ $10010$, $1100$ dalās ar $11$).
 * Vai $11$ ir lielākais kopīgais dalītājs (lielākā $x$ vērtība)? 
 
 
---
 
 ## Ekstrēmi elementi
 
@@ -355,7 +316,6 @@ ar $2$ un $5$ daudzi simetriski skaitļi nedalās.
 Tātad $x=11$ ir lielākā $x$ vērtība. Var būt arī $x=1$. 
 
 
------
 
 # <lo-sample/> LV.VOL.2003.10.2
 
@@ -366,7 +326,6 @@ Kādai lielākajai $k$ vērtībai iespējams, ka visi skaitļi
 $x_1;x_2;x_3;\ldots;x_k$ ir pirmskaitļi?
 
 
------
 
 # <lo-sample/> LV.VOL.2003.11.2
 
@@ -376,7 +335,6 @@ Kāds lielākais daudzums virknes locekļu var būt naturālu skaitļu
 kvadrāti?
 
 
------
 
 # <lo-sample/> LV.VOL.2003.12.1
 
@@ -387,7 +345,6 @@ kas lielāki par $1$, ka $x! \cdot y! = z!$?
 $a! \cdot b! \cdot c! \cdot d! = e!$?
 
 
------
 
 # <lo-sample/> LV.VOL.2003.12.4
 
@@ -401,7 +358,6 @@ naturāli skaitļi no $1$ līdz $2003$ ieskaitot?
 
 
 
------
 
 # <lo-sample/> LV.VOL.2004.9.3
 
@@ -412,7 +368,6 @@ Vai tas ir iespējams, ja
 (b) $n=11$?
 
 
------
 
 # <lo-sample/> LV.VOL.2004.10.3
 
@@ -421,7 +376,6 @@ ir $27$.
 Kāds vislielākais pirmskaitlis var būt uzrakstīts uz tāfeles?
 
 
------
 
 # <lo-sample/> LV.VOL.2004.11.2
 
@@ -429,7 +383,6 @@ Kādiem pirmskaitļiem $a$ un $b$ skaitlis $a^2 + 3ab + b^2$ ir naturāla
 skaitļa kvadrāts?
 
 
------
 
 # <lo-sample/> LV.VOL.2004.12.5
 
@@ -439,7 +392,6 @@ Pierādīt, ka neviens no skaitļiem $y_1, y_2, y_3, \ldots$
 nav naturāla skaitļa kubs.
 
 
------
 
 # <lo-sample/> LV.VOL.2005.9.2
 
@@ -453,7 +405,6 @@ skaitlim $A$ galā skaitli $B$.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2005.9.4
 
@@ -462,7 +413,6 @@ $a^2+b^2=2$. Atrast visus šādus $a$ un $b$ pārus un pierādīt, ka citu bez
 Jūsu atrastajiem nav.
 
 
------
 
 # <lo-sample/> LV.VOL.2005.9.5
 
@@ -473,7 +423,6 @@ Atrast mazāko iespējamo $n$ vērtību.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2005.10.3
 
@@ -486,7 +435,6 @@ $x\cdot{}f(x)+y\cdot{}f(y)$ dalās ar $x+y$?
 
 
 
------
 
 # <lo-sample/> LV.VOL.2005.11.4
 
@@ -495,7 +443,6 @@ vesels $x$, ka $x^2+x+3$ dalās ar $p$” un "eksistē tāds vesels $y$, ka
 $y^2+y+25$ dalās ar $p$" vai nu abi ir pareizi, vai abi – nepareizi.
 
 
------
 
 # <lo-sample/> LV.VOL.2005.12.4
 
@@ -510,7 +457,6 @@ Par skaitļu virkni $x_1, x_2, x_3, \ldots$ zināms, ka
 
 
 
------
 
 # <lo-sample/> LV.VOL.2006.9.1
 
@@ -518,7 +464,6 @@ Atrisināt vienādojumu $x + y = 1025$, ja $x$ un $y$ ir naturāli skaitļi –
 skaitļa $640000$ dalītāji.
 
 
------
 
 # <lo-sample/> LV.VOL.2006.10.2
 
@@ -527,7 +472,6 @@ visi skaitļi $p+6$, $p+10$, $q+4$, $q+10$ un
 $p+q+1$ arī ir pirmskaitļi?
 
 
------
 
 # <lo-sample/> LV.VOL.2006.10.5
 
@@ -538,7 +482,6 @@ eksistē atrisinājums, kurā visu četru mainīgo vērtības ir vienā un tai
 pašā krāsā (starp šīm vērtībām var būt arī savā starpā vienādas)?
 
 
------
 
 # <lo-sample/> LV.VOL.2006.11.2
 
@@ -547,18 +490,14 @@ patvaļīgi, bet katru nākošo aprēķina pēc formulas $a_{n+1} = a_n(a_n+2)$ 
 $n=1; 2; 3; \ldots$. Kādas vērtības var pieņemt $a_{2006}$?
 
 
------
 
 # <lo-sample/> LV.VOL.2006.11.3
 
 Atrisināt naturālos skaitļos vienādojumu $(x+y)(xy+1) = 2^z$.
 
 
------
 
 # <lo-sample/> LV.VOL.2006.12.1
-
-<div style="font-size:70%">
 
 Pierādīt, ka 
 $$\left( 1 + tg 1^{\circ} \right) 
@@ -568,11 +507,6 @@ $$\left( 1 + tg 1^{\circ} \right)
 \left( 1 + tg 44^{\circ} \right) 
 \left( 1 + tg 45^{\circ} \right) = 2^{23}.$$
 
-</div>
-
-
------
-
 # <lo-sample/> LV.VOL.2006.12.4
 
 Naturāli skaitļi $m$ un $n$ apmierina sekojošu īpašību: $m$ dalās ar
@@ -580,7 +514,6 @@ jebkuru no skaitļiem $1; 2; 3; \ldots ; n$, bet nedalās ne ar $n + 1$, ne ar
 $n + 2$, ne ar $n + 3$. Kādas ir iespējamās $n$ vērtības?
 
 
------
 
 # <lo-sample/> LV.VOL.2007.9.2
 
@@ -592,7 +525,6 @@ $x^2 + (p-1)x + (q-1)=0$ un $x^2 + (p-2)x + (q-2) = 0$ abas saknes ir veseli
 skaitļi? (Saknes var būt arī vienādas.)
 
 
------
 
 # <lo-sample/> LV.VOL.2007.9.5
 
@@ -613,7 +545,6 @@ $81$ (katrā rūtiņā – citu skaitli) tā, lai izpildītos tāda pati īpaš�
 </hgroup>
 
 
------
 
 # <lo-sample/> LV.VOL.2007.10.1
 
@@ -623,11 +554,8 @@ $x^2 - y^2 - x + y$ vērtība ir
 (b) $2007$?
 
 
------
 
 # <lo-sample/> LV.VOL.2007.10.3
-
-<div style="font-size:70%">
 
 Ja $n$ - naturāls skaitlis, kas lielāks par $1$, tad ar $x(n)$ apzīmējam lielāko
 pirmskaitli, kas nepārsniedz $n$, bet ar $y(n)$ - mazāko pirmskaitli, kas
@@ -636,11 +564,6 @@ $$\frac{1}{x(2)\cdot{}y(2)}+
 \frac{1}{x(3)\cdot{}y(3)}+
 \frac{1}{x(4)\cdot{}y(4)}+\ldots+
 \frac{1}{x(600)\cdot{}y(600)} = \frac{1}{2} - \frac{1}{601}.$$
-
-</div>
-
-
------
 
 # <lo-sample/> LV.VOL.2007.10.5
 
@@ -653,7 +576,6 @@ Pierādīt, ka
 
 
 
------
 
 # <lo-sample/> LV.VOL.2007.11.1
 
@@ -663,11 +585,8 @@ Dots, ka $n$ - naturāls skaitlis.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2007.11.5
-
-<div style="font-size:70%">
 
 Reālu skaitļu virknē $a_1, a_2, a_3, \ldots$ dots, ka $a_{11} = 4$, 
 $a_{22} = 2 un $a_{33} = 1$.
@@ -681,11 +600,6 @@ Pierādīt, ka
 ir naturāla skaitļa kvadrāts, ja $k$ - patvaļīgs
 naturāls skaitlis.
 
-</div>
-
-
------
-
 # <lo-sample/> LV.VOL.2007.12.5
 
 Naturālo skaitļu kopa sadalīta daļās tā, ka katrs naturāls skaitlis
@@ -698,7 +612,6 @@ Atbildēt uz šo jautājumu, ja
 
 
 
------
 
 # <lo-sample/> LV.VOL.2008.9.1
 
@@ -707,7 +620,6 @@ Pierādīt, ka mazākais naturālais skaitlis, kas
 dalās gan ar $x$, gan ar $y$, nav $x+y$.
 
 
------
 
 # <lo-sample/> LV.VOL.2008.10.2
 
@@ -716,7 +628,6 @@ nosvītrojot $x$ trīs pēdējos
 ciparus, iegūst $\sqrt[3]{x}$?
 
 
------
 
 # <lo-sample/> LV.VOL.2008.10.3
 
@@ -727,7 +638,6 @@ naturālus skaitļus $n$ var izteikt formā
 $n = [x,y] + [y,z] + [z,x]$?
 
 
------
 
 # <lo-sample/> LV.VOL.2008.11.2
 
@@ -738,7 +648,6 @@ $$\left| \ldots
 
 
 
------
 
 # <lo-sample/> LV.VOL.2008.11.3
 
@@ -748,7 +657,6 @@ cipars ir "2", bet pārējie cipari ir "1".
 Pierādīt, ka $n$ dalās ar $11$.
 
 
------
 
 # <lo-sample/> LV.VOL.2008.12.3
 
@@ -756,7 +664,6 @@ Atrisināt naturālos skaitļos vienādojumu
 $$x^2 + \left( x + 1 \right)^2 = y^2,\;\;\mbox{ja $x \leq 200$}.$$
 
 
------
 
 # <lo-sample/> LV.VOL.2009.9.2
 
@@ -768,7 +675,6 @@ nav. Kāds lielākais daudzums pēc kārtas
 sekojošu naturālu skaitļu var visi būt vienkārši?
 
 
------
 
 # <lo-sample/> LV.VOL.2009.10.2
 
@@ -781,7 +687,6 @@ Dots, ka $2n$ pēc kārtas ņemtu virknes locekļu summa ir $300$
 Kādas ir iespējamās $n$ vērtības?
 
 
------
 
 # <lo-sample/> LV.VOL.2009.11.1
 
@@ -791,7 +696,6 @@ Kāds lielākais šīs virknes elementu daudzums var veidot
 vienu aritmētisku progresiju? 
 
 
------
 
 # <lo-sample/> LV.VOL.2009.11.2
 
@@ -800,7 +704,6 @@ $2009^{2009}-2009$ lielāko kopīgo dalītāju.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2009.12.2
 
@@ -813,7 +716,6 @@ Maijas uzrakstīto skaitļu summa ir $3434$.
 Kāds var būt skaitlis $n$?
 
 
------
 
 # <lo-sample/> LV.VOL.2010.9.1
 
@@ -822,7 +724,6 @@ $a$ un $b$ - naturāli skaitļi, saknes ir divu dažādu
 naturālu skaitļu kvadrāti?
 
 
------
 
 # <lo-sample/> LV.VOL.2010.9.3
 
@@ -833,7 +734,6 @@ Kāds lielākais daudzums pēc kārtas sekojošu
 naturālu skaitļu visi var būt *skaisti*?
 
 
------
 
 # <lo-sample/> LV.VOL.2010.11.4
 
@@ -844,7 +744,6 @@ skaitlim $n$ Fibonači skaitļu virknē ir
 tāds virknes loceklis, kas dalās ar $n$.
 
 
------
 
 # <lo-sample/> LV.VOL.2010.12.2
 
@@ -856,7 +755,6 @@ ka $a_k$ dalās ar $n$.
 Pierādīt, ka $p=q=1$.
 
 
------
 
 # <lo-sample/> LV.VOL.2010.12.4
 
@@ -871,7 +769,6 @@ Vai ir iespējams, ka **(a)** $k=7$, **(b)** $k=8$?
 
 
 
------
 
 # <lo-sample/> LV.VOL.2011.9.1
 
@@ -884,7 +781,6 @@ līdz $2011$ (ieskaitot). Vai var gadīties, ka visiem
 dotajiem vienādojumiem saknes ir veseli skaitļi?
 
 
------
 
 # <lo-sample/> LV.VOL.2011.9.3
 
@@ -904,7 +800,6 @@ tiek iegūts tieši vienu reizi.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2011.10.5
 
@@ -924,7 +819,6 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 # <lo-sample/> LV.VOL.2011.11.3
 
@@ -933,7 +827,6 @@ $p^{p^2 - 5} + 2$
 arī ir pirmskaitlis.
 
 
------
 
 # <lo-sample/> LV.VOL.2011.12.3
 
@@ -942,7 +835,6 @@ kuriem ir patiesa
 vienādība $\left( 2n \right)^{2n}-1 = m^3$.
 
 
------
 
 # <lo-sample/> LV.VOL.2012.9.1
 
@@ -959,7 +851,6 @@ reizinājums var būt skaitlis $20112012$?
 
 
 
------
 
 # <lo-sample/> LV.VOL.2012.10.3
 
@@ -980,7 +871,6 @@ questionType=Prove.ForAll
 -->
 
 
------
 
 ## 66...66 kāpināšana kvadrātā
 
@@ -994,7 +884,6 @@ $$+(5 \cdot (10^n - 1)/9) - (10^n-1).$$
 
 
 
---
 
 ## Pārveidojuma turpinājums
 
@@ -1008,7 +897,6 @@ Tātad $\overline{6\ldots6}^2$ pierakstā ir tikai cipari "4","3", "5" un "6":
 $$(\underbrace{6\ldots6}_n)^2=\overline{\underbrace{4\ldots{}4}\_{n-1}3\underbrace{5\ldots{}5}\_{n-1}6}$$
 
 
------
 
 # <lo-sample/> LV.VOL.2012.11.1
 
@@ -1018,7 +906,6 @@ $n^4 + a$ ir salikts skaitlis visiem naturāliem
 skaitļiem $n > 1$.
 
 
------
 
 # <lo-sample/> LV.VOL.2012.11.4
 
@@ -1029,7 +916,6 @@ Pierādīt, ka visiem $n \geq 1$ ir spēkā sakarība
 $a_n - \sqrt{a_{n+1}}=2$.
 
 
------
 
 # <lo-sample/> LV.VOL.2012.12.1
 
@@ -1040,7 +926,6 @@ $$a_{b_i} = b_{a_i}\;\;\mbox{un}\;\;a_i-b_i > 2012.$$
 Atrast vienu šādu virkņu piemēru.
 
 
------
 
 # <lo-sample/> LV.VOL.2012.12.3
 
@@ -1060,7 +945,6 @@ $\lfloor 0,2 \rfloor =0$ u.tml.)
 
 
 
------
 
 # <lo-sample/> LV.VOL.2013.9.1
 
@@ -1069,7 +953,6 @@ vērtības, lai izpildītos vienādība
 $\overline{abcd} + \overline{abc} + \overline{ab} + a = 2013$.
 
 
------
 
 # <lo-sample/> LV.VOL.2013.9.3
 
@@ -1086,7 +969,6 @@ $\lfloor 4,6 \rfloor =4$,
 $\lfloor 0,2 \rfloor =0$ u.tml.)
 
 
------
 
 # <lo-sample/> LV.VOL.2013.10.1
 
@@ -1106,7 +988,6 @@ questionType=Prove.NotExists
 -->
 
 
------
 
 ## Sākotnējie secinājumi par mainīgajiem
 
@@ -1125,7 +1006,6 @@ Citas $b$ vērtības var neaplūkot, jo dotajam $a$ ($a=3$ vai $a=4$) izteiksme
 $\frac{1}{a} + \frac{1}{b} + \frac{1}{a^2+b^2}$ arvien samazinās tad, ja $b$ pieaug.
 
 
------
 
 # <lo-sample/> LV.VOL.2013.10.4
 
@@ -1149,7 +1029,6 @@ questionType=Prove.Other
 -->
 
 
------
 
 ## Fibonači virknes atlikumi, dalot ar 3
 
@@ -1167,7 +1046,6 @@ Protams, **faktiski** kvadrātu starp Fibonači virknes locekļiem ir vēl kriet
 no kādas vietas (varbūt ļoti "tālas") nevar sākties tikai kvadrāti. 
 
 
------
 
 ## Fibonači virknes atlikumu periodiskums
 
@@ -1184,7 +1062,6 @@ no kādas vietas (varbūt ļoti "tālas") nevar sākties tikai kvadrāti.
 > $0$ parādīsies bezgalīgi bieži (vismaz vienreiz katrā periodā).
 
 
------
 
 # <lo-sample/> LV.VOL.2013.11.1
 
@@ -1192,7 +1069,6 @@ Pierādīt, ka nav tādas naturālas n vērtības, ka
 $n^2 + 4n + 16$ dalās ar $36$.
 
 
------
 
 # <lo-sample/> LV.VOL.2013.12.3
 
@@ -1205,7 +1081,6 @@ $$f(n) \cdot (f(n+1 )-2) = 4n^2-1.$$
 Atrast visas šādas funkcijas $f$ un pierādīt, ka citu nav.
 
 
------
 
 # <lo-sample/> LV.VOL.2013.12.4
 
@@ -1217,7 +1092,6 @@ $d_3^2 d_4^2 \left( d_3^2 + d_4^2 \right) = n^2$.
 Atrast visas iespējamās $n$ vērtības.
 
 
------
 
 # <lo-sample/> LV.VOL.2014.9.2
 
@@ -1229,7 +1103,6 @@ pirmajiem **(a)** $100$, **(b)** $2014$ locekļiem
 ir tādi, kas dalās ar $5$?
 
 
------
 
 # <lo-sample/> LV.VOL.2014.10.2
 
@@ -1250,7 +1123,6 @@ questionType=Find.All
 -->
 
 
------
 
 ## Polinomu dalīšana ar atlikumu
 
@@ -1264,7 +1136,6 @@ Var gadīties, ka atlikums $R(x)=0$, ja $A(x)$ izdalās ar $B(x)$ bez atlikuma.
 Var arī gadīties, ka $R(x)$ ir konstante – t.i. $0$-tās pakāpes polinoms.
 
 
---
 
 ## Pirmais dalīšanas piemērs
 
@@ -1275,7 +1146,6 @@ $$=n^2-3n+9+\frac{-24}{n+3}.$$
 
 Vajag, lai $24$ dalās ar $n+3$.
 
---
 
 ## Otrais dalīšanas piemērs
 
@@ -1287,7 +1157,6 @@ $$n+4 \in \{ \ldots, -26, -20, -13, -10, -5, -4, -2, -1 \} \cup$$
 $$\cup \{1, 2, 4, 5, 10, 13, 20, 26, \ldots \}$$
 
 
---
 
 ## Skaitļa visi veselie dalītāji
 
@@ -1308,7 +1177,6 @@ kur $b_1 \in \{ 0,1,2,3 \}$, $b_2 \in \{ 0,1 \}$.
 
 
 
---
 
 ## Divu kopu šķēlums
 
@@ -1324,7 +1192,6 @@ No šejienes $(n+4) \in \{ -5, -2, -1, 2, 4, 5, 13 \}$ jeb
 $n \in \{ -9, -6, -5, -2, 0, 1, 9 \}$.
 
 
------
 
 # <lo-sample/> LV.VOL.2014.10.3
 
@@ -1348,7 +1215,6 @@ questionType=Find.Max
 -->
 
 
------
 
 ## Summas, kuras var nomaksāt
 
@@ -1370,7 +1236,6 @@ $13$-centu markām, nevar iegūt atlikumu $1$, dalot ar $7$.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2014.11.2
 
@@ -1379,7 +1244,6 @@ naturāliem skaitļiem $a$,
 $a+14$, $a+22$, $a+32$, $a+46$ var būt pirmskaitļi.
 
 
------
 
 # <lo-sample/> LV.VOL.2014.11.5
 
@@ -1391,7 +1255,6 @@ skaitļu kvadrātu summu.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2014.12.2
 
@@ -1403,7 +1266,6 @@ $$n + f(1) + f(2) + \ldots + f(n-1) = n\cdot{}f(n).$$
 
 
 
------
 
 # <lo-sample/> LV.VOL.2014.12.5
 
@@ -1413,7 +1275,6 @@ $n$ naturālo dalītāju, izņemot $1$ un $n$,
 kvadrātu summa vienāda ar $n^2$.
 
 
------
 
 # <lo-sample/> LV.VOL.2015.9.1
 
@@ -1421,11 +1282,8 @@ Atrast visus tādus naturālus skaitļus $n$ un $m$,
 kuriem $\frac{2015}{n^4 - m^4}$ arī ir naturāls skaitlis!
 
 
------
 
 # <lo-sample/> LV.VOL.2015.9.3
-
-<div style="font-family:70%">
 
 Aija izvēlas naturālu skaitli $n \leq 100$ 
 un veido skaitļu virkni, kur katru
@@ -1446,11 +1304,6 @@ bet $25$ –
 nav, jo $25; 50; 100; 100; \ldots$ 
 (tālāk virknē nav skaitļu, kas atšķirīgi no $100$).
 
-</div>
-
-
------
-
 # <lo-sample/> LV.VOL.2015.10.2
 
 Pierādīt, ka katram naturālam $n$ izteiksme
@@ -1470,7 +1323,6 @@ questionType=Prove.ForAll
 -->
 
 
------
 
 ## Dalāmība ar 2 un 5
 
@@ -1485,7 +1337,6 @@ Lielākiem skaitļiem ($n=6,7,8,9$) šie atlikumi sāks atkārtoties.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2015.11.1
 
@@ -1497,7 +1348,6 @@ $a^4b + ab^4+ 3a^3b^2 + 3a^2b^3 + 16a^4b^3 + 16a^3b^4$
 vērtība ir vesels skaitlis!
 
 
------
 
 # <lo-sample/> LV.VOL.2015.11.4
 
@@ -1508,7 +1358,6 @@ $b+c$ dalās ar $a$. Atrast mazāko
 iespējamo $b$ vērtību!
 
 
------
 
 # <lo-sample/> LV.VOL.2015.12.3
 
@@ -1518,7 +1367,6 @@ $2269^n + 2151^n + 1389^n - 1779^n$ dalās ar $2015$.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2016.9.1
 
@@ -1527,7 +1375,6 @@ ka $xy^2$ ir naturāla skaitļa kubs.
 Pierādīt, ka arī $x^2y$ ir naturāla skaitļa kubs!
 
 
------
 
 # <lo-sample/> LV.VOL.2016.9.4
 
@@ -1535,11 +1382,8 @@ Atrast skaitļa $\frac{2016^{2016}-3}{3}$
 mazāko pirmreizinātāju!
 
 
------
 
 # <lo-sample/> LV.VOL.2016.9.5
-
-<div style="font-size:70%">
 
 Naturālu skaitļu virkni $(s_i)$ pēc parauga „2016” veido šādi:
 
@@ -1556,12 +1400,6 @@ Pēc tam meklētie cipari cikliski atkārtojas:
 ir $2; 10; 11; 16; 20; 30; 31; 36; 42; 50$.
 Kādi ir četri nākamie skaitļi, kas virknē seko aiz skaitļa $2016$?
 
-</div>
-
-
-
------
-
 # <lo-sample/> LV.VOL.2016.10.1
 
 Zināms, ka $x$ un $y$ ir tādi naturāli skaitļi, ka 
@@ -1569,7 +1407,6 @@ $xy^{10}$ ir naturāla skaitļa 33. pakāpe.
 Pierādīt, ka arī $x^{10}y$ ir naturāla skaitļa 33. pakāpe!
 
 
------
 
 # <lo-sample/> LV.VOL.2016.10.4
 
@@ -1770,7 +1607,6 @@ pakāpe. Pierādīt, ka arī $x^5y^6z^3$ ir naturāla skaitļa
 septītā pakāpe!
 
 
------
 
 # <lo-sample/> LV.VOL.2016.12.3
 
@@ -1778,7 +1614,6 @@ Pierādīt, ka vismaz viens no $18$ pēc kārtas sekojošiem
 trīsciparu skaitļiem dalās ar savu ciparu summu!
 
 
------
 
 # <lo-sample/> LV.VOL.2016.12.4
 
@@ -1790,7 +1625,6 @@ iespējams atrast tādas naturālas $b$ un $c$ vērtības,
 ka $f(a) = g(b; c)$.
 
 
------
 
 # <lo-sample/> LV.VOL.2017.9.1
 
@@ -1799,7 +1633,6 @@ ir $2017$. Atrodiet šos skaitļus un pamatojiet,
 ka citu nav!
 
 
------
 
 # <lo-sample/> LV.VOL.2017.9.3
 
@@ -1813,7 +1646,6 @@ $G$, turklāt $G > A > N$. Kāds varēja būt
 sākotnējais skaitlis?
 
 
------
 
 # <lo-sample/> LV.VOL.2017.10.2
 
@@ -1888,7 +1720,6 @@ Dalāmība ar $11$ nemainās, ja samaina ciparus nepāru pozīcijās (vai arī p
 tātad, arī dalot ar $11$ nevar sagaidīt daudzus atlikumus.
 
 
------
 
 # <lo-sample/> LV.VOL.2017.11.4
 
@@ -1896,7 +1727,6 @@ Pierādīt, ka no jebkuriem $17$ naturāliem skaitļiem var
 izvēlēties $9$ skaitļus tā, lai to summa dalītos ar $9$.
 
 
------
 
 # <lo-sample/> LV.VOL.2017.12.4
 
@@ -1913,7 +1743,6 @@ naturāla skaitļa kvadrāts!
 
 
 
------
 
 # <lo-sample/> LV.VOL.2018.9.2
 
@@ -1923,7 +1752,6 @@ Pierādīt, ka šos reizinājumus dalot ar $4$,
 vismaz divi dod vienādus atlikumus!
 
 
------
 
 # <lo-sample/> LV.VOL.2018.10.3
 
@@ -1951,7 +1779,6 @@ questionType=Prove.Exists,Prove.Other
 -->
 
 
------
 
 ## Vienkāršāks uzdevums: 
 
@@ -1962,7 +1789,6 @@ Var aplūkot tādus skaitļus, kuru vidū var iespraust neierobežotu skaitu nu�
 * Tas pats pārītim $(200, 201)$, $(2000, 2001)$, utt.
 
 
---
 
 ## Ķēdītes garumā 3
 
@@ -1972,7 +1798,6 @@ $$1\underbrace{0\ldots0}_n10,\;\;1\underbrace{0\ldots0}_n11,\;\;1\underbrace{0\l
 
 
 
------
 
 # <lo-sample/> LV.VOL.2018.11.3
 
@@ -1986,7 +1811,6 @@ Piemēram, skaists piecinieks ir $6, 7, 8, 9, 10$.
 **(a)** Atrast tādu skaistu piecinieku, kurā mazākais skaitlis ir lielāks nekā $10$.  
 **(b)** Pierādīt, ka eksistē bezgalīgi daudz skaistu piecinieku!
 
------
 
 # <lo-sample/> LV.VOL.2018.12.3
 
@@ -1994,7 +1818,6 @@ Atrisināt veselos skaitļos vienādojumu $x^6 + 3x^3 + 1 = y^4$.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2019.9.3
 
@@ -2002,7 +1825,6 @@ Vai naturāla skaitļa kvadrāta ciparu summa var būt
 **(a)** $19$, **(b)** $2019$?
 
 
------
 
 # <lo-sample/> LV.VOL.2019.10.1
 
@@ -2022,7 +1844,6 @@ questionType=Prove.ForAll
 -->
 
 
------
 
 ## Empīriskā matemātika...
 
@@ -2033,7 +1854,6 @@ Skaitļu, kas lielāki par $100$ ($101,102,103,\ldots$) ir bezgalīgi daudz;
 arī izteikt var ļoti daudzos veidos. 
 
 
---
 
 ## Kārtību ievieš, šķirojot gadījumus:
 
@@ -2043,7 +1863,6 @@ arī izteikt var ļoti daudzos veidos.
 
 
 
------
 
 # <lo-sample/> LV.VOL.2019.10.3
 
@@ -2067,7 +1886,6 @@ questionType=Prove.NotExists
 
 
 
------
 
 # <lo-sample/> LV.VOL.2019.11.3
 
@@ -2078,7 +1896,6 @@ kvadrāts!
 
 
 
------
 
 # <lo-sample/> LV.VOL.2019.12.3
 
@@ -2087,7 +1904,6 @@ $$4^n+5^n+6^n+7^n+8^n+9^n+10^n+11^n+12^n+13^n$$
 vērtība nav naturāla skaitļa kvadrāts!
 
 
------
 
 # <lo-sample/> LV.VOL.2019.12.5
 

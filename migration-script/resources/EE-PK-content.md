@@ -1,19 +1,3 @@
-# &nbsp;
-
-<h1 style="font-size:28pt">Skaitļu teorija: Igaunijas olimpiādes, 10.kl.</h1>
-
-* <blue>**EE.PK** - **Eesti Piirkonnavoor** (Igaunijas reģionu kārta)</blue>
-* **EE.LO** - Eesti Lõppvoor (Igaunijas gala/valsts kārta)
-* **EE.LVS** - Eesti Sügisene lahtine võistlus (Igaunijas rudens atvērtais konkurss)
-* **EE.LVT** - Eesti Talvine lahtine võistlus (Igaunijas ziemas atvērtais konkurss)
-
-[Matemaatikaolümpiaadid ](http://www.math.olympiaadid.ut.ee/html/index.php)
-
-
-
-
------
-
 # <lo-sample/> EE.PK.1994.7.2 
 
 Atrast mazāko naturālo skaitli, kura pierakstā ir tikai cipari $5$ un $9$, 
@@ -60,7 +44,6 @@ questionType=Find.All
 -->
 
 
------
 
 # <lo-sample/> EE.PK.1995.7.2
 
@@ -73,7 +56,6 @@ questionType=Find.Min
 -->
 
 
------
 
 # <lo-sample/> EE.PK.1995.8.3
 
@@ -96,7 +78,6 @@ questionType=ProveDisprove.Exists
 
 
 
------
 
 # <lo-sample/> EE.PK.1996.7.3
 
@@ -110,7 +91,6 @@ genre=digit-manipulation
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.1996.8.3
 
@@ -125,7 +105,6 @@ genre=word-problem
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.1996.9.2
 
@@ -141,7 +120,6 @@ questionType=Find.All
 
 
 
------
 
 # <lo-sample/> EE.PK.1997.7.1
 
@@ -153,7 +131,6 @@ genre=integer-equation
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.1997.8.1
 
@@ -169,7 +146,6 @@ genre=digit-manipulation
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.1997.8.1
 
@@ -183,7 +159,6 @@ concepts=primes,remainder,square
 questionType=Prove.Other
 -->
 
------
 
 # <lo-sample/> EE.PK.1998.7.2
 
@@ -198,7 +173,6 @@ genre=digit-manipulation
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.1998.7.3
 
@@ -219,7 +193,6 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 # <lo-sample/> EE.PK.1998.8.1
 
@@ -232,7 +205,6 @@ genre=digit-manipulation
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.1998.9.1
 
@@ -246,7 +218,6 @@ questionType=Find.All
 -->
 
 
------
 
 # <lo-sample/> EE.PK.1999.7.1
 
@@ -261,11 +232,8 @@ questionType=Find.All
 -->
 
 
------
 
 # <lo-sample/> EE.PK.1999.7.3
-
-<div style="font-size:80%">
 
 Kivisillu (*Kivisilla*) ģimene satiekas pirmajā jūlijā - reizi trijos gados. 
 Nesenākajā tikšanās reizē ģimenes locekļi teica par savu vecumu sekojošo:  
@@ -278,14 +246,11 @@ tanti Lēnu (*Leena*).
 Cik gadu bija Marijai, Jurim, Pēterim, Kārlim un tantei Lēnai nesenākajā tikšanās reizē, 
 ja viņu vecumu summa ir $165$? (Vecumu nosaka pilnos gados.)
 
-</div>
-
 <!--
 genre=word-problem
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.1999.8.3
 
@@ -301,7 +266,6 @@ genre=digit-manipulation
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.1999.9.3
 
@@ -316,11 +280,8 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 # <lo-sample/> EE.PK.2000.7.3
-
-<div style="font-size:80%">
 
 Pirms Annika (*Annika*), Tomijs (*Tommy*) 
 un Pepija (*Pipi*) aizbrauca no Kurunuruvutisāres 
@@ -339,15 +300,12 @@ trīs, četri vai pieci, un to saturu izdalīja bērniem tā, lai
 beigās katram būtu vienāds pērļu skaits. Cik pērļu kapteinis
 pielika klāt katram no bērniem? 
 
-</div>
-
 <!--
 concepts=divisibility
 genre=word-problem
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2000.8.1
 
@@ -361,7 +319,6 @@ genre=string-counting
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2000.9.1
 
@@ -380,7 +337,6 @@ questionType=Find.All
 -->
 
 
------
 
 # <lo-sample/> EE.PK.2001.7.3
 
@@ -392,7 +348,6 @@ concepts=primes
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2001.8.1
 
@@ -410,7 +365,6 @@ genre=procedure
 questionType=Find.Min
 -->
 
------
 
 # <lo-sample/> EE.PK.2001.9.1
 
@@ -426,7 +380,6 @@ genre=word-problem
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2001.9.3
 
@@ -439,7 +392,6 @@ concepts=divisibility,power,quadratic-equation
 questionType=Prove.ForAll
 -->
 
------
 
 # <lo-sample/> EE.PK.2002.7.1 
 
@@ -456,7 +408,6 @@ genre=word-problem
 questionType=Find.Only
 -->
 
------
 
 # <lo-sample/> EE.PK.2002.8.1 
 
@@ -472,7 +423,6 @@ concepts=arithmetic-progression
 questionType=Find.All,NoteOnProof
 -->
 
------
 
 # <lo-sample/> EE.PK.2003.7.3 
 
@@ -486,7 +436,6 @@ genre=digit-manipulation
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2003.8.1 
 
@@ -499,7 +448,6 @@ Atrast trīs dotos skaitļus.
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2003.8.3 
 
@@ -515,7 +463,6 @@ genre=word-problem
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2004.7.1 
 
@@ -526,7 +473,6 @@ kuru reizinājums ar skaitli $748$ beidzas ar cipariem $2004$.
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2004.8.1 
 
@@ -541,7 +487,6 @@ genre=digit-manipulation
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2004.8.3 
 
@@ -557,7 +502,6 @@ genre=word-problem
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2005.7.1 
 
@@ -586,7 +530,6 @@ questionType=Find.All
 -->
 
 
------
 
 # <lo-sample/> EE.PK.2005.8.1 
 
@@ -616,7 +559,6 @@ questionType=Find.All
 -->
 
 
------
 
 # <lo-sample/> EE.PK.2006.7.3 
 
@@ -635,7 +577,6 @@ genre=string-counting
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2006.8.3 
 
@@ -649,7 +590,6 @@ concepts=primes,combinations
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2007.7.1 
 
@@ -666,7 +606,6 @@ genre=word-problem
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2007.8.1 
 
@@ -681,7 +620,6 @@ genre=digit-manipulation
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2008.7.2 
 
@@ -695,7 +633,6 @@ genre=digit-manipulation
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2008.8.2 
 
@@ -709,7 +646,6 @@ questionType=Find.All
 -->
 
 
------
 
 # <lo-sample/> EE.PK.2009.7.2 
 
@@ -727,7 +663,6 @@ questionType=Find.All
 -->
 
 
------
 
 # <lo-sample/> EE.PK.2009.8.2 
 
@@ -755,7 +690,6 @@ questionType=Find.All
 
 
 
------
 
 
 # <lo-sample/> EE.PK.2010.7.1 
@@ -771,7 +705,6 @@ genre=digit-manipulation
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2010.8.1 
 
@@ -788,7 +721,6 @@ questionType=Find.All
 
 
 
------
 
 # <lo-sample/> EE.PK.2010.10.5
 
@@ -806,12 +738,11 @@ ciparu 1, arī rodas kāda vesela skaitļa kvadrāts.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Доказать, что для каждого целого числа $n \geq 3$ найдётся такое $n$-значное
 число, которое является квадратом целого числа и при добавлении в его
 начало цифры 1 также получится квадрат некоторого целого числа.
--->
+</text>
 
 <!--
 genre=digit-manipulation
@@ -820,7 +751,6 @@ questionType=Prove.ForAll
 strategy=begin-at-the-end
 -->
 
------
 
 ## Atrisinājums
 
@@ -850,7 +780,6 @@ vispirms aprēķina $n(n+1)$, pēc tam galā pieraksta ciparus "25".
 
 
 
------
 
 # <lo-sample/> EE.PK.2011.7.1 
 
@@ -863,12 +792,8 @@ no kreisās uz labo pusi;
 
 Vai eksistē šos noteikumus apmierinoši 
 
-<div class="enum-a">
-
 1. sešciparu skaitļi;
 2. septiņciparu skaitļi?
-
-</div>
 
 Ja tādi eksistē, tad atrast mazāko un lielāko tādu skaitli; 
 ja neeksistē, tad pamatot, kāpēc. 
@@ -879,7 +804,6 @@ questionType=Find.Min,Find.Max,Prove.NotExists
 -->
 
 
------
 
 # <lo-sample/> EE.PK.2011.8.3 
 
@@ -895,7 +819,6 @@ questionType=Find.All,Find.Min,Find.Max
 -->
 
 
------
 
 # <lo-sample/> EE.PK.2011.10.3
 
@@ -918,8 +841,7 @@ skaitli $m$, iegūstot dalījumu un atlikumu.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 На уроке математики Юра должен был поделить положительное целое
 число $n$ на положительное целое число $m$, чтобы найти частное и остаток.
 а) Доказать, что если найденные частное и остаток равны между собой,
@@ -927,7 +849,7 @@ ru=
 б) Выполняется ли обратное утверждение: всегда, когда число n делится 
 на число m + 1, частное и остаток при делении числа n на число
 m равны между собой?
--->
+</text>
 
 <!--
 questionType=Prove.ForAll,ProveDisprove.ForAll
@@ -935,7 +857,6 @@ concepts=remainder
 -->
 
 
------
 
 
 ## Atrisinājums
@@ -969,7 +890,6 @@ genre=cryptarithm
 questionType=Find.Max
 -->
 
------
 
 # <lo-sample/> EE.PK.2012.8.2 
 
@@ -983,7 +903,6 @@ questionType=Find.All
 
 
 
------
 
 # <lo-sample/> EE.PK.2012.10.4
 
@@ -997,11 +916,10 @@ kuri apmierina vienādojumu $(a + b)(b + c)(c + a) = 123456789$?
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Сколько существует комплектов целых чисел $(a, b, c)$, 
 которые удовлетворяют уравнению $(a + b)(b + c)(c + a) = 123456789$?
--->
+</text>
 
 <!--
 genre=integer-equation
@@ -1009,7 +927,6 @@ questionType=Find.Count
 -->
 
 
------
 
 
 ## Atrisinājums
@@ -1031,7 +948,6 @@ Iegūta pretruna: Ja $a$ ir pāru, tad $b$ ir nepāru, tad $c$ ir pāru, tad $a$
 
 
 
------
 
 
 # <lo-sample/> EE.PK.2013.8.1 
@@ -1052,7 +968,6 @@ questionType=Find.All
 
 
 
------
 
 # <lo-sample/> EE.PK.2013.10.3
 
@@ -1068,12 +983,11 @@ dalās ar $10$.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Найти наименьшее натуральное число $n$, при котором среди любых n
 квадратов целых чисел найдутся два таких, разность которых делится
 на $10$.
--->
+</text>
 
 <!--
 concepts=full-square,divisibility
@@ -1081,7 +995,6 @@ questionType=Find.Min
 -->
 
 
------
 
 ## Atrisinājums
 
@@ -1129,7 +1042,6 @@ questionType=Find.Min
 
 
 
------
 
 
 # <lo-sample/> EE.PK.2014.7.1 
@@ -1145,7 +1057,6 @@ genre=cryptarithm
 questionType=Find.All
 -->
 
------
 
 
 # <lo-sample/> EE.PK.2014.8.1 
@@ -1167,7 +1078,6 @@ questionType=ProveDisprove.ForAll,Find.All
 -->
 
 
------
 
 
 # <lo-sample/> EE.PK.2014.10.3
@@ -1184,12 +1094,11 @@ Atrast visas iespējamās $n$ vērtības.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 В вершины равностороннего треугольника записаны положительные целые числа 14, 20 и $n$. 
 Произведение чисел любых двух вершин делится на
 число в третьей вершине. Найти все возможные значения числа $n$.
--->
+</text>
 
 <!--
 concepts=divisibility
@@ -1212,7 +1121,6 @@ Izmantojam apgalvojumus par mazāko kopīgo dalāmo.
 
 
 
------
 
 
 # <lo-sample/> EE.PK.2015.8.1 
@@ -1226,7 +1134,6 @@ genre=digit-manipulation
 questionType=Find.All
 -->
 
------
 
 
 # <lo-sample/> EE.PK.2015.10.3
@@ -1247,19 +1154,17 @@ questionType=Find.All
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 а) Известно, что $x^2 − y^2 = 100$, где $x$ и $y$ − натуральные числа. Найти
 наименьшее возможное значение выражения $x − y$.  
 б) Тот же вопрос, при условии, что $x$ и $y$ − целые числа
--->
+</text>
 
 <!--
 genre=optimization
 questionType=Find.Min
 -->
 
------
 
 
 ## Atrisinājums
@@ -1276,7 +1181,6 @@ questionType=Find.Min
    lineāru vienādojumu sistēmai  $x-y=1$ un $x+y=100$ utml.
 
 
------
 
 # <lo-sample/> EE.PK.2015.10.6
 
@@ -1290,11 +1194,10 @@ veselo skaitļu no $1$ līdz $n$ ciparu summa ir pāru skaitlis?
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Существует ли такое положительное целое число $n$, что у более половины
 из целых чисел от $1$ до $n$ сумма цифр чётна?
--->
+</text>
 
 <!--
 concepts=sum-of-digits
@@ -1302,7 +1205,6 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 ## Atrisinājums
 
@@ -1344,7 +1246,6 @@ Tālāk - tiem $n$, kas dalās ar $10$.
 
 
 
------
 
 
 # <lo-sample/> EE.PK.2016.7.3 
@@ -1363,7 +1264,6 @@ questionType=Find.All
 -->
 
 
------
 
 # <lo-sample/> EE.PK.2016.8.2 
 
@@ -1379,7 +1279,6 @@ questionType=Find.All
 -->
 
 
------
 
 # <lo-sample/> EE.PK.2016.10.3
 
@@ -1396,13 +1295,12 @@ būtu vienāda ar to mazāko kopīgo dalāmo, ja
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Можно ли подобрать такие $n$ положительных целых чисел, 
 чтобы их сумма равнялась их же наименьшему общему кратному, если
 а) $n = 2$?  
 б) $n = 3$?
--->
+</text>
 
 <!--
 concepts=lcm
@@ -1438,7 +1336,6 @@ $$1 = \frac{1}{x} + \frac{1}{y} + \frac{1}{z}.$$
 
 
 
------
 
 # <lo-sample/> EE.PK.2016.10.4
 
@@ -1454,12 +1351,11 @@ atrisinājums, kuram $x$, $y$, $z$ un $w$ ir dažādi veseli skaitļi?
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Существует ли такое решение уравнения
 $x^2 + y^2 + z^2 + w^2 = 3 + xy + y z + zw$,
 при котором $x$, $y$, $z$ и $w$ различные целые числа?
--->
+</text>
 
 <!--
 concepts=square
@@ -1468,7 +1364,6 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 
 ## Atrisinājums
@@ -1488,7 +1383,6 @@ neviens no šiem kvadrātiem nevar būt $2^2$ vai lielāks.
 
 
 
------
 
 
 # <lo-sample/> EE.PK.2017.7.1 
@@ -1508,7 +1402,6 @@ questionType=Find.All,Find.Max
 -->
 
 
------
 
 
 # <lo-sample/> EE.PK.2017.8.1 
@@ -1526,7 +1419,6 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 # <lo-sample/> EE.PK.2017.10.2
 
@@ -1542,11 +1434,10 @@ $324^{x+y} = 2^{x−y} \cdot 3^{x−3} \cdot 4^{y−4}$.
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Найти все пары целых чисел $(x,y)$, при которых
 $324^{x+y} = 2^{x−y} \cdot 3^{x−3} \cdot 4^{y−4}$.
--->
+</text>
 
 <!--
 concepts=power
@@ -1556,7 +1447,6 @@ questionType=Find.All
 
 
 
------
 
 ## Atrisinājums
 
@@ -1594,7 +1484,6 @@ No pirmā vienādojuma izsaka $y=-8-x$ un ievieto otrajā:
 $3x + 4(-8-x) = -32-x = -3$. Tad $(x,y)=(-29,21)$.
 
 
------
 
 # <lo-sample/> EE.PK.2017.10.3
 
@@ -1611,19 +1500,17 @@ $$\frac{1}{a} - \frac{1}{b} =\frac{1}{b} - \frac{1}{c} =\frac{1}{c} - \frac{1}{d
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Доказать, что найдётся бесконечно много четвёрок различных 
 целых положительных чисел $(a, b, c, d)$, при которых
 $$\frac{1}{a} - \frac{1}{b} =\frac{1}{b} - \frac{1}{c} =\frac{1}{c} - \frac{1}{d}.$$
--->
+</text>
 
 <!--
 questionType=Prove.Other
 -->
 
 
------
 
 ## Atrisinājums
 
@@ -1663,7 +1550,6 @@ Eksistē arī citādas atbildes, kuras uz $(3,4,6,12)$ vai tā
 daudzkārtņiem reducēt nevar. 
 
 
------
 
 
 # <lo-sample/> EE.PK.2018.10.3
@@ -1682,20 +1568,19 @@ Atrast visas iespējamās vērtības Mari iedomātajam skaitlim.
 
 </small>
 
-<!--
+<text lang="ru">
 Маша задумала одно натуральное число. Умножив это число на 4, 
 она получила какое-то трёхзначное число. А когда она умножила первоначальное 
 число на 3 и переставила последнюю цифру результата в его начало,
 то неожиданно получила то же самое трёхзначное число. 
 Найти все возможные значения задуманного Машей числа.
--->
+</text>
 
 <!--
 genre=digit-manipulation
 questionType=Find.All
 -->
 
------
 
 
 ## Atrisinājums
@@ -1741,7 +1626,6 @@ pēdējo ciparu uz sākumu.
 
 
 
------
 
 # <lo-sample/> EE.PK.2019.7.1
 
@@ -1750,19 +1634,17 @@ tādā secībā, ka pirmo četru skaitļu summa vienāda ar pēdējo
 četru skaitļu summu. Kurš skaitlis
 var būt uzrakstīts vidū? Atrast visas iespējas.
 
-<!--
-ru=
+<text lang="ru">
 Саша записывает числа $2, 3, 5, 7, 8, 10, 11$ в тетрадку в 
 таком порядке, что сумма первых четырёх чисел равна сумме 
 последних четырёх чисел. Найти все возможности, 
 какое число может быть записано посередине.
--->
+</text>
 
 <!--
 questionType=Find.All
 -->
 
------
 
 # <lo-sample/> EE.PK.2019.8.1
 
@@ -1770,11 +1652,11 @@ Esta izvēlējās divus naturālus skaitļus. Vienu no tiem viņa pareizināja
 ar $20$, bet otru – ar $19$. Iegūto reizinājumu summa vienāda ar $292$. 
 Atrast visas iespējas, kādi var būt Estas izvēlētie skaitļi.
 
-<!--
+<text lang="ru">
 Элла выбрала два натуральных числа. Одно из них она умножила на $20$,
 а другое – на $19$. Сумма полученных произведений равна $292$. Найти все
 возможности, чему могут быть равны два задуманных числа Эллы.
--->
+</text>
 
 <!--
 genre=integer-equation
@@ -1784,7 +1666,6 @@ questionType=Find.All
 
 
 
------
 
 # <lo-sample/> EE.PK.2019.10.3
 
@@ -1800,11 +1681,10 @@ kas apmierina vienādību $22a + 15b = 2019$?
 
 </small>
 
-<!--
-ru=
+<text lang="ru">
 Сколько найдётся пар неотрицательных целых чисел $(a, b)$, 
 удовлетворяющих равенству $22a + 15b = 2019$?
--->
+</text>
 
 <!--
 genre=integer-equation
@@ -1812,7 +1692,6 @@ concepts=linear-expression
 questionType=Find.Count
 -->
 
------
 
 ## Atrisinājums
 

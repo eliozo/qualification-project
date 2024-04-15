@@ -1,16 +1,3 @@
-# &nbsp;
-
-<h1 style="font-size:28pt">Skaitļu teorija: 10.kl. LV</h1>
-
-* 10.kl. skaitļu teorija (no 2010.g.)
-    - <blue>LV.NO - novadu olimpiāde (2.posms)</blue>
-    - LV.VO - valsts olimpiāde (3.posms)
-    - LV.AO - atklātā olimpiāde
-
-
-
------
-
 # <lo-sample/> LV.NOL.2000.7.4 
 
 Naturālu skaitli sauc par interesantu, ja tā ciparu summa dalās ar $5$. 
@@ -35,7 +22,6 @@ questionType=Find.Any,Find.Count,Prove.ForAll
 -->
 
 
------
 
 ## Atlikumi, dalot ar 9 
 
@@ -47,7 +33,6 @@ $9$ daudzkārtni, tie var atšķirties par $0$ vai $45$, utt.
 * Par $45$ atšķiras, piemēram, $1999999$ un $2000008$ ciparu summas. 
 
 
---
 
 ## Gadījumu pārlase
 
@@ -58,7 +43,6 @@ pārvēršas par $0$). Virknīte garumā $9$ (neatkarīgi no tā, kurā brīdī
 vienu cipars pārlec uz $0$), saturēs augošu gabalu garumā $5$.
 
 
------
 
 # <lo-sample/> LV.NOL.2000.7.5 
 
@@ -82,7 +66,6 @@ seeAlso=LV.NOL.2019.8.4
 -->
 
 
------
 
 ## Invariants
  
@@ -93,7 +76,6 @@ $$\frac{3}{2}\cdot\frac{4}{5}\cdot\frac{5}{3} = \frac{2}{1}$$
 $$\frac{4}{3}\cdot\frac{4}{5}\cdot\frac{5}{2} = \frac{8}{3}$$
 
 
------
 
 # <lo-sample/> LV.NOL.2000.8.5 
 
@@ -117,7 +99,6 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 ## Neiespējamība
 
@@ -125,7 +106,6 @@ $n=5$ nevar, jo $1+2+\ldots+10=55$ ir nepāru skaitlis, bet
 tam jābūt pāru (summas pa rindiņām un kolonnām sakrīt).
 
 
---
 
 ## Piemēra konstruēšana
 
@@ -141,7 +121,6 @@ $n=6$ var ($1,2,3,10,11,12$ pa vertikāli).
 </table>
 
 
------
 
 # <lo-sample/> LV.NOL.2000.9.2 
 
@@ -161,7 +140,6 @@ questionType=Find.Min
 -->
 
 
------
 
 ## Piemēra konstrukcija
 
@@ -175,7 +153,6 @@ Mazāk kā $4$ vērtības nevar, jo skaitli vidū saskaita ar $4$ dažādiem ska
 </table>
 
 
------
 
 # <lo-sample/> LV.NOL.2000.9.4 
 
@@ -197,7 +174,6 @@ questionType=Find.Any,ProveDisprove.Exists
 -->
 
 
------
 
 ## Gadījumu šķirošana
 
@@ -208,7 +184,6 @@ questionType=Find.Any,ProveDisprove.Exists
 
 
 
------
 
 # <lo-sample/> LV.NOL.2000.10.1 
 
@@ -223,7 +198,6 @@ questionType=Find.All
 -->
 
 
------
 
 # <lo-sample/> LV.NOL.2000.10.2 
 
@@ -242,7 +216,6 @@ questionType=ProveDisprove.Exists
 
 
 
------
 
 # <lo-sample/> LV.NOL.2000.10.5 
 
@@ -257,14 +230,12 @@ questionType=Find.All
 -->
 
 
------
 
 ## ABC
 
 **#MasuCentrs** No katra pāra $(n,21-n)$ ņemts tieši viens. 
 
 
------
 
 # <lo-sample/> LV.NOL.2000.11.1 
 
@@ -280,14 +251,12 @@ questionType=Find.All
 -->
 
 
------
 
 ## ABC
 
 **#Nevienādība** **#GadījumuPārlase** $x \in [3;4)$. Tad $x \lfloor 3x \rfloor = 41$. Trīs gadījumi: $x \cdot 9 = 41$, $x \cdot 10 = 41$, $x \cdot 11 = 41$. Vienīgi $x = 41/11$ der.
 
 
------
 
 # <lo-sample/> LV.NOL.2000.11.4 
 
@@ -303,14 +272,12 @@ questionType=Prove.ForAll,Find.Any,Prove.NotExists
 -->
 
 
------
 
 ## ABC
 
 **#Paritāte** **#Polinomi** Četru nepāru summa nav nepāru. $N = 1^2 + 2^2 + p^2 + (2p)^2 = 5(p^2+1)$, t.i. mazākais nepāru $p\,\mid\,N$ ir $5$, un $5(5^2+1) = 130$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2000.12.1 
 
@@ -326,7 +293,6 @@ questionType=Find.Only
 -->
 
 
------
 
 ## ABC
 
@@ -337,7 +303,6 @@ questionType=Find.Only
 
 
 
------
 
 # <lo-sample/> LV.NOL.2001.7.1 
 
@@ -357,7 +322,6 @@ questionType=Find.All
 -->
 
 
------
 
 ## 365:7 - dalīšana ar atlikumu
  
@@ -366,7 +330,6 @@ $365$ dienu gads sākas un beidzas ar to pašu dienu.
 Bet nākamais sākas un beidzas ar svētdienu.
 
 
------
 
 # <lo-sample/> LV.NOL.2001.7.4 
 
@@ -390,7 +353,6 @@ questionType=Find.Max
 -->
 
 
------
 
 ## ABC
  
@@ -398,7 +360,6 @@ questionType=Find.Max
 
 
 
------
 
 # <lo-sample/> LV.NOL.2001.8.3 
 
@@ -423,7 +384,6 @@ questionType=Find.Max
 -->
 
 
------
 
 ## Dalāmība ar 2 un 5
 
@@ -432,7 +392,6 @@ questionType=Find.Max
 * $1379$ dalās ar $7$. Tātad $1379502468$ der. 
 
 
------
 
 # <lo-sample/> LV.NOL.2001.9.1 
 
@@ -446,7 +405,6 @@ questionType=Prove.Exists
 -->
 
 
------
 
 ## ABC
 
@@ -455,7 +413,6 @@ $4^3-4$, $5^5-5$, $6^6 - 6$, $7^3 + 7$, $8^3 + 8$, $9^9-9$.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2001.9.5 
 
@@ -473,7 +430,6 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 ## ABC
 
@@ -482,7 +438,6 @@ jo mijas horizontāli un vertikāli posmi. $2002$ nevar,
 jo $1001$ nepāra (horizontālo) pārvietojumu summa nevar būt $0$.   
 
 
------
 
 # <lo-sample/> LV.NOL.2001.10.1 
 
@@ -499,7 +454,6 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 # <lo-sample/> LV.NOL.2001.10.4 
 
@@ -517,7 +471,6 @@ questionType=Find.Only
 
 
 
------
 
 # <lo-sample/> LV.NOL.2001.11.3 
 
@@ -532,7 +485,6 @@ seeAlso=LV.NOL.2002.11.1
 -->
 
 
------
 
 ## ABC
 
@@ -540,7 +492,6 @@ seeAlso=LV.NOL.2002.11.1
 
 
 
------
 
 # <lo-sample/> LV.NOL.2001.12.1 
 
@@ -562,7 +513,6 @@ concepts=fibonacci-sequence
 
 
 
------
 
 # <lo-sample/> LV.NOL.2002.7.3 
 
@@ -587,7 +537,6 @@ questionType=Find.Max
 -->
 
 
------
 
 ## ABC
  
@@ -595,7 +544,6 @@ questionType=Find.Max
 
 
 
------
 
 # <lo-sample/> LV.NOL.2002.8.3 
 
@@ -621,7 +569,6 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 ## Paritāte
  
@@ -632,7 +579,6 @@ Var pamatot arī ar nevienādību:
 Jau $1+\ldots+60 > 1000$, tādēļ pat vismazāko lapu numuru summa ir par lielu.
 
 
------
 
 # <lo-sample/> LV.NOL.2002.9.1 
 
@@ -647,14 +593,12 @@ questionType=Find.Max
 -->
 
 
------
 
 ## ABC
 
 **#Dalāmība** Tādi ir $1,2,3,4,5$. Vairāk kā $n=5$ nevar būt, jo katram sestajam ($6$ dalītājiem) ir divi pirmskaitļu dalītāji.
 
 
------
 
 # <lo-sample/> LV.NOL.2002.9.4 
 
@@ -664,7 +608,6 @@ $p(26)=12$; $p(8)=8$; $p(102)=0$.
 Aprēķināt summu $p(1)+p(2)+p(3)+\ldots +p(2001)+p(2002)$.
 
 
------
 
 ## ABC
 
@@ -672,7 +615,6 @@ Aprēķināt summu $p(1)+p(2)+p(3)+\ldots +p(2001)+p(2002)$.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2002.10.3 
 
@@ -682,7 +624,6 @@ kopīgais dalāmais ir $D$. Pierādiet:
 $2m+n=2D+d$ tad un tikai tad, ja $m$ dalās ar $n$.
 
 
------
 
 ## ABC
 
@@ -691,7 +632,6 @@ Reizinājums $Dd=mn$ ir fiksēts; $2D+d = 2D+mn/D$ monotoni aug, ja $D \geq \sqr
 
 
 
------
 
 # <lo-sample/> LV.NOL.2002.10.5 
 
@@ -707,7 +647,6 @@ Kāds ir mazākais gājienu skaits, ar kuru var apēst visas konfektes?
 
 
 
------
 
 ## ABC
 
@@ -716,7 +655,6 @@ $2002_{10}=11111010010_{2}$. Katrā gājienā noēd bināro ciparu, kur tas ir.
 Ja ēd $10$ dienas, tad var noēst tikai $2^{10}$ dažādus skaitļus.
 
 
------
 
 # <lo-sample/> LV.NOL.2002.11.2 
 
@@ -731,7 +669,6 @@ questionType=Find.Min
 -->
 
 
------
 
 # <lo-sample/> LV.NOL.2002.12.1 
 
@@ -744,7 +681,6 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 ## ABC
 
@@ -754,7 +690,6 @@ questionType=ProveDisprove.Exists
 
 
 
------
 
 # <lo-sample/> LV.NOL.2003.7.4/LV.NOL.2005.7.1 
 
@@ -776,7 +711,6 @@ concepts=primes,composite-numbers
 -->
 
 
------
 
 ## ABC
  
@@ -784,7 +718,6 @@ concepts=primes,composite-numbers
 
 
 
------
 
 # <lo-sample/> LV.NOL.2003.8.3 
 
@@ -804,7 +737,6 @@ questionType=Find.Min
 -->
 
 
------
 
 ## ABC
  
@@ -812,7 +744,6 @@ questionType=Find.Min
 
 
 
------
 
 # <lo-sample/> LV.NOL.2003.9.1 
 
@@ -826,7 +757,6 @@ questionType=Find.Max
 -->
 
 
------
 
 ## ABC
 
@@ -835,7 +765,6 @@ questionType=Find.Max
 
 
 
------
 
 # <lo-sample/> LV.NOL.2003.9.5 
 
@@ -856,7 +785,6 @@ questionType=Algorithm,Prove.ForAll
 -->
 
 
------
 
 # <lo-sample/> LV.NOL.2003.10.1 
 
@@ -870,7 +798,6 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 # <lo-sample/> LV.NOL.2003.11.4 
 
@@ -885,7 +812,6 @@ questionType=ProveDisprove.Other,Find.Min
 -->
 
 
------
 
 ## ABC
 
@@ -895,7 +821,6 @@ kur $n \in \{ 1,2,3,4,5 \}$ - pārlasa visiem simtu ciparus.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2003.12.1 
 
@@ -911,14 +836,12 @@ questionType=Find.Only
 
 
 
------
 
 ## ABC
 
 **#Kongruences** **#PeriodiskaVirkne**  Pirmie $20$ atlikumi: $1,1,2,3,0,3,3,1,4,0,4,4,3,2,0,2,2,4,1,0$, tālāk periods. $F_{20}$ dalīsies ar $5$, bet $F_{2003}$ dos atlikumu $2$, dalot ar $5$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2003.12.5 
 
@@ -935,7 +858,6 @@ questionType=ProveDisprove.Exists
 
 
 
------
 
 # <lo-sample/> LV.NOL.2004.7.1 
 
@@ -956,7 +878,6 @@ questionType=Find.Min
 -->
 
 
------
 
 ## ABC
  
@@ -982,7 +903,6 @@ seeAlso=LV.NOL.2003.8.3
 
 
 
------
 
 ## ABC
  
@@ -990,7 +910,6 @@ seeAlso=LV.NOL.2003.8.3
 
 
 
------
 
 # <lo-sample/> LV.NOL.2004.8.2 
 
@@ -1014,7 +933,6 @@ seeAlso=LV.NOL.2005.8.1
 
 
 
------
 
 ## Grupēšana pēc ciparu skaita
 
@@ -1022,7 +940,6 @@ seeAlso=LV.NOL.2005.8.1
 * Katrā grupā (izņemot viencipara sk.) tieši viena pakāpe sākas ar "1". 
 
 
------
 
 # <lo-sample/> LV.NOL.2004.9.2 
 
@@ -1032,7 +949,6 @@ $$x;\; x + 2;\; x + 4;\; x + 6;\; x + 8$$
 var vienlaicīgi būt pirmskaitļi?
 
 
------
 
 # <lo-sample/> LV.NOL.2004.9.4 
 
@@ -1048,7 +964,6 @@ visi vienādi ar $1$?
 
 
 
------
 
 # <lo-sample/> LV.NOL.2004.10.2 
 
@@ -1066,7 +981,6 @@ concepts=palindrome
 
 
 
------
 
 # <lo-sample/> LV.NOL.2004.11.2 
 
@@ -1076,7 +990,6 @@ dalās ar $10$.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2004.12.1 
 
@@ -1094,7 +1007,6 @@ seeAlso=LV.NOL.2000.12.1
 
 
 
------
 
 # <LO-REFFF/> LV.NOL.2005.7.1 
 
@@ -1114,7 +1026,6 @@ mainEntry=LV.NOL.2003.7.4
 
 
 
------
 
 # <lo-sample/> LV.NOL.2005.7.4 
 
@@ -1138,7 +1049,6 @@ seeAlso=[Semiperfect number](https://en.wikipedia.org/wiki/Semiperfect_number)
 
 
 
------
 
 ## Dalītāju izteikšana
  
@@ -1153,7 +1063,6 @@ $$\frac{n}{3}+\frac{n}{5}+\frac{n}{7}+\frac{n}{9} < n.$$
 
 
 
------
 
 # <lo-sample/> LV.NOL.2005.8.1 
 
@@ -1174,14 +1083,12 @@ seeAlso=LV.NOL.2004.8.2
 -->
 
 
------
 
 ## ABC
  
 **#Nevienādība** Katram ciparu skaitam, izņemot 1-cipara sk., ir tieši viens $2^n$, kas sākas ar ciparu $1$.
 
 
------
 
 # <lo-sample/> LV.NOL.2005.8.3 
 
@@ -1207,7 +1114,6 @@ questionType=Find.Min
 
 
 
------
 
 ## Ar 1 gājienu nepietiek
  
@@ -1215,7 +1121,6 @@ Pirmajā gājienā Andris var atbildēt ar tādu $x$,
 kas dalās ar vairākiem $x_i$. 
 
 
---
 
 ## Ar 2 gājieniem pietiek
 
@@ -1225,7 +1130,6 @@ Atkarībā no tā, ar kuru pirmskaitli dalās Andra atbilde $x_2$,
 var noteikt $n$.
 
 
------
 
 # <lo-sample/> LV.NOL.2005.9.2 
 
@@ -1235,7 +1139,6 @@ $2$; $3$; $4$; $5$; $6$; $7$; $9$,
 izmantojot katru no tiem tieši vienu reizi?
 
 
------
 
 # <lo-sample/> LV.NOL.2005.9.4 
 
@@ -1245,7 +1148,6 @@ iegūst visus naturālos skaitļus no $1$ līdz
 $15$ ieskaitot?
 
 
------
 
 # <lo-sample/> LV.NOL.2005.9.5 
 
@@ -1261,7 +1163,6 @@ sākumā parādīsies cipari $1; 2; 3; 4$?
 
 
 
------
 
 # <lo-sample/> LV.NOL.2005.10.1 
 
@@ -1277,7 +1178,6 @@ Kāds varēja būt otrs skaitlis?
 
 
 
------
 
 # <lo-sample/> LV.NOL.2005.10.5 
 
@@ -1296,14 +1196,12 @@ uz lapas?
 
 
 
------
 
 # <lo-sample/> LV.NOL.2005.11.1 
 
 Aprēķināt $\sqrt{2005 \cdot 2003 \cdot 1999 \cdot 1997 + 36}$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2005.11.3 
 
@@ -1315,7 +1213,6 @@ Naturālu skaitli $n$ sauksim par līdzsvarotu, ja tā visus naturālos dalītā
 
 
 
------
 
 # <lo-sample/> LV.NOL.2005.12.5 
 
@@ -1329,7 +1226,6 @@ skaitlis? (Malas mēra metros, laukumu – kvadrātmetros.)
 
 
 
------
 
 # <lo-sample/> LV.NOL.2006.7.4/LV.NOL.2007.7.4
 
@@ -1345,7 +1241,6 @@ Kuri naturālie skaitļi ir vienādi ar trīs savu dažādu pozitīvu dalītāju
 </small>
 
 
------
 
 ## Pāreja uz daļām
  
@@ -1354,7 +1249,6 @@ dalās ar $6$.)
 * Citādi skaitli $1$ sadalīt dažādu daļu summā nevar - var pamatot ar nevienādībām.
 
 
------
 
 # <lo-sample/> LV.NOL.2006.8.1 
 
@@ -1373,14 +1267,12 @@ Atrast $A$.
 </small>
 
 
------
 
 ## ABC
  
 **#AlgebriskaIdentitāte** Kreisajai pusei var pieskaitīt un atņemt $16x^2$, tad atdalīt pilno kvadrātu.
 
 
------
 
 # <lo-sample/> LV.NOL.2006.8.3 
 
@@ -1396,14 +1288,12 @@ katru vienu reizi tā, lai katru $3$ pēc kārtas uzrakstīto skaitļu summa dal
 </small>
 
 
------
 
 ## ABC
  
 **#Invariants** **#PeriodiskaVirkne** Atlikumi, dalot ar $4$ šādā virknē atkārtosies ar periodu $3$, t.i.\ viens no atlikumiem neparādīsies vispār.
 
 
------
 
 # <lo-sample/> LV.NOL.2006.9.4 
 
@@ -1418,7 +1308,6 @@ apmierina vienlaicīgi visas sekojošās prasības:
 \end{itemize}
 
 
------
 
 # <lo-sample/> LV.NOL.2006.9.5 
 
@@ -1437,7 +1326,6 @@ Tas, kurš uzraksta $1000$, uzvar.
 Kurš no zēniem uzvar, pareizi spēlējot?
 
 
------
 
 # <lo-sample/> LV.NOL.2006.10.1 
 
@@ -1447,7 +1335,6 @@ veido pirmskaitli, un visi šie $11$ pirmskaitļi ir dažādi.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2006.11.1 
 
@@ -1457,7 +1344,6 @@ dalās tieši viens no šiem skaitļiem.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2006.11.5 
 
@@ -1470,7 +1356,6 @@ pierēm ir dažādi. Visu triju skaitļu reizinājums ir vesela skaitļa kvadrā
 Vai zēni nesarunājoties var noskaidrot, kādi skaitļi ir uz viņu pierēm?
 
 
------
 
 # <lo-sample/> LV.NOL.2006.12.3 
 
@@ -1479,7 +1364,6 @@ ir mazāk nekā $11$
 naturālu dalītāju?
 
 
------
 
 # <lo-sample/> LV.NOL.2006.12.5 
 
@@ -1501,7 +1385,6 @@ seeAlso=LV.NOL.2007.12.2
 
 
 
------
 
 # <lo-sample/> LV.NOL.2007.7.1 
 
@@ -1524,7 +1407,6 @@ seeAlso=LV.NOL.2009.7.1
 -->
 
 
------
 
 ## ABC
  
@@ -1532,7 +1414,6 @@ seeAlso=LV.NOL.2009.7.1
 **#AlgebriskaIdentitāte** $n = n^{10}/n^{9} = (n^2)^5/(n^3)^3$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2007.8.4 
 
@@ -1549,7 +1430,6 @@ Atrast mazāko naturālo skaitli, kas dalās ar katru no kaut kādiem $12$ pēc 
 </small>
 
 
------
 
 ## Abi novērtējumi
 
@@ -1561,7 +1441,6 @@ elementiem.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2007.9.5 
 
@@ -1579,7 +1458,6 @@ vismaz $17$ rūtiņās.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2007.10.3 
 
@@ -1594,14 +1472,12 @@ par $20072007$?
 
 
 
------
 
 # <lo-sample/> LV.NOL.2007.11.1 
 
 Atrisināt naturālos skaitļos vienādojumu $x^2 + 3x = 2^y$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2007.12.3 
 
@@ -1618,7 +1494,6 @@ Kādiem naturāliem skaitļiem $n$ vienlaicīgi piemīt sekojošas īpašības:
 
 
 
------
 
 # <lo-sample/> LV.NOL.2008.7.1 
 
@@ -1640,7 +1515,6 @@ seeAlso=LV.NOL.2009.7.1
 -->
 
 
------
 
 ## ABC
  
@@ -1648,7 +1522,6 @@ seeAlso=LV.NOL.2009.7.1
 **#AlgebriskaIdentitāte** $n = n^{9}/n^{8} = (n^3)^3/(n^2)^4$.  
 
 
------
 
 # <lo-sample/> LV.NOL.2008.7.3 
 
@@ -1667,14 +1540,12 @@ Pierādīt, ka cīkstoņu skaits dalās ar $17$.
 </small>
 
 
------
 
 ## ABC
  
 **#MasuCentrs** **#LKD** Lai $71$ būtu līdzsvara punkts starp $84k$ un $54m$, attiecībai $k/m$ jābūt $17/13$ un $\operatorname{LKD}(13,17)=1$.
 
 
------
 
 # <lo-sample/> LV.NOL.2008.8.1 
 
@@ -1692,21 +1563,18 @@ Pierādīt, ka viens no tiem dalās ar $10$.
 </small>
 
 
------
 
 ## ABC
  
 **#Decimālpieraksts** **#Paritāte** Palielinot skaitli par $1$ bez pārnesuma, tā ciparu summas paritāte mainās par $1$.  
 
 
------
 
 # <lo-sample/> LV.NOL.2008.9.1 
 
 Atrodiet vismaz $5$ dažādus pirmskaitļus, ar kuriem dalās skaitlis $3^{32} - 2^{32}$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2008.10.1 
 
@@ -1714,14 +1582,12 @@ Atrodiet mazāko naturālo skaitli, ko var izsacīt gan kā $15$, gan kā $16$, 
 $17$ pēc kārtas ņemtu naturālu skaitļu summu. 
 
 
------
 
 ## ABC
 
 **#AritmētiskaProgresija** **#MKD** Mazākais skaitlis, kas dalās ar $15$, $8$ un $17$ ir $2040$.
 
 
------
 
 # <lo-sample/> LV.NOL.2008.11.4 
 
@@ -1729,7 +1595,6 @@ Apzīmējam $f(n) = 1^n + 2^n + 3^n + 4^n$, $n=1;2;3;\ldots$. Ar kādu lielāko
 daudzumu nuļļu var beigties skaitlis $f(n)$?
 
 
------
 
 # <lo-sample/> LV.NOL.2008.12.2 
 
@@ -1743,7 +1608,6 @@ Kādiem naturāliem skaitļiem $n$ vienlaicīgi piemīt sekojošas īpašības:
 
 
 
------
 
 # <lo-sample/> LV.NOL.2009.7.1 
 
@@ -1766,7 +1630,6 @@ seeAlso=LV.NOL.2008.7.1
 -->
 
 
------
 
 ## ABC
  
@@ -1775,7 +1638,6 @@ Jebkuru pirmskaitļa pakāpi $p^v$ var izteikt kā $(p^k)^3/(p^m)^5$.
 **#AlgebriskaIdentitāte** $n = n^{21}/n^{20} = (n^7)^3/(n^4)^5$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2009.7.3 
 
@@ -1794,7 +1656,6 @@ Pie skaitļa dalītājiem pieskaita gan viņu pašu, gan vieninieku.)
 </small>
 
 
------
 
 ## Dalītāju skaita noteikšana
 
@@ -1804,7 +1665,6 @@ $p^3$ vai $pq$. ($p,q$ - pirmskaitļi)
 * Ja $p=r$, var dabūt $ab = p^3p^5 = p^8$.
 
 
------
 
 ## Gadījumu pārlase
 
@@ -1817,7 +1677,6 @@ Mazāk kā $9$ dalītāji var rasties $3$ veidos:
 Neviens no šiem gadījumiem neatbilst mūsu nosacījumam.
 
 
------
 
 # <lo-sample/> LV.NOL.2009.8.1 
 
@@ -1836,7 +1695,6 @@ $4$ rūtiņas saskaņā ar šiem noteikumiem Katrīna izvēlēsies, tajās ierak
 </small>
 
 
------
 
 ## ABC
  
@@ -1845,7 +1703,6 @@ $4$ rūtiņas saskaņā ar šiem noteikumiem Katrīna izvēlēsies, tajās ierak
 
 
 
------
 
 # <lo-sample/> LV.NOL.2009.8.3 
 
@@ -1860,14 +1717,12 @@ Atrodiet skaitļa $113^{113} - 19^{19}$ pēdējo ciparu.
 
 
 
------
 
 ## ABC
  
 **#PeriodiskaVirkne** **#PēdējieCipari** $113$ pakāpes mainās ar periodu $(1,3,9,7)$, bet $19$ pakāpes ar periodu $(1,9)$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2009.9.2 
 
@@ -1875,7 +1730,6 @@ Kuri četrciparu naturāli skaitļi vienādi ar savu divu pēdējo ciparu
 veidotā naturālā skaitļa kvadrātu?
 
 
------
 
 # <lo-sample/> LV.NOL.2009.10.1 
 
@@ -1883,7 +1737,6 @@ Atrodiet mazāko naturālo skaitli, kuru var izsacīt gan kā
 $11$, gan $12$, gan kā $13$ pēc kārtas ņemtu naturālu skaitļu summu. 
 
 
------
 
 # <lo-sample/> LV.NOL.2009.10.3 
 
@@ -1893,14 +1746,12 @@ Vai noteikti $(a + b)^2$ dalās ar $a \cdot b$?
 
 
 
------
 
 # <lo-sample/> LV.NOL.2009.11.2 
 
 Atrisināt veselos skaitļos vienādojumu ${\displaystyle \frac{x^2}{2} + \frac{5}{y} = 7}$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2009.12.2 
 
@@ -1908,7 +1759,6 @@ Dots, ka $p$ ir pirmskaitlis un $n = \left( p^2 - 1 \right) \left( p^2 - 4 \righ
 Kāda ir mazākā iespējamā $n$ ciparu summa? Kuriem $p$ tā tiek sasniegta?
 
 
------
 
 # <lo-sample/> LV.NOL.2010.11.1 
 
@@ -1928,7 +1778,6 @@ ir vesels skaitlis.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2010.7.3 
 
@@ -1944,14 +1793,12 @@ $(x+1)(x+2)(x+3)$ dalās ar $343$?
 </small>
 
 
------
 
 ## ABC
  
 **#Dalāmība** **#DalījumsPirmreizinātājos** Katrs septītais skaitlis dalās ar $7$, tādēļ $x+1$, $x+2$ vai $x+3$ dalās ar $7^3 = 343$.
 
 
------
 
 # <lo-sample/> LV.NOL.2010.8.1 
 
@@ -1970,14 +1817,12 @@ sadalot pirmskaitļu reizinājumā, iegūst vairāk **dažādu** pirmskaitļu? P
 </small>
 
 
------
 
 ## ABC
  
 **#AlgebriskaIdentitāte** **#Pirmskaitļi** Dala reizinātājos $102^2 - 1=(102-1)(102+1)$ utt., īsina. Labajā pusē par pirmreizinātāju $101$ vairāk.  
 
 
------
 
 # <lo-sample/> LV.NOL.2010.8.3 
 
@@ -1993,7 +1838,6 @@ Pierādīt: sākotnējā un iegūtā skaitļa starpība dalās ar $9$.
 </small>
 
 
------
 
 ## ABC
  
@@ -2011,7 +1855,6 @@ kam viena no saknēm ir
 *Piezīme.* Katrā uzdevuma daļā runā par **citu** kvadrātvienādojumu.
 
 
------
 
 # <lo-sample/> LV.NOL.2010.9.5 
 
@@ -2026,7 +1869,6 @@ y^2 + x & = & t^2
 
 
 
------
 
 # <lo-sample/> LV.NOL.2010.10.2
 
@@ -2045,7 +1887,6 @@ $(a-b)^2$ dalās ar $a\cdot{}b$?
 </small>
 
 
------
 
 ## Algebrisks pārveidojums
 
@@ -2058,7 +1899,6 @@ Katrs no $4$ saskaitāmajiem dalās ar $ab$:
 * $\frac{b^3}{ab} = \frac{b^2}{a}$ (zināms, ka dalās)
 
 
---
 
 ## Pretpiemērs (der ļoti daudz kas)
 
@@ -2067,7 +1907,6 @@ Katrs no $4$ saskaitāmajiem dalās ar $ab$:
 
 
 
------
 
 # <lo-sample/> LV.NOL.2010.10.4
 
@@ -2086,7 +1925,6 @@ Atrisināt naturālos skaitļos vienādojumu $x^3 = y! + 2$.
 
 
 
------
 
 ## Faktoriālu un pilno kubu tabulas
 
@@ -2109,7 +1947,6 @@ Atrisināt naturālos skaitļos vienādojumu $x^3 = y! + 2$.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2010.11.2 
 
@@ -2117,7 +1954,6 @@ Atrisināt veselos skaitļos vienādojumu
 ${\displaystyle \frac{x^2}{2} + \frac{5}{y} = 7}$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2010.12.1 
 
@@ -2130,7 +1966,6 @@ Pie kādām $n$ vērtībām tā tiek sasniegta?
 
 
 
------
 
 # <lo-sample/> LV.NOL.2011.7.1 
 
@@ -2144,7 +1979,6 @@ Atrodiet skaitļa $1^2 + 2^2 + \ldots + 99^2$ pēdējo ciparu.
 </small>
 
 
------
 
 ## ABC
  
@@ -2152,7 +1986,6 @@ Atrodiet skaitļa $1^2 + 2^2 + \ldots + 99^2$ pēdējo ciparu.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2011.7.2 
 
@@ -2169,14 +2002,12 @@ ka skaitlis $(n+1)(n+2)(n+3)$ dalās ar $125$.
 </small>
 
 
------
 
 ## ABC
  
 **#Dalāmība** **#DalījumsPirmreizinātājos** Katrs piektais skaitlis dalās ar $5$, t.i. $n+1$, $n+2$ vai $n+3$ jādalās ar $5^3 = 125$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2011.8.1 
 
@@ -2192,14 +2023,12 @@ samainot vietām tā ciparus. Pierādīt, ka $B-A$ dalās ar $9$.
 </small>
 
 
------
 
 ## ABC
 
 **#DalāmībaAr3Un9** **#DalāmībaAr3Un9** **#DalīšanaArAtlikumu** $A$ atlikums dalot ar $9$ (arī $B$ atlikums) vienādi ar $A$ ciparu summas atl.
 
 
------
 
 # <lo-sample/> LV.NOL.2011.9.4 
 
@@ -2207,7 +2036,6 @@ Pierādīt, ka nav tādu naturālu skaitļu $a$, $x$, $y$ un $z$, ka
 $7^a = 7^x + 7^y + 7^z$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2011.10.3 
 
@@ -2217,7 +2045,6 @@ ${\displaystyle x \cdot \left\lfloor x \cdot \lfloor x \rfloor \right\rfloor = 4
 
 
 
------
 
 # <lo-sample/> LV.NOL.2011.11.4 
 
@@ -2225,7 +2052,6 @@ Zināms, ka $a$ un $b$ ir naturāli skaitļi, pie tam $a^b + 1$ dalās ar $21$.
 Kāda ir mazākā iespējamā summas $a+b$ vērtība? 
 
 
------
 
 # <lo-sample/> LV.NOL.2011.12.3 
 
@@ -2240,7 +2066,6 @@ Pierādīt, ka visi nepāra skaitļi, kas lielāki par $1$, nav fantastiski.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2012.7.1 
 
@@ -2259,14 +2084,12 @@ atkārtojot tās vairākas reizes jebkādā secībā?
 </small>
 
 
------
 
 ## Koka apstaigāšana, lai meklētu
  
 $9 \rightarrow 63 \rightarrow 441 \rightarrow 41 \rightarrow 287 \rightarrow 27$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2012.7.4 
 
@@ -2280,14 +2103,12 @@ Pierādīt, ka $1004041$ nav pirmskaitlis.
 </small>
 
 
------
 
 ## Dalāmības pazīme ar 101
  
 Ar $101$ dalās skaitļi, kam apaļajās un kvadrātiekavās liktās summas atšķiras par $101k$: $[01](00)[40](41)$.
 
 
------
 
 # <lo-sample/> LV.NOL.2012.8.1 
 
@@ -2301,14 +2122,12 @@ lai katrs no reizinātājiem ir lielāks nekā $1$.
 </small>
 
 
------
 
 ## Kvadrātu starpības formula
  
 $3999991 = 4000000 - 9 = 2000^2 - 3^2$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2012.8.3 
 
@@ -2325,7 +2144,6 @@ $n$ vieni.)
 
 
 
------
 
 ## Dalāmība ar 11
  
@@ -2333,7 +2151,6 @@ $n$ vieni.)
 * Neviens cipars nav $11$. Tāpēc arī šādu ciparu reizinājums nevar dalīties ar $11$.
 
 
------
 
 # <lo-sample/> LV.NOL.2012.9.4 
 
@@ -2346,7 +2163,6 @@ iepriekšējo locekļu kvadrātu summas pēdējo ciparu.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2012.9.5 
 
@@ -2358,7 +2174,6 @@ Pierādīt, ka šo skaitļu summa dalās ar $n$.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2012.10.3
 
@@ -2376,7 +2191,6 @@ strategy=contradiction
 -->
 
 
------
 
 # <lo-sample/> LV.NOL.2012.10.4
 
@@ -2386,7 +2200,6 @@ Cik cipari uzrakstīti?
 
 
 
------
 
 # <lo-sample/> LV.NOL.2013.10.4
 
@@ -2414,7 +2227,6 @@ sameAs=LV.NOL.2012.10.4
 
 
 
------
 
 # <lo-sample/> LV.NOL.2012.11.1 
 
@@ -2427,7 +2239,6 @@ concepts=palindrome
 -->
 
 
------
 
 # <lo-sample/> LV.NOL.2012.11.4 
 
@@ -2436,7 +2247,6 @@ naturāli skaitļi un kurai piemīt īpašība: neviens tās elements **nav**
 naturāla skaitļa $k$-tā pakāpe jebkuram naturālam $k \geq 2$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2012.12.4 
 
@@ -2450,7 +2260,6 @@ Kādiem pirmskaitļiem $p$ skaitlim $p^2 + 23$ ir tieši četri naturāli dalīt
 
 
 
------
 
 # <lo-sample/> LV.NOL.2013.7.1 
 
@@ -2469,14 +2278,12 @@ Ar ko pārī apvienots skaitlis $1$?
 
 
 
------
 
 ## ABC
  
 **#GadījumuPārlase** **#Grafi** (18,7), (17,8), (16,9) $\rightarrow$ (2,14) $\rightarrow$ (11,5) $\rightarrow$ (4,12) $\rightarrow$ (13,3) $\rightarrow$ (1,15).
 
 
------
 
 # <lo-sample/> LV.NOL.2013.7.2 
 
@@ -2492,14 +2299,12 @@ $x(x+1)(x+2)$ dalās ar $111$?
 </small>
 
 
------
 
 ## ABC
  
 **#Dalāmība** **#DalīšanaPirmreizinātājos** $x(x+1)(x+2)$ Vienmēr dalās ar $3$, bet tam jādalās arī ar $37$. Tādu $x$ ir trīsreiz vairāk kā $\left\lfloor 2013/37 \right\rfloor$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2013.7.4 
 
@@ -2513,14 +2318,12 @@ esošu skaitļu starpība būtu $6$, $10$, $14$ vai $18$?
 </small>
 
 
------
 
 ## ABC
  
 **#Invariants** Skaitļu atlikums, dalot ar $4$, palielinās par $2$ katrā solī. Pēc $13$ soļiem arī mainās par $2$, bet jāpaliek tam pašam.
 
 
------
 
 # <lo-sample/> LV.NOL.2013.8.1 
 
@@ -2534,14 +2337,12 @@ no reizinātājiem ir lielāks nekā $1$.
 </small>
 
 
------
 
 ## ABC
  
 **#AlgebriskaIdentitāte** Pārveido $3000^2 - 1^2$ pēc kvadrātu starpības formulas.
 
 
------
 
 # <lo-sample/> LV.NOL.2013.8.3 
 
@@ -2556,14 +2357,12 @@ Cik ir tādu četrciparu skaitļu, kuru pierakstā ir vismaz viens pāra cipars?
 </small>
 
 
------
 
 ## ABC
  
 **#PretējaisNotikums** **#ReizināšanasLikums** $4$-ciparu skaitļu bez pāru cipariem ir $5^4 = 625$; citu būs $9000 - 625$.
 
 
------
 
 # <lo-sample/> LV.NOL.2013.8.4 
 
@@ -2581,14 +2380,12 @@ katrā kolonnā ierakstīto skaitļu reizinājums būtu viens un tas pats.
 </small>
 
 
------
 
 ## ABC
  
 **#MaģiskaisKvadrāts** **#PakāpjuĪpašības** Izveido $3 \times 3$ parasto maģisko kvadrātu. Pēc tam ceļ attiecīgajās pakāpēs. 
 
 
------
 
 # <lo-sample/> LV.NOL.2013.9.1 
 
@@ -2596,7 +2393,6 @@ Vai eksistē tāds naturāls skaitlis, kura kvadrāta pēdējie $9$ cipari ir
 $987654321$? 
 
 
------
 
 # <lo-sample/> LV.NOL.2013.10.4 
 
@@ -2606,14 +2402,12 @@ Cik cipari uzrakstīti?
 
 
 
------
 
 # <lo-sample/> LV.NOL.2013.11.1 
 
 Atrisināt veselos skaitļos vienādojumu $(x-y)(x+y)=x$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2013.11.4 
 
@@ -2623,7 +2417,6 @@ $x$ vērtības, pie kuras dotais polinoms pieņem vērtību $2013$.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2013.12.3 
 
@@ -2641,7 +2434,6 @@ ir mazāki nekā $n^2$.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2014.7.3 
 
@@ -2657,14 +2449,12 @@ skaitlis $x(x+1)(x+2)$ dalās ar $87$?
 </small>
 
 
------
 
 ## ABC
  
 **#Dalāmība** **#DalīšanaPirmreizinātājos** $x(x+1)(x+2)$ Vienmēr dalās ar $3$, jādalās ar $29$. Tādu $x$ ir trīsreiz vairāk kā $\left\lfloor 2014/29 \right\rfloor$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2014.8.3 
 
@@ -2678,14 +2468,12 @@ Cik ir tādu piecciparu skaitļu, kuru pierakstā ir vismaz viens nepāra cipars
 </small>
 
 
------
 
 ## ABC
  
 **#PretējaisNotikums** **#ReizināšanasLikums** $5$-ciparu skaitļu bez nepāru cipariem ir $4 \cdot 5^4 = 2500$; citu būs $90000 - 2500$.
 
 
------
 
 # <lo-sample/> LV.NOL.2014.9.3 
 
@@ -2693,7 +2481,6 @@ Atrisināt naturālos skaitļos vienādojumu $3abc + 3a + 3b = 7bc + 7$.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2014.10.2
 
@@ -2711,7 +2498,6 @@ $300$, vienmēr starp šiem skaitļiem var atrast divus skaitļus, kuru summa ir
 </small>
 
 
------
 
 ## Progresijā ir 100 locekļu zem 300
 
@@ -2727,7 +2513,6 @@ $$1, 4, 7, \ldots, 148, 151, 154, \ldots, 298$$
 
 
 
------
 
 # <lo-sample/> LV.NOL.2014.11.1 
 
@@ -2737,7 +2522,6 @@ pieņem vērtību $2000$. Pierādīt, ka nav tādas veselas
 $x$ vērtības, pie kuras dotais polinoms pieņem vērtību $2014$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2014.11.3 
 
@@ -2746,7 +2530,6 @@ naturālo dalītāju, izņemot $1$ un $n$, kvadrātu summa
 vienāda ar pašu skaitli $n$? 
 
 
------
 
 # <lo-sample/> LV.NOL.2014.12.3 
 
@@ -2757,7 +2540,6 @@ ka gan simtu, gan desmitu, gan vienu pozīcijā vismaz pa vienai reizei
 atrodams katrs no cipariem $1$ līdz $9$? 
 
 
------
 
 # <lo-sample/> LV.NOL.2014.12.5 
 
@@ -2773,7 +2555,6 @@ $$\frac{1}{a_1} + \frac{1}{a_2} + \ldots + \frac{1}{a_{2014}} = 1?$$
 
 
 
------
 
 # <lo-sample/> LV.NOL.2015.7.2 
 
@@ -2791,14 +2572,12 @@ tieši $2015$ mājlopus?
 </small>
 
 
------
 
 ## Salīdzina paritāti
  
 Katras maiņas iznākumā dzīvnieku kopskaits mainās par pāru skaitli. $99+21$ ir pāru, bet $2015$ – nepāru.
 
 
------
 
 # <lo-sample/> LV.NOL.2015.7.3 
 
@@ -2817,14 +2596,12 @@ Vai iespējams, ka visas iegūtās summas ir pirmskaitļi?
 </small>
 
 
------
 
 ## ABC
  
 **#GadījumuPārlase** **#Krāsošana** Pāru/nepāru skaitļi kā šaha galdiņš. Vidū liek $1$, pārlasa $2,4,6,10$ izvietojumu variantus ($8$ neizmanto).
 
 
------
 
 # <lo-sample/> LV.NOL.2015.8.1 
 
@@ -2841,14 +2618,12 @@ Pierādi, ka
 </small>
 
 
------
 
 ## ABC
  
 **#DalīšanaArAtlikumu** Divu nepāru skaitļu summas/starpības ir pāru skaitļi. Pie tam $49^n$ un $7^n$ dod atlikumu $1$, dalot ar $3$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2015.8.2 
 
@@ -2866,7 +2641,6 @@ Vai iespējams, ka "Šrotiņā" kāda mēneša 21. datumā būs tieši $2015$ ma
 </small>
 
 
------
 
 ## Salīdzina atlikumus (mod 3)
  
@@ -2874,7 +2648,6 @@ Mašīnu skaits mainās par $-7+16=9$ vai par $-19+4 = -15$, t.i. par $3k$. Bet 
 
 
 
------
 
 # <lo-sample/> LV.NOL.2015.9.2 
 
@@ -2889,7 +2662,6 @@ Vai, atkārtoti izpildot šīs darbības, var panākt, ka vienā no virsotnēm
 būs ierakstīts skaitlis $2014$? 
 
 
------
 
 # <lo-sample/> LV.NOL.2015.9.4 
 
@@ -2906,7 +2678,6 @@ to varēs izdarīt!
 
 
 
------
 
 # <lo-sample/> LV.NOL.2015.10.2
 
@@ -2926,7 +2697,6 @@ Vai, atkārtoti izpildot šīs darbības, no skaitļa $30$ var iegūt skaitli $2
 </small>
 
 
------
 
 ## Invariants ir dalāmība ar $3$
 
@@ -2942,7 +2712,6 @@ $30$ dalās ar $3$, bet $2015$ nedalās. Tātad pārveidot par $2015$ nevar.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2015.10.3
 
@@ -2959,7 +2728,6 @@ mazākais no šiem saskaitāmajiem?
 </small>
 
 
------
 
 ## Aritmētiskas progresijas locekļu summa
 
@@ -2975,7 +2743,6 @@ Abos gadījumos $2\cdot{}177 = (a_1+a_n)\cdot{}n$ jeb
 $$2 \cdot 3 \cdot 59 = (a_1+a_n)\cdot{}n$$
 
 
---
 
 ## Gadījumu pārlase
 
@@ -2993,7 +2760,6 @@ Tās neder, jo $177$ bija vairāku pēc kārtas sekojošu **naturālu** skaitļu
 
 
 
------
 
 # <lo-sample/> LV.NOL.2015.10.4
 
@@ -3019,7 +2785,6 @@ strategy=contradiction
 
 
 
------
 
 ## Ievieto nelielas vērtības
 
@@ -3028,7 +2793,6 @@ strategy=contradiction
 * Jau $x=4$ der (pirmajā piemērā)
 
 
---
 
 ## Kas notiek otrajā piemērā?
 
@@ -3041,7 +2805,6 @@ strategy=contradiction
 
 
 
------
 
 # <lo-sample/> LV.NOL.2015.11.3 
 
@@ -3050,7 +2813,6 @@ izteikt kā trīs dažādu naturālu skaitļu $a$, $b$ un $c$ summu tā,
 ka visi skaitļi $a+b$, $a+c$, $b+c$ ir naturālu skaitļu kvadrāti? 
 
 
------
 
 # <lo-sample/> LV.NOL.2015.12.2 
 
@@ -3063,7 +2825,6 @@ Vai, atkārtoti izpildot šīs darbības, no skaitļa $139$
 var iegūt skaitli **(a)** $63$; **(b)** $193$?
 
 
------
 
 # <lo-sample/> LV.NOL.2015.12.5 
 
@@ -3082,7 +2843,6 @@ Vai eksistē tādi naturāli skaitļi $a$, $b$ un $c$, ka skaitļa $a^2 + b^2 + 
 
 
 
------
 
 # <lo-sample/> LV.NOL.2016.7.2 
 
@@ -3099,7 +2859,6 @@ dalās ar $99$.
 </small>
 
 
------
 
 ## ABC
  
@@ -3107,7 +2866,6 @@ dalās ar $99$.
 ar $11$ – pāru/nepāru pozīcijās ciparu summas atšķiras par $11k$.
 
 
------
 
 # <lo-sample/> LV.NOL.2016.7.5 
 
@@ -3126,7 +2884,6 @@ $a+b = cd$ un $ab = c+d$?
 </small>
 
 
------
 
 ## Ekstrēmais elements - 1
 
@@ -3136,7 +2893,6 @@ $a+b = cd$ un $ab = c+d$?
 * Var izvēlēties $a=2$, $b=3$, $c=1$ un $d=5$.
  
  
---
 
 ## Ekstrēmais elements - 2
 
@@ -3145,7 +2901,6 @@ $a+b = cd$ un $ab = c+d$?
 * Var izvēlēties $c=0$, $a = 2017$, $b = -2017$, $d = -2017^2$.
 
 
------
 
 # <lo-sample/> LV.NOL.2016.8.2 
 
@@ -3162,7 +2917,6 @@ skaitļiem *DUBĻUNNN* dalās ar $104$. Pierādi, ka otrais skaitlis *BURBUĻVAN
 </small>
 
 
------
 
 ## ABC
  
@@ -3170,7 +2924,6 @@ skaitļiem *DUBĻUNNN* dalās ar $104$. Pierādi, ka otrais skaitlis *BURBUĻVAN
 *NNA* dalās ar $8$ tikai tad, ja $A=0$ vai $A=8$. T.i. $A=N$ – pretruna.
 
 
------
 
 # <lo-sample/> LV.NOL.2016.9.2 
 
@@ -3183,7 +2936,6 @@ vairākus (vismaz divus), kuru summa dalās $4$.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2016.9.5 
 
@@ -3195,7 +2947,6 @@ vērtība būtu $0$?
 
 
 
------
 
 # <lo-sample/> LV.NOL.2016.10.1
 
@@ -3211,7 +2962,6 @@ $$1\cdot{}4 + 2\cdot{}7 + 3\cdot{}10 + \cdots + n\cdot{}(3n + 1) = n(n+1)^2.$$
 
 
 
------
 
 ## Definējam virkni 
 
@@ -3225,7 +2975,6 @@ $$n(n+1)^2 - (n-1)n^2 = n(n^2 + 2n + 1) - n^3 + n^2 =$$
 $$= n^3+2n^2+n - n^3+n^2 = 3n^2 + n = n(3n+1).$$
 
 
---
 
 ## Matemātiskā indukcija
 
@@ -3236,7 +2985,6 @@ $$= n^3+2n^2+n - n^3+n^2 = 3n^2 + n = n(3n+1).$$
 
 
 
------
 
 # <lo-sample/> LV.NOL.2016.10.2
 
@@ -3252,7 +3000,6 @@ ka to summa vai starpība dalās ar $5$.
 </small>
 
 
------
 
 ## Pilnu kvadrātu atlikumi, dalot ar 5
 
@@ -3266,7 +3013,6 @@ $$(1^2,2^2,3^2,4^2,5^2)=(1,4,9,16,25).$$
 
 
 
------
 
 # <lo-sample/> LV.NOL.2016.11.2 
 
@@ -3274,7 +3020,6 @@ Pierādīt, ka starp jebkuriem pieciem naturālu skaitļu kvadrātiem var atrast
 ka to summa vai starpība dalās ar $13$. 
 
 
------
 
 # <lo-sample/> LV.NOL.2016.12.2 
 
@@ -3286,7 +3031,6 @@ $a$ un $b$ ir pirmskaitļi, lielāko kopīgo dalītāju!
 
 
 
------
 
 # <lo-sample/> LV.NOL.2017.7.2 
 
@@ -3294,7 +3038,6 @@ Piecciparu skaitļa, kas dalās ar $13$, pirmais cipars ir vienāds ar ceturto, 
 skaitļa trešais cipars? Atrodi visas iespējamās vērtības un pamato, ka citu nav!
 
 
------
 
 # <lo-sample/> LV.NOL.2017.8.2 
 
@@ -3304,7 +3047,6 @@ iespējamos variantus un pamato, ka citu nav!
 
 
 
------
 
 # <lo-sample/> LV.NOL.2017.9.4 
 
@@ -3313,7 +3055,6 @@ nekā sākotnējais skaitlis, un iegūtais skaitlis dalās ar sākotnējo skaitl
 $1089$, jo $9801 : 1089 = 9$. Atrast vēl divus citus *pārdabiskus* skaitļus!
 
 
------
 
 # <lo-sample/> LV.NOL.2017.9.5 
 
@@ -3326,7 +3067,6 @@ iespējams izvēlēties trīs skaitļus tā, ka divu izvēlēto skaitļu summa i
 
 
 
------
 
 # <lo-sample/> LV.NOL.2017.10.5
 
@@ -3351,7 +3091,6 @@ desmitciparu skaitlis!
 </small>
 
 
------
 
 ## Gadījumu pārlase
 
@@ -3373,7 +3112,6 @@ t.i. $\overline{EMĀ}=258$ vai $\overline{EMĀ}=654$.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2017.11.3 
 
@@ -3384,7 +3122,6 @@ x + z & = & 2007, \\
 \end{array} \right.$$
 
 
------
 
 # <lo-sample/> LV.NOL.2017.12.3 
 
@@ -3404,7 +3141,6 @@ $1089$, jo $9801:1089 = 9$.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2018.7.1 
 
@@ -3414,7 +3150,6 @@ par diviem mazāk nekā stāvu zemāk. Kāds mazākais logu skaits var būt
 šīs mājas ceturtajā stāvā?
 
 
------
 
 # <lo-sample/> LV.NOL.2018.7.4 
 
@@ -3424,7 +3159,6 @@ kas dalās ar $11$, ir lielāki nekā $\overline{acbba}$ un veidoti,
 samainot vietām sākotnējā skaitļa ciparus!
 
 
------
 
 # <lo-sample/> LV.NOL.2018.8.4 
 
@@ -3435,7 +3169,6 @@ nuļļu skaitu var beigties šo trīs skaitļu summa?
 
 
 
------
 
 # <lo-sample/> LV.NOL.2018.9.4 
 
@@ -3445,7 +3178,6 @@ $20x^3 − 17y^2 + 1 = 2018$?
 
 
 
------
 
 # <lo-sample/> LV.NOL.2018.10.4
 
@@ -3467,7 +3199,6 @@ strategy=contradiction
 
 
 
------
 
 ## No pretējā
 
@@ -3477,7 +3208,6 @@ strategy=contradiction
 * Ciparu summas dēļ jādalās ar $9$, bet $9000000$ ir par daudz.
 
 
---
 
 ## Vai var beigties ar 5 nullēm? 
 
@@ -3487,7 +3217,6 @@ Konstruējam, ikreiz liekot mazākos iespējamos ciparus.
 
 
 
------
 
 # <lo-sample/> LV.NOL.2018.11.4 
 
@@ -3497,7 +3226,6 @@ vienu piecciparu skaitli. Ar kādu lielāko nuļļu skaitu
 var beigties trīs izveidoto skaitļu summa?
 
 
------
 
 # <lo-sample/> LV.NOL.2018.12.4 
 
@@ -3507,7 +3235,6 @@ Doti naturāli skaitļi $a$ un $b$. Pierādīt
 2. ja $201a + 8b$ dalās ar $7$, tad $20a + 18b$ dalās ar $7$.
 
 
------
 
 # <lo-sample/> LV.NOL.2018.12.5 
 
@@ -3520,7 +3247,6 @@ vienādojuma koeficientus un pārējās trīs saknes!
 
 
 
------
 
 # <lo-sample/> LV.NOL.2019.7.4 
 
@@ -3532,7 +3258,6 @@ genre=integer-equation
 -->
 
 
------
 
 # <lo-sample/> LV.NOL.2019.7.5
 
@@ -3552,7 +3277,6 @@ concepts=divisibility
 -->
 
 
------
 
 # <lo-sample/> LV.NOL.2019.8.4
 
@@ -3571,7 +3295,6 @@ questionType=ProveDisprove.Exists
 -->
 
 
------
 
 # <lo-sample/> LV.NOL.2019.8.5
 
@@ -3588,7 +3311,6 @@ concepts=divisibility
 -->
 
 
------
 
 # <lo-sample/> LV.NOL.2019.9.5
 
@@ -3602,7 +3324,6 @@ genre=digit-manipulation
 -->
 
 
------
 
 # <lo-sample/> LV.NOL.2019.10.5
 
@@ -3622,7 +3343,6 @@ questionType=Find.All
 genre=integer-equation
 -->
 
------
 
 ## Risinājums
 
@@ -3638,7 +3358,6 @@ No tiem der tikai divi: $(73,31)$, $(37,71)$
 
 
 
------
 
 # <lo-sample/> LV.NOL.2019.11.5
 
@@ -3650,7 +3369,6 @@ concepts=linear-expression,primes
 genre=integer-equation
 -->
 
------
 
 # <lo-sample/> LV.NOL.2019.12.5
 

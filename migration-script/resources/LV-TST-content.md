@@ -1,27 +1,3 @@
-# &nbsp;
-
-<hgroup>
-
-<h1 style="font-size:28pt">Skaitļu teorija: Latvijas olimpiādes</h1>
-
-</hgroup>
-
-<hgroup style="font-size:70%">
-
-* LV.NO - Novadu olimpiāde (2.posms)
-* LV.VO - Valsts olimpiāde (3.posms)
-* LV.AO - Atklātā olimpiāde
-* LV.TST - Atlases sacensības (4.posms)
-* <blue>**LV.OTHER** - **Citi sacensību uzdevumi**</blue>
-
-[NMS arhīvs](http://nms.lu.lv/uzdevumu-arhivs/latvijas-olimpiades/)
-
-</hgroup>
-
-
-
------
-
 # <lo-sample/> LV.TST.1976.9.3
 
 Dots, ka $n$ - naturāls skaitlis. Pierādīt, ka $3n + 2$ 
@@ -32,7 +8,6 @@ mainEntry=BBK2012.P1.93
 -->
 
 
------
 
 # <lo-sample/> LV.TST.1976.10.3
 
@@ -46,7 +21,6 @@ mainEntry=BBK2012.P9.71
 
 
 
------
 
 # <lo-sample/> LV.TST.1976.11.5
 
@@ -60,7 +34,6 @@ mainEntry=BBK2012.P9.72
 
 
 
------
 
 # <lo-sample/> LV.TST.1977.9.1
 
@@ -73,7 +46,6 @@ mainEntry=BBK2012.P5.35
 
 
 
------
 
 # <lo-sample/> LV.TST.1977.10.2
 
@@ -85,7 +57,6 @@ nav atrisinājumu veselos skaitļos.
 
 
 
------
 
 # <lo-sample/> LV.TST.1977.10.4
 
@@ -97,7 +68,6 @@ izvēlas atkarībā no $x$.
 
 
 
------
 
 # <lo-sample/> LV.TST.1977.11.4
 
@@ -111,7 +81,6 @@ mainEntry=BBK2012.P5.67
 
 
 
------
 
 # <lo-sample/> LV.TST.1978.9.3
 
@@ -124,7 +93,6 @@ mainEntry=BBK2012.P4.3
 
 
 
------
 
 # <lo-sample/> LV.TST.1978.10.3
 
@@ -135,7 +103,6 @@ ka neviena grupa nesatur aritmētisku progresiju
 ar četriem locekļiem.
 
 
------
 
 # <lo-sample/> LV.TST.1978.10.5
 
@@ -148,7 +115,6 @@ mainEntry=BBK2012.P5.53
 -->
 
 
------
 
 # <lo-sample/> LV.TST.1978.11.4
 
@@ -160,7 +126,6 @@ summa dalās ar $9$.
 
 
 
------
 
 # <lo-sample/> LV.TST.1979.9.1
 
@@ -174,7 +139,6 @@ mainEntry=BBK2012.P1.89
 
 
 
------
 
 # <lo-sample/> LV.TST.1979.10.2
 
@@ -187,7 +151,6 @@ mainEntry=BBK2012.P9.12
 
 
 
------
 
 # <lo-sample/> LV.TST.1979.11.3
 
@@ -200,7 +163,6 @@ mainEntry=BBK2012.P8.48
 -->
 
 
------
 
 # <lo-sample/> LV.TST.1980.10.1
 
@@ -217,7 +179,6 @@ mainEntry=BBK2012.P6.42
 -->
 
 
------
 
 
 # <lo-sample/> LV.TST.1981.9.2
@@ -702,7 +663,6 @@ mainEntry=BBK2012.P6.69
 
 
 
------
 
 # <lo-sample/> LV.TST.1993.12.2
 
@@ -715,7 +675,6 @@ sameAs=BBK2012.P2.87
 -->
 
 
------
 
 # <lo-sample/> LV.TST.1994.12.1
 
@@ -729,7 +688,6 @@ sameAs=BBK2012.P5.56
 -->
 
 
------
 
 # <lo-sample/> LV.TST.1994.12.2
 
@@ -749,7 +707,6 @@ sameAs=BBK2012.P9.73
 -->
 
 
------
 
 # <lo-sample/> LV.TST.1995.12.2
 
@@ -765,7 +722,6 @@ concepts=groups
 -->
 
 
------
 
 # <lo-sample/> LV.TST.1996.12.3
 
@@ -779,7 +735,6 @@ sameAs=BBK2012.P5.57
 -->
 
 
------
 
 # <lo-sample/> LV.TST.1996.12.5
 Apskatām skaitļus $a_n = 3^n -2^n$, $n=1;2;3;\ldots$.
@@ -788,7 +743,6 @@ Pierādīt, ka nekādi 3
 neveido ģeometrisku progresiju.
 
 
------
 
 # <lo-sample/> LV.TST.1997.12.1
 
@@ -798,7 +752,6 @@ tādu naturālu skaitļu $n$, ka  $a+n$ un $b + n$
 lielākais kopīgais dalītājs ir $1$.
 
 
------
 
 # <lo-sample/> LV.TST.1998.12.2
 
@@ -811,7 +764,6 @@ sameAs=BBK2012.P4.96
 -->
 
 
------
 
 # <lo-sample/> LV.TST.1999.12.5
 
@@ -826,7 +778,6 @@ sameAs=BBK2012.P2.23
 -->
 
 
------
 
 # <lo-sample/> LV.TST.2004.12.3
 
@@ -835,7 +786,6 @@ $$a_0=1;\; a_1=1;\; a_{n+2}=7a_{n+1}-a_n-2\;\;\text{pie}\;\;n\geq 0.$$
 Pierādīt, ka visi virknes locekļi ir naturālu skaitļu kvadrāti.
 
 
------
 
 # <lo-sample/> LV.TST.2004.12.4
 
@@ -844,7 +794,6 @@ kas dod atlikumu $2$, dalot ar $3$. Dots, ka $a^2+ab+b^2$
 dalās ar $p$. Pierādīt, ka gan $a$, gan $b$ dalās ar $p$.
 
 
------
 
 # <lo-sample/> LV.TST.2005.12.3
 
@@ -854,7 +803,6 @@ Atrast visas naturālu skaitļu kopas $S$, kas vienlaicīgi apmierina sekojošas
 **(iii)** ja $a \in S$, $b \in S$ un $1<a<b$, tad $1+ab \in S$.
 
 
------
 
 # <lo-sample/> LV.TST.2006.12.1
 
@@ -862,7 +810,6 @@ Atrisināt naturālos skaitļos vienādojumu
 $$3^x = 2^x \cdot y + 1.$$
 
 
------
 
 # <lo-sample/> LV.TST.2007.12.3
 
@@ -871,7 +818,6 @@ $x^p + y^p$ dalās ar $p$ ($x, y$ – naturāli skaitļi).
 Pierādīt, ka $x^p + y^p$ dalās ar  $p^2$.
 
 
------
 
 # <lo-sample/> LV.TST.2008.12.3
 
@@ -881,7 +827,6 @@ $$(x + 1)^2 + y_1^2 = (x+2)^2 + y_2^2 = \ldots =
 eksistē atrisinājums veselos skaitļos?
 
 
------
 
 # <lo-sample/> LV.TST.2009.12.1
 
@@ -889,7 +834,6 @@ Kādiem naturāliem skaitļiem $m$ un $n$, kas abi lielāki par $1$,
 skaitlis $n^3 - 1$ dalās ar $m \cdot n - 1$?
 
 
------
 
 # <lo-sample/> LV.TST.2010.12.3
 
@@ -899,7 +843,6 @@ vērtība ir pirmskaitļa pakāpe.
 
 
 
------
 
 # <lo-sample/> LV.TST.2011.12.1
 
@@ -908,7 +851,6 @@ kurus nav iespējams izteikt kā divu vai vairāku
 secīgu naturālu skaitļu summu?
 
 
------
 
 # <lo-sample/> LV.TST.2012.12.1
 
@@ -992,7 +934,6 @@ nevar pārsniegt $9 	\cdot 6707 = 60363$, jo neviens cipars nav lielāks par $9$
 
 
 
------
 
 # <lo-sample/> LV.TST.2012.12.2
 
@@ -1001,7 +942,6 @@ x_{n} + 2$ visiem $n \geq 1$ un $y_1 = y_2 = 4$,
 $y_{n+2} = y_{n}y_{n+1} - 1$ visiem $n \geq 1$. 
 Pierādīt, ka nav tāda naturāla skaitļa, kas pieder abām virknēm.
 
------
 
 # <lo-sample/> LV.TST.2014.12.4
 
@@ -1009,7 +949,6 @@ Pierādīt, ka vienādojumam
 $(a - b)^2 = 6ab + 7$  nav atrisinājuma naturālos skaitļos.
 
 
------
 
 # <lo-sample/> LV.TST.2014.12.13
 
@@ -1021,11 +960,8 @@ vērtība bez atlikuma dalās ar izteiksmes $m^2 + f(n)$
 vērtību.
 
 
------
 
 # <lo-sample/> LV.TST.2014.12.14
-
-<div style="font-size:70%">
 
 Anna un Beta spēlē sekojošu spēli. Dots naturāls skaitlis
 $k \geq 2$. Uz tāfeles
@@ -1043,11 +979,6 @@ mazāks par $k$ dala $n$ tad un tikai tad, ja tas dala $n^{\ast}$.
 Pierādīt, ka $n$ un $n^{\ast}$ vai nu
 abi ir labi vai abi ir slikti.
 
-</div>
-
-
------
-
 # <lo-sample/> LV.TST.2015.12.3
 
 Naturālus skaitļus $x$ un $y$ sauc par *draudzīgiem*, ja $xy+1$
@@ -1057,7 +988,6 @@ tad eksistē tāds naturāls skaitlis $c$, ka vienlaikus
 $a$ un $c$ ir draudzīgi, un arī $b$ un $c$ ir draudzīgi.
 
 
------
 
 # <lo-sample/> LV.TST.2015.12.4
 
@@ -1068,7 +998,6 @@ $$f(x) + f(y) = f(x + 2xy) + f(y - 2xy).$$
 
 
 
------
 
 # <lo-sample/> LV.TST.2016.12.3
 
@@ -1076,7 +1005,6 @@ Atrast visus tādus pirmskaitļus $p$, ka $3^{p^2-1} + 20$ arī ir pirmskaitlis!
 
 
 
------
 
 # <lo-sample/> LV.TST.2016.12.5
 
@@ -1086,7 +1014,6 @@ aritmētiskais ir vienāds ar $n$?
 
 
 
------
 
 # <lo-sample/> LV.TST.2016.12.15
 
@@ -1095,7 +1022,6 @@ Pierādīt, ka $3a \geq 2b + 2$.
 
 
 
------
 
 # <lo-sample/> LV.TST.2017.12.11
 
@@ -1104,7 +1030,6 @@ bet ar $\tau_1(n)$ — tā pozitīvo dalītāju skaitu, kas, dalot ar $3$,
 dod atlikumu $1$. Kādas naturālas
 vērtības var pieņemt izteiksme $\frac{\tau(10)}{\tau_1(10n)}$.
 
------
 
 # <lo-sample/> LV.TST.2018.12.3
 
@@ -1112,7 +1037,6 @@ Pierādīt, ka vienādojumam $5m^2 - 6mn + 7n^2 = 20182018$
 nav atrisinājuma naturālos skaitļos!
 
 
------
 
 # <lo-sample/> LV.TST.2018.12.14
 
@@ -1123,7 +1047,6 @@ $$P(x) = M(x + 1)^k - (x + a_1)(x + a_2)\ldots(x + a_n)$$
 nav pozitīvu sakņu.
 
 
------
 
 # <lo-sample/> LV.TST.2018.12.15
 

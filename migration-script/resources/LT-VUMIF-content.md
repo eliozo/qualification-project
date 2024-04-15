@@ -1,50 +1,30 @@
-# &nbsp;
-
-<h1 style="font-size:28pt">Skaitļu teorija (LT, 10.kl.)</h1>
-
-* **LT.LKMMO** - Lietuvos komandinė mokinių matematikos 
-olimpiada (Lietuvas komandveida skolēnu matemātikas olimpiāde)
-* **LT.LDK** - Varžybos Lietuvos Didžiosios Kunigaikštystės garbei
-(Sacensības Lietuvas Lielkņazistes godam)  
-* **LT.RAJ** - Rajono/miesto etapas (Rajona/pilsētas posms)  
-* **LT.LMMO** - Lietuvos mokinių matematikos olimpiada (Lietuvas skolēnu
-matemātikas olimpiāde: nacionālais posms)  
-* <blue>**LT.VUMIF** - **Vilniaus universiteto Matematikos ir 
-informatikos fakulteto olimpiada** (Viļņas universitātes 
-rīkota olimpiāde skolēniem)</blue>
-
-[Matematikos olimpiados](http://mif.vu.lt/matematikos-olimpiados/)
-
-
-
------
-
 # <lo-sample/> LT.VUMIF.2016.9.3
 
 Atrodiet visas naturālas $n$ vērtības, kurām skaitlis
 $\frac{n^3 + 3}{n^2 + 7}$
 ir naturāls.
 
-<!--
+<text lang="lt">
 Raskite visas natūraliąsias $n$ reikšmes, su kuriomis skaičius
 $\frac{n^3 + 3}{n^2 + 7}$
 yra natūralusis.
--->
+</text>
 
 <small>
 
 * [alg.poly.division](#)
 * [alg.ineq.equations](#)
 * [comb.full](#)
+* strategy:CaseAnalysis
 
 </small>
 
 
 
------
 
-## Dalām divus polinomus
+## Atrisinājums
 
+*#PolynomialDivision*  
 Ja skaitītājā polinoma pakāpe (kubs) ir vismaz tāda
 pati kā saucējā (kvadrāts), tad tos var dalīt, iegūstot
 atlikumu:
@@ -58,10 +38,7 @@ būs naturāls t.t.t. ja daļa $\frac{-7n+3}{n^2+7}$ ir vesela.
 $$|n^2 + 7| \geq |7n + 7| > |-7n+3|$$
 
 
---
-
-## Pilnā pārlase
-
+*#CaseAnalysis*  
 $\frac{-7n+3}{n^2+7}$ ievietojam 
 visas vērtības $n=1,2,3,4,5,6$. (Lielākas ievietojot, 
 nav cerību iegūt naturālu skaitli, 
@@ -74,7 +51,6 @@ moduli.)
 
 
 
------
 
 # <lo-sample/> LT.VUMIF.2016.10.3
 
@@ -82,11 +58,11 @@ Atrodiet mazāko naturālo skaitli $n$, kuram skaitļi
 $\sqrt[5]{5n}$, $\sqrt[6]{6n}$, $\sqrt[7]{7n}$
 ir naturāli. 
 
-<!--
+<text lang="lt">
 Raskite mažiausią natūralųjį skaičių $n$, kuriam skaičiai
 $\sqrt[5]{5n}$, $\sqrt[6]{6n}$, $\sqrt[7]{7n}$
 yra natūralieji.
--->
+</text>
 
 
 <small>
@@ -101,10 +77,10 @@ yra natūralieji.
 
 
 
------
 
-## Sadalījums pirmreizinātājos
+## Atrisinājums
 
+*#PrimeFactorization*  
 Apzīmējam $n = 2^a3^b5^c7^d$ ir $n$ sadalījums pirmreizinātājos. 
 Citus pirmreizinātājus neieviešam
 (aizdomas, ka tie nebūs vajadzīgi - citi kāpinātāji būs $0$). 
@@ -114,9 +90,8 @@ Citus pirmreizinātājus neieviešam
 * $\sqrt[7]{7n} \in \mathbb{N}$ nozīmē, ka $a,b,c,d-1$ dalās ar $7$
 
 
---
-
-## Risinām sistēmiņas skaitļiem a,b,c,d
+*#CongrienceSystems*  
+Risinām kongruenču sistēmas skaitļiem $a,b,c,d$.
 
 * (Veseli nenegatīvi kāpinātāji) 
 $a$ un $b$ dalās ar $5$ un $7$, dod atlikumu $5$, dalot ar $6$. 
@@ -130,7 +105,6 @@ $$n = 2^{35}\cdot{}3^{35}\cdot{}5^{84}\cdot{}7^{90}.$$
 
 
 
------
 
 # <lo-sample/> LT.VUMIF.2016.11_12.1
 
@@ -144,7 +118,7 @@ Spēli sāk Agne. Pēc simts gājieniem Agnes traukā
 bija $q$ litri ūdens, bet Bena traukā - $p$ litri ūdens. 
 Atrodiet $\frac{p}{q}$.
 
-<!--
+<text lang="lt">
 Agnė į savo turimą indą įpylė $p$ litrų vandens, 
 o Benas į savąjį indą įpylė $q$ litrų vandens.
 Pakaitomis atlikdami ėjimus, jie žaidžia tokį žaidimą. 
@@ -154,11 +128,10 @@ kiek jo tuo metu yra kito žaidėjo inde. Žaidimą
 pradėjo Agnė. Po šimto ėjimų Agnės inde buvo $q$ 
 litrų vandens, o Beno – $p$ litrų vandens.
 Raskite $\frac{p}{q}$.
--->
+</text>
 
 
 
------
 
 # <lo-sample/> LT.VUMIF.2016.11_12.3
 
@@ -166,15 +139,14 @@ Noskaidrojiet, vai eksistē tāds naturāls skaitlis $n$, ka
 skaitlis $n \cdot 2^{2016} - 7$ ir
 naturāla skaitļa kvadrāts.
 
-<!--
+<text lang="lt">
 Nustatykite, ar egzistuoja toks natūralusis skaičius $n$, 
 kad skaičius $n \cdot 2^{2016} - 7$ yra
 natūraliojo skaičiaus kvadratas.
--->
+</text>
 
 
 
------
 
 # <lo-sample/> LT.VUMIF.2017.9.2
 
@@ -183,12 +155,12 @@ $0,1,2,\ldots,9$ var uzrakstīt divus naturālus skaitļus, ka
 viens skaitlis būtu otra kvadrāts?  
 *Piezīme.* Pirmais skaitļa cipars nevar būt nulle.
 
-<!--
+<text lang="lt">
 Ar panaudojus po lygiai vieną kartą visus dešimt skaitmenų
 $0,1,2,\ldots,9$ galima užrašyti du natūraliuosius skaičius, 
 kad vienas skaičius būtų kito kvadratas?  
 *Pastaba.* Pirmasis skaičiaus skaitmuo negali būti nulis. 
--->
+</text>
 
 <small>
 
@@ -199,9 +171,8 @@ kad vienas skaičius būtų kito kvadratas?
 
 
 
------
 
-## Ciparu skaita novērtējums
+## Atrisinājums
 
 **Apgalvojums:** Ja naturāla skaitļa $n$ decimālpierakstā ir $k$
 cipari, tad tā kvadrāta $n^2$ decimālpierakstā 
@@ -215,10 +186,7 @@ Tad šī skaitļa kvadrāts ir
 $$(10^k-1)^2 = 10^{2k} - 2\cdot{}10^k + 1=\overline{\underbrace{9\ldots9}_k8\underbrace{0\ldots0}_k1},$$
 
 
---
-
-## Gadījumu pārlase
-
+*#CaseAnalysis*
 Desmit ciparus var sadalīt divās daļās kā $1+9=2+8=3+7=4+6=5+5$. 
 
 * Kāpinot kvadrātā $3$-ciparu skaitli, var iegūt $5$-ciparu vai $6$-ciparu rezultātu. 
@@ -227,10 +195,6 @@ Desmit ciparus var sadalīt divās daļās kā $1+9=2+8=3+7=4+6=5+5$.
 Neviena no summām $3+5$, $3+6$, $4+7$, $4+8$ nav precīzi $10$. Tātad šādi sadalīt nevar, 
 jo nebūs vajadzīgais ciparu kopskaits.
 
-
---
-
-## Variācija
 
 **Radniecīgs uzdevums:** Ja atmetam ciparu $0$, uzdevums jārisina citādi: šoreiz var kāpināt kvadrātā $3$-ciparu 
 skaitli $n$ un iegūt $6$-ciparu rezultātu $m=n^2$. 
@@ -247,7 +211,6 @@ $$567^2=321489;\;\;854^2=729316.$$
 
 
 
------
 
 # <lo-sample/> LT.VUMIF.2017.10.1
 
@@ -257,15 +220,14 @@ $y$, ka
 $$8x^4 + 8y^4 = a^4 + 6a^2b^2 + b^4.$$
 
 
-<!--
+<text lang="lt">
 Raskite visas sveikųjų skaičių poras $(a,b)$, 
 kurioms egzistuoja tokie sveikieji skaičiai $x$ ir
 $y$, kad
 $$8x^4 + 8y^4 = a^4 + 6a^2b^2 + b^4.$$
--->
+</text>
 
 
------
 
 # <lo-sample/> LT.VUMIF.2017.10.2
 
@@ -273,11 +235,11 @@ Atrodiet visus veselo skaitļu $m$ un $n$ pārus
 $(m,n)$, kas apmierina vienādību 
 $$m^2 + 2m - 9 = n^2 + n.$$
 
-<!--
+<text lang="lt">
 Raskite visas sveikųjų skaičių $m$ ir $n$ poras 
 $(m, n)$, tenkinančias lygybę
 $$m^2 + 2m - 9 = n^2 + n.$$
--->
+</text>
 
 <small>
 
@@ -289,10 +251,9 @@ $$m^2 + 2m - 9 = n^2 + n.$$
 </small>
 
 
------
+## Atrisinājums
 
-## Atdalām pilno kvadrātu
-
+*#CompleteTheSquare*  
 Pārrakstām doto vienādību:  
 $m^2 +2m +1 -10 = n^2 + n.$  
 $(m+1)^2 = n^2 + n + 10.$
@@ -301,10 +262,7 @@ Jāatrod tie $n$, kuriem
 $n^2 + n + 10$ ir pilns kvadrāts, tad
 $$m = \sqrt{n^2+n+10} - 1.$$
 
-
---
-
-## Atstarpes starp blakus kvadrātiem
+Atrodam atstarpes starp blakus kvadrātiem:
 
 * Aiz $n^2$ nākamais pilnais kvadrāts ir 
 $(n+1)^2 = n^2 + 2n + 1$, bet iepriekšējais
@@ -320,9 +278,8 @@ vērtība pie pozitīva $n_1$ ir tāda pati kā pie negatīva
 $-1-n_1$. 
 
 
---
-
-## Pilnā pārlase pozitīvo n atrašanai
+*#CaseAnalysis*    
+Pilnā pārlase pozitīvo n atrašanai:
 
 * Ievietojam $n$ vērtības $1,2,\ldots,10$. 
 * $n^2 + n+10$ attiecīgās vērtības ir 
@@ -337,7 +294,6 @@ $$(m,n) \in \{ (9; -10), (3; -3), (3; 2), (9; 9) \}.$$
 
 
 
------
 
 # <lo-sample/> LT.VUMIF.2017.11_12.2
 
@@ -347,17 +303,16 @@ visus naturālos atrisinājumus $(x,y)$.
 Šeit $\mbox{LKD}(x,y)$ un $\mbox{MKD}(x,y)$ attiecīgi apzīmē skaitļu 
 $x$ un $y$ lielāko kopīgo dalītāju un mazāko kopīgo dalāmo. 
 
-<!--
+<text lang="lt">
 Raskite lygties
 $$x^2y^2 + 208 + 4(\mbox{DBD}(x,y) + \mbox{MBK}(x,y))^2$$
 visus natūraliuosius sprendinius $(x,y)$. 
 Čia $\mbox{DBD}(x,y)$ ir $\mbox{MBK}(x,y)$ atitinkamai žymi
 skaičių $x$ ir $y$ didžiausią bendrą daliklį ir 
 mažiausią bendrą kartotinį.
--->
+</text>
 
 
------
 
 # <lo-sample/> LT.VUMIF.2017.11_12.4
 
@@ -369,7 +324,7 @@ jāuzraksta tā starpība ar jebkuru viņa naturālu dalītāju.
 Spēlētājs, kurš uzraksta $0$, zaudē. Noskaidrojiet, kuram 
 spēlētājam ir uzvaras stratēģija, un parādiet to.
 
-<!--
+<text lang="lt">
 Lentoje užrašytas skaičius $636363$. 
 Du žaidėjai $A$ ir $B$ pakaitomis atlieka ėjimus, pirmąjį
 ėjimą atlieka $A$. Ėjimo metu reikia nutrinti 
@@ -377,23 +332,19 @@ lentoje esantį skaičių ir užrašyti jo ir bet kurio
 jo natūraliojo daliklio skirtumą. Žaidėjas, užrašęs 
 skaičių $0$, pralaimi. Nustatykite, kuris
 žaidėjas turi pergalės strategiją, ir nurodykite ją.
--->
+</text>
 
 
 <small>
 
 * [misc.invar.game](#)
+* strategy:BeginAtTheEnd
 
 </small>
 
-<!--
-strategy=begin-at-the-end
--->
 
 
------
-
-## Sākšana no beigām - 1
+## Atrisinājums
 
 > **Definīcija:** Par "aukstām" pozīcijām sauksim tās, no kurām sākot, 
 > uzvar otrais spēlētājs $B$. (Visas citas ir "karstas" 
@@ -404,10 +355,6 @@ strategy=begin-at-the-end
 * "3" (tikai pāreja $3 \rightarrow 2$) ir auksta. utt.
 
 
---
-
-## Sākšana no beigām - 2
-
 ![Dalītāju atņemšana](LT.VUMIF.2017.11_12.4.svg)
 
 **A:** "6" (pārejas uz "3", "4" vai "5") ir karsta, jo **eksistē** pāreja uz aukstu.  
@@ -415,19 +362,16 @@ strategy=begin-at-the-end
 **C:** "9" (pārejas uz "6" un "8") ir auksta, jo **katra** pāreja uz karstu.
 
 
---
+Otrais spēlētājs var pēc katra gājienu pāra saglabāt sekojošu invariantu.
 
-## Spēles invariants
+**Apgalvojums:** Ja sākumā uz tāfeles uzrakstīts 
+nepāru skaitlis, tad otrais spēlētājs var pēc katra sava 
+gājiena panākt, lai tur joprojām būtu nepāru skaitlis. 
 
-> **Apgalvojums:** Ja sākumā uz tāfeles uzrakstīts 
-> nepāru skaitlis, tad otrais spēlētājs var pēc katra sava 
-> gājiena panākt, lai tur joprojām būtu nepāru skaitlis. 
-
-*Pierādījums.* Ja 
+*Nav pabeigts.*
 
 
 
------
 
 # <lo-sample/> LT.VUMIF.2018.9.4
 
@@ -441,7 +385,7 @@ visiem to pašu).
 Atrodiet visas iespējamās skaitļa $N$ pēdējā 
 cipara vērtības.
 
-<!--
+<text lang="lt">
 Natūralusis skaičius $M = 3N$ 
 turi tiek pat skaitmenų, kaip ir
 natūralusis skaičius $N > 10$. 
@@ -452,10 +396,9 @@ pridėti po nelyginį natūralųjį
 skaičių (nebūtinai po tą patį). 
 Raskite visas galimas skaičiaus $N$
 paskutinio skaitmens reikšmes.
--->
+</text>
 
 
------
 
 # <lo-sample/> LT.VUMIF.2018.10.4
 
@@ -464,13 +407,13 @@ Skaitļa $n>1$ visu pozitīvo dalītāju
 Norādiet visas iespējamās skaitļa $n$ vērtības, 
 uzrakstot, kāds var būt skaitļa $n$ sadalījums pirmreizinātājos. 
 
-<!--
+<text lang="lt">
 Skaičiaus $n>1$ visų teigiamų daliklių 
 (įskaitant $1$ ir $n$) sandauga lygi $n^3$.
 Nurodykite visas galimas skaičiaus $n$ reikšmes, 
 užrašydami, koks gali būti skaičiaus $n$ 
 skaidinys pirminiais daugikliais.
--->
+</text>
 
 <small>
 
@@ -480,14 +423,13 @@ skaidinys pirminiais daugikliais.
 </small>
 
 
------
 
-## Cik dalītāju ir skaitlim $n$
+## Atrisinājums
 
-> **Apgalvojums:** Ja skaitlis $n$ nav pilns kvadrāts, tad 
-> tā dalītājus var sadalīt pa pāriem $(d_1,d_2)$, kur
-> katrā pārī reizinājums $d_1d_2=n$. (Ja $n$ ir pilns kvadrāts, 
-> tad dalītājam $\sqrt{n}$ nav pāra.)
+**Apgalvojums:** Ja skaitlis $n$ nav pilns kvadrāts, tad 
+tā dalītājus var sadalīt pa pāriem $(d_1,d_2)$, kur
+katrā pārī reizinājums $d_1d_2=n$. (Ja $n$ ir pilns kvadrāts, 
+tad dalītājam $\sqrt{n}$ nav pāra.)
 
 Ja skaitļa dalītāju reizinājums ir $n^3$, tad tam ir 
 tieši $6$ pozitīvi dalītāji. 
@@ -498,14 +440,10 @@ Iespējami divi dalījumi pirmreizinātājos:
 * $n=p^2q^1$. 
 
 
---
-
-## Skaitļa dalītāju skaits
-
-> **Apgalvojums:** Skaitlim ar sadalījumu pirmreizinātājos
-> $$n=p_1^{a_1}p_2^{a_2}\cdots{}p_k^{a_k}$$
-> dalītāju skaits ir 
-> $$(a_1+1)(a_2+1)\cdots{}(a_k+1).$$
+**Apgalvojums:** Skaitlim ar sadalījumu pirmreizinātājos
+$$n=p_1^{a_1}p_2^{a_2}\cdots{}p_k^{a_k}$$
+dalītāju skaits ir 
+$$(a_1+1)(a_2+1)\cdots{}(a_k+1).$$
 
 Skaitli $6$ var izteikt vai nu kā $(5+1)$ vai 
 arī kā $(2+1)(1+1)$. Daži piemēri:
@@ -516,7 +454,6 @@ To reizinājums ir $32^3$.
 To reizinājums ir $12^3$.
 
 
------
 
 # <lo-sample/> LT.VUMIF.2018.11_12.4
 
@@ -525,15 +462,14 @@ $$p + 1 = 2x^2,\;\;p^2 + 1 = 2y^2.$$
 Noskaidrojiet visas iespējamās skaitļa $p$ vērtības, ja 
 zināms, ka šis skaitlis ir pirmskaitlis. 
 
-<!--
+<text lang="lt">
 Natūralieji skaičiai $p$, $x$, $y$ tenkina lygtis:
 $p + 1 = 2x^2,\;\;p^2 + 1 = 2y^2.$$
 Nustatykite visas galimas skaičiaus $p$ reikšmes, 
 jei žinoma, kad šis skaičius pirminis.
--->
+</text>
 
 
------
 
 # <lo-sample/> LT.VUMIF.2019.9.1
 
@@ -546,7 +482,7 @@ y^2 - x^2 = x+y,\\
 2x^3 - 6x = z^3 - 4x^2.
 \end{array} \right.$$
 
-<!--
+<text lang="lt">
 Raskite visus sveikųjų skaičių trejetus $(x,y,z)$, 
 tenkinančius lygčių sistemą
 $$
@@ -555,14 +491,11 @@ x^3 + y^3 = z^3 + 1,\\
 y^2 - x^2 = x+y,\\
 2x^3 - 6x = z^3 - 4x^2.
 \end{array} \right.$$
--->
+</text>
 
 
------
 
 # <lo-sample/> LT.VUMIF.2019.9.2
-
-<div style="font-size:70%">
 
 Algis un Balis spēlē sekojošu spēli, 
 pārmaiņus izdarīdami gājienus. Sākumā 
@@ -578,9 +511,7 @@ Noskaidrojiet visus naturālu skaitļu pārus $(m,n)$,
 kuriem Balim ir uzvaras stratēģija, t.i. kurām viņš var
 nodrošināt uzvaru, lai kā spēlētu Algis. 
 
-</div>
-
-<!--
+<text lang="lt">
 Algis ir Balys žaidžia tokį žaidimą, 
 pakaitomis atlikdami ėjimus. Pradžioje
 yra dvi monetų krūvelės: vienoje krūvelėje 
@@ -595,7 +526,7 @@ pralaimi. Nustatykite visas natūraliųjų skaičių $(m,n)$
 poras, kurioms Balys turi pergalės strategiją, t. y.
 kurioms jis gali užsitikrinti pergalę, 
 kad ir kaip žaistų Algis.
--->
+</text>
 
 
 <small>
@@ -612,11 +543,35 @@ strategy=begin-at-the-end
 
 
 
------
 
-## Spriedumi no beigām
+## Atrisinājums
 
-<blue>Aukstās pozīcijās</blue> zaudē tas, kam gājiens.
+**Definīcija:** 
+Galīgā divu spēlētāju spēlē par aukstu pozīciju sauksim tādu, kurā pirmajam spēlētājam neeksistē uzvaroša stratēģija: 
+jebkurš viņa gājiens noved karstā pozīcijā (no kuras pretinieks var atkal atgriezties aukstā pozīcijā utt. 
+līdz otrā spēlētāja uzvarai. 
+
+
+Pipe table:
+
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Row 1    | Data 1   | Data 2   |
+| Row 2    | Data 3   | Data 4   |
+
+
+Grid table: 
+
++-----------+-----------+-----------+
+| Header 1  | Header 2  | Header 3  |
++===========+===========+===========+
+| Row 1     | Data 1    | Data 2    |
++-----------+-----------+-----------+
+| Row 2     | Data 3    | Data 4    |
++-----------+-----------+-----------+
+
+
+
 
 <table>
 <tr>
@@ -645,12 +600,7 @@ uzvar tas, kam pirmais gājiens: <red>(0,1)</red>, <red>(1,0)</red>,
 karstu pozīciju; tādēļ tās ir aukstas. 
 
 
-
---
-
-## Abi pāru skaitļi
-
-* Novērojam, ka aukstām pozīcijām izpildās īpašība: abi 
+Ievērojam, ka aukstām pozīcijām izpildās īpašība: abi 
 skaitļi ir pāru. 
 
 **Apgalvojums par invariantu:** Ja $(m,n)$ abi ir pāru skaitļi, tad
@@ -663,7 +613,6 @@ Algis noteikti rada vienu vai divus nepāru skaitļus pēc sava gājiena.
 tad Balis no tā atņem $1$. 
 * Ja abi ir nepāru, tad Balis atņem no abiem.
 
-## Balis sasniedz (0,0)
 
 **Apgalvojums:** Balis uzvar visiem $(m,n)$, kas ir pāru skaitļi. 
 
@@ -677,7 +626,6 @@ Skaitļiem $(m_2,n_2)$ Balis uzvar pēc induktīvā pieņēmuma. Pretruna.
 
 
 
------
 
 
 # <lo-sample/> LT.VUMIF.2019.9.4
@@ -689,7 +637,7 @@ Jurgis uzrakstīja tikai reizinājuma pēdējos trīs
 ciparus. Kādu ciparu trijnieku viņš varēja iegūt? 
 Atrodiet visas iespējas. 
 
-<!--
+<text lang="lt">
 Jurgis užrašė tris natūraliuosius skaičius, 
 iš kurių kiekvienas baigiasi tuo
 pačiu skaitmeniu kaip kitų dviejų skaičių 
@@ -697,7 +645,7 @@ suma, ir sudaugino juos. Jurgis
 užrašė tik sandaugos paskutinius tris 
 skaitmenis. Kokį skaitmenų trejetą jis
 galėjo gauti? Raskite visas galimybes.
--->
+</text>
 
 <small>
 
@@ -710,9 +658,8 @@ galėjo gauti? Raskite visas galimybes.
 </small>
 
 
------
 
-## Kongruenču vienādojumi 
+## Atrisinājums
 
 **Definīcija:** Ar $a \equiv b\;(\mbox{mod}\,10)$ apzīmējam to, ka
 $a$ un $b$ dod vienādus atlikumus, dalot ar $10$ (jeb beidzas
@@ -731,26 +678,21 @@ a+b+c \equiv 0\ & (\mbox{mod}\,10).
 \end{array}$$
 
 
---
-
-## Kongruenču atņemšana
-
-* Tātad trīs Jurģa iedomāto skaitļu summa beidzas 
-ar ciparu $0$. 
-* Atņemot kongruences 
+Tātad trīs Jurģa iedomāto skaitļu summa beidzas 
+ar ciparu $0$. Atņemot kongruences 
 $a+b+c \equiv 0\;(\mbox{mod}\,10)$ un 
 $a + b \equiv c\;(\mbox{mod}\,10)$ iegūstam
 $c \equiv -c\;(\mbox{mod}\,10)$.
-* Tātad $c$ (un simetrijas dēļ arī $b$ un $a$) 
+
+Tātad $c$ (un simetrijas dēļ arī $b$ un $a$) 
 beidzas ar $0$ vai ar $5$. 
-* Pārlasot gadījumus $(0;0;0)$,  $(5;0;0)$, 
+Pārlasot gadījumus $(0;0;0)$,  $(5;0;0)$, 
 $(5;5;0)$, $(5;5;5)$, der tikai 
 $(0;0;0)$ un $(5;5;0)$. 
 
 
---
 
-## Pēdējie trīs cipari
+Apskatām pēdējos trīs ciparus.
 
 * Ja $a,b,c$ visi beidzas ar $0$, tad pēdējie trīs
 cipari ir $000$, jo reizinājums dalās ar $1000$. 
@@ -779,7 +721,6 @@ cipari dalās ar $250$ ($000$, $250$, $500$, $750$).
 </table>
 
 
------
 
 # <lo-sample/> LT.VUMIF.2019.10.4
 
@@ -789,13 +730,13 @@ $10$ divnieku, $\ldots$, $10$ septiņnkieku.
 Pierādīt, ka, ja viens septiņīgs skaitlis dalās
 ar citu septiņīgu skaitli, tad tie ir vienādi. 
 
-<!--
+<text lang="lt">
 Natūralųjį skaičių vadinsime *septintiniu*, 
 jei jis turi lygiai $70$ skaitmenų: $10$
 vienetų, $10$ dvejetų, $\ldots$, $10$ septynetų. 
 Įrodykite, kad jei vienas septintinis
 skaičius dalijasi iš kito, tai jie lygūs.
--->
+</text>
 
 <small>
 
@@ -806,15 +747,14 @@ skaičius dalijasi iš kito, tai jie lygūs.
 </small>
 
 
------
 
-## Ciparu pārvietošana un dalāmība ar 9
+## Atrisinājums
 
-> **Apgalvojums:** Skaitlis $n$ un tā ciparu summa $S(n)$ 
-> dod vienādus atlikumus, dalot ar $9$ (vispārināta
-> dalāmības pazīme).  
-> **Secinājums:** Mainot vietām ciparus, skaitļa
-> atlikums, dalot ar $9$, nemainās.
+**Apgalvojums:** Skaitlis $n$ un tā ciparu summa $S(n)$ 
+dod vienādus atlikumus, dalot ar $9$ (vispārināta
+dalāmības pazīme).  
+**Secinājums:** Mainot vietām ciparus, skaitļa
+atlikums, dalot ar $9$, nemainās.
 
 Septiņīgam skaitlim ciparu summa: 
 $$10\cdot(1+2+\ldots+7) = 10\cdot{}28=280.$$
@@ -823,10 +763,7 @@ $280$ dod atlikumu $1$, dalot ar $9$. Tātad arī
 katrs septiņīgs skaitlis dos atlikumu $1$, dalot ar $9$. 
 
 
-
---
-
-## Septiņīgu skaitļu daudzkārtņi
+Septiņīgu skaitļu daudzkārtņiem izpildās šādi apgalvojumi:
 
 * Divu septiņīgu skaitļu attiecība nevar pārsniegt $7$. 
 * Reizinot skaitli $9k+1$ (atlikums $1$, dalot ar $9$)
@@ -838,7 +775,6 @@ atlikumi $2,\ldots,7$.
 var būt septiņīgs ir viņš pats.
 
 
------
 
 # <lo-sample/> LT.VUMIF.2019.11_12.4
 
@@ -851,7 +787,7 @@ $N = \overline{M81}$. Pierādiet, ka
 a) $M$ nedalās ne ar vienu piecīgu skaitli, izņemot sevi pašu;  
 b) $N$ nedalās ne ar vienu piecīgu skaitli. 
 
-<!--
+<text lang="lt">
 Natūralųjį skaičių vadinsime *penktiniu*, 
 jei jis turi lygiai $500$ skaitmenų: po
 $100$ dvejetų, trejetų, ketvertų, penketų ir šešetų. 
@@ -861,7 +797,7 @@ gautas skaičius $N = \overline{M81}$. Įrodykite,
 kad a) $M$ nesidalija iš jokio penktinio skaičiaus, 
 išskyrus save patį; 
 b) $N$ nesidalija iš jokio penktinio skaičiaus.
--->
+</text>
 
 <small>
 
@@ -874,9 +810,8 @@ b) $N$ nesidalija iš jokio penktinio skaičiaus.
 </small>
 
 
------
 
-## Ciparu pārvietošana un dalāmība ar 9
+## Atrisinājums
 
 * Piecīgam skaitlim ciparu summa: 
 $$100\cdot(2+3+4+5+6) = 100\cdot{}20=2000.$$
@@ -889,9 +824,8 @@ $M/P = 1$ (jo dalījumus $2,3,4$ iegūt nevar - pretruna ar atlikumiem,
 kādus var dot $P$ daudzkārtņi). 
 
 
---
 
-## Piecīga skaitļa daudzkārtnim beigās "81"?
+Vai piecīga skaitļa daudzkārtnim beigās var būt cipari "81"?
 
 * Ja $N=\overline{M81}$, tad arī $N$ ciparu summa $2009$ dod atlikumu 
 $2$, dalot ar $9$. 
@@ -901,11 +835,7 @@ $k$ dod atlikumu $1$, dalot ar $9$.
 beidzas ar ciparu $3$ (cipars $5$ neder) un $k$ beidzas ar ciparu 
 $7$ jeb dod atlikumu $7$, dalot ar $10$
 
-
---
-
-## Kongruenču sistēmiņa
-
+Rakstām kongruenču sistēmu. 
 Ja $N=\overline{M81}$ un $N=kP$, kur $M,P$ abi ir piecīgi skaitļi, 
 tad:
 
@@ -920,13 +850,10 @@ reizinot pat mazāko piecīgo skaitli $P=\overline{222\ldots}$
 rezultāts sāksies ar cipariem "68" (t.i. vairs nebūs piecīgs).
 
 
---
-
-## Pilnā pārlase
-
+*#ExhaustiveSearch*  
 Ja $k=37, 127, 217$, tad reizinot tos ar jebkādiem 
 piecīga skaitļa $P$ pēdējiem cipariem (kur pats pēdējais 
-cipars ir "3"), mēs neiegūstam beigās ciparus "81":
+cipars ir "3"), neiegūstam beigās ciparus "81":
 
 <table>
 <tr><th>$k$</th><th>$37$</th><th>$127$</th><th>$217$</th></tr>
