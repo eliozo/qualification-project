@@ -13,10 +13,10 @@ Atrast $\sphericalangle BAC$, ja $\sphericalangle CED = 25^{\circ}$.
 * topic:TriangleAngles
 * topic:TrianglesIsosceles
 * topic:AnglesParallelLines
-* Hint:"Var izteikt vispirms ∠DCB, tad tā blakusleņķi ∠ACB."
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:80
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -27,9 +27,9 @@ Atrast $\sphericalangle BAC$, ja $\sphericalangle CED = 25^{\circ}$.
 что $|CD| = |CE|$. Найти величину угла $BAC$, если $\sphericalangle CED = 25^{\circ}$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
+
+Var izteikt vispirms $\sphericalangle DCB$, tad tā blakusleņķi $\sphericalangle ACB$.
 
 
 
@@ -58,11 +58,12 @@ kas apzīmēti ar lociņiem.
 
 <small>
 
-* [plan.circle.angles.central](#)
+* LTopic:LTTriangles
 * topic:TriangleAngles
-* Topic:measuringSegmentsAngles
+* LTopic:LTPolygons
 * Answer:360
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -70,10 +71,6 @@ kas apzīmēti ar lociņiem.
 На сторонах равнобедренного треугольника построены прямоугольники. Найти сумму величин
 углов, обозначенных дугами.
 </text>
-
-<!--
-questionType=Test.ShortAnswer
--->
 
 
 ## Atrisinājums
@@ -102,10 +99,10 @@ Aprēķināt leņķi $x$.
 * topic:TrianglesIsosceles
 * topic:TriangleAngles
 * topic:AnglesParallelLines
-* Hint:"Var vispirms izteikt leņķus abās pusēs leņķim x."
-* Topic:isoscelesTriangles
+* LTopic:LTTriangles
 * Answer:45
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -115,10 +112,9 @@ $40^{\circ}$ и $50^{\circ}$, и основания которых лежат н
 прямой. Найти величину угла $x$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+## Ieteikums
 
+Var vispirms izteikt leņķus abās pusēs leņķim $x$.
 
 
 ## Atrisinājums
@@ -144,9 +140,10 @@ Aprēķināt leņķu lielumu summu, kas zīmējumā apzīmēti ar $x$ un $y$.
 
 * topic:AnglesCentral
 * topic:PolygonAnglesSum
-* Topic:polygonSumOfAngles
+* LTopic:LTPolygons
 * Answer:150
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -154,9 +151,6 @@ Aprēķināt leņķu lielumu summu, kas zīmējumā apzīmēti ar $x$ un $y$.
 Найти сумму величин углов, обозначенных на рисунке буквами $x$ и $y$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
 
 ## Atrisinājums
 
@@ -184,10 +178,10 @@ taisnstūra malu.
 
 * topic:TrianglesEquilateral
 * topic:AnglesParallelLines
-* Hint:"Vienādmalu trijstūra iekšējie leņķi ir 60 grādi. Leņķi α var ar to izteikt."
-* Topic:parallelAndIntersectingLines
+* LTopic:LTTriangles
 * Answer:120
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -198,9 +192,11 @@ taisnstūra malu.
 на рисунке. Найти величину тупого угла $\alpha$, который образовался между продолжением стороны треугольника и стороной прямоугольника.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
+## Ieteikums
+
+Vienādmalu trijstūra iekšējie leņķi ir $60^{\circ}$. Leņķi $\alpha$ var ar to izteikt.
+
 
 ## Atrisinājums
 
@@ -226,7 +222,7 @@ $CD$ ir šī trijstūra iekšējo leņķu bisektrises, un $\sphericalangle BDC$ 
 <small>
 
 * topic:TriangleAngles
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:20
 * Grade:7,8
 
@@ -261,9 +257,10 @@ Kāda ir leņķu $\alpha$ un $\gamma$ summa?
 
 * topic:AnglesCentral
 * topic:LinearSystemsTransforms
-* Topic:measuringSegmentsAngles
+* LTopic:LTCircleAndRelatedAngles
 * Answer:340
 * Grade:9,10
+* questionType:ShortAnswer
 
 </small>
 
@@ -274,9 +271,7 @@ Kāda ir leņķu $\alpha$ un $\gamma$ summa?
 Какова величина суммы углов $\alpha$ и $\gamma$?
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
 
 
 ## Atrisinājums
@@ -307,10 +302,10 @@ Atrast leņķa $BDE$ lielumu.
 * topic:TrianglesIsosceles
 * topic:TriangleAngles
 * topic:AnglesParallelLines
-* Hint:"Vispirms izsaka ∠BED, tad izmanto trijstūra BDE iekšējo leņķu summu."
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:20
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -321,9 +316,11 @@ $\sphearicalangle CBD = 25^{\circ}$.
 Найти величину угла $BDE$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
+## Ieteikums
+
+Vispirms izsaka $\sphericalangle BED$, tad izmanto trijstūra $BDE$ iekšējo leņķu summu.
+
 
 ## Atrisinājums
 
@@ -347,9 +344,10 @@ $AB = CD$. Atrast leņķa $\sphericalangle ABC$ lielumu.
 <small>
 
 * topic:TrianglesIsosceles
-* Topic:isoscelesTriangles
+* LTopic:LTTriangles
 * Answer:65
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -358,9 +356,7 @@ $AB = CD$. Atrast leņķa $\sphericalangle ABC$ lielumu.
 $|AB| = |CD|$. Найти величину угла $ABC$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
 
 ## Atrisinājums 
 
@@ -385,10 +381,10 @@ malas $AC$ garumu.
 <small>
 
 * topic:TriangleAngles
-* Hint:"Izsakot leņķus, var pamanīt vienādsānu trijstūrus. Un tad izmantot tajos malu vienādības."
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:30
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -398,9 +394,12 @@ malas $AC$ garumu.
 длину стороны $AC$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
+## Ieteikums
+
+Izsakot leņķus, var pamanīt vienādsānu trijstūrus. Un tad izmantot tajos malu vienādības.
+
+
 
 ## Atrisinājums
 
@@ -430,9 +429,10 @@ $BC$ būtu vienādi. Aprēķināt ar $x$ apzīmēto leņķi.
 
 * topic:TriangleAngles
 * topic:TrianglesIsosceles
-* Topic:isoscelesTriangles
+* LTopic:LTTriangles
 * Answer:30
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -445,9 +445,7 @@ $BC$ оказались равной длины. Найти величину у�
 обозначенного буквой $x$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
 
 ## Atrisinājums
 
@@ -476,10 +474,10 @@ Aprēķināt leņķi, kas apzīmēts ar $x$.
 
 * topic:PolygonRegular
 * topic:AnglesParallelLines
-* Hint:"Izsaka četrstūra iekšējos leņķus - daži no tiem ir blakusleņķi dotajiem. Tad atrod x blakusleņķi."
-* Topic:polygonSumOfAngles
+* LTopic:LTPolygons
 * Answer:130
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -491,9 +489,11 @@ Aprēķināt leņķi, kas apzīmēts ar $x$.
 обозначенного буквой $x$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
+## Ieteikums
+
+Izsaka četrstūra iekšējos leņķus - daži no tiem ir blakusleņķi dotajiem. Tad atrod $x$ blakusleņķi.
+
 
 ## Atrisinājums
 
@@ -537,9 +537,10 @@ bet $\sphericalangle ABC$ ir $80^{\circ}$. Aprēķināt $y$.
 
 * topic:TriangleAngles
 * topic:AnglesParallelLines
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:50
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -552,9 +553,7 @@ bet $\sphericalangle ABC$ ir $80^{\circ}$. Aprēķināt $y$.
 равна $80^{\circ}$. Найти $y$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
 
 ## Atrisinājums 
 
@@ -577,10 +576,10 @@ Atrast leņķi, kas apzīmēts ar $y$, ja ar $x$ apzīmētie leņķi ir vienādi
 
 * topic:TriangleAngles
 * topic:AnglesParallelLines
-* Hint:"Vispirms izsaka x, izmantojot tā krustleņķi."
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:48
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -589,9 +588,10 @@ Atrast leņķi, kas apzīmēts ar $y$, ja ar $x$ apzīmētie leņķi ir vienādi
 буквой $y$, если величины обозначенных буквой $x$ углов равны.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+# Ieteikums
+
+Vispirms izsaka $x$, izmantojot tā krustleņķi.
+
 
 ## Atrisinājums
 
@@ -621,9 +621,10 @@ Trijstūris $ACE$ ir vienādsānu. Atrast leņķi $\sphericalangle EAB$.
 
 * topic:TriangleAngles
 * topic:AnglesParallelLines
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:57
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -632,9 +633,6 @@ Trijstūris $ACE$ ir vienādsānu. Atrast leņķi $\sphericalangle EAB$.
 Треугольник $ACE$ равнобедренный. Найти величину угла $\sphericalangle EAB$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
 
 ## Atrisinājums
 
@@ -662,10 +660,10 @@ Aprēķināt leņķi $DCE$.
 * topic:TriangleAngles
 * topic:AnglesParallelLines
 * topic:AnglesParallelLines
-* Hint:"Ar meklējamo leņķi (α) izsaka citus - izmanto trijstūra iekšējo leņķu summu, šķērsleņķu un krustleņķu īpašības."
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:20
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -675,9 +673,10 @@ $AD$ и $BE$ пересекаются в точке $C$, и действует �
 Найти величину угла $DCE$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
+## Ieteikums
+
+Ar meklējamo leņķi ($\alpha$) izsaka citus - izmanto trijstūra iekšējo leņķu summu, šķērsleņķu un krustleņķu īpašības.
 
 ## Atrisinājums
 
@@ -705,9 +704,10 @@ bet trijstūris $ACD$ ir vienādsānu. Aprēķināt leņķi $ACB$.
 
 * topic:TriangleAngles
 * topic:AnglesParallelLines
-* Topic:specialTriangles
+* LTopic:LTTriangles
 * Answer:30
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -716,9 +716,7 @@ bet trijstūris $ACD$ ir vienādsānu. Aprēķināt leņķi $ACB$.
 треугольник $ABD$ является равносторонним, а треугольник $ACD$ равнобедренным. Найти величину угла $ACB$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
 
 ## Atrisinājums
 
@@ -745,10 +743,10 @@ Aprēķināt leņķi $ACD$.
 <small>
 
 * topic:TriangleAngles
-* Hint:"CAD un BCD arī ir taisnleņķa trijstūri; citus leņķus izsaka ar nezināmo ∠ACD un risina radušos vienādojumu."
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:40
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -760,9 +758,11 @@ Aprēķināt leņķi $ACD$.
 Найти величину угла $ACD$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+## Ieteikums
+
+$CAD$ un $BCD$ arī ir taisnleņķa trijstūri; citus leņķus izsaka ar 
+nezināmo $\sphericalangle ACD$ un risina radušos vienādojumu.
+
 
 
 ## Atrisinājums
@@ -799,9 +799,10 @@ Aprēķināt leņķi $ACB$.
 
 * topic:TriangleAngles
 * topic:AnglesParallelLines
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:80
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -812,9 +813,7 @@ $CD$. Величина одного из внутренних углов тре�
 Найти величину угла $ACB$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
 
 ## Atrisinājums
 
@@ -849,10 +848,10 @@ leņķis $x$ ir $23^{\circ}$ un leņķis $y$ ir $32^{\circ}$.
 
 * topic:TriangleAngles
 * topic:PolygonAnglesSum
-* Hint:"Var izteikt pārējos leņķus trijstūrītī, kurā viens no leņķiem ir z."
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:80
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -863,9 +862,10 @@ leņķis $x$ ir $23^{\circ}$ un leņķis $y$ ir $32^{\circ}$.
 равна $23^{\circ}$, а величина угла $y$ равна $32^{\circ}$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+## Ieteikums
+
+Var izteikt pārējos leņķus trijstūrītī, kurā viens no leņķiem ir $z$.
+
 
 ## Atrisinājums
 
@@ -892,9 +892,10 @@ Atrast leņķa $x$ lielumu, ja zīmējumā attēlotais četrstūris ir paralelog
 
 * topic:TriangleAngles
 * topic:PolygonAnglesSum
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:44
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -904,9 +905,7 @@ Atrast leņķa $x$ lielumu, ja zīmējumā attēlotais četrstūris ir paralelog
 Найти величину угла $x$, если изображенный на рисунке четырехугольник является параллелограммом.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
 
 ## Atrisinājums
 
@@ -935,9 +934,10 @@ $M$ ir tā malas viduspunkts.
 <small>
 
 * topic:TrianglesEquilateral
-* Topic:placementTriangleSpecialLines
+* LTopic:LTTriangles
 * Answer:120
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -946,11 +946,6 @@ $M$ ir tā malas viduspunkts.
 Найти величину угла $x$, если изображенный
 на рисунке четырехугольник является ромбом и точка $M$ является серединой его стороны.
 </text>
-
-<!--
-questionType=Test.ShortAnswer
--->
-
 
 
 
@@ -979,9 +974,10 @@ Aprēķināt $\sphericalangle ABC$.
 
 * topic:TriangleAngles
 * topic:AnglesParallelLines
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:33
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -991,9 +987,6 @@ Aprēķināt $\sphericalangle ABC$.
 равна $24^{\circ}$. Найти величину угла $ABC$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
 
 ## Atrisinājums
 
@@ -1018,9 +1011,10 @@ lielumu, ja $\sphericalangle ADK = 97^{\circ}$ un $\sphericalangle DKC = 123^{\c
 
 * topic:TriangleAngles
 * topic:AnglesParallelLines
-* Topic:triangleSumOfAngles
+* LTopic:LTTriangles
 * Answer:128
 * Grade:7,8
+* questionType:ShortAnswer
 
 </small>
 
@@ -1033,9 +1027,6 @@ $BC$ равны. Из точки $D$, лежащей на
 если $\sphericalangle ADK = 97^{\circ}$ и $\sphericalangle DKC = 123^{\circ}$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
 
 ## Atrisinājums 
 
@@ -1060,9 +1051,10 @@ Atrast leņķi $\sphericalangle BKL$.
 
 <small>
 
-* Topic:polygonSumOfAngles
+* LTopic:LTPolygons
 * Answer:39
 * Grade:9,10
+* questionType:ShortAnswer
 
 </small>
 
@@ -1072,9 +1064,7 @@ Atrast leņķi $\sphericalangle BKL$.
 $\sphericalangle BKL$.
 </text>
 
-<!--
-questionType=Test.ShortAnswer
--->
+
 
 ## Atrisinājums
 

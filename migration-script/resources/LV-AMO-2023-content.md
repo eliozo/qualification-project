@@ -9,10 +9,11 @@ lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.
 
 <small>
 
-* [Topic:arithmetic](#)
-* concept:difference,distance
+* topic:ArithmeticIdentities
+* concepts:difference,distance,triangle
 * seeAlso:LV.AMO.2023.6.1
 * questionType:FindExample
+* domain:Alg
 
 </small>
 
@@ -26,21 +27,25 @@ Sk., piemēram, 2. att., kur pelēkā krāsā norādītas atbilstošās starpīb
 
 
 
+
 # <lo-sample/> LV.AMO.2023.5.2
 
-Doti divi skaitļi. Zināms, ka viens no tiem ir tieši septiņas reizes lielāks nekā otrs un katram no tiem ir
-vismaz divi cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari: **(a)** $3$; $4$; $6$ un $7$;
-**(b)** $1$; $2$ un $3$?
-
+Doti divi skaitļi. Zināms, ka viens no tiem ir tieši septiņas reizes 
+lielāks nekā otrs un katram no tiem ir vismaz divi
+cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari 
+**(A)** $3$; $4$; $6$ un $7$; **(B)** $1$; $2$ un $3$?
 
 <small>
 
 * concept:decimal-notation
-* topic:ModularArithmeticOther
-* [Topic:decimalNotation](#)
-* questionType:ProveDisprove
+* topic:ModularArithmeticLastDigit
+* LTopic:LTNumeralSystems
+* strategy:CaseAnalysis
+* questionType:ProveDisprove,ProveDisprove
+* domain:NT
 
 </small>
+
 
 
 ## Atrisinājums
@@ -59,8 +64,11 @@ laukuma vērtība ir tāda pati kā malu skaits!
 
 <small>
 
-* [Topic:squareGridGeometry](#)
 * questionType:FindExample
+* topic:SquareGridShapes
+* LTopic:LTIntegerLattices
+* strategy:TrialAndError
+* domain:Geom
 
 </small>
 
@@ -73,28 +81,32 @@ Piemēram, skat. 3. att., kur uzzīmēts $32$-stūris, kura laukuma un perimetra
 
 # <lo-sample/> LV.AMO.2023.5.4
 
-Dots kvadrāts ar izmēriem $n \times n$ rūtiņas. Vienā gājienā kauliņu var pārlikt tieši $2$ rūtiņas uz priekšu pa
-jebkuru no diagonālēm, kas iziet no tā lauciņa, kurā atrodas kauliņš (skat. 4. att., kur kauliņš apzīmēts
-ar "o" un ar "x" atzīmētas tās rūtiņas, uz kurām to drīkst pārvietot). Vai, veicot vairākus gājienus, kauliņu
-no kreisās apakšējās rūtiņas var pārvietot uz kreiso augšējo rūtiņu, ja kvadrāta izmēri ir: **(a)** $9 \times 9$;
-**(b)** $10 \times 10$; **(c)** $11 \times 11$?
+Dots kvadrāts ar izmēriem $n \times n$ rūtiņas. 
+Vienā gājienā kauliņu var pārlikt tieši $2$ rūtiņas uz priekšu pa jebkuru
+no diagonālēm, kas iziet no tā lauciņa, kurā atrodas kauliņš (skat. 4. att., 
+kur kauliņš apzīmēts ar "o" un ar "x"
+atzīmētas tās rūtiņas, uz kurām to drīkst pārvietot). Vai, veicot vairākus gājienus, 
+kauliņu no kreisās apakšējās
+rūtiņas var pārvietot uz kreiso augšējo rūtiņu, ja kvadrāta izmēri ir: 
+**(A)** $9 \times 9$; **(B)** $10 \times 10$; **(C)** $11 \times 11$?  
+![4.zīm.](LV.AMO.2023.5.4.png)
 
-![](LV.AMO.2023.5.4.png)
 
 <small>
 
-* [Topic:otherAlgorithms](#)
+* topic:InvariantParity
 * questionType:ProveDisprove
+* domain:Comb
 
 </small>
 
 ## Atrisinājums
 
-**(a)** Jā, var, skat., piemēram, 5. att., kur ar skaitļiem parādīti veiktie gājieni.
+**(A)** Jā, var, skat., piemēram, 5. att., kur ar skaitļiem parādīti veiktie gājieni.
 
 ![](LV.AMO.2023.5.4A.png)
 
-**(b)** Nē, nevar. **(c)** Nē, nevar. Pieņemsim, ka kauliņš sākumā atrodas uz pelēkas rūtiņas. Ievērojot, ka
+**(B)** Nē, nevar. **(C)** Nē, nevar. Pieņemsim, ka kauliņš sākumā atrodas uz pelēkas rūtiņas. Ievērojot, ka
 kauliņu var pārlikt izlaižot vienu rūtiņu pa diagonāli, pakāpeniski pelēkā krāsā iekrāsojam rūtiņas, kurās
 var atrasties kauliņš (skat. 6. att., kur iekrāsotas visas rūtiņas, kurās var atrasties kauliņš). Tā kā augšējā
 kreisā stūra rūtiņa ir balta (kvadrātam $10 \times 10$ tā atzīmēta ar b, bet kvadrātam $11 \times 11$ tā atzīmēta ar
@@ -105,15 +117,18 @@ c), tad tajā kauliņš nevar nonākt.
 
 # <lo-sample/> LV.AMO.2023.5.5
 
-Gunai bija četru veidu konfektes: 8 “Serenādes”, 14 “Lācīši Ķepainīši”, 20 “Vāverītes” un 26 “Sarkanās
-magones”. Katru no saviem dzimšanas dienas viesiem viņa uzcienāja ar tieši 3 dažādām konfektēm.
+Gunai bija četru veidu konfektes: 8 “Serenādes”, 14 “Lācīši Ķepainīši”, 
+20 “Vāverītes” un 26 “Sarkanās magones”. 
+Katru no saviem dzimšanas dienas viesiem viņa uzcienāja ar tieši 3 dažādām konfektēm.
 Kāds ir lielākais iespējamais viesu skaits, kas bija ieradušies uz Gunas dzimšanas dienas svinībām?
 
 
 <small>
 
-* [Topic:otherCombinatorics](#) 
-* questionType:FindOptimal 
+* topic:PigeonholePrincipleForExtremes
+* questionType:FindOptimal
+* LTTopic:LTExtremes
+* domain:Alg
 
 </small>
 
@@ -169,6 +184,7 @@ lai blakus trijstūros ierakstīties skaitļi neatšķiras vairāk kā par $4$.
 <small>
 
 * questionType:FindExample
+* domain:Alg
 
 </small>
 
@@ -190,6 +206,7 @@ iegūst, otro skaitli pareizinot pašu ar sevi. Vai var gadīties, ka abu skait�
 <small>
 
 * questionType:ProveDisprove
+* domain:NT
 
 </small>
 
@@ -218,6 +235,7 @@ ar ko tai ir kopīga mala.
 <small>
 
 * questionType:FindExample,FindExample
+* domain:Geom
 
 </small>
 
@@ -246,6 +264,7 @@ Cik zaļo un cik sarkano bruņinieku sēž pie galda?
 <small>
 
 * questionType:FindCount
+* domain:Comb
 
 </small>
 
@@ -292,6 +311,7 @@ komplektu viennozīmīgi nav iespējams noteikt?
 <small>
 
 * questionType:FindOptimal
+* domain:Alg
 
 </small>
 
@@ -348,6 +368,7 @@ skaitļiem nebūtu vienādu ciparu?
 <small>
 
 * questionType:ProveDisprove,ProveDisprove
+* domain:Comb
 
 </small>
 
@@ -387,6 +408,7 @@ kuram vienlaicīgi izpildās šādi nosacījumi:
 <small>
 
 * questionType:FindOptimal
+* domain:NT
 
 </small>
 
@@ -429,6 +451,7 @@ rūtiņas uz blakus rūtiņu, ar ko tai ir kopīga mala.
 <small>
 
 * questionType:FindExample,FindExample
+* domain:Geom
 
 </small>
 
@@ -459,6 +482,7 @@ komplektu viennozīmīgi nav iespējams noteikt?
 <small>
 
 * questionType:FindOptimal
+* domain:Alg
 
 </small>
 
@@ -516,6 +540,7 @@ Cik bizbizmārītes sēž uz palodzes?
 <small>
 
 * questionType:FindCount
+* domain:Comb
 
 </small>
 
@@ -565,6 +590,7 @@ daļas būtu nesaīsināmas: $\frac{A}{B} + \frac{C}{D} = \frac{E}{F}$.
 <small>
 
 * questionType:ProveDisprove
+* domain:Alg
 
 </small>
 
@@ -576,7 +602,7 @@ Jā, var, piemēram, $\frac{7}{3} + \frac{1}{6} = \frac{5}{2}$.
 
 # <lo-sample/> LV.AMO.2023.8.2
 
-Trīsciparu skaitļa 𝑥 ciparu summa ir $12$. 
+Trīsciparu skaitļa $x$ ciparu summa ir $12$. 
 Ja šim skaitlim nodzēš pēdējo ciparu, tad atlikušais divciparu
 skaitlis dalās ar $9$. Zināms, ka skaitlis $x$ ir par $99$ lielāks 
 nekā trīsciparu skaitlis, ko iegūst, uzrakstot tā
@@ -586,6 +612,7 @@ ciparus pretējā secībā. Kāds var būt skaitlis $x$?
 <small>
 
 * questionType:FindAll
+* domain:NT
 
 </small>
 
@@ -626,6 +653,7 @@ Izsaki leņķi $CGF$ ar $\alpha$ un $\beta$.
 <small>
 
 * questionType:FindAll
+* domain:Geom
 
 </small>
 
@@ -666,6 +694,7 @@ Dorotejai un Almai iedotajām naudas summām?
 <small>
 
 * questionType:FindOptimal
+* domain:Alg
 
 </small>
 
@@ -716,6 +745,7 @@ Cik bizbizmārītes sēž uz palodzes?
 
 * seeAlso:LV.AMO.2023.7.5
 * questionType:FindCount
+* domain:Comb
 
 </small>
 
@@ -766,6 +796,7 @@ un saucēju. Vai, atkārtojot
 <small>
 
 * questionType:ProveDisprove,ProveDisprove
+* domain:Alg
 
 </small>
 
@@ -792,6 +823,7 @@ Zināms, ka $12a + 9b$ dalās ar $13$. Kāds var būt skaitlis $\overline{cd}$?
 <small>
 
 * questionType:FindAll
+* domain:NT
 
 </small>
 
@@ -820,6 +852,7 @@ virsotnes, ir divas reizes garāka nekā augstums no tās pašas virsotnes!
 <small>
 
 * questionType:Prove
+* domain:Geom
 
 </small>
 
@@ -858,6 +891,7 @@ kartītēm uzrakstīto skaitļu summas ir vienādas?
 <small>
 
 * questionType:ProveDisprove
+* domain:Alg
 
 </small>
 
@@ -894,12 +928,13 @@ ka kartītes sešās grupās pa sešām katrā ar vienādu skaitļu kopsummu sad
 # <lo-sample/> LV.AMO.2023.9.5
 
 Pirmie sešpadsmit naturālie skaitļi patvaļīgā secībā izvietoti pa apli, katriem diviem blakus skaitļiem
-aprēķināta to starpība (no lielākā skaitļa atņemot mazāko), un pēc tam aprēķināta visu šo 16 starpību
+aprēķināta to starpība (no lielākā skaitļa atņemot mazāko), un pēc tam aprēķināta visu šo $16$ starpību
 summa $S$. Vai var gadīties, ka: **(A)** $S = 100$; **(B)** $S = 123$?
 
 <small>
 
 * questionType:ProveDisprove,ProveDisprove
+* domain:Comb
 
 </small>
 
@@ -948,6 +983,7 @@ Cik zaļo un cik sarkano bruņinieku sēž pie galda?
 <small>
 
 * questionType:FindCount
+* domain:Comb
 
 </small>
 
@@ -986,6 +1022,7 @@ Pierādīt, ka $9x^2 + 5y^2 − 8xy − 4x + 2 > 0$ visām reālām $x$ un $y$ v
 <small>
 
 * questionType:Prove
+* domain:Alg
 
 </small>
 
@@ -1018,6 +1055,7 @@ leņķa $ABC$ lielums četrstūra ārpusē ir $7\alpha$ (skat. 19. att.). Aprē�
 <small>
 
 * questionType:FindAll
+* domain:Geom
 
 </small>
 
@@ -1090,7 +1128,6 @@ $$360^{\circ} − 7\alpha = 240^{\circ} − 2\alpha \;\;\Rightarrow\;\; \alpha =
 
 # <lo-sample/> LV.AMO.2023.10.4
 
-
 Uz katras no $72$ kartītēm uzrakstīts kāds naturāls skaitlis 
 (daži no tiem var būt arī vienādi). Kartītes
 iespējams sadalīt astoņās grupās pa deviņām kartītēm katrā tā, 
@@ -1109,6 +1146,7 @@ ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?
 <small>
 
 * questionType:ProveDisprove,ProveDisprove
+* domain:Alg
 
 </small>
 
@@ -1184,6 +1222,7 @@ aritmētiskais. Kāds varēja būt Marutas nodzēstais skaitlis?
 <small>
 
 * questionType:FindAll
+* domain:NT
 
 </small>
 
@@ -1223,6 +1262,7 @@ Māra dzimšanas dienas svinībām?
 <small>
 
 * questionType:FindOptimal
+* domain:Alg
 
 </small>
 
@@ -1278,10 +1318,10 @@ viesus, tad nevar arī vairāk, un lielākais iespējamais viesu skaits ir $37$.
 Pierādīt, ka $a^2c + ac^2 - 6abc + 3b^2c + ab^2 \geq 0$
 visām pozitīvām reālām $a$, $b$ un $c$ vērtībām!
 
-
 <small>
 
 * questionType:Prove
+* domain:Alg
 
 </small>
 
@@ -1315,6 +1355,7 @@ Aprēķināt riņķa, ko ierobežo dotā riņķa līnija, laukumu!
 <small>
 
 * questionType:FindAll
+* domain:Geom
 
 </small>
 
@@ -1369,6 +1410,7 @@ ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?
 <small>
 
 * questionType:ProveDisprove,ProveDisprove
+* domain:Comb
 
 </small>
 
@@ -1440,6 +1482,7 @@ Atrisināt veselos skaitļos vienādojumu $17a^2 - 7b^2 + c^2 = 2023$.
 <small>
 
 * questionType:FindAll
+* domain:NT
 
 </small>
 
@@ -1475,6 +1518,7 @@ būtu patiesa?
 <small>
 
 * questionType:ProveDisprove
+* domain:Alg
 
 </small>
 
@@ -1493,6 +1537,7 @@ skaitļi?
 <small>
 
 * questionType:FindOptimal
+* domain:Alg
 
 </small>
 
@@ -1521,6 +1566,7 @@ Pierādīt, ka $S_{ABD} \leq S_{CEF}$.
 <small>
 
 * questionType:Prove
+* domain:Geom
 
 </small>
 
@@ -1567,6 +1613,7 @@ $2 \times 5$ rūtiņas nav patiess!
 <small>
 
 * questionType:Prove,Prove
+* domain:Comb
 
 </small>
 
@@ -1651,6 +1698,7 @@ atlikumu $1$, dalot ar $3$?
 <small>
 
 * questionType:ProveDisprove,ProveDisprove
+* domain:NT
 
 </small>
 

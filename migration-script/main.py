@@ -30,6 +30,7 @@ def readCSVfile():  # Funkcija, kas lasa CSV failu
     return result
 
 def getMarkdownFile(URL, content_file_name, file_suffix): # Funkcija, kas iegūst Markdown failu no GitHub repozitorija
+    # print(f'URL = {URL}')
     URL = URL.replace('github.com','raw.githubusercontent.com')
     URL = URL + '/' + content_file_name + '.md'
     URL = URL.replace('/tree', '')

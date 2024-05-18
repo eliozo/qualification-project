@@ -39,7 +39,7 @@ Atrast visus veselos skaitļus $n$, kuriem skaitlis
 ${\displaystyle \frac{n^2 - 4}{n^2 - 1}}$ ir vesels.
 
 <!--
-concepts=integer-polynomials,divisibility
+concepts=integer-polynomial,divisibility
 questionType=FindAll
 -->
 

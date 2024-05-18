@@ -8,6 +8,7 @@ visi pieci ierakstītie cipari būtu dažādi un neviens no tiem nebūtu 2.
 <small>
 
 * questionType:FindExample
+* domain:NT
 
 </small>
 
@@ -29,6 +30,7 @@ Kāds mazākais skaits punktu jānodzēš, lai nekādi trīs no atlikušajiem pu
 <small>
 
 * questionType:FindOptimal
+* domain:Geom
 
 </small>
 
@@ -59,6 +61,7 @@ sakrīt (figūras var pagriezt un apmest otrādi).
 <small>
 
 * questionType:FindExample
+* domain:Comb
 
 </small>
 
@@ -82,6 +85,7 @@ $4 \cdot 1+23=27$). Kāds ir pēdējais uzrakstītais skaitlis?
 <small>
 
 * questionType:FindExample
+* domain:NT
 
 </small>
 
@@ -111,6 +115,7 @@ Vai iespējams, ka pēc atkārtotas automāta izmantošanas viṇai palika:
 <small>
 
 * questionType:ProveDisprove
+* domain:Alg
 
 </small>
 
@@ -146,6 +151,7 @@ visi seši ierakstītie cipari būtu dažādi un neviens no tiem nebūtu 3.
 <small>
 
 * questionType:FindExample
+* domain:NT
 
 </small>
 
@@ -167,6 +173,7 @@ ja jābūt izgrieztām arī tieši divām 6. att. figūrām?
 <small>
 
 * questionType:FindOptimal
+* domain:Geom
 
 </small>
 
@@ -205,6 +212,7 @@ ka abas figūras sakrīt (figūras var pagriezt un apmest otrādi).
 <small>
 
 * questionType:FindExample
+* domain:Comb
 
 </small>
 
@@ -226,6 +234,7 @@ Kāds ir pēdējais uzrakstītais skaitlis?
 <small>
 
 * questionType:FindExample
+* domain:NT
 
 </small>
 
@@ -257,6 +266,7 @@ ko sauc par posmiem. Lauztu līniju, kuras galapunkti sakrīt, sauc par slēgtu 
 <small>
 
 * questionType:ProveDisprove
+* domain:Geom
 
 </small>
 
@@ -288,6 +298,7 @@ katru ciparu tieši vienu reizi! (Iekavas lietot nedrīkst un jāievēro darbīb
 <small>
 
 * questionType:FindExample
+* domain:Comb
 
 </small>
 
@@ -308,6 +319,7 @@ Kāda lielākā ciparu summa var būt desmitciparu skaitlim, kas dalās ar $18$?
 <small>
 
 * questionType:FindOptimal
+* domain:NT
 
 </small>
 
@@ -334,6 +346,7 @@ Kāds var būt nogriežņa $AC$ garums, ja zināms, ka tas ir naturāls skaitlis
 <small>
 
 * questionType:FindAll
+* domain:Geom
 
 </small>
 
@@ -372,6 +385,7 @@ salikt taisnstūri, kurā 16. att. figūras nesaskaras ne ar malu, ne ar stūri!
 <small>
 
 * questionType:FindExample
+* domain:Comb
 
 </small>
 
@@ -396,6 +410,7 @@ Pierādīt, ka pēc gardēžu apmeklējuma vismaz viena torte vēl palika nenopi
 <small>
 
 * questionType:Prove
+* domain:Alg
 
 </small>
 
@@ -429,6 +444,7 @@ Vai iespējams, sareizinot sešus dažādus pirmskaiț̣us, iegūt sešciparu sk
 <small>
 
 * questionType:ProveDisprove
+* domain:NT
 
 </small>
 
@@ -450,6 +466,7 @@ $D$ un $E$ tā, lai $AE=AD$ un $\sphericalangle BAD=30^{\circ}$. Aprēk̄ināt l
 <small>
 
 * questionType:FindExample
+* domain:Geom
 
 </small>
 
@@ -486,6 +503,7 @@ kolonnā vai diagonālē, bet arī, piemēram, punkti $A, B, C$ (skat. 20. att.)
 <small>
 
 * questionType:FindOptimal
+* domain:Comb
 
 </small>
 
@@ -511,6 +529,7 @@ Pierādīt, ka pēc gardēžu apmeklējuma vismaz viena torte vēl palika nenopi
 <small>
 
 * questionType:Prove
+* domain:Alg
 
 </small>
 
@@ -548,6 +567,7 @@ viens skaitlis un katrā rindā un katrā kolonnā skaitli pieaugtu bultiņas no
 <small>
 
 * questionType:ProveDisprove
+* domain:Alg
 
 </small>
 
@@ -576,6 +596,7 @@ un malu $K L$ un $M N$ vidusperpendikulu krustpunkts $X$ atrodas uz malas $K N$.
 <small>
 
 * questionType:Prove
+* domain:Geom
 
 </small>
 
@@ -605,6 +626,7 @@ Pierādīt, ka $\sqrt{17-12 \sqrt{2}}+\sqrt{3-2 \sqrt{2}}+\sqrt{3+2 \sqrt{2}}=3$
 <small>
 
 * questionType:Prove
+* domain:Alg
 
 </small>
 
@@ -660,6 +682,7 @@ Uz kvadrāta $ABCD$ diagonāles $BD$ atlikts punkts $E$. Pierādīt, ka $ED \cdo
 <small>
 
 * questionType:Prove
+* domain:Geom
 
 </small>
 
@@ -689,7 +712,7 @@ Līdz ar to esam ieguvuši, ka $ED \cdot EB+EA \cdot EC=\frac{d^{2}}{2}=AB^{2}$.
 # <lo-sample/> LV.NOL.2024.9.4
 
 Taisnstūrī ar izmēriem $4 \times 6$ rūtinas sākotnēji katrā rūtịnā atradās tieši viens kaḳis. 
-Vienā brīdī katrs kakis pārlēca uz kādu no blakus rūtiṇām (katrs kaḳis pārlēca tieši vienu reizi). 
+Vienā brīdī katrs kaķis pārlēca uz kādu no blakus rūtiṇām (katrs kaḳis pārlēca tieši vienu reizi). 
 Vai var gadīties, ka tagad visi kaḳi atrodas tieši: **(A)** $8$ rūtiņās; **(B)** $7$ rūtiṇās?
 
 *Piezīme.* Divas rūtiņas sauc par blakus rūtiņām, ja tām ir kopīga mala.
@@ -697,6 +720,7 @@ Vai var gadīties, ka tagad visi kaḳi atrodas tieši: **(A)** $8$ rūtiņās; 
 <small>
 
 * questionType:ProveDisprove
+* domain:Comb
 
 </small>
 
@@ -733,6 +757,7 @@ Pierādīt, ka $9$ reizes lielāka skaitļa ciparu summa ir $9$.
 <small>
 
 * questionType:Prove
+* domain:NT
 
 </small>
 
@@ -763,6 +788,7 @@ Pierādīt, ka $AC$ ir paralēla ar $BD$!
 <small>
 
 * questionType:Prove
+* domain:Geom
 
 </small>
 
@@ -786,6 +812,7 @@ Doti reāli skaiții $x$ un $y$, kuriem $x y^{3}+1=x+y^{3}$. Pierādīt, ka $y x
 <small>
 
 * questionType:Prove
+* domain:Alg
 
 </small>
 
@@ -822,6 +849,7 @@ iekšējus punktus $P$ un $Q$, ka nogriežnu $AP, AQ, BP$ un $BQ$ garumi ir izsa
 <small>
 
 * questionType:Prove
+* domain:Geom
 
 </small>
 
@@ -866,6 +894,7 @@ Atrast visus tādus veselu skaitlu pārus $(a ; b)$, kuriem izpildās vienādīb
 <small>
 
 * questionType:FindAll
+* domain:NT
 
 </small>
 
@@ -923,6 +952,7 @@ Vai var gadīties, ka tagad visas vardes atrodas tieši: **(A)** $24$ rūtiņās
 <small>
 
 * questionType:ProveDisprove
+* domain:Comb
 
 </small>
 
@@ -949,6 +979,13 @@ kas pieskaras riṇka līnijai punktos $D$ un $E$. Uz taisnēm $AD$ un $AE$ atli
 punkti $B$ un $C$ tā, ka punkts $D$ atrodas starp $A$ un $B$, punkts $C$ atrodas starp 
 $A$ un $E$ un $OB = OC$. Pierādīt, ka punkti $O$, $A$, $B$ un $C$ atrodas uz vienas rinkta līnijas!
 
+<small>
+
+* questionType:Prove
+* domain:Geom
+
+</small>
+
 
 ## Atrisinājums
 
@@ -974,6 +1011,7 @@ Pierādīt, ka $\frac{x^{2}+y^{2}}{x^{2}-y^{2}}+\frac{x^{2}-y^{2}}{x^{2}+y^{2}}<
 <small>
 
 * questionType:Prove
+* domain:Alg
 
 </small>
 
@@ -1016,6 +1054,7 @@ Aprēḳināt $EC$ garumu!
 <small>
 
 * questionType:FindExample
+* domain:Geom
 
 </small>
 
@@ -1074,6 +1113,7 @@ $a+\operatorname{LKD}(a, b)=b+\operatorname{LKD}(b, c)=c+\operatorname{LKD}(c, a
 <small>
 
 * questionType:Prove
+* domain:NT
 
 </small>
 
@@ -1111,6 +1151,7 @@ Vai iespējams, ka: **(A)** $n=2024$; **(B)** $n=2025$?
 <small>
 
 * questionType:ProveDisprove
+* domain:Comb
 
 </small>
 
@@ -1165,6 +1206,7 @@ Pierādīt, ka $DH$ ir leṇka $EDF$ bisektrise!
 <small>
 
 * questionType:Prove
+* domain:Geom
 
 </small>
 
@@ -1192,6 +1234,7 @@ Pierādīt, ka $\frac{x^{2}+y^{2}}{x^{2}-y^{2}}+\frac{x^{2}-y^{2}}{x^{2}+y^{2}}>
 <small>
 
 * questionType:Prove
+* domain:Alg
 
 </small>
 
@@ -1227,7 +1270,14 @@ $$\frac{x^{2}+y^{2}}{x^{2}-y^{2}}+\frac{x^{2}-y^{2}}{x^{2}+y^{2}}=\frac{7}{2}+\f
 
 # <lo-sample/> LV.NOL.2024.12.3
 
-Taisnleṇḳa trijstūrī $A B C\left(\sphericalangle A B C=90^{\circ}\right)$ uz malas $B C$ atlikti punkti $D$ un $E$ tā, ka $\sphericalangle E A C=\sphericalangle D A E=2 \sphericalangle B A D$, $B D=1, D E=3$. Aprēkināt $E C$ garumu!
+Taisnleṇḳa trijstūrī $A B C\left(\sphericalangle A B C=90^{\circ}\right)$ uz malas $B C$ atlikti punkti $D$ un $E$ tā, ka $\sphericalangle EAC=\sphericalangle DAE=2 \sphericalangle BAD$, $BD=1, DE=3$. Aprēķināt $EC$ garumu!
+
+<small>
+
+* questionType:FindAll
+* domain:Geom
+
+</small>
 
 
 ## Atrisinājums
@@ -1260,6 +1310,7 @@ ja sākumā kastē ir: **(A)** $20$; **(B)** $2024$ konfektes?
 <small>
 
 * questionType:Algorithm,Algorithm
+* domain:NT
 
 </small>
 
@@ -1288,11 +1339,12 @@ konfekšu skaitu, piemēram, $8 ; 32 ; 128 ; \ldots$ ).
 
 # <lo-sample/> LV.NOL.2024.12.5
 
-Atrast visus pirmskaitlu pārus $(p ; q)$, kuriem izpildās vienādība $p^{q}=q^{p}+7$.
+Atrast visus pirmskaitlu pārus $(p;q)$, kuriem izpildās vienādība $p^{q}=q^{p}+7$.
 
 <small>
 
 * questionType:FindAll
+* domain:NT
 
 </small>
 

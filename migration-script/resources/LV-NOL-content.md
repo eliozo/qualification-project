@@ -1909,7 +1909,7 @@ Atrisināt naturālos skaitļos vienādojumu $x^3 = y! + 2$.
 <small>
 
 * topic:CountingObjects
-* [mod.fix.parity](#) 
+* LTopic:LTEquationsNumTheory
 * topic:StandardIdentities
 * topic:ValuationProperties
 * topic:ValuationProperties

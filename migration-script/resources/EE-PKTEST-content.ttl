@@ -5,9 +5,7 @@ eliozo:EE.PKTEST.2010.7.6 a eliozo:Problem ;
     eliozo:Answer "80" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Hint " tad tā blakusleņķi ∠ACB.\"",
-        "\"Var izteikt vispirms ∠DCB" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -31,13 +29,14 @@ Atrast $\\sphericalangle BAC$, ja $\\sphericalangle CED = 25^{\\circ}$. </p>
 <p><em>Ierakstīt veselu skaitli - leņķa $BAC$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "AnglesParallelLines" .
 
 eliozo:EE.PKTEST.2010.8.6 a eliozo:Problem ;
     eliozo:Answer "360" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Topic "measuringSegmentsAngles" ;
+    eliozo:LTopic "LTPolygons" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -59,14 +58,14 @@ kas apzīmēti ar lociņiem.</p>
 <p><em>Ierakstīt veselu skaitli - leņķu summu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "TriangleAngles" .
 
 eliozo:EE.PKTEST.2011.7.7 a eliozo:Problem ;
     eliozo:Answer "45" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Hint "\"Var vispirms izteikt leņķus abās pusēs leņķim x.\"" ;
-    eliozo:Topic "isoscelesTriangles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -90,13 +89,14 @@ Aprēķināt leņķi $x$.</p>
 <p><em>Ierakstīt veselu skaitli - leņķa $x$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 7 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "AnglesParallelLines" .
 
 eliozo:EE.PKTEST.2011.9.7 a eliozo:Problem ;
     eliozo:Answer "150" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Topic "polygonSumOfAngles" ;
+    eliozo:LTopic "LTPolygons" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -116,14 +116,14 @@ eliozo:EE.PKTEST.2011.9.7 a eliozo:Problem ;
 <p><em>Ierakstīt veselu skaitli - leņķu summu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 7 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "PolygonAnglesSum" .
 
 eliozo:EE.PKTEST.2012.7.8 a eliozo:Problem ;
     eliozo:Answer "120" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Hint "\"Vienādmalu trijstūra iekšējie leņķi ir 60 grādi. Leņķi α var ar to izteikt.\"" ;
-    eliozo:Topic "parallelAndIntersectingLines" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -150,13 +150,14 @@ taisnstūra malu. </p>
 <p><em>Ierakstīt veselu skaitli - leņķa $\\alpha$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 8 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "AnglesParallelLines" .
 
 eliozo:EE.PKTEST.2012.8.6 a eliozo:Problem ;
     eliozo:Answer "20" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -185,7 +186,7 @@ eliozo:EE.PKTEST.2013.7.6 a eliozo:Problem ;
     eliozo:Answer "340" ;
     eliozo:Grade "10",
         "9" ;
-    eliozo:Topic "measuringSegmentsAngles" ;
+    eliozo:LTopic "LTCircleAndRelatedAngles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -208,15 +209,14 @@ Kāda ir leņķu $\\alpha$ un $\\gamma$ summa?</p>
 <p><em>Ierakstīt veselu skaitli - leņķu $\\alpha$  un $\\gamma$ summu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "LinearSystemsTransforms" .
 
 eliozo:EE.PKTEST.2013.8.6 a eliozo:Problem ;
     eliozo:Answer "20" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Hint " tad izmanto trijstūra BDE iekšējo leņķu summu.\"",
-        "\"Vispirms izsaka ∠BED" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -242,13 +242,14 @@ Atrast leņķa $BDE$ lielumu.</p>
 <p><em>Ierakstīt veselu skaitli - leņķa lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "AnglesParallelLines" .
 
 eliozo:EE.PKTEST.2014.7.8 a eliozo:Problem ;
     eliozo:Answer "65" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Topic "isoscelesTriangles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -271,15 +272,14 @@ $AB = CD$. Atrast leņķa $\\sphericalangle ABC$ lielumu. </p>
 <p><em>Ierakstīt veselu skaitli - leņķa $ABC$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 8 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "TrianglesIsosceles" .
 
 eliozo:EE.PKTEST.2014.8.7 a eliozo:Problem ;
     eliozo:Answer "30" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Hint " var pamanīt vienādsānu trijstūrus. Un tad izmantot tajos malu vienādības.\"",
-        "\"Izsakot leņķus" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -303,13 +303,14 @@ malas $AC$ garumu.</p>
 <p><em>Ierakstīt veselu skaitli - malas $AC$ garumu centimetros.</em></p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 7 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "TriangleAngles" .
 
 eliozo:EE.PKTEST.2015.7.6 a eliozo:Problem ;
     eliozo:Answer "30" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Topic "isoscelesTriangles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -334,14 +335,14 @@ $BC$ būtu vienādi. Aprēķināt ar $x$ apzīmēto leņķi. </p>
 <p><em>Ierakstīt veselu skaitli - leņķa $x$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "TrianglesIsosceles" .
 
 eliozo:EE.PKTEST.2015.8.8 a eliozo:Problem ;
     eliozo:Answer "130" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Hint "\"Izsaka četrstūra iekšējos leņķus - daži no tiem ir blakusleņķi dotajiem. Tad atrod x blakusleņķi.\"" ;
-    eliozo:Topic "polygonSumOfAngles" ;
+    eliozo:LTopic "LTPolygons" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -365,13 +366,14 @@ Aprēķināt leņķi, kas apzīmēts ar $x$. </p>
 <p><em>Ierakstīt veselu skaitli - leņķa $x$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 8 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "AnglesParallelLines" .
 
 eliozo:EE.PKTEST.2015.9.6 a eliozo:Problem ;
     eliozo:Answer "50" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -398,15 +400,14 @@ bet $\\sphericalangle ABC$ ir $80^{\\circ}$. Aprēķināt $y$. </p>
 <p><em>Ierakstīt veselu skaitli - leņķa $y$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "AnglesParallelLines" .
 
 eliozo:EE.PKTEST.2016.7.8 a eliozo:Problem ;
     eliozo:Answer "48" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Hint " izmantojot tā krustleņķi.\"",
-        "\"Vispirms izsaka x" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -427,13 +428,14 @@ eliozo:EE.PKTEST.2016.7.8 a eliozo:Problem ;
 <p><em>Ierakstīt veselu skaitli - leņķa $EAB$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 8 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "AnglesParallelLines" .
 
 eliozo:EE.PKTEST.2016.8.9 a eliozo:Problem ;
     eliozo:Answer "57" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -455,15 +457,14 @@ Trijstūris $ACE$ ir vienādsānu. Atrast leņķi $\\sphericalangle EAB$.</p>
 <p><em>Ierakstīt veselu skaitli - leņķa $EAB$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 9 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "AnglesParallelLines" .
 
 eliozo:EE.PKTEST.2016.9.9 a eliozo:Problem ;
     eliozo:Answer "20" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Hint " šķērsleņķu un krustleņķu īpašības.\"",
-        "\"Ar meklējamo leņķi (α) izsaka citus - izmanto trijstūra iekšējo leņķu summu" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -487,13 +488,14 @@ Aprēķināt leņķi $DCE$. </p>
 <p><em>Ierakstīt veselu skaitli - leņķa $DCE$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 9 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "AnglesParallelLines" .
 
 eliozo:EE.PKTEST.2017.7.6 a eliozo:Problem ;
     eliozo:Answer "30" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Topic "specialTriangles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -512,14 +514,14 @@ bet trijstūris $ACD$ ir vienādsānu. Aprēķināt leņķi $ACB$. </p>
 <p><em>Ierakstīt veselu skaitli - leņķa $ACB$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "AnglesParallelLines" .
 
 eliozo:EE.PKTEST.2017.8.6 a eliozo:Problem ;
     eliozo:Answer "40" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Hint "\"CAD un BCD arī ir taisnleņķa trijstūri; citus leņķus izsaka ar nezināmo ∠ACD un risina radušos vienādojumu.\"" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -546,13 +548,14 @@ Aprēķināt leņķi $ACD$. </p>
 <p><em>Ierakstīt veselu skaitli - leņķa $ACD$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "TriangleAngles" .
 
 eliozo:EE.PKTEST.2017.9.6 a eliozo:Problem ;
     eliozo:Answer "80" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -575,15 +578,14 @@ Aprēķināt leņķi $ACB$. </p>
 <p><em>Ierakstīt veselu skaitli - leņķa $\\sphericalangle ACB$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "AnglesParallelLines" .
 
 eliozo:EE.PKTEST.2018.7.6 a eliozo:Problem ;
     eliozo:Answer "80" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Hint " kurā viens no leņķiem ir z.\"",
-        "\"Var izteikt pārējos leņķus trijstūrītī" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -606,13 +608,14 @@ leņķis $x$ ir $23^{\\circ}$ un leņķis $y$ ir $32^{\\circ}$.</p>
 <p><em>Ierakstīt veselu skaitli - leņķa $z$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "PolygonAnglesSum" .
 
 eliozo:EE.PKTEST.2018.8.7 a eliozo:Problem ;
     eliozo:Answer "44" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -633,13 +636,14 @@ eliozo:EE.PKTEST.2018.8.7 a eliozo:Problem ;
 <p><em>Ierakstīt veselu skaitli - leņķa $x$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 7 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "PolygonAnglesSum" .
 
 eliozo:EE.PKTEST.2018.9.6 a eliozo:Problem ;
     eliozo:Answer "120" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Topic "placementTriangleSpecialLines" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -663,13 +667,14 @@ $M$ ir tā malas viduspunkts.</p>
 <p><em>Ierakstīt veselu skaitli - leņķa $x$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "TrianglesEquilateral" .
 
 eliozo:EE.PKTEST.2019.7.6 a eliozo:Problem ;
     eliozo:Answer "33" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -693,13 +698,14 @@ Aprēķināt $\\sphericalangle ABC$. </p>
 <p><em>Ierakstīt veselu skaitli - leņķa $ABC$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "AnglesParallelLines" .
 
 eliozo:EE.PKTEST.2019.8.6 a eliozo:Problem ;
     eliozo:Answer "128" ;
     eliozo:Grade "7",
         "8" ;
-    eliozo:Topic "triangleSumOfAngles" ;
+    eliozo:LTopic "LTTriangles" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -725,13 +731,14 @@ lielumu, ja $\\sphericalangle ADK = 97^{\\circ}$ un $\\sphericalangle DKC = 123^
 <p><em>Ierakstīt veselu skaitli - leņķa $ACB$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:topic "AnglesParallelLines" .
 
 eliozo:EE.PKTEST.2019.9.6 a eliozo:Problem ;
     eliozo:Answer "39" ;
     eliozo:Grade "10",
         "9" ;
-    eliozo:Topic "polygonSumOfAngles" ;
+    eliozo:LTopic "LTPolygons" ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.PKTEST" ;
     eliozo:olympiadCode "PKTEST" ;
@@ -757,7 +764,8 @@ Atrast leņķi $\\sphericalangle BKL$.</p>
 <p><img alt="" src="EE.PKTEST.2019.9.6.png" />{ width=200px }</p>
 <p><em>Ierakstīt veselu skaitli - leņķa $BKL$ lielumu grādos.</em></p>"""@lv ;
     eliozo:problemYear 2019 ;
-    eliozo:problem_number 6 .
+    eliozo:problem_number 6 ;
+    eliozo:questionType "ShortAnswer" .
 
 eliozo:IMG.EE.PKTEST.2010.7.6.png a eliozo:Image ;
     eliozo:imageSrc "EE.PKTEST.2010.7.6.png" ;

@@ -1215,7 +1215,7 @@ Pierādīt, ka skaitļa $N^2$ decimālajā pierakstā nav cipara $0$.
 
 <small>
 
-* [misc.try](#) 
+* strategy:TrialAndError 
 * topic:SeriesMembersSumsClosedFormulas
 * topic:PeriodicDigitGroups
 * questionType:Prove
@@ -1539,7 +1539,7 @@ $\frac{n^3+3}{n+3}$, gan $\frac{n^4+4}{n+4}$ ir veseli skaitļi.
 
 
 <!--
-concepts=integer-polynomials
+concepts=integer-polynomial
 questionType=FindAll
 -->
 
@@ -2427,7 +2427,7 @@ var izteikt kā pirmskaitļa un salikta skaitļa summu!
 
 <small>
 
-* [misc.try](#) 
+* strategy:TrialAndError
 * topic:ModularParity
 * questionType:Prove
 

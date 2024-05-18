@@ -1,0 +1,716 @@
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+eliozo:EE.LO.2010.10.2 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2010.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2010.10.2" ;
+    eliozo:problemSolution eliozo:SOLN.EE.LO.2010.10.2 ;
+    eliozo:problemText """Vienādojumam
+$$\\frac{2}{a^2}+\\frac{3}{b^2}+\\frac{4}{c^2}=1$$
+atrast visus atrisinājumus naturālos skaitļos.
+
+<text lang="ru">
+Для уравнения
+$$\\frac{2}{a^2}+\\frac{3}{b^2}+\\frac{4}{c^2}=1$$
+найти все решения в натуральных числах.
+</text>
+
+<!--
+questionType=FindAll
+genre=integer-equation
+-->"""@lv ;
+    eliozo:problemTextHtml """<p>Vienādojumam
+$$\\frac{2}{a^2}+\\frac{3}{b^2}+\\frac{4}{c^2}=1$$
+atrast visus atrisinājumus naturālos skaitļos.</p>
+<p><text lang="ru">
+Для уравнения
+$$\\frac{2}{a^2}+\\frac{3}{b^2}+\\frac{4}{c^2}=1$$
+найти все решения в натуральных числах.
+</text></p>
+<!--
+questionType=FindAll
+genre=integer-equation
+-->"""@lv ;
+    eliozo:problemYear 2010 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:strategy "ExtremeElement" ;
+    eliozo:topic "ExhaustionMethod" .
+
+eliozo:EE.LO.2011.10.2 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2011.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2011.10.2" ;
+    eliozo:problemText """Atrast visus naturālu skaitļu četriniekus $(w,x,y,z)$, 
+kuriem izpildās vienādība $w^x + w^y = w^z$.
+
+<text lang="ru">
+Найти все четвёрки положительных целых чисел $(w, x, y, z)$, 
+при которых выполняется равенство $w^x + w^y = w^z$.
+</text>"""@lv ;
+    eliozo:problemTextHtml """<p>Atrast visus naturālu skaitļu četriniekus $(w,x,y,z)$, 
+kuriem izpildās vienādība $w^x + w^y = w^z$.</p>
+<p><text lang="ru">
+Найти все четвёрки положительных целых чисел $(w, x, y, z)$, 
+при которых выполняется равенство $w^x + w^y = w^z$.
+</text></p>"""@lv ;
+    eliozo:problemYear 2011 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "FindAll" .
+
+eliozo:EE.LO.2012.10.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2012.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2012.10.1" ;
+    eliozo:problemText """Atrast visus tādus naturālu skaitļu pārus $(n,m)$, kuriem 
+skaitļu $n$ un $m$ aritmētiskais un ģeometriskais vidējais 
+ir dažādi divciparu naturāli skaitļi, kuri iegūstami viens no 
+otra, apmainot vietām ciparus.  
+*Piezīme.* Par pozitīvu skaitļu $x$, $y$ ģeometrisko vidējo 
+sauc skaitli $\\sqrt{x y}$."""@lv ;
+    eliozo:problemTextHtml """<p>Atrast visus tādus naturālu skaitļu pārus $(n,m)$, kuriem 
+skaitļu $n$ un $m$ aritmētiskais un ģeometriskais vidējais 
+ir dažādi divciparu naturāli skaitļi, kuri iegūstami viens no 
+otra, apmainot vietām ciparus.<br />
+<em>Piezīme.</em> Par pozitīvu skaitļu $x$, $y$ ģeometrisko vidējo 
+sauc skaitli $\\sqrt{x y}$.</p>"""@lv ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" .
+
+eliozo:EE.LO.2012.10.5 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2012.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2012.10.5" ;
+    eliozo:problemText """Atrast visus naturālu skaitļu trijniekus $(x,y,z)$, kuriem 
+$x \\cdot y! + 2y \\cdot x! = z!$.  
+*Piezīme. Par naturāla skaitļa $n$ faktoriālu $n!$ sauc 
+reizinājumu $1 \\cdot 2 \\cdot \\ldots \\cdot n$.*"""@lv ;
+    eliozo:problemTextHtml """<p>Atrast visus naturālu skaitļu trijniekus $(x,y,z)$, kuriem 
+$x \\cdot y! + 2y \\cdot x! = z!$.<br />
+<em>Piezīme. Par naturāla skaitļa $n$ faktoriālu $n!$ sauc 
+reizinājumu $1 \\cdot 2 \\cdot \\ldots \\cdot n$.</em></p>"""@lv ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "FindAll" .
+
+eliozo:EE.LO.2013.10.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2013.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2013.10.1" ;
+    eliozo:problemSolution eliozo:SOLN.EE.LO.2013.10.1 ;
+    eliozo:problemText "Vai skaitli $2013$ var izteikt kā divu veselu skaitļu kubu starpību?"@lv ;
+    eliozo:problemTextHtml "<p>Vai skaitli $2013$ var izteikt kā divu veselu skaitļu kubu starpību?</p>"@lv ;
+    eliozo:problemYear 2013 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindExample" ;
+    eliozo:strategy "ModularArithmeticContradiction" ;
+    eliozo:topic "ModularArithmeticContradiction" .
+
+eliozo:EE.LO.2014.10.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2014.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2014.10.1" ;
+    eliozo:problemText """Ar $a$ un $n$ apzīmēti naturāli skaitļi. Pierādīt, ka 
+$$\\left\\lfloor \\frac{a}{n} \\right\\rfloor + \\left\\lfloor \\frac{a+1}{n} \\right\\rfloor + \\ldots + \\left\\lfloor \\frac{a+n-1}{n} \\right\\rfloor = a.$$
+*Piezīme.* Katram reālam skaitlim $x$, 
+$\\lfloor x \\rfloor$ apzīmē skaitļa $x$ (apakšējo) veselo daļu, 
+t.i. vislielāko veselo skaitli, kas nepārsniedz $x$."""@lv ;
+    eliozo:problemTextHtml """<p>Ar $a$ un $n$ apzīmēti naturāli skaitļi. Pierādīt, ka 
+$$\\left\\lfloor \\frac{a}{n} \\right\\rfloor + \\left\\lfloor \\frac{a+1}{n} \\right\\rfloor + \\ldots + \\left\\lfloor \\frac{a+n-1}{n} \\right\\rfloor = a.$$
+<em>Piezīme.</em> Katram reālam skaitlim $x$, 
+$\\lfloor x \\rfloor$ apzīmē skaitļa $x$ (apakšējo) veselo daļu, 
+t.i. vislielāko veselo skaitli, kas nepārsniedz $x$.</p>"""@lv ;
+    eliozo:problemYear 2014 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" .
+
+eliozo:EE.LO.2014.10.5 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2014.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2014.10.5" ;
+    eliozo:problemText """Ar $m$ apzīmēts naturāls skaitlis. Pierādīt, ka, ja Mari uzrakstījusi 
+uz tāfeles vismaz $m+3$ skaitļus, tad Jüri vienmēr varēs izvēlēties no 
+tiem $4$ tādus, ka kaut kādu divu izvēlēto skaitļu summa un atlikušo 
+divu izvēlēto skaitļu summa dos vienādus atlikumus, dalot ar $m$."""@lv ;
+    eliozo:problemTextHtml """<p>Ar $m$ apzīmēts naturāls skaitlis. Pierādīt, ka, ja Mari uzrakstījusi 
+uz tāfeles vismaz $m+3$ skaitļus, tad Jüri vienmēr varēs izvēlēties no 
+tiem $4$ tādus, ka kaut kādu divu izvēlēto skaitļu summa un atlikušo 
+divu izvēlēto skaitļu summa dos vienādus atlikumus, dalot ar $m$.</p>"""@lv ;
+    eliozo:problemYear 2014 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "Prove" .
+
+eliozo:EE.LO.2015.10.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2015.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2015.10.1" ;
+    eliozo:problemText """Atrast visus naturālos skaitļus $n$, kas lielāki par vienu, 
+kuriem 
+$\\frac{1}{n}$ un $\\frac{1}{n + 1}$
+izsakāmi kā galīgas decimāldaļas."""@lv ;
+    eliozo:problemTextHtml """<p>Atrast visus naturālos skaitļus $n$, kas lielāki par vienu, 
+kuriem 
+$\\frac{1}{n}$ un $\\frac{1}{n + 1}$
+izsakāmi kā galīgas decimāldaļas.</p>"""@lv ;
+    eliozo:problemYear 2015 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" .
+
+eliozo:EE.LO.2015.10.4 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2015.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2015.10.4" ;
+    eliozo:problemText """Uz tāfeles virknē viens pēc otra uzrakstīti naturālie skaitļi 
+no $1$ līdz $n$, bet zem viņiem tie paši skaitļi, bet pretējā
+secībā. Apzīmēsim viena zem otra uzrakstīto skaitļu reizinājumu 
+summu ar $S(n)$. Piemēram, 
+$S(6) = 1\\cdot{}6 + 2\\cdot{}5 + 3\\cdot{}4 + 4\\cdot{}3 + 5\\cdot{}2 + 6\\cdot{}1 = 56$.)
+Pierādīt, ka jebkuram naturālam skaitlim $n$ izpildās vienādības
+$$S(n + 1) − S(n) = 1 + 2 + \\ldots + n + (n + 1),$$
+$$S(n + 1) + S(n) = 1^2 + 2^2 + \\ldots + n^2 + (n + 1)^2.$$
+
+<text lang="ru">
+На доске в ряд друг за другом записываются натуральные числа от $1$ до $n$,
+а под ними те же самые числа, но в обратном порядке. Обозначим сумму
+произведений записанных друг над другом чисел через $S(n)$. (Например,
+$S(6) = 1\\cdot{}6 + 2\\cdot{}5 + 3\\cdot{}4 + 4\\cdot{}3 + 5\\cdot{}2 + 6\\cdot{}1 = 56$.)
+Доказать, что для каждого натурального числа $n$ выполняются равенства
+$$S(n + 1) − S(n) = 1 + 2 + \\ldots + n + (n + 1),$$
+$$S(n + 1) + S(n) = 1^2 + 2^2 + \\ldots + n^2 + (n + 1)^2.$$
+</text>
+
+<!--
+questionType=Prove
+genre=sequence-properties
+-->"""@lv ;
+    eliozo:problemTextHtml """<p>Uz tāfeles virknē viens pēc otra uzrakstīti naturālie skaitļi 
+no $1$ līdz $n$, bet zem viņiem tie paši skaitļi, bet pretējā
+secībā. Apzīmēsim viena zem otra uzrakstīto skaitļu reizinājumu 
+summu ar $S(n)$. Piemēram, 
+$S(6) = 1\\cdot{}6 + 2\\cdot{}5 + 3\\cdot{}4 + 4\\cdot{}3 + 5\\cdot{}2 + 6\\cdot{}1 = 56$.)
+Pierādīt, ka jebkuram naturālam skaitlim $n$ izpildās vienādības
+$$S(n + 1) − S(n) = 1 + 2 + \\ldots + n + (n + 1),$$
+$$S(n + 1) + S(n) = 1^2 + 2^2 + \\ldots + n^2 + (n + 1)^2.$$</p>
+<p><text lang="ru">
+На доске в ряд друг за другом записываются натуральные числа от $1$ до $n$,
+а под ними те же самые числа, но в обратном порядке. Обозначим сумму
+произведений записанных друг над другом чисел через $S(n)$. (Например,
+$S(6) = 1\\cdot{}6 + 2\\cdot{}5 + 3\\cdot{}4 + 4\\cdot{}3 + 5\\cdot{}2 + 6\\cdot{}1 = 56$.)
+Доказать, что для каждого натурального числа $n$ выполняются равенства
+$$S(n + 1) − S(n) = 1 + 2 + \\ldots + n + (n + 1),$$
+$$S(n + 1) + S(n) = 1^2 + 2^2 + \\ldots + n^2 + (n + 1)^2.$$
+</text></p>
+<!--
+questionType=Prove
+genre=sequence-properties
+-->"""@lv ;
+    eliozo:problemYear 2015 ;
+    eliozo:problem_number 4 .
+
+eliozo:EE.LO.2016.10.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2016.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2016.10.1" ;
+    eliozo:problemText """Atrast visus tos četrciparu skaitļus, kuri ir tieši par $2016$ lielāki 
+par skaitli, ko iegūst, pārliekot pirmo ciparu uz beigām.
+
+<text lang="ru">
+Найти все такие четырёхзначные числа, которые ровно на $2016$ больше
+числа, полученного путём переставления первой цифры в конец.
+</text>
+
+<!--
+questionType=FindAll
+genre=digit-manipulation
+-->"""@lv ;
+    eliozo:problemTextHtml """<p>Atrast visus tos četrciparu skaitļus, kuri ir tieši par $2016$ lielāki 
+par skaitli, ko iegūst, pārliekot pirmo ciparu uz beigām.</p>
+<p><text lang="ru">
+Найти все такие четырёхзначные числа, которые ровно на $2016$ больше
+числа, полученного путём переставления первой цифры в конец.
+</text></p>
+<!--
+questionType=FindAll
+genre=digit-manipulation
+-->"""@lv ;
+    eliozo:problemYear 2016 ;
+    eliozo:problem_number 1 .
+
+eliozo:EE.LO.2016.10.2 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2016.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2016.10.2" ;
+    eliozo:problemText """Atrast visus veselu skaitļu pārus $(a,b)$, kuriem izpildās vienādība
+$$3(a^2 + b^2) - 7(a + b) = -4.$$
+
+<text lang="ru">
+Найти все пары целых чисел $(a, b)$, для которых выполняется равенство
+$$3(a^2 + b^2) − 7(a + b) = −4.$$
+</text>
+
+<!--
+questionType=FindAll
+genre=integer-equation
+-->"""@lv ;
+    eliozo:problemTextHtml """<p>Atrast visus veselu skaitļu pārus $(a,b)$, kuriem izpildās vienādība
+$$3(a^2 + b^2) - 7(a + b) = -4.$$</p>
+<p><text lang="ru">
+Найти все пары целых чисел $(a, b)$, для которых выполняется равенство
+$$3(a^2 + b^2) − 7(a + b) = −4.$$
+</text></p>
+<!--
+questionType=FindAll
+genre=integer-equation
+-->"""@lv ;
+    eliozo:problemYear 2016 ;
+    eliozo:problem_number 2 .
+
+eliozo:EE.LO.2017.10.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2017.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2017.10.1" ;
+    eliozo:problemText """Juku izvirzījis matemātisku hipotēzi, kas apgalvo, ka jebkuram 
+veselam skaitlim $n > 4$ vismaz viens no diviem lielākajiem skaitļiem, 
+kuri mazāki par $\\frac{n}{2}$, ir savstarpējs pirmskaitlis ar $n$. 
+Vai Juku hipotēze ir patiesa?  
+*Piezīme. Vesels skaitlis $a$ ir savstarpējs pirmskaitlis ar veselu 
+skaitli $b$, ja lielākais kopīgais dalītājs $\\mbox{LKD}(a,b)=1$.*
+
+<text lang="ru">
+Петя выдвинул математическую гипотезу, согласно которой для каждого 
+целого числа $n > 4$ по крайней мере одно из двух наибольших целых
+чисел, меньших чем $\\frac{n}{2}$, взаимно просто с числом $n$. Верна ли гипотеза
+Пети?  
+Примечание. Целое число $a$ взаимно просто с целым числом $b$, если
+$\\mbox{НОД}(a, b) = 1$.
+</text>
+
+
+<!--
+questionType=ProveDisprove
+concepts=coprimes
+-->"""@lv ;
+    eliozo:problemTextHtml """<p>Juku izvirzījis matemātisku hipotēzi, kas apgalvo, ka jebkuram 
+veselam skaitlim $n &gt; 4$ vismaz viens no diviem lielākajiem skaitļiem, 
+kuri mazāki par $\\frac{n}{2}$, ir savstarpējs pirmskaitlis ar $n$. 
+Vai Juku hipotēze ir patiesa?<br />
+<em>Piezīme. Vesels skaitlis $a$ ir savstarpējs pirmskaitlis ar veselu 
+skaitli $b$, ja lielākais kopīgais dalītājs $\\mbox{LKD}(a,b)=1$.</em></p>
+<p><text lang="ru">
+Петя выдвинул математическую гипотезу, согласно которой для каждого 
+целого числа $n &gt; 4$ по крайней мере одно из двух наибольших целых
+чисел, меньших чем $\\frac{n}{2}$, взаимно просто с числом $n$. Верна ли гипотеза
+Пети?<br />
+Примечание. Целое число $a$ взаимно просто с целым числом $b$, если
+$\\mbox{НОД}(a, b) = 1$.
+</text></p>
+<!--
+questionType=ProveDisprove
+concepts=coprimes
+-->"""@lv ;
+    eliozo:problemYear 2017 ;
+    eliozo:problem_number 1 .
+
+eliozo:EE.LO.2017.10.5 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2017.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2017.10.5" ;
+    eliozo:problemText """a) Uz tāfeles uzrakstīts trīsciparu skaitļa vispārīgais izskats 
+$\\overline{ABC}$. 
+Anija un Enija pēc kārtas katrā savā gājienā nomaina vienu burtu 
+ar ciparu, sāk Anija. Vai Anija varēs tā ierakstīt ciparus, ka neatkarīgi 
+no Enijas gājiena iegūtais trīsciparu skaitlis dalīsies ar $11$? 
+(Dažādus burtus var aizstāt arī ar to pašu ciparu, bet burtu "A" 
+nevar aizstāt ar $0$.)  
+b) Anija un Enija vairs negribēja katras spēles sākumā rakstīt 
+skaitļa vispārīgo izskatu un nolēma izmainīt noteikumus: 
+vispirms Anija uzraksta vienu ciparu, pēc tam Enija raksta tam pa 
+labi vai pa kreisi otru ciparu, visbeidzot Anija pieraksta pa 
+labi vai pa kreisi jau uzrakstītajiem cipariem trešo 
+(ierakstīt starp esošajiem cipariem nav atļauts). 
+Vai Anija varēs tā ierakstīt ciparus, ka neatkarīgi no Enijas gājiena
+rezultātā būs trīsciparu skaitlis (t.i. pirmais cipars nav $0$), kas
+dalās ar $11$? 
+
+<text lang="ru">
+а) На доске записан общий вид трёхзначного числа $\\overline{ABC}$. 
+Аня и Женя по очереди заменяют каждым ходом одну букву цифрой, 
+начинает Аня. Сможет ли Аня так записывать цифры, что независимо 
+от хода Жени полученное в итоге трёхзначное число делилось бы на $11$? 
+(Разные буквы можно заменять одной и той же цифрой, но букву A нельзя
+заменять на $0$.)  
+б) Аня и Женя утомились в начале каждой игры записывать общий вид
+числа и решили изменить правила: сперва Аня записывает одну цифру, 
+затем Женя справа или слева от неё вторую, а в конце Аня 
+записывает вправо или влево от записанных на доске двух цифр третью 
+(между цифрами записывать не разрешается). Сможет ли Аня так
+записывать цифры, что независимо от хода Жени в итоге получится
+трёхзначное число (т.е. первая цифра не $0$), делящееся на $11$?
+</text>
+
+<!--
+questionType=Algorithm,ProveDisprove
+genre=game
+-->"""@lv ;
+    eliozo:problemTextHtml """<p>a) Uz tāfeles uzrakstīts trīsciparu skaitļa vispārīgais izskats 
+$\\overline{ABC}$. 
+Anija un Enija pēc kārtas katrā savā gājienā nomaina vienu burtu 
+ar ciparu, sāk Anija. Vai Anija varēs tā ierakstīt ciparus, ka neatkarīgi 
+no Enijas gājiena iegūtais trīsciparu skaitlis dalīsies ar $11$? 
+(Dažādus burtus var aizstāt arī ar to pašu ciparu, bet burtu "A" 
+nevar aizstāt ar $0$.)<br />
+b) Anija un Enija vairs negribēja katras spēles sākumā rakstīt 
+skaitļa vispārīgo izskatu un nolēma izmainīt noteikumus: 
+vispirms Anija uzraksta vienu ciparu, pēc tam Enija raksta tam pa 
+labi vai pa kreisi otru ciparu, visbeidzot Anija pieraksta pa 
+labi vai pa kreisi jau uzrakstītajiem cipariem trešo 
+(ierakstīt starp esošajiem cipariem nav atļauts). 
+Vai Anija varēs tā ierakstīt ciparus, ka neatkarīgi no Enijas gājiena
+rezultātā būs trīsciparu skaitlis (t.i. pirmais cipars nav $0$), kas
+dalās ar $11$? </p>
+<p><text lang="ru">
+а) На доске записан общий вид трёхзначного числа $\\overline{ABC}$. 
+Аня и Женя по очереди заменяют каждым ходом одну букву цифрой, 
+начинает Аня. Сможет ли Аня так записывать цифры, что независимо 
+от хода Жени полученное в итоге трёхзначное число делилось бы на $11$? 
+(Разные буквы можно заменять одной и той же цифрой, но букву A нельзя
+заменять на $0$.)<br />
+б) Аня и Женя утомились в начале каждой игры записывать общий вид
+числа и решили изменить правила: сперва Аня записывает одну цифру, 
+затем Женя справа или слева от неё вторую, а в конце Аня 
+записывает вправо или влево от записанных на доске двух цифр третью 
+(между цифрами записывать не разрешается). Сможет ли Аня так
+записывать цифры, что независимо от хода Жени в итоге получится
+трёхзначное число (т.е. первая цифра не $0$), делящееся на $11$?
+</text></p>
+<!--
+questionType=Algorithm,ProveDisprove
+genre=game
+-->"""@lv ;
+    eliozo:problemYear 2017 ;
+    eliozo:problem_number 5 .
+
+eliozo:EE.LO.2018.10.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2018.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2018.10.1" ;
+    eliozo:problemText """Atrast visus veselu skaitļu pārus $(a, b)$, kuriem
+$$(2a^2 + b)^3 = b^3a.$$
+
+<text lang="ru">
+Найти все пары целых чисел (a, b), при которых
+$$(2a^2 + b)^3 = b^3a.$$
+</text>
+
+<!--
+questionType=FindAll
+genre=integer-equation
+-->"""@lv ;
+    eliozo:problemTextHtml """<p>Atrast visus veselu skaitļu pārus $(a, b)$, kuriem
+$$(2a^2 + b)^3 = b^3a.$$</p>
+<p><text lang="ru">
+Найти все пары целых чисел (a, b), при которых
+$$(2a^2 + b)^3 = b^3a.$$
+</text></p>
+<!--
+questionType=FindAll
+genre=integer-equation
+-->"""@lv ;
+    eliozo:problemYear 2018 ;
+    eliozo:problem_number 1 .
+
+eliozo:EE.LO.2019.10.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.LO" ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:problemBook "EE" ;
+    eliozo:problemBookSection "LO.2019.10" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "EE.LO.2019.10.1" ;
+    eliozo:problemSolution eliozo:SOLN.EE.LO.2019.10.1 ;
+    eliozo:problemText "Atrast visus veselu skaitļu pārus $(x, y)$, kuriem $x − y = \\frac{x}{y}$."@lv ;
+    eliozo:problemTextHtml "<p>Atrast visus veselu skaitļu pārus $(x, y)$, kuriem $x − y = \\frac{x}{y}$.</p>"@lv ;
+    eliozo:problemYear 2019 ;
+    eliozo:problem_number 1 ;
+    eliozo:topic "MutualPrimes" .
+
+eliozo:SOLN.EE.LO.2010.10.2 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Aplūkosim mazāko no $a,b,c$. Ir vairāki gadījumi
+
+(1) Nevar būt, ka minimums ir $1$, jo tad summa pārsniegtu $1$.   
+(2) Ja minimālais ir $3$, tad vienādība iestājas tikai tad, ja $a=b=c=3$
+(ja kaut viens ir lielāks par $3$, tad summa mazāka par $1$).   
+(3) Ja $\\mbox{min}(a,b,c)=2$, tad ir divas iespējas:  
+(3.1) $a=2$ vai arī  
+(3.2) $b = 2$. (Nevar būt $c=2$, jo tad pat viens saskaitāmais $\\frac{4}{c^2}=1$.)
+
+**Gadījums (3.1): a=2**
+
+Ievietojam $a=2$, noīsinām un paliek vienādojums:
+$$\\frac{3}{b^2} + \\frac{4}{c^2} = \\frac{1}{2}.$$ 
+
+Šķirojam divus apakšgadījumus atkarībā no tā, kurš saskaitāmais lielāks:
+
+(3.1.1) $\\frac{3}{b^2}\\geq\\frac{1}{4}$ jeb $b^2 < 12$. Ievietojot $b=2$, $\\frac{3}{b^2}$ ir par lielu; 
+tātad $b=3$.   
+(3.1.2) $\\frac{4}{c^2} > \\frac{1}{4}$ jeb $c^2 < 16$. Ievietojot 
+$c=2$, $\\frac{4}{c^2}$ ir par lielu, tātad $c=3$. 
+
+**Gadījumi (3.1.1) un (3.1.2):** 
+
+(3.1.1) Ievietojot $(a,b)=(2,3)$, iegūstam:
+$$\\frac{4}{c^2} = 1 - \\frac{2}{4} - \\frac{3}{9} = \\frac{1}{6}$$
+jeb $c^2 = 24$, kas nevar būt. 
+
+(3.1.2) Ievietojot $(a,c)=(2,3)$, iegūstam:
+$$\\frac{3}{b^2} = 1 - \\frac{2}{4} - \\frac{4}{9} = \\frac{1}{18}.$$
+jeb $b^2 = 54$, kas nevar būt. 
+
+
+**Gadījums (3.2) b=2:** 
+
+Ievietojam $b=2$, noīsinām un paliek vienādojums: 
+$$\\frac{2}{a^2} + \\frac{4}{c^2} = \\frac{1}{4}.$$
+
+Vismaz viens no saskaitāmajiem ir vismaz puse no summas jeb $1/8$. 
+Šķirojam divus apakšgadījumus: 
+
+(3.2.1) $\\frac{2}{a^2}\\geq\\frac{1}{8}$ jeb $a^2 \\leq 16$.
+ 
+* Ja $a=2$, tas neder - gadījumus (3.1.x) jau aplūkojām. 
+* Ja $a=3$, tad $\\frac{4}{c^2} = 1 - \\frac{2}{9} - \\frac{3}{4} = \\frac{1}{36}$. 
+Iegūstam, ka $c^2 = 144$, jeb $c=12$. 
+* Ja $a=4$, tad $\\frac{4}{c^2} = \\frac{1}{8}$ jeb $c^2 = 32$, kas nevar būt. 
+
+
+(3.2.2) $\\frac{1}{4} > \\frac{4}{c^2}\\geq\\frac{1}{8}$ jeb $c^2 \\leq 32$.
+
+* Ja $c=2,3,4$, tas neder, jo $\\frac{4}{c^2}\\geq\\frac{1}{4}$. 
+* Ja $c=5$, tad ievietojam $b=2$, $c=5$:
+$\\frac{2}{a^2} = 1 - \\frac{3}{4} - \\frac{4}{25} = \\frac{9}{100}$
+jeb $a^2 = \\frac{200}{9}$, kas nevar būt.
+
+**Atbilde:** Esam ieguvuši divus atrisinājumus:
+
+* $(a,b,c)=(3,3,3)$.   
+* $(a,b,c)=(3,2,12)$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Aplūkosim mazāko no $a,b,c$. Ir vairāki gadījumi</p>
+<p>(1) Nevar būt, ka minimums ir $1$, jo tad summa pārsniegtu $1$. <br />
+(2) Ja minimālais ir $3$, tad vienādība iestājas tikai tad, ja $a=b=c=3$
+(ja kaut viens ir lielāks par $3$, tad summa mazāka par $1$). <br />
+(3) Ja $\\mbox{min}(a,b,c)=2$, tad ir divas iespējas:<br />
+(3.1) $a=2$ vai arī<br />
+(3.2) $b = 2$. (Nevar būt $c=2$, jo tad pat viens saskaitāmais $\\frac{4}{c^2}=1$.)</p>
+<p><strong>Gadījums (3.1): a=2</strong></p>
+<p>Ievietojam $a=2$, noīsinām un paliek vienādojums:
+$$\\frac{3}{b^2} + \\frac{4}{c^2} = \\frac{1}{2}.$$ </p>
+<p>Šķirojam divus apakšgadījumus atkarībā no tā, kurš saskaitāmais lielāks:</p>
+<p>(3.1.1) $\\frac{3}{b^2}\\geq\\frac{1}{4}$ jeb $b^2 &lt; 12$. Ievietojot $b=2$, $\\frac{3}{b^2}$ ir par lielu; 
+tātad $b=3$. <br />
+(3.1.2) $\\frac{4}{c^2} &gt; \\frac{1}{4}$ jeb $c^2 &lt; 16$. Ievietojot 
+$c=2$, $\\frac{4}{c^2}$ ir par lielu, tātad $c=3$. </p>
+<p><strong>Gadījumi (3.1.1) un (3.1.2):</strong> </p>
+<p>(3.1.1) Ievietojot $(a,b)=(2,3)$, iegūstam:
+$$\\frac{4}{c^2} = 1 - \\frac{2}{4} - \\frac{3}{9} = \\frac{1}{6}$$
+jeb $c^2 = 24$, kas nevar būt. </p>
+<p>(3.1.2) Ievietojot $(a,c)=(2,3)$, iegūstam:
+$$\\frac{3}{b^2} = 1 - \\frac{2}{4} - \\frac{4}{9} = \\frac{1}{18}.$$
+jeb $b^2 = 54$, kas nevar būt. </p>
+<p><strong>Gadījums (3.2) b=2:</strong> </p>
+<p>Ievietojam $b=2$, noīsinām un paliek vienādojums: 
+$$\\frac{2}{a^2} + \\frac{4}{c^2} = \\frac{1}{4}.$$</p>
+<p>Vismaz viens no saskaitāmajiem ir vismaz puse no summas jeb $1/8$. 
+Šķirojam divus apakšgadījumus: </p>
+<p>(3.2.1) $\\frac{2}{a^2}\\geq\\frac{1}{8}$ jeb $a^2 \\leq 16$.</p>
+<ul>
+<li>Ja $a=2$, tas neder - gadījumus (3.1.x) jau aplūkojām. </li>
+<li>Ja $a=3$, tad $\\frac{4}{c^2} = 1 - \\frac{2}{9} - \\frac{3}{4} = \\frac{1}{36}$. 
+Iegūstam, ka $c^2 = 144$, jeb $c=12$. </li>
+<li>Ja $a=4$, tad $\\frac{4}{c^2} = \\frac{1}{8}$ jeb $c^2 = 32$, kas nevar būt. </li>
+</ul>
+<p>(3.2.2) $\\frac{1}{4} &gt; \\frac{4}{c^2}\\geq\\frac{1}{8}$ jeb $c^2 \\leq 32$.</p>
+<ul>
+<li>Ja $c=2,3,4$, tas neder, jo $\\frac{4}{c^2}\\geq\\frac{1}{4}$. </li>
+<li>Ja $c=5$, tad ievietojam $b=2$, $c=5$:
+$\\frac{2}{a^2} = 1 - \\frac{3}{4} - \\frac{4}{25} = \\frac{9}{100}$
+jeb $a^2 = \\frac{200}{9}$, kas nevar būt.</li>
+</ul>
+<p><strong>Atbilde:</strong> Esam ieguvuši divus atrisinājumus:</p>
+<ul>
+<li>$(a,b,c)=(3,3,3)$.   </li>
+<li>$(a,b,c)=(3,2,12)$.</li>
+</ul>"""@lv .
+
+eliozo:SOLN.EE.LO.2013.10.1 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Ne visi atlikumi ir iespējami, ja pilnu kubu dala ar $m$. Pilnus kubus ir izdevīgi 
+aplūkot pēc $7$ moduļa vai pēc $9$ moduļa.
+
+**Apgalvojums:**
+
+* $n^3$, dalot ar $m=7$, dod atlikumus
+$0,1,6$ ($6$ vietā var rakstīt arī $-1$, kas atšķiras no $6$ par $7$). 
+* $n^3$, dalot ar $m=9$, dod atlikumus
+$0,1,8$ ($6$ vietā var rakstīt arī $-1$). 
+
+Apgalvojumu priekš $m=7$ pierāda, kāpinot skaitļus no $0$ līdz $6$ kubā, 
+aplūkojot atlikumus. Lielākiem skaitļiem atlikumi atkārtosies.  
+Priekš $m=9$ līdzīgi aplūko skaitļus no $0$ līdz $8$
+(vai, ja vēlamies, no $-4$ līdz $4$). 
+
+$2013$ dod atlikumu $6$, dalot ar $9$ (un atlikumu $4$, dalot ar $7$).  
+Atlikumu $4$, dalot ar $7$, nevar iegūt kā divu kubu starpību.
+Aplūkojam "atņemšanas tabulu" $b-a$ atlikumiem (mod 7). 
+
+| mod 7 | $a = 0$ | $a = 1$ | $a = 2$ |
+| ----- | ------- | ------- | ------- | 
+| b=0   | 0       | 6       | 1       | 
+| b=1   | 1       | 0       | 2       | 
+| b=6   | 6       | 5       | 0       | 
+
+
+Atņemot divus pilnus kubus, atlikums dalot ar $7$ var būt
+$0,1,2,5,6$, bet tas nevar būt $4$.  
+(Līdzīgu spriedumu var arī par atlikumiem, dalot ar $m=9$.)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Ne visi atlikumi ir iespējami, ja pilnu kubu dala ar $m$. Pilnus kubus ir izdevīgi 
+aplūkot pēc $7$ moduļa vai pēc $9$ moduļa.</p>
+<p><strong>Apgalvojums:</strong></p>
+<ul>
+<li>$n^3$, dalot ar $m=7$, dod atlikumus
+$0,1,6$ ($6$ vietā var rakstīt arī $-1$, kas atšķiras no $6$ par $7$). </li>
+<li>$n^3$, dalot ar $m=9$, dod atlikumus
+$0,1,8$ ($6$ vietā var rakstīt arī $-1$). </li>
+</ul>
+<p>Apgalvojumu priekš $m=7$ pierāda, kāpinot skaitļus no $0$ līdz $6$ kubā, 
+aplūkojot atlikumus. Lielākiem skaitļiem atlikumi atkārtosies.<br />
+Priekš $m=9$ līdzīgi aplūko skaitļus no $0$ līdz $8$
+(vai, ja vēlamies, no $-4$ līdz $4$). </p>
+<p>$2013$ dod atlikumu $6$, dalot ar $9$ (un atlikumu $4$, dalot ar $7$).<br />
+Atlikumu $4$, dalot ar $7$, nevar iegūt kā divu kubu starpību.
+Aplūkojam "atņemšanas tabulu" $b-a$ atlikumiem (mod 7). </p>
+<table>
+<thead>
+<tr>
+<th>mod 7</th>
+<th>$a = 0$</th>
+<th>$a = 1$</th>
+<th>$a = 2$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>b=0</td>
+<td>0</td>
+<td>6</td>
+<td>1</td>
+</tr>
+<tr>
+<td>b=1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>b=6</td>
+<td>6</td>
+<td>5</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Atņemot divus pilnus kubus, atlikums dalot ar $7$ var būt
+$0,1,2,5,6$, bet tas nevar būt $4$.<br />
+(Līdzīgu spriedumu var arī par atlikumiem, dalot ar $m=9$.)</p>"""@lv .
+
+eliozo:SOLN.EE.LO.2019.10.1 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+$$xy - y^2 = x\\;\\Rightarrow\\;xy-x=y^2\\;\\Rightarrow\\;x(y-1)=y^2.$$
+
+* Ja $y \\geq 0$, tad der $y=2$. Un atrisinājums $(x;y)=(4;2)$.
+* Citi $y \\geq 0$ neder: 
+    - $y=0$ neder (ar nulli nevar dalīt)
+    - $y=1$ neder, jo $x-1 \\neq x$
+    - $y^2$ nedalās ar $y-1$, ja tas lielāks par $1$. 
+* Vērtības $y < 0$ arī neder (arī $y^2$ nedalās ar $y-1$, kas
+ir divi pēc kārtas sekojoši skaitļi, kuriem nav kopīgu dalītāju)."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$$xy - y^2 = x\\;\\Rightarrow\\;xy-x=y^2\\;\\Rightarrow\\;x(y-1)=y^2.$$</p>
+<ul>
+<li>Ja $y \\geq 0$, tad der $y=2$. Un atrisinājums $(x;y)=(4;2)$.</li>
+<li>Citi $y \\geq 0$ neder: <ul>
+<li>$y=0$ neder (ar nulli nevar dalīt)</li>
+<li>$y=1$ neder, jo $x-1 \\neq x$</li>
+<li>$y^2$ nedalās ar $y-1$, ja tas lielāks par $1$. </li>
+</ul>
+</li>
+<li>Vērtības $y &lt; 0$ arī neder (arī $y^2$ nedalās ar $y-1$, kas
+ir divi pēc kārtas sekojoši skaitļi, kuriem nav kopīgu dalītāju).</li>
+</ul>"""@lv .
+

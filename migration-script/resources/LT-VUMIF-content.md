@@ -534,12 +534,10 @@ kad ir kaip žaistų Algis.
 * topic:GameInvariant
 * topic:ModularParity
 * topic:StrongAndReverseInduction
+* strategy:WorkingBackwards
 
 </small>
 
-<!--
-strategy=begin-at-the-end
--->
 
 
 
