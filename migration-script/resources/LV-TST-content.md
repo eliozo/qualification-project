@@ -4,8 +4,14 @@ Dots, ka $n$ - naturāls skaitlis. Pierādīt, ka $3n + 2$
 un $7n + 5$ ir savstarpēji pirmskaitļi.
 
 <!--
-mainEntry=BBK2012.P1.93
+sameAs=BBK2012.P1.93
 -->
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 
@@ -16,8 +22,14 @@ ir bezgalīgi daudz atrisinājumu naturālos
 skaitļos.
 
 <!--
-mainEntry=BBK2012.P9.71
+sameAs=BBK2012.P9.71
 -->
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 
@@ -29,8 +41,14 @@ naturālu skaitļu $n$, ka skaitļa $5^n$ ciparu
 summa ir mazāka par $1976^{1976}$.
 
 <!--
-mainEntry=BBK2012.P9.72
+sameAs=BBK2012.P9.72
 -->
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 
@@ -41,9 +59,14 @@ Atrisināt vienādojumu $x(x+1) = 4y(y+1)$
 naturālos skaitļos.
 
 <!--
-mainEntry=BBK2012.P5.35
+sameAs=BBK2012.P5.35
 -->
 
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 
@@ -55,7 +78,11 @@ ka $P(a)=P(b)=P(c)=1$.
 Pierādīt, ka vienādojumam  $P(x) = 0$ 
 nav atrisinājumu veselos skaitļos.
 
+<small>
 
+* questionType:Prove
+
+</small>
 
 
 # <lo-sample/> LV.TST.1977.10.4
@@ -66,7 +93,11 @@ $$x = \pm 1^2 \pm 2^2 \pm 3^2 \pm \cdots \pm n^2,$$
 kur $n$, kā arī plus un mīnus zīmes kvadrātu priekšā 
 izvēlas atkarībā no $x$.
 
+<small>
 
+* questionType:Prove
+
+</small>
 
 
 # <lo-sample/> LV.TST.1977.11.4
@@ -75,8 +106,14 @@ Atrisināt naturālos skaitļos vienādojumu
 $x(x+1) = p^{2n}\cdot y(y+1)$, ja $p$ --
 pirmskaitlis, $n$ -- naturāls skaitlis.
 
+<small>
+
+* questionType:FindAll
+
+</small>
+
 <!--
-mainEntry=BBK2012.P5.67
+sameAs=BBK2012.P5.67
 -->
 
 
@@ -87,8 +124,14 @@ mainEntry=BBK2012.P5.67
 Atrisināt naturālos skaitļos vienādojumu
 $x^2 + 8z = 2y^2 + 3$.
 
+<small>
+
+* questionType:FindAll
+
+</small>
+
 <!--
-mainEntry=BBK2012.P4.3
+sameAs=BBK2012.P4.3
 -->
 
 
@@ -102,6 +145,12 @@ $1$ līdz $n$ ieskaitot, var sadalīt $2$ grupās tā,
 ka neviena grupa nesatur aritmētisku progresiju
 ar četriem locekļiem.
 
+<small>
+
+* questionType:FindOptimal
+
+</small>
+
 
 
 # <lo-sample/> LV.TST.1978.10.5
@@ -110,21 +159,28 @@ Atrast visus naturālos skaitļus, kurus nevar izsacīt kā dažu
 (vairāk kā viena) pēc
 kārtas ņemtu naturālu skaitļu summu.
 
+<small>
+
+* questionType:FindAll
+
+</small>
+
 <!--
-mainEntry=BBK2012.P5.53
+sameAs=BBK2012.P5.53
 -->
 
 
 
 # <lo-sample/> LV.TST.1978.11.4
 
-$p$ ir pirmskaitlis, $p > 5$. 
-Pierādīt, ka bezgalīga decimāldaļā
-$\frac{1}{p}$
-perioda ciparu
-summa dalās ar $9$.
+$p$ ir pirmskaitlis, $p > 5$. Pierādīt, ka bezgalīga decimāldaļā
+$\frac{1}{p}$ perioda ciparu summa dalās ar $9$.
 
+<small>
 
+* questionType:Prove
+
+</small>
 
 
 # <lo-sample/> LV.TST.1979.9.1
@@ -133,8 +189,14 @@ Pierādīt, bezgalīgi daudziem pirmskaitļiem $p$ var
 atrast tādus naturālus skaitļus $x$ un $y$, ka 
 $2x^2 + 2x + 1 = py$. 
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P1.89
+sameAs=BBK2012.P1.89
 -->
 
 
@@ -145,8 +207,14 @@ mainEntry=BBK2012.P1.89
 Pierādīt, ka eksistē tāds naturāls skaitlis $n$, 
 ka $n^2 + 1$ dalās ar  $5^{1979}$.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P9.12
+sameAs=BBK2012.P9.12
 -->
 
 
@@ -158,8 +226,14 @@ Pierādīt, ka eksistē bezgalīgi daudz naturālu
 skaitļu, kas nav izsakāmi kā $1979$
 naturālu skaitļu $1979$-o pakāpju summas.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P8.48
+sameAs=BBK2012.P8.48
 -->
 
 
@@ -174,8 +248,14 @@ $$\left\lfloor \frac{0^2}{1980} \right\rfloor,
 $$\ldots,\left\lfloor \frac{1979^2}{1980} \right\rfloor, 
 \left\lfloor \frac{1980^2}{1980} \right\rfloor ?$$
 
+<small>
+
+* questionType:FindCount
+
+</small>
+
 <!--
-mainEntry=BBK2012.P6.42
+sameAs=BBK2012.P6.42
 -->
 
 
@@ -192,8 +272,14 @@ pirmskaitļi.
 Vai to noteikti var apgalvot, ja tiek izvēlēti 
 $1\,000\,000$ skaitļi?
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P1.117
+sameAs=BBK2012.P1.117
 -->
 
 
@@ -207,20 +293,32 @@ veseli skaitļi. Dots, ka ir tieši $35$ veseli
 pozitīvi skaitļi, kas nav izsakāmi šādā formā, 
 un viens no tiem ir $58$. Atrast $a$ un $b$.
 
+<small>
+
+* questionType:FindExample
+
+</small>
 
 
 # <lo-sample/> LV.TST.1981.11.4
 
 Ar $\lfloor x\rfloor$ apzīmējam lielāko veselo skaitli, 
-kas nepārsniedz $x$. Izmantojot  četru
+kas nepārsniedz $x$.   
+**(A)** Izmantojot  četru
 aritmētisko operāciju darbību zīmes, kā arī simbolus 
 $\lfloor\mbox{ }\rfloor$ un $\sqrt{\mbox{ }}$, 
 uzrakstīt vispārīgā
 locekļa formulu tādai skaitļu virknei $\left( a_n \right)$, 
 kas katru naturālu skaitli satur kā savu
-locekli bezgalīgi daudzas reizes.
-Vai var uzrakstīt tādu formulu, neizmantojot simbolu 
+locekli bezgalīgi daudzas reizes.  
+**(B)** Vai var uzrakstīt tādu formulu, neizmantojot simbolu 
 $\lfloor\mbox{ }\rfloor$?
+
+<small>
+
+* questionType:FindExample,ProveDisprove
+
+</small>
 
 
 # <lo-sample/> LV.TST.1982.9.1
@@ -232,6 +330,11 @@ x^2 = 2(y+z)
 \end{array}
 \right.$$
 
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 # <lo-sample/> LV.TST.1982.10.1
@@ -241,8 +344,14 @@ Skaitļa $A$ ciparu summa ir $B$. Skaitļa  $B$
 ciparu summa ir $C$. Skaitļa $C$ ciparu summa ir $D$. 
 Atrast $D$.
 
+<small>
+
+* questionType:FindExample
+
+</small>
+
 <!--
-mainEntry=BBK2012.P4.48
+sameAs=BBK2012.P4.48
 -->
 
 
@@ -259,8 +368,14 @@ $$\ldots,\overline{a_{n-1}a_na_1a_2\ldots a_{n-2}},\;
 \overline{a_na_1a_2\ldots a_{n-1}}$$
 ir dažādi. 
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P3.92
+sameAs=BBK2012.P3.92
 -->
 
 
@@ -273,8 +388,14 @@ $$x_{n+1} = 5x_n + \sqrt{24x_n^2 + 1}.$$
 Pierādīt, ka visi šīs virknes 
 locekļi ir veseli skaitļi.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P5.114
+sameAs=BBK2012.P5.114
 -->
 
 
@@ -284,8 +405,14 @@ Pierādīt, ka katram pirmskaitlim $p$ var atrast
 tādus naturālus skaitļus $x$ un $y$, ka
 $x^2 + y^2 + 1$ dalās ar $p$.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P4.92
+sameAs=BBK2012.P4.92
 -->
 
 
@@ -295,8 +422,14 @@ Pierādīt, ka katrā augošā aritmētiskā progresijā
 ir bezgalīgi daudz skaitļu, kas nav
 vesela skaitļa pakāpes ar kāpinātāju, lielāku par $1$.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P2.73
+sameAs=BBK2012.P2.73
 -->
 
 
@@ -311,6 +444,11 @@ kopīgais dalītājs ir 1, tad $f(m \cdot n) = f(m) \cdot f(n)$.
 Pierādīt, ka visiem $x$ pastāv vienādība
 $f(x) = x$.
 
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 # <lo-sample/> LV.TST.1984.11.1
@@ -318,8 +456,14 @@ $f(x) = x$.
 Ar kādu lielāko skaitu vienādu, no nulles atšķirīgu ciparu 
 var beigties naturāla skaitļa kvadrāts?
 
+<small>
+
+* questionType:FindOptimal
+
+</small>
+
 <!--
-mainEntry=BBK2012.P4.99
+sameAs=BBK2012.P4.99
 -->
 
 
@@ -332,6 +476,11 @@ Pierādīt, ka var atrast tādus
 kuru summa ir $a$, bet
 reizinājums ir $b$.
 
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 # <lo-sample/> LV.TST.1985.9.3
@@ -341,8 +490,14 @@ var izsacīt kā triju tādu
 naturālu skaitļu summu, no kuriem katriem diviem 
 lielākais kopīgais dalītājs ir $1$.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P1.97
+sameAs=BBK2012.P1.97
 -->
 
 
@@ -350,13 +505,19 @@ mainEntry=BBK2012.P1.97
 # <lo-sample/> LV.TST.1985.10.2
 
 Skaitļu virkni $\left( x_n \right)$
-veido šādi:  
-**(a)** $x_1 = 1$;
-**(b)** ja $k \geq 1$, tad
-$x_{k+1}$ ir skaitļa $1985 \cdot x_k$ ciparu summa.  
+veido šādi:
+
+a. $x_1 = 1$;
+b. ja $k \geq 1$, tad $x_{k+1}$ ir skaitļa $1985 \cdot x_k$ ciparu summa.  
+
 Pierādīt, ka, sākot no kādas vietas, virkne $\left( x_n \right)$
 kļūst periodiska.
 
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 
@@ -367,8 +528,14 @@ no kuriem neviens nav naturāla skaitļa pakāpe,
 augstāka par pirmo.
 
 <!--
-mainEntry=BBK2012.P2.77
+sameAs=BBK2012.P2.77
 -->
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 # <lo-sample/> LV.TST.1986.9.3
@@ -376,8 +543,14 @@ mainEntry=BBK2012.P2.77
 Kādiem pirmskaitļiem $p$ skaitlis
 $2^p + p^2$ arī ir pirmskaitlis?
 
+<small>
+
+* questionType:FindAll
+
+</small>
+
 <!--
-mainEntry=BBK2012.P4.69
+sameAs=BBK2012.P4.69
 -->
 
 
@@ -391,8 +564,14 @@ lielākais pirmskaitlis, ar kuru dalās
 $p_1p_2p_3\cdots p_n + 1$, $(n \geq 2)$. 
 Pierādīt, ka šajā virknē nav skaitļa $5$.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P4.89
+sameAs=BBK2012.P4.89
 -->
 
 
@@ -402,8 +581,14 @@ Dots, ka $p$ – pirmskaitlis. Pierādīt, ka
 $2^p + 3^p$ nav naturāla skaitļa pakāpe ar
 kāpinātāju, lielāku par $1$.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P4.122
+sameAs=BBK2012.P4.122
 -->
 
 
@@ -413,8 +598,14 @@ Doti $19$ veseli skaitļi. Pierādīt, ka no tiem var izvēlēties
 tieši 10 skaitļus tā, ka
 visu izraudzīto skaitļu summa dalās ar $10$.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P8.11
+sameAs=BBK2012.P8.11
 -->
 
 
@@ -431,6 +622,12 @@ paņem pēdējo akmeni.
 Kurš uzvar, pareizi spēlējot, - tas, kurš izdara 
 pirmo gājienu, vai tas, kurš izdara otro gājienu?
 
+<small>
+
+* questionType:Algorithm
+
+</small>
+
 
 
 # <lo-sample/> LV.TST.1987.10.3
@@ -440,19 +637,28 @@ vienādojumam $x! - y^2 = A$
 ir tikai
 galīgs skaits (varbūt neviena) atrisinājumu naturālos skaitļos.
 
+<small>
 
+* questionType:Prove
+
+</small>
 
 
 
 # <lo-sample/> LV.TST.1987.11.3
 
 Dots, ka
-$$\frac{1}{1 \cdot 2 \cdot 3} + 
-\frac{1}{4 \cdot 5 \cdot 6} + \ldots + 
-\frac{1}{1984 \cdot 1985 \cdot 1986}  = \frac{m}{n},$$
-kur $m$ un $n$ – naturāli skaitļi. 
-Pierādīt, ka $m$ dalās ar $1987$.
 
+$$\frac{1}{1 \cdot 2 \cdot 3} + \frac{1}{4 \cdot 5 \cdot 6} + \ldots + 
+\frac{1}{1984 \cdot 1985 \cdot 1986}  = \frac{m}{n},$$
+
+kur $m$ un $n$ – naturāli skaitļi. Pierādīt, ka $m$ dalās ar $1987$.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 # <lo-sample/> LV.TST.1988.9.1
@@ -462,8 +668,14 @@ reizinājums var būt naturāla skaitļa
 kvadrāts?
 
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P2.30
+sameAs=BBK2012.P2.30
 -->
 
 
@@ -471,6 +683,12 @@ mainEntry=BBK2012.P2.30
 
 Kuram no naturāliem skaitļiem no $1$ līdz $1988$ ir vislielākais 
 dalītāju skaits?
+
+<small>
+
+* questionType:FindOptimal
+
+</small>
 
 
 # <lo-sample/> LV.TST.1988.10.5
@@ -480,12 +698,17 @@ $a_1 = k$, $k$ – naturāls skaitlis,
 $$a_{n+1} = k\left( a_n + 1 \right) + \left( k+1 \right)a_n + $$
 $$ +2\sqrt{k \left( k+1 \right)a_n \left( a_n + 1\right)},\;\;
 \text{ja}\;\; n \geq 1.$$
-Pierādīt, ka visi šīs virknes
-locekļi ir naturāli skaitļi.
 
+Pierādīt, ka visi šīs virknes locekļi ir naturāli skaitļi.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 <!--
-mainEntry=BBK2012.P5.115
+sameAs=BBK2012.P5.115
 -->
 
 # <lo-sample/> LV.TST.1988.11.1
@@ -493,6 +716,11 @@ mainEntry=BBK2012.P5.115
 Atrisināt naturālos skaitļos vienādojumu
 $5^x \cdot 7^y + 4 = 3^z$.
 
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 # <lo-sample/> LV.TST.1989.10.2
@@ -502,6 +730,12 @@ kuru (visu triju) lielākais kopīgais dalītājs
 ir 1. Dots arī, ka
 $$\frac{1}{a} + \frac{1}{b} = \frac{1}{c}.$$
 Pierādīt, ka $a + b$ ir naturāla skaitļa kvadrāts.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 # <lo-sample/> LV.TST.1989.10.3
@@ -514,8 +748,14 @@ $x_1$ un $x_2$, lai bezgalīgi daudzi virknes
 $\left( x_n \right)$
 locekļi būtu naturāli skaitļi.
 
+<small>
+
+* questionType:FindAll
+
+</small>
+
 <!--
-mainEntry=BBK2012.P9.20
+sameAs=BBK2012.P9.20
 -->
 
 
@@ -528,8 +768,14 @@ Pierādīt, ka vienīgais vienādojuma
 $ax^2 + by^2 + cz^2 = 0$ atrisinājums veselos skaitļos
 ir $x = y = z = 0$.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P5.116
+sameAs=BBK2012.P5.116
 -->
 
 
@@ -539,8 +785,14 @@ Vai var atrast četrus tādus naturālus skaitļus, lai,
 katru divu reizinājumam
 pieskaitot $1990$, iegūtu kaut kāda naturāla skaitļa kvadrātu?
 
+<small>
+
+* questionType:ProveDisprove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P4.97
+sameAs=BBK2012.P4.97
 -->
 
 
@@ -548,8 +800,14 @@ mainEntry=BBK2012.P4.97
 
 Atrisināt naturālos skaitļos vienādojumu $7^x - 3 \cdot 2^y = 1$.
 
+<small>
+
+* questionType:FindAll
+
+</small>
+
 <!--
-mainEntry=BBK2012.P5.48
+sameAs=BBK2012.P5.48
 -->
 
 
@@ -563,8 +821,14 @@ bezgalīga apakškopa $B$, ka katru divu dažādu $B$
 elementu lielākais kopīgais dalītājs ir
 $p$.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P9.38
+sameAs=BBK2012.P9.38
 -->
 
 
@@ -576,6 +840,12 @@ nepārsniedz $1991$. Pierādīt, ka visi progresijas locekļi
 nevar vienlaicīgi būt
 pirmskaitļi.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 
 # <lo-sample/> LV.TST.1991.12.5
 
@@ -586,9 +856,14 @@ $2^{n_{k-1}}-1$ dalās ar $n_k$,
 $2^{n_k}-1$ dalās ar $n_1$.
 Pierādīt, ka $n_1 = n_2 = \cdots = n_k = 1$.
 
+<small>
+
+* questionType:Prove
+
+</small>
 
 <!--
-mainEntry=BBK2012.P7.13
+sameAs=BBK2012.P7.13
 -->
 
 
@@ -598,9 +873,14 @@ Dots, ka $n$ – naturāls skaitlis un $n+1$ dalās ar $24$.
 Pierādīt, ka skaitļa $n$ visu
 naturālo dalītāju summa arī dalās ar $24$.
 
+<small>
+
+* questionType:Prove
+
+</small>
 
 <!--
-mainEntry=BBK2012.P2.38
+sameAs=BBK2012.P2.38
 -->
 
 
@@ -608,8 +888,13 @@ mainEntry=BBK2012.P2.38
 # <lo-sample/> LV.TST.1992.10.1
 
 Izsakiet skaitli $1992$ kā naturālu skaitļu summu tā, 
-lai to reizinājums būtu
-vislielākais iespējamais.
+lai to reizinājums būtu vislielākais iespējamais.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 <!--
 concepts=constant-e
@@ -622,6 +907,11 @@ Kādiem naturāliem $n$ vienādojumam
 $$x^n + (2 + x)^n + (2 - x)^n = 0$$
 ir vesela sakne?
 
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 # <lo-sample/> LV.TST.1992.10.4
@@ -629,6 +919,12 @@ ir vesela sakne?
 Vai naturālos skaitļus no $1$ līdz $1918$ ieskaitot var sadalīt $4$ 
 daļās tā, lai neviena
 daļa nesaturētu $10$ locekļu aritmētisku progresiju?
+
+<small>
+
+* questionType:ProveDisprove
+
+</small>
 
 
 # <lo-sample/> LV.TST.1992.11.2
@@ -639,12 +935,24 @@ $$\left( a^2 - 1 \right)\left( x^2 - 1 \right) =
 \left( y^2 - 1 \right)$$
 eksistē vismaz $2$ atrisinājumi naturālos skaitļos.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 
 # <lo-sample/> LV.TST.1992.12.1
 
 Pierādīt, ka eksistē bezgalīgi daudz naturālu skaitļu 
 kvadrātu, kurus var iegūt,
 divas reizes pēc kārtas uzrakstot kādu naturālu skaitli.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 # <lo-sample/> LV.TST.1992.12.3
@@ -656,8 +964,14 @@ $$a_1 = 2,\; a_2 = 7,\; -\frac{1}{2} < a_{n+1} -
 Pierādīt, ka visi locekļi, sākot ar otro, ir nepāra 
 skaitļi.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
-mainEntry=BBK2012.P6.69
+sameAs=BBK2012.P6.69
 -->
 
 
@@ -669,6 +983,12 @@ mainEntry=BBK2012.P6.69
 Dots naturāls skaitlis $a > 2$. 
 Pierādīt, ka eksistē tikai galīgs skaits tādu naturālu
 $n$, ka $a^n - 1$ dalās ar $2^n$.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 <!--
 sameAs=BBK2012.P2.87
@@ -683,6 +1003,12 @@ $$3x^2 + x = 4y^2 + y.$$
 Pierādīt, ka $x-y$, $3x+3y+1$ un $4x+4y+1$ ir naturālu 
 skaitļu kvadrāti.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 <!--
 sameAs=BBK2012.P5.56
 -->
@@ -694,13 +1020,16 @@ sameAs=BBK2012.P5.56
 Vai var atrast tādus $2^{1994}$
 dažādus naturālu skaitļu pārus
 $\left( a_i,b_i \right)$, 
-ka vienlaikus izpildās šādas prasības:  
-(1) ${\displaystyle 
-\frac{1}{a_1b_1} + \frac{1}{a_2b_2} + \cdots + 
-\frac{1}{a_{2^{1994}}b_{2^{1994}}} = 1}$;   
-(2) ${\displaystyle
-\left( a_1 + a_2 + \cdots + a_{2^{1994}}\right) + 
-\left( b_1 + b_2 + \cdots + b_{2^{1994}}\right) = 3^{1995}}$.
+ka vienlaikus izpildās šādas prasības:
+
+1. ${\displaystyle \frac{1}{a_1b_1} + \frac{1}{a_2b_2} + \cdots + \frac{1}{a_{2^{1994}}b_{2^{1994}}} = 1}$;   
+2. ${\displaystyle \left( a_1 + a_2 + \cdots + a_{2^{1994}}\right) + \left( b_1 + b_2 + \cdots + b_{2^{1994}}\right) = 3^{1995}}$.
+
+<small>
+
+* questionType:ProveDisprove
+
+</small>
 
 <!--
 sameAs=BBK2012.P9.73
@@ -711,10 +1040,14 @@ sameAs=BBK2012.P9.73
 # <lo-sample/> LV.TST.1995.12.2
 
 Naturālu skaitli sauksim par baltu, ja tas dod atlikumu $1$, 
-dalot ar $4$, un par
-melnu, ja tas dod atlikumu $3$, dalot ar $4$.
-Pierādīt, ka katram naturālam $n$ 
-balto dalītāju nav mazāk nekā melno.
+dalot ar $4$, un par melnu, ja tas dod atlikumu $3$, dalot ar $4$.
+Pierādīt, ka katram naturālam $n$ balto dalītāju nav mazāk nekā melno.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 <!--
@@ -730,6 +1063,12 @@ ${\displaystyle p\cdot \left(2^{p-1}-1\right)}$
 ir naturāla skaitļa pakāpe,
 augstāka par pirmo, un pierādīt, ka citu bez atrastajiem nav.
 
+<small>
+
+* questionType:FindAll
+
+</small>
+
 <!--
 sameAs=BBK2012.P5.57
 -->
@@ -742,6 +1081,12 @@ Pierādīt, ka nekādi 3
 šīs virknes locekļi $a_m$, $a_n$, $a_k$ ($m < n < k$)
 neveido ģeometrisku progresiju.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 
 
 # <lo-sample/> LV.TST.1997.12.1
@@ -751,6 +1096,12 @@ Pierādīt, ka eksistē bezgalīgi daudz
 tādu naturālu skaitļu $n$, ka  $a+n$ un $b + n$ 
 lielākais kopīgais dalītājs ir $1$.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 
 
 # <lo-sample/> LV.TST.1998.12.2
@@ -758,6 +1109,12 @@ lielākais kopīgais dalītājs ir $1$.
 Atrisināt naturālos skaitļos vienādojumu
 $$p^x - y^p = 1,$$
 ja $p$ ir pirmskaitlis.
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 <!--
 sameAs=BBK2012.P4.96
@@ -773,6 +1130,12 @@ kur ar $p(x)$ apzīmēts lielākais pirmskaitlis,
 ar kuru dalās $x$.
 Aprēķināt $a_{1999}$.
 
+<small>
+
+* questionType:FindExample
+
+</small>
+
 <!--
 sameAs=BBK2012.P2.23
 -->
@@ -785,6 +1148,11 @@ Skaitļu virkni $a_0, a_1, a_2, \ldots$ veido sekojoši:
 $$a_0=1;\; a_1=1;\; a_{n+2}=7a_{n+1}-a_n-2\;\;\text{pie}\;\;n\geq 0.$$
 Pierādīt, ka visi virknes locekļi ir naturālu skaitļu kvadrāti.
 
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 # <lo-sample/> LV.TST.2004.12.4
@@ -793,21 +1161,39 @@ Dots, ka $a$ un $b$ ir naturāli skaitļi, bet $p$ – pirmskaitlis,
 kas dod atlikumu $2$, dalot ar $3$. Dots, ka $a^2+ab+b^2$ 
 dalās ar $p$. Pierādīt, ka gan $a$, gan $b$ dalās ar $p$.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 
 
 # <lo-sample/> LV.TST.2005.12.3
 
-Atrast visas naturālu skaitļu kopas $S$, kas vienlaicīgi apmierina sekojošas īpašības:  
-**(i)** $S$ satur vismaz 3 elementus,  
-**(ii)** ja $n \in S$ un $k$ ir skaitļa $n$ naturāls dalītājs, tad arī $k \in S$,  
-**(iii)** ja $a \in S$, $b \in S$ un $1<a<b$, tad $1+ab \in S$.
+Atrast visas naturālu skaitļu kopas $S$, kas vienlaicīgi apmierina sekojošas īpašības:
 
+a. $S$ satur vismaz 3 elementus.
+b. Ja $n \in S$ un $k$ ir skaitļa $n$ naturāls dalītājs, tad arī $k \in S$.
+c. Ja $a \in S$, $b \in S$ un $1<a<b$, tad $1+ab \in S$.
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 # <lo-sample/> LV.TST.2006.12.1
 
 Atrisināt naturālos skaitļos vienādojumu
 $$3^x = 2^x \cdot y + 1.$$
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 
@@ -817,6 +1203,11 @@ Dots, ka $p$ – pirmskaitlis, $p>2$, un
 $x^p + y^p$ dalās ar $p$ ($x, y$ – naturāli skaitļi). 
 Pierādīt, ka $x^p + y^p$ dalās ar  $p^2$.
 
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 # <lo-sample/> LV.TST.2008.12.3
@@ -826,12 +1217,24 @@ $$(x + 1)^2 + y_1^2 = (x+2)^2 + y_2^2 = \ldots =
 (x + n)^2 + y_n^2$$
 eksistē atrisinājums veselos skaitļos?
 
+<small>
+
+* questionType:FindOptimal
+
+</small>
+
 
 
 # <lo-sample/> LV.TST.2009.12.1
 
 Kādiem naturāliem skaitļiem $m$ un $n$, kas abi lielāki par $1$,
 skaitlis $n^3 - 1$ dalās ar $m \cdot n - 1$?
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 
@@ -850,6 +1253,12 @@ Cik ir tādu naturālu skaitļu $N$, $1000<N<3000$,
 kurus nav iespējams izteikt kā divu vai vairāku 
 secīgu naturālu skaitļu summu?
 
+<small>
+
+* questionType:FindCount
+
+</small>
+
 
 
 # <lo-sample/> LV.TST.2012.12.1
@@ -859,8 +1268,9 @@ Aprēķināt $S(S(S(2012^{2012})))$.
 
 <small>
 
-* [nota.divrule.3_9.rem](#)
-* [alg.ineq.equations](#)
+* topic:DivisibilityRulesForRemainders
+* topic:NumTheoryInequalityMethod
+* questionType:FindExample
 
 </small>
 
@@ -942,11 +1352,23 @@ x_{n} + 2$ visiem $n \geq 1$ un $y_1 = y_2 = 4$,
 $y_{n+2} = y_{n}y_{n+1} - 1$ visiem $n \geq 1$. 
 Pierādīt, ka nav tāda naturāla skaitļa, kas pieder abām virknēm.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 
 # <lo-sample/> LV.TST.2014.12.4
 
 Pierādīt, ka vienādojumam 
 $(a - b)^2 = 6ab + 7$  nav atrisinājuma naturālos skaitļos.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 
@@ -958,6 +1380,12 @@ skaitļiem un pieņem naturālas vērtības), kurām visiem naturāliem $n$ un $
 izteiksmes $mf(m) + n$ 
 vērtība bez atlikuma dalās ar izteiksmes $m^2 + f(n)$
 vērtību.
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 
@@ -979,6 +1407,14 @@ mazāks par $k$ dala $n$ tad un tikai tad, ja tas dala $n^{\ast}$.
 Pierādīt, ka $n$ un $n^{\ast}$ vai nu
 abi ir labi vai abi ir slikti.
 
+<small>
+
+* questionType:Prove
+
+</small>
+
+
+
 # <lo-sample/> LV.TST.2015.12.3
 
 Naturālus skaitļus $x$ un $y$ sauc par *draudzīgiem*, ja $xy+1$
@@ -987,6 +1423,11 @@ ir draudzīgi. Pierādīt: ja skaitļi $a$ un $b$ ir draudzīgi,
 tad eksistē tāds naturāls skaitlis $c$, ka vienlaikus 
 $a$ un $c$ ir draudzīgi, un arī $b$ un $c$ ir draudzīgi.
 
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 # <lo-sample/> LV.TST.2015.12.4
@@ -996,14 +1437,22 @@ un pieņem veselas vērtības, tādas, ka $f(1)=f(-1)$
 un visiem veseliem $x$ un $y$ izpildās
 $$f(x) + f(y) = f(x + 2xy) + f(y - 2xy).$$
 
+<small>
 
+* questionType:FindAll
+
+</small>
 
 
 # <lo-sample/> LV.TST.2016.12.3
 
 Atrast visus tādus pirmskaitļus $p$, ka $3^{p^2-1} + 20$ arī ir pirmskaitlis!
 
+<small>
 
+* questionType:FindAll
+
+</small>
 
 
 # <lo-sample/> LV.TST.2016.12.5
@@ -1012,13 +1461,23 @@ Vai eksistē tāda bezgalīga naturālu skaitļu virkne $(a_n)$,
 ka katram naturālam $n$, skaitļu $a_{n+1}, a_{n+2},\ldots,a_{n+a_n}$ vidējais
 aritmētiskais ir vienāds ar $n$?
 
+<small>
 
+* questionType:ProveDisprove
+
+</small>
 
 
 # <lo-sample/> LV.TST.2016.12.15
 
 Naturāli skaitļi $a$ un $b$ ir tādi, ka $a!b!$ dalās ar $a!+b!$. 
 Pierādīt, ka $3a \geq 2b + 2$.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 
@@ -1030,11 +1489,24 @@ bet ar $\tau_1(n)$ — tā pozitīvo dalītāju skaitu, kas, dalot ar $3$,
 dod atlikumu $1$. Kādas naturālas
 vērtības var pieņemt izteiksme $\frac{\tau(10)}{\tau_1(10n)}$.
 
+<small>
+
+* questionType:FindAll
+* seeAlso:LV.AMO.2023.12.5
+
+</small>
+
 
 # <lo-sample/> LV.TST.2018.12.3
 
 Pierādīt, ka vienādojumam $5m^2 - 6mn + 7n^2 = 20182018$
 nav atrisinājuma naturālos skaitļos!
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 
@@ -1045,6 +1517,12 @@ $$\frac{1}{a_1} + \frac{1}{a_2} + \ldots + \frac{1}{a_n} = k\;\;\text{un}\;\;a_1
 Pierādiet, ka polinomam
 $$P(x) = M(x + 1)^k - (x + a_1)(x + a_2)\ldots(x + a_n)$$
 nav pozitīvu sakņu.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 
@@ -1059,7 +1537,11 @@ Elīzei ir pirmais gājiens. Spēle beidzas, kad visi $p$ cipari ir uzrakstīti.
 Elīze uzvar, ja $M$ dalās ar $p$, Luīze uzvar, ja nedalās.
 Pierādiet, ka Elīze vienmēr var uzvarēt!
 
+<small>
 
+* questionType:Algorithm
+
+</small>
 
 
 

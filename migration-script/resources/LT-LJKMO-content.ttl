@@ -17,7 +17,8 @@ reizināmā un reizinātāja burtiem atbilst dažādi cipari.
 Visi citi cipari apzīmēti ar vienādu simbolu "x".<br />
 Atšifrējiet reizinājumu:</p>
 <p><img alt="" src="LT.LJKMO.1999.7_8.1.png" /></p>"""@lv ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:topic "NumTheoryExtremeElement" .
 
 eliozo:LT.LJKMO.1999.7_8.3 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -27,7 +28,8 @@ eliozo:LT.LJKMO.1999.7_8.3 a eliozo:Problem ;
 un kura visu ciparu summa ir $100$. Atrodiet pašu mazāko šādu skaitli."""@lv ;
     eliozo:problemTextHtml """<p>Atrodiet kādu $100$-ciparu skaitli, kurš dalās ar $100$ 
 un kura visu ciparu summa ir $100$. Atrodiet pašu mazāko šādu skaitli.</p>"""@lv ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:topic "ExtremeElementMethod" .
 
 eliozo:LT.LJKMO.2000.7_8.3 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -37,7 +39,8 @@ eliozo:LT.LJKMO.2000.7_8.3 a eliozo:Problem ;
 kurš bez atlikuma dalās ar $23$?"""@lv ;
     eliozo:problemTextHtml """<p>Kādu pašu mazāko summu var iegūt, saskaitot visus ciparus skaitlim, 
 kurš bez atlikuma dalās ar $23$?</p>"""@lv ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:topic "LinearRecurrencesConstant" .
 
 eliozo:LT.LJKMO.2001.7_8.1 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -49,7 +52,8 @@ Atrodiet pašu mazāko tādu skaitli."""@lv ;
     eliozo:problemTextHtml """<p>Vesels pozitīvs skaitlis uzrakstāms tikai ar trijniekiem un 
 septiņniekiem, bet visu tā ciparu summa dalās gan ar $3$, gan ar $7$. 
 Atrodiet pašu mazāko tādu skaitli.</p>"""@lv ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:topic "ExtremeElementMethod" .
 
 eliozo:LT.LJKMO.2001.7_8.2 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -59,7 +63,8 @@ eliozo:LT.LJKMO.2001.7_8.2 a eliozo:Problem ;
 $x-y= x^2 + xy+ y^2$."""@lv ;
     eliozo:problemTextHtml """<p>Atrodiet veselus atrisinājumus vienādojumam
 $x-y= x^2 + xy+ y^2$.</p>"""@lv ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:topic "QuadraticEquationRootConditions" .
 
 eliozo:LT.LJKMO.2002.7_8.1 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -77,7 +82,8 @@ tad atlikušo skaitļu $2$, $6$ un $12$ reizinājums būtu
 $144 = 12 \\cdot 12$, tātad būtu pilns kvadrāts. 
 Kāds ir mazākais skaitļu skaits, ko jāizsvītro no sākotnējās virknes, lai 
 atlikušo skaitļu reizinājums būtu pilns kvadrāts?</p>"""@lv ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:topic "PrimeFactorizationAndPowers" .
 
 eliozo:LT.LJKMO.2002.7_8.2 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -99,7 +105,7 @@ $$3xy - x - 2 y = 8.$$
 </text>
 
 <!--
-questionType=Find.Any,Find.All
+questionType=FindExample,FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Dots vienādojums
 $$3xy - x - 2y = 8.$$
@@ -116,7 +122,7 @@ $$3xy - x - 2 y = 8.$$
 <strong>(d)</strong> Raskite visas šios lygties sveikųjų sprendinių poras.
 </text></p>
 <!--
-questionType=Find.Any,Find.All
+questionType=FindExample,FindAll
 -->"""@lv ;
     eliozo:problem_number 2 .
 
@@ -141,7 +147,7 @@ $n+S(n)=m+S(m)$. Raskite:
 </text>
 
 <!--
-questionType=Find.Any,ProveDisprove.Exists
+questionType=FindExample,ProveDisprove
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Ar $S(n)$ apzīmējam naturāla skaitļa $n$ ciparu summu, piemēram, 
 $S(129) = 1+2+9=12$. Skaitļus $n$ un $m$ sauksim par <em>radniecīgiem</em>, ja 
@@ -159,7 +165,7 @@ $n+S(n)=m+S(m)$. Raskite:<br />
 <strong>(c)</strong> ar egzistuoja $23$ tarpusavyje giminingi skaičiai?
 </text></p>
 <!--
-questionType=Find.Any,ProveDisprove.Exists
+questionType=FindExample,ProveDisprove
 -->"""@lv ;
     eliozo:problem_number 4 .
 
@@ -171,7 +177,8 @@ eliozo:LT.LJKMO.2003.7_8.3 a eliozo:Problem ;
 dalās ar $2003$ un kura ciparu summa vienāda ar $2003$."""@lv ;
     eliozo:problemTextHtml """<p>Atrodiet kaut vienu tādu skaitli, kas beidzas ar "2003", 
 dalās ar $2003$ un kura ciparu summa vienāda ar $2003$.</p>"""@lv ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:topic "ArithmeticSeriesDivisibility" .
 
 eliozo:LT.LJKMO.2003.7_8.4 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -188,7 +195,8 @@ izmantojot tos visus pa vienai reizei, tika
 izveidotas $11$ parastas daļas. 
 Kāds lielākais skaits no šīm daļām var būt 
 vienāds veseliem skaitļiem?</p>"""@lv ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:topic "Primes" .
 
 eliozo:LT.LJKMO.2004.7_8.1 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -208,7 +216,7 @@ dalijasi iš visų $7$ savo skaitmenų.
 </text>
 
 <!--
-questionType=Find.Any,Find.Max,Find.Min
+questionType=FindExample,FindOptimal,FindOptimal
 -->"""@lv ;
     eliozo:problemTextHtml """<p>$7$-ciparu skaitlis uzrakstāms ar $7$ dažādiem cipariem un dalās ar visiem 
 septiņiem saviem cipariem.<br />
@@ -223,7 +231,7 @@ dalijasi iš visų $7$ savo skaitmenų.<br />
 <strong>(c)</strong> Raskite patį mažiausią tokį $7$-ženklį skaičių.
 </text></p>
 <!--
-questionType=Find.Any,Find.Max,Find.Min
+questionType=FindExample,FindOptimal,FindOptimal
 -->"""@lv ;
     eliozo:problem_number 1 .
 
@@ -243,7 +251,7 @@ $$mn - n + m = 2004.$$
 </text>
 
 <!--
-questionType=Find.Any,Find.All
+questionType=FindExample,FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Nenegatīvi veseli skaitļi $m$ un $n$ apmierina nosacījumu
 $$mn - n + m = 2004.$$
@@ -256,7 +264,7 @@ $$mn - n + m = 2004.$$
 <strong>(b)</strong> Raskite visas galimas tokias skaičių $m$ ir $n$ poras.
 </text></p>
 <!--
-questionType=Find.Any,Find.All
+questionType=FindExample,FindAll
 -->"""@lv ;
     eliozo:problem_number 3 .
 
@@ -274,7 +282,7 @@ Kiek yra dviženklių šimtinių skaičių porų? Nurodykite jas.
 </text>
 
 <!--
-questionType=Find.Count,Find.All
+questionType=FindCount,FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Skaitļu $83$ un $89$ pāri $(83;89)$ sauc par <em>simta pāri</em>, jo 
 $83 + 8 + 9 = 100$ un $89 + 8 + 3 = 100$. 
@@ -285,7 +293,7 @@ nes $83 + 8 + 9 = 100$ ir $89 + 8 + 3 = 100$.
 Kiek yra dviženklių šimtinių skaičių porų? Nurodykite jas.
 </text></p>
 <!--
-questionType=Find.Count,Find.All
+questionType=FindCount,FindAll
 -->"""@lv ;
     eliozo:problem_number 2 .
 
@@ -307,7 +315,7 @@ dalijasi iš $11$.
 </text>
 
 <!--
-questionType=Find.Any,Find.Min,Find.Max
+questionType=FindExample,FindOptimal,FindOptimal
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Tikai ar nullēm un vieniniekiem uzrakstāms $11$-ciparu skaitlis beidzas ar "11" un 
 dalās ar $11$. <br />
@@ -322,7 +330,7 @@ dalijasi iš $11$.<br />
 <strong>(c)</strong> Suraskite patį didžiausią tokį $11$-ženklį skaičių.
 </text></p>
 <!--
-questionType=Find.Any,Find.Min,Find.Max
+questionType=FindExample,FindOptimal,FindOptimal
 -->"""@lv ;
     eliozo:problem_number 1 .
 
@@ -352,7 +360,7 @@ spręsime sveikaisiais skaičiais $a$, $b$, $c$ ir $d$.
 </text>
 
 <!--
-questionType=Find.Any,Find.All
+questionType=FindExample,FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Vienādojumu sistēmu
 $$\\left{ \\begin{array}{l}
@@ -375,7 +383,7 @@ spręsime sveikaisiais skaičiais $a$, $b$, $c$ ir $d$.<br />
 <strong>(c)</strong> Raskite visus tokius skaičių $a$, $b$, $c$ ir $d$ ketvertus $(a,b,c,d)$.
 </text></p>
 <!--
-questionType=Find.Any,Find.All
+questionType=FindExample,FindAll
 -->"""@lv ;
     eliozo:problem_number 4 .
 
@@ -394,7 +402,8 @@ summa būtu pilns kvadrāts. Vai baronam ir taisnība, tam neticot?<br />
 <strong>(b)</strong> Barons Minhauzens tic, ka visus veselos pozitīvos skaitļus no 
 $1$ līdz $16$ var izrakstīt pa apli tā, ka jebkuru divu blakus esošu skaitļu 
 summa būtu pilns kvadrāts. Vai baronam ir taisnība, šādi uzskatot?</p>"""@lv ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:topic "HamiltonCircuits" .
 
 eliozo:LT.LJKMO.2007.7_8.4 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -418,7 +427,7 @@ $$x^2 - y^2 - x + y = 2007.$$
 </text>
 
 <!--
-questionType=Find.Count,Find.All,ProveDisprove.Exists
+questionType=FindCount,FindAll,ProveDisprove
 -->"""@lv ;
     eliozo:problemTextHtml """<p><em>(a)</em><em> Šerloks Holmss kopā ar doktoru Vatsonu gribētu atrast visus
 veselu pozitīvu skaitļu $x$ un $y$ pārus $(x, y)$, kam 
@@ -437,7 +446,7 @@ tokią sveikųjų teigiamų skaičių $x$ ir $y$ porą $(x, y)$, kad
 $$x^2 - y^2 - x + y = 2007.$$
 </text></p>
 <!--
-questionType=Find.Count,Find.All,ProveDisprove.Exists
+questionType=FindCount,FindAll,ProveDisprove
 -->"""@lv ;
     eliozo:problem_number 4 .
 
@@ -480,7 +489,7 @@ už kurį Tomas ir Džeris gautų premiją?
 </text>
 
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Kļuvuši nopietnāki, Toms un Džerijs 
 iekārtojās darbā dalītāju uzskaites inspekcijā. 
@@ -516,7 +525,7 @@ už kurį Tomas ir Džeris gautų premiją?<br />
 <strong>(d)</strong> Ar gali Tomas ir Džeris gauti $8$ premijas? 
 </text></p>
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->"""@lv ;
     eliozo:problem_number 1 .
 
@@ -540,7 +549,7 @@ teisingos lygybės trupmenų?
 </text>
 
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Alisa raksta astoņus ciparus, kas lielāki par vienu - $2$, $3$, $4$, $5$, $6$, $7$, 
 $8$ un $9$ pa vienam katrā no $8$
@@ -555,7 +564,7 @@ Kam yra lygi pati didžiausioji iš tų trijų
 teisingos lygybės trupmenų? 
 </text></p>
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problem_number 2 .
 
@@ -581,7 +590,7 @@ nustatyti, kiek jų yra ir kokie jie yra?
 </text>
 
 <!--
-questionType=ProveDisprove.Exists,Find.All
+questionType=ProveDisprove,FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Veselīgais skeptiķis Sančo Pansa neparko netic, ka 
 nepieredzējis meklētājs varētu atrast tādu naturālu 
@@ -600,7 +609,7 @@ kad tokių skaičių yra. Negi tikrai įmanoma
 nustatyti, kiek jų yra ir kokie jie yra? 
 </text></p>
 <!--
-questionType=ProveDisprove.Exists,Find.All
+questionType=ProveDisprove,FindAll
 -->"""@lv ;
     eliozo:problem_number 4 .
 
@@ -655,7 +664,7 @@ Kaip čia yra? Atsakymą, suprantama, irgi pagrįskite.
 </text>
 
 <!--
-questionType=ProveDisprove.ForAll,Algorithm
+questionType=ProveDisprove,Algorithm
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Klusās ziemas naktīs, kad izklīst pēdējie nesteidzīgie gājēji, 
 mūžīgais pilsētas uzraugs, klusais Rolands mierīgi nokāpj centrā no 
@@ -703,7 +712,7 @@ besigriebtų jo varžovas?<br />
 Kaip čia yra? Atsakymą, suprantama, irgi pagrįskite.
 </text></p>
 <!--
-questionType=ProveDisprove.ForAll,Algorithm
+questionType=ProveDisprove,Algorithm
 -->"""@lv ;
     eliozo:problem_number 3 .
 
@@ -740,7 +749,7 @@ sprendinį.
 </text>
 
 <!--
-questionType=Prove.Exists
+questionType=Prove
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Šajā krustskaitļu mīklā (nejaukt ar krustvārdu mīklu) 
 maestro Rainis par katru cenu grib ierakstīt $4$ divciparus 
@@ -765,7 +774,7 @@ sprendinį. </p>
 <strong>Vertikaliai:</strong> 1. Skaičaus $25$ kartotinis. 2. Tikslusis kvadratas.
 </text></p>
 <!--
-questionType=Prove.Exists
+questionType=Prove
 -->"""@lv ;
     eliozo:problem_number 4 .
 
@@ -793,7 +802,7 @@ Ar tai įmanoma?
 </text>
 
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Jūru princese visgudrākajiem Sinbada kuģa jūrniekiem jautāja, vai 
 var starp skaitļiem, kas ir vienādības kreisajā pusē
@@ -814,7 +823,7 @@ Atsakymą, suprantama, jūreiviai pagrįsdavo, kad princesė iš jų nesišaipyt
 Ar tai įmanoma?
 </text></p>
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->"""@lv ;
     eliozo:problem_number 1 .
 
@@ -839,7 +848,7 @@ Tai kaip ten yra? Atsakymą princesei pagrįskite.
 </text>
 
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Princese lūdza Sinbadam visiem paskaidrot, vai skaitlis
 $4^{20} + 2^{20} + 1$ tiešām dalās vēl ar kādu trešo naturālo skaitli, 
@@ -857,7 +866,7 @@ teiraujasi, ar tas skaičius yra pirminis skaičius, ar nėra.)<br />
 Tai kaip ten yra? Atsakymą princesei pagrįskite. 
 </text></p>
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->"""@lv ;
     eliozo:problem_number 5 .
 
@@ -888,7 +897,7 @@ paskutinysis $4$-tasis dar nežinomas tos sumos (vienetų) skaitmuo.
 </text>
 
 <!--
-questionType=Find.All
+questionType=FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Ķīvīte Matilde no kaut kurienes atnesa trīsciparu skaitli, 
 cūka Kamila tūlīt rotaļīgi samainīja vietām tā vienu un desmitu 
@@ -912,7 +921,7 @@ Arklys Dominykas nusprendė surasti, koks galėtų būti tas
 paskutinysis $4$-tasis dar nežinomas tos sumos (vienetų) skaitmuo.
 </text></p>
 <!--
-questionType=Find.All
+questionType=FindAll
 -->"""@lv ;
     eliozo:problem_number 1 .
 
@@ -950,7 +959,7 @@ keliaženklio ir kokio skaičiaus kvadratas yra tas pradinis skaičius.
 </text> 
 
 <!--
-questionType=Find.All
+questionType=FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Naskā cūka Kamila simtgadīga ozola virsotnē atrada senu pergamentu ar 
 titullapā uzrakstītu simtciparu skaitli. Tā pirmie $49$ cipari visi 
@@ -981,7 +990,7 @@ skaičiaus skaitmuo ir kol jis jai neparodys,
 keliaženklio ir kokio skaičiaus kvadratas yra tas pradinis skaičius. 
 </text> </p>
 <!--
-questionType=Find.All
+questionType=FindAll
 -->"""@lv ;
     eliozo:problem_number 2 .
 
@@ -1025,7 +1034,7 @@ skaičiaus skaitmenų sandauga?
 </text>
 
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Dzenītis Baltrus, kurš pats ir liels putnu arodbiedrību aktīvists un, ko te slēpt, 
 Atamana Žagatas vēlēšanu uzticamais un personīgais padomdevējs, 
@@ -1062,7 +1071,7 @@ nėra. Kiek daugiausiai kartų po vieno tokio padvigubinimo gali sumažėti tri�
 skaičiaus skaitmenų sandauga?
 </text></p>
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problem_number 1 .
 
@@ -1093,7 +1102,7 @@ surasti jau nebe bet kokį, o jau patį mažiausią iš visų tokių $100$-ženk
 </text>
 
 <!--
-questionType=Find.Any,Find.Min
+questionType=FindExample,FindOptimal
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Žagatu, sīļu un bezdelīgu specializētajā daiļamatniecības skolā, kur 
 kopš gadsimtiem allaž pastiprināti mācīja aritmētiku un spīdīgo akmentiņu cenu 
@@ -1117,7 +1126,7 @@ Antrojoje dalyje jau be jokių užuolankų buvo klausinėjama bei reikalaujama
 surasti jau nebe bet kokį, o jau patį mažiausią iš visų tokių $100$-ženklių skaičių.
 </text></p>
 <!--
-questionType=Find.Any,Find.Min
+questionType=FindExample,FindOptimal
 -->"""@lv ;
     eliozo:problem_number 2 .
 
@@ -1147,7 +1156,7 @@ skaičių porą $(m;n)$ porą, tinkančią tai lygčiai;
 </text>
 
 <!--
-questionType=Find.Any,Find.Count
+questionType=FindExample,FindCount
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Dzenītis Baltrus savu dēlu Bali māca pacietīgi minēt visu, ko vien var, 
 piemēram, visādus naturālus (veselus pozitīvus) vienādojumu atrisinājumus. 
@@ -1170,7 +1179,7 @@ skaičių porą $(m;n)$ porą, tinkančią tai lygčiai;<br />
 <strong>(c)</strong> toliau genelis Baltrus tiesiai paklausė sūnų Balį, kiek iš viso yra tokių porų?
 </text></p>
 <!--
-questionType=Find.Any,Find.Count
+questionType=FindExample,FindCount
 -->"""@lv ;
     eliozo:problem_number 4 .
 
@@ -1202,7 +1211,7 @@ kad padoriems paukščiams siūlomi uždaviniai būna dvejopi: paprasti arba įd
 </text>
 
 <!--
-questionType=Find.Min
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Atamana Žagatas pilnvarots doktorants Ūpis ar saviem maģistrantiem sīļiem un bakalauriem 
 zvirbuļiem pilnīgi bez kļūdām sareizināja visus veselos skaitļus no $1$ līdz $2012$ un, 
@@ -1227,7 +1236,7 @@ juokų slėnis, nors tą aforizmą visi jau ne sykį buvo girdėję: atamanas Š
 kad padoriems paukščiams siūlomi uždaviniai būna dvejopi: paprasti arba įdomūs.
 </text></p>
 <!--
-questionType=Find.Min
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problem_number 6 .
 
@@ -1260,7 +1269,7 @@ negausi, kad jis yra ne be reikalo mokslininkų sugalvotas?
 
 
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Kurmja Karoļa tante Leokādija Rausīte no mazām dienām tic trīsciparu skaitļu 
 harmonijai. Viņa augsti vērtē visus tos trīsciparu skaitļus (un uzskata, ka tie 
@@ -1285,7 +1294,7 @@ koks gi yra pats didžiausias triženklis skaičius, apie kurį niekaip nepasaky
 negausi, kad jis yra ne be reikalo mokslininkų sugalvotas?
 </text></p>
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problem_number 2 .
 
@@ -1311,7 +1320,7 @@ $7$ krūvose būtų po lygiai akmenų. Sužinokite mažiausią galimą $n$ reik�
 </text>
 
 <!--
-questionType=Find.Min
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Zemē noliktas $9$ akmeņu kaudzes (katrā ir vismaz pa vienam akmenim). Bebrs
 Babrungs-Bungs pārbaudīja, ka jebkurās divās kaudzēs akmeņu skaits atšķiras, 
@@ -1330,7 +1339,7 @@ dviejų krūvų visus akmenis įmanoma sumesti į likusias akmenų krūvas taip,
 $7$ krūvose būtų po lygiai akmenų. Sužinokite mažiausią galimą $n$ reikšmę.
 </text></p>
 <!--
-questionType=Find.Min
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problem_number 6 .
 
@@ -1364,7 +1373,7 @@ paskutinysis, $85$-tasis Kiškis Piškis, vardu Mykoliukas?
 </text>
 
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Meža vidū stāv liela tāfele, pie kuras rosās $85$ Zaķi Pišķi, kuri ko prot, ko ne, bet 
 viņi visi raksta skaitļus "gaismas ātrumā". Kā teikts, viņi ir pašā Mācītā Meža vidū 
@@ -1391,7 +1400,7 @@ Koks skaičius bus pats didžiausias iš visų lentoje parašytųjų, kai savo r
 paskutinysis, $85$-tasis Kiškis Piškis, vardu Mykoliukas?
 </text></p>
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problem_number 1 .
 
@@ -1426,7 +1435,7 @@ nesidalija be liekanos iš $4$?
 </text>
 
 <!--
-questionType=Find.Any,Find.Min
+questionType=FindExample,FindOptimal
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Lapsa Snape Saldžūne atkal klāstīja Zaķītim Paikutim kaut kādas pašizdomātas ašas 
 fantāzijas par to, ka nezkur Aritmētikas brikšņos ir tāds daudzciparu skaitlis, kurā 
@@ -1453,7 +1462,7 @@ daugiaženklis skaičius, kuriame yra bent du dvejetai, bent du ketvertai ir ben
 nesidalija be liekanos iš $4$?
 </text></p>
 <!--
-questionType=Find.Any,Find.Min
+questionType=FindExample,FindOptimal
 -->"""@lv ;
     eliozo:problem_number 2 .
 
@@ -1472,7 +1481,7 @@ kurių kiekvienas yra tailandiškai apvalus, gali eiti iš eilės?
 
 
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Naturāls skaitlis ir <em>taizemiski apaļīgs</em>, ja tas ir lielāks par $10$ un
 dalās ar savu ciparu reizinājumu. Cik daudzi naturāli skaitļi, kuri visi ir 
@@ -1483,7 +1492,7 @@ už $10$ ir dalijasi iš savo skaitmenų sandaugos. Kiek natūraliųjų skaiči�
 kurių kiekvienas yra tailandiškai apvalus, gali eiti iš eilės?
 </text></p>
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->"""@lv ;
     eliozo:problem_number 5 .
 
@@ -1520,7 +1529,7 @@ ar nėra ir, suprantama, deramai pagrįskite savo atsakymą.
 </text>
 
 <!--
-questionType=Find.Any,Prove.Other,ProveDisprove.Exists
+questionType=FindExample,Prove,ProveDisprove
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Naturālu skaitli $N$ sauc par <em>debesu atjautības skaitli</em> 
 vai, īsi sakot, <em>Taizemes pērli</em>, ja tam piemīt šāda īpašība: 
@@ -1550,7 +1559,7 @@ kad jis tikrai yra toks.<br />
 ar nėra ir, suprantama, deramai pagrįskite savo atsakymą.
 </text></p>
 <!--
-questionType=Find.Any,Prove.Other,ProveDisprove.Exists
+questionType=FindExample,Prove,ProveDisprove
 -->"""@lv ;
     eliozo:problem_number 6 .
 
@@ -1593,7 +1602,7 @@ koks galėtų būti tas skaičius $N$?
 </text>
 
 <!--
-questionType=Find.All
+questionType=FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Skaitlis $4$ skaitlī $97$ "ietilpst" $24$ reizes un vēl 
 $1$ "atliek", jo $97 = 4 \\cdot 24 + 1$.
@@ -1629,7 +1638,7 @@ Ar galėtumėte tik tiek težinodami paaiškinti mums,
 koks galėtų būti tas skaičius $N$?
 </text></p>
 <!--
-questionType=Find.All
+questionType=FindAll
 -->"""@lv ;
     eliozo:problem_number 3 .
 
@@ -1653,7 +1662,7 @@ skaičių sumos pasirodytų esančios lygios $15$-ai iš eilės einančių natū
 </text>
 
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Netālu no Lielā Ķīnas mūra dzīvo tāds vientuļnieks, kurš saka, ka 
 īsto skaitlisko pilngadību viņš varētu atzīt tikai tādam jaunietim, 
@@ -1670,7 +1679,7 @@ po vieną skaičių kiekviename langelyje, taip, kad visų eilučių ir visų st
 skaičių sumos pasirodytų esančios lygios $15$-ai iš eilės einančių natūraliųjų skaičių?
 </text></p>
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->"""@lv ;
     eliozo:problem_number 5 .
 
@@ -1696,7 +1705,7 @@ kurio nepanaudojo Romario)?
 </text>
 
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Šovasar Brazīlijas presē parādījās ziņojums par neticamu 
 aritmētikas mīļotāja Romario sasniegumu: viņš, izmantojot pa 
@@ -1715,7 +1724,7 @@ padaryti tą patį, nepanaudojus kurio nors kito skaitmens (kito nei tas,
 kurio nepanaudojo Romario)?
 </text></p>
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->"""@lv ;
     eliozo:problem_number 2 .
 
@@ -1741,7 +1750,7 @@ panaudojamas užrašant $n$). Pabandykite:
 </text>
 
 <!--
-questionType=Find.Any,Find.Min
+questionType=FindExample,FindOptimal
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Naturālu skaitli $n$ sauc par <em>brazīliski nobriedušu</em>, ja tas dalās 
 ar $9$, tā decimālpierakstā ir visi $10$ cipari un ja, bez tam, 
@@ -1760,7 +1769,7 @@ panaudojamas užrašant $n$). Pabandykite:<br />
 <strong>(b)</strong> rasti patį mažiausią braziliškai brandų skaičių.
 </text></p>
 <!--
-questionType=Find.Any,Find.Min
+questionType=FindExample,FindOptimal
 -->"""@lv ;
     eliozo:problem_number 3 .
 
@@ -1806,7 +1815,7 @@ Arkliui Dominykui?
 </text>
 
 <!--
-questionType=Prove.Other,Find.Only
+questionType=Prove,FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Zirga Dominika draugs Ēzelītis Apolinārs bieži mēdz pārbaudīt 
 savu skaitlisko izturību. Reizēm viņš saka Dominikam: <br />
@@ -1860,7 +1869,7 @@ Ar ir jums viskas taip pat akivaizdu, kaip ir
 Arkliui Dominykui?
 </text></p>
 <!--
-questionType=Prove.Other,Find.Only
+questionType=Prove,FindAll
 -->"""@lv ;
     eliozo:problem_number 6 .
 

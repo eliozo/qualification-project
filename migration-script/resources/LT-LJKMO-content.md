@@ -9,10 +9,10 @@ Atšifrējiet reizinājumu:
 
 <small>
 
-* [nota.algor.arithm](#)
-* [nota.est.numdigits](#)
-* [alg.ineq.equations](#)
-* [misc.extr.param](#)
+* topic:NumericAlgorithms
+* topic:DecimalNotationDigits
+* topic:NumTheoryInequalityMethod
+* topic:NumTheoryExtremeElement
 
 </small>
 
@@ -24,7 +24,7 @@ Iššifruokite šią sandaugą.
 </text>
 
 <!--
-questionType=Find.All
+questionType=FindAll
 -->
 
 
@@ -61,8 +61,8 @@ un kura visu ciparu summa ir $100$. Atrodiet pašu mazāko šādu skaitli.
 
 <small>
 
-* [nota.divrule.2_5pow.divides](#)
-* [misc.extr](#)
+* topic:DivisibilityRulesLastDigits
+* topic:ExtremeElementMethod
 
 </small>
 
@@ -73,7 +73,7 @@ $100$. Raskite patį mažiausią tokį skaičių.
 </text>
 
 <!--
-questionType=Find.Any,Find.Min
+questionType=FindExample,FindOptimal
 -->
 
 
@@ -98,10 +98,10 @@ kurš bez atlikuma dalās ar $23$?
 
 <small>
 
-* [div.fta.divisors](#)
-* [comb.full](#)
-* [nota.algor.longdiv](#)
-* [seq.recur.linear](#)
+* topic:IntegerFactorization
+* topic:ExhaustionMethod
+* topic:NumericAlgorithms
+* topic:LinearRecurrencesConstant
 
 </small>
 
@@ -111,7 +111,7 @@ besidalijančio skaičiaus skaitmenis?
 </text>
 
 <!--
-questionType=Find.Min
+questionType=FindOptimal
 -->
 
 
@@ -155,8 +155,8 @@ Atrodiet pašu mazāko tādu skaitli.
 
 <small>
 
-* [div.fta.divisors](#)
-* [misc.extr](#)
+* topic:IntegerFactorization
+* topic:ExtremeElementMethod
 
 </small>
 
@@ -169,7 +169,7 @@ Raskite patį mažiausią tokį skaičių.
 </text>
 
 <!--
-questionType=Find.Min
+questionType=FindOptimal
 -->
 
 
@@ -198,10 +198,10 @@ $x-y= x^2 + xy+ y^2$.
 
 <small>
 
-* [alg.equ.guess](#)
-* [alg.equ.parametrize](#)
-* [alg.ineq.quadratic](#)
-* [alg.equ.quadratic.discriminant](#)
+* topic:EquationFactorization
+* topic:EquationComparingSidesAsFunctions
+* topic:NumTheoryInequalitySideComparison
+* topic:QuadraticEquationRootConditions
 
 </small>
 
@@ -211,7 +211,7 @@ $x-y= x^2 + xy+ y^2$ sprendinius.
 </text>
 
 <!--
-questionType=Find.All
+questionType=FindAll
 -->
 
 
@@ -268,7 +268,7 @@ atlikušo skaitļu reizinājums būtu pilns kvadrāts?
 
 <small>
 
-* [div.fta.pow.square](#)
+* topic:PrimeFactorizationAndPowers
 
 </small>
 
@@ -284,7 +284,7 @@ sandauga būtų tikslus kvadratas?
 </text>
 
 <!--
-questionType=Find.Min
+questionType=FindOptimal
 -->
 
 
@@ -322,7 +322,7 @@ $$3xy - x - 2 y = 8.$$
 </text>
 
 <!--
-questionType=Find.Any,Find.All
+questionType=FindExample,FindAll
 -->
 
 
@@ -346,7 +346,7 @@ $n+S(n)=m+S(m)$. Raskite:
 </text>
 
 <!--
-questionType=Find.Any,ProveDisprove.Exists
+questionType=FindExample,ProveDisprove
 -->
 
 
@@ -358,9 +358,9 @@ dalās ar $2003$ un kura ciparu summa vienāda ar $2003$.
 
 <small>
 
-* [nota.combine.padding](#)
-* [misc.invar](#)
-* [seq.arithm.mod](#)
+* topic:NotationInsert
+* topic:Invariant
+* topic:ArithmeticSeriesDivisibility
 
 </small>
 
@@ -370,7 +370,7 @@ dalijasi iš $2003$ ir kurio skaitmenų suma yra lygi $2003$.
 </text>
 
 <!--
-questionType=Find.Any
+questionType=FindExample
 -->
 
 
@@ -435,8 +435,8 @@ vienāds veseliem skaitļiem?
 
 <small>
 
-* [comb.graph.bipartite](#)
-* [div.prop.primes](#)
+* topic:BipartiteGraphs
+* topic:Primes
 
 </small>
 
@@ -449,7 +449,7 @@ sveikiems skaičiams?
 </text>
 
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->
 
 
@@ -494,7 +494,7 @@ dalijasi iš visų $7$ savo skaitmenų.
 </text>
 
 <!--
-questionType=Find.Any,Find.Max,Find.Min
+questionType=FindExample,FindOptimal,FindOptimal
 -->
 
 
@@ -514,7 +514,7 @@ $$mn - n + m = 2004.$$
 </text>
 
 <!--
-questionType=Find.Any,Find.All
+questionType=FindExample,FindAll
 -->
 
 
@@ -532,7 +532,7 @@ Kiek yra dviženklių šimtinių skaičių porų? Nurodykite jas.
 </text>
 
 <!--
-questionType=Find.Count,Find.All
+questionType=FindCount,FindAll
 -->
 
 
@@ -554,7 +554,7 @@ dalijasi iš $11$.
 </text>
 
 <!--
-questionType=Find.Any,Find.Min,Find.Max
+questionType=FindExample,FindOptimal,FindOptimal
 -->
 
 
@@ -584,7 +584,7 @@ spręsime sveikaisiais skaičiais $a$, $b$, $c$ ir $d$.
 </text>
 
 <!--
-questionType=Find.Any,Find.All
+questionType=FindExample,FindAll
 -->
 
 
@@ -600,7 +600,7 @@ summa būtu pilns kvadrāts. Vai baronam ir taisnība, šādi uzskatot?
 
 <small>
 
-* [comb.graph.cycle](#)
+* topic:HamiltonCircuits
 
 </small>
 
@@ -617,7 +617,7 @@ kvadratas. Ar baronas yra teisus taip tikėdamas?
 </text>
 
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->
 
 
@@ -643,7 +643,7 @@ $$x^2 - y^2 - x + y = 2007.$$
 </text>
 
 <!--
-questionType=Find.Count,Find.All,ProveDisprove.Exists
+questionType=FindCount,FindAll,ProveDisprove
 -->
 
 
@@ -686,7 +686,7 @@ už kurį Tomas ir Džeris gautų premiją?
 </text>
 
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->
 
 
@@ -709,7 +709,7 @@ teisingos lygybės trupmenų?
 </text>
 
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->
 
 
@@ -735,7 +735,7 @@ nustatyti, kiek jų yra ir kokie jie yra?
 </text>
 
 <!--
-questionType=ProveDisprove.Exists,Find.All
+questionType=ProveDisprove,FindAll
 -->
 
 
@@ -790,7 +790,7 @@ Kaip čia yra? Atsakymą, suprantama, irgi pagrįskite.
 </text>
 
 <!--
-questionType=ProveDisprove.ForAll,Algorithm
+questionType=ProveDisprove,Algorithm
 -->
 
 
@@ -827,7 +827,7 @@ sprendinį.
 </text>
 
 <!--
-questionType=Prove.Exists
+questionType=Prove
 -->
 
 
@@ -855,7 +855,7 @@ Ar tai įmanoma?
 </text>
 
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->
 
 
@@ -880,7 +880,7 @@ Tai kaip ten yra? Atsakymą princesei pagrįskite.
 </text>
 
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->
 
 
@@ -911,7 +911,7 @@ paskutinysis $4$-tasis dar nežinomas tos sumos (vienetų) skaitmuo.
 </text>
 
 <!--
-questionType=Find.All
+questionType=FindAll
 -->
 
 
@@ -949,7 +949,7 @@ keliaženklio ir kokio skaičiaus kvadratas yra tas pradinis skaičius.
 </text> 
 
 <!--
-questionType=Find.All
+questionType=FindAll
 -->
 
 
@@ -994,7 +994,7 @@ skaičiaus skaitmenų sandauga?
 </text>
 
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->
 
 
@@ -1026,7 +1026,7 @@ surasti jau nebe bet kokį, o jau patį mažiausią iš visų tokių $100$-ženk
 </text>
 
 <!--
-questionType=Find.Any,Find.Min
+questionType=FindExample,FindOptimal
 -->
 
 
@@ -1057,7 +1057,7 @@ skaičių porą $(m;n)$ porą, tinkančią tai lygčiai;
 </text>
 
 <!--
-questionType=Find.Any,Find.Count
+questionType=FindExample,FindCount
 -->
 
 
@@ -1090,7 +1090,7 @@ kad padoriems paukščiams siūlomi uždaviniai būna dvejopi: paprasti arba įd
 </text>
 
 <!--
-questionType=Find.Min
+questionType=FindOptimal
 -->
 
 
@@ -1124,7 +1124,7 @@ negausi, kad jis yra ne be reikalo mokslininkų sugalvotas?
 
 
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->
 
 
@@ -1149,7 +1149,7 @@ $7$ krūvose būtų po lygiai akmenų. Sužinokite mažiausią galimą $n$ reik�
 </text>
 
 <!--
-questionType=Find.Min
+questionType=FindOptimal
 -->
 
 
@@ -1184,7 +1184,7 @@ paskutinysis, $85$-tasis Kiškis Piškis, vardu Mykoliukas?
 </text>
 
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->
 
 
@@ -1220,7 +1220,7 @@ nesidalija be liekanos iš $4$?
 </text>
 
 <!--
-questionType=Find.Any,Find.Min
+questionType=FindExample,FindOptimal
 -->
 
 
@@ -1239,7 +1239,7 @@ kurių kiekvienas yra tailandiškai apvalus, gali eiti iš eilės?
 
 
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 -->
 
 
@@ -1276,7 +1276,7 @@ ar nėra ir, suprantama, deramai pagrįskite savo atsakymą.
 </text>
 
 <!--
-questionType=Find.Any,Prove.Other,ProveDisprove.Exists
+questionType=FindExample,Prove,ProveDisprove
 -->
 
 
@@ -1320,7 +1320,7 @@ koks galėtų būti tas skaičius $N$?
 </text>
 
 <!--
-questionType=Find.All
+questionType=FindAll
 -->
 
 
@@ -1345,7 +1345,7 @@ skaičių sumos pasirodytų esančios lygios $15$-ai iš eilės einančių natū
 </text>
 
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->
 
 
@@ -1372,7 +1372,7 @@ kurio nepanaudojo Romario)?
 </text>
 
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->
 
 
@@ -1398,7 +1398,7 @@ panaudojamas užrašant $n$). Pabandykite:
 </text>
 
 <!--
-questionType=Find.Any,Find.Min
+questionType=FindExample,FindOptimal
 -->
 
 
@@ -1444,7 +1444,7 @@ Arkliui Dominykui?
 </text>
 
 <!--
-questionType=Prove.Other,Find.Only
+questionType=Prove,FindAll
 -->
 
 

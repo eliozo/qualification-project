@@ -1,15 +1,21 @@
 # <lo-sample/> LV.VOL.2024.9.1
 
 Vai eksistē $5$ dažādi naturāli skaitļi ar īpašību, ka to vidējais aritmētiskais ir: 
-**(a)** tieši $3$ reizes lielāks; **(b)** tieši $2$ reizes
+**(A)** tieši $3$ reizes lielāks; **(B)** tieši $2$ reizes
 lielāks nekā visu šo skaitļu lielākais kopīgais dalītājs?
+
+<small>
+
+* questionType:ProveDisprove
+
+</small>
 
 
 ## Atrisinājums
 
-**(a)** Jā, tādi skaitļi ir $1; 2; 3; 4; 5$. To vidējais aritmētiskais ir $(1 + 2 + 3 + 4 + 5) ∶ 5 = 15 ∶ 5 = 3$
+**(A)** Jā, tādi skaitļi ir $1; 2; 3; 4; 5$. To vidējais aritmētiskais ir $(1 + 2 + 3 + 4 + 5) ∶ 5 = 15 ∶ 5 = 3$
 un lielākais kopīgais dalītājs ir $1$.  
-**(b)** Nē, neeksistē. Pieņemsim, ka tādi skaitļi eksistē un to lielākais kopīgais dalītājs ir $d$. 
+**(B)** Nē, neeksistē. Pieņemsim, ka tādi skaitļi eksistē un to lielākais kopīgais dalītājs ir $d$. 
 Tādā gadījumā skaitļi ir
 $a_1d; a_2d; a_3d; a_4d; a_5d$, kur naturāli skaitļi $a_1,a_2,\ldots,a_5$ tiek iegūti 
 sākotnējos piecus skaitļus dalot ar $d$. 
@@ -26,6 +32,13 @@ Nogrieznis $AE$ krusto taisnstūra diagonāli $BD$ punktā $O$. Taisne,
 kas novilkta caur punktu $O$ paralēli $BC$, krusto malas $AB$ un $CD$ 
 attiecīgi punktos $F$ un $G$. Zināms, ka trijstūra
 $BOF$ laukums ir $4$, bet trijstūra $AOD$ laukums ir $63$. Aprēķināt četrstūra $OECG$ laukumu!
+
+<small>
+
+* questionType:FindAll
+
+</small>
+
 
 
 ## Atrisinājums
@@ -51,6 +64,12 @@ Datorklasē ir $n$ ($n \geq 3$) datori, daži no tiem ir savienoti savā starpā
 Ik pa brīdim kāds no datoriem, kurš pirms tam vēl neko nav sūtījis, 
 nosūta ziņojumu visiem datoriem, ar ko tas ir savienots. Pierādīt, ka jebkurā laika brīdī
 var atrast divus datorus, kuri ir saņēmuši vienādu ziņojumu skaitu!
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 ## Atrisinājums
@@ -84,6 +103,12 @@ kāda burta vietā (Gustavs redz, kurā). Pierādīt, ka
 Maruta vienmēr var panākt, 
 ka pēc $12$ gājieniem iegūtās izteiksmes vērtība dalās ar $9$.
 
+<small>
+
+* questionType:Algorithm
+
+</small>
+
 
 ## Atrisinājums
 
@@ -110,6 +135,12 @@ katriem trīs pēc kārtas uzrakstītiem skaitļiem $a,b,c$ izpildās īpašība
 ka skaitlis $a + c$ dalās ar $b+1$. Vai Kims to
 var izdarīt?
 
+<small>
+
+* questionType:ProveDisprove
+
+</small>
+
 ## Atrisinājums 
 
 Nē, Kims nevar uzrakstīt skaitļus prasītājā veidā.
@@ -132,10 +163,16 @@ ko uzrakstīt blakus. Tātad skaitļus pa apli prasītajā veidā nevar uzrakst�
 
 # <lo-sample/> LV.VOL.2024.10.1
 
-Vai var izvēlēties **(a)** $50$; **(b)** $51$ tādus dažādus naturālus skaitļus, 
+Vai var izvēlēties **(A)** $50$; **(B)** $51$ tādus dažādus naturālus skaitļus, 
 kas nepārsniedz $100$, lai jebkuriem diviem izvēlētajiem skaitļiem to starpība 
 (no lielākā skaitļa atņemot mazāko) nebūtu vienāda ar to lielāko kopīgo
 dalītāju?
+
+<small>
+
+* questionType:ProveDisprove
+
+</small>
 
 ## Atrisinājums
 
@@ -153,6 +190,12 @@ Dots izliekts četrstūris $ABCD$, kuram $AB=BC=CD$.
 Četrstūra diagonāles krustojas punktā $E$, bet leņķu $BAD$
 un $ADC$ bisektrises krustojas punktā $F$. Pierādīt, ka 
 $\sphericalangle EAF = \sphericalangle EDF$.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 ## Atrisinājums
 
@@ -219,6 +262,12 @@ x + \frac{1}{x} = 2y^2 \\
 y + \frac{1}{y} = 2z^2 \\
 z + \frac{1}{z} = 2x^2 \\
 \end{array} \right.$$
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 ## Atrisinājums
@@ -308,6 +357,12 @@ izrādījās, ka abās klasēs tas ir palielinājies tieši par
 $1$ punktu (un tagad ir attiecīgi $38$ un $12$ punkti). Cik skolēnu
 kopā piedalījās šajā olimpiādē?
 
+<small>
+
+* questionType:FindCount
+
+</small>
+
 
 ## Atrisinājums
 
@@ -364,6 +419,12 @@ ir mazākais iespējamais sākumā iekrāsoto rūtiņu skaits,
 pie kura var gadīties, ka ar aprakstītajiem gājieniem var
 iekrāsot visas tabulas rūtiņas?
 
+<small>
+
+* questionType:FindOptimal
+
+</small>
+
 ## Atrisinājums
 
 Mazākais sākotnēji iekrāsoto rūtiņu skaits ir $6$, piemēram, skat. 4. att. 
@@ -406,6 +467,12 @@ vismaz viena sākotnēji iekrāsota rūtiņa.
 
 Atrast visus reālu skaitļu pārus $(a;b)$, kuriem ir spēkā nevienādība:
 $$4a + 4b^2 + \sqrt{4a - 4b^2 - 1} \leq 1.$$
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 ## Atrisinājums
 
@@ -455,6 +522,12 @@ Zināms, ka trijstūra
 $BOF$ laukums ir $4$, bet trijstūra $AOD$ laukums ir $63$. 
 Aprēķināt četrstūra $OECG$ laukumu!
 
+<small>
+
+* questionType:FindAll
+
+</small>
+
 
 ## Atrisinājums
 
@@ -500,8 +573,11 @@ var atrast divus datorus, kuri ir saņēmuši vienādu ziņojumu skaitu!
 <small>
 
 * seeAlso:LV.VOL.2024.9.3
+* questionType:Prove
 
 </small>
+
+
 
 
 ## Atrisinājums
@@ -529,6 +605,12 @@ ir pretruna, jo $D_0$ ir savienots tikai ar $D_{n-1}$.
 Kādām naturālām $n$ vērtībām var atrast $2n+1$ naturālus skaitļus (ne obligāti dažādus) 
 ar īpašību, ka, izvēloties jebkurus $n+1$ no tiem, to summa dalīsies ar atlikušo $n$ 
 skaitļu summu?
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 ## Atrisinājums
@@ -580,6 +662,11 @@ Katram pārim tiek aprēķinātas to grafiku visu krustpunktu $y$ koordinātas,
 visas šādi iegūtās $y$ koordinātas tiek
 saskaitītas. Pierādīt, ka spēlētājs $B$ var panākt, lai iegūtā summa būtu tieši $n^3 - n$.
 
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 ## Atrisinājums
@@ -609,6 +696,11 @@ z + \frac{1}{z} = x+y\\
 \end{array} \right.$$
 
 
+<small>
+
+* questionType:FindAll
+
+</small>
 
 ## Atrisinājums
 
@@ -635,6 +727,12 @@ Uz dažādmalu trijstūra $ABC$ malām $AB$ un $AC$ attiecīgi izvēlēti tādi 
 $D$ un $E$, ka $BD = CE$. Trijstūriem $ABE$ un $ACD$
 apvilktās riņķa līnijas krustojas vēl arī punktā $T$. 
 Pierādīt, ka $AT$ ir leņķa $BAC$ bisektrise!
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 ## Atrisinājums
 
@@ -663,13 +761,19 @@ Brālītis sāk. Vienā gājienā var
 paņemt no trauka un apēst vai nu vienu, vai divas konfektes. 
 Uzvar tas spēlētājs, kurš apēd pēdējo konfekti. Kurš
 uzvarēs pareizi spēlējot, ja papildus zināms, ka katrs no viņiem var apēst ne vairāk kā 
-**(a)** $140$; **(b)** $110$ konfektes?
+**(A)** $140$; **(B)** $110$ konfektes?
 (Gadījumā, ja spēlētājs vairs nevar izdarīt gājienu, viņš zaudē).
+
+<small>
+
+* questionType:Algorithm,Algorithm
+
+</small>
 
 
 ## Atrisinājums
 
-**(a)** Vienmēr var uzvarēt Brālītis. Šajā gadījumā $140$ ir pietiekami liels skaitlis 
+**(A)** Vienmēr var uzvarēt Brālītis. Šajā gadījumā $140$ ir pietiekami liels skaitlis 
 un neietekmē spēles gaitu, var spēlēt tā it kā šāda ierobežojuma nebūtu. 
 Tādā gadījumā pirmā spēlētāja stratēģija ir klasiska: vajag
 atstāt pretiniekam konfekšu skaitu, kas dalās ar $3$. Tas nozīmē, ka pirmajā 
@@ -683,7 +787,7 @@ kļūs vienāds ar $0$. Kopā Brālītis būs izdarījis $1 + 66 = 67$ gājienus
 katrā gājienā apēdis ne vairāk kā $2$
 konfektes, tātad kopā viņš būs apēdis ne vairāk kā $67  \cdot 2 = 134$ konfektes.
 
-**(b)** Vienmēr var uzvarēt Karlsons. Šajā gadījumā iepriekšējā stratēģija 
+**(B)** Vienmēr var uzvarēt Karlsons. Šajā gadījumā iepriekšējā stratēģija 
 vairs nedarbojas, jo, ja Brālītis mēģinās to
 pielietot un Karlsons katrā gājienā ēdīs vienu konfekti, tad Brālītim būs jāņem 
 divas un jau pēc $55$ gājieniem viņš
@@ -725,6 +829,12 @@ un $14^n$ (tieši šādā secībā), uzrakstīto skaitli apzīmēsim ar
 $C$ (piemēram, ja $n=2$, tad $C = 4196$). Vai iespējams,
 ka skaitlis $C-1$ ir pirmskaitlis? 
 
+<small>
+
+* questionType:ProveDisprove
+
+</small>
+
 ## Atrisinājums
 
 Pamatosim, ka $C-1$ nevar būt pirmskaitlis. Pieņemsim pretējo, 
@@ -756,6 +866,12 @@ Iegūstam pretrunu ar pieņēmumu, ka $C - 1$ ir pirmskaitlis.
 
 Atrast lielāko reālo skaitli $A$ ar īpašību, ka 
 $3x^2 + y^2 + 1 \geq A(x^2 + xy + x)$ visiem reāliem skaitļiem $x$ un $y$.
+
+<small>
+
+* questionType:FindOptimal
+
+</small>
 
 
 ## Atrisinājums

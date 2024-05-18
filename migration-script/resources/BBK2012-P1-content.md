@@ -1,3 +1,173 @@
+# 1.Daļa: SKAITĻU DALĀMĪBA
+
+## Dalītāji un dalāmība
+
+Viens no galvenajiem skaitļu teorijas jēdzieniem ir skaitļu dalāmība.
+
+**Definīcija:**
+Saka, ka vesels skaitlis $m$ dalās ar veselu skaitli $n$, jeb $n$ ir $m$ dalītājs, 
+ja eksistē tāds vesels skaitlis $k$, kuram $m = n \cdot k$. 
+To pieraksta šādi $m \mathrel{\vdots} n$ jeb $n \mid m$.
+
+**Dalāmības īpašības:**	
+
+**D1.** Ja $a \mid b$ un $a \mid c$, tad $a \mid b+c$ un $a \mid b-c$;  
+**D2.** Ja $a \mid b$, tad $a \mid b \cdot k$;  
+**D3.** Ja $a \mid b_1$, $a\mid b_2$, $\ldots$, $a \mid b_n$, 
+tad $a \mid \left(b_1k_1 + b_2k_2 + \cdots + b_nk_n \right)$;  
+**D4.** Ja $a \mid b$ un $b \mid c$, tad $a \mid c$;  
+**D5.** Ja $a \mid x$ un $b \mid y$, tad $ab \mid xy$;  
+**D6.** Ja $a,b \in \mathbb{N}$, $a \mid b$ un $b \mid a$, tad $a =b$.
+
+
+## Dalīšana ar atlikumu
+
+**Definīcija:**
+Izdalīt veselu skaitli $m$ ar naturālu skaitli $n$ ar atlikumu 
+nozīmē uzrakstīt skaitli formā $m=nq+r$, turklāt $q$ un $r$ 
+ir veseli skaitļi, un $0 \leq r \leq n-1$.
+
+Praktiski dalīšanu ar atlikumu izpilda kā parastu dalīšanu, 
+tikai šo procesu pabeidz, tiklīdz atlikums kļūst mazāks par dalītāju.
+
+Mēs parasti neuzdodam sev jautājumu, vai vienmēr var izdalīt ar atlikumu 
+un vai atlikums nosakāms viennozīmīgi. 
+
+**Teorēma:** 
+Jebkuram veselam skaitlim $m$ un jebkuram naturālam skaitlim $n$ 
+eksistē tieši viens veselu skaitļu pāris $(q,r)$, kuram izpildās nosacījumi:
+$$m = q \cdot n + r,\;\;0 \leq r < n.$$
+
+
+**Pierādījums.** 
+
+* **Eksistence (Izdalīt ar atlikumu vienmēr var).**  
+  Ar $q$ apzīmēsim lielāko veselo skaitli, 
+  kurš nepārsniedz $\frac{m}{n}$; tad  $q \leq \frac{m}{n} < q+1$ un $qn \leq m < qn+n$. 
+  Ar $r$ apzīmēsim skaitli $m-qn$; tātad $m = q \cdot n + r$. 
+  No nevienādībām $qn \leq m < qn+n$ seko, ka $0 \leq r < n$.
+
+* **Unitāte (Izdalīt ar atlikumu var tikai vienā veidā).**  
+  Pieņemsim, ka to pašu skaitli $m$ var izteikt divos dažādos veidos: 
+  $$\left\{ \begin{array}{ll}
+  m = q_1 \cdot n + r_1, & 0 \leq r_1 < n\\
+  m = q_1 \cdot n + r_1, & 0 \leq r_1 < n.\\
+  \end{array} \}$$
+	
+  Atņemot no pirmās vienādības otro, iegūstam:
+
+  $$0 = (q_1 - q_2) \cdot n + (r_1 - r_2)\;\;\text{jeb}\;\; (q_2 - q_1) \cdot n = (r_1 - r_2).$$
+
+  Tātad $r_1 - r_2$ dalās ar $n$. Tā kā $|r_1 - r_2 | < n$, tad 
+  $r_1 - r_2 = 0$ un tādēļ arī $r_1 = r_2$ un $q_1 = q_2$.  
+  Unitāte pierādīta.
+
+
+
+## LKD un MKD 
+
+Pievērsiet īpašu  uzmanību LKD un MKD definīcijām. Tās atšķiras no  
+no skolas programmas. Šajās definīcijās neizmanto attiecības  
+"lielāks" un "mazāks", tikai dalāmības attiecību. 
+Šīs definīcijas var izmantot, lai ieviestu LKD un MKD jēdzienus arī 
+situācijās, kad objekti nav salīdzināmi. 
+(Piemēram, var tādā pašā veidā definēt arī LKD vai MKD diviem polinomiem kaut 
+arī polinomi nav salīdzināmi tāpat kā skaitļi.)
+
+**Definīcija:** Veselu skaitli $d$ sauc par veselu skaitļu $a$ un $b$ 
+*lielāko kopīgo dalītāju* un apzīmē $d = \operatorname{gcd}(a, b)$, 
+ja izpildās sekojošas īpašības:
+	
+1. $d \mid a$ un $d \mid b$;
+2. ja $t$ ir tāds vesels skaitlis, ka $t \mid a$ un $t \mid b$, tad $t \mid d$.
+
+
+**Definīcija:** 
+Veselu skaitli $m$ sauc par veselu skaitļu $a$ un $b$ mazāko kopīgo dalāmo 
+un apzīmē $\operatorname{lcm}(a, b)$, ja tam izpildās sekojošas īpašības:
+
+1. $a \mid m$ un $b \mid m$;
+2. ja $s$ ir tāds vesels skaitlis, ka $a \mid s$ un $b \mid s$, tad $m \mid s$.
+
+Izmantojot definīcijas, var pierādīt, ka skaitļu LKD un MKD ir noteikti viennozīmīgi, 
+ja neņem vērā skaitļu zīmi. Taču LKD un MKD eksistence, ievērojot doto definīciju, 
+ir pietiekami sarežģīts apgalvojums. Eksistences pierādījums ir saistīts ar 
+Eiklīda algoritmu – metodi, kas aprēķina skaitļu 
+(un ne tikai skaitļu, bet, piemēram, arī polinomu) lielāko kopīgo dalītāju.
+
+**LKD īpašības:**
+
+1. $\operatorname{gcd}(a,b) = \operatorname{gcd}(b,a)$,
+2. $\operatorname{gcd}(a,b) = \operatorname{gcd}(a, b+ka)$,
+3. $\operatorname{gcd}(a,b,c) = \operatorname{gcd}(\operatorname{gcd}(a,b),c)$,
+4. $\operatorname{gcd}(ta,tb) = t \cdot \operatorname{gcd}(a,b)$,
+5. $\operatorname{gcd}(a,b) \cdot \operatorname{lcm}(a,b) = a \cdot b$.
+6. Ja $\operatorname{gcd}(x,y) = 1$, $x \mid a$ un $y \mid b$, tad  $xy \mid a$,
+7. Ja $\operatorname{gcd}(a,x) = 1$ un $x \mid ab$, tad $x \mid b$.
+
+
+
+## Eiklīda algoritms
+
+Doti naturāli skaitļi $a_0$ un $a_1$; pieņemsim, ka $a_0 > a_1$. 
+Izdalīsim skaitli $a_0$ ar $a_1$ ar atlikumu: 
+$a_0 = a_1q_1 + a_2$, $0 \leq a_2 < a_1$.  
+Pēc tam izdalīsim  $a_1$ ar $a_2$ ar atlikumu, atlikumu apzīmēsim ar $a_3$. 
+Šo procesu turpināsim, kamēr atlikumā iegūsim $0$. 
+Process beigsies, jo virkne $(a_n)$ ir stingri dilstoša nenegatīvu skaitļu virkne. 
+Rezultātā  iegūsim šādu sistēmu:  
+
+$$\left\{ \begin{array}{ll}
+a_0 = a_1q_1 + a_2, & a_2 < a_1,\\
+a_1 = a_2q_2 + a_3, & a_3 < a_2,\\
+\ldots & \\
+a_{k-2} = a_{k-1}q_{k-1} + a_k, & a_k < a_{k-1},\\
+a_{k-1} = a_kq_k. & \\
+\end{array} \right\}$$
+	
+**Teorēma:** Pēdējais nenulles atlikums, ko iegūst, 
+realizējot Eiklīda algoritmu ar skaitļiem $a_0$ un $a_1$, 
+ir skaitļu $a_0$ un $a_1$ LKD. 
+Turklāt, eksistē tādi veseli skaitļi $t$ un $s$, ka $a_k = ta_0 + sa_1$.
+
+
+## Pirmskaitļi
+
+**Definīcija:**  
+Naturālu skaitli $n>1$ sauc par pirmskaitli, ja tam nav citu dalītāju, 
+izņemot $1$ un $n$.
+
+**Pirmskaitļu īpašības:**
+
+1.  Naturāls skaitlis $n>1$ nav pirmskaitlis tad un tikai tad, 
+    kad eksistē tāds skaitļa $n$ dalītājs $m>1$, kurš nepārsniedz $\sqrt{n}$.
+2. *Eiklīda lemma.* Ja $p$ ir pirmskaitlis, un $p \mid ab$, tad $p \mid a$ vai $p \mid b$.
+3. Eksistē bezgalīgi daudz pirmskaitļu.
+4. *Bertrāna postulāts.* Jebkuram naturālam skaitlim $n \geq 2$ 
+   eksistē pirmskaitlis $p$, kurš atrodas intervālā $n < p < 2n$.
+5. *Dirihlē teorēma.* Ja $(a,b)=1$, tad eksistē bezgalīgi daudz 
+   tādu naturālu skaitļu $n$, ka $an+b$ ir pirmskaitlis.
+
+
+## Dalāmības pazīmes
+
+Šīs tēmas uzdevumos izmantojamas dalāmības pazīmes ar 
+$3$, $9$ un $11$. Tās ir šādas:
+
+* Skaitlis dalās ar $3$, ja tā ciparu summa dalās ar $3$.
+* Skaitlis dalās ar $9$, ja tā ciparu summa dalās ar $9$. 
+* Skaitlis dalās ar $11$, ja tā ciparu summa, kas atrodas pāra pozīcijās,    
+  mīnus ciparu summa, kas atrodas nepāra pozīcijās, dalās ar $11$.
+
+
+Uzdevumi, kas izmanto dalāmības pazīmes ar $2$, $4$, $8$, $5$, $25$ 
+tiks aplūkoti citās tēmās, jo dalāmības pazīmes ar šiem skaitļiem 
+izmanto tikai skaitļu pēdējos ciparus. 
+Aplūkot skaitļa pēdējos ciparus, nozīmē aplūkot skaitli pēc moduļa $10^n$.
+
+
+
+
 # <lo-sample/> BBK2012.P1.1
 
 Vai eksistē 3 viens otram sekojoši skaitļi, kuru reizinājums ir 
@@ -401,6 +571,837 @@ No šejienes redzams, ka $\overline{abcdef}$ dalās ar $13$ tad un tikai tad, ka
 
 
 
+
+
+
+
+
+
+
+# Dalāmības īpašības
+
+Dalāmības īpašības sk. [Jēdziens: dalītājs](Concept-p1.1-divisor.md), 
+šeit papildus izmantojam sekojošus apgalvojumus:
+
+* Ja $p$ ir pirmskaitlis un $p \mid ab$, tad $p \mid a$ vai $p \mid b$.
+* Ja $a_1 \mid m$, $a_2 \mid m$, $\ldots$, $a_n \mid m$, tad
+  $\operatorname{lcm}(a_1,a_2,\ldots,a_n)\,\mid\,m$. 
+* Ja $a$ un $b$ ir savstarpēji pirmskaitļi un $a \mid bc$, tad $a \mid c$.
+
+Pirmās un trešās īpašības pierādījumi nebūt nav vienkārši.
+To pamatā ir teorēma par Eiklīda algoritmu un šīs īpašība tiks pierādītas otrajā nodaļā. 
+Otrā īpašība seko no MKD definīcijas. Taču, rēķinot uzdevumus par skaitļu dalāmību, 
+mums pašreiz nav vajadzības zināt aritmētikas pamatteorēmas pierādījumu, 
+un tāpēc pagaidām izmantosim šīs īpašības uzdevumu risināšanā, atceroties, 
+ka to pierādījumi tiks aplūkoti vēlāk, kad tiks pierādīta aritmētikas pamatteorēma.
+Risinot uzdevumus, jāizmanto arī skaitļa sadalījums pirmreizinātājos 
+un jāmāk uzrakstīt visi skaitļa dalītāji. Arī šajā gadījumā mēs faktiski 
+lietojam aritmētikas pamatteorēmu, kas pagaidām nav pierādīta.
+
+## Jautājumi paškontrolei
+
+Pamatojiet norādītās atbildes.
+
+1. Dots, ka naturāls skaitlis dalās ar $3$ un $4$. Vai šis 
+   skaitlis noteikti dalās ar $12$?  
+   Atbilde: jā.
+2. Dots, ka naturāls skaitlis dalās ar $6$ un $4$. Vai šis skaitlis 
+   noteikti dalās ar 24?  
+   Atbilde: nē. 
+3. Kur ir būtiskā atšķirība starp pirmo un otro jautājumu?  
+   Atbilde: $3$ un $4$ ir savstarpēji pirmskaitļi, bet $6$ un $4$ – nē. 
+4. Skaitlis $A$ nedalās ar $3$. Vai skaitlis $2A$ var dalīties ar $3$?
+   Atbilde: nē.
+5. Dots, ka $A$ ir pāra skaitlis. Vai skaitlis $3A$ 
+   noteikti dalās ar $6$?  
+   Atbilde: jā.
+6. Skaitlis $5A$ dalās ar $3$. Vai skaitlis $A$ noteikti 
+   dalās ar $3$?  
+   Atbilde: jā.
+7. Skaitlis $15A$ dalās ar $6$. Vai skaitlis $A$ 
+   noteikti dalās ar $6$?  
+   Atbilde: nē.
+
+
+
+
+
+# Dalāmības īpašības: Ievaduzdevumi
+
+# <lo-sample/> BBK2012.P1.E2.1
+
+Dots, ka $5 \mid a$ un $5 \mid b$. Pierādiet, ka 
+$5 \mid (a^2 + 7b)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+$5 \mid a$, tātad $5 \mid a^2$ (īpašība **D2**); 
+$5 \mid b$, tātad $5 \mid 7b$ (īpašība **D2**). 
+No īpašības **D1** seko, ka $5 \mid (a^2 + 7b)$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.2
+
+Dots, ka $7 \mid a$. Pierādiet, ka $7 \mid (a^2 + 3a + 7b - 21)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+$7 \mid a$, tātad $7 \mid a^2$ un $7 \mid 3a$ (īpašība **D2**); 
+$7 \mid 7b$ un $7 \mid 21$. No īpašības **D3** seko, ka 
+$7 \mid (a^2 + 3a ­+ 7b - 21)$.
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.3
+ 
+Dots, ka $n \mid a$ un $n \mid (5a + b)$. Pierādiet, ka $n \mid b$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+$b = (5a + b) - 5a$. Tā kā $n \mid (5a + b)$ un $n \mid 5a$ 
+(jo $n \mid a$), tad $n$ ir šo skaitļu starpības dalītājs, t.i., $n \mid b$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.4
+
+Dots, ka $n \mid (a - b)$. Pierādiet, ka $n \mid (a^2 + a - b^2 - b)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+Izteiksmi $a­^­­­­­­2 + a - b2 - b$ var sadalīt reizinātājos 
+$(a - b)(a + b + 1)$. Tā kā $n \mid (a - b)$, 
+tad no īpašības **D2** seko, ka $n \mid (a^­­­­­­­2 + a - b^2 - b)$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.5
+
+Dots, ka $n \mid 3a$ un $n \mid (12a + 5b)$. Pierādiet, ka $n \mid 10b$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+No īpašības **D3** seko, ka $n \mid 5b = (12a +5b) - 4 \cdot 3a$. 
+Tātad $n$ dala arī $10b$ (īpašība **D2**).
+
+
+# <lo-sample/> BBK2012.P1.E2.6
+
+Dots, ka $5 \mid (a - b)$ un $7 \mid (a + b)$. Pierādiet, ka $35 \mid (a^2 - b^2)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+No īpašības **D5** seko, ka $5 \cdot 7 = 35 \mid (a-b)(a+b) = a^2 - b^2$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.7
+
+Doti tādi naturāli skaitļi $a, b, c$, ka $a \mid b$, 
+$b \mid c$, $c \mid a$. Pierādiet, ka 
+$a = b = c$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+No tā, ka $b \mid c$ un $c \mid a$ seko, ka $b \mid a$ (īpašība **D4**). 
+Tā kā $a \mid b$ un $b \mid a$, tad $a = b$ (īpašība **D6**). 
+Līdzīgi pierāda, ka $b = c$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.8
+
+Dots, ka $3 \mid (a - 1)$ un $5 \mid (a+2)$. Pierādiet, 
+ka $15 \mid (a^2 + a - 2)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+Apgalvojums seko no vienādības $a^2 + a - 2 = (a -1)(a + 2)$ un īpašības **D5**.
+
+
+# <lo-sample/> BBK2012.P1.E2.9
+
+Kuri no skaitļiem $101, 111, 141, 143, 155, 161, 163$ ir pirmskaitļi?
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:FindAll
+
+</small>
+
+## Atrisinājums
+
+Visi no dotajiem skaitļiem ir mazāki par $13^2 = 169$. 
+Tātad, lai noskaidrotu, vai dotie skaitļi ir pirmskaitļi, 
+mums jāpārbauda to dalāmība ar pirmskaitļiem, kuri ir mazāki par 13. 
+Tie ir $2$, $3$, $5$, $7$ un $11$. 
+Pārbaudot redzam, ka pirmskaitļi ir skaitļi $101$, $141$, $163$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.10
+
+Atrodiet visus pirmskaitļus intervālā $[100, 120]$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:FindAll
+
+</small>
+
+## Atrisinājums
+
+Tā kā $\sqrt{120} < 11$, tad pietiek pārbaudīt dalāmību ar 
+pirmskaitļiem, kas ir mazāki par $11$. Tie ir 2, 3, 5 un 7. 
+Vienīgais pāra pirmskaitlis ir $2 \not\in [100, 120]$; tāpēc
+pāra skaitļi nav jāaplūko. 
+Izrakstīsim visus nepāra skaitļus no $[100;120]$ un pasvītrosim 
+tos, kas dalās ar $2$, $3$, $5$ vai $7$: 
+
+$$101, 103, \underline{105}, 107, 109, \underline{111}, 113, \underline{115}, \underline{117}, \underline{119}.$$
+
+Nepasvītrotie skaitļi $101$, $103$, $107$, $109$, $113$ ir pirmskaitļi.
+
+
+# <lo-sample/> BBK2012.P1.E2.11
+
+Atrodiet visus pirmskaitļus intervālā $[180, 200]$s.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:FindAll
+
+</small>
+
+## Atrisinājums
+
+Dotajā intervālā pirmskaitļi ir skaitļi  $181$, $191$, $193$, $197$ un $199$.
+Citi neder, jo $3 \mid 183$, $5 \mid 185$, $11 \mid 187$, 
+$3 \mid 189$, $5 \mid 195$ (vai arī ir pāra skaitļi).  
+
+# <lo-sample/> BBK2012.P1.E2.12
+
+Ar kādām naturālām $n$ vērtībām skaitlis $n^2 - 1$ ir pirmskaitlis?
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:FindAll
+
+</small>
+
+## Atrisinājums
+
+Zināms, ka $n^2 - 1 = (n - 1)(n + 1)$. 
+Tātad, ja $n - 1 > 1$, tad $n^2-1$ nav pirmskaitlis, jo $n-1$ 
+ir tā dalītājs, pie kam $n -1 \neq 1$ un $n-1 \neq n^2 -1$. 
+Atliek pārbaudīt $n$ vērtības $n=1$ un $n=2$. 
+Ja $n =1$, tad $n^2 - 1 = 0$ nav pirmskaitlis. 
+Ja $n = 2$, tad $n^2 - 1 = 3$ ir pirmskaitlis.
+
+
+# <lo-sample/> BBK2012.P1.E2.13
+
+Dots, ka $5 \mid 12a$. Pierādiet, ka $5 \mid a$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+No pirmskaitļu 2.īpašības seko, ka $5 \mid 12$ vai $5 \mid a$. 
+Tā kā $\operatorname{gcd}(5, 12) = 1$, tad $5 \mid a$.
+
+
+# <lo-sample/> BBK2012.P1.E2.14
+
+Dots, ka $7 \mid a$ un $7 \mid (2a + 3b)$. Pierādiet, ka $7 \mid b$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+No īpašības **D3** seko, ka $7 \mid (2a + 3b) - 2a = 3b$. 
+No pirmskaitļu 2 īpašības seko, ka $7 \mid b$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.15
+
+Dots, ka $5 \mid 7b$ un $7 \mid 5a$. Pierādiet, ka $35 \mid ab$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+No pirmskaitļu 2.īpašības seko, ka $5 \mid b$ un $7 \mid a$. 
+Tātad $35 \mid ab$ (īpašība **D5**).
+
+
+
+# <lo-sample/> BBK2012.P1.E2.16
+
+Dots, ka $n \mid (5a + 3b)$ un $n \mid (3a + 2b)$. 
+Pierādiet, ka $n \mid a$ un $n \mid b$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+Pareizinot $5a + 3b$ ar $2$ un $3a + 2b$ ar $3$ un atņemot 
+otro izteiksmi no pirmās, iegūsim: $2 (5a + 3b) - 3 (3a + 2b) = a$. 
+Tā kā $n \mid (5a + 3b)$ un $n \mid (3a + 2b)$, tad $n \mid a$ 
+(īpašība **D3**). Izmantojot vienādību $b = 5 (3a + 2b) - 3 (5a + 3b)$,
+pierāda, ka $n \mid b$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.17
+
+Dots, ka $n \mid (3a + 7b)$ un $n \mid (2a + 5b)$. 
+Pierādiet, ka $n \mid a$ un $n \mid b$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+Seko no tā, ka $a = 5 (3a + 7b) - 7 (2a + 5b)$ un 
+$b = 3 (2a + 5b) - 2 (3a + 7b)$.
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.18
+
+Dots, ka $5 \mid (3a + 4b)$ un $5 \mid (2a + 3b)$. 
+Pierādiet, ka $25 \mid ab$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+$5 \mid a$, jo $a = 3 (3a + 4b) - 4 (2a + 3b)$.   
+$5 \mid b$, jo $b = 3 (2a + 3b) - 2 (3a + 4b)$.  
+No īpašības **D5** seko, ka $25 \mid ab$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.19
+
+Pierādiet, ka visiem naturāliem $n$ skaitlis 
+$n^2 + n + 6$ dalās ar $2$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+Viens no skaitļiem $n$ vai $n + 1$ ir pāra skaitlis, 
+tāpēc $n^2+ n = n(n + 1)$ dalās ar $2$. Tātad $2 \mid (n^2+ n + 6)$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.20
+
+Dots, ka $n \mid (a - b)$. Pierādiet, ka $n \mid (a^3 + a^2 - b^3 - b^2)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+Seko no tā, ka $a^3 + a^2 - b^3 - b^2 = (a^3 - b^3) + (a^2 - b^2)$,   
+$(a^3 - b^3) + (a^2 - b^2) = (a - b)(a^2 + ab + b2) + (a - b)(a + b)$.  
+Abi saskaitāmie dalās ar $a-b$, tātad arī ar $n$. 
+
+
+# <lo-sample/> BBK2012.P1.E2.21
+
+Dots, ka $n \mid (a + 2b)$. Pierādiet, ka $n \mid (a^3 + 2a + 8b^3 + 4b)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+Seko no tā, ka $a^3 + 2a + 8b^3 + 4b = (a^3 + 8b^3) + 2(a + 2b)$,  
+$(a^3 + 8b^3) + 2(a + 2b) = (a + 2b)(a^2 - 2ab + 4b^2) + 2(a + 2b)$.  
+Abi saskaitāmie dalās ar $a+2b$, tātad arī ar $n$. 
+
+
+
+# <lo-sample/> BBK2012.P1.E2.22
+
+Dots, ka daļa $a/b$ ir saīsināma. Vai daļa $(a - b)/(a + b)$ ir saīsināma? 
+Un otrādi, ja zināms, ka daļa $(a - b)/(a + b)$ ir saīsināma, 
+vai daļa $a/b$ noteikti ir saīsināma?
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:ProveDisprove
+
+</small>
+
+## Atrisinājums
+
+Jā, ir saīsināma. Ja $n \mid a$ un $n \mid b$, tad $n \mid (a - b)$ un 
+$n \mid (a + b)$. Apgrieztais apgalvojums neizpildās, jo, 
+ņemot, piemēram, $a = 5$ un $b = 3$ redzam, ka daļa $5/3$ 
+nav saīsināma, bet daļa $(5 - 3)/(5 + 3)$ ir saīsināma.
+
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.23
+
+Dots, ka $11 \mid (3x + 7y)$ un $11 \mid (2x + 5y)$. Pierādiet, ka 
+$121 \mid (x^2 + y^2)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+$11 \mid x$, jo $x = 5 (3x + 7y) - 7 (2x + 5y)$ un   
+$11 \mid y$, jo $y = 3 (2x + 5y) - 2 (3x + 7y)$.   
+Tātad $11^2 \mid x^2$, $11^2  \mid y^2$, un $121 \mid x^2 + 3y^2$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.24
+
+Doti tādi naturāli skaitļi $a,b$, ka $a \mid (a + b)$ un $b \mid (a + b)$.
+Pierādiet, ka $a = b$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+No $a \mid (a + b)$ seko, ka $a \mid b$. Līdzīgi iegūstam, ka $b \mid a$. 
+No īpašības **D6** seko, ka $a = b$.
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.25
+
+Dots, ka $2 \mid (a - 1)$ un $3 \mid (a + 1)$. 
+Pierādiet, ka $6 \mid (a^2 + 5)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+No dalāmības īpašībām seko, ka $6 \mid (a - 1)(a + 1) = a^2 - 1$. 
+Tātad $6 \mid (a^2 + 5)$, jo $a^2 + 5 = (a^2 - 1) + 6$.
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.26
+
+Dots, ka $6 \mid (a - b)$ un $6 \mid (a + b)$. 
+Pierādiet, ka $3 \mid (a^2 + 8b^2)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+No tā, ka $6 \mid (a - b)$ seko, ka $6 \mid (a^2 - b^2) = (a - b)(a + b)$. 
+No īpašības **D1** seko, ka $6 \mid (a^2 - b^2 + 6b^2) = a^2 + 5b^2$. 
+Tā kā $3 \mid 6$, tad arī $3 \mid (a^2 + 5b^2)$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.27
+
+Ar kādām naturālām $n$ vērtībām skaitlis $n^3-1$ ir pirmskaitlis?
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:FindAll
+
+</small>
+
+## Atrisinājums
+
+Zināms, ka $n^3 - 1 = (n - 1)(n^2 + n + 1)$. Tātad, ja $n-1 > 1$, 
+tad $n^3-1$ nav pirmskaitlis, jo $n-1$ ir tā dalītājs, pie kam 
+$n-1 >1$ un $n-1 < n^3-1$. Atliek pārbaudīt $n$ vērtības $n = 1$ un $n = 2$.
+Ja $n=1$, tad $n^3-1 = 0$ nav pirmskaitlis. Ja $n = 2$, 
+tad $n^3 - 1 = 7$ ir pirmskaitlis.
+
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.28
+
+Ar kādām naturālām $n$ vērtībām skaitlis $n^2+5n+6$ ir pirmskaitlis? 
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:FindAll
+
+</small>
+
+## Atrisinājums
+
+Skaitlis $n^2 + 5n + 6 = (n + 2)(n + 3)$ nav pirmskaitlis 
+nevienai n vērtībai, jo tas sadalās reizinātājos, kuri ir lielāki par $1$.
+
+
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.29
+
+Ar kādām naturālām $a$ un $b$ vērtībām skaitlis 
+$ab + a + b + 1$ ir pirmskaitlis?
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:FindAll
+
+</small>
+
+## Atrisinājums
+
+Izteiksmi $ab + a + b + 1$ sadalām reizinātājos $(a+1)(b+1)$. 
+Tātad šis skaitlis nav pirmskaitlis nekādām $a$ un $b$ vērtībām, 
+jo abi reizinātāji ir lielāki par $1$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.30
+
+Dots, ka $4 \mid x$ un $3 \mid y$. Pierādiet, ka $12 \mid (xy + 8y + 9x)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+$12 \mid xy$, jo $4 \mid x$ un $3 \mid y$ (īpašība **D5**); 
+$12 \mid 8y$, jo $4 \mid 8$ un $3 \mid y$; $12 \mid 9x$, 
+jo $3 \mid 9$ un $4 \mid x$.  Tātad $12$ dala arī šo skaitļu summu 
+$xy + 8y + 9x$.
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.31
+
+Dots, ka $11 \mid (4a + b)$ un $11 \mid (a+4b)$. Pierādiet, 
+ka $11 \mid a$ un $11 \mid b$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+No uzdevuma nosacījumiem seko, ka skaitlis $4(a + 4b) - (4a +b) = 15b$ 
+dalās ar $11$. No pirmskaitļu 2. īpašības izriet, ka $11 \mid b$. 
+Līdzīgi pierāda, ka $11 \mid a$.
+
+
+
+# <lo-sample/> BBK2012.P1.E2.32
+
+Dots, ka $7 \mid (3a + b)$ un $7 \mid (a + 3b)$. Pierādiet, ka $49 \mid ab$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+$7 \mid (3(a + 3b) - (3a + b)) = 8b$. 
+Tātad, $7 \mid b$. Līdzīgi pierāda, ka $7 \mid a$. 
+No īpašības **D5** seko, ka $49 \mid ab$.
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.33
+
+Dots, ka $7 \mid (2a + 3b)$. Pierādiet, ka $7 \mid (a + 5b)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+No dotā seko, ka $7 \mid 4(2a +3b) = 8a + 12b$. 
+Tātad arī skaitlis 
+$a + 5b = 8a + 12b - 7(a + b)$ dalās ar $7$.
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.34
+
+Dots, ka $13 \mid (a + 4b)$. Pierādiet, ka $13 \mid (10a + b)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+No dotā seko, ka $13 \mid 10(a +4b) = 10a + 40b$. Tātad arī skaitlis 
+$10a + b = (10a + 40b) - 39b$ dalās ar $13$.
+
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.35
+
+Dots, ka $11 \mid (3a + 7b)$. Pierādiet, ka $11 \mid (4a + 2b)$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+No dotā seko, ka $11 \mid 5(3a +7b) = 15a + 35b$. 
+Tātad arī skaitlis 
+$4a + 2b = 15a + 35b - 11(a + 3b)$ dalās ar $11$.
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.36
+
+Pierādiet, ka skaitlis $4a + 5b$ dalās ar $17$ tad un tikai tad, 
+kad skaitlis $7a - 3b$ dalās ar $17$.
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:Prove
+
+</small>
+
+## Atrisinājums
+
+Ja $17 \mid (4a +5b)$, tad arī skaitlis $6(4a +5b) = 24a + 30b$ dalās ar $17$. Tas nozīmē, ka skaitlis $7a - 4b = 24a + 30b - 17(a + 2b)$ dalās ar $17$.
+Līdzīgi pierāda apgriezto apgalvojumu.
+
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.37
+
+Ar kādām naturālām $n$ un $m$ vērtībām skaitlis 
+$(n-m)(n^2+m-1)$ ir pirmskaitlis?
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:FindAll
+
+</small>
+
+## Atrisinājums
+
+Nav tādu $n$ un $m$ vērtību. Vērtības $n<m$ dod negatīvu rezultātu un neder.
+Ja $n-m=0$, tad $0$ nav pirmskaitlis. 
+Ja $n-m \geq 2$, tad izteiksme $(n-m)(n^2+m-1)$ dalās ar $n-m$, pie tam 
+$n-m \neq 1$ un $n-m \neq (n-m)(n^2+m-1)$. 
+
+Visbeidzot, ja $n-m=1$, tad $n^2 + m - 1$, tad 
+$n^2 + (n-1) - 1 = n^2 + n - 2 = n(n+1) - 2$. Tas vienmēr ir pāra skaitlis, 
+jo vismaz viens no $n$ vai $n+1$ ir pāra. Vienīgais pāra pirmskaitlis ir $2$, 
+bet $n(n+1) - 2 \neq 2$ nekādam $n$, jo izteiksme $n(n+1)-2$ ir augoša un 
+pieņem vērtības $0, 4, 10, 18, \ldots$ pie $n=1,2,3,4,\ldots$. 
+Šīs vērtības "pārlec pāri" vērtībai $2$.
+
+
+
+
+
+# <lo-sample/> BBK2012.P1.E2.38
+
+Atrodiet vismaz vienu naturālu skaitli $n$, 
+lai intervālā $[n, n + 10]$ nebūtu neviena pirmskaitļa.
+
+
+<small>
+
+* skill:DivisibilityProperties
+* questionType:FindExample
+
+</small>
+
+## Atrisinājums
+
+Uzdevuma nosacījumus apmierina, piemēram, skaitlis 
+$n = 12! +2 = 479001602$. 
+Tiešām, ja $1 < k < 13$ , tad $12! + k$ ir salikts skaitlis, 
+jo $k$ ir šā skaitļa dalītājs.
+
+Ir arī daudz mazāki atrisinājumi, piemēram $n=114$. 
+Intervālā $[114;126]$ nav neviena pirmskaitļa.
+
+
+
+
+
+
+
+
 # <lo-sample/> BBK2012.P1.27
 
 Ar kādu ciparu beidzas reizinājums
@@ -542,12 +1543,10 @@ nedalās ar $9$. Tas nozīmē, ka to izdarīt nevar.
 Trīs no aritmētiskās progresijas locekļiem ir $41$, $113$, $193$. 
 Atrast lielāko iespējamo diferences vērtību, ja zināms, ka tā ir vesels skaitlis.
 
-
-
 <small>
 
-* [div.common.gcd](#)
-* questionType:Find.Max
+* topic:GcdAndLcm
+* questionType:FindOptimal
 
 </small>
 
@@ -571,12 +1570,12 @@ piederētu vismaz vienai progresijai?
 
 <small>
 
-* [seq.gaps.geom](#)
+* topic:GeometricSeriesGaps
 
 </small>
 
 <!--
-questionType=ProveDisprove.Exists
+questionType=ProveDisprove
 -->
 
 
@@ -590,7 +1589,7 @@ a. visiem naturāliem $n$, $a_n \leq n\sqrt{n}$,
 b. visiem naturāliem $m$ un $n$ starpība $a_m - a_n$ dalās ar $m-n$.
 
 <!--
-questionType=Find.All
+questionType=FindAll
 concepts=square-root
 -->
 
@@ -629,13 +1628,13 @@ Kāda var būt lielākā šīs progresijas diferences vērtība?
 
 <small>
 
-* [div.common.gcd](#)
+* topic:GcdAndLcm
 
 </small>
 
 <!--
 seeAlso=BBK2012.P1.36
-questionType=Find.Max
+questionType=FindOptimal
 -->
 
 
@@ -666,7 +1665,7 @@ katriem diviem lielākais kopīgais dalītājs ir $1$?
 jo $123$ un $9$ abi dalās ar $3$.)
 
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 seeAlso=LV.NO.2001.7.4
 -->
 
@@ -681,14 +1680,14 @@ Atrast skaitļu $a_{1989}$ un $a_{1990}$ lielāko kopīgo dalītāju.
 
 <small>
 
-* [seq.recur.linear](#)
-* [misc.invar.expr](#)
-* [misc.ind](#)
+* topic:LinearRecurrencesConstant
+* topic:InvariantAlgebraic
+* topic:NumTheoryMathInduction
 
 </small>
 
 <!--
-questionType=Find.Only
+questionType=FindAll
 -->
 
 
@@ -699,7 +1698,7 @@ Atrodiet visus tādus dažādu naturālu skaitļu trijniekus,
 kuriem skaitļi $ab$, $ac$ un $bc$ veido aritmētisko progresiju.
 
 <!--
-questionType=Find.All
+questionType=FindAll
 -->
 
 
@@ -730,12 +1729,12 @@ ir bezgalīgi daudz locekļu, kas ir savstarpēji pirmskaitļi ar skaitli $m$.
 
 <small>
 
-* [seq.arithm.mod.all](#)
+* topic:ArithmeticSeriesAll
 
 </small>
 
 <!--
-questionType=Prove.Other
+questionType=Prove
 -->
 
 
@@ -749,14 +1748,14 @@ lielāko kopīgo dalītāju.
 
 <small>
 
-* [seq.recur.other](#)
-* [misc.invar.expr](#)
-* [misc.ind](#)
+* topic:NonlinearRecurrences
+* topic:InvariantAlgebraic
+* topic:NumTheoryMathInduction
 
 </small>
 
 <!--
-questionType=Find.Only
+questionType=FindAll
 -->
 
 
@@ -768,14 +1767,14 @@ dalās ar $7$?
 
 <small>
 
-* [seq.arithm.mod](#)
-* [seq.arithm.numestimate](#)
-* [misc.symm.periodicity](#)
+* topic:ArithmeticSeriesDivisibility
+* topic:MultiplesInInterval
+* topic:SequencePeriodicity
 
 </small>
 
 <!--
-questionType=Find.Count
+questionType=FindCount
 seeAlso=LV.VO.1983.8.1
 -->
 
@@ -789,15 +1788,15 @@ kuri nedalās ne ar $5$, ne ar $7$?
 
 <small>
 
-* [div.common.lcm](#)
-* [seq.arithm.mod](#)
-* [misc.symm.periodicity](#)
-* [seq.arithm.numestimate](#)
+* topic:GcdAndLcm
+* topic:ArithmeticSeriesDivisibility
+* topic:SequencePeriodicity
+* topic:MultiplesInInterval
 
 </small>
 
 <!--
-questionType=Find.Count
+questionType=FindCount
 -->
 
 
@@ -810,13 +1809,13 @@ Atrast
 vai nu ar $3$, vai ar $5$.
 
 <!--
-questionType=Find.Only
+questionType=FindAll
 -->
 
 <small>
 
-* [comb.count.inclexcl](#)
-* [misc.symm.periodicity](#)
+* topic:InclusionExclusionPrinciple
+* topic:SequencePeriodicity
 
 </small>
 
@@ -829,13 +1828,13 @@ un kuri dalās ar $3$?
 
 <small>
 
-* [mod.eq.chinese](#)
-* [misc.symm.periodicity](#)
+* topic:ChineseRemainderTheorem
+* topic:SequencePeriodicity
 
 </small>
 
 <!--
-questionType=Find.Count
+questionType=FindCount
 -->
 
 
@@ -849,13 +1848,13 @@ Pietiek uzrādīt vienu šādu $1328$ skaitļu komplektu.
 
 <small>
 
-* [misc.symm.periodicity](#)
+* topic:SequencePeriodicity
 
 </small>
 
 <!--
 concepts=mutual-primes,gcd
-questionType=Find.Any
+questionType=FindExample
 -->
 
 
@@ -868,7 +1867,7 @@ $$\left\lfloor \frac{n}{k} \right\rfloor +
 \left\lfloor \frac{n+k-1}{k} \right\rfloor = n.$$
 
 <!--
-questionType=Prove.ForAll
+questionType=Prove
 -->
 
 
@@ -887,7 +1886,7 @@ $$=\left\lfloor \frac{q}{p} \right\rfloor +
 \left\lfloor \frac{(p-1)q}{p} \right\rfloor.$$
 
 <!--
-questionType=Prove.ForAll
+questionType=Prove
 -->
 
 
@@ -901,7 +1900,7 @@ $$\left\lfloor \frac{n+1}{2} \right\rfloor +
 \left\lfloor \frac{n+2^k}{2^{k+1}} \right\rfloor + \ldots.$$
 
 <!--
-questionType=Find.Only
+questionType=FindAll
 -->
 
 
@@ -915,7 +1914,7 @@ n \in \mathbb{N}, n\geq 2$$
 izpildās tad un tikai tad, kad $n$ ir pirmskaitlis.
 
 <!--
-questionType=Prove.ForAll
+questionType=Prove
 -->
 
 
@@ -926,7 +1925,7 @@ Atrodiet visus tādus naturālus skaitļus $k$, kuriem virkne $k+1,k+2,\ldots,k+
 satur maksimālo iespējamo pirmskaitļu skaitu.
 
 <!--
-questionType=Find.All
+questionType=FindAll
 -->
 
 
@@ -941,9 +1940,8 @@ $$d(1)+d(2)+\ldots+d(n)= \left\lfloor \frac{n}{1} \right\rfloor +
 
 
 <!--
-questionType=Prove.ForAll
+questionType=Prove
 -->
-
 
 
 

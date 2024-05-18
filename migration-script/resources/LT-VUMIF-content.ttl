@@ -28,7 +28,8 @@ $\\sqrt[5]{5n}$, $\\sqrt[6]{6n}$, $\\sqrt[7]{7n}$
 yra natūralieji.
 </text></p>"""@lv ;
     eliozo:problemYear 2016 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:topic "ChineseRemainderTheorem" .
 
 eliozo:LT.VUMIF.2016.11_12.1 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -126,7 +127,8 @@ yra natūralusis.
 </text></p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
-    eliozo:strategy "CaseAnalysis" .
+    eliozo:strategy "CaseAnalysis" ;
+    eliozo:topic "ExhaustionMethod" .
 
 eliozo:LT.VUMIF.2017.10.1 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -188,7 +190,8 @@ $(m, n)$, tenkinančias lygybę
 $$m^2 + 2m - 9 = n^2 + n.$$
 </text></p>"""@lv ;
     eliozo:problemYear 2017 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:topic "ExhaustionMethod" .
 
 eliozo:LT.VUMIF.2017.11_12.2 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -261,7 +264,8 @@ skaičių $0$, pralaimi. Nustatykite, kuris
 žaidėjas turi pergalės strategiją, ir nurodykite ją.
 </text></p>"""@lv ;
     eliozo:problem_number 4 ;
-    eliozo:strategy "BeginAtTheEnd" .
+    eliozo:strategy "BeginAtTheEnd" ;
+    eliozo:topic "GameInvariant" .
 
 eliozo:LT.VUMIF.2017.9.2 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -294,7 +298,8 @@ kad vienas skaičius būtų kito kvadratas?<br />
 <em>Pastaba.</em> Pirmasis skaičiaus skaitmuo negali būti nulis. 
 </text></p>"""@lv ;
     eliozo:problemYear 2017 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:topic "ExhaustionMethod" .
 
 eliozo:LT.VUMIF.2018.10.4 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -329,7 +334,8 @@ užrašydami, koks gali būti skaičiaus $n$
 skaidinys pirminiais daugikliais.
 </text></p>"""@lv ;
     eliozo:problemYear 2018 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:topic "FactorizationAndDivisibility" .
 
 eliozo:LT.VUMIF.2018.11_12.4 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -446,7 +452,8 @@ vienetų, $10$ dvejetų, $\\ldots$, $10$ septynetų.
 skaičius dalijasi iš kito, tai jie lygūs.
 </text></p>"""@lv ;
     eliozo:problemYear 2019 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:topic "ModularArithmetic" .
 
 eliozo:LT.VUMIF.2019.11_12.4 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -491,7 +498,8 @@ kad a) $M$ nesidalija iš jokio penktinio skaičiaus,
 išskyrus save patį; 
 b) $N$ nesidalija iš jokio penktinio skaičiaus.
 </text></p>"""@lv ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:topic "ExhaustionMethod" .
 
 eliozo:LT.VUMIF.2019.9.1 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -610,7 +618,8 @@ kurioms jis gali užsitikrinti pergalę,
 kad ir kaip žaistų Algis.
 </text></p>"""@lv ;
     eliozo:problemYear 2019 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:topic "StrongAndReverseInduction" .
 
 eliozo:LT.VUMIF.2019.9.4 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -653,7 +662,8 @@ skaitmenis. Kokį skaitmenų trejetą jis
 galėjo gauti? Raskite visas galimybes.
 </text></p>"""@lv ;
     eliozo:problemYear 2019 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:topic "DivisibilityRulesLastDigits" .
 
 eliozo:IMG.LT.VUMIF.2017.11_12.4.svg a eliozo:Image ;
     eliozo:imageSrc "LT.VUMIF.2017.11_12.4.svg" ;
@@ -1100,14 +1110,13 @@ Ja $k=37, 127, 217$, tad reizinot tos ar jebkādiem
 piecīga skaitļa $P$ pēdējiem cipariem (kur pats pēdējais 
 cipars ir "3"), neiegūstam beigās ciparus "81":
 
-<table>
-<tr><th>$k$</th><th>$37$</th><th>$127$</th><th>$217$</th></tr>
-<tr><th>$P=\\ldots23$</th><td>$\\ldots51$</td><td>$\\ldots21$</td><td>$\\ldots91$</td></tr>
-<tr><th>$P=\\ldots33$</th><td>$\\ldots21$</td><td>$\\ldots91$</td><td>$\\ldots61$</td></tr>
-<tr><th>$P=\\ldots43$</th><td>$\\ldots91$</td><td>$\\ldots61$</td><td>$\\ldots31$</td></tr>
-<tr><th>$P=\\ldots53$</th><td>$\\ldots61$</td><td>$\\ldots31$</td><td>$\\ldots01$</td></tr>
-<tr><th>$P=\\ldots63$</th><td>$\\ldots31$</td><td>$\\ldots01$</td><td>$\\ldots71$</td></tr>
-</table>"""@lv ;
+| $k$             | $37$         | $127$      | $217$      |
+| --------------- | ------------ | ---------- | ---------- |
+| $P=\\ldots{}23$  | $\\ldots{}51$ | $\\ldots21$ | $\\ldots91$ |
+| $P=\\ldots{}33$  | $\\ldots{}21$ | $\\ldots91$ | $\\ldots61$ |
+| $P=\\ldots{}43$  | $\\ldots{}91$ | $\\ldots61$ | $\\ldots31$ |
+| $P=\\ldots{}53$  | $\\ldots{}61$ | $\\ldots31$ | $\\ldots01$ |
+| $P=\\ldots{}63$  | $\\ldots{}31$ | $\\ldots01$ | $\\ldots71$ |"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <ul>
 <li>Piecīgam skaitlim ciparu summa: 
@@ -1145,12 +1154,46 @@ Ja $k=37, 127, 217$, tad reizinot tos ar jebkādiem
 piecīga skaitļa $P$ pēdējiem cipariem (kur pats pēdējais 
 cipars ir "3"), neiegūstam beigās ciparus "81":</p>
 <table>
-<tr><th>$k$</th><th>$37$</th><th>$127$</th><th>$217$</th></tr>
-<tr><th>$P=\\ldots23$</th><td>$\\ldots51$</td><td>$\\ldots21$</td><td>$\\ldots91$</td></tr>
-<tr><th>$P=\\ldots33$</th><td>$\\ldots21$</td><td>$\\ldots91$</td><td>$\\ldots61$</td></tr>
-<tr><th>$P=\\ldots43$</th><td>$\\ldots91$</td><td>$\\ldots61$</td><td>$\\ldots31$</td></tr>
-<tr><th>$P=\\ldots53$</th><td>$\\ldots61$</td><td>$\\ldots31$</td><td>$\\ldots01$</td></tr>
-<tr><th>$P=\\ldots63$</th><td>$\\ldots31$</td><td>$\\ldots01$</td><td>$\\ldots71$</td></tr>
+<thead>
+<tr>
+<th>$k$</th>
+<th>$37$</th>
+<th>$127$</th>
+<th>$217$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P=\\ldots{}23$</td>
+<td>$\\ldots{}51$</td>
+<td>$\\ldots21$</td>
+<td>$\\ldots91$</td>
+</tr>
+<tr>
+<td>$P=\\ldots{}33$</td>
+<td>$\\ldots{}21$</td>
+<td>$\\ldots91$</td>
+<td>$\\ldots61$</td>
+</tr>
+<tr>
+<td>$P=\\ldots{}43$</td>
+<td>$\\ldots{}91$</td>
+<td>$\\ldots61$</td>
+<td>$\\ldots31$</td>
+</tr>
+<tr>
+<td>$P=\\ldots{}53$</td>
+<td>$\\ldots{}61$</td>
+<td>$\\ldots31$</td>
+<td>$\\ldots01$</td>
+</tr>
+<tr>
+<td>$P=\\ldots{}63$</td>
+<td>$\\ldots{}31$</td>
+<td>$\\ldots01$</td>
+<td>$\\ldots71$</td>
+</tr>
+</tbody>
 </table>"""@lv .
 
 eliozo:SOLN.LT.VUMIF.2019.9.2 a eliozo:Solution ;
@@ -1163,52 +1206,21 @@ jebkurš viņa gājiens noved karstā pozīcijā (no kuras pretinieks var atkal 
 līdz otrā spēlētāja uzvarai. 
 
 
-Pipe table:
-
-| Header 1 | Header 2 | Header 3 |
-|----------|----------|----------|
-| Row 1    | Data 1   | Data 2   |
-| Row 2    | Data 3   | Data 4   |
-
-
-Grid table: 
-
-+-----------+-----------+-----------+
-| Header 1  | Header 2  | Header 3  |
-+===========+===========+===========+
-| Row 1     | Data 1    | Data 2    |
-+-----------+-----------+-----------+
-| Row 2     | Data 3    | Data 4    |
-+-----------+-----------+-----------+
+| **(0,0)** | (1,0)     | **(2,0)** | (3,0)     | **(4,0)** | 
+| --------- | --------- | --------- | --------- | --------- |
+| (0,1)     | (1,1)     | (2,1)     | (3,1)     | (4,1)     | 
+| **(0,2)** | (1,2)     | **(2,2)** | (3,2)     | **(4,2)** | 
+| (0,3)     | (1,3)     | (2,3)     | (3,3)     | (4,3)     | 
+| **(0,4)** | (1,4)     | **(2,4)** | (3,4)     | **(4,4)** | 
 
 
 
-
-<table>
-<tr>
-<td><blue>(0,0)</blue></td><td><red>(1,0)</red></td><td><blue>(2,0)</blue></td><td><red>(3,0)</red></td><td><blue>(4,0)</blue></td>
-</tr>
-<tr>
-<td><red>(0,1)</red></td><td><red>(1,1)</red></td><td><red>(2,1)</red></td><td><red>(3,1)</red></td><td><red>(4,1)</red></td>
-</tr>
-<tr>
-<td><blue>(0,2)</blue></td><td><red>(1,2)</red></td><td><blue>(2,2)</blue></td><td><red>(3,2)</red></td><td><blue>(4,2)</blue></td>
-</tr>
-<tr>
-<td><red>(0,3)</red></td><td><red>(1,3)</red></td><td><red>(2,3)</red></td><td><red>(3,3)</red></td><td><red>(4,3)</red></td>
-</tr>
-<tr>
-<td><blue>(0,4)</blue></td><td><red>(1,4)</red></td><td><blue>(2,4)</blue></td><td><red>(3,4)</red></td><td><blue>(4,4)</blue></td>
-</tr>
-</table>
-
-* <blue>(0,0)</blue> ir auksta pozīcija; ja tā ir pēc Baļa gājiena, viņš uzvar. 
+* **(0,0)** ir auksta pozīcija; ja tā ir pēc Baļa gājiena, viņš tūlīt uzvar. 
 * Pozīcijas, no kurām **eksistē** gājiens 
-uz <blue>(0,0)</blue> ir karstas=sarkanas. Tajās
-uzvar tas, kam pirmais gājiens: <red>(0,1)</red>, <red>(1,0)</red>, 
-<red>(1,1)</red>.
-* No <blue>(0,2)</blue> un <blue>(2,0)</blue> **katrs** gājiens ir uz
-karstu pozīciju; tādēļ tās ir aukstas. 
+  uz **(0,0)** ir karstas. Tajās
+  uzvar tas, kam pirmais gājiens: (0,1), (1,0), (1,1).
+* No (0,2) un (2,0) **katrs** gājiens ir uz
+  karstu pozīciju; tādēļ tās ir aukstas. 
 
 
 Ievērojam, ka aukstām pozīcijām izpildās īpašība: abi 
@@ -1221,7 +1233,7 @@ abi skaitļi atkal ir pāru skaitļi.
 Algis noteikti rada vienu vai divus nepāru skaitļus pēc sava gājiena.
 
 * Ja pēc viņa gājiena ir viens nepāru skaitlis, 
-tad Balis no tā atņem $1$. 
+  tad Balis no tā atņem $1$. 
 * Ja abi ir nepāru, tad Balis atņem no abiem.
 
 
@@ -1239,62 +1251,54 @@ Skaitļiem $(m_2,n_2)$ Balis uzvar pēc induktīvā pieņēmuma. Pretruna."""@lv
 Galīgā divu spēlētāju spēlē par aukstu pozīciju sauksim tādu, kurā pirmajam spēlētājam neeksistē uzvaroša stratēģija: 
 jebkurš viņa gājiens noved karstā pozīcijā (no kuras pretinieks var atkal atgriezties aukstā pozīcijā utt. 
 līdz otrā spēlētāja uzvarai. </p>
-<p>Pipe table:</p>
 <table>
 <thead>
 <tr>
-<th>Header 1</th>
-<th>Header 2</th>
-<th>Header 3</th>
+<th><strong>(0,0)</strong></th>
+<th>(1,0)</th>
+<th><strong>(2,0)</strong></th>
+<th>(3,0)</th>
+<th><strong>(4,0)</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Row 1</td>
-<td>Data 1</td>
-<td>Data 2</td>
+<td>(0,1)</td>
+<td>(1,1)</td>
+<td>(2,1)</td>
+<td>(3,1)</td>
+<td>(4,1)</td>
 </tr>
 <tr>
-<td>Row 2</td>
-<td>Data 3</td>
-<td>Data 4</td>
+<td><strong>(0,2)</strong></td>
+<td>(1,2)</td>
+<td><strong>(2,2)</strong></td>
+<td>(3,2)</td>
+<td><strong>(4,2)</strong></td>
+</tr>
+<tr>
+<td>(0,3)</td>
+<td>(1,3)</td>
+<td>(2,3)</td>
+<td>(3,3)</td>
+<td>(4,3)</td>
+</tr>
+<tr>
+<td><strong>(0,4)</strong></td>
+<td>(1,4)</td>
+<td><strong>(2,4)</strong></td>
+<td>(3,4)</td>
+<td><strong>(4,4)</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Grid table: </p>
-<p>+-----------+-----------+-----------+
-| Header 1  | Header 2  | Header 3  |
-+===========+===========+===========+
-| Row 1     | Data 1    | Data 2    |
-+-----------+-----------+-----------+
-| Row 2     | Data 3    | Data 4    |
-+-----------+-----------+-----------+</p>
-<table>
-<tr>
-<td><blue>(0,0)</blue></td><td><red>(1,0)</red></td><td><blue>(2,0)</blue></td><td><red>(3,0)</red></td><td><blue>(4,0)</blue></td>
-</tr>
-<tr>
-<td><red>(0,1)</red></td><td><red>(1,1)</red></td><td><red>(2,1)</red></td><td><red>(3,1)</red></td><td><red>(4,1)</red></td>
-</tr>
-<tr>
-<td><blue>(0,2)</blue></td><td><red>(1,2)</red></td><td><blue>(2,2)</blue></td><td><red>(3,2)</red></td><td><blue>(4,2)</blue></td>
-</tr>
-<tr>
-<td><red>(0,3)</red></td><td><red>(1,3)</red></td><td><red>(2,3)</red></td><td><red>(3,3)</red></td><td><red>(4,3)</red></td>
-</tr>
-<tr>
-<td><blue>(0,4)</blue></td><td><red>(1,4)</red></td><td><blue>(2,4)</blue></td><td><red>(3,4)</red></td><td><blue>(4,4)</blue></td>
-</tr>
-</table>
-
 <ul>
-<li><blue>(0,0)</blue> ir auksta pozīcija; ja tā ir pēc Baļa gājiena, viņš uzvar. </li>
+<li><strong>(0,0)</strong> ir auksta pozīcija; ja tā ir pēc Baļa gājiena, viņš tūlīt uzvar. </li>
 <li>Pozīcijas, no kurām <strong>eksistē</strong> gājiens 
-uz <blue>(0,0)</blue> ir karstas=sarkanas. Tajās
-uzvar tas, kam pirmais gājiens: <red>(0,1)</red>, <red>(1,0)</red>, 
-<red>(1,1)</red>.</li>
-<li>No <blue>(0,2)</blue> un <blue>(2,0)</blue> <strong>katrs</strong> gājiens ir uz
-karstu pozīciju; tādēļ tās ir aukstas. </li>
+  uz <strong>(0,0)</strong> ir karstas. Tajās
+  uzvar tas, kam pirmais gājiens: (0,1), (1,0), (1,1).</li>
+<li>No (0,2) un (2,0) <strong>katrs</strong> gājiens ir uz
+  karstu pozīciju; tādēļ tās ir aukstas. </li>
 </ul>
 <p>Ievērojam, ka aukstām pozīcijām izpildās īpašība: abi 
 skaitļi ir pāru. </p>
@@ -1304,7 +1308,7 @@ abi skaitļi atkal ir pāru skaitļi. </p>
 <p>Algis noteikti rada vienu vai divus nepāru skaitļus pēc sava gājiena.</p>
 <ul>
 <li>Ja pēc viņa gājiena ir viens nepāru skaitlis, 
-tad Balis no tā atņem $1$. </li>
+  tad Balis no tā atņem $1$. </li>
 <li>Ja abi ir nepāru, tad Balis atņem no abiem.</li>
 </ul>
 <p><strong>Apgalvojums:</strong> Balis uzvar visiem $(m,n)$, kas ir pāru skaitļi. </p>
@@ -1360,23 +1364,12 @@ tad reizinājums dalās ar $5\\cdot{}5\\cdot{}10 = 250$.
 cipari dalās ar $250$ ($000$, $250$, $500$, $750$). 
 * Var dabūt jebkuru 3 ciparu kombināciju, kas dalās ar $250$
 
-<table>
-<tr>
-<th>$(a,b,c)$</th><th>$abc$ beidzamie cipari</th>
-</tr>
-<tr>
-<th>$(5,5,10)$</th><td>$250$</td>
-</tr>
-<tr>
-<th>$(5,5,20)$</th><td>$500$</td>
-</tr>
-<tr>
-<th>$(5,15,10)$</th><td>$750$</td>
-</tr>
-<tr>
-<th>$(5,5,40)$</th><td>$1\\,000$</td>
-</tr>
-</table>"""@lv ;
+| $(a,b,c)$    | $abc$ beidzamie cipari | 
+| ------------ | ---------------------- |
+| $(5,5,10)$   | $250$                  |
+| $(5,5,20)$   | $500$                  |
+| $(5,15,10)$  | $750$                  |
+| $(5,5,40)$   | $1000$                 |"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p><strong>Definīcija:</strong> Ar $a \\equiv b\\;(\\mbox{mod}\\,10)$ apzīmējam to, ka
 $a$ un $b$ dod vienādus atlikumus, dalot ar $10$ (jeb beidzas
@@ -1414,20 +1407,29 @@ cipari dalās ar $250$ ($000$, $250$, $500$, $750$). </li>
 <li>Var dabūt jebkuru 3 ciparu kombināciju, kas dalās ar $250$</li>
 </ul>
 <table>
+<thead>
 <tr>
-<th>$(a,b,c)$</th><th>$abc$ beidzamie cipari</th>
+<th>$(a,b,c)$</th>
+<th>$abc$ beidzamie cipari</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(5,5,10)$</td>
+<td>$250$</td>
 </tr>
 <tr>
-<th>$(5,5,10)$</th><td>$250$</td>
+<td>$(5,5,20)$</td>
+<td>$500$</td>
 </tr>
 <tr>
-<th>$(5,5,20)$</th><td>$500$</td>
+<td>$(5,15,10)$</td>
+<td>$750$</td>
 </tr>
 <tr>
-<th>$(5,15,10)$</th><td>$750$</td>
+<td>$(5,5,40)$</td>
+<td>$1000$</td>
 </tr>
-<tr>
-<th>$(5,5,40)$</th><td>$1\\,000$</td>
-</tr>
+</tbody>
 </table>"""@lv .
 

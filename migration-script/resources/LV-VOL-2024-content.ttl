@@ -10,16 +10,17 @@ eliozo:LV.VOL.2024.10.1 a eliozo:Problem ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2024.10.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.1 ;
-    eliozo:problemText """Vai var izvēlēties **(a)** $50$; **(b)** $51$ tādus dažādus naturālus skaitļus, 
+    eliozo:problemText """Vai var izvēlēties **(A)** $50$; **(B)** $51$ tādus dažādus naturālus skaitļus, 
 kas nepārsniedz $100$, lai jebkuriem diviem izvēlētajiem skaitļiem to starpība 
 (no lielākā skaitļa atņemot mazāko) nebūtu vienāda ar to lielāko kopīgo
 dalītāju?"""@lv ;
-    eliozo:problemTextHtml """<p>Vai var izvēlēties <strong>(a)</strong> $50$; <strong>(b)</strong> $51$ tādus dažādus naturālus skaitļus, 
+    eliozo:problemTextHtml """<p>Vai var izvēlēties <strong>(A)</strong> $50$; <strong>(B)</strong> $51$ tādus dažādus naturālus skaitļus, 
 kas nepārsniedz $100$, lai jebkuriem diviem izvēlētajiem skaitļiem to starpība 
 (no lielākā skaitļa atņemot mazāko) nebūtu vienāda ar to lielāko kopīgo
 dalītāju?</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.VOL.2024.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -41,7 +42,8 @@ $\\sphericalangle EAF = \\sphericalangle EDF$."""@lv ;
 un $ADC$ bisektrises krustojas punktā $F$. Pierādīt, ka 
 $\\sphericalangle EAF = \\sphericalangle EDF$.</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.VOL.2024.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -65,7 +67,8 @@ y + \\frac{1}{y} = 2z^2 \\
 z + \\frac{1}{z} = 2x^2 \\
 \\end{array} \\right.$$</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.VOL.2024.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -95,7 +98,8 @@ izrādījās, ka abās klasēs tas ir palielinājies tieši par
 $1$ punktu (un tagad ir attiecīgi $38$ un $12$ punkti). Cik skolēnu
 kopā piedalījās šajā olimpiādē?</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "FindCount" .
 
 eliozo:LV.VOL.2024.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -127,7 +131,8 @@ ir mazākais iespējamais sākumā iekrāsoto rūtiņu skaits,
 pie kura var gadīties, ka ar aprakstītajiem gājieniem var
 iekrāsot visas tabulas rūtiņas?</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "FindOptimal" .
 
 eliozo:LV.VOL.2024.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -143,7 +148,8 @@ $$4a + 4b^2 + \\sqrt{4a - 4b^2 - 1} \\leq 1.$$"""@lv ;
     eliozo:problemTextHtml """<p>Atrast visus reālu skaitļu pārus $(a;b)$, kuriem ir spēkā nevienādība:
 $$4a + 4b^2 + \\sqrt{4a - 4b^2 - 1} \\leq 1.$$</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.VOL.2024.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -170,7 +176,8 @@ Zināms, ka trijstūra
 $BOF$ laukums ir $4$, bet trijstūra $AOD$ laukums ir $63$. 
 Aprēķināt četrstūra $OECG$ laukumu!</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.VOL.2024.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -193,6 +200,7 @@ Pierādīt, ka jebkurā laika brīdī
 var atrast divus datorus, kuri ir saņēmuši vienādu ziņojumu skaitu!</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" ;
     eliozo:seeAlso "LV.VOL.2024.9.3" .
 
 eliozo:LV.VOL.2024.11.4 a eliozo:Problem ;
@@ -211,7 +219,8 @@ skaitļu summu?"""@lv ;
 ar īpašību, ka, izvēloties jebkurus $n+1$ no tiem, to summa dalīsies ar atlikušo $n$ 
 skaitļu summu?</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.VOL.2024.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -249,7 +258,8 @@ Katram pārim tiek aprēķinātas to grafiku visu krustpunktu $y$ koordinātas,
 visas šādi iegūtās $y$ koordinātas tiek
 saskaitītas. Pierādīt, ka spēlētājs $B$ var panākt, lai iegūtā summa būtu tieši $n^3 - n$.</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.VOL.2024.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -273,7 +283,8 @@ y + \\frac{1}{y} = x+z\\
 z + \\frac{1}{z} = x+y\\
 \\end{array} \\right.$$</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.VOL.2024.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -294,7 +305,8 @@ $D$ un $E$, ka $BD = CE$. Trijstūriem $ABE$ un $ACD$
 apvilktās riņķa līnijas krustojas vēl arī punktā $T$. 
 Pierādīt, ka $AT$ ir leņķa $BAC$ bisektrise!</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.VOL.2024.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -310,17 +322,18 @@ Brālītis sāk. Vienā gājienā var
 paņemt no trauka un apēst vai nu vienu, vai divas konfektes. 
 Uzvar tas spēlētājs, kurš apēd pēdējo konfekti. Kurš
 uzvarēs pareizi spēlējot, ja papildus zināms, ka katrs no viņiem var apēst ne vairāk kā 
-**(a)** $140$; **(b)** $110$ konfektes?
+**(A)** $140$; **(B)** $110$ konfektes?
 (Gadījumā, ja spēlētājs vairs nevar izdarīt gājienu, viņš zaudē)."""@lv ;
     eliozo:problemTextHtml """<p>Uz galda traukā ir $200$ konfektes. Brālītis un Karlsons pēc kārtas izdara gājienus, 
 Brālītis sāk. Vienā gājienā var
 paņemt no trauka un apēst vai nu vienu, vai divas konfektes. 
 Uzvar tas spēlētājs, kurš apēd pēdējo konfekti. Kurš
 uzvarēs pareizi spēlējot, ja papildus zināms, ka katrs no viņiem var apēst ne vairāk kā 
-<strong>(a)</strong> $140$; <strong>(b)</strong> $110$ konfektes?
+<strong>(A)</strong> $140$; <strong>(B)</strong> $110$ konfektes?
 (Gadījumā, ja spēlētājs vairs nevar izdarīt gājienu, viņš zaudē).</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Algorithm" .
 
 eliozo:LV.VOL.2024.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -342,7 +355,8 @@ un $14^n$ (tieši šādā secībā), uzrakstīto skaitli apzīmēsim ar
 $C$ (piemēram, ja $n=2$, tad $C = 4196$). Vai iespējams,
 ka skaitlis $C-1$ ir pirmskaitlis?</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.VOL.2024.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -358,7 +372,8 @@ $3x^2 + y^2 + 1 \\geq A(x^2 + xy + x)$ visiem reāliem skaitļiem $x$ un $y$."""
     eliozo:problemTextHtml """<p>Atrast lielāko reālo skaitli $A$ ar īpašību, ka 
 $3x^2 + y^2 + 1 \\geq A(x^2 + xy + x)$ visiem reāliem skaitļiem $x$ un $y$.</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "FindOptimal" .
 
 eliozo:LV.VOL.2024.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -370,13 +385,14 @@ eliozo:LV.VOL.2024.9.1 a eliozo:Problem ;
     eliozo:problemID "LV.VOL.2024.9.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.1 ;
     eliozo:problemText """Vai eksistē $5$ dažādi naturāli skaitļi ar īpašību, ka to vidējais aritmētiskais ir: 
-**(a)** tieši $3$ reizes lielāks; **(b)** tieši $2$ reizes
+**(A)** tieši $3$ reizes lielāks; **(B)** tieši $2$ reizes
 lielāks nekā visu šo skaitļu lielākais kopīgais dalītājs?"""@lv ;
     eliozo:problemTextHtml """<p>Vai eksistē $5$ dažādi naturāli skaitļi ar īpašību, ka to vidējais aritmētiskais ir: 
-<strong>(a)</strong> tieši $3$ reizes lielāks; <strong>(b)</strong> tieši $2$ reizes
+<strong>(A)</strong> tieši $3$ reizes lielāks; <strong>(B)</strong> tieši $2$ reizes
 lielāks nekā visu šo skaitļu lielākais kopīgais dalītājs?</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.VOL.2024.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -399,7 +415,8 @@ kas novilkta caur punktu $O$ paralēli $BC$, krusto malas $AB$ un $CD$
 attiecīgi punktos $F$ un $G$. Zināms, ka trijstūra
 $BOF$ laukums ir $4$, bet trijstūra $AOD$ laukums ir $63$. Aprēķināt četrstūra $OECG$ laukumu!</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.VOL.2024.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -419,7 +436,8 @@ Ik pa brīdim kāds no datoriem, kurš pirms tam vēl neko nav sūtījis,
 nosūta ziņojumu visiem datoriem, ar ko tas ir savienots. Pierādīt, ka jebkurā laika brīdī
 var atrast divus datorus, kuri ir saņēmuši vienādu ziņojumu skaitu!</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.VOL.2024.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -445,7 +463,8 @@ kāda burta vietā (Gustavs redz, kurā). Pierādīt, ka
 Maruta vienmēr var panākt, 
 ka pēc $12$ gājieniem iegūtās izteiksmes vērtība dalās ar $9$.</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "Algorithm" .
 
 eliozo:LV.VOL.2024.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -467,7 +486,8 @@ katriem trīs pēc kārtas uzrakstītiem skaitļiem $a,b,c$ izpildās īpašība
 ka skaitlis $a + c$ dalās ar $b+1$. Vai Kims to
 var izdarīt?</p>"""@lv ;
     eliozo:problemYear 2024 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:IMG.LV.VOL.2024.10.2A.png a eliozo:Image ;
     eliozo:imageSrc "LV.VOL.2024.10.2A.png" ;
@@ -1211,7 +1231,7 @@ eliozo:SOLN.LV.VOL.2024.12.3 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-**(a)** Vienmēr var uzvarēt Brālītis. Šajā gadījumā $140$ ir pietiekami liels skaitlis 
+**(A)** Vienmēr var uzvarēt Brālītis. Šajā gadījumā $140$ ir pietiekami liels skaitlis 
 un neietekmē spēles gaitu, var spēlēt tā it kā šāda ierobežojuma nebūtu. 
 Tādā gadījumā pirmā spēlētāja stratēģija ir klasiska: vajag
 atstāt pretiniekam konfekšu skaitu, kas dalās ar $3$. Tas nozīmē, ka pirmajā 
@@ -1225,7 +1245,7 @@ kļūs vienāds ar $0$. Kopā Brālītis būs izdarījis $1 + 66 = 67$ gājienus
 katrā gājienā apēdis ne vairāk kā $2$
 konfektes, tātad kopā viņš būs apēdis ne vairāk kā $67  \\cdot 2 = 134$ konfektes.
 
-**(b)** Vienmēr var uzvarēt Karlsons. Šajā gadījumā iepriekšējā stratēģija 
+**(B)** Vienmēr var uzvarēt Karlsons. Šajā gadījumā iepriekšējā stratēģija 
 vairs nedarbojas, jo, ja Brālītis mēģinās to
 pielietot un Karlsons katrā gājienā ēdīs vienu konfekti, tad Brālītim būs jāņem 
 divas un jau pēc $55$ gājieniem viņš
@@ -1258,7 +1278,7 @@ Karlsons būs apēdis ne vairāk kā $70 + 57 ∶ 3 = 89$ konfektes un tātad Br
 būs apēdis vismaz $200 − 89 = 111$ konfektes, kas ir pretrunā ar to, ka
 viņš nevar apēst vairāk kā $110$ konfektes."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>(a)</strong> Vienmēr var uzvarēt Brālītis. Šajā gadījumā $140$ ir pietiekami liels skaitlis 
+<p><strong>(A)</strong> Vienmēr var uzvarēt Brālītis. Šajā gadījumā $140$ ir pietiekami liels skaitlis 
 un neietekmē spēles gaitu, var spēlēt tā it kā šāda ierobežojuma nebūtu. 
 Tādā gadījumā pirmā spēlētāja stratēģija ir klasiska: vajag
 atstāt pretiniekam konfekšu skaitu, kas dalās ar $3$. Tas nozīmē, ka pirmajā 
@@ -1271,7 +1291,7 @@ $3$ un pēc $198 ∶ 3 = 66$ gājieniem
 kļūs vienāds ar $0$. Kopā Brālītis būs izdarījis $1 + 66 = 67$ gājienus un 
 katrā gājienā apēdis ne vairāk kā $2$
 konfektes, tātad kopā viņš būs apēdis ne vairāk kā $67  \\cdot 2 = 134$ konfektes.</p>
-<p><strong>(b)</strong> Vienmēr var uzvarēt Karlsons. Šajā gadījumā iepriekšējā stratēģija 
+<p><strong>(B)</strong> Vienmēr var uzvarēt Karlsons. Šajā gadījumā iepriekšējā stratēģija 
 vairs nedarbojas, jo, ja Brālītis mēģinās to
 pielietot un Karlsons katrā gājienā ēdīs vienu konfekti, tad Brālītim būs jāņem 
 divas un jau pēc $55$ gājieniem viņš
@@ -1485,9 +1505,9 @@ eliozo:SOLN.LV.VOL.2024.9.1 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-**(a)** Jā, tādi skaitļi ir $1; 2; 3; 4; 5$. To vidējais aritmētiskais ir $(1 + 2 + 3 + 4 + 5) ∶ 5 = 15 ∶ 5 = 3$
+**(A)** Jā, tādi skaitļi ir $1; 2; 3; 4; 5$. To vidējais aritmētiskais ir $(1 + 2 + 3 + 4 + 5) ∶ 5 = 15 ∶ 5 = 3$
 un lielākais kopīgais dalītājs ir $1$.  
-**(b)** Nē, neeksistē. Pieņemsim, ka tādi skaitļi eksistē un to lielākais kopīgais dalītājs ir $d$. 
+**(B)** Nē, neeksistē. Pieņemsim, ka tādi skaitļi eksistē un to lielākais kopīgais dalītājs ir $d$. 
 Tādā gadījumā skaitļi ir
 $a_1d; a_2d; a_3d; a_4d; a_5d$, kur naturāli skaitļi $a_1,a_2,\\ldots,a_5$ tiek iegūti 
 sākotnējos piecus skaitļus dalot ar $d$. 
@@ -1496,9 +1516,9 @@ $$\\frac{a_1d + a_2d + a_3d + a_4d + a_5d}{5} = 2d\\;\\;\\text{jeb}\\;\\;a_1 + a
 Visi $a_i$ ir dažādi; bet tā kā pat piecu vismazāko dažādo naturālo skaitļu summa ir 
 $1 + 2 + 3 + 4 + 5 = 15 > 10$, tad šādi skaitļi neeksistē."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>(a)</strong> Jā, tādi skaitļi ir $1; 2; 3; 4; 5$. To vidējais aritmētiskais ir $(1 + 2 + 3 + 4 + 5) ∶ 5 = 15 ∶ 5 = 3$
+<p><strong>(A)</strong> Jā, tādi skaitļi ir $1; 2; 3; 4; 5$. To vidējais aritmētiskais ir $(1 + 2 + 3 + 4 + 5) ∶ 5 = 15 ∶ 5 = 3$
 un lielākais kopīgais dalītājs ir $1$.<br />
-<strong>(b)</strong> Nē, neeksistē. Pieņemsim, ka tādi skaitļi eksistē un to lielākais kopīgais dalītājs ir $d$. 
+<strong>(B)</strong> Nē, neeksistē. Pieņemsim, ka tādi skaitļi eksistē un to lielākais kopīgais dalītājs ir $d$. 
 Tādā gadījumā skaitļi ir
 $a_1d; a_2d; a_3d; a_4d; a_5d$, kur naturāli skaitļi $a_1,a_2,\\ldots,a_5$ tiek iegūti 
 sākotnējos piecus skaitļus dalot ar $d$. 

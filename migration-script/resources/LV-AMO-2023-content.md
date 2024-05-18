@@ -12,6 +12,7 @@ lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.
 * [Topic:arithmetic](#)
 * concept:difference,distance
 * seeAlso:LV.AMO.2023.6.1
+* questionType:FindExample
 
 </small>
 
@@ -35,8 +36,9 @@ vismaz divi cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tika
 <small>
 
 * concept:decimal-notation
-* [mod.fix.lastdigits](#)
+* topic:ModularArithmeticOther
 * [Topic:decimalNotation](#)
+* questionType:ProveDisprove
 
 </small>
 
@@ -58,6 +60,7 @@ laukuma vērtība ir tāda pati kā malu skaits!
 <small>
 
 * [Topic:squareGridGeometry](#)
+* questionType:FindExample
 
 </small>
 
@@ -81,6 +84,7 @@ no kreisās apakšējās rūtiņas var pārvietot uz kreiso augšējo rūtiņu, 
 <small>
 
 * [Topic:otherAlgorithms](#)
+* questionType:ProveDisprove
 
 </small>
 
@@ -108,7 +112,8 @@ Kāds ir lielākais iespējamais viesu skaits, kas bija ieradušies uz Gunas dzi
 
 <small>
 
-* [Topic:otherCombinatorics](#)  
+* [Topic:otherCombinatorics](#) 
+* questionType:FindOptimal 
 
 </small>
 
@@ -161,6 +166,13 @@ lai blakus trijstūros ierakstīties skaitļi neatšķiras vairāk kā par $4$.
 ![](LV.AMO.2023.6.1.png)
 
 
+<small>
+
+* questionType:FindExample
+
+</small>
+
+
 ## Atrisinājums
 
 Skat., piemēram, 8. att., kur pelēkā krāsā norādītas atbilstošās starpības.
@@ -175,6 +187,13 @@ iegūst, otro skaitli pareizinot pašu ar sevi. Vai var gadīties, ka abu skait�
 **(a)** $2$; $3$; $7$ un $8$; **(b)** $1$; $3$; $4$; $5$ un $6$?
 
 
+<small>
+
+* questionType:ProveDisprove
+
+</small>
+
+
 ## Atrisinājums
 
 **(a)** Nē, prasītais nav iespējams. Ja skaitļa pēdējais cipars ir $2$, $3$, $7$ vai $8$, tad skaitļa, kuru
@@ -185,8 +204,8 @@ nosacījumiem nevienu no šiem cipariem nevar izmantot skaitļu pierakstā.
 
 # <lo-sample/> LV.AMO.2023.6.3
 
-No četrām tādām figūrām, kāda dota 9. att., uzzīmē figūru, kurai ir tieši: **(a)** $2$ simetrijas asis;
-**(b)** $4$ simetrijas asis!
+No četrām tādām figūrām, kāda dota 9. att., uzzīmē figūru, kurai ir tieši: **(A)** $2$ simetrijas asis;
+**(B)** $4$ simetrijas asis!
 
 ![](LV.AMO.2023.6.3.png)
 
@@ -194,6 +213,13 @@ No četrām tādām figūrām, kāda dota 9. att., uzzīmē figūru, kurai ir ti
 caurumi. Figūrai jābūt saistītai, tas ir, no figūras katras rūtiņas jābūt iespējai aiziet uz jebkuru citu šīs
 figūras rūtiņu, ejot tikai pa šīs figūras rūtiņām, katru reizi pārejot no attiecīgās rūtiņas uz blakus rūtiņu,
 ar ko tai ir kopīga mala.
+
+
+<small>
+
+* questionType:FindExample,FindExample
+
+</small>
 
 
 ## Atrisinājums
@@ -215,6 +241,14 @@ vienmēr saka patiesību, sarkanie bruņinieki vienmēr melo. Katrs bruņinieks 
 * un tā tālāk, līdz desmitais bruņinieks teica: "starp mums ir ne vairāk kā deviņi zaļie bruņinieki".
 
 Cik zaļo un cik sarkano bruņinieku sēž pie galda?
+
+
+<small>
+
+* questionType:FindCount
+
+</small>
+
 
 ## Atrisinājums
 
@@ -253,6 +287,13 @@ Piemēram, ja $S=7$ un $M=3$, tad ir izmantota viena piecu un divas viena centa 
 variantu nav.
 Kāda ir mazākā $M$ vērtība, kurai var atrast tādu $S$ vērtību, ka, zinot $S$ un $M$ vērtības, izmantoto monētu
 komplektu viennozīmīgi nav iespējams noteikt?
+
+
+<small>
+
+* questionType:FindOptimal
+
+</small>
 
 
 ## Atrisinājums
@@ -300,15 +341,22 @@ un mūsu pieņēmums ir aplams.
 # <lo-sample/> LV.AMO.2023.7.1
 
 Vai rindā kaut kādā secībā var uzrakstīt naturālus skaitļus 
-**(a)** no $1$ līdz $23$; **(b)** no $1$ līdz $2023$ tā, lai blakus
+**(A)** no $1$ līdz $23$; **(B)** no $1$ līdz $2023$ tā, lai blakus
 skaitļiem nebūtu vienādu ciparu?
+
+
+<small>
+
+* questionType:ProveDisprove,ProveDisprove
+
+</small>
 
 ## Atrisinājums
 
-**(a)** Var, piemēram, šādā veidā:
+**(A)** Var, piemēram, šādā veidā:
 $$1; 2; 10; 3; 11; 4; 12; 5; 13; 22; 14; 7; 15; 8; 16; 20; 17; 9; 18; 23; 19; 6; 21.$$
 
-**(b)** Nē, nevar. Pierādīsim, ka, lai kā arī šos skaitļus uzrakstītu rindā, 
+**(B)** Nē, nevar. Pierādīsim, ka, lai kā arī šos skaitļus uzrakstītu rindā, 
 vienmēr blakus atradīsies divi skaitļi, kas abi satur ciparu $1$.
 
 Ievērosim, ka ir daudz skaitļu, kuros ir cipars 1, 
@@ -335,6 +383,13 @@ kuram vienlaicīgi izpildās šādi nosacījumi:
   lielāki nekā pirmais cipars;
 * skaitļa trešais cipars ir tāds pats kā piektais cipars?
 
+
+<small>
+
+* questionType:FindOptimal
+
+</small>
+
 ## Atrisinājums
 
 Lielākais iespējamais septiņciparu skaitlis, kas atbilst uzdevuma nosacījumiem, 
@@ -359,8 +414,8 @@ tad $a$ vērtībai jābūt pēc iespējas lielākai:
 # <lo-sample/> LV.AMO.2023.7.3
 
 No četrām tādām figūrām, kāda dota 12. att., uzzīmē figūru, kurai ir tieši: 
-**(a)** $2$ simetrijas asis;
-**(b)** $4$ simetrijas asis!  
+**(A)** $2$ simetrijas asis;
+**(B)** $4$ simetrijas asis!  
 *Piezīme.* Figūru, kas dota 12. att., drīkst pagriezt. 
 Uzzīmētajai figūrai var būt arī caurumi. Figūrai jābūt
 saistītai, tas ir, no figūras katras rūtiņas jābūt iespējai 
@@ -369,6 +424,13 @@ pa šīs figūras rūtiņām, katru reizi pārejot no attiecīgās
 rūtiņas uz blakus rūtiņu, ar ko tai ir kopīga mala.
 
 ![](LV.AMO.2023.7.3.png)
+
+
+<small>
+
+* questionType:FindExample,FindExample
+
+</small>
 
 ## Atrisinājums
 
@@ -392,6 +454,13 @@ un divas viena centa monētas un citu variantu nav.
 Kāda ir mazākā $S$ vērtība, kurai var atrast tādu $M$ vērtību, 
 ka, zinot $S$ un $M$ vērtības, izmantoto monētu
 komplektu viennozīmīgi nav iespējams noteikt?
+
+
+<small>
+
+* questionType:FindOptimal
+
+</small>
 
 ## Atrisinājums
 
@@ -444,6 +513,13 @@ vienmēr melo. Katra bizbizmārīte izteicās:
 Cik bizbizmārītes sēž uz palodzes?
 
 
+<small>
+
+* questionType:FindCount
+
+</small>
+
+
 ## Atrisinājums
 
 Uz palodzes sēž $6$ bizbizmārītes. Pamatosim, ka tā ir vienīgā iespēja.
@@ -486,6 +562,13 @@ lai dotā vienādība būtu patiesa un visas
 daļas būtu nesaīsināmas: $\frac{A}{B} + \frac{C}{D} = \frac{E}{F}$. 
 
 
+<small>
+
+* questionType:ProveDisprove
+
+</small>
+
+
 ## Atrisinājums
 
 Jā, var, piemēram, $\frac{7}{3} + \frac{1}{6} = \frac{5}{2}$. 
@@ -498,6 +581,13 @@ Ja šim skaitlim nodzēš pēdējo ciparu, tad atlikušais divciparu
 skaitlis dalās ar $9$. Zināms, ka skaitlis $x$ ir par $99$ lielāks 
 nekā trīsciparu skaitlis, ko iegūst, uzrakstot tā
 ciparus pretējā secībā. Kāds var būt skaitlis $x$?
+
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 ## Atrisinājums
 
@@ -532,6 +622,13 @@ Izsaki leņķi $CGF$ ar $\alpha$ un $\beta$.
 
 ![](LV.AMO.2023.8.3.png)
 
+
+<small>
+
+* questionType:FindAll
+
+</small>
+
 ## Atrisinājums
 
 Tā kā regulāra trijstūra visi leņķi ir $60^{\circ}$, tad 
@@ -564,6 +661,13 @@ saviem bērniem iedeva sīknaudu šādi:
 
 Kāda ir **(a)** lielākā, **(b)** mazākā iespējamā starpība starp 
 Dorotejai un Almai iedotajām naudas summām?
+
+
+<small>
+
+* questionType:FindOptimal
+
+</small>
 
 ## Atrisinājums
 
@@ -607,9 +711,11 @@ Katra bizbizmārīte izteicās:
 
 Cik bizbizmārītes sēž uz palodzes?
 
+
 <small>
 
 * seeAlso:LV.AMO.2023.7.5
+* questionType:FindCount
 
 </small>
 
@@ -654,17 +760,23 @@ Uz tāfeles uzrakstīta daļa $\frac{10}{2023}$.
 Katrā gājienā var izvēlēties patvaļīgu naturālu skaitli un vai nu pieskaitīt
 to gan daļas skaitītājam, gan saucējam, vai arī to reizināt ar daļas skaitītāju 
 un saucēju. Vai, atkārtojot
-šādus gājienus, var iegūt daļu, kuras vērtība ir: **(a)** $\frac{1}{10}$;
-**(b)** $1$? 
+šādus gājienus, var iegūt daļu, kuras vērtība ir: **(A)** $\frac{1}{10}$;
+**(B)** $1$? 
+
+<small>
+
+* questionType:ProveDisprove,ProveDisprove
+
+</small>
 
 ## Atrisinājums
 
-**(a)** Jā, var, piemēram, šādi:
+**(A)** Jā, var, piemēram, šādi:
 
 $$\frac{10}{2023} \;\rightarrow\; \frac{10 \cdot 9}{2023 \cdot 9} = \frac{90}{18207}
 \;\rightarrow\; \frac{90 + 1923}{18207 + 1923} = \frac{2013}{20130} = \frac{1}{10}.$$
 
-**(b)** Nē, nevar. Ievērosim, ka sākumā daļas skaitītājs ir mazāks 
+**(B)** Nē, nevar. Ievērosim, ka sākumā daļas skaitītājs ir mazāks 
 nekā saucējs. Pēc katra atļautā gājiena šī īpašība saglabāsies. 
 Tātad daļas vērtība nevar kļūt vienāda ar 1 (tā vienmēr būs mazāka 
 nekā viens, jo tās skaitītājs vienmēr būs mazāks nekā saucējs).
@@ -675,6 +787,13 @@ nekā viens, jo tās skaitītājs vienmēr būs mazāks nekā saucējs).
 Ja divciparu skaitlim $\overline{ab}$ galā pieraksta divciparu skaitli
 $\overline{cd}$, tad iegūtais četrciparu skaitlis dalās ar $13$.
 Zināms, ka $12a + 9b$ dalās ar $13$. Kāds var būt skaitlis $\overline{cd}$?
+
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 ## Atrisinājums
 
@@ -697,6 +816,12 @@ tas ir, $13$; $26$; $39$; $52$; $65$; $78$ vai $91$.
 Trijstūrī viens leņķis ir par $120^{\circ}$ lielāks nekā otrs. 
 Pierādīt, ka bisektrise, kas vilkta no trešā leņķa
 virsotnes, ir divas reizes garāka nekā augstums no tās pašas virsotnes!
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 ## Atrisinājums
 
@@ -728,6 +853,13 @@ skaitļu summas ir vienādas. Kā arī kartītes iespējams sadalīt četrās gr
 tā, ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas.
 Vai vienmēr visas kartītes var sadalīt sešās grupās pa sešām kartītēm katrā tā, ka visās grupās uz
 kartītēm uzrakstīto skaitļu summas ir vienādas?
+
+
+<small>
+
+* questionType:ProveDisprove
+
+</small>
 
 ## Atrisinājums
 
@@ -763,17 +895,23 @@ ka kartītes sešās grupās pa sešām katrā ar vienādu skaitļu kopsummu sad
 
 Pirmie sešpadsmit naturālie skaitļi patvaļīgā secībā izvietoti pa apli, katriem diviem blakus skaitļiem
 aprēķināta to starpība (no lielākā skaitļa atņemot mazāko), un pēc tam aprēķināta visu šo 16 starpību
-summa $S$. Vai var gadīties, ka: **(a)** $S = 100$; **(b)** $S = 123$?
+summa $S$. Vai var gadīties, ka: **(A)** $S = 100$; **(B)** $S = 123$?
+
+<small>
+
+* questionType:ProveDisprove,ProveDisprove
+
+</small>
 
 ## Atrisinājums
 
-**(a)** Jā, var, piemēram, skat. 18. att., kur ar pelēkā krāsā ir blakus skaitļu starpība. Tādā
+**(A)** Jā, var, piemēram, skat. 18. att., kur ar pelēkā krāsā ir blakus skaitļu starpība. Tādā
 gadījumā
 $$S = 3 + 14 + 13 + 12 + 11 + 10 + 3 + 4 + 7 + 6 + 5 + 4 + 1 + 2 + 1 + 4 = 100.$$
 
 ![](LV.AMO.2023.9.5A.png)
 
-**(b)** Pamatosim, ka $S = 123$ nevar iegūt. Šo panāksim pierādot, ka $S$ vienmēr ir jābūt pāra skaitlim. Ja
+**(B)** Pamatosim, ka $S = 123$ nevar iegūt. Šo panāksim pierādot, ka $S$ vienmēr ir jābūt pāra skaitlim. Ja
 $x_1, x_2, x_3, \ldots, x_{16}$ ir patvaļīgi sakārtoti pirmie 16 naturālie skaitļi, tad summu $S$ varam izteikt kā
 $$S = |x_1 − x_2| + |x_2 − x_3| + |x_3 − x_4| + \cdots + |x_{15} − x_{16}| + |x_{16} − x_1|.$$
 Ievērosim, ka $S$ būtu 0, ja, rēķinot starpību, nebūtu vienmēr no lielākā skaitļa jāatņem mazākais, tas ir,
@@ -805,6 +943,13 @@ Katrs bruņinieks izteicās:
 * un tā tālāk, līdz desmitais bruņinieks teica: "starp mums ir ne vairāk kā deviņi zaļie bruņinieki".
 
 Cik zaļo un cik sarkano bruņinieku sēž pie galda?
+
+
+<small>
+
+* questionType:FindCount
+
+</small>
 
 ## Atrisinājums
 
@@ -838,6 +983,12 @@ Ja pirmie pieci bruņinieki ir sarkanie un pēdējie pieci – zaļie, tad izpil
 
 Pierādīt, ka $9x^2 + 5y^2 − 8xy − 4x + 2 > 0$ visām reālām $x$ un $y$ vērtībām!
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 ## Atrisinājums
 
 Veicam ekvivalentus pārveidojumus:
@@ -862,6 +1013,13 @@ leņķa $ABC$ lielums četrstūra ārpusē ir $7\alpha$ (skat. 19. att.). Aprē�
 
 
 ![](LV.AMO.2023.10.3.png)
+
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 ## Atrisinājums
@@ -942,10 +1100,17 @@ deviņās grupās pa astoņām kartītēm katrā
 tā, ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas.
 Vai vienmēr:
 
-**(a)** visas kartītes var sadalīt sešās grupās pa $12$ kartītēm katrā tā, 
+**(A)** visas kartītes var sadalīt sešās grupās pa $12$ kartītēm katrā tā, 
 ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas;  
-**(b)** visas kartītes var sadalīt $12$ grupās pa sešām kartītēm katrā tā, 
+**(B)** visas kartītes var sadalīt $12$ grupās pa sešām kartītēm katrā tā, 
 ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?
+
+
+<small>
+
+* questionType:ProveDisprove,ProveDisprove
+
+</small>
 
 ## Atrisinājums
 
@@ -978,7 +1143,7 @@ kolonnām – deviņās grupās pa astoņām kartītēm katrā.
 Abos gadījumos skaitļu summa visās grupās ir
 vienāda – attiecīgi $18$ un $16$. Visu skaitļu kopsumma ir $144$.
 
-**(a)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
+**(A)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
 Pieņemsim pretējo, ka šos skaitļus var
 sadalīt sešās grupās pa 12 kartītēm katrā tā, lai skaitļu summa 
 visās grupās būtu vienāda. Tad skaitļu
@@ -992,7 +1157,7 @@ summa ir $10 \cdot 1 = 10$.
 Esam ieguvuši pretrunu, ko izraisīja pieņēmums, ka kartītes sešās grupās pa $12$
 katrā ar vienādu skaitļu kopsummu sadalīt ir iespējams.
 
-**(b)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
+**(B)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
 Pieņemsim pretējo, ka šos skaitļus var
 sadalīt $12$ grupās pa sešām kartītēm katrā tā, lai skaitļu summa 
 visās grupās būtu vienāda. Tad skaitļu summai katrā grupā jābūt $\frac{144}{12} = 12$. 
@@ -1015,6 +1180,12 @@ Uz tāfeles uzrakstīti visi naturālie skaitļi no $1$ līdz $100$
 nodzēsa un izrādījās, ka viens no atlikušajiem skaitļiem tagad 
 ir visu atlikušo skaitļu vidējais
 aritmētiskais. Kāds varēja būt Marutas nodzēstais skaitlis?
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 ## Atrisinājums
 
@@ -1048,6 +1219,12 @@ Mārim bija četru veidu konfektes: 15 “Serenādes”, 25 “Lācīši Ķepain
 dienas viesiem viņš uzcienāja ar tieši 3 dažādām konfektēm.
 Kāds ir lielākais iespējamais viesu skaits, kas bija ieradušies uz 
 Māra dzimšanas dienas svinībām?
+
+<small>
+
+* questionType:FindOptimal
+
+</small>
 
 ## Atrisinājums 
 
@@ -1101,6 +1278,13 @@ viesus, tad nevar arī vairāk, un lielākais iespējamais viesu skaits ir $37$.
 Pierādīt, ka $a^2c + ac^2 - 6abc + 3b^2c + ab^2 \geq 0$
 visām pozitīvām reālām $a$, $b$ un $c$ vērtībām!
 
+
+<small>
+
+* questionType:Prove
+
+</small>
+
 ## Atrisinājums 
 
 Veicam ekvivalentus pārveidojumus:
@@ -1126,6 +1310,13 @@ atrodas dažādās pusēs no taisnes $BC$.
 Zināms, ka $AB = 2$, $BC = 5$, $CD = 3$, $AB \perp BC$
 un $BC \perp CD$.
 Aprēķināt riņķa, ko ierobežo dotā riņķa līnija, laukumu!
+
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 
@@ -1169,11 +1360,17 @@ skaitļu summas ir vienādas. Kā arī kartītes iespējams sadalīt
 deviņās grupās pa astoņām kartītēm katrā
 tā, ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas.
 Vai vienmēr:  
-**(a)** visas kartītes var sadalīt sešās grupās pa $12$ kartītēm katrā tā, 
+**(A)** visas kartītes var sadalīt sešās grupās pa $12$ kartītēm katrā tā, 
 ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas;  
-**(b)** visas kartītes var sadalīt $12$ grupās pa sešām kartītēm katrā tā, 
+**(B)** visas kartītes var sadalīt $12$ grupās pa sešām kartītēm katrā tā, 
 ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?
 
+
+<small>
+
+* questionType:ProveDisprove,ProveDisprove
+
+</small>
 
 ## Atrisinājums 
 
@@ -1206,7 +1403,7 @@ kolonnām – deviņās grupās pa astoņām kartītēm katrā.
 Abos gadījumos skaitļu summa visās grupās ir
 vienāda – attiecīgi $18$ un $16$. Pieminēsim, ka visu skaitļu kopsumma šajā piemērā attiecīgi ir $144$.
 
-**(a)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
+**(A)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
 Pieņemsim pretējo, ka šos skaitļus var
 sadalīt sešās grupās pa $12$ kartītēm katrā tā, lai skaitļu summa 
 visās grupās būtu vienāda. Tad skaitļu summai katrā grupā jābūt 
@@ -1219,7 +1416,7 @@ summa ir $10 \cdot 1 = 10$. Esam ieguvuši pretrunu, ko izraisīja pieņēmums,
 ka kartītes sešās grupās pa $12$
 katrā ar vienādu skaitļu kopsummu sadalīt ir iespējams.
 
-**(b)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
+**(B)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
 Pieņemsim pretējo, ka šos skaitļus var
 sadalīt $12$ grupās pa sešām kartītēm katrā tā, lai skaitļu summa 
 visās grupās būtu vienāda. Tad skaitļu
@@ -1238,7 +1435,13 @@ skaitļu kopsummu.
 
 # <lo-sample/> LV.AMO.2023.11.5
 
-Atrisināt veselos skaitļos vienādojumu $17a^2 - 7b^2 + c^2 = 2023$. 
+Atrisināt veselos skaitļos vienādojumu $17a^2 - 7b^2 + c^2 = 2023$.
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 ## Atrisinājums 
 
@@ -1269,6 +1472,12 @@ Vai burtu vietā var ierakstīt $9$ dažādus nenulles ciparus,
 lai vienādība $\frac{A}{B} + \frac{C}{D} + \frac{E}{F} + \frac{G}{H} = I$
 būtu patiesa?
 
+<small>
+
+* questionType:ProveDisprove
+
+</small>
+
 ## Atrisinājums 
 
 Jā, var, piemēram,
@@ -1280,6 +1489,12 @@ $\frac{5}{4} + \frac{9}{3} + \frac{6}{8} + \frac{2}{1} = 1\frac{1}{4} + 3 + \fra
 Kāda ir izteiksmes $2x^2 − 8xy + 4x + 9y^2 - 14y + 9$
 mazākā iespējamā vērtība, ja $x$ un $y$ ir reāli
 skaitļi?
+
+<small>
+
+* questionType:FindOptimal
+
+</small>
 
 
 ## Atrisinājums 
@@ -1301,6 +1516,13 @@ ir $−2$ un to iegūst, ja $y = 3$ un $x = 5$.
 Taisnstūra $ABCD$ diagonāle $BD$ ir kvadrāta $BDEF$ viena mala. 
 Punkts $C$ atrodas kvadrāta $BDEF$ iekšpusē. 
 Pierādīt, ka $S_{ABD} \leq S_{CEF}$.
+
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 ## Atrisinājums 
@@ -1335,17 +1557,23 @@ Kvadrātā ar izmēriem $8 \times 8$ rūtiņas iekrāsotas astoņas rūtiņas t�
 ka katrā rindā un katrā kolonnā ir
 iekrāsota tieši viena rūtiņa.
 
-**(a)** Pierādīt, ka jebkuram kvadrātam ar šādi iekrāsotām rūtiņām 
+**(A)** Pierādīt, ka jebkuram kvadrātam ar šādi iekrāsotām rūtiņām 
 var atrast taisnstūri ar izmēriem $2 \times 4$
 rūtiņas, kurā nav iekrāsota neviena rūtiņa!  
-**(b)** Parādīt, ka līdzīgs apgalvojums par taisnstūri ar izmēriem 
+**(B)** Parādīt, ka līdzīgs apgalvojums par taisnstūri ar izmēriem 
 $2 \times 5$ rūtiņas nav patiess!
 
+
+<small>
+
+* questionType:Prove,Prove
+
+</small>
 
 ## Atrisinājums 
 
 
-**(a)** Mēģināsim panākt pretējo, tas ir, iekrāsot rūtiņas dotajā kvadrātā tā, 
+**(A)** Mēģināsim panākt pretējo, tas ir, iekrāsot rūtiņas dotajā kvadrātā tā, 
 lai nav taisnstūra ar izmēriem $2 \times 4$ rūtiņas bez iekrāsotām rūtiņām.
 
 Visu laukumu sadalām kvadrātos ar izmēriem $2 \times 2$ rūtiņas, 
@@ -1405,7 +1633,7 @@ Līdz ar to jebkurā kvadrātā ar doto iekrāsojumu var atrast taisnstūri
 ar izmēriem $2 \times 4$ rūtiņas, kurā
 nav iekrāsota neviena rūtiņa.
 
-**(b)** Piemēram, skat. 30. att., kurā nevar atrast $2 \times 5$ 
+**(B)** Piemēram, skat. 30. att., kurā nevar atrast $2 \times 5$ 
 taisnstūri ar neatzīmētu rūtiņu.
 
 ![](LV.AMO.2023.12.4E.png)
@@ -1415,21 +1643,28 @@ taisnstūri ar neatzīmētu rūtiņu.
 # <lo-sample/> LV.AMO.2023.12.5
 
 Vai eksistē tāds naturāls skaitlis, kuram tieši 
-**(a)** $25\%$; **(b)** $26\%$ no visiem tā pozitīvajiem dalītājiem dod
+**(A)** $25\%$; **(B)** $26\%$ no visiem tā pozitīvajiem dalītājiem dod
 atlikumu $1$, dalot ar $3$?  
 *Piezīme.* Skaitļa $n$ dalītājs ir arī $1$ un pats skaitlis $n$.
+
+
+<small>
+
+* questionType:ProveDisprove,ProveDisprove
+
+</small>
 
 
 
 ## Atrisinājums 
 
-**(a)** Jā, ir, piemēram, skaitlis $27$. 
+**(A)** Jā, ir, piemēram, skaitlis $27$. 
 Tam ir četri dalītāji: $1$, $3$, $9$ un $27$. 
 Vienīgais dalītājs, kas,
 dalot ar $3$, atlikumā dod $1$, ir atlikums $1$, kas sastāda 
 $\frac{1}{4}$ jeb $25\%$ no dalītājiem.
 
-**(b)** Jā, eksistē, piemēram, skaitlis $3 \cdot 2^{24}$.
+**(B)** Jā, eksistē, piemēram, skaitlis $3 \cdot 2^{24}$.
 Pamatosim, ka šim skaitlim izpildās prasītā īpašība. 
 Šim skaitlim kopā ir $50$ dalītāji, jo katru pirmskaitli,
 veidojot dalītāju, vai nu varam izlaist, vai arī ņemt kādā no pakāpēm, 

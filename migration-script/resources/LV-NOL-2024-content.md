@@ -1,8 +1,15 @@
 # <lo-sample/> LV.NOL.2024.5.1
 
-Parādi vienu veidu, kādu ciparu var ierakstīt katrā aplîtī, lai iegūtu patiesu vienādību, visi pieci ierakstītie cipari būtu dažādi un neviens no tiem nebūtu 2.
+Parādi vienu veidu, kādu ciparu var ierakstīt katrā aplîtī, lai iegūtu patiesu vienādību, 
+visi pieci ierakstītie cipari būtu dažādi un neviens no tiem nebūtu 2.
 
 ![](LV.NOL.2024.5.1.png)
+
+<small>
+
+* questionType:FindExample
+
+</small>
 
 
 ## Atrisinājums 
@@ -14,10 +21,16 @@ Der, piemēram, $23 \cdot 26=598$.
 
 # <lo-sample/> LV.NOL.2024.5.2
 
-Uz rūtinu lapas rūtinu krustpunktos atzīmēti $16$ punkti (skat. 1. att.). 
+Uz rūtiņu lapas rūtinu krustpunktos atzīmēti $16$ punkti (skat. 1. att.). 
 Kāds mazākais skaits punktu jānodzēš, lai nekādi trīs no atlikušajiem punktiem neatrastos uz vienas taisnes?
 
 ![](LV.NOL.2024.5.2.png)
+
+<small>
+
+* questionType:FindOptimal
+
+</small>
 
 
 
@@ -43,6 +56,12 @@ sakrīt (figūras var pagriezt un apmest otrādi).
 
 ![](LV.NOL.2024.5.3.png)
 
+<small>
+
+* questionType:FindExample
+
+</small>
+
 
 
 ## Atrisinājums 
@@ -60,6 +79,11 @@ $41$ un katru nākamo var iegūt, iepriekšējā skaitļa visu ciparu reizināju
 pieskaitot $23$ (piemēram, otrais uzrakstītais skaitlis ir $27$, jo 
 $4 \cdot 1+23=27$). Kāds ir pēdējais uzrakstītais skaitlis?
 
+<small>
+
+* questionType:FindExample
+
+</small>
 
 
 
@@ -81,14 +105,19 @@ Ja automātā iemet divus vienādus žetonus, tad tas izdod vienu zaļu žetonu,
 bet, ja iemet divus dažādus žetonus, tad tas izdod vienu dzeltenu žetonu. 
 Sākumā Dagmārai bija $20$ dzelteni un $15$ zaḷi žetoni. 
 Vai iespējams, ka pēc atkārtotas automāta izmantošanas viṇai palika:   
-**(a)** divi zaļi un viens dzeltens žetons,  
-**(b)** divi dzelteni un viens zaļš žetons?
+**(A)** divi zaļi un viens dzeltens žetons,  
+**(B)** divi dzelteni un viens zaļš žetons?
 
+<small>
+
+* questionType:ProveDisprove
+
+</small>
 
 
 ## Atrisinājums 
 
-**(a)** Nē, tas nav iespējams. levērosim, ka pēc katras darbības dzelteno žetonu skaits 
+**(A)** Nē, tas nav iespējams. levērosim, ka pēc katras darbības dzelteno žetonu skaits 
 vai nu nemainās (tas notiek gadījumos, kad automātā iemet divus zalus žetonus 
 vai vienu zalu un vienu dzeltenu žetonu) vai arī samazinās par $2$ 
 (tas notiek, ja automātā iemet divus dzeltenus žetonus). 
@@ -96,7 +125,7 @@ Tā kā sākumā dzelteno žetonu skaits bija pāra skaitlis,
 tad arī pēc jebkuras darbības tas būs pāra skaitlis. 
 Tātad nav iespējams, ka dzelteno žetonu skaits ir $1$ (kas ir nepāra skaitlis).
 
-**(b)** Jā, ir iespējams. Dagmāra varēja rīkoties šādi: vispirms 9 reizes 
+**(B)** Jā, ir iespējams. Dagmāra varēja rīkoties šādi: vispirms 9 reizes 
 iemest automātā 2 dzeltenus žetonus (un saṇemt vienu zaļu), pēc 9 
 šādām darbībām vinai paliktu $24$ zaļi žetoni un 2 dzelteni žetoni. 
 Pēc tam 23 reizes jāiemet automātā 2 zaļus žetonus, katru reizi automāts atdotu 
@@ -109,9 +138,16 @@ Tātad beigās viņai paliktu 2 dzelteni žetoni un 1 zaļš žetons.
 
 # <lo-sample/> LV.NOL.2024.6.1
 
-Parādi vienu veidu, kādu ciparu var ierakstīt katrā aplîtī, lai iegūtu patiesu vienādību, visi seši ierakstītie cipari būtu dažādi un neviens no tiem nebūtu 3 .
+Parādi vienu veidu, kādu ciparu var ierakstīt katrā aplîtī, lai iegūtu patiesu vienādību, 
+visi seši ierakstītie cipari būtu dažādi un neviens no tiem nebūtu 3.
 
 ![](LV.NOL.2024.6.1.png)
+
+<small>
+
+* questionType:FindExample
+
+</small>
 
 
 ## Atrisinājums 
@@ -123,9 +159,16 @@ Der, piemēram, $34 \cdot 37=1258$.
 
 # <lo-sample/> LV.NOL.2024.6.2
 
-Kāds ir lielākais skaits 7. att. doto figūru, ko var izgriezt no 5. att. dotās figūras, ja jābūt izgrieztām arī tieši divām 6. att. figūrām?
+Kāds ir lielākais skaits 7. att. doto figūru, ko var izgriezt no 5. att. dotās figūras, 
+ja jābūt izgrieztām arī tieši divām 6. att. figūrām?
 
 ![](LV.NOL.2024.6.2.png)
+
+<small>
+
+* questionType:FindOptimal
+
+</small>
 
 
 
@@ -159,6 +202,12 @@ ka abas figūras sakrīt (figūras var pagriezt un apmest otrādi).
 
 ![](LV.NOL.2024.6.3.png)
 
+<small>
+
+* questionType:FindExample
+
+</small>
+
 
 ## Atrisinājums 
 
@@ -173,6 +222,13 @@ Rindā uzrakstīti $2024$ skaitli. Zināms, ka pirmais uzrakstītais skaitlis ir
 un katru nākamo var iegūt, iepriekšējā skaiț̣a visu ciparu reizinājumam pieskaitot 
 $19$ (piemēram, otrais uzrakstītais skaitlis ir $55$, jo $4 \cdot 9+19=55$). 
 Kāds ir pēdējais uzrakstītais skaitlis?
+
+<small>
+
+* questionType:FindExample
+
+</small>
+
 
 ## Atrisinājums 
 
@@ -192,20 +248,26 @@ Tādā gadījumā $2021:11=183$, atlikums $8$, tāpēc meklētais skaitlis ir pe
 
 # <lo-sample/> LV.NOL.2024.6.5
 
-Vai var uzzīmēt tādu slēgtu lauztu līniju no **(a)** $6$ posmiem, **(b)** $7$ posmiem, 
+Vai var uzzīmēt tādu slēgtu lauztu līniju no **(A)** $6$ posmiem, **(B)** $7$ posmiem, 
 kas katru savu posmu krusto tieši vienu reizi?
 
 *Piezīme.* Par lauztu līniju sauc līniju, kas sastāv no galīga skaita taisnes nogriežṇiem, 
 ko sauc par posmiem. Lauztu līniju, kuras galapunkti sakrīt, sauc par slēgtu lauztu līniju.
 
+<small>
+
+* questionType:ProveDisprove
+
+</small>
+
 
 ## Atrisinājums 
 
-**(a)** Jā, var, piemēram, skat. 13. att.
+**(A)** Jā, var, piemēram, skat. 13. att.
 
 ![](LV.NOL.2024.6.5A.png)
 
-**(b)** Nē, nevar. levērosim, ka šādas lauztās līnijas posmus var sadalīt pa pāriem, 
+**(B)** Nē, nevar. levērosim, ka šādas lauztās līnijas posmus var sadalīt pa pāriem, 
 katrā pāri saliekot divus posmus, kas krustojas. Tātad šādas lauztas līnijas posmu skaitam 
 jābūt pāra skaitlim, bet $7$ ir nepāra skaitlis.
 
@@ -223,6 +285,12 @@ katru ciparu tieši vienu reizi! (Iekavas lietot nedrīkst un jāievēro darbīb
 
 ![](LV.NOL.2024.7.1.png)
 
+<small>
+
+* questionType:FindExample
+
+</small>
+
 
 ## Atrisinājums 
 
@@ -236,6 +304,12 @@ Skat. 14. att.
 # <lo-sample/> LV.NOL.2024.7.2
 
 Kāda lielākā ciparu summa var būt desmitciparu skaitlim, kas dalās ar $18$?
+
+<small>
+
+* questionType:FindOptimal
+
+</small>
 
 
 
@@ -257,6 +331,11 @@ tātad tā ir meklētā ciparu summa.
 Plaknē atlikti četri punkti $A, B, C, D$. Zināms, ka $AB=4$, $BC=7$, $CD=10$ un $DA=3$. 
 Kāds var būt nogriežņa $AC$ garums, ja zināms, ka tas ir naturāls skaitlis?
 
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 ## Atrisinājums 
@@ -290,6 +369,12 @@ salikt taisnstūri, kurā 16. att. figūras nesaskaras ne ar malu, ne ar stūri!
 
 ![](LV.NOL.2024.7.4.png)
 
+<small>
+
+* questionType:FindExample
+
+</small>
+
 
 ## Atrisinājums 
 
@@ -307,6 +392,12 @@ $20 ; 21 ; 22 ; 23 ; 24 ; 25 ; 26 ; 27 ; 28 ; 29$ eiro
 (katra torte ir tieši vienā eksemplārā). Konditorejā viens pēc otra iegriezās $3$ gardēži, 
 katrs no tiem nopirka sev dažas tortes, turklāt katrs iztērēja ne vairāk kā $85$ eiro. 
 Pierādīt, ka pēc gardēžu apmeklējuma vismaz viena torte vēl palika nenopirkta!
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 ## Atrisinājums 
@@ -335,6 +426,11 @@ līdz ar to vismaz viena torte palika nenopirkta.
 
 Vai iespējams, sareizinot sešus dažādus pirmskaiț̣us, iegūt sešciparu skaitli, kam visi cipari ir vienādi?
 
+<small>
+
+* questionType:ProveDisprove
+
+</small>
 
 
 ## Atrisinājums 
@@ -350,6 +446,12 @@ Jā, var, piemēram, der sešciparu skaitlis $222222=2 \cdot 3 \cdot 37 \cdot 7 
 
 Vienādsānu trijstūrī $ABC$ ($AB=AC$) uz malām $BC$ un $AC$ atlikti attiecīgi punkti 
 $D$ un $E$ tā, lai $AE=AD$ un $\sphericalangle BAD=30^{\circ}$. Aprēk̄ināt leṇki $CDE$.
+
+<small>
+
+* questionType:FindExample
+
+</small>
 
 
 ## Atrisinājums 
@@ -376,10 +478,16 @@ $$\sphericalangle CDE=180^{\circ}-\sphericalangle DEC-\sphericalangle ECD=180^{\
 Uz rūtiṇu lapas rūtịnu krustpunktos atzīmēti $25$ punkti (skat. 19. att.). 
 Kāds mazākais skaits punktu jānodzēš, lai nekādi trīs no atlikušajiem punktiem neatrastos uz vienas taisnes?
 
-Piezīme. levēro, ka uz vienas taisnes atrodas ne tikai punkti, kas atrodas vienā rindā, 
+*Piezīme.* Ievēro, ka uz vienas taisnes atrodas ne tikai punkti, kas atrodas vienā rindā, 
 kolonnā vai diagonālē, bet arī, piemēram, punkti $A, B, C$ (skat. 20. att.)!
 
 ![](LV.NOL.2024.8.3.png)
+
+<small>
+
+* questionType:FindOptimal
+
+</small>
 
 
 ## Atrisinājums 
@@ -399,6 +507,15 @@ Konditorejā nopērkamas $16$ tortes, to cena ir attiecīgi $30; 31; 32; \ldots;
 (katra torte ir tieši vienā eksemplārā). Konditorejā viens pēc otra iegriezās $5$ gardēži, 
 katrs no tiem nopirka sev dažas tortes, turklāt katrs iztērēja ne vairāk kā $125$ eiro. 
 Pierādīt, ka pēc gardēžu apmeklējuma vismaz viena torte vēl palika nenopirkta!
+
+<small>
+
+* questionType:Prove
+
+</small>
+
+
+
 
 
 ## Atrisinājums 
@@ -422,20 +539,27 @@ Tātad kopā nopirka ne vairāk kā $3 \cdot 5=15$ tortes, lî̀z ar to vismaz v
 
 # <lo-sample/> LV.NOL.2024.8.5
 
-Vai **(a)** 22. att., **(b)** 23. att. dotā kvadrāta rūtiṇās var ierakstīt 
+Vai **(A)** 22. att., **(B)** 23. att. dotā kvadrāta rūtiṇās var ierakstīt 
 deviṇus dažādus naturālus skaitlus tā, lai katrā rūtiņā būtu ierakstīts 
 viens skaitlis un katrā rindā un katrā kolonnā skaitli pieaugtu bultiņas norādītajā virzienā?
 
 ![](LV.NOL.2024.8.5.png)
 
+<small>
+
+* questionType:ProveDisprove
+
+</small>
+
+
 
 ## Atrisinājums 
 
-**(a)** Jā, var, piemēram, skat. 24. att.
+**(A)** Jā, var, piemēram, skat. 24. att.
 
 ![](LV.NOL.2024.8.5A.png)
 
-**(b)**  Nē, nevar. Aplūkosim rūtiṇas $B1$, $B2$, $B3$, $B4$ (skat. 25. att.). 
+**(B)**  Nē, nevar. Aplūkosim rūtiṇas $B1$, $B2$, $B3$, $B4$ (skat. 25. att.). 
 Ņemot vērā bultiņu virzienu, skaițliem jābūt sakārtotiem šādi: 
 $B1 < B2 < B3 < B4 < B1$. Tā kā skaitlis nevar būt mazāks pats par sevi, 
 tad šāds skaitļu izvietojums nav iespējams.
@@ -446,7 +570,15 @@ tad šāds skaitļu izvietojums nav iespējams.
 
 # <lo-sample/> LV.NOL.2024.9.1
 
-Dots izliekts četrstūris $K L M N$. Zināms, ka $\sphericalangle L K N=\sphericalangle M N K$ un malu $K L$ un $M N$ vidusperpendikulu krustpunkts $X$ atrodas uz malas $K N$. Pierādīt, ka $K M=L N$ !
+Dots izliekts četrstūris $K L M N$. Zināms, ka $\sphericalangle LKN = \sphericalangle MNK$ 
+un malu $K L$ un $M N$ vidusperpendikulu krustpunkts $X$ atrodas uz malas $K N$. Pierādīt, ka $K M=L N$!
+
+<small>
+
+* questionType:Prove
+
+</small>
+
 
 
 ## Atrisinājums
@@ -469,6 +601,12 @@ Tātad $KM=LN$ kā atbilstošās malas vienādos trijstūros.
 # <lo-sample/> LV.NOL.2024.9.2
 
 Pierādīt, ka $\sqrt{17-12 \sqrt{2}}+\sqrt{3-2 \sqrt{2}}+\sqrt{3+2 \sqrt{2}}=3$.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 ## Atrisinājums
@@ -517,12 +655,20 @@ Tā kā tika veikti ekvivalenti pārveidojumi un iegūta patiesa vienādība, ta
 
 # <lo-sample/> LV.NOL.2024.9.3
 
-Uz kvadrāta $A B C D$ diagonāles $B D$ atlikts punkts $E$. Pierādīt, ka $E D \cdot E B+E A \cdot E C=A B^{2}$ !
+Uz kvadrāta $ABCD$ diagonāles $BD$ atlikts punkts $E$. Pierādīt, ka $ED \cdot EB + EA \cdot EC = AB^{2}$!
+
+<small>
+
+* questionType:Prove
+
+</small>
+
 
 
 ## Atrisinājums
 
-Apzīmējam diagonālu krustpunktu ar $O ; B D=d$ un $O E=x$. Diagonāle $B D$ ir kvadrāta simetrijas ass, tāpēc $E A=E C$ (skat. 2. att.).
+Apzīmējam diagonālu krustpunktu ar $O$; apzīmējam $BD=d$ un $OE=x$. 
+Diagonāle $B D$ ir kvadrāta simetrijas ass, tāpēc $EA = EC$ (skat. 2. att.).
 
 ![](LV.NOL.2024.9.3A.png)
 
@@ -542,14 +688,22 @@ Līdz ar to esam ieguvuši, ka $ED \cdot EB+EA \cdot EC=\frac{d^{2}}{2}=AB^{2}$.
 
 # <lo-sample/> LV.NOL.2024.9.4
 
-Taisnstūrī ar izmēriem $4 \times 6$ rūtinas sākotnēji katrā rūtịnā atradās tieši viens kaḳis. Vienā brīdī katrs kakis pārlēca uz kādu no blakus rūtiṇām (katrs kaḳis pārlēca tieši vienu reizi). Vai var gadīties, ka tagad visi kaḳi atrodas tieši: **(a)** $8$ rūtiņās; **(b)** $7$ rūtiṇās?
+Taisnstūrī ar izmēriem $4 \times 6$ rūtinas sākotnēji katrā rūtịnā atradās tieši viens kaḳis. 
+Vienā brīdī katrs kakis pārlēca uz kādu no blakus rūtiṇām (katrs kaḳis pārlēca tieši vienu reizi). 
+Vai var gadīties, ka tagad visi kaḳi atrodas tieši: **(A)** $8$ rūtiņās; **(B)** $7$ rūtiṇās?
 
 *Piezīme.* Divas rūtiņas sauc par blakus rūtiņām, ja tām ir kopīga mala.
+
+<small>
+
+* questionType:ProveDisprove
+
+</small>
 
 
 ## Atrisinājums
 
-**(a)** Jā, var, piemēram, skat. 3. att., kur visi kaḳi atrodas pelēkajās rūtiṇās 
+**(A)** Jā, var, piemēram, skat. 3. att., kur visi kaḳi atrodas pelēkajās rūtiṇās 
 (katrs kaķis no baltās rūtiṇas varēja pārlēkt uz kādu pelēko rūtịnu, 
 un kaķi, kas sākumā atradās kādā no pelēkajām rūtiṇām, pārlēca uz blakus esošo pelēko rūtiņu).
 
@@ -557,7 +711,7 @@ un kaķi, kas sākumā atradās kādā no pelēkajām rūtiṇām, pārlēca uz 
 
 *Piezīme.* Der arī piemērs, kur kaķi pārlec uz otrās un piektās kolonnas rūtiṇām.
 
-**(b)** Nē, nevar. Pierādīsim, ka kaķi tagad atrodas vismaz $8$ rūtiṇās.
+**(B)** Nē, nevar. Pierādīsim, ka kaķi tagad atrodas vismaz $8$ rūtiṇās.
 
 Aplūkojam tos $8$ kaḳus, kas sākumā atradās 3. att. 
 iekrāsotajās rūtiṇās, un ievērosim, ka nekādi divi no tiem pēc pārlēkšanas 
@@ -575,6 +729,12 @@ Tātad pēc pārlēkšanas kaķi atradīsies vismaz $8$ rūtiņās.
 Dots naturāls skaitlis, kura cipari ir sakārtoti augošā secībā (katrs cipars, 
 izṇemot pirmo, ir lielāks nekā tā kaimiṇš kreisajā pusē). 
 Pierādīt, ka $9$ reizes lielāka skaitļa ciparu summa ir $9$.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 ## Atrisinājums
@@ -600,6 +760,12 @@ savukārt taisne $t_{2}$, kas vilkta caur $Y$, krusto $\omega_{1}$ un $\omega_{2
 attiecīgi punktos $C$ un $D$ (punkts $Y$ atrodas starp $C$ un $D$ ). 
 Pierādīt, ka $AC$ ir paralēla ar $BD$!
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 
 ## Atrisinājums
 
@@ -616,6 +782,13 @@ Tātad $\sphericalangle BDY=180^{\circ}-\sphericalangle BXY=180^{\circ}-\alpha$.
 # <lo-sample/> LV.NOL.2024.10.2
 
 Doti reāli skaiții $x$ un $y$, kuriem $x y^{3}+1=x+y^{3}$. Pierādīt, ka $y x^{3}+1=y+x^{3}$.
+
+<small>
+
+* questionType:Prove
+
+</small>
+
 
 
 ## Atrisinājums
@@ -646,6 +819,12 @@ Tā kā reizinājums ir vienāds ar 0 , tad $y^{3}-1=0$ vai $x-1=0$ jeb $y=1$ va
 un $BC=13 \mathrm{~cm}$. Pierādīt, ka uz malas $AC$ var atrast tādus divus 
 iekšējus punktus $P$ un $Q$, ka nogriežnu $AP, AQ, BP$ un $BQ$ garumi ir izsakāmi veselā skaitā centimetru! 
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 
 ## Atrisinājums
 
@@ -666,11 +845,13 @@ $$\begin{gathered}
 
 Izmantojot Pitagora teorēmu trijstūrī $ADB$, iegūstam, ka $BD^{2}=AB^{2}-AD^{2}=48$.
 
-Tā kā $D P=A P-A D=2-1=1 \mathrm{~cm}$, tad pēc Pitagora teorēmas $\triangle B D P$ iegūstam, ka $B P=\sqrt{B D^{2}+D P^{2}}=$ $=\sqrt{48+1}=7 \mathrm{~cm}$.
+Tā kā $D P=A P-A D=2-1=1 \mathrm{~cm}$, tad pēc Pitagora teorēmas $\triangle BDP$ 
+iegūstam, ka $BP=\sqrt{BD^{2} + DP^{2}} = \sqrt{48+1}=7 \mathrm{~cm}$.
 
-Tā kā $D Q=A Q-A D=5-1=4 \mathrm{~cm}$, tad pēc Pitagora teorēmas $\triangle B D Q$ iegūstam, ka $B Q=\sqrt{B D^{2}+D Q^{2}}=$ $=\sqrt{48+16}=8 \mathrm{~cm}$.
+Tā kā $D Q=A Q-A D=5-1=4 \mathrm{~cm}$, tad pēc Pitagora teorēmas $\triangle BDQ$ iegūstam, ka 
+$BQ = \sqrt{BD^{2}+DQ^{2}} = \sqrt{48+16} = 8 \mathrm{~cm}$.
 
-Piezīmes
+*Piezīmes*
 
 1. Augstumu $B D$ var aprēkināt arī, izmantojot trijstūra laukumu (pēc Hērona formulas).
 2. Vajadzīgos punktus var iegūt, mēǵinot kombinēt dažādus malu garumus, lai iegūtu, ka hipotenūzas garums ir vesels skaitlis.
@@ -681,6 +862,12 @@ Piezīmes
 # <lo-sample/> LV.NOL.2024.10.4
 
 Atrast visus tādus veselu skaitlu pārus $(a ; b)$, kuriem izpildās vienādība $(a+b)^{2}=a^{3}+b^{3}$.
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 ## Atrisinājums
@@ -728,17 +915,25 @@ kuram ir reālas saknes, ja $D \geq 0$ jeb $b \in\left[\frac{3-2 \sqrt{3}}{3} ; 
 
 # <lo-sample/> LV.NOL.2024.10.5
 
-Taisnstūrī ar izmēriem $8 \times 10$ rūtiṇas sākotnēji katrā rūtināa atradās tieši viena varde. Vienā brīdī katra varde pārlēca uz kādu no blakus rūtinām (katra varde pārlēca tieši vienu reizi). Vai var gadīties, ka tagad visas vardes atrodas tieši: **(a)** $24$ rūtiņās; **(b)** $23$ rūtiṇās?  
+Taisnstūrī ar izmēriem $8 \times 10$ rūtiṇas sākotnēji katrā rūtināa atradās tieši viena varde. 
+Vienā brīdī katra varde pārlēca uz kādu no blakus rūtinām (katra varde pārlēca tieši vienu reizi). 
+Vai var gadīties, ka tagad visas vardes atrodas tieši: **(A)** $24$ rūtiņās; **(B)** $23$ rūtiṇās?  
 *Piezīme.* Divas rūtiṇas sauc par blakus rūtiṇām, ja tām ir kopīga mala.
+
+<small>
+
+* questionType:ProveDisprove
+
+</small>
 
 
 ## Atrisinājums
 
-**(a)** Jā, var, piemēram, skat. 6. att., kur visas vardes ir nonākušas pelēkajās rūtiṇās (katra varde no baltās rūtiṇas varēja pārlēkt uz kādu pelēko rūtiṇu, un vardes, kas sākumā atradās kādā no pelēkajām rūtinām, pārlēca uz blakus esošo pelēko rūtinu).
+**(A)** Jā, var, piemēram, skat. 6. att., kur visas vardes ir nonākušas pelēkajās rūtiṇās (katra varde no baltās rūtiṇas varēja pārlēkt uz kādu pelēko rūtiṇu, un vardes, kas sākumā atradās kādā no pelēkajām rūtinām, pārlēca uz blakus esošo pelēko rūtinu).
 
 ![](LV.NOL.2024.10.5A.png)
 
-**(b)** Nē, nevar. Pierādīsim, ka vardes atrodas vismaz 24 rūtiṇās.
+**(B)** Nē, nevar. Pierādīsim, ka vardes atrodas vismaz 24 rūtiṇās.
 
 Aplūkosim tās 24 vardes, kas sākumā atradās 6. att. iekrāsotajās rūtiṇās, un ievērosim, ka nekādas divas no tām pēc pārlēkšanas nevar atrasties vienā un tajā pašā rūtinā. Lai divas vardes no pelēkajām rūtiṇām varētu nonākt vienā un tajā pašā rūtiṇā, būtu jābūt tādai rūtịnai, kurai divas blakus rūtị̣as ir pelēkā krāsā, bet tādas rūtinas nav. Tātad pēc pārlēkšanas vardes atradīsies vismaz 24 rūtiṇās.
 
@@ -752,7 +947,7 @@ Aplūkosim tās 24 vardes, kas sākumā atradās 6. att. iekrāsotajās rūtiṇ
 No punkta $A$, kas atrodas ārpus riṇḳa līnijas ar centru $O$, novilktas divas pieskares, 
 kas pieskaras riṇka līnijai punktos $D$ un $E$. Uz taisnēm $AD$ un $AE$ atlikti attiecīgi 
 punkti $B$ un $C$ tā, ka punkts $D$ atrodas starp $A$ un $B$, punkts $C$ atrodas starp 
-$A$ un $E$ un $O B=O C$. Pierādīt, ka punkti $O, A, B$ un $C$ atrodas uz vienas rinkta līnijas!
+$A$ un $E$ un $OB = OC$. Pierādīt, ka punkti $O$, $A$, $B$ un $C$ atrodas uz vienas rinkta līnijas!
 
 
 ## Atrisinājums
@@ -762,7 +957,8 @@ ir vienādi pēc pazīmes $hk$, tātad to atbilstošie leṇķi ir vienādi:
 $\sphericalangle OBD=\sphericalangle OCE$ (skat. 7. att.). 
 Ievērosim, ka pēc blakusleṇku īpašības 
 $\sphericalangle OCA=180^{\circ}-\sphericalangle OCE=180^{\circ}-\sphericalangle OBD$, 
-tātad $\sphericalangle OBA+\sphericalangle OCA=\sphericalangle OBD+\left(180^{\circ}-\sphericalangle OBD\right)=180^{\circ}$. Tātad ap četrstūri $OCAB$ var apvilkt riṇḳa līniju un punkti 
+tātad $\sphericalangle OBA+\sphericalangle OCA=\sphericalangle OBD+\left(180^{\circ}-\sphericalangle OBD\right)=180^{\circ}$. 
+Tātad ap četrstūri $OCAB$ var apvilkt riṇḳa līniju un punkti 
 $O$, $A$, $B$ un $C$ atrodas uz vienas riṇḳa līnijas.
 
 ![](LV.NOL.2024.11.1A.png)
@@ -772,7 +968,14 @@ $O$, $A$, $B$ un $C$ atrodas uz vienas riṇḳa līnijas.
 
 # <lo-sample/> LV.NOL.2024.11.2
 
-Reāliem skaitliem $x$ un $y$ ir spēkā vienādība: $\frac{x+y}{x-y}+\frac{x-y}{x+y}=$. Pierādīt, ka $\frac{x^{2}+y^{2}}{x^{2}-y^{2}}+\frac{x^{2}-y^{2}}{x^{2}+y^{2}}<3$.
+Reāliem skaitliem $x$ un $y$ ir spēkā vienādība: $\frac{x+y}{x-y}+\frac{x-y}{x+y}=5$. 
+Pierādīt, ka $\frac{x^{2}+y^{2}}{x^{2}-y^{2}}+\frac{x^{2}-y^{2}}{x^{2}+y^{2}}<3$.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 ## Atrisinājums
@@ -807,29 +1010,33 @@ $$
 
 # <lo-sample/> LV.NOL.2024.11.3
 
-Taisnlen̦ḳa trijstūrī $A B C\left(\sphericalangle A B C=90^{\circ}\right)$ uz malas $B C$ atlikti punkti $D$ un $E$ tā, ka $\sphericalangle B A D=\sphericalangle D A E, \sphericalangle E A C=2 \sphericalangle B A D$, $B D=3, D E=4$. Aprēḳināt $E C$ garumu!
+Taisnlen̦ḳa trijstūrī $ABC\left(\sphericalangle ABC=90^{\circ}\right)$ uz malas $BC$ atlikti punkti $D$ un $E$ tā, ka $\sphericalangle BAD=\sphericalangle DAE, \sphericalangle EAC=2 \sphericalangle BAD$, $BD=3$, $DE=4$. 
+Aprēḳināt $EC$ garumu!
+
+<small>
+
+* questionType:FindExample
+
+</small>
 
 
 ## Atrisinājums
 
 Izmantojot bisektrises īpašību trijstūrī $A B E$ (skat. 8. att.), iegūstam, ka $\frac{A B}{A E}=\frac{B D}{D E}=\frac{3}{4}$. Apzīmējam $A B=3 x$ un $A E=4 x$. Pēc Pitagora teorēmas $\triangle A B E$ iegūstam:
 
-$$
-A E^{2}=A B^{2}+B E^{2} \quad \Rightarrow \quad 16 x^{2}=9 x^{2}+49 \quad \Rightarrow \quad x=\sqrt{7} \quad \Rightarrow \quad A B=3 \sqrt{7} ; A E=4 \sqrt{7} .
-$$
+$$AE^{2}=A B^{2}+B E^{2} \quad \Rightarrow \quad 16 x^{2}=9 x^{2}+49 \quad \Rightarrow \quad x=\sqrt{7} \quad \Rightarrow \quad A B=3 \sqrt{7} ; A E=4 \sqrt{7}.$$
 
 ![](LV.NOL.2024.11.3A.png)
 
 Izmantojot bisektrises īpašību $\triangle A B E$, iegūstam, ka $\frac{A C}{E C}=\frac{A B}{B E}=\frac{3 \sqrt{7}}{7}$. Apzīmējot $A C=3 \sqrt{7} a$ un $E C=7 a$ un lietojot Pitagora teorēmu $\triangle A B C$, iegūstam:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 & A B^{2}+B C^{2}=A C^{2} \Rightarrow(3 \sqrt{7})^{2}+(7+7 a)^{2}=(3 \sqrt{7} a)^{2} \Rightarrow \Rightarrow 9 \cdot 7+7^{2}+2 \cdot 7^{2} a+7^{2} a^{2}=9 \cdot 7 a^{2} \\
 & 9+7+14 a+7 a^{2}=9 a^{2} \Rightarrow a^{2}-7 a-8=0 \Rightarrow a=8 \text { vai } a=-1 \text { (neder). }
 \end{aligned}
 $$
 
-Lídz ar to esam ieguvuši, ka $E C=7 a=56$.
+Lídz ar to esam ieguvuši, ka $EC=7a=56$.
 
 
 
@@ -859,9 +1066,17 @@ Tātad $EC=x=56$.
 
 # <lo-sample/> LV.NOL.2024.11.4
 
-Pierādīt: ja $a, b, c$ ir naturāli skaitli un $a+\operatorname{LKD}(a, b)=b+\operatorname{LKD}(b, c)=c+\operatorname{LKD}(c, a)$, tad $a=b=c$.
+Pierādīt: ja $a, b, c$ ir naturāli skaitli un 
+$a+\operatorname{LKD}(a, b)=b+\operatorname{LKD}(b, c)=c+\operatorname{LKD}(c, a)$, tad $a=b=c$.
 
-Piezîme. $\operatorname{Ar} \operatorname{LKD}(a, b)$ ir apzīmēts skaitlu $a$ un $b$ lielākais kopīgais dalītājs.
+*Piezîme.* $\operatorname{Ar} \operatorname{LKD}(a, b)$ ir apzīmēts skaitlu $a$ un $b$ lielākais kopīgais dalītājs.
+
+<small>
+
+* questionType:Prove
+
+</small>
+
 
 
 ## Atrisinājums
@@ -887,12 +1102,23 @@ Līdzīgi iegūstam, $\operatorname{kaKD}\left(b_{1}, c_{1}\right)=1$ un $\opera
 
 # <lo-sample/> LV.NOL.2024.11.5
 
-Uz galda stāv $n$ kastes, kurās ir āboli un bumbieri, katrā kastē ir vismaz viens ābols un vismaz viens bumbieris. Zināms, ka kastes var sakārtot rindā gan tā, ka katrā nākamajā kastē ir par vienu ābolu vairāk nekā iepriekšējā, gan tā, ka katrā nākamajā kastē ir par vienu bumbieri vairāk nekā iepriekšējā, gan tā, ka katrā nākamajā kastē ir par vienu augli vairāk nekā iepriekšējā. Vai iespējams, ka: **(a)** $n=2024$; **(b)** $n=2025$ ?
+Uz galda stāv $n$ kastes, kurās ir āboli un bumbieri, katrā kastē ir vismaz viens ābols un vismaz viens bumbieris. 
+Zināms, ka kastes var sakārtot rindā gan tā, ka katrā nākamajā kastē ir par vienu ābolu vairāk nekā iepriekšējā, 
+gan tā, ka katrā nākamajā kastē ir par vienu bumbieri vairāk nekā iepriekšējā, gan tā, 
+ka katrā nākamajā kastē ir par vienu augli vairāk nekā iepriekšējā. 
+Vai iespējams, ka: **(A)** $n=2024$; **(B)** $n=2025$?
+
+<small>
+
+* questionType:ProveDisprove
+
+</small>
+
 
 
 ## Atrisinājums
 
-**(a)** Pamatosim, ka $n=2024$ nav iespējams. Izmantosim pierādījumu no pretējā. 
+**(A)** Pamatosim, ka $n=2024$ nav iespējams. Izmantosim pierādījumu no pretējā. 
 Pienemsim, ka mums ir tādas 2024 kastes ar augliem, kas atbilst uzdevuma nosacijumiem. 
 Tā kā kastes var pārkārtot tā, ka katrā nākamajā kastē ir par vienu ābolu vairāk 
 nekā iepriekšējā, tad varam secināt, ka ābolu skaits šajā sakārtojumā ir $2024$ 
@@ -910,7 +1136,7 @@ $$
 
 Iegūstam pretrunu. Vienādības kreisās puses vērtība ir pāra skaitlis, bet labās puses izteiksmes vērtība ir nepāra skaitlis. Tātad pienēmums ir aplams un nav iespējams, ka uz galda ir 2024 kastes.
 
-**(b)** Parādīsim, kā izveidot kastes ar augliem tā, lai izpildītos uzdevuma nosacijumi, 
+**(B)** Parādīsim, kā izveidot kastes ar augliem tā, lai izpildītos uzdevuma nosacijumi, 
 ja $n=2025$. Saliksim auglus tā, ka gan ābolu, gan bumbieru skaits kastēs būs visi 
 naturālie skaiț̣i no 1 līdz 2025, bet kopējās auglu skaits kastēs būs visi naturālie 
 skaiți no $1014$ līdz $3038$. 
@@ -936,6 +1162,12 @@ no $3038$ līdz $2027$ (katrā nākamajā kastē par vienu mazāk).
 Šaurlen̦ḳu trijstūrī $ABC$ novilkti augstumi $AD, BE$ un $CF$, kas krustojas punktā $H$. 
 Pierādīt, ka $DH$ ir leṇka $EDF$ bisektrise!
 
+<small>
+
+* questionType:Prove
+
+</small>
+
 
 ## Atrisinājums
 
@@ -954,7 +1186,14 @@ $\sphericalangle HDE=\alpha=\sphericalangle FDH$ un $DH$ ir leṇka $EDF$ bisekt
 
 # <lo-sample/> LV.NOL.2024.12.2
 
-Reāliem skaitliem $x$ un $y$ ir spēkā vienādība $\frac{x+y}{x-y}+\frac{x-y}{x+y}=7$. Pierādīt, ka $\frac{x^{2}+y^{2}}{x^{2}-y^{2}}+\frac{x^{2}-y^{2}}{x^{2}+y^{2}}>\sqrt{14}$.
+Reāliem skaitliem $x$ un $y$ ir spēkā vienādība $\frac{x+y}{x-y}+\frac{x-y}{x+y}=7$. 
+Pierādīt, ka $\frac{x^{2}+y^{2}}{x^{2}-y^{2}}+\frac{x^{2}-y^{2}}{x^{2}+y^{2}}>\sqrt{14}$.
+
+<small>
+
+* questionType:Prove
+
+</small>
 
 
 ## Atrisinājums
@@ -1016,8 +1255,13 @@ Māris sāk pirmais. Katrā gājienā spēlētājs var izvēlēties patvalịgu 
 $p$ un patvalīgu veselu nenegatīvu skaitli $n$ un panemt no kastes $p^{n}$ konfektes. 
 Uzvar tas spēlētājs, pēc kura gājiena kaste paliek tukša. Spēli sāk Māris. 
 Kurš spēlētājs, pareizi spēlējot, vienmēr var uzvarēt, 
-ja sākumā kastē ir: **(a)** $20$; **(b)** $2024$ konfektes?
+ja sākumā kastē ir: **(A)** $20$; **(B)** $2024$ konfektes?
 
+<small>
+
+* questionType:Algorithm,Algorithm
+
+</small>
 
 ## Atrisinājums
 
@@ -1034,9 +1278,9 @@ konfekšu skaits dalīsies ar $6$. Tā kā $0$ dalās ar $6$
 (situācija, kad panemtas visas konfektes), 
 tad Māris ar šādu stratēǵiju vienmēr uzvarēs.
 
-Pirmajā gājienā **(a)** gadījumā Mārim jāpaṇem $2$ (vai $8$) konfektes, 
+Pirmajā gājienā **(A)** gadījumā Mārim jāpaṇem $2$ (vai $8$) konfektes, 
 lai pāri paliktu $18$ (vai $12$) konfektes. 
-Arī **(b)** gadījumā pirmajā gājienā Māris var paṇemt $2$ konfektes, 
+Arī **(B)** gadījumā pirmajā gājienā Māris var paṇemt $2$ konfektes, 
 lai pāri paliktu $2022$ konfektes, kas dalās ar $6$ (Māris pirmajā gājienā var n̦emt arī citu 
 konfekšu skaitu, piemēram, $8 ; 32 ; 128 ; \ldots$ ).
 
@@ -1045,6 +1289,12 @@ konfekšu skaitu, piemēram, $8 ; 32 ; 128 ; \ldots$ ).
 # <lo-sample/> LV.NOL.2024.12.5
 
 Atrast visus pirmskaitlu pārus $(p ; q)$, kuriem izpildās vienādība $p^{q}=q^{p}+7$.
+
+<small>
+
+* questionType:FindAll
+
+</small>
 
 
 ## Atrisinājums

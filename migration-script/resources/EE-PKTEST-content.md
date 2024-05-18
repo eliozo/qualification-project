@@ -10,9 +10,9 @@ Atrast $\sphericalangle BAC$, ja $\sphericalangle CED = 25^{\circ}$.
 
 <small>
 
-* [plan.triangle.angles.internal](#)
-* [plan.triangle.special.isosceles](#)
-* [plan.measurements.angles.linearpair](#)
+* topic:TriangleAngles
+* topic:TrianglesIsosceles
+* topic:AnglesParallelLines
 * Hint:"Var izteikt vispirms ∠DCB, tad tā blakusleņķi ∠ACB."
 * Topic:triangleSumOfAngles
 * Answer:80
@@ -59,7 +59,7 @@ kas apzīmēti ar lociņiem.
 <small>
 
 * [plan.circle.angles.central](#)
-* [plan.triangle.angles.internal](#)
+* topic:TriangleAngles
 * Topic:measuringSegmentsAngles
 * Answer:360
 * Grade:7,8
@@ -99,9 +99,9 @@ Aprēķināt leņķi $x$.
 
 <small>
 
-* [plan.triangle.special.isosceles](#)
-* [plan.triangle.angles.internal](#)
-* [plan.measurements.angles.linearpair](#)
+* topic:TrianglesIsosceles
+* topic:TriangleAngles
+* topic:AnglesParallelLines
 * Hint:"Var vispirms izteikt leņķus abās pusēs leņķim x."
 * Topic:isoscelesTriangles
 * Answer:45
@@ -142,8 +142,8 @@ Aprēķināt leņķu lielumu summu, kas zīmējumā apzīmēti ar $x$ un $y$.
 
 <small>
 
-* [plan.measurements.angles.central](#)
-* [plan.polygon.angles.internal](#)
+* topic:AnglesCentral
+* topic:PolygonAnglesSum
 * Topic:polygonSumOfAngles
 * Answer:150
 * Grade:7,8
@@ -182,8 +182,8 @@ taisnstūra malu.
 
 <small>
 
-* [plan.triangle.special.equilateral](#)
-* [plan.measurements.angles.interior](#)
+* topic:TrianglesEquilateral
+* topic:AnglesParallelLines
 * Hint:"Vienādmalu trijstūra iekšējie leņķi ir 60 grādi. Leņķi α var ar to izteikt."
 * Topic:parallelAndIntersectingLines
 * Answer:120
@@ -225,7 +225,7 @@ $CD$ ir šī trijstūra iekšējo leņķu bisektrises, un $\sphericalangle BDC$ 
 
 <small>
 
-* [plan.triangle.angles.internal](#)
+* topic:TriangleAngles
 * Topic:triangleSumOfAngles
 * Answer:20
 * Grade:7,8
@@ -259,8 +259,8 @@ Kāda ir leņķu $\alpha$ un $\gamma$ summa?
 
 <small>
 
-* [plan.measurements.angles.central](#)
-* [alg.linear.equations](#)
+* topic:AnglesCentral
+* topic:LinearSystemsTransforms
 * Topic:measuringSegmentsAngles
 * Answer:340
 * Grade:9,10
@@ -304,9 +304,9 @@ Atrast leņķa $BDE$ lielumu.
 
 <small>
 
-* [plan.triangle.special.isosceles](#)
-* [plan.triangle.angles.internal](#)
-* [plan.measurements.angles.linearpair](#)
+* topic:TrianglesIsosceles
+* topic:TriangleAngles
+* topic:AnglesParallelLines
 * Hint:"Vispirms izsaka ∠BED, tad izmanto trijstūra BDE iekšējo leņķu summu."
 * Topic:triangleSumOfAngles
 * Answer:20
@@ -346,7 +346,7 @@ $AB = CD$. Atrast leņķa $\sphericalangle ABC$ lielumu.
 
 <small>
 
-* [plan.triangle.special.isosceles](#)
+* topic:TrianglesIsosceles
 * Topic:isoscelesTriangles
 * Answer:65
 * Grade:7,8
@@ -384,7 +384,7 @@ malas $AC$ garumu.
 
 <small>
 
-* [plan.triangle.angles.internal](#)
+* topic:TriangleAngles
 * Hint:"Izsakot leņķus, var pamanīt vienādsānu trijstūrus. Un tad izmantot tajos malu vienādības."
 * Topic:triangleSumOfAngles
 * Answer:30
@@ -428,8 +428,8 @@ $BC$ būtu vienādi. Aprēķināt ar $x$ apzīmēto leņķi.
 
 <small>
 
-* [plan.triangle.angles.internal](#)
-* [plan.triangle.special.isosceles](#)
+* topic:TriangleAngles
+* topic:TrianglesIsosceles
 * Topic:isoscelesTriangles
 * Answer:30
 * Grade:7,8
@@ -474,8 +474,8 @@ Aprēķināt leņķi, kas apzīmēts ar $x$.
 
 <small>
 
-* [plan.polygon.angles](#)
-* [plan.measurements.angles.linearpair](#)
+* topic:PolygonRegular
+* topic:AnglesParallelLines
 * Hint:"Izsaka četrstūra iekšējos leņķus - daži no tiem ir blakusleņķi dotajiem. Tad atrod x blakusleņķi."
 * Topic:polygonSumOfAngles
 * Answer:130
@@ -535,8 +535,8 @@ bet $\sphericalangle ABC$ ir $80^{\circ}$. Aprēķināt $y$.
 
 <small>
 
-* [plan.triangle.angles.internal](#)
-* [plan.measurements.angles.corresponding](#)
+* topic:TriangleAngles
+* topic:AnglesParallelLines
 * Topic:triangleSumOfAngles
 * Answer:50
 * Grade:7,8
@@ -575,8 +575,8 @@ Atrast leņķi, kas apzīmēts ar $y$, ja ar $x$ apzīmētie leņķi ir vienādi
 
 <small>
 
-* [plan.triangle.angles.internal](#)
-* [plan.measurements.angles.vertical](#)
+* topic:TriangleAngles
+* topic:AnglesParallelLines
 * Hint:"Vispirms izsaka x, izmantojot tā krustleņķi."
 * Topic:triangleSumOfAngles
 * Answer:48
@@ -619,8 +619,8 @@ Trijstūris $ACE$ ir vienādsānu. Atrast leņķi $\sphericalangle EAB$.
 
 <small>
 
-* [plan.triangle.angles.internal](#)
-* [plan.measurements.angles.linearpair](#)
+* topic:TriangleAngles
+* topic:AnglesParallelLines
 * Topic:triangleSumOfAngles
 * Answer:57
 * Grade:7,8
@@ -659,9 +659,9 @@ Aprēķināt leņķi $DCE$.
 
 <small>
 
-* [plan.triangle.angles.internal](#)
-* [plan.measurements.angles.interior](#)
-* [plan.measurements.angles.vertical](#)
+* topic:TriangleAngles
+* topic:AnglesParallelLines
+* topic:AnglesParallelLines
 * Hint:"Ar meklējamo leņķi (α) izsaka citus - izmanto trijstūra iekšējo leņķu summu, šķērsleņķu un krustleņķu īpašības."
 * Topic:triangleSumOfAngles
 * Answer:20
@@ -703,8 +703,8 @@ bet trijstūris $ACD$ ir vienādsānu. Aprēķināt leņķi $ACB$.
 
 <small>
 
-* [plan.triangle.angles.internal](#)
-* [plan.measurements.angles.linearpair](#)
+* topic:TriangleAngles
+* topic:AnglesParallelLines
 * Topic:specialTriangles
 * Answer:30
 * Grade:7,8
@@ -744,7 +744,7 @@ Aprēķināt leņķi $ACD$.
 
 <small>
 
-* [plan.triangle.angles.internal](#)
+* topic:TriangleAngles
 * Hint:"CAD un BCD arī ir taisnleņķa trijstūri; citus leņķus izsaka ar nezināmo ∠ACD un risina radušos vienādojumu."
 * Topic:triangleSumOfAngles
 * Answer:40
@@ -797,8 +797,8 @@ Aprēķināt leņķi $ACB$.
 
 <small>
 
-* [plan.triangle.angles.internal](#)
-* [plan.measurements.angles.linearpair](#)
+* topic:TriangleAngles
+* topic:AnglesParallelLines
 * Topic:triangleSumOfAngles
 * Answer:80
 * Grade:7,8
@@ -847,8 +847,8 @@ leņķis $x$ ir $23^{\circ}$ un leņķis $y$ ir $32^{\circ}$.
 
 <small>
 
-* [plan.triangle.angles.internal](#)
-* [plan.polygon.angles.internal](#)
+* topic:TriangleAngles
+* topic:PolygonAnglesSum
 * Hint:"Var izteikt pārējos leņķus trijstūrītī, kurā viens no leņķiem ir z."
 * Topic:triangleSumOfAngles
 * Answer:80
@@ -890,8 +890,8 @@ Atrast leņķa $x$ lielumu, ja zīmējumā attēlotais četrstūris ir paralelog
 
 <small>
 
-* [plan.triangle.angles.internal](#)
-* [plan.polygon.angles.internal](#)
+* topic:TriangleAngles
+* topic:PolygonAnglesSum
 * Topic:triangleSumOfAngles
 * Answer:44
 * Grade:7,8
@@ -934,7 +934,7 @@ $M$ ir tā malas viduspunkts.
 
 <small>
 
-* [plan.triangle.special.equilateral](#)
+* topic:TrianglesEquilateral
 * Topic:placementTriangleSpecialLines
 * Answer:120
 * Grade:7,8
@@ -977,8 +977,8 @@ Aprēķināt $\sphericalangle ABC$.
 
 <small>
 
-* [plan.triangle.angles.internal](#)
-* [plan.measurements.angles.linearpair](#)
+* topic:TriangleAngles
+* topic:AnglesParallelLines
 * Topic:triangleSumOfAngles
 * Answer:33
 * Grade:7,8
@@ -1016,8 +1016,8 @@ lielumu, ja $\sphericalangle ADK = 97^{\circ}$ un $\sphericalangle DKC = 123^{\c
 
 <small>
 
-* [plan.triangle.angles.internal](#)
-* [plan.measurements.angles.linearpair](#)
+* topic:TriangleAngles
+* topic:AnglesParallelLines
 * Topic:triangleSumOfAngles
 * Answer:128
 * Grade:7,8

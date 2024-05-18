@@ -38,7 +38,8 @@ Atrast skaitļu $a_{1989}$ un $a_{1990}$ lielāko kopīgo dalītāju."""@lv ;
     eliozo:problemTextHtml """<p>Skaitļu virkne $(a_i)$ tiek definēta šādi: 
 $$a_1=19,\\;a_2=90,\\;a_{n+2}=a_n+a_{n+1},\\;\\mbox{ja}\\;n=1,2,3,\\ldots.$$
 Atrast skaitļu $a_{1989}$ un $a_{1990}$ lielāko kopīgo dalītāju.</p>"""@lv ;
-    eliozo:problem_number 104 .
+    eliozo:problem_number 104 ;
+    eliozo:topic "NumTheoryMathInduction" .
 
 eliozo:BBK2012.P1.11 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -57,12 +58,12 @@ eliozo:BBK2012.P1.115 a eliozo:Problem ;
 kuriem skaitļi $ab$, $ac$ un $bc$ veido aritmētisko progresiju.
 
 <!--
-questionType=Find.All
+questionType=FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Atrodiet visus tādus dažādu naturālu skaitļu trijniekus, 
 kuriem skaitļi $ab$, $ac$ un $bc$ veido aritmētisko progresiju.</p>
 <!--
-questionType=Find.All
+questionType=FindAll
 -->"""@lv ;
     eliozo:problem_number 115 .
 
@@ -103,7 +104,8 @@ ir bezgalīgi daudz locekļu, kas ir savstarpēji pirmskaitļi ar skaitli $m$.""
     eliozo:problemTextHtml """<p>Doti naturāli skaitļi $a$, $b$ un $m$; $\\mbox{LKD}(a,b)=1$. 
 Pierādiet, ka aritmētiskajā progresijā $ak+b$, ($k=0,1,2,\\ldots$) 
 ir bezgalīgi daudz locekļu, kas ir savstarpēji pirmskaitļi ar skaitli $m$.</p>"""@lv ;
-    eliozo:problem_number 119 .
+    eliozo:problem_number 119 ;
+    eliozo:topic "ArithmeticSeriesAll" .
 
 eliozo:BBK2012.P1.12 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -131,7 +133,8 @@ lielāko kopīgo dalītāju."""@lv ;
     eliozo:problemTextHtml """<p>Dota virkne $x_1=19,\\;x_2=95,\\;x_{n+2}=\\mbox{LKD}(x_{n+1},x_n)+x_n$, 
 ja $n \\geq 1$. Atrast skaitļu $x_{1995}$ un $x_{1996}$ 
 lielāko kopīgo dalītāju.</p>"""@lv ;
-    eliozo:problem_number 121 .
+    eliozo:problem_number 121 ;
+    eliozo:topic "NumTheoryMathInduction" .
 
 eliozo:BBK2012.P1.122 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -140,7 +143,8 @@ eliozo:BBK2012.P1.122 a eliozo:Problem ;
 dalās ar $7$?"""@lv ;
     eliozo:problemTextHtml """<p>Cik daudz ir tādu naturālu skaitļu $n \\leq 1983$, kuriem $3n+5$ 
 dalās ar $7$?</p>"""@lv ;
-    eliozo:problem_number 122 .
+    eliozo:problem_number 122 ;
+    eliozo:topic "SequencePeriodicity" .
 
 eliozo:BBK2012.P1.123 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -149,7 +153,8 @@ eliozo:BBK2012.P1.123 a eliozo:Problem ;
 kuri nedalās ne ar $5$, ne ar $7$?"""@lv ;
     eliozo:problemTextHtml """<p>Cik daudz ir tādu naturālu skaitļu $n \\leq 1000$, 
 kuri nedalās ne ar $5$, ne ar $7$?</p>"""@lv ;
-    eliozo:problem_number 123 .
+    eliozo:problem_number 123 ;
+    eliozo:topic "MultiplesInInterval" .
 
 eliozo:BBK2012.P1.124 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -160,16 +165,17 @@ eliozo:BBK2012.P1.124 a eliozo:Problem ;
 vai nu ar $3$, vai ar $5$.
 
 <!--
-questionType=Find.Only
+questionType=FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Atrast<br />
 (a) visu to naturālo skaitļu summu, kas nepārsniedz $1000$ un dalās ar $5$;<br />
 (b) visu to naturālo skaitļu summu, kas nepārsniedz $1000$ un dalās 
 vai nu ar $3$, vai ar $5$.</p>
 <!--
-questionType=Find.Only
+questionType=FindAll
 -->"""@lv ;
-    eliozo:problem_number 124 .
+    eliozo:problem_number 124 ;
+    eliozo:topic "SequencePeriodicity" .
 
 eliozo:BBK2012.P1.125 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -178,7 +184,8 @@ eliozo:BBK2012.P1.125 a eliozo:Problem ;
 un kuri dalās ar $3$?"""@lv ;
     eliozo:problemTextHtml """<p>Cik daudz tādu piecciparu skaitļu, kuru pēdējais cipars ir $6$, 
 un kuri dalās ar $3$?</p>"""@lv ;
-    eliozo:problem_number 125 .
+    eliozo:problem_number 125 ;
+    eliozo:topic "SequencePeriodicity" .
 
 eliozo:BBK2012.P1.126 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -191,7 +198,8 @@ Pietiek uzrādīt vienu šādu $1328$ skaitļu komplektu."""@lv ;
 skaitļus tā, lai starp jebkuriem trim izvēlētajiem būtu vismaz divi,
 kuru lielākais kopīgais dalītājs pārsniedz vieninieku.
 Pietiek uzrādīt vienu šādu $1328$ skaitļu komplektu.</p>"""@lv ;
-    eliozo:problem_number 126 .
+    eliozo:problem_number 126 ;
+    eliozo:topic "SequencePeriodicity" .
 
 eliozo:BBK2012.P1.127 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -202,14 +210,14 @@ $$\\left\\lfloor \\frac{n}{k} \\right\\rfloor +
 \\left\\lfloor \\frac{n+k-1}{k} \\right\\rfloor = n.$$
 
 <!--
-questionType=Prove.ForAll
+questionType=Prove
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka jebkuriem naturāliem skaitļiem $n$ un $k$ izpildās vienādība 
 $$\\left\\lfloor \\frac{n}{k} \\right\\rfloor +
 \\left\\lfloor \\frac{n+1}{k} \\right\\rfloor + \\ldots + 
 \\left\\lfloor \\frac{n+k-1}{k} \\right\\rfloor = n.$$</p>
 <!--
-questionType=Prove.ForAll
+questionType=Prove
 -->"""@lv ;
     eliozo:problem_number 127 .
 
@@ -228,7 +236,7 @@ $$=\\left\\lfloor \\frac{q}{p} \\right\\rfloor +
 \\left\\lfloor \\frac{(p-1)q}{p} \\right\\rfloor.$$
 
 <!--
-questionType=Prove.ForAll
+questionType=Prove
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Ar $\\lfloor x \\rfloor$ apzīmē lielāko veselo skaitli, kas nepārsniedz $x$. 
 Pierādīt: ja $p$ un $q$ – naturāli skaitļi, kuru lielākais kopīgais dalītājs ir $1$, tad
@@ -241,7 +249,7 @@ $$=\\left\\lfloor \\frac{q}{p} \\right\\rfloor +
 \\left\\lfloor \\frac{3q}{p} \\right\\rfloor + \\ldots + 
 \\left\\lfloor \\frac{(p-1)q}{p} \\right\\rfloor.$$</p>
 <!--
-questionType=Prove.ForAll
+questionType=Prove
 -->"""@lv ;
     eliozo:problem_number 128 .
 
@@ -254,14 +262,14 @@ $$\\left\\lfloor \\frac{n+1}{2} \\right\\rfloor +
 \\left\\lfloor \\frac{n+2^k}{2^{k+1}} \\right\\rfloor + \\ldots.$$
 
 <!--
-questionType=Find.Only
+questionType=FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Dots naturāls skaitlis $n$. Aprēķināt summu
 $$\\left\\lfloor \\frac{n+1}{2} \\right\\rfloor +
 \\left\\lfloor \\frac{n+2}{2^2} \\right\\rfloor + \\ldots + 
 \\left\\lfloor \\frac{n+2^k}{2^{k+1}} \\right\\rfloor + \\ldots.$$</p>
 <!--
-questionType=Find.Only
+questionType=FindAll
 -->"""@lv ;
     eliozo:problem_number 129 .
 
@@ -287,7 +295,7 @@ n \\in \\mathbb{N}, n\\geq 2$$
 izpildās tad un tikai tad, kad $n$ ir pirmskaitlis.
 
 <!--
-questionType=Prove.ForAll
+questionType=Prove
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka vienādība
 $$\\sum_{k=1}^n \\left\\lfloor \\frac{n}{k} \\right\\rfloor = 
@@ -295,7 +303,7 @@ $$\\sum_{k=1}^n \\left\\lfloor \\frac{n}{k} \\right\\rfloor =
 n \\in \\mathbb{N}, n\\geq 2$$
 izpildās tad un tikai tad, kad $n$ ir pirmskaitlis.</p>
 <!--
-questionType=Prove.ForAll
+questionType=Prove
 -->"""@lv ;
     eliozo:problem_number 130 .
 
@@ -306,12 +314,12 @@ eliozo:BBK2012.P1.131 a eliozo:Problem ;
 satur maksimālo iespējamo pirmskaitļu skaitu.
 
 <!--
-questionType=Find.All
+questionType=FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Atrodiet visus tādus naturālus skaitļus $k$, kuriem virkne $k+1,k+2,\\ldots,k+100$
 satur maksimālo iespējamo pirmskaitļu skaitu.</p>
 <!--
-questionType=Find.All
+questionType=FindAll
 -->"""@lv ;
     eliozo:problem_number 131 .
 
@@ -326,7 +334,7 @@ $$d(1)+d(2)+\\ldots+d(n)= \\left\\lfloor \\frac{n}{1} \\right\\rfloor +
 
 
 <!--
-questionType=Prove.ForAll
+questionType=Prove
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Ar $d(i)$ apzīmēsim skaitļa $i$ naturālo dalītāju skaitu. 
 Pierādiet, ka jebkuram naturālam skaitlim $n$ izpildās vienādība 
@@ -334,7 +342,7 @@ $$d(1)+d(2)+\\ldots+d(n)= \\left\\lfloor \\frac{n}{1} \\right\\rfloor +
 \\left\\lfloor \\frac{n}{2} \\right\\rfloor + \\ldots + 
 \\left\\lfloor \\frac{n}{n} \\right\\rfloor.$$</p>
 <!--
-questionType=Prove.ForAll
+questionType=Prove
 -->"""@lv ;
     eliozo:problem_number 132 .
 
@@ -649,7 +657,8 @@ Atrast lielāko iespējamo diferences vērtību, ja zināms, ka tā ir vesels sk
     eliozo:problemTextHtml """<p>Trīs no aritmētiskās progresijas locekļiem ir $41$, $113$, $193$. 
 Atrast lielāko iespējamo diferences vērtību, ja zināms, ka tā ir vesels skaitlis.</p>"""@lv ;
     eliozo:problem_number 36 ;
-    eliozo:questionType "Find.Max" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:topic "GcdAndLcm" .
 
 eliozo:BBK2012.P1.4 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -680,7 +689,8 @@ piederētu vismaz vienai progresijai?"""@lv ;
     eliozo:problemTextHtml """<p>Vai iespējams norādīt tādu galīgu skaitu ģeometrisko progresiju, 
 kuru locekļi ir naturāli skaitļi, ka jebkurš naturāls skaitlis 
 piederētu vismaz vienai progresijai?</p>"""@lv ;
-    eliozo:problem_number 52 .
+    eliozo:problem_number 52 ;
+    eliozo:topic "GeometricSeriesGaps" .
 
 eliozo:BBK2012.P1.6 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -774,7 +784,8 @@ Kāda var būt lielākā šīs progresijas diferences vērtība?"""@lv ;
     eliozo:problemTextHtml """<p>Aritmētiskā progresija, kuras locekļi ir veseli skaitļi satur skaitļus 
 $13$, $37$ un $79$. 
 Kāda var būt lielākā šīs progresijas diferences vērtība?</p>"""@lv ;
-    eliozo:problem_number 94 .
+    eliozo:problem_number 94 ;
+    eliozo:topic "GcdAndLcm" .
 
 eliozo:BBK2012.P1.97 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -809,7 +820,7 @@ katriem diviem lielākais kopīgais dalītājs ir $1$?
 jo $123$ un $9$ abi dalās ar $3$.)
 
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 seeAlso=LV.NO.2001.7.4
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Virknē uzrakstīti cipari no $1$ līdz $9$:
@@ -821,10 +832,428 @@ katriem diviem lielākais kopīgais dalītājs ir $1$?
 (Piemēram, pieraksts $123;45678;9$ neder, 
 jo $123$ un $9$ abi dalās ar $3$.)</p>
 <!--
-questionType=Find.Max
+questionType=FindOptimal
 seeAlso=LV.NO.2001.7.4
 -->"""@lv ;
     eliozo:problem_number 99 .
+
+eliozo:BBK2012.P1.E2.1 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.1 ;
+    eliozo:problemText """Dots, ka $5 \\mid a$ un $5 \\mid b$. Pierādiet, ka 
+$5 \\mid (a^2 + 7b)$."""@lv ;
+    eliozo:problemTextHtml """<p>Dots, ka $5 \\mid a$ un $5 \\mid b$. Pierādiet, ka 
+$5 \\mid (a^2 + 7b)$.</p>"""@lv ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.10 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.10 ;
+    eliozo:problemText "Atrodiet visus pirmskaitļus intervālā $[100, 120]$."@lv ;
+    eliozo:problemTextHtml "<p>Atrodiet visus pirmskaitļus intervālā $[100, 120]$.</p>"@lv ;
+    eliozo:problem_number 10 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.11 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.11 ;
+    eliozo:problemText "Atrodiet visus pirmskaitļus intervālā $[180, 200]$s."@lv ;
+    eliozo:problemTextHtml "<p>Atrodiet visus pirmskaitļus intervālā $[180, 200]$s.</p>"@lv ;
+    eliozo:problem_number 11 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.12 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.12 ;
+    eliozo:problemText "Ar kādām naturālām $n$ vērtībām skaitlis $n^2 - 1$ ir pirmskaitlis?"@lv ;
+    eliozo:problemTextHtml "<p>Ar kādām naturālām $n$ vērtībām skaitlis $n^2 - 1$ ir pirmskaitlis?</p>"@lv ;
+    eliozo:problem_number 12 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.13 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.13 ;
+    eliozo:problemText "Dots, ka $5 \\mid 12a$. Pierādiet, ka $5 \\mid a$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $5 \\mid 12a$. Pierādiet, ka $5 \\mid a$.</p>"@lv ;
+    eliozo:problem_number 13 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.14 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.14 ;
+    eliozo:problemText "Dots, ka $7 \\mid a$ un $7 \\mid (2a + 3b)$. Pierādiet, ka $7 \\mid b$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $7 \\mid a$ un $7 \\mid (2a + 3b)$. Pierādiet, ka $7 \\mid b$.</p>"@lv ;
+    eliozo:problem_number 14 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.15 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.15 ;
+    eliozo:problemText "Dots, ka $5 \\mid 7b$ un $7 \\mid 5a$. Pierādiet, ka $35 \\mid ab$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $5 \\mid 7b$ un $7 \\mid 5a$. Pierādiet, ka $35 \\mid ab$.</p>"@lv ;
+    eliozo:problem_number 15 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.16 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.16 ;
+    eliozo:problemText """Dots, ka $n \\mid (5a + 3b)$ un $n \\mid (3a + 2b)$. 
+Pierādiet, ka $n \\mid a$ un $n \\mid b$."""@lv ;
+    eliozo:problemTextHtml """<p>Dots, ka $n \\mid (5a + 3b)$ un $n \\mid (3a + 2b)$. 
+Pierādiet, ka $n \\mid a$ un $n \\mid b$.</p>"""@lv ;
+    eliozo:problem_number 16 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.17 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.17 ;
+    eliozo:problemText """Dots, ka $n \\mid (3a + 7b)$ un $n \\mid (2a + 5b)$. 
+Pierādiet, ka $n \\mid a$ un $n \\mid b$."""@lv ;
+    eliozo:problemTextHtml """<p>Dots, ka $n \\mid (3a + 7b)$ un $n \\mid (2a + 5b)$. 
+Pierādiet, ka $n \\mid a$ un $n \\mid b$.</p>"""@lv ;
+    eliozo:problem_number 17 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.18 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.18 ;
+    eliozo:problemText """Dots, ka $5 \\mid (3a + 4b)$ un $5 \\mid (2a + 3b)$. 
+Pierādiet, ka $25 \\mid ab$."""@lv ;
+    eliozo:problemTextHtml """<p>Dots, ka $5 \\mid (3a + 4b)$ un $5 \\mid (2a + 3b)$. 
+Pierādiet, ka $25 \\mid ab$.</p>"""@lv ;
+    eliozo:problem_number 18 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.19 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.19 ;
+    eliozo:problemText """Pierādiet, ka visiem naturāliem $n$ skaitlis 
+$n^2 + n + 6$ dalās ar $2$."""@lv ;
+    eliozo:problemTextHtml """<p>Pierādiet, ka visiem naturāliem $n$ skaitlis 
+$n^2 + n + 6$ dalās ar $2$.</p>"""@lv ;
+    eliozo:problem_number 19 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.2 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.2 ;
+    eliozo:problemText "Dots, ka $7 \\mid a$. Pierādiet, ka $7 \\mid (a^2 + 3a + 7b - 21)$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $7 \\mid a$. Pierādiet, ka $7 \\mid (a^2 + 3a + 7b - 21)$.</p>"@lv ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.20 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.20 ;
+    eliozo:problemText "Dots, ka $n \\mid (a - b)$. Pierādiet, ka $n \\mid (a^3 + a^2 - b^3 - b^2)$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $n \\mid (a - b)$. Pierādiet, ka $n \\mid (a^3 + a^2 - b^3 - b^2)$.</p>"@lv ;
+    eliozo:problem_number 20 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.21 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.21 ;
+    eliozo:problemText "Dots, ka $n \\mid (a + 2b)$. Pierādiet, ka $n \\mid (a^3 + 2a + 8b^3 + 4b)$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $n \\mid (a + 2b)$. Pierādiet, ka $n \\mid (a^3 + 2a + 8b^3 + 4b)$.</p>"@lv ;
+    eliozo:problem_number 21 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.22 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.22 ;
+    eliozo:problemText """Dots, ka daļa $a/b$ ir saīsināma. Vai daļa $(a - b)/(a + b)$ ir saīsināma? 
+Un otrādi, ja zināms, ka daļa $(a - b)/(a + b)$ ir saīsināma, 
+vai daļa $a/b$ noteikti ir saīsināma?"""@lv ;
+    eliozo:problemTextHtml """<p>Dots, ka daļa $a/b$ ir saīsināma. Vai daļa $(a - b)/(a + b)$ ir saīsināma? 
+Un otrādi, ja zināms, ka daļa $(a - b)/(a + b)$ ir saīsināma, 
+vai daļa $a/b$ noteikti ir saīsināma?</p>"""@lv ;
+    eliozo:problem_number 22 ;
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.23 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.23 ;
+    eliozo:problemText """Dots, ka $11 \\mid (3x + 7y)$ un $11 \\mid (2x + 5y)$. Pierādiet, ka 
+$121 \\mid (x^2 + y^2)$."""@lv ;
+    eliozo:problemTextHtml """<p>Dots, ka $11 \\mid (3x + 7y)$ un $11 \\mid (2x + 5y)$. Pierādiet, ka 
+$121 \\mid (x^2 + y^2)$.</p>"""@lv ;
+    eliozo:problem_number 23 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.24 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.24 ;
+    eliozo:problemText """Doti tādi naturāli skaitļi $a,b$, ka $a \\mid (a + b)$ un $b \\mid (a + b)$.
+Pierādiet, ka $a = b$."""@lv ;
+    eliozo:problemTextHtml """<p>Doti tādi naturāli skaitļi $a,b$, ka $a \\mid (a + b)$ un $b \\mid (a + b)$.
+Pierādiet, ka $a = b$.</p>"""@lv ;
+    eliozo:problem_number 24 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.25 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.25 ;
+    eliozo:problemText """Dots, ka $2 \\mid (a - 1)$ un $3 \\mid (a + 1)$. 
+Pierādiet, ka $6 \\mid (a^2 + 5)$."""@lv ;
+    eliozo:problemTextHtml """<p>Dots, ka $2 \\mid (a - 1)$ un $3 \\mid (a + 1)$. 
+Pierādiet, ka $6 \\mid (a^2 + 5)$.</p>"""@lv ;
+    eliozo:problem_number 25 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.26 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.26 ;
+    eliozo:problemText """Dots, ka $6 \\mid (a - b)$ un $6 \\mid (a + b)$. 
+Pierādiet, ka $3 \\mid (a^2 + 8b^2)$."""@lv ;
+    eliozo:problemTextHtml """<p>Dots, ka $6 \\mid (a - b)$ un $6 \\mid (a + b)$. 
+Pierādiet, ka $3 \\mid (a^2 + 8b^2)$.</p>"""@lv ;
+    eliozo:problem_number 26 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.27 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.27 ;
+    eliozo:problemText "Ar kādām naturālām $n$ vērtībām skaitlis $n^3-1$ ir pirmskaitlis?"@lv ;
+    eliozo:problemTextHtml "<p>Ar kādām naturālām $n$ vērtībām skaitlis $n^3-1$ ir pirmskaitlis?</p>"@lv ;
+    eliozo:problem_number 27 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.28 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.28 ;
+    eliozo:problemText "Ar kādām naturālām $n$ vērtībām skaitlis $n^2+5n+6$ ir pirmskaitlis?"@lv ;
+    eliozo:problemTextHtml "<p>Ar kādām naturālām $n$ vērtībām skaitlis $n^2+5n+6$ ir pirmskaitlis?</p>"@lv ;
+    eliozo:problem_number 28 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.29 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.29 ;
+    eliozo:problemText """Ar kādām naturālām $a$ un $b$ vērtībām skaitlis 
+$ab + a + b + 1$ ir pirmskaitlis?"""@lv ;
+    eliozo:problemTextHtml """<p>Ar kādām naturālām $a$ un $b$ vērtībām skaitlis 
+$ab + a + b + 1$ ir pirmskaitlis?</p>"""@lv ;
+    eliozo:problem_number 29 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.3 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.3 ;
+    eliozo:problemText "Dots, ka $n \\mid a$ un $n \\mid (5a + b)$. Pierādiet, ka $n \\mid b$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $n \\mid a$ un $n \\mid (5a + b)$. Pierādiet, ka $n \\mid b$.</p>"@lv ;
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.30 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.30 ;
+    eliozo:problemText "Dots, ka $4 \\mid x$ un $3 \\mid y$. Pierādiet, ka $12 \\mid (xy + 8y + 9x)$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $4 \\mid x$ un $3 \\mid y$. Pierādiet, ka $12 \\mid (xy + 8y + 9x)$.</p>"@lv ;
+    eliozo:problem_number 30 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.31 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.31 ;
+    eliozo:problemText """Dots, ka $11 \\mid (4a + b)$ un $11 \\mid (a+4b)$. Pierādiet, 
+ka $11 \\mid a$ un $11 \\mid b$."""@lv ;
+    eliozo:problemTextHtml """<p>Dots, ka $11 \\mid (4a + b)$ un $11 \\mid (a+4b)$. Pierādiet, 
+ka $11 \\mid a$ un $11 \\mid b$.</p>"""@lv ;
+    eliozo:problem_number 31 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.32 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.32 ;
+    eliozo:problemText "Dots, ka $7 \\mid (3a + b)$ un $7 \\mid (a + 3b)$. Pierādiet, ka $49 \\mid ab$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $7 \\mid (3a + b)$ un $7 \\mid (a + 3b)$. Pierādiet, ka $49 \\mid ab$.</p>"@lv ;
+    eliozo:problem_number 32 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.33 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.33 ;
+    eliozo:problemText "Dots, ka $7 \\mid (2a + 3b)$. Pierādiet, ka $7 \\mid (a + 5b)$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $7 \\mid (2a + 3b)$. Pierādiet, ka $7 \\mid (a + 5b)$.</p>"@lv ;
+    eliozo:problem_number 33 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.34 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.34 ;
+    eliozo:problemText "Dots, ka $13 \\mid (a + 4b)$. Pierādiet, ka $13 \\mid (10a + b)$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $13 \\mid (a + 4b)$. Pierādiet, ka $13 \\mid (10a + b)$.</p>"@lv ;
+    eliozo:problem_number 34 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.35 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.35 ;
+    eliozo:problemText "Dots, ka $11 \\mid (3a + 7b)$. Pierādiet, ka $11 \\mid (4a + 2b)$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $11 \\mid (3a + 7b)$. Pierādiet, ka $11 \\mid (4a + 2b)$.</p>"@lv ;
+    eliozo:problem_number 35 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.36 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.36 ;
+    eliozo:problemText """Pierādiet, ka skaitlis $4a + 5b$ dalās ar $17$ tad un tikai tad, 
+kad skaitlis $7a - 3b$ dalās ar $17$."""@lv ;
+    eliozo:problemTextHtml """<p>Pierādiet, ka skaitlis $4a + 5b$ dalās ar $17$ tad un tikai tad, 
+kad skaitlis $7a - 3b$ dalās ar $17$.</p>"""@lv ;
+    eliozo:problem_number 36 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.37 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.37 ;
+    eliozo:problemText """Ar kādām naturālām $n$ un $m$ vērtībām skaitlis 
+$(n-m)(n^2+m-1)$ ir pirmskaitlis?"""@lv ;
+    eliozo:problemTextHtml """<p>Ar kādām naturālām $n$ un $m$ vērtībām skaitlis 
+$(n-m)(n^2+m-1)$ ir pirmskaitlis?</p>"""@lv ;
+    eliozo:problem_number 37 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.38 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.38 ;
+    eliozo:problemText """Atrodiet vismaz vienu naturālu skaitli $n$, 
+lai intervālā $[n, n + 10]$ nebūtu neviena pirmskaitļa."""@lv ;
+    eliozo:problemTextHtml """<p>Atrodiet vismaz vienu naturālu skaitli $n$, 
+lai intervālā $[n, n + 10]$ nebūtu neviena pirmskaitļa.</p>"""@lv ;
+    eliozo:problem_number 38 ;
+    eliozo:questionType "FindExample" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.4 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.4 ;
+    eliozo:problemText "Dots, ka $n \\mid (a - b)$. Pierādiet, ka $n \\mid (a^2 + a - b^2 - b)$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $n \\mid (a - b)$. Pierādiet, ka $n \\mid (a^2 + a - b^2 - b)$.</p>"@lv ;
+    eliozo:problem_number 4 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.5 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.5 ;
+    eliozo:problemText "Dots, ka $n \\mid 3a$ un $n \\mid (12a + 5b)$. Pierādiet, ka $n \\mid 10b$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $n \\mid 3a$ un $n \\mid (12a + 5b)$. Pierādiet, ka $n \\mid 10b$.</p>"@lv ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.6 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.6 ;
+    eliozo:problemText "Dots, ka $5 \\mid (a - b)$ un $7 \\mid (a + b)$. Pierādiet, ka $35 \\mid (a^2 - b^2)$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $5 \\mid (a - b)$ un $7 \\mid (a + b)$. Pierādiet, ka $35 \\mid (a^2 - b^2)$.</p>"@lv ;
+    eliozo:problem_number 6 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.7 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.7 ;
+    eliozo:problemText """Doti tādi naturāli skaitļi $a, b, c$, ka $a \\mid b$, 
+$b \\mid c$, $c \\mid a$. Pierādiet, ka 
+$a = b = c$."""@lv ;
+    eliozo:problemTextHtml """<p>Doti tādi naturāli skaitļi $a, b, c$, ka $a \\mid b$, 
+$b \\mid c$, $c \\mid a$. Pierādiet, ka 
+$a = b = c$.</p>"""@lv ;
+    eliozo:problem_number 7 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.8 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.8 ;
+    eliozo:problemText """Dots, ka $3 \\mid (a - 1)$ un $5 \\mid (a+2)$. Pierādiet, 
+ka $15 \\mid (a^2 + a - 2)$."""@lv ;
+    eliozo:problemTextHtml """<p>Dots, ka $3 \\mid (a - 1)$ un $5 \\mid (a+2)$. Pierādiet, 
+ka $15 \\mid (a^2 + a - 2)$.</p>"""@lv ;
+    eliozo:problem_number 8 ;
+    eliozo:questionType "Prove" ;
+    eliozo:skill "DivisibilityProperties" .
+
+eliozo:BBK2012.P1.E2.9 a eliozo:Problem ;
+    eliozo:problemBook "BBK2012" ;
+    eliozo:problemBookSection "P1.E2" ;
+    eliozo:problemSolution eliozo:SOLN.BBK2012.P1.E2.9 ;
+    eliozo:problemText "Kuri no skaitļiem $101, 111, 141, 143, 155, 161, 163$ ir pirmskaitļi?"@lv ;
+    eliozo:problemTextHtml "<p>Kuri no skaitļiem $101, 111, 141, 143, 155, 161, 163$ ir pirmskaitļi?</p>"@lv ;
+    eliozo:problem_number 9 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:skill "DivisibilityProperties" .
 
 eliozo:IMG.BBK2012.P1.32.png a eliozo:Image ;
     eliozo:imageSrc "BBK2012.P1.32.png" ;
@@ -1107,12 +1536,113 @@ eliozo:SOLN.BBK2012.P1.26 a eliozo:Solution ;
 Apgalvojums seko no vienādības
 $$\\overline{abcdef} = 1000 \\cdot \\overline{abc} + \\overline{def} =$$
 $$= 1001 \\cdot \\overline{abc} + (\\overline{def} - \\overline{abc}) = 13 \\cdot 77 \\overline{abc} + (\\overline{def} - \\overline{abc}).$$
-No šejienes redzams, ka $\\overline{abcdef}$ dalās ar $13$ tad un tikai tad, kad $(\\overline{def} - \\overline{abc})$ dalās ar $13$."""@lv ;
+No šejienes redzams, ka $\\overline{abcdef}$ dalās ar $13$ tad un tikai tad, kad $(\\overline{def} - \\overline{abc})$ dalās ar $13$.
+
+
+
+
+
+
+
+
+
+
+# Dalāmības īpašības
+
+Dalāmības īpašības sk. [Jēdziens: dalītājs](Concept-p1.1-divisor.md), 
+šeit papildus izmantojam sekojošus apgalvojumus:
+
+* Ja $p$ ir pirmskaitlis un $p \\mid ab$, tad $p \\mid a$ vai $p \\mid b$.
+* Ja $a_1 \\mid m$, $a_2 \\mid m$, $\\ldots$, $a_n \\mid m$, tad
+  $\\operatorname{lcm}(a_1,a_2,\\ldots,a_n)\\,\\mid\\,m$. 
+* Ja $a$ un $b$ ir savstarpēji pirmskaitļi un $a \\mid bc$, tad $a \\mid c$.
+
+Pirmās un trešās īpašības pierādījumi nebūt nav vienkārši.
+To pamatā ir teorēma par Eiklīda algoritmu un šīs īpašība tiks pierādītas otrajā nodaļā. 
+Otrā īpašība seko no MKD definīcijas. Taču, rēķinot uzdevumus par skaitļu dalāmību, 
+mums pašreiz nav vajadzības zināt aritmētikas pamatteorēmas pierādījumu, 
+un tāpēc pagaidām izmantosim šīs īpašības uzdevumu risināšanā, atceroties, 
+ka to pierādījumi tiks aplūkoti vēlāk, kad tiks pierādīta aritmētikas pamatteorēma.
+Risinot uzdevumus, jāizmanto arī skaitļa sadalījums pirmreizinātājos 
+un jāmāk uzrakstīt visi skaitļa dalītāji. Arī šajā gadījumā mēs faktiski 
+lietojam aritmētikas pamatteorēmu, kas pagaidām nav pierādīta.
+
+## Jautājumi paškontrolei
+
+Pamatojiet norādītās atbildes.
+
+1. Dots, ka naturāls skaitlis dalās ar $3$ un $4$. Vai šis 
+   skaitlis noteikti dalās ar $12$?  
+   Atbilde: jā.
+2. Dots, ka naturāls skaitlis dalās ar $6$ un $4$. Vai šis skaitlis 
+   noteikti dalās ar 24?  
+   Atbilde: nē. 
+3. Kur ir būtiskā atšķirība starp pirmo un otro jautājumu?  
+   Atbilde: $3$ un $4$ ir savstarpēji pirmskaitļi, bet $6$ un $4$ – nē. 
+4. Skaitlis $A$ nedalās ar $3$. Vai skaitlis $2A$ var dalīties ar $3$?
+   Atbilde: nē.
+5. Dots, ka $A$ ir pāra skaitlis. Vai skaitlis $3A$ 
+   noteikti dalās ar $6$?  
+   Atbilde: jā.
+6. Skaitlis $5A$ dalās ar $3$. Vai skaitlis $A$ noteikti 
+   dalās ar $3$?  
+   Atbilde: jā.
+7. Skaitlis $15A$ dalās ar $6$. Vai skaitlis $A$ 
+   noteikti dalās ar $6$?  
+   Atbilde: nē.
+
+
+
+
+
+# Dalāmības īpašības: Ievaduzdevumi"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Apgalvojums seko no vienādības
 $$\\overline{abcdef} = 1000 \\cdot \\overline{abc} + \\overline{def} =$$
 $$= 1001 \\cdot \\overline{abc} + (\\overline{def} - \\overline{abc}) = 13 \\cdot 77 \\overline{abc} + (\\overline{def} - \\overline{abc}).$$
-No šejienes redzams, ka $\\overline{abcdef}$ dalās ar $13$ tad un tikai tad, kad $(\\overline{def} - \\overline{abc})$ dalās ar $13$.</p>"""@lv .
+No šejienes redzams, ka $\\overline{abcdef}$ dalās ar $13$ tad un tikai tad, kad $(\\overline{def} - \\overline{abc})$ dalās ar $13$.</p>
+<h1>Dalāmības īpašības</h1>
+<p>Dalāmības īpašības sk. <a href="Concept-p1.1-divisor.md">Jēdziens: dalītājs</a>, 
+šeit papildus izmantojam sekojošus apgalvojumus:</p>
+<ul>
+<li>Ja $p$ ir pirmskaitlis un $p \\mid ab$, tad $p \\mid a$ vai $p \\mid b$.</li>
+<li>Ja $a_1 \\mid m$, $a_2 \\mid m$, $\\ldots$, $a_n \\mid m$, tad
+  $\\operatorname{lcm}(a_1,a_2,\\ldots,a_n)\\,\\mid\\,m$. </li>
+<li>Ja $a$ un $b$ ir savstarpēji pirmskaitļi un $a \\mid bc$, tad $a \\mid c$.</li>
+</ul>
+<p>Pirmās un trešās īpašības pierādījumi nebūt nav vienkārši.
+To pamatā ir teorēma par Eiklīda algoritmu un šīs īpašība tiks pierādītas otrajā nodaļā. 
+Otrā īpašība seko no MKD definīcijas. Taču, rēķinot uzdevumus par skaitļu dalāmību, 
+mums pašreiz nav vajadzības zināt aritmētikas pamatteorēmas pierādījumu, 
+un tāpēc pagaidām izmantosim šīs īpašības uzdevumu risināšanā, atceroties, 
+ka to pierādījumi tiks aplūkoti vēlāk, kad tiks pierādīta aritmētikas pamatteorēma.
+Risinot uzdevumus, jāizmanto arī skaitļa sadalījums pirmreizinātājos 
+un jāmāk uzrakstīt visi skaitļa dalītāji. Arī šajā gadījumā mēs faktiski 
+lietojam aritmētikas pamatteorēmu, kas pagaidām nav pierādīta.</p>
+<h2>Jautājumi paškontrolei</h2>
+<p>Pamatojiet norādītās atbildes.</p>
+<ol>
+<li>Dots, ka naturāls skaitlis dalās ar $3$ un $4$. Vai šis 
+   skaitlis noteikti dalās ar $12$?<br />
+   Atbilde: jā.</li>
+<li>Dots, ka naturāls skaitlis dalās ar $6$ un $4$. Vai šis skaitlis 
+   noteikti dalās ar 24?<br />
+   Atbilde: nē. </li>
+<li>Kur ir būtiskā atšķirība starp pirmo un otro jautājumu?<br />
+   Atbilde: $3$ un $4$ ir savstarpēji pirmskaitļi, bet $6$ un $4$ – nē. </li>
+<li>Skaitlis $A$ nedalās ar $3$. Vai skaitlis $2A$ var dalīties ar $3$?
+   Atbilde: nē.</li>
+<li>Dots, ka $A$ ir pāra skaitlis. Vai skaitlis $3A$ 
+   noteikti dalās ar $6$?<br />
+   Atbilde: jā.</li>
+<li>Skaitlis $5A$ dalās ar $3$. Vai skaitlis $A$ noteikti 
+   dalās ar $3$?<br />
+   Atbilde: jā.</li>
+<li>Skaitlis $15A$ dalās ar $6$. Vai skaitlis $A$ 
+   noteikti dalās ar $6$?<br />
+   Atbilde: nē.</li>
+</ol>
+<h1>Dalāmības īpašības: Ievaduzdevumi</h1>"""@lv .
 
 eliozo:SOLN.BBK2012.P1.27 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -1359,4 +1889,484 @@ reizinājums dalās ar $9$, bet otrais reizinātājs nedalās ar $3$.
 Tātad pirmais reizinātājs dalās ar $9$. Tā kā pirmā reizinātāja 
 ierakstīto ciparu summa ir $24$, lai tas dalītos ar $9$, zvaigznītes 
 vietā ir jāieraksta cipars $3$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.1 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+$5 \\mid a$, tātad $5 \\mid a^2$ (īpašība **D2**); 
+$5 \\mid b$, tātad $5 \\mid 7b$ (īpašība **D2**). 
+No īpašības **D1** seko, ka $5 \\mid (a^2 + 7b)$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$5 \\mid a$, tātad $5 \\mid a^2$ (īpašība <strong>D2</strong>); 
+$5 \\mid b$, tātad $5 \\mid 7b$ (īpašība <strong>D2</strong>). 
+No īpašības <strong>D1</strong> seko, ka $5 \\mid (a^2 + 7b)$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.10 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Tā kā $\\sqrt{120} < 11$, tad pietiek pārbaudīt dalāmību ar 
+pirmskaitļiem, kas ir mazāki par $11$. Tie ir 2, 3, 5 un 7. 
+Vienīgais pāra pirmskaitlis ir $2 \\not\\in [100, 120]$; tāpēc
+pāra skaitļi nav jāaplūko. 
+Izrakstīsim visus nepāra skaitļus no $[100;120]$ un pasvītrosim 
+tos, kas dalās ar $2$, $3$, $5$ vai $7$: 
+
+$$101, 103, \\underline{105}, 107, 109, \\underline{111}, 113, \\underline{115}, \\underline{117}, \\underline{119}.$$
+
+Nepasvītrotie skaitļi $101$, $103$, $107$, $109$, $113$ ir pirmskaitļi."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Tā kā $\\sqrt{120} &lt; 11$, tad pietiek pārbaudīt dalāmību ar 
+pirmskaitļiem, kas ir mazāki par $11$. Tie ir 2, 3, 5 un 7. 
+Vienīgais pāra pirmskaitlis ir $2 \\not\\in [100, 120]$; tāpēc
+pāra skaitļi nav jāaplūko. 
+Izrakstīsim visus nepāra skaitļus no $[100;120]$ un pasvītrosim 
+tos, kas dalās ar $2$, $3$, $5$ vai $7$: </p>
+<p>$$101, 103, \\underline{105}, 107, 109, \\underline{111}, 113, \\underline{115}, \\underline{117}, \\underline{119}.$$</p>
+<p>Nepasvītrotie skaitļi $101$, $103$, $107$, $109$, $113$ ir pirmskaitļi.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.11 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Dotajā intervālā pirmskaitļi ir skaitļi  $181$, $191$, $193$, $197$ un $199$.
+Citi neder, jo $3 \\mid 183$, $5 \\mid 185$, $11 \\mid 187$, 
+$3 \\mid 189$, $5 \\mid 195$ (vai arī ir pāra skaitļi)."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Dotajā intervālā pirmskaitļi ir skaitļi  $181$, $191$, $193$, $197$ un $199$.
+Citi neder, jo $3 \\mid 183$, $5 \\mid 185$, $11 \\mid 187$, 
+$3 \\mid 189$, $5 \\mid 195$ (vai arī ir pāra skaitļi).</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.12 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Zināms, ka $n^2 - 1 = (n - 1)(n + 1)$. 
+Tātad, ja $n - 1 > 1$, tad $n^2-1$ nav pirmskaitlis, jo $n-1$ 
+ir tā dalītājs, pie kam $n -1 \\neq 1$ un $n-1 \\neq n^2 -1$. 
+Atliek pārbaudīt $n$ vērtības $n=1$ un $n=2$. 
+Ja $n =1$, tad $n^2 - 1 = 0$ nav pirmskaitlis. 
+Ja $n = 2$, tad $n^2 - 1 = 3$ ir pirmskaitlis."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Zināms, ka $n^2 - 1 = (n - 1)(n + 1)$. 
+Tātad, ja $n - 1 &gt; 1$, tad $n^2-1$ nav pirmskaitlis, jo $n-1$ 
+ir tā dalītājs, pie kam $n -1 \\neq 1$ un $n-1 \\neq n^2 -1$. 
+Atliek pārbaudīt $n$ vērtības $n=1$ un $n=2$. 
+Ja $n =1$, tad $n^2 - 1 = 0$ nav pirmskaitlis. 
+Ja $n = 2$, tad $n^2 - 1 = 3$ ir pirmskaitlis.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.13 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+No pirmskaitļu 2.īpašības seko, ka $5 \\mid 12$ vai $5 \\mid a$. 
+Tā kā $\\operatorname{gcd}(5, 12) = 1$, tad $5 \\mid a$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No pirmskaitļu 2.īpašības seko, ka $5 \\mid 12$ vai $5 \\mid a$. 
+Tā kā $\\operatorname{gcd}(5, 12) = 1$, tad $5 \\mid a$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.14 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+No īpašības **D3** seko, ka $7 \\mid (2a + 3b) - 2a = 3b$. 
+No pirmskaitļu 2 īpašības seko, ka $7 \\mid b$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No īpašības <strong>D3</strong> seko, ka $7 \\mid (2a + 3b) - 2a = 3b$. 
+No pirmskaitļu 2 īpašības seko, ka $7 \\mid b$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.15 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+No pirmskaitļu 2.īpašības seko, ka $5 \\mid b$ un $7 \\mid a$. 
+Tātad $35 \\mid ab$ (īpašība **D5**)."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No pirmskaitļu 2.īpašības seko, ka $5 \\mid b$ un $7 \\mid a$. 
+Tātad $35 \\mid ab$ (īpašība <strong>D5</strong>).</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.16 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Pareizinot $5a + 3b$ ar $2$ un $3a + 2b$ ar $3$ un atņemot 
+otro izteiksmi no pirmās, iegūsim: $2 (5a + 3b) - 3 (3a + 2b) = a$. 
+Tā kā $n \\mid (5a + 3b)$ un $n \\mid (3a + 2b)$, tad $n \\mid a$ 
+(īpašība **D3**). Izmantojot vienādību $b = 5 (3a + 2b) - 3 (5a + 3b)$,
+pierāda, ka $n \\mid b$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pareizinot $5a + 3b$ ar $2$ un $3a + 2b$ ar $3$ un atņemot 
+otro izteiksmi no pirmās, iegūsim: $2 (5a + 3b) - 3 (3a + 2b) = a$. 
+Tā kā $n \\mid (5a + 3b)$ un $n \\mid (3a + 2b)$, tad $n \\mid a$ 
+(īpašība <strong>D3</strong>). Izmantojot vienādību $b = 5 (3a + 2b) - 3 (5a + 3b)$,
+pierāda, ka $n \\mid b$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.17 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Seko no tā, ka $a = 5 (3a + 7b) - 7 (2a + 5b)$ un 
+$b = 3 (2a + 5b) - 2 (3a + 7b)$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Seko no tā, ka $a = 5 (3a + 7b) - 7 (2a + 5b)$ un 
+$b = 3 (2a + 5b) - 2 (3a + 7b)$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.18 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+$5 \\mid a$, jo $a = 3 (3a + 4b) - 4 (2a + 3b)$.   
+$5 \\mid b$, jo $b = 3 (2a + 3b) - 2 (3a + 4b)$.  
+No īpašības **D5** seko, ka $25 \\mid ab$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$5 \\mid a$, jo $a = 3 (3a + 4b) - 4 (2a + 3b)$. <br />
+$5 \\mid b$, jo $b = 3 (2a + 3b) - 2 (3a + 4b)$.<br />
+No īpašības <strong>D5</strong> seko, ka $25 \\mid ab$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.19 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Viens no skaitļiem $n$ vai $n + 1$ ir pāra skaitlis, 
+tāpēc $n^2+ n = n(n + 1)$ dalās ar $2$. Tātad $2 \\mid (n^2+ n + 6)$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Viens no skaitļiem $n$ vai $n + 1$ ir pāra skaitlis, 
+tāpēc $n^2+ n = n(n + 1)$ dalās ar $2$. Tātad $2 \\mid (n^2+ n + 6)$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.2 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+$7 \\mid a$, tātad $7 \\mid a^2$ un $7 \\mid 3a$ (īpašība **D2**); 
+$7 \\mid 7b$ un $7 \\mid 21$. No īpašības **D3** seko, ka 
+$7 \\mid (a^2 + 3a ­+ 7b - 21)$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$7 \\mid a$, tātad $7 \\mid a^2$ un $7 \\mid 3a$ (īpašība <strong>D2</strong>); 
+$7 \\mid 7b$ un $7 \\mid 21$. No īpašības <strong>D3</strong> seko, ka 
+$7 \\mid (a^2 + 3a ­+ 7b - 21)$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.20 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Seko no tā, ka $a^3 + a^2 - b^3 - b^2 = (a^3 - b^3) + (a^2 - b^2)$,   
+$(a^3 - b^3) + (a^2 - b^2) = (a - b)(a^2 + ab + b2) + (a - b)(a + b)$.  
+Abi saskaitāmie dalās ar $a-b$, tātad arī ar $n$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Seko no tā, ka $a^3 + a^2 - b^3 - b^2 = (a^3 - b^3) + (a^2 - b^2)$, <br />
+$(a^3 - b^3) + (a^2 - b^2) = (a - b)(a^2 + ab + b2) + (a - b)(a + b)$.<br />
+Abi saskaitāmie dalās ar $a-b$, tātad arī ar $n$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.21 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Seko no tā, ka $a^3 + 2a + 8b^3 + 4b = (a^3 + 8b^3) + 2(a + 2b)$,  
+$(a^3 + 8b^3) + 2(a + 2b) = (a + 2b)(a^2 - 2ab + 4b^2) + 2(a + 2b)$.  
+Abi saskaitāmie dalās ar $a+2b$, tātad arī ar $n$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Seko no tā, ka $a^3 + 2a + 8b^3 + 4b = (a^3 + 8b^3) + 2(a + 2b)$,<br />
+$(a^3 + 8b^3) + 2(a + 2b) = (a + 2b)(a^2 - 2ab + 4b^2) + 2(a + 2b)$.<br />
+Abi saskaitāmie dalās ar $a+2b$, tātad arī ar $n$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.22 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Jā, ir saīsināma. Ja $n \\mid a$ un $n \\mid b$, tad $n \\mid (a - b)$ un 
+$n \\mid (a + b)$. Apgrieztais apgalvojums neizpildās, jo, 
+ņemot, piemēram, $a = 5$ un $b = 3$ redzam, ka daļa $5/3$ 
+nav saīsināma, bet daļa $(5 - 3)/(5 + 3)$ ir saīsināma."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Jā, ir saīsināma. Ja $n \\mid a$ un $n \\mid b$, tad $n \\mid (a - b)$ un 
+$n \\mid (a + b)$. Apgrieztais apgalvojums neizpildās, jo, 
+ņemot, piemēram, $a = 5$ un $b = 3$ redzam, ka daļa $5/3$ 
+nav saīsināma, bet daļa $(5 - 3)/(5 + 3)$ ir saīsināma.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.23 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+$11 \\mid x$, jo $x = 5 (3x + 7y) - 7 (2x + 5y)$ un   
+$11 \\mid y$, jo $y = 3 (2x + 5y) - 2 (3x + 7y)$.   
+Tātad $11^2 \\mid x^2$, $11^2  \\mid y^2$, un $121 \\mid x^2 + 3y^2$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$11 \\mid x$, jo $x = 5 (3x + 7y) - 7 (2x + 5y)$ un <br />
+$11 \\mid y$, jo $y = 3 (2x + 5y) - 2 (3x + 7y)$. <br />
+Tātad $11^2 \\mid x^2$, $11^2  \\mid y^2$, un $121 \\mid x^2 + 3y^2$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.24 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+No $a \\mid (a + b)$ seko, ka $a \\mid b$. Līdzīgi iegūstam, ka $b \\mid a$. 
+No īpašības **D6** seko, ka $a = b$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No $a \\mid (a + b)$ seko, ka $a \\mid b$. Līdzīgi iegūstam, ka $b \\mid a$. 
+No īpašības <strong>D6</strong> seko, ka $a = b$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.25 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+No dalāmības īpašībām seko, ka $6 \\mid (a - 1)(a + 1) = a^2 - 1$. 
+Tātad $6 \\mid (a^2 + 5)$, jo $a^2 + 5 = (a^2 - 1) + 6$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No dalāmības īpašībām seko, ka $6 \\mid (a - 1)(a + 1) = a^2 - 1$. 
+Tātad $6 \\mid (a^2 + 5)$, jo $a^2 + 5 = (a^2 - 1) + 6$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.26 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+No tā, ka $6 \\mid (a - b)$ seko, ka $6 \\mid (a^2 - b^2) = (a - b)(a + b)$. 
+No īpašības **D1** seko, ka $6 \\mid (a^2 - b^2 + 6b^2) = a^2 + 5b^2$. 
+Tā kā $3 \\mid 6$, tad arī $3 \\mid (a^2 + 5b^2)$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No tā, ka $6 \\mid (a - b)$ seko, ka $6 \\mid (a^2 - b^2) = (a - b)(a + b)$. 
+No īpašības <strong>D1</strong> seko, ka $6 \\mid (a^2 - b^2 + 6b^2) = a^2 + 5b^2$. 
+Tā kā $3 \\mid 6$, tad arī $3 \\mid (a^2 + 5b^2)$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.27 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Zināms, ka $n^3 - 1 = (n - 1)(n^2 + n + 1)$. Tātad, ja $n-1 > 1$, 
+tad $n^3-1$ nav pirmskaitlis, jo $n-1$ ir tā dalītājs, pie kam 
+$n-1 >1$ un $n-1 < n^3-1$. Atliek pārbaudīt $n$ vērtības $n = 1$ un $n = 2$.
+Ja $n=1$, tad $n^3-1 = 0$ nav pirmskaitlis. Ja $n = 2$, 
+tad $n^3 - 1 = 7$ ir pirmskaitlis."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Zināms, ka $n^3 - 1 = (n - 1)(n^2 + n + 1)$. Tātad, ja $n-1 &gt; 1$, 
+tad $n^3-1$ nav pirmskaitlis, jo $n-1$ ir tā dalītājs, pie kam 
+$n-1 &gt;1$ un $n-1 &lt; n^3-1$. Atliek pārbaudīt $n$ vērtības $n = 1$ un $n = 2$.
+Ja $n=1$, tad $n^3-1 = 0$ nav pirmskaitlis. Ja $n = 2$, 
+tad $n^3 - 1 = 7$ ir pirmskaitlis.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.28 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Skaitlis $n^2 + 5n + 6 = (n + 2)(n + 3)$ nav pirmskaitlis 
+nevienai n vērtībai, jo tas sadalās reizinātājos, kuri ir lielāki par $1$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Skaitlis $n^2 + 5n + 6 = (n + 2)(n + 3)$ nav pirmskaitlis 
+nevienai n vērtībai, jo tas sadalās reizinātājos, kuri ir lielāki par $1$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.29 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Izteiksmi $ab + a + b + 1$ sadalām reizinātājos $(a+1)(b+1)$. 
+Tātad šis skaitlis nav pirmskaitlis nekādām $a$ un $b$ vērtībām, 
+jo abi reizinātāji ir lielāki par $1$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Izteiksmi $ab + a + b + 1$ sadalām reizinātājos $(a+1)(b+1)$. 
+Tātad šis skaitlis nav pirmskaitlis nekādām $a$ un $b$ vērtībām, 
+jo abi reizinātāji ir lielāki par $1$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.3 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+$b = (5a + b) - 5a$. Tā kā $n \\mid (5a + b)$ un $n \\mid 5a$ 
+(jo $n \\mid a$), tad $n$ ir šo skaitļu starpības dalītājs, t.i., $n \\mid b$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$b = (5a + b) - 5a$. Tā kā $n \\mid (5a + b)$ un $n \\mid 5a$ 
+(jo $n \\mid a$), tad $n$ ir šo skaitļu starpības dalītājs, t.i., $n \\mid b$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.30 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+$12 \\mid xy$, jo $4 \\mid x$ un $3 \\mid y$ (īpašība **D5**); 
+$12 \\mid 8y$, jo $4 \\mid 8$ un $3 \\mid y$; $12 \\mid 9x$, 
+jo $3 \\mid 9$ un $4 \\mid x$.  Tātad $12$ dala arī šo skaitļu summu 
+$xy + 8y + 9x$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$12 \\mid xy$, jo $4 \\mid x$ un $3 \\mid y$ (īpašība <strong>D5</strong>); 
+$12 \\mid 8y$, jo $4 \\mid 8$ un $3 \\mid y$; $12 \\mid 9x$, 
+jo $3 \\mid 9$ un $4 \\mid x$.  Tātad $12$ dala arī šo skaitļu summu 
+$xy + 8y + 9x$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.31 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+No uzdevuma nosacījumiem seko, ka skaitlis $4(a + 4b) - (4a +b) = 15b$ 
+dalās ar $11$. No pirmskaitļu 2. īpašības izriet, ka $11 \\mid b$. 
+Līdzīgi pierāda, ka $11 \\mid a$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No uzdevuma nosacījumiem seko, ka skaitlis $4(a + 4b) - (4a +b) = 15b$ 
+dalās ar $11$. No pirmskaitļu 2. īpašības izriet, ka $11 \\mid b$. 
+Līdzīgi pierāda, ka $11 \\mid a$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.32 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+$7 \\mid (3(a + 3b) - (3a + b)) = 8b$. 
+Tātad, $7 \\mid b$. Līdzīgi pierāda, ka $7 \\mid a$. 
+No īpašības **D5** seko, ka $49 \\mid ab$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$7 \\mid (3(a + 3b) - (3a + b)) = 8b$. 
+Tātad, $7 \\mid b$. Līdzīgi pierāda, ka $7 \\mid a$. 
+No īpašības <strong>D5</strong> seko, ka $49 \\mid ab$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.33 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+No dotā seko, ka $7 \\mid 4(2a +3b) = 8a + 12b$. 
+Tātad arī skaitlis 
+$a + 5b = 8a + 12b - 7(a + b)$ dalās ar $7$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No dotā seko, ka $7 \\mid 4(2a +3b) = 8a + 12b$. 
+Tātad arī skaitlis 
+$a + 5b = 8a + 12b - 7(a + b)$ dalās ar $7$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.34 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+No dotā seko, ka $13 \\mid 10(a +4b) = 10a + 40b$. Tātad arī skaitlis 
+$10a + b = (10a + 40b) - 39b$ dalās ar $13$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No dotā seko, ka $13 \\mid 10(a +4b) = 10a + 40b$. Tātad arī skaitlis 
+$10a + b = (10a + 40b) - 39b$ dalās ar $13$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.35 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+No dotā seko, ka $11 \\mid 5(3a +7b) = 15a + 35b$. 
+Tātad arī skaitlis 
+$4a + 2b = 15a + 35b - 11(a + 3b)$ dalās ar $11$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No dotā seko, ka $11 \\mid 5(3a +7b) = 15a + 35b$. 
+Tātad arī skaitlis 
+$4a + 2b = 15a + 35b - 11(a + 3b)$ dalās ar $11$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.36 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Ja $17 \\mid (4a +5b)$, tad arī skaitlis $6(4a +5b) = 24a + 30b$ dalās ar $17$. Tas nozīmē, ka skaitlis $7a - 4b = 24a + 30b - 17(a + 2b)$ dalās ar $17$.
+Līdzīgi pierāda apgriezto apgalvojumu."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Ja $17 \\mid (4a +5b)$, tad arī skaitlis $6(4a +5b) = 24a + 30b$ dalās ar $17$. Tas nozīmē, ka skaitlis $7a - 4b = 24a + 30b - 17(a + 2b)$ dalās ar $17$.
+Līdzīgi pierāda apgriezto apgalvojumu.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.37 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Nav tādu $n$ un $m$ vērtību. Vērtības $n<m$ dod negatīvu rezultātu un neder.
+Ja $n-m=0$, tad $0$ nav pirmskaitlis. 
+Ja $n-m \\geq 2$, tad izteiksme $(n-m)(n^2+m-1)$ dalās ar $n-m$, pie tam 
+$n-m \\neq 1$ un $n-m \\neq (n-m)(n^2+m-1)$. 
+
+Visbeidzot, ja $n-m=1$, tad $n^2 + m - 1$, tad 
+$n^2 + (n-1) - 1 = n^2 + n - 2 = n(n+1) - 2$. Tas vienmēr ir pāra skaitlis, 
+jo vismaz viens no $n$ vai $n+1$ ir pāra. Vienīgais pāra pirmskaitlis ir $2$, 
+bet $n(n+1) - 2 \\neq 2$ nekādam $n$, jo izteiksme $n(n+1)-2$ ir augoša un 
+pieņem vērtības $0, 4, 10, 18, \\ldots$ pie $n=1,2,3,4,\\ldots$. 
+Šīs vērtības "pārlec pāri" vērtībai $2$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Nav tādu $n$ un $m$ vērtību. Vērtības $n&lt;m$ dod negatīvu rezultātu un neder.
+Ja $n-m=0$, tad $0$ nav pirmskaitlis. 
+Ja $n-m \\geq 2$, tad izteiksme $(n-m)(n^2+m-1)$ dalās ar $n-m$, pie tam 
+$n-m \\neq 1$ un $n-m \\neq (n-m)(n^2+m-1)$. </p>
+<p>Visbeidzot, ja $n-m=1$, tad $n^2 + m - 1$, tad 
+$n^2 + (n-1) - 1 = n^2 + n - 2 = n(n+1) - 2$. Tas vienmēr ir pāra skaitlis, 
+jo vismaz viens no $n$ vai $n+1$ ir pāra. Vienīgais pāra pirmskaitlis ir $2$, 
+bet $n(n+1) - 2 \\neq 2$ nekādam $n$, jo izteiksme $n(n+1)-2$ ir augoša un 
+pieņem vērtības $0, 4, 10, 18, \\ldots$ pie $n=1,2,3,4,\\ldots$. 
+Šīs vērtības "pārlec pāri" vērtībai $2$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.38 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Uzdevuma nosacījumus apmierina, piemēram, skaitlis 
+$n = 12! +2 = 479001602$. 
+Tiešām, ja $1 < k < 13$ , tad $12! + k$ ir salikts skaitlis, 
+jo $k$ ir šā skaitļa dalītājs.
+
+Ir arī daudz mazāki atrisinājumi, piemēram $n=114$. 
+Intervālā $[114;126]$ nav neviena pirmskaitļa."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Uzdevuma nosacījumus apmierina, piemēram, skaitlis 
+$n = 12! +2 = 479001602$. 
+Tiešām, ja $1 &lt; k &lt; 13$ , tad $12! + k$ ir salikts skaitlis, 
+jo $k$ ir šā skaitļa dalītājs.</p>
+<p>Ir arī daudz mazāki atrisinājumi, piemēram $n=114$. 
+Intervālā $[114;126]$ nav neviena pirmskaitļa.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.4 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Izteiksmi $a­^­­­­­­2 + a - b2 - b$ var sadalīt reizinātājos 
+$(a - b)(a + b + 1)$. Tā kā $n \\mid (a - b)$, 
+tad no īpašības **D2** seko, ka $n \\mid (a^­­­­­­­2 + a - b^2 - b)$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Izteiksmi $a­^­­­­­­2 + a - b2 - b$ var sadalīt reizinātājos 
+$(a - b)(a + b + 1)$. Tā kā $n \\mid (a - b)$, 
+tad no īpašības <strong>D2</strong> seko, ka $n \\mid (a^­­­­­­­2 + a - b^2 - b)$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.5 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+No īpašības **D3** seko, ka $n \\mid 5b = (12a +5b) - 4 \\cdot 3a$. 
+Tātad $n$ dala arī $10b$ (īpašība **D2**)."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No īpašības <strong>D3</strong> seko, ka $n \\mid 5b = (12a +5b) - 4 \\cdot 3a$. 
+Tātad $n$ dala arī $10b$ (īpašība <strong>D2</strong>).</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.6 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+No īpašības **D5** seko, ka $5 \\cdot 7 = 35 \\mid (a-b)(a+b) = a^2 - b^2$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No īpašības <strong>D5</strong> seko, ka $5 \\cdot 7 = 35 \\mid (a-b)(a+b) = a^2 - b^2$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.7 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+No tā, ka $b \\mid c$ un $c \\mid a$ seko, ka $b \\mid a$ (īpašība **D4**). 
+Tā kā $a \\mid b$ un $b \\mid a$, tad $a = b$ (īpašība **D6**). 
+Līdzīgi pierāda, ka $b = c$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No tā, ka $b \\mid c$ un $c \\mid a$ seko, ka $b \\mid a$ (īpašība <strong>D4</strong>). 
+Tā kā $a \\mid b$ un $b \\mid a$, tad $a = b$ (īpašība <strong>D6</strong>). 
+Līdzīgi pierāda, ka $b = c$.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.8 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apgalvojums seko no vienādības $a^2 + a - 2 = (a -1)(a + 2)$ un īpašības **D5**."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apgalvojums seko no vienādības $a^2 + a - 2 = (a -1)(a + 2)$ un īpašības <strong>D5</strong>.</p>"""@lv .
+
+eliozo:SOLN.BBK2012.P1.E2.9 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Visi no dotajiem skaitļiem ir mazāki par $13^2 = 169$. 
+Tātad, lai noskaidrotu, vai dotie skaitļi ir pirmskaitļi, 
+mums jāpārbauda to dalāmība ar pirmskaitļiem, kuri ir mazāki par 13. 
+Tie ir $2$, $3$, $5$, $7$ un $11$. 
+Pārbaudot redzam, ka pirmskaitļi ir skaitļi $101$, $141$, $163$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Visi no dotajiem skaitļiem ir mazāki par $13^2 = 169$. 
+Tātad, lai noskaidrotu, vai dotie skaitļi ir pirmskaitļi, 
+mums jāpārbauda to dalāmība ar pirmskaitļiem, kuri ir mazāki par 13. 
+Tie ir $2$, $3$, $5$, $7$ un $11$. 
+Pārbaudot redzam, ka pirmskaitļi ir skaitļi $101$, $141$, $163$.</p>"""@lv .
 

@@ -33,7 +33,8 @@ Katrs bruņinieks izteicās:</p>
 </ul>
 <p>Cik zaļo un cik sarkano bruņinieku sēž pie galda?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindCount" .
 
 eliozo:LV.AMO.2023.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -47,7 +48,8 @@ eliozo:LV.AMO.2023.10.2 a eliozo:Problem ;
     eliozo:problemText "Pierādīt, ka $9x^2 + 5y^2 − 8xy − 4x + 2 > 0$ visām reālām $x$ un $y$ vērtībām!"@lv ;
     eliozo:problemTextHtml "<p>Pierādīt, ka $9x^2 + 5y^2 − 8xy − 4x + 2 &gt; 0$ visām reālām $x$ un $y$ vērtībām!</p>"@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.AMO.2023.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -72,7 +74,8 @@ Zināms, ka $\\sphericalangle BAD = \\alpha$ un $\\sphericalangle BCD = 2\\alpha
 leņķa $ABC$ lielums četrstūra ārpusē ir $7\\alpha$ (skat. 19. att.). Aprēķināt $\\alpha$ vērtību!</p>
 <p><img alt="" src="LV.AMO.2023.10.3.png" /></p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.AMO.2023.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -92,9 +95,9 @@ deviņās grupās pa astoņām kartītēm katrā
 tā, ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas.
 Vai vienmēr:
 
-**(a)** visas kartītes var sadalīt sešās grupās pa $12$ kartītēm katrā tā, 
+**(A)** visas kartītes var sadalīt sešās grupās pa $12$ kartītēm katrā tā, 
 ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas;  
-**(b)** visas kartītes var sadalīt $12$ grupās pa sešām kartītēm katrā tā, 
+**(B)** visas kartītes var sadalīt $12$ grupās pa sešām kartītēm katrā tā, 
 ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?"""@lv ;
     eliozo:problemTextHtml """<p>Uz katras no $72$ kartītēm uzrakstīts kāds naturāls skaitlis 
 (daži no tiem var būt arī vienādi). Kartītes
@@ -104,12 +107,13 @@ skaitļu summas ir vienādas. Kā arī kartītes iespējams sadalīt
 deviņās grupās pa astoņām kartītēm katrā
 tā, ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas.
 Vai vienmēr:</p>
-<p><strong>(a)</strong> visas kartītes var sadalīt sešās grupās pa $12$ kartītēm katrā tā, 
+<p><strong>(A)</strong> visas kartītes var sadalīt sešās grupās pa $12$ kartītēm katrā tā, 
 ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas;<br />
-<strong>(b)</strong> visas kartītes var sadalīt $12$ grupās pa sešām kartītēm katrā tā, 
+<strong>(B)</strong> visas kartītes var sadalīt $12$ grupās pa sešām kartītēm katrā tā, 
 ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.AMO.2023.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -131,7 +135,8 @@ nodzēsa un izrādījās, ka viens no atlikušajiem skaitļiem tagad
 ir visu atlikušo skaitļu vidējais
 aritmētiskais. Kāds varēja būt Marutas nodzēstais skaitlis?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.AMO.2023.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -153,7 +158,8 @@ dienas viesiem viņš uzcienāja ar tieši 3 dažādām konfektēm.
 Kāds ir lielākais iespējamais viesu skaits, kas bija ieradušies uz 
 Māra dzimšanas dienas svinībām?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindOptimal" .
 
 eliozo:LV.AMO.2023.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -169,7 +175,8 @@ visām pozitīvām reālām $a$, $b$ un $c$ vērtībām!"""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka $a^2c + ac^2 - 6abc + 3b^2c + ab^2 \\geq 0$
 visām pozitīvām reālām $a$, $b$ un $c$ vērtībām!</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.AMO.2023.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -194,7 +201,8 @@ Zināms, ka $AB = 2$, $BC = 5$, $CD = 3$, $AB \\perp BC$
 un $BC \\perp CD$.
 Aprēķināt riņķa, ko ierobežo dotā riņķa līnija, laukumu!</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.AMO.2023.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -213,9 +221,9 @@ skaitļu summas ir vienādas. Kā arī kartītes iespējams sadalīt
 deviņās grupās pa astoņām kartītēm katrā
 tā, ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas.
 Vai vienmēr:  
-**(a)** visas kartītes var sadalīt sešās grupās pa $12$ kartītēm katrā tā, 
+**(A)** visas kartītes var sadalīt sešās grupās pa $12$ kartītēm katrā tā, 
 ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas;  
-**(b)** visas kartītes var sadalīt $12$ grupās pa sešām kartītēm katrā tā, 
+**(B)** visas kartītes var sadalīt $12$ grupās pa sešām kartītēm katrā tā, 
 ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?"""@lv ;
     eliozo:problemTextHtml """<p>Uz katras no $72$ kartītēm uzrakstīts kāds naturāls skaitlis 
 (daži no tiem var būt arī vienādi). Kartītes
@@ -225,12 +233,13 @@ skaitļu summas ir vienādas. Kā arī kartītes iespējams sadalīt
 deviņās grupās pa astoņām kartītēm katrā
 tā, ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas.
 Vai vienmēr:<br />
-<strong>(a)</strong> visas kartītes var sadalīt sešās grupās pa $12$ kartītēm katrā tā, 
+<strong>(A)</strong> visas kartītes var sadalīt sešās grupās pa $12$ kartītēm katrā tā, 
 ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas;<br />
-<strong>(b)</strong> visas kartītes var sadalīt $12$ grupās pa sešām kartītēm katrā tā, 
+<strong>(B)</strong> visas kartītes var sadalīt $12$ grupās pa sešām kartītēm katrā tā, 
 ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.AMO.2023.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -244,7 +253,8 @@ eliozo:LV.AMO.2023.11.5 a eliozo:Problem ;
     eliozo:problemText "Atrisināt veselos skaitļos vienādojumu $17a^2 - 7b^2 + c^2 = 2023$."@lv ;
     eliozo:problemTextHtml "<p>Atrisināt veselos skaitļos vienādojumu $17a^2 - 7b^2 + c^2 = 2023$.</p>"@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.AMO.2023.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -262,7 +272,8 @@ būtu patiesa?"""@lv ;
 lai vienādība $\\frac{A}{B} + \\frac{C}{D} + \\frac{E}{F} + \\frac{G}{H} = I$
 būtu patiesa?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.AMO.2023.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -280,7 +291,8 @@ skaitļi?"""@lv ;
 mazākā iespējamā vērtība, ja $x$ un $y$ ir reāli
 skaitļi?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "FindOptimal" .
 
 eliozo:LV.AMO.2023.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -299,7 +311,8 @@ Pierādīt, ka $S_{ABD} \\leq S_{CEF}$."""@lv ;
 Punkts $C$ atrodas kvadrāta $BDEF$ iekšpusē. 
 Pierādīt, ka $S_{ABD} \\leq S_{CEF}$.</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.AMO.2023.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -319,21 +332,22 @@ eliozo:LV.AMO.2023.12.4 a eliozo:Problem ;
 ka katrā rindā un katrā kolonnā ir
 iekrāsota tieši viena rūtiņa.
 
-**(a)** Pierādīt, ka jebkuram kvadrātam ar šādi iekrāsotām rūtiņām 
+**(A)** Pierādīt, ka jebkuram kvadrātam ar šādi iekrāsotām rūtiņām 
 var atrast taisnstūri ar izmēriem $2 \\times 4$
 rūtiņas, kurā nav iekrāsota neviena rūtiņa!  
-**(b)** Parādīt, ka līdzīgs apgalvojums par taisnstūri ar izmēriem 
+**(B)** Parādīt, ka līdzīgs apgalvojums par taisnstūri ar izmēriem 
 $2 \\times 5$ rūtiņas nav patiess!"""@lv ;
     eliozo:problemTextHtml """<p>Kvadrātā ar izmēriem $8 \\times 8$ rūtiņas iekrāsotas astoņas rūtiņas tā, 
 ka katrā rindā un katrā kolonnā ir
 iekrāsota tieši viena rūtiņa.</p>
-<p><strong>(a)</strong> Pierādīt, ka jebkuram kvadrātam ar šādi iekrāsotām rūtiņām 
+<p><strong>(A)</strong> Pierādīt, ka jebkuram kvadrātam ar šādi iekrāsotām rūtiņām 
 var atrast taisnstūri ar izmēriem $2 \\times 4$
 rūtiņas, kurā nav iekrāsota neviena rūtiņa!<br />
-<strong>(b)</strong> Parādīt, ka līdzīgs apgalvojums par taisnstūri ar izmēriem 
+<strong>(B)</strong> Parādīt, ka līdzīgs apgalvojums par taisnstūri ar izmēriem 
 $2 \\times 5$ rūtiņas nav patiess!</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.AMO.2023.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -345,15 +359,16 @@ eliozo:LV.AMO.2023.12.5 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2023.12.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.12.5 ;
     eliozo:problemText """Vai eksistē tāds naturāls skaitlis, kuram tieši 
-**(a)** $25\\%$; **(b)** $26\\%$ no visiem tā pozitīvajiem dalītājiem dod
+**(A)** $25\\%$; **(B)** $26\\%$ no visiem tā pozitīvajiem dalītājiem dod
 atlikumu $1$, dalot ar $3$?  
 *Piezīme.* Skaitļa $n$ dalītājs ir arī $1$ un pats skaitlis $n$."""@lv ;
     eliozo:problemTextHtml """<p>Vai eksistē tāds naturāls skaitlis, kuram tieši 
-<strong>(a)</strong> $25\\%$; <strong>(b)</strong> $26\\%$ no visiem tā pozitīvajiem dalītājiem dod
+<strong>(A)</strong> $25\\%$; <strong>(B)</strong> $26\\%$ no visiem tā pozitīvajiem dalītājiem dod
 atlikumu $1$, dalot ar $3$?<br />
 <em>Piezīme.</em> Skaitļa $n$ dalītājs ir arī $1$ un pats skaitlis $n$.</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.AMO.2023.5.1 a eliozo:Problem ;
     eliozo:concept "difference",
@@ -381,6 +396,7 @@ lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.<b
 <p><img alt="" src="LV.AMO.2023.5.1.png" /></p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
+    eliozo:questionType "FindExample" ;
     eliozo:seeAlso "LV.AMO.2023.6.1" .
 
 eliozo:LV.AMO.2023.5.2 a eliozo:Problem ;
@@ -400,7 +416,9 @@ vismaz divi cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tika
 vismaz divi cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari: <strong>(a)</strong> $3$; $4$; $6$ un $7$;
 <strong>(b)</strong> $1$; $2$ un $3$?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:topic "ModularArithmeticOther" .
 
 eliozo:LV.AMO.2023.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -417,7 +435,8 @@ laukuma vērtība ir tāda pati kā malu skaits!"""@lv ;
     eliozo:problemTextHtml """<p>Rūtiņu lapā, kurā katras rūtiņas malas garums ir $1$, uzzīmē daudzstūri, kuram gan perimetra, gan
 laukuma vērtība ir tāda pati kā malu skaits!</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindExample" .
 
 eliozo:LV.AMO.2023.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -445,7 +464,8 @@ no kreisās apakšējās rūtiņas var pārvietot uz kreiso augšējo rūtiņu, 
 <strong>(b)</strong> $10 \\times 10$; <strong>(c)</strong> $11 \\times 11$?</p>
 <p><img alt="" src="LV.AMO.2023.5.4.png" /></p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.AMO.2023.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -463,7 +483,8 @@ Kāds ir lielākais iespējamais viesu skaits, kas bija ieradušies uz Gunas dzi
 magones”. Katru no saviem dzimšanas dienas viesiem viņa uzcienāja ar tieši 3 dažādām konfektēm.
 Kāds ir lielākais iespējamais viesu skaits, kas bija ieradušies uz Gunas dzimšanas dienas svinībām?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "FindOptimal " .
 
 eliozo:LV.AMO.2023.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -488,7 +509,8 @@ lai blakus trijstūros ierakstīties skaitļi neatšķiras vairāk kā par $4$.<
 <em>Piezīme.</em> Par blakus trijstūriem sauksim trijstūrus, kam ir kopīga mala.</p>
 <p><img alt="" src="LV.AMO.2023.6.1.png" /></p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindExample" .
 
 eliozo:LV.AMO.2023.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -506,7 +528,8 @@ iegūst, otro skaitli pareizinot pašu ar sevi. Vai var gadīties, ka abu skait�
 iegūst, otro skaitli pareizinot pašu ar sevi. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari
 <strong>(a)</strong> $2$; $3$; $7$ un $8$; <strong>(b)</strong> $1$; $3$; $4$; $5$ un $6$?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.AMO.2023.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -519,8 +542,8 @@ eliozo:LV.AMO.2023.6.3 a eliozo:Problem ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2023.6.3.png,
         eliozo:IMG.LV.AMO.2023.6.3A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.6.3 ;
-    eliozo:problemText """No četrām tādām figūrām, kāda dota 9. att., uzzīmē figūru, kurai ir tieši: **(a)** $2$ simetrijas asis;
-**(b)** $4$ simetrijas asis!
+    eliozo:problemText """No četrām tādām figūrām, kāda dota 9. att., uzzīmē figūru, kurai ir tieši: **(A)** $2$ simetrijas asis;
+**(B)** $4$ simetrijas asis!
 
 ![](LV.AMO.2023.6.3.png)
 
@@ -528,15 +551,16 @@ eliozo:LV.AMO.2023.6.3 a eliozo:Problem ;
 caurumi. Figūrai jābūt saistītai, tas ir, no figūras katras rūtiņas jābūt iespējai aiziet uz jebkuru citu šīs
 figūras rūtiņu, ejot tikai pa šīs figūras rūtiņām, katru reizi pārejot no attiecīgās rūtiņas uz blakus rūtiņu,
 ar ko tai ir kopīga mala."""@lv ;
-    eliozo:problemTextHtml """<p>No četrām tādām figūrām, kāda dota 9. att., uzzīmē figūru, kurai ir tieši: <strong>(a)</strong> $2$ simetrijas asis;
-<strong>(b)</strong> $4$ simetrijas asis!</p>
+    eliozo:problemTextHtml """<p>No četrām tādām figūrām, kāda dota 9. att., uzzīmē figūru, kurai ir tieši: <strong>(A)</strong> $2$ simetrijas asis;
+<strong>(B)</strong> $4$ simetrijas asis!</p>
 <p><img alt="" src="LV.AMO.2023.6.3.png" /></p>
 <p><em>Piezīme.</em> Figūru, kas dota 9. att., drīkst pagriezt un apmest otrādi. Uzzīmētajai figūrai var būt arī
 caurumi. Figūrai jābūt saistītai, tas ir, no figūras katras rūtiņas jābūt iespējai aiziet uz jebkuru citu šīs
 figūras rūtiņu, ejot tikai pa šīs figūras rūtiņām, katru reizi pārejot no attiecīgās rūtiņas uz blakus rūtiņu,
 ar ko tai ir kopīga mala.</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindExample" .
 
 eliozo:LV.AMO.2023.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -568,7 +592,8 @@ vienmēr saka patiesību, sarkanie bruņinieki vienmēr melo. Katrs bruņinieks 
 </ul>
 <p>Cik zaļo un cik sarkano bruņinieku sēž pie galda?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "FindCount" .
 
 eliozo:LV.AMO.2023.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -594,7 +619,8 @@ variantu nav.
 Kāda ir mazākā $M$ vērtība, kurai var atrast tādu $S$ vērtību, ka, zinot $S$ un $M$ vērtības, izmantoto monētu
 komplektu viennozīmīgi nav iespējams noteikt?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "FindOptimal" .
 
 eliozo:LV.AMO.2023.7.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -606,13 +632,14 @@ eliozo:LV.AMO.2023.7.1 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2023.7.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.7.1 ;
     eliozo:problemText """Vai rindā kaut kādā secībā var uzrakstīt naturālus skaitļus 
-**(a)** no $1$ līdz $23$; **(b)** no $1$ līdz $2023$ tā, lai blakus
+**(A)** no $1$ līdz $23$; **(B)** no $1$ līdz $2023$ tā, lai blakus
 skaitļiem nebūtu vienādu ciparu?"""@lv ;
     eliozo:problemTextHtml """<p>Vai rindā kaut kādā secībā var uzrakstīt naturālus skaitļus 
-<strong>(a)</strong> no $1$ līdz $23$; <strong>(b)</strong> no $1$ līdz $2023$ tā, lai blakus
+<strong>(A)</strong> no $1$ līdz $23$; <strong>(B)</strong> no $1$ līdz $2023$ tā, lai blakus
 skaitļiem nebūtu vienādu ciparu?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.AMO.2023.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -641,7 +668,8 @@ kuram vienlaicīgi izpildās šādi nosacījumi:</p>
 <li>skaitļa trešais cipars ir tāds pats kā piektais cipars?</li>
 </ul>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "FindOptimal" .
 
 eliozo:LV.AMO.2023.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -655,8 +683,8 @@ eliozo:LV.AMO.2023.7.3 a eliozo:Problem ;
         eliozo:IMG.LV.AMO.2023.7.3A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.7.3 ;
     eliozo:problemText """No četrām tādām figūrām, kāda dota 12. att., uzzīmē figūru, kurai ir tieši: 
-**(a)** $2$ simetrijas asis;
-**(b)** $4$ simetrijas asis!  
+**(A)** $2$ simetrijas asis;
+**(B)** $4$ simetrijas asis!  
 *Piezīme.* Figūru, kas dota 12. att., drīkst pagriezt. 
 Uzzīmētajai figūrai var būt arī caurumi. Figūrai jābūt
 saistītai, tas ir, no figūras katras rūtiņas jābūt iespējai 
@@ -666,8 +694,8 @@ rūtiņas uz blakus rūtiņu, ar ko tai ir kopīga mala.
 
 ![](LV.AMO.2023.7.3.png)"""@lv ;
     eliozo:problemTextHtml """<p>No četrām tādām figūrām, kāda dota 12. att., uzzīmē figūru, kurai ir tieši: 
-<strong>(a)</strong> $2$ simetrijas asis;
-<strong>(b)</strong> $4$ simetrijas asis!<br />
+<strong>(A)</strong> $2$ simetrijas asis;
+<strong>(B)</strong> $4$ simetrijas asis!<br />
 <em>Piezīme.</em> Figūru, kas dota 12. att., drīkst pagriezt. 
 Uzzīmētajai figūrai var būt arī caurumi. Figūrai jābūt
 saistītai, tas ir, no figūras katras rūtiņas jābūt iespējai 
@@ -676,7 +704,8 @@ pa šīs figūras rūtiņām, katru reizi pārejot no attiecīgās
 rūtiņas uz blakus rūtiņu, ar ko tai ir kopīga mala.</p>
 <p><img alt="" src="LV.AMO.2023.7.3.png" /></p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindExample" .
 
 eliozo:LV.AMO.2023.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -711,7 +740,8 @@ un divas viena centa monētas un citu variantu nav.</p>
 ka, zinot $S$ un $M$ vērtības, izmantoto monētu
 komplektu viennozīmīgi nav iespējams noteikt?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "FindOptimal" .
 
 eliozo:LV.AMO.2023.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -751,7 +781,8 @@ vienmēr melo. Katra bizbizmārīte izteicās:</p>
 </ul>
 <p>Cik bizbizmārītes sēž uz palodzes?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "FindCount" .
 
 eliozo:LV.AMO.2023.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -769,7 +800,8 @@ daļas būtu nesaīsināmas: $\\frac{A}{B} + \\frac{C}{D} = \\frac{E}{F}$."""@lv
 lai dotā vienādība būtu patiesa un visas
 daļas būtu nesaīsināmas: $\\frac{A}{B} + \\frac{C}{D} = \\frac{E}{F}$.</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.AMO.2023.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -791,7 +823,8 @@ skaitlis dalās ar $9$. Zināms, ka skaitlis $x$ ir par $99$ lielāks
 nekā trīsciparu skaitlis, ko iegūst, uzrakstot tā
 ciparus pretējā secībā. Kāds var būt skaitlis $x$?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.AMO.2023.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -814,7 +847,8 @@ Zināms, ka $\\sphericalangle CAD = \\alpha$ un $\\sphericalangle FDJ = \\beta$.
 Izsaki leņķi $CGF$ ar $\\alpha$ un $\\beta$.</p>
 <p><img alt="" src="LV.AMO.2023.8.3.png" /></p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.AMO.2023.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -854,7 +888,8 @@ saviem bērniem iedeva sīknaudu šādi:</p>
 <p>Kāda ir <strong>(a)</strong> lielākā, <strong>(b)</strong> mazākā iespējamā starpība starp 
 Dorotejai un Almai iedotajām naudas summām?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "FindOptimal" .
 
 eliozo:LV.AMO.2023.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -895,6 +930,7 @@ Katra bizbizmārīte izteicās:</p>
 <p>Cik bizbizmārītes sēž uz palodzes?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
+    eliozo:questionType "FindCount" ;
     eliozo:seeAlso "LV.AMO.2023.7.5" .
 
 eliozo:LV.AMO.2023.9.1 a eliozo:Problem ;
@@ -910,16 +946,17 @@ eliozo:LV.AMO.2023.9.1 a eliozo:Problem ;
 Katrā gājienā var izvēlēties patvaļīgu naturālu skaitli un vai nu pieskaitīt
 to gan daļas skaitītājam, gan saucējam, vai arī to reizināt ar daļas skaitītāju 
 un saucēju. Vai, atkārtojot
-šādus gājienus, var iegūt daļu, kuras vērtība ir: **(a)** $\\frac{1}{10}$;
-**(b)** $1$?"""@lv ;
+šādus gājienus, var iegūt daļu, kuras vērtība ir: **(A)** $\\frac{1}{10}$;
+**(B)** $1$?"""@lv ;
     eliozo:problemTextHtml """<p>Uz tāfeles uzrakstīta daļa $\\frac{10}{2023}$. 
 Katrā gājienā var izvēlēties patvaļīgu naturālu skaitli un vai nu pieskaitīt
 to gan daļas skaitītājam, gan saucējam, vai arī to reizināt ar daļas skaitītāju 
 un saucēju. Vai, atkārtojot
-šādus gājienus, var iegūt daļu, kuras vērtība ir: <strong>(a)</strong> $\\frac{1}{10}$;
-<strong>(b)</strong> $1$?</p>"""@lv ;
+šādus gājienus, var iegūt daļu, kuras vērtība ir: <strong>(A)</strong> $\\frac{1}{10}$;
+<strong>(B)</strong> $1$?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.AMO.2023.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -937,7 +974,8 @@ Zināms, ka $12a + 9b$ dalās ar $13$. Kāds var būt skaitlis $\\overline{cd}$?
 $\\overline{cd}$, tad iegūtais četrciparu skaitlis dalās ar $13$.
 Zināms, ka $12a + 9b$ dalās ar $13$. Kāds var būt skaitlis $\\overline{cd}$?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.AMO.2023.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -956,7 +994,8 @@ virsotnes, ir divas reizes garāka nekā augstums no tās pašas virsotnes!"""@l
 Pierādīt, ka bisektrise, kas vilkta no trešā leņķa
 virsotnes, ir divas reizes garāka nekā augstums no tās pašas virsotnes!</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.AMO.2023.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -980,7 +1019,8 @@ tā, ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas.
 Vai vienmēr visas kartītes var sadalīt sešās grupās pa sešām kartītēm katrā tā, ka visās grupās uz
 kartītēm uzrakstīto skaitļu summas ir vienādas?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.AMO.2023.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -994,12 +1034,13 @@ eliozo:LV.AMO.2023.9.5 a eliozo:Problem ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.9.5 ;
     eliozo:problemText """Pirmie sešpadsmit naturālie skaitļi patvaļīgā secībā izvietoti pa apli, katriem diviem blakus skaitļiem
 aprēķināta to starpība (no lielākā skaitļa atņemot mazāko), un pēc tam aprēķināta visu šo 16 starpību
-summa $S$. Vai var gadīties, ka: **(a)** $S = 100$; **(b)** $S = 123$?"""@lv ;
+summa $S$. Vai var gadīties, ka: **(A)** $S = 100$; **(B)** $S = 123$?"""@lv ;
     eliozo:problemTextHtml """<p>Pirmie sešpadsmit naturālie skaitļi patvaļīgā secībā izvietoti pa apli, katriem diviem blakus skaitļiem
 aprēķināta to starpība (no lielākā skaitļa atņemot mazāko), un pēc tam aprēķināta visu šo 16 starpību
-summa $S$. Vai var gadīties, ka: <strong>(a)</strong> $S = 100$; <strong>(b)</strong> $S = 123$?</p>"""@lv ;
+summa $S$. Vai var gadīties, ka: <strong>(A)</strong> $S = 100$; <strong>(B)</strong> $S = 123$?</p>"""@lv ;
     eliozo:problemYear 2023 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:IMG.LV.AMO.2023.10.3.png a eliozo:Image ;
     eliozo:imageSrc "LV.AMO.2023.10.3.png" ;
@@ -1325,7 +1366,7 @@ kolonnām – deviņās grupās pa astoņām kartītēm katrā.
 Abos gadījumos skaitļu summa visās grupās ir
 vienāda – attiecīgi $18$ un $16$. Visu skaitļu kopsumma ir $144$.
 
-**(a)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
+**(A)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
 Pieņemsim pretējo, ka šos skaitļus var
 sadalīt sešās grupās pa 12 kartītēm katrā tā, lai skaitļu summa 
 visās grupās būtu vienāda. Tad skaitļu
@@ -1339,7 +1380,7 @@ summa ir $10 \\cdot 1 = 10$.
 Esam ieguvuši pretrunu, ko izraisīja pieņēmums, ka kartītes sešās grupās pa $12$
 katrā ar vienādu skaitļu kopsummu sadalīt ir iespējams.
 
-**(b)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
+**(B)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
 Pieņemsim pretējo, ka šos skaitļus var
 sadalīt $12$ grupās pa sešām kartītēm katrā tā, lai skaitļu summa 
 visās grupās būtu vienāda. Tad skaitļu summai katrā grupā jābūt $\\frac{144}{12} = 12$. 
@@ -1377,7 +1418,7 @@ kartītēm katrā, bet pa
 kolonnām – deviņās grupās pa astoņām kartītēm katrā. 
 Abos gadījumos skaitļu summa visās grupās ir
 vienāda – attiecīgi $18$ un $16$. Visu skaitļu kopsumma ir $144$.</p>
-<p><strong>(a)</strong> Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
+<p><strong>(A)</strong> Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
 Pieņemsim pretējo, ka šos skaitļus var
 sadalīt sešās grupās pa 12 kartītēm katrā tā, lai skaitļu summa 
 visās grupās būtu vienāda. Tad skaitļu
@@ -1390,7 +1431,7 @@ kas nav iespējams, jo mazākā iespējamā
 summa ir $10 \\cdot 1 = 10$. 
 Esam ieguvuši pretrunu, ko izraisīja pieņēmums, ka kartītes sešās grupās pa $12$
 katrā ar vienādu skaitļu kopsummu sadalīt ir iespējams.</p>
-<p><strong>(b)</strong> Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
+<p><strong>(B)</strong> Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
 Pieņemsim pretējo, ka šos skaitļus var
 sadalīt $12$ grupās pa sešām kartītēm katrā tā, lai skaitļu summa 
 visās grupās būtu vienāda. Tad skaitļu summai katrā grupā jābūt $\\frac{144}{12} = 12$. 
@@ -1644,7 +1685,7 @@ kolonnām – deviņās grupās pa astoņām kartītēm katrā.
 Abos gadījumos skaitļu summa visās grupās ir
 vienāda – attiecīgi $18$ un $16$. Pieminēsim, ka visu skaitļu kopsumma šajā piemērā attiecīgi ir $144$.
 
-**(a)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
+**(A)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
 Pieņemsim pretējo, ka šos skaitļus var
 sadalīt sešās grupās pa $12$ kartītēm katrā tā, lai skaitļu summa 
 visās grupās būtu vienāda. Tad skaitļu summai katrā grupā jābūt 
@@ -1657,7 +1698,7 @@ summa ir $10 \\cdot 1 = 10$. Esam ieguvuši pretrunu, ko izraisīja pieņēmums,
 ka kartītes sešās grupās pa $12$
 katrā ar vienādu skaitļu kopsummu sadalīt ir iespējams.
 
-**(b)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
+**(B)** Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
 Pieņemsim pretējo, ka šos skaitļus var
 sadalīt $12$ grupās pa sešām kartītēm katrā tā, lai skaitļu summa 
 visās grupās būtu vienāda. Tad skaitļu
@@ -1697,7 +1738,7 @@ deviņām kartītēm katrā, bet pa
 kolonnām – deviņās grupās pa astoņām kartītēm katrā. 
 Abos gadījumos skaitļu summa visās grupās ir
 vienāda – attiecīgi $18$ un $16$. Pieminēsim, ka visu skaitļu kopsumma šajā piemērā attiecīgi ir $144$.</p>
-<p><strong>(a)</strong> Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
+<p><strong>(A)</strong> Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
 Pieņemsim pretējo, ka šos skaitļus var
 sadalīt sešās grupās pa $12$ kartītēm katrā tā, lai skaitļu summa 
 visās grupās būtu vienāda. Tad skaitļu summai katrā grupā jābūt 
@@ -1709,7 +1750,7 @@ $24 − 2 \\cdot 9 = 6$, kas nav iespējams, jo mazākā iespējamā
 summa ir $10 \\cdot 1 = 10$. Esam ieguvuši pretrunu, ko izraisīja pieņēmums, 
 ka kartītes sešās grupās pa $12$
 katrā ar vienādu skaitļu kopsummu sadalīt ir iespējams.</p>
-<p><strong>(b)</strong> Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
+<p><strong>(B)</strong> Pamatosim, ka aplūkotajam piemēram neizpildās šī prasība. 
 Pieņemsim pretējo, ka šos skaitļus var
 sadalīt $12$ grupās pa sešām kartītēm katrā tā, lai skaitļu summa 
 visās grupās būtu vienāda. Tad skaitļu
@@ -1869,7 +1910,7 @@ eliozo:SOLN.LV.AMO.2023.12.4 a eliozo:Solution ;
     eliozo:solutionText """## Atrisinājums 
 
 
-**(a)** Mēģināsim panākt pretējo, tas ir, iekrāsot rūtiņas dotajā kvadrātā tā, 
+**(A)** Mēģināsim panākt pretējo, tas ir, iekrāsot rūtiņas dotajā kvadrātā tā, 
 lai nav taisnstūra ar izmēriem $2 \\times 4$ rūtiņas bez iekrāsotām rūtiņām.
 
 Visu laukumu sadalām kvadrātos ar izmēriem $2 \\times 2$ rūtiņas, 
@@ -1929,12 +1970,12 @@ Līdz ar to jebkurā kvadrātā ar doto iekrāsojumu var atrast taisnstūri
 ar izmēriem $2 \\times 4$ rūtiņas, kurā
 nav iekrāsota neviena rūtiņa.
 
-**(b)** Piemēram, skat. 30. att., kurā nevar atrast $2 \\times 5$ 
+**(B)** Piemēram, skat. 30. att., kurā nevar atrast $2 \\times 5$ 
 taisnstūri ar neatzīmētu rūtiņu.
 
 ![](LV.AMO.2023.12.4E.png)"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>(a)</strong> Mēģināsim panākt pretējo, tas ir, iekrāsot rūtiņas dotajā kvadrātā tā, 
+<p><strong>(A)</strong> Mēģināsim panākt pretējo, tas ir, iekrāsot rūtiņas dotajā kvadrātā tā, 
 lai nav taisnstūra ar izmēriem $2 \\times 4$ rūtiņas bez iekrāsotām rūtiņām.</p>
 <p>Visu laukumu sadalām kvadrātos ar izmēriem $2 \\times 2$ rūtiņas, 
 kurus nosauksim par šūnām (skat. 24. att.,
@@ -1981,7 +2022,7 @@ izmēriem $2 \\times 4$ bez iekrāsotām rūtiņām parādīts 28. att. un 29. a
 <p>Līdz ar to jebkurā kvadrātā ar doto iekrāsojumu var atrast taisnstūri 
 ar izmēriem $2 \\times 4$ rūtiņas, kurā
 nav iekrāsota neviena rūtiņa.</p>
-<p><strong>(b)</strong> Piemēram, skat. 30. att., kurā nevar atrast $2 \\times 5$ 
+<p><strong>(B)</strong> Piemēram, skat. 30. att., kurā nevar atrast $2 \\times 5$ 
 taisnstūri ar neatzīmētu rūtiņu.</p>
 <p><img alt="" src="LV.AMO.2023.12.4E.png" /></p>"""@lv .
 
@@ -1989,13 +2030,13 @@ eliozo:SOLN.LV.AMO.2023.12.5 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums 
 
-**(a)** Jā, ir, piemēram, skaitlis $27$. 
+**(A)** Jā, ir, piemēram, skaitlis $27$. 
 Tam ir četri dalītāji: $1$, $3$, $9$ un $27$. 
 Vienīgais dalītājs, kas,
 dalot ar $3$, atlikumā dod $1$, ir atlikums $1$, kas sastāda 
 $\\frac{1}{4}$ jeb $25\\%$ no dalītājiem.
 
-**(b)** Jā, eksistē, piemēram, skaitlis $3 \\cdot 2^{24}$.
+**(B)** Jā, eksistē, piemēram, skaitlis $3 \\cdot 2^{24}$.
 Pamatosim, ka šim skaitlim izpildās prasītā īpašība. 
 Šim skaitlim kopā ir $50$ dalītāji, jo katru pirmskaitli,
 veidojot dalītāju, vai nu varam izlaist, vai arī ņemt kādā no pakāpēm, 
@@ -2020,12 +2061,12 @@ dalot ar $3$, dod atlikumu $1$. Apskatām divus gadījumus.
 Tā kā skaitlim $3 \\cdot 2^{24}$ ir $50$ dalītāji, tad $\\frac{13}{50} = 26\\%$ 
 no tiem atlikumā dod $1$, dalot ar $3$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>(a)</strong> Jā, ir, piemēram, skaitlis $27$. 
+<p><strong>(A)</strong> Jā, ir, piemēram, skaitlis $27$. 
 Tam ir četri dalītāji: $1$, $3$, $9$ un $27$. 
 Vienīgais dalītājs, kas,
 dalot ar $3$, atlikumā dod $1$, ir atlikums $1$, kas sastāda 
 $\\frac{1}{4}$ jeb $25\\%$ no dalītājiem.</p>
-<p><strong>(b)</strong> Jā, eksistē, piemēram, skaitlis $3 \\cdot 2^{24}$.
+<p><strong>(B)</strong> Jā, eksistē, piemēram, skaitlis $3 \\cdot 2^{24}$.
 Pamatosim, ka šim skaitlim izpildās prasītā īpašība. 
 Šim skaitlim kopā ir $50$ dalītāji, jo katru pirmskaitli,
 veidojot dalītāju, vai nu varam izlaist, vai arī ņemt kādā no pakāpēm, 
@@ -2387,10 +2428,10 @@ eliozo:SOLN.LV.AMO.2023.7.1 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-**(a)** Var, piemēram, šādā veidā:
+**(A)** Var, piemēram, šādā veidā:
 $$1; 2; 10; 3; 11; 4; 12; 5; 13; 22; 14; 7; 15; 8; 16; 20; 17; 9; 18; 23; 19; 6; 21.$$
 
-**(b)** Nē, nevar. Pierādīsim, ka, lai kā arī šos skaitļus uzrakstītu rindā, 
+**(B)** Nē, nevar. Pierādīsim, ka, lai kā arī šos skaitļus uzrakstītu rindā, 
 vienmēr blakus atradīsies divi skaitļi, kas abi satur ciparu $1$.
 
 Ievērosim, ka ir daudz skaitļu, kuros ir cipars 1, 
@@ -2405,9 +2446,9 @@ Redzam, ka četrciparu un trīsciparu skaitļu, kas satur ciparu $1$,
 ir vairāk nekā pāru, tātad pēc Dirihlē
 principa kādā pārī atradīsies divi skaitļi, kas abi satur ciparu $1$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>(a)</strong> Var, piemēram, šādā veidā:
+<p><strong>(A)</strong> Var, piemēram, šādā veidā:
 $$1; 2; 10; 3; 11; 4; 12; 5; 13; 22; 14; 7; 15; 8; 16; 20; 17; 9; 18; 23; 19; 6; 21.$$</p>
-<p><strong>(b)</strong> Nē, nevar. Pierādīsim, ka, lai kā arī šos skaitļus uzrakstītu rindā, 
+<p><strong>(B)</strong> Nē, nevar. Pierādīsim, ka, lai kā arī šos skaitļus uzrakstītu rindā, 
 vienmēr blakus atradīsies divi skaitļi, kas abi satur ciparu $1$.</p>
 <p>Ievērosim, ka ir daudz skaitļu, kuros ir cipars 1, 
 to skaits noteikti ir vismaz $1100$, jo ir $1000$ četrciparu
@@ -2922,20 +2963,20 @@ eliozo:SOLN.LV.AMO.2023.9.1 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-**(a)** Jā, var, piemēram, šādi:
+**(A)** Jā, var, piemēram, šādi:
 
 $$\\frac{10}{2023} \\;\\rightarrow\\; \\frac{10 \\cdot 9}{2023 \\cdot 9} = \\frac{90}{18207}
 \\;\\rightarrow\\; \\frac{90 + 1923}{18207 + 1923} = \\frac{2013}{20130} = \\frac{1}{10}.$$
 
-**(b)** Nē, nevar. Ievērosim, ka sākumā daļas skaitītājs ir mazāks 
+**(B)** Nē, nevar. Ievērosim, ka sākumā daļas skaitītājs ir mazāks 
 nekā saucējs. Pēc katra atļautā gājiena šī īpašība saglabāsies. 
 Tātad daļas vērtība nevar kļūt vienāda ar 1 (tā vienmēr būs mazāka 
 nekā viens, jo tās skaitītājs vienmēr būs mazāks nekā saucējs)."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>(a)</strong> Jā, var, piemēram, šādi:</p>
+<p><strong>(A)</strong> Jā, var, piemēram, šādi:</p>
 <p>$$\\frac{10}{2023} \\;\\rightarrow\\; \\frac{10 \\cdot 9}{2023 \\cdot 9} = \\frac{90}{18207}
 \\;\\rightarrow\\; \\frac{90 + 1923}{18207 + 1923} = \\frac{2013}{20130} = \\frac{1}{10}.$$</p>
-<p><strong>(b)</strong> Nē, nevar. Ievērosim, ka sākumā daļas skaitītājs ir mazāks 
+<p><strong>(B)</strong> Nē, nevar. Ievērosim, ka sākumā daļas skaitītājs ir mazāks 
 nekā saucējs. Pēc katra atļautā gājiena šī īpašība saglabāsies. 
 Tātad daļas vērtība nevar kļūt vienāda ar 1 (tā vienmēr būs mazāka 
 nekā viens, jo tās skaitītājs vienmēr būs mazāks nekā saucējs).</p>"""@lv .
@@ -3063,13 +3104,13 @@ eliozo:SOLN.LV.AMO.2023.9.5 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-**(a)** Jā, var, piemēram, skat. 18. att., kur ar pelēkā krāsā ir blakus skaitļu starpība. Tādā
+**(A)** Jā, var, piemēram, skat. 18. att., kur ar pelēkā krāsā ir blakus skaitļu starpība. Tādā
 gadījumā
 $$S = 3 + 14 + 13 + 12 + 11 + 10 + 3 + 4 + 7 + 6 + 5 + 4 + 1 + 2 + 1 + 4 = 100.$$
 
 ![](LV.AMO.2023.9.5A.png)
 
-**(b)** Pamatosim, ka $S = 123$ nevar iegūt. Šo panāksim pierādot, ka $S$ vienmēr ir jābūt pāra skaitlim. Ja
+**(B)** Pamatosim, ka $S = 123$ nevar iegūt. Šo panāksim pierādot, ka $S$ vienmēr ir jābūt pāra skaitlim. Ja
 $x_1, x_2, x_3, \\ldots, x_{16}$ ir patvaļīgi sakārtoti pirmie 16 naturālie skaitļi, tad summu $S$ varam izteikt kā
 $$S = |x_1 − x_2| + |x_2 − x_3| + |x_3 − x_4| + \\cdots + |x_{15} − x_{16}| + |x_{16} − x_1|.$$
 Ievērosim, ka $S$ būtu 0, ja, rēķinot starpību, nebūtu vienmēr no lielākā skaitļa jāatņem mazākais, tas ir,
@@ -3085,11 +3126,11 @@ kā tas aprakstīts uzdevuma nosacījumos, tad pie $0$ būtu pakāpeniski jāpie
 Tātad neatkarīgi no tā, kā pa apli ir izkārtoti pirmie $16$ naturālie
 skaitļi, skaitlis $S$ vienmēr būs pāra skaitlis."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>(a)</strong> Jā, var, piemēram, skat. 18. att., kur ar pelēkā krāsā ir blakus skaitļu starpība. Tādā
+<p><strong>(A)</strong> Jā, var, piemēram, skat. 18. att., kur ar pelēkā krāsā ir blakus skaitļu starpība. Tādā
 gadījumā
 $$S = 3 + 14 + 13 + 12 + 11 + 10 + 3 + 4 + 7 + 6 + 5 + 4 + 1 + 2 + 1 + 4 = 100.$$</p>
 <p><img alt="" src="LV.AMO.2023.9.5A.png" /></p>
-<p><strong>(b)</strong> Pamatosim, ka $S = 123$ nevar iegūt. Šo panāksim pierādot, ka $S$ vienmēr ir jābūt pāra skaitlim. Ja
+<p><strong>(B)</strong> Pamatosim, ka $S = 123$ nevar iegūt. Šo panāksim pierādot, ka $S$ vienmēr ir jābūt pāra skaitlim. Ja
 $x_1, x_2, x_3, \\ldots, x_{16}$ ir patvaļīgi sakārtoti pirmie 16 naturālie skaitļi, tad summu $S$ varam izteikt kā
 $$S = |x_1 − x_2| + |x_2 − x_3| + |x_3 − x_4| + \\cdots + |x_{15} − x_{16}| + |x_{16} − x_1|.$$
 Ievērosim, ka $S$ būtu 0, ja, rēķinot starpību, nebūtu vienmēr no lielākā skaitļa jāatņem mazākais, tas ir,

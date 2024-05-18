@@ -14,16 +14,17 @@ ir bezgalīgi daudz atrisinājumu naturālos
 skaitļos.
 
 <!--
-mainEntry=BBK2012.P9.71
+sameAs=BBK2012.P9.71
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka vienādojumam  $x^2 - 6y^2 = 1$
 ir bezgalīgi daudz atrisinājumu naturālos
 skaitļos.</p>
 <!--
-mainEntry=BBK2012.P9.71
+sameAs=BBK2012.P9.71
 -->"""@lv ;
     eliozo:problemYear 1976 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1976.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -38,16 +39,17 @@ naturālu skaitļu $n$, ka skaitļa $5^n$ ciparu
 summa ir mazāka par $1976^{1976}$.
 
 <!--
-mainEntry=BBK2012.P9.72
+sameAs=BBK2012.P9.72
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka eksistē tikai galīgs skaits tādu 
 naturālu skaitļu $n$, ka skaitļa $5^n$ ciparu
 summa ir mazāka par $1976^{1976}$.</p>
 <!--
-mainEntry=BBK2012.P9.72
+sameAs=BBK2012.P9.72
 -->"""@lv ;
     eliozo:problemYear 1976 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1976.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -61,15 +63,16 @@ eliozo:LV.TST.1976.9.3 a eliozo:Problem ;
 un $7n + 5$ ir savstarpēji pirmskaitļi.
 
 <!--
-mainEntry=BBK2012.P1.93
+sameAs=BBK2012.P1.93
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Dots, ka $n$ - naturāls skaitlis. Pierādīt, ka $3n + 2$ 
 un $7n + 5$ ir savstarpēji pirmskaitļi.</p>
 <!--
-mainEntry=BBK2012.P1.93
+sameAs=BBK2012.P1.93
 -->"""@lv ;
     eliozo:problemYear 1976 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1977.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -90,7 +93,8 @@ ka $P(a)=P(b)=P(c)=1$.
 Pierādīt, ka vienādojumam  $P(x) = 0$ 
 nav atrisinājumu veselos skaitļos.</p>"""@lv ;
     eliozo:problemYear 1977 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1977.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -111,7 +115,8 @@ $$x = \\pm 1^2 \\pm 2^2 \\pm 3^2 \\pm \\cdots \\pm n^2,$$
 kur $n$, kā arī plus un mīnus zīmes kvadrātu priekšā 
 izvēlas atkarībā no $x$.</p>"""@lv ;
     eliozo:problemYear 1977 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1977.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -123,19 +128,13 @@ eliozo:LV.TST.1977.11.4 a eliozo:Problem ;
     eliozo:problemID "LV.TST.1977.11.4" ;
     eliozo:problemText """Atrisināt naturālos skaitļos vienādojumu  
 $x(x+1) = p^{2n}\\cdot y(y+1)$, ja $p$ --
-pirmskaitlis, $n$ -- naturāls skaitlis.
-
-<!--
-mainEntry=BBK2012.P5.67
--->"""@lv ;
+pirmskaitlis, $n$ -- naturāls skaitlis."""@lv ;
     eliozo:problemTextHtml """<p>Atrisināt naturālos skaitļos vienādojumu<br />
 $x(x+1) = p^{2n}\\cdot y(y+1)$, ja $p$ --
-pirmskaitlis, $n$ -- naturāls skaitlis.</p>
-<!--
-mainEntry=BBK2012.P5.67
--->"""@lv ;
+pirmskaitlis, $n$ -- naturāls skaitlis.</p>"""@lv ;
     eliozo:problemYear 1977 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.1977.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -149,15 +148,16 @@ eliozo:LV.TST.1977.9.1 a eliozo:Problem ;
 naturālos skaitļos.
 
 <!--
-mainEntry=BBK2012.P5.35
+sameAs=BBK2012.P5.35
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Atrisināt vienādojumu $x(x+1) = 4y(y+1)$
 naturālos skaitļos.</p>
 <!--
-mainEntry=BBK2012.P5.35
+sameAs=BBK2012.P5.35
 -->"""@lv ;
     eliozo:problemYear 1977 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.1978.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -178,7 +178,8 @@ $1$ līdz $n$ ieskaitot, var sadalīt $2$ grupās tā,
 ka neviena grupa nesatur aritmētisku progresiju
 ar četriem locekļiem.</p>"""@lv ;
     eliozo:problemYear 1978 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindOptimal" .
 
 eliozo:LV.TST.1978.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -190,19 +191,13 @@ eliozo:LV.TST.1978.10.5 a eliozo:Problem ;
     eliozo:problemID "LV.TST.1978.10.5" ;
     eliozo:problemText """Atrast visus naturālos skaitļus, kurus nevar izsacīt kā dažu 
 (vairāk kā viena) pēc
-kārtas ņemtu naturālu skaitļu summu.
-
-<!--
-mainEntry=BBK2012.P5.53
--->"""@lv ;
+kārtas ņemtu naturālu skaitļu summu."""@lv ;
     eliozo:problemTextHtml """<p>Atrast visus naturālos skaitļus, kurus nevar izsacīt kā dažu 
 (vairāk kā viena) pēc
-kārtas ņemtu naturālu skaitļu summu.</p>
-<!--
-mainEntry=BBK2012.P5.53
--->"""@lv ;
+kārtas ņemtu naturālu skaitļu summu.</p>"""@lv ;
     eliozo:problemYear 1978 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.1978.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -212,18 +207,13 @@ eliozo:LV.TST.1978.11.4 a eliozo:Problem ;
     eliozo:problemBookSection "TST.1978.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.TST.1978.11.4" ;
-    eliozo:problemText """$p$ ir pirmskaitlis, $p > 5$. 
-Pierādīt, ka bezgalīga decimāldaļā
-$\\frac{1}{p}$
-perioda ciparu
-summa dalās ar $9$."""@lv ;
-    eliozo:problemTextHtml """<p>$p$ ir pirmskaitlis, $p &gt; 5$. 
-Pierādīt, ka bezgalīga decimāldaļā
-$\\frac{1}{p}$
-perioda ciparu
-summa dalās ar $9$.</p>"""@lv ;
+    eliozo:problemText """$p$ ir pirmskaitlis, $p > 5$. Pierādīt, ka bezgalīga decimāldaļā
+$\\frac{1}{p}$ perioda ciparu summa dalās ar $9$."""@lv ;
+    eliozo:problemTextHtml """<p>$p$ ir pirmskaitlis, $p &gt; 5$. Pierādīt, ka bezgalīga decimāldaļā
+$\\frac{1}{p}$ perioda ciparu summa dalās ar $9$.</p>"""@lv ;
     eliozo:problemYear 1978 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1978.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -234,18 +224,12 @@ eliozo:LV.TST.1978.9.3 a eliozo:Problem ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.TST.1978.9.3" ;
     eliozo:problemText """Atrisināt naturālos skaitļos vienādojumu
-$x^2 + 8z = 2y^2 + 3$.
-
-<!--
-mainEntry=BBK2012.P4.3
--->"""@lv ;
+$x^2 + 8z = 2y^2 + 3$."""@lv ;
     eliozo:problemTextHtml """<p>Atrisināt naturālos skaitļos vienādojumu
-$x^2 + 8z = 2y^2 + 3$.</p>
-<!--
-mainEntry=BBK2012.P4.3
--->"""@lv ;
+$x^2 + 8z = 2y^2 + 3$.</p>"""@lv ;
     eliozo:problemYear 1978 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.1979.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -256,18 +240,12 @@ eliozo:LV.TST.1979.10.2 a eliozo:Problem ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.TST.1979.10.2" ;
     eliozo:problemText """Pierādīt, ka eksistē tāds naturāls skaitlis $n$, 
-ka $n^2 + 1$ dalās ar  $5^{1979}$.
-
-<!--
-mainEntry=BBK2012.P9.12
--->"""@lv ;
+ka $n^2 + 1$ dalās ar  $5^{1979}$."""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka eksistē tāds naturāls skaitlis $n$, 
-ka $n^2 + 1$ dalās ar  $5^{1979}$.</p>
-<!--
-mainEntry=BBK2012.P9.12
--->"""@lv ;
+ka $n^2 + 1$ dalās ar  $5^{1979}$.</p>"""@lv ;
     eliozo:problemYear 1979 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1979.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -279,19 +257,13 @@ eliozo:LV.TST.1979.11.3 a eliozo:Problem ;
     eliozo:problemID "LV.TST.1979.11.3" ;
     eliozo:problemText """Pierādīt, ka eksistē bezgalīgi daudz naturālu 
 skaitļu, kas nav izsakāmi kā $1979$
-naturālu skaitļu $1979$-o pakāpju summas.
-
-<!--
-mainEntry=BBK2012.P8.48
--->"""@lv ;
+naturālu skaitļu $1979$-o pakāpju summas."""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka eksistē bezgalīgi daudz naturālu 
 skaitļu, kas nav izsakāmi kā $1979$
-naturālu skaitļu $1979$-o pakāpju summas.</p>
-<!--
-mainEntry=BBK2012.P8.48
--->"""@lv ;
+naturālu skaitļu $1979$-o pakāpju summas.</p>"""@lv ;
     eliozo:problemYear 1979 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1979.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -303,19 +275,13 @@ eliozo:LV.TST.1979.9.1 a eliozo:Problem ;
     eliozo:problemID "LV.TST.1979.9.1" ;
     eliozo:problemText """Pierādīt, bezgalīgi daudziem pirmskaitļiem $p$ var 
 atrast tādus naturālus skaitļus $x$ un $y$, ka 
-$2x^2 + 2x + 1 = py$. 
-
-<!--
-mainEntry=BBK2012.P1.89
--->"""@lv ;
+$2x^2 + 2x + 1 = py$."""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, bezgalīgi daudziem pirmskaitļiem $p$ var 
 atrast tādus naturālus skaitļus $x$ un $y$, ka 
-$2x^2 + 2x + 1 = py$. </p>
-<!--
-mainEntry=BBK2012.P1.89
--->"""@lv ;
+$2x^2 + 2x + 1 = py$.</p>"""@lv ;
     eliozo:problemYear 1979 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1980.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -331,23 +297,17 @@ $$\\left\\lfloor \\frac{0^2}{1980} \\right\\rfloor,
 \\left\\lfloor \\frac{2^2}{1980} \\right\\rfloor, 
 \\left\\lfloor \\frac{3^2}{1980} \\right\\rfloor,\\ldots$$
 $$\\ldots,\\left\\lfloor \\frac{1979^2}{1980} \\right\\rfloor, 
-\\left\\lfloor \\frac{1980^2}{1980} \\right\\rfloor ?$$
-
-<!--
-mainEntry=BBK2012.P6.42
--->"""@lv ;
+\\left\\lfloor \\frac{1980^2}{1980} \\right\\rfloor ?$$"""@lv ;
     eliozo:problemTextHtml """<p>Cik dažādu skaitļu ir galīgā virknē
 $$\\left\\lfloor \\frac{0^2}{1980} \\right\\rfloor, 
 \\left\\lfloor \\frac{1^2}{1980} \\right\\rfloor, 
 \\left\\lfloor \\frac{2^2}{1980} \\right\\rfloor, 
 \\left\\lfloor \\frac{3^2}{1980} \\right\\rfloor,\\ldots$$
 $$\\ldots,\\left\\lfloor \\frac{1979^2}{1980} \\right\\rfloor, 
-\\left\\lfloor \\frac{1980^2}{1980} \\right\\rfloor ?$$</p>
-<!--
-mainEntry=BBK2012.P6.42
--->"""@lv ;
+\\left\\lfloor \\frac{1980^2}{1980} \\right\\rfloor ?$$</p>"""@lv ;
     eliozo:problemYear 1980 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindCount" .
 
 eliozo:LV.TST.1981.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -370,7 +330,8 @@ veseli skaitļi. Dots, ka ir tieši $35$ veseli
 pozitīvi skaitļi, kas nav izsakāmi šādā formā, 
 un viens no tiem ir $58$. Atrast $a$ un $b$.</p>"""@lv ;
     eliozo:problemYear 1981 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindExample" .
 
 eliozo:LV.TST.1981.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -381,27 +342,31 @@ eliozo:LV.TST.1981.11.4 a eliozo:Problem ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.TST.1981.11.4" ;
     eliozo:problemText """Ar $\\lfloor x\\rfloor$ apzīmējam lielāko veselo skaitli, 
-kas nepārsniedz $x$. Izmantojot  četru
+kas nepārsniedz $x$.   
+**(A)** Izmantojot  četru
 aritmētisko operāciju darbību zīmes, kā arī simbolus 
 $\\lfloor\\mbox{ }\\rfloor$ un $\\sqrt{\\mbox{ }}$, 
 uzrakstīt vispārīgā
 locekļa formulu tādai skaitļu virknei $\\left( a_n \\right)$, 
 kas katru naturālu skaitli satur kā savu
-locekli bezgalīgi daudzas reizes.
-Vai var uzrakstīt tādu formulu, neizmantojot simbolu 
+locekli bezgalīgi daudzas reizes.  
+**(B)** Vai var uzrakstīt tādu formulu, neizmantojot simbolu 
 $\\lfloor\\mbox{ }\\rfloor$?"""@lv ;
     eliozo:problemTextHtml """<p>Ar $\\lfloor x\\rfloor$ apzīmējam lielāko veselo skaitli, 
-kas nepārsniedz $x$. Izmantojot  četru
+kas nepārsniedz $x$. <br />
+<strong>(A)</strong> Izmantojot  četru
 aritmētisko operāciju darbību zīmes, kā arī simbolus 
 $\\lfloor\\mbox{ }\\rfloor$ un $\\sqrt{\\mbox{ }}$, 
 uzrakstīt vispārīgā
 locekļa formulu tādai skaitļu virknei $\\left( a_n \\right)$, 
 kas katru naturālu skaitli satur kā savu
-locekli bezgalīgi daudzas reizes.
-Vai var uzrakstīt tādu formulu, neizmantojot simbolu 
+locekli bezgalīgi daudzas reizes.<br />
+<strong>(B)</strong> Vai var uzrakstīt tādu formulu, neizmantojot simbolu 
 $\\lfloor\\mbox{ }\\rfloor$?</p>"""@lv ;
     eliozo:problemYear 1981 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "FindExample",
+        "ProveDisprove" .
 
 eliozo:LV.TST.1981.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -418,11 +383,7 @@ Pierādīt, ka starp izvēlētajiem skaitļiem
 noteikti atradīsies divi tādi, kas ir savstarpēji
 pirmskaitļi.
 Vai to noteikti var apgalvot, ja tiek izvēlēti 
-$1\\,000\\,000$ skaitļi?
-
-<!--
-mainEntry=BBK2012.P1.117
--->"""@lv ;
+$1\\,000\\,000$ skaitļi?"""@lv ;
     eliozo:problemTextHtml """<p>Aplūkojam visus naturālos skaitļus no $1$ līdz<br />
 $2\\,000\\,000$ ieskaitot. Izvēlēsimies
 no tiem kaut kādus  $1\\,000\\,001$ skaitļus.
@@ -430,12 +391,10 @@ Pierādīt, ka starp izvēlētajiem skaitļiem
 noteikti atradīsies divi tādi, kas ir savstarpēji
 pirmskaitļi.
 Vai to noteikti var apgalvot, ja tiek izvēlēti 
-$1\\,000\\,000$ skaitļi?</p>
-<!--
-mainEntry=BBK2012.P1.117
--->"""@lv ;
+$1\\,000\\,000$ skaitļi?</p>"""@lv ;
     eliozo:problemYear 1981 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1982.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -448,20 +407,14 @@ eliozo:LV.TST.1982.10.1 a eliozo:Problem ;
     eliozo:problemText """Skaitļa $1982^{1982} +1$ ciparu summa ir $A$. 
 Skaitļa $A$ ciparu summa ir $B$. Skaitļa  $B$
 ciparu summa ir $C$. Skaitļa $C$ ciparu summa ir $D$. 
-Atrast $D$.
-
-<!--
-mainEntry=BBK2012.P4.48
--->"""@lv ;
+Atrast $D$."""@lv ;
     eliozo:problemTextHtml """<p>Skaitļa $1982^{1982} +1$ ciparu summa ir $A$. 
 Skaitļa $A$ ciparu summa ir $B$. Skaitļa  $B$
 ciparu summa ir $C$. Skaitļa $C$ ciparu summa ir $D$. 
-Atrast $D$.</p>
-<!--
-mainEntry=BBK2012.P4.48
--->"""@lv ;
+Atrast $D$.</p>"""@lv ;
     eliozo:problemYear 1982 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindExample" .
 
 eliozo:LV.TST.1982.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -486,7 +439,8 @@ x^2 = 2(y+z)
 \\end{array}
 \\right.$$</p>"""@lv ;
     eliozo:problemYear 1982 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.1983.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -501,22 +455,16 @@ dots, ka $x_1 = 0$ un katram naturālam $n$ pastāv
 vienādība
 $$x_{n+1} = 5x_n + \\sqrt{24x_n^2 + 1}.$$
 Pierādīt, ka visi šīs virknes 
-locekļi ir veseli skaitļi.
-
-<!--
-mainEntry=BBK2012.P5.114
--->"""@lv ;
+locekļi ir veseli skaitļi."""@lv ;
     eliozo:problemTextHtml """<p>Par skaitļu virkni $\\left( x_n \\right)$ 
 dots, ka $x_1 = 0$ un katram naturālam $n$ pastāv 
 vienādība
 $$x_{n+1} = 5x_n + \\sqrt{24x_n^2 + 1}.$$
 Pierādīt, ka visi šīs virknes 
-locekļi ir veseli skaitļi.</p>
-<!--
-mainEntry=BBK2012.P5.114
--->"""@lv ;
+locekļi ir veseli skaitļi.</p>"""@lv ;
     eliozo:problemYear 1983 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1983.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -528,19 +476,13 @@ eliozo:LV.TST.1983.11.4 a eliozo:Problem ;
     eliozo:problemID "LV.TST.1983.11.4" ;
     eliozo:problemText """Pierādīt, ka katram pirmskaitlim $p$ var atrast 
 tādus naturālus skaitļus $x$ un $y$, ka
-$x^2 + y^2 + 1$ dalās ar $p$.
-
-<!--
-mainEntry=BBK2012.P4.92
--->"""@lv ;
+$x^2 + y^2 + 1$ dalās ar $p$."""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka katram pirmskaitlim $p$ var atrast 
 tādus naturālus skaitļus $x$ un $y$, ka
-$x^2 + y^2 + 1$ dalās ar $p$.</p>
-<!--
-mainEntry=BBK2012.P4.92
--->"""@lv ;
+$x^2 + y^2 + 1$ dalās ar $p$.</p>"""@lv ;
     eliozo:problemYear 1983 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1983.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -559,11 +501,7 @@ $$\\overline{a_1a_2\\ldots a_{n-1}a_n},\\;
 \\overline{a_3\\ldots a_{n-1}a_na_1a_2},$$
 $$\\ldots,\\overline{a_{n-1}a_na_1a_2\\ldots a_{n-2}},\\;
 \\overline{a_na_1a_2\\ldots a_{n-1}}$$
-ir dažādi. 
-
-<!--
-mainEntry=BBK2012.P3.92
--->"""@lv ;
+ir dažādi."""@lv ;
     eliozo:problemTextHtml """<p>Dots, ka $n$-ciparu skaitlis
 $\\overline{a_1a_2a_3\\ldots a_{n-1}a_n}$, starp kura cipariem nav
 nuļļu, ir pirmskaitlis. 
@@ -573,12 +511,10 @@ $$\\overline{a_1a_2\\ldots a_{n-1}a_n},\\;
 \\overline{a_3\\ldots a_{n-1}a_na_1a_2},$$
 $$\\ldots,\\overline{a_{n-1}a_na_1a_2\\ldots a_{n-2}},\\;
 \\overline{a_na_1a_2\\ldots a_{n-1}}$$
-ir dažādi. </p>
-<!--
-mainEntry=BBK2012.P3.92
--->"""@lv ;
+ir dažādi.</p>"""@lv ;
     eliozo:problemYear 1983 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1984.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -603,7 +539,8 @@ kopīgais dalītājs ir 1, tad $f(m \\cdot n) = f(m) \\cdot f(n)$.
 Pierādīt, ka visiem $x$ pastāv vienādība
 $f(x) = x$.</p>"""@lv ;
     eliozo:problemYear 1984 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1984.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -614,18 +551,12 @@ eliozo:LV.TST.1984.11.1 a eliozo:Problem ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.TST.1984.11.1" ;
     eliozo:problemText """Ar kādu lielāko skaitu vienādu, no nulles atšķirīgu ciparu 
-var beigties naturāla skaitļa kvadrāts?
-
-<!--
-mainEntry=BBK2012.P4.99
--->"""@lv ;
+var beigties naturāla skaitļa kvadrāts?"""@lv ;
     eliozo:problemTextHtml """<p>Ar kādu lielāko skaitu vienādu, no nulles atšķirīgu ciparu 
-var beigties naturāla skaitļa kvadrāts?</p>
-<!--
-mainEntry=BBK2012.P4.99
--->"""@lv ;
+var beigties naturāla skaitļa kvadrāts?</p>"""@lv ;
     eliozo:problemYear 1984 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindOptimal" .
 
 eliozo:LV.TST.1984.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -637,19 +568,13 @@ eliozo:LV.TST.1984.9.1 a eliozo:Problem ;
     eliozo:problemID "LV.TST.1984.9.1" ;
     eliozo:problemText """Pierādīt, ka katrā augošā aritmētiskā progresijā 
 ir bezgalīgi daudz skaitļu, kas nav
-vesela skaitļa pakāpes ar kāpinātāju, lielāku par $1$.
-
-<!--
-mainEntry=BBK2012.P2.73
--->"""@lv ;
+vesela skaitļa pakāpes ar kāpinātāju, lielāku par $1$."""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka katrā augošā aritmētiskā progresijā 
 ir bezgalīgi daudz skaitļu, kas nav
-vesela skaitļa pakāpes ar kāpinātāju, lielāku par $1$.</p>
-<!--
-mainEntry=BBK2012.P2.73
--->"""@lv ;
+vesela skaitļa pakāpes ar kāpinātāju, lielāku par $1$.</p>"""@lv ;
     eliozo:problemYear 1984 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1985.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -660,21 +585,22 @@ eliozo:LV.TST.1985.10.2 a eliozo:Problem ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.TST.1985.10.2" ;
     eliozo:problemText """Skaitļu virkni $\\left( x_n \\right)$
-veido šādi:  
-**(a)** $x_1 = 1$;
-**(b)** ja $k \\geq 1$, tad
-$x_{k+1}$ ir skaitļa $1985 \\cdot x_k$ ciparu summa.  
+veido šādi:
+
+a. $x_1 = 1$;
+b. ja $k \\geq 1$, tad $x_{k+1}$ ir skaitļa $1985 \\cdot x_k$ ciparu summa.  
+
 Pierādīt, ka, sākot no kādas vietas, virkne $\\left( x_n \\right)$
 kļūst periodiska."""@lv ;
     eliozo:problemTextHtml """<p>Skaitļu virkni $\\left( x_n \\right)$
-veido šādi:<br />
-<strong>(a)</strong> $x_1 = 1$;
-<strong>(b)</strong> ja $k \\geq 1$, tad
-$x_{k+1}$ ir skaitļa $1985 \\cdot x_k$ ciparu summa.<br />
-Pierādīt, ka, sākot no kādas vietas, virkne $\\left( x_n \\right)$
+veido šādi:</p>
+<p>a. $x_1 = 1$;
+b. ja $k \\geq 1$, tad $x_{k+1}$ ir skaitļa $1985 \\cdot x_k$ ciparu summa.  </p>
+<p>Pierādīt, ka, sākot no kādas vietas, virkne $\\left( x_n \\right)$
 kļūst periodiska.</p>"""@lv ;
     eliozo:problemYear 1985 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1985.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -689,16 +615,17 @@ no kuriem neviens nav naturāla skaitļa pakāpe,
 augstāka par pirmo.
 
 <!--
-mainEntry=BBK2012.P2.77
+sameAs=BBK2012.P2.77
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka eksistē $1985$ pēc kārtas ņemti naturāli skaitļi, 
 no kuriem neviens nav naturāla skaitļa pakāpe, 
 augstāka par pirmo.</p>
 <!--
-mainEntry=BBK2012.P2.77
+sameAs=BBK2012.P2.77
 -->"""@lv ;
     eliozo:problemYear 1985 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1985.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -719,7 +646,8 @@ Pierādīt, ka var atrast tādus
 kuru summa ir $a$, bet
 reizinājums ir $b$.</p>"""@lv ;
     eliozo:problemYear 1985 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1985.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -732,20 +660,14 @@ eliozo:LV.TST.1985.9.3 a eliozo:Problem ;
     eliozo:problemText """Pierādīt, ka katru naturālu skaitli, kas lielāks par $17$, 
 var izsacīt kā triju tādu
 naturālu skaitļu summu, no kuriem katriem diviem 
-lielākais kopīgais dalītājs ir $1$.
-
-<!--
-mainEntry=BBK2012.P1.97
--->"""@lv ;
+lielākais kopīgais dalītājs ir $1$."""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka katru naturālu skaitli, kas lielāks par $17$, 
 var izsacīt kā triju tādu
 naturālu skaitļu summu, no kuriem katriem diviem 
-lielākais kopīgais dalītājs ir $1$.</p>
-<!--
-mainEntry=BBK2012.P1.97
--->"""@lv ;
+lielākais kopīgais dalītājs ir $1$.</p>"""@lv ;
     eliozo:problemYear 1985 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1986.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -757,38 +679,25 @@ eliozo:LV.TST.1986.10.1 a eliozo:Problem ;
     eliozo:problemID "LV.TST.1986.10.1" ;
     eliozo:problemText """Dots, ka $p$ – pirmskaitlis. Pierādīt, ka
 $2^p + 3^p$ nav naturāla skaitļa pakāpe ar
-kāpinātāju, lielāku par $1$.
-
-<!--
-mainEntry=BBK2012.P4.122
--->"""@lv,
+kāpinātāju, lielāku par $1$."""@lv,
         """Naturālu skaitļu virkni $p_1,p_2,p_3,\\ldots$ 
 definē šādi:
 $p_1 = 2$; $p_2 = 3$; $p_{n+1}$ ir
 lielākais pirmskaitlis, ar kuru dalās 
 $p_1p_2p_3\\cdots p_n + 1$, $(n \\geq 2)$. 
-Pierādīt, ka šajā virknē nav skaitļa $5$.
-
-<!--
-mainEntry=BBK2012.P4.89
--->"""@lv ;
+Pierādīt, ka šajā virknē nav skaitļa $5$."""@lv ;
     eliozo:problemTextHtml """<p>Dots, ka $p$ – pirmskaitlis. Pierādīt, ka
 $2^p + 3^p$ nav naturāla skaitļa pakāpe ar
-kāpinātāju, lielāku par $1$.</p>
-<!--
-mainEntry=BBK2012.P4.122
--->"""@lv,
+kāpinātāju, lielāku par $1$.</p>"""@lv,
         """<p>Naturālu skaitļu virkni $p_1,p_2,p_3,\\ldots$ 
 definē šādi:
 $p_1 = 2$; $p_2 = 3$; $p_{n+1}$ ir
 lielākais pirmskaitlis, ar kuru dalās 
 $p_1p_2p_3\\cdots p_n + 1$, $(n \\geq 2)$. 
-Pierādīt, ka šajā virknē nav skaitļa $5$.</p>
-<!--
-mainEntry=BBK2012.P4.89
--->"""@lv ;
+Pierādīt, ka šajā virknē nav skaitļa $5$.</p>"""@lv ;
     eliozo:problemYear 1986 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1986.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -800,19 +709,13 @@ eliozo:LV.TST.1986.11.5 a eliozo:Problem ;
     eliozo:problemID "LV.TST.1986.11.5" ;
     eliozo:problemText """Doti $19$ veseli skaitļi. Pierādīt, ka no tiem var izvēlēties 
 tieši 10 skaitļus tā, ka
-visu izraudzīto skaitļu summa dalās ar $10$.
-
-<!--
-mainEntry=BBK2012.P8.11
--->"""@lv ;
+visu izraudzīto skaitļu summa dalās ar $10$."""@lv ;
     eliozo:problemTextHtml """<p>Doti $19$ veseli skaitļi. Pierādīt, ka no tiem var izvēlēties 
 tieši 10 skaitļus tā, ka
-visu izraudzīto skaitļu summa dalās ar $10$.</p>
-<!--
-mainEntry=BBK2012.P8.11
--->"""@lv ;
+visu izraudzīto skaitļu summa dalās ar $10$.</p>"""@lv ;
     eliozo:problemYear 1986 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1986.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -823,18 +726,12 @@ eliozo:LV.TST.1986.9.3 a eliozo:Problem ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.TST.1986.9.3" ;
     eliozo:problemText """Kādiem pirmskaitļiem $p$ skaitlis
-$2^p + p^2$ arī ir pirmskaitlis?
-
-<!--
-mainEntry=BBK2012.P4.69
--->"""@lv ;
+$2^p + p^2$ arī ir pirmskaitlis?"""@lv ;
     eliozo:problemTextHtml """<p>Kādiem pirmskaitļiem $p$ skaitlis
-$2^p + p^2$ arī ir pirmskaitlis?</p>
-<!--
-mainEntry=BBK2012.P4.69
--->"""@lv ;
+$2^p + p^2$ arī ir pirmskaitlis?</p>"""@lv ;
     eliozo:problemYear 1986 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.1987.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -853,7 +750,8 @@ vienādojumam $x! - y^2 = A$
 ir tikai
 galīgs skaits (varbūt neviena) atrisinājumu naturālos skaitļos.</p>"""@lv ;
     eliozo:problemYear 1987 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1987.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -864,19 +762,18 @@ eliozo:LV.TST.1987.11.3 a eliozo:Problem ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.TST.1987.11.3" ;
     eliozo:problemText """Dots, ka
-$$\\frac{1}{1 \\cdot 2 \\cdot 3} + 
-\\frac{1}{4 \\cdot 5 \\cdot 6} + \\ldots + 
+
+$$\\frac{1}{1 \\cdot 2 \\cdot 3} + \\frac{1}{4 \\cdot 5 \\cdot 6} + \\ldots + 
 \\frac{1}{1984 \\cdot 1985 \\cdot 1986}  = \\frac{m}{n},$$
-kur $m$ un $n$ – naturāli skaitļi. 
-Pierādīt, ka $m$ dalās ar $1987$."""@lv ;
-    eliozo:problemTextHtml """<p>Dots, ka
-$$\\frac{1}{1 \\cdot 2 \\cdot 3} + 
-\\frac{1}{4 \\cdot 5 \\cdot 6} + \\ldots + 
-\\frac{1}{1984 \\cdot 1985 \\cdot 1986}  = \\frac{m}{n},$$
-kur $m$ un $n$ – naturāli skaitļi. 
-Pierādīt, ka $m$ dalās ar $1987$.</p>"""@lv ;
+
+kur $m$ un $n$ – naturāli skaitļi. Pierādīt, ka $m$ dalās ar $1987$."""@lv ;
+    eliozo:problemTextHtml """<p>Dots, ka</p>
+<p>$$\\frac{1}{1 \\cdot 2 \\cdot 3} + \\frac{1}{4 \\cdot 5 \\cdot 6} + \\ldots + 
+\\frac{1}{1984 \\cdot 1985 \\cdot 1986}  = \\frac{m}{n},$$</p>
+<p>kur $m$ un $n$ – naturāli skaitļi. Pierādīt, ka $m$ dalās ar $1987$.</p>"""@lv ;
     eliozo:problemYear 1987 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1987.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -905,7 +802,8 @@ paņem pēdējo akmeni.
 Kurš uzvar, pareizi spēlējot, - tas, kurš izdara 
 pirmo gājienu, vai tas, kurš izdara otro gājienu?</p>"""@lv ;
     eliozo:problemYear 1987 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "Algorithm" .
 
 eliozo:LV.TST.1988.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -920,7 +818,8 @@ dalītāju skaits?"""@lv ;
     eliozo:problemTextHtml """<p>Kuram no naturāliem skaitļiem no $1$ līdz $1988$ ir vislielākais 
 dalītāju skaits?</p>"""@lv ;
     eliozo:problemYear 1988 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindOptimal" .
 
 eliozo:LV.TST.1988.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -935,25 +834,17 @@ $a_1 = k$, $k$ – naturāls skaitlis,
 $$a_{n+1} = k\\left( a_n + 1 \\right) + \\left( k+1 \\right)a_n + $$
 $$ +2\\sqrt{k \\left( k+1 \\right)a_n \\left( a_n + 1\\right)},\\;\\;
 \\text{ja}\\;\\; n \\geq 1.$$
-Pierādīt, ka visi šīs virknes
-locekļi ir naturāli skaitļi.
 
-
-<!--
-mainEntry=BBK2012.P5.115
--->"""@lv ;
+Pierādīt, ka visi šīs virknes locekļi ir naturāli skaitļi."""@lv ;
     eliozo:problemTextHtml """<p>Skaitļu virkne definēta šādi: 
 $a_1 = k$, $k$ – naturāls skaitlis,
 $$a_{n+1} = k\\left( a_n + 1 \\right) + \\left( k+1 \\right)a_n + $$
 $$ +2\\sqrt{k \\left( k+1 \\right)a_n \\left( a_n + 1\\right)},\\;\\;
-\\text{ja}\\;\\; n \\geq 1.$$
-Pierādīt, ka visi šīs virknes
-locekļi ir naturāli skaitļi.</p>
-<!--
-mainEntry=BBK2012.P5.115
--->"""@lv ;
+\\text{ja}\\;\\; n \\geq 1.$$</p>
+<p>Pierādīt, ka visi šīs virknes locekļi ir naturāli skaitļi.</p>"""@lv ;
     eliozo:problemYear 1988 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1988.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -968,7 +859,8 @@ $5^x \\cdot 7^y + 4 = 3^z$."""@lv ;
     eliozo:problemTextHtml """<p>Atrisināt naturālos skaitļos vienādojumu
 $5^x \\cdot 7^y + 4 = 3^z$.</p>"""@lv ;
     eliozo:problemYear 1988 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.1988.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -980,20 +872,13 @@ eliozo:LV.TST.1988.9.1 a eliozo:Problem ;
     eliozo:problemID "LV.TST.1988.9.1" ;
     eliozo:problemText """Vai piecu pēc kārtas ņemtu naturālu skaitļu 
 reizinājums var būt naturāla skaitļa
-kvadrāts?
-
-
-<!--
-mainEntry=BBK2012.P2.30
--->"""@lv ;
+kvadrāts?"""@lv ;
     eliozo:problemTextHtml """<p>Vai piecu pēc kārtas ņemtu naturālu skaitļu 
 reizinājums var būt naturāla skaitļa
-kvadrāts?</p>
-<!--
-mainEntry=BBK2012.P2.30
--->"""@lv ;
+kvadrāts?</p>"""@lv ;
     eliozo:problemYear 1988 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1989.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1014,7 +899,8 @@ ir 1. Dots arī, ka
 $$\\frac{1}{a} + \\frac{1}{b} = \\frac{1}{c}.$$
 Pierādīt, ka $a + b$ ir naturāla skaitļa kvadrāts.</p>"""@lv ;
     eliozo:problemYear 1989 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1989.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1030,23 +916,17 @@ $$x_{n+2} = \\frac{x_nx_{n+1}}{3x_n - 2x_{n+1}},\\;\\;n=1,2,3,\\ldots .$$
 Atrast visas iespējas, kā var izvēlēties
 $x_1$ un $x_2$, lai bezgalīgi daudzi virknes 
 $\\left( x_n \\right)$
-locekļi būtu naturāli skaitļi.
-
-<!--
-mainEntry=BBK2012.P9.20
--->"""@lv ;
+locekļi būtu naturāli skaitļi."""@lv ;
     eliozo:problemTextHtml """<p>Reālu skaitļu virkni definē šādi:
 $x_1$ un $x_2$ izvēlas patvaļīgi, un
 $$x_{n+2} = \\frac{x_nx_{n+1}}{3x_n - 2x_{n+1}},\\;\\;n=1,2,3,\\ldots .$$
 Atrast visas iespējas, kā var izvēlēties
 $x_1$ un $x_2$, lai bezgalīgi daudzi virknes 
 $\\left( x_n \\right)$
-locekļi būtu naturāli skaitļi.</p>
-<!--
-mainEntry=BBK2012.P9.20
--->"""@lv ;
+locekļi būtu naturāli skaitļi.</p>"""@lv ;
     eliozo:problemYear 1989 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.1989.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1061,22 +941,16 @@ vienādojumam $ax^2 + by^2 + cz^2 = 1$ nav atrisinājumu racionālos skaitļos
 $(x, y, z)$.
 Pierādīt, ka vienīgais vienādojuma 
 $ax^2 + by^2 + cz^2 = 0$ atrisinājums veselos skaitļos
-ir $x = y = z = 0$.
-
-<!--
-mainEntry=BBK2012.P5.116
--->"""@lv ;
+ir $x = y = z = 0$."""@lv ;
     eliozo:problemTextHtml """<p>Dots, ka $a$, $b$ un $c$ ir veseli skaitļi, kas atšķiras no nulles. Zināms, ka
 vienādojumam $ax^2 + by^2 + cz^2 = 1$ nav atrisinājumu racionālos skaitļos 
 $(x, y, z)$.
 Pierādīt, ka vienīgais vienādojuma 
 $ax^2 + by^2 + cz^2 = 0$ atrisinājums veselos skaitļos
-ir $x = y = z = 0$.</p>
-<!--
-mainEntry=BBK2012.P5.116
--->"""@lv ;
+ir $x = y = z = 0$.</p>"""@lv ;
     eliozo:problemYear 1989 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1990.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1086,17 +960,11 @@ eliozo:LV.TST.1990.10.2 a eliozo:Problem ;
     eliozo:problemBookSection "TST.1990.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.TST.1990.10.2" ;
-    eliozo:problemText """Atrisināt naturālos skaitļos vienādojumu $7^x - 3 \\cdot 2^y = 1$.
-
-<!--
-mainEntry=BBK2012.P5.48
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Atrisināt naturālos skaitļos vienādojumu $7^x - 3 \\cdot 2^y = 1$.</p>
-<!--
-mainEntry=BBK2012.P5.48
--->"""@lv ;
+    eliozo:problemText "Atrisināt naturālos skaitļos vienādojumu $7^x - 3 \\cdot 2^y = 1$."@lv ;
+    eliozo:problemTextHtml "<p>Atrisināt naturālos skaitļos vienādojumu $7^x - 3 \\cdot 2^y = 1$.</p>"@lv ;
     eliozo:problemYear 1990 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.1990.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1112,23 +980,17 @@ dažādu pirmskaitļu reizinājums. Pierādīt, ka eksistē tāds
 skaitlis  $p$ un tāda kopas $A$
 bezgalīga apakškopa $B$, ka katru divu dažādu $B$ 
 elementu lielākais kopīgais dalītājs ir
-$p$.
-
-<!--
-mainEntry=BBK2012.P9.38
--->"""@lv ;
+$p$."""@lv ;
     eliozo:problemTextHtml """<p>$A$ ir bezgalīga naturālu skaitļu kopa. Katrs $A$ elements 
 ir ne vairāk kā $1990$
 dažādu pirmskaitļu reizinājums. Pierādīt, ka eksistē tāds 
 skaitlis  $p$ un tāda kopas $A$
 bezgalīga apakškopa $B$, ka katru divu dažādu $B$ 
 elementu lielākais kopīgais dalītājs ir
-$p$.</p>
-<!--
-mainEntry=BBK2012.P9.38
--->"""@lv ;
+$p$.</p>"""@lv ;
     eliozo:problemYear 1990 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1990.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1140,19 +1002,13 @@ eliozo:LV.TST.1990.9.5 a eliozo:Problem ;
     eliozo:problemID "LV.TST.1990.9.5" ;
     eliozo:problemText """Vai var atrast četrus tādus naturālus skaitļus, lai, 
 katru divu reizinājumam
-pieskaitot $1990$, iegūtu kaut kāda naturāla skaitļa kvadrātu?
-
-<!--
-mainEntry=BBK2012.P4.97
--->"""@lv ;
+pieskaitot $1990$, iegūtu kaut kāda naturāla skaitļa kvadrātu?"""@lv ;
     eliozo:problemTextHtml """<p>Vai var atrast četrus tādus naturālus skaitļus, lai, 
 katru divu reizinājumam
-pieskaitot $1990$, iegūtu kaut kāda naturāla skaitļa kvadrātu?</p>
-<!--
-mainEntry=BBK2012.P4.97
--->"""@lv ;
+pieskaitot $1990$, iegūtu kaut kāda naturāla skaitļa kvadrātu?</p>"""@lv ;
     eliozo:problemYear 1990 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.TST.1991.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1173,7 +1029,8 @@ nepārsniedz $1991$. Pierādīt, ka visi progresijas locekļi
 nevar vienlaicīgi būt
 pirmskaitļi.</p>"""@lv ;
     eliozo:problemYear 1991 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1991.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1188,23 +1045,16 @@ $2^{n_1}-1$ dalās ar $n_2$,
 $2^{n_2}-1$ dalās ar $n_3$, $\\ldots$, 
 $2^{n_{k-1}}-1$ dalās ar $n_k$,
 $2^{n_k}-1$ dalās ar $n_1$.
-Pierādīt, ka $n_1 = n_2 = \\cdots = n_k = 1$.
-
-
-<!--
-mainEntry=BBK2012.P7.13
--->"""@lv ;
+Pierādīt, ka $n_1 = n_2 = \\cdots = n_k = 1$."""@lv ;
     eliozo:problemTextHtml """<p>Dots, ka  $n_1,n_2,\\ldots,n_k$ -- naturāli skaitļi, pie tam
 $2^{n_1}-1$ dalās ar $n_2$, 
 $2^{n_2}-1$ dalās ar $n_3$, $\\ldots$, 
 $2^{n_{k-1}}-1$ dalās ar $n_k$,
 $2^{n_k}-1$ dalās ar $n_1$.
-Pierādīt, ka $n_1 = n_2 = \\cdots = n_k = 1$.</p>
-<!--
-mainEntry=BBK2012.P7.13
--->"""@lv ;
+Pierādīt, ka $n_1 = n_2 = \\cdots = n_k = 1$.</p>"""@lv ;
     eliozo:problemYear 1991 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1992.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1215,20 +1065,12 @@ eliozo:LV.TST.1992.10.1 a eliozo:Problem ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.TST.1992.10.1" ;
     eliozo:problemText """Izsakiet skaitli $1992$ kā naturālu skaitļu summu tā, 
-lai to reizinājums būtu
-vislielākais iespējamais.
-
-<!--
-concepts=constant-e
--->"""@lv ;
+lai to reizinājums būtu vislielākais iespējamais."""@lv ;
     eliozo:problemTextHtml """<p>Izsakiet skaitli $1992$ kā naturālu skaitļu summu tā, 
-lai to reizinājums būtu
-vislielākais iespējamais.</p>
-<!--
-concepts=constant-e
--->"""@lv ;
+lai to reizinājums būtu vislielākais iespējamais.</p>"""@lv ;
     eliozo:problemYear 1992 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1992.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1245,7 +1087,8 @@ ir vesela sakne?"""@lv ;
 $$x^n + (2 + x)^n + (2 - x)^n = 0$$
 ir vesela sakne?</p>"""@lv ;
     eliozo:problemYear 1992 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.1992.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1262,7 +1105,8 @@ daļa nesaturētu $10$ locekļu aritmētisku progresiju?"""@lv ;
 daļās tā, lai neviena
 daļa nesaturētu $10$ locekļu aritmētisku progresiju?</p>"""@lv ;
     eliozo:problemYear 1992 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.TST.1992.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1283,7 +1127,8 @@ $$\\left( a^2 - 1 \\right)\\left( x^2 - 1 \\right) =
 \\left( y^2 - 1 \\right)$$
 eksistē vismaz $2$ atrisinājumi naturālos skaitļos.</p>"""@lv ;
     eliozo:problemYear 1992 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1992.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1300,7 +1145,8 @@ divas reizes pēc kārtas uzrakstot kādu naturālu skaitli."""@lv ;
 kvadrātu, kurus var iegūt,
 divas reizes pēc kārtas uzrakstot kādu naturālu skaitli.</p>"""@lv ;
     eliozo:problemYear 1992 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1992.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1315,22 +1161,16 @@ locekļi apmierina nosacījumus
 $$a_1 = 2,\\; a_2 = 7,\\; -\\frac{1}{2} < a_{n+1} - 
 \\frac{a_n^2}{a_{n-1}} \\leq \\frac{1}{2},\\;\\text{ja}\\;n \\geq 2.$$
 Pierādīt, ka visi locekļi, sākot ar otro, ir nepāra 
-skaitļi.
-
-<!--
-mainEntry=BBK2012.P6.69
--->"""@lv ;
+skaitļi."""@lv ;
     eliozo:problemTextHtml """<p>Naturālu skaitļu virknes $\\left( a_n \\right)$ 
 locekļi apmierina nosacījumus
 $$a_1 = 2,\\; a_2 = 7,\\; -\\frac{1}{2} &lt; a_{n+1} - 
 \\frac{a_n^2}{a_{n-1}} \\leq \\frac{1}{2},\\;\\text{ja}\\;n \\geq 2.$$
 Pierādīt, ka visi locekļi, sākot ar otro, ir nepāra 
-skaitļi.</p>
-<!--
-mainEntry=BBK2012.P6.69
--->"""@lv ;
+skaitļi.</p>"""@lv ;
     eliozo:problemYear 1992 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1992.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1342,20 +1182,13 @@ eliozo:LV.TST.1992.9.1 a eliozo:Problem ;
     eliozo:problemID "LV.TST.1992.9.1" ;
     eliozo:problemText """Dots, ka $n$ – naturāls skaitlis un $n+1$ dalās ar $24$. 
 Pierādīt, ka skaitļa $n$ visu
-naturālo dalītāju summa arī dalās ar $24$.
-
-
-<!--
-mainEntry=BBK2012.P2.38
--->"""@lv ;
+naturālo dalītāju summa arī dalās ar $24$."""@lv ;
     eliozo:problemTextHtml """<p>Dots, ka $n$ – naturāls skaitlis un $n+1$ dalās ar $24$. 
 Pierādīt, ka skaitļa $n$ visu
-naturālo dalītāju summa arī dalās ar $24$.</p>
-<!--
-mainEntry=BBK2012.P2.38
--->"""@lv ;
+naturālo dalītāju summa arī dalās ar $24$.</p>"""@lv ;
     eliozo:problemYear 1992 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1993.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1367,19 +1200,13 @@ eliozo:LV.TST.1993.12.2 a eliozo:Problem ;
     eliozo:problemID "LV.TST.1993.12.2" ;
     eliozo:problemText """Dots naturāls skaitlis $a > 2$. 
 Pierādīt, ka eksistē tikai galīgs skaits tādu naturālu
-$n$, ka $a^n - 1$ dalās ar $2^n$.
-
-<!--
-sameAs=BBK2012.P2.87
--->"""@lv ;
+$n$, ka $a^n - 1$ dalās ar $2^n$."""@lv ;
     eliozo:problemTextHtml """<p>Dots naturāls skaitlis $a &gt; 2$. 
 Pierādīt, ka eksistē tikai galīgs skaits tādu naturālu
-$n$, ka $a^n - 1$ dalās ar $2^n$.</p>
-<!--
-sameAs=BBK2012.P2.87
--->"""@lv ;
+$n$, ka $a^n - 1$ dalās ar $2^n$.</p>"""@lv ;
     eliozo:problemYear 1993 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1994.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1392,20 +1219,14 @@ eliozo:LV.TST.1994.12.1 a eliozo:Problem ;
     eliozo:problemText """Dots, ka $x$ un $y$ ir naturāli skaitļi un
 $$3x^2 + x = 4y^2 + y.$$
 Pierādīt, ka $x-y$, $3x+3y+1$ un $4x+4y+1$ ir naturālu 
-skaitļu kvadrāti.
-
-<!--
-sameAs=BBK2012.P5.56
--->"""@lv ;
+skaitļu kvadrāti."""@lv ;
     eliozo:problemTextHtml """<p>Dots, ka $x$ un $y$ ir naturāli skaitļi un
 $$3x^2 + x = 4y^2 + y.$$
 Pierādīt, ka $x-y$, $3x+3y+1$ un $4x+4y+1$ ir naturālu 
-skaitļu kvadrāti.</p>
-<!--
-sameAs=BBK2012.P5.56
--->"""@lv ;
+skaitļu kvadrāti.</p>"""@lv ;
     eliozo:problemYear 1994 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1994.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1418,32 +1239,21 @@ eliozo:LV.TST.1994.12.2 a eliozo:Problem ;
     eliozo:problemText """Vai var atrast tādus $2^{1994}$
 dažādus naturālu skaitļu pārus
 $\\left( a_i,b_i \\right)$, 
-ka vienlaikus izpildās šādas prasības:  
-(1) ${\\displaystyle 
-\\frac{1}{a_1b_1} + \\frac{1}{a_2b_2} + \\cdots + 
-\\frac{1}{a_{2^{1994}}b_{2^{1994}}} = 1}$;   
-(2) ${\\displaystyle
-\\left( a_1 + a_2 + \\cdots + a_{2^{1994}}\\right) + 
-\\left( b_1 + b_2 + \\cdots + b_{2^{1994}}\\right) = 3^{1995}}$.
+ka vienlaikus izpildās šādas prasības:
 
-<!--
-sameAs=BBK2012.P9.73
--->"""@lv ;
+1. ${\\displaystyle \\frac{1}{a_1b_1} + \\frac{1}{a_2b_2} + \\cdots + \\frac{1}{a_{2^{1994}}b_{2^{1994}}} = 1}$;   
+2. ${\\displaystyle \\left( a_1 + a_2 + \\cdots + a_{2^{1994}}\\right) + \\left( b_1 + b_2 + \\cdots + b_{2^{1994}}\\right) = 3^{1995}}$."""@lv ;
     eliozo:problemTextHtml """<p>Vai var atrast tādus $2^{1994}$
 dažādus naturālu skaitļu pārus
 $\\left( a_i,b_i \\right)$, 
-ka vienlaikus izpildās šādas prasības:<br />
-(1) ${\\displaystyle 
-\\frac{1}{a_1b_1} + \\frac{1}{a_2b_2} + \\cdots + 
-\\frac{1}{a_{2^{1994}}b_{2^{1994}}} = 1}$; <br />
-(2) ${\\displaystyle
-\\left( a_1 + a_2 + \\cdots + a_{2^{1994}}\\right) + 
-\\left( b_1 + b_2 + \\cdots + b_{2^{1994}}\\right) = 3^{1995}}$.</p>
-<!--
-sameAs=BBK2012.P9.73
--->"""@lv ;
+ka vienlaikus izpildās šādas prasības:</p>
+<ol>
+<li>${\\displaystyle \\frac{1}{a_1b_1} + \\frac{1}{a_2b_2} + \\cdots + \\frac{1}{a_{2^{1994}}b_{2^{1994}}} = 1}$;   </li>
+<li>${\\displaystyle \\left( a_1 + a_2 + \\cdots + a_{2^{1994}}\\right) + \\left( b_1 + b_2 + \\cdots + b_{2^{1994}}\\right) = 3^{1995}}$.</li>
+</ol>"""@lv ;
     eliozo:problemYear 1994 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.TST.1995.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1454,25 +1264,14 @@ eliozo:LV.TST.1995.12.2 a eliozo:Problem ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.TST.1995.12.2" ;
     eliozo:problemText """Naturālu skaitli sauksim par baltu, ja tas dod atlikumu $1$, 
-dalot ar $4$, un par
-melnu, ja tas dod atlikumu $3$, dalot ar $4$.
-Pierādīt, ka katram naturālam $n$ 
-balto dalītāju nav mazāk nekā melno.
-
-
-<!--
-concepts=groups
--->"""@lv ;
+dalot ar $4$, un par melnu, ja tas dod atlikumu $3$, dalot ar $4$.
+Pierādīt, ka katram naturālam $n$ balto dalītāju nav mazāk nekā melno."""@lv ;
     eliozo:problemTextHtml """<p>Naturālu skaitli sauksim par baltu, ja tas dod atlikumu $1$, 
-dalot ar $4$, un par
-melnu, ja tas dod atlikumu $3$, dalot ar $4$.
-Pierādīt, ka katram naturālam $n$ 
-balto dalītāju nav mazāk nekā melno.</p>
-<!--
-concepts=groups
--->"""@lv ;
+dalot ar $4$, un par melnu, ja tas dod atlikumu $3$, dalot ar $4$.
+Pierādīt, ka katram naturālam $n$ balto dalītāju nav mazāk nekā melno.</p>"""@lv ;
     eliozo:problemYear 1995 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1996.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1485,20 +1284,14 @@ eliozo:LV.TST.1996.12.3 a eliozo:Problem ;
     eliozo:problemText """Atrast visus tādus pirmskaitļus $p$, ka 
 ${\\displaystyle p\\cdot \\left(2^{p-1}-1\\right)}$ 
 ir naturāla skaitļa pakāpe,
-augstāka par pirmo, un pierādīt, ka citu bez atrastajiem nav.
-
-<!--
-sameAs=BBK2012.P5.57
--->"""@lv ;
+augstāka par pirmo, un pierādīt, ka citu bez atrastajiem nav."""@lv ;
     eliozo:problemTextHtml """<p>Atrast visus tādus pirmskaitļus $p$, ka 
 ${\\displaystyle p\\cdot \\left(2^{p-1}-1\\right)}$ 
 ir naturāla skaitļa pakāpe,
-augstāka par pirmo, un pierādīt, ka citu bez atrastajiem nav.</p>
-<!--
-sameAs=BBK2012.P5.57
--->"""@lv ;
+augstāka par pirmo, un pierādīt, ka citu bez atrastajiem nav.</p>"""@lv ;
     eliozo:problemYear 1996 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.1996.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1517,7 +1310,8 @@ Pierādīt, ka nekādi 3
 šīs virknes locekļi $a_m$, $a_n$, $a_k$ ($m &lt; n &lt; k$)
 neveido ģeometrisku progresiju.</p>"""@lv ;
     eliozo:problemYear 1996 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1997.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1536,7 +1330,8 @@ Pierādīt, ka eksistē bezgalīgi daudz
 tādu naturālu skaitļu $n$, ka  $a+n$ un $b + n$ 
 lielākais kopīgais dalītājs ir $1$.</p>"""@lv ;
     eliozo:problemYear 1997 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.1998.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1548,19 +1343,13 @@ eliozo:LV.TST.1998.12.2 a eliozo:Problem ;
     eliozo:problemID "LV.TST.1998.12.2" ;
     eliozo:problemText """Atrisināt naturālos skaitļos vienādojumu
 $$p^x - y^p = 1,$$
-ja $p$ ir pirmskaitlis.
-
-<!--
-sameAs=BBK2012.P4.96
--->"""@lv ;
+ja $p$ ir pirmskaitlis."""@lv ;
     eliozo:problemTextHtml """<p>Atrisināt naturālos skaitļos vienādojumu
 $$p^x - y^p = 1,$$
-ja $p$ ir pirmskaitlis.</p>
-<!--
-sameAs=BBK2012.P4.96
--->"""@lv ;
+ja $p$ ir pirmskaitlis.</p>"""@lv ;
     eliozo:problemYear 1998 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.1999.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1574,21 +1363,15 @@ eliozo:LV.TST.1999.12.5 a eliozo:Problem ;
 veido sekojoši: $a_1 = 99$; $a_{n+1} = a_n + p\\left( a_n \\right)$, 
 kur ar $p(x)$ apzīmēts lielākais pirmskaitlis, 
 ar kuru dalās $x$.
-Aprēķināt $a_{1999}$.
-
-<!--
-sameAs=BBK2012.P2.23
--->"""@lv ;
+Aprēķināt $a_{1999}$."""@lv ;
     eliozo:problemTextHtml """<p>Skaitļu virkni $a_1,a_2,a_3,\\ldots$
 veido sekojoši: $a_1 = 99$; $a_{n+1} = a_n + p\\left( a_n \\right)$, 
 kur ar $p(x)$ apzīmēts lielākais pirmskaitlis, 
 ar kuru dalās $x$.
-Aprēķināt $a_{1999}$.</p>
-<!--
-sameAs=BBK2012.P2.23
--->"""@lv ;
+Aprēķināt $a_{1999}$.</p>"""@lv ;
     eliozo:problemYear 1999 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "FindExample" .
 
 eliozo:LV.TST.2004.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1605,7 +1388,8 @@ Pierādīt, ka visi virknes locekļi ir naturālu skaitļu kvadrāti."""@lv ;
 $$a_0=1;\\; a_1=1;\\; a_{n+2}=7a_{n+1}-a_n-2\\;\\;\\text{pie}\\;\\;n\\geq 0.$$
 Pierādīt, ka visi virknes locekļi ir naturālu skaitļu kvadrāti.</p>"""@lv ;
     eliozo:problemYear 2004 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.2004.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1622,7 +1406,8 @@ dalās ar $p$. Pierādīt, ka gan $a$, gan $b$ dalās ar $p$."""@lv ;
 kas dod atlikumu $2$, dalot ar $3$. Dots, ka $a^2+ab+b^2$ 
 dalās ar $p$. Pierādīt, ka gan $a$, gan $b$ dalās ar $p$.</p>"""@lv ;
     eliozo:problemYear 2004 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.2005.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1632,16 +1417,18 @@ eliozo:LV.TST.2005.12.3 a eliozo:Problem ;
     eliozo:problemBookSection "TST.2005.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.TST.2005.12.3" ;
-    eliozo:problemText """Atrast visas naturālu skaitļu kopas $S$, kas vienlaicīgi apmierina sekojošas īpašības:  
-**(i)** $S$ satur vismaz 3 elementus,  
-**(ii)** ja $n \\in S$ un $k$ ir skaitļa $n$ naturāls dalītājs, tad arī $k \\in S$,  
-**(iii)** ja $a \\in S$, $b \\in S$ un $1<a<b$, tad $1+ab \\in S$."""@lv ;
-    eliozo:problemTextHtml """<p>Atrast visas naturālu skaitļu kopas $S$, kas vienlaicīgi apmierina sekojošas īpašības:<br />
-<strong>(i)</strong> $S$ satur vismaz 3 elementus,<br />
-<strong>(ii)</strong> ja $n \\in S$ un $k$ ir skaitļa $n$ naturāls dalītājs, tad arī $k \\in S$,<br />
-<strong>(iii)</strong> ja $a \\in S$, $b \\in S$ un $1&lt;a&lt;b$, tad $1+ab \\in S$.</p>"""@lv ;
+    eliozo:problemText """Atrast visas naturālu skaitļu kopas $S$, kas vienlaicīgi apmierina sekojošas īpašības:
+
+a. $S$ satur vismaz 3 elementus.
+b. Ja $n \\in S$ un $k$ ir skaitļa $n$ naturāls dalītājs, tad arī $k \\in S$.
+c. Ja $a \\in S$, $b \\in S$ un $1<a<b$, tad $1+ab \\in S$."""@lv ;
+    eliozo:problemTextHtml """<p>Atrast visas naturālu skaitļu kopas $S$, kas vienlaicīgi apmierina sekojošas īpašības:</p>
+<p>a. $S$ satur vismaz 3 elementus.
+b. Ja $n \\in S$ un $k$ ir skaitļa $n$ naturāls dalītājs, tad arī $k \\in S$.
+c. Ja $a \\in S$, $b \\in S$ un $1&lt;a&lt;b$, tad $1+ab \\in S$.</p>"""@lv ;
     eliozo:problemYear 2005 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.2006.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1656,7 +1443,8 @@ $$3^x = 2^x \\cdot y + 1.$$"""@lv ;
     eliozo:problemTextHtml """<p>Atrisināt naturālos skaitļos vienādojumu
 $$3^x = 2^x \\cdot y + 1.$$</p>"""@lv ;
     eliozo:problemYear 2006 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.2007.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1673,7 +1461,8 @@ Pierādīt, ka $x^p + y^p$ dalās ar  $p^2$."""@lv ;
 $x^p + y^p$ dalās ar $p$ ($x, y$ – naturāli skaitļi). 
 Pierādīt, ka $x^p + y^p$ dalās ar  $p^2$.</p>"""@lv ;
     eliozo:problemYear 2007 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.2008.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1692,7 +1481,8 @@ $$(x + 1)^2 + y_1^2 = (x+2)^2 + y_2^2 = \\ldots =
 (x + n)^2 + y_n^2$$
 eksistē atrisinājums veselos skaitļos?</p>"""@lv ;
     eliozo:problemYear 2008 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindOptimal" .
 
 eliozo:LV.TST.2009.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1707,7 +1497,8 @@ skaitlis $n^3 - 1$ dalās ar $m \\cdot n - 1$?"""@lv ;
     eliozo:problemTextHtml """<p>Kādiem naturāliem skaitļiem $m$ un $n$, kas abi lielāki par $1$,
 skaitlis $n^3 - 1$ dalās ar $m \\cdot n - 1$?</p>"""@lv ;
     eliozo:problemYear 2009 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.2010.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1741,7 +1532,8 @@ secīgu naturālu skaitļu summu?"""@lv ;
 kurus nav iespējams izteikt kā divu vai vairāku 
 secīgu naturālu skaitļu summu?</p>"""@lv ;
     eliozo:problemYear 2011 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindCount" .
 
 eliozo:LV.TST.2012.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1757,7 +1549,9 @@ Aprēķināt $S(S(S(2012^{2012})))$."""@lv ;
     eliozo:problemTextHtml """<p>Ar $S(x)$ apzīmēsim skaitļa $x$ ciparu summu. 
 Aprēķināt $S(S(S(2012^{2012})))$.</p>"""@lv ;
     eliozo:problemYear 2012 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindExample" ;
+    eliozo:topic "NumTheoryInequalityMethod" .
 
 eliozo:LV.TST.2012.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1776,7 +1570,8 @@ x_{n} + 2$ visiem $n \\geq 1$ un $y_1 = y_2 = 4$,
 $y_{n+2} = y_{n}y_{n+1} - 1$ visiem $n \\geq 1$. 
 Pierādīt, ka nav tāda naturāla skaitļa, kas pieder abām virknēm.</p>"""@lv ;
     eliozo:problemYear 2012 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.2014.12.13 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1799,7 +1594,8 @@ izteiksmes $mf(m) + n$
 vērtība bez atlikuma dalās ar izteiksmes $m^2 + f(n)$
 vērtību.</p>"""@lv ;
     eliozo:problemYear 2014 ;
-    eliozo:problem_number 13 .
+    eliozo:problem_number 13 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.2014.12.14 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1840,7 +1636,8 @@ mazāks par $k$ dala $n$ tad un tikai tad, ja tas dala $n^{\\ast}$.
 Pierādīt, ka $n$ un $n^{\\ast}$ vai nu
 abi ir labi vai abi ir slikti.</p>"""@lv ;
     eliozo:problemYear 2014 ;
-    eliozo:problem_number 14 .
+    eliozo:problem_number 14 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.2014.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1855,7 +1652,8 @@ $(a - b)^2 = 6ab + 7$  nav atrisinājuma naturālos skaitļos."""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka vienādojumam 
 $(a - b)^2 = 6ab + 7$  nav atrisinājuma naturālos skaitļos.</p>"""@lv ;
     eliozo:problemYear 2014 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.2015.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1876,7 +1674,8 @@ ir draudzīgi. Pierādīt: ja skaitļi $a$ un $b$ ir draudzīgi,
 tad eksistē tāds naturāls skaitlis $c$, ka vienlaikus 
 $a$ un $c$ ir draudzīgi, un arī $b$ un $c$ ir draudzīgi.</p>"""@lv ;
     eliozo:problemYear 2015 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.2015.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1895,7 +1694,8 @@ un pieņem veselas vērtības, tādas, ka $f(1)=f(-1)$
 un visiem veseliem $x$ un $y$ izpildās
 $$f(x) + f(y) = f(x + 2xy) + f(y - 2xy).$$</p>"""@lv ;
     eliozo:problemYear 2015 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.2016.12.15 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1910,7 +1710,8 @@ Pierādīt, ka $3a \\geq 2b + 2$."""@lv ;
     eliozo:problemTextHtml """<p>Naturāli skaitļi $a$ un $b$ ir tādi, ka $a!b!$ dalās ar $a!+b!$. 
 Pierādīt, ka $3a \\geq 2b + 2$.</p>"""@lv ;
     eliozo:problemYear 2016 ;
-    eliozo:problem_number 15 .
+    eliozo:problem_number 15 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.2016.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1923,7 +1724,8 @@ eliozo:LV.TST.2016.12.3 a eliozo:Problem ;
     eliozo:problemText "Atrast visus tādus pirmskaitļus $p$, ka $3^{p^2-1} + 20$ arī ir pirmskaitlis!"@lv ;
     eliozo:problemTextHtml "<p>Atrast visus tādus pirmskaitļus $p$, ka $3^{p^2-1} + 20$ arī ir pirmskaitlis!</p>"@lv ;
     eliozo:problemYear 2016 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" .
 
 eliozo:LV.TST.2016.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1940,7 +1742,8 @@ aritmētiskais ir vienāds ar $n$?"""@lv ;
 ka katram naturālam $n$, skaitļu $a_{n+1}, a_{n+2},\\ldots,a_{n+a_n}$ vidējais
 aritmētiskais ir vienāds ar $n$?</p>"""@lv ;
     eliozo:problemYear 2016 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.TST.2017.12.11 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1959,7 +1762,9 @@ bet ar $\\tau_1(n)$ — tā pozitīvo dalītāju skaitu, kas, dalot ar $3$,
 dod atlikumu $1$. Kādas naturālas
 vērtības var pieņemt izteiksme $\\frac{\\tau(10)}{\\tau_1(10n)}$.</p>"""@lv ;
     eliozo:problemYear 2017 ;
-    eliozo:problem_number 11 .
+    eliozo:problem_number 11 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:seeAlso "LV.AMO.2023.12.5" .
 
 eliozo:LV.TST.2018.12.14 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1980,7 +1785,8 @@ Pierādiet, ka polinomam
 $$P(x) = M(x + 1)^k - (x + a_1)(x + a_2)\\ldots(x + a_n)$$
 nav pozitīvu sakņu.</p>"""@lv ;
     eliozo:problemYear 2018 ;
-    eliozo:problem_number 14 .
+    eliozo:problem_number 14 ;
+    eliozo:questionType "Prove" .
 
 eliozo:LV.TST.2018.12.15 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -2007,7 +1813,8 @@ Elīzei ir pirmais gājiens. Spēle beidzas, kad visi $p$ cipari ir uzrakstīti.
 Elīze uzvar, ja $M$ dalās ar $p$, Luīze uzvar, ja nedalās.
 Pierādiet, ka Elīze vienmēr var uzvarēt!</p>"""@lv ;
     eliozo:problemYear 2018 ;
-    eliozo:problem_number 15 .
+    eliozo:problem_number 15 ;
+    eliozo:questionType "Algorithm" .
 
 eliozo:LV.TST.2018.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -2022,7 +1829,8 @@ nav atrisinājuma naturālos skaitļos!"""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka vienādojumam $5m^2 - 6mn + 7n^2 = 20182018$
 nav atrisinājuma naturālos skaitļos!</p>"""@lv ;
     eliozo:problemYear 2018 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" .
 
 eliozo:SOLN.LV.TST.2012.12.1 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
