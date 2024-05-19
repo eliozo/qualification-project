@@ -89,7 +89,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT ?problemTextHtml ?solutionTextHtml WHERE {{
+SELECT ?problemTextHtml ?solutionTextHtml ?video WHERE {{
   ?problem eliozo:problemID '{problemid}' .
   OPTIONAL {{
     ?problem eliozo:problemTextHtml ?problemTextHtml ;
@@ -251,23 +251,53 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad):
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?text ?problemid ?problem_number ?imagefile WHERE {{
+    SELECT ?text ?problemid ?problem_number WHERE {{
       ?problem eliozo:problemYear {year} .
       ?problem eliozo:country '{country}' .
-      ?problem eliozo:problemText ?text .
+      ?problem eliozo:problemTextHtml ?text .
       ?problem eliozo:problemID ?problemid .
       ?problem eliozo:problem_number ?problem_number .
       ?problem eliozo:problemGrade {grade} .
       ?problem eliozo:olympiadCode '{olympiad_code}' .
-      OPTIONAL {{
-        ?problem eliozo:image ?imagefile .
-      }} .
     }} ORDER BY ?problem_number
     """
 
 
     myobj = { 'query':
         queryTemplate.format(year=year, country=country, grade=grade, olympiad_code=olympiad)
+    }
+
+    print('**********myobj={}'.format(myobj))
+
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+
+    x = requests.post(url, myobj, head)
+
+    print(x.text)
+
+    return x.text
+
+def getSPARQLOlympiadYear(year, country, olympiad):
+    url = FUSEKI_URL
+    queryTemplate = """
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
+    SELECT ?text ?problemid ?problem_number ?problem_grade WHERE {{
+      ?problem eliozo:problemYear {year} .
+      ?problem eliozo:country '{country}' .
+      ?problem eliozo:problemTextHtml ?text .
+      ?problem eliozo:problemID ?problemid .
+      ?problem eliozo:problem_number ?problem_number .
+      ?problem eliozo:problemGrade ?problem_grade .
+      ?problem eliozo:olympiadCode '{olympiad_code}' .
+    }} ORDER BY ?problem_grade ?problem_number
+    """
+
+
+    myobj = { 'query':
+        queryTemplate.format(year=year, country=country, olympiad_code=olympiad)
     }
 
     print('**********myobj={}'.format(myobj))
@@ -400,6 +430,16 @@ def create_app(test_config=None):
                 replaced_text += char
         return replaced_text
 
+    def fix_image_links(arg):
+        img_regex1 = r'<img\s+(alt\S*)\s+src="([^"/]*)" />\{ width=([^"]*) \}'
+        img_replace1 = r'<img \1 style="width:\3" src="https://www.dudajevagatve.lv/static/eliozo/images/\2"/>'
+        img_regex2 = r'<img\s+(alt\S*)\s+src="([^"/]*)" />'
+        img_replace2 = r'<img \1 src="https://www.dudajevagatve.lv/static/eliozo/images/\2"/>'
+        arg = re.sub(img_regex1, img_replace1, arg)
+        arg = re.sub(img_regex2, img_replace2, arg)
+        return arg
+
+
     @app.route('/')
     def main():
         keyword = request.args.get('keyword')
@@ -426,7 +466,8 @@ def create_app(test_config=None):
         template_context = {
             'problems': problems,
             'keyword' : keyword,
-            'active': 'main'
+            'active': 'main',
+            'title': 'Sākumlapa'
         }
 
         return render_template('main_content.html', **template_context)
@@ -443,7 +484,8 @@ def create_app(test_config=None):
     def getInfo():
         # return render_template("info.html")
         template_context = {
-            'active': 'info'
+            'active': 'info',
+            'title': 'Bibliogrāfija'
         }
         return render_template('info_content.html', **template_context)
 
@@ -460,7 +502,8 @@ def create_app(test_config=None):
 
         template_context = {
             'all_problemids' : all_problemids,
-            'active': 'video'
+            'active': 'video',
+            'title': 'Video'
         }
 
         # problemid = request.args.get('problemid')
@@ -528,14 +571,15 @@ def create_app(test_config=None):
         template_context = {
             'all_skills': all_skills,
             'all_skill_info' : all_skill_info,
-            'active': 'skills'
+            'active': 'skills',
+            'title': 'Tēmas'
         }
 
         return render_template('skills_content.html', **template_context)
 
 
-    @app.route('/topics', methods=['GET','POST'])
-    def getTopics():
+    @app.route('/index', methods=['GET','POST'])
+    def getIndex():
 
         all_topics = json.loads(getSPARQLtopics('eliozo:analysis'))
         topic_list = ["Pirmā tēma", "Otrā tēma"]
@@ -553,9 +597,10 @@ def create_app(test_config=None):
         template_context = {
             'all_topics': topic_list,
             'tree': myTree,
-            'active': 'topics'
+            'active': 'topics',
+            'title': 'Indekss'
         }
-        return render_template('topics_content.html', **template_context)
+        return render_template('index_content.html', **template_context)
 
     @app.route('/skill_tasks', methods=['GET','POST']) # Kontrolieris, kas iegūst prasmes kopā ar uzdevumiem
     def getSkill():
@@ -579,7 +624,8 @@ def create_app(test_config=None):
             'skill': skill,
             'problem_list': problem_list,
             'skill_list' : skill_list,
-            'active': 'skills'
+            'active': 'skills',
+            'title': 'Par tēmu'
         }
         return render_template('skill_tasks_content.html', **template_context)
     
@@ -605,7 +651,8 @@ def create_app(test_config=None):
         template_context = {
             'problems': problems,
             'bookid' : bookid,
-            'active': 'olympiads'
+            'active': 'olympiads',
+            'title': 'Grāmata'
         }
 
         return render_template('book_problems_content.html', **template_context)
@@ -616,21 +663,20 @@ def create_app(test_config=None):
         problemid = request.args.get('problemid')
         data = json.loads(getSPARQLProblem(problemid))
 
-        a = data['results']['bindings'][0]['problemTextHtml']['value']
-        problemTextHtml = mathBeautify(a)
+        problemTextHtml = data['results']['bindings'][0]['problemTextHtml']['value']
+
+        problemTextHtml = fix_image_links(problemTextHtml)
+        problemTextHtml = mathBeautify(problemTextHtml)
+
 
         if 'video' in data['results']['bindings'][0]:
             hasVideo = data['results']['bindings'][0]['video']['value'] != ''
         else:
             hasVideo = False
 
-        if 'imageSrc' in data['results']['bindings'][0]:
-            image_src = data['results']['bindings'][0]['imageSrc']['value']
-        else:
-            image_src = ''
-
         if 'solutionTextHtml' in data['results']['bindings'][0]:
             solutionTextHtml = data['results']['bindings'][0]['solutionTextHtml']['value']
+            solutionTextHtml = fix_image_links(solutionTextHtml)
             solutionTextHtml = mathBeautify(solutionTextHtml)
         else:
             solutionTextHtml = ''
@@ -662,9 +708,9 @@ def create_app(test_config=None):
             'video_title': video_title,
             'bookmarks': bookmarks,
             'youtubeID': youtubeID,
-            'image_src' : image_src,
             'solutionTextHtml': solutionTextHtml,
-            'active': 'olympiads'
+            'active': 'olympiads',
+            'title': 'Uzdevums'
         }
         return render_template('problem_content.html', **template_context)
 
@@ -684,7 +730,8 @@ def create_app(test_config=None):
 
         template_context = {
             'links': olympiadData,
-            'active': 'olympiads'
+            'active': 'olympiads',
+            'title': 'Olimpiādes'
         }
 
         return render_template('olympiads_content.html', **template_context)
@@ -719,7 +766,8 @@ def create_app(test_config=None):
             'all_grades': all_grades,
             'country_id': country_id,
             'olympiad_id': olympiad_id,
-            'active': 'olympiads'
+            'active': 'olympiads',
+            'title': 'Olimpiāde'
         }
         # Kontrolieris izlemj, uz kuru skatu sūtīs klientu
         return render_template('olympiad_content.html', **template_context)
@@ -728,22 +776,29 @@ def create_app(test_config=None):
     @app.route('/grade', methods=['GET', 'POST'])
     def getGrades():
         year = request.args.get('year')
-        country= request.args.get('country')
-        grade= request.args.get('grade')
+        country = request.args.get('country')
+        grade = request.args.get('grade')
         olympiad= request.args.get('olympiad')
         print('Gads = {}, country - {}, grade = {}, olympiad = {}'.format(year,country,grade,olympiad))
-        link = json.loads(getSPARQLOlympiadGrades(year,country,grade,olympiad))
+
+        if grade == '-1':
+            link = json.loads(getSPARQLOlympiadYear(year, country, olympiad))
+        else:
+            link = json.loads(getSPARQLOlympiadGrades(year,country,grade,olympiad))
 
         problems = []
         
         for item in link['results']['bindings']:
             problem_id_value = item['problemid']['value']
-            problem_imagefile = ''
-            if 'imagefile' in item:
-                problem_imagefile = item['imagefile']['value']
             problem_number_value = item['problem_number']['value']
-            problem_text_value = mathBeautify(item['text']['value'])
-            d = {'problemid': problem_id_value, 'problem_number':problem_number_value, 'text': problem_text_value, 'imagefile': problem_imagefile}
+            if grade == -1:
+                problem_grade_value = item['problem_grade']['value']
+            else:
+                problem_grade_value = grade
+            problem_text_value = item['text']['value']
+            problem_text_value = fix_image_links(problem_text_value)
+            problem_text_value = mathBeautify(problem_text_value)
+            d = {'problemid': problem_id_value, 'problem_number':problem_number_value, 'text': problem_text_value, 'problem_grade': problem_grade_value}
             problems.append(d)
 
 
@@ -753,7 +808,8 @@ def create_app(test_config=None):
             'country': country,
             'grade': grade,
             'olympiad': olympiad,
-            'active': 'olympiads'
+            'active': 'olympiads',
+            'title': 'Uzdevumi'
         }
 
         return render_template('grade_content.html', **template_context)

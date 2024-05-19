@@ -10,7 +10,11 @@
 
     gtag('config', 'G-S73XXGK0ZP');
     </script>
-    <title>Bibliogrāfija</title>
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>ELIOZO</title>
+    {% endif %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}"/>
@@ -106,11 +110,10 @@ dl.olympiads  dt {
             <ul class="nav navbar-nav">
                 <li class="{{ 'active' if active == 'main' else '' }}"><a href="{{ url_for('main') }}">Sākumlapa</a>
                 </li>
-                <li class="{{ 'active' if active == 'olympiads' else '' }}"><a href="{{ url_for('getOlympiads') }}">Olimpiāžu
-                    arhīvs</a></li>
+                <li class="{{ 'active' if active == 'olympiads' else '' }}"><a href="{{ url_for('getOlympiads') }}">Olimpiādes</a></li>
                 <li class="{{ 'active' if active == 'skills' else '' }}"><a
-                        href="{{ url_for('getSkills') }}">Prasmes</a></li>
-                <li class="{{ 'active' if active == 'topics' else '' }}"><a href="{{ url_for('getTopics') }}">Tēmas</a>
+                        href="{{ url_for('getSkills') }}">Tēmas</a></li>
+                <li class="{{ 'active' if active == 'topics' else '' }}"><a href="{{ url_for('getIndex') }}">Indekss</a>
                 </li>
                 <li class="{{ 'active' if active == 'video' else '' }}"><a href="{{ url_for('getVideo') }}">Video
                     atrisinājumi</a></li>

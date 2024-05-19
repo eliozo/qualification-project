@@ -1,4 +1,4 @@
-# <lo-sample/> LT.TST.2008.1
+# <lo-sample/> LT.TST.2008.12.12.1
 
 Atrodiet visus veselu pozitīvu skaitļu trijniekus $(x, y, z)$, kas apmierina vienādību $1 + 4^x + 4^y = z^2$.
 
@@ -13,7 +13,7 @@ questionType=FindAll
 
 
 
-# <lo-sample/> LT.TST.2009.1
+# <lo-sample/> LT.TST.2009.12.1
 
 Dots vienādojums
 $$x^3 + x^2 = 2^y + 16.$$
@@ -40,7 +40,7 @@ questionType=FindExample,FindAll
 
 
 
-# <lo-sample/> LT.TST.2010.1
+# <lo-sample/> LT.TST.2010.12.1
 
 Atrodiet visus naturālu skaitļu trijniekus $(x,y,u)$, 
 kas apmierina vienādojumu sistēmu
@@ -69,7 +69,7 @@ questionType=FindAll
 
 
 
-# <lo-sample/> LT.TST.2011.4
+# <lo-sample/> LT.TST.2011.12.4
 
 Atšķirīgi naturāli skaitļi $s_1,s_2,\ldots,s_n$ apmierina vienādību
 $$\left( 1 - \frac{1}{s_1} \right)
@@ -95,7 +95,7 @@ questionType=FindOptimal
 
 
 
-# <lo-sample/> LT.TST.2011.6
+# <lo-sample/> LT.TST.2011.12.6
 
 Doti naturāli skaitļi $m \geq 2$ un $n$. 
 Kopu $S(m,n)$ veido visi polinomi $P(x)$,
@@ -124,7 +124,7 @@ questionType=FindCount
 
 
 
-# <lo-sample/> LT.TST.2012.1
+# <lo-sample/> LT.TST.2012.12.1
 
 Doti naturāli skaitļi  
 $a_1,a_2,\ldots,a_{14}$, kuri visi ir lielāki par $4$.
@@ -151,7 +151,7 @@ questionType=ProveDisprove
 
 
 
-# <lo-sample/> LT.TST.2012.4
+# <lo-sample/> LT.TST.2012.12.4
 
 Ikvienam veselajam skaitlim $m$ lielāko vesela skaitļa kubu, 
 kas nepārsniedz $m$, apzīmējam $f(m)$. 
@@ -191,7 +191,7 @@ questionType=FindExample,FindAll
 
 
 
-# <lo-sample/> LT.TST.2012.6
+# <lo-sample/> LT.TST.2012.12.6
 
 Naturālo skaitļu kopa sadalīta $k$ savstarpēji nešķeļošās
 apakškopās $A_1,A_2,\ldots,A_k$ tā, ka 
@@ -222,7 +222,7 @@ questionType=Prove,Prove
 
 
 
-# <lo-sample/> LT.TST.2013.2
+# <lo-sample/> LT.TST.2013.12.2
 
 Naturāli skaitļi $a$, $b$, $c$ un $d$ ir tādi, 
 ka $ac + bd$ dalās ar $a^2 + b^2$.
@@ -250,7 +250,7 @@ questionType=ProveDisprove
 
 
 
-# <lo-sample/> LT.TST.2013.4
+# <lo-sample/> LT.TST.2013.12.4
 
 Atrodiet visus tādus polinomus $P(x)$ ar 
 reāliem koeficientiem, ka ja $P(m)$ ir vesels, tad arī 
@@ -269,7 +269,7 @@ questionType=FindAll
 
 
 
-# <lo-sample/> LT.TST.2013.6
+# <lo-sample/> LT.TST.2013.12.6
 
 Četrinieku $(x,y,z,n)$, kur $x,y,z$ ir pozitīvi reāli skaitļi, 
 bet $n$ – naturāls skaitlis, sauksim par *pilnīgu*, ja
@@ -301,7 +301,7 @@ questionType=FindExample,FindAll
 
 
 
-# <lo-sample/> LT.TST.2014.2
+# <lo-sample/> LT.TST.2014.12.2
 
 Galīgai kopai $A$ piemīt tāda īpašība: jebkuru 
 $6$ tās dažādu elementu summa nedalās ar $6$.  
@@ -328,7 +328,7 @@ questionType=FindExample,ProveDisprove
 
 
 
-# <lo-sample/> LT.TST.2014.4
+# <lo-sample/> LT.TST.2014.12.4
 
 **(a)** Vai eksistē tāds naturāls skaitlis $n$, 
 ka skaitļa $2^n$ pēdējais cipars ir $6$, bet citu ciparu summa ir vienāda ar $2$?  
@@ -354,7 +354,7 @@ questionType=ProveDisprove
 
 
 
-# <lo-sample/> LT.TST.2014.5
+# <lo-sample/> LT.TST.2014.12.5
 
 Doti reāli skaitļi $x$ un $y$. 
 Apzīmēsim $s_1 = x + y$, $s_2 = x^2 + y^2$,
@@ -398,7 +398,7 @@ questionType=Prove,ProveDisprove
 
 
 
-# <lo-sample/> LT.TST.2015.2
+# <lo-sample/> LT.TST.2015.12.2
 
 Atrodiet visus vienādojuma
 $$a! \cdot b! = a! + b! + c!$$
@@ -421,7 +421,7 @@ questionType=FindAll
 
 
 
-# <lo-sample/> LT.TST.2015.5
+# <lo-sample/> LT.TST.2015.12.5
 
 Kopas $A$ un $B$ ir naturālo skaitļu kopas 
 $\{ 1,2,3,\ldots \}$ apakškopas, kam piemīt šādas
@@ -457,7 +457,7 @@ questionType=FindOptimal
 
 
 
-# <lo-sample/> LT.TST.2016.2
+# <lo-sample/> LT.TST.2016.12.2
 
 Atrodiet visus vienādojuma 
 $$4^a \cdot 5^b − 3^c \cdot 11^d = 1$$
@@ -476,7 +476,7 @@ questionType=FindAll
 
 
 
-# <lo-sample/> LT.TST.2017.2
+# <lo-sample/> LT.TST.2017.12.2
 
 Kopu, ko veido $m > 2$ naturāli skaitļi, sauksim par *vienkāršu*, ja 
 jebkuri divi šīs kopas elementi ir savstarpēji pirmskaitļi. 
@@ -500,7 +500,7 @@ questionType=FindOptimal
 
 
 
-# <lo-sample/> LT.TST.2017.3
+# <lo-sample/> LT.TST.2017.12.3
 
 Divus polinomus ar veseliem koeficientiem $A(x) = a_nx^n+\ldots+a_1x+a_0$ un
 $B(x) = b_mx^m + \ldots + b_1x + b_0$ (šeit $m, n > 0$ un $a_n, b_m \neq 0$) sauksim par 
@@ -532,7 +532,7 @@ questionType=Prove,FindOptimal
 
 
 
-# <lo-sample/> LT.TST.2017.4
+# <lo-sample/> LT.TST.2017.12.4
 
 Doti pirmskaitļi $p > q$ un naturāli skaitļi $k,\ell$. Kopu $A$ veido
 visi ntaurālie skaitļi $n$, kuriem $p^kq^{\ell}n$ dalās ar $p + n$.  
@@ -562,7 +562,7 @@ questionType=Prove,ProveDisprove
 
 
 
-# <lo-sample/> LT.TST.2018.3
+# <lo-sample/> LT.TST.2018.12.3
 
 Naturālu skaitli $n$ sauksim par *veiksmīgu*, ja eksistē bezgala daudzas
 pozitīvu racionālu skaitļu kolekcijas $(a_1,\ldots,a_n)$, kurām abi skaitļi
@@ -598,7 +598,7 @@ seeAlso=IMO.SHL.2017.N6
 
 
 
-# <lo-sample/> LT.TST.2018.4
+# <lo-sample/> LT.TST.2018.12.4
 
 Jebkuram naturālam nepāru $n$ nosakiet, kāds ir skaitļa 
 $$\frac{10^{n(n+1)}}{10^n + 6}$$
@@ -619,7 +619,7 @@ questionType=FindAll
 
 
 
-# <lo-sample/> LT.TST.2019.1
+# <lo-sample/> LT.TST.2019.12.1
 
 Mīkolas izdomāja naturālu skaitļu virkni $a_1,a_2,a_3,\ldots$, 
 bet tad definēja jaunu virkni $b_1, b_2, b_3,\ldots$ ar šādām vienādībām:
@@ -646,7 +646,7 @@ questionType=ProveDisprove
 
 
 
-# <lo-sample/> LT.TST.2019.5
+# <lo-sample/> LT.TST.2019.12.5
 
 Naturālu skaitli $n$ sauksim par *piecīgu*, ja tam ir 
 tādi pieci dažādi pozitīvi dalītāji, kuru ceturto pakāpju summa vienāda ar $n$. 

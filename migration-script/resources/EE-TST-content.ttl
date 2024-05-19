@@ -1,9 +1,14 @@
 @prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-eliozo:EE.TST.1993.3 a eliozo:Problem ;
+eliozo:EE.TST.1993.12.12.3 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.1993" ;
+    eliozo:problemBookSection "TST.1993.12.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.1993.12.12.3" ;
     eliozo:problemText """Zināms, ka skaitlis $d$ — lielākais kopīgais dalītājs naturāliem 
 skaitļiem $m$ un $n$, 
 bet dalījums $\\frac{m}{d}$ ir nepāru skaitlis. 
@@ -23,11 +28,18 @@ Pierādīt, ka skaitļi $x = 2^m-1$ un $y = 2^n+1$ ir savstarpēji pirmskaitļi.
 и частное $\\frac{m}{d}$ является нечетным числом. 
 Доказать, что числа $x = 2^m-1$ и $y = 2^n+1$ взаимно просты. 
 </text></p>"""@lv ;
-    eliozo:problem_number 3 .
+    eliozo:problemYear 1993 ;
+    eliozo:problem_number 3,
+        12 .
 
-eliozo:EE.TST.1994.2 a eliozo:Problem ;
+eliozo:EE.TST.1994.12.12.2 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.1994" ;
+    eliozo:problemBookSection "TST.1994.12.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.1994.12.12.2" ;
     eliozo:problemText """Atrast visus naturālu skaitļu
 pārus $(x,y)$ ($x,y>1$), kuriem skaitlis 
 $2^x+3^y$ ir naturāla skaitļa kvadrāts.
@@ -44,11 +56,18 @@ $2^x+3^y$ ir naturāla skaitļa kvadrāts.</p>
 Найти все пары $(x,y)$ натуральных чисел, бо́льших единицы, при которых число 
 $2^x+3^y$ является квадратом некоторого натурального числа.
 </text></p>"""@lv ;
-    eliozo:problem_number 2 .
+    eliozo:problemYear 1994 ;
+    eliozo:problem_number 2,
+        12 .
 
-eliozo:EE.TST.1995.1 a eliozo:Problem ;
+eliozo:EE.TST.1995.12.12.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.1995" ;
+    eliozo:problemBookSection "TST.1995.12.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.1995.12.12.1" ;
     eliozo:problemText """Atrast visas funkcijas $f(n)$, kas definētas visiem veseliem nenegatīviem 
 $n$, kam ir tikai veselas nenegatīvas vērtības un katram 
 veselam nenegatīvam $n$ izpilda nosacījumu
@@ -71,11 +90,18 @@ $f(f(n)) + f(n) = 2n + 3$.</p>
 каждом целом неотрицательном $n$ условии 
 $f(f(n)) + f(n) = 2n + 3$.
 </text></p>"""@lv ;
-    eliozo:problem_number 1 .
+    eliozo:problemYear 1995 ;
+    eliozo:problem_number 1,
+        12 .
 
-eliozo:EE.TST.1995.5 a eliozo:Problem ;
+eliozo:EE.TST.1995.12.5 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.1995" ;
+    eliozo:problemBookSection "TST.1995.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.1995.12.5" ;
     eliozo:problemText """Dots $n$ — patvaļīgs naturāls skaitlis, 
 bet $k$ — naturāls skaitlis, kas dalot ar $4$ dod atlikumu $1$. 
 Pierādīt, ka skaitlis
@@ -110,11 +136,17 @@ $$C_n^1 + C_n + C_n^5k^2 + C_n^7k^3 + \\ldots$
 комбинаций по $m$ из $n$ элементов и рассматриваемая 
 сумма имеет $\\left\\lfloor \\frac{n+1}{2} \\right\\rfloor$ слагаемых.)
 </text></p>"""@lv ;
+    eliozo:problemYear 1995 ;
     eliozo:problem_number 5 .
 
-eliozo:EE.TST.1996.1 a eliozo:Problem ;
+eliozo:EE.TST.1996.12.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.1996" ;
+    eliozo:problemBookSection "TST.1996.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.1996.12.1" ;
     eliozo:problemText """Zināms, ka $x,y$ un ${\\displaystyle \\frac{x^2 + y^2 + 6}{xy}}$
 ir naturāli skaitļi. Pierādīt, ka 
 ${\\displaystyle \\frac{x^2 + y^2 + 6}{xy}}$
@@ -136,11 +168,17 @@ ir kāda vesela skaitļa kubs.</p>
 Доказать, что ${\\displaystyle \\frac{x^2 + y^2 + 6}{xy}}$
 является кубом некоторого целого числа.
 </text></p>"""@lv ;
+    eliozo:problemYear 1996 ;
     eliozo:problem_number 1 .
 
-eliozo:EE.TST.1997.6 a eliozo:Problem ;
+eliozo:EE.TST.1997.12.6 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.1997" ;
+    eliozo:problemBookSection "TST.1997.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.1997.12.6" ;
     eliozo:problemText """Zināms, ka jebkuram veselam $n>1$ starp skaitļiem
 $n+1,n+2,\\ldots,2n-1$ ir vismaz viens pirmskaitlis. 
 Atrast visus naturālos skaitļus $n$ ar sekojošu īpašību:
@@ -166,11 +204,17 @@ un ir savstarpējs pirmskaitlis ar $n$, ir pirmskaitlis. </p>
 каждое целое число $m&gt;1$, меньшее числа $n$
 и взаимно просто с ним, является простым числом. 
 </text></p>"""@lv ;
+    eliozo:problemYear 1997 ;
     eliozo:problem_number 6 .
 
-eliozo:EE.TST.1998.5 a eliozo:Problem ;
+eliozo:EE.TST.1998.12.5 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.1998" ;
+    eliozo:problemBookSection "TST.1998.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.1998.12.5" ;
     eliozo:problemText """Dots $k$ — fiksēts naturāls skaitlis.
 Definējam virkni $(E_n)$ ar attiecībām
 $$E_1 = k + 1;\\;\\; E_{n+1} = E_n^2 - kE_n+k\\;(n \\geq 1).$$
@@ -196,11 +240,17 @@ $$E_1 = k + 1;\\;\\; E_{n+1} = E_n^2 - kE_n+k\\;(n \\geq 1).$$
 Доказать, что все члены последовательности $(E_n)$
 попарно взаимно просты.
 </text></p>"""@lv ;
+    eliozo:problemYear 1998 ;
     eliozo:problem_number 5 .
 
-eliozo:EE.TST.1999.1 a eliozo:Problem ;
+eliozo:EE.TST.1999.12.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.1999" ;
+    eliozo:problemBookSection "TST.1999.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.1999.12.1" ;
     eliozo:problemText """Vai eksistē naturālu skaitļu virkne 
 $a_1,a_2,\\ldots,a_k,\\ldots$, kas apmierina abus sekojošos nosacījumus?  
 **(a)** Katrs naturāls skaitlis šajā virknē ir sastopams bezgalīgi 
@@ -248,11 +298,17 @@ $a_1^{(n)},a_2^{(n)},\\ldots,a_k^{(n)},\\ldots$
 число $T_n \\geq 1$ такое, что $a_{i+T_n}^{(n)} = a_i^{(n)}$
 при любом индексе $i$). 
 </text></p>"""@lv ;
+    eliozo:problemYear 1999 ;
     eliozo:problem_number 1 .
 
-eliozo:EE.TST.2000.2 a eliozo:Problem ;
+eliozo:EE.TST.2000.12.2 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2000" ;
+    eliozo:problemBookSection "TST.2000.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2000.12.2" ;
     eliozo:problemText """Pierādīt, ka $18$ pēc kārtas sekojošus naturālus skaitļus nevar 
 sadalīt divās grupās tā, lai skaitļu reizinājumi katrā no grupām būtu vienādi. 
 
@@ -268,11 +324,17 @@ sadalīt divās grupās tā, lai skaitļu reizinājumi katrā no grupām būtu v
 разделить на две группы так, чтобы произведения чисел в каждой из групп были
 бы равны.
 </text></p>"""@lv ;
+    eliozo:problemYear 2000 ;
     eliozo:problem_number 2 .
 
-eliozo:EE.TST.2000.4 a eliozo:Problem ;
+eliozo:EE.TST.2000.12.4 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2000" ;
+    eliozo:problemBookSection "TST.2000.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2000.12.4" ;
     eliozo:problemText """Atrast visas funkcijas $f(n)$ ar naturālām vērtībām, 
 kas definētas visiem naturāliem skaitļiem $n$, un katram 
 šādam $n$ apmierina nosacījumu
@@ -294,11 +356,17 @@ $$f(f(f(n))) + f(f(n)) + f(n) = 3n.$$</p>
 чисел $n$ и для каждого такого $n$ удовлетворяют условию
 $$f(f(f(n))) + f(f(n)) + f(n) = 3n.$$
 </text></p>"""@lv ;
+    eliozo:problemYear 2000 ;
     eliozo:problem_number 4 .
 
-eliozo:EE.TST.2000.6 a eliozo:Problem ;
+eliozo:EE.TST.2000.12.6 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2000" ;
+    eliozo:problemBookSection "TST.2000.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2000.12.6" ;
     eliozo:problemText """Sauksim bezgalīgu naturālu skaitļu virkni par 
 $F$-*virkni*, ja katrs tās loceklis, sākot ar trešo, 
 vienāds ar divu iepriekšējo locekļu summu. 
@@ -332,11 +400,17 @@ skaitā $F$-virkņu, kam nav kopīgu elementu?</p>
 <strong>(б)</strong> бесконечное<br />
 число $F$-последовательностей не имеющих общих элементов?
 </text></p>"""@lv ;
+    eliozo:problemYear 2000 ;
     eliozo:problem_number 6 .
 
-eliozo:EE.TST.2001.4 a eliozo:Problem ;
+eliozo:EE.TST.2001.12.4 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2001" ;
+    eliozo:problemBookSection "TST.2001.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2001.12.4" ;
     eliozo:problemText """Apskatām visus iespējamos reizinājumus pa $2$, pa $4$, pa $6$, $\\ldots$, 
 pa $2000$ elementiem no kopas ${\\displaystyle A = \\left\\{ \\frac{1}{2}, \\frac{1}{3},
 \\frac{1}{4}, \\ldots, \\frac{1}{2000}, \\frac{1}{2001} \\right\\}}$.
@@ -375,11 +449,17 @@ izteikts kā pirmskaitļu pakāpju reizinājums.</p>
 числа $\\underbrace{111\\ldots\\ldots11}_{\\mbox{$3 \\cdot 37^{2000}$ цифр}$ 
 в виде произведения степеней простых чисел.
 </text></p>"""@lv ;
+    eliozo:problemYear 2001 ;
     eliozo:problem_number 4 .
 
-eliozo:EE.TST.2002.1 a eliozo:Problem ;
+eliozo:EE.TST.2002.12.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2002" ;
+    eliozo:problemBookSection "TST.2002.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2002.12.1" ;
     eliozo:problemText """Firstiene (*vürstinna*) vēlas uz savas apļveida aproces izvietot $r$ rubīnus
 un $s$ safīrus tādā secībā, lai lai uz tās atrastos divi 
 tādi dārgakmeņi, no kuriem sākot skaitīt dārgakmeņus 
@@ -407,11 +487,17 @@ un tikai tad, ja skaitļi $r$ un $s$ nav savstarpēji pirmskaitļi. </p>
 получились бы одинаковые последовательности. Доказать, что желание княгини можно 
 исполнить тогда и только тогда, когда числа $r$ и $s$ не являются взаимно простыми.
 </text></p>"""@lv ;
+    eliozo:problemYear 2002 ;
     eliozo:problem_number 1 .
 
-eliozo:EE.TST.2003.2 a eliozo:Problem ;
+eliozo:EE.TST.2003.12.2 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2003" ;
+    eliozo:problemBookSection "TST.2003.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2003.12.2" ;
     eliozo:problemText """Dots naturāls skaitlis $n$. Pierādīt, ka tad, ja skaitlis 
 $\\underbrace{99\\ldots{}9}_{n}$ dalās ar $n$, tad skaitlis 
 $\\underbrace{11\\ldots{}1}_{n}$ arī dalās ar $n$. 
@@ -430,11 +516,17 @@ $\\underbrace{11\\ldots{}1}</em>{n}$ arī dalās ar $n$. </p>
 $\\underbrace{99\\ldots{}9}<em>{n}$ делится на $n$, то число 
 $\\underbrace{11\\ldots{}1}</em>{n}$ также делится на $n$. 
 </text></p>"""@lv ;
+    eliozo:problemYear 2003 ;
     eliozo:problem_number 2 .
 
-eliozo:EE.TST.2003.3 a eliozo:Problem ;
+eliozo:EE.TST.2003.12.3 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2003" ;
+    eliozo:problemBookSection "TST.2003.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2003.12.3" ;
     eliozo:problemText """Ar $\\mathbb{Z}_{0+}$ apzīmēta visu veselo nenegatīvo skaitļu kopa un
 apzīmējam $n' = n+1$ katram veselam nenegatīvam skaitlim $n$.
 Funkciju $A:\\left( \\mathbb{Z}_{0+}\\right)^3 \\rightarrow \\mathbb{Z}_{0+}$ definē ar šādām sakarībām:  
@@ -490,11 +582,17 @@ n, &amp; \\mbox{если $k=0$,}\\
 (iii) $A(k',m',n) = A(k,A(k',m,n),n)$ для любых $k,m,n$ из $\\mathbb{N}$.<br />
 Найти $A(5,3,2)$.
 </text></p>"""@lv ;
+    eliozo:problemYear 2003 ;
     eliozo:problem_number 3 .
 
-eliozo:EE.TST.2004.4 a eliozo:Problem ;
+eliozo:EE.TST.2004.12.4 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2004" ;
+    eliozo:problemBookSection "TST.2004.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2004.12.4" ;
     eliozo:problemText """Apzīmējam
 $$f(m) = \\sum_{k=1}^{m} (-1)^k \\cos \\frac{k\\pi}{2m+1}.$$
 Kuriem naturāliem $m$ vērtība $f(m)$ ir racionāls skaitlis? 
@@ -514,11 +612,17 @@ $$f(m) = \\sum_{k=1}^{m} (-1)^k \\cos \\frac{k\\pi}{2m+1}.$$
 При каких положительных целых $m$ значение $f(m)$ является
 рациональным числом? 
 </text></p>"""@lv ;
+    eliozo:problemYear 2004 ;
     eliozo:problem_number 4 .
 
-eliozo:EE.TST.2004.5 a eliozo:Problem ;
+eliozo:EE.TST.2004.12.5 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2004" ;
+    eliozo:problemBookSection "TST.2004.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2004.12.5" ;
     eliozo:problemText """Atrast visus naturālos skaitļus $n$, kuriem 
 visu skaitļa 
 $\\mbox{MKD}(1,2,\\ldots,n)$ pozitīvo dalītāju skaits vienāds ar $2^k$, kur $k$
@@ -540,11 +644,17 @@ ir kāds vesels nenegatīvs skaitlis.</p>
 $\\mbox{НОК}(1,2,\\ldots,n)$ равно $2^k$, где $k$
 некоторое неотрицательное целое число.
 </text></p>"""@lv ;
+    eliozo:problemYear 2004 ;
     eliozo:problem_number 5 .
 
-eliozo:EE.TST.2005.3 a eliozo:Problem ;
+eliozo:EE.TST.2005.12.3 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2005" ;
+    eliozo:problemBookSection "TST.2005.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2005.12.3" ;
     eliozo:problemText """Atrast visus naturālu skaitļu pārus 
 $(x,y)$, kas apmierina vienādojumu:
 $$(x+y)^x = x^y.$$
@@ -562,11 +672,17 @@ $$(x+y)^x = x^y.$$</p>
 уравнению
 $$(x+y)^x = x^y.$$
 </text></p>"""@lv ;
+    eliozo:problemYear 2005 ;
     eliozo:problem_number 3 .
 
-eliozo:EE.TST.2006.6 a eliozo:Problem ;
+eliozo:EE.TST.2006.12.6 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2006" ;
+    eliozo:problemBookSection "TST.2006.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2006.12.6" ;
     eliozo:problemText """Ar $d(n)$ apzīmējam naturāla skaitļa $n$ pozitīvu dalītāju skaitu.
 Naturālu skaitli $n$ saucam par *superdalāmu*, ja visiem 
 naturāliem $m <n$ izpildās $d(m) < d(n)$. Divus
@@ -603,11 +719,17 @@ d(m) &lt; d(n). Два сверхделимых целых числа m и n н�
 последовательных сверхделимых целых чисел, таких что число $b$ делится на
 число $a$, является конечным.
 </text></p>"""@lv ;
+    eliozo:problemYear 2006 ;
     eliozo:problem_number 6 .
 
-eliozo:EE.TST.2007.3 a eliozo:Problem ;
+eliozo:EE.TST.2007.12.3 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2007" ;
+    eliozo:problemBookSection "TST.2007.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2007.12.3" ;
     eliozo:problemText """Dots naturāls skaitlis $n$, $n \\geq 2$. 
 Pierādīt, ka, ja kādam naturālam skaitlim $b$
 skaitlis ${\\displaystyle \\frac{b^n-1}{b-1}}$
@@ -636,11 +758,17 @@ ${\\displaystyle \\frac{b^n-1}{b-1}}$
 – степень простого числа,
 то $n$ – простое число.
 </text></p>"""@lv ;
+    eliozo:problemYear 2007 ;
     eliozo:problem_number 3 .
 
-eliozo:EE.TST.2008.4 a eliozo:Problem ;
+eliozo:EE.TST.2008.12.4 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2008" ;
+    eliozo:problemBookSection "TST.2008.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2008.12.4" ;
     eliozo:problemText """Virknes $(G_n)$ pirmie locekļi ir $G_0 = 0$ un $G_1 = 1$, un
 katram $n \\geq 2$ ir spēkā $G_n = G_{n-1} + G_{n-2} + 1$. 
 Pierādīt, ka jebkuram naturālam skaitlim $m$ šajā virknē būs divi 
@@ -662,11 +790,17 @@ pēc kārtas sekojoši locekļi, kuri abi dalās ar $m$. </p>
 каждого положительного целого числа $m$ найдутся в последовательности 
 два последовательных члена, которые оба делятся на $m$. 
 </text></p>"""@lv ;
+    eliozo:problemYear 2008 ;
     eliozo:problem_number 4 .
 
-eliozo:EE.TST.2009.2 a eliozo:Problem ;
+eliozo:EE.TST.2009.12.2 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2009" ;
+    eliozo:problemBookSection "TST.2009.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2009.12.2" ;
     eliozo:problemText """Sauksim galīgu naturālo skaitļu kopu par *izcilu*, ja katri divi tās elementi 
 ir savstarpēji pirmskaitļi. Galīgu naturālu skaitļu kopu sauc par *skaistu*, ja 
 katras tās netukšas apakškopas vidējais aritmētiskais ir vesels skaitlis.  
@@ -710,11 +844,17 @@ $n$-элементное величесвенное подмножество?<br
 <em>Примечание.</em> Mножество не содержит повторяющихся элементов. Множество $Y$ называют <em>подмножеством</em> 
 множества $X$, если каждый элемент множества $Y$ является элементом множества $X$. 
 </text></p>"""@lv ;
+    eliozo:problemYear 2009 ;
     eliozo:problem_number 2 .
 
-eliozo:EE.TST.2009.6 a eliozo:Problem ;
+eliozo:EE.TST.2009.12.6 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2009" ;
+    eliozo:problemBookSection "TST.2009.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2009.12.6" ;
     eliozo:problemText """Ar $c(n)$ apzīmējam naturāla skaitļa $n$ lielāko dalītāju, kas nepārsniedz $\\sqrt{n}$, bet 
 ar $s(n)$ - mazāko no veseliem skaitļiem $x$, kuriem $n < x$ un reizinājums $nx$ dalās ar kādu 
 veselu $y$, kur $n < y < x$. Pierādīt, ka jebkuram $n$
@@ -736,11 +876,17 @@ $$s(n) = (c(n) + 1) \\cdot \\left( \\frac{n}{c(n)} + 1 \\right).$$</p>
 целое число $y$, где $n &lt; y &lt; x$. Доказать, что при любом $n$
 $$s(n) = (c(n) + 1) \\cdot \\left( \\frac{n}{c(n)} + 1 \\right).$$
 </text></p>"""@lv ;
+    eliozo:problemYear 2009 ;
     eliozo:problem_number 6 .
 
-eliozo:EE.TST.2010.1 a eliozo:Problem ;
+eliozo:EE.TST.2010.12.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2010" ;
+    eliozo:problemBookSection "TST.2010.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2010.12.1" ;
     eliozo:problemText """Naturāliem skaitļiem $a,b$ apzīmējam ${\\displaystyle a \\ast b = \\frac{a-b}{\\text{LKD}(a,b)}}$.
 Dots naturāls skaitlis $n$. Pierādīt, ka sekojošie nosacījumi ir ekvivalenti (vai nu abi reizē izpildās vai neizpildās):  
 (i) $\\text{LKD}(n,n \\ast m) = 1$ katram naturālam $m$, kas mazāks par $n$;  
@@ -764,11 +910,17 @@ Dots naturāls skaitlis $n$. Pierādīt, ka sekojošie nosacījumi ir ekvivalent
 (i) $\\mbox{НОД}(n,n \\ast m) = 1$ для каждого положительного целого числа $m$, меньшего числа $n$;<br />
 (ii) $n = p^k$, где $p$ - некоторое простое число, а $k$ - неотрицательное целое число. 
 </text></p>"""@lv ;
+    eliozo:problemYear 2010 ;
     eliozo:problem_number 1 .
 
-eliozo:EE.TST.2011.2 a eliozo:Problem ;
+eliozo:EE.TST.2011.12.2 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2011" ;
+    eliozo:problemBookSection "TST.2011.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2011.12.2" ;
     eliozo:problemText """Dots naturāls skaitlis $n$. Pierādīt, ka jebkuram skaitļa $1 + 2 + \\ldots + n$ dalītājam $m$, kur
 $m \\geq n$, kopu $\\{1,2,\\ldots,n \\}$ var sadalīt vairākās apakškopās bez kopīgiem elementiem tā, lai 
 katrā apakškopā elementu summa būtu vienāda ar $m$.
@@ -789,11 +941,17 @@ $1 + 2 + \\ldots + n$, где
 $m \\geq n$, можно множество ${1,2,\\ldots,n }$ разбить на непересекающиеся подмножества так, чтобы
 сумма элементов каждого подмножества равнялась $m$.
 </text></p>"""@lv ;
+    eliozo:problemYear 2011 ;
     eliozo:problem_number 2 .
 
-eliozo:EE.TST.2011.3 a eliozo:Problem ;
+eliozo:EE.TST.2011.12.3 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2011" ;
+    eliozo:problemBookSection "TST.2011.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2011.12.3" ;
     eliozo:problemText """Vai eksistē visu veselo skaitļu pāriem definēta darbība $\\ast$, kas vienlaikus apmierina šādus
 nosacījumus:  
 (1) $(x \\ast y) \\ast z = x \\ast (y \\ast z)$ jebkuriem veseliem $x,y,z$;  
@@ -815,11 +973,17 @@ nosacījumus:<br />
 (1) $(x \\ast y) \\ast z = x \\ast (y \\ast z)$ для произвольных целых чисел $x,y,z$;<br />
 (2) $x \\ast x \\ast y = y \\ast x \\ast x = y$ для произвользных целых числел $x,y$. 
 </text></p>"""@lv ;
+    eliozo:problemYear 2011 ;
     eliozo:problem_number 3 .
 
-eliozo:EE.TST.2011.5 a eliozo:Problem ;
+eliozo:EE.TST.2011.12.5 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2011" ;
+    eliozo:problemBookSection "TST.2011.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2011.12.5" ;
     eliozo:problemText """Pierādīt, ka ja skaitļi $n$ un $k$ ir naturāli skaitļi, kuriem  
 $1 < k < n-1$, tad skaitlis $\\ldots = \\frac{n!}{k!(n-k)!}$ dalās vismaz ar diviem dažādiem pirmskaitļiem.
 (Pieraksts $x!$ apzīmē reizinājumu $1 \\cdot 2 \\cdot \\ldots \\cdot x$.)
@@ -837,11 +1001,17 @@ $1 &lt; k &lt; n-1$, tad skaitlis $\\ldots = \\frac{n!}{k!(n-k)!}$ dalās vismaz
 $1 &lt; k &lt; n-1$, то число $\\ldots = \\frac{n!}{k!(n-k)!}$ делится по меньшей мере на
 два различных простых числа. (Запись $x!$ обозначает произведение $1 \\cdot 2 \\cdot \\ldots \\cdot x$.) 
 </text></p>"""@lv ;
+    eliozo:problemYear 2011 ;
     eliozo:problem_number 5 .
 
-eliozo:EE.TST.2012.1 a eliozo:Problem ;
+eliozo:EE.TST.2012.12.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2012" ;
+    eliozo:problemBookSection "TST.2012.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2012.12.1" ;
     eliozo:problemText """Pierādīt, ka jebkuram naturālam skaitlim $k$ eksistē $k$ pa pāriem dažādi veseli skaitļi, 
 kuru kvadrātu summa ir vienāda ar šo pašu skaitļu kubu summu. 
 
@@ -855,11 +1025,17 @@ kuru kvadrātu summa ir vienāda ar šo pašu skaitļu kubu summu. </p>
 Доказать, что для каждого положительного целого числа $k$ найдутся $k$ попарно различных целых чисел, 
 сумма квадратов которых равняется сумме их кубов. 
 </text></p>"""@lv ;
+    eliozo:problemYear 2012 ;
     eliozo:problem_number 1 .
 
-eliozo:EE.TST.2012.2 a eliozo:Problem ;
+eliozo:EE.TST.2012.12.2 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2012" ;
+    eliozo:problemBookSection "TST.2012.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2012.12.2" ;
     eliozo:problemText """Dotam naturālam skaitlim $n$ izvēlas skaitļus $a_0,a_1,\\ldots$ tā, lai izpildītos 
 sekojoši nosacījumi:  
 (1) $a_i = a_{i+n}$ jebkuram $i$;  
@@ -893,11 +1069,17 @@ $a_0,a_1,\\ldots$ ir visi vienādi? </p>
 При каких целых числах $n&gt;1$ это возможно только тогда, когда числа 
 $a_0,a_1,\\ldots$ все равны? 
 </text></p>"""@lv ;
+    eliozo:problemYear 2012 ;
     eliozo:problem_number 2 .
 
-eliozo:EE.TST.2013.1 a eliozo:Problem ;
+eliozo:EE.TST.2013.12.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2013" ;
+    eliozo:problemBookSection "TST.2013.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2013.12.1" ;
     eliozo:problemText """Atrast visus pirmskaitļus $p$, kuriem eksistē naturāls skaitlis $m$ 
 un nenegatīvi veseli skaitļi $a_0,a_1,\\ldots,a_m$ tādi, ka jebkurš no skaitļiem 
 $a_0,a_1,\\ldots,a_m$ ir mazāks par $p$, un 
@@ -931,11 +1113,17 @@ a_0 + a_1p + \\ldots + a_{m-1}p^{m-1} + a_mp^m = 2013,\\
 a_0 + a_1 + \\ldots + a_{m-1} + a_m = 11.
 \\end{array} \\right.$$
 </text></p>"""@lv ;
+    eliozo:problemYear 2013 ;
     eliozo:problem_number 1 .
 
-eliozo:EE.TST.2013.5 a eliozo:Problem ;
+eliozo:EE.TST.2013.12.5 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2013" ;
+    eliozo:problemBookSection "TST.2013.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2013.12.5" ;
     eliozo:problemText """Sauksim galīgu veselu skaitļu sarakstu $(b_m,b_{m+1},\\ldots,b_n)$ par *pilnvērtīgu*, 
 ja izpildās sekojoši nosacījumi:  
 (1) Eksistē tāds vesels skaitlis $a>1$, ka jebkuram indeksam 
@@ -979,11 +1167,17 @@ $k = m, m+1,\\ldots,n$
 кортежей не существует, и найти все полноценные 
 кортежи с максимальным количеством элементов.
 </text></p>"""@lv ;
+    eliozo:problemYear 2013 ;
     eliozo:problem_number 5 .
 
-eliozo:EE.TST.2014.6 a eliozo:Problem ;
+eliozo:EE.TST.2014.12.6 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2014" ;
+    eliozo:problemBookSection "TST.2014.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2014.12.6" ;
     eliozo:problemText """Atrast visus naturālos skaitļus $n$, kuriem vienādojumam 
 $x^2+y^2+z^2 = nxyz$ eksistē 
 atrisinājums veselos pozitīvos skaitļos.
@@ -1002,11 +1196,17 @@ Leia kõik naturaalarvud n, mille korral võrrandil
 $x^2+y^2+z^2 = nxyz$ leidub
 positiivseid täisarvulisi lahendeid.
 </text></p>"""@lv ;
+    eliozo:problemYear 2014 ;
     eliozo:problem_number 6 .
 
-eliozo:EE.TST.2015.1 a eliozo:Problem ;
+eliozo:EE.TST.2015.12.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2015" ;
+    eliozo:problemBookSection "TST.2015.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2015.12.1" ;
     eliozo:problemText """Dots naturāls skaitlis $n$, $n \\geq 5$, un $a_1, a_2, \\ldots, a_n$
 ir tādi reāli skaitļi, ka visas iespējamās summas $a_i + a_j$,
 kur $1 \\leq i <j \\leq n$ veido aritmētisku progresiju ar 
@@ -1034,11 +1234,17 @@ $\\frac{n(n − 1)}{2}$
 järjestikust liiget mingis järjestuses võetuna. Tõesta, et 
 $a_1 = a_2 = \\ldots = a_n$.
 </text></p>"""@lv ;
+    eliozo:problemYear 2015 ;
     eliozo:problem_number 1 .
 
-eliozo:EE.TST.2015.3 a eliozo:Problem ;
+eliozo:EE.TST.2015.12.3 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2015" ;
+    eliozo:problemBookSection "TST.2015.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2015.12.3" ;
     eliozo:problemText """Dots fiksēts pozitīvs racionāls skaitlis $q$. 
 Sauksim skaitli $x$ par *harizmatisku*, ja 
 eksistē naturāls $n$ un naturāli $\\alpha_1,\\alpha_2,\\ldots,\\alpha_n$, ka
@@ -1081,11 +1287,17 @@ $$x = (q + 1)^{\\alpha_1}\\cdot (q + 2)^{\\alpha_2}\\cdot
 <strong>(b)</strong> Kas iga $q$ korral võib kindlalt väita, et iga karismaatilise arvu $x$ korral
 on ka arv $x + 1$ karismaatiline?
 </text></p>"""@lv ;
+    eliozo:problemYear 2015 ;
     eliozo:problem_number 3 .
 
-eliozo:EE.TST.2015.7 a eliozo:Problem ;
+eliozo:EE.TST.2015.12.7 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2015" ;
+    eliozo:problemBookSection "TST.2015.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2015.12.7" ;
     eliozo:problemText """Pierādīt, ka jebkuram naturālam $a$ un pirmskaitlim $p$
 ir naturāls skaitlis $n$, ka skaitlī $p^n$ ir 
 $a$ vienādi, blakus novietoti cipari. 
@@ -1103,11 +1315,17 @@ Tõesta, et iga positiivse täisarvu $a$ ja algarvu $p$ jaoks
 leidub naturaalarv $n$,
 mille korral mingid $a$ kõrvutiasuvat numbrit arvus $p^n$ on võrdsed.
 </text></p>"""@lv ;
+    eliozo:problemYear 2015 ;
     eliozo:problem_number 7 .
 
-eliozo:EE.TST.2016.11 a eliozo:Problem ;
+eliozo:EE.TST.2016.12.11 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2016" ;
+    eliozo:problemBookSection "TST.2016.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2016.12.11" ;
     eliozo:problemText """Atrast visus naturālos skaitļus $n$, kuriem 
 $(n^2+11n−4)\\cdot{}n!+33\\cdot{}13^n+4$
 ir kāda vesela skaitļa kvadrāts.
@@ -1125,11 +1343,17 @@ Leia kõik positiivsed täisarvud $n$, mille korral arv
 $(n^2+11n−4)\\cdot{}n!+33\\cdot{}13^n+4$
 on mingi täisarvu ruut.
 </text></p>"""@lv ;
+    eliozo:problemYear 2016 ;
     eliozo:problem_number 11 .
 
-eliozo:EE.TST.2016.2 a eliozo:Problem ;
+eliozo:EE.TST.2016.12.2 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2016" ;
+    eliozo:problemBookSection "TST.2016.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2016.12.2" ;
     eliozo:problemText """Dots pirmskaitlis $p$. Atrast visus veselu (ne noteikti pozitīvu)
 skaitļu trijniekus $(a, b, c)$, kuriem
 $a^bb^cc^a = p$.
@@ -1148,11 +1372,17 @@ $a^bb^cc^a = p$.</p>
 целых чисел (не обязательно положительных), при которых
 $a^bb^cc^a = p$.
 </text></p>"""@lv ;
+    eliozo:problemYear 2016 ;
     eliozo:problem_number 2 .
 
-eliozo:EE.TST.2016.9 a eliozo:Problem ;
+eliozo:EE.TST.2016.12.9 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2016" ;
+    eliozo:problemBookSection "TST.2016.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2016.12.9" ;
     eliozo:problemText """Dots naturāls skaitlis $n$, kuram ir par $\\sqrt{n}$ mazāks
 skaitlis, kurš nav $n$ dalītājs. 
 Ar $(a_1, \\ldots, a_n)$ apzīmējam patvaļīgu $1, \\ldots, n$
@@ -1214,11 +1444,17 @@ osajärjendiks nimetatakse suvalist järjendit
 kujul $(x_{k_1}, x_{k_2},\\ldots, x_{k_m})$, 
 kus $1 \\leq k_1 &lt; k2 &lt; \\ldots &lt; k_m \\leq n$.
 </text></p>"""@lv ;
+    eliozo:problemYear 2016 ;
     eliozo:problem_number 9 .
 
-eliozo:EE.TST.2017.1 a eliozo:Problem ;
+eliozo:EE.TST.2017.12.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2017" ;
+    eliozo:problemBookSection "TST.2017.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2017.12.1" ;
     eliozo:problemText """Vai eksistē divi naturāli skaitļi, kas abi 
 ir skaitļa $5$ veselas pakāpes, kurus pierakstot 
 vienu aiz otra, izveidojas skaitlis, kurš arī ir 
@@ -1240,11 +1476,17 @@ skaitļa $5$ vesela pakāpe. </p>
 степенями числа $5$, при написании которых подряд друг 
 за другом получим число, также являющееся положительной степенью числа $5$?
 </text></p>"""@lv ;
+    eliozo:problemYear 2017 ;
     eliozo:problem_number 1 .
 
-eliozo:EE.TST.2017.11 a eliozo:Problem ;
+eliozo:EE.TST.2017.12.11 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2017" ;
+    eliozo:problemBookSection "TST.2017.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2017.12.11" ;
     eliozo:problemText """Katram naturālam skaitlim $k$ apzīmējam ar $S(k)$ skaitļa $k$ decimālpieraksta
 ciparu summu. Atrast visus polinomus $P(x)$ ar veseliem koeficientiem, ka 
 jebkuram naturālam $n \\geq 2016$ veselais skaitlis $P(n)$ ir pozitīvs un izpildās vienādība
@@ -1269,11 +1511,17 @@ $S(P(n)) = P(S(n))$.</p>
 $n \\geq 2016$ целое число $P(n)$ положительно и выполняется равенство
 $S(P(n)) = P(S(n))$.
 </text></p>"""@lv ;
+    eliozo:problemYear 2017 ;
     eliozo:problem_number 11 .
 
-eliozo:EE.TST.2017.7 a eliozo:Problem ;
+eliozo:EE.TST.2017.12.7 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2017" ;
+    eliozo:problemBookSection "TST.2017.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2017.12.7" ;
     eliozo:problemText """Dots $n$ –– naturāls skaitlis. Cik dažādos veidos var ierakstīt tabulas $n \\times n$ 
 katrā šūnā vienu skaitli $0$, $1$, $2$, $3$,
 $4$ vai $5$ tā, lai  
@@ -1308,11 +1556,17 @@ $4$, $5$ так, что<br />
 <strong>(б)</strong> сумма чисел каждой строки делится на $2$, сумма чисел каждого 
 столбца делится на $3$, а сумма чисел каждой из двух диагоналей делится на $6$?
 </text></p>"""@lv ;
+    eliozo:problemYear 2017 ;
     eliozo:problem_number 7 .
 
-eliozo:EE.TST.2018.12 a eliozo:Problem ;
+eliozo:EE.TST.2018.12.12 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2018" ;
+    eliozo:problemBookSection "TST.2018.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2018.12.12" ;
     eliozo:problemText """Sauksim polinomu $P(x)$ par *vienkāršu*, ja katrs no tā koeficientiem pieder kopai 
 $\\{-1, 0, 1\\}$.
 Dots vesels skaitlis $n$, $n > 1$. Atrast mazāko skaitu locekļu ar koeficientiem, kas atšķiras 
@@ -1338,11 +1592,17 @@ veseliem argumentiem dalās ar $n$. </p>
 с отличным от нуля коэффициентом в простом многочлене $n$-ой степени,
 у которого все значения в целочисленных точках делятся на $n$.
 </text></p>"""@lv ;
+    eliozo:problemYear 2018 ;
     eliozo:problem_number 12 .
 
-eliozo:EE.TST.2018.6 a eliozo:Problem ;
+eliozo:EE.TST.2018.12.6 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2018" ;
+    eliozo:problemBookSection "TST.2018.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2018.12.6" ;
     eliozo:problemText """Sauksim naturālu skaitli $n$, kurā neviens cipars neatkārtojas, par 
 *spilgtu*, ja tas ir vai nu viencipara, vai arī skaitlim $n$ ir dalītājs, 
 ko var iegūt, no $n$ pieraksta izsvītrojot vienu ciparu, un šis dalītājs
@@ -1368,11 +1628,17 @@ arī pats ir <em>spilgts</em> skaitlis. Atrast pašu lielāko spilgto naturālo 
 который при этом сам является ярким. Найти самое большое яркое целое
 число. (Полагаем, что числа не начинаются с нуля.)
 </text></p>"""@lv ;
+    eliozo:problemYear 2018 ;
     eliozo:problem_number 6 .
 
-eliozo:EE.TST.2018.8 a eliozo:Problem ;
+eliozo:EE.TST.2018.12.8 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2018" ;
+    eliozo:problemBookSection "TST.2018.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2018.12.8" ;
     eliozo:problemText """Atrast visus veselos skaitļus $k \\geq 5$, kuriem eksistē naturāls $n$, 
 kuram ir tieši $k$ pozitīvi dalītāji
 $1 = d_1 < d_2 < \\ldots < d_k = n$, turklāt $d_2d_3 + d_3d_5 + d_5d_2 = n$.
@@ -1391,11 +1657,17 @@ $1 = d_1 &lt; d_2 &lt; \\ldots &lt; d_k = n$, turklāt $d_2d_3 + d_3d_5 + d_5d_2
 положительное число $n$, у которого всего ровно $k$ положительных делителей
 $1 = d_1 &lt; d_2 &lt; \\ldots &lt; d_k = n$, причём $d_2d_3 + d_3d_5 + d_5d_2 = n$.
 </text></p>"""@lv ;
+    eliozo:problemYear 2018 ;
     eliozo:problem_number 8 .
 
-eliozo:EE.TST.2019.1 a eliozo:Problem ;
+eliozo:EE.TST.2019.12.1 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2019" ;
+    eliozo:problemBookSection "TST.2019.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2019.12.1" ;
     eliozo:problemText """Uz tāfeles uzrakstīts kāds naturāls skaitlis $n$. 
 Ats un Pets spēlē sekojošu spēli. Ats atrod visus
 dažādos veidus, kādos skaitli $n$ var izteikt 
@@ -1461,11 +1733,17 @@ $n$ в виде произведения целых чисел, больших $
 <em>Примечание.</em> Представлением числа n произведением считают и 
 представление, состоящее из единственного множителя $n$.
 </text></p>"""@lv ;
+    eliozo:problemYear 2019 ;
     eliozo:problem_number 1 .
 
-eliozo:EE.TST.2019.10 a eliozo:Problem ;
+eliozo:EE.TST.2019.12.10 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2019" ;
+    eliozo:problemBookSection "TST.2019.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2019.12.10" ;
     eliozo:problemText """Dots vesels skaitlis $n \\geq 3$. Pierādīt, ka 
 eksistē kopa $S$, kurā ir $2n$ dažādi naturāli skaitļi, 
 kurai pie katra $m = 2, 3, \\ldots n$ var izvēlēties
@@ -1491,11 +1769,17 @@ elementu summas izrādītos vienādas.</p>
 ровно $m$ элементов так, чтобы сумма
 выбранных и сумма невыбранных элементов оказались равны.
 </text></p>"""@lv ;
+    eliozo:problemYear 2019 ;
     eliozo:problem_number 10 .
 
-eliozo:EE.TST.2019.4 a eliozo:Problem ;
+eliozo:EE.TST.2019.12.4 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2019" ;
+    eliozo:problemBookSection "TST.2019.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2019.12.4" ;
     eliozo:problemText """Sauksim reālu skaitli $r$ par *interesantu*, ja 
 $r = a + b\\sqrt{2}$, kur $a$ un $b$ — 
 kaut kādi veseli skaitļi. Doti $A(x)$ un $B(x)$ — 
@@ -1547,11 +1831,17 @@ $$a_n x^n + a_{n-1}x^{n-1} + \\ldots + a_1x + a_0,$$
 где числа $a_n, a_{n-1},\\ldots, a_1, a_0$ — 
 коэффициенты, а $a_0$ — свободный член.
 </text></p>"""@lv ;
+    eliozo:problemYear 2019 ;
     eliozo:problem_number 4 .
 
-eliozo:EE.TST.2019.9 a eliozo:Problem ;
+eliozo:EE.TST.2019.12.9 a eliozo:Problem ;
+    eliozo:country "EE" ;
+    eliozo:olympiad "EE.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "TST.2019" ;
+    eliozo:problemBookSection "TST.2019.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "EE.TST.2019.12.9" ;
     eliozo:problemText """Atrast visus dažādu naturālu skaitļu pārus $(n,k)$, 
 kuriem atradīsies tāds naturāls skaitlis $s$, 
 ka skaitļiem $sn$ un $sk$ ir vienāds pozitīvu dalītāju skaits. 
@@ -1571,5 +1861,6 @@ ka skaitļiem $sn$ un $sk$ ir vienāds pozitīvu dalītāju skaits. </p>
 что у чисел $sn$ и $sk$
 одинаковое количество положительных делителей.
 </text></p>"""@lv ;
+    eliozo:problemYear 2019 ;
     eliozo:problem_number 9 .
 

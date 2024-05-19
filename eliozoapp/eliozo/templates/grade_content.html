@@ -7,16 +7,17 @@
             <div class="container">
                 {{jsonfile}}
             </div>
-            <h2> {{ year }}.gada {{ grade }}. klases uzdevumi </h2>
-            <p> Visi uzdevumi, kas ir zem šīs olimpiādes, klases un gada </p>
+           {% if grade == '-1' %}
+             <h2> {{ country }}.{{ olympiad }}: {{ year }}.gada uzdevumi </h2>
+           {% else %}
+            <h2> {{ country }}.{{ olympiad }}: {{ year }}.gada {{ grade }}. klases uzdevumi </h2>
+           {% endif %}
             {% for problem in problems %}
 
             <h3 class="problem">{{ problem.problemid }}</h3>
 
             {{ problem.text | safe }}
-            {% if problem.imagefile != '' %}
-            <p><img src="http://www.dudajevagatve.lv/static/eliozo/images/{{ problem.imagefile }}" width="250"/></p>
-            {% endif %}
+
             <p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">
                     Vairāk...
             </a></p>

@@ -174,7 +174,7 @@ def md_to_rdf(md_file_path, ttl_file_path):
     g.bind("skos", SKOS)
     g.bind("eliozo", ELIOZO)
 
-    olympiad_problem_id = re.compile(r"([A-Z]{2})\.(\w+)\.(\d+[A-Z]?)\.(\d+)\.(\d+)") # LV.AO.2000.7.1
+    olympiad_problem_id = re.compile(r"([A-Z]{2})\.(\w+)\.(\d+[A-Z]?)\.([0-9_]+)\.(\d+)") # LV.AO.2000.7.1
     book_problem_id = re.compile(r"([A-Z0-9]*)\.(.*)\.(\d+)")  # BBK2012.P1.1 or BBK2012.P1.E2.1 or similar
 
     for i, (title,section) in enumerate(sections):
@@ -189,7 +189,12 @@ def md_to_rdf(md_file_path, ttl_file_path):
                 year = int(year[0:4])
             else:
                 year = int(year)
-            grade = int(match_id.group(4))
+            rawGrade = match_id.group(4)
+            grade_underscore = rawGrade.find("_")
+            if grade_underscore == -1:
+                grade = int(rawGrade)
+            else:
+                grade = int(rawGrade[0:grade_underscore])
             problem_number = match_id.group(5)
 
             add_problem_literal_prop(g, problem_node, 'country', country)

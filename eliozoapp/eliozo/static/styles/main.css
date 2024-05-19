@@ -81,8 +81,9 @@ h2 {
     text-align: center;
 }
 
-div.solutionDiv h2 {
-    color: blue;
+div#solutionDiv > h2 {
+    font-size: 120%;
+    color: #1565C0;
     text-align: left;
 }
 

@@ -12,7 +12,7 @@
             <table>
             {% for year in all_years %}
             <tr>
-                <th style="font-weight:bold">{{ year }}:&nbsp;</th>
+                <th style="font-weight:bold"><a href="{{ url_for('getGrades',year=year,grade=-1,country=country_id,olympiad=olympiad_id) }}">{{ year }}</a>:&nbsp;</th>
                 <td>
                     {% for grade in range(5,13) %}
                     {% if all_grades[year][grade-5] != 'NA' %}

@@ -1,9 +1,14 @@
 @prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-eliozo:LT.TST.2008.1 a eliozo:Problem ;
+eliozo:LT.TST.2008.12.12.1 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2008" ;
+    eliozo:problemBookSection "TST.2008.12.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2008.12.12.1" ;
     eliozo:problemText """Atrodiet visus veselu pozitīvu skaitļu trijniekus $(x, y, z)$, kas apmierina vienādību $1 + 4^x + 4^y = z^2$.
 
 <text lang="lt">
@@ -20,11 +25,18 @@ Raskite visus sveikųjų teigiamų skaičių trejetus $(x, y, z)$, tenkinančius
 <!--
 questionType=FindAll
 -->"""@lv ;
-    eliozo:problem_number 1 .
+    eliozo:problemYear 2008 ;
+    eliozo:problem_number 1,
+        12 .
 
-eliozo:LT.TST.2009.1 a eliozo:Problem ;
+eliozo:LT.TST.2009.12.1 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2009" ;
+    eliozo:problemBookSection "TST.2009.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2009.12.1" ;
     eliozo:problemText """Dots vienādojums
 $$x^3 + x^2 = 2^y + 16.$$
 **(a)** Atrodiet kādu vienu šī vienādojuma naturālu atrisinājumu $x$ un $y$ pāri $(x;y)$  
@@ -66,11 +78,17 @@ kad daugiau (jokių) sprendinių nėra.
 <!--
 questionType=FindExample,FindAll
 -->"""@lv ;
+    eliozo:problemYear 2009 ;
     eliozo:problem_number 1 .
 
-eliozo:LT.TST.2010.1 a eliozo:Problem ;
+eliozo:LT.TST.2010.12.1 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2010" ;
+    eliozo:problemBookSection "TST.2010.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2010.12.1" ;
     eliozo:problemText """Atrodiet visus naturālu skaitļu trijniekus $(x,y,u)$, 
 kas apmierina vienādojumu sistēmu
 $$\\left\\{ 
@@ -116,11 +134,17 @@ x^5 + y^5 = u^5 + 12.
 <!--
 questionType=FindAll
 -->"""@lv ;
+    eliozo:problemYear 2010 ;
     eliozo:problem_number 1 .
 
-eliozo:LT.TST.2011.4 a eliozo:Problem ;
+eliozo:LT.TST.2011.12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2011" ;
+    eliozo:problemBookSection "TST.2011.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2011.12.4" ;
     eliozo:problemText """Atšķirīgi naturāli skaitļi $s_1,s_2,\\ldots,s_n$ apmierina vienādību
 $$\\left( 1 - \\frac{1}{s_1} \\right)
 \\left( 1 - \\frac{1}{s_2} \\right) \\ldots
@@ -160,11 +184,17 @@ Kokia yra mažiausia galima $n$ reikšmė?
 <!--
 questionType=FindOptimal
 -->"""@lv ;
+    eliozo:problemYear 2011 ;
     eliozo:problem_number 4 .
 
-eliozo:LT.TST.2011.6 a eliozo:Problem ;
+eliozo:LT.TST.2011.12.6 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2011" ;
+    eliozo:problemBookSection "TST.2011.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2011.12.6" ;
     eliozo:problemText """Doti naturāli skaitļi $m \\geq 2$ un $n$. 
 Kopu $S(m,n)$ veido visi polinomi $P(x)$,
 kuru koeficienti pieder kopai 
@@ -210,11 +240,17 @@ Raskite aibės $S(m,n)$ elementų skaičių, kai<br />
 <!--
 questionType=FindCount
 -->"""@lv ;
+    eliozo:problemYear 2011 ;
     eliozo:problem_number 6 .
 
-eliozo:LT.TST.2012.1 a eliozo:Problem ;
+eliozo:LT.TST.2012.12.1 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2012" ;
+    eliozo:problemBookSection "TST.2012.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2012.12.1" ;
     eliozo:problemText """Doti naturāli skaitļi  
 $a_1,a_2,\\ldots,a_{14}$, kuri visi ir lielāki par $4$.
 Uz tāfeles uzrakstām $196$ (ne obligāti dažādas) summas 
@@ -257,11 +293,17 @@ kombinacijos $00,01,\\ldots,98,99$?
 <!--
 questionType=ProveDisprove
 -->"""@lv ;
+    eliozo:problemYear 2012 ;
     eliozo:problem_number 1 .
 
-eliozo:LT.TST.2012.4 a eliozo:Problem ;
+eliozo:LT.TST.2012.12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2012" ;
+    eliozo:problemBookSection "TST.2012.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2012.12.4" ;
     eliozo:problemText """Ikvienam veselajam skaitlim $m$ lielāko vesela skaitļa kubu, 
 kas nepārsniedz $m$, apzīmējam $f(m)$. 
 Piemēram, $f(26) = 8$ un $f(27) = 27$. 
@@ -330,11 +372,17 @@ $n \\geq 1$.
 <!--
 questionType=FindExample,FindAll
 -->"""@lv ;
+    eliozo:problemYear 2012 ;
     eliozo:problem_number 4 .
 
-eliozo:LT.TST.2012.6 a eliozo:Problem ;
+eliozo:LT.TST.2012.12.6 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2012" ;
+    eliozo:problemBookSection "TST.2012.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2012.12.6" ;
     eliozo:problemText """Naturālo skaitļu kopa sadalīta $k$ savstarpēji nešķeļošās
 apakškopās $A_1,A_2,\\ldots,A_k$ tā, ka 
 fiksētam naturālam skaitlim $n \\geq 15$ 
@@ -385,11 +433,17 @@ $k \\geq 4$.
 <!--
 questionType=Prove,Prove
 -->"""@lv ;
+    eliozo:problemYear 2012 ;
     eliozo:problem_number 6 .
 
-eliozo:LT.TST.2013.2 a eliozo:Problem ;
+eliozo:LT.TST.2013.12.2 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2013" ;
+    eliozo:problemBookSection "TST.2013.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2013.12.2" ;
     eliozo:problemText """Naturāli skaitļi $a$, $b$, $c$ un $d$ ir tādi, 
 ka $ac + bd$ dalās ar $a^2 + b^2$.
 Vai skaitļu $a^2 + b^2$ un 
@@ -431,11 +485,17 @@ $c^2 + d^2$ didžiausias bendras daliklis būti lygus:<br />
 <!--
 questionType=ProveDisprove
 -->"""@lv ;
+    eliozo:problemYear 2013 ;
     eliozo:problem_number 2 .
 
-eliozo:LT.TST.2013.4 a eliozo:Problem ;
+eliozo:LT.TST.2013.12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2013" ;
+    eliozo:problemBookSection "TST.2013.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2013.12.4" ;
     eliozo:problemText """Atrodiet visus tādus polinomus $P(x)$ ar 
 reāliem koeficientiem, ka ja $P(m)$ ir vesels, tad arī 
 $m$ ir vesels skaitlis.
@@ -462,11 +522,17 @@ tai ir $m$ yra sveikasis skaičius.
 <!--
 questionType=FindAll
 -->"""@lv ;
+    eliozo:problemYear 2013 ;
     eliozo:problem_number 4 .
 
-eliozo:LT.TST.2013.6 a eliozo:Problem ;
+eliozo:LT.TST.2013.12.6 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2013" ;
+    eliozo:problemBookSection "TST.2013.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2013.12.6" ;
     eliozo:problemText """Četrinieku $(x,y,z,n)$, kur $x,y,z$ ir pozitīvi reāli skaitļi, 
 bet $n$ – naturāls skaitlis, sauksim par *pilnīgu*, ja
 $$\\sqrt{x} + \\sqrt{y} + \\sqrt{z} = 1$$
@@ -515,11 +581,17 @@ kuriame $n &gt; 2013$.<br />
 <!--
 questionType=FindExample,FindAll
 -->"""@lv ;
+    eliozo:problemYear 2013 ;
     eliozo:problem_number 6 .
 
-eliozo:LT.TST.2014.2 a eliozo:Problem ;
+eliozo:LT.TST.2014.12.2 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2014" ;
+    eliozo:problemBookSection "TST.2014.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2014.12.2" ;
     eliozo:problemText """Galīgai kopai $A$ piemīt tāda īpašība: jebkuru 
 $6$ tās dažādu elementu summa nedalās ar $6$.  
 **(a)** Atrodiet kaut vienu tādu kopu $A$,
@@ -560,11 +632,17 @@ skaičių?
 <!--
 questionType=FindExample,ProveDisprove
 -->"""@lv ;
+    eliozo:problemYear 2014 ;
     eliozo:problem_number 2 .
 
-eliozo:LT.TST.2014.4 a eliozo:Problem ;
+eliozo:LT.TST.2014.12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2014" ;
+    eliozo:problemBookSection "TST.2014.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2014.12.4" ;
     eliozo:problemText """**(a)** Vai eksistē tāds naturāls skaitlis $n$, 
 ka skaitļa $2^n$ pēdējais cipars ir $6$, bet citu ciparu summa ir vienāda ar $2$?  
 **(b)** Vai eksistē tādi naturāli skaitļi $a$ un 
@@ -601,11 +679,17 @@ suma yra lygi $3$?
 <!--
 questionType=ProveDisprove
 -->"""@lv ;
+    eliozo:problemYear 2014 ;
     eliozo:problem_number 4 .
 
-eliozo:LT.TST.2014.5 a eliozo:Problem ;
+eliozo:LT.TST.2014.12.5 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2014" ;
+    eliozo:problemBookSection "TST.2014.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2014.12.5" ;
     eliozo:problemText """Doti reāli skaitļi $x$ un $y$. 
 Apzīmēsim $s_1 = x + y$, $s_2 = x^2 + y^2$,
 $s_3 = x^3 + y^3$, $s_4 = x^4 + y^4$ un $t = xy$.  
@@ -680,11 +764,17 @@ $\\sqrt{5}$.)
 <!--
 questionType=Prove,ProveDisprove
 -->"""@lv ;
+    eliozo:problemYear 2014 ;
     eliozo:problem_number 5 .
 
-eliozo:LT.TST.2015.2 a eliozo:Problem ;
+eliozo:LT.TST.2015.12.2 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2015" ;
+    eliozo:problemBookSection "TST.2015.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2015.12.2" ;
     eliozo:problemText """Atrodiet visus vienādojuma
 $$a! \\cdot b! = a! + b! + c!$$
 naturālos atrisinājumus $(a,b,c)$.
@@ -717,11 +807,17 @@ pavyzdžiui, $4! = 1 \\cdot 2 \\cdot 3 \\cdot 4 = 24$.)
 <!--
 questionType=FindAll
 -->"""@lv ;
+    eliozo:problemYear 2015 ;
     eliozo:problem_number 2 .
 
-eliozo:LT.TST.2015.5 a eliozo:Problem ;
+eliozo:LT.TST.2015.12.5 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2015" ;
+    eliozo:problemBookSection "TST.2015.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2015.12.5" ;
     eliozo:problemText """Kopas $A$ un $B$ ir naturālo skaitļu kopas 
 $\\{ 1,2,3,\\ldots \\}$ apakškopas, kam piemīt šādas
 divas īpašības:  
@@ -780,11 +876,17 @@ vienai iš dviejų aibių $A$ ir $B$.)
 <!--
 questionType=FindOptimal
 -->"""@lv ;
+    eliozo:problemYear 2015 ;
     eliozo:problem_number 5 .
 
-eliozo:LT.TST.2016.2 a eliozo:Problem ;
+eliozo:LT.TST.2016.12.2 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2016" ;
+    eliozo:problemBookSection "TST.2016.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2016.12.2" ;
     eliozo:problemText """Atrodiet visus vienādojuma 
 $$4^a \\cdot 5^b − 3^c \\cdot 11^d = 1$$
 naturālos atrisinājumus $(a,b,c,d)$.
@@ -809,11 +911,17 @@ natūraliuosius sprendinius $(a,b,c,d)$.
 <!--
 questionType=FindAll
 -->"""@lv ;
+    eliozo:problemYear 2016 ;
     eliozo:problem_number 2 .
 
-eliozo:LT.TST.2017.2 a eliozo:Problem ;
+eliozo:LT.TST.2017.12.2 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2017" ;
+    eliozo:problemBookSection "TST.2017.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2017.12.2" ;
     eliozo:problemText """Kopu, ko veido $m > 2$ naturāli skaitļi, sauksim par *vienkāršu*, ja 
 jebkuri divi šīs kopas elementi ir savstarpēji pirmskaitļi. 
 Atrodiet mazāko naturālo $n$, ka jebkurai vienkāršai kopai, kas ir kopas
@@ -847,11 +955,17 @@ priklausytų bent vienas pirminis skaičius.
 <!--
 questionType=FindOptimal
 -->"""@lv ;
+    eliozo:problemYear 2017 ;
     eliozo:problem_number 2 .
 
-eliozo:LT.TST.2017.3 a eliozo:Problem ;
+eliozo:LT.TST.2017.12.3 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2017" ;
+    eliozo:problemBookSection "TST.2017.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2017.12.3" ;
     eliozo:problemText """Divus polinomus ar veseliem koeficientiem $A(x) = a_nx^n+\\ldots+a_1x+a_0$ un
 $B(x) = b_mx^m + \\ldots + b_1x + b_0$ (šeit $m, n > 0$ un $a_n, b_m \\neq 0$) sauksim par 
 *līdzīgiem*, ja $m = n$ un ja abos skaitļu sarakstos
@@ -901,11 +1015,17 @@ $P(16) = 3^{2012}$.<br />
 <!--
 questionType=Prove,FindOptimal
 -->"""@lv ;
+    eliozo:problemYear 2017 ;
     eliozo:problem_number 3 .
 
-eliozo:LT.TST.2017.4 a eliozo:Problem ;
+eliozo:LT.TST.2017.12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2017" ;
+    eliozo:problemBookSection "TST.2017.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2017.12.4" ;
     eliozo:problemText """Doti pirmskaitļi $p > q$ un naturāli skaitļi $k,\\ell$. Kopu $A$ veido
 visi ntaurālie skaitļi $n$, kuriem $p^kq^{\\ell}n$ dalās ar $p + n$.  
 **(a)** Pierādiet, ka $|A| \\geq 1$.  
@@ -951,11 +1071,17 @@ $k = \\ell = 10$?<br />
 <!--
 questionType=Prove,ProveDisprove
 -->"""@lv ;
+    eliozo:problemYear 2017 ;
     eliozo:problem_number 4 .
 
-eliozo:LT.TST.2018.3 a eliozo:Problem ;
+eliozo:LT.TST.2018.12.3 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2018" ;
+    eliozo:problemBookSection "TST.2018.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2018.12.3" ;
     eliozo:problemText """Naturālu skaitli $n$ sauksim par *veiksmīgu*, ja eksistē bezgala daudzas
 pozitīvu racionālu skaitļu kolekcijas $(a_1,\\ldots,a_n)$, kurām abi skaitļi
 $a_1 + \\cdots + a_n$ un
@@ -1013,11 +1139,17 @@ genre=special-numbers
 questionType=Prove,Prove
 seeAlso=IMO.SHL.2017.N6
 -->"""@lv ;
+    eliozo:problemYear 2018 ;
     eliozo:problem_number 3 .
 
-eliozo:LT.TST.2018.4 a eliozo:Problem ;
+eliozo:LT.TST.2018.12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2018" ;
+    eliozo:problemBookSection "TST.2018.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2018.12.4" ;
     eliozo:problemText """Jebkuram naturālam nepāru $n$ nosakiet, kāds ir skaitļa 
 $$\\frac{10^{n(n+1)}}{10^n + 6}$$
 vienu cipars. (Piemēram, skaitļa $27,83$ vienu cipars ir $7$,
@@ -1047,11 +1179,17 @@ o skaičiaus $\\pi = 3,14\\ldots$ vienetų skaitmuo yra $3$.)
 <!--
 questionType=FindAll
 -->"""@lv ;
+    eliozo:problemYear 2018 ;
     eliozo:problem_number 4 .
 
-eliozo:LT.TST.2019.1 a eliozo:Problem ;
+eliozo:LT.TST.2019.12.1 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2019" ;
+    eliozo:problemBookSection "TST.2019.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2019.12.1" ;
     eliozo:problemText """Mīkolas izdomāja naturālu skaitļu virkni $a_1,a_2,a_3,\\ldots$, 
 bet tad definēja jaunu virkni $b_1, b_2, b_3,\\ldots$ ar šādām vienādībām:
 $$b_1 = a_1,\\;\\;b_2 = a_2, b_n = a_nb_{n-1} + b_{n-2}\\;\\;\\text{visiem}\\;\\;n > 3.$$
@@ -1092,11 +1230,17 @@ kad kiekvienas iš skaičių $b_1, b_2, b_3, \\ldots$ būtų<br />
 <!--
 questionType=ProveDisprove
 -->"""@lv ;
+    eliozo:problemYear 2019 ;
     eliozo:problem_number 1 .
 
-eliozo:LT.TST.2019.5 a eliozo:Problem ;
+eliozo:LT.TST.2019.12.5 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.TST" ;
+    eliozo:olympiadCode "TST" ;
     eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "TST.2019" ;
+    eliozo:problemBookSection "TST.2019.12" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LT.TST.2019.12.5" ;
     eliozo:problemText """Naturālu skaitli $n$ sauksim par *piecīgu*, ja tam ir 
 tādi pieci dažādi pozitīvi dalītāji, kuru ceturto pakāpju summa vienāda ar $n$. 
 (Skaitļi $1$ un $n$ arī ir  skaitļa $n$ dalītāji.)  
@@ -1131,5 +1275,6 @@ laipsnių suma lygi $n$. (Skaičiai $1$ ir $n$ taip pat yra skaičiaus $n$ dalik
 genre=special-numbers
 questionType=Prove,ProveDisprove
 -->"""@lv ;
+    eliozo:problemYear 2019 ;
     eliozo:problem_number 5 .
 

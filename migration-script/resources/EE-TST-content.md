@@ -1,4 +1,4 @@
-# <lo-sample/> EE.TST.1993.3
+# <lo-sample/> EE.TST.1993.12.12.3
 
 Zināms, ka skaitlis $d$ — lielākais kopīgais dalītājs naturāliem 
 skaitļiem $m$ un $n$, 
@@ -14,7 +14,7 @@ Pierādīt, ka skaitļi $x = 2^m-1$ un $y = 2^n+1$ ir savstarpēji pirmskaitļi.
 
 
 
-# <lo-sample/> EE.TST.1994.2
+# <lo-sample/> EE.TST.1994.12.12.2
 
 Atrast visus naturālu skaitļu
 pārus $(x,y)$ ($x,y>1$), kuriem skaitlis 
@@ -27,7 +27,7 @@ $2^x+3^y$ является квадратом некоторого натура�
 </text>
 
 
-# <lo-sample/> EE.TST.1995.1
+# <lo-sample/> EE.TST.1995.12.12.1
 
 Atrast visas funkcijas $f(n)$, kas definētas visiem veseliem nenegatīviem 
 $n$, kam ir tikai veselas nenegatīvas vērtības un katram 
@@ -45,7 +45,7 @@ $f(f(n)) + f(n) = 2n + 3$.
 
 
 
-# <lo-sample/> EE.TST.1995.5
+# <lo-sample/> EE.TST.1995.12.5
 
 Dots $n$ — patvaļīgs naturāls skaitlis, 
 bet $k$ — naturāls skaitlis, kas dalot ar $4$ dod atlikumu $1$. 
@@ -68,7 +68,7 @@ $$C_n^1 + C_n + C_n^5k^2 + C_n^7k^3 + \ldots$
 
 
 
-# <lo-sample/> EE.TST.1996.1
+# <lo-sample/> EE.TST.1996.12.1
 
 Zināms, ka $x,y$ un ${\displaystyle \frac{x^2 + y^2 + 6}{xy}}$
 ir naturāli skaitļi. Pierādīt, ka 
@@ -83,7 +83,7 @@ ir kāda vesela skaitļa kubs.
 </text>
 
 
-# <lo-sample/> EE.TST.1997.6
+# <lo-sample/> EE.TST.1997.12.6
 
 Zināms, ka jebkuram veselam $n>1$ starp skaitļiem
 $n+1,n+2,\ldots,2n-1$ ir vismaz viens pirmskaitlis. 
@@ -100,7 +100,7 @@ un ir savstarpējs pirmskaitlis ar $n$, ir pirmskaitlis.
 </text>
 
 
-# <lo-sample/> EE.TST.1998.5
+# <lo-sample/> EE.TST.1998.12.5
 
 Dots $k$ — fiksēts naturāls skaitlis.
 Definējam virkni $(E_n)$ ar attiecībām
@@ -120,7 +120,7 @@ $$E_1 = k + 1;\;\; E_{n+1} = E_n^2 - kE_n+k\;(n \geq 1).$$
 
 
 
-# <lo-sample/> EE.TST.1999.1
+# <lo-sample/> EE.TST.1999.12.1
 
 Vai eksistē naturālu skaitļu virkne 
 $a_1,a_2,\ldots,a_k,\ldots$, kas apmierina abus sekojošos nosacījumus?  
@@ -153,7 +153,7 @@ $a_1^{(n)},a_2^{(n)},\ldots,a_k^{(n)},\ldots$
 
 
 
-# <lo-sample/> EE.TST.2000.2
+# <lo-sample/> EE.TST.2000.12.2
 
 Pierādīt, ka $18$ pēc kārtas sekojošus naturālus skaitļus nevar 
 sadalīt divās grupās tā, lai skaitļu reizinājumi katrā no grupām būtu vienādi. 
@@ -165,7 +165,7 @@ sadalīt divās grupās tā, lai skaitļu reizinājumi katrā no grupām būtu v
 </text>
 
 
-# <lo-sample/> EE.TST.2000.4
+# <lo-sample/> EE.TST.2000.12.4
 
 Atrast visas funkcijas $f(n)$ ar naturālām vērtībām, 
 kas definētas visiem naturāliem skaitļiem $n$, un katram 
@@ -180,7 +180,7 @@ $$f(f(f(n))) + f(f(n)) + f(n) = 3n.$$
 </text>
 
 
-# <lo-sample/> EE.TST.2000.6
+# <lo-sample/> EE.TST.2000.12.6
 
 Sauksim bezgalīgu naturālu skaitļu virkni par 
 $F$-*virkni*, ja katrs tās loceklis, sākot ar trešo, 
@@ -202,7 +202,7 @@ skaitā $F$-virkņu, kam nav kopīgu elementu?
 
 
 
-# <lo-sample/> EE.TST.2001.4
+# <lo-sample/> EE.TST.2001.12.4
 
 Apskatām visus iespējamos reizinājumus pa $2$, pa $4$, pa $6$, $\ldots$, 
 pa $2000$ elementiem no kopas ${\displaystyle A = \left\{ \frac{1}{2}, \frac{1}{3},
@@ -217,7 +217,7 @@ Atrast visu šādu reizinājumu summu.
 </text>
 
 
-# <lo-sample/> EE.TST.2001.4
+# <lo-sample/> EE.TST.2001.12.4
 
 Atrast kāpinātāju pirmskaitlim $37$, ja skaitlis 
 $$\underbrace{111\ldots\ldots11}_{3 \cdot 37^{2000}\;\text{cipari}}$$
@@ -231,7 +231,7 @@ izteikts kā pirmskaitļu pakāpju reizinājums.
 
 
  
-# <lo-sample/> EE.TST.2002.1
+# <lo-sample/> EE.TST.2002.12.1
 
 Firstiene (*vürstinna*) vēlas uz savas apļveida aproces izvietot $r$ rubīnus
 un $s$ safīrus tādā secībā, lai lai uz tās atrastos divi 
@@ -249,7 +249,7 @@ un tikai tad, ja skaitļi $r$ un $s$ nav savstarpēji pirmskaitļi.
 </text>
 
 
-# <lo-sample/> EE.TST.2003.2
+# <lo-sample/> EE.TST.2003.12.2
 
 Dots naturāls skaitlis $n$. Pierādīt, ka tad, ja skaitlis 
 $\underbrace{99\ldots{}9}_{n}$ dalās ar $n$, tad skaitlis 
@@ -263,7 +263,7 @@ $\underbrace{11\ldots{}1}_{n}$ также делится на $n$.
 </text>
 
 
-# <lo-sample/> EE.TST.2003.3
+# <lo-sample/> EE.TST.2003.12.3
 
 Ar $\mathbb{Z}_{0+}$ apzīmēta visu veselo nenegatīvo skaitļu kopa un
 apzīmējam $n' = n+1$ katram veselam nenegatīvam skaitlim $n$.
@@ -296,7 +296,7 @@ n, & \mbox{если $k=0$,}\\
 
 
 
-# <lo-sample/> EE.TST.2004.4
+# <lo-sample/> EE.TST.2004.12.4
 
 Apzīmējam
 $$f(m) = \sum_{k=1}^{m} (-1)^k \cos \frac{k\pi}{2m+1}.$$
@@ -311,7 +311,7 @@ $$f(m) = \sum_{k=1}^{m} (-1)^k \cos \frac{k\pi}{2m+1}.$$
 
 
 
-# <lo-sample/> EE.TST.2004.5
+# <lo-sample/> EE.TST.2004.12.5
 
 Atrast visus naturālos skaitļus $n$, kuriem 
 visu skaitļa 
@@ -327,7 +327,7 @@ $\mbox{НОК}(1,2,\ldots,n)$ равно $2^k$, где $k$
 
 
 
-# <lo-sample/> EE.TST.2005.3
+# <lo-sample/> EE.TST.2005.12.3
 
 Atrast visus naturālu skaitļu pārus 
 $(x,y)$, kas apmierina vienādojumu:
@@ -340,7 +340,7 @@ $$(x+y)^x = x^y.$$
 </text>
 
 
-# <lo-sample/> EE.TST.2006.6
+# <lo-sample/> EE.TST.2006.12.6
 
 Ar $d(n)$ apzīmējam naturāla skaitļa $n$ pozitīvu dalītāju skaitu.
 Naturālu skaitli $n$ saucam par *superdalāmu*, ja visiem 
@@ -365,7 +365,7 @@ d(m) < d(n). Два сверхделимых целых числа m и n наз
 
 
 
-# <lo-sample/> EE.TST.2007.3
+# <lo-sample/> EE.TST.2007.12.3
 
 Dots naturāls skaitlis $n$, $n \geq 2$. 
 Pierādīt, ka, ja kādam naturālam skaitlim $b$
@@ -387,7 +387,7 @@ ${\displaystyle \frac{b^n-1}{b-1}}$
 
 
 
-# <lo-sample/> EE.TST.2008.4
+# <lo-sample/> EE.TST.2008.12.4
 
 Virknes $(G_n)$ pirmie locekļi ir $G_0 = 0$ un $G_1 = 1$, un
 katram $n \geq 2$ ir spēkā $G_n = G_{n-1} + G_{n-2} + 1$. 
@@ -403,7 +403,7 @@ pēc kārtas sekojoši locekļi, kuri abi dalās ar $m$.
 
 
 
-# <lo-sample/> EE.TST.2009.2
+# <lo-sample/> EE.TST.2009.12.2
 
 Sauksim galīgu naturālo skaitļu kopu par *izcilu*, ja katri divi tās elementi 
 ir savstarpēji pirmskaitļi. Galīgu naturālu skaitļu kopu sauc par *skaistu*, ja 
@@ -431,7 +431,7 @@ $n$-элементное величесвенное подмножество?
 
 
 
-# <lo-sample/> EE.TST.2009.6
+# <lo-sample/> EE.TST.2009.12.6
 
 Ar $c(n)$ apzīmējam naturāla skaitļa $n$ lielāko dalītāju, kas nepārsniedz $\sqrt{n}$, bet 
 ar $s(n)$ - mazāko no veseliem skaitļiem $x$, kuriem $n < x$ un reizinājums $nx$ dalās ar kādu 
@@ -447,7 +447,7 @@ $$s(n) = (c(n) + 1) \cdot \left( \frac{n}{c(n)} + 1 \right).$$
 
 
 
-# <lo-sample/> EE.TST.2010.1
+# <lo-sample/> EE.TST.2010.12.1
 
 Naturāliem skaitļiem $a,b$ apzīmējam ${\displaystyle a \ast b = \frac{a-b}{\text{LKD}(a,b)}}$.
 Dots naturāls skaitlis $n$. Pierādīt, ka sekojošie nosacījumi ir ekvivalenti (vai nu abi reizē izpildās vai neizpildās):  
@@ -463,7 +463,7 @@ Dots naturāls skaitlis $n$. Pierādīt, ka sekojošie nosacījumi ir ekvivalent
 </text>
 
 
-# <lo-sample/> EE.TST.2011.2
+# <lo-sample/> EE.TST.2011.12.2
 
 Dots naturāls skaitlis $n$. Pierādīt, ka jebkuram skaitļa $1 + 2 + \ldots + n$ dalītājam $m$, kur
 $m \geq n$, kopu $\{1,2,\ldots,n \}$ var sadalīt vairākās apakškopās bez kopīgiem elementiem tā, lai 
@@ -478,7 +478,7 @@ $m \geq n$, можно множество $\{1,2,\ldots,n \}$ разбить н�
 </text>
 
 
-# <lo-sample/> EE.TST.2011.3
+# <lo-sample/> EE.TST.2011.12.3
 
 Vai eksistē visu veselo skaitļu pāriem definēta darbība $\ast$, kas vienlaikus apmierina šādus
 nosacījumus:  
@@ -494,7 +494,7 @@ nosacījumus:
 
 
 
-# <lo-sample/> EE.TST.2011.5
+# <lo-sample/> EE.TST.2011.12.5
 
 Pierādīt, ka ja skaitļi $n$ un $k$ ir naturāli skaitļi, kuriem  
 $1 < k < n-1$, tad skaitlis $\ldots = \frac{n!}{k!(n-k)!}$ dalās vismaz ar diviem dažādiem pirmskaitļiem.
@@ -507,7 +507,7 @@ $1 < k < n-1$, то число $\ldots = \frac{n!}{k!(n-k)!}$ делится п�
 </text>
 
 
-# <lo-sample/> EE.TST.2012.1
+# <lo-sample/> EE.TST.2012.12.1
 
 Pierādīt, ka jebkuram naturālam skaitlim $k$ eksistē $k$ pa pāriem dažādi veseli skaitļi, 
 kuru kvadrātu summa ir vienāda ar šo pašu skaitļu kubu summu. 
@@ -518,7 +518,7 @@ kuru kvadrātu summa ir vienāda ar šo pašu skaitļu kubu summu.
 </text>
 
 
-# <lo-sample/> EE.TST.2012.2
+# <lo-sample/> EE.TST.2012.12.2
 
 Dotam naturālam skaitlim $n$ izvēlas skaitļus $a_0,a_1,\ldots$ tā, lai izpildītos 
 sekojoši nosacījumi:  
@@ -540,7 +540,7 @@ $a_0,a_1,\ldots$ все равны?
 
 
 
-# <lo-sample/> EE.TST.2013.1
+# <lo-sample/> EE.TST.2013.12.1
 
 Atrast visus pirmskaitļus $p$, kuriem eksistē naturāls skaitlis $m$ 
 un nenegatīvi veseli skaitļi $a_0,a_1,\ldots,a_m$ tādi, ka jebkurš no skaitļiem 
@@ -562,7 +562,7 @@ a_0 + a_1 + \ldots + a_{m-1} + a_m = 11.
 
 
 
-# <lo-sample/> EE.TST.2013.5
+# <lo-sample/> EE.TST.2013.12.5
 
 Sauksim galīgu veselu skaitļu sarakstu $(b_m,b_{m+1},\ldots,b_n)$ par *pilnvērtīgu*, 
 ja izpildās sekojoši nosacījumi:  
@@ -599,7 +599,7 @@ $k = m, m+1,\ldots,n$
 
 
 
-# <lo-sample/> EE.TST.2014.6
+# <lo-sample/> EE.TST.2014.12.6
 
 Atrast visus naturālos skaitļus $n$, kuriem vienādojumam 
 $x^2+y^2+z^2 = nxyz$ eksistē 
@@ -614,7 +614,7 @@ positiivseid täisarvulisi lahendeid.
 
 
 
-# <lo-sample/> EE.TST.2015.1
+# <lo-sample/> EE.TST.2015.12.1
 
 Dots naturāls skaitlis $n$, $n \geq 5$, un $a_1, a_2, \ldots, a_n$
 ir tādi reāli skaitļi, ka visas iespējamās summas $a_i + a_j$,
@@ -633,7 +633,7 @@ $a_1 = a_2 = \ldots = a_n$.
 
 
 
-# <lo-sample/> EE.TST.2015.3
+# <lo-sample/> EE.TST.2015.12.3
 
 Dots fiksēts pozitīvs racionāls skaitlis $q$. 
 Sauksim skaitli $x$ par *harizmatisku*, ja 
@@ -661,7 +661,7 @@ on ka arv $x + 1$ karismaatiline?
 
 
 
-# <lo-sample/> EE.TST.2015.7
+# <lo-sample/> EE.TST.2015.12.7
 
 Pierādīt, ka jebkuram naturālam $a$ un pirmskaitlim $p$
 ir naturāls skaitlis $n$, ka skaitlī $p^n$ ir 
@@ -675,7 +675,7 @@ mille korral mingid $a$ kõrvutiasuvat numbrit arvus $p^n$ on võrdsed.
 
 
 
-# <lo-sample/> EE.TST.2016.2
+# <lo-sample/> EE.TST.2016.12.2
 
 Dots pirmskaitlis $p$. Atrast visus veselu (ne noteikti pozitīvu)
 skaitļu trijniekus $(a, b, c)$, kuriem
@@ -691,7 +691,7 @@ $a^bb^cc^a = p$.
 
 
 
-# <lo-sample/> EE.TST.2016.9
+# <lo-sample/> EE.TST.2016.12.9
 
 Dots naturāls skaitlis $n$, kuram ir par $\sqrt{n}$ mazāks
 skaitlis, kurš nav $n$ dalītājs. 
@@ -727,7 +727,7 @@ kus $1 \leq k_1 < k2 < \ldots < k_m \leq n$.
 
 
 
-# <lo-sample/> EE.TST.2016.11
+# <lo-sample/> EE.TST.2016.12.11
 
 Atrast visus naturālos skaitļus $n$, kuriem 
 $(n^2+11n−4)\cdot{}n!+33\cdot{}13^n+4$
@@ -741,7 +741,7 @@ on mingi täisarvu ruut.
 
 
 
-# <lo-sample/> EE.TST.2017.1
+# <lo-sample/> EE.TST.2017.12.1
 
 Vai eksistē divi naturāli skaitļi, kas abi 
 ir skaitļa $5$ veselas pakāpes, kurus pierakstot 
@@ -757,7 +757,7 @@ skaitļa $5$ vesela pakāpe.
 
 
 
-# <lo-sample/> EE.TST.2017.7
+# <lo-sample/> EE.TST.2017.12.7
 
 Dots $n$ –– naturāls skaitlis. Cik dažādos veidos var ierakstīt tabulas $n \times n$ 
 katrā šūnā vienu skaitli $0$, $1$, $2$, $3$,
@@ -779,7 +779,7 @@ $4$, $5$ так, что
 </text>
 
 
-# <lo-sample/> EE.TST.2017.11
+# <lo-sample/> EE.TST.2017.12.11
 
 Katram naturālam skaitlim $k$ apzīmējam ar $S(k)$ skaitļa $k$ decimālpieraksta
 ciparu summu. Atrast visus polinomus $P(x)$ ar veseliem koeficientiem, ka 
@@ -797,7 +797,7 @@ $S(P(n)) = P(S(n))$.
 
 
 
-# <lo-sample/> EE.TST.2018.6
+# <lo-sample/> EE.TST.2018.12.6
 
 Sauksim naturālu skaitli $n$, kurā neviens cipars neatkārtojas, par 
 *spilgtu*, ja tas ir vai nu viencipara, vai arī skaitlim $n$ ir dalītājs, 
@@ -815,7 +815,7 @@ arī pats ir *spilgts* skaitlis. Atrast pašu lielāko spilgto naturālo skaitli
 
 
 
-# <lo-sample/> EE.TST.2018.8
+# <lo-sample/> EE.TST.2018.12.8
 
 Atrast visus veselos skaitļus $k \geq 5$, kuriem eksistē naturāls $n$, 
 kuram ir tieši $k$ pozitīvi dalītāji
@@ -829,7 +829,7 @@ $1 = d_1 < d_2 < \ldots < d_k = n$, причём $d_2d_3 + d_3d_5 + d_5d_2 = n$.
 </text>
 
 
-# <lo-sample/> EE.TST.2018.12
+# <lo-sample/> EE.TST.2018.12.12
 
 Sauksim polinomu $P(x)$ par *vienkāršu*, ja katrs no tā koeficientiem pieder kopai 
 $\{-1, 0, 1\}$.
@@ -847,7 +847,7 @@ veseliem argumentiem dalās ar $n$.
 
 
 
-# <lo-sample/> EE.TST.2019.1
+# <lo-sample/> EE.TST.2019.12.1
 
 Uz tāfeles uzrakstīts kāds naturāls skaitlis $n$. 
 Ats un Pets spēlē sekojošu spēli. Ats atrod visus
@@ -885,7 +885,7 @@ $n$ в виде произведения целых чисел, больших $
 
 
 
-# <lo-sample/> EE.TST.2019.4
+# <lo-sample/> EE.TST.2019.12.4
 
 Sauksim reālu skaitli $r$ par *interesantu*, ja 
 $r = a + b\sqrt{2}$, kur $a$ un $b$ — 
@@ -916,7 +916,7 @@ $$a_n x^n + a_{n-1}x^{n-1} + \ldots + a_1x + a_0,$$
 
 
 
-# <lo-sample/> EE.TST.2019.9
+# <lo-sample/> EE.TST.2019.12.9
 
 Atrast visus dažādu naturālu skaitļu pārus $(n,k)$, 
 kuriem atradīsies tāds naturāls skaitlis $s$, 
@@ -931,7 +931,7 @@ ka skaitļiem $sn$ un $sk$ ir vienāds pozitīvu dalītāju skaits.
 
 
 
-# <lo-sample/> EE.TST.2019.10
+# <lo-sample/> EE.TST.2019.12.10
 
 Dots vesels skaitlis $n \geq 3$. Pierādīt, ka 
 eksistē kopa $S$, kurā ir $2n$ dažādi naturāli skaitļi, 
