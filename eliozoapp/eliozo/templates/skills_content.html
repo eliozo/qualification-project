@@ -10,18 +10,21 @@
     <table class="tasks">
         <colgroup>
             <col class="aaa">
+            <col class="aaa">
             <col class="bbb">
             <col class="ccc">
         </colgroup>
         <tbody>
             <tr>
+                <th>Numurs</th>
                 <th>Prasmes kods</th>
                 <th>Apraksts</th>
                 <th>Piemēri</th>
             </tr>
             {% for skill in all_skills %}
             <tr class="{{ loop.cycle('odd', 'even') }}">
-                <td>{{ all_skill_info[skill].skillIndent |safe }}<a href="{{ url_for('getSkill',skillIdentifier=skill) }}" title="{{ skill }}">{{ all_skill_info[skill].skillName |safe }}</a></td>
+                <td>{{ all_skill_info[skill].skillNumber |safe }}</td>
+                <td><a href="{{ url_for('getSkill',skillIdentifier=skill) }}" title="{{ skill }}">{{ all_skill_info[skill].skillName |safe }}</a></td>
                 <td>{{ all_skill_info[skill].skillDescription |safe }}</td>
                 <td>{% for problem in all_skill_info[skill].problems %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
                         problem }}</a>, {% endfor %} </td>

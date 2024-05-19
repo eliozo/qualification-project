@@ -16,19 +16,14 @@
     <a href="{{ url_for('getSkill',skillIdentifier=item.skillIdentifier.value) }}">{{ item.skillIdentifier.value }} </a>
     {% endfor %}</i></p>
   {% endif %}
-  <p> {{ text | safe }}</p>
-  {% if image_src != '' %}
-  <p><img src="http://www.dudajevagatve.lv/static/eliozo/images/{{ image_src }}"/></p>
-  {% endif %}
+  <p> {{ problemTextHtml | safe }}</p>
 
-
-  {% if solutionText != ''%}
-
-      <div id="solutionDiv" class="solution"><b>Atrisinājums:</b><br/>{{solutionText | safe}}</div>
-
+  {% if solutionTextHtml != ''%}
+  <div id="solutionDiv" class="solution">{{solutionTextHtml | safe}}</div>
   </div>
-
   {% endif %}
+
+
 
   {% if hasVideo %}
   <table border="1" cellspacing="0" style="border:1px solid #eeeeee; width:80%; margin-left:5%">

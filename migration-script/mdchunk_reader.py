@@ -34,6 +34,11 @@ def add_problem_integer_prop(g, problem_node, key, value):
     g.add((problem_node, problem_property, rdflib.term.Literal(value, datatype=XSD.integer)))
 
 
+def add_problem_topiclike_prop(g, problem_node, key, value):
+    problem_property = rdflib.URIRef(eliozo_ns + key)
+    value_resource = rdflib.URIRef(eliozo_ns + value)
+    g.add((problem_node, problem_property, value_resource))
+
 def addSolutionToRdfProblem(g, title, i, solution_text):
     problem_node = rdflib.URIRef(eliozo_ns + title)  # subjekts
     solution_node = rdflib.URIRef(eliozo_ns + "SOLN." + title)
@@ -110,7 +115,10 @@ def extract_metadata(text):
                 if key.startswith('* '):
                     key = key[2:]
                 values = key_val[1].split(",")
-                metadata[key] = values
+                if key in metadata:
+                    metadata[key].extend([i.strip() for i in values])
+                else:
+                    metadata[key] = [i.strip() for i in values]
     return metadata
 
 
@@ -209,10 +217,14 @@ def md_to_rdf(md_file_path, ttl_file_path):
         problem_text_html = markdown.markdown(problem_text_md, extensions=['tables']).strip()
         add_problem_literal_lv_prop(g, problem_node, 'problemText', problem_text_md)
         add_problem_literal_lv_prop(g, problem_node, 'problemTextHtml', problem_text_html)
+
         meta_dict = extract_metadata(section)
         for k, vvv in meta_dict.items():
             for vv in vvv:
-                add_problem_literal_prop(g, problem_node, k, vv)
+                if k == 'topic':
+                    add_problem_topiclike_prop(g, problem_node, 'topic', vv)
+                else:
+                    add_problem_literal_prop(g, problem_node, k, vv)
 
         solutions = extract_solutions(section)
         for i, soln in enumerate(solutions):

@@ -15,16 +15,16 @@
 
       <dl class="olympiads">
     {% for link in links %}
-          {% set first_two = link.olympiadName['value'][:2] %}
-          {% if first_two == 'EE' %}
+          {% set country_code = link.olympiadCountry %}
+          {% if country_code == 'EE' %}
           <dt style="border-color: #006994;">
               <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName['value'] }}</a>
           </dt>
-          {% elif first_two == 'LV' %}
+          {% elif country_code == 'LV' %}
           <dt style="border-color: #228B22;">
               <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName['value'] }}</a>
           </dt>
-          {% elif first_two == 'LT' %}
+          {% elif country_code == 'LT' %}
           <dt style="border-color: #FFBF00;">
               <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName['value'] }}</a>
           </dt>
@@ -39,9 +39,10 @@
           </dl>
     <hr style="width:90%"/>
     <dl>
-      <dt>BBK2012: <a href="{{ url_for('getBook',book_id='BBK2012',section_id='P1.E2') }}">Dalāmības īpašības</a>,
-          <a href="{{ url_for('getBook',book_id='BBK2012',section_id='P1') }}">Uzdevumi (1)</a></dt>
-      <dd style="margin-left:20px">A.Bērziņa grāmatu uzdevumi</dd>
+      <dt>BBK2012:
+          <a href="{{ url_for('getBook',book_id='BBK2012',section_id='P1') }}">1.daļa</a>;
+      <a href="{{ url_for('getBook',book_id='BBK2012',section_id='P3') }}">3.daļa</a></dt>
+      <dd style="margin-left:20px">A.Bērziņš, D.Kūma. Olimpiāžu un konkursu uzdevumu krājums skaitļu teorijā.</dd>
     </dl>
 
         </div>

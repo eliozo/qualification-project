@@ -104,12 +104,12 @@ eliozo:videoBookmarks rdf:type owl:ObjectProperty ;
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/hasBookSection
-:hasBookSection rdf:type owl:ObjectProperty ;
+eliozo:hasBookSection rdf:type owl:ObjectProperty ;
                 rdfs:domain eliozo:Problem .
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/problemImage
-:problemImage rdf:type owl:ObjectProperty ;
+eliozo:problemImage rdf:type owl:ObjectProperty ;
               rdfs:domain eliozo:Problem .
 
 
@@ -119,49 +119,49 @@ eliozo:videoBookmarks rdf:type owl:ObjectProperty ;
 
 ###  http://www.dudajevagatve.lv/eliozo#bookAuthors
 eliozo:bookAuthors rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :Book ;
+                   rdfs:domain eliozo:Book ;
                    rdfs:range xsd:string .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#bookID
 eliozo:bookID rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Book ;
+              rdfs:domain eliozo:Book ;
               rdfs:range xsd:string .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#bookSectionID
 eliozo:bookSectionID rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :BookSection ;
+                     rdfs:domain eliozo:BookSection ;
                      rdfs:range xsd:string .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#bookSectionTitle
 eliozo:bookSectionTitle rdf:type owl:DatatypeProperty ;
-                        rdfs:domain :BookSection ;
+                        rdfs:domain eliozo:BookSection ;
                         rdfs:range xsd:string .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#bookTitle
 eliozo:bookTitle rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :Book ;
+                 rdfs:domain eliozo:Book ;
                  rdfs:range xsd:string .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#bookYear
 eliozo:bookYear rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Book ;
+                rdfs:domain eliozo:Book ;
                 rdfs:range xsd:int .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#imageSrc
 eliozo:imageSrc rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Image ;
+                rdfs:domain eliozo:Image ;
                 rdfs:range xsd:string .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#imageWidth
 eliozo:imageWidth rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Image ;
+                  rdfs:domain eliozo:Image ;
                   rdfs:range xsd:int .
 
 
@@ -286,7 +286,7 @@ eliozo:skillName rdf:type owl:DatatypeProperty ,
 
 ###  http://www.dudajevagatve.lv/eliozo#solutionText
 eliozo:solutionText rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :Solution ;
+                    rdfs:domain eliozo:Solution ;
                     rdfs:range xsd:string .
 
 
@@ -339,13 +339,13 @@ eliozo:videoYoutube rdf:type owl:DatatypeProperty ,
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/hasBookSection
-:hasBookSection rdf:type owl:DatatypeProperty ;
-                rdfs:range :BookSection .
+eliozo:hasBookSection rdf:type owl:DatatypeProperty ;
+                rdfs:range eliozo:BookSection .
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/problemImage
-:problemImage rdf:type owl:DatatypeProperty ;
-              rdfs:range :Image .
+eliozo:problemImage rdf:type owl:DatatypeProperty ;
+              rdfs:range eliozo:Image .
 
 
 #################################################################
@@ -406,15 +406,15 @@ eliozo:VideoBookmark rdf:type owl:Class .
 
 
 ###  http://www.dudajevagatve.lv/eozol#Domain
-:Domain rdf:type owl:Class .
+eliozo:Domain rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/Book
-:Book rdf:type owl:Class .
+eliozo:Book rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/Solution
-:Solution rdf:type owl:Class .
+eliozo:Solution rdf:type owl:Class .
 
 
 #################################################################
@@ -423,7 +423,7 @@ eliozo:VideoBookmark rdf:type owl:Class .
 
 ###  http://www.dudajevagatve.lv/eliozo#BBK2012
 eliozo:BBK2012 rdf:type owl:NamedIndividual ,
-                        :Book ;
+                        eliozo:Book ;
                eliozo:bookAuthors "A.Bērziņa, A.Bērziņš, D.Kūma."@lv ;
                eliozo:bookID "BBK2012"@lv ;
                eliozo:bookTitle "Olimpiāžu un konkursu uzdevumu krājums skaitļu teorijā."@lv ;
@@ -551,35 +551,35 @@ eliozo:LV.VOL rdf:type owl:NamedIndividual ,
 
 
 ###  http://www.dudajevagatve.lv/eozol#DomainAlg
-:DomainAlg rdf:type owl:NamedIndividual ,
-                    :Domain ;
+eliozo:DomainAlg rdf:type owl:NamedIndividual ,
+                    eliozo:Domain ;
            eliozo:topicID "Alg"@lv ;
            eliozo:topicTitle "Algebra"@lv .
 
 
 ###  http://www.dudajevagatve.lv/eozol#DomainComb
-:DomainComb rdf:type owl:NamedIndividual ,
-                     :Domain ;
+eliozo:DomainComb rdf:type owl:NamedIndividual ,
+                     eliozo:Domain ;
             eliozo:topicID "Comb"@lv ;
             eliozo:topicTitle "Kombinatorika"@lv .
 
 
 ###  http://www.dudajevagatve.lv/eozol#DomainGeom
-:DomainGeom rdf:type owl:NamedIndividual ,
-                     :Domain ;
+eliozo:DomainGeom rdf:type owl:NamedIndividual ,
+                     eliozo:Domain ;
             eliozo:topicID "Geom"@lv ;
             eliozo:topicTitle "Ģeometrija"@lv .
 
 
 ###  http://www.dudajevagatve.lv/eozol#DomainNT
-:DomainNT rdf:type owl:NamedIndividual ,
-                   :Domain ;
+eliozo:DomainNT rdf:type owl:NamedIndividual ,
+                   eliozo:Domain ;
           eliozo:topicID "NT"@lv ,
                          "Skaitļu teorija"@lv .
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/EE.LO
-:EE.LO rdf:type owl:NamedIndividual ,
+eliozo:EE.LO rdf:type owl:NamedIndividual ,
                 eliozo:Olympiad ;
        eliozo:olympiadCountry eliozo:EE ;
        eliozo:olympiadCode "LO"@lv ;
@@ -589,7 +589,7 @@ eliozo:LV.VOL rdf:type owl:NamedIndividual ,
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/EE.LVS
-:EE.LVS rdf:type owl:NamedIndividual ,
+eliozo:EE.LVS rdf:type owl:NamedIndividual ,
                  eliozo:Olympiad ;
         eliozo:olympiadCountry eliozo:EE ;
         eliozo:olympiadCode "LVS"@lv ;
@@ -599,7 +599,7 @@ eliozo:LV.VOL rdf:type owl:NamedIndividual ,
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/EE.LVT
-:EE.LVT rdf:type owl:NamedIndividual ,
+eliozo:EE.LVT rdf:type owl:NamedIndividual ,
                  eliozo:Olympiad ;
         eliozo:olympiadCountry eliozo:EE ;
         eliozo:olympiadCode "LVT"@lv ;
@@ -609,7 +609,7 @@ eliozo:LV.VOL rdf:type owl:NamedIndividual ,
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/EE.TST
-:EE.TST rdf:type owl:NamedIndividual ,
+eliozo:EE.TST rdf:type owl:NamedIndividual ,
                  eliozo:Olympiad ;
         eliozo:olympiadCountry eliozo:EE ;
         eliozo:olympiadCode "TST"@lv ;
@@ -619,7 +619,7 @@ eliozo:LV.VOL rdf:type owl:NamedIndividual ,
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/LT.LKMMO
-:LT.LKMMO rdf:type owl:NamedIndividual ,
+eliozo:LT.LKMMO rdf:type owl:NamedIndividual ,
                    eliozo:Olympiad ;
           eliozo:olympiadCountry eliozo:LT ;
           eliozo:olympiadCode "LKMMO"@lv ;
@@ -629,7 +629,7 @@ eliozo:LV.VOL rdf:type owl:NamedIndividual ,
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/LT.LMMO
-:LT.LMMO rdf:type owl:NamedIndividual ,
+eliozo:LT.LMMO rdf:type owl:NamedIndividual ,
                   eliozo:Olympiad ;
          eliozo:olympiadCountry eliozo:LT ;
          eliozo:olympiadCode "LMMO"@lv ;
@@ -639,7 +639,7 @@ eliozo:LV.VOL rdf:type owl:NamedIndividual ,
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/LT.RAJ
-:LT.RAJ rdf:type owl:NamedIndividual ,
+eliozo:LT.RAJ rdf:type owl:NamedIndividual ,
                  eliozo:Olympiad ;
         eliozo:olympiadCountry eliozo:LT ;
         eliozo:olympiadCode "RAJ"@lv ;
@@ -649,7 +649,7 @@ eliozo:LV.VOL rdf:type owl:NamedIndividual ,
 
 
 ###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/LT.TST
-:LT.TST rdf:type owl:NamedIndividual ,
+eliozo:LT.TST rdf:type owl:NamedIndividual ,
                  eliozo:Olympiad ;
         eliozo:olympiadCountry eliozo:LT ;
         eliozo:olympiadCode "TST"@lv ;

@@ -140,7 +140,10 @@ skaitļa $2^n$ pirmo ciparu, iegūst divnieka pakāpi ar naturālu kāpinātāju
     eliozo:problemYear 2001 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindAll" ;
-    eliozo:topic "IntegerFactorization" .
+    eliozo:topic eliozo:CountingObjects,
+        eliozo:DivisibilityRulesFor3And9,
+        eliozo:IntegerFactorization,
+        eliozo:PeriodicRemainders .
 
 eliozo:LV.VOL.2001.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -210,7 +213,8 @@ koordinātas ir veseli skaitļi.<br />
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove",
         "ProveDisprove" ;
-    eliozo:topic "BezoutIdentity" .
+    eliozo:topic eliozo:BezoutIdentity,
+        eliozo:PythagoreanTriples .
 
 eliozo:LV.VOL.2001.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -324,7 +328,8 @@ veido aritmētisku progresiju?</p>"""@lv ;
     eliozo:problemYear 2002 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindAll" ;
-    eliozo:topic "ArithmeticAndGeometricSeries" .
+    eliozo:topic eliozo:ArithmeticAndGeometricSeries,
+        eliozo:IntegerFactorization .
 
 eliozo:LV.VOL.2002.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -362,7 +367,8 @@ skaitļa kubs. Kādas ir $x$ un $y$ vērtības?</p>"""@lv ;
     eliozo:problemYear 2002 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
-    eliozo:topic "ExhaustionMethod" .
+    eliozo:topic eliozo:ExhaustionMethod,
+        eliozo:FactorizationAndProperties .
 
 eliozo:LV.VOL.2003.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -475,7 +481,9 @@ dalās ar naturālu skaitli $x$. Kādas var būt $x$ vērtības?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
-    eliozo:topic "EuclideanAlgorithm" .
+    eliozo:topic eliozo:DivisibilityRuleFor11,
+        eliozo:EuclideanAlgorithm,
+        eliozo:ExtremeElementMethod .
 
 eliozo:LV.VOL.2004.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1380,7 +1388,8 @@ $f(2011) = 100$, bet $f(11) = 1000$?</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:topic "AdvancedIdentities" .
+    eliozo:topic eliozo:AdvancedIdentities,
+        eliozo:PolynomialDifferenceDivisibility .
 
 eliozo:LV.VOL.2011.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1501,8 +1510,9 @@ Pierādīt, ka skaitļa $N^2$ decimālajā pierakstā nav cipara $0$.</p>"""@lv 
     eliozo:problemYear 2012 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
-    eliozo:strategy "TrialAndError " ;
-    eliozo:topic "PeriodicDigitGroups" .
+    eliozo:strategy "TrialAndError" ;
+    eliozo:topic eliozo:PeriodicDigitGroups,
+        eliozo:SeriesMembersSumsClosedFormulas .
 
 eliozo:LV.VOL.2012.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1638,7 +1648,8 @@ nav atrisinājuma naturālos skaitļos.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove" ;
-    eliozo:topic "NumTheoryInequalityLargeIntervals" .
+    eliozo:topic eliozo:CountingUsingSymmetry,
+        eliozo:NumTheoryInequalityLargeIntervals .
 
 eliozo:LV.VOL.2013.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1660,7 +1671,9 @@ skaitļa kvadrāti.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "Prove" ;
-    eliozo:topic "ModularArithmetic" .
+    eliozo:topic eliozo:FibonacciNumbers,
+        eliozo:ModularArithmetic,
+        eliozo:PeriodicRemainders .
 
 eliozo:LV.VOL.2013.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1796,7 +1809,8 @@ $\\frac{n^3+3}{n+3}$, gan $\\frac{n^4+4}{n+4}$ ir veseli skaitļi.</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
-    eliozo:topic "DivisorNumberAndSum" .
+    eliozo:topic eliozo:DivisorNumberAndSum,
+        eliozo:PolynomialLongDivision .
 
 eliozo:LV.VOL.2014.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1820,7 +1834,8 @@ iespējams apmaksāt izmantojot tikai šīs pastmarkas?</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindOptimal" ;
-    eliozo:topic "NumTheoryInequalityLargeIntervals" .
+    eliozo:topic eliozo:ArithmeticSeriesAll,
+        eliozo:NumTheoryInequalityLargeIntervals .
 
 eliozo:LV.VOL.2014.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1947,7 +1962,9 @@ dalās ar $10$.</p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "Prove" ;
-    eliozo:topic "ModularArithmetic" .
+    eliozo:topic eliozo:DivisibilityProperties,
+        eliozo:ModularArithmetic,
+        eliozo:ModularParity .
 
 eliozo:LV.VOL.2015.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -2130,7 +2147,8 @@ Pierādīt, ka arī $x^{433}y$ ir naturāla skaitļa 2016. pakāpe!</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove" ;
-    eliozo:topic "LinearSystemsTransforms" .
+    eliozo:topic eliozo:FactorizationAndProperties,
+        eliozo:LinearSystemsTransforms .
 
 eliozo:LV.VOL.2016.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -2150,7 +2168,8 @@ $$\\frac{1}{n}=\\frac{1}{x(x+1)}+\\frac{1}{(x+1)(x+2)}+\\cdots{}+\\frac{1}{y(y+1
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
-    eliozo:topic "TelescopicSums" .
+    eliozo:topic eliozo:StandardIdentities,
+        eliozo:TelescopicSums .
 
 eliozo:LV.VOL.2016.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -2343,7 +2362,10 @@ Pierādīt, ka tā ciparus var pārkārtot citā secībā tā, lai jauniegūtais
     eliozo:problemYear 2017 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "Prove" ;
-    eliozo:topic "ExhaustionMethod" .
+    eliozo:topic eliozo:DivisibilityRulesFor2And4,
+        eliozo:ExhaustionMethod,
+        eliozo:ModularArithmetic,
+        eliozo:NotationShift .
 
 eliozo:LV.VOL.2017.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -2463,7 +2485,9 @@ Piemēram, skaists trijnieks ir $8$, $9$, $10$.
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample",
         "Prove" ;
-    eliozo:topic "NotationInsert" .
+    eliozo:topic eliozo:DivisibilityRulesFor2And4,
+        eliozo:DivisibilityRulesFor3And9,
+        eliozo:NotationInsert .
 
 eliozo:LV.VOL.2018.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -2547,7 +2571,7 @@ var izteikt kā pirmskaitļa un salikta skaitļa summu!</p>"""@lv ;
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove" ;
     eliozo:strategy "TrialAndError" ;
-    eliozo:topic "ModularParity" .
+    eliozo:topic eliozo:ModularParity .
 
 eliozo:LV.VOL.2019.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -2566,7 +2590,8 @@ vērtība nav naturāla skaitļa kvadrāts!</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
-    eliozo:topic "DivisibilityRulesOther" .
+    eliozo:topic eliozo:DivisibilityRulesOther,
+        eliozo:PeriodicRemainders .
 
 eliozo:LV.VOL.2019.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -2724,7 +2749,7 @@ un šis skaitlis dalās ar savu ciparu summu.
 Pierādīt, ka ir bezgalīgi daudz elegantu skaitļu!</p>"""@lv ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove " .
+    eliozo:questionType "Prove" .
 
 eliozo:LV.VOL.2022.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;

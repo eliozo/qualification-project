@@ -13,7 +13,7 @@ $p^3 + 2008$ un $p^3 + 2010$ arī
 ir pirmskaitļi?</p>"""@lv ;
     eliozo:problem_number 1 ;
     eliozo:strategy "ModularArithmeticContradiction" ;
-    eliozo:topic "ModularArithmeticContradiction" .
+    eliozo:topic eliozo:ModularArithmeticContradiction .
 
 eliozo:EE.LVS.2009.9_10.1 a eliozo:Problem ;
     eliozo:problemBook "EE" ;
@@ -26,7 +26,10 @@ ir vesela skaitļa kvadrāts."""@lv ;
 $1 + 2^2 + 3^3 + 4^n$
 ir vesela skaitļa kvadrāts.</p>"""@lv ;
     eliozo:problem_number 1 ;
-    eliozo:topic "ExhaustionMethod" .
+    eliozo:topic eliozo:ExhaustionMethod,
+        eliozo:FullPowerGaps,
+        eliozo:NumTheoryInequalityMethod,
+        eliozo:StandardIdentities .
 
 eliozo:EE.LVS.2010.11_12.1 a eliozo:Problem ;
     eliozo:problemBook "EE" ;
@@ -178,7 +181,7 @@ $i$ un $j$, kur $i &lt; j$, summa
 $$\\frac{1}{a_i} + \\frac{1}{a_{i+1}} + \\ldots + \\frac{1}{a_j}$$
 nav vesels skaitlis.</p>"""@lv ;
     eliozo:problem_number 1 ;
-    eliozo:topic "ValuationChange" .
+    eliozo:topic eliozo:ValuationChange .
 
 eliozo:EE.LVS.2011.9_10.1 a eliozo:Problem ;
     eliozo:problemBook "EE" ;

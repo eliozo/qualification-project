@@ -415,7 +415,7 @@ lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.<b
     eliozo:problem_number 1 ;
     eliozo:questionType "FindExample" ;
     eliozo:seeAlso "LV.AMO.2023.6.1" ;
-    eliozo:topic "ArithmeticIdentities" .
+    eliozo:topic eliozo:ArithmeticIdentities .
 
 eliozo:LV.AMO.2023.5.2 a eliozo:Problem ;
     eliozo:LTopic "LTNumeralSystems" ;
@@ -441,7 +441,7 @@ cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:strategy "CaseAnalysis" ;
-    eliozo:topic "ModularArithmeticLastDigit" .
+    eliozo:topic eliozo:ModularArithmeticLastDigit .
 
 eliozo:LV.AMO.2023.5.3 a eliozo:Problem ;
     eliozo:LTopic "LTIntegerLattices" ;
@@ -463,7 +463,7 @@ laukuma vērtība ir tāda pati kā malu skaits!</p>"""@lv ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample" ;
     eliozo:strategy "TrialAndError" ;
-    eliozo:topic "SquareGridShapes" .
+    eliozo:topic eliozo:SquareGridShapes .
 
 eliozo:LV.AMO.2023.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -499,7 +499,7 @@ rūtiņas var pārvietot uz kreiso augšējo rūtiņu, ja kvadrāta izmēri ir:
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:topic "InvariantParity" .
+    eliozo:topic eliozo:InvariantParity .
 
 eliozo:LV.AMO.2023.5.5 a eliozo:Problem ;
     eliozo:LTTopic "LTExtremes" ;
@@ -523,7 +523,7 @@ Kāds ir lielākais iespējamais viesu skaits, kas bija ieradušies uz Gunas dzi
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindOptimal" ;
-    eliozo:topic "PigeonholePrincipleForExtremes" .
+    eliozo:topic eliozo:PigeonholePrincipleForExtremes .
 
 eliozo:LV.AMO.2023.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;

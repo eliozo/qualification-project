@@ -16,7 +16,8 @@ kurš satur tos vienādā skaitā un dalās ar $5$ un $9$."""@lv ;
 kurš satur tos vienādā skaitā un dalās ar $5$ un $9$.</p>"""@lv ;
     eliozo:problemYear 1994 ;
     eliozo:problem_number 2 ;
-    eliozo:topic "DivisibilityRulesLastDigits" .
+    eliozo:topic eliozo:DivisibilityRulesFor3And9,
+        eliozo:DivisibilityRulesLastDigits .
 
 eliozo:EE.PK.1994.8.2 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1343,7 +1344,10 @@ skaitlis, kurš ir vesela skaitļa kvadrāts, un, pierakstot tam sākumā
 ciparu 1, arī rodas kāda vesela skaitļa kvadrāts.</p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 5 ;
-    eliozo:topic "StandardIdentities" .
+    eliozo:topic eliozo:CountingObjects,
+        eliozo:DigitsInOperationResult,
+        eliozo:NumericAlgorithms,
+        eliozo:StandardIdentities .
 
 eliozo:EE.PK.2010.7.1 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1432,7 +1436,8 @@ skaitli $m$, iegūstot dalījumu un atlikumu.</p>
   savā starpā vienādi?</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:topic "CongruenceClasses" .
+    eliozo:topic eliozo:CongruenceClasses,
+        eliozo:IntegerCongruence .
 
 eliozo:EE.PK.2011.7.1 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1528,7 +1533,8 @@ kuri apmierina vienādojumu $(a + b)(b + c)(c + a) = 123456789$?"""@lv ;
 kuri apmierina vienādojumu $(a + b)(b + c)(c + a) = 123456789$?</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 4 ;
-    eliozo:topic "ModularParity" .
+    eliozo:topic eliozo:DivisibilityRulesFor2And4,
+        eliozo:ModularParity .
 
 eliozo:EE.PK.2012.7.3 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1601,7 +1607,9 @@ veselu skaitļu kvadrātiem atradīsies divi tādi, kuru starpība
 dalās ar $10$.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
-    eliozo:topic "NumTheoryPigeonhole" .
+    eliozo:topic eliozo:ExhaustionMethod,
+        eliozo:ModularArithmetic,
+        eliozo:NumTheoryPigeonhole .
 
 eliozo:EE.PK.2013.8.1 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1654,7 +1662,9 @@ Jebkuru divu virsotņu skaitļu reizinājums dalās ar skaitli trešajā virsotn
 Atrast visas iespējamās $n$ vērtības.</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
-    eliozo:topic "ExhaustionMethod" .
+    eliozo:topic eliozo:ExhaustionMethod,
+        eliozo:GcdAndLcm,
+        eliozo:GcdAndLcmProperties .
 
 eliozo:EE.PK.2014.7.1 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1747,7 +1757,10 @@ eliozo:EE.PK.2015.10.3 a eliozo:Problem ;
   Tas pats jautājums, ja $x$ un $y$ ir veseli skaitļi.</p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 3 ;
-    eliozo:topic "LinearSystemsTransforms" .
+    eliozo:topic eliozo:ExhaustionMethod,
+        eliozo:LinearSystemsTransforms,
+        eliozo:ModularParity,
+        eliozo:StandardIdentities .
 
 eliozo:EE.PK.2015.10.6 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1764,7 +1777,8 @@ veselo skaitļu no $1$ līdz $n$ ciparu summa ir pāru skaitlis?"""@lv ;
 veselo skaitļu no $1$ līdz $n$ ciparu summa ir pāru skaitlis?</p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 6 ;
-    eliozo:topic "NumTheoryMathInduction" .
+    eliozo:topic eliozo:CountingObjects,
+        eliozo:NumTheoryMathInduction .
 
 eliozo:EE.PK.2015.8.1 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1812,7 +1826,8 @@ būtu vienāda ar to mazāko kopīgo dalāmo, ja </p>
 (B) $n = 3$?</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
-    eliozo:topic "GcdAndLcmProperties" .
+    eliozo:topic eliozo:GcdAndLcmProperties,
+        eliozo:NumTheoryExprForConcepts .
 
 eliozo:EE.PK.2016.10.4 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1831,7 +1846,9 @@ $x^2 + y^2 + z^2 + w^2 = 3 + xy + yz + zw$,
 atrisinājums, kuram $x$, $y$, $z$ un $w$ ir dažādi veseli skaitļi?</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 4 ;
-    eliozo:topic "NumTheoryInequalityMethod" .
+    eliozo:topic eliozo:AddingOrMultiplyingInequalities,
+        eliozo:CompletingSquare,
+        eliozo:NumTheoryInequalityMethod .
 
 eliozo:EE.PK.2016.7.3 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1912,7 +1929,10 @@ $324^{x+y} = 2^{x−y} \\cdot 3^{x−3} \\cdot 4^{y−4}$."""@lv ;
 $324^{x+y} = 2^{x−y} \\cdot 3^{x−3} \\cdot 4^{y−4}$.</p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 2 ;
-    eliozo:topic "LinearSystemsTransforms" .
+    eliozo:topic eliozo:CanonicalFactorization,
+        eliozo:LinearSystemsTransforms,
+        eliozo:StandardIdentities,
+        eliozo:SystemOfEqualExponents .
 
 eliozo:EE.PK.2017.10.3 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1931,7 +1951,10 @@ dažādi naturāli skaitļi, kuriem
 $$\\frac{1}{a} - \\frac{1}{b} =\\frac{1}{b} - \\frac{1}{c} =\\frac{1}{c} - \\frac{1}{d}.$$</p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 3 ;
-    eliozo:topic "SymmetricAlgebraicExpressions" .
+    eliozo:topic eliozo:CountingObjects,
+        eliozo:CountingUsingSymmetry,
+        eliozo:SeriesMembersSumsClosedFormulas,
+        eliozo:SymmetricAlgebraicExpressions .
 
 eliozo:EE.PK.2017.7.1 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -2022,7 +2045,9 @@ negaidīti ieguva tādu pašu trīsciparu skaitli.
 Atrast visas iespējamās vērtības Mari iedomātajam skaitlim.</p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 3 ;
-    eliozo:topic "ExhaustionMethod" .
+    eliozo:topic eliozo:ExhaustionMethod,
+        eliozo:NotationPolynomial,
+        eliozo:NumTheoryExpr .
 
 eliozo:EE.PK.2019.10.3 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -2039,7 +2064,10 @@ kas apmierina vienādību $22a + 15b = 2019$?"""@lv ;
 kas apmierina vienādību $22a + 15b = 2019$?</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 3 ;
-    eliozo:topic "ArithmeticSeriesGaps" .
+    eliozo:topic eliozo:ArithmeticSeriesGaps,
+        eliozo:CountingObjects,
+        eliozo:ModularArithmetic,
+        eliozo:NumTheoryExtremeElement .
 
 eliozo:EE.PK.2019.7.1 a eliozo:Problem ;
     eliozo:country "EE" ;

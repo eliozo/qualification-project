@@ -40,7 +40,8 @@ genre=integer-equation
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
     eliozo:strategy "ExtremeElement" ;
-    eliozo:topic "ExhaustionMethod" .
+    eliozo:topic eliozo:ExhaustionMethod,
+        eliozo:NumTheoryInequalityMethod .
 
 eliozo:EE.LO.2011.10.2 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -126,7 +127,9 @@ eliozo:EE.LO.2013.10.1 a eliozo:Problem ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindExample" ;
     eliozo:strategy "ModularArithmeticContradiction" ;
-    eliozo:topic "ModularArithmeticContradiction" .
+    eliozo:topic eliozo:DivisibilityRulesForRemainders,
+        eliozo:ModularArithmetic,
+        eliozo:ModularArithmeticContradiction .
 
 eliozo:EE.LO.2014.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -490,7 +493,8 @@ eliozo:EE.LO.2019.10.1 a eliozo:Problem ;
     eliozo:problemTextHtml "<p>Atrast visus veselu skaitļu pārus $(x, y)$, kuriem $x − y = \\frac{x}{y}$.</p>"@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 1 ;
-    eliozo:topic "MutualPrimes" .
+    eliozo:topic eliozo:MutualPrimes,
+        eliozo:StandardIdentities .
 
 eliozo:SOLN.EE.LO.2010.10.2 a eliozo:Solution ;
     eliozo:solutionNum 0 ;

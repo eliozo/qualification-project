@@ -387,7 +387,6 @@ Parādiet, kā tas, kas izdara pirmo gājienu, var uzvarēt.
 
 <small>
 
-* topic:
 * genre:game
 * concepts:divisibility
 * questionType:Algorithm
@@ -568,7 +567,6 @@ Parādiet, kā tas, kas izdara pirmo gājienu, var uzvarēt.
 
 <small>
 
-* topic:
 * genre:game
 * concepts:divisibility
 * questionType:Algorithm

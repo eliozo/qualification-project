@@ -27,28 +27,35 @@ def readCSVfile(g): # Funkcija, kas lasa CSV failu
             if line_count == 1:
                 continue
             # skill_numeric_id = row[0]+'.'+row[1]+'.'+row[2]+'.'+row[3]+'.'+row[4]
-            skill_numeric_id = row[0:5]
+            skill_numeric_id = [int(i) for i in row[0:5]]
             last_non_zero = 0
-            if row[4] != 0:
+            # row labels for the current row
+
+            if skill_numeric_id[4] != 0:
                 last_non_zero = 4
-            elif row[3] != 0:
+            elif skill_numeric_id[3] != 0:
                 last_non_zero = 3
-            elif row[2] != 0:
+            elif skill_numeric_id[2] != 0:
                 last_non_zero = 2
-            elif row[1] != 0:
+            elif skill_numeric_id[1] != 0:
                 last_non_zero = 1
-            elif row[0] != 0:
+            elif skill_numeric_id[0] != 0:
                 last_non_zero = 0
 
             skill_id = row[5]
             skill_prefLabel = row[5]
             skill_name = row[6]
             skill_description = row[7]
-            current_label = '.'.join(skill_numeric_id)
+            current_label = '.'.join([str(i) for i in skill_numeric_id])
             label_dictionary[current_label] = skill_id
-            parent_skill_id = copy.copy(skill_id)
+            parent_skill_id = copy.copy(skill_numeric_id)
+            print(f'parent_skill_id = {parent_skill_id}, last_non_zero = {last_non_zero}')
             parent_skill_id[last_non_zero] = 0
-            parent_label = '.'.join(parent_skill_id)
+            parent_id_str = '.'.join([str(i) for i in parent_skill_id])
+            if parent_id_str == '0.0.0.0.0':
+                parent_label = ''
+            else:
+                parent_label = label_dictionary[parent_id_str]
 
             # x = skill_id.rfind(".")
             # if x == -1:
@@ -56,12 +63,12 @@ def readCSVfile(g): # Funkcija, kas lasa CSV failu
             # else:
             #     parent_skill_id = skill_id[:x]
             addToRdfGraph(g,
-                          skill_numeric_id,
+                          current_label,
                           skill_id,
                           skill_description,
                           skill_prefLabel,
                           skill_name,
-                          parent_skill_id)
+                          parent_label)
 	
 # skillDescription ir string mainīgais, kurā glabājas RDF objekta vērtība
 def addToRdfGraph(g, numeric_id, skillID, skillDescription, prefLabel, skill_name, parentSkill_id):

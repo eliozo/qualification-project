@@ -39,7 +39,9 @@ Atrast skaitļu $a_{1989}$ un $a_{1990}$ lielāko kopīgo dalītāju."""@lv ;
 $$a_1=19,\\;a_2=90,\\;a_{n+2}=a_n+a_{n+1},\\;\\mbox{ja}\\;n=1,2,3,\\ldots.$$
 Atrast skaitļu $a_{1989}$ un $a_{1990}$ lielāko kopīgo dalītāju.</p>"""@lv ;
     eliozo:problem_number 104 ;
-    eliozo:topic "NumTheoryMathInduction" .
+    eliozo:topic eliozo:InvariantAlgebraic,
+        eliozo:LinearRecurrencesConstant,
+        eliozo:NumTheoryMathInduction .
 
 eliozo:BBK2012.P1.11 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -105,7 +107,7 @@ ir bezgalīgi daudz locekļu, kas ir savstarpēji pirmskaitļi ar skaitli $m$.""
 Pierādiet, ka aritmētiskajā progresijā $ak+b$, ($k=0,1,2,\\ldots$) 
 ir bezgalīgi daudz locekļu, kas ir savstarpēji pirmskaitļi ar skaitli $m$.</p>"""@lv ;
     eliozo:problem_number 119 ;
-    eliozo:topic "ArithmeticSeriesAll" .
+    eliozo:topic eliozo:ArithmeticSeriesAll .
 
 eliozo:BBK2012.P1.12 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -134,7 +136,9 @@ lielāko kopīgo dalītāju."""@lv ;
 ja $n \\geq 1$. Atrast skaitļu $x_{1995}$ un $x_{1996}$ 
 lielāko kopīgo dalītāju.</p>"""@lv ;
     eliozo:problem_number 121 ;
-    eliozo:topic "NumTheoryMathInduction" .
+    eliozo:topic eliozo:InvariantAlgebraic,
+        eliozo:NonlinearRecurrences,
+        eliozo:NumTheoryMathInduction .
 
 eliozo:BBK2012.P1.122 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -144,7 +148,9 @@ dalās ar $7$?"""@lv ;
     eliozo:problemTextHtml """<p>Cik daudz ir tādu naturālu skaitļu $n \\leq 1983$, kuriem $3n+5$ 
 dalās ar $7$?</p>"""@lv ;
     eliozo:problem_number 122 ;
-    eliozo:topic "SequencePeriodicity" .
+    eliozo:topic eliozo:ArithmeticSeriesDivisibility,
+        eliozo:MultiplesInInterval,
+        eliozo:SequencePeriodicity .
 
 eliozo:BBK2012.P1.123 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -154,7 +160,10 @@ kuri nedalās ne ar $5$, ne ar $7$?"""@lv ;
     eliozo:problemTextHtml """<p>Cik daudz ir tādu naturālu skaitļu $n \\leq 1000$, 
 kuri nedalās ne ar $5$, ne ar $7$?</p>"""@lv ;
     eliozo:problem_number 123 ;
-    eliozo:topic "MultiplesInInterval" .
+    eliozo:topic eliozo:ArithmeticSeriesDivisibility,
+        eliozo:GcdAndLcm,
+        eliozo:MultiplesInInterval,
+        eliozo:SequencePeriodicity .
 
 eliozo:BBK2012.P1.124 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -175,7 +184,8 @@ vai nu ar $3$, vai ar $5$.</p>
 questionType=FindAll
 -->"""@lv ;
     eliozo:problem_number 124 ;
-    eliozo:topic "SequencePeriodicity" .
+    eliozo:topic eliozo:InclusionExclusionPrinciple,
+        eliozo:SequencePeriodicity .
 
 eliozo:BBK2012.P1.125 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -185,7 +195,8 @@ un kuri dalās ar $3$?"""@lv ;
     eliozo:problemTextHtml """<p>Cik daudz tādu piecciparu skaitļu, kuru pēdējais cipars ir $6$, 
 un kuri dalās ar $3$?</p>"""@lv ;
     eliozo:problem_number 125 ;
-    eliozo:topic "SequencePeriodicity" .
+    eliozo:topic eliozo:ChineseRemainderTheorem,
+        eliozo:SequencePeriodicity .
 
 eliozo:BBK2012.P1.126 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -199,7 +210,7 @@ skaitļus tā, lai starp jebkuriem trim izvēlētajiem būtu vismaz divi,
 kuru lielākais kopīgais dalītājs pārsniedz vieninieku.
 Pietiek uzrādīt vienu šādu $1328$ skaitļu komplektu.</p>"""@lv ;
     eliozo:problem_number 126 ;
-    eliozo:topic "SequencePeriodicity" .
+    eliozo:topic eliozo:SequencePeriodicity .
 
 eliozo:BBK2012.P1.127 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -658,7 +669,7 @@ Atrast lielāko iespējamo diferences vērtību, ja zināms, ka tā ir vesels sk
 Atrast lielāko iespējamo diferences vērtību, ja zināms, ka tā ir vesels skaitlis.</p>"""@lv ;
     eliozo:problem_number 36 ;
     eliozo:questionType "FindOptimal" ;
-    eliozo:topic "GcdAndLcm" .
+    eliozo:topic eliozo:GcdAndLcm .
 
 eliozo:BBK2012.P1.4 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -690,7 +701,7 @@ piederētu vismaz vienai progresijai?"""@lv ;
 kuru locekļi ir naturāli skaitļi, ka jebkurš naturāls skaitlis 
 piederētu vismaz vienai progresijai?</p>"""@lv ;
     eliozo:problem_number 52 ;
-    eliozo:topic "GeometricSeriesGaps" .
+    eliozo:topic eliozo:GeometricSeriesGaps .
 
 eliozo:BBK2012.P1.6 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;
@@ -785,7 +796,7 @@ Kāda var būt lielākā šīs progresijas diferences vērtība?"""@lv ;
 $13$, $37$ un $79$. 
 Kāda var būt lielākā šīs progresijas diferences vērtība?</p>"""@lv ;
     eliozo:problem_number 94 ;
-    eliozo:topic "GcdAndLcm" .
+    eliozo:topic eliozo:GcdAndLcm .
 
 eliozo:BBK2012.P1.97 a eliozo:Problem ;
     eliozo:problemBook "BBK2012" ;

@@ -29,7 +29,11 @@ yra natūralieji.
 </text></p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
-    eliozo:topic "ChineseRemainderTheorem" .
+    eliozo:topic eliozo:ArithmeticSeriesGaps,
+        eliozo:CanonicalFactorization,
+        eliozo:ChineseRemainderTheorem,
+        eliozo:GcdAndLcmProperties,
+        eliozo:PrimeFactorizationAndPowers .
 
 eliozo:LT.VUMIF.2016.11_12.1 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -128,7 +132,9 @@ yra natūralusis.
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
     eliozo:strategy "CaseAnalysis" ;
-    eliozo:topic "ExhaustionMethod" .
+    eliozo:topic eliozo:ExhaustionMethod,
+        eliozo:NumTheoryInequalityMethod,
+        eliozo:PolynomialLongDivision .
 
 eliozo:LT.VUMIF.2017.10.1 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -191,7 +197,10 @@ $$m^2 + 2m - 9 = n^2 + n.$$
 </text></p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 2 ;
-    eliozo:topic "ExhaustionMethod" .
+    eliozo:topic eliozo:CompletingSquare,
+        eliozo:ExhaustionMethod,
+        eliozo:FullPowerGaps,
+        eliozo:NumTheoryInequalityLargeIntervals .
 
 eliozo:LT.VUMIF.2017.11_12.2 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -265,7 +274,7 @@ skaičių $0$, pralaimi. Nustatykite, kuris
 </text></p>"""@lv ;
     eliozo:problem_number 4 ;
     eliozo:strategy "BeginAtTheEnd" ;
-    eliozo:topic "GameInvariant" .
+    eliozo:topic eliozo:GameInvariant .
 
 eliozo:LT.VUMIF.2017.9.2 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -299,7 +308,8 @@ kad vienas skaičius būtų kito kvadratas?<br />
 </text></p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 2 ;
-    eliozo:topic "ExhaustionMethod" .
+    eliozo:topic eliozo:DigitsInOperationResult,
+        eliozo:ExhaustionMethod .
 
 eliozo:LT.VUMIF.2018.10.4 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -335,7 +345,8 @@ skaidinys pirminiais daugikliais.
 </text></p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
-    eliozo:topic "FactorizationAndDivisibility" .
+    eliozo:topic eliozo:DivisorNumberAndSum,
+        eliozo:FactorizationAndDivisibility .
 
 eliozo:LT.VUMIF.2018.11_12.4 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -453,7 +464,9 @@ skaičius dalijasi iš kito, tai jie lygūs.
 </text></p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 4 ;
-    eliozo:topic "ModularArithmetic" .
+    eliozo:topic eliozo:DivisibilityRulesForRemainders,
+        eliozo:Invariant,
+        eliozo:ModularArithmetic .
 
 eliozo:LT.VUMIF.2019.11_12.4 a eliozo:Problem ;
     eliozo:problemBook "LT" ;
@@ -499,7 +512,11 @@ išskyrus save patį;
 b) $N$ nesidalija iš jokio penktinio skaičiaus.
 </text></p>"""@lv ;
     eliozo:problem_number 4 ;
-    eliozo:topic "ExhaustionMethod" .
+    eliozo:topic eliozo:ChineseRemainderTheorem,
+        eliozo:DivisibilityRulesForRemainders,
+        eliozo:ExhaustionMethod,
+        eliozo:ModularArithmetic,
+        eliozo:NumTheoryInequalityLargeIntervals .
 
 eliozo:LT.VUMIF.2019.9.1 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -620,7 +637,9 @@ kad ir kaip žaistų Algis.
     eliozo:problemYear 2019 ;
     eliozo:problem_number 2 ;
     eliozo:strategy "WorkingBackwards" ;
-    eliozo:topic "StrongAndReverseInduction" .
+    eliozo:topic eliozo:GameInvariant,
+        eliozo:ModularParity,
+        eliozo:StrongAndReverseInduction .
 
 eliozo:LT.VUMIF.2019.9.4 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -664,7 +683,11 @@ galėjo gauti? Raskite visas galimybes.
 </text></p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 4 ;
-    eliozo:topic "DivisibilityRulesLastDigits" .
+    eliozo:topic eliozo:CongruenceEquations,
+        eliozo:CountingUsingSymmetry,
+        eliozo:DivisibilityRulesLastDigits,
+        eliozo:ExhaustionMethod,
+        eliozo:ModularArithmeticOther .
 
 eliozo:IMG.LT.VUMIF.2017.11_12.4.svg a eliozo:Image ;
     eliozo:imageSrc "LT.VUMIF.2017.11_12.4.svg" ;
