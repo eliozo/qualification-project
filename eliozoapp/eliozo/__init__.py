@@ -670,6 +670,7 @@ def create_app(test_config=None):
         for skill_item in all_skills['results']['bindings']: # all_skills saraksts ar vārdnīcām
             prefLabel = skill_item['prefLabel']['value']
             skillName = skill_item['skillName']['value']
+            skillName = mathBeautify(skillName)
             skillNum = skill_item['num']['value']
             dd = {'prefLabel': prefLabel, 'skillNum': skillNum, 'skillName': skillName}
             skill_list.append(dd)
