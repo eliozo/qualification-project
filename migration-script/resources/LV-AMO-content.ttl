@@ -53,13 +53,15 @@ eliozo:LV.AMO.2000.11.4 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2000.11.4" ;
     eliozo:problemText """Funkcijas $f(x)$ argumenti un vērtības ir naturāli skaitļi. 
 Katram naturālam $x$ izpildās vienādība
+
 $$f(f(x))+f(x) = 2x.$$
+
 Atrast visas šādas funkcijas $f(x)$ un pierādīt, 
 ka citu bez atrastajām nav."""@lv ;
     eliozo:problemTextHtml """<p>Funkcijas $f(x)$ argumenti un vērtības ir naturāli skaitļi. 
-Katram naturālam $x$ izpildās vienādība
-$$f(f(x))+f(x) = 2x.$$
-Atrast visas šādas funkcijas $f(x)$ un pierādīt, 
+Katram naturālam $x$ izpildās vienādība</p>
+<p>$$f(f(x))+f(x) = 2x.$$</p>
+<p>Atrast visas šādas funkcijas $f(x)$ un pierādīt, 
 ka citu bez atrastajām nav.</p>"""@lv ;
     eliozo:problemYear 2000 ;
     eliozo:problem_number 4 ;
@@ -75,9 +77,10 @@ eliozo:LV.AMO.2000.12.2 a eliozo:Problem ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2000.12.2" ;
     eliozo:problemText """Atrisināt naturālos skaitļos vienādojumu
+
 $$\\left( 2a+b \\right) \\cdot \\left( 2b + a \\right) = 2^c.$$"""@lv ;
-    eliozo:problemTextHtml """<p>Atrisināt naturālos skaitļos vienādojumu
-$$\\left( 2a+b \\right) \\cdot \\left( 2b + a \\right) = 2^c.$$</p>"""@lv ;
+    eliozo:problemTextHtml """<p>Atrisināt naturālos skaitļos vienādojumu</p>
+<p>$$\\left( 2a+b \\right) \\cdot \\left( 2b + a \\right) = 2^c.$$</p>"""@lv ;
     eliozo:problemYear 2000 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" .
@@ -832,14 +835,16 @@ eliozo:LV.AMO.2004.12.1 a eliozo:Problem ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2004.12.1" ;
     eliozo:problemText """Dots, ka $n$ – naturāls skaitlis, $n>1$. Vai izteiksmi
+
 $$\\left( x^n + x^{n-1} + \\ldots + x + 1 \\right)^2 - x^n$$
+
 noteikti var izsacīt kā divu polinomu reizinājumu tā, 
 lai neviens no šiem polinomiem nebūtu
 konstante un visi abu polinomu 
 koeficienti būtu veseli skaitļi?"""@lv ;
-    eliozo:problemTextHtml """<p>Dots, ka $n$ – naturāls skaitlis, $n&gt;1$. Vai izteiksmi
-$$\\left( x^n + x^{n-1} + \\ldots + x + 1 \\right)^2 - x^n$$
-noteikti var izsacīt kā divu polinomu reizinājumu tā, 
+    eliozo:problemTextHtml """<p>Dots, ka $n$ – naturāls skaitlis, $n&gt;1$. Vai izteiksmi</p>
+<p>$$\\left( x^n + x^{n-1} + \\ldots + x + 1 \\right)^2 - x^n$$</p>
+<p>noteikti var izsacīt kā divu polinomu reizinājumu tā, 
 lai neviens no šiem polinomiem nebūtu
 konstante un visi abu polinomu 
 koeficienti būtu veseli skaitļi?</p>"""@lv ;
@@ -861,13 +866,15 @@ eliozo:LV.AMO.2004.12.3 a eliozo:Problem ;
     eliozo:problemText """Funkcijai $f(n)$ gan argumenti, gan vērtības 
 ir naturāli skaitļi, un katriem diviem naturāliem
 skaitļiem $x$ un $y$ pastāv vienādība
+
 $$xf(y)+yf(x)=(x+y)f(x^2+y^2).$$
+
 Atrast visas šādas funkcijas $f$ un pierādīt, ka citu bez jūsu atrastajām nav."""@lv ;
     eliozo:problemTextHtml """<p>Funkcijai $f(n)$ gan argumenti, gan vērtības 
 ir naturāli skaitļi, un katriem diviem naturāliem
-skaitļiem $x$ un $y$ pastāv vienādība
-$$xf(y)+yf(x)=(x+y)f(x^2+y^2).$$
-Atrast visas šādas funkcijas $f$ un pierādīt, ka citu bez jūsu atrastajām nav.</p>"""@lv ;
+skaitļiem $x$ un $y$ pastāv vienādība</p>
+<p>$$xf(y)+yf(x)=(x+y)f(x^2+y^2).$$</p>
+<p>Atrast visas šādas funkcijas $f$ un pierādīt, ka citu bez jūsu atrastajām nav.</p>"""@lv ;
     eliozo:problemYear 2004 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" .
@@ -906,11 +913,13 @@ eliozo:LV.AMO.2004.7.3 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2004.7.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2004.7.3 ;
     eliozo:problemText """Kādam mazākajam naturālajam $n$ visas daļas
+
 $$\\frac{5}{n+7}, \\frac{6}{n+8}, \\frac{7}{n+9}, \\ldots, \\frac{35}{n+37}, \\frac{36}{n+38}$$
+
 ir nesaīsināmas?"""@lv ;
-    eliozo:problemTextHtml """<p>Kādam mazākajam naturālajam $n$ visas daļas
-$$\\frac{5}{n+7}, \\frac{6}{n+8}, \\frac{7}{n+9}, \\ldots, \\frac{35}{n+37}, \\frac{36}{n+38}$$
-ir nesaīsināmas?</p>"""@lv ;
+    eliozo:problemTextHtml """<p>Kādam mazākajam naturālajam $n$ visas daļas</p>
+<p>$$\\frac{5}{n+7}, \\frac{6}{n+8}, \\frac{7}{n+9}, \\ldots, \\frac{35}{n+37}, \\frac{36}{n+38}$$</p>
+<p>ir nesaīsināmas?</p>"""@lv ;
     eliozo:problemYear 2004 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindOptimal" ;
@@ -1185,14 +1194,16 @@ eliozo:LV.AMO.2006.10.3 a eliozo:Problem ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2006.10.3" ;
     eliozo:problemText """Ir dots, ka, sareizinot visus naturālos skaitļus 
-no $1$ līdz $33$ ieskaitot, iegūst 
-$$86833176188xy8864955181944012zt000000,$$ 
+no $1$ līdz $33$ ieskaitot, iegūst
+
+$$86833176188xy8864955181944012zt000000,$$
+
 kur $x, y, z, t$ ir cipari. Noskaidrojiet $x$, 
 $y$, $z$ un $t$ vērtības."""@lv ;
     eliozo:problemTextHtml """<p>Ir dots, ka, sareizinot visus naturālos skaitļus 
-no $1$ līdz $33$ ieskaitot, iegūst 
-$$86833176188xy8864955181944012zt000000,$$ 
-kur $x, y, z, t$ ir cipari. Noskaidrojiet $x$, 
+no $1$ līdz $33$ ieskaitot, iegūst</p>
+<p>$$86833176188xy8864955181944012zt000000,$$</p>
+<p>kur $x, y, z, t$ ir cipari. Noskaidrojiet $x$, 
 $y$, $z$ un $t$ vērtības.</p>"""@lv ;
     eliozo:problemYear 2006 ;
     eliozo:problem_number 3 ;
@@ -1481,16 +1492,18 @@ kā divu veselu skaitļu kvadrātu summa.
 Pierādiet, ka arī reizinājums  ir izsakāms šādā veidā.  
 **(B)** atrodiet divus tādus polinomus ar veseliem koeficientiem 
 $f(x)$ un $g(x)$, ka visiem $x$ pastāv vienādība
+
 $$\\left( f(x) \\right)^2 + \\left( g(x) \\right)^2 =$$
+
 $$= \\left( x^2+1 \\right)\\left( x^2 + 4 \\right)
 \\left(x^2 + 2x + 2 \\right)\\left( x^2 - 2x + 2 \\right).$$"""@lv ;
     eliozo:problemTextHtml """<p><strong>(A)</strong> katrs no naturāliem skaitļiem $a$ un $b$ ir izsakāms 
 kā divu veselu skaitļu kvadrātu summa. 
 Pierādiet, ka arī reizinājums  ir izsakāms šādā veidā.<br />
 <strong>(B)</strong> atrodiet divus tādus polinomus ar veseliem koeficientiem 
-$f(x)$ un $g(x)$, ka visiem $x$ pastāv vienādība
-$$\\left( f(x) \\right)^2 + \\left( g(x) \\right)^2 =$$
-$$= \\left( x^2+1 \\right)\\left( x^2 + 4 \\right)
+$f(x)$ un $g(x)$, ka visiem $x$ pastāv vienādība</p>
+<p>$$\\left( f(x) \\right)^2 + \\left( g(x) \\right)^2 =$$</p>
+<p>$$= \\left( x^2+1 \\right)\\left( x^2 + 4 \\right)
 \\left(x^2 + 2x + 2 \\right)\\left( x^2 - 2x + 2 \\right).$$</p>"""@lv ;
     eliozo:problemYear 2007 ;
     eliozo:problem_number 3 ;
@@ -1557,12 +1570,14 @@ eliozo:LV.AMO.2008.11.2 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2008.11.2" ;
     eliozo:problemText """Funkcija $f(n)$ definēta visiem veseliem $n$ un pieņem 
 veselas vērtības. Visiem veseliem $x$ un $y$ pastāv vienādība
+
 $$f(f(x) + y) = x + f(y+2008).$$
+
 Atrast visas tādas funkcijas $f$ un pierādīt, ka citu bez Jūsu atrastajām nav."""@lv ;
     eliozo:problemTextHtml """<p>Funkcija $f(n)$ definēta visiem veseliem $n$ un pieņem 
-veselas vērtības. Visiem veseliem $x$ un $y$ pastāv vienādība
-$$f(f(x) + y) = x + f(y+2008).$$
-Atrast visas tādas funkcijas $f$ un pierādīt, ka citu bez Jūsu atrastajām nav.</p>"""@lv ;
+veselas vērtības. Visiem veseliem $x$ un $y$ pastāv vienādība</p>
+<p>$$f(f(x) + y) = x + f(y+2008).$$</p>
+<p>Atrast visas tādas funkcijas $f$ un pierādīt, ka citu bez Jūsu atrastajām nav.</p>"""@lv ;
     eliozo:problemYear 2008 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" .
@@ -1690,12 +1705,13 @@ eliozo:LV.AMO.2008.8.3 a eliozo:Problem ;
     eliozo:problemText """Dots, ka $n>1$ – naturāls skaitlis, kas nav pirmskaitlis. 
 Pierādīt, ka var atrast vismaz trīs dažādus naturālus skaitļus $a_1,a_2,\\ldots,a_k$, 
 kas apmierina sakarību
+
 $$a_1 + a_2 + \\ldots + a_k = n \\cdot \\left( \\frac{1}{a_1} + 
 \\frac{1}{a_2} + \\ldots + \\frac{1}{a_k} \\right).$$"""@lv ;
     eliozo:problemTextHtml """<p>Dots, ka $n&gt;1$ – naturāls skaitlis, kas nav pirmskaitlis. 
 Pierādīt, ka var atrast vismaz trīs dažādus naturālus skaitļus $a_1,a_2,\\ldots,a_k$, 
-kas apmierina sakarību
-$$a_1 + a_2 + \\ldots + a_k = n \\cdot \\left( \\frac{1}{a_1} + 
+kas apmierina sakarību</p>
+<p>$$a_1 + a_2 + \\ldots + a_k = n \\cdot \\left( \\frac{1}{a_1} + 
 \\frac{1}{a_2} + \\ldots + \\frac{1}{a_k} \\right).$$</p>"""@lv ;
     eliozo:problemYear 2008 ;
     eliozo:problem_number 3 ;
@@ -2249,14 +2265,16 @@ eliozo:LV.AMO.2010.8.1 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2010.8.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2010.8.1 ;
     eliozo:problemText """Starp skaitļiem
+
 $$6\\;\\;1\\;\\;3\\;\\;4,$$
+
 nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\cdot$",
 "$:$") un iekavas tā, lai iegūtās izteiksmes vērtība būtu **(A)** $25$,
 **(B)** $24$.  
 Vai to var izdarīt?"""@lv ;
-    eliozo:problemTextHtml """<p>Starp skaitļiem
-$$6\\;\\;1\\;\\;3\\;\\;4,$$
-nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\cdot$",
+    eliozo:problemTextHtml """<p>Starp skaitļiem</p>
+<p>$$6\\;\\;1\\;\\;3\\;\\;4,$$</p>
+<p>nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\cdot$",
 "$:$") un iekavas tā, lai iegūtās izteiksmes vērtība būtu <strong>(A)</strong> $25$,
 <strong>(B)</strong> $24$.<br />
 Vai to var izdarīt?</p>"""@lv ;
@@ -2473,14 +2491,16 @@ eliozo:LV.AMO.2011.5.1 a eliozo:Problem ;
     eliozo:problemBookSection "AMO.2011.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2011.5.1" ;
-    eliozo:problemText """Reizināšanas piemērā ciparus aizstāja ar burtiem un ieguva izteiksmi  
-$$AB \\cdot CD = EEE.$$ . 
+    eliozo:problemText """Reizināšanas piemērā ciparus aizstāja ar burtiem un ieguva izteiksmi
+
+$$AB \\cdot CD = EEE.$$
+
 Atjauno sākotnējo reizināšanas piemēru, ja zināms, ka vienādi burti
 apzīmē vienādus ciparus, bet dažādi burti – dažādus ciparus, pie tam
 ne $A$, ne $C$ nav $0$. Atrodi visus iespējamos atrisinājumus!"""@lv ;
-    eliozo:problemTextHtml """<p>Reizināšanas piemērā ciparus aizstāja ar burtiem un ieguva izteiksmi<br />
-$$AB \\cdot CD = EEE.$$ . 
-Atjauno sākotnējo reizināšanas piemēru, ja zināms, ka vienādi burti
+    eliozo:problemTextHtml """<p>Reizināšanas piemērā ciparus aizstāja ar burtiem un ieguva izteiksmi</p>
+<p>$$AB \\cdot CD = EEE.$$</p>
+<p>Atjauno sākotnējo reizināšanas piemēru, ja zināms, ka vienādi burti
 apzīmē vienādus ciparus, bet dažādi burti – dažādus ciparus, pie tam
 ne $A$, ne $C$ nav $0$. Atrodi visus iespējamos atrisinājumus!</p>"""@lv ;
     eliozo:problemYear 2011 ;
@@ -2605,9 +2625,10 @@ eliozo:LV.AMO.2011.6.1 a eliozo:Problem ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2011.6.1" ;
     eliozo:problemText """Vai eksistē tādi naturāli skaitļi $a$ un $b$, kuriem izpildās vienādība
+
 $$a \\cdot b \\cdot (a+b) = 20102011 ?$$"""@lv ;
-    eliozo:problemTextHtml """<p>Vai eksistē tādi naturāli skaitļi $a$ un $b$, kuriem izpildās vienādība
-$$a \\cdot b \\cdot (a+b) = 20102011 ?$$</p>"""@lv ;
+    eliozo:problemTextHtml """<p>Vai eksistē tādi naturāli skaitļi $a$ un $b$, kuriem izpildās vienādība</p>
+<p>$$a \\cdot b \\cdot (a+b) = 20102011 ?$$</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
@@ -2819,12 +2840,14 @@ eliozo:LV.AMO.2011.8.1 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2011.8.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2011.8.1 ;
     eliozo:problemText """Starp skaitļiem
+
 $$8\\;\\;3\\;\\;5\\;\\;2,$$
+
 nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\cdot$",
 "$:$") un iekavas tā, lai iegūtās izteiksmes vērtība būtu **(A)** $15$, **(B)** $16$."""@lv ;
-    eliozo:problemTextHtml """<p>Starp skaitļiem
-$$8\\;\\;3\\;\\;5\\;\\;2,$$
-nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\cdot$",
+    eliozo:problemTextHtml """<p>Starp skaitļiem</p>
+<p>$$8\\;\\;3\\;\\;5\\;\\;2,$$</p>
+<p>nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\cdot$",
 "$:$") un iekavas tā, lai iegūtās izteiksmes vērtība būtu <strong>(A)</strong> $15$, <strong>(B)</strong> $16$.</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
@@ -2895,9 +2918,10 @@ eliozo:LV.AMO.2011.9.1 a eliozo:Problem ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2011.9.1" ;
     eliozo:problemText """Atrodi visus naturālu skaitļu pārus $(x, y)$ tādus, ka $x\\neq y$ un
+
 $$\\frac{1}{x^2 + 24} + \\frac{1}{y^2 + 24} = \\frac{2}{xy + 24}.$$"""@lv ;
-    eliozo:problemTextHtml """<p>Atrodi visus naturālu skaitļu pārus $(x, y)$ tādus, ka $x\\neq y$ un
-$$\\frac{1}{x^2 + 24} + \\frac{1}{y^2 + 24} = \\frac{2}{xy + 24}.$$</p>"""@lv ;
+    eliozo:problemTextHtml """<p>Atrodi visus naturālu skaitļu pārus $(x, y)$ tādus, ka $x\\neq y$ un</p>
+<p>$$\\frac{1}{x^2 + 24} + \\frac{1}{y^2 + 24} = \\frac{2}{xy + 24}.$$</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" .
@@ -3115,9 +3139,10 @@ eliozo:LV.AMO.2012.7.1 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2012.7.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2012.7.1 ;
     eliozo:problemText """Vai var atrast tādus veselus skaitļus $a$ un $b$, kuriem izpildās vienādība
+
 $$ab(3a + 5b) = 1234567?$$"""@lv ;
-    eliozo:problemTextHtml """<p>Vai var atrast tādus veselus skaitļus $a$ un $b$, kuriem izpildās vienādība
-$$ab(3a + 5b) = 1234567?$$</p>"""@lv ;
+    eliozo:problemTextHtml """<p>Vai var atrast tādus veselus skaitļus $a$ un $b$, kuriem izpildās vienādība</p>
+<p>$$ab(3a + 5b) = 1234567?$$</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
@@ -3157,12 +3182,14 @@ eliozo:LV.AMO.2012.8.1 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2012.8.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2012.8.1 ;
     eliozo:problemText """Starp skaitļiem
+
 $$4\\;\\;1\\;\\;5\\;\\;7,$$
+
 nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\ast$",
 "$:$") un iekavas tā, lai iegūtās izteiksmes vērtība būtu **(A)** $13$, **(B)** $14$."""@lv ;
-    eliozo:problemTextHtml """<p>Starp skaitļiem
-$$4\\;\\;1\\;\\;5\\;\\;7,$$
-nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\ast$",
+    eliozo:problemTextHtml """<p>Starp skaitļiem</p>
+<p>$$4\\;\\;1\\;\\;5\\;\\;7,$$</p>
+<p>nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\ast$",
 "$:$") un iekavas tā, lai iegūtās izteiksmes vērtība būtu <strong>(A)</strong> $13$, <strong>(B)</strong> $14$.</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
@@ -3479,11 +3506,12 @@ eliozo:LV.AMO.2013.11.3 a eliozo:Problem ;
     eliozo:problemText """Doti dažādi nepāra naturāli skaitļi $a_1, a_2, \\ldots, a_n$. 
 Neviens no tiem nedalās ne ar vienu pirmskaitli, kas lielāks 
 kā $5$. Pierādīt, ka
+
 $$\\frac{1}{a_1} + \\frac{1}{a_2} + \\frac{1}{a_3} + \\ldots \\frac{1}{a_n} < 2.$$"""@lv ;
     eliozo:problemTextHtml """<p>Doti dažādi nepāra naturāli skaitļi $a_1, a_2, \\ldots, a_n$. 
 Neviens no tiem nedalās ne ar vienu pirmskaitli, kas lielāks 
-kā $5$. Pierādīt, ka
-$$\\frac{1}{a_1} + \\frac{1}{a_2} + \\frac{1}{a_3} + \\ldots \\frac{1}{a_n} &lt; 2.$$</p>"""@lv ;
+kā $5$. Pierādīt, ka</p>
+<p>$$\\frac{1}{a_1} + \\frac{1}{a_2} + \\frac{1}{a_3} + \\ldots \\frac{1}{a_n} &lt; 2.$$</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" .
@@ -3616,7 +3644,8 @@ ne vairāk kā divi (piemēram, ja "A" ir patskanis, bet "B" –
 līdzskanis, tad, piemēram, "ABBA" ir vārds, turpretī "BAAB" un
 "ABBBA" nav vārdi).  
 Ar $S(n)$ apzīmēsim visu to vārdu skaitu, kuri sastāv no $n$ burtiem, $n \\geq 1$. 
-Pierādīt, ka visiem naturāliem skaitļiem n ir spēkā vienādība  
+Pierādīt, ka visiem naturāliem skaitļiem n ir spēkā vienādība
+
 $$S(n+3) = i \\cdot j \\cdot S(n+1) + i \\cdot j^2 \\cdot S(n).$$"""@lv ;
     eliozo:problemTextHtml """<p>Kādas valodas alfabētā ir $i$ patskaņi ($i \\geq 2$) un 
 $j$ līdzskaņi ($j \\geq 2$).
@@ -3627,8 +3656,8 @@ ne vairāk kā divi (piemēram, ja "A" ir patskanis, bet "B" –
 līdzskanis, tad, piemēram, "ABBA" ir vārds, turpretī "BAAB" un
 "ABBBA" nav vārdi).<br />
 Ar $S(n)$ apzīmēsim visu to vārdu skaitu, kuri sastāv no $n$ burtiem, $n \\geq 1$. 
-Pierādīt, ka visiem naturāliem skaitļiem n ir spēkā vienādība<br />
-$$S(n+3) = i \\cdot j \\cdot S(n+1) + i \\cdot j^2 \\cdot S(n).$$</p>"""@lv ;
+Pierādīt, ka visiem naturāliem skaitļiem n ir spēkā vienādība</p>
+<p>$$S(n+3) = i \\cdot j \\cdot S(n+1) + i \\cdot j^2 \\cdot S(n).$$</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "Prove" .
@@ -3779,15 +3808,17 @@ eliozo:LV.AMO.2013.6.1 a eliozo:Problem ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2013.6.1" ;
     eliozo:problemText """Uz tāfeles uzrakstīti desmit skaitļi:
-$$1\\;\\;2\\;\\;3\\;\\;4\\;\\;5\\;\\;6\\;\\;7\\;\\;8\\;\\;9\\;\\;10.$$  
+
+$$1\\;\\;2\\;\\;3\\;\\;4\\;\\;5\\;\\;6\\;\\;7\\;\\;8\\;\\;9\\;\\;10.$$
+
 Alfons nodzēš jebkurus divus no tiem (apzīmēsim tos ar $a$ un $b$)
 un to vietā uzraksta skaitli, kas vienāds ar  $a+b+2$. Šo operāciju
 viņš atkārto, kamēr uz tāfeles paliek viens skaitlis.
 Pamato, ka neatkarīgi no secības, kādā Alfons izpilda darbības,
 beigās tiek iegūts viens un tas pats skaitlis. Kāds tas ir?"""@lv ;
-    eliozo:problemTextHtml """<p>Uz tāfeles uzrakstīti desmit skaitļi:
-$$1\\;\\;2\\;\\;3\\;\\;4\\;\\;5\\;\\;6\\;\\;7\\;\\;8\\;\\;9\\;\\;10.$$<br />
-Alfons nodzēš jebkurus divus no tiem (apzīmēsim tos ar $a$ un $b$)
+    eliozo:problemTextHtml """<p>Uz tāfeles uzrakstīti desmit skaitļi:</p>
+<p>$$1\\;\\;2\\;\\;3\\;\\;4\\;\\;5\\;\\;6\\;\\;7\\;\\;8\\;\\;9\\;\\;10.$$</p>
+<p>Alfons nodzēš jebkurus divus no tiem (apzīmēsim tos ar $a$ un $b$)
 un to vietā uzraksta skaitli, kas vienāds ar  $a+b+2$. Šo operāciju
 viņš atkārto, kamēr uz tāfeles paliek viens skaitlis.
 Pamato, ka neatkarīgi no secības, kādā Alfons izpilda darbības,
@@ -4891,9 +4922,10 @@ eliozo:LV.AMO.2016.8.1 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2016.8.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2016.8.1 ;
     eliozo:problemText """Aprēķini dotās izteiksmes vērtību!
+
 $$\\frac{2000016 \\cdot 1999984}{5^{12} \\cdot 2^{13} - 128}$$"""@lv ;
-    eliozo:problemTextHtml """<p>Aprēķini dotās izteiksmes vērtību!
-$$\\frac{2000016 \\cdot 1999984}{5^{12} \\cdot 2^{13} - 128}$$</p>"""@lv ;
+    eliozo:problemTextHtml """<p>Aprēķini dotās izteiksmes vērtību!</p>
+<p>$$\\frac{2000016 \\cdot 1999984}{5^{12} \\cdot 2^{13} - 128}$$</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
@@ -5148,9 +5180,10 @@ eliozo:LV.AMO.2018.11.1 a eliozo:Problem ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2018.11.1" ;
     eliozo:problemText """Pierādīt, ka visām naturālām $n$ vērtībām izpildās
+
 $$1^3 + 2^3 + 3^3 + \\ldots + n^3 = (1 + 2 + 3 + \\ldots + n)^2.$$"""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka visām naturālām $n$ vērtībām izpildās
-$$1^3 + 2^3 + 3^3 + \\ldots + n^3 = (1 + 2 + 3 + \\ldots + n)^2.$$</p>"""@lv ;
+    eliozo:problemTextHtml """<p>Pierādīt, ka visām naturālām $n$ vērtībām izpildās</p>
+<p>$$1^3 + 2^3 + 3^3 + \\ldots + n^3 = (1 + 2 + 3 + \\ldots + n)^2.$$</p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove" .
@@ -5212,11 +5245,13 @@ eliozo:LV.AMO.2018.7.4 a eliozo:Problem ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2018.7.4" ;
     eliozo:problemText """Atrast tādu veselu skaitli $n$, lai vienādība
+
 $$(n - 2021)(n - 2018)(n - 2017)(n - 2016) = 2016$$
+
 būtu patiesa!"""@lv ;
-    eliozo:problemTextHtml """<p>Atrast tādu veselu skaitli $n$, lai vienādība
-$$(n - 2021)(n - 2018)(n - 2017)(n - 2016) = 2016$$
-būtu patiesa!</p>"""@lv ;
+    eliozo:problemTextHtml """<p>Atrast tādu veselu skaitli $n$, lai vienādība</p>
+<p>$$(n - 2021)(n - 2018)(n - 2017)(n - 2016) = 2016$$</p>
+<p>būtu patiesa!</p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" .
@@ -5271,11 +5306,13 @@ eliozo:LV.AMO.2019.10.1 a eliozo:Problem ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2019.10.1" ;
     eliozo:problemText """Pierādīt, ka visām naturālām $n$ vērtībām ir spēkā vienādība
+
 $$6 + 24 + 60 + \\cdots + n(n + 1)(n + 2) =$$
+
 $$=\\frac{n(n+1)(n+2)(n+3)}{4}.$$"""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka visām naturālām $n$ vērtībām ir spēkā vienādība
-$$6 + 24 + 60 + \\cdots + n(n + 1)(n + 2) =$$
-$$=\\frac{n(n+1)(n+2)(n+3)}{4}.$$</p>"""@lv ;
+    eliozo:problemTextHtml """<p>Pierādīt, ka visām naturālām $n$ vērtībām ir spēkā vienādība</p>
+<p>$$6 + 24 + 60 + \\cdots + n(n + 1)(n + 2) =$$</p>
+<p>$$=\\frac{n(n+1)(n+2)(n+3)}{4}.$$</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove" ;
@@ -5565,15 +5602,17 @@ eliozo:LV.AMO.2019.9.5 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2019.9.5" ;
     eliozo:problemText """Vai eksistē tāds kvadrātvienādojums ar veseliem koeficientiem, 
 kuram ir sakne
+
 $$\\left( \\sqrt{2020} − 2\\sqrt{2019} + \\sqrt{2018} \\right)
 \\left( \\sqrt{2020} + \\sqrt{2019} \\right) \\times$$
+
 $$\\times \\left( \\sqrt{2019} + \\sqrt{2018} \\right)
 \\left( \\sqrt{2020} + \\sqrt{2018} \\right)?$$"""@lv ;
     eliozo:problemTextHtml """<p>Vai eksistē tāds kvadrātvienādojums ar veseliem koeficientiem, 
-kuram ir sakne
-$$\\left( \\sqrt{2020} − 2\\sqrt{2019} + \\sqrt{2018} \\right)
-\\left( \\sqrt{2020} + \\sqrt{2019} \\right) \\times$$
-$$\\times \\left( \\sqrt{2019} + \\sqrt{2018} \\right)
+kuram ir sakne</p>
+<p>$$\\left( \\sqrt{2020} − 2\\sqrt{2019} + \\sqrt{2018} \\right)
+\\left( \\sqrt{2020} + \\sqrt{2019} \\right) \\times$$</p>
+<p>$$\\times \\left( \\sqrt{2019} + \\sqrt{2018} \\right)
 \\left( \\sqrt{2020} + \\sqrt{2018} \\right)?$$</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 5 ;
@@ -5925,14 +5964,16 @@ Abās grupās skaitļu summas ir $12$, bet kvadrātu summas ir $62$.
 Pamatosim ar indukciju, ka to var izdarīt katram $n = 4m+3$, ja $m \\geq 0$ ir 
 vesels skaitlis.
 
-*Bāze:* Pie ie $n=3$ var izdarīt kā punktā **(a)**.  
+*Bāze:* Pie ie $n=3$ var izdarīt kā punktā **(A)**.  
 *Induktīvais pieņēmums:* Pieņemsim, ka to var izdarīt kādai vērtībai $n=3+4m$. 
 Pamatosim, ka var izdarīt arī lielākai vērtībai:
 $n=3+4(m+1)$.
 *Induktīvā pāreja:* Sadala pirmos $3+4m$ skaitļus atbilstoši induktīvajam pieņēmumam. 
 Ar $k$ apzīmējam lielāko no skaitļiem, kas izmantoti šajā konstrukcijā. 
-Pievienosim astoņus jaunus skaitļus, tos sadalot grupās (līdzīgi kā **(b)** punktā): 
+Pievienosim astoņus jaunus skaitļus, tos sadalot grupās (līdzīgi kā **(B)** punktā):
+
 $$(k+1, k+4, k+6, k+7)\\;\\;\\text{un}\\;\\;(k+2, k+3, k+5, k+8)$$. 
+
 Visi šie astoņi skaitļi ir savstarpēji dažādi. 
 
 * Vienā grupā summa ir $(k+1) + (k+4) + (k+6) + (k+7) = 4k + 18$. Tāda pati summa ir arī 
@@ -5949,15 +5990,15 @@ Abās grupās skaitļu summas ir $12$, bet kvadrātu summas ir $62$. </p>
 <p><strong>(C)</strong> Arī šai vērtībai $n = 2003$ to var izdarīt. 
 Pamatosim ar indukciju, ka to var izdarīt katram $n = 4m+3$, ja $m \\geq 0$ ir 
 vesels skaitlis.</p>
-<p><em>Bāze:</em> Pie ie $n=3$ var izdarīt kā punktā <strong>(a)</strong>.<br />
+<p><em>Bāze:</em> Pie ie $n=3$ var izdarīt kā punktā <strong>(A)</strong>.<br />
 <em>Induktīvais pieņēmums:</em> Pieņemsim, ka to var izdarīt kādai vērtībai $n=3+4m$. 
 Pamatosim, ka var izdarīt arī lielākai vērtībai:
 $n=3+4(m+1)$.
 <em>Induktīvā pāreja:</em> Sadala pirmos $3+4m$ skaitļus atbilstoši induktīvajam pieņēmumam. 
 Ar $k$ apzīmējam lielāko no skaitļiem, kas izmantoti šajā konstrukcijā. 
-Pievienosim astoņus jaunus skaitļus, tos sadalot grupās (līdzīgi kā <strong>(b)</strong> punktā): 
-$$(k+1, k+4, k+6, k+7)\\;\\;\\text{un}\\;\\;(k+2, k+3, k+5, k+8)$$. 
-Visi šie astoņi skaitļi ir savstarpēji dažādi. </p>
+Pievienosim astoņus jaunus skaitļus, tos sadalot grupās (līdzīgi kā <strong>(B)</strong> punktā):</p>
+<p>$$(k+1, k+4, k+6, k+7)\\;\\;\\text{un}\\;\\;(k+2, k+3, k+5, k+8)$$. </p>
+<p>Visi šie astoņi skaitļi ir savstarpēji dažādi. </p>
 <ul>
 <li>Vienā grupā summa ir $(k+1) + (k+4) + (k+6) + (k+7) = 4k + 18$. Tāda pati summa ir arī 
   otrajā grupā: $(k+2) + (k+3) + (k+5) + (k+8)$. </li>
@@ -6304,6 +6345,7 @@ eliozo:SOLN.LV.AMO.2013.10.4 a eliozo:Solution ;
 Izrakstām ģeometriskas progresijas, kas sākas ar nepāru skaitļiem un $q=2$: 
 
 $$(1,2,4,8,16,32,64),\\;(3,6,12,24,48,96),$$
+
 $$(5,10,20,40,80),\\ldots,(97),\\;(99).$$
 
 * Būs tieši $50$ progresijas (dažās būs tikai pa vienam loceklim), jo līdz $100$ ir tieši $50$ nepāru skaitļi.
@@ -6317,8 +6359,8 @@ Ja skaitļu ir tikai $50$, tad līdzīgi secināt nevar.
 Var izvēlēties $51,\\ldots,100$ - no tiem neviens nedalās ar otru."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Izrakstām ģeometriskas progresijas, kas sākas ar nepāru skaitļiem un $q=2$: </p>
-<p>$$(1,2,4,8,16,32,64),\\;(3,6,12,24,48,96),$$
-$$(5,10,20,40,80),\\ldots,(97),\\;(99).$$</p>
+<p>$$(1,2,4,8,16,32,64),\\;(3,6,12,24,48,96),$$</p>
+<p>$$(5,10,20,40,80),\\ldots,(97),\\;(99).$$</p>
 <ul>
 <li>Būs tieši $50$ progresijas (dažās būs tikai pa vienam loceklim), jo līdz $100$ ir tieši $50$ nepāru skaitļi.</li>
 <li>Katrs skaitlis pieder tieši vienai progresijai, jo katram pāru skaitlim atbilst tieši viens nepāru 
@@ -6529,6 +6571,7 @@ eliozo:SOLN.LV.AMO.2015.10.3 a eliozo:Solution ;
 * Pamatojam to 2-ciparu un 3-ciparu skaitļiem $\\overline{ab}$ un $\\overline{abc}$
 
 $$a\\cdot{}b < 10a \\leq 10^1\\cdot{}a + b = \\overline{ab},$$
+
 $$a\\cdot{}b\\cdot{}c < 10^2\\cdot{}a < 100a + 10b + c = \\overline{abc}.$$
 
 Skaitļa pirmo decimālciparu reizinot ar $k$ turpmākajiem cipariem, iegūsim 
@@ -6538,8 +6581,8 @@ mazāku rezultātu nekā reizinot ar $10^k$, jo katrs cipars ir mazāks par $10$
 <li>Pārbaudot dažādus skaitļus var novērot, ka ciparu reizinājums allaž mazāks par pašu skaitli.</li>
 <li>Pamatojam to 2-ciparu un 3-ciparu skaitļiem $\\overline{ab}$ un $\\overline{abc}$</li>
 </ul>
-<p>$$a\\cdot{}b &lt; 10a \\leq 10^1\\cdot{}a + b = \\overline{ab},$$
-$$a\\cdot{}b\\cdot{}c &lt; 10^2\\cdot{}a &lt; 100a + 10b + c = \\overline{abc}.$$</p>
+<p>$$a\\cdot{}b &lt; 10a \\leq 10^1\\cdot{}a + b = \\overline{ab},$$</p>
+<p>$$a\\cdot{}b\\cdot{}c &lt; 10^2\\cdot{}a &lt; 100a + 10b + c = \\overline{abc}.$$</p>
 <p>Skaitļa pirmo decimālciparu reizinot ar $k$ turpmākajiem cipariem, iegūsim 
 mazāku rezultātu nekā reizinot ar $10^k$, jo katrs cipars ir mazāks par $10$.</p>"""@lv .
 

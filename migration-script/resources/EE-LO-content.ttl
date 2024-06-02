@@ -14,11 +14,7 @@ eliozo:EE.LO.2010.10.2 a eliozo:Problem ;
 $$\\frac{2}{a^2}+\\frac{3}{b^2}+\\frac{4}{c^2}=1$$
 atrast visus atrisinājumus naturālos skaitļos.
 
-<text lang="ru">
-Для уравнения
-$$\\frac{2}{a^2}+\\frac{3}{b^2}+\\frac{4}{c^2}=1$$
-найти все решения в натуральных числах.
-</text>
+
 
 <!--
 questionType=FindAll
@@ -27,11 +23,6 @@ genre=integer-equation
     eliozo:problemTextHtml """<p>Vienādojumam
 $$\\frac{2}{a^2}+\\frac{3}{b^2}+\\frac{4}{c^2}=1$$
 atrast visus atrisinājumus naturālos skaitļos.</p>
-<p><text lang="ru">
-Для уравнения
-$$\\frac{2}{a^2}+\\frac{3}{b^2}+\\frac{4}{c^2}=1$$
-найти все решения в натуральных числах.
-</text></p>
 <!--
 questionType=FindAll
 genre=integer-equation
@@ -54,16 +45,9 @@ eliozo:EE.LO.2011.10.2 a eliozo:Problem ;
     eliozo:problemText """Atrast visus naturālu skaitļu četriniekus $(w,x,y,z)$, 
 kuriem izpildās vienādība $w^x + w^y = w^z$.
 
-<text lang="ru">
-Найти все четвёрки положительных целых чисел $(w, x, y, z)$, 
-при которых выполняется равенство $w^x + w^y = w^z$.
-</text>"""@lv ;
+"""@lv ;
     eliozo:problemTextHtml """<p>Atrast visus naturālu skaitļu četriniekus $(w,x,y,z)$, 
-kuriem izpildās vienādība $w^x + w^y = w^z$.</p>
-<p><text lang="ru">
-Найти все четвёрки положительных целых чисел $(w, x, y, z)$, 
-при которых выполняется равенство $w^x + w^y = w^z$.
-</text></p>"""@lv ;
+kuriem izpildās vienādība $w^x + w^y = w^z$.</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" .
@@ -210,15 +194,7 @@ Pierādīt, ka jebkuram naturālam skaitlim $n$ izpildās vienādības
 $$S(n + 1) − S(n) = 1 + 2 + \\ldots + n + (n + 1),$$
 $$S(n + 1) + S(n) = 1^2 + 2^2 + \\ldots + n^2 + (n + 1)^2.$$
 
-<text lang="ru">
-На доске в ряд друг за другом записываются натуральные числа от $1$ до $n$,
-а под ними те же самые числа, но в обратном порядке. Обозначим сумму
-произведений записанных друг над другом чисел через $S(n)$. (Например,
-$S(6) = 1\\cdot{}6 + 2\\cdot{}5 + 3\\cdot{}4 + 4\\cdot{}3 + 5\\cdot{}2 + 6\\cdot{}1 = 56$.)
-Доказать, что для каждого натурального числа $n$ выполняются равенства
-$$S(n + 1) − S(n) = 1 + 2 + \\ldots + n + (n + 1),$$
-$$S(n + 1) + S(n) = 1^2 + 2^2 + \\ldots + n^2 + (n + 1)^2.$$
-</text>
+
 
 <!--
 questionType=Prove
@@ -232,15 +208,6 @@ $S(6) = 1\\cdot{}6 + 2\\cdot{}5 + 3\\cdot{}4 + 4\\cdot{}3 + 5\\cdot{}2 + 6\\cdot
 Pierādīt, ka jebkuram naturālam skaitlim $n$ izpildās vienādības
 $$S(n + 1) − S(n) = 1 + 2 + \\ldots + n + (n + 1),$$
 $$S(n + 1) + S(n) = 1^2 + 2^2 + \\ldots + n^2 + (n + 1)^2.$$</p>
-<p><text lang="ru">
-На доске в ряд друг за другом записываются натуральные числа от $1$ до $n$,
-а под ними те же самые числа, но в обратном порядке. Обозначим сумму
-произведений записанных друг над другом чисел через $S(n)$. (Например,
-$S(6) = 1\\cdot{}6 + 2\\cdot{}5 + 3\\cdot{}4 + 4\\cdot{}3 + 5\\cdot{}2 + 6\\cdot{}1 = 56$.)
-Доказать, что для каждого натурального числа $n$ выполняются равенства
-$$S(n + 1) − S(n) = 1 + 2 + \\ldots + n + (n + 1),$$
-$$S(n + 1) + S(n) = 1^2 + 2^2 + \\ldots + n^2 + (n + 1)^2.$$
-</text></p>
 <!--
 questionType=Prove
 genre=sequence-properties
@@ -259,10 +226,7 @@ eliozo:EE.LO.2016.10.1 a eliozo:Problem ;
     eliozo:problemText """Atrast visus tos četrciparu skaitļus, kuri ir tieši par $2016$ lielāki 
 par skaitli, ko iegūst, pārliekot pirmo ciparu uz beigām.
 
-<text lang="ru">
-Найти все такие четырёхзначные числа, которые ровно на $2016$ больше
-числа, полученного путём переставления первой цифры в конец.
-</text>
+
 
 <!--
 questionType=FindAll
@@ -270,10 +234,6 @@ genre=digit-manipulation
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Atrast visus tos četrciparu skaitļus, kuri ir tieši par $2016$ lielāki 
 par skaitli, ko iegūst, pārliekot pirmo ciparu uz beigām.</p>
-<p><text lang="ru">
-Найти все такие четырёхзначные числа, которые ровно на $2016$ больше
-числа, полученного путём переставления первой цифры в конец.
-</text></p>
 <!--
 questionType=FindAll
 genre=digit-manipulation
@@ -292,10 +252,7 @@ eliozo:EE.LO.2016.10.2 a eliozo:Problem ;
     eliozo:problemText """Atrast visus veselu skaitļu pārus $(a,b)$, kuriem izpildās vienādība
 $$3(a^2 + b^2) - 7(a + b) = -4.$$
 
-<text lang="ru">
-Найти все пары целых чисел $(a, b)$, для которых выполняется равенство
-$$3(a^2 + b^2) − 7(a + b) = −4.$$
-</text>
+
 
 <!--
 questionType=FindAll
@@ -303,10 +260,6 @@ genre=integer-equation
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Atrast visus veselu skaitļu pārus $(a,b)$, kuriem izpildās vienādība
 $$3(a^2 + b^2) - 7(a + b) = -4.$$</p>
-<p><text lang="ru">
-Найти все пары целых чисел $(a, b)$, для которых выполняется равенство
-$$3(a^2 + b^2) − 7(a + b) = −4.$$
-</text></p>
 <!--
 questionType=FindAll
 genre=integer-equation
@@ -329,14 +282,7 @@ Vai Juku hipotēze ir patiesa?
 *Piezīme. Vesels skaitlis $a$ ir savstarpējs pirmskaitlis ar veselu 
 skaitli $b$, ja lielākais kopīgais dalītājs $\\mbox{LKD}(a,b)=1$.*
 
-<text lang="ru">
-Петя выдвинул математическую гипотезу, согласно которой для каждого 
-целого числа $n > 4$ по крайней мере одно из двух наибольших целых
-чисел, меньших чем $\\frac{n}{2}$, взаимно просто с числом $n$. Верна ли гипотеза
-Пети?  
-Примечание. Целое число $a$ взаимно просто с целым числом $b$, если
-$\\mbox{НОД}(a, b) = 1$.
-</text>
+
 
 
 <!--
@@ -349,14 +295,6 @@ kuri mazāki par $\\frac{n}{2}$, ir savstarpējs pirmskaitlis ar $n$.
 Vai Juku hipotēze ir patiesa?<br />
 <em>Piezīme. Vesels skaitlis $a$ ir savstarpējs pirmskaitlis ar veselu 
 skaitli $b$, ja lielākais kopīgais dalītājs $\\mbox{LKD}(a,b)=1$.</em></p>
-<p><text lang="ru">
-Петя выдвинул математическую гипотезу, согласно которой для каждого 
-целого числа $n &gt; 4$ по крайней мере одно из двух наибольших целых
-чисел, меньших чем $\\frac{n}{2}$, взаимно просто с числом $n$. Верна ли гипотеза
-Пети?<br />
-Примечание. Целое число $a$ взаимно просто с целым числом $b$, если
-$\\mbox{НОД}(a, b) = 1$.
-</text></p>
 <!--
 questionType=ProveDisprove
 concepts=coprimes
@@ -389,21 +327,7 @@ Vai Anija varēs tā ierakstīt ciparus, ka neatkarīgi no Enijas gājiena
 rezultātā būs trīsciparu skaitlis (t.i. pirmais cipars nav $0$), kas
 dalās ar $11$? 
 
-<text lang="ru">
-а) На доске записан общий вид трёхзначного числа $\\overline{ABC}$. 
-Аня и Женя по очереди заменяют каждым ходом одну букву цифрой, 
-начинает Аня. Сможет ли Аня так записывать цифры, что независимо 
-от хода Жени полученное в итоге трёхзначное число делилось бы на $11$? 
-(Разные буквы можно заменять одной и той же цифрой, но букву A нельзя
-заменять на $0$.)  
-б) Аня и Женя утомились в начале каждой игры записывать общий вид
-числа и решили изменить правила: сперва Аня записывает одну цифру, 
-затем Женя справа или слева от неё вторую, а в конце Аня 
-записывает вправо или влево от записанных на доске двух цифр третью 
-(между цифрами записывать не разрешается). Сможет ли Аня так
-записывать цифры, что независимо от хода Жени в итоге получится
-трёхзначное число (т.е. первая цифра не $0$), делящееся на $11$?
-</text>
+
 
 <!--
 questionType=Algorithm,ProveDisprove
@@ -425,21 +349,6 @@ labi vai pa kreisi jau uzrakstītajiem cipariem trešo
 Vai Anija varēs tā ierakstīt ciparus, ka neatkarīgi no Enijas gājiena
 rezultātā būs trīsciparu skaitlis (t.i. pirmais cipars nav $0$), kas
 dalās ar $11$? </p>
-<p><text lang="ru">
-а) На доске записан общий вид трёхзначного числа $\\overline{ABC}$. 
-Аня и Женя по очереди заменяют каждым ходом одну букву цифрой, 
-начинает Аня. Сможет ли Аня так записывать цифры, что независимо 
-от хода Жени полученное в итоге трёхзначное число делилось бы на $11$? 
-(Разные буквы можно заменять одной и той же цифрой, но букву A нельзя
-заменять на $0$.)<br />
-б) Аня и Женя утомились в начале каждой игры записывать общий вид
-числа и решили изменить правила: сперва Аня записывает одну цифру, 
-затем Женя справа или слева от неё вторую, а в конце Аня 
-записывает вправо или влево от записанных на доске двух цифр третью 
-(между цифрами записывать не разрешается). Сможет ли Аня так
-записывать цифры, что независимо от хода Жени в итоге получится
-трёхзначное число (т.е. первая цифра не $0$), делящееся на $11$?
-</text></p>
 <!--
 questionType=Algorithm,ProveDisprove
 genre=game
@@ -458,10 +367,7 @@ eliozo:EE.LO.2018.10.1 a eliozo:Problem ;
     eliozo:problemText """Atrast visus veselu skaitļu pārus $(a, b)$, kuriem
 $$(2a^2 + b)^3 = b^3a.$$
 
-<text lang="ru">
-Найти все пары целых чисел (a, b), при которых
-$$(2a^2 + b)^3 = b^3a.$$
-</text>
+
 
 <!--
 questionType=FindAll
@@ -469,10 +375,6 @@ genre=integer-equation
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Atrast visus veselu skaitļu pārus $(a, b)$, kuriem
 $$(2a^2 + b)^3 = b^3a.$$</p>
-<p><text lang="ru">
-Найти все пары целых чисел (a, b), при которых
-$$(2a^2 + b)^3 = b^3a.$$
-</text></p>
 <!--
 questionType=FindAll
 genre=integer-equation

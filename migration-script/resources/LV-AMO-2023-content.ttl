@@ -81,8 +81,9 @@ leņķa $ABC$ lielums četrstūra ārpusē ir $7\\alpha$ (skat. 19. att.). Aprē
     eliozo:questionType "FindAll" .
 
 eliozo:LV.AMO.2023.10.4 a eliozo:Problem ;
+    eliozo:LTopic "LTCombinatorialStructures" ;
     eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:problemBook "LV" ;
@@ -145,7 +146,7 @@ aritmētiskais. Kāds varēja būt Marutas nodzēstais skaitlis?</p>"""@lv ;
 
 eliozo:LV.AMO.2023.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:problemBook "LV" ;
@@ -165,7 +166,8 @@ Kāds ir lielākais iespējamais viesu skaits, kas bija ieradušies uz
 Māra dzimšanas dienas svinībām?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:topic eliozo:LinearOptimization .
 
 eliozo:LV.AMO.2023.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -267,6 +269,7 @@ eliozo:LV.AMO.2023.11.5 a eliozo:Problem ;
     eliozo:questionType "FindAll" .
 
 eliozo:LV.AMO.2023.12.1 a eliozo:Problem ;
+    eliozo:LTopic "LTEquations" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
@@ -390,7 +393,7 @@ eliozo:LV.AMO.2023.5.1 a eliozo:Problem ;
         "distance",
         "triangle" ;
     eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:problemBook "LV" ;
@@ -504,7 +507,7 @@ rūtiņas var pārvietot uz kreiso augšējo rūtiņu, ja kvadrāta izmēri ir:
 eliozo:LV.AMO.2023.5.5 a eliozo:Problem ;
     eliozo:LTTopic "LTExtremes" ;
     eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:problemBook "LV" ;
@@ -523,11 +526,12 @@ Kāds ir lielākais iespējamais viesu skaits, kas bija ieradušies uz Gunas dzi
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindOptimal" ;
-    eliozo:topic eliozo:PigeonholePrincipleForExtremes .
+    eliozo:topic eliozo:LinearOptimization,
+        eliozo:PigeonholePrincipleForExtremes .
 
 eliozo:LV.AMO.2023.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:problemBook "LV" ;
@@ -537,13 +541,13 @@ eliozo:LV.AMO.2023.6.1 a eliozo:Problem ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2023.6.1.png,
         eliozo:IMG.LV.AMO.2023.6.1A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.6.1 ;
-    eliozo:problemText """Skaitļus no $1$ līdz $16$ ieraksti 7. att. redzamajos mazajos trijstūros 
+    eliozo:problemText """Skaitļus no $1$ līdz $16$ ieraksti 7.att. redzamajos mazajos trijstūros 
 (katrā trijstūrī citu naturālo skaitli) tā,
 lai blakus trijstūros ierakstīties skaitļi neatšķiras vairāk kā par $4$.  
 *Piezīme.* Par blakus trijstūriem sauksim trijstūrus, kam ir kopīga mala.
 
 ![](LV.AMO.2023.6.1.png)"""@lv ;
-    eliozo:problemTextHtml """<p>Skaitļus no $1$ līdz $16$ ieraksti 7. att. redzamajos mazajos trijstūros 
+    eliozo:problemTextHtml """<p>Skaitļus no $1$ līdz $16$ ieraksti 7.att. redzamajos mazajos trijstūros 
 (katrā trijstūrī citu naturālo skaitli) tā,
 lai blakus trijstūros ierakstīties skaitļi neatšķiras vairāk kā par $4$.<br />
 <em>Piezīme.</em> Par blakus trijstūriem sauksim trijstūrus, kam ir kopīga mala.</p>
@@ -640,7 +644,7 @@ vienmēr saka patiesību, sarkanie bruņinieki vienmēr melo. Katrs bruņinieks 
 
 eliozo:LV.AMO.2023.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:problemBook "LV" ;
@@ -648,19 +652,21 @@ eliozo:LV.AMO.2023.6.5 a eliozo:Problem ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2023.6.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.6.5 ;
-    eliozo:problemText """Latvijā, tāpat kā visās eirozonas valstīs, apgrozībā ir 1; 2; 5; 10; 20 un 50 centu monētas. Pieņemsim,
-ka ir zināma no šīm monētām izveidotā naudas summa $S$ un izmantoto monētu skaits $M$.
-Daudzos gadījumos, zinot $S$ un $M$ vērtības, var noteikt precīzu izmantoto monētu komplektu.
-Piemēram, ja $S=7$ un $M=3$, tad ir izmantota viena piecu un divas viena centa monētas un citu
-variantu nav.
-Kāda ir mazākā $M$ vērtība, kurai var atrast tādu $S$ vērtību, ka, zinot $S$ un $M$ vērtības, izmantoto monētu
+    eliozo:problemText """Latvijā, tāpat kā visās eirozonas valstīs, apgrozībā ir $1$; $2$; $5$; 
+$10$; $20$ un $50$ centu monētas. Pieņemsim, ka ir zināma no šīm monētām 
+izveidotā naudas summa $S$ un izmantoto monētu skaits $M$. Daudzos gadījumos, 
+zinot $S$ un $M$ vērtības, var noteikt precīzu izmantoto monētu komplektu.
+Piemēram, ja $S=7$ un $M=3$, tad ir izmantota viena piecu un divas viena centa 
+monētas un citu variantu nav. Kāda ir mazākā $M$ vērtība, kurai var atrast 
+tādu $S$ vērtību, ka, zinot $S$ un $M$ vērtības, izmantoto monētu
 komplektu viennozīmīgi nav iespējams noteikt?"""@lv ;
-    eliozo:problemTextHtml """<p>Latvijā, tāpat kā visās eirozonas valstīs, apgrozībā ir 1; 2; 5; 10; 20 un 50 centu monētas. Pieņemsim,
-ka ir zināma no šīm monētām izveidotā naudas summa $S$ un izmantoto monētu skaits $M$.
-Daudzos gadījumos, zinot $S$ un $M$ vērtības, var noteikt precīzu izmantoto monētu komplektu.
-Piemēram, ja $S=7$ un $M=3$, tad ir izmantota viena piecu un divas viena centa monētas un citu
-variantu nav.
-Kāda ir mazākā $M$ vērtība, kurai var atrast tādu $S$ vērtību, ka, zinot $S$ un $M$ vērtības, izmantoto monētu
+    eliozo:problemTextHtml """<p>Latvijā, tāpat kā visās eirozonas valstīs, apgrozībā ir $1$; $2$; $5$; 
+$10$; $20$ un $50$ centu monētas. Pieņemsim, ka ir zināma no šīm monētām 
+izveidotā naudas summa $S$ un izmantoto monētu skaits $M$. Daudzos gadījumos, 
+zinot $S$ un $M$ vērtības, var noteikt precīzu izmantoto monētu komplektu.
+Piemēram, ja $S=7$ un $M=3$, tad ir izmantota viena piecu un divas viena centa 
+monētas un citu variantu nav. Kāda ir mazākā $M$ vērtība, kurai var atrast 
+tādu $S$ vērtību, ka, zinot $S$ un $M$ vērtības, izmantoto monētu
 komplektu viennozīmīgi nav iespējams noteikt?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
@@ -756,7 +762,7 @@ rūtiņas uz blakus rūtiņu, ar ko tai ir kopīga mala.</p>
 
 eliozo:LV.AMO.2023.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:problemBook "LV" ;
@@ -765,9 +771,8 @@ eliozo:LV.AMO.2023.7.4 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2023.7.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.7.4 ;
     eliozo:problemText """Latvijā, tāpat kā visās eirozonas valstīs, apgrozībā ir 
-1; 2; 5; 10; 20 un 50 centu monētas. Pieņemsim,
-ka ir zināma no šīm monētām izveidotā naudas summa $S$ 
-un izmantoto monētu skaits $M$.
+$1$; $2$; $5$; $10$; $20$ un $50$ centu monētas. Pieņemsim, ka ir zināma 
+no šīm monētām izveidotā naudas summa $S$ un izmantoto monētu skaits $M$.
 Daudzos gadījumos, zinot $S$ un $M$ vērtības, var viennozīmīgi 
 noteikt izmantoto monētu komplektu.
 Piemēram, ja $S=7$ un $M=3$, tad ir izmantota viena piecu 
@@ -777,9 +782,8 @@ Kāda ir mazākā $S$ vērtība, kurai var atrast tādu $M$ vērtību,
 ka, zinot $S$ un $M$ vērtības, izmantoto monētu
 komplektu viennozīmīgi nav iespējams noteikt?"""@lv ;
     eliozo:problemTextHtml """<p>Latvijā, tāpat kā visās eirozonas valstīs, apgrozībā ir 
-1; 2; 5; 10; 20 un 50 centu monētas. Pieņemsim,
-ka ir zināma no šīm monētām izveidotā naudas summa $S$ 
-un izmantoto monētu skaits $M$.
+$1$; $2$; $5$; $10$; $20$ un $50$ centu monētas. Pieņemsim, ka ir zināma 
+no šīm monētām izveidotā naudas summa $S$ un izmantoto monētu skaits $M$.
 Daudzos gadījumos, zinot $S$ un $M$ vērtības, var viennozīmīgi 
 noteikt izmantoto monētu komplektu.
 Piemēram, ja $S=7$ un $M=3$, tad ir izmantota viena piecu 
@@ -1055,8 +1059,9 @@ virsotnes, ir divas reizes garāka nekā augstums no tās pašas virsotnes!</p>"
     eliozo:questionType "Prove" .
 
 eliozo:LV.AMO.2023.9.4 a eliozo:Problem ;
+    eliozo:LTopic "LTCombinatorialStructures" ;
     eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:problemBook "LV" ;
@@ -1064,15 +1069,19 @@ eliozo:LV.AMO.2023.9.4 a eliozo:Problem ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2023.9.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.9.4 ;
-    eliozo:problemText """Uz katras no $36$ kartītēm uzrakstīts kāds naturāls skaitlis (daži no tiem var būt arī vienādi). Kartītes
-iespējams sadalīt deviņās grupās pa četrām kartītēm katrā tā, ka visās grupās uz kartītēm uzrakstīto
-skaitļu summas ir vienādas. Kā arī kartītes iespējams sadalīt četrās grupās pa deviņām kartītēm katrā
+    eliozo:problemText """Uz katras no $36$ kartītēm uzrakstīts kāds naturāls skaitlis 
+(daži no tiem var būt arī vienādi). Kartītes
+iespējams sadalīt deviņās grupās pa četrām kartītēm katrā tā, ka visās grupās uz 
+kartītēm uzrakstīto skaitļu summas ir vienādas. Kā arī kartītes iespējams sadalīt 
+četrās grupās pa deviņām kartītēm katrā
 tā, ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas.
 Vai vienmēr visas kartītes var sadalīt sešās grupās pa sešām kartītēm katrā tā, ka visās grupās uz
 kartītēm uzrakstīto skaitļu summas ir vienādas?"""@lv ;
-    eliozo:problemTextHtml """<p>Uz katras no $36$ kartītēm uzrakstīts kāds naturāls skaitlis (daži no tiem var būt arī vienādi). Kartītes
-iespējams sadalīt deviņās grupās pa četrām kartītēm katrā tā, ka visās grupās uz kartītēm uzrakstīto
-skaitļu summas ir vienādas. Kā arī kartītes iespējams sadalīt četrās grupās pa deviņām kartītēm katrā
+    eliozo:problemTextHtml """<p>Uz katras no $36$ kartītēm uzrakstīts kāds naturāls skaitlis 
+(daži no tiem var būt arī vienādi). Kartītes
+iespējams sadalīt deviņās grupās pa četrām kartītēm katrā tā, ka visās grupās uz 
+kartītēm uzrakstīto skaitļu summas ir vienādas. Kā arī kartītes iespējams sadalīt 
+četrās grupās pa deviņām kartītēm katrā
 tā, ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas.
 Vai vienmēr visas kartītes var sadalīt sešās grupās pa sešām kartītēm katrā tā, ka visās grupās uz
 kartītēm uzrakstīto skaitļu summas ir vienādas?</p>"""@lv ;
@@ -1091,12 +1100,14 @@ eliozo:LV.AMO.2023.9.5 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2023.9.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2023.9.5A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.9.5 ;
-    eliozo:problemText """Pirmie sešpadsmit naturālie skaitļi patvaļīgā secībā izvietoti pa apli, katriem diviem blakus skaitļiem
-aprēķināta to starpība (no lielākā skaitļa atņemot mazāko), un pēc tam aprēķināta visu šo $16$ starpību
-summa $S$. Vai var gadīties, ka: **(A)** $S = 100$; **(B)** $S = 123$?"""@lv ;
-    eliozo:problemTextHtml """<p>Pirmie sešpadsmit naturālie skaitļi patvaļīgā secībā izvietoti pa apli, katriem diviem blakus skaitļiem
-aprēķināta to starpība (no lielākā skaitļa atņemot mazāko), un pēc tam aprēķināta visu šo $16$ starpību
-summa $S$. Vai var gadīties, ka: <strong>(A)</strong> $S = 100$; <strong>(B)</strong> $S = 123$?</p>"""@lv ;
+    eliozo:problemText """Pirmie sešpadsmit naturālie skaitļi patvaļīgā secībā izvietoti pa apli, 
+katriem diviem blakus skaitļiem aprēķināta to starpība (no lielākā skaitļa 
+atņemot mazāko), un pēc tam aprēķināta visu šo $16$ starpību summa $S$. 
+Vai var gadīties, ka: **(A)** $S = 100$; **(B)** $S = 123$?"""@lv ;
+    eliozo:problemTextHtml """<p>Pirmie sešpadsmit naturālie skaitļi patvaļīgā secībā izvietoti pa apli, 
+katriem diviem blakus skaitļiem aprēķināta to starpība (no lielākā skaitļa 
+atņemot mazāko), un pēc tam aprēķināta visu šo $16$ starpību summa $S$. 
+Vai var gadīties, ka: <strong>(A)</strong> $S = 100$; <strong>(B)</strong> $S = 123$?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "ProveDisprove" .
@@ -2365,11 +2376,12 @@ eliozo:SOLN.LV.AMO.2023.6.5 a eliozo:Solution ;
         1 ;
     eliozo:solutionText """## Atrisinājums
 
-Mazākā $M$ vērtība ir $3$, tai atbilst $S = 12$ un atšķirīgie monētu komplekti var būt
-$5 + 5 + 2$ un $10 + 1 + 1$.
+Mazākā $M$ vērtība ir $3$, tai atbilst $S = 12$ un atšķirīgie monētu 
+komplekti var būt $5 + 5 + 2$ un $10 + 1 + 1$.
 Pierādīsim, ka tā ir mazākā iespējamā $M$ vērtība.
-Ja $M=1$, tad viena izmantotā monēta ir nosakāma viennozīmīgi, jo $S$ ir jāsakrīt ar monētas vērtību.
-Aplūkosim gadījumu, ja $M=2$, un visas iespējamās divu monētu vērtību summas:
+Ja $M=1$, tad viena izmantotā monēta ir nosakāma viennozīmīgi, 
+jo $S$ ir jāsakrīt ar monētas vērtību. Aplūkosim gadījumu, ja $M=2$, 
+un visas iespējamās divu monētu vērtību summas:
 
 | Ar 1       | Ar 2       | Ar 5       | Ar 10      | Ar 20 vai 50  |
 | ---------- | ---------- | ---------- | ---------- | ------------- | 
@@ -2403,11 +2415,12 @@ vienādība $a_1 + a_2 = b_1 + b_2$ nav iespējama,
 jo vienādības kreisā puse noteikti ir lielāka nekā labā puse,
 un mūsu pieņēmums ir aplams."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Mazākā $M$ vērtība ir $3$, tai atbilst $S = 12$ un atšķirīgie monētu komplekti var būt
-$5 + 5 + 2$ un $10 + 1 + 1$.
+<p>Mazākā $M$ vērtība ir $3$, tai atbilst $S = 12$ un atšķirīgie monētu 
+komplekti var būt $5 + 5 + 2$ un $10 + 1 + 1$.
 Pierādīsim, ka tā ir mazākā iespējamā $M$ vērtība.
-Ja $M=1$, tad viena izmantotā monēta ir nosakāma viennozīmīgi, jo $S$ ir jāsakrīt ar monētas vērtību.
-Aplūkosim gadījumu, ja $M=2$, un visas iespējamās divu monētu vērtību summas:</p>
+Ja $M=1$, tad viena izmantotā monēta ir nosakāma viennozīmīgi, 
+jo $S$ ir jāsakrīt ar monētas vērtību. Aplūkosim gadījumu, ja $M=2$, 
+un visas iespējamās divu monētu vērtību summas:</p>
 <table>
 <thead>
 <tr>

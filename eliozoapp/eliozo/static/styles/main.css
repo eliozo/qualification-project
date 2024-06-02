@@ -134,3 +134,23 @@ h3.problem {
 div.problemDiv {
     font-family: Calibri Arial sans-serif;
 }
+
+/* Avoid default-white background making the navigation button invisible */
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #999999 !important;
+}
+
+
+.custom-list li {
+  list-style: none; /* Remove default numbering */
+  position: relative; /* For positioning the pseudo-element */
+  padding-left: 60px; /* Space for the custom label */
+}
+
+.custom-list li::before {
+  content: attr(data-label); /* Use the data-label attribute */
+  position: absolute;
+  left: 0;
+  width: 50px; /* Adjust width as necessary */
+  font-weight: bold; /* Optional: make label bold */
+}

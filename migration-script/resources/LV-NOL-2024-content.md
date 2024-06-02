@@ -1,7 +1,7 @@
 # <lo-sample/> LV.NOL.2024.5.1
 
-Parādi vienu veidu, kādu ciparu var ierakstīt katrā aplîtī, lai iegūtu patiesu vienādību, 
-visi pieci ierakstītie cipari būtu dažādi un neviens no tiem nebūtu 2.
+Parādi vienu veidu, kādu ciparu var ierakstīt katrā aplītī, lai iegūtu patiesu vienādību, 
+visi pieci ierakstītie cipari būtu dažādi un neviens no tiem nebūtu $2$.
 
 ![](LV.NOL.2024.5.1.png)
 
@@ -49,8 +49,8 @@ Pamatosim, ka mazāk punktu nodzēst nav iespējams. Katrā rindā ir jānodzē�
 # <lo-sample/> LV.NOL.2024.5.3
 
 Dots kvadrāts ar izmēriem $6 \times 6$ rūtiṇas, kurā dažas rūtiṇas atzīmētas ar 
-"$o$" un " $x$ " (skat. 3. att.). Parādi, kā šo kvadrātu sagriezt pa rūtiṇu līnijām 
-četrās vienādās dalās tā, lai katra dạla saturētu vienu rūtiṇu, kurā ierakstīts "$o$", 
+"$o$" un "$x$ " (skat. 3. att.). Parādi, kā šo kvadrātu sagriezt pa rūtiṇu līnijām 
+četrās vienādās daļās tā, lai katra dạla saturētu vienu rūtiṇu, kurā ierakstīts "$o$", 
 un vienu rūtiṇu, kurā ierakstīts "$x$"!
 
 *Piezīme.* Figūras ir vienādas, ja tās var uzlikt vienu uz otras tā, ka abas figūras 
@@ -61,7 +61,7 @@ sakrīt (figūras var pagriezt un apmest otrādi).
 <small>
 
 * questionType:FindExample
-* domain:Comb
+* domain:Geom
 
 </small>
 
@@ -107,7 +107,7 @@ Tã kā $2024$ dalās ar $8$ ($2024: 8=253$), tad 2024. skaitlis būs tāds pats
 
 Ja automātā iemet divus vienādus žetonus, tad tas izdod vienu zaļu žetonu, 
 bet, ja iemet divus dažādus žetonus, tad tas izdod vienu dzeltenu žetonu. 
-Sākumā Dagmārai bija $20$ dzelteni un $15$ zaḷi žetoni. 
+Sākumā Dagmārai bija $20$ dzelteni un $15$ zaḷi žetoni.
 Vai iespējams, ka pēc atkārtotas automāta izmantošanas viṇai palika:   
 **(A)** divi zaļi un viens dzeltens žetons,  
 **(B)** divi dzelteni un viens zaļš žetons?
@@ -115,7 +115,7 @@ Vai iespējams, ka pēc atkārtotas automāta izmantošanas viṇai palika:
 <small>
 
 * questionType:ProveDisprove
-* domain:Alg
+* domain:Comb
 
 </small>
 
@@ -143,8 +143,8 @@ Tātad beigās viņai paliktu 2 dzelteni žetoni un 1 zaļš žetons.
 
 # <lo-sample/> LV.NOL.2024.6.1
 
-Parādi vienu veidu, kādu ciparu var ierakstīt katrā aplîtī, lai iegūtu patiesu vienādību, 
-visi seši ierakstītie cipari būtu dažādi un neviens no tiem nebūtu 3.
+Parādi vienu veidu, kādu ciparu var ierakstīt katrā aplītī, lai iegūtu patiesu vienādību, 
+visi seši ierakstītie cipari būtu dažādi un neviens no tiem nebūtu $3$.
 
 ![](LV.NOL.2024.6.1.png)
 
@@ -165,8 +165,8 @@ Der, piemēram, $34 \cdot 37=1258$.
 
 # <lo-sample/> LV.NOL.2024.6.2
 
-Kāds ir lielākais skaits 7. att. doto figūru, ko var izgriezt no 5. att. dotās figūras, 
-ja jābūt izgrieztām arī tieši divām 6. att. figūrām?
+Kāds ir lielākais skaits 7. att. doto figūru, ko var izgriezt no 5.att. dotās figūras, 
+ja jābūt izgrieztām arī tieši divām 6.att. figūrām?
 
 ![](LV.NOL.2024.6.2.png)
 
@@ -212,7 +212,7 @@ ka abas figūras sakrīt (figūras var pagriezt un apmest otrādi).
 <small>
 
 * questionType:FindExample
-* domain:Comb
+* domain:Geom
 
 </small>
 
@@ -298,7 +298,7 @@ katru ciparu tieši vienu reizi! (Iekavas lietot nedrīkst un jāievēro darbīb
 <small>
 
 * questionType:FindExample
-* domain:Comb
+* domain:NT
 
 </small>
 
@@ -385,7 +385,7 @@ salikt taisnstūri, kurā 16. att. figūras nesaskaras ne ar malu, ne ar stūri!
 <small>
 
 * questionType:FindExample
-* domain:Comb
+* domain:Geom
 
 </small>
 
@@ -401,8 +401,8 @@ Skat., piemēram, 17. att.
 
 # <lo-sample/> LV.NOL.2024.7.5
 
-Konditorejā nopērkamas 10 tortes, to cena ir attiecīgi 
-$20 ; 21 ; 22 ; 23 ; 24 ; 25 ; 26 ; 27 ; 28 ; 29$ eiro 
+Konditorejā nopērkamas $10$ tortes, to cena ir attiecīgi 
+$20$; $21$; $22$; $23$; $24$; $25$; $26$; $27$; $28$; $29$ eiro 
 (katra torte ir tieši vienā eksemplārā). Konditorejā viens pēc otra iegriezās $3$ gardēži, 
 katrs no tiem nopirka sev dažas tortes, turklāt katrs iztērēja ne vairāk kā $85$ eiro. 
 Pierādīt, ka pēc gardēžu apmeklējuma vismaz viena torte vēl palika nenopirkta!
@@ -410,7 +410,8 @@ Pierādīt, ka pēc gardēžu apmeklējuma vismaz viena torte vēl palika nenopi
 <small>
 
 * questionType:Prove
-* domain:Alg
+* domain:Comb
+* topic:LinearOptimization
 
 </small>
 
@@ -529,7 +530,7 @@ Pierādīt, ka pēc gardēžu apmeklējuma vismaz viena torte vēl palika nenopi
 <small>
 
 * questionType:Prove
-* domain:Alg
+* domain:Comb
 
 </small>
 
@@ -567,7 +568,7 @@ viens skaitlis un katrā rindā un katrā kolonnā skaitli pieaugtu bultiņas no
 <small>
 
 * questionType:ProveDisprove
-* domain:Alg
+* domain:Comb
 
 </small>
 
@@ -1301,8 +1302,8 @@ Tātad $EC=x=27$.
 # <lo-sample/> LV.NOL.2024.12.4
 
 Pie lielas konfekšu kastes pienāk Māris un Kims. Viṇi abi pamǐšus ṇem no kastes konfektes, 
-Māris sāk pirmais. Katrā gājienā spēlētājs var izvēlēties patvalịgu pirmskaitli 
-$p$ un patvalīgu veselu nenegatīvu skaitli $n$ un panemt no kastes $p^{n}$ konfektes. 
+Māris sāk pirmais. Katrā gājienā spēlētājs var izvēlēties patvaļīgu pirmskaitli 
+$p$ un patvaļīgu veselu nenegatīvu skaitli $n$ un paņemt no kastes $p^{n}$ konfektes. 
 Uzvar tas spēlētājs, pēc kura gājiena kaste paliek tukša. Spēli sāk Māris. 
 Kurš spēlētājs, pareizi spēlējot, vienmēr var uzvarēt, 
 ja sākumā kastē ir: **(A)** $20$; **(B)** $2024$ konfektes?

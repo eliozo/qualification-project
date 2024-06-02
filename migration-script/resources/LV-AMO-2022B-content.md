@@ -9,6 +9,9 @@ cipari $0$ un $2$ un kurš dalās ar $15$?
 * questionType:FindOptimal
 * domain:NT
 * LTopic:LTNumeralSystems
+* topic:DivisibilityRulesLastDigits
+* topic:DivisibilityRulesFor3And9
+* topic:DecimalNotationDigits
 
 </small>
 
@@ -36,6 +39,9 @@ rūtiņu malu, kas pilnībā atrodas uz robežas, skaits.
 * questionType:FindExample
 * domain:Geom
 * LTopic:LTPolygons
+* topic:SquareGridShapes
+* topic:PolygonPerimeter
+* topic:Area
 
 </small>
 
@@ -61,6 +67,8 @@ septītdaļa – pensionāri. Cik biļetes tika pārdotas?
 * questionType:FindAll
 * domain:NT
 * LTopic:LTDivisibility
+* topic:MutualPrimes
+* topic:ArithmeticSeriesDivisibility
 
 </small>
 
@@ -86,6 +94,7 @@ līdzsvarā? Atbildi pamatot!
 * questionType:FindAll
 * domain:Alg
 * LTopic:LTEquationSystems
+* topic:SystemsSubstituteVariables
 
 </small>
 
@@ -122,6 +131,7 @@ Kāda krāsa patīk katrai meitenei? Atbildi pamatot!
 * questionType:FindAll
 * domain:Comb
 * LTopic:LTLogic
+* topic:PartitioningInPairsBijections
 
 </small>
 
@@ -153,6 +163,8 @@ Cik ir tādu skaitļu, kas ir apvilkti ar vismaz divām dažādām krāsām?
 * questionType:FindCount
 * domain:NT
 * LTopic:LTDivisibility
+* topic:OtherCountingSetOperations
+* topic:MutualPrimes
 
 </small>
 
@@ -197,6 +209,8 @@ Figūras var būt arī pagrieztas.
 * questionType:FindExample
 * domain:Geom
 * LTopic:LTCuttingCoversColoring
+* topic:SquareGridCutting
+* topic:RotationBy90
 
 </small>
 
@@ -221,6 +235,8 @@ Vai var gadīties, ka Māris ieguva summu, kuras pēdējais cipars ir
 * questionType:ProveDisprove,ProveDisprove
 * domain:NT
 * LTopic:LTCongruenceModulo
+* topic:PeriodicRemainders
+* topic:SeriesOneToNSum
 
 </small>
 
@@ -288,6 +304,7 @@ līdzsvarā? Atbildi pamatot!
 * questionType:FindAll
 * domain:Alg
 * LTopic:LTEquationSystems
+* topic:SystemsSubstituteVariables
 
 </small>
 
@@ -329,6 +346,8 @@ sestdiena – $56$, svētdiena – $57$. Cik ciema iedzīvotāji visu laiku melo
 * questionType:FindCount
 * domain:Comb
 * LTopic:LTLogic
+* topic:TrueAndFalseStatements
+* topic:DoubleCounting
 
 </small>
 
@@ -366,6 +385,8 @@ Cik dažādos veidos to var izdarīt?
 * questionType:FindCount
 * domain:NT
 * LTopic:LTNumeralSystems
+* topic:DivisibilityRulesLastDigits
+* topic:DivisibilityRulesFor3And9
 
 </small>
 
@@ -404,7 +425,8 @@ Vai var atrast **(A)** $5$; **(B)** $15$ naturālus skaitļus (ne obligāti daž
 * concepts:sum,product
 * questionType:ProveDisprove
 * domain:Alg
-* LTopic:LTEquations,LTNumTheoryByCases
+* LTopic:LTEquations
+* topic:EquationsAndMonotonicity
 
 </small>
 
@@ -430,6 +452,7 @@ lai uz katras no taisnēm būtu atzīmēti tieši trīs punkti!
 * questionType:FindExample
 * domain:Geom
 * LTopic:LTObjectSystemsGeometry
+
 
 </small>
 
@@ -479,12 +502,14 @@ bet **(B)** gadījumā Brālítis uzvarēs pēc $2022: 3=674$. gājiena.
     
 # <lo-sample/> LV.AMO.2022B.7.5
 
-Daži no 272 ciema iedzīvotājiem visu laiku saka patiesību, 
+Daži no $272$ ciema iedzīvotājiem visu laiku saka patiesību, 
 pārējie visu laiku melo. Katram no ciema iedzīvotājiem
 ir tieši viena mīļākā nedēļas diena. Aptaujājot iedzīvotājus, 
 viņiem tika lūgts atbildēt uz septiņiem jautājumiem,
 katrā no tiem izvēloties vienu no dotajām atbildēm:  
+
 ![](LV.AMO.2022B.7.5.png)  
+
 Uz katru jautājumu saņemto apstiprinošo ("jā") atbilžu skaits bija šāds: 
 pirmdiena – $53$, otrdiena – $54$,
 trešdiena – $55$, ceturtdiena – $56$, piektdiena – $57$, sestdiena – $58$, svētdiena – $59$. 
@@ -513,8 +538,8 @@ kurš saka patiesību, pārvērstu par meli, tad papildus mēs iegūstu
 piecas "liekas" atbildes jā.
 
 Iesākumā pieṇemsim, ka visi ciema iedzīvotāji saka patiesību, 
-tādā gadījumā mums kopā būtu tieši $273$ atbildes "jā". Tā kā mums 
-ir 394 atbildes "jā", tad mums "liekas" ir $392-272=120$ 
+tādā gadījumā mums kopā būtu tieši $272$ atbildes "jā". Tā kā mums 
+ir $392$ atbildes "jā", tad mums "liekas" ir $392-272=120$ 
 atbildes "jā". Tātad par meḷiem mums jāpārvērš $120:5=24$ ciema iedzīvotāji.
 
 
@@ -550,13 +575,13 @@ būt ierakstīts $M$ vietā, lai skaitlis dalītos ar $4$.
   tāpēc iespējamās $N$ vērtības ir $1$, $4$ vai $7$.
 * Ja $M=6$, tad skaitla ciparu summa ir $N+5+9+7+6=N+27$. 
   Lai skaitlis dalítos ar 3, tā ciparu summai jādalās ar $3$, 
-  tāpēc iespējamās $M$ vērtības ir $0$, $3$, $6$ vai $9$. 
-  Tā kā skaitlis nevar sākties ar $0$, iespējamās $N$ vērtības ir $3$, $6$ vai $9$.
+  tāpēc iespējamās $N$ vērtības ir $0$, $3$, $6$ vai $9$. 
+  Tā kā skaitlis nevar sākties ar $0$, 
+  iespējamās $N$ vērtības ir $3$, $6$ vai $9$.
 
 Līdz ar to iespējami seši dažādi varianti, kādus ciparus var 
-ierakstīt $M$ un $N$ vietā: $N=1$ un $M=2$; $N=4$ un $M=2$; 
-$N=7$ un $M=2$; $N=3$ un $M=6$; 
-$N=6$ un $M=6$; $N=9$ un $M=6$.
+ierakstīt $M$ un $N$ vietā: $(N,M)=(1,2)$; $(N,M)=(4,2)$; 
+$(N,M)=(7,2)$; $(N,M)=(3,6)$; $(N,M)=(6,6)$; $(N,M)=(9,6)$.
 
 
     
@@ -567,7 +592,8 @@ Skolēnam tika uzdots mājas darbs, kurā bija $20$ uzdevumi.
 Par katru pareizi atrisinātu uzdevumu tiek doti $8$
 punkti, par katru nepareizi atrisinātu uzdevumu tiek atņemti $5$ punkti, 
 ja uzdevums nav risināts, tad par to ir $0$ punkti. 
-Cik uzdevumus atrisināja skolēns, ja kopā viņš ieguva $13$ punktus?
+Cik uzdevumus skolēns atrisināja pareizi, 
+ja kopā viņš ieguva $13$ punktus?
 
 <small>
 
@@ -669,8 +695,9 @@ tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?
 
 * concepts:integer-numbers,distance
 * questionType:ProveDisprove,ProveDisprove
-* domain:NT
-* LTopic:LTNumTheoryExamples
+* domain:Comb
+* LTopic:LTGraphs
+* topic:HamiltonCircuits
 
 </small>
 
@@ -863,8 +890,9 @@ tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?
 
 * concepts:integer-numbers,distance
 * questionType:ProveDisprove
-* domain:NT
-* LTopic:LTNumTheoryExamples
+* domain:Comb
+* LTopic:LTGraphs
+* topic:HamiltonCircuits
 
 </small>
 
@@ -873,10 +901,10 @@ tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?
 **(A)** Pamatosim, ka prasītais nav iespējams.
 
 Ievērosim, ka skaitḷi $1$; $2$; $3$; $11$; $12$ un $13$ nevar būt 
-uzrakstīti blakus viens otram, jo katru divu skaitlu starpība nav 
+uzrakstīti blakus viens otram, jo katru divu skaitļu starpība nav 
 $3$; $4$ vai $5$. Tātad tos jāraksta, izlaižot vienu pozīciju, 
 tādējādi rodas tikai divas blakus vietas, kurās nav ierakstīti 
-skaitlii (skat. 10.att.).
+skaitļi (skat. 10.att.).
 
 Skaitli 4 var rakstīt blakus tikai skaitlim $1$, jo to starpība ir $3$, 
 bet to nevar rakstīt blakus pārējiem jau uzrakstītajiem skaitļiem 
@@ -884,9 +912,9 @@ $2$; $3$; $11$; $12$ vai $13$. Tātad skaitli $4$ jāraksta
 vienā no divām blakus esošajām brīvajām vietām.
 
 Skaitli $10$ var rakstīt blakus tikai skaitlim 13, bet to nevar 
-rakstīt blakus pārējiem pa apli uzrakstītajiem skaitliem $1$; $2$; $3$; $11$ vai $12$. 
+rakstīt blakus pārējiem pa apli uzrakstītajiem skaitļiem $1$; $2$; $3$; $11$ vai $12$. 
 Tātad skaitli 10 jāraksta vienā no divām blakus esošajām brīvajām vietām. 
-No tā izriet, ka skait|us 4 un 10 jāraksta blakus, bet rodas pretruna 
+No tā izriet, ka skaitļus 4 un 10 jāraksta blakus, bet rodas pretruna 
 ar uzdevuma nosacījumiem, jo to starpība ir $6$. Tātad dotos skaitļus 
 nevar uzrakstīt tā, lai katri divi blakus esoši skaitḷi atšķirtos par $3$; $4$ vai $5$.
 
@@ -1282,7 +1310,7 @@ līnija, tad pieskaru nogriežṇi ir vienādi: $BD=BE=1$,
 $AD=AF=8$ un $CE=CF=x$. Tātad $AB=9, BC=1+x, AC=8+x$. 
 Izmantojot kosinusu teorēmu, iegūstam
 
-$AC^{2} = AB^{2} + BC^{2} - 2 \cdot AB \cdot BC \cdot \cos \Varangle B$  
+$AC^{2} = AB^{2} + BC^{2} - 2 \cdot AB \cdot BC \cdot \cos \sphericalangle B$  
 $(8+x)^{2}=9^{2}+(1+x)^{2}-2 \cdot 9 \cdot(1+x) \cdot \cos 120^{\circ}$  
 $64+16 x+x^{2}=81+1+2 x+x^{2}-2 \cdot 9(1+x) \cdot(-0,5)$  
 $5x=27$  
@@ -1512,33 +1540,33 @@ tātad $M T=\frac{1}{2} A Q=\frac{1}{2}$.
 Līdzīgi iegūstam, ka $M P=\frac{1}{2} B N=\frac{\sqrt{3}}{2}$.
 
 Ievērojam, ka taisnleṇça trijstūrī $MTC$ izpildās, ka 
-$\sin \Varangle MCT=\frac{M T}{M C}=\frac{1}{2}$, tātad 
-$\Varangle M C T=30^{\circ}$. Līdzīgi iegūstam, ka taisnleṇka trijstūrī 
-$MPC$ izpildās, ka $\sin \Varangle M C P=\frac{M P}{M C}=\frac{\sqrt{3}}{2}$, 
-tātad $\Varangle M C P=60^{\circ}$.
+$\sin \sphericalangle MCT=\frac{M T}{M C}=\frac{1}{2}$, tātad 
+$\sphericalangle M C T=30^{\circ}$. Līdzīgi iegūstam, ka taisnleṇka trijstūrī 
+$MPC$ izpildās, ka $\sin \sphericalangle M C P=\frac{M P}{M C}=\frac{\sqrt{3}}{2}$, 
+tātad $\sphericalangle M C P=60^{\circ}$.
 
-Aplūkojam iespējamās $\Varangle MCB$ vērtības:
+Aplūkojam iespējamās $\sphericalangle MCB$ vērtības:
 
-* ja $T$ atrodas uz $BC$, tad $\Varangle M C B=30^{\circ}$;
-* ja $T$ atrodas uz $BC$ pagarinājuma, tad $\Varangle M C B=150^{\circ}$.
+* ja $T$ atrodas uz $BC$, tad $\sphericalangle M C B=30^{\circ}$;
+* ja $T$ atrodas uz $BC$ pagarinājuma, tad $\sphericalangle M C B=150^{\circ}$.
 
-Tā kā $\Varangle ACB=\Varangle MCA+\Varangle MCB$, gadījums, 
-ka $\Varangle MCB=150^{\circ}$, nav iespējams, jo tad pie 
-jebkuras $\Varangle M C B$ vērtības $\Varangle A C B$ būs vienāds 
-vai lielāks nekā $180^{\circ}$. No tā izriet, ka $\Varangle MCB=30^{\circ}$.
+Tā kā $\sphericalangle ACB=\sphericalangle MCA+\sphericalangle MCB$, gadījums, 
+ka $\sphericalangle MCB=150^{\circ}$, nav iespējams, jo tad pie 
+jebkuras $\sphericalangle M C B$ vērtības $\sphericalangle A C B$ būs vienāds 
+vai lielāks nekā $180^{\circ}$. No tā izriet, ka $\sphericalangle MCB=30^{\circ}$.
 
-Līdzīgi aplūkojam iespējamās $\Varangle MCA$ un $\Varangle ACB$ vērtības:
+Līdzīgi aplūkojam iespējamās $\sphericalangle MCA$ un $\sphericalangle ACB$ vērtības:
 
-* ja $P$ atrodas $AC$, tad $\Varangle M C A=60^{\circ}$ un $\Varangle A C B=90^{\circ}$,
-* ja $P$ atrodas uz $AC$ pagarinājuma, tad $\Varangle MCA = 120^{\circ}$ un 
-  $\Varangle A C B=150^{\circ}$.
+* ja $P$ atrodas $AC$, tad $\sphericalangle MCA = 60^{\circ}$ un $\sphericalangle ACB = 90^{\circ}$,
+* ja $P$ atrodas uz $AC$ pagarinājuma, tad $\sphericalangle MCA = 120^{\circ}$ un 
+  $\sphericalangle A C B=150^{\circ}$.
 
-Ja $\Varangle ACB=90^{\circ}$ (skat. 17. att.), tad augstumi no virsotnēm 
+Ja $\sphericalangle ACB=90^{\circ}$ (skat. 17. att.), tad augstumi no virsotnēm 
 $A$ un $B$ sakrīt ar katetēm $AC$ un $BC$, tātad
 
 $$S_{ABC}=\frac{AC \cdot BC}{2}=\frac{1 \cdot \sqrt{3}}{2}=\frac{\sqrt{3}}{2}.$$
 
-Ja $\Varangle ACB=150^{\circ}$ (skat. 18. att.), aplūkojam taisnleņķa trijstūri $AQC$, kurā $\Varangle A C Q=30^{\circ}$, tātad $\frac{A Q}{A C}=\sin \Varangle A C Q=\frac{1}{2}$. No tā izriet, ka $A C=2 \cdot A Q=2$ un
+Ja $\sphericalangle ACB=150^{\circ}$ (skat. 18. att.), aplūkojam taisnleņķa trijstūri $AQC$, kurā $\sphericalangle A C Q=30^{\circ}$, tātad $\frac{A Q}{A C}=\sin \sphericalangle ACQ=\frac{1}{2}$. No tā izriet, ka $A C=2 \cdot A Q=2$ un
 
 $$S_{ABC}=\frac{AC \cdot BN}{2}=2 \cdot \frac{\sqrt{3}}{2}=\sqrt{3}.$$
 

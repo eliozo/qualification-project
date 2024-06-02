@@ -205,7 +205,9 @@ Cik no skaitļiem $x,y,z,t$ var būt pāra skaitļi?
 
 Funkcijas $f(x)$ argumenti un vērtības ir naturāli skaitļi. 
 Katram naturālam $x$ izpildās vienādība
+
 $$f(f(x))+f(x) = 2x.$$
+
 Atrast visas šādas funkcijas $f(x)$ un pierādīt, 
 ka citu bez atrastajām nav.
 
@@ -222,6 +224,7 @@ ka citu bez atrastajām nav.
 # <lo-sample/> LV.AMO.2000.12.2
 
 Atrisināt naturālos skaitļos vienādojumu
+
 $$\left( 2a+b \right) \cdot \left( 2b + a \right) = 2^c.$$
 
 <small>
@@ -708,14 +711,16 @@ Abās grupās skaitļu summas ir $12$, bet kvadrātu summas ir $62$.
 Pamatosim ar indukciju, ka to var izdarīt katram $n = 4m+3$, ja $m \geq 0$ ir 
 vesels skaitlis.
 
-*Bāze:* Pie ie $n=3$ var izdarīt kā punktā **(a)**.  
+*Bāze:* Pie ie $n=3$ var izdarīt kā punktā **(A)**.  
 *Induktīvais pieņēmums:* Pieņemsim, ka to var izdarīt kādai vērtībai $n=3+4m$. 
 Pamatosim, ka var izdarīt arī lielākai vērtībai:
 $n=3+4(m+1)$.
 *Induktīvā pāreja:* Sadala pirmos $3+4m$ skaitļus atbilstoši induktīvajam pieņēmumam. 
 Ar $k$ apzīmējam lielāko no skaitļiem, kas izmantoti šajā konstrukcijā. 
-Pievienosim astoņus jaunus skaitļus, tos sadalot grupās (līdzīgi kā **(b)** punktā): 
+Pievienosim astoņus jaunus skaitļus, tos sadalot grupās (līdzīgi kā **(B)** punktā):
+
 $$(k+1, k+4, k+6, k+7)\;\;\text{un}\;\;(k+2, k+3, k+5, k+8)$$. 
+
 Visi šie astoņi skaitļi ir savstarpēji dažādi. 
 
 * Vienā grupā summa ir $(k+1) + (k+4) + (k+6) + (k+7) = 4k + 18$. Tāda pati summa ir arī 
@@ -794,7 +799,9 @@ cik naturālu dalītāju, kas dod atlikumu $2$, dalot ar $3$?
 # <lo-sample/> LV.AMO.2004.7.3
 
 Kādam mazākajam naturālajam $n$ visas daļas
+
 $$\frac{5}{n+7}, \frac{6}{n+8}, \frac{7}{n+9}, \ldots, \frac{35}{n+37}, \frac{36}{n+38}$$
+
 ir nesaīsināmas?
 
 <small>
@@ -942,7 +949,9 @@ Vai eksistē tāds naturāls skaitlis $n$, ka $2004^n-1$ dalās ar $1500^n-1$?
 # <lo-sample/> LV.AMO.2004.12.1
 
 Dots, ka $n$ – naturāls skaitlis, $n>1$. Vai izteiksmi
+
 $$\left( x^n + x^{n-1} + \ldots + x + 1 \right)^2 - x^n$$
+
 noteikti var izsacīt kā divu polinomu reizinājumu tā, 
 lai neviens no šiem polinomiem nebūtu
 konstante un visi abu polinomu 
@@ -963,7 +972,9 @@ koeficienti būtu veseli skaitļi?
 Funkcijai $f(n)$ gan argumenti, gan vērtības 
 ir naturāli skaitļi, un katriem diviem naturāliem
 skaitļiem $x$ un $y$ pastāv vienādība
+
 $$xf(y)+yf(x)=(x+y)f(x^2+y^2).$$
+
 Atrast visas šādas funkcijas $f$ un pierādīt, ka citu bez jūsu atrastajām nav.
 
 <small>
@@ -1243,8 +1254,10 @@ lielākais kopīgais dalītājs būtu lielāks par $1$?
 # <lo-sample/> LV.AMO.2006.10.3
 
 Ir dots, ka, sareizinot visus naturālos skaitļus 
-no $1$ līdz $33$ ieskaitot, iegūst 
-$$86833176188xy8864955181944012zt000000,$$ 
+no $1$ līdz $33$ ieskaitot, iegūst
+
+$$86833176188xy8864955181944012zt000000,$$
+
 kur $x, y, z, t$ ir cipari. Noskaidrojiet $x$, 
 $y$, $z$ un $t$ vērtības.
 
@@ -1405,7 +1418,9 @@ kā divu veselu skaitļu kvadrātu summa.
 Pierādiet, ka arī reizinājums  ir izsakāms šādā veidā.  
 **(B)** atrodiet divus tādus polinomus ar veseliem koeficientiem 
 $f(x)$ un $g(x)$, ka visiem $x$ pastāv vienādība
+
 $$\left( f(x) \right)^2 + \left( g(x) \right)^2 =$$
+
 $$= \left( x^2+1 \right)\left( x^2 + 4 \right)
 \left(x^2 + 2x + 2 \right)\left( x^2 - 2x + 2 \right).$$
 
@@ -1481,6 +1496,7 @@ $x$ vai $y = 2^{12} = 4096$. (Vai arī sareizināsies $2$ un $5$.)
 Dots, ka $n>1$ – naturāls skaitlis, kas nav pirmskaitlis. 
 Pierādīt, ka var atrast vismaz trīs dažādus naturālus skaitļus $a_1,a_2,\ldots,a_k$, 
 kas apmierina sakarību
+
 $$a_1 + a_2 + \ldots + a_k = n \cdot \left( \frac{1}{a_1} + 
 \frac{1}{a_2} + \ldots + \frac{1}{a_k} \right).$$
 
@@ -1580,7 +1596,9 @@ vairāk par $1250$ gājieniem.
 
 Funkcija $f(n)$ definēta visiem veseliem $n$ un pieņem 
 veselas vērtības. Visiem veseliem $x$ un $y$ pastāv vienādība
+
 $$f(f(x) + y) = x + f(y+2008).$$
+
 Atrast visas tādas funkcijas $f$ un pierādīt, ka citu bez Jūsu atrastajām nav.
 
 <small>
@@ -1967,7 +1985,9 @@ Ja starpība divu bērnu konfekšu skaitam pēc kāda laika ir $19$, tad $a=19$.
 # <lo-sample/> LV.AMO.2010.8.1
 
 Starp skaitļiem
+
 $$6\;\;1\;\;3\;\;4,$$
+
 nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\cdot$",
 "$:$") un iekavas tā, lai iegūtās izteiksmes vērtība būtu **(A)** $25$,
 **(B)** $24$.  
@@ -2175,8 +2195,10 @@ tādu $n$, ka, pareizi spēlējot, otrais spēlētājs uzvar!
 
 # <lo-sample/> LV.AMO.2011.5.1
 
-Reizināšanas piemērā ciparus aizstāja ar burtiem un ieguva izteiksmi  
-$$AB \cdot CD = EEE.$$ . 
+Reizināšanas piemērā ciparus aizstāja ar burtiem un ieguva izteiksmi
+
+$$AB \cdot CD = EEE.$$
+
 Atjauno sākotnējo reizināšanas piemēru, ja zināms, ka vienādi burti
 apzīmē vienādus ciparus, bet dažādi burti – dažādus ciparus, pie tam
 ne $A$, ne $C$ nav $0$. Atrodi visus iespējamos atrisinājumus!
@@ -2279,6 +2301,7 @@ Parādi, kā to var izdarīt, ja
 
 
 Vai eksistē tādi naturāli skaitļi $a$ un $b$, kuriem izpildās vienādība
+
 $$a \cdot b \cdot (a+b) = 20102011 ?$$
 
 <small>
@@ -2462,7 +2485,9 @@ vesels skaitlis.
 # <lo-sample/> LV.AMO.2011.8.1
 
 Starp skaitļiem
+
 $$8\;\;3\;\;5\;\;2,$$
+
 nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\cdot$",
 "$:$") un iekavas tā, lai iegūtās izteiksmes vērtība būtu **(A)** $15$, **(B)** $16$.
 
@@ -2537,6 +2562,7 @@ Pēc katra Annas gājiena skaitlim jādalās ar $10$.
 # <lo-sample/> LV.AMO.2011.9.1
 
 Atrodi visus naturālu skaitļu pārus $(x, y)$ tādus, ka $x\neq y$ un
+
 $$\frac{1}{x^2 + 24} + \frac{1}{y^2 + 24} = \frac{2}{xy + 24}.$$
 
 <small>
@@ -2749,6 +2775,7 @@ Sadali 1. zīmējumā attēloto figūru trīs vienādās figūrās.
 # <lo-sample/> LV.AMO.2012.7.1
 
 Vai var atrast tādus veselus skaitļus $a$ un $b$, kuriem izpildās vienādība
+
 $$ab(3a + 5b) = 1234567?$$
 
 
@@ -2790,7 +2817,9 @@ vesels nogrieznis)?
 # <lo-sample/> LV.AMO.2012.8.1
 
 Starp skaitļiem
+
 $$4\;\;1\;\;5\;\;7,$$
+
 nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\ast$",
 "$:$") un iekavas tā, lai iegūtās izteiksmes vērtība būtu **(A)** $13$, **(B)** $14$. 
 
@@ -3107,7 +3136,9 @@ ir jākrāso vienā krāsā. *Atbildi pamatot!*
 # <lo-sample/> LV.AMO.2013.6.1
 
 Uz tāfeles uzrakstīti desmit skaitļi:
-$$1\;\;2\;\;3\;\;4\;\;5\;\;6\;\;7\;\;8\;\;9\;\;10.$$  
+
+$$1\;\;2\;\;3\;\;4\;\;5\;\;6\;\;7\;\;8\;\;9\;\;10.$$
+
 Alfons nodzēš jebkurus divus no tiem (apzīmēsim tos ar $a$ un $b$)
 un to vietā uzraksta skaitli, kas vienāds ar  $a+b+2$. Šo operāciju
 viņš atkārto, kamēr uz tāfeles paliek viens skaitlis.
@@ -3518,6 +3549,7 @@ otru.
 Izrakstām ģeometriskas progresijas, kas sākas ar nepāru skaitļiem un $q=2$: 
 
 $$(1,2,4,8,16,32,64),\;(3,6,12,24,48,96),$$
+
 $$(5,10,20,40,80),\ldots,(97),\;(99).$$
 
 * Būs tieši $50$ progresijas (dažās būs tikai pa vienam loceklim), jo līdz $100$ ir tieši $50$ nepāru skaitļi.
@@ -3574,6 +3606,7 @@ ir vienāds ar divu citu diagonāļu garumu summu?
 Doti dažādi nepāra naturāli skaitļi $a_1, a_2, \ldots, a_n$. 
 Neviens no tiem nedalās ne ar vienu pirmskaitli, kas lielāks 
 kā $5$. Pierādīt, ka
+
 $$\frac{1}{a_1} + \frac{1}{a_2} + \frac{1}{a_3} + \ldots \frac{1}{a_n} < 2.$$
 
 <small>
@@ -3675,7 +3708,8 @@ ne vairāk kā divi (piemēram, ja "A" ir patskanis, bet "B" –
 līdzskanis, tad, piemēram, "ABBA" ir vārds, turpretī "BAAB" un
 "ABBBA" nav vārdi).  
 Ar $S(n)$ apzīmēsim visu to vārdu skaitu, kuri sastāv no $n$ burtiem, $n \geq 1$. 
-Pierādīt, ka visiem naturāliem skaitļiem n ir spēkā vienādība  
+Pierādīt, ka visiem naturāliem skaitļiem n ir spēkā vienādība
+
 $$S(n+3) = i \cdot j \cdot S(n+1) + i \cdot j^2 \cdot S(n).$$
 
 <small>
@@ -4226,6 +4260,7 @@ Atrast visus naturālos skaitļus, kas ir vienādi ar savu ciparu reizinājumu.
 * Pamatojam to 2-ciparu un 3-ciparu skaitļiem $\overline{ab}$ un $\overline{abc}$
 
 $$a\cdot{}b < 10a \leq 10^1\cdot{}a + b = \overline{ab},$$
+
 $$a\cdot{}b\cdot{}c < 10^2\cdot{}a < 100a + 10b + c = \overline{abc}.$$
 
 Skaitļa pirmo decimālciparu reizinot ar $k$ turpmākajiem cipariem, iegūsim 
@@ -4333,6 +4368,7 @@ ka $\angle ANC=90^{\circ}$.
 # <lo-sample/> LV.AMO.2016.8.1
 
 Aprēķini dotās izteiksmes vērtību!
+
 $$\frac{2000016 \cdot 1999984}{5^{12} \cdot 2^{13} - 128}$$
 
 
@@ -4645,7 +4681,9 @@ $CD > \frac{1}{2}(CA+CB-AB)$.
 # <lo-sample/> LV.AMO.2018.7.4
 
 Atrast tādu veselu skaitli $n$, lai vienādība
+
 $$(n - 2021)(n - 2018)(n - 2017)(n - 2016) = 2016$$
+
 būtu patiesa!
 
 <small>
@@ -4768,6 +4806,7 @@ $$ x_1 \equiv x_2\;(\mbox{mod}\,m)\;\;\Rightarrow\;\;P(x_1) \equiv P(x_2)\;(\mbo
 # <lo-sample/> LV.AMO.2018.11.1
 
 Pierādīt, ka visām naturālām $n$ vērtībām izpildās
+
 $$1^3 + 2^3 + 3^3 + \ldots + n^3 = (1 + 2 + 3 + \ldots + n)^2.$$
 
 <small>
@@ -4867,8 +4906,10 @@ nekā sākotnējais. Atrast doto sešciparu skaitli!
 
 Vai eksistē tāds kvadrātvienādojums ar veseliem koeficientiem, 
 kuram ir sakne
+
 $$\left( \sqrt{2020} − 2\sqrt{2019} + \sqrt{2018} \right)
 \left( \sqrt{2020} + \sqrt{2019} \right) \times$$
+
 $$\times \left( \sqrt{2019} + \sqrt{2018} \right)
 \left( \sqrt{2020} + \sqrt{2018} \right)?$$
 
@@ -4884,7 +4925,9 @@ $$\times \left( \sqrt{2019} + \sqrt{2018} \right)
 # <lo-sample/> LV.AMO.2019.10.1
 
 Pierādīt, ka visām naturālām $n$ vērtībām ir spēkā vienādība
+
 $$6 + 24 + 60 + \cdots + n(n + 1)(n + 2) =$$
+
 $$=\frac{n(n+1)(n+2)(n+3)}{4}.$$
 
 <small>

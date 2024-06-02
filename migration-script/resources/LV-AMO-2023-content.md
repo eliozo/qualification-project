@@ -13,7 +13,7 @@ lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.
 * concepts:difference,distance,triangle
 * seeAlso:LV.AMO.2023.6.1
 * questionType:FindExample
-* domain:Alg
+* domain:Comb
 
 </small>
 
@@ -128,7 +128,8 @@ Kāds ir lielākais iespējamais viesu skaits, kas bija ieradušies uz Gunas dzi
 * topic:PigeonholePrincipleForExtremes
 * questionType:FindOptimal
 * LTTopic:LTExtremes
-* domain:Alg
+* domain:Comb
+* topic:LinearOptimization
 
 </small>
 
@@ -173,7 +174,7 @@ viesus, tad nevar arī vairāk, un $21$ ir lielākais iespējamais viesu skaits.
 
 # <lo-sample/> LV.AMO.2023.6.1
 
-Skaitļus no $1$ līdz $16$ ieraksti 7. att. redzamajos mazajos trijstūros 
+Skaitļus no $1$ līdz $16$ ieraksti 7.att. redzamajos mazajos trijstūros 
 (katrā trijstūrī citu naturālo skaitli) tā,
 lai blakus trijstūros ierakstīties skaitļi neatšķiras vairāk kā par $4$.  
 *Piezīme.* Par blakus trijstūriem sauksim trijstūrus, kam ir kopīga mala.
@@ -184,7 +185,7 @@ lai blakus trijstūros ierakstīties skaitļi neatšķiras vairāk kā par $4$.
 <small>
 
 * questionType:FindExample
-* domain:Alg
+* domain:Comb
 
 </small>
 
@@ -299,30 +300,31 @@ Ja pirmie pieci bruņinieki ir sarkanie un pēdējie pieci ir zaļie, tad uzdevu
 
 # <lo-sample/> LV.AMO.2023.6.5
 
-Latvijā, tāpat kā visās eirozonas valstīs, apgrozībā ir 1; 2; 5; 10; 20 un 50 centu monētas. Pieņemsim,
-ka ir zināma no šīm monētām izveidotā naudas summa $S$ un izmantoto monētu skaits $M$.
-Daudzos gadījumos, zinot $S$ un $M$ vērtības, var noteikt precīzu izmantoto monētu komplektu.
-Piemēram, ja $S=7$ un $M=3$, tad ir izmantota viena piecu un divas viena centa monētas un citu
-variantu nav.
-Kāda ir mazākā $M$ vērtība, kurai var atrast tādu $S$ vērtību, ka, zinot $S$ un $M$ vērtības, izmantoto monētu
+Latvijā, tāpat kā visās eirozonas valstīs, apgrozībā ir $1$; $2$; $5$; 
+$10$; $20$ un $50$ centu monētas. Pieņemsim, ka ir zināma no šīm monētām 
+izveidotā naudas summa $S$ un izmantoto monētu skaits $M$. Daudzos gadījumos, 
+zinot $S$ un $M$ vērtības, var noteikt precīzu izmantoto monētu komplektu.
+Piemēram, ja $S=7$ un $M=3$, tad ir izmantota viena piecu un divas viena centa 
+monētas un citu variantu nav. Kāda ir mazākā $M$ vērtība, kurai var atrast 
+tādu $S$ vērtību, ka, zinot $S$ un $M$ vērtības, izmantoto monētu
 komplektu viennozīmīgi nav iespējams noteikt?
-
 
 <small>
 
 * questionType:FindOptimal
-* domain:Alg
+* domain:Comb
 
 </small>
 
 
 ## Atrisinājums
 
-Mazākā $M$ vērtība ir $3$, tai atbilst $S = 12$ un atšķirīgie monētu komplekti var būt
-$5 + 5 + 2$ un $10 + 1 + 1$.
+Mazākā $M$ vērtība ir $3$, tai atbilst $S = 12$ un atšķirīgie monētu 
+komplekti var būt $5 + 5 + 2$ un $10 + 1 + 1$.
 Pierādīsim, ka tā ir mazākā iespējamā $M$ vērtība.
-Ja $M=1$, tad viena izmantotā monēta ir nosakāma viennozīmīgi, jo $S$ ir jāsakrīt ar monētas vērtību.
-Aplūkosim gadījumu, ja $M=2$, un visas iespējamās divu monētu vērtību summas:
+Ja $M=1$, tad viena izmantotā monēta ir nosakāma viennozīmīgi, 
+jo $S$ ir jāsakrīt ar monētas vērtību. Aplūkosim gadījumu, ja $M=2$, 
+un visas iespējamās divu monētu vērtību summas:
 
 | Ar 1       | Ar 2       | Ar 5       | Ar 10      | Ar 20 vai 50  |
 | ---------- | ---------- | ---------- | ---------- | ------------- | 
@@ -466,9 +468,8 @@ Skat., piemēram, **(a)** 13. att. un **(b)** 14. att.
 # <lo-sample/> LV.AMO.2023.7.4
 
 Latvijā, tāpat kā visās eirozonas valstīs, apgrozībā ir 
-1; 2; 5; 10; 20 un 50 centu monētas. Pieņemsim,
-ka ir zināma no šīm monētām izveidotā naudas summa $S$ 
-un izmantoto monētu skaits $M$.
+$1$; $2$; $5$; $10$; $20$ un $50$ centu monētas. Pieņemsim, ka ir zināma 
+no šīm monētām izveidotā naudas summa $S$ un izmantoto monētu skaits $M$.
 Daudzos gadījumos, zinot $S$ un $M$ vērtības, var viennozīmīgi 
 noteikt izmantoto monētu komplektu.
 Piemēram, ja $S=7$ un $M=3$, tad ir izmantota viena piecu 
@@ -482,7 +483,7 @@ komplektu viennozīmīgi nav iespējams noteikt?
 <small>
 
 * questionType:FindOptimal
-* domain:Alg
+* domain:Comb
 
 </small>
 
@@ -880,9 +881,11 @@ tā ir vienāda ar pusi no hipotenūzas $AM$ jeb $AM = 2AH$.
 
 # <lo-sample/> LV.AMO.2023.9.4
 
-Uz katras no $36$ kartītēm uzrakstīts kāds naturāls skaitlis (daži no tiem var būt arī vienādi). Kartītes
-iespējams sadalīt deviņās grupās pa četrām kartītēm katrā tā, ka visās grupās uz kartītēm uzrakstīto
-skaitļu summas ir vienādas. Kā arī kartītes iespējams sadalīt četrās grupās pa deviņām kartītēm katrā
+Uz katras no $36$ kartītēm uzrakstīts kāds naturāls skaitlis 
+(daži no tiem var būt arī vienādi). Kartītes
+iespējams sadalīt deviņās grupās pa četrām kartītēm katrā tā, ka visās grupās uz 
+kartītēm uzrakstīto skaitļu summas ir vienādas. Kā arī kartītes iespējams sadalīt 
+četrās grupās pa deviņām kartītēm katrā
 tā, ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas.
 Vai vienmēr visas kartītes var sadalīt sešās grupās pa sešām kartītēm katrā tā, ka visās grupās uz
 kartītēm uzrakstīto skaitļu summas ir vienādas?
@@ -891,7 +894,8 @@ kartītēm uzrakstīto skaitļu summas ir vienādas?
 <small>
 
 * questionType:ProveDisprove
-* domain:Alg
+* domain:Comb
+* LTopic:LTCombinatorialStructures
 
 </small>
 
@@ -927,9 +931,10 @@ ka kartītes sešās grupās pa sešām katrā ar vienādu skaitļu kopsummu sad
 
 # <lo-sample/> LV.AMO.2023.9.5
 
-Pirmie sešpadsmit naturālie skaitļi patvaļīgā secībā izvietoti pa apli, katriem diviem blakus skaitļiem
-aprēķināta to starpība (no lielākā skaitļa atņemot mazāko), un pēc tam aprēķināta visu šo $16$ starpību
-summa $S$. Vai var gadīties, ka: **(A)** $S = 100$; **(B)** $S = 123$?
+Pirmie sešpadsmit naturālie skaitļi patvaļīgā secībā izvietoti pa apli, 
+katriem diviem blakus skaitļiem aprēķināta to starpība (no lielākā skaitļa 
+atņemot mazāko), un pēc tam aprēķināta visu šo $16$ starpību summa $S$. 
+Vai var gadīties, ka: **(A)** $S = 100$; **(B)** $S = 123$?
 
 <small>
 
@@ -1146,7 +1151,8 @@ ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?
 <small>
 
 * questionType:ProveDisprove,ProveDisprove
-* domain:Alg
+* domain:Comb
+* LTopic:LTCombinatorialStructures
 
 </small>
 
@@ -1262,7 +1268,8 @@ Māra dzimšanas dienas svinībām?
 <small>
 
 * questionType:FindOptimal
-* domain:Alg
+* domain:Comb
+* topic:LinearOptimization
 
 </small>
 
@@ -1519,6 +1526,7 @@ būtu patiesa?
 
 * questionType:ProveDisprove
 * domain:Alg
+* LTopic:LTEquations
 
 </small>
 

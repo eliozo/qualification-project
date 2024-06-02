@@ -166,6 +166,10 @@ def extract_sections_from_md(filepath):
     return sections
 
 
+def remove_translation_tags(text):
+    pattern = re.compile(r'<text lang=.*?>.*?</text>', re.DOTALL)
+    return re.sub(pattern, '', text)
+
 def md_to_rdf(md_file_path, ttl_file_path):
     sections = extract_sections_from_md(md_file_path)
 
@@ -212,8 +216,12 @@ def md_to_rdf(md_file_path, ttl_file_path):
             add_problem_literal_prop(g, problem_node, 'problemBook', book_name)
             add_problem_literal_prop(g, problem_node, 'problemBookSection', section_name)
             add_problem_integer_prop(g, problem_node, 'problem_number', problem_number)
+            add_problem_literal_prop(g, problem_node, 'problemID', title)
 
         problem_text_md = extract_problem(section).strip()
+        # clean away the translations
+        problem_text_md = remove_translation_tags(problem_text_md)
+
         img_list = extract_images(problem_text_md)
         for (img_src, img_width) in img_list:
             addImageToRDFGraph(g, title, img_src, img_width)

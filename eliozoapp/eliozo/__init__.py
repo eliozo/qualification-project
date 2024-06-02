@@ -90,10 +90,10 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
 SELECT ?problemTextHtml ?solutionTextHtml ?video WHERE {{
-  ?problem eliozo:problemID '{problemid}' .
+  ?problem eliozo:problemID '{problemid}' ;
+           eliozo:problemTextHtml ?problemTextHtml .
   OPTIONAL {{
-    ?problem eliozo:problemTextHtml ?problemTextHtml ;
-             eliozo:problemYear ?year ;
+    ?problem eliozo:problemYear ?year ;
              eliozo:olympiadCode ?olympiad ;
              eliozo:problemGrade ?grade ;
              eliozo:country ?country .
@@ -127,23 +127,26 @@ SELECT ?problemTextHtml ?solutionTextHtml ?video WHERE {{
 def getSkillProblemsSPARQL(skillID):
     # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     url = FUSEKI_URL
-    myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
-    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
-    'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
-    '''SELECT DISTINCT ?problem ?problemid ?subskill ?text ?grade
-WHERE {
-    ?parent skos:prefLabel \''''+skillID+'''\'  .
-    ?parent skos:narrower* ?subskill .
-    ?problem eliozo:hasSkill ?subskill ;
-             eliozo:problemID ?problemid ;
-             eliozo:problemText ?text ;
-             eliozo:problemGrade ?grade .
-} ORDER BY ?grade
- '''
 
-}
-    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+    queryTemplate = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+SELECT DISTINCT ?problem ?problemid ?subskill ?text ?grade
+WHERE {{
+    ?parent skos:prefLabel '{skill}' .
+    ?parent skos:narrower* ?subskill .
+    ?problem eliozo:topic ?subskill ;
+             eliozo:problemID ?problemid ;
+             eliozo:problemTextHtml ?text ;
+             eliozo:problemGrade ?grade .
+}} ORDER BY ?grade
+"""
+
+    myobj = {'query': queryTemplate.format(skill=skillID)}
+
+    head = {'Content-Type': 'application/x-www-form-urlencoded'}
 
     x = requests.post(url, myobj, head)
 
@@ -178,21 +181,48 @@ WHERE {
 
     return x.text
 
+def getSkillDetails(skillID):
+    url = FUSEKI_URL
+    queryTemplate = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+SELECT ?skillID ?skillNumber ?skillName ?skillDesc WHERE {{
+  ?skill skos:prefLabel '{skill}' ;
+      eliozo:skillNumber ?skillNumber ;
+      eliozo:skillName ?skillName ;
+      eliozo:skillDescription ?skillDesc .
+}}
+"""
+
+    myobj = {'query': queryTemplate.format(skill=skillID)}
+    head = {'Content-Type': 'application/x-www-form-urlencoded'}
+    x = requests.post(url, myobj, head)
+    print(x.text)
+    return x.text
+
+
 def getAllSkillChildren(skillID):
     # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     url = FUSEKI_URL
-    myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
-    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
-    'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
-    '''SELECT ?skillID ?prefLabel ?num ?desc WHERE {
-	?alg skos:prefLabel \''''+skillID+'''\' .
-    ?skillID skos:broader ?alg ;
-             skos:prefLabel ?prefLabel ;
-             eliozo:skillDescription ?desc ;
-  			 eliozo:skillNumber ?num .
-} ORDER BY ?num'''
-    }
+
+    queryTemplate = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+SELECT ?skillID ?prefLabel ?num ?skillName WHERE {{
+  ?parentskill skos:prefLabel '{skill}' .
+  ?skillID skos:broader ?parentskill ;
+      skos:prefLabel ?prefLabel ;
+      eliozo:skillName ?skillName ;
+      eliozo:skillNumber ?num .
+}} ORDER BY ?num
+"""
+
+
+    myobj = {'query': queryTemplate.format(skill=skillID)}
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
 
@@ -233,7 +263,7 @@ def getSPARQLOlympiadYears(country, olympiad):
     'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\n'+
     'SELECT DISTINCT ?year ?grade WHERE { ?problem eliozo:country \''+country+
     '\' ; eliozo:olympiadCode \''+olympiad+
-    '\' ; eliozo:problemYear ?year ; eliozo:problemGrade ?grade . } ORDER BY ?year ?grade'
+    '\' ; eliozo:problemYear ?year ; eliozo:problemGrade ?grade . } ORDER BY DESC(?year) ?grade'
     }
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
@@ -280,20 +310,20 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad):
 def getSPARQLOlympiadYear(year, country, olympiad):
     url = FUSEKI_URL
     queryTemplate = """
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-    PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?text ?problemid ?problem_number ?problem_grade WHERE {{
-      ?problem eliozo:problemYear {year} .
-      ?problem eliozo:country '{country}' .
-      ?problem eliozo:problemTextHtml ?text .
-      ?problem eliozo:problemID ?problemid .
-      ?problem eliozo:problem_number ?problem_number .
-      ?problem eliozo:problemGrade ?problem_grade .
-      ?problem eliozo:olympiadCode '{olympiad_code}' .
-    }} ORDER BY ?problem_grade ?problem_number
-    """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
+SELECT ?text ?problemid ?problem_number ?problem_grade WHERE {{
+  ?problem eliozo:problemYear {year} .
+  ?problem eliozo:country '{country}' .
+  ?problem eliozo:problemTextHtml ?text .
+  ?problem eliozo:problemID ?problemid .
+  ?problem eliozo:problem_number ?problem_number .
+  ?problem eliozo:problemGrade ?problem_grade .
+  ?problem eliozo:olympiadCode '{olympiad_code}' .
+}} ORDER BY ?problem_grade ?problem_number
+"""
 
 
     myobj = { 'query':
@@ -312,23 +342,46 @@ def getSPARQLOlympiadYear(year, country, olympiad):
 
 def getSPARQLBook(bookid, sectionid):
     url = FUSEKI_URL
-    myobj = {'query' : '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+    queryTemplate = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?text ?problemid ?problem_number ?imagefile WHERE {
-  ?problem eliozo:problemBook \'''' + bookid + '''\' ;
-           eliozo:problemBookSection \'''' + sectionid + '''\' ;
-           eliozo:problemText ?text ;
+SELECT ?text ?problemid ?problem_number ?imagefile WHERE {{
+  ?problem eliozo:problemBook '{book}' ;
+           eliozo:problemBookSection '{section}' ;
+           eliozo:problemTextHtml ?text ;
            eliozo:problemID ?problemid ;
            eliozo:problem_number ?problem_number .
-  OPTIONAL {
+  OPTIONAL {{
     ?problem eliozo:image ?imagefile .
-  } .
-} ORDER BY ?problem_number'''
-    }
+  }} .
+}} ORDER BY ?problem_number   
+"""
 
-    print('**********myobj={}'.format(myobj))
+
+#     myobj = {'query' : '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+# PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+# PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
+#     SELECT ?text ?problemid ?problem_number ?imagefile WHERE {
+#   ?problem eliozo:problemBook \'''' + bookid + '''\' ;
+#            eliozo:problemBookSection \'''' + sectionid + '''\' ;
+#            eliozo:problemText ?text ;
+#            eliozo:problemID ?problemid ;
+#            eliozo:problem_number ?problem_number .
+#   OPTIONAL {
+#     ?problem eliozo:image ?imagefile .
+#   } .
+# } ORDER BY ?problem_number'''
+#     }
+
+    # print('**********myobj={}'.format(myobj))
+
+    myobj = {'query':
+        queryTemplate.format(book=bookid, section=sectionid)
+    }
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
 
@@ -605,23 +658,35 @@ def create_app(test_config=None):
     @app.route('/skill_tasks', methods=['GET','POST']) # Kontrolieris, kas iegūst prasmes kopā ar uzdevumiem
     def getSkill():
         skill = request.args.get('skillIdentifier')
+
+        skill_details = json.loads(getSkillDetails(skill))
+        parentNumber = skill_details['results']['bindings'][0]['skillNumber']['value']
+        parentName = skill_details['results']['bindings'][0]['skillName']['value']
+        parentDesc = skill_details['results']['bindings'][0]['skillDesc']['value']
+        parentDesc = mathBeautify(parentDesc)
+
         all_skills = json.loads(getAllSkillChildren(skill))
         skill_list = []
         for skill_item in all_skills['results']['bindings']: # all_skills saraksts ar vārdnīcām
             prefLabel = skill_item['prefLabel']['value']
-            desc = skill_item['desc']['value']
-            dd = {'prefLabel': prefLabel, 'desc' : desc}
+            skillName = skill_item['skillName']['value']
+            skillNum = skill_item['num']['value']
+            dd = {'prefLabel': prefLabel, 'skillNum': skillNum, 'skillName': skillName}
             skill_list.append(dd)
 
         data = json.loads(getSkillProblemsSPARQL(skill))
         problem_list = []
         for data_item in data['results']['bindings']:
-            a = data_item['text']['value']
-            b = mathBeautify(a)
-            problem_list.append({'problemid': data_item['problemid']['value'], 'text': b})
+            problemTextHtml = data_item['text']['value']
+            problemTextHtml = fix_image_links(problemTextHtml)
+            problemTextHtml = mathBeautify(problemTextHtml)
+            problem_list.append({'problemid': data_item['problemid']['value'], 'text': problemTextHtml})
 
         template_context = {
             'skill': skill,
+            'parentNumber': parentNumber,
+            'parentName': parentName,
+            'parentDesc': parentDesc,
             'problem_list': problem_list,
             'skill_list' : skill_list,
             'active': 'skills',
@@ -643,8 +708,11 @@ def create_app(test_config=None):
             if 'imagefile' in item:
                 problem_imagefile = item['imagefile']['value']
             problem_number_value = item['problem_number']['value']
-            problem_text_value = mathBeautify(item['text']['value'])
-            d = {'problemid': problem_id_value, 'problem_number':problem_number_value, 'text': problem_text_value, 'imagefile': problem_imagefile}
+            problemTextHtml = mathBeautify(item['text']['value'])
+            problemTextHtml = fix_image_links(problemTextHtml)
+            problemTextHtml = mathBeautify(problemTextHtml)
+
+            d = {'problemid': problem_id_value, 'problem_number':problem_number_value, 'text': problemTextHtml, 'imagefile': problem_imagefile}
             problems.append(d)
 
 
@@ -661,6 +729,8 @@ def create_app(test_config=None):
     @app.route('/problem', methods=['GET','POST'])
     def getProblem():
         problemid = request.args.get('problemid')
+
+        print(f"**************** problemid = {problemid}")
         data = json.loads(getSPARQLProblem(problemid))
 
         problemTextHtml = data['results']['bindings'][0]['problemTextHtml']['value']

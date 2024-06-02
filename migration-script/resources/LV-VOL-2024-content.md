@@ -14,16 +14,15 @@ lielāks nekā visu šo skaitļu lielākais kopīgais dalītājs?
 
 ## Atrisinājums
 
-**(A)** Jā, tādi skaitļi ir $1; 2; 3; 4; 5$. To vidējais aritmētiskais ir $(1 + 2 + 3 + 4 + 5) ∶ 5 = 15 ∶ 5 = 3$
-un lielākais kopīgais dalītājs ir $1$.  
-**(B)** Nē, neeksistē. Pieņemsim, ka tādi skaitļi eksistē un to lielākais kopīgais dalītājs ir $d$. 
-Tādā gadījumā skaitļi ir
+**(A)** Jā, tādi skaitļi ir $1; 2; 3; 4; 5$. To vidējais aritmētiskais ir 
+$(1 + 2 + 3 + 4 + 5) ∶ 5 = 15 ∶ 5 = 3$ un lielākais kopīgais dalītājs ir $1$.  
+**(B)** Nē, neeksistē. Pieņemsim, ka tādi skaitļi eksistē un to lielākais 
+kopīgais dalītājs ir $d$. Tādā gadījumā skaitļi ir
 $a_1d; a_2d; a_3d; a_4d; a_5d$, kur naturāli skaitļi $a_1,a_2,\ldots,a_5$ tiek iegūti 
-sākotnējos piecus skaitļus dalot ar $d$. 
-Ir jāizpildās vienādībai:
+sākotnējos piecus skaitļus dalot ar $d$. Ir jāizpildās vienādībai:
 $$\frac{a_1d + a_2d + a_3d + a_4d + a_5d}{5} = 2d\;\;\text{jeb}\;\;a_1 + a_2 + a_3 + a_4 + a_5 = 10.$$
 Visi $a_i$ ir dažādi; bet tā kā pat piecu vismazāko dažādo naturālo skaitļu summa ir 
-$1 + 2 + 3 + 4 + 5 = 15 > 10$, tad šādi skaitļi neeksistē. 
+$1 + 2 + 3 + 4 + 5 = 15 > 10$, tad šādi skaitļi neeksistē.
 
 
 # <lo-sample/> LV.VOL.2024.9.2
@@ -264,6 +263,7 @@ kā ievilktie leņķi, kas balstās uz vienu un to pašu loku $EF$.
 # <lo-sample/> LV.VOL.2024.10.3
 
 Atrisināt reālos skaitļos vienādojumu sistēmu
+
 $$\left\{ \begin{array}{l}
 x + \frac{1}{x} = 2y^2 \\
 y + \frac{1}{y} = 2z^2 \\
@@ -703,6 +703,7 @@ $$2(n+1) \cdot \frac{n(n-1)}{2} = n(n^2 - 1) = n^3 - n.$$
 # <lo-sample/> LV.VOL.2024.12.1
 
 Atrisināt reālos skaitļos vienādojumu sistēmu
+
 $$\left\{ \begin{array}{l}
 x + \frac{1}{x} = y+z\\
 y + \frac{1}{y} = x+z\\

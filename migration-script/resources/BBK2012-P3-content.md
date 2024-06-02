@@ -1,8 +1,9 @@
 # <lo-sample/> BBK2012.P3.75
 
 Virkne ir definēta šādi:
-$$x_1 = 9,\;x_2 = 161,\;x_{n+1}=18x_n - x_{n-1},\;
-\mbox{ja $n \geq 2$}.$$
+
+$$x_1 = 9,\;x_2 = 161,\;x_{n+1}=18x_n - x_{n-1},\;\mbox{ja $n \geq 2$}.$$
+
 Pierādiet, ka skaitlis $x_n^2 - 1$ dalās 
 ar $5$ visiem naturāliem skaitļiem $n$.
 
@@ -12,7 +13,9 @@ ar $5$ visiem naturāliem skaitļiem $n$.
 # <lo-sample/> BBK2012.P3.76
 
 Virkne ir definēta šādi:
+
 $$a_0=a_1 = 1,\;a_{n+1}=a_{n-1}a_n + 1,\;\mbox{ja $n \geq 1$}.$$
+
 Pierādiet, ka skaitlis $a_{1964}$ nedalās ar $4$.
 
 
@@ -27,7 +30,9 @@ virknes locekļiem tieši viens dalās ar $5$.
 # <lo-sample/> BBK2012.P3.78
 
 Pierādiet, ka Fibonači virknes
+
 $$u_1=u_2=1,\;u_{n+2}=u_{n+1}+u_n,\;\mbox{ja $n \geq 1$}$$
+
 loceklis $u_{5k}$ dalās ar $5$ jebkurai naturālai $k$ vērtībai.
 
 
@@ -36,8 +41,8 @@ loceklis $u_{5k}$ dalās ar $5$ jebkurai naturālai $k$ vērtībai.
 Skaitļu virknē pirmais un otrais loceklis abi ir $1$, 
 bet katrs nākošais vienāds ar abu iepriekšējo summu. 
 Vai ar $5$ dalās šīs virknes  
-(a) $21$-ais,  
-(b) $2000$-ais loceklis?
+**(A)** $21$-ais,  
+**(B)** $2000$-ais loceklis?
 
 
 # <lo-sample/> BBK2012.P3.80
@@ -50,8 +55,8 @@ Noskaidrot, vai $a_{1000}$ dalās ar $11$.
 # <lo-sample/> BBK2012.P3.81
 
 Atrast visus naturālos skaitļus $n$, kuriem  
-(a) skaitlis $2^n-1$ dalās ar $7$;  
-(b) skaitlis $2^n+1$ dalās ar 7.
+**(A)** skaitlis $2^n-1$ dalās ar $7$;  
+**(B)** skaitlis $2^n+1$ dalās ar 7.
 
 
 # <lo-sample/> BBK2012.P3.82
@@ -96,15 +101,15 @@ Naturālu skaitļu virkni $(a_n)$ definē šādi:
 2. $a_{n+1}=a_n+2^{a_n}$, ja $n=1,2,\ldots$.
 
 Pierādīt, ka šajā virknē   
-(a) bezgalīgi daudzi locekļi nedalās ar $3$,  
-(b) bezgalīgi daudzi locekļi dalās ar $3$.
+**(A)** bezgalīgi daudzi locekļi nedalās ar $3$,  
+**(B)** bezgalīgi daudzi locekļi dalās ar $3$.
 
 
 # <lo-sample/> BBK2012.P3.88
 
 Ar kādu ciparu beidzas visu naturālo skaitļu summa  
-(a) no $1$ līdz $9$ ieskaitot,  
-(b) no $1$ līdz $99$ ieskaitot?
+**(A)** no $1$ līdz $9$ ieskaitot,  
+**(B)** no $1$ līdz $99$ ieskaitot?
 
 
 # <lo-sample/> BBK2012.P3.89
@@ -120,8 +125,8 @@ Pirmais cipars ir $7$. Kāds ir pēdējais?
 Vai, saskaitot visus naturālos skaitļus no $1$ 
 līdz kādai vietai (nevienu neizlaižot), 
 var iegūt summu, kuras pēdējais cipars ir  
-(a) $8$,  
-(b) $7$? 
+**(A)** $8$,  
+**(B)** $7$? 
 
 
 # <lo-sample/> BBK2012.P3.91

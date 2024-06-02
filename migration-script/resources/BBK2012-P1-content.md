@@ -204,14 +204,14 @@ bet cipars $1$ – divas reizes ar $3$ nedalās, jo tā ciparu summa $46$ ar $3$
 
 # <lo-sample/> BBK2012.P1.4
 
-Pierādīt, ka skaitlis $\underbrace{111\ldots{}1}_{\mbox{$27$ vieninieki}}$
+Pierādīt, ka skaitlis $\underbrace{111\ldots{}1}_{\mbox{27 vieninieki}}$
 dalās ar $27$. 
 
 ## Atrisinājums
 
 Ievērosim, ka izpildās vienādība
 
-$$\underbrace{111\ldots{}1}_{\mbox{$27$ vieninieki}} = 111 \cdot \underbrace{1001001\ldots{}001}_{\mbox{$9$ vieninieki}}.$$
+$$\underbrace{111\ldots{}1}_{\mbox{27 vieninieki}} = 111 \cdot \underbrace{1001001\ldots{}001}_{\mbox{9 vieninieki}}.$$
 
 No dalāmības pazīmēm ar $3$ un $9$ seko, ka pirmais reizinātājs dalās ar $3$, 
 bet otrais ar $9$; tātad viss reizinājums dalās ar $27$.
@@ -333,19 +333,21 @@ Tā kā vecākās šķiras ir nozīmīgākas, tad jānosvītro abi pēdējie tri
 No nenulles cipariem, katru izmantojot tieši 1 reizi, jāizveido triju trīsciparu 
 skaitļu decimālie pieraksti. Vai var gadīties tā, ka
 
-a.  neviens no tiem nedalās ar $3$,
-b.  tie visi dalās ar $3$,
-c.  divi no tiem dalās ar $3$, bet trešais – nē?
+**(A)**  neviens no tiem nedalās ar $3$,  
+**(B)**  tie visi dalās ar $3$,  
+**(C)**  divi no tiem dalās ar $3$, bet trešais – nē?
 
 ## Atrisinājums
 
-a.  Jā, var; piemēram, $125, 368, 479$.
-b.  Jā, var; piemēram, $123, 456, 789$.
-c.  Nē, nevar. Visu trīs skaitļu ciparu summu summa ir $45$. 
-    Ja izpildās uzdevuma nosacījumi, tad pirmo divu skaitļu ciparu 
-    summas dalās ar $3$, bet trešā skaitļa ciparu summa nedalās ar $3$. 
-    Tas nozīmē, ka visu trīs skaitļu ciparu summu summa nedalās ar $3$, 
-    bet $45$ ar $3$ dalās.
+**(A)**  Jā, var; piemēram, $125, 368, 479$.
+
+**(B)**  Jā, var; piemēram, $123, 456, 789$.
+
+**(C)**  Nē, nevar. Visu trīs skaitļu ciparu summu summa ir $45$. 
+Ja izpildās uzdevuma nosacījumi, tad pirmo divu skaitļu ciparu 
+summas dalās ar $3$, bet trešā skaitļa ciparu summa nedalās ar $3$. 
+Tas nozīmē, ka visu trīs skaitļu ciparu summu summa nedalās ar $3$, 
+bet $45$ ar $3$ dalās.
 
 
 
@@ -542,17 +544,17 @@ $$\equiv (-1)^{m-1}\left( \overline{a_1a_2a_3} - \overline{a_4a_5a_6}  + \cdots 
 Kuri no sekojošiem skaitļiem ir pirmskaitļi?
 Pamatojiet savu atbildi:
 
-a. $1395$;
-b. $131313$;
-c. $1993$;
-d. $1991$.
+**(A)** $1395$;
+**(B)** $131313$;
+**(C)** $1993$;
+**(D)** $1991$.
 
 ## Atrisinājums
 
-a.  Nē, jo skaitlis dalās ar $5$.
-b.  Nē, jo skaitlis dalās ar $13$.
-c.  Jā, $1993$ ir pirmskaitlis.
-d.	Nē, jo skaitlis dalās ar $11$.
+**(A)**  Nē, jo skaitlis dalās ar $5$.
+**(B)**  Nē, jo skaitlis dalās ar $13$.
+**(C)**  Jā, $1993$ ir pirmskaitlis.
+**(D)**	Nē, jo skaitlis dalās ar $11$.
 
 
 # <lo-sample/> BBK2012.P1.26
@@ -1508,9 +1510,9 @@ Nē. Visu daļu garumi dalās ar $3$, bet $50$ ar $3$ nedalās.
 
 # <lo-sample/> BBK2012.P1.34
 
-a. Vai piecu pēc kārtas ņemtu skaitļu summa var būt $24$?
-b. Vai tā var būt $1984$? 
-c. Vai tā var būt $1985$?
+**(A)** Vai piecu pēc kārtas ņemtu skaitļu summa var būt $24$?
+**(B)** Vai tā var būt $1984$? 
+**(C)** Vai tā var būt $1985$?
 
 ## Atrisinājums
 
@@ -1557,6 +1559,92 @@ Tātad $113 - 41 = 72$ un $193 - 113 = 80$ dalās ar $d$.
 Tātad arī $80 - 72$ dalās ar $d$. Tas nozīmē, ka $d \leq 8$. 
 Vērtība $d=8$ ir iespējama; aritmētiskā progresija $a_k = 8k+1$ ar diferenci $8$ 
 satur visus norādītos skaitļus.
+
+
+
+
+
+
+
+
+# <lo-sample/> BBK2012.P1.37 
+
+Pierādīt, ka $10a+b$ dalās ar $7$ tad un tikai tad, ja $a-2b$ dalās ar $7$ ($a$ un $b$ ir naturāli skaitļi).
+
+
+
+# <lo-sample/> BBK2012.P1.38
+
+Dots, ka $a$ un $b-$ naturāli skaitļi un gan $3a+4 b$, gan $2a+3 b$ dalās ar $7$. 
+Pierādīt, ka gan $a$, gan $b$ dalās ar $7$.
+
+
+# <lo-sample/> BBK2012.P1.39  
+
+Dots, ka $a$ - naturāls skaitlis, $p$ - pirmskaitlis, pie tam $3 a+1$ un $a-8$ dalās ar $p$. Aprēķināt $p$.
+
+
+# <lo-sample/> BBK2012.P1.40
+
+Naturāli skaitli $a$ un $b$ ir tādi, ka $34a = 43b$.
+Vai $a+b$ var būt pirmskaitlis?
+
+# <lo-sample/> BBK2012.P1.41 
+
+Dots, ka $a, b, c$ - dažādi naturāli skaiţ̦li. Kāds lielākais daudzums no skaiţ̦iem 
+$a+b, \quad a+c, \quad b+c$ var būt pirmskaitļi?
+
+# <lo-sample/> BBK2012.P1.42 
+
+Noskaidrojiet  
+**(A)** vai visu naturālo skaitļu reizinājums no $1$ līdz $76$ ieskaitot dalās ar $77$;  
+**(B)** vai visu naturālo skaitļu reizinājums no $1$ lîdz $100$ ieskaitot dalās ar $101$?
+
+# <lo-sample/> BBK2012.P1.43 
+
+**(A)** Pierādīt, ka katru $499$ pēc kārtas n̦emtu naturālu skaitļu reizinājums dalās ar $1996$.  
+**(B)** Vai katru $498$ pēc kārtas n̦emtu naturālu skaitlu reizinājums dalās ar $1996$?
+
+# <lo-sample/> BBK2012.P1.44 
+
+**(A)** atrast kaut vienu $n$ ar īpašību: jebkuru pēc kārtas n̦emtu $n$ naturālu skaiţlu summa dalās ar $1996$,  
+**(B)** atrast vismazāko $n$, kam piemīt (A) punktā minētā īpašība.
+
+# <lo-sample/> BBK2012.P1.45
+
+Kāds lielākais pirmskaitlu daudzums var būt sastopams starp $12$ pēc kārtas n̦emtiem naturāliem skaitliem?
+
+# <lo-sample/> BBK2012.P1.46
+
+Zināms, ka dalot skaitlus $2077$ un $100$ ar $a$, iegūti vienādi atlikumi. Kādas var būt skaitļa $a$ vērtības?
+
+# <lo-sample/> BBK2012.P1.47
+
+Dalot skaitli $1987$ ar $a$, atlikumā ieguva skaitli $9$. Kādas var būt skaitla $a$ vērtības?
+
+
+# <lo-sample/> BBK2012.P1.48
+
+Skaitli $1991$ dalot ar $a$, atlikumā iegūst $9$. Kāds var būt $a$?
+
+
+# <lo-sample/> BBK2012.P1.49
+
+Vai dažādu pirmskaitļu apgriezto lielumu summa var būt vesels skaitlis?
+
+
+# <lo-sample/> BBK2012.P1.50 
+
+Naturāls skaitlis $A$, dalot ar $1981$, dod atlikumā $35$, bet, dalot ar $1982$, 
+dod atlikumā $13$. Kādu atlikumu dod $A$, dalot ar 14 ?
+
+
+# <lo-sample/> BBK2012.P1.51
+
+Doti $12$ pēc kārtas n̦emti naturāli skaitl̦i. Pierādiet, ka vismaz viens 
+no tiem ir mazāks par savu dalītāju summu. (Tiek ņemti skaița naturālie 
+dalītāji, kas mazāki par pašu skaitli).
+
 
 
 
@@ -1691,6 +1779,86 @@ questionType=FindAll
 -->
 
 
+# <lo-sample/> BBK2012.P1.105 
+
+Kādu lielāko vērtību var pienemt skaitļu $a_{1}, a_{2}, \ldots, a_{10}$ LKD, 
+ja to summa ir $1001$?
+
+
+
+# <lo-sample/> BBK2012.P1.106 
+
+Skaiţ̦i $a_{1}, a_{2}, a_{3}, \ldots, a_{10}$ ir veseli pozitīvi skaiţ̦i un  
+$$a_{1}+a_{2}+a_{3}+\cdots+a_{10}=1001$$
+
+Kādas vērtības var būt skaitlu $a_{1}, a_{2}, a_{3}, \ldots, a_{10}$ 
+lielākajam kopīgajam dalîtājam?
+
+
+
+# <lo-sample/> BBK2012.P1.107 
+
+Skaitlis $2401$ ir izteikts kā 25 naturālu skaitlu summa. 
+Kāda ir mazākā iespējamā šo skaitlu MKD vērtība?
+
+
+
+# <lo-sample/> BBK2012.P1.108 
+
+Kādu lielāko daudzumu naturālu skaitlu, kas nepārsniedz $360$, var izvēlēties tā, 
+lai neviens no tiem nebūtu pirmskaitlis, bet katru divu izraudzīto skaitļu 
+lielākais kopīgais dalītājs būtu 1?
+
+
+# <lo-sample/> BBK2012.P1.109 
+
+Pierādīt, ka no katriem  
+**(A)** trim,  
+**(B)** pieciem,  
+**(C)** septiņiem  
+pēc kārtas n̦emtiem naturāliem skaiţ̦iem var izvēlēties vienu tā, 
+ka tas ir savstarpējs pirmskaitlis ar katru no pārējiem.
+
+
+
+# <lo-sample/> BBK2012.P1.110 
+
+Doti naturāli skaiţ̧i $a$ un $b$. Zināms, ka $\frac{a+1}{b}+\frac{b+1}{a}$ ir vesels skaitlis.
+Pierādīt, ka $(a, b) \leq \sqrt{a+b}$.
+
+
+
+# <lo-sample/> BBK2012.P1.111 
+
+Doti naturāli skaiţ̦i $a, b, a^{\prime}, b^{\prime}$. 
+Apzīmēsim $(a, b)$ ar $d$ un $a^{\prime}, b^{\prime}$ ar $d^{\prime}$. 
+Pierādīt, ka $\left(a a^{\prime}, a b^{\prime}, b a^{\prime}, b b^{\prime}\right)=d d^{\prime}$.
+
+
+
+# <lo-sample/> BBK2012.P1.112 
+
+Vai skaitlis $x$ noteikti ir racionāls, ja zināms, ka racionāli ir sekojoši skaitļi   
+**(A)** $x^{55}$ un $x^{89}$,  
+**(B)** $x^{91}$ un $x^{42}$?
+
+
+
+# <lo-sample/> BBK2012.P1.113 
+
+Doti naturāli skaiţ̦i $a, b, c$, kuriem $(a, b, c)=1$, un izpildās vienādība
+
+$$\frac{1}{a}+\frac{1}{b}=\frac{1}{c}$$
+
+Pierādiet, ka $a+b$ ir naturāla skaiţ̦a kvadrāts.
+
+
+# <lo-sample/> BBK2012.P1.114
+
+Naturāliem skaiţ̧iem $x, y, z$ izpildās vienādība $\frac{1}{x}-\frac{1}{y}=\frac{1}{z}$. 
+Skaitļu $x, y, z$ lielākais kopīgais dalîtājs ir $h$. Pierādīt, ka skaitļi $h x y z$ un $h(y-z)$ ir kvadrāti.
+
+
 
 # <lo-sample/> BBK2012.P1.115
 
@@ -1700,6 +1868,13 @@ kuriem skaitļi $ab$, $ac$ un $bc$ veido aritmētisko progresiju.
 <!--
 questionType=FindAll
 -->
+
+
+# <lo-sample/> BBK2012.P1.116 
+
+Dots naturāls skaitlis $n$. Aplūkosim tādu naturālu skaiţ̦u pārus 
+$(u, v)$, kuriem $[u, v]=n$. Pierādiet, ka šādu pāru skaits ir 
+vienāds ar skaiț̣a $n^{2}$ pozitīvo dalītāju skaitu.
 
 
 
@@ -1720,6 +1895,16 @@ sameAs=LV.OTHER.TST.1981.9.2
 -->
 
 
+# <lo-sample/> BBK2012.P1.118 
+
+Uz tāfeles uzrakstìti 1999 naturāli skaiţ̦i (starp tiem var būt arī vienādi). 
+Ar vienu gājienu aţ̦auts nodzēst divus skaitlus un to vietā uzrakstīt 
+nodzēsto skaitlu lielāko kopīgo dalītāju un mazāko kopīgo dalāmo.
+
+Pierādīt, ka izdarot šādus gājienus pietiekami ilgi, uz tāfeles uzrakstītie 
+skaitļi kādreiz pārstās mainīties.
+
+
 
 # <lo-sample/> BBK2012.P1.119
 
@@ -1736,6 +1921,18 @@ ir bezgalīgi daudz locekļu, kas ir savstarpēji pirmskaitļi ar skaitli $m$.
 <!--
 questionType=Prove
 -->
+
+
+
+# <lo-sample/> BBK2012.P1.120
+
+Doti $12$ dažādi naturāli skaiţ̦li. Katriem $5$ no tiem mazākais kopīgais 
+dalāmais ir viens un tas pats skaitlis $M$. Ir zināms, ka no dotajiem 
+$12$ skaitliem var izvēlēties $x$ skaiţ̧us tā, ka katri divi no izvēlētajiem 
+skaiţ̦liem ir savstarpēji pirmskaitļi.  
+**(A)** Pierādīt, ka $x \leq 4$.  
+**(B)** Pierādīt, ka var gadīties, ka $x=4$.
+
 
 
 
@@ -1804,8 +2001,8 @@ questionType=FindCount
 # <lo-sample/> BBK2012.P1.124
 
 Atrast  
-(a) visu to naturālo skaitļu summu, kas nepārsniedz $1000$ un dalās ar $5$;  
-(b) visu to naturālo skaitļu summu, kas nepārsniedz $1000$ un dalās 
+**(A)** visu to naturālo skaitļu summu, kas nepārsniedz $1000$ un dalās ar $5$;  
+**(B)** visu to naturālo skaitļu summu, kas nepārsniedz $1000$ un dalās 
 vai nu ar $3$, vai ar $5$.
 
 <!--
@@ -1870,6 +2067,15 @@ $$\left\lfloor \frac{n}{k} \right\rfloor +
 questionType=Prove
 -->
 
+Ja $0 \leq j \leq k, \operatorname{tad}\left[\frac{n+j}{k}\right]$ norāda tādu skaitlu skaitu, 
+kas nepārsniedz $n$ un, dalot ar $k$, dod atlikumā $k-j$, ja $j \neq 0$, vai $0$, 
+ja $j=0$. No šejienes seko prasītā vienādība, jo katrs skaitlis no 1 lîdz $n$, 
+daloties ar $k$, dod atlikumu no $0$ līdz $k-1$ un summā
+
+$$\left[\frac{n}{k}\right]+\left[\frac{n+1}{k}\right]+\cdots+\left[\frac{n+k-1}{k}\right]$$
+
+tiek ieskaitīts tieši vienu reizi.
+
 
 
 # <lo-sample/> BBK2012.P1.128
@@ -1889,6 +2095,10 @@ $$=\left\lfloor \frac{q}{p} \right\rfloor +
 questionType=Prove
 -->
 
+## Atrisinājums
+
+Pierādījumā izmanto faktu, ka skaiţ̦i $p, 2p, \ldots, (q-1)p$ 
+dod visus nenulles atlikumus pēc moduḷa $q$.
 
 
 
@@ -1902,6 +2112,26 @@ $$\left\lfloor \frac{n+1}{2} \right\rfloor +
 <!--
 questionType=FindAll
 -->
+
+## Atrisinājums
+
+Apzīmēsim doto summu ar $S_{n}$. Tad
+
+$$S_{n+1}-S_{n}=\sum_{k=0}^{\infty}\left(\left[\frac{n+2^{k}+1}{2^{k+1}}\right]-\left[\frac{n+2^{k}}{2^{k+1}}\right]\right)$$
+
+Aprakstīsim šīs starpības
+
+$$\left[\frac{n+2^{k}+1}{2^{k+1}}\right]-\left[\frac{n+2^{k}}{2^{k+1}}\right]=\left\{\begin{array}{c}
+0, \text { ja } 2^{k+1} \text { nedala }\left(n+2^{k}+1\right) \\
+1, \text { ja } 2^{k+1} \text { dala }\left(n+2^{k}+1\right) .
+\end{array}\right.$$
+
+Pien̦emsim, ka $n+1=2^{m} \cdot A$, un $A$ nedalās ar $2$. 
+Skaidrs, ka $n+2^{k}+1=2^{m} \cdot A+2^{k}$ dalās ar $2^{k+1}$ tad un tikai tad, 
+kad $m=k$. Tātad aplūkotā starpība nav 0 tikai vienai skaiț̣a $k$ vērtībai. 
+Rezultātā iegūstam vienādību $S_{n+1}-S_{n}=1$, kas izpildās visiem $n$. 
+Tā kā $S_{1}=1$, tad $S_{n}=n$.
+
 
 
 
@@ -1919,6 +2149,26 @@ questionType=Prove
 
 
 
+## Atrisinājums
+
+Ievērosim, ka  
+$$\sum_{k=1}^{n}\left[\frac{n}{k}\right]=\left[\frac{n}{1}\right]+\sum_{k=2}^{n-1}\left[\frac{n}{k}\right]+\left[\frac{n}{n}\right]=n+1+\sum_{k=2}^{n-1}\left[\frac{n}{k}\right]$$  
+bet  
+$$\sum_{k=1}^{n-1}\left[\frac{n-1}{k}\right]=\left[\frac{n-1}{1}\right]+\sum_{k=2}^{n-1}\left[\frac{n-1}{k}\right]=n-1+\sum_{k=2}^{n-1}\left[\frac{n-1}{k}\right]$$   
+un pierādāmā vienādība ir ekvivalenta ar sekojošu vienādību:
+
+$$\sum_{k=2}^{n-1}\left(\left[\frac{n}{k}\right]-\left[\frac{n-1}{k}\right]\right)=0$$
+
+Tā kā  
+$$\left(\left[\frac{n}{k}\right]-\left[\frac{n-1}{k}\right]\right)=\left\{\begin{array}{c}
+0, \text { ja } k \text { nedala } n \\
+1, \text { ja } k \text { dala } n,
+\end{array}\right.$$  
+tad dotā vienādība izpildās tad un tikai tad, kad $n$ nedalās 
+ne ar vienu no skaitliem $2,3, \ldots, n-1$; t.i., kad $n$ ir pirmskaitlis.
+
+
+
 # <lo-sample/> BBK2012.P1.131
 
 Atrodiet visus tādus naturālus skaitļus $k$, kuriem virkne $k+1,k+2,\ldots,k+100$
@@ -1927,6 +2177,23 @@ satur maksimālo iespējamo pirmskaitļu skaitu.
 <!--
 questionType=FindAll
 -->
+
+## Atrisinājums
+
+Eksistē tikai viens šāds skaitlis $k=1$.
+
+Šajā gadījumā virkne $k+1, k+2, \ldots, k+100$ satur $26$ pirmskaitļus.
+Ja $k \in\{2,3,4\}$, tad virknē ir $25$ pirmskaitļi. 
+Ja $k \in\{5,6\}$, tad virknē $24$ pirmskaitļi. Tālāk aplūkosim $k \geq 7$. Tādā gadījumā jebkurš no skaițliem, 
+kurš dalās ar $2$, $3$, $5$ vai $7$, ir salikts skaitlis. Pakāpeniski pierādām sekojošu apgalvojumus:
+
+a. Tieši $50$ skaitļi virknē dalās ar $2$.
+b. Virknē ir ne mazāk kā $16$ skaitli, kas dalās ar $3$, bet nedalās ar $2$.
+c. Virknē ir ne mazāk kā $6$ skaitli, kas dalās ar $5$, bet nedalās ar $2$ vai $3$.
+d. Virknē ir ne mazāk kā $3$ skaiți, kas dalās ar $7$, bet nedalās ar $2$, $3$ vai $5$.
+
+Tātad virknē ir ne vairāk kā $100-50-16-6-3=25$ pirmskaitļi.
+
 
 
 
@@ -1943,6 +2210,25 @@ $$d(1)+d(2)+\ldots+d(n)= \left\lfloor \frac{n}{1} \right\rfloor +
 questionType=Prove
 -->
 
+## Atrisinājums
+
+Aplūkosim funkciju, kas definēta visiem naturāliem skaitlu pāriem $(i, j)$ :
+
+$$
+f(i, j)=\left\{\begin{array}{l}
+0, \text { ja } i \text { nedala } j \\
+1, \text { ja } i \text { dala } j
+\end{array}\right.
+$$
+
+Aprēķināsim summu $\sum_{i=1}^{n} \sum_{j=1}^{n} f(i, j)$ divos dažādos veidos:
+
+$$\begin{aligned}
+& \sum_{i=1}^{n} \sum_{j=1}^{n} f(i, j)=\sum_{i=1}^{n}\left[\frac{n}{i}\right] \\
+& \sum_{i=1}^{n} \sum_{j=1}^{n} f(i, j)=\sum_{j=1}^{n} \sum_{i=1}^{n} f(i, j)=\sum_{j=1}^{n} d(j)
+\end{aligned}$$
+
+No šejienes seko pierādāmā vienādība.
 
 
 

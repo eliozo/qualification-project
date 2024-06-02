@@ -2615,37 +2615,3 @@ Vai var panākt, lai uz lapas būtu uzrakstīts skaitlis $2022$
 </small>
 
 
-
-# <lo-sample/> LV.VOL.2023.10.3
-
-Rindā kaut kādā secībā uzrakstīti visi naturālie skaitļi no $1$ līdz $2023$. Vienā gājienā tiek sareizināti
-katri divi blakus esošie skaitļi un zem tiem tiek uzrakstīta šī reizinājuma ciparu summa; šādā
-veidā tiek iegūta jauna rinda, kurā ir par vienu skaitli mazāk nekā sākotnējā rindā. Pēc pirmā
-gājiena tiek iegūta jauna rinda, kurā ir $2022$ skaitļi, pēc otrā gājiena tiek iegūta jauna rinda, kurā
-ir $2021$ skaitlis utt., līdz pēc 2022. gājiena tiek iegūta pēdējā jaunā rinda, kurā ir tikai viens
-skaitlis. Atrast visas iespējamās šī pēdējā skaitļa vērtības!
-
-<small>
-
-* questionType:FindAll
-
-</small>
-
-
-# <lo-sample/> LV.VOL.2023.11.4
-
-Pierādīt, ka eksistē bezgalīgi daudz tādu naturālu skaitļu četrinieku $(a_1; b_1; a_2; b_2)$,
-ka $a_1 \neq a_2$, $b_1 \neq b_2$ un
-$$2^{a_1} - \left( b_1 \right)^2 = 2^{a_2} - \left( b_2 \right)^2 > 0.$$
-
-<small>
-
-* questionType:Prove
-
-</small>
-
-## Atrisinājums 
-
-TBD
-
-

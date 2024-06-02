@@ -1,23 +1,30 @@
 {% extends 'global.html' %}
 
 {% block content %}
-       <div class="col-sm-8 text-left">
-           <a href="{{ url_for('getSkills') }}" class="button">Atpakaļ</a>
+<div class="col-sm-8 text-left">
+    <a href="{{ url_for('getSkills') }}" class="button">Atpakaļ</a>
   <div class="container">
     {{jsonfile}}
   </div>
-  <h2>{{ skill }}</h2>
-  <ol>
+  <h3>{{ parentNumber }}. {{ parentName }}</h3>
+         {% if parentDesc != ''%}
+         <p style="font-size:90%">{{ parentDesc | safe }}</p>
+         {% endif %}
+  <ol class="custom-list">
     {% for skill in skill_list %}
-    <li>
-      <a href="{{ url_for('getSkill',skillIdentifier=skill.prefLabel)}}">{{ skill.prefLabel }}</a>: {{ skill.desc }}
+    <li data-label="{{ skill.skillNum }}">
+      <a href="{{ url_for('getSkill',skillIdentifier=skill.prefLabel)}}">{{ skill.skillName }}</a>
     </li>
     {% endfor %}
   </ol>
+
   <hr style="width:60%; color:black;">
   {% for problem in problem_list %}
-  <h3 style="margin-left:5%; font-size: 120%; color: #1565C0;">{{ problem.problemid }}</h3>
-  <p style="margin-left:5%"> {{ problem.text |safe }}</p>
+  <h3 style="font-size: 120%; color: #1565C0;">{{ problem.problemid }}</h3>
+  <p style="margin-left:5%"> {{ problem.text | safe }}</p>
+    <p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">
+        Vairāk...
+    </a></p>
   {% endfor %}
-        </div>
+</div>
 {% endblock %}

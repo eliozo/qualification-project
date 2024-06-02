@@ -58,13 +58,14 @@ eliozo:LV.VOL.2024.10.3 a eliozo:Problem ;
     eliozo:problemID "LV.VOL.2024.10.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.3 ;
     eliozo:problemText """Atrisināt reālos skaitļos vienādojumu sistēmu
+
 $$\\left\\{ \\begin{array}{l}
 x + \\frac{1}{x} = 2y^2 \\\\
 y + \\frac{1}{y} = 2z^2 \\\\
 z + \\frac{1}{z} = 2x^2 \\\\
 \\end{array} \\right.$$"""@lv ;
-    eliozo:problemTextHtml """<p>Atrisināt reālos skaitļos vienādojumu sistēmu
-$$\\left{ \\begin{array}{l}
+    eliozo:problemTextHtml """<p>Atrisināt reālos skaitļos vienādojumu sistēmu</p>
+<p>$$\\left{ \\begin{array}{l}
 x + \\frac{1}{x} = 2y^2 \\
 y + \\frac{1}{y} = 2z^2 \\
 z + \\frac{1}{z} = 2x^2 \\
@@ -282,13 +283,14 @@ eliozo:LV.VOL.2024.12.1 a eliozo:Problem ;
     eliozo:problemID "LV.VOL.2024.12.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.1 ;
     eliozo:problemText """Atrisināt reālos skaitļos vienādojumu sistēmu
+
 $$\\left\\{ \\begin{array}{l}
 x + \\frac{1}{x} = y+z\\\\
 y + \\frac{1}{y} = x+z\\\\
 z + \\frac{1}{z} = x+y\\\\
 \\end{array} \\right.$$"""@lv ;
-    eliozo:problemTextHtml """<p>Atrisināt reālos skaitļos vienādojumu sistēmu
-$$\\left{ \\begin{array}{l}
+    eliozo:problemTextHtml """<p>Atrisināt reālos skaitļos vienādojumu sistēmu</p>
+<p>$$\\left{ \\begin{array}{l}
 x + \\frac{1}{x} = y+z\\
 y + \\frac{1}{y} = x+z\\
 z + \\frac{1}{z} = x+y\\
@@ -1521,24 +1523,22 @@ eliozo:SOLN.LV.VOL.2024.9.1 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-**(A)** Jā, tādi skaitļi ir $1; 2; 3; 4; 5$. To vidējais aritmētiskais ir $(1 + 2 + 3 + 4 + 5) ∶ 5 = 15 ∶ 5 = 3$
-un lielākais kopīgais dalītājs ir $1$.  
-**(B)** Nē, neeksistē. Pieņemsim, ka tādi skaitļi eksistē un to lielākais kopīgais dalītājs ir $d$. 
-Tādā gadījumā skaitļi ir
+**(A)** Jā, tādi skaitļi ir $1; 2; 3; 4; 5$. To vidējais aritmētiskais ir 
+$(1 + 2 + 3 + 4 + 5) ∶ 5 = 15 ∶ 5 = 3$ un lielākais kopīgais dalītājs ir $1$.  
+**(B)** Nē, neeksistē. Pieņemsim, ka tādi skaitļi eksistē un to lielākais 
+kopīgais dalītājs ir $d$. Tādā gadījumā skaitļi ir
 $a_1d; a_2d; a_3d; a_4d; a_5d$, kur naturāli skaitļi $a_1,a_2,\\ldots,a_5$ tiek iegūti 
-sākotnējos piecus skaitļus dalot ar $d$. 
-Ir jāizpildās vienādībai:
+sākotnējos piecus skaitļus dalot ar $d$. Ir jāizpildās vienādībai:
 $$\\frac{a_1d + a_2d + a_3d + a_4d + a_5d}{5} = 2d\\;\\;\\text{jeb}\\;\\;a_1 + a_2 + a_3 + a_4 + a_5 = 10.$$
 Visi $a_i$ ir dažādi; bet tā kā pat piecu vismazāko dažādo naturālo skaitļu summa ir 
 $1 + 2 + 3 + 4 + 5 = 15 > 10$, tad šādi skaitļi neeksistē."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>(A)</strong> Jā, tādi skaitļi ir $1; 2; 3; 4; 5$. To vidējais aritmētiskais ir $(1 + 2 + 3 + 4 + 5) ∶ 5 = 15 ∶ 5 = 3$
-un lielākais kopīgais dalītājs ir $1$.<br />
-<strong>(B)</strong> Nē, neeksistē. Pieņemsim, ka tādi skaitļi eksistē un to lielākais kopīgais dalītājs ir $d$. 
-Tādā gadījumā skaitļi ir
+<p><strong>(A)</strong> Jā, tādi skaitļi ir $1; 2; 3; 4; 5$. To vidējais aritmētiskais ir 
+$(1 + 2 + 3 + 4 + 5) ∶ 5 = 15 ∶ 5 = 3$ un lielākais kopīgais dalītājs ir $1$.<br />
+<strong>(B)</strong> Nē, neeksistē. Pieņemsim, ka tādi skaitļi eksistē un to lielākais 
+kopīgais dalītājs ir $d$. Tādā gadījumā skaitļi ir
 $a_1d; a_2d; a_3d; a_4d; a_5d$, kur naturāli skaitļi $a_1,a_2,\\ldots,a_5$ tiek iegūti 
-sākotnējos piecus skaitļus dalot ar $d$. 
-Ir jāizpildās vienādībai:
+sākotnējos piecus skaitļus dalot ar $d$. Ir jāizpildās vienādībai:
 $$\\frac{a_1d + a_2d + a_3d + a_4d + a_5d}{5} = 2d\\;\\;\\text{jeb}\\;\\;a_1 + a_2 + a_3 + a_4 + a_5 = 10.$$
 Visi $a_i$ ir dažādi; bet tā kā pat piecu vismazāko dažādo naturālo skaitļu summa ir 
 $1 + 2 + 3 + 4 + 5 = 15 &gt; 10$, tad šādi skaitļi neeksistē.</p>"""@lv .
