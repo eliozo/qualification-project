@@ -5,7 +5,7 @@
         <a href="{{ url_for('main') }}" class="button">Atpakaļ</a>
         <ul>
         {% for problem in all_problemids %}
-        <li><a href="{{ url_for('getProblem',problemid=problem) }}">{{ problem }}</a></li>
+        <li><a href="{{ url_for('getProblem',problemid=problem.problemID) }}">{{ problem.problemID }}</a>: <tt>{{ problem.text }}...</tt></li>
         {% endfor %}
         </ul>
         </div>

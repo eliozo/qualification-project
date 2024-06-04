@@ -9,7 +9,46 @@
   </div>
 
   <div class="problemDiv">
-      <h3 class="problem">{{ problemid }} </h3>
+      <h3 class="problem">{{ problemid }}&nbsp;&nbsp;
+          <div class="info-icon" onclick="showPopup()">i</div>
+<div class="popup-overlay" onclick="closePopup()"></div>
+<div class="popup-dialog" id="popup-dialog"></div>
+      </h3>
+
+
+
+<script>
+    const data = {
+    {% for meta in metaitems %}
+      '{{ meta.key }}': '{{ meta.value }}',
+    {% endfor %}
+    };
+
+
+    function showPopup() {
+        const dialog = document.getElementById('popup-dialog');
+        dialog.innerHTML = '';  // Clear previous content
+
+        for (const [key, value] of Object.entries(data)) {
+            const entry = document.createElement('div');
+            if (key === '_domain') {
+                entry.style.fontStyle = 'italic';
+            }
+            entry.textContent = `${key}: ${value}`;
+            dialog.appendChild(entry);
+        }
+
+        dialog.style.display = 'block';
+        document.querySelector('.popup-overlay').style.display = 'block';
+    }
+
+    function closePopup() {
+        document.getElementById('popup-dialog').style.display = 'none';
+        document.querySelector('.popup-overlay').style.display = 'none';
+    }
+</script>
+
+
 
   {% if data[0].skill is defined %}
   <p><i>Prasmes: {% for item in data %}

@@ -120,7 +120,9 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT ?problemTextHtml ?solutionTextHtml ?video WHERE {{
+SELECT ?problemTextHtml ?solutionTextHtml ?video ?problemYear ?country ?olympiad 
+?problemBook ?problemBookSection ?problemGrade ?problem_number
+?strategy ?topic ?LTopic ?concepts ?questionType ?domain WHERE {{
   ?problem eliozo:problemID '{problemid}' ;
            eliozo:problemTextHtml ?problemTextHtml .
   OPTIONAL {{
@@ -128,20 +130,58 @@ SELECT ?problemTextHtml ?solutionTextHtml ?video WHERE {{
              eliozo:olympiadCode ?olympiad ;
              eliozo:problemGrade ?grade ;
              eliozo:country ?country .
-  }} .
+  }}
   OPTIONAL {{
     ?problem eliozo:topic ?skill .
     ?skill eliozo:skillID ?skillIdentifier .
-  }} .
+  }}
   OPTIONAL {{
     ?problem eliozo:problemSolution ?problemSolution . 
     ?problemSolution eliozo:solutionTextHtml ?solutionTextHtml .
-  }} .
+  }}
   OPTIONAL {{
     ?problem eliozo:hasVideo ?video .
-  }} .
+  }}
+  OPTIONAL {{
+    ?problem eliozo:problemYear ?problemYear .
+  }}
+  OPTIONAL {{
+    ?problem eliozo:country ?country .
+  }}
+  OPTIONAL {{
+    ?problem eliozo:olympiad ?olympiad .
+  }}
+  OPTIONAL {{
+    ?problem eliozo:problemBook ?problemBook .
+  }}
+  OPTIONAL {{
+    ?problem eliozo:problemBookSection ?problemBookSection .
+  }}
+  OPTIONAL {{
+    ?problem eliozo:problemGrade ?problemGrade .
+  }}
+  OPTIONAL {{
+    ?problem eliozo:problem_number ?problem_number .
+  }}  
+  OPTIONAL {{
+    ?problem eliozo:strategy ?strategy .
+  }}  
+  OPTIONAL {{
+    ?problem eliozo:topic ?topic .
+  }}  
+  OPTIONAL {{
+    ?problem eliozo:LTopic ?LTopic .
+  }}  
+  OPTIONAL {{
+    ?problem eliozo:concepts ?concepts .
+  }}  
+  OPTIONAL {{
+    ?problem eliozo:questionType ?questionType .
+  }}  
+  OPTIONAL {{
+    ?problem eliozo:domain ?domain .
+  }}  
 }}"""
-
 
 
     myobj = {'query':  queryTemplate.format(problemid=arg) }
@@ -392,24 +432,6 @@ SELECT ?text ?problemid ?problem_number ?imagefile WHERE {{
 """
 
 
-#     myobj = {'query' : '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-# PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-# PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
-#     SELECT ?text ?problemid ?problem_number ?imagefile WHERE {
-#   ?problem eliozo:problemBook \'''' + bookid + '''\' ;
-#            eliozo:problemBookSection \'''' + sectionid + '''\' ;
-#            eliozo:problemText ?text ;
-#            eliozo:problemID ?problemid ;
-#            eliozo:problem_number ?problem_number .
-#   OPTIONAL {
-#     ?problem eliozo:image ?imagefile .
-#   } .
-# } ORDER BY ?problem_number'''
-#     }
-
-    # print('**********myobj={}'.format(myobj))
-
     myobj = {'query':
         queryTemplate.format(book=bookid, section=sectionid)
     }
@@ -456,16 +478,23 @@ def getSPARQLVideoBookmarks(problemid):
 def getAllSPARQLVideos():
     # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     url = FUSEKI_URL
-    myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
-    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
-    'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\n'+
-    '''SELECT ?problemid WHERE {
+
+    queryTemplate = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
+SELECT ?problemid ?text ?textHtml WHERE {
   ?problem eliozo:problemID ?problemid ;
+           eliozo:problemText ?text ;
+           eliozo:problemTextHtml ?textHtml ;
            eliozo:problemGrade ?grade ;
   	       eliozo:hasVideo ?video .         
-  } ORDER BY ?grade'''
-    }
+  } ORDER BY ?grade ?problemid
+"""
+
+
+    myobj = { 'query': queryTemplate }
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
 
@@ -581,8 +610,13 @@ def create_app(test_config=None):
         all_problemids = []
 
         for item in data['results']['bindings']:
-            problem_id_with_video = item['problemid']['value']
-            all_problemids.append(problem_id_with_video)
+            problemID = item['problemid']['value']
+            text = item['text']['value']
+            text = text.replace("$$", "$")
+            text = text[:80]
+            # text = mathBeautify(text)
+            textHtml = item['textHtml']['value']
+            all_problemids.append({'problemID': problemID, 'text': text, 'textHtml': textHtml})
 
         template_context = {
             'all_problemids' : all_problemids,
@@ -792,7 +826,6 @@ def create_app(test_config=None):
         problemTextHtml = fix_image_links(problemTextHtml)
         problemTextHtml = mathBeautify(problemTextHtml)
 
-
         if 'video' in data['results']['bindings'][0]:
             hasVideo = data['results']['bindings'][0]['video']['value'] != ''
         else:
@@ -824,6 +857,89 @@ def create_app(test_config=None):
                     seconds = '0' + str(seconds)
                 bookmarks.append({'tstamp': item['tstamp']['value'], 'bmtext': item['bmtext']['value'], 'minutes': minutes, 'sec': seconds}) # Bookmarkos sakrāta informācija par tstamp un bmtext
 
+        # metaitems = [
+        #     {'key':'olympiad', 'value': 'AMO'},
+        #     {'key':'country', 'value':'EEFF'},
+        #     {'key':'grade', 'value': '10'},
+        #     {'key':'problemID','value': 'LV.AMO.2000.10.2'}
+        # ]
+
+        metaitems = []
+        problemYear = "NA"
+        country = "NA"
+        olympiad = "NA"
+        problemBook = "NA"
+        problemBookSection = "NA"
+        problemGrade = "NA"
+        problem_number = "NA"
+        problemStrategy = "NA"
+        LTopic = "NA"
+        topic = "NA"
+        strategy = "NA"
+        concepts = "NA"
+        questionType = "NA"
+        domain = "NA"
+
+        metaitems.append({'key':'problemID','value': problemid})
+
+        if 'problemYear' in data['results']['bindings'][0]:
+            problemYear = data['results']['bindings'][0]['problemYear']['value']
+        if 'country' in data['results']['bindings'][0]:
+            country = data['results']['bindings'][0]['country']['value']
+        if 'olympiad' in data['results']['bindings'][0]:
+            olympiad = data['results']['bindings'][0]['olympiad']['value']
+        if 'problemBook' in data['results']['bindings'][0]:
+            problemBook = data['results']['bindings'][0]['problemBook']['value']
+        if 'problemBookSection' in data['results']['bindings'][0]:
+            problemBookSection = data['results']['bindings'][0]['problemBookSection']['value']
+        if 'problemGrade' in data['results']['bindings'][0]:
+            problemGrade = data['results']['bindings'][0]['problemGrade']['value']
+        if 'problem_number' in data['results']['bindings'][0]:
+            problem_number = data['results']['bindings'][0]['problem_number']['value']
+
+        if 'strategy' in data['results']['bindings'][0]:
+            strategy = data['results']['bindings'][0]['strategy']['value']
+        if 'topic' in data['results']['bindings'][0]:
+            topic = data['results']['bindings'][0]['topic']['value']
+        if 'LTopic' in data['results']['bindings'][0]:
+            LTopic = data['results']['bindings'][0]['LTopic']['value']
+        if 'concepts' in data['results']['bindings'][0]:
+            concepts = data['results']['bindings'][0]['concepts']['value']
+        if 'questionType' in data['results']['bindings'][0]:
+            questionType = data['results']['bindings'][0]['questionType']['value']
+        if 'domain' in data['results']['bindings'][0]:
+            domain = data['results']['bindings'][0]['domain']['value']
+
+        if problemYear != 'NA':
+            metaitems.append({'key':'year', 'value': problemYear})
+            if country != 'NA':
+                metaitems.append({'key':'country', 'value': country})
+            if olympiad != 'NA':
+                metaitems.append({'key': 'olympiad', 'value': olympiad})
+            if problemGrade != 'NA':
+                metaitems.append({'key': 'grade', 'value': problemGrade})
+        else:
+            if problemBook != 'NA':
+                metaitems.append({'key': 'book', 'value': problemBook})
+            if problemBookSection != 'NA':
+                metaitems.append({'key': 'section', 'value': problemBookSection})
+
+        if problem_number != 'NA':
+            metaitems.append({'key': 'num', 'value': problem_number})
+        if LTopic != 'NA':
+            metaitems.append({'key': 'LTopic', 'value': LTopic})
+        if topic != 'NA':
+            metaitems.append({'key': 'topic', 'value': topic.replace('http://www.dudajevagatve.lv/eliozo#', '')})
+        if strategy != 'NA':
+            metaitems.append({'key': 'strategy', 'value': strategy})
+        if concepts != 'NA':
+            metaitems.append({'key': 'concepts', 'value': concepts.replace('http://www.dudajevagatve.lv/eliozo#TRM-','')})
+        if questionType != 'NA':
+            metaitems.append({'key': 'questionType', 'value': questionType})
+        if domain != 'NA':
+            all_domains = {"Alg":"Algebra", "Comb":"Kombinatorika", "Geom":"Ģeometrija", "NT":"Skaitļu teorija"}
+            metaitems.append({'key': 'domain', 'value': all_domains[domain]})
+
         template_context = {
             'problemid': problemid,
             'data': data['results']['bindings'],
@@ -834,7 +950,8 @@ def create_app(test_config=None):
             'youtubeID': youtubeID,
             'solutionTextHtml': solutionTextHtml,
             'active': 'olympiads',
-            'title': 'Uzdevums'
+            'title': 'Uzdevums',
+            'metaitems': metaitems
         }
         return render_template('problem_content.html', **template_context)
 
