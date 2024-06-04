@@ -16,6 +16,12 @@
 #    Object Properties
 #################################################################
 
+###  http://www.dudajevagatve.lv/eliozo#hasBookSection
+eliozo:hasBookSection rdf:type owl:ObjectProperty ;
+                      rdfs:domain eliozo:Problem ;
+                      rdfs:range eliozo:BookSection .
+
+
 ###  http://www.dudajevagatve.lv/eliozo#hasCanonicalExample
 eliozo:hasCanonicalExample rdf:type owl:ObjectProperty ;
                            rdfs:domain eliozo:Skill ,
@@ -48,6 +54,12 @@ eliozo:problemCountry rdf:type owl:ObjectProperty ,
                                owl:FunctionalProperty ;
                       rdfs:domain eliozo:Problem ;
                       rdfs:range eliozo:Country .
+
+
+###  http://www.dudajevagatve.lv/eliozo#problemImage
+eliozo:problemImage rdf:type owl:ObjectProperty ;
+                    rdfs:domain eliozo:Problem ;
+                    rdfs:range eliozo:Image .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#problemOlympiad
@@ -103,16 +115,6 @@ eliozo:videoBookmarks rdf:type owl:ObjectProperty ;
                       rdfs:range eliozo:VideoBookmark .
 
 
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/hasBookSection
-eliozo:hasBookSection rdf:type owl:ObjectProperty ;
-                rdfs:domain eliozo:Problem .
-
-
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/problemImage
-eliozo:problemImage rdf:type owl:ObjectProperty ;
-              rdfs:domain eliozo:Problem .
-
-
 #################################################################
 #    Data properties
 #################################################################
@@ -151,6 +153,10 @@ eliozo:bookTitle rdf:type owl:DatatypeProperty ;
 eliozo:bookYear rdf:type owl:DatatypeProperty ;
                 rdfs:domain eliozo:Book ;
                 rdfs:range xsd:int .
+
+
+###  http://www.dudajevagatve.lv/eliozo#hasBookSection
+eliozo:hasBookSection rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#imageSrc
@@ -229,6 +235,10 @@ eliozo:problemID rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain eliozo:Problem ;
                  rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eliozo#problemImage
+eliozo:problemImage rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#problemNote
@@ -338,16 +348,6 @@ eliozo:videoYoutube rdf:type owl:DatatypeProperty ,
                     rdfs:range xsd:anyURI .
 
 
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/hasBookSection
-eliozo:hasBookSection rdf:type owl:DatatypeProperty ;
-                rdfs:range eliozo:BookSection .
-
-
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/problemImage
-eliozo:problemImage rdf:type owl:DatatypeProperty ;
-              rdfs:range eliozo:Image .
-
-
 #################################################################
 #    Classes
 #################################################################
@@ -366,6 +366,10 @@ eliozo:Country rdf:type owl:Class .
 
 ###  http://www.dudajevagatve.lv/eliozo#Curriculum
 eliozo:Curriculum rdf:type owl:Class .
+
+
+###  http://www.dudajevagatve.lv/eliozo#Domain
+eliozo:Domain rdf:type owl:Class .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#Image
@@ -405,18 +409,6 @@ eliozo:Video rdf:type owl:Class .
 eliozo:VideoBookmark rdf:type owl:Class .
 
 
-###  http://www.dudajevagatve.lv/eozol#Domain
-eliozo:Domain rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/Book
-eliozo:Book rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/Solution
-eliozo:Solution rdf:type owl:Class .
-
-
 #################################################################
 #    Individuals
 #################################################################
@@ -430,9 +422,67 @@ eliozo:BBK2012 rdf:type owl:NamedIndividual ,
                eliozo:bookYear 2012 .
 
 
+###  http://www.dudajevagatve.lv/eliozo#DomainAlg
+eliozo:DomainAlg rdf:type owl:NamedIndividual ,
+                          eliozo:Domain ;
+                 eliozo:topicID "Alg"@lv ;
+                 eliozo:topicTitle "Algebra"@lv .
+
+
+###  http://www.dudajevagatve.lv/eliozo#DomainComb
+eliozo:DomainComb rdf:type owl:NamedIndividual ,
+                           eliozo:Domain ;
+                  eliozo:topicID "Comb"@lv ;
+                  eliozo:topicTitle "Kombinatorika"@lv .
+
+
+###  http://www.dudajevagatve.lv/eliozo#DomainGeom
+eliozo:DomainGeom rdf:type owl:NamedIndividual ,
+                           eliozo:Domain ;
+                  eliozo:topicID "Geom"@lv ;
+                  eliozo:topicTitle "Ģeometrija"@lv .
+
+
+###  http://www.dudajevagatve.lv/eliozo#DomainNT
+eliozo:DomainNT rdf:type owl:NamedIndividual ,
+                         eliozo:Domain ;
+                eliozo:topicID "NT"@lv ,
+                               "Skaitļu teorija"@lv .
+
+
 ###  http://www.dudajevagatve.lv/eliozo#EE
 eliozo:EE rdf:type owl:NamedIndividual ,
                    eliozo:Country .
+
+
+###  http://www.dudajevagatve.lv/eliozo#EE.LO
+eliozo:EE.LO rdf:type owl:NamedIndividual ,
+                      eliozo:Olympiad ;
+             eliozo:olympiadCountry eliozo:EE ;
+             eliozo:olympiadCode "LO"@lv ;
+             eliozo:olympiadDescription "Igaunijas matemātikas olimpiādes noslēguma kārta (Matemaatikaolümpiaadi lõppvoorud)"@lv ;
+             eliozo:olympiadID "EE.LO"@lv ;
+             eliozo:olympiadName "Igaunijas olimpiādes noslēguma kārta"@lv .
+
+
+###  http://www.dudajevagatve.lv/eliozo#EE.LVS
+eliozo:EE.LVS rdf:type owl:NamedIndividual ,
+                       eliozo:Olympiad ;
+              eliozo:olympiadCountry eliozo:EE ;
+              eliozo:olympiadCode "LVS"@lv ;
+              eliozo:olympiadDescription "Igaunijas atklātā olimpiāde, rudens sacensības (Lahtised matemaatikavõistlused, Sügisene võistlus)"@lv ;
+              eliozo:olympiadID "EE.LVS"@lv ;
+              eliozo:olympiadName "Igaunijas atklātās rudens sacensības"@lv .
+
+
+###  http://www.dudajevagatve.lv/eliozo#EE.LVT
+eliozo:EE.LVT rdf:type owl:NamedIndividual ,
+                       eliozo:Olympiad ;
+              eliozo:olympiadCountry eliozo:EE ;
+              eliozo:olympiadCode "LVT"@lv ;
+              eliozo:olympiadDescription "Igaunijas atklātā olimpiāde, ziemas sacensības (Lahtised matemaatikavõistlused, Talvine võistlus)"@lv ;
+              eliozo:olympiadID "EE.LVT"@lv ;
+              eliozo:olympiadName "Igaunijas atklātās ziemas sacensības"@lv .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#EE.PK
@@ -453,6 +503,16 @@ eliozo:EE.PKTEST rdf:type owl:NamedIndividual ,
                  eliozo:olympiadDescription "Igaunijas reģionu matemātikas olimpiādes 1.daļa: Īso atbilžu uzdevumi"@lv ;
                  eliozo:olympiadID "EE.PKTEST"@lv ;
                  eliozo:olympiadName "Igaunijas reģionu matemātikas olimpiāde P.1"@lv .
+
+
+###  http://www.dudajevagatve.lv/eliozo#EE.TST
+eliozo:EE.TST rdf:type owl:NamedIndividual ,
+                       eliozo:Olympiad ;
+              eliozo:olympiadCountry eliozo:EE ;
+              eliozo:olympiadCode "TST"@lv ;
+              eliozo:olympiadDescription "Igaunijas IMO komandas atlases sacensības (Eesti IMO-võistkonna valikvõistlused)"@lv ;
+              eliozo:olympiadID "EE.TST"@lv ;
+              eliozo:olympiadName "Igaunijas atlases sacensības"@lv .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#Grade5_LV
@@ -483,6 +543,46 @@ eliozo:Grade9_LV rdf:type owl:NamedIndividual ,
 ###  http://www.dudajevagatve.lv/eliozo#LT
 eliozo:LT rdf:type owl:NamedIndividual ,
                    eliozo:Country .
+
+
+###  http://www.dudajevagatve.lv/eliozo#LT.LKMMO
+eliozo:LT.LKMMO rdf:type owl:NamedIndividual ,
+                         eliozo:Olympiad ;
+                eliozo:olympiadCountry eliozo:LT ;
+                eliozo:olympiadCode "LKMMO"@lv ;
+                eliozo:olympiadDescription "Lietuvas skolēnu komandu matemātikas olimpiāde profesora J.Kubiļus kausa izcīņai (Lietuvos komandinė mokinių matematikos olimpiada prof. Jono Kubiliaus taurei laimėti)"@lv ;
+                eliozo:olympiadID "LT.LKMMO"@lv ;
+                eliozo:olympiadName "Lietuvas komandu matemātikas olimpiāde"@lv .
+
+
+###  http://www.dudajevagatve.lv/eliozo#LT.LMMO
+eliozo:LT.LMMO rdf:type owl:NamedIndividual ,
+                        eliozo:Olympiad ;
+               eliozo:olympiadCountry eliozo:LT ;
+               eliozo:olympiadCode "LMMO"@lv ;
+               eliozo:olympiadDescription "Lietuvas skolēnu matemātikas olimpiāde (Lietuvos mokinių matematikos olimpiada)"@lv ;
+               eliozo:olympiadID "LT.LMMO"@lv ;
+               eliozo:olympiadName "Lietuvas matemātikas olimpiāde"@lv .
+
+
+###  http://www.dudajevagatve.lv/eliozo#LT.RAJ
+eliozo:LT.RAJ rdf:type owl:NamedIndividual ,
+                       eliozo:Olympiad ;
+              eliozo:olympiadCountry eliozo:LT ;
+              eliozo:olympiadCode "RAJ"@lv ;
+              eliozo:olympiadDescription "Lietuvas skolēnu matemātikas olimpiādes pašvaldību kārta (LMMO savivaldybių etapas)"@lv ;
+              eliozo:olympiadID "LT.RAJ"@lv ;
+              eliozo:olympiadName "Lietuvas olimpiādes pašvaldību kārta"@lv .
+
+
+###  http://www.dudajevagatve.lv/eliozo#LT.TST
+eliozo:LT.TST rdf:type owl:NamedIndividual ,
+                       eliozo:Olympiad ;
+              eliozo:olympiadCountry eliozo:LT ;
+              eliozo:olympiadCode "TST"@lv ;
+              eliozo:olympiadDescription "Lietuvas atlases sacensības (atrankos į IMO ir Vidurio Europos (MEMO) olimpiadas)"@lv ;
+              eliozo:olympiadID "LT.TST"@lv ;
+              eliozo:olympiadName "Lietuvas atlases sacensības"@lv .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#LT.VUMIF
@@ -550,112 +650,13 @@ eliozo:LV.VOL rdf:type owl:NamedIndividual ,
               eliozo:olympiadName "Latvijas valsts olimpiāde"@lv .
 
 
-###  http://www.dudajevagatve.lv/eozol#DomainAlg
-eliozo:DomainAlg rdf:type owl:NamedIndividual ,
-                    eliozo:Domain ;
-           eliozo:topicID "Alg"@lv ;
-           eliozo:topicTitle "Algebra"@lv .
-
-
-###  http://www.dudajevagatve.lv/eozol#DomainComb
-eliozo:DomainComb rdf:type owl:NamedIndividual ,
-                     eliozo:Domain ;
-            eliozo:topicID "Comb"@lv ;
-            eliozo:topicTitle "Kombinatorika"@lv .
-
-
-###  http://www.dudajevagatve.lv/eozol#DomainGeom
-eliozo:DomainGeom rdf:type owl:NamedIndividual ,
-                     eliozo:Domain ;
-            eliozo:topicID "Geom"@lv ;
-            eliozo:topicTitle "Ģeometrija"@lv .
-
-
-###  http://www.dudajevagatve.lv/eozol#DomainNT
-eliozo:DomainNT rdf:type owl:NamedIndividual ,
-                   eliozo:Domain ;
-          eliozo:topicID "NT"@lv ,
-                         "Skaitļu teorija"@lv .
-
-
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/EE.LO
-eliozo:EE.LO rdf:type owl:NamedIndividual ,
-                eliozo:Olympiad ;
-       eliozo:olympiadCountry eliozo:EE ;
-       eliozo:olympiadCode "LO"@lv ;
-       eliozo:olympiadDescription "Igaunijas matemātikas olimpiādes noslēguma kārta (Matemaatikaolümpiaadi lõppvoorud)"@lv ;
-       eliozo:olympiadID "EE.LO"@lv ;
-       eliozo:olympiadName "Igaunijas olimpiādes noslēguma kārta"@lv .
-
-
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/EE.LVS
-eliozo:EE.LVS rdf:type owl:NamedIndividual ,
-                 eliozo:Olympiad ;
-        eliozo:olympiadCountry eliozo:EE ;
-        eliozo:olympiadCode "LVS"@lv ;
-        eliozo:olympiadDescription "Igaunijas atklātā olimpiāde, rudens sacensības (Lahtised matemaatikavõistlused, Sügisene võistlus)"@lv ;
-        eliozo:olympiadID "EE.LVS"@lv ;
-        eliozo:olympiadName "Igaunijas atklātās rudens sacensības"@lv .
-
-
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/EE.LVT
-eliozo:EE.LVT rdf:type owl:NamedIndividual ,
-                 eliozo:Olympiad ;
-        eliozo:olympiadCountry eliozo:EE ;
-        eliozo:olympiadCode "LVT"@lv ;
-        eliozo:olympiadDescription "Igaunijas atklātā olimpiāde, ziemas sacensības (Lahtised matemaatikavõistlused, Talvine võistlus)"@lv ;
-        eliozo:olympiadID "EE.LVT"@lv ;
-        eliozo:olympiadName "Igaunijas atklātās ziemas sacensības"@lv .
-
-
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/EE.TST
-eliozo:EE.TST rdf:type owl:NamedIndividual ,
-                 eliozo:Olympiad ;
-        eliozo:olympiadCountry eliozo:EE ;
-        eliozo:olympiadCode "TST"@lv ;
-        eliozo:olympiadDescription "Igaunijas IMO komandas atlases sacensības (Eesti IMO-võistkonna valikvõistlused)"@lv ;
-        eliozo:olympiadID "EE.TST"@lv ;
-        eliozo:olympiadName "Igaunijas atlases sacensības"@lv .
-
-
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/LT.LKMMO
-eliozo:LT.LKMMO rdf:type owl:NamedIndividual ,
-                   eliozo:Olympiad ;
-          eliozo:olympiadCountry eliozo:LT ;
-          eliozo:olympiadCode "LKMMO"@lv ;
-          eliozo:olympiadDescription "Lietuvas skolēnu komandu matemātikas olimpiāde profesora J.Kubiļus kausa izcīņai (Lietuvos komandinė mokinių matematikos olimpiada prof. Jono Kubiliaus taurei laimėti)"@lv ;
-          eliozo:olympiadID "LT.LKMMO"@lv ;
-          eliozo:olympiadName "Lietuvas komandu matemātikas olimpiāde"@lv .
-
-
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/LT.LMMO
-eliozo:LT.LMMO rdf:type owl:NamedIndividual ,
+###  http://www.dudajevagatve.lv/eozol#IMO.SHL
+:IMO.SHL rdf:type owl:NamedIndividual ,
                   eliozo:Olympiad ;
-         eliozo:olympiadCountry eliozo:LT ;
-         eliozo:olympiadCode "LMMO"@lv ;
-         eliozo:olympiadDescription "Lietuvas skolēnu matemātikas olimpiāde (Lietuvos mokinių matematikos olimpiada)"@lv ;
-         eliozo:olympiadID "LT.LMMO"@lv ;
-         eliozo:olympiadName "Lietuvas matemātikas olimpiāde"@lv .
-
-
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/LT.RAJ
-eliozo:LT.RAJ rdf:type owl:NamedIndividual ,
-                 eliozo:Olympiad ;
-        eliozo:olympiadCountry eliozo:LT ;
-        eliozo:olympiadCode "RAJ"@lv ;
-        eliozo:olympiadDescription "Lietuvas skolēnu matemātikas olimpiādes pašvaldību kārta (LMMO savivaldybių etapas)"@lv ;
-        eliozo:olympiadID "LT.RAJ"@lv ;
-        eliozo:olympiadName "Lietuvas olimpiādes pašvaldību kārta"@lv .
-
-
-###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/LT.TST
-eliozo:LT.TST rdf:type owl:NamedIndividual ,
-                 eliozo:Olympiad ;
-        eliozo:olympiadCountry eliozo:LT ;
-        eliozo:olympiadCode "TST"@lv ;
-        eliozo:olympiadDescription "Lietuvas atlases sacensības (atrankos į IMO ir Vidurio Europos (MEMO) olimpiadas)"@lv ;
-        eliozo:olympiadID "LT.TST"@lv ;
-        eliozo:olympiadName "Lietuvas atlases sacensības"@lv .
+         eliozo:olympiadCode "IMO.SHL"@lv ;
+         eliozo:olympiadDescription "Starptautiskās olimpiādes žūrijas īsais saraksts (IMO Shortlist)"@lv ;
+         eliozo:olympiadID "IMO.SHL"@lv ;
+         eliozo:olympiadName "IMO īsais saraksts"@lv .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

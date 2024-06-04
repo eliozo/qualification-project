@@ -42,21 +42,21 @@ div.mycontainer {
 }
 
 table.tasks, table.proofs {
-    border-left: 1px solid #666666;
-    border-bottom: 1px solid #666666;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     border-spacing: 0;
     border-collapse: collapse;
     margin: 10px 0px 10px 0px;
 }
 
 table.tasks tr td, table.proofs tr td {
-    border-top: 1px solid #666666;
-    border-right: 1px solid #666666;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
 }
 
 table.tasks tr th, table.proofs tr th {
-    border-top: 1px solid #666666;
-    border-right: 1px solid #666666;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
     font-size: 120%;
 }
 
@@ -203,4 +203,50 @@ div.problemDiv {
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.5);
+}
+
+
+div.panel-body i {
+  font-size:85%;
+}
+
+table.colornavigation a {
+  text-decoration: underline !important;
+}
+
+.tltip {
+  position: relative;
+  display: inline-block;
+  font-style: italic;
+  font-size:80%;
+  color: #2B547E;
+  border-bottom: 1px dotted black;
+}
+
+/* Tooltip text */
+.tltip .tltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #ffffcc;
+  font-style: normal;
+  color: black;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tltip:hover .tltiptext {
+  visibility: visible;
+}
+
+div.panel-body h2 {
+  font-weight: normal;
+  text-align: left;
+  margin-block-end: 0.25em;
+}
+
+div.panel-heading h4 {
+  font-weight: normal;
 }

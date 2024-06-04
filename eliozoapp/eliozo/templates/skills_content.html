@@ -7,6 +7,65 @@
     <div class="container">
         {{jsonfile}}
     </div>
+
+ {% for L1_topic in structured_topics %}
+ <h3>{{ L1_topic.number }}. {{ L1_topic.name }}</h3>
+<div class="panel-group" id="accordion">
+{% for L2_topic in L1_topic.subtopics %}
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">
+<a data-toggle="collapse"
+data-parent="#accordion" href="#collapse{{L2_topic.label}}">{{ L2_topic.number }}. {{ L2_topic.name }}</a>
+{% if L2_topic.desc != "" %}
+<span class="tltip"><img style="vertical-align: middle;width:12px;"
+         src="{{ url_for('static',filename='blue_question_mark.png') }}">
+<span class="tltiptext">{{ L2_topic.desc | safe }}</span>{% endif %}
+</h4>
+</div>
+
+<div id="collapse{{L2_topic.label}}" class="panel-collapse collapse">
+<div class="panel-body">
+
+{% if L2_topic.prob %} Nesašķiroti:  {% for problem in L2_topic.prob %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                        problem }}</a>, {% endfor %} <br/> {% endif %}
+
+{% for L3_topic in L2_topic.subtopics %}
+<b>{{ L3_topic.number }}. {{ L3_topic.name | safe }}</b>{% if L3_topic.desc != "" %}
+<span class="tltip"><img style="vertical-align: middle;width:12px;"
+         src="{{ url_for('static',filename='blue_question_mark.png') }}">
+    <span class="tltiptext">{{ L3_topic.desc | safe }}</span></span>{% endif %} {% if L3_topic.prob %} : {% endif %}
+    {% for problem in L3_topic.prob %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                        problem }}</a>, {% endfor %}
+
+    <br/>
+{% for L45_topic in L3_topic.subtopics %}
+    {{ L45_topic.number }}. {{ L45_topic.name | safe }}{% if L45_topic.desc != "" %}
+<span class="tltip"><img style="vertical-align: middle;width:12px;"
+         src="{{ url_for('static',filename='blue_question_mark.png') }}">
+    <span class="tltiptext">{{ L45_topic.desc | safe }}</span></span>{% endif %} {% if L45_topic.prob %} : {% endif %}
+    {% for problem in L45_topic.prob %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                        problem }}</a>, {% endfor %}
+    <br/>
+{% endfor %}
+{% endfor %}
+
+
+</div>
+</div>
+
+</div>
+{% endfor %}
+</div>
+{% endfor %}
+
+
+
+
+
+
+           {#
     <table class="tasks">
         <colgroup>
             <col class="aaa">
@@ -32,6 +91,7 @@
             {% endfor %}
         </tbody>
     </table>
+           #}
 
 
         </div>

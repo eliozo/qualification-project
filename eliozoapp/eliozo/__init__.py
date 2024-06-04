@@ -686,11 +686,67 @@ def create_app(test_config=None):
             else:
                 current_skill_info['problems'].append(item['problemid']['value']) # Pievieno tikai jauno uzdevuma ID
 
+        # domain_titles = {'1': 'Algebra', '2': 'Kombinatorika', '3': 'Ģeometrija', '4': 'Skaitļu teorija'}
+        structured_skills = []
+        current_LTopics = None
+        current_subtopics = None
+        current_subsubtopics = None
+        for skill in all_skills:
+            skillNumber = all_skill_info[skill]['skillNumber']
+
+            if skillNumber.endswith('.0.0.0.0'):
+                LTopics = []
+                current_LTopics = LTopics
+                L1_number = skillNumber[:-len('.0.0.0.0')]
+                L1_name = all_skill_info[skill]['skillName']
+                L1_desc = all_skill_info[skill]['skillDescription']
+                L1_prob = all_skill_info[skill]['problems']
+                structured_skills.append({'number':L1_number,
+                                          'name':L1_name,
+                                          'desc':L1_desc,
+                                          'prob':L1_prob,
+                                          'subtopics': LTopics})
+            elif skillNumber.endswith('.0.0.0'):
+                subtopics = []
+                current_subtopics = subtopics
+                L2_number = skillNumber[:-len('.0.0.0')]
+                L2_label = L2_number.replace('.', '_')
+                L2_name = all_skill_info[skill]['skillName']
+                L2_desc = all_skill_info[skill]['skillDescription']
+                L2_prob = all_skill_info[skill]['problems']
+                current_LTopics.append({'number':L2_number,
+                                        'label':L2_label,
+                                        'name':L2_name,
+                                        'desc':L2_desc,
+                                        'prob': L2_prob,
+                                        'subtopics': subtopics})
+            elif skillNumber.endswith('.0.0'):
+                subsubtopics = []
+                current_subsubtopics = subsubtopics
+                L3_number = skillNumber[:-len('.0.0')]
+                L3_name = all_skill_info[skill]['skillName']
+                L3_desc = all_skill_info[skill]['skillDescription']
+                L3_prob = all_skill_info[skill]['problems']
+                current_subtopics.append({'number':L3_number,
+                                          'name':L3_name,
+                                          'desc': L3_desc,
+                                          'prob': L3_prob,
+                                          'subtopics':subsubtopics})
+            else:
+                L45_number = skillNumber
+                if skillNumber.endswith('.0'):
+                    L45_number = skillNumber[:-len('.0')]
+                L45_name = all_skill_info[skill]['skillName']
+                L45_desc = all_skill_info[skill]['skillDescription']
+                L45_prob = all_skill_info[skill]['problems']
+                current_subsubtopics.append({'number':L45_number, 'name':L45_name, 'desc': L45_desc, 'prob':L45_prob})
+
         template_context = {
             'all_skills': all_skills,
-            'all_skill_info' : all_skill_info,
+            'all_skill_info': all_skill_info,
             'active': 'skills',
-            'title': 'Tēmas'
+            'title': 'Tēmas',
+            'structured_topics':structured_skills
         }
 
         return render_template('skills_content.html', **template_context)
