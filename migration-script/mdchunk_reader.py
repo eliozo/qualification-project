@@ -236,6 +236,8 @@ def md_to_rdf(md_file_path, ttl_file_path):
             for vv in vvv:
                 if k == 'topic':
                     add_problem_topiclike_prop(g, problem_node, 'topic', vv)
+                elif k == 'concepts':
+                    add_problem_topiclike_prop(g, problem_node, 'concepts', "TRM-"+vv)
                 else:
                     add_problem_literal_prop(g, problem_node, k, vv)
 

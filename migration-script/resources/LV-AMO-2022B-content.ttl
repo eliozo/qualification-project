@@ -3,8 +3,8 @@
 
 eliozo:LV.AMO.2022B.10.1 a eliozo:Problem ;
     eliozo:LTopic "LTCongruenceModulo" ;
-    eliozo:concepts "last-digit",
-        "power" ;
+    eliozo:concepts eliozo:TRM-last-digit,
+        eliozo:TRM-power ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
@@ -23,10 +23,10 @@ eliozo:LV.AMO.2022B.10.1 a eliozo:Problem ;
 eliozo:LV.AMO.2022B.10.2 a eliozo:Problem ;
     eliozo:LTopic "LTDivisibility",
         "LTNumTheoryExamples" ;
-    eliozo:concepts "disjoint-sets",
-        "natural-numbers",
-        "primes",
-        "sum" ;
+    eliozo:concepts eliozo:TRM-disjoint-sets,
+        eliozo:TRM-natural-numbers,
+        eliozo:TRM-primes,
+        eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
@@ -50,11 +50,11 @@ grupas skaitļu summa ir pirmskaitlis, ja <strong>(A)</strong> $n = 8$,
 
 eliozo:LV.AMO.2022B.10.3 a eliozo:Problem ;
     eliozo:LTopic "LTTriangles" ;
-    eliozo:concepts "area",
-        "circle",
-        "legs-in-right-triangle",
-        "right-triangle",
-        "tangent" ;
+    eliozo:concepts eliozo:TRM-area,
+        eliozo:TRM-circle,
+        eliozo:TRM-legs-in-right-triangle,
+        eliozo:TRM-right-triangle,
+        eliozo:TRM-tangent ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
@@ -77,9 +77,9 @@ abām katetēm. Aprēķināt trijstūra $ACB$ laukumu, ja $OB = 5$.</p>"""@lv ;
 
 eliozo:LV.AMO.2022B.10.4 a eliozo:Problem ;
     eliozo:LTopic "LTEquations" ;
-    eliozo:concepts "equation",
-        "real-numbers",
-        "root" ;
+    eliozo:concepts eliozo:TRM-equation,
+        eliozo:TRM-real-numbers,
+        eliozo:TRM-root ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
@@ -103,9 +103,9 @@ nav reālu sakņu!"""@lv ;
 
 eliozo:LV.AMO.2022B.10.5 a eliozo:Problem ;
     eliozo:LTopic "LTGraphs" ;
-    eliozo:concepts "edge",
-        "graph",
-        "vertex" ;
+    eliozo:concepts eliozo:TRM-edge,
+        eliozo:TRM-graph,
+        eliozo:TRM-vertex ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
@@ -136,9 +136,9 @@ roku abiem saviem blakussēdētājiem!</p>"""@lv ;
 
 eliozo:LV.AMO.2022B.11.1 a eliozo:Problem ;
     eliozo:LTopic "LTCongruenceModulo" ;
-    eliozo:concepts "cube-Alg",
-        "integer-numbers",
-        "sum" ;
+    eliozo:concepts eliozo:TRM-cube-Alg,
+        eliozo:TRM-integer-numbers,
+        eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
@@ -156,10 +156,10 @@ eliozo:LV.AMO.2022B.11.1 a eliozo:Problem ;
 
 eliozo:LV.AMO.2022B.11.2 a eliozo:Problem ;
     eliozo:LTopic "LTEquations" ;
-    eliozo:concepts "equation",
-        "square-Alg",
-        "sum",
-        "value" ;
+    eliozo:concepts eliozo:TRM-equation,
+        eliozo:TRM-square-Alg,
+        eliozo:TRM-sum,
+        eliozo:TRM-value ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
@@ -177,10 +177,10 @@ eliozo:LV.AMO.2022B.11.2 a eliozo:Problem ;
 
 eliozo:LV.AMO.2022B.11.3 a eliozo:Problem ;
     eliozo:LTopic "LTCircleAndRelatedAngles" ;
-    eliozo:concepts "angle",
-        "inscribed-circle",
-        "tangent",
-        "triangle" ;
+    eliozo:concepts eliozo:TRM-angle,
+        eliozo:TRM-inscribed-circle,
+        eliozo:TRM-tangent,
+        eliozo:TRM-triangle ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
@@ -203,9 +203,9 @@ garumu, ja trijstūra leņķa $B$ lielums ir $120^{\\circ}$.</p>"""@lv ;
 
 eliozo:LV.AMO.2022B.11.4 a eliozo:Problem ;
     eliozo:LTopic "LTTransformsNumTheory" ;
-    eliozo:concepts "inequality",
-        "natural-numbers",
-        "sum" ;
+    eliozo:concepts eliozo:TRM-inequality,
+        eliozo:TRM-natural-numbers,
+        eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
@@ -232,10 +232,10 @@ $x$, $y$, $z$ izpildītos nevienādība</p>
 
 eliozo:LV.AMO.2022B.11.5 a eliozo:Problem ;
     eliozo:LTopic "LTGraphs" ;
-    eliozo:concepts "grid",
-        "path",
-        "rectangle",
-        "square-side" ;
+    eliozo:concepts eliozo:TRM-grid,
+        eliozo:TRM-path,
+        eliozo:TRM-rectangle,
+        eliozo:TRM-square-side ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
@@ -276,9 +276,9 @@ Muzeja vadītājs vēlas izveidot apmeklētāju maršrutu, kuram izpildās šād
 
 eliozo:LV.AMO.2022B.12.1 a eliozo:Problem ;
     eliozo:LTopic "LTCongruenceModulo" ;
-    eliozo:concepts "cube-Alg",
-        "integer-numbers",
-        "sum" ;
+    eliozo:concepts eliozo:TRM-cube-Alg,
+        eliozo:TRM-integer-numbers,
+        eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
@@ -296,9 +296,9 @@ eliozo:LV.AMO.2022B.12.1 a eliozo:Problem ;
 
 eliozo:LV.AMO.2022B.12.2 a eliozo:Problem ;
     eliozo:LTopic "LTEquations" ;
-    eliozo:concepts "cube-Alg",
-        "equation",
-        "real-numbers" ;
+    eliozo:concepts eliozo:TRM-cube-Alg,
+        eliozo:TRM-equation,
+        eliozo:TRM-real-numbers ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
@@ -316,10 +316,10 @@ eliozo:LV.AMO.2022B.12.2 a eliozo:Problem ;
 
 eliozo:LV.AMO.2022B.12.3 a eliozo:Problem ;
     eliozo:LTopic "LTTriangles" ;
-    eliozo:concepts "altitude",
-        "area",
-        "median",
-        "triangle" ;
+    eliozo:concepts eliozo:TRM-altitude,
+        eliozo:TRM-area,
+        eliozo:TRM-median,
+        eliozo:TRM-triangle ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
@@ -342,10 +342,10 @@ augstuma no virsotnes $B$ garums ir $\\sqrt{3}$. Kāds var būt šī trijstūra 
 
 eliozo:LV.AMO.2022B.12.4 a eliozo:Problem ;
     eliozo:LTopic "LTEquations" ;
-    eliozo:concepts "cosine",
-        "equation",
-        "real-numbers",
-        "sine" ;
+    eliozo:concepts eliozo:TRM-cosine,
+        eliozo:TRM-equation,
+        eliozo:TRM-real-numbers,
+        eliozo:TRM-sine ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
@@ -363,12 +363,12 @@ eliozo:LV.AMO.2022B.12.4 a eliozo:Problem ;
 
 eliozo:LV.AMO.2022B.12.5 a eliozo:Problem ;
     eliozo:LTopic "LTGames" ;
-    eliozo:concepts "column",
-        "game",
-        "product",
-        "row",
-        "table",
-        "winning-strategy" ;
+    eliozo:concepts eliozo:TRM-column,
+        eliozo:TRM-game,
+        eliozo:TRM-product,
+        eliozo:TRM-row,
+        eliozo:TRM-table,
+        eliozo:TRM-winning-strategy ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
@@ -404,8 +404,8 @@ punktu. Kuram spēlētājam ir uzvaroša stratēģija, ja <strong>(A)</strong> $
 
 eliozo:LV.AMO.2022B.5.1 a eliozo:Problem ;
     eliozo:LTopic "LTNumeralSystems" ;
-    eliozo:concepts "digit",
-        "divisibility" ;
+    eliozo:concepts eliozo:TRM-digit,
+        eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
@@ -428,11 +428,11 @@ cipari $0$ un $2$ un kurš dalās ar $15$?</p>"""@lv ;
 
 eliozo:LV.AMO.2022B.5.2 a eliozo:Problem ;
     eliozo:LTopic "LTPolygons" ;
-    eliozo:concepts "area",
-        "grid",
-        "hexagon",
-        "perimeter",
-        "square-side" ;
+    eliozo:concepts eliozo:TRM-area,
+        eliozo:TRM-grid,
+        eliozo:TRM-hexagon,
+        eliozo:TRM-perimeter,
+        eliozo:TRM-square-side ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
@@ -458,8 +458,8 @@ rūtiņu malu, kas pilnībā atrodas uz robežas, skaits.</p>"""@lv ;
 
 eliozo:LV.AMO.2022B.5.3 a eliozo:Problem ;
     eliozo:LTopic "LTDivisibility" ;
-    eliozo:concepts "at-least",
-        "fractions" ;
+    eliozo:concepts eliozo:TRM-at-least,
+        eliozo:TRM-fractions ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
@@ -485,7 +485,7 @@ septītdaļa – pensionāri. Cik biļetes tika pārdotas?</p>"""@lv ;
 
 eliozo:LV.AMO.2022B.5.4 a eliozo:Problem ;
     eliozo:LTopic "LTEquationSystems" ;
-    eliozo:concepts "equality" ;
+    eliozo:concepts eliozo:TRM-equality ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
@@ -511,7 +511,7 @@ līdzsvarā? Atbildi pamatot!<br />
 
 eliozo:LV.AMO.2022B.5.5 a eliozo:Problem ;
     eliozo:LTopic "LTLogic" ;
-    eliozo:concepts "true-statement" ;
+    eliozo:concepts eliozo:TRM-true-statement ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
@@ -544,8 +544,8 @@ bet abas pārējās krāsas nepatīk. Zināms, ka tieši viens no apgalvojumiem 
 
 eliozo:LV.AMO.2022B.6.1 a eliozo:Problem ;
     eliozo:LTopic "LTDivisibility" ;
-    eliozo:concepts "divisibility",
-        "natural-numbers" ;
+    eliozo:concepts eliozo:TRM-divisibility,
+        eliozo:TRM-natural-numbers ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
@@ -573,9 +573,9 @@ Cik ir tādu skaitļu, kas ir apvilkti ar vismaz divām dažādām krāsām?</p>
 
 eliozo:LV.AMO.2022B.6.2 a eliozo:Problem ;
     eliozo:LTopic "LTCuttingCoversColoring" ;
-    eliozo:concepts "grid",
-        "rotation",
-        "shape" ;
+    eliozo:concepts eliozo:TRM-grid,
+        eliozo:TRM-rotation,
+        eliozo:TRM-shape ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
@@ -603,9 +603,9 @@ Figūras var būt arī pagrieztas.<br />
 
 eliozo:LV.AMO.2022B.6.3 a eliozo:Problem ;
     eliozo:LTopic "LTCongruenceModulo" ;
-    eliozo:concepts "last-digit",
-        "natural-numbers",
-        "sum" ;
+    eliozo:concepts eliozo:TRM-last-digit,
+        eliozo:TRM-natural-numbers,
+        eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
@@ -631,7 +631,7 @@ Vai var gadīties, ka Māris ieguva summu, kuras pēdējais cipars ir
 
 eliozo:LV.AMO.2022B.6.4 a eliozo:Problem ;
     eliozo:LTopic "LTEquationSystems" ;
-    eliozo:concepts "equality" ;
+    eliozo:concepts eliozo:TRM-equality ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
@@ -655,9 +655,9 @@ līdzsvarā? Atbildi pamatot!<br />
 
 eliozo:LV.AMO.2022B.6.5 a eliozo:Problem ;
     eliozo:LTopic "LTLogic" ;
-    eliozo:concepts "falsehood",
-        "mapping",
-        "truth" ;
+    eliozo:concepts eliozo:TRM-falsehood,
+        eliozo:TRM-mapping,
+        eliozo:TRM-truth ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
@@ -696,9 +696,9 @@ sestdiena – $56$, svētdiena – $57$. Cik ciema iedzīvotāji visu laiku melo
 
 eliozo:LV.AMO.2022B.7.1 a eliozo:Problem ;
     eliozo:LTopic "LTNumeralSystems" ;
-    eliozo:concepts "digit",
-        "divisibility",
-        "variable" ;
+    eliozo:concepts eliozo:TRM-digit,
+        eliozo:TRM-divisibility,
+        eliozo:TRM-variable ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
@@ -724,8 +724,8 @@ Cik dažādos veidos to var izdarīt?</p>"""@lv ;
 
 eliozo:LV.AMO.2022B.7.2 a eliozo:Problem ;
     eliozo:LTopic "LTEquations" ;
-    eliozo:concepts "product",
-        "sum" ;
+    eliozo:concepts eliozo:TRM-product,
+        eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
@@ -744,9 +744,9 @@ eliozo:LV.AMO.2022B.7.2 a eliozo:Problem ;
 
 eliozo:LV.AMO.2022B.7.3 a eliozo:Problem ;
     eliozo:LTopic "LTObjectSystemsGeometry" ;
-    eliozo:concepts "line",
-        "plane",
-        "point" ;
+    eliozo:concepts eliozo:TRM-line,
+        eliozo:TRM-plane,
+        eliozo:TRM-point ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
@@ -767,10 +767,10 @@ lai uz katras no taisnēm būtu atzīmēti tieši trīs punkti!</p>"""@lv ;
 
 eliozo:LV.AMO.2022B.7.4 a eliozo:Problem ;
     eliozo:LTopic "LTDivisibility" ;
-    eliozo:concepts "game",
-        "remove",
-        "set",
-        "to-win" ;
+    eliozo:concepts eliozo:TRM-game,
+        eliozo:TRM-remove,
+        eliozo:TRM-set,
+        eliozo:TRM-to-win ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
@@ -800,9 +800,9 @@ ja sākumā kaudzē ir <strong>(A)</strong> $6$ konfektes;
 
 eliozo:LV.AMO.2022B.7.5 a eliozo:Problem ;
     eliozo:LTopic "LTLogic" ;
-    eliozo:concepts "falsehood",
-        "mapping",
-        "truth" ;
+    eliozo:concepts eliozo:TRM-falsehood,
+        eliozo:TRM-mapping,
+        eliozo:TRM-truth ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
@@ -841,9 +841,9 @@ Cik ciema iedzīvotāju visu laiku melo?</p>"""@lv ;
 
 eliozo:LV.AMO.2022B.8.1 a eliozo:Problem ;
     eliozo:LTopic "LTNumeralSystems" ;
-    eliozo:concepts "digit",
-        "divisibility",
-        "variable" ;
+    eliozo:concepts eliozo:TRM-digit,
+        eliozo:TRM-divisibility,
+        eliozo:TRM-variable ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
@@ -867,8 +867,8 @@ Cik dažādos veidos to var izdarīt?</p>"""@lv ;
 
 eliozo:LV.AMO.2022B.8.2 a eliozo:Problem ;
     eliozo:LTopic "LTEquations" ;
-    eliozo:concepts "add",
-        "subtract" ;
+    eliozo:concepts eliozo:TRM-add,
+        eliozo:TRM-subtract ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
@@ -896,7 +896,7 @@ ja kopā viņš ieguva $13$ punktus?</p>"""@lv ;
 
 eliozo:LV.AMO.2022B.8.3 a eliozo:Problem ;
     eliozo:LTopic "LTTriangles" ;
-    eliozo:concepts "triangle" ;
+    eliozo:concepts eliozo:TRM-triangle ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
@@ -917,8 +917,8 @@ ka $AD = BD$ un $AB = DC = AC$. Aprēķināt trijstūra $ABC$ leņķus!</p>"""@l
 
 eliozo:LV.AMO.2022B.8.4 a eliozo:Problem ;
     eliozo:LTopic "LTGraphs" ;
-    eliozo:concepts "distance",
-        "integer-numbers" ;
+    eliozo:concepts eliozo:TRM-distance,
+        eliozo:TRM-integer-numbers ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
@@ -944,8 +944,8 @@ tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?</p>
 
 eliozo:LV.AMO.2022B.8.5 a eliozo:Problem ;
     eliozo:LTopic "LTLogic" ;
-    eliozo:concepts "falsehood",
-        "truth" ;
+    eliozo:concepts eliozo:TRM-falsehood,
+        eliozo:TRM-truth ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
@@ -979,9 +979,9 @@ Cik draugu saka taisnību?"""@lv ;
 
 eliozo:LV.AMO.2022B.9.1 a eliozo:Problem ;
     eliozo:LTopic "LTNumeralSystems" ;
-    eliozo:concepts "digit",
-        "divisibility",
-        "variable" ;
+    eliozo:concepts eliozo:TRM-digit,
+        eliozo:TRM-divisibility,
+        eliozo:TRM-variable ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
@@ -1003,7 +1003,7 @@ var atbilst arī vienādi cipari.)</p>"""@lv ;
 
 eliozo:LV.AMO.2022B.9.2 a eliozo:Problem ;
     eliozo:LTopic "LTInequalities" ;
-    eliozo:concepts "inequality" ;
+    eliozo:concepts eliozo:TRM-inequality ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
@@ -1021,10 +1021,10 @@ eliozo:LV.AMO.2022B.9.2 a eliozo:Problem ;
 
 eliozo:LV.AMO.2022B.9.3 a eliozo:Problem ;
     eliozo:LTopic "LTTriangles" ;
-    eliozo:concepts "altitude",
-        "line",
-        "right-triangle",
-        "segment" ;
+    eliozo:concepts eliozo:TRM-altitude,
+        eliozo:TRM-line,
+        eliozo:TRM-right-triangle,
+        eliozo:TRM-segment ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
@@ -1049,8 +1049,8 @@ Pierādīt, ka taisne $CH$ dala nogriezni $BK$ divās vienādās daļās!</p>"""
 
 eliozo:LV.AMO.2022B.9.4 a eliozo:Problem ;
     eliozo:LTopic "LTGraphs" ;
-    eliozo:concepts "distance",
-        "integer-numbers" ;
+    eliozo:concepts eliozo:TRM-distance,
+        eliozo:TRM-integer-numbers ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
@@ -1075,10 +1075,10 @@ tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?</p>
 
 eliozo:LV.AMO.2022B.9.5 a eliozo:Problem ;
     eliozo:LTopic "LTGraphs" ;
-    eliozo:concepts "grid",
-        "path",
-        "rectangle",
-        "square-side" ;
+    eliozo:concepts eliozo:TRM-grid,
+        eliozo:TRM-path,
+        eliozo:TRM-rectangle,
+        eliozo:TRM-square-side ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;

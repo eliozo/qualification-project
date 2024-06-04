@@ -79,6 +79,37 @@ SELECT ?topicID ?topicParent ?topicTitle ?topicDesc WHERE {
 
     return x.text
 
+def getSPARQLconcepts():
+    url = FUSEKI_URL
+    queryTemplate = """
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+SELECT ?concept ?termLV ?termEN ?conceptID ?descLV ?problemID WHERE {
+  ?concept a eliozo:Concept ;
+           eliozo:termLV ?termLV ; 
+           eliozo:termEN ?termEN ;
+           eliozo:conceptID ?conceptID .
+  OPTIONAL {
+    ?concept eliozo:descLV ?descLV .
+  }
+  ?problem eliozo:concepts ?concept ;
+           eliozo:problemID ?problemID .
+} ORDER BY ?termEN ?problemID
+"""
+
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+
+    myobj = {'query': queryTemplate}
+
+    x = requests.post(url, myobj, head)
+
+    print(x.text)
+
+    return x.text
+
+
+
 
 def getSPARQLProblem(arg):
     # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
@@ -634,22 +665,44 @@ def create_app(test_config=None):
     @app.route('/index', methods=['GET','POST'])
     def getIndex():
 
-        all_topics = json.loads(getSPARQLtopics('eliozo:analysis'))
-        topic_list = ["Pirmā tēma", "Otrā tēma"]
-        for item in all_topics['results']['bindings']:
-            topic_list.append(item['topicTitle']['value'])
+        # all_topics = json.loads(getSPARQLtopics('eliozo:analysis'))
+        concepts_problems = json.loads(getSPARQLconcepts())
 
-        myTree = {
-            "root": ["child1", "child2"],
-            "child1": ["grandchild1", "grandchild2"],
-            "child2": [],
-            "grandchild1": [],
-            "grandchild2": []
-        }
+        concept_list = []
+        current_concept = "NA"
+        current_problems = []
+        for item in concepts_problems['results']['bindings']:
+            concept = item['concept']['value']
+            if concept != current_concept:
+                termLV = item['termLV']['value']
+                termEN = item['termEN']['value']
+                conceptID = item['conceptID']['value']
+                descLV = ''
+                if 'descLV' in item:
+                    descLV = mathBeautify(item['descLV']['value'])
+
+                current_concept = concept
+                current_problems = [item['problemID']['value']]
+                concept_list.append({
+                    'termLV': termLV,
+                    'termEN': termEN,
+                    'conceptID': conceptID,
+                    'descLV': descLV,
+                    'problems': current_problems
+                })
+
+            else:
+                current_problems.append(item['problemID']['value'])
+        concept_list.append({
+                    'termLV': termLV,
+                    'termEN': termEN,
+                    'conceptID': conceptID,
+                    'descLV': descLV,
+                    'problems': current_problems})
+
 
         template_context = {
-            'all_topics': topic_list,
-            'tree': myTree,
+            'all_concepts': concept_list,
             'active': 'topics',
             'title': 'Indekss'
         }

@@ -389,9 +389,9 @@ atlikumu $1$, dalot ar $3$?<br />
     eliozo:questionType "ProveDisprove" .
 
 eliozo:LV.AMO.2023.5.1 a eliozo:Problem ;
-    eliozo:concepts "difference",
-        "distance",
-        "triangle" ;
+    eliozo:concepts eliozo:TRM-difference,
+        eliozo:TRM-distance,
+        eliozo:TRM-triangle ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;

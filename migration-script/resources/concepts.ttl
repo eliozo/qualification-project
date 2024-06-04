@@ -1,0 +1,699 @@
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
+
+eliozo:TRM-absolute-value a eliozo:Concept ;
+    eliozo:conceptID "absolute-value"@en ;
+    eliozo:descLV "$|x|$ vienāds ar $x$, ja $x \\geq 0$ un $-x$, ja $x<0$."@lv ;
+    eliozo:termEN "absolute value"@en ;
+    eliozo:termLV "absolūtā vērtība"@lv .
+
+eliozo:TRM-add a eliozo:Concept ;
+    eliozo:conceptID "add"@en ;
+    eliozo:termEN "add"@en ;
+    eliozo:termLV "saskaitīt"@lv .
+
+eliozo:TRM-altitude a eliozo:Concept ;
+    eliozo:conceptID "altitude"@en ;
+    eliozo:descLV "Perpendikuls no trijstūra virsotnes pret pretējo malu. Augstums trijstūrī atšķiras no augstuma taisnstūrī (\"height\")."@lv ;
+    eliozo:termEN "altitude"@en ;
+    eliozo:termLV "augstums (trijstūrī)"@lv .
+
+eliozo:TRM-angle a eliozo:Concept ;
+    eliozo:conceptID "angle"@en ;
+    eliozo:termEN "angle"@en ;
+    eliozo:termLV "leņķis"@lv .
+
+eliozo:TRM-area a eliozo:Concept ;
+    eliozo:conceptID "area"@en ;
+    eliozo:termEN "area"@en ;
+    eliozo:termLV "laukums"@lv .
+
+eliozo:TRM-argument a eliozo:Concept ;
+    eliozo:conceptID "argument"@en ;
+    eliozo:termEN "argument"@en ;
+    eliozo:termLV "argumenti"@lv .
+
+eliozo:TRM-arithmetic-mean a eliozo:Concept ;
+    eliozo:conceptID "arithmetic-mean"@en ;
+    eliozo:termEN "arithmetic mean"@en ;
+    eliozo:termLV "aritmētiskais vidējais"@lv .
+
+eliozo:TRM-arithmetic-progression a eliozo:Concept ;
+    eliozo:conceptID "arithmetic-progression"@en ;
+    eliozo:termEN "arithmetic progression"@en ;
+    eliozo:termLV "aritmētiskā progresija"@lv .
+
+eliozo:TRM-at-least a eliozo:Concept ;
+    eliozo:conceptID "at-least"@en ;
+    eliozo:descLV "Šī vārda precīzā nozīme ir $\\geq$ (lielāks vai vienāds)"@lv ;
+    eliozo:termEN "at least"@en ;
+    eliozo:termLV "vismaz"@lv .
+
+eliozo:TRM-circle a eliozo:Concept ;
+    eliozo:conceptID "circle"@en ;
+    eliozo:termEN "circle"@en ;
+    eliozo:termLV "aplis"@lv .
+
+eliozo:TRM-circumference a eliozo:Concept ;
+    eliozo:conceptID "circumference"@en ;
+    eliozo:termEN "circumference"@en ;
+    eliozo:termLV "riņķa līnija"@lv .
+
+eliozo:TRM-circumscribed-circle a eliozo:Concept ;
+    eliozo:conceptID "circumscribed-circle"@en ;
+    eliozo:termEN "circumscribed circle"@en ;
+    eliozo:termLV "apvilktā riņķa līnija"@lv .
+
+eliozo:TRM-column a eliozo:Concept ;
+    eliozo:conceptID "column"@en ;
+    eliozo:termEN "column"@en ;
+    eliozo:termLV "kolonna (tabulā jeb matricā)"@lv .
+
+eliozo:TRM-combinations a eliozo:Concept ;
+    eliozo:conceptID "combinations"@en ;
+    eliozo:termEN "combinations"@en ;
+    eliozo:termLV "kombinācijas"@lv .
+
+eliozo:TRM-composite-number a eliozo:Concept ;
+    eliozo:conceptID "composite-number"@en ;
+    eliozo:termEN "composite number"@en ;
+    eliozo:termLV "NA"@lv .
+
+eliozo:TRM-composite-numbers a eliozo:Concept ;
+    eliozo:conceptID "composite-numbers"@en ;
+    eliozo:termEN "composite numbers"@en ;
+    eliozo:termLV "salikti skaitļi"@lv .
+
+eliozo:TRM-consecutive-numbers a eliozo:Concept ;
+    eliozo:conceptID "consecutive-numbers"@en ;
+    eliozo:descLV "Naturālo skaitļu virkne ar progresiju $1$"@lv ;
+    eliozo:termEN "consecutive numbers"@en ;
+    eliozo:termLV "pēc kārtas sekojoši skaitļi"@lv .
+
+eliozo:TRM-constant-e a eliozo:Concept ;
+    eliozo:conceptID "constant-e"@en ;
+    eliozo:termEN "constant e"@en ;
+    eliozo:termLV "skaitlis e"@lv .
+
+eliozo:TRM-coprimes a eliozo:Concept ;
+    eliozo:conceptID "coprimes"@en ;
+    eliozo:termEN "coprimes"@en ;
+    eliozo:termLV "savstarpēji pirmskaitļi"@lv .
+
+eliozo:TRM-cosine a eliozo:Concept ;
+    eliozo:conceptID "cosine"@en ;
+    eliozo:termEN "cosine"@en ;
+    eliozo:termLV "kosinuss"@lv .
+
+eliozo:TRM-cube-Alg a eliozo:Concept ;
+    eliozo:conceptID "cube-Alg"@en ;
+    eliozo:termEN "cube Alg"@en ;
+    eliozo:termLV "kubs (algebrā)"@lv .
+
+eliozo:TRM-decimal-fractions a eliozo:Concept ;
+    eliozo:conceptID "decimal-fractions"@en ;
+    eliozo:termEN "decimal fractions"@en ;
+    eliozo:termLV "decimāldaļskaitļi"@lv .
+
+eliozo:TRM-decimal-notation a eliozo:Concept ;
+    eliozo:conceptID "decimal-notation"@en ;
+    eliozo:termEN "decimal notation"@en ;
+    eliozo:termLV "decimālpieraksts"@lv .
+
+eliozo:TRM-difference a eliozo:Concept ;
+    eliozo:conceptID "difference"@en ;
+    eliozo:termEN "difference"@en ;
+    eliozo:termLV "starpība"@lv .
+
+eliozo:TRM-digit a eliozo:Concept ;
+    eliozo:conceptID "digit"@en ;
+    eliozo:termEN "digit"@en ;
+    eliozo:termLV "cipars"@lv .
+
+eliozo:TRM-digit-manipulation a eliozo:Concept ;
+    eliozo:conceptID "digit-manipulation"@en ;
+    eliozo:termEN "digit manipulation"@en ;
+    eliozo:termLV "ciparu manipulācija"@lv .
+
+eliozo:TRM-disjoint-sets a eliozo:Concept ;
+    eliozo:conceptID "disjoint-sets"@en ;
+    eliozo:descLV "Kopas, kuru šķēlums ir tukša kopa; kopu var sadalīt divās vai vairāk disjunktās kopās"@lv ;
+    eliozo:termEN "disjoint sets"@en ;
+    eliozo:termLV "disjunktas (nešķeļošas) kopas"@lv .
+
+eliozo:TRM-distance a eliozo:Concept ;
+    eliozo:conceptID "distance"@en ;
+    eliozo:descLV "Ģeometrijā attālumu nosaka starp punktiem vilktā nogriežņa garums; attālums starp skaitļiem $x$ un $y$ ir $|x-y|$"@lv ;
+    eliozo:termEN "distance"@en ;
+    eliozo:termLV "attālums"@lv .
+
+eliozo:TRM-divisibility a eliozo:Concept ;
+    eliozo:conceptID "divisibility"@en ;
+    eliozo:descLV "Dalāmības attiecība: $b \\mid a$ ir patiess tad un tikai tad, ja $b$ dala $a$"@lv ;
+    eliozo:termEN "divisibility"@en ;
+    eliozo:termLV "dalāmība"@lv .
+
+eliozo:TRM-divisors a eliozo:Concept ;
+    eliozo:conceptID "divisors"@en ;
+    eliozo:termEN "divisors"@en ;
+    eliozo:termLV "dalītāji"@lv .
+
+eliozo:TRM-edge a eliozo:Concept ;
+    eliozo:conceptID "edge"@en ;
+    eliozo:termEN "edge"@en ;
+    eliozo:termLV "šķautne (daudzskaldnī vai grafā)"@lv .
+
+eliozo:TRM-equal-triangles a eliozo:Concept ;
+    eliozo:conceptID "equal-triangles"@en ;
+    eliozo:termEN "equal triangles"@en ;
+    eliozo:termLV "vienādi trijstūri"@lv .
+
+eliozo:TRM-equality a eliozo:Concept ;
+    eliozo:conceptID "equality"@en ;
+    eliozo:termEN "equality"@en ;
+    eliozo:termLV "vienādība"@lv .
+
+eliozo:TRM-equation a eliozo:Concept ;
+    eliozo:conceptID "equation"@en ;
+    eliozo:termEN "equation"@en ;
+    eliozo:termLV "vienādojums"@lv .
+
+eliozo:TRM-equilateral-triangle a eliozo:Concept ;
+    eliozo:conceptID "equilateral-triangle"@en ;
+    eliozo:termEN "equilateral triangle"@en ;
+    eliozo:termLV "vienādmalu trijstūris"@lv .
+
+eliozo:TRM-even-number a eliozo:Concept ;
+    eliozo:conceptID "even-number"@en ;
+    eliozo:termEN "even number"@en ;
+    eliozo:termLV "pāra skaitlis"@lv .
+
+eliozo:TRM-expression a eliozo:Concept ;
+    eliozo:conceptID "expression"@en ;
+    eliozo:termEN "expression"@en ;
+    eliozo:termLV "izteiksme"@lv .
+
+eliozo:TRM-factorial a eliozo:Concept ;
+    eliozo:conceptID "factorial"@en ;
+    eliozo:termEN "factorial"@en ;
+    eliozo:termLV "faktoriāls"@lv .
+
+eliozo:TRM-falsehood a eliozo:Concept ;
+    eliozo:conceptID "falsehood"@en ;
+    eliozo:termEN "falsehood"@en ;
+    eliozo:termLV "aplams izteikums"@lv .
+
+eliozo:TRM-fibonacci-sequence a eliozo:Concept ;
+    eliozo:conceptID "fibonacci-sequence"@en ;
+    eliozo:descLV "Fibonači virkni definē šādi: $F(0) = 0$, $F(1) = 1$, bet $F(k+2) = F(k+1)+F(k)$"@lv ;
+    eliozo:termEN "fibonacci sequence"@en ;
+    eliozo:termLV "Fibonači virkne"@lv .
+
+eliozo:TRM-floor a eliozo:Concept ;
+    eliozo:conceptID "floor"@en ;
+    eliozo:termEN "floor"@en ;
+    eliozo:termLV "apakšējā veselā daļa"@lv .
+
+eliozo:TRM-fractions a eliozo:Concept ;
+    eliozo:conceptID "fractions"@en ;
+    eliozo:termEN "fractions"@en ;
+    eliozo:termLV "daļas"@lv .
+
+eliozo:TRM-full-power a eliozo:Concept ;
+    eliozo:conceptID "full-power"@en ;
+    eliozo:termEN "full power"@en ;
+    eliozo:termLV "pilna pakāpe"@lv .
+
+eliozo:TRM-full-powers a eliozo:Concept ;
+    eliozo:conceptID "full-powers"@en ;
+    eliozo:termEN "full powers"@en ;
+    eliozo:termLV "pilna pakāpe"@lv .
+
+eliozo:TRM-full-square a eliozo:Concept ;
+    eliozo:conceptID "full-square"@en ;
+    eliozo:termEN "full square"@en ;
+    eliozo:termLV "pilns kvadrāts"@lv .
+
+eliozo:TRM-function a eliozo:Concept ;
+    eliozo:conceptID "function"@en ;
+    eliozo:termEN "function"@en ;
+    eliozo:termLV "funkcija"@lv .
+
+eliozo:TRM-game a eliozo:Concept ;
+    eliozo:conceptID "game"@en ;
+    eliozo:termEN "game"@en ;
+    eliozo:termLV "spēle"@lv .
+
+eliozo:TRM-gcd a eliozo:Concept ;
+    eliozo:conceptID "gcd"@en ;
+    eliozo:termEN "gcd"@en ;
+    eliozo:termLV "lkd"@lv .
+
+eliozo:TRM-geometric-mean a eliozo:Concept ;
+    eliozo:conceptID "geometric-mean"@en ;
+    eliozo:termEN "geometric mean"@en ;
+    eliozo:termLV "ģeometriskais vidējais"@lv .
+
+eliozo:TRM-geometric-progression a eliozo:Concept ;
+    eliozo:conceptID "geometric-progression"@en ;
+    eliozo:termEN "geometric progression"@en ;
+    eliozo:termLV "ģeometriska progresija"@lv .
+
+eliozo:TRM-graph a eliozo:Concept ;
+    eliozo:conceptID "graph"@en ;
+    eliozo:termEN "graph"@en ;
+    eliozo:termLV "grafs"@lv .
+
+eliozo:TRM-grid a eliozo:Concept ;
+    eliozo:conceptID "grid"@en ;
+    eliozo:descLV "Kvadrātveida rūtiņu režģis jeb \"rūtiņu lapa\" ir plaknes aizpildījums ar vienādiem kvadrātiņiem, kas izkārtoti rindās un kolonnās."@lv ;
+    eliozo:termEN "grid"@en ;
+    eliozo:termLV "režģis (rūtiņu papīra lapā)"@lv .
+
+eliozo:TRM-groups a eliozo:Concept ;
+    eliozo:conceptID "groups"@en ;
+    eliozo:termEN "groups"@en ;
+    eliozo:termLV "grupa"@lv .
+
+eliozo:TRM-height a eliozo:Concept ;
+    eliozo:conceptID "height"@en ;
+    eliozo:descLV "Augstums taisnstūrī. Atšķiras no augstuma trijstūrī (\"altitude\")."@lv ;
+    eliozo:termEN "height"@en ;
+    eliozo:termLV "augstums"@lv .
+
+eliozo:TRM-hexagon a eliozo:Concept ;
+    eliozo:conceptID "hexagon"@en ;
+    eliozo:termEN "hexagon"@en ;
+    eliozo:termLV "sešstūris"@lv .
+
+eliozo:TRM-inequality a eliozo:Concept ;
+    eliozo:conceptID "inequality"@en ;
+    eliozo:termEN "inequality"@en ;
+    eliozo:termLV "nevienādība"@lv .
+
+eliozo:TRM-inscribed-circle a eliozo:Concept ;
+    eliozo:conceptID "inscribed-circle"@en ;
+    eliozo:termEN "inscribed circle"@en ;
+    eliozo:termLV "ievilkta riņķa līnija"@lv .
+
+eliozo:TRM-integer-numbers a eliozo:Concept ;
+    eliozo:conceptID "integer-numbers"@en ;
+    eliozo:termEN "integer numbers"@en ;
+    eliozo:termLV "vesels skaitlis"@lv .
+
+eliozo:TRM-integer-polynomial a eliozo:Concept ;
+    eliozo:conceptID "integer-polynomial"@en ;
+    eliozo:termEN "integer polynomial"@en ;
+    eliozo:termLV "polinoms ar veseliem koeficientiem"@lv .
+
+eliozo:TRM-inverse-number a eliozo:Concept ;
+    eliozo:conceptID "inverse-number"@en ;
+    eliozo:termEN "inverse number"@en ;
+    eliozo:termLV "inversie skaitļi"@lv .
+
+eliozo:TRM-irrational-number a eliozo:Concept ;
+    eliozo:conceptID "irrational-number"@en ;
+    eliozo:termEN "irrational number"@en ;
+    eliozo:termLV "NA"@lv .
+
+eliozo:TRM-irrational-numbers a eliozo:Concept ;
+    eliozo:conceptID "irrational-numbers"@en ;
+    eliozo:termEN "irrational numbers"@en ;
+    eliozo:termLV "iracionāli skaitļi"@lv .
+
+eliozo:TRM-isosceles-triangle a eliozo:Concept ;
+    eliozo:conceptID "isosceles-triangle"@en ;
+    eliozo:termEN "isosceles triangle"@en ;
+    eliozo:termLV "vienādsānu trijstūris"@lv .
+
+eliozo:TRM-last-digit a eliozo:Concept ;
+    eliozo:conceptID "last-digit"@en ;
+    eliozo:descLV "Naturāla skaitļa $n$ decimālpieraksta pēdējais cipars $d$ jeb $n \\equiv d \\pmod {10}$ (atlikums $n$ dalot ar $10$)."@lv ;
+    eliozo:termEN "last digit"@en ;
+    eliozo:termLV "pēdējais cipars"@lv .
+
+eliozo:TRM-lcm a eliozo:Concept ;
+    eliozo:conceptID "lcm"@en ;
+    eliozo:termEN "lcm"@en ;
+    eliozo:termLV "mkd"@lv .
+
+eliozo:TRM-leg-Geom a eliozo:Concept ;
+    eliozo:conceptID "leg-Geom"@en ;
+    eliozo:termEN "leg Geom"@en ;
+    eliozo:termLV "NA"@lv .
+
+eliozo:TRM-legs-in-right-triangle a eliozo:Concept ;
+    eliozo:conceptID "legs-in-right-triangle"@en ;
+    eliozo:termEN "legs in right triangle"@en ;
+    eliozo:termLV "katetes (taisnleņķa trijstūrī)"@lv .
+
+eliozo:TRM-line a eliozo:Concept ;
+    eliozo:conceptID "line"@en ;
+    eliozo:descLV "Taisne plaknē vai telpā"@lv ;
+    eliozo:termEN "line"@en ;
+    eliozo:termLV "taisne"@lv .
+
+eliozo:TRM-linear-expression a eliozo:Concept ;
+    eliozo:conceptID "linear-expression"@en ;
+    eliozo:termEN "linear expression"@en ;
+    eliozo:termLV "lineāra izteiksme"@lv .
+
+eliozo:TRM-long-sums a eliozo:Concept ;
+    eliozo:conceptID "long-sums"@en ;
+    eliozo:termEN "long sums"@en ;
+    eliozo:termLV "garas summas"@lv .
+
+eliozo:TRM-mapping a eliozo:Concept ;
+    eliozo:conceptID "mapping"@en ;
+    eliozo:descLV "Attiecība, kas ikvienam elementam no kopas $A$ piekārto ne vairāk kā vienu elementu no $B$."@lv ;
+    eliozo:termEN "mapping"@en ;
+    eliozo:termLV "attēlojums"@lv .
+
+eliozo:TRM-median a eliozo:Concept ;
+    eliozo:conceptID "median"@en ;
+    eliozo:termEN "median"@en ;
+    eliozo:termLV "mediāna"@lv .
+
+eliozo:TRM-mediant-of-fractions a eliozo:Concept ;
+    eliozo:conceptID "mediant-of-fractions"@en ;
+    eliozo:termEN "mediant of fractions"@en ;
+    eliozo:termLV "racionālu daļu mediāna"@lv .
+
+eliozo:TRM-monotonic-sequence a eliozo:Concept ;
+    eliozo:conceptID "monotonic-sequence"@en ;
+    eliozo:termEN "monotonic sequence"@en ;
+    eliozo:termLV "monotona virkne"@lv .
+
+eliozo:TRM-multiple a eliozo:Concept ;
+    eliozo:conceptID "multiple"@en ;
+    eliozo:termEN "multiple"@en ;
+    eliozo:termLV "daudzkārtnis"@lv .
+
+eliozo:TRM-mutual-primes a eliozo:Concept ;
+    eliozo:conceptID "mutual-primes"@en ;
+    eliozo:termEN "mutual primes"@en ;
+    eliozo:termLV "savstarpēji pirmskaitļi"@lv .
+
+eliozo:TRM-natural-number a eliozo:Concept ;
+    eliozo:conceptID "natural-number"@en ;
+    eliozo:termEN "natural number"@en ;
+    eliozo:termLV "NA"@lv .
+
+eliozo:TRM-natural-numbers a eliozo:Concept ;
+    eliozo:conceptID "natural-numbers"@en ;
+    eliozo:descLV "Veselie pozitīvie skaitļi. $\\mathbb{N} = \\{ 1,2,3,\\ldots \\}$."@lv ;
+    eliozo:termEN "natural numbers"@en ;
+    eliozo:termLV "naturāli skaitļi"@lv .
+
+eliozo:TRM-pair a eliozo:Concept ;
+    eliozo:conceptID "pair"@en ;
+    eliozo:descLV "Divu objektu sakārtots pāris. Piemēram, $(x,y) = (3,4)$."@lv ;
+    eliozo:termEN "pair"@en ;
+    eliozo:termLV "pāris"@lv .
+
+eliozo:TRM-palindrome a eliozo:Concept ;
+    eliozo:conceptID "palindrome"@en ;
+    eliozo:termEN "palindrome"@en ;
+    eliozo:termLV "palindroms"@lv .
+
+eliozo:TRM-parity a eliozo:Concept ;
+    eliozo:conceptID "parity"@en ;
+    eliozo:termEN "parity"@en ;
+    eliozo:termLV "paritāte"@lv .
+
+eliozo:TRM-partition a eliozo:Concept ;
+    eliozo:conceptID "partition"@en ;
+    eliozo:termEN "partition"@en ;
+    eliozo:termLV "kopas sadalījums"@lv .
+
+eliozo:TRM-path a eliozo:Concept ;
+    eliozo:conceptID "path"@en ;
+    eliozo:termEN "path"@en ;
+    eliozo:termLV "ceļš (grafā)"@lv .
+
+eliozo:TRM-pentagon a eliozo:Concept ;
+    eliozo:conceptID "pentagon"@en ;
+    eliozo:descLV "Vienkāršs daudzstūris ar $5$ malām un $5$ virsotnēm."@lv ;
+    eliozo:termEN "pentagon"@en ;
+    eliozo:termLV "piecstūris"@lv .
+
+eliozo:TRM-perimeter a eliozo:Concept ;
+    eliozo:conceptID "perimeter"@en ;
+    eliozo:descLV "Plaknes figūras robežas garums. Daudzstūrim tas ir malu summa. Apļa perimetrs ir $P = 2 \\pi R$."@lv ;
+    eliozo:termEN "perimeter"@en ;
+    eliozo:termLV "perimetrs"@lv .
+
+eliozo:TRM-plane a eliozo:Concept ;
+    eliozo:conceptID "plane"@en ;
+    eliozo:descLV "Plakne ģeometrijā ir pamatjēdziens. Intuitīvi tā ir divdimensionāla plakana virsma, kas turpinās bezgalīgi visos virzienos. Planimetrijas uzdevumos visi objekti atrodas vienā plaknē; stereometrijas uzdevumos var būt vairākas plaknes."@lv ;
+    eliozo:termEN "plane"@en ;
+    eliozo:termLV "plakne"@lv .
+
+eliozo:TRM-point a eliozo:Concept ;
+    eliozo:conceptID "point"@en ;
+    eliozo:termEN "point"@en ;
+    eliozo:termLV "punkts"@lv .
+
+eliozo:TRM-power a eliozo:Concept ;
+    eliozo:conceptID "power"@en ;
+    eliozo:termEN "power"@en ;
+    eliozo:termLV "pakāpe"@lv .
+
+eliozo:TRM-power-sums a eliozo:Concept ;
+    eliozo:conceptID "power-sums"@en ;
+    eliozo:termEN "power sums"@en ;
+    eliozo:termLV "pakāpju summas"@lv .
+
+eliozo:TRM-prime a eliozo:Concept ;
+    eliozo:conceptID "prime"@en ;
+    eliozo:termEN "prime"@en ;
+    eliozo:termLV "NA"@lv .
+
+eliozo:TRM-primes a eliozo:Concept ;
+    eliozo:conceptID "primes"@en ;
+    eliozo:termEN "primes"@en ;
+    eliozo:termLV "pirmskaitļi"@lv .
+
+eliozo:TRM-product a eliozo:Concept ;
+    eliozo:conceptID "product"@en ;
+    eliozo:termEN "product"@en ;
+    eliozo:termLV "reizinājums"@lv .
+
+eliozo:TRM-proportion a eliozo:Concept ;
+    eliozo:conceptID "proportion"@en ;
+    eliozo:termEN "proportion"@en ;
+    eliozo:termLV "proporcija"@lv .
+
+eliozo:TRM-quadratic-equation a eliozo:Concept ;
+    eliozo:conceptID "quadratic-equation"@en ;
+    eliozo:termEN "quadratic equation"@en ;
+    eliozo:termLV "kvadrātvienādojums"@lv .
+
+eliozo:TRM-rational-numbers a eliozo:Concept ;
+    eliozo:conceptID "rational-numbers"@en ;
+    eliozo:termEN "rational numbers"@en ;
+    eliozo:termLV "racionāli skaitļi"@lv .
+
+eliozo:TRM-real-number a eliozo:Concept ;
+    eliozo:conceptID "real-number"@en ;
+    eliozo:termEN "real number"@en ;
+    eliozo:termLV "NA"@lv .
+
+eliozo:TRM-real-numbers a eliozo:Concept ;
+    eliozo:conceptID "real-numbers"@en ;
+    eliozo:termEN "real numbers"@en ;
+    eliozo:termLV "reāli skaitļi"@lv .
+
+eliozo:TRM-rectangle a eliozo:Concept ;
+    eliozo:conceptID "rectangle"@en ;
+    eliozo:termEN "rectangle"@en ;
+    eliozo:termLV "taisnstūris"@lv .
+
+eliozo:TRM-recurrent-sequence a eliozo:Concept ;
+    eliozo:conceptID "recurrent-sequence"@en ;
+    eliozo:termEN "recurrent sequence"@en ;
+    eliozo:termLV "rekurentas virknes"@lv .
+
+eliozo:TRM-remainder a eliozo:Concept ;
+    eliozo:conceptID "remainder"@en ;
+    eliozo:termEN "remainder"@en ;
+    eliozo:termLV "atlikums"@lv .
+
+eliozo:TRM-remove a eliozo:Concept ;
+    eliozo:conceptID "remove"@en ;
+    eliozo:termEN "remove"@en ;
+    eliozo:termLV "NA"@lv .
+
+eliozo:TRM-right-triangle a eliozo:Concept ;
+    eliozo:conceptID "right-triangle"@en ;
+    eliozo:termEN "right triangle"@en ;
+    eliozo:termLV "taisnleņķa trijstūris"@lv .
+
+eliozo:TRM-root a eliozo:Concept ;
+    eliozo:conceptID "root"@en ;
+    eliozo:termEN "root"@en ;
+    eliozo:termLV "sakne"@lv .
+
+eliozo:TRM-rotation a eliozo:Concept ;
+    eliozo:conceptID "rotation"@en ;
+    eliozo:termEN "rotation"@en ;
+    eliozo:termLV "rotācija"@lv .
+
+eliozo:TRM-row a eliozo:Concept ;
+    eliozo:conceptID "row"@en ;
+    eliozo:termEN "row"@en ;
+    eliozo:termLV "rinda (tabulā jeb matricā)"@lv .
+
+eliozo:TRM-segment a eliozo:Concept ;
+    eliozo:conceptID "segment"@en ;
+    eliozo:termEN "segment"@en ;
+    eliozo:termLV "nogrieznis"@lv .
+
+eliozo:TRM-segments a eliozo:Concept ;
+    eliozo:conceptID "segments"@en ;
+    eliozo:termEN "segments"@en ;
+    eliozo:termLV "NA"@lv .
+
+eliozo:TRM-sequence a eliozo:Concept ;
+    eliozo:conceptID "sequence"@en ;
+    eliozo:termEN "sequence"@en ;
+    eliozo:termLV "virkne"@lv .
+
+eliozo:TRM-series a eliozo:Concept ;
+    eliozo:conceptID "series"@en ;
+    eliozo:termEN "series"@en ;
+    eliozo:termLV "rinda"@lv .
+
+eliozo:TRM-set a eliozo:Concept ;
+    eliozo:conceptID "set"@en ;
+    eliozo:descLV "Kopa ir pamatjēdziens. Intuitīvi tā ir nesakārtota kaut kādu objektu kolekcija bez atkārtojumiem."@lv ;
+    eliozo:termEN "set"@en ;
+    eliozo:termLV "kopa"@lv .
+
+eliozo:TRM-shape a eliozo:Concept ;
+    eliozo:conceptID "shape"@en ;
+    eliozo:termEN "shape"@en ;
+    eliozo:termLV "figūra"@lv .
+
+eliozo:TRM-sine a eliozo:Concept ;
+    eliozo:conceptID "sine"@en ;
+    eliozo:termEN "sine"@en ;
+    eliozo:termLV "sinuss"@lv .
+
+eliozo:TRM-square a eliozo:Concept ;
+    eliozo:conceptID "square"@en ;
+    eliozo:descLV "Regulārs četrstūris. Arī izteiksme $n^2$."@lv ;
+    eliozo:termEN "square"@en ;
+    eliozo:termLV "kvadrāts"@lv .
+
+eliozo:TRM-square-Alg a eliozo:Concept ;
+    eliozo:conceptID "square-Alg"@en ;
+    eliozo:descLV "Skaitļa kāpināšana otrajā pakāpē."@lv ;
+    eliozo:termEN "square Alg"@en ;
+    eliozo:termLV "kvadrāts (alg.)"@lv .
+
+eliozo:TRM-square-Geo a eliozo:Concept ;
+    eliozo:conceptID "square-Geo"@en ;
+    eliozo:descLV "Regulārs četrstūris."@lv ;
+    eliozo:termEN "square Geo"@en ;
+    eliozo:termLV "kvadrāts (geo.)"@lv .
+
+eliozo:TRM-square-root a eliozo:Concept ;
+    eliozo:conceptID "square-root"@en ;
+    eliozo:descLV "Funkcija $y = \\sqrt{x}$ ir inversā funkcija kvadrātfunkcijai $y=x^2$ visām vērtībām $\\mathbb_{0+} = [0; +\\infty)$."@lv ;
+    eliozo:termEN "square root"@en ;
+    eliozo:termLV "kvadrātsakne"@lv .
+
+eliozo:TRM-square-side a eliozo:Concept ;
+    eliozo:conceptID "square-side"@en ;
+    eliozo:termEN "square side"@en ;
+    eliozo:termLV "kvadrāta mala"@lv .
+
+eliozo:TRM-subset a eliozo:Concept ;
+    eliozo:conceptID "subset"@en ;
+    eliozo:termEN "subset"@en ;
+    eliozo:termLV "apakškopa"@lv .
+
+eliozo:TRM-subtract a eliozo:Concept ;
+    eliozo:conceptID "subtract"@en ;
+    eliozo:termEN "subtract"@en ;
+    eliozo:termLV "atņemt"@lv .
+
+eliozo:TRM-sum a eliozo:Concept ;
+    eliozo:conceptID "sum"@en ;
+    eliozo:termEN "sum"@en ;
+    eliozo:termLV "summa"@lv .
+
+eliozo:TRM-sum-of-digits a eliozo:Concept ;
+    eliozo:conceptID "sum-of-digits"@en ;
+    eliozo:termEN "sum of digits"@en ;
+    eliozo:termLV "ciparu summa"@lv .
+
+eliozo:TRM-system-of-equations a eliozo:Concept ;
+    eliozo:conceptID "system-of-equations"@en ;
+    eliozo:termEN "system of equations"@en ;
+    eliozo:termLV "vienādojumu sistēma"@lv .
+
+eliozo:TRM-table a eliozo:Concept ;
+    eliozo:conceptID "table"@en ;
+    eliozo:descLV "Tabula ir taisnstūrveida elementu (skaitļu) izkārtojums ar rindiņām un kolonnām; sinonīms formālākam vārdam \"matrica\"."@lv ;
+    eliozo:termEN "table"@en ;
+    eliozo:termLV "tabula"@lv .
+
+eliozo:TRM-tangent a eliozo:Concept ;
+    eliozo:conceptID "tangent"@en ;
+    eliozo:termEN "tangent"@en ;
+    eliozo:termLV "pieskare"@lv .
+
+eliozo:TRM-to-win a eliozo:Concept ;
+    eliozo:conceptID "to-win"@en ;
+    eliozo:termEN "to win"@en ;
+    eliozo:termLV "uzvarēt"@lv .
+
+eliozo:TRM-trapezoid a eliozo:Concept ;
+    eliozo:conceptID "trapezoid"@en ;
+    eliozo:termEN "trapezoid"@en ;
+    eliozo:termLV "trapece"@lv .
+
+eliozo:TRM-triangle a eliozo:Concept ;
+    eliozo:conceptID "triangle"@en ;
+    eliozo:termEN "triangle"@en ;
+    eliozo:termLV "trijstūris"@lv .
+
+eliozo:TRM-true-statement a eliozo:Concept ;
+    eliozo:conceptID "true-statement"@en ;
+    eliozo:termEN "true statement"@en ;
+    eliozo:termLV "patiess apgalvojums"@lv .
+
+eliozo:TRM-truth a eliozo:Concept ;
+    eliozo:conceptID "truth"@en ;
+    eliozo:termEN "truth"@en ;
+    eliozo:termLV "patiesība"@lv .
+
+eliozo:TRM-valuation a eliozo:Concept ;
+    eliozo:conceptID "valuation"@en ;
+    eliozo:descLV "$\\nu_p(n)$ ir lielākais veselais $k \\geq 0$, kuram $p^k$ ir skaitļa $n$ dalītājs. Piemēram $\\nu_2(24)=3$, jo $24$ dalās ar $2^3 = 8$, bet nedalās ar $2^4 = 16$"@lv ;
+    eliozo:termEN "valuation"@en ;
+    eliozo:termLV "valuācija"@lv .
+
+eliozo:TRM-value a eliozo:Concept ;
+    eliozo:conceptID "value"@en ;
+    eliozo:termEN "value"@en ;
+    eliozo:termLV "vērtība"@lv .
+
+eliozo:TRM-variable a eliozo:Concept ;
+    eliozo:conceptID "variable"@en ;
+    eliozo:termEN "variable"@en ;
+    eliozo:termLV "mainīgais"@lv .
+
+eliozo:TRM-vertex a eliozo:Concept ;
+    eliozo:conceptID "vertex"@en ;
+    eliozo:descLV "Grafā virsotnes ir mezgli, starp kuriem novilktas šķautnes. Daudzstūrī tie ir punkti, starp kuriem novilktas malas."@lv ;
+    eliozo:termEN "vertex"@en ;
+    eliozo:termLV "virsotne (daudzstūrī vai grafā)"@lv .
+
+eliozo:TRM-winning-strategy a eliozo:Concept ;
+    eliozo:conceptID "winning-strategy"@en ;
+    eliozo:descLV "Uzvaroša stratēģija ir algoritms, kas (noteiktām spēles sākuma pozīcijām) ļauj pareizi izdarīt gājienus un atbildēt uz jebkādiem pretinieka gājieniem tā, lai nodrošinātu sev uzvaru. Divu spēlētāju spēlēs ar pilnu informāciju vienmēr ir uzvaroša stratēģija - vai nu pirmajam, vai otrajam spēlētājam. "@lv ;
+    eliozo:termEN "winning strategy"@en ;
+    eliozo:termLV "uzvaroša stratēģija"@lv .
+

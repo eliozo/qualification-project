@@ -7,8 +7,6 @@
                {{jsonfile}}
            </div>
 
-           <p>TBD: Atslēgvārdu indekss...</p>
-
            <table class="tasks">
         <colgroup>
             <col class="aaa">
@@ -16,16 +14,14 @@
             <col class="ccc">
         </colgroup>
         <tbody>
-            <tr>
-                <th>Tēmas nosaukums</th>
-                <th>Apraksts</th>
-                <th>Piemēri</th>
-            </tr>
-            {% for skill in all_topics %}
+            {% for concept in all_concepts %}
             <tr class="{{ loop.cycle('odd', 'even') }}">
-                <td>{{skill}}</a></td>
-                <td>TBD</td>
-                <td>TBD</td>
+                <td>{{ concept.termEN }}</a></td>
+                <td>{{ concept.termLV }}</td>
+                <td>{% if concept.descLV != '' %}  <small>{{ concept.descLV | safe }}</small><br /> {% endif %}
+                {% for problem in concept.problems %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                        problem }}</a>, {% endfor %}
+                </td>
             </tr>
             {% endfor %}
         </tbody>
