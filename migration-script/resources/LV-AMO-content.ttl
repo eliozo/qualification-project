@@ -155,9 +155,9 @@ eliozo:LV.AMO.2000.7.2 a eliozo:Problem ;
         eliozo:LittleFermatAndEuler .
 
 eliozo:LV.AMO.2000.7.4 a eliozo:Problem ;
-    eliozo:concept "partition",
-        "primes",
-        "sum" ;
+    eliozo:concepts eliozo:TRM-partition,
+        eliozo:TRM-primes,
+        eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:genre "construction" ;
     eliozo:olympiad "LV.AMO" ;

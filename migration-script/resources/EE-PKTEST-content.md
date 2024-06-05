@@ -144,6 +144,7 @@ Aprēķināt leņķu lielumu summu, kas zīmējumā apzīmēti ar $x$ un $y$.
 * Answer:150
 * Grade:7,8
 * questionType:ShortAnswer
+* concepts:pentagon
 
 </small>
 

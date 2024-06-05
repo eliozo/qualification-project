@@ -1,0 +1,779 @@
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+eliozo:IMO.SHL.2022.A1 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers,
+        eliozo:TRM-real-numbers,
+        eliozo:TRM-sequence ;
+    eliozo:domain "Alg" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.A1" ;
+    eliozo:problemText """Let $(a_n)_{n\\geq 1}$ be a sequence of positive real numbers with the property that
+
+$$(a_{n+1})^2 + a_na_{n+2} \\leq a_n + a_{n+2}$$
+
+for all positive integers $n$. Show that $a_{2022}\\leq 1$."""@lv ;
+    eliozo:problemTextHtml """<p>Let $(a_n)_{n\\geq 1}$ be a sequence of positive real numbers with the property that</p>
+<p>$$(a_{n+1})^2 + a_na_{n+2} \\leq a_n + a_{n+2}$$</p>
+<p>for all positive integers $n$. Show that $a_{2022}\\leq 1$.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "Nigeria" .
+
+eliozo:IMO.SHL.2022.A2 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers ;
+    eliozo:domain "Alg" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.A2" ;
+    eliozo:problemText """Let $k \\ge 2$ be an integer. Find the smallest integer $n \\ge k+1$ with the property that there 
+exists a set of $n$ distinct real numbers such that each of its elements can be written as a 
+sum of $k$ other distinct elements of the set."""@lv ;
+    eliozo:problemTextHtml """<p>Let $k \\ge 2$ be an integer. Find the smallest integer $n \\ge k+1$ with the property that there 
+exists a set of $n$ distinct real numbers such that each of its elements can be written as a 
+sum of $k$ other distinct elements of the set.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindOptimal" ;
+    eliozo:source "Slovakia" .
+
+eliozo:IMO.SHL.2022.A3 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-function,
+        eliozo:TRM-real-numbers ;
+    eliozo:domain "Alg" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.A3" ;
+    eliozo:problemText """Let $\\mathbb{R}^+$ denote the set of positive real numbers. Find all functions 
+$f: \\mathbb{R}^+ \\to \\mathbb{R}^+$ such that for each $x \\in \\mathbb{R}^+$, there is exactly one 
+$y \\in \\mathbb{R}^+$ satisfying $$xf(y)+yf(x) \\leq 2$$"""@lv ;
+    eliozo:problemTextHtml """<p>Let $\\mathbb{R}^+$ denote the set of positive real numbers. Find all functions 
+$f: \\mathbb{R}^+ \\to \\mathbb{R}^+$ such that for each $x \\in \\mathbb{R}^+$, there is exactly one 
+$y \\in \\mathbb{R}^+$ satisfying $$xf(y)+yf(x) \\leq 2$$</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:source "Netherlands" .
+
+eliozo:IMO.SHL.2022.A4 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers,
+        eliozo:TRM-real-numbers ;
+    eliozo:domain "Alg" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.A4" ;
+    eliozo:problemText """Let $n \\geqslant 3$ be an integer, and let $x_1,x_2,\\ldots,x_n$ be real numbers in the interval 
+$[0,1]$. Let $s=x_1+x_2+\\ldots+x_n$, and assume that $s \\geqslant 3$. 
+Prove that there exist integers $i$ and $j$ with $1 \\leqslant i<j \\leqslant n$ such that
+
+$$2^{j-i}x_ix_j>2^{s-3}.$$"""@lv ;
+    eliozo:problemTextHtml """<p>Let $n \\geqslant 3$ be an integer, and let $x_1,x_2,\\ldots,x_n$ be real numbers in the interval 
+$[0,1]$. Let $s=x_1+x_2+\\ldots+x_n$, and assume that $s \\geqslant 3$. 
+Prove that there exist integers $i$ and $j$ with $1 \\leqslant i&lt;j \\leqslant n$ such that</p>
+<p>$$2^{j-i}x_ix_j&gt;2^{s-3}.$$</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "Trinidad and Tobago" .
+
+eliozo:IMO.SHL.2022.A5 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers,
+        eliozo:TRM-real-numbers ;
+    eliozo:domain "Alg" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.A5" ;
+    eliozo:problemText """Find all positive integers $n \\geqslant 2$ for which there exist $n$ real numbers 
+$a_1<\\cdots<a_n$ and a real number $r>0$ such that the $\\tfrac{1}{2}n(n-1)$ differences 
+$a_j-a_i$ for $1 \\leqslant i<j \\leqslant n$ are equal, in some order, to the numbers 
+$r^1,r^2,\\ldots,r^{\\frac{1}{2}n(n-1)}$."""@lv ;
+    eliozo:problemTextHtml """<p>Find all positive integers $n \\geqslant 2$ for which there exist $n$ real numbers 
+$a_1&lt;\\cdots<a_n$ and a real number $r>0$ such that the $\\tfrac{1}{2}n(n-1)$ differences 
+$a_j-a_i$ for $1 \\leqslant i&lt;j \\leqslant n$ are equal, in some order, to the numbers 
+$r^1,r^2,\\ldots,r^{\\frac{1}{2}n(n-1)}$.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:source "Czech Republic" .
+
+eliozo:IMO.SHL.2022.A6 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-function,
+        eliozo:TRM-rational-numbers,
+        eliozo:TRM-real-numbers ;
+    eliozo:domain "Alg" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.A6" ;
+    eliozo:problemText """Let $\\mathbb R$ be the set of real numbers. We denote by 
+$\\mathcal F$ the set of all functions $f\\colon\\mathbb R\\to\\mathbb R$ such that
+
+$$f(x + f(y)) = f(x) + f(y)$$
+
+for every $x,y\\in\\mathbb R$ Find all rational numbers $q$ such that 
+for every function $f\\in\\mathcal F$, there exists some $z\\in\\mathbb R$ satisfying $f(z)=qz$."""@lv ;
+    eliozo:problemTextHtml """<p>Let $\\mathbb R$ be the set of real numbers. We denote by 
+$\\mathcal F$ the set of all functions $f\\colon\\mathbb R\\to\\mathbb R$ such that</p>
+<p>$$f(x + f(y)) = f(x) + f(y)$$</p>
+<p>for every $x,y\\in\\mathbb R$ Find all rational numbers $q$ such that 
+for every function $f\\in\\mathcal F$, there exists some $z\\in\\mathbb R$ satisfying $f(z)=qz$.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:source "Indonesia" .
+
+eliozo:IMO.SHL.2022.A7 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers ;
+    eliozo:domain "Alg" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.A7" ;
+    eliozo:problemText """For a positive integer $n$ we denote by $s(n)$ the sum of the digits of $n$. 
+Let $P(x)=x^n+a_{n-1}x^{n-1}+\\cdots+a_1x+a_0$ be a polynomial, where $n \\geqslant 2$ 
+and $a_i$ is a positive integer for all $0 \\leqslant i \\leqslant n-1$. 
+Could it be the case that, for all positive integers $k$, $s(k)$ 
+and $s(P(k))$ have the same parity?"""@lv ;
+    eliozo:problemTextHtml """<p>For a positive integer $n$ we denote by $s(n)$ the sum of the digits of $n$. 
+Let $P(x)=x^n+a_{n-1}x^{n-1}+\\cdots+a_1x+a_0$ be a polynomial, where $n \\geqslant 2$ 
+and $a_i$ is a positive integer for all $0 \\leqslant i \\leqslant n-1$. 
+Could it be the case that, for all positive integers $k$, $s(k)$ 
+and $s(P(k))$ have the same parity?</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:source "Belarus" .
+
+eliozo:IMO.SHL.2022.A8 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers,
+        eliozo:TRM-real-numbers,
+        eliozo:TRM-sequence ;
+    eliozo:domain "Alg" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.A8" ;
+    eliozo:problemText """For a positive integer $n$, an $n$-sequence is a sequence $(a_0,\\ldots,a_n)$ 
+of non-negative integers satisfying the following condition: if $i$ and $j$ 
+are non-negative integers with $i+j \\leqslant n$, then $a_i+a_j \\leqslant n$ and $a_{a_i+a_j}=a_{i+j}$.
+
+Let $f(n)$ be the number of $n$-sequences. Prove that there exist positive real numbers 
+$c_1$, $c_2$, and $\\lambda$ such that \\[c_1\\lambda^n<f(n)<c_2\\lambda^n\\]for all positive integers $n$."""@lv ;
+    eliozo:problemTextHtml """<p>For a positive integer $n$, an $n$-sequence is a sequence $(a_0,\\ldots,a_n)$ 
+of non-negative integers satisfying the following condition: if $i$ and $j$ 
+are non-negative integers with $i+j \\leqslant n$, then $a_i+a_j \\leqslant n$ and $a_{a_i+a_j}=a_{i+j}$.</p>
+<p>Let $f(n)$ be the number of $n$-sequences. Prove that there exist positive real numbers 
+$c_1$, $c_2$, and $\\lambda$ such that [c_1\\lambda^n&lt;f(n)&lt;c_2\\lambda^n]for all positive integers $n$.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "Canada" .
+
+eliozo:IMO.SHL.2022.C1 a eliozo:Problem ;
+    eliozo:domain "Comb" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.C1" ;
+    eliozo:problemText """A $\\pm 1$-sequence is a sequence of $2022$ numbers $a_1, \\ldots, a_{2022},$ 
+each equal to either $+1$ or $-1$. Determine the largest $C$ so that, 
+for any $\\pm 1$-sequence, there exists an integer $k$ and indices 
+$1 \\le t_1 < \\ldots < t_k \\le 2022$ so that $t_{i+1} - t_i \\le 2$ for all $i$, 
+and $$\\left| \\sum_{i = 1}^{k} a_{t_i} \\right| \\ge C.$$"""@lv ;
+    eliozo:problemTextHtml """<p>A $\\pm 1$-sequence is a sequence of $2022$ numbers $a_1, \\ldots, a_{2022},$ 
+each equal to either $+1$ or $-1$. Determine the largest $C$ so that, 
+for any $\\pm 1$-sequence, there exists an integer $k$ and indices 
+$1 \\le t_1 &lt; \\ldots &lt; t_k \\le 2022$ so that $t_{i+1} - t_i \\le 2$ for all $i$, 
+and $$\\left| \\sum_{i = 1}^{k} a_{t_i} \\right| \\ge C.$$</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindOptimal" ;
+    eliozo:source "Czech Republic" .
+
+eliozo:IMO.SHL.2022.C2 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers ;
+    eliozo:domain "Comb" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.C2" ;
+    eliozo:problemText """The Bank of Oslo issues two types of coin: aluminum (denoted A) and bronze (denoted B). 
+Marianne has $n$ aluminum coins and $n$ bronze coins arranged in a row 
+in some arbitrary initial order. A chain is any subsequence of consecutive 
+coins of the same type. Given a fixed positive integer $k \\leq 2n$, 
+Gilberty repeatedly performs the following operation: 
+he identifies the longest chain containing 
+the $k^{th}$ coin from the left and moves all coins in that chain to the left end of the row. 
+For example, if $n=4$ and $k=4$, the process starting from the ordering 
+$AABBBABA$ would be $AABBBABA \\to BBBAAABA \\to AAABBBBA \\to BBBBAAAA \\to \\ldots$.
+
+Find all pairs $(n,k)$ with $1 \\leq k \\leq 2n$ such that for every initial ordering, 
+at some moment during the process, the leftmost $n$ coins will all be of the same type."""@lv ;
+    eliozo:problemTextHtml """<p>The Bank of Oslo issues two types of coin: aluminum (denoted A) and bronze (denoted B). 
+Marianne has $n$ aluminum coins and $n$ bronze coins arranged in a row 
+in some arbitrary initial order. A chain is any subsequence of consecutive 
+coins of the same type. Given a fixed positive integer $k \\leq 2n$, 
+Gilberty repeatedly performs the following operation: 
+he identifies the longest chain containing 
+the $k^{th}$ coin from the left and moves all coins in that chain to the left end of the row. 
+For example, if $n=4$ and $k=4$, the process starting from the ordering 
+$AABBBABA$ would be $AABBBABA \\to BBBAAABA \\to AAABBBBA \\to BBBBAAAA \\to \\ldots$.</p>
+<p>Find all pairs $(n,k)$ with $1 \\leq k \\leq 2n$ such that for every initial ordering, 
+at some moment during the process, the leftmost $n$ coins will all be of the same type.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:source "France" .
+
+eliozo:IMO.SHL.2022.C3 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-game,
+        eliozo:TRM-square-Alg ;
+    eliozo:domain "Comb" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.C3" ;
+    eliozo:problemText """In each square of a garden shaped like a $2022 \\times 2022$ board, 
+there is initially a tree of height $0$. A gardener and a 
+lumberjack alternate turns playing the following game, 
+with the gardener taking the first turn:
+
+* The gardener chooses a square in the garden. Each tree on that square and all the 
+  surrounding squares (of which there are at most eight) then becomes one unit taller.
+* The lumberjack then chooses four different squares on the board. Each tree of 
+  positive height on those squares then becomes one unit shorter.
+
+We say that a tree is majestic if its height is at least $10^6$. Determine the largest $K$ such 
+that the gardener can ensure there are eventually $K$ majestic trees on the board, 
+no matter how the lumberjack plays."""@lv ;
+    eliozo:problemTextHtml """<p>In each square of a garden shaped like a $2022 \\times 2022$ board, 
+there is initially a tree of height $0$. A gardener and a 
+lumberjack alternate turns playing the following game, 
+with the gardener taking the first turn:</p>
+<ul>
+<li>The gardener chooses a square in the garden. Each tree on that square and all the 
+  surrounding squares (of which there are at most eight) then becomes one unit taller.</li>
+<li>The lumberjack then chooses four different squares on the board. Each tree of 
+  positive height on those squares then becomes one unit shorter.</li>
+</ul>
+<p>We say that a tree is majestic if its height is at least $10^6$. Determine the largest $K$ such 
+that the gardener can ensure there are eventually $K$ majestic trees on the board, 
+no matter how the lumberjack plays.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindOptimal" ;
+    eliozo:source "Colombia" .
+
+eliozo:IMO.SHL.2022.C4 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers ;
+    eliozo:domain "Comb" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.C4" ;
+    eliozo:problemText """Let $n > 3$ be a positive integer. Suppose that $n$ children are arranged 
+in a circle, and $n$ coins are distributed between them (some children 
+may have no coins). At every step, a child with at 
+least $2$ coins may give $1$ coin to each of their immediate neighbors 
+on the right and left. Determine all initial distributions of the coins 
+from which it is possible that, after a finite number of steps, 
+each child has exactly one coin."""@lv ;
+    eliozo:problemTextHtml """<p>Let $n &gt; 3$ be a positive integer. Suppose that $n$ children are arranged 
+in a circle, and $n$ coins are distributed between them (some children 
+may have no coins). At every step, a child with at 
+least $2$ coins may give $1$ coin to each of their immediate neighbors 
+on the right and left. Determine all initial distributions of the coins 
+from which it is possible that, after a finite number of steps, 
+each child has exactly one coin.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:source "Israel" .
+
+eliozo:IMO.SHL.2022.C5 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-function,
+        eliozo:TRM-integer-numbers,
+        eliozo:TRM-subset ;
+    eliozo:domain "Comb" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.C5" ;
+    eliozo:problemText """Let $m,n \\geqslant 2$ be integers, let $X$ be a set with $n$ elements, and let 
+$X_1,X_2,\\ldots,X_m$ be pairwise distinct non-empty, not necessary disjoint subset of $X$. 
+A function $f \\colon X \\to \\{1,2,\\ldots,n+1\\}$ is called nice if there exists an index $k$ such that 
+
+$$\\sum_{x \\in X_k} f(x)>\\sum_{x \\in X_i} f(x) \\quad \\text{for all } i \\ne k.$$
+
+Prove that the number of nice functions is at least $n^n$."""@lv ;
+    eliozo:problemTextHtml """<p>Let $m,n \\geqslant 2$ be integers, let $X$ be a set with $n$ elements, and let 
+$X_1,X_2,\\ldots,X_m$ be pairwise distinct non-empty, not necessary disjoint subset of $X$. 
+A function $f \\colon X \\to {1,2,\\ldots,n+1}$ is called nice if there exists an index $k$ such that </p>
+<p>$$\\sum_{x \\in X_k} f(x)&gt;\\sum_{x \\in X_i} f(x) \\quad \\text{for all } i \\ne k.$$</p>
+<p>Prove that the number of nice functions is at least $n^n$.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "Germany" .
+
+eliozo:IMO.SHL.2022.C6 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers,
+        eliozo:TRM-sequence ;
+    eliozo:domain "Comb" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.C6" ;
+    eliozo:problemText """Let $n$ be a positive integer. We start with $n$ piles of pebbles, each initially 
+containing a single pebble. One can perform moves of the following form: choose two piles, 
+take an equal number of pebbles from each pile and form a new pile out of these pebbles. 
+Find (in terms of $n$) the smallest number of nonempty piles that one can obtain by 
+performing a finite sequence of moves of this form."""@lv ;
+    eliozo:problemTextHtml """<p>Let $n$ be a positive integer. We start with $n$ piles of pebbles, each initially 
+containing a single pebble. One can perform moves of the following form: choose two piles, 
+take an equal number of pebbles from each pile and form a new pile out of these pebbles. 
+Find (in terms of $n$) the smallest number of nonempty piles that one can obtain by 
+performing a finite sequence of moves of this form.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindOptimal" ;
+    eliozo:source "Croatia" .
+
+eliozo:IMO.SHL.2022.C7 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers ;
+    eliozo:domain "Comb" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.C7" ;
+    eliozo:problemText """Lucy starts by writing $s$ integer-valued $2022$-tuples on a blackboard. 
+After doing that, she can take any two (not necessarily distinct) tuples 
+$\\mathbf{v}=(v_1,\\ldots,v_{2022})$ and $\\mathbf{w}=(w_1,\\ldots,w_{2022})$ 
+that she has already written, and apply one of the following operations 
+to obtain a new tuple:
+
+\\begin{align*}
+\\mathbf{v}+\\mathbf{w}&=(v_1+w_1,\\ldots,v_{2022}+w_{2022}) \\\\ 
+\\mathbf{v} \\lor \\mathbf{w}&=(\\max(v_1,w_1),\\ldots,\\max(v_{2022},w_{2022}))
+\\end{align*}
+
+and then write this tuple on the blackboard.
+
+It turns out that, in this way, Lucy can write any integer-valued 
+$2022$-tuple on the blackboard after finitely many steps. 
+What is the smallest possible number $s$ of tuples that she initially wrote?"""@lv ;
+    eliozo:problemTextHtml """<p>Lucy starts by writing $s$ integer-valued $2022$-tuples on a blackboard. 
+After doing that, she can take any two (not necessarily distinct) tuples 
+$\\mathbf{v}=(v_1,\\ldots,v_{2022})$ and $\\mathbf{w}=(w_1,\\ldots,w_{2022})$ 
+that she has already written, and apply one of the following operations 
+to obtain a new tuple:</p>
+<p>\\begin{align<em>}
+\\mathbf{v}+\\mathbf{w}&amp;=(v_1+w_1,\\ldots,v_{2022}+w_{2022}) \\ 
+\\mathbf{v} \\lor \\mathbf{w}&amp;=(\\max(v_1,w_1),\\ldots,\\max(v_{2022},w_{2022}))
+\\end{align</em>}</p>
+<p>and then write this tuple on the blackboard.</p>
+<p>It turns out that, in this way, Lucy can write any integer-valued 
+$2022$-tuple on the blackboard after finitely many steps. 
+What is the smallest possible number $s$ of tuples that she initially wrote?</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindOptimal" ;
+    eliozo:source "Czech Republic" .
+
+eliozo:IMO.SHL.2022.C8 a eliozo:Problem ;
+    eliozo:Author "Nikola Petrović" ;
+    eliozo:concepts eliozo:TRM-function,
+        eliozo:TRM-integer-numbers,
+        eliozo:TRM-sequence ;
+    eliozo:domain "Comb" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.C8" ;
+    eliozo:problemText """Let $n$ be a positive integer. A Nordic square is an $n \\times n$ board containing 
+all the integers from $1$ to $n^2$ so that each cell contains exactly one number. 
+Two different cells are considered adjacent if they share a common side. 
+Every cell that is adjacent only to cells containing larger numbers is called a valley. 
+An uphill path is a sequence of one or more cells such that:
+
+(i) the first cell in the sequence is a valley,  
+(ii) each subsequent cell in the sequence is adjacent to the previous cell, and  
+(iii) the numbers written in the cells in the sequence are in increasing order.
+
+Find, as a function of $n$, the smallest possible total number of uphill paths in a Nordic square."""@lv ;
+    eliozo:problemTextHtml """<p>Let $n$ be a positive integer. A Nordic square is an $n \\times n$ board containing 
+all the integers from $1$ to $n^2$ so that each cell contains exactly one number. 
+Two different cells are considered adjacent if they share a common side. 
+Every cell that is adjacent only to cells containing larger numbers is called a valley. 
+An uphill path is a sequence of one or more cells such that:</p>
+<p>(i) the first cell in the sequence is a valley,<br />
+(ii) each subsequent cell in the sequence is adjacent to the previous cell, and<br />
+(iii) the numbers written in the cells in the sequence are in increasing order.</p>
+<p>Find, as a function of $n$, the smallest possible total number of uphill paths in a Nordic square.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindOptimal" ;
+    eliozo:source "Serbia" .
+
+eliozo:IMO.SHL.2022.C9 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers,
+        eliozo:TRM-pair ;
+    eliozo:domain "Comb" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.C9" ;
+    eliozo:problemText """Let $\\mathbb Z_{\\ge 0}$ be the set of non-negative integers, and let 
+$f:\\mathbb Z_{\\ge 0}\\times \\mathbb Z_{\\ge 0} \\to \\mathbb Z_{\\ge 0}$ be a 
+bijection such that whenever $f(x_1,y_1) > f(x_2, y_2)$, we have 
+
+$$f(x_1+1, y_1) > f(x_2 + 1, y_2)$ and $f(x_1, y_1+1) > f(x_2, y_2+1).$$
+
+Let $N$ be the number of pairs of integers $(x,y)$ with $0\\le x,y<100$, 
+such that $f(x,y)$ is odd. Find the smallest and largest possible values of $N$."""@lv ;
+    eliozo:problemTextHtml """<p>Let $\\mathbb Z_{\\ge 0}$ be the set of non-negative integers, and let 
+$f:\\mathbb Z_{\\ge 0}\\times \\mathbb Z_{\\ge 0} \\to \\mathbb Z_{\\ge 0}$ be a 
+bijection such that whenever $f(x_1,y_1) &gt; f(x_2, y_2)$, we have </p>
+<p>$$f(x_1+1, y_1) &gt; f(x_2 + 1, y_2)$ and $f(x_1, y_1+1) &gt; f(x_2, y_2+1).$$</p>
+<p>Let $N$ be the number of pairs of integers $(x,y)$ with $0\\le x,y&lt;100$, 
+such that $f(x,y)$ is odd. Find the smallest and largest possible values of $N$.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindOptimal" ;
+    eliozo:source "U.S.A." .
+
+eliozo:IMO.SHL.2022.G1 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-angle,
+        eliozo:TRM-line,
+        eliozo:TRM-point ;
+    eliozo:domain "Geom" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.G1" ;
+    eliozo:problemText """Let $ABCDE$ be a convex pentagon such that $BC=DE$. Assume that there is a point $T$ inside 
+$ABCDE$ with $TB=TD,TC=TE$ and $\\angle ABT = \\angle TEA$. 
+Let line $AB$ intersect lines $CD$ and $CT$ at points $P$ and $Q$, respectively. 
+Assume that the points $P,B,A,Q$ occur on their line in that order. 
+Let line $AE$ intersect $CD$ and $DT$ at points $R$ and $S$, respectively. 
+Assume that the points $R,E,A,S$ occur on their line in that order. 
+Prove that the points $P,S,Q,R$ lie on a circle."""@lv ;
+    eliozo:problemTextHtml """<p>Let $ABCDE$ be a convex pentagon such that $BC=DE$. Assume that there is a point $T$ inside 
+$ABCDE$ with $TB=TD,TC=TE$ and $\\angle ABT = \\angle TEA$. 
+Let line $AB$ intersect lines $CD$ and $CT$ at points $P$ and $Q$, respectively. 
+Assume that the points $P,B,A,Q$ occur on their line in that order. 
+Let line $AE$ intersect $CD$ and $DT$ at points $R$ and $S$, respectively. 
+Assume that the points $R,E,A,S$ occur on their line in that order. 
+Prove that the points $P,S,Q,R$ lie on a circle.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "Slovakia" .
+
+eliozo:IMO.SHL.2022.G2 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-altitude,
+        eliozo:TRM-angle,
+        eliozo:TRM-circle,
+        eliozo:TRM-point,
+        eliozo:TRM-segment,
+        eliozo:TRM-triangle ;
+    eliozo:domain "Geom" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.G2" ;
+    eliozo:problemText """In the acute-angled triangle $ABC$, the point $F$ is the foot of the altitude 
+from $A$, and $P$ is a point on the segment $AF$. The lines through $P$ parallel 
+to $AC$ and $AB$ meet $BC$ at $D$ and $E$, respectively. 
+Points $X \\ne A$ and $Y \\ne A$ lie on the circles $ABD$ and $ACE$, 
+respectively, such that $DA = DX$ and $EA = EY$.
+
+Prove that $B, C, X,$ and $Y$ are concyclic."""@lv ;
+    eliozo:problemTextHtml """<p>In the acute-angled triangle $ABC$, the point $F$ is the foot of the altitude 
+from $A$, and $P$ is a point on the segment $AF$. The lines through $P$ parallel 
+to $AC$ and $AB$ meet $BC$ at $D$ and $E$, respectively. 
+Points $X \\ne A$ and $Y \\ne A$ lie on the circles $ABD$ and $ACE$, 
+respectively, such that $DA = DX$ and $EA = EY$.</p>
+<p>Prove that $B, C, X,$ and $Y$ are concyclic.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "Netherlands" .
+
+eliozo:IMO.SHL.2022.G3 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-circle,
+        eliozo:TRM-point,
+        eliozo:TRM-segments,
+        eliozo:TRM-tangent ;
+    eliozo:domain "Geom" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.G3" ;
+    eliozo:problemText """Let $ABCD$ be a cyclic quadrilateral. Assume that the points 
+$Q, A, B, P$ are collinear in this order, in such a way that the 
+line $AC$ is tangent to the circle $ADQ$, and the line $BD$ is 
+tangent to the circle $BCP$. Let $M$ and $N$ be the midpoints 
+of segments $BC$ and $AD$, respectively. Prove that the following three 
+lines are concurrent: line $CD$, the tangent of circle $ANQ$ at point $A$, 
+and the tangent to circle $BMP$ at point $B$."""@lv ;
+    eliozo:problemTextHtml """<p>Let $ABCD$ be a cyclic quadrilateral. Assume that the points 
+$Q, A, B, P$ are collinear in this order, in such a way that the 
+line $AC$ is tangent to the circle $ADQ$, and the line $BD$ is 
+tangent to the circle $BCP$. Let $M$ and $N$ be the midpoints 
+of segments $BC$ and $AD$, respectively. Prove that the following three 
+lines are concurrent: line $CD$, the tangent of circle $ANQ$ at point $A$, 
+and the tangent to circle $BMP$ at point $B$.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "Slovakia" .
+
+eliozo:IMO.SHL.2022.G4 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-circle,
+        eliozo:TRM-line,
+        eliozo:TRM-point,
+        eliozo:TRM-segment,
+        eliozo:TRM-triangle ;
+    eliozo:domain "Geom" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.G4" ;
+    eliozo:problemText """Let $ABC$ be an acute-angled triangle with $AC > AB$, let $O$ be its circumcentre, 
+and let $D$ be a point on the segment $BC$. The line through $D$ perpendicular 
+to $BC$ intersects the lines $AO, AC,$ and $AB$ at $W, X,$ and $Y,$ respectively. 
+The circumcircles of triangles $AXY$ and $ABC$ intersect again at $Z \\ne A$.
+
+Prove that if $W \\ne D$ and $OW = OD,$ then $DZ$ is tangent to the circle $AXY.$"""@lv ;
+    eliozo:problemTextHtml """<p>Let $ABC$ be an acute-angled triangle with $AC &gt; AB$, let $O$ be its circumcentre, 
+and let $D$ be a point on the segment $BC$. The line through $D$ perpendicular 
+to $BC$ intersects the lines $AO, AC,$ and $AB$ at $W, X,$ and $Y,$ respectively. 
+The circumcircles of triangles $AXY$ and $ABC$ intersect again at $Z \\ne A$.</p>
+<p>Prove that if $W \\ne D$ and $OW = OD,$ then $DZ$ is tangent to the circle $AXY.$</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "United Kingdom" .
+
+eliozo:IMO.SHL.2022.G5 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-line,
+        eliozo:TRM-triangle ;
+    eliozo:domain "Geom" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.G5" ;
+    eliozo:problemText """Let $ABC$ be a triangle and $\\ell_1,\\ell_2$ be two parallel lines. 
+Let $\\ell_i$ intersects line $BC,CA,AB$ at $X_i,Y_i,Z_i$, respectively. 
+Let $\\Delta_i$ be the triangle formed by the line passed through $X_i$ and 
+perpendicular to $BC$, the line passed through $Y_i$ and perpendicular to $CA$, 
+and the line passed through $Z_i$ and perpendicular to $AB$. 
+Prove that the circumcircles of $\\Delta_1$ and $\\Delta_2$ are tangent."""@lv ;
+    eliozo:problemTextHtml """<p>Let $ABC$ be a triangle and $\\ell_1,\\ell_2$ be two parallel lines. 
+Let $\\ell_i$ intersects line $BC,CA,AB$ at $X_i,Y_i,Z_i$, respectively. 
+Let $\\Delta_i$ be the triangle formed by the line passed through $X_i$ and 
+perpendicular to $BC$, the line passed through $Y_i$ and perpendicular to $CA$, 
+and the line passed through $Z_i$ and perpendicular to $AB$. 
+Prove that the circumcircles of $\\Delta_1$ and $\\Delta_2$ are tangent.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "Vietnam" .
+
+eliozo:IMO.SHL.2022.G6 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-altitude,
+        eliozo:TRM-angle,
+        eliozo:TRM-point,
+        eliozo:TRM-triangle ;
+    eliozo:domain "Geom" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.G6" ;
+    eliozo:problemText """Let $ABC$ be an acute triangle with altitude $\\overline{AH}$, and let $P$ be 
+a variable point such that the angle bisectors $k$ and $\\ell$ of $\\angle PBC$ 
+and $\\angle PCB$, respectively, meet on $\\overline{AH}$. Let $k$ meet 
+$\\overline{AC}$ at $E$, $\\ell$ meet $\\overline{AB}$ at $F$, and 
+$\\overline{EF}$ meet $\\overline{AH}$ at $Q$. Prove that as $P$ varies, 
+line $PQ$ passes through a fixed point."""@lv ;
+    eliozo:problemTextHtml """<p>Let $ABC$ be an acute triangle with altitude $\\overline{AH}$, and let $P$ be 
+a variable point such that the angle bisectors $k$ and $\\ell$ of $\\angle PBC$ 
+and $\\angle PCB$, respectively, meet on $\\overline{AH}$. Let $k$ meet 
+$\\overline{AC}$ at $E$, $\\ell$ meet $\\overline{AB}$ at $F$, and 
+$\\overline{EF}$ meet $\\overline{AH}$ at $Q$. Prove that as $P$ varies, 
+line $PQ$ passes through a fixed point.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "Iran" .
+
+eliozo:IMO.SHL.2022.G7 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-triangle ;
+    eliozo:domain "Geom" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.G7" ;
+    eliozo:problemText """Two triangles $ABC$, $A’B’C’$ have the same orthocenter $H$ and the same 
+circumcircle with center $O$. Letting $PQR$ be the triangle formed by 
+$AA’, BB’, CC’$, prove that the circumcenter of $PQR$ lies on $OH$."""@lv ;
+    eliozo:problemTextHtml """<p>Two triangles $ABC$, $A’B’C’$ have the same orthocenter $H$ and the same 
+circumcircle with center $O$. Letting $PQR$ be the triangle formed by 
+$AA’, BB’, CC’$, prove that the circumcenter of $PQR$ lies on $OH$.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "Denmark" .
+
+eliozo:IMO.SHL.2022.G8 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-hexagon,
+        eliozo:TRM-inscribed-circle,
+        eliozo:TRM-line,
+        eliozo:TRM-tangent,
+        eliozo:TRM-triangle ;
+    eliozo:domain "Geom" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.G8" ;
+    eliozo:problemText """Let $AA'BCC'B'$ be a convex cyclic hexagon such that $AC$ is tangent 
+to the incircle of the triangle $A'B'C'$, and $A'C'$ is tangent to the 
+incircle of the triangle $ABC$. Let the lines $AB$ and $A'B'$ meet at 
+$X$ and let the lines $BC$ and $B'C'$ meet at $Y$.
+
+Prove that if $XBYB'$ is a convex quadrilateral, then it has an incircle."""@lv ;
+    eliozo:problemTextHtml """<p>Let $AA'BCC'B'$ be a convex cyclic hexagon such that $AC$ is tangent 
+to the incircle of the triangle $A'B'C'$, and $A'C'$ is tangent to the 
+incircle of the triangle $ABC$. Let the lines $AB$ and $A'B'$ meet at 
+$X$ and let the lines $BC$ and $B'C'$ meet at $Y$.</p>
+<p>Prove that if $XBYB'$ is a convex quadrilateral, then it has an incircle.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "Australia" .
+
+eliozo:IMO.SHL.2022.N1 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-divisors,
+        eliozo:TRM-sum ;
+    eliozo:domain "NT" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.N1" ;
+    eliozo:problemText """A number is called Norwegian if it has three distinct positive divisors 
+whose sum is equal to $2022$. Determine the smallest Norwegian number.  
+(*Note:* The total number of positive divisors of a Norwegian number 
+is allowed to be larger than $3$.)"""@lv ;
+    eliozo:problemTextHtml """<p>A number is called Norwegian if it has three distinct positive divisors 
+whose sum is equal to $2022$. Determine the smallest Norwegian number.<br />
+(<em>Note:</em> The total number of positive divisors of a Norwegian number 
+is allowed to be larger than $3$.)</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindOptimal" ;
+    eliozo:source "Cyprus" .
+
+eliozo:IMO.SHL.2022.N2 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers ;
+    eliozo:domain "NT" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.N2" ;
+    eliozo:problemText """Find all positive integers $n>2$ such that
+
+$$n! \\mid \\prod_{ p<q\\le n, p,q \\, \\text{primes}} (p+q)$$"""@lv ;
+    eliozo:problemTextHtml """<p>Find all positive integers $n&gt;2$ such that</p>
+<p>$$n! \\mid \\prod_{ p&lt;q\\le n, p,q \\, \\text{primes}} (p+q)$$</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:source "Nigeria" .
+
+eliozo:IMO.SHL.2022.N3 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-coprimes,
+        eliozo:TRM-divisibility,
+        eliozo:TRM-integer-numbers ;
+    eliozo:domain "NT" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.N3" ;
+    eliozo:problemText """Let $a > 1$ be a positive integer and $d > 1$ be a positive integer 
+coprime to $a$. Let $x_1=1$, and for $k\\geq 1$, define
+
+$$x_{k+1} = \\begin{cases} 
+x_k + d &\\text{if } a \\text{ does not divide } x_k \\\\ 
+x_k/a & \\text{if } a \\text{ divides } x_k 
+\\end{cases}$$
+
+Find, in terms of $a$ and $d$, the greatest positive integer $n$ 
+for which there exists an index $k$ such that $x_k$ is divisible by $a^n$."""@lv ;
+    eliozo:problemTextHtml """<p>Let $a &gt; 1$ be a positive integer and $d &gt; 1$ be a positive integer 
+coprime to $a$. Let $x_1=1$, and for $k\\geq 1$, define</p>
+<p>$$x_{k+1} = \\begin{cases} 
+x_k + d &amp;\\text{if } a \\text{ does not divide } x_k \\ 
+x_k/a &amp; \\text{if } a \\text{ divides } x_k 
+\\end{cases}$$</p>
+<p>Find, in terms of $a$ and $d$, the greatest positive integer $n$ 
+for which there exists an index $k$ such that $x_k$ is divisible by $a^n$.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindOptimal" ;
+    eliozo:source "Croatia" .
+
+eliozo:IMO.SHL.2022.N4 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers ;
+    eliozo:domain "NT" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.N4" ;
+    eliozo:problemText """Find all triples $(a,b,p)$ of positive integers with 
+$p$ prime and \\[ a^p=b!+p. \\]"""@lv ;
+    eliozo:problemTextHtml """<p>Find all triples $(a,b,p)$ of positive integers with 
+$p$ prime and [ a^p=b!+p. ]</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:source "Belgium" .
+
+eliozo:IMO.SHL.2022.N5 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-digit ;
+    eliozo:domain "NT" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.N5" ;
+    eliozo:problemText """For each $1\\leq i\\leq 9$ and $T\\in\\mathbb N$, define $d_i(T)$ 
+to be the total number of times the digit $i$ appears when 
+all the multiples of $1829$ between $1$ and $T$ inclusive 
+are written out in base $10$.
+
+Show that there are infinitely many $T\\in\\mathbb N$ such that there are 
+precisely two distinct values among $d_1(T)$, $d_2(T)$, $\\dots$, $d_9(T)$."""@lv ;
+    eliozo:problemTextHtml """<p>For each $1\\leq i\\leq 9$ and $T\\in\\mathbb N$, define $d_i(T)$ 
+to be the total number of times the digit $i$ appears when 
+all the multiples of $1829$ between $1$ and $T$ inclusive 
+are written out in base $10$.</p>
+<p>Show that there are infinitely many $T\\in\\mathbb N$ such that there are 
+precisely two distinct values among $d_1(T)$, $d_2(T)$, $\\dots$, $d_9(T)$.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "United Kingdom" .
+
+eliozo:IMO.SHL.2022.N6 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers,
+        eliozo:TRM-primes ;
+    eliozo:domain "NT" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.N6" ;
+    eliozo:problemText """Let $Q$ be a set of prime numbers, not necessarily finite. 
+For a positive integer $n$ consider its prime factorization: 
+define $p(n)$ to be the sum of all the exponents and 
+$q(n)$ to be the sum of the exponents corresponding 
+only to primes in $Q$. A positive integer $n$ is called 
+special if $p(n)+p(n+1)$ and $q(n)+q(n+1)$ are both even integers. 
+Prove that there is a constant $c>0$ independent of the set 
+$Q$ such that for any positive integer $N>100$, 
+the number of special integers in $[1,N]$ is at least $cN$.
+
+(For example, if $Q=\\{3,7\\}$, then $p(42)=3$, $q(42)=2$, $p(63)=3$, 
+$q(63)=3$, $p(2022)=3$, $q(2022)=1$.)"""@lv ;
+    eliozo:problemTextHtml """<p>Let $Q$ be a set of prime numbers, not necessarily finite. 
+For a positive integer $n$ consider its prime factorization: 
+define $p(n)$ to be the sum of all the exponents and 
+$q(n)$ to be the sum of the exponents corresponding 
+only to primes in $Q$. A positive integer $n$ is called 
+special if $p(n)+p(n+1)$ and $q(n)+q(n+1)$ are both even integers. 
+Prove that there is a constant $c&gt;0$ independent of the set 
+$Q$ such that for any positive integer $N&gt;100$, 
+the number of special integers in $[1,N]$ is at least $cN$.</p>
+<p>(For example, if $Q={3,7}$, then $p(42)=3$, $q(42)=2$, $p(63)=3$, 
+$q(63)=3$, $p(2022)=3$, $q(2022)=1$.)</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "Costa Rica" .
+
+eliozo:IMO.SHL.2022.N7 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-integer-numbers,
+        eliozo:TRM-primes ;
+    eliozo:domain "NT" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.N7" ;
+    eliozo:problemText """Let $k$ be a positive integer and let $S$ be a finite set of odd prime numbers. 
+Prove that there is at most one way (up to rotation and reflection) 
+to place the elements of $S$ around the circle such that the product 
+of any two neighbors is of the form $x^2+x+k$ for some positive integer $x$."""@lv ;
+    eliozo:problemTextHtml """<p>Let $k$ be a positive integer and let $S$ be a finite set of odd prime numbers. 
+Prove that there is at most one way (up to rotation and reflection) 
+to place the elements of $S$ around the circle such that the product 
+of any two neighbors is of the form $x^2+x+k$ for some positive integer $x$.</p>"""@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "U.S.A." .
+
+eliozo:IMO.SHL.2022.N8 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-divisibility,
+        eliozo:TRM-integer-numbers ;
+    eliozo:domain "NT" ;
+    eliozo:problemBook "IMO" ;
+    eliozo:problemBookSection "SHL" ;
+    eliozo:problemID "IMO.SHL.2022.N8" ;
+    eliozo:problemText "Prove that $5^n-3^n$ is not divisible by $2^n+65$ for any positive integer $n$."@lv ;
+    eliozo:problemTextHtml "<p>Prove that $5^n-3^n$ is not divisible by $2^n+65$ for any positive integer $n$.</p>"@lv ;
+    eliozo:problem_number 2022 ;
+    eliozo:questionType "Prove" ;
+    eliozo:source "Belgium" .
+

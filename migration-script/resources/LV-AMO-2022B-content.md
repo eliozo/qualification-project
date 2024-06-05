@@ -90,7 +90,7 @@ līdzsvarā? Atbildi pamatot!
 
 <small>
 
-* concepts:equality
+* concepts:equality,pentagon
 * questionType:FindAll
 * domain:Alg
 * LTopic:LTEquationSystems

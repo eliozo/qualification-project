@@ -74,7 +74,7 @@ var tā sadalīt pa pāriem, lai visas pāros ieejošo skaitļu summas būtu da�
 * topic:PrimesDistribution
 * topic:NumTheoryPigeonhole
 * topic:ExhaustionMethod
-* concept:partition,primes,sum
+* concepts:partition,primes,sum
 * questionType:ProveDisprove
 * genre:construction
 

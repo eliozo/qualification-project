@@ -668,7 +668,7 @@ eliozo:CongruenceEquationsLinear a eliozo:Skill ;
 eliozo:ConjugateExpressions a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "ConjugateExpressions" ;
-    eliozo:skillName "Saistītās izteiksmes un to lietošana" ;
+    eliozo:skillName "Saistītās izteiksmes" ;
     eliozo:skillNumber "1.1.3.0.0" ;
     skos:broader eliozo:AlgebraicTransformations ;
     skos:prefLabel "ConjugateExpressions" .
@@ -1812,7 +1812,7 @@ eliozo:HomothetyWithRotationCenter a eliozo:Skill ;
 eliozo:ImpossibilityProofs a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "ImpossibilityProofs" ;
-    eliozo:skillName "Neiespējamības pierādījumi no pretējā" ;
+    eliozo:skillName "Neiespējamība no pretējā" ;
     eliozo:skillNumber "5.5.1.0.0" ;
     skos:broader eliozo:ProofsByContradiction ;
     skos:prefLabel "ImpossibilityProofs" .
@@ -4212,7 +4212,7 @@ eliozo:SumsDirectEstimates a eliozo:Skill ;
 eliozo:SymmetricAlgebraicExpressions a eliozo:Skill ;
     eliozo:skillDescription "Simetriskas izteiksmes un darbības ar homogēnām algebriskām izteiksmēm" ;
     eliozo:skillID "SymmetricAlgebraicExpressions" ;
-    eliozo:skillName "Operācijas ar simetriskām izteiksmēm" ;
+    eliozo:skillName "Simetriskas un homogēnas izteiksmes" ;
     eliozo:skillNumber "1.1.2.0.0" ;
     skos:broader eliozo:AlgebraicTransformations ;
     skos:prefLabel "SymmetricAlgebraicExpressions" .
@@ -4768,16 +4768,16 @@ eliozo:LocusMethod a eliozo:Skill ;
     skos:prefLabel "LocusMethod" .
 
 eliozo:Quadrilaterals a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot četrstūru ģeometriskās īpašības" ;
+    eliozo:skillDescription "Kvadrāts. Taisnstūris. Rombs. Trapece. Ievilkti četrstūri. Apvilkti četrstūri. Ptolemaja teorēma." ;
     eliozo:skillID "Quadrilaterals" ;
-    eliozo:skillName "Četrstūri" ;
+    eliozo:skillName "Četrstūris" ;
     eliozo:skillNumber "3.5.0.0.0" ;
     skos:broader eliozo:Geometry ;
     skos:narrower eliozo:SpecialQuadrilaterals ;
     skos:prefLabel "Quadrilaterals" .
 
 eliozo:AlgebraicEquations a eliozo:Skill ;
-    eliozo:skillDescription "Algebriski vienādojumi" ;
+    eliozo:skillDescription "Algebras uzdevumi, kuros prasīts atrisināt vienādojumu vai noteikt vienādojuma sakņu skaitu. Uzdevumi, kuros jāpēta vienādojuma atrisinājuma eksistence, jāpierāda, ka eksistē atrisinājums vai ka tas neeksistē." ;
     eliozo:skillID "AlgebraicEquations" ;
     eliozo:skillName "Vienādojumi" ;
     eliozo:skillNumber "1.2.0.0.0" ;
@@ -4877,9 +4877,9 @@ eliozo:InequalitiesInterpretations a eliozo:Skill ;
     skos:prefLabel "InequalitiesInterpretations" .
 
 eliozo:IntegerLattices a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi, kuros tiek lietotas rūtiņu režģa virsotnes vai pieminētas veselas koordinātas. Citi uzdevumi plaknē, kas sadalīta bezgalīgi daudzos regulāros trijstūrīšos, kvadrātiņos vai sešstūrīšos." ;
     eliozo:skillID "IntegerLattices" ;
-    eliozo:skillName "Veselu skaitļu režģi" ;
+    eliozo:skillName "Veselie režģi" ;
     eliozo:skillNumber "3.16.0.0.0" ;
     skos:broader eliozo:Geometry ;
     skos:narrower eliozo:PolygonsInLattices,
@@ -4987,9 +4987,9 @@ eliozo:PlanarGraphs a eliozo:Skill ;
     skos:prefLabel "PlanarGraphs" .
 
 eliozo:ProofsByContradiction a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi, kuros prasīto apgalvojumu vispirms noliedz, lai no tā iegūtu secinājumus, kuri ved pie pretrunas. Nekonstruktīvie eksistences pierādījumi (pieņemam, ka objekts neeksistē un iegūstam pretrunu). Pierādījumi no pretējā kopā ar labās sakārtotības principu - piemēram, ja eksistētu netukša kopa ar naturāliem skaitļiem, tad tajā atrastos mazākais elements - no kura eksistences pieņēmuma var iegūt pretrunu." ;
     eliozo:skillID "ProofsByContradiction" ;
-    eliozo:skillName "Pierādījumu metode no pretējā" ;
+    eliozo:skillName "Metode pierādīšanai no pretējā" ;
     eliozo:skillNumber "5.5.0.0.0" ;
     skos:broader eliozo:AllMethods ;
     skos:narrower eliozo:ExistenceProofsByContradiction,
@@ -5121,9 +5121,9 @@ eliozo:DecimalFractions a eliozo:Skill ;
     skos:prefLabel "DecimalFractions" .
 
 eliozo:DiscreteProbability a eliozo:Skill ;
-    eliozo:skillDescription "Uzdevumi par varbūtībām " ;
+    eliozo:skillDescription "Atrast varbūtības izmantojot klasisko varbūtības definīciju. Aprēķināt notikumu varbūtības, izmantojot reizināšanas likumu un citus kombinatorikas paņēmienus. Nosacītas varbūtības un spriedumi par operācijām ar diskrētiem gadījumlielumiem (kuri var pieņemt sanumurējami daudz vērtību)." ;
     eliozo:skillID "DiscreteProbability" ;
-    eliozo:skillName "Diskrēto notikumu varbūtības" ;
+    eliozo:skillName "Diskrētās varbūtības" ;
     eliozo:skillNumber "2.7.0.0.0" ;
     skos:broader eliozo:Combinatorics ;
     skos:narrower eliozo:CombiningEvents,
@@ -5253,9 +5253,9 @@ eliozo:Lattices a eliozo:Skill ;
     skos:prefLabel "Lattices" .
 
 eliozo:LogicProblems a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi par patiesiem un aplamiem izteikumiem, patiesības teikšanu un melošanu. Uzdevumi ar apslēptu informāciju. Paradoksi." ;
     eliozo:skillID "LogicProblems" ;
-    eliozo:skillName "Loģiska rakstura uzdevumi" ;
+    eliozo:skillName "Loģikas uzdevumi" ;
     eliozo:skillNumber "2.6.0.0.0" ;
     skos:broader eliozo:Combinatorics ;
     skos:narrower eliozo:Paradoxes,
@@ -5297,9 +5297,9 @@ eliozo:MultiargumentOpearationsAsAxioms a eliozo:Skill ;
     skos:prefLabel "MultiargumentOpearationsAsAxioms" .
 
 eliozo:NumTheoryInequalityMethod a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Novērtējumi un nevienādības skaitļu teorijā, piemēram, lai samazinātu aplūkojamo gadījumu skaitu. Skaitļa kvalitatīvu īpašību izteikšana ar nevienādībām. Spriedumi par īsiem intervāliem un gariem intervāliem novērtējumos. Nevienādības no decimālpieraksta. Citi uzdevumi par novērtējumiem." ;
     eliozo:skillID "NumTheoryInequalityMethod" ;
-    eliozo:skillName "Nevienādības" ;
+    eliozo:skillName "Nevienādības skaitļu teorijā" ;
     eliozo:skillNumber "4.6.0.0.0" ;
     skos:broader eliozo:NumTheory ;
     skos:narrower eliozo:NumTheoryInequalityLargeIntervals,
@@ -5352,7 +5352,7 @@ eliozo:SelectingModule a eliozo:Skill ;
     skos:prefLabel "SelectingModule" .
 
 eliozo:SystemsGeometricObjects a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Punktu, nogriežņu un citu ģeometrisku objektu sistēmas. Doti n punkti, jāpierāda kādas to īpašības. Jānoskaidro, vai kaut kas ir iespējams. " ;
     eliozo:skillID "SystemsGeometricObjects" ;
     eliozo:skillName "Ģeometrisku objektu sistēmas" ;
     eliozo:skillNumber "3.14.0.0.0" ;
@@ -5446,7 +5446,7 @@ eliozo:DecimalNotation a eliozo:Skill ;
     skos:prefLabel "DecimalNotation" .
 
 eliozo:FunctionalEquations a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Funkcionālvienādojumi, viena argumenta funkciju un vairākvietīgu operāciju aksiomas un interpretācijas" ;
     eliozo:skillID "FunctionalEquations" ;
     eliozo:skillName "Funkcionālvienādojumi" ;
     eliozo:skillNumber "1.8.0.0.0" ;
@@ -5542,9 +5542,9 @@ eliozo:NotationManipulate a eliozo:Skill ;
     skos:prefLabel "NotationManipulate" .
 
 eliozo:NumTheoryExtremeElement a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Apgalvojumu pamatošana, izvēloties lielāko vai mazāko skaitli, pirmreizinātāju, kopīgo dalītāju vai dalāmo. Uzdevumi, kuros jāizmanto sakārtotas kopas. Optimizācijas uzdevumi skaitļu teorijā." ;
     eliozo:skillID "NumTheoryExtremeElement" ;
-    eliozo:skillName "Ekstremālais elements" ;
+    eliozo:skillName "Ekstrēmi skaitļu teorijā" ;
     eliozo:skillNumber "4.7.0.0.0" ;
     skos:broader eliozo:NumTheory ;
     skos:narrower eliozo:NumTheoryExtremeChoiceOther,
@@ -5554,9 +5554,9 @@ eliozo:NumTheoryExtremeElement a eliozo:Skill ;
     skos:prefLabel "NumTheoryExtremeElement" .
 
 eliozo:NumTheoryTransformations a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Veselo skaitļu aritmētikas uzdevumi, kuru risinājumā būtiski izmantoti algebriski pārveidojumi, sadalīšana reizinātājos un citas algebriskas identitātes, mainīgo aizvietošana. Algebrisku pārveidojumu aplūkošana kopsakarā ar dalāmības apsvērumiem. " ;
     eliozo:skillID "NumTheoryTransformations" ;
-    eliozo:skillName "Pārveidojumi" ;
+    eliozo:skillName "Pārveidojumi skaitļu teorijā" ;
     eliozo:skillNumber "4.5.0.0.0" ;
     skos:broader eliozo:NumTheory ;
     skos:narrower eliozo:NumTheoryEqualityToConstant,
@@ -5626,9 +5626,9 @@ eliozo:SeriesMembersSumsClosedFormulas a eliozo:Skill ;
     skos:prefLabel "SeriesMembersSumsClosedFormulas" .
 
 eliozo:StructureAugmentation a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Ģeometrisku un citu struktūru papildināšana ar jauniem elementiem, lai vispirms pierādītu apgalvojumus par šiem elementiem un vēlāk atgrieztos pie sākotnējā jautājuma. Uz šo attiecas arī pretpiemēru konstruēšana kā arī novērtējumu iegūšana, konstruējot piemērus. " ;
     eliozo:skillID "StructureAugmentation" ;
-    eliozo:skillName "Struktūras papildināšanas metodes" ;
+    eliozo:skillName "Struktūras papildināšanas metode" ;
     eliozo:skillNumber "5.8.0.0.0" ;
     skos:broader eliozo:AllMethods ;
     skos:narrower eliozo:CounterexamplesAndConstructions,
@@ -5677,9 +5677,9 @@ eliozo:AnalysisMethods a eliozo:Skill ;
     skos:prefLabel "AnalysisMethods" .
 
 eliozo:Area a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Laukumu aprēķināšana. Četrstūra laukuma formulas. Laukumi trijstūriem vai citām figūrām, kurās ir sadalīts daudzstūris. Vienlielas figūras. Mediāna sadala trijstūri vienādu laukumu trijstūros. Taisnes un līknes, kas sadala figūras vienlielās daļās. Laukumu pārgrupēšana." ;
     eliozo:skillID "Area" ;
-    eliozo:skillName "Laukumi" ;
+    eliozo:skillName "Laukums" ;
     eliozo:skillNumber "3.7.0.0.0" ;
     skos:broader eliozo:Geometry ;
     skos:narrower eliozo:ComputingArea,
@@ -5703,7 +5703,7 @@ eliozo:AxisSymmetry a eliozo:Skill ;
     skos:prefLabel "AxisSymmetry" .
 
 eliozo:CuttingCoversColoring a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi, kuros jāsagriež daudzstūri speciāla veida daļās un tad no tām jāsaliek prasītā figūra. Uzdevumi, kuros jāpierāda, ka nevar sagriezt daudzstūri prasītā veida daļās. Uzdevumi, kuros jāpēta sagriežot iegūto daļu īpašības. Uzdevumi, kuros jānoskaidro, vai ir iespējams sagriezt daudzstūri prasītā veida daļās. Daļas var būt trijstūri, paralelogrami, rombi, trapeces. Jāsaliek var būt taisnstūris, cits daudzstūris. Uzdevumi, kuros jāpārklāj ģeometriska figūra ar citām. Te var būt nogriežņi, trijstūri, daudzstūri, riņķi. Uzdevumi par daudzstūru novietojumu plaknē tā lai tie nepārklājas. Uzdevumi par daudzstūru sagiešans rezultātā iegūto daļu  krāsošanu un par plaknes krāsojumu īpašībām." ;
     eliozo:skillID "CuttingCoversColoring" ;
     eliozo:skillName "Griezumi, pārklājumi, krāsojumi" ;
     eliozo:skillNumber "3.15.0.0.0" ;
@@ -5768,9 +5768,9 @@ eliozo:FunctionalEquationsInDiscreteSets a eliozo:Skill ;
     skos:prefLabel "FunctionalEquationsInDiscreteSets" .
 
 eliozo:GeometricInequalities a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Pierādīt, ka kāds attālums nepārsniedz citu attālumu vai citu ģeometrisku nevienādību." ;
     eliozo:skillID "GeometricInequalities" ;
-    eliozo:skillName "Ģeometriskās nevienādības" ;
+    eliozo:skillName "Ģeometriskas nevienādības" ;
     eliozo:skillNumber "3.10.0.0.0" ;
     skos:broader eliozo:Geometry ;
     skos:narrower eliozo:AreaForEnclosedShapes,
@@ -5794,7 +5794,7 @@ eliozo:GeometricMethods a eliozo:Skill ;
     skos:prefLabel "GeometricMethods" .
 
 eliozo:IntegerPolynomials a eliozo:Skill ;
-    eliozo:skillDescription "Polinomi ar veseliem koeficientiem vai veselām vērtībām" ;
+    eliozo:skillDescription "Polinomu algebras uzdevumi, kas izmanto to, ka koeficienti ir veseli skaitļi (vai arī polinoma vērtības veseliem argumentiem ir veseli skaitļi). Polinomu dalīšana ar atlikumu; Eiklīda algoritms polinomiem. Bezū identitāte polinomiem. Eizenšteina kritērijs par nereducējamību. Teorēma par racionālu sakni. Polinoma vērtību starpības dalāmība ar argumentu starpību." ;
     eliozo:skillID "IntegerPolynomials" ;
     eliozo:skillName "Polinomi ar veseliem koeficientiem" ;
     eliozo:skillNumber "4.11.0.0.0" ;
@@ -5807,7 +5807,7 @@ eliozo:IntegerPolynomials a eliozo:Skill ;
     skos:prefLabel "IntegerPolynomials" .
 
 eliozo:InvariantMethod a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumos ar pārveidojumu virkni vai spēles gājieniem ieviests nemainīgs lielums, kura vērtība pārveidojumu gaidā nemainās un kas atļauj iegūt pretrunu - neiespējamību nonākt vajadzīgajā stāvoklī. Vai pamatot uzvarošu spēles stratēģiju. Arī krāsojumi un citas palīgkonstrukcijas, kuru mērķis ir uzkonstruēt un pareizi saskaitīt kādu invariantu, pieder invariantu metodei." ;
     eliozo:skillID "InvariantMethod" ;
     eliozo:skillName "Invariantu metode" ;
     eliozo:skillNumber "5.4.0.0.0" ;
@@ -5846,7 +5846,7 @@ eliozo:MeanValueForInfiniteSets a eliozo:Skill ;
     skos:prefLabel "MeanValueForInfiniteSets" .
 
 eliozo:NumeralSystems a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Veselu skaitļu decimālpieraksts un ciparu manipulācijas tajā; ieskaitot spēles ar skaitļa cipariem. Dalāmības pazīmes. Skaitļa pieraksts binārajā un dažās citās pozicionālajās sistēmās. Neparasti skaitļu kodējumi (ar Fibonači skaitļiem, ar \"negatīviem cipariem\" utt.). Decimāldaļas, periodisku daļskaitļu izteikšana ar bezgalīgas ģeometriskas progresijas summu. Neperiodiskas decimāldaļas un iracionāli skaitļi. " ;
     eliozo:skillID "NumeralSystems" ;
     eliozo:skillName "Skaitīšanas sistēmas" ;
     eliozo:skillNumber "4.3.0.0.0" ;
@@ -5885,9 +5885,9 @@ eliozo:RamseyTheoryGeometry a eliozo:Skill ;
     skos:prefLabel "RamseyTheoryGeometry" .
 
 eliozo:Triangle a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumos dots trijstūris un ar to saistīti punkti vai taisnes, vai riņķa līnijas. Trijstūris un tā ievilktā un apvilktā riņķa līnija. Taisnleņķa trijstūri. Vienādmalu trijstūris.  Vienādsānu trijstūri. Trijstūri ar leņķiem $60^{\\circ}$ vai $120^{\\circ}$.Trijstūri, kuru malu garumi ir veseli skaitļi.  Ar trijstūri saistītas līnijas un ģeometriskas sakarības.  Menelaja teorēma. Čevas teorēma. Simsona taisne. Pēdas punktu trijstūris. Eilera taisne un deviņu punktu riņķa līnija. Brokāra punkti . Lemuāna punkts." ;
     eliozo:skillID "Triangle" ;
-    eliozo:skillName "Trijstūri" ;
+    eliozo:skillName "Trijstūris" ;
     eliozo:skillNumber "3.4.0.0.0" ;
     skos:broader eliozo:Geometry ;
     skos:narrower eliozo:ConstructionsRelatedToTriangle,
@@ -5938,7 +5938,7 @@ eliozo:AdvancedCounting a eliozo:Skill ;
     skos:prefLabel "AdvancedCounting" .
 
 eliozo:AnglesAndTriangleSimilarity a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi, kuros jāpierāda, ka kādas taisnes vai nogriežņi ir paralēli vai perpendikulāri. Uzdevumi, kuros dota vai jāpierāda nogriežņu garumu attiecība vai leņķu vienādība. Uzdevumi par līdzīgiem trijstūriem vai līdzīgiem daudzstūriem un to malu garumu vai laukumu attiecībām." ;
     eliozo:skillID "AnglesAndTriangleSimilarity" ;
     eliozo:skillName "Leņķi un līdzīgi trijstūri" ;
     eliozo:skillNumber "3.2.0.0.0" ;
@@ -5980,7 +5980,7 @@ eliozo:Combinatorics a eliozo:Skill ;
     skos:prefLabel "Combinatorics" .
 
 eliozo:Divisibility a eliozo:Skill ;
-    eliozo:skillDescription "Veselu skaitļu dalāmība" ;
+    eliozo:skillDescription "Uzdevumi par dalāmības attiecību, saliktu skaitļu un pirmskaitļu pazīšana. Uzdevumi par LKD un MKD; fiksēta skaitļa visu dalītāju režģis. Skaitļa visu dalītāju skaita un summas formulas." ;
     eliozo:skillID "Divisibility" ;
     eliozo:skillName "Skaitļu dalāmība" ;
     eliozo:skillNumber "4.1.0.0.0" ;
@@ -6022,9 +6022,9 @@ eliozo:EquationAnalysis a eliozo:Skill ;
     skos:prefLabel "EquationAnalysis" .
 
 eliozo:IntegerFactorization a eliozo:Skill ;
-    eliozo:skillDescription "Katru naturālu skaitli var izteikt kā pirmskaitļu reizinājumu" ;
+    eliozo:skillDescription "Aritmētikas pamatteorēma par dalījumu pirmreizinātājos. Uzdevumi, kas pārbauda dalāmību, tās vietā pārbaudot dalāmību ar visu pirmreizinātāju pakāpēm. Valuācija kā augstākā pirmskaitļa pakāpe, ar ko var izdalīt doto skaitli. " ;
     eliozo:skillID "IntegerFactorization" ;
-    eliozo:skillName "Skaitļa sadalījums pirmreizinātājos" ;
+    eliozo:skillName "Skaitļa pirmreizinātāji" ;
     eliozo:skillNumber "4.2.0.0.0" ;
     skos:broader eliozo:NumTheory ;
     skos:narrower eliozo:CanonicalFactorization,
@@ -6036,9 +6036,9 @@ eliozo:IntegerFactorization a eliozo:Skill ;
     skos:prefLabel "IntegerFactorization" .
 
 eliozo:MaxMinProblems a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi, kuros jāatrod punkti, no kuriem attālumi vai attālumu summas veido maksimālo jeb lielāko vai minimālo jeb mazāko kādas izteiksmes vērtību. Uzdevumi, kuros jāatrod lielākais iespējamais leņķis. Uzdevumi, kuros jāatrod minimālais vai maksimālais laukums.Uzdevumi, kuros jāatrod punkta vai taisnes stāvoklis, pie kura tiek iegūts minimālais vai maksimālais laukums." ;
     eliozo:skillID "MaxMinProblems" ;
-    eliozo:skillName "Maksimuma un minimuma uzdevumi" ;
+    eliozo:skillName "Ekstrēmi ģeometrijā" ;
     eliozo:skillNumber "3.11.0.0.0" ;
     skos:broader eliozo:Geometry ;
     skos:narrower eliozo:MaxMinAngles,
@@ -6078,9 +6078,9 @@ eliozo:ProjectiveTransformations a eliozo:Skill ;
     skos:prefLabel "ProjectiveTransformations" .
 
 eliozo:RealAnalysis a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Nepārtrauktas funkcijas, reālās analīzes metodes, robežas, atvasinājumi, integrāļi" ;
     eliozo:skillID "RealAnalysis" ;
-    eliozo:skillName "Reāla argumenta funkciju analīze" ;
+    eliozo:skillName "Reālā analīze" ;
     eliozo:skillNumber "1.7.0.0.0" ;
     skos:broader eliozo:Algebra ;
     skos:narrower eliozo:AdvancedCounting,
@@ -6092,7 +6092,7 @@ eliozo:RealAnalysis a eliozo:Skill ;
     skos:prefLabel "RealAnalysis" .
 
 eliozo:SystemsOfEquations a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Vienādojumu sistēmu risināšana un atrisinājumu eksistences analīze." ;
     eliozo:skillID "SystemsOfEquations" ;
     eliozo:skillName "Vienādojumu sistēmas" ;
     eliozo:skillNumber "1.4.0.0.0" ;
@@ -6136,9 +6136,9 @@ eliozo:AllMethods a eliozo:Skill ;
     skos:prefLabel "AllMethods" .
 
 eliozo:CombinatorialStructures a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Izvietojumi uz šaha galdiņa. Apakškopu sistēmas. Apakšvirkņu sistēmas. Paskāla trijstūris. Turnīri. Regulāri režģi. Latīņu kvadrāti" ;
     eliozo:skillID "CombinatorialStructures" ;
-    eliozo:skillName "Galvenās kombinatoriskās struktūras" ;
+    eliozo:skillName "Kombinatoriskas struktūras" ;
     eliozo:skillNumber "2.5.0.0.0" ;
     skos:broader eliozo:Combinatorics ;
     skos:narrower eliozo:ChessPositions,
@@ -6181,7 +6181,7 @@ eliozo:FunctionalEquationsForRealFunctions a eliozo:Skill ;
     skos:prefLabel "FunctionalEquationsForRealFunctions" .
 
 eliozo:Games a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Dots, ka divi spēlētāji spēlē spēli, pārmaiņus izdarot. Jāizstrādā uzvarošā stratēģija kādam no spēlētājiem vai jānoskaidro, kurš no spēlētājiem uzvar, pareizi spēlējot. Šajā kategorijā neietilpst skaitļu teorijas spēles, kur gājieni ir veselu skaitļu vai to ciparu manipulācijas." ;
     eliozo:skillID "Games" ;
     eliozo:skillName "Spēles" ;
     eliozo:skillNumber "2.3.0.0.0" ;
@@ -6211,9 +6211,9 @@ eliozo:HomothetyAndDilation a eliozo:Skill ;
     skos:prefLabel "HomothetyAndDilation" .
 
 eliozo:IntegerCongruence a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Modulārā aritmētika - saskaitīšana, atņemšana, reizināšana un kāpināšana pēc moduļa. Skaitļa multiplikatīvi inversais pēc dotā moduļa. Pazīstamas teorēmas par kongruencēm - M.Fermā teorēma, Eilera teorēma, Vilsona teorēma. " ;
     eliozo:skillID "IntegerCongruence" ;
-    eliozo:skillName "Skaitļu kongruence pēc moduļa" ;
+    eliozo:skillName "Kongruence pēc moduļa" ;
     eliozo:skillNumber "4.4.0.0.0" ;
     skos:broader eliozo:NumTheory ;
     skos:narrower eliozo:ChineseRemainderTheorem,
@@ -6226,9 +6226,9 @@ eliozo:IntegerCongruence a eliozo:Skill ;
     skos:prefLabel "IntegerCongruence" .
 
 eliozo:NumTheoryPigeonhole a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Atlikumu kopu salīdzināšana, jaunu kopu definēšana, Dirihlē princips nevienādām galīgām, galīgai un bezgalīgai kā arī divām vienādām skaitļu kopām." ;
     eliozo:skillID "NumTheoryPigeonhole" ;
-    eliozo:skillName "Dirihlē princips" ;
+    eliozo:skillName "Dirihlē princips skaitļu teorijā" ;
     eliozo:skillNumber "4.8.0.0.0" ;
     skos:broader eliozo:NumTheory ;
     skos:narrower eliozo:NumTheoryPigeonholeCombinations,
@@ -6256,9 +6256,9 @@ eliozo:PigeonholePrincipleInGeometry a eliozo:Skill ;
     skos:prefLabel "PigeonholePrincipleInGeometry" .
 
 eliozo:ProvingInequalities a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi, kuros jāpierāda, ka ir pareiza kāda nevienādība. Uzdevumi, kuros jāatrisina nevienādība." ;
     eliozo:skillID "ProvingInequalities" ;
-    eliozo:skillName "Nevienādību pierādīšana" ;
+    eliozo:skillName "Nevienādības" ;
     eliozo:skillNumber "1.3.0.0.0" ;
     skos:broader eliozo:Algebra ;
     skos:narrower eliozo:InequalitiesEquivalentTransformations,
@@ -6271,7 +6271,7 @@ eliozo:ProvingInequalities a eliozo:Skill ;
     skos:prefLabel "ProvingInequalities" .
 
 eliozo:Vectors a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Visi uzdevumi par vektoriem. " ;
     eliozo:skillID "Vectors" ;
     eliozo:skillName "Vektori" ;
     eliozo:skillNumber "3.12.0.0.0" ;
@@ -6286,9 +6286,9 @@ eliozo:Vectors a eliozo:Skill ;
     skos:prefLabel "Vectors" .
 
 eliozo:AlgebraProblemsWithExtremes a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Algebras uzdevumi, kuros jāatrod lielākā vai mazākā iespējamā vērtība." ;
     eliozo:skillID "AlgebraProblemsWithExtremes" ;
-    eliozo:skillName "Ekstrēmu uzdevumi algebrā" ;
+    eliozo:skillName "Ekstrēmu uzdevumi" ;
     eliozo:skillNumber "1.5.0.0.0" ;
     skos:broader eliozo:Algebra ;
     skos:narrower eliozo:ExtremeProblemsAndInequalities,
@@ -6302,7 +6302,7 @@ eliozo:AlgebraProblemsWithExtremes a eliozo:Skill ;
     skos:prefLabel "AlgebraProblemsWithExtremes" .
 
 eliozo:CountingObjects a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Noskaidrot, cik veidos var izvēlēties pārstāvjus, cik veidos var izdarīt kādas specifiskas darbības. Noteikt, cik veidos var sakārtot kādas kopas vai apakškopas elementus." ;
     eliozo:skillID "CountingObjects" ;
     eliozo:skillName "Objektu skaitīšana" ;
     eliozo:skillNumber "2.1.0.0.0" ;
@@ -6334,9 +6334,9 @@ eliozo:EquationSolving a eliozo:Skill ;
     skos:prefLabel "EquationSolving" .
 
 eliozo:ExamplesInNumberTheory a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Skaitļi ar neparastām īpašībām, Ķīniešu atlikumu teorēma eksistences pierādījumos. Rekurentas virknes. Veselu skaitļu un līdzīgu objektu konstruēšana ar parastu un ar strukturālu indukciju. Ātrās kāpināšanas un paplašinātais Eiklīda algoritms. Funkcionāli vienādojumi veselu skaitļu funkcijām. Gadījumu šķirošana. Skaitļa kvalitatīvu īpašību pārtulkošana par algebrisku vienādību vai kongruenci." ;
     eliozo:skillID "ExamplesInNumberTheory" ;
-    eliozo:skillName "Gadījumu pārlase, piemēru konstruēšana" ;
+    eliozo:skillName "Pārlase un piemēri skaitļu teorijā" ;
     eliozo:skillNumber "4.10.0.0.0" ;
     skos:broader eliozo:NumTheory ;
     skos:narrower eliozo:BuildingExamples,
@@ -6350,7 +6350,7 @@ eliozo:ExamplesInNumberTheory a eliozo:Skill ;
     skos:prefLabel "ExamplesInNumberTheory" .
 
 eliozo:ExtremeElementMethod a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi, kuros aplūkots lielākais vai elements, lai kaut ko secinātu par to. Ekstremālais elements vai nu pats ir uzdevumā prasītais objekts vai arī tā īpašības var izmantot, lai kaut ko pierādītu par citiem. Ekstremālie elementi bieži ir ģeometriski - lielākais/mazākais leņķis, attālums, laukums. Dažām konstrukcijām (plaknes punktu kopas izliektajai čaulai, transitīvajam slēgumam) piemīt ekstremālas īpašības. " ;
     eliozo:skillID "ExtremeElementMethod" ;
     eliozo:skillName "Ekstremālā elementa metode" ;
     eliozo:skillNumber "5.3.0.0.0" ;
@@ -6366,9 +6366,9 @@ eliozo:ExtremeElementMethod a eliozo:Skill ;
     skos:prefLabel "ExtremeElementMethod" .
 
 eliozo:GeometricTransformations a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Paralēlā pārnese, centrālā simetrija, aksiālā simetrija. Simetrijas kompozīcijas. Simetrijas un simetrijas asu īpašības. Pagriezieni un pagriezienu kompozīcijas. Homotētija, homotētiju kompozīcijas un pagrieziena homotētija. Inversija. Afīnie pārveidojumi, projektīvās transformācijas." ;
     eliozo:skillID "GeometricTransformations" ;
-    eliozo:skillName "Ģeometriskās transformācijas" ;
+    eliozo:skillName "Ģeometriskie pārveidojumi" ;
     eliozo:skillNumber "3.13.0.0.0" ;
     skos:broader eliozo:Geometry ;
     skos:narrower eliozo:AffineTransformations,
@@ -6382,9 +6382,9 @@ eliozo:GeometricTransformations a eliozo:Skill ;
     skos:prefLabel "GeometricTransformations" .
 
 eliozo:GraphProblems a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi, kuros ir dots skaits objektu, starp katriem diviem no tiem var būt vai nebūt attiecība. Uzdevumi par draudzībām, pazīšanos, ceļiem starp pilsētām, saziņu ar vēstulēm vai pa telefonu." ;
     eliozo:skillID "GraphProblems" ;
-    eliozo:skillName "Uzdevumi, kas acīmredzami reducējas uz grafiem" ;
+    eliozo:skillName "Grafu uzdevumi" ;
     eliozo:skillNumber "2.2.0.0.0" ;
     skos:broader eliozo:Combinatorics ;
     skos:narrower eliozo:Circuits,
@@ -6398,7 +6398,7 @@ eliozo:GraphProblems a eliozo:Skill ;
     skos:prefLabel "GraphProblems" .
 
 eliozo:NumericSequences a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Aritmētiskā progresija. Ģeometriskā progresija. Rekurentas skaitļu virknes. Galīgas un bezgalīgas summas" ;
     eliozo:skillID "NumericSequences" ;
     eliozo:skillName "Skaitļu virknes" ;
     eliozo:skillNumber "1.6.0.0.0" ;
@@ -6414,7 +6414,7 @@ eliozo:NumericSequences a eliozo:Skill ;
     skos:prefLabel "NumericSequences" .
 
 eliozo:PigeonholeAndMeanValue a eliozo:Skill ;
-    eliozo:skillDescription "Dirihlē princips un līdzīgi novērtējumi - ja indivīdu vērtības nav visas vienādas, tad vismaz viena no tām pārsniedz vidējo vērtību. (\"Mean Value Method\" - šādu nosaukumu ārpus Latvijas neizmanto.  Mēdz būt \"Pigeonhole principle\" vai arī \"Mean Value Analysis\" - bet galvenokārt statistikā.)" ;
+    eliozo:skillDescription "Vērtību pierakstīšana atsevišķiem elementiem, šo vērtību summas un citu apkopotu datu izmantošana, lai novērtētu atsevišķos elementus. Dirihlē princips, ja elementu skaits par vienu pārsniedz kastu skaitu. Dirihlē principa vispārinājumi. Dirihlē principa izmantošana kombinatoriskajā ģeometrijā par laukumu pārklāšanu ar figūriņām un citiem figūru izvietojumiem." ;
     eliozo:skillID "PigeonholeAndMeanValue" ;
     eliozo:skillName "Vidējās vērtības metode." ;
     eliozo:skillNumber "5.2.0.0.0" ;
@@ -6446,9 +6446,9 @@ eliozo:SpecialQuadrilaterals a eliozo:Skill ;
     skos:prefLabel "SpecialQuadrilaterals" .
 
 eliozo:AlgebraicTransformations a eliozo:Skill ;
-    eliozo:skillDescription "Polinomu un racionālu daļu darbības. Identitāšu lietošana." ;
+    eliozo:skillDescription "Uzdevumi par skaitļiem, to darbībām un skaitliskām nevienādībām. Teksta uzdevumu pārrakstīšana, izveidojot algebrisku modeli; manipulācijas ar algebriskām izteiksmēm." ;
     eliozo:skillID "AlgebraicTransformations" ;
-    eliozo:skillName "Algebriskie pārveidojumi" ;
+    eliozo:skillName "Pārveidojumi un teksta uzdevumi" ;
     eliozo:skillNumber "1.1.0.0.0" ;
     skos:broader eliozo:Algebra ;
     skos:narrower eliozo:ComparingRealAndImaginaryParts,
@@ -6463,9 +6463,9 @@ eliozo:AlgebraicTransformations a eliozo:Skill ;
     skos:prefLabel "AlgebraicTransformations" .
 
 eliozo:CombinatorialAlgorithms a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi par elementu sakārtošanu vai lielākā vai mazākā atrašanu. Uzdevumi, kuros ir procesi, kuru realizācijai jāizstrādā algoritms vai jānovērtē algoritma efektivitāte. Uzdevumi par svēršanu, turnīra uzvarētāja atrašanu. " ;
     eliozo:skillID "CombinatorialAlgorithms" ;
-    eliozo:skillName "Vispārīgie kombinatoriskie algoritmi" ;
+    eliozo:skillName "Kombinatoriskie algoritmi" ;
     eliozo:skillNumber "2.4.0.0.0" ;
     skos:broader eliozo:Combinatorics ;
     skos:narrower eliozo:AlgorithmAnalysis,
@@ -6480,7 +6480,7 @@ eliozo:CombinatorialAlgorithms a eliozo:Skill ;
     skos:prefLabel "CombinatorialAlgorithms" .
 
 eliozo:InterpretationMethod a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Interpretācija pārtulko uzdevumu jaunos apzīmējumos; ievieš jaunas datu struktūras (piemēram, grafus) vai kodējumus (objektu attēlošanu par izteiksmēm). Dažas interpretāciju metodes ir jāveido katrā atrisinājumā no jauna, citas ir standartizētas un labi zināmas - piemēram ģeometrijas uzdevuma pārveidošana koordinātu formā. " ;
     eliozo:skillID "InterpretationMethod" ;
     eliozo:skillName "Interpretāciju metode" ;
     eliozo:skillNumber "5.6.0.0.0" ;
@@ -6497,7 +6497,7 @@ eliozo:InterpretationMethod a eliozo:Skill ;
     skos:prefLabel "InterpretationMethod" .
 
 eliozo:Locus a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi, kuros jāatrod punktu ģeometrskā vieta vai trajektorija. Atrast punktu kopu plaknē ar noteiktām īpašībām.  Pierādīt, ka dotajā veidā iegūtie punkti ir uz vienas taisnes vai vienas riņķa līnijas. Pierādīt, ka dotās līnijas krustojas vienā punktā. Karno teorēma." ;
     eliozo:skillID "Locus" ;
     eliozo:skillName "Punktu ģeometriskā vieta" ;
     eliozo:skillNumber "3.8.0.0.0" ;
@@ -6514,9 +6514,9 @@ eliozo:Locus a eliozo:Skill ;
     skos:prefLabel "Locus" .
 
 eliozo:MetricComputations a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi, kuros ģeometrisku apgalvojumu pamato ar algebrisku vai trigonometrisku izteiksmi. Uzdevumi, kuros dota sakarība starp ģeometriskiem lielumiem un jāpierāda, ka tā nav atkarīga no punkta vai taisnes izvēles. Uzdevumi, kuros jāpierāda nogriežņu vienādība vai jāaprēķina to attiecība. Uzdevumi, kuros jāaprēķina leņķi vai attālumi. Sinusu teorēma, kosinusu teorēma. Koordinātu izmantošana. Ievilkto, apvilkto un pievilkto riņķa līniju rādiusi. Malu, augstumu, bisektrišu garumi. Trijstūra leņķu sinusi un kosinusi. Trijstūra leņķu tangensi un kotangensi." ;
     eliozo:skillID "MetricComputations" ;
-    eliozo:skillName "Aprēķini un metriskās attiecības" ;
+    eliozo:skillName "Metriskās sakarības" ;
     eliozo:skillNumber "3.9.0.0.0" ;
     skos:broader eliozo:Geometry ;
     skos:narrower eliozo:Circles,
@@ -6531,9 +6531,9 @@ eliozo:MetricComputations a eliozo:Skill ;
     skos:prefLabel "MetricComputations" .
 
 eliozo:NumTheoryMathInduction a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Skaitļu teorijas apgalvojumu pamatošana ar matemātisko indukciju. Dažādas induktīvo spriedumu shēmas. Indukcija pēc dalītāju skaita, ciparu skaita. Induktīvās hipotēzes pastiprināšana. Lineāras rekurences. Valuācijas pēc pirmskaitļa." ;
     eliozo:skillID "NumTheoryMathInduction" ;
-    eliozo:skillName "Matemātiskā indukcija skaitļu teorijā" ;
+    eliozo:skillName "Indukcija skaitļu teorijā" ;
     eliozo:skillNumber "4.9.0.0.0" ;
     skos:broader eliozo:NumTheory ;
     skos:narrower eliozo:InductionByDigits,
@@ -6566,9 +6566,9 @@ eliozo:NumTheory a eliozo:Skill ;
     skos:prefLabel "NumTheory" .
 
 eliozo:AlgebraicMethods a eliozo:Skill ;
-    eliozo:skillDescription "Algebriskas un analītiskas metodes, algebriski pārveidojumi" ;
+    eliozo:skillDescription "Uzdevumi, kuros jaunu mainīgo ievietošana, identiski pārveidojumi un arī nevienādību pastiprināšana ir būtiska atrisinājuma sastāvdaļa. Arī citas situācijas, kurās ievietojot piemērotas izteiksmes, var izmantot kādu zināmu rezultātu." ;
     eliozo:skillID "AlgebraicMethods" ;
-    eliozo:skillName "Algebriskas un analītiskas metodes" ;
+    eliozo:skillName "Pārveidojumi un analītiskas metodes" ;
     eliozo:skillNumber "5.7.0.0.0" ;
     skos:broader eliozo:AllMethods ;
     skos:narrower eliozo:AnalysisMethods,
@@ -6585,9 +6585,9 @@ eliozo:AlgebraicMethods a eliozo:Skill ;
     skos:prefLabel "AlgebraicMethods" .
 
 eliozo:Polygons a eliozo:Skill ;
-    eliozo:skillDescription "Izmantot daudzstūru īpašības" ;
+    eliozo:skillDescription "Piecstūri. Sešstūri. Regulāri daudzstūri. Ievilkti un apvilkti daudzstūri. Patvaļīgi izliekti daudzstūri. Paskāla teorēma. Helli teorēma. Ieliekti daudzstūri. Izoperimetriskā nevienādība." ;
     eliozo:skillID "Polygons" ;
-    eliozo:skillName "Daudzstūri" ;
+    eliozo:skillName "Daudzstūris" ;
     eliozo:skillNumber "3.6.0.0.0" ;
     skos:broader eliozo:Geometry ;
     skos:narrower eliozo:ConcavePolygons,
@@ -6624,7 +6624,7 @@ eliozo:InequalitiesForTriangleElements a eliozo:Skill ;
     skos:prefLabel "InequalitiesForTriangleElements" .
 
 eliozo:Constructions a eliozo:Skill ;
-    eliozo:skillDescription "Veikt planimetrijas konstrukcijas uzdevumu risināšanā." ;
+    eliozo:skillDescription "Uzdevumi, kuros doti specifiski trijstūra elementi un, izmantojot cirkuli un lineālu, jākonstruē trijstūri. Uzdevumi, kuros doti konkrēti punkti un/ vai nogriežņi, taisnes, leņķi vai riņķa līnijas un nepieciešams konstruēt trijstūri, četrstūri, leņķi, taisni, staru vai riņķa līniju, izmantojot cirkuli un lineālu. Iespējami arī uzdevumi, kuros ļauts izmantot tikai lineālu, divpusēju lineālu vai uzstūri (taisnleņķa lineālu). Citi konstrukcijas uzdevumi." ;
     eliozo:skillID "Constructions" ;
     eliozo:skillName "Konstrukcijas uzdevumi" ;
     eliozo:skillNumber "3.1.0.0.0" ;
@@ -6646,7 +6646,7 @@ eliozo:Constructions a eliozo:Skill ;
     skos:prefLabel "Constructions" .
 
 eliozo:MathematicalInduction a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi, kas risināti ar matemātisko indukciju - parasti tie ir apgalvojumi par visiem naturālajiem skaitļiem. To risinājumā izmantota indukcijas bāze, induktīvais pieņēmums un pāreja. Arī strukturālā indukcija (kur apgalvojumu dotajai algebriskai izteiksmei reducē uz apgalvojumiem par tās apakšizteiksmēm) vai ģeometriskā indukcija (kombinatoriskas ģeometrijas uzdevumi, kurus reducē uz vienkāršākiem gadījumiem) ir indukcija." ;
     eliozo:skillID "MathematicalInduction" ;
     eliozo:skillName "Matemātiskās indukcijas metode" ;
     eliozo:skillNumber "5.1.0.0.0" ;
@@ -6691,9 +6691,9 @@ eliozo:Geometry a eliozo:Skill ;
     skos:prefLabel "Geometry" .
 
 eliozo:Circle a eliozo:Skill ;
-    eliozo:skillDescription "" ;
+    eliozo:skillDescription "Uzdevumi par riņķa līnijām un to hordām, pieskarēm, ievilktiem leņķiem.Punkti uz riņķa līnijas. Riņķa līnijā ievilkts trijstūris, četrstūris, daudzstūris. Leņķis riņķa līnijā. Ievilkta riņķa līnija. Apvilkta riņķa līnija." ;
     eliozo:skillID "Circle" ;
-    eliozo:skillName "Riņķa līnijas un ar tām saistītie leņķi" ;
+    eliozo:skillName "Riņķa līnijas" ;
     eliozo:skillNumber "3.3.0.0.0" ;
     skos:broader eliozo:Geometry ;
     skos:narrower eliozo:AngleBetweenChords,

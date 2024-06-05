@@ -37,7 +37,7 @@ cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari
 
 <small>
 
-* concept:decimal-notation
+* concepts:decimal-notation
 * topic:ModularArithmeticLastDigit
 * LTopic:LTNumeralSystems
 * strategy:CaseAnalysis
