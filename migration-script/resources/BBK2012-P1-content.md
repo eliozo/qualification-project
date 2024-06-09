@@ -219,15 +219,14 @@ bet otrais ar $9$; tātad viss reizinājums dalās ar $27$.
 # <lo-sample/> BBK2012.P1.5
 
 
-Pierādīt, ka skaitlis ${\displaystyle \underbrace{111\ldots{}1}_{\mbox{$81$ vieninieki}}}$
-dalās ar $81$. 
+Pierādīt, ka skaitlis $\underbrace{111\ldots{}1}_{\mbox{81 vieninieki}}$ dalās ar $81$. 
 
 ## Atrisinājums
 
-Ievērosim, ka 
+Ievērosim, ka
 
-$$\underbrace{111\ldots{}1}_{\mbox{$81$ vieninieki}} = 
-\underbrace{111\ldots{}1}_{\mbox{$9$ vieninieki}} \cdot \underbrace{100\ldots{}0100\ldots{}01}_{\mbox{$9$ vieninieki}}.$$
+`$$\underbrace{111\ldots{}1}_{\mbox{81 vieninieki}} = 
+\underbrace{111\ldots{}1}_{\mbox{9 vieninieki}} \cdot \underbrace{100\ldots{}0100\ldots{}01}_{\mbox{9 vieninieki}}.$$`
 
 Katrs no reizinātājiem dalās ar $9$, jo ciparu summa dalās ar $9$. Tātad reizinājums dalās ar $81$.
 
@@ -264,8 +263,8 @@ Atbilde: doto skaitļu LKD ir $9$.
 
 No skaitļa 1985 atņēma tā ciparu summu, no rezultāta – tā ciparu summu, utt.
 
-a. Pierādiet, ka noteikti kādreiz iegūsim viencipara skaitli.
-b. Kāds tas būs?
+**(A)** Pierādiet, ka noteikti kādreiz iegūsim viencipara skaitli.
+**(B)** Kāds tas būs?
 
 ## Atrisinājums
 

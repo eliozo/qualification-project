@@ -83,7 +83,7 @@ data-parent="#accordion" href="#collapse{{L2_topic.label}}">{{ L2_topic.number }
             {% for skill in all_skills %}
             <tr class="{{ loop.cycle('odd', 'even') }}">
                 <td>{{ all_skill_info[skill].skillNumber |safe }}</td>
-                <td><a href="{{ url_for('getSkill',skillIdentifier=skill) }}" title="{{ skill }}">{{ all_skill_info[skill].skillName |safe }}</a></td>
+                <td><a href="{{ url_for('getTopic',skillIdentifier=skill) }}" title="{{ skill }}">{{ all_skill_info[skill].skillName |safe }}</a></td>
                 <td>{{ all_skill_info[skill].skillDescription |safe }}</td>
                 <td>{% for problem in all_skill_info[skill].problems %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
                         problem }}</a>, {% endfor %} </td>

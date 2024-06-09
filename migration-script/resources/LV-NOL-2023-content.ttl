@@ -6,8 +6,6 @@ eliozo:LV.NOL.2023.10.1 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2023.10.1" ;
     eliozo:problemText """Noskaidrot, vai skaitlis $\\sqrt{4+2 \\sqrt{3}}-\\sqrt{4-2 \\sqrt{3}}$ 
@@ -16,15 +14,14 @@ ir racionāls vai iracionāls!"""@lv ;
 ir racionāls vai iracionāls!</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2023.10" .
 
 eliozo:LV.NOL.2023.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2023.10.2" ;
     eliozo:problemText """Uz papīra lapas atzīmēti daži punkti tā, ka nekādi trīs punkti 
@@ -41,15 +38,15 @@ virsotnes ir dotajos punktos. Kāds ir mazākais skaits punktu,
 kas var būt atzīmēti uz papīra lapas?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.NOL.2023.10" .
 
 eliozo:LV.NOL.2023.10.3 a eliozo:Problem ;
+    eliozo:LTopic "StructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2023.10.3" ;
     eliozo:problemText """Šaurleṇķu trijstūra $ABC$ augstumi krustojas punktā $H$. 
@@ -58,15 +55,14 @@ Aprēḳināt četrstūra $ABHC$ laukumu, ja $AH = BC = 8$."""@lv ;
 Aprēḳināt četrstūra $ABHC$ laukumu, ja $AH = BC = 8$.</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.NOL.2023.10" .
 
 eliozo:LV.NOL.2023.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2023.10.4" ;
     eliozo:problemText """Atrast lielāko naturālo skaitli $N$ ar īpašību - katram pirmskaitlim 
@@ -75,15 +71,14 @@ $p<N$ skaitlis $N+2p$ arī ir pirmskaitlis!"""@lv ;
 $p&lt;N$ skaitlis $N+2p$ arī ir pirmskaitlis!</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.NOL.2023.10" .
 
 eliozo:LV.NOL.2023.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2023.10.5" ;
     eliozo:problemText """Volejbola turnīrā katra komanda spēlēja ar katru tieši vienu reizi; 
@@ -100,30 +95,30 @@ Kāds var būt komandu skaits, kas piedalījās šajā turnīrā?
 (Nevienā turnīrā nav mazāk kā $2$ komandas.)</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.NOL.2023.10" .
 
 eliozo:LV.NOL.2023.11.1 a eliozo:Problem ;
+    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2023.11.1" ;
     eliozo:problemText "Pierādīt, ka $x^{2}+y^{2}+\\frac{1}{2} \\geq x+y$ visiem reāliem $x$ un $y$."@lv ;
     eliozo:problemTextHtml "<p>Pierādīt, ka $x^{2}+y^{2}+\\frac{1}{2} \\geq x+y$ visiem reāliem $x$ un $y$.</p>"@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.NOL.2023.11" .
 
 eliozo:LV.NOL.2023.11.2 a eliozo:Problem ;
+    eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2023.11.2" ;
     eliozo:problemText """Kādā zemē dzīvo rūķi, katri divi no tiem vai nu draudzējas, 
@@ -138,15 +133,15 @@ trīs rūḳus, kas visi savā starpā draudzējas, ja šajā zemē ir
 <strong>(A)</strong> $5$ rūķi, <strong>(B)</strong> $6$ rūķi?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2023.11" .
 
 eliozo:LV.NOL.2023.11.3 a eliozo:Problem ;
+    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2023.11.3" ;
     eliozo:problemText """Dots vienādsānu trijstūris $ABC$, kuram $AB = AC$ un 
@@ -161,15 +156,15 @@ attiecīgi punktos $D$ un $E$. Aprēķināt $\\frac{AD}{DC}$,
 ja $\\frac{AE}{EB}=\\frac{2}{5}$.</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.NOL.2023.11" .
 
 eliozo:LV.NOL.2023.11.4 a eliozo:Problem ;
+    eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2023.11.4" ;
     eliozo:problemText """Pierādīt, ka nekādu divu secīgu naturālu skaitļu reizinājums 
@@ -178,15 +173,14 @@ nav izsakāms formā $36n+8$, kur $n$ ir naturāls skaitlis!"""@lv ;
 nav izsakāms formā $36n+8$, kur $n$ ir naturāls skaitlis!</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.NOL.2023.11" .
 
 eliozo:LV.NOL.2023.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2023.11.5" ;
     eliozo:problemText """Skaitļu virkni, kurā ir $N$ elementi, sauksim par $N$ mazāko 
@@ -219,15 +213,15 @@ vienlaikus abas nevar būt attiecīgi $n-1$ un $n-2$ mazāko
 naturālo skaitļu permutācijas!</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.NOL.2023.11" .
 
 eliozo:LV.NOL.2023.12.1 a eliozo:Problem ;
+    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2023.12.1" ;
     eliozo:problemText """Atrast mazāko reālo skaitli $a$, ar kuru visiem reāliem 
@@ -239,15 +233,15 @@ skaitliem $x, y, z$ ir spēkā nevienādība:</p>
 <p>$$x^{2}+y^{2}+z^{2}+a \\geq x + 2y + 3z$$</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.NOL.2023.12" .
 
 eliozo:LV.NOL.2023.12.2 a eliozo:Problem ;
+    eliozo:LTopic "LTMeanValuePrinciple" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2023.12.2" ;
     eliozo:problemText """Šaha turnīrā katri divi šahisti ir vai nu izspēlējuši tieši vienu 
@@ -262,15 +256,14 @@ visas $3$ partijas, vai nevienu partiju, ja turnīrā piedalās
 <strong>(A)</strong> $5$, <strong>(B)</strong> $6$ šahisti?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2023.12" .
 
 eliozo:LV.NOL.2023.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2023.12.3" ;
     eliozo:problemText """Dots vienādsānu trijstūris $ABC$, kuram $AB=AC$ un $\\sphericalangle BAC < 60^{\\circ}$. 
@@ -283,15 +276,15 @@ krusto trijstūra malas $AC$ un $AB$ attiecīgi punktos $D$ (kas nesakrīt ar $C
 un $E$. Pierādīt, ka $AD &lt; 2AE$.</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.NOL.2023.12" .
 
 eliozo:LV.NOL.2023.12.4 a eliozo:Problem ;
+    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2023.12.4" ;
     eliozo:problemText """Pierādīt, ka nekādu divu secīgu naturālu skaitļu reizinājums nav izsakāms 
@@ -300,15 +293,15 @@ formā $27n+11$, kur $n$ ir naturāls skaitlis."""@lv ;
 formā $27n+11$, kur $n$ ir naturāls skaitlis.</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.NOL.2023.12" .
 
 eliozo:LV.NOL.2023.12.5 a eliozo:Problem ;
+    eliozo:LTopic "LTInduction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2023.12.5" ;
     eliozo:problemText """Dotas $2023$ kastes, sākumā tajās ir attiecīgi $1, 2, 3, \\ldots, 2023$ 
@@ -323,15 +316,14 @@ Kāds ir mazākais gājienu skaits, ar kuru var panākt,
 ka visas kastes ir tukšas?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.NOL.2023.12" .
 
 eliozo:LV.NOL.2023.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2023.5.1" ;
     eliozo:problemImage eliozo:IMG.LV.NOL.2023.5.1.png ;
@@ -351,15 +343,15 @@ vienu veidu, kā to var izdarīt.</p>
 <p><img alt="" src="LV.NOL.2023.5.1.png" />{ width=300px }</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.NOL.2023.5" .
 
 eliozo:LV.NOL.2023.5.2 a eliozo:Problem ;
+    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2023.5.2" ;
     eliozo:problemText """Rūķīši mežā ir uzbūvējuši astoṇas mājiṇas un starp tām izveidojuši 
@@ -372,15 +364,14 @@ taciṇas var krustoties. Vai iespējams, ka no mājiņām iziet attiecīgi:
 <strong>(A)</strong> $2, 2, 2, 4, 4, 4, 4, 4$ taciṇas; <strong>(B)</strong> $1,2,2,2,2,3,4,5$ taciṇas?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2023.5" .
 
 eliozo:LV.NOL.2023.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2023.5.3" ;
     eliozo:problemImage eliozo:IMG.LV.NOL.2023.5.3.png ;
@@ -399,15 +390,14 @@ ja tās var uzlikt vienu uz otras tā, ka abas figūras sakrīt
 <p><img alt="" src="LV.NOL.2023.5.3.png" />{ width=250px }</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.NOL.2023.5" .
 
 eliozo:LV.NOL.2023.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2023.5.4" ;
     eliozo:problemText """Parādi, kā skaitli $174$ var uzrakstīt kā $3$ dažādu naturālu skaitļu 
@@ -416,15 +406,15 @@ summu tā, lai katru divu šo skaitļu summa dalītos ar trešo skaitli!"""@lv ;
 summu tā, lai katru divu šo skaitļu summa dalītos ar trešo skaitli!</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.NOL.2023.5" .
 
 eliozo:LV.NOL.2023.5.5 a eliozo:Problem ;
+    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2023.5.5" ;
     eliozo:problemText """Ja automātā ievieto sarkanu monētu, tad tas izdod $5$ zilas monētas, 
@@ -437,15 +427,14 @@ Vai, atkārtoti izmantojot automātu, ir iespējams iegūt vienāda skaita
 sarkanās un zilās monētas, ja sākumā ir dota viena sarkana monēta?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2023.5" .
 
 eliozo:LV.NOL.2023.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2023.6.1" ;
     eliozo:problemText """Atrodi vienu veidu, kādi naturāli skaitḷi jāievieto $x, y$ un $z$ vietā, lai vienādība
@@ -458,15 +447,15 @@ būtu patiesa!"""@lv ;
 <p>būtu patiesa!</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.NOL.2023.6" .
 
 eliozo:LV.NOL.2023.6.2 a eliozo:Problem ;
+    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2023.6.2" ;
     eliozo:problemText """Rūķīši mežā ir uzbūvējuši desmit mājinas un starp tām izveidojuši 
@@ -479,15 +468,14 @@ krustoties. Vai iespējams, ka no mājinām iziet attiecīgi:<br />
 <strong>(A)</strong> $2, 2, 2, 2, 2, 3, 3, 3, 3, 7$ tacinas; <strong>(B)</strong> $2, 2, 2, 2, 4, 4, 4, 4, 4, 4$ taciņas?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2023.6" .
 
 eliozo:LV.NOL.2023.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2023.6.3" ;
     eliozo:problemImage eliozo:IMG.LV.NOL.2023.6.3.png ;
@@ -502,15 +490,14 @@ otras tā, ka abas figūras pilnīgi sakrīt (figūras var pagriezt un apmest ot
 <p><img alt="" src="LV.NOL.2023.6.3.png" />{ width=200px }</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.NOL.2023.6" .
 
 eliozo:LV.NOL.2023.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2023.6.4" ;
     eliozo:problemText """Vai skaitli: **(A)** $72$, **(B)** $73$ var izteikt kā trīs dažādu 
@@ -521,15 +508,15 @@ naturālu skaitļu summu tā, lai katru divu šo skaitḷu summa dalītos
 ar atlikušo skaitli?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2023.6" .
 
 eliozo:LV.NOL.2023.6.5 a eliozo:Problem ;
+    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2023.6.5" ;
     eliozo:problemText """Naturālu skaitli atļauts reizināt ar $2$, kā arī izsvītrot no tā 
@@ -542,15 +529,14 @@ Vai, vairākkārt izpildot šādus gājienus, no skaitla $17$ var iegūt:
 <strong>(A)</strong> skaitli $1$; <strong>(B)</strong> skaitli $15$?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2023.6" .
 
 eliozo:LV.NOL.2023.7.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2023.7.1" ;
     eliozo:problemImage eliozo:IMG.LV.NOL.2023.7.1.png ;
@@ -568,15 +554,15 @@ būtu ierakstīti rūtiņās ar kopīgu malu?</p>
 <p><img alt="" src="LV.NOL.2023.7.1.png" />{ width=200px }</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2023.7" .
 
 eliozo:LV.NOL.2023.7.2 a eliozo:Problem ;
+    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2023.7.2" ;
     eliozo:problemText """Vai **(A)** $90$ lampiṇas, **(B)** $73$ lampiṇas ar vadiem var savienot tā, lai katra 
@@ -585,15 +571,15 @@ no tām būtu savienota ar vadu ar tieši $5$ citām lampiņām?"""@lv ;
 no tām būtu savienota ar vadu ar tieši $5$ citām lampiņām?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2023.7" .
 
 eliozo:LV.NOL.2023.7.3 a eliozo:Problem ;
+    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2023.7.3" ;
     eliozo:problemText """Dots četrstūris $ABCD$, kuram visi lenki ir mazāki nekā $180^{\\circ}$, 
@@ -602,15 +588,14 @@ $\\sphericalangle A=\\sphericalangle B$, $BC=1$ un $AD=3$. Pierādīt, ka $CD>2$
 $\\sphericalangle A=\\sphericalangle B$, $BC=1$ un $AD=3$. Pierādīt, ka $CD&gt;2$.</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.NOL.2023.7" .
 
 eliozo:LV.NOL.2023.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2023.7.4" ;
     eliozo:problemText """Cik ir tādu naturālu skaitļu $n$, kuriem skaitlim $n^{2}$ ir tikpat ciparu, 
@@ -619,15 +604,15 @@ cik skaitlim $n^{3}$?"""@lv ;
 cik skaitlim $n^{3}$?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindCount" .
+    eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.NOL.2023.7" .
 
 eliozo:LV.NOL.2023.7.5 a eliozo:Problem ;
+    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2023.7.5" ;
     eliozo:problemText """Kastē atrodas baltas, sarkanas un zaḷas lodītes. Ar vienu gājienu no 
@@ -646,15 +631,14 @@ ja sākumā kastē atrodas:<br />
 <strong>(B)</strong> $10$ baltas, $12$ sarkanas un $15$ zaḷas lodītes?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2023.7" .
 
 eliozo:LV.NOL.2023.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2023.8.1" ;
     eliozo:problemImage eliozo:IMG.LV.NOL.2023.8.1.png ;
@@ -674,15 +658,15 @@ Pietiek parādīt vienu veidu, kā to var izdarīt.</p>
 <p><img alt="" src="LV.NOL.2023.8.1.png" />{ width=300px }</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.NOL.2023.8" .
 
 eliozo:LV.NOL.2023.8.2 a eliozo:Problem ;
+    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2023.8.2" ;
     eliozo:problemText """Pasākumā satikās $m$ cilvēki. Katrs no tiem draudzējas ar tieši $3$ 
@@ -695,15 +679,15 @@ Zināms, ka no katriem trim cilvēkiem var atrast divus, kuri savā starpā
 nedraudzējas. Vai var gadīties, ka <strong>(A)</strong> $m=11$, <strong>(B)</strong> $m=10$?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2023.8" .
 
 eliozo:LV.NOL.2023.8.3 a eliozo:Problem ;
+    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2023.8.3" ;
     eliozo:problemText """Dots vienādsānu trijstūris $ABC$, kuram $AB = BC$. Uz malas $AB$ 
@@ -714,15 +698,14 @@ izvēlēts punkts $M$ un uz malas $BC$ izvēlēts punkts $K$ tā,
 ka $AM = AK = AC$. Zināms, ka $AK \\perp MC$. Aprēḳināt trijstūra $ABC$ leṇkus!</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.NOL.2023.8" .
 
 eliozo:LV.NOL.2023.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2023.8.4" ;
     eliozo:problemImage eliozo:IMG.LV.NOL.2023.8.4.png ;
@@ -739,15 +722,14 @@ pagriezt un apmest otrādi).</p>
 <p><img alt="" src="LV.NOL.2023.8.4.png" />{ width=200px }</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.NOL.2023.8" .
 
 eliozo:LV.NOL.2023.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2023.8.5" ;
     eliozo:problemText """Pa apļveida trasi vienā virzienā Kārlis skrien ar kājām un Sandris 
@@ -764,15 +746,14 @@ pēc $20$ minūtēm, bet Mārtiṇš apdzen Vilni ik pēc $5$ minūtēm.
 Cik bieži Mārtiṇš satiek Sandri?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.NOL.2023.8" .
 
 eliozo:LV.NOL.2023.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2023.9.1" ;
     eliozo:problemText """Dots, ka $x$ ir naturāls skaitlis. Kāds lielākais skaits skaitļu 
@@ -781,15 +762,15 @@ $x$; $x+2$; $x+4$; $x+6$; $x+8$ vienlaicīgi var būt pirmskaitḷi?"""@lv ;
 $x$; $x+2$; $x+4$; $x+6$; $x+8$ vienlaicīgi var būt pirmskaitḷi?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.NOL.2023.9" .
 
 eliozo:LV.NOL.2023.9.2 a eliozo:Problem ;
+    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2023.9.2" ;
     eliozo:problemText """Novadijā dzīvo $73$ rūḳi un daži no tiem savā starpā draudzējas 
@@ -802,15 +783,15 @@ ar $A$, tas ir, draudzība ir abpusēja). Vai var būt tā, ka katram
 rūķim ir tieši $9$ draugi?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2023.9" .
 
 eliozo:LV.NOL.2023.9.3 a eliozo:Problem ;
+    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2023.9.3" ;
     eliozo:problemText """Punkts $X$ ir izliekta četrstūra $ABCD$ diagonāles $AC$ viduspunkts. 
@@ -819,15 +800,15 @@ Zināms, ka $CD \\| BX$. Aprēķināt $AD$ garumu, ja $BX=3, BC=7$ un $CD=6$."""
 Zināms, ka $CD | BX$. Aprēķināt $AD$ garumu, ja $BX=3, BC=7$ un $CD=6$.</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.NOL.2023.9" .
 
 eliozo:LV.NOL.2023.9.4 a eliozo:Problem ;
+    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2023.9.4" ;
     eliozo:problemText """Atrast visus tādus reālu skaitļu pārus $(x;y)$, kuriem
@@ -837,15 +818,14 @@ $$\\left(x^{4}+1\\right)\\left(y^{4}+1\\right)=4 x^{2} y^{2}$$"""@lv ;
 <p>$$\\left(x^{4}+1\\right)\\left(y^{4}+1\\right)=4 x^{2} y^{2}$$</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.NOL.2023.9" .
 
 eliozo:LV.NOL.2023.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "NOL.2023.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2023.9.5" ;
     eliozo:problemText """Dabas rezervātā katra koka vecums gados izsakāms kā naturāls skaitlis. 
@@ -865,7 +845,8 @@ negaisa? </p>
 <p><em>Piezīme.</em> Pa šīm divām dienām neviens koks nav kļuvis vecāks.</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.NOL.2023.9" .
 
 eliozo:IMG.LV.NOL.2023.5.1.png a eliozo:Image ;
     eliozo:imageSrc "LV.NOL.2023.5.1.png" ;

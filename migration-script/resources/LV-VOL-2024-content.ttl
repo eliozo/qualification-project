@@ -6,8 +6,6 @@ eliozo:LV.VOL.2024.10.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2024.10.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.1 ;
@@ -21,15 +19,14 @@ kas nepārsniedz $100$, lai jebkuriem diviem izvēlētajiem skaitļiem to starp�
 dalītāju?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.VOL.2024.10" .
 
 eliozo:LV.VOL.2024.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2024.10.2" ;
     eliozo:problemImage eliozo:IMG.LV.VOL.2024.10.2A.png,
@@ -45,15 +42,15 @@ un $ADC$ bisektrises krustojas punktā $F$. Pierādīt, ka
 $\\sphericalangle EAF = \\sphericalangle EDF$.</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.VOL.2024.10" .
 
 eliozo:LV.VOL.2024.10.3 a eliozo:Problem ;
+    eliozo:LTopic "LTExpressionTransform" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2024.10.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.3 ;
@@ -72,15 +69,14 @@ z + \\frac{1}{z} = 2x^2 \\
 \\end{array} \\right.$$</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.VOL.2024.10" .
 
 eliozo:LV.VOL.2024.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2024.10.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.4 ;
@@ -104,15 +100,14 @@ $1$ punktu (un tagad ir attiecīgi $38$ un $12$ punkti). Cik skolēnu
 kopā piedalījās šajā olimpiādē?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindCount" .
+    eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.VOL.2024.10" .
 
 eliozo:LV.VOL.2024.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2024.10.5" ;
     eliozo:problemImage eliozo:IMG.LV.VOL.2024.10.5A.png,
@@ -138,15 +133,14 @@ pie kura var gadīties, ka ar aprakstītajiem gājieniem var
 iekrāsot visas tabulas rūtiņas?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.VOL.2024.10" .
 
 eliozo:LV.VOL.2024.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2024.11.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.1 ;
@@ -156,15 +150,15 @@ $$4a + 4b^2 + \\sqrt{4a - 4b^2 - 1} \\leq 1.$$"""@lv ;
 $$4a + 4b^2 + \\sqrt{4a - 4b^2 - 1} \\leq 1.$$</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.VOL.2024.11" .
 
 eliozo:LV.VOL.2024.11.2 a eliozo:Problem ;
+    eliozo:LTopic "LTInterpretation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2024.11.2" ;
     eliozo:problemImage eliozo:IMG.LV.VOL.2024.11.2A.png ;
@@ -185,15 +179,14 @@ $BOF$ laukums ir $4$, bet trijstūra $AOD$ laukums ir $63$.
 Aprēķināt četrstūra $OECG$ laukumu!</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.VOL.2024.11" .
 
 eliozo:LV.VOL.2024.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2024.11.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.3 ;
@@ -210,15 +203,15 @@ var atrast divus datorus, kuri ir saņēmuši vienādu ziņojumu skaitu!</p>"""@
     eliozo:problemYear 2024 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
-    eliozo:seeAlso "LV.VOL.2024.9.3" .
+    eliozo:seeAlso "LV.VOL.2024.9.3" ;
+    eliozo:suffix "LV.VOL.2024.11" .
 
 eliozo:LV.VOL.2024.11.4 a eliozo:Problem ;
+    eliozo:LTopic "LTExtremeElement" ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2024.11.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.4 ;
@@ -230,15 +223,15 @@ ar īpašību, ka, izvēloties jebkurus $n+1$ no tiem, to summa dalīsies ar atl
 skaitļu summu?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.VOL.2024.11" .
 
 eliozo:LV.VOL.2024.11.5 a eliozo:Problem ;
+    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2024.11.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.5 ;
@@ -270,15 +263,14 @@ visas šādi iegūtās $y$ koordinātas tiek
 saskaitītas. Pierādīt, ka spēlētājs $B$ var panākt, lai iegūtā summa būtu tieši $n^3 - n$.</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.VOL.2024.11" .
 
 eliozo:LV.VOL.2024.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2024.12.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.1 ;
@@ -297,15 +289,14 @@ z + \\frac{1}{z} = x+y\\
 \\end{array} \\right.$$</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.VOL.2024.12" .
 
 eliozo:LV.VOL.2024.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2024.12.2" ;
     eliozo:problemImage eliozo:IMG.LV.VOL.2024.12.2A.png ;
@@ -320,15 +311,15 @@ apvilktās riņķa līnijas krustojas vēl arī punktā $T$.
 Pierādīt, ka $AT$ ir leņķa $BAC$ bisektrise!</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.VOL.2024.12" .
 
 eliozo:LV.VOL.2024.12.3 a eliozo:Problem ;
+    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2024.12.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.3 ;
@@ -348,15 +339,14 @@ uzvarēs pareizi spēlējot, ja papildus zināms, ka katrs no viņiem var apēst
 (Gadījumā, ja spēlētājs vairs nevar izdarīt gājienu, viņš zaudē).</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Algorithm" .
+    eliozo:questionType "Algorithm" ;
+    eliozo:suffix "LV.VOL.2024.12" .
 
 eliozo:LV.VOL.2024.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2024.12.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.4 ;
@@ -372,15 +362,14 @@ $C$ (piemēram, ja $n=2$, tad $C = 4196$). Vai iespējams,
 ka skaitlis $C-1$ ir pirmskaitlis?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.VOL.2024.12" .
 
 eliozo:LV.VOL.2024.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2024.12.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.5 ;
@@ -390,15 +379,15 @@ $3x^2 + y^2 + 1 \\geq A(x^2 + xy + x)$ visiem reāliem skaitļiem $x$ un $y$."""
 $3x^2 + y^2 + 1 \\geq A(x^2 + xy + x)$ visiem reāliem skaitļiem $x$ un $y$.</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.VOL.2024.12" .
 
 eliozo:LV.VOL.2024.9.1 a eliozo:Problem ;
+    eliozo:LTopic "LTExtremeElement" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2024.9.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.1 ;
@@ -410,15 +399,14 @@ lielāks nekā visu šo skaitļu lielākais kopīgais dalītājs?"""@lv ;
 lielāks nekā visu šo skaitļu lielākais kopīgais dalītājs?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.VOL.2024.9" .
 
 eliozo:LV.VOL.2024.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2024.9.2" ;
     eliozo:problemImage eliozo:IMG.LV.VOL.2024.9.2A.png ;
@@ -435,15 +423,15 @@ attiecīgi punktos $F$ un $G$. Zināms, ka trijstūra
 $BOF$ laukums ir $4$, bet trijstūra $AOD$ laukums ir $63$. Aprēķināt četrstūra $OECG$ laukumu!</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.VOL.2024.9" .
 
 eliozo:LV.VOL.2024.9.3 a eliozo:Problem ;
+    eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2024.9.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.3 ;
@@ -457,15 +445,14 @@ nosūta ziņojumu visiem datoriem, ar ko tas ir savienots. Pierādīt, ka jebkur
 var atrast divus datorus, kuri ir saņēmuši vienādu ziņojumu skaitu!</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.VOL.2024.9" .
 
 eliozo:LV.VOL.2024.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2024.9.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.4 ;
@@ -485,15 +472,14 @@ Maruta vienmēr var panākt,
 ka pēc $12$ gājieniem iegūtās izteiksmes vērtība dalās ar $9$.</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Algorithm" .
+    eliozo:questionType "Algorithm" ;
+    eliozo:suffix "LV.VOL.2024.9" .
 
 eliozo:LV.VOL.2024.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "VOL.2024.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2024.9.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.5 ;
@@ -509,7 +495,8 @@ ka skaitlis $a + c$ dalās ar $b+1$. Vai Kims to
 var izdarīt?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.VOL.2024.9" .
 
 eliozo:IMG.LV.VOL.2024.10.2A.png a eliozo:Image ;
     eliozo:imageSrc "LV.VOL.2024.10.2A.png" ;

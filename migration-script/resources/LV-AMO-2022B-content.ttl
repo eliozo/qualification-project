@@ -9,8 +9,6 @@ eliozo:LV.AMO.2022B.10.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2022B.10.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.10.1 ;
@@ -18,10 +16,12 @@ eliozo:LV.AMO.2022B.10.1 a eliozo:Problem ;
     eliozo:problemTextHtml "<p>Kāds ir skaitļa $2022^{2022}$ pēdējais cipars?</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.10" .
 
 eliozo:LV.AMO.2022B.10.2 a eliozo:Problem ;
     eliozo:LTopic "LTDivisibility",
+        "LTInvariant",
         "LTNumTheoryExamples" ;
     eliozo:concepts eliozo:TRM-disjoint-sets,
         eliozo:TRM-natural-numbers,
@@ -31,8 +31,6 @@ eliozo:LV.AMO.2022B.10.2 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2022B.10.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.10.2 ;
@@ -46,10 +44,12 @@ grupas skaitļu summa ir pirmskaitlis, ja <strong>(A)</strong> $n = 8$,
 <strong>(B)</strong> $n = 10$? Katrā grupā jābūt vismaz $2$ skaitļiem.</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2022B.10" .
 
 eliozo:LV.AMO.2022B.10.3 a eliozo:Problem ;
-    eliozo:LTopic "LTTriangles" ;
+    eliozo:LTopic "LTStructureAugmentation",
+        "LTTriangles" ;
     eliozo:concepts eliozo:TRM-area,
         eliozo:TRM-circle,
         eliozo:TRM-legs-in-right-triangle,
@@ -59,8 +59,6 @@ eliozo:LV.AMO.2022B.10.3 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2022B.10.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.10.3A.png ;
@@ -73,10 +71,12 @@ kas ir centrs riņķa līnijai ar rādiusu $3$, kura pieskaras
 abām katetēm. Aprēķināt trijstūra $ACB$ laukumu, ja $OB = 5$.</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.10" .
 
 eliozo:LV.AMO.2022B.10.4 a eliozo:Problem ;
-    eliozo:LTopic "LTEquations" ;
+    eliozo:LTopic "LTEquations",
+        "LTExpressionTransforms" ;
     eliozo:concepts eliozo:TRM-equation,
         eliozo:TRM-real-numbers,
         eliozo:TRM-root ;
@@ -84,8 +84,6 @@ eliozo:LV.AMO.2022B.10.4 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2022B.10.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.10.4 ;
@@ -99,10 +97,12 @@ nav reālu sakņu!"""@lv ;
 <p>nav reālu sakņu!</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2022B.10" .
 
 eliozo:LV.AMO.2022B.10.5 a eliozo:Problem ;
-    eliozo:LTopic "LTGraphs" ;
+    eliozo:LTopic "LTContradiction",
+        "LTGraphs" ;
     eliozo:concepts eliozo:TRM-edge,
         eliozo:TRM-graph,
         eliozo:TRM-vertex ;
@@ -110,8 +110,6 @@ eliozo:LV.AMO.2022B.10.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2022B.10.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.10.5A.png ;
@@ -132,10 +130,12 @@ ap apaļu galdu tā, lai katrs būtu paspiedis
 roku abiem saviem blakussēdētājiem!</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2022B.10" .
 
 eliozo:LV.AMO.2022B.11.1 a eliozo:Problem ;
-    eliozo:LTopic "LTCongruenceModulo" ;
+    eliozo:LTopic "LTCongruenceModulo",
+        "LTContradiction" ;
     eliozo:concepts eliozo:TRM-cube-Alg,
         eliozo:TRM-integer-numbers,
         eliozo:TRM-sum ;
@@ -143,8 +143,6 @@ eliozo:LV.AMO.2022B.11.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2022B.11.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.11.1 ;
@@ -152,10 +150,12 @@ eliozo:LV.AMO.2022B.11.1 a eliozo:Problem ;
     eliozo:problemTextHtml "<p>Vai skaitli 2022 var izteikt kā divu veselu skaitļu kubu summu?</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2022B.11" .
 
 eliozo:LV.AMO.2022B.11.2 a eliozo:Problem ;
-    eliozo:LTopic "LTEquations" ;
+    eliozo:LTopic "LTEquations",
+        "LTExpressionTransforms" ;
     eliozo:concepts eliozo:TRM-equation,
         eliozo:TRM-square-Alg,
         eliozo:TRM-sum,
@@ -164,8 +164,6 @@ eliozo:LV.AMO.2022B.11.2 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2022B.11.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.11.2 ;
@@ -173,10 +171,12 @@ eliozo:LV.AMO.2022B.11.2 a eliozo:Problem ;
     eliozo:problemTextHtml "<p>Kādām reālām $p$ vērtībām vienādojuma $x^2 + x + p = 0$ sakņu kvadrātu summa ir $16$?</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.11" .
 
 eliozo:LV.AMO.2022B.11.3 a eliozo:Problem ;
-    eliozo:LTopic "LTCircleAndRelatedAngles" ;
+    eliozo:LTopic "LTCircleAndRelatedAngles",
+        "LTStructureAugmentation" ;
     eliozo:concepts eliozo:TRM-angle,
         eliozo:TRM-inscribed-circle,
         eliozo:TRM-tangent,
@@ -185,8 +185,6 @@ eliozo:LV.AMO.2022B.11.3 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2022B.11.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.11.3A.png ;
@@ -199,10 +197,12 @@ $AB$ punktā $D$ tā, ka $AD = 8$ un $BD = 1$. Aprēķināt malas $BC$
 garumu, ja trijstūra leņķa $B$ lielums ir $120^{\\circ}$.</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.11" .
 
 eliozo:LV.AMO.2022B.11.4 a eliozo:Problem ;
-    eliozo:LTopic "LTTransformsNumTheory" ;
+    eliozo:LTopic "LTExpressionTransforms",
+        "LTTransformsNumTheory" ;
     eliozo:concepts eliozo:TRM-inequality,
         eliozo:TRM-natural-numbers,
         eliozo:TRM-sum ;
@@ -210,8 +210,6 @@ eliozo:LV.AMO.2022B.11.4 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2022B.11.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.11.4 ;
@@ -228,10 +226,13 @@ $x$, $y$, $z$ izpildītos nevienādība</p>
 <p>$$x^2 + y^2 + z^2 - xy - yz - xz \\leq 1.$$</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2022B.11" .
 
 eliozo:LV.AMO.2022B.11.5 a eliozo:Problem ;
-    eliozo:LTopic "LTGraphs" ;
+    eliozo:LTopic "LTContradiction",
+        "LTGraphs",
+        "LTInterpretation" ;
     eliozo:concepts eliozo:TRM-grid,
         eliozo:TRM-path,
         eliozo:TRM-rectangle,
@@ -240,8 +241,6 @@ eliozo:LV.AMO.2022B.11.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2022B.11.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.11.5A.png ;
@@ -272,10 +271,12 @@ Muzeja vadītājs vēlas izveidot apmeklētāju maršrutu, kuram izpildās šād
 <p>Kādām $m$ un $n$ vērtībām muzeja vadītājs var izveidot šādu maršrutu?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.11" .
 
 eliozo:LV.AMO.2022B.12.1 a eliozo:Problem ;
-    eliozo:LTopic "LTCongruenceModulo" ;
+    eliozo:LTopic "LTCongruenceModulo",
+        "LTContradiction" ;
     eliozo:concepts eliozo:TRM-cube-Alg,
         eliozo:TRM-integer-numbers,
         eliozo:TRM-sum ;
@@ -283,8 +284,6 @@ eliozo:LV.AMO.2022B.12.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2022B.12.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.1 ;
@@ -292,10 +291,12 @@ eliozo:LV.AMO.2022B.12.1 a eliozo:Problem ;
     eliozo:problemTextHtml "<p>Vai skaitli $2023^2$ var izteikt kā trīs veselu skaitļu kubu summu?</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2022B.12" .
 
 eliozo:LV.AMO.2022B.12.2 a eliozo:Problem ;
-    eliozo:LTopic "LTEquations" ;
+    eliozo:LTopic "LTEquations",
+        "LTExpressionTransforms" ;
     eliozo:concepts eliozo:TRM-cube-Alg,
         eliozo:TRM-equation,
         eliozo:TRM-real-numbers ;
@@ -303,8 +304,6 @@ eliozo:LV.AMO.2022B.12.2 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2022B.12.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.2 ;
@@ -312,10 +311,12 @@ eliozo:LV.AMO.2022B.12.2 a eliozo:Problem ;
     eliozo:problemTextHtml "<p>Kādām reālām $p$ vērtībām vienādojuma $x^2 + x + p$ sakņu kubu summa ir $(-16)$?</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.12" .
 
 eliozo:LV.AMO.2022B.12.3 a eliozo:Problem ;
-    eliozo:LTopic "LTTriangles" ;
+    eliozo:LTopic "LTStructureAugmentation",
+        "LTTriangles" ;
     eliozo:concepts eliozo:TRM-altitude,
         eliozo:TRM-area,
         eliozo:TRM-median,
@@ -324,8 +325,6 @@ eliozo:LV.AMO.2022B.12.3 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2022B.12.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.12.3A.png ;
@@ -338,10 +337,12 @@ no virsotnes $C$ vilktās mediānas garums arī ir $1$, bet
 augstuma no virsotnes $B$ garums ir $\\sqrt{3}$. Kāds var būt šī trijstūra laukums?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.12" .
 
 eliozo:LV.AMO.2022B.12.4 a eliozo:Problem ;
-    eliozo:LTopic "LTEquations" ;
+    eliozo:LTopic "LTEquations",
+        "LTExpressionTransforms" ;
     eliozo:concepts eliozo:TRM-cosine,
         eliozo:TRM-equation,
         eliozo:TRM-real-numbers,
@@ -350,8 +351,6 @@ eliozo:LV.AMO.2022B.12.4 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2022B.12.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.4 ;
@@ -359,7 +358,8 @@ eliozo:LV.AMO.2022B.12.4 a eliozo:Problem ;
     eliozo:problemTextHtml "<p>Atrisināt reālos skaitļos vienādojumu $3 \\sin x + 4 \\cos x = 6$.</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.12" .
 
 eliozo:LV.AMO.2022B.12.5 a eliozo:Problem ;
     eliozo:LTopic "LTGames" ;
@@ -373,8 +373,6 @@ eliozo:LV.AMO.2022B.12.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2022B.12.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.5 ;
@@ -400,7 +398,8 @@ viņš iegūst divus punktus). Spēle beidzas, kad tabula ir pilnībā aizpildī
 punktu. Kuram spēlētājam ir uzvaroša stratēģija, ja <strong>(A)</strong> $n = 2021$; <strong>(B)</strong> $n = 2022$?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2022B.12" .
 
 eliozo:LV.AMO.2022B.5.1 a eliozo:Problem ;
     eliozo:LTopic "LTNumeralSystems" ;
@@ -410,8 +409,6 @@ eliozo:LV.AMO.2022B.5.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2022B.5.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.5.1 ;
@@ -422,6 +419,7 @@ cipari $0$ un $2$ un kurš dalās ar $15$?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2022B.5" ;
     eliozo:topic eliozo:DecimalNotationDigits,
         eliozo:DivisibilityRulesFor3And9,
         eliozo:DivisibilityRulesLastDigits .
@@ -437,8 +435,6 @@ eliozo:LV.AMO.2022B.5.2 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2022B.5.2" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.5.2A.png ;
@@ -452,6 +448,7 @@ rūtiņu malu, kas pilnībā atrodas uz robežas, skaits.</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2022B.5" ;
     eliozo:topic eliozo:Area,
         eliozo:PolygonPerimeter,
         eliozo:SquareGridShapes .
@@ -464,8 +461,6 @@ eliozo:LV.AMO.2022B.5.3 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2022B.5.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.5.3 ;
@@ -480,6 +475,7 @@ septītdaļa – pensionāri. Cik biļetes tika pārdotas?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.5" ;
     eliozo:topic eliozo:ArithmeticSeriesDivisibility,
         eliozo:MutualPrimes .
 
@@ -491,8 +487,6 @@ eliozo:LV.AMO.2022B.5.4 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2022B.5.4" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.5.4.png ;
@@ -508,6 +502,7 @@ līdzsvarā? Atbildi pamatot!<br />
     eliozo:problemYear 2022 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.5" ;
     eliozo:topic eliozo:SystemsSubstituteVariables .
 
 eliozo:LV.AMO.2022B.5.5 a eliozo:Problem ;
@@ -517,8 +512,6 @@ eliozo:LV.AMO.2022B.5.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2022B.5.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.5.5 ;
@@ -541,6 +534,7 @@ bet abas pārējās krāsas nepatīk. Zināms, ka tieši viens no apgalvojumiem 
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.5" ;
     eliozo:topic eliozo:PartitioningInPairsBijections .
 
 eliozo:LV.AMO.2022B.6.1 a eliozo:Problem ;
@@ -551,8 +545,6 @@ eliozo:LV.AMO.2022B.6.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2022B.6.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.6.1 ;
@@ -569,6 +561,7 @@ Cik ir tādu skaitļu, kas ir apvilkti ar vismaz divām dažādām krāsām?</p>
     eliozo:problemYear 2022 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.AMO.2022B.6" ;
     eliozo:topic eliozo:MutualPrimes,
         eliozo:OtherCountingSetOperations .
 
@@ -581,8 +574,6 @@ eliozo:LV.AMO.2022B.6.2 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2022B.6.2" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.6.2.png,
@@ -599,6 +590,7 @@ Figūras var būt arī pagrieztas.<br />
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2022B.6" ;
     eliozo:topic eliozo:RotationBy90,
         eliozo:SquareGridCutting .
 
@@ -611,8 +603,6 @@ eliozo:LV.AMO.2022B.6.3 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2022B.6.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.6.3 ;
@@ -627,6 +617,7 @@ Vai var gadīties, ka Māris ieguva summu, kuras pēdējais cipars ir
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2022B.6" ;
     eliozo:topic eliozo:PeriodicRemainders,
         eliozo:SeriesOneToNSum .
 
@@ -637,8 +628,6 @@ eliozo:LV.AMO.2022B.6.4 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2022B.6.4" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.6.4.png ;
@@ -652,6 +641,7 @@ līdzsvarā? Atbildi pamatot!<br />
     eliozo:problemYear 2022 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.6" ;
     eliozo:topic eliozo:SystemsSubstituteVariables .
 
 eliozo:LV.AMO.2022B.6.5 a eliozo:Problem ;
@@ -663,8 +653,6 @@ eliozo:LV.AMO.2022B.6.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2022B.6.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.6.5.png ;
@@ -692,6 +680,7 @@ sestdiena – $56$, svētdiena – $57$. Cik ciema iedzīvotāji visu laiku melo
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.AMO.2022B.6" ;
     eliozo:topic eliozo:DoubleCounting,
         eliozo:TrueAndFalseStatements .
 
@@ -704,8 +693,6 @@ eliozo:LV.AMO.2022B.7.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2022B.7.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.7.1 ;
@@ -720,6 +707,7 @@ Cik dažādos veidos to var izdarīt?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.AMO.2022B.7" ;
     eliozo:topic eliozo:DivisibilityRulesFor3And9,
         eliozo:DivisibilityRulesLastDigits .
 
@@ -731,8 +719,6 @@ eliozo:LV.AMO.2022B.7.2 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2022B.7.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.7.2 ;
@@ -741,6 +727,7 @@ eliozo:LV.AMO.2022B.7.2 a eliozo:Problem ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2022B.7" ;
     eliozo:topic eliozo:EquationsAndMonotonicity .
 
 eliozo:LV.AMO.2022B.7.3 a eliozo:Problem ;
@@ -752,8 +739,6 @@ eliozo:LV.AMO.2022B.7.3 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2022B.7.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.7.3A.png ;
@@ -764,10 +749,12 @@ lai uz katras no taisnēm būtu atzīmēti tieši trīs punkti!"""@lv ;
 lai uz katras no taisnēm būtu atzīmēti tieši trīs punkti!</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2022B.7" .
 
 eliozo:LV.AMO.2022B.7.4 a eliozo:Problem ;
-    eliozo:LTopic "LTDivisibility" ;
+    eliozo:LTopic "LTDivisibility",
+        "LTInvariant" ;
     eliozo:concepts eliozo:TRM-game,
         eliozo:TRM-remove,
         eliozo:TRM-set,
@@ -776,8 +763,6 @@ eliozo:LV.AMO.2022B.7.4 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2022B.7.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.7.4 ;
@@ -797,7 +782,8 @@ ja sākumā kaudzē ir <strong>(A)</strong> $6$ konfektes;
 <strong>(B)</strong> $2022$ konfektes?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Algorithm" .
+    eliozo:questionType "Algorithm" ;
+    eliozo:suffix "LV.AMO.2022B.7" .
 
 eliozo:LV.AMO.2022B.7.5 a eliozo:Problem ;
     eliozo:LTopic "LTLogic" ;
@@ -808,8 +794,6 @@ eliozo:LV.AMO.2022B.7.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2022B.7.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.7.5.png ;
@@ -838,7 +822,8 @@ trešdiena – $55$, ceturtdiena – $56$, piektdiena – $57$, sestdiena – $5
 Cik ciema iedzīvotāju visu laiku melo?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindCount" .
+    eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.AMO.2022B.7" .
 
 eliozo:LV.AMO.2022B.8.1 a eliozo:Problem ;
     eliozo:LTopic "LTNumeralSystems" ;
@@ -849,8 +834,6 @@ eliozo:LV.AMO.2022B.8.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2022B.8.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.8.1 ;
@@ -864,7 +847,8 @@ vienādi) tā, lai iegūtais piecciparu skaitlis dalītos ar $12$.
 Cik dažādos veidos to var izdarīt?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindCount" .
+    eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.AMO.2022B.8" .
 
 eliozo:LV.AMO.2022B.8.2 a eliozo:Problem ;
     eliozo:LTopic "LTEquations" ;
@@ -874,8 +858,6 @@ eliozo:LV.AMO.2022B.8.2 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2022B.8.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.8.2 ;
@@ -893,7 +875,8 @@ Cik uzdevumus skolēns atrisināja pareizi,
 ja kopā viņš ieguva $13$ punktus?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.8" .
 
 eliozo:LV.AMO.2022B.8.3 a eliozo:Problem ;
     eliozo:LTopic "LTTriangles" ;
@@ -902,8 +885,6 @@ eliozo:LV.AMO.2022B.8.3 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2022B.8.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.8.3A.png ;
@@ -914,18 +895,18 @@ ka $AD = BD$ un $AB = DC = AC$. Aprēķināt trijstūra $ABC$ leņķus!"""@lv ;
 ka $AD = BD$ un $AB = DC = AC$. Aprēķināt trijstūra $ABC$ leņķus!</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2022B.8" .
 
 eliozo:LV.AMO.2022B.8.4 a eliozo:Problem ;
-    eliozo:LTopic "LTGraphs" ;
+    eliozo:LTopic "LTContradiction",
+        "LTGraphs" ;
     eliozo:concepts eliozo:TRM-distance,
         eliozo:TRM-integer-numbers ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2022B.8.4" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.8.4A.png ;
@@ -941,6 +922,7 @@ tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?</p>
     eliozo:problemYear 2022 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2022B.8" ;
     eliozo:topic eliozo:HamiltonCircuits .
 
 eliozo:LV.AMO.2022B.8.5 a eliozo:Problem ;
@@ -951,8 +933,6 @@ eliozo:LV.AMO.2022B.8.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2022B.8.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.8.5 ;
@@ -976,7 +956,8 @@ Cik draugu saka taisnību?"""@lv ;
 <p>Cik draugu saka taisnību?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindCount" .
+    eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.AMO.2022B.8" .
 
 eliozo:LV.AMO.2022B.9.1 a eliozo:Problem ;
     eliozo:LTopic "LTNumeralSystems" ;
@@ -987,8 +968,6 @@ eliozo:LV.AMO.2022B.9.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2022B.9.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.9.1 ;
@@ -1000,17 +979,17 @@ var atbilst arī vienādi cipari.)"""@lv ;
 var atbilst arī vienādi cipari.)</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindCount" .
+    eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.AMO.2022B.9" .
 
 eliozo:LV.AMO.2022B.9.2 a eliozo:Problem ;
-    eliozo:LTopic "LTInequalities" ;
+    eliozo:LTopic "LTExpressionTransforms",
+        "LTInequalities" ;
     eliozo:concepts eliozo:TRM-inequality ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2022B.9.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.9.2 ;
@@ -1018,7 +997,8 @@ eliozo:LV.AMO.2022B.9.2 a eliozo:Problem ;
     eliozo:problemTextHtml "<p>Vai noteikti $x + \\frac{9}{x} &gt; y + \\frac{9}{y}$, ja <strong>(A)</strong> $x &gt; y &gt; 0$, <strong>(B)</strong> $x &gt; y &gt; 3$?</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2022B.9" .
 
 eliozo:LV.AMO.2022B.9.3 a eliozo:Problem ;
     eliozo:LTopic "LTTriangles" ;
@@ -1030,8 +1010,6 @@ eliozo:LV.AMO.2022B.9.3 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2022B.9.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.9.3A.png ;
@@ -1046,18 +1024,18 @@ $\\sphericalangle CBK = \\sphericalangle BAC$.
 Pierādīt, ka taisne $CH$ dala nogriezni $BK$ divās vienādās daļās!</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2022B.9" .
 
 eliozo:LV.AMO.2022B.9.4 a eliozo:Problem ;
-    eliozo:LTopic "LTGraphs" ;
+    eliozo:LTopic "LTContradiction",
+        "LTGraphs" ;
     eliozo:concepts eliozo:TRM-distance,
         eliozo:TRM-integer-numbers ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2022B.9.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.9.4 ;
@@ -1072,10 +1050,13 @@ tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?</p>
     eliozo:problemYear 2022 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2022B.9" ;
     eliozo:topic eliozo:HamiltonCircuits .
 
 eliozo:LV.AMO.2022B.9.5 a eliozo:Problem ;
-    eliozo:LTopic "LTGraphs" ;
+    eliozo:LTopic "LTContradiction",
+        "LTGraphs",
+        "LTInterpretation" ;
     eliozo:concepts eliozo:TRM-grid,
         eliozo:TRM-path,
         eliozo:TRM-rectangle,
@@ -1084,8 +1065,6 @@ eliozo:LV.AMO.2022B.9.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2022B.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2022B.9.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.9.5A.png ;
@@ -1116,7 +1095,8 @@ kuram izpildās šādas īpašības:</p>
 <p>Vai muzeja vadītājs var izveidot šādu maršrutu?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2022B.9" .
 
 eliozo:IMG.LV.AMO.2022B.10.3A.png a eliozo:Image ;
     eliozo:imageSrc "LV.AMO.2022B.10.3A.png" ;

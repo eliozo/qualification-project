@@ -5,8 +5,6 @@ eliozo:LT.VUMIF.2016.10.3 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2016.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2016.10.3" ;
     eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2016.10.3 ;
@@ -20,6 +18,7 @@ $\\sqrt[5]{5n}$, $\\sqrt[6]{6n}$, $\\sqrt[7]{7n}$
 ir naturāli. </p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
+    eliozo:suffix "LT.VUMIF.2016.10" ;
     eliozo:topic eliozo:ArithmeticSeriesGaps,
         eliozo:CanonicalFactorization,
         eliozo:ChineseRemainderTheorem,
@@ -30,8 +29,6 @@ eliozo:LT.VUMIF.2016.11_12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2016.11_12" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2016.11_12.1" ;
     eliozo:problemText """Agne savā traukā ielēja $p$ litrus ūdens, 
@@ -55,14 +52,13 @@ Spēli sāk Agne. Pēc simts gājieniem Agnes traukā
 bija $q$ litri ūdens, bet Bena traukā - $p$ litri ūdens. 
 Atrodiet $\\frac{p}{q}$.</p>"""@lv ;
     eliozo:problemYear 2016 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:suffix "LT.VUMIF.2016.11_12" .
 
 eliozo:LT.VUMIF.2016.11_12.3 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2016.11_12" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2016.11_12.3" ;
     eliozo:problemText """Noskaidrojiet, vai eksistē tāds naturāls skaitlis $n$, ka 
@@ -74,14 +70,13 @@ naturāla skaitļa kvadrāts.
 skaitlis $n \\cdot 2^{2016} - 7$ ir
 naturāla skaitļa kvadrāts.</p>"""@lv ;
     eliozo:problemYear 2016 ;
-    eliozo:problem_number 3 .
+    eliozo:problem_number 3 ;
+    eliozo:suffix "LT.VUMIF.2016.11_12" .
 
 eliozo:LT.VUMIF.2016.9.3 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2016.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2016.9.3" ;
     eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2016.9.3 ;
@@ -96,6 +91,7 @@ ir naturāls.</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
     eliozo:strategy "CaseAnalysis" ;
+    eliozo:suffix "LT.VUMIF.2016.9" ;
     eliozo:topic eliozo:ExhaustionMethod,
         eliozo:NumTheoryInequalityMethod,
         eliozo:PolynomialLongDivision .
@@ -104,8 +100,6 @@ eliozo:LT.VUMIF.2017.10.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2017.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2017.10.1" ;
     eliozo:problemText """Atrodiet visus veselu skaitļu pārus $(a,b)$, 
@@ -120,14 +114,13 @@ kuriem eksistē tādi veseli skaitļi $x$ un
 $y$, ka
 $$8x^4 + 8y^4 = a^4 + 6a^2b^2 + b^4.$$</p>"""@lv ;
     eliozo:problemYear 2017 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:suffix "LT.VUMIF.2017.10" .
 
 eliozo:LT.VUMIF.2017.10.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2017.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2017.10.2" ;
     eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2017.10.2 ;
@@ -141,6 +134,7 @@ $(m,n)$, kas apmierina vienādību
 $$m^2 + 2m - 9 = n^2 + n.$$</p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 2 ;
+    eliozo:suffix "LT.VUMIF.2017.10" ;
     eliozo:topic eliozo:CompletingSquare,
         eliozo:ExhaustionMethod,
         eliozo:FullPowerGaps,
@@ -150,8 +144,6 @@ eliozo:LT.VUMIF.2017.11_12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2017.11_12" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2017.11_12.2" ;
     eliozo:problemText """Atrodiet vienādojuma
@@ -167,14 +159,13 @@ visus naturālos atrisinājumus $(x,y)$.
 Šeit $\\mbox{LKD}(x,y)$ un $\\mbox{MKD}(x,y)$ attiecīgi apzīmē skaitļu 
 $x$ un $y$ lielāko kopīgo dalītāju un mazāko kopīgo dalāmo. </p>"""@lv ;
     eliozo:problemYear 2017 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:suffix "LT.VUMIF.2017.11_12" .
 
 eliozo:LT.VUMIF.2017.11_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2017.11_12" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2017.11_12.4" ;
     eliozo:problemImage eliozo:IMG.LT.VUMIF.2017.11_12.4.svg ;
@@ -198,14 +189,13 @@ spēlētājam ir uzvaras stratēģija, un parādiet to.</p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 4 ;
     eliozo:strategy "BeginAtTheEnd" ;
+    eliozo:suffix "LT.VUMIF.2017.11_12" ;
     eliozo:topic eliozo:GameInvariant .
 
 eliozo:LT.VUMIF.2017.9.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2017.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2017.9.2" ;
     eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2017.9.2 ;
@@ -221,6 +211,7 @@ viens skaitlis būtu otra kvadrāts?<br />
 <em>Piezīme.</em> Pirmais skaitļa cipars nevar būt nulle.</p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 2 ;
+    eliozo:suffix "LT.VUMIF.2017.9" ;
     eliozo:topic eliozo:DigitsInOperationResult,
         eliozo:ExhaustionMethod .
 
@@ -228,8 +219,6 @@ eliozo:LT.VUMIF.2018.10.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2018.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2018.10.4" ;
     eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2018.10.4 ;
@@ -245,6 +234,7 @@ Norādiet visas iespējamās skaitļa $n$ vērtības,
 uzrakstot, kāds var būt skaitļa $n$ sadalījums pirmreizinātājos. </p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
+    eliozo:suffix "LT.VUMIF.2018.10" ;
     eliozo:topic eliozo:DivisorNumberAndSum,
         eliozo:FactorizationAndDivisibility .
 
@@ -252,8 +242,6 @@ eliozo:LT.VUMIF.2018.11_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2018.11_12" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2018.11_12.4" ;
     eliozo:problemText """Naturālie skaitļi $p$, $x$, $y$ apmierina vienādojumus:
@@ -267,14 +255,13 @@ $$p + 1 = 2x^2,\\;\\;p^2 + 1 = 2y^2.$$
 Noskaidrojiet visas iespējamās skaitļa $p$ vērtības, ja 
 zināms, ka šis skaitlis ir pirmskaitlis. </p>"""@lv ;
     eliozo:problemYear 2018 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:suffix "LT.VUMIF.2018.11_12" .
 
 eliozo:LT.VUMIF.2018.9.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2018.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2018.9.4" ;
     eliozo:problemText """Naturālam skaitlim $M = 3N$ 
@@ -298,14 +285,13 @@ visiem to pašu).
 Atrodiet visas iespējamās skaitļa $N$ pēdējā 
 cipara vērtības.</p>"""@lv ;
     eliozo:problemYear 2018 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:suffix "LT.VUMIF.2018.9" .
 
 eliozo:LT.VUMIF.2019.10.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2019.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2019.10.4" ;
     eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2019.10.4 ;
@@ -323,6 +309,7 @@ Pierādīt, ka, ja viens septiņīgs skaitlis dalās
 ar citu septiņīgu skaitli, tad tie ir vienādi. </p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 4 ;
+    eliozo:suffix "LT.VUMIF.2019.10" ;
     eliozo:topic eliozo:DivisibilityRulesForRemainders,
         eliozo:Invariant,
         eliozo:ModularArithmetic .
@@ -331,8 +318,6 @@ eliozo:LT.VUMIF.2019.11_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2019.11_12" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2019.11_12.4" ;
     eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2019.11_12.4 ;
@@ -356,6 +341,7 @@ a) $M$ nedalās ne ar vienu piecīgu skaitli, izņemot sevi pašu;<br />
 b) $N$ nedalās ne ar vienu piecīgu skaitli. </p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 4 ;
+    eliozo:suffix "LT.VUMIF.2019.11_12" ;
     eliozo:topic eliozo:ChineseRemainderTheorem,
         eliozo:DivisibilityRulesForRemainders,
         eliozo:ExhaustionMethod,
@@ -366,8 +352,6 @@ eliozo:LT.VUMIF.2019.9.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2019.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2019.9.1" ;
     eliozo:problemText """Atrodiet visus veselu skaitļu trijniekus $(x,y,z)$, 
@@ -389,14 +373,13 @@ y^2 - x^2 = x+y,\\
 2x^3 - 6x = z^3 - 4x^2.
 \\end{array} \\right.$$</p>"""@lv ;
     eliozo:problemYear 2019 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:suffix "LT.VUMIF.2019.9" .
 
 eliozo:LT.VUMIF.2019.9.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2019.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2019.9.2" ;
     eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2019.9.2 ;
@@ -431,6 +414,7 @@ nodrošināt uzvaru, lai kā spēlētu Algis. </p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 2 ;
     eliozo:strategy "WorkingBackwards" ;
+    eliozo:suffix "LT.VUMIF.2019.9" ;
     eliozo:topic eliozo:GameInvariant,
         eliozo:ModularParity,
         eliozo:StrongAndReverseInduction .
@@ -439,8 +423,6 @@ eliozo:LT.VUMIF.2019.9.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
-    eliozo:problemBook "LT" ;
-    eliozo:problemBookSection "VUMIF.2019.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2019.9.4" ;
     eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2019.9.4 ;
@@ -460,6 +442,7 @@ ciparus. Kādu ciparu trijnieku viņš varēja iegūt?
 Atrodiet visas iespējas. </p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 4 ;
+    eliozo:suffix "LT.VUMIF.2019.9" ;
     eliozo:topic eliozo:CongruenceEquations,
         eliozo:CountingUsingSymmetry,
         eliozo:DivisibilityRulesLastDigits,

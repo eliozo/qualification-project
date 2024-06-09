@@ -44,6 +44,7 @@ vienādi, ja: **(A)** $n=72$; **(B)** $n=73$; **(C)** $n=74$?
 
 * questionType:ProveDisprove,ProveDisprove,ProveDisprove
 * domain:Comb
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -71,6 +72,7 @@ būt uzrakstīts uz tāfeles?
 
 * questionType:FindOptimal
 * domain:NT
+* LTopic:LTExtremeElement
 
 </small>
 
@@ -86,6 +88,7 @@ $$3\left(x^{2}+y^{2}+z^{2}+4\right) - 2(xy + yz + zx) - 4(x+y+z)=0$$
 
 * questionType:FindAll
 * domain:Alg
+* LTopic:LTExpressionTransforms
 
 </small>
 
@@ -125,6 +128,7 @@ pēdējā skaitļa vērtības!
 
 * questionType:FindAll
 * domain:NT
+* LTopic:LTInvariant
 
 </small>
 
@@ -158,6 +162,7 @@ apli uzrakstītie skaitļi kļūst vienādi?
 
 * questionType:FindAll
 * domain:Comb
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -173,6 +178,7 @@ un atrast šo vērtību!
 
 * questionType:Prove,FindAll
 * domain:Alg
+* LTopic:LTExpressionTransforms
 
 </small>
 
@@ -204,6 +210,7 @@ atrodas uz vienas riṇka līnijas!
 
 * questionType:Prove
 * domain:Geom
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -250,6 +257,7 @@ un atrast šo vērtību!
 
 * questionType:Prove
 * domain:Alg
+* LTopic:LTExpressionTransforms
 
 </small>
 

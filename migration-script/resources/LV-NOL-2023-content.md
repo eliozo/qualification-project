@@ -28,6 +28,7 @@ taciṇas var krustoties. Vai iespējams, ka no mājiņām iziet attiecīgi:
 
 * questionType:ProveDisprove,ProveDisprove
 * domain:Comb
+* LTopic:LTInvariant
 
 </small>
 
@@ -74,6 +75,7 @@ sarkanās un zilās monētas, ja sākumā ir dota viena sarkana monēta?
 
 * questionType:ProveDisprove
 * domain:Comb
+* LTopic:LTInvariant
 
 </small>
 
@@ -106,6 +108,7 @@ krustoties. Vai iespējams, ka no mājinām iziet attiecīgi:
 
 * questionType:ProveDisprove
 * domain:Comb
+* LTopic:LTInvariant
 
 </small>
 
@@ -152,6 +155,7 @@ Vai, vairākkārt izpildot šādus gājienus, no skaitla $17$ var iegūt:
 
 * questionType:ProveDisprove,ProveDisprove
 * domain:NT
+* LTopic:LTInvariant
 
 </small>
 
@@ -185,6 +189,7 @@ no tām būtu savienota ar vadu ar tieši $5$ citām lampiņām?
 
 * questionType:ProveDisprove,ProveDisprove
 * domain:Comb
+* LTopic:LTInvariant
 
 </small>
 
@@ -198,6 +203,7 @@ $\sphericalangle A=\sphericalangle B$, $BC=1$ un $AD=3$. Pierādīt, ka $CD>2$.
 
 * questionType:Prove
 * domain:Geom
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -229,6 +235,7 @@ ja sākumā kastē atrodas:
 
 * questionType:ProveDisprove,ProveDisprove
 * domain:Comb
+* LTopic:LTInvariant
 
 </small>
 
@@ -263,6 +270,7 @@ nedraudzējas. Vai var gadīties, ka **(A)** $m=11$, **(B)** $m=10$?
 
 * questionType:ProveDisprove,ProveDisprove
 * domain:Comb
+* LTopic:LTInvariant
 
 </small>
 
@@ -277,6 +285,7 @@ ka $AM = AK = AC$. Zināms, ka $AK \perp MC$. Aprēḳināt trijstūra $ABC$ le�
 
 * questionType:FindAll
 * domain:Geom
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -339,6 +348,7 @@ rūķim ir tieši $9$ draugi?
 
 * questionType:ProveDisprove
 * domain:Comb
+* LTopic:LTInvariant
 
 </small>
 
@@ -353,6 +363,7 @@ Zināms, ka $CD \| BX$. Aprēķināt $AD$ garumu, ja $BX=3, BC=7$ un $CD=6$.
 
 * questionType:FindAll
 * domain:Geom
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -367,6 +378,7 @@ $$\left(x^{4}+1\right)\left(y^{4}+1\right)=4 x^{2} y^{2}$$
 
 * questionType:FindAll
 * domain:Alg
+* LTopic:LTExpressionTransforms
 
 </small>
 
@@ -430,6 +442,7 @@ Aprēḳināt četrstūra $ABHC$ laukumu, ja $AH = BC = 8$.
 
 * questionType:FindAll
 * domain:Geom
+* LTopic:StructureAugmentation
 
 </small>
 
@@ -473,6 +486,7 @@ Pierādīt, ka $x^{2}+y^{2}+\frac{1}{2} \geq x+y$ visiem reāliem $x$ un $y$.
 
 * questionType:Prove
 * domain:Alg
+* LTopic:LTExpressionTransforms
 
 </small>
 
@@ -489,6 +503,7 @@ trīs rūḳus, kas visi savā starpā draudzējas, ja šajā zemē ir
 
 * questionType:ProveDisprove,ProveDisprove
 * domain:Comb
+* LTopic:LTContradiction
 
 </small>
 
@@ -505,6 +520,7 @@ ja $\frac{AE}{EB}=\frac{2}{5}$.
 
 * questionType:FindAll
 * domain:Geom
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -518,6 +534,7 @@ nav izsakāms formā $36n+8$, kur $n$ ir naturāls skaitlis!
 
 * questionType:Prove
 * domain:NT
+* LTopic:LTContradiction
 
 </small>
 
@@ -560,6 +577,7 @@ $$x^{2}+y^{2}+z^{2}+a \geq x + 2y + 3z$$
 
 * questionType:FindOptimal
 * domain:Alg
+* LTopic:LTExpressionTransforms
 
 </small>
 
@@ -576,6 +594,7 @@ visas $3$ partijas, vai nevienu partiju, ja turnīrā piedalās
 
 * questionType:ProveDisprove,ProveDisprove
 * domain:Comb
+* LTopic:LTMeanValuePrinciple
 
 </small>
 
@@ -604,6 +623,7 @@ formā $27n+11$, kur $n$ ir naturāls skaitlis.
 
 * questionType:Prove
 * domain:NT
+* LTopic:LTExpressionTransforms
 
 </small>
 
@@ -620,5 +640,6 @@ ka visas kastes ir tukšas?
 
 * questionType:FindOptimal
 * domain:Comb
+* LTopic:LTInduction
 
 </small>

@@ -109,17 +109,18 @@ dl.olympiads  dt {
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="{{ 'active' if active == 'main' else '' }}"><a href="{{ url_for('main') }}">Sākumlapa</a>
+                <li class="{{ 'active' if active == 'main' else '' }}"><a href="{{ url_for('main') }}">Sākums</a>
                 </li>
-                <li class="{{ 'active' if active == 'olympiads' else '' }}"><a href="{{ url_for('getOlympiads') }}">Olimpiādes</a></li>
-                <li class="{{ 'active' if active == 'skills' else '' }}"><a
-                        href="{{ url_for('getSkills') }}">Tēmas</a></li>
-                <li class="{{ 'active' if active == 'topics' else '' }}"><a href="{{ url_for('getIndex') }}">Indekss</a>
+                <li class="{{ 'active' if active == 'filter' else '' }}"><a href="{{ url_for('getFilter') }}">Filtri</a>
                 </li>
-                <li class="{{ 'active' if active == 'video' else '' }}"><a href="{{ url_for('getVideo') }}">Video
-                    atrisinājumi</a></li>
-                <li class="{{ 'active' if active == 'info' else '' }}"><a
-                        href="{{ url_for('getInfo') }}">Bibliogrāfija</a></li>
+                <li class="{{ 'active' if active == 'archive' else '' }}"><a href="{{ url_for('getArchive') }}">Arhīvs</a></li>
+                <li class="{{ 'active' if active == 'topics' else '' }}"><a
+                        href="{{ url_for('getTopics') }}">Tēmas</a></li>
+                <li class="{{ 'active' if active == 'concepts' else '' }}"><a href="{{ url_for('getConcepts') }}">Jēdzieni</a>
+                </li>
+                <li class="{{ 'active' if active == 'video' else '' }}"><a href="{{ url_for('getVideo') }}">Video</a></li>
+                <li class="{{ 'active' if active == 'references' else '' }}"><a
+                        href="{{ url_for('getReferences') }}">Atsauces</a></li>
             </ul>
         </div>
     </div>

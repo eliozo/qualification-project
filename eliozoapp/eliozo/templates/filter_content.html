@@ -1,0 +1,89 @@
+{% extends 'global.html' %}
+
+{% block content %}
+<div class="col-sm-8 text-left">
+    <!-- Klase, Nozare, Jautājuma tips, Metode -->
+
+    <form class="search-form" action="#" method="GET">
+        <div class="filter-box">
+            <!-- Grade Filter -->
+            <div class="filter" style="max-width: 240px;">
+                <b>Klase:</b>
+                {% for (val,lbl) in [('5','5'), ('6','6'), ('7', '7'), ('8', '8'),
+                ('9', '9'), ('10', '10'), ('11', '11'), ('12', '12'), ('', 'Visas')] %}
+                {% if val == grade %}
+                <label class="selected"><input type="radio" name="grade" checked="1" value="{{ val }}">{{ lbl }}&nbsp;</label>
+                {% else %}
+                <label><input type="radio" name="grade" value="{{ val }}">{{ lbl }}&nbsp;</label>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <!-- Domain Filter -->
+            <div class="filter" style="max-width: 210px;">
+                <b>Nozare:</b>
+                {% for (val,lbl) in [('Alg','Alg'), ('Comb','Comb'), ('Geom', 'Geom'),
+                ('NT', 'NT'),('', 'Visas')] %}
+                {% if val == domain %}
+                <label class="selected"><input type="radio" name="domain" checked="1" value="{{ val }}">{{ lbl }}
+                {% if domain_counts %} [{{ domain_counts[val] }}]&nbsp; {% endif %}
+                </label><br/>
+                {% else %}
+                <label><input type="radio" name="domain" value="{{ val }}">{{ lbl }}
+                {% if domain_counts %} [{{ domain_counts[val] }}]&nbsp; {% endif %}
+                </label><br/>
+                {% endif %}
+                {% endfor %}
+            </div>
+
+            <div class="filter">
+                <b>Jautājums:</b>
+                {% for (val,lbl) in [('FindAll','FindAll'), ('FindCount','FindCount'), ('FindOptimal', 'FindOptimal'),
+                ('FindExample', 'FindExample'),('Prove','Prove'),('ProveDisprove','ProveDisprove'),
+                ('Algorithm','Algorithm'),('', 'Visi')] %}
+                {% if val == questionType %}
+                <label class="selected"><input type="radio" name="questionType" checked="1" value="{{ val }}">{{ lbl }}&nbsp;</label>
+                {% else %}
+                <label><input type="radio" name="questionType" value="{{ val }}">{{ lbl }}&nbsp;</label>
+                {% endif %}
+                {% endfor %}
+            </div>
+
+            <div class="filter">
+                <b>Metode:</b>
+                {% for (val,lbl) in [('LTInduction','Indukcija'), ('LTMeanValuePrinciple','Vid.Vērtība'),
+                ('LTExtremeElement', 'Ekstr.Elements'),('LTInvariant', 'Invariants'),
+                ('LTContradiction', 'Pretruna'),('LTInterpretation','Interpretācijas'),
+                ('LTExpressionTransforms','Pārveidojumi'),('LTStructureAugmentation','Papildkonstrukcijas'),
+                ('', 'Visas')] %}
+                {% if val == method %}
+                <label class="selected"><input type="radio" name="method" checked="1" value="{{ val }}">{{ lbl }}&nbsp;</label>
+                {% else %}
+                <label><input type="radio" name="method" value="{{ val }}">{{ lbl }}&nbsp;</label>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <button type="submit" class="search-button">Meklēt</button>
+        {% if page_offsets %}
+        &nbsp; Pages:
+        {% for curr_offset in page_offsets %}
+        {% if curr_offset == myoffset %}
+        <b>{{ curr_offset//10+1 }}</b>
+        {% else %}
+        <a href="{{ url_for('getFilter',grade=grade,domain=domain,questionType=questionType,method=method,offset=curr_offset) }}">{{ curr_offset//10+1 }}</a>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+    </form>
+
+
+{% for problem in problems %}
+<h3 style="font-size: 120%; color: #1565C0;">{{ problem.problemid }}</h3>
+
+{{ problem.text | safe }}
+
+<p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">Vairāk...</a></p>
+{% endfor %}
+
+</div>
+{% endblock %}

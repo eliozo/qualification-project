@@ -479,7 +479,7 @@ ja sākumā kaudzē ir **(A)** $6$ konfektes;
 * concepts:game,set,remove,to-win
 * questionType:Algorithm,Algorithm
 * domain:NT
-* LTopic:LTDivisibility
+* LTopic:LTDivisibility,LTInvariant
 
 </small>
 
@@ -696,7 +696,7 @@ tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?
 * concepts:integer-numbers,distance
 * questionType:ProveDisprove,ProveDisprove
 * domain:Comb
-* LTopic:LTGraphs
+* LTopic:LTGraphs,LTContradiction
 * topic:HamiltonCircuits
 
 </small>
@@ -810,7 +810,7 @@ Vai noteikti $x + \frac{9}{x} > y + \frac{9}{y}$, ja **(A)** $x > y > 0$, **(B)*
 * concepts:inequality
 * questionType:ProveDisprove,ProveDisprove
 * domain:Alg
-* LTopic:LTInequalities
+* LTopic:LTInequalities,LTExpressionTransforms
 
 </small>
 
@@ -891,7 +891,7 @@ tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?
 * concepts:integer-numbers,distance
 * questionType:ProveDisprove
 * domain:Comb
-* LTopic:LTGraphs
+* LTopic:LTGraphs,LTContradiction
 * topic:HamiltonCircuits
 
 </small>
@@ -945,7 +945,7 @@ Vai muzeja vadītājs var izveidot šādu maršrutu?
 * concepts:grid,square-side,rectangle,path
 * questionType:ProveDisprove,ProveDisprove
 * domain:Comb
-* LTopic:LTGraphs
+* LTopic:LTGraphs,LTContradiction,LTInterpretation
 
 </small>
 
@@ -1031,7 +1031,7 @@ grupas skaitļu summa ir pirmskaitlis, ja **(A)** $n = 8$,
 * concepts:primes,natural-numbers,disjoint-sets,sum
 * questionType:ProveDisprove,ProveDisprove
 * domain:NT
-* LTopic:LTNumTheoryExamples,LTDivisibility
+* LTopic:LTNumTheoryExamples,LTDivisibility,LTInvariant
 
 </small>
 
@@ -1061,7 +1061,7 @@ abām katetēm. Aprēķināt trijstūra $ACB$ laukumu, ja $OB = 5$.
 * concepts:right-triangle,area,legs-in-right-triangle,circle,tangent
 * questionType:FindAll
 * domain:Geom
-* LTopic:LTTriangles
+* LTopic:LTTriangles,LTStructureAugmentation
 
 </small>
 
@@ -1103,7 +1103,7 @@ nav reālu sakņu!
 * concepts:equation,real-numbers,root
 * questionType:Prove
 * domain:Alg
-* LTopic:LTEquations
+* LTopic:LTEquations,LTExpressionTransforms
 
 </small>
 
@@ -1140,7 +1140,7 @@ roku abiem saviem blakussēdētājiem!
 * concepts:graph,vertex,edge
 * questionType:Prove
 * domain:Comb
-* LTopic:LTGraphs
+* LTopic:LTGraphs,LTContradiction
 
 </small>
 
@@ -1223,7 +1223,7 @@ Vai skaitli 2022 var izteikt kā divu veselu skaitļu kubu summu?
 * concepts:sum,cube-Alg,integer-numbers
 * questionType:ProveDisprove
 * domain:NT
-* LTopic:LTCongruenceModulo
+* LTopic:LTCongruenceModulo,LTContradiction
 
 </small>
 
@@ -1270,7 +1270,7 @@ Kādām reālām $p$ vērtībām vienādojuma $x^2 + x + p = 0$ sakņu kvadrātu
 * concepts:equation,square-Alg,sum,value
 * questionType:FindAll
 * domain:Alg
-* LTopic:LTEquations
+* LTopic:LTEquations,LTExpressionTransforms
 
 </small>
 
@@ -1296,7 +1296,7 @@ garumu, ja trijstūra leņķa $B$ lielums ir $120^{\circ}$.
 * concepts:triangle,inscribed-circle,angle,tangent
 * questionType:FindAll
 * domain:Geom
-* LTopic:LTCircleAndRelatedAngles
+* LTopic:LTCircleAndRelatedAngles,LTStructureAugmentation
 
 </small>
 
@@ -1336,7 +1336,7 @@ $$x^2 + y^2 + z^2 - xy - yz - xz \leq 1.$$
 * concepts:inequality,natural-numbers,sum
 * questionType:Prove
 * domain:NT
-* LTopic:LTTransformsNumTheory
+* LTopic:LTTransformsNumTheory,LTExpressionTransforms
 
 </small>
 
@@ -1382,7 +1382,7 @@ Kādām $m$ un $n$ vērtībām muzeja vadītājs var izveidot šādu maršrutu?
 * concepts:grid,square-side,rectangle,path
 * questionType:FindAll
 * domain:Comb
-* LTopic:LTGraphs
+* LTopic:LTGraphs,LTContradiction,LTInterpretation
 
 </small>
 
@@ -1446,7 +1446,7 @@ Vai skaitli $2023^2$ var izteikt kā trīs veselu skaitļu kubu summu?
 * concepts:integer-numbers,cube-Alg,sum
 * questionType:ProveDisprove
 * domain:NT
-* LTopic:LTCongruenceModulo
+* LTopic:LTCongruenceModulo,LTContradiction
 
 </small>
 
@@ -1494,7 +1494,7 @@ Kādām reālām $p$ vērtībām vienādojuma $x^2 + x + p$ sakņu kubu summa ir
 * concepts:real-numbers,cube-Alg,equation
 * questionType:FindAll
 * domain:Alg
-* LTopic:LTEquations
+* LTopic:LTEquations,LTExpressionTransforms
 
 </small>
 
@@ -1525,7 +1525,7 @@ augstuma no virsotnes $B$ garums ir $\sqrt{3}$. Kāds var būt šī trijstūra l
 * concepts:triangle,median,altitude,area
 * questionType:FindAll
 * domain:Geom
-* LTopic:LTTriangles
+* LTopic:LTTriangles,LTStructureAugmentation
 
 </small>
 
@@ -1585,7 +1585,7 @@ Atrisināt reālos skaitļos vienādojumu $3 \sin x + 4 \cos x = 6$.
 * concepts:equation,real-numbers,sine,cosine
 * questionType:FindAll
 * domain:Alg
-* LTopic:LTEquations
+* LTopic:LTEquations,LTExpressionTransforms
 
 </small>
 

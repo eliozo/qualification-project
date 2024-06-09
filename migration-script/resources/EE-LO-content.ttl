@@ -5,8 +5,6 @@ eliozo:EE.LO.2010.10.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2010.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2010.10.2" ;
     eliozo:problemSolution eliozo:SOLN.EE.LO.2010.10.2 ;
@@ -31,6 +29,7 @@ genre=integer-equation
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
     eliozo:strategy "ExtremeElement" ;
+    eliozo:suffix "EE.LO.2010.10" ;
     eliozo:topic eliozo:ExhaustionMethod,
         eliozo:NumTheoryInequalityMethod .
 
@@ -38,8 +37,6 @@ eliozo:EE.LO.2011.10.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2011.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2011.10.2" ;
     eliozo:problemText """Atrast visus naturālu skaitļu četriniekus $(w,x,y,z)$, 
@@ -50,14 +47,13 @@ kuriem izpildās vienādība $w^x + w^y = w^z$.
 kuriem izpildās vienādība $w^x + w^y = w^z$.</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "EE.LO.2011.10" .
 
 eliozo:EE.LO.2012.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2012.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2012.10.1" ;
     eliozo:problemText """Atrast visus tādus naturālu skaitļu pārus $(n,m)$, kuriem 
@@ -74,14 +70,13 @@ otra, apmainot vietām ciparus.<br />
 sauc skaitli $\\sqrt{x y}$.</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "EE.LO.2012.10" .
 
 eliozo:EE.LO.2012.10.5 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2012.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2012.10.5" ;
     eliozo:problemText """Atrast visus naturālu skaitļu trijniekus $(x,y,z)$, kuriem 
@@ -94,14 +89,13 @@ $x \\cdot y! + 2y \\cdot x! = z!$.<br />
 reizinājumu $1 \\cdot 2 \\cdot \\ldots \\cdot n$.</em></p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "EE.LO.2012.10" .
 
 eliozo:EE.LO.2013.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2013.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2013.10.1" ;
     eliozo:problemSolution eliozo:SOLN.EE.LO.2013.10.1 ;
@@ -111,6 +105,7 @@ eliozo:EE.LO.2013.10.1 a eliozo:Problem ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindExample" ;
     eliozo:strategy "ModularArithmeticContradiction" ;
+    eliozo:suffix "EE.LO.2013.10" ;
     eliozo:topic eliozo:DivisibilityRulesForRemainders,
         eliozo:ModularArithmetic,
         eliozo:ModularArithmeticContradiction .
@@ -119,8 +114,6 @@ eliozo:EE.LO.2014.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2014.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2014.10.1" ;
     eliozo:problemText """Ar $a$ un $n$ apzīmēti naturāli skaitļi. Pierādīt, ka 
@@ -135,14 +128,13 @@ $\\lfloor x \\rfloor$ apzīmē skaitļa $x$ (apakšējo) veselo daļu,
 t.i. vislielāko veselo skaitli, kas nepārsniedz $x$.</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "EE.LO.2014.10" .
 
 eliozo:EE.LO.2014.10.5 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2014.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2014.10.5" ;
     eliozo:problemText """Ar $m$ apzīmēts naturāls skaitlis. Pierādīt, ka, ja Mari uzrakstījusi 
@@ -155,14 +147,13 @@ tiem $4$ tādus, ka kaut kādu divu izvēlēto skaitļu summa un atlikušo
 divu izvēlēto skaitļu summa dos vienādus atlikumus, dalot ar $m$.</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "EE.LO.2014.10" .
 
 eliozo:EE.LO.2015.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2015.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2015.10.1" ;
     eliozo:problemText """Atrast visus naturālos skaitļus $n$, kas lielāki par vienu, 
@@ -175,14 +166,13 @@ $\\frac{1}{n}$ un $\\frac{1}{n + 1}$
 izsakāmi kā galīgas decimāldaļas.</p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "EE.LO.2015.10" .
 
 eliozo:EE.LO.2015.10.4 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2015.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2015.10.4" ;
     eliozo:problemText """Uz tāfeles virknē viens pēc otra uzrakstīti naturālie skaitļi 
@@ -213,14 +203,13 @@ questionType=Prove
 genre=sequence-properties
 -->"""@lv ;
     eliozo:problemYear 2015 ;
-    eliozo:problem_number 4 .
+    eliozo:problem_number 4 ;
+    eliozo:suffix "EE.LO.2015.10" .
 
 eliozo:EE.LO.2016.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2016.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2016.10.1" ;
     eliozo:problemText """Atrast visus tos četrciparu skaitļus, kuri ir tieši par $2016$ lielāki 
@@ -239,14 +228,13 @@ questionType=FindAll
 genre=digit-manipulation
 -->"""@lv ;
     eliozo:problemYear 2016 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:suffix "EE.LO.2016.10" .
 
 eliozo:EE.LO.2016.10.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2016.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2016.10.2" ;
     eliozo:problemText """Atrast visus veselu skaitļu pārus $(a,b)$, kuriem izpildās vienādība
@@ -265,14 +253,13 @@ questionType=FindAll
 genre=integer-equation
 -->"""@lv ;
     eliozo:problemYear 2016 ;
-    eliozo:problem_number 2 .
+    eliozo:problem_number 2 ;
+    eliozo:suffix "EE.LO.2016.10" .
 
 eliozo:EE.LO.2017.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2017.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2017.10.1" ;
     eliozo:problemText """Juku izvirzījis matemātisku hipotēzi, kas apgalvo, ka jebkuram 
@@ -300,14 +287,13 @@ questionType=ProveDisprove
 concepts=coprimes
 -->"""@lv ;
     eliozo:problemYear 2017 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:suffix "EE.LO.2017.10" .
 
 eliozo:EE.LO.2017.10.5 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2017.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2017.10.5" ;
     eliozo:problemText """a) Uz tāfeles uzrakstīts trīsciparu skaitļa vispārīgais izskats 
@@ -354,14 +340,13 @@ questionType=Algorithm,ProveDisprove
 genre=game
 -->"""@lv ;
     eliozo:problemYear 2017 ;
-    eliozo:problem_number 5 .
+    eliozo:problem_number 5 ;
+    eliozo:suffix "EE.LO.2017.10" .
 
 eliozo:EE.LO.2018.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2018.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2018.10.1" ;
     eliozo:problemText """Atrast visus veselu skaitļu pārus $(a, b)$, kuriem
@@ -380,14 +365,13 @@ questionType=FindAll
 genre=integer-equation
 -->"""@lv ;
     eliozo:problemYear 2018 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:suffix "EE.LO.2018.10" .
 
 eliozo:EE.LO.2019.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
-    eliozo:problemBook "EE" ;
-    eliozo:problemBookSection "LO.2019.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2019.10.1" ;
     eliozo:problemSolution eliozo:SOLN.EE.LO.2019.10.1 ;
@@ -395,6 +379,7 @@ eliozo:EE.LO.2019.10.1 a eliozo:Problem ;
     eliozo:problemTextHtml "<p>Atrast visus veselu skaitļu pārus $(x, y)$, kuriem $x − y = \\frac{x}{y}$.</p>"@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 1 ;
+    eliozo:suffix "EE.LO.2019.10" ;
     eliozo:topic eliozo:MutualPrimes,
         eliozo:StandardIdentities .
 

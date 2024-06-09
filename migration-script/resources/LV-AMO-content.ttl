@@ -7,8 +7,6 @@ eliozo:LV.AMO.2000.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2000.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2000.10.2" ;
     eliozo:problemText """Divu pirmskaitļu starpība ir $100$. Uzrakstot pirmo 
@@ -21,15 +19,14 @@ Atrast šos pirmskaitļus un pierādīt, ka citu bez
 Jūsu atrastajiem nav.</p>"""@lv ;
     eliozo:problemYear 2000 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2000.10" .
 
 eliozo:LV.AMO.2000.11.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-even-number ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2000.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2000.11.1" ;
     eliozo:problemText """Dots, ka $x^2+y^2+z^2 = t^2$, kur $x,y,z,t$ – naturāli skaitļi. 
@@ -38,7 +35,8 @@ Cik no skaitļiem $x,y,z,t$ var būt pāra skaitļi?"""@lv ;
 Cik no skaitļiem $x,y,z,t$ var būt pāra skaitļi?</p>"""@lv ;
     eliozo:problemYear 2000 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindCount" .
+    eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.AMO.2000.11" .
 
 eliozo:LV.AMO.2000.11.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-argument,
@@ -47,8 +45,6 @@ eliozo:LV.AMO.2000.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2000.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2000.11.4" ;
     eliozo:problemText """Funkcijas $f(x)$ argumenti un vērtības ir naturāli skaitļi. 
@@ -65,15 +61,14 @@ Katram naturālam $x$ izpildās vienādība</p>
 ka citu bez atrastajām nav.</p>"""@lv ;
     eliozo:problemYear 2000 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2000.11" .
 
 eliozo:LV.AMO.2000.12.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-equation ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2000.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2000.12.2" ;
     eliozo:problemText """Atrisināt naturālos skaitļos vienādojumu
@@ -83,15 +78,14 @@ $$\\left( 2a+b \\right) \\cdot \\left( 2b + a \\right) = 2^c.$$"""@lv ;
 <p>$$\\left( 2a+b \\right) \\cdot \\left( 2b + a \\right) = 2^c.$$</p>"""@lv ;
     eliozo:problemYear 2000 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2000.12" .
 
 eliozo:LV.AMO.2000.12.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-sequence ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2000.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2000.12.5" ;
     eliozo:problemText """Naturālu skaitļu virkni sauc par $F$-virkni, 
@@ -112,15 +106,14 @@ $F$-virkņu ar īpašību: katrs naturāls skaitlis pieder
 tieši vienai no tām.</p>"""@lv ;
     eliozo:problemYear 2000 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2000.12" .
 
 eliozo:LV.AMO.2000.7.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-square-Alg ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2000.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2000.7.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2000.7.1 ;
@@ -131,6 +124,7 @@ var izsacīt kā divu veselu skaitļu kvadrātu summu. Vai to noteikti var izsac
     eliozo:problemYear 2000 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2000.7" ;
     eliozo:topic eliozo:StandardIdentities .
 
 eliozo:LV.AMO.2000.7.2 a eliozo:Problem ;
@@ -141,8 +135,6 @@ eliozo:LV.AMO.2000.7.2 a eliozo:Problem ;
     eliozo:genre "optimization" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2000.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2000.7.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2000.7.2 ;
@@ -151,6 +143,7 @@ eliozo:LV.AMO.2000.7.2 a eliozo:Problem ;
     eliozo:problemYear 2000 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2000.7" ;
     eliozo:topic eliozo:IntegerFactorization,
         eliozo:LittleFermatAndEuler .
 
@@ -162,8 +155,6 @@ eliozo:LV.AMO.2000.7.4 a eliozo:Problem ;
     eliozo:genre "construction" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2000.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2000.7.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2000.7.4 ;
@@ -182,6 +173,7 @@ var tā sadalīt pa pāriem, lai visas pāros ieejošo skaitļu summas būtu da�
     eliozo:problemYear 2000 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2000.7" ;
     eliozo:topic eliozo:ExhaustionMethod,
         eliozo:NumTheoryPigeonhole,
         eliozo:PrimesDistribution .
@@ -192,8 +184,6 @@ eliozo:LV.AMO.2000.8.3 a eliozo:Problem ;
     eliozo:genre "construction" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2000.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2000.8.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2000.8.3 ;
@@ -208,6 +198,7 @@ eliozo:LV.AMO.2000.8.3 a eliozo:Problem ;
     eliozo:problem_number 3 ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:strategy "Interpretation" ;
+    eliozo:suffix "LV.AMO.2000.8" ;
     eliozo:topic eliozo:NumTheoryMathInduction,
         eliozo:NumTheoryPigeonhole .
 
@@ -218,8 +209,6 @@ eliozo:LV.AMO.2000.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2000.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2000.9.2" ;
     eliozo:problemText """Vai skaitli  
@@ -234,7 +223,8 @@ var izsacīt kā četriem dažādiem naturālu skaitļu
 kvadrātiem apgriezto lielumu summu?</p>"""@lv ;
     eliozo:problemYear 2000 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2000.9" .
 
 eliozo:LV.AMO.2000.9.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-product,
@@ -242,8 +232,6 @@ eliozo:LV.AMO.2000.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2000.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2000.9.4" ;
     eliozo:problemText """Apskatām pirmos $n$ naturālos skaitļus. No tiem jāizvēlas divus tā, 
@@ -258,15 +246,14 @@ Vai tas ir iespējams, ja<br />
 <strong>(B)</strong> $n=15$?</p>"""@lv ;
     eliozo:problemYear 2000 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2000.9" .
 
 eliozo:LV.AMO.2001.10.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2001.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2001.10.3" ;
     eliozo:problemText """Kāds ir mazākais pirmskaitlis $p$, kuram nevar atrast tādus 
@@ -277,7 +264,8 @@ nenegatīvus veselus skaitļus $x$ un $y$, ka
 ${\\displaystyle p = \\left| 2^x - 3^y \\right|}$?</p>"""@lv ;
     eliozo:problemYear 2001 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2001.10" .
 
 eliozo:LV.AMO.2001.11.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility,
@@ -286,8 +274,6 @@ eliozo:LV.AMO.2001.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2001.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2001.11.3" ;
     eliozo:problemText """Skaitļu virknes elementi ir naturāli skaitļi. 
@@ -306,22 +292,22 @@ Kāds var būt virknes pirmais elements,
 ja neviens tās elements nav naturāla skaitļa kvadrāts?</p>"""@lv ;
     eliozo:problemYear 2001 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2001.11" .
 
 eliozo:LV.AMO.2001.12.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-equation ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2001.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2001.12.2" ;
     eliozo:problemText "Atrisināt naturālos skaitļos vienādojumu $(2a+b)(2b+a)=2c$."@lv ;
     eliozo:problemTextHtml "<p>Atrisināt naturālos skaitļos vienādojumu $(2a+b)(2b+a)=2c$.</p>"@lv ;
     eliozo:problemYear 2001 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2001.12" .
 
 eliozo:LV.AMO.2001.7.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-decimal-notation,
@@ -329,8 +315,6 @@ eliozo:LV.AMO.2001.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2001.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2001.7.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2001.7.2 ;
@@ -348,6 +332,7 @@ skaitlis nemainās. Piemēram, $1221$ ir simetrisks skaitlis, bet $1231$ - nav.<
     eliozo:problem_number 2 ;
     eliozo:questionType "Prove",
         "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2001.7" ;
     eliozo:topic eliozo:DivisibilityRulesOther,
         eliozo:IntegerCongruence,
         eliozo:NotationPolynomial .
@@ -358,8 +343,6 @@ eliozo:LV.AMO.2001.8.3 a eliozo:Problem ;
     eliozo:genre "digit-manipulation" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2001.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2001.8.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2001.8.3 ;
@@ -374,6 +357,7 @@ kuru Andrim vajadzēja iegūt. Kādu sešciparu skaitli Andris uzrakstīja?</p>"
     eliozo:problemYear 2001 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2001.8" ;
     eliozo:topic eliozo:NotationShift,
         eliozo:NumTheoryInequalityMethod,
         eliozo:StandardIdentities .
@@ -383,8 +367,6 @@ eliozo:LV.AMO.2001.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2001.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2001.9.4" ;
     eliozo:problemText """Dots, ka $x,y,z$ - naturāli skaitļi un katrs no 
@@ -395,15 +377,14 @@ skaitļiem $xy-z$, $xz-y$ un $yz-x$ dalās ar $3$.
 Pierādiet, ka $x^2+y^2+z^2$ dalās ar $3$.</p>"""@lv ;
     eliozo:problemYear 2001 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2001.9" .
 
 eliozo:LV.AMO.2002.10.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2002.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2002.10.3" ;
     eliozo:problemText """Katrs naturāls skaitlis nokrāsots vienā krāsā. 
@@ -416,15 +397,14 @@ tad tie ir nokrāsoti dažādās krāsās.
 Kāds ir mazākais iespējamais krāsu skaits?</p>"""@lv ;
     eliozo:problemYear 2002 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2002.10" .
 
 eliozo:LV.AMO.2002.11.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2002.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2002.11.3" ;
     eliozo:problemText """Zināms, ka naturāls skaitlis $n$ dalās ar pirmskaitli 
@@ -435,15 +415,14 @@ $p$ un $p&gt;\\sqrt{n}$. Pierādīt, ka ne $n-1$, $n^3-1$
 nav divu tādu naturālu skaitļu reizinājums, kuru starpība ir $2$.</p>"""@lv ;
     eliozo:problemYear 2002 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2002.11" .
 
 eliozo:LV.AMO.2002.12.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-sequence ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2002.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2002.12.4" ;
     eliozo:problemText """Skaitļu virkni $a_1, a_2, a_3, \\ldots$ veido sekojoši 
@@ -458,7 +437,8 @@ pierakstot skaitlim $a_{n-1}$ pa labi galā skaitli $a_{n-2}$.
 Kādiem $n$ skaitlis $a_n$ dalās ar $11$?</p>"""@lv ;
     eliozo:problemYear 2002 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2002.12" .
 
 eliozo:LV.AMO.2002.7.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
@@ -466,8 +446,6 @@ eliozo:LV.AMO.2002.7.4 a eliozo:Problem ;
     eliozo:genre "game" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2002.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2002.7.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2002.7.4 ;
@@ -486,15 +464,14 @@ Parādiet, kā tas, kas izdara pirmo gājienu, var uzvarēt.</p>"""@lv ;
     eliozo:problemYear 2002 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "Algorithm" ;
-    eliozo:strategy "Contradiction" .
+    eliozo:strategy "Contradiction" ;
+    eliozo:suffix "LV.AMO.2002.7" .
 
 eliozo:LV.AMO.2002.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:genre "optimization" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2002.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2002.7.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2002.7.5 ;
@@ -507,6 +484,7 @@ lai nekādu divu izvēlēto skaitļu starpība nebūtu ne $3$, ne $4$, ne $7$?</
     eliozo:questionType "FindOptimal" ;
     eliozo:strategy "ExhaustiveSearch",
         "Symmetry" ;
+    eliozo:suffix "LV.AMO.2002.7" ;
     eliozo:topic eliozo:NumTheoryPigeonhole,
         eliozo:SequencePeriodicity .
 
@@ -516,8 +494,6 @@ eliozo:LV.AMO.2002.8.2 a eliozo:Problem ;
     eliozo:genre "digit-manipulation" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2002.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2002.8.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2002.8.2 ;
@@ -533,6 +509,7 @@ Kādu četrciparu skaitli Andris uzrakstīja?</p>"""@lv ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
     eliozo:seeAlso "LV.AMO.2001.8.3" ;
+    eliozo:suffix "LV.AMO.2002.8" ;
     eliozo:topic eliozo:NotationShift,
         eliozo:NumTheoryInequalityMethod,
         eliozo:StandardIdentities .
@@ -542,8 +519,6 @@ eliozo:LV.AMO.2002.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2002.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2002.8.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2002.8.3 ;
@@ -559,6 +534,7 @@ ja $a$, $b$, $c$, $d$ ir dažādi Fibonači skaitļi?</p>"""@lv ;
     eliozo:problem_number 3 ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:strategy "ExtremeElement" ;
+    eliozo:suffix "LV.AMO.2002.8" ;
     eliozo:topic eliozo:NumTheoryExtremeElement .
 
 eliozo:LV.AMO.2002.9.3 a eliozo:Problem ;
@@ -566,8 +542,6 @@ eliozo:LV.AMO.2002.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2002.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2002.9.3" ;
     eliozo:problemText """Dots, ka $x, y, z$ naturāli skaitļi un katrs no 
@@ -579,7 +553,8 @@ Pierādīt, ka $x^2+y^2+z^2$ dalās ar $3$.</p>"""@lv ;
     eliozo:problemYear 2002 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
-    eliozo:seeAlso "LV.AMO.2001.9.4" .
+    eliozo:seeAlso "LV.AMO.2001.9.4" ;
+    eliozo:suffix "LV.AMO.2002.9" .
 
 eliozo:LV.AMO.2003.10.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes,
@@ -587,8 +562,6 @@ eliozo:LV.AMO.2003.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2003.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2003.10.3" ;
     eliozo:problemText """Dots, ka $n$ - vesels pozitīvs skaitlis un skaitļi 
@@ -602,15 +575,14 @@ $2n+1$ un $3n+1$ ir veselu skaitļu kvadrāti.<br />
     eliozo:problemYear 2003 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample",
-        "ProveDisprove" .
+        "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2003.10" .
 
 eliozo:LV.AMO.2003.11.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2003.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2003.11.3" ;
     eliozo:problemText """Vai eksistē tāds naturāls skaitlis $n$, 
@@ -619,7 +591,8 @@ ka $6^n-1$ dalās ar $4^n-1$?"""@lv ;
 ka $6^n-1$ dalās ar $4^n-1$?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2003.11" .
 
 eliozo:LV.AMO.2003.12.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility,
@@ -627,8 +600,6 @@ eliozo:LV.AMO.2003.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2003.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2003.12.2" ;
     eliozo:problemText """Vai eksistē tāds vesels pozitīvs skaitlis $n$, 
@@ -641,7 +612,8 @@ kas dod atlikumu $1$, dalot ar $3$,
 cik naturālu dalītāju, kas dod atlikumu $2$, dalot ar $3$?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2003.12" .
 
 eliozo:LV.AMO.2003.7.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
@@ -649,8 +621,6 @@ eliozo:LV.AMO.2003.7.3 a eliozo:Problem ;
     eliozo:genre "game" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2003.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2003.7.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2003.7.3 ;
@@ -665,7 +635,8 @@ Parādiet, kā tas, kas izdara pirmo gājienu, var uzvarēt.</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Algorithm" ;
-    eliozo:strategy "Contradiction" .
+    eliozo:strategy "Contradiction" ;
+    eliozo:suffix "LV.AMO.2003.7" .
 
 eliozo:LV.AMO.2003.7.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-absolute-value ;
@@ -673,8 +644,6 @@ eliozo:LV.AMO.2003.7.5 a eliozo:Problem ;
     eliozo:genre "making-moves" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2003.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2003.7.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2003.7.5 ;
@@ -692,6 +661,7 @@ Vai tas var būt $0$, ja <strong>(A)</strong> $n=8$, <strong>(B)</strong> $n=9$?
     eliozo:problem_number 5 ;
     eliozo:questionType "Algorithm" ;
     eliozo:strategy "Invariant" ;
+    eliozo:suffix "LV.AMO.2003.7" ;
     eliozo:topic eliozo:ExhaustionMethod,
         eliozo:InvariantParity,
         eliozo:SeriesMembersSumsClosedFormulas .
@@ -703,8 +673,6 @@ eliozo:LV.AMO.2003.8.3 a eliozo:Problem ;
     eliozo:genre "optimization" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2003.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2003.8.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2003.8.3 ;
@@ -718,6 +686,7 @@ saskaitāmo lielākais kopīgais dalītājs būtu $1$?</p>"""@lv ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:strategy "ExtremeElement" ;
+    eliozo:suffix "LV.AMO.2003.8" ;
     eliozo:topic eliozo:NumTheoryExtremeElement,
         eliozo:PrimesDistribution .
 
@@ -726,8 +695,6 @@ eliozo:LV.AMO.2003.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2003.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2003.8.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2003.8.5 ;
@@ -745,6 +712,7 @@ Vai tas iespējams, ja <strong>(A)</strong> $n=3$, <strong>(B)</strong> $n=4$, <
     eliozo:problem_number 5 ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:strategy "Symmetry" ;
+    eliozo:suffix "LV.AMO.2003.8" ;
     eliozo:topic eliozo:ExhaustionMethod,
         eliozo:SequencePeriodicity,
         eliozo:StandardIdentities .
@@ -755,8 +723,6 @@ eliozo:LV.AMO.2003.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2003.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2003.9.3" ;
     eliozo:problemText """Noskaidrot, kādiem dažādiem pirmskaitļiem 
@@ -769,14 +735,13 @@ $p_1p_2p_3\\ldots{}p_n$ dalās ar
 $(p_1-1)(p_2-1)\\ldots(p_n-1)$.</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2003.9" .
 
 eliozo:LV.AMO.2004.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2004.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2004.10.3" ;
     eliozo:problemText """Dots, ka $n$ – naturāls skaitlis.  
@@ -788,7 +753,8 @@ eliozo:LV.AMO.2004.10.3 a eliozo:Problem ;
     eliozo:problemYear 2004 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll",
-        "Prove" .
+        "Prove" ;
+    eliozo:suffix "LV.AMO.2004.10" .
 
 eliozo:LV.AMO.2004.10.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility,
@@ -796,8 +762,6 @@ eliozo:LV.AMO.2004.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2004.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2004.10.5" ;
     eliozo:problemText """Vai, izmantojot tikai $3$ dažādus ciparus, var uzrakstīt 
@@ -808,30 +772,28 @@ $16$ trīsciparu skaitļus, kas visi dod dažādus
 atlikumus, dalot ar $16$?</p>"""@lv ;
     eliozo:problemYear 2004 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2004.10" .
 
 eliozo:LV.AMO.2004.11.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2004.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2004.11.1" ;
     eliozo:problemText "Vai eksistē tāds naturāls skaitlis $n$, ka $2004^n-1$ dalās ar $1500^n-1$?"@lv ;
     eliozo:problemTextHtml "<p>Vai eksistē tāds naturāls skaitlis $n$, ka $2004^n-1$ dalās ar $1500^n-1$?</p>"@lv ;
     eliozo:problemYear 2004 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2004.11" .
 
 eliozo:LV.AMO.2004.12.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-polynomial ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2004.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2004.12.1" ;
     eliozo:problemText """Dots, ka $n$ – naturāls skaitlis, $n>1$. Vai izteiksmi
@@ -850,7 +812,8 @@ konstante un visi abu polinomu
 koeficienti būtu veseli skaitļi?</p>"""@lv ;
     eliozo:problemYear 2004 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2004.12" .
 
 eliozo:LV.AMO.2004.12.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-argument,
@@ -859,8 +822,6 @@ eliozo:LV.AMO.2004.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2004.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2004.12.3" ;
     eliozo:problemText """Funkcijai $f(n)$ gan argumenti, gan vērtības 
@@ -877,7 +838,8 @@ skaitļiem $x$ un $y$ pastāv vienādība</p>
 <p>Atrast visas šādas funkcijas $f$ un pierādīt, ka citu bez jūsu atrastajām nav.</p>"""@lv ;
     eliozo:problemYear 2004 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2004.12" .
 
 eliozo:LV.AMO.2004.12.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility,
@@ -885,8 +847,6 @@ eliozo:LV.AMO.2004.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2004.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2004.12.4" ;
     eliozo:problemText """Ar $n$ apzīmējam patvaļīgu nepāra naturālu skaitli, 
@@ -899,7 +859,8 @@ vienlaicīgi ir pirmskaitļi tad un tikai tad, ja
 $(n-1)!$ nedalās ne ar $n$, ne ar $n+2$.</p>"""@lv ;
     eliozo:problemYear 2004 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2004.12" .
 
 eliozo:LV.AMO.2004.7.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-fractions,
@@ -907,8 +868,6 @@ eliozo:LV.AMO.2004.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2004.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2004.7.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2004.7.3 ;
@@ -923,6 +882,7 @@ ir nesaīsināmas?"""@lv ;
     eliozo:problemYear 2004 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2004.7" ;
     eliozo:topic eliozo:EuclideanAlgorithm,
         eliozo:PrimesDistribution .
 
@@ -933,8 +893,6 @@ eliozo:LV.AMO.2004.8.3 a eliozo:Problem ;
     eliozo:genre "digit-manipulation" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2004.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2004.8.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2004.8.3 ;
@@ -949,6 +907,7 @@ Dots, ka $X-Y$ dalās ar $91$. Pierādīt, ka $A=B$.</p>"""@lv ;
     eliozo:problemYear 2004 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2004.8" ;
     eliozo:topic eliozo:IntegerFactorization,
         eliozo:NotationShift .
 
@@ -958,8 +917,6 @@ eliozo:LV.AMO.2004.8.5 a eliozo:Problem ;
     eliozo:genre "making-moves" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2004.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2004.8.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2004.8.5 ;
@@ -979,6 +936,7 @@ kamēr paliek neizsvītrots viens skaitlis. Kurš tas ir?</p>"""@lv ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindAll" ;
     eliozo:strategy "WorkingBackwards" ;
+    eliozo:suffix "LV.AMO.2004.8" ;
     eliozo:topic eliozo:DefiningRecurrentSequences,
         eliozo:MultiplesInInterval,
         eliozo:NonlinearRecurrences .
@@ -988,8 +946,6 @@ eliozo:LV.AMO.2004.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2004.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2004.9.5" ;
     eliozo:problemText """Kvadrāts sastāv no $n \\times n$ rūtiņām. 
@@ -1002,15 +958,14 @@ un $n$ kolonnās ierakstīto skaitļu summas visas būtu dažādas.
 Vai to var izdarīt, ja <strong>(A)</strong> $n=4$; <strong>(B)</strong> $n=5$?</p>"""@lv ;
     eliozo:problemYear 2004 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2004.9" .
 
 eliozo:LV.AMO.2005.10.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2005.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2005.10.3" ;
     eliozo:problemText """Kādiem naturāliem skaitļiem $n$ abi skaitļi 
@@ -1019,15 +974,14 @@ $2^n-1$ un $2^n+1$ ir pirmskaitļi?"""@lv ;
 $2^n-1$ un $2^n+1$ ir pirmskaitļi?</p>"""@lv ;
     eliozo:problemYear 2005 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2005.10" .
 
 eliozo:LV.AMO.2005.10.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-function ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2005.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2005.10.4" ;
     eliozo:problemText """Funkcijas $f(t)$ definīcijas apgabals un vērtību 
@@ -1042,15 +996,14 @@ $x=1; 2; \\ldots; n$, ir dažādi, ja<br />
 <strong>(A)</strong> $n=15$, <strong>(B)</strong> $n=16$?</p>"""@lv ;
     eliozo:problemYear 2005 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2005.10" .
 
 eliozo:LV.AMO.2005.11.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-square-Alg ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2005.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2005.11.4" ;
     eliozo:problemText """Dots, ka $a < b \\leq c < d$ ir pozitīvi veseli skaitļi, 
@@ -1061,7 +1014,8 @@ $ad=bc$ un $d - a \\leq 1$. Pierādīt, ka $a$ ir vesela skaitļa
 kvadrāts.</p>"""@lv ;
     eliozo:problemYear 2005 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2005.11" .
 
 eliozo:LV.AMO.2005.12.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility,
@@ -1069,8 +1023,6 @@ eliozo:LV.AMO.2005.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2005.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2005.12.1" ;
     eliozo:problemText """Vai eksistē tāds vesels pozitīvs skaitlis $n$, 
@@ -1084,14 +1036,13 @@ cik naturālu dalītāju, kas dod atlikumu $2$, dalot ar $3$?</p>"""@lv ;
     eliozo:problemYear 2005 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:seeAlso "LV.AMO.2003.12.2" .
+    eliozo:seeAlso "LV.AMO.2003.12.2" ;
+    eliozo:suffix "LV.AMO.2005.12" .
 
 eliozo:LV.AMO.2005.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2005.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2005.12.5" ;
     eliozo:problemText """Divi spēlētāji spēlē sekojošu spēli, izdarot gājienus 
@@ -1116,7 +1067,8 @@ kurš izdara pēdējo gājienu, uzvar.
 Kurš spēlētājs uzvar, pareizi spēlējot?</p>"""@lv ;
     eliozo:problemYear 2005 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2005.12" .
 
 eliozo:LV.AMO.2005.7.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-decimal-notation ;
@@ -1124,8 +1076,6 @@ eliozo:LV.AMO.2005.7.4 a eliozo:Problem ;
     eliozo:genre "optimization" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2005.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2005.7.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2005.7.4 ;
@@ -1139,6 +1089,7 @@ skaitļu reizinājums?</p>"""@lv ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:seeAlso "LT.VILNIUS.2008.12.1" ;
+    eliozo:suffix "LV.AMO.2005.7" ;
     eliozo:topic eliozo:DivisibilityRulesLastDigits,
         eliozo:ModularArithmetic .
 
@@ -1148,8 +1099,6 @@ eliozo:LV.AMO.2005.8.3 a eliozo:Problem ;
     eliozo:genre "construction" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2005.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2005.8.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2005.8.3 ;
@@ -1163,6 +1112,7 @@ visu skaitļu reizinājumu?</p>"""@lv ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample" ;
     eliozo:strategy "CaseAnalysis" ;
+    eliozo:suffix "LV.AMO.2005.8" ;
     eliozo:topic eliozo:TreeTraversalBacktracking .
 
 eliozo:LV.AMO.2005.9.1 a eliozo:Problem ;
@@ -1171,8 +1121,6 @@ eliozo:LV.AMO.2005.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2005.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2005.9.1" ;
     eliozo:problemText """Atrast mazāko naturālo skaitli, kas dalās ar $225$
@@ -1183,14 +1131,13 @@ un kura decimālajā pierakstā neizmanto nevienu
 no cipariem $3; 4; 5; 6; 7; 8; 9$.</p>"""@lv ;
     eliozo:problemYear 2005 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2005.9" .
 
 eliozo:LV.AMO.2006.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2006.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2006.10.3" ;
     eliozo:problemText """Ir dots, ka, sareizinot visus naturālos skaitļus 
@@ -1207,15 +1154,14 @@ no $1$ līdz $33$ ieskaitot, iegūst</p>
 $y$, $z$ un $t$ vērtības.</p>"""@lv ;
     eliozo:problemYear 2006 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2006.10" .
 
 eliozo:LV.AMO.2006.11.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-square-Alg ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2006.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2006.11.2" ;
     eliozo:problemText """Dots, ka $a<b \\leq c < d$ ir pozitīvi veseli 
@@ -1226,7 +1172,8 @@ skaitļi, $ad = bc$ un $\\sqrt{d}-\\sqrt{a} \\leq 1$.
 Pierādīt, ka $a$ ir vesela skaitļa kvadrāts.</p>"""@lv ;
     eliozo:problemYear 2006 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2006.11" .
 
 eliozo:LV.AMO.2006.12.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility,
@@ -1235,8 +1182,6 @@ eliozo:LV.AMO.2006.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2006.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2006.12.1" ;
     eliozo:problemText """Vai eksistē tāds vesels pozitīvs skaitlis $n$, 
@@ -1249,15 +1194,14 @@ kas dod atlikumu $1$, dalot ar $3$,
 cik naturālu dalītāju, kas dod atlikumu $2$, dalot ar $3$?</p>"""@lv ;
     eliozo:problemYear 2006 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2006.12" .
 
 eliozo:LV.AMO.2006.7.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-sequence ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2006.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2006.7.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2006.7.1 ;
@@ -1276,6 +1220,7 @@ kas pie tam nav blakus viens otram. Cik vietu ir katrā vagonā?</p>"""@lv ;
     eliozo:problemYear 2006 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2006.7" ;
     eliozo:topic eliozo:ExhaustionMethod,
         eliozo:SequenceGaps,
         eliozo:SeriesMembersSumsClosedFormulas .
@@ -1286,8 +1231,6 @@ eliozo:LV.AMO.2006.8.3 a eliozo:Problem ;
         "sum-of-digits" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2006.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2006.8.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2006.8.3 ;
@@ -1308,6 +1251,7 @@ izpildās īpašības $S(n)=10$ un $S(5n)=5$.<br />
     eliozo:questionType "FindExample",
         "ProveDisprove" ;
     eliozo:strategy "TrialAndError" ;
+    eliozo:suffix "LV.AMO.2006.8" ;
     eliozo:topic eliozo:DivisibilityRulesFor2And4,
         eliozo:NotationInsert .
 
@@ -1317,8 +1261,6 @@ eliozo:LV.AMO.2006.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2006.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2006.9.1" ;
     eliozo:problemText """Kāda ir lielākā iespējamā ciparu summa septiņciparu 
@@ -1327,7 +1269,8 @@ naturālam skaitlim, kas dalās ar $8$?"""@lv ;
 naturālam skaitlim, kas dalās ar $8$?</p>"""@lv ;
     eliozo:problemYear 2006 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2006.9" .
 
 eliozo:LV.AMO.2006.9.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility,
@@ -1335,8 +1278,6 @@ eliozo:LV.AMO.2006.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2006.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2006.9.5" ;
     eliozo:problemText """Apskatām naturālos skaitļus no $1$ līdz $100$ ieskaitot. 
@@ -1351,15 +1292,14 @@ ar otru un katriem diviem izvēlētajiem skaitļiem
 lielākais kopīgais dalītājs būtu lielāks par $1$?</p>"""@lv ;
     eliozo:problemYear 2006 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2006.9" .
 
 eliozo:LV.AMO.2007.10.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2007.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2007.10.1" ;
     eliozo:problemText """Desmitciparu naturāls skaitlis dalās ar 
@@ -1369,7 +1309,8 @@ $999\\,999$. Vai tas var dalīties arī ar $1\\,000\\,001$?</p>"""@lv ;
     eliozo:problemYear 2007 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:seeAlso "LV.AMO.2008.10.1" .
+    eliozo:seeAlso "LV.AMO.2008.10.1" ;
+    eliozo:suffix "LV.AMO.2007.10" .
 
 eliozo:LV.AMO.2007.7.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
@@ -1377,8 +1318,6 @@ eliozo:LV.AMO.2007.7.1 a eliozo:Problem ;
     eliozo:genre "optimization" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2007.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2007.7.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2007.7.1 ;
@@ -1392,6 +1331,7 @@ kādā virzienā, veidotu pirmskaitļa pierakstu?</p>"""@lv ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:seeAlso "LV.AMO.2008.7.2" ;
+    eliozo:suffix "LV.AMO.2007.7" ;
     eliozo:topic eliozo:HamiltonCircuits,
         eliozo:PrimesDistribution .
 
@@ -1403,8 +1343,6 @@ eliozo:LV.AMO.2007.7.3 a eliozo:Problem ;
     eliozo:genre "game" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2007.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2007.7.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2007.7.3 ;
@@ -1425,6 +1363,7 @@ Pierādīt, ka Maija var panākt, lai skaitļu uz tāfeles vairs nebūtu
     eliozo:problemYear 2007 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2007.7" ;
     eliozo:topic eliozo:InfiniteDescent,
         eliozo:SequenceGaps .
 
@@ -1434,8 +1373,6 @@ eliozo:LV.AMO.2007.8.3 a eliozo:Problem ;
     eliozo:genre "digit-manipulation" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2007.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2007.8.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2007.8.3 ;
@@ -1448,6 +1385,7 @@ Kādu skaitli viņa iedomājās sākumā?</p>"""@lv ;
     eliozo:problemYear 2007 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2007.8" ;
     eliozo:topic eliozo:CanonicalFactorization,
         eliozo:NumTheoryInequalityMethod .
 
@@ -1456,8 +1394,6 @@ eliozo:LV.AMO.2007.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2007.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2007.9.1" ;
     eliozo:problemText """Kvadrātveida tabula sastāv no $10 \\times 10$ rūtiņām. 
@@ -1474,7 +1410,8 @@ naturāls skaitlis. Vai var gadīties, ka tieši $19$ no
 šiem skaitļiem (ne vairāk un ne mazāk) dalās ar $3$?</p>"""@lv ;
     eliozo:problemYear 2007 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2007.9" .
 
 eliozo:LV.AMO.2007.9.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-equation,
@@ -1483,8 +1420,6 @@ eliozo:LV.AMO.2007.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2007.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2007.9.3" ;
     eliozo:problemText """**(A)** katrs no naturāliem skaitļiem $a$ un $b$ ir izsakāms 
@@ -1508,15 +1443,14 @@ $f(x)$ un $g(x)$, ka visiem $x$ pastāv vienādība</p>
     eliozo:problemYear 2007 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample",
-        "Prove" .
+        "Prove" ;
+    eliozo:suffix "LV.AMO.2007.9" .
 
 eliozo:LV.AMO.2008.10.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2008.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2008.10.1" ;
     eliozo:problemText """Desmitciparu naturāls skaitlis dalās ar 9 999 999. 
@@ -1526,14 +1460,13 @@ Vai tas var dalīties arī ar 10 000 001 ?</p>"""@lv ;
     eliozo:problemYear 2008 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:seeAlso "LV.AMO.2007.10.1" .
+    eliozo:seeAlso "LV.AMO.2007.10.1" ;
+    eliozo:suffix "LV.AMO.2008.10" .
 
 eliozo:LV.AMO.2008.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2008.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2008.10.4" ;
     eliozo:problemText """Uz $50$ kartiņām uzrakstīti naturāli skaitļi no 
@@ -1556,7 +1489,8 @@ to sauc par vienu gājienu. Pierādīt, ka nevar izdarīt
 vairāk par $1250$ gājieniem.</p>"""@lv ;
     eliozo:problemYear 2008 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2008.10" .
 
 eliozo:LV.AMO.2008.11.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-equation,
@@ -1564,8 +1498,6 @@ eliozo:LV.AMO.2008.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2008.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2008.11.2" ;
     eliozo:problemText """Funkcija $f(n)$ definēta visiem veseliem $n$ un pieņem 
@@ -1580,15 +1512,14 @@ veselas vērtības. Visiem veseliem $x$ un $y$ pastāv vienādība</p>
 <p>Atrast visas tādas funkcijas $f$ un pierādīt, ka citu bez Jūsu atrastajām nav.</p>"""@lv ;
     eliozo:problemYear 2008 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2008.11" .
 
 eliozo:LV.AMO.2008.11.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisors ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2008.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2008.11.3" ;
     eliozo:problemText """Dots, ka $n$ – naturāls skaitlis. Noskaidrojiet:  
@@ -1603,15 +1534,14 @@ ir tieši $10$ dažādi naturāli dalītāji?<br />
 $10$ dažādi naturāli dalītāji, ja $n$ – pāra skaitlis?</p>"""@lv ;
     eliozo:problemYear 2008 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2008.11" .
 
 eliozo:LV.AMO.2008.12.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-arithmetic-mean ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2008.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2008.12.2" ;
     eliozo:problemText """Kādiem naturāliem $n$ skaitļu kopu  var sadalīt 
@@ -1627,7 +1557,8 @@ b. abās daļās būtu vienāds daudzums skaitļu, <br />
 c. katras daļas visu skaitļu vidējais aritmētiskais arī piederētu šai daļai?</p>"""@lv ;
     eliozo:problemYear 2008 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2008.12" .
 
 eliozo:LV.AMO.2008.12.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility,
@@ -1635,8 +1566,6 @@ eliozo:LV.AMO.2008.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2008.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2008.12.4" ;
     eliozo:problemText """Vai eksistē tādi trīs naturāli skaitļi, kas visi 
@@ -1649,15 +1578,14 @@ katra skaitļa kvadrāts, pamazināts par $1$,
 dalās ar katru no abiem pārējiem skaitļiem?</p>"""@lv ;
     eliozo:problemYear 2008 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2008.12" .
 
 eliozo:LV.AMO.2008.7.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-decimal-notation ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2008.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2008.7.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2008.7.2 ;
@@ -1668,6 +1596,7 @@ Vai var būt, ka ne $x$, ne $y$ nesatur savā pierakstā nevienu ciparu $0$?</p>
     eliozo:problemYear 2008 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2008.7" ;
     eliozo:topic eliozo:DivisibilityRulesLastDigits,
         eliozo:StandardIdentities .
 
@@ -1676,8 +1605,6 @@ eliozo:LV.AMO.2008.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2008.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2008.8.1" ;
     eliozo:problemText """Kādu lielāko daudzumu dažādu ciparu var izrakstīt pa apli tā, 
@@ -1689,7 +1616,8 @@ kādā virzienā, veidotu pirmskaitļa pierakstu?</p>"""@lv ;
     eliozo:problemYear 2008 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindOptimal" ;
-    eliozo:seeAlso "LV.AMO.2007.7.1" .
+    eliozo:seeAlso "LV.AMO.2007.7.1" ;
+    eliozo:suffix "LV.AMO.2008.8" .
 
 eliozo:LV.AMO.2008.8.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes,
@@ -1697,8 +1625,6 @@ eliozo:LV.AMO.2008.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2008.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2008.8.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2008.8.3 ;
@@ -1716,6 +1642,7 @@ kas apmierina sakarību</p>
     eliozo:problemYear 2008 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2008.8" ;
     eliozo:topic eliozo:DivisorNumberAndSum,
         eliozo:IntegerFactorization,
         eliozo:TelescopicSums .
@@ -1724,8 +1651,6 @@ eliozo:LV.AMO.2008.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2008.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2008.9.1" ;
     eliozo:problemText """Kvadrātveida tabula sastāv no $12 \\times 12$ rūtiņām. 
@@ -1742,15 +1667,14 @@ Vai var gadīties, ka tieši $23$ no šiem skaitļiem
 (ne vairāk un ne mazāk) dalās ar $3$?</p>"""@lv ;
     eliozo:problemYear 2008 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2008.9" .
 
 eliozo:LV.AMO.2008.9.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-groups ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2008.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2008.9.4" ;
     eliozo:problemText """Naturālie skaitļi no $1$ līdz $2008$ ieskaitot 
@@ -1767,15 +1691,14 @@ tad $a$, $b$ un $c$ visi nepieder vienai un tai pašai grupai.
 Kāds ir mazākais iespējamais grupu skaits?</p>"""@lv ;
     eliozo:problemYear 2008 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2008.9" .
 
 eliozo:LV.AMO.2009.10.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2009.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2009.10.2" ;
     eliozo:problemText """Dots, ka $p$ un $q$ ir divi viens otram sekojoši nepāra pirmskaitļi
@@ -1788,14 +1711,13 @@ naturālu skaitļu reizinājumā, kas visi lielāki par $1$ (starp šiem trim
 skaitļiem var būt arī vienādi).</p>"""@lv ;
     eliozo:problemYear 2009 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2009.10" .
 
 eliozo:LV.AMO.2009.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2009.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2009.11.2" ;
     eliozo:problemText """Spēlē OP! piedalās $n$ spēlētāji ($n \\geq 2$). Spēle notiek vairākas dienas.
@@ -1812,14 +1734,13 @@ sākumā visiem ir pa $0$ punktiem. Pēc kāda mazākā dienu skaita var
 gadīties, ka visiem atkal ir pa $0$ punktiem?</p>"""@lv ;
     eliozo:problemYear 2009 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2009.11" .
 
 eliozo:LV.AMO.2009.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2009.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2009.11.3" ;
     eliozo:problemText """Dots, ka $a$ un $b$ – naturāli skaitļi un skaitļa 
@@ -1830,14 +1751,13 @@ $S = a^2 + ab + b^2$ pēdējais
 cipars ir $0$. Kāds ir skaitļa $S$ priekšpēdējais cipars?</p>"""@lv ;
     eliozo:problemYear 2009 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2009.11" .
 
 eliozo:LV.AMO.2009.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2009.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2009.12.3" ;
     eliozo:problemText """Dots, ka $n$ - naturāls pāra skaitlis. Apskatām reizinājumu
@@ -1852,14 +1772,13 @@ $$R = n(n + 1)(n + 2)(n + 3).$$
 <strong>(B)</strong> vai var būt, ka $R$ ir kāda naturāla skaitļa kubs?</p>"""@lv ;
     eliozo:problemYear 2009 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2009.12" .
 
 eliozo:LV.AMO.2009.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2009.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2009.12.5" ;
     eliozo:problemText """Uz galda atrodas $n$ konfektes, $n$ – naturāls skaitlis. Divi spēlētāji
@@ -1874,7 +1793,8 @@ bezgalīgi daudz tādu $n$, ka, pareizi spēlējot, otrais spēlētājs var
 uzvarēt.</p>"""@lv ;
     eliozo:problemYear 2009 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2009.12" .
 
 eliozo:LV.AMO.2009.7.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-column,
@@ -1888,8 +1808,6 @@ eliozo:LV.AMO.2009.7.3 a eliozo:Problem ;
     eliozo:isHard "true" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2009.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2009.7.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2009.7.3 ;
@@ -1902,6 +1820,7 @@ visas ir dažādas. Kāds lielākais daudzums šo summu var būt pirmskaitļi?</
     eliozo:problemYear 2009 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2009.7" ;
     eliozo:topic eliozo:ExhaustionMethod,
         eliozo:ModularParity,
         eliozo:PrimesDistribution,
@@ -1912,8 +1831,6 @@ eliozo:LV.AMO.2009.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2009.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2009.7.4" ;
     eliozo:problemImage <http://www.dudajevagatve.lv/eliozo#IMG.geometry-grade07/LV.AMO.2009.7.4.png> ;
@@ -1925,7 +1842,8 @@ vienādmalu un atrodas ārpus $\\bigtriangleup ABC$. Pierādīt, ka $AN=CM$.<br 
 <img alt="LV.AMO.2016.7.3" src="geometry-grade07/LV.AMO.2009.7.4.png" /></p>"""@lv ;
     eliozo:problemYear 2009 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2009.7" .
 
 eliozo:LV.AMO.2009.7.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
@@ -1933,8 +1851,6 @@ eliozo:LV.AMO.2009.7.5 a eliozo:Problem ;
     eliozo:genre "making-moves" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2009.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2009.7.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2009.7.5 ;
@@ -1951,6 +1867,7 @@ vienīgā rūķīšiem pieejamā naudas vienība.)</p>"""@lv ;
     eliozo:problemYear 2009 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2009.7" ;
     eliozo:topic eliozo:InvariantRemainder .
 
 eliozo:LV.AMO.2009.8.4 a eliozo:Problem ;
@@ -1959,8 +1876,6 @@ eliozo:LV.AMO.2009.8.4 a eliozo:Problem ;
     eliozo:isHard "true" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2009.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2009.8.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2009.8.4 ;
@@ -1987,6 +1902,7 @@ gados.)</p>"""@lv ;
     eliozo:problemYear 2009 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2009.8" ;
     eliozo:topic eliozo:CanonicalFactorization,
         eliozo:ExhaustionMethod .
 
@@ -1995,8 +1911,6 @@ eliozo:LV.AMO.2009.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2009.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2009.9.4" ;
     eliozo:problemText """Naturāla skaitļa $n$ pozitīvo dalītāju skaitu apzīmējam ar $d(n)$.
@@ -2012,7 +1926,8 @@ apaļīgu, ja tas dalās ar $d(n)$.<br />
     eliozo:problemYear 2009 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindExample",
-        "Prove" .
+        "Prove" ;
+    eliozo:suffix "LV.AMO.2009.9" .
 
 eliozo:LV.AMO.2010.10.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-consecutive-numbers,
@@ -2020,8 +1935,6 @@ eliozo:LV.AMO.2010.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2010.10.4" ;
     eliozo:problemText """Cik dažādos veidos skaitli $2010$ var izteikt kā vismaz divu pēc kārtas
@@ -2031,6 +1944,7 @@ sekojošu naturālu skaitļu summu? Saskaitāmo secība nav svarīga.</p>"""@lv 
     eliozo:problemYear 2010 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.AMO.2010.10" ;
     eliozo:topic eliozo:CanonicalFactorization,
         eliozo:ExhaustionMethod,
         eliozo:SeriesMembersSumsClosedFormulas .
@@ -2041,8 +1955,6 @@ eliozo:LV.AMO.2010.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2010.11.1" ;
     eliozo:problemText """Dotas trīs aritmētiskas progresijas:  
@@ -2062,15 +1974,14 @@ dotajām virknēm!
 (b) Pierādi, ka ir bezgalīgi daudz tādu skaitļu, 
 kas pieder visām trim dotajām virknēm!</p>"""@lv ;
     eliozo:problemYear 2010 ;
-    eliozo:problem_number 1 .
+    eliozo:problem_number 1 ;
+    eliozo:suffix "LV.AMO.2010.11" .
 
 eliozo:LV.AMO.2010.11.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisors ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2010.11.4" ;
     eliozo:problemText """Uz tāfeles uzrakstīts skaitlis $2010$. 
@@ -2095,7 +2006,8 @@ spēlētājiem, pareizi spēlējot, uzvarēs –
 tas, kurš sāk, vai tas, kurš izdara otro gājienu?</p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2010.11" .
 
 eliozo:LV.AMO.2010.12.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-arithmetic-progression,
@@ -2103,8 +2015,6 @@ eliozo:LV.AMO.2010.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2010.12.3" ;
     eliozo:problemText """Atrodi visus tādus naturālus skaitļus $n$, 
@@ -2117,14 +2027,13 @@ veido dilstošu aritmētisku progresiju. ($d(x)$ ir
 skaitļa $x$ naturālo dalītāju skaits.)</p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2010.12" .
 
 eliozo:LV.AMO.2010.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2010.12.5" ;
     eliozo:problemText """Uz galda atrodas $n$ cepumi, kur $n$ – naturāls skaitlis. 
@@ -2141,7 +2050,8 @@ Tas, kam nav ko ēst, zaudē. Pierādi: ir bezgalīgi daudz
 tādu $n$, ka, pareizi spēlējot, otrais spēlētājs uzvar!</p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2010.12" .
 
 eliozo:LV.AMO.2010.7.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
@@ -2149,8 +2059,6 @@ eliozo:LV.AMO.2010.7.1 a eliozo:Problem ;
     eliozo:genre "construction" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2010.7.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2010.7.1 ;
@@ -2176,6 +2084,7 @@ zināms, ka</p>
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
     eliozo:strategy "CaseAnalysis" ;
+    eliozo:suffix "LV.AMO.2010.7" ;
     eliozo:topic eliozo:CanonicalFactorization,
         eliozo:PrimesDistribution .
 
@@ -2184,8 +2093,6 @@ eliozo:LV.AMO.2010.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2010.7.2" ;
     eliozo:problemText """Caur trijstūra $ABC$ virsotni $A$ novilktā taisne $t$ sadala trijstūri divos
@@ -2196,7 +2103,8 @@ vienādos trijstūros.
 Vai var gadīties, ka $AB&gt;AC$?</p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2010.7" .
 
 eliozo:LV.AMO.2010.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -2204,8 +2112,6 @@ eliozo:LV.AMO.2010.7.3 a eliozo:Problem ;
         "magic-construction" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2010.7.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2010.7.3 ;
@@ -2228,6 +2134,7 @@ nedz vienā kolonnā, summa ir $2010$.</li>
     eliozo:problemYear 2010 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2010.7" ;
     eliozo:topic eliozo:LinearSystemsApplications,
         eliozo:TreeTraversalBacktracking .
 
@@ -2235,8 +2142,6 @@ eliozo:LV.AMO.2010.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2010.7.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2010.7.4 ;
@@ -2253,14 +2158,13 @@ daļās, apēstas vai izmestas.)</p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2010.7" ;
     eliozo:topic eliozo:InvariantRemainder .
 
 eliozo:LV.AMO.2010.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2010.8.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2010.8.1 ;
@@ -2281,14 +2185,13 @@ Vai to var izdarīt?</p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2010.8" ;
     eliozo:topic eliozo:AlgorithmsOnSyntaxTrees .
 
 eliozo:LV.AMO.2010.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2010.8.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2010.8.2 ;
@@ -2303,6 +2206,7 @@ deviņiem skaitļiem vismaz astoņi būs savā starpā atšķirīgi!</p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2010.8" ;
     eliozo:topic eliozo:ExhaustionMethod,
         eliozo:NumTheoryExprForConcepts .
 
@@ -2312,8 +2216,6 @@ eliozo:LV.AMO.2010.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2010.9.1" ;
     eliozo:problemText """Naturālus skaitļus no $1$ līdz $2N$ jāsadala $N$ pāros tā, 
@@ -2328,15 +2230,14 @@ iespējams izdarīt, ja<br />
 <strong>(A)</strong> $N = 5$; <strong>(B)</strong> $N = 10$?</p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2010.9" .
 
 eliozo:LV.AMO.2010.9.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisors ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2010.9.3" ;
     eliozo:problemText """Naturāla skaitļa $n$ pozitīvo dalītāju skaitu apzīmējam ar $d(n)$. 
@@ -2352,14 +2253,13 @@ Sauksim skaitli $n$ par apaļīgu, ja tas dalās ar $d(n)$.<br />
     eliozo:problemYear 2010 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample",
-        "Prove" .
+        "Prove" ;
+    eliozo:suffix "LV.AMO.2010.9" .
 
 eliozo:LV.AMO.2010.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2010.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2010.9.4" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2010.9.4.png ;
@@ -2390,7 +2290,8 @@ kurā ierakstīts skaitlis $2010$?</p>
 <p><img alt="quadrant" src="LV.AMO.2010.9.4.png" /></p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2010.9" .
 
 eliozo:LV.AMO.2011.10.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-consecutive-numbers,
@@ -2398,8 +2299,6 @@ eliozo:LV.AMO.2011.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2011.10.1" ;
     eliozo:problemText """Cik dažādos veidos skaitli $2011$ var izteikt kā vismaz divu pēc kārtas
@@ -2409,7 +2308,8 @@ sekojošu naturālu skaitļu summu? Saskaitāmo secība nav svarīga.</p>"""@lv 
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindCount" ;
-    eliozo:seeAlso "LV.AMO.2010.10.4" .
+    eliozo:seeAlso "LV.AMO.2010.10.4" ;
+    eliozo:suffix "LV.AMO.2011.10" .
 
 eliozo:LV.AMO.2011.11.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-arithmetic-progression,
@@ -2417,8 +2317,6 @@ eliozo:LV.AMO.2011.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2011.11.1" ;
     eliozo:problemText """Dotas trīs aritmētiskas progresijas:  
@@ -2439,7 +2337,8 @@ dotajām virknēm!</p>"""@lv ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindOptimal",
         "Prove" ;
-    eliozo:seeAlso "LV.AMO.2010.11.1" .
+    eliozo:seeAlso "LV.AMO.2010.11.1" ;
+    eliozo:suffix "LV.AMO.2011.11" .
 
 eliozo:LV.AMO.2011.11.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-circumference,
@@ -2447,8 +2346,6 @@ eliozo:LV.AMO.2011.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2011.11.5" ;
     eliozo:problemText """Vai pa riņķa līniju var izvietot $2011$ dažādus naturālus skaitļus tā, ka
@@ -2459,7 +2356,8 @@ jebkuriem diviem blakus esošiem skaitļiem lielākā skaitļa attiecība
 pret mazāko ir pirmskaitlis?</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2011.11" .
 
 eliozo:LV.AMO.2011.12.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes,
@@ -2467,8 +2365,6 @@ eliozo:LV.AMO.2011.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2011.12.1" ;
     eliozo:problemText """Naturālie skaitļi no $1$ līdz $9$ sadalīti trīs grupās pa trim skaitļiem un
@@ -2481,14 +2377,13 @@ katrā grupā aprēķināta tajā ietilpstošo skaitļu summa. Vai var būt, ka<
 <strong>(B)</strong> visas summas ir atšķirīgi pirmskaitļi?</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2011.12" .
 
 eliozo:LV.AMO.2011.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2011.5.1" ;
     eliozo:problemText """Reizināšanas piemērā ciparus aizstāja ar burtiem un ieguva izteiksmi
@@ -2506,6 +2401,7 @@ ne $A$, ne $C$ nav $0$. Atrodi visus iespējamos atrisinājumus!</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:topic eliozo:ExhaustionMethod,
         eliozo:IntegerFactorization .
 
@@ -2514,8 +2410,6 @@ eliozo:LV.AMO.2011.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2011.5.2" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2011.5.2.png ;
@@ -2538,6 +2432,7 @@ rūtiņas!<br />
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:topic eliozo:AlgebraicTransformations,
         eliozo:NumTheoryExprVariables .
 
@@ -2547,8 +2442,6 @@ eliozo:LV.AMO.2011.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2011.5.3" ;
     eliozo:problemText "Parādi, kā kvadrātu var sadalīt vairākos platleņķa trijstūros!"@lv ;
@@ -2556,6 +2449,7 @@ eliozo:LV.AMO.2011.5.3 a eliozo:Problem ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:topic eliozo:CircleInscribedAngles,
         eliozo:ConstructionsSmallMovements,
         eliozo:ConstructionsTriangulate .
@@ -2564,8 +2458,6 @@ eliozo:LV.AMO.2011.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2011.5.4" ;
     eliozo:problemText """Vai naturālos skaitļus no $1$ līdz $12$, katru izmantojot tieši vienu reizi,
@@ -2581,6 +2473,7 @@ starpība ir<br />
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:topic eliozo:GraphProblems,
         eliozo:TreeTraversalBacktracking .
 
@@ -2588,8 +2481,6 @@ eliozo:LV.AMO.2011.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2011.5.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2011.5.5.png ;
@@ -2612,6 +2503,7 @@ Parādi, kā to var izdarīt, ja<br />
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:topic eliozo:CountingUsingSymmetry,
         eliozo:TreeTraversalBacktracking .
 
@@ -2620,8 +2512,6 @@ eliozo:LV.AMO.2011.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2011.6.1" ;
     eliozo:problemText """Vai eksistē tādi naturāli skaitļi $a$ un $b$, kuriem izpildās vienādība
@@ -2632,14 +2522,13 @@ $$a \\cdot b \\cdot (a+b) = 20102011 ?$$"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2011.6" ;
     eliozo:topic eliozo:IntegerFactorization .
 
 eliozo:LV.AMO.2011.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2011.6.2" ;
     eliozo:problemText """Sešdesmit pensionāri katru dienu *sociālajā tīklā*
@@ -2653,14 +2542,13 @@ Cik starp šiem pensionāriem ir kungu un cik – kundžu?</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2011.6" ;
     eliozo:topic eliozo:BipartiteGraphs .
 
 eliozo:LV.AMO.2011.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2011.6.3" ;
     eliozo:problemText """Kvadrātā ar izmēriem $8 \\times 8$ rūtiņas sākotnēji 
@@ -2676,14 +2564,13 @@ rūtiņas (novietotu horizontāli vai vertikāli)?</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2011.6" ;
     eliozo:topic eliozo:ExhaustionMethod .
 
 eliozo:LV.AMO.2011.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2011.6.4" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2011.6.4A.png,
@@ -2711,14 +2598,13 @@ Vai, vairākkārt veicot šādus gājienus, var iegūt tabulu, kāda attēlota 4
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2011.6" ;
     eliozo:topic eliozo:InvariantRemainder .
 
 eliozo:LV.AMO.2011.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2011.6.5" ;
     eliozo:problemText """Betai bija $50$ konfektes, bet Almai un Danai bija vienāds konfekšu skaits. 
@@ -2734,6 +2620,7 @@ Tagad Almai un Betai ir vienāds konfekšu skaits. Cik konfekšu sākumā bija k
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2011.6" ;
     eliozo:topic eliozo:AlgebraicTransformations .
 
 eliozo:LV.AMO.2011.7.1 a eliozo:Problem ;
@@ -2741,8 +2628,6 @@ eliozo:LV.AMO.2011.7.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2011.7.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2011.7.1 ;
@@ -2767,6 +2652,7 @@ nepārsniedz $100$. Par tiem zināms, ka</p>
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2011.7" ;
     eliozo:topic eliozo:PrimesDistribution .
 
 eliozo:LV.AMO.2011.7.3 a eliozo:Problem ;
@@ -2774,8 +2660,6 @@ eliozo:LV.AMO.2011.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2011.7.3" ;
     eliozo:problemText """Atrodi naturālu skaitli, kuru, dalot ar $2010$, atlikumā iegūst $13$, bet,
@@ -2785,6 +2669,7 @@ dalot ar $2011$, atlikumā iegūst $3$.</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2011.7" ;
     eliozo:topic eliozo:ArithmeticSeriesDivisibility,
         eliozo:ChineseRemainderTheorem .
 
@@ -2794,8 +2679,6 @@ eliozo:LV.AMO.2011.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2011.7.4" ;
     eliozo:problemText """Kvadrāts sadalīts piecos taisnstūros tā, ka šo taisnstūru malu garumi
@@ -2806,7 +2689,8 @@ centimetros ir visi naturālie skaitļi no $1$ līdz $10$. Parādi vienu
 piemēru, kā to var izdarīt!</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2011.7" .
 
 eliozo:LV.AMO.2011.7.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-distance,
@@ -2816,8 +2700,6 @@ eliozo:LV.AMO.2011.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2011.7.5" ;
     eliozo:problemText """Taisne nokrāsota $10$ dažādās krāsās. Pierādi, ka uz tās var atrast
@@ -2828,14 +2710,13 @@ divus vienas krāsas punktus, starp kuriem attālums centimetros ir
 vesels skaitlis.</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2011.7" .
 
 eliozo:LV.AMO.2011.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2011.8.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2011.8.1 ;
@@ -2853,6 +2734,7 @@ nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\cdo
     eliozo:problem_number 1 ;
     eliozo:questionType "FindExample" ;
     eliozo:seeAlso "LV.AMO.2010.8.1" ;
+    eliozo:suffix "LV.AMO.2011.8" ;
     eliozo:topic eliozo:AlgorithmsOnSyntaxTrees .
 
 eliozo:LV.AMO.2011.8.4 a eliozo:Problem ;
@@ -2860,8 +2742,6 @@ eliozo:LV.AMO.2011.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2011.8.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2011.8.4 ;
@@ -2874,6 +2754,7 @@ noteikti dalās ar <strong>(A)</strong> $17$; <strong>(B)</strong> $23$?</p>"""@
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2011.8" ;
     eliozo:topic eliozo:CanonicalFactorization,
         eliozo:NotationShift .
 
@@ -2881,8 +2762,6 @@ eliozo:LV.AMO.2011.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2011.8.5" ;
     eliozo:problemText """Jānis un Anna spēlē šādu spēli. Uz tāfeles ir uzrakstīts naturāls
@@ -2905,6 +2784,7 @@ jārīkojas!</p>"""@lv ;
     eliozo:problem_number 5 ;
     eliozo:questionType "Algorithm",
         "Prove" ;
+    eliozo:suffix "LV.AMO.2011.8" ;
     eliozo:topic eliozo:GameInvariant .
 
 eliozo:LV.AMO.2011.9.1 a eliozo:Problem ;
@@ -2913,8 +2793,6 @@ eliozo:LV.AMO.2011.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2011.9.1" ;
     eliozo:problemText """Atrodi visus naturālu skaitļu pārus $(x, y)$ tādus, ka $x\\neq y$ un
@@ -2924,15 +2802,14 @@ $$\\frac{1}{x^2 + 24} + \\frac{1}{y^2 + 24} = \\frac{2}{xy + 24}.$$"""@lv ;
 <p>$$\\frac{1}{x^2 + 24} + \\frac{1}{y^2 + 24} = \\frac{2}{xy + 24}.$$</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2011.9" .
 
 eliozo:LV.AMO.2011.9.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-equation ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2011.9.3" ;
     eliozo:problemText """Dots vienādojums $\\# x^2 − \\# x + \\# = 0$. Divi rūķīši spēlē spēli – pirmais
@@ -2945,7 +2822,8 @@ nosauc trīs dažādus skaitļus, bet otrais tos kaut kādā secībā saliek
 būtu vismaz viena racionāla sakne?</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2011.9" .
 
 eliozo:LV.AMO.2011.9.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-rectangle,
@@ -2953,8 +2831,6 @@ eliozo:LV.AMO.2011.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2011.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2011.9.4" ;
     eliozo:problemText """Kāds lielākais skaits pēc kārtas sekojošu naturālu skaitļu var būt ar
@@ -2965,15 +2841,14 @@ kvadrātu starpība?"""@lv ;
 kvadrātu starpība?</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2011.9" .
 
 eliozo:LV.AMO.2012.10.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2012.10.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2012.10.1 ;
@@ -2984,6 +2859,7 @@ skaitļa kubs.</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2012.10" ;
     eliozo:topic eliozo:ModularArithmetic .
 
 eliozo:LV.AMO.2012.11.1 a eliozo:Problem ;
@@ -2991,8 +2867,6 @@ eliozo:LV.AMO.2012.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2012.11.1" ;
     eliozo:problemText """Pierādi, ka nav tāda naturāla skaitļa $n$, ka skaitlis 
@@ -3001,15 +2875,14 @@ $n^2 − 3n − 1$ dalās ar $169$."""@lv ;
 $n^2 − 3n − 1$ dalās ar $169$.</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2012.11" .
 
 eliozo:LV.AMO.2012.12.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2012.12.1" ;
     eliozo:problemText """Skaitļi $A$ un $B$ ir divi dažādi $7$-ciparu skaitļi, 
@@ -3020,14 +2893,13 @@ kuri katrs satur visus ciparus no $1$ līdz $7$.
 Pierādi, ka $A$ nedalās ar $B$.</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2012.12" .
 
 eliozo:LV.AMO.2012.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2012.5.1" ;
     eliozo:problemText """Divu naturālu skaitļu pierakstā izmantoti tikai cipari $1$, $4$, $6$ un $9$. Vai
@@ -3039,6 +2911,7 @@ skaitlis?</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2012.5" ;
     eliozo:topic eliozo:ExhaustionMethod .
 
 eliozo:LV.AMO.2012.5.2 a eliozo:Problem ;
@@ -3047,8 +2920,6 @@ eliozo:LV.AMO.2012.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2012.5.2" ;
     eliozo:problemText """Parādi, kā kvadrātu var sadalīt vairākos platleņķa trijstūros.
@@ -3061,6 +2932,7 @@ divi šauri leņķi.)</p>"""@lv ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:sameAs "LV.AMO.2011.5.3" ;
+    eliozo:suffix "LV.AMO.2012.5" ;
     eliozo:topic eliozo:CircleInscribedAngles,
         eliozo:ConstructionsTriangulate .
 
@@ -3068,8 +2940,6 @@ eliozo:LV.AMO.2012.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2012.5.3" ;
     eliozo:problemText """Maisā ir baltas, zaļas un sarkanas pogas (citu krāsu pogu maisā nav).
@@ -3083,14 +2953,13 @@ pogas</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2012.5" ;
     eliozo:topic eliozo:NumTheoryPigeonholeNewSets .
 
 eliozo:LV.AMO.2012.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2012.5.4" ;
     eliozo:problemText """$24$-stāvu mājā ir lifts, kuram ir divas pogas. Nospiežot vienu pogu,
@@ -3106,14 +2975,13 @@ nolaižas $8$ stāvus uz leju (ja iespējams). Noskaidro, no kura stāva ar
     eliozo:problemYear 2012 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2012.5" ;
     eliozo:topic eliozo:NumTheoryMathInduction .
 
 eliozo:LV.AMO.2012.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2012.5.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2012.5.5.png ;
@@ -3126,6 +2994,7 @@ eliozo:LV.AMO.2012.5.5 a eliozo:Problem ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2012.5" ;
     eliozo:topic eliozo:SquareGridCutting .
 
 eliozo:LV.AMO.2012.7.1 a eliozo:Problem ;
@@ -3133,8 +3002,6 @@ eliozo:LV.AMO.2012.7.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2012.7.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2012.7.1 ;
@@ -3146,6 +3013,7 @@ $$ab(3a + 5b) = 1234567?$$"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2012.7" ;
     eliozo:topic eliozo:ModularParity .
 
 eliozo:LV.AMO.2012.7.2 a eliozo:Problem ;
@@ -3154,8 +3022,6 @@ eliozo:LV.AMO.2012.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2012.7.2" ;
     eliozo:problemText """Doti seši nogriežņi ar garumiem $1\\mbox{cm}$, $3\\mbox{cm}$, $5\\mbox{cm}$, 
@@ -3170,14 +3036,13 @@ tā, ka no tiem var izveidot trijstūri (katra trijstūra mala ir viens
 vesels nogrieznis)?</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindCount" .
+    eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.AMO.2012.7" .
 
 eliozo:LV.AMO.2012.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2012.8.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2012.8.1 ;
@@ -3194,14 +3059,13 @@ nemainot to secību, ievieto aritmētisko darbību zīmes ("$+$", "$-$", "$\\ast
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2012.8" ;
     eliozo:topic eliozo:AlgorithmsOnSyntaxTrees .
 
 eliozo:LV.AMO.2012.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2012.8.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2012.8.3 ;
@@ -3216,6 +3080,7 @@ visi skolēni, bija $20$. Cik skolēnu piedalījās olimpiādē?</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2012.8" ;
     eliozo:topic eliozo:BaricenterCoordinates,
         eliozo:NumTheoryInequalityMethod .
 
@@ -3225,8 +3090,6 @@ eliozo:LV.AMO.2012.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2012.8.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2012.8.4 ;
@@ -3239,6 +3102,7 @@ $5$.</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2012.8" ;
     eliozo:topic eliozo:PeriodicRemainders .
 
 eliozo:LV.AMO.2012.9.1 a eliozo:Problem ;
@@ -3246,8 +3110,6 @@ eliozo:LV.AMO.2012.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2012.9.1" ;
     eliozo:problemText "Atrodi vienu skaitli, kuram ir tieši $12$ veseli pozitīvi dalītāji."@lv ;
@@ -3255,6 +3117,7 @@ eliozo:LV.AMO.2012.9.1 a eliozo:Problem ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2012.9" ;
     eliozo:topic eliozo:ModularArithmetic .
 
 eliozo:LV.AMO.2012.9.2 a eliozo:Problem ;
@@ -3262,8 +3125,6 @@ eliozo:LV.AMO.2012.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2012.9.2" ;
     eliozo:problemText """Trijstūrī $ABC$ $\\angle ABC = 90^{\\circ}$ , bet punkts $P$ atrodas uz malas $AB$.
@@ -3275,6 +3136,7 @@ ka $\\angle BAC = \\angle BMN$.</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2012.9" ;
     eliozo:topic eliozo:TriangleCongruence .
 
 eliozo:LV.AMO.2012.9.3 a eliozo:Problem ;
@@ -3283,8 +3145,6 @@ eliozo:LV.AMO.2012.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2012.9.3" ;
     eliozo:problemText """Kvadrātvienādojuma $x^2 − 507x + a = 0$ saknes ir $p^2$ un $q$, kur $p$ un
@@ -3294,14 +3154,13 @@ $q$ ir pirmskaitļi. Aprēķini $a$ skaitlisko vērtību.</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2012.9" ;
     eliozo:topic eliozo:ModularArithmetic .
 
 eliozo:LV.AMO.2012.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2012.9.4" ;
     eliozo:problemText """Uz tāfeles uzrakstītas deviņas zvaigznītes 
@@ -3323,6 +3182,7 @@ Vai Pēteris vienmēr var uzvarēt?</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2012.9" ;
     eliozo:topic eliozo:ModularArithmetic .
 
 eliozo:LV.AMO.2012.9.5 a eliozo:Problem ;
@@ -3331,8 +3191,6 @@ eliozo:LV.AMO.2012.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2012.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2012.9.5" ;
     eliozo:problemText """Dota trapece, kuras pamatu malu garumi ir $3$ un $13$.
@@ -3344,6 +3202,7 @@ Pierādi, ka to nevar sadalīt piecos vienlielos trijstūros.
     eliozo:problemYear 2012 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2012.9" ;
     eliozo:topic eliozo:Trapezoids,
         eliozo:TriangleAreaBaseHeight .
 
@@ -3353,8 +3212,6 @@ eliozo:LV.AMO.2013.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2013.10.1" ;
     eliozo:problemText """Dots, ka $x_1$ ir vienādojuma $x^2+px+q=0$ sakne, 
@@ -3369,15 +3226,14 @@ atrodas starp $x_1$ un $x_2$ (t.i., $x_1 \\leq x_3 \\leq x_2$ vai
 $x_2 \\leq x_3 \\leq x_1$).</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.10" .
 
 eliozo:LV.AMO.2013.10.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-circumference ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2013.10.2" ;
     eliozo:problemText """Trijstūrī $ABC$ nogrieznis $CD$ ir bisektrise. Caur punktu $C$ novilkta
@@ -3390,14 +3246,13 @@ un $BC$ attiecīgi punktos $P$ un $Q$. Pierādīt, ka
 $AB \\parallel PQ$.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.10" .
 
 eliozo:LV.AMO.2013.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2013.10.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2013.10.3.png ;
@@ -3421,15 +3276,14 @@ sešstūriem ar caurumu centrā)?<br />
 <img alt="5.zīm" src="LV.AMO.2013.10.3.png" /></p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2013.10" .
 
 eliozo:LV.AMO.2013.10.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2013.10.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2013.10.4 ;
@@ -3442,6 +3296,7 @@ otru.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.10" ;
     eliozo:topic eliozo:ArithmeticAndGeometricSeries,
         eliozo:NumTheoryPigeonhole .
 
@@ -3449,8 +3304,6 @@ eliozo:LV.AMO.2013.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2013.10.5" ;
     eliozo:problemText """Vai pa riņķi var uzrakstīt $2013$ naturālus skaitļus tā, lai jebkuru
@@ -3459,14 +3312,13 @@ divu blakus esošu skaitļu attiecība būtu $2$, $3$, $12$ vai $18$?"""@lv ;
 divu blakus esošu skaitļu attiecība būtu $2$, $3$, $12$ vai $18$?</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2013.10" .
 
 eliozo:LV.AMO.2013.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2013.11.1" ;
     eliozo:problemText """Pierādīt, ka nav tāda naturāla skaitļa $n$, ka skaitlis 
@@ -3475,14 +3327,13 @@ $n^2-3n-1$ ar $169$."""@lv ;
 $n^2-3n-1$ ar $169$.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.11" .
 
 eliozo:LV.AMO.2013.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2013.11.2" ;
     eliozo:problemText """Vai eksistē regulārs daudzstūris, kuram vienas diagonāles garums
@@ -3491,7 +3342,8 @@ ir vienāds ar divu citu diagonāļu garumu summu?"""@lv ;
 ir vienāds ar divu citu diagonāļu garumu summu?</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2013.11" .
 
 eliozo:LV.AMO.2013.11.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility,
@@ -3499,8 +3351,6 @@ eliozo:LV.AMO.2013.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2013.11.3" ;
     eliozo:problemText """Doti dažādi nepāra naturāli skaitļi $a_1, a_2, \\ldots, a_n$. 
@@ -3514,14 +3364,13 @@ kā $5$. Pierādīt, ka</p>
 <p>$$\\frac{1}{a_1} + \\frac{1}{a_2} + \\frac{1}{a_3} + \\ldots \\frac{1}{a_n} &lt; 2.$$</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.11" .
 
 eliozo:LV.AMO.2013.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2013.11.4" ;
     eliozo:problemText """Kādā valstī ir $2013$ pilsētas, no katras uz katru var aizlidot ar
@@ -3548,14 +3397,13 @@ neatkarīgi no tā, kādu maršrutu viņš būs izvēlējies un kura ir
 sākotnējā pilsēta $Z$.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.11" .
 
 eliozo:LV.AMO.2013.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2013.11.5" ;
     eliozo:problemText """Uz galda virsmas, kurai ir taisnstūra forma, izvietoti vairāki
@@ -3570,15 +3418,14 @@ dažas adatas tā, ka katrs papīra gabaliņš būs piesprausts pie galda
 tieši ar vienu adatu.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.11" .
 
 eliozo:LV.AMO.2013.12.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-equation ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2013.12.1" ;
     eliozo:problemText """Atrisināt reālos skaitļos vienādojumu 
@@ -3587,15 +3434,14 @@ ${\\displaystyle \\log_{10} x  \\cdot \\log_{10} (4-x)=\\frac{1}{4}}$."""@lv ;
 ${\\displaystyle \\log_{10} x  \\cdot \\log_{10} (4-x)=\\frac{1}{4}}$.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2013.12" .
 
 eliozo:LV.AMO.2013.12.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-circumference ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2013.12.2" ;
     eliozo:problemText """Trijstūrī $ABC$ punkti $M$, $N$ un $K$ ir attiecīgi malu $AB$, $BC$ un $CA$
@@ -3608,15 +3454,14 @@ caur punktiem $M$, $B$, $N$; caur punktiem $N$, $C$, $K$. Pierādīt, ka visas
 novilktās riņķa līnijas krustojas vienā punktā.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.12" .
 
 eliozo:LV.AMO.2013.12.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-equation ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2013.12.3" ;
     eliozo:problemText """Pierādīt, ka neeksistē tādi naturāli skaitļi $x, y, z$, ka izpildās
@@ -3625,14 +3470,13 @@ vienādība $6^x + 13^y = 29^z$."""@lv ;
 vienādība $6^x + 13^y = 29^z$.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.12" .
 
 eliozo:LV.AMO.2013.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2013.12.4" ;
     eliozo:problemText """Kādas valodas alfabētā ir $i$ patskaņi ($i \\geq 2$) un 
@@ -3660,14 +3504,13 @@ Pierādīt, ka visiem naturāliem skaitļiem n ir spēkā vienādība</p>
 <p>$$S(n+3) = i \\cdot j \\cdot S(n+1) + i \\cdot j^2 \\cdot S(n).$$</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.12" .
 
 eliozo:LV.AMO.2013.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2013.12.5" ;
     eliozo:problemText """Dota kvadrātisku rūtiņu plakne, katras rūtiņas malas garums ir $1$.
@@ -3682,14 +3525,13 @@ kā par ${\\displaystyle \\frac{1}{2013 \\cdot \\sqrt{P}}}$,
 kur $P$ ir šī trijstūra perimetrs.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.12" .
 
 eliozo:LV.AMO.2013.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2013.5.1" ;
     eliozo:problemText """Cik reizes diennaktī sakrīt pulksteņa stundu un minūšu
@@ -3698,14 +3540,13 @@ rādītāji? (Plkst. 00:00 un 24:00 ieskaitīt vienu reizi.) *Atbildi pamatot!*"
 rādītāji? (Plkst. 00:00 un 24:00 ieskaitīt vienu reizi.) <em>Atbildi pamatot!</em></p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindCount" .
+    eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.AMO.2013.5" .
 
 eliozo:LV.AMO.2013.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2013.5.2" ;
     eliozo:problemText """$24$-stāvu mājā ir lifts, kuram ir divas pogas. 
@@ -3726,15 +3567,14 @@ augstāk par 24. stāvu un zemāk par 1.
 stāvu.)</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2013.5" .
 
 eliozo:LV.AMO.2013.5.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2013.5.3" ;
     eliozo:problemText """1. zīmējumā katrā aplītī ierakstīt vienu
@@ -3753,14 +3593,13 @@ viena un tā pati.<br />
 </ol>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2013.5" .
 
 eliozo:LV.AMO.2013.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2013.5.4" ;
     eliozo:problemText """No 2. zīmējumā redzamajām figūrām salikt
@@ -3777,14 +3616,13 @@ apgrieztas otrādi.) .
 <a href="LV.AMO.2013.5.4.png">2.zīm.</a></p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2013.5" .
 
 eliozo:LV.AMO.2013.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2013.5.5" ;
     eliozo:problemText """Kuba katra skaldne sadalīta četros vienādos kvadrātos. Vai šos
@@ -3797,14 +3635,13 @@ ir kopīga mala, ir nokrāsoti dažādās krāsās? Katrs kvadrāts pilnībā
 ir jākrāso vienā krāsā. <em>Atbildi pamatot!</em></p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2013.5" .
 
 eliozo:LV.AMO.2013.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2013.6.1" ;
     eliozo:problemText """Uz tāfeles uzrakstīti desmit skaitļi:
@@ -3825,7 +3662,8 @@ Pamato, ka neatkarīgi no secības, kādā Alfons izpilda darbības,
 beigās tiek iegūts viens un tas pats skaitlis. Kāds tas ir?</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.6" .
 
 eliozo:LV.AMO.2013.6.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility,
@@ -3833,8 +3671,6 @@ eliozo:LV.AMO.2013.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2013.6.2" ;
     eliozo:problemText """Vai var atrast tādus divus viens otram sekojošus naturālus skaitļus,
@@ -3847,14 +3683,13 @@ viens no kuriem dalās ar $3$ un kuru<br />
 <strong>(B)</strong> ciparu reizinājumi atšķiras par 3?</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2013.6" .
 
 eliozo:LV.AMO.2013.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2013.6.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2013.6.3.png ;
@@ -3868,14 +3703,13 @@ pagrieztas vai apgrieztas otrādi). <br />
 <img alt="3.zīm." src="LV.AMO.2013.6.3.png" /></p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2013.6" .
 
 eliozo:LV.AMO.2013.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2013.6.4" ;
     eliozo:problemText """Vai skaitļus no $100$ līdz $200$ var sadalīt divās grupās tā, ka skaitļu
@@ -3884,14 +3718,13 @@ reizinājumi abās grupās ir vienādi?"""@lv ;
 reizinājumi abās grupās ir vienādi?</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2013.6" .
 
 eliozo:LV.AMO.2013.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.6" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2013.6.5" ;
     eliozo:problemText """Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem 5x5
@@ -3906,14 +3739,13 @@ spēlētājs, kurš pēdējais ieraksta savu vārdu. Una izdara pirmo
 gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru?</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2013.6" .
 
 eliozo:LV.AMO.2013.7.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2013.7.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2013.7.1 ;
@@ -3924,6 +3756,7 @@ dalot šo skaitli ar tā ciparu reizinājumu, dalījums ir vismaz $\\frac{11}{9}
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.7" ;
     eliozo:topic eliozo:NotationPolynomial,
         eliozo:NumTheoryExtremeElement,
         eliozo:NumTheoryInequalityLargeIntervals .
@@ -3933,8 +3766,6 @@ eliozo:LV.AMO.2013.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2013.7.2" ;
     eliozo:problemText """Doti seši nogriežņi ar garumiem $1\\mbox{cm}$, $3\\mbox{cm}$, $5\\mbox{cm}$, 
@@ -3950,14 +3781,13 @@ vesels nogrieznis)?</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindCound" ;
-    eliozo:sameAs "LV.AMO.2012.7.2" .
+    eliozo:sameAs "LV.AMO.2012.7.2" ;
+    eliozo:suffix "LV.AMO.2013.7" .
 
 eliozo:LV.AMO.2013.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2013.7.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2013.7.3 ;
@@ -3970,6 +3800,7 @@ visi naturālie skaitļi no $1$ līdz $176$) nav naturāla skaitļa kvadrāts.
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.7" ;
     eliozo:topic eliozo:DivisibilityRulesForRemainders,
         eliozo:DivisibilityRulesLastDigits,
         eliozo:PrimeFactorizationAndPowers,
@@ -3979,8 +3810,6 @@ eliozo:LV.AMO.2013.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2013.7.4" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2013.7.4.png ;
@@ -3994,14 +3823,13 @@ figūru (tā var būt pagriezta vai apgāzta otrādi)?<br />
 <img alt="4.zīm" src="LV.AMO.2013.7.4.png" /></p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2013.7" .
 
 eliozo:LV.AMO.2013.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2013.7.5" ;
     eliozo:problemText """Una un Ivo, gājienus izdarot pēc kārtas, kvadrāta ar izmēriem $6 \\times 6$
@@ -4016,14 +3844,13 @@ spēlētājs, kurš pēdējais ieraksta savu vārdu. Una izdara pirmo
 gājienu. Kurš spēlētājs vienmēr var panākt savu uzvaru?</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindExample" .
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2013.7" .
 
 eliozo:LV.AMO.2013.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2013.8.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2013.8.1 ;
@@ -4034,6 +3861,7 @@ nosvītrojot to pirmo ciparu, samazinās $36$ reizes.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2013.8" ;
     eliozo:topic eliozo:NotationFragments,
         eliozo:NumTheoryExpr .
 
@@ -4043,8 +3871,6 @@ eliozo:LV.AMO.2013.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2013.8.2" ;
     eliozo:problemText """Dots trijstūris $ABC$ un punkts $P$ tā iekšpusē. Pierādi, ka attālumu
@@ -4055,14 +3881,13 @@ summa no punkta $P$ līdz dotā trijstūra virsotnēm ir lielāka nekā
 puse no trijstūra perimetra.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.8" .
 
 eliozo:LV.AMO.2013.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2013.8.3" ;
     eliozo:problemText """Doti tādi reāli skaitļi $t$ un $a$, ka 
@@ -4073,14 +3898,13 @@ $t^2 - t \\cdot sqrt(t) + a = 0$.<br />
 Pierādīt, ka $t \\geq 4a$.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.8" .
 
 eliozo:LV.AMO.2013.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2013.8.4" ;
     eliozo:problemText """Vai regulāru sešstūri var sadalīt **(A)** deviņos; **(B)** astoņos vienādos
@@ -4089,15 +3913,14 @@ daudzstūros?"""@lv ;
 daudzstūros?</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2013.8" .
 
 eliozo:LV.AMO.2013.8.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-monotonic-sequence ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2013.8.5" ;
     eliozo:problemText """Rūķītis ir iedomājies skaitļus $x_1,x_2,x_3,x_4$, 
@@ -4120,7 +3943,8 @@ Skaitļu virkne $x_1,x_2,x_3,x_4$ ir monotona, ja tā ir nedilstoša vai neaugo�
 $x_1 \\geq x_2 \\geq x_3 \\geq x_4$).</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.8" .
 
 eliozo:LV.AMO.2013.9.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-trapezoid,
@@ -4128,8 +3952,6 @@ eliozo:LV.AMO.2013.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2013.9.1" ;
     eliozo:problemText """Dota trapece, kuras pamatu malu garumi ir $3$ un $13$. Pierādīt, ka to
@@ -4140,14 +3962,13 @@ nevar sadalīt piecos vienlielos trijstūros.
 (Figūras sauc par vienlielām, ja tām ir vienādi laukumi.)</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.9" .
 
 eliozo:LV.AMO.2013.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2013.9.2" ;
     eliozo:problemText """Kvadrāta ar izmēriem $4 \\times 4$ rūtiņas katra rūtiņu virsotne nokrāsota
@@ -4160,14 +3981,13 @@ kas nokrāsoti vienā krāsā un atrodas vienādsānu taisnleņķa
 trijstūra virsotnēs.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.9" .
 
 eliozo:LV.AMO.2013.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2013.9.3" ;
     eliozo:problemText """Doti četri dažādi cipari, neviens no kuriem nav $0$. Visu divciparu
@@ -4178,15 +3998,14 @@ skaitļu, kurus var izveidot no šiem cipariem, summa ir $484$. Atrast
 dotos četrus ciparus.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2013.9" .
 
 eliozo:LV.AMO.2013.9.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-sequence ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2013.9.4" ;
     eliozo:problemText """Dota skaitļu virkne $x_0,x_1,x_2_,x_3,\\ldots$, 
@@ -4197,7 +4016,8 @@ kurā $x_0 \\geq 0$ un $x_{n+1}=x_n + \\frac{2}{x_n}$ visiem
 $n \\geq 0$. Pierādīt, ka $x_{100} \\geq 20$.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.9" .
 
 eliozo:LV.AMO.2013.9.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-circle,
@@ -4205,8 +4025,6 @@ eliozo:LV.AMO.2013.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2013.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2013.9.5" ;
     eliozo:problemText """Dots izliekts četrstūris. Uzzīmēti četri riņķi, kuru diametri ir
@@ -4215,7 +4033,8 @@ eliozo:LV.AMO.2013.9.5 a eliozo:Problem ;
 četrstūra malas. Pierādīt, ka šie riņķi pilnībā pārklāj doto četrstūri.</p>"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2013.9" .
 
 eliozo:LV.AMO.2014.10.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes,
@@ -4223,8 +4042,6 @@ eliozo:LV.AMO.2014.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2014.10.4" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2014.10.4A.png,
@@ -4239,6 +4056,7 @@ summu. Kāds lielākais skaits no šīm summām var būt pirmskaitļi?</p>"""@lv
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2014.10" ;
     eliozo:topic eliozo:BipartiteGraphs,
         eliozo:ModularArithmetic,
         eliozo:ModularParity,
@@ -4249,8 +4067,6 @@ eliozo:LV.AMO.2014.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2014.11.2" ;
     eliozo:problemText """Skaitļu virknei $(a_i)$ visiem $n>1$ ir spēkā sakarība 
@@ -4261,7 +4077,8 @@ $a_1 + a_2 + \\ldots + a_n = n^2 a_n$. Aprēķināt $a_{50}$,
 ja zināms, ka $a_1 = 1000$.</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2014.11" .
 
 eliozo:LV.AMO.2014.11.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-product,
@@ -4269,8 +4086,6 @@ eliozo:LV.AMO.2014.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2014.11.4" ;
     eliozo:problemText """Doti $99$ naturāli skaitļi. Zināms, ka nav tāda skaitļa, 
@@ -4285,15 +4100,14 @@ skaitļu reizinājumu. Pierādīt, ka visu $99$
 skaitļu reizinājums ir naturāla skaitļa kvadrāts.</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2014.11" .
 
 eliozo:LV.AMO.2014.12.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2014.12.3" ;
     eliozo:problemText """Atrast visus pirmskaitļus $p$, 
@@ -4302,14 +4116,13 @@ kuriem $p^4 − 6$ arī ir pirmskaitlis!"""@lv ;
 kuriem $p^4 − 6$ arī ir pirmskaitlis!</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2014.12" .
 
 eliozo:LV.AMO.2014.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2014.5.1" ;
     eliozo:problemText """Pūkainīšu ciemata bērniem Lieldienu zaķis atnesa olas. Katra no tām bija nokrāsota tieši
@@ -4327,14 +4140,13 @@ $\\frac{3}{4}$ no atlikušajām bija dzeltenas, bet pārējās -- zilas. Aprēķ
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2014.5" ;
     eliozo:topic eliozo:AlgebraicEquations .
 
 eliozo:LV.AMO.2014.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2014.5.2" ;
     eliozo:problemText """Divu naturālu skaitļu pierakstā izmantoti tikai cipari $2$, $3$, $7$ un $8$. Vai var gadīties, ka viens
@@ -4344,6 +4156,7 @@ skaitlis ir tieši trīs reizes lielāks nekā otrs skaitlis?</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2014.5" ;
     eliozo:topic eliozo:IntegerCongruence .
 
 eliozo:LV.AMO.2014.5.3 a eliozo:Problem ;
@@ -4353,8 +4166,6 @@ eliozo:LV.AMO.2014.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2014.5.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2014.5.3.png ;
@@ -4373,14 +4184,13 @@ mala.<br />
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2014.5" ;
     eliozo:topic eliozo:Rectangles .
 
 eliozo:LV.AMO.2014.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2014.5.4" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2014.5.4.png ;
@@ -4397,6 +4207,7 @@ jebkurā stāvoklī)?<br />
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2014.5" ;
     eliozo:topic eliozo:SquareGridCutting .
 
 eliozo:LV.AMO.2014.5.5 a eliozo:Problem ;
@@ -4404,8 +4215,6 @@ eliozo:LV.AMO.2014.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.5" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2014.5.5" ;
     eliozo:problemText """Kāds ir **(a)** mazākais, **(b)** lielākais skaitlis, kuru var izteikt gan kā trīs, gan kā divu dažādu
@@ -4415,6 +4224,7 @@ divciparu naturālu skaitļu reizinājumu?</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2014.5" ;
     eliozo:topic eliozo:NumTheoryInequalityLargeIntervals .
 
 eliozo:LV.AMO.2014.7.1 a eliozo:Problem ;
@@ -4424,8 +4234,6 @@ eliozo:LV.AMO.2014.7.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2014.7.1" ;
     eliozo:problemText """Trijstūrī $ABC$ novilkts augstums $BD$ un mediāna $BE$. Kāds var būt $AC$ garums, ja
@@ -4434,14 +4242,13 @@ $ED = 4\\mbox{cm}$ un $DC = 5\\mbox{cm}$?"""@lv ;
 $ED = 4\\mbox{cm}$ un $DC = 5\\mbox{cm}$?</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2014.7" .
 
 eliozo:LV.AMO.2014.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2014.7.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2014.7.2 ;
@@ -4452,6 +4259,7 @@ kuriem izpildās vienādība $a \\cdot (3a + 5b) \\cdot 7b = 7654321$.</p>"""@lv
     eliozo:problemYear 2014 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2014.7" ;
     eliozo:topic eliozo:ModularParity .
 
 eliozo:LV.AMO.2014.7.4 a eliozo:Problem ;
@@ -4459,8 +4267,6 @@ eliozo:LV.AMO.2014.7.4 a eliozo:Problem ;
     eliozo:genre "magic-configuration" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2014.7.4" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2014.7.4.png ;
@@ -4481,6 +4287,7 @@ jautājuma zīmi? Atrodiet visas iespējamās vērtības un pamatojiet, ka citu 
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2014.7" ;
     eliozo:topic eliozo:NumTheoryExprVariables .
 
 eliozo:LV.AMO.2014.8.1 a eliozo:Problem ;
@@ -4489,8 +4296,6 @@ eliozo:LV.AMO.2014.8.1 a eliozo:Problem ;
     eliozo:genre "digit-manipulation" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2014.8.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2014.8.1 ;
@@ -4503,6 +4308,7 @@ Kurš skaitlis lielāks – sākotnējais vai iegūtais?</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2014.8" ;
     eliozo:topic eliozo:NumericAlgorithms,
         eliozo:PeriodicRemainders .
 
@@ -4510,8 +4316,6 @@ eliozo:LV.AMO.2014.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2014.8.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2014.8.2 ;
@@ -4524,6 +4328,7 @@ ciparu, samazinās $15$ reizes!</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2014.8" ;
     eliozo:topic eliozo:NotationFragments,
         eliozo:NumTheoryExpr .
 
@@ -4531,8 +4336,6 @@ eliozo:LV.AMO.2014.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2014.8.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2014.8.5.png ;
@@ -4551,6 +4354,7 @@ zīmi, var būt ierakstīts skaitlis <strong>(a)</strong> $7$,  <strong>(b)</str
     eliozo:problemYear 2014 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2014.8" ;
     eliozo:topic eliozo:NumTheoryExprVariables,
         eliozo:TreeTraversalBacktracking .
 
@@ -4559,8 +4363,6 @@ eliozo:LV.AMO.2014.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2014.9.2" ;
     eliozo:problemText """Doti četri dažādi cipari, neviens no tiem nav $0$. Visu divciparu skaitļu, 
@@ -4571,14 +4373,13 @@ kurus var izveidot no
 šiem cipariem, summa ir $1276$. Atrast dotos četrus ciparus!</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2014.9" .
 
 eliozo:LV.AMO.2014.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2014.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2014.9.4" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2014.9.4.png ;
@@ -4601,15 +4402,14 @@ skaitlis, kas var būt ierakstīts tabulas centrālajā rūtiņā?</p>
 <p><img alt="magic square" src="LV.AMO.2014.9.4.png" /></p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2014.9" .
 
 eliozo:LV.AMO.2015.10.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-product ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2015.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2015.10.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2015.10.3 ;
@@ -4621,6 +4421,7 @@ eliozo:LV.AMO.2015.10.3 a eliozo:Problem ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
     eliozo:strategies "TrialAndError" ;
+    eliozo:suffix "LV.AMO.2015.10" ;
     eliozo:topic eliozo:InequalityProvingStronger .
 
 eliozo:LV.AMO.2015.11.1 a eliozo:Problem ;
@@ -4628,8 +4429,6 @@ eliozo:LV.AMO.2015.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2015.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2015.11.1" ;
     eliozo:problemText """Aplūkojam visus deviņciparu skaitļus, kas nesatur $0$ 
@@ -4642,15 +4441,14 @@ Pierādīt, ka starp tiem pāra skaitļu ir tieši divas reizes mazāk
 nekā tādu, kas dalās ar $3$, bet nedalās ar $5$.</p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2015.11" .
 
 eliozo:LV.AMO.2015.11.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2015.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2015.11.3" ;
     eliozo:problemText """Naturālam skaitlim $n$ ar $M(n)$ apzīmēsim mazāko naturālo skaitli, kas
@@ -4661,15 +4459,14 @@ beidzas ar $n$ un kura ciparu summa ir $n$. Piemēram, $M(13)=913$.
 Pierādīt, ka ir bezgalīgi daudz tādu $n$, ka $M(n)$ dalās ar $n$.</p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2015.11" .
 
 eliozo:LV.AMO.2015.12.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2015.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2015.12.5" ;
     eliozo:problemText """Atrast visus naturālu skaitļu trijniekus $(a,b,c)$, tādus, ka 
@@ -4680,15 +4477,14 @@ $a \\geq b \\geq c \\geq 2$
 un $ab-1$ dalās ar c, $bc-1$ dalās ar $a$, $ac-1$ dalās ar $b$.</p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2015.12" .
 
 eliozo:LV.AMO.2015.7.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2015.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2015.7.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2015.7.3 ;
@@ -4704,6 +4500,7 @@ divi cipari ir $11$ un kurš dalās ar $11$?</p>"""@lv ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample",
         "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2015.7" ;
     eliozo:topic eliozo:DivisibilityRuleFor11,
         eliozo:DivisibilityRulesFor3And9 .
 
@@ -4712,8 +4509,6 @@ eliozo:LV.AMO.2015.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2015.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2015.7.4" ;
     eliozo:problemText """Vienādsānu trijstūrī $ABC$ uz pamata malas $BC$ atzīmēts iekšējs punkts $D$
@@ -4724,15 +4519,14 @@ tā, ka arī trijstūri $ABD$ un $ACD$ ir vienādsānu. Aprēķini trijstūra $A
 leņķus! Atrodi visus gadījumus un pamato, ka citu nav!</p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2015.7" .
 
 eliozo:LV.AMO.2015.8.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-rational-numbers ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2015.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2015.8.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2015.8.1 ;
@@ -4743,6 +4537,7 @@ vērtība ir racionāls skaitlis!</p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2015.8" ;
     eliozo:topic eliozo:InfiniteDescent,
         eliozo:StandardIdentities .
 
@@ -4753,8 +4548,6 @@ eliozo:LV.AMO.2015.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2015.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2015.8.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2015.8.3 ;
@@ -4765,6 +4558,7 @@ naturāla skaitļa kvadrāta un pirmskaitļa summu.</p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.AMO.2015.8" ;
     eliozo:topic eliozo:PrimesDistribution,
         eliozo:StandardIdentities .
 
@@ -4772,22 +4566,19 @@ eliozo:LV.AMO.2015.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2015.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2015.9.3" ;
     eliozo:problemText "Pierādi, ka $x^5 - 5x^3 + 4x$ dalās ar $120$, ja $x$ ir vesels skaitlis!"@lv ;
     eliozo:problemTextHtml "<p>Pierādi, ka $x^5 - 5x^3 + 4x$ dalās ar $120$, ja $x$ ir vesels skaitlis!</p>"@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2015.9" .
 
 eliozo:LV.AMO.2016.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2016.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2016.10.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2016.10.2 ;
@@ -4799,6 +4590,7 @@ $x^3 − 2016xyz = 120$?</p>"""@lv ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:seeAlso "LV.AMO.2016.9.2" ;
+    eliozo:suffix "LV.AMO.2016.10" ;
     eliozo:topic eliozo:DivisibilityRulesForRemainders,
         eliozo:ModularArithmetic,
         eliozo:ModularArithmeticContradiction .
@@ -4810,8 +4602,6 @@ eliozo:LV.AMO.2016.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2016.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2016.10.3" ;
     eliozo:problemText """Aritmētiskās progresijas četri pēc kārtas ņemti locekļi ir veseli
@@ -4827,6 +4617,7 @@ veselu skaitļu kvadrātu summu!</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2016.10" ;
     eliozo:topic eliozo:CompletingSquare,
         eliozo:SeriesMembersSumsClosedFormulas,
         eliozo:StandardIdentities .
@@ -4835,8 +4626,6 @@ eliozo:LV.AMO.2016.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2016.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2016.11.2" ;
     eliozo:problemText """Vai var atrast tādus naturālus skaitļus $x$, $y$ un $z$, 
@@ -4845,15 +4634,14 @@ ka $x^2 + y^2 + z^2 = \\underbrace{1111 \\ldots 1}_{2016}$?"""@lv ;
 ka $x^2 + y^2 + z^2 = \\underbrace{1111 \\ldots 1}_{2016}$?</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2016.11" .
 
 eliozo:LV.AMO.2016.12.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-equation ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2016.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2016.12.2" ;
     eliozo:problemText """Pierādīt, ka vienādojumam $10^x + 12^y = 34^z$ nav 
@@ -4862,14 +4650,13 @@ atrisinājuma naturālos skaitļos!"""@lv ;
 atrisinājuma naturālos skaitļos!</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2016.12" .
 
 eliozo:LV.AMO.2016.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2016.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2016.7.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2016.7.2 ;
@@ -4884,6 +4671,7 @@ skaitu centu). Cik samaksāja Brālītis?</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2016.7" ;
     eliozo:topic eliozo:NumTheoryExpr,
         eliozo:NumTheoryExprForConcepts,
         eliozo:NumTheoryInequalityMethod .
@@ -4892,8 +4680,6 @@ eliozo:LV.AMO.2016.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2016.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2016.7.3" ;
     eliozo:problemImage <http://www.dudajevagatve.lv/eliozo#IMG.geometry-grade07/LV.AMO.2016.7.3.png> ;
@@ -4909,15 +4695,14 @@ ka $\\angle ANC=90^{\\circ}$.<br />
 <img alt="1.att." src="geometry-grade07/LV.AMO.2016.7.3.png" /></p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2016.7" .
 
 eliozo:LV.AMO.2016.8.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-expression ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2016.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2016.8.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2016.8.1 ;
@@ -4929,14 +4714,13 @@ $$\\frac{2000016 \\cdot 1999984}{5^{12} \\cdot 2^{13} - 128}$$"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2016.8" ;
     eliozo:topic eliozo:StandardIdentities .
 
 eliozo:LV.AMO.2016.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2016.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2016.8.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2016.8.2 ;
@@ -4945,6 +4729,7 @@ eliozo:LV.AMO.2016.8.2 a eliozo:Problem ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2016.8" ;
     eliozo:topic eliozo:ModularParity .
 
 eliozo:LV.AMO.2016.8.3 a eliozo:Problem ;
@@ -4952,8 +4737,6 @@ eliozo:LV.AMO.2016.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2016.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2016.8.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2016.8.3 ;
@@ -4964,6 +4747,7 @@ ciparu skaits, kas var būt šajā skaitlī?</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2016.8" ;
     eliozo:topic eliozo:DivisibilityRulesFor3And9,
         eliozo:DivisibilityRulesLastDigits,
         eliozo:DivisibilityRulesOther,
@@ -4973,8 +4757,6 @@ eliozo:LV.AMO.2016.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2016.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2016.9.2" ;
     eliozo:problemText """Vai var atrast tādus veselus skaitļus $x$, $y$ un $z$, ka 
@@ -4984,7 +4766,8 @@ $x^3 − 2016xyz = 10$?</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:seeAlso "LV.AMO.2016.10.2" .
+    eliozo:seeAlso "LV.AMO.2016.10.2" ;
+    eliozo:suffix "LV.AMO.2016.9" .
 
 eliozo:LV.AMO.2016.9.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-product,
@@ -4992,8 +4775,6 @@ eliozo:LV.AMO.2016.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2016.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2016.9.4" ;
     eliozo:problemText """Naturālu skaitļu virknes $1; 2; 2; 4; 8; 32; 48; \\ldots$ 
@@ -5006,15 +4787,14 @@ vienāds ar divu iepriekšējo locekļu nenulles ciparu reizinājumu.
 Kāds ir šīs virknes 2016. loceklis?</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2016.9" .
 
 eliozo:LV.AMO.2017.10.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2017.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2017.10.5" ;
     eliozo:problemText """Pierādīt, ja no trim naturāliem skaitļiem $n$; $n+11$ un $n+22$ divi ir
@@ -5025,6 +4805,7 @@ pirmskaitļi, tad trešais skaitlis dalās ar $6$.</p>"""@lv ;
     eliozo:problem_number 5 ;
     eliozo:questionType "Prove" ;
     eliozo:strategy "CaseAnalysis" ;
+    eliozo:suffix "LV.AMO.2017.10" ;
     eliozo:topic eliozo:ArithmeticSeriesAll,
         eliozo:DivisibilityProperties .
 
@@ -5033,8 +4814,6 @@ eliozo:LV.AMO.2017.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2017.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2017.11.5" ;
     eliozo:problemText """Doti naturāli skaitļi $k$ un $n$, $k \\leq n$.  
@@ -5049,14 +4828,13 @@ elementiem."""@lv ;
 elementiem.</p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2017.11" .
 
 eliozo:LV.AMO.2017.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2017.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2017.12.5" ;
     eliozo:problemText """**(A)** Doti naturāli skaitļi no $1$ līdz $11$. Izvēlieties deviņus no tiem 
@@ -5072,15 +4850,14 @@ summa dalās ar $7$. <br />
     eliozo:problemYear 2017 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindExample",
-        "ProveDisprove" .
+        "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2017.12" .
 
 eliozo:LV.AMO.2017.7.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-equilateral-triangle ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2017.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2017.7.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2017.7.3.png ;
@@ -5096,15 +4873,14 @@ vienādmalu!<br />
 <img alt="LV.AMO.2017.7.3" src="LV.AMO.2017.7.3.png" /></p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2017.7" .
 
 eliozo:LV.AMO.2017.7.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-product ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2017.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2017.7.5" ;
     eliozo:problemText """Cik ir tādu naturālu divciparu skaitļu, kuriem ciparu reizinājums ir tieši divas
@@ -5113,15 +4889,14 @@ reizes mazāks nekā pats skaitlis?"""@lv ;
 reizes mazāks nekā pats skaitlis?</p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindCount" .
+    eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.AMO.2017.7" .
 
 eliozo:LV.AMO.2017.8.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-product ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2017.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2017.8.5" ;
     eliozo:problemText """Vai var atrast tādu desmitciparu skaitli, kas ir vienāds ar visu savu ciparu
@@ -5130,15 +4905,14 @@ reizinājumu?"""@lv ;
 reizinājumu?</p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2017.8" .
 
 eliozo:LV.AMO.2017.9.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-equation ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2017.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2017.9.5" ;
     eliozo:problemText """Atrisināt naturālos skaitļos vienādojumu 
@@ -5147,15 +4921,14 @@ $x^3 + (x+1)^3 = (x+3)^3 + 1$."""@lv ;
 $x^3 + (x+1)^3 = (x+3)^3 + 1$.</p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2017.9" .
 
 eliozo:LV.AMO.2018.10.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2018.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2018.10.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2018.10.4 ;
@@ -5166,6 +4939,7 @@ $x^8 - x^2$ dalās ar $252$.</p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2018.10" ;
     eliozo:topic eliozo:DivisibilityProperties,
         eliozo:DivisibilityRulesFor3And9,
         eliozo:ModularArithmetic,
@@ -5175,8 +4949,6 @@ eliozo:LV.AMO.2018.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2018.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2018.11.1" ;
     eliozo:problemText """Pierādīt, ka visām naturālām $n$ vērtībām izpildās
@@ -5186,29 +4958,27 @@ $$1^3 + 2^3 + 3^3 + \\ldots + n^3 = (1 + 2 + 3 + \\ldots + n)^2.$$"""@lv ;
 <p>$$1^3 + 2^3 + 3^3 + \\ldots + n^3 = (1 + 2 + 3 + \\ldots + n)^2.$$</p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2018.11" .
 
 eliozo:LV.AMO.2018.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2018.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2018.11.4" ;
     eliozo:problemText "Vai eksistē tādi naturāli skaitļi $m$ un $n$, ka $m^2 - n^2 = 2mn$?"@lv ;
     eliozo:problemTextHtml "<p>Vai eksistē tādi naturāli skaitļi $m$ un $n$, ka $m^2 - n^2 = 2mn$?</p>"@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2018.11" .
 
 eliozo:LV.AMO.2018.12.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2018.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2018.12.4" ;
     eliozo:problemText """Naturāls skaitlis $B$ ir iegūts no naturāla skaitļa $A$, samainot vietām tā ciparus.
@@ -5217,15 +4987,14 @@ Zināms, ka $A + B = 10^{45}$. Pierādīt, ka gan $A$, gan $B$ dalās ar $5$."""
 Zināms, ka $A + B = 10^{45}$. Pierādīt, ka gan $A$, gan $B$ dalās ar $5$.</p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2018.12" .
 
 eliozo:LV.AMO.2018.7.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-triangle ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2018.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2018.7.3" ;
     eliozo:problemText """Uz trijstūra $ABC$ malas $AB$ izvēlēts patvaļīgs iekšējs punkts $D$. Pierādīt, ka 
@@ -5234,14 +5003,13 @@ $CD > \\frac{1}{2}(CA+CB-AB)$."""@lv ;
 $CD &gt; \\frac{1}{2}(CA+CB-AB)$.</p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2018.7" .
 
 eliozo:LV.AMO.2018.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2018.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2018.7.4" ;
     eliozo:problemText """Atrast tādu veselu skaitli $n$, lai vienādība
@@ -5254,7 +5022,8 @@ būtu patiesa!"""@lv ;
 <p>būtu patiesa!</p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2018.7" .
 
 eliozo:LV.AMO.2018.8.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-product,
@@ -5262,8 +5031,6 @@ eliozo:LV.AMO.2018.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2018.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2018.8.2" ;
     eliozo:problemText """Naturālu skaitļu virknes $1; 8; 8; 64; 192; 432; \\ldots$ 
@@ -5276,7 +5043,8 @@ locekļu nenulles ciparu reizinājumu. Kāds ir šīs
 virknes 2018. loceklis?</p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2018.8" .
 
 eliozo:LV.AMO.2018.9.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility,
@@ -5284,8 +5052,6 @@ eliozo:LV.AMO.2018.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2018.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2018.9.4" ;
     eliozo:problemText """Atrast lielāko naturālo skaitli, kas dalās ar $7$, kura ciparu summa ir $100$ un
@@ -5294,15 +5060,14 @@ kuram neviens cipars nav $0$."""@lv ;
 kuram neviens cipars nav $0$.</p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2018.9" .
 
 eliozo:LV.AMO.2019.10.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-equation ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2019.10.1" ;
     eliozo:problemText """Pierādīt, ka visām naturālām $n$ vērtībām ir spēkā vienādība
@@ -5316,6 +5081,7 @@ $$=\\frac{n(n+1)(n+2)(n+3)}{4}.$$"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2019.10" ;
     eliozo:topic eliozo:NumTheoryMathInduction .
 
 eliozo:LV.AMO.2019.10.4 a eliozo:Problem ;
@@ -5323,8 +5089,6 @@ eliozo:LV.AMO.2019.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.10" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2019.10.4" ;
     eliozo:problemText """Kādām naturālām $n$ vērtībām izteiksme 
@@ -5334,6 +5098,7 @@ $n^2 + n + 19$ ir kāda naturāla skaitļa kvadrāts?</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2019.10" ;
     eliozo:topic eliozo:StandardIdentities .
 
 eliozo:LV.AMO.2019.11.1 a eliozo:Problem ;
@@ -5341,8 +5106,6 @@ eliozo:LV.AMO.2019.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2019.11.1" ;
     eliozo:problemText """Atrisināt nevienādību 
@@ -5352,15 +5115,14 @@ $$\\frac{(x-20)^{19} \\cdot (x + 4)}{\\left( \\sqrt{x^2 + 4} \\right) \\left( 9-
 <p>$$\\frac{(x-20)^{19} \\cdot (x + 4)}{\\left( \\sqrt{x^2 + 4} \\right) \\left( 9-x^2 \\right)} \\geq 0.$$</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2019.11" .
 
 eliozo:LV.AMO.2019.11.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisors ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2019.11.2" ;
     eliozo:problemText """Divi spēlētāji pamīšus raksta uz tāfeles skaitļa $216$ 
@@ -5385,6 +5147,7 @@ otrais – vienmēr var uzvarēt?</p>"""@lv ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:seeAlso "LV.AMO.2019.12.2" ;
+    eliozo:suffix "LV.AMO.2019.11" ;
     eliozo:topic eliozo:FactorizationAndDivisibility,
         eliozo:GameInvariant .
 
@@ -5394,8 +5157,6 @@ eliozo:LV.AMO.2019.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2019.11.3" ;
     eliozo:problemText """Uz trijstūra $ABC$ malām $AB$ un $BC$ izvēlēti attiecīgi tādi punkti $D$ un $E$, ka
@@ -5408,15 +5169,14 @@ atrodas uz vienas riņķa līnijas. Taisne $BF$ krusto malu $AC$ punktā $H$ un
 trijstūrim $ABC$ apvilkto riņķa līniju punktā $G$. Pierādīt, ka $FH = GH$.</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2019.11" .
 
 eliozo:LV.AMO.2019.11.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-product ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.11" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2019.11.4" ;
     eliozo:problemText """Zināms, ka vairāku naturālu skaitļu summa ir **(A)** $2019$, **(B)** $2020$.   
@@ -5426,6 +5186,7 @@ Kāds ir lielākais iespējamais šo skaitļu reizinājums?</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2019.11" ;
     eliozo:topic eliozo:InequalityProvingStronger .
 
 eliozo:LV.AMO.2019.12.2 a eliozo:Problem ;
@@ -5433,8 +5194,6 @@ eliozo:LV.AMO.2019.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2019.12.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2019.12.2 ;
@@ -5459,15 +5218,14 @@ otrais – vienmēr var uzvarēt?</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:seeAlso "LV.AMO.2019.11.2" .
+    eliozo:seeAlso "LV.AMO.2019.11.2" ;
+    eliozo:suffix "LV.AMO.2019.12" .
 
 eliozo:LV.AMO.2019.12.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-rectangle ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2019.12.3" ;
     eliozo:problemText """Dots četrstūris $ABCD$, kuram $AB = AD$ un $BC = CD$. Riņķa līnija, kas iet caur
@@ -5478,14 +5236,13 @@ punktiem $A$, $B$ un $C$, krusto nogriežņus $AD$ un $CD$ attiecīgi to iekšē
 $E$ un $F$ un nogriezni $BD$ punktā $G$. Pierādīt, ka $EG = FG$.</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" .
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.AMO.2019.12" .
 
 eliozo:LV.AMO.2019.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2019.12.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2019.12.4 ;
@@ -5498,6 +5255,7 @@ kādu lielāko trijnieka pakāpi dalās $N$?</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2019.12" ;
     eliozo:topic eliozo:RuleOfProduct,
         eliozo:ValuationProperties .
 
@@ -5505,8 +5263,6 @@ eliozo:LV.AMO.2019.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.12" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2019.12.5" ;
     eliozo:problemText """Miljonāru kluba visbagātākajam biedram ir tieši $8$ reizes mazāk naudas nekā
@@ -5521,15 +5277,14 @@ visnabagākajam biedram ir tieši $13$ reizes mazāk naudas nekā visiem pārēj
 biedriem kopā. Cik biedru ir šajā klubā?</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindCount" .
+    eliozo:questionType "FindCount" ;
+    eliozo:suffix "LV.AMO.2019.12" .
 
 eliozo:LV.AMO.2019.7.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-product ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.7" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2019.7.5" ;
     eliozo:problemText """Kādai mazākajai naturālai $n$ vērtībai skaitli $10^n$
@@ -5542,15 +5297,14 @@ naturālu skaitļu reizinājumu tā, lai to visu pēdējie cipari ir dažādi (t
 nevienam no tiem pēdējais cipars nesakrīt ar kāda cita skaitļa pēdējo ciparu)?</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2019.7" .
 
 eliozo:LV.AMO.2019.8.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-product ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.8" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2019.8.5" ;
     eliozo:problemText """Kādai mazākajai naturālai $n$ vērtībai skaitli $10^n$
@@ -5569,14 +5323,13 @@ nevienam no tiem pēdējais cipars nesakrīt
 ar kāda cita skaitļa pēdējo ciparu)?</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "FindOptimal" .
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.AMO.2019.8" .
 
 eliozo:LV.AMO.2019.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2019.9.4" ;
     eliozo:problemText """Ja naturāla sešciparu skaitļa visus nepāra ciparus aizvietotu ar $7$, iegūtu skaitli,
@@ -5589,15 +5342,14 @@ ar $7$ aizvietotu visus pāra ciparus, tad iegūtais skaitlis būtu par $500290$
 nekā sākotnējais. Atrast doto sešciparu skaitli!</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "FindAll" .
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.AMO.2019.9" .
 
 eliozo:LV.AMO.2019.9.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-quadratic-equation ;
     eliozo:country "LV" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
-    eliozo:problemBook "LV" ;
-    eliozo:problemBookSection "AMO.2019.9" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2019.9.5" ;
     eliozo:problemText """Vai eksistē tāds kvadrātvienādojums ar veseliem koeficientiem, 
@@ -5616,7 +5368,8 @@ kuram ir sakne</p>
 \\left( \\sqrt{2020} + \\sqrt{2018} \\right)?$$</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" .
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.AMO.2019.9" .
 
 eliozo:IMG.LV.AMO.2010.9.4.png a eliozo:Image ;
     eliozo:imageSrc "LV.AMO.2010.9.4.png" ;

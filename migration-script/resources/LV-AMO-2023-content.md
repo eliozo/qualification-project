@@ -97,6 +97,7 @@ rūtiņas var pārvietot uz kreiso augšējo rūtiņu, ja kvadrāta izmēri ir:
 * topic:InvariantParity
 * questionType:ProveDisprove
 * domain:Comb
+* LTopic:LTInvariant
 
 </small>
 
@@ -127,7 +128,7 @@ Kāds ir lielākais iespējamais viesu skaits, kas bija ieradušies uz Gunas dzi
 
 * topic:PigeonholePrincipleForExtremes
 * questionType:FindOptimal
-* LTTopic:LTExtremes
+* LTTopic:LTExtremes,LTContradiction
 * domain:Comb
 * topic:LinearOptimization
 
@@ -266,6 +267,7 @@ Cik zaļo un cik sarkano bruņinieku sēž pie galda?
 
 * questionType:FindCount
 * domain:Comb
+* LTopic:LTContradiction
 
 </small>
 
@@ -313,6 +315,7 @@ komplektu viennozīmīgi nav iespējams noteikt?
 
 * questionType:FindOptimal
 * domain:Comb
+* LTopic:LTExtremeElement
 
 </small>
 
@@ -371,6 +374,7 @@ skaitļiem nebūtu vienādu ciparu?
 
 * questionType:ProveDisprove,ProveDisprove
 * domain:Comb
+* LTopic:LTMeanValuePrinciple
 
 </small>
 
@@ -542,6 +546,7 @@ Cik bizbizmārītes sēž uz palodzes?
 
 * questionType:FindCount
 * domain:Comb
+* LTopic:LTContradiction
 
 </small>
 
@@ -747,6 +752,7 @@ Cik bizbizmārītes sēž uz palodzes?
 * seeAlso:LV.AMO.2023.7.5
 * questionType:FindCount
 * domain:Comb
+* LTopic:LTContradiction
 
 </small>
 
@@ -798,6 +804,7 @@ un saucēju. Vai, atkārtojot
 
 * questionType:ProveDisprove,ProveDisprove
 * domain:Alg
+* LTopic:LTInvariant
 
 </small>
 
@@ -854,6 +861,7 @@ virsotnes, ir divas reizes garāka nekā augstums no tās pašas virsotnes!
 
 * questionType:Prove
 * domain:Geom
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -895,7 +903,7 @@ kartītēm uzrakstīto skaitļu summas ir vienādas?
 
 * questionType:ProveDisprove
 * domain:Comb
-* LTopic:LTCombinatorialStructures
+* LTopic:LTCombinatorialStructures,LTMeanValuePrinciple
 
 </small>
 
@@ -940,6 +948,7 @@ Vai var gadīties, ka: **(A)** $S = 100$; **(B)** $S = 123$?
 
 * questionType:ProveDisprove,ProveDisprove
 * domain:Comb
+* LTopic:LTInvariant
 
 </small>
 
@@ -989,6 +998,7 @@ Cik zaļo un cik sarkano bruņinieku sēž pie galda?
 
 * questionType:FindCount
 * domain:Comb
+* LTopic:LTContradiction
 
 </small>
 
@@ -1028,6 +1038,7 @@ Pierādīt, ka $9x^2 + 5y^2 − 8xy − 4x + 2 > 0$ visām reālām $x$ un $y$ v
 
 * questionType:Prove
 * domain:Alg
+* LTopic:LTExpressionTransforms
 
 </small>
 
@@ -1061,6 +1072,7 @@ leņķa $ABC$ lielums četrstūra ārpusē ir $7\alpha$ (skat. 19. att.). Aprē�
 
 * questionType:FindAll
 * domain:Geom
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -1152,7 +1164,7 @@ ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?
 
 * questionType:ProveDisprove,ProveDisprove
 * domain:Comb
-* LTopic:LTCombinatorialStructures
+* LTopic:LTCombinatorialStructures,LTMeanValuePrinciple
 
 </small>
 
@@ -1270,6 +1282,7 @@ Māra dzimšanas dienas svinībām?
 * questionType:FindOptimal
 * domain:Comb
 * topic:LinearOptimization
+* LTopic:LTContradiction
 
 </small>
 
@@ -1329,6 +1342,7 @@ visām pozitīvām reālām $a$, $b$ un $c$ vērtībām!
 
 * questionType:Prove
 * domain:Alg
+* LTopic:LTExpressionTransforms
 
 </small>
 
@@ -1363,6 +1377,7 @@ Aprēķināt riņķa, ko ierobežo dotā riņķa līnija, laukumu!
 
 * questionType:FindAll
 * domain:Geom
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -1418,6 +1433,7 @@ ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?
 
 * questionType:ProveDisprove,ProveDisprove
 * domain:Comb
+* LTopic:LTMeanValuePrinciple
 
 </small>
 
@@ -1490,6 +1506,7 @@ Atrisināt veselos skaitļos vienādojumu $17a^2 - 7b^2 + c^2 = 2023$.
 
 * questionType:FindAll
 * domain:NT
+* LTopic:LTContradiction
 
 </small>
 
@@ -1546,6 +1563,7 @@ skaitļi?
 
 * questionType:FindOptimal
 * domain:Alg
+* LTopic:LTExpressionTransforms
 
 </small>
 
@@ -1575,6 +1593,7 @@ Pierādīt, ka $S_{ABD} \leq S_{CEF}$.
 
 * questionType:Prove
 * domain:Geom
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -1622,6 +1641,7 @@ $2 \times 5$ rūtiņas nav patiess!
 
 * questionType:Prove,Prove
 * domain:Comb
+* LTopic:LTContradiction
 
 </small>
 

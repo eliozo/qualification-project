@@ -31,6 +31,7 @@ Kāds mazākais skaits punktu jānodzēš, lai nekādi trīs no atlikušajiem pu
 
 * questionType:FindOptimal
 * domain:Geom
+* LTopic:LTMeanValuePrinciple
 
 </small>
 
@@ -116,6 +117,7 @@ Vai iespējams, ka pēc atkārtotas automāta izmantošanas viṇai palika:
 
 * questionType:ProveDisprove
 * domain:Comb
+* LTopic:LTInvariant
 
 </small>
 
@@ -267,6 +269,7 @@ ko sauc par posmiem. Lauztu līniju, kuras galapunkti sakrīt, sauc par slēgtu 
 
 * questionType:ProveDisprove
 * domain:Geom
+* LTopic:LTInvariant
 
 </small>
 
@@ -412,6 +415,7 @@ Pierādīt, ka pēc gardēžu apmeklējuma vismaz viena torte vēl palika nenopi
 * questionType:Prove
 * domain:Comb
 * topic:LinearOptimization
+* LTopic:LTMeanValuePrinciple,LTExtremeElement
 
 </small>
 
@@ -505,6 +509,7 @@ kolonnā vai diagonālē, bet arī, piemēram, punkti $A, B, C$ (skat. 20. att.)
 
 * questionType:FindOptimal
 * domain:Comb
+* LTopic:LTMeanValuePrinciple
 
 </small>
 
@@ -531,6 +536,7 @@ Pierādīt, ka pēc gardēžu apmeklējuma vismaz viena torte vēl palika nenopi
 
 * questionType:Prove
 * domain:Comb
+* LTopic:LTMeanValuePrinciple,LTExtremeElement
 
 </small>
 
@@ -569,6 +575,7 @@ viens skaitlis un katrā rindā un katrā kolonnā skaitli pieaugtu bultiņas no
 
 * questionType:ProveDisprove
 * domain:Comb
+* LTopic:LTContradiction
 
 </small>
 
@@ -628,6 +635,7 @@ Pierādīt, ka $\sqrt{17-12 \sqrt{2}}+\sqrt{3-2 \sqrt{2}}+\sqrt{3+2 \sqrt{2}}=3$
 
 * questionType:Prove
 * domain:Alg
+* LTopic:LTExpressionTransforms
 
 </small>
 
@@ -684,6 +692,7 @@ Uz kvadrāta $ABCD$ diagonāles $BD$ atlikts punkts $E$. Pierādīt, ka $ED \cdo
 
 * questionType:Prove
 * domain:Geom
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -814,6 +823,7 @@ Doti reāli skaiții $x$ un $y$, kuriem $x y^{3}+1=x+y^{3}$. Pierādīt, ka $y x
 
 * questionType:Prove
 * domain:Alg
+* LTopic:LTExpressionTransform
 
 </small>
 
@@ -851,6 +861,7 @@ iekšējus punktus $P$ un $Q$, ka nogriežnu $AP, AQ, BP$ un $BQ$ garumi ir izsa
 
 * questionType:Prove
 * domain:Geom
+* LTopic:StructureAugmentation
 
 </small>
 
@@ -896,6 +907,7 @@ Atrast visus tādus veselu skaitlu pārus $(a ; b)$, kuriem izpildās vienādīb
 
 * questionType:FindAll
 * domain:NT
+* LTopic:LTExpressionTransform
 
 </small>
 
@@ -1013,6 +1025,7 @@ Pierādīt, ka $\frac{x^{2}+y^{2}}{x^{2}-y^{2}}+\frac{x^{2}-y^{2}}{x^{2}+y^{2}}<
 
 * questionType:Prove
 * domain:Alg
+* LTopic:LTExpressionTransform
 
 </small>
 
@@ -1056,6 +1069,7 @@ Aprēḳināt $EC$ garumu!
 
 * questionType:FindExample
 * domain:Geom
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -1153,6 +1167,7 @@ Vai iespējams, ka: **(A)** $n=2024$; **(B)** $n=2025$?
 
 * questionType:ProveDisprove
 * domain:Comb
+* LTopic:LTContradiction
 
 </small>
 
@@ -1236,6 +1251,7 @@ Pierādīt, ka $\frac{x^{2}+y^{2}}{x^{2}-y^{2}}+\frac{x^{2}-y^{2}}{x^{2}+y^{2}}>
 
 * questionType:Prove
 * domain:Alg
+* LTopic:LTExpressionTransform
 
 </small>
 
@@ -1277,6 +1293,7 @@ Taisnleṇḳa trijstūrī $A B C\left(\sphericalangle A B C=90^{\circ}\right)$ 
 
 * questionType:FindAll
 * domain:Geom
+* LTopic:LTStructureAugmentation
 
 </small>
 
@@ -1312,6 +1329,7 @@ ja sākumā kastē ir: **(A)** $20$; **(B)** $2024$ konfektes?
 
 * questionType:Algorithm,Algorithm
 * domain:NT
+* LTopic:LTInvariant
 
 </small>
 
@@ -1346,6 +1364,7 @@ Atrast visus pirmskaitlu pārus $(p;q)$, kuriem izpildās vienādība $p^{q}=q^{
 
 * questionType:FindAll
 * domain:NT
+* LTopic:LTInduction
 
 </small>
 

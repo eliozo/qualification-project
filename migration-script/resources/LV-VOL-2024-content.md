@@ -8,6 +8,7 @@ lielāks nekā visu šo skaitļu lielākais kopīgais dalītājs?
 
 * questionType:ProveDisprove
 * domain:Alg
+* LTopic:LTExtremeElement
 
 </small>
 
@@ -70,6 +71,7 @@ var atrast divus datorus, kuri ir saņēmuši vienādu ziņojumu skaitu!
 
 * questionType:Prove
 * domain:Comb
+* LTopic:LTContradiction
 
 </small>
 
@@ -274,6 +276,7 @@ z + \frac{1}{z} = 2x^2 \\
 
 * questionType:FindAll
 * domain:Alg
+* LTopic:LTExpressionTransform
 
 </small>
 
@@ -536,6 +539,7 @@ Aprēķināt četrstūra $OECG$ laukumu!
 
 * questionType:FindAll
 * domain:Geom
+* LTopic:LTInterpretation
 
 </small>
 
@@ -622,6 +626,7 @@ skaitļu summu?
 
 * questionType:FindAll
 * domain:NT
+* LTopic:LTExtremeElement
 
 </small>
 
@@ -679,6 +684,7 @@ saskaitītas. Pierādīt, ka spēlētājs $B$ var panākt, lai iegūtā summa b�
 
 * questionType:Prove
 * domain:Alg
+* LTopic:LTInvariant
 
 </small>
 
@@ -785,6 +791,7 @@ uzvarēs pareizi spēlējot, ja papildus zināms, ka katrs no viņiem var apēst
 
 * questionType:Algorithm,Algorithm
 * domain:Comb
+* LTopic:LTInvariant
 
 </small>
 

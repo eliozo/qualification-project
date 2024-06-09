@@ -1,25 +1,24 @@
 {% extends 'global.html' %}
 
 {% block content %}
-       <div class="col-sm-8 text-left">
-                           <p style="font-size:120%">Matemātikas olimpiāžu uzdevumi</p>
-                <hr>
-                <form class="search-form" action="{{ url_for('main') }}" method="get">
-                    <input class="search-input" type="text" name="keyword" value="{{ keyword }}" placeholder="Ierakstiet atslēgvārdus">
-                    <button class="search-button" type="submit">Meklēt</button>
-                </form>
-                {% for problem in problems %}
+<div class="col-sm-8 text-left">
+<p style="font-size:120%">Matemātikas olimpiāžu uzdevumi</p>
+<hr>
 
-            <h3 style="font-size: 120%; color: #1565C0;">{{ problem.problemid }}</h3>
+<form class="search-form" action="{{ url_for('main') }}" method="get">
+<input class="search-input" type="text" name="keyword" value="{{ keyword }}" placeholder="Ierakstiet atslēgvārdus">
+<button class="search-button" type="submit">Meklēt</button>
+</form>
 
-            {{ problem.text | safe }}
-            {% if problem.imagefile != '' %}
-            <p><img src="http://www.dudajevagatve.lv/static/eliozo/images/{{ problem.imagefile }}" width="250"/></p>
-            {% endif %}
-            <p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">
-                    Vairāk...
-            </a></p>
-            {% endfor %}
+{% for problem in problems %}
+<h3 class="problem">{{ problem.problemid }}</h3>
 
-        </div>
+{{ problem.text | safe }}
+
+<p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">
+Vairāk...
+</a></p>
+{% endfor %}
+
+</div>
 {% endblock %}

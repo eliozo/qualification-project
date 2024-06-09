@@ -250,3 +250,69 @@ div.panel-body h2 {
 div.panel-heading h4 {
   font-weight: normal;
 }
+
+
+/* Search form for "filters" */
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/*  was display: inline-block; */
+.search-form .filter-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-form .filter {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  flex: 1 1 200px; /* Flex-grow, flex-shrink, and base flex-basis */
+  min-width: 150px;
+  box-sizing: border-box;
+}
+
+.search-form .filter h3 {
+  margin-top: 0;
+}
+
+.search-form label {
+  font-weight: normal;
+}
+
+.search-form label.selected {
+  font-weight: bold;
+  color: blue;
+}
+
+.search-form .filter input {
+  margin-right: 5px;
+}
+
+.search-form .search-button {
+  margin-top: 20px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  color: white;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+.search-form .search-button:hover {
+  background-color: #4cae4c;
+}
+
+@media (min-width: 600px) {
+  .search-form {
+    flex-direction: row;
+  }
+  .search-button {
+    align-self: flex-start;
+    margin-top: 0;
+    margin-left: 0px;
+  }
+}

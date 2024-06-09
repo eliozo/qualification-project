@@ -13,7 +13,7 @@
   <ol class="custom-list">
     {% for skill in skill_list %}
     <li data-label="{{ skill.skillNum }}">
-      <a href="{{ url_for('getSkill',skillIdentifier=skill.prefLabel)}}">{{ skill.skillName | safe }}</a>
+      <a href="{{ url_for('getTopic',skillIdentifier=skill.prefLabel)}}">{{ skill.skillName | safe }}</a>
     </li>
     {% endfor %}
   </ol>

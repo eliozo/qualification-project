@@ -1,4 +1,4 @@
-# <lo-sample/> IMO.SHL.2022.A1
+# <lo-sample/> IMO_SHL.2022.A1
 
 Let $(a_n)_{n\geq 1}$ be a sequence of positive real numbers with the property that
 
@@ -41,7 +41,7 @@ a contradiction. We conclude that $a_{2022} \leqslant 1$.
 
 
 
-# <lo-sample/> IMO.SHL.2022.A2
+# <lo-sample/> IMO_SHL.2022.A2
 
 Let $k \ge 2$ be an integer. Find the smallest integer $n \ge k+1$ with the property that there 
 exists a set of $n$ distinct real numbers such that each of its elements can be written as a 
@@ -104,7 +104,7 @@ from the remaining $l-1$ sets $A_{4}, A_{5}, \cdots, A_{l+2}$.
 
 
 
-# <lo-sample/> IMO.SHL.2022.A3
+# <lo-sample/> IMO_SHL.2022.A3
 
 Let $\mathbb{R}^+$ denote the set of positive real numbers. Find all functions 
 $f: \mathbb{R}^+ \to \mathbb{R}^+$ such that for each $x \in \mathbb{R}^+$, there is exactly one 
@@ -336,7 +336,7 @@ a contradiction. We conclude that $f(x)=1/x$ as desired.
 
 
 
-# <lo-sample/> IMO.SHL.2022.A4
+# <lo-sample/> IMO_SHL.2022.A4
 
 Let $n \geqslant 3$ be an integer, and let $x_1,x_2,\ldots,x_n$ be real numbers in the interval 
 $[0,1]$. Let $s=x_1+x_2+\ldots+x_n$, and assume that $s \geqslant 3$. 
@@ -414,7 +414,7 @@ $2^{u+1-\alpha}+2^{v+1-\beta}<4$, and so $s<b-a+(2+2-u-v-1)=b-a-u-v-3$.
 
 
 
-# <lo-sample/> IMO.SHL.2022.A5
+# <lo-sample/> IMO_SHL.2022.A5
 
 Find all positive integers $n \geqslant 2$ for which there exist $n$ real numbers 
 $a_1<\cdots<a_n$ and a real number $r>0$ such that the $\tfrac{1}{2}n(n-1)$ differences 
@@ -552,7 +552,7 @@ thus $n=4$, which gives a contradiction.
 
 
 
-# <lo-sample/> IMO.SHL.2022.A6
+# <lo-sample/> IMO_SHL.2022.A6
 
 Let $\mathbb R$ be the set of real numbers. We denote by 
 $\mathcal F$ the set of all functions $f\colon\mathbb R\to\mathbb R$ such that
@@ -655,7 +655,7 @@ $p \notin Z$ as desired. This shows that $Z \subset S$.
 
 
 
-# <lo-sample/> IMO.SHL.2022.A7
+# <lo-sample/> IMO_SHL.2022.A7
 
 For a positive integer $n$ we denote by $s(n)$ the sum of the digits of $n$. 
 Let $P(x)=x^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0$ be a polynomial, where $n \geqslant 2$ 
@@ -744,7 +744,7 @@ have different parities, as claimed.
 
 
 
-# <lo-sample/> IMO.SHL.2022.A8
+# <lo-sample/> IMO_SHL.2022.A8
 
 For a positive integer $n$, an $n$-sequence is a sequence $(a_0,\ldots,a_n)$ 
 of non-negative integers satisfying the following condition: if $i$ and $j$ 
@@ -951,7 +951,7 @@ $\frac{236567}{4930} 3^{1 / 3} \approx$ 69.20662$.
 
 
 
-# <lo-sample/> IMO.SHL.2022.C1
+# <lo-sample/> IMO_SHL.2022.C1
 
 A $\pm 1$-sequence is a sequence of $2022$ numbers $a_1, \ldots, a_{2022},$ 
 each equal to either $+1$ or $-1$. Determine the largest $C$ so that, 
@@ -1017,7 +1017,7 @@ Determine the largest $C$ so that no matter how the buckets are coloured,
 Sally can achieve a score of at least $C$.
 
 
-# <lo-sample/> IMO.SHL.2022.C2
+# <lo-sample/> IMO_SHL.2022.C2
 
 The Bank of Oslo issues two types of coin: aluminum (denoted A) and bronze (denoted B). 
 Marianne has $n$ aluminum coins and $n$ bronze coins arranged in a row 
@@ -1095,7 +1095,7 @@ of blocks will decrease, as desired.
 
 
 
-# <lo-sample/> IMO.SHL.2022.C3
+# <lo-sample/> IMO_SHL.2022.C3
 
 In each square of a garden shaped like a $2022 \times 2022$ board, 
 there is initially a tree of height $0$. A gardener and a 
@@ -1132,7 +1132,7 @@ $5 N^{2}$ majestic trees. Giving the squares of the board coordinates
 in the natural manner, colour each square where at least one of its 
 coordinates are divisible by 3 , shown below for a $9 \times 9$ board:
 
-![](IMO.SHL.2022.C3A.png)
+![](IMO_SHL.2022.C3A.png)
 
 Then, as each $3 \times 3$ square on the board contains exactly $5$ 
 coloured squares, each move of the gardener will cause at most 
@@ -1177,7 +1177,7 @@ hence each of the subboard has $5$ majestic trees, which was what we wanted.
 
 
 
-# <lo-sample/> IMO.SHL.2022.C4
+# <lo-sample/> IMO_SHL.2022.C4
 
 Let $n > 3$ be a positive integer. Suppose that $n$ children are arranged 
 in a circle, and $n$ coins are distributed between them (some children 
@@ -1333,7 +1333,7 @@ which translates to the invariant described in solution $1$.
 
 
 
-# <lo-sample/> IMO.SHL.2022.C5
+# <lo-sample/> IMO_SHL.2022.C5
 
 Let $m,n \geqslant 2$ be integers, let $X$ be a set with $n$ elements, and let 
 $X_1,X_2,\ldots,X_m$ be pairwise distinct non-empty, not necessary disjoint subset of $X$. 
@@ -1400,7 +1400,7 @@ $f^{+}: X \rightarrow\{1,2, \ldots, n+1\}$, the proof is complete.
 
 
 
-# <lo-sample/> IMO.SHL.2022.C6
+# <lo-sample/> IMO_SHL.2022.C6
 
 Let $n$ be a positive integer. We start with $n$ piles of pebbles, each initially 
 containing a single pebble. One can perform moves of the following form: choose two piles, 
@@ -1682,7 +1682,7 @@ powers of three), but the case $k=5$ is already unclear.
 
 
 
-# <lo-sample/> IMO.SHL.2022.C7
+# <lo-sample/> IMO_SHL.2022.C7
 
 Lucy starts by writing $s$ integer-valued $2022$-tuples on a blackboard. 
 After doing that, she can take any two (not necessarily distinct) tuples 
@@ -1690,10 +1690,10 @@ $\mathbf{v}=(v_1,\ldots,v_{2022})$ and $\mathbf{w}=(w_1,\ldots,w_{2022})$
 that she has already written, and apply one of the following operations 
 to obtain a new tuple:
 
-\begin{align*}
-\mathbf{v}+\mathbf{w}&=(v_1+w_1,\ldots,v_{2022}+w_{2022}) \\ 
-\mathbf{v} \lor \mathbf{w}&=(\max(v_1,w_1),\ldots,\max(v_{2022},w_{2022}))
-\end{align*}
+$$\begin{aligned}
+\mathbf{v}+\mathbf{w} &= (v_1+w_1,\ldots,v_{2022}+w_{2022}) \\ 
+\mathbf{v} \lor \mathbf{w} &= (\max(v_1,w_1),\ldots,\max(v_{2022},w_{2022}))
+\end{aligned}$$
 
 and then write this tuple on the blackboard.
 
@@ -1836,7 +1836,7 @@ by both starting tuples, a contradiction with the observation above.
 
 
 
-# <lo-sample/> IMO.SHL.2022.C8
+# <lo-sample/> IMO_SHL.2022.C8
 
 Let $n$ be a positive integer. A Nordic square is an $n \times n$ board containing 
 all the integers from $1$ to $n^2$ so that each cell contains exactly one number. 
@@ -1920,7 +1920,7 @@ the consecutive considered fields are in columns of opposite parity.
 Examples of markings are given for $n=3,4,5,6,7$, and the corresponding 
 constructions for $A$ and $B$ are given for $n=5$.
 
-![](IMO.SHL.2022.C8A.png)
+![](IMO_SHL.2022.C8A.png)
 
 ## Common remarks.
 
@@ -1934,13 +1934,13 @@ constructions for $A$ and $B$ are given for $n=5$.
 
 
 
-# <lo-sample/> IMO.SHL.2022.C9
+# <lo-sample/> IMO_SHL.2022.C9
 
 Let $\mathbb Z_{\ge 0}$ be the set of non-negative integers, and let 
 $f:\mathbb Z_{\ge 0}\times \mathbb Z_{\ge 0} \to \mathbb Z_{\ge 0}$ be a 
 bijection such that whenever $f(x_1,y_1) > f(x_2, y_2)$, we have 
 
-$$f(x_1+1, y_1) > f(x_2 + 1, y_2)$ and $f(x_1, y_1+1) > f(x_2, y_2+1).$$
+$$f(x_1+1, y_1) > f(x_2 + 1, y_2)\;\;\text{and}\;\;f(x_1, y_1+1) > f(x_2, y_2+1).$$
 
 Let $N$ be the number of pairs of integers $(x,y)$ with $0\le x,y<100$, 
 such that $f(x,y)$ is odd. Find the smallest and largest possible values of $N$.
@@ -2080,7 +2080,7 @@ we can prove that mod 2 the region $A$ looks like the following:
 in the rows $(-, 2y)$ the remainders modulo 2 alternate, 
 while the rows $(-, 2y+1)$ contain only odd numbers.
 
-![](IMO.SHL.2022.C9A.png)
+![](IMO_SHL.2022.C9A.png)
 
 The numbers mod $2$ in the construction for $7500$.
 
@@ -2106,7 +2106,7 @@ Similarly to the above, we can prove that $\bmod 2$ the region $A$ looks like th
 in the rows $(-, 2y)$ the remainder modulo $2$ alternate, while the rows 
 $(-, 2y+1)$ contain only even numbers.
 
-![](IMO.SHL.2022.C9B.png)
+![](IMO_SHL.2022.C9B.png)
 
 The numbers mod 2 in the construction for 7500.
 
@@ -2151,7 +2151,7 @@ The numbers mod 2 in the construction for 7500.
 
 
 
-# <lo-sample/> IMO.SHL.2022.G1
+# <lo-sample/> IMO_SHL.2022.G1
 
 Let $ABCDE$ be a convex pentagon such that $BC=DE$. Assume that there is a point $T$ inside 
 $ABCDE$ with $TB=TD,TC=TE$ and $\angle ABT = \angle TEA$. 
@@ -2195,7 +2195,7 @@ $$\angle R P Q=\angle R C Q-\angle P Q C=\angle D S Q-\angle D S R=\angle R S Q$
 
 which proves that $P, Q, R$ and $S$ are concyclic.
 
-![](IMO.SHL.2022.G1A.png)
+![](IMO_SHL.2022.G1A.png)
 
 ## Solution
 
@@ -2225,7 +2225,7 @@ $$\angle R P Q=\angle W V Q=\angle W S Q=\angle R S Q$$
 concluding the proof.
 
 
-# <lo-sample/> IMO.SHL.2022.G2
+# <lo-sample/> IMO_SHL.2022.G2
 
 In the acute-angled triangle $ABC$, the point $F$ is the foot of the altitude 
 from $A$, and $P$ is a point on the segment $AF$. The lines through $P$ parallel 
@@ -2269,7 +2269,7 @@ Point $A$, being a common point of the two circles, is another point
 with equal powers, so the radical axis of circles $ABDX$ and $ACEY$ 
 is the altitude $A F$ that passes through $A^{\prime}$.
 
-![](IMO.SHL.2022.G2A.png)
+![](IMO_SHL.2022.G2A.png)
 
 ## Solution
 
@@ -2282,7 +2282,7 @@ From $\angle DNA = \angle DNP =  \angle DEP = \angle DBA$ it follows that $N$ li
 
 
 
-# <lo-sample/> IMO.SHL.2022.G3
+# <lo-sample/> IMO_SHL.2022.G3
 
 Let $ABCD$ be a cyclic quadrilateral. Assume that the points 
 $Q, A, B, P$ are collinear in this order, in such a way that the 
@@ -2313,7 +2313,7 @@ The claimed similarity is proven.
 Let $R$ be the midpoint of $C D$. Points $N$ and $R$ correspond in the proven 
 similarity, and so $\angle Q N A=\angle B R C$.
 
-![](IMO.SHL.2022.G3A.png)
+![](IMO_SHL.2022.G3A.png)
 
 Let $K$ be the second common point of line $C D$ with circle $A B R$ (i.e., 
 if $C D$ intersects circle $A B R$, then $K \neq R$ is the other intersection; 
@@ -2337,7 +2337,7 @@ common ideal point). Let $CD$ meet the tangent to the circle $ANQ$
 at $A$, and the tangent to the circle $BMP$ at $B$ at points 
 $K_{1}$ and $K_{2}$, respectively.
 
-![](IMO.SHL.2022.G3B.png)
+![](IMO_SHL.2022.G3B.png)
 
 Let $I$ and $J$ be the ideal points of $AD$ and $BC$, respectively. 
 Notice that the pencils $\left(AD, AC, AT, AK_{1}\right)$ and 
@@ -2359,7 +2359,7 @@ and hence $K_{1}=K_{2}$.
 
 
 
-# <lo-sample/> IMO.SHL.2022.G4
+# <lo-sample/> IMO_SHL.2022.G4
 
 Let $ABC$ be an acute-angled triangle with $AC > AB$, let $O$ be its circumcentre, 
 and let $D$ be a point on the segment $BC$. The line through $D$ perpendicular 
@@ -2392,7 +2392,7 @@ $$180^{\circ} - \angle DXZ = \angle ZXY = \angle ZAY = \angle ZCD$$
 
 which shows $CDXZ$ is cyclic.
 
-![](IMO.SHL.2022.G4A.png)
+![](IMO_SHL.2022.G4A.png)
 
 We next show that $A Z \| B C$. To do this, introduce point $Z^{\prime}$ on circle 
 $ABC$ such that $AZ^{\prime} \| BC$. By the previous result, it suffices 
@@ -2422,7 +2422,7 @@ By $BC \perp YX$, the angle of that similarity is $90^{\circ}$;
 hence the circles $ABCZ$ and $AXYZ$ are perpendicular, therefore the 
 radius $OZ$ in circle $ABCZ$ is tangent to circle $AXYZ$.
 
-![](IMO.SHL.2022.G4B.png)
+![](IMO_SHL.2022.G4B.png)
 
 By $OW = OD$, the triangle $OWD$ is isosceles, and
 
@@ -2432,7 +2432,7 @@ so $D$ lies on line $ZO$ that is tangent to circle $AXY$.
 
 
 
-# <lo-sample/> IMO.SHL.2022.G5
+# <lo-sample/> IMO_SHL.2022.G5
 
 Let $ABC$ be a triangle and $\ell_1,\ell_2$ be two parallel lines. 
 Let $\ell_i$ intersects line $BC,CA,AB$ at $X_i,Y_i,Z_i$, respectively. 
@@ -2470,7 +2470,7 @@ and their homothetic centre is $Y_{1} Y_{2} \cap Z_{1} Z_{2}=A$.
 Hence, line $D_{1} D_{2}$ passes through $A$. Analogously, 
 line $E_{1} E_{2}$ passes through $B$ and $F_{1} F_{2}$ passes through $C$.
 
-![](IMO.SHL.2022.G5A.png)
+![](IMO_SHL.2022.G5A.png)
 
 The corresponding sides of $\Delta_{1}$ and $\Delta_{2}$ are parallel, 
 because they are perpendicular to the respective sides of triangle $ABC$. 
@@ -2528,7 +2528,7 @@ let their intersection be $H$. Since $\left(A, D_{1} . D_{2}\right)$,
 $\left(B, E_{1} . E_{2}\right)$ and $\left(C, F_{1} . F_{2}\right)$ are collinear, 
 we obtain the same point $H$ for $i=1$ and $i=2$.
 
-![](IMO.SHL.2022.G5B.png)
+![](IMO_SHL.2022.G5B.png)
 
 By $\sphericalangle(C B, C H)=\sphericalangle\left(C X_{i}, C F_{i}\right)=\sphericalangle\left(Y_{i} X_{i}, Y_{i} F_{i}\right)=\sphericalangle\left(Y_{i} Z_{i}, Y_{i} D_{i}\right)=\sphericalangle\left(A Z_{i}, A D_{i}\right)=$ $\sphericalangle(A B, A H)$, point $H$ lies on circle $ABC$.
 
@@ -2572,7 +2572,7 @@ Let $H$ be the second intersection of circles $A B C$ and line $AD$.
 Like in the solutions above, we can find that the line $AD$ is fixed, 
 so $H$ is independent of the position of line $\ell$.
 
-![](IMO.SHL.2022.G5C.png)
+![](IMO_SHL.2022.G5C.png)
 
 From $\sphericalangle(H F, H D)=\sphericalangle(H C, H A)=\sphericalangle(B C, B A)=\sphericalangle(B X, B Z)=\sphericalangle(E X, E Z)=\sphericalangle(E F, E D)$ we can see that circle $\Delta$ passes through $H$. 
 Hence, all circles $D E F$ passes through a fixed point.
@@ -2584,7 +2584,7 @@ is tangent to the radius of circle $ABC$ at $H$.
 
 
 
-# <lo-sample/> IMO.SHL.2022.G6
+# <lo-sample/> IMO_SHL.2022.G6
 
 Let $ABC$ be an acute triangle with altitude $\overline{AH}$, and let $P$ be 
 a variable point such that the angle bisectors $k$ and $\ell$ of $\angle PBC$ 
@@ -2635,7 +2635,7 @@ $K$-excircle of $KBC$, $T^{\prime}C = BH$. Therefore $TC = T^{\prime}C$
 and $T \equiv T^{\prime}$. It yields that $\omega_{K}$ and 
 $\omega_{P}$ are tangent to each other at $T$.
 
-![](IMO.SHL.2022.G6A.png)
+![](IMO_SHL.2022.G6A.png)
 
 Let point $S$ be the internal homothetic centre of $\omega_{A}$ 
 and $\omega_{P}$, and let $S^{\prime}$ be the internal homothetic 
@@ -2670,7 +2670,7 @@ with foci $B,C$, and $H$ is a vertex of $\mathcal{H}$. Since $PI$ bisects
 the angle between the radii $BP$ and $CP$ of the hyperbola, 
 line $PI$ is tangent to $\mathcal{H}$.
 
-![](IMO.SHL.2022.G6B.png)
+![](IMO_SHL.2022.G6B.png)
 
 Let $K$ be the second intersection of $P Q$ and $\mathcal{H}$, 
 we will show that $A K$ is tangent to $\mathcal{H}$ at $K$; 
@@ -2697,7 +2697,7 @@ $\mathcal{H}^{\prime}=\mathcal{H}$.)
 
 
 
-# <lo-sample/> IMO.SHL.2022.G7
+# <lo-sample/> IMO_SHL.2022.G7
 
 Two triangles $ABC$, $A’B’C’$ have the same orthocenter $H$ and the same 
 circumcircle with center $O$. Letting $PQR$ be the triangle formed by 
@@ -2739,7 +2739,7 @@ $\omega$, by Brocard's theorem triangle $DST$ is self-polar with
 respect to $\omega$, i.e. each vertex is the pole of the opposite side. 
 We apply this in two ways.
 
-![](IMO.SHL.2022.G7A.png)
+![](IMO_SHL.2022.G7A.png)
 
 First, from $D$ being the pole of $S T$ it follows that the inverse 
 $D^{*}$ of $D$ with respect to $\omega$ is the projection of $D$ onto $ST$. 
@@ -2809,7 +2809,7 @@ $DMM^{\prime}$ and $SMM^{\prime}$, so it lies on their radical axis $MM^{\prime}
 radical axis of $\omega, \Omega$, and $\rho$ which can be used to solve 
 the problem. We outline one such solution.
 
-![](IMO.SHL.2022.G7B.png)
+![](IMO_SHL.2022.G7B.png)
 
 Let $L$ and $L^{\prime}$ denote the feet of the altitudes from $A$ and 
 $A^{\prime}$ in triangle $A B C$ and $A^{\prime} B^{\prime} C^{\prime}$, 
@@ -2845,7 +2845,7 @@ points on $B B^{\prime}$ and $C C^{\prime}$ with this property.
 
 
 
-# <lo-sample/> IMO.SHL.2022.G8
+# <lo-sample/> IMO_SHL.2022.G8
 
 Let $AA'BCC'B'$ be a convex cyclic hexagon such that $AC$ is tangent 
 to the incircle of the triangle $A'B'C'$, and $A'C'$ is tangent to the 
@@ -2880,7 +2880,7 @@ $I I^{\prime} \| N N^{\prime}$ which is antiparallel to $B B^{\prime}$
 with respect to $B I$ and $B^{\prime} I^{\prime}$. 
 Therefore $B, I, I^{\prime}, B^{\prime}$ are concyclic.
 
-![](IMO.SHL.2022.G8A.png)
+![](IMO_SHL.2022.G8A.png)
 
 Further define $P$ as the intersection of $A C$ and $A^{\prime} C^{\prime}$ 
 and $M$ as the antipode of $N^{\prime}$ in $\Omega$. Consider the circle 
@@ -2910,7 +2910,7 @@ $\Omega$ and circle $I I^{\prime} I_{c}$ coincide. Hence the external
 centre $T$ of dilation from $\omega$ to $\omega^{\prime}$ is also on 
 the radical axis of $\Omega$ and circle $I I^{\prime} I_{c}$.
 
-![](IMO.SHL.2022.G8B.png)
+![](IMO_SHL.2022.G8B.png)
 
 Now since $B, I, I^{\prime}, B^{\prime}$ are concyclic, the intersection 
 $T^{\prime}$ of $B B^{\prime}$ and $I I^{\prime}$ is on the radical axis 
@@ -2923,14 +2923,14 @@ theorem the external centre of dilation from $\Omega_{0}$ to $\omega$
 must be on the line $T B B^{\prime}$. However, it is on line $A B$, 
 so it must be $B$ and $B C$ must be tangent to $\Omega_{0}$ as desired.
 
-![](IMO.SHL.2022.G8C.png)
+![](IMO_SHL.2022.G8C.png)
 
 
 
 
 
 
-# <lo-sample/> IMO.SHL.2022.N1
+# <lo-sample/> IMO_SHL.2022.N1
 
 A number is called Norwegian if it has three distinct positive divisors 
 whose sum is equal to $2022$. Determine the smallest Norwegian number.  
@@ -3003,7 +3003,7 @@ $3c+2 \geqslant 3 \cdot 3+2>8=2^{3}$ and $3c+2 \neq 337$, then it must hold that
 $3c+2 \geqslant 2 \cdot 337$, contradicting $c<224$.
 
 
-# <lo-sample/> IMO.SHL.2022.N2
+# <lo-sample/> IMO_SHL.2022.N2
 
 Find all positive integers $n>2$ such that
 
@@ -3051,7 +3051,7 @@ but $8!\nmid \prod_{p<q \leqslant 7}(p+q)$, so neither does $9!$ and $10!$.
 
 
 
-# <lo-sample/> IMO.SHL.2022.N3
+# <lo-sample/> IMO_SHL.2022.N3
 
 Let $a > 1$ be a positive integer and $d > 1$ be a positive integer 
 coprime to $a$. Let $x_1=1$, and for $k\geq 1$, define
@@ -3167,7 +3167,7 @@ This implies that there are $n$ consecutive decreasing indices in the original s
 
 
 
-# <lo-sample/> IMO.SHL.2022.N4
+# <lo-sample/> IMO_SHL.2022.N4
 
 Find all triples $(a,b,p)$ of positive integers with 
 $p$ prime and \[ a^p=b!+p. \]
@@ -3285,7 +3285,7 @@ But $b \geqslant p+1$, so $b!\equiv 0 \not \equiv p^{p}-p \bmod (p+1)^{2}$, a co
 
 
 
-# <lo-sample/> IMO.SHL.2022.N5
+# <lo-sample/> IMO_SHL.2022.N5
 
 For each $1\leq i\leq 9$ and $T\in\mathbb N$, define $d_i(T)$ 
 to be the total number of times the digit $i$ appears when 
@@ -3351,7 +3351,7 @@ if and only if $n \equiv 1$ $(\bmod 10)$, which is not the case for $n=1829$.
 
 
 
-# <lo-sample/> IMO.SHL.2022.N6
+# <lo-sample/> IMO_SHL.2022.N6
 
 Let $Q$ be a set of prime numbers, not necessarily finite. 
 For a positive integer $n$ consider its prime factorization: 
@@ -3439,7 +3439,7 @@ $p(n), p(n+1), p(n+2)$ appear for a positive proportion of positive integers.
 
 
 
-# <lo-sample/> IMO.SHL.2022.N7
+# <lo-sample/> IMO_SHL.2022.N7
 
 Let $k$ be a positive integer and let $S$ be a finite set of odd prime numbers. 
 Prove that there is at most one way (up to rotation and reflection) 
@@ -3565,7 +3565,7 @@ It follows that there is at most one valid cycle, completing the inductive step.
 
 
 
-# <lo-sample/> IMO.SHL.2022.N8
+# <lo-sample/> IMO_SHL.2022.N8
 
 Prove that $5^n-3^n$ is not divisible by $2^n+65$ for any positive integer $n$.
 

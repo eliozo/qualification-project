@@ -82,7 +82,7 @@ def extract_solutions(text):
     current_solution = []
     lines = text.split('\n')
     for line in lines:
-        if re.fullmatch(r'## Atrisin.*', line):
+        if re.fullmatch(r'## Atrisin.*', line) or re.fullmatch(r'## Solut.*', line):
             # append the previous solution
             if current_solution != []:
                 solutions.append('\n'.join(current_solution))
@@ -170,6 +170,15 @@ def remove_translation_tags(text):
     pattern = re.compile(r'<text lang=.*?>.*?</text>', re.DOTALL)
     return re.sub(pattern, '', text)
 
+
+def get_suffix(arg):
+    if not isinstance(arg, str):
+        raise ValueError("Input should be a string")
+    last_dot_index = arg.rfind('.')
+    if last_dot_index == -1:
+        return arg
+    return arg[:last_dot_index]
+
 def md_to_rdf(md_file_path, ttl_file_path):
     sections = extract_sections_from_md(md_file_path)
 
@@ -178,13 +187,19 @@ def md_to_rdf(md_file_path, ttl_file_path):
     g.bind("skos", SKOS)
     g.bind("eliozo", ELIOZO)
 
-    olympiad_problem_id = re.compile(r"([A-Z]{2})\.(\w+)\.(\d+[A-Z]?)\.([0-9_]+)\.(\d+)") # LV.AO.2000.7.1
-    book_problem_id = re.compile(r"([A-Z0-9]*)\.(.*)\.(\d+)")  # BBK2012.P1.1 or BBK2012.P1.E2.1 or similar
+    olympiad_problem_id = re.compile(r"(EE|LV|LT)\.(\w+)\.(\d{4}[A-Z]?)\.([0-9_]+)\.(\d+)") # LV.AO.2000.7.1
+    book_problem_id = re.compile(r"([A-Z0-9]+)\.(.*)\.(\d+)")  # BBK2012.P1.1 or BBK2012.P1.E2.1 or similar
+    inter_problem_id = re.compile(r"(\w+)\.(\d{4}[A-Z]?)\.([A-Z])?(\d+)")   # IMO_SHL.2022.A2
 
     for i, (title,section) in enumerate(sections):
         title = title.strip()
+        suffix = get_suffix(title)
         problem_node = add_new_problem(g, title)
         match_id = olympiad_problem_id.match(title)
+        book_match_id = book_problem_id.match(title)
+        inter_match_id = inter_problem_id.match(title)
+
+
         if match_id:
             country = match_id.group(1)
             olympiad = match_id.group(2)
@@ -200,23 +215,49 @@ def md_to_rdf(md_file_path, ttl_file_path):
             else:
                 grade = int(rawGrade[0:grade_underscore])
             problem_number = match_id.group(5)
-
             add_problem_literal_prop(g, problem_node, 'country', country)
             add_problem_literal_prop(g, problem_node, 'olympiadCode', olympiad)
             add_problem_literal_prop(g, problem_node, 'olympiad', country + '.' + olympiad)
+            add_problem_literal_prop(g, problem_node, 'suffix', suffix)
             add_problem_integer_prop(g, problem_node, 'problemYear', year)
             add_problem_integer_prop(g, problem_node, 'problemGrade', grade)
             add_problem_integer_prop(g, problem_node, 'problem_number', problem_number)
             add_problem_literal_prop(g, problem_node, 'problemID', title)
-        match_id = book_problem_id.match(title)
-        if match_id:
-            book_name = match_id.group(1)
-            section_name = match_id.group(2)
-            problem_number = match_id.group(3)
+
+        elif book_match_id:
+            book_name = book_match_id.group(1)
+            section_name = book_match_id.group(2)
+            problem_number = book_match_id.group(3)
             add_problem_literal_prop(g, problem_node, 'problemBook', book_name)
             add_problem_literal_prop(g, problem_node, 'problemBookSection', section_name)
+            add_problem_literal_prop(g, problem_node, 'suffix', suffix)
             add_problem_integer_prop(g, problem_node, 'problem_number', problem_number)
             add_problem_literal_prop(g, problem_node, 'problemID', title)
+
+        elif inter_match_id:
+            olympiad = inter_match_id.group(1)
+            year = inter_match_id.group(2)
+            if len(year) > 4:
+                year = int(year[0:4])
+            else:
+                year = int(year)
+            grade = 12
+            problem_type = inter_match_id.group(3)
+            problem_number = inter_match_id.group(4)
+            if problem_type:
+                suffix = suffix + "." + problem_type
+
+            add_problem_literal_prop(g, problem_node, 'olympiad', olympiad)
+            add_problem_literal_prop(g, problem_node, 'olympiadCode', olympiad)
+            add_problem_literal_prop(g, problem_node, 'country', '')
+            add_problem_integer_prop(g, problem_node, 'problemYear', year)
+            add_problem_literal_prop(g, problem_node, 'suffix', suffix)
+            add_problem_integer_prop(g, problem_node, 'problem_number', problem_number)
+            add_problem_integer_prop(g, problem_node, 'problemGrade', grade)
+            add_problem_literal_prop(g, problem_node, 'problemID', title)
+
+        else:
+            print(f"***** WARNING: ***** Invalid problemID: {title}")
 
         problem_text_md = extract_problem(section).strip()
         # clean away the translations
