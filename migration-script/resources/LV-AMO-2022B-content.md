@@ -1598,10 +1598,10 @@ $$\frac{3}{5} \sin x+\frac{4}{5} \cos x=\frac{6}{5}.$$
 Izvēlēsimies tādu šauru leṇki $\alpha$, ka $\sin \alpha=\frac{4}{5}$. Tādā gadījumā 
 $\cos \alpha=\sqrt{1-\sin ^{2} \alpha}=\sqrt{1-\left(\frac{4}{5}\right)^{2}}=\frac{3}{5}$ un vienādojumu varam pārrakstīt kā
 
-$$\begin{gathered}
-\sin x \cos \alpha+\cos x \sin \alpha=\frac{6}{5} \\
-\sin (x+\alpha)=\frac{6}{5}
-\end{gathered}$$
+$$\begin{aligned}
+& \sin x \cos \alpha+\cos x \sin \alpha=\frac{6}{5} \\
+& \sin (x+\alpha)=\frac{6}{5}
+\end{aligned}$$
 
 Tā kā sinusa vērtības nepārsniedz 1, tad šim vienādojumam atrisinājumu nav. 
 Tātad arī dotajam vienādojumam atrisinājuma nav.
@@ -1611,11 +1611,12 @@ Tātad arī dotajam vienādojumam atrisinājuma nav.
 Izmantojot divkāršā leṇka formulas un $\cos ^{2} \frac{x}{2}+\sin ^{2} \frac{x}{2}=1$, 
 iegūstam, ka
 
-$$\begin{gathered}
-3 \cdot 2 \sin \frac{x}{2} \cos \frac{x}{2}+4\left(\cos ^{2} \frac{x}{2}-\sin ^{2} \frac{x}{2}\right)=6\left(\cos ^{2} \frac{x}{2}+\sin ^{2} \frac{x}{2}\right) \\
-6 \sin \frac{x}{2} \cos \frac{x}{2}+4 \cos ^{2} \frac{x}{2}-4 \sin ^{2} \frac{x}{2}=6 \cos ^{2} \frac{x}{2}+6 \sin ^{2} \frac{x}{2} \\
-2 \cos ^{2} \frac{x}{2}-6 \sin \frac{x}{2} \cos \frac{x}{2}+10 \sin ^{2} \frac{x}{2}=0
-\end{gathered}$$
+$$\begin{aligned}
+& 3 \cdot 2 \sin \frac{x}{2} \cos \frac{x}{2}+4\left(\cos ^{2} \frac{x}{2}-\sin ^{2} \frac{x}{2}\right)=6\left(\cos ^{2} \frac{x}{2}+\sin ^{2} \frac{x}{2}\right) \\
+& 6 \sin \frac{x}{2} \cos \frac{x}{2}+4 \cos ^{2} \frac{x}{2}-4 \sin ^{2} \frac{x}{2}=6 \cos ^{2} \frac{x}{2}+6 \sin ^{2} \frac{x}{2} \\
+& 2 \cos ^{2} \frac{x}{2}-6 \sin \frac{x}{2} \cos \frac{x}{2}+10 \sin ^{2} \frac{x}{2}=0
+\end{aligned}$$
+
 
 Abas vienādojuma puses dalot ar $2 \sin ^{2} \frac{x}{2} \neq 0$, iegūstam, ka
 
@@ -1649,7 +1650,7 @@ tātad kvadrātvienādojumam nav sakṇu, līdz ar to arī dotajam vienādojumam
 ## Atrisinājums
 
 Pierādīsim, ka izpildās nevienādība $a \sin x+b \cos x \leq \sqrt{a^{2}+b^{2}}$. 
-Kāpināsim abas vienādojuma puses kvadrātā un izmantosim, ka 
+Kāpināsim abas nevienādības puses kvadrātā un izmantosim, ka 
 $\sin ^{2} x+\cos ^{2} x=1$. Iegūstam, ka
 
 $$\begin{gathered}

@@ -6,9 +6,10 @@ eliozo:LV.VOL.2024.10.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2024.10.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.1.SUB0 ;
     eliozo:problemText """Vai var izvēlēties **(A)** $50$; **(B)** $51$ tādus dažādus naturālus skaitļus, 
 kas nepārsniedz $100$, lai jebkuriem diviem izvēlētajiem skaitļiem to starpība 
 (no lielākā skaitļa atņemot mazāko) nebūtu vienāda ar to lielāko kopīgo
@@ -20,18 +21,21 @@ dalītāju?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.VOL.2024.10" .
+    eliozo:suffix "LV.VOL.2024.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2024.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2024.10.2" ;
     eliozo:problemImage eliozo:IMG.LV.VOL.2024.10.2A.png,
         eliozo:IMG.LV.VOL.2024.10.2B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.2 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.2.SUB0,
+        eliozo:SOLN.LV.VOL.2024.10.2.SUB1 ;
     eliozo:problemText """Dots izliekts četrstūris $ABCD$, kuram $AB=BC=CD$. 
 Četrstūra diagonāles krustojas punktā $E$, bet leņķu $BAD$
 un $ADC$ bisektrises krustojas punktā $F$. Pierādīt, ka 
@@ -43,7 +47,8 @@ $\\sphericalangle EAF = \\sphericalangle EDF$.</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2024.10" .
+    eliozo:suffix "LV.VOL.2024.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2024.10.3 a eliozo:Problem ;
     eliozo:LTopic "LTExpressionTransform" ;
@@ -51,9 +56,11 @@ eliozo:LV.VOL.2024.10.3 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2024.10.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.3 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.3.SUB0,
+        eliozo:SOLN.LV.VOL.2024.10.3.SUB1 ;
     eliozo:problemText """Atrisināt reālos skaitļos vienādojumu sistēmu
 
 $$\\left\\{ \\begin{array}{l}
@@ -70,16 +77,18 @@ z + \\frac{1}{z} = 2x^2 \\
     eliozo:problemYear 2024 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.VOL.2024.10" .
+    eliozo:suffix "LV.VOL.2024.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2024.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2024.10.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.4 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.4.SUB0 ;
     eliozo:problemText """Skolas 10. klašu olimpiādē piedalījās 10.a un 10.b klases skolēni. 
 Pirmo reizi saskaitot rezultātus, tika noskaidrots,
 ka 10.a klases skolēnu vidējais rezultāts ir $37$ punkti, 
@@ -101,18 +110,20 @@ kopā piedalījās šajā olimpiādē?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindCount" ;
-    eliozo:suffix "LV.VOL.2024.10" .
+    eliozo:suffix "LV.VOL.2024.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2024.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2024.10.5" ;
     eliozo:problemImage eliozo:IMG.LV.VOL.2024.10.5A.png,
         eliozo:IMG.LV.VOL.2024.10.5B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.5 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.10.5.SUB0 ;
     eliozo:problemText """Tabulā ar izmēriem $9 \\times 9$ rūtiņas dažas rūtiņas ir iekrāsotas, bet pārējās ir neiekrāsotas. 
 Rūtiņu iekrāsošanai
 izmanto šādus gājienus: ja kādā rindā, kolonnā vai uz kādas no divām 
@@ -134,16 +145,19 @@ iekrāsot visas tabulas rūtiņas?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindOptimal" ;
-    eliozo:suffix "LV.VOL.2024.10" .
+    eliozo:suffix "LV.VOL.2024.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2024.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2024.11.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.1.SUB0,
+        eliozo:SOLN.LV.VOL.2024.11.1.SUB1 ;
     eliozo:problemText """Atrast visus reālu skaitļu pārus $(a;b)$, kuriem ir spēkā nevienādība:
 $$4a + 4b^2 + \\sqrt{4a - 4b^2 - 1} \\leq 1.$$"""@lv ;
     eliozo:problemTextHtml """<p>Atrast visus reālu skaitļu pārus $(a;b)$, kuriem ir spēkā nevienādība:
@@ -151,7 +165,8 @@ $$4a + 4b^2 + \\sqrt{4a - 4b^2 - 1} \\leq 1.$$</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.VOL.2024.11" .
+    eliozo:suffix "LV.VOL.2024.11" ;
+    eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2024.11.2 a eliozo:Problem ;
     eliozo:LTopic "LTInterpretation" ;
@@ -159,10 +174,11 @@ eliozo:LV.VOL.2024.11.2 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2024.11.2" ;
     eliozo:problemImage eliozo:IMG.LV.VOL.2024.11.2A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.2 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.2.SUB0 ;
     eliozo:problemText """Taisnstūrī $ABCD$ uz malas $BC$ atlikts punkts $E$. 
 Nogrieznis $AE$ krusto taisnstūra diagonāli $BD$ punktā $O$. 
 Taisne, kas novilkta caur punktu $O$ paralēli $BC$, 
@@ -180,16 +196,18 @@ Aprēķināt četrstūra $OECG$ laukumu!</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.VOL.2024.11" .
+    eliozo:suffix "LV.VOL.2024.11" ;
+    eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2024.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2024.11.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.3 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.3.SUB0 ;
     eliozo:problemText """Datorklasē ir $n$ ($n \\geq 3$) datori, daži no tiem ir savienoti savā starpā. 
 Ik pa brīdim kāds no datoriem, kurš pirms
 tam vēl neko nav sūtījis, nosūta ziņojumu visiem datoriem, ar ko tas ir savienots. 
@@ -204,7 +222,8 @@ var atrast divus datorus, kuri ir saņēmuši vienādu ziņojumu skaitu!</p>"""@
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
     eliozo:seeAlso "LV.VOL.2024.9.3" ;
-    eliozo:suffix "LV.VOL.2024.11" .
+    eliozo:suffix "LV.VOL.2024.11" ;
+    eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2024.11.4 a eliozo:Problem ;
     eliozo:LTopic "LTExtremeElement" ;
@@ -212,9 +231,10 @@ eliozo:LV.VOL.2024.11.4 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2024.11.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.4 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.4.SUB0 ;
     eliozo:problemText """Kādām naturālām $n$ vērtībām var atrast $2n+1$ naturālus skaitļus (ne obligāti dažādus) 
 ar īpašību, ka, izvēloties jebkurus $n+1$ no tiem, to summa dalīsies ar atlikušo $n$ 
 skaitļu summu?"""@lv ;
@@ -224,7 +244,8 @@ skaitļu summu?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.VOL.2024.11" .
+    eliozo:suffix "LV.VOL.2024.11" ;
+    eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2024.11.5 a eliozo:Problem ;
     eliozo:LTopic "LTInvariant" ;
@@ -232,9 +253,10 @@ eliozo:LV.VOL.2024.11.5 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2024.11.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.5 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.11.5.SUB0 ;
     eliozo:problemText """Dots naturāls skaitlis $n$, ar $M$ apzīmēsim pirmo $2n$ naturālo skaitļu kopu 
 $M = \\{1; 2; 3; \\ldots ; 2n\\}$. Divi spēlētāji
 $A$ un $B$ spēlē spēli. Katrā gājienā vispirms spēlētājs $A$ no kopas $M$ izvēlas skaitli $a$, 
@@ -264,16 +286,18 @@ saskaitītas. Pierādīt, ka spēlētājs $B$ var panākt, lai iegūtā summa b�
     eliozo:problemYear 2024 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2024.11" .
+    eliozo:suffix "LV.VOL.2024.11" ;
+    eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2024.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2024.12.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.1.SUB0 ;
     eliozo:problemText """Atrisināt reālos skaitļos vienādojumu sistēmu
 
 $$\\left\\{ \\begin{array}{l}
@@ -290,17 +314,19 @@ z + \\frac{1}{z} = x+y\\
     eliozo:problemYear 2024 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.VOL.2024.12" .
+    eliozo:suffix "LV.VOL.2024.12" ;
+    eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2024.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2024.12.2" ;
     eliozo:problemImage eliozo:IMG.LV.VOL.2024.12.2A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.2 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.2.SUB0 ;
     eliozo:problemText """Uz dažādmalu trijstūra $ABC$ malām $AB$ un $AC$ attiecīgi izvēlēti tādi punkti 
 $D$ un $E$, ka $BD = CE$. Trijstūriem $ABE$ un $ACD$
 apvilktās riņķa līnijas krustojas vēl arī punktā $T$. 
@@ -312,7 +338,8 @@ Pierādīt, ka $AT$ ir leņķa $BAC$ bisektrise!</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2024.12" .
+    eliozo:suffix "LV.VOL.2024.12" ;
+    eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2024.12.3 a eliozo:Problem ;
     eliozo:LTopic "LTInvariant" ;
@@ -320,9 +347,10 @@ eliozo:LV.VOL.2024.12.3 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2024.12.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.3 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.3.SUB0 ;
     eliozo:problemText """Uz galda traukā ir $200$ konfektes. Brālītis un Karlsons pēc kārtas izdara gājienus, 
 Brālītis sāk. Vienā gājienā var
 paņemt no trauka un apēst vai nu vienu, vai divas konfektes. 
@@ -340,16 +368,18 @@ uzvarēs pareizi spēlējot, ja papildus zināms, ka katrs no viņiem var apēst
     eliozo:problemYear 2024 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Algorithm" ;
-    eliozo:suffix "LV.VOL.2024.12" .
+    eliozo:suffix "LV.VOL.2024.12" ;
+    eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2024.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2024.12.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.4 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.4.SUB0 ;
     eliozo:problemText """Profesors Cipariņš iedomājās naturālu skaitli $n$ un uz tāfeles 
 vienu aiz otra bez atstarpes uzrakstīja skaitļus $2^n$
 un $14^n$ (tieši šādā secībā), uzrakstīto skaitli apzīmēsim ar 
@@ -363,16 +393,19 @@ ka skaitlis $C-1$ ir pirmskaitlis?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.VOL.2024.12" .
+    eliozo:suffix "LV.VOL.2024.12" ;
+    eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2024.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2024.12.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.5 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.12.5.SUB0,
+        eliozo:SOLN.LV.VOL.2024.12.5.SUB1 ;
     eliozo:problemText """Atrast lielāko reālo skaitli $A$ ar īpašību, ka 
 $3x^2 + y^2 + 1 \\geq A(x^2 + xy + x)$ visiem reāliem skaitļiem $x$ un $y$."""@lv ;
     eliozo:problemTextHtml """<p>Atrast lielāko reālo skaitli $A$ ar īpašību, ka 
@@ -380,7 +413,8 @@ $3x^2 + y^2 + 1 \\geq A(x^2 + xy + x)$ visiem reāliem skaitļiem $x$ un $y$.</p
     eliozo:problemYear 2024 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindOptimal" ;
-    eliozo:suffix "LV.VOL.2024.12" .
+    eliozo:suffix "LV.VOL.2024.12" ;
+    eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2024.9.1 a eliozo:Problem ;
     eliozo:LTopic "LTExtremeElement" ;
@@ -388,9 +422,10 @@ eliozo:LV.VOL.2024.9.1 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2024.9.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.1.SUB0 ;
     eliozo:problemText """Vai eksistē $5$ dažādi naturāli skaitļi ar īpašību, ka to vidējais aritmētiskais ir: 
 **(A)** tieši $3$ reizes lielāks; **(B)** tieši $2$ reizes
 lielāks nekā visu šo skaitļu lielākais kopīgais dalītājs?"""@lv ;
@@ -400,17 +435,19 @@ lielāks nekā visu šo skaitļu lielākais kopīgais dalītājs?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.VOL.2024.9" .
+    eliozo:suffix "LV.VOL.2024.9" ;
+    eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2024.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2024.9.2" ;
     eliozo:problemImage eliozo:IMG.LV.VOL.2024.9.2A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.2 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.2.SUB0 ;
     eliozo:problemText """Taisnstūrī $ABCD$ uz malas $BC$ atlikts punkts $E$. 
 Nogrieznis $AE$ krusto taisnstūra diagonāli $BD$ punktā $O$. Taisne,
 kas novilkta caur punktu $O$ paralēli $BC$, krusto malas $AB$ un $CD$ 
@@ -424,7 +461,8 @@ $BOF$ laukums ir $4$, bet trijstūra $AOD$ laukums ir $63$. Aprēķināt četrst
     eliozo:problemYear 2024 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.VOL.2024.9" .
+    eliozo:suffix "LV.VOL.2024.9" ;
+    eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2024.9.3 a eliozo:Problem ;
     eliozo:LTopic "LTContradiction" ;
@@ -432,9 +470,10 @@ eliozo:LV.VOL.2024.9.3 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2024.9.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.3 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.3.SUB0 ;
     eliozo:problemText """Datorklasē ir $n$ ($n \\geq 3$) datori, daži no tiem ir savienoti savā starpā. 
 Ik pa brīdim kāds no datoriem, kurš pirms tam vēl neko nav sūtījis, 
 nosūta ziņojumu visiem datoriem, ar ko tas ir savienots. Pierādīt, ka jebkurā laika brīdī
@@ -446,16 +485,18 @@ var atrast divus datorus, kuri ir saņēmuši vienādu ziņojumu skaitu!</p>"""@
     eliozo:problemYear 2024 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2024.9" .
+    eliozo:suffix "LV.VOL.2024.9" ;
+    eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2024.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2024.9.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.4 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.4.SUB0 ;
     eliozo:problemText """Uz tāfeles uzrakstīta izteiksme 
 $\\overline{abc} \\cdot \\overline{def} \\cdot \\overline{ghi} \\cdot \\overline{jkl}$, 
 kas ir četru trīsciparu skaitļu reizinājums. Katrā gājienā
@@ -473,16 +514,18 @@ ka pēc $12$ gājieniem iegūtās izteiksmes vērtība dalās ar $9$.</p>"""@lv 
     eliozo:problemYear 2024 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "Algorithm" ;
-    eliozo:suffix "LV.VOL.2024.9" .
+    eliozo:suffix "LV.VOL.2024.9" ;
+    eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2024.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2024.9.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.5 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2024.9.5.SUB0 ;
     eliozo:problemText """Kims grib naturālos skaitļus no $1$ līdz $2024$ uzrakstīt pa apli tā, 
 ka katrs skaitlis ir uzrakstīts tieši vienu reizi un
 katriem trīs pēc kārtas uzrakstītiem skaitļiem $a,b,c$ izpildās īpašība, 
@@ -496,7 +539,8 @@ var izdarīt?</p>"""@lv ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.VOL.2024.9" .
+    eliozo:suffix "LV.VOL.2024.9" ;
+    eliozo:suggestedGrade 9 .
 
 eliozo:IMG.LV.VOL.2024.10.2A.png a eliozo:Image ;
     eliozo:imageSrc "LV.VOL.2024.10.2A.png" ;
@@ -526,7 +570,7 @@ eliozo:IMG.LV.VOL.2024.9.2A.png a eliozo:Image ;
     eliozo:imageSrc "LV.VOL.2024.9.2A.png" ;
     eliozo:imageWidth "" .
 
-eliozo:SOLN.LV.VOL.2024.10.1 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.10.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -544,9 +588,8 @@ lielākais kopīgais dalītājs ir nepāra skaitlis.
 divi blakus esoši skaitļi $x$ un $x+1$, bet šo skaitļu
 starpība ir $(x+1)-x=1$ un $\\operatorname{LKD}(x+1,x)=1$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.10.2 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.LV.VOL.2024.10.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
 Tā kā $AB=BC=CD$, tad trijstūri $BCD$ un $ABC$ ir vienādsānu un to pamata pieleņķi ir vienādi:
@@ -571,8 +614,31 @@ $$\\begin{aligned}
 \\end{aligned}$$
 
 Līdz ar to esam ieguvuši, ka $2x = 2y$ jeb $x=y$, kas arī bija jāpierāda.  
-*Piezīme.* Citiem punktu $E$ un $F$ izkārtojumiem risinājums ir analoģisks."""@lv,
-        """## Atrisinājums
+*Piezīme.* Citiem punktu $E$ un $F$ izkārtojumiem risinājums ir analoģisks."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Tā kā $AB=BC=CD$, tad trijstūri $BCD$ un $ABC$ ir vienādsānu un to pamata pieleņķi ir vienādi:
+$\\sphericalangle BAC = \\sphericalangle BCA = \\alpha$ un 
+$\\sphericalangle CBD = \\sphericalangle CDB = \\beta$. 
+Apzīmējam $\\sphericalangle EAF = x$ un $\\sphericalangle EDF = y$ (skat. 2. att.).</p>
+<p><img alt="" src="LV.VOL.2024.10.2A.png" /></p>
+<p>Pēc dotā $AF$ un $DF$ ir leņķu bisektrises, tātad iegūstam:</p>
+<ul>
+<li>$\\sphericalangle EAD = \\sphericalangle EAF + \\sphericalangle FAD = x + (\\alpha + x) = \\alpha + 2x$. </li>
+<li>$\\sphericalangle EDA = \\sphericalangle FDA - \\sphericalangle FDE = (\\beta - y) -y = \\beta - 2y$. </li>
+</ul>
+<p>Tā kā krustleņķi ir vienādi, tad 
+$\\sphericalangle AED = \\sphericalangle BEC = 180^{\\circ} - \\sphericalangle BCE - \\sphericalangle EBC = 180^{\\circ} - \\alpha - \\beta$. Aplūkojot trijstūra
+$AED$ iekšējo leņķu summu, iegūstam:</p>
+<p>$$\\begin{aligned}
+180^{\\circ} &amp; = 180^{\\circ} - \\alpha - \\beta + (\\alpha + 2x) + (\\beta - 2y); \\
+180^{\\circ} &amp; = 180^{\\circ} + 2x - 2y. \\
+\\end{aligned}$$</p>
+<p>Līdz ar to esam ieguvuši, ka $2x = 2y$ jeb $x=y$, kas arī bija jāpierāda.<br />
+<em>Piezīme.</em> Citiem punktu $E$ un $F$ izkārtojumiem risinājums ir analoģisks.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2024.10.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
 
 Tā kā pēc dotā $AB = BC = CD$ (skat. 3. att.), tad:
 
@@ -597,26 +663,6 @@ $\\sphericalangle EAF = \\sphericalangle EAD - \\sphericalangle FAD = \\spherica
 tad $\\sphericalangle EAF = \\sphericalangle EDF$ 
 kā ievilktie leņķi, kas balstās uz vienu un to pašu loku $EF$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Tā kā $AB=BC=CD$, tad trijstūri $BCD$ un $ABC$ ir vienādsānu un to pamata pieleņķi ir vienādi:
-$\\sphericalangle BAC = \\sphericalangle BCA = \\alpha$ un 
-$\\sphericalangle CBD = \\sphericalangle CDB = \\beta$. 
-Apzīmējam $\\sphericalangle EAF = x$ un $\\sphericalangle EDF = y$ (skat. 2. att.).</p>
-<p><img alt="" src="LV.VOL.2024.10.2A.png" /></p>
-<p>Pēc dotā $AF$ un $DF$ ir leņķu bisektrises, tātad iegūstam:</p>
-<ul>
-<li>$\\sphericalangle EAD = \\sphericalangle EAF + \\sphericalangle FAD = x + (\\alpha + x) = \\alpha + 2x$. </li>
-<li>$\\sphericalangle EDA = \\sphericalangle FDA - \\sphericalangle FDE = (\\beta - y) -y = \\beta - 2y$. </li>
-</ul>
-<p>Tā kā krustleņķi ir vienādi, tad 
-$\\sphericalangle AED = \\sphericalangle BEC = 180^{\\circ} - \\sphericalangle BCE - \\sphericalangle EBC = 180^{\\circ} - \\alpha - \\beta$. Aplūkojot trijstūra
-$AED$ iekšējo leņķu summu, iegūstam:</p>
-<p>$$\\begin{aligned}
-180^{\\circ} &amp; = 180^{\\circ} - \\alpha - \\beta + (\\alpha + 2x) + (\\beta - 2y); \\
-180^{\\circ} &amp; = 180^{\\circ} + 2x - 2y. \\
-\\end{aligned}$$</p>
-<p>Līdz ar to esam ieguvuši, ka $2x = 2y$ jeb $x=y$, kas arī bija jāpierāda.<br />
-<em>Piezīme.</em> Citiem punktu $E$ un $F$ izkārtojumiem risinājums ir analoģisks.</p>"""@lv,
-        """<h2>Atrisinājums</h2>
 <p>Tā kā pēc dotā $AB = BC = CD$ (skat. 3. att.), tad:</p>
 <ul>
 <li>$\\sphericalangle BAC = \\sphericalangle ACB = \\alpha$, jo trijstūris $BAC$ ir vienādsānu;</li>
@@ -637,35 +683,9 @@ $\\sphericalangle EAF = \\sphericalangle EAD - \\sphericalangle FAD = \\spherica
 tad $\\sphericalangle EAF = \\sphericalangle EDF$ 
 kā ievilktie leņķi, kas balstās uz vienu un to pašu loku $EF$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.10.3 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.LV.VOL.2024.10.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
-
-Līdzīgi kā 1. atrisinājumā, iegūstam, ka $x,y,z \\geq 1$. 
-Nezaudējot vispārīgumu, varam pieņemt, ka
-$x$ ir vislielākā vai viena no lielākajām vērtībām, tas ir, $x \\geq z$ un $x \\geq y$. Pierādīsim, ka tādā gadījumā
-$$x + \\frac{1}{x} \\geq z + \\frac{1}{z}.$$
-Veicam ekvivalentus pārveidojumus:
-$$\\begin{aligned} \\frac{x^2 + 1}{x} & \\geq \\frac{z^2 + 1}{z}; \\\\
-zx^2 + z & \\geq xz^2 + x; \\\\
-(zx - 1)(x-z) \\geq 0. \\\\
-\\end{aligned}$$
-
-Tā kā $x,z \\geq 1$ un $x \\geq z$, tad iegūta patiesa nevienādība un 
-arī pirmā nevienādība ir patiesa, jo tika veikti ekvivalenti pārveidojumi. 
-Izmantojot nevienādību, iegūstam
-
-$$\\begin{aligned}
-x + \\frac{1}{x} & \\geq z + \\frac{1}{z} = 2x^2; \\\\
-0 & \\geq \\frac{2x^3 - x^2 - 1}{x}; \\\\
-0 & \\geq \\frac{(x-1)(2x^2 + x + 1)}{x}. \\\\
-\\end{aligned}$$
-
-Tā kā $2x^2 + x + 1 > 0$, tad nevienādība ir patiesa tikai tad, ja $x = 1$. 
-Tādā gadījumā $y = z = 1$, jo $x \\geq z$ un $x \\geq y$. 
-Tātad dotā vienādojuma atrisinājums ir $x = y = z = 1$."""@lv,
-        """## Atrisinājums
 
 Vienādojot vienādojumu kreiso pušu izteiksmju saucējus, iegūstam
 
@@ -710,27 +730,6 @@ tad $x^2 > x \\geq z$ un $x^2 > 1 \\geq \\frac{1}{z}$, tātad
 $2x^2 = x^2 + x^2 > z + \\frac{1}{z}$. Iegūta pretruna. 
 Tātad $x = 1$ un tā kā tas ir lielākais no skaitļiem, tad arī $y = 1$  un $z=1$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Līdzīgi kā 1. atrisinājumā, iegūstam, ka $x,y,z \\geq 1$. 
-Nezaudējot vispārīgumu, varam pieņemt, ka
-$x$ ir vislielākā vai viena no lielākajām vērtībām, tas ir, $x \\geq z$ un $x \\geq y$. Pierādīsim, ka tādā gadījumā
-$$x + \\frac{1}{x} \\geq z + \\frac{1}{z}.$$
-Veicam ekvivalentus pārveidojumus:
-$$\\begin{aligned} \\frac{x^2 + 1}{x} &amp; \\geq \\frac{z^2 + 1}{z}; \\
-zx^2 + z &amp; \\geq xz^2 + x; \\
-(zx - 1)(x-z) \\geq 0. \\
-\\end{aligned}$$</p>
-<p>Tā kā $x,z \\geq 1$ un $x \\geq z$, tad iegūta patiesa nevienādība un 
-arī pirmā nevienādība ir patiesa, jo tika veikti ekvivalenti pārveidojumi. 
-Izmantojot nevienādību, iegūstam</p>
-<p>$$\\begin{aligned}
-x + \\frac{1}{x} &amp; \\geq z + \\frac{1}{z} = 2x^2; \\
-0 &amp; \\geq \\frac{2x^3 - x^2 - 1}{x}; \\
-0 &amp; \\geq \\frac{(x-1)(2x^2 + x + 1)}{x}. \\
-\\end{aligned}$$</p>
-<p>Tā kā $2x^2 + x + 1 &gt; 0$, tad nevienādība ir patiesa tikai tad, ja $x = 1$. 
-Tādā gadījumā $y = z = 1$, jo $x \\geq z$ un $x \\geq y$. 
-Tātad dotā vienādojuma atrisinājums ir $x = y = z = 1$.</p>"""@lv,
-        """<h2>Atrisinājums</h2>
 <p>Vienādojot vienādojumu kreiso pušu izteiksmju saucējus, iegūstam</p>
 <p>$$\\left{ \\begin{array}{l}
 \\frac{x^2 + 1}{x} = 2y^2 \\
@@ -767,7 +766,56 @@ tad $x^2 &gt; x \\geq z$ un $x^2 &gt; 1 \\geq \\frac{1}{z}$, tātad
 $2x^2 = x^2 + x^2 &gt; z + \\frac{1}{z}$. Iegūta pretruna. 
 Tātad $x = 1$ un tā kā tas ir lielākais no skaitļiem, tad arī $y = 1$  un $z=1$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.10.4 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Līdzīgi kā 1. atrisinājumā, iegūstam, ka $x,y,z \\geq 1$. 
+Nezaudējot vispārīgumu, varam pieņemt, ka
+$x$ ir vislielākā vai viena no lielākajām vērtībām, tas ir, $x \\geq z$ un $x \\geq y$. Pierādīsim, ka tādā gadījumā
+$$x + \\frac{1}{x} \\geq z + \\frac{1}{z}.$$
+Veicam ekvivalentus pārveidojumus:
+$$\\begin{aligned} \\frac{x^2 + 1}{x} & \\geq \\frac{z^2 + 1}{z}; \\\\
+zx^2 + z & \\geq xz^2 + x; \\\\
+(zx - 1)(x-z) \\geq 0. \\\\
+\\end{aligned}$$
+
+Tā kā $x,z \\geq 1$ un $x \\geq z$, tad iegūta patiesa nevienādība un 
+arī pirmā nevienādība ir patiesa, jo tika veikti ekvivalenti pārveidojumi. 
+Izmantojot nevienādību, iegūstam
+
+$$\\begin{aligned}
+x + \\frac{1}{x} & \\geq z + \\frac{1}{z} = 2x^2; \\\\
+0 & \\geq \\frac{2x^3 - x^2 - 1}{x}; \\\\
+0 & \\geq \\frac{(x-1)(2x^2 + x + 1)}{x}. \\\\
+\\end{aligned}$$
+
+Tā kā $2x^2 + x + 1 > 0$, tad nevienādība ir patiesa tikai tad, ja $x = 1$. 
+Tādā gadījumā $y = z = 1$, jo $x \\geq z$ un $x \\geq y$. 
+Tātad dotā vienādojuma atrisinājums ir $x = y = z = 1$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Līdzīgi kā 1. atrisinājumā, iegūstam, ka $x,y,z \\geq 1$. 
+Nezaudējot vispārīgumu, varam pieņemt, ka
+$x$ ir vislielākā vai viena no lielākajām vērtībām, tas ir, $x \\geq z$ un $x \\geq y$. Pierādīsim, ka tādā gadījumā
+$$x + \\frac{1}{x} \\geq z + \\frac{1}{z}.$$
+Veicam ekvivalentus pārveidojumus:
+$$\\begin{aligned} \\frac{x^2 + 1}{x} &amp; \\geq \\frac{z^2 + 1}{z}; \\
+zx^2 + z &amp; \\geq xz^2 + x; \\
+(zx - 1)(x-z) \\geq 0. \\
+\\end{aligned}$$</p>
+<p>Tā kā $x,z \\geq 1$ un $x \\geq z$, tad iegūta patiesa nevienādība un 
+arī pirmā nevienādība ir patiesa, jo tika veikti ekvivalenti pārveidojumi. 
+Izmantojot nevienādību, iegūstam</p>
+<p>$$\\begin{aligned}
+x + \\frac{1}{x} &amp; \\geq z + \\frac{1}{z} = 2x^2; \\
+0 &amp; \\geq \\frac{2x^3 - x^2 - 1}{x}; \\
+0 &amp; \\geq \\frac{(x-1)(2x^2 + x + 1)}{x}. \\
+\\end{aligned}$$</p>
+<p>Tā kā $2x^2 + x + 1 &gt; 0$, tad nevienādība ir patiesa tikai tad, ja $x = 1$. 
+Tādā gadījumā $y = z = 1$, jo $x \\geq z$ un $x \\geq y$. 
+Tātad dotā vienādojuma atrisinājums ir $x = y = z = 1$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2024.10.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -845,7 +893,7 @@ Pieņemsim, ka $n=2$ un $m=23$, abiem
 "nesajauktajiem" 10.a klases skolēniem ir $38$ punkti, visiem "nesajauktajiem" 10.b klases 
 skolēniem ir $11$ punkti. Sajauktajam darbam ir $35$ punkti.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.10.5 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.10.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -913,25 +961,9 @@ tādēļ ir nepieciešama vēl
 vismaz viena sākotnēji iekrāsota rūtiņa. </p>
 <p><img alt="" src="LV.VOL.2024.10.5B.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.11.1 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.LV.VOL.2024.11.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
-
-Ja $a = \\frac{1}{4}$ un $b = 0$, tad nevienādība ir spēkā. jo 
-$4 \\cdot \\frac{1}{4} + 4 \\cdot 0 + \\sqrt{4 \\cdot \\frac{1}{4} - 4 \\cdot 0 - 1} = 1 \\geq 1$
-Pamatosim, ka nevienādības vienīgais atrisinājums ir $a = \\frac{1}{4}$ un $b = 0$. 
-Aplūkosim trīs gadījumus.
-
-* Ja $a < \\frac{1}{4}$, tad $4a < 1$ un zemsaknes izteiksme $4a - 4b^2 - 1 = 4a - 1 -4b^2$
-  ir negatīva, jo $4a - 1 < 0$ un $-4b^2 < 0$. Tādā gadījumā izteiksme nav definēta 
-  un atrisinājuma nav. 
-* Ja $a > \\frac{1}{4}$, tad $4a > 1$. Tā kā $4b^2 + \\sqrt{4a - 4b^2 - 1} \\geq 0$, 
-  tad $4a + 4b^2 + \\sqrt{4a - 4b^2 - 1} > 1$, tātad nevienādībai nav atrisinājuma. 
-* Ja $a = \\frac{1}{4}$, tad nevienādību var pārrakstīt šādi: 
-  $1 + 4b^2 + \\sqrt{-4b^2} \\leq 1$ jeb $4b^2 + \\sqrt{-4b^2} \\leq 0$. 
-  Lai zemsaknes izteiksme būtu definēta, vienīgā derīgā vērtība ir $b = 0$."""@lv,
-        """## Atrisinājums
 
 Zemsaknes izteiksmei $4a - 4b^2 -1$ jābūt nenegatīvai, 
 tāpēc $4a - 4b^2 - 1 \\geq 0$ jeb 
@@ -949,21 +981,6 @@ Tātad $a = \\frac{1}{4}$. Esam ieguvuši, ka vienīgais
 derīgais skaitļu pāris ir 
 ${\\displaystyle \\left( \\frac{1}{4}; 0 \\right)}$"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Ja $a = \\frac{1}{4}$ un $b = 0$, tad nevienādība ir spēkā. jo 
-$4 \\cdot \\frac{1}{4} + 4 \\cdot 0 + \\sqrt{4 \\cdot \\frac{1}{4} - 4 \\cdot 0 - 1} = 1 \\geq 1$
-Pamatosim, ka nevienādības vienīgais atrisinājums ir $a = \\frac{1}{4}$ un $b = 0$. 
-Aplūkosim trīs gadījumus.</p>
-<ul>
-<li>Ja $a &lt; \\frac{1}{4}$, tad $4a &lt; 1$ un zemsaknes izteiksme $4a - 4b^2 - 1 = 4a - 1 -4b^2$
-  ir negatīva, jo $4a - 1 &lt; 0$ un $-4b^2 &lt; 0$. Tādā gadījumā izteiksme nav definēta 
-  un atrisinājuma nav. </li>
-<li>Ja $a &gt; \\frac{1}{4}$, tad $4a &gt; 1$. Tā kā $4b^2 + \\sqrt{4a - 4b^2 - 1} \\geq 0$, 
-  tad $4a + 4b^2 + \\sqrt{4a - 4b^2 - 1} &gt; 1$, tātad nevienādībai nav atrisinājuma. </li>
-<li>Ja $a = \\frac{1}{4}$, tad nevienādību var pārrakstīt šādi: 
-  $1 + 4b^2 + \\sqrt{-4b^2} \\leq 1$ jeb $4b^2 + \\sqrt{-4b^2} \\leq 0$. 
-  Lai zemsaknes izteiksme būtu definēta, vienīgā derīgā vērtība ir $b = 0$.</li>
-</ul>"""@lv,
-        """<h2>Atrisinājums</h2>
 <p>Zemsaknes izteiksmei $4a - 4b^2 -1$ jābūt nenegatīvai, 
 tāpēc $4a - 4b^2 - 1 \\geq 0$ jeb 
 $$4a \\geq 4b^2 + 1.$$</p>
@@ -978,7 +995,40 @@ Tātad $a = \\frac{1}{4}$. Esam ieguvuši, ka vienīgais
 derīgais skaitļu pāris ir 
 ${\\displaystyle \\left( \\frac{1}{4}; 0 \\right)}$</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.11.2 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.11.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Ja $a = \\frac{1}{4}$ un $b = 0$, tad nevienādība ir spēkā. jo 
+$4 \\cdot \\frac{1}{4} + 4 \\cdot 0 + \\sqrt{4 \\cdot \\frac{1}{4} - 4 \\cdot 0 - 1} = 1 \\geq 1$
+Pamatosim, ka nevienādības vienīgais atrisinājums ir $a = \\frac{1}{4}$ un $b = 0$. 
+Aplūkosim trīs gadījumus.
+
+* Ja $a < \\frac{1}{4}$, tad $4a < 1$ un zemsaknes izteiksme $4a - 4b^2 - 1 = 4a - 1 -4b^2$
+  ir negatīva, jo $4a - 1 < 0$ un $-4b^2 < 0$. Tādā gadījumā izteiksme nav definēta 
+  un atrisinājuma nav. 
+* Ja $a > \\frac{1}{4}$, tad $4a > 1$. Tā kā $4b^2 + \\sqrt{4a - 4b^2 - 1} \\geq 0$, 
+  tad $4a + 4b^2 + \\sqrt{4a - 4b^2 - 1} > 1$, tātad nevienādībai nav atrisinājuma. 
+* Ja $a = \\frac{1}{4}$, tad nevienādību var pārrakstīt šādi: 
+  $1 + 4b^2 + \\sqrt{-4b^2} \\leq 1$ jeb $4b^2 + \\sqrt{-4b^2} \\leq 0$. 
+  Lai zemsaknes izteiksme būtu definēta, vienīgā derīgā vērtība ir $b = 0$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Ja $a = \\frac{1}{4}$ un $b = 0$, tad nevienādība ir spēkā. jo 
+$4 \\cdot \\frac{1}{4} + 4 \\cdot 0 + \\sqrt{4 \\cdot \\frac{1}{4} - 4 \\cdot 0 - 1} = 1 \\geq 1$
+Pamatosim, ka nevienādības vienīgais atrisinājums ir $a = \\frac{1}{4}$ un $b = 0$. 
+Aplūkosim trīs gadījumus.</p>
+<ul>
+<li>Ja $a &lt; \\frac{1}{4}$, tad $4a &lt; 1$ un zemsaknes izteiksme $4a - 4b^2 - 1 = 4a - 1 -4b^2$
+  ir negatīva, jo $4a - 1 &lt; 0$ un $-4b^2 &lt; 0$. Tādā gadījumā izteiksme nav definēta 
+  un atrisinājuma nav. </li>
+<li>Ja $a &gt; \\frac{1}{4}$, tad $4a &gt; 1$. Tā kā $4b^2 + \\sqrt{4a - 4b^2 - 1} \\geq 0$, 
+  tad $4a + 4b^2 + \\sqrt{4a - 4b^2 - 1} &gt; 1$, tātad nevienādībai nav atrisinājuma. </li>
+<li>Ja $a = \\frac{1}{4}$, tad nevienādību var pārrakstīt šādi: 
+  $1 + 4b^2 + \\sqrt{-4b^2} \\leq 1$ jeb $4b^2 + \\sqrt{-4b^2} \\leq 0$. 
+  Lai zemsaknes izteiksme būtu definēta, vienīgā derīgā vērtība ir $b = 0$.</li>
+</ul>"""@lv .
+
+eliozo:SOLN.LV.VOL.2024.11.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1039,7 +1089,7 @@ Izmantojot laukuma īpašības, iegūstam </p>
 <li>$S_{OECG} = S_{BCD} - S_{BOE} - S_{OGD} = 81 - \\frac{36}{7} - 49 = 32 - \\frac{36}{7} = \\frac{188}{7} = 26\\frac{6}{7}$.</li>
 </ul>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.11.3 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.11.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1076,7 +1126,7 @@ tad šis dators ir savienots ar visiem pārējiem $n-2$ datoriem
 (un saņēmis no tiem ziņojumus). Tātad tas ir savienots arī ar datoru $D_0$. Bet tā
 ir pretruna, jo $D_0$ ir savienots tikai ar $D_{n-1}$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.11.4 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.11.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1136,7 +1186,7 @@ Rezultātā iegūstam, ka $2a_1 \\geq S_A \\geq 3a_1$. Veidojas
 pretruna ar to, ka $a_1$ ir naturāls skaitlis. 
 Tātad pieņēmums, ka pie $n \\geq 3$ eksistē prasītie skaitļi, ir aplams.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.11.5 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.11.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1166,7 +1216,7 @@ Tā kā pavisam ir $\\frac{n(n-1)}{2}$
 dažādu kvadrātfunkciju pāru, tad $y$ koordinātu summa ir
 $$2(n+1) \\cdot \\frac{n(n-1)}{2} = n(n^2 - 1) = n^3 - n.$$</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.12.1 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.12.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1199,7 +1249,7 @@ vienādojumu, iegūstam, ka $yz = xz = xy = \\frac{1}{2}$.
 Taču, ja $yz = xz, xz = xy, yz=xy$ un neviens no $x,y,z$ nav nulle (pēc definīcijas kopas), 
 tad $y=x$, $z=y$, $z=x$, tāpēc $x=y=z$, kas ir jau apskatītais gadījums.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.12.2 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.12.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1232,7 +1282,7 @@ atrodas vienādos attālumos no leņķa
 $BAC$ malām, tātad punkts $T$ atrodas uz šī leņķa bisektrises jeb $AT$ ir leņķa $BAC$ bisektrise.</p>
 <p><img alt="" src="LV.VOL.2024.12.2A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.12.3 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.12.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1327,7 +1377,7 @@ Karlsons būs apēdis ne vairāk kā $70 + 57 ∶ 3 = 89$ konfektes un tātad Br
 būs apēdis vismaz $200 − 89 = 111$ konfektes, kas ir pretrunā ar to, ka
 viņš nevar apēst vairāk kā $110$ konfektes.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.12.4 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.12.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1394,9 +1444,57 @@ $4^n$ pēdējo ciparu.</p>
 Tas nozīmē, ka skaitļa $C-1$ pēdējais cipars būs $5$ jeb skaitlis $C − 1$ dalīsies ar $5$. 
 Iegūstam pretrunu ar pieņēmumu, ka $C - 1$ ir pirmskaitlis.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.12.5 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.LV.VOL.2024.12.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Vispirms ekvivalenti pārveidojam doto nevienādību:
+$$\\begin{aligned}
+(3 − A)x^2 + y^2 - Axy - Ax + 1 & \\geq 0; \\\\
+\\left(y - \\frac{A}{2}x \\right)^2 + \\left( 3 - A - \\frac{A^2}{4} \\right) x^2 - Ax + 1 & \\geq 0 \\\\
+\\end{aligned}$$
+
+Tā kā saskaitāmais ${\\displaystyle \\left( y - \\frac{A}{2}x \\right)^2}$ 
+vienmēr būs nenegatīvs, un pie atbilstošas $y$ izvēles vienāds ar $0$, 
+tad mums atliek atrast tādu lielāko $A$ vērtību, lai nevienādība
+$$\\left( 3 - A - \\frac{A^2}{4} \\right)x^2 - Ax + 1 \\geq 0$$
+būtu patiesa visiem reāliem skaitļiem $x$. Tātad atbilstošās kvadrātfunkcijas zariem 
+jābūt vērstiem uz augšu, tas ir, ${\\displaystyle \\left( 3 - A - \\frac{A^2}{4} \\right) \\geq 0}$
+je $A^2 + 4A - 12 \\leq 0$, un diskriminantam jābūt nepozitīvam, tas ir,
+$$A^2 - 4 \\left( 3 - A - \\frac{A^2}{4} \\right) = 2A^2 + 4A - 12 \\leq 0.$$
+Ievērojam, ka $A^2 + 4A − 12 \\leq 2A^2 + 4A - 12$, tāpēc jebkuram $A$, 
+kam izpildās diskriminanta nosacījums, atbilstošās kvadrātfunkcijas 
+zari būs vērsti uz augšu. Maksimālais $A$ būs tad, kad 
+$2A^2 + 4A − 12 = 0$, jo tad ir
+iespējams, ka sākotnējā nevienādība pārvēršas par vienādību, 
+tas ir, esam atraduši lielāko $A$. Lielākā vienādojuma 
+$2A^2 + 4A − 12 = 0$ sakne ir $\\sqrt{7} - 1$. 
+Līdz ar to esam ieguvuši, ka lielākā $A$ vērtība ir $\\sqrt{7} - 1$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Vispirms ekvivalenti pārveidojam doto nevienādību:
+$$\\begin{aligned}
+(3 − A)x^2 + y^2 - Axy - Ax + 1 &amp; \\geq 0; \\
+\\left(y - \\frac{A}{2}x \\right)^2 + \\left( 3 - A - \\frac{A^2}{4} \\right) x^2 - Ax + 1 &amp; \\geq 0 \\
+\\end{aligned}$$</p>
+<p>Tā kā saskaitāmais ${\\displaystyle \\left( y - \\frac{A}{2}x \\right)^2}$ 
+vienmēr būs nenegatīvs, un pie atbilstošas $y$ izvēles vienāds ar $0$, 
+tad mums atliek atrast tādu lielāko $A$ vērtību, lai nevienādība
+$$\\left( 3 - A - \\frac{A^2}{4} \\right)x^2 - Ax + 1 \\geq 0$$
+būtu patiesa visiem reāliem skaitļiem $x$. Tātad atbilstošās kvadrātfunkcijas zariem 
+jābūt vērstiem uz augšu, tas ir, ${\\displaystyle \\left( 3 - A - \\frac{A^2}{4} \\right) \\geq 0}$
+je $A^2 + 4A - 12 \\leq 0$, un diskriminantam jābūt nepozitīvam, tas ir,
+$$A^2 - 4 \\left( 3 - A - \\frac{A^2}{4} \\right) = 2A^2 + 4A - 12 \\leq 0.$$
+Ievērojam, ka $A^2 + 4A − 12 \\leq 2A^2 + 4A - 12$, tāpēc jebkuram $A$, 
+kam izpildās diskriminanta nosacījums, atbilstošās kvadrātfunkcijas 
+zari būs vērsti uz augšu. Maksimālais $A$ būs tad, kad 
+$2A^2 + 4A − 12 = 0$, jo tad ir
+iespējams, ka sākotnējā nevienādība pārvēršas par vienādību, 
+tas ir, esam atraduši lielāko $A$. Lielākā vienādojuma 
+$2A^2 + 4A − 12 = 0$ sakne ir $\\sqrt{7} - 1$. 
+Līdz ar to esam ieguvuši, ka lielākā $A$ vērtība ir $\\sqrt{7} - 1$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2024.12.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Apskatām trīs tādus pozitīvus skaitļus $\\alpha, \\beta, \\gamma$, 
@@ -1428,31 +1526,7 @@ x = \\frac{1 + \\sqrt{7}}{3},\\;\\;y=1\\\\
 tad nevienādība kļūs par vienādību, no kā secinām, ka visas skaitļa $A$ 
 vērtības lielākas nekā $\\sqrt{7} - 1$ neapmierina
 uzdevuma nosacījumus, no kā var secināt, 
-ka lielākais skaitlis $A$ ar prasīto īpašību ir $\\sqrt{7} - 1$."""@lv,
-        """## Atrisinājums
-
-Vispirms ekvivalenti pārveidojam doto nevienādību:
-$$\\begin{aligned}
-(3 − A)x^2 + y^2 - Axy - Ax + 1 & \\geq 0; \\\\
-\\left(y - \\frac{A}{2}x \\right)^2 + \\left( 3 - A - \\frac{A^2}{4} \\right) x^2 - Ax + 1 & \\geq 0 \\\\
-\\end{aligned}$$
-
-Tā kā saskaitāmais ${\\displaystyle \\left( y - \\frac{A}{2}x \\right)^2}$ 
-vienmēr būs nenegatīvs, un pie atbilstošas $y$ izvēles vienāds ar $0$, 
-tad mums atliek atrast tādu lielāko $A$ vērtību, lai nevienādība
-$$\\left( 3 - A - \\frac{A^2}{4} \\right)x^2 - Ax + 1 \\geq 0$$
-būtu patiesa visiem reāliem skaitļiem $x$. Tātad atbilstošās kvadrātfunkcijas zariem 
-jābūt vērstiem uz augšu, tas ir, ${\\displaystyle \\left( 3 - A - \\frac{A^2}{4} \\right) \\geq 0}$
-je $A^2 + 4A - 12 \\leq 0$, un diskriminantam jābūt nepozitīvam, tas ir,
-$$A^2 - 4 \\left( 3 - A - \\frac{A^2}{4} \\right) = 2A^2 + 4A - 12 \\leq 0.$$
-Ievērojam, ka $A^2 + 4A − 12 \\leq 2A^2 + 4A - 12$, tāpēc jebkuram $A$, 
-kam izpildās diskriminanta nosacījums, atbilstošās kvadrātfunkcijas 
-zari būs vērsti uz augšu. Maksimālais $A$ būs tad, kad 
-$2A^2 + 4A − 12 = 0$, jo tad ir
-iespējams, ka sākotnējā nevienādība pārvēršas par vienādību, 
-tas ir, esam atraduši lielāko $A$. Lielākā vienādojuma 
-$2A^2 + 4A − 12 = 0$ sakne ir $\\sqrt{7} - 1$. 
-Līdz ar to esam ieguvuši, ka lielākā $A$ vērtība ir $\\sqrt{7} - 1$."""@lv ;
+ka lielākais skaitlis $A$ ar prasīto īpašību ir $\\sqrt{7} - 1$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Apskatām trīs tādus pozitīvus skaitļus $\\alpha, \\beta, \\gamma$, 
 kuriem $\\alpha + \\beta + \\gamma = 3$. Tad, lietojot nevienādību
@@ -1482,31 +1556,9 @@ x = \\frac{1 + \\sqrt{7}}{3},\\;\\;y=1\\
 tad nevienādība kļūs par vienādību, no kā secinām, ka visas skaitļa $A$ 
 vērtības lielākas nekā $\\sqrt{7} - 1$ neapmierina
 uzdevuma nosacījumus, no kā var secināt, 
-ka lielākais skaitlis $A$ ar prasīto īpašību ir $\\sqrt{7} - 1$.</p>"""@lv,
-        """<h2>Atrisinājums</h2>
-<p>Vispirms ekvivalenti pārveidojam doto nevienādību:
-$$\\begin{aligned}
-(3 − A)x^2 + y^2 - Axy - Ax + 1 &amp; \\geq 0; \\
-\\left(y - \\frac{A}{2}x \\right)^2 + \\left( 3 - A - \\frac{A^2}{4} \\right) x^2 - Ax + 1 &amp; \\geq 0 \\
-\\end{aligned}$$</p>
-<p>Tā kā saskaitāmais ${\\displaystyle \\left( y - \\frac{A}{2}x \\right)^2}$ 
-vienmēr būs nenegatīvs, un pie atbilstošas $y$ izvēles vienāds ar $0$, 
-tad mums atliek atrast tādu lielāko $A$ vērtību, lai nevienādība
-$$\\left( 3 - A - \\frac{A^2}{4} \\right)x^2 - Ax + 1 \\geq 0$$
-būtu patiesa visiem reāliem skaitļiem $x$. Tātad atbilstošās kvadrātfunkcijas zariem 
-jābūt vērstiem uz augšu, tas ir, ${\\displaystyle \\left( 3 - A - \\frac{A^2}{4} \\right) \\geq 0}$
-je $A^2 + 4A - 12 \\leq 0$, un diskriminantam jābūt nepozitīvam, tas ir,
-$$A^2 - 4 \\left( 3 - A - \\frac{A^2}{4} \\right) = 2A^2 + 4A - 12 \\leq 0.$$
-Ievērojam, ka $A^2 + 4A − 12 \\leq 2A^2 + 4A - 12$, tāpēc jebkuram $A$, 
-kam izpildās diskriminanta nosacījums, atbilstošās kvadrātfunkcijas 
-zari būs vērsti uz augšu. Maksimālais $A$ būs tad, kad 
-$2A^2 + 4A − 12 = 0$, jo tad ir
-iespējams, ka sākotnējā nevienādība pārvēršas par vienādību, 
-tas ir, esam atraduši lielāko $A$. Lielākā vienādojuma 
-$2A^2 + 4A − 12 = 0$ sakne ir $\\sqrt{7} - 1$. 
-Līdz ar to esam ieguvuši, ka lielākā $A$ vērtība ir $\\sqrt{7} - 1$.</p>"""@lv .
+ka lielākais skaitlis $A$ ar prasīto īpašību ir $\\sqrt{7} - 1$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.9.1 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.9.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1530,7 +1582,7 @@ $$\\frac{a_1d + a_2d + a_3d + a_4d + a_5d}{5} = 2d\\;\\;\\text{jeb}\\;\\;a_1 + a
 Visi $a_i$ ir dažādi; bet tā kā pat piecu vismazāko dažādo naturālo skaitļu summa ir 
 $1 + 2 + 3 + 4 + 5 = 15 &gt; 10$, tad šādi skaitļi neeksistē.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.9.2 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.9.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1560,7 +1612,7 @@ atņemot no abām pusēm vienādu lielumu (trapeces $CHGB$ laukumu), vienādība
 saglabāsies:
 $$S_{CEGB} - S_{CHGB} = S_{AGB} - S_{CHGB}\\;\\;\\text{un}\\;\\;S_{HEG} = S_{ACH}.$$</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.9.3 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.9.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1599,7 +1651,7 @@ tad $D_0$ būtu bijis jāsaņem ziņojums no $D_{n-2}$.
 Iegūta pretruna. Tātad jebkurā laika brīdī var atrast
 divus datorus, kuri ir saņēmuši vienādu ziņojumu skaitu.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.9.4 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.9.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1631,7 +1683,7 @@ summa dalās ar $3$. Līdz ar to vismaz divi no šiem četriem trīsciparu
 skaitļiem dalīsies ar $3$, tātad visu skaitļu
 reizinājums dalīsies ar $9$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2024.9.5 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2024.9.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums 
 

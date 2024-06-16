@@ -41,12 +41,13 @@ def add_problem_topiclike_prop(g, problem_node, key, value):
 
 def addSolutionToRdfProblem(g, title, i, solution_text):
     problem_node = rdflib.URIRef(eliozo_ns + title)  # subjekts
-    solution_node = rdflib.URIRef(eliozo_ns + "SOLN." + title)
+    solution_node = rdflib.URIRef(eliozo_ns + f"SOLN.{title}.SUB{i}")
     problem_rdf_property = rdflib.URIRef(RDF_NS + 'type')
     g.add((solution_node, problem_rdf_property, rdflib.URIRef(eliozo_ns + "Solution")))
     add_problem_literal_lv_prop(g, solution_node, 'solutionText', solution_text)
     add_problem_integer_prop(g, solution_node, 'solutionNum', i)
-    add_problem_literal_lv_prop(g, solution_node, 'solutionTextHtml', markdown.markdown(solution_text, extensions=['tables']))
+    add_problem_literal_lv_prop(g, solution_node, 'solutionTextHtml',
+                                markdown.markdown(solution_text, extensions=['tables']))
     problem_problemsolution_property = rdflib.URIRef(eliozo_ns + 'problemSolution')
     g.add((problem_node, problem_problemsolution_property, solution_node))
 
@@ -179,6 +180,46 @@ def get_suffix(arg):
         return arg
     return arg[:last_dot_index]
 
+
+# [('Contest','Konkurss'), ('Book','Grāmata'), ('RegionalOrOpen', 'Reģionu vai atklātā'),
+# ('National', 'Nacionālā'), ('TeamSelection', 'Papildsacensības'), ('International', 'Starptautiska')] %}
+# Return olympiadType - a single string value
+def get_olympiad_type(title):
+    result = 'Contest'
+    title_list = title.split(".")
+    prefix2 = ".".join(title_list[0:2])
+    if prefix2 in ['EE.LVS', 'EE.LVT', 'EE.PK', 'EE.PKTEST', 'LT.RAJ', 'LT.VUMIF', 'LV.SOL', 'LV.NOL', 'LV.AMO']:
+        result = 'RegionalOrOpen'
+    elif prefix2 in ['EE.LO', 'LT.LMMO', 'LT.LKMMO', 'LV.VOL']:
+        result = 'National'
+    elif prefix2 in ['EE.TST', 'LT.TST', 'LV.TST']:
+        result = 'TeamSelection'
+    elif prefix2.startswith('IMO_SHL'):
+        result = 'International'
+    elif prefix2.startswith('BBK2012'):
+        result = 'Book'
+    return result
+
+def get_suggested_grade(title):
+    title_list = title.split(".")
+    suffix2 = title_list[-2]
+    if suffix2 in ['5', '6', '7', '8', '9', '10', '11', '12']:
+        return [int(suffix2)]
+    if title.startswith('BBK2012'):
+        return [9,10,11,12]
+    if title.startswith('IMO_SHL'):
+        return [10,11,12]
+    if title.startswith('EE.TST') or title.startswith('LT.TST') or title.startswith('LV.TST'):
+        return [10,11,12]
+    if title.startswith('LT.LKMMO'):
+        return [9,10,11,12]
+    if suffix2.find('_'):
+        return [int(x) for x in suffix2.split('_')]
+    else:
+        print(f'UNDEFINED suggestedGrade for {title}')
+        return []
+
+
 def md_to_rdf(md_file_path, ttl_file_path):
     sections = extract_sections_from_md(md_file_path)
 
@@ -194,6 +235,8 @@ def md_to_rdf(md_file_path, ttl_file_path):
     for i, (title,section) in enumerate(sections):
         title = title.strip()
         suffix = get_suffix(title)
+        suggestGrade = get_suggested_grade(title)
+        olympiadType = get_olympiad_type(title)
         problem_node = add_new_problem(g, title)
         match_id = olympiad_problem_id.match(title)
         book_match_id = book_problem_id.match(title)
@@ -271,6 +314,9 @@ def md_to_rdf(md_file_path, ttl_file_path):
         problem_text_html = markdown.markdown(problem_text_md, extensions=['tables']).strip()
         add_problem_literal_lv_prop(g, problem_node, 'problemText', problem_text_md)
         add_problem_literal_lv_prop(g, problem_node, 'problemTextHtml', problem_text_html)
+        add_problem_literal_prop(g, problem_node, 'olympiadType', olympiadType)
+        for sug_grade in suggestGrade:
+            add_problem_integer_prop(g, problem_node, 'suggestedGrade', sug_grade)
 
         meta_dict = extract_metadata(section)
         for k, vvv in meta_dict.items():

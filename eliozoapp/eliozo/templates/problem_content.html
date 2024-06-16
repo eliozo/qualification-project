@@ -57,12 +57,11 @@
   {% endif %}
   <p> {{ problemTextHtml | safe }}</p>
 
-  {% if solutionTextHtml != ''%}
-  <div id="solutionDiv" class="solution">{{solutionTextHtml | safe}}</div>
-  </div>
-  {% endif %}
-
-
+    {% if hasSolution %}
+    <p style="font-size:80% !important"><a href="{{ url_for('getProblemSolution',problemid=problemid) }}">Atrisinājums</a></p>
+    {% else %}
+    <p style="font-size:80% !important;color:#999999">Nav atrisinājuma</p>
+    {% endif %}
 
   {% if hasVideo %}
   <table border="1" cellspacing="0" style="border:1px solid #eeeeee; width:80%; margin-left:5%">

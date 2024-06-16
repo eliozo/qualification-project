@@ -5,9 +5,10 @@ eliozo:LT.VUMIF.2016.10.3 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2016.10.3" ;
-    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2016.10.3 ;
+    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2016.10.3.SUB0 ;
     eliozo:problemText """Atrodiet mazāko naturālo skaitli $n$, kuram skaitļi 
 $\\sqrt[5]{5n}$, $\\sqrt[6]{6n}$, $\\sqrt[7]{7n}$
 ir naturāli. 
@@ -19,6 +20,7 @@ ir naturāli. </p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
     eliozo:suffix "LT.VUMIF.2016.10" ;
+    eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:ArithmeticSeriesGaps,
         eliozo:CanonicalFactorization,
         eliozo:ChineseRemainderTheorem,
@@ -29,6 +31,7 @@ eliozo:LT.VUMIF.2016.11_12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2016.11_12.1" ;
     eliozo:problemText """Agne savā traukā ielēja $p$ litrus ūdens, 
@@ -53,12 +56,15 @@ bija $q$ litri ūdens, bet Bena traukā - $p$ litri ūdens.
 Atrodiet $\\frac{p}{q}$.</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "LT.VUMIF.2016.11_12" .
+    eliozo:suffix "LT.VUMIF.2016.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:LT.VUMIF.2016.11_12.3 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2016.11_12.3" ;
     eliozo:problemText """Noskaidrojiet, vai eksistē tāds naturāls skaitlis $n$, ka 
@@ -71,15 +77,18 @@ skaitlis $n \\cdot 2^{2016} - 7$ ir
 naturāla skaitļa kvadrāts.</p>"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
-    eliozo:suffix "LT.VUMIF.2016.11_12" .
+    eliozo:suffix "LT.VUMIF.2016.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:LT.VUMIF.2016.9.3 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2016.9.3" ;
-    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2016.9.3 ;
+    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2016.9.3.SUB0 ;
     eliozo:problemText """Atrodiet visas naturālas $n$ vērtības, kurām skaitlis
 $\\frac{n^3 + 3}{n^2 + 7}$
 ir naturāls.
@@ -92,6 +101,7 @@ ir naturāls.</p>"""@lv ;
     eliozo:problem_number 3 ;
     eliozo:strategy "CaseAnalysis" ;
     eliozo:suffix "LT.VUMIF.2016.9" ;
+    eliozo:suggestedGrade 9 ;
     eliozo:topic eliozo:ExhaustionMethod,
         eliozo:NumTheoryInequalityMethod,
         eliozo:PolynomialLongDivision .
@@ -100,6 +110,7 @@ eliozo:LT.VUMIF.2017.10.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2017.10.1" ;
     eliozo:problemText """Atrodiet visus veselu skaitļu pārus $(a,b)$, 
@@ -115,15 +126,17 @@ $y$, ka
 $$8x^4 + 8y^4 = a^4 + 6a^2b^2 + b^4.$$</p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "LT.VUMIF.2017.10" .
+    eliozo:suffix "LT.VUMIF.2017.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:LT.VUMIF.2017.10.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2017.10.2" ;
-    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2017.10.2 ;
+    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2017.10.2.SUB0 ;
     eliozo:problemText """Atrodiet visus veselo skaitļu $m$ un $n$ pārus
 $(m,n)$, kas apmierina vienādību 
 $$m^2 + 2m - 9 = n^2 + n.$$
@@ -135,6 +148,7 @@ $$m^2 + 2m - 9 = n^2 + n.$$</p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 2 ;
     eliozo:suffix "LT.VUMIF.2017.10" ;
+    eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:CompletingSquare,
         eliozo:ExhaustionMethod,
         eliozo:FullPowerGaps,
@@ -144,6 +158,7 @@ eliozo:LT.VUMIF.2017.11_12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2017.11_12.2" ;
     eliozo:problemText """Atrodiet vienādojuma
@@ -160,16 +175,19 @@ visus naturālos atrisinājumus $(x,y)$.
 $x$ un $y$ lielāko kopīgo dalītāju un mazāko kopīgo dalāmo. </p>"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 2 ;
-    eliozo:suffix "LT.VUMIF.2017.11_12" .
+    eliozo:suffix "LT.VUMIF.2017.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:LT.VUMIF.2017.11_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2017.11_12.4" ;
     eliozo:problemImage eliozo:IMG.LT.VUMIF.2017.11_12.4.svg ;
-    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2017.11_12.4 ;
+    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2017.11_12.4.SUB0 ;
     eliozo:problemText """Uz tāfeles uzrakstīts skaitlis $636363$. 
 Divi spēlētāji $A$ un $B$ pārmaiņus veic gājienus, 
 pirmo gājienu izdara $A$. 
@@ -190,15 +208,18 @@ spēlētājam ir uzvaras stratēģija, un parādiet to.</p>"""@lv ;
     eliozo:problem_number 4 ;
     eliozo:strategy "BeginAtTheEnd" ;
     eliozo:suffix "LT.VUMIF.2017.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 ;
     eliozo:topic eliozo:GameInvariant .
 
 eliozo:LT.VUMIF.2017.9.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2017.9.2" ;
-    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2017.9.2 ;
+    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2017.9.2.SUB0 ;
     eliozo:problemText """Vai izmantojot tieši pa vienai reizei visus desmit ciparus 
 $0,1,2,\\ldots,9$ var uzrakstīt divus naturālus skaitļus, ka 
 viens skaitlis būtu otra kvadrāts?  
@@ -212,6 +233,7 @@ viens skaitlis būtu otra kvadrāts?<br />
     eliozo:problemYear 2017 ;
     eliozo:problem_number 2 ;
     eliozo:suffix "LT.VUMIF.2017.9" ;
+    eliozo:suggestedGrade 9 ;
     eliozo:topic eliozo:DigitsInOperationResult,
         eliozo:ExhaustionMethod .
 
@@ -219,9 +241,10 @@ eliozo:LT.VUMIF.2018.10.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2018.10.4" ;
-    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2018.10.4 ;
+    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2018.10.4.SUB0 ;
     eliozo:problemText """Skaitļa $n>1$ visu pozitīvo dalītāju 
 (ieskaitot $1$ un $n$) reizinājums vienāds ar $n^3$.
 Norādiet visas iespējamās skaitļa $n$ vērtības, 
@@ -235,6 +258,7 @@ uzrakstot, kāds var būt skaitļa $n$ sadalījums pirmreizinātājos. </p>"""@l
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
     eliozo:suffix "LT.VUMIF.2018.10" ;
+    eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:DivisorNumberAndSum,
         eliozo:FactorizationAndDivisibility .
 
@@ -242,6 +266,7 @@ eliozo:LT.VUMIF.2018.11_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2018.11_12.4" ;
     eliozo:problemText """Naturālie skaitļi $p$, $x$, $y$ apmierina vienādojumus:
@@ -256,12 +281,15 @@ Noskaidrojiet visas iespējamās skaitļa $p$ vērtības, ja
 zināms, ka šis skaitlis ir pirmskaitlis. </p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
-    eliozo:suffix "LT.VUMIF.2018.11_12" .
+    eliozo:suffix "LT.VUMIF.2018.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:LT.VUMIF.2018.9.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2018.9.4" ;
     eliozo:problemText """Naturālam skaitlim $M = 3N$ 
@@ -286,15 +314,17 @@ Atrodiet visas iespējamās skaitļa $N$ pēdējā
 cipara vērtības.</p>"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
-    eliozo:suffix "LT.VUMIF.2018.9" .
+    eliozo:suffix "LT.VUMIF.2018.9" ;
+    eliozo:suggestedGrade 9 .
 
 eliozo:LT.VUMIF.2019.10.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LT.VUMIF.2019.10.4" ;
-    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2019.10.4 ;
+    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2019.10.4.SUB0 ;
     eliozo:problemText """Naturālu skaitli sauksim par *septiņīgu*, 
 ja tam ir tieši $70$ ciparu: $10$ vieninieku, 
 $10$ divnieku, $\\ldots$, $10$ septiņnkieku. 
@@ -310,6 +340,7 @@ ar citu septiņīgu skaitli, tad tie ir vienādi. </p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 4 ;
     eliozo:suffix "LT.VUMIF.2019.10" ;
+    eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:DivisibilityRulesForRemainders,
         eliozo:Invariant,
         eliozo:ModularArithmetic .
@@ -318,9 +349,10 @@ eliozo:LT.VUMIF.2019.11_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LT.VUMIF.2019.11_12.4" ;
-    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2019.11_12.4 ;
+    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2019.11_12.4.SUB0 ;
     eliozo:problemText """Naturālu skaitli sauksim par *piecīgu*, ja
 tam ir tieši $500$ ciparu: pa $100$ divnieku, 
 trijnieku, četrinieku, piecinieku un sešinieku. 
@@ -342,6 +374,8 @@ b) $N$ nedalās ne ar vienu piecīgu skaitli. </p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 4 ;
     eliozo:suffix "LT.VUMIF.2019.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 ;
     eliozo:topic eliozo:ChineseRemainderTheorem,
         eliozo:DivisibilityRulesForRemainders,
         eliozo:ExhaustionMethod,
@@ -352,12 +386,13 @@ eliozo:LT.VUMIF.2019.9.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2019.9.1" ;
     eliozo:problemText """Atrodiet visus veselu skaitļu trijniekus $(x,y,z)$, 
 kas apmierina vienādojumu sistēmu
-$$
-\\left\\{ \\begin{array}{l}
+
+$$\\left\\{ \\begin{array}{l}
 x^3 + y^3 = z^3 + 1,\\\\
 y^2 - x^2 = x+y,\\\\
 2x^3 - 6x = z^3 - 4x^2.
@@ -365,24 +400,25 @@ y^2 - x^2 = x+y,\\\\
 
 """@lv ;
     eliozo:problemTextHtml """<p>Atrodiet visus veselu skaitļu trijniekus $(x,y,z)$, 
-kas apmierina vienādojumu sistēmu
-$$
-\\left{ \\begin{array}{l}
+kas apmierina vienādojumu sistēmu</p>
+<p>$$\\left{ \\begin{array}{l}
 x^3 + y^3 = z^3 + 1,\\
 y^2 - x^2 = x+y,\\
 2x^3 - 6x = z^3 - 4x^2.
 \\end{array} \\right.$$</p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "LT.VUMIF.2019.9" .
+    eliozo:suffix "LT.VUMIF.2019.9" ;
+    eliozo:suggestedGrade 9 .
 
 eliozo:LT.VUMIF.2019.9.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2019.9.2" ;
-    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2019.9.2 ;
+    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2019.9.2.SUB0 ;
     eliozo:problemText """Algis un Balis spēlē sekojošu spēli, 
 pārmaiņus izdarīdami gājienus. Sākumā 
 ir divas monētu kaudzītes: vienā kaudzītē
@@ -415,6 +451,7 @@ nodrošināt uzvaru, lai kā spēlētu Algis. </p>"""@lv ;
     eliozo:problem_number 2 ;
     eliozo:strategy "WorkingBackwards" ;
     eliozo:suffix "LT.VUMIF.2019.9" ;
+    eliozo:suggestedGrade 9 ;
     eliozo:topic eliozo:GameInvariant,
         eliozo:ModularParity,
         eliozo:StrongAndReverseInduction .
@@ -423,9 +460,10 @@ eliozo:LT.VUMIF.2019.9.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:olympiad "LT.VUMIF" ;
     eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LT.VUMIF.2019.9.4" ;
-    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2019.9.4 ;
+    eliozo:problemSolution eliozo:SOLN.LT.VUMIF.2019.9.4.SUB0 ;
     eliozo:problemText """Jurgis uzrakstīja trīs naturālus skaitļus, 
 no kuriem katrs beidzas ar to pašu ciparu, ar kuru 
 beidzas pārējo divu skaitļu summa, un sareizināja tos. 
@@ -443,6 +481,7 @@ Atrodiet visas iespējas. </p>"""@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 4 ;
     eliozo:suffix "LT.VUMIF.2019.9" ;
+    eliozo:suggestedGrade 9 ;
     eliozo:topic eliozo:CongruenceEquations,
         eliozo:CountingUsingSymmetry,
         eliozo:DivisibilityRulesLastDigits,
@@ -453,7 +492,7 @@ eliozo:IMG.LT.VUMIF.2017.11_12.4.svg a eliozo:Image ;
     eliozo:imageSrc "LT.VUMIF.2017.11_12.4.svg" ;
     eliozo:imageWidth "" .
 
-eliozo:SOLN.LT.VUMIF.2016.10.3 a eliozo:Solution ;
+eliozo:SOLN.LT.VUMIF.2016.10.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -502,7 +541,7 @@ Mazākais tāds skaitlis ir $90$. </li>
 </ul>
 <p>$$n = 2^{35}\\cdot{}3^{35}\\cdot{}5^{84}\\cdot{}7^{90}.$$</p>"""@lv .
 
-eliozo:SOLN.LT.VUMIF.2016.9.3 a eliozo:Solution ;
+eliozo:SOLN.LT.VUMIF.2016.9.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -555,7 +594,7 @@ moduli.)</p>
 <li>Vērtībām $n=1,3,4,6$ sanāk daļskaitļi.</li>
 </ul>"""@lv .
 
-eliozo:SOLN.LT.VUMIF.2017.10.2 a eliozo:Solution ;
+eliozo:SOLN.LT.VUMIF.2017.10.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -570,18 +609,15 @@ $$m = \\sqrt{n^2+n+10} - 1.$$
 
 Atrodam atstarpes starp blakus kvadrātiem:
 
-* Aiz $n^2$ nākamais pilnais kvadrāts ir 
-$(n+1)^2 = n^2 + 2n + 1$, bet iepriekšējais
-pilnais kvadrāts ir $n^2 - 2n + 1$. 
-* Ja $n>0$, tad pie $n \\geq 10$:
-$$n^2 + n + 10 < n^2 + 2n + 1.$$
+* Aiz $n^2$ nākamais pilnais kvadrāts ir $(n+1)^2 = n^2 + 2n + 1$, 
+  bet iepriekšējais pilnais kvadrāts ir $n^2 - 2n + 1$. 
+* Ja $n>0$, tad pie $n \\geq 10$: $n^2 + n + 10 < n^2 + 2n + 1.$
 * Ja $n=0$, tad $n^2 + n + 10 = 10$ nav pilns kvadrāts.
 * Ja $n<0$, tad $f(n) = n^2 + n + 10$ 
-pieņem vērtības $10,12,16,22,30,40,52,66,82,100,\\ldots$
-pie $n \\in \\{ -1,-2,\\ldots,-10 \\}$. 
-* Parabola $n^2 + n + 10$ ir simetriska, tāpēc
-vērtība pie pozitīva $n_1$ ir tāda pati kā pie negatīva 
-$-1-n_1$. 
+  pieņem vērtības $10,12,16,22,30,40,52,66,82,100,\\ldots$
+  pie $n \\in \\{ -1,-2,\\ldots,-10 \\}$. 
+* Parabola $n^2 + n + 10$ ir simetriska, tāpēc vērtība pie pozitīva 
+  $n_1$ ir tāda pati kā pie negatīva $-1-n_1$. 
 
 
 *#CaseAnalysis*    
@@ -604,18 +640,15 @@ $n^2 + n + 10$ ir pilns kvadrāts, tad
 $$m = \\sqrt{n^2+n+10} - 1.$$</p>
 <p>Atrodam atstarpes starp blakus kvadrātiem:</p>
 <ul>
-<li>Aiz $n^2$ nākamais pilnais kvadrāts ir 
-$(n+1)^2 = n^2 + 2n + 1$, bet iepriekšējais
-pilnais kvadrāts ir $n^2 - 2n + 1$. </li>
-<li>Ja $n&gt;0$, tad pie $n \\geq 10$:
-$$n^2 + n + 10 &lt; n^2 + 2n + 1.$$</li>
+<li>Aiz $n^2$ nākamais pilnais kvadrāts ir $(n+1)^2 = n^2 + 2n + 1$, 
+  bet iepriekšējais pilnais kvadrāts ir $n^2 - 2n + 1$. </li>
+<li>Ja $n&gt;0$, tad pie $n \\geq 10$: $n^2 + n + 10 &lt; n^2 + 2n + 1.$</li>
 <li>Ja $n=0$, tad $n^2 + n + 10 = 10$ nav pilns kvadrāts.</li>
 <li>Ja $n&lt;0$, tad $f(n) = n^2 + n + 10$ 
-pieņem vērtības $10,12,16,22,30,40,52,66,82,100,\\ldots$
-pie $n \\in { -1,-2,\\ldots,-10 }$. </li>
-<li>Parabola $n^2 + n + 10$ ir simetriska, tāpēc
-vērtība pie pozitīva $n_1$ ir tāda pati kā pie negatīva 
-$-1-n_1$. </li>
+  pieņem vērtības $10,12,16,22,30,40,52,66,82,100,\\ldots$
+  pie $n \\in { -1,-2,\\ldots,-10 }$. </li>
+<li>Parabola $n^2 + n + 10$ ir simetriska, tāpēc vērtība pie pozitīva 
+  $n_1$ ir tāda pati kā pie negatīva $-1-n_1$. </li>
 </ul>
 <p><em>#CaseAnalysis</em>  <br />
 Pilnā pārlase pozitīvo n atrašanai:</p>
@@ -629,7 +662,7 @@ $n$ vērtības var būt $-10,-3,2,9$. </li>
 $$(m,n) \\in { (9; -10), (3; -3), (3; 2), (9; 9) }.$$</li>
 </ul>"""@lv .
 
-eliozo:SOLN.LT.VUMIF.2017.11_12.4 a eliozo:Solution ;
+eliozo:SOLN.LT.VUMIF.2017.11_12.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -677,7 +710,7 @@ nepāru skaitlis, tad otrais spēlētājs var pēc katra sava
 gājiena panākt, lai tur joprojām būtu nepāru skaitlis. </p>
 <p><em>Nav pabeigts.</em></p>"""@lv .
 
-eliozo:SOLN.LT.VUMIF.2017.9.2 a eliozo:Solution ;
+eliozo:SOLN.LT.VUMIF.2017.9.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -745,7 +778,7 @@ skaitli $n$ un iegūt $6$-ciparu rezultātu $m=n^2$. </p>
 <p>Der, piemēram, šādi skaitļi: </p>
 <p>$$567^2=321489;\\;\\;854^2=729316.$$</p>"""@lv .
 
-eliozo:SOLN.LT.VUMIF.2018.10.4 a eliozo:Solution ;
+eliozo:SOLN.LT.VUMIF.2018.10.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -800,7 +833,7 @@ To reizinājums ir $32^3$. </li>
 To reizinājums ir $12^3$.</li>
 </ul>"""@lv .
 
-eliozo:SOLN.LT.VUMIF.2019.10.4 a eliozo:Solution ;
+eliozo:SOLN.LT.VUMIF.2019.10.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -848,7 +881,7 @@ atlikumi $2,\\ldots,7$. </li>
 <p><em>Secinājums.</em> Vienīgais septiņīga skaitļa daudzkārtnis, kas 
 var būt septiņīgs ir viņš pats.</p>"""@lv .
 
-eliozo:SOLN.LT.VUMIF.2019.11_12.4 a eliozo:Solution ;
+eliozo:SOLN.LT.VUMIF.2019.11_12.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -980,7 +1013,7 @@ cipars ir "3"), neiegūstam beigās ciparus "81":</p>
 </tbody>
 </table>"""@lv .
 
-eliozo:SOLN.LT.VUMIF.2019.9.2 a eliozo:Solution ;
+eliozo:SOLN.LT.VUMIF.2019.9.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1103,7 +1136,7 @@ jaunus divus pāru skaitļus $(m_2,n_2)$, kam $m_2+n_2 &lt; m+n$. <br />
 (Ņemam vērā, ka Balis nekad nepārliek no vienas kaudzītes otrā.)</p>
 <p>Skaitļiem $(m_2,n_2)$ Balis uzvar pēc induktīvā pieņēmuma. Pretruna.</p>"""@lv .
 
-eliozo:SOLN.LT.VUMIF.2019.9.4 a eliozo:Solution ;
+eliozo:SOLN.LT.VUMIF.2019.9.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 

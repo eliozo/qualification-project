@@ -264,18 +264,15 @@ $$m = \sqrt{n^2+n+10} - 1.$$
 
 Atrodam atstarpes starp blakus kvadrātiem:
 
-* Aiz $n^2$ nākamais pilnais kvadrāts ir 
-$(n+1)^2 = n^2 + 2n + 1$, bet iepriekšējais
-pilnais kvadrāts ir $n^2 - 2n + 1$. 
-* Ja $n>0$, tad pie $n \geq 10$:
-$$n^2 + n + 10 < n^2 + 2n + 1.$$
+* Aiz $n^2$ nākamais pilnais kvadrāts ir $(n+1)^2 = n^2 + 2n + 1$, 
+  bet iepriekšējais pilnais kvadrāts ir $n^2 - 2n + 1$. 
+* Ja $n>0$, tad pie $n \geq 10$: $n^2 + n + 10 < n^2 + 2n + 1.$
 * Ja $n=0$, tad $n^2 + n + 10 = 10$ nav pilns kvadrāts.
 * Ja $n<0$, tad $f(n) = n^2 + n + 10$ 
-pieņem vērtības $10,12,16,22,30,40,52,66,82,100,\ldots$
-pie $n \in \{ -1,-2,\ldots,-10 \}$. 
-* Parabola $n^2 + n + 10$ ir simetriska, tāpēc
-vērtība pie pozitīva $n_1$ ir tāda pati kā pie negatīva 
-$-1-n_1$. 
+  pieņem vērtības $10,12,16,22,30,40,52,66,82,100,\ldots$
+  pie $n \in \{ -1,-2,\ldots,-10 \}$. 
+* Parabola $n^2 + n + 10$ ir simetriska, tāpēc vērtība pie pozitīva 
+  $n_1$ ir tāda pati kā pie negatīva $-1-n_1$. 
 
 
 *#CaseAnalysis*    
@@ -475,22 +472,24 @@ jei žinoma, kad šis skaičius pirminis.
 
 Atrodiet visus veselu skaitļu trijniekus $(x,y,z)$, 
 kas apmierina vienādojumu sistēmu
-$$
-\left\{ \begin{array}{l}
+
+$$\left\{ \begin{array}{l}
 x^3 + y^3 = z^3 + 1,\\
 y^2 - x^2 = x+y,\\
 2x^3 - 6x = z^3 - 4x^2.
 \end{array} \right.$$
 
 <text lang="lt">
+
 Raskite visus sveikųjų skaičių trejetus $(x,y,z)$, 
 tenkinančius lygčių sistemą
-$$
-\left\{ \begin{array}{l}
+
+$$\left\{ \begin{array}{l}
 x^3 + y^3 = z^3 + 1,\\
 y^2 - x^2 = x+y,\\
 2x^3 - 6x = z^3 - 4x^2.
 \end{array} \right.$$
+
 </text>
 
 

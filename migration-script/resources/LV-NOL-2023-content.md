@@ -545,16 +545,16 @@ Skaitļu virkni, kurā ir $N$ elementi, sauksim par $N$ mazāko
 naturālo skaitļu permutāciju, ja tajā atrodami visi 
 naturālie skaitļi no $1$ līdz $N$.
 
-Zināms, ka virkne $\left\{a_{i}\right\}$ ir $n$ ($n>3$) mazāko naturālo 
-skaitlu permutācija.
+Zināms, ka virkne $\left\{ a_{i} \right\}$ ir $n$ ($n>3$) mazāko naturālo 
+skaitļu permutācija.
 
-Virknes $\left\{b_{i}\right\}(1 \leq i \leq n-1)$ elementus aprēķina 
+Virknes $\left\{ b_{i} \right\}$ ($1 \leq i \leq n-1$) elementus aprēķina 
 pēc formulas $b_{i}=\left|a_{i+1}-a_{i}\right|$.
 
-Virknes $\left\{c_{i}\right\}(1 \leq i \leq n-2)$ elementus aprēķina 
+Virknes $\left\{ c_{i} \right\}$ ($1 \leq i \leq n-2$) elementus aprēķina 
 pēc formulas $c_{i}=\left|b_{i+1}-b_{i}\right|$.
 
-Pierādīt, ka $\left\{b_{i}\right\}$ un $\left\{c_{i}\right\}$ 
+Pierādīt, ka $\left\{ b_{i} \right\}$ un $\left\{ c_{i} \right\}$ 
 vienlaikus abas nevar būt attiecīgi $n-1$ un $n-2$ mazāko 
 naturālo skaitļu permutācijas!
 

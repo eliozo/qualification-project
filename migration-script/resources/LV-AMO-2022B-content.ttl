@@ -9,15 +9,18 @@ eliozo:LV.AMO.2022B.10.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2022B.10.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.10.1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.10.1.SUB0,
+        eliozo:SOLN.LV.AMO.2022B.10.1.SUB1 ;
     eliozo:problemText "Kāds ir skaitļa $2022^{2022}$ pēdējais cipars?"@lv ;
     eliozo:problemTextHtml "<p>Kāds ir skaitļa $2022^{2022}$ pēdējais cipars?</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.AMO.2022B.10" .
+    eliozo:suffix "LV.AMO.2022B.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2022B.10.2 a eliozo:Problem ;
     eliozo:LTopic "LTDivisibility",
@@ -31,9 +34,10 @@ eliozo:LV.AMO.2022B.10.2 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2022B.10.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.10.2 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.10.2.SUB0 ;
     eliozo:problemText """Apskatām $n$ pēc kārtas ņemtus naturālus skaitļus. 
 Vai var gadīties, ka tos var sadalīt divās grupās tā, ka katras
 grupas skaitļu summa ir pirmskaitlis, ja **(A)** $n = 8$, 
@@ -45,7 +49,8 @@ grupas skaitļu summa ir pirmskaitlis, ja <strong>(A)</strong> $n = 8$,
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.AMO.2022B.10" .
+    eliozo:suffix "LV.AMO.2022B.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2022B.10.3 a eliozo:Problem ;
     eliozo:LTopic "LTStructureAugmentation",
@@ -59,10 +64,11 @@ eliozo:LV.AMO.2022B.10.3 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2022B.10.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.10.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.10.3 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.10.3.SUB0 ;
     eliozo:problemText """Uz taisnleņķa trijstūra $ACB$ hipotenūzas $AB$ atlikts punkts $O$, 
 kas ir centrs riņķa līnijai ar rādiusu $3$, kura pieskaras
 abām katetēm. Aprēķināt trijstūra $ACB$ laukumu, ja $OB = 5$."""@lv ;
@@ -72,7 +78,8 @@ abām katetēm. Aprēķināt trijstūra $ACB$ laukumu, ja $OB = 5$.</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.AMO.2022B.10" .
+    eliozo:suffix "LV.AMO.2022B.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2022B.10.4 a eliozo:Problem ;
     eliozo:LTopic "LTEquations",
@@ -84,9 +91,10 @@ eliozo:LV.AMO.2022B.10.4 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2022B.10.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.10.4 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.10.4.SUB0 ;
     eliozo:problemText """Doti reāli skaitļi $a$, $b$ un $c$, kuriem $abc = 1$. Pierādīt, ka vienādojumam
 
 $$ax^4 + (2b + a)x^2 - 2cx + b^3c + bc + bc^3 = 0$$
@@ -98,7 +106,8 @@ nav reālu sakņu!"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.AMO.2022B.10" .
+    eliozo:suffix "LV.AMO.2022B.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2022B.10.5 a eliozo:Problem ;
     eliozo:LTopic "LTContradiction",
@@ -110,10 +119,12 @@ eliozo:LV.AMO.2022B.10.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2022B.10.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.10.5A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.10.5 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.10.5.SUB0,
+        eliozo:SOLN.LV.AMO.2022B.10.5.SUB1 ;
     eliozo:problemText """Restorānā ieradās pieci deputāti un pirms pusdienām daži no viņiem 
 paspieda viens otram roku. 
 Zināms, ka, ja kādi divi deputāti nepaspieda viens otram roku, 
@@ -131,7 +142,8 @@ roku abiem saviem blakussēdētājiem!</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.AMO.2022B.10" .
+    eliozo:suffix "LV.AMO.2022B.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2022B.11.1 a eliozo:Problem ;
     eliozo:LTopic "LTCongruenceModulo",
@@ -143,15 +155,17 @@ eliozo:LV.AMO.2022B.11.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2022B.11.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.11.1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.11.1.SUB0 ;
     eliozo:problemText "Vai skaitli 2022 var izteikt kā divu veselu skaitļu kubu summu?"@lv ;
     eliozo:problemTextHtml "<p>Vai skaitli 2022 var izteikt kā divu veselu skaitļu kubu summu?</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.AMO.2022B.11" .
+    eliozo:suffix "LV.AMO.2022B.11" ;
+    eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2022B.11.2 a eliozo:Problem ;
     eliozo:LTopic "LTEquations",
@@ -164,15 +178,17 @@ eliozo:LV.AMO.2022B.11.2 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2022B.11.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.11.2 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.11.2.SUB0 ;
     eliozo:problemText "Kādām reālām $p$ vērtībām vienādojuma $x^2 + x + p = 0$ sakņu kvadrātu summa ir $16$?"@lv ;
     eliozo:problemTextHtml "<p>Kādām reālām $p$ vērtībām vienādojuma $x^2 + x + p = 0$ sakņu kvadrātu summa ir $16$?</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.AMO.2022B.11" .
+    eliozo:suffix "LV.AMO.2022B.11" ;
+    eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2022B.11.3 a eliozo:Problem ;
     eliozo:LTopic "LTCircleAndRelatedAngles",
@@ -185,10 +201,11 @@ eliozo:LV.AMO.2022B.11.3 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2022B.11.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.11.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.11.3 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.11.3.SUB0 ;
     eliozo:problemText """Trijstūrī $ABC$ ievilktā riņķa līnija pieskaras malai 
 $AB$ punktā $D$ tā, ka $AD = 8$ un $BD = 1$. Aprēķināt malas $BC$
 garumu, ja trijstūra leņķa $B$ lielums ir $120^{\\circ}$."""@lv ;
@@ -198,7 +215,8 @@ garumu, ja trijstūra leņķa $B$ lielums ir $120^{\\circ}$.</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.AMO.2022B.11" .
+    eliozo:suffix "LV.AMO.2022B.11" ;
+    eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2022B.11.4 a eliozo:Problem ;
     eliozo:LTopic "LTExpressionTransforms",
@@ -210,9 +228,10 @@ eliozo:LV.AMO.2022B.11.4 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2022B.11.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.11.4 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.11.4.SUB0 ;
     eliozo:problemText """Pierādīt, ka katru naturālu skaitli, kas ir lielāks nekā $3$, 
 var vienā vienīgā veidā izteikt kā trīs naturālu
 skaitļu $x,y,z$ ($x \\leq y \\leq z$) summu tā, lai skaitļiem 
@@ -227,7 +246,8 @@ $x$, $y$, $z$ izpildītos nevienādība</p>
     eliozo:problemYear 2022 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.AMO.2022B.11" .
+    eliozo:suffix "LV.AMO.2022B.11" ;
+    eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2022B.11.5 a eliozo:Problem ;
     eliozo:LTopic "LTContradiction",
@@ -241,10 +261,11 @@ eliozo:LV.AMO.2022B.11.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2022B.11.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.11.5A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.11.5 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.11.5.SUB0 ;
     eliozo:problemText """Mākslas muzeja plānojums ir taisnstūris ar izmēriem $m \\times n$ 
 ($m \\geq 2$, $n \\geq 2$) rūtiņas, 
 kur viena rūtiņa atbilst vienai muzeja telpai. 
@@ -272,7 +293,8 @@ Muzeja vadītājs vēlas izveidot apmeklētāju maršrutu, kuram izpildās šād
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.AMO.2022B.11" .
+    eliozo:suffix "LV.AMO.2022B.11" ;
+    eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2022B.12.1 a eliozo:Problem ;
     eliozo:LTopic "LTCongruenceModulo",
@@ -284,15 +306,17 @@ eliozo:LV.AMO.2022B.12.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2022B.12.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.1.SUB0 ;
     eliozo:problemText "Vai skaitli $2023^2$ var izteikt kā trīs veselu skaitļu kubu summu?"@lv ;
     eliozo:problemTextHtml "<p>Vai skaitli $2023^2$ var izteikt kā trīs veselu skaitļu kubu summu?</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.AMO.2022B.12" .
+    eliozo:suffix "LV.AMO.2022B.12" ;
+    eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2022B.12.2 a eliozo:Problem ;
     eliozo:LTopic "LTEquations",
@@ -304,15 +328,17 @@ eliozo:LV.AMO.2022B.12.2 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2022B.12.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.2 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.2.SUB0 ;
     eliozo:problemText "Kādām reālām $p$ vērtībām vienādojuma $x^2 + x + p$ sakņu kubu summa ir $(-16)$?"@lv ;
     eliozo:problemTextHtml "<p>Kādām reālām $p$ vērtībām vienādojuma $x^2 + x + p$ sakņu kubu summa ir $(-16)$?</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.AMO.2022B.12" .
+    eliozo:suffix "LV.AMO.2022B.12" ;
+    eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2022B.12.3 a eliozo:Problem ;
     eliozo:LTopic "LTStructureAugmentation",
@@ -325,10 +351,11 @@ eliozo:LV.AMO.2022B.12.3 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2022B.12.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.12.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.3 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.3.SUB0 ;
     eliozo:problemText """Trijstūrī $ABC$ no virsotnes $A$ vilktā augstuma garums ir $1$,
 no virsotnes $C$ vilktās mediānas garums arī ir $1$, bet
 augstuma no virsotnes $B$ garums ir $\\sqrt{3}$. Kāds var būt šī trijstūra laukums?"""@lv ;
@@ -338,7 +365,8 @@ augstuma no virsotnes $B$ garums ir $\\sqrt{3}$. Kāds var būt šī trijstūra 
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.AMO.2022B.12" .
+    eliozo:suffix "LV.AMO.2022B.12" ;
+    eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2022B.12.4 a eliozo:Problem ;
     eliozo:LTopic "LTEquations",
@@ -351,15 +379,20 @@ eliozo:LV.AMO.2022B.12.4 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2022B.12.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.4 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.4.SUB0,
+        eliozo:SOLN.LV.AMO.2022B.12.4.SUB1,
+        eliozo:SOLN.LV.AMO.2022B.12.4.SUB2,
+        eliozo:SOLN.LV.AMO.2022B.12.4.SUB3 ;
     eliozo:problemText "Atrisināt reālos skaitļos vienādojumu $3 \\sin x + 4 \\cos x = 6$."@lv ;
     eliozo:problemTextHtml "<p>Atrisināt reālos skaitļos vienādojumu $3 \\sin x + 4 \\cos x = 6$.</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.AMO.2022B.12" .
+    eliozo:suffix "LV.AMO.2022B.12" ;
+    eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2022B.12.5 a eliozo:Problem ;
     eliozo:LTopic "LTGames" ;
@@ -373,9 +406,10 @@ eliozo:LV.AMO.2022B.12.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2022B.12.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.5 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.12.5.SUB0 ;
     eliozo:problemText """Dota rūtiņu tabula $n \\times n$. Ilmārs un Kims spēlē šādu spēli. 
 Viņi pēc kārtas kādā vēl tukšā rūtiņā ieraksta skaitli $1$
 vai $-1$. Spēli sāk Ilmārs. Ja pēc kāda spēlētāja gājiena tiek 
@@ -399,7 +433,8 @@ punktu. Kuram spēlētājam ir uzvaroša stratēģija, ja <strong>(A)</strong> $
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.AMO.2022B.12" .
+    eliozo:suffix "LV.AMO.2022B.12" ;
+    eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2022B.5.1 a eliozo:Problem ;
     eliozo:LTopic "LTNumeralSystems" ;
@@ -409,9 +444,10 @@ eliozo:LV.AMO.2022B.5.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2022B.5.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.5.1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.5.1.SUB0 ;
     eliozo:problemText """Kāds ir mazākais naturālais skaitlis, kura pierakstā izmantoti tikai 
 cipari $0$ un $2$ un kurš dalās ar $15$?"""@lv ;
     eliozo:problemTextHtml """<p>Kāds ir mazākais naturālais skaitlis, kura pierakstā izmantoti tikai 
@@ -420,6 +456,7 @@ cipari $0$ un $2$ un kurš dalās ar $15$?</p>"""@lv ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2022B.5" ;
+    eliozo:suggestedGrade 5 ;
     eliozo:topic eliozo:DecimalNotationDigits,
         eliozo:DivisibilityRulesFor3And9,
         eliozo:DivisibilityRulesLastDigits .
@@ -435,10 +472,11 @@ eliozo:LV.AMO.2022B.5.2 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2022B.5.2" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.5.2A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.5.2 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.5.2.SUB0 ;
     eliozo:problemText """Pa rūtiņu līnijām uzzīmē tādu sešstūri, kuram perimetra un laukuma vērtības sakrīt!  
 *Piezīme.* Laukums ir sešstūri veidojošo rūtiņu skaits un perimetrs ir 
 rūtiņu malu, kas pilnībā atrodas uz robežas, skaits."""@lv ;
@@ -449,6 +487,7 @@ rūtiņu malu, kas pilnībā atrodas uz robežas, skaits.</p>"""@lv ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.AMO.2022B.5" ;
+    eliozo:suggestedGrade 5 ;
     eliozo:topic eliozo:Area,
         eliozo:PolygonPerimeter,
         eliozo:SquareGridShapes .
@@ -461,9 +500,10 @@ eliozo:LV.AMO.2022B.5.3 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2022B.5.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.5.3 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.5.3.SUB0 ;
     eliozo:problemText """Uz teātra izrādi tika izgatavotas $250$ biļetes un vismaz puse 
 no biļetēm tika pārdotas. Zināms, ka tieši trešdaļa
 no skatītājiem bija skolēni, tieši piektdaļa – studenti un tieši 
@@ -476,6 +516,7 @@ septītdaļa – pensionāri. Cik biļetes tika pārdotas?</p>"""@lv ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2022B.5" ;
+    eliozo:suggestedGrade 5 ;
     eliozo:topic eliozo:ArithmeticSeriesDivisibility,
         eliozo:MutualPrimes .
 
@@ -487,10 +528,11 @@ eliozo:LV.AMO.2022B.5.4 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2022B.5.4" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.5.4.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.5.4 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.5.4.SUB0 ;
     eliozo:problemText """Zināms, ka svari (a), (b) un (c) atrodas līdzsvarā. 
 Cik bultiņu jāliek jautājuma zīmes vietā, lai svari (d) atrastos
 līdzsvarā? Atbildi pamatot!  
@@ -503,6 +545,7 @@ līdzsvarā? Atbildi pamatot!<br />
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2022B.5" ;
+    eliozo:suggestedGrade 5 ;
     eliozo:topic eliozo:SystemsSubstituteVariables .
 
 eliozo:LV.AMO.2022B.5.5 a eliozo:Problem ;
@@ -512,9 +555,10 @@ eliozo:LV.AMO.2022B.5.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2022B.5.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.5.5 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.5.5.SUB0 ;
     eliozo:problemText """Katrai no trīs meitenēm Elīnai, Gunai un Marutai patīk viena no krāsām: zaļa, dzeltena, oranža (katrai cita krāsa),
 bet abas pārējās krāsas nepatīk. Zināms, ka tieši viens no apgalvojumiem ir patiess:
 
@@ -535,6 +579,7 @@ bet abas pārējās krāsas nepatīk. Zināms, ka tieši viens no apgalvojumiem 
     eliozo:problem_number 5 ;
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2022B.5" ;
+    eliozo:suggestedGrade 5 ;
     eliozo:topic eliozo:PartitioningInPairsBijections .
 
 eliozo:LV.AMO.2022B.6.1 a eliozo:Problem ;
@@ -545,9 +590,10 @@ eliozo:LV.AMO.2022B.6.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2022B.6.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.6.1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.6.1.SUB0 ;
     eliozo:problemText """Uz papīra lapas uzrakstīti visi naturālie skaitļi no $1$ līdz $2022$ (katrs vienu reizi). 
 Vispirms Amanda ar sarkanu zīmuli apvilka visus skaitļus, kas dalās ar $3$. 
 Tad viņa ar zilu zīmuli apvilka visus skaitļus, kas dalās ar $5$. 
@@ -562,6 +608,7 @@ Cik ir tādu skaitļu, kas ir apvilkti ar vismaz divām dažādām krāsām?</p>
     eliozo:problem_number 1 ;
     eliozo:questionType "FindCount" ;
     eliozo:suffix "LV.AMO.2022B.6" ;
+    eliozo:suggestedGrade 6 ;
     eliozo:topic eliozo:MutualPrimes,
         eliozo:OtherCountingSetOperations .
 
@@ -574,11 +621,12 @@ eliozo:LV.AMO.2022B.6.2 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2022B.6.2" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.6.2.png,
         eliozo:IMG.LV.AMO.2022B.6.2A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.6.2 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.6.2.SUB0 ;
     eliozo:problemText """Parādi, kā no 1. att. dotās rūtiņu lapas var izgriezt desmit figūras, 
 kādas dotas 2. att. (iezīmē, kur jāiet griezuma līnijām)! 
 Figūras var būt arī pagrieztas.  
@@ -591,6 +639,7 @@ Figūras var būt arī pagrieztas.<br />
     eliozo:problem_number 2 ;
     eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.AMO.2022B.6" ;
+    eliozo:suggestedGrade 6 ;
     eliozo:topic eliozo:RotationBy90,
         eliozo:SquareGridCutting .
 
@@ -603,9 +652,10 @@ eliozo:LV.AMO.2022B.6.3 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2022B.6.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.6.3 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.6.3.SUB0 ;
     eliozo:problemText """Tumšā rudens vakarā Māris izdomāja saskaitīt visus naturālos skaitļus 
 no $1$ līdz $n$, kur $n$ ir kāds naturāls skaitlis.
 Vai var gadīties, ka Māris ieguva summu, kuras pēdējais cipars ir
@@ -618,6 +668,7 @@ Vai var gadīties, ka Māris ieguva summu, kuras pēdējais cipars ir
     eliozo:problem_number 3 ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2022B.6" ;
+    eliozo:suggestedGrade 6 ;
     eliozo:topic eliozo:PeriodicRemainders,
         eliozo:SeriesOneToNSum .
 
@@ -628,10 +679,11 @@ eliozo:LV.AMO.2022B.6.4 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2022B.6.4" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.6.4.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.6.4 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.6.4.SUB0 ;
     eliozo:problemText """Zināms, ka svari (a), (b) un (c) atrodas līdzsvarā. Cik aplīšu jāliek jautājuma zīmes vietā, lai svari (d) atrastos
 līdzsvarā? Atbildi pamatot!  
 ![](LV.AMO.2022B.6.4.png)"""@lv ;
@@ -642,6 +694,7 @@ līdzsvarā? Atbildi pamatot!<br />
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2022B.6" ;
+    eliozo:suggestedGrade 6 ;
     eliozo:topic eliozo:SystemsSubstituteVariables .
 
 eliozo:LV.AMO.2022B.6.5 a eliozo:Problem ;
@@ -653,10 +706,11 @@ eliozo:LV.AMO.2022B.6.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2022B.6.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.6.5.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.6.5 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.6.5.SUB0 ;
     eliozo:problemText """Daži no 273 ciema iedzīvotājiem visu laiku saka patiesību, 
 pārējie visu laiku melo. Katram no ciema iedzīvotājiem
 ir tieši viena mīļākā nedēļas diena. Aptaujājot iedzīvotājus, 
@@ -681,6 +735,7 @@ sestdiena – $56$, svētdiena – $57$. Cik ciema iedzīvotāji visu laiku melo
     eliozo:problem_number 5 ;
     eliozo:questionType "FindCount" ;
     eliozo:suffix "LV.AMO.2022B.6" ;
+    eliozo:suggestedGrade 6 ;
     eliozo:topic eliozo:DoubleCounting,
         eliozo:TrueAndFalseStatements .
 
@@ -693,9 +748,10 @@ eliozo:LV.AMO.2022B.7.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2022B.7.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.7.1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.7.1.SUB0 ;
     eliozo:problemText """Uz tāfeles bija uzrakstīts šāds teksts: $A869B$. 
 Katrs no burtiem $A$ un $B$ jāaizstāj ar vienu ciparu (tie var būt arī
 vienādi) tā, lai iegūtais piecciparu skaitlis dalītos ar $15$. 
@@ -708,6 +764,7 @@ Cik dažādos veidos to var izdarīt?</p>"""@lv ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindCount" ;
     eliozo:suffix "LV.AMO.2022B.7" ;
+    eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:DivisibilityRulesFor3And9,
         eliozo:DivisibilityRulesLastDigits .
 
@@ -719,15 +776,17 @@ eliozo:LV.AMO.2022B.7.2 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2022B.7.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.7.2 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.7.2.SUB0 ;
     eliozo:problemText "Vai var atrast **(A)** $5$; **(B)** $15$ naturālus skaitļus (ne obligāti dažādus), kuru summa ir vienāda ar to reizinājumu?"@lv ;
     eliozo:problemTextHtml "<p>Vai var atrast <strong>(A)</strong> $5$; <strong>(B)</strong> $15$ naturālus skaitļus (ne obligāti dažādus), kuru summa ir vienāda ar to reizinājumu?</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2022B.7" ;
+    eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:EquationsAndMonotonicity .
 
 eliozo:LV.AMO.2022B.7.3 a eliozo:Problem ;
@@ -739,10 +798,11 @@ eliozo:LV.AMO.2022B.7.3 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2022B.7.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.7.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.7.3 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.7.3.SUB0 ;
     eliozo:problemText """Parādi, kā plaknē novilkt $6$ taisnes un uz tām atlikt $7$ punktus tā, 
 lai uz katras no taisnēm būtu atzīmēti tieši trīs punkti!"""@lv ;
     eliozo:problemTextHtml """<p>Parādi, kā plaknē novilkt $6$ taisnes un uz tām atlikt $7$ punktus tā, 
@@ -750,7 +810,8 @@ lai uz katras no taisnēm būtu atzīmēti tieši trīs punkti!</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample" ;
-    eliozo:suffix "LV.AMO.2022B.7" .
+    eliozo:suffix "LV.AMO.2022B.7" ;
+    eliozo:suggestedGrade 7 .
 
 eliozo:LV.AMO.2022B.7.4 a eliozo:Problem ;
     eliozo:LTopic "LTDivisibility",
@@ -763,9 +824,10 @@ eliozo:LV.AMO.2022B.7.4 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2022B.7.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.7.4 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.7.4.SUB0 ;
     eliozo:problemText """Uz galda ir kaudze ar konfektēm. Karlsons un Brālītis pēc kārtas izdara gājienus, 
 Karlsons sāk spēli. Vienā gājienā
 spēlētājs var paņemt no kaudzes un apēst vai nu vienu, 
@@ -783,7 +845,8 @@ ja sākumā kaudzē ir <strong>(A)</strong> $6$ konfektes;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "Algorithm" ;
-    eliozo:suffix "LV.AMO.2022B.7" .
+    eliozo:suffix "LV.AMO.2022B.7" ;
+    eliozo:suggestedGrade 7 .
 
 eliozo:LV.AMO.2022B.7.5 a eliozo:Problem ;
     eliozo:LTopic "LTLogic" ;
@@ -794,10 +857,11 @@ eliozo:LV.AMO.2022B.7.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2022B.7.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.7.5.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.7.5 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.7.5.SUB0 ;
     eliozo:problemText """Daži no $272$ ciema iedzīvotājiem visu laiku saka patiesību, 
 pārējie visu laiku melo. Katram no ciema iedzīvotājiem
 ir tieši viena mīļākā nedēļas diena. Aptaujājot iedzīvotājus, 
@@ -823,7 +887,8 @@ Cik ciema iedzīvotāju visu laiku melo?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindCount" ;
-    eliozo:suffix "LV.AMO.2022B.7" .
+    eliozo:suffix "LV.AMO.2022B.7" ;
+    eliozo:suggestedGrade 7 .
 
 eliozo:LV.AMO.2022B.8.1 a eliozo:Problem ;
     eliozo:LTopic "LTNumeralSystems" ;
@@ -834,9 +899,10 @@ eliozo:LV.AMO.2022B.8.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2022B.8.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.8.1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.8.1.SUB0 ;
     eliozo:problemText """Uz tāfeles bija uzrakstīts šāds teksts: $N597M$. 
 Katrs no burtiem $N$ un $M$ jāaizstāj ar vienu ciparu (tie var būt arī
 vienādi) tā, lai iegūtais piecciparu skaitlis dalītos ar $12$. 
@@ -848,7 +914,8 @@ Cik dažādos veidos to var izdarīt?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindCount" ;
-    eliozo:suffix "LV.AMO.2022B.8" .
+    eliozo:suffix "LV.AMO.2022B.8" ;
+    eliozo:suggestedGrade 8 .
 
 eliozo:LV.AMO.2022B.8.2 a eliozo:Problem ;
     eliozo:LTopic "LTEquations" ;
@@ -858,9 +925,10 @@ eliozo:LV.AMO.2022B.8.2 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2022B.8.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.8.2 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.8.2.SUB0 ;
     eliozo:problemText """Skolēnam tika uzdots mājas darbs, kurā bija $20$ uzdevumi. 
 Par katru pareizi atrisinātu uzdevumu tiek doti $8$
 punkti, par katru nepareizi atrisinātu uzdevumu tiek atņemti $5$ punkti, 
@@ -876,7 +944,8 @@ ja kopā viņš ieguva $13$ punktus?</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.AMO.2022B.8" .
+    eliozo:suffix "LV.AMO.2022B.8" ;
+    eliozo:suggestedGrade 8 .
 
 eliozo:LV.AMO.2022B.8.3 a eliozo:Problem ;
     eliozo:LTopic "LTTriangles" ;
@@ -885,10 +954,11 @@ eliozo:LV.AMO.2022B.8.3 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2022B.8.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.8.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.8.3 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.8.3.SUB0 ;
     eliozo:problemText """Trijstūrī $ABC$ uz malas $BC$ atlikts tāds punkts $D$, 
 ka $AD = BD$ un $AB = DC = AC$. Aprēķināt trijstūra $ABC$ leņķus!"""@lv ;
     eliozo:problemTextHtml """<p>Trijstūrī $ABC$ uz malas $BC$ atlikts tāds punkts $D$, 
@@ -896,7 +966,8 @@ ka $AD = BD$ un $AB = DC = AC$. Aprēķināt trijstūra $ABC$ leņķus!</p>"""@l
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.AMO.2022B.8" .
+    eliozo:suffix "LV.AMO.2022B.8" ;
+    eliozo:suggestedGrade 8 .
 
 eliozo:LV.AMO.2022B.8.4 a eliozo:Problem ;
     eliozo:LTopic "LTContradiction",
@@ -907,10 +978,11 @@ eliozo:LV.AMO.2022B.8.4 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2022B.8.4" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.8.4A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.8.4 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.8.4.SUB0 ;
     eliozo:problemText """Vai pa apli var uzrakstīt skaitļus  
 **(A)** $0;\\;1;\\;2;\\;3;\\;4;\\;5;\\;6;\\;7;\\;8;\\;9$;
 **(B)** $0;\\;1;\\;2;\\;3;\\;4;\\;5;\\;6;\\;7;\\;8;\\;9;\\;10;\\;11;\\;12;\\;13$;
@@ -923,6 +995,7 @@ tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?</p>
     eliozo:problem_number 4 ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2022B.8" ;
+    eliozo:suggestedGrade 8 ;
     eliozo:topic eliozo:HamiltonCircuits .
 
 eliozo:LV.AMO.2022B.8.5 a eliozo:Problem ;
@@ -933,9 +1006,10 @@ eliozo:LV.AMO.2022B.8.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2022B.8.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.8.5 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.8.5.SUB0 ;
     eliozo:problemText """Piecu draugu lokā izvērsās strīds, kurā:
 
 * Elīna saka: "Es vienmēr saku taisnību."
@@ -957,7 +1031,8 @@ Cik draugu saka taisnību?"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindCount" ;
-    eliozo:suffix "LV.AMO.2022B.8" .
+    eliozo:suffix "LV.AMO.2022B.8" ;
+    eliozo:suggestedGrade 8 .
 
 eliozo:LV.AMO.2022B.9.1 a eliozo:Problem ;
     eliozo:LTopic "LTNumeralSystems" ;
@@ -968,9 +1043,10 @@ eliozo:LV.AMO.2022B.9.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2022B.9.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.9.1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.9.1.SUB0 ;
     eliozo:problemText """Cik ir tādu četrciparu skaitļu $\\overline{ABBA}$, kas dalās ar $99$? 
 (Vienādiem burtiem atbilst vienādi cipari, dažādiem burtiem
 var atbilst arī vienādi cipari.)"""@lv ;
@@ -980,7 +1056,8 @@ var atbilst arī vienādi cipari.)</p>"""@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindCount" ;
-    eliozo:suffix "LV.AMO.2022B.9" .
+    eliozo:suffix "LV.AMO.2022B.9" ;
+    eliozo:suggestedGrade 9 .
 
 eliozo:LV.AMO.2022B.9.2 a eliozo:Problem ;
     eliozo:LTopic "LTExpressionTransforms",
@@ -990,15 +1067,17 @@ eliozo:LV.AMO.2022B.9.2 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2022B.9.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.9.2 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.9.2.SUB0 ;
     eliozo:problemText "Vai noteikti $x + \\frac{9}{x} > y + \\frac{9}{y}$, ja **(A)** $x > y > 0$, **(B)** $x > y > 3$?"@lv ;
     eliozo:problemTextHtml "<p>Vai noteikti $x + \\frac{9}{x} &gt; y + \\frac{9}{y}$, ja <strong>(A)</strong> $x &gt; y &gt; 0$, <strong>(B)</strong> $x &gt; y &gt; 3$?</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.AMO.2022B.9" .
+    eliozo:suffix "LV.AMO.2022B.9" ;
+    eliozo:suggestedGrade 9 .
 
 eliozo:LV.AMO.2022B.9.3 a eliozo:Problem ;
     eliozo:LTopic "LTTriangles" ;
@@ -1010,10 +1089,11 @@ eliozo:LV.AMO.2022B.9.3 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2022B.9.3" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.9.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.9.3 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.9.3.SUB0 ;
     eliozo:problemText """Taisnleņķa trijstūrī $ACB$ ($\\sphericalangle C = 90^{\\circ}$) 
 novilkts augstums $CH$. Uz malas $AC$ atlikts punkts $K$ tā, ka 
 $\\sphericalangle CBK = \\sphericalangle BAC$.
@@ -1025,7 +1105,8 @@ Pierādīt, ka taisne $CH$ dala nogriezni $BK$ divās vienādās daļās!</p>"""
     eliozo:problemYear 2022 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.AMO.2022B.9" .
+    eliozo:suffix "LV.AMO.2022B.9" ;
+    eliozo:suggestedGrade 9 .
 
 eliozo:LV.AMO.2022B.9.4 a eliozo:Problem ;
     eliozo:LTopic "LTContradiction",
@@ -1036,9 +1117,10 @@ eliozo:LV.AMO.2022B.9.4 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2022B.9.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.9.4 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.9.4.SUB0 ;
     eliozo:problemText """Vai pa apli var uzrakstīt skaitļus  
 **(A)** 1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13;  
 **(B)** 1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14;  
@@ -1051,6 +1133,7 @@ tā, lai katri divi blakus esoši skaitļi atšķirtos par $3$; $4$ vai $5$?</p>
     eliozo:problem_number 4 ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2022B.9" ;
+    eliozo:suggestedGrade 9 ;
     eliozo:topic eliozo:HamiltonCircuits .
 
 eliozo:LV.AMO.2022B.9.5 a eliozo:Problem ;
@@ -1065,10 +1148,11 @@ eliozo:LV.AMO.2022B.9.5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2022B.9.5" ;
     eliozo:problemImage eliozo:IMG.LV.AMO.2022B.9.5A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.9.5 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2022B.9.5.SUB0 ;
     eliozo:problemText """Mākslas muzeja plānojums ir taisnstūris ar izmēriem **(A)** $8 \\times 9$; 
 **(B)** $9 \\times 11$ rūtiņas, 
 kur viena rūtiņa atbilst vienai muzeja telpai. 
@@ -1096,7 +1180,8 @@ kuram izpildās šādas īpašības:</p>
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.AMO.2022B.9" .
+    eliozo:suffix "LV.AMO.2022B.9" ;
+    eliozo:suggestedGrade 9 .
 
 eliozo:IMG.LV.AMO.2022B.10.3A.png a eliozo:Image ;
     eliozo:imageSrc "LV.AMO.2022B.10.3A.png" ;
@@ -1166,9 +1251,8 @@ eliozo:IMG.LV.AMO.2022B.9.5A.png a eliozo:Image ;
     eliozo:imageSrc "LV.AMO.2022B.9.5A.png" ;
     eliozo:imageWidth "" .
 
-eliozo:SOLN.LV.AMO.2022B.10.1 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.LV.AMO.2022B.10.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
 Skaitļa pēdējo ciparu noskaidrosim, apskatot doto skaitli 
@@ -1194,16 +1278,7 @@ Redzam, ka virkne $2^{n}(\\bmod 10)$ ir periodiska ar perioda garumu $4$.
 Tā kā $2022=4 \\cdot 505+2$, tad virknes 2022.locekļa pēdējais cipars būs 
 tāds pats kā virknes 2.locekḷa pēdējais cipars, tātad pēdējais 
 cipars būs $4$. Līdz ar to esam ieguvuši, ka skaitļa 
-$2022^{2022}$ pēdējais cipars ir $4$."""@lv,
-        """## Atrisinājums
-
-Skaitļa pēdējo ciparu noskaidrosim, apskatot doto skaitli pēc moduḷa $10$. 
-Ievērojot, ka $2^{4} \\equiv 16 \\equiv 6(\\bmod 10)$ un 
-$6^{n} \\equiv 6(\\bmod 10)$, iegūstam
-
-$$2022^{2022} \\equiv 2^{2022} \\equiv 2^{2020} \\cdot 2^{2} \\equiv\\left(2^{4}\\right)^{505} \\cdot 4 \\equiv 6 \\cdot 4 \\equiv 4 \\pmod {10}$$
-
-Līdz ar to esam ieguvuši, ka skaitla $2022^{2022}$ pēdējais cipars ir $4$."""@lv ;
+$2022^{2022}$ pēdējais cipars ir $4$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Skaitļa pēdējo ciparu noskaidrosim, apskatot doto skaitli 
 pēc moduḷa 10. levērosim, ka $2022^{2022} \\equiv 2^{2022}(\\bmod 10)$. 
@@ -1246,15 +1321,27 @@ apskatīsim šīs virknes pirmos locekļus:</p>
 Tā kā $2022=4 \\cdot 505+2$, tad virknes 2022.locekļa pēdējais cipars būs 
 tāds pats kā virknes 2.locekḷa pēdējais cipars, tātad pēdējais 
 cipars būs $4$. Līdz ar to esam ieguvuši, ka skaitļa 
-$2022^{2022}$ pēdējais cipars ir $4$.</p>"""@lv,
-        """<h2>Atrisinājums</h2>
+$2022^{2022}$ pēdējais cipars ir $4$.</p>"""@lv .
+
+eliozo:SOLN.LV.AMO.2022B.10.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Skaitļa pēdējo ciparu noskaidrosim, apskatot doto skaitli pēc moduḷa $10$. 
+Ievērojot, ka $2^{4} \\equiv 16 \\equiv 6(\\bmod 10)$ un 
+$6^{n} \\equiv 6(\\bmod 10)$, iegūstam
+
+$$2022^{2022} \\equiv 2^{2022} \\equiv 2^{2020} \\cdot 2^{2} \\equiv\\left(2^{4}\\right)^{505} \\cdot 4 \\equiv 6 \\cdot 4 \\equiv 4 \\pmod {10}$$
+
+Līdz ar to esam ieguvuši, ka skaitla $2022^{2022}$ pēdējais cipars ir $4$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Skaitļa pēdējo ciparu noskaidrosim, apskatot doto skaitli pēc moduḷa $10$. 
 Ievērojot, ka $2^{4} \\equiv 16 \\equiv 6(\\bmod 10)$ un 
 $6^{n} \\equiv 6(\\bmod 10)$, iegūstam</p>
 <p>$$2022^{2022} \\equiv 2^{2022} \\equiv 2^{2020} \\cdot 2^{2} \\equiv\\left(2^{4}\\right)^{505} \\cdot 4 \\equiv 6 \\cdot 4 \\equiv 4 \\pmod {10}$$</p>
 <p>Līdz ar to esam ieguvuši, ka skaitla $2022^{2022}$ pēdējais cipars ir $4$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.10.2 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.10.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums 
 
@@ -1278,7 +1365,7 @@ summām ir nepāra skaitlis, bet otra - pāra skaitlis.
 Tā kā abas summas ir lielākas nekā $2$, tad tā summa, 
 kas ir pāra skaitlis, nav pirmskaitlis.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.10.3 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.10.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1318,7 +1405,7 @@ $AC=\\frac{OM \\cdot CB}{MB}=\\frac{3 \\cdot 7}{4}=5,25 \\mathrm{~cm}$.
 Līdz ar to $S_{ACB}=\\frac{AC \\cdot CB}{2}=18 \\frac{3}{8} \\mathrm{~cm}^{2}$.</p>
 <p><img alt="" src="LV.AMO.2022B.10.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.10.4 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.10.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1346,9 +1433,8 @@ a^{2} x^{4}+2 a b x^{2}+a^{2} b^{2}-2 a c x+b^{2}+1+c^{2}=0 \\
 <p>Tā kā vienādojuma kreisās puses vērtība ir vismaz $1$, jo kvadrātu vērtība 
 ir nenegatīva, tad dotajam vienādojumam nav reālu sakņu.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.10.5 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.LV.AMO.2022B.10.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
 Pirmkārt pamatosim, ka no jebkuriem trīs deputātiem vismaz kādi divi 
@@ -1391,27 +1477,7 @@ Iespējami divi gadīumi:
   (citādi viņš būtu izdarījis tikai vienu rokasspiedienu). 
   Deputāts $E$ noteikti ir paspiedis roku vismaz vienam no atlikušajiem 
   diviem deputātiem (citādi $E$ būtu izdarīis tikai vienu rokasspiedienu), 
-  šo deputātu nosēdināsim vietā $D$. Redzams, ka ar šo prasītais ir panākts."""@lv,
-        """## Atrisinājums
-
-Uzskatīsim, ka, ja kādi deputāti nepaspieda viens otram roku, tad viņi 
-savstarpēji viens otru ienīst. No dotā izriet, ka, ja kādi divi deputāti 
-viens otru ienīst, tad abi kopā viṇi ienīst vēl lielākais vienu citu deputātu. 
-No šī viegli redzēt, ka deputāts var ienīst lielākais divus citus deputātus. 
-Mūsu uzdevums ir sasēdināt tos ap galdu tā, lai blakus nesēdētu divi, kas ienīst viens otru.
-
-Pieṇemsim, ka ir kāds deputāts, kas ienīst divus citus deputātus. 
-Nosēdināsim šo deputātu vietā A (skat. 14. att.) un tos, ko vinš ienīst -- 
-vietās $C$ un $D$ (tālāk sauksim šos deputātus attiecīgi par $A, C$ un $D$). 
-Ievērosim, ka visi trīs šie deputāti neienīst nevienu no abiem pārējiem. 
-Patiešām, tā kā $A$ un $C$ ienīst viens otru un $A$ ienīst vēl arī $D$, 
-tad tie ( $A$ un $C$ ) nevar ienīst vairs nevienu citu. 
-Tādu pašu spriedumu var izveikt arī par $A$ un $D$.
-Tātad, abus atlikušos deputātus nosēdinot vietās $B$ un $E$, prasītais ir panākts.
-
-Atliek aplūkot gadījumu, kad katrs deputāts ienīst lielākais vienu citu 
-deputātu. Tad mums ir lielākais divi pāri deputātu, kas viens otru ienīst, 
-nosēdinot tos ne blakus (piemēram, vietās $A$-$C$ un $B$-$D$) prasītais būs panākts."""@lv ;
+  šo deputātu nosēdināsim vietā $D$. Redzams, ka ar šo prasītais ir panākts."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Pirmkārt pamatosim, ka no jebkuriem trīs deputātiem vismaz kādi divi 
 ir paspieduši viens otram roku. Pieṇemsim pretējo, ka kādi trīs 
@@ -1452,8 +1518,31 @@ Turpmāk šos divus deputātus sauksim par $A$ un $C$.</p>
   diviem deputātiem (citādi $E$ būtu izdarīis tikai vienu rokasspiedienu), 
   šo deputātu nosēdināsim vietā $D$. Redzams, ka ar šo prasītais ir panākts.</p>
 </li>
-</ul>"""@lv,
-        """<h2>Atrisinājums</h2>
+</ul>"""@lv .
+
+eliozo:SOLN.LV.AMO.2022B.10.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Uzskatīsim, ka, ja kādi deputāti nepaspieda viens otram roku, tad viņi 
+savstarpēji viens otru ienīst. No dotā izriet, ka, ja kādi divi deputāti 
+viens otru ienīst, tad abi kopā viṇi ienīst vēl lielākais vienu citu deputātu. 
+No šī viegli redzēt, ka deputāts var ienīst lielākais divus citus deputātus. 
+Mūsu uzdevums ir sasēdināt tos ap galdu tā, lai blakus nesēdētu divi, kas ienīst viens otru.
+
+Pieṇemsim, ka ir kāds deputāts, kas ienīst divus citus deputātus. 
+Nosēdināsim šo deputātu vietā A (skat. 14. att.) un tos, ko vinš ienīst -- 
+vietās $C$ un $D$ (tālāk sauksim šos deputātus attiecīgi par $A, C$ un $D$). 
+Ievērosim, ka visi trīs šie deputāti neienīst nevienu no abiem pārējiem. 
+Patiešām, tā kā $A$ un $C$ ienīst viens otru un $A$ ienīst vēl arī $D$, 
+tad tie ( $A$ un $C$ ) nevar ienīst vairs nevienu citu. 
+Tādu pašu spriedumu var izveikt arī par $A$ un $D$.
+Tātad, abus atlikušos deputātus nosēdinot vietās $B$ un $E$, prasītais ir panākts.
+
+Atliek aplūkot gadījumu, kad katrs deputāts ienīst lielākais vienu citu 
+deputātu. Tad mums ir lielākais divi pāri deputātu, kas viens otru ienīst, 
+nosēdinot tos ne blakus (piemēram, vietās $A$-$C$ un $B$-$D$) prasītais būs panākts."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Uzskatīsim, ka, ja kādi deputāti nepaspieda viens otram roku, tad viņi 
 savstarpēji viens otru ienīst. No dotā izriet, ka, ja kādi divi deputāti 
 viens otru ienīst, tad abi kopā viṇi ienīst vēl lielākais vienu citu deputātu. 
@@ -1471,7 +1560,7 @@ Tātad, abus atlikušos deputātus nosēdinot vietās $B$ un $E$, prasītais ir 
 deputātu. Tad mums ir lielākais divi pāri deputātu, kas viens otru ienīst, 
 nosēdinot tos ne blakus (piemēram, vietās $A$-$C$ un $B$-$D$) prasītais būs panākts.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.11.1 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.11.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums 
 
@@ -1557,7 +1646,7 @@ pieṇemt jebkuru no vērtībām $-2,-1,0,1,2$, taču nekādas citas.
 Tā kā $2022 \\equiv 6 \\equiv-3 \\pmod 9$ neparādās starp šīm vērtībām, 
 tad divu veselu skaitļu kubu summa nevar būt $2022$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.11.2 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.11.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums 
 
@@ -1575,7 +1664,7 @@ Izmantojot summas kvadrāta formulu, varam aprēķināt, ka</p>
 <p>$$x_{1}^{2}+x_{2}^{2}=\\left(x_{1}+x_{2}\\right)^{2}-2 x_{1} x_{2}=1-2 p=16$$</p>
 <p>Esam ieguvuši, ka $2p=-15$ jeb $p=-7,5$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.11.3 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.11.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1608,7 +1697,7 @@ $x=5.4$.</p>
 <p>Tātad $BC=1+x=6.4$.</p>
 <p><img alt="" src="LV.AMO.2022B.11.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.11.4 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.11.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1647,7 +1736,7 @@ pēc moduḷa $3$ un ar trešo trijnieku var izteikt visus skaițus,
 kuri ir kongruenti ar skaitli $2$ pēc moduḷa $3$.
 Var redzēt, ka iegūtais sadalījums katru reizi ir unikāls.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.11.5 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.11.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1743,7 +1832,7 @@ Aplūkojam trīs gadījumus.</p>
    Līdz ar to iegūta pretruna un šāds maršruts neeksistē.</p>
 <p>Tā kā mainīgos $m$ un $n$ uzdevumā kontekstā var mainīt vietām, tad ir aplūkoti visi iespējamie gadījumi.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.12.1 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.12.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1868,7 +1957,7 @@ Esam ieguvuši, ka trīs šādu skaițu summa pēc moduḷa 9 var pienemt jebkur
 </table>
 <p>Esam ieguvuši, ka trīs šādu skaițu summa pēc moduḷa 9 var pienemt jebkuru no vērtībām $-3 ;-2 ;-1 ; 0 ; 1 ; 2 ; 3$ un nekādas citas. Tā kā $2023^{2} \\equiv 7^{2} \\equiv 4 \\equiv-5 \\pmod 9$ neparādās starp šīm vērtībām, tad trīs veselu skaitḷu kubu summa nevar būt $2023^{2}$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.12.2 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.12.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1892,7 +1981,7 @@ Izmantojot summas kvadrāta formulu, varam aprēķināt, ka</p>
 <p>$$x_{1}^{3}+x_{2}^{3}=\\left(x_{1}+x_{2}\\right)\\left(x_{1}^{2}-x_{1} x_{2}+x_{2}^{2}\\right)=-1(1-2 p-p) = 3p-1 = -16.$$</p>
 <p>Tātad $3p=-15$ un $p=-5$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.12.3 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.12.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1974,11 +2063,8 @@ $A$ un $B$ sakrīt ar katetēm $AC$ un $BC$, tātad</p>
 <p>Tātad trijstūra laukums var būt $\\frac{\\sqrt{3}}{2}$ vai $\\sqrt{3}$.</p>
 <p><img alt="" src="LV.AMO.2022B.12.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.12.4 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1,
-        2,
-        3 ;
+eliozo:SOLN.LV.AMO.2022B.12.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
 Izdalām abas vienādojuma puses ar $5$:
@@ -1988,23 +2074,38 @@ $$\\frac{3}{5} \\sin x+\\frac{4}{5} \\cos x=\\frac{6}{5}.$$
 Izvēlēsimies tādu šauru leṇki $\\alpha$, ka $\\sin \\alpha=\\frac{4}{5}$. Tādā gadījumā 
 $\\cos \\alpha=\\sqrt{1-\\sin ^{2} \\alpha}=\\sqrt{1-\\left(\\frac{4}{5}\\right)^{2}}=\\frac{3}{5}$ un vienādojumu varam pārrakstīt kā
 
-$$\\begin{gathered}
-\\sin x \\cos \\alpha+\\cos x \\sin \\alpha=\\frac{6}{5} \\\\
-\\sin (x+\\alpha)=\\frac{6}{5}
-\\end{gathered}$$
+$$\\begin{aligned}
+& \\sin x \\cos \\alpha+\\cos x \\sin \\alpha=\\frac{6}{5} \\\\
+& \\sin (x+\\alpha)=\\frac{6}{5}
+\\end{aligned}$$
 
 Tā kā sinusa vērtības nepārsniedz 1, tad šim vienādojumam atrisinājumu nav. 
-Tātad arī dotajam vienādojumam atrisinājuma nav."""@lv,
-        """## Atrisinājums
+Tātad arī dotajam vienādojumam atrisinājuma nav."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Izdalām abas vienādojuma puses ar $5$:</p>
+<p>$$\\frac{3}{5} \\sin x+\\frac{4}{5} \\cos x=\\frac{6}{5}.$$</p>
+<p>Izvēlēsimies tādu šauru leṇki $\\alpha$, ka $\\sin \\alpha=\\frac{4}{5}$. Tādā gadījumā 
+$\\cos \\alpha=\\sqrt{1-\\sin ^{2} \\alpha}=\\sqrt{1-\\left(\\frac{4}{5}\\right)^{2}}=\\frac{3}{5}$ un vienādojumu varam pārrakstīt kā</p>
+<p>$$\\begin{aligned}
+&amp; \\sin x \\cos \\alpha+\\cos x \\sin \\alpha=\\frac{6}{5} \\
+&amp; \\sin (x+\\alpha)=\\frac{6}{5}
+\\end{aligned}$$</p>
+<p>Tā kā sinusa vērtības nepārsniedz 1, tad šim vienādojumam atrisinājumu nav. 
+Tātad arī dotajam vienādojumam atrisinājuma nav.</p>"""@lv .
+
+eliozo:SOLN.LV.AMO.2022B.12.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
 
 Izmantojot divkāršā leṇka formulas un $\\cos ^{2} \\frac{x}{2}+\\sin ^{2} \\frac{x}{2}=1$, 
 iegūstam, ka
 
-$$\\begin{gathered}
-3 \\cdot 2 \\sin \\frac{x}{2} \\cos \\frac{x}{2}+4\\left(\\cos ^{2} \\frac{x}{2}-\\sin ^{2} \\frac{x}{2}\\right)=6\\left(\\cos ^{2} \\frac{x}{2}+\\sin ^{2} \\frac{x}{2}\\right) \\\\
-6 \\sin \\frac{x}{2} \\cos \\frac{x}{2}+4 \\cos ^{2} \\frac{x}{2}-4 \\sin ^{2} \\frac{x}{2}=6 \\cos ^{2} \\frac{x}{2}+6 \\sin ^{2} \\frac{x}{2} \\\\
-2 \\cos ^{2} \\frac{x}{2}-6 \\sin \\frac{x}{2} \\cos \\frac{x}{2}+10 \\sin ^{2} \\frac{x}{2}=0
-\\end{gathered}$$
+$$\\begin{aligned}
+& 3 \\cdot 2 \\sin \\frac{x}{2} \\cos \\frac{x}{2}+4\\left(\\cos ^{2} \\frac{x}{2}-\\sin ^{2} \\frac{x}{2}\\right)=6\\left(\\cos ^{2} \\frac{x}{2}+\\sin ^{2} \\frac{x}{2}\\right) \\\\
+& 6 \\sin \\frac{x}{2} \\cos \\frac{x}{2}+4 \\cos ^{2} \\frac{x}{2}-4 \\sin ^{2} \\frac{x}{2}=6 \\cos ^{2} \\frac{x}{2}+6 \\sin ^{2} \\frac{x}{2} \\\\
+& 2 \\cos ^{2} \\frac{x}{2}-6 \\sin \\frac{x}{2} \\cos \\frac{x}{2}+10 \\sin ^{2} \\frac{x}{2}=0
+\\end{aligned}$$
+
 
 Abas vienādojuma puses dalot ar $2 \\sin ^{2} \\frac{x}{2} \\neq 0$, iegūstam, ka
 
@@ -2012,8 +2113,24 @@ $$\\operatorname{ctg}^{2} \\frac{x}{2}-3 \\operatorname{ctg} \\frac{x}{2}+5=0$$
 
 Apzīmējot $\\operatorname{ctg} \\frac{x}{2}=t$, iegūstam kvadrātvienādojumu 
 $t^{2}-3 t+5=0$, kura diskriminants $D=(-3)^{2}-4 \\cdot 1 \\cdot 5=-11<0$, 
-tātad kvadrātvienādojumam nav sakṇu, līdz ar to dotajam vienādojumam nav atrisinājuma."""@lv,
-        """## Atrisinājums
+tātad kvadrātvienādojumam nav sakṇu, līdz ar to dotajam vienādojumam nav atrisinājuma."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Izmantojot divkāršā leṇka formulas un $\\cos ^{2} \\frac{x}{2}+\\sin ^{2} \\frac{x}{2}=1$, 
+iegūstam, ka</p>
+<p>$$\\begin{aligned}
+&amp; 3 \\cdot 2 \\sin \\frac{x}{2} \\cos \\frac{x}{2}+4\\left(\\cos ^{2} \\frac{x}{2}-\\sin ^{2} \\frac{x}{2}\\right)=6\\left(\\cos ^{2} \\frac{x}{2}+\\sin ^{2} \\frac{x}{2}\\right) \\
+&amp; 6 \\sin \\frac{x}{2} \\cos \\frac{x}{2}+4 \\cos ^{2} \\frac{x}{2}-4 \\sin ^{2} \\frac{x}{2}=6 \\cos ^{2} \\frac{x}{2}+6 \\sin ^{2} \\frac{x}{2} \\
+&amp; 2 \\cos ^{2} \\frac{x}{2}-6 \\sin \\frac{x}{2} \\cos \\frac{x}{2}+10 \\sin ^{2} \\frac{x}{2}=0
+\\end{aligned}$$</p>
+<p>Abas vienādojuma puses dalot ar $2 \\sin ^{2} \\frac{x}{2} \\neq 0$, iegūstam, ka</p>
+<p>$$\\operatorname{ctg}^{2} \\frac{x}{2}-3 \\operatorname{ctg} \\frac{x}{2}+5=0$$</p>
+<p>Apzīmējot $\\operatorname{ctg} \\frac{x}{2}=t$, iegūstam kvadrātvienādojumu 
+$t^{2}-3 t+5=0$, kura diskriminants $D=(-3)^{2}-4 \\cdot 1 \\cdot 5=-11&lt;0$, 
+tātad kvadrātvienādojumam nav sakṇu, līdz ar to dotajam vienādojumam nav atrisinājuma.</p>"""@lv .
+
+eliozo:SOLN.LV.AMO.2022B.12.4.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
+    eliozo:solutionText """## Atrisinājums
 
 No abām vienādojuma pusēm atṇemot $4 \\cos x$, iegūstam, ka $3 \\sin x=6-4 \\cos x$.
 Kāpinot abas vienādojuma puses kvadrātā, iegūstam, ka
@@ -2030,11 +2147,27 @@ $$\\begin{gathered}
 
 Apzīmējot $\\cos x=t$, iegūstam kvadrātvienādojumu $25 t^{2}-48 t+27=0$, 
 kura diskriminants $D=(-48)^{2}-4 \\cdot 25 \\cdot 27=48 \\cdot 48-50 \\cdot 54<0$, 
-tātad kvadrātvienādojumam nav sakṇu, līdz ar to arī dotajam vienādojumam nav sakņu."""@lv,
-        """## Atrisinājums
+tātad kvadrātvienādojumam nav sakṇu, līdz ar to arī dotajam vienādojumam nav sakņu."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No abām vienādojuma pusēm atṇemot $4 \\cos x$, iegūstam, ka $3 \\sin x=6-4 \\cos x$.
+Kāpinot abas vienādojuma puses kvadrātā, iegūstam, ka</p>
+<p>$$9 \\sin ^{2} x=36-48 \\cos x+16 \\cos ^{2} x$$</p>
+<p>Izmantojot $\\sin ^{2} x=1-\\cos ^{2} x$, iegūstam, ka</p>
+<p>$$\\begin{gathered}
+9\\left(1-\\cos ^{2} x\\right)=36-48 \\cos x+16 \\cos ^{2} x \\
+9-9 \\cos ^{2} x=36-48 \\cos x+16 \\cos ^{2} x \\
+25 \\cos ^{2} x-48 \\cos x+27=0
+\\end{gathered}$$</p>
+<p>Apzīmējot $\\cos x=t$, iegūstam kvadrātvienādojumu $25 t^{2}-48 t+27=0$, 
+kura diskriminants $D=(-48)^{2}-4 \\cdot 25 \\cdot 27=48 \\cdot 48-50 \\cdot 54&lt;0$, 
+tātad kvadrātvienādojumam nav sakṇu, līdz ar to arī dotajam vienādojumam nav sakņu.</p>"""@lv .
+
+eliozo:SOLN.LV.AMO.2022B.12.4.SUB3 a eliozo:Solution ;
+    eliozo:solutionNum 3 ;
+    eliozo:solutionText """## Atrisinājums
 
 Pierādīsim, ka izpildās nevienādība $a \\sin x+b \\cos x \\leq \\sqrt{a^{2}+b^{2}}$. 
-Kāpināsim abas vienādojuma puses kvadrātā un izmantosim, ka 
+Kāpināsim abas nevienādības puses kvadrātā un izmantosim, ka 
 $\\sin ^{2} x+\\cos ^{2} x=1$. Iegūstam, ka
 
 $$\\begin{gathered}
@@ -2049,45 +2182,8 @@ tad sākotnējā nevienādība $a \\sin x+b \\cos x \\leq \\sqrt{a^{2}+b^{2}}$
 ir patiesa. No tā izriet, ka $3 \\sin x+4 \\cos x \\leq \\sqrt{3^{2}+4^{2}}=5$, 
 tātad dotajam vienādojumam nav sakṇu."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Izdalām abas vienādojuma puses ar $5$:</p>
-<p>$$\\frac{3}{5} \\sin x+\\frac{4}{5} \\cos x=\\frac{6}{5}.$$</p>
-<p>Izvēlēsimies tādu šauru leṇki $\\alpha$, ka $\\sin \\alpha=\\frac{4}{5}$. Tādā gadījumā 
-$\\cos \\alpha=\\sqrt{1-\\sin ^{2} \\alpha}=\\sqrt{1-\\left(\\frac{4}{5}\\right)^{2}}=\\frac{3}{5}$ un vienādojumu varam pārrakstīt kā</p>
-<p>$$\\begin{gathered}
-\\sin x \\cos \\alpha+\\cos x \\sin \\alpha=\\frac{6}{5} \\
-\\sin (x+\\alpha)=\\frac{6}{5}
-\\end{gathered}$$</p>
-<p>Tā kā sinusa vērtības nepārsniedz 1, tad šim vienādojumam atrisinājumu nav. 
-Tātad arī dotajam vienādojumam atrisinājuma nav.</p>"""@lv,
-        """<h2>Atrisinājums</h2>
-<p>Izmantojot divkāršā leṇka formulas un $\\cos ^{2} \\frac{x}{2}+\\sin ^{2} \\frac{x}{2}=1$, 
-iegūstam, ka</p>
-<p>$$\\begin{gathered}
-3 \\cdot 2 \\sin \\frac{x}{2} \\cos \\frac{x}{2}+4\\left(\\cos ^{2} \\frac{x}{2}-\\sin ^{2} \\frac{x}{2}\\right)=6\\left(\\cos ^{2} \\frac{x}{2}+\\sin ^{2} \\frac{x}{2}\\right) \\
-6 \\sin \\frac{x}{2} \\cos \\frac{x}{2}+4 \\cos ^{2} \\frac{x}{2}-4 \\sin ^{2} \\frac{x}{2}=6 \\cos ^{2} \\frac{x}{2}+6 \\sin ^{2} \\frac{x}{2} \\
-2 \\cos ^{2} \\frac{x}{2}-6 \\sin \\frac{x}{2} \\cos \\frac{x}{2}+10 \\sin ^{2} \\frac{x}{2}=0
-\\end{gathered}$$</p>
-<p>Abas vienādojuma puses dalot ar $2 \\sin ^{2} \\frac{x}{2} \\neq 0$, iegūstam, ka</p>
-<p>$$\\operatorname{ctg}^{2} \\frac{x}{2}-3 \\operatorname{ctg} \\frac{x}{2}+5=0$$</p>
-<p>Apzīmējot $\\operatorname{ctg} \\frac{x}{2}=t$, iegūstam kvadrātvienādojumu 
-$t^{2}-3 t+5=0$, kura diskriminants $D=(-3)^{2}-4 \\cdot 1 \\cdot 5=-11&lt;0$, 
-tātad kvadrātvienādojumam nav sakṇu, līdz ar to dotajam vienādojumam nav atrisinājuma.</p>"""@lv,
-        """<h2>Atrisinājums</h2>
-<p>No abām vienādojuma pusēm atṇemot $4 \\cos x$, iegūstam, ka $3 \\sin x=6-4 \\cos x$.
-Kāpinot abas vienādojuma puses kvadrātā, iegūstam, ka</p>
-<p>$$9 \\sin ^{2} x=36-48 \\cos x+16 \\cos ^{2} x$$</p>
-<p>Izmantojot $\\sin ^{2} x=1-\\cos ^{2} x$, iegūstam, ka</p>
-<p>$$\\begin{gathered}
-9\\left(1-\\cos ^{2} x\\right)=36-48 \\cos x+16 \\cos ^{2} x \\
-9-9 \\cos ^{2} x=36-48 \\cos x+16 \\cos ^{2} x \\
-25 \\cos ^{2} x-48 \\cos x+27=0
-\\end{gathered}$$</p>
-<p>Apzīmējot $\\cos x=t$, iegūstam kvadrātvienādojumu $25 t^{2}-48 t+27=0$, 
-kura diskriminants $D=(-48)^{2}-4 \\cdot 25 \\cdot 27=48 \\cdot 48-50 \\cdot 54&lt;0$, 
-tātad kvadrātvienādojumam nav sakṇu, līdz ar to arī dotajam vienādojumam nav sakņu.</p>"""@lv,
-        """<h2>Atrisinājums</h2>
 <p>Pierādīsim, ka izpildās nevienādība $a \\sin x+b \\cos x \\leq \\sqrt{a^{2}+b^{2}}$. 
-Kāpināsim abas vienādojuma puses kvadrātā un izmantosim, ka 
+Kāpināsim abas nevienādības puses kvadrātā un izmantosim, ka 
 $\\sin ^{2} x+\\cos ^{2} x=1$. Iegūstam, ka</p>
 <p>$$\\begin{gathered}
 (a \\sin x+b \\cos x)^{2} \\leq\\left(a^{2}+b^{2}\\right)\\left(\\sin ^{2} x+\\cos ^{2} x\\right) \\
@@ -2100,7 +2196,7 @@ tad sākotnējā nevienādība $a \\sin x+b \\cos x \\leq \\sqrt{a^{2}+b^{2}}$
 ir patiesa. No tā izriet, ka $3 \\sin x+4 \\cos x \\leq \\sqrt{3^{2}+4^{2}}=5$, 
 tātad dotajam vienādojumam nav sakṇu.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.12.5 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.12.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums 
 
@@ -2149,7 +2245,7 @@ kad llmārs aizpildīs kādu kolonnu, tad nākamajā gājienā Kims
 aizpildīs simetrisko kolonnu. Līdz ar to Ilmārs aizpildīs tieši 
 $1011$ kolonnas, kas viṇam dod ne vairāk kā $1011$ punktus. Tātad Kims uzvarēs.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.5.1 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.5.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2169,7 +2265,7 @@ Lai uzdevumā aprakstītais skaitlis dalītos ar 5,
 tā pēdējam ciparam jābūt $0$. Līdz ar to meklētajam skaitlim ir vismaz $4$ 
 cipari un šis skaitlis ir $2220$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.5.2 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.5.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2182,7 +2278,7 @@ $20$ un arī laukums ir $20$.
 $20$ un arī laukums ir $20$.</p>
 <p><img alt="" src="LV.AMO.2022B.5.2A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.5.3 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.5.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2198,7 +2294,7 @@ Tātad pārdoto bilešu skaitam jādalās ar $3 \\cdot 5 \\cdot 7=105$.
 Tā kā vismaz puse no biletēm tika pārdotas, tad tika pārdotas 
 $105 \\cdot 2=210$ biletes.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.5.4 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.5.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2226,7 +2322,7 @@ katru kvadrātu ar divām bultiņām, iegūstam, ka piecstūra un četru bultiņ
 masa ir tikpat, cik desmit bultiņu masa. Tātad piecstūra masa ir 
 tikpat, cik sešu bultiņu masa.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.5.5 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.5.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2250,7 +2346,7 @@ noteikti ir aplams un Gunai patīk oranžā krāsa.</p>
 būtu patiesi, kas nav iespējams. Tā kā Gunai patīk oranžā krāsa, 
 tad secinām, ka Elīnai patīk zalā krāsa. Tātad Marutai patīk dzeltenā krāsa.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.6.1 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.6.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2295,7 +2391,7 @@ $15$, $21$ un $35$, tātad tie tiek ieskaitīti trīs reizes.
 Secinām, ka kopā ir $134+96+57-38 = 249$ skaitļi, kas dalās ar 
 vismaz diviem skaitlliem, tātad tie ir apvilkti ar vismaz divu krāsu zīmuḷiem.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.6.2 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.6.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2306,7 +2402,7 @@ Skat., piemēram, 4. att.
 <p>Skat., piemēram, 4. att.</p>
 <p><img alt="" src="LV.AMO.2022B.6.2A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.6.3 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.6.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2471,7 +2567,7 @@ pēdējie cipari ir tādi paši kā pirmajā, tad tālāk vērtības tabulā sā
 periodiski atkārtoties. Cipars $9$ nav tabulas otrajā kolonnā, 
 tāpēc tas nevar būt summas pēdējais cipars.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.6.4 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.6.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2499,7 +2595,7 @@ aplīšiem un katru bultiņu ar diviem aplīšiem, iegūstam, ka
 četrstūra un piecu aplīšu masa ir tikpat, cik desmit aplīšu masa. 
 Tātad četrstūra masa ir tikpat, cik piecu aplīšu masa.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.6.5 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.6.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2533,7 +2629,7 @@ Tā kā mums ir $378$ atbildes "jā", tad mums "liekas" ir
 $378-273=105$ atbildes "jā". Tātad par meḷiem mums 
 jāpārvērš $105:5=21$ ciema iedzīvotājs.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.7.1 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.7.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2580,7 +2676,7 @@ $A=2$ un $B=5$;
 $A=5$ un $B=5$;
 $A=8$ un $B=5$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.7.2 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.7.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums 
 
@@ -2598,7 +2694,7 @@ $1 \\cdot 1 \\cdot 2 \\cdot 2 \\cdot 2=8$</p>
 ($13$ vieninieki, $2$ un $15$), jo $13 \\cdot 1+2+15=30$ un $1 \\cdot 2 \\cdot 15=30$.</p>
 <p>Piezīme. <strong>(A)</strong> gadījumā der arī $1, 1, 1, 3, 3$ vai $1,1,1,2,5$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.7.3 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.7.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2609,7 +2705,7 @@ Skat., piemēram, 5. att.
 <p>Skat., piemēram, 5. att.</p>
 <p><img alt="" src="LV.AMO.2022B.7.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.7.4 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.7.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums 
 
@@ -2636,7 +2732,7 @@ tas klūs vienāds ar $0$, tātad Brālītis uzvarēs.</p>
 <p><em>Piezīme.</em> <strong>(A)</strong> gadījumā Brālītis uzvarēs jau pēc otrā gājiena, 
 bet <strong>(B)</strong> gadījumā Brālítis uzvarēs pēc $2022: 3=674$. gājiena.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.7.5 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.7.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2668,7 +2764,7 @@ tādā gadījumā mums kopā būtu tieši $272$ atbildes "jā". Tā kā mums
 ir $392$ atbildes "jā", tad mums "liekas" ir $392-272=120$ 
 atbildes "jā". Tātad par meḷiem mums jāpārvērš $120:5=24$ ciema iedzīvotāji.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.8.1 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.8.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2713,7 +2809,7 @@ būt ierakstīts $M$ vietā, lai skaitlis dalītos ar $4$.</p>
 ierakstīt $M$ un $N$ vietā: $(N,M)=(1,2)$; $(N,M)=(4,2)$; 
 $(N,M)=(7,2)$; $(N,M)=(3,6)$; $(N,M)=(6,6)$; $(N,M)=(9,6)$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.8.2 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.8.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums 
 
@@ -2794,7 +2890,7 @@ nepareizi atrisināja $7$ uzdevumus, bet $7$ uzdevumus nerisināja.</p>
 </tbody>
 </table>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.8.3 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.8.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2846,7 +2942,7 @@ No trijstūra $ACD$ iegūstam, ka</p>
 \\end{aligned}$$</p>
 <p><img alt="" src="LV.AMO.2022B.8.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.8.4 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.8.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums 
 
@@ -2878,7 +2974,7 @@ uzrakstīt tā, lai katri divi blakus esoši skaitḷi atškirtos par $3$; $4$ v
 ierakstīts, par cik atškiras skaitļi.</p>
 <p><img alt="" src="LV.AMO.2022B.8.4A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.8.5 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.8.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums 
 
@@ -2905,7 +3001,7 @@ Tātad tikai viens no draugiem saka taisnību."""@lv ;
 No tā izriet, ka gan Guna, gan Maruta, gan Emīls melo. 
 Tātad tikai viens no draugiem saka taisnību.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.9.1 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.9.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums 
 
@@ -2940,7 +3036,7 @@ tad iespējami divi gadījumi: $A+B=9$ vai $A+B=18$.</p>
 <p>$$A+B=1+8=2+7=3+6=4+5=5+4=6+3=7+2=8+1=9+0$$</p>
 <p>Ja $A+B=18$, tad iespējams tikai viens gadijums $A+B=9+9$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.9.2 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.9.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -2976,7 +3072,7 @@ ar pozitīvu izteiksmi $x y$, iegūstam ekvivalentu nevienādību</p>
 <p>$$0 &lt; (xy-9)(x-y)=x^{2}y - xy^{2} -9x + 9y$$</p>
 <p>Līdz ar to esam ieguvuši vajadzīgo.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.9.3 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.9.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -3021,7 +3117,7 @@ $\\sphericalangle OKC=\\sphericalangle KCO = \\beta$, un tā sānu malas ir vien
 dala nogriezni $BK$ divās vienādās daḷās</p>
 <p><img alt="" src="LV.AMO.2022B.9.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.9.4 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.9.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums 
 
@@ -3067,7 +3163,7 @@ nevar uzrakstīt tā, lai katri divi blakus esoši skaitḷi atšķirtos par $3$
 <p><strong>(B)</strong> Jā, var, piemēram, skat. 11. att., kur rinķa iekšpusē ierakstīts, 
 par cik atšķiras skaitļi.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2022B.9.5 a eliozo:Solution ;
+eliozo:SOLN.LV.AMO.2022B.9.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 **(A)** Jā, var, skat., piemēram, 12. att.

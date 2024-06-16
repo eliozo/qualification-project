@@ -9,9 +9,10 @@ eliozo:IMO_SHL.2022.A1 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.A1" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A1 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A1.SUB0 ;
     eliozo:problemText """Let $(a_n)_{n\\geq 1}$ be a sequence of positive real numbers with the property that
 
 $$(a_{n+1})^2 + a_na_{n+2} \\leq a_n + a_{n+2}$$
@@ -24,7 +25,10 @@ for all positive integers $n$. Show that $a_{2022}\\leq 1$."""@lv ;
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove" ;
     eliozo:source "Nigeria" ;
-    eliozo:suffix "IMO_SHL.2022.A" .
+    eliozo:suffix "IMO_SHL.2022.A" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.A2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers ;
@@ -32,9 +36,10 @@ eliozo:IMO_SHL.2022.A2 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.A2" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A2 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A2.SUB0 ;
     eliozo:problemText """Let $k \\ge 2$ be an integer. Find the smallest integer $n \\ge k+1$ with the property that there 
 exists a set of $n$ distinct real numbers such that each of its elements can be written as a 
 sum of $k$ other distinct elements of the set."""@lv ;
@@ -45,7 +50,10 @@ sum of $k$ other distinct elements of the set.</p>"""@lv ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:source "Slovakia" ;
-    eliozo:suffix "IMO_SHL.2022.A" .
+    eliozo:suffix "IMO_SHL.2022.A" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.A3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-function,
@@ -54,9 +62,13 @@ eliozo:IMO_SHL.2022.A3 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.A3" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A3 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A3.SUB0,
+        eliozo:SOLN.IMO_SHL.2022.A3.SUB1,
+        eliozo:SOLN.IMO_SHL.2022.A3.SUB2,
+        eliozo:SOLN.IMO_SHL.2022.A3.SUB3 ;
     eliozo:problemText """Let $\\mathbb{R}^+$ denote the set of positive real numbers. Find all functions 
 $f: \\mathbb{R}^+ \\to \\mathbb{R}^+$ such that for each $x \\in \\mathbb{R}^+$, there is exactly one 
 $y \\in \\mathbb{R}^+$ satisfying $$xf(y)+yf(x) \\leq 2$$"""@lv ;
@@ -67,7 +79,10 @@ $y \\in \\mathbb{R}^+$ satisfying $$xf(y)+yf(x) \\leq 2$$</p>"""@lv ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
     eliozo:source "Netherlands" ;
-    eliozo:suffix "IMO_SHL.2022.A" .
+    eliozo:suffix "IMO_SHL.2022.A" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.A4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers,
@@ -76,9 +91,10 @@ eliozo:IMO_SHL.2022.A4 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.A4" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A4 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A4.SUB0 ;
     eliozo:problemText """Let $n \\geqslant 3$ be an integer, and let $x_1,x_2,\\ldots,x_n$ be real numbers in the interval 
 $[0,1]$. Let $s=x_1+x_2+\\ldots+x_n$, and assume that $s \\geqslant 3$. 
 Prove that there exist integers $i$ and $j$ with $1 \\leqslant i<j \\leqslant n$ such that
@@ -92,7 +108,10 @@ Prove that there exist integers $i$ and $j$ with $1 \\leqslant i&lt;j \\leqslant
     eliozo:problem_number 4 ;
     eliozo:questionType "Prove" ;
     eliozo:source "Trinidad and Tobago" ;
-    eliozo:suffix "IMO_SHL.2022.A" .
+    eliozo:suffix "IMO_SHL.2022.A" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.A5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers,
@@ -101,9 +120,10 @@ eliozo:IMO_SHL.2022.A5 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.A5" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A5 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A5.SUB0 ;
     eliozo:problemText """Find all positive integers $n \\geqslant 2$ for which there exist $n$ real numbers 
 $a_1<\\cdots<a_n$ and a real number $r>0$ such that the $\\tfrac{1}{2}n(n-1)$ differences 
 $a_j-a_i$ for $1 \\leqslant i<j \\leqslant n$ are equal, in some order, to the numbers 
@@ -116,7 +136,10 @@ $r^1,r^2,\\ldots,r^{\\frac{1}{2}n(n-1)}$.</p>"""@lv ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindAll" ;
     eliozo:source "Czech Republic" ;
-    eliozo:suffix "IMO_SHL.2022.A" .
+    eliozo:suffix "IMO_SHL.2022.A" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.A6 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-function,
@@ -126,9 +149,10 @@ eliozo:IMO_SHL.2022.A6 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.A6" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A6 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A6.SUB0 ;
     eliozo:problemText """Let $\\mathbb R$ be the set of real numbers. We denote by 
 $\\mathcal F$ the set of all functions $f\\colon\\mathbb R\\to\\mathbb R$ such that
 
@@ -145,7 +169,10 @@ for every function $f\\in\\mathcal F$, there exists some $z\\in\\mathbb R$ satis
     eliozo:problem_number 6 ;
     eliozo:questionType "FindAll" ;
     eliozo:source "Indonesia" ;
-    eliozo:suffix "IMO_SHL.2022.A" .
+    eliozo:suffix "IMO_SHL.2022.A" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.A7 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers ;
@@ -153,9 +180,10 @@ eliozo:IMO_SHL.2022.A7 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.A7" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A7 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A7.SUB0 ;
     eliozo:problemText """For a positive integer $n$ we denote by $s(n)$ the sum of the digits of $n$. 
 Let $P(x)=x^n+a_{n-1}x^{n-1}+\\cdots+a_1x+a_0$ be a polynomial, where $n \\geqslant 2$ 
 and $a_i$ is a positive integer for all $0 \\leqslant i \\leqslant n-1$. 
@@ -170,7 +198,10 @@ and $s(P(k))$ have the same parity?</p>"""@lv ;
     eliozo:problem_number 7 ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:source "Belarus" ;
-    eliozo:suffix "IMO_SHL.2022.A" .
+    eliozo:suffix "IMO_SHL.2022.A" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.A8 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers,
@@ -180,9 +211,10 @@ eliozo:IMO_SHL.2022.A8 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.A8" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A8 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.A8.SUB0 ;
     eliozo:problemText """For a positive integer $n$, an $n$-sequence is a sequence $(a_0,\\ldots,a_n)$ 
 of non-negative integers satisfying the following condition: if $i$ and $j$ 
 are non-negative integers with $i+j \\leqslant n$, then $a_i+a_j \\leqslant n$ and $a_{a_i+a_j}=a_{i+j}$.
@@ -198,16 +230,20 @@ $c_1$, $c_2$, and $\\lambda$ such that [c_1\\lambda^n&lt;f(n)&lt;c_2\\lambda^n]f
     eliozo:problem_number 8 ;
     eliozo:questionType "Prove" ;
     eliozo:source "Canada" ;
-    eliozo:suffix "IMO_SHL.2022.A" .
+    eliozo:suffix "IMO_SHL.2022.A" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.C1 a eliozo:Problem ;
     eliozo:country "" ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.C1" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C1 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C1.SUB0 ;
     eliozo:problemText """A $\\pm 1$-sequence is a sequence of $2022$ numbers $a_1, \\ldots, a_{2022},$ 
 each equal to either $+1$ or $-1$. Determine the largest $C$ so that, 
 for any $\\pm 1$-sequence, there exists an integer $k$ and indices 
@@ -222,7 +258,10 @@ and $$\\left| \\sum_{i = 1}^{k} a_{t_i} \\right| \\ge C.$$</p>"""@lv ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:source "Czech Republic" ;
-    eliozo:suffix "IMO_SHL.2022.C" .
+    eliozo:suffix "IMO_SHL.2022.C" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.C2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers ;
@@ -230,9 +269,10 @@ eliozo:IMO_SHL.2022.C2 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.C2" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C2 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C2.SUB0 ;
     eliozo:problemText """The Bank of Oslo issues two types of coin: aluminum (denoted A) and bronze (denoted B). 
 Marianne has $n$ aluminum coins and $n$ bronze coins arranged in a row 
 in some arbitrary initial order. A chain is any subsequence of consecutive 
@@ -260,7 +300,10 @@ at some moment during the process, the leftmost $n$ coins will all be of the sam
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
     eliozo:source "France" ;
-    eliozo:suffix "IMO_SHL.2022.C" .
+    eliozo:suffix "IMO_SHL.2022.C" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.C3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-game,
@@ -269,10 +312,11 @@ eliozo:IMO_SHL.2022.C3 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.C3" ;
     eliozo:problemImage eliozo:IMG.IMO_SHL.2022.C3A.png ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C3 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C3.SUB0 ;
     eliozo:problemText """In each square of a garden shaped like a $2022 \\times 2022$ board, 
 there is initially a tree of height $0$. A gardener and a 
 lumberjack alternate turns playing the following game, 
@@ -303,7 +347,10 @@ no matter how the lumberjack plays.</p>"""@lv ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:source "Colombia" ;
-    eliozo:suffix "IMO_SHL.2022.C" .
+    eliozo:suffix "IMO_SHL.2022.C" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.C4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers ;
@@ -311,9 +358,11 @@ eliozo:IMO_SHL.2022.C4 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.C4" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C4 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C4.SUB0,
+        eliozo:SOLN.IMO_SHL.2022.C4.SUB1 ;
     eliozo:problemText """Let $n > 3$ be a positive integer. Suppose that $n$ children are arranged 
 in a circle, and $n$ coins are distributed between them (some children 
 may have no coins). At every step, a child with at 
@@ -332,7 +381,10 @@ each child has exactly one coin.</p>"""@lv ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
     eliozo:source "Israel" ;
-    eliozo:suffix "IMO_SHL.2022.C" .
+    eliozo:suffix "IMO_SHL.2022.C" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.C5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-function,
@@ -342,9 +394,10 @@ eliozo:IMO_SHL.2022.C5 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.C5" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C5 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C5.SUB0 ;
     eliozo:problemText """Let $m,n \\geqslant 2$ be integers, let $X$ be a set with $n$ elements, and let 
 $X_1,X_2,\\ldots,X_m$ be pairwise distinct non-empty, not necessary disjoint subset of $X$. 
 A function $f \\colon X \\to \\{1,2,\\ldots,n+1\\}$ is called nice if there exists an index $k$ such that 
@@ -361,7 +414,10 @@ A function $f \\colon X \\to {1,2,\\ldots,n+1}$ is called nice if there exists a
     eliozo:problem_number 5 ;
     eliozo:questionType "Prove" ;
     eliozo:source "Germany" ;
-    eliozo:suffix "IMO_SHL.2022.C" .
+    eliozo:suffix "IMO_SHL.2022.C" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.C6 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers,
@@ -370,9 +426,12 @@ eliozo:IMO_SHL.2022.C6 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.C6" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C6 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C6.SUB0,
+        eliozo:SOLN.IMO_SHL.2022.C6.SUB1,
+        eliozo:SOLN.IMO_SHL.2022.C6.SUB2 ;
     eliozo:problemText """Let $n$ be a positive integer. We start with $n$ piles of pebbles, each initially 
 containing a single pebble. One can perform moves of the following form: choose two piles, 
 take an equal number of pebbles from each pile and form a new pile out of these pebbles. 
@@ -387,7 +446,10 @@ performing a finite sequence of moves of this form.</p>"""@lv ;
     eliozo:problem_number 6 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:source "Croatia" ;
-    eliozo:suffix "IMO_SHL.2022.C" .
+    eliozo:suffix "IMO_SHL.2022.C" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.C7 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers ;
@@ -395,9 +457,10 @@ eliozo:IMO_SHL.2022.C7 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.C7" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C7 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C7.SUB0 ;
     eliozo:problemText """Lucy starts by writing $s$ integer-valued $2022$-tuples on a blackboard. 
 After doing that, she can take any two (not necessarily distinct) tuples 
 $\\mathbf{v}=(v_1,\\ldots,v_{2022})$ and $\\mathbf{w}=(w_1,\\ldots,w_{2022})$ 
@@ -431,7 +494,10 @@ What is the smallest possible number $s$ of tuples that she initially wrote?</p>
     eliozo:problem_number 7 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:source "Czech Republic" ;
-    eliozo:suffix "IMO_SHL.2022.C" .
+    eliozo:suffix "IMO_SHL.2022.C" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.C8 a eliozo:Problem ;
     eliozo:Author "Nikola Petrović" ;
@@ -442,10 +508,12 @@ eliozo:IMO_SHL.2022.C8 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.C8" ;
     eliozo:problemImage eliozo:IMG.IMO_SHL.2022.C8A.png ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C8 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C8.SUB0,
+        eliozo:SOLN.IMO_SHL.2022.C8.SUB1 ;
     eliozo:problemText """Let $n$ be a positive integer. A Nordic square is an $n \\times n$ board containing 
 all the integers from $1$ to $n^2$ so that each cell contains exactly one number. 
 Two different cells are considered adjacent if they share a common side. 
@@ -470,7 +538,10 @@ An uphill path is a sequence of one or more cells such that:</p>
     eliozo:problem_number 8 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:source "Serbia" ;
-    eliozo:suffix "IMO_SHL.2022.C" .
+    eliozo:suffix "IMO_SHL.2022.C" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.C9 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers,
@@ -479,11 +550,12 @@ eliozo:IMO_SHL.2022.C9 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.C9" ;
     eliozo:problemImage eliozo:IMG.IMO_SHL.2022.C9A.png,
         eliozo:IMG.IMO_SHL.2022.C9B.png ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C9 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.C9.SUB0 ;
     eliozo:problemText """Let $\\mathbb Z_{\\ge 0}$ be the set of non-negative integers, and let 
 $f:\\mathbb Z_{\\ge 0}\\times \\mathbb Z_{\\ge 0} \\to \\mathbb Z_{\\ge 0}$ be a 
 bijection such that whenever $f(x_1,y_1) > f(x_2, y_2)$, we have 
@@ -502,7 +574,10 @@ such that $f(x,y)$ is odd. Find the smallest and largest possible values of $N$.
     eliozo:problem_number 9 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:source "U.S.A." ;
-    eliozo:suffix "IMO_SHL.2022.C" .
+    eliozo:suffix "IMO_SHL.2022.C" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.G1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-angle,
@@ -512,10 +587,12 @@ eliozo:IMO_SHL.2022.G1 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.G1" ;
     eliozo:problemImage eliozo:IMG.IMO_SHL.2022.G1A.png ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G1 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G1.SUB0,
+        eliozo:SOLN.IMO_SHL.2022.G1.SUB1 ;
     eliozo:problemText """Let $ABCDE$ be a convex pentagon such that $BC=DE$. Assume that there is a point $T$ inside 
 $ABCDE$ with $TB=TD,TC=TE$ and $\\angle ABT = \\angle TEA$. 
 Let line $AB$ intersect lines $CD$ and $CT$ at points $P$ and $Q$, respectively. 
@@ -534,7 +611,10 @@ Prove that the points $P,S,Q,R$ lie on a circle.</p>"""@lv ;
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove" ;
     eliozo:source "Slovakia" ;
-    eliozo:suffix "IMO_SHL.2022.G" .
+    eliozo:suffix "IMO_SHL.2022.G" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.G2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-altitude,
@@ -547,10 +627,12 @@ eliozo:IMO_SHL.2022.G2 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.G2" ;
     eliozo:problemImage eliozo:IMG.IMO_SHL.2022.G2A.png ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G2 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G2.SUB0,
+        eliozo:SOLN.IMO_SHL.2022.G2.SUB1 ;
     eliozo:problemText """In the acute-angled triangle $ABC$, the point $F$ is the foot of the altitude 
 from $A$, and $P$ is a point on the segment $AF$. The lines through $P$ parallel 
 to $AC$ and $AB$ meet $BC$ at $D$ and $E$, respectively. 
@@ -568,7 +650,10 @@ respectively, such that $DA = DX$ and $EA = EY$.</p>
     eliozo:problem_number 2 ;
     eliozo:questionType "Prove" ;
     eliozo:source "Netherlands" ;
-    eliozo:suffix "IMO_SHL.2022.G" .
+    eliozo:suffix "IMO_SHL.2022.G" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.G3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-circle,
@@ -579,11 +664,13 @@ eliozo:IMO_SHL.2022.G3 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.G3" ;
     eliozo:problemImage eliozo:IMG.IMO_SHL.2022.G3A.png,
         eliozo:IMG.IMO_SHL.2022.G3B.png ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G3 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G3.SUB0,
+        eliozo:SOLN.IMO_SHL.2022.G3.SUB1 ;
     eliozo:problemText """Let $ABCD$ be a cyclic quadrilateral. Assume that the points 
 $Q, A, B, P$ are collinear in this order, in such a way that the 
 line $AC$ is tangent to the circle $ADQ$, and the line $BD$ is 
@@ -602,7 +689,10 @@ and the tangent to circle $BMP$ at point $B$.</p>"""@lv ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
     eliozo:source "Slovakia" ;
-    eliozo:suffix "IMO_SHL.2022.G" .
+    eliozo:suffix "IMO_SHL.2022.G" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.G4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-circle,
@@ -614,11 +704,13 @@ eliozo:IMO_SHL.2022.G4 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.G4" ;
     eliozo:problemImage eliozo:IMG.IMO_SHL.2022.G4A.png,
         eliozo:IMG.IMO_SHL.2022.G4B.png ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G4 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G4.SUB0,
+        eliozo:SOLN.IMO_SHL.2022.G4.SUB1 ;
     eliozo:problemText """Let $ABC$ be an acute-angled triangle with $AC > AB$, let $O$ be its circumcentre, 
 and let $D$ be a point on the segment $BC$. The line through $D$ perpendicular 
 to $BC$ intersects the lines $AO, AC,$ and $AB$ at $W, X,$ and $Y,$ respectively. 
@@ -634,7 +726,10 @@ The circumcircles of triangles $AXY$ and $ABC$ intersect again at $Z \\ne A$.</p
     eliozo:problem_number 4 ;
     eliozo:questionType "Prove" ;
     eliozo:source "United Kingdom" ;
-    eliozo:suffix "IMO_SHL.2022.G" .
+    eliozo:suffix "IMO_SHL.2022.G" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.G5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-line,
@@ -643,12 +738,14 @@ eliozo:IMO_SHL.2022.G5 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.G5" ;
     eliozo:problemImage eliozo:IMG.IMO_SHL.2022.G5A.png,
         eliozo:IMG.IMO_SHL.2022.G5B.png,
         eliozo:IMG.IMO_SHL.2022.G5C.png ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G5 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G5.SUB0,
+        eliozo:SOLN.IMO_SHL.2022.G5.SUB1 ;
     eliozo:problemText """Let $ABC$ be a triangle and $\\ell_1,\\ell_2$ be two parallel lines. 
 Let $\\ell_i$ intersects line $BC,CA,AB$ at $X_i,Y_i,Z_i$, respectively. 
 Let $\\Delta_i$ be the triangle formed by the line passed through $X_i$ and 
@@ -665,7 +762,10 @@ Prove that the circumcircles of $\\Delta_1$ and $\\Delta_2$ are tangent.</p>"""@
     eliozo:problem_number 5 ;
     eliozo:questionType "Prove" ;
     eliozo:source "Vietnam" ;
-    eliozo:suffix "IMO_SHL.2022.G" .
+    eliozo:suffix "IMO_SHL.2022.G" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.G6 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-altitude,
@@ -676,11 +776,12 @@ eliozo:IMO_SHL.2022.G6 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.G6" ;
     eliozo:problemImage eliozo:IMG.IMO_SHL.2022.G6A.png,
         eliozo:IMG.IMO_SHL.2022.G6B.png ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G6 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G6.SUB0 ;
     eliozo:problemText """Let $ABC$ be an acute triangle with altitude $\\overline{AH}$, and let $P$ be 
 a variable point such that the angle bisectors $k$ and $\\ell$ of $\\angle PBC$ 
 and $\\angle PCB$, respectively, meet on $\\overline{AH}$. Let $k$ meet 
@@ -697,7 +798,10 @@ line $PQ$ passes through a fixed point.</p>"""@lv ;
     eliozo:problem_number 6 ;
     eliozo:questionType "Prove" ;
     eliozo:source "Iran" ;
-    eliozo:suffix "IMO_SHL.2022.G" .
+    eliozo:suffix "IMO_SHL.2022.G" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.G7 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-triangle ;
@@ -705,11 +809,12 @@ eliozo:IMO_SHL.2022.G7 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.G7" ;
     eliozo:problemImage eliozo:IMG.IMO_SHL.2022.G7A.png,
         eliozo:IMG.IMO_SHL.2022.G7B.png ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G7 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G7.SUB0 ;
     eliozo:problemText """Two triangles $ABC$, $A’B’C’$ have the same orthocenter $H$ and the same 
 circumcircle with center $O$. Letting $PQR$ be the triangle formed by 
 $AA’, BB’, CC’$, prove that the circumcenter of $PQR$ lies on $OH$."""@lv ;
@@ -720,7 +825,10 @@ $AA’, BB’, CC’$, prove that the circumcenter of $PQR$ lies on $OH$.</p>"""
     eliozo:problem_number 7 ;
     eliozo:questionType "Prove" ;
     eliozo:source "Denmark" ;
-    eliozo:suffix "IMO_SHL.2022.G" .
+    eliozo:suffix "IMO_SHL.2022.G" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.G8 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-hexagon,
@@ -732,12 +840,13 @@ eliozo:IMO_SHL.2022.G8 a eliozo:Problem ;
     eliozo:domain "Geom" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.G8" ;
     eliozo:problemImage eliozo:IMG.IMO_SHL.2022.G8A.png,
         eliozo:IMG.IMO_SHL.2022.G8B.png,
         eliozo:IMG.IMO_SHL.2022.G8C.png ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G8 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.G8.SUB0 ;
     eliozo:problemText """Let $AA'BCC'B'$ be a convex cyclic hexagon such that $AC$ is tangent 
 to the incircle of the triangle $A'B'C'$, and $A'C'$ is tangent to the 
 incircle of the triangle $ABC$. Let the lines $AB$ and $A'B'$ meet at 
@@ -753,7 +862,10 @@ $X$ and let the lines $BC$ and $B'C'$ meet at $Y$.</p>
     eliozo:problem_number 8 ;
     eliozo:questionType "Prove" ;
     eliozo:source "Australia" ;
-    eliozo:suffix "IMO_SHL.2022.G" .
+    eliozo:suffix "IMO_SHL.2022.G" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.N1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisors,
@@ -762,9 +874,10 @@ eliozo:IMO_SHL.2022.N1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.N1" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N1 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N1.SUB0 ;
     eliozo:problemText """A number is called Norwegian if it has three distinct positive divisors 
 whose sum is equal to $2022$. Determine the smallest Norwegian number.  
 (*Note:* The total number of positive divisors of a Norwegian number 
@@ -777,7 +890,10 @@ is allowed to be larger than $3$.)</p>"""@lv ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:source "Cyprus" ;
-    eliozo:suffix "IMO_SHL.2022.N" .
+    eliozo:suffix "IMO_SHL.2022.N" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.N2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers ;
@@ -785,9 +901,10 @@ eliozo:IMO_SHL.2022.N2 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.N2" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N2 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N2.SUB0 ;
     eliozo:problemText """Find all positive integers $n>2$ such that
 
 $$n! \\mid \\prod_{ p<q\\le n, p,q \\, \\text{primes}} (p+q)$$"""@lv ;
@@ -797,7 +914,10 @@ $$n! \\mid \\prod_{ p<q\\le n, p,q \\, \\text{primes}} (p+q)$$"""@lv ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
     eliozo:source "Nigeria" ;
-    eliozo:suffix "IMO_SHL.2022.N" .
+    eliozo:suffix "IMO_SHL.2022.N" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.N3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-coprimes,
@@ -807,9 +927,12 @@ eliozo:IMO_SHL.2022.N3 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.N3" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N3 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N3.SUB0,
+        eliozo:SOLN.IMO_SHL.2022.N3.SUB1,
+        eliozo:SOLN.IMO_SHL.2022.N3.SUB2 ;
     eliozo:problemText """Let $a > 1$ be a positive integer and $d > 1$ be a positive integer 
 coprime to $a$. Let $x_1=1$, and for $k\\geq 1$, define
 
@@ -832,7 +955,10 @@ for which there exists an index $k$ such that $x_k$ is divisible by $a^n$.</p>""
     eliozo:problem_number 3 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:source "Croatia" ;
-    eliozo:suffix "IMO_SHL.2022.N" .
+    eliozo:suffix "IMO_SHL.2022.N" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.N4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers ;
@@ -840,9 +966,13 @@ eliozo:IMO_SHL.2022.N4 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.N4" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N4 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N4.SUB0,
+        eliozo:SOLN.IMO_SHL.2022.N4.SUB1,
+        eliozo:SOLN.IMO_SHL.2022.N4.SUB2,
+        eliozo:SOLN.IMO_SHL.2022.N4.SUB3 ;
     eliozo:problemText """Find all triples $(a,b,p)$ of positive integers with 
 $p$ prime and \\[ a^p=b!+p. \\]"""@lv ;
     eliozo:problemTextHtml """<p>Find all triples $(a,b,p)$ of positive integers with 
@@ -851,7 +981,10 @@ $p$ prime and [ a^p=b!+p. ]</p>"""@lv ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
     eliozo:source "Belgium" ;
-    eliozo:suffix "IMO_SHL.2022.N" .
+    eliozo:suffix "IMO_SHL.2022.N" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.N5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-digit ;
@@ -859,9 +992,10 @@ eliozo:IMO_SHL.2022.N5 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.N5" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N5 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N5.SUB0 ;
     eliozo:problemText """For each $1\\leq i\\leq 9$ and $T\\in\\mathbb N$, define $d_i(T)$ 
 to be the total number of times the digit $i$ appears when 
 all the multiples of $1829$ between $1$ and $T$ inclusive 
@@ -879,7 +1013,10 @@ precisely two distinct values among $d_1(T)$, $d_2(T)$, $\\dots$, $d_9(T)$.</p>"
     eliozo:problem_number 5 ;
     eliozo:questionType "Prove" ;
     eliozo:source "United Kingdom" ;
-    eliozo:suffix "IMO_SHL.2022.N" .
+    eliozo:suffix "IMO_SHL.2022.N" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.N6 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers,
@@ -888,9 +1025,10 @@ eliozo:IMO_SHL.2022.N6 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.N6" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N6 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N6.SUB0 ;
     eliozo:problemText """Let $Q$ be a set of prime numbers, not necessarily finite. 
 For a positive integer $n$ consider its prime factorization: 
 define $p(n)$ to be the sum of all the exponents and 
@@ -918,7 +1056,10 @@ $q(63)=3$, $p(2022)=3$, $q(2022)=1$.)</p>"""@lv ;
     eliozo:problem_number 6 ;
     eliozo:questionType "Prove" ;
     eliozo:source "Costa Rica" ;
-    eliozo:suffix "IMO_SHL.2022.N" .
+    eliozo:suffix "IMO_SHL.2022.N" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.N7 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-numbers,
@@ -927,9 +1068,10 @@ eliozo:IMO_SHL.2022.N7 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.N7" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N7 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N7.SUB0 ;
     eliozo:problemText """Let $k$ be a positive integer and let $S$ be a finite set of odd prime numbers. 
 Prove that there is at most one way (up to rotation and reflection) 
 to place the elements of $S$ around the circle such that the product 
@@ -942,7 +1084,10 @@ of any two neighbors is of the form $x^2+x+k$ for some positive integer $x$.</p>
     eliozo:problem_number 7 ;
     eliozo:questionType "Prove" ;
     eliozo:source "U.S.A." ;
-    eliozo:suffix "IMO_SHL.2022.N" .
+    eliozo:suffix "IMO_SHL.2022.N" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMO_SHL.2022.N8 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility,
@@ -951,16 +1096,21 @@ eliozo:IMO_SHL.2022.N8 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:olympiad "IMO_SHL" ;
     eliozo:olympiadCode "IMO_SHL" ;
+    eliozo:olympiadType "International" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "IMO_SHL.2022.N8" ;
-    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N8 ;
+    eliozo:problemSolution eliozo:SOLN.IMO_SHL.2022.N8.SUB0,
+        eliozo:SOLN.IMO_SHL.2022.N8.SUB1 ;
     eliozo:problemText "Prove that $5^n-3^n$ is not divisible by $2^n+65$ for any positive integer $n$."@lv ;
     eliozo:problemTextHtml "<p>Prove that $5^n-3^n$ is not divisible by $2^n+65$ for any positive integer $n$.</p>"@lv ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 8 ;
     eliozo:questionType "Prove" ;
     eliozo:source "Belgium" ;
-    eliozo:suffix "IMO_SHL.2022.N" .
+    eliozo:suffix "IMO_SHL.2022.N" ;
+    eliozo:suggestedGrade 10,
+        11,
+        12 .
 
 eliozo:IMG.IMO_SHL.2022.C3A.png a eliozo:Image ;
     eliozo:imageSrc "IMO_SHL.2022.C3A.png" ;
@@ -1042,7 +1192,7 @@ eliozo:IMG.IMO_SHL.2022.G8C.png a eliozo:Image ;
     eliozo:imageSrc "IMO_SHL.2022.G8C.png" ;
     eliozo:imageWidth "" .
 
-eliozo:SOLN.IMO_SHL.2022.A1 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.A1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -1080,7 +1230,7 @@ except maybe $a_{1}$ and $a_{2}$, strictly greater than $1$.</p>
 Therefore $0&lt; \\left(a_{2022}\\right)^{2}-1 \\leqslant\\left(1-a_{2021}\\right)\\left(a_{2023}-1\\right) \\leqslant 0$, 
 a contradiction. We conclude that $a_{2022} \\leqslant 1$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.A2 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.A2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -1157,43 +1307,9 @@ by adding 0 to the previous set.</p>
 and 0 can be expressed as follows: take the numbers $1,2,-3$ and all the numbers 
 from the remaining $l-1$ sets $A_{4}, A_{5}, \\cdots, A_{l+2}$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.A3 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1,
-        2,
-        3 ;
+eliozo:SOLN.IMO_SHL.2022.A3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
-
-*Answer:* The function $f(x)=1/x$ is the only solution.
-
-As in the first solution, we note that $f(x)=1 / x$ is a solution, 
-and we set out to prove that it is the only one. We write $g(x)$ for the unique 
-positive real number such that $(x, g(x))$ is a good pair. 
-In this solution, we prove Lemma 2 without assuming Lemma 1.
-
-*Lemma 2.* The function $f$ is decreasing.
-
-*Proof.* Consider $x<y$. It holds that $y f(g(y))+g(y) f(y) \\leqslant 2$. 
-Moreover, because $y$ is the only positive real number such that $(g(y), y)$ 
-is a good pair and $x \\neq y$, we have $x f(g(y))+g(y) f(x)>$ 2. 
-Combining these two inequalities yields
-
-$$x f(g(y))+g(y) f(x)>2 \\geqslant y f(g(y))+g(y) f(y)$$
-
-or $f(g(y))(x-y)>g(y)(f(y)-f(x))$. Because $g(y)$ and $f(g(y))$ are both positive while 
-$x-y$ is negative, it follows that $f(y)<f(x)$, showing that $f$ is decreasing.
-
-We now prove Lemma 1 using Lemma 2. Suppose that $x \\neq y$ but $x f(y)+y f(x) \\leqslant 2$. 
-As in the first solution, we get $x f(x)+x f(x)>2$ and $y f(y)+y f(y)>2$, which implies $x f(x)+y f(y)>2$. Now
-
-$$x \\cdot f(x)+y \\cdot f(y)>2 \\geqslant x \\cdot f(y)+y \\cdot f(x)$$
-
-implies $(x-y)(f(x)-f(y))>0$, which contradicts the fact that $f$ is decreasing. 
-So $y=x$ is the unique $y$ such that $(x, y)$ is a good pair, 
-and in particular we have $f(x) \\leqslant 1 / x$.
-
-We can now conclude the proof as in Solution 1."""@lv,
-        """## Solution
 
 *Answer:* The function $f(x)=1/x$ is the only solution.
 
@@ -1276,43 +1392,115 @@ If we fix $x$ and look for the supremum of the expression $\\frac{2}{x+y}$ over 
 
 $$f(x) \\geqslant \\frac{2}{x+x}=\\frac{1}{x}$$
 
-Since we already know that $f(x) \\leqslant 1/x$, we conclude that $f(x)=1/x$."""@lv,
-        """## Solution
+Since we already know that $f(x) \\leqslant 1/x$, we conclude that $f(x)=1/x$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p><em>Answer:</em> The function $f(x)=1/x$ is the only solution.</p>
+<p>First we prove that the function $f(x)=1/x$ satisfies the condition of the problem statement. 
+The AM-GM inequality gives</p>
+<p>$$\\frac{x}{y}+\\frac{y}{x} \\geqslant 2$$</p>
+<p>for every $x, y&gt;0$, with equality if and only if $x=y$. 
+This means that, for every $x&gt;0$, there exists a unique $y&gt;0$ such that</p>
+<p>$$\\frac{x}{y}+\\frac{y}{x} \\leqslant 2$$</p>
+<p>namely $y=x$.</p>
+<p>Let now $f: \\mathbb{R}<em>{&gt;0} \\rightarrow \\mathbb{R}</em>{&gt;0}$ be a function that satisfies 
+the condition of the problem statement. We say that a pair of positive real numbers $(x, y)$ 
+is good if $x f(y)+y f(x) \\leqslant 2$. Observe that if $(x, y)$ is good, then so is $(y, x)$.</p>
+<p><em>Lemma 1.0.</em> If $(x, y)$ is good, then $x=y$.</p>
+<p><em>Proof.</em> Assume that there exist positive real numbers $x \\neq y$ such that $(x, y)$ is good. 
+The uniqueness assumption says that $y$ is the unique positive real number such that $(x, y)$ 
+is good. In particular, $(x, x)$ is not a good pair. This means that</p>
+<p>$$x f(x)+x f(x)&gt;2$$</p>
+<p>and thus $x f(x)&gt;1$. Similarly, $(y, x)$ is a good pair, so $(y, y)$ is not a good pair, 
+which implies $y f(y)&gt;1$. We apply the AM-GM inequality to obtain</p>
+<p>$$x f(y)+y f(x) \\geqslant 2 \\sqrt{x f(y) \\cdot y f(x)}=2 \\sqrt{x f(x) \\cdot y f(y)}&gt;2$$</p>
+<p>This is a contradiction, since $(x, y)$ is a good pair.</p>
+<p>By assumption, for any $x&gt;0$, there always exists a good pair containing $x$, 
+however Lemma 1 implies that the only good pair that can contain $x$ is $(x, x)$, so</p>
+<p>$$x f(x) \\leqslant 1 \\quad \\Longleftrightarrow \\quad f(x) \\leqslant \\frac{1}{x}$$</p>
+<p>for every $x&gt;0$.</p>
+<p>In particular, with $x=1/f(t)$ for $t&gt;0$, we obtain</p>
+<p>$$\\frac{1}{f(t)} \\cdot f\\left(\\frac{1}{f(t)}\\right) \\leqslant 1$$</p>
+<p>Hence</p>
+<p>$$t \\cdot f\\left(\\frac{1}{f(t)}\\right) \\leqslant t f(t) \\leqslant 1$$</p>
+<p>We claim that $(t, 1 / f(t))$ is a good pair for every $t&gt;0$. Indeed,</p>
+<p>$$t \\cdot f\\left(\\frac{1}{f(t)}\\right)+\\frac{1}{f(t)} f(t)=t \\cdot f\\left(\\frac{1}{f(t)}\\right)+1 \\leqslant 2$$</p>
+<p>Lemma 1 implies that $t=1 / f(t) \\Longleftrightarrow f(t)=1 / t$ for every $t&gt;0$.</p>
+<p>Solution 1.1. We give an alternative way to prove that 
+$f(x)=1/x$ assuming $f(x) \\leqslant 1 / x$ for every $x&gt;0$.</p>
+<p>Indeed, if $f(x)&lt;1/x$ then for every $a&gt;0$ with $f(x)&lt;1/a&lt;1/x$ 
+(and there are at least two of them), we have</p>
+<p>$$a f(x)+x f(a)&lt;1+\\frac{x}{a}&lt;2$$</p>
+<p>Hence $(x, a)$ is a good pair for every such $a$, a contradiction. We conclude that $f(x)=1/x$.</p>
+<p>Solution 1.2. We can also conclude from Lemma 1 and $f(x) \\leqslant 1 / x$ as follows.</p>
+<p><em>Lemma 2.</em> The function $f$ is decreasing.</p>
+<p><em>Proof.</em> Let $y&gt;x&gt;0$. Lemma 1 says that $(x, y)$ is not a good pair, but $(y, y)$ is. Hence</p>
+<p>$$x f(y)+y f(x)&gt;2 \\geqslant 2 y f(y)&gt;y f(y)+x f(y)$$</p>
+<p>where we used $y&gt;x$ (and $f(y)&gt;0$ ) in the last inequality. This implies that $f(x)&gt;f(y)$, showing that $f$ is decreasing.</p>
+<p>We now prove that $f(x)=1 / x$ for all $x$. Fix a value of $x$ and note that for $y&gt;x$ 
+we must have $x f(x)+y f(x)&gt;x f(y)+y f(x)&gt;2$ (using that $f$ is decreasing for the first step), 
+hence $f(x)&gt;\\frac{2}{x+y}$. The last inequality is true for every $y&gt;x&gt;0$. 
+If we fix $x$ and look for the supremum of the expression $\\frac{2}{x+y}$ over all $y&gt;x$, we get</p>
+<p>$$f(x) \\geqslant \\frac{2}{x+x}=\\frac{1}{x}$$</p>
+<p>Since we already know that $f(x) \\leqslant 1/x$, we conclude that $f(x)=1/x$.</p>"""@lv .
 
-Again, let us prove that $f(x)=1 / x$ is the only solution. 
-Let again $g(x)$ be the unique positive real number such that $(x, g(x))$ is a good pair.
+eliozo:SOLN.IMO_SHL.2022.A3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Solution
 
-*Lemma 4.* The function $f$ is strictly convex.
+*Answer:* The function $f(x)=1/x$ is the only solution.
 
-Proof. Consider the function $q_{s}(x)=f(x)+s x$ for some real number $s$. 
-If $f$ is not strictly convex, then there exist $u<v$ and $t \\in(0,1)$ such that
+As in the first solution, we note that $f(x)=1 / x$ is a solution, 
+and we set out to prove that it is the only one. We write $g(x)$ for the unique 
+positive real number such that $(x, g(x))$ is a good pair. 
+In this solution, we prove Lemma 2 without assuming Lemma 1.
 
-$$f(t u+(1-t) v) \\geqslant t f(u)+(1-t) f(v)$$
+*Lemma 2.* The function $f$ is decreasing.
 
-Hence
+*Proof.* Consider $x<y$. It holds that $y f(g(y))+g(y) f(y) \\leqslant 2$. 
+Moreover, because $y$ is the only positive real number such that $(g(y), y)$ 
+is a good pair and $x \\neq y$, we have $x f(g(y))+g(y) f(x)>$ 2. 
+Combining these two inequalities yields
 
-$$\\begin{aligned}
-q_{s}(t u+(1-t) v) & \\geqslant t f(u)+(1-t) f(v)+s(t u+(1-t) v) \\\\
-& =t q_{s}(u)+(1-t) q_{s}(v)
-\\end{aligned}$$
+$$x f(g(y))+g(y) f(x)>2 \\geqslant y f(g(y))+g(y) f(y)$$
 
-Let $w=t u+(1-t) v$ and consider the case $s=f(g(w)) / g(w)$. For that particular choice of $s$, 
-the function $q_{s}(x)$ has a unique minimum at $x=w$. However, since 
-$q_{s}(w) \\geqslant t q_{s}(u)+(1-t) q_{s}(v)$, it must hold 
-$q_{s}(u) \\leqslant q_{s}(w)$ or $q_{s}(v) \\leqslant q_{s}(w)$, a contradiction.
+or $f(g(y))(x-y)>g(y)(f(y)-f(x))$. Because $g(y)$ and $f(g(y))$ are both positive while 
+$x-y$ is negative, it follows that $f(y)<f(x)$, showing that $f$ is decreasing.
 
-*Lemma 5.* The function $f$ is continuous.
+We now prove Lemma 1 using Lemma 2. Suppose that $x \\neq y$ but $x f(y)+y f(x) \\leqslant 2$. 
+As in the first solution, we get $x f(x)+x f(x)>2$ and $y f(y)+y f(y)>2$, which implies $x f(x)+y f(y)>2$. Now
 
-*Proof.* Since $f$ is strictly convex and defined on an open interval, it is also continuous.
+$$x \\cdot f(x)+y \\cdot f(y)>2 \\geqslant x \\cdot f(y)+y \\cdot f(x)$$
 
-As in Solution 1, we can prove that $f(x) \\leqslant 1 / x$. If $f(x)<1 / x$, 
-then we consider the function $h(y)=x f(y)+y f(x)$ which is continuous. 
-Since $h(x)<2$, there exist at least two distinct $z \\neq x$ such that 
-$h(z)<2$ giving that $(x, z)$ is good pair for both values of $z$, 
-a contradiction. We conclude that $f(x)=1/x$ as desired.
+implies $(x-y)(f(x)-f(y))>0$, which contradicts the fact that $f$ is decreasing. 
+So $y=x$ is the unique $y$ such that $(x, y)$ is a good pair, 
+and in particular we have $f(x) \\leqslant 1 / x$.
 
-*Comment.* Lemma 5 implies Lemma 3, using an argument similar as in the end of Solution 4."""@lv,
-        """## Solution
+We can now conclude the proof as in Solution 1."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p><em>Answer:</em> The function $f(x)=1/x$ is the only solution.</p>
+<p>As in the first solution, we note that $f(x)=1 / x$ is a solution, 
+and we set out to prove that it is the only one. We write $g(x)$ for the unique 
+positive real number such that $(x, g(x))$ is a good pair. 
+In this solution, we prove Lemma 2 without assuming Lemma 1.</p>
+<p><em>Lemma 2.</em> The function $f$ is decreasing.</p>
+<p><em>Proof.</em> Consider $x<y$. It holds that $y f(g(y))+g(y) f(y) \\leqslant 2$. 
+Moreover, because $y$ is the only positive real number such that $(g(y), y)$ 
+is a good pair and $x \\neq y$, we have $x f(g(y))+g(y) f(x)>$ 2. 
+Combining these two inequalities yields</p>
+<p>$$x f(g(y))+g(y) f(x)&gt;2 \\geqslant y f(g(y))+g(y) f(y)$$</p>
+<p>or $f(g(y))(x-y)&gt;g(y)(f(y)-f(x))$. Because $g(y)$ and $f(g(y))$ are both positive while 
+$x-y$ is negative, it follows that $f(y)&lt;f(x)$, showing that $f$ is decreasing.</p>
+<p>We now prove Lemma 1 using Lemma 2. Suppose that $x \\neq y$ but $x f(y)+y f(x) \\leqslant 2$. 
+As in the first solution, we get $x f(x)+x f(x)&gt;2$ and $y f(y)+y f(y)&gt;2$, which implies $x f(x)+y f(y)&gt;2$. Now</p>
+<p>$$x \\cdot f(x)+y \\cdot f(y)&gt;2 \\geqslant x \\cdot f(y)+y \\cdot f(x)$$</p>
+<p>implies $(x-y)(f(x)-f(y))&gt;0$, which contradicts the fact that $f$ is decreasing. 
+So $y=x$ is the unique $y$ such that $(x, y)$ is a good pair, 
+and in particular we have $f(x) \\leqslant 1 / x$.</p>
+<p>We can now conclude the proof as in Solution 1.</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.A3.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
+    eliozo:solutionText """## Solution
 
 As in the other solutions we verify that the function $f(x)=1/x$ is a solution. 
 We first want to prove the following lemma:
@@ -1367,100 +1555,6 @@ where the first inequality comes from the problem statement. Consequently each o
 inequalities must actually be an equality, and in particular we obtain 
 $f(x)=1/x$ for all $x \\in \\mathbb{R}_{>0}$."""@lv ;
     eliozo:solutionTextHtml """<h2>Solution</h2>
-<p><em>Answer:</em> The function $f(x)=1/x$ is the only solution.</p>
-<p>As in the first solution, we note that $f(x)=1 / x$ is a solution, 
-and we set out to prove that it is the only one. We write $g(x)$ for the unique 
-positive real number such that $(x, g(x))$ is a good pair. 
-In this solution, we prove Lemma 2 without assuming Lemma 1.</p>
-<p><em>Lemma 2.</em> The function $f$ is decreasing.</p>
-<p><em>Proof.</em> Consider $x<y$. It holds that $y f(g(y))+g(y) f(y) \\leqslant 2$. 
-Moreover, because $y$ is the only positive real number such that $(g(y), y)$ 
-is a good pair and $x \\neq y$, we have $x f(g(y))+g(y) f(x)>$ 2. 
-Combining these two inequalities yields</p>
-<p>$$x f(g(y))+g(y) f(x)&gt;2 \\geqslant y f(g(y))+g(y) f(y)$$</p>
-<p>or $f(g(y))(x-y)&gt;g(y)(f(y)-f(x))$. Because $g(y)$ and $f(g(y))$ are both positive while 
-$x-y$ is negative, it follows that $f(y)&lt;f(x)$, showing that $f$ is decreasing.</p>
-<p>We now prove Lemma 1 using Lemma 2. Suppose that $x \\neq y$ but $x f(y)+y f(x) \\leqslant 2$. 
-As in the first solution, we get $x f(x)+x f(x)&gt;2$ and $y f(y)+y f(y)&gt;2$, which implies $x f(x)+y f(y)&gt;2$. Now</p>
-<p>$$x \\cdot f(x)+y \\cdot f(y)&gt;2 \\geqslant x \\cdot f(y)+y \\cdot f(x)$$</p>
-<p>implies $(x-y)(f(x)-f(y))&gt;0$, which contradicts the fact that $f$ is decreasing. 
-So $y=x$ is the unique $y$ such that $(x, y)$ is a good pair, 
-and in particular we have $f(x) \\leqslant 1 / x$.</p>
-<p>We can now conclude the proof as in Solution 1.</p>"""@lv,
-        """<h2>Solution</h2>
-<p><em>Answer:</em> The function $f(x)=1/x$ is the only solution.</p>
-<p>First we prove that the function $f(x)=1/x$ satisfies the condition of the problem statement. 
-The AM-GM inequality gives</p>
-<p>$$\\frac{x}{y}+\\frac{y}{x} \\geqslant 2$$</p>
-<p>for every $x, y&gt;0$, with equality if and only if $x=y$. 
-This means that, for every $x&gt;0$, there exists a unique $y&gt;0$ such that</p>
-<p>$$\\frac{x}{y}+\\frac{y}{x} \\leqslant 2$$</p>
-<p>namely $y=x$.</p>
-<p>Let now $f: \\mathbb{R}<em>{&gt;0} \\rightarrow \\mathbb{R}</em>{&gt;0}$ be a function that satisfies 
-the condition of the problem statement. We say that a pair of positive real numbers $(x, y)$ 
-is good if $x f(y)+y f(x) \\leqslant 2$. Observe that if $(x, y)$ is good, then so is $(y, x)$.</p>
-<p><em>Lemma 1.0.</em> If $(x, y)$ is good, then $x=y$.</p>
-<p><em>Proof.</em> Assume that there exist positive real numbers $x \\neq y$ such that $(x, y)$ is good. 
-The uniqueness assumption says that $y$ is the unique positive real number such that $(x, y)$ 
-is good. In particular, $(x, x)$ is not a good pair. This means that</p>
-<p>$$x f(x)+x f(x)&gt;2$$</p>
-<p>and thus $x f(x)&gt;1$. Similarly, $(y, x)$ is a good pair, so $(y, y)$ is not a good pair, 
-which implies $y f(y)&gt;1$. We apply the AM-GM inequality to obtain</p>
-<p>$$x f(y)+y f(x) \\geqslant 2 \\sqrt{x f(y) \\cdot y f(x)}=2 \\sqrt{x f(x) \\cdot y f(y)}&gt;2$$</p>
-<p>This is a contradiction, since $(x, y)$ is a good pair.</p>
-<p>By assumption, for any $x&gt;0$, there always exists a good pair containing $x$, 
-however Lemma 1 implies that the only good pair that can contain $x$ is $(x, x)$, so</p>
-<p>$$x f(x) \\leqslant 1 \\quad \\Longleftrightarrow \\quad f(x) \\leqslant \\frac{1}{x}$$</p>
-<p>for every $x&gt;0$.</p>
-<p>In particular, with $x=1/f(t)$ for $t&gt;0$, we obtain</p>
-<p>$$\\frac{1}{f(t)} \\cdot f\\left(\\frac{1}{f(t)}\\right) \\leqslant 1$$</p>
-<p>Hence</p>
-<p>$$t \\cdot f\\left(\\frac{1}{f(t)}\\right) \\leqslant t f(t) \\leqslant 1$$</p>
-<p>We claim that $(t, 1 / f(t))$ is a good pair for every $t&gt;0$. Indeed,</p>
-<p>$$t \\cdot f\\left(\\frac{1}{f(t)}\\right)+\\frac{1}{f(t)} f(t)=t \\cdot f\\left(\\frac{1}{f(t)}\\right)+1 \\leqslant 2$$</p>
-<p>Lemma 1 implies that $t=1 / f(t) \\Longleftrightarrow f(t)=1 / t$ for every $t&gt;0$.</p>
-<p>Solution 1.1. We give an alternative way to prove that 
-$f(x)=1/x$ assuming $f(x) \\leqslant 1 / x$ for every $x&gt;0$.</p>
-<p>Indeed, if $f(x)&lt;1/x$ then for every $a&gt;0$ with $f(x)&lt;1/a&lt;1/x$ 
-(and there are at least two of them), we have</p>
-<p>$$a f(x)+x f(a)&lt;1+\\frac{x}{a}&lt;2$$</p>
-<p>Hence $(x, a)$ is a good pair for every such $a$, a contradiction. We conclude that $f(x)=1/x$.</p>
-<p>Solution 1.2. We can also conclude from Lemma 1 and $f(x) \\leqslant 1 / x$ as follows.</p>
-<p><em>Lemma 2.</em> The function $f$ is decreasing.</p>
-<p><em>Proof.</em> Let $y&gt;x&gt;0$. Lemma 1 says that $(x, y)$ is not a good pair, but $(y, y)$ is. Hence</p>
-<p>$$x f(y)+y f(x)&gt;2 \\geqslant 2 y f(y)&gt;y f(y)+x f(y)$$</p>
-<p>where we used $y&gt;x$ (and $f(y)&gt;0$ ) in the last inequality. This implies that $f(x)&gt;f(y)$, showing that $f$ is decreasing.</p>
-<p>We now prove that $f(x)=1 / x$ for all $x$. Fix a value of $x$ and note that for $y&gt;x$ 
-we must have $x f(x)+y f(x)&gt;x f(y)+y f(x)&gt;2$ (using that $f$ is decreasing for the first step), 
-hence $f(x)&gt;\\frac{2}{x+y}$. The last inequality is true for every $y&gt;x&gt;0$. 
-If we fix $x$ and look for the supremum of the expression $\\frac{2}{x+y}$ over all $y&gt;x$, we get</p>
-<p>$$f(x) \\geqslant \\frac{2}{x+x}=\\frac{1}{x}$$</p>
-<p>Since we already know that $f(x) \\leqslant 1/x$, we conclude that $f(x)=1/x$.</p>"""@lv,
-        """<h2>Solution</h2>
-<p>Again, let us prove that $f(x)=1 / x$ is the only solution. 
-Let again $g(x)$ be the unique positive real number such that $(x, g(x))$ is a good pair.</p>
-<p><em>Lemma 4.</em> The function $f$ is strictly convex.</p>
-<p>Proof. Consider the function $q_{s}(x)=f(x)+s x$ for some real number $s$. 
-If $f$ is not strictly convex, then there exist $u&lt;v$ and $t \\in(0,1)$ such that</p>
-<p>$$f(t u+(1-t) v) \\geqslant t f(u)+(1-t) f(v)$$</p>
-<p>Hence</p>
-<p>$$\\begin{aligned}
-q_{s}(t u+(1-t) v) &amp; \\geqslant t f(u)+(1-t) f(v)+s(t u+(1-t) v) \\
-&amp; =t q_{s}(u)+(1-t) q_{s}(v)
-\\end{aligned}$$</p>
-<p>Let $w=t u+(1-t) v$ and consider the case $s=f(g(w)) / g(w)$. For that particular choice of $s$, 
-the function $q_{s}(x)$ has a unique minimum at $x=w$. However, since 
-$q_{s}(w) \\geqslant t q_{s}(u)+(1-t) q_{s}(v)$, it must hold 
-$q_{s}(u) \\leqslant q_{s}(w)$ or $q_{s}(v) \\leqslant q_{s}(w)$, a contradiction.</p>
-<p><em>Lemma 5.</em> The function $f$ is continuous.</p>
-<p><em>Proof.</em> Since $f$ is strictly convex and defined on an open interval, it is also continuous.</p>
-<p>As in Solution 1, we can prove that $f(x) \\leqslant 1 / x$. If $f(x)&lt;1 / x$, 
-then we consider the function $h(y)=x f(y)+y f(x)$ which is continuous. 
-Since $h(x)&lt;2$, there exist at least two distinct $z \\neq x$ such that 
-$h(z)&lt;2$ giving that $(x, z)$ is good pair for both values of $z$, 
-a contradiction. We conclude that $f(x)=1/x$ as desired.</p>
-<p><em>Comment.</em> Lemma 5 implies Lemma 3, using an argument similar as in the end of Solution 4.</p>"""@lv,
-        """<h2>Solution</h2>
 <p>As in the other solutions we verify that the function $f(x)=1/x$ is a solution. 
 We first want to prove the following lemma:</p>
 <p><em>Lemma 3.</em> For all $x \\in \\mathbb{R}_{&gt;0}$ we actually have $x f(g(x))+g(x) f(x)=2$ 
@@ -1498,7 +1592,69 @@ With this inequality we obtain for all $x \\in \\mathbb{R}_{&gt;0}$</p>
 inequalities must actually be an equality, and in particular we obtain 
 $f(x)=1/x$ for all $x \\in \\mathbb{R}_{&gt;0}$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.A4 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.A3.SUB3 a eliozo:Solution ;
+    eliozo:solutionNum 3 ;
+    eliozo:solutionText """## Solution
+
+Again, let us prove that $f(x)=1 / x$ is the only solution. 
+Let again $g(x)$ be the unique positive real number such that $(x, g(x))$ is a good pair.
+
+*Lemma 4.* The function $f$ is strictly convex.
+
+Proof. Consider the function $q_{s}(x)=f(x)+s x$ for some real number $s$. 
+If $f$ is not strictly convex, then there exist $u<v$ and $t \\in(0,1)$ such that
+
+$$f(t u+(1-t) v) \\geqslant t f(u)+(1-t) f(v)$$
+
+Hence
+
+$$\\begin{aligned}
+q_{s}(t u+(1-t) v) & \\geqslant t f(u)+(1-t) f(v)+s(t u+(1-t) v) \\\\
+& =t q_{s}(u)+(1-t) q_{s}(v)
+\\end{aligned}$$
+
+Let $w=t u+(1-t) v$ and consider the case $s=f(g(w)) / g(w)$. For that particular choice of $s$, 
+the function $q_{s}(x)$ has a unique minimum at $x=w$. However, since 
+$q_{s}(w) \\geqslant t q_{s}(u)+(1-t) q_{s}(v)$, it must hold 
+$q_{s}(u) \\leqslant q_{s}(w)$ or $q_{s}(v) \\leqslant q_{s}(w)$, a contradiction.
+
+*Lemma 5.* The function $f$ is continuous.
+
+*Proof.* Since $f$ is strictly convex and defined on an open interval, it is also continuous.
+
+As in Solution 1, we can prove that $f(x) \\leqslant 1 / x$. If $f(x)<1 / x$, 
+then we consider the function $h(y)=x f(y)+y f(x)$ which is continuous. 
+Since $h(x)<2$, there exist at least two distinct $z \\neq x$ such that 
+$h(z)<2$ giving that $(x, z)$ is good pair for both values of $z$, 
+a contradiction. We conclude that $f(x)=1/x$ as desired.
+
+*Comment.* Lemma 5 implies Lemma 3, using an argument similar as in the end of Solution 4."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p>Again, let us prove that $f(x)=1 / x$ is the only solution. 
+Let again $g(x)$ be the unique positive real number such that $(x, g(x))$ is a good pair.</p>
+<p><em>Lemma 4.</em> The function $f$ is strictly convex.</p>
+<p>Proof. Consider the function $q_{s}(x)=f(x)+s x$ for some real number $s$. 
+If $f$ is not strictly convex, then there exist $u&lt;v$ and $t \\in(0,1)$ such that</p>
+<p>$$f(t u+(1-t) v) \\geqslant t f(u)+(1-t) f(v)$$</p>
+<p>Hence</p>
+<p>$$\\begin{aligned}
+q_{s}(t u+(1-t) v) &amp; \\geqslant t f(u)+(1-t) f(v)+s(t u+(1-t) v) \\
+&amp; =t q_{s}(u)+(1-t) q_{s}(v)
+\\end{aligned}$$</p>
+<p>Let $w=t u+(1-t) v$ and consider the case $s=f(g(w)) / g(w)$. For that particular choice of $s$, 
+the function $q_{s}(x)$ has a unique minimum at $x=w$. However, since 
+$q_{s}(w) \\geqslant t q_{s}(u)+(1-t) q_{s}(v)$, it must hold 
+$q_{s}(u) \\leqslant q_{s}(w)$ or $q_{s}(v) \\leqslant q_{s}(w)$, a contradiction.</p>
+<p><em>Lemma 5.</em> The function $f$ is continuous.</p>
+<p><em>Proof.</em> Since $f$ is strictly convex and defined on an open interval, it is also continuous.</p>
+<p>As in Solution 1, we can prove that $f(x) \\leqslant 1 / x$. If $f(x)&lt;1 / x$, 
+then we consider the function $h(y)=x f(y)+y f(x)$ which is continuous. 
+Since $h(x)&lt;2$, there exist at least two distinct $z \\neq x$ such that 
+$h(z)&lt;2$ giving that $(x, z)$ is good pair for both values of $z$, 
+a contradiction. We conclude that $f(x)=1/x$ as desired.</p>
+<p><em>Comment.</em> Lemma 5 implies Lemma 3, using an argument similar as in the end of Solution 4.</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.A4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution.
 
@@ -1594,7 +1750,7 @@ a positive constant $c$ (or find the best such $c$ ) such that</p>
 or $s&lt;b-a-$ $u-v+3$. The fact that $u+1-\\alpha&lt;1$ and $v+1-\\beta&lt;1$ implies 
 $2^{u+1-\\alpha}+2^{v+1-\\beta}&lt;4$, and so $s&lt;b-a+(2+2-u-v-1)=b-a-u-v-3$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.A5 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.A5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -1790,7 +1946,7 @@ r^{n-1}=r+1 \\quad \\text { and } \\quad r^{n+1}=r^{4}+1 \\tag{1}
 <p>Since $r \\neq 1$, using Equation (1) we conclude $r^{3}=r+1=r^{n-1}$, 
 thus $n=4$, which gives a contradiction.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.A6 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.A6.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -1922,7 +2078,7 @@ that satisfies the conclusion of Lemma 1. Note that $f(z) \\neq p z$ if and and 
 <p>The latter is guaranteed by the construction of the function $g$. We conclude that 
 $p \\notin Z$ as desired. This shows that $Z \\subset S$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.A7 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.A7.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -2042,7 +2198,7 @@ $$</p>
 <p>thus $s\\left(P\\left(10^{\\alpha} X\\right)\\right)$ and $s\\left(P\\left(10^{\\alpha-1} X\\right)\\right)$ 
 have different parities, as claimed.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.A8 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.A8.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -2359,7 +2515,7 @@ in this case, $f(1)=2$, which means that $c_{1}&gt;2 \\cdot 3^{-1 / 6} \\approx 
 <p>With a careful analysis one can show that the best possible value of $c_{2}$ is 
 $\\frac{236567}{4930} 3^{1 / 3} \\approx$ 69.20662$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.C1 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.C1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -2443,7 +2599,7 @@ between the number of red and blue buckets she visited during the game.
 Determine the largest $C$ so that no matter how the buckets are coloured,
 Sally can achieve a score of at least $C$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.C2 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.C2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -2534,7 +2690,7 @@ But this contradicts $k \\leqslant \\frac{3n+1}{2}$. Hence at some point the
 operation will not move the rightmost block, meaning that the number 
 of blocks will decrease, as desired.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.C3 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.C3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -2636,9 +2792,8 @@ subboard $b$, there will be 5 trees of height at least
 $10^{6}(M+1)^{b}-10^{6}\\left((M+1)^{b}-1\\right)=10^{6}$, 
 hence each of the subboard has $5$ majestic trees, which was what we wanted.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.C4 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.IMO_SHL.2022.C4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
 *Answer:* All distributions where $\\sum_{i=1}^{n} i c_{i}=\\frac{n(n+1)}{2}(\\bmod n)$, 
@@ -2751,22 +2906,7 @@ $$\\frac{n(n+1)}{2}=\\sum_{i=1}^{n} i c_{i}=\\left(\\sum_{i=1}^{n} 1 \\cdot c_{i
 
 so $k=0 \\pmod {n}$. But this is impossible, as no child except the child 
 with $M$ coins has an index divisible by $n$. Hence we cannot end up in a 
-semi-regular state of irregularity $2$, so we are done."""@lv,
-        """## Solution
-
-Encode the sequence $c_{i}$ as a polynomial $p(x)=\\sum_{i} a_{i} x_{i}$. 
-The cyclic nature of the problem makes it natural to work modulo $x^{n}-1$. 
-Child $i$ performing a step is equivalent to adding $x^{i}(x-1)^{2}$ 
-to the polynomial, and we want to reach the polynomial 
-$q(x)=1+x+\\ldots+$ $x^{n-1}$. Since we only add multiples of $(x-1)^{2}$, 
-this is only possible if $p(x)=q(x)$ modulo the ideal generated by $x^{n}-1$ 
-and $(x-1)^{2}$, i.e.
-
-$$\\left(x^{n}-1,(x-1)^{2}\\right)=(x-1)\\left(\\frac{x^{n}-1}{x-1}, x-1\\right)=(x-1) \\cdot(n,(x-1))$$
-
-This is equivalent to $p(1)=q(1)$ (which simply translates to the condition 
-that there are $n$ coins) and $p^{\\prime}(1)=q^{\\prime}(1)(\\bmod n)$, 
-which translates to the invariant described in solution $1$."""@lv ;
+semi-regular state of irregularity $2$, so we are done."""@lv ;
     eliozo:solutionTextHtml """<h2>Solution</h2>
 <p><em>Answer:</em> All distributions where $\\sum_{i=1}^{n} i c_{i}=\\frac{n(n+1)}{2}(\\bmod n)$, 
 where $c_{i}$ denotes the number of coins the $i$-th child starts with.</p>
@@ -2851,8 +2991,26 @@ number $n$, and suppose the child with 0 coins is child $k$. Then </p>
 <p>$$\\frac{n(n+1)}{2}=\\sum_{i=1}^{n} i c_{i}=\\left(\\sum_{i=1}^{n} 1 \\cdot c_{i}\\right)-k=\\frac{n(n+1)}{2}-k(\\bmod n),$$ </p>
 <p>so $k=0 \\pmod {n}$. But this is impossible, as no child except the child 
 with $M$ coins has an index divisible by $n$. Hence we cannot end up in a 
-semi-regular state of irregularity $2$, so we are done.</p>"""@lv,
-        """<h2>Solution</h2>
+semi-regular state of irregularity $2$, so we are done.</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.C4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Solution
+
+Encode the sequence $c_{i}$ as a polynomial $p(x)=\\sum_{i} a_{i} x_{i}$. 
+The cyclic nature of the problem makes it natural to work modulo $x^{n}-1$. 
+Child $i$ performing a step is equivalent to adding $x^{i}(x-1)^{2}$ 
+to the polynomial, and we want to reach the polynomial 
+$q(x)=1+x+\\ldots+$ $x^{n-1}$. Since we only add multiples of $(x-1)^{2}$, 
+this is only possible if $p(x)=q(x)$ modulo the ideal generated by $x^{n}-1$ 
+and $(x-1)^{2}$, i.e.
+
+$$\\left(x^{n}-1,(x-1)^{2}\\right)=(x-1)\\left(\\frac{x^{n}-1}{x-1}, x-1\\right)=(x-1) \\cdot(n,(x-1))$$
+
+This is equivalent to $p(1)=q(1)$ (which simply translates to the condition 
+that there are $n$ coins) and $p^{\\prime}(1)=q^{\\prime}(1)(\\bmod n)$, 
+which translates to the invariant described in solution $1$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
 <p>Encode the sequence $c_{i}$ as a polynomial $p(x)=\\sum_{i} a_{i} x_{i}$. 
 The cyclic nature of the problem makes it natural to work modulo $x^{n}-1$. 
 Child $i$ performing a step is equivalent to adding $x^{i}(x-1)^{2}$ 
@@ -2865,7 +3023,7 @@ and $(x-1)^{2}$, i.e.</p>
 that there are $n$ coins) and $p^{\\prime}(1)=q^{\\prime}(1)(\\bmod n)$, 
 which translates to the invariant described in solution $1$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.C5 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.C5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -2940,10 +3098,8 @@ As each of the $n^{n}$ functions $f \\in \\mathcal{F}$ yields
 a (unique) corresponding nice function 
 $f^{+}: X \\rightarrow{1,2, \\ldots, n+1}$, the proof is complete.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.C6 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1,
-        2 ;
+eliozo:SOLN.IMO_SHL.2022.C6.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
 *Answer:* $1$ if $n$ is a power of two, and $2$ otherwise.
@@ -3028,8 +3184,82 @@ configuration in which the number of pebbles in each pile is
 divisible by the integer $m$. Replace each pile of $t m$ pebbles 
 with a pile of $t$ boulders. We now have a total of $2^{k}$ 
 boulders, hence we can make them into one pile of $2^{k}$ boulders. 
-Replacing the boulders with pebbles again, we are done."""@lv,
-        """## Solution
+Replacing the boulders with pebbles again, we are done."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p><em>Answer:</em> $1$ if $n$ is a power of two, and $2$ otherwise.</p>
+<p>The solution we describe is simple, but not the most effective one.</p>
+<p>We can combine two piles of $2^{k-1}$ pebbles to make one pile of 
+$2^{k}$ pebbles. In particular, given $2^{k}$ piles of one pebble, 
+we may combine them as follows:</p>
+<p>$$\\begin{array}{lll}
+2^{k} \\text { piles of } 1 \\text { pebble } &amp; \\rightarrow 2^{k-1} \\text { piles of } 2 \\text { pebbles } \\
+2^{k-1} \\text { piles of } 2 \\text { pebbles } &amp; \\rightarrow 2^{k-2} \\text { piles of } 4 \\text { pebbles } \\
+2^{k-2} \\text { piles of } 4 \\text { pebbles } &amp; \\rightarrow 2^{k-3} \\text { piles of } 8 \\text { pebbles } \\
+&amp; \\vdots &amp; \\
+2 \\text { piles of } 2^{k-1} \\text { pebbles } &amp; \\rightarrow 1 \\text { pile of } 2^{k} \\text { pebbles }
+\\end{array}$$</p>
+<p>This proves the desired result in the case when $n$ is a power of $2$.</p>
+<p>If $n$ is not a power of $2$, choose $N$ such that $2^{N}&lt;n&lt;2^{N+1}$. 
+Let $m=n-2^{N}$. Then $0&lt;m&lt;2^{N}$. Make a pile of $2^{N}$ pebbles 
+and call it the large pile. (Alternatively, one can be more efficient 
+and make a pile of $2^{M}$ pebbles where $m \\leqslant 2^{M}$.) 
+Since $n$ is not a power of two, there is at least one other pile 
+with pebbles. All other piles have a single pebble (initial condition).</p>
+<p>Choose one single pebble pile and remove the pebble and one pebble 
+from the large pile and form a pile of $2$ pebbles. If $m&lt;2^{N}-1$, 
+remove another pebble from the large pile and one pebble from the 
+$2$-pile and form a new pile of $2$ pebbles. Repeat until the 
+large pile contains exactly $m$ pebbles.</p>
+<p>At this point we have one pile of $m$ pebbles, one pile of $2$ 
+pebbles, and the rest are single pebble piles. There must be 
+$n-m-2=2^{N}-2$ single piles. Combine two and two into piles 
+of two pebbles. Then there are $2^{N-1}$ piles of two pebbles, 
+which we can make into one pile of $2^{N}$ pebbles. 
+We are left with exactly two piles of pebbles.</p>
+<p>Lastly we will prove that it is not possible to form a single 
+pile with all pebbles when $n$ is not a power of two. 
+A move consists of choosing two piles of say $a$ and $b$ 
+pebbles, then removing $c \\leqslant \\min (a, b)$ pebbles 
+from both piles, and forming a new pile with $2 c$ pebbles.
+If we include piles of zero pebbles, then this move changes 
+the number of pebbles in three piles as follows (and leaves 
+all other piles unchanged):</p>
+<p>$$\\begin{array}{lll}
+a &amp; \\rightarrow a-c \\
+b &amp; \\rightarrow b-c \\
+0 &amp; \\rightarrow 2 c
+\\end{array}$$</p>
+<p>Assume that after the move the number of pebbles in each pile 
+is divisible by an odd integer $m$. In particular, $m|2 c, m| a-c$ 
+and $m \\mid b-c$. Since $m$ is odd, it follows that $m \\mid c$, 
+and then that $m \\mid a$ and $m \\mid b$. Hence also before the move 
+the number of pebbles in each pile is divisible by the integer $m$.</p>
+<p>If $n$ is not a power of 2 , then $n$ is divisible by an odd integer 
+$m&gt;1$. In order to make a single pile of $n$ pebbles, we would have 
+to start with a distribution in which the number of pebbles in each 
+pile is divisible by the integer $m$. This is impossible when we 
+start with all piles containing a single pebble.</p>
+<p>Remarks on starting configurations From any starting configuration 
+that is not a single pile, if there are at least two piles with at 
+least two pebbles, we can remove one pebble from two such piles, 
+and form a new pile with $2$ pebbles. We can repeat this until we 
+have one pile of $2$ pebbles and the rest are single pebble piles, 
+and then proceed as in the solution. Hence, if $n$ is a power of two, 
+we can make a single pile from any starting configuration.</p>
+<p>If $n$ is of the form $n=2^{k} m$ where $m&gt;1$ is odd, then we can 
+make a single pile from any starting configuration in which the 
+number of pebbles in each pile is divisible by the integer $m$, 
+otherwise two piles is the best we can do. Half of this is 
+proven already. For the other half, assume we start with a 
+configuration in which the number of pebbles in each pile is 
+divisible by the integer $m$. Replace each pile of $t m$ pebbles 
+with a pile of $t$ boulders. We now have a total of $2^{k}$ 
+boulders, hence we can make them into one pile of $2^{k}$ boulders. 
+Replacing the boulders with pebbles again, we are done.</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.C6.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Solution
 
 We show an alternative strategy if $n$ is not a power of $2$. 
 Write $n$ in binary form: $n=2^{i_{1}}+2^{i_{2}}+\\cdots+2^{i_{k}}$, 
@@ -3049,8 +3279,29 @@ After each move we have one less number of piles, and all the
 piles have cardinality power of 2. The number of pebbles is 
 decreasing, and at the end of the process, it has a size of 
 $n-2^{i_{2}+1} \\geqslant n-2^{i_{1}}>0$, thus we can manage 
-to have two piles."""@lv,
-        """## Solution 
+to have two piles."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p>We show an alternative strategy if $n$ is not a power of $2$. 
+Write $n$ in binary form: $n=2^{i_{1}}+2^{i_{2}}+\\cdots+2^{i_{k}}$, 
+where $i_{1}&gt;i_{2}&gt;\\cdots&gt;i_{k}$. Now we make piles of sizes 
+$2^{i_{1}}, 2^{i_{2}}, \\ldots, 2^{i_{k}}$. We call the pile with 
+$2^{i_{1}}$ the large pile, all the others are the small piles.</p>
+<p>The strategy is the following: take the two smallest small pile. 
+If they have the same size of $2^{a}$, we make a pile of size 
+$2^{a+1}$. If they have different sizes, we double the smaller 
+pile using the large pile (we allow the large pile to have a 
+negative number of pebbles: later we prove that it is not possible). 
+We call all the new piles small. When we have only one small pile, 
+we terminate the process: we have at most $2$ piles.</p>
+<p>After each move we have one less number of piles, and all the 
+piles have cardinality power of 2. The number of pebbles is 
+decreasing, and at the end of the process, it has a size of 
+$n-2^{i_{2}+1} \\geqslant n-2^{i_{1}}&gt;0$, thus we can manage 
+to have two piles.</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.C6.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
+    eliozo:solutionText """## Solution 
 
 Throughout the solution, we will consider the moves in reverse order.
 Namely, imagine we have some piles of pebbles, and we are allowed 
@@ -3199,77 +3450,6 @@ to yield a much harder problem - if $k=3$, numerical evidence suggests
 the same answer as in the case $k=2$ (with powers of two replaced by 
 powers of three), but the case $k=5$ is already unclear."""@lv ;
     eliozo:solutionTextHtml """<h2>Solution</h2>
-<p><em>Answer:</em> $1$ if $n$ is a power of two, and $2$ otherwise.</p>
-<p>The solution we describe is simple, but not the most effective one.</p>
-<p>We can combine two piles of $2^{k-1}$ pebbles to make one pile of 
-$2^{k}$ pebbles. In particular, given $2^{k}$ piles of one pebble, 
-we may combine them as follows:</p>
-<p>$$\\begin{array}{lll}
-2^{k} \\text { piles of } 1 \\text { pebble } &amp; \\rightarrow 2^{k-1} \\text { piles of } 2 \\text { pebbles } \\
-2^{k-1} \\text { piles of } 2 \\text { pebbles } &amp; \\rightarrow 2^{k-2} \\text { piles of } 4 \\text { pebbles } \\
-2^{k-2} \\text { piles of } 4 \\text { pebbles } &amp; \\rightarrow 2^{k-3} \\text { piles of } 8 \\text { pebbles } \\
-&amp; \\vdots &amp; \\
-2 \\text { piles of } 2^{k-1} \\text { pebbles } &amp; \\rightarrow 1 \\text { pile of } 2^{k} \\text { pebbles }
-\\end{array}$$</p>
-<p>This proves the desired result in the case when $n$ is a power of $2$.</p>
-<p>If $n$ is not a power of $2$, choose $N$ such that $2^{N}&lt;n&lt;2^{N+1}$. 
-Let $m=n-2^{N}$. Then $0&lt;m&lt;2^{N}$. Make a pile of $2^{N}$ pebbles 
-and call it the large pile. (Alternatively, one can be more efficient 
-and make a pile of $2^{M}$ pebbles where $m \\leqslant 2^{M}$.) 
-Since $n$ is not a power of two, there is at least one other pile 
-with pebbles. All other piles have a single pebble (initial condition).</p>
-<p>Choose one single pebble pile and remove the pebble and one pebble 
-from the large pile and form a pile of $2$ pebbles. If $m&lt;2^{N}-1$, 
-remove another pebble from the large pile and one pebble from the 
-$2$-pile and form a new pile of $2$ pebbles. Repeat until the 
-large pile contains exactly $m$ pebbles.</p>
-<p>At this point we have one pile of $m$ pebbles, one pile of $2$ 
-pebbles, and the rest are single pebble piles. There must be 
-$n-m-2=2^{N}-2$ single piles. Combine two and two into piles 
-of two pebbles. Then there are $2^{N-1}$ piles of two pebbles, 
-which we can make into one pile of $2^{N}$ pebbles. 
-We are left with exactly two piles of pebbles.</p>
-<p>Lastly we will prove that it is not possible to form a single 
-pile with all pebbles when $n$ is not a power of two. 
-A move consists of choosing two piles of say $a$ and $b$ 
-pebbles, then removing $c \\leqslant \\min (a, b)$ pebbles 
-from both piles, and forming a new pile with $2 c$ pebbles.
-If we include piles of zero pebbles, then this move changes 
-the number of pebbles in three piles as follows (and leaves 
-all other piles unchanged):</p>
-<p>$$\\begin{array}{lll}
-a &amp; \\rightarrow a-c \\
-b &amp; \\rightarrow b-c \\
-0 &amp; \\rightarrow 2 c
-\\end{array}$$</p>
-<p>Assume that after the move the number of pebbles in each pile 
-is divisible by an odd integer $m$. In particular, $m|2 c, m| a-c$ 
-and $m \\mid b-c$. Since $m$ is odd, it follows that $m \\mid c$, 
-and then that $m \\mid a$ and $m \\mid b$. Hence also before the move 
-the number of pebbles in each pile is divisible by the integer $m$.</p>
-<p>If $n$ is not a power of 2 , then $n$ is divisible by an odd integer 
-$m&gt;1$. In order to make a single pile of $n$ pebbles, we would have 
-to start with a distribution in which the number of pebbles in each 
-pile is divisible by the integer $m$. This is impossible when we 
-start with all piles containing a single pebble.</p>
-<p>Remarks on starting configurations From any starting configuration 
-that is not a single pile, if there are at least two piles with at 
-least two pebbles, we can remove one pebble from two such piles, 
-and form a new pile with $2$ pebbles. We can repeat this until we 
-have one pile of $2$ pebbles and the rest are single pebble piles, 
-and then proceed as in the solution. Hence, if $n$ is a power of two, 
-we can make a single pile from any starting configuration.</p>
-<p>If $n$ is of the form $n=2^{k} m$ where $m&gt;1$ is odd, then we can 
-make a single pile from any starting configuration in which the 
-number of pebbles in each pile is divisible by the integer $m$, 
-otherwise two piles is the best we can do. Half of this is 
-proven already. For the other half, assume we start with a 
-configuration in which the number of pebbles in each pile is 
-divisible by the integer $m$. Replace each pile of $t m$ pebbles 
-with a pile of $t$ boulders. We now have a total of $2^{k}$ 
-boulders, hence we can make them into one pile of $2^{k}$ boulders. 
-Replacing the boulders with pebbles again, we are done.</p>"""@lv,
-        """<h2>Solution</h2>
 <p>Throughout the solution, we will consider the moves in reverse order.
 Namely, imagine we have some piles of pebbles, and we are allowed 
 to perform moves as follows: take a pile with an even number 
@@ -3394,27 +3574,9 @@ could allow choosing an equal number of pebbles from each of $k$ piles,
 where $k \\geqslant 2$ is a fixed (prime) integer. However, this seems 
 to yield a much harder problem - if $k=3$, numerical evidence suggests 
 the same answer as in the case $k=2$ (with powers of two replaced by 
-powers of three), but the case $k=5$ is already unclear.</p>"""@lv,
-        """<h2>Solution</h2>
-<p>We show an alternative strategy if $n$ is not a power of $2$. 
-Write $n$ in binary form: $n=2^{i_{1}}+2^{i_{2}}+\\cdots+2^{i_{k}}$, 
-where $i_{1}&gt;i_{2}&gt;\\cdots&gt;i_{k}$. Now we make piles of sizes 
-$2^{i_{1}}, 2^{i_{2}}, \\ldots, 2^{i_{k}}$. We call the pile with 
-$2^{i_{1}}$ the large pile, all the others are the small piles.</p>
-<p>The strategy is the following: take the two smallest small pile. 
-If they have the same size of $2^{a}$, we make a pile of size 
-$2^{a+1}$. If they have different sizes, we double the smaller 
-pile using the large pile (we allow the large pile to have a 
-negative number of pebbles: later we prove that it is not possible). 
-We call all the new piles small. When we have only one small pile, 
-we terminate the process: we have at most $2$ piles.</p>
-<p>After each move we have one less number of piles, and all the 
-piles have cardinality power of 2. The number of pebbles is 
-decreasing, and at the end of the process, it has a size of 
-$n-2^{i_{2}+1} \\geqslant n-2^{i_{1}}&gt;0$, thus we can manage 
-to have two piles.</p>"""@lv .
+powers of three), but the case $k=5$ is already unclear.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.C7 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.C7.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -3633,13 +3795,17 @@ by both starting tuples, a contradiction with the observation above.</p>
    familiarity with tropical geometry does not help when solving the problem.</li>
 </ol>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.C8 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.IMO_SHL.2022.C8.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
-Answer: $2 n^{2}-2 n+1$."""@lv,
-        """## Solution.
+Answer: $2 n^{2}-2 n+1$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p>Answer: $2 n^{2}-2 n+1$.</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.C8.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Solution.
 
 We will call any field that is only adjacent to fields with larger numbers a well. 
 Other fields will be called non-wells. Let us make a second $n \\times n$ board $B$ 
@@ -3760,11 +3926,9 @@ constructions for $A$ and $B$ are given for $n=5$.</p>
 <li>It is a natural idea to change the direction of the path: that way it can start anywhere, 
   but only can end in a well, which exactly means that we cannot extend the path. 
   This is just a reformulation of the problem, but can give some intuitions.</li>
-</ul>"""@lv,
-        """<h2>Solution</h2>
-<p>Answer: $2 n^{2}-2 n+1$.</p>"""@lv .
+</ul>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.C9 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.C9.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution 
 
@@ -4106,9 +4270,51 @@ $(-, 2y+1)$ contain only even numbers.</p>
   asks the number of odd numbers.</li>
 </ul>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.G1 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.IMO_SHL.2022.G1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Solution
+
+By the conditions we have $B C=D E, C T=E T$ and $T B=T D$, 
+so the triangles $T B C$ and $T D E$ are congruent, in particular 
+$\\angle B T C=\\angle D T E$.
+
+In triangles $T B Q$ and $T E S$ we have $\\angle T B Q=\\angle S E T$ 
+and $\\angle Q T B=180^{\\circ}-\\angle B T C=180^{\\circ}-$ $\\angle D T E=\\angle E T S$, 
+so these triangles are similar to each other. It follows that $\\angle T S E=\\angle B Q T$ and
+
+$$\\frac{T D}{T Q}=\\frac{T B}{T Q}=\\frac{T E}{T S}=\\frac{T C}{T S}$$
+
+By rearranging this relation we get $T D \\cdot T S=T C \\cdot T Q$, so 
+$C, D, Q$ and $S$ are concyclic. (Alternatively, we can get 
+$\\angle C Q D=\\angle C S D$ from the similar triangles $T C S$ and $T D Q$.) 
+Hence, $\\angle D C Q=\\angle D S Q$.
+
+Finally, from the angles of triangle $C Q P$ we get
+
+$$\\angle R P Q=\\angle R C Q-\\angle P Q C=\\angle D S Q-\\angle D S R=\\angle R S Q$$
+
+which proves that $P, Q, R$ and $S$ are concyclic.
+
+![](IMO_SHL.2022.G1A.png)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p>By the conditions we have $B C=D E, C T=E T$ and $T B=T D$, 
+so the triangles $T B C$ and $T D E$ are congruent, in particular 
+$\\angle B T C=\\angle D T E$.</p>
+<p>In triangles $T B Q$ and $T E S$ we have $\\angle T B Q=\\angle S E T$ 
+and $\\angle Q T B=180^{\\circ}-\\angle B T C=180^{\\circ}-$ $\\angle D T E=\\angle E T S$, 
+so these triangles are similar to each other. It follows that $\\angle T S E=\\angle B Q T$ and</p>
+<p>$$\\frac{T D}{T Q}=\\frac{T B}{T Q}=\\frac{T E}{T S}=\\frac{T C}{T S}$$</p>
+<p>By rearranging this relation we get $T D \\cdot T S=T C \\cdot T Q$, so 
+$C, D, Q$ and $S$ are concyclic. (Alternatively, we can get 
+$\\angle C Q D=\\angle C S D$ from the similar triangles $T C S$ and $T D Q$.) 
+Hence, $\\angle D C Q=\\angle D S Q$.</p>
+<p>Finally, from the angles of triangle $C Q P$ we get</p>
+<p>$$\\angle R P Q=\\angle R C Q-\\angle P Q C=\\angle D S Q-\\angle D S R=\\angle R S Q$$</p>
+<p>which proves that $P, Q, R$ and $S$ are concyclic.</p>
+<p><img alt="" src="IMO_SHL.2022.G1A.png" /></p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.G1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Solution
 
 As in the previous solution, we note that triangles $TBC$ and $TDE$ 
@@ -4134,31 +4340,7 @@ Thus $CD \\| VW$, and angle chasing yields
 
 $$\\angle R P Q=\\angle W V Q=\\angle W S Q=\\angle R S Q$$
 
-concluding the proof."""@lv,
-        """## Solution
-
-By the conditions we have $B C=D E, C T=E T$ and $T B=T D$, 
-so the triangles $T B C$ and $T D E$ are congruent, in particular 
-$\\angle B T C=\\angle D T E$.
-
-In triangles $T B Q$ and $T E S$ we have $\\angle T B Q=\\angle S E T$ 
-and $\\angle Q T B=180^{\\circ}-\\angle B T C=180^{\\circ}-$ $\\angle D T E=\\angle E T S$, 
-so these triangles are similar to each other. It follows that $\\angle T S E=\\angle B Q T$ and
-
-$$\\frac{T D}{T Q}=\\frac{T B}{T Q}=\\frac{T E}{T S}=\\frac{T C}{T S}$$
-
-By rearranging this relation we get $T D \\cdot T S=T C \\cdot T Q$, so 
-$C, D, Q$ and $S$ are concyclic. (Alternatively, we can get 
-$\\angle C Q D=\\angle C S D$ from the similar triangles $T C S$ and $T D Q$.) 
-Hence, $\\angle D C Q=\\angle D S Q$.
-
-Finally, from the angles of triangle $C Q P$ we get
-
-$$\\angle R P Q=\\angle R C Q-\\angle P Q C=\\angle D S Q-\\angle D S R=\\angle R S Q$$
-
-which proves that $P, Q, R$ and $S$ are concyclic.
-
-![](IMO_SHL.2022.G1A.png)"""@lv ;
+concluding the proof."""@lv ;
     eliozo:solutionTextHtml """<h2>Solution</h2>
 <p>As in the previous solution, we note that triangles $TBC$ and $TDE$ 
 are congruent. Denote the intersection point of $DT$ and $BA$ by $V$, 
@@ -4175,27 +4357,10 @@ $VTB$ and $WTE$ are similar, hence</p>
 <p>$$\\frac{VT}{WT} = \\frac{BT}{ET} = \\frac{DT}{CT}$$</p>
 <p>Thus $CD | VW$, and angle chasing yields</p>
 <p>$$\\angle R P Q=\\angle W V Q=\\angle W S Q=\\angle R S Q$$</p>
-<p>concluding the proof.</p>"""@lv,
-        """<h2>Solution</h2>
-<p>By the conditions we have $B C=D E, C T=E T$ and $T B=T D$, 
-so the triangles $T B C$ and $T D E$ are congruent, in particular 
-$\\angle B T C=\\angle D T E$.</p>
-<p>In triangles $T B Q$ and $T E S$ we have $\\angle T B Q=\\angle S E T$ 
-and $\\angle Q T B=180^{\\circ}-\\angle B T C=180^{\\circ}-$ $\\angle D T E=\\angle E T S$, 
-so these triangles are similar to each other. It follows that $\\angle T S E=\\angle B Q T$ and</p>
-<p>$$\\frac{T D}{T Q}=\\frac{T B}{T Q}=\\frac{T E}{T S}=\\frac{T C}{T S}$$</p>
-<p>By rearranging this relation we get $T D \\cdot T S=T C \\cdot T Q$, so 
-$C, D, Q$ and $S$ are concyclic. (Alternatively, we can get 
-$\\angle C Q D=\\angle C S D$ from the similar triangles $T C S$ and $T D Q$.) 
-Hence, $\\angle D C Q=\\angle D S Q$.</p>
-<p>Finally, from the angles of triangle $C Q P$ we get</p>
-<p>$$\\angle R P Q=\\angle R C Q-\\angle P Q C=\\angle D S Q-\\angle D S R=\\angle R S Q$$</p>
-<p>which proves that $P, Q, R$ and $S$ are concyclic.</p>
-<p><img alt="" src="IMO_SHL.2022.G1A.png" /></p>"""@lv .
+<p>concluding the proof.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.G2 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.IMO_SHL.2022.G2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
 Let $A^{\\prime}$ be the intersection of lines $B X$ and $C Y$. 
@@ -4220,15 +4385,7 @@ Point $A$, being a common point of the two circles, is another point
 with equal powers, so the radical axis of circles $ABDX$ and $ACEY$ 
 is the altitude $A F$ that passes through $A^{\\prime}$.
 
-![](IMO_SHL.2022.G2A.png)"""@lv,
-        """## Solution
-
-We present another way to prove that line $APA^{\\prime}$ is the 
-radical axis of the circles $A B D$ and $A C E$. It suffices to show 
-that the second intersection point of $ABD$ and $ACE$ lies on $AP$.
-
-Define $N$ to be the second intersection of circle $PDE$ and $AP$. 
-From $\\angle DNA = \\angle DNP =  \\angle DEP = \\angle DBA$ it follows that $N$ lies on circle $ABD$; analogously, we can show that $N$ lies on circle $A C E$."""@lv ;
+![](IMO_SHL.2022.G2A.png)"""@lv ;
     eliozo:solutionTextHtml """<h2>Solution</h2>
 <p>Let $A^{\\prime}$ be the intersection of lines $B X$ and $C Y$. 
 By power of a point, it suffices to prove that 
@@ -4248,17 +4405,27 @@ So, point $F$ has equal powers with respect to circles $ABDX$ and $ACEY$.</p>
 <p>Point $A$, being a common point of the two circles, is another point 
 with equal powers, so the radical axis of circles $ABDX$ and $ACEY$ 
 is the altitude $A F$ that passes through $A^{\\prime}$.</p>
-<p><img alt="" src="IMO_SHL.2022.G2A.png" /></p>"""@lv,
-        """<h2>Solution</h2>
+<p><img alt="" src="IMO_SHL.2022.G2A.png" /></p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.G2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Solution
+
+We present another way to prove that line $APA^{\\prime}$ is the 
+radical axis of the circles $A B D$ and $A C E$. It suffices to show 
+that the second intersection point of $ABD$ and $ACE$ lies on $AP$.
+
+Define $N$ to be the second intersection of circle $PDE$ and $AP$. 
+From $\\angle DNA = \\angle DNP =  \\angle DEP = \\angle DBA$ it follows that $N$ lies on circle $ABD$; analogously, we can show that $N$ lies on circle $A C E$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
 <p>We present another way to prove that line $APA^{\\prime}$ is the 
 radical axis of the circles $A B D$ and $A C E$. It suffices to show 
 that the second intersection point of $ABD$ and $ACE$ lies on $AP$.</p>
 <p>Define $N$ to be the second intersection of circle $PDE$ and $AP$. 
 From $\\angle DNA = \\angle DNP =  \\angle DEP = \\angle DBA$ it follows that $N$ lies on circle $ABD$; analogously, we can show that $N$ lies on circle $A C E$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.G3 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.IMO_SHL.2022.G3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
 We first prove that triangles $A D Q$ and $C D B$ are similar. Since $A B C D$ is 
@@ -4280,8 +4447,28 @@ that $BK$ is tangent to circle $BMP$.
 
 Comment. Note that $M$ and $N$ can be any points on lines $BC$ and 
 $AD$ such that $BM:MC = DN:NA$, as we then simply choose $R$ to be 
-such that $DR:RC$ is that same ratio, and the rest of the proof remains unchanged."""@lv,
-        """## Solution
+such that $DR:RC$ is that same ratio, and the rest of the proof remains unchanged."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p>We first prove that triangles $A D Q$ and $C D B$ are similar. Since $A B C D$ is 
+cyclic, we have $\\angle D A Q=\\angle D C B$. By the tangency of 
+$A C$ to the circle $A Q D$ we also have $\\angle C B D=\\angle C A D=\\angle A Q D$. 
+The claimed similarity is proven.</p>
+<p>Let $R$ be the midpoint of $C D$. Points $N$ and $R$ correspond in the proven 
+similarity, and so $\\angle Q N A=\\angle B R C$.</p>
+<p><img alt="" src="IMO_SHL.2022.G3A.png" /></p>
+<p>Let $K$ be the second common point of line $C D$ with circle $A B R$ (i.e., 
+if $C D$ intersects circle $A B R$, then $K \\neq R$ is the other intersection; 
+otherwise, if $C D$ is tangent to $C D$, then $K=R$ ). In both cases, 
+we have $\\angle B A K=\\angle B R C=\\angle Q N A$; that indicates that 
+$AK$ is tangent to circle $A N Q$. It can be showed analogously 
+that $BK$ is tangent to circle $BMP$.</p>
+<p>Comment. Note that $M$ and $N$ can be any points on lines $BC$ and 
+$AD$ such that $BM:MC = DN:NA$, as we then simply choose $R$ to be 
+such that $DR:RC$ is that same ratio, and the rest of the proof remains unchanged.</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.G3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Solution
 
 We present a second solution, without using the condition that $ABCD$ 
 is cyclic. Again, $M$ and $N$ can be any points on lines $BC$ and 
@@ -4310,23 +4497,6 @@ $$\\left(D,C ; T,K_{2}\\right)=\\left(BD,BC ; BT,BK_{2}\\right)=(PC,PB ; PJ,PM)=
 From $BM:MC = DN:DA$ we get $\\left(D,C ; T,K_{1}\\right) = \\left(D,C ; T,K_{2}\\right)$ 
 and hence $K_{1}=K_{2}$."""@lv ;
     eliozo:solutionTextHtml """<h2>Solution</h2>
-<p>We first prove that triangles $A D Q$ and $C D B$ are similar. Since $A B C D$ is 
-cyclic, we have $\\angle D A Q=\\angle D C B$. By the tangency of 
-$A C$ to the circle $A Q D$ we also have $\\angle C B D=\\angle C A D=\\angle A Q D$. 
-The claimed similarity is proven.</p>
-<p>Let $R$ be the midpoint of $C D$. Points $N$ and $R$ correspond in the proven 
-similarity, and so $\\angle Q N A=\\angle B R C$.</p>
-<p><img alt="" src="IMO_SHL.2022.G3A.png" /></p>
-<p>Let $K$ be the second common point of line $C D$ with circle $A B R$ (i.e., 
-if $C D$ intersects circle $A B R$, then $K \\neq R$ is the other intersection; 
-otherwise, if $C D$ is tangent to $C D$, then $K=R$ ). In both cases, 
-we have $\\angle B A K=\\angle B R C=\\angle Q N A$; that indicates that 
-$AK$ is tangent to circle $A N Q$. It can be showed analogously 
-that $BK$ is tangent to circle $BMP$.</p>
-<p>Comment. Note that $M$ and $N$ can be any points on lines $BC$ and 
-$AD$ such that $BM:MC = DN:NA$, as we then simply choose $R$ to be 
-such that $DR:RC$ is that same ratio, and the rest of the proof remains unchanged.</p>"""@lv,
-        """<h2>Solution</h2>
 <p>We present a second solution, without using the condition that $ABCD$ 
 is cyclic. Again, $M$ and $N$ can be any points on lines $BC$ and 
 $AD$ such that $BM:MC=DN:NA$.</p>
@@ -4347,9 +4517,8 @@ Hence,</p>
 <p>From $BM:MC = DN:DA$ we get $\\left(D,C ; T,K_{1}\\right) = \\left(D,C ; T,K_{2}\\right)$ 
 and hence $K_{1}=K_{2}$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.G4 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.IMO_SHL.2022.G4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
 Let $AO$ intersect $BC$ at $E$. As $EDW$ is a right-angled triangle 
@@ -4380,24 +4549,7 @@ Using $AZ \\| BC$ and $CDXZ$ cyclic we get:
 
 $$\\angle AZD = \\angle CDZ = \\angle CXZ = \\angle AYZ$$
 
-which by the converse of alternate segment theorem shows $DZ$ is tangent to circle $AXY$."""@lv,
-        """## Solution
-
-Notice that point $Z$ is the Miquel-point of lines $AC, BC, BA$ 
-and $DY$; then $B,D,Z,Y$ and $C,D,X,Y$ are concyclic. Moreover, 
-$Z$ is the centre of the spiral similarity that maps $BC$ to $YX$.
-
-By $BC \\perp YX$, the angle of that similarity is $90^{\\circ}$; 
-hence the circles $ABCZ$ and $AXYZ$ are perpendicular, therefore the 
-radius $OZ$ in circle $ABCZ$ is tangent to circle $AXYZ$.
-
-![](IMO_SHL.2022.G4B.png)
-
-By $OW = OD$, the triangle $OWD$ is isosceles, and
-
-$$\\angle ZOA = 2 \\angle ZBA = 2 \\angle ZBY = 2 \\angle ZDY = \\angle ODW + \\angle DWO$$
-
-so $D$ lies on line $ZO$ that is tangent to circle $AXY$."""@lv ;
+which by the converse of alternate segment theorem shows $DZ$ is tangent to circle $AXY$."""@lv ;
     eliozo:solutionTextHtml """<h2>Solution</h2>
 <p>Let $AO$ intersect $BC$ at $E$. As $EDW$ is a right-angled triangle 
 and $O$ is on $WE$, the condition $OW = OD$ means $O$ is the 
@@ -4417,8 +4569,28 @@ Using this and that $A,O,E$ are collinear:</p>
 <p>so $DXZ^{\\prime}C$ is cyclic, giving $Z \\equiv Z^{\\prime}$ as desired.</p>
 <p>Using $AZ | BC$ and $CDXZ$ cyclic we get:</p>
 <p>$$\\angle AZD = \\angle CDZ = \\angle CXZ = \\angle AYZ$$</p>
-<p>which by the converse of alternate segment theorem shows $DZ$ is tangent to circle $AXY$.</p>"""@lv,
-        """<h2>Solution</h2>
+<p>which by the converse of alternate segment theorem shows $DZ$ is tangent to circle $AXY$.</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.G4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Solution
+
+Notice that point $Z$ is the Miquel-point of lines $AC, BC, BA$ 
+and $DY$; then $B,D,Z,Y$ and $C,D,X,Y$ are concyclic. Moreover, 
+$Z$ is the centre of the spiral similarity that maps $BC$ to $YX$.
+
+By $BC \\perp YX$, the angle of that similarity is $90^{\\circ}$; 
+hence the circles $ABCZ$ and $AXYZ$ are perpendicular, therefore the 
+radius $OZ$ in circle $ABCZ$ is tangent to circle $AXYZ$.
+
+![](IMO_SHL.2022.G4B.png)
+
+By $OW = OD$, the triangle $OWD$ is isosceles, and
+
+$$\\angle ZOA = 2 \\angle ZBA = 2 \\angle ZBY = 2 \\angle ZDY = \\angle ODW + \\angle DWO$$
+
+so $D$ lies on line $ZO$ that is tangent to circle $AXY$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
 <p>Notice that point $Z$ is the Miquel-point of lines $AC, BC, BA$ 
 and $DY$; then $B,D,Z,Y$ and $C,D,X,Y$ are concyclic. Moreover, 
 $Z$ is the centre of the spiral similarity that maps $BC$ to $YX$.</p>
@@ -4430,9 +4602,102 @@ radius $OZ$ in circle $ABCZ$ is tangent to circle $AXYZ$.</p>
 <p>$$\\angle ZOA = 2 \\angle ZBA = 2 \\angle ZBY = 2 \\angle ZDY = \\angle ODW + \\angle DWO$$</p>
 <p>so $D$ lies on line $ZO$ that is tangent to circle $AXY$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.G5 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.IMO_SHL.2022.G5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Solution
+
+Throughout the solutions, $\\sphericalangle(p, q)$ will denote the 
+directed angle between lines $p$ and $q$, taken modulo $180^{\\circ}$.
+
+Let the vertices of $\\Delta_{i}$ be $D_{i}, E_{i}, F_{i}$, 
+such that lines $E_{i} F_{i}, F_{i} D_{i}$ and $D_{i} E_{i}$ are the perpendiculars through $X, Y$ and $Z$, respectively, and denote the 
+circumcircle of $\\Delta_{i}$ by $\\omega_{i}$.
+
+In triangles $D_{1} Y_{1} Z_{1}$ and $D_{2} Y_{2} Z_{2}$ we have 
+$Y_{1} Z_{1} \\| Y_{2} Z_{2}$ because they are parts of $\\ell_{1}$ 
+and $\\ell_{2}$. Moreover, $D_{1} Y_{1} \\| D_{2} Y_{2}$ are 
+perpendicular to $A C$ and $D_{1} Z_{1} \\| D_{2} Z_{2}$ are 
+perpendicular to $A B$, so the two triangles are homothetic 
+and their homothetic centre is $Y_{1} Y_{2} \\cap Z_{1} Z_{2}=A$. 
+Hence, line $D_{1} D_{2}$ passes through $A$. Analogously, 
+line $E_{1} E_{2}$ passes through $B$ and $F_{1} F_{2}$ passes through $C$.
+
+![](IMO_SHL.2022.G5A.png)
+
+The corresponding sides of $\\Delta_{1}$ and $\\Delta_{2}$ are parallel, 
+because they are perpendicular to the respective sides of triangle $ABC$. 
+Hence, $\\Delta_{1}$ and $\\Delta_{2}$ are either homothetic, or they can be
+translated to each other. Using that $B, X_{2}, Z_{2}$ and $E_{2}$ are concyclic,
+$C, X_{2}, Y_{2}$ and $F_{2}$ are concyclic, $Z_{2}E_{2} \\perp AB$ and 
+$Y_{2}, F_{2} \\perp A C$ we can calculate
+
+$$\\begin{align*}
+\\sphericalangle\\left(E_{1} E_{2}, F_{1} F_{2}\\right) & =\\sphericalangle\\left(E_{1} E_{2}, X_{1} X_{2}\\right)+\\sphericalangle\\left(X_{1} X_{2}, F_{1} F_{2}\\right)=\\sphericalangle\\left(B E_{2}, B X_{2}\\right)+\\sphericalangle\\left(C X_{2}, C F_{2}\\right) \\\\
+& =\\sphericalangle\\left(Z_{2} E_{2}, Z_{2} X_{2}\\right)+\\sphericalangle\\left(Y_{2} X_{2}, Y_{2} F_{2}\\right)=\\sphericalangle\\left(Z_{2} E_{2}, \\ell_{2}\\right)+\\sphericalangle\\left(\\ell_{2}, Y_{2} F_{2}\\right) \\\\
+& =\\sphericalangle\\left(Z_{2} E_{2}, Y_{2} F_{2}\\right)=\\sphericalangle(A B, A C) \\not \\equiv 0, \\tag{1}
+\\end{align*}$$
+
+and conclude that lines $E_{1} E_{2}$ and $F_{1} F_{2}$ are not parallel. 
+Hence, $\\Delta_{1}$ and $\\Delta_{2}$ are homothetic; the lines 
+$D_{1}D_{2}, E_{1}E_{2}$, and $F_{1}F_{2}$ are concurrent at the 
+homothetic centre of the two triangles. Denote this homothetic centre by $H$.
+
+For $i=1,2$, using (1), and that $A, Y_{i}, Z_{i}$ and $D_{i}$ are concyclic,
+
+$$\\begin{aligned}
+\\sphericalangle\\left(H E_{i}, H F_{i}\\right) & =\\sphericalangle\\left(E_{1} E_{2}, F_{1} F_{2}\\right)=\\sphericalangle(A B, A C) \\\\
+& =\\sphericalangle\\left(A Z_{i}, A Y_{i}\\right)=\\sphericalangle\\left(D_{i} Z_{i}, D_{i} Y_{i}\\right)=\\sphericalangle\\left(D_{i} E_{i}, D_{i} F_{i}\\right)
+\\end{aligned}$$
+
+so $H$ lies on circle $\\omega_{i}$.
+
+The same homothety that maps $\\Delta_{1}$ to $\\Delta_{2}$, sends $\\omega_{1}$ 
+to $\\omega_{2}$ as well. Point $H$, that is the centre of the homothety, 
+is a common point of the two circles, That finishes proving that $\\omega_{1}$ 
+and $\\omega_{2}$ are tangent to each other."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p>Throughout the solutions, $\\sphericalangle(p, q)$ will denote the 
+directed angle between lines $p$ and $q$, taken modulo $180^{\\circ}$.</p>
+<p>Let the vertices of $\\Delta_{i}$ be $D_{i}, E_{i}, F_{i}$, 
+such that lines $E_{i} F_{i}, F_{i} D_{i}$ and $D_{i} E_{i}$ are the perpendiculars through $X, Y$ and $Z$, respectively, and denote the 
+circumcircle of $\\Delta_{i}$ by $\\omega_{i}$.</p>
+<p>In triangles $D_{1} Y_{1} Z_{1}$ and $D_{2} Y_{2} Z_{2}$ we have 
+$Y_{1} Z_{1} | Y_{2} Z_{2}$ because they are parts of $\\ell_{1}$ 
+and $\\ell_{2}$. Moreover, $D_{1} Y_{1} | D_{2} Y_{2}$ are 
+perpendicular to $A C$ and $D_{1} Z_{1} | D_{2} Z_{2}$ are 
+perpendicular to $A B$, so the two triangles are homothetic 
+and their homothetic centre is $Y_{1} Y_{2} \\cap Z_{1} Z_{2}=A$. 
+Hence, line $D_{1} D_{2}$ passes through $A$. Analogously, 
+line $E_{1} E_{2}$ passes through $B$ and $F_{1} F_{2}$ passes through $C$.</p>
+<p><img alt="" src="IMO_SHL.2022.G5A.png" /></p>
+<p>The corresponding sides of $\\Delta_{1}$ and $\\Delta_{2}$ are parallel, 
+because they are perpendicular to the respective sides of triangle $ABC$. 
+Hence, $\\Delta_{1}$ and $\\Delta_{2}$ are either homothetic, or they can be
+translated to each other. Using that $B, X_{2}, Z_{2}$ and $E_{2}$ are concyclic,
+$C, X_{2}, Y_{2}$ and $F_{2}$ are concyclic, $Z_{2}E_{2} \\perp AB$ and 
+$Y_{2}, F_{2} \\perp A C$ we can calculate</p>
+<p>$$\\begin{align<em>}
+\\sphericalangle\\left(E_{1} E_{2}, F_{1} F_{2}\\right) &amp; =\\sphericalangle\\left(E_{1} E_{2}, X_{1} X_{2}\\right)+\\sphericalangle\\left(X_{1} X_{2}, F_{1} F_{2}\\right)=\\sphericalangle\\left(B E_{2}, B X_{2}\\right)+\\sphericalangle\\left(C X_{2}, C F_{2}\\right) \\
+&amp; =\\sphericalangle\\left(Z_{2} E_{2}, Z_{2} X_{2}\\right)+\\sphericalangle\\left(Y_{2} X_{2}, Y_{2} F_{2}\\right)=\\sphericalangle\\left(Z_{2} E_{2}, \\ell_{2}\\right)+\\sphericalangle\\left(\\ell_{2}, Y_{2} F_{2}\\right) \\
+&amp; =\\sphericalangle\\left(Z_{2} E_{2}, Y_{2} F_{2}\\right)=\\sphericalangle(A B, A C) \\not \\equiv 0, \\tag{1}
+\\end{align</em>}$$</p>
+<p>and conclude that lines $E_{1} E_{2}$ and $F_{1} F_{2}$ are not parallel. 
+Hence, $\\Delta_{1}$ and $\\Delta_{2}$ are homothetic; the lines 
+$D_{1}D_{2}, E_{1}E_{2}$, and $F_{1}F_{2}$ are concurrent at the 
+homothetic centre of the two triangles. Denote this homothetic centre by $H$.</p>
+<p>For $i=1,2$, using (1), and that $A, Y_{i}, Z_{i}$ and $D_{i}$ are concyclic,</p>
+<p>$$\\begin{aligned}
+\\sphericalangle\\left(H E_{i}, H F_{i}\\right) &amp; =\\sphericalangle\\left(E_{1} E_{2}, F_{1} F_{2}\\right)=\\sphericalangle(A B, A C) \\
+&amp; =\\sphericalangle\\left(A Z_{i}, A Y_{i}\\right)=\\sphericalangle\\left(D_{i} Z_{i}, D_{i} Y_{i}\\right)=\\sphericalangle\\left(D_{i} E_{i}, D_{i} F_{i}\\right)
+\\end{aligned}$$</p>
+<p>so $H$ lies on circle $\\omega_{i}$.</p>
+<p>The same homothety that maps $\\Delta_{1}$ to $\\Delta_{2}$, sends $\\omega_{1}$ 
+to $\\omega_{2}$ as well. Point $H$, that is the centre of the homothety, 
+is a common point of the two circles, That finishes proving that $\\omega_{1}$ 
+and $\\omega_{2}$ are tangent to each other.</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.G5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Solution
 
 As in the first solution, let the vertices of $\\Delta_{i}$ be $D_{i}, E_{i}, F_{i}$, 
@@ -4508,58 +4773,7 @@ Hence, all circles $D E F$ passes through a fixed point.
 
 The corresponding sides of triangles $A B C$ and $D E F$ are perpendicular, 
 so their circumcircle are perpendicular; that proves that circle $DEF$ 
-is tangent to the radius of circle $ABC$ at $H$."""@lv,
-        """## Solution
-
-Throughout the solutions, $\\sphericalangle(p, q)$ will denote the 
-directed angle between lines $p$ and $q$, taken modulo $180^{\\circ}$.
-
-Let the vertices of $\\Delta_{i}$ be $D_{i}, E_{i}, F_{i}$, 
-such that lines $E_{i} F_{i}, F_{i} D_{i}$ and $D_{i} E_{i}$ are the perpendiculars through $X, Y$ and $Z$, respectively, and denote the 
-circumcircle of $\\Delta_{i}$ by $\\omega_{i}$.
-
-In triangles $D_{1} Y_{1} Z_{1}$ and $D_{2} Y_{2} Z_{2}$ we have 
-$Y_{1} Z_{1} \\| Y_{2} Z_{2}$ because they are parts of $\\ell_{1}$ 
-and $\\ell_{2}$. Moreover, $D_{1} Y_{1} \\| D_{2} Y_{2}$ are 
-perpendicular to $A C$ and $D_{1} Z_{1} \\| D_{2} Z_{2}$ are 
-perpendicular to $A B$, so the two triangles are homothetic 
-and their homothetic centre is $Y_{1} Y_{2} \\cap Z_{1} Z_{2}=A$. 
-Hence, line $D_{1} D_{2}$ passes through $A$. Analogously, 
-line $E_{1} E_{2}$ passes through $B$ and $F_{1} F_{2}$ passes through $C$.
-
-![](IMO_SHL.2022.G5A.png)
-
-The corresponding sides of $\\Delta_{1}$ and $\\Delta_{2}$ are parallel, 
-because they are perpendicular to the respective sides of triangle $ABC$. 
-Hence, $\\Delta_{1}$ and $\\Delta_{2}$ are either homothetic, or they can be
-translated to each other. Using that $B, X_{2}, Z_{2}$ and $E_{2}$ are concyclic,
-$C, X_{2}, Y_{2}$ and $F_{2}$ are concyclic, $Z_{2}E_{2} \\perp AB$ and 
-$Y_{2}, F_{2} \\perp A C$ we can calculate
-
-$$\\begin{align*}
-\\sphericalangle\\left(E_{1} E_{2}, F_{1} F_{2}\\right) & =\\sphericalangle\\left(E_{1} E_{2}, X_{1} X_{2}\\right)+\\sphericalangle\\left(X_{1} X_{2}, F_{1} F_{2}\\right)=\\sphericalangle\\left(B E_{2}, B X_{2}\\right)+\\sphericalangle\\left(C X_{2}, C F_{2}\\right) \\\\
-& =\\sphericalangle\\left(Z_{2} E_{2}, Z_{2} X_{2}\\right)+\\sphericalangle\\left(Y_{2} X_{2}, Y_{2} F_{2}\\right)=\\sphericalangle\\left(Z_{2} E_{2}, \\ell_{2}\\right)+\\sphericalangle\\left(\\ell_{2}, Y_{2} F_{2}\\right) \\\\
-& =\\sphericalangle\\left(Z_{2} E_{2}, Y_{2} F_{2}\\right)=\\sphericalangle(A B, A C) \\not \\equiv 0, \\tag{1}
-\\end{align*}$$
-
-and conclude that lines $E_{1} E_{2}$ and $F_{1} F_{2}$ are not parallel. 
-Hence, $\\Delta_{1}$ and $\\Delta_{2}$ are homothetic; the lines 
-$D_{1}D_{2}, E_{1}E_{2}$, and $F_{1}F_{2}$ are concurrent at the 
-homothetic centre of the two triangles. Denote this homothetic centre by $H$.
-
-For $i=1,2$, using (1), and that $A, Y_{i}, Z_{i}$ and $D_{i}$ are concyclic,
-
-$$\\begin{aligned}
-\\sphericalangle\\left(H E_{i}, H F_{i}\\right) & =\\sphericalangle\\left(E_{1} E_{2}, F_{1} F_{2}\\right)=\\sphericalangle(A B, A C) \\\\
-& =\\sphericalangle\\left(A Z_{i}, A Y_{i}\\right)=\\sphericalangle\\left(D_{i} Z_{i}, D_{i} Y_{i}\\right)=\\sphericalangle\\left(D_{i} E_{i}, D_{i} F_{i}\\right)
-\\end{aligned}$$
-
-so $H$ lies on circle $\\omega_{i}$.
-
-The same homothety that maps $\\Delta_{1}$ to $\\Delta_{2}$, sends $\\omega_{1}$ 
-to $\\omega_{2}$ as well. Point $H$, that is the centre of the homothety, 
-is a common point of the two circles, That finishes proving that $\\omega_{1}$ 
-and $\\omega_{2}$ are tangent to each other."""@lv ;
+is tangent to the radius of circle $ABC$ at $H$."""@lv ;
     eliozo:solutionTextHtml """<h2>Solution</h2>
 <p>As in the first solution, let the vertices of $\\Delta_{i}$ be $D_{i}, E_{i}, F_{i}$, 
 such that $E_{i} F_{i}, F_{i} D_{i}$ and $D_{i} E_{i}$ are the perpendiculars 
@@ -4619,49 +4833,9 @@ so $H$ is independent of the position of line $\\ell$.</p>
 Hence, all circles $D E F$ passes through a fixed point.</p>
 <p>The corresponding sides of triangles $A B C$ and $D E F$ are perpendicular, 
 so their circumcircle are perpendicular; that proves that circle $DEF$ 
-is tangent to the radius of circle $ABC$ at $H$.</p>"""@lv,
-        """<h2>Solution</h2>
-<p>Throughout the solutions, $\\sphericalangle(p, q)$ will denote the 
-directed angle between lines $p$ and $q$, taken modulo $180^{\\circ}$.</p>
-<p>Let the vertices of $\\Delta_{i}$ be $D_{i}, E_{i}, F_{i}$, 
-such that lines $E_{i} F_{i}, F_{i} D_{i}$ and $D_{i} E_{i}$ are the perpendiculars through $X, Y$ and $Z$, respectively, and denote the 
-circumcircle of $\\Delta_{i}$ by $\\omega_{i}$.</p>
-<p>In triangles $D_{1} Y_{1} Z_{1}$ and $D_{2} Y_{2} Z_{2}$ we have 
-$Y_{1} Z_{1} | Y_{2} Z_{2}$ because they are parts of $\\ell_{1}$ 
-and $\\ell_{2}$. Moreover, $D_{1} Y_{1} | D_{2} Y_{2}$ are 
-perpendicular to $A C$ and $D_{1} Z_{1} | D_{2} Z_{2}$ are 
-perpendicular to $A B$, so the two triangles are homothetic 
-and their homothetic centre is $Y_{1} Y_{2} \\cap Z_{1} Z_{2}=A$. 
-Hence, line $D_{1} D_{2}$ passes through $A$. Analogously, 
-line $E_{1} E_{2}$ passes through $B$ and $F_{1} F_{2}$ passes through $C$.</p>
-<p><img alt="" src="IMO_SHL.2022.G5A.png" /></p>
-<p>The corresponding sides of $\\Delta_{1}$ and $\\Delta_{2}$ are parallel, 
-because they are perpendicular to the respective sides of triangle $ABC$. 
-Hence, $\\Delta_{1}$ and $\\Delta_{2}$ are either homothetic, or they can be
-translated to each other. Using that $B, X_{2}, Z_{2}$ and $E_{2}$ are concyclic,
-$C, X_{2}, Y_{2}$ and $F_{2}$ are concyclic, $Z_{2}E_{2} \\perp AB$ and 
-$Y_{2}, F_{2} \\perp A C$ we can calculate</p>
-<p>$$\\begin{align<em>}
-\\sphericalangle\\left(E_{1} E_{2}, F_{1} F_{2}\\right) &amp; =\\sphericalangle\\left(E_{1} E_{2}, X_{1} X_{2}\\right)+\\sphericalangle\\left(X_{1} X_{2}, F_{1} F_{2}\\right)=\\sphericalangle\\left(B E_{2}, B X_{2}\\right)+\\sphericalangle\\left(C X_{2}, C F_{2}\\right) \\
-&amp; =\\sphericalangle\\left(Z_{2} E_{2}, Z_{2} X_{2}\\right)+\\sphericalangle\\left(Y_{2} X_{2}, Y_{2} F_{2}\\right)=\\sphericalangle\\left(Z_{2} E_{2}, \\ell_{2}\\right)+\\sphericalangle\\left(\\ell_{2}, Y_{2} F_{2}\\right) \\
-&amp; =\\sphericalangle\\left(Z_{2} E_{2}, Y_{2} F_{2}\\right)=\\sphericalangle(A B, A C) \\not \\equiv 0, \\tag{1}
-\\end{align</em>}$$</p>
-<p>and conclude that lines $E_{1} E_{2}$ and $F_{1} F_{2}$ are not parallel. 
-Hence, $\\Delta_{1}$ and $\\Delta_{2}$ are homothetic; the lines 
-$D_{1}D_{2}, E_{1}E_{2}$, and $F_{1}F_{2}$ are concurrent at the 
-homothetic centre of the two triangles. Denote this homothetic centre by $H$.</p>
-<p>For $i=1,2$, using (1), and that $A, Y_{i}, Z_{i}$ and $D_{i}$ are concyclic,</p>
-<p>$$\\begin{aligned}
-\\sphericalangle\\left(H E_{i}, H F_{i}\\right) &amp; =\\sphericalangle\\left(E_{1} E_{2}, F_{1} F_{2}\\right)=\\sphericalangle(A B, A C) \\
-&amp; =\\sphericalangle\\left(A Z_{i}, A Y_{i}\\right)=\\sphericalangle\\left(D_{i} Z_{i}, D_{i} Y_{i}\\right)=\\sphericalangle\\left(D_{i} E_{i}, D_{i} F_{i}\\right)
-\\end{aligned}$$</p>
-<p>so $H$ lies on circle $\\omega_{i}$.</p>
-<p>The same homothety that maps $\\Delta_{1}$ to $\\Delta_{2}$, sends $\\omega_{1}$ 
-to $\\omega_{2}$ as well. Point $H$, that is the centre of the homothety, 
-is a common point of the two circles, That finishes proving that $\\omega_{1}$ 
-and $\\omega_{2}$ are tangent to each other.</p>"""@lv .
+is tangent to the radius of circle $ABC$ at $H$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.G6 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.G6.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -4827,7 +5001,7 @@ But the three points $H, K$ and $P$, together with the tangents at $H$ and
 $P$ uniquely determine $\\mathcal{H}^{\\prime}$, so indeed 
 $\\mathcal{H}^{\\prime}=\\mathcal{H}$.)</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.G7 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.G7.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -5064,7 +5238,7 @@ the involution $\\sigma$ also swaps $E$ and $F$. Hence</p>
 $\\omega, \\Omega$, and $\\rho$, and by the same arguments there exist 
 points on $B B^{\\prime}$ and $C C^{\\prime}$ with this property.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.G8 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.G8.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -5177,7 +5351,7 @@ must be on the line $T B B^{\\prime}$. However, it is on line $A B$,
 so it must be $B$ and $B C$ must be tangent to $\\Omega_{0}$ as desired.</p>
 <p><img alt="" src="IMO_SHL.2022.G8C.png" /></p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.N1 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.N1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -5263,7 +5437,7 @@ which implies that $3 c+2 \\mid 2^{3} \\cdot 337$. But since
 $3c+2 \\geqslant 3 \\cdot 3+2&gt;8=2^{3}$ and $3c+2 \\neq 337$, then it must hold that 
 $3c+2 \\geqslant 2 \\cdot 337$, contradicting $c&lt;224$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.N2 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.N2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -5312,10 +5486,8 @@ $p_{m}=p_{m-2}+4$. This implies $sp_{m-2}=3$ and thus $p_{m}=7$, giving $7 \\leq
 <p>Finally, a quick computation shows that $7! \\mid \\prod_{p&lt;q \\leqslant 7}(p+q)$ 
 but $8!\\nmid \\prod_{p&lt;q \\leqslant 7}(p+q)$, so neither does $9!$ and $10!$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.N3 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1,
-        2 ;
+eliozo:SOLN.IMO_SHL.2022.N3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
 *Answer:* $n$ is the exponent with $d<a^{n}<a d$.
@@ -5339,8 +5511,28 @@ in both cases $x_{k_{0}}<d<a^{n}<d a$ and therefore
 $$x_{k_{0}} \\in\\left\\{a^{n}-d, a^{n}-2 d, \\ldots, a^{n}-(a-1) d\\right\\}$$
 
 In this set no element is divisible by $a$, so therefore the sequence 
-will visit the value $a^{n}$ in the next $a-1$ steps."""@lv,
-        """## Solution
+will visit the value $a^{n}$ in the next $a-1$ steps."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p><em>Answer:</em> $n$ is the exponent with $d&lt;a^{n}&lt;a d$.</p>
+<p>By trivial induction, $x_{k}$ is coprime to $d$.</p>
+<p>By induction and the fact that there can be at most $a-1$ consecutive 
+increasing terms in the sequence, it also holds that $x_{k}&lt;d a$ if 
+$x_{k}=x_{k-1}+d$ and that $x_{k}&lt;d$ if $x_{k}=\\frac{x_{k-1}}{a}$ or $k=1$. 
+This gives the upper bound on the exponent.</p>
+<p>This implies that the sequence is (eventually) periodic, 
+and that both increasing and decreasing steps happen infinitely many times. 
+Let $a^{-k}$ be the multiplicative inverse of $a^{k}$ modulo $d$. 
+The sequence contains elements congruent to $1, a^{-1}, a^{-2}, \\ldots$ modulo $d$.</p>
+<p>Let $x_{k_{0}}$ the first element such that $x_{k_{0}} \\equiv a^{-n}(\\bmod d)$. 
+We have either $k_{0}=1$ or $x_{k_{0}}=$ $x_{k_{0}-1} / a$; 
+in both cases $x_{k_{0}}&lt;d&lt;a^{n}&lt;d a$ and therefore</p>
+<p>$$x_{k_{0}} \\in\\left{a^{n}-d, a^{n}-2 d, \\ldots, a^{n}-(a-1) d\\right}$$</p>
+<p>In this set no element is divisible by $a$, so therefore the sequence 
+will visit the value $a^{n}$ in the next $a-1$ steps.</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.N3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Solution
 
 Like in the first solution, $x_{k}$ is relatively prime to $d$ and $x_{k}<a d$ for all $k$.
 
@@ -5363,8 +5555,27 @@ a \\cdot y & \\text { if } y<d
 It follows that the sequence is periodic, and therefore attains the initial 
 value 1 infinitely many times. Let $k_{1}>1$ be an index such that $x_{k_{1}}=1$. Then
 
-$$x_{k_{1}}=1, \\quad x_{k_{1}-1}=f^{-1}(1)=a, x_{k_{1}-2}=f^{-1}(a)=a^{2}, \\ldots, \\quad x_{k_{1}-n}=a^{n}$$"""@lv,
-        """## Solution 
+$$x_{k_{1}}=1, \\quad x_{k_{1}-1}=f^{-1}(1)=a, x_{k_{1}-2}=f^{-1}(a)=a^{2}, \\ldots, \\quad x_{k_{1}-n}=a^{n}$$"""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p>Like in the first solution, $x_{k}$ is relatively prime to $d$ and $x_{k}&lt;a d$ for all $k$.</p>
+<p>Let</p>
+<p>$$S=\\left{x \\in \\mathbb{Z}_{&gt;0}: 0&lt;x&lt;a d, \\operatorname{gcd}(x, d)=1\\right} \\quad \\text { and } \\quad f: S \\rightarrow S, f(x)= \\begin{cases}x+d &amp; \\text { if } a \\nmid x \\ x / a &amp; \\text { if } a \\mid x\\end{cases}$$</p>
+<p>So, we have $x_{1}=1$ and $x_{k+1}=f\\left(x_{k}\\right)$.</p>
+<p>Notice that the recurrence formula is invertible. Suppose that $f(x)=y$ for some 
+$x, y \\in S$. If $y&gt;d$ then $y-d \\in S$ but $a \\cdot y \\notin S$; otherwise, 
+if $y&lt;d$ then $a \\cdot y \\in S$ but $y-d \\notin S$. So, the function $f$ 
+is a permutation on $S$, and its inverse is</p>
+<p>$$f^{-1}(y)=\\left{\\begin{array}{ll}
+y-d &amp; \\text { if } y&gt;d, \\
+a \\cdot y &amp; \\text { if } y&lt;d
+\\end{array} \\quad \\text { for all } y \\in S\\right.$$</p>
+<p>It follows that the sequence is periodic, and therefore attains the initial 
+value 1 infinitely many times. Let $k_{1}&gt;1$ be an index such that $x_{k_{1}}=1$. Then</p>
+<p>$$x_{k_{1}}=1, \\quad x_{k_{1}-1}=f^{-1}(1)=a, x_{k_{1}-2}=f^{-1}(a)=a^{2}, \\ldots, \\quad x_{k_{1}-n}=a^{n}$$</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.N3.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
+    eliozo:solutionText """## Solution 
 
 Like in the first solution, $x_{k}$ is relatively prime to $d$ and $x_{k}<a d$ for all $k$.
 
@@ -5404,39 +5615,6 @@ This implies that on the RHS, the coefficients of $a^{v-n}, a^{v-n+1}, \\ldots$
 must all be zero, i.e. $z_{v-n}=z_{v-n+1}=\\cdots=z_{v-1}=0$.
 This implies that there are $n$ consecutive decreasing indices in the original sequence."""@lv ;
     eliozo:solutionTextHtml """<h2>Solution</h2>
-<p><em>Answer:</em> $n$ is the exponent with $d&lt;a^{n}&lt;a d$.</p>
-<p>By trivial induction, $x_{k}$ is coprime to $d$.</p>
-<p>By induction and the fact that there can be at most $a-1$ consecutive 
-increasing terms in the sequence, it also holds that $x_{k}&lt;d a$ if 
-$x_{k}=x_{k-1}+d$ and that $x_{k}&lt;d$ if $x_{k}=\\frac{x_{k-1}}{a}$ or $k=1$. 
-This gives the upper bound on the exponent.</p>
-<p>This implies that the sequence is (eventually) periodic, 
-and that both increasing and decreasing steps happen infinitely many times. 
-Let $a^{-k}$ be the multiplicative inverse of $a^{k}$ modulo $d$. 
-The sequence contains elements congruent to $1, a^{-1}, a^{-2}, \\ldots$ modulo $d$.</p>
-<p>Let $x_{k_{0}}$ the first element such that $x_{k_{0}} \\equiv a^{-n}(\\bmod d)$. 
-We have either $k_{0}=1$ or $x_{k_{0}}=$ $x_{k_{0}-1} / a$; 
-in both cases $x_{k_{0}}&lt;d&lt;a^{n}&lt;d a$ and therefore</p>
-<p>$$x_{k_{0}} \\in\\left{a^{n}-d, a^{n}-2 d, \\ldots, a^{n}-(a-1) d\\right}$$</p>
-<p>In this set no element is divisible by $a$, so therefore the sequence 
-will visit the value $a^{n}$ in the next $a-1$ steps.</p>"""@lv,
-        """<h2>Solution</h2>
-<p>Like in the first solution, $x_{k}$ is relatively prime to $d$ and $x_{k}&lt;a d$ for all $k$.</p>
-<p>Let</p>
-<p>$$S=\\left{x \\in \\mathbb{Z}_{&gt;0}: 0&lt;x&lt;a d, \\operatorname{gcd}(x, d)=1\\right} \\quad \\text { and } \\quad f: S \\rightarrow S, f(x)= \\begin{cases}x+d &amp; \\text { if } a \\nmid x \\ x / a &amp; \\text { if } a \\mid x\\end{cases}$$</p>
-<p>So, we have $x_{1}=1$ and $x_{k+1}=f\\left(x_{k}\\right)$.</p>
-<p>Notice that the recurrence formula is invertible. Suppose that $f(x)=y$ for some 
-$x, y \\in S$. If $y&gt;d$ then $y-d \\in S$ but $a \\cdot y \\notin S$; otherwise, 
-if $y&lt;d$ then $a \\cdot y \\in S$ but $y-d \\notin S$. So, the function $f$ 
-is a permutation on $S$, and its inverse is</p>
-<p>$$f^{-1}(y)=\\left{\\begin{array}{ll}
-y-d &amp; \\text { if } y&gt;d, \\
-a \\cdot y &amp; \\text { if } y&lt;d
-\\end{array} \\quad \\text { for all } y \\in S\\right.$$</p>
-<p>It follows that the sequence is periodic, and therefore attains the initial 
-value 1 infinitely many times. Let $k_{1}&gt;1$ be an index such that $x_{k_{1}}=1$. Then</p>
-<p>$$x_{k_{1}}=1, \\quad x_{k_{1}-1}=f^{-1}(1)=a, x_{k_{1}-2}=f^{-1}(a)=a^{2}, \\ldots, \\quad x_{k_{1}-n}=a^{n}$$</p>"""@lv,
-        """<h2>Solution</h2>
 <p>Like in the first solution, $x_{k}$ is relatively prime to $d$ and $x_{k}&lt;a d$ for all $k$.</p>
 <p>We wish to prove that there are $n$ consecutive decreasing indices. Let 
 $m_{0}=0$ and $m_{k}$ be the $k$-th smallest decreasing index (an index 
@@ -5462,11 +5640,8 @@ This implies that on the RHS, the coefficients of $a^{v-n}, a^{v-n+1}, \\ldots$
 must all be zero, i.e. $z_{v-n}=z_{v-n+1}=\\cdots=z_{v-1}=0$.
 This implies that there are $n$ consecutive decreasing indices in the original sequence.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.N4 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1,
-        2,
-        3 ;
+eliozo:SOLN.IMO_SHL.2022.N4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
 *Answer:* $(2,2,2)$ and $(3,4,3)$.
@@ -5503,18 +5678,38 @@ $$\\nu_{2}((p+1)!) \\leqslant \\nu_{2}(b!) = \\nu_{2}\\left(p^{p-1}-1\\right) \\
 
 where in the middle we used lifting-the-exponent lemma. On the RHS we have three 
 factors of $(p+1)!$. But, due to $p+1 \\geqslant 8$, there are at least $4$ even 
-numbers among $1,2, \\ldots, p+1$, so this case is not possible."""@lv,
-        """## Solution
+numbers among $1,2, \\ldots, p+1$, so this case is not possible."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p><em>Answer:</em> $(2,2,2)$ and $(3,4,3)$.</p>
+<p>Clearly, $a&gt;1$. We consider three cases.</p>
+<p><strong>Case 1:</strong> We have $a<p$. Then we either have $a \\leqslant b$ which implies 
+$a \\mid a^{p}-b!=p$ leading to a contradiction, or $a>b$ which is also impossible 
+since in this case we have $b!\\leqslant a!<a^{p}-p$, where the last 
+inequality is true for any $p>a&gt;1$.</p>
+<p><strong>Case 2:</strong> We have $a&gt;p$. In this case $b!=a^{p}-p&gt;p^{p}-p \\geqslant p!$ so $b&gt;p$ 
+which means that $a^{p}=b!+p$ is divisible by $p$. Hence, $a$ is divisible by $p$ 
+and $b!=a^{p}-p$ is not divisible by $p^{2}$. This means that $b&lt;2 p$. If $a&lt;p^{2}$ 
+then $a / p<p$ divides both $a^{p}$ and $b!$ and hence it also divides 
+$p=a^{p}-b!$ which is impossible. On the other hand, 
+the case $a \\geqslant p^{2}$ is also impossible since then 
+$a^{p} \\geqslant\\left(p^{2}\\right)^{p}>(2 p-1)!+p \\geqslant b!+p$.</p>
+<p><strong>Comment.</strong> The inequality $p^{2 p}&gt;(2 p-1)!+p$ can be shown e.g. by using</p>
+<p>$$(2p-1)!=[1 \\cdot(2 p-1)] \\cdot[2 \\cdot(2 p-2)] \\cdots \\cdots[(p-1)(p+1)] \\cdot p &lt; 
+\\left(\\left(\\frac{2 p}{2}\\right)^{2}\\right)^{p-1} \\cdot p=p^{2 p-1}$$</p>
+<p>where the inequality comes from applying AM-GM to each of the terms in square brackets.</p>
+<p><strong>Case 3:</strong> We have $a=p$. In this case $b!=p^{p}-p$. One can check that 
+the values $p=2,3$ lead to the claimed solutions and $p=5$ does not lead to a solution. 
+So we now assume that $p \\geqslant 7$. 
+We have $b!=p^{p}-p&gt;p!$ and so $b \\geqslant p+1$ which implies that</p>
+<p>$$\\nu_{2}((p+1)!) \\leqslant \\nu_{2}(b!) = \\nu_{2}\\left(p^{p-1}-1\\right) \\stackrel{LTE}{=} 
+2\\nu_{2}(p-1) + \\nu_{2}(p+1)-1 = \\nu_{2}\\left(\\frac{p-1}{2} \\cdot(p-1) \\cdot(p+1)\\right),$$</p>
+<p>where in the middle we used lifting-the-exponent lemma. On the RHS we have three 
+factors of $(p+1)!$. But, due to $p+1 \\geqslant 8$, there are at least $4$ even 
+numbers among $1,2, \\ldots, p+1$, so this case is not possible.</p>"""@lv .
 
-Let $a=p, b>p$ and $p \\geqslant 5$ (the remaining cases are dealt with as in solution $3$). 
-Modulo $(p+1)^{2}$ it holds that
-
-$p^{p}-p=(p+1-1)^{p}-p \\equiv\\binom{p}{1}(p+1)(-1)^{p-1}+(-1)^{p}-p=p(p+1)-1-p=p^{2}-1 \\not \\equiv 0 \\bmod \\left((p+1)^{2}\\right)$.
-
-Since $p \\geqslant 5$, the numbers 2 and $\\frac{p+1}{2}$ are distinct and less than or equal to $p$. Therefore, $p+1 \\mid p!$, and so $(p+1)^{2} \\mid(p+1)!$.
-
-But $b \\geqslant p+1$, so $b!\\equiv 0 \\not \\equiv p^{p}-p \\bmod (p+1)^{2}$, a contradiction."""@lv,
-        """## Solution
+eliozo:SOLN.IMO_SHL.2022.N4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Solution
 
 The cases $a \\neq p$ are covered as in solution 1 , as are $p=2,3$. 
 For $p \\geqslant 5$ we have $b!=p\\left(p^{p-1}-1\\right)$. By Zsigmondy's Theorem 
@@ -5526,8 +5721,21 @@ $q \\geqslant 2 p-1$, giving
 $$b!\\geqslant(2 p-1)!=[1 \\cdot(2 p-1)] \\cdot[2 \\cdot(2 p-2)] \\cdots \\cdots[(p-1) \\cdot(p+1)] 
 \\cdot p>(2 p-1)^{p-1} p>p^{p}>p^{p}-p,$$ 
 
-a contradiction."""@lv,
-        """## Solution
+a contradiction."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p>The cases $a \\neq p$ are covered as in solution 1 , as are $p=2,3$. 
+For $p \\geqslant 5$ we have $b!=p\\left(p^{p-1}-1\\right)$. By Zsigmondy's Theorem 
+there exists some prime $q$ that divides $p^{p-1}-1$ but does not divide 
+$p^{k}-1$ for $k&lt;p-1$. It follows that $\\operatorname{ord}_{q}(p)=p-1$, and hence 
+$q \\equiv 1$ $\\bmod (p-1)$. Note that $p \\neq q$. But then we must have 
+$q \\geqslant 2 p-1$, giving</p>
+<p>$$b!\\geqslant(2 p-1)!=[1 \\cdot(2 p-1)] \\cdot[2 \\cdot(2 p-2)] \\cdots \\cdots[(p-1) \\cdot(p+1)] 
+\\cdot p&gt;(2 p-1)^{p-1} p&gt;p^{p}&gt;p^{p}-p,$$ </p>
+<p>a contradiction.</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.N4.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
+    eliozo:solutionText """## Solution
 
 The cases $a \\neq p$ are covered as in solution 1, 
 as are $p=2,3$. Also $b>p$, as $p^{p}>p!+p$ for $p>2$. 
@@ -5559,49 +5767,6 @@ so we must have $q \\geqslant \\frac{p}{2}$, in other words, $p-1 = 2q$.
 This implies that $p=2^{k}-1$ and $q=2^{k-1}-1$ are both prime, 
 but it is not possible to have two consecutive Mersenne primes."""@lv ;
     eliozo:solutionTextHtml """<h2>Solution</h2>
-<p><em>Answer:</em> $(2,2,2)$ and $(3,4,3)$.</p>
-<p>Clearly, $a&gt;1$. We consider three cases.</p>
-<p><strong>Case 1:</strong> We have $a<p$. Then we either have $a \\leqslant b$ which implies 
-$a \\mid a^{p}-b!=p$ leading to a contradiction, or $a>b$ which is also impossible 
-since in this case we have $b!\\leqslant a!<a^{p}-p$, where the last 
-inequality is true for any $p>a&gt;1$.</p>
-<p><strong>Case 2:</strong> We have $a&gt;p$. In this case $b!=a^{p}-p&gt;p^{p}-p \\geqslant p!$ so $b&gt;p$ 
-which means that $a^{p}=b!+p$ is divisible by $p$. Hence, $a$ is divisible by $p$ 
-and $b!=a^{p}-p$ is not divisible by $p^{2}$. This means that $b&lt;2 p$. If $a&lt;p^{2}$ 
-then $a / p<p$ divides both $a^{p}$ and $b!$ and hence it also divides 
-$p=a^{p}-b!$ which is impossible. On the other hand, 
-the case $a \\geqslant p^{2}$ is also impossible since then 
-$a^{p} \\geqslant\\left(p^{2}\\right)^{p}>(2 p-1)!+p \\geqslant b!+p$.</p>
-<p><strong>Comment.</strong> The inequality $p^{2 p}&gt;(2 p-1)!+p$ can be shown e.g. by using</p>
-<p>$$(2p-1)!=[1 \\cdot(2 p-1)] \\cdot[2 \\cdot(2 p-2)] \\cdots \\cdots[(p-1)(p+1)] \\cdot p &lt; 
-\\left(\\left(\\frac{2 p}{2}\\right)^{2}\\right)^{p-1} \\cdot p=p^{2 p-1}$$</p>
-<p>where the inequality comes from applying AM-GM to each of the terms in square brackets.</p>
-<p><strong>Case 3:</strong> We have $a=p$. In this case $b!=p^{p}-p$. One can check that 
-the values $p=2,3$ lead to the claimed solutions and $p=5$ does not lead to a solution. 
-So we now assume that $p \\geqslant 7$. 
-We have $b!=p^{p}-p&gt;p!$ and so $b \\geqslant p+1$ which implies that</p>
-<p>$$\\nu_{2}((p+1)!) \\leqslant \\nu_{2}(b!) = \\nu_{2}\\left(p^{p-1}-1\\right) \\stackrel{LTE}{=} 
-2\\nu_{2}(p-1) + \\nu_{2}(p+1)-1 = \\nu_{2}\\left(\\frac{p-1}{2} \\cdot(p-1) \\cdot(p+1)\\right),$$</p>
-<p>where in the middle we used lifting-the-exponent lemma. On the RHS we have three 
-factors of $(p+1)!$. But, due to $p+1 \\geqslant 8$, there are at least $4$ even 
-numbers among $1,2, \\ldots, p+1$, so this case is not possible.</p>"""@lv,
-        """<h2>Solution</h2>
-<p>Let $a=p, b&gt;p$ and $p \\geqslant 5$ (the remaining cases are dealt with as in solution $3$). 
-Modulo $(p+1)^{2}$ it holds that</p>
-<p>$p^{p}-p=(p+1-1)^{p}-p \\equiv\\binom{p}{1}(p+1)(-1)^{p-1}+(-1)^{p}-p=p(p+1)-1-p=p^{2}-1 \\not \\equiv 0 \\bmod \\left((p+1)^{2}\\right)$.</p>
-<p>Since $p \\geqslant 5$, the numbers 2 and $\\frac{p+1}{2}$ are distinct and less than or equal to $p$. Therefore, $p+1 \\mid p!$, and so $(p+1)^{2} \\mid(p+1)!$.</p>
-<p>But $b \\geqslant p+1$, so $b!\\equiv 0 \\not \\equiv p^{p}-p \\bmod (p+1)^{2}$, a contradiction.</p>"""@lv,
-        """<h2>Solution</h2>
-<p>The cases $a \\neq p$ are covered as in solution 1 , as are $p=2,3$. 
-For $p \\geqslant 5$ we have $b!=p\\left(p^{p-1}-1\\right)$. By Zsigmondy's Theorem 
-there exists some prime $q$ that divides $p^{p-1}-1$ but does not divide 
-$p^{k}-1$ for $k&lt;p-1$. It follows that $\\operatorname{ord}_{q}(p)=p-1$, and hence 
-$q \\equiv 1$ $\\bmod (p-1)$. Note that $p \\neq q$. But then we must have 
-$q \\geqslant 2 p-1$, giving</p>
-<p>$$b!\\geqslant(2 p-1)!=[1 \\cdot(2 p-1)] \\cdot[2 \\cdot(2 p-2)] \\cdots \\cdots[(p-1) \\cdot(p+1)] 
-\\cdot p&gt;(2 p-1)^{p-1} p&gt;p^{p}&gt;p^{p}-p,$$ </p>
-<p>a contradiction.</p>"""@lv,
-        """<h2>Solution</h2>
 <p>The cases $a \\neq p$ are covered as in solution 1, 
 as are $p=2,3$. Also $b&gt;p$, as $p^{p}&gt;p!+p$ for $p&gt;2$. 
 The cases $p=5,7,11$ are also checked manually, so assume $p \\geqslant 13$.
@@ -5623,7 +5788,26 @@ Either way, $d \\leqslant 1$. If $p&gt;2 q+1$ (so $p&gt;3 q$, as $q \\mid p-1$ )
 This implies that $p=2^{k}-1$ and $q=2^{k-1}-1$ are both prime, 
 but it is not possible to have two consecutive Mersenne primes.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.N5 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.N4.SUB3 a eliozo:Solution ;
+    eliozo:solutionNum 3 ;
+    eliozo:solutionText """## Solution
+
+Let $a=p, b>p$ and $p \\geqslant 5$ (the remaining cases are dealt with as in solution $3$). 
+Modulo $(p+1)^{2}$ it holds that
+
+$p^{p}-p=(p+1-1)^{p}-p \\equiv\\binom{p}{1}(p+1)(-1)^{p-1}+(-1)^{p}-p=p(p+1)-1-p=p^{2}-1 \\not \\equiv 0 \\bmod \\left((p+1)^{2}\\right)$.
+
+Since $p \\geqslant 5$, the numbers 2 and $\\frac{p+1}{2}$ are distinct and less than or equal to $p$. Therefore, $p+1 \\mid p!$, and so $(p+1)^{2} \\mid(p+1)!$.
+
+But $b \\geqslant p+1$, so $b!\\equiv 0 \\not \\equiv p^{p}-p \\bmod (p+1)^{2}$, a contradiction."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
+<p>Let $a=p, b&gt;p$ and $p \\geqslant 5$ (the remaining cases are dealt with as in solution $3$). 
+Modulo $(p+1)^{2}$ it holds that</p>
+<p>$p^{p}-p=(p+1-1)^{p}-p \\equiv\\binom{p}{1}(p+1)(-1)^{p-1}+(-1)^{p}-p=p(p+1)-1-p=p^{2}-1 \\not \\equiv 0 \\bmod \\left((p+1)^{2}\\right)$.</p>
+<p>Since $p \\geqslant 5$, the numbers 2 and $\\frac{p+1}{2}$ are distinct and less than or equal to $p$. Therefore, $p+1 \\mid p!$, and so $(p+1)^{2} \\mid(p+1)!$.</p>
+<p>But $b \\geqslant p+1$, so $b!\\equiv 0 \\not \\equiv p^{p}-p \\bmod (p+1)^{2}$, a contradiction.</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.N5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -5701,7 +5885,7 @@ $#\\left{d_{i}\\left(10^{k}-1\\right)\\right} \\leqslant 2$.</p>
 $#\\left{d_{i}\\left(10^{k}-1\\right): 1 \\leqslant i \\leqslant 9\\right}=1$ 
 if and only if $n \\equiv 1$ $(\\bmod 10)$, which is not the case for $n=1829$.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.N6 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.N6.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -5812,7 +5996,7 @@ density: see a recent paper
 for the proof that all eight patterns of the parities of 
 $p(n), p(n+1), p(n+2)$ appear for a positive proportion of positive integers.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.N7 a eliozo:Solution ;
+eliozo:SOLN.IMO_SHL.2022.N7.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
@@ -5985,9 +6169,8 @@ k=p r-x^{2}-x &amp; =\\frac{1}{4}\\left(4 p r-(r+p-q-1)^{2}-2(r+p-q-1)\\right) \
 <p><em>Comment.</em> The statement is not as inapplicable as it might seem. For example, for $k=41$, the following 385 primes form a valid cycle of primes:</p>
 <p>53, 4357, 104173, 65921, 36383, 99527, 193789, 2089123, 1010357, 2465263, 319169, 15559, 3449, 2647, 1951, 152297, 542189, 119773, 91151, 66431, 222137, 1336799, 469069, 45613, 1047941, 656291, 355867, 146669, 874879, 2213327, 305119, 3336209, 1623467, 520963, 794201, 1124833, 28697, 15683, 42557, 6571, 39607, 1238833, 835421, 2653681, 5494387, 9357539, 511223, 1515317, 8868173, 114079681, 59334071, 22324807, 3051889, 5120939, 7722467, 266239, 693809 , 3931783, 1322317, 100469, 13913, 74419, 23977, 1361, 62983, 935021, 512657, 1394849, 216259, 45827, 31393, 100787, 1193989, 600979, 209543, 357661, 545141, 19681, 10691, 28867, 165089, 2118023, 6271891, 12626693, 21182429, 1100467, 413089, 772867, 1244423, 1827757, 55889, 1558873, 5110711, 1024427, 601759, 290869, 91757, 951109, 452033, 136471, 190031, 4423, 9239, 15809, 24133, 115811, 275911, 34211, 877, 6653, 88001, 46261, 317741, 121523, 232439, 379009, 17827, 2699, 15937, 497729, 335539, 205223, 106781, 1394413, 4140947, 8346383, 43984757, 14010721, 21133961, 729451, 4997297, 1908223, 278051, 529747, 40213, 768107, 456821, 1325351, 225961, 1501921, 562763, 75527, 5519, 9337, 14153, 499, 1399, 2753, 14401, 94583, 245107, 35171, 397093, 195907, 2505623, 34680911, 18542791, 7415917, 144797293, 455529251, 86675291, 252704911, 43385123, 109207907, 204884269, 330414209, 14926789, 1300289, 486769, 2723989, 907757, 1458871, 65063, 4561, 124427, 81343, 252887, 2980139, 1496779, 3779057, 519193, 47381, 135283, 268267, 446333, 669481, 22541, 54167, 99439, 158357, 6823, 32497, 1390709, 998029, 670343, 5180017, 13936673, 2123491, 4391941, 407651, 209953, 77249, 867653, 427117, 141079, 9539, 227, 1439, 18679, 9749, 25453, 3697, 42139, 122327, 712303, 244261, 20873, 52051, 589997, 4310569, 1711069, 291563, 3731527, 11045429, 129098443, 64620427, 162661963, 22233269, 37295047, 1936969, 5033449, 725537, 1353973, 6964457, 2176871, 97231, 7001, 11351, 55673, 16747, 169003, 1218571, 479957, 2779783, 949609, 4975787, 1577959, 2365007, 3310753, 79349, 23189, 107209, 688907, 252583, 30677, 523, 941, 25981, 205103, 85087, 1011233, 509659, 178259, 950479, 6262847, 2333693, 305497, 3199319, 9148267, 1527563, 466801, 17033, 9967, 323003, 4724099, 14278309, 2576557, 1075021, 6462593, 2266021, 63922471, 209814503, 42117791, 131659867, 270892249, 24845153, 12104557, 3896003, 219491, 135913, 406397, 72269, 191689, 2197697, 1091273, 2727311, 368227, 1911661, 601883, 892657, 28559, 4783, 60497, 31259, 80909, 457697, 153733, 11587, 1481, 26161, 15193, 7187, 2143, 21517, 10079, 207643, 1604381, 657661, 126227, 372313, 2176331, 748337, 64969, 844867, 2507291, 29317943, 14677801, 36952793, 69332267, 111816223, 5052241, 8479717, 441263, 3020431, 1152751, 13179611, 38280013, 6536771, 16319657, 91442699, 30501409, 49082027, 72061511, 2199433, 167597, 317963, 23869, 2927, 3833, 17327, 110879, 285517, 40543, 4861, 21683, 50527, 565319, 277829, 687917, 3846023, 25542677, 174261149, 66370753, 9565711, 1280791, 91393, 6011, 7283, 31859, 8677, 10193, 43987, 11831, 13591, 127843, 358229, 58067, 15473, 65839, 17477, 74099, 19603, 82847, 21851, 61.</p>"""@lv .
 
-eliozo:SOLN.IMO_SHL.2022.N8 a eliozo:Solution ;
-    eliozo:solutionNum 0,
-        1 ;
+eliozo:SOLN.IMO_SHL.2022.N8.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Solution
 
 Let $n$ be a positive integer, and let $m=2^{n}+65$. For the sake of 
@@ -6109,18 +6292,7 @@ Since $13$ and $37$ are not elements in this subgroup, the number $m=2^{n}+65$
 cannot be a product of such primes.
 
 Instead of handling the prime divisors of $m$ separately, we can use 
-Jacobi symbols for further simplification, as shown in the next solution."""@lv,
-        """## Solution 
-
-Suppose again that $5^{n} \\equiv 3^{n} \\pmod {m=2^{n}+65}$. 
-Like in the first solution, we conclude that $n$ must be odd, and 
-$n \\geqslant 3$, so $8 \\mid 2^{n}$.
-
-Using Jacobi symbols, 
-
-$$-1=\\left(\\frac{2^{n}+65}{5}\\right)=\\left(\\frac{5}{2^{n}+65}\\right)=\\left(\\frac{5^{n}}{2^{n}+65}\\right)=\\left(\\frac{3^{n}}{2^{n}+65}\\right)=\\left(\\frac{3}{2^{n}+65}\\right)=\\left(\\frac{2^{n}+65}{3}\\right)=1,$$
-
-contradiction."""@lv ;
+Jacobi symbols for further simplification, as shown in the next solution."""@lv ;
     eliozo:solutionTextHtml """<h2>Solution</h2>
 <p>Let $n$ be a positive integer, and let $m=2^{n}+65$. For the sake of 
 contradiction, suppose that $m \\mid 5^{n}-3^{n}$, so $5^{n} \\equiv 3^{n} \\pmod {m}$.</p>
@@ -6215,8 +6387,22 @@ Considering the remainders of $p$ when divided by $4$, $3$ and $5$, $(1)$ leads 
 Since $13$ and $37$ are not elements in this subgroup, the number $m=2^{n}+65$ 
 cannot be a product of such primes.</p>
 <p>Instead of handling the prime divisors of $m$ separately, we can use 
-Jacobi symbols for further simplification, as shown in the next solution.</p>"""@lv,
-        """<h2>Solution</h2>
+Jacobi symbols for further simplification, as shown in the next solution.</p>"""@lv .
+
+eliozo:SOLN.IMO_SHL.2022.N8.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Solution 
+
+Suppose again that $5^{n} \\equiv 3^{n} \\pmod {m=2^{n}+65}$. 
+Like in the first solution, we conclude that $n$ must be odd, and 
+$n \\geqslant 3$, so $8 \\mid 2^{n}$.
+
+Using Jacobi symbols, 
+
+$$-1=\\left(\\frac{2^{n}+65}{5}\\right)=\\left(\\frac{5}{2^{n}+65}\\right)=\\left(\\frac{5^{n}}{2^{n}+65}\\right)=\\left(\\frac{3^{n}}{2^{n}+65}\\right)=\\left(\\frac{3}{2^{n}+65}\\right)=\\left(\\frac{2^{n}+65}{3}\\right)=1,$$
+
+contradiction."""@lv ;
+    eliozo:solutionTextHtml """<h2>Solution</h2>
 <p>Suppose again that $5^{n} \\equiv 3^{n} \\pmod {m=2^{n}+65}$. 
 Like in the first solution, we conclude that $n$ must be odd, and 
 $n \\geqslant 3$, so $8 \\mid 2^{n}$.</p>

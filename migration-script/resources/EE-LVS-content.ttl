@@ -5,9 +5,10 @@ eliozo:EE.LVS.2009.11_12.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2009.11_12.1" ;
-    eliozo:problemSolution eliozo:SOLN.EE.LVS.2009.11_12.1 ;
+    eliozo:problemSolution eliozo:SOLN.EE.LVS.2009.11_12.1.SUB0 ;
     eliozo:problemText """Vai eksistē pirmskaitlis $p$, kuram
 $p^3 + 2008$ un $p^3 + 2010$ arī
 ir pirmskaitļi?"""@lv ;
@@ -18,15 +19,18 @@ ir pirmskaitļi?</p>"""@lv ;
     eliozo:problem_number 1 ;
     eliozo:strategy "ModularArithmeticContradiction" ;
     eliozo:suffix "EE.LVS.2009.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 ;
     eliozo:topic eliozo:ModularArithmeticContradiction .
 
 eliozo:EE.LVS.2009.9_10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2009.9_10.1" ;
-    eliozo:problemSolution eliozo:SOLN.EE.LVS.2009.9_10.1 ;
+    eliozo:problemSolution eliozo:SOLN.EE.LVS.2009.9_10.1.SUB0 ;
     eliozo:problemText """Atrast visus naturālos skaitļus $n$, kuriem 
 $1 + 2^2 + 3^3 + 4^n$
 ir vesela skaitļa kvadrāts."""@lv ;
@@ -36,6 +40,8 @@ ir vesela skaitļa kvadrāts.</p>"""@lv ;
     eliozo:problemYear 2009 ;
     eliozo:problem_number 1 ;
     eliozo:suffix "EE.LVS.2009.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 ;
     eliozo:topic eliozo:ExhaustionMethod,
         eliozo:FullPowerGaps,
         eliozo:NumTheoryInequalityMethod,
@@ -45,6 +51,7 @@ eliozo:EE.LVS.2010.11_12.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2010.11_12.1" ;
     eliozo:problemText """Pierādīt, ka nevienu naturālu skaitli, starp kura cipariem pa 
@@ -68,12 +75,15 @@ concepts=power-sums
 -->"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LVS.2010.11_12" .
+    eliozo:suffix "EE.LVS.2010.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2010.11_12.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2010.11_12.2" ;
     eliozo:problemText """Ar $P(x)$ apzīmēts polinoms ar veseliem koeficientiem, 
@@ -97,12 +107,15 @@ concepts=integer-polynomial
 -->"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 2 ;
-    eliozo:suffix "EE.LVS.2010.11_12" .
+    eliozo:suffix "EE.LVS.2010.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2010.9_10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2010.9_10.1" ;
     eliozo:problemText """Atrast visus naturālos skaitļus $n$, kuriem 
@@ -124,12 +137,15 @@ concepts=divisors
 -->"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LVS.2010.9_10" .
+    eliozo:suffix "EE.LVS.2010.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2010.9_10.5 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2010.9_10.5" ;
     eliozo:problemText """Atrast visus naturālu skaitļu pārus $(n,k)$, kuriem
@@ -151,12 +167,15 @@ concepts=factorial
 -->"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 5 ;
-    eliozo:suffix "EE.LVS.2010.9_10" .
+    eliozo:suffix "EE.LVS.2010.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2011.11_12.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2011.11_12.1" ;
     eliozo:problemText """Katram naturālam skaitlim $n$ apzīmēsim ar simbolu 
@@ -176,12 +195,15 @@ nav vesels skaitlis.</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
     eliozo:suffix "EE.LVS.2011.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 ;
     eliozo:topic eliozo:ValuationChange .
 
 eliozo:EE.LVS.2011.9_10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2011.9_10.1" ;
     eliozo:problemText """Atrast visus četrciparu skaitļus, kam, nodzēšot
@@ -203,12 +225,15 @@ genre=digit-manipulation
 -->"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LVS.2011.9_10" .
+    eliozo:suffix "EE.LVS.2011.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2012.11_12.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2012.11_12.1" ;
     eliozo:problemText """Atrast visus naturālos skaitļus, kuri ir tieši $2013$ reizes lielāki 
@@ -228,12 +253,15 @@ concepts=sum-of-digits
 -->"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LVS.2012.11_12" .
+    eliozo:suffix "EE.LVS.2012.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2012.11_12.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2012.11_12.2" ;
     eliozo:problemText """Atrast visus atlikumus, kurus, dalot ar $6$, dod vesels
@@ -255,12 +283,15 @@ concepts=remainder
 -->"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 2 ;
-    eliozo:suffix "EE.LVS.2012.11_12" .
+    eliozo:suffix "EE.LVS.2012.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2012.11_12.3 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2012.11_12.3" ;
     eliozo:problemText """Pierādīt, ka $(2n)! < n^{2n}$
@@ -298,12 +329,15 @@ genre=proving-inequality
 -->"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 3 ;
-    eliozo:suffix "EE.LVS.2012.11_12" .
+    eliozo:suffix "EE.LVS.2012.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2012.9_10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2012.9_10.1" ;
     eliozo:problemText """Cik ir tādu sešciparu naturālu skaitļu, kuru pierakstā ir 
@@ -323,12 +357,15 @@ questionType=FindCount
 -->"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LVS.2012.9_10" .
+    eliozo:suffix "EE.LVS.2012.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2012.9_10.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2012.9_10.2" ;
     eliozo:problemText """No nulles atšķirīgi veseli skaitļi $a$, $b$ un $c$ apmierina nosacījumu
@@ -354,12 +391,15 @@ concepts=coprimes
 -->"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 2 ;
-    eliozo:suffix "EE.LVS.2012.9_10" .
+    eliozo:suffix "EE.LVS.2012.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2012.9_10.3 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2012.9_10.3" ;
     eliozo:problemText """Skolotājs pateica Jüri divus veselus skaitļus $a$ un $b$, kas nav nulles, 
@@ -385,12 +425,15 @@ concepts=quadratic-equation
 -->"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 3 ;
-    eliozo:suffix "EE.LVS.2012.9_10" .
+    eliozo:suffix "EE.LVS.2012.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2013.11_12.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2013.11_12.1" ;
     eliozo:problemText """Atrast veselo daļu skaitlim 
@@ -415,12 +458,15 @@ concepts=square-root
 -->"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LVS.2013.11_12" .
+    eliozo:suffix "EE.LVS.2013.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2013.11_12.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2013.11_12.2" ;
     eliozo:problemText """Atrast visus naturālos skaitļus $n$, kuriem atradīsies tādi 
@@ -443,12 +489,15 @@ concepts=primes
 -->"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
-    eliozo:suffix "EE.LVS.2013.11_12" .
+    eliozo:suffix "EE.LVS.2013.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2013.9_10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2013.9_10.1" ;
     eliozo:problemText """Volli grib no naturāliem skaitļiem
@@ -472,12 +521,15 @@ questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LVS.2013.9_10" .
+    eliozo:suffix "EE.LVS.2013.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2013.9_10.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2013.9_10.2" ;
     eliozo:problemImage eliozo:IMG.EE.LVS.2013.9_10.2.png ;
@@ -505,12 +557,15 @@ genre=cryptarithm
 -->"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
-    eliozo:suffix "EE.LVS.2013.9_10" .
+    eliozo:suffix "EE.LVS.2013.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2013.9_10.3 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2013.9_10.3" ;
     eliozo:problemText """Doti naturāli skaitļi $a, b, c$, 
@@ -536,12 +591,15 @@ concepts=gcd
 -->"""@lv ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
-    eliozo:suffix "EE.LVS.2013.9_10" .
+    eliozo:suffix "EE.LVS.2013.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2014.11_12.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2014.11_12.1" ;
     eliozo:problemText """Atrast visus tos naturālos skaitļus $n$, kuriem 
@@ -567,12 +625,15 @@ genre=integer-equation
 -->"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LVS.2014.11_12" .
+    eliozo:suffix "EE.LVS.2014.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2014.9_10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2014.9_10.1" ;
     eliozo:problemText """Atrast tādu vismazāko naturālo $n$, kuram katrs no cipariem 
@@ -598,12 +659,15 @@ genre=digit-manipulation
 -->"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LVS.2014.9_10" .
+    eliozo:suffix "EE.LVS.2014.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2014.9_10.3 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2014.9_10.3" ;
     eliozo:problemText """Vispirms uz lapiņas uzraksta skaitli $1$. 
@@ -637,12 +701,15 @@ genre=digit-manipulation
 -->"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
-    eliozo:suffix "EE.LVS.2014.9_10" .
+    eliozo:suffix "EE.LVS.2014.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2014.9_10.4 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2014.9_10.4" ;
     eliozo:problemText """Kurš no skaitļiem lielāks: $2^{2014}$ vai
@@ -662,12 +729,15 @@ genre=proving-inequality
 -->"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
-    eliozo:suffix "EE.LVS.2014.9_10" .
+    eliozo:suffix "EE.LVS.2014.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2015.11_12.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2015.11_12.1" ;
     eliozo:problemText """a) Atrast lielāko skaitli, kurš ir četru dažādu divciparu skaitļu lielākais kopīgais dalītājs.  
@@ -687,12 +757,15 @@ questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LVS.2015.11_12" .
+    eliozo:suffix "EE.LVS.2015.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2015.11_12.3 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2015.11_12.3" ;
     eliozo:problemText """Dots naturāls skaitlis $n$, kam gan $n+1$, $n+3$, $n+7$ un $n+9$, gan arī
@@ -714,12 +787,15 @@ questionType=FindAll
 -->"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 3 ;
-    eliozo:suffix "EE.LVS.2015.11_12" .
+    eliozo:suffix "EE.LVS.2015.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2015.9_10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2015.9_10.1" ;
     eliozo:problemText """Skaitlī 
@@ -741,12 +817,15 @@ questionType=FindAll
 -->"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LVS.2015.9_10" .
+    eliozo:suffix "EE.LVS.2015.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2015.9_10.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2015.9_10.2" ;
     eliozo:problemText """Nosauksim naturālu skaitli $n$ par interesantu, ja eksistē 
@@ -770,12 +849,15 @@ questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
-    eliozo:suffix "EE.LVS.2015.9_10" .
+    eliozo:suffix "EE.LVS.2015.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2015.9_10.3 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2015.9_10.3" ;
     eliozo:problemText """Katrā no trim gadījumiem, noskaidrot, vai 
@@ -807,12 +889,15 @@ questionType=ProveDisprove
 -->"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 3 ;
-    eliozo:suffix "EE.LVS.2015.9_10" .
+    eliozo:suffix "EE.LVS.2015.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2015.9_10.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2015.9_10.6" ;
     eliozo:problemText """Cik ir piecciparu skaitļu, kas dalās ar $8$ un nesatur savā pierakstā ciparu nulle?
@@ -828,12 +913,15 @@ questionType=FindCount
 -->"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 6 ;
-    eliozo:suffix "EE.LVS.2015.9_10" .
+    eliozo:suffix "EE.LVS.2015.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2016.11_12.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2016.11_12.2" ;
     eliozo:problemText """Definējam virkni $a_1=1$ un $a_n = n \\cdot a_{\\lfloor{}n/2\\rfloor}$, 
@@ -865,12 +953,15 @@ questionType=Prove
 -->"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 2 ;
-    eliozo:suffix "EE.LVS.2016.11_12" .
+    eliozo:suffix "EE.LVS.2016.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2016.11_12.3 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2016.11_12.3" ;
     eliozo:problemText """Kati un Peeter spēlē sekojošu spēli. Vispirms Kati uzraksta uz tāfeles
@@ -900,12 +991,15 @@ questionType=Algorithm,FindOptimal
 -->"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
-    eliozo:suffix "EE.LVS.2016.11_12" .
+    eliozo:suffix "EE.LVS.2016.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2016.11_12.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2016.11_12.6" ;
     eliozo:problemText """Atrast visus naturālos skaitļus $n$, kuriem visus $n$ pozitīvos dalītājus
@@ -931,12 +1025,15 @@ questionType=FindAll
 -->"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 6 ;
-    eliozo:suffix "EE.LVS.2016.11_12" .
+    eliozo:suffix "EE.LVS.2016.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2016.9_10.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2016.9_10.2" ;
     eliozo:problemText """Uz tāfeles uzrakstītas $11$ daļas, kuru skaitītāji un saucēji ir
@@ -956,12 +1053,15 @@ questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 2 ;
-    eliozo:suffix "EE.LVS.2016.9_10" .
+    eliozo:suffix "EE.LVS.2016.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2016.9_10.3 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2016.9_10.3" ;
     eliozo:problemText """Juku izvirzīja matemātiskā pulciņā šādu hipotēzi: Vienmēr, 
@@ -992,12 +1092,15 @@ questionType=ProveDisprove
 -->"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
-    eliozo:suffix "EE.LVS.2016.9_10" .
+    eliozo:suffix "EE.LVS.2016.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2016.9_10.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2016.9_10.6" ;
     eliozo:problemText """Vai eksistē tāds naturāls skaitlis $n$, kuram ir tieši $9$ pozitīvi 
@@ -1021,12 +1124,15 @@ questionType=ProveDisprove
 -->"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 6 ;
-    eliozo:suffix "EE.LVS.2016.9_10" .
+    eliozo:suffix "EE.LVS.2016.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2017.11_12.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2017.11_12.2" ;
     eliozo:problemText """Atrast lielāko naturālo skaitli, kas nepārsniedz $500$ un kuram 
@@ -1048,12 +1154,15 @@ questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 2 ;
-    eliozo:suffix "EE.LVS.2017.11_12" .
+    eliozo:suffix "EE.LVS.2017.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2017.11_12.3 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2017.11_12.3" ;
     eliozo:problemText """Par racionālu skaitļu $u$ un $v$ mediānu sauc skaitli $x = \\frac{a + c}{b + d}$, kur
@@ -1077,12 +1186,15 @@ questionType=Prove
 -->"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 3 ;
-    eliozo:suffix "EE.LVS.2017.11_12" .
+    eliozo:suffix "EE.LVS.2017.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2017.9_10.3 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2017.9_10.3" ;
     eliozo:problemText """Mari ieraksta burtnīcā $8$ pirmskaitļus, kas mazāki par $200$ (starp 
@@ -1108,12 +1220,15 @@ questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 3 ;
-    eliozo:suffix "EE.LVS.2017.9_10" .
+    eliozo:suffix "EE.LVS.2017.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2017.9_10.4 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2017.9_10.4" ;
     eliozo:problemImage eliozo:IMG.EE.LVS.2017.9_10.4.png ;
@@ -1141,12 +1256,15 @@ questionType=FindCount
 -->"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 4 ;
-    eliozo:suffix "EE.LVS.2017.9_10" .
+    eliozo:suffix "EE.LVS.2017.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2018.11_12.3 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2018.11_12.3" ;
     eliozo:problemText """Bēniņos atrastam kalkulatoram ir taustiņi no $1$ līdz $9$ 
@@ -1197,12 +1315,15 @@ questionType=Algorithm,ProveDisprove
 -->"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 3 ;
-    eliozo:suffix "EE.LVS.2018.11_12" .
+    eliozo:suffix "EE.LVS.2018.11_12" ;
+    eliozo:suggestedGrade 11,
+        12 .
 
 eliozo:EE.LVS.2018.9_10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2018.9_10.1" ;
     eliozo:problemText """Skaitļus $1,2,\\ldots,2018$ pieraksta vienu pēc otra bez atstarpēm, 
@@ -1222,12 +1343,15 @@ questionType=FindAll
 -->"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LVS.2018.9_10" .
+    eliozo:suffix "EE.LVS.2018.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2018.9_10.3 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2018.9_10.3" ;
     eliozo:problemText """Naturāli skaitļi $n$, $m$ un $k$ ir tādi, ka $\\mbox{MKD}(m,k)$ dalās ar
@@ -1254,12 +1378,15 @@ questionType=Prove
 -->"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 3 ;
-    eliozo:suffix "EE.LVS.2018.9_10" .
+    eliozo:suffix "EE.LVS.2018.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2018.9_10.4 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2018.9_10.4" ;
     eliozo:problemText """Brālim Jüri ir māsa Mari. Viņu māte gaida dvīņus. Ja piedzimtu
@@ -1287,12 +1414,15 @@ questionType=FindAll
 -->"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
-    eliozo:suffix "EE.LVS.2018.9_10" .
+    eliozo:suffix "EE.LVS.2018.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:EE.LVS.2018.9_10.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LVS" ;
     eliozo:olympiadCode "LVS" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2018.9_10.6" ;
     eliozo:problemText """Skaitļus no $1$ līdz $9$ ieraksta tabulā $3 \\times 3$ rūtiņas tā, ka
@@ -1317,7 +1447,9 @@ questionType=FindOptimal
 -->"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 6 ;
-    eliozo:suffix "EE.LVS.2018.9_10" .
+    eliozo:suffix "EE.LVS.2018.9_10" ;
+    eliozo:suggestedGrade 9,
+        10 .
 
 eliozo:IMG.EE.LVS.2013.9_10.2.png a eliozo:Image ;
     eliozo:imageSrc "EE.LVS.2013.9_10.2.png" ;
@@ -1327,7 +1459,7 @@ eliozo:IMG.EE.LVS.2017.9_10.4.png a eliozo:Image ;
     eliozo:imageSrc "EE.LVS.2017.9_10.4.png" ;
     eliozo:imageWidth "" .
 
-eliozo:SOLN.EE.LVS.2009.11_12.1 a eliozo:Solution ;
+eliozo:SOLN.EE.LVS.2009.11_12.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -1368,7 +1500,7 @@ jābūt $p^3 \\equiv 0$ jeb $p$ jādalās ar $7$. </li>
 </ul>
 <p><em>Secinājums.</em> Tāda pirmskaitļa $p$ nav.</p>"""@lv .
 
-eliozo:SOLN.EE.LVS.2009.9_10.1 a eliozo:Solution ;
+eliozo:SOLN.EE.LVS.2009.9_10.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 

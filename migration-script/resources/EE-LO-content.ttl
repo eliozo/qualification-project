@@ -5,9 +5,10 @@ eliozo:EE.LO.2010.10.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2010.10.2" ;
-    eliozo:problemSolution eliozo:SOLN.EE.LO.2010.10.2 ;
+    eliozo:problemSolution eliozo:SOLN.EE.LO.2010.10.2.SUB0 ;
     eliozo:problemText """Vienādojumam
 $$\\frac{2}{a^2}+\\frac{3}{b^2}+\\frac{4}{c^2}=1$$
 atrast visus atrisinājumus naturālos skaitļos.
@@ -30,6 +31,7 @@ genre=integer-equation
     eliozo:questionType "FindAll" ;
     eliozo:strategy "ExtremeElement" ;
     eliozo:suffix "EE.LO.2010.10" ;
+    eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:ExhaustionMethod,
         eliozo:NumTheoryInequalityMethod .
 
@@ -37,6 +39,7 @@ eliozo:EE.LO.2011.10.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2011.10.2" ;
     eliozo:problemText """Atrast visus naturālu skaitļu četriniekus $(w,x,y,z)$, 
@@ -48,12 +51,14 @@ kuriem izpildās vienādība $w^x + w^y = w^z$.</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "EE.LO.2011.10" .
+    eliozo:suffix "EE.LO.2011.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:EE.LO.2012.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2012.10.1" ;
     eliozo:problemText """Atrast visus tādus naturālu skaitļu pārus $(n,m)$, kuriem 
@@ -71,12 +76,14 @@ sauc skaitli $\\sqrt{x y}$.</p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "EE.LO.2012.10" .
+    eliozo:suffix "EE.LO.2012.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:EE.LO.2012.10.5 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2012.10.5" ;
     eliozo:problemText """Atrast visus naturālu skaitļu trijniekus $(x,y,z)$, kuriem 
@@ -90,15 +97,17 @@ reizinājumu $1 \\cdot 2 \\cdot \\ldots \\cdot n$.</em></p>"""@lv ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "EE.LO.2012.10" .
+    eliozo:suffix "EE.LO.2012.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:EE.LO.2013.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2013.10.1" ;
-    eliozo:problemSolution eliozo:SOLN.EE.LO.2013.10.1 ;
+    eliozo:problemSolution eliozo:SOLN.EE.LO.2013.10.1.SUB0 ;
     eliozo:problemText "Vai skaitli $2013$ var izteikt kā divu veselu skaitļu kubu starpību?"@lv ;
     eliozo:problemTextHtml "<p>Vai skaitli $2013$ var izteikt kā divu veselu skaitļu kubu starpību?</p>"@lv ;
     eliozo:problemYear 2013 ;
@@ -106,6 +115,7 @@ eliozo:EE.LO.2013.10.1 a eliozo:Problem ;
     eliozo:questionType "FindExample" ;
     eliozo:strategy "ModularArithmeticContradiction" ;
     eliozo:suffix "EE.LO.2013.10" ;
+    eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:DivisibilityRulesForRemainders,
         eliozo:ModularArithmetic,
         eliozo:ModularArithmeticContradiction .
@@ -114,6 +124,7 @@ eliozo:EE.LO.2014.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2014.10.1" ;
     eliozo:problemText """Ar $a$ un $n$ apzīmēti naturāli skaitļi. Pierādīt, ka 
@@ -129,12 +140,14 @@ t.i. vislielāko veselo skaitli, kas nepārsniedz $x$.</p>"""@lv ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove" ;
-    eliozo:suffix "EE.LO.2014.10" .
+    eliozo:suffix "EE.LO.2014.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:EE.LO.2014.10.5 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2014.10.5" ;
     eliozo:problemText """Ar $m$ apzīmēts naturāls skaitlis. Pierādīt, ka, ja Mari uzrakstījusi 
@@ -148,12 +161,14 @@ divu izvēlēto skaitļu summa dos vienādus atlikumus, dalot ar $m$.</p>"""@lv 
     eliozo:problemYear 2014 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "Prove" ;
-    eliozo:suffix "EE.LO.2014.10" .
+    eliozo:suffix "EE.LO.2014.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:EE.LO.2015.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2015.10.1" ;
     eliozo:problemText """Atrast visus naturālos skaitļus $n$, kas lielāki par vienu, 
@@ -167,12 +182,14 @@ izsakāmi kā galīgas decimāldaļas.</p>"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "EE.LO.2015.10" .
+    eliozo:suffix "EE.LO.2015.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:EE.LO.2015.10.4 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2015.10.4" ;
     eliozo:problemText """Uz tāfeles virknē viens pēc otra uzrakstīti naturālie skaitļi 
@@ -204,12 +221,14 @@ genre=sequence-properties
 -->"""@lv ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
-    eliozo:suffix "EE.LO.2015.10" .
+    eliozo:suffix "EE.LO.2015.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:EE.LO.2016.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2016.10.1" ;
     eliozo:problemText """Atrast visus tos četrciparu skaitļus, kuri ir tieši par $2016$ lielāki 
@@ -229,12 +248,14 @@ genre=digit-manipulation
 -->"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LO.2016.10" .
+    eliozo:suffix "EE.LO.2016.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:EE.LO.2016.10.2 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2016.10.2" ;
     eliozo:problemText """Atrast visus veselu skaitļu pārus $(a,b)$, kuriem izpildās vienādība
@@ -254,12 +275,14 @@ genre=integer-equation
 -->"""@lv ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 2 ;
-    eliozo:suffix "EE.LO.2016.10" .
+    eliozo:suffix "EE.LO.2016.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:EE.LO.2017.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2017.10.1" ;
     eliozo:problemText """Juku izvirzījis matemātisku hipotēzi, kas apgalvo, ka jebkuram 
@@ -288,12 +311,14 @@ concepts=coprimes
 -->"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LO.2017.10" .
+    eliozo:suffix "EE.LO.2017.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:EE.LO.2017.10.5 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2017.10.5" ;
     eliozo:problemText """a) Uz tāfeles uzrakstīts trīsciparu skaitļa vispārīgais izskats 
@@ -341,12 +366,14 @@ genre=game
 -->"""@lv ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 5 ;
-    eliozo:suffix "EE.LO.2017.10" .
+    eliozo:suffix "EE.LO.2017.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:EE.LO.2018.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2018.10.1" ;
     eliozo:problemText """Atrast visus veselu skaitļu pārus $(a, b)$, kuriem
@@ -366,24 +393,27 @@ genre=integer-equation
 -->"""@lv ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 1 ;
-    eliozo:suffix "EE.LO.2018.10" .
+    eliozo:suffix "EE.LO.2018.10" ;
+    eliozo:suggestedGrade 10 .
 
 eliozo:EE.LO.2019.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:olympiad "EE.LO" ;
     eliozo:olympiadCode "LO" ;
+    eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.LO.2019.10.1" ;
-    eliozo:problemSolution eliozo:SOLN.EE.LO.2019.10.1 ;
+    eliozo:problemSolution eliozo:SOLN.EE.LO.2019.10.1.SUB0 ;
     eliozo:problemText "Atrast visus veselu skaitļu pārus $(x, y)$, kuriem $x − y = \\frac{x}{y}$."@lv ;
     eliozo:problemTextHtml "<p>Atrast visus veselu skaitļu pārus $(x, y)$, kuriem $x − y = \\frac{x}{y}$.</p>"@lv ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 1 ;
     eliozo:suffix "EE.LO.2019.10" ;
+    eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:MutualPrimes,
         eliozo:StandardIdentities .
 
-eliozo:SOLN.EE.LO.2010.10.2 a eliozo:Solution ;
+eliozo:SOLN.EE.LO.2010.10.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -494,7 +524,7 @@ jeb $a^2 = \\frac{200}{9}$, kas nevar būt.</li>
 <li>$(a,b,c)=(3,2,12)$.</li>
 </ul>"""@lv .
 
-eliozo:SOLN.EE.LO.2013.10.1 a eliozo:Solution ;
+eliozo:SOLN.EE.LO.2013.10.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
@@ -578,7 +608,7 @@ Aplūkojam "atņemšanas tabulu" $b-a$ atlikumiem (mod 7). </p>
 $0,1,2,5,6$, bet tas nevar būt $4$.<br />
 (Līdzīgu spriedumu var arī par atlikumiem, dalot ar $m=9$.)</p>"""@lv .
 
-eliozo:SOLN.EE.LO.2019.10.1 a eliozo:Solution ;
+eliozo:SOLN.EE.LO.2019.10.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 

@@ -1,0 +1,25 @@
+{% extends 'global.html' %}
+
+{% block content %}
+<div class="col-sm-8 text-left">
+
+    <a href="{{ url_for('getTopics') }}" class="button">Atpakaļ</a>
+  <div class="container">
+    {{jsonfile}}
+  </div>
+
+  <div class="problemDiv">
+      <h3 class="problem">{{ problemid }}</h3>
+
+<p> {{ problemTextHtml | safe }}</p>
+
+<p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problemid) }}">Noslēpt atrisinājumu</a></p>
+
+
+  {% for soln in solutionsHtml %}
+  <div id="solutionDiv" class="solution">{{soln | safe}}</div>
+
+  {% endfor %}
+
+</div>
+{% endblock %}
