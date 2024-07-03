@@ -1,15 +1,18 @@
 #!/bin/bash
 
-export PROJECT_ROOT='..'
+# export PROJECT_ROOT='..'
+PROJECT_ROOT=$(dirname "$(pwd)")
+
+echo "PROJECT_ROOT is set to: $PROJECT_ROOT"
 
 # Define test directories
 TEST_DIRECTORIES=(
-    "$(PROJECT_ROOT)/eliozo/unit-tests"
-    "$(PROJECT_ROOT)/migration-script/unit-tests"
+    "$PROJECT_ROOT/eliozoapp/eliozo/unit-tests"
+    "$PROJECT_ROOT/migration-script/unit-tests"
 )
 
 # Define log file location
-LOG_FILE="$(PROJECT_ROOT)/logs/unit-tests.log"
+LOG_FILE="$PROJECT_ROOT/logs/unit-tests.log"
 
 # Clear previous log file
 > $LOG_FILE
