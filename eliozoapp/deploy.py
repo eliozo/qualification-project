@@ -10,7 +10,7 @@ def main():
         path = root.split(os.sep)
         if len(path) < rootDirLen:
             continue
-        if len(path) > rootDirLen and path[rootDirLen] in ['tests', 'venv', 'instance']:
+        if len(path) > rootDirLen and path[rootDirLen] in ['unit-tests', 'venv', 'instance']:
             continue
         if len(path) > rootDirLen+1 and path[rootDirLen+1] == '__pycache__':
             continue

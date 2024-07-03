@@ -3,730 +3,940 @@
 
 eliozo:LT.TST.2008.12.12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2008.12.12.1" ;
-    eliozo:problemText """Atrodiet visus veselu pozitīvu skaitļu trijniekus $(x, y, z)$, kas apmierina vienādību $1 + 4^x + 4^y = z^2$.
-
-
-
-<!--
-questionType=FindAll
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Atrodiet visus veselu pozitīvu skaitļu trijniekus $(x, y, z)$, kas apmierina vienādību $1 + 4^x + 4^y = z^2$.</p>
-<!--
-questionType=FindAll
--->"""@lv ;
+    eliozo:problemText "Raskite visus sveikųjų teigiamų skaičių trejetus $(x, y, z)$, tenkinančius lygybę $1 + 4^x + 4^y = z^2$."@lt,
+        "Atrodiet visus veselu pozitīvu skaitļu trijniekus $(x, y, z)$, kas apmierina vienādību $1 + 4^x + 4^y = z^2$."@lv ;
+    eliozo:problemTextHtml "<p>Raskite visus sveikųjų teigiamų skaičių trejetus $(x, y, z)$, tenkinančius lygybę $1 + 4^x + 4^y = z^2$.</p>"@lt,
+        "<p>Atrodiet visus veselu pozitīvu skaitļu trijniekus $(x, y, z)$, kas apmierina vienādību $1 + 4^x + 4^y = z^2$.</p>"@lv ;
+    eliozo:problemTimeID "2008" ;
     eliozo:problemYear 2008 ;
     eliozo:problem_number 12 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LT.TST.2008.12.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2009.12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2009.12.1" ;
-    eliozo:problemText """Dots vienādojums
+    eliozo:problemText """Duota lygtis
+
 $$x^3 + x^2 = 2^y + 16.$$
-**(a)** Atrodiet kādu vienu šī vienādojuma naturālu atrisinājumu $x$ un $y$ pāri $(x;y)$  
-**(b)** Atrodiet visus pārējos
-šī vienādojuma naturālo risinājumu pārus $(x;y)$
-$(x; y)$, ja tādi ir, vai pierādiet, ka citu atrisinājumu nav. 
 
+**(A)** Nurodykite kokią nors vieną tos lygties sveikujų 
+teigiamų sprendinių $x$ ir $y$ porą $(x; y)$;  
 
+**(B)** Raskite visas (likusias)
+tos lygties sveikųjų teigiamų sprendinių poras
+$(x; y)$, jeigu jų apskritai esama, arba įrodykite, 
+kad daugiau (jokių) sprendinių nėra."""@lt,
+        """Dots vienādojums
 
-
-<!--
-questionType=FindExample,FindAll
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Dots vienādojums
 $$x^3 + x^2 = 2^y + 16.$$
-<strong>(a)</strong> Atrodiet kādu vienu šī vienādojuma naturālu atrisinājumu $x$ un $y$ pāri $(x;y)$<br />
-<strong>(b)</strong> Atrodiet visus pārējos
-šī vienādojuma naturālo risinājumu pārus $(x;y)$
-$(x; y)$, ja tādi ir, vai pierādiet, ka citu atrisinājumu nav. </p>
-<!--
-questionType=FindExample,FindAll
--->"""@lv ;
+
+**(A)** Atrodiet kādu vienu šī vienādojuma naturālu atrisinājumu $x$ un $y$ pāri $(x;y)$  
+**(b)** Atrodiet visus pārējos šī vienādojuma naturālo risinājumu pārus $(x;y)$
+$(x; y)$, ja tādi ir, vai pierādiet, ka citu atrisinājumu nav."""@lv ;
+    eliozo:problemTextHtml """<p>Duota lygtis</p>
+<p>$$x^3 + x^2 = 2^y + 16.$$</p>
+<p><strong>(A)</strong> Nurodykite kokią nors vieną tos lygties sveikujų 
+teigiamų sprendinių $x$ ir $y$ porą $(x; y)$;  </p>
+<p><strong>(B)</strong> Raskite visas (likusias)
+tos lygties sveikųjų teigiamų sprendinių poras
+$(x; y)$, jeigu jų apskritai esama, arba įrodykite, 
+kad daugiau (jokių) sprendinių nėra.</p>"""@lt,
+        """<p>Dots vienādojums</p>
+<p>$$x^3 + x^2 = 2^y + 16.$$</p>
+<p><strong>(A)</strong> Atrodiet kādu vienu šī vienādojuma naturālu atrisinājumu $x$ un $y$ pāri $(x;y)$<br />
+<strong>(b)</strong> Atrodiet visus pārējos šī vienādojuma naturālo risinājumu pārus $(x;y)$
+$(x; y)$, ja tādi ir, vai pierādiet, ka citu atrisinājumu nav.</p>"""@lv ;
+    eliozo:problemTimeID "2009" ;
     eliozo:problemYear 2009 ;
     eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll",
+        "FindExample" ;
     eliozo:suffix "LT.TST.2009.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2010.12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2010.12.1" ;
-    eliozo:problemText """Atrodiet visus naturālu skaitļu trijniekus $(x,y,u)$, 
-kas apmierina vienādojumu sistēmu
+    eliozo:problemText """Raskite visus natūraliųjų skaičių trejetus $(x,y,u)$, 
+tenkinančius lygčių sistemą
+
 $$\\left\\{ 
 \\begin{array}{l}
 x + y = u + 12;\\\\
 x^5 + y^5 = u^5 + 12.
 \\end{array}
-\\right.$$
-
-
-
-
-<!--
-questionType=FindAll
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Atrodiet visus naturālu skaitļu trijniekus $(x,y,u)$, 
+\\right.$$"""@lt,
+        """Atrodiet visus naturālu skaitļu trijniekus $(x,y,u)$, 
 kas apmierina vienādojumu sistēmu
-$$\\left{ 
+
+$$\\left\\{ 
+\\begin{array}{l}
+x + y = u + 12;\\\\
+x^5 + y^5 = u^5 + 12.
+\\end{array}
+\\right.$$"""@lv ;
+    eliozo:problemTextHtml """<p>Raskite visus natūraliųjų skaičių trejetus $(x,y,u)$, 
+tenkinančius lygčių sistemą</p>
+<p>$$\\left{ 
 \\begin{array}{l}
 x + y = u + 12;\\
 x^5 + y^5 = u^5 + 12.
 \\end{array}
-\\right.$$</p>
-<!--
-questionType=FindAll
--->"""@lv ;
+\\right.$$</p>"""@lt,
+        """<p>Atrodiet visus naturālu skaitļu trijniekus $(x,y,u)$, 
+kas apmierina vienādojumu sistēmu</p>
+<p>$$\\left{ 
+\\begin{array}{l}
+x + y = u + 12;\\
+x^5 + y^5 = u^5 + 12.
+\\end{array}
+\\right.$$</p>"""@lv ;
+    eliozo:problemTimeID "2010" ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LT.TST.2010.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2011.12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2011.12.4" ;
-    eliozo:problemText """Atšķirīgi naturāli skaitļi $s_1,s_2,\\ldots,s_n$ apmierina vienādību
+    eliozo:problemText """Skirtingi natūralieji skaičiai $s_1, s_2,\\ldots,s_n$ 
+tenkina lygybę
 $$\\left( 1 - \\frac{1}{s_1} \\right)
 \\left( 1 - \\frac{1}{s_2} \\right) \\ldots
 \\left( 1 - \\frac{1}{s_n} \\right) = 
 \\frac{51}{2010}.$$
-Kāda ir mazākā iespējamā $n$ vērtība?
-
-
-
-
-<!--
-questionType=FindOptimal
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Atšķirīgi naturāli skaitļi $s_1,s_2,\\ldots,s_n$ apmierina vienādību
+Kokia yra mažiausia galima $n$ reikšmė?"""@lt,
+        """Atšķirīgi naturāli skaitļi $s_1,s_2,\\ldots,s_n$ apmierina vienādību
 $$\\left( 1 - \\frac{1}{s_1} \\right)
 \\left( 1 - \\frac{1}{s_2} \\right) \\ldots
 \\left( 1 - \\frac{1}{s_n} \\right) = 
 \\frac{51}{2010}.$$
-Kāda ir mazākā iespējamā $n$ vērtība?</p>
-<!--
-questionType=FindOptimal
--->"""@lv ;
+Kāda ir mazākā iespējamā $n$ vērtība?"""@lv ;
+    eliozo:problemTextHtml """<p>Skirtingi natūralieji skaičiai $s_1, s_2,\\ldots,s_n$ 
+tenkina lygybę
+$$\\left( 1 - \\frac{1}{s_1} \\right)
+\\left( 1 - \\frac{1}{s_2} \\right) \\ldots
+\\left( 1 - \\frac{1}{s_n} \\right) = 
+\\frac{51}{2010}.$$
+Kokia yra mažiausia galima $n$ reikšmė?</p>"""@lt,
+        """<p>Atšķirīgi naturāli skaitļi $s_1,s_2,\\ldots,s_n$ apmierina vienādību
+$$\\left( 1 - \\frac{1}{s_1} \\right)
+\\left( 1 - \\frac{1}{s_2} \\right) \\ldots
+\\left( 1 - \\frac{1}{s_n} \\right) = 
+\\frac{51}{2010}.$$
+Kāda ir mazākā iespējamā $n$ vērtība?</p>"""@lv ;
+    eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LT.TST.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2011.12.6 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2011.12.6" ;
-    eliozo:problemText """Doti naturāli skaitļi $m \\geq 2$ un $n$. 
+    eliozo:problemText """Tegul $m \\geq 2$ ir $n$ yra natūralieji skaičiai. 
+Aibę $S(m,n)$ sudaro visi daugianariai $P(x)$,
+kurių koeficientai priklauso aibei 
+$\\{ 0,1,2,\\ldots,m^2 − 1\\}$, tenkinantys sąlygą $P(m) = n$.
+Raskite aibės $S(m,n)$ elementų skaičių, kai  
+**(A)** $n = 10m$;  
+**(B)** $n = m^2$;  
+**(C)** $n$ yra bet koks natūralusis skaičius."""@lt,
+        """Doti naturāli skaitļi $m \\geq 2$ un $n$. 
 Kopu $S(m,n)$ veido visi polinomi $P(x)$,
 kuru koeficienti pieder kopai 
 $\\{ 0,1,2,\\ldots,m^2 − 1\\}$, kas apmierina nosacījumu $P(m) = n$.
 Atrodiet kopas $S(m,n)$ elementu skaitu, ja  
-**(a)** $n = 10m$;  
-**(b)** $n = m^2$;  
-**(c)** $n$ ir jebkāds naturāls skaitlis.
-
-
-
-
-<!--
-questionType=FindCount
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Doti naturāli skaitļi $m \\geq 2$ un $n$. 
+**(A)** $n = 10m$;  
+**(B)** $n = m^2$;  
+**(C)** $n$ ir jebkāds naturāls skaitlis."""@lv ;
+    eliozo:problemTextHtml """<p>Tegul $m \\geq 2$ ir $n$ yra natūralieji skaičiai. 
+Aibę $S(m,n)$ sudaro visi daugianariai $P(x)$,
+kurių koeficientai priklauso aibei 
+${ 0,1,2,\\ldots,m^2 − 1}$, tenkinantys sąlygą $P(m) = n$.
+Raskite aibės $S(m,n)$ elementų skaičių, kai<br />
+<strong>(A)</strong> $n = 10m$;<br />
+<strong>(B)</strong> $n = m^2$;<br />
+<strong>(C)</strong> $n$ yra bet koks natūralusis skaičius.</p>"""@lt,
+        """<p>Doti naturāli skaitļi $m \\geq 2$ un $n$. 
 Kopu $S(m,n)$ veido visi polinomi $P(x)$,
 kuru koeficienti pieder kopai 
 ${ 0,1,2,\\ldots,m^2 − 1}$, kas apmierina nosacījumu $P(m) = n$.
 Atrodiet kopas $S(m,n)$ elementu skaitu, ja<br />
-<strong>(a)</strong> $n = 10m$;<br />
-<strong>(b)</strong> $n = m^2$;<br />
-<strong>(c)</strong> $n$ ir jebkāds naturāls skaitlis.</p>
-<!--
-questionType=FindCount
--->"""@lv ;
+<strong>(A)</strong> $n = 10m$;<br />
+<strong>(B)</strong> $n = m^2$;<br />
+<strong>(C)</strong> $n$ ir jebkāds naturāls skaitlis.</p>"""@lv ;
+    eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "FindCount" ;
     eliozo:suffix "LT.TST.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2012.12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2012.12.1" ;
-    eliozo:problemText """Doti naturāli skaitļi  
+    eliozo:problemText """Duoti natūralieji skaičiai 
+$a_1,a_2,\\ldots,a_{14}$, kurie visi yra didesni už $4$. 
+Ant lentos užrašome $196$ (nebūtinai skirtingas) sumas 
+$a_n + a_m$, kur $1 \\leq n,m \\leq 14$. Tada kiekvienos
+sumos visus skaitmenis, išskyrus du paskutinius, nutriname. 
+Ar gali būti taip, kad
+lentoje liks užrašytos visos įmanomos dviejų skaitmenų
+kombinacijos $00,01,\\ldots,98,99$?"""@lt,
+        """Doti naturāli skaitļi  
 $a_1,a_2,\\ldots,a_{14}$, kuri visi ir lielāki par $4$.
 Uz tāfeles uzrakstām $196$ (ne obligāti dažādas) summas 
 $a_n + a_m$, kur $1 \\leq n,m \\leq 14$. Pēc tam katrā summā 
 visus ciparus, izņemot divus pēdējos, nodzēšam. 
 Vai var būt tā, ka uz tāfeles paliks uzrakstītas visas 
-iespējamās divu ciparu kombinācijas $00,01,\\ldots,98,99$?
-
-
-
-<!--
-questionType=ProveDisprove
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Doti naturāli skaitļi<br />
+iespējamās divu ciparu kombinācijas $00,01,\\ldots,98,99$?"""@lv ;
+    eliozo:problemTextHtml """<p>Duoti natūralieji skaičiai 
+$a_1,a_2,\\ldots,a_{14}$, kurie visi yra didesni už $4$. 
+Ant lentos užrašome $196$ (nebūtinai skirtingas) sumas 
+$a_n + a_m$, kur $1 \\leq n,m \\leq 14$. Tada kiekvienos
+sumos visus skaitmenis, išskyrus du paskutinius, nutriname. 
+Ar gali būti taip, kad
+lentoje liks užrašytos visos įmanomos dviejų skaitmenų
+kombinacijos $00,01,\\ldots,98,99$?</p>"""@lt,
+        """<p>Doti naturāli skaitļi<br />
 $a_1,a_2,\\ldots,a_{14}$, kuri visi ir lielāki par $4$.
 Uz tāfeles uzrakstām $196$ (ne obligāti dažādas) summas 
 $a_n + a_m$, kur $1 \\leq n,m \\leq 14$. Pēc tam katrā summā 
 visus ciparus, izņemot divus pēdējos, nodzēšam. 
 Vai var būt tā, ka uz tāfeles paliks uzrakstītas visas 
-iespējamās divu ciparu kombinācijas $00,01,\\ldots,98,99$?</p>
-<!--
-questionType=ProveDisprove
--->"""@lv ;
+iespējamās divu ciparu kombinācijas $00,01,\\ldots,98,99$?</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LT.TST.2012.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2012.12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2012.12.4" ;
-    eliozo:problemText """Ikvienam veselajam skaitlim $m$ lielāko vesela skaitļa kubu, 
-kas nepārsniedz $m$, apzīmējam $f(m)$. 
+    eliozo:problemText """Kiekvienam sveikajam skaičiui $m$ didžiausią 
+sveikojo skaičiaus kubą, neviršijantį $m$,
+pažymėkime $f(m)$. Pavyzdžiui, $f(26) = 8$ ir $f(27) = 27$. 
+Duota natūraliųjų skaičių
+seka $a_1,a_2,a_3,\\ldots$, kur $a_{n+1} = 3a_n − 2f(a_n)$ 
+su kiekvienu $n > 1$.  
+**(A)** Raskite bent vieną pirmojo nario $a_1$ 
+reikšmę intervale $[2012,3000]$, kuriai egzistuoja 
+toks skaičius $M$ (priklausantis tik nuo $a_1$), 
+kad $a_n \\leq M$ kiekvienam $n \\geq 1$.  
+**(B)** Raskite visas galimas natūraliąsias pirmojo nario 
+$a_1$ reikšmes, kurioms egzistuoja toks skaičius $M$ 
+(priklausantis tik nuo $a_1$), kad $a_n \\leq M$ kiekvienam 
+$n \\geq 1$."""@lt,
+        """Ikvienam veselam skaitlim $m$ lielāko vesela skaitļa kubu, 
+kas nepārsniedz $m$, apzīmējam ar $f(m)$. 
 Piemēram, $f(26) = 8$ un $f(27) = 27$. 
 Dota naturālu skaitļu virkne 
 $a_1,a_2,a_3,\\ldots$, kur $a_{n+1} = 3a_n − 2f(a_n)$ 
 katram $n > 1$.  
-**(a)** Atrodiet kaut vienu pirmā skaitļa $a_1$ 
+**(A)** Atrodiet kaut vienu pirmā skaitļa $a_1$ 
 vērtību intervālā $[2012,3000]$, kam eksistē 
 tāds skaitlis $M$ (atkarīgs tikai no $a_1$), 
 ka $a_n \\leq M$ jebkuram $n \\geq 1$.  
-**(b)** Atrodiet visas iespējamās naturālās pirmā locekļa vērtības 
+**(B)** Atrodiet visas iespējamās naturālās pirmā locekļa vērtības 
 $a_1$, kurām eksistē tāds skaitlis $M$ 
 (atkarīgs tikai no $a_1$), ka $a_n \\leq M$ jebkuram 
-$n \\geq 1$.
-
-
-
-<!--
-questionType=FindExample,FindAll
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Ikvienam veselajam skaitlim $m$ lielāko vesela skaitļa kubu, 
-kas nepārsniedz $m$, apzīmējam $f(m)$. 
+$n \\geq 1$."""@lv ;
+    eliozo:problemTextHtml """<p>Kiekvienam sveikajam skaičiui $m$ didžiausią 
+sveikojo skaičiaus kubą, neviršijantį $m$,
+pažymėkime $f(m)$. Pavyzdžiui, $f(26) = 8$ ir $f(27) = 27$. 
+Duota natūraliųjų skaičių
+seka $a_1,a_2,a_3,\\ldots$, kur $a_{n+1} = 3a_n − 2f(a_n)$ 
+su kiekvienu $n &gt; 1$.<br />
+<strong>(A)</strong> Raskite bent vieną pirmojo nario $a_1$ 
+reikšmę intervale $[2012,3000]$, kuriai egzistuoja 
+toks skaičius $M$ (priklausantis tik nuo $a_1$), 
+kad $a_n \\leq M$ kiekvienam $n \\geq 1$.<br />
+<strong>(B)</strong> Raskite visas galimas natūraliąsias pirmojo nario 
+$a_1$ reikšmes, kurioms egzistuoja toks skaičius $M$ 
+(priklausantis tik nuo $a_1$), kad $a_n \\leq M$ kiekvienam 
+$n \\geq 1$.</p>"""@lt,
+        """<p>Ikvienam veselam skaitlim $m$ lielāko vesela skaitļa kubu, 
+kas nepārsniedz $m$, apzīmējam ar $f(m)$. 
 Piemēram, $f(26) = 8$ un $f(27) = 27$. 
 Dota naturālu skaitļu virkne 
 $a_1,a_2,a_3,\\ldots$, kur $a_{n+1} = 3a_n − 2f(a_n)$ 
 katram $n &gt; 1$.<br />
-<strong>(a)</strong> Atrodiet kaut vienu pirmā skaitļa $a_1$ 
+<strong>(A)</strong> Atrodiet kaut vienu pirmā skaitļa $a_1$ 
 vērtību intervālā $[2012,3000]$, kam eksistē 
 tāds skaitlis $M$ (atkarīgs tikai no $a_1$), 
 ka $a_n \\leq M$ jebkuram $n \\geq 1$.<br />
-<strong>(b)</strong> Atrodiet visas iespējamās naturālās pirmā locekļa vērtības 
+<strong>(B)</strong> Atrodiet visas iespējamās naturālās pirmā locekļa vērtības 
 $a_1$, kurām eksistē tāds skaitlis $M$ 
 (atkarīgs tikai no $a_1$), ka $a_n \\leq M$ jebkuram 
-$n \\geq 1$.</p>
-<!--
-questionType=FindExample,FindAll
--->"""@lv ;
+$n \\geq 1$.</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 4 ;
+    eliozo:questionType "FindAll",
+        "FindExample" ;
     eliozo:suffix "LT.TST.2012.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2012.12.6 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2012.12.6" ;
-    eliozo:problemText """Naturālo skaitļu kopa sadalīta $k$ savstarpēji nešķeļošās
+    eliozo:problemText """Natūraliųjų skaičių aibė padalyta į $k$ nesikertančių 
+poaibių $A_1,A_2,\\ldots,A_k$ taip, kad
+koks bebūtų natūralusis skaičius $n \\geq 15$, 
+kiekviename iš tų $k$ poaibių atsiras du
+skirtingi skaičiai, kurių suma lygi $n$.  
+**(A)** Įrodykite, kad natūraliųjų skaičių aibę 
+galima padalyti į tris tokius poaibius.  
+**(B)** Įrodykite, kad natūraliųjų skaičių aibės 
+negalima padalyti į $k$ tokių poaibių, jei
+$k \\geq 4$."""@lt,
+        """Naturālo skaitļu kopa sadalīta $k$ savstarpēji nešķeļošās
 apakškopās $A_1,A_2,\\ldots,A_k$ tā, ka 
 fiksētam naturālam skaitlim $n \\geq 15$ 
 jebkurā no šīm $k$ apakškopām atradīsies divi dažādi skaitļi, 
 kuru summa vienāda ar $n$.  
-**(a)** Pierādīt, ka naturālo skaitļu kopu var sadalīt 
+**(A)** Pierādīt, ka naturālo skaitļu kopu var sadalīt 
 trīs šādās apakškopās.  
-**(b)** Pierādīt, ka naturālu skaitļu kopu nevar sadalīt $k$
-tādās apakškopās, ja $k \\geq 4$. 
-
-
-
-<!--
-questionType=Prove,Prove
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Naturālo skaitļu kopa sadalīta $k$ savstarpēji nešķeļošās
+**(B)** Pierādīt, ka naturālu skaitļu kopu nevar sadalīt $k$
+tādās apakškopās, ja $k \\geq 4$."""@lv ;
+    eliozo:problemTextHtml """<p>Natūraliųjų skaičių aibė padalyta į $k$ nesikertančių 
+poaibių $A_1,A_2,\\ldots,A_k$ taip, kad
+koks bebūtų natūralusis skaičius $n \\geq 15$, 
+kiekviename iš tų $k$ poaibių atsiras du
+skirtingi skaičiai, kurių suma lygi $n$.<br />
+<strong>(A)</strong> Įrodykite, kad natūraliųjų skaičių aibę 
+galima padalyti į tris tokius poaibius.<br />
+<strong>(B)</strong> Įrodykite, kad natūraliųjų skaičių aibės 
+negalima padalyti į $k$ tokių poaibių, jei
+$k \\geq 4$.</p>"""@lt,
+        """<p>Naturālo skaitļu kopa sadalīta $k$ savstarpēji nešķeļošās
 apakškopās $A_1,A_2,\\ldots,A_k$ tā, ka 
 fiksētam naturālam skaitlim $n \\geq 15$ 
 jebkurā no šīm $k$ apakškopām atradīsies divi dažādi skaitļi, 
 kuru summa vienāda ar $n$.<br />
-<strong>(a)</strong> Pierādīt, ka naturālo skaitļu kopu var sadalīt 
+<strong>(A)</strong> Pierādīt, ka naturālo skaitļu kopu var sadalīt 
 trīs šādās apakškopās.<br />
-<strong>(b)</strong> Pierādīt, ka naturālu skaitļu kopu nevar sadalīt $k$
-tādās apakškopās, ja $k \\geq 4$. </p>
-<!--
-questionType=Prove,Prove
--->"""@lv ;
+<strong>(B)</strong> Pierādīt, ka naturālu skaitļu kopu nevar sadalīt $k$
+tādās apakškopās, ja $k \\geq 4$.</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LT.TST.2012.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2013.12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2013.12.2" ;
-    eliozo:problemText """Naturāli skaitļi $a$, $b$, $c$ un $d$ ir tādi, 
+    eliozo:problemText """Natūralieji skaičiai $a$,$b$,$c$ ir $d$ yra tokie, 
+kad $ac + bd$ dalijasi iš $a^2 + b^2$.
+Ar gali skaičių $a^2 + b^2$ ir 
+$c^2 + d^2$ didžiausias bendras daliklis būti lygus:  
+**(A)** $1$?  
+**(B)** $3$?  
+**(C)** $74$?"""@lt,
+        """Naturāli skaitļi $a$, $b$, $c$ un $d$ ir tādi, 
 ka $ac + bd$ dalās ar $a^2 + b^2$.
 Vai skaitļu $a^2 + b^2$ un 
 $c^2 + d^2$ lielākais kopīgais dalītājs var būt vienāds ar:  
-**(a)** $1$?  
-**(b)** $3$?  
-**(c)** $74$?
-
-
-
-
-<!--
-questionType=ProveDisprove
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Naturāli skaitļi $a$, $b$, $c$ un $d$ ir tādi, 
+**(A)** $1$?  
+**(B)** $3$?  
+**(C)** $74$?"""@lv ;
+    eliozo:problemTextHtml """<p>Natūralieji skaičiai $a$,$b$,$c$ ir $d$ yra tokie, 
+kad $ac + bd$ dalijasi iš $a^2 + b^2$.
+Ar gali skaičių $a^2 + b^2$ ir 
+$c^2 + d^2$ didžiausias bendras daliklis būti lygus:<br />
+<strong>(A)</strong> $1$?<br />
+<strong>(B)</strong> $3$?<br />
+<strong>(C)</strong> $74$?</p>"""@lt,
+        """<p>Naturāli skaitļi $a$, $b$, $c$ un $d$ ir tādi, 
 ka $ac + bd$ dalās ar $a^2 + b^2$.
 Vai skaitļu $a^2 + b^2$ un 
 $c^2 + d^2$ lielākais kopīgais dalītājs var būt vienāds ar:<br />
-<strong>(a)</strong> $1$?<br />
-<strong>(b)</strong> $3$?<br />
-<strong>(c)</strong> $74$?</p>
-<!--
-questionType=ProveDisprove
--->"""@lv ;
+<strong>(A)</strong> $1$?<br />
+<strong>(B)</strong> $3$?<br />
+<strong>(C)</strong> $74$?</p>"""@lv ;
+    eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LT.TST.2013.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2013.12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2013.12.4" ;
-    eliozo:problemText """Atrodiet visus tādus polinomus $P(x)$ ar 
+    eliozo:problemText """Raskite visus tokius daugianarius $P(x)$ su 
+realiaisiais koeficientais, kad
+jei $P(m)$ yra sveikasis skaičius, 
+tai ir $m$ yra sveikasis skaičius."""@lt,
+        """Atrodiet visus tādus polinomus $P(x)$ ar 
 reāliem koeficientiem, ka ja $P(m)$ ir vesels, tad arī 
-$m$ ir vesels skaitlis.
-
-
-
-<!--
-questionType=FindAll
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Atrodiet visus tādus polinomus $P(x)$ ar 
+$m$ ir vesels skaitlis."""@lv ;
+    eliozo:problemTextHtml """<p>Raskite visus tokius daugianarius $P(x)$ su 
+realiaisiais koeficientais, kad
+jei $P(m)$ yra sveikasis skaičius, 
+tai ir $m$ yra sveikasis skaičius.</p>"""@lt,
+        """<p>Atrodiet visus tādus polinomus $P(x)$ ar 
 reāliem koeficientiem, ka ja $P(m)$ ir vesels, tad arī 
-$m$ ir vesels skaitlis.</p>
-<!--
-questionType=FindAll
--->"""@lv ;
+$m$ ir vesels skaitlis.</p>"""@lv ;
+    eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 4 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LT.TST.2013.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2013.12.6 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2013.12.6" ;
-    eliozo:problemText """Četrinieku $(x,y,z,n)$, kur $x,y,z$ ir pozitīvi reāli skaitļi, 
+    eliozo:problemText """Ketvertą $(x,y,z,n)$, kur $x,y,z$ yra teigiami 
+realieji skaičiai, o $n$ – natūralusis 
+skaičius, vadinsime {\\em tobulu}, jei
+$$\\sqrt{x} + \\sqrt{y} + \\sqrt{z} = 1$$
+ir $\\sqrt{x + n} + \\sqrt{y + n} + \\sqrt{z + n}$ 
+yra sveikasis skaičius.  
+**(A)** Raskite bent vieną tobulą ketvertą $(x,y,z,n)$, 
+kuriame $n > 2013$.  
+**(B)** Raskite visus tobulus ketvertus $(x,y,z,n)$."""@lt,
+        """Četrinieku $(x,y,z,n)$, kur $x,y,z$ ir pozitīvi reāli skaitļi, 
 bet $n$ – naturāls skaitlis, sauksim par *pilnīgu*, ja
 $$\\sqrt{x} + \\sqrt{y} + \\sqrt{z} = 1$$
 un $\\sqrt{x + n} + \\sqrt{y + n} + \\sqrt{z + n}$ 
 ir vesels skaitlis.  
-**(a)** Atrodiet kaut vienu pilnīgu četrinieku $(x,y,z,n)$, 
+**(A)** Atrodiet kaut vienu pilnīgu četrinieku $(x,y,z,n)$, 
 kurā $n > 2013$.  
-**(b)** Atrodiet visus pilnīgos četriniekus $(x,y,z,n)$.
-
-
-
-
-
-<!--
-questionType=FindExample,FindAll
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Četrinieku $(x,y,z,n)$, kur $x,y,z$ ir pozitīvi reāli skaitļi, 
+**(B)** Atrodiet visus pilnīgos četriniekus $(x,y,z,n)$."""@lv ;
+    eliozo:problemTextHtml """<p>Ketvertą $(x,y,z,n)$, kur $x,y,z$ yra teigiami 
+realieji skaičiai, o $n$ – natūralusis 
+skaičius, vadinsime {\\em tobulu}, jei
+$$\\sqrt{x} + \\sqrt{y} + \\sqrt{z} = 1$$
+ir $\\sqrt{x + n} + \\sqrt{y + n} + \\sqrt{z + n}$ 
+yra sveikasis skaičius.<br />
+<strong>(A)</strong> Raskite bent vieną tobulą ketvertą $(x,y,z,n)$, 
+kuriame $n &gt; 2013$.<br />
+<strong>(B)</strong> Raskite visus tobulus ketvertus $(x,y,z,n)$.</p>"""@lt,
+        """<p>Četrinieku $(x,y,z,n)$, kur $x,y,z$ ir pozitīvi reāli skaitļi, 
 bet $n$ – naturāls skaitlis, sauksim par <em>pilnīgu</em>, ja
 $$\\sqrt{x} + \\sqrt{y} + \\sqrt{z} = 1$$
 un $\\sqrt{x + n} + \\sqrt{y + n} + \\sqrt{z + n}$ 
 ir vesels skaitlis.<br />
-<strong>(a)</strong> Atrodiet kaut vienu pilnīgu četrinieku $(x,y,z,n)$, 
+<strong>(A)</strong> Atrodiet kaut vienu pilnīgu četrinieku $(x,y,z,n)$, 
 kurā $n &gt; 2013$.<br />
-<strong>(b)</strong> Atrodiet visus pilnīgos četriniekus $(x,y,z,n)$.</p>
-<!--
-questionType=FindExample,FindAll
--->"""@lv ;
+<strong>(B)</strong> Atrodiet visus pilnīgos četriniekus $(x,y,z,n)$.</p>"""@lv ;
+    eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 6 ;
+    eliozo:questionType "FindAll",
+        "FindExample" ;
     eliozo:suffix "LT.TST.2013.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2014.12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2014.12.2" ;
-    eliozo:problemText """Galīgai kopai $A$ piemīt tāda īpašība: jebkuru 
+    eliozo:problemText """Baigtinė aibė $A$ pasižymi tokia savybe: bet kurių 
+$6$ skirtingų jos elementų suma nesidalija iš $6$.  
+**(A)** Raskite bent vieną tokią aibę $A$, 
+sudarytą iš $10$ skirtingų natūraliųjų
+skaičių.  
+**(B)** Ar egzistuoja tokia aibė $A$, 
+sudaryta iš $11$ skirtingų natūraliųjų
+skaičių?"""@lt,
+        """Galīgai kopai $A$ piemīt tāda īpašība: jebkuru 
 $6$ tās dažādu elementu summa nedalās ar $6$.  
-**(a)** Atrodiet kaut vienu tādu kopu $A$,
+**(A)** Atrodiet kaut vienu tādu kopu $A$,
 ko veido $10$ atšķirīgi naturāli skaitļi.   
-**(b)** vai eksistē tāda kopa $A$, ko 
-veido $11$ dažādi naturāli skaitļi.?
-
-
-
-<!--
-questionType=FindExample,ProveDisprove
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Galīgai kopai $A$ piemīt tāda īpašība: jebkuru 
+**(B)** Vai eksistē tāda kopa $A$, ko 
+veido $11$ dažādi naturāli skaitļi?"""@lv ;
+    eliozo:problemTextHtml """<p>Baigtinė aibė $A$ pasižymi tokia savybe: bet kurių 
+$6$ skirtingų jos elementų suma nesidalija iš $6$.<br />
+<strong>(A)</strong> Raskite bent vieną tokią aibę $A$, 
+sudarytą iš $10$ skirtingų natūraliųjų
+skaičių.<br />
+<strong>(B)</strong> Ar egzistuoja tokia aibė $A$, 
+sudaryta iš $11$ skirtingų natūraliųjų
+skaičių?</p>"""@lt,
+        """<p>Galīgai kopai $A$ piemīt tāda īpašība: jebkuru 
 $6$ tās dažādu elementu summa nedalās ar $6$.<br />
-<strong>(a)</strong> Atrodiet kaut vienu tādu kopu $A$,
+<strong>(A)</strong> Atrodiet kaut vienu tādu kopu $A$,
 ko veido $10$ atšķirīgi naturāli skaitļi. <br />
-<strong>(b)</strong> vai eksistē tāda kopa $A$, ko 
-veido $11$ dažādi naturāli skaitļi.?</p>
-<!--
-questionType=FindExample,ProveDisprove
--->"""@lv ;
+<strong>(B)</strong> Vai eksistē tāda kopa $A$, ko 
+veido $11$ dažādi naturāli skaitļi?</p>"""@lv ;
+    eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 2 ;
+    eliozo:questionType "FindExample",
+        "ProveDisprove" ;
     eliozo:suffix "LT.TST.2014.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2014.12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2014.12.4" ;
-    eliozo:problemText """**(a)** Vai eksistē tāds naturāls skaitlis $n$, 
+    eliozo:problemText """**(a)** Ar egzistuoja toks natūralusis skaičius $n$, 
+kad skaičiaus $2^n$ paskutinis skaitmuo yra 
+$6$, o kitų skaitmenų suma yra lygi $2$?  
+**(b)** Ar egzistuoja tokie natūralieji skaičiai $a$ ir 
+$m \\geq 3$, kad skaičiaus $a^m$
+paskutinis skaitmuo yra $6$, o kitų skaitmenų 
+suma yra lygi $3$?"""@lt,
+        """**(a)** Vai eksistē tāds naturāls skaitlis $n$, 
 ka skaitļa $2^n$ pēdējais cipars ir $6$, bet citu ciparu summa ir vienāda ar $2$?  
 **(b)** Vai eksistē tādi naturāli skaitļi $a$ un 
 $m \\geq 3$, ka skaitļa $a^m$ pēdējais cipars ir $6$, bet citu ciparu summa
-vienāda ar $3$? 
-
-
-
-<!--
-questionType=ProveDisprove
--->"""@lv ;
-    eliozo:problemTextHtml """<p><strong>(a)</strong> Vai eksistē tāds naturāls skaitlis $n$, 
+vienāda ar $3$?"""@lv ;
+    eliozo:problemTextHtml """<p><strong>(a)</strong> Ar egzistuoja toks natūralusis skaičius $n$, 
+kad skaičiaus $2^n$ paskutinis skaitmuo yra 
+$6$, o kitų skaitmenų suma yra lygi $2$?<br />
+<strong>(b)</strong> Ar egzistuoja tokie natūralieji skaičiai $a$ ir 
+$m \\geq 3$, kad skaičiaus $a^m$
+paskutinis skaitmuo yra $6$, o kitų skaitmenų 
+suma yra lygi $3$?</p>"""@lt,
+        """<p><strong>(a)</strong> Vai eksistē tāds naturāls skaitlis $n$, 
 ka skaitļa $2^n$ pēdējais cipars ir $6$, bet citu ciparu summa ir vienāda ar $2$?<br />
 <strong>(b)</strong> Vai eksistē tādi naturāli skaitļi $a$ un 
 $m \\geq 3$, ka skaitļa $a^m$ pēdējais cipars ir $6$, bet citu ciparu summa
-vienāda ar $3$? </p>
-<!--
-questionType=ProveDisprove
--->"""@lv ;
+vienāda ar $3$?</p>"""@lv ;
+    eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LT.TST.2014.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2014.12.5 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2014.12.5" ;
-    eliozo:problemText """Doti reāli skaitļi $x$ un $y$. 
+    eliozo:problemText """Duoti realieji skaičiai $x$ ir $y$. 
+Pažymėkime $s_1 = x + y$, $s_2 = x^2 + y^2$,
+$s_3 = x^3 + y^3$, $s_4 = x^4 + y^4$ ir $t = xy$.  
+**(A)** Įrodykite, kad skaičius $t$ yra racionalusis, jei 
+$s_2$, $s_3$ ir $s_4$ yra racionalieji skaičiai.  
+**(B)** Įrodykite, kad skaičius $s_1$ yra racionalusis, 
+jei $s_2$,$s_3$ ir $s_4$ yra racionalieji skaičiai.  
+**(C)** Ar skaičius $s_1$ gali būti iracionalusis, 
+jei $s_2$ ir $s_3$ yra racionalieji skaičiai?  
+(Realusis skaičius $r$ yra vadinamas *racionaliuoju*, 
+jei jį galima užrašyti dviejų sveikųjų skaičių $p$ ir $q$ santykiu
+$\\frac{p}{q}$, pavyzdžiui, $\\frac{3}{2}$, $-\\frac{17}{3}$,$4$,$0$
+ir pan. 
+Priešingu atveju, t.y. jei $r$ taip išreikšti neįmanoma, 
+jis yra vadinamas *iracionaliuoju*, pavyzdžiui,
+$\\sqrt{5}$.)"""@lt,
+        """Doti reāli skaitļi $x$ un $y$. 
 Apzīmēsim $s_1 = x + y$, $s_2 = x^2 + y^2$,
 $s_3 = x^3 + y^3$, $s_4 = x^4 + y^4$ un $t = xy$.  
-**(a)** Pierādīt, ka $t$ ir racionāls, ja 
+**(A)** Pierādīt, ka $t$ ir racionāls, ja 
 $s_2$, $s_3$ un $s_4$ ir racionāli skaitļi.  
-**(b)** pierādīt, ka skaitlis $s_1$ ir racionāls, 
+**(B)** Pierādīt, ka skaitlis $s_1$ ir racionāls, 
 ja $s_2$,$s_3$ un $s_4$ ir racionāli skaitļi.  
-**(c)** Vai skaitlis $s_1$ var būt iracionāls, ja 
+**(C)** Vai skaitlis $s_1$ var būt iracionāls, ja 
 $s_2$ un $s_3$ ir iracionāli skaitļi?  
 (Reālu skaitli $r$ sauc par *racionālu*, 
 ja to var uzrakstīt kā divu veselu skaitļu $p$ ir $q$ attiecību
 $\\frac{p}{q}$, piemēram, $\\frac{3}{2}$, $-\\frac{17}{3}$,$4$,$0$
 utml. Pretējā gadījumā, t.i. ja $r$ šādi nevar izteikt, 
 tad to sauc par *iracionālu*, piemēram, 
-$\\sqrt{5}$.)
-
-
-
-<!--
-questionType=Prove,ProveDisprove
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Doti reāli skaitļi $x$ un $y$. 
+$\\sqrt{5}$.)"""@lv ;
+    eliozo:problemTextHtml """<p>Duoti realieji skaičiai $x$ ir $y$. 
+Pažymėkime $s_1 = x + y$, $s_2 = x^2 + y^2$,
+$s_3 = x^3 + y^3$, $s_4 = x^4 + y^4$ ir $t = xy$.<br />
+<strong>(A)</strong> Įrodykite, kad skaičius $t$ yra racionalusis, jei 
+$s_2$, $s_3$ ir $s_4$ yra racionalieji skaičiai.<br />
+<strong>(B)</strong> Įrodykite, kad skaičius $s_1$ yra racionalusis, 
+jei $s_2$,$s_3$ ir $s_4$ yra racionalieji skaičiai.<br />
+<strong>(C)</strong> Ar skaičius $s_1$ gali būti iracionalusis, 
+jei $s_2$ ir $s_3$ yra racionalieji skaičiai?<br />
+(Realusis skaičius $r$ yra vadinamas <em>racionaliuoju</em>, 
+jei jį galima užrašyti dviejų sveikųjų skaičių $p$ ir $q$ santykiu
+$\\frac{p}{q}$, pavyzdžiui, $\\frac{3}{2}$, $-\\frac{17}{3}$,$4$,$0$
+ir pan. 
+Priešingu atveju, t.y. jei $r$ taip išreikšti neįmanoma, 
+jis yra vadinamas <em>iracionaliuoju</em>, pavyzdžiui,
+$\\sqrt{5}$.)</p>"""@lt,
+        """<p>Doti reāli skaitļi $x$ un $y$. 
 Apzīmēsim $s_1 = x + y$, $s_2 = x^2 + y^2$,
 $s_3 = x^3 + y^3$, $s_4 = x^4 + y^4$ un $t = xy$.<br />
-<strong>(a)</strong> Pierādīt, ka $t$ ir racionāls, ja 
+<strong>(A)</strong> Pierādīt, ka $t$ ir racionāls, ja 
 $s_2$, $s_3$ un $s_4$ ir racionāli skaitļi.<br />
-<strong>(b)</strong> pierādīt, ka skaitlis $s_1$ ir racionāls, 
+<strong>(B)</strong> Pierādīt, ka skaitlis $s_1$ ir racionāls, 
 ja $s_2$,$s_3$ un $s_4$ ir racionāli skaitļi.<br />
-<strong>(c)</strong> Vai skaitlis $s_1$ var būt iracionāls, ja 
+<strong>(C)</strong> Vai skaitlis $s_1$ var būt iracionāls, ja 
 $s_2$ un $s_3$ ir iracionāli skaitļi?<br />
 (Reālu skaitli $r$ sauc par <em>racionālu</em>, 
 ja to var uzrakstīt kā divu veselu skaitļu $p$ ir $q$ attiecību
 $\\frac{p}{q}$, piemēram, $\\frac{3}{2}$, $-\\frac{17}{3}$,$4$,$0$
 utml. Pretējā gadījumā, t.i. ja $r$ šādi nevar izteikt, 
 tad to sauc par <em>iracionālu</em>, piemēram, 
-$\\sqrt{5}$.)</p>
-<!--
-questionType=Prove,ProveDisprove
--->"""@lv ;
+$\\sqrt{5}$.)</p>"""@lv ;
+    eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 5 ;
+    eliozo:questionType "Prove",
+        "ProveDisprove" ;
     eliozo:suffix "LT.TST.2014.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2015.12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2015.12.2" ;
-    eliozo:problemText """Atrodiet visus vienādojuma
+    eliozo:problemText """Raskite visus lygties
+$$a! \\cdot b! = a! + b! + c!$$
+natūraliuosius sprendinius $(a,b,c)$.
+(Čia $n! = 1 \\cdot 2 \\cdot \\ldots \\cdot n$, 
+pavyzdžiui, $4! = 1 \\cdot 2 \\cdot 3 \\cdot 4 = 24$.)"""@lt,
+        """Atrodiet visus vienādojuma
 $$a! \\cdot b! = a! + b! + c!$$
 naturālos atrisinājumus $(a,b,c)$.
 (Šeit $n! = 1 \\cdot 2 \\cdot \\ldots \\cdot n$, 
-piemēram, $4! = 1 \\cdot 2 \\cdot 3 \\cdot 4 = 24$.)
-
-
-
-<!--
-questionType=FindAll
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Atrodiet visus vienādojuma
+piemēram, $4! = 1 \\cdot 2 \\cdot 3 \\cdot 4 = 24$.)"""@lv ;
+    eliozo:problemTextHtml """<p>Raskite visus lygties
+$$a! \\cdot b! = a! + b! + c!$$
+natūraliuosius sprendinius $(a,b,c)$.
+(Čia $n! = 1 \\cdot 2 \\cdot \\ldots \\cdot n$, 
+pavyzdžiui, $4! = 1 \\cdot 2 \\cdot 3 \\cdot 4 = 24$.)</p>"""@lt,
+        """<p>Atrodiet visus vienādojuma
 $$a! \\cdot b! = a! + b! + c!$$
 naturālos atrisinājumus $(a,b,c)$.
 (Šeit $n! = 1 \\cdot 2 \\cdot \\ldots \\cdot n$, 
-piemēram, $4! = 1 \\cdot 2 \\cdot 3 \\cdot 4 = 24$.)</p>
-<!--
-questionType=FindAll
--->"""@lv ;
+piemēram, $4! = 1 \\cdot 2 \\cdot 3 \\cdot 4 = 24$.)</p>"""@lv ;
+    eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LT.TST.2015.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2015.12.5 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2015.12.5" ;
-    eliozo:problemText """Kopas $A$ un $B$ ir naturālo skaitļu kopas 
+    eliozo:problemText """Aibės $A$ ir $B$ yra natūraliųjų skaičių aibės 
+$\\{ 1,2,3,\\ldots \\}$ poaibiai, pasižymintys 
+tokiomis dviem savybėmis:
+
+a. Bet kurių dviejų skirtingų aibės $A$ elementų 
+   $x$ ir $y$ suma $x + y$ priklauso aibei $B$.  
+b. Bet kurių dviejų skirtingų aibės $B$ elementų 
+   $z$ ir $t$ santykis $\\frac{z}{t}$ (didesnį
+   skaičių $z$ dalijant iš mažesnio $t$) priklauso aibei $A$.  
+
+Kiek daugiausiai elementų gali turėti aibių sąjunga $A \\cup B$?
+(Aibę $A \\cup B$ sudaro elementai, priklausantys bent 
+vienai iš dviejų aibių $A$ ir $B$.)"""@lt,
+        """Kopas $A$ un $B$ ir naturālo skaitļu kopas 
 $\\{ 1,2,3,\\ldots \\}$ apakškopas, kam piemīt šādas
-divas īpašības:  
-**(a)** Jebkuru divu dažādu kopas $A$ elementu $x$ un 
-$y$ summa $x+y$ pieder kopai $B$.   
-**(b)** Jekburu divu dažādu kopas $B$ elementu $z$ un $t$
-attiecība $\\frac{z}{t}$ (lielāko skaitli $z$ dalot ar 
-mazāko $t$) pieder kopai $A$.  
+divas īpašības:
+
+a. Jebkuru divu dažādu kopas $A$ elementu $x$ un 
+   $y$ summa $x+y$ pieder kopai $B$.   
+b. Jekburu divu dažādu kopas $B$ elementu $z$ un $t$
+   attiecība $\\frac{z}{t}$ (lielāko skaitli $z$ dalot ar 
+   mazāko $t$) pieder kopai $A$.  
+
 Kāds ir lielākais iespējamais elementu skaits kopu apvienojumā  $A \\cup B$?
 (Kopu $A \\cup B$ veido elementi, kuri pieder vismaz vienai 
-no kopām $A$ un $B$.)
-
-
-
-<!--
-questionType=FindOptimal
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Kopas $A$ un $B$ ir naturālo skaitļu kopas 
+no kopām $A$ un $B$.)"""@lv ;
+    eliozo:problemTextHtml """<p>Aibės $A$ ir $B$ yra natūraliųjų skaičių aibės 
+${ 1,2,3,\\ldots }$ poaibiai, pasižymintys 
+tokiomis dviem savybėmis:</p>
+<p>a. Bet kurių dviejų skirtingų aibės $A$ elementų 
+   $x$ ir $y$ suma $x + y$ priklauso aibei $B$.<br />
+b. Bet kurių dviejų skirtingų aibės $B$ elementų 
+   $z$ ir $t$ santykis $\\frac{z}{t}$ (didesnį
+   skaičių $z$ dalijant iš mažesnio $t$) priklauso aibei $A$.  </p>
+<p>Kiek daugiausiai elementų gali turėti aibių sąjunga $A \\cup B$?
+(Aibę $A \\cup B$ sudaro elementai, priklausantys bent 
+vienai iš dviejų aibių $A$ ir $B$.)</p>"""@lt,
+        """<p>Kopas $A$ un $B$ ir naturālo skaitļu kopas 
 ${ 1,2,3,\\ldots }$ apakškopas, kam piemīt šādas
-divas īpašības:<br />
-<strong>(a)</strong> Jebkuru divu dažādu kopas $A$ elementu $x$ un 
-$y$ summa $x+y$ pieder kopai $B$. <br />
-<strong>(b)</strong> Jekburu divu dažādu kopas $B$ elementu $z$ un $t$
-attiecība $\\frac{z}{t}$ (lielāko skaitli $z$ dalot ar 
-mazāko $t$) pieder kopai $A$.<br />
-Kāds ir lielākais iespējamais elementu skaits kopu apvienojumā  $A \\cup B$?
+divas īpašības:</p>
+<p>a. Jebkuru divu dažādu kopas $A$ elementu $x$ un 
+   $y$ summa $x+y$ pieder kopai $B$. <br />
+b. Jekburu divu dažādu kopas $B$ elementu $z$ un $t$
+   attiecība $\\frac{z}{t}$ (lielāko skaitli $z$ dalot ar 
+   mazāko $t$) pieder kopai $A$.  </p>
+<p>Kāds ir lielākais iespējamais elementu skaits kopu apvienojumā  $A \\cup B$?
 (Kopu $A \\cup B$ veido elementi, kuri pieder vismaz vienai 
-no kopām $A$ un $B$.)</p>
-<!--
-questionType=FindOptimal
--->"""@lv ;
+no kopām $A$ un $B$.)</p>"""@lv ;
+    eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 5 ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LT.TST.2015.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2016.12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2016.12.2" ;
-    eliozo:problemText """Atrodiet visus vienādojuma 
+    eliozo:problemText """Raskite visus lygties
 $$4^a \\cdot 5^b − 3^c \\cdot 11^d = 1$$
-naturālos atrisinājumus $(a,b,c,d)$.
-
-
-
-<!--
-questionType=FindAll
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Atrodiet visus vienādojuma 
+natūraliuosius sprendinius $(a,b,c,d)$."""@lt,
+        """Atrodiet visus vienādojuma 
 $$4^a \\cdot 5^b − 3^c \\cdot 11^d = 1$$
-naturālos atrisinājumus $(a,b,c,d)$.</p>
-<!--
-questionType=FindAll
--->"""@lv ;
+naturālos atrisinājumus $(a,b,c,d)$."""@lv ;
+    eliozo:problemTextHtml """<p>Raskite visus lygties
+$$4^a \\cdot 5^b − 3^c \\cdot 11^d = 1$$
+natūraliuosius sprendinius $(a,b,c,d)$.</p>"""@lt,
+        """<p>Atrodiet visus vienādojuma 
+$$4^a \\cdot 5^b − 3^c \\cdot 11^d = 1$$
+naturālos atrisinājumus $(a,b,c,d)$.</p>"""@lv ;
+    eliozo:problemTimeID "2016" ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 2 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LT.TST.2016.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2017.12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2017.12.2" ;
-    eliozo:problemText """Kopu, ko veido $m > 2$ naturāli skaitļi, sauksim par *vienkāršu*, ja 
+    eliozo:problemText """Aibę, sudarytą iš $m > 2$ natūraliųjų skaičių, vadiname *paprasta*, jei bet
+kurie du tos aibės elementai yra tarpusavyje pirminiai skaičiai. Raskite
+mažiausią natūralųjį skaičių $n$, kad bet kuriai paprastai aibei, kuri yra
+aibės $S = \\{1, 2, \\ldots, 2017\\}$ poaibis ir kuri turi lygiai $n$ elementų, visada
+priklausytų bent vienas pirminis skaičius."""@lt,
+        """Kopu, ko veido $m > 2$ naturāli skaitļi, sauksim par *vienkāršu*, ja 
 jebkuri divi šīs kopas elementi ir savstarpēji pirmskaitļi. 
 Atrodiet mazāko naturālo $n$, ka jebkurai vienkāršai kopai, kas ir kopas
-$S = \\{1, 2, . . . , 2017\\}$ apakškopa un kurā ir tieši $n$ elementu, noteikti
-pieder kaut viens pirmskaitlis.
-
-
-
-
-<!--
-questionType=FindOptimal
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Kopu, ko veido $m &gt; 2$ naturāli skaitļi, sauksim par <em>vienkāršu</em>, ja 
+$S = \\{1, 2, \\ldots, 2017\\}$ apakškopa un kurā ir tieši $n$ elementu, noteikti
+pieder kaut viens pirmskaitlis."""@lv ;
+    eliozo:problemTextHtml """<p>Aibę, sudarytą iš $m &gt; 2$ natūraliųjų skaičių, vadiname <em>paprasta</em>, jei bet
+kurie du tos aibės elementai yra tarpusavyje pirminiai skaičiai. Raskite
+mažiausią natūralųjį skaičių $n$, kad bet kuriai paprastai aibei, kuri yra
+aibės $S = {1, 2, \\ldots, 2017}$ poaibis ir kuri turi lygiai $n$ elementų, visada
+priklausytų bent vienas pirminis skaičius.</p>"""@lt,
+        """<p>Kopu, ko veido $m &gt; 2$ naturāli skaitļi, sauksim par <em>vienkāršu</em>, ja 
 jebkuri divi šīs kopas elementi ir savstarpēji pirmskaitļi. 
 Atrodiet mazāko naturālo $n$, ka jebkurai vienkāršai kopai, kas ir kopas
-$S = {1, 2, . . . , 2017}$ apakškopa un kurā ir tieši $n$ elementu, noteikti
-pieder kaut viens pirmskaitlis.</p>
-<!--
-questionType=FindOptimal
--->"""@lv ;
+$S = {1, 2, \\ldots, 2017}$ apakškopa un kurā ir tieši $n$ elementu, noteikti
+pieder kaut viens pirmskaitlis.</p>"""@lv ;
+    eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 2 ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LT.TST.2017.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2017.12.3 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2017.12.3" ;
-    eliozo:problemText """Divus polinomus ar veseliem koeficientiem $A(x) = a_nx^n+\\ldots+a_1x+a_0$ un
+    eliozo:problemText """Du daugianarius su sveikaisiais koeficientais $A(x) = a_nx^n+\\ldots+a_1x+a_0$
+ir $B(x) = b_mx^m + \\ldots + b_1x + b_0$ (čia $m, n > 0$ ir $a_n, b_m \\neq 0$) vadiname
+*panašiaisiais*, jei $m = n$ ir jei rinkiniuose 
+$a_0,a_1,\\ldots,a_n$ ir $b_0,b_1,\\ldots,b_n$
+kiekvienas sveikasis skaičius sutinkamas po tiek pat kartų.
+Daugianariai su sveikaisiais koeficientais $P(x)$ ir $Q(x)$ yra panašieji ir
+$P(16) = 3^{2012}$.  
+**(A)** Įrodykite, kad $Q(3^{2012}) \\neq 0$.  
+**(B)** Raskite mažiausią galimą $|Q(3^{2012}|$ reikšmę."""@lt,
+        """Divus polinomus ar veseliem koeficientiem $A(x) = a_nx^n+\\ldots+a_1x+a_0$ un
 $B(x) = b_mx^m + \\ldots + b_1x + b_0$ (šeit $m, n > 0$ un $a_n, b_m \\neq 0$) sauksim par 
 *līdzīgiem*, ja $m = n$ un ja abos skaitļu sarakstos
 $a_0,a_1,\\ldots,a_n$ un $b_0,b_1,\\ldots,b_n$
 ikviens vesels skaitlis ir sastopams vienādu skaitu reižu.
 Polinomi ar veseliem koeficientiem $P(x)$ un $Q(x)$ ir līdzīgi un
 $P(16) = 3^{2012}$.  
-**(a)** Pierādiet, ka $Q(3^{2012}) \\neq 0$.  
-**(b)** Atrodiet mazāko iespējamo izteiksmes $|Q(3^{2012}|$ vērtību.
-
-
-
-
-<!--
-questionType=Prove,FindOptimal
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Divus polinomus ar veseliem koeficientiem $A(x) = a_nx^n+\\ldots+a_1x+a_0$ un
+**(A)** Pierādiet, ka $Q(3^{2012}) \\neq 0$.  
+**(B)** Atrodiet mazāko iespējamo izteiksmes $|Q(3^{2012}|$ vērtību."""@lv ;
+    eliozo:problemTextHtml """<p>Du daugianarius su sveikaisiais koeficientais $A(x) = a_nx^n+\\ldots+a_1x+a_0$
+ir $B(x) = b_mx^m + \\ldots + b_1x + b_0$ (čia $m, n &gt; 0$ ir $a_n, b_m \\neq 0$) vadiname
+<em>panašiaisiais</em>, jei $m = n$ ir jei rinkiniuose 
+$a_0,a_1,\\ldots,a_n$ ir $b_0,b_1,\\ldots,b_n$
+kiekvienas sveikasis skaičius sutinkamas po tiek pat kartų.
+Daugianariai su sveikaisiais koeficientais $P(x)$ ir $Q(x)$ yra panašieji ir
+$P(16) = 3^{2012}$.<br />
+<strong>(A)</strong> Įrodykite, kad $Q(3^{2012}) \\neq 0$.<br />
+<strong>(B)</strong> Raskite mažiausią galimą $|Q(3^{2012}|$ reikšmę.</p>"""@lt,
+        """<p>Divus polinomus ar veseliem koeficientiem $A(x) = a_nx^n+\\ldots+a_1x+a_0$ un
 $B(x) = b_mx^m + \\ldots + b_1x + b_0$ (šeit $m, n &gt; 0$ un $a_n, b_m \\neq 0$) sauksim par 
 <em>līdzīgiem</em>, ja $m = n$ un ja abos skaitļu sarakstos
 $a_0,a_1,\\ldots,a_n$ un $b_0,b_1,\\ldots,b_n$
 ikviens vesels skaitlis ir sastopams vienādu skaitu reižu.
 Polinomi ar veseliem koeficientiem $P(x)$ un $Q(x)$ ir līdzīgi un
 $P(16) = 3^{2012}$.<br />
-<strong>(a)</strong> Pierādiet, ka $Q(3^{2012}) \\neq 0$.<br />
-<strong>(b)</strong> Atrodiet mazāko iespējamo izteiksmes $|Q(3^{2012}|$ vērtību.</p>
-<!--
-questionType=Prove,FindOptimal
--->"""@lv ;
+<strong>(A)</strong> Pierādiet, ka $Q(3^{2012}) \\neq 0$.<br />
+<strong>(B)</strong> Atrodiet mazāko iespējamo izteiksmes $|Q(3^{2012}|$ vērtību.</p>"""@lv ;
+    eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 3 ;
+    eliozo:questionType "FindOptimal",
+        "Prove" ;
     eliozo:suffix "LT.TST.2017.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2017.12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2017.12.4" ;
-    eliozo:problemText """Doti pirmskaitļi $p > q$ un naturāli skaitļi $k,\\ell$. Kopu $A$ veido
-visi ntaurālie skaitļi $n$, kuriem $p^kq^{\\ell}n$ dalās ar $p + n$.  
-**(a)** Pierādiet, ka $|A| \\geq 1$.  
-**(b)** Pierādiet, ka $|A| \\geq k\\ell + k + \\ell$.  
-**(c)** Pierādiet, ka $|A| \\leq k\\ell + k + 2\\ell − 1$.  
-**(d)** Vai eksistē pirmskaitļu pāris $p > q$, kuram $|A| = 127$, kad
+    eliozo:problemText """Duoti pirminiai skaičiai $p > q$ ir natūralieji skaičiai $k,\\ell$. Aibę $A$ sudaro
+visi natūralieji skaičiai $n$, su kuriais $p^kq^{\\ell}n$ dalijasi iš $p + n$.  
+**(A)** Įrodykite, kad $|A| \\geq 1$.  
+**(B)** Įrodykite, kad $|A| \\geq k\\ell + k + \\ell$.  
+**(C)** Įrodykite, kad $|A| \\leq k\\ell + k + 2\\ell − 1$.  
+**(D)** Ar egzistuoja pirminių skaičių pora $p > q$, su kuria $|A| = 127$, kai
 $k = \\ell = 10$?  
-(Šeit $|A|$ apzīmē kopas $A$ elementu skaitu.)
-
-
-
-
-<!--
-questionType=Prove,ProveDisprove
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Doti pirmskaitļi $p &gt; q$ un naturāli skaitļi $k,\\ell$. Kopu $A$ veido
-visi ntaurālie skaitļi $n$, kuriem $p^kq^{\\ell}n$ dalās ar $p + n$.<br />
-<strong>(a)</strong> Pierādiet, ka $|A| \\geq 1$.<br />
-<strong>(b)</strong> Pierādiet, ka $|A| \\geq k\\ell + k + \\ell$.<br />
-<strong>(c)</strong> Pierādiet, ka $|A| \\leq k\\ell + k + 2\\ell − 1$.<br />
-<strong>(d)</strong> Vai eksistē pirmskaitļu pāris $p &gt; q$, kuram $|A| = 127$, kad
+(Čia $|A|$ žymi aibės $A$ elementų skaičių.)"""@lt,
+        """Doti pirmskaitļi $p > q$ un naturāli skaitļi $k,\\ell$. Kopu $A$ veido
+visi naturālie skaitļi $n$, kuriem $p^kq^{\\ell}n$ dalās ar $p + n$.  
+**(A)** Pierādiet, ka $|A| \\geq 1$.  
+**(B)** Pierādiet, ka $|A| \\geq k\\ell + k + \\ell$.  
+**(C)** Pierādiet, ka $|A| \\leq k\\ell + k + 2\\ell − 1$.  
+**(D)** Vai eksistē pirmskaitļu pāris $p > q$, kuram $|A| = 127$, kad
+$k = \\ell = 10$?  
+(Šeit $|A|$ apzīmē kopas $A$ elementu skaitu.)"""@lv ;
+    eliozo:problemTextHtml """<p>Duoti pirminiai skaičiai $p &gt; q$ ir natūralieji skaičiai $k,\\ell$. Aibę $A$ sudaro
+visi natūralieji skaičiai $n$, su kuriais $p^kq^{\\ell}n$ dalijasi iš $p + n$.<br />
+<strong>(A)</strong> Įrodykite, kad $|A| \\geq 1$.<br />
+<strong>(B)</strong> Įrodykite, kad $|A| \\geq k\\ell + k + \\ell$.<br />
+<strong>(C)</strong> Įrodykite, kad $|A| \\leq k\\ell + k + 2\\ell − 1$.<br />
+<strong>(D)</strong> Ar egzistuoja pirminių skaičių pora $p &gt; q$, su kuria $|A| = 127$, kai
 $k = \\ell = 10$?<br />
-(Šeit $|A|$ apzīmē kopas $A$ elementu skaitu.)</p>
-<!--
-questionType=Prove,ProveDisprove
--->"""@lv ;
+(Čia $|A|$ žymi aibės $A$ elementų skaičių.)</p>"""@lt,
+        """<p>Doti pirmskaitļi $p &gt; q$ un naturāli skaitļi $k,\\ell$. Kopu $A$ veido
+visi naturālie skaitļi $n$, kuriem $p^kq^{\\ell}n$ dalās ar $p + n$.<br />
+<strong>(A)</strong> Pierādiet, ka $|A| \\geq 1$.<br />
+<strong>(B)</strong> Pierādiet, ka $|A| \\geq k\\ell + k + \\ell$.<br />
+<strong>(C)</strong> Pierādiet, ka $|A| \\leq k\\ell + k + 2\\ell − 1$.<br />
+<strong>(D)</strong> Vai eksistē pirmskaitļu pāris $p &gt; q$, kuram $|A| = 127$, kad
+$k = \\ell = 10$?<br />
+(Šeit $|A|$ apzīmē kopas $A$ elementu skaitu.)</p>"""@lv ;
+    eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 4 ;
+    eliozo:questionType "Prove",
+        "ProveDisprove" ;
     eliozo:suffix "LT.TST.2017.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2018.12.3 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
+    eliozo:genre "SpecialNumbers" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2018.12.3" ;
-    eliozo:problemText """Naturālu skaitli $n$ sauksim par *veiksmīgu*, ja eksistē bezgala daudzas
+    eliozo:problemText """Natūralųjį skaičių $n$ vadinkime *sėkmingu*, jei egzistuoja be galo daug
+teigiamų racionaliųjų skaičių rinkinių $(a_1,\\ldots,a_n)$, su kuriais abu skaičiai
+$a_1 + \\cdots + a_n$ ir 
+$\\frac{1}{a_1} + \\cdots + \\frac{1}{a_n}$
+yra natūralieji. (Pavyzdžiui, skaičius $n = 1$
+nėra sėkmingas, nes $a_1$ ir $\\frac{1}{a_1}$
+abu yra natūralieji tada ir tik tada, kai
+$a_1 = 1$. Skaičiai $a_1,\\ldots,a_n$ nebūtinai skirtingi.)  
+**(A)** Įrodykite, kad skaičius $n = 2$ nėra sėkmingas.  
+**(B)** Įrodykite, kad kiekvienas natūralusis skaičius $n \\geq 3$ yra sėkmingas."""@lt,
+        """Naturālu skaitli $n$ sauksim par *veiksmīgu*, ja eksistē bezgala daudzas
 pozitīvu racionālu skaitļu kolekcijas $(a_1,\\ldots,a_n)$, kurām abi skaitļi
 $a_1 + \\cdots + a_n$ un
 $\\frac{1}{a_1} + \\cdots + \\frac{1}{a_n}$
@@ -734,18 +944,19 @@ ir naturāli. (Piemēram, skaitlis $n = 1$
 nav veiksmīgs, jo $a_1$ un $\\frac{1}{a_1}$
 abi ir naturāli tad un tikai tad, kad 
 $a_1 = 1$. Skaitļiem $a_1,\\ldots,a_n$ nav noteikti jābūt dažādiem.)  
-**(a)** Pierādiet, ka skaitlis $n = 2$ nav veiksmīgs.  
-**(b)** Pierādiet, ka jebkurš naturāls skaitlis $n \\geq 3$ ir veiksmīgs.
-
-
-
-
-<!--
-genre=special-numbers
-questionType=Prove,Prove
-seeAlso=IMO.SHL.2017.N6
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Naturālu skaitli $n$ sauksim par <em>veiksmīgu</em>, ja eksistē bezgala daudzas
+**(A)** Pierādiet, ka skaitlis $n = 2$ nav veiksmīgs.  
+**(B)** Pierādiet, ka jebkurš naturāls skaitlis $n \\geq 3$ ir veiksmīgs."""@lv ;
+    eliozo:problemTextHtml """<p>Natūralųjį skaičių $n$ vadinkime <em>sėkmingu</em>, jei egzistuoja be galo daug
+teigiamų racionaliųjų skaičių rinkinių $(a_1,\\ldots,a_n)$, su kuriais abu skaičiai
+$a_1 + \\cdots + a_n$ ir 
+$\\frac{1}{a_1} + \\cdots + \\frac{1}{a_n}$
+yra natūralieji. (Pavyzdžiui, skaičius $n = 1$
+nėra sėkmingas, nes $a_1$ ir $\\frac{1}{a_1}$
+abu yra natūralieji tada ir tik tada, kai
+$a_1 = 1$. Skaičiai $a_1,\\ldots,a_n$ nebūtinai skirtingi.)<br />
+<strong>(A)</strong> Įrodykite, kad skaičius $n = 2$ nėra sėkmingas.<br />
+<strong>(B)</strong> Įrodykite, kad kiekvienas natūralusis skaičius $n \\geq 3$ yra sėkmingas.</p>"""@lt,
+        """<p>Naturālu skaitli $n$ sauksim par <em>veiksmīgu</em>, ja eksistē bezgala daudzas
 pozitīvu racionālu skaitļu kolekcijas $(a_1,\\ldots,a_n)$, kurām abi skaitļi
 $a_1 + \\cdots + a_n$ un
 $\\frac{1}{a_1} + \\cdots + \\frac{1}{a_n}$
@@ -753,113 +964,124 @@ ir naturāli. (Piemēram, skaitlis $n = 1$
 nav veiksmīgs, jo $a_1$ un $\\frac{1}{a_1}$
 abi ir naturāli tad un tikai tad, kad 
 $a_1 = 1$. Skaitļiem $a_1,\\ldots,a_n$ nav noteikti jābūt dažādiem.)<br />
-<strong>(a)</strong> Pierādiet, ka skaitlis $n = 2$ nav veiksmīgs.<br />
-<strong>(b)</strong> Pierādiet, ka jebkurš naturāls skaitlis $n \\geq 3$ ir veiksmīgs.</p>
-<!--
-genre=special-numbers
-questionType=Prove,Prove
-seeAlso=IMO.SHL.2017.N6
--->"""@lv ;
+<strong>(A)</strong> Pierādiet, ka skaitlis $n = 2$ nav veiksmīgs.<br />
+<strong>(B)</strong> Pierādiet, ka jebkurš naturāls skaitlis $n \\geq 3$ ir veiksmīgs.</p>"""@lv ;
+    eliozo:problemTimeID "2018" ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" ;
+    eliozo:seeAlso "IMO.SHL.2017.N6" ;
     eliozo:suffix "LT.TST.2018.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2018.12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2018.12.4" ;
-    eliozo:problemText """Jebkuram naturālam nepāru $n$ nosakiet, kāds ir skaitļa 
+    eliozo:problemText """Kiekvienam natūraliajam nelyginiam $n$ nustatykite, koks yra skaičiaus
+$$\\frac{10^{n(n+1)}}{10^n + 6}$$
+vienetų skaitmuo. (Pavyzdžiui, skaičiaus $27,83$ vienetų skaitmuo yra $7$,
+o skaičiaus $\\pi = 3,14\\ldots$ vienetų skaitmuo yra $3$.)"""@lt,
+        """Jebkuram naturālam nepāru $n$ nosakiet, kāds ir skaitļa 
 $$\\frac{10^{n(n+1)}}{10^n + 6}$$
 vienu cipars. (Piemēram, skaitļa $27,83$ vienu cipars ir $7$,
-bet skaitļa $\\pi = 3,14\\ldots$ vienu cipars ir $3$.)
-
-
-
-
-<!--
-questionType=FindAll
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Jebkuram naturālam nepāru $n$ nosakiet, kāds ir skaitļa 
+bet skaitļa $\\pi = 3,14\\ldots$ vienu cipars ir $3$.)"""@lv ;
+    eliozo:problemTextHtml """<p>Kiekvienam natūraliajam nelyginiam $n$ nustatykite, koks yra skaičiaus
+$$\\frac{10^{n(n+1)}}{10^n + 6}$$
+vienetų skaitmuo. (Pavyzdžiui, skaičiaus $27,83$ vienetų skaitmuo yra $7$,
+o skaičiaus $\\pi = 3,14\\ldots$ vienetų skaitmuo yra $3$.)</p>"""@lt,
+        """<p>Jebkuram naturālam nepāru $n$ nosakiet, kāds ir skaitļa 
 $$\\frac{10^{n(n+1)}}{10^n + 6}$$
 vienu cipars. (Piemēram, skaitļa $27,83$ vienu cipars ir $7$,
-bet skaitļa $\\pi = 3,14\\ldots$ vienu cipars ir $3$.)</p>
-<!--
-questionType=FindAll
--->"""@lv ;
+bet skaitļa $\\pi = 3,14\\ldots$ vienu cipars ir $3$.)</p>"""@lv ;
+    eliozo:problemTimeID "2018" ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LT.TST.2018.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2019.12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2019.12.1" ;
-    eliozo:problemText """Mīkolas izdomāja naturālu skaitļu virkni $a_1,a_2,a_3,\\ldots$, 
+    eliozo:problemText """Mykolas sugalvojo natūraliųjų skaičių seką $a_1,a_2,a_3,\\ldots$, 
+o tada apibrėžė naują seką $b_1, b_2, b_3,\\ldots$ tokiomis lygybėmis:
+$$b_1 = a_1,\\;\\;b_2 = a_2, b_n = a_nb_{n-1} + $b_{n-2}\\;\\;\\text{visiems}\\;\\;n > 3.$$
+Ar galėjo Mykolas pradinę seką $a_1, a_2, a_3,\\ldots$ parinkti taip, 
+kad kiekvienas iš skaičių $b_1, b_2, b_3, \\ldots$ būtų  
+**(A)** natūraliojo skaičiaus kvadratas?  
+**(B)** natūraliojo skaičiaus kubas?"""@lt,
+        """Mīkolas izdomāja naturālu skaitļu virkni $a_1,a_2,a_3,\\ldots$, 
 bet tad definēja jaunu virkni $b_1, b_2, b_3,\\ldots$ ar šādām vienādībām:
 $$b_1 = a_1,\\;\\;b_2 = a_2, b_n = a_nb_{n-1} + b_{n-2}\\;\\;\\text{visiem}\\;\\;n > 3.$$
 Vai Mīkolas varēja izvēlēties sākotnējo virkni $a_1, a_2, a_3,\\ldots$ tā, 
 ka jebkurš no skaitļiem $b_1, b_2, b_3, \\ldots$ būtu  
-**(a)** naturāla skaitļa kvadrāts?  
-**(b)** naturāla skaitļa kubs?
-
-
-
-<!--
-questionType=ProveDisprove
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Mīkolas izdomāja naturālu skaitļu virkni $a_1,a_2,a_3,\\ldots$, 
+**(A)** naturāla skaitļa kvadrāts?  
+**(B)** naturāla skaitļa kubs?"""@lv ;
+    eliozo:problemTextHtml """<p>Mykolas sugalvojo natūraliųjų skaičių seką $a_1,a_2,a_3,\\ldots$, 
+o tada apibrėžė naują seką $b_1, b_2, b_3,\\ldots$ tokiomis lygybėmis:
+$$b_1 = a_1,\\;\\;b_2 = a_2, b_n = a_nb_{n-1} + $b_{n-2}\\;\\;\\text{visiems}\\;\\;n &gt; 3.$$
+Ar galėjo Mykolas pradinę seką $a_1, a_2, a_3,\\ldots$ parinkti taip, 
+kad kiekvienas iš skaičių $b_1, b_2, b_3, \\ldots$ būtų<br />
+<strong>(A)</strong> natūraliojo skaičiaus kvadratas?<br />
+<strong>(B)</strong> natūraliojo skaičiaus kubas?</p>"""@lt,
+        """<p>Mīkolas izdomāja naturālu skaitļu virkni $a_1,a_2,a_3,\\ldots$, 
 bet tad definēja jaunu virkni $b_1, b_2, b_3,\\ldots$ ar šādām vienādībām:
 $$b_1 = a_1,\\;\\;b_2 = a_2, b_n = a_nb_{n-1} + b_{n-2}\\;\\;\\text{visiem}\\;\\;n &gt; 3.$$
 Vai Mīkolas varēja izvēlēties sākotnējo virkni $a_1, a_2, a_3,\\ldots$ tā, 
 ka jebkurš no skaitļiem $b_1, b_2, b_3, \\ldots$ būtu<br />
-<strong>(a)</strong> naturāla skaitļa kvadrāts?<br />
-<strong>(b)</strong> naturāla skaitļa kubs?</p>
-<!--
-questionType=ProveDisprove
--->"""@lv ;
+<strong>(A)</strong> naturāla skaitļa kvadrāts?<br />
+<strong>(B)</strong> naturāla skaitļa kubs?</p>"""@lv ;
+    eliozo:problemTimeID "2019" ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 1 ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LT.TST.2019.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2019.12.5 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:domain "NT" ;
+    eliozo:genre "SpecialNumbers" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LT.TST.2019.12.5" ;
-    eliozo:problemText """Naturālu skaitli $n$ sauksim par *piecīgu*, ja tam ir 
+    eliozo:problemText """Natūralųjį skaičių $n$ vadinsime *penkiadaliu*, jei jis turi 
+tokius penkis skirtingus teigiamus daliklius, kurių ketvirtųjų 
+laipsnių suma lygi $n$. (Skaičiai $1$ ir $n$ taip pat yra skaičiaus $n$ dalikliai.)  
+**(A)** Įrodykite, kad penkiadalis skaičius visada dalijasi iš $5$.  
+**(B)** Nustatykite, ar yra be galo daug penkiadalių natūraliųjų skaičių."""@lt,
+        """Naturālu skaitli $n$ sauksim par *piecīgu*, ja tam ir 
 tādi pieci dažādi pozitīvi dalītāji, kuru ceturto pakāpju summa vienāda ar $n$. 
 (Skaitļi $1$ un $n$ arī ir  skaitļa $n$ dalītāji.)  
-**(a)** Pierādiet, ka piecīgs skaitlis vienmēr dalās ar $5$.  
-**(b)** Noskaidrojiet, vai ir bezgalīgi daudz piecīgu naturālu skaitļu.
-
-
-
-<!--
-genre=special-numbers
-questionType=Prove,ProveDisprove
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Naturālu skaitli $n$ sauksim par <em>piecīgu</em>, ja tam ir 
+**(A)** Pierādiet, ka piecīgs skaitlis vienmēr dalās ar $5$.  
+**(B)** Noskaidrojiet, vai ir bezgalīgi daudz piecīgu naturālu skaitļu."""@lv ;
+    eliozo:problemTextHtml """<p>Natūralųjį skaičių $n$ vadinsime <em>penkiadaliu</em>, jei jis turi 
+tokius penkis skirtingus teigiamus daliklius, kurių ketvirtųjų 
+laipsnių suma lygi $n$. (Skaičiai $1$ ir $n$ taip pat yra skaičiaus $n$ dalikliai.)<br />
+<strong>(A)</strong> Įrodykite, kad penkiadalis skaičius visada dalijasi iš $5$.<br />
+<strong>(B)</strong> Nustatykite, ar yra be galo daug penkiadalių natūraliųjų skaičių.</p>"""@lt,
+        """<p>Naturālu skaitli $n$ sauksim par <em>piecīgu</em>, ja tam ir 
 tādi pieci dažādi pozitīvi dalītāji, kuru ceturto pakāpju summa vienāda ar $n$. 
 (Skaitļi $1$ un $n$ arī ir  skaitļa $n$ dalītāji.)<br />
-<strong>(a)</strong> Pierādiet, ka piecīgs skaitlis vienmēr dalās ar $5$.<br />
-<strong>(b)</strong> Noskaidrojiet, vai ir bezgalīgi daudz piecīgu naturālu skaitļu.</p>
-<!--
-genre=special-numbers
-questionType=Prove,ProveDisprove
--->"""@lv ;
+<strong>(A)</strong> Pierādiet, ka piecīgs skaitlis vienmēr dalās ar $5$.<br />
+<strong>(B)</strong> Noskaidrojiet, vai ir bezgalīgi daudz piecīgu naturālu skaitļu.</p>"""@lv ;
+    eliozo:problemTimeID "2019" ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 5 ;
+    eliozo:questionType "Prove",
+        "ProveDisprove" ;
     eliozo:suffix "LT.TST.2019.12" ;
     eliozo:suggestedGrade 12 .
 

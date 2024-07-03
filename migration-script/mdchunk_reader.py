@@ -1,5 +1,6 @@
 import re
 import markdown
+from collections import defaultdict
 
 import rdflib
 from rdflib.namespace import RDF, FOAF, SKOS, XSD
@@ -23,9 +24,9 @@ def add_problem_literal_prop(g, problem_node, key, value):
     g.add((problem_node, problem_property, rdflib.term.Literal(value)))
 
 
-def add_problem_literal_lv_prop(g, problem_node, key, value):
+def add_problem_literal_prop_lang(g, problem_node, key, value, lang):
     problem_property = rdflib.URIRef(eliozo_ns + key)
-    g.add((problem_node, problem_property, rdflib.term.Literal(value, lang=u'lv')))
+    g.add((problem_node, problem_property, rdflib.term.Literal(value, lang=lang)))
 
 
 # for example, key='grade', value=10
@@ -39,15 +40,15 @@ def add_problem_topiclike_prop(g, problem_node, key, value):
     value_resource = rdflib.URIRef(eliozo_ns + value)
     g.add((problem_node, problem_property, value_resource))
 
-def addSolutionToRdfProblem(g, title, i, solution_text):
+def addSolutionToRdfProblem(g, title, i, solution_text, theLang):
     problem_node = rdflib.URIRef(eliozo_ns + title)  # subjekts
     solution_node = rdflib.URIRef(eliozo_ns + f"SOLN.{title}.SUB{i}")
     problem_rdf_property = rdflib.URIRef(RDF_NS + 'type')
     g.add((solution_node, problem_rdf_property, rdflib.URIRef(eliozo_ns + "Solution")))
-    add_problem_literal_lv_prop(g, solution_node, 'solutionText', solution_text)
+    add_problem_literal_prop_lang(g, solution_node, 'solutionText', solution_text, theLang)
     add_problem_integer_prop(g, solution_node, 'solutionNum', i)
-    add_problem_literal_lv_prop(g, solution_node, 'solutionTextHtml',
-                                markdown.markdown(solution_text, extensions=['tables']))
+    add_problem_literal_prop_lang(g, solution_node, 'solutionTextHtml',
+                                  markdown.markdown(solution_text, extensions=['tables']), theLang)
     problem_problemsolution_property = rdflib.URIRef(eliozo_ns + 'problemSolution')
     g.add((problem_node, problem_problemsolution_property, solution_node))
 
@@ -78,23 +79,74 @@ def extract_problem(text):
 
 
 
-def extract_solutions(text):
-    solutions = []
-    current_solution = []
-    lines = text.split('\n')
-    for line in lines:
-        if re.fullmatch(r'## Atrisin.*', line) or re.fullmatch(r'## Solut.*', line):
-            # append the previous solution
-            if current_solution != []:
-                solutions.append('\n'.join(current_solution))
-            current_solution = [line]
-        elif current_solution != []:
-            # before seeing the first title, we do not append anything
-            current_solution.append(line)
-    # Append the last solution, when input ends
-    if current_solution != []:
-        solutions.append('\n'.join(current_solution))
-    return solutions
+def extract_solutions(title, text):
+    # Drop the starting portion
+    f1 = text.find('</small>')
+    f2 = text.find('<text num=')
+    f3 = text.find('## Atrisin')
+    if f1 >= 0:
+        text = text[f1 + len('</small>'):]
+    elif f2 >= 0:
+        text = text[f2:]
+    elif f3 >= 0:
+        text = text[f3:]
+
+    pattern = r'<text\s+num="[0-9]+"\s+lang="[a-z]+">'
+    regex = re.compile(pattern)
+    if not regex.fullmatch(text):
+        solutions = []
+        current_solution = []
+        lines = text.split('\n')
+        for line in lines:
+            if re.fullmatch(r'## Atrisin.*', line):
+                # append the previous solution
+                if current_solution != []:
+                    solutions.append({'lv': '\n'.join(current_solution)})
+                current_solution = [line]
+            elif current_solution != []:
+                # before seeing the first title, we do not append anything
+                current_solution.append(line)
+        # Append the last solution, when input ends
+        if current_solution != []:
+            solutions.append({'lv': '\n'.join(current_solution)})
+        return solutions
+
+    else:
+        pattern = r'<text\s+num="([0-9]+)"\s+lang="([a-z]+)">\s*(.*?)\s*</text>'
+        print(f"complex_parsing in {title}")
+        # Compile the regex pattern
+        regex = re.compile(pattern, re.DOTALL)
+
+        # Find all matching text blocks
+        matches = regex.findall(text)
+
+        # Initialize variables to store the results
+        result = []
+        current_num = None
+        current_dict = defaultdict(str)
+
+        # Process each match
+        for match in matches:
+            num, lang, content = match
+
+            # Check if we've encountered a new "num" value
+            if num != current_num:
+                # If there is an existing dictionary, add it to the result list
+                if current_dict:
+                    result.append(dict(current_dict))
+
+                # Start a new dictionary for the new "num" value
+                current_dict = defaultdict(str)
+                current_num = num
+
+            # Add the content to the current dictionary
+            current_dict[lang] = content.strip()
+
+        # Don't forget to add the last dictionary to the result list
+        if current_dict:
+            result.append(dict(current_dict))
+
+        return result
 
 
 def extract_metadata(text):
@@ -168,8 +220,19 @@ def extract_sections_from_md(filepath):
 
 
 def remove_translation_tags(text):
-    pattern = re.compile(r'<text lang=.*?>.*?</text>', re.DOTALL)
-    return re.sub(pattern, '', text)
+    lv_tag = '<text lang="lv">'
+    if text.find(lv_tag) == -1:
+        pattern = re.compile(r'<text lang=.*?>.*?</text>', re.DOTALL)
+        return {'lv': re.sub(pattern, '', text)}
+    else:
+        result = {}
+        pattern = r'<text lang="(?P<lang>\w+)">\s*(?P<content>.*?)\s*</text>'
+        matches = re.finditer(pattern, text, re.DOTALL)
+        for match in matches:
+            lang = match.group('lang')
+            content = match.group('content').strip()  # Strip any leading/trailing whitespace
+            result[lang] = content
+        return result
 
 
 def get_suffix(arg):
@@ -246,11 +309,11 @@ def md_to_rdf(md_file_path, ttl_file_path):
         if match_id:
             country = match_id.group(1)
             olympiad = match_id.group(2)
-            year = match_id.group(3)
-            if len(year) > 4:
-                year = int(year[0:4])
+            timeID = match_id.group(3)
+            if len(timeID) > 4:
+                year = int(timeID[0:4])
             else:
-                year = int(year)
+                year = int(timeID)
             rawGrade = match_id.group(4)
             grade_underscore = rawGrade.find("_")
             if grade_underscore == -1:
@@ -263,6 +326,7 @@ def md_to_rdf(md_file_path, ttl_file_path):
             add_problem_literal_prop(g, problem_node, 'olympiad', country + '.' + olympiad)
             add_problem_literal_prop(g, problem_node, 'suffix', suffix)
             add_problem_integer_prop(g, problem_node, 'problemYear', year)
+            add_problem_literal_prop(g, problem_node, 'problemTimeID', timeID)
             add_problem_integer_prop(g, problem_node, 'problemGrade', grade)
             add_problem_integer_prop(g, problem_node, 'problem_number', problem_number)
             add_problem_literal_prop(g, problem_node, 'problemID', title)
@@ -279,11 +343,11 @@ def md_to_rdf(md_file_path, ttl_file_path):
 
         elif inter_match_id:
             olympiad = inter_match_id.group(1)
-            year = inter_match_id.group(2)
-            if len(year) > 4:
-                year = int(year[0:4])
+            timeID = inter_match_id.group(2)
+            if len(timeID) > 4:
+                year = int(timeID[0:4])
             else:
-                year = int(year)
+                year = int(timeID)
             grade = 12
             problem_type = inter_match_id.group(3)
             problem_number = inter_match_id.group(4)
@@ -294,6 +358,7 @@ def md_to_rdf(md_file_path, ttl_file_path):
             add_problem_literal_prop(g, problem_node, 'olympiadCode', olympiad)
             add_problem_literal_prop(g, problem_node, 'country', '')
             add_problem_integer_prop(g, problem_node, 'problemYear', year)
+            add_problem_literal_prop(g, problem_node, 'problemTimeID', timeID)
             add_problem_literal_prop(g, problem_node, 'suffix', suffix)
             add_problem_integer_prop(g, problem_node, 'problem_number', problem_number)
             add_problem_integer_prop(g, problem_node, 'problemGrade', grade)
@@ -302,18 +367,22 @@ def md_to_rdf(md_file_path, ttl_file_path):
         else:
             print(f"***** WARNING: ***** Invalid problemID: {title}")
 
+        # Get everything above <small>...</small> metadata block
         problem_text_md = extract_problem(section).strip()
-        # clean away the translations
-        problem_text_md = remove_translation_tags(problem_text_md)
+        # return a dictionary of all problem translations
+        # (Latvian text can be without <text lang="lv">)
+        problem_text_dict = remove_translation_tags(problem_text_md)
 
-        img_list = extract_images(problem_text_md)
-        for (img_src, img_width) in img_list:
-            addImageToRDFGraph(g, title, img_src, img_width)
+        # img_list = extract_images(problem_text_md)
+        # for (img_src, img_width) in img_list:
+        #     addImageToRDFGraph(g, title, img_src, img_width)
 
+        for theLang, problem_text_md in problem_text_dict.items():
+            problem_text_html = markdown.markdown(problem_text_md, extensions=['tables']).strip()
 
-        problem_text_html = markdown.markdown(problem_text_md, extensions=['tables']).strip()
-        add_problem_literal_lv_prop(g, problem_node, 'problemText', problem_text_md)
-        add_problem_literal_lv_prop(g, problem_node, 'problemTextHtml', problem_text_html)
+            add_problem_literal_prop_lang(g, problem_node, 'problemText', problem_text_md, theLang)
+            add_problem_literal_prop_lang(g, problem_node, 'problemTextHtml', problem_text_html, theLang)
+
         add_problem_literal_prop(g, problem_node, 'olympiadType', olympiadType)
         for sug_grade in suggestGrade:
             add_problem_integer_prop(g, problem_node, 'suggestedGrade', sug_grade)
@@ -328,13 +397,14 @@ def md_to_rdf(md_file_path, ttl_file_path):
                 else:
                     add_problem_literal_prop(g, problem_node, k, vv)
 
-        solutions = extract_solutions(section)
-        for i, soln in enumerate(solutions):
-            soln_text = soln.strip()
-            addSolutionToRdfProblem(g, title, i, soln_text)
-            img_list = extract_images(soln_text)
-            for (img_src, img_width) in img_list:
-                addImageToRDFGraph(g, title, img_src, img_width)
+        solutions = extract_solutions(title,section)
+        for i, soln_text_dict in enumerate(solutions):
+            for theLang, soln_text in soln_text_dict.items():
+                soln_text = soln_text.strip()
+                addSolutionToRdfProblem(g, title, i, soln_text, theLang)
+                img_list = extract_images(soln_text)
+                for (img_src, img_width) in img_list:
+                    addImageToRDFGraph(g, title, img_src, img_width)
     g.serialize(destination=ttl_file_path)
 
 

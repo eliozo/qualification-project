@@ -62,6 +62,8 @@ if __name__ == '__main__':
     # Testēšanai tikai viens pārītis:
     # results = [('https://github.com/kapsitis/math/tree/master/src/site/problembase/ee-pktest', 'content.md', 'EE-PKTEST')]
 
+    results = [('https://github.com/kapsitis/math/tree/master/src/site/problembase/lt-tst', 'content', 'LT-TST')]
+
     for result in results:
         # print("****{}, {}, {}".format(result[0], result[1], result[2]))
         getMarkdownFile(result[0], result[1], result[2])

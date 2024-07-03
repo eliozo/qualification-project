@@ -9,10 +9,13 @@ eliozo:LV.NOL.2023.10.1 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2023.10.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.10.1.SUB0,
+        eliozo:SOLN.LV.NOL.2023.10.1.SUB1 ;
     eliozo:problemText """Noskaidrot, vai skaitlis $\\sqrt{4+2 \\sqrt{3}}-\\sqrt{4-2 \\sqrt{3}}$ 
 ir racionāls vai iracionāls!"""@lv ;
     eliozo:problemTextHtml """<p>Noskaidrot, vai skaitlis $\\sqrt{4+2 \\sqrt{3}}-\\sqrt{4-2 \\sqrt{3}}$ 
 ir racionāls vai iracionāls!</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
@@ -27,6 +30,8 @@ eliozo:LV.NOL.2023.10.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2023.10.2" ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.10.2A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.10.2.SUB0 ;
     eliozo:problemText """Uz papīra lapas atzīmēti daži punkti tā, ka nekādi trīs punkti 
 neatrodas uz vienas taisnes. Daži punkti ir savienoti ar 
 nogriežņiem tā, ka no katra punkta iziet tieši $4$ nogriežṇi. 
@@ -39,6 +44,7 @@ nogriežņiem tā, ka no katra punkta iziet tieši $4$ nogriežṇi.
 Zināms, ka nav uzzīmēts neviens tāds trijstūris, kuram visas 
 virsotnes ir dotajos punktos. Kāds ir mazākais skaits punktu, 
 kas var būt atzīmēti uz papīra lapas?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindOptimal" ;
@@ -54,10 +60,14 @@ eliozo:LV.NOL.2023.10.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2023.10.3" ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.10.3A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.10.3.SUB0,
+        eliozo:SOLN.LV.NOL.2023.10.3.SUB1 ;
     eliozo:problemText """Šaurleṇķu trijstūra $ABC$ augstumi krustojas punktā $H$. 
 Aprēḳināt četrstūra $ABHC$ laukumu, ja $AH = BC = 8$."""@lv ;
     eliozo:problemTextHtml """<p>Šaurleṇķu trijstūra $ABC$ augstumi krustojas punktā $H$. 
 Aprēḳināt četrstūra $ABHC$ laukumu, ja $AH = BC = 8$.</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
@@ -72,10 +82,12 @@ eliozo:LV.NOL.2023.10.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2023.10.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.10.4.SUB0 ;
     eliozo:problemText """Atrast lielāko naturālo skaitli $N$ ar īpašību - katram pirmskaitlim 
 $p<N$ skaitlis $N+2p$ arī ir pirmskaitlis!"""@lv ;
     eliozo:problemTextHtml """<p>Atrast lielāko naturālo skaitli $N$ ar īpašību - katram pirmskaitlim 
 $p&lt;N$ skaitlis $N+2p$ arī ir pirmskaitlis!</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindOptimal" ;
@@ -90,6 +102,8 @@ eliozo:LV.NOL.2023.10.5 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2023.10.5" ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.10.5A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.10.5.SUB0 ;
     eliozo:problemText """Volejbola turnīrā katra komanda spēlēja ar katru tieši vienu reizi; 
 neizšķirtu nav. Ir zināms: lai kuru komandu mēs izvēlētos 
 (apzīmēsim to ar $K$), tā ir izcīnījusi tieši tikpat uzvaru, 
@@ -102,6 +116,7 @@ neizšķirtu nav. Ir zināms: lai kuru komandu mēs izvēlētos
 cik kopā izcīnījušas visas tās komandas, pret kurām $K$ uzvarēja. 
 Kāds var būt komandu skaits, kas piedalījās šajā turnīrā? 
 (Nevienā turnīrā nav mazāk kā $2$ komandas.)</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindAll" ;
@@ -117,8 +132,11 @@ eliozo:LV.NOL.2023.11.1 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2023.11.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.11.1.SUB0,
+        eliozo:SOLN.LV.NOL.2023.11.1.SUB1 ;
     eliozo:problemText "Pierādīt, ka $x^{2}+y^{2}+\\frac{1}{2} \\geq x+y$ visiem reāliem $x$ un $y$."@lv ;
     eliozo:problemTextHtml "<p>Pierādīt, ka $x^{2}+y^{2}+\\frac{1}{2} \\geq x+y$ visiem reāliem $x$ un $y$.</p>"@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "Prove" ;
@@ -134,6 +152,8 @@ eliozo:LV.NOL.2023.11.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2023.11.2" ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.11.2A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.11.2.SUB0 ;
     eliozo:problemText """Kādā zemē dzīvo rūķi, katri divi no tiem vai nu draudzējas, 
 vai viens otru ienīst. Zināms, ka nav tādu trīs rūḳu,
 kas visi viens otru ienīst. Vai noteikti var atrast tādus 
@@ -144,6 +164,7 @@ vai viens otru ienīst. Zināms, ka nav tādu trīs rūḳu,
 kas visi viens otru ienīst. Vai noteikti var atrast tādus 
 trīs rūḳus, kas visi savā starpā draudzējas, ja šajā zemē ir 
 <strong>(A)</strong> $5$ rūķi, <strong>(B)</strong> $6$ rūķi?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
@@ -159,6 +180,9 @@ eliozo:LV.NOL.2023.11.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2023.11.3" ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.11.3A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.11.3.SUB0,
+        eliozo:SOLN.LV.NOL.2023.11.3.SUB1 ;
     eliozo:problemText """Dots vienādsānu trijstūris $ABC$, kuram $AB = AC$ un 
 $\\sphericalangle BAC<60^{\\circ}$. Riṇka līnija, kuras centrs ir punktā 
 $B$ un rādiuss $BC$, krusto trijstūra malas $AC$ un $AB$ 
@@ -169,6 +193,7 @@ $\\sphericalangle BAC&lt;60^{\\circ}$. Riṇka līnija, kuras centrs ir punktā
 $B$ un rādiuss $BC$, krusto trijstūra malas $AC$ un $AB$ 
 attiecīgi punktos $D$ un $E$. Aprēķināt $\\frac{AD}{DC}$, 
 ja $\\frac{AE}{EB}=\\frac{2}{5}$.</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
@@ -184,10 +209,13 @@ eliozo:LV.NOL.2023.11.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2023.11.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.11.4.SUB0,
+        eliozo:SOLN.LV.NOL.2023.11.4.SUB1 ;
     eliozo:problemText """Pierādīt, ka nekādu divu secīgu naturālu skaitļu reizinājums 
 nav izsakāms formā $36n+8$, kur $n$ ir naturāls skaitlis!"""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka nekādu divu secīgu naturālu skaitļu reizinājums 
 nav izsakāms formā $36n+8$, kur $n$ ir naturāls skaitlis!</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "Prove" ;
@@ -202,6 +230,8 @@ eliozo:LV.NOL.2023.11.5 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2023.11.5" ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.11.5A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.11.5.SUB0 ;
     eliozo:problemText """Skaitļu virkni, kurā ir $N$ elementi, sauksim par $N$ mazāko 
 naturālo skaitļu permutāciju, ja tajā atrodami visi 
 naturālie skaitļi no $1$ līdz $N$.
@@ -230,6 +260,7 @@ pēc formulas $c_{i}=\\left|b_{i+1}-b_{i}\\right|$.</p>
 <p>Pierādīt, ka $\\left{ b_{i} \\right}$ un $\\left{ c_{i} \\right}$ 
 vienlaikus abas nevar būt attiecīgi $n-1$ un $n-2$ mazāko 
 naturālo skaitļu permutācijas!</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "Prove" ;
@@ -245,6 +276,7 @@ eliozo:LV.NOL.2023.12.1 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2023.12.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.12.1.SUB0 ;
     eliozo:problemText """Atrast mazāko reālo skaitli $a$, ar kuru visiem reāliem 
 skaitliem $x, y, z$ ir spēkā nevienādība:
 
@@ -252,6 +284,7 @@ $$x^{2}+y^{2}+z^{2}+a \\geq x + 2y + 3z$$"""@lv ;
     eliozo:problemTextHtml """<p>Atrast mazāko reālo skaitli $a$, ar kuru visiem reāliem 
 skaitliem $x, y, z$ ir spēkā nevienādība:</p>
 <p>$$x^{2}+y^{2}+z^{2}+a \\geq x + 2y + 3z$$</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindOptimal" ;
@@ -267,6 +300,9 @@ eliozo:LV.NOL.2023.12.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2023.12.2" ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.12.2A.png,
+        eliozo:IMG.LV.NOL.2023.12.2B.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.12.2.SUB0 ;
     eliozo:problemText """Šaha turnīrā katri divi šahisti ir vai nu izspēlējuši tieši vienu 
 šaha partiju, vai arī nav izspēlējuši nevienu partiju. Vai noteikti 
 var atrast tādus trīs šahistus, kas savā starpā ir izspēlējuši vai nu 
@@ -277,6 +313,7 @@ visas $3$ partijas, vai nevienu partiju, ja turnīrā piedalās
 var atrast tādus trīs šahistus, kas savā starpā ir izspēlējuši vai nu 
 visas $3$ partijas, vai nevienu partiju, ja turnīrā piedalās 
 <strong>(A)</strong> $5$, <strong>(B)</strong> $6$ šahisti?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
@@ -291,6 +328,8 @@ eliozo:LV.NOL.2023.12.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2023.12.3" ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.12.3A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.12.3.SUB0 ;
     eliozo:problemText """Dots vienādsānu trijstūris $ABC$, kuram $AB=AC$ un $\\sphericalangle BAC < 60^{\\circ}$. 
 Rinķa līnija, kuras centrs ir punktā $B$ un rādiuss $BC$, 
 krusto trijstūra malas $AC$ un $AB$ attiecīgi punktos $D$ (kas nesakrīt ar $C$) 
@@ -299,6 +338,7 @@ un $E$. Pierādīt, ka $AD < 2AE$."""@lv ;
 Rinķa līnija, kuras centrs ir punktā $B$ un rādiuss $BC$, 
 krusto trijstūra malas $AC$ un $AB$ attiecīgi punktos $D$ (kas nesakrīt ar $C$) 
 un $E$. Pierādīt, ka $AD &lt; 2AE$.</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
@@ -314,10 +354,13 @@ eliozo:LV.NOL.2023.12.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2023.12.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.12.4.SUB0,
+        eliozo:SOLN.LV.NOL.2023.12.4.SUB1 ;
     eliozo:problemText """Pierādīt, ka nekādu divu secīgu naturālu skaitļu reizinājums nav izsakāms 
 formā $27n+11$, kur $n$ ir naturāls skaitlis."""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka nekādu divu secīgu naturālu skaitļu reizinājums nav izsakāms 
 formā $27n+11$, kur $n$ ir naturāls skaitlis.</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "Prove" ;
@@ -333,6 +376,7 @@ eliozo:LV.NOL.2023.12.5 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2023.12.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.12.5.SUB0 ;
     eliozo:problemText """Dotas $2023$ kastes, sākumā tajās ir attiecīgi $1, 2, 3, \\ldots, 2023$ 
 konfektes. Vienā gājienā var izvēlēties naturālu skaitli $n$ un no 
 dažām kastēm (varbūt tikai no vienas) apēst $n$ konfektes. 
@@ -343,6 +387,7 @@ konfektes. Vienā gājienā var izvēlēties naturālu skaitli $n$ un no
 dažām kastēm (varbūt tikai no vienas) apēst $n$ konfektes. 
 Kāds ir mazākais gājienu skaits, ar kuru var panākt, 
 ka visas kastes ir tukšas?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindOptimal" ;
@@ -357,21 +402,35 @@ eliozo:LV.NOL.2023.5.1 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2023.5.1" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2023.5.1.png ;
-    eliozo:problemText """Ieraksti katrā tukšajā rūtiņā (skat. 1.att.) vienu skaitli (skaitļi 
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.5.1A.png,
+        eliozo:IMG.LV.NOL.2023.5.1B.png,
+        eliozo:IMG.LV.NOL.2023.5.1C.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.5.1.SUB0 ;
+    eliozo:problemText """Write a number in each empty cell (see Figure 1) so that the sum of the 
+numbers in any three consecutive cells is the same, and the total sum 
+of all the numbers written in the cells (including the two given numbers) 
+is $223$. It is sufficient to show one example of how to achieve this.
+
+![](LV.NOL.2023.5.1.png){ width=300px }"""@en,
+        """Ieraksti katrā tukšajā rūtiņā (skat. 1.att.) vienu skaitli (skaitļi 
 var būt arī vienādi) tā, lai katrās trīs blakus rūtiṇās skaitļu summa 
 būtu viena un tā pati un visu rūtiṇās ierakstīto skaitļu 
 (ieskaitot abus dotos skaitļus) summa būtu $223$. Pietiek parādīt 
 vienu veidu, kā to var izdarīt.
 
-
 ![](LV.NOL.2023.5.1.png){ width=300px }"""@lv ;
-    eliozo:problemTextHtml """<p>Ieraksti katrā tukšajā rūtiņā (skat. 1.att.) vienu skaitli (skaitļi 
+    eliozo:problemTextHtml """<p>Write a number in each empty cell (see Figure 1) so that the sum of the 
+numbers in any three consecutive cells is the same, and the total sum 
+of all the numbers written in the cells (including the two given numbers) 
+is $223$. It is sufficient to show one example of how to achieve this.</p>
+<p><img alt="" src="LV.NOL.2023.5.1.png" />{ width=300px }</p>"""@en,
+        """<p>Ieraksti katrā tukšajā rūtiņā (skat. 1.att.) vienu skaitli (skaitļi 
 var būt arī vienādi) tā, lai katrās trīs blakus rūtiṇās skaitļu summa 
 būtu viena un tā pati un visu rūtiṇās ierakstīto skaitļu 
 (ieskaitot abus dotos skaitļus) summa būtu $223$. Pietiek parādīt 
 vienu veidu, kā to var izdarīt.</p>
 <p><img alt="" src="LV.NOL.2023.5.1.png" />{ width=300px }</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindExample" ;
@@ -387,14 +446,31 @@ eliozo:LV.NOL.2023.5.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2023.5.2" ;
-    eliozo:problemText """Rūķīši mežā ir uzbūvējuši astoṇas mājiṇas un starp tām izveidojuši 
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.5.2A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.5.2.SUB0 ;
+    eliozo:problemText """In the forest, gnomes have built eight houses and created several paths 
+between them. Each path connects two houses, and paths can intersect. 
+Is it possible that the houses have the following number 
+of paths coming out of them:  
+**(A)** $2, 2, 2, 4, 4, 4, 4, 4$ paths respectively;  
+**(B)** $1, 2, 2, 2, 2, 3, 4, 5$ paths respectively?"""@en,
+        """Rūķīši mežā ir uzbūvējuši astoṇas mājiṇas un starp tām izveidojuši 
 vairākas taciṇas. Katra taciṇa savieno divas mājiņas, 
 taciṇas var krustoties. Vai iespējams, ka no mājiņām iziet attiecīgi: 
-**(A)** $2, 2, 2, 4, 4, 4, 4, 4$ taciṇas; **(B)** $1,2,2,2,2,3,4,5$ taciṇas?"""@lv ;
-    eliozo:problemTextHtml """<p>Rūķīši mežā ir uzbūvējuši astoṇas mājiṇas un starp tām izveidojuši 
+**(A)** $2, 2, 2, 4, 4, 4, 4, 4$ taciṇas;  
+**(B)** $1,2,2,2,2,3,4,5$ taciṇas?"""@lv ;
+    eliozo:problemTextHtml """<p>In the forest, gnomes have built eight houses and created several paths 
+between them. Each path connects two houses, and paths can intersect. 
+Is it possible that the houses have the following number 
+of paths coming out of them:<br />
+<strong>(A)</strong> $2, 2, 2, 4, 4, 4, 4, 4$ paths respectively;<br />
+<strong>(B)</strong> $1, 2, 2, 2, 2, 3, 4, 5$ paths respectively?</p>"""@en,
+        """<p>Rūķīši mežā ir uzbūvējuši astoṇas mājiṇas un starp tām izveidojuši 
 vairākas taciṇas. Katra taciṇa savieno divas mājiņas, 
 taciṇas var krustoties. Vai iespējams, ka no mājiņām iziet attiecīgi: 
-<strong>(A)</strong> $2, 2, 2, 4, 4, 4, 4, 4$ taciṇas; <strong>(B)</strong> $1,2,2,2,2,3,4,5$ taciṇas?</p>"""@lv ;
+<strong>(A)</strong> $2, 2, 2, 4, 4, 4, 4, 4$ taciṇas;<br />
+<strong>(B)</strong> $1,2,2,2,2,3,4,5$ taciṇas?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
@@ -409,20 +485,22 @@ eliozo:LV.NOL.2023.5.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2023.5.3" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2023.5.3.png ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.5.3A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.5.3.SUB0 ;
     eliozo:problemText """Parādi, kā 2.att. figūru ($6 \\times 8$ rūtiņu taisnstūris, 
 no kura izgriezts $3 \\times 4$ rūtiņu taisnstūris), griežot pa 
 rūtiņu līnijām, var sagriezt trīs vienādās figūrās! Figūras ir vienādas, 
 ja tās var uzlikt vienu uz otras tā, ka abas figūras sakrīt 
 (figūras var pagriezt un apmest otrādi).
 
-![](LV.NOL.2023.5.3.png){ width=250px }"""@lv ;
+![](LV.NOL.2023.5.3.png){ width=200px }"""@lv ;
     eliozo:problemTextHtml """<p>Parādi, kā 2.att. figūru ($6 \\times 8$ rūtiņu taisnstūris, 
 no kura izgriezts $3 \\times 4$ rūtiņu taisnstūris), griežot pa 
 rūtiņu līnijām, var sagriezt trīs vienādās figūrās! Figūras ir vienādas, 
 ja tās var uzlikt vienu uz otras tā, ka abas figūras sakrīt 
 (figūras var pagriezt un apmest otrādi).</p>
-<p><img alt="" src="LV.NOL.2023.5.3.png" />{ width=250px }</p>"""@lv ;
+<p><img alt="" src="LV.NOL.2023.5.3.png" />{ width=200px }</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample" ;
@@ -437,10 +515,12 @@ eliozo:LV.NOL.2023.5.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2023.5.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.5.4.SUB0 ;
     eliozo:problemText """Parādi, kā skaitli $174$ var uzrakstīt kā $3$ dažādu naturālu skaitļu 
 summu tā, lai katru divu šo skaitļu summa dalītos ar trešo skaitli!"""@lv ;
     eliozo:problemTextHtml """<p>Parādi, kā skaitli $174$ var uzrakstīt kā $3$ dažādu naturālu skaitļu 
 summu tā, lai katru divu šo skaitļu summa dalītos ar trešo skaitli!</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindExample" ;
@@ -456,6 +536,7 @@ eliozo:LV.NOL.2023.5.5 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2023.5.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.5.5.SUB0 ;
     eliozo:problemText """Ja automātā ievieto sarkanu monētu, tad tas izdod $5$ zilas monētas, 
 bet, ja automātā ievieto zilu monētu, tad tas izdod $3$ sarkanas monētas. 
 Vai, atkārtoti izmantojot automātu, ir iespējams iegūt vienāda skaita 
@@ -464,6 +545,7 @@ sarkanās un zilās monētas, ja sākumā ir dota viena sarkana monēta?"""@lv ;
 bet, ja automātā ievieto zilu monētu, tad tas izdod $3$ sarkanas monētas. 
 Vai, atkārtoti izmantojot automātu, ir iespējams iegūt vienāda skaita 
 sarkanās un zilās monētas, ja sākumā ir dota viena sarkana monēta?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "ProveDisprove" ;
@@ -478,14 +560,18 @@ eliozo:LV.NOL.2023.6.1 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2023.6.1" ;
-    eliozo:problemText """Atrodi vienu veidu, kādi naturāli skaitḷi jāievieto $x, y$ un $z$ vietā, lai vienādība
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.6.1.SUB0 ;
+    eliozo:problemText """Atrodi vienu veidu, kādi naturāli skaitḷi jāievieto $x, y$ un $z$
+vietā, lai vienādība
 
 $$2+\\frac{1}{x+\\frac{1}{y+\\frac{1}{z}}}=\\frac{37}{13}$$
 
 būtu patiesa!"""@lv ;
-    eliozo:problemTextHtml """<p>Atrodi vienu veidu, kādi naturāli skaitḷi jāievieto $x, y$ un $z$ vietā, lai vienādība</p>
+    eliozo:problemTextHtml """<p>Atrodi vienu veidu, kādi naturāli skaitḷi jāievieto $x, y$ un $z$
+vietā, lai vienādība</p>
 <p>$$2+\\frac{1}{x+\\frac{1}{y+\\frac{1}{z}}}=\\frac{37}{13}$$</p>
 <p>būtu patiesa!</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindExample" ;
@@ -501,6 +587,8 @@ eliozo:LV.NOL.2023.6.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2023.6.2" ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.6.2A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.6.2.SUB0 ;
     eliozo:problemText """Rūķīši mežā ir uzbūvējuši desmit mājinas un starp tām izveidojuši 
 vairākas taciṇas. Katra tacina savieno divas mājiṇas, taciṇas var 
 krustoties. Vai iespējams, ka no mājinām iziet attiecīgi:  
@@ -509,6 +597,7 @@ krustoties. Vai iespējams, ka no mājinām iziet attiecīgi:
 vairākas taciṇas. Katra tacina savieno divas mājiṇas, taciṇas var 
 krustoties. Vai iespējams, ka no mājinām iziet attiecīgi:<br />
 <strong>(A)</strong> $2, 2, 2, 2, 2, 3, 3, 3, 3, 7$ tacinas; <strong>(B)</strong> $2, 2, 2, 2, 4, 4, 4, 4, 4, 4$ taciņas?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
@@ -523,16 +612,18 @@ eliozo:LV.NOL.2023.6.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2023.6.3" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2023.6.3.png ;
-    eliozo:problemText """Parādi, kā, griežot pa rūtinuu līnijām, 1.att. doto figūru var sagriezt 
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.6.3A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.6.3.SUB0 ;
+    eliozo:problemText """Parādi, kā, griežot pa rūtiņu līnijām, 1.att. doto figūru var sagriezt 
 $4$ vienādās figūrās! Figūras ir vienādas, ja tās var uzlikt vienu uz 
 otras tā, ka abas figūras pilnīgi sakrīt (figūras var pagriezt un apmest otrādi).
 
 ![](LV.NOL.2023.6.3.png){ width=200px }"""@lv ;
-    eliozo:problemTextHtml """<p>Parādi, kā, griežot pa rūtinuu līnijām, 1.att. doto figūru var sagriezt 
+    eliozo:problemTextHtml """<p>Parādi, kā, griežot pa rūtiņu līnijām, 1.att. doto figūru var sagriezt 
 $4$ vienādās figūrās! Figūras ir vienādas, ja tās var uzlikt vienu uz 
 otras tā, ka abas figūras pilnīgi sakrīt (figūras var pagriezt un apmest otrādi).</p>
 <p><img alt="" src="LV.NOL.2023.6.3.png" />{ width=200px }</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample" ;
@@ -547,12 +638,14 @@ eliozo:LV.NOL.2023.6.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2023.6.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.6.4.SUB0 ;
     eliozo:problemText """Vai skaitli: **(A)** $72$, **(B)** $73$ var izteikt kā trīs dažādu 
 naturālu skaitļu summu tā, lai katru divu šo skaitḷu summa dalītos 
 ar atlikušo skaitli?"""@lv ;
     eliozo:problemTextHtml """<p>Vai skaitli: <strong>(A)</strong> $72$, <strong>(B)</strong> $73$ var izteikt kā trīs dažādu 
 naturālu skaitļu summu tā, lai katru divu šo skaitḷu summa dalītos 
 ar atlikušo skaitli?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "ProveDisprove" ;
@@ -568,6 +661,7 @@ eliozo:LV.NOL.2023.6.5 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2023.6.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.6.5.SUB0 ;
     eliozo:problemText """Naturālu skaitli atļauts reizināt ar $2$, kā arī izsvītrot no tā 
 pieraksta ciparus $0,3,6,9$ (varbūt tikai kādu no tiem). 
 Vai, vairākkārt izpildot šādus gājienus, no skaitla $17$ var iegūt: 
@@ -576,6 +670,7 @@ Vai, vairākkārt izpildot šādus gājienus, no skaitla $17$ var iegūt:
 pieraksta ciparus $0,3,6,9$ (varbūt tikai kādu no tiem). 
 Vai, vairākkārt izpildot šādus gājienus, no skaitla $17$ var iegūt: 
 <strong>(A)</strong> skaitli $1$; <strong>(B)</strong> skaitli $15$?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "ProveDisprove" ;
@@ -590,12 +685,12 @@ eliozo:LV.NOL.2023.7.1 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2023.7.1" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2023.7.1.png ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.7.1A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.7.1.SUB0 ;
     eliozo:problemText """Vai tukšajās rūtiņās (skat. 1.att.) var ierakstīt pa vienam 
 naturālam skaitlim tā, lai rezultātā būtu ierakstīti visi naturālie 
 skaitḷi no $1$ līdz $25$ un katri divi skaitli, kuru starpība ir $1$, 
 būtu ierakstīti rūtiņās ar kopīgu malu?
-
 
 ![](LV.NOL.2023.7.1.png){ width=200px }"""@lv ;
     eliozo:problemTextHtml """<p>Vai tukšajās rūtiņās (skat. 1.att.) var ierakstīt pa vienam 
@@ -603,6 +698,7 @@ naturālam skaitlim tā, lai rezultātā būtu ierakstīti visi naturālie
 skaitḷi no $1$ līdz $25$ un katri divi skaitli, kuru starpība ir $1$, 
 būtu ierakstīti rūtiņās ar kopīgu malu?</p>
 <p><img alt="" src="LV.NOL.2023.7.1.png" />{ width=200px }</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "ProveDisprove" ;
@@ -618,10 +714,15 @@ eliozo:LV.NOL.2023.7.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2023.7.2" ;
-    eliozo:problemText """Vai **(A)** $90$ lampiṇas, **(B)** $73$ lampiṇas ar vadiem var savienot tā, lai katra 
-no tām būtu savienota ar vadu ar tieši $5$ citām lampiņām?"""@lv ;
-    eliozo:problemTextHtml """<p>Vai <strong>(A)</strong> $90$ lampiṇas, <strong>(B)</strong> $73$ lampiṇas ar vadiem var savienot tā, lai katra 
-no tām būtu savienota ar vadu ar tieši $5$ citām lampiņām?</p>"""@lv ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.7.2A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.7.2.SUB0 ;
+    eliozo:problemText """Vai **(A)** $90$ lampiṇas, **(B)** $73$ lampiṇas ar vadiem var 
+savienot tā, lai katra no tām būtu savienota ar vadu ar tieši 
+$5$ citām lampiņām?"""@lv ;
+    eliozo:problemTextHtml """<p>Vai <strong>(A)</strong> $90$ lampiṇas, <strong>(B)</strong> $73$ lampiṇas ar vadiem var 
+savienot tā, lai katra no tām būtu savienota ar vadu ar tieši 
+$5$ citām lampiņām?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
@@ -637,10 +738,15 @@ eliozo:LV.NOL.2023.7.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2023.7.3" ;
-    eliozo:problemText """Dots četrstūris $ABCD$, kuram visi lenki ir mazāki nekā $180^{\\circ}$, 
-$\\sphericalangle A=\\sphericalangle B$, $BC=1$ un $AD=3$. Pierādīt, ka $CD>2$."""@lv ;
-    eliozo:problemTextHtml """<p>Dots četrstūris $ABCD$, kuram visi lenki ir mazāki nekā $180^{\\circ}$, 
-$\\sphericalangle A=\\sphericalangle B$, $BC=1$ un $AD=3$. Pierādīt, ka $CD&gt;2$.</p>"""@lv ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.7.3A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.7.3.SUB0 ;
+    eliozo:problemText """Dots četrstūris $ABCD$, kuram visi leņķi ir mazāki nekā 
+$180^{\\circ}$, $\\sphericalangle A=\\sphericalangle B$, $BC=1$ 
+un $AD=3$. Pierādīt, ka $CD>2$."""@lv ;
+    eliozo:problemTextHtml """<p>Dots četrstūris $ABCD$, kuram visi leņķi ir mazāki nekā 
+$180^{\\circ}$, $\\sphericalangle A=\\sphericalangle B$, $BC=1$ 
+un $AD=3$. Pierādīt, ka $CD&gt;2$.</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "Prove" ;
@@ -655,10 +761,12 @@ eliozo:LV.NOL.2023.7.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2023.7.4" ;
-    eliozo:problemText """Cik ir tādu naturālu skaitļu $n$, kuriem skaitlim $n^{2}$ ir tikpat ciparu, 
-cik skaitlim $n^{3}$?"""@lv ;
-    eliozo:problemTextHtml """<p>Cik ir tādu naturālu skaitļu $n$, kuriem skaitlim $n^{2}$ ir tikpat ciparu, 
-cik skaitlim $n^{3}$?</p>"""@lv ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.7.4.SUB0 ;
+    eliozo:problemText """Cik ir tādu naturālu skaitļu $n$, kuriem skaitlim $n^{2}$ 
+ir tikpat ciparu, cik skaitlim $n^{3}$?"""@lv ;
+    eliozo:problemTextHtml """<p>Cik ir tādu naturālu skaitļu $n$, kuriem skaitlim $n^{2}$ 
+ir tikpat ciparu, cik skaitlim $n^{3}$?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindCount" ;
@@ -674,6 +782,7 @@ eliozo:LV.NOL.2023.7.5 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2023.7.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.7.5.SUB0 ;
     eliozo:problemText """Kastē atrodas baltas, sarkanas un zaḷas lodītes. Ar vienu gājienu no 
 kastes var izṇemt divas dažādu krāsu lodītes un ielikt kastē vienu 
 trešās krāsas lodīti (vienmēr pietiek jebkuras krāsas lodīšu, 
@@ -688,6 +797,7 @@ ko ielikt kastē). Vai var panākt, ka kastē paliek tikai viena lodīte,
 ja sākumā kastē atrodas:<br />
 <strong>(A)</strong> $10$ baltas, $12$ sarkanas un $16$ zalas lodītes;<br />
 <strong>(B)</strong> $10$ baltas, $12$ sarkanas un $15$ zaḷas lodītes?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "ProveDisprove" ;
@@ -702,21 +812,24 @@ eliozo:LV.NOL.2023.8.1 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2023.8.1" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2023.8.1.png ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.8.1A.png,
+        eliozo:IMG.LV.NOL.2023.8.1B.png,
+        eliozo:IMG.LV.NOL.2023.8.1C.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.8.1.SUB0 ;
     eliozo:problemText """Ieraksti katrā tukšajā rūtiṇā (skat. 1.att.) vienu pirmskaitli 
 (skaitḷi var būt arī vienādi) tā, lai katrās četrās blakus 
 rūtiņās skaitļu summa būtu viena un tā pati un visu rūtiņās 
 ierakstīto skaitļu (ieskaitot abus dotos skaitļus) summa būtu $127$. 
 Pietiek parādīt vienu veidu, kā to var izdarīt.
 
-
-![](LV.NOL.2023.8.1.png){ width=300px }"""@lv ;
+![](LV.NOL.2023.8.1.png){ width=400px }"""@lv ;
     eliozo:problemTextHtml """<p>Ieraksti katrā tukšajā rūtiṇā (skat. 1.att.) vienu pirmskaitli 
 (skaitḷi var būt arī vienādi) tā, lai katrās četrās blakus 
 rūtiņās skaitļu summa būtu viena un tā pati un visu rūtiņās 
 ierakstīto skaitļu (ieskaitot abus dotos skaitļus) summa būtu $127$. 
 Pietiek parādīt vienu veidu, kā to var izdarīt.</p>
-<p><img alt="" src="LV.NOL.2023.8.1.png" />{ width=300px }</p>"""@lv ;
+<p><img alt="" src="LV.NOL.2023.8.1.png" />{ width=400px }</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindExample" ;
@@ -732,6 +845,8 @@ eliozo:LV.NOL.2023.8.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2023.8.2" ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.8.2A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.8.2.SUB0 ;
     eliozo:problemText """Pasākumā satikās $m$ cilvēki. Katrs no tiem draudzējas ar tieši $3$ 
 citiem cilvēkiem (ja $A$ draudzējas ar $B$, tad $B$ draudzējas ar $A$). 
 Zināms, ka no katriem trim cilvēkiem var atrast divus, kuri savā starpā 
@@ -740,6 +855,7 @@ nedraudzējas. Vai var gadīties, ka **(A)** $m=11$, **(B)** $m=10$?"""@lv ;
 citiem cilvēkiem (ja $A$ draudzējas ar $B$, tad $B$ draudzējas ar $A$). 
 Zināms, ka no katriem trim cilvēkiem var atrast divus, kuri savā starpā 
 nedraudzējas. Vai var gadīties, ka <strong>(A)</strong> $m=11$, <strong>(B)</strong> $m=10$?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
@@ -755,12 +871,15 @@ eliozo:LV.NOL.2023.8.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2023.8.3" ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.8.3A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.8.3.SUB0 ;
     eliozo:problemText """Dots vienādsānu trijstūris $ABC$, kuram $AB = BC$. Uz malas $AB$ 
 izvēlēts punkts $M$ un uz malas $BC$ izvēlēts punkts $K$ tā, 
 ka $AM = AK = AC$. Zināms, ka $AK \\perp MC$. Aprēḳināt trijstūra $ABC$ leṇkus!"""@lv ;
     eliozo:problemTextHtml """<p>Dots vienādsānu trijstūris $ABC$, kuram $AB = BC$. Uz malas $AB$ 
 izvēlēts punkts $M$ un uz malas $BC$ izvēlēts punkts $K$ tā, 
 ka $AM = AK = AC$. Zināms, ka $AK \\perp MC$. Aprēḳināt trijstūra $ABC$ leṇkus!</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
@@ -775,7 +894,8 @@ eliozo:LV.NOL.2023.8.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2023.8.4" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2023.8.4.png ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.8.4A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.8.4.SUB0 ;
     eliozo:problemText """Parādi, kā, griežot pa rūtiṇu līnijām, 2.att. doto figūru var 
 sagriezt $4$ vienādās figūrās! Figūras ir vienādas, ja tās var 
 uzlikt vienu uz otras tā, ka abas figūras sakrīt (figūras var 
@@ -787,6 +907,7 @@ sagriezt $4$ vienādās figūrās! Figūras ir vienādas, ja tās var
 uzlikt vienu uz otras tā, ka abas figūras sakrīt (figūras var 
 pagriezt un apmest otrādi).</p>
 <p><img alt="" src="LV.NOL.2023.8.4.png" />{ width=200px }</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindExample" ;
@@ -801,6 +922,8 @@ eliozo:LV.NOL.2023.8.5 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2023.8.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.8.5.SUB0,
+        eliozo:SOLN.LV.NOL.2023.8.5.SUB1 ;
     eliozo:problemText """Pa apļveida trasi vienā virzienā Kārlis skrien ar kājām un Sandris 
 brauc ar skrejriteni, bet pretējā virzienā Vilnis brauc ar velosipēdu 
 un Mārtiṇš ar mopēdu (katrs brauc ar savu, nemainīgu ātrumu). Zināms, 
@@ -813,6 +936,7 @@ un Mārtiṇš ar mopēdu (katrs brauc ar savu, nemainīgu ātrumu). Zināms,
 ka Kārlis satiek Vilni ik pēc $12$ minūtēm, Sandris apdzen Kārli ik 
 pēc $20$ minūtēm, bet Mārtiṇš apdzen Vilni ik pēc $5$ minūtēm. 
 Cik bieži Mārtiṇš satiek Sandri?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindAll" ;
@@ -827,10 +951,12 @@ eliozo:LV.NOL.2023.9.1 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2023.9.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.9.1.SUB0 ;
     eliozo:problemText """Dots, ka $x$ ir naturāls skaitlis. Kāds lielākais skaits skaitļu 
 $x$; $x+2$; $x+4$; $x+6$; $x+8$ vienlaicīgi var būt pirmskaitḷi?"""@lv ;
     eliozo:problemTextHtml """<p>Dots, ka $x$ ir naturāls skaitlis. Kāds lielākais skaits skaitļu 
 $x$; $x+2$; $x+4$; $x+6$; $x+8$ vienlaicīgi var būt pirmskaitḷi?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindOptimal" ;
@@ -846,14 +972,16 @@ eliozo:LV.NOL.2023.9.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2023.9.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.9.2.SUB0 ;
     eliozo:problemText """Novadijā dzīvo $73$ rūḳi un daži no tiem savā starpā draudzējas 
-(ja rūḳis $\\mathrm{A}$ draudzējas ar rūḳi B, tad arī B draudzējas 
-ar $A$, tas ir, draudzība ir abpusēja). Vai var būt tā, ka katram 
-rūķim ir tieši $9$ draugi?"""@lv ;
+(ja rūḳis $A$ draudzējas ar rūḳi $B$, tad arī $B$ draudzējas 
+ar $A$, tas ir, draudzība ir abpusēja). Vai var būt tā, ka 
+katram rūķim ir tieši $9$ draugi?"""@lv ;
     eliozo:problemTextHtml """<p>Novadijā dzīvo $73$ rūḳi un daži no tiem savā starpā draudzējas 
-(ja rūḳis $\\mathrm{A}$ draudzējas ar rūḳi B, tad arī B draudzējas 
-ar $A$, tas ir, draudzība ir abpusēja). Vai var būt tā, ka katram 
-rūķim ir tieši $9$ draugi?</p>"""@lv ;
+(ja rūḳis $A$ draudzējas ar rūḳi $B$, tad arī $B$ draudzējas 
+ar $A$, tas ir, draudzība ir abpusēja). Vai var būt tā, ka 
+katram rūķim ir tieši $9$ draugi?</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "ProveDisprove" ;
@@ -869,10 +997,14 @@ eliozo:LV.NOL.2023.9.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2023.9.3" ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2023.9.3A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.9.3.SUB0,
+        eliozo:SOLN.LV.NOL.2023.9.3.SUB1 ;
     eliozo:problemText """Punkts $X$ ir izliekta četrstūra $ABCD$ diagonāles $AC$ viduspunkts. 
 Zināms, ka $CD \\| BX$. Aprēķināt $AD$ garumu, ja $BX=3, BC=7$ un $CD=6$."""@lv ;
     eliozo:problemTextHtml """<p>Punkts $X$ ir izliekta četrstūra $ABCD$ diagonāles $AC$ viduspunkts. 
 Zināms, ka $CD | BX$. Aprēķināt $AD$ garumu, ja $BX=3, BC=7$ un $CD=6$.</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindAll" ;
@@ -888,11 +1020,14 @@ eliozo:LV.NOL.2023.9.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2023.9.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.9.4.SUB0,
+        eliozo:SOLN.LV.NOL.2023.9.4.SUB1 ;
     eliozo:problemText """Atrast visus tādus reālu skaitļu pārus $(x;y)$, kuriem
 
 $$\\left(x^{4}+1\\right)\\left(y^{4}+1\\right)=4 x^{2} y^{2}$$"""@lv ;
     eliozo:problemTextHtml """<p>Atrast visus tādus reālu skaitļu pārus $(x;y)$, kuriem</p>
 <p>$$\\left(x^{4}+1\\right)\\left(y^{4}+1\\right)=4 x^{2} y^{2}$$</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "FindAll" ;
@@ -907,6 +1042,7 @@ eliozo:LV.NOL.2023.9.5 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2023.9.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2023.9.5.SUB0 ;
     eliozo:problemText """Dabas rezervātā katra koka vecums gados izsakāms kā naturāls skaitlis. 
 Koku vidējais vecums pirms vakardienas negaisa bija tieši $72$ gadi. Negaisa 
 laikā Zibens spēriena dēļ gāja bojā viens $2023$ gadus vecs koks un tagad 
@@ -922,33 +1058,2050 @@ rezervāta koku vidējais vecums ir tieši $71$ gads. Kāds lielākais
 skaits $2023$ gadus vecu koku varēja atrasties rezervātā pirms vakardienas 
 negaisa? </p>
 <p><em>Piezīme.</em> Pa šīm divām dienām neviens koks nav kļuvis vecāks.</p>"""@lv ;
+    eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.NOL.2023.9" ;
     eliozo:suggestedGrade 9 .
 
-eliozo:IMG.LV.NOL.2023.5.1.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2023.5.1.png" ;
+eliozo:IMG.LV.NOL.2023.10.2A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.10.2A.png" ;
     eliozo:imageWidth "300px" .
 
-eliozo:IMG.LV.NOL.2023.5.3.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2023.5.3.png" ;
+eliozo:IMG.LV.NOL.2023.10.3A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.10.3A.png" ;
+    eliozo:imageWidth "150px" .
+
+eliozo:IMG.LV.NOL.2023.10.5A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.10.5A.png" ;
     eliozo:imageWidth "250px" .
 
-eliozo:IMG.LV.NOL.2023.6.3.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2023.6.3.png" ;
+eliozo:IMG.LV.NOL.2023.11.2A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.11.2A.png" ;
+    eliozo:imageWidth "400px" .
+
+eliozo:IMG.LV.NOL.2023.11.3A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.11.3A.png" ;
     eliozo:imageWidth "200px" .
 
-eliozo:IMG.LV.NOL.2023.7.1.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2023.7.1.png" ;
-    eliozo:imageWidth "200px" .
-
-eliozo:IMG.LV.NOL.2023.8.1.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2023.8.1.png" ;
+eliozo:IMG.LV.NOL.2023.11.5A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.11.5A.png" ;
     eliozo:imageWidth "300px" .
 
-eliozo:IMG.LV.NOL.2023.8.4.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2023.8.4.png" ;
+eliozo:IMG.LV.NOL.2023.12.2A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.12.2A.png" ;
+    eliozo:imageWidth "" .
+
+eliozo:IMG.LV.NOL.2023.12.2B.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.12.2B.png" ;
+    eliozo:imageWidth "" .
+
+eliozo:IMG.LV.NOL.2023.12.3A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.12.3A.png" ;
+    eliozo:imageWidth "" .
+
+eliozo:IMG.LV.NOL.2023.5.1A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.5.1A.png" ;
+    eliozo:imageWidth "300px" .
+
+eliozo:IMG.LV.NOL.2023.5.1B.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.5.1B.png" ;
+    eliozo:imageWidth "150px" .
+
+eliozo:IMG.LV.NOL.2023.5.1C.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.5.1C.png" ;
+    eliozo:imageWidth "300px" .
+
+eliozo:IMG.LV.NOL.2023.5.2A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.5.2A.png" ;
     eliozo:imageWidth "200px" .
+
+eliozo:IMG.LV.NOL.2023.5.3A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.5.3A.png" ;
+    eliozo:imageWidth "200px" .
+
+eliozo:IMG.LV.NOL.2023.6.2A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.6.2A.png" ;
+    eliozo:imageWidth "200px" .
+
+eliozo:IMG.LV.NOL.2023.6.3A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.6.3A.png" ;
+    eliozo:imageWidth "250px" .
+
+eliozo:IMG.LV.NOL.2023.7.1A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.7.1A.png" ;
+    eliozo:imageWidth "150px" .
+
+eliozo:IMG.LV.NOL.2023.7.2A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.7.2A.png" ;
+    eliozo:imageWidth "150px" .
+
+eliozo:IMG.LV.NOL.2023.7.3A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.7.3A.png" ;
+    eliozo:imageWidth "150px" .
+
+eliozo:IMG.LV.NOL.2023.8.1A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.8.1A.png" ;
+    eliozo:imageWidth "400px" .
+
+eliozo:IMG.LV.NOL.2023.8.1B.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.8.1B.png" ;
+    eliozo:imageWidth "150px" .
+
+eliozo:IMG.LV.NOL.2023.8.1C.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.8.1C.png" ;
+    eliozo:imageWidth "400px" .
+
+eliozo:IMG.LV.NOL.2023.8.2A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.8.2A.png" ;
+    eliozo:imageWidth "120px" .
+
+eliozo:IMG.LV.NOL.2023.8.3A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.8.3A.png" ;
+    eliozo:imageWidth "120px" .
+
+eliozo:IMG.LV.NOL.2023.8.4A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.8.4A.png" ;
+    eliozo:imageWidth "300px" .
+
+eliozo:IMG.LV.NOL.2023.9.3A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2023.9.3A.png" ;
+    eliozo:imageWidth "300px" .
+
+eliozo:SOLN.LV.NOL.2023.10.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Veicam ekvivalentus pārveidojumus:
+
+$$\\begin{aligned}
+\\sqrt{4+2 \\sqrt{3}} & -\\sqrt{4-2 \\sqrt{3}}=\\sqrt{(\\sqrt{3})^{2}+2 \\cdot \\sqrt{3} \\cdot 1+1^{2}}-\\sqrt{(\\sqrt{3})^{2}-2 \\cdot \\sqrt{3} \\cdot 1+1^{2}}= \\\\
+& =\\sqrt{(\\sqrt{3}+1)^{2}}-\\sqrt{(\\sqrt{3}-1)^{2}}=\\sqrt{3}+1-(\\sqrt{3}-1)=2
+\\end{aligned}$$
+
+Līdz ar to esam ieguvuši, ka dotais skaitlis ir racionāls skaitlis.
+</text>
+
+<text lang="lv">"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Veicam ekvivalentus pārveidojumus:</p>
+<p>$$\\begin{aligned}
+\\sqrt{4+2 \\sqrt{3}} &amp; -\\sqrt{4-2 \\sqrt{3}}=\\sqrt{(\\sqrt{3})^{2}+2 \\cdot \\sqrt{3} \\cdot 1+1^{2}}-\\sqrt{(\\sqrt{3})^{2}-2 \\cdot \\sqrt{3} \\cdot 1+1^{2}}= \\
+&amp; =\\sqrt{(\\sqrt{3}+1)^{2}}-\\sqrt{(\\sqrt{3}-1)^{2}}=\\sqrt{3}+1-(\\sqrt{3}-1)=2
+\\end{aligned}$$</p>
+<p>Līdz ar to esam ieguvuši, ka dotais skaitlis ir racionāls skaitlis.
+</text></p>
+<p><text lang="lv"></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.10.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Doto skaitli kāpinot kvadrātā, iegūstam
+
+$$\\left( \\sqrt{4+2 \\sqrt{3}}-\\sqrt{4-2 \\sqrt{3}} \\right)^{2} = 
+4 + 2\\sqrt{3} - 2 \\sqrt{ \\left( 4+2 \\sqrt{3} \\right) \\left( 4-2 \\sqrt{3} \\right)}
++ 4 - 2\\sqrt{3}=8-2 \\sqrt{16-12}=4.$$
+
+Tā kā skaitḷa kvadrāts ir $4$, tad dotais skaitlis ir racionāls skaitlis.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Doto skaitli kāpinot kvadrātā, iegūstam</p>
+<p>$$\\left( \\sqrt{4+2 \\sqrt{3}}-\\sqrt{4-2 \\sqrt{3}} \\right)^{2} = 
+4 + 2\\sqrt{3} - 2 \\sqrt{ \\left( 4+2 \\sqrt{3} \\right) \\left( 4-2 \\sqrt{3} \\right)}
++ 4 - 2\\sqrt{3}=8-2 \\sqrt{16-12}=4.$$</p>
+<p>Tā kā skaitḷa kvadrāts ir $4$, tad dotais skaitlis ir racionāls skaitlis.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.10.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Mazākais iespējamais punktu skaits ir astoņi. Dotajā piemērā 
+(skat. 3.att.) punkti sadalīti divās grupās (1. grupa un 2. grupa) 
+pa četriem punktiem tā, ka katrs pirmās grupas punkts ir 
+savienots ar katru otrās grupas punktu, bet nav savienots ar 
+nevienu savas grupas punktu. Izvēloties jebkurus trīs punktus, 
+vismaz divi būs vienā grupā, tātad attiecīgie punkti nebūs 
+savienoti ar nogriezni, līdz ar to nebūs uzzīmēts neviens 
+trijstūris, kura virsotnes ir dotajos punktos.
+
+![](LV.NOL.2023.10.2A.png){ width=300px }
+
+Pierādīsim, ka uz lapas nevar būt atzīmēts mazāks skaits punktu. 
+Apskatām punktu $A$ (skat. 4.att.), kas savienots ar tieši $4$ 
+citiem punktiem. Apskatām punktu $B$ (skat. 4.att.). Tā kā nav 
+uzzīmēts neviens trijstūris, tad punkts $B$ nevar būt savienots 
+ne ar vienu citu punktu, kas savienots ar $A$, bet tādā gadījumā 
+nepieciešami vēl vismaz $3$ citi punkti, tas ir, kopā uz lapas 
+ir atzīmēti vismaz $8$ punkti.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Mazākais iespējamais punktu skaits ir astoņi. Dotajā piemērā 
+(skat. 3.att.) punkti sadalīti divās grupās (1. grupa un 2. grupa) 
+pa četriem punktiem tā, ka katrs pirmās grupas punkts ir 
+savienots ar katru otrās grupas punktu, bet nav savienots ar 
+nevienu savas grupas punktu. Izvēloties jebkurus trīs punktus, 
+vismaz divi būs vienā grupā, tātad attiecīgie punkti nebūs 
+savienoti ar nogriezni, līdz ar to nebūs uzzīmēts neviens 
+trijstūris, kura virsotnes ir dotajos punktos.</p>
+<p><img alt="" src="LV.NOL.2023.10.2A.png" />{ width=300px }</p>
+<p>Pierādīsim, ka uz lapas nevar būt atzīmēts mazāks skaits punktu. 
+Apskatām punktu $A$ (skat. 4.att.), kas savienots ar tieši $4$ 
+citiem punktiem. Apskatām punktu $B$ (skat. 4.att.). Tā kā nav 
+uzzīmēts neviens trijstūris, tad punkts $B$ nevar būt savienots 
+ne ar vienu citu punktu, kas savienots ar $A$, bet tādā gadījumā 
+nepieciešami vēl vismaz $3$ citi punkti, tas ir, kopā uz lapas 
+ir atzīmēti vismaz $8$ punkti.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.10.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Pret malām $BC$ un $AC$ novilktos augstumus apzīmējam ar 
+$A A_{1}$ un $B B_{1}$ (skat. 5.att.).
+
+Ievērojam, ka $S_{ABHC}=S_{ABH}+S_{ACH}$.
+
+Izmantojot trijstūra laukuma aprēḳināšanas formulu $S_{\\triangle}=\\frac{1}{2} a \\cdot h_{a}$, iegūstam, ka
+
+$$S_{ABHC}=S_{ABH}+S_{ACH}=\\frac{1}{2} AH \\cdot BA_{1}+\\frac{1}{2} AH \\cdot A_{1}C = \\frac{1}{2} AH \\left(BA_{1}+A_{1}C \\right) = \\frac{1}{2} AH \\cdot BC=\\frac{1}{2} \\cdot 8 \\cdot 8=32.$$
+
+![](LV.NOL.2023.10.3A.png){ width=150px }
+</text>
+
+
+<text lang="lv">"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pret malām $BC$ un $AC$ novilktos augstumus apzīmējam ar 
+$A A_{1}$ un $B B_{1}$ (skat. 5.att.).</p>
+<p>Ievērojam, ka $S_{ABHC}=S_{ABH}+S_{ACH}$.</p>
+<p>Izmantojot trijstūra laukuma aprēḳināšanas formulu $S_{\\triangle}=\\frac{1}{2} a \\cdot h_{a}$, iegūstam, ka</p>
+<p>$$S_{ABHC}=S_{ABH}+S_{ACH}=\\frac{1}{2} AH \\cdot BA_{1}+\\frac{1}{2} AH \\cdot A_{1}C = \\frac{1}{2} AH \\left(BA_{1}+A_{1}C \\right) = \\frac{1}{2} AH \\cdot BC=\\frac{1}{2} \\cdot 8 \\cdot 8=32.$$</p>
+<p><img alt="" src="LV.NOL.2023.10.3A.png" />{ width=150px }
+</text></p>
+<p><text lang="lv"></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Pret malām $B C$ un $A C$ novilktos augstumus apzīmējam ar 
+$AA_{1}$ un $BB_{1}$ (skat. 5.att.). 
+Ievērojam, ka $S_{ABHC}=S_{ABC}-S_{HBC}$.
+
+Izmantojot trijstūra laukuma aprēkināšanas formulu 
+$S_{\\triangle}=\\frac{1}{2} a \\cdot h_{a}$, iegūstam, ka
+
+$$S_{ABHC} = S_{ABC}-S_{HBC} = 
+\\frac{1}{2} BC \\cdot AA_{1}-\\frac{1}{2} BC \\cdot HA_{1} =
+\\frac{1}{2} BC \\left(AA_{1}-HA_{1}\\right) = 
+\\frac{1}{2} BC \\cdot AH=\\frac{1}{2} \\cdot 8 \\cdot 8=32.$$
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pret malām $B C$ un $A C$ novilktos augstumus apzīmējam ar 
+$AA_{1}$ un $BB_{1}$ (skat. 5.att.). 
+Ievērojam, ka $S_{ABHC}=S_{ABC}-S_{HBC}$.</p>
+<p>Izmantojot trijstūra laukuma aprēkināšanas formulu 
+$S_{\\triangle}=\\frac{1}{2} a \\cdot h_{a}$, iegūstam, ka</p>
+<p>$$S_{ABHC} = S_{ABC}-S_{HBC} = 
+\\frac{1}{2} BC \\cdot AA_{1}-\\frac{1}{2} BC \\cdot HA_{1} =
+\\frac{1}{2} BC \\left(AA_{1}-HA_{1}\\right) = 
+\\frac{1}{2} BC \\cdot AH=\\frac{1}{2} \\cdot 8 \\cdot 8=32.$$
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.10.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Aplūkojam vērtību $N=7$ un pārbaudām, vai $N+2p$ ir pirmskaitlis 
+visiem $p$, kas mazāki nekā $N$:
+
+* ja $p=2$, tad $7+2 \\cdot 2=11$ (pirmskaitlis);
+* ja $p=3$, tad $7+2 \\cdot 3=13$ (pirmskaitlis);
+* ja $p=5$, tad $7+2 \\cdot 5=17$ (pirmskaitlis).
+
+Pamatosim, ka neder skaitḷi, kas lielāki nekā $7$. Ja $N>7$, 
+tad kāds no trīs skaitļiem: $N+4, N+6, N+14$ nav pirmskaitlis, jo
+
+* $N+6$ dalās ar $3$, ja $N=3k$,
+* $N+14$ dalās ar $3$, ja $N = 3k+1$, 
+* $N+14$ dalās ar $3$, ja $N=3k+1$,
+* $N+4$ dalās ar $3$, ja $N=3k+2$.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Aplūkojam vērtību $N=7$ un pārbaudām, vai $N+2p$ ir pirmskaitlis 
+visiem $p$, kas mazāki nekā $N$:</p>
+<ul>
+<li>ja $p=2$, tad $7+2 \\cdot 2=11$ (pirmskaitlis);</li>
+<li>ja $p=3$, tad $7+2 \\cdot 3=13$ (pirmskaitlis);</li>
+<li>ja $p=5$, tad $7+2 \\cdot 5=17$ (pirmskaitlis).</li>
+</ul>
+<p>Pamatosim, ka neder skaitḷi, kas lielāki nekā $7$. Ja $N&gt;7$, 
+tad kāds no trīs skaitļiem: $N+4, N+6, N+14$ nav pirmskaitlis, jo</p>
+<ul>
+<li>$N+6$ dalās ar $3$, ja $N=3k$,</li>
+<li>$N+14$ dalās ar $3$, ja $N = 3k+1$, </li>
+<li>$N+14$ dalās ar $3$, ja $N=3k+1$,</li>
+<li>$N+4$ dalās ar $3$, ja $N=3k+2$.
+</text></li>
+</ul>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.10.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Turnīrā varēja piedalīties $3$ vai $4$ komandas, piemēram, 
+atbilstošu spēļu norisi skat. 6.att., kur skaitlis $1$ norāda 
+rindā rakstītās komandas atbilstošās uzvaras pret komandām, 
+kas rakstītas kolonnā, skaitlis $0$ norāda zaudējumu (piemēram,
+trīs komandu gadījumā komanda $A$ ir uzvarējusi komandu $B$ un
+zaudējusi komandai $C$). Pamatosim, ka cits komandu skaits nav
+iespējams. Komandu skaits nevar būt $2$, jo tad ir tikai viena 
+spēle, kurā ir uzvarētājs un zaudētājs.
+
+![](LV.NOL.2023.10.5A.png){ width=250px }
+
+Ievērosim, ka $x$ komandas savā starpā kopā izspēlē 
+$(x-1)+(x-2)+\\cdots+2+1=\\frac{x(x-1)}{2}$ spēles un izcīna tikpat 
+uzvaras. Tā kā vidēji uz vienu komandu ir $\\frac{x-1}{2}$ uzvaras,
+tad ir komanda ar vismaz $\\frac{x-1}{2}$ uzvarām (ja šādas komandas 
+nebūtu, tad kopējais uzvaru skaits būtu mazāks nekā $\\frac{x(x-1)}{2}$).
+
+Apzīmēsim turnīra komandu skaitu ar $x$ un pieṇemsim, ka lielākais 
+uzvaru skaits vienai komandai ir $y$; apzīmēsim šo komandu ar $A$. 
+Tās $y$ komandas, kas zaudējušas pret $A$, savā starpā spēlējušas 
+$\\frac{y(y-1)}{2}$ spēles, kurās izcīnītas $\\frac{y(y-1)}{2}$ 
+uzvaras; bez tam viṇām varbūt ir vēl kādas citas uzvaras. 
+Tāpēc $y \\geq \\frac{y(y-1)}{2}$, no kurienes izriet, ka $y \\leq 3$.
+
+Apskatām visas iespējamās $y$ vērtības.
+
+* Ja $y=3$, tad A izcīnījusi $3$ uzvaras pret $B$, $C$, $D$. 
+  Tātad $C$ un $D$ savā starpā arī ir $3$ uzvaras. Ja būtu vēl 
+  kāda komanda $E$, tad tā ir uzvarējusi gan pret $A$, gan pret 
+  $B$, $C$, $D$ (citādi $B$, $C$, $D$ kopā būtu vairāk par $3$ 
+  uzvarām), un tā ir pretruna ar to, ka $A$ ir vislielākais 
+  uzvaru skaits. Tātad šajā gadījumā citu komandu nav, un turnīrā 
+  piedalās $4$ komandas.
+* Ja $y=2$, tad no iepriekš iegūtās nevienādības 
+  $y \\geq \\frac{x-1}{2}$ izriet, ka $x \\leq 5$. Mums tikai 
+  jānoskaidro, vai var būt, ka $x=5$. Ja $x=5$, tad tiek izspēlētas 
+  $10$ spēles un izcīnītas $10$ uzvaras. Ja lielākais uzvaru skaits 
+  ir $2$, tad visām komandām ir pa $2$ uzvarām, un tā ir pretruna 
+  ar uzdevuma nosacījumiem. Tāpēc $x \\neq 5$.
+* Ja $y=1$, tad no $y \\geq \\frac{x-1}{2}$ izriet, ka $x \\leq 3$. 
+  Tātad citu iespēju bez sākumā uzrādītajām nav.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Turnīrā varēja piedalīties $3$ vai $4$ komandas, piemēram, 
+atbilstošu spēļu norisi skat. 6.att., kur skaitlis $1$ norāda 
+rindā rakstītās komandas atbilstošās uzvaras pret komandām, 
+kas rakstītas kolonnā, skaitlis $0$ norāda zaudējumu (piemēram,
+trīs komandu gadījumā komanda $A$ ir uzvarējusi komandu $B$ un
+zaudējusi komandai $C$). Pamatosim, ka cits komandu skaits nav
+iespējams. Komandu skaits nevar būt $2$, jo tad ir tikai viena 
+spēle, kurā ir uzvarētājs un zaudētājs.</p>
+<p><img alt="" src="LV.NOL.2023.10.5A.png" />{ width=250px }</p>
+<p>Ievērosim, ka $x$ komandas savā starpā kopā izspēlē 
+$(x-1)+(x-2)+\\cdots+2+1=\\frac{x(x-1)}{2}$ spēles un izcīna tikpat 
+uzvaras. Tā kā vidēji uz vienu komandu ir $\\frac{x-1}{2}$ uzvaras,
+tad ir komanda ar vismaz $\\frac{x-1}{2}$ uzvarām (ja šādas komandas 
+nebūtu, tad kopējais uzvaru skaits būtu mazāks nekā $\\frac{x(x-1)}{2}$).</p>
+<p>Apzīmēsim turnīra komandu skaitu ar $x$ un pieṇemsim, ka lielākais 
+uzvaru skaits vienai komandai ir $y$; apzīmēsim šo komandu ar $A$. 
+Tās $y$ komandas, kas zaudējušas pret $A$, savā starpā spēlējušas 
+$\\frac{y(y-1)}{2}$ spēles, kurās izcīnītas $\\frac{y(y-1)}{2}$ 
+uzvaras; bez tam viṇām varbūt ir vēl kādas citas uzvaras. 
+Tāpēc $y \\geq \\frac{y(y-1)}{2}$, no kurienes izriet, ka $y \\leq 3$.</p>
+<p>Apskatām visas iespējamās $y$ vērtības.</p>
+<ul>
+<li>Ja $y=3$, tad A izcīnījusi $3$ uzvaras pret $B$, $C$, $D$. 
+  Tātad $C$ un $D$ savā starpā arī ir $3$ uzvaras. Ja būtu vēl 
+  kāda komanda $E$, tad tā ir uzvarējusi gan pret $A$, gan pret 
+  $B$, $C$, $D$ (citādi $B$, $C$, $D$ kopā būtu vairāk par $3$ 
+  uzvarām), un tā ir pretruna ar to, ka $A$ ir vislielākais 
+  uzvaru skaits. Tātad šajā gadījumā citu komandu nav, un turnīrā 
+  piedalās $4$ komandas.</li>
+<li>Ja $y=2$, tad no iepriekš iegūtās nevienādības 
+  $y \\geq \\frac{x-1}{2}$ izriet, ka $x \\leq 5$. Mums tikai 
+  jānoskaidro, vai var būt, ka $x=5$. Ja $x=5$, tad tiek izspēlētas 
+  $10$ spēles un izcīnītas $10$ uzvaras. Ja lielākais uzvaru skaits 
+  ir $2$, tad visām komandām ir pa $2$ uzvarām, un tā ir pretruna 
+  ar uzdevuma nosacījumiem. Tāpēc $x \\neq 5$.</li>
+<li>Ja $y=1$, tad no $y \\geq \\frac{x-1}{2}$ izriet, ka $x \\leq 3$. 
+  Tātad citu iespēju bez sākumā uzrādītajām nav.
+</text></li>
+</ul>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.11.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Reizinām abas nevienādības puses ar $4$ un veicam ekvivalentus pārveidojumus:
+
+$$\\begin{gathered}
+4 x^{2}-4 x+4 y^{2}-4 y+2 \\geq 0 \\\\
+\\left(4 x^{2}-4 x+1\\right)+\\left(4 y^{2}-4 y+1\\right) \\geq 0 \\\\
+(2 x-1)^{2}+(2 y-1)^{2} \\geq 0
+\\end{gathered}$$
+
+Tā kā divu kvadrātu summa ir nenegatīva, tad iegūtā nevienādība 
+ir patiesa, tātad arī sākotnējā nevienādība ir patiesa.
+</text>
+
+
+<text lang="lv">"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Reizinām abas nevienādības puses ar $4$ un veicam ekvivalentus pārveidojumus:</p>
+<p>$$\\begin{gathered}
+4 x^{2}-4 x+4 y^{2}-4 y+2 \\geq 0 \\
+\\left(4 x^{2}-4 x+1\\right)+\\left(4 y^{2}-4 y+1\\right) \\geq 0 \\
+(2 x-1)^{2}+(2 y-1)^{2} \\geq 0
+\\end{gathered}$$</p>
+<p>Tā kā divu kvadrātu summa ir nenegatīva, tad iegūtā nevienādība 
+ir patiesa, tātad arī sākotnējā nevienādība ir patiesa.
+</text></p>
+<p><text lang="lv"></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.11.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Veicam ekvivalentus pārveidojumus:
+
+$$\\begin{gathered}
+x^{2}-x+y^{2}-y+\\frac{1}{2} \\geq 0 \\\\
+x^{2}-2 \\cdot \\frac{1}{2} x+\\left(\\frac{1}{2}\\right)^{2}+y^{2}-2 \\cdot \\frac{1}{2} y+\\left(\\frac{1}{2}\\right)^{2} \\geq 0 \\\\
+\\left(x-\\frac{1}{2}\\right)^{2}+\\left(y-\\frac{1}{2}\\right)^{2} \\geq 0
+\\end{gathered}$$
+
+Tā kā divu kvadrātu summa ir nenegatīva, tad iegūtā nevienādība 
+ir patiesa, tātad arī sākotnējā nevienādība ir patiesa.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Veicam ekvivalentus pārveidojumus:</p>
+<p>$$\\begin{gathered}
+x^{2}-x+y^{2}-y+\\frac{1}{2} \\geq 0 \\
+x^{2}-2 \\cdot \\frac{1}{2} x+\\left(\\frac{1}{2}\\right)^{2}+y^{2}-2 \\cdot \\frac{1}{2} y+\\left(\\frac{1}{2}\\right)^{2} \\geq 0 \\
+\\left(x-\\frac{1}{2}\\right)^{2}+\\left(y-\\frac{1}{2}\\right)^{2} \\geq 0
+\\end{gathered}$$</p>
+<p>Tā kā divu kvadrātu summa ir nenegatīva, tad iegūtā nevienādība 
+ir patiesa, tātad arī sākotnējā nevienādība ir patiesa.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.11.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Katru rūķi apzīmēsim ar punktu. Ja divi rūḳi draudzējas, tad 
+tos savienosim ar zaḷu nogriezni (nepārtraukta līnija), ja 
+tie viens otru ienīst, tad savienosim tos ar sarkanu nogriezni 
+(pārtraukta līnija).
+
+**(A)** Nē, var gadīties, ka nav tādu trīs rūḳu, kas visi savā 
+starpā draudzējas, piemēram, skat. 7. att.
+
+![](LV.NOL.2023.11.2A.png){ width=400px }
+
+**(B)** Pamatosim, ka noteikti var atrast tādus trīs rūķus, kas visi 
+savā starpā draudzējas.
+
+Apskatām punktu $A$. No tā iziet vismaz $3$ vienas krāsas nogriežņi, 
+jo katri divi rūķi vai nu draudzējas, vai ir ienaidnieki un no viena 
+punkta iziet $5$ nogriežṇi (pēc Dirihlē principa). Apskatām abus 
+iespējamos gadījumus, kādā krāsā var būt nogriežṇi $AB$, $AC$ un $AD$.
+
+1. Ja nogriežṇi $AB$, $AC$, $AD$ ir sarkanā krāsā (ienīst), tad nogriežṇiem 
+   $B C, C D, B D$ ir jābūt zaḷā krāsā (skat. 8.att.), lai neveidotos 
+   sarkani trijstūri $ABC$, $ACD$ un $ABD$, jo pēc dotā nav tādu trīs 
+   rūķu, kas visi ienīst viens otru. Tātad ir trīs rūki $B,C$ un $D$, 
+   kas visi draudzējas savā starpā (veidojas zals̆ trijstūris $BCD$).
+2. Nogriežṇi $AB$, $AC$, $AD$ ir zalạ krāsā (draudzējas). Pieṇemsim 
+   pretējo, ka nav tādu trīs rūķu, kas visi savā starpā draudzējas 
+   (nav zaḷa trijstūra). Tad punkti $B,C,D$ jāsavieno ar sarkaniem 
+   nogriežņiem $BC$, $CD$, $BD$ (skat. 9.att.), lai neviens no trijstūriem 
+   $ABC$, $ACD$ un $ABD$ nebūtu zaļš. Bet tādā gadījumā rūķi $B,C,D$ 
+   visi viens otru ienīst, kas ir pretrunā ar doto. Tātad pieņēmums ir 
+   aplams un ir tādi trīs rūķi, kas visi savā starpā draudzējas.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Katru rūķi apzīmēsim ar punktu. Ja divi rūḳi draudzējas, tad 
+tos savienosim ar zaḷu nogriezni (nepārtraukta līnija), ja 
+tie viens otru ienīst, tad savienosim tos ar sarkanu nogriezni 
+(pārtraukta līnija).</p>
+<p><strong>(A)</strong> Nē, var gadīties, ka nav tādu trīs rūḳu, kas visi savā 
+starpā draudzējas, piemēram, skat. 7. att.</p>
+<p><img alt="" src="LV.NOL.2023.11.2A.png" />{ width=400px }</p>
+<p><strong>(B)</strong> Pamatosim, ka noteikti var atrast tādus trīs rūķus, kas visi 
+savā starpā draudzējas.</p>
+<p>Apskatām punktu $A$. No tā iziet vismaz $3$ vienas krāsas nogriežņi, 
+jo katri divi rūķi vai nu draudzējas, vai ir ienaidnieki un no viena 
+punkta iziet $5$ nogriežṇi (pēc Dirihlē principa). Apskatām abus 
+iespējamos gadījumus, kādā krāsā var būt nogriežṇi $AB$, $AC$ un $AD$.</p>
+<ol>
+<li>Ja nogriežṇi $AB$, $AC$, $AD$ ir sarkanā krāsā (ienīst), tad nogriežṇiem 
+   $B C, C D, B D$ ir jābūt zaḷā krāsā (skat. 8.att.), lai neveidotos 
+   sarkani trijstūri $ABC$, $ACD$ un $ABD$, jo pēc dotā nav tādu trīs 
+   rūķu, kas visi ienīst viens otru. Tātad ir trīs rūki $B,C$ un $D$, 
+   kas visi draudzējas savā starpā (veidojas zals̆ trijstūris $BCD$).</li>
+<li>Nogriežṇi $AB$, $AC$, $AD$ ir zalạ krāsā (draudzējas). Pieṇemsim 
+   pretējo, ka nav tādu trīs rūķu, kas visi savā starpā draudzējas 
+   (nav zaḷa trijstūra). Tad punkti $B,C,D$ jāsavieno ar sarkaniem 
+   nogriežņiem $BC$, $CD$, $BD$ (skat. 9.att.), lai neviens no trijstūriem 
+   $ABC$, $ACD$ un $ABD$ nebūtu zaļš. Bet tādā gadījumā rūķi $B,C,D$ 
+   visi viens otru ienīst, kas ir pretrunā ar doto. Tātad pieņēmums ir 
+   aplams un ir tādi trīs rūķi, kas visi savā starpā draudzējas.
+</text></li>
+</ol>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.11.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apzīmējam $AE=2x$ un $EB=BD=BC=5x$. Tad $AB=AC=7x$.
+
+Trijstūri $ABC$ un $BCD$ ir vienādsānu trijstūri ($AB=AC$ pēc dotā 
+un $BC=BD$ kā rādiusi), turklāt leņķi pie pamata abiem trijstūriem 
+ir vienādi ( $\\sphericalangle A C B$ ir kopīgs abiem trijstūriem, skat. 
+10.att.). Tātad $\\triangle B C D \\sim \\triangle A B C$ pēc pazīmes 
+$\\ell \\ell$.
+
+Līdzīgos trijstūros atbilstošo malu garumi ir proporcionāli, tāpēc 
+$\\frac{AB}{BC}=\\frac{BC}{DC}$ un līdz ar to iegūstam, ka 
+$DC=\\frac{BC^{2}}{AB}=\\frac{(5x)^{2}}{7x}=\\frac{25x}{7}$. 
+Tātad $AD=7x-\\frac{25x}{7}=\\frac{24x}{7}$ un 
+$\\frac{AD}{DC}=\\frac{24}{25}$.
+
+![](LV.NOL.2023.11.3A.png){ width=200px }
+</text>
+
+
+<text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apzīmējam $AE=2x$ un $EB=BD=BC=5x$. Tad $AB=AC=7x$.</p>
+<p>Trijstūri $ABC$ un $BCD$ ir vienādsānu trijstūri ($AB=AC$ pēc dotā 
+un $BC=BD$ kā rādiusi), turklāt leņķi pie pamata abiem trijstūriem 
+ir vienādi ( $\\sphericalangle A C B$ ir kopīgs abiem trijstūriem, skat. 
+10.att.). Tātad $\\triangle B C D \\sim \\triangle A B C$ pēc pazīmes 
+$\\ell \\ell$.</p>
+<p>Līdzīgos trijstūros atbilstošo malu garumi ir proporcionāli, tāpēc 
+$\\frac{AB}{BC}=\\frac{BC}{DC}$ un līdz ar to iegūstam, ka 
+$DC=\\frac{BC^{2}}{AB}=\\frac{(5x)^{2}}{7x}=\\frac{25x}{7}$. 
+Tātad $AD=7x-\\frac{25x}{7}=\\frac{24x}{7}$ un 
+$\\frac{AD}{DC}=\\frac{24}{25}$.</p>
+<p><img alt="" src="LV.NOL.2023.11.3A.png" />{ width=200px }
+</text></p>
+<p><text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.11.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apzīmējam $AE=2x$ un $EB=BD=BC=5x$ (skat. 10.att.). Tad $AB=AC=7x$.
+
+Pagarināsim $AB$ līdz otram krustpunktam ar rinķa līniju, 
+apzīmēsim to ar $F$. Tādā gadījumā $BF=EB=5x$ kā rādiusi un 
+$AF=AE+EB+BF=12x$. Izmantojot sekanšu īpašību, iegūstam, ka
+
+$$AE \\cdot AF = AD \\cdot AC;\\quad 2x \\cdot 12x=AD \\cdot 7x; \\quad AD=\\frac{24x^{2}}{7x}=\\frac{24x}{7}$$
+
+Tā kā $DC=AC-AD=7x-\\frac{24x}{7}=\\frac{25x}{7}$, 
+tad $\\frac{AD}{DC}=\\frac{24}{25}$.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apzīmējam $AE=2x$ un $EB=BD=BC=5x$ (skat. 10.att.). Tad $AB=AC=7x$.</p>
+<p>Pagarināsim $AB$ līdz otram krustpunktam ar rinķa līniju, 
+apzīmēsim to ar $F$. Tādā gadījumā $BF=EB=5x$ kā rādiusi un 
+$AF=AE+EB+BF=12x$. Izmantojot sekanšu īpašību, iegūstam, ka</p>
+<p>$$AE \\cdot AF = AD \\cdot AC;\\quad 2x \\cdot 12x=AD \\cdot 7x; \\quad AD=\\frac{24x^{2}}{7x}=\\frac{24x}{7}$$</p>
+<p>Tā kā $DC=AC-AD=7x-\\frac{24x}{7}=\\frac{25x}{7}$, 
+tad $\\frac{AD}{DC}=\\frac{24}{25}$.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.11.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Pieṇemsim pretējo, ka šādi skaitļi eksistē un apzīmēsim tos 
+attiecīgi ar $x$ un $x+1$, iegūstot vienādojumu $x(x+1)=36n+8$.
+
+Pareizinot abas vienādojuma puses ar $4$ un pieskaitot $1$, 
+iegūstam, ka
+
+$$\\begin{gathered}
+4 x^{2}+4 x+1=144 n+33 \\\\
+(2 x+1)^{2}=144 n+33
+\\end{gathered}$$
+
+Ievērojam, ka $144$ dalās ar $9$, toties $33$ dalās ar $3$, 
+bet nedalās ar $9$. Tātad $144 n+33$ dalās ar $3$, bet nedalās ar $9$, 
+un tas nevar būt naturāla skaitḷa kvadrāts. Tātad esam ieguvuši pretrunu. 
+Līdz ar to nekādu divu secīgu naturālu skaitļu reizinājums nav 
+izsakāms formā $36n+8$, kur $n$ - naturāls skaitlis.
+</text>
+
+
+<text lang="lv">"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pieṇemsim pretējo, ka šādi skaitļi eksistē un apzīmēsim tos 
+attiecīgi ar $x$ un $x+1$, iegūstot vienādojumu $x(x+1)=36n+8$.</p>
+<p>Pareizinot abas vienādojuma puses ar $4$ un pieskaitot $1$, 
+iegūstam, ka</p>
+<p>$$\\begin{gathered}
+4 x^{2}+4 x+1=144 n+33 \\
+(2 x+1)^{2}=144 n+33
+\\end{gathered}$$</p>
+<p>Ievērojam, ka $144$ dalās ar $9$, toties $33$ dalās ar $3$, 
+bet nedalās ar $9$. Tātad $144 n+33$ dalās ar $3$, bet nedalās ar $9$, 
+un tas nevar būt naturāla skaitḷa kvadrāts. Tātad esam ieguvuši pretrunu. 
+Līdz ar to nekādu divu secīgu naturālu skaitļu reizinājums nav 
+izsakāms formā $36n+8$, kur $n$ - naturāls skaitlis.
+</text></p>
+<p><text lang="lv"></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.11.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Pieṇemsim, ka šāds secīgu naturālu skaitḷu pāris eksistē. Tad to 
+reizinājums pēc moduḷa $9$ ir $8$, jo 
+$36n+8 \\equiv 8 \\pmod 9$. Aplūkosim, kādus atlikumus pēc moduḷa $9$ 
+var iegūt, reizinot secīgus skaitlus $x$ un $(x+1)$.
+
+| $x \\pmod {9}$ | $x+1 \\pmod {9}$ | $x(x+1) \\pmod {9}$ |
+| :---: | :---: | :---: |
+| 0 | 1 | 0 |
+| 1 | 2 | 2 |
+| 2 | 3 | 6 |
+| 3 | 4 | 3 |
+| 4 | 5 | 2 |
+| 5 | 6 | 3 |
+| 6 | 7 | 6 |
+| 7 | 8 | 2 |
+| 8 | 0 | 0 |
+
+Visi iespējamie varianti ir aplūkoti un nevienā gadījumā 
+reizinājuma atlikums pēc moduḷa $9$ nav $8$. Tātad esam ieguvuši 
+pretrunu. Līdz ar to nekādu divu secīgu naturālu skaitḷu 
+reizinājums nav izsakāms formā $36n+8$, kur $n$ ir naturāls skaitlis.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pieṇemsim, ka šāds secīgu naturālu skaitḷu pāris eksistē. Tad to 
+reizinājums pēc moduḷa $9$ ir $8$, jo 
+$36n+8 \\equiv 8 \\pmod 9$. Aplūkosim, kādus atlikumus pēc moduḷa $9$ 
+var iegūt, reizinot secīgus skaitlus $x$ un $(x+1)$.</p>
+<table>
+<thead>
+<tr>
+<th align="center">$x \\pmod {9}$</th>
+<th align="center">$x+1 \\pmod {9}$</th>
+<th align="center">$x(x+1) \\pmod {9}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">6</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">7</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">8</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<p>Visi iespējamie varianti ir aplūkoti un nevienā gadījumā 
+reizinājuma atlikums pēc moduḷa $9$ nav $8$. Tātad esam ieguvuši 
+pretrunu. Līdz ar to nekādu divu secīgu naturālu skaitḷu 
+reizinājums nav izsakāms formā $36n+8$, kur $n$ ir naturāls skaitlis.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.11.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Pieņemsim pretējo, ka abas virknes $\\left\\{b_{i}\\right\\}$ un 
+$\\left\\{c_{i}\\right\\}$ ir attiecīgi $n-1$ un $n-2$ mazāko skaitļu 
+permutācijas. Tas nozīmē, ka virknē $\\left\\{c_{i}\\right\\}$ ir 
+skaitlis $n-2$, bet virknē $\\left\\{b_{i}\\right\\}$ ir visi skaitļi 
+no $1$ līdz $n-1$.
+
+Uzskatāmības pēc rakstīsim virknes vienu zem otras tā, ka elements 
+$b_{i}$ atrodas zem elementiem $a_{i}$ un $a_{i+1}$ pa vidu un arī 
+elements $c_{i}$ atrodas zem elementiem $b_{i}$ un $b_{i+1}$ pa vidu. 
+Tieši virs $n-2$ virknē $\\left\\{c_{i}\\right\\}$ jāatrodas virknes 
+$\\left\\{b_{i}\\right\\}$ skaitliem 1 un $n-1$, jo nav cita veida, kā virknē $\\left\\{c_{i}\\right\\}$ iegūt $n-2$. Līdzīgi tieši virs $n-1$ virknē 
+$\\left\\{b_{i}\\right\\}$ jāatrodas virknes $\\left\\{a_{i}\\right\\}$ skaitļiem 
+$1$ un $n$, jo nav cita veida, kā virknē $\\left\\{b_{i}\\right\\}$ 
+iegūt skaitli $n-1$. Tādējādi ir iespējami divi varianti, kādi skaitḷi 
+atrodas virknē $\\left\\{a_{i}\\right\\}$ virs $1$ un $n-1$ 
+(skat. 11. att. un 12. att.). Gadījumi, kad virknē 
+$\\left\\{b_{i}\\right\\}$ skaitļi $1$ un $n-1$ atrodas pretējā secībā, 
+ir šiem simetriski.
+
+![](LV.NOL.2023.11.5A.png){ width=300px }
+
+Virknē $\\left\\{b_{i}\\right\\}$ kaut kur jāatrodas arī skaitlim $n-2$, 
+ko var iegūt tikai divos veidos: vai nu kā $n-2$, vai arī kā $(n-1)-1$. 
+Tātad virknē $\\left\\{a_{i}\\right\\}$ vai nu skaitļu pārim $(1 ; n-1)$, 
+vai arī $(2 ; n)$ jāatrodas blakus. Bet nevienā no gadījumiem tas nav
+iespējams. Patiešām, 11.att. gadijumā $1$ un $n-1$ neatrodas blakus, 
+bet skaitlim $n$ abi kaimiṇi jau ir aizṇemti, un līdzīgi 12.att. 
+gadijumā skaitḷi $2$ un $n$ neatrodas blakus, bet skaitlim $1$ abi 
+kaimiņi jau ir aizṇemti. Tātad pieņēmums bija aplams un abas virknes 
+$\\left\\{b_{i}\\right\\}$ un $\\left\\{c_{i}\\right\\}$ vienlaikus nevar 
+būt attiecīgi $n-1$ un $n-2$ mazāko naturālo skaitļu permutācijas.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pieņemsim pretējo, ka abas virknes $\\left{b_{i}\\right}$ un 
+$\\left{c_{i}\\right}$ ir attiecīgi $n-1$ un $n-2$ mazāko skaitļu 
+permutācijas. Tas nozīmē, ka virknē $\\left{c_{i}\\right}$ ir 
+skaitlis $n-2$, bet virknē $\\left{b_{i}\\right}$ ir visi skaitļi 
+no $1$ līdz $n-1$.</p>
+<p>Uzskatāmības pēc rakstīsim virknes vienu zem otras tā, ka elements 
+$b_{i}$ atrodas zem elementiem $a_{i}$ un $a_{i+1}$ pa vidu un arī 
+elements $c_{i}$ atrodas zem elementiem $b_{i}$ un $b_{i+1}$ pa vidu. 
+Tieši virs $n-2$ virknē $\\left{c_{i}\\right}$ jāatrodas virknes 
+$\\left{b_{i}\\right}$ skaitliem 1 un $n-1$, jo nav cita veida, kā virknē $\\left{c_{i}\\right}$ iegūt $n-2$. Līdzīgi tieši virs $n-1$ virknē 
+$\\left{b_{i}\\right}$ jāatrodas virknes $\\left{a_{i}\\right}$ skaitļiem 
+$1$ un $n$, jo nav cita veida, kā virknē $\\left{b_{i}\\right}$ 
+iegūt skaitli $n-1$. Tādējādi ir iespējami divi varianti, kādi skaitḷi 
+atrodas virknē $\\left{a_{i}\\right}$ virs $1$ un $n-1$ 
+(skat. 11. att. un 12. att.). Gadījumi, kad virknē 
+$\\left{b_{i}\\right}$ skaitļi $1$ un $n-1$ atrodas pretējā secībā, 
+ir šiem simetriski.</p>
+<p><img alt="" src="LV.NOL.2023.11.5A.png" />{ width=300px }</p>
+<p>Virknē $\\left{b_{i}\\right}$ kaut kur jāatrodas arī skaitlim $n-2$, 
+ko var iegūt tikai divos veidos: vai nu kā $n-2$, vai arī kā $(n-1)-1$. 
+Tātad virknē $\\left{a_{i}\\right}$ vai nu skaitļu pārim $(1 ; n-1)$, 
+vai arī $(2 ; n)$ jāatrodas blakus. Bet nevienā no gadījumiem tas nav
+iespējams. Patiešām, 11.att. gadijumā $1$ un $n-1$ neatrodas blakus, 
+bet skaitlim $n$ abi kaimiṇi jau ir aizṇemti, un līdzīgi 12.att. 
+gadijumā skaitḷi $2$ un $n$ neatrodas blakus, bet skaitlim $1$ abi 
+kaimiņi jau ir aizṇemti. Tātad pieņēmums bija aplams un abas virknes 
+$\\left{b_{i}\\right}$ un $\\left{c_{i}\\right}$ vienlaikus nevar 
+būt attiecīgi $n-1$ un $n-2$ mazāko naturālo skaitļu permutācijas.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.12.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Mazākā iespējamā vērtība ir $a=\\frac{7}{2}$. Ekvivalenti pārveidosim 
+doto nevienādību, atdalot pilnos kvadrātus:
+
+$$
+\\begin{gathered}
+\\left(x^{2}-x+\\frac{1}{4}\\right)+\\left(y^{2}-2 y+1\\right)+\\left(z^{2}-3 z+\\frac{9}{4}\\right) \\geq \\frac{1}{4}+1+\\frac{9}{4}-a \\\\
+\\left(x-\\frac{1}{2}\\right)^{2}+(y-1)^{2}+\\left(z-\\frac{3}{2}\\right)^{2} \\geq \\frac{7}{2}-a
+\\end{gathered}
+$$
+
+Vispirms pamatosim, ka $a$ nevar būt mazāks kā $\\frac{7}{2}$. 
+Ievietosim nevienādībā $x=\\frac{1}{2}, y=1, z=\\frac{3}{2}$, iegūstot, 
+ka nevienādības kreisā puse kļūst vienāda ar $0$, tātad 
+$a \\geq \\frac{7}{2}$.
+
+Ja $a=\\frac{7}{2}$, tad nevienādība izpildās visiem reāliem $x, y$ un $z$, 
+jo triju kvadrātu summa noteikt ir nenegatīvs skaitlis. Tātad 
+$a=\\frac{7}{2}$ ir mazākā iespējamā vērtība, ar kuru izpildās dotā 
+nevienādība visiem reāliem skaitliem $x, y, z$.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Mazākā iespējamā vērtība ir $a=\\frac{7}{2}$. Ekvivalenti pārveidosim 
+doto nevienādību, atdalot pilnos kvadrātus:</p>
+<p>$$
+\\begin{gathered}
+\\left(x^{2}-x+\\frac{1}{4}\\right)+\\left(y^{2}-2 y+1\\right)+\\left(z^{2}-3 z+\\frac{9}{4}\\right) \\geq \\frac{1}{4}+1+\\frac{9}{4}-a \\
+\\left(x-\\frac{1}{2}\\right)^{2}+(y-1)^{2}+\\left(z-\\frac{3}{2}\\right)^{2} \\geq \\frac{7}{2}-a
+\\end{gathered}
+$$</p>
+<p>Vispirms pamatosim, ka $a$ nevar būt mazāks kā $\\frac{7}{2}$. 
+Ievietosim nevienādībā $x=\\frac{1}{2}, y=1, z=\\frac{3}{2}$, iegūstot, 
+ka nevienādības kreisā puse kļūst vienāda ar $0$, tātad 
+$a \\geq \\frac{7}{2}$.</p>
+<p>Ja $a=\\frac{7}{2}$, tad nevienādība izpildās visiem reāliem $x, y$ un $z$, 
+jo triju kvadrātu summa noteikt ir nenegatīvs skaitlis. Tātad 
+$a=\\frac{7}{2}$ ir mazākā iespējamā vērtība, ar kuru izpildās dotā 
+nevienādība visiem reāliem skaitliem $x, y, z$.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.12.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Šahistus apzīmējam ar punktiem. Divus šahistus savienosim ar nepārtrauktu līniju, ja tie ir izspēēejuši partiju, bet ar pārtrauktu līiiju, ja tie nav izspēlējuši partiju.
+
+**(A)** Nē, var gadīties, ka nav tādu trīs šahistu, kas izspēlējuši vai nu 3, vai nevienu partiju, piemēram, skat. 13. att., kur nav neviena trijstūra, kuram visas malas ir viena veida līnijas.
+
+![](LV.NOL.2023.12.2A.png)
+
+
+**(B)** Pierādīsim, ka noteikti var atrast tādus trīs šahistus, 
+kas kopā ir izspēlējuši vai nu 3 partijas, vai nevienu partiju, 
+tas ir, ka var atrast tādu trijstūri, kuram visas malas ir viena 
+veida līnijas.
+
+Pieṇemsim, ka nav neviena šāda trijstūra. Aplūkojam punktu $A$. 
+Tā kā no tā iziet $5$ nogriežṇi, tad vismaz trīs no tiem ir viena 
+veida (pēc Dirihlē principa). Nezaudējot vispārīgumu, uzskatīsim, 
+ka nogriežṇi $AB, AC, AD$ ir nepārtrauktas līnijas. 
+Tad $BC$ un $CD$ jābūt pārtrauktām līnijām, bet tādā gadījumā 
+trijstūrim $ABD$ vai $BCD$ visas malas būs viena veida līnijas 
+(skat. 14. att.). Iegūta pretruna ar pienēmumu.
+
+![](LV.NOL.2023.12.2B.png)
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Šahistus apzīmējam ar punktiem. Divus šahistus savienosim ar nepārtrauktu līniju, ja tie ir izspēēejuši partiju, bet ar pārtrauktu līiiju, ja tie nav izspēlējuši partiju.</p>
+<p><strong>(A)</strong> Nē, var gadīties, ka nav tādu trīs šahistu, kas izspēlējuši vai nu 3, vai nevienu partiju, piemēram, skat. 13. att., kur nav neviena trijstūra, kuram visas malas ir viena veida līnijas.</p>
+<p><img alt="" src="LV.NOL.2023.12.2A.png" /></p>
+<p><strong>(B)</strong> Pierādīsim, ka noteikti var atrast tādus trīs šahistus, 
+kas kopā ir izspēlējuši vai nu 3 partijas, vai nevienu partiju, 
+tas ir, ka var atrast tādu trijstūri, kuram visas malas ir viena 
+veida līnijas.</p>
+<p>Pieṇemsim, ka nav neviena šāda trijstūra. Aplūkojam punktu $A$. 
+Tā kā no tā iziet $5$ nogriežṇi, tad vismaz trīs no tiem ir viena 
+veida (pēc Dirihlē principa). Nezaudējot vispārīgumu, uzskatīsim, 
+ka nogriežṇi $AB, AC, AD$ ir nepārtrauktas līnijas. 
+Tad $BC$ un $CD$ jābūt pārtrauktām līnijām, bet tādā gadījumā 
+trijstūrim $ABD$ vai $BCD$ visas malas būs viena veida līnijas 
+(skat. 14. att.). Iegūta pretruna ar pienēmumu.</p>
+<p><img alt="" src="LV.NOL.2023.12.2B.png" />
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.12.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Trijstūri $ABC$ un $BCD$ ir vienādsānu trijstūri ($AB=AC$ pēc dotā 
+un $BC=BD$ kā rādiusi), turklāt leņķi pie pamata abiem trijstūriem 
+ir vienādi ($\\sphericalangle A C B$ ir kopīgs abiem trijstūriem, 
+skat. 15. att.). Tātad $\\triangle BCD \\sim \\triangle ABC$ 
+pēc pazīmes $\\ell \\ell$.
+
+Līdzīgos trijstūros atbilstošo malu garumi ir proporcionāli, tāpēc
+
+$$\\begin{aligned}
+\\frac{AB}{BC}= & \\frac{BC}{DC} \\quad \\Rightarrow \\quad 
+\\frac{AE+EB}{BC}=\\frac{BC}{AE+EB-AD} \\\\
+& (AE+EB)(AE+EB-AD)=BC^{2}
+\\end{aligned}$$
+
+Tā kā $BC=EB$ kā rādiusi, tad
+
+$$\\begin{gathered}
+AE^{2}+2AE \\cdot BC + BC^{2} - AD \\cdot AE - AD \\cdot BC=BC^{2} \\\\
+AE^{2}+2AE \\cdot BC = AD(AE+BC) \\\\
+2AE(AE+BC)-AE^{2}=AD(AE+BC)
+\\end{gathered}$$
+
+Dalot abas vienādības puses ar $(AE+BC)$, iegūstam, ka
+
+$$AD=2AE-\\frac{AE^{2}}{AE+BC} \\quad \\Rightarrow \\quad AD<2AE$$
+
+![](LV.NOL.2023.12.3A.png)
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Trijstūri $ABC$ un $BCD$ ir vienādsānu trijstūri ($AB=AC$ pēc dotā 
+un $BC=BD$ kā rādiusi), turklāt leņķi pie pamata abiem trijstūriem 
+ir vienādi ($\\sphericalangle A C B$ ir kopīgs abiem trijstūriem, 
+skat. 15. att.). Tātad $\\triangle BCD \\sim \\triangle ABC$ 
+pēc pazīmes $\\ell \\ell$.</p>
+<p>Līdzīgos trijstūros atbilstošo malu garumi ir proporcionāli, tāpēc</p>
+<p>$$\\begin{aligned}
+\\frac{AB}{BC}= &amp; \\frac{BC}{DC} \\quad \\Rightarrow \\quad 
+\\frac{AE+EB}{BC}=\\frac{BC}{AE+EB-AD} \\
+&amp; (AE+EB)(AE+EB-AD)=BC^{2}
+\\end{aligned}$$</p>
+<p>Tā kā $BC=EB$ kā rādiusi, tad</p>
+<p>$$\\begin{gathered}
+AE^{2}+2AE \\cdot BC + BC^{2} - AD \\cdot AE - AD \\cdot BC=BC^{2} \\
+AE^{2}+2AE \\cdot BC = AD(AE+BC) \\
+2AE(AE+BC)-AE^{2}=AD(AE+BC)
+\\end{gathered}$$</p>
+<p>Dalot abas vienādības puses ar $(AE+BC)$, iegūstam, ka</p>
+<p>$$AD=2AE-\\frac{AE^{2}}{AE+BC} \\quad \\Rightarrow \\quad AD&lt;2AE$$</p>
+<p><img alt="" src="LV.NOL.2023.12.3A.png" />
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.12.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Pienemsim pretējo, ka šādi skaitḷi eksistē un apzīmēsim tos attiecīgi ar $x$ un $x+1$, iegūstot vienādojumu $x(x+1)=27 n+11$.
+
+Pareizinot abas puses ar 4 un pieskaitot 1, iegūstam, ka
+
+$$\\begin{gathered}
+4 x^{2}+4 x+1=108 n+45 \\\\
+(2 x+1)^{2}=108 n+45
+\\end{gathered}$$
+
+Vienādojuma labā puse dalās ar 9 , tātad $2 x+1$ dalās ar 3 . Izdalot abas vienādojuma puses ar 9, iegūstam, ka
+
+$$\\left(\\frac{2 x+1}{3}\\right)^{2}=12 n+5$$
+
+levērojam, ka, dalot vienādojuma labo pusi ar 3, tiek iegūts atlikums 2. Toties, dalot skaitla kvadrātu ar 3, var iegūt tikai atlikumu 0 vai 1. Tātad šim vienādojumam nav atrisinājuma un esam ieguvuši pretrunu. Līdz ar to nekādu divu secīgu naturālu skait|u reizinājums nav izsakāms formā $27 n+11$, kur $n$ - naturāls skaitlis.
+</text>
+
+
+<text lang="lv">"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pienemsim pretējo, ka šādi skaitḷi eksistē un apzīmēsim tos attiecīgi ar $x$ un $x+1$, iegūstot vienādojumu $x(x+1)=27 n+11$.</p>
+<p>Pareizinot abas puses ar 4 un pieskaitot 1, iegūstam, ka</p>
+<p>$$\\begin{gathered}
+4 x^{2}+4 x+1=108 n+45 \\
+(2 x+1)^{2}=108 n+45
+\\end{gathered}$$</p>
+<p>Vienādojuma labā puse dalās ar 9 , tātad $2 x+1$ dalās ar 3 . Izdalot abas vienādojuma puses ar 9, iegūstam, ka</p>
+<p>$$\\left(\\frac{2 x+1}{3}\\right)^{2}=12 n+5$$</p>
+<p>levērojam, ka, dalot vienādojuma labo pusi ar 3, tiek iegūts atlikums 2. Toties, dalot skaitla kvadrātu ar 3, var iegūt tikai atlikumu 0 vai 1. Tātad šim vienādojumam nav atrisinājuma un esam ieguvuši pretrunu. Līdz ar to nekādu divu secīgu naturālu skait|u reizinājums nav izsakāms formā $27 n+11$, kur $n$ - naturāls skaitlis.
+</text></p>
+<p><text lang="lv"></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.12.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Pieņemsim pretējo, ka šādi skaitḷi eksistē un apzīmēsim 
+tos attiecīgi ar $x$ un $x+1$, iegūstot vienādojumu $x(x+1)=27 n+11$.
+
+Ja $x$ vai $x+1$ dalās ar $3$, tad vienādojuma kreisā puse dalās 
+ar $3$, bet labā nedalās, tātad vienādojumam nav atrisinājuma. 
+No tā iegūstam, ka, $x$ dalot ar $3$, nevar iegūt atlikumu $0$ vai $2$, 
+tātad tiek iegūts atlikums $1$. Tātad $x$ var izeikt formā $x=3k+1$. 
+Ievietojot doto vienādību vienādojumā, iegūstam
+
+$$\\begin{gathered}
+(3 k+1)(3 k+2)=27 n+11 \\\\
+9 k^{2}+9 k+2=27 n+11 \\\\
+9 k^{2}+9 k=27 n+9
+\\end{gathered}$$
+
+Abas vienādojuma puses izdalot ar $9$ un sadalot reizinātājos, iegūstam
+
+$$k(k+1)=3n+1$$
+
+Tā kā vienādojuma labā puse nedalās ar $3$, tad analogi iepriekš 
+secinātajam, iegūstam, ka, $k$ dalot ar $3$, var iegūt tikai atlikumu 
+$1$ (citādi vienādojuma kreisā puse dalīsies ar $3$). Līdz ar to, 
+apzīmējot $k=3m+1$, iegūstam vienādojumu
+
+$$\\begin{gathered}
+(3 m+1)(3 m+2)=3 n+1 \\\\
+9 m^{2}+9 m=3 n-1
+\\end{gathered}$$
+
+Ievērojam, ka vienādojuma kreisā puse dalās ar $3$, bet labā - 
+nedalās. Tātad šim vienādojumam nav atrisinājuma un esam ieguvuši 
+pretrunu. Līdz ar to nekādu divu secīgu naturālu skaitlu 
+reizinājums nav izsakāms formā $27n+11$, kur $n$ - naturāls skaitlis.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pieņemsim pretējo, ka šādi skaitḷi eksistē un apzīmēsim 
+tos attiecīgi ar $x$ un $x+1$, iegūstot vienādojumu $x(x+1)=27 n+11$.</p>
+<p>Ja $x$ vai $x+1$ dalās ar $3$, tad vienādojuma kreisā puse dalās 
+ar $3$, bet labā nedalās, tātad vienādojumam nav atrisinājuma. 
+No tā iegūstam, ka, $x$ dalot ar $3$, nevar iegūt atlikumu $0$ vai $2$, 
+tātad tiek iegūts atlikums $1$. Tātad $x$ var izeikt formā $x=3k+1$. 
+Ievietojot doto vienādību vienādojumā, iegūstam</p>
+<p>$$\\begin{gathered}
+(3 k+1)(3 k+2)=27 n+11 \\
+9 k^{2}+9 k+2=27 n+11 \\
+9 k^{2}+9 k=27 n+9
+\\end{gathered}$$</p>
+<p>Abas vienādojuma puses izdalot ar $9$ un sadalot reizinātājos, iegūstam</p>
+<p>$$k(k+1)=3n+1$$</p>
+<p>Tā kā vienādojuma labā puse nedalās ar $3$, tad analogi iepriekš 
+secinātajam, iegūstam, ka, $k$ dalot ar $3$, var iegūt tikai atlikumu 
+$1$ (citādi vienādojuma kreisā puse dalīsies ar $3$). Līdz ar to, 
+apzīmējot $k=3m+1$, iegūstam vienādojumu</p>
+<p>$$\\begin{gathered}
+(3 m+1)(3 m+2)=3 n+1 \\
+9 m^{2}+9 m=3 n-1
+\\end{gathered}$$</p>
+<p>Ievērojam, ka vienādojuma kreisā puse dalās ar $3$, bet labā - 
+nedalās. Tātad šim vienādojumam nav atrisinājuma un esam ieguvuši 
+pretrunu. Līdz ar to nekādu divu secīgu naturālu skaitlu 
+reizinājums nav izsakāms formā $27n+11$, kur $n$ - naturāls skaitlis.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.12.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+*Atbilde.* Mazākais gājienu skaits ir $11$.
+
+Parādīsim, ka ar $11$ gājieniem pietiek. Pirmajā gājienā apēdam pa 
+$1$ konfektei no kastēm, kurās ir nepāra skaits konfekšu. 
+Rezultātā visās kastēs konfekšu skaits dalās ar $2$. Otrajā gājienā 
+apēdam pa $2$ konfektēm no tām kastēm, kurās konfekšu skaits 
+nedalās ar $4$. Rezultātā visās kastēs konfekšu skaits dalās ar $4$. 
+Trešajā gājienā apēdam pa $4$ konfektēm no tām kastēm, kurās 
+konfekšu skaits nedalās ar $8$. Rezultātā visās kastēs konfekšu 
+skaits dalās ar $8$. Līdzīgi turpinot, pēc $11$ gājieniem konfekšu 
+skaits visās kastēs dalās ar $2^{11}=2048$. Tā kā nevienā kastē 
+konfekšu skaits nepārsniedz $2048$, tad šajā brīdī tas ir $0$.
+
+Pamatosim, ka ar $10$ gājieniem nepietiek. Sākumā visās kastēs ir 
+dažāds skaits konfekšu. Līdz ar to pēc pirmā gājiena vienāds 
+konfekšu skaits var būt lielākais $2$ kastēs, pēc otrā gājiena - 
+lielākais $2+2=4$ kastēs, pēc trešā gājiena lielākais $4+4=8$ 
+kastēs, $\\ldots$, pēc 10. gājiena - lielākais $2^{10}=1024$ kastēs. 
+Tāpēc pēc 10.gājiena visas $2023$ kastes nevar būt tukšas.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><em>Atbilde.</em> Mazākais gājienu skaits ir $11$.</p>
+<p>Parādīsim, ka ar $11$ gājieniem pietiek. Pirmajā gājienā apēdam pa 
+$1$ konfektei no kastēm, kurās ir nepāra skaits konfekšu. 
+Rezultātā visās kastēs konfekšu skaits dalās ar $2$. Otrajā gājienā 
+apēdam pa $2$ konfektēm no tām kastēm, kurās konfekšu skaits 
+nedalās ar $4$. Rezultātā visās kastēs konfekšu skaits dalās ar $4$. 
+Trešajā gājienā apēdam pa $4$ konfektēm no tām kastēm, kurās 
+konfekšu skaits nedalās ar $8$. Rezultātā visās kastēs konfekšu 
+skaits dalās ar $8$. Līdzīgi turpinot, pēc $11$ gājieniem konfekšu 
+skaits visās kastēs dalās ar $2^{11}=2048$. Tā kā nevienā kastē 
+konfekšu skaits nepārsniedz $2048$, tad šajā brīdī tas ir $0$.</p>
+<p>Pamatosim, ka ar $10$ gājieniem nepietiek. Sākumā visās kastēs ir 
+dažāds skaits konfekšu. Līdz ar to pēc pirmā gājiena vienāds 
+konfekšu skaits var būt lielākais $2$ kastēs, pēc otrā gājiena - 
+lielākais $2+2=4$ kastēs, pēc trešā gājiena lielākais $4+4=8$ 
+kastēs, $\\ldots$, pēc 10. gājiena - lielākais $2^{10}=1024$ kastēs. 
+Tāpēc pēc 10.gājiena visas $2023$ kastes nevar būt tukšas.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.5.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Prasīto var izdarīt, kā parādīts 2. att., kur katru trīs pēc kārtas esošu 
+skaitļu summa ir $51$.
+
+![](LV.NOL.2023.5.1A.png){ width=300px }
+
+Paskaidrosim, kā šos skaitlus var atrast. Aplūkojam četras rūtiņas pēc kārtas, 
+kurās ierakstīti skaitli $x ; a ; b$ un $y$ (skat. 3. att.).
+
+![](LV.NOL.2023.5.1B.png){ width=150px }
+
+Tā kā katrās trijās blakus rūtiṇās skaitļu summa ir viena un tā pati, 
+tad $x+a+b=a+b+y$, tātad $x=y$ un rūtiṇās $x$ un $y$ jābūt ierakstītam 
+vienam un tam pašam skaitlim. Tātad rūtiṇās ierakstītie skaitḷi atkārtojas 
+ar periodu $3$ (skat. 4.att.), kur $n$ ir kāds nezināms skaitlis 
+(visur viens un tas pats).
+
+![](LV.NOL.2023.5.1C.png){ width=300px }
+
+Ja mēs noṇemam nost pašu pēdējo skaitli $19$, tad mēs iegūstam, ka četros 
+trīs rūtiņu blokos $(19;20;n)$ kopā skaitlu summa ir $223-19=204$, 
+tātad vienā šādā blokā $(19;20;n)$ skaitļu summa ir $204:4=51$. 
+Tātad skaitļa $n$ vietā jāraksta $51-19-21=12$.
+</text>
+
+
+
+<text lang="en">
+## Solution
+
+The required solution can be achieved as shown in Figure 2, where the sum 
+of every three consecutive numbers is $51$.
+
+![](LV.NOL.2023.5.1A.png){ width=300px }
+
+Let's explain how these numbers can be found. Consider four consecutive 
+cells that contain the numbers $x;a;b$ and $y$ (see Figure 3).
+
+![](LV.NOL.2023.5.1B.png){ width=150px }
+
+Since the sum of the numbers in any three consecutive cells is the same, 
+we have $x+a+b=a+b+y$, which implies $x=y$, and thus the numbers $x$ and 
+$y$ must be the same. Therefore, the numbers written in the cells repeat 
+with a period of $3$ (see Figure 4), where $n$ is an unknown number 
+(the same everywhere).
+
+![](LV.NOL.2023.5.1C.png){ width=300px }
+
+If we remove the very last number $19$, we find that in four blocks of 
+three cells $(19;20;n)$, the total sum of the numbers is $223-19=204$. 
+Hence, the sum of the numbers in one such block $(19;20;n)$ is $204:4=51$. 
+Therefore, the number $n$ must be $51-19-20=12$.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Prasīto var izdarīt, kā parādīts 2. att., kur katru trīs pēc kārtas esošu 
+skaitļu summa ir $51$.</p>
+<p><img alt="" src="LV.NOL.2023.5.1A.png" />{ width=300px }</p>
+<p>Paskaidrosim, kā šos skaitlus var atrast. Aplūkojam četras rūtiņas pēc kārtas, 
+kurās ierakstīti skaitli $x ; a ; b$ un $y$ (skat. 3. att.).</p>
+<p><img alt="" src="LV.NOL.2023.5.1B.png" />{ width=150px }</p>
+<p>Tā kā katrās trijās blakus rūtiṇās skaitļu summa ir viena un tā pati, 
+tad $x+a+b=a+b+y$, tātad $x=y$ un rūtiṇās $x$ un $y$ jābūt ierakstītam 
+vienam un tam pašam skaitlim. Tātad rūtiṇās ierakstītie skaitḷi atkārtojas 
+ar periodu $3$ (skat. 4.att.), kur $n$ ir kāds nezināms skaitlis 
+(visur viens un tas pats).</p>
+<p><img alt="" src="LV.NOL.2023.5.1C.png" />{ width=300px }</p>
+<p>Ja mēs noṇemam nost pašu pēdējo skaitli $19$, tad mēs iegūstam, ka četros 
+trīs rūtiņu blokos $(19;20;n)$ kopā skaitlu summa ir $223-19=204$, 
+tātad vienā šādā blokā $(19;20;n)$ skaitļu summa ir $204:4=51$. 
+Tātad skaitļa $n$ vietā jāraksta $51-19-21=12$.
+</text></p>
+<p><text lang="en"></p>
+<h2>Solution</h2>
+<p>The required solution can be achieved as shown in Figure 2, where the sum 
+of every three consecutive numbers is $51$.</p>
+<p><img alt="" src="LV.NOL.2023.5.1A.png" />{ width=300px }</p>
+<p>Let's explain how these numbers can be found. Consider four consecutive 
+cells that contain the numbers $x;a;b$ and $y$ (see Figure 3).</p>
+<p><img alt="" src="LV.NOL.2023.5.1B.png" />{ width=150px }</p>
+<p>Since the sum of the numbers in any three consecutive cells is the same, 
+we have $x+a+b=a+b+y$, which implies $x=y$, and thus the numbers $x$ and 
+$y$ must be the same. Therefore, the numbers written in the cells repeat 
+with a period of $3$ (see Figure 4), where $n$ is an unknown number 
+(the same everywhere).</p>
+<p><img alt="" src="LV.NOL.2023.5.1C.png" />{ width=300px }</p>
+<p>If we remove the very last number $19$, we find that in four blocks of 
+three cells $(19;20;n)$, the total sum of the numbers is $223-19=204$. 
+Hence, the sum of the numbers in one such block $(19;20;n)$ is $204:4=51$. 
+Therefore, the number $n$ must be $51-19-20=12$.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.5.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums 
+
+**(A)** Jā, piemēram, skat. 5. att., kur ar punktiem attēlotas mājiņas, 
+bet ar līnijām attēlotas taciṇas un pie katra punkta pierakstīts no tā 
+izejošo līniju skaits.
+
+**(B)** Pamatosim, ka tas nav iespējams. Tā kā katrai taciņai ir divi gali, 
+tad kopējam taciṇu galu skaitam ir jābūt pāra skaitlim, bet pēc 
+dotā iegūstam, ka ir $1+2+2+2+2+3+4+5=21$ taciṇu gali. Tā kā $21$ 
+ir nepāra skaitlis, tad prasītais nav iespējams.
+
+![](LV.NOL.2023.5.2A.png){ width=200px }
+</text>
+
+
+<text lang="en">
+## Solution
+
+**(A)** Yes, for example, see Fig. 5, where dots represent houses, lines 
+represent paths, and the number of lines emanating from each point is 
+noted next to each point.
+
+**(B)** Let us show that this is not possible. Since each path has two 
+endpoints, the total number of path ends must be an even number. 
+From the given data, we get that there are $1+2+2+2+2+3+4+5=21$ 
+endpoints. Since $21$ is an odd number, the required configuration 
+is not possible.
+
+![](LV.NOL.2023.5.2A.png){ width=200px }
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Jā, piemēram, skat. 5. att., kur ar punktiem attēlotas mājiņas, 
+bet ar līnijām attēlotas taciṇas un pie katra punkta pierakstīts no tā 
+izejošo līniju skaits.</p>
+<p><strong>(B)</strong> Pamatosim, ka tas nav iespējams. Tā kā katrai taciņai ir divi gali, 
+tad kopējam taciṇu galu skaitam ir jābūt pāra skaitlim, bet pēc 
+dotā iegūstam, ka ir $1+2+2+2+2+3+4+5=21$ taciṇu gali. Tā kā $21$ 
+ir nepāra skaitlis, tad prasītais nav iespējams.</p>
+<p><img alt="" src="LV.NOL.2023.5.2A.png" />{ width=200px }
+</text></p>
+<p><text lang="en"></p>
+<h2>Solution</h2>
+<p><strong>(A)</strong> Yes, for example, see Fig. 5, where dots represent houses, lines 
+represent paths, and the number of lines emanating from each point is 
+noted next to each point.</p>
+<p><strong>(B)</strong> Let us show that this is not possible. Since each path has two 
+endpoints, the total number of path ends must be an even number. 
+From the given data, we get that there are $1+2+2+2+2+3+4+5=21$ 
+endpoints. Since $21$ is an odd number, the required configuration 
+is not possible.</p>
+<p><img alt="" src="LV.NOL.2023.5.2A.png" />{ width=200px }
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.5.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Skat. 7. att.
+
+![](LV.NOL.2023.5.3A.png){ width=200px }
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Skat. 7. att.</p>
+<p><img alt="" src="LV.NOL.2023.5.3A.png" />{ width=200px }
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.5.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Prasīto var izdarīt šādi: $174=29+58+87$. Pārbaudām, ka katru divu 
+šo skaitļu summa dalās ar trešo skaitli:
+
+$$\\begin{aligned}
+& \\circ \\quad(29+58): 87=87: 87=1 \\\\
+& \\circ \\quad(29+87): 58=116: 58=2 \\\\
+& \\circ \\quad(58+87): 29=145: 29=5
+\\end{aligned}$$
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Prasīto var izdarīt šādi: $174=29+58+87$. Pārbaudām, ka katru divu 
+šo skaitļu summa dalās ar trešo skaitli:</p>
+<p>$$\\begin{aligned}
+&amp; \\circ \\quad(29+58): 87=87: 87=1 \\
+&amp; \\circ \\quad(29+87): 58=116: 58=2 \\
+&amp; \\circ \\quad(58+87): 29=145: 29=5
+\\end{aligned}$$
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.5.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Nē, tas nav iespējams. Ievērosim, ka sākumā ir dota viena monēta 
+un ar katru darbību monētu skaits palielinās par $4$ monētām 
+(ja ievieto $1$ sarkanu monētu, tad izdod $5$ zilas monētas) 
+vai $2$ monētām (ja ievieto $1$ zilu monētu, tad izdod $3$ sarkanas 
+monētas), tātad kopējais monētu skaits vienmēr būs nepāra skaitlis. 
+Bet, ja zilās un sarkanās monētas būtu vienādā skaitā, 
+tad kopējais monētu skaits būtu pāra skaitlis. Tātad prasītais nav iespējams.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Nē, tas nav iespējams. Ievērosim, ka sākumā ir dota viena monēta 
+un ar katru darbību monētu skaits palielinās par $4$ monētām 
+(ja ievieto $1$ sarkanu monētu, tad izdod $5$ zilas monētas) 
+vai $2$ monētām (ja ievieto $1$ zilu monētu, tad izdod $3$ sarkanas 
+monētas), tātad kopējais monētu skaits vienmēr būs nepāra skaitlis. 
+Bet, ja zilās un sarkanās monētas būtu vienādā skaitā, 
+tad kopējais monētu skaits būtu pāra skaitlis. Tātad prasītais nav iespējams.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.6.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Der vērtības $x=1$; $y=5$ un $z=2$. Ar šīm vērtībām vienādība ir patiesa, jo
+
+$$2+\\frac{1}{1+\\frac{1}{5+\\frac{1}{2}}}=2+\\frac{1}{1+\\frac{2}{11}}=2+\\frac{1}{1 \\frac{2}{11}}=2+\\frac{11}{13}=2 \\frac{11}{13}=\\frac{37}{13}$$
+
+*Piezīme.* Parādīsim, kā var iegūt prasītās vērtības. 
+Ievērojam, ka $\\frac{37}{13}=2 \\frac{11}{13}$, tātad 
+$\\frac{1}{x+\\frac{1}{y+\\frac{1}{Z}}}=\\frac{11}{13}$, no kā iegūstam, 
+ka $x+\\frac{1}{y+\\frac{1}{z}}=\\frac{13}{11}$. 
+Tā kā $\\frac{13}{11}=1 \\frac{2}{11}$, tad $x=1$ un $\\frac{1}{y+\\frac{1}{z}}=\\frac{2}{11}$, 
+no kā iegūstam, ka $y+\\frac{1}{z}=\\frac{11}{2}$. 
+Ievērojot, ka $\\frac{11}{2} = 5\\frac{1}{2}$, iegūstam, ka $y=5$ un $z=2$.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Der vērtības $x=1$; $y=5$ un $z=2$. Ar šīm vērtībām vienādība ir patiesa, jo</p>
+<p>$$2+\\frac{1}{1+\\frac{1}{5+\\frac{1}{2}}}=2+\\frac{1}{1+\\frac{2}{11}}=2+\\frac{1}{1 \\frac{2}{11}}=2+\\frac{11}{13}=2 \\frac{11}{13}=\\frac{37}{13}$$</p>
+<p><em>Piezīme.</em> Parādīsim, kā var iegūt prasītās vērtības. 
+Ievērojam, ka $\\frac{37}{13}=2 \\frac{11}{13}$, tātad 
+$\\frac{1}{x+\\frac{1}{y+\\frac{1}{Z}}}=\\frac{11}{13}$, no kā iegūstam, 
+ka $x+\\frac{1}{y+\\frac{1}{z}}=\\frac{13}{11}$. 
+Tā kā $\\frac{13}{11}=1 \\frac{2}{11}$, tad $x=1$ un $\\frac{1}{y+\\frac{1}{z}}=\\frac{2}{11}$, 
+no kā iegūstam, ka $y+\\frac{1}{z}=\\frac{11}{2}$. 
+Ievērojot, ka $\\frac{11}{2} = 5\\frac{1}{2}$, iegūstam, ka $y=5$ un $z=2$.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.6.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** Pamatosim, ka tas nav iespējams. Tā kā katrai taciṇai ir 
+divi gali, tad kopējam taciṇu galu skaitam ir jābūt pāra skaitlim, 
+bet no dotā iegūstam, ka $2+2+2+2+2+3+3+3+3+7=29$ taciņu gali. 
+Tā kā $29$ ir nepāra skaitlis, tad prasītais nav iespējams.
+
+**(B)** Jā, piemēram, skat. 8. att., kur ar punktiem attēlotas mājiņas, 
+bet ar līnijām attēlotas taciṇas un pie katra punkta pierakstīts no 
+tā izejošo līniju skaits.
+
+![](LV.NOL.2023.6.2A.png){ width=200px }
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Pamatosim, ka tas nav iespējams. Tā kā katrai taciṇai ir 
+divi gali, tad kopējam taciṇu galu skaitam ir jābūt pāra skaitlim, 
+bet no dotā iegūstam, ka $2+2+2+2+2+3+3+3+3+7=29$ taciņu gali. 
+Tā kā $29$ ir nepāra skaitlis, tad prasītais nav iespējams.</p>
+<p><strong>(B)</strong> Jā, piemēram, skat. 8. att., kur ar punktiem attēlotas mājiņas, 
+bet ar līnijām attēlotas taciṇas un pie katra punkta pierakstīts no 
+tā izejošo līniju skaits.</p>
+<p><img alt="" src="LV.NOL.2023.6.2A.png" />{ width=200px }
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.6.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Skat., piemēram, 10. att. vai 11. att.
+
+![](LV.NOL.2023.6.3A.png){ width=250px }
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Skat., piemēram, 10. att. vai 11. att.</p>
+<p><img alt="" src="LV.NOL.2023.6.3A.png" />{ width=250px }
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.6.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** Jā, var šādi $72=12+24+36$. Pārbaudām, vai katru divu šo 
+skait|u summa dalās ar trešo skaitli:
+
+$$\\begin{aligned}
+& \\circ \\quad(12+24): 36=36: 36=1 \\\\
+& \\circ \\quad(12+36): 24=48: 24=2 \\\\
+& \\circ \\quad(24+36): 12=60: 12=5
+\\end{aligned}$$
+
+**(B)** Pamatosim, ka prasītais nav iespējams. Ja divu skaitļu 
+$a$ un $b$ summa dalās ar kādu skaitli $n$, tad arī visu trīs 
+šo skaitlu summa $a+b+n$ dalās ar skaitli $n$. Tātad visu trīs 
+skaitļu summai jeb $73$ jādalās ar jebkuru no trīs saskaitāmajiem. 
+Bet skaitlis $73$ ir pirmskaitlis, kas dalās tikai ar $1$ un $73$. 
+Tātad šie trīs dažādie skaiți var pieṇemt tikai vērtības $1$ vai 
+$73$, kas nav iespējams.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Jā, var šādi $72=12+24+36$. Pārbaudām, vai katru divu šo 
+skait|u summa dalās ar trešo skaitli:</p>
+<p>$$\\begin{aligned}
+&amp; \\circ \\quad(12+24): 36=36: 36=1 \\
+&amp; \\circ \\quad(12+36): 24=48: 24=2 \\
+&amp; \\circ \\quad(24+36): 12=60: 12=5
+\\end{aligned}$$</p>
+<p><strong>(B)</strong> Pamatosim, ka prasītais nav iespējams. Ja divu skaitļu 
+$a$ un $b$ summa dalās ar kādu skaitli $n$, tad arī visu trīs 
+šo skaitlu summa $a+b+n$ dalās ar skaitli $n$. Tātad visu trīs 
+skaitļu summai jeb $73$ jādalās ar jebkuru no trīs saskaitāmajiem. 
+Bet skaitlis $73$ ir pirmskaitlis, kas dalās tikai ar $1$ un $73$. 
+Tātad šie trīs dažādie skaiți var pieṇemt tikai vērtības $1$ vai 
+$73$, kas nav iespējams.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.6.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** Jā, var, piemēram, šādi:
+
+$$17 \\rightarrow 34 \\rightarrow 4 \\rightarrow 8 \\rightarrow 
+16 \\rightarrow 1$$
+
+**(B)** Nē, nevar. Sākotnējais skaitlis $17$ nedalās ar $3$. 
+Ja skaitlis nedalās ar $3$, tad, izpildot dotās darbības, 
+iegūtais skaitlis nedalīsies ar $3$:
+
+- ja skaitli, kas nedalās ar $3$, reizina ar $2$, tad arī 
+  iegūtais reizinājums nedalīsies ar $3$;
+- ja skaitlim, kas nedalās ar $3$, izsvītro ciparu $0,3,6,9$, 
+  tad arī iegūtais skaitlis nedalīsies ar $3$ (sākotnējā skaitla 
+  ciparu summa nedalās ar $3$ (dalāmības pazīme ar $3$), ja 
+  izsvītros $0,3,6,9$, tad arī iegūs ciparu summu, kas nedalās ar $3$).
+
+Tātad arī pēc vairākām operācijām iegūtais skaitlis nedalīsies 
+ar $3$. Tas nozīmē, ka skaitli $15$ iegūt nevar, jo tas dalās ar $3$.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Jā, var, piemēram, šādi:</p>
+<p>$$17 \\rightarrow 34 \\rightarrow 4 \\rightarrow 8 \\rightarrow 
+16 \\rightarrow 1$$</p>
+<p><strong>(B)</strong> Nē, nevar. Sākotnējais skaitlis $17$ nedalās ar $3$. 
+Ja skaitlis nedalās ar $3$, tad, izpildot dotās darbības, 
+iegūtais skaitlis nedalīsies ar $3$:</p>
+<ul>
+<li>ja skaitli, kas nedalās ar $3$, reizina ar $2$, tad arī 
+  iegūtais reizinājums nedalīsies ar $3$;</li>
+<li>ja skaitlim, kas nedalās ar $3$, izsvītro ciparu $0,3,6,9$, 
+  tad arī iegūtais skaitlis nedalīsies ar $3$ (sākotnējā skaitla 
+  ciparu summa nedalās ar $3$ (dalāmības pazīme ar $3$), ja 
+  izsvītros $0,3,6,9$, tad arī iegūs ciparu summu, kas nedalās ar $3$).</li>
+</ul>
+<p>Tātad arī pēc vairākām operācijām iegūtais skaitlis nedalīsies 
+ar $3$. Tas nozīmē, ka skaitli $15$ iegūt nevar, jo tas dalās ar $3$.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.7.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Atrisinājums. Jā, var, skat. attēlu.
+
+![](LV.NOL.2023.7.1A.png){ width=150px }
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Atrisinājums. Jā, var, skat. attēlu.</p>
+<p><img alt="" src="LV.NOL.2023.7.1A.png" />{ width=150px }
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.7.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** Jā, var. Sadalām $90$ lampiņas $15$ grupās pa $6$ 
+lampiṇām katrā grupā. Katras grupas katras divas lampiṇas 
+savienojam ar vadu (skat. 14.att., kur lampiṇas attēlotas 
+ar punktiem un vadi ar nogriežṇiem, kas šos punktus savieno). 
+Šādā veidā katra no $90$ lampinām būs savienota ar tieši $5$ 
+citām lampiņām.
+
+![](LV.NOL.2023.7.2A.png){ width=150px }
+
+
+**(B)** Tā kā no katras lampiṇas iziet $5$ vadi, tad vadu galu 
+skaits ir $73 \\cdot 5=365$. Bet katram vadam ir $2$ gali, tāpēc 
+kopējais galu skaits nevar būt nepāra skaitlis. Tāpēc $73$ 
+lampiņas ar vadiem nevar savienot savā starpā tā, lai katra no 
+tām būtu savienota tieši ar $5$ citām lampiņām.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Jā, var. Sadalām $90$ lampiņas $15$ grupās pa $6$ 
+lampiṇām katrā grupā. Katras grupas katras divas lampiṇas 
+savienojam ar vadu (skat. 14.att., kur lampiṇas attēlotas 
+ar punktiem un vadi ar nogriežṇiem, kas šos punktus savieno). 
+Šādā veidā katra no $90$ lampinām būs savienota ar tieši $5$ 
+citām lampiņām.</p>
+<p><img alt="" src="LV.NOL.2023.7.2A.png" />{ width=150px }</p>
+<p><strong>(B)</strong> Tā kā no katras lampiṇas iziet $5$ vadi, tad vadu galu 
+skaits ir $73 \\cdot 5=365$. Bet katram vadam ir $2$ gali, tāpēc 
+kopējais galu skaits nevar būt nepāra skaitlis. Tāpēc $73$ 
+lampiņas ar vadiem nevar savienot savā starpā tā, lai katra no 
+tām būtu savienota tieši ar $5$ citām lampiņām.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.7.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Novelkam nogriezni $BD$ (skat. 15.att.). No dotā izriet, ka 
+$\\sphericalangle DAB = \\sphericalangle ABC > \\sphericalangle ABD$. 
+Tā kā trijstūrī $ABD$ pret lielāku lenki atrodas garāka mala, 
+tad $BD > AD=3$.
+
+No trijstūra nevienādības trijstūrī $BCD$ iegūstam, ka 
+$DC>DB-BC>3-1=2$.
+
+![](LV.NOL.2023.7.3A.png){ width=150px }
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Novelkam nogriezni $BD$ (skat. 15.att.). No dotā izriet, ka 
+$\\sphericalangle DAB = \\sphericalangle ABC &gt; \\sphericalangle ABD$. 
+Tā kā trijstūrī $ABD$ pret lielāku lenki atrodas garāka mala, 
+tad $BD &gt; AD=3$.</p>
+<p>No trijstūra nevienādības trijstūrī $BCD$ iegūstam, ka 
+$DC&gt;DB-BC&gt;3-1=2$.</p>
+<p><img alt="" src="LV.NOL.2023.7.3A.png" />{ width=150px }
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.7.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Ir trīs skaitli, kam izpildās uzdevuma nosacījumi, šie skaitḷi ir 
+$1$; $2$ un $4$, jo $1^{2}=1^{3}=1$; $2^{2}=4$ un $2^{3}=8$ 
+visi ir vienciparu skaitli, un $4^{2}=16$ un $4^{3}=64$ 
+abi ir divciparu skaitļi. Pamatosim, ka citu derīgu $n$ 
+vērtību nav.
+
+Skaitlis $3$ neder, jo $3^{2}=9$, bet $3^{3}=27$.
+
+Skaitļu no $5$ līdz $9$ kvadrāti ir divciparu skaitli, jo 
+$5^{2}=25$ un $9^{2}=81$ abi ir divciparu, tātad arī skaitļu 
+$6$; $7$; $8$ kvadrāti ir divciparu skaitli. Šo skaitļu kubi ir 
+trīsciparu skaitļi, jo $5^{3}=125$ un $9^{3}=729$ abi ir 
+trīsciparu, tātad pa vidu esošo skaitļu kubi arī ir trīsciparu skaitļi.
+
+Skaitḷiem, kas lielāki nekā $9$, lai no skaitļa kvadrāta iegūtu skaitļa 
+kubu, tie jāreizina ar pašu skaitli, tātad vismaz ar $10$. Tādā gadījumā
+skaitḷa kuba ciparu skaits ir vismaz par $1$ lielāks nekā šī skaitļa 
+kvadrāta ciparu skaits.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Ir trīs skaitli, kam izpildās uzdevuma nosacījumi, šie skaitḷi ir 
+$1$; $2$ un $4$, jo $1^{2}=1^{3}=1$; $2^{2}=4$ un $2^{3}=8$ 
+visi ir vienciparu skaitli, un $4^{2}=16$ un $4^{3}=64$ 
+abi ir divciparu skaitļi. Pamatosim, ka citu derīgu $n$ 
+vērtību nav.</p>
+<p>Skaitlis $3$ neder, jo $3^{2}=9$, bet $3^{3}=27$.</p>
+<p>Skaitļu no $5$ līdz $9$ kvadrāti ir divciparu skaitli, jo 
+$5^{2}=25$ un $9^{2}=81$ abi ir divciparu, tātad arī skaitļu 
+$6$; $7$; $8$ kvadrāti ir divciparu skaitli. Šo skaitļu kubi ir 
+trīsciparu skaitļi, jo $5^{3}=125$ un $9^{3}=729$ abi ir 
+trīsciparu, tātad pa vidu esošo skaitļu kubi arī ir trīsciparu skaitļi.</p>
+<p>Skaitḷiem, kas lielāki nekā $9$, lai no skaitļa kvadrāta iegūtu skaitļa 
+kubu, tie jāreizina ar pašu skaitli, tātad vismaz ar $10$. Tādā gadījumā
+skaitḷa kuba ciparu skaits ir vismaz par $1$ lielāks nekā šī skaitļa 
+kvadrāta ciparu skaits.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.7.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** Nē, nevar. Ar katru gājienu visu krāsu lodīšu skaita 
+paritāte mainās (no pāra skaitļa uz nepāra skaitli un otrādi). 
+Tāpēc nevaram iegūt situāciju, ka divi lodīšu skaiti ir $0$ 
+(pāra skaitlis), bet viens skaits ir $1$ (nepāra skaitlis), 
+jo sākumā visu krāsu lodīšu skaits ir pāra skaitlis.
+
+**(B)** Jā, var. Ar trīs pēc kārtas sekojošiem gājieniem ṇemot 
+balta-sarkana (apzīmēsim ar *bs*), balta-zala (apzīmēsim ar *bz*), sarkana-zaḷa (apzīmēsim ar *sz*), katras krāsas lodīšu skaits 
+samazinās par $1$. Atkārtojot $9$ reizes šādu gājienu trijniekus, 
+iegūstam, ka kastē ir $1$ balta, $3$ sarkanas un $6$ zaḷas lodītes. 
+Tālāk ar gājieniem *sz*, *sz*, *bz* izveidojam situāciju, ka 
+kastē ir $2$ baltas, $2$ sarkanas un $3$ zaļas lodītes. To ar 
+gājieniem *bs*, *sz*, *bz*, *sz*, *bz*, *bs* pārveidojam par 
+situāciju, kad kastē ir $0$ baltas, $0$ sarkanas un $1$ zaļa lodīte.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Nē, nevar. Ar katru gājienu visu krāsu lodīšu skaita 
+paritāte mainās (no pāra skaitļa uz nepāra skaitli un otrādi). 
+Tāpēc nevaram iegūt situāciju, ka divi lodīšu skaiti ir $0$ 
+(pāra skaitlis), bet viens skaits ir $1$ (nepāra skaitlis), 
+jo sākumā visu krāsu lodīšu skaits ir pāra skaitlis.</p>
+<p><strong>(B)</strong> Jā, var. Ar trīs pēc kārtas sekojošiem gājieniem ṇemot 
+balta-sarkana (apzīmēsim ar <em>bs</em>), balta-zala (apzīmēsim ar <em>bz</em>), sarkana-zaḷa (apzīmēsim ar <em>sz</em>), katras krāsas lodīšu skaits 
+samazinās par $1$. Atkārtojot $9$ reizes šādu gājienu trijniekus, 
+iegūstam, ka kastē ir $1$ balta, $3$ sarkanas un $6$ zaḷas lodītes. 
+Tālāk ar gājieniem <em>sz</em>, <em>sz</em>, <em>bz</em> izveidojam situāciju, ka 
+kastē ir $2$ baltas, $2$ sarkanas un $3$ zaļas lodītes. To ar 
+gājieniem <em>bs</em>, <em>sz</em>, <em>bz</em>, <em>sz</em>, <em>bz</em>, <em>bs</em> pārveidojam par 
+situāciju, kad kastē ir $0$ baltas, $0$ sarkanas un $1$ zaļa lodīte.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.8.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+To var izdarīt, kā parādīts 17.att., kur katru četru pēc kārtas 
+ierakstītu skait|u summa ir $36$.
+
+![](LV.NOL.2023.8.1A.png){ width=400px }
+
+*Piezīme.* Paskaidrosim, kā šos skait!us var atrast. 
+Aplūkojam piecas rūtiņas pēc kārtas, kurās ierakstīti skaiți 
+$x;a;b;c$ un $y$ (skat. 18. att.).
+
+![](LV.NOL.2023.8.1B.png){ width=150px }
+
+Tā kā katrās četrās blakus rūtiņās skaitļu summa ir viena 
+un tā pati, tad $x+a+b+c=a+b+c+y$, tātad $x=y$ un rūtiņās 
+$x$ un $y$ jābūt ierakstītam vienam un tam pašam skaitlim. 
+Tātad rūtiṇās ierakstītie skaitḷi atkārtojas ar periodu $4$ 
+(skat. 19. att.), kur $m$ un $n$ ir kādi vēl nezināmi pirmskaitļi.
+
+![](LV.NOL.2023.8.1C.png){ width=400px }
+
+No tā, ka visu skaitļu summa ir $127$ iegūstam, ka 
+$4m+3n=127-(3+11) \\cdot 4=71$, no kā iegūstam, ka $n=(71-4 m):3$. 
+Aplūkosim dažas iespējamās pirmskaitļa $m$ vērtības, 
+līdz iegūsim derīgu $n$ vērtību:
+
+- ja $m=2$, tad $n=(71-8): 3=21$ (nav pirmskaitlis);
+- ja $m=3$, tad $n=(71-12): 3=19 \\frac{2}{3}$ 
+  (nav pirmskaitlis);
+- ja $m=5$, tad $n=(71-20): 3=51: 3=17$ 
+  (pirmskaitlis).
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>To var izdarīt, kā parādīts 17.att., kur katru četru pēc kārtas 
+ierakstītu skait|u summa ir $36$.</p>
+<p><img alt="" src="LV.NOL.2023.8.1A.png" />{ width=400px }</p>
+<p><em>Piezīme.</em> Paskaidrosim, kā šos skait!us var atrast. 
+Aplūkojam piecas rūtiņas pēc kārtas, kurās ierakstīti skaiți 
+$x;a;b;c$ un $y$ (skat. 18. att.).</p>
+<p><img alt="" src="LV.NOL.2023.8.1B.png" />{ width=150px }</p>
+<p>Tā kā katrās četrās blakus rūtiņās skaitļu summa ir viena 
+un tā pati, tad $x+a+b+c=a+b+c+y$, tātad $x=y$ un rūtiņās 
+$x$ un $y$ jābūt ierakstītam vienam un tam pašam skaitlim. 
+Tātad rūtiṇās ierakstītie skaitḷi atkārtojas ar periodu $4$ 
+(skat. 19. att.), kur $m$ un $n$ ir kādi vēl nezināmi pirmskaitļi.</p>
+<p><img alt="" src="LV.NOL.2023.8.1C.png" />{ width=400px }</p>
+<p>No tā, ka visu skaitļu summa ir $127$ iegūstam, ka 
+$4m+3n=127-(3+11) \\cdot 4=71$, no kā iegūstam, ka $n=(71-4 m):3$. 
+Aplūkosim dažas iespējamās pirmskaitļa $m$ vērtības, 
+līdz iegūsim derīgu $n$ vērtību:</p>
+<ul>
+<li>ja $m=2$, tad $n=(71-8): 3=21$ (nav pirmskaitlis);</li>
+<li>ja $m=3$, tad $n=(71-12): 3=19 \\frac{2}{3}$ 
+  (nav pirmskaitlis);</li>
+<li>ja $m=5$, tad $n=(71-20): 3=51: 3=17$ 
+  (pirmskaitlis).
+</text></li>
+</ul>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.8.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** Nē, nevar. Cilvēkus iedomāsimies kā punktus, 
+bet draudzības kā nogriežṇus, kas šos punktus savieno. 
+Tā kā no katra punkta iziet tieši $3$ nogriežṇi un katru 
+nogriezni ieskaitām divas reizes (nogrieznis $AB$ un $BA$ 
+ir viens un tas pats nogrieznis), tad kopējais nogriežņu 
+skaits ir $11 \\cdot 3: 2=16,5$. Iegūta pretruna, jo 
+nogriežṇu skaitam ir jābūt naturālam skaitlim.
+
+*Piezīme.* Pretrunu var iegūt arī, ja skaita nogriežṇu 
+galus - tā kā no katra punkta iziet $3$ nogriežṇi, tad 
+kopā ir $11 \\cdot 3=33$ nogriežṇu gali, bet katram 
+nogrieznim ir divi gali, tātad kopā jābūt pāra skaitam 
+nogriežṇu galu.
+
+**(B)** Jā, var gadīties, piemēram, skat. 20. att. 
+Dotajā piemērā dalībnieki sadalīti divās grupās pa 
+pieciem dalībniekiem tā, ka katrs pirmās grupas 
+dalībnieks draudzējas ar tieši trīs dalībniekiem 
+no otrās grupas, bet nedraudzējas ar nevienu savas 
+grupas dalībnieku. Tā kā starp jebkuriem trīs dalībniekiem 
+vismaz divi atrodas vienā grupā, tad tie savā starpā 
+nedraudzējas un uzdevuma nosacījumi izpildās.
+
+![](LV.NOL.2023.8.2A.png){ width=120px }
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Nē, nevar. Cilvēkus iedomāsimies kā punktus, 
+bet draudzības kā nogriežṇus, kas šos punktus savieno. 
+Tā kā no katra punkta iziet tieši $3$ nogriežṇi un katru 
+nogriezni ieskaitām divas reizes (nogrieznis $AB$ un $BA$ 
+ir viens un tas pats nogrieznis), tad kopējais nogriežņu 
+skaits ir $11 \\cdot 3: 2=16,5$. Iegūta pretruna, jo 
+nogriežṇu skaitam ir jābūt naturālam skaitlim.</p>
+<p><em>Piezīme.</em> Pretrunu var iegūt arī, ja skaita nogriežṇu 
+galus - tā kā no katra punkta iziet $3$ nogriežṇi, tad 
+kopā ir $11 \\cdot 3=33$ nogriežṇu gali, bet katram 
+nogrieznim ir divi gali, tātad kopā jābūt pāra skaitam 
+nogriežṇu galu.</p>
+<p><strong>(B)</strong> Jā, var gadīties, piemēram, skat. 20. att. 
+Dotajā piemērā dalībnieki sadalīti divās grupās pa 
+pieciem dalībniekiem tā, ka katrs pirmās grupas 
+dalībnieks draudzējas ar tieši trīs dalībniekiem 
+no otrās grupas, bet nedraudzējas ar nevienu savas 
+grupas dalībnieku. Tā kā starp jebkuriem trīs dalībniekiem 
+vismaz divi atrodas vienā grupā, tad tie savā starpā 
+nedraudzējas un uzdevuma nosacījumi izpildās.</p>
+<p><img alt="" src="LV.NOL.2023.8.2A.png" />{ width=120px }
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.8.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apzīmējam $AK$ un $MC$ krustpunktu ar $H$ (skat. 21.att.). 
+Tā kā $\\triangle KAC$ un $\\triangle ABC$ ir vienādsānu 
+trijstūri, tad $\\sphericalangle AKC=\\sphericalangle ACK=\\sphericalangle BAC=\\alpha$. 
+Nogrieznis $AH$ ir vienādsānu trijstūra $MAC$ augstums 
+pret pamatu, tātad arī bisektrise, tāpēc 
+$\\sphericalangle KAC=\\sphericalangle BAC: 2=\\frac{\\alpha}{2}$. 
+Tā kā trijstūra $KAC$ iekšējo leṇku summa ir 
+$180^{\\circ}$, tad iegūstam, ka 
+$\\frac{\\alpha}{2}+\\alpha+\\alpha=180^{\\circ}$, 
+no kurienes $\\frac{5}{2} \\alpha=180^{\\circ}$ 
+jeb $\\alpha=72^{\\circ}$.
+
+Tātad $\\sphericalangle B A C=\\sphericalangle A C B=72^{\\circ}$ un 
+$\\sphericalangle B=180^{\\circ}-2 \\cdot 72^{\\circ}=36^{\\circ}$.
+
+![](LV.NOL.2023.8.3A.png){ width=120px }
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apzīmējam $AK$ un $MC$ krustpunktu ar $H$ (skat. 21.att.). 
+Tā kā $\\triangle KAC$ un $\\triangle ABC$ ir vienādsānu 
+trijstūri, tad $\\sphericalangle AKC=\\sphericalangle ACK=\\sphericalangle BAC=\\alpha$. 
+Nogrieznis $AH$ ir vienādsānu trijstūra $MAC$ augstums 
+pret pamatu, tātad arī bisektrise, tāpēc 
+$\\sphericalangle KAC=\\sphericalangle BAC: 2=\\frac{\\alpha}{2}$. 
+Tā kā trijstūra $KAC$ iekšējo leṇku summa ir 
+$180^{\\circ}$, tad iegūstam, ka 
+$\\frac{\\alpha}{2}+\\alpha+\\alpha=180^{\\circ}$, 
+no kurienes $\\frac{5}{2} \\alpha=180^{\\circ}$ 
+jeb $\\alpha=72^{\\circ}$.</p>
+<p>Tātad $\\sphericalangle B A C=\\sphericalangle A C B=72^{\\circ}$ un 
+$\\sphericalangle B=180^{\\circ}-2 \\cdot 72^{\\circ}=36^{\\circ}$.</p>
+<p><img alt="" src="LV.NOL.2023.8.3A.png" />{ width=120px }
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.8.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Skat. 23.att. vai 24.att.
+
+![](LV.NOL.2023.8.4A.png){ width=300px }
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Skat. 23.att. vai 24.att.</p>
+<p><img alt="" src="LV.NOL.2023.8.4A.png" />{ width=300px }
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.8.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apzīmēsim Kārḷa ātrumu ar $k$, Sandra ātrumu ar $s$, Viḷna ātrumu 
+ar $v$, Mārtiṇa ātrumu ar $m$ un trases garumu ar $\\ell$.
+
+No tā, ka Kārlis satiek Vilni ik pa $12$ minūtēm, izriet, ka 
+$k+v=\\frac{\\ell}{12}$.
+
+No tā, ka Sandris apdzen Kārli ik pa 20 minūtēm, izriet, ka 
+$s-k=\\frac{\\ell}{20}$.
+
+No tā, ka Mārtiṇš apdzen Vilni ik pa 5 minūtēm izriet, ka 
+$m-v=\\frac{\\ell}{5}$.
+
+Tā kā 
+$m+s=(m-v)+(s-k)+(k+v)=\\frac{\\ell}{5}+\\frac{\\ell}{20}+\\frac{\\ell}{12}=\\frac{\\ell}{3}$, 
+tad secinām, ka Mārtiṇš Satiek Sandri ik pēc $3$ minūtēm.
+</text>
+
+
+<text lang="lv">"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apzīmēsim Kārḷa ātrumu ar $k$, Sandra ātrumu ar $s$, Viḷna ātrumu 
+ar $v$, Mārtiṇa ātrumu ar $m$ un trases garumu ar $\\ell$.</p>
+<p>No tā, ka Kārlis satiek Vilni ik pa $12$ minūtēm, izriet, ka 
+$k+v=\\frac{\\ell}{12}$.</p>
+<p>No tā, ka Sandris apdzen Kārli ik pa 20 minūtēm, izriet, ka 
+$s-k=\\frac{\\ell}{20}$.</p>
+<p>No tā, ka Mārtiṇš apdzen Vilni ik pa 5 minūtēm izriet, ka 
+$m-v=\\frac{\\ell}{5}$.</p>
+<p>Tā kā 
+$m+s=(m-v)+(s-k)+(k+v)=\\frac{\\ell}{5}+\\frac{\\ell}{20}+\\frac{\\ell}{12}=\\frac{\\ell}{3}$, 
+tad secinām, ka Mārtiṇš Satiek Sandri ik pēc $3$ minūtēm.
+</text></p>
+<p><text lang="lv"></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.8.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Pieņemsim, ka Kārlis un Sandris pārvietojas pa labi, 
+bet Vilnis un Kārlis - pa kreisi. Pieṇemsim arī, ka 
+viņi visi sāk pārvietoties vienā laikā no viena punkta 
+un noskaidrosim, cik aplus un kurā virzienā $60$ minūtēs 
+Kārli apdzen pārējie ($60$ izvēlēts, kā $5$, $12$ un $20$ 
+minūšu mazākais kopīgais dalāmais). No tā, ka Kārlis 
+satiek Vilni ik pa $12$ minūtēm izriet, ka Vilnis ir 
+veicis $60: 12=5$ apļus pa kreisi attiecībā pret Kārli.
+
+No tā, ka Mārtiṇš apdzen Vilni ik pa $5$ minūtēm izriet, 
+ka Mārtiṇš ir veicis $60:5=12$ aplus pa kreisi attiecībā 
+pret Vilni, tātad viṇš veicis $12+5=17$ apļus pa 
+kreisi attiecībā pret Kārli.
+
+No tā, ka Sandris apdzen Kārli ik pa 20 minūtēm izriet, 
+ka Sandris ir veicis $60: 20=3$ aplus pa labi 
+attiecībā pret Kārli.
+
+Tā kā Mārtiṇš ir veicis attiecībā pret Kārli $17$ apļus 
+pa kreisi, bet Sandris veicis 3 apļus pa labi, tad 
+viņi šajās $60$ minūtēs ir satikušies $17+3=20$ 
+reizes. Tātad viņi satiekas ik pēc $60: 20=3$ minūtēm.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pieņemsim, ka Kārlis un Sandris pārvietojas pa labi, 
+bet Vilnis un Kārlis - pa kreisi. Pieṇemsim arī, ka 
+viņi visi sāk pārvietoties vienā laikā no viena punkta 
+un noskaidrosim, cik aplus un kurā virzienā $60$ minūtēs 
+Kārli apdzen pārējie ($60$ izvēlēts, kā $5$, $12$ un $20$ 
+minūšu mazākais kopīgais dalāmais). No tā, ka Kārlis 
+satiek Vilni ik pa $12$ minūtēm izriet, ka Vilnis ir 
+veicis $60: 12=5$ apļus pa kreisi attiecībā pret Kārli.</p>
+<p>No tā, ka Mārtiṇš apdzen Vilni ik pa $5$ minūtēm izriet, 
+ka Mārtiṇš ir veicis $60:5=12$ aplus pa kreisi attiecībā 
+pret Vilni, tātad viṇš veicis $12+5=17$ apļus pa 
+kreisi attiecībā pret Kārli.</p>
+<p>No tā, ka Sandris apdzen Kārli ik pa 20 minūtēm izriet, 
+ka Sandris ir veicis $60: 20=3$ aplus pa labi 
+attiecībā pret Kārli.</p>
+<p>Tā kā Mārtiṇš ir veicis attiecībā pret Kārli $17$ apļus 
+pa kreisi, bet Sandris veicis 3 apļus pa labi, tad 
+viņi šajās $60$ minūtēs ir satikušies $17+3=20$ 
+reizes. Tātad viņi satiekas ik pēc $60: 20=3$ minūtēm.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.9.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Ja $x=1$, tad ir $3$ pirmskaitli, un tie ir $3 ; 5 ; 7$ 
+($1+8=9$ nav pirmskaitlis).
+
+Ja $x$ ir pāra skaitlis, tad ir ne vairāk kā viens pirmskaitlis 
+(pirmskaitlis $2$, pārējie ir pāra skaitli, tātad nav pirmskaitļi).
+
+Ja $x=3$, tad pirmskaitļu skaits ir $4$, un tie ir 
+$3;5;7;11$ ($3+6=9$ nav pirmskaitlis).
+
+Ja $x=5$, tad pirmskaitļu skaits ir $4$, un tie ir 
+$5;7;11;13$ ($5+4=9$ nav pirmskaitlis).
+
+Ja $x$ ir nepāra skaitlis un $x>5$, tad skaitļa $x$ pēdējais cipars 
+var būt $1;3;5;7;9$, bet tad vienam no skaitļiem pēdējais cipars būs 
+$5$ (jo $1+4=5$; $3+2=5$, $7+8=15$, $9+6=15$), tātad tas nebūs 
+pirmskaitlis, jo dalīsies ar $5$ un būs lielāks nekā $5$. Līdz ar to 
+vismaz viens no skaitļiem nebūs pirmskaitlis, un pirmskaitļu skaits 
+nebūs lielāks kā $4$.
+
+Tātad lielākais pirmskaitļu skaits ir $4$.
+
+*Piezīme.* Var pamatot, ka viens no skaitliem $x, x+2$ vai $x+4$ dalās ar 
+$3$ (un ir lielāks nekā $3$).
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Ja $x=1$, tad ir $3$ pirmskaitli, un tie ir $3 ; 5 ; 7$ 
+($1+8=9$ nav pirmskaitlis).</p>
+<p>Ja $x$ ir pāra skaitlis, tad ir ne vairāk kā viens pirmskaitlis 
+(pirmskaitlis $2$, pārējie ir pāra skaitli, tātad nav pirmskaitļi).</p>
+<p>Ja $x=3$, tad pirmskaitļu skaits ir $4$, un tie ir 
+$3;5;7;11$ ($3+6=9$ nav pirmskaitlis).</p>
+<p>Ja $x=5$, tad pirmskaitļu skaits ir $4$, un tie ir 
+$5;7;11;13$ ($5+4=9$ nav pirmskaitlis).</p>
+<p>Ja $x$ ir nepāra skaitlis un $x&gt;5$, tad skaitļa $x$ pēdējais cipars 
+var būt $1;3;5;7;9$, bet tad vienam no skaitļiem pēdējais cipars būs 
+$5$ (jo $1+4=5$; $3+2=5$, $7+8=15$, $9+6=15$), tātad tas nebūs 
+pirmskaitlis, jo dalīsies ar $5$ un būs lielāks nekā $5$. Līdz ar to 
+vismaz viens no skaitļiem nebūs pirmskaitlis, un pirmskaitļu skaits 
+nebūs lielāks kā $4$.</p>
+<p>Tātad lielākais pirmskaitļu skaits ir $4$.</p>
+<p><em>Piezīme.</em> Var pamatot, ka viens no skaitliem $x, x+2$ vai $x+4$ dalās ar 
+$3$ (un ir lielāks nekā $3$).
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.9.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Rūķus apzīmējam ar punktiem un divus punktus savienojam ar nogriezni, 
+ja punktiem atbilstošie rūķi savā starpā draudzējas. Tā kā no katra 
+punkta iziet $9$ nogriežṇu gali, tad nogriežṇu galu kopējais skaits ir 
+$73 \\cdot 9 = 657$, kas ir nepāra skaitlis. Bet katram nogrieznim ir 
+divi gali, tāpēc nogriežņu galu skaitam ir jābūt pāra skaitlim. 
+Esam ieguvuši pretrunu. Tāpēc nevar būt, ka katram rūķim ir tieši $9$ draugi.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Rūķus apzīmējam ar punktiem un divus punktus savienojam ar nogriezni, 
+ja punktiem atbilstošie rūķi savā starpā draudzējas. Tā kā no katra 
+punkta iziet $9$ nogriežṇu gali, tad nogriežṇu galu kopējais skaits ir 
+$73 \\cdot 9 = 657$, kas ir nepāra skaitlis. Bet katram nogrieznim ir 
+divi gali, tāpēc nogriežņu galu skaitam ir jābūt pāra skaitlim. 
+Esam ieguvuši pretrunu. Tāpēc nevar būt, ka katram rūķim ir tieši $9$ draugi.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.9.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apzīmēsim $CD$ viduspunktu ar punktu $Y$ un novilksim nogriezni 
+$XY$ (skat. 1.att.). Tā kā $CD=6$, tad $CY=3$. Tā kā nogriežṇi 
+$BX=CY=3$ ir vienādi un paralēli, tad četrstūris $BCYX$ ir paralelograms. 
+Tādā gadīumā $XY=BC=7$ kā paralelograma malas. Nogrieznis $XY$ 
+ir trijstūra $ACD$ viduslīijia, tātad $AD=2XY=14$.
+
+![](LV.NOL.2023.9.3A.png){ width=300px }
+</text>
+
+<text lang="lv">"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apzīmēsim $CD$ viduspunktu ar punktu $Y$ un novilksim nogriezni 
+$XY$ (skat. 1.att.). Tā kā $CD=6$, tad $CY=3$. Tā kā nogriežṇi 
+$BX=CY=3$ ir vienādi un paralēli, tad četrstūris $BCYX$ ir paralelograms. 
+Tādā gadīumā $XY=BC=7$ kā paralelograma malas. Nogrieznis $XY$ 
+ir trijstūra $ACD$ viduslīijia, tātad $AD=2XY=14$.</p>
+<p><img alt="" src="LV.NOL.2023.9.3A.png" />{ width=300px }
+</text></p>
+<p><text lang="lv"></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.9.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Tā kā $BX \\| CD$, tad $\\sphericalangle BXC = \\sphericalangle ACD$ kā iekšējie 
+šķērsleņķi pie paralēlām taisnēm (skat. 2.att.). No dotā izriet, 
+ka $\\frac{BX}{CD}=\\frac{CX}{AC}=\\frac{1}{2}$. Tātad 
+$\\triangle BXC \\sim \\triangle DCA$ pēc pazīmes $m \\ell m$. 
+Līdz ar to $AD=2BC=14$ kā atbilstošās malas līdzīgos trijstūros.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Tā kā $BX | CD$, tad $\\sphericalangle BXC = \\sphericalangle ACD$ kā iekšējie 
+šķērsleņķi pie paralēlām taisnēm (skat. 2.att.). No dotā izriet, 
+ka $\\frac{BX}{CD}=\\frac{CX}{AC}=\\frac{1}{2}$. Tātad 
+$\\triangle BXC \\sim \\triangle DCA$ pēc pazīmes $m \\ell m$. 
+Līdz ar to $AD=2BC=14$ kā atbilstošās malas līdzīgos trijstūros.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.9.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Atverot iekavas un abām vienādojuma pusēm atṇemot 
+$4x^{2}y^{2}$, iegūstam:
+
+$$\\begin{aligned}
+& x^{4} y^{4}+x^{4}+y^{4}+1-4 x^{2} y^{2}=0 \\\\
+& \\left(x^{4} y^{4}-2 x^{2} y^{2}+1\\right)+\\left(x^{4}-2 x^{2} y^{2}+y^{4}\\right)=0 \\\\
+& \\left(x^{2} y^{2}-1\\right)^{2}+\\left(x^{2}-y^{2}\\right)^{2}=0
+\\end{aligned}$$
+
+Divu kvadrātu summa ir nulle tikai tad, ja katrs saskaitāmais 
+ir nulle, tātad
+
+$$x^{2} y^{2}=1 \\text { un } x^{2}=y^{2}$$
+
+Tas nozīmē, ka $x^{2}=y^{2}=1$. Tātad vienādojumam ir četri atrisinājumi: 
+$(-1 ;-1),(-1 ; 1),(1 ;-1)$ un $(1 ; 1)$.
+</text>
+
+
+<text lang="lv">"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Atverot iekavas un abām vienādojuma pusēm atṇemot 
+$4x^{2}y^{2}$, iegūstam:</p>
+<p>$$\\begin{aligned}
+&amp; x^{4} y^{4}+x^{4}+y^{4}+1-4 x^{2} y^{2}=0 \\
+&amp; \\left(x^{4} y^{4}-2 x^{2} y^{2}+1\\right)+\\left(x^{4}-2 x^{2} y^{2}+y^{4}\\right)=0 \\
+&amp; \\left(x^{2} y^{2}-1\\right)^{2}+\\left(x^{2}-y^{2}\\right)^{2}=0
+\\end{aligned}$$</p>
+<p>Divu kvadrātu summa ir nulle tikai tad, ja katrs saskaitāmais 
+ir nulle, tātad</p>
+<p>$$x^{2} y^{2}=1 \\text { un } x^{2}=y^{2}$$</p>
+<p>Tas nozīmē, ka $x^{2}=y^{2}=1$. Tātad vienādojumam ir četri atrisinājumi: 
+$(-1 ;-1),(-1 ; 1),(1 ;-1)$ un $(1 ; 1)$.
+</text></p>
+<p><text lang="lv"></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.9.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Tā kā reāla skaitļa kvadrāts ir nenegatīvs, tad
+
+$$\\begin{aligned}
+& \\left(x^{2}-1\\right)^{2} \\geq 0 \\\\
+& x^{4}-2 x^{2}+1 \\geq 0 \\\\
+& x^{4}+1 \\geq 2 x^{2}
+\\end{aligned}$$
+
+Analoğiski iegūstam, ka $y^{4}+1 \\geq 2 y^{2}$. Sareizinot kopā 
+pēdējās divas nevienādības (to drīkst darīt, jo abu nevienādību 
+abas puses ir nenegatīvas), iegūstam, ka
+
+$$\\left(x^{4}+1\\right)\\left(y^{4}+1\\right) \\geq 4 x^{2} y^{2}$$
+
+No iepriekš veiktajiem spriedumiem izriet, ka vienādība tiks sasniegta 
+tad un tikai tad, ja $\\left(x^{2}-1\\right)^{2}=0$ un 
+$\\left(y^{2}-1\\right)^{2}=0$, tas ir, $x^{2}=y^{2}=1$. 
+Tātad vienādojumam ir četri atrisinājumi: 
+$(-1 ;-1),(-1 ; 1),(1 ;-1)$ un $(1 ; 1)$.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Tā kā reāla skaitļa kvadrāts ir nenegatīvs, tad</p>
+<p>$$\\begin{aligned}
+&amp; \\left(x^{2}-1\\right)^{2} \\geq 0 \\
+&amp; x^{4}-2 x^{2}+1 \\geq 0 \\
+&amp; x^{4}+1 \\geq 2 x^{2}
+\\end{aligned}$$</p>
+<p>Analoğiski iegūstam, ka $y^{4}+1 \\geq 2 y^{2}$. Sareizinot kopā 
+pēdējās divas nevienādības (to drīkst darīt, jo abu nevienādību 
+abas puses ir nenegatīvas), iegūstam, ka</p>
+<p>$$\\left(x^{4}+1\\right)\\left(y^{4}+1\\right) \\geq 4 x^{2} y^{2}$$</p>
+<p>No iepriekš veiktajiem spriedumiem izriet, ka vienādība tiks sasniegta 
+tad un tikai tad, ja $\\left(x^{2}-1\\right)^{2}=0$ un 
+$\\left(y^{2}-1\\right)^{2}=0$, tas ir, $x^{2}=y^{2}=1$. 
+Tātad vienādojumam ir četri atrisinājumi: 
+$(-1 ;-1),(-1 ; 1),(1 ;-1)$ un $(1 ; 1)$.
+</text></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2023.9.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Koku skaitu pirms negaisa apzīmēsim ar $n$, bet koku gadu 
+kopsummu apzīmēsim ar $s$.
+
+Tad $s=72n$ un $s-2023=71(n-1)$. Tātad $72n-2023 = 71n-71$ 
+un iegūstam, ka $n=1952$ un $s=72 \\cdot 1952=140544$.
+
+Noskaidrosim, kāds lielākais skaits 2023 gadus vecu koku var būt. 
+Ievērojam, ka $s=2023 \\cdot 69$ + 957. Tātad $2023$ gadus 
+veco koku skaits nevar pārsniegt $69$. Pieṇemot, ka atlikušo 
+koku vecums ir mazākais iespējamais (1 gads), koku kopskaits 
+ir mazāks nekā koku skaits parkā: $69+957=1026<1952$. 
+Tātad $2023$ gadus veco koku skaits nevar būt $69$.
+
+Nākamā iespējamā vērtība ir $68$. Izsakām $s=2023 \\cdot 68+2980$. 
+Pieṇemsim, ka starp atlikušajiem kokiem ir $v$ viengadīgi koki 
+un viens koks, kuram ir $x$ gadi ($x>1$).
+
+Tad koku skaits $68+v+1=1952$, no kā iegūstam, ka $v=1883$ 
+jeb parkā ir $1883$ viengadīgi koki. N̦emot vērā, ka $v+x=2980$, 
+iegūstam, ka $x=1097$ jeb atlikušā koka vecums ir $1097$ gadi.
+
+Tātad lielākais skaits $2023$ gadus vecu koku parkā pirms 
+vakardienas negaisa ir $68$.
+</text>"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Koku skaitu pirms negaisa apzīmēsim ar $n$, bet koku gadu 
+kopsummu apzīmēsim ar $s$.</p>
+<p>Tad $s=72n$ un $s-2023=71(n-1)$. Tātad $72n-2023 = 71n-71$ 
+un iegūstam, ka $n=1952$ un $s=72 \\cdot 1952=140544$.</p>
+<p>Noskaidrosim, kāds lielākais skaits 2023 gadus vecu koku var būt. 
+Ievērojam, ka $s=2023 \\cdot 69$ + 957. Tātad $2023$ gadus 
+veco koku skaits nevar pārsniegt $69$. Pieṇemot, ka atlikušo 
+koku vecums ir mazākais iespējamais (1 gads), koku kopskaits 
+ir mazāks nekā koku skaits parkā: $69+957=1026&lt;1952$. 
+Tātad $2023$ gadus veco koku skaits nevar būt $69$.</p>
+<p>Nākamā iespējamā vērtība ir $68$. Izsakām $s=2023 \\cdot 68+2980$. 
+Pieṇemsim, ka starp atlikušajiem kokiem ir $v$ viengadīgi koki 
+un viens koks, kuram ir $x$ gadi ($x&gt;1$).</p>
+<p>Tad koku skaits $68+v+1=1952$, no kā iegūstam, ka $v=1883$ 
+jeb parkā ir $1883$ viengadīgi koki. N̦emot vērā, ka $v+x=2980$, 
+iegūstam, ka $x=1097$ jeb atlikušā koka vecums ir $1097$ gadi.</p>
+<p>Tātad lielākais skaits $2023$ gadus vecu koku parkā pirms 
+vakardienas negaisa ir $68$.
+</text></p>"""@lv .
 
