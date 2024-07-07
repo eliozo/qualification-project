@@ -316,3 +316,9 @@ div.panel-heading h4 {
     margin-left: 0px;
   }
 }
+
+a.selectedlang, a.selectedlang:visited, a.selectedlang:hover, a.selectedlang:active {
+    text-decoration: none;
+    font-weight: bold;
+    color: darkred;
+}

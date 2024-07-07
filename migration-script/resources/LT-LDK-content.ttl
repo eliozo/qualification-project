@@ -1,1 +1,487 @@
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+eliozo:LT.LDK.2009.9_12.1 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2009.9_12.1" ;
+    eliozo:problemText """The natural number $N$ is a multiple of $2009$ 
+and the sum of its (decimal) digits
+equals $2009$.  
+(A) Find one such number.  
+(B) Find the smallest such number."""@en,
+        """Naturāls skaitlis $N$ dalās ar $2009$ un 
+tā decimālpieraksta ciparu summa vienāda ar $2009$.  
+(A) Atrast vienu šādu skaitli,  
+(B) Atrast mazāko šādu skaitli."""@lv ;
+    eliozo:problemTextHtml """<p>The natural number $N$ is a multiple of $2009$ 
+and the sum of its (decimal) digits
+equals $2009$.<br />
+(A) Find one such number.<br />
+(B) Find the smallest such number.</p>"""@en,
+        """<p>Naturāls skaitlis $N$ dalās ar $2009$ un 
+tā decimālpieraksta ciparu summa vienāda ar $2009$.<br />
+(A) Atrast vienu šādu skaitli,<br />
+(B) Atrast mazāko šādu skaitli.</p>"""@lv ;
+    eliozo:problemTimeID "2009" ;
+    eliozo:problemYear 2009 ;
+    eliozo:problem_number 1 ;
+    eliozo:suffix "LT.LDK.2009.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2009.9_12.5 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2009.9_12.5" ;
+    eliozo:problemText """Consider a table whose entries are integers. Adding a same integer to all entries on
+a same row, or on a same column, is called an operation. It is given that, for infinitely
+many positive integers $n$, one can obtain, through a finite number of operations, a
+table having all entries divisible by $n$. Prove that, through a finite number of
+operations, one can obtain the table whose all entries are zeroes."""@en,
+        """Aplūkojam tabulu, kuras šūnās ierakstīti veseli skaitļi. 
+Viena un tā paša vesela skaitļa pieskaitīšanu visiem skaitļiem tanī pašā
+tabulas rindiņā vai tanī pašā kolonnā sauksim par *operāciju*. Ir zināms, 
+ka bezgalīgi daudziem naturāliem $n$, ar galīgu operāciju skaitu var iegūt 
+tabulu, kurā visi elementi dalās ar $n$. Pierādiet, ka ar galīgu skaitu operāciju 
+var iegūt tabulu, kur visi elementi ir nulles."""@lv ;
+    eliozo:problemTextHtml """<p>Consider a table whose entries are integers. Adding a same integer to all entries on
+a same row, or on a same column, is called an operation. It is given that, for infinitely
+many positive integers $n$, one can obtain, through a finite number of operations, a
+table having all entries divisible by $n$. Prove that, through a finite number of
+operations, one can obtain the table whose all entries are zeroes.</p>"""@en,
+        """<p>Aplūkojam tabulu, kuras šūnās ierakstīti veseli skaitļi. 
+Viena un tā paša vesela skaitļa pieskaitīšanu visiem skaitļiem tanī pašā
+tabulas rindiņā vai tanī pašā kolonnā sauksim par <em>operāciju</em>. Ir zināms, 
+ka bezgalīgi daudziem naturāliem $n$, ar galīgu operāciju skaitu var iegūt 
+tabulu, kurā visi elementi dalās ar $n$. Pierādiet, ka ar galīgu skaitu operāciju 
+var iegūt tabulu, kur visi elementi ir nulles.</p>"""@lv ;
+    eliozo:problemTimeID "2009" ;
+    eliozo:problemYear 2009 ;
+    eliozo:problem_number 5 ;
+    eliozo:suffix "LT.LDK.2009.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2010.9_12.2 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2010.9_12.2" ;
+    eliozo:problemText """Find all positive integers $n$ for which there are distinct integer numbers
+$a_1,a_2,\\ldots,a_n$ such that
+$$\\frac{1}{a_1}+\\frac{2}{a_2}+\\cdots+\\frac{n}{a_n}=\\frac{a_1 + a_2 + \\cdots + a_n}{2}.$$"""@en,
+        """Atrast visus naturālos skaitļus $n$, kuriem eksistē dažādi veseli skaitļi
+$a_1,a_2,\\ldots,a_n$ tādi, ka
+$$\\frac{1}{a_1}+\\frac{2}{a_2}+\\cdots+\\frac{n}{a_n}=\\frac{a_1 + a_2 + \\cdots + a_n}{2}.$$"""@lv ;
+    eliozo:problemTextHtml """<p>Find all positive integers $n$ for which there are distinct integer numbers
+$a_1,a_2,\\ldots,a_n$ such that
+$$\\frac{1}{a_1}+\\frac{2}{a_2}+\\cdots+\\frac{n}{a_n}=\\frac{a_1 + a_2 + \\cdots + a_n}{2}.$$</p>"""@en,
+        """<p>Atrast visus naturālos skaitļus $n$, kuriem eksistē dažādi veseli skaitļi
+$a_1,a_2,\\ldots,a_n$ tādi, ka
+$$\\frac{1}{a_1}+\\frac{2}{a_2}+\\cdots+\\frac{n}{a_n}=\\frac{a_1 + a_2 + \\cdots + a_n}{2}.$$</p>"""@lv ;
+    eliozo:problemTimeID "2010" ;
+    eliozo:problemYear 2010 ;
+    eliozo:problem_number 2 ;
+    eliozo:suffix "LT.LDK.2010.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2010.9_12.5 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2010.9_12.5" ;
+    eliozo:problemText """Find positive integers $n$ that satisfy the following two conditions:  
+(a) the quotient obtained when $n$ is divided by $9$ is a positive three
+digit number, that has equal digits.  
+(b) the quotient obtained when $n + 36$ is divided by $4$ is a four digit
+number, the digits beeing $2$, $0$, $0$, $9$ in some order."""@en,
+        """Atrast naturālos skaitļus $n$, kas apmierina sekojošus divus nosacījumus:  
+(a) $n$ dalot ar $9$, dalījums ir pozitīvs trīsciparu skaitlis, kuram 
+ir vienādi cipari.  
+(b) $n+36$ dalot ar $4$, dalījums ir četrciparu skaitlis, tā cipari 
+ir $2$, $0$, $0$, $9$ kaut kādā secībā."""@lv ;
+    eliozo:problemTextHtml """<p>Find positive integers $n$ that satisfy the following two conditions:<br />
+(a) the quotient obtained when $n$ is divided by $9$ is a positive three
+digit number, that has equal digits.<br />
+(b) the quotient obtained when $n + 36$ is divided by $4$ is a four digit
+number, the digits beeing $2$, $0$, $0$, $9$ in some order.</p>"""@en,
+        """<p>Atrast naturālos skaitļus $n$, kas apmierina sekojošus divus nosacījumus:<br />
+(a) $n$ dalot ar $9$, dalījums ir pozitīvs trīsciparu skaitlis, kuram 
+ir vienādi cipari.<br />
+(b) $n+36$ dalot ar $4$, dalījums ir četrciparu skaitlis, tā cipari 
+ir $2$, $0$, $0$, $9$ kaut kādā secībā.</p>"""@lv ;
+    eliozo:problemTimeID "2010" ;
+    eliozo:problemYear 2010 ;
+    eliozo:problem_number 5 ;
+    eliozo:suffix "LT.LDK.2010.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2011.9_12.1 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2011.9_12.1" ;
+    eliozo:problemText """Integers $a$, $b$ and $c$ satisfy the condition 
+$ab + bc + ca = 1$. Is it true that the
+number $(1 + a^2)(1 + b^2)(1 + c^2)$ 
+is a perfect square? Why?"""@en,
+        """Veselie skaitļi $a$, $b$ un $c$ apmierina nosacījumu
+$ab + bc + ca = 1$. Vai skaitlis
+$(1 + a^2)(1 + b^2)(1 + c^2)$ 
+ir pilns kvadrāts? Kāpēc?"""@lv ;
+    eliozo:problemTextHtml """<p>Integers $a$, $b$ and $c$ satisfy the condition 
+$ab + bc + ca = 1$. Is it true that the
+number $(1 + a^2)(1 + b^2)(1 + c^2)$ 
+is a perfect square? Why?</p>"""@en,
+        """<p>Veselie skaitļi $a$, $b$ un $c$ apmierina nosacījumu
+$ab + bc + ca = 1$. Vai skaitlis
+$(1 + a^2)(1 + b^2)(1 + c^2)$ 
+ir pilns kvadrāts? Kāpēc?</p>"""@lv ;
+    eliozo:problemTimeID "2011" ;
+    eliozo:problemYear 2011 ;
+    eliozo:problem_number 1 ;
+    eliozo:suffix "LT.LDK.2011.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2011.9_12.3 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2011.9_12.3" ;
+    eliozo:problemText """Find all primes $p,q$ such that
+$p^3 - q^7 = p-q$."""@en,
+        """Atrast visus pirmskaitļus $p, q$ tādus, ka 
+$p^3 - q^7 = p-q$."""@lv ;
+    eliozo:problemTextHtml """<p>Find all primes $p,q$ such that
+$p^3 - q^7 = p-q$.</p>"""@en,
+        """<p>Atrast visus pirmskaitļus $p, q$ tādus, ka 
+$p^3 - q^7 = p-q$.</p>"""@lv ;
+    eliozo:problemTimeID "2011" ;
+    eliozo:problemYear 2011 ;
+    eliozo:problem_number 3 ;
+    eliozo:suffix "LT.LDK.2011.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2011.9_12.5 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2011.9_12.5" ;
+    eliozo:problemText """Positive integers $1,2,3,\\ldots,n$ are written on a blackboard ($n > 2$). Every
+minute two numbers are erased and the least prime divisor of their sum is
+written. In the end only the number $97$ remains. Find the least $n$ for which it is
+possible."""@en,
+        """Naturāli skaitļi $1,2,3,\\ldots,n$ ir uzrakstīti uz tāfeles ($n > 2$). Katru 
+minūti divus skaitļus nodzēš un to vietā uzraksta to summas mazāko pirmreizinātāju. 
+Beigās paliek tikai skaitlis $97$. Atrast mazāko $n$, kuram tasir iespējams."""@lv ;
+    eliozo:problemTextHtml """<p>Positive integers $1,2,3,\\ldots,n$ are written on a blackboard ($n &gt; 2$). Every
+minute two numbers are erased and the least prime divisor of their sum is
+written. In the end only the number $97$ remains. Find the least $n$ for which it is
+possible.</p>"""@en,
+        """<p>Naturāli skaitļi $1,2,3,\\ldots,n$ ir uzrakstīti uz tāfeles ($n &gt; 2$). Katru 
+minūti divus skaitļus nodzēš un to vietā uzraksta to summas mazāko pirmreizinātāju. 
+Beigās paliek tikai skaitlis $97$. Atrast mazāko $n$, kuram tasir iespējams.</p>"""@lv ;
+    eliozo:problemTimeID "2011" ;
+    eliozo:problemYear 2011 ;
+    eliozo:problem_number 5 ;
+    eliozo:suffix "LT.LDK.2011.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2012.9_12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2012.9_12.4" ;
+    eliozo:problemText """Let $m$ be a positive integer. Find all bounded sequences of
+integers $a_1,a_2,a_3,\\ldots$ for which $a_n+a_{n+1}+a_{n+m} = 0$ for all
+$n \\in \\mathbb{N}$."""@en,
+        """Ar $m$ apzīmēts naturāls skaitlis. Atrodiet visas ierobežotās 
+veselu skaitļu virknes $a_1,a_2,a_3,\\ldots$ kurām 
+$a_n+a_{n+1}+a_{n+m} = 0$ visiem
+$n \\in \\mathbb{N}$."""@lv ;
+    eliozo:problemTextHtml """<p>Let $m$ be a positive integer. Find all bounded sequences of
+integers $a_1,a_2,a_3,\\ldots$ for which $a_n+a_{n+1}+a_{n+m} = 0$ for all
+$n \\in \\mathbb{N}$.</p>"""@en,
+        """<p>Ar $m$ apzīmēts naturāls skaitlis. Atrodiet visas ierobežotās 
+veselu skaitļu virknes $a_1,a_2,a_3,\\ldots$ kurām 
+$a_n+a_{n+1}+a_{n+m} = 0$ visiem
+$n \\in \\mathbb{N}$.</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 4 ;
+    eliozo:suffix "LT.LDK.2012.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2013.9_12.3 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2013.9_12.3" ;
+    eliozo:problemText """The number $1234567890$ is written on the blackboard. Two
+players $A$ and $B$ play the following game taking alternate moves.
+In one move, a player erases the number which is written on the
+blackboard, say, $m$, subtracts from $m$ any positive integer not
+exceeding the sum of the digits of $m$ and writes the obtained
+result instead of $m$. The first player who reduces the number
+written on the blackboard to $0$ wins. Determine which of the
+players has the winning strategy if the player $A$ makes the first
+move."""@en,
+        """Uz tāfeles uzrakstīts skaitlis $1234567890$. Divi spēlētāji 
+$A$ un $B$ spēlē sekojošu spēli, pārmaiņus izdarot gājienus.
+Vienā gājienā spēlētājs nodzēš skaitli, kas ir uz tāfeles, piemēram $m$, 
+un tā vietā uzraksta starpību, kur no $m$ atņem jebkuru 
+naturālu skaitli, kas nepārsniedz skaitļa $m$ ciparu summu. 
+Uzvar tas spēlētājs, kurš pirmais smazina skaitli uz tāfeles līdz $0$. 
+Noteikt, kuram no spēlētājiem ir uzvaroša stratēģija, ja 
+spēlētājs $A$ izdara pirmo gājienu."""@lv ;
+    eliozo:problemTextHtml """<p>The number $1234567890$ is written on the blackboard. Two
+players $A$ and $B$ play the following game taking alternate moves.
+In one move, a player erases the number which is written on the
+blackboard, say, $m$, subtracts from $m$ any positive integer not
+exceeding the sum of the digits of $m$ and writes the obtained
+result instead of $m$. The first player who reduces the number
+written on the blackboard to $0$ wins. Determine which of the
+players has the winning strategy if the player $A$ makes the first
+move.</p>"""@en,
+        """<p>Uz tāfeles uzrakstīts skaitlis $1234567890$. Divi spēlētāji 
+$A$ un $B$ spēlē sekojošu spēli, pārmaiņus izdarot gājienus.
+Vienā gājienā spēlētājs nodzēš skaitli, kas ir uz tāfeles, piemēram $m$, 
+un tā vietā uzraksta starpību, kur no $m$ atņem jebkuru 
+naturālu skaitli, kas nepārsniedz skaitļa $m$ ciparu summu. 
+Uzvar tas spēlētājs, kurš pirmais smazina skaitli uz tāfeles līdz $0$. 
+Noteikt, kuram no spēlētājiem ir uzvaroša stratēģija, ja 
+spēlētājs $A$ izdara pirmo gājienu.</p>"""@lv ;
+    eliozo:problemTimeID "2013" ;
+    eliozo:problemYear 2013 ;
+    eliozo:problem_number 3 ;
+    eliozo:suffix "LT.LDK.2013.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2013.9_12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2013.9_12.4" ;
+    eliozo:problemText """A positive integer n > 2 is called peculiar if the number
+$${n \\choose i} + {n \\choose j} - i - j$$
+is even for all integers $i$ and $j$ such that $0 \\leq i \\leq j \\leq n$.
+Determine all peculiar numbers."""@en,
+        """Naturālu skaitli $n>2$ saucam par *savdabīgu*, ja skaitlis 
+$${n \\choose i} + {n \\choose j} - i - j$$
+ir pāru skaitlis visiem $i$ un $j$ tādiem, ka $0 \\leq i \\leq j \\leq n$.
+Atrodiet visus savdabīgos skaitļus."""@lv ;
+    eliozo:problemTextHtml """<p>A positive integer n &gt; 2 is called peculiar if the number
+$${n \\choose i} + {n \\choose j} - i - j$$
+is even for all integers $i$ and $j$ such that $0 \\leq i \\leq j \\leq n$.
+Determine all peculiar numbers.</p>"""@en,
+        """<p>Naturālu skaitli $n&gt;2$ saucam par <em>savdabīgu</em>, ja skaitlis 
+$${n \\choose i} + {n \\choose j} - i - j$$
+ir pāru skaitlis visiem $i$ un $j$ tādiem, ka $0 \\leq i \\leq j \\leq n$.
+Atrodiet visus savdabīgos skaitļus.</p>"""@lv ;
+    eliozo:problemTimeID "2013" ;
+    eliozo:problemYear 2013 ;
+    eliozo:problem_number 4 ;
+    eliozo:suffix "LT.LDK.2013.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2014.9_12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2014.9_12.4" ;
+    eliozo:problemText """Determine all positive integers $n > 1$ for which $n+D(n)$ is a
+power of $10$, where $D(n)$ denotes the largest integer divisor of
+$n$ satisfying $D(n) < n$."""@en,
+        """Noteikt visus naturālos skaitļus $n > 1$, kuriem $n+D(n)$ ir skaitļa
+$10$ pakāpe, kur $D(n)$ apzīmē lielāko skaitļa $n$ dalītāju, kuram 
+$D(n) < n$."""@lv ;
+    eliozo:problemTextHtml """<p>Determine all positive integers $n &gt; 1$ for which $n+D(n)$ is a
+power of $10$, where $D(n)$ denotes the largest integer divisor of
+$n$ satisfying $D(n) &lt; n$.</p>"""@en,
+        """<p>Noteikt visus naturālos skaitļus $n &gt; 1$, kuriem $n+D(n)$ ir skaitļa
+$10$ pakāpe, kur $D(n)$ apzīmē lielāko skaitļa $n$ dalītāju, kuram 
+$D(n) &lt; n$.</p>"""@lv ;
+    eliozo:problemTimeID "2014" ;
+    eliozo:problemYear 2014 ;
+    eliozo:problem_number 4 ;
+    eliozo:suffix "LT.LDK.2014.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2015.9_12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2015.9_12.4" ;
+    eliozo:problemText """We denote by $\\mbox{gcd}(\\ldots)$ the greatest common divisor of the numbers in
+$(\\ldots)$. (For example, $\\mbox{gcd}(4, 6, 8)=2$ and $\\mbox{gcd}(12, 15)=3$.) Suppose that
+positive integers $a,b,c$ satisfy the following four conditions:
+
+$$\\begin{array}{rcl}
+gcd(a, b, c) & = & 1, \\\\
+gcd(a, b + c) & > & 1, \\\\
+gcd(b, c + a) & > & 1, \\\\
+gcd(c, a + b) & > & 1. \\\\
+\\end{array}$$
+
+**(A)** Is it possible that $a + b + c = 2015$?  
+**(B)** Determine the minimum possible value that the sum $a+b+c$ can
+take."""@en,
+        """Ar $\\mbox{LKD}(\\ldots)$ apzīmē skaitļu
+$(\\ldots)$ lielāko kopīgo dalītāju. 
+Naturāli skaitļi $a,b,c$ apmierina četrus nosacījumus:
+
+$$\\begin{array}{rcl}
+\\mbox{LKD}(a, b, c) & = & 1, \\\\
+\\mbox{LKD}(a, b + c) & > & 1, \\\\
+\\mbox{LKD}(b, c + a) & > & 1, \\\\
+\\mbox{LKD}(c, a + b) & > & 1. \\\\
+\\end{array}$$
+
+**(A)** Vai ir iespējams, ka $a + b + c = 2015$?  
+**(B)** Noteikt mazāko iespējamo vērtību summai $a+b+c$."""@lv ;
+    eliozo:problemTextHtml """<p>We denote by $\\mbox{gcd}(\\ldots)$ the greatest common divisor of the numbers in
+$(\\ldots)$. (For example, $\\mbox{gcd}(4, 6, 8)=2$ and $\\mbox{gcd}(12, 15)=3$.) Suppose that
+positive integers $a,b,c$ satisfy the following four conditions:</p>
+<p>$$\\begin{array}{rcl}
+gcd(a, b, c) &amp; = &amp; 1, \\
+gcd(a, b + c) &amp; &gt; &amp; 1, \\
+gcd(b, c + a) &amp; &gt; &amp; 1, \\
+gcd(c, a + b) &amp; &gt; &amp; 1. \\
+\\end{array}$$</p>
+<p><strong>(A)</strong> Is it possible that $a + b + c = 2015$?<br />
+<strong>(B)</strong> Determine the minimum possible value that the sum $a+b+c$ can
+take.</p>"""@en,
+        """<p>Ar $\\mbox{LKD}(\\ldots)$ apzīmē skaitļu
+$(\\ldots)$ lielāko kopīgo dalītāju. 
+Naturāli skaitļi $a,b,c$ apmierina četrus nosacījumus:</p>
+<p>$$\\begin{array}{rcl}
+\\mbox{LKD}(a, b, c) &amp; = &amp; 1, \\
+\\mbox{LKD}(a, b + c) &amp; &gt; &amp; 1, \\
+\\mbox{LKD}(b, c + a) &amp; &gt; &amp; 1, \\
+\\mbox{LKD}(c, a + b) &amp; &gt; &amp; 1. \\
+\\end{array}$$</p>
+<p><strong>(A)</strong> Vai ir iespējams, ka $a + b + c = 2015$?<br />
+<strong>(B)</strong> Noteikt mazāko iespējamo vērtību summai $a+b+c$.</p>"""@lv ;
+    eliozo:problemTimeID "2015" ;
+    eliozo:problemYear 2015 ;
+    eliozo:problem_number 4 ;
+    eliozo:suffix "LT.LDK.2015.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2016.9_12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2016.9_12.4" ;
+    eliozo:problemText """Determine all positive integers $n$ such that 
+$7^n−1$ is divisible by $6^n−1$."""@en,
+        """Noteikt visus naturālos skaitļus $n$, kuriem 
+$7^n−1$ dalās ar $6^n−1$."""@lv ;
+    eliozo:problemTextHtml """<p>Determine all positive integers $n$ such that 
+$7^n−1$ is divisible by $6^n−1$.</p>"""@en,
+        """<p>Noteikt visus naturālos skaitļus $n$, kuriem 
+$7^n−1$ dalās ar $6^n−1$.</p>"""@lv ;
+    eliozo:problemTimeID "2016" ;
+    eliozo:problemYear 2016 ;
+    eliozo:problem_number 4 ;
+    eliozo:suffix "LT.LDK.2016.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2017.9_12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2017.9_12.4" ;
+    eliozo:problemText """Show that there are infinitely many positive integers $n$ such that the
+number of distinct odd prime factors of $n(n + 3)$ is a multiple of $3$.
+(For instance, $180 = 2^2 \\cdot 3^2 \\cdot 5$ has two distinct odd prime factors and
+$840 = 2^3 \\cdot 3 \\cdot 5 \\cdot 7$ has three.)"""@en,
+        """Pierādīt, ka ir bezgalīgi daudz naturālu skaitļu $n$, ka
+skaitļa $n(n+3)$ dažādo nepāra pirmreizinātāju skaits dalās ar $3$. 
+(Piemēram, skaitlim $180 = 2^2 \\cdot 3^2 \\cdot 5$ ir divi dažādi nepāru pirmreizinātāji, 
+bet skaitlim 
+$840 = 2^3 \\cdot 3 \\cdot 5 \\cdot 7$ tādu ir trīs.)"""@lv ;
+    eliozo:problemTextHtml """<p>Show that there are infinitely many positive integers $n$ such that the
+number of distinct odd prime factors of $n(n + 3)$ is a multiple of $3$.
+(For instance, $180 = 2^2 \\cdot 3^2 \\cdot 5$ has two distinct odd prime factors and
+$840 = 2^3 \\cdot 3 \\cdot 5 \\cdot 7$ has three.)</p>"""@en,
+        """<p>Pierādīt, ka ir bezgalīgi daudz naturālu skaitļu $n$, ka
+skaitļa $n(n+3)$ dažādo nepāra pirmreizinātāju skaits dalās ar $3$. 
+(Piemēram, skaitlim $180 = 2^2 \\cdot 3^2 \\cdot 5$ ir divi dažādi nepāru pirmreizinātāji, 
+bet skaitlim 
+$840 = 2^3 \\cdot 3 \\cdot 5 \\cdot 7$ tādu ir trīs.)</p>"""@lv ;
+    eliozo:problemTimeID "2017" ;
+    eliozo:problemYear 2017 ;
+    eliozo:problem_number 4 ;
+    eliozo:suffix "LT.LDK.2017.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
+
+eliozo:LT.LDK.2018.9_12.4 a eliozo:Problem ;
+    eliozo:country "LT" ;
+    eliozo:olympiad "LT.LDK" ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadType "Contest" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LT.LDK.2018.9_12.4" ;
+    eliozo:problemText """Find all positive integers $n$ for which there exists a positive integer $k$
+such that for every positive divisor $d$ of $n$, the number $d-k$ is also
+a (not necessarily positive) divisor of $n$."""@en,
+        """Atrast visus naturālos skaitļus $n$, kuriem eksistē naturāls $k$, ka 
+ikvienam pozitīvam skaitļa $n$ dalītājam $d$, skaitlis $d-k$ arī ir
+(ne obligāti pozitīvs) skaitļa $n$ dalītājs."""@lv ;
+    eliozo:problemTextHtml """<p>Find all positive integers $n$ for which there exists a positive integer $k$
+such that for every positive divisor $d$ of $n$, the number $d-k$ is also
+a (not necessarily positive) divisor of $n$.</p>"""@en,
+        """<p>Atrast visus naturālos skaitļus $n$, kuriem eksistē naturāls $k$, ka 
+ikvienam pozitīvam skaitļa $n$ dalītājam $d$, skaitlis $d-k$ arī ir
+(ne obligāti pozitīvs) skaitļa $n$ dalītājs.</p>"""@lv ;
+    eliozo:problemTimeID "2018" ;
+    eliozo:problemYear 2018 ;
+    eliozo:problem_number 4 ;
+    eliozo:suffix "LT.LDK.2018.9_12" ;
+    eliozo:suggestedGrade 9,
+        12 .
 

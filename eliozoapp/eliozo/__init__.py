@@ -1,13 +1,20 @@
 import os
-from flask import Flask, render_template, abort, url_for, json, jsonify, request
+from flask import Flask, render_template, abort, url_for, json, jsonify, request, session, redirect
+from flask_babel import Babel, _
 import json
 import html
 import requests
 import re
 from .webmd_utils import fix_image_links
 
+import logging
+# from babel.support import MissingTranslationError
+
+from flask_babel import Babel, gettext as original_gettext
+
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from werkzeug.wrappers import Response
+
 
 FUSEKI_URL_LINUX = 'http://127.0.0.1:9080/jena-fuseki-war-4.7.0/abc/'
 
@@ -451,7 +458,7 @@ SELECT DISTINCT ?year ?grade WHERE {{
 
     return x.text
 
-def getSPARQLOlympiadGrades(year, country, grade, olympiad):
+def getSPARQLOlympiadGrades(year, country, grade, olympiad, lang):
     url = FUSEKI_URL
     queryTemplate = """
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -466,12 +473,13 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad):
       ?problem eliozo:problem_number ?problem_number .
       ?problem eliozo:problemGrade {grade} .
       ?problem eliozo:olympiadCode '{olympiad_code}' .
+      FILTER (lang(?text) = "{language}")
     }} ORDER BY ?problem_number
     """
 
 
     myobj = { 'query':
-        queryTemplate.format(year=year, country=country, grade=grade, olympiad_code=olympiad)
+        queryTemplate.format(year=year, country=country, grade=grade, olympiad_code=olympiad, language=lang)
     }
 
     print('**********myobj={}'.format(myobj))
@@ -484,7 +492,7 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad):
 
     return x.text
 
-def getSPARQLOlympiadYear(year, country, olympiad):
+def getSPARQLOlympiadYear(year, country, olympiad, lang):
     url = FUSEKI_URL
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -500,12 +508,13 @@ SELECT ?text ?problemid ?problem_number ?problem_grade ?suffix WHERE {{
   ?problem eliozo:problemGrade ?problem_grade .
   ?problem eliozo:olympiadCode '{olympiad_code}' .
   ?problem eliozo:suffix ?suffix .
+  FILTER (lang(?text) = "{language}")
 }} ORDER BY ?problem_grade ?suffix ?problem_number
 """
 
 
     myobj = { 'query':
-        queryTemplate.format(year=year, country=country, olympiad_code=olympiad)
+        queryTemplate.format(year=year, country=country, olympiad_code=olympiad, language=lang)
     }
 
     print('**********myobj={}'.format(myobj))
@@ -617,6 +626,31 @@ def mathBeautify(a): # Izskaistina formulas ar MathJax Javascript bibliotēku
     b = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", b0) # Aizstāj inline formulas $...$ (Svarīga secība, kā aizstāj)
     return b
 
+
+def get_locale():
+    locale = session.get('lang', 'lv')
+    # print(f"&&&&&& Selected locale: {locale}")
+    return locale
+
+# def log_missing_translations(exception, *args, **kwargs):
+#     if isinstance(exception, MissingTranslationError):
+#         logging.warning(f"Missing translation for: {args[0]}")
+#     return exception
+
+
+def configure_logging():
+    logging.basicConfig(level=logging.WARNING)
+    logger = logging.getLogger(__name__)
+    return logger
+
+logger = configure_logging()
+
+def custom_gettext(string, **variables):
+    translation = original_gettext(string, **variables)
+    if translation == string:
+        logger.warning(f"Missing translation for: {string}")
+    return translation
+
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
@@ -625,12 +659,28 @@ def create_app(test_config=None):
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
     )
 
+    # Configure the available languages
+    LANGUAGES = {
+        'en': 'English',
+        'lv': 'Latvian',
+        'lt': 'Lithuanian'
+    }
+    app.config['BABEL_DEFAULT_LOCALE'] = 'lv'
+    app.config['BABEL_TRANSLATION_DIRECTORIES'] = 'translations'
+    babel = Babel(app, locale_selector=get_locale)
+
+
+    # Configure Babel logging for missing translations
+    # app.config['BABEL_MISSING_TRANSLATION'] = log_missing_translations
+
     if test_config is None:
         # load the instance config, if it exists, when not testing
         app.config.from_pyfile('config.py', silent=True)
     else:
         # load the test config if passed in
         app.config.from_mapping(test_config)
+
+
 
     # ensure the instance folder exists
     try:
@@ -659,13 +709,28 @@ def create_app(test_config=None):
     #     arg = re.sub(img_regex2, img_replace2, arg)
     #     return arg
 
+    @app.route('/setlang')
+    def setLanguage():
+        lang = request.args.get('lang')
+        next_url = request.args.get('next')
+        next_url = '/eliozo' + request.args.get('next') if next_url else url_for('main')
+        print(f'lang = {lang}')
+        print(f'next_url = {next_url}')
+
+        if lang in LANGUAGES:
+            session['lang'] = lang
+        else:
+            session['lang'] = 'lv'
+
+        return redirect(next_url)
 
     @app.route('/')
     def main():
         keyword = request.args.get('keyword')
         if keyword is None or keyword == "":
             template_context = {
-                'active': 'main'
+                'active': 'main',
+                'lang': session.get('lang', 'lv')
             }
             return render_template('main_content.html',  **template_context)
         new_keyword = replace_non_ascii_with_unicode_escape(keyword)
@@ -687,6 +752,7 @@ def create_app(test_config=None):
             'problems': problems,
             'keyword' : keyword,
             'active': 'main',
+            'lang': session.get('lang', 'lv'),
             'title': 'Sākumlapa'
         }
 
@@ -695,6 +761,9 @@ def create_app(test_config=None):
     # faceted browse
     @app.route('/filter')
     def getFilter():
+        remove_filter_message = _("RemoveFilter")
+        print(f'^^^^^^^^^^^^remove_filter_message = {remove_filter_message}')
+
         grade = request.args.get('grade')
         if grade is None:
             grade = "NA"
@@ -718,10 +787,19 @@ def create_app(test_config=None):
 
         problems = []
 
+        olympiadTypeDict = [('Contest', {'en':'Contest', 'lt':'Konkursas', 'lv':'Konkurss'}),
+                            ('Book', {'en':'Book', 'lt':'Knyga', 'lv':'Grāmata'}),
+                            ('National', {'en':'National', 'lt':'Respublikinė', 'lv':'Nacionālā'}),
+                            ('TeamSelection', { 'en':'Team selection', 'lt':'Atrankos', 'lv':'Papildsacensības'}),
+                            ('International', {'en':'International', 'lt':'Tarptautinė', 'lv':'Starptautiska'})]
+
         if grade == "NA" and olympiad == "NA" and  domain == "NA" and questionType == "NA" and method == "NA":
             template_context = {
                 'problems': problems,
                 'active': 'filter',
+                'lang': session.get('lang', 'lv'),
+                'olympiadTypeDict': olympiadTypeDict,
+                'remove_filter_message': remove_filter_message,
                 'title': 'Filtri'
             }
             return render_template('filter_content.html', **template_context)
@@ -796,15 +874,18 @@ def create_app(test_config=None):
                 'domain': domain,
                 'questionType': questionType,
                 'method': method,
-                'active': 'filter',
-                'title': 'Filtri',
                 'grade_counts': grade_counts,
                 'olympiad_counts': olympiad_counts,
                 'domain_counts': domain_counts,
                 'questionType_counts': questionType_counts,
                 'method_counts': method_counts,
+                'olympiadTypeDict': olympiadTypeDict,
+                'remove_filter_message': remove_filter_message,
                 'page_offsets': page_offsets,
-                'myoffset': offset
+                'myoffset': offset,
+                'active': 'filter',
+                'lang': session.get('lang', 'lv'),
+                'title': 'Filtri'
             }
             return render_template('filter_content.html', **template_context)
 
@@ -822,6 +903,7 @@ def create_app(test_config=None):
         # return render_template("info.html")
         template_context = {
             'active': 'references',
+            'lang': session.get('lang', 'lv'),
             'title': 'Atsauces'
         }
         return render_template('references_content.html', **template_context)
@@ -845,6 +927,7 @@ def create_app(test_config=None):
         template_context = {
             'all_problemids' : all_problemids,
             'active': 'video',
+            'lang': session.get('lang', 'lv'),
             'title': 'Video'
         }
 
@@ -969,6 +1052,7 @@ def create_app(test_config=None):
             'all_skills': all_skills,
             'all_skill_info': all_skill_info,
             'active': 'topics',
+            'lang': session.get('lang', 'lv'),
             'title': 'Tēmas',
             'structured_topics': structured_skills
         }
@@ -1017,6 +1101,7 @@ def create_app(test_config=None):
         template_context = {
             'all_concepts': concept_list,
             'active': 'concepts',
+            'lang': session.get('lang', 'lv'),
             'title': 'Jēdzieni'
         }
         return render_template('concepts_content.html', **template_context)
@@ -1057,6 +1142,7 @@ def create_app(test_config=None):
             'problem_list': problem_list,
             'skill_list' : skill_list,
             'active': 'topics',
+            'lang': session.get('lang', 'lv'),
             'title': 'Tēma'
         }
         return render_template('topic_tasks_content.html', **template_context)
@@ -1087,6 +1173,7 @@ def create_app(test_config=None):
             'problems': problems,
             'bookid' : bookid,
             'active': 'archive',
+            'lang': session.get('lang', 'lv'),
             'title': 'Grāmata'
         }
 
@@ -1236,6 +1323,7 @@ def create_app(test_config=None):
             # 'solutionTextHtml': solutionTextHtml,
             'hasSolution': hasSolution,
             'active': 'archive',
+            'lang': session.get('lang', 'lv'),
             'title': 'Uzdevums',
             'metaitems': metaitems
         }
@@ -1267,6 +1355,7 @@ def create_app(test_config=None):
             'problemTextHtml': problemTextHtml,
             'solutionsHtml': solutionsHtml,
             'active': 'archive',
+            'lang': session.get('lang', 'lv'),
             'title': 'Uzdevums'
         }
         return render_template('problem_solution_content.html', **template_context)
@@ -1295,6 +1384,7 @@ def create_app(test_config=None):
         template_context = {
             'links': olympiadData,
             'active': 'archive',
+            'lang': session.get('lang', 'lv'),
             'title': 'Arhīvs'
         }
 
@@ -1331,6 +1421,7 @@ def create_app(test_config=None):
             'country_id': country_id,
             'olympiad_id': olympiad_id,
             'active': 'archive',
+            'lang': session.get('lang', 'lv'),
             'title': 'Olimpiāde'
         }
         # Kontrolieris izlemj, uz kuru skatu sūtīs klientu
@@ -1339,6 +1430,7 @@ def create_app(test_config=None):
 #year, country, grade, olympiad
     @app.route('/grade', methods=['GET', 'POST'])
     def getGrades():
+        lang = session.get('lang', 'lv')
         year = request.args.get('year')
         country = request.args.get('country')
         grade = request.args.get('grade')
@@ -1346,9 +1438,9 @@ def create_app(test_config=None):
         print('Gads = {}, country - {}, grade = {}, olympiad = {}'.format(year,country,grade,olympiad))
 
         if grade == '-1':
-            link = json.loads(getSPARQLOlympiadYear(year, country, olympiad))
+            link = json.loads(getSPARQLOlympiadYear(year, country, olympiad, lang))
         else:
-            link = json.loads(getSPARQLOlympiadGrades(year,country,grade,olympiad))
+            link = json.loads(getSPARQLOlympiadGrades(year,country,grade,olympiad, lang))
 
         problems = []
         
@@ -1373,6 +1465,7 @@ def create_app(test_config=None):
             'grade': grade,
             'olympiad': olympiad,
             'active': 'archive',
+            'lang': session.get('lang', 'lv'),
             'title': 'Klase'
         }
 
@@ -1387,7 +1480,10 @@ def create_app(test_config=None):
     app.wsgi_app = DispatcherMiddleware(
         Response('Not Found', status=404),
         {'/eliozo': app.wsgi_app}
-    )   
+    )
+
+    # Use the custom_gettext function in templates
+    app.jinja_env.globals.update(_=custom_gettext)
 
     return app
 

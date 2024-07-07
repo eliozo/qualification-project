@@ -2,13 +2,12 @@
 
 {% block content %}
 <div class="col-sm-8 text-left">
-    <!-- Klase, Nozare, Jautājuma tips, Metode -->
 
     <form class="search-form" id="searchForm" action="#" method="GET">
         <div class="filter-box">
             <!-- Grade Filter -->
             <div class="filter" style="max-width: 140px;">
-                <b>Klase:</b><br/>
+                <b>{% trans %}Grade{% endtrans %}:</b><br/>
                 {% for (val,lbl) in [('5','5'), ('6','6'), ('7', '7'), ('8', '8'),
                 ('9', '9'), ('10', '10'), ('11', '11'), ('12', '12')] %}
                 {% if val == grade %}
@@ -28,25 +27,23 @@
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
                     }); document.getElementById('searchForm').submit(); return false;">
-                Noņemt filtru</a></small>
+                {% trans %}RemoveFilter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext">Olimpiāžu uzdevumiem ir viens noteikts klases komplekts.
-    Grāmatu un konkursu uzdevumiem var atbilst vairākas klases. Papildsacensību
-        un starptautisko olimpiāžu uzdevumi parasti domāti 10.-12.klasēm.</span></span>
+    <span class="tltiptext">{% trans %}An olympiad problem usually belongs to some grade.{% endtrans %}
+    {% trans %}Problems in textbooks, contests or international olympiads are often suggested for multiple grades.{% endtrans %}</span></span>
             </div>
 
             <div class="filter" style="max-width: 190px;">
-                <b>Olimpiāde:</b><br/>
-                {% for (val,lbl) in [('Contest','Konkurss'), ('Book','Grāmata'), ('RegionalOrOpen', 'Novadu/atklātā'),
-                ('National', 'Nacionālā'), ('TeamSelection', 'Papildsacensības'), ('International', 'Starptautiska')] %}
+                <b>{% trans %}Olympiad{% endtrans %}:</b><br/>
+                {% for (val,lbl) in olympiadTypeDict %}
                 {% if val == olympiad %}
                 <label class="selected"><input type="radio" name="olympiad" checked="1" value="{{ val }}"
-                onchange="document.getElementById('searchForm').submit();">{{ lbl }}
+                onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
                     {% if olympiad_counts %} [{{ olympiad_counts[val] }}]&nbsp; {% endif %}</label>
                 {% else %}
                 <label><input type="radio" name="olympiad" value="{{ val }}"
-                onchange="document.getElementById('searchForm').submit();">{{ lbl }}
+                onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
                     {% if olympiad_counts %} [{{ olympiad_counts[val] }}]&nbsp; {% endif %}</label>
                 {% endif %}
                 {% if not loop.last %}<br/>{% endif %}
@@ -57,19 +54,18 @@
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
                     }); document.getElementById('searchForm').submit(); return false;">
-                Noņemt filtru</a></small>
+                {% trans %}RemoveFilter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext">Reģionu/atklātās olimpiādes parasti domātas masveidīgai dalībai;
-        nacionālās un vēl jo vairāk - papildsacensību un starptautiskās olimpiādes ir
-        elitārākas. Neklātienes konkursu uzdevumi mēdz būt darbietilpīgāki par olimpiāžu uzdevumiem
-        neatkarīgi no grūtības pakāpes.
-        Avots "Grāmata" ir tikai uzdevumiem, kuri nav piedāvāti olimpiādēs.</span></span>
+    <span class="tltiptext">Reģionu/atklātās olimpiādes domātas masveidīgai dalībai.
+        Nacionālās, papildsacensību un starptautiskās olimpiādes ir elitārākas.
+        Neklātienes konkursu uzdevumi mēdz būt darbietilpīgāki par olimpiāžu uzdevumiem.
+        Avots "Grāmata" ir uzdevumiem, kuri nav piedāvāti olimpiādēs.</span></span>
             </div>
 
             <!-- Domain Filter -->
             <div class="filter" style="max-width: 120px;">
-                <b>Nozare:</b>
+                <b>{% trans %}Domain{% endtrans %}:</b>
                 {% for (val,lbl) in [('Alg','Alg'), ('Comb','Comb'), ('Geom', 'Geom'),
                 ('NT', 'NT')] %}
                 {% if val == domain %}
@@ -89,7 +85,7 @@
                     "document.querySelectorAll('input[name=domain]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
-                    }); document.getElementById('searchForm').submit(); return false;">Noņemt filtru</a></small>
+                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}RemoveFilter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
     <span class="tltiptext">Katrs uzdevums piederīgs vienai no četrām nozarēm: <br/>
@@ -100,7 +96,7 @@
             </div>
 
             <div class="filter"  style="max-width: 180px;">
-                <b>Jautājums:</b>
+                <b>{% trans %}Question{% endtrans %}:</b>
                 {% for (val,lbl) in [('FindAll','FindAll'), ('FindCount','FindCount'), ('FindOptimal', 'FindOptimal'),
                 ('FindExample', 'FindExample'),('Prove','Prove'),('ProveDisprove','ProveDisprove'),
                 ('Algorithm','Algorithm')] %}
@@ -118,7 +114,7 @@
                     "document.querySelectorAll('input[name=questionType]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
-                    }); document.getElementById('searchForm').submit(); return false;">Noņemt filtru</a></small>
+                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}RemoveFilter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
     <span class="tltiptext">Uzdevuma jautājuma tips nosaka atrisinājuma struktūru.
@@ -133,7 +129,7 @@
             </div>
 
             <div class="filter">
-                <b>Metode:</b>
+                <b>{% trans %}Method{% endtrans %}:</b>
                 {% for (val,lbl) in [('LTInduction','Indukcija'), ('LTMeanValuePrinciple','Vid.Vērtība'),
                 ('LTExtremeElement', 'Ekstr.Elements'),('LTInvariant', 'Invariants'),
                 ('LTContradiction', 'Pretruna'),('LTInterpretation','Interpretācijas'),
@@ -153,16 +149,16 @@
                     "document.querySelectorAll('input[name=method]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
-                    }); document.getElementById('searchForm').submit(); return false;">Noņemt filtru</a></small>
+                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}RemoveFilter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext">Metode uzdevuma atrisinājumam (vai kādam no atrisinājumiem). Atšķirībā no
-    citiem filtru veidiem mēdz būt nenorādīta.</span></span>
+    <span class="tltiptext">{% trans %}Method used in a solution.{% endtrans %}
+    {% trans %}Unlike other metadata method is often unspecified.{% endtrans %}</span></span>
             </div>
         </div>
-        <button type="submit" class="search-button">Meklēt</button>
+        <button type="submit" class="search-button">{% trans %}Search{% endtrans %}</button>
         {% if page_offsets %}
-        &nbsp; Pages:
+        &nbsp; {% trans %}Pages{% endtrans %}:
         {% for curr_offset in page_offsets %}
         {% if curr_offset == myoffset %}
         <b>{{ curr_offset//10+1 }}</b>
@@ -179,7 +175,7 @@
 
 {{ problem.text | safe }}
 
-<p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">Vairāk...</a></p>
+<p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">{% trans %}More{% endtrans %}...</a></p>
 {% endfor %}
 
 </div>

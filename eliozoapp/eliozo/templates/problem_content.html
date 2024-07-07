@@ -3,7 +3,7 @@
 {% block content %}
 <div class="col-sm-8 text-left">
 
-    <a href="{{ url_for('getTopics') }}" class="button">Atpakaļ</a>
+    <a href="{{ url_for('getTopics') }}" class="button">{% trans %}Back{% endtrans %}</a>
   <div class="container">
     {{jsonfile}}
   </div>
@@ -51,7 +51,7 @@
 
 
   {% if data[0].skill is defined %}
-  <p><i>Prasmes: {% for item in data %}
+  <p><i>{% trans %}Topics{% endtrans %}: {% for item in data %}
     <a href="{{ url_for('getTopic',skillIdentifier=item.skillIdentifier.value) }}">{{ item.skillIdentifier.value }} </a>
     {% endfor %}</i></p>
   {% endif %}

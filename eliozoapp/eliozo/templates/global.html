@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ lang }}">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S73XXGK0ZP"></script>
@@ -13,7 +13,7 @@
     {% if title %}
     <title>{{ title }}</title>
     {% else %}
-    <title>ELIOZO</title>
+    <title>{{ _('Home') }}</title>
     {% endif %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -109,18 +109,28 @@ dl.olympiads  dt {
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="{{ 'active' if active == 'main' else '' }}"><a href="{{ url_for('main') }}">Sākums</a>
+                <li class="{{ 'active' if active == 'main' else '' }}"><a href="{{ url_for('main') }}">{% trans %}Home{% endtrans %}</a>
                 </li>
-                <li class="{{ 'active' if active == 'filter' else '' }}"><a href="{{ url_for('getFilter') }}">Filtri</a>
+                <li class="{{ 'active' if active == 'filter' else '' }}"><a href="{{ url_for('getFilter') }}">{% trans %}Filters{% endtrans %}</a>
                 </li>
-                <li class="{{ 'active' if active == 'archive' else '' }}"><a href="{{ url_for('getArchive') }}">Arhīvs</a></li>
+                <li class="{{ 'active' if active == 'archive' else '' }}"><a href="{{ url_for('getArchive') }}">{% trans %}Archive{% endtrans %}</a></li>
                 <li class="{{ 'active' if active == 'topics' else '' }}"><a
-                        href="{{ url_for('getTopics') }}">Tēmas</a></li>
-                <li class="{{ 'active' if active == 'concepts' else '' }}"><a href="{{ url_for('getConcepts') }}">Jēdzieni</a>
+                        href="{{ url_for('getTopics') }}">{% trans %}Topics{% endtrans %}</a></li>
+                <li class="{{ 'active' if active == 'concepts' else '' }}"><a href="{{ url_for('getConcepts') }}">{% trans %}Concepts{% endtrans %}</a>
                 </li>
-                <li class="{{ 'active' if active == 'video' else '' }}"><a href="{{ url_for('getVideo') }}">Video</a></li>
+                <li class="{{ 'active' if active == 'video' else '' }}"><a href="{{ url_for('getVideo') }}">{% trans %}Video{% endtrans %}</a></li>
                 <li class="{{ 'active' if active == 'references' else '' }}"><a
-                        href="{{ url_for('getReferences') }}">Atsauces</a></li>
+                        href="{{ url_for('getReferences') }}">{% trans %}References{% endtrans %}</a></li>
+                <li><small>
+                    {% set current_url = request.full_path %}
+                    <a title="English" class="{{ 'selectedlang' if lang == 'en' else '' }}"
+                       href="{{ url_for('setLanguage', lang='en', next=current_url) }}">en</a>&nbsp;
+                    <a title="Lietuvių" class="{{ 'selectedlang' if lang == 'lt' else '' }}"
+                       href="{{ url_for('setLanguage', lang='lt', next=current_url) }}">lt</a>&nbsp;
+                    <a title="Latviešu" class="{{ 'selectedlang' if lang == 'lv' else '' }}"
+                       href="{{ url_for('setLanguage', lang='lv', next=current_url) }}">lv</a>
+
+                </small></li>
             </ul>
         </div>
     </div>

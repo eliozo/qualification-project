@@ -1,23 +1,23 @@
 @prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-eliozo:LT.TST.2008.12.12.1 a eliozo:Problem ;
+eliozo:LT.TST.2008.12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
     eliozo:problemGrade 12 ;
-    eliozo:problemID "LT.TST.2008.12.12.1" ;
+    eliozo:problemID "LT.TST.2008.12.1" ;
     eliozo:problemText "Raskite visus sveikųjų teigiamų skaičių trejetus $(x, y, z)$, tenkinančius lygybę $1 + 4^x + 4^y = z^2$."@lt,
         "Atrodiet visus veselu pozitīvu skaitļu trijniekus $(x, y, z)$, kas apmierina vienādību $1 + 4^x + 4^y = z^2$."@lv ;
     eliozo:problemTextHtml "<p>Raskite visus sveikųjų teigiamų skaičių trejetus $(x, y, z)$, tenkinančius lygybę $1 + 4^x + 4^y = z^2$.</p>"@lt,
         "<p>Atrodiet visus veselu pozitīvu skaitļu trijniekus $(x, y, z)$, kas apmierina vienādību $1 + 4^x + 4^y = z^2$.</p>"@lv ;
     eliozo:problemTimeID "2008" ;
     eliozo:problemYear 2008 ;
-    eliozo:problem_number 12 ;
+    eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
-    eliozo:suffix "LT.TST.2008.12.12" ;
+    eliozo:suffix "LT.TST.2008.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LT.TST.2009.12.1 a eliozo:Problem ;

@@ -91,9 +91,11 @@ def extract_solutions(title, text):
     elif f3 >= 0:
         text = text[f3:]
 
-    pattern = r'<text\s+num="[0-9]+"\s+lang="[a-z]+">'
-    regex = re.compile(pattern)
-    if not regex.fullmatch(text):
+    pattern1 = r'<text\s+num="[0-9]+"\s+lang="lv">'
+    regex1 = re.compile(pattern1)
+    match1 = regex1.search(text)
+
+    if not match1:
         solutions = []
         current_solution = []
         lines = text.split('\n')
@@ -113,7 +115,6 @@ def extract_solutions(title, text):
 
     else:
         pattern = r'<text\s+num="([0-9]+)"\s+lang="([a-z]+)">\s*(.*?)\s*</text>'
-        print(f"complex_parsing in {title}")
         # Compile the regex pattern
         regex = re.compile(pattern, re.DOTALL)
 

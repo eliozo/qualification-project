@@ -2082,8 +2082,7 @@ Der vienīgi vērtība $A=2$, kas pārsniedz $1$, bet ir mazāka par $4$ (un nav
 
 **Atrod K:** Ja $K \\geq 4$, tad $K \\cdot \\overline{RASK}$ nav 4-ciparu. Tātad $K=1$. 
 
-**Atbilde:** $\\overline{RASK} = 3201$. 
-</text>"""@lv ;
+**Atbilde:** $\\overline{RASK} = 3201$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p><strong>Atrod S:</strong> Reizināšana pierakstīta, izlaižot otro no četriem saskaitāmajiem. Tas notiek vienīgi tad, ja 
 $S=0$. </p>
@@ -2098,8 +2097,7 @@ Ja $A &gt; 3$ (piemēram $A=4$), tad $R \\cdot \\overline{RASK} \\geq 3 \\cdot 3
 Tātad $A \\leq 3$.<br />
 Der vienīgi vērtība $A=2$, kas pārsniedz $1$, bet ir mazāka par $4$ (un nav vienāda ar $R=3$).</p>
 <p><strong>Atrod K:</strong> Ja $K \\geq 4$, tad $K \\cdot \\overline{RASK}$ nav 4-ciparu. Tātad $K=1$. </p>
-<p><strong>Atbilde:</strong> $\\overline{RASK} = 3201$. 
-</text></p>"""@lv .
+<p><strong>Atbilde:</strong> $\\overline{RASK} = 3201$.</p>"""@lv .
 
 eliozo:SOLN.LT.LJKMO.1999.7_8.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -2116,8 +2114,7 @@ $$M = 100\\ldots009999999999900.$$
 Mazāks skaitlis nevar būt, jo pirmais cipars nevar būt nulle. 
 Bet jebkurā citā veidā iegūstot to pašu ciparu summu, 
 kāds no esošā skaitļa $M$ cipariem no nulles pārtaps par kaut ko citu, 
-t.i. skaitlis kļūs lielāks.
-</text>"""@lv ;
+t.i. skaitlis kļūs lielāks."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <ul>
 <li>Pēdējiem diviem cipariem skaitlī jābūt nullēm, lai dalītos ar $100$ 
@@ -2131,8 +2128,7 @@ $$M = 100\\ldots009999999999900.$$</li>
 <p>Mazāks skaitlis nevar būt, jo pirmais cipars nevar būt nulle. 
 Bet jebkurā citā veidā iegūstot to pašu ciparu summu, 
 kāds no esošā skaitļa $M$ cipariem no nulles pārtaps par kaut ko citu, 
-t.i. skaitlis kļūs lielāks.
-</text></p>"""@lv .
+t.i. skaitlis kļūs lielāks.</p>"""@lv .
 
 eliozo:SOLN.LT.LJKMO.2000.7_8.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -2164,8 +2160,7 @@ a_{k+1} = 10 \\cdot (a_k -1) + 1 = 10 \\cdot a_k - 9.
 No teorijas zināms, ka rekurenti uzdotām virknēm atlikumi (piemēram, dalot ar $23$) periodiski mainās - katru 
 nākamo locekli viennozīmīgi nosaka iepriekšējais. Tāpēc virknē $a_k$ reiz būs loceklis, kas dalās ar $23$ 
 (un šādi locekļi parādīsies bezgalīgi bieži). Var arī sanākt, ka $a_k$ periods iestājas *pirms* rodas
-loceklis, kurš dalās ar vajadzīgo skaitli.
-</text>"""@lv ;
+loceklis, kurš dalās ar vajadzīgo skaitli."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <ul>
 <li>Ciparu summa nevar būt $1$, jo skaitlis $10\\ldots0 = 10^n$ satur tikai 
@@ -2189,8 +2184,7 @@ a_{k+1} = 10 \\cdot (a_k -1) + 1 = 10 \\cdot a_k - 9.
 <p>No teorijas zināms, ka rekurenti uzdotām virknēm atlikumi (piemēram, dalot ar $23$) periodiski mainās - katru 
 nākamo locekli viennozīmīgi nosaka iepriekšējais. Tāpēc virknē $a_k$ reiz būs loceklis, kas dalās ar $23$ 
 (un šādi locekļi parādīsies bezgalīgi bieži). Var arī sanākt, ka $a_k$ periods iestājas <em>pirms</em> rodas
-loceklis, kurš dalās ar vajadzīgo skaitli.
-</text></p>"""@lv .
+loceklis, kurš dalās ar vajadzīgo skaitli.</p>"""@lv .
 
 eliozo:SOLN.LT.LJKMO.2001.7_8.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -2205,8 +2199,7 @@ dalāmību ar $3$ nemaina).
 
 Tātad mazākais skaitlis ar septiņniekiem ir $777$, mazākais ar trijniekiem
 ir $3333333$. Bet mazākais skaitlis, kur ir abu veidu cipari ir 
-$3333333777$. 
-</text>"""@lv ;
+$3333333777$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <ul>
 <li>Ja skaitļa pierakstā izmantoti $k$ trijnieki, tad $k$ dalās
@@ -2218,8 +2211,7 @@ dalāmību ar $3$ nemaina). </li>
 </ul>
 <p>Tātad mazākais skaitlis ar septiņniekiem ir $777$, mazākais ar trijniekiem
 ir $3333333$. Bet mazākais skaitlis, kur ir abu veidu cipari ir 
-$3333333777$. 
-</text></p>"""@lv .
+$3333333777$.</p>"""@lv .
 
 eliozo:SOLN.LT.LJKMO.2001.7_8.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -2267,8 +2259,7 @@ $$\\left\\{ \\begin{array}{l}
 \\end{array} \\right.$$
 
 Citām veselām $y$ vērtībām sakņu nav, jo tad diskriminants 
-(vienādojumam attiecībā pret $x$) ir negatīvs.
-</text>"""@lv ;
+(vienādojumam attiecībā pret $x$) ir negatīvs."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Vispirms uzminam dažas saknes.</p>
 <p>2.pakāpes vienādojumiem ar 2 nezināmajiem (veselos skaitļos)
@@ -2301,8 +2292,7 @@ $$\\left{ \\begin{array}{l}
 \\text{ja}\\;y=0,\\;\\text{tad}\\;(x,y) = (0,0)\\;\\text{vai}\\;(1,0)
 \\end{array} \\right.$$</p>
 <p>Citām veselām $y$ vērtībām sakņu nav, jo tad diskriminants 
-(vienādojumam attiecībā pret $x$) ir negatīvs.
-</text></p>"""@lv .
+(vienādojumam attiecībā pret $x$) ir negatīvs.</p>"""@lv .
 
 eliozo:SOLN.LT.LJKMO.2002.7_8.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -2316,8 +2306,7 @@ nebūs pilns kvadrāts).
 
 **Atbilde:** Jāsvītro vismaz trīs reizinātāji. 
 Piemēram, $10$, $14$ un arī $2$ ($2$ vietā var ņemt $8$ - abos 
-gadījumos tur pirmreizinātājs $2$ ir nepāru pakāpē). 
-</text>"""@lv ;
+gadījumos tur pirmreizinātājs $2$ ir nepāru pakāpē)."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Skaitļi $10$ un $14$ noteikti jāsvītro, jo tie ir vienīgie, kuri 
 satur attiecīgi reizinātājus $5$ un $7$. 
@@ -2326,8 +2315,7 @@ Pirmreizinātājs $2$ kāpināts nepāra pakāpē, bet vajag pāra (citādi
 nebūs pilns kvadrāts). </p>
 <p><strong>Atbilde:</strong> Jāsvītro vismaz trīs reizinātāji. 
 Piemēram, $10$, $14$ un arī $2$ ($2$ vietā var ņemt $8$ - abos 
-gadījumos tur pirmreizinātājs $2$ ir nepāru pakāpē). 
-</text></p>"""@lv .
+gadījumos tur pirmreizinātājs $2$ ir nepāru pakāpē).</p>"""@lv .
 
 eliozo:SOLN.LT.LJKMO.2003.7_8.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -2367,8 +2355,7 @@ Redzam, ka $7\\cdot{}2003$ ciparu summa ir $8$. Tam pievienojot fragmentus
 $2003$, var dabūt, lai ciparu summa būtu $8,13,18,23,\\ldots,1998,2003$. 
 Meklētā skaitļa piemērs:
 
-$$14021\\underbrace{2003}_{\\text{1.reize}}\\underbrace{2003}_{\\text{2.reize}}\\ldots\\underbrace{2003}_{\\text{399.reize}}.$$
-</text>"""@lv ;
+$$14021\\underbrace{2003}_{\\text{1.reize}}\\underbrace{2003}_{\\text{2.reize}}\\ldots\\underbrace{2003}_{\\text{399.reize}}.$$"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <ul>
 <li>Ir viegli panākt, lai skaitlis beigtos ar cipariem "2003" - var vienkārši uzrakstīt $2003$. </li>
@@ -2441,8 +2428,7 @@ un katra šāda skaitļa $2003k$ ciparu summu $S(2003k)$:</p>
 <p>Redzam, ka $7\\cdot{}2003$ ciparu summa ir $8$. Tam pievienojot fragmentus 
 $2003$, var dabūt, lai ciparu summa būtu $8,13,18,23,\\ldots,1998,2003$. 
 Meklētā skaitļa piemērs:</p>
-<p>$$14021\\underbrace{2003}<em>{\\text{1.reize}}\\underbrace{2003}</em>{\\text{2.reize}}\\ldots\\underbrace{2003}_{\\text{399.reize}}.$$
-</text></p>"""@lv .
+<p>$$14021\\underbrace{2003}<em>{\\text{1.reize}}\\underbrace{2003}</em>{\\text{2.reize}}\\ldots\\underbrace{2003}_{\\text{399.reize}}.$$</p>"""@lv .
 
 eliozo:SOLN.LT.LJKMO.2003.7_8.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -2463,8 +2449,7 @@ atrodas vienā daļā) - tas vairs neatbilst divdaļīga grafa nosacījumam.
 * Visi šie pirmskaitļi dalās ar $1$, bet tikai vienu var 
   savienot ar $1$, jo skaitļi daļās nedrīkst atkārtoties. 
 * Tātad divi skaitļi noteikti paliek bez pāra (mūsu gadījumā 
-  $17$ un $19$). To veidotā daļa būs vienīgā neveselā.
-</text>"""@lv ;
+  $17$ un $19$). To veidotā daļa būs vienīgā neveselā."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <ul>
 <li>Sadalām kopu divās daļās (no $1$ līdz $11$ un arī 
@@ -2481,7 +2466,6 @@ atrodas vienā daļā) - tas vairs neatbilst divdaļīga grafa nosacījumam.</p>
 <li>Visi šie pirmskaitļi dalās ar $1$, bet tikai vienu var 
   savienot ar $1$, jo skaitļi daļās nedrīkst atkārtoties. </li>
 <li>Tātad divi skaitļi noteikti paliek bez pāra (mūsu gadījumā 
-  $17$ un $19$). To veidotā daļa būs vienīgā neveselā.
-</text></li>
+  $17$ un $19$). To veidotā daļa būs vienīgā neveselā.</li>
 </ul>"""@lv .
 

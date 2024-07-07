@@ -62,13 +62,14 @@ if __name__ == '__main__':
     # Testēšanai tikai viens pārītis:
     # results = [('https://github.com/kapsitis/math/tree/master/src/site/problembase/ee-pktest', 'content.md', 'EE-PKTEST')]
 
-    results = [('https://github.com/kapsitis/math/tree/master/src/site/problembase/lt-tst', 'content', 'LT-TST')]
+    # results = [('https://github.com/kapsitis/math/tree/master/src/site/problembase/lt-tst', 'content', 'LT-TST')]
+    # results = [('https://github.com/kapsitis/math/tree/master/src/site/problembase/lv-amo-2022b', 'content', 'LV-AMO-2022B')]
 
     for result in results:
         # print("****{}, {}, {}".format(result[0], result[1], result[2]))
-        getMarkdownFile(result[0], result[1], result[2])
-        md_path = 'resources/' + result[2] + '-' + result[1] + '.md'
-        ttl_path = 'resources/' + result[2] + '-' + result[1] + '.ttl'
+        getMarkdownFile(result[0].strip(), result[1].strip(), result[2].strip())
+        md_path = 'resources/' + result[2] + '-' + result[1].strip() + '.md'
+        ttl_path = 'resources/' + result[2] + '-' + result[1].strip() + '.ttl'
         md_to_rdf(md_path, ttl_path)
 
 

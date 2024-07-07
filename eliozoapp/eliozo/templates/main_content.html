@@ -2,12 +2,12 @@
 
 {% block content %}
 <div class="col-sm-8 text-left">
-<p style="font-size:120%">Matemātikas olimpiāžu uzdevumi</p>
+<p style="font-size:120%">{% trans %}Math Olympiad Problems{% endtrans %}</p>
 <hr>
 
 <form class="search-form" action="{{ url_for('main') }}" method="get">
-<input class="search-input" type="text" name="keyword" value="{{ keyword }}" placeholder="Ierakstiet atslēgvārdus">
-<button class="search-button" type="submit">Meklēt</button>
+<input class="search-input" type="text" name="keyword" value="{{ keyword }}" placeholder="{% trans %}Text to Search{% endtrans %}">
+<button class="search-button" type="submit">{% trans %}Search{% endtrans %}</button>
 </form>
 
 {% for problem in problems %}
@@ -15,9 +15,7 @@
 
 {{ problem.text | safe }}
 
-<p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">
-Vairāk...
-</a></p>
+<p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">{% trans %}More{% endtrans %}...</a></p>
 {% endfor %}
 
 </div>
