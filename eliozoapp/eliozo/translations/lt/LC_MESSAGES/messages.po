@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-07-07 14:56+0300\n"
+"POT-Creation-Date: 2024-07-08 17:18+0300\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: lt\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: __init__.py:764 templates/filter_content.html:30
 #: templates/filter_content.html:57 templates/filter_content.html:88
-#: templates/filter_content.html:117 templates/filter_content.html:152
+#: templates/filter_content.html:117 templates/filter_content.html:148
 #, fuzzy
 msgid "RemoveFilter"
 msgstr "Nuimti filtrą"
@@ -51,39 +51,119 @@ msgstr ""
 "siūlomi kelioms klasėms."
 
 #: templates/filter_content.html:38
-msgid "Olympiad"
-msgstr "Olimpiada"
+#, fuzzy
+msgid "Source"
+msgstr "Daugiau"
+
+#: templates/filter_content.html:60
+#, fuzzy
+msgid "Regional or open olypiads aim for mass participation."
+msgstr "Regioninės ar atvirosios olimpiados siekia masinio dalyvavimo."
+
+#: templates/filter_content.html:61
+msgid ""
+"National, team selection or international olympiads may rely on advanced "
+"preparation."
+msgstr ""
+"Nacionalinės, komandinės atrankos ar tarptautinės olimpiados gali "
+"prireikti daugiau pasiruošimo."
+
+#: templates/filter_content.html:62
+msgid "Contest problems could take longer as the time limit is several days."
+msgstr ""
+"Konkurso problemoms gali prireikti daugiau laiko, nes terminas yra kelios"
+" dienos."
+
+#: templates/filter_content.html:63
+msgid "A textbook is shown as source, if no other source is known."
+msgstr "Vadovėlis rodomas kaip šaltinis, jei kitas šaltinis nežinomas."
 
 #: templates/filter_content.html:68
 msgid "Domain"
 msgstr "Sritis"
 
+#: templates/filter_content.html:91
+msgid "Every problem belongs to a domain"
+msgstr "Kiekviena problema turi sritį"
+
+#: templates/filter_content.html:92
+msgid "Algebra"
+msgstr "Algebra"
+
+#: templates/filter_content.html:93
+msgid "Combinatorics"
+msgstr "Kombinatorika"
+
+#: templates/filter_content.html:94
+msgid "Geometry"
+msgstr "Geometrija"
+
+#: templates/filter_content.html:95
+msgid "Number theory"
+msgstr "Skaičių teorija"
+
 #: templates/filter_content.html:99
 msgid "Question"
 msgstr "Klausimas"
+
+#: templates/filter_content.html:120
+msgid "A question type implies the structure of a solution."
+msgstr "Klausimo tipas nulemia sprendimo struktūrą."
+
+#: templates/filter_content.html:121
+msgid "Every subitem (A,B,...) may have its own question type."
+msgstr "Kiekvienas poskyris (A,B,...) gali turėti savo klausimo tipą."
+
+#: templates/filter_content.html:122
+msgid "Find all solutions, show that there are no others."
+msgstr "Raskite visus sprendimus, parodykite, kad kitų nėra."
+
+#: templates/filter_content.html:123
+msgid "Determine the count of answers or other objects."
+msgstr "Nustatykite tik atsakymų ar kitų objektų skaičių."
+
+#: templates/filter_content.html:124
+msgid "Find the largest, the smallest or the \"best\" solution."
+msgstr "Raskite didžiausią, mažiausią ar \"geriausią\" sprendimą."
+
+#: templates/filter_content.html:125
+msgid "Provide any example satisfying the requirements."
+msgstr "Pateikite bet kokį pavyzdį, atitinkantį reikalavimus."
+
+#: templates/filter_content.html:126
+msgid "Prove the given statement."
+msgstr "Įrodykite pateiktą teiginį."
+
+#: templates/filter_content.html:127
+msgid "Prove or disprove the given statement."
+msgstr "Įrodykite arba paneigkite pateiktą teiginį."
+
+#: templates/filter_content.html:128
+msgid "Describe a procedure, a construction, a game strategy."
+msgstr "Parodykite procedūrą, konstrukciją, žaidimo strategiją."
 
 #: templates/filter_content.html:132
 msgid "Method"
 msgstr "Metodas"
 
-#: templates/filter_content.html:155
+#: templates/filter_content.html:151
 msgid "Method used in a solution."
 msgstr "Viename iš sprendimų naudojamas metodas."
 
-#: templates/filter_content.html:156
+#: templates/filter_content.html:152
 msgid "Unlike other metadata method is often unspecified."
 msgstr "Skirtingai nuo kitų metaduomenų, metodas paprastai nenurodomas."
 
-#: templates/filter_content.html:159 templates/main_content.html:10
+#: templates/filter_content.html:155 templates/main_content.html:10
 #, fuzzy
 msgid "Search"
 msgstr "Ieškoti"
 
-#: templates/filter_content.html:161
+#: templates/filter_content.html:157
 msgid "Pages"
 msgstr "Puslapiai"
 
-#: templates/filter_content.html:178 templates/main_content.html:18
+#: templates/filter_content.html:174 templates/main_content.html:18
 msgid "More"
 msgstr "Daugiau"
 
@@ -124,14 +204,20 @@ msgid "Text to Search"
 msgstr "Ko ieškoti"
 
 #~ msgid "Olypiad problem usually belongs to some grade."
-#~ msgstr ""
+#~ msgstr "Olimpiados problema dažniausiai priklauso tam tikrai klasei."
 
 #~ msgid ""
-#~ " Problems in textbooks, contests or "
+#~ "Problems in textbooks, contests or "
 #~ "international olympiads are often suggested"
 #~ " for multiple grades."
 #~ msgstr ""
+#~ "Problemos vadovėliuose, konkursuose ar "
+#~ "tarptautinėse olimpiadose dažnai siūlomos "
+#~ "kelioms klasėms."
 
 #~ msgid "Remove filter"
 #~ msgstr "Nuimti filtrą"
+
+#~ msgid "Olympiad"
+#~ msgstr "Olimpiada"
 

@@ -762,7 +762,7 @@ def create_app(test_config=None):
     @app.route('/filter')
     def getFilter():
         remove_filter_message = _("RemoveFilter")
-        print(f'^^^^^^^^^^^^remove_filter_message = {remove_filter_message}')
+        # print(f'^^^^^^^^^^^^remove_filter_message = {remove_filter_message}')
 
         grade = request.args.get('grade')
         if grade is None:
@@ -789,9 +789,20 @@ def create_app(test_config=None):
 
         olympiadTypeDict = [('Contest', {'en':'Contest', 'lt':'Konkursas', 'lv':'Konkurss'}),
                             ('Book', {'en':'Book', 'lt':'Knyga', 'lv':'Grāmata'}),
+                            ('RegionalOrOpen', {'en':'Regional/Open', 'lt':'Rajoninės/atviros', 'lv':'Reģionālās/atklātās'}),
                             ('National', {'en':'National', 'lt':'Respublikinė', 'lv':'Nacionālā'}),
-                            ('TeamSelection', { 'en':'Team selection', 'lt':'Atrankos', 'lv':'Papildsacensības'}),
+                            ('TeamSelection', {'en':'Team selection', 'lt':'Atrankos', 'lv':'Papildsacensības'}),
                             ('International', {'en':'International', 'lt':'Tarptautinė', 'lv':'Starptautiska'})]
+
+        methodDict = [('LTInduction', {'en':'Induction', 'lt':'Indukcija', 'lv':'Indukcija'}),
+                      ('LTMeanValuePrinciple', {'en':'MeanValue', 'lt':'Vidutinė Vertė', 'lv':'Vid.Vērtība'}),
+                      ('LTExtremeElement', {'en':'Extreme element','lt':'Kraštinis Elementas', 'lv':'Ekstr.Elements'}),
+                      ('LTInvariant', {'en':'Invariant','lt':'Invariantas', 'lv':'Invariants'}),
+                      ('LTContradiction', {'en':'Contradiction', 'lt':'Prieštaravimas', 'lv': 'Pretruna'}),
+                      ('LTInterpretation', {'en':'Interpretation', 'lt': 'Interpretacija', 'lv':'Interpretācija'}),
+                      ('LTExpressionTransforms', {'en':'Transforms', 'lt':'Pertvarkymai', 'lv':'Pārveidojumi'}),
+                      ('LTStructureAugmentation', {'en':'Structure augmentation', 'lt':'Pagalbinės Konstrukcijos', 'lv':'Papildkonstrukcijas'}),
+                      ('', {'en':'Unspecified', 'lt':'Nežinomas', 'lv':'Nenorādīta'})]
 
         if grade == "NA" and olympiad == "NA" and  domain == "NA" and questionType == "NA" and method == "NA":
             template_context = {
@@ -799,6 +810,7 @@ def create_app(test_config=None):
                 'active': 'filter',
                 'lang': session.get('lang', 'lv'),
                 'olympiadTypeDict': olympiadTypeDict,
+                'methodDict': methodDict,
                 'remove_filter_message': remove_filter_message,
                 'title': 'Filtri'
             }
@@ -880,6 +892,7 @@ def create_app(test_config=None):
                 'questionType_counts': questionType_counts,
                 'method_counts': method_counts,
                 'olympiadTypeDict': olympiadTypeDict,
+                'methodDict': methodDict,
                 'remove_filter_message': remove_filter_message,
                 'page_offsets': page_offsets,
                 'myoffset': offset,

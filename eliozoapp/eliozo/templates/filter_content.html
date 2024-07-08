@@ -35,7 +35,7 @@
             </div>
 
             <div class="filter" style="max-width: 190px;">
-                <b>{% trans %}Olympiad{% endtrans %}:</b><br/>
+                <b>{% trans %}Source{% endtrans %}:</b><br/>
                 {% for (val,lbl) in olympiadTypeDict %}
                 {% if val == olympiad %}
                 <label class="selected"><input type="radio" name="olympiad" checked="1" value="{{ val }}"
@@ -57,10 +57,10 @@
                 {% trans %}RemoveFilter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext">Reģionu/atklātās olimpiādes domātas masveidīgai dalībai.
-        Nacionālās, papildsacensību un starptautiskās olimpiādes ir elitārākas.
-        Neklātienes konkursu uzdevumi mēdz būt darbietilpīgāki par olimpiāžu uzdevumiem.
-        Avots "Grāmata" ir uzdevumiem, kuri nav piedāvāti olimpiādēs.</span></span>
+    <span class="tltiptext">{% trans %}Regional or open olypiads aim for mass participation.{% endtrans %}
+        {% trans %}National, team selection or international olympiads may rely on advanced preparation.{% endtrans %}
+        {% trans %}Contest problems could take longer as the time limit is several days.{% endtrans %}
+        {% trans %}A textbook is shown as source, if no other source is known.{% endtrans %}</span></span>
             </div>
 
             <!-- Domain Filter -->
@@ -88,11 +88,11 @@
                     }); document.getElementById('searchForm').submit(); return false;">{% trans %}RemoveFilter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext">Katrs uzdevums piederīgs vienai no četrām nozarēm: <br/>
-    <b>Alg</b> - Algebra,<br/>
-    <b>Comb</b> - Kombinatorika,<br/>
-    <b>Geom</b> - Ģeometrija,<br/>
-    <b>NT</b> - Skaitļu teorija.</span></span>
+    <span class="tltiptext">{% trans %}Every problem belongs to a domain{% endtrans %}: <br/>
+    <b>Alg</b> - {% trans %}Algebra{% endtrans %},<br/>
+    <b>Comb</b> - {% trans %}Combinatorics{% endtrans %},<br/>
+    <b>Geom</b> - {% trans %}Geometry{% endtrans %},<br/>
+    <b>NT</b> - {% trans %}Number theory{% endtrans %}.</span></span>
             </div>
 
             <div class="filter"  style="max-width: 180px;">
@@ -117,31 +117,27 @@
                     }); document.getElementById('searchForm').submit(); return false;">{% trans %}RemoveFilter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext">Uzdevuma jautājuma tips nosaka atrisinājuma struktūru.
-        Uzdevumiem, kas satur vairākus apakšpunktus (A),(B) utt., jautājuma tipi atbilst apakšpunktu skaitam.<br/>
-    <b>FindAll</b> - Atrast visus derīgos atrisinājumus, pamatot, ka citu nav.<br/>
-    <b>FindCount</b> - Atrast atbilžu vai objektu skaitu.<br/>
-    <b>FindOptimal</b> - Atrast lielāko, mazāko, "labāko" atrisinājumu.<br/>
-    <b>FindExample</b> - Atrast jebkuru vienu atrisinājumu.<br/>
-    <b>Prove</b> - Pierādīt doto apgalvojumu.<br/>
-    <b>ProveDisprove</b> - Pierādīt vai apgāzt doto apgalvojumu.<br/>
-    <b>Algorithm</b> - Aprakstīt procedūru, konstrukciju, spēles stratēģiju.</span></span>
+    <span class="tltiptext">{% trans %}A question type implies the structure of a solution.{% endtrans %}
+        {% trans %}Every subitem (A,B,...) may have its own question type.{% endtrans %}<br/>
+    <b>FindAll</b> - {% trans %}Find all solutions, show that there are no others.{% endtrans %}<br/>
+    <b>FindCount</b> - {% trans %}Determine the count of answers or other objects.{% endtrans %}<br/>
+    <b>FindOptimal</b> - {% trans %}Find the largest, the smallest or the "best" solution.{% endtrans %}<br/>
+    <b>FindExample</b> - {% trans %}Provide any example satisfying the requirements.{% endtrans %}<br/>
+    <b>Prove</b> - {% trans %}Prove the given statement.{% endtrans %}<br/>
+    <b>ProveDisprove</b> - {% trans %}Prove or disprove the given statement.{% endtrans %}<br/>
+    <b>Algorithm</b> - {% trans %}Describe a procedure, a construction, a game strategy.{% endtrans %}</span></span>
             </div>
 
             <div class="filter">
                 <b>{% trans %}Method{% endtrans %}:</b>
-                {% for (val,lbl) in [('LTInduction','Indukcija'), ('LTMeanValuePrinciple','Vid.Vērtība'),
-                ('LTExtremeElement', 'Ekstr.Elements'),('LTInvariant', 'Invariants'),
-                ('LTContradiction', 'Pretruna'),('LTInterpretation','Interpretācijas'),
-                ('LTExpressionTransforms','Pārveidojumi'),('LTStructureAugmentation','Papildkonstrukcijas'),
-                ('', 'Nenorādīta')] %}
+                {% for (val,lbl) in methodDict %}
                 {% if val == method %}
                 <label class="selected"><input type="radio" name="method" checked="1" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl }}
+                    onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
                     {% if method_counts %} [{{ method_counts[val] }}]&nbsp; {% endif %}</label>
                 {% else %}
                 <label><input type="radio" name="method" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl }}
+                    onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
                     {% if method_counts %} [{{ method_counts[val] }}]&nbsp; {% endif %}</label>
                 {% endif %}
                 {% endfor %}
