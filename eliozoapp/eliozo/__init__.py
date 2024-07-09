@@ -119,7 +119,7 @@ SELECT ?concept ?termLV ?termEN ?conceptID ?descLV ?problemID WHERE {
 
 
 
-def getSPARQLProblem(arg):
+def getSPARQLProblem(arg, lang):
     url = FUSEKI_URL
 
     queryTemplate = """
@@ -132,6 +132,7 @@ SELECT ?problemTextHtml ?video ?problemYear ?country ?olympiad
 ?strategy ?topic ?LTopic ?concepts ?questionType ?domain WHERE {{
   ?problem eliozo:problemID '{problemid}' ;
            eliozo:problemTextHtml ?problemTextHtml .
+           FILTER (lang(?problemTextHtml) = "{language}")
   OPTIONAL {{
     ?problem eliozo:problemYear ?year ;
              eliozo:olympiadCode ?olympiad ;
@@ -187,7 +188,7 @@ SELECT ?problemTextHtml ?video ?problemYear ?country ?olympiad
 }}"""
 
 
-    myobj = {'query':  queryTemplate.format(problemid=arg) }
+    myobj = {'query':  queryTemplate.format(problemid=arg, language=lang) }
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
 
     x = requests.post(url, myobj, head)
@@ -199,7 +200,7 @@ SELECT ?problemTextHtml ?video ?problemYear ?country ?olympiad
     return x.text
 
 
-def getSPARQLProblemSolutions(arg):
+def getSPARQLProblemSolutions(arg, lang):
     url = FUSEKI_URL
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -209,6 +210,8 @@ PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
 SELECT ?problemTextHtml ?solutionTextHtml WHERE {{
   ?problem eliozo:problemID '{problemid}' ;
   eliozo:problemTextHtml ?problemTextHtml .
+  FILTER (lang(?problemTextHtml) = "{language}")
+  FILTER (lang(?solutionTextHtml) = "{language}")
   OPTIONAL {{
     ?problem eliozo:problemSolution ?problemSolution . 
     ?problemSolution eliozo:solutionTextHtml ?solutionTextHtml .
@@ -216,7 +219,7 @@ SELECT ?problemTextHtml ?solutionTextHtml WHERE {{
 }}    
 """
 
-    myobj = {'query':  queryTemplate.format(problemid=arg) }
+    myobj = {'query':  queryTemplate.format(problemid=arg, language=lang)}
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
     print("myobj= {}".format(myobj))
@@ -761,9 +764,6 @@ def create_app(test_config=None):
     # faceted browse
     @app.route('/filter')
     def getFilter():
-        remove_filter_message = _("RemoveFilter")
-        # print(f'^^^^^^^^^^^^remove_filter_message = {remove_filter_message}')
-
         grade = request.args.get('grade')
         if grade is None:
             grade = "NA"
@@ -811,7 +811,6 @@ def create_app(test_config=None):
                 'lang': session.get('lang', 'lv'),
                 'olympiadTypeDict': olympiadTypeDict,
                 'methodDict': methodDict,
-                'remove_filter_message': remove_filter_message,
                 'title': 'Filtri'
             }
             return render_template('filter_content.html', **template_context)
@@ -893,7 +892,6 @@ def create_app(test_config=None):
                 'method_counts': method_counts,
                 'olympiadTypeDict': olympiadTypeDict,
                 'methodDict': methodDict,
-                'remove_filter_message': remove_filter_message,
                 'page_offsets': page_offsets,
                 'myoffset': offset,
                 'active': 'filter',
@@ -1195,16 +1193,17 @@ def create_app(test_config=None):
 
     @app.route('/problem', methods=['GET','POST'])
     def getProblem():
+        lang = session.get('lang', 'lv')
         problemid = request.args.get('problemid')
 
         print(f"**************** problemid = {problemid}")
-        solnData = json.loads(getSPARQLProblemSolutions(problemid))
+        solnData = json.loads(getSPARQLProblemSolutions(problemid, lang))
         hasSolution = False
         if 'solutionTextHtml' in solnData['results']['bindings'][0]:
             hasSolution = True
 
 
-        data = json.loads(getSPARQLProblem(problemid))
+        data = json.loads(getSPARQLProblem(problemid, lang))
 
         problemTextHtml = data['results']['bindings'][0]['problemTextHtml']['value']
 
@@ -1321,7 +1320,7 @@ def create_app(test_config=None):
             metaitems.append({'key': 'concepts', 'value': concepts.replace('http://www.dudajevagatve.lv/eliozo#TRM-','')})
         if questionType != 'NA':
             metaitems.append({'key': 'questionType', 'value': questionType})
-        if domain != 'NA':
+        if domain in ['Alg', 'Comb', 'Geom', 'NT']:
             all_domains = {"Alg":"Algebra", "Comb":"Kombinatorika", "Geom":"Ģeometrija", "NT":"Skaitļu teorija"}
             metaitems.append({'key': 'domain', 'value': all_domains[domain]})
 
@@ -1346,9 +1345,10 @@ def create_app(test_config=None):
     @app.route('/problem_solution', methods=['GET','POST'])
     def getProblemSolution():
         problemid = request.args.get('problemid')
+        lang = session.get('lang', 'lv')
 
         print(f"**************** problemid = {problemid}")
-        data = json.loads(getSPARQLProblemSolutions(problemid))
+        data = json.loads(getSPARQLProblemSolutions(problemid, lang))
 
         problemTextHtml = data['results']['bindings'][0]['problemTextHtml']['value']
         problemTextHtml = fix_image_links(problemTextHtml)

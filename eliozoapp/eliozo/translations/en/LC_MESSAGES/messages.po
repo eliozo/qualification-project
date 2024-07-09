@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-07-08 17:18+0300\n"
+"POT-Creation-Date: 2024-07-09 18:12+0300\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -17,13 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.15.0\n"
-
-#: __init__.py:764 templates/filter_content.html:30
-#: templates/filter_content.html:57 templates/filter_content.html:88
-#: templates/filter_content.html:117 templates/filter_content.html:148
-#, fuzzy
-msgid "RemoveFilter"
-msgstr "Remove filter"
 
 #: templates/archive_content.html:5 templates/book_problems_content.html:5
 #: templates/concepts_content.html:5 templates/problem_content.html:6
@@ -36,6 +29,13 @@ msgstr "Back"
 #: templates/filter_content.html:10
 msgid "Grade"
 msgstr "Grade"
+
+#: templates/filter_content.html:30 templates/filter_content.html:57
+#: templates/filter_content.html:88 templates/filter_content.html:117
+#: templates/filter_content.html:148
+#, fuzzy
+msgid "Remove Filter"
+msgstr "Remove filter"
 
 #: templates/filter_content.html:33
 msgid "An olympiad problem usually belongs to some grade."
@@ -55,7 +55,8 @@ msgid "Source"
 msgstr "More"
 
 #: templates/filter_content.html:60
-msgid "Regional or open olypiads aim for mass participation."
+#, fuzzy
+msgid "Regional or open olympiads aim for mass participation."
 msgstr "Regional or open olypiads aim for mass participation."
 
 #: templates/filter_content.html:61
@@ -163,31 +164,31 @@ msgstr "Pages"
 msgid "More"
 msgstr "More"
 
-#: templates/global.html:16 templates/global.html:112
+#: templates/global.html:16 templates/global.html:105
 msgid "Home"
 msgstr "Home"
 
-#: templates/global.html:114
+#: templates/global.html:107
 msgid "Filters"
 msgstr "Filters"
 
-#: templates/global.html:116
+#: templates/global.html:109
 msgid "Archive"
 msgstr "Archive"
 
-#: templates/global.html:118 templates/problem_content.html:54
+#: templates/global.html:111 templates/problem_content.html:54
 msgid "Topics"
 msgstr "Topics"
 
-#: templates/global.html:119
+#: templates/global.html:112
 msgid "Concepts"
 msgstr "Concepts"
 
-#: templates/global.html:121
+#: templates/global.html:114
 msgid "Video"
 msgstr "Video"
 
-#: templates/global.html:123
+#: templates/global.html:116
 msgid "References"
 msgstr "References"
 
@@ -198,9 +199,6 @@ msgstr "Math Olympiad Problems"
 #: templates/main_content.html:9
 msgid "Text to Search"
 msgstr "Text to Search"
-
-#~ msgid "Remove filter"
-#~ msgstr "Remove filter"
 
 #~ msgid "Olympiad"
 #~ msgstr "Olympiad"

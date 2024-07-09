@@ -27,7 +27,7 @@
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
                     }); document.getElementById('searchForm').submit(); return false;">
-                {% trans %}RemoveFilter{% endtrans %}</a></small>
+                {% trans %}Remove Filter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
     <span class="tltiptext">{% trans %}An olympiad problem usually belongs to some grade.{% endtrans %}
@@ -54,10 +54,10 @@
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
                     }); document.getElementById('searchForm').submit(); return false;">
-                {% trans %}RemoveFilter{% endtrans %}</a></small>
+                {% trans %}Remove Filter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext">{% trans %}Regional or open olypiads aim for mass participation.{% endtrans %}
+    <span class="tltiptext">{% trans %}Regional or open olympiads aim for mass participation.{% endtrans %}
         {% trans %}National, team selection or international olympiads may rely on advanced preparation.{% endtrans %}
         {% trans %}Contest problems could take longer as the time limit is several days.{% endtrans %}
         {% trans %}A textbook is shown as source, if no other source is known.{% endtrans %}</span></span>
@@ -85,7 +85,7 @@
                     "document.querySelectorAll('input[name=domain]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
-                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}RemoveFilter{% endtrans %}</a></small>
+                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
     <span class="tltiptext">{% trans %}Every problem belongs to a domain{% endtrans %}: <br/>
@@ -114,7 +114,7 @@
                     "document.querySelectorAll('input[name=questionType]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
-                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}RemoveFilter{% endtrans %}</a></small>
+                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
     <span class="tltiptext">{% trans %}A question type implies the structure of a solution.{% endtrans %}
@@ -145,7 +145,7 @@
                     "document.querySelectorAll('input[name=method]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
-                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}RemoveFilter{% endtrans %}</a></small>
+                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
     <span class="tltiptext">{% trans %}Method used in a solution.{% endtrans %}
