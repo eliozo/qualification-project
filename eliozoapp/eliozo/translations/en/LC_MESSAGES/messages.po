@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-07-09 18:12+0300\n"
+"POT-Creation-Date: 2024-07-15 00:54+0300\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -30,18 +30,18 @@ msgstr "Back"
 msgid "Grade"
 msgstr "Grade"
 
-#: templates/filter_content.html:30 templates/filter_content.html:57
-#: templates/filter_content.html:88 templates/filter_content.html:117
-#: templates/filter_content.html:148
-#, fuzzy
+#: templates/filter_content.html:29 templates/filter_content.html:55
+#: templates/filter_content.html:85 templates/filter_content.html:114
+#: templates/filter_content.html:146 templates/filter_content.html:172
+#: templates/filter_content.html:200
 msgid "Remove Filter"
 msgstr "Remove filter"
 
-#: templates/filter_content.html:33
+#: templates/filter_content.html:32
 msgid "An olympiad problem usually belongs to some grade."
 msgstr "An olympiad problem usually belongs to some grade."
 
-#: templates/filter_content.html:34
+#: templates/filter_content.html:33
 msgid ""
 "Problems in textbooks, contests or international olympiads are often "
 "suggested for multiple grades."
@@ -49,118 +49,139 @@ msgstr ""
 "Problems in textbooks, contests or international olympiads are often "
 "suggested for multiple grades."
 
-#: templates/filter_content.html:38
-#, fuzzy
+#: templates/filter_content.html:37
 msgid "Source"
-msgstr "More"
+msgstr "Source"
 
-#: templates/filter_content.html:60
-#, fuzzy
-msgid "Regional or open olympiads aim for mass participation."
-msgstr "Regional or open olypiads aim for mass participation."
-
-#: templates/filter_content.html:61
+#: templates/filter_content.html:58
 msgid ""
-"National, team selection or international olympiads may rely on advanced "
-"preparation."
+"Regional or open olympiads cover fewer topics and require less "
+"preparation compared to others."
 msgstr ""
-"National, team selection or international olympiads may rely on advanced "
-"preparation."
+"Regional or open olympiads cover fewer topics and require less "
+"preparation compared to others."
 
-#: templates/filter_content.html:62
+#: templates/filter_content.html:59
 msgid "Contest problems could take longer as the time limit is several days."
 msgstr "Contest problems could take longer as the time limit is several days."
 
-#: templates/filter_content.html:63
-msgid "A textbook is shown as source, if no other source is known."
-msgstr "A textbook is shown as source, if no other source is known."
+#: templates/filter_content.html:60
+msgid "A book is shown as source, if no other source is known."
+msgstr "A book is shown as source, if no other source is known."
 
-#: templates/filter_content.html:68
+#: templates/filter_content.html:65
 msgid "Domain"
 msgstr "Domain"
 
-#: templates/filter_content.html:91
+#: templates/filter_content.html:88
 msgid "Every problem belongs to a domain"
 msgstr "Every problem belongs to a domain"
 
-#: templates/filter_content.html:92
+#: templates/filter_content.html:89
 msgid "Algebra"
 msgstr "Algebra"
 
-#: templates/filter_content.html:93
+#: templates/filter_content.html:90
 msgid "Combinatorics"
 msgstr "Combinatorics"
 
-#: templates/filter_content.html:94
+#: templates/filter_content.html:91
 msgid "Geometry"
 msgstr "Geometry"
 
-#: templates/filter_content.html:95
+#: templates/filter_content.html:92
 msgid "Number theory"
 msgstr "Number theory"
 
-#: templates/filter_content.html:99
+#: templates/filter_content.html:96
 msgid "Question"
 msgstr "Question"
 
-#: templates/filter_content.html:120
+#: templates/filter_content.html:117
 msgid "A question type implies the structure of a solution."
 msgstr "A question type implies the structure of a solution."
 
-#: templates/filter_content.html:121
+#: templates/filter_content.html:118
 msgid "Every subitem (A,B,...) may have its own question type."
 msgstr "Every subitem (A,B,...) may have its own question type."
 
-#: templates/filter_content.html:122
+#: templates/filter_content.html:119
 msgid "Find all solutions, show that there are no others."
 msgstr "Find all solutions, show that there are no others."
 
-#: templates/filter_content.html:123
+#: templates/filter_content.html:120
 msgid "Determine the count of answers or other objects."
 msgstr "Determine the count of answers or other objects."
 
-#: templates/filter_content.html:124
+#: templates/filter_content.html:121
 msgid "Find the largest, the smallest or the \"best\" solution."
 msgstr "Find the largest, the smallest or the \"best\" solution."
 
-#: templates/filter_content.html:125
+#: templates/filter_content.html:122
 msgid "Provide any example satisfying the requirements."
 msgstr "Provide any example satisfying the requirements."
 
-#: templates/filter_content.html:126
+#: templates/filter_content.html:123
 msgid "Prove the given statement."
 msgstr "Prove the given statement."
 
-#: templates/filter_content.html:127
+#: templates/filter_content.html:124
 msgid "Prove or disprove the given statement."
 msgstr "Prove or disprove the given statement."
 
-#: templates/filter_content.html:128
+#: templates/filter_content.html:125
 msgid "Describe a procedure, a construction, a game strategy."
 msgstr "Describe a procedure, a construction, a game strategy."
 
-#: templates/filter_content.html:132
+#: templates/filter_content.html:126
+msgid "Enter an answer such as a number, a multiple choice or Yes/No."
+msgstr "Enter an answer such as a number, a multiple choice or Yes/No."
+
+#: templates/filter_content.html:130
 msgid "Method"
 msgstr "Method"
 
-#: templates/filter_content.html:151
+#: templates/filter_content.html:149
 msgid "Method used in a solution."
 msgstr "Method used in a solution."
 
-#: templates/filter_content.html:152
+#: templates/filter_content.html:150
 msgid "Unlike other metadata method is often unspecified."
 msgstr "Unlike other metadata method is often unspecified."
 
-#: templates/filter_content.html:155 templates/main_content.html:10
-#, fuzzy
+#: templates/filter_content.html:154
+msgid "Solution"
+msgstr "Solution"
+
+#: templates/filter_content.html:176
+msgid "Has solution"
+msgstr "Has solution"
+
+#: templates/filter_content.html:177
+msgid "No solution"
+msgstr "No solution"
+
+#: templates/filter_content.html:182 templates/global.html:114
+msgid "Video"
+msgstr "Video"
+
+#: templates/filter_content.html:204
+msgid "Has video"
+msgstr "Has video"
+
+#: templates/filter_content.html:205
+msgid "No video"
+msgstr "No video"
+
+#: templates/filter_content.html:210 templates/main_content.html:10
 msgid "Search"
 msgstr "Search"
 
-#: templates/filter_content.html:157
+#: templates/filter_content.html:212
 msgid "Pages"
 msgstr "Pages"
 
-#: templates/filter_content.html:174 templates/main_content.html:18
+#: templates/filter_content.html:228 templates/main_content.html:18
 msgid "More"
 msgstr "More"
 
@@ -183,10 +204,6 @@ msgstr "Topics"
 #: templates/global.html:112
 msgid "Concepts"
 msgstr "Concepts"
-
-#: templates/global.html:114
-msgid "Video"
-msgstr "Video"
 
 #: templates/global.html:116
 msgid "References"

@@ -49,16 +49,11 @@ SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?skillName ?prob
           eliozo:problemID ?problemid . 
   }.
 } ORDER BY ?skillNumber
-    """
+"""
 
     myobj = {'query': queryTemplate }
-
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-
     x = requests.post(url, myobj, head)
-
-    print(x.text)
-
     return x.text
 
 
@@ -80,11 +75,7 @@ SELECT ?topicID ?topicParent ?topicTitle ?topicDesc WHERE {
     }
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-
     x = requests.post(url, myobj, head)
-
-    print(x.text)
-
     return x.text
 
 def getSPARQLconcepts():
@@ -107,13 +98,8 @@ SELECT ?concept ?termLV ?termEN ?conceptID ?descLV ?problemID WHERE {
 """
 
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-
     myobj = {'query': queryTemplate}
-
     x = requests.post(url, myobj, head)
-
-    print(x.text)
-
     return x.text
 
 
@@ -190,13 +176,7 @@ SELECT ?problemTextHtml ?video ?problemYear ?country ?olympiad
 
     myobj = {'query':  queryTemplate.format(problemid=arg, language=lang) }
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-
     x = requests.post(url, myobj, head)
-
-    print("myobj= {}".format(myobj))
-
-    print(x.text)
-
     return x.text
 
 
@@ -222,8 +202,6 @@ SELECT ?problemTextHtml ?solutionTextHtml WHERE {{
     myobj = {'query':  queryTemplate.format(problemid=arg, language=lang)}
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
-    print("myobj= {}".format(myobj))
-    print(x.text)
     return x.text
 
 
@@ -248,13 +226,8 @@ WHERE {{
 """
 
     myobj = {'query': queryTemplate.format(skill=skillID)}
-
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
-
     x = requests.post(url, myobj, head)
-
-    print(x.text)
-
     return x.text
 
 def getProblemsByKeywordSPARQL(keyword):
@@ -277,10 +250,10 @@ WHERE {
 }
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
-    print(x.text)
     return x.text
 
-def getProblemsByFiltersSPARQL(grade, olympiad, domain, questionType, method, theOffset):
+
+def getProblemsByFiltersSPARQL(params, theOffset):
     url = FUSEKI_URL
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -294,30 +267,47 @@ SELECT ?problemid ?text ?grade WHERE {{
            {domain}
            {questionType}
            {method}
+           {solution}
+           {video}
       eliozo:problemTextHtml ?text .
+      
+      {fGrade} {fOlympiad} {fDomain} {fQuestionType} {fMethod} {fSolution} {fVideo}
+      
       OPTIONAL {{
         ?problem eliozo:problemGrade ?grade .
       }}
 }} ORDER BY ?grade ?problemid LIMIT 10 OFFSET {offset}
 """
-    theGrade = "" if grade in ["", "NA"] else f'eliozo:suggestedGrade {grade} ; '
-    theOlympiad = "" if olympiad in ["", "NA"] else f'eliozo:olympiadType "{olympiad}" ; '
-    theDomain = "" if domain in ["", "NA"] else f'eliozo:domain "{domain}" ; '
-    theQuestionType = "" if questionType in ["", "NA"] else f'eliozo:questionType "{questionType}" ; '
-    theMethod = "" if method in ["", "NA"] else f'eliozo:LTopic "{method}" ; '
+    theGrade = "" if params["grade"] in ["NA","-"] else f'eliozo:suggestedGrade {params["grade"]} ; '
+    theOlympiad = "" if params["olympiad"] in ["NA","-"] else f'eliozo:olympiadType "{params["olympiad"]}" ; '
+    theDomain = "" if params["domain"] in ["NA","-"] else f'eliozo:domain "{params["domain"]}" ; '
+    theQuestionType = "" if params["questionType"] in ["NA","-"] else f'eliozo:questionType "{params["questionType"]}" ; '
+    theMethod = "" if params["method"] in ["NA","-"] else f'eliozo:LTopic "{params["method"]}" ; '
+    theSolution = "" if params["hasSolution"] in ["NA","-"] else f'eliozo:problemSolution ?someSolution ; '
+    theVideo = "" if params["hasVideo"] in ["NA","-"] else f'eliozo:hasVideo ?someVideo ; '
+
+    theFGrade = "" if params["grade"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:suggestedGrade ?gg . }"
+    theFOlympiad = "" if params["olympiad"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:olympiadType ?oo . }"
+    theFDomain = "" if params["domain"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:domain ?dd . }"
+    theFQuestionType = "" if params["questionType"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:questionType ?qq . }"
+    theFMethod = "" if params["method"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:LTopic ?mm . }"
+    theFSolution = "" if params["hasSolution"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:problemSolution ?ss . }"
+    theFVideo = "" if params["hasVideo"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:hasVideo ?vv . }"
 
     q = queryTemplate.format(grade=theGrade, olympiad=theOlympiad,
                              domain=theDomain, questionType=theQuestionType,
-                             method=theMethod, offset=theOffset)
-    print(f"****query = ******'{q}'")
+                             method=theMethod, offset=theOffset,
+                             solution=theSolution, video=theVideo,
+                             fGrade=theFGrade, fOlympiad=theFOlympiad, fDomain=theFDomain,
+                             fQuestionType=theFQuestionType, fMethod=theFMethod,
+                             fSolution=theFSolution, fVideo=theFVideo)
     myobj = {'query': q}
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
-    print(x.text)
     return x.text
 
 
-def getProblemCountsByFiltersSPARQL(grade, olympiad, domain, questionType, method):
+def getProblemCountsByFiltersSPARQL(params):
     url = FUSEKI_URL
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -330,21 +320,40 @@ SELECT (COUNT(*) AS ?count) WHERE {{
            {olympiad}
            {domain}
            {questionType}
-           {method} .
+           {method} 
+           {solution}
+           {video} .
+           {fGrade} {fOlympiad} {fDomain} {fQuestionType} {fMethod} {fSolution} {fVideo}
 }}
 """
-    theGrade = '' if grade in ['', 'NA'] else f'eliozo:suggestedGrade {grade} ; '
-    theOlympiad = '' if olympiad in ['', 'NA'] else f'eliozo:olympiadType "{olympiad}" ; '
-    theDomain = '' if domain in ['', 'NA'] else f'eliozo:domain "{domain}" ; '
-    theQuestionType = '' if questionType in ['', 'NA'] else f'eliozo:questionType "{questionType}" ; '
-    theMethod = '' if method in ['', 'NA'] else f'eliozo:LTopic "{method}" ; '
+    theGrade = '' if params["grade"] in ["NA","-"] else f'eliozo:suggestedGrade {params["grade"]} ; '
+    theOlympiad = '' if params["olympiad"] in ["NA","-"] else f'eliozo:olympiadType "{params["olympiad"]}" ; '
+    theDomain = '' if params["domain"] == "NA" else f'eliozo:domain "{params["domain"]}" ; '
+    theQuestionType = '' if params["questionType"] == "NA" else f'eliozo:questionType "{params["questionType"]}" ; '
+    theMethod = '' if params["method"] == "NA" else f'eliozo:LTopic "{params["method"]}" ; '
+    theSolution = "" if params["hasSolution"] == "NA" else f'eliozo:problemSolution ?someSolution ; '
+    theVideo = "" if params["hasVideo"] == "NA" else f'eliozo:hasVideo ?someVideo ; '
+    theFGrade = "" if params["grade"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:suggestedGrade ?gg . }"
+    theFOlympiad = "" if params["olympiad"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:olympiadType ?oo . }"
+    theFDomain = "" if params["domain"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:domain ?dd . }"
+    theFQuestionType = "" if params["questionType"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:questionType ?qq . }"
+    theFMethod = "" if params["method"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:LTopic ?mm . }"
+    theFSolution = "" if params["hasSolution"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:problemSolution ?ss . }"
+    theFVideo = "" if params["hasVideo"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:hasVideo ?vv . }"
+
     q = queryTemplate.format(grade=theGrade, olympiad=theOlympiad,
                              domain=theDomain, questionType=theQuestionType,
-                             method=theMethod)
-    print(f"****CountQuery = ******'{q}'")
+                             method=theMethod, solution=theSolution, video=theVideo,
+                             fGrade=theFGrade, fOlympiad=theFOlympiad, fDomain=theFDomain,
+                             fQuestionType=theFQuestionType, fMethod=theFMethod,
+                             fSolution=theFSolution, fVideo=theFVideo)
     myobj = {'query': q}
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
+    # print('************')
+    # print(f'q = {q}')
+    # print("============")
     x = requests.post(url, myobj, head)
+    print(f'x = "{x.text}"')
     return x.text
 
 def getSkillDetails(skillID):
@@ -365,7 +374,6 @@ SELECT ?skillID ?skillNumber ?skillName ?skillDesc WHERE {{
     myobj = {'query': queryTemplate.format(skill=skillID)}
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
-    print(x.text)
     return x.text
 
 
@@ -387,15 +395,9 @@ SELECT ?skillID ?prefLabel ?num ?skillName WHERE {{
 }} ORDER BY ?num
 """
 
-
     myobj = {'query': queryTemplate.format(skill=skillID)}
-
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-
     x = requests.post(url, myobj, head)
-
-    print(x.text)
-
     return x.text
 
 def getSPARQLOlympiads():
@@ -417,15 +419,9 @@ SELECT DISTINCT ?olympiadCountry ?olympiad ?olympiadCode ?olympiadName ?olympiad
 } ORDER BY ?olympiadCountry ?olympiadName
 """
 
-
     myobj = { 'query': queryTemplate }
-
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-
     x = requests.post(url, myobj, head)
-
-    print(x.text)
-
     return x.text
 
 def getSPARQLOlympiadYears(country, olympiad):
@@ -442,23 +438,9 @@ SELECT DISTINCT ?year ?grade WHERE {{
            eliozo:problemGrade ?grade . 
 }} ORDER BY DESC(?year) ?grade"""
 
-    # myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
-    # 'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
-    # 'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n'+
-    # 'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>\n'+
-    # 'SELECT DISTINCT ?year ?grade WHERE { ?problem eliozo:country \''+country+
-    # '\' ; eliozo:olympiadCode \''+olympiad+
-    # '\' ; eliozo:problemYear ?year ; eliozo:problemGrade ?grade . } ORDER BY DESC(?year) ?grade'
-    # }
-
     myobj = {'query': queryTemplate.format(country=country, olympiad=olympiad)}
-
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-
     x = requests.post(url, myobj, head)
-
-    print(x.text)
-
     return x.text
 
 def getSPARQLOlympiadGrades(year, country, grade, olympiad, lang):
@@ -484,15 +466,8 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad, lang):
     myobj = { 'query':
         queryTemplate.format(year=year, country=country, grade=grade, olympiad_code=olympiad, language=lang)
     }
-
-    print('**********myobj={}'.format(myobj))
-
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-
     x = requests.post(url, myobj, head)
-
-    print(x.text)
-
     return x.text
 
 def getSPARQLOlympiadYear(year, country, olympiad, lang):
@@ -519,15 +494,8 @@ SELECT ?text ?problemid ?problem_number ?problem_grade ?suffix WHERE {{
     myobj = { 'query':
         queryTemplate.format(year=year, country=country, olympiad_code=olympiad, language=lang)
     }
-
-    print('**********myobj={}'.format(myobj))
-
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-
     x = requests.post(url, myobj, head)
-
-    print(x.text)
-
     return x.text
 
 def getSPARQLBook(bookid, sectionid):
@@ -554,19 +522,13 @@ SELECT ?text ?problemid ?problem_number ?imagefile WHERE {{
     myobj = {'query':
         queryTemplate.format(book=bookid, section=sectionid)
     }
-
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-
     x = requests.post(url, myobj, head)
-
-    print(x.text)
-
     return x.text
               
 
 
 def getSPARQLVideoBookmarks(problemid):
-    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     url = FUSEKI_URL
     myobj = { 'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
     'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
@@ -585,13 +547,8 @@ def getSPARQLVideoBookmarks(problemid):
   }.
 } ORDER BY ?tstamp'''
     }
-
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-
     x = requests.post(url, myobj, head)
-
-    print(x.text)
-
     return x.text
 
 def getAllSPARQLVideos():
@@ -612,15 +569,9 @@ SELECT ?problemid ?text ?textHtml WHERE {
   } ORDER BY ?grade ?problemid
 """
 
-
     myobj = { 'query': queryTemplate }
-
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-
     x = requests.post(url, myobj, head)
-
-    print(x.text)
-
     return x.text
 
 
@@ -632,13 +583,7 @@ def mathBeautify(a): # Izskaistina formulas ar MathJax Javascript bibliotēku
 
 def get_locale():
     locale = session.get('lang', 'lv')
-    # print(f"&&&&&& Selected locale: {locale}")
     return locale
-
-# def log_missing_translations(exception, *args, **kwargs):
-#     if isinstance(exception, MissingTranslationError):
-#         logging.warning(f"Missing translation for: {args[0]}")
-#     return exception
 
 
 def configure_logging():
@@ -672,18 +617,12 @@ def create_app(test_config=None):
     app.config['BABEL_TRANSLATION_DIRECTORIES'] = 'translations'
     babel = Babel(app, locale_selector=get_locale)
 
-
-    # Configure Babel logging for missing translations
-    # app.config['BABEL_MISSING_TRANSLATION'] = log_missing_translations
-
     if test_config is None:
         # load the instance config, if it exists, when not testing
         app.config.from_pyfile('config.py', silent=True)
     else:
         # load the test config if passed in
         app.config.from_mapping(test_config)
-
-
 
     # ensure the instance folder exists
     try:
@@ -703,22 +642,11 @@ def create_app(test_config=None):
                 replaced_text += char
         return replaced_text
 
-    # def fix_image_links(arg):
-    #     img_regex1 = r'<img\s+(alt\S*)\s+src="([^"/]*)" />\{ width=([^"]*) \}'
-    #     img_replace1 = r'<img \1 style="width:\3" src="https://www.dudajevagatve.lv/static/eliozo/images/\2"/>'
-    #     img_regex2 = r'<img\s+(alt\S*)\s+src="([^"/]*)" />'
-    #     img_replace2 = r'<img \1 src="https://www.dudajevagatve.lv/static/eliozo/images/\2"/>'
-    #     arg = re.sub(img_regex1, img_replace1, arg)
-    #     arg = re.sub(img_regex2, img_replace2, arg)
-    #     return arg
-
     @app.route('/setlang')
     def setLanguage():
         lang = request.args.get('lang')
         next_url = request.args.get('next')
         next_url = '/eliozo' + request.args.get('next') if next_url else url_for('main')
-        print(f'lang = {lang}')
-        print(f'next_url = {next_url}')
 
         if lang in LANGUAGES:
             session['lang'] = lang
@@ -750,7 +678,6 @@ def create_app(test_config=None):
             d = {'problemid': problem_id_value, 'text': problem_text_value, 'imagefile': problem_imagefile}
             problems.append(d)
 
-
         template_context = {
             'problems': problems,
             'keyword' : keyword,
@@ -758,27 +685,22 @@ def create_app(test_config=None):
             'lang': session.get('lang', 'lv'),
             'title': 'Sākumlapa'
         }
-
         return render_template('main_content.html', **template_context)
 
     # faceted browse
     @app.route('/filter')
     def getFilter():
-        grade = request.args.get('grade')
-        if grade is None:
-            grade = "NA"
-        olympiad = request.args.get('olympiad')
-        if olympiad is None:
-            olympiad = "NA"
-        domain = request.args.get('domain')
-        if domain is None:
-            domain = "NA"
-        questionType = request.args.get('questionType')
-        if questionType is None:
-            questionType = "NA"
-        method = request.args.get('method')
-        if method is None:
-            method = "NA"
+        requestParams = ['grade', 'olympiad', 'domain', 'questionType', 'method', 'hasSolution', 'hasVideo']
+        params = dict()
+        all_counts = {'grade': dict(), 'olympiad': dict(), 'domain': dict(),
+                      'questionType': dict(), 'method': dict(), 'hasSolution': dict(), 'hasVideo': dict()}
+
+        for requestParam in requestParams:
+            requestVal = request.args.get(requestParam)
+            if requestVal is None:
+                requestVal = "NA"
+            params[requestParam] = requestVal
+
         offset = request.args.get('offset')
         if offset is None or offset == '':
             offset = 0
@@ -792,7 +714,8 @@ def create_app(test_config=None):
                             ('RegionalOrOpen', {'en':'Regional/Open', 'lt':'Rajoninės/atviros', 'lv':'Reģionālās/atklātās'}),
                             ('National', {'en':'National', 'lt':'Respublikinė', 'lv':'Nacionālā'}),
                             ('TeamSelection', {'en':'Team selection', 'lt':'Atrankos', 'lv':'Papildsacensības'}),
-                            ('International', {'en':'International', 'lt':'Tarptautinė', 'lv':'Starptautiska'})]
+                            ('International', {'en':'International', 'lt':'Tarptautinė', 'lv':'Starptautiska'}),
+                            ('-', {'en':'NA', 'lt':'NA', 'lv':'NA'})]
 
         methodDict = [('LTInduction', {'en':'Induction', 'lt':'Indukcija', 'lv':'Indukcija'}),
                       ('LTMeanValuePrinciple', {'en':'MeanValue', 'lt':'Vidutinė Vertė', 'lv':'Vid.Vērtība'}),
@@ -802,13 +725,16 @@ def create_app(test_config=None):
                       ('LTInterpretation', {'en':'Interpretation', 'lt': 'Interpretacija', 'lv':'Interpretācija'}),
                       ('LTExpressionTransforms', {'en':'Transforms', 'lt':'Pertvarkymai', 'lv':'Pārveidojumi'}),
                       ('LTStructureAugmentation', {'en':'Structure augmentation', 'lt':'Pagalbinės Konstrukcijos', 'lv':'Papildkonstrukcijas'}),
-                      ('', {'en':'Unspecified', 'lt':'Nežinomas', 'lv':'Nenorādīta'})]
+                      ('-', {'en':'NA', 'lt':'NA', 'lv':'NA'})]
 
-        if grade == "NA" and olympiad == "NA" and  domain == "NA" and questionType == "NA" and method == "NA":
+        if all(value == 'NA' for value in params.values()):
+        # if grade == "NA" and olympiad == "NA" and  domain == "NA" and questionType == "NA" and method == "NA" and hasSolution == "NA" and hasVideo == "NA":
             template_context = {
                 'problems': problems,
                 'active': 'filter',
                 'lang': session.get('lang', 'lv'),
+                'params': params,
+                'all_counts': all_counts,
                 'olympiadTypeDict': olympiadTypeDict,
                 'methodDict': methodDict,
                 'title': 'Filtri'
@@ -816,80 +742,53 @@ def create_app(test_config=None):
             return render_template('filter_content.html', **template_context)
 
         else:
-            print(f"***Grade IS @{grade}@**")
-            link = json.loads(getProblemsByFiltersSPARQL(grade, olympiad, domain, questionType, method, offset))
+            link = json.loads(getProblemsByFiltersSPARQL(params, offset))
             for item in link['results']['bindings']:
                 problem_id_value = item['problemid']['value']
-                # problem_imagefile = ''
-                # if 'imagefile' in item:
-                #     problem_imagefile = item['imagefile']['value']
                 problem_text_value = mathBeautify(item['text']['value'])
                 problem_text_value = fix_image_links(problem_text_value)
                 d = {'problemid': problem_id_value, 'text': problem_text_value}
                 problems.append(d)
 
+            all_values = {'grade':['5', '6', '7', '8',
+                                   '9', '10', '11', '12', '-'],
+                          'olympiad':['Contest', 'Book', 'RegionalOrOpen',
+                                      'National', 'TeamSelection', 'International', '-'],
+                          'domain':['Alg', 'Comb', 'Geom', 'NT', '-'],
+                          'questionType':['FindAll', 'FindCount', 'FindOptimal', 'FindExample',
+                                          'Prove', 'ProveDisprove', 'Algorithm', 'ShortAnswer', '-'],
+                          'method':['LTInduction', 'LTMeanValuePrinciple', 'LTExtremeElement',
+                                    'LTInvariant', 'LTContradiction', 'LTInterpretation',
+                                    'LTExpressionTransforms', 'LTStructureAugmentation', '-'],
+                          'hasSolution':['1', '-'],
+                          'hasVideo':['1', '-']}
 
-            all_grades = ['5', '6', '7', '8', '9', '10', '11', '12']
-            grade_counts = dict()
-            for curr_grade in all_grades:
-                count_json = json.loads(getProblemCountsByFiltersSPARQL(curr_grade, olympiad, domain, questionType, method))
-                grade_counts[curr_grade] = count_json['results']['bindings'][0]['count']['value']
+            for par in ['grade', 'olympiad', 'domain', 'questionType', 'method', 'hasSolution', 'hasVideo']:
+                params1 = params.copy()
+                for curr_val in all_values[par]:
+                    params1[par] = curr_val
+                    if par == 'hasSolution':
+                        print(f'params1 = {params1}')
 
-            all_olympiads = ['Contest', 'Book', 'RegionalOrOpen', 'National', 'TeamSelection', 'International']
-            olympiad_counts = dict()
-            for curr_olympiad in all_olympiads:
-                count_json = json.loads(getProblemCountsByFiltersSPARQL(grade, curr_olympiad, domain, questionType, method))
-                olympiad_counts[curr_olympiad] = count_json['results']['bindings'][0]['count']['value']
+                    count_json = json.loads(getProblemCountsByFiltersSPARQL(params1))
+                    all_counts[par][curr_val] = count_json['results']['bindings'][0]['count']['value']
 
-            all_domains = ['Alg', 'Comb', 'Geom', 'NT', '']
-            domain_counts = dict()
-            for curr_domain in all_domains:
-                count_json = json.loads(getProblemCountsByFiltersSPARQL(grade, olympiad, curr_domain, questionType, method))
-                domain_counts[curr_domain] = count_json['results']['bindings'][0]['count']['value']
-
-
-            all_questionTypes = ['FindAll', 'FindCount', 'FindOptimal', 'FindExample', 'Prove', 'ProveDisprove', 'Algorithm']
-            questionType_counts = dict()
-            for curr_questionType in all_questionTypes:
-                count_json = json.loads(getProblemCountsByFiltersSPARQL(grade, olympiad, domain, curr_questionType, method))
-                questionType_counts[curr_questionType] = count_json['results']['bindings'][0]['count']['value']
-
-            #                 {% for (val,lbl) in [('LTInduction','Indukcija'), ('LTMeanValuePrinciple','Vid.Vērtība'),
-            #                 ('LTExtremeElement', 'Ekstr.Elements'),('LTInvariant', 'Invariants'),
-            #                 ('LTContradiction', 'Pretruna'),('LTInterpretation','Interpretācijas'),
-            #                 ('LTExpressionTransforms','Pārveidojumi'),('LTStructureAugmentation','Papildkonstrukcijas'),
-            #                 ('', 'Jebkāda')] %}
-            all_methods = ['LTInduction', 'LTMeanValuePrinciple', 'LTExtremeElement', 'LTInvariant',
-                           'LTContradiction', 'LTInterpretation', 'LTExpressionTransforms', 'LTStructureAugmentation', '']
-            method_counts = dict()
-            for curr_method in all_methods:
-                count_json = json.loads(
-                    getProblemCountsByFiltersSPARQL(grade, olympiad, domain, questionType, curr_method))
-                method_counts[curr_method] = count_json['results']['bindings'][0]['count']['value']
-
-            if domain not in domain_counts:
-                domain = ''
+            # if params['domain'] not in all_counts['domain']:
+            #     params['domain'] = ''
             page_offsets = []
-            print(f'domain_counts = {int(domain_counts[domain])}')
-            if int(domain_counts[domain]) > 10:
+            count_json = json.loads(getProblemCountsByFiltersSPARQL(params))
+            curr_filter_count = int(count_json['results']['bindings'][0]['count']['value'])
+
+            if curr_filter_count > 10:
                 current_offset = 0
-                while int(domain_counts[domain]) - current_offset > 0:
+                while curr_filter_count - current_offset > 0:
                     page_offsets.append(current_offset)
                     current_offset += 10
 
-            print(f'page_offsets = {len(page_offsets)}')
             template_context = {
                 'problems': problems,
-                'grade': grade,
-                'olympiad': olympiad,
-                'domain': domain,
-                'questionType': questionType,
-                'method': method,
-                'grade_counts': grade_counts,
-                'olympiad_counts': olympiad_counts,
-                'domain_counts': domain_counts,
-                'questionType_counts': questionType_counts,
-                'method_counts': method_counts,
+                'params': params,
+                'all_counts': all_counts,
                 'olympiadTypeDict': olympiadTypeDict,
                 'methodDict': methodDict,
                 'page_offsets': page_offsets,
@@ -899,7 +798,6 @@ def create_app(test_config=None):
                 'title': 'Filtri'
             }
             return render_template('filter_content.html', **template_context)
-
 
     # json 
     @app.route("/json")
@@ -942,33 +840,6 @@ def create_app(test_config=None):
             'title': 'Video'
         }
 
-        # problemid = request.args.get('problemid')
-
-        # problemid = "LV.AO.2011.5.1"
-
-        # data = json.loads(getSPARQLVideoBookmarks(problemid))
-
-        # bookmarks = []
-        # video_title = "NA"
-        # youtubeID = "NA"
-
-        # for item in data['results']['bindings']:
-        #     video_title = item['videoTitle']['value']
-        #     youtubeID = item['youtubeID']['value']
-        #     minutes = int(item['tstamp']['value']) // 60
-        #     if minutes < 10:
-        #         minutes = '0' + str(minutes)
-        #     seconds = int(item['tstamp']['value']) % 60
-        #     if seconds < 10:
-        #         seconds = '0' + str(seconds)
-        #     bookmarks.append({'tstamp': item['tstamp']['value'], 'bmtext': item['bmtext']['value'], 'minutes': minutes, 'sec': seconds}) # Bookmarkos sakrāta informācija par tstamp un bmtext
-
-        # template_context = {
-        #     'video_title': video_title,
-        #     'bookmarks': bookmarks,
-        #     'youtubeID': youtubeID,
-        # }
-
         return render_template('video_content.html', **template_context)
 
     @app.route('/topics', methods=['GET','POST'])
@@ -985,8 +856,6 @@ def create_app(test_config=None):
             if item['skillIdentifier']['value'] != current_skill:
                 all_skills.append(item['skillIdentifier']['value']) # Pievienojam jaunu prasmi sarakstam all_skills
                 current_skill = item['skillIdentifier']['value'] # Atceramies pēdējo pievienoto vērtību, lai neiespraustu atkārtoti
-                print(f'current_skill = {current_skill}')
-
                 current_skill_info = dict() # Vārdnīca vienai tabulas rindai
                 current_skill_info['skillIdentifier'] = current_skill
                 current_skill_info['skillNumber'] = item['skillNumber']['value']
@@ -1195,8 +1064,6 @@ def create_app(test_config=None):
     def getProblem():
         lang = session.get('lang', 'lv')
         problemid = request.args.get('problemid')
-
-        print(f"**************** problemid = {problemid}")
         solnData = json.loads(getSPARQLProblemSolutions(problemid, lang))
         hasSolution = False
         if 'solutionTextHtml' in solnData['results']['bindings'][0]:
@@ -1240,13 +1107,6 @@ def create_app(test_config=None):
                 if seconds < 10:
                     seconds = '0' + str(seconds)
                 bookmarks.append({'tstamp': item['tstamp']['value'], 'bmtext': item['bmtext']['value'], 'minutes': minutes, 'sec': seconds}) # Bookmarkos sakrāta informācija par tstamp un bmtext
-
-        # metaitems = [
-        #     {'key':'olympiad', 'value': 'AMO'},
-        #     {'key':'country', 'value':'EEFF'},
-        #     {'key':'grade', 'value': '10'},
-        #     {'key':'problemID','value': 'LV.AMO.2000.10.2'}
-        # ]
 
         metaitems = []
         problemYear = "NA"
@@ -1346,8 +1206,6 @@ def create_app(test_config=None):
     def getProblemSolution():
         problemid = request.args.get('problemid')
         lang = session.get('lang', 'lv')
-
-        print(f"**************** problemid = {problemid}")
         data = json.loads(getSPARQLProblemSolutions(problemid, lang))
 
         problemTextHtml = data['results']['bindings'][0]['problemTextHtml']['value']
@@ -1377,7 +1235,6 @@ def create_app(test_config=None):
     @app.route('/archive', methods=['GET', 'POST'])
     def getArchive():
         olympiads = json.loads(getSPARQLOlympiads())
-        print(olympiads)
         olympiadData = []
         for rr in olympiads['results']['bindings']:
             olympiadName = rr['olympiadName']['value']
@@ -1389,9 +1246,6 @@ def create_app(test_config=None):
                 olympiadCountry = rr['olympiadCountry']['value']
                 if olympiadCountry.find('#') >= 0:
                     country = olympiadCountry[olympiadCountry.find('#')+1:]
-            # olyString = rr['olympiad']['value'].split("#")[-1]
-            # print(f'olyString={olyString}')
-            # (olympiadCountry,olympiadCode) = olyString.split(".")
             olympiadData.append({'olympiadName': olympiadName, 'olympiadDescription': olympiadDescription, 'olympiadCountry':country, 'olympiadCode': olympiadCode})
 
         template_context = {
@@ -1407,12 +1261,8 @@ def create_app(test_config=None):
     def getOlympiad():
         country_id = request.args.get('country_id')
         olympiad_id= request.args.get('olympiad_id')
-
-        # Sākas datu piekļuve (Modelis)
         x = getSPARQLOlympiadYears(country_id, olympiad_id)
-        print(x)
         olympiads = json.loads(x)
-
 
         all_years = []
         all_grades = dict()
@@ -1427,7 +1277,6 @@ def create_app(test_config=None):
             grade = int(item['grade']['value'])
             all_grades[current_year][grade-5] = item['grade']['value'] # 0. 5.klase, 1. 6.klase utt.
 
-        # Kontrolieris izlemj, kādus datus sūtīs klientam, saliek tos vārdnīcā
         template_context = {
             'all_years': all_years,
             'all_grades': all_grades,
@@ -1437,7 +1286,6 @@ def create_app(test_config=None):
             'lang': session.get('lang', 'lv'),
             'title': 'Olimpiāde'
         }
-        # Kontrolieris izlemj, uz kuru skatu sūtīs klientu
         return render_template('olympiad_content.html', **template_context)
 
 #year, country, grade, olympiad
@@ -1448,8 +1296,6 @@ def create_app(test_config=None):
         country = request.args.get('country')
         grade = request.args.get('grade')
         olympiad= request.args.get('olympiad')
-        print('Gads = {}, country - {}, grade = {}, olympiad = {}'.format(year,country,grade,olympiad))
-
         if grade == '-1':
             link = json.loads(getSPARQLOlympiadYear(year, country, olympiad, lang))
         else:

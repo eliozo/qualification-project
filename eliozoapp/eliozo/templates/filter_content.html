@@ -9,19 +9,18 @@
             <div class="filter" style="max-width: 140px;">
                 <b>{% trans %}Grade{% endtrans %}:</b><br/>
                 {% for (val,lbl) in [('5','5'), ('6','6'), ('7', '7'), ('8', '8'),
-                ('9', '9'), ('10', '10'), ('11', '11'), ('12', '12')] %}
-                {% if val == grade %}
+                ('9', '9'), ('10', '10'), ('11', '11'), ('12', '12'), ('-', 'NA')] %}
+                {% if val == params['grade'] %}
                 <label class="selected"><input type="radio" name="grade" checked="1" value="{{ val }}"
                     onchange="document.getElementById('searchForm').submit();">{{ lbl }}
-                    {% if grade_counts %} [{{ grade_counts[val] }}]&nbsp; {% endif %}</label>
+                    {% if all_counts['grade'] %} [{{ all_counts['grade'][val] }}]&nbsp; {% endif %}</label>
                 {% else %}
                 <label><input type="radio" name="grade" value="{{ val }}"
                     onchange="document.getElementById('searchForm').submit();">{{ lbl }}&nbsp;
-                    {% if grade_counts %} [{{ grade_counts[val] }}]&nbsp; {% endif %}</label>
+                    {% if all_counts['grade'] %} [{{ all_counts['grade'][val] }}]&nbsp; {% endif %}</label>
                 {% endif %}
-                {% if not loop.last and val in ['6', '8', '10', '12'] %}<br/>{% endif %}
+                {% if val in ['6', '8', '10', '12'] %}<br/>{% endif %}
                 {% endfor %}
-                <br/>
                 <small><a href="#" onclick=
                     "document.querySelectorAll('input[name=grade]').forEach(el => {
                     el.checked = false;
@@ -37,18 +36,17 @@
             <div class="filter" style="max-width: 190px;">
                 <b>{% trans %}Source{% endtrans %}:</b><br/>
                 {% for (val,lbl) in olympiadTypeDict %}
-                {% if val == olympiad %}
+                {% if val == params['olympiad'] %}
                 <label class="selected"><input type="radio" name="olympiad" checked="1" value="{{ val }}"
                 onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
-                    {% if olympiad_counts %} [{{ olympiad_counts[val] }}]&nbsp; {% endif %}</label>
+                    {% if all_counts['olympiad'] %} [{{ all_counts['olympiad'][val] }}]&nbsp; {% endif %}</label>
                 {% else %}
                 <label><input type="radio" name="olympiad" value="{{ val }}"
                 onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
-                    {% if olympiad_counts %} [{{ olympiad_counts[val] }}]&nbsp; {% endif %}</label>
+                    {% if all_counts['olympiad'] %} [{{ all_counts['olympiad'][val] }}]&nbsp; {% endif %}</label>
                 {% endif %}
-                {% if not loop.last %}<br/>{% endif %}
-                {% endfor %}
                 <br/>
+                {% endfor %}
                 <small><a href="#" onclick=
                     "document.querySelectorAll('input[name=olympiad]').forEach(el => {
                     el.checked = false;
@@ -57,31 +55,30 @@
                 {% trans %}Remove Filter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext">{% trans %}Regional or open olympiads aim for mass participation.{% endtrans %}
-        {% trans %}National, team selection or international olympiads may rely on advanced preparation.{% endtrans %}
+    <span class="tltiptext">{% trans %}Regional or open olympiads cover fewer topics and require less preparation compared to others.{% endtrans %}
         {% trans %}Contest problems could take longer as the time limit is several days.{% endtrans %}
-        {% trans %}A textbook is shown as source, if no other source is known.{% endtrans %}</span></span>
+        {% trans %}A book is shown as source, if no other source is known.{% endtrans %}</span></span>
             </div>
 
             <!-- Domain Filter -->
             <div class="filter" style="max-width: 120px;">
                 <b>{% trans %}Domain{% endtrans %}:</b>
                 {% for (val,lbl) in [('Alg','Alg'), ('Comb','Comb'), ('Geom', 'Geom'),
-                ('NT', 'NT')] %}
-                {% if val == domain %}
+                ('NT', 'NT'), ('-', 'NA')] %}
+                {% if val == params['domain'] %}
                 <label class="selected"><input type="radio" name="domain" checked="1" value="{{ val }}"
                     onchange="document.getElementById('searchForm').submit();">{{ lbl }}
-                {% if domain_counts %} [{{ domain_counts[val] }}]&nbsp; {% endif %}
+                {% if all_counts['domain'] %} [{{ all_counts['domain'][val] }}]&nbsp; {% endif %}
                 </label>
                 {% else %}
                 <label><input type="radio" name="domain" value="{{ val }}"
                     onchange="document.getElementById('searchForm').submit();">{{ lbl }}
-                {% if domain_counts %} [{{ domain_counts[val] }}]&nbsp; {% endif %}
+                {% if all_counts['domain'] %} [{{ all_counts['domain'][val] }}]&nbsp; {% endif %}
                 </label>
                 {% endif %}
-                {% if not loop.last %}<br/>{% endif %}
+                <br/>
                 {% endfor %}
-                <br/><small><a href="#" onclick=
+                <small><a href="#" onclick=
                     "document.querySelectorAll('input[name=domain]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
@@ -98,16 +95,16 @@
             <div class="filter"  style="max-width: 180px;">
                 <b>{% trans %}Question{% endtrans %}:</b>
                 {% for (val,lbl) in [('FindAll','FindAll'), ('FindCount','FindCount'), ('FindOptimal', 'FindOptimal'),
-                ('FindExample', 'FindExample'),('Prove','Prove'),('ProveDisprove','ProveDisprove'),
-                ('Algorithm','Algorithm')] %}
-                {% if val == questionType %}
+                ('FindExample','FindExample'),('Prove','Prove'),('ProveDisprove','ProveDisprove'),
+                ('Algorithm','Algorithm'),('ShortAnswer','ShortAnswer'), ('-', 'NA')] %}
+                {% if val == params['questionType'] %}
                 <label class="selected"><input type="radio" name="questionType" checked="1" value="{{ val }}"
                     onchange="document.getElementById('searchForm').submit();">{{ lbl }}
-                    {% if questionType_counts %} [{{ questionType_counts[val] }}]&nbsp; {% endif %}</label>
+                    {% if all_counts['questionType'] %} [{{ all_counts['questionType'][val] }}]&nbsp; {% endif %}</label>
                 {% else %}
                 <label><input type="radio" name="questionType" value="{{ val }}"
                     onchange="document.getElementById('searchForm').submit();">{{ lbl }}
-                    {% if questionType_counts %} [{{ questionType_counts[val] }}]&nbsp; {% endif %}</label>
+                    {% if all_counts['questionType'] %} [{{ all_counts['questionType'][val] }}]&nbsp; {% endif %}</label>
                 {% endif %}{% if not loop.last %}<br/>{% endif %}
                 {% endfor %}
                 <br/><small><a href="#" onclick=
@@ -125,20 +122,21 @@
     <b>FindExample</b> - {% trans %}Provide any example satisfying the requirements.{% endtrans %}<br/>
     <b>Prove</b> - {% trans %}Prove the given statement.{% endtrans %}<br/>
     <b>ProveDisprove</b> - {% trans %}Prove or disprove the given statement.{% endtrans %}<br/>
-    <b>Algorithm</b> - {% trans %}Describe a procedure, a construction, a game strategy.{% endtrans %}</span></span>
+    <b>Algorithm</b> - {% trans %}Describe a procedure, a construction, a game strategy.{% endtrans %}<br/>
+    <b>ShortAnswer</b> - {% trans %}Enter an answer such as a number, a multiple choice or Yes/No.{% endtrans %}</span></span>
             </div>
 
             <div class="filter">
                 <b>{% trans %}Method{% endtrans %}:</b>
                 {% for (val,lbl) in methodDict %}
-                {% if val == method %}
+                {% if val == params['method'] %}
                 <label class="selected"><input type="radio" name="method" checked="1" value="{{ val }}"
                     onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
-                    {% if method_counts %} [{{ method_counts[val] }}]&nbsp; {% endif %}</label>
+                    {% if all_counts['method'] %} [{{ all_counts['method'][val] }}]&nbsp; {% endif %}</label>
                 {% else %}
                 <label><input type="radio" name="method" value="{{ val }}"
                     onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
-                    {% if method_counts %} [{{ method_counts[val] }}]&nbsp; {% endif %}</label>
+                    {% if all_counts['method'] %} [{{ all_counts['method'][val] }}]&nbsp; {% endif %}</label>
                 {% endif %}
                 {% endfor %}
                 <br/><small><a href="#" onclick=
@@ -151,6 +149,63 @@
     <span class="tltiptext">{% trans %}Method used in a solution.{% endtrans %}
     {% trans %}Unlike other metadata method is often unspecified.{% endtrans %}</span></span>
             </div>
+
+            <div class="filter" style="max-width: 160px;">
+                <b>{% trans %}Solution{% endtrans %}:</b>
+
+                {% for (val,lbl) in [('1','1'), ('-','NA')] %}
+                {% if val == params['hasSolution'] %}
+                <label class="selected"><input type="radio" name="hasSolution" checked="1" value="{{ val }}"
+                    onchange="document.getElementById('searchForm').submit();">{{ lbl }}
+                    {% if all_counts['hasSolution'] %} [{{ all_counts['hasSolution'][val] }}]&nbsp; {% endif %}</label>
+                {% else %}
+                <label><input type="radio" name="hasSolution" value="{{ val }}"
+                    onchange="document.getElementById('searchForm').submit();">{{ lbl }}
+                    {% if all_counts['hasSolution'] %} [{{ all_counts['hasSolution'][val] }}]&nbsp; {% endif %}</label>
+                {% endif %}{% if not loop.last %}<br/>{% endif %}
+                {% endfor %}
+
+                <br/><small><a href="#" onclick=
+                    "document.querySelectorAll('input[name=hasSolution]').forEach(el => {
+                    el.checked = false;
+                    el.parentElement.classList.remove('selected');
+                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{% endtrans %}</a></small>
+                <span class="tltip"><img style="vertical-align: middle;width:12px;"
+         src="{{ url_for('static',filename='blue_question_mark.png') }}">
+        <span class="tltiptext">
+        <b>1</b> - {% trans %}Has solution{% endtrans %}<br/>
+        <b>NA</b> - {% trans %}No solution{% endtrans %}
+        </span></span>
+            </div>
+
+            <div class="filter" style="max-width: 160px;">
+                <b>{% trans %}Video{% endtrans %}:</b>
+
+                {% for (val,lbl) in [('1','1'), ('-','NA')] %}
+                {% if val == params['hasVideo'] %}
+                <label class="selected"><input type="radio" name="hasVideo" checked="1" value="{{ val }}"
+                    onchange="document.getElementById('searchForm').submit();">{{ lbl }}
+                    {% if all_counts['hasVideo'] %} [{{ all_counts['hasVideo'][val] }}]&nbsp; {% endif %}</label>
+                {% else %}
+                <label><input type="radio" name="hasVideo" value="{{ val }}"
+                    onchange="document.getElementById('searchForm').submit();">{{ lbl }}
+                    {% if all_counts['hasVideo'] %} [{{ all_counts['hasVideo'][val] }}]&nbsp; {% endif %}</label>
+                {% endif %}{% if not loop.last %}<br/>{% endif %}
+                {% endfor %}
+
+                 <br/><small><a href="#" onclick=
+                    "document.querySelectorAll('input[name=hasVideo]').forEach(el => {
+                    el.checked = false;
+                    el.parentElement.classList.remove('selected');
+                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{% endtrans %}</a></small>
+                <span class="tltip"><img style="vertical-align: middle;width:12px;"
+         src="{{ url_for('static',filename='blue_question_mark.png') }}">
+        <span class="tltiptext">
+        <b>1</b> - {% trans %}Has video{% endtrans %}<br/>
+        <b>NA</b> - {% trans %}No video{% endtrans %}
+        </span></span>
+
+            </div>
         </div>
         <button type="submit" class="search-button">{% trans %}Search{% endtrans %}</button>
         {% if page_offsets %}
@@ -159,12 +214,11 @@
         {% if curr_offset == myoffset %}
         <b>{{ curr_offset//10+1 }}</b>
         {% else %}
-        <a href="{{ url_for('getFilter',grade=grade,domain=domain,questionType=questionType,method=method,offset=curr_offset) }}">{{ curr_offset//10+1 }}</a>
+        <a href="{{ url_for('getFilter',grade=params['grade'],olympiad=params['olympiad'],domain=params['domain'],questionType=params['questionType'],method=params['method'],hasSolution=params['hasSolution'],hasVideo=params['hasVideo'],offset=curr_offset) }}">{{ curr_offset//10+1 }}</a>
         {% endif %}
         {% endfor %}
         {% endif %}
     </form>
-
 
 {% for problem in problems %}
 <h3 style="font-size: 120%; color: #1565C0;">{{ problem.problemid }}</h3>
