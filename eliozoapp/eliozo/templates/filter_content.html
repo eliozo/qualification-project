@@ -172,10 +172,7 @@
                     }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
-        <span class="tltiptext">
-        <b>1</b> - {% trans %}Has solution{% endtrans %}<br/>
-        <b>NA</b> - {% trans %}No solution{% endtrans %}
-        </span></span>
+        <span class="tltiptext">{% trans %}Problems having at least one solution.{% endtrans %}</span></span>
             </div>
 
             <div class="filter" style="max-width: 160px;">
@@ -200,10 +197,7 @@
                     }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
          src="{{ url_for('static',filename='blue_question_mark.png') }}">
-        <span class="tltiptext">
-        <b>1</b> - {% trans %}Has video{% endtrans %}<br/>
-        <b>NA</b> - {% trans %}No video{% endtrans %}
-        </span></span>
+        <span class="tltiptext">{% trans %}Problems with video-recorded solutions.{% endtrans %}</span></span>
 
             </div>
         </div>

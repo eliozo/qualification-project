@@ -29,10 +29,10 @@ eliozo:LV.SOL.2020.10.2 a eliozo:Problem ;
     eliozo:problemID "LV.SOL.2020.10.2" ;
     eliozo:problemImage eliozo:IMG.LV.SOL.2020.10.2A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.SOL.2020.10.2.SUB0 ;
-    eliozo:problemText """Uz leṇḳa $M O N$ malām $O M$ un $O N$ atlikti attiecīgi nogriežṇi 
+    eliozo:problemText """Uz leṇḳa $MON$ malām $OM$ un $ON$ atlikti attiecīgi nogriežṇi 
 $OA=AB=BC$ un $OD=DE=EF$. Pierādīt, ka trijstūru $AEC$ un $DBF$ 
 laukumi ir vienādi!"""@lv ;
-    eliozo:problemTextHtml """<p>Uz leṇḳa $M O N$ malām $O M$ un $O N$ atlikti attiecīgi nogriežṇi 
+    eliozo:problemTextHtml """<p>Uz leṇḳa $MON$ malām $OM$ un $ON$ atlikti attiecīgi nogriežṇi 
 $OA=AB=BC$ un $OD=DE=EF$. Pierādīt, ka trijstūru $AEC$ un $DBF$ 
 laukumi ir vienādi!</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
@@ -69,8 +69,8 @@ eliozo:LV.SOL.2020.11.1 a eliozo:Problem ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.SOL.2020.11.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.SOL.2020.11.1.SUB0 ;
-    eliozo:problemText "Pierādīt, ka $10^{n}-9 n-1$ dalās ar 81 visām naturālām $n$ vērtībām!"@lv ;
-    eliozo:problemTextHtml "<p>Pierādīt, ka $10^{n}-9 n-1$ dalās ar 81 visām naturālām $n$ vērtībām!</p>"@lv ;
+    eliozo:problemText "Pierādīt, ka $10^{n}-9n-1$ dalās ar $81$ visām naturālām $n$ vērtībām!"@lv ;
+    eliozo:problemTextHtml "<p>Pierādīt, ka $10^{n}-9n-1$ dalās ar $81$ visām naturālām $n$ vērtībām!</p>"@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 1 ;
@@ -86,13 +86,13 @@ eliozo:LV.SOL.2020.11.2 a eliozo:Problem ;
     eliozo:problemID "LV.SOL.2020.11.2" ;
     eliozo:problemImage eliozo:IMG.LV.SOL.2020.11.2A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.SOL.2020.11.2.SUB0 ;
-    eliozo:problemText """Punkti $A, B, C$ atrodas uz vienas taisnes; $B$ atrodas starp 
-$A$ un $C$. Trijstūri $A M B$ un $B N C$ ir vienādmalu, pie tam 
-$M$ un $N$ atrodas vienā pusē no taisnes $A C$. Pierādīt, ka leņķis 
+    eliozo:problemText """Punkti $A,B,C$ atrodas uz vienas taisnes; $B$ atrodas starp 
+$A$ un $C$. Trijstūri $AMB$ un $BNC$ ir vienādmalu, pie tam 
+$M$ un $N$ atrodas vienā pusē no taisnes $AC$. Pierādīt, ka leņķis 
 starp taisnēm $AN$ un $CM$ ir $60^{\\circ}$."""@lv ;
-    eliozo:problemTextHtml """<p>Punkti $A, B, C$ atrodas uz vienas taisnes; $B$ atrodas starp 
-$A$ un $C$. Trijstūri $A M B$ un $B N C$ ir vienādmalu, pie tam 
-$M$ un $N$ atrodas vienā pusē no taisnes $A C$. Pierādīt, ka leņķis 
+    eliozo:problemTextHtml """<p>Punkti $A,B,C$ atrodas uz vienas taisnes; $B$ atrodas starp 
+$A$ un $C$. Trijstūri $AMB$ un $BNC$ ir vienādmalu, pie tam 
+$M$ un $N$ atrodas vienā pusē no taisnes $AC$. Pierādīt, ka leņķis 
 starp taisnēm $AN$ un $CM$ ir $60^{\\circ}$.</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
@@ -126,8 +126,10 @@ eliozo:LV.SOL.2020.12.1 a eliozo:Problem ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.SOL.2020.12.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.SOL.2020.12.1.SUB0 ;
-    eliozo:problemText "Virkne uzdota rekurenti ar formulu $x_{n+2}=3 x_{n+1}-2 x_{n}-1$, kur $x_{1}=3$ un $x_{2}=6$. Pierādīt, ka virkni var definēt ar formulu $x_{n}=2^{n}+n$."@lv ;
-    eliozo:problemTextHtml "<p>Virkne uzdota rekurenti ar formulu $x_{n+2}=3 x_{n+1}-2 x_{n}-1$, kur $x_{1}=3$ un $x_{2}=6$. Pierādīt, ka virkni var definēt ar formulu $x_{n}=2^{n}+n$.</p>"@lv ;
+    eliozo:problemText """Virkne uzdota rekurenti ar formulu $x_{n+2}=3 x_{n+1}-2 x_{n}-1$, 
+kur $x_{1}=3$ un $x_{2}=6$. Pierādīt, ka virkni var definēt ar formulu $x_{n}=2^{n}+n$."""@lv ;
+    eliozo:problemTextHtml """<p>Virkne uzdota rekurenti ar formulu $x_{n+2}=3 x_{n+1}-2 x_{n}-1$, 
+kur $x_{1}=3$ un $x_{2}=6$. Pierādīt, ka virkni var definēt ar formulu $x_{n}=2^{n}+n$.</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 1 ;
@@ -216,9 +218,9 @@ eliozo:LV.SOL.2020.5.2 a eliozo:Problem ;
     eliozo:problemID "LV.SOL.2020.5.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.SOL.2020.5.2.SUB0 ;
     eliozo:problemText """Vai eksistē tādi dažādi trīsciparu naturāli skaitli $A$ un $B$, 
-ka trim skaitl|iem $A, B$ un $A+B$ ciparu summas visas savā starpā vienādas?"""@lv ;
+ka trim skaitļiem $A, B$ un $A+B$ ciparu summas visas savā starpā vienādas?"""@lv ;
     eliozo:problemTextHtml """<p>Vai eksistē tādi dažādi trīsciparu naturāli skaitli $A$ un $B$, 
-ka trim skaitl|iem $A, B$ un $A+B$ ciparu summas visas savā starpā vienādas?</p>"""@lv ;
+ka trim skaitļiem $A, B$ un $A+B$ ciparu summas visas savā starpā vienādas?</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 2 ;
@@ -234,9 +236,9 @@ eliozo:LV.SOL.2020.5.3 a eliozo:Problem ;
     eliozo:problemID "LV.SOL.2020.5.3" ;
     eliozo:problemImage eliozo:IMG.LV.SOL.2020.5.3A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.SOL.2020.5.3.SUB0 ;
-    eliozo:problemText """Katrā no mazajiem trijstūrī̌iem (skat. 3.att.) ierakstīts viencipara 
-naturāls skaitlis; dažādos trijstūrī̌̌os ierakstīti dažādi skaitḷi. 
-Aplūkojam visas tādas divu skaitḷu summas, kuri ierakstīti 
+    eliozo:problemText """Katrā no mazajiem trijstūrīšiem (skat. 3.att.) ierakstīts viencipara 
+naturāls skaitlis; dažādos trijstūrīšos ierakstīti dažādi skaitļi. 
+Aplūkojam visas tādas divu skaitļu summas, kuri ierakstīti 
 trijstūrīšos ar kopīgu malu.
 
 **(A)** Vai var gadīties, ka neviena no šīm summām nepārsniedz $10$?
@@ -246,9 +248,9 @@ trijstūrīšos ar kopīgu malu.
 ![](LV.SOL.2020.5.3.png){ width=150px }
 
 3. att."""@lv ;
-    eliozo:problemTextHtml """<p>Katrā no mazajiem trijstūrī̌iem (skat. 3.att.) ierakstīts viencipara 
-naturāls skaitlis; dažādos trijstūrī̌̌os ierakstīti dažādi skaitḷi. 
-Aplūkojam visas tādas divu skaitḷu summas, kuri ierakstīti 
+    eliozo:problemTextHtml """<p>Katrā no mazajiem trijstūrīšiem (skat. 3.att.) ierakstīts viencipara 
+naturāls skaitlis; dažādos trijstūrīšos ierakstīti dažādi skaitļi. 
+Aplūkojam visas tādas divu skaitļu summas, kuri ierakstīti 
 trijstūrīšos ar kopīgu malu.</p>
 <p><strong>(A)</strong> Vai var gadīties, ka neviena no šīm summām nepārsniedz $10$?</p>
 <p><strong>(B)</strong> Kāds mazākais skaits no šīm summām var būt pāra skaitļi?</p>
@@ -291,10 +293,10 @@ eliozo:LV.SOL.2020.6.2 a eliozo:Problem ;
     eliozo:problemID "LV.SOL.2020.6.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.SOL.2020.6.2.SUB0 ;
     eliozo:problemText """Volejbola turnīrā katra komanda ar katru citu spēlēja tieši vienu reizi. 
-Volejbolā neizškirtu nav. Turnīru beigās izrādījās, ka astotdaḷai 
+Volejbolā neizškirtu nav. Turnīru beigās izrādījās, ka astotdaļai 
 visu komandu nav nevienas uzvaras. Cik spēlu izspēlēja turnīrā?"""@lv ;
     eliozo:problemTextHtml """<p>Volejbola turnīrā katra komanda ar katru citu spēlēja tieši vienu reizi. 
-Volejbolā neizškirtu nav. Turnīru beigās izrādījās, ka astotdaḷai 
+Volejbolā neizškirtu nav. Turnīru beigās izrādījās, ka astotdaļai 
 visu komandu nav nevienas uzvaras. Cik spēlu izspēlēja turnīrā?</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
@@ -329,11 +331,11 @@ eliozo:LV.SOL.2020.7.1 a eliozo:Problem ;
     eliozo:problemID "LV.SOL.2020.7.1" ;
     eliozo:problemImage eliozo:IMG.LV.SOL.2020.7.1A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.SOL.2020.7.1.SUB0 ;
-    eliozo:problemText """**(A)** Vai kvadrātu var sagriezt 11 kvadrātos?
+    eliozo:problemText """**(A)** Vai kvadrātu var sagriezt $11$ kvadrātos?
 
-**(B)** Vai kvadrātu var sagriezt 113 kvadrātos?"""@lv ;
-    eliozo:problemTextHtml """<p><strong>(A)</strong> Vai kvadrātu var sagriezt 11 kvadrātos?</p>
-<p><strong>(B)</strong> Vai kvadrātu var sagriezt 113 kvadrātos?</p>"""@lv ;
+**(B)** Vai kvadrātu var sagriezt $113$ kvadrātos?"""@lv ;
+    eliozo:problemTextHtml """<p><strong>(A)</strong> Vai kvadrātu var sagriezt $11$ kvadrātos?</p>
+<p><strong>(B)</strong> Vai kvadrātu var sagriezt $113$ kvadrātos?</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 1 ;
@@ -369,12 +371,12 @@ eliozo:LV.SOL.2020.7.3 a eliozo:Problem ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.SOL.2020.7.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.SOL.2020.7.3.SUB0 ;
-    eliozo:problemText """Kādu lielāko skaitu skait|u var uzrakstīt rindā tā, lai katru trīs 
-pēc kārtas uzrakstītu skait|u summa būtu pozitīva, bet katru piecu
-pēc kārtas uzrakstītu skaitlu summa būtu negatīva?"""@lv ;
-    eliozo:problemTextHtml """<p>Kādu lielāko skaitu skait|u var uzrakstīt rindā tā, lai katru trīs 
-pēc kārtas uzrakstītu skait|u summa būtu pozitīva, bet katru piecu
-pēc kārtas uzrakstītu skaitlu summa būtu negatīva?</p>"""@lv ;
+    eliozo:problemText """Kādu lielāko skaitu skaitļu var uzrakstīt rindā tā, lai katru trīs 
+pēc kārtas uzrakstītu skaitļu summa būtu pozitīva, bet katru piecu
+pēc kārtas uzrakstītu skaitļu summa būtu negatīva?"""@lv ;
+    eliozo:problemTextHtml """<p>Kādu lielāko skaitu skaitļu var uzrakstīt rindā tā, lai katru trīs 
+pēc kārtas uzrakstītu skaitļu summa būtu pozitīva, bet katru piecu
+pēc kārtas uzrakstītu skaitļu summa būtu negatīva?</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 3 ;
@@ -414,10 +416,10 @@ eliozo:LV.SOL.2020.8.2 a eliozo:Problem ;
     eliozo:problemImage eliozo:IMG.LV.SOL.2020.8.2A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.SOL.2020.8.2.SUB0 ;
     eliozo:problemText """Punkti $A, B$ un $C$ atrodas uz vienas taisnes; $B$ atrodas starp 
-$A$ un $C$. Trijstūri $A M B$ un $B N C$ ir vienādmalu. 
+$A$ un $C$. Trijstūri $AMB$ un $BNC$ ir vienādmalu. 
 Pierādīt, ka $AN=CM$."""@lv ;
     eliozo:problemTextHtml """<p>Punkti $A, B$ un $C$ atrodas uz vienas taisnes; $B$ atrodas starp 
-$A$ un $C$. Trijstūri $A M B$ un $B N C$ ir vienādmalu. 
+$A$ un $C$. Trijstūri $AMB$ un $BNC$ ir vienādmalu. 
 Pierādīt, ka $AN=CM$.</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
@@ -434,9 +436,9 @@ eliozo:LV.SOL.2020.8.3 a eliozo:Problem ;
     eliozo:problemID "LV.SOL.2020.8.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.SOL.2020.8.3.SUB0 ;
     eliozo:problemText """Atrast tādu divpadsmitciparu skaitli (kas nesatur ciparu $0$) tā, lai katri 
-divi blakus uzrakstīti cipari veidotu pirmskaitli un visi šie pirmskaitḷi būtu dažādi!"""@lv ;
+divi blakus uzrakstīti cipari veidotu pirmskaitli un visi šie pirmskaitļi būtu dažādi!"""@lv ;
     eliozo:problemTextHtml """<p>Atrast tādu divpadsmitciparu skaitli (kas nesatur ciparu $0$) tā, lai katri 
-divi blakus uzrakstīti cipari veidotu pirmskaitli un visi šie pirmskaitḷi būtu dažādi!</p>"""@lv ;
+divi blakus uzrakstīti cipari veidotu pirmskaitli un visi šie pirmskaitļi būtu dažādi!</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 3 ;
@@ -454,14 +456,14 @@ eliozo:LV.SOL.2020.9.1 a eliozo:Problem ;
     eliozo:problemText """**(A)** Vai var atrast tādus trīs dažādus naturālus skaitļus 
 $a,b,c$, ka $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}=1$?
 
-**(B)** Vai var atrast tādus desmit dažādus naturālus skaitļus 
+**(B)** Vai var atrast tādus desmit dažādus naturālus skaitļus
 $a_{1}, a_{2}, \\ldots, a_{10}$, ka 
-$\\frac{1}{a_{1}}+\\frac{1}{a_{2}}+\\cdots+\\frac{1}{a_{10}}=1$ ?"""@lv ;
+$\\frac{1}{a_{1}}+\\frac{1}{a_{2}}+\\cdots+\\frac{1}{a_{10}}=1$?"""@lv ;
     eliozo:problemTextHtml """<p><strong>(A)</strong> Vai var atrast tādus trīs dažādus naturālus skaitļus 
 $a,b,c$, ka $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}=1$?</p>
-<p><strong>(B)</strong> Vai var atrast tādus desmit dažādus naturālus skaitļus 
+<p><strong>(B)</strong> Vai var atrast tādus desmit dažādus naturālus skaitļus
 $a_{1}, a_{2}, \\ldots, a_{10}$, ka 
-$\\frac{1}{a_{1}}+\\frac{1}{a_{2}}+\\cdots+\\frac{1}{a_{10}}=1$ ?</p>"""@lv ;
+$\\frac{1}{a_{1}}+\\frac{1}{a_{2}}+\\cdots+\\frac{1}{a_{10}}=1$?</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 1 ;
@@ -591,24 +593,24 @@ eliozo:SOLN.LV.SOL.2020.10.2.SUB0 a eliozo:Solution ;
     eliozo:solutionText """## Atrisinājums
 
 Ievērojam, ka $S(AEC)=S(COE)-S(AOE)$ un $S(DBF)=S(BOF)-S(BOD)$ 
-(skat. 16. att.). Izmantojot trijstūra $COF$ laukumus, izsakām visus laukumus:
+(skat. 16.att.). Izmantojot trijstūra $COF$ laukumus, izsakām visus laukumus:
 
-- $S(C O E)=\\frac{1}{2} \\cdot O C \\cdot \\frac{2}{3} O F \\cdot \\sin \\sphericalangle O=\\frac{2}{3} S(C O F)$;
-- $S(A O E)=\\frac{1}{2} \\cdot \\frac{1}{3} O C \\cdot \\frac{2}{3} O F \\cdot \\sin \\sphericalangle O=\\frac{2}{9} S(C O F)$;
-- $S(B O F)=\\frac{1}{2} \\cdot \\frac{2}{3} O C \\cdot O F \\cdot \\sin \\sphericalangle O=\\frac{2}{3} S(C O F)$;
-- $S(B O D)=\\frac{1}{2} \\cdot \\frac{2}{3} O C \\cdot \\frac{1}{3} O F \\cdot \\sin \\sphericalangle O=\\frac{2}{9} S(C O F)$.
+- $S(COE)=\\frac{1}{2} \\cdot O C \\cdot \\frac{2}{3} OF \\cdot \\sin \\sphericalangle O=\\frac{2}{3} S(COF)$;
+- $S(AOE)=\\frac{1}{2} \\cdot \\frac{1}{3} OC \\cdot \\frac{2}{3} OF \\cdot \\sin \\sphericalangle O=\\frac{2}{9} S(COF)$;
+- $S(BOF)=\\frac{1}{2} \\cdot \\frac{2}{3} OC \\cdot OF \\cdot \\sin \\sphericalangle O=\\frac{2}{3} S(COF)$;
+- $S(BOD)=\\frac{1}{2} \\cdot \\frac{2}{3} OC \\cdot \\frac{1}{3} OF \\cdot \\sin \\sphericalangle O=\\frac{2}{9} S(COF)$.
 
 Līdz ar to $S(AEC)=S(DBF)$.
 
 ![](LV.SOL.2020.10.2A.png){ width=200px }"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Ievērojam, ka $S(AEC)=S(COE)-S(AOE)$ un $S(DBF)=S(BOF)-S(BOD)$ 
-(skat. 16. att.). Izmantojot trijstūra $COF$ laukumus, izsakām visus laukumus:</p>
+(skat. 16.att.). Izmantojot trijstūra $COF$ laukumus, izsakām visus laukumus:</p>
 <ul>
-<li>$S(C O E)=\\frac{1}{2} \\cdot O C \\cdot \\frac{2}{3} O F \\cdot \\sin \\sphericalangle O=\\frac{2}{3} S(C O F)$;</li>
-<li>$S(A O E)=\\frac{1}{2} \\cdot \\frac{1}{3} O C \\cdot \\frac{2}{3} O F \\cdot \\sin \\sphericalangle O=\\frac{2}{9} S(C O F)$;</li>
-<li>$S(B O F)=\\frac{1}{2} \\cdot \\frac{2}{3} O C \\cdot O F \\cdot \\sin \\sphericalangle O=\\frac{2}{3} S(C O F)$;</li>
-<li>$S(B O D)=\\frac{1}{2} \\cdot \\frac{2}{3} O C \\cdot \\frac{1}{3} O F \\cdot \\sin \\sphericalangle O=\\frac{2}{9} S(C O F)$.</li>
+<li>$S(COE)=\\frac{1}{2} \\cdot O C \\cdot \\frac{2}{3} OF \\cdot \\sin \\sphericalangle O=\\frac{2}{3} S(COF)$;</li>
+<li>$S(AOE)=\\frac{1}{2} \\cdot \\frac{1}{3} OC \\cdot \\frac{2}{3} OF \\cdot \\sin \\sphericalangle O=\\frac{2}{9} S(COF)$;</li>
+<li>$S(BOF)=\\frac{1}{2} \\cdot \\frac{2}{3} OC \\cdot OF \\cdot \\sin \\sphericalangle O=\\frac{2}{3} S(COF)$;</li>
+<li>$S(BOD)=\\frac{1}{2} \\cdot \\frac{2}{3} OC \\cdot \\frac{1}{3} OF \\cdot \\sin \\sphericalangle O=\\frac{2}{9} S(COF)$.</li>
 </ul>
 <p>Līdz ar to $S(AEC)=S(DBF)$.</p>
 <p><img alt="" src="LV.SOL.2020.10.2A.png" />{ width=200px }</p>"""@lv .
@@ -637,9 +639,9 @@ eliozo:SOLN.LV.SOL.2020.11.1.SUB0 a eliozo:Solution ;
 
 Izmantosim matemātiskās indukcijas metodi.
 
-Indukcijas bāze. Ja $n=1$, tad $10-9-1=0$ dalās ar 81 .
+Indukcijas bāze. Ja $n=1$, tad $10-9-1=0$ dalās ar $81$.
 
-Induktīvais pieņēmums. Pieṇemsim, ka prasītais izpildās, ja $n=k$, 
+Induktīvais pieņēmums. Pieņemsim, ka prasītais izpildās, ja $n=k$, 
 tas ir, $10^{k}-9 k-1$ dalās ar $81$.
 
 Induktīvā pāreja. Pierādīsim, ka prasītais izpildās arī tad, ja 
@@ -659,8 +661,8 @@ vienādība ir spēkā, ja $n=k$, izriet, ka vienādība ir spēkā arī
 $n=k+1$, secinām, ka apgalvojums ir spēkā visām naturālām $n$ vērtībām."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Izmantosim matemātiskās indukcijas metodi.</p>
-<p>Indukcijas bāze. Ja $n=1$, tad $10-9-1=0$ dalās ar 81 .</p>
-<p>Induktīvais pieņēmums. Pieṇemsim, ka prasītais izpildās, ja $n=k$, 
+<p>Indukcijas bāze. Ja $n=1$, tad $10-9-1=0$ dalās ar $81$.</p>
+<p>Induktīvais pieņēmums. Pieņemsim, ka prasītais izpildās, ja $n=k$, 
 tas ir, $10^{k}-9 k-1$ dalās ar $81$.</p>
 <p>Induktīvā pāreja. Pierādīsim, ka prasītais izpildās arī tad, ja 
 $n=k+1$, tas ir, $10^{k+1}-9(k+1)-1$ dalās ar $81$.</p>
@@ -678,32 +680,32 @@ eliozo:SOLN.LV.SOL.2020.11.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Ievērojam, ka $\\triangle M B C=\\triangle A B N$ pēc pazīmes 
-$\\mathrm{mlm}$ (skat. 17. att.), jo
+Ievērojam, ka $\\triangle MBC=\\triangle ABN$ pēc pazīmes 
+$\\mathrm{mlm}$ (skat. 17.att.), jo
 
-- $M B=A B$ kā vienādmalu trijstūra malas;
-- $B C=B N$ kā vienādmalu trijstūra malas;
+- $MB=AB$ kā vienādmalu trijstūra malas;
+- $BC=BN$ kā vienādmalu trijstūra malas;
 
-$\\sphericalangle M B C=\\sphericalangle M B N+\\sphericalangle N B C=\\sphericalangle M B N+60^{\\circ}=\\sphericalangle M B N+\\sphericalangle M B A=\\sphericalangle A B N$.
+$\\sphericalangle MBC=\\sphericalangle MBN+\\sphericalangle NBC=\\sphericalangle MBN+60^{\\circ}=\\sphericalangle MBN+\\sphericalangle MBA=\\sphericalangle ABN$.
 
 Līdz ar to $CM=AN$ kā atbilstošās malas vienādos trijstūros.
 
-Tā kā $B C$ un $B N$ veido $60^{\\circ}$ lenki, tad šie trijstūri 
+Tā kā $BC$ un $BN$ veido $60^{\\circ}$ lenki, tad šie trijstūri 
 iegūstami viens no otra ar pagriezienu par $60^{\\circ}$. Tad arī atbilstošās 
 malas $AN$ un $CM$ iegūstamas viena no otras ar pagriezienu par 
 $60^{\\circ}$, tas ir, leṇkis starp taisnēm $AN$ un $CM$ ir $60^{\\circ}$.
 
 ![](LV.SOL.2020.11.2A.png){ width=200px }"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Ievērojam, ka $\\triangle M B C=\\triangle A B N$ pēc pazīmes 
-$\\mathrm{mlm}$ (skat. 17. att.), jo</p>
+<p>Ievērojam, ka $\\triangle MBC=\\triangle ABN$ pēc pazīmes 
+$\\mathrm{mlm}$ (skat. 17.att.), jo</p>
 <ul>
-<li>$M B=A B$ kā vienādmalu trijstūra malas;</li>
-<li>$B C=B N$ kā vienādmalu trijstūra malas;</li>
+<li>$MB=AB$ kā vienādmalu trijstūra malas;</li>
+<li>$BC=BN$ kā vienādmalu trijstūra malas;</li>
 </ul>
-<p>$\\sphericalangle M B C=\\sphericalangle M B N+\\sphericalangle N B C=\\sphericalangle M B N+60^{\\circ}=\\sphericalangle M B N+\\sphericalangle M B A=\\sphericalangle A B N$.</p>
+<p>$\\sphericalangle MBC=\\sphericalangle MBN+\\sphericalangle NBC=\\sphericalangle MBN+60^{\\circ}=\\sphericalangle MBN+\\sphericalangle MBA=\\sphericalangle ABN$.</p>
 <p>Līdz ar to $CM=AN$ kā atbilstošās malas vienādos trijstūros.</p>
-<p>Tā kā $B C$ un $B N$ veido $60^{\\circ}$ lenki, tad šie trijstūri 
+<p>Tā kā $BC$ un $BN$ veido $60^{\\circ}$ lenki, tad šie trijstūri 
 iegūstami viens no otra ar pagriezienu par $60^{\\circ}$. Tad arī atbilstošās 
 malas $AN$ un $CM$ iegūstamas viena no otras ar pagriezienu par 
 $60^{\\circ}$, tas ir, leṇkis starp taisnēm $AN$ un $CM$ ir $60^{\\circ}$.</p>
@@ -713,15 +715,15 @@ eliozo:SOLN.LV.SOL.2020.11.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Apzīmējam $a=n b$, kur $n \\in N$ un $n>1$. Tad 
+Apzīmējam $a=nb$, kur $n \\in N$ un $n>1$. Tad 
 $\\frac{n b+1}{b+1}=\\frac{n b+n+1-n}{b+1}=\\frac{n(b+1)-(n-1)}{b+1}=n-\\frac{n-1}{b+1}$ 
 ir vesels skaitlis. Tā kā $n>1$, tad jābūt $n-1 \\geq b+1$ jeb $n \\geq b+2$. 
-Līdz ar to $a=n b \\geq(b+2) b>b^{2}$."""@lv ;
+Līdz ar to $a=nb \\geq (b+2)b > b^{2}$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Apzīmējam $a=n b$, kur $n \\in N$ un $n&gt;1$. Tad 
+<p>Apzīmējam $a=nb$, kur $n \\in N$ un $n&gt;1$. Tad 
 $\\frac{n b+1}{b+1}=\\frac{n b+n+1-n}{b+1}=\\frac{n(b+1)-(n-1)}{b+1}=n-\\frac{n-1}{b+1}$ 
 ir vesels skaitlis. Tā kā $n&gt;1$, tad jābūt $n-1 \\geq b+1$ jeb $n \\geq b+2$. 
-Līdz ar to $a=n b \\geq(b+2) b&gt;b^{2}$.</p>"""@lv .
+Līdz ar to $a=nb \\geq (b+2)b &gt; b^{2}$.</p>"""@lv .
 
 eliozo:SOLN.LV.SOL.2020.12.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -729,16 +731,16 @@ eliozo:SOLN.LV.SOL.2020.12.1.SUB0 a eliozo:Solution ;
 
 Izmantosim matemātiskās indukcijas metodi.
 
-Indukcijas bāze. Ja $n=1$, tad $x_{1}=2^{1}+1=3$. Ja $n=2$, tad $x_{2}=2^{2}+2=6$
+*Indukcijas bāze.* Ja $n=1$, tad $x_{1}=2^{1}+1=3$. Ja $n=2$, tad $x_{2}=2^{2}+2=6$. 
 
-Induktīvais pienēemums. Pieṇemsim, ka vienādība izpildās, ja $n=k$ un $n=k+1$, tas ir,
+*Induktīvais pieņēmums.* Pieṇemsim, ka vienādība izpildās, ja $n=k$ un $n=k+1$, tas ir,
 
 $$\\begin{gathered}
 x_{k}=2^{k}+k \\\\
 x_{k+1}=2^{k+1}+k+1
 \\end{gathered}$$
 
-Induktīvā pāreja. Pierādīsim, ka vienādība ir spēkā arī tad, 
+*Induktīvā pāreja.* Pierādīsim, ka vienādība ir spēkā arī tad, 
 ja $n=k+2$, tas ir, $x_{k+2}=2^{k+2}+k+2$. Pārveidojam doto rekurences formulu
 
 $$\\begin{gathered}
@@ -752,13 +754,13 @@ ka vienādība ir spēkā arī $n=k+2$, secinām, ka formula ir spēkā
 visām naturālām $n$ vērtībām."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Izmantosim matemātiskās indukcijas metodi.</p>
-<p>Indukcijas bāze. Ja $n=1$, tad $x_{1}=2^{1}+1=3$. Ja $n=2$, tad $x_{2}=2^{2}+2=6$</p>
-<p>Induktīvais pienēemums. Pieṇemsim, ka vienādība izpildās, ja $n=k$ un $n=k+1$, tas ir,</p>
+<p><em>Indukcijas bāze.</em> Ja $n=1$, tad $x_{1}=2^{1}+1=3$. Ja $n=2$, tad $x_{2}=2^{2}+2=6$. </p>
+<p><em>Induktīvais pieņēmums.</em> Pieṇemsim, ka vienādība izpildās, ja $n=k$ un $n=k+1$, tas ir,</p>
 <p>$$\\begin{gathered}
 x_{k}=2^{k}+k \\
 x_{k+1}=2^{k+1}+k+1
 \\end{gathered}$$</p>
-<p>Induktīvā pāreja. Pierādīsim, ka vienādība ir spēkā arī tad, 
+<p><em>Induktīvā pāreja.</em> Pierādīsim, ka vienādība ir spēkā arī tad, 
 ja $n=k+2$, tas ir, $x_{k+2}=2^{k+2}+k+2$. Pārveidojam doto rekurences formulu</p>
 <p>$$\\begin{gathered}
 x_{k+2}=3 x_{n+1}-2 x_{n}-1=3\\left(2^{k+1}+k+1\\right)-2\\left(2^{k}+k\\right)-1= \\
@@ -803,18 +805,20 @@ eliozo:SOLN.LV.SOL.2020.12.3.SUB0 a eliozo:Solution ;
 
 Nē, nevar. Apzīmējam $i$-tā šahista iegūto punktu skaitu ar $P_{i}$, 
 bet atbilstošās summas $i$-jam šahistam ar $Z_{i}$ un $U_{i}$. Apskatām 
-izteiksmi $P_{1}\\left(Z_{1}-U_{1}\\right)+P_{2}\\left(Z_{2}-U_{2}\\right)+\\ldots+P_{n}\\left(Z_{n}-U_{p}\\right)$. Tās vērtība ir 0 , jo šī izteiksme katrai rezultatīvai 
+izteiksmi $P_{1}\\left(Z_{1}-U_{1}\\right)+P_{2}\\left(Z_{2}-U_{2}\\right)+\\ldots+P_{n}\\left(Z_{n}-U_{p}\\right)$. 
+Tās vērtība ir 0 , jo šī izteiksme katrai rezultatīvai 
 partijai starp $i$-to un $j$-to šahistu satur vienu locekli 
-$+P_{i} P_{j}$ un vienu locekli $-P_{i} P_{j}$. Tā kā skaitḷi 
-$P_{i} \\geq 0$ (visi $P_{i}$ vienlaicīgi nevar būt 0), 
+$+P_{i} P_{j}$ un vienu locekli $-P_{i} P_{j}$. Tā kā skaitļi 
+$P_{i} \\geq 0$ (visi $P_{i}$ vienlaicīgi nevar būt $0$), 
 tad visas starpības $\\left(Z_{i}-U_{i}\\right)$ nevar būt vienlaicīgi pozitīvas."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Nē, nevar. Apzīmējam $i$-tā šahista iegūto punktu skaitu ar $P_{i}$, 
 bet atbilstošās summas $i$-jam šahistam ar $Z_{i}$ un $U_{i}$. Apskatām 
-izteiksmi $P_{1}\\left(Z_{1}-U_{1}\\right)+P_{2}\\left(Z_{2}-U_{2}\\right)+\\ldots+P_{n}\\left(Z_{n}-U_{p}\\right)$. Tās vērtība ir 0 , jo šī izteiksme katrai rezultatīvai 
+izteiksmi $P_{1}\\left(Z_{1}-U_{1}\\right)+P_{2}\\left(Z_{2}-U_{2}\\right)+\\ldots+P_{n}\\left(Z_{n}-U_{p}\\right)$. 
+Tās vērtība ir 0 , jo šī izteiksme katrai rezultatīvai 
 partijai starp $i$-to un $j$-to šahistu satur vienu locekli 
-$+P_{i} P_{j}$ un vienu locekli $-P_{i} P_{j}$. Tā kā skaitḷi 
-$P_{i} \\geq 0$ (visi $P_{i}$ vienlaicīgi nevar būt 0), 
+$+P_{i} P_{j}$ un vienu locekli $-P_{i} P_{j}$. Tā kā skaitļi 
+$P_{i} \\geq 0$ (visi $P_{i}$ vienlaicīgi nevar būt $0$), 
 tad visas starpības $\\left(Z_{i}-U_{i}\\right)$ nevar būt vienlaicīgi pozitīvas.</p>"""@lv .
 
 eliozo:SOLN.LV.SOL.2020.5.1.SUB0 a eliozo:Solution ;
@@ -853,7 +857,7 @@ eliozo:SOLN.LV.SOL.2020.5.3.SUB0 a eliozo:Solution ;
 Visas summas nevar būt pāra, jo tādā gadījumā visos pelēkajos trijstūrīšos 
 (skat. 6.att.) ierakstīto skait|u paritātei jābūt vienai un visos 
 neiesvītrotajos - otrai, bet ir tikai $4$ pāra skaitli $(2,4,6,8)$ un 
-tikai $5$ nepāra skaitḷi $(1,3,5,7,9)$.
+tikai $5$ nepāra skaitļi $(1,3,5,7,9)$.
 
 ![](LV.SOL.2020.5.3A.png){ width=400px }"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
@@ -862,7 +866,7 @@ tikai $5$ nepāra skaitḷi $(1,3,5,7,9)$.
 Visas summas nevar būt pāra, jo tādā gadījumā visos pelēkajos trijstūrīšos 
 (skat. 6.att.) ierakstīto skait|u paritātei jābūt vienai un visos 
 neiesvītrotajos - otrai, bet ir tikai $4$ pāra skaitli $(2,4,6,8)$ un 
-tikai $5$ nepāra skaitḷi $(1,3,5,7,9)$.</p>
+tikai $5$ nepāra skaitļi $(1,3,5,7,9)$.</p>
 <p><img alt="" src="LV.SOL.2020.5.3A.png" />{ width=400px }</p>"""@lv .
 
 eliozo:SOLN.LV.SOL.2020.6.1.SUB0 a eliozo:Solution ;
@@ -926,23 +930,23 @@ eliozo:SOLN.LV.SOL.2020.7.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-**(A)** Jā, var, skat., piemēram, 9. att.
+**(A)** Jā, var, skat., piemēram, 9.att.
 
 **(B)** Jā, var. levērojam, ka kvadrātu var sadalīt $4$ kvadrātos, 
 ja katrai malai atrod viduspunktu un savieno pretējo malu viduspunktus 
 (skat. 10.att.). Ja vienu no 9.att. dotajiem kvadrātiem sadala $4$ kvadrātos, 
 tad kvadrātu skaits palielinās par $3$. Šādi turpinot, iegūsim, 
-ka kvadrātu var sadalīt $14, 17, 20, \\ldots$ kvadrātos. 
+ka kvadrātu var sadalīt $14,17,20,\\ldots$ kvadrātos. 
 Tā kā $113=11+3 \\cdot 34$, tad kvadrātu var sagriezt 113 kvadrātos.
 
 ![](LV.SOL.2020.7.1A.png){ width=300px }"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>(A)</strong> Jā, var, skat., piemēram, 9. att.</p>
+<p><strong>(A)</strong> Jā, var, skat., piemēram, 9.att.</p>
 <p><strong>(B)</strong> Jā, var. levērojam, ka kvadrātu var sadalīt $4$ kvadrātos, 
 ja katrai malai atrod viduspunktu un savieno pretējo malu viduspunktus 
 (skat. 10.att.). Ja vienu no 9.att. dotajiem kvadrātiem sadala $4$ kvadrātos, 
 tad kvadrātu skaits palielinās par $3$. Šādi turpinot, iegūsim, 
-ka kvadrātu var sadalīt $14, 17, 20, \\ldots$ kvadrātos. 
+ka kvadrātu var sadalīt $14,17,20,\\ldots$ kvadrātos. 
 Tā kā $113=11+3 \\cdot 34$, tad kvadrātu var sagriezt 113 kvadrātos.</p>
 <p><img alt="" src="LV.SOL.2020.7.1A.png" />{ width=300px }</p>"""@lv .
 
@@ -950,21 +954,21 @@ eliozo:SOLN.LV.SOL.2020.7.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Nē, nevar. Apzīmēsim punktus ar $A, B, C, D$. Ja, piemēram, $AD=10$, 
-tad trijstūrī $A B D$ un $A C D$ jāizpildās trijstūra nevienādībai, 
-tas ir, $A B+B D \\geq 10$ un $A C+C D \\geq 10$ (skat. 11.att.). 
-Līdz ar to $A B+B D+A C+C D \\geq 20$, bet pat četru lielāko atlikušo 
+Nē, nevar. Apzīmēsim punktus ar $A,B,C,D$. Ja, piemēram, $AD=10$, 
+tad trijstūrī $ABD$ un $ACD$ jāizpildās trijstūra nevienādībai, 
+tas ir, $AB + BD \\geq 10$ un $AC + CD \\geq 10$ (skat. 11.att.). 
+Līdz ar to $AB+BD+AC+CD \\geq 20$, bet pat četru lielāko atlikušo 
 attālumu summa nepārsniedz $5+6+4+4=19$. Iegūta pretruna, 
-tātad plaknē nevar atlikt punktus atbilstoši uzdevuma nosacijumiem.
+tātad plaknē nevar atlikt punktus atbilstoši uzdevuma nosacījumiem.
 
 ![](LV.SOL.2020.7.2A.png){ width=150px }"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Nē, nevar. Apzīmēsim punktus ar $A, B, C, D$. Ja, piemēram, $AD=10$, 
-tad trijstūrī $A B D$ un $A C D$ jāizpildās trijstūra nevienādībai, 
-tas ir, $A B+B D \\geq 10$ un $A C+C D \\geq 10$ (skat. 11.att.). 
-Līdz ar to $A B+B D+A C+C D \\geq 20$, bet pat četru lielāko atlikušo 
+<p>Nē, nevar. Apzīmēsim punktus ar $A,B,C,D$. Ja, piemēram, $AD=10$, 
+tad trijstūrī $ABD$ un $ACD$ jāizpildās trijstūra nevienādībai, 
+tas ir, $AB + BD \\geq 10$ un $AC + CD \\geq 10$ (skat. 11.att.). 
+Līdz ar to $AB+BD+AC+CD \\geq 20$, bet pat četru lielāko atlikušo 
 attālumu summa nepārsniedz $5+6+4+4=19$. Iegūta pretruna, 
-tātad plaknē nevar atlikt punktus atbilstoši uzdevuma nosacijumiem.</p>
+tātad plaknē nevar atlikt punktus atbilstoši uzdevuma nosacījumiem.</p>
 <p><img alt="" src="LV.SOL.2020.7.2A.png" />{ width=150px }</p>"""@lv .
 
 eliozo:SOLN.LV.SOL.2020.7.3.SUB0 a eliozo:Solution ;
@@ -972,20 +976,20 @@ eliozo:SOLN.LV.SOL.2020.7.3.SUB0 a eliozo:Solution ;
     eliozo:solutionText """## Atrisinājums
 
 Lielākais skait|u skaits ir 6, piemēram, 10; $-18 ; 10 ; 10 ;-18 ; 10$. 
-Pamatosim, ka vairāk skaitḷus nevar uzrakstīt, lai izpildītos uzdevumā 
+Pamatosim, ka vairāk skaitļus nevar uzrakstīt, lai izpildītos uzdevumā 
 prasītais. Pieṇemsim, ka rindā uzrakstīti 7 skaitli $a ; b ; c ; d ; e ; f ; g$. 
 No $(a+b+c)+(d+e+f)>0$ un $a+b+c+d+e<0$ secinām, ka $f>0$. 
 No $(b+c+d)+(e+f+g)>0$ un $c+d+e+f+g<0$ secinām, ka $b>0$. 
 Taču tādā gadīumā $b+(c+d+e)+f>0$ - pretruna. 
-Tātad vairāk kā $6$ skait!i nevar būt uzrakstīti rindā."""@lv ;
+Tātad vairāk kā $6$ skaitļi nevar būt uzrakstīti rindā."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Lielākais skait|u skaits ir 6, piemēram, 10; $-18 ; 10 ; 10 ;-18 ; 10$. 
-Pamatosim, ka vairāk skaitḷus nevar uzrakstīt, lai izpildītos uzdevumā 
+Pamatosim, ka vairāk skaitļus nevar uzrakstīt, lai izpildītos uzdevumā 
 prasītais. Pieṇemsim, ka rindā uzrakstīti 7 skaitli $a ; b ; c ; d ; e ; f ; g$. 
 No $(a+b+c)+(d+e+f)&gt;0$ un $a+b+c+d+e&lt;0$ secinām, ka $f&gt;0$. 
 No $(b+c+d)+(e+f+g)&gt;0$ un $c+d+e+f+g&lt;0$ secinām, ka $b&gt;0$. 
 Taču tādā gadīumā $b+(c+d+e)+f&gt;0$ - pretruna. 
-Tātad vairāk kā $6$ skait!i nevar būt uzrakstīti rindā.</p>"""@lv .
+Tātad vairāk kā $6$ skaitļi nevar būt uzrakstīti rindā.</p>"""@lv .
 
 eliozo:SOLN.LV.SOL.2020.8.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -997,8 +1001,8 @@ $$
 \\left(1+\\frac{1}{2}\\right) \\cdot\\left(1+\\frac{1}{3}\\right) \\cdot\\left(1+\\frac{1}{4}\\right) \\cdot \\ldots\\left(1+\\frac{1}{70}\\right)=\\frac{3}{2} \\cdot \\frac{4}{3} \\cdot \\frac{5}{4} \\cdot \\frac{6}{5} \\cdot \\ldots \\cdot \\frac{70}{69} \\cdot \\frac{71}{70}
 $$
 
-Ievērojam, ka katru divu daḷu reizinājumā saīsinās vienas daḷas 
-saucējs un otras daḷas skaitītājs. Pēc visām saīsināšanām, 
+Ievērojam, ka katru divu daļu reizinājumā saīsinās vienas daļas 
+saucējs un otras daļas skaitītājs. Pēc visām saīsināšanām, 
 skaitītājā paliek tikai $71$, bet saucējā $2$. Tātad iegūstam, ka dotās 
 izteiksmes vērtība vienāda $\\operatorname{ar} \\frac{71}{2}$ jeb $35 \\frac{1}{2}$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
@@ -1006,8 +1010,8 @@ izteiksmes vērtība vienāda $\\operatorname{ar} \\frac{71}{2}$ jeb $35 \\frac{
 <p>$$
 \\left(1+\\frac{1}{2}\\right) \\cdot\\left(1+\\frac{1}{3}\\right) \\cdot\\left(1+\\frac{1}{4}\\right) \\cdot \\ldots\\left(1+\\frac{1}{70}\\right)=\\frac{3}{2} \\cdot \\frac{4}{3} \\cdot \\frac{5}{4} \\cdot \\frac{6}{5} \\cdot \\ldots \\cdot \\frac{70}{69} \\cdot \\frac{71}{70}
 $$</p>
-<p>Ievērojam, ka katru divu daḷu reizinājumā saīsinās vienas daḷas 
-saucējs un otras daḷas skaitītājs. Pēc visām saīsināšanām, 
+<p>Ievērojam, ka katru divu daļu reizinājumā saīsinās vienas daļas 
+saucējs un otras daļas skaitītājs. Pēc visām saīsināšanām, 
 skaitītājā paliek tikai $71$, bet saucējā $2$. Tātad iegūstam, ka dotās 
 izteiksmes vērtība vienāda $\\operatorname{ar} \\frac{71}{2}$ jeb $35 \\frac{1}{2}$.</p>"""@lv .
 
@@ -1021,19 +1025,19 @@ eliozo:SOLN.LV.SOL.2020.8.2.SUB0 a eliozo:Solution ;
 (skat. 12.att.). Ievērojam, ka $\\triangle MBC = \\triangle ABN$ 
 pēc pazīmes $\\mathrm{mlm}$, jo
 
-- $M B=A B$ kā vienādmalu trijstūra malas;
-- $B C=B N$ kā vienādmalu trijstūra malas;
-- $\\sphericalangle M B C=\\sphericalangle M B N+\\sphericalangle N B C=\\sphericalangle M B N+60^{\\circ}=\\sphericalangle M B N+\\sphericalangle M B A=\\sphericalangle A B N$.
+- $MB=AB$ kā vienādmalu trijstūra malas;
+- $BC=BN$ kā vienādmalu trijstūra malas;
+- $\\sphericalangle MBC=\\sphericalangle MBN+\\sphericalangle NBC=\\sphericalangle MBN+60^{\\circ}=\\sphericalangle MBN+\\sphericalangle MBA=\\sphericalangle ABN$.
 
 Līdz ar to $C M=A N$ kā atbilstošās malas vienādos trijstūros.
 
 2. Punkti $M$ un $N$ atrodas dažādās pusēs no taisnes $AC$ 
-(skat. 13.att.). Ievērojam, ka $\\triangle MBC=\\triangle ABN$ 
-pēc pazīmes $\\mathrm{mlm}$, jo
+   (skat. 13.att.). Ievērojam, ka $\\triangle MBC=\\triangle ABN$ 
+   pēc pazīmes $\\mathrm{mlm}$, jo
 
 - $MB=AB$ kā vienādmalu trijstūra malas;
 - $BC=BN$ kā vienādmalu trijstūra malas;
-- $\\sphericalangle MBC=\\sphericalangle ABN$ kā krustleṇki.
+- $\\sphericalangle MBC=\\sphericalangle ABN$ kā krustleņki.
 
 Līdz ar to $CM=AN$ kā atbilstošās malas vienādos trijstūros.
 
@@ -1047,23 +1051,23 @@ Līdz ar to $CM=AN$ kā atbilstošās malas vienādos trijstūros.
 pēc pazīmes $\\mathrm{mlm}$, jo</p>
 </li>
 <li>
-<p>$M B=A B$ kā vienādmalu trijstūra malas;</p>
+<p>$MB=AB$ kā vienādmalu trijstūra malas;</p>
 </li>
-<li>$B C=B N$ kā vienādmalu trijstūra malas;</li>
-<li>$\\sphericalangle M B C=\\sphericalangle M B N+\\sphericalangle N B C=\\sphericalangle M B N+60^{\\circ}=\\sphericalangle M B N+\\sphericalangle M B A=\\sphericalangle A B N$.</li>
+<li>$BC=BN$ kā vienādmalu trijstūra malas;</li>
+<li>$\\sphericalangle MBC=\\sphericalangle MBN+\\sphericalangle NBC=\\sphericalangle MBN+60^{\\circ}=\\sphericalangle MBN+\\sphericalangle MBA=\\sphericalangle ABN$.</li>
 </ol>
 <p>Līdz ar to $C M=A N$ kā atbilstošās malas vienādos trijstūros.</p>
 <ol>
 <li>
 <p>Punkti $M$ un $N$ atrodas dažādās pusēs no taisnes $AC$ 
-(skat. 13.att.). Ievērojam, ka $\\triangle MBC=\\triangle ABN$ 
-pēc pazīmes $\\mathrm{mlm}$, jo</p>
+   (skat. 13.att.). Ievērojam, ka $\\triangle MBC=\\triangle ABN$ 
+   pēc pazīmes $\\mathrm{mlm}$, jo</p>
 </li>
 <li>
 <p>$MB=AB$ kā vienādmalu trijstūra malas;</p>
 </li>
 <li>$BC=BN$ kā vienādmalu trijstūra malas;</li>
-<li>$\\sphericalangle MBC=\\sphericalangle ABN$ kā krustleṇki.</li>
+<li>$\\sphericalangle MBC=\\sphericalangle ABN$ kā krustleņki.</li>
 </ol>
 <p>Līdz ar to $CM=AN$ kā atbilstošās malas vienādos trijstūros.</p>
 <p><img alt="" src="LV.SOL.2020.8.2A.png" />{ width=300px }</p>"""@lv .
@@ -1120,17 +1124,17 @@ Nē, nevar. Pieṇemsim, ka mediānas garums var būt vienāds ar viduslīnijas 
 Šķirojam divus gadijumus.
 
 1. Mediānai un viduslīnijai ir kopīgs galapunkts $D$ (skat. 14.att.). 
-Pēc pienēmuma $ED=BD$, tad $\\sphericalangle BED=\\sphericalangle EBD$ kā leṇki pie 
-pamata vienādsānu trijstūrī $BDE$. Šie leṇki ir šauri kā leṇki pie 
-vienādsānu trijstūra pamata, tāpēc $\\sphericalangle AED$ ir plats. 
-Tā kā $ED \\| BC$ (jo $ED$ ir viduslīnija), tad $\\sphericalangle ABC=\\sphericalangle AED$ 
-kā kāpšļu leṇki un tie abi ir šauri, jo pēc dotā $\\triangle ABC$ 
-ir šaurleṇku. legūta pretruna, tātad šajā gadīumā $ED \\neq BD$.
+   Pēc pienēmuma $ED=BD$, tad $\\sphericalangle BED=\\sphericalangle EBD$ kā leṇki pie 
+   pamata vienādsānu trijstūrī $BDE$. Šie leṇki ir šauri kā leṇki pie 
+   vienādsānu trijstūra pamata, tāpēc $\\sphericalangle AED$ ir plats. 
+   Tā kā $ED \\| BC$ (jo $ED$ ir viduslīnija), tad $\\sphericalangle ABC=\\sphericalangle AED$ 
+   kā kāpšļu leṇki un tie abi ir šauri, jo pēc dotā $\\triangle ABC$ 
+   ir šaurleṇku. legūta pretruna, tātad šajā gadīumā $ED \\neq BD$.
 2. Mediāna krusto viduslīniju (skat. 15. att.), pēc pieņēmuma $MN=BD$. 
-Tā kā $B M \\| N D$ un $M D \\| B N$, tad četrstūris $MBND$ ir paralelograms. 
-Ņemot vērā, ka $MN=BD$, secinām, ka $MBND$ ir taisnstūris un 
-$\\sphericalangle A B C=90^{\\circ}$. legūta pretruna, tātad arī šajā gadījumā 
-$MN \\neq BD$.
+   Tā kā $B M \\| N D$ un $M D \\| B N$, tad četrstūris $MBND$ ir paralelograms. 
+   Ņemot vērā, ka $MN=BD$, secinām, ka $MBND$ ir taisnstūris un 
+   $\\sphericalangle A B C=90^{\\circ}$. legūta pretruna, tātad arī šajā gadījumā 
+   $MN \\neq BD$.
 
 Līdz ar to esam pierādījuši, ka šaurlenkku trijstūrī mediānas garums 
 nevar būt vienāds ar viduslīnijas garumu.
@@ -1141,17 +1145,17 @@ nevar būt vienāds ar viduslīnijas garumu.
 Šķirojam divus gadijumus.</p>
 <ol>
 <li>Mediānai un viduslīnijai ir kopīgs galapunkts $D$ (skat. 14.att.). 
-Pēc pienēmuma $ED=BD$, tad $\\sphericalangle BED=\\sphericalangle EBD$ kā leṇki pie 
-pamata vienādsānu trijstūrī $BDE$. Šie leṇki ir šauri kā leṇki pie 
-vienādsānu trijstūra pamata, tāpēc $\\sphericalangle AED$ ir plats. 
-Tā kā $ED | BC$ (jo $ED$ ir viduslīnija), tad $\\sphericalangle ABC=\\sphericalangle AED$ 
-kā kāpšļu leṇki un tie abi ir šauri, jo pēc dotā $\\triangle ABC$ 
-ir šaurleṇku. legūta pretruna, tātad šajā gadīumā $ED \\neq BD$.</li>
+   Pēc pienēmuma $ED=BD$, tad $\\sphericalangle BED=\\sphericalangle EBD$ kā leṇki pie 
+   pamata vienādsānu trijstūrī $BDE$. Šie leṇki ir šauri kā leṇki pie 
+   vienādsānu trijstūra pamata, tāpēc $\\sphericalangle AED$ ir plats. 
+   Tā kā $ED | BC$ (jo $ED$ ir viduslīnija), tad $\\sphericalangle ABC=\\sphericalangle AED$ 
+   kā kāpšļu leṇki un tie abi ir šauri, jo pēc dotā $\\triangle ABC$ 
+   ir šaurleṇku. legūta pretruna, tātad šajā gadīumā $ED \\neq BD$.</li>
 <li>Mediāna krusto viduslīniju (skat. 15. att.), pēc pieņēmuma $MN=BD$. 
-Tā kā $B M | N D$ un $M D | B N$, tad četrstūris $MBND$ ir paralelograms. 
-Ņemot vērā, ka $MN=BD$, secinām, ka $MBND$ ir taisnstūris un 
-$\\sphericalangle A B C=90^{\\circ}$. legūta pretruna, tātad arī šajā gadījumā 
-$MN \\neq BD$.</li>
+   Tā kā $B M | N D$ un $M D | B N$, tad četrstūris $MBND$ ir paralelograms. 
+   Ņemot vērā, ka $MN=BD$, secinām, ka $MBND$ ir taisnstūris un 
+   $\\sphericalangle A B C=90^{\\circ}$. legūta pretruna, tātad arī šajā gadījumā 
+   $MN \\neq BD$.</li>
 </ol>
 <p>Līdz ar to esam pierādījuši, ka šaurlenkku trijstūrī mediānas garums 
 nevar būt vienāds ar viduslīnijas garumu.</p>
