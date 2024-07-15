@@ -328,11 +328,11 @@ SELECT (COUNT(*) AS ?count) WHERE {{
 """
     theGrade = '' if params["grade"] in ["NA","-"] else f'eliozo:suggestedGrade {params["grade"]} ; '
     theOlympiad = '' if params["olympiad"] in ["NA","-"] else f'eliozo:olympiadType "{params["olympiad"]}" ; '
-    theDomain = '' if params["domain"] == "NA" else f'eliozo:domain "{params["domain"]}" ; '
-    theQuestionType = '' if params["questionType"] == "NA" else f'eliozo:questionType "{params["questionType"]}" ; '
-    theMethod = '' if params["method"] == "NA" else f'eliozo:LTopic "{params["method"]}" ; '
-    theSolution = "" if params["hasSolution"] == "NA" else f'eliozo:problemSolution ?someSolution ; '
-    theVideo = "" if params["hasVideo"] == "NA" else f'eliozo:hasVideo ?someVideo ; '
+    theDomain = '' if params["domain"] in ["NA","-"] else f'eliozo:domain "{params["domain"]}" ; '
+    theQuestionType = '' if params["questionType"] in ["NA","-"] else f'eliozo:questionType "{params["questionType"]}" ; '
+    theMethod = '' if params["method"] in ["NA","-"] else f'eliozo:LTopic "{params["method"]}" ; '
+    theSolution = "" if params["hasSolution"] in ["NA","-"] else f'eliozo:problemSolution ?someSolution ; '
+    theVideo = "" if params["hasVideo"] in ["NA","-"] else f'eliozo:hasVideo ?someVideo ; '
     theFGrade = "" if params["grade"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:suggestedGrade ?gg . }"
     theFOlympiad = "" if params["olympiad"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:olympiadType ?oo . }"
     theFDomain = "" if params["domain"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:domain ?dd . }"
@@ -353,7 +353,7 @@ SELECT (COUNT(*) AS ?count) WHERE {{
     # print(f'q = {q}')
     # print("============")
     x = requests.post(url, myobj, head)
-    print(f'x = "{x.text}"')
+    # print(f'x = "{x.text}"')
     return x.text
 
 def getSkillDetails(skillID):
@@ -727,6 +727,9 @@ def create_app(test_config=None):
                       ('LTStructureAugmentation', {'en':'Structure augmentation', 'lt':'Pagalbinės Konstrukcijos', 'lv':'Papildkonstrukcijas'}),
                       ('-', {'en':'NA', 'lt':'NA', 'lv':'NA'})]
 
+        solutionDict = [('1', {'en':'Yes', 'lt':'Yra', 'lv':'Ir'}),
+                        ('-', {'en':'No', 'lt':'Nėra', 'lv':'Nav'})]
+
         if all(value == 'NA' for value in params.values()):
         # if grade == "NA" and olympiad == "NA" and  domain == "NA" and questionType == "NA" and method == "NA" and hasSolution == "NA" and hasVideo == "NA":
             template_context = {
@@ -737,6 +740,7 @@ def create_app(test_config=None):
                 'all_counts': all_counts,
                 'olympiadTypeDict': olympiadTypeDict,
                 'methodDict': methodDict,
+                'solutionDict': solutionDict,
                 'title': 'Filtri'
             }
             return render_template('filter_content.html', **template_context)
@@ -791,6 +795,7 @@ def create_app(test_config=None):
                 'all_counts': all_counts,
                 'olympiadTypeDict': olympiadTypeDict,
                 'methodDict': methodDict,
+                'solutionDict': solutionDict,
                 'page_offsets': page_offsets,
                 'myoffset': offset,
                 'active': 'filter',
