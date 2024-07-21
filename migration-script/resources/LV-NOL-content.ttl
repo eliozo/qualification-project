@@ -2912,6 +2912,7 @@ eliozo:LV.NOL.2013.7.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2013.7.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2013.7.2.SUB0 ;
     eliozo:problemText """Cik starp pirmajiem $2013$ naturālajiem skaitļiem ir tādu skaitļu $x$, ka skaitlis
 $x(x+1)(x+2)$ dalās ar $111$?"""@lv ;
     eliozo:problemTextHtml """<p>Cik starp pirmajiem $2013$ naturālajiem skaitļiem ir tādu skaitļu $x$, ka skaitlis
@@ -2919,6 +2920,7 @@ $x(x+1)(x+2)$ dalās ar $111$?</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
+    eliozo:seeAlso "LV.NOL.2014.7.3" ;
     eliozo:suffix "LV.NOL.2013.7" ;
     eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:DivisibilityRulesOther,
@@ -2931,9 +2933,12 @@ eliozo:LV.NOL.2013.7.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2013.7.4" ;
-    eliozo:problemText """Vai pa riņķi var uzrakstīt $13$ naturālus skaitļus tā, lai jebkuru blakus
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2013.7.4.SUB0 ;
+    eliozo:problemText """Vai pa riņķi var uzrakstīt $13$ naturālus skaitļus tā, 
+lai jebkuru blakus
 esošu skaitļu starpība būtu $6$, $10$, $14$ vai $18$?"""@lv ;
-    eliozo:problemTextHtml """<p>Vai pa riņķi var uzrakstīt $13$ naturālus skaitļus tā, lai jebkuru blakus
+    eliozo:problemTextHtml """<p>Vai pa riņķi var uzrakstīt $13$ naturālus skaitļus tā, 
+lai jebkuru blakus
 esošu skaitļu starpība būtu $6$, $10$, $14$ vai $18$?</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
@@ -2949,9 +2954,12 @@ eliozo:LV.NOL.2013.8.1 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2013.8.1" ;
-    eliozo:problemText """Skaitli $8999999$ uzraksti kā divu veselu skaitļu reizinājumu tā, lai katrs
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2013.8.1.SUB0 ;
+    eliozo:problemText """Skaitli $8999999$ uzraksti kā divu veselu skaitļu 
+reizinājumu tā, lai katrs
 no reizinātājiem ir lielāks nekā $1$."""@lv ;
-    eliozo:problemTextHtml """<p>Skaitli $8999999$ uzraksti kā divu veselu skaitļu reizinājumu tā, lai katrs
+    eliozo:problemTextHtml """<p>Skaitli $8999999$ uzraksti kā divu veselu skaitļu 
+reizinājumu tā, lai katrs
 no reizinātājiem ir lielāks nekā $1$.</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
@@ -2967,6 +2975,7 @@ eliozo:LV.NOL.2013.8.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2013.8.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2013.8.3.SUB0 ;
     eliozo:problemText "Cik ir tādu četrciparu skaitļu, kuru pierakstā ir vismaz viens pāra cipars?"@lv ;
     eliozo:problemTextHtml "<p>Cik ir tādu četrciparu skaitļu, kuru pierakstā ir vismaz viens pāra cipars?</p>"@lv ;
     eliozo:problemTimeID "2013" ;
@@ -2979,11 +2988,13 @@ eliozo:LV.NOL.2013.8.3 a eliozo:Problem ;
 
 eliozo:LV.NOL.2013.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:genre "MagicConfiguration" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2013.8.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2013.8.4.SUB0 ;
     eliozo:problemText """Kvadrātā $3 \\times 3$ rūtiņas ieraksti deviņus dažādus naturālus skaitļus tā, 
 lai katrā rindiņā ierakstīto skaitļu reizinājums un 
 katrā kolonnā ierakstīto skaitļu reizinājums būtu viens un tas pats."""@lv ;
@@ -3022,6 +3033,7 @@ eliozo:LV.NOL.2014.10.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2014.10.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2014.10.2.SUB0 ;
     eliozo:problemText """Pierādīt, ka, izvēloties $52$ no aritmētiskās progresijas 
 $1, 4, 7, 10, \\ldots$ locekļiem, kas nepārsniedz
 $300$, vienmēr starp šiem skaitļiem var atrast divus skaitļus, kuru summa ir $302$."""@lv ;
@@ -3126,6 +3138,7 @@ eliozo:LV.NOL.2014.7.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2014.7.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2014.7.3.SUB0 ;
     eliozo:problemText """Cik starp pirmajiem $2014$ naturālajiem skaitļiem ir tādu skaitļu $x$, ka 
 skaitlis $x(x+1)(x+2)$ dalās ar $87$?"""@lv ;
     eliozo:problemTextHtml """<p>Cik starp pirmajiem $2014$ naturālajiem skaitļiem ir tādu skaitļu $x$, ka 
@@ -3145,6 +3158,7 @@ eliozo:LV.NOL.2014.8.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2014.8.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2014.8.3.SUB0 ;
     eliozo:problemText "Cik ir tādu piecciparu skaitļu, kuru pierakstā ir vismaz viens nepāra cipars?"@lv ;
     eliozo:problemTextHtml "<p>Cik ir tādu piecciparu skaitļu, kuru pierakstā ir vismaz viens nepāra cipars?</p>"@lv ;
     eliozo:problemTimeID "2014" ;
@@ -3177,6 +3191,7 @@ eliozo:LV.NOL.2015.10.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2015.10.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2015.10.2.SUB0 ;
     eliozo:problemText """Ar naturālu skaitli atļauts veikt šādas darbības:
 
 * pieskaitīt $6$;
@@ -3206,6 +3221,7 @@ eliozo:LV.NOL.2015.10.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2015.10.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2015.10.3.SUB0 ;
     eliozo:problemText """Vairāku pēc kārtas sekojošu naturālu skaitļu summa ir $177$. 
 Kādas vērtības var pieņemt
 mazākais no šiem saskaitāmajiem?"""@lv ;
@@ -3228,23 +3244,24 @@ eliozo:LV.NOL.2015.10.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2015.10.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2015.10.4.SUB0 ;
     eliozo:problemText """Vai eksistē tāds vesels skaitlis $x$, ka visi skaitļi
 
-1. $x$, $x+23$, $x+45$, $x+121$
-2. $x$, $x+23$, $x+46$, $x+121$
+**(A)** $x$, $x+23$, $x+45$, $x+121$
+**(B)** $x$, $x+23$, $x+46$, $x+121$
 
 ir veselu skaitļu pakāpes ar naturālu kāpinātāju, 
 kas lielāks nekā 1 (kāpinātāji var būt dažādi)?"""@lv ;
     eliozo:problemTextHtml """<p>Vai eksistē tāds vesels skaitlis $x$, ka visi skaitļi</p>
-<ol>
-<li>$x$, $x+23$, $x+45$, $x+121$</li>
-<li>$x$, $x+23$, $x+46$, $x+121$</li>
-</ol>
+<p><strong>(A)</strong> $x$, $x+23$, $x+45$, $x+121$
+<strong>(B)</strong> $x$, $x+23$, $x+46$, $x+121$</p>
 <p>ir veselu skaitļu pakāpes ar naturālu kāpinātāju, 
 kas lielāks nekā 1 (kāpinātāji var būt dažādi)?</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
+    eliozo:questionTypes "ProveDisprove" ;
+    eliozo:strategy "contradiction" ;
     eliozo:suffix "LV.NOL.2015.10" ;
     eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:CountingObjects,
@@ -3326,6 +3343,7 @@ eliozo:LV.NOL.2015.7.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2015.7.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2015.7.2.SUB0 ;
     eliozo:problemText """Sensenos laikos saimnieciskajam Gotfrīdam bija $99$ aitas un $21$ kamielis, 
 citu mājlopu Gotfrīdam nebija. Bagdādē par $4$ kamieļiem pretī varēja saņemt $8$ 
 aitas, bet Damaskā par $5$ aitām pretī varēja saņemt $3$ kamieļus. 
@@ -3351,6 +3369,7 @@ eliozo:LV.NOL.2015.7.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2015.7.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2015.7.3.SUB0 ;
     eliozo:problemText """Tabulā, kuras izmēri ir $3 \\times 3$ rūtiņas, katrā rūtiņā ierakstīts viens naturāls skaitlis, 
 kas nepārsniedz $10$, visi ierakstītie skaitļi ir dažādi. 
 Katrām divām rūtiņām ar kopīgu malu aprēķina tajos ierakstīto skaitļu summu. 
@@ -3376,6 +3395,7 @@ eliozo:LV.NOL.2015.8.1 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2015.8.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2015.8.1.SUB0 ;
     eliozo:problemText """Pierādi, ka 
 
 1. $49^5 + 7^9$ dalās ar $2$; 
@@ -3399,6 +3419,7 @@ eliozo:LV.NOL.2015.8.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2015.8.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2015.8.2.SUB0 ;
     eliozo:problemText """Autoservisā "Šrotiņš" ir $39$ mašīnas. Naskais Maigonis katra mēneša 20. 
 datumā vai nu pārdod $7$ restaurētas mašīnas un to vietā nopērk 
 $16$ vecas mašīnas, vai arī $19$ mašīnas nodod metāllūžņos 
@@ -3486,6 +3507,7 @@ eliozo:LV.NOL.2016.10.1 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2016.10.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2016.10.1.SUB0 ;
     eliozo:problemText """Pierādīt, ka katram naturālam $n$ ir patiesa vienādība
 $$1\\cdot{}4 + 2\\cdot{}7 + 3\\cdot{}10 + \\cdots + n\\cdot{}(3n + 1) = n(n+1)^2.$$"""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka katram naturālam $n$ ir patiesa vienādība
@@ -3505,6 +3527,7 @@ eliozo:LV.NOL.2016.10.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2016.10.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2016.10.2.SUB0 ;
     eliozo:problemText """Pierādīt, ka no jebkuriem trim naturālu skaitļu kvadrātiem var izvēlēties divus tā, 
 ka to summa vai starpība dalās ar $5$."""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka no jebkuriem trim naturālu skaitļu kvadrātiem var izvēlēties divus tā, 
@@ -3558,6 +3581,7 @@ eliozo:LV.NOL.2016.7.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2016.7.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2016.7.2.SUB0 ;
     eliozo:problemText """Dots naturāls skaitlis, kas dalās ar $99$ un kura pēdējais cipars nav $0$. 
 Pierādi, ka uzrakstot šī skaitļa ciparus pretējā secībā, arī iegūst skaitli, kas
 dalās ar $99$."""@lv ;
@@ -3580,14 +3604,15 @@ eliozo:LV.NOL.2016.7.5 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2016.7.5" ;
-    eliozo:problemText """(a) Vai var atrast dažādus veselus skaitļus 
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2016.7.5.SUB0 ;
+    eliozo:problemText """**(A)** Vai var atrast dažādus veselus skaitļus 
 $a$, $b$, $c$ un $d$ tādus, ka izpildās vienādības
 $a+b = cd$ un $ab = c+d$?  
-(b) Vai šādus skaitļus var atrast, ja papildus zināms, ka $a > 2016$?"""@lv ;
-    eliozo:problemTextHtml """<p>(a) Vai var atrast dažādus veselus skaitļus 
+**(B)** Vai šādus skaitļus var atrast, ja papildus zināms, ka $a > 2016$?"""@lv ;
+    eliozo:problemTextHtml """<p><strong>(A)</strong> Vai var atrast dažādus veselus skaitļus 
 $a$, $b$, $c$ un $d$ tādus, ka izpildās vienādības
 $a+b = cd$ un $ab = c+d$?<br />
-(b) Vai šādus skaitļus var atrast, ja papildus zināms, ka $a &gt; 2016$?</p>"""@lv ;
+<strong>(B)</strong> Vai šādus skaitļus var atrast, ja papildus zināms, ka $a &gt; 2016$?</p>"""@lv ;
     eliozo:problemTimeID "2016" ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 5 ;
@@ -3603,6 +3628,7 @@ eliozo:LV.NOL.2016.8.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2016.8.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2016.8.2.SUB0 ;
     eliozo:problemText """Karlīna uzrakstīja divus skaitļus, kuru pierakstā nav izmantots cipars $0$. 
 Katru ciparu viņa aizstāja ar burtu: dažādus ciparus – ar dažādiem burtiem, 
 vienādus – ar vienādiem. Viens no uzrakstītajiem 
@@ -3628,15 +3654,15 @@ eliozo:LV.NOL.2016.9.2 a eliozo:Problem ;
     eliozo:problemText """Pierādīt, ka 
 
 1. no pieciem naturāliem skaitļiem vienmēr var izvēlēties vairākus
-(vismaz divus), kuru summa dalās ar $4$;
+   (vismaz divus), kuru summa dalās ar $4$;
 2. var atrast četrus tādus naturālus skaitļus, ka no tiem nevar izvēlēties
-vairākus (vismaz divus), kuru summa dalās $4$."""@lv ;
+   vairākus (vismaz divus), kuru summa dalās $4$."""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka </p>
 <ol>
 <li>no pieciem naturāliem skaitļiem vienmēr var izvēlēties vairākus
-(vismaz divus), kuru summa dalās ar $4$;</li>
+   (vismaz divus), kuru summa dalās ar $4$;</li>
 <li>var atrast četrus tādus naturālus skaitļus, ka no tiem nevar izvēlēties
-vairākus (vismaz divus), kuru summa dalās $4$.</li>
+   vairākus (vismaz divus), kuru summa dalās $4$.</li>
 </ol>"""@lv ;
     eliozo:problemTimeID "2016" ;
     eliozo:problemYear 2016 ;
@@ -3670,6 +3696,7 @@ eliozo:LV.NOL.2017.10.5 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2017.10.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2017.10.5.SUB0 ;
     eliozo:problemText """Desmitciparu skaitlī vienādus ciparus aizvietojot ar vienādiem burtiem, 
 bet dažādus – ar dažādiem, ieguva
 vārdu $MATEMĀTIKA$ (īsais "A" un garais "Ā" aizstāj atšķirīgus ciparus). 
@@ -3707,12 +3734,13 @@ eliozo:LV.NOL.2017.11.3 a eliozo:Problem ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2017.11.3" ;
     eliozo:problemText """Atrisināt naturālos skaitļos vienādojumu sistēmu:
+
 $$\\left\\{ \\begin{array}{rcl}
 x + z & = & 2007, \\\\
 31xz & = & y^2.
 \\end{array} \\right.$$"""@lv ;
-    eliozo:problemTextHtml """<p>Atrisināt naturālos skaitļos vienādojumu sistēmu:
-$$\\left{ \\begin{array}{rcl}
+    eliozo:problemTextHtml """<p>Atrisināt naturālos skaitļos vienādojumu sistēmu:</p>
+<p>$$\\left{ \\begin{array}{rcl}
 x + z &amp; = &amp; 2007, \\
 31xz &amp; = &amp; y^2.
 \\end{array} \\right.$$</p>"""@lv ;
@@ -3759,9 +3787,11 @@ eliozo:LV.NOL.2017.7.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2017.7.2" ;
-    eliozo:problemText """Piecciparu skaitļa, kas dalās ar $13$, pirmais cipars ir vienāds ar ceturto, bet otrais – ar piekto. Kāds ir šī
+    eliozo:problemText """Piecciparu skaitļa, kas dalās ar $13$, pirmais cipars ir vienāds ar ceturto, 
+bet otrais – ar piekto. Kāds ir šī
 skaitļa trešais cipars? Atrodi visas iespējamās vērtības un pamato, ka citu nav!"""@lv ;
-    eliozo:problemTextHtml """<p>Piecciparu skaitļa, kas dalās ar $13$, pirmais cipars ir vienāds ar ceturto, bet otrais – ar piekto. Kāds ir šī
+    eliozo:problemTextHtml """<p>Piecciparu skaitļa, kas dalās ar $13$, pirmais cipars ir vienāds ar ceturto, 
+bet otrais – ar piekto. Kāds ir šī
 skaitļa trešais cipars? Atrodi visas iespējamās vērtības un pamato, ka citu nav!</p>"""@lv ;
     eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
@@ -3776,12 +3806,16 @@ eliozo:LV.NOL.2017.8.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2017.8.2" ;
-    eliozo:problemText """Ja no piecciparu skaitļa, kam pirmais cipars vienāds ar ceturto, bet otrais – ar piekto, atņem vieninieku tad
-iegūtais skaitlis dalās ar $11$. Kāds var būt sākotnējā piecciparu skaitļa trešais cipars? Atrodi visus
-iespējamos variantus un pamato, ka citu nav!"""@lv ;
-    eliozo:problemTextHtml """<p>Ja no piecciparu skaitļa, kam pirmais cipars vienāds ar ceturto, bet otrais – ar piekto, atņem vieninieku tad
-iegūtais skaitlis dalās ar $11$. Kāds var būt sākotnējā piecciparu skaitļa trešais cipars? Atrodi visus
-iespējamos variantus un pamato, ka citu nav!</p>"""@lv ;
+    eliozo:problemText """Ja no piecciparu skaitļa, kam pirmais cipars vienāds ar ceturto, bet otrais – 
+ar piekto, atņem vieninieku tad
+iegūtais skaitlis dalās ar $11$. Kāds var būt sākotnējā piecciparu 
+skaitļa trešais cipars? Atrodi visus iespējamos variantus un pamato, 
+ka citu nav!"""@lv ;
+    eliozo:problemTextHtml """<p>Ja no piecciparu skaitļa, kam pirmais cipars vienāds ar ceturto, bet otrais – 
+ar piekto, atņem vieninieku tad
+iegūtais skaitlis dalās ar $11$. Kāds var būt sākotnējā piecciparu 
+skaitļa trešais cipars? Atrodi visus iespējamos variantus un pamato, 
+ka citu nav!</p>"""@lv ;
     eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 2 ;
@@ -3795,11 +3829,15 @@ eliozo:LV.NOL.2017.9.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2017.9.4" ;
-    eliozo:problemText """Naturālu skaitli sauksim par *pārdabisku*, ja, tā ciparus uzrakstot pretējā secībā, iegūst skaitli, kas ir lielāks
-nekā sākotnējais skaitlis, un iegūtais skaitlis dalās ar sākotnējo skaitli. Mazākais *pārdabiskais* skaitlis ir
+    eliozo:problemText """Naturālu skaitli sauksim par *pārdabisku*, ja, tā ciparus uzrakstot 
+pretējā secībā, iegūst skaitli, kas ir lielāks
+nekā sākotnējais skaitlis, un iegūtais skaitlis dalās ar sākotnējo 
+skaitli. Mazākais *pārdabiskais* skaitlis ir
 $1089$, jo $9801 : 1089 = 9$. Atrast vēl divus citus *pārdabiskus* skaitļus!"""@lv ;
-    eliozo:problemTextHtml """<p>Naturālu skaitli sauksim par <em>pārdabisku</em>, ja, tā ciparus uzrakstot pretējā secībā, iegūst skaitli, kas ir lielāks
-nekā sākotnējais skaitlis, un iegūtais skaitlis dalās ar sākotnējo skaitli. Mazākais <em>pārdabiskais</em> skaitlis ir
+    eliozo:problemTextHtml """<p>Naturālu skaitli sauksim par <em>pārdabisku</em>, ja, tā ciparus uzrakstot 
+pretējā secībā, iegūst skaitli, kas ir lielāks
+nekā sākotnējais skaitlis, un iegūtais skaitlis dalās ar sākotnējo 
+skaitli. Mazākais <em>pārdabiskais</em> skaitlis ir
 $1089$, jo $9801 : 1089 = 9$. Atrast vēl divus citus <em>pārdabiskus</em> skaitļus!</p>"""@lv ;
     eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
@@ -3814,13 +3852,17 @@ eliozo:LV.NOL.2017.9.5 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2017.9.5" ;
-    eliozo:problemText """1. Pierādīt, ka starp $1010$ dažādiem naturāliem skaitļiem, no kuriem neviens nepārsniedz $2017$, vienmēr
-iespējams izvēlēties trīs skaitļus tā, ka divu izvēlēto skaitļu summa ir vienāda ar trešo skaitli!
-2. Vai šāda īpašība ir spēkā arī $1009$ dažādiem naturāliem skaitļiem, kas nepārsniedz $2017$?"""@lv ;
+    eliozo:problemText """1. Pierādīt, ka starp $1010$ dažādiem naturāliem skaitļiem, 
+   no kuriem neviens nepārsniedz $2017$, vienmēr iespējams izvēlēties 
+   trīs skaitļus tā, ka divu izvēlēto skaitļu summa ir vienāda ar trešo skaitli!
+2. Vai šāda īpašība ir spēkā arī $1009$ dažādiem naturāliem skaitļiem, 
+   kas nepārsniedz $2017$?"""@lv ;
     eliozo:problemTextHtml """<ol>
-<li>Pierādīt, ka starp $1010$ dažādiem naturāliem skaitļiem, no kuriem neviens nepārsniedz $2017$, vienmēr
-iespējams izvēlēties trīs skaitļus tā, ka divu izvēlēto skaitļu summa ir vienāda ar trešo skaitli!</li>
-<li>Vai šāda īpašība ir spēkā arī $1009$ dažādiem naturāliem skaitļiem, kas nepārsniedz $2017$?</li>
+<li>Pierādīt, ka starp $1010$ dažādiem naturāliem skaitļiem, 
+   no kuriem neviens nepārsniedz $2017$, vienmēr iespējams izvēlēties 
+   trīs skaitļus tā, ka divu izvēlēto skaitļu summa ir vienāda ar trešo skaitli!</li>
+<li>Vai šāda īpašība ir spēkā arī $1009$ dažādiem naturāliem skaitļiem, 
+   kas nepārsniedz $2017$?</li>
 </ol>"""@lv ;
     eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
@@ -3835,6 +3877,8 @@ eliozo:LV.NOL.2018.10.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2018.10.4" ;
+    eliozo:problemImage eliozo:IMG.LV.NOL.2018.10.4.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2018.10.4.SUB0 ;
     eliozo:problemText """No cipariem $1, 2, 3, 4, 5, 6, 7, 8, 9$, katru izmantojot 
 divas reizes, izveidoti trīs sešciparu skaitļi. Ar kādu lielāko
 nuļļu skaitu var beigties trīs izveidoto skaitļu summa?"""@lv ;
@@ -3844,6 +3888,7 @@ nuļļu skaitu var beigties trīs izveidoto skaitļu summa?</p>"""@lv ;
     eliozo:problemTimeID "2018" ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
+    eliozo:strategy "contradiction" ;
     eliozo:suffix "LV.NOL.2018.10" ;
     eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:CountingFromEncoding,
@@ -3990,240 +4035,9 @@ $20x^3 − 17y^2 + 1 = 2018$?</p>"""@lv ;
     eliozo:suffix "LV.NOL.2018.9" ;
     eliozo:suggestedGrade 9 .
 
-eliozo:LV.NOL.2019.10.5 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:olympiad "LV.NOL" ;
-    eliozo:olympiadCode "NOL" ;
-    eliozo:olympiadType "RegionalOrOpen" ;
-    eliozo:problemGrade 10 ;
-    eliozo:problemID "LV.NOL.2019.10.5" ;
-    eliozo:problemText """Atrast visus pirmskaitļu pārus $(m,n)$, kuriem 
-$20m + 18n = 2018$."""@lv ;
-    eliozo:problemTextHtml """<p>Atrast visus pirmskaitļu pārus $(m,n)$, kuriem 
-$20m + 18n = 2018$.</p>"""@lv ;
-    eliozo:problemTimeID "2019" ;
-    eliozo:problemYear 2019 ;
-    eliozo:problem_number 5 ;
-    eliozo:suffix "LV.NOL.2019.10" ;
-    eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:CanonicalFactorization,
-        eliozo:DivisibilityRulesFor2And4 .
-
-eliozo:LV.NOL.2019.11.5 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:olympiad "LV.NOL" ;
-    eliozo:olympiadCode "NOL" ;
-    eliozo:olympiadType "RegionalOrOpen" ;
-    eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.NOL.2019.11.5" ;
-    eliozo:problemText """Atrast visus pirmskaitļu pārus $(m,n)$, kuriem $20m + 19n = 2019$.
-
-<!--
-questionType=FindAll
-concepts=linear-expression,primes
-genre=integer-equation
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Atrast visus pirmskaitļu pārus $(m,n)$, kuriem $20m + 19n = 2019$.</p>
-<!--
-questionType=FindAll
-concepts=linear-expression,primes
-genre=integer-equation
--->"""@lv ;
-    eliozo:problemTimeID "2019" ;
-    eliozo:problemYear 2019 ;
-    eliozo:problem_number 5 ;
-    eliozo:suffix "LV.NOL.2019.11" ;
-    eliozo:suggestedGrade 11 .
-
-eliozo:LV.NOL.2019.12.5 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:olympiad "LV.NOL" ;
-    eliozo:olympiadCode "NOL" ;
-    eliozo:olympiadType "RegionalOrOpen" ;
-    eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.NOL.2019.12.5" ;
-    eliozo:problemText """Pierādīt, ka vienādojumam
-$(a - b)^2 = a+b$ ir bezgalīgi daudz atrisinājumu naturālos skaitļos!
-
-<!--
-questionType=Prove
-genre=integer-equation
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka vienādojumam
-$(a - b)^2 = a+b$ ir bezgalīgi daudz atrisinājumu naturālos skaitļos!</p>
-<!--
-questionType=Prove
-genre=integer-equation
--->"""@lv ;
-    eliozo:problemTimeID "2019" ;
-    eliozo:problemYear 2019 ;
-    eliozo:problem_number 5 ;
-    eliozo:suffix "LV.NOL.2019.12" ;
-    eliozo:suggestedGrade 12 .
-
-eliozo:LV.NOL.2019.7.4 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:olympiad "LV.NOL" ;
-    eliozo:olympiadCode "NOL" ;
-    eliozo:olympiadType "RegionalOrOpen" ;
-    eliozo:problemGrade 7 ;
-    eliozo:problemID "LV.NOL.2019.7.4" ;
-    eliozo:problemText """Vai var atrast tādus veselus skaitļus $a$ un $b$, ka $ab(a+5b) = 150015$?
-
-<!--
-questionType=ProveDisprove
-genre=integer-equation
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Vai var atrast tādus veselus skaitļus $a$ un $b$, ka $ab(a+5b) = 150015$?</p>
-<!--
-questionType=ProveDisprove
-genre=integer-equation
--->"""@lv ;
-    eliozo:problemTimeID "2019" ;
-    eliozo:problemYear 2019 ;
-    eliozo:problem_number 4 ;
-    eliozo:suffix "LV.NOL.2019.7" ;
-    eliozo:suggestedGrade 7 .
-
-eliozo:LV.NOL.2019.7.5 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:olympiad "LV.NOL" ;
-    eliozo:olympiadCode "NOL" ;
-    eliozo:olympiadType "RegionalOrOpen" ;
-    eliozo:problemGrade 7 ;
-    eliozo:problemID "LV.NOL.2019.7.5" ;
-    eliozo:problemText """Uz tāfeles uzrakstītas deviņas zvaigznītes 
-$$\\ast\\;\\ast\\;\\ast\\;\\ast\\;\\ast\\;\\ast\\;\\ast\\;\\ast\\;\\ast.$$
-Mārtiņš ieraksta kādas zvaigznītes vietā jebkuru ciparu
-no $1$ līdz $9$. Pēc tam Rihards jebkuru divu citu zvaigznīšu vietā ieraksta 
-divus nenulles ciparus (tie var arī
-atkārtoties). Pēc tam vēl divas reizes viņi atkārto šo darbību. 
-Rihards uzvar, ja iegūtais deviņciparu skaitlis dalās
-ar $31$. Vai Rihards vienmēr var uzvarēt?
-
-<!--
-questionType=Algorithm,ProveDisprove
-genre=game
-concepts=divisibility
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Uz tāfeles uzrakstītas deviņas zvaigznītes 
-$$\\ast\\;\\ast\\;\\ast\\;\\ast\\;\\ast\\;\\ast\\;\\ast\\;\\ast\\;\\ast.$$
-Mārtiņš ieraksta kādas zvaigznītes vietā jebkuru ciparu
-no $1$ līdz $9$. Pēc tam Rihards jebkuru divu citu zvaigznīšu vietā ieraksta 
-divus nenulles ciparus (tie var arī
-atkārtoties). Pēc tam vēl divas reizes viņi atkārto šo darbību. 
-Rihards uzvar, ja iegūtais deviņciparu skaitlis dalās
-ar $31$. Vai Rihards vienmēr var uzvarēt?</p>
-<!--
-questionType=Algorithm,ProveDisprove
-genre=game
-concepts=divisibility
--->"""@lv ;
-    eliozo:problemTimeID "2019" ;
-    eliozo:problemYear 2019 ;
-    eliozo:problem_number 5 ;
-    eliozo:suffix "LV.NOL.2019.7" ;
-    eliozo:suggestedGrade 7 .
-
-eliozo:LV.NOL.2019.8.4 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:olympiad "LV.NOL" ;
-    eliozo:olympiadCode "NOL" ;
-    eliozo:olympiadType "RegionalOrOpen" ;
-    eliozo:problemGrade 8 ;
-    eliozo:problemID "LV.NOL.2019.8.4" ;
-    eliozo:problemText """Uz tāfeles uzrakstīti skaitļi $\\frac{3}{2}, \\frac{4}{5}, \\frac{5}{3}$. 
-Ar vienu gājienu atļauts izvēlēties divus no uzrakstītajiem skaitļiem (apzīmēsim
-tos ar $a$ un $b$), nodzēst tos un to vietā uzrakstīt uz tāfeles skaitļus
-$\\frac{b^2}{a}$ un $\\frac{a^2}{b}$. 
-Vai, izdarot vairākus šādus gājienus,
-var panākt, lai uz tāfeles vienlaicīgi būtu uzrakstīti skaitļi 
-$\\frac{4}{3}, \\frac{4}{5}, \\frac{5}{2}$. 
-
-<!--
-seeAlso=LV.NOL.2000.7.5
-genre=making-moves
-questionType=ProveDisprove
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Uz tāfeles uzrakstīti skaitļi $\\frac{3}{2}, \\frac{4}{5}, \\frac{5}{3}$. 
-Ar vienu gājienu atļauts izvēlēties divus no uzrakstītajiem skaitļiem (apzīmēsim
-tos ar $a$ un $b$), nodzēst tos un to vietā uzrakstīt uz tāfeles skaitļus
-$\\frac{b^2}{a}$ un $\\frac{a^2}{b}$. 
-Vai, izdarot vairākus šādus gājienus,
-var panākt, lai uz tāfeles vienlaicīgi būtu uzrakstīti skaitļi 
-$\\frac{4}{3}, \\frac{4}{5}, \\frac{5}{2}$. </p>
-<!--
-seeAlso=LV.NOL.2000.7.5
-genre=making-moves
-questionType=ProveDisprove
--->"""@lv ;
-    eliozo:problemTimeID "2019" ;
-    eliozo:problemYear 2019 ;
-    eliozo:problem_number 4 ;
-    eliozo:suffix "LV.NOL.2019.8" ;
-    eliozo:suggestedGrade 8 .
-
-eliozo:LV.NOL.2019.8.5 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:olympiad "LV.NOL" ;
-    eliozo:olympiadCode "NOL" ;
-    eliozo:olympiadType "RegionalOrOpen" ;
-    eliozo:problemGrade 8 ;
-    eliozo:problemID "LV.NOL.2019.8.5" ;
-    eliozo:problemText """Izmantojot divus atšķirīgus nenulles ciparus $x$ un $y$ 
-ir izveidoti divi trīsciparu skaitļi
-$\\overline{xyx}$ un $\\overline{yxy}$. 
-Zināms, ka $\\overline{xyx}$
-dalās ar $3$, bet $\\overline{yxy}$ dalās ar $4$. 
-Kāds var būt izveidotais trīsciparu skaitlis $\\overline{yxy}$?
-
-<!--
-questionType=FindAll
-concepts=divisibility
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Izmantojot divus atšķirīgus nenulles ciparus $x$ un $y$ 
-ir izveidoti divi trīsciparu skaitļi
-$\\overline{xyx}$ un $\\overline{yxy}$. 
-Zināms, ka $\\overline{xyx}$
-dalās ar $3$, bet $\\overline{yxy}$ dalās ar $4$. 
-Kāds var būt izveidotais trīsciparu skaitlis $\\overline{yxy}$?</p>
-<!--
-questionType=FindAll
-concepts=divisibility
--->"""@lv ;
-    eliozo:problemTimeID "2019" ;
-    eliozo:problemYear 2019 ;
-    eliozo:problem_number 5 ;
-    eliozo:suffix "LV.NOL.2019.8" ;
-    eliozo:suggestedGrade 8 .
-
-eliozo:LV.NOL.2019.9.5 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:olympiad "LV.NOL" ;
-    eliozo:olympiadCode "NOL" ;
-    eliozo:olympiadType "RegionalOrOpen" ;
-    eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.NOL.2019.9.5" ;
-    eliozo:problemText """Kāds mazākais ciparu skaits jāpieraksta ciparu virknes $3456$ beigās, 
-lai iegūtu skaitli, kas dalās ar $2019$?
-
-<!--
-questionType=FindOptimal
-concepts=divisibility
-genre=digit-manipulation
--->"""@lv ;
-    eliozo:problemTextHtml """<p>Kāds mazākais ciparu skaits jāpieraksta ciparu virknes $3456$ beigās, 
-lai iegūtu skaitli, kas dalās ar $2019$?</p>
-<!--
-questionType=FindOptimal
-concepts=divisibility
-genre=digit-manipulation
--->"""@lv ;
-    eliozo:problemTimeID "2019" ;
-    eliozo:problemYear 2019 ;
-    eliozo:problem_number 5 ;
-    eliozo:suffix "LV.NOL.2019.9" ;
-    eliozo:suggestedGrade 9 .
+eliozo:IMG.LV.NOL.2018.10.4.png a eliozo:Image ;
+    eliozo:imageSrc "LV.NOL.2018.10.4.png" ;
+    eliozo:imageWidth "" .
 
 eliozo:SOLN.LV.NOL.2000.7.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -4270,4 +4084,561 @@ $$\\frac{4}{3}\\cdot\\frac{4}{5}\\cdot\\frac{5}{2} = \\frac{8}{3}$$"""@lv ;
 sākumā un beigās jāatšķiras. Pretruna.</p>
 <p>$$\\frac{3}{2}\\cdot\\frac{4}{5}\\cdot\\frac{5}{3} = \\frac{2}{1}$$
 $$\\frac{4}{3}\\cdot\\frac{4}{5}\\cdot\\frac{5}{2} = \\frac{8}{3}$$</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2013.7.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+ 
+$x(x+1)(x+2)$ vienmēr dalās ar $3$, bet tam jādalās arī ar $37$. 
+Tādu $x$ ir trīsreiz vairāk kā $\\left\\lfloor 2013/37 \\right\\rfloor$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$x(x+1)(x+2)$ vienmēr dalās ar $3$, bet tam jādalās arī ar $37$. 
+Tādu $x$ ir trīsreiz vairāk kā $\\left\\lfloor 2013/37 \\right\\rfloor$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2013.7.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+ 
+Skaitļu atlikums, dalot ar $4$, palielinās par $2$ katrā solī. Pēc $13$ soļiem arī mainās par $2$, bet 
+būtu jāpaliek tam pašam. Iegūta pretruna."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Skaitļu atlikums, dalot ar $4$, palielinās par $2$ katrā solī. Pēc $13$ soļiem arī mainās par $2$, bet 
+būtu jāpaliek tam pašam. Iegūta pretruna.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2013.8.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+ 
+Pārveido $3000^2 - 1^2$ pēc kvadrātu starpības formulas."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pārveido $3000^2 - 1^2$ pēc kvadrātu starpības formulas.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2013.8.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+ 
+$4$-ciparu skaitļu bez pāru cipariem ir $5^4 = 625$; 
+visu citu (kuros ir vismaz viens pāra cipars) 
+būs $9000 - 625 = 8375$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$4$-ciparu skaitļu bez pāru cipariem ir $5^4 = 625$; 
+visu citu (kuros ir vismaz viens pāra cipars) 
+būs $9000 - 625 = 8375$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2013.8.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Sākam ar parastu maģisko kvadrātu, kur katrā rindiņā, 
+kolonnā (un pat diagonālē - kaut arī tas nav prasīts) 
+skaitļu summas ir vienādas:
+
+| 8   | 1   | 6   |
+| --- | --- | --- |
+| 3   | 5   | 7   |
+| 4   | 9   | 2   |
+
+
+**#PropertiesOfExponents** 
+Ja jāpāriet no summām uz skaitļu reizinājumiem, var
+katru no skaitļiem $a$ aizstāt, piemēram ar divnieka 
+(vai cita konstanta skaitļa) pakāpi $2^a$
+un izmantot pakāpes īpašību, ka $2^a \\cdot 2^b = 2^{a+b}$. 
+
+Mūsu gadījumā $8$ pārvēršas par $2^8 = 256$, 
+$1$ pārvēršas par $2^1 = 2$ utt. Iegūstam šādu kvadrātu: 
+
+| 256 | 2   | 64  |
+| --- | --- | --- |
+| 8   | 32  | 128 |
+| 16  | 512 | 4   |
+
+Šajā kvadrātā katrā rindiņā, kolonnā (un arī abās diagonālēs)
+skaitļu reizinājumi ir $2^15 = 32768$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Sākam ar parastu maģisko kvadrātu, kur katrā rindiņā, 
+kolonnā (un pat diagonālē - kaut arī tas nav prasīts) 
+skaitļu summas ir vienādas:</p>
+<table>
+<thead>
+<tr>
+<th>8</th>
+<th>1</th>
+<th>6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>5</td>
+<td>7</td>
+</tr>
+<tr>
+<td>4</td>
+<td>9</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>#PropertiesOfExponents</strong> 
+Ja jāpāriet no summām uz skaitļu reizinājumiem, var
+katru no skaitļiem $a$ aizstāt, piemēram ar divnieka 
+(vai cita konstanta skaitļa) pakāpi $2^a$
+un izmantot pakāpes īpašību, ka $2^a \\cdot 2^b = 2^{a+b}$. </p>
+<p>Mūsu gadījumā $8$ pārvēršas par $2^8 = 256$, 
+$1$ pārvēršas par $2^1 = 2$ utt. Iegūstam šādu kvadrātu: </p>
+<table>
+<thead>
+<tr>
+<th>256</th>
+<th>2</th>
+<th>64</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8</td>
+<td>32</td>
+<td>128</td>
+</tr>
+<tr>
+<td>16</td>
+<td>512</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>Šajā kvadrātā katrā rindiņā, kolonnā (un arī abās diagonālēs)
+skaitļu reizinājumi ir $2^15 = 32768$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2014.10.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Progresijā ir 100 locekļu zem 300
+
+$$1, 4, 7, \\ldots, 148, 151, 154, \\ldots, 298$$
+
+* Diviem locekļiem - $1$, $151$ - nav pāra, ar ko summa ir $302$.
+* Vēl ir 49 pārīši - $(4,298)$, $(7,295)$, $\\ldots$, $(148,154)$.
+* Izvēloties $52$ skaitļus, vismaz $50$ no tiem būs $\\neq 1$, $\\neq 151$. 
+* Dirihlē princips - divi būs no viena pārīša."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Progresijā ir 100 locekļu zem 300</p>
+<p>$$1, 4, 7, \\ldots, 148, 151, 154, \\ldots, 298$$</p>
+<ul>
+<li>Diviem locekļiem - $1$, $151$ - nav pāra, ar ko summa ir $302$.</li>
+<li>Vēl ir 49 pārīši - $(4,298)$, $(7,295)$, $\\ldots$, $(148,154)$.</li>
+<li>Izvēloties $52$ skaitļus, vismaz $50$ no tiem būs $\\neq 1$, $\\neq 151$. </li>
+<li>Dirihlē princips - divi būs no viena pārīša.</li>
+</ul>"""@lv .
+
+eliozo:SOLN.LV.NOL.2014.7.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+ 
+**#DivisibilityProperties** 
+Ievērojam, ka izteiksme $x(x+1)(x+2)$ vienmēr dalās ar $3$, 
+jo $x, x+1, x+2$ pieņem visus iespējamos atlikumus, dalot ar $3$. 
+
+Uzdevumā faktiski jāsaskaita tie $x$, kuriem $x(x+1)(x+2)$ dalās 
+ar $87/3 = 29$. 
+Vērtības $x=29,58,87,116,\\ldots,2001$ dalās ar $29$. Piemēram $2001 = 29 \\cdot 69$. 
+Šādu $x$ ir pavisam $69$. 
+
+Bet tā kā ar $29$ drīkst dalīties arī $x+1$ vai $x+2$, tad der arī $x=28,57,86,115,\\ldots$
+un arī $x=27,56,85,114,\\ldots$. Tāpēc atrisinājumu ir trīsreiz vairāk nekā $69$. 
+To pavisam ir $3 \\cdot 69 = 207$.
+
+jādalās ar $29$. 
+Tādu $x$ ir trīsreiz vairāk kā $\\left\\lfloor 2014/29 \\right\\rfloor$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>#DivisibilityProperties</strong> 
+Ievērojam, ka izteiksme $x(x+1)(x+2)$ vienmēr dalās ar $3$, 
+jo $x, x+1, x+2$ pieņem visus iespējamos atlikumus, dalot ar $3$. </p>
+<p>Uzdevumā faktiski jāsaskaita tie $x$, kuriem $x(x+1)(x+2)$ dalās 
+ar $87/3 = 29$. 
+Vērtības $x=29,58,87,116,\\ldots,2001$ dalās ar $29$. Piemēram $2001 = 29 \\cdot 69$. 
+Šādu $x$ ir pavisam $69$. </p>
+<p>Bet tā kā ar $29$ drīkst dalīties arī $x+1$ vai $x+2$, tad der arī $x=28,57,86,115,\\ldots$
+un arī $x=27,56,85,114,\\ldots$. Tāpēc atrisinājumu ir trīsreiz vairāk nekā $69$. 
+To pavisam ir $3 \\cdot 69 = 207$.</p>
+<p>jādalās ar $29$. 
+Tādu $x$ ir trīsreiz vairāk kā $\\left\\lfloor 2014/29 \\right\\rfloor$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2014.8.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+**#SetComplement** 
+Vieglāk saskaitīt skaitļus, kuri neapmierina doto prasību -- t.i. skaitļus, 
+kuru pierakstā nav nepāra ciparu. 
+
+**#ProductRule**
+Skaitlis nevar sākties ar ciparu $0$, tātad pirmais cipars var būt 
+$2,4,6,8$. Visi tālākie cipari var pieņemt jebkuru no piecām vērtībām 
+$0,2,4,6,8$. 
+Pēc reizināšanas likuma, $5$-ciparu skaitļu bez nepāru cipariem ir 
+$4 \\cdot 5^4 = 2500$. 
+
+Visu pārējo skaitļu, kuros ir vismaz viens nepāra cipars būs $90000 - 2500$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>#SetComplement</strong> 
+Vieglāk saskaitīt skaitļus, kuri neapmierina doto prasību -- t.i. skaitļus, 
+kuru pierakstā nav nepāra ciparu. </p>
+<p><strong>#ProductRule</strong>
+Skaitlis nevar sākties ar ciparu $0$, tātad pirmais cipars var būt 
+$2,4,6,8$. Visi tālākie cipari var pieņemt jebkuru no piecām vērtībām 
+$0,2,4,6,8$. 
+Pēc reizināšanas likuma, $5$-ciparu skaitļu bez nepāru cipariem ir 
+$4 \\cdot 5^4 = 2500$. </p>
+<p>Visu pārējo skaitļu, kuros ir vismaz viens nepāra cipars būs $90000 - 2500$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2015.10.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Invariants ir dalāmība ar $3$. 
+Ja sākotnējais skaitlis $x$ dalījās ar $3$, tad pēc katras darbības arī rezultāts dalīsies ar $3$:
+
+* $x+6$ dalās ar $3$, ja $x$ dalās ar $3$
+* $x/4$ dalās ar $3$, ja $x$ dalās ar $3$ (un arī ar $4$, lai varētu izdalīt).
+* $x'$ (pārkārtotiem cipariem) arī dalās ar $3$, jo ciparu summa nemainās.
+
+$30$ dalās ar $3$, bet $2015$ nedalās. Tātad pārveidot par $2015$ nevar."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Invariants ir dalāmība ar $3$. 
+Ja sākotnējais skaitlis $x$ dalījās ar $3$, tad pēc katras darbības arī rezultāts dalīsies ar $3$:</p>
+<ul>
+<li>$x+6$ dalās ar $3$, ja $x$ dalās ar $3$</li>
+<li>$x/4$ dalās ar $3$, ja $x$ dalās ar $3$ (un arī ar $4$, lai varētu izdalīt).</li>
+<li>$x'$ (pārkārtotiem cipariem) arī dalās ar $3$, jo ciparu summa nemainās.</li>
+</ul>
+<p>$30$ dalās ar $3$, bet $2015$ nedalās. Tātad pārveidot par $2015$ nevar.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2015.10.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Aritmētiskas progresijas locekļu summa
+
+$$S=a_1 + a_2 + \\ldots + a_n = \\frac{a_1 + a_n}{2}\\cdot{}n$$
+
+> Aritmētiskās progresijas summu iegūst, reizinot "vidējo elementu": 
+> $a_v = \\frac{a_1+a_n}{2}$ ar progresijas locekļu skaitu: $S = a_v\\cdot{}n$.  
+> Ja $n$ ir nepāru skaitlis, tad vidējais elements $a_v$ tiešām progresijā ir.  
+> Ja $n$ ir nepāru skaitlis, tad "vidējais elements" ir abu vidējo locekļu 
+> aritmētiskais vidējais. 
+
+Abos gadījumos $2\\cdot{}177 = (a_1+a_n)\\cdot{}n$ jeb
+$$2 \\cdot 3 \\cdot 59 = (a_1+a_n)\\cdot{}n$$
+
+Skaitlim $2 \\cdot 3 \\cdot 59$ ir tikai galīgs skaits dalītāju $n$. 
+Gadījumu pārlase:
+
+* Ja $n=2$, tad $177 = 88\\frac{1}{2}\\cdot{}2 = 88+89$,
+* Ja $n=3$, tad $177 = 59\\cdot{}3 = 58+59+60$,
+* Ja $n=6$, tad $177 = 29\\frac{1}{2}\\cdot{}6=27+28+29+30+31+32$. 
+
+Vēl lielāki $2 \\cdot 3 \\cdot 59$ dalītāji ($n=59$ u.c.) novestu pie ļoti garām aritmētiskām 
+progresijām, kurās būtu arī negatīvi locekļi.
+Tās neder, jo $177$ bija vairāku pēc kārtas sekojošu **naturālu** skaitļu summa."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Aritmētiskas progresijas locekļu summa</p>
+<p>$$S=a_1 + a_2 + \\ldots + a_n = \\frac{a_1 + a_n}{2}\\cdot{}n$$</p>
+<blockquote>
+<p>Aritmētiskās progresijas summu iegūst, reizinot "vidējo elementu": 
+$a_v = \\frac{a_1+a_n}{2}$ ar progresijas locekļu skaitu: $S = a_v\\cdot{}n$.<br />
+Ja $n$ ir nepāru skaitlis, tad vidējais elements $a_v$ tiešām progresijā ir.<br />
+Ja $n$ ir nepāru skaitlis, tad "vidējais elements" ir abu vidējo locekļu 
+aritmētiskais vidējais. </p>
+</blockquote>
+<p>Abos gadījumos $2\\cdot{}177 = (a_1+a_n)\\cdot{}n$ jeb
+$$2 \\cdot 3 \\cdot 59 = (a_1+a_n)\\cdot{}n$$</p>
+<p>Skaitlim $2 \\cdot 3 \\cdot 59$ ir tikai galīgs skaits dalītāju $n$. 
+Gadījumu pārlase:</p>
+<ul>
+<li>Ja $n=2$, tad $177 = 88\\frac{1}{2}\\cdot{}2 = 88+89$,</li>
+<li>Ja $n=3$, tad $177 = 59\\cdot{}3 = 58+59+60$,</li>
+<li>Ja $n=6$, tad $177 = 29\\frac{1}{2}\\cdot{}6=27+28+29+30+31+32$. </li>
+</ul>
+<p>Vēl lielāki $2 \\cdot 3 \\cdot 59$ dalītāji ($n=59$ u.c.) novestu pie ļoti garām aritmētiskām 
+progresijām, kurās būtu arī negatīvi locekļi.
+Tās neder, jo $177$ bija vairāku pēc kārtas sekojošu <strong>naturālu</strong> skaitļu summa.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2015.10.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** Ievietojam nelielas vērtības. 
+Ievērojam, ka $x$ arī ir vesela skaitļa pakāpe. 
+Ievietojam $x=1,4,8,9,16,25,32,36,49,\\ldots$. 
+Der jau $x=4$ (pirmajā piemērā)
+
+
+**(B)**
+Noskaidrojam, vai $x$ un $x+46$ var *vienlaikus* būt naturālu skaitļu pakāpes?
+
+* Ja $x$ ir pāru, tad **gan** $x$, **gan** $x+46$ dalās ar $4$ (tā ir pretruna, 
+  jo $46$ nedalās ar $4$). 
+* Ja $x$ ir nepāru, tad **gan** $x+23$, **gan** $x+121$ dalās ar $4$ (tā ir pretruna, 
+  jo starpība $121-23 = 98$ nedalās ar $4$)."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Ievietojam nelielas vērtības. 
+Ievērojam, ka $x$ arī ir vesela skaitļa pakāpe. 
+Ievietojam $x=1,4,8,9,16,25,32,36,49,\\ldots$. 
+Der jau $x=4$ (pirmajā piemērā)</p>
+<p><strong>(B)</strong>
+Noskaidrojam, vai $x$ un $x+46$ var <em>vienlaikus</em> būt naturālu skaitļu pakāpes?</p>
+<ul>
+<li>Ja $x$ ir pāru, tad <strong>gan</strong> $x$, <strong>gan</strong> $x+46$ dalās ar $4$ (tā ir pretruna, 
+  jo $46$ nedalās ar $4$). </li>
+<li>Ja $x$ ir nepāru, tad <strong>gan</strong> $x+23$, <strong>gan</strong> $x+121$ dalās ar $4$ (tā ir pretruna, 
+  jo starpība $121-23 = 98$ nedalās ar $4$).</li>
+</ul>"""@lv .
+
+eliozo:SOLN.LV.NOL.2015.7.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+ 
+Katras maiņas iznākumā dzīvnieku kopskaits mainās par pāru skaitli. 
+$99+21$ ir pāru, bet $2015$ – nepāru."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Katras maiņas iznākumā dzīvnieku kopskaits mainās par pāru skaitli. 
+$99+21$ ir pāru, bet $2015$ – nepāru.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2015.7.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+ 
+Pāru/nepāru skaitļi kā šaha galdiņš. Vidū liek $1$, pārlasa $2,4,6,10$ 
+izvietojumu variantus ($8$ neizmanto)."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pāru/nepāru skaitļi kā šaha galdiņš. Vidū liek $1$, pārlasa $2,4,6,10$ 
+izvietojumu variantus ($8$ neizmanto).</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2015.8.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+ 
+Divu nepāru skaitļu summas/starpības ir pāru skaitļi. Pie tam $49^n$ un $7^n$ dod atlikumu $1$, dalot ar $3$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Divu nepāru skaitļu summas/starpības ir pāru skaitļi. Pie tam $49^n$ un $7^n$ dod atlikumu $1$, dalot ar $3$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2015.8.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Salīdzina atlikumus (mod 3). 
+Mašīnu skaits mainās par $-7+16=9$ vai par $-19+4 = -15$, 
+t.i. par $3k$. Bet $39+3k \\neq 2015$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Salīdzina atlikumus (mod 3). 
+Mašīnu skaits mainās par $-7+16=9$ vai par $-19+4 = -15$, 
+t.i. par $3k$. Bet $39+3k \\neq 2015$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2016.10.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Definējam virkni 
+
+$$a_n = 1\\cdot{}4 + 2\\cdot{}7 + 3\\cdot{}10 + \\cdots + n\\cdot{}(3n + 1)$$
+
+Katrs nākamais šīs virknes loceklis ir par $n\\cdot{}(3n+1)$ lielāks kā iepriekšējais.
+Tikpat liela ir starpība starp $n(n+1)^2$ un izteiksmi, kur $n$ aizstāj ar $n-1$: $(n-1)n^2$:
+
+$$n(n+1)^2 - (n-1)n^2 = n(n^2 + 2n + 1) - n^3 + n^2 =$$
+$$= n^3+2n^2+n - n^3+n^2 = 3n^2 + n = n(3n+1).$$
+
+
+Spriedums ar matemātisko indukciju 
+
+**Bāze:** 
+Ja $n=1$, tad $a_1 = 1\\cdot{}4 = 4$ un arī $n(n+1)^2 = 4$. 
+
+**Pāreja:**
+Palielinot $n$ par $1$, gan virkne $a_n$, gan formula $n(n+1)^2$ pieaug vienādiem soļiem."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Definējam virkni </p>
+<p>$$a_n = 1\\cdot{}4 + 2\\cdot{}7 + 3\\cdot{}10 + \\cdots + n\\cdot{}(3n + 1)$$</p>
+<p>Katrs nākamais šīs virknes loceklis ir par $n\\cdot{}(3n+1)$ lielāks kā iepriekšējais.
+Tikpat liela ir starpība starp $n(n+1)^2$ un izteiksmi, kur $n$ aizstāj ar $n-1$: $(n-1)n^2$:</p>
+<p>$$n(n+1)^2 - (n-1)n^2 = n(n^2 + 2n + 1) - n^3 + n^2 =$$
+$$= n^3+2n^2+n - n^3+n^2 = 3n^2 + n = n(3n+1).$$</p>
+<p>Spriedums ar matemātisko indukciju </p>
+<p><strong>Bāze:</strong> 
+Ja $n=1$, tad $a_1 = 1\\cdot{}4 = 4$ un arī $n(n+1)^2 = 4$. </p>
+<p><strong>Pāreja:</strong>
+Palielinot $n$ par $1$, gan virkne $a_n$, gan formula $n(n+1)^2$ pieaug vienādiem soļiem.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2016.10.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Aplūkojam pilnu kvadrātu atlikumus, dalot ar 5
+
+$$(1,4,9,16,25) \\equiv (1,4,4,1,0) \\pmod {5}.$$
+
+Pēc tam šie atlikumi atkārtojas.
+Ir tikai $3$ dažādi atlikumi: $0,1,4$. 
+
+Izvēloties jebkurus trīs kvadrātus, izpildīsies viens no diviem nosacījumiem:
+
+* Vai nu divi atlikumi sakritīs (tad to starpība dalās ar $5$),
+* Vai arī katrs atlikums parādīsies vienu reizi (tad to summa $1+4$ dalās ar $5$)."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Aplūkojam pilnu kvadrātu atlikumus, dalot ar 5</p>
+<p>$$(1,4,9,16,25) \\equiv (1,4,4,1,0) \\pmod {5}.$$</p>
+<p>Pēc tam šie atlikumi atkārtojas.
+Ir tikai $3$ dažādi atlikumi: $0,1,4$. </p>
+<p>Izvēloties jebkurus trīs kvadrātus, izpildīsies viens no diviem nosacījumiem:</p>
+<ul>
+<li>Vai nu divi atlikumi sakritīs (tad to starpība dalās ar $5$),</li>
+<li>Vai arī katrs atlikums parādīsies vienu reizi (tad to summa $1+4$ dalās ar $5$).</li>
+</ul>"""@lv .
+
+eliozo:SOLN.LV.NOL.2016.7.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+ 
+Apskatām dalāmības pazīmes ar abiem skaitļa $99 = 9 \\cdot 11$ reizinātājiem: 
+
+* Skaitlis dalās ar $9$ tad un tikai tad, ja tā ciparu summa dalās ar $9$. 
+* Skaitlis dalās ar $11$ tad un tikai tad, ja pāru un nepāru pozīcijās ciparu 
+summas ir vienādas vai arī atšķiras par skaitli, kas dalās ar $11$. 
+
+Uzrakstot skaitli no otra gala, tā ciparu summa nemainās (saglabājas dalāmība ar $9$); 
+un arī pāru/nepāru pozīcijās esošās ciparu summas nemainās (ja skaitlī ir 
+pāra skaits ciparu, tad pāru un nepāru pozīcijas apmainās vietām). Tātad arī dalāmība 
+ar $11$ saglabājas."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apskatām dalāmības pazīmes ar abiem skaitļa $99 = 9 \\cdot 11$ reizinātājiem: </p>
+<ul>
+<li>Skaitlis dalās ar $9$ tad un tikai tad, ja tā ciparu summa dalās ar $9$. </li>
+<li>Skaitlis dalās ar $11$ tad un tikai tad, ja pāru un nepāru pozīcijās ciparu 
+summas ir vienādas vai arī atšķiras par skaitli, kas dalās ar $11$. </li>
+</ul>
+<p>Uzrakstot skaitli no otra gala, tā ciparu summa nemainās (saglabājas dalāmība ar $9$); 
+un arī pāru/nepāru pozīcijās esošās ciparu summas nemainās (ja skaitlī ir 
+pāra skaits ciparu, tad pāru un nepāru pozīcijas apmainās vietām). Tātad arī dalāmība 
+ar $11$ saglabājas.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2016.7.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** Izveidojam piemēru, izvēloties nelielu vērtību, ar kuru iespējami 
+vienkārši veikt aprēķinus.
+Tā kā $a,b,c,d$ uzdevuma formulā ir simetriski, var paņemt, teiksim, $c=1$. 
+Ja $c=1$, tad $a+b=d$, $ab=d+1$ (divu skaitļu summa par $1$ mazāka nekā reizinājums).
+
+Der, piemēram, atrisinājums $(a,b,c,d)=(2,3,1,5)$.
+ 
+**(B)**
+Atkal ievērojam, ka $a,b,c,d$ uzdevuma formulā ir simetriski - tāpēc nav būtiski, 
+kuru burtu pirmo ar kaut ko aizvieto.
+Izvēlamies $c=0$. Tad $a+b=0$, $ab=d$.
+
+Der, piemēram, atrisinājums $(a,b,c,d) = (2017, -2017, 0, -2017^2)$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Izveidojam piemēru, izvēloties nelielu vērtību, ar kuru iespējami 
+vienkārši veikt aprēķinus.
+Tā kā $a,b,c,d$ uzdevuma formulā ir simetriski, var paņemt, teiksim, $c=1$. 
+Ja $c=1$, tad $a+b=d$, $ab=d+1$ (divu skaitļu summa par $1$ mazāka nekā reizinājums).</p>
+<p>Der, piemēram, atrisinājums $(a,b,c,d)=(2,3,1,5)$.</p>
+<p><strong>(B)</strong>
+Atkal ievērojam, ka $a,b,c,d$ uzdevuma formulā ir simetriski - tāpēc nav būtiski, 
+kuru burtu pirmo ar kaut ko aizvieto.
+Izvēlamies $c=0$. Tad $a+b=0$, $ab=d$.</p>
+<p>Der, piemēram, atrisinājums $(a,b,c,d) = (2017, -2017, 0, -2017^2)$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2016.8.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Skaitļi $104$ un $56$ šeit nav izraudzīti patvaļīgi, 
+tiem lielākais kopīgais dalītājs $\\gcd(104,56) = 8$. 
+Tāpēc aplūkosim dalāmības pazīmi ar $8$ un tikai divus 
+ciparus $A$ un $N$ abos skaitļos. 
+
+* Skaitlis *DUBĻUNNN* dalās ar $104$; tāpēc tas dalās arī ar $8$. 
+  Pēc dalāmības pazīmes ar $8$: trīs pēdējo ciparu veidotais 
+  skaitlis $\\overline{NNN}$ dalās ar $8$. Pārbaudot visas cipara $N$ iespējas, 
+  atrodam, ka $N=0$ vai $N=8$ (pēc dotā $N=8$, jo cipari nav nulles).
+* Pieņemsim no pretējā, ka arī skaitlis *BURBUĻVANNA* dalās ar $56$, tātad arī ar $8$. 
+  Pēc dalāmības pazīmes ar $8$, arī pēdējo trīs ciparu veidotais 
+  skaitlis $\\overline{NNA}$ dalās ar $8$. Tā kā $N=8$, tad  
+  seko, ka $A=0$ (nevar būt) vai $A=8$. Atliek iespēja $A=N$, kas 
+  ir pretruna, jo visi burti apzīmē dažādus ciparus."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Skaitļi $104$ un $56$ šeit nav izraudzīti patvaļīgi, 
+tiem lielākais kopīgais dalītājs $\\gcd(104,56) = 8$. 
+Tāpēc aplūkosim dalāmības pazīmi ar $8$ un tikai divus 
+ciparus $A$ un $N$ abos skaitļos. </p>
+<ul>
+<li>Skaitlis <em>DUBĻUNNN</em> dalās ar $104$; tāpēc tas dalās arī ar $8$. 
+  Pēc dalāmības pazīmes ar $8$: trīs pēdējo ciparu veidotais 
+  skaitlis $\\overline{NNN}$ dalās ar $8$. Pārbaudot visas cipara $N$ iespējas, 
+  atrodam, ka $N=0$ vai $N=8$ (pēc dotā $N=8$, jo cipari nav nulles).</li>
+<li>Pieņemsim no pretējā, ka arī skaitlis <em>BURBUĻVANNA</em> dalās ar $56$, tātad arī ar $8$. 
+  Pēc dalāmības pazīmes ar $8$, arī pēdējo trīs ciparu veidotais 
+  skaitlis $\\overline{NNA}$ dalās ar $8$. Tā kā $N=8$, tad<br />
+  seko, ka $A=0$ (nevar būt) vai $A=8$. Atliek iespēja $A=N$, kas 
+  ir pretruna, jo visi burti apzīmē dažādus ciparus.</li>
+</ul>"""@lv .
+
+eliozo:SOLN.LV.NOL.2017.10.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+* $\\overline{MATEMĀTIKA}$ dalās ar $10$ ($A=0$)
+* $\\overline{MATEM}$ dalās ar $5$ ($M=5$)
+* $\\overline{MAT}=\\overline{50T}$ dalās ar $3$ ($T = 1,4,7$)
+* Dalāmība ar $2,4,6,8$ ($E$, $Ā$, $I$ ir pāru cipari $\\neq 0$)
+* Dalāmība ar $4$ ($TI$ un $TE$ dalās ar $4$, t.i $T \\neq 4$)
+* Dalāmība ar $6$ ($\\overline{MATEMĀ}$ ciparu summa ir $5+0+(1|7)+(2|6)+5+(4|8)$
+  t.i. $\\overline{EMĀ}=258$ vai $\\overline{EMĀ}=654$.
+* Dalāmība ar $7$: $50(1|7)(2|6)5(4|8)(1|7)$
+  ($\\overline{MATEMĀT}$ ir $5012581$ vai $5076547$)
+* Dalāmība ar $8$: $50125816$, $50765472$
+* $5076547290$ der (bet $5012581680$ neder, 
+  jo cipari $K$ un $Ā$ nedrīkst sakrist)."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<ul>
+<li>$\\overline{MATEMĀTIKA}$ dalās ar $10$ ($A=0$)</li>
+<li>$\\overline{MATEM}$ dalās ar $5$ ($M=5$)</li>
+<li>$\\overline{MAT}=\\overline{50T}$ dalās ar $3$ ($T = 1,4,7$)</li>
+<li>Dalāmība ar $2,4,6,8$ ($E$, $Ā$, $I$ ir pāru cipari $\\neq 0$)</li>
+<li>Dalāmība ar $4$ ($TI$ un $TE$ dalās ar $4$, t.i $T \\neq 4$)</li>
+<li>Dalāmība ar $6$ ($\\overline{MATEMĀ}$ ciparu summa ir $5+0+(1|7)+(2|6)+5+(4|8)$
+  t.i. $\\overline{EMĀ}=258$ vai $\\overline{EMĀ}=654$.</li>
+<li>Dalāmība ar $7$: $50(1|7)(2|6)5(4|8)(1|7)$
+  ($\\overline{MATEMĀT}$ ir $5012581$ vai $5076547$)</li>
+<li>Dalāmība ar $8$: $50125816$, $50765472$</li>
+<li>$5076547290$ der (bet $5012581680$ neder, 
+  jo cipari $K$ un $Ā$ nedrīkst sakrist).</li>
+</ul>"""@lv .
+
+eliozo:SOLN.LV.NOL.2018.10.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Katrs sešciparu skaitlis ir mazāks par 1 miljonu. 
+$3$ šādu skaitļu summa ir zem $10$ miljoniem - ne vairāk kā 7-ciparu skaitlis. 
+Vai šāds skaitlis var beigties ar 6 nullēm?
+Ciparu summas dēļ jādalās ar $9$, bet $9000000$ būtu par daudz.
+
+Vai var beigties ar 5 nullēm? 
+Konstruējam, ikreiz liekot mazākos iespējamos ciparus.
+
+![Saskaitīšana stabiņā](LV.NOL.2018.10.4.png)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Katrs sešciparu skaitlis ir mazāks par 1 miljonu. 
+$3$ šādu skaitļu summa ir zem $10$ miljoniem - ne vairāk kā 7-ciparu skaitlis. 
+Vai šāds skaitlis var beigties ar 6 nullēm?
+Ciparu summas dēļ jādalās ar $9$, bet $9000000$ būtu par daudz.</p>
+<p>Vai var beigties ar 5 nullēm? 
+Konstruējam, ikreiz liekot mazākos iespējamos ciparus.</p>
+<p><img alt="Saskaitīšana stabiņā" src="LV.NOL.2018.10.4.png" /></p>"""@lv .
 

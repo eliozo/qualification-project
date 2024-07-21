@@ -199,9 +199,16 @@ SELECT ?problemTextHtml ?solutionTextHtml WHERE {{
 }}    
 """
 
-    myobj = {'query':  queryTemplate.format(problemid=arg, language=lang)}
+    actual_query = queryTemplate.format(problemid=arg, language=lang)
+    myobj = {'query':  actual_query}
+    print('*** query ***')
+    print(actual_query)
+    print('*** end query ***')
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
+    print('*** results ***')
+    print(x.text)
+    print('*** end results ***')
     return x.text
 
 
@@ -1071,8 +1078,10 @@ def create_app(test_config=None):
         problemid = request.args.get('problemid')
         solnData = json.loads(getSPARQLProblemSolutions(problemid, lang))
         hasSolution = False
-        if 'solutionTextHtml' in solnData['results']['bindings'][0]:
+        if len(solnData['results']['bindings']) > 0 and 'solutionTextHtml' in solnData['results']['bindings'][0]:
             hasSolution = True
+        # if 'solutionTextHtml' in solnData['results']['bindings'][0]:
+        #     hasSolution = True
 
 
         data = json.loads(getSPARQLProblem(problemid, lang))
