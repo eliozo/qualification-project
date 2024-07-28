@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-07-15 10:59+0300\n"
+"POT-Creation-Date: 2024-07-28 22:20+0300\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: lt\n"
@@ -170,7 +170,7 @@ msgstr "Video"
 msgid "Problems with video-recorded solutions."
 msgstr "Problemos su vaizdo sprendimais."
 
-#: templates/filter_content.html:204 templates/main_content.html:10
+#: templates/filter_content.html:204
 msgid "Search"
 msgstr "Ieškoti"
 
@@ -178,7 +178,7 @@ msgstr "Ieškoti"
 msgid "Pages"
 msgstr "Puslapiai"
 
-#: templates/filter_content.html:222 templates/main_content.html:18
+#: templates/filter_content.html:222 templates/main_content.html:38
 msgid "More"
 msgstr "Daugiau"
 
@@ -206,13 +206,33 @@ msgstr "Sąvokos"
 msgid "References"
 msgstr "Nuorodos"
 
-#: templates/main_content.html:5
-msgid "Math Olympiad Problems"
-msgstr "Matematikos olimpiadų uždaviniai"
+#: templates/main_content.html:8
+msgid "Case Sensitive"
+msgstr "Raidžių jautrumas"
 
 #: templates/main_content.html:9
-msgid "Text to Search"
-msgstr "Ko ieškoti"
+msgid "Regular Expresion"
+msgstr "Reguliarioji išraiška"
+
+#: templates/main_content.html:12
+msgid "All"
+msgstr "Viskas"
+
+#: templates/main_content.html:13
+msgid "Questions"
+msgstr "Klausimai"
+
+#: templates/main_content.html:14
+msgid "Solutions"
+msgstr "Sprendimai"
+
+#: templates/main_content.html:15
+msgid "Hints"
+msgstr "Patarimai"
+
+#: templates/main_content.html:16
+msgid "Formulas"
+msgstr "Formulės"
 
 #~ msgid "Olympiad"
 #~ msgstr "Olimpiada"
@@ -228,4 +248,10 @@ msgstr "Ko ieškoti"
 
 #~ msgid "No video"
 #~ msgstr "Nėra video"
+
+#~ msgid "Math Olympiad Problems"
+#~ msgstr "Matematikos olimpiadų uždaviniai"
+
+#~ msgid "Text to Search"
+#~ msgstr "Ko ieškoti"
 

@@ -237,27 +237,93 @@ WHERE {{
     x = requests.post(url, myobj, head)
     return x.text
 
-def getProblemsByKeywordSPARQL(keyword):
-    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+def getProblemsByKeywordSPARQL(thePattern, isCaseSensitive):
+    if not isCaseSensitive:
+        escapedPattern = thePattern.lower()
+        isLcase = 'lcase'
+    else:
+        escapedPattern = thePattern
+        isLcase = ''
+
     url = FUSEKI_URL
-    myobj = {'query': 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'+
-    'PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n'+
-    'PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\n'+
-    '''SELECT DISTINCT ?problem ?problemid ?text ?grade
-WHERE {
-    ?problem
-             eliozo:problemID ?problemid ;
-             eliozo:problemTextHtml ?text .
-    OPTIONAL {
-        eliozo:problemGrade ?grade .
-    }
-    FILTER(contains(lcase(?text), "'''+keyword+'''"))
-} ORDER BY ?grade ?problemid
-  LIMIT 10'''
-}
+    queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+SELECT DISTINCT ?problem ?problemid ?text ?textHtml ?grade
+WHERE {{
+    ?problem eliozo:problemID ?problemid ;
+    eliozo:problemText ?text ;
+    eliozo:problemTextHtml ?textHtml .
+    OPTIONAL {{
+        ?problem eliozo:problemGrade ?grade .
+    }}
+    FILTER (contains({lcase}(?text), "{pattern}"))
+}} ORDER BY ?grade ?problemid
+LIMIT 10
+"""
+    escapedPattern = escapedPattern.replace('"', '\\"')
+
+    query = queryTemplate.format(pattern=escapedPattern, lcase=isLcase)
+    myobj = {'query': query}
+    print(f"***** query in getProblemsByKeywordSPARQL('{thePattern}')")
+    print(query)
+    print("===== END =====")
+
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
+    print("===== THEEND =====")
     x = requests.post(url, myobj, head)
+    print("===== THETHEEND =====")
+    print(f"***** x.text in getProblemsByKeywordSPARQL('{thePattern}')")
+    print(x.text)
+    print("===== END =====")
+
     return x.text
+
+def getProblemsByRegexSPARQL(thePattern, isCaseSensitive):
+    # so far no escaping pattern
+    if not isCaseSensitive:
+        escapedPattern = thePattern.lower()
+        isLcase = 'lcase'
+    else:
+        escapedPattern = thePattern
+        isLcase = ''
+
+    url = FUSEKI_URL
+    queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+SELECT DISTINCT ?problem ?problemid ?text ?textHtml ?grade
+WHERE {{
+    ?problem eliozo:problemID ?problemid ;
+    eliozo:problemText ?text ;
+    eliozo:problemTextHtml ?textHtml ;
+    OPTIONAL {{
+        ?problem eliozo:problemGrade ?grade .
+    }}
+    FILTER (regex({lcase}(?text), "{pattern}"))
+}} ORDER BY ?grade ?problemid
+LIMIT 10
+"""
+    escapedPattern = escapedPattern.replace('"', '\\"')
+    escapedPattern = escapedPattern.replace('\\', '\\\\')
+
+    query = queryTemplate.format(pattern=escapedPattern, lcase=isLcase)
+    myobj = {'query': query}
+    print(f"***** query in getProblemsByRegexSPARQL('{thePattern}')")
+    print(query)
+    print("===== END =====")
+
+    head = {'Content-Type': 'application/x-www-form-urlencoded'}
+    print("===== THEEND =====")
+    x = requests.post(url, myobj, head)
+    print("===== THETHEEND =====")
+    print(f"***** x.text in getProblemsByRegexSPARQL('{thePattern}')")
+    print(x.text)
+    print("===== END =====")
+
+    return x.text
+
+
 
 
 def getProblemsByFiltersSPARQL(params, theOffset):
@@ -672,16 +738,27 @@ def create_app(test_config=None):
             }
             return render_template('main_content.html',  **template_context)
         new_keyword = replace_non_ascii_with_unicode_escape(keyword)
-        link = json.loads(getProblemsByKeywordSPARQL(new_keyword))
+        caseSensitive = request.args.get('caseSensitive')
+        print(f'caseSensitive = {caseSensitive}')
+        isCaseSensitive = (caseSensitive == '1')
+        regex = request.args.get('regex')
+        print(f'regex = {regex}')
+        isRegex = (regex == '1')
+
+        if not isRegex:
+            link = json.loads(getProblemsByKeywordSPARQL(new_keyword, isCaseSensitive))
+        else:
+            link = json.loads(getProblemsByRegexSPARQL(new_keyword, isCaseSensitive))
 
         problems = []
         
         for item in link['results']['bindings']:
             problem_id_value = item['problemid']['value']
             problem_imagefile = ''
-            if 'imagefile' in item:
-                problem_imagefile = item['imagefile']['value']
-            problem_text_value = mathBeautify(item['text']['value'])
+            # if 'imagefile' in item:
+            #     problem_imagefile = item['imagefile']['value']
+            problem_text_value = mathBeautify(item['textHtml']['value'])
+            problem_text_value = fix_image_links(problem_text_value)
             d = {'problemid': problem_id_value, 'text': problem_text_value, 'imagefile': problem_imagefile}
             problems.append(d)
 
@@ -689,6 +766,8 @@ def create_app(test_config=None):
             'problems': problems,
             'keyword' : keyword,
             'active': 'main',
+            'regex': regex,
+            'caseSensitive': caseSensitive,
             'lang': session.get('lang', 'lv'),
             'title': 'Sākumlapa'
         }

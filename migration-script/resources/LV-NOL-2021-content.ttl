@@ -3,6 +3,7 @@
 
 eliozo:LV.NOL.2021.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -26,11 +27,13 @@ atrisinājuma uzrakstīšanai nekā Marutai?</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2021.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.NOL.2021.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -38,17 +41,19 @@ eliozo:LV.NOL.2021.10.2 a eliozo:Problem ;
     eliozo:problemID "LV.NOL.2021.10.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.10.2.SUB0 ;
     eliozo:problemText """Aplūkosim funkcijas $y=ax^{2}+2x+2b$, kuru koeficienti $a$ un $b$ ir reāli skaitļi, 
-kurus saista sakarība $a+18 b=2021$. Pierādīt, ka visu šo funkciju grafikiem ir divi kopīgi punkti."""@lv ;
+kurus saista sakarība $a+18b=2021$. Pierādīt, ka visu šo funkciju grafikiem ir divi kopīgi punkti."""@lv ;
     eliozo:problemTextHtml """<p>Aplūkosim funkcijas $y=ax^{2}+2x+2b$, kuru koeficienti $a$ un $b$ ir reāli skaitļi, 
-kurus saista sakarība $a+18 b=2021$. Pierādīt, ka visu šo funkciju grafikiem ir divi kopīgi punkti.</p>"""@lv ;
+kurus saista sakarība $a+18b=2021$. Pierādīt, ka visu šo funkciju grafikiem ir divi kopīgi punkti.</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2021.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.NOL.2021.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -58,16 +63,24 @@ eliozo:LV.NOL.2021.10.3 a eliozo:Problem ;
         eliozo:IMG.LV.NOL.2021.10.3B.png ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.10.3.SUB0,
         eliozo:SOLN.LV.NOL.2021.10.3.SUB1 ;
-    eliozo:problemText "10.3. Kvadrāta $A B C D$, kura malas garums ir 1, malas $A B$ viduspunkts ir $E$ un malas $B C$ viduspunkts ir $F$. Nogrieznis $A F$ krusto $E D$ un $E C$ attiecīgi punktos $G$ un $H$, bet $F D$ un $E C$ krustojas punktā $I$. Aprēkināt četrstūra $D G H I$ laukumu."@lv ;
-    eliozo:problemTextHtml "<p>10.3. Kvadrāta $A B C D$, kura malas garums ir 1, malas $A B$ viduspunkts ir $E$ un malas $B C$ viduspunkts ir $F$. Nogrieznis $A F$ krusto $E D$ un $E C$ attiecīgi punktos $G$ un $H$, bet $F D$ un $E C$ krustojas punktā $I$. Aprēkināt četrstūra $D G H I$ laukumu.</p>"@lv ;
+    eliozo:problemText """Kvadrāta $ABCD$, kura malas garums ir $1$, malas $AB$ viduspunkts ir $E$ 
+un malas $BC$ viduspunkts ir $F$. Nogrieznis $AF$ krusto $ED$ un $EC$ 
+attiecīgi punktos $G$ un $H$, bet $FD$ un $EC$ krustojas punktā $I$. 
+Aprēķināt četrstūra $DGHI$ laukumu."""@lv ;
+    eliozo:problemTextHtml """<p>Kvadrāta $ABCD$, kura malas garums ir $1$, malas $AB$ viduspunkts ir $E$ 
+un malas $BC$ viduspunkts ir $F$. Nogrieznis $AF$ krusto $ED$ un $EC$ 
+attiecīgi punktos $G$ un $H$, bet $FD$ un $EC$ krustojas punktā $I$. 
+Aprēķināt četrstūra $DGHI$ laukumu.</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2021.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.NOL.2021.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -82,11 +95,13 @@ eliozo:LV.NOL.2021.10.4 a eliozo:Problem ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 4 ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2021.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.NOL.2021.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -102,11 +117,13 @@ rindā augošā secībā, tad 146. un 376. skaitļu summa būtu lielāka nekā $
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 5 ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2021.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.NOL.2021.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -131,56 +148,62 @@ progresijas pirmo piecu locekļu summu.</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2021.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2021.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2021.11.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.11.2.SUB0 ;
-    eliozo:problemText """Doti tādi skaitļi $a, b$ un $c$, ka $a+c=\\frac{b}{2021}$, 
+    eliozo:problemText """Doti tādi skaitļi $a,b$ un $c$, ka $a+c=\\frac{b}{2021}$, 
 turklāt neviens no skaitļiem 
-$a, b, c$ nav $0$. Pierādīt, ka vienādojumam $a x^{2}+b x+c=0$ ir sakne, 
-kas atrodas intervālā $[-1 ; 1]$."""@lv ;
-    eliozo:problemTextHtml """<p>Doti tādi skaitļi $a, b$ un $c$, ka $a+c=\\frac{b}{2021}$, 
+$a,b,c$ nav $0$. Pierādīt, ka vienādojumam $ax^{2}+bx+c=0$ ir sakne, 
+kas atrodas intervālā $[-1;1]$."""@lv ;
+    eliozo:problemTextHtml """<p>Doti tādi skaitļi $a,b$ un $c$, ka $a+c=\\frac{b}{2021}$, 
 turklāt neviens no skaitļiem 
-$a, b, c$ nav $0$. Pierādīt, ka vienādojumam $a x^{2}+b x+c=0$ ir sakne, 
-kas atrodas intervālā $[-1 ; 1]$.</p>"""@lv ;
+$a,b,c$ nav $0$. Pierādīt, ka vienādojumam $ax^{2}+bx+c=0$ ir sakne, 
+kas atrodas intervālā $[-1;1]$.</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2021.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2021.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2021.11.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.11.3.SUB0 ;
-    eliozo:problemText """Divi vienādi vienādsānu trijstūri $A B C$ un $D E F(A B=A C=D E=D F$ un $B C=E F)$ 
+    eliozo:problemText """Divi vienādi vienādsānu trijstūri $ABC$ un $DEF(A B=A C=D E=D F$ un $B C=E F)$ 
 krustojoties veido četrstūri $P Q R S$ (skat. 5. att.), 
 kuram var apvilkt riņka līniju. Pierādīt, ka divi no četrstūra $PQRS$ leņkiem ir taisni.
 
 ![](LV.NOL.2021.11.3.png){ width=200px }"""@lv ;
-    eliozo:problemTextHtml """<p>Divi vienādi vienādsānu trijstūri $A B C$ un $D E F(A B=A C=D E=D F$ un $B C=E F)$ 
+    eliozo:problemTextHtml """<p>Divi vienādi vienādsānu trijstūri $ABC$ un $DEF(A B=A C=D E=D F$ un $B C=E F)$ 
 krustojoties veido četrstūri $P Q R S$ (skat. 5. att.), 
 kuram var apvilkt riņka līniju. Pierādīt, ka divi no četrstūra $PQRS$ leņkiem ir taisni.</p>
 <p><img alt="" src="LV.NOL.2021.11.3.png" />{ width=200px }</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2021.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2021.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -198,11 +221,13 @@ Pierādīt, ka jebkuru divu <em>tīri jauku</em> skaitļu summa arī ir <em>tīr
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 4 ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2021.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2021.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -211,23 +236,25 @@ eliozo:LV.NOL.2021.11.5 a eliozo:Problem ;
     eliozo:problemImage eliozo:IMG.LV.NOL.2021.11.5A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.11.5.SUB0 ;
     eliozo:problemText """Šaha turnīrā katrs dalībnieks ar katru izspēlēja tieši vienu partiju. Katrā partijā par uzvaru 
-tiek pieškirts $1$ punkts, par neizškirtu tiek piešķirti $0.5$ punkti, par zaudējumu - $0$ punkti. 
-Turnīra beigās izrādijās, ka katra dalībnieka uzvaru skaits nepārsniedz tā neizšķirtu 
+tiek piešķirts $1$ punkts, par neizšķirtu tiek piešķirti $0.5$ punkti, par zaudējumu - $0$ punkti. 
+Turnīra beigās izrādījās, ka katra dalībnieka uzvaru skaits nepārsniedz tā neizšķirtu 
 skaitu un nav divu dalībnieku, kuri kopsummā būtu ieguvuši vienādu punktu skaitu. 
 Vai iespējams, ka turnīrā piedalījās **(A)** $15$ dalībnieki, **(B)** $16$ dalībnieki?"""@lv ;
     eliozo:problemTextHtml """<p>Šaha turnīrā katrs dalībnieks ar katru izspēlēja tieši vienu partiju. Katrā partijā par uzvaru 
-tiek pieškirts $1$ punkts, par neizškirtu tiek piešķirti $0.5$ punkti, par zaudējumu - $0$ punkti. 
-Turnīra beigās izrādijās, ka katra dalībnieka uzvaru skaits nepārsniedz tā neizšķirtu 
+tiek piešķirts $1$ punkts, par neizšķirtu tiek piešķirti $0.5$ punkti, par zaudējumu - $0$ punkti. 
+Turnīra beigās izrādījās, ka katra dalībnieka uzvaru skaits nepārsniedz tā neizšķirtu 
 skaitu un nav divu dalībnieku, kuri kopsummā būtu ieguvuši vienādu punktu skaitu. 
 Vai iespējams, ka turnīrā piedalījās <strong>(A)</strong> $15$ dalībnieki, <strong>(B)</strong> $16$ dalībnieki?</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 5 ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.NOL.2021.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2021.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -249,11 +276,13 @@ Ar kādu ātrumu brauc Māris un Mārtiņš?</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2021.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.NOL.2021.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -261,16 +290,18 @@ eliozo:LV.NOL.2021.12.2 a eliozo:Problem ;
     eliozo:problemID "LV.NOL.2021.12.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.12.2.SUB0,
         eliozo:SOLN.LV.NOL.2021.12.2.SUB1 ;
-    eliozo:problemText "Dots, ka $8ac + 2bc + c^{2}<0$. Pierādīt, ka $b^{2}-8 a c>0$."@lv ;
-    eliozo:problemTextHtml "<p>Dots, ka $8ac + 2bc + c^{2}&lt;0$. Pierādīt, ka $b^{2}-8 a c&gt;0$.</p>"@lv ;
+    eliozo:problemText "Dots, ka $8ac + 2bc + c^{2}<0$. Pierādīt, ka $b^{2}-8ac>0$."@lv ;
+    eliozo:problemTextHtml "<p>Dots, ka $8ac + 2bc + c^{2}&lt;0$. Pierādīt, ka $b^{2}-8ac&gt;0$.</p>"@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 2 ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2021.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.NOL.2021.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -280,19 +311,21 @@ eliozo:LV.NOL.2021.12.3 a eliozo:Problem ;
         eliozo:IMG.LV.NOL.2021.12.3B.png ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.12.3.SUB0,
         eliozo:SOLN.LV.NOL.2021.12.3.SUB1 ;
-    eliozo:problemText """Taisnstūris salikts no četriem vienības kvadrātiem. Aprēḳināt iekrāsotā četrstūra (skat. 6. att.) laukumu un lenkus.
+    eliozo:problemText """Taisnstūris salikts no četriem vienības kvadrātiem. Aprēḳināt iekrāsotā četrstūra (skat. 6. att.) laukumu un leņķus.
 
 ![](LV.NOL.2021.12.3.png){ width=200px }"""@lv ;
-    eliozo:problemTextHtml """<p>Taisnstūris salikts no četriem vienības kvadrātiem. Aprēḳināt iekrāsotā četrstūra (skat. 6. att.) laukumu un lenkus.</p>
+    eliozo:problemTextHtml """<p>Taisnstūris salikts no četriem vienības kvadrātiem. Aprēḳināt iekrāsotā četrstūra (skat. 6. att.) laukumu un leņķus.</p>
 <p><img alt="" src="LV.NOL.2021.12.3.png" />{ width=200px }</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2021.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.NOL.2021.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -300,16 +333,20 @@ eliozo:LV.NOL.2021.12.4 a eliozo:Problem ;
     eliozo:problemID "LV.NOL.2021.12.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.12.4.SUB0,
         eliozo:SOLN.LV.NOL.2021.12.4.SUB1 ;
-    eliozo:problemText "Doti naturāli skaitļj $a$ un $b$, kas lielāki nekā 1. Zināms, ka gan $a^{2}+b$, gan $b^{2}+a$ ir pirmskaitli. Pierādīt, ka $a+b$ un $a b+1$ ir savstarpēji pirmskaitļ."@lv ;
-    eliozo:problemTextHtml "<p>Doti naturāli skaitļj $a$ un $b$, kas lielāki nekā 1. Zināms, ka gan $a^{2}+b$, gan $b^{2}+a$ ir pirmskaitli. Pierādīt, ka $a+b$ un $a b+1$ ir savstarpēji pirmskaitļ.</p>"@lv ;
+    eliozo:problemText """Doti naturāli skaitļj $a$ un $b$, kas lielāki nekā 1. Zināms, ka gan $a^{2}+b$, 
+gan $b^{2}+a$ ir pirmskaitli. Pierādīt, ka $a+b$ un $a b+1$ ir savstarpēji pirmskaitļi."""@lv ;
+    eliozo:problemTextHtml """<p>Doti naturāli skaitļj $a$ un $b$, kas lielāki nekā 1. Zināms, ka gan $a^{2}+b$, 
+gan $b^{2}+a$ ir pirmskaitli. Pierādīt, ka $a+b$ un $a b+1$ ir savstarpēji pirmskaitļi.</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 4 ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2021.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.NOL.2021.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -319,16 +356,32 @@ eliozo:LV.NOL.2021.12.5 a eliozo:Problem ;
         eliozo:IMG.LV.NOL.2021.12.5B.png ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.12.5.SUB0,
         eliozo:SOLN.LV.NOL.2021.12.5.SUB1 ;
-    eliozo:problemText "Taisnstūrveida rūtiņu tabulā ar $n$ rindām un $m$ kolonnām $(n>1, m>1)$ katrā rūtiņā ierakstīts atškirīgs naturāls skaitlis. Sākumā rūtinās ierakstītie skaitļi pa rindām bija sakārtoti augošā secībā (katrā rindā visi skaitļi no katras rūtiņas pa labi ir lielāki, bet pa kreisi - mazāki nekā tajā esošais skaitlis). Pēc tam visas kolonnas sakārtoja augošā secībā (katrā kolonnā visi skaitli virs katras rūtinas ir mazāki, bet zem - lielāki nekā tajā esošais skaitlis). Pierādīt, ka pēc pārkārtošanas tabulā ierakstītie skaitlii pa rindām joprojām ir sakārtoti augošā secībā."@lv ;
-    eliozo:problemTextHtml "<p>Taisnstūrveida rūtiņu tabulā ar $n$ rindām un $m$ kolonnām $(n&gt;1, m&gt;1)$ katrā rūtiņā ierakstīts atškirīgs naturāls skaitlis. Sākumā rūtinās ierakstītie skaitļi pa rindām bija sakārtoti augošā secībā (katrā rindā visi skaitļi no katras rūtiņas pa labi ir lielāki, bet pa kreisi - mazāki nekā tajā esošais skaitlis). Pēc tam visas kolonnas sakārtoja augošā secībā (katrā kolonnā visi skaitli virs katras rūtinas ir mazāki, bet zem - lielāki nekā tajā esošais skaitlis). Pierādīt, ka pēc pārkārtošanas tabulā ierakstītie skaitlii pa rindām joprojām ir sakārtoti augošā secībā.</p>"@lv ;
+    eliozo:problemText """Taisnstūrveida rūtiņu tabulā ar $n$ rindām un $m$ kolonnām ($n>1$, $m>1$) katrā 
+rūtiņā ierakstīts atšķirīgs naturāls skaitlis. Sākumā rūtinās ierakstītie skaitļi 
+pa rindām bija sakārtoti augošā secībā (katrā rindā visi skaitļi no katras 
+rūtiņas pa labi ir lielāki, bet pa kreisi - mazāki nekā tajā esošais skaitlis). 
+Pēc tam visas kolonnas sakārtoja augošā secībā (katrā kolonnā visi skaitli 
+virs katras rūtinas ir mazāki, bet zem - lielāki nekā tajā esošais skaitlis). 
+Pierādīt, ka pēc pārkārtošanas tabulā ierakstītie skaitlii pa rindām joprojām 
+ir sakārtoti augošā secībā."""@lv ;
+    eliozo:problemTextHtml """<p>Taisnstūrveida rūtiņu tabulā ar $n$ rindām un $m$ kolonnām ($n&gt;1$, $m&gt;1$) katrā 
+rūtiņā ierakstīts atšķirīgs naturāls skaitlis. Sākumā rūtinās ierakstītie skaitļi 
+pa rindām bija sakārtoti augošā secībā (katrā rindā visi skaitļi no katras 
+rūtiņas pa labi ir lielāki, bet pa kreisi - mazāki nekā tajā esošais skaitlis). 
+Pēc tam visas kolonnas sakārtoja augošā secībā (katrā kolonnā visi skaitli 
+virs katras rūtinas ir mazāki, bet zem - lielāki nekā tajā esošais skaitlis). 
+Pierādīt, ka pēc pārkārtošanas tabulā ierakstītie skaitlii pa rindām joprojām 
+ir sakārtoti augošā secībā.</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 5 ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2021.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.NOL.2021.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -363,11 +416,13 @@ Cik dalībniekiem patīk tikai matemātika?</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2021.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -375,23 +430,25 @@ eliozo:LV.NOL.2021.5.2 a eliozo:Problem ;
     eliozo:problemID "LV.NOL.2021.5.2" ;
     eliozo:problemImage eliozo:IMG.LV.NOL.2021.5.2A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.5.2.SUB0 ;
-    eliozo:problemText """Vai ar 2. att. figūrām, kas sastāv no 4 rūtiņām, var noklāt rūtiņu laukumu, kura izmērs ir
+    eliozo:problemText """Vai ar 2.att. figūrām, kas sastāv no $4$ rūtiņām, var noklāt rūtiņu laukumu, kura izmērs ir
 **(A)** $6 \\times 7$, **(B)** $3 \\times 8$ rūtiņas? Figūras nedrīkst pārklāties un iziet 
 ārpus laukuma robežām, tās drīkst pagriezt un "apmest otrādi".
 
 ![](LV.NOL.2021.5.2.png){ width=100px }"""@lv ;
-    eliozo:problemTextHtml """<p>Vai ar 2. att. figūrām, kas sastāv no 4 rūtiņām, var noklāt rūtiņu laukumu, kura izmērs ir
+    eliozo:problemTextHtml """<p>Vai ar 2.att. figūrām, kas sastāv no $4$ rūtiņām, var noklāt rūtiņu laukumu, kura izmērs ir
 <strong>(A)</strong> $6 \\times 7$, <strong>(B)</strong> $3 \\times 8$ rūtiņas? Figūras nedrīkst pārklāties un iziet 
 ārpus laukuma robežām, tās drīkst pagriezt un "apmest otrādi".</p>
 <p><img alt="" src="LV.NOL.2021.5.2.png" />{ width=100px }</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 2 ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.NOL.2021.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -404,30 +461,32 @@ eliozo:LV.NOL.2021.5.3 a eliozo:Problem ;
 **(A)** Vai pa ceļiem var veikt maršrutu, kas sākas pilsētā $A$, 
 beidzas pilsētā $A$ un kura kopgarums ir tieši $95~\\mathrm{km}$?
 
-**(B)** Vai pa ce!̣iem var veikt maršrutu, kas sākas pilsētā $A$, 
+**(B)** Vai pa ceļiem var veikt maršrutu, kas sākas pilsētā $A$, 
 beidzas pilsētā A un kura kopgarums ir tieši $95~\\mathrm{km}$, 
 ja ceļš $CD$ ir slēgts (tas ir, pa ceļu $CD$ nedrīkst braukt)?
 
-*Piezīme.* Sākot braukt pa kādu celu, pa to jābrauc līdz galam.
+*Piezīme.* Sākot braukt pa kādu ceļu, pa to jābrauc līdz galam.
 
 ![](LV.NOL.2021.5.3.png){ width=200px }"""@lv ;
     eliozo:problemTextHtml """<p>Ciemi $A,B,C,D,E$ savienoti ar ceļiem tā, kā tas parādīts 4.att. 
 (mērogs nav ievērots). Blakus katram ceļam norādīts tā garums kilometros.</p>
 <p><strong>(A)</strong> Vai pa ceļiem var veikt maršrutu, kas sākas pilsētā $A$, 
 beidzas pilsētā $A$ un kura kopgarums ir tieši $95~\\mathrm{km}$?</p>
-<p><strong>(B)</strong> Vai pa ce!̣iem var veikt maršrutu, kas sākas pilsētā $A$, 
+<p><strong>(B)</strong> Vai pa ceļiem var veikt maršrutu, kas sākas pilsētā $A$, 
 beidzas pilsētā A un kura kopgarums ir tieši $95~\\mathrm{km}$, 
 ja ceļš $CD$ ir slēgts (tas ir, pa ceļu $CD$ nedrīkst braukt)?</p>
-<p><em>Piezīme.</em> Sākot braukt pa kādu celu, pa to jābrauc līdz galam.</p>
+<p><em>Piezīme.</em> Sākot braukt pa kādu ceļu, pa to jābrauc līdz galam.</p>
 <p><img alt="" src="LV.NOL.2021.5.3.png" />{ width=200px }</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 3 ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.NOL.2021.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -462,55 +521,61 @@ kuri tiem patīk:</p>
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2021.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2021.6.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.6.2.SUB0 ;
-    eliozo:problemText """Ieraksti $5 \\times 6$ rūtinu laukumā 14 plusus un 16 mīnusus 
+    eliozo:problemText """Ieraksti $5 \\times 6$ rūtiņu laukumā $14$ plusus un $16$ mīnusus 
 (katrā rūtiņā tieši vienu zīmi) tā, lai katram plusam blakus 
 rūtiņās atrastos tieši divi mīnusi! Rūtiņas atrodas blakus, 
 ja tām ir kopīga mala."""@lv ;
-    eliozo:problemTextHtml """<p>Ieraksti $5 \\times 6$ rūtinu laukumā 14 plusus un 16 mīnusus 
+    eliozo:problemTextHtml """<p>Ieraksti $5 \\times 6$ rūtiņu laukumā $14$ plusus un $16$ mīnusus 
 (katrā rūtiņā tieši vienu zīmi) tā, lai katram plusam blakus 
 rūtiņās atrastos tieši divi mīnusi! Rūtiņas atrodas blakus, 
 ja tām ir kopīga mala.</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 2 ;
+    eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.NOL.2021.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2021.6.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.6.3.SUB0 ;
-    eliozo:problemText """Dotas deviņas kārtis ar cipariem no 1 līdz 9, uz katras kārts uzrakstīts 
+    eliozo:problemText """Dotas deviņas kārtis ar cipariem no $1$ līdz $9$, uz katras kārts uzrakstīts 
 atšķirīgs cipars. Kāds mazākais skaits kāršu jāizvelk (nezinot to vērtības), 
 lai no tām noteikti varētu izveidot divciparu skaitli, kurš dalās ar $7$ 
 (veidojot divciparu skaitli, katru kārti drīkst izmantot ne vairāk kā vienu reizi)?"""@lv ;
-    eliozo:problemTextHtml """<p>Dotas deviņas kārtis ar cipariem no 1 līdz 9, uz katras kārts uzrakstīts 
+    eliozo:problemTextHtml """<p>Dotas deviņas kārtis ar cipariem no $1$ līdz $9$, uz katras kārts uzrakstīts 
 atšķirīgs cipars. Kāds mazākais skaits kāršu jāizvelk (nezinot to vērtības), 
 lai no tām noteikti varētu izveidot divciparu skaitli, kurš dalās ar $7$ 
 (veidojot divciparu skaitli, katru kārti drīkst izmantot ne vairāk kā vienu reizi)?</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 3 ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.NOL.2021.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021.7.1 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -518,21 +583,23 @@ eliozo:LV.NOL.2021.7.1 a eliozo:Problem ;
     eliozo:problemID "LV.NOL.2021.7.1" ;
     eliozo:problemImage eliozo:IMG.LV.NOL.2021.7.1A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.7.1.SUB0 ;
-    eliozo:problemText """7.1. Vai var gadīties, ka 7.att. dotās taisnes ir funkciju 
+    eliozo:problemText """Vai var gadīties, ka 7.att. dotās taisnes ir funkciju 
 $y=ax+b$, $y=bx-c$ un $y=cx+a$ grafiki (grafiki nav doti mērogā)?
 
 ![](LV.NOL.2021.7.1.png){ width=250px }"""@lv ;
-    eliozo:problemTextHtml """<p>7.1. Vai var gadīties, ka 7.att. dotās taisnes ir funkciju 
+    eliozo:problemTextHtml """<p>Vai var gadīties, ka 7.att. dotās taisnes ir funkciju 
 $y=ax+b$, $y=bx-c$ un $y=cx+a$ grafiki (grafiki nav doti mērogā)?</p>
 <p><img alt="" src="LV.NOL.2021.7.1.png" />{ width=250px }</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 1 ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.NOL.2021.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -541,23 +608,24 @@ eliozo:LV.NOL.2021.7.2 a eliozo:Problem ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.7.2.SUB0 ;
     eliozo:problemText """Naturālu skaitli sauc par īpašu, ja tas ir vienāds ar četru savu dažādu dalītāju summu.
 
-**(A)** Atrodi vienu īpašu skaitli!
-
-**(B)** Pierādi, ka īpašo skait!u ir bezgalīgi daudz!
-
+**(A)** Atrodi vienu īpašu skaitli!  
+**(B)** Pierādi, ka īpašo skaitļu ir bezgalīgi daudz!  
 **(C)** Pierādi, ka visi īpašie skaitļi ir pāra skaitli."""@lv ;
     eliozo:problemTextHtml """<p>Naturālu skaitli sauc par īpašu, ja tas ir vienāds ar četru savu dažādu dalītāju summu.</p>
-<p><strong>(A)</strong> Atrodi vienu īpašu skaitli!</p>
-<p><strong>(B)</strong> Pierādi, ka īpašo skait!u ir bezgalīgi daudz!</p>
-<p><strong>(C)</strong> Pierādi, ka visi īpašie skaitļi ir pāra skaitli.</p>"""@lv ;
+<p><strong>(A)</strong> Atrodi vienu īpašu skaitli!<br />
+<strong>(B)</strong> Pierādi, ka īpašo skaitļu ir bezgalīgi daudz!<br />
+<strong>(C)</strong> Pierādi, ka visi īpašie skaitļi ir pāra skaitli.</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 2 ;
+    eliozo:questionType "FindExample",
+        "Prove" ;
     eliozo:suffix "LV.NOL.2021.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -583,31 +651,36 @@ spēlējot, un kā vinam jārīkojas?</p>
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 3 ;
+    eliozo:questionType "Algorithm",
+        "ProveDisprove" ;
     eliozo:suffix "LV.NOL.2021.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2021.8.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.8.1.SUB0 ;
-    eliozo:problemText """Aplūkosim lineāras funkcijas $y=b x-71+m$, kur koeficientus $b$ 
-un $m$ saista sakarība $b+2 m=2021$. Pierādīt, ka visu šādu 
+    eliozo:problemText """Aplūkosim lineāras funkcijas $y=bx-71+m$, kur koeficientus $b$ 
+un $m$ saista sakarība $b+2m=2021$. Pierādīt, ka visu šādu 
 funkciju grafiki krustojas vienā punktā!"""@lv ;
-    eliozo:problemTextHtml """<p>Aplūkosim lineāras funkcijas $y=b x-71+m$, kur koeficientus $b$ 
-un $m$ saista sakarība $b+2 m=2021$. Pierādīt, ka visu šādu 
+    eliozo:problemTextHtml """<p>Aplūkosim lineāras funkcijas $y=bx-71+m$, kur koeficientus $b$ 
+un $m$ saista sakarība $b+2m=2021$. Pierādīt, ka visu šādu 
 funkciju grafiki krustojas vienā punktā!</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2021.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.NOL.2021.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -625,11 +698,13 @@ kur $n$ ir kāds vesels skaitlis?"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 2 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2021.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.NOL.2021.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -637,67 +712,79 @@ eliozo:LV.NOL.2021.8.3 a eliozo:Problem ;
     eliozo:problemID "LV.NOL.2021.8.3" ;
     eliozo:problemImage eliozo:IMG.LV.NOL.2021.8.3A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.8.3.SUB0 ;
-    eliozo:problemText """Trijstūrī $A B C$ novilkta bisektrise $A E$. 
-Uz taisnes $A E$ atlikts punkts $D$, 
-tā ka $A D=A B+A C$ un punkts $E$ atrodas starp punktiem $A$ un $D$. 
-Pierādīt, ka $\\triangle B C D$ ir vienādmalu trijstūris, ja zināms, ka $\\Varangle B A C=120^{\\circ}$."""@lv ;
-    eliozo:problemTextHtml """<p>Trijstūrī $A B C$ novilkta bisektrise $A E$. 
-Uz taisnes $A E$ atlikts punkts $D$, 
-tā ka $A D=A B+A C$ un punkts $E$ atrodas starp punktiem $A$ un $D$. 
-Pierādīt, ka $\\triangle B C D$ ir vienādmalu trijstūris, ja zināms, ka $\\Varangle B A C=120^{\\circ}$.</p>"""@lv ;
+    eliozo:problemText """Trijstūrī $ABC$ novilkta bisektrise $AE$. 
+Uz taisnes $AE$ atlikts punkts $D$, 
+tā ka $AD=AB+AC$ un punkts $E$ atrodas starp punktiem $A$ un $D$. 
+Pierādīt, ka $\\triangle BCD$ ir vienādmalu trijstūris, 
+ja zināms, ka $\\Varangle BAC=120^{\\circ}$."""@lv ;
+    eliozo:problemTextHtml """<p>Trijstūrī $ABC$ novilkta bisektrise $AE$. 
+Uz taisnes $AE$ atlikts punkts $D$, 
+tā ka $AD=AB+AC$ un punkts $E$ atrodas starp punktiem $A$ un $D$. 
+Pierādīt, ka $\\triangle BCD$ ir vienādmalu trijstūris, 
+ja zināms, ka $\\Varangle BAC=120^{\\circ}$.</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2021.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.NOL.2021.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2021.9.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.9.1.SUB0 ;
-    eliozo:problemText """Neaizsalušas upes krastā $50~\\mathrm{km}$ attālumā atrodas divas piestātnes Novadija un Olimpija, 
-no kurām vienlaicīgi izbrauca Rihards un Kalvis. Rihards ar laivu izbrauca no Novadijas un brauca 
-pret straumi, bet Kalvis ar laivu izbrauca no Olimpijas un brauca pa straumi. Pēc $3$ stundām 
-abi sastapās. Aprēkināt abu braucēju laivu ātrumu stāvošā ūdenī, ja zināms, ka ātrumi 
+    eliozo:problemText """Neaizsalušas upes krastā $50~\\mathrm{km}$ attālumā atrodas divas 
+piestātnes Novadija un Olimpija, no kurām vienlaicīgi izbrauca Rihards 
+un Kalvis. Rihards ar laivu izbrauca no Novadijas un brauca 
+pret straumi, bet Kalvis ar laivu izbrauca no Olimpijas un brauca 
+pa straumi. Pēc $3$ stundām abi sastapās. Aprēķināt abu braucēju 
+laivu ātrumu stāvošā ūdenī, ja zināms, ka ātrumi 
 stāvošā ūdenī ir vienādi un upes straumes ātrums ir $5~\\mathrm{km}/\\mathrm{h}$."""@lv ;
-    eliozo:problemTextHtml """<p>Neaizsalušas upes krastā $50~\\mathrm{km}$ attālumā atrodas divas piestātnes Novadija un Olimpija, 
-no kurām vienlaicīgi izbrauca Rihards un Kalvis. Rihards ar laivu izbrauca no Novadijas un brauca 
-pret straumi, bet Kalvis ar laivu izbrauca no Olimpijas un brauca pa straumi. Pēc $3$ stundām 
-abi sastapās. Aprēkināt abu braucēju laivu ātrumu stāvošā ūdenī, ja zināms, ka ātrumi 
+    eliozo:problemTextHtml """<p>Neaizsalušas upes krastā $50~\\mathrm{km}$ attālumā atrodas divas 
+piestātnes Novadija un Olimpija, no kurām vienlaicīgi izbrauca Rihards 
+un Kalvis. Rihards ar laivu izbrauca no Novadijas un brauca 
+pret straumi, bet Kalvis ar laivu izbrauca no Olimpijas un brauca 
+pa straumi. Pēc $3$ stundām abi sastapās. Aprēķināt abu braucēju 
+laivu ātrumu stāvošā ūdenī, ja zināms, ka ātrumi 
 stāvošā ūdenī ir vienādi un upes straumes ātrums ir $5~\\mathrm{km}/\\mathrm{h}$.</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2021.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.NOL.2021.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2021.9.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.9.2.SUB0 ;
-    eliozo:problemText """Vai var gadities, ka 1.att. ir doti funkciju $y=a x^{2}+b x+c$ un 
-$y=b x^{2}+c x+a$ grafiki? Funkciju grafiki nav zīmēti mērogā.
+    eliozo:problemText """Vai var gadities, ka 1.att. ir doti funkciju $y=ax^{2}+bx+c$ un 
+$y=bx^{2}+cx+a$ grafiki? Funkciju grafiki nav zīmēti mērogā.
 
 ![](LV.NOL.2021.9.2.png){ width=150px }"""@lv ;
-    eliozo:problemTextHtml """<p>Vai var gadities, ka 1.att. ir doti funkciju $y=a x^{2}+b x+c$ un 
-$y=b x^{2}+c x+a$ grafiki? Funkciju grafiki nav zīmēti mērogā.</p>
+    eliozo:problemTextHtml """<p>Vai var gadities, ka 1.att. ir doti funkciju $y=ax^{2}+bx+c$ un 
+$y=bx^{2}+cx+a$ grafiki? Funkciju grafiki nav zīmēti mērogā.</p>
 <p><img alt="" src="LV.NOL.2021.9.2.png" />{ width=150px }</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 2 ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.NOL.2021.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.NOL.2021.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -705,16 +792,20 @@ eliozo:LV.NOL.2021.9.3 a eliozo:Problem ;
     eliozo:problemID "LV.NOL.2021.9.3" ;
     eliozo:problemImage eliozo:IMG.LV.NOL.2021.9.3A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.9.3.SUB0 ;
-    eliozo:problemText "Uz kvadrāta $ABCD$ malas $A D$ izvēlēts punkts $E$ tā, ka $AB+AE=CE$. Aprēḳināt $S_{CED}$, ja $AB=1$."@lv ;
-    eliozo:problemTextHtml "<p>Uz kvadrāta $ABCD$ malas $A D$ izvēlēts punkts $E$ tā, ka $AB+AE=CE$. Aprēḳināt $S_{CED}$, ja $AB=1$.</p>"@lv ;
+    eliozo:problemText """Uz kvadrāta $ABCD$ malas $AD$ izvēlēts punkts $E$ tā, ka $AB+AE=CE$. 
+Aprēḳināt $S_{CED}$, ja $AB=1$."""@lv ;
+    eliozo:problemTextHtml """<p>Uz kvadrāta $ABCD$ malas $AD$ izvēlēts punkts $E$ tā, ka $AB+AE=CE$. 
+Aprēḳināt $S_{CED}$, ja $AB=1$.</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2021.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.NOL.2021.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -728,11 +819,13 @@ nevienam pirmskaitlim $p$ skaitlis $p+1$ nav naturāla skaitļa $k$-tā pakāpe.
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 4 ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.NOL.2021.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.NOL.2021.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
+    eliozo:domain "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -740,20 +833,21 @@ eliozo:LV.NOL.2021.9.5 a eliozo:Problem ;
     eliozo:problemID "LV.NOL.2021.9.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021.9.5.SUB0 ;
     eliozo:problemText """Doti $120$ dažādi naturāli skaitļi, tie sadalīti pa pāriem tā, ka katrā pārī 
-skaitļu summa ir lielāka nekā 1000. Pierādīt, ka, ja šos dotos 120 skaitļus uzrakstītu 
+skaitļu summa ir lielāka nekā 1000. Pierādīt, ka, ja šos dotos $120$ skaitļus uzrakstītu 
 rindā augošā secībā, tad 22. un 99. skaitļa summa arī būtu lielāka nekā $1000$."""@lv ;
     eliozo:problemTextHtml """<p>Doti $120$ dažādi naturāli skaitļi, tie sadalīti pa pāriem tā, ka katrā pārī 
-skaitļu summa ir lielāka nekā 1000. Pierādīt, ka, ja šos dotos 120 skaitļus uzrakstītu 
+skaitļu summa ir lielāka nekā 1000. Pierādīt, ka, ja šos dotos $120$ skaitļus uzrakstītu 
 rindā augošā secībā, tad 22. un 99. skaitļa summa arī būtu lielāka nekā $1000$.</p>"""@lv ;
     eliozo:problemTimeID "2021" ;
     eliozo:problemYear 2021 ;
     eliozo:problem_number 5 ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2021.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.NOL.2021TEST.5.1 a eliozo:Problem ;
     eliozo:answer "165" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -764,13 +858,13 @@ kas dalās ar $3$. Kāda ir uzrakstīto skaitļu summa?"""@lv ;
     eliozo:problemTextHtml """<p>Mārtiņš uz papīra lapas uzrakstīja $10$ mazākos naturālos skaitļus, 
 kas dalās ar $3$. Kāda ir uzrakstīto skaitļu summa?</p>"""@lv ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.10 a eliozo:Problem ;
     eliozo:answer "28" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -779,13 +873,13 @@ eliozo:LV.NOL.2021TEST.5.10 a eliozo:Problem ;
     eliozo:problemText "Cik skaitļi intervālā no $1$ līdz $200$ dalās ar $7$?"@lv ;
     eliozo:problemTextHtml "<p>Cik skaitļi intervālā no $1$ līdz $200$ dalās ar $7$?</p>"@lv ;
     eliozo:problem_number 10 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.11 a eliozo:Problem ;
     eliozo:answer "3" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -794,13 +888,13 @@ eliozo:LV.NOL.2021TEST.5.11 a eliozo:Problem ;
     eliozo:problemText "Kāds atlikums rodas, ja $10003$ dala ar $4$?"@lv ;
     eliozo:problemTextHtml "<p>Kāds atlikums rodas, ja $10003$ dala ar $4$?</p>"@lv ;
     eliozo:problem_number 11 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.12 a eliozo:Problem ;
     eliozo:answer "23" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -816,13 +910,13 @@ figūru (skat. 1.att.). No cik klucīšiem sastāv izveidotā
 figūra, ja zināms, ka no augšas tā izskatās, kā parādīts 2.att.?</p>
 <p><img alt="" src="LV.NOL.2021TEST.5.12.png" />{ width=200px }</p>"""@lv ;
     eliozo:problem_number 12 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.13 a eliozo:Problem ;
     eliozo:answer "32203" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -836,13 +930,13 @@ $$25~\\mathrm{t}~50~\\mathrm{kg} + 13~\\mathrm{t}~950~\\mathrm{kg} –
 <p>$$25~\\mathrm{t}~50~\\mathrm{kg} + 13~\\mathrm{t}~950~\\mathrm{kg} – 
 (24~\\mathrm{t}~8~\\mathrm{c}–18~\\mathrm{t}~3~\\mathrm{kg}).$$</p>"""@lv ;
     eliozo:problem_number 13 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.14 a eliozo:Problem ;
     eliozo:answer "N" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -851,13 +945,13 @@ eliozo:LV.NOL.2021TEST.5.14 a eliozo:Problem ;
     eliozo:problemText "Vai skaitlis $2021$ dalās ar $5$?"@lv ;
     eliozo:problemTextHtml "<p>Vai skaitlis $2021$ dalās ar $5$?</p>"@lv ;
     eliozo:problem_number 14 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.15 a eliozo:Problem ;
     eliozo:answer "24" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -870,33 +964,33 @@ eliozo:LV.NOL.2021TEST.5.15 a eliozo:Problem ;
     eliozo:problemTextHtml """<p>Cik trijstūri redzami dotajā zīmējumā?</p>
 <p><img alt="" src="LV.NOL.2021TEST.5.15.png" />{ width=100px }</p>"""@lv ;
     eliozo:problem_number 15 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.16 a eliozo:Problem ;
     eliozo:answer "64" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
     eliozo:problemID "LV.NOL.2021TEST.5.16" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021TEST.5.16.SUB0 ;
-    eliozo:problemText """Flīzes raksts veidots no četriem pusrinkiem (skat.att. vienu flīzi). 
-Kāds ir flīzes perimetrs centimetros, ja pusriņka rādiuss ir $4~\\mathrm{cm}$?
+    eliozo:problemText """Flīzes raksts veidots no četriem pusriņķiem (skat.att. vienu flīzi). 
+Kāds ir flīzes perimetrs centimetros, ja pusriņķa rādiuss ir $4~\\mathrm{cm}$?
 
 ![](LV.NOL.2021TEST.5.16.png){ width=100px }"""@lv ;
-    eliozo:problemTextHtml """<p>Flīzes raksts veidots no četriem pusrinkiem (skat.att. vienu flīzi). 
-Kāds ir flīzes perimetrs centimetros, ja pusriņka rādiuss ir $4~\\mathrm{cm}$?</p>
+    eliozo:problemTextHtml """<p>Flīzes raksts veidots no četriem pusriņķiem (skat.att. vienu flīzi). 
+Kāds ir flīzes perimetrs centimetros, ja pusriņķa rādiuss ir $4~\\mathrm{cm}$?</p>
 <p><img alt="" src="LV.NOL.2021TEST.5.16.png" />{ width=100px }</p>"""@lv ;
     eliozo:problem_number 16 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.17 a eliozo:Problem ;
     eliozo:answer "144" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -907,13 +1001,13 @@ naturāli skaitļi. Kāds ir taisnstūra perimetrs centimetros?"""@lv ;
     eliozo:problemTextHtml """<p>Taisnstūra laukums ir $71 \\mathrm{~cm}^{2}$ un tā malu garumi centimetros ir 
 naturāli skaitļi. Kāds ir taisnstūra perimetrs centimetros?</p>"""@lv ;
     eliozo:problem_number 17 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.18 a eliozo:Problem ;
     eliozo:answer "C" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -928,13 +1022,13 @@ eliozo:LV.NOL.2021TEST.5.18 a eliozo:Problem ;
 <p><img alt="" src="LV.NOL.2021TEST.5.18.png" />{ width=150px }</p>
 <p><em>Izvēlēties atbildi: (A) aplis, (B) trijstūris, (C) kvadrāts.</em></p>"""@lv ;
     eliozo:problem_number 18 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.19 a eliozo:Problem ;
     eliozo:answer "4" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -942,20 +1036,20 @@ eliozo:LV.NOL.2021TEST.5.19 a eliozo:Problem ;
     eliozo:problemImage eliozo:IMG.LV.NOL.2021TEST.5.19A.png ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021TEST.5.19.SUB0 ;
     eliozo:problemText """Cik dažādos veidos pa zīmējumā attēlotajiem ceļiem var nokļūt no punkta $A$ 
-uz punktu $B$? Pa celiem var pārvietoties tikai bultiņu norādītajā virzienā.
+uz punktu $B$? Pa ceļiem var pārvietoties tikai bultiņu norādītajā virzienā.
 
 ![](LV.NOL.2021TEST.5.19.png){ width=150px }"""@lv ;
     eliozo:problemTextHtml """<p>Cik dažādos veidos pa zīmējumā attēlotajiem ceļiem var nokļūt no punkta $A$ 
-uz punktu $B$? Pa celiem var pārvietoties tikai bultiņu norādītajā virzienā.</p>
+uz punktu $B$? Pa ceļiem var pārvietoties tikai bultiņu norādītajā virzienā.</p>
 <p><img alt="" src="LV.NOL.2021TEST.5.19.png" />{ width=150px }</p>"""@lv ;
     eliozo:problem_number 19 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.2 a eliozo:Problem ;
     eliozo:answer "5" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -964,13 +1058,13 @@ eliozo:LV.NOL.2021TEST.5.2 a eliozo:Problem ;
     eliozo:problemText "Kāda ir divu mazāko pirmskaitļu summa?"@lv ;
     eliozo:problemTextHtml "<p>Kāda ir divu mazāko pirmskaitļu summa?</p>"@lv ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.20 a eliozo:Problem ;
     eliozo:answer "N" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -991,13 +1085,13 @@ atrodas grāmata, kas maksā 7 eiro?</p>
 <p><img alt="" src="LV.NOL.2021TEST.5.20.png" />{ width=100px }</p>
 <p><em>Izvēlēties plaknes apgabalu: K, L, M vai N.</em></p>"""@lv ;
     eliozo:problem_number 20 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.21 a eliozo:Problem ;
     eliozo:answer "M" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -1014,13 +1108,13 @@ $20$ dalītāji atrodas aplī. Kurā plaknes dalā atrodas skaitlis $5$?</p>
 <p><img alt="" src="LV.NOL.2021TEST.5.21.png" />{ width=100px }</p>
 <p><em>Izvēlēties plaknes apgabalu: K, L, M vai N.</em></p>"""@lv ;
     eliozo:problem_number 21 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.22 a eliozo:Problem ;
     eliozo:answer "6" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -1029,13 +1123,13 @@ eliozo:LV.NOL.2021TEST.5.22 a eliozo:Problem ;
     eliozo:problemText "Telpā ir $3$ cilvēki. Cik dažādās secībās viņi var pamest šo telpu?"@lv ;
     eliozo:problemTextHtml "<p>Telpā ir $3$ cilvēki. Cik dažādās secībās viņi var pamest šo telpu?</p>"@lv ;
     eliozo:problem_number 22 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.3 a eliozo:Problem ;
     eliozo:answer "7" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -1050,13 +1144,13 @@ $1024$ konfektes, katrā nākamajā kastē ir divas reizes mazāk konfekšu
 nekā iepriekšējā kastē. Kāds lielākais skaits kastu var atrasties uz galda, 
 ja katrā kastē ir vismaz $10$ konfektes?</p>"""@lv ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.4 a eliozo:Problem ;
     eliozo:answer "82" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -1077,13 +1171,13 @@ bija sapakojis no rīta, ja zināms, ka katrā kastē ir vismaz
 $2$ olas, bet nav vairāk kā $10$ olas, un visās kastēs ir 
 vienāds olu skaits?</p>"""@lv ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.5 a eliozo:Problem ;
     eliozo:answer "408" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -1102,13 +1196,13 @@ centimetros, ja rūtiņas malas garums ir $1$ cm? Piemēram,
 attēlā redzama figūra, kas sastāv no četrām 5-rūtiņu figūrām.</p>
 <p><img alt="" src="LV.NOL.2021TEST.5.5.png" />{ width=150px }</p>"""@lv ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.6 a eliozo:Problem ;
     eliozo:answer "50" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -1131,13 +1225,13 @@ procedūru, bet, apkalpojot kādu klienti, nevar iesākto procedūru
 pārtraukt, lai to turpinātu otra darbiniece. Kāds ir īsākais laiks
 (minūtēs), kurā viņas var apkalpot visas septiņas klientes?</p>"""@lv ;
     eliozo:problem_number 6 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.7 a eliozo:Problem ;
     eliozo:answer "3" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -1152,13 +1246,13 @@ maksā $1.20$ eiro. Mārtiņš iztērēja $5.80$ eiro, nopērkot dažus
 maizes kukuļus un dažas pudeles piena. Cik maizes kukuļu 
 nopirka Mārtiņš?</p>"""@lv ;
     eliozo:problem_number 7 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.8 a eliozo:Problem ;
     eliozo:answer "3" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -1170,13 +1264,13 @@ eliozo:LV.NOL.2021TEST.5.8 a eliozo:Problem ;
     eliozo:problemTextHtml """<p>Cik krustpunktu ir trīs dotajām taisnēm (skat. att.)? </p>
 <p><img alt="" src="LV.NOL.2021TEST.5.8.png" />{ width=150px }</p>"""@lv ;
     eliozo:problem_number 8 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.5.9 a eliozo:Problem ;
     eliozo:answer "18189" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.5" ;
@@ -1194,13 +1288,13 @@ reizi apgāja trijstūra kontūru. Aprēkini robota veikto attālumu
 centimetros! </p>
 <p><img alt="" src="LV.NOL.2021TEST.5.9.png" />{ width=100px }</p>"""@lv ;
     eliozo:problem_number 9 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2021TEST.6.1 a eliozo:Problem ;
     eliozo:answer "129" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1209,13 +1303,13 @@ eliozo:LV.NOL.2021TEST.6.1 a eliozo:Problem ;
     eliozo:problemText "Kāda ir pirmo $10$ pirmskaitļu summa?"@lv ;
     eliozo:problemTextHtml "<p>Kāda ir pirmo $10$ pirmskaitļu summa?</p>"@lv ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.10 a eliozo:Problem ;
     eliozo:answer "20" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1228,36 +1322,36 @@ olimpiādē?"""@lv ;
 olimpiādē. Cik procentu no skolas skolēniem nepiedalījās
 olimpiādē?</p>"""@lv ;
     eliozo:problem_number 10 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.11 a eliozo:Problem ;
     eliozo:answer "A" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
     eliozo:problemID "LV.NOL.2021TEST.6.11" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021TEST.6.11.SUB0 ;
-    eliozo:problemText """Kurš no figūru komplektiem jānovieto uz svariem Nr. 4., lai tie 
+    eliozo:problemText """Kurš no figūru komplektiem jānovieto uz svariem Nr.4., lai tie 
 atrastos līdzsvarā?
 
 ![](LV.NOL.2021TEST.6.11.png){ width=150px }
 
 *Izvēlēties variantu: A, B, C vai D.*"""@lv ;
-    eliozo:problemTextHtml """<p>Kurš no figūru komplektiem jānovieto uz svariem Nr. 4., lai tie 
+    eliozo:problemTextHtml """<p>Kurš no figūru komplektiem jānovieto uz svariem Nr.4., lai tie 
 atrastos līdzsvarā?</p>
 <p><img alt="" src="LV.NOL.2021TEST.6.11.png" />{ width=150px }</p>
 <p><em>Izvēlēties variantu: A, B, C vai D.</em></p>"""@lv ;
     eliozo:problem_number 11 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.12 a eliozo:Problem ;
     eliozo:answer "3" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1266,13 +1360,13 @@ eliozo:LV.NOL.2021TEST.6.12 a eliozo:Problem ;
     eliozo:problemText "Kāds atlikums rodas, ja $10035$ dala ar $6$?"@lv ;
     eliozo:problemTextHtml "<p>Kāds atlikums rodas, ja $10035$ dala ar $6$?</p>"@lv ;
     eliozo:problem_number 12 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.13 a eliozo:Problem ;
     eliozo:answer "28" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1288,13 +1382,13 @@ ja zināms, ka no augšas tā izskatās, kā parādīts 2.att.?
 ja zināms, ka no augšas tā izskatās, kā parādīts 2.att.?</p>
 <p><img alt="" src="LV.NOL.2021TEST.6.13.png" />{ width=150px }</p>"""@lv ;
     eliozo:problem_number 13 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.14 a eliozo:Problem ;
     eliozo:answer "232" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1306,13 +1400,13 @@ $$(2~\\mathrm{h}~41~\\mathrm{min} + 5~\\mathrm{h}~59~\\mathrm{min}) : 2 – 28~\
     eliozo:problemTextHtml """<p>Aprēķini un atbildi izsaki minūtēs!</p>
 <p>$$(2~\\mathrm{h}~41~\\mathrm{min} + 5~\\mathrm{h}~59~\\mathrm{min}) : 2 – 28~\\mathrm{min}$$</p>"""@lv ;
     eliozo:problem_number 14 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.15 a eliozo:Problem ;
     eliozo:answer "N" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1325,13 +1419,13 @@ eliozo:LV.NOL.2021TEST.6.15 a eliozo:Problem ;
     eliozo:problemTextHtml """<p>Vai skaitlis $20212021$ dalās ar $5$?</p>
 <p><em>Izvēlēties atbildes variantu: Y (jā) vai N (nē).</em></p>"""@lv ;
     eliozo:problem_number 15 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.16 a eliozo:Problem ;
     eliozo:answer "24" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1344,13 +1438,13 @@ eliozo:LV.NOL.2021TEST.6.16 a eliozo:Problem ;
     eliozo:problemTextHtml """<p>Cik trijstūri redzami dotajā zīmējumā?</p>
 <p><img alt="" src="LV.NOL.2021TEST.6.16.png" />{ width=100px }</p>"""@lv ;
     eliozo:problem_number 16 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.17 a eliozo:Problem ;
     eliozo:answer "112" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1362,13 +1456,13 @@ eliozo:LV.NOL.2021TEST.6.17 a eliozo:Problem ;
     eliozo:problemTextHtml """<p>Kāds ir taisnstūra perimetrs, ja riņķa līnijas rādiuss ir $4~\\mathrm{cm}$?</p>
 <p><img alt="" src="LV.NOL.2021TEST.6.17.png" />{ width=120px }</p>"""@lv ;
     eliozo:problem_number 17 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.18 a eliozo:Problem ;
     eliozo:answer "7" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1385,13 +1479,13 @@ rūtiņu pa labi. Cik dažādos veidos varde no rūtiņas $A$ var nokļūt rūti
 (skat. att.)? Iekrāsotajās rūtiņās ir šḳērslis, tajās varde neiet.</p>
 <p><img alt="" src="LV.NOL.2021TEST.6.18.png" />{ width=100px }</p>"""@lv ;
     eliozo:problem_number 18 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.19 a eliozo:Problem ;
     eliozo:answer "6" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1402,13 +1496,13 @@ dalītos ar $90$?"""@lv ;
     eliozo:problemTextHtml """<p>Kāds cipars jāievieto $y$ vietā, lai skaitlis $\\overline{5783y1y0}$ 
 dalītos ar $90$?</p>"""@lv ;
     eliozo:problem_number 19 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.2 a eliozo:Problem ;
     eliozo:answer "B" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1439,13 +1533,13 @@ C. no $100000$ līdz $1000000$
 D. vairāk nekā $1000000$ </p>
 <p><em>Izvēlēties atbildi: A, B, C vai D.</em></p>"""@lv ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.20 a eliozo:Problem ;
     eliozo:answer "196" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1458,13 +1552,13 @@ nenokrāsoti, ja kastes škautnes garums ir $7~\\mathrm{cm}$?"""@lv ;
 dzeltenā krāsā. Cik kvadrātcentimetri no kastes virsmas laukuma palika 
 nenokrāsoti, ja kastes škautnes garums ir $7~\\mathrm{cm}$?</p>"""@lv ;
     eliozo:problem_number 20 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.21 a eliozo:Problem ;
     eliozo:answer "6" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1473,13 +1567,13 @@ eliozo:LV.NOL.2021TEST.6.21 a eliozo:Problem ;
     eliozo:problemText "Cik dažādās secībās $3$ skolēni var nostāties rindā pie kases?"@lv ;
     eliozo:problemTextHtml "<p>Cik dažādās secībās $3$ skolēni var nostāties rindā pie kases?</p>"@lv ;
     eliozo:problem_number 21 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.22 a eliozo:Problem ;
     eliozo:answer "N" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1487,7 +1581,7 @@ eliozo:LV.NOL.2021TEST.6.22 a eliozo:Problem ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021TEST.6.22.SUB0 ;
     eliozo:problemText """Visas grāmatas, ko var nopirkt, norēkinoties tikai ar $2$ eiro monētām, 
 atrodas taisnstūrī, bet visas grāmatas, ko var nopirkt, norēķinoties 
-tikai ar $5$ eiro banknotēm, atrodas rinkī. Kurā plaknes daļā atrodas 
+tikai ar $5$ eiro banknotēm, atrodas riņķī. Kurā plaknes daļā atrodas 
 grāmata, kas maksā $17$ eiro?
 
 ![](LV.NOL.2021TEST.6.22.png){ width=100px }
@@ -1495,18 +1589,18 @@ grāmata, kas maksā $17$ eiro?
 *Izvēlēties plaknes apgabalu: K,L,M vai N.*"""@lv ;
     eliozo:problemTextHtml """<p>Visas grāmatas, ko var nopirkt, norēkinoties tikai ar $2$ eiro monētām, 
 atrodas taisnstūrī, bet visas grāmatas, ko var nopirkt, norēķinoties 
-tikai ar $5$ eiro banknotēm, atrodas rinkī. Kurā plaknes daļā atrodas 
+tikai ar $5$ eiro banknotēm, atrodas riņķī. Kurā plaknes daļā atrodas 
 grāmata, kas maksā $17$ eiro?</p>
 <p><img alt="" src="LV.NOL.2021TEST.6.22.png" />{ width=100px }</p>
 <p><em>Izvēlēties plaknes apgabalu: K,L,M vai N.</em></p>"""@lv ;
     eliozo:problem_number 22 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.23 a eliozo:Problem ;
     eliozo:answer "L" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1523,13 +1617,13 @@ atrodas aplī. Kurā plaknes daļā atrodas skaitlis $10$?</p>
 <p><img alt="" src="LV.NOL.2021TEST.6.23.png" />{ width=100px }</p>
 <p><em>Izvēlēties plaknes apgabalu: K,L,M vai N.</em></p>"""@lv ;
     eliozo:problem_number 23 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.3 a eliozo:Problem ;
     eliozo:answer "156" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1549,13 +1643,13 @@ ja rūtinas malas garums ir 1 cm ? Piemēram, attēlā redzama
 figūra, kas sastāv no četrām šādi saliktām T-veida figūrām. </p>
 <p><img alt="" src="LV.NOL.2021TEST.6.3.png" />{ width=150px }</p>"""@lv ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.4 a eliozo:Problem ;
     eliozo:answer "60" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1570,13 +1664,13 @@ pirmā posma garums ir $5~\\mathrm{cm}$,
 bet katra nākamā posma garums ir par $2~\\mathrm{cm}$ 
 garāks nekā iepriekšējais!</p>"""@lv ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.5 a eliozo:Problem ;
     eliozo:answer "6" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1588,13 +1682,13 @@ eliozo:LV.NOL.2021TEST.6.5 a eliozo:Problem ;
     eliozo:problemTextHtml """<p>Cik krustpunktu ir četrām dotajām taisnēm (skat. att.)?</p>
 <p><img alt="" src="LV.NOL.2021TEST.6.5.png" />{ width=150px }</p>"""@lv ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.6 a eliozo:Problem ;
     eliozo:answer "5" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1605,13 +1699,13 @@ tad rezultātā iegūst skaitli $127$. Nosaki $A$ vērtību!"""@lv ;
     eliozo:problemTextHtml """<p>Ja skaitli $A$ kāpina trešajā pakāpē un pieskaita $2$, 
 tad rezultātā iegūst skaitli $127$. Nosaki $A$ vērtību!</p>"""@lv ;
     eliozo:problem_number 6 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.7 a eliozo:Problem ;
     eliozo:answer "3" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1619,23 +1713,23 @@ eliozo:LV.NOL.2021TEST.6.7 a eliozo:Problem ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021TEST.6.7.SUB0 ;
     eliozo:problemText """Robots kustas pa trijstūra $ABC$ kontūru (skat.att.), 
 kura visas malas ir vienāda garuma. Tas sāka kustību no 
-virsotnes A un 41 reizi apgāja trijstūra kontūru, 
+virsotnes $A$ un $41$ reizi apgāja trijstūra kontūru, 
 veicot $369~\\mathrm{cm}$. Nosaki trijstūra malas garumu centimetros!
 
 ![](LV.NOL.2021TEST.6.7.png){ width=100px }"""@lv ;
     eliozo:problemTextHtml """<p>Robots kustas pa trijstūra $ABC$ kontūru (skat.att.), 
 kura visas malas ir vienāda garuma. Tas sāka kustību no 
-virsotnes A un 41 reizi apgāja trijstūra kontūru, 
+virsotnes $A$ un $41$ reizi apgāja trijstūra kontūru, 
 veicot $369~\\mathrm{cm}$. Nosaki trijstūra malas garumu centimetros!</p>
 <p><img alt="" src="LV.NOL.2021TEST.6.7.png" />{ width=100px }</p>"""@lv ;
     eliozo:problem_number 7 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.8 a eliozo:Problem ;
     eliozo:answer "50" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
@@ -1658,28 +1752,28 @@ procedūru, bet, apkalpojot kādu klienti, nevar iesākto procedūru
 pārtraukt, lai to turpinātu otra darbiniece. Kāds ir īsākais laiks 
 minūtēs, kurā viņas var apkalpot visas septiņas klientes?</p>"""@lv ;
     eliozo:problem_number 8 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.6.9 a eliozo:Problem ;
     eliozo:answer "85" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.6" ;
     eliozo:problemID "LV.NOL.2021TEST.6.9" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021TEST.6.9.SUB0 ;
-    eliozo:problemText "Cik skaitļi intervālā no $1$ līdz $600$ dalās ar $7$?"@lv ;
-    eliozo:problemTextHtml "<p>Cik skaitļi intervālā no $1$ līdz $600$ dalās ar $7$?</p>"@lv ;
+    eliozo:problemText "Cik skaitļu intervālā no $1$ līdz $600$ dalās ar $7$?"@lv ;
+    eliozo:problemTextHtml "<p>Cik skaitļu intervālā no $1$ līdz $600$ dalās ar $7$?</p>"@lv ;
     eliozo:problem_number 9 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2021TEST.7.1 a eliozo:Problem ;
     eliozo:answer "120" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1688,13 +1782,13 @@ eliozo:LV.NOL.2021TEST.7.1 a eliozo:Problem ;
     eliozo:problemText "Cik dažādos veidos $5$ skolēni var nostāties rindā?"@lv ;
     eliozo:problemTextHtml "<p>Cik dažādos veidos $5$ skolēni var nostāties rindā?</p>"@lv ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.10 a eliozo:Problem ;
     eliozo:answer "0" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1707,13 +1801,13 @@ Kāds ir galarezultāta pēdējais cipars?"""@lv ;
 pakāpē un pēc tam iegūtajam rezultātam pieskaitīja $2$. 
 Kāds ir galarezultāta pēdējais cipars?</p>"""@lv ;
     eliozo:problem_number 10 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.11 a eliozo:Problem ;
     eliozo:answer "BC" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1734,13 +1828,13 @@ malas garums ir $4~\\mathrm{cm}$? </p>
 <p><img alt="" src="LV.NOL.2021TEST.7.11.png" />{ width=100px }</p>
 <p><em>Izvēlēties trijstūra malu: AB, AC vai BC.</em></p>"""@lv ;
     eliozo:problem_number 11 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.12 a eliozo:Problem ;
     eliozo:answer "20" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1751,13 +1845,13 @@ olimpiādē. Cik procentu no skolas skolēniem piedalījās olimpiādē?"""@lv ;
     eliozo:problemTextHtml """<p>Skolā $16$ skolēni piedalījās olimpiādē, bet $64$ skolēni nepiedalījās 
 olimpiādē. Cik procentu no skolas skolēniem piedalījās olimpiādē?</p>"""@lv ;
     eliozo:problem_number 12 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.13 a eliozo:Problem ;
     eliozo:answer "1;2" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1774,13 +1868,13 @@ eliozo:LV.NOL.2021TEST.7.13 a eliozo:Problem ;
 <p><em>Ierakstīt divus skaitļus: riņķa un kvadrāta masu, atdalot tos ar semikolu(;).</em>
 <em>Veselus skaitļus rakstīt bez cipariem aiz komata; daļskaitļus noapaļot līdz tuvākajai desmitdaļai.</em></p>"""@lv ;
     eliozo:problem_number 13 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.14 a eliozo:Problem ;
     eliozo:answer "1" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1789,13 +1883,13 @@ eliozo:LV.NOL.2021TEST.7.14 a eliozo:Problem ;
     eliozo:problemText "Kāds atlikums rodas, ja $2021$ dala ar $4$?"@lv ;
     eliozo:problemTextHtml "<p>Kāds atlikums rodas, ja $2021$ dala ar $4$?</p>"@lv ;
     eliozo:problem_number 14 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.15 a eliozo:Problem ;
     eliozo:answer "36" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1811,13 +1905,13 @@ kāds dažus klucǐšus aiznesa prom. Cik klucǐši tika aiznesti prom, ja
 tagadējais klucǐšu izkārtojums redzams attēlā? </p>
 <p><img alt="" src="LV.NOL.2021TEST.7.15.png" />{ width=120px }</p>"""@lv ;
     eliozo:problem_number 15 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.16 a eliozo:Problem ;
     eliozo:answer "12" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1832,13 +1926,13 @@ būtu patiesa?"""@lv ;
 <p>$$\\frac{1}{2}+\\frac{1}{3}+\\frac{1}{4}+\\frac{5}{6}+\\frac{1}{x}=2$$</p>
 <p>būtu patiesa?</p>"""@lv ;
     eliozo:problem_number 16 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.17 a eliozo:Problem ;
     eliozo:answer "8" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1849,13 +1943,13 @@ dalītos ar $36$?"""@lv ;
     eliozo:problemTextHtml """<p>Kāds cipars jāieraksta $m$ vietā, lai skaitlis $\\overline{12345689m8}$ 
 dalītos ar $36$?</p>"""@lv ;
     eliozo:problem_number 17 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.18 a eliozo:Problem ;
     eliozo:answer "34" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1876,40 +1970,40 @@ rūtiņas "?" var noklūt rūtinā “!" (skat. att.)?
 Iekrāsotajās rūtiņās ir škēēslis, tajās varde neiet.</p>
 <p><img alt="" src="LV.NOL.2021TEST.7.18.png" />{ width=150px }</p>"""@lv ;
     eliozo:problem_number 18 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.19 a eliozo:Problem ;
     eliozo:answer "N" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
     eliozo:problemID "LV.NOL.2021TEST.7.19" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021TEST.7.19.SUB0 ;
-    eliozo:problemText """Visas grāmatas, ko var nopirkt, norēķinoties tikai ar 2 eiro monētām, 
+    eliozo:problemText """Visas grāmatas, ko var nopirkt, norēķinoties tikai ar $2$ eiro monētām, 
 atrodas taisnstūrī, bet visas grāmatas, ko var nopirkt, norēkinoties 
-tikai ar 5 eiro banknotēm, atrodas rinkī. Kurā plaknes dalā atrodas 
-grāmata, kas maksā 27 eiro?
+tikai ar $5$ eiro banknotēm, atrodas riņķī. Kurā plaknes dalā atrodas 
+grāmata, kas maksā $27$ eiro?
 
 ![](LV.NOL.2021TEST.7.19.png){ width=100px }
 
 *Izvēlēties plaknes apgabalu: K, L, M vai N.*"""@lv ;
-    eliozo:problemTextHtml """<p>Visas grāmatas, ko var nopirkt, norēķinoties tikai ar 2 eiro monētām, 
+    eliozo:problemTextHtml """<p>Visas grāmatas, ko var nopirkt, norēķinoties tikai ar $2$ eiro monētām, 
 atrodas taisnstūrī, bet visas grāmatas, ko var nopirkt, norēkinoties 
-tikai ar 5 eiro banknotēm, atrodas rinkī. Kurā plaknes dalā atrodas 
-grāmata, kas maksā 27 eiro?</p>
+tikai ar $5$ eiro banknotēm, atrodas riņķī. Kurā plaknes dalā atrodas 
+grāmata, kas maksā $27$ eiro?</p>
 <p><img alt="" src="LV.NOL.2021TEST.7.19.png" />{ width=100px }</p>
 <p><em>Izvēlēties plaknes apgabalu: K, L, M vai N.</em></p>"""@lv ;
     eliozo:problem_number 19 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.2 a eliozo:Problem ;
     eliozo:answer "3" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1924,34 +2018,36 @@ lai skaitļi pa apli būtu uzrakstīti pretējā secībā?"""@lv ;
 drīkst mainīt vietām. Kāds mazākais maiņu skaits ir vajadzīgs, 
 lai skaitļi pa apli būtu uzrakstīti pretējā secībā?</p>"""@lv ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.20 a eliozo:Problem ;
     eliozo:answer "K" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
     eliozo:problemID "LV.NOL.2021TEST.7.20" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021TEST.7.20.SUB0 ;
-    eliozo:problemText """Visi skaitli, kas dalās ar 15 atrodas taisnstūrī, bet visi skait!a 15 dalītāji atrodas aplī. Kurā plaknes dalā atrodas skaitlis 45?
+    eliozo:problemText """Visi skaitli, kas dalās ar $15$ atrodas taisnstūrī, bet visi skaitļa 
+$15$ dalītāji atrodas aplī. Kurā plaknes dalā atrodas skaitlis $45$?
 
 ![](LV.NOL.2021TEST.7.20.png){ width=100px }
 
 *Izvēlēties plaknes apgabalu: K, L, M vai N.*"""@lv ;
-    eliozo:problemTextHtml """<p>Visi skaitli, kas dalās ar 15 atrodas taisnstūrī, bet visi skait!a 15 dalītāji atrodas aplī. Kurā plaknes dalā atrodas skaitlis 45?</p>
+    eliozo:problemTextHtml """<p>Visi skaitli, kas dalās ar $15$ atrodas taisnstūrī, bet visi skaitļa 
+$15$ dalītāji atrodas aplī. Kurā plaknes dalā atrodas skaitlis $45$?</p>
 <p><img alt="" src="LV.NOL.2021TEST.7.20.png" />{ width=100px }</p>
 <p><em>Izvēlēties plaknes apgabalu: K, L, M vai N.</em></p>"""@lv ;
     eliozo:problem_number 20 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.21 a eliozo:Problem ;
     eliozo:answer "24" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1965,13 +2061,13 @@ līniju centros un taisnstūra $LMNO$ perimetrs ir $112~\\mathrm{cm}$?
 līniju centros un taisnstūra $LMNO$ perimetrs ir $112~\\mathrm{cm}$?</p>
 <p><img alt="" src="LV.NOL.2021TEST.7.21.png" />{ width=180px }</p>"""@lv ;
     eliozo:problem_number 21 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.22 a eliozo:Problem ;
     eliozo:answer "25" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1982,13 +2078,13 @@ atrastos uz funkcijas $y = 3x − 71$ grafika?"""@lv ;
     eliozo:problemTextHtml """<p>Kādai jābūt punkta abscisai, lai punkts, kura ordināta ir $4$, 
 atrastos uz funkcijas $y = 3x − 71$ grafika?</p>"""@lv ;
     eliozo:problem_number 22 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.23 a eliozo:Problem ;
     eliozo:answer "58" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -1999,13 +2095,13 @@ $y=71x+2021$ grafikam un iet caur punktu $A(2;200)$. Nosaki $b$ vērtību!"""@lv
     eliozo:problemTextHtml """<p>Lineārās funkcijas $y=ax+b$ grafiks ir paralēls funkcijas 
 $y=71x+2021$ grafikam un iet caur punktu $A(2;200)$. Nosaki $b$ vērtību!</p>"""@lv ;
     eliozo:problem_number 23 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.3 a eliozo:Problem ;
     eliozo:answer "5" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -2024,13 +2120,13 @@ tikai visas kvadrātu virsotnes. Cik kvadrāti ar dotajām
 virsotnēm bija attēloti sākotnējā zīmējumā?</p>
 <p><img alt="" src="LV.NOL.2021TEST.7.3.png" />{ width=100px }</p>"""@lv ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.4 a eliozo:Problem ;
     eliozo:answer "C" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -2047,13 +2143,13 @@ Kurš punkts atrodas uz šīs taisnes?</p>
 <p>$$A(1;3.5) \\quad B(8;6) \\quad C(-12;-1) \\quad D(-5;1)$$</p>
 <p><em>Izvēlēties punktu: A, B, C vai D.</em></p>"""@lv ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.5 a eliozo:Problem ;
     eliozo:answer "0" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -2067,13 +2163,13 @@ Nosaki ceturtās virsotnes koordinātu summu!"""@lv ;
 $(3; 7)$, $(6; 2)$, $(-2; 4)$. 
 Nosaki ceturtās virsotnes koordinātu summu!</p>"""@lv ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.6 a eliozo:Problem ;
     eliozo:answer "49" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -2087,13 +2183,13 @@ Cik mazos trijstūrīšus ieguva?"""@lv ;
 vienādmalu trijstūrīšos, kuru malas garums ir $1$. 
 Cik mazos trijstūrīšus ieguva?</p>"""@lv ;
     eliozo:problem_number 6 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.7 a eliozo:Problem ;
     eliozo:answer "380" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -2106,31 +2202,37 @@ viņai pietrūktu. Cik centu ir Dacei?"""@lv ;
 Savukārt, ja viņa pirktu $15$ klades, tad $70$ centu 
 viņai pietrūktu. Cik centu ir Dacei?</p>"""@lv ;
     eliozo:problem_number 7 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.8 a eliozo:Problem ;
     eliozo:answer "26" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
     eliozo:problemID "LV.NOL.2021TEST.7.8" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2021TEST.7.8.SUB0 ;
-    eliozo:problemText """Ingrīda rūtinu plaknē zīmēja figūras - sākumā uzzīmēja krustu, katrai nākamai figūrai pievienoja stūrīti, kas sastāv no 3 rūtiņām (skat. 1. att., kur redzamas pirmās trīs figūras). No cik divu posmu leņķīšiem (skat. 2. att.) var salikt Ingrīdas uzzīmētās figūras, kas sastāv no 35 rūtiņām, kontūru?
+    eliozo:problemText """Ingrīda rūtinu plaknē zīmēja figūras - sākumā uzzīmēja krustu, katrai nākamai 
+figūrai pievienoja stūrīti, kas sastāv no $3$ rūtiņām (skat. 1. att., 
+kur redzamas pirmās trīs figūras). No cik divu posmu leņķīšiem 
+(skat. 2. att.) var salikt Ingrīdas uzzīmētās figūras, kas sastāv no $35$ rūtiņām, kontūru?
 
 ![](LV.NOL.2021TEST.7.8.png){ width=200px }"""@lv ;
-    eliozo:problemTextHtml """<p>Ingrīda rūtinu plaknē zīmēja figūras - sākumā uzzīmēja krustu, katrai nākamai figūrai pievienoja stūrīti, kas sastāv no 3 rūtiņām (skat. 1. att., kur redzamas pirmās trīs figūras). No cik divu posmu leņķīšiem (skat. 2. att.) var salikt Ingrīdas uzzīmētās figūras, kas sastāv no 35 rūtiņām, kontūru?</p>
+    eliozo:problemTextHtml """<p>Ingrīda rūtinu plaknē zīmēja figūras - sākumā uzzīmēja krustu, katrai nākamai 
+figūrai pievienoja stūrīti, kas sastāv no $3$ rūtiņām (skat. 1. att., 
+kur redzamas pirmās trīs figūras). No cik divu posmu leņķīšiem 
+(skat. 2. att.) var salikt Ingrīdas uzzīmētās figūras, kas sastāv no $35$ rūtiņām, kontūru?</p>
 <p><img alt="" src="LV.NOL.2021TEST.7.8.png" />{ width=200px }</p>"""@lv ;
     eliozo:problem_number 8 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2021TEST.7.9 a eliozo:Problem ;
     eliozo:answer "4" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemBook "LV" ;
     eliozo:problemBookSection "NOL.2021TEST.7" ;
@@ -2142,7 +2244,7 @@ eliozo:LV.NOL.2021TEST.7.9 a eliozo:Problem ;
     eliozo:problemTextHtml """<p>Cik krustpunktu ir trīs dotajām taisnēm un staram (skat.att.)</p>
 <p><img alt="" src="LV.NOL.2021TEST.7.9.png" />{ width=150px }</p>"""@lv ;
     eliozo:problem_number 9 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.7" ;
     eliozo:suggestedGrade 7 .
 
@@ -2157,7 +2259,7 @@ eliozo:LV.NOL.2021TEST.8.1 a eliozo:Problem ;
     eliozo:problemText "Kāda ir pirmo $10$ pirmskaitļu summa?"@lv ;
     eliozo:problemTextHtml "<p>Kāda ir pirmo $10$ pirmskaitļu summa?</p>"@lv ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2182,7 +2284,7 @@ trīs figūras). No cik trīs posmu stieplītēm
 (skat. 2. att.) var salikt Ingrīdas uzzīmētās figūras kontūru, 
 kas sastāv no 50 rūtiņām?</p>"""@lv ;
     eliozo:problem_number 10 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2201,7 +2303,7 @@ iegūtajam rezultātam pieskaitīja $2$. Kāds ir galarezultāta desmitu
 iegūtajam rezultātam pieskaitīja $2$. Kāds ir galarezultāta desmitu
 (pirmspēdējais) cipars?</p>"""@lv ;
     eliozo:problem_number 11 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2226,7 +2328,7 @@ malas robots apstājās, ja katras trijstūra malas garums ir $7~\\mathrm{cm}$? 
 <p><img alt="" src="LV.NOL.2021TEST.8.12.png" />{ width=100px }</p>
 <p><em>Izvēlēties trijstūra malu: AB, AC vai BC.</em></p>"""@lv ;
     eliozo:problem_number 12 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2243,7 +2345,7 @@ $2 \\sqrt{50}+x>20$ būtu patiesa?"""@lv ;
     eliozo:problemTextHtml """<p>Kāds mazākais naturālais skaitlis jāieliek $x$ vietā, lai nevienādība 
 $2 \\sqrt{50}+x&gt;20$ būtu patiesa?</p>"""@lv ;
     eliozo:problem_number 13 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2260,7 +2362,7 @@ $60~\\mathrm{cm}$. Cik gara ir trijstūra pamata mala centimetros?"""@lv ;
     eliozo:problemTextHtml """<p>Vienādsānu trijstūra divu malu attiecība ir $2: 4$ un tā perimetrs ir 
 $60~\\mathrm{cm}$. Cik gara ir trijstūra pamata mala centimetros?</p>"""@lv ;
     eliozo:problem_number 14 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2281,7 +2383,7 @@ būtu patiesa?"""@lv ;
 <p>$$\\frac{2^{30} \\cdot 8^{4}}{4^{20}}=2^{x}$$ </p>
 <p>būtu patiesa?</p>"""@lv ;
     eliozo:problem_number 15 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2296,7 +2398,7 @@ eliozo:LV.NOL.2021TEST.8.16 a eliozo:Problem ;
     eliozo:problemText "Cik skaitli intervālā no $1$ līdz $1000$ dalās ar $7$?"@lv ;
     eliozo:problemTextHtml "<p>Cik skaitli intervālā no $1$ līdz $1000$ dalās ar $7$?</p>"@lv ;
     eliozo:problem_number 16 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2317,7 +2419,7 @@ izlasīja $5$ lappuses no detektīvromāna, bet katrā no atlikušajām
 novembra dienām - $15$ lappuses. Cik lappuses novembrī vidēji 
 vienā dienā izlasīja Rihards?</p>"""@lv ;
     eliozo:problem_number 17 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2335,7 +2437,7 @@ eliozo:LV.NOL.2021TEST.8.18 a eliozo:Problem ;
     eliozo:problemTextHtml """<p>Nosaki leņķu $\\alpha$ un $\\beta$ summu (grādos)! </p>
 <p><img alt="" src="LV.NOL.2021TEST.8.18.png" />{ width=150px }</p>"""@lv ;
     eliozo:problem_number 18 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2352,7 +2454,7 @@ abu pamata pieleņu summa. Cik grādus liels ir virsotnes leņkis?"""@lv ;
     eliozo:problemTextHtml """<p>Vienādsānu trijstūra virsotnes leņkis ir par $20^{\\circ}$ mazāks nekā 
 abu pamata pieleņu summa. Cik grādus liels ir virsotnes leņkis?</p>"""@lv ;
     eliozo:problem_number 19 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2383,7 +2485,7 @@ pusi no savām naudas pakām vienādās daļās atdod abiem saviem
 blakus sēdētājiem. Un tā viņi turpina darbu. Cik naudas pakas 
 bija Mārim trešajā naudas skaitīšanas reizē?</p>"""@lv ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2402,7 +2504,7 @@ un ordinātas kvadrāta summa?"""@lv ;
 krustojas vienā punktā. Kāda ir šī krustpunkta abscisas kvadrāta 
 un ordinātas kvadrāta summa?</p>"""@lv ;
     eliozo:problem_number 20 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2419,7 +2521,7 @@ olimpiādē. Cik procentu no skolas skolēniem nepiedalījās olimpiādē?"""@lv
     eliozo:problemTextHtml """<p>Skolā $16$ skolēni piedalījās olimpiādē, bet $64$ skolēni nepiedalījās 
 olimpiādē. Cik procentu no skolas skolēniem nepiedalījās olimpiādē?</p>"""@lv ;
     eliozo:problem_number 21 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2446,7 +2548,7 @@ Kurā plaknes daļā atrodas grāmata, kas maksā $37$ eiro? </p>
 <p><img alt="" src="LV.NOL.2021TEST.8.22.png" />{ width=100px }</p>
 <p><em>Izvēlēties plaknes apgabalu: K, L, M vai N.</em></p>"""@lv ;
     eliozo:problem_number 22 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2469,7 +2571,7 @@ dalītāji atrodas aplī. Kurā plaknes daļā atrodas skaitlis $8$?</p>
 <p><img alt="" src="LV.NOL.2021TEST.8.23.png" />{ width=100px }</p>
 <p><em>Izvēlēties plaknes apgabalu: K, L, M vai N.</em></p>"""@lv ;
     eliozo:problem_number 23 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2484,7 +2586,7 @@ eliozo:LV.NOL.2021TEST.8.24 a eliozo:Problem ;
     eliozo:problemText "Kāds atlikums rodas, ja $10003$ dala ar $4$?"@lv ;
     eliozo:problemTextHtml "<p>Kāds atlikums rodas, ja $10003$ dala ar $4$?</p>"@lv ;
     eliozo:problem_number 24 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2499,7 +2601,7 @@ eliozo:LV.NOL.2021TEST.8.3 a eliozo:Problem ;
     eliozo:problemText "Cik dažādos veidos $6$ skolēni var nostāties rindā?"@lv ;
     eliozo:problemTextHtml "<p>Cik dažādos veidos $6$ skolēni var nostāties rindā?</p>"@lv ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2518,7 +2620,7 @@ $1, 4, 3, 6, 5, 8, 7, 2$, skatoties pulksteņa rādītāja kustības virzienā?"
 (tieši šādā secībā pulksteņa rādītāja kustības virzienā). Jebkurus divus skaitļus, kas neatrodas blakus, drīkst mainīt vietām. Kāds mazākais maiņu skaits ir vajadzīgs, lai skaitļi aplī būtu pierakstīti šādā secībā 
 $1, 4, 3, 6, 5, 8, 7, 2$, skatoties pulksteņa rādītāja kustības virzienā?</p>"""@lv ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2541,7 +2643,7 @@ bet laika gaitā kvadrātu malas izdzisa un palika redzamas
 tikai visas kvadrātu virsotnes. Cik kvadrāti ar dotajām virsotnēm bija attēloti sākotnējā zīmējumā?</p>
 <p><img alt="" src="LV.NOL.2021TEST.8.5.png" />{ width=100px }</p>"""@lv ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2561,7 +2663,7 @@ $$A(-1;3.5) \\quad B $(-8;6) \\quad C(12;-1) \\quad D(5;1).$$"""@lv ;
 šīs taisnes? </p>
 <p>$$A(-1;3.5) \\quad B $(-8;6) \\quad C(12;-1) \\quad D(5;1).$$</p>"""@lv ;
     eliozo:problem_number 6 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2581,7 +2683,7 @@ trijstūrīšus ieguva?"""@lv ;
 vienādmalu trijstūrīšos, kuru malas garums ir $1$. Cik mazos
 trijstūrīšus ieguva?</p>"""@lv ;
     eliozo:problem_number 7 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2604,7 +2706,7 @@ virsotnes atrastos atzīmētajos punktos (skat. att.)? Rūtiņas
 malas garums ir $1~\\mathrm{cm}$. </p>
 <p><img alt="" src="LV.NOL.2021TEST.8.8.png" />{ width=150px }</p>"""@lv ;
     eliozo:problem_number 8 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2623,7 +2725,7 @@ Cik centu ir Inese?"""@lv ;
 Savukārt, ja viņa pirktu $15$ klades, tad $70$ centu viņai pietrūktu. 
 Cik centu ir Inese?</p>"""@lv ;
     eliozo:problem_number 9 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ShortAnswer" ;
     eliozo:suffix "LV.NOL.2021TEST.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -2800,46 +2902,80 @@ eliozo:SOLN.LV.NOL.2021.10.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Ievērojam, ka $S_{E H D}=S_{B D E}-S_{B H E}$ (skat. 3. att.). 
+Ievērojam, ka $S_{EHD}=S_{BDE}-S_{BHE}$ (skat. 3.att.). 
 Aprēķinām atbilstošo trijstūru laukumus:
 
-- $S_{B D E}=\\frac{1}{2} \\cdot B E \\cdot A D=\\frac{1}{2} \\cdot \\frac{1}{2} \\cdot 1=\\frac{1}{4}$;
-- $\\triangle B H E \\sim \\triangle D H C$ pēc pazīmes $\\ell \\ell$, jo $\\Varangle B H E=\\Varangle D H C$ kā krustleņki un $\\Varangle E B H=\\Varangle H D C=45^{\\circ}$. Līdzīgu trijstūru atbilstošie elementi ir proporcionāli, tāpēc $\\frac{H H_{1}}{H H_{2}}=\\frac{B E}{C D}=\\frac{1}{2}$. Tātad $H H_{1}=\\frac{1}{3} \\quad$ un $S_{B H E}=\\frac{1}{2} \\cdot B E \\cdot H H_{1}=\\frac{1}{12}$.
+- $S_{BDE}=\\frac{1}{2} \\cdot BE \\cdot AD=\\frac{1}{2} \\cdot \\frac{1}{2} \\cdot 1=\\frac{1}{4}$;
+- $\\triangle BHE \\sim \\triangle DHC$ pēc pazīmes $\\ell \\ell$, jo 
+  $\\Varangle BHE=\\Varangle DHC$ kā krustleņki un $\\Varangle EBH=\\Varangle HDC=45^{\\circ}$. 
+  Līdzīgu trijstūru atbilstošie elementi ir proporcionāli, tāpēc 
+  $\\frac{HH_{1}}{HH_{2}}=\\frac{BE}{CD}=\\frac{1}{2}$. Tātad 
+  $HH_{1}=\\frac{1}{3} \\quad$ un $S_{BHE}=\\frac{1}{2} \\cdot BE \\cdot HH_{1}=\\frac{1}{12}$.
 
-Līdz ar to $S_{E H D}=\\frac{1}{4}-\\frac{1}{12}=\\frac{1}{6}$.
+Līdz ar to $S_{EHD}=\\frac{1}{4}-\\frac{1}{12}=\\frac{1}{6}$.
 
-Tā kā $A B=A D=1, B F=E A=\\frac{1}{2}$ un $\\Varangle A B F=\\Varangle E A D=90^{\\circ}$, tad $\\triangle A B F=\\triangle D A E$ pēc pazīmes mem. Līdz ar to $\\triangle E G A \\sim \\triangle E A D$ pēc pazīmes $\\ell \\ell$, jo $\\Varangle E A G=\\Varangle E D A$ kā vienādu trijstūru atbilstošie leņki un $\\Varangle A E D$ ir kopīgs. Tāpēc $\\frac{E A}{A D}=\\frac{E G}{A G}=\\frac{1}{2}$, no kurienes izriet, ka $A G=2 E G$.
+Tā kā $AB=AD=1, BF=EA=\\frac{1}{2}$ un $\\Varangle ABF=\\Varangle EAD=90^{\\circ}$, 
+tad $\\triangle ABF=\\triangle DAE$ pēc pazīmes mem. Līdz ar to 
+$\\triangle EGA \\sim \\triangle EAD$ pēc pazīmes $\\ell \\ell$, jo 
+$\\Varangle EAG=\\Varangle EDA$ kā vienādu trijstūru atbilstošie leņki un 
+$\\Varangle AED$ ir kopīgs. Tāpēc $\\frac{EA}{AD}=\\frac{EG}{AG}=\\frac{1}{2}$, 
+no kurienes izriet, ka $AG=2EG$.
 
-Līdzīgi iegūstam, ka $\\triangle A G D \\sim \\triangle E A D$ pēc pazīmes $\\ell \\ell$, jo $\\Varangle A G D=\\Varangle E A D=90^{\\circ}$, jo $\\triangle E G A \\sim \\triangle E A D$, un $\\Varangle E D A$ ir kopīgs. Tāpēc $\\frac{E A}{A D}=\\frac{A G}{G D}=\\frac{1}{2}$, no kurienes izriet, ka $G D=2 A G$. Tātad $G D=2 A G=2 \\cdot 2 E G=4 E G$.
+Līdzīgi iegūstam, ka $\\triangle AGD \\sim \\triangle EAD$ pēc pazīmes $\\ell \\ell$, 
+jo $\\Varangle AGD=\\Varangle EAD=90^{\\circ}$, jo $\\triangle EGA \\sim \\triangle EAD$, 
+un $\\Varangle EDA$ ir kopīgs. Tāpēc $\\frac{EA}{AD}=\\frac{AG}{GD}=\\frac{1}{2}$, 
+no kurienes izriet, ka $GD=2AG$. Tātad $GD=2AG=2 \\cdot 2EG=4EG$.
 
-Trijstūriem $E H G$ un $G H D$ ir kopīgs augstums, tāpēc to laukumu attiecība ir $\\frac{S_{E H G}}{S_{G H D}}=\\frac{E G}{G D}=\\frac{1}{4}$.
+Trijstūriem $EHG$ un $GHD$ ir kopīgs augstums, tāpēc to laukumu 
+attiecība ir $\\frac{S_{EHG}}{S_{GHD}}=\\frac{EG}{GD}=\\frac{1}{4}$.
 
-Līdz ar to $S_{G H D}=\\frac{4}{5} S_{E H D}=\\frac{4}{5} \\cdot \\frac{1}{6}=\\frac{2}{15}$ un simetrijas dē! $S_{D G H I}=2 \\cdot \\frac{2}{15}=\\frac{4}{15}$.
+Līdz ar to $S_{GHD}=\\frac{4}{5} S_{EHD}=\\frac{4}{5} \\cdot \\frac{1}{6}=\\frac{2}{15}$ 
+un simetrijas dēļ $S_{DGHI}=2 \\cdot \\frac{2}{15}=\\frac{4}{15}$.
 
 ![](LV.NOL.2021.10.3A.png){ width=150px }"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Ievērojam, ka $S_{E H D}=S_{B D E}-S_{B H E}$ (skat. 3. att.). 
+<p>Ievērojam, ka $S_{EHD}=S_{BDE}-S_{BHE}$ (skat. 3.att.). 
 Aprēķinām atbilstošo trijstūru laukumus:</p>
 <ul>
-<li>$S_{B D E}=\\frac{1}{2} \\cdot B E \\cdot A D=\\frac{1}{2} \\cdot \\frac{1}{2} \\cdot 1=\\frac{1}{4}$;</li>
-<li>$\\triangle B H E \\sim \\triangle D H C$ pēc pazīmes $\\ell \\ell$, jo $\\Varangle B H E=\\Varangle D H C$ kā krustleņki un $\\Varangle E B H=\\Varangle H D C=45^{\\circ}$. Līdzīgu trijstūru atbilstošie elementi ir proporcionāli, tāpēc $\\frac{H H_{1}}{H H_{2}}=\\frac{B E}{C D}=\\frac{1}{2}$. Tātad $H H_{1}=\\frac{1}{3} \\quad$ un $S_{B H E}=\\frac{1}{2} \\cdot B E \\cdot H H_{1}=\\frac{1}{12}$.</li>
+<li>$S_{BDE}=\\frac{1}{2} \\cdot BE \\cdot AD=\\frac{1}{2} \\cdot \\frac{1}{2} \\cdot 1=\\frac{1}{4}$;</li>
+<li>$\\triangle BHE \\sim \\triangle DHC$ pēc pazīmes $\\ell \\ell$, jo 
+  $\\Varangle BHE=\\Varangle DHC$ kā krustleņki un $\\Varangle EBH=\\Varangle HDC=45^{\\circ}$. 
+  Līdzīgu trijstūru atbilstošie elementi ir proporcionāli, tāpēc 
+  $\\frac{HH_{1}}{HH_{2}}=\\frac{BE}{CD}=\\frac{1}{2}$. Tātad 
+  $HH_{1}=\\frac{1}{3} \\quad$ un $S_{BHE}=\\frac{1}{2} \\cdot BE \\cdot HH_{1}=\\frac{1}{12}$.</li>
 </ul>
-<p>Līdz ar to $S_{E H D}=\\frac{1}{4}-\\frac{1}{12}=\\frac{1}{6}$.</p>
-<p>Tā kā $A B=A D=1, B F=E A=\\frac{1}{2}$ un $\\Varangle A B F=\\Varangle E A D=90^{\\circ}$, tad $\\triangle A B F=\\triangle D A E$ pēc pazīmes mem. Līdz ar to $\\triangle E G A \\sim \\triangle E A D$ pēc pazīmes $\\ell \\ell$, jo $\\Varangle E A G=\\Varangle E D A$ kā vienādu trijstūru atbilstošie leņki un $\\Varangle A E D$ ir kopīgs. Tāpēc $\\frac{E A}{A D}=\\frac{E G}{A G}=\\frac{1}{2}$, no kurienes izriet, ka $A G=2 E G$.</p>
-<p>Līdzīgi iegūstam, ka $\\triangle A G D \\sim \\triangle E A D$ pēc pazīmes $\\ell \\ell$, jo $\\Varangle A G D=\\Varangle E A D=90^{\\circ}$, jo $\\triangle E G A \\sim \\triangle E A D$, un $\\Varangle E D A$ ir kopīgs. Tāpēc $\\frac{E A}{A D}=\\frac{A G}{G D}=\\frac{1}{2}$, no kurienes izriet, ka $G D=2 A G$. Tātad $G D=2 A G=2 \\cdot 2 E G=4 E G$.</p>
-<p>Trijstūriem $E H G$ un $G H D$ ir kopīgs augstums, tāpēc to laukumu attiecība ir $\\frac{S_{E H G}}{S_{G H D}}=\\frac{E G}{G D}=\\frac{1}{4}$.</p>
-<p>Līdz ar to $S_{G H D}=\\frac{4}{5} S_{E H D}=\\frac{4}{5} \\cdot \\frac{1}{6}=\\frac{2}{15}$ un simetrijas dē! $S_{D G H I}=2 \\cdot \\frac{2}{15}=\\frac{4}{15}$.</p>
+<p>Līdz ar to $S_{EHD}=\\frac{1}{4}-\\frac{1}{12}=\\frac{1}{6}$.</p>
+<p>Tā kā $AB=AD=1, BF=EA=\\frac{1}{2}$ un $\\Varangle ABF=\\Varangle EAD=90^{\\circ}$, 
+tad $\\triangle ABF=\\triangle DAE$ pēc pazīmes mem. Līdz ar to 
+$\\triangle EGA \\sim \\triangle EAD$ pēc pazīmes $\\ell \\ell$, jo 
+$\\Varangle EAG=\\Varangle EDA$ kā vienādu trijstūru atbilstošie leņki un 
+$\\Varangle AED$ ir kopīgs. Tāpēc $\\frac{EA}{AD}=\\frac{EG}{AG}=\\frac{1}{2}$, 
+no kurienes izriet, ka $AG=2EG$.</p>
+<p>Līdzīgi iegūstam, ka $\\triangle AGD \\sim \\triangle EAD$ pēc pazīmes $\\ell \\ell$, 
+jo $\\Varangle AGD=\\Varangle EAD=90^{\\circ}$, jo $\\triangle EGA \\sim \\triangle EAD$, 
+un $\\Varangle EDA$ ir kopīgs. Tāpēc $\\frac{EA}{AD}=\\frac{AG}{GD}=\\frac{1}{2}$, 
+no kurienes izriet, ka $GD=2AG$. Tātad $GD=2AG=2 \\cdot 2EG=4EG$.</p>
+<p>Trijstūriem $EHG$ un $GHD$ ir kopīgs augstums, tāpēc to laukumu 
+attiecība ir $\\frac{S_{EHG}}{S_{GHD}}=\\frac{EG}{GD}=\\frac{1}{4}$.</p>
+<p>Līdz ar to $S_{GHD}=\\frac{4}{5} S_{EHD}=\\frac{4}{5} \\cdot \\frac{1}{6}=\\frac{2}{15}$ 
+un simetrijas dēļ $S_{DGHI}=2 \\cdot \\frac{2}{15}=\\frac{4}{15}$.</p>
 <p><img alt="" src="LV.NOL.2021.10.3A.png" />{ width=150px }</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2021.10.3.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-Izmantosim koordinātu metodi. Novietojam kvadrātu koordinātu sistēmas 1. kvadrantā tā, lai kvadrāta virsotne $A$ sakrīt ar koordinātu sākumpunktu un malas $A B$ un $A D$ atrodas uz koordinātu asīm (skat. 4. att.). Nosakām punktu koordinātas $A(0 ; 0), C(1 ; 1), F\\left(\\frac{1}{2} ; 1\\right), D(1 ; 0), E\\left(0 ; \\frac{1}{2}\\right)$ un sastādām taišņu vienādojumus $(A F) y=2 x,(E D) y=-\\frac{1}{2} x+\\frac{1}{2}$ un $(E C) y=\\frac{1}{2} x+\\frac{1}{2}$.
+Izmantosim koordinātu metodi. Novietojam kvadrātu koordinātu sistēmas 
+1.kvadrantā tā, lai kvadrāta virsotne $A$ sakrīt ar koordinātu sākumpunktu 
+un malas $A B$ un $A D$ atrodas uz koordinātu asīm (skat. 4.att.). 
+Nosakām punktu koordinātas $A(0;0)$, $C(1;1)$, $F\\left( \\frac{1}{2};1 \\right)$;
+$D(1;0)$, $E\\left(0;\\frac{1}{2}\\right)$ un sastādām taišņu vienādojumus 
+$(AF)$ $y=2x$, $(ED)$: $y=-\\frac{1}{2} x+\\frac{1}{2}$ un $(EC)$: $y=\\frac{1}{2} x+\\frac{1}{2}$.
 
 Lai noteiktu punktu $G$ un $H$ koordinātas, pielīdzinām atbilstošo taišņu formulu labās puses:
 
-- $G=A F \\cap E D, \\operatorname{tad} 2 x=-\\frac{1}{2} x+\\frac{1}{2}$, tātad $x=\\frac{1}{5}$ un $G\\left(\\frac{1}{5} ; \\frac{2}{5}\\right)$;
+- $G=AF \\cap ED$, tad $2x=-\\frac{1}{2} x+\\frac{1}{2}$, tātad 
+  $x=\\frac{1}{5}$ un $G\\left(\\frac{1}{5};\\frac{2}{5}\\right)$;
 - $H=A F \\cap E C, \\operatorname{tad} 2 x=\\frac{1}{2} x+\\frac{1}{2}$, tātad $x=\\frac{1}{3}$ un $H\\left(\\frac{1}{3} ; \\frac{2}{3}\\right)$.
 
 Aprēkinām trijstūra $H G D$ laukumu:
@@ -2854,10 +2990,16 @@ Simetrijas dēl $S_{D G H I}=2 \\cdot \\frac{2}{15}=\\frac{4}{15}$.
 
 ![](LV.NOL.2021.10.3B.png){ width=150px }"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Izmantosim koordinātu metodi. Novietojam kvadrātu koordinātu sistēmas 1. kvadrantā tā, lai kvadrāta virsotne $A$ sakrīt ar koordinātu sākumpunktu un malas $A B$ un $A D$ atrodas uz koordinātu asīm (skat. 4. att.). Nosakām punktu koordinātas $A(0 ; 0), C(1 ; 1), F\\left(\\frac{1}{2} ; 1\\right), D(1 ; 0), E\\left(0 ; \\frac{1}{2}\\right)$ un sastādām taišņu vienādojumus $(A F) y=2 x,(E D) y=-\\frac{1}{2} x+\\frac{1}{2}$ un $(E C) y=\\frac{1}{2} x+\\frac{1}{2}$.</p>
+<p>Izmantosim koordinātu metodi. Novietojam kvadrātu koordinātu sistēmas 
+1.kvadrantā tā, lai kvadrāta virsotne $A$ sakrīt ar koordinātu sākumpunktu 
+un malas $A B$ un $A D$ atrodas uz koordinātu asīm (skat. 4.att.). 
+Nosakām punktu koordinātas $A(0;0)$, $C(1;1)$, $F\\left( \\frac{1}{2};1 \\right)$;
+$D(1;0)$, $E\\left(0;\\frac{1}{2}\\right)$ un sastādām taišņu vienādojumus 
+$(AF)$ $y=2x$, $(ED)$: $y=-\\frac{1}{2} x+\\frac{1}{2}$ un $(EC)$: $y=\\frac{1}{2} x+\\frac{1}{2}$.</p>
 <p>Lai noteiktu punktu $G$ un $H$ koordinātas, pielīdzinām atbilstošo taišņu formulu labās puses:</p>
 <ul>
-<li>$G=A F \\cap E D, \\operatorname{tad} 2 x=-\\frac{1}{2} x+\\frac{1}{2}$, tātad $x=\\frac{1}{5}$ un $G\\left(\\frac{1}{5} ; \\frac{2}{5}\\right)$;</li>
+<li>$G=AF \\cap ED$, tad $2x=-\\frac{1}{2} x+\\frac{1}{2}$, tātad 
+  $x=\\frac{1}{5}$ un $G\\left(\\frac{1}{5};\\frac{2}{5}\\right)$;</li>
 <li>$H=A F \\cap E C, \\operatorname{tad} 2 x=\\frac{1}{2} x+\\frac{1}{2}$, tātad $x=\\frac{1}{3}$ un $H\\left(\\frac{1}{3} ; \\frac{2}{3}\\right)$.</li>
 </ul>
 <p>Aprēkinām trijstūra $H G D$ laukumu:</p>
@@ -2887,13 +3029,12 @@ Esam ieguvuši, ka izteiksme $n^{2}-n+36$ nedalās ar $5$
 tātad tā nedalās arī ar $165$.
 
 Piezīme. Kongruenču vietā var apskatīt skaitlus $n$ formā 
-$5k; 5k+1; 5k+2; 5k+3; 5k+4$, kur $k=0;1;2;\\ldots$, un pierādīt, ka dotā izteiksme nedalās ar $5$.
+$5k; 5k+1; 5k+2; 5k+3; 5k+4$, kur $k=0;1;2;\\ldots$, un pierādīt, 
+ka dotā izteiksme nedalās ar $5$.
 
 Piemēram, ja $n=5k+1$, tad
 
-$$
-n^{2}-n+36=(5 k+1)^{2}-(5 k+1)+36=25 k^{2}+10 k+1-5 k-1+36=5\\left(5 k^{2}+k+7\\right)+1
-$$
+$$n^{2}-n+36=(5 k+1)^{2}-(5 k+1)+36=25 k^{2}+10 k+1-5 k-1+36=5\\left(5 k^{2}+k+7\\right)+1$$
 
 Līdzīgi apskata citus gadīumus."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
@@ -2938,11 +3079,10 @@ Līdzīgi apskata citus gadīumus."""@lv ;
 (jo tā ir kongruenta ar $1$, $2$ vai $3$ pēc moduļa $5$), 
 tātad tā nedalās arī ar $165$.</p>
 <p>Piezīme. Kongruenču vietā var apskatīt skaitlus $n$ formā 
-$5k; 5k+1; 5k+2; 5k+3; 5k+4$, kur $k=0;1;2;\\ldots$, un pierādīt, ka dotā izteiksme nedalās ar $5$.</p>
+$5k; 5k+1; 5k+2; 5k+3; 5k+4$, kur $k=0;1;2;\\ldots$, un pierādīt, 
+ka dotā izteiksme nedalās ar $5$.</p>
 <p>Piemēram, ja $n=5k+1$, tad</p>
-<p>$$
-n^{2}-n+36=(5 k+1)^{2}-(5 k+1)+36=25 k^{2}+10 k+1-5 k-1+36=5\\left(5 k^{2}+k+7\\right)+1
-$$</p>
+<p>$$n^{2}-n+36=(5 k+1)^{2}-(5 k+1)+36=25 k^{2}+10 k+1-5 k-1+36=5\\left(5 k^{2}+k+7\\right)+1$$</p>
 <p>Līdzīgi apskata citus gadīumus.</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2021.10.4.SUB1 a eliozo:Solution ;
@@ -3081,7 +3221,10 @@ eliozo:SOLN.LV.NOL.2021.10.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Apzīmējam visus skait|us augošā secībā ar $a_{1} ; a_{2} ; \\ldots ; a_{500}$. Vispirms pierādīsim, ka $a_{125}+a_{376}>2000$. Pienemsim pretējo, ka $a_{125}+a_{376} \\leq 2000$. Tas nozīmē, ka katrs no 125 skaitlliem $a_{1} ; a_{2} ; \\ldots ; a_{125}$ sākumā varēja būt pārī tikai ar kādu no skaitļiem, kas ir lielāks nekā $a_{376}$. Bet tādu skaitļu ir tikai 124 ($a_{377};a_{378};\\ldots; a_{500}$) - pretruna.
+Apzīmējam visus skait|us augošā secībā ar $a_{1} ; a_{2} ; \\ldots ; a_{500}$. 
+Vispirms pierādīsim, ka $a_{125}+a_{376}>2000$. Pieņemsim pretējo, ka 
+$a_{125}+a_{376} \\leq 2000$. Tas nozīmē, ka katrs no $125$ skaitļiem 
+$a_{1} ; a_{2} ; \\ldots ; a_{125}$ sākumā varēja būt pārī tikai ar kādu no skaitļiem, kas ir lielāks nekā $a_{376}$. Bet tādu skaitļu ir tikai 124 ($a_{377};a_{378};\\ldots; a_{500}$) - pretruna.
 
 Tā kā visi dotie skaitļi ir dažādi un naturāli, tad
 
@@ -3089,7 +3232,10 @@ $$a_{146} \\geq a_{145}+1 \\geq a_{144}+2 \\geq a_{143}+3 \\geq \\ldots \\geq a_
 
 Tātad $a_{146}+a_{376} \\geq a_{125}+a_{376}+21>2000+21=2021$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Apzīmējam visus skait|us augošā secībā ar $a_{1} ; a_{2} ; \\ldots ; a_{500}$. Vispirms pierādīsim, ka $a_{125}+a_{376}&gt;2000$. Pienemsim pretējo, ka $a_{125}+a_{376} \\leq 2000$. Tas nozīmē, ka katrs no 125 skaitlliem $a_{1} ; a_{2} ; \\ldots ; a_{125}$ sākumā varēja būt pārī tikai ar kādu no skaitļiem, kas ir lielāks nekā $a_{376}$. Bet tādu skaitļu ir tikai 124 ($a_{377};a_{378};\\ldots; a_{500}$) - pretruna.</p>
+<p>Apzīmējam visus skait|us augošā secībā ar $a_{1} ; a_{2} ; \\ldots ; a_{500}$. 
+Vispirms pierādīsim, ka $a_{125}+a_{376}&gt;2000$. Pieņemsim pretējo, ka 
+$a_{125}+a_{376} \\leq 2000$. Tas nozīmē, ka katrs no $125$ skaitļiem 
+$a_{1} ; a_{2} ; \\ldots ; a_{125}$ sākumā varēja būt pārī tikai ar kādu no skaitļiem, kas ir lielāks nekā $a_{376}$. Bet tādu skaitļu ir tikai 124 ($a_{377};a_{378};\\ldots; a_{500}$) - pretruna.</p>
 <p>Tā kā visi dotie skaitļi ir dažādi un naturāli, tad</p>
 <p>$$a_{146} \\geq a_{145}+1 \\geq a_{144}+2 \\geq a_{143}+3 \\geq \\ldots \\geq a_{125}+21$$</p>
 <p>Tātad $a_{146}+a_{376} \\geq a_{125}+a_{376}+21&gt;2000+21=2021$.</p>"""@lv .
@@ -3098,30 +3244,31 @@ eliozo:SOLN.LV.NOL.2021.11.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-N̦emot vērā pienemtos apzīmējumus progresijām, uzdevumā dotos nosacījumus varam pierakstīt kā $a_{1}=b_{1}=2, a_{2}=b_{2}+0,25$ un $a_{3}=b_{3}$.
+N̦emot vērā pienemtos apzīmējumus progresijām, uzdevumā dotos nosacījumus varam pierakstīt 
+kā $a_{1}=b_{1}=2, a_{2}=b_{2}+0,25$ un $a_{3}=b_{3}$.
 
 Pēc aritmētiskās progresijas un ǵeometriskās progresijas definīcijas iegūstam, ka
 
-$a_{2}=a_{1}+d=2+d$ un $a_{3}=a_{2}+d=2+2 d$;
-
+- $a_{2}=a_{1}+d=2+d$ un $a_{3}=a_{2}+d=2+2 d$;
 - $b_{2}=b_{1} q=2 q$ un $b_{3}=b_{2} q=2 q^{2}$.
 
-Līdz ar to iegūstam vienādojumu sistēmu (no vienādībām $a_{2}=b_{2}+0,25$ un $a_{3}=b_{3}$ ):
+Līdz ar to iegūstam vienādojumu sistēmu (no vienādībām $a_{2}=b_{2}+0,25$ un $a_{3}=b_{3}$):
 
 $$\\left\\{\\begin{array}{l}
 2+d=2 q+0,25 \\\\
 2+2 d=2 q^{2}
 \\end{array}\\right.$$
 
-No pirmā vienādojuma izsakot $d=2 q-1,75$ un ievietojot to otrajā vienādojumā, iegūstam
+No pirmā vienādojuma izsakot $d=2q-1.75$ un ievietojot to otrajā vienādojumā, iegūstam
 
 $$\\begin{gathered}
-2+2(2 q-1,75)=2 q^{2} \\\\
-2 q^{2}-4 q+1,5=0 \\\\
-4 q^{2}-8 q+3=0
+2+2(2q-1.75)=2q^{2} \\\\
+2q^{2}-4q+1.5=0 \\\\
+4q^{2} - 8q + 3=0
 \\end{gathered}$$
 
-Vienādojuma saknes ir $q_{1}=\\frac{8+\\sqrt{16}}{8}=\\frac{12}{8}=1,5$ un $q_{1}=\\frac{8-4}{8}=0,5$.
+Vienādojuma saknes ir $q_{1}=\\frac{8+\\sqrt{16}}{8}=\\frac{12}{8}=1,5$ 
+un $q_{1}=\\frac{8-4}{8}=0,5$.
 
 Attiecīgi $d_{1}=3-1,75=1,25$ un $d_{2}=1-1,75=-0,75$.
 
@@ -3135,26 +3282,28 @@ Apskatām abus gadijumus:
 * ja $d=-0,75$, tad aritmētiskās progresijas pirmo piecu loceklu 
   $(2; 1.25; 0.5; -0.25;-1)$ summa ir
 
-$$S_{5}=\\frac{2 a_{1}+4 d}{2} \\cdot 5=\\frac{2 \\cdot 2+4 \\cdot(-0.75)}{2} \\cdot 5=\\frac{4-3}{2} \\cdot 5=2.5.$$"""@lv ;
+  $$S_{5}=\\frac{2 a_{1}+4 d}{2} \\cdot 5=\\frac{2 \\cdot 2+4 \\cdot(-0.75)}{2} \\cdot 5=\\frac{4-3}{2} \\cdot 5=2.5.$$"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>N̦emot vērā pienemtos apzīmējumus progresijām, uzdevumā dotos nosacījumus varam pierakstīt kā $a_{1}=b_{1}=2, a_{2}=b_{2}+0,25$ un $a_{3}=b_{3}$.</p>
+<p>N̦emot vērā pienemtos apzīmējumus progresijām, uzdevumā dotos nosacījumus varam pierakstīt 
+kā $a_{1}=b_{1}=2, a_{2}=b_{2}+0,25$ un $a_{3}=b_{3}$.</p>
 <p>Pēc aritmētiskās progresijas un ǵeometriskās progresijas definīcijas iegūstam, ka</p>
-<p>$a_{2}=a_{1}+d=2+d$ un $a_{3}=a_{2}+d=2+2 d$;</p>
 <ul>
+<li>$a_{2}=a_{1}+d=2+d$ un $a_{3}=a_{2}+d=2+2 d$;</li>
 <li>$b_{2}=b_{1} q=2 q$ un $b_{3}=b_{2} q=2 q^{2}$.</li>
 </ul>
-<p>Līdz ar to iegūstam vienādojumu sistēmu (no vienādībām $a_{2}=b_{2}+0,25$ un $a_{3}=b_{3}$ ):</p>
+<p>Līdz ar to iegūstam vienādojumu sistēmu (no vienādībām $a_{2}=b_{2}+0,25$ un $a_{3}=b_{3}$):</p>
 <p>$$\\left{\\begin{array}{l}
 2+d=2 q+0,25 \\
 2+2 d=2 q^{2}
 \\end{array}\\right.$$</p>
-<p>No pirmā vienādojuma izsakot $d=2 q-1,75$ un ievietojot to otrajā vienādojumā, iegūstam</p>
+<p>No pirmā vienādojuma izsakot $d=2q-1.75$ un ievietojot to otrajā vienādojumā, iegūstam</p>
 <p>$$\\begin{gathered}
-2+2(2 q-1,75)=2 q^{2} \\
-2 q^{2}-4 q+1,5=0 \\
-4 q^{2}-8 q+3=0
+2+2(2q-1.75)=2q^{2} \\
+2q^{2}-4q+1.5=0 \\
+4q^{2} - 8q + 3=0
 \\end{gathered}$$</p>
-<p>Vienādojuma saknes ir $q_{1}=\\frac{8+\\sqrt{16}}{8}=\\frac{12}{8}=1,5$ un $q_{1}=\\frac{8-4}{8}=0,5$.</p>
+<p>Vienādojuma saknes ir $q_{1}=\\frac{8+\\sqrt{16}}{8}=\\frac{12}{8}=1,5$ 
+un $q_{1}=\\frac{8-4}{8}=0,5$.</p>
 <p>Attiecīgi $d_{1}=3-1,75=1,25$ un $d_{2}=1-1,75=-0,75$.</p>
 <p>Apskatām abus gadijumus:</p>
 <ul>
@@ -3172,9 +3321,11 @@ eliozo:SOLN.LV.NOL.2021.11.1.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-Tā kā dota aritmētiskā progresija 2 ; $a_{2}$; $a_{3}$, tad $a_{2}-2=a_{3}-a_{2}$ un $a_{3}=2 a_{2}-2$.
+Tā kā dota aritmētiskā progresija 2 ; $a_{2}$; $a_{3}$, tad 
+$a_{2}-2=a_{3}-a_{2}$ un $a_{3}=2 a_{2}-2$.
 
-No ǵeometriskās progresijas $2 ; b_{2} ; b_{3}$, iegūstam sakarības $\\frac{b_{2}}{2}=\\frac{b_{3}}{b_{2}}$ un $b_{3}=\\frac{b_{2}^{2}}{2}$.
+No ǵeometriskās progresijas $2 ; b_{2} ; b_{3}$, iegūstam sakarības 
+$\\frac{b_{2}}{2}=\\frac{b_{3}}{b_{2}}$ un $b_{3}=\\frac{b_{2}^{2}}{2}$.
 
 Sastādām vienādojumu $2 a_{2}-2=\\frac{b_{2}^{2}}{2}$.
 
@@ -3193,8 +3344,10 @@ $d_{1}=-0.75$ un $d_{2}=1.5$. Apskatām abus gadijumus:
 - ja $d=-0.75$, tad aritmētiskās progresijas pirmo piecu locekļu 
   $(2; 1.25; 0.5; -0.25; -1)$ summa ir $S_{5}=2+1.25+0.5-0.25-1=2.5$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Tā kā dota aritmētiskā progresija 2 ; $a_{2}$; $a_{3}$, tad $a_{2}-2=a_{3}-a_{2}$ un $a_{3}=2 a_{2}-2$.</p>
-<p>No ǵeometriskās progresijas $2 ; b_{2} ; b_{3}$, iegūstam sakarības $\\frac{b_{2}}{2}=\\frac{b_{3}}{b_{2}}$ un $b_{3}=\\frac{b_{2}^{2}}{2}$.</p>
+<p>Tā kā dota aritmētiskā progresija 2 ; $a_{2}$; $a_{3}$, tad 
+$a_{2}-2=a_{3}-a_{2}$ un $a_{3}=2 a_{2}-2$.</p>
+<p>No ǵeometriskās progresijas $2 ; b_{2} ; b_{3}$, iegūstam sakarības 
+$\\frac{b_{2}}{2}=\\frac{b_{3}}{b_{2}}$ un $b_{3}=\\frac{b_{2}^{2}}{2}$.</p>
 <p>Sastādām vienādojumu $2 a_{2}-2=\\frac{b_{2}^{2}}{2}$.</p>
 <p>Ja $b_{2}=x$, tad $a_{2}=x+0.25$, līdz ar to esam ieguvuši vienādojumu</p>
 <p>$$\\begin{gathered}
@@ -3219,7 +3372,8 @@ Apskatām funkciju $f(x)=a x^{2}+b x+c$. levērojam, ka funkcijas vērtībām $f
 - $f(-1)=a-b+c=\\frac{b}{2021}-b=-\\frac{2020}{2021} \\cdot b ;$
 - $f(1)=a+b+c=\\frac{b}{2021}+b=\\frac{2022}{2021} \\cdot b$.
 
-Tātad intervālā $[-1 ; 1]$ funkcijas grafiks krusto $x$ asi, līdz ar to dotajam vienādojumam ir sakne, kas atrodas intervālā $[-1 ; 1]$.
+Tātad intervālā $[-1 ; 1]$ funkcijas grafiks krusto $x$ asi, līdz ar to dotajam vienādojumam 
+ir sakne, kas atrodas intervālā $[-1;1]$.
 
 *Piezīme.* Var uzreiz apskatīt reizinājumu:
 
@@ -3230,7 +3384,8 @@ $$f(-1)f(1) = (a+c-b)(a+c+b) = (a+c)^{2}-b^{2} = \\frac{b^{2}}{2021^{2}}-b^{2} <
 <li>$f(-1)=a-b+c=\\frac{b}{2021}-b=-\\frac{2020}{2021} \\cdot b ;$</li>
 <li>$f(1)=a+b+c=\\frac{b}{2021}+b=\\frac{2022}{2021} \\cdot b$.</li>
 </ul>
-<p>Tātad intervālā $[-1 ; 1]$ funkcijas grafiks krusto $x$ asi, līdz ar to dotajam vienādojumam ir sakne, kas atrodas intervālā $[-1 ; 1]$.</p>
+<p>Tātad intervālā $[-1 ; 1]$ funkcijas grafiks krusto $x$ asi, līdz ar to dotajam vienādojumam 
+ir sakne, kas atrodas intervālā $[-1;1]$.</p>
 <p><em>Piezīme.</em> Var uzreiz apskatīt reizinājumu:</p>
 <p>$$f(-1)f(1) = (a+c-b)(a+c+b) = (a+c)^{2}-b^{2} = \\frac{b^{2}}{2021^{2}}-b^{2} &lt; 0$$</p>"""@lv .
 
@@ -3264,51 +3419,59 @@ eliozo:SOLN.LV.NOL.2021.11.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Aplūkosim, kāds ir mazākais tīri jaukais skaitlis. Tā kā tīri jaukos skaitlus raksturo īpašība "jo lielāka sastāvdaļa, jo lielāks rezultā̄̌", tad mazāko no šādiem skaitliem var veidot tikai mazākais iespējamais dažādo skait!u komplekts, tie ir skait!i $2,3,4,5$.
+Aplūkosim, kāds ir mazākais tīri jaukais skaitlis. Tā kā tīri jaukos skaitļus 
+raksturo īpašība "jo lielāka sastāvdaļa, jo lielāks rezultāts", tad mazāko no 
+šādiem skaitliem var veidot tikai mazākais iespējamais dažādo skaitļu komplekts, 
+tie ir skaitļi $2,3,4,5$.
 
-No šiem skaitliem var izveidot tikai šādus skaitlus:
+No šiem skaitļiem var izveidot tikai šādus skaitļus:
 
 - $2 \\cdot 3+4 \\cdot 5=26$,
 - $2 \\cdot 4+3 \\cdot 5=23$,
 - $2 \\cdot 5+3 \\cdot 4=22$.
 
-Tātad mazākais tīri jaukais skaitlis ir 22, un divu tīri jauko skait|u summa ir vismaz 44.
+Tātad mazākais tīri jaukais skaitlis ir $22$, un divu tīri jauko skaitļu summa ir vismaz $44$.
 
-Pierādīsim, ka visi skaitli, kas lielāki vai vienādi ar 44, ir tīr jauki.
+Pierādīsim, ka visi skaitļi, kas lielāki vai vienādi ar $44$, ir tīri jauki.
 
-- Visus pāra skaitlus, kas ir lielāki vai vienādi ar $22$, 
+- Visus pāra skaitļus, kas ir lielāki vai vienādi ar $22$, 
   var uzrakstīt formā $2 \\cdot p+3 \\cdot 4$, kur $p \\geq 5$. 
-  Tā kā visi četri skaitļi $2$, $3$, $4$ un $p$ ir dažādi, tad visi pāra skaitli, kas ir vismaz 22, ir tīri jauki.
-- Visus nepāra skaitlus, kas ir lielāki vai vienādi ar $27$, 
+  Tā kā visi četri skaitļi $2$, $3$, $4$ un $p$ ir dažādi, tad visi 
+  pāra skaitli, kas ir vismaz $22$, ir tīri jauki.
+- Visus nepāra skaitļus, kas ir lielāki vai vienādi ar $27$, 
   var uzrakstīt formā $2 \\cdot p+3 \\cdot 5$, kur $p \\geq 6$. 
   Tā kā visi četri skaitļi $2$, $3$, $5$ un $p$ ir dažādi, 
   tad visi nepāra skaitli, kas ir vismaz $27$, ir tīri jauki.
 
-Tātad visi skaitli, kas lielāki vai vienādi ar $27$, 
+Tātad visi skaitļi, kas lielāki vai vienādi ar $27$, 
 ir tīri jauki. Līdz ar to arī visi skaitļi, kas lielāki 
 vai vienādi ar $44$, ir tīri jauki un esam pierādijuši, 
 ka jebkuru divu tīri jauku skaitlu summa arī ir tīri 
 jauks skaitlis."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Aplūkosim, kāds ir mazākais tīri jaukais skaitlis. Tā kā tīri jaukos skaitlus raksturo īpašība "jo lielāka sastāvdaļa, jo lielāks rezultā̄̌", tad mazāko no šādiem skaitliem var veidot tikai mazākais iespējamais dažādo skait!u komplekts, tie ir skait!i $2,3,4,5$.</p>
-<p>No šiem skaitliem var izveidot tikai šādus skaitlus:</p>
+<p>Aplūkosim, kāds ir mazākais tīri jaukais skaitlis. Tā kā tīri jaukos skaitļus 
+raksturo īpašība "jo lielāka sastāvdaļa, jo lielāks rezultāts", tad mazāko no 
+šādiem skaitliem var veidot tikai mazākais iespējamais dažādo skaitļu komplekts, 
+tie ir skaitļi $2,3,4,5$.</p>
+<p>No šiem skaitļiem var izveidot tikai šādus skaitļus:</p>
 <ul>
 <li>$2 \\cdot 3+4 \\cdot 5=26$,</li>
 <li>$2 \\cdot 4+3 \\cdot 5=23$,</li>
 <li>$2 \\cdot 5+3 \\cdot 4=22$.</li>
 </ul>
-<p>Tātad mazākais tīri jaukais skaitlis ir 22, un divu tīri jauko skait|u summa ir vismaz 44.</p>
-<p>Pierādīsim, ka visi skaitli, kas lielāki vai vienādi ar 44, ir tīr jauki.</p>
+<p>Tātad mazākais tīri jaukais skaitlis ir $22$, un divu tīri jauko skaitļu summa ir vismaz $44$.</p>
+<p>Pierādīsim, ka visi skaitļi, kas lielāki vai vienādi ar $44$, ir tīri jauki.</p>
 <ul>
-<li>Visus pāra skaitlus, kas ir lielāki vai vienādi ar $22$, 
+<li>Visus pāra skaitļus, kas ir lielāki vai vienādi ar $22$, 
   var uzrakstīt formā $2 \\cdot p+3 \\cdot 4$, kur $p \\geq 5$. 
-  Tā kā visi četri skaitļi $2$, $3$, $4$ un $p$ ir dažādi, tad visi pāra skaitli, kas ir vismaz 22, ir tīri jauki.</li>
-<li>Visus nepāra skaitlus, kas ir lielāki vai vienādi ar $27$, 
+  Tā kā visi četri skaitļi $2$, $3$, $4$ un $p$ ir dažādi, tad visi 
+  pāra skaitli, kas ir vismaz $22$, ir tīri jauki.</li>
+<li>Visus nepāra skaitļus, kas ir lielāki vai vienādi ar $27$, 
   var uzrakstīt formā $2 \\cdot p+3 \\cdot 5$, kur $p \\geq 6$. 
   Tā kā visi četri skaitļi $2$, $3$, $5$ un $p$ ir dažādi, 
   tad visi nepāra skaitli, kas ir vismaz $27$, ir tīri jauki.</li>
 </ul>
-<p>Tātad visi skaitli, kas lielāki vai vienādi ar $27$, 
+<p>Tātad visi skaitļi, kas lielāki vai vienādi ar $27$, 
 ir tīri jauki. Līdz ar to arī visi skaitļi, kas lielāki 
 vai vienādi ar $44$, ir tīri jauki un esam pierādijuši, 
 ka jebkuru divu tīri jauku skaitlu summa arī ir tīri 
@@ -3422,7 +3585,7 @@ eliozo:SOLN.LV.NOL.2021.12.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Aplūkojam kvadrātfunkciju $f(x)=2 a x^{2}+b x+c$. Ievērojam, ka
+Aplūkojam kvadrātfunkciju $f(x)=2ax^{2}+bx+c$. Ievērojam, ka
 
 $$8ac + 2bc + c^{2} = c(8a+2b+c) = f(0) \\cdot f(2)$$
 
@@ -3430,7 +3593,7 @@ No dotā izriet, ka $f(0) \\cdot f(2)<0$, tātad kvadrātfunkcija krusto $x$ asi
 Līdz ar to kvadrātfunkcijai ir divas saknes un tās diskriminants ir pozitīvs, 
 tas ir, $D=b^{2}-8ac>0$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Aplūkojam kvadrātfunkciju $f(x)=2 a x^{2}+b x+c$. Ievērojam, ka</p>
+<p>Aplūkojam kvadrātfunkciju $f(x)=2ax^{2}+bx+c$. Ievērojam, ka</p>
 <p>$$8ac + 2bc + c^{2} = c(8a+2b+c) = f(0) \\cdot f(2)$$</p>
 <p>No dotā izriet, ka $f(0) \\cdot f(2)&lt;0$, tātad kvadrātfunkcija krusto $x$ asi. 
 Līdz ar to kvadrātfunkcijai ir divas saknes un tās diskriminants ir pozitīvs, 
@@ -3460,159 +3623,293 @@ eliozo:SOLN.LV.NOL.2021.12.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Ievērojam, ka iekrāsotais četrstūris ir paralelograms, jo tā pretējās malas ir pa pāriem paralēlas. Tā kā krustleņḳi ir vienādi un iekšējie škèrsleņki pie paralēlām taisnēm ir vienādi, tad pēc pazīmes $\\ell \\ell$ iegūstam līdzīgus trijstūrus:
+Ievērojam, ka iekrāsotais četrstūris ir paralelograms, jo tā pretējās malas 
+ir pa pāriem paralēlas. Tā kā krustleņḳi ir vienādi un iekšējie šķērsleņķi 
+pie paralēlām taisnēm ir vienādi, tad pēc pazīmes $\\ell \\ell$ 
+iegūstam līdzīgus trijstūrus:
 
-- $\\triangle A E C \\sim \\triangle M E K$, to līdzības koeficients ir $\\frac{K M}{A C}=\\frac{2}{3}$ (skat. 7. att.), tātad $\\triangle A E C$ augstums ir $\\frac{3}{5} A K=\\frac{3}{5}$, un simetrijas dēl $\\triangle B G D$ augstums ir $\\frac{2}{5}$;
-- $\\triangle B F C \\sim \\triangle N F K$, to līdzības koeficients ir $\\frac{B C}{K N}=\\frac{1}{4}$, tātad $\\triangle B F C$ augstums ir $\\frac{1}{5}$, un simetrijas dē! $\\triangle A H D$ augstums ir $\\frac{4}{5}$.
+- $\\triangle AEC \\sim \\triangle MEK$, to līdzības koeficients ir 
+  $\\frac{KM}{AC}=\\frac{2}{3}$ (skat. 7. att.), tātad $\\triangle AEC$ 
+  augstums ir $\\frac{3}{5} AK=\\frac{3}{5}$, un simetrijas dēl 
+  $\\triangle BGD$ augstums ir $\\frac{2}{5}$;
+- $\\triangle BFC \\sim \\triangle NFK$, to līdzības koeficients ir 
+  $\\frac{BC}{KN}=\\frac{1}{4}$, tātad $\\triangle BFC$ augstums ir $\\frac{1}{5}$, 
+  un simetrijas dē! $\\triangle AHD$ augstums ir $\\frac{4}{5}$.
 
-Līdz ar to $S_{E F G H}=S_{A H D}-S_{A E C}-S_{B G D}+S_{B F C}=\\frac{1}{2}\\left(4 \\cdot \\frac{4}{5}-3 \\cdot \\frac{3}{5}-2 \\cdot \\frac{2}{5}+1 \\cdot \\frac{1}{5}\\right)=\\frac{1}{10}(16-9-4+1)=\\frac{2}{5}$.
+Līdz ar to 
+$S_{EFGH}=S_{AHD}-S_{AEC}-S_{BGD}+S_{BFC}=\\frac{1}{2}\\left(4 \\cdot \\frac{4}{5}-3 \\cdot \\frac{3}{5}-2 \\cdot \\frac{2}{5}+1 \\cdot \\frac{1}{5}\\right)=\\frac{1}{10}(16-9-4+1)=\\frac{2}{5}$.
 
 ![](LV.NOL.2021.12.3A.png){ width=200px }
 
+Pēc Pitagora teorēmas trijstūros $ABM$ un $LND$ ieugūstam, ka 
+$AM=\\sqrt{AB^{2}+MB^{2}}=\\sqrt{5}$ un $LD=\\sqrt{LN^{2}+ND^{2}}=\\sqrt{10}$.
 
-Pēc Pitagora teorēmas trijstūros $A B M$ un $L N D$ ieugūstam, ka $A M=\\sqrt{A B^{2}+M B^{2}}=\\sqrt{5}$ un $L D=\\sqrt{L N^{2}+N D^{2}}=\\sqrt{10}$.
+Ņemot vērā trijstūru līdzību, iegūstam, ka $AH=\\frac{4}{5} AM=\\frac{4 \\sqrt{5}}{5}$ 
+un $HD=\\frac{4}{5} LD=\\frac{4 \\sqrt{10}}{5}$.
 
-Nemot vērā trijstūru līdzību, iegūstam, ka $A H=\\frac{4}{5} A M=\\frac{4 \\sqrt{5}}{5}$ un $H D=\\frac{4}{5} L D=\\frac{4 \\sqrt{10}}{5}$.
-
-Izmantojot kosinusu teorēmu trijstūrī $A H D$, iegūstam
+Izmantojot kosinusu teorēmu trijstūrī $AHD$, iegūstam
 
 $$\\begin{gathered}
-A D^{2}=A H^{2}+H D^{2}-2 \\cdot A H \\cdot H D \\cdot \\cos \\Varangle A H D \\\\
-16=\\frac{16}{5}+\\frac{32}{5}-\\frac{32 \\sqrt{2}}{5} \\cos \\Varangle A H D \\\\
+AD^{2} = AH^{2}+H D^{2}-2 \\cdot AH \\cdot HD \\cdot \\cos \\Varangle AHD \\\\
+16=\\frac{16}{5}+\\frac{32}{5}-\\frac{32 \\sqrt{2}}{5} \\cos \\Varangle AHD \\\\
 32 \\sqrt{2} \\cos \\Varangle A H D=48-80 \\\\
 \\cos \\Varangle A H D=-\\frac{1}{\\sqrt{2}}=-\\frac{\\sqrt{2}}{2}
 \\end{gathered}$$
 
-Līdz ar to esam ieguvuši, ka $\\Varangle A H D=135^{\\circ}$ un $\\Varangle H E F=45^{\\circ}$."""@lv ;
+Līdz ar to esam ieguvuši, ka $\\Varangle AHD=135^{\\circ}$ un $\\Varangle HEF=45^{\\circ}$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Ievērojam, ka iekrāsotais četrstūris ir paralelograms, jo tā pretējās malas ir pa pāriem paralēlas. Tā kā krustleņḳi ir vienādi un iekšējie škèrsleņki pie paralēlām taisnēm ir vienādi, tad pēc pazīmes $\\ell \\ell$ iegūstam līdzīgus trijstūrus:</p>
+<p>Ievērojam, ka iekrāsotais četrstūris ir paralelograms, jo tā pretējās malas 
+ir pa pāriem paralēlas. Tā kā krustleņḳi ir vienādi un iekšējie šķērsleņķi 
+pie paralēlām taisnēm ir vienādi, tad pēc pazīmes $\\ell \\ell$ 
+iegūstam līdzīgus trijstūrus:</p>
 <ul>
-<li>$\\triangle A E C \\sim \\triangle M E K$, to līdzības koeficients ir $\\frac{K M}{A C}=\\frac{2}{3}$ (skat. 7. att.), tātad $\\triangle A E C$ augstums ir $\\frac{3}{5} A K=\\frac{3}{5}$, un simetrijas dēl $\\triangle B G D$ augstums ir $\\frac{2}{5}$;</li>
-<li>$\\triangle B F C \\sim \\triangle N F K$, to līdzības koeficients ir $\\frac{B C}{K N}=\\frac{1}{4}$, tātad $\\triangle B F C$ augstums ir $\\frac{1}{5}$, un simetrijas dē! $\\triangle A H D$ augstums ir $\\frac{4}{5}$.</li>
+<li>$\\triangle AEC \\sim \\triangle MEK$, to līdzības koeficients ir 
+  $\\frac{KM}{AC}=\\frac{2}{3}$ (skat. 7. att.), tātad $\\triangle AEC$ 
+  augstums ir $\\frac{3}{5} AK=\\frac{3}{5}$, un simetrijas dēl 
+  $\\triangle BGD$ augstums ir $\\frac{2}{5}$;</li>
+<li>$\\triangle BFC \\sim \\triangle NFK$, to līdzības koeficients ir 
+  $\\frac{BC}{KN}=\\frac{1}{4}$, tātad $\\triangle BFC$ augstums ir $\\frac{1}{5}$, 
+  un simetrijas dē! $\\triangle AHD$ augstums ir $\\frac{4}{5}$.</li>
 </ul>
-<p>Līdz ar to $S_{E F G H}=S_{A H D}-S_{A E C}-S_{B G D}+S_{B F C}=\\frac{1}{2}\\left(4 \\cdot \\frac{4}{5}-3 \\cdot \\frac{3}{5}-2 \\cdot \\frac{2}{5}+1 \\cdot \\frac{1}{5}\\right)=\\frac{1}{10}(16-9-4+1)=\\frac{2}{5}$.</p>
+<p>Līdz ar to 
+$S_{EFGH}=S_{AHD}-S_{AEC}-S_{BGD}+S_{BFC}=\\frac{1}{2}\\left(4 \\cdot \\frac{4}{5}-3 \\cdot \\frac{3}{5}-2 \\cdot \\frac{2}{5}+1 \\cdot \\frac{1}{5}\\right)=\\frac{1}{10}(16-9-4+1)=\\frac{2}{5}$.</p>
 <p><img alt="" src="LV.NOL.2021.12.3A.png" />{ width=200px }</p>
-<p>Pēc Pitagora teorēmas trijstūros $A B M$ un $L N D$ ieugūstam, ka $A M=\\sqrt{A B^{2}+M B^{2}}=\\sqrt{5}$ un $L D=\\sqrt{L N^{2}+N D^{2}}=\\sqrt{10}$.</p>
-<p>Nemot vērā trijstūru līdzību, iegūstam, ka $A H=\\frac{4}{5} A M=\\frac{4 \\sqrt{5}}{5}$ un $H D=\\frac{4}{5} L D=\\frac{4 \\sqrt{10}}{5}$.</p>
-<p>Izmantojot kosinusu teorēmu trijstūrī $A H D$, iegūstam</p>
+<p>Pēc Pitagora teorēmas trijstūros $ABM$ un $LND$ ieugūstam, ka 
+$AM=\\sqrt{AB^{2}+MB^{2}}=\\sqrt{5}$ un $LD=\\sqrt{LN^{2}+ND^{2}}=\\sqrt{10}$.</p>
+<p>Ņemot vērā trijstūru līdzību, iegūstam, ka $AH=\\frac{4}{5} AM=\\frac{4 \\sqrt{5}}{5}$ 
+un $HD=\\frac{4}{5} LD=\\frac{4 \\sqrt{10}}{5}$.</p>
+<p>Izmantojot kosinusu teorēmu trijstūrī $AHD$, iegūstam</p>
 <p>$$\\begin{gathered}
-A D^{2}=A H^{2}+H D^{2}-2 \\cdot A H \\cdot H D \\cdot \\cos \\Varangle A H D \\
-16=\\frac{16}{5}+\\frac{32}{5}-\\frac{32 \\sqrt{2}}{5} \\cos \\Varangle A H D \\
+AD^{2} = AH^{2}+H D^{2}-2 \\cdot AH \\cdot HD \\cdot \\cos \\Varangle AHD \\
+16=\\frac{16}{5}+\\frac{32}{5}-\\frac{32 \\sqrt{2}}{5} \\cos \\Varangle AHD \\
 32 \\sqrt{2} \\cos \\Varangle A H D=48-80 \\
 \\cos \\Varangle A H D=-\\frac{1}{\\sqrt{2}}=-\\frac{\\sqrt{2}}{2}
 \\end{gathered}$$</p>
-<p>Līdz ar to esam ieguvuši, ka $\\Varangle A H D=135^{\\circ}$ un $\\Varangle H E F=45^{\\circ}$.</p>"""@lv .
+<p>Līdz ar to esam ieguvuši, ka $\\Varangle AHD=135^{\\circ}$ un $\\Varangle HEF=45^{\\circ}$.</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2021.12.3.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-Papildinām doto zīmējum ar vēl 4 kvadrātiem un novelkam dotajām taisnēm paralēlas taisnes (skat. 8. att., kur paralēlās taisnes iekrāsotas zila un violetā krāsā). Aprēḳinām paralelograma $A B C D$ (jo tā pretējās malas ir pa pāriem paralēlas) laukumu $S_{A B C D}=1 \\cdot 1=1$. levērojam, ka nogriezni $B C$ krusto paralēlas taisnes, kas atrodas vienādā attālumā viena no otras. Tātad tās sadala nogriezni $B C$ piecās vienādās daļās (Talesa teorēma). Līdz ar to iekrāsotā četrstūra laukums ir $\\frac{2}{5} S_{A B C D}=\\frac{2}{5}$.
+Papildinām doto zīmējum ar vēl 4 kvadrātiem un novelkam dotajām taisnēm paralēlas 
+taisnes (skat. 8. att., kur paralēlās taisnes iekrāsotas zila un violetā krāsā). 
+Aprēḳinām paralelograma $ABCD$ (jo tā pretējās malas ir pa pāriem paralēlas) 
+laukumu $S_{ABCD}=1 \\cdot 1=1$. Ievērojam, ka nogriezni $BC$ krusto 
+paralēlas taisnes, kas atrodas vienādā attālumā viena no otras. Tātad tās 
+sadala nogriezni $BC$ piecās vienādās daļās (Talesa teorēma). Līdz ar to 
+iekrāsotā četrstūra laukums ir $\\frac{2}{5} S_{ABCD}=\\frac{2}{5}$.
 
-Trijstūris $F B E$ ir vienādsānu taisnleņka, jo $\\triangle F G B=\\triangle B H E$ un tie ir taisnleņka trijstūri. Tātad $\\Varangle B F E=45^{\\circ}$. Līdz ar to iekrāsotā četrstūra (paralelograma) leņuu lielumi ir $45^{\\circ}$ (jo lenki, kuru malas ir paralēlas, ir vienādi) un $135^{\\circ}$.
+Trijstūris $FBE$ ir vienādsānu taisnleņka, jo $\\triangle FGB=\\triangle BHE$ 
+un tie ir taisnleņka trijstūri. Tātad $\\Varangle BFE=45^{\\circ}$. 
+Līdz ar to iekrāsotā četrstūra (paralelograma) leņuu lielumi ir 
+$45^{\\circ}$ (jo lenki, kuru malas ir paralēlas, ir vienādi) un $135^{\\circ}$.
 
 ![](LV.NOL.2021.12.3B.png){ width=300px }"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Papildinām doto zīmējum ar vēl 4 kvadrātiem un novelkam dotajām taisnēm paralēlas taisnes (skat. 8. att., kur paralēlās taisnes iekrāsotas zila un violetā krāsā). Aprēḳinām paralelograma $A B C D$ (jo tā pretējās malas ir pa pāriem paralēlas) laukumu $S_{A B C D}=1 \\cdot 1=1$. levērojam, ka nogriezni $B C$ krusto paralēlas taisnes, kas atrodas vienādā attālumā viena no otras. Tātad tās sadala nogriezni $B C$ piecās vienādās daļās (Talesa teorēma). Līdz ar to iekrāsotā četrstūra laukums ir $\\frac{2}{5} S_{A B C D}=\\frac{2}{5}$.</p>
-<p>Trijstūris $F B E$ ir vienādsānu taisnleņka, jo $\\triangle F G B=\\triangle B H E$ un tie ir taisnleņka trijstūri. Tātad $\\Varangle B F E=45^{\\circ}$. Līdz ar to iekrāsotā četrstūra (paralelograma) leņuu lielumi ir $45^{\\circ}$ (jo lenki, kuru malas ir paralēlas, ir vienādi) un $135^{\\circ}$.</p>
+<p>Papildinām doto zīmējum ar vēl 4 kvadrātiem un novelkam dotajām taisnēm paralēlas 
+taisnes (skat. 8. att., kur paralēlās taisnes iekrāsotas zila un violetā krāsā). 
+Aprēḳinām paralelograma $ABCD$ (jo tā pretējās malas ir pa pāriem paralēlas) 
+laukumu $S_{ABCD}=1 \\cdot 1=1$. Ievērojam, ka nogriezni $BC$ krusto 
+paralēlas taisnes, kas atrodas vienādā attālumā viena no otras. Tātad tās 
+sadala nogriezni $BC$ piecās vienādās daļās (Talesa teorēma). Līdz ar to 
+iekrāsotā četrstūra laukums ir $\\frac{2}{5} S_{ABCD}=\\frac{2}{5}$.</p>
+<p>Trijstūris $FBE$ ir vienādsānu taisnleņka, jo $\\triangle FGB=\\triangle BHE$ 
+un tie ir taisnleņka trijstūri. Tātad $\\Varangle BFE=45^{\\circ}$. 
+Līdz ar to iekrāsotā četrstūra (paralelograma) leņuu lielumi ir 
+$45^{\\circ}$ (jo lenki, kuru malas ir paralēlas, ir vienādi) un $135^{\\circ}$.</p>
 <p><img alt="" src="LV.NOL.2021.12.3B.png" />{ width=300px }</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2021.12.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Pienemsim pretējo, ka $a+b$ un $a b+1$ abi dalās ar kādu pirmskaitli $p$. Tādā gadījumā reizinājums $\\left(a^{2}+b\\right)\\left(a+b^{2}\\right)=a^{3}+b^{3}+a^{2} b^{2}+a b=(a+b)\\left(a^{2}-a b+b^{2}\\right)+a b(a b+1)$ arī dalās ar $p$. Tā kā tas ir divu pirmskaitlu reizinājums, tad vai nu $a^{2}+b=p$, vai arī $a+b^{2}=p$. Taču gan $a^{2}+b>a+b$, gan
-
-$a+b^{2}>a+b$, bet tā kā $a+b$ dalās ar $p$, tad $a+b \\geq p-$ pretruna."""@lv ;
+Pieņemsim pretējo, ka $a+b$ un $ab+1$ abi dalās ar kādu pirmskaitli $p$. 
+Tādā gadījumā reizinājums 
+$\\left(a^{2}+b\\right)\\left(a+b^{2}\\right)=a^{3}+b^{3}+a^{2} b^{2}+a b=(a+b)\\left(a^{2}-a b+b^{2}\\right)+a b(a b+1)$ arī dalās ar $p$. 
+Tā kā tas ir divu pirmskaitļu reizinājums, tad vai nu $a^{2}+b=p$, 
+vai arī $a+b^{2}=p$. Taču gan $a^{2}+b>a+b$, gan
+$a+b^{2}>a+b$, bet tā kā $a+b$ dalās ar $p$, tad $a+b \\geq p$ - pretruna."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Pienemsim pretējo, ka $a+b$ un $a b+1$ abi dalās ar kādu pirmskaitli $p$. Tādā gadījumā reizinājums $\\left(a^{2}+b\\right)\\left(a+b^{2}\\right)=a^{3}+b^{3}+a^{2} b^{2}+a b=(a+b)\\left(a^{2}-a b+b^{2}\\right)+a b(a b+1)$ arī dalās ar $p$. Tā kā tas ir divu pirmskaitlu reizinājums, tad vai nu $a^{2}+b=p$, vai arī $a+b^{2}=p$. Taču gan $a^{2}+b&gt;a+b$, gan</p>
-<p>$a+b^{2}&gt;a+b$, bet tā kā $a+b$ dalās ar $p$, tad $a+b \\geq p-$ pretruna.</p>"""@lv .
+<p>Pieņemsim pretējo, ka $a+b$ un $ab+1$ abi dalās ar kādu pirmskaitli $p$. 
+Tādā gadījumā reizinājums 
+$\\left(a^{2}+b\\right)\\left(a+b^{2}\\right)=a^{3}+b^{3}+a^{2} b^{2}+a b=(a+b)\\left(a^{2}-a b+b^{2}\\right)+a b(a b+1)$ arī dalās ar $p$. 
+Tā kā tas ir divu pirmskaitļu reizinājums, tad vai nu $a^{2}+b=p$, 
+vai arī $a+b^{2}=p$. Taču gan $a^{2}+b&gt;a+b$, gan
+$a+b^{2}&gt;a+b$, bet tā kā $a+b$ dalās ar $p$, tad $a+b \\geq p$ - pretruna.</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2021.12.4.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-Tā kā $a^{2}+b$ ir pirmskaitlis, tad tas ir nepāra skaitlis (jo $a, b>1$ ), līdz ar to skaitliem $a$ un $b$ ir pretēja paritāte. Pienemsim pretējo, ka $a+b$ un $a b+1$ abi dalās ar kādu pirmskaitli $p$. Tā kā $a+b$ (un arī $a b+1$ ) ir nepāra skaitlis, tad $p$ ir nepāra pirmskaitlis ( $p \\geq 3$ ). Tā kā abi skaittli dalās ar $p$, tad arī to summa un starpība dalās ar $p$ :
+Tā kā $a^{2}+b$ ir pirmskaitlis, tad tas ir nepāra skaitlis 
+(jo $a, b>1$), līdz ar to skaitliem $a$ un $b$ ir pretēja paritāte. 
+Pienemsim pretējo, ka $a+b$ un $a b+1$ abi dalās ar kādu pirmskaitli 
+$p$. Tā kā $a+b$ (un arī $a b+1$ ) ir nepāra skaitlis, tad $p$ ir 
+nepāra pirmskaitlis ( $p \\geq 3$ ). Tā kā abi skaittli dalās ar $p$, 
+tad arī to summa un starpība dalās ar $p$:
 
-- $a b+1+a+b=(a+1)(b+1)$ dalās ar $p$;
-- $a b+1-(a+b)=(a-1)(b-1)$ dalās ar $p$.
+- $ab+1+a+b=(a+1)(b+1)$ dalās ar $p$;
+- $ab+1-(a+b)=(a-1)(b-1)$ dalās ar $p$.
 
-Pienemsim, ka $a+1$ dalās ar $p$ (otrs gadīums, kad $b+1$ dalās ar $p$, ir analoǵisks). Tad $a-1$ nedalās ar $p$, jo, ja dalītos, tad $(a+1)-(a-1)=2$ arī dalītos ar $p$. Tātad $b-1$ dalās ar $p$. Bet tādā gadījumā
+Pieņemsim, ka $a+1$ dalās ar $p$ (otrs gadīums, kad $b+1$ dalās ar $p$, 
+ir analoǵisks). Tad $a-1$ nedalās ar $p$, jo, ja dalītos, tad $(a+1)-(a-1)=2$ 
+arī dalītos ar $p$. Tātad $b-1$ dalās ar $p$. Bet tādā gadījumā
 
-$$
-b^{2}+a=(b-1)(b+1)+(a+1)=p \\cdot\\left((b+1) \\frac{b-1}{p}+\\frac{a+1}{p}\\right)
-$$
+$$b^{2}+a=(b-1)(b+1)+(a+1)=p \\cdot\\left((b+1) \\frac{b-1}{p}+\\frac{a+1}{p}\\right)$$
 
 nav pirmskaitlis - pretruna."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Tā kā $a^{2}+b$ ir pirmskaitlis, tad tas ir nepāra skaitlis (jo $a, b&gt;1$ ), līdz ar to skaitliem $a$ un $b$ ir pretēja paritāte. Pienemsim pretējo, ka $a+b$ un $a b+1$ abi dalās ar kādu pirmskaitli $p$. Tā kā $a+b$ (un arī $a b+1$ ) ir nepāra skaitlis, tad $p$ ir nepāra pirmskaitlis ( $p \\geq 3$ ). Tā kā abi skaittli dalās ar $p$, tad arī to summa un starpība dalās ar $p$ :</p>
+<p>Tā kā $a^{2}+b$ ir pirmskaitlis, tad tas ir nepāra skaitlis 
+(jo $a, b&gt;1$), līdz ar to skaitliem $a$ un $b$ ir pretēja paritāte. 
+Pienemsim pretējo, ka $a+b$ un $a b+1$ abi dalās ar kādu pirmskaitli 
+$p$. Tā kā $a+b$ (un arī $a b+1$ ) ir nepāra skaitlis, tad $p$ ir 
+nepāra pirmskaitlis ( $p \\geq 3$ ). Tā kā abi skaittli dalās ar $p$, 
+tad arī to summa un starpība dalās ar $p$:</p>
 <ul>
-<li>$a b+1+a+b=(a+1)(b+1)$ dalās ar $p$;</li>
-<li>$a b+1-(a+b)=(a-1)(b-1)$ dalās ar $p$.</li>
+<li>$ab+1+a+b=(a+1)(b+1)$ dalās ar $p$;</li>
+<li>$ab+1-(a+b)=(a-1)(b-1)$ dalās ar $p$.</li>
 </ul>
-<p>Pienemsim, ka $a+1$ dalās ar $p$ (otrs gadīums, kad $b+1$ dalās ar $p$, ir analoǵisks). Tad $a-1$ nedalās ar $p$, jo, ja dalītos, tad $(a+1)-(a-1)=2$ arī dalītos ar $p$. Tātad $b-1$ dalās ar $p$. Bet tādā gadījumā</p>
-<p>$$
-b^{2}+a=(b-1)(b+1)+(a+1)=p \\cdot\\left((b+1) \\frac{b-1}{p}+\\frac{a+1}{p}\\right)
-$$</p>
+<p>Pieņemsim, ka $a+1$ dalās ar $p$ (otrs gadīums, kad $b+1$ dalās ar $p$, 
+ir analoǵisks). Tad $a-1$ nedalās ar $p$, jo, ja dalītos, tad $(a+1)-(a-1)=2$ 
+arī dalītos ar $p$. Tātad $b-1$ dalās ar $p$. Bet tādā gadījumā</p>
+<p>$$b^{2}+a=(b-1)(b+1)+(a+1)=p \\cdot\\left((b+1) \\frac{b-1}{p}+\\frac{a+1}{p}\\right)$$</p>
 <p>nav pirmskaitlis - pretruna.</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2021.12.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Pieņemsim pretējo, ka kāda rinda vairs nav sakārtota augošā secībā. Aplūkosim pirmo nesakārtoto rindu, tās kārtas numuru apzīmēsim ar $i$. Tas nozīmē, ka visas rindas no pirmās līdz ( $i-1$ )-ajai ir sakārtotas, bet $i$-ā rinda nav sakārtota.
+Pieņemsim pretējo, ka kāda rinda vairs nav sakārtota augošā secībā. Aplūkosim 
+pirmo nesakārtoto rindu, tās kārtas numuru apzīmēsim ar $i$. Tas nozīmē, 
+ka visas rindas no pirmās līdz $(i-1)$-ajai ir sakārtotas, bet $i$-ā rinda nav sakārtota.
 
-Tātad šajā rindā ir divi tādi elementi $x_{i}$ un $y_{i}$, ka $x_{i}$ atrodas pa kreisi no $y_{i}$, bet $x_{i}>y_{i}$. Aplūkosim kolonnas $X$ un $Y$, kurās atrodas attiecīgi $x_{i}$ un $y_{i}$, apzīmēsim to elementus attiecīgi ar $x_{k}$ un $y_{k}(1 \\leq k \\leq n)$.
+Tātad šajā rindā ir divi tādi elementi $x_{i}$ un $y_{i}$, ka $x_{i}$ 
+atrodas pa kreisi no $y_{i}$, bet $x_{i}>y_{i}$. Aplūkosim kolonnas $X$ un $Y$, 
+kurās atrodas attiecīgi $x_{i}$ un $y_{i}$, apzīmēsim to elementus attiecīgi 
+ar $x_{k}$ un $y_{k}(1 \\leq k \\leq n)$.
 
-Tā kā visas iepriekšējās rindas ir sakārtotas, tad $x_{1}<y_{1}, x_{2}<y_{2}, \\ldots, x_{i-1}<y_{i-1}$ (bet $x_{i}>y_{i}$ ). Tā kā kolonnas ir sakārtotas, tad tas nozīmē, ka kolonnā $X$ ir tieši $(i-1)$ skaitlis $\\left(x_{1}, x_{2}, \\ldots, x_{i-1}\\right)$, kas ir mazāks nekā $y_{i}$. Bet katrs no $i$ skaitliem $y_{1}, y_{2}, \\ldots, y_{i}$ sākumā atradās vienā rindā ar kādu skaitli no kolonnas $X$, kas par to ir mazāks, tātad tādiem skaitļiem jābūt vismaz skaitā $i$ - pretruna.
+Tā kā visas iepriekšējās rindas ir sakārtotas, tad 
+$x_{1}<y_{1}, x_{2}<y_{2}, \\ldots, x_{i-1}<y_{i-1}$ (bet $x_{i}>y_{i}$). 
+Tā kā kolonnas ir sakārtotas, tad tas nozīmē, ka kolonnā $X$ ir tieši 
+$(i-1)$ skaitlis $\\left(x_{1}, x_{2}, \\ldots, x_{i-1}\\right)$, 
+kas ir mazāks nekā $y_{i}$. Bet katrs no $i$ skaitliem 
+$y_{1}, y_{2}, \\ldots, y_{i}$ sākumā atradās vienā rindā ar kādu 
+skaitli no kolonnas $X$, kas par to ir mazāks, tātad tādiem 
+skaitļiem jābūt vismaz skaitā $i$ - pretruna.
 
-Līdz ar to esam pierādījuši, ka arī pēc pārkārtošanas skaitli pa rindām ir sakārtoti augošā secībā."""@lv ;
+Līdz ar to esam pierādījuši, ka arī pēc pārkārtošanas skaitļi pa rindām 
+ir sakārtoti augošā secībā."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Pieņemsim pretējo, ka kāda rinda vairs nav sakārtota augošā secībā. Aplūkosim pirmo nesakārtoto rindu, tās kārtas numuru apzīmēsim ar $i$. Tas nozīmē, ka visas rindas no pirmās līdz ( $i-1$ )-ajai ir sakārtotas, bet $i$-ā rinda nav sakārtota.</p>
-<p>Tātad šajā rindā ir divi tādi elementi $x_{i}$ un $y_{i}$, ka $x_{i}$ atrodas pa kreisi no $y_{i}$, bet $x_{i}&gt;y_{i}$. Aplūkosim kolonnas $X$ un $Y$, kurās atrodas attiecīgi $x_{i}$ un $y_{i}$, apzīmēsim to elementus attiecīgi ar $x_{k}$ un $y_{k}(1 \\leq k \\leq n)$.</p>
-<p>Tā kā visas iepriekšējās rindas ir sakārtotas, tad $x_{1}&lt;y_{1}, x_{2}&lt;y_{2}, \\ldots, x_{i-1}<y_{i-1}$ (bet $x_{i}>y_{i}$ ). Tā kā kolonnas ir sakārtotas, tad tas nozīmē, ka kolonnā $X$ ir tieši $(i-1)$ skaitlis $\\left(x_{1}, x_{2}, \\ldots, x_{i-1}\\right)$, kas ir mazāks nekā $y_{i}$. Bet katrs no $i$ skaitliem $y_{1}, y_{2}, \\ldots, y_{i}$ sākumā atradās vienā rindā ar kādu skaitli no kolonnas $X$, kas par to ir mazāks, tātad tādiem skaitļiem jābūt vismaz skaitā $i$ - pretruna.</p>
-<p>Līdz ar to esam pierādījuši, ka arī pēc pārkārtošanas skaitli pa rindām ir sakārtoti augošā secībā.</p>"""@lv .
+<p>Pieņemsim pretējo, ka kāda rinda vairs nav sakārtota augošā secībā. Aplūkosim 
+pirmo nesakārtoto rindu, tās kārtas numuru apzīmēsim ar $i$. Tas nozīmē, 
+ka visas rindas no pirmās līdz $(i-1)$-ajai ir sakārtotas, bet $i$-ā rinda nav sakārtota.</p>
+<p>Tātad šajā rindā ir divi tādi elementi $x_{i}$ un $y_{i}$, ka $x_{i}$ 
+atrodas pa kreisi no $y_{i}$, bet $x_{i}&gt;y_{i}$. Aplūkosim kolonnas $X$ un $Y$, 
+kurās atrodas attiecīgi $x_{i}$ un $y_{i}$, apzīmēsim to elementus attiecīgi 
+ar $x_{k}$ un $y_{k}(1 \\leq k \\leq n)$.</p>
+<p>Tā kā visas iepriekšējās rindas ir sakārtotas, tad 
+$x_{1}&lt;y_{1}, x_{2}&lt;y_{2}, \\ldots, x_{i-1}<y_{i-1}$ (bet $x_{i}>y_{i}$). 
+Tā kā kolonnas ir sakārtotas, tad tas nozīmē, ka kolonnā $X$ ir tieši 
+$(i-1)$ skaitlis $\\left(x_{1}, x_{2}, \\ldots, x_{i-1}\\right)$, 
+kas ir mazāks nekā $y_{i}$. Bet katrs no $i$ skaitliem 
+$y_{1}, y_{2}, \\ldots, y_{i}$ sākumā atradās vienā rindā ar kādu 
+skaitli no kolonnas $X$, kas par to ir mazāks, tātad tādiem 
+skaitļiem jābūt vismaz skaitā $i$ - pretruna.</p>
+<p>Līdz ar to esam pierādījuši, ka arī pēc pārkārtošanas skaitļi pa rindām 
+ir sakārtoti augošā secībā.</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2021.12.5.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-Aplūkosim, kā iespējams veikt prasīto skaitlu sakārtošanu pa kolonnām, kārtošanas procesā nepazaudējot sakārtojumu pa rindām. Skaidrs, ka pēc visu kolonnu sakārtošanas pirmajā rindā katrā kolonnā jābūt šīs kolonnas vismazākajam skaitlim.
+Aplūkosim, kā iespējams veikt prasīto skaitļu sakārtošanu pa kolonnām, 
+kārtošanas procesā nepazaudējot sakārtojumu pa rindām. Skaidrs, 
+ka pēc visu kolonnu sakārtošanas pirmajā rindā katrā kolonnā 
+jābūt šīs kolonnas vismazākajam skaitlim.
 
 Aplūkojam sākotnējās tabulas pirmo kolonnu un atrodam tajā vismazāko skaitli.
 
 Pienemsim, ka mazākais skaitlis atrodas $K$-tajā rindā.
 
-Samainīsim vietām pirmo un $K$-to rindu (skat. 9. att.). Ja kolonnas mazākais skaitlis jau bija pirmajā rindā, tad šis solis ir jāizlaiž. Esam ieguvuši, ka pirmajā kolonnā mazākais skaitlis atrodas pirmajā rindā un visas rindas joprojām ir sakārtotas augoši (jo katras rindas saturs ir iepriekšējais - mainīta ir tikai to secība).
+Samainīsim vietām pirmo un $K$-to rindu (skat. 9. att.). Ja kolonnas 
+mazākais skaitlis jau bija pirmajā rindā, tad šis solis ir jāizlaiž. 
+Esam ieguvuši, ka pirmajā kolonnā mazākais skaitlis atrodas pirmajā 
+rindā un visas rindas joprojām ir sakārtotas augoši (jo katras rindas 
+saturs ir iepriekšējais - mainīta ir tikai to secība).
 
 ![](LV.NOL.2021.12.5A.png){ width=300px }
 
-Tagad aplūkojam otro kolonnu. Pieņemsim, ka mazākais skaitlis atrodas $L$-tajā rindā. Paņemsim 1. un $L$-tās rindas fragmentus no otrās kolonnas līdz beigām ( $M$-tajai kolonnai) un samainīsim vietām (skat. 10. att.).
+Tagad aplūkojam otro kolonnu. Pieņemsim, ka mazākais skaitlis atrodas 
+$L$-tajā rindā. Paņemsim 1. un $L$-tās rindas fragmentus no otrās 
+kolonnas līdz beigām ($M$-tajai kolonnai) un samainīsim vietām (skat. 10. att.).
 
 ![](LV.NOL.2021.12.5B.png){ width=300px }
 
-Pārliecināsimies, ka arī pēc šādas maiņas gan pirmā, gan $L$-tā rinda joprojām ir sakārtotas augoši.
+Pārliecināsimies, ka arī pēc šādas maiņas gan pirmā, gan $L$-tā rinda 
+joprojām ir sakārtotas augoši.
 
-Neatbilstība var rasties tikai starp rindas pirmo un otro skaitli - tālāk nekas netika mainīts. Pienemsim, ka pirms maiņas pirmās rindas pirmajā un otrajā kolonnā bija skaitļi $p_{1}$ un $p_{2}$, bet $L$-tajā - skaitļi $l_{1}$ un $l_{2}$. Šiem skaitļiem ir spēkā sakarības: $p_{1}<p_{2}$ un $l_{1}<l_{2}$ (sakārtojums pa rindām) un $p_{1}<l_{1}$ un $l_{2}<p_{2}$ (pirmo divu kolonnu mazākie skaitļi). Tātad ir spēkā arī $p_{1}<l_{2}$ un $l_{1}<p_{2}$, kas nozīmē, ka šo divu fragmentu samainīšana vietām saglabā sakārtojumu pa rindām.
+Neatbilstība var rasties tikai starp rindas pirmo un otro skaitli - 
+tālāk nekas netika mainīts. Pienemsim, ka pirms maiņas pirmās rindas 
+pirmajā un otrajā kolonnā bija skaitļi $p_{1}$ un $p_{2}$, bet $L$-tajā - 
+skaitļi $l_{1}$ un $l_{2}$. Šiem skaitļiem ir spēkā sakarības: 
+$p_{1}<p_{2}$ un $l_{1}<l_{2}$ (sakārtojums pa rindām) un 
+$p_{1}<l_{1}$ un $l_{2}<p_{2}$ (pirmo divu kolonnu mazākie skaitļi). 
+Tātad ir spēkā arī $p_{1}<l_{2}$ un $l_{1}<p_{2}$, kas nozīmē, 
+ka šo divu fragmentu samainīšana vietām saglabā sakārtojumu pa rindām.
 
-Analoǵiski panākam, ka pirmās rindas trešais, ceturtais, ..., $M$-tais skaitlis ir mazākie savā kolonnā, katru reizi samainot vietām rindu fragmentus no vajadzīgās kolonnas līdz rindas beigām, bet skaitļus kolonnās pa kreisi neaiztiekot.
+Analoǵiski panākam, ka pirmās rindas trešais, ceturtais, ..., 
+$M$-tais skaitlis ir mazākie savā kolonnā, katru reizi samainot 
+vietām rindu fragmentus no vajadzīgās kolonnas līdz rindas beigām, 
+bet skaitļus kolonnās pa kreisi neaiztiekot.
 
-Kad šādi pirmajā rindā augošā secībā esam izvietojuši kolonnu mazākos skaitļus, varam par šo rindu aizmirst un atkārtot tādu pašu sakārtošanas procesu par vienu rindu mazākai tabulai - tai, ko iegūstam paņemot tabulas rindas no otrās līdz $N$-tajai.
+Kad šādi pirmajā rindā augošā secībā esam izvietojuši kolonnu 
+mazākos skaitļus, varam par šo rindu aizmirst un atkārtot tādu 
+pašu sakārtošanas procesu par vienu rindu mazākai tabulai - tai, 
+ko iegūstam paņemot tabulas rindas no otrās līdz $N$-tajai.
 
-Kad šādi būsim tikuši līdz beigām (pēdējā posmā sakārtojot divas rindas), gan kolonnas, gan rindas būs sakārtotas augošā secībā. Tas nozīmē, ka arī pēc kolonnu sakārtošanas skaitļi tabulas rindās ir sakārtoti."""@lv ;
+Kad šādi būsim tikuši līdz beigām (pēdējā posmā sakārtojot 
+divas rindas), gan kolonnas, gan rindas būs sakārtotas augošā 
+secībā. Tas nozīmē, ka arī pēc kolonnu sakārtošanas skaitļi 
+tabulas rindās ir sakārtoti."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Aplūkosim, kā iespējams veikt prasīto skaitlu sakārtošanu pa kolonnām, kārtošanas procesā nepazaudējot sakārtojumu pa rindām. Skaidrs, ka pēc visu kolonnu sakārtošanas pirmajā rindā katrā kolonnā jābūt šīs kolonnas vismazākajam skaitlim.</p>
+<p>Aplūkosim, kā iespējams veikt prasīto skaitļu sakārtošanu pa kolonnām, 
+kārtošanas procesā nepazaudējot sakārtojumu pa rindām. Skaidrs, 
+ka pēc visu kolonnu sakārtošanas pirmajā rindā katrā kolonnā 
+jābūt šīs kolonnas vismazākajam skaitlim.</p>
 <p>Aplūkojam sākotnējās tabulas pirmo kolonnu un atrodam tajā vismazāko skaitli.</p>
 <p>Pienemsim, ka mazākais skaitlis atrodas $K$-tajā rindā.</p>
-<p>Samainīsim vietām pirmo un $K$-to rindu (skat. 9. att.). Ja kolonnas mazākais skaitlis jau bija pirmajā rindā, tad šis solis ir jāizlaiž. Esam ieguvuši, ka pirmajā kolonnā mazākais skaitlis atrodas pirmajā rindā un visas rindas joprojām ir sakārtotas augoši (jo katras rindas saturs ir iepriekšējais - mainīta ir tikai to secība).</p>
+<p>Samainīsim vietām pirmo un $K$-to rindu (skat. 9. att.). Ja kolonnas 
+mazākais skaitlis jau bija pirmajā rindā, tad šis solis ir jāizlaiž. 
+Esam ieguvuši, ka pirmajā kolonnā mazākais skaitlis atrodas pirmajā 
+rindā un visas rindas joprojām ir sakārtotas augoši (jo katras rindas 
+saturs ir iepriekšējais - mainīta ir tikai to secība).</p>
 <p><img alt="" src="LV.NOL.2021.12.5A.png" />{ width=300px }</p>
-<p>Tagad aplūkojam otro kolonnu. Pieņemsim, ka mazākais skaitlis atrodas $L$-tajā rindā. Paņemsim 1. un $L$-tās rindas fragmentus no otrās kolonnas līdz beigām ( $M$-tajai kolonnai) un samainīsim vietām (skat. 10. att.).</p>
+<p>Tagad aplūkojam otro kolonnu. Pieņemsim, ka mazākais skaitlis atrodas 
+$L$-tajā rindā. Paņemsim 1. un $L$-tās rindas fragmentus no otrās 
+kolonnas līdz beigām ($M$-tajai kolonnai) un samainīsim vietām (skat. 10. att.).</p>
 <p><img alt="" src="LV.NOL.2021.12.5B.png" />{ width=300px }</p>
-<p>Pārliecināsimies, ka arī pēc šādas maiņas gan pirmā, gan $L$-tā rinda joprojām ir sakārtotas augoši.</p>
-<p>Neatbilstība var rasties tikai starp rindas pirmo un otro skaitli - tālāk nekas netika mainīts. Pienemsim, ka pirms maiņas pirmās rindas pirmajā un otrajā kolonnā bija skaitļi $p_{1}$ un $p_{2}$, bet $L$-tajā - skaitļi $l_{1}$ un $l_{2}$. Šiem skaitļiem ir spēkā sakarības: $p_{1}&lt;p_{2}$ un $l_{1}&lt;l_{2}$ (sakārtojums pa rindām) un $p_{1}&lt;l_{1}$ un $l_{2}&lt;p_{2}$ (pirmo divu kolonnu mazākie skaitļi). Tātad ir spēkā arī $p_{1}&lt;l_{2}$ un $l_{1}&lt;p_{2}$, kas nozīmē, ka šo divu fragmentu samainīšana vietām saglabā sakārtojumu pa rindām.</p>
-<p>Analoǵiski panākam, ka pirmās rindas trešais, ceturtais, ..., $M$-tais skaitlis ir mazākie savā kolonnā, katru reizi samainot vietām rindu fragmentus no vajadzīgās kolonnas līdz rindas beigām, bet skaitļus kolonnās pa kreisi neaiztiekot.</p>
-<p>Kad šādi pirmajā rindā augošā secībā esam izvietojuši kolonnu mazākos skaitļus, varam par šo rindu aizmirst un atkārtot tādu pašu sakārtošanas procesu par vienu rindu mazākai tabulai - tai, ko iegūstam paņemot tabulas rindas no otrās līdz $N$-tajai.</p>
-<p>Kad šādi būsim tikuši līdz beigām (pēdējā posmā sakārtojot divas rindas), gan kolonnas, gan rindas būs sakārtotas augošā secībā. Tas nozīmē, ka arī pēc kolonnu sakārtošanas skaitļi tabulas rindās ir sakārtoti.</p>"""@lv .
+<p>Pārliecināsimies, ka arī pēc šādas maiņas gan pirmā, gan $L$-tā rinda 
+joprojām ir sakārtotas augoši.</p>
+<p>Neatbilstība var rasties tikai starp rindas pirmo un otro skaitli - 
+tālāk nekas netika mainīts. Pienemsim, ka pirms maiņas pirmās rindas 
+pirmajā un otrajā kolonnā bija skaitļi $p_{1}$ un $p_{2}$, bet $L$-tajā - 
+skaitļi $l_{1}$ un $l_{2}$. Šiem skaitļiem ir spēkā sakarības: 
+$p_{1}&lt;p_{2}$ un $l_{1}&lt;l_{2}$ (sakārtojums pa rindām) un 
+$p_{1}&lt;l_{1}$ un $l_{2}&lt;p_{2}$ (pirmo divu kolonnu mazākie skaitļi). 
+Tātad ir spēkā arī $p_{1}&lt;l_{2}$ un $l_{1}&lt;p_{2}$, kas nozīmē, 
+ka šo divu fragmentu samainīšana vietām saglabā sakārtojumu pa rindām.</p>
+<p>Analoǵiski panākam, ka pirmās rindas trešais, ceturtais, ..., 
+$M$-tais skaitlis ir mazākie savā kolonnā, katru reizi samainot 
+vietām rindu fragmentus no vajadzīgās kolonnas līdz rindas beigām, 
+bet skaitļus kolonnās pa kreisi neaiztiekot.</p>
+<p>Kad šādi pirmajā rindā augošā secībā esam izvietojuši kolonnu 
+mazākos skaitļus, varam par šo rindu aizmirst un atkārtot tādu 
+pašu sakārtošanas procesu par vienu rindu mazākai tabulai - tai, 
+ko iegūstam paņemot tabulas rindas no otrās līdz $N$-tajai.</p>
+<p>Kad šādi būsim tikuši līdz beigām (pēdējā posmā sakārtojot 
+divas rindas), gan kolonnas, gan rindas būs sakārtotas augošā 
+secībā. Tas nozīmē, ka arī pēc kolonnu sakārtošanas skaitļi 
+tabulas rindās ir sakārtoti.</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2021.5.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -3726,7 +4023,7 @@ Uzmanīgi lasot uzdevumā doto, ierakstam Eilera diagrammā informāciju (skat. 
 
 ![](LV.NOL.2021.6.1A.png){ width=200px }
 
-Aprēkināsim skaitli, kas jāieraksta daļā M (dalībnieku skaits, 
+Aprēķināsim skaitli, kas jāieraksta daļā M (dalībnieku skaits, 
 kuriem patīk tikai matemātika). Lai to izdarītu, no kopējā dalībnieku 
 skaita attiecīgi jāatņem dalībnieku skaits, kuriem
 
@@ -3737,7 +4034,7 @@ skaita attiecīgi jāatņem dalībnieku skaits, kuriem
 - patīk tikai vizuālā māksla;
 - patīk visi trīs priekšmeti.
 
-Tātad no 1243 jāatņem visi 5.att. redzamie plaknes daļās ierakstītie skaitlli:
+Tātad no $1243$ jāatņem visi 5.att. redzamie plaknes daļās ierakstītie skaitļi:
 
 $$M=1243-500-150-50-30-20-120=373$$
 
@@ -3746,7 +4043,7 @@ Līdz ar to esam ieguvuši, ka $373$ skolēniem patīk tikai matemātika."""@lv 
 <p>Uzzīmējam trīs riņkus, tie ilustrēs attiecīgi skolēnu skaitu, kam patīk konkrētie priekšmeti (matemātika, dabas zinības un vizuālā māksla). levērojam, ka ir dalas, kurā pārklājas divi riņki, un ir arī daļa, kurā pārklājas visi trīs ringi. Mums jānoskaidro, kas ierakstīts daļā M.</p>
 <p>Uzmanīgi lasot uzdevumā doto, ierakstam Eilera diagrammā informāciju (skat. 5. att. skait|us, kas ierakstīti ar melnu). Lai noskaidrotu, cik dalībniekiem patīk gan matemātika, gan dabas zinības, gan vizuālā māksla, no dalībnieku skaita, kam patīk dabas zinības jāatņem dalībnieku skaits, kam patīk tikai dabas zinības un dalībnieku skaits, kam patīk dabas zinības un vēl viens mācību priekšmets. Tātad gan matemātika, gan dabas zinības, gan vizuālā māksla patīk $700-30-500-50=120$ dalībniekiem (skat. 5. att. ierakstīts zaļā krāsā).</p>
 <p><img alt="" src="LV.NOL.2021.6.1A.png" />{ width=200px }</p>
-<p>Aprēkināsim skaitli, kas jāieraksta daļā M (dalībnieku skaits, 
+<p>Aprēķināsim skaitli, kas jāieraksta daļā M (dalībnieku skaits, 
 kuriem patīk tikai matemātika). Lai to izdarītu, no kopējā dalībnieku 
 skaita attiecīgi jāatņem dalībnieku skaits, kuriem</p>
 <ul>
@@ -3757,7 +4054,7 @@ skaita attiecīgi jāatņem dalībnieku skaits, kuriem</p>
 <li>patīk tikai vizuālā māksla;</li>
 <li>patīk visi trīs priekšmeti.</li>
 </ul>
-<p>Tātad no 1243 jāatņem visi 5.att. redzamie plaknes daļās ierakstītie skaitlli:</p>
+<p>Tātad no $1243$ jāatņem visi 5.att. redzamie plaknes daļās ierakstītie skaitļi:</p>
 <p>$$M=1243-500-150-50-30-20-120=373$$</p>
 <p>Līdz ar to esam ieguvuši, ka $373$ skolēniem patīk tikai matemātika.</p>"""@lv .
 
@@ -3836,10 +4133,10 @@ Sadalām visus ciparus četrās grupās:
 
 Ievērojam, ka, panemot no kādas grupas divus ciparus 
 (ja grupā ir vismaz divi cipari), 
-tad no šiem cipariem var izveidot divciparu skaitli, 
+tad no šiem cipariem var izveidot divciparu skaitli,
 kas dalās ar $7$.
 
-Līdz ar to, ja tiks izvilktas piecas kārtis, 
+Līdz ar to, ja tiks izvilktas piecas kārtis, ss
 tad pēc Dirihlē principa no 
 kādas grupas būs izvilktas vismaz divas kārtis un no 
 tām varēs izveidot uzdevumā prasīto skaitli.
@@ -3861,9 +4158,9 @@ Sadalām visus ciparus četrās grupās:</p>
 </ul>
 <p>Ievērojam, ka, panemot no kādas grupas divus ciparus 
 (ja grupā ir vismaz divi cipari), 
-tad no šiem cipariem var izveidot divciparu skaitli, 
+tad no šiem cipariem var izveidot divciparu skaitli,
 kas dalās ar $7$.</p>
-<p>Līdz ar to, ja tiks izvilktas piecas kārtis, 
+<p>Līdz ar to, ja tiks izvilktas piecas kārtis, ss
 tad pēc Dirihlē principa no 
 kādas grupas būs izvilktas vismaz divas kārtis un no 
 tām varēs izveidot uzdevumā prasīto skaitli.</p>
@@ -3879,9 +4176,12 @@ eliozo:SOLN.LV.NOL.2021.7.1.SUB0 a eliozo:Solution ;
 
 Nē, nevar.
 
-Tā kā divas funkcijas ir augošas un viena dilstoša, tad diviem no taišņu virziena koeficientiem $a, b, c$ ir jābūt pozitīiem un vienam negatīvam.
+Tā kā divas funkcijas ir augošas un viena dilstoša, tad diviem no taišņu 
+virziena koeficientiem $a, b, c$ ir jābūt pozitīiem un vienam negatīvam.
 
-Tā kā divas taisnes krusto $y$ asi punktā, kura ordināta ir pozitīva, bet viena krusto $y$ asi punktā, kura ordināta ir negatīva, tad no skaitliem $b,-c, a$ divi ir pozitīvi un viens ir negatīvs.
+Tā kā divas taisnes krusto $y$ asi punktā, kura ordināta ir pozitīva, 
+bet viena krusto $y$ asi punktā, kura ordināta ir negatīva, tad no skaitļiem 
+$b,-c, a$ divi ir pozitīvi un viens ir negatīvs.
 
 Apskatām iespējamos gadījumus.
 
@@ -3891,8 +4191,11 @@ Līdz ar to esam pamatojuši, ka dotās taisnes nevar atbilst
 uzdevumā dotajām formulām."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Nē, nevar.</p>
-<p>Tā kā divas funkcijas ir augošas un viena dilstoša, tad diviem no taišņu virziena koeficientiem $a, b, c$ ir jābūt pozitīiem un vienam negatīvam.</p>
-<p>Tā kā divas taisnes krusto $y$ asi punktā, kura ordināta ir pozitīva, bet viena krusto $y$ asi punktā, kura ordināta ir negatīva, tad no skaitliem $b,-c, a$ divi ir pozitīvi un viens ir negatīvs.</p>
+<p>Tā kā divas funkcijas ir augošas un viena dilstoša, tad diviem no taišņu 
+virziena koeficientiem $a, b, c$ ir jābūt pozitīiem un vienam negatīvam.</p>
+<p>Tā kā divas taisnes krusto $y$ asi punktā, kura ordināta ir pozitīva, 
+bet viena krusto $y$ asi punktā, kura ordināta ir negatīva, tad no skaitļiem 
+$b,-c, a$ divi ir pozitīvi un viens ir negatīvs.</p>
 <p>Apskatām iespējamos gadījumus.</p>
 <p><img alt="" src="LV.NOL.2021.7.1A.png" /></p>
 <p>Līdz ar to esam pamatojuši, ka dotās taisnes nevar atbilst 
@@ -3907,22 +4210,29 @@ eliozo:SOLN.LV.NOL.2021.7.2.SUB0 a eliozo:Solution ;
 **(B)** ITpaši ir visi skaitli, kas ir formā, piemēram, 
 $12n$, kur $n$ ir naturāls skaitlis, jo $12n = n+2n+3n+6n$.
 
-**(C)** Pienemsim pretējo, ka ir kāds īpašs nepāra skaitlis. 
+**(C)** Pieņemsim pretējo, ka ir kāds īpašs nepāra skaitlis. 
 Nepāra skaitlim visi tā dalītāji ir nepāra skaitli, bet četru 
-nepāra skait!u summa ir pāra skaitlis - pretruna."""@lv ;
+nepāra skaitļu summa ir pāra skaitlis - pretruna."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p><strong>(A)</strong> Īpašs skaitlis ir, piemēram, $12$, jo $12=1+2+3+6$.</p>
 <p><strong>(B)</strong> ITpaši ir visi skaitli, kas ir formā, piemēram, 
 $12n$, kur $n$ ir naturāls skaitlis, jo $12n = n+2n+3n+6n$.</p>
-<p><strong>(C)</strong> Pienemsim pretējo, ka ir kāds īpašs nepāra skaitlis. 
+<p><strong>(C)</strong> Pieņemsim pretējo, ka ir kāds īpašs nepāra skaitlis. 
 Nepāra skaitlim visi tā dalītāji ir nepāra skaitli, bet četru 
-nepāra skait!u summa ir pāra skaitlis - pretruna.</p>"""@lv .
+nepāra skaitļu summa ir pāra skaitlis - pretruna.</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2021.7.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Pareizi spēlējot, vienmēr var uzvarēt Karlsons. Viņš var izmantot simetriju. Ja Brālītis pirmajā gājienā apēd vienu gabalu, tad Karlsons arī apēd vienu gabalu, kas atrodas tieši pretējā pusē tā, ka atliek divi vienādi tortes gabalu "bloki" pa 5 gabaliem (skat. 9. att.). Bet, ja brālītis pirmajā gājienā apēd divus tortes gabalus, tad arī Karlsons apēd divus pretējā pusē tā, ka atliek divi vienādi gabalu bloki pa 4 gabaliem (skat. 10. att.).
+Pareizi spēlējot, vienmēr var uzvarēt Karlsons. Viņš var izmantot 
+simetriju. Ja Brālītis pirmajā gājienā apēd vienu gabalu, 
+tad Karlsons arī apēd vienu gabalu, kas atrodas tieši pretējā 
+pusē tā, ka atliek divi vienādi tortes gabalu "bloki" pa $5$ 
+gabaliem (skat. 9. att.). Bet, ja brālītis pirmajā gājienā 
+apēd divus tortes gabalus, tad arī Karlsons apēd divus pretējā 
+pusē tā, ka atliek divi vienādi gabalu bloki pa $4$ gabaliem 
+(skat. 10.att.).
 
 ![](LV.NOL.2021.7.3A.png){ width=250px }
 
@@ -3934,7 +4244,14 @@ var nodrošināt, ka tieši viņč apēdīs pēdējo tortes gabalu, jo,
 ja tortes gabalu varēs apēst Brālītis, tad arī Karlsons varēs 
 apēst simetrisko gabalu, kas atrodas otrā blokā."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Pareizi spēlējot, vienmēr var uzvarēt Karlsons. Viņš var izmantot simetriju. Ja Brālītis pirmajā gājienā apēd vienu gabalu, tad Karlsons arī apēd vienu gabalu, kas atrodas tieši pretējā pusē tā, ka atliek divi vienādi tortes gabalu "bloki" pa 5 gabaliem (skat. 9. att.). Bet, ja brālītis pirmajā gājienā apēd divus tortes gabalus, tad arī Karlsons apēd divus pretējā pusē tā, ka atliek divi vienādi gabalu bloki pa 4 gabaliem (skat. 10. att.).</p>
+<p>Pareizi spēlējot, vienmēr var uzvarēt Karlsons. Viņš var izmantot 
+simetriju. Ja Brālītis pirmajā gājienā apēd vienu gabalu, 
+tad Karlsons arī apēd vienu gabalu, kas atrodas tieši pretējā 
+pusē tā, ka atliek divi vienādi tortes gabalu "bloki" pa $5$ 
+gabaliem (skat. 9. att.). Bet, ja brālītis pirmajā gājienā 
+apēd divus tortes gabalus, tad arī Karlsons apēd divus pretējā 
+pusē tā, ka atliek divi vienādi gabalu bloki pa $4$ gabaliem 
+(skat. 10.att.).</p>
 <p><img alt="" src="LV.NOL.2021.7.3A.png" />{ width=250px }</p>
 <p>Tālākajā spēlē, ja Brālītis apēd vienu gabalu vai divus gabalus 
 no kāda bloka, tad Karlsonam jāapēd attiecīgi vienu vai divus 
@@ -4105,11 +4422,15 @@ eliozo:SOLN.LV.NOL.2021.8.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Pierādīsim, ka $B C=B D$.
+Pierādīsim, ka $BC=BD$.
 
-Atliekam uz taisnes $A D$ tādu punktu $G$, ka $A G=A B$ un $G D=A C$ (skat. 11. att.). Aplūkojam trijstūri $G A B$. Tas ir vienādmalu trijstūris, jo pēc konstrukcijas $A G=A B$ un pēc bisektrises definīcijas $\\Varangle G A B=60^{\\circ}$. Tātad $G B=A B$ un $\\Varangle A G B=60^{\\circ}$.
+Atliekam uz taisnes $AD$ tādu punktu $G$, ka $AG=AB$ un 
+$GD=AC$ (skat. 11. att.). Aplūkojam trijstūri $GAB$. 
+Tas ir vienādmalu trijstūris, jo pēc konstrukcijas $AG=AB$ 
+un pēc bisektrises definīcijas $\\Varangle GAB=60^{\\circ}$. 
+Tātad $GB=AB$ un $\\Varangle AGB=60^{\\circ}$.
 
-Ievērojam, ka $\\triangle C A B=\\triangle D G B$ pēc pazīmes m \\ell m :
+Ievērojam, ka $\\triangle CAB=\\triangle DGB$ pēc pazīmes $m \\ell m$:
 
 - $DG=CA$ pēc konstrukcijas,
 - $\\Varangle DGB=180^{\\circ}-\\Varangle AGB=120=\\Varangle CAB$,
@@ -4124,9 +4445,13 @@ Tātad trijstūris $BCD$ ir vienādmalu.
 
 ![](LV.NOL.2021.8.3A.png){ width=200px }"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Pierādīsim, ka $B C=B D$.</p>
-<p>Atliekam uz taisnes $A D$ tādu punktu $G$, ka $A G=A B$ un $G D=A C$ (skat. 11. att.). Aplūkojam trijstūri $G A B$. Tas ir vienādmalu trijstūris, jo pēc konstrukcijas $A G=A B$ un pēc bisektrises definīcijas $\\Varangle G A B=60^{\\circ}$. Tātad $G B=A B$ un $\\Varangle A G B=60^{\\circ}$.</p>
-<p>Ievērojam, ka $\\triangle C A B=\\triangle D G B$ pēc pazīmes m \\ell m :</p>
+<p>Pierādīsim, ka $BC=BD$.</p>
+<p>Atliekam uz taisnes $AD$ tādu punktu $G$, ka $AG=AB$ un 
+$GD=AC$ (skat. 11. att.). Aplūkojam trijstūri $GAB$. 
+Tas ir vienādmalu trijstūris, jo pēc konstrukcijas $AG=AB$ 
+un pēc bisektrises definīcijas $\\Varangle GAB=60^{\\circ}$. 
+Tātad $GB=AB$ un $\\Varangle AGB=60^{\\circ}$.</p>
+<p>Ievērojam, ka $\\triangle CAB=\\triangle DGB$ pēc pazīmes $m \\ell m$:</p>
 <ul>
 <li>$DG=CA$ pēc konstrukcijas,</li>
 <li>$\\Varangle DGB=180^{\\circ}-\\Varangle AGB=120=\\Varangle CAB$,</li>
@@ -4249,9 +4574,8 @@ E C^{2}=E D^{2}+C D^{2} \\\\
 x=\\frac{1}{4}
 \\end{gathered}$$
 
-
-
-Līdz ar to $S_{CED}=\\frac{1}{2} ED \\cdot CD=\\frac{1}{2}(1-x) \\cdot 1=\\frac{1}{2} \\cdot \\frac{3}{4}=\\frac{3}{8}$.
+Līdz ar to 
+$S_{CED}=\\frac{1}{2} ED \\cdot CD=\\frac{1}{2}(1-x) \\cdot 1=\\frac{1}{2} \\cdot \\frac{3}{4}=\\frac{3}{8}$.
 
 ![](LV.NOL.2021.9.3A.png){ width=150px }"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
@@ -4264,7 +4588,8 @@ E C^{2}=E D^{2}+C D^{2} \\
 4 x=1 \\
 x=\\frac{1}{4}
 \\end{gathered}$$</p>
-<p>Līdz ar to $S_{CED}=\\frac{1}{2} ED \\cdot CD=\\frac{1}{2}(1-x) \\cdot 1=\\frac{1}{2} \\cdot \\frac{3}{4}=\\frac{3}{8}$.</p>
+<p>Līdz ar to 
+$S_{CED}=\\frac{1}{2} ED \\cdot CD=\\frac{1}{2}(1-x) \\cdot 1=\\frac{1}{2} \\cdot \\frac{3}{4}=\\frac{3}{8}$.</p>
 <p><img alt="" src="LV.NOL.2021.9.3A.png" />{ width=150px }</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2021.9.4.SUB0 a eliozo:Solution ;
@@ -4434,30 +4759,30 @@ eliozo:SOLN.LV.NOL.2021TEST.5.18.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Ievērosim, ka, ja no svaru kausa abām pusēm mēs nonemsim vienādus 
+Ievērosim, ka, ja no svaru kausa abām pusēm mēs noņemsim vienādus 
 "komplektus", tad svari savu stāvokli nemainīs. 
-No pirmo svaru abām pusēm varam noņemt riņki un kvadrātu, smagākajā
-(kreisajā) kausā mums paliks riņkis, vieglākajā (labajā) trijstūris. 
-Tātad riņkis ir smagāks nekā trijstūris. 
+No pirmo svaru abām pusēm varam noņemt riņķi un kvadrātu, smagākajā
+(kreisajā) kausā mums paliks riņķis, vieglākajā (labajā) trijstūris. 
+Tātad riņķis ir smagāks nekā trijstūris. 
 
-Līdzīgi no otro svaru abām pusēm varam noņemt divus rinkkus, 
+Līdzīgi no otro svaru abām pusēm varam noņemt divus riņķus, 
 divus trijstūrus un divus kvadrātus. Smagākajā (labajā) 
 pusē paliks trijstūris, vieglākajā (kreisajā) kvadrāts. 
 Tātad trijstūris ir smagāks nekā kvadrāts. 
 
-Tā kā riņkis ir smagāks nekā trijstūris, kas savukārt ir smagāks nekā 
+Tā kā riņķis ir smagāks nekā trijstūris, kas savukārt ir smagāks nekā 
 kvadrāts, tad secinām, ka kvadrāts ir visvieglākais."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Ievērosim, ka, ja no svaru kausa abām pusēm mēs nonemsim vienādus 
+<p>Ievērosim, ka, ja no svaru kausa abām pusēm mēs noņemsim vienādus 
 "komplektus", tad svari savu stāvokli nemainīs. 
-No pirmo svaru abām pusēm varam noņemt riņki un kvadrātu, smagākajā
-(kreisajā) kausā mums paliks riņkis, vieglākajā (labajā) trijstūris. 
-Tātad riņkis ir smagāks nekā trijstūris. </p>
-<p>Līdzīgi no otro svaru abām pusēm varam noņemt divus rinkkus, 
+No pirmo svaru abām pusēm varam noņemt riņķi un kvadrātu, smagākajā
+(kreisajā) kausā mums paliks riņķis, vieglākajā (labajā) trijstūris. 
+Tātad riņķis ir smagāks nekā trijstūris. </p>
+<p>Līdzīgi no otro svaru abām pusēm varam noņemt divus riņķus, 
 divus trijstūrus un divus kvadrātus. Smagākajā (labajā) 
 pusē paliks trijstūris, vieglākajā (kreisajā) kvadrāts. 
 Tātad trijstūris ir smagāks nekā kvadrāts. </p>
-<p>Tā kā riņkis ir smagāks nekā trijstūris, kas savukārt ir smagāks nekā 
+<p>Tā kā riņķis ir smagāks nekā trijstūris, kas savukārt ir smagāks nekā 
 kvadrāts, tad secinām, ka kvadrāts ir visvieglākais.</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2021TEST.5.19.SUB0 a eliozo:Solution ;
@@ -4655,8 +4980,8 @@ tad varēsim secināt, ka divi trijstūri sver tikpat, cik $6$
 kvadrāti, jeb viens trijstūris sver 
 tikpat, cik trīs kvadrāti. 
 Tātad uz svariem Nr.4 labajā pusē esošo komplektu mēs varam aizstāt ar 
-trijstūris + riņķis + kvadrāts = 3 kvadrāti + 2 kvadrāti + kvadrāts 
-$=6$ kvadrāti $=3$ riņķi. 
+trijstūris + riņķis + kvadrāts = $3$ kvadrāti + $2$ kvadrāti + kvadrāts 
+= $6$ kvadrāti = $3$ riņķi. 
 
 *Piezīme.* Svari Nr.2 šajā spriedumā netika izmatoti, 
 tie pēc būtības tikai atkārto to, kas dots ar svariem Nr.1."""@lv ;
@@ -4668,8 +4993,8 @@ tad varēsim secināt, ka divi trijstūri sver tikpat, cik $6$
 kvadrāti, jeb viens trijstūris sver 
 tikpat, cik trīs kvadrāti. 
 Tātad uz svariem Nr.4 labajā pusē esošo komplektu mēs varam aizstāt ar 
-trijstūris + riņķis + kvadrāts = 3 kvadrāti + 2 kvadrāti + kvadrāts 
-$=6$ kvadrāti $=3$ riņķi. </p>
+trijstūris + riņķis + kvadrāts = $3$ kvadrāti + $2$ kvadrāti + kvadrāts 
+= $6$ kvadrāti = $3$ riņķi. </p>
 <p><em>Piezīme.</em> Svari Nr.2 šajā spriedumā netika izmatoti, 
 tie pēc būtības tikai atkārto to, kas dots ar svariem Nr.1.</p>"""@lv .
 
@@ -5124,7 +5449,7 @@ Katrā rūtinā varde var nonākt vai nu no kreisās puses,
 vai no apakšas, vai pa diagonāli no kreisās apakšējās puses. 
 Pieņemsim, ka rūtinā pa kreisi varde var nonākt $k$ veidos, 
 apakšējā rūtinā $-m$ veidos, bet rūtinā pa diagonāli kreisajā 
-pusē apakšā - $n$ veidos. Tad aplūkojamajā rūtinā varde var nonākt 
+pusē apakšā - $n$ veidos. Tad aplūkojamajā rūtiņā varde var nonākt 
 $k+m+n$ veidos. Līdz ar to, varam pakāpeniski aprēḳināt,
 cik veidos varde var nonākt katrā rūtinā, sākot no jautājuma zīmes 
 (kur tā var nonākt vienā veidā, jo tā jau tur ir).
@@ -5135,7 +5460,7 @@ cik veidos varde var nonākt katrā rūtinā, sākot no jautājuma zīmes
 vai no apakšas, vai pa diagonāli no kreisās apakšējās puses. 
 Pieņemsim, ka rūtinā pa kreisi varde var nonākt $k$ veidos, 
 apakšējā rūtinā $-m$ veidos, bet rūtinā pa diagonāli kreisajā 
-pusē apakšā - $n$ veidos. Tad aplūkojamajā rūtinā varde var nonākt 
+pusē apakšā - $n$ veidos. Tad aplūkojamajā rūtiņā varde var nonākt 
 $k+m+n$ veidos. Līdz ar to, varam pakāpeniski aprēḳināt,
 cik veidos varde var nonākt katrā rūtinā, sākot no jautājuma zīmes 
 (kur tā var nonākt vienā veidā, jo tā jau tur ir).</p>
@@ -5165,9 +5490,11 @@ eliozo:SOLN.LV.NOL.2021TEST.7.20.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Tā kā $45$ dalās ar $15$, bet nav skaitļa $15$ dalītājs, tad tas atrodas taisnstūrī, bet neatrodas aplī."""@lv ;
+Tā kā $45$ dalās ar $15$, bet nav skaitļa $15$ dalītājs, tad tas atrodas 
+taisnstūrī, bet neatrodas aplī."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Tā kā $45$ dalās ar $15$, bet nav skaitļa $15$ dalītājs, tad tas atrodas taisnstūrī, bet neatrodas aplī.</p>"""@lv .
+<p>Tā kā $45$ dalās ar $15$, bet nav skaitļa $15$ dalītājs, tad tas atrodas 
+taisnstūrī, bet neatrodas aplī.</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2021TEST.7.21.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -5185,12 +5512,10 @@ Attālums starp $A$ un $B$ ir $R+D+D+R=3D=24~\\mathrm{cm}$, kur $R$ ir riņķa l
 
 eliozo:SOLN.LV.NOL.2021TEST.7.22.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-
+    eliozo:solutionText """## Atrisinājumss
 
 Ievietojot $y=4$, iegūstam $3x=75$ jeb $x=25$."""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+    eliozo:solutionTextHtml """<h2>Atrisinājumss</h2>
 <p>Ievietojot $y=4$, iegūstam $3x=75$ jeb $x=25$.</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2021TEST.7.23.SUB0 a eliozo:Solution ;
@@ -5297,13 +5622,17 @@ eliozo:SOLN.LV.NOL.2021TEST.7.8.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Katru nākamo figūru var iegūt, iepriekšējai figūrai nonemot nost vienu leņkīti un pieliekot klāt trīs citus, tātad katrai nākamajai figūrai vajag par 2 lenkǐ̌ǐiem vairāk.
+Katru nākamo figūru var iegūt, iepriekšējai figūrai nonemot nost vienu 
+leņķīti un pieliekot klāt trīs citus, tātad katrai nākamajai figūrai vajag par $2$ 
+leņķīšiem vairāk.
 
 Figūru, kas sastāv no 35 rūtinām, var iegūt krustam ($5$ rūtiņas) pievienojot 
 $10$ stūrīšus (vēl $30$ rūtiņas). Tā kā krusta kontūru var salikt 
 no $6$ leņķīšiem, tad tai būs vajadzīgi $6+10 \\cdot 2=26$ leņķīši."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Katru nākamo figūru var iegūt, iepriekšējai figūrai nonemot nost vienu leņkīti un pieliekot klāt trīs citus, tātad katrai nākamajai figūrai vajag par 2 lenkǐ̌ǐiem vairāk.</p>
+<p>Katru nākamo figūru var iegūt, iepriekšējai figūrai nonemot nost vienu 
+leņķīti un pieliekot klāt trīs citus, tātad katrai nākamajai figūrai vajag par $2$ 
+leņķīšiem vairāk.</p>
 <p>Figūru, kas sastāv no 35 rūtinām, var iegūt krustam ($5$ rūtiņas) pievienojot 
 $10$ stūrīšus (vēl $30$ rūtiņas). Tā kā krusta kontūru var salikt 
 no $6$ leņķīšiem, tad tai būs vajadzīgi $6+10 \\cdot 2=26$ leņķīši.</p>"""@lv .

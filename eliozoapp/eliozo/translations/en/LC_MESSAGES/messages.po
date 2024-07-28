@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-07-15 10:59+0300\n"
+"POT-Creation-Date: 2024-07-28 22:20+0300\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -165,7 +165,7 @@ msgstr "Video"
 msgid "Problems with video-recorded solutions."
 msgstr "Problems with video-recorded solutions."
 
-#: templates/filter_content.html:204 templates/main_content.html:10
+#: templates/filter_content.html:204
 msgid "Search"
 msgstr "Search"
 
@@ -173,7 +173,7 @@ msgstr "Search"
 msgid "Pages"
 msgstr "Pages"
 
-#: templates/filter_content.html:222 templates/main_content.html:18
+#: templates/filter_content.html:222 templates/main_content.html:38
 msgid "More"
 msgstr "More"
 
@@ -201,13 +201,35 @@ msgstr "Concepts"
 msgid "References"
 msgstr "References"
 
-#: templates/main_content.html:5
-msgid "Math Olympiad Problems"
-msgstr "Math Olympiad Problems"
+#: templates/main_content.html:8
+msgid "Case Sensitive"
+msgstr "Case Sensitive"
 
 #: templates/main_content.html:9
-msgid "Text to Search"
-msgstr "Text to Search"
+msgid "Regular Expresion"
+msgstr "Regular Expression"
+
+#: templates/main_content.html:12
+msgid "All"
+msgstr "All"
+
+#: templates/main_content.html:13
+#, fuzzy
+msgid "Questions"
+msgstr "Question"
+
+#: templates/main_content.html:14
+#, fuzzy
+msgid "Solutions"
+msgstr "Solution"
+
+#: templates/main_content.html:15
+msgid "Hints"
+msgstr "Hints"
+
+#: templates/main_content.html:16
+msgid "Formulas"
+msgstr "Formulas"
 
 #~ msgid "Olympiad"
 #~ msgstr "Olympiad"
@@ -223,4 +245,10 @@ msgstr "Text to Search"
 
 #~ msgid "No video"
 #~ msgstr "No video"
+
+#~ msgid "Math Olympiad Problems"
+#~ msgstr "Math Olympiad Problems"
+
+#~ msgid "Text to Search"
+#~ msgstr "Text to Search"
 

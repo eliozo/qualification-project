@@ -1,1917 +1,1448 @@
 @prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.10.1.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
-    eliozo:problemID "LV.VOL.2020.10.1." ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.10.1..SUB0 ;
-    eliozo:problemText """Pierādīt, ka visus naturālos skaitļus, kas lielāki nekā $100$, var izteikt kā 
-pirmskaitļa un salikta skaitļa summu!"""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka visus naturālos skaitļus, kas lielāki nekā $100$, var izteikt kā 
-pirmskaitļa un salikta skaitļa summu!</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.10.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.10.1.SUB0 ;
+    eliozo:problemText """Pierādīt, ka skaitlim $2019^{3}+2020^{3}+2021^{3}$ ir vismaz $20$ dažādi
+pozitīvi dalītāji!"""@lv ;
+    eliozo:problemTextHtml """<p>Pierādīt, ka skaitlim $2019^{3}+2020^{3}+2021^{3}$ ir vismaz $20$ dažādi
+pozitīvi dalītāji!</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.10.1" ;
-    eliozo:suggestedGrade 1 .
+    eliozo:suffix "LV.VOL.2020.10" ;
+    eliozo:suggestedGrade 10 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.10.2.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
-    eliozo:problemID "LV.VOL.2020.10.2." ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2020.10.2A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.10.2..SUB0 ;
-    eliozo:problemText """Izliekta četrstūra $ABCD$ diagonāle $AC$ ir leņķa $A$ bisektrise, $AC=AD$ un 
-$\\sphericalangle B=90^{\\circ}$. Trijstūrī $ADC$ novilkts augstums $DH$. 
-Pierādīt, ka taisne $BH$ sadala nogriezni $CD$ uz pusēm!"""@lv ;
-    eliozo:problemTextHtml """<p>Izliekta četrstūra $ABCD$ diagonāle $AC$ ir leņķa $A$ bisektrise, $AC=AD$ un 
-$\\sphericalangle B=90^{\\circ}$. Trijstūrī $ADC$ novilkts augstums $DH$. 
-Pierādīt, ka taisne $BH$ sadala nogriezni $CD$ uz pusēm!</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.10.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.10.2.SUB0,
+        eliozo:SOLN.LV.VOL.2020.10.2.SUB1 ;
+    eliozo:problemText "Zināms, ka $x^{2}+y^{2}+xy=3$. Kāda var būt $x+y$ vērtība?"@lv ;
+    eliozo:problemTextHtml "<p>Zināms, ka $x^{2}+y^{2}+xy=3$. Kāda var būt $x+y$ vērtība?</p>"@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.10.2" ;
-    eliozo:suggestedGrade 2 .
+    eliozo:suffix "LV.VOL.2020.10" ;
+    eliozo:suggestedGrade 10 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.10.3.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
-    eliozo:problemID "LV.VOL.2020.10.3." ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.10.3..SUB0 ;
-    eliozo:problemText """Pierādīt, ka nevienai naturālai $n$ vērtībai izteiksmes $13^{n}+7^{n}+2019$ 
-vērtība nav naturāla skaitļa kvadrāts!"""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka nevienai naturālai $n$ vērtībai izteiksmes $13^{n}+7^{n}+2019$ 
-vērtība nav naturāla skaitļa kvadrāts!</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.10.3" ;
+    eliozo:problemImage eliozo:IMG.LV.VOL.2020.10.3A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.10.3.SUB0 ;
+    eliozo:problemText """Taisnleņķa trijstūrī $ABC$, kurā $\\sphericalangle ABC=90^{\\circ}$,
+novilkts augstums $BD$, nogriežņa $BD$ viduspunkts ir $E$. Punkti $F$ un $G$
+ir attiecīgi nogriežņu $AD$ un $CD$ viduspunkti. Pierādīt, ka
+$\\sphericalangle AEC+\\sphericalangle FBG=180^{\\circ}$."""@lv ;
+    eliozo:problemTextHtml """<p>Taisnleņķa trijstūrī $ABC$, kurā $\\sphericalangle ABC=90^{\\circ}$,
+novilkts augstums $BD$, nogriežņa $BD$ viduspunkts ir $E$. Punkti $F$ un $G$
+ir attiecīgi nogriežņu $AD$ un $CD$ viduspunkti. Pierādīt, ka
+$\\sphericalangle AEC+\\sphericalangle FBG=180^{\\circ}$.</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.10.3" ;
-    eliozo:suggestedGrade 3 .
+    eliozo:suffix "LV.VOL.2020.10" ;
+    eliozo:suggestedGrade 10 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.10.4.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
-    eliozo:problemID "LV.VOL.2020.10.4." ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2020.10.4A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.10.4..SUB0 ;
-    eliozo:problemText """Komisijā ir $7$ cilvēki. lerodoties uz sēdi, daži no viņiem sarokojas. Kāds ir 
-mazākais iespējamais sarokošanos skaits, lai no katriem trim komisijas 
-locekļiem varētu atrast divus, kas savā starpā sarokojušies?"""@lv ;
-    eliozo:problemTextHtml """<p>Komisijā ir $7$ cilvēki. lerodoties uz sēdi, daži no viņiem sarokojas. Kāds ir 
-mazākais iespējamais sarokošanos skaits, lai no katriem trim komisijas 
-locekļiem varētu atrast divus, kas savā starpā sarokojušies?</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.10.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.10.4.SUB0 ;
+    eliozo:problemText "Aplūkojam skaitlu virkni $7 ; 737 ; 73737 ; 7373737 ; \\ldots$, kuras pirmais loceklis ir 7 un katru nākamo iegūst, iepriekšējam pierakstot galā 37. Pierādīt, ka neviens šīs virknes loceklis nedalās ar 17."@lv ;
+    eliozo:problemTextHtml "<p>Aplūkojam skaitlu virkni $7 ; 737 ; 73737 ; 7373737 ; \\ldots$, kuras pirmais loceklis ir 7 un katru nākamo iegūst, iepriekšējam pierakstot galā 37. Pierādīt, ka neviens šīs virknes loceklis nedalās ar 17.</p>"@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.10.4" ;
-    eliozo:suggestedGrade 4 .
+    eliozo:suffix "LV.VOL.2020.10" ;
+    eliozo:suggestedGrade 10 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.10.5.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
-    eliozo:problemID "LV.VOL.2020.10.5." ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.10.5..SUB0 ;
-    eliozo:problemText """Dots, ka $0 \\leq a_{1} \\leq a_{2} \\leq \\cdots \\leq a_{1000}$ un 
-$a_{1}+a_{2}+\\cdots+a_{1000}=1$. Pierādīt, ja $n$ ir naturāls skaitlis un 
-$1 \\leq n \\leq 1000$, tad 
-$\\frac{a_{1}+a_{2}+\\cdots+a_{n}}{n} \\leq \\frac{1}{1000}$"""@lv ;
-    eliozo:problemTextHtml """<p>Dots, ka $0 \\leq a_{1} \\leq a_{2} \\leq \\cdots \\leq a_{1000}$ un 
-$a_{1}+a_{2}+\\cdots+a_{1000}=1$. Pierādīt, ja $n$ ir naturāls skaitlis un 
-$1 \\leq n \\leq 1000$, tad 
-$\\frac{a_{1}+a_{2}+\\cdots+a_{n}}{n} \\leq \\frac{1}{1000}$</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.10.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.10.5.SUB0 ;
+    eliozo:problemText "Dotas četras pēc ārējā izskata vienādas monētas, katras monētas masa ir 20 g vai 21 g . Kā noteikt katras monētas masu ar trīs svēršanām uz elektroniskajiem svariem, kas rāda uz svariem uzlikto monētu kopējo masu?"@lv ;
+    eliozo:problemTextHtml "<p>Dotas četras pēc ārējā izskata vienādas monētas, katras monētas masa ir 20 g vai 21 g . Kā noteikt katras monētas masu ar trīs svēršanām uz elektroniskajiem svariem, kas rāda uz svariem uzlikto monētu kopējo masu?</p>"@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.10.5" ;
-    eliozo:suggestedGrade 5 .
+    eliozo:suffix "LV.VOL.2020.10" ;
+    eliozo:suggestedGrade 10 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.11.1.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.VOL.2020.11.1." ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.11.1..SUB0 ;
-    eliozo:problemText """Kādā valstī ir $100$ pilsētas. Starp dažām no tām organizēti avioreisi. Starp 
-katrām divām pilsētām ir augstākais viens reiss. Katrs reiss savieno tikai $2$ 
-pilsētas, pa ceļam nenolaižoties citās. Katrs reiss „darbojas" abos virzienos. 
-Reisus organizē $90$ aviokompānijas, katra aviokompānija organizē tieši $30$ 
-reisus. Ja kompānija organizē reisu starp kādām divām pilsētām (apzīmēsim tās 
-ar $A$ un $B$), tad tai ir biroji gan pilsētā $A$, gan pilsētā $B$. Pierādīt, 
-ka ir tāda pilsēta, kurā ir vismaz $9$ biroji!"""@lv ;
-    eliozo:problemTextHtml """<p>Kādā valstī ir $100$ pilsētas. Starp dažām no tām organizēti avioreisi. Starp 
-katrām divām pilsētām ir augstākais viens reiss. Katrs reiss savieno tikai $2$ 
-pilsētas, pa ceļam nenolaižoties citās. Katrs reiss „darbojas" abos virzienos. 
-Reisus organizē $90$ aviokompānijas, katra aviokompānija organizē tieši $30$ 
-reisus. Ja kompānija organizē reisu starp kādām divām pilsētām (apzīmēsim tās 
-ar $A$ un $B$), tad tai ir biroji gan pilsētā $A$, gan pilsētā $B$. Pierādīt, 
-ka ir tāda pilsēta, kurā ir vismaz $9$ biroji!</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.11.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.11.1.SUB0,
+        eliozo:SOLN.LV.VOL.2020.11.1.SUB1 ;
+    eliozo:problemText "Dota funkcija $f(x)=m x^{2}+(m-1) x+\\frac{2020}{m-2019}$. Ar kādām parametra $m$ vērtībām funkcija ir augoša intervālā $(1 ; 2)$ ?"@lv ;
+    eliozo:problemTextHtml "<p>Dota funkcija $f(x)=m x^{2}+(m-1) x+\\frac{2020}{m-2019}$. Ar kādām parametra $m$ vērtībām funkcija ir augoša intervālā $(1 ; 2)$ ?</p>"@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.11.1" ;
-    eliozo:suggestedGrade 1 .
+    eliozo:suffix "LV.VOL.2020.11" ;
+    eliozo:suggestedGrade 11 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.11.2.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.VOL.2020.11.2." ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2020.11.2A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.11.2..SUB0 ;
-    eliozo:problemText """Ap četrstūri $ABCD$ apvilkta riņķa līnija. Taisne, kas ir paralēla $BC$ un iet 
-caur $D$, krusto nogriezni $AC$ punktā $M$. Taisne, kas ir paralēla $AB$ un iet
-caur punktu $D$, krusto nogriezni $AC$ punktā $N$. Pierādīt, ka riņķa līnijas, 
-kas apvilktas ap trijstūriem $AMD$ un $DNC$, pieskaras viena otrai!"""@lv ;
-    eliozo:problemTextHtml """<p>Ap četrstūri $ABCD$ apvilkta riņķa līnija. Taisne, kas ir paralēla $BC$ un iet 
-caur $D$, krusto nogriezni $AC$ punktā $M$. Taisne, kas ir paralēla $AB$ un iet
-caur punktu $D$, krusto nogriezni $AC$ punktā $N$. Pierādīt, ka riņķa līnijas, 
-kas apvilktas ap trijstūriem $AMD$ un $DNC$, pieskaras viena otrai!</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.11.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.11.2.SUB0 ;
+    eliozo:problemText """Aplūkojam virkni $1 ; 2 ; 2 ; 3 ; 3 ; 3 ; 4 ; 4 ; 4 ; 4 ; 5 ; 5 ; 5 ; 5 ; 5 ; 6 ; 6 ; 6 ; 6 ; 6 ; 6 ; \\ldots$, kurā katrs naturālais skaitlis $k$ tiek atkārtots $k$ reizes. Pierādīt, ka šīs virknes $n$-to locekli var aprēkināt pēc formulas $\\left[\\sqrt{2 n}+\\frac{1}{2}\\right]$.
+
+$\\operatorname{Ar}[x]$ apzīmējam skaitļa veselo daļu, tas ir, lielāko veselo skaitli, kas nepārsniedz $x$. Piemēram, $[3,1]=3,[17]=17$, $[6,99]=6$."""@lv ;
+    eliozo:problemTextHtml """<p>Aplūkojam virkni $1 ; 2 ; 2 ; 3 ; 3 ; 3 ; 4 ; 4 ; 4 ; 4 ; 5 ; 5 ; 5 ; 5 ; 5 ; 6 ; 6 ; 6 ; 6 ; 6 ; 6 ; \\ldots$, kurā katrs naturālais skaitlis $k$ tiek atkārtots $k$ reizes. Pierādīt, ka šīs virknes $n$-to locekli var aprēkināt pēc formulas $\\left[\\sqrt{2 n}+\\frac{1}{2}\\right]$.</p>
+<p>$\\operatorname{Ar}[x]$ apzīmējam skaitļa veselo daļu, tas ir, lielāko veselo skaitli, kas nepārsniedz $x$. Piemēram, $[3,1]=3,[17]=17$, $[6,99]=6$.</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.11.2" ;
-    eliozo:suggestedGrade 2 .
+    eliozo:suffix "LV.VOL.2020.11" ;
+    eliozo:suggestedGrade 11 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.11.3.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.VOL.2020.11.3." ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.11.3..SUB0 ;
-    eliozo:problemText """Pierādīt, ka nevienai naturālai $n$ vērtībai izteiksmes 
-$13^{n}+10^{n}+7^{n}+3^{n}$ vērtība nav naturāla skaitļa kvadrāts!"""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka nevienai naturālai $n$ vērtībai izteiksmes 
-$13^{n}+10^{n}+7^{n}+3^{n}$ vērtība nav naturāla skaitļa kvadrāts!</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.11.3" ;
+    eliozo:problemImage <http://www.dudajevagatve.lv/eliozo#IMG.https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-06.jpg?height=454&width=462&top_left_y=586&top_left_x=823> ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.11.3.SUB0 ;
+    eliozo:problemText "Četrstūris $A B C D$ ievilkts riņka līnijā. Pierādīt, ka trijstūros $A B C, B C D, C D A, D A B$ ievilkto riņka līniju centri ir taisnstūra virsotnes!"@lv ;
+    eliozo:problemTextHtml "<p>Četrstūris $A B C D$ ievilkts riņka līnijā. Pierādīt, ka trijstūros $A B C, B C D, C D A, D A B$ ievilkto riņka līniju centri ir taisnstūra virsotnes!</p>"@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.11.3" ;
-    eliozo:suggestedGrade 3 .
+    eliozo:suffix "LV.VOL.2020.11" ;
+    eliozo:suggestedGrade 11 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.11.4.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.VOL.2020.11.4." ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.11.4..SUB0 ;
-    eliozo:problemText """Naturālu skaitļu virknes pirmie divi locekļi ir $a_{1}$ un $a_{2}$, turklāt 
-$a_{2}>a_{1}$. Katru nākamo virknes locekli, sākot ar trešo, aprēķina pēc 
-formulas $a_{i}=a_{i-1}+a_{i-2}$. Kādai lielākajai indeksa $i$ vērtībai $a_{i}$
-var būt vienāds ar $100a_{1}$?"""@lv ;
-    eliozo:problemTextHtml """<p>Naturālu skaitļu virknes pirmie divi locekļi ir $a_{1}$ un $a_{2}$, turklāt 
-$a_{2}&gt;a_{1}$. Katru nākamo virknes locekli, sākot ar trešo, aprēķina pēc 
-formulas $a_{i}=a_{i-1}+a_{i-2}$. Kādai lielākajai indeksa $i$ vērtībai $a_{i}$
-var būt vienāds ar $100a_{1}$?</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.11.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.11.4.SUB0 ;
+    eliozo:problemText "Zināms, ka trīsciparu skaitlis $\\overline{a b c}$ ir pirmskaitlis un ka vienādojumam $a x^{2}+b x+c=0$ ir divas reālas saknes. Vai var gadīties, ka šīs saknes ir a) veseli skaitli, b) racionāli skaitlii?"@lv ;
+    eliozo:problemTextHtml "<p>Zināms, ka trīsciparu skaitlis $\\overline{a b c}$ ir pirmskaitlis un ka vienādojumam $a x^{2}+b x+c=0$ ir divas reālas saknes. Vai var gadīties, ka šīs saknes ir a) veseli skaitli, b) racionāli skaitlii?</p>"@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.11.4" ;
-    eliozo:suggestedGrade 4 .
+    eliozo:suffix "LV.VOL.2020.11" ;
+    eliozo:suggestedGrade 11 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.11.5.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.VOL.2020.11.5." ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2020.11.5A.png,
-        eliozo:IMG.LV.VOL.2020.11.5B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.11.5..SUB0 ;
-    eliozo:problemText """Koordinātu plaknē doti **a)** $8$; **b)** $9$ punkti, katram no tiem 
-koordinātas ir veseli skaitļi. Zināms, ka nekādi trīs punkti neatrodas uz 
-vienas taisnes. Vai noteikti var atrast tādus trīs punktus, ka trijstūrim ar 
-virsotnēm šajos punktos mediānu krustpunkta koordinātas arī ir veseli skaitļi?"""@lv ;
-    eliozo:problemTextHtml """<p>Koordinātu plaknē doti <strong>a)</strong> $8$; <strong>b)</strong> $9$ punkti, katram no tiem 
-koordinātas ir veseli skaitļi. Zināms, ka nekādi trīs punkti neatrodas uz 
-vienas taisnes. Vai noteikti var atrast tādus trīs punktus, ka trijstūrim ar 
-virsotnēm šajos punktos mediānu krustpunkta koordinātas arī ir veseli skaitļi?</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.11.5" ;
+    eliozo:problemImage <http://www.dudajevagatve.lv/eliozo#IMG.https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-07.jpg?height=237&width=215&top_left_y=1193&top_left_x=955> ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.11.5.SUB0 ;
+    eliozo:problemText "Atrast lielāko naturālo skaitli $N$, kuram ir spēkā īpašība: lai kuras $N$ rūtinas būtu aizkrāsotas $4 \\times 4$ rūtinu tabulā, vienmēr varēs izvēlēties divas rindas un divas kolonnas tā, ka katra aizkrāsotā rūtina atrodas vai nu izvēlētajā rindā, vai izvēlētajā kolonnā (vai abās)."@lv ;
+    eliozo:problemTextHtml "<p>Atrast lielāko naturālo skaitli $N$, kuram ir spēkā īpašība: lai kuras $N$ rūtinas būtu aizkrāsotas $4 \\times 4$ rūtinu tabulā, vienmēr varēs izvēlēties divas rindas un divas kolonnas tā, ka katra aizkrāsotā rūtina atrodas vai nu izvēlētajā rindā, vai izvēlētajā kolonnā (vai abās).</p>"@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.11.5" ;
-    eliozo:suggestedGrade 5 .
+    eliozo:suffix "LV.VOL.2020.11" ;
+    eliozo:suggestedGrade 11 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.12.1.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.VOL.2020.12.1." ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.12.1..SUB0,
-        eliozo:SOLN.LV.VOL.2020.12.1..SUB1 ;
-    eliozo:problemText """Vienādojumam $x^{3}-px+2019=0$, kur $p$ - naturāls skaitlis, ir trīs reālas 
-saknes $x_{1}, x_{2}, x_{3}$. Kāda var būt izteiksmes 
-$x_{1}^{3}+x_{2}^{3}+x_{3}^{3}$ vērtība?"""@lv ;
-    eliozo:problemTextHtml """<p>Vienādojumam $x^{3}-px+2019=0$, kur $p$ - naturāls skaitlis, ir trīs reālas 
-saknes $x_{1}, x_{2}, x_{3}$. Kāda var būt izteiksmes 
-$x_{1}^{3}+x_{2}^{3}+x_{3}^{3}$ vērtība?</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.12.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.12.1.SUB0 ;
+    eliozo:problemText "G̣eometriskās progresijas pirmais, desmitais un 2020 -ais loceklis ir naturāls skaitlis. Vai noteikti arī tās 2019 -ais loceklis ir naturāls skaitlis?"@lv ;
+    eliozo:problemTextHtml "<p>G̣eometriskās progresijas pirmais, desmitais un 2020 -ais loceklis ir naturāls skaitlis. Vai noteikti arī tās 2019 -ais loceklis ir naturāls skaitlis?</p>"@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.12.1" ;
-    eliozo:suggestedGrade 1 .
+    eliozo:suffix "LV.VOL.2020.12" ;
+    eliozo:suggestedGrade 12 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.12.2.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.VOL.2020.12.2." ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2020.12.2A.png,
-        eliozo:IMG.LV.VOL.2020.12.2B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.12.2..SUB0,
-        eliozo:SOLN.LV.VOL.2020.12.2..SUB1 ;
-    eliozo:problemText """Riņķa līnijā ar centru punktā $O$ novilkta horda $AB$, kas neiet caur $O$. Caur
-punktu $B$ novilkts perpendikuls pret $AB$, kas riņķa līniju vēlreiz krusto 
-punktā $D$. Uz loka $AB$, kuram nepieder $D$, atzīmēts šī loka viduspunkts $C$.
-Taisnes $AC$ un $DB$ krustojas punktā $E$. Pierādīt, ka 
-$OE^{2}=OB^{2}+2 \\cdot OB \\cdot BE$."""@lv ;
-    eliozo:problemTextHtml """<p>Riņķa līnijā ar centru punktā $O$ novilkta horda $AB$, kas neiet caur $O$. Caur
-punktu $B$ novilkts perpendikuls pret $AB$, kas riņķa līniju vēlreiz krusto 
-punktā $D$. Uz loka $AB$, kuram nepieder $D$, atzīmēts šī loka viduspunkts $C$.
-Taisnes $AC$ un $DB$ krustojas punktā $E$. Pierādīt, ka 
-$OE^{2}=OB^{2}+2 \\cdot OB \\cdot BE$.</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.12.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.12.2.SUB0 ;
+    eliozo:problemText "Noteikt izteiksmes $(x+y+z)\\left(\\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}\\right)$ vislielāko un vismazāko vēttību, ja $1 \\leq x, y, z \\leq 2020$."@lv ;
+    eliozo:problemTextHtml "<p>Noteikt izteiksmes $(x+y+z)\\left(\\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}\\right)$ vislielāko un vismazāko vēttību, ja $1 \\leq x, y, z \\leq 2020$.</p>"@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.12.2" ;
-    eliozo:suggestedGrade 2 .
+    eliozo:suffix "LV.VOL.2020.12" ;
+    eliozo:suggestedGrade 12 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.12.3.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.VOL.2020.12.3." ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.12.3..SUB0 ;
-    eliozo:problemText """Pierādīt, ka nevienai naturālai $n$ vērtībai izteiksmes
-
-$$4^{n}+5^{n}+6^{n}+7^{n}+8^{n}+9^{n}+10^{n}+11^{n}+12^{n}+13^{n}$$
-
-vērtība nav naturāla skaitļa kvadrāts!"""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka nevienai naturālai $n$ vērtībai izteiksmes</p>
-<p>$$4^{n}+5^{n}+6^{n}+7^{n}+8^{n}+9^{n}+10^{n}+11^{n}+12^{n}+13^{n}$$</p>
-<p>vērtība nav naturāla skaitļa kvadrāts!</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.12.3" ;
+    eliozo:problemImage <http://www.dudajevagatve.lv/eliozo#IMG.https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-08.jpg?height=500&width=638&top_left_y=1555&top_left_x=771> ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.12.3.SUB0 ;
+    eliozo:problemText "Riņka līnijā $\\omega$ ievilkta vienādsānu trapece $A B C D$, punkts $H$ ir garākā pamata $A B$ viduspunkts. Punkts $M$ ir viduspunkts tam lokam $A B$, kas nesatur punktus $C$ un $D$. Taisnes $C D$ un $A M$ krustojas punktā $X$. Zināms, ka nogriežņi $H X, D M$ un $A C$ krustojas vienā punktā $Y$ un $D M=A C$. Pierādīt, ka $A B^{2}=2 C D^{2}$."@lv ;
+    eliozo:problemTextHtml "<p>Riņka līnijā $\\omega$ ievilkta vienādsānu trapece $A B C D$, punkts $H$ ir garākā pamata $A B$ viduspunkts. Punkts $M$ ir viduspunkts tam lokam $A B$, kas nesatur punktus $C$ un $D$. Taisnes $C D$ un $A M$ krustojas punktā $X$. Zināms, ka nogriežņi $H X, D M$ un $A C$ krustojas vienā punktā $Y$ un $D M=A C$. Pierādīt, ka $A B^{2}=2 C D^{2}$.</p>"@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.12.3" ;
-    eliozo:suggestedGrade 3 .
+    eliozo:suffix "LV.VOL.2020.12" ;
+    eliozo:suggestedGrade 12 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.12.4.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.VOL.2020.12.4." ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2020.12.4A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.12.4..SUB0 ;
-    eliozo:problemText """Doti seši dažādi iracionāli skaitļi. Pierādīt, ka no tiem var izvēlēties $3$ 
-skaitļus (apzīmēsim tos ar $x, y, z$) tā, ka visi trīs skaitļi $x+y, x+z, y+z$ 
-ir iracionāli!"""@lv ;
-    eliozo:problemTextHtml """<p>Doti seši dažādi iracionāli skaitļi. Pierādīt, ka no tiem var izvēlēties $3$ 
-skaitļus (apzīmēsim tos ar $x, y, z$) tā, ka visi trīs skaitļi $x+y, x+z, y+z$ 
-ir iracionāli!</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.12.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.12.4.SUB0 ;
+    eliozo:problemText "Zināms, ka četrciparu skaitlis $\\overline{a b c d}$ ir pirmskaitlis un ka vienādojumam $a x^{3}+b x^{2}+c x+d=0$ ir trīs reālas saknes. Vai var gadīties, ka visas šīs saknes ir a) veseli skaitli, b) racionāli skaitlli?"@lv ;
+    eliozo:problemTextHtml "<p>Zināms, ka četrciparu skaitlis $\\overline{a b c d}$ ir pirmskaitlis un ka vienādojumam $a x^{3}+b x^{2}+c x+d=0$ ir trīs reālas saknes. Vai var gadīties, ka visas šīs saknes ir a) veseli skaitli, b) racionāli skaitlli?</p>"@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.12.4" ;
-    eliozo:suggestedGrade 4 .
+    eliozo:suffix "LV.VOL.2020.12" ;
+    eliozo:suggestedGrade 12 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.12.5.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.VOL.2020.12.5." ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.12.5..SUB0 ;
-    eliozo:problemText """Atrast
-
-**a)** vienu tādu naturālu skaitļu pāri $(a; b)$,
-
-**b)** trīs tādus naturālu skaitļu pārus $(a; b), a < b$,
-
-ka lielākais skaitlis, ko nevar izteikt formā $an+bm$, kur $m$ un $n$ ir 
-nenegatīvi veseli skaitļi, ir $2019$."""@lv ;
-    eliozo:problemTextHtml """<p>Atrast</p>
-<p><strong>a)</strong> vienu tādu naturālu skaitļu pāri $(a; b)$,</p>
-<p><strong>b)</strong> trīs tādus naturālu skaitļu pārus $(a; b), a &lt; b$,</p>
-<p>ka lielākais skaitlis, ko nevar izteikt formā $an+bm$, kur $m$ un $n$ ir 
-nenegatīvi veseli skaitļi, ir $2019$.</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.12.5" ;
+    eliozo:problemImage <http://www.dudajevagatve.lv/eliozo#IMG.https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-10.jpg?height=262&width=1418&top_left_y=658&top_left_x=381>,
+        <http://www.dudajevagatve.lv/eliozo#IMG.https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-10.jpg?height=399&width=335&top_left_y=1389&top_left_x=922> ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.12.5.SUB0 ;
+    eliozo:problemText "Kādā valstī ir 2020 pilsētas, katra ar katru ir savienota ar ceļu, celi ārpus pilsētām nekrustojas (izmantoti viadukti). Biznesmenis ar ceļu pārvaldi spēlē šādu spēli: katru dienu biznesmenis privatizē vienu celu, bet celu pārvalde nojauc desmit neprivatizētus celus. Pierādīt, ka biznesmenis var panākt, ka pēc kāda laika viņam pieder ciklisks celu maršruts kas iet caur tieši 70 pilsētām, katrā iegriežoties tieši vienu reizi!"@lv ;
+    eliozo:problemTextHtml "<p>Kādā valstī ir 2020 pilsētas, katra ar katru ir savienota ar ceļu, celi ārpus pilsētām nekrustojas (izmantoti viadukti). Biznesmenis ar ceļu pārvaldi spēlē šādu spēli: katru dienu biznesmenis privatizē vienu celu, bet celu pārvalde nojauc desmit neprivatizētus celus. Pierādīt, ka biznesmenis var panākt, ka pēc kāda laika viņam pieder ciklisks celu maršruts kas iet caur tieši 70 pilsētām, katrā iegriežoties tieši vienu reizi!</p>"@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.12.5" ;
-    eliozo:suggestedGrade 5 .
+    eliozo:suffix "LV.VOL.2020.12" ;
+    eliozo:suggestedGrade 12 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.9.1.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.VOL.2020.9.1." ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.9.1..SUB0 ;
-    eliozo:problemText """Reālus skaitļus $a$ un $b$ saista sakarība $\\frac{4a^{2}-7b^{2}}{ab}=12$. Kāda
-var būt $\\frac{4a^{2}+7b^{2}}{ab}$ vērtība?"""@lv ;
-    eliozo:problemTextHtml """<p>Reālus skaitļus $a$ un $b$ saista sakarība $\\frac{4a^{2}-7b^{2}}{ab}=12$. Kāda
-var būt $\\frac{4a^{2}+7b^{2}}{ab}$ vērtība?</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.9.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.9.1.SUB0 ;
+    eliozo:problemText """Kādām naturālām $n$ vērtībām izteiksmes $\\frac{(3n-1)(n+4)}{n+2}$ vērtība ir
+vesels skaitlis?"""@lv ;
+    eliozo:problemTextHtml """<p>Kādām naturālām $n$ vērtībām izteiksmes $\\frac{(3n-1)(n+4)}{n+2}$ vērtība ir
+vesels skaitlis?</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.9.1" ;
-    eliozo:suggestedGrade 1 .
+    eliozo:suffix "LV.VOL.2020.9" ;
+    eliozo:suggestedGrade 9 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.9.2.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.VOL.2020.9.2." ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2020.9.2A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.9.2..SUB0 ;
-    eliozo:problemText """Uz trijstūra $ABC$ malām $AC$ un $BC$ attiecīgi atlikti punkti $M$ un $N$. 
-Nogriežņi $AN$ un $BM$ krustojas punktā $P$. Aprēķināt trijstūra $ABC$ laukumu,
-ja $S(AMP)=S(BNP)=8$ un $S(NMP)=4$."""@lv ;
-    eliozo:problemTextHtml """<p>Uz trijstūra $ABC$ malām $AC$ un $BC$ attiecīgi atlikti punkti $M$ un $N$. 
-Nogriežņi $AN$ un $BM$ krustojas punktā $P$. Aprēķināt trijstūra $ABC$ laukumu,
-ja $S(AMP)=S(BNP)=8$ un $S(NMP)=4$.</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.9.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.9.2.SUB0 ;
+    eliozo:problemText """Atrast visus naturālos skaitļus $B$ intervālā $1 < B < 99$, kuriem izpildās šāda
+īpašība: jebkuram naturālam skaitlim $C$, kuram $B < C < 100$ ir spēkā
+$B \\leq V \\leq C$, kur $V=\\frac{1+B+C+100}{4}$ ir skaitļu $1, B, C, 100$
+vidējais aritmētiskais."""@lv ;
+    eliozo:problemTextHtml """<p>Atrast visus naturālos skaitļus $B$ intervālā $1 &lt; B &lt; 99$, kuriem izpildās šāda
+īpašība: jebkuram naturālam skaitlim $C$, kuram $B &lt; C &lt; 100$ ir spēkā
+$B \\leq V \\leq C$, kur $V=\\frac{1+B+C+100}{4}$ ir skaitļu $1, B, C, 100$
+vidējais aritmētiskais.</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.9.2" ;
-    eliozo:suggestedGrade 2 .
+    eliozo:suffix "LV.VOL.2020.9" ;
+    eliozo:suggestedGrade 9 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.9.3.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.VOL.2020.9.3." ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.9.3..SUB0 ;
-    eliozo:problemText "Vai naturāla skaitļa kvadrāta ciparu summa var būt **a)** $19$, **b)** $2019$?"@lv ;
-    eliozo:problemTextHtml "<p>Vai naturāla skaitļa kvadrāta ciparu summa var būt <strong>a)</strong> $19$, <strong>b)</strong> $2019$?</p>"@lv ;
+    eliozo:problemID "LV.VOL.2020.9.3" ;
+    eliozo:problemImage eliozo:IMG.LV.VOL.2020.9.3A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.9.3.SUB0 ;
+    eliozo:problemText """Punkts $R$ atrodas uz stara $OB$ un punkti $P$ un $Q$ atrodas uz stara $OA$ tā,
+ka $OP < OQ$ un $\\sphericalangle ORP=\\sphericalangle BRQ$. leņķa $RPA$ bisektrise krusto
+staru $OB$ punktā $T$. Pierādīt, ka $QT$ ir $\\sphericalangle RQA$ bisektrise!"""@lv ;
+    eliozo:problemTextHtml """<p>Punkts $R$ atrodas uz stara $OB$ un punkti $P$ un $Q$ atrodas uz stara $OA$ tā,
+ka $OP &lt; OQ$ un $\\sphericalangle ORP=\\sphericalangle BRQ$. leņķa $RPA$ bisektrise krusto
+staru $OB$ punktā $T$. Pierādīt, ka $QT$ ir $\\sphericalangle RQA$ bisektrise!</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.9.3" ;
-    eliozo:suggestedGrade 3 .
+    eliozo:suffix "LV.VOL.2020.9" ;
+    eliozo:suggestedGrade 9 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.9.4.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.VOL.2020.9.4." ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2020.9.4A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.9.4..SUB0 ;
-    eliozo:problemText """Sākotnēji katrā kvadrāta $5 \\times 5$ rūtiņā atradās tieši viena skudra. Tad 
-katra skudra pārvietojās uz kādu blakus rūtiņu (tas ir, uz rūtiņu, kam ar esošo
-ir kopīga mala). Kāds tagad ir **a)** mazākais; **b)** lielākais iespējamais 
-tukšo rūtiņu skaits?"""@lv ;
-    eliozo:problemTextHtml """<p>Sākotnēji katrā kvadrāta $5 \\times 5$ rūtiņā atradās tieši viena skudra. Tad 
-katra skudra pārvietojās uz kādu blakus rūtiņu (tas ir, uz rūtiņu, kam ar esošo
-ir kopīga mala). Kāds tagad ir <strong>a)</strong> mazākais; <strong>b)</strong> lielākais iespējamais 
-tukšo rūtiņu skaits?</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.9.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.9.4.SUB0 ;
+    eliozo:problemText """Vai eksistē tādi četri dažādi **a)** naturāli skaitļi, **b)** pirmskaitļi
+$a, b, c, d$, ka vienlaicīgi izpildās šādi nosacījumi:
+
+- $b+c+d$ dalās ar $a$,
+- $c+d+a$ dalās ar $b$,
+- $d+a+b$ dalās ar $c$,
+- $a+b+c$ dalās ar $d$ ?"""@lv ;
+    eliozo:problemTextHtml """<p>Vai eksistē tādi četri dažādi <strong>a)</strong> naturāli skaitļi, <strong>b)</strong> pirmskaitļi
+$a, b, c, d$, ka vienlaicīgi izpildās šādi nosacījumi:</p>
+<ul>
+<li>$b+c+d$ dalās ar $a$,</li>
+<li>$c+d+a$ dalās ar $b$,</li>
+<li>$d+a+b$ dalās ar $c$,</li>
+<li>$a+b+c$ dalās ar $d$ ?</li>
+</ul>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 4 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.9.4" ;
-    eliozo:suggestedGrade 4 .
+    eliozo:suffix "LV.VOL.2020.9" ;
+    eliozo:suggestedGrade 9 .
 
-<http://www.dudajevagatve.lv/eliozo#LV.VOL.2020.9.5.> a eliozo:Problem ;
+eliozo:LV.VOL.2020.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.VOL.2020.9.5." ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.9.5..SUB0 ;
-    eliozo:problemText """Hokeja turnīrā piedalijās $16$ komandas. Katra komanda ar katru citu spēlēja 
-tieši vienu reizi; neizšķirtu nav. Apzīmēsim katras komandas uzvaru un 
-zaudējumu skaitu attiecīgi ar $x_{i}$ un $y_{i}, i=1; 2; \\ldots ; 16$. 
-Pierādīt, ka 
-$x_{1}^{2}+x_{2}^{2}+\\ldots+x_{16}^{2}=y_{1}^{2}+y_{2}^{2}+\\ldots+y_{16}^{2}$"""@lv ;
-    eliozo:problemTextHtml """<p>Hokeja turnīrā piedalijās $16$ komandas. Katra komanda ar katru citu spēlēja 
-tieši vienu reizi; neizšķirtu nav. Apzīmēsim katras komandas uzvaru un 
-zaudējumu skaitu attiecīgi ar $x_{i}$ un $y_{i}, i=1; 2; \\ldots ; 16$. 
-Pierādīt, ka 
-$x_{1}^{2}+x_{2}^{2}+\\ldots+x_{16}^{2}=y_{1}^{2}+y_{2}^{2}+\\ldots+y_{16}^{2}$</p>"""@lv ;
+    eliozo:problemID "LV.VOL.2020.9.5" ;
+    eliozo:problemImage eliozo:IMG.LV.VOL.2020.9.5A.png ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2020.9.5.SUB0 ;
+    eliozo:problemText """Vai kubu ar izmēriem $12 \\times 12 \\times 12$ iespējams salikt no kieģeļiem,
+kuru izmēri ir $1 \\times 1 \\times 8$ ?"""@lv ;
+    eliozo:problemTextHtml """<p>Vai kubu ar izmēriem $12 \\times 12 \\times 12$ iespējams salikt no kieģeļiem,
+kuru izmēri ir $1 \\times 1 \\times 8$ ?</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number 5 ;
     eliozo:questionType "" ;
-    eliozo:suffix "LV.VOL.2020.9.5" ;
-    eliozo:suggestedGrade 5 .
+    eliozo:suffix "LV.VOL.2020.9" ;
+    eliozo:suggestedGrade 9 .
 
-eliozo:IMG.LV.VOL.2020.10.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2020.10.2A.png" ;
+eliozo:IMG.LV.VOL.2020.10.3A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.VOL.2020.10.3A.png" ;
     eliozo:imageWidth "" .
 
-eliozo:IMG.LV.VOL.2020.10.4A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2020.10.4A.png" ;
+eliozo:IMG.LV.VOL.2020.9.3A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.VOL.2020.9.3A.png" ;
     eliozo:imageWidth "" .
 
-eliozo:IMG.LV.VOL.2020.11.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2020.11.2A.png" ;
+eliozo:IMG.LV.VOL.2020.9.5A.png a eliozo:Image ;
+    eliozo:imageSrc "LV.VOL.2020.9.5A.png" ;
     eliozo:imageWidth "" .
 
-eliozo:IMG.LV.VOL.2020.11.5A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2020.11.5A.png" ;
+<http://www.dudajevagatve.lv/eliozo#IMG.https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-06.jpg?height=454&width=462&top_left_y=586&top_left_x=823> a eliozo:Image ;
+    eliozo:imageSrc "https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-06.jpg?height=454&width=462&top_left_y=586&top_left_x=823" ;
     eliozo:imageWidth "" .
 
-eliozo:IMG.LV.VOL.2020.11.5B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2020.11.5B.png" ;
+<http://www.dudajevagatve.lv/eliozo#IMG.https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-07.jpg?height=237&width=215&top_left_y=1193&top_left_x=955> a eliozo:Image ;
+    eliozo:imageSrc "https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-07.jpg?height=237&width=215&top_left_y=1193&top_left_x=955" ;
     eliozo:imageWidth "" .
 
-eliozo:IMG.LV.VOL.2020.12.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2020.12.2A.png" ;
+<http://www.dudajevagatve.lv/eliozo#IMG.https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-08.jpg?height=500&width=638&top_left_y=1555&top_left_x=771> a eliozo:Image ;
+    eliozo:imageSrc "https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-08.jpg?height=500&width=638&top_left_y=1555&top_left_x=771" ;
     eliozo:imageWidth "" .
 
-eliozo:IMG.LV.VOL.2020.12.2B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2020.12.2B.png" ;
+<http://www.dudajevagatve.lv/eliozo#IMG.https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-10.jpg?height=262&width=1418&top_left_y=658&top_left_x=381> a eliozo:Image ;
+    eliozo:imageSrc "https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-10.jpg?height=262&width=1418&top_left_y=658&top_left_x=381" ;
     eliozo:imageWidth "" .
 
-eliozo:IMG.LV.VOL.2020.12.4A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2020.12.4A.png" ;
+<http://www.dudajevagatve.lv/eliozo#IMG.https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-10.jpg?height=399&width=335&top_left_y=1389&top_left_x=922> a eliozo:Image ;
+    eliozo:imageSrc "https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-10.jpg?height=399&width=335&top_left_y=1389&top_left_x=922" ;
     eliozo:imageWidth "" .
 
-eliozo:IMG.LV.VOL.2020.9.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2020.9.2A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2020.9.4A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2020.9.4A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:SOLN.LV.VOL.2020.10.1..SUB0 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2020.10.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Visus pāra skaitļus, kas lielāki nekā $100$, var izteikt kā summu $(2+p)$, kur 
-$p$ ir pāra skaitlis, kas lielāks nekā $100$, tātad $p$ ir salikts skaitlis. 
-Visus nepāra skaitļus, kas lielāki nekā $100$, var izteikt kā summu $(3+p)$, 
-kur $p$ ir pāra skaitlis, kas lielāks nekā $98$, tātad $p$ ir salikts skaitlis.
-Saskaitāmie $2$ un attiecīgi $3$ ir pirmskaitļi.
+Apzīmējam $n=2020$ un pārveidojam doto skaitli:
 
-$\\textit {Piezīme.}$ Minētā īpašība ir spēkā visiem naturāliem skaitļiem, kas 
-lielāki nekā $5$."""@lv ;
+$$\\begin{aligned}
+(n-1)^{3} & +n^{3}+(n+1)^{3}=n^{3}-3 \\cdot n^{2}+3 \\cdot n-1+n^{3}+n^{3}+3 \\cdot n^{2}+3 \\cdot n+1= \\\\
+& =n \\cdot\\left(3 n^{2}+6\\right)=n \\cdot 3 \\cdot\\left(n^{2}+2\\right)=2^{2} \\cdot 5 \\cdot 101 \\cdot 3 \\cdot\\left(2020^{2}+2\\right)
+\\end{aligned}$$
+
+Tā kā naturālam skaitlim
+$x=p_{1}^{k_{1}} \\cdot p_{2}^{k_{2}} \\cdot \\ldots \\cdot p_{m}^{k_{m}}$,
+kur $p_{i}$ ir dažādi pirmskaitļi, pavisam ir
+$\\left(k_{1}+1\\right)\\left(k_{2}+1\\right) \\ldots\\left(k_{m}+1\\right)$ dažādi
+naturālie dalītāji, tad dotajam skaitlim ir vismaz
+$(2+1)(1+1)(1+1)(1+1)=24$ dažādi dalītāji, pat neņemot vērā reizinātāju 
+$2020^{2}+2$. Patiesībā dotajam skaitlim ir $640$ dažādi dalītāji."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Visus pāra skaitļus, kas lielāki nekā $100$, var izteikt kā summu $(2+p)$, kur 
-$p$ ir pāra skaitlis, kas lielāks nekā $100$, tātad $p$ ir salikts skaitlis. 
-Visus nepāra skaitļus, kas lielāki nekā $100$, var izteikt kā summu $(3+p)$, 
-kur $p$ ir pāra skaitlis, kas lielāks nekā $98$, tātad $p$ ir salikts skaitlis.
-Saskaitāmie $2$ un attiecīgi $3$ ir pirmskaitļi.</p>
-<p>$\\textit {Piezīme.}$ Minētā īpašība ir spēkā visiem naturāliem skaitļiem, kas 
-lielāki nekā $5$.</p>"""@lv .
+<p>Apzīmējam $n=2020$ un pārveidojam doto skaitli:</p>
+<p>$$\\begin{aligned}
+(n-1)^{3} &amp; +n^{3}+(n+1)^{3}=n^{3}-3 \\cdot n^{2}+3 \\cdot n-1+n^{3}+n^{3}+3 \\cdot n^{2}+3 \\cdot n+1= \\
+&amp; =n \\cdot\\left(3 n^{2}+6\\right)=n \\cdot 3 \\cdot\\left(n^{2}+2\\right)=2^{2} \\cdot 5 \\cdot 101 \\cdot 3 \\cdot\\left(2020^{2}+2\\right)
+\\end{aligned}$$</p>
+<p>Tā kā naturālam skaitlim
+$x=p_{1}^{k_{1}} \\cdot p_{2}^{k_{2}} \\cdot \\ldots \\cdot p_{m}^{k_{m}}$,
+kur $p_{i}$ ir dažādi pirmskaitļi, pavisam ir
+$\\left(k_{1}+1\\right)\\left(k_{2}+1\\right) \\ldots\\left(k_{m}+1\\right)$ dažādi
+naturālie dalītāji, tad dotajam skaitlim ir vismaz
+$(2+1)(1+1)(1+1)(1+1)=24$ dažādi dalītāji, pat neņemot vērā reizinātāju 
+$2020^{2}+2$. Patiesībā dotajam skaitlim ir $640$ dažādi dalītāji.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2020.10.2..SUB0 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2020.10.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Taisnes $BH$ krustpunktu ar $CD$ apzīmējam ar $P$ (skat. 5.att.). Tātad 
-jāpierāda, ka $CP=PD$. Apzīmējam 
-$\\sphericalangle BAC=\\sphericalangle CAD=2 \\alpha$ (jo $A C$ ir leṇka $A$ bisektrise). Tā kā trijstūris $AHD$ ir taisnleṇka, tad
+Pamatosim, ka $x^{2}+y^{2}+xy \\geq \\frac{3}{4}(x+y)^{2}$. Veicam ekvivalentus
+pārveidojumus:
 
-$$\\sphericalangle ADH=90^{\\circ}-2 \\alpha$$
+$$\\begin{gathered}
+x^{2}+y^{2}+xy \\geq \\frac{3}{4}x^{2}+\\frac{3}{2}xy+\\frac{3}{4}y^{2} \\\\
+\\frac{1}{4}x^{2}+\\frac{1}{4}y^{2}-\\frac{1}{2}xy \\geq 0 \\\\
+x^{2}+y^{2}-2 x y \\geq 0 \\\\
+(x-y)^{2} \\geq 0 .
+\\end{gathered}$$
 
-Tā kā pēc dotā $AC=AD$, tad trijstūris $CAD$ ir vienādsānu un
+Tā kā iegūta patiesa nevienādība, tad arī dotā nevienādība ir patiesa. Līdz ar
+to esam ieguvuši, ka $3 \\geq \\frac{3}{4}(x+y)^{2}$ jeb $4 \\geq(x+y)^{2}$,
+tātad $-2 \\leq x+y \\leq 2$.
 
-$$\\sphericalangle ACD=\\sphericalangle ADC=\\frac{180^{\\circ}-2 \\alpha}{2}=90^{\\circ}-\\alpha$$
+Vēl jāparāda, ka visām vērtībām šajā intervālā ir atbilstošas $x$ un $y$
+vērtības. Apzīmējam $x+y=t(-2 \\leq t \\leq 2)$. No dotās vienādības iegūstam
 
-Aprēķinām
+$$x^{2}+2xy+y^{2}-xy=3 \\quad \\Rightarrow \\quad xy=(x+y)^{2}-3 \\quad \\Rightarrow \\quad xy=t^{2}-3$$
 
-$$
-\\sphericalangle HDP=\\sphericalangle ADC-\\sphericalangle ADH=90^{\\circ}-\\alpha-\\left(90^{\\circ}-2 \\alpha\\right)=\\alpha
-$$
+Sastādām kvadrātvienādojumu $a^{2}-ta+t^{2}-3=0$, kura sakņu summa ir
+$a_{1}+a_{2}=t$ un sakņu reizinājums ir $a_{1} a_{2}=t^{2}-3$. Ja šim
+vienādojumam ir atrisinājums dotai $t$ vērtībai, tad tā saknes ir meklētās
+$x$ un $y$ vērtības. Aprēķinām diskriminantu
+$D=(-t)^{2}-4 \\cdot 1 \\cdot\\left(t^{2}-3\\right)=12-3t^{2}$, tā kā
+$-2 \\leq t \\leq 2$, tad $t^{2} \\leq 4$, tātad visām pieļaujamajām $t$ vērtībām
+$D \\geq 0$. Tātad $-2 \\leq x+y \\leq 2$.
 
-Taisnleņķa trijstūri $ABC$ un $AHD$ ir vienādi pēc pazīmes $h \\ell$, jo $AC=AD$
-un $\\sphericalangle BAC=\\sphericalangle HAD$. Tātad $AB=AH$ kā atbilstošās 
-malas vienādos trijstūros. Līdz ar to trijstūris $BAH$ ir vienādsānu un
+<small>
 
-$$\\sphericalangle ABH=\\sphericalangle BHA=\\frac{180^{\\circ}-2 \\alpha}{2}=90^{\\circ}-\\alpha$$
+* questionType:
+* domain:
 
-Ievērojam, ka $\\sphericalangle CHP=\\sphericalangle BHA=90^{\\circ}-\\alpha$ 
-(krustleņķi) un 
-$\\sphericalangle PHD=90^{\\circ}-\\sphericalangle CHP=90^{\\circ}-\\left(90^{\\circ}-\\alpha\\right)=\\alpha$.
-
-Tā kā $\\sphericalangle HDP=\\sphericalangle PHD=\\alpha$, tad trijstūris $HPD$ ir
-vienādsānu un $HP=PD$. Tā kā 
-$\\sphericalangle ACD=\\sphericalangle BHA=90^{\\circ}-\\alpha$, tad trijstūris 
-$HPC$ ir vienādsānu un $HP=CP$. Līdz ar to $CP=PD$.
-
-![](LV.VOL.2020.10.2A.png)"""@lv ;
+</small>"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Taisnes $BH$ krustpunktu ar $CD$ apzīmējam ar $P$ (skat. 5.att.). Tātad 
-jāpierāda, ka $CP=PD$. Apzīmējam 
-$\\sphericalangle BAC=\\sphericalangle CAD=2 \\alpha$ (jo $A C$ ir leṇka $A$ bisektrise). Tā kā trijstūris $AHD$ ir taisnleṇka, tad</p>
-<p>$$\\sphericalangle ADH=90^{\\circ}-2 \\alpha$$</p>
-<p>Tā kā pēc dotā $AC=AD$, tad trijstūris $CAD$ ir vienādsānu un</p>
-<p>$$\\sphericalangle ACD=\\sphericalangle ADC=\\frac{180^{\\circ}-2 \\alpha}{2}=90^{\\circ}-\\alpha$$</p>
-<p>Aprēķinām</p>
+<p>Pamatosim, ka $x^{2}+y^{2}+xy \\geq \\frac{3}{4}(x+y)^{2}$. Veicam ekvivalentus
+pārveidojumus:</p>
+<p>$$\\begin{gathered}
+x^{2}+y^{2}+xy \\geq \\frac{3}{4}x^{2}+\\frac{3}{2}xy+\\frac{3}{4}y^{2} \\
+\\frac{1}{4}x^{2}+\\frac{1}{4}y^{2}-\\frac{1}{2}xy \\geq 0 \\
+x^{2}+y^{2}-2 x y \\geq 0 \\
+(x-y)^{2} \\geq 0 .
+\\end{gathered}$$</p>
+<p>Tā kā iegūta patiesa nevienādība, tad arī dotā nevienādība ir patiesa. Līdz ar
+to esam ieguvuši, ka $3 \\geq \\frac{3}{4}(x+y)^{2}$ jeb $4 \\geq(x+y)^{2}$,
+tātad $-2 \\leq x+y \\leq 2$.</p>
+<p>Vēl jāparāda, ka visām vērtībām šajā intervālā ir atbilstošas $x$ un $y$
+vērtības. Apzīmējam $x+y=t(-2 \\leq t \\leq 2)$. No dotās vienādības iegūstam</p>
+<p>$$x^{2}+2xy+y^{2}-xy=3 \\quad \\Rightarrow \\quad xy=(x+y)^{2}-3 \\quad \\Rightarrow \\quad xy=t^{2}-3$$</p>
+<p>Sastādām kvadrātvienādojumu $a^{2}-ta+t^{2}-3=0$, kura sakņu summa ir
+$a_{1}+a_{2}=t$ un sakņu reizinājums ir $a_{1} a_{2}=t^{2}-3$. Ja šim
+vienādojumam ir atrisinājums dotai $t$ vērtībai, tad tā saknes ir meklētās
+$x$ un $y$ vērtības. Aprēķinām diskriminantu
+$D=(-t)^{2}-4 \\cdot 1 \\cdot\\left(t^{2}-3\\right)=12-3t^{2}$, tā kā
+$-2 \\leq t \\leq 2$, tad $t^{2} \\leq 4$, tātad visām pieļaujamajām $t$ vērtībām
+$D \\geq 0$. Tātad $-2 \\leq x+y \\leq 2$.</p>
+<p><small></p>
+<ul>
+<li>questionType:</li>
+<li>domain:</li>
+</ul>
+<p></small></p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2020.10.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apzīmējam $x=u+v$ un $y=u-v$. levietojot apzīmējumus dotajā vienādībā,
+jegūstam
+
+$$\\begin{gathered}
+(u+v)^{2}+(u-v)^{2}+(u+v)(u-v)=3 \\\\
+u^{2}+2uv+v^{2}+u^{2}-2uv+v^{2}+u^{2}-v^{2}=3 \\\\
+3u^{2}+v^{2}=3
+\\end{gathered}$$
+
+Lai pēdējā vienādība būtu patiesa, tad
+$-1 \\leq u \\leq 1$. Tā kā $x+y=(u+v)+(u-v)=2u$, tad $-2 \\leq x+y \\leq 2$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apzīmējam $x=u+v$ un $y=u-v$. levietojot apzīmējumus dotajā vienādībā,
+jegūstam</p>
+<p>$$\\begin{gathered}
+(u+v)^{2}+(u-v)^{2}+(u+v)(u-v)=3 \\
+u^{2}+2uv+v^{2}+u^{2}-2uv+v^{2}+u^{2}-v^{2}=3 \\
+3u^{2}+v^{2}=3
+\\end{gathered}$$</p>
+<p>Lai pēdējā vienādība būtu patiesa, tad
+$-1 \\leq u \\leq 1$. Tā kā $x+y=(u+v)+(u-v)=2u$, tad $-2 \\leq x+y \\leq 2$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2020.10.3.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+levērojam, ka $\\triangle ABD \\sim \\triangle BDC$ pēc pazīmes
+$\\ell \\ell$, jo $\\sphericalangle ADB=\\sphericalangle BDC=90^{\\circ}$ un 
+$\\sphericalangle BAD=90^{\\circ}-\\sphericalangle ABD=\\sphericalangle DBC$
+(skat. 4.att.). Tātad trijstūru malas ir proporcionālas, tas ir,
+$\\frac{BD}{CD}=\\frac{AD}{BD}$. Tā kā $AD=2FD$ un $BD=2ED$, tad
+$\\frac{BD}{CD}=\\frac{FD}{ED}$. Līdz ar to $\\triangle BDF \\sim \\triangle CDE$
+pēc pazīmes $m \\ell m$. Tātad
+$\\sphericalangle FBD=\\sphericalangle DCE=90^{\\circ}-\\sphericalangle DEC$ jeb $\\sphericalangle FBD+\\sphericalangle DEC=90^{\\circ}$.
+
+Līdzīgi pierāda, ka $\\sphericalangle GBD+\\sphericalangle AED=90^{\\circ}$.
+
+Tātad
+$\\sphericalangle AEC+\\sphericalangle FBG=(\\sphericalangle AED+\\sphericalangle DEC)+(\\sphericalangle FBD+\\sphericalangle GBD)=90^{\\circ}+90^{\\circ}=180^{\\circ}$.
+
+![](LV.VOL.2020.10.3A.png)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>levērojam, ka $\\triangle ABD \\sim \\triangle BDC$ pēc pazīmes
+$\\ell \\ell$, jo $\\sphericalangle ADB=\\sphericalangle BDC=90^{\\circ}$ un 
+$\\sphericalangle BAD=90^{\\circ}-\\sphericalangle ABD=\\sphericalangle DBC$
+(skat. 4.att.). Tātad trijstūru malas ir proporcionālas, tas ir,
+$\\frac{BD}{CD}=\\frac{AD}{BD}$. Tā kā $AD=2FD$ un $BD=2ED$, tad
+$\\frac{BD}{CD}=\\frac{FD}{ED}$. Līdz ar to $\\triangle BDF \\sim \\triangle CDE$
+pēc pazīmes $m \\ell m$. Tātad
+$\\sphericalangle FBD=\\sphericalangle DCE=90^{\\circ}-\\sphericalangle DEC$ jeb $\\sphericalangle FBD+\\sphericalangle DEC=90^{\\circ}$.</p>
+<p>Līdzīgi pierāda, ka $\\sphericalangle GBD+\\sphericalangle AED=90^{\\circ}$.</p>
+<p>Tātad
+$\\sphericalangle AEC+\\sphericalangle FBG=(\\sphericalangle AED+\\sphericalangle DEC)+(\\sphericalangle FBD+\\sphericalangle GBD)=90^{\\circ}+90^{\\circ}=180^{\\circ}$.</p>
+<p><img alt="" src="LV.VOL.2020.10.3A.png" /></p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2020.10.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apzīmējam virknes loceklus ar $s_{0}=7, s_{1}=737, s_{2}=73737, \\ldots$
+
+Redzams, ka virknē ir spēkā sakarība $s_{k+1}=100 s_{k}+37$. Patiešām, skaitli pareizinot ar 100 tam tiek galā pierakstītas divas nulles, bet pieskaitot 37 šīs nulles pārvēršas par 37, tātad šī operācija pieraksta skaitla galā 37. Apzīmēsim ar $a_{k}$ atlikumu virkni, kas rodas $s_{k}$ dalot ar 17, $a_{k}=s_{k}$ mod 17. Mums jāpierāda, ka virknē ( $a_{k}$ ) nav nevienas nulles.
+
+Arī virknes $a_{k}$ katrs loceklis (tāpat kā virknei $s_{k}$ ) ir atkarīgs tikai no iepriekšējā
+
+$$
+a_{k+1}=s_{k+1} \\bmod 17=100 s_{k}+37 \\bmod 17=15 a_{k}+3 \\bmod 17
+$$
+
+Izmantojot šo formulu un to, ka $a_{0}=7 \\bmod 17=7$, aprēkināsim virknes $a_{k}$ pirmos loceklus.
+
+| $k$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $a_{k}(\\bmod 17)$ | 7 | 6 | 8 | 4 | 12 | 13 | 11 | 15 | 7 |
+
+Esam ieguvušì, ka $a_{0}=a_{8}=7$. Tā kā šajā virknē katrs loceklis ir atkarīgs tikai no iepriekšējā, tad šī virkne būs periodiska ar periodu 8: no tā, ka $a_{0}=a_{8}$, secinām, ka $a_{1}=a_{9}$, tad $a_{2}=a_{10}$ utt.
+
+Tā kā starp pirmajiem 8 locekliem šajā virknē nav nevienas nulles, tad, tā kā tā ir periodiska, tad arī tālāk tajā nebūs nevienas nulles."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apzīmējam virknes loceklus ar $s_{0}=7, s_{1}=737, s_{2}=73737, \\ldots$</p>
+<p>Redzams, ka virknē ir spēkā sakarība $s_{k+1}=100 s_{k}+37$. Patiešām, skaitli pareizinot ar 100 tam tiek galā pierakstītas divas nulles, bet pieskaitot 37 šīs nulles pārvēršas par 37, tātad šī operācija pieraksta skaitla galā 37. Apzīmēsim ar $a_{k}$ atlikumu virkni, kas rodas $s_{k}$ dalot ar 17, $a_{k}=s_{k}$ mod 17. Mums jāpierāda, ka virknē ( $a_{k}$ ) nav nevienas nulles.</p>
+<p>Arī virknes $a_{k}$ katrs loceklis (tāpat kā virknei $s_{k}$ ) ir atkarīgs tikai no iepriekšējā</p>
 <p>$$
-\\sphericalangle HDP=\\sphericalangle ADC-\\sphericalangle ADH=90^{\\circ}-\\alpha-\\left(90^{\\circ}-2 \\alpha\\right)=\\alpha
+a_{k+1}=s_{k+1} \\bmod 17=100 s_{k}+37 \\bmod 17=15 a_{k}+3 \\bmod 17
 $$</p>
-<p>Taisnleņķa trijstūri $ABC$ un $AHD$ ir vienādi pēc pazīmes $h \\ell$, jo $AC=AD$
-un $\\sphericalangle BAC=\\sphericalangle HAD$. Tātad $AB=AH$ kā atbilstošās 
-malas vienādos trijstūros. Līdz ar to trijstūris $BAH$ ir vienādsānu un</p>
-<p>$$\\sphericalangle ABH=\\sphericalangle BHA=\\frac{180^{\\circ}-2 \\alpha}{2}=90^{\\circ}-\\alpha$$</p>
-<p>Ievērojam, ka $\\sphericalangle CHP=\\sphericalangle BHA=90^{\\circ}-\\alpha$ 
-(krustleņķi) un 
-$\\sphericalangle PHD=90^{\\circ}-\\sphericalangle CHP=90^{\\circ}-\\left(90^{\\circ}-\\alpha\\right)=\\alpha$.</p>
-<p>Tā kā $\\sphericalangle HDP=\\sphericalangle PHD=\\alpha$, tad trijstūris $HPD$ ir
-vienādsānu un $HP=PD$. Tā kā 
-$\\sphericalangle ACD=\\sphericalangle BHA=90^{\\circ}-\\alpha$, tad trijstūris 
-$HPC$ ir vienādsānu un $HP=CP$. Līdz ar to $CP=PD$.</p>
-<p><img alt="" src="LV.VOL.2020.10.2A.png" /></p>"""@lv .
+<p>Izmantojot šo formulu un to, ka $a_{0}=7 \\bmod 17=7$, aprēkināsim virknes $a_{k}$ pirmos loceklus.</p>
+<table>
+<thead>
+<tr>
+<th align="center">$k$</th>
+<th align="center">0</th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+<th align="center">6</th>
+<th align="center">7</th>
+<th align="center">8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">$a_{k}(\\bmod 17)$</td>
+<td align="center">7</td>
+<td align="center">6</td>
+<td align="center">8</td>
+<td align="center">4</td>
+<td align="center">12</td>
+<td align="center">13</td>
+<td align="center">11</td>
+<td align="center">15</td>
+<td align="center">7</td>
+</tr>
+</tbody>
+</table>
+<p>Esam ieguvušì, ka $a_{0}=a_{8}=7$. Tā kā šajā virknē katrs loceklis ir atkarīgs tikai no iepriekšējā, tad šī virkne būs periodiska ar periodu 8: no tā, ka $a_{0}=a_{8}$, secinām, ka $a_{1}=a_{9}$, tad $a_{2}=a_{10}$ utt.</p>
+<p>Tā kā starp pirmajiem 8 locekliem šajā virknē nav nevienas nulles, tad, tā kā tā ir periodiska, tad arī tālāk tajā nebūs nevienas nulles.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2020.10.3..SUB0 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2020.10.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Ievērojam, ka naturālu skaitli $n$, dalot ar $3$, var iegūt atlikumu $0, 1$ vai
-$2$, un atrodam, kādu atlikumu var iegūt, ja $n^{2}$ dala ar $3$:
+Apzīmējam monētas ar $A, B, C, D$. Pirmajā svēršanā uz svariem liekam $A$ un $B$.
 
-- ja $n \\equiv 0(\\bmod 3)$, tad $n^{2} \\equiv 0^{2} \\equiv 0(\\bmod 3)$;
-- ja $n \\equiv 1(\\bmod 3)$, tad $n^{2} \\equiv 1^{2} \\equiv 1(\\bmod 3)$;
-- ja $n \\equiv 2(\\bmod 3)$, tad $n^{2} \\equiv 2^{2} \\equiv 4 \\equiv 1(\\bmod 3)$.
+- Ja $A+B=40$ vai $A+B=42$, tad $A$ un $B$ masas jau zināmas, tās attiecīgi ir 20 g un 20 g vai 21 g un 21 g . Pēc tam ar divām svēřǎanām atrodam $C$ un $D$ masu.
+- Ja $A+B=41$, tad otrajā svēršanā uz svariem liekam $A$ un $C$.
+- Ja $A+C=40$ un $A+C=42$, tad zinām $A$ un $C$ masu, tātad arī $B$ masu. Trešajā svēršanā uz svariem liekam $D$ un nosakām tās masu.
+- Ja $A+C=41$, tad no tā, ka $A+B=A+C$, secinām, ka $B=C$. Trešajā reizē uz svariem liekam $B, C$ un D. levērojam, ka $B+C$ ir pāra skaitlis (40 vai 42). Apskatot visus iespējamos svēršanas iznākumus, iegūstam katras monētas masu, skat. 5.att.
 
-Tātad naturāla skaitļa kvadrātu, dalot ar $3$, var iegūt atlikumu $0$ vai $1$.
-
-Apskatot doto izteiksmi pēc moduļa $3$, iegūstam 
-$13^{n}+7^{n}+2019 \\equiv 1^{n}+1^{n}+0=1+1=2(\\bmod 3)$. Tātad dotā izteiksme, 
-dalot ar $3$, dod atlikumu $2$, tātad tā nevar būt naturāla skaitļa kvadrāts.
-
-$\\textit {Piezīme.}$ Uzdevumu var atrisināt arī aplūkojot izteiksmi pēc jebkura
-skaitļa $3$ daudzkārtņa moduļa, tas ir, $6, 9, 12$ utt."""@lv ;
+| $\\boldsymbol{B}+\\boldsymbol{C}$ | $\\boldsymbol{B}+\\boldsymbol{C}+\\boldsymbol{D}$ | $\\boldsymbol{D}$ | $\\boldsymbol{B}$ | $\\boldsymbol{C}$ | $\\boldsymbol{A}$ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 40 | 60 | 20 | 20 | 20 | 21 |
+| 40 | 61 | 21 | 20 | 20 | 21 |
+| 42 | 62 | 20 | 21 | 21 | 20 |
+| 42 | 63 | 21 | 21 | 21 | 20 |
+| 5.att. |  |  |  |  |  |"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Ievērojam, ka naturālu skaitli $n$, dalot ar $3$, var iegūt atlikumu $0, 1$ vai
-$2$, un atrodam, kādu atlikumu var iegūt, ja $n^{2}$ dala ar $3$:</p>
+<p>Apzīmējam monētas ar $A, B, C, D$. Pirmajā svēršanā uz svariem liekam $A$ un $B$.</p>
 <ul>
-<li>ja $n \\equiv 0(\\bmod 3)$, tad $n^{2} \\equiv 0^{2} \\equiv 0(\\bmod 3)$;</li>
-<li>ja $n \\equiv 1(\\bmod 3)$, tad $n^{2} \\equiv 1^{2} \\equiv 1(\\bmod 3)$;</li>
-<li>ja $n \\equiv 2(\\bmod 3)$, tad $n^{2} \\equiv 2^{2} \\equiv 4 \\equiv 1(\\bmod 3)$.</li>
+<li>Ja $A+B=40$ vai $A+B=42$, tad $A$ un $B$ masas jau zināmas, tās attiecīgi ir 20 g un 20 g vai 21 g un 21 g . Pēc tam ar divām svēřǎanām atrodam $C$ un $D$ masu.</li>
+<li>Ja $A+B=41$, tad otrajā svēršanā uz svariem liekam $A$ un $C$.</li>
+<li>Ja $A+C=40$ un $A+C=42$, tad zinām $A$ un $C$ masu, tātad arī $B$ masu. Trešajā svēršanā uz svariem liekam $D$ un nosakām tās masu.</li>
+<li>Ja $A+C=41$, tad no tā, ka $A+B=A+C$, secinām, ka $B=C$. Trešajā reizē uz svariem liekam $B, C$ un D. levērojam, ka $B+C$ ir pāra skaitlis (40 vai 42). Apskatot visus iespējamos svēršanas iznākumus, iegūstam katras monētas masu, skat. 5.att.</li>
 </ul>
-<p>Tātad naturāla skaitļa kvadrātu, dalot ar $3$, var iegūt atlikumu $0$ vai $1$.</p>
-<p>Apskatot doto izteiksmi pēc moduļa $3$, iegūstam 
-$13^{n}+7^{n}+2019 \\equiv 1^{n}+1^{n}+0=1+1=2(\\bmod 3)$. Tātad dotā izteiksme, 
-dalot ar $3$, dod atlikumu $2$, tātad tā nevar būt naturāla skaitļa kvadrāts.</p>
-<p>$\\textit {Piezīme.}$ Uzdevumu var atrisināt arī aplūkojot izteiksmi pēc jebkura
-skaitļa $3$ daudzkārtņa moduļa, tas ir, $6, 9, 12$ utt.</p>"""@lv .
+<table>
+<thead>
+<tr>
+<th align="center">$\\boldsymbol{B}+\\boldsymbol{C}$</th>
+<th align="center">$\\boldsymbol{B}+\\boldsymbol{C}+\\boldsymbol{D}$</th>
+<th align="center">$\\boldsymbol{D}$</th>
+<th align="center">$\\boldsymbol{B}$</th>
+<th align="center">$\\boldsymbol{C}$</th>
+<th align="center">$\\boldsymbol{A}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">40</td>
+<td align="center">60</td>
+<td align="center">20</td>
+<td align="center">20</td>
+<td align="center">20</td>
+<td align="center">21</td>
+</tr>
+<tr>
+<td align="center">40</td>
+<td align="center">61</td>
+<td align="center">21</td>
+<td align="center">20</td>
+<td align="center">20</td>
+<td align="center">21</td>
+</tr>
+<tr>
+<td align="center">42</td>
+<td align="center">62</td>
+<td align="center">20</td>
+<td align="center">21</td>
+<td align="center">21</td>
+<td align="center">20</td>
+</tr>
+<tr>
+<td align="center">42</td>
+<td align="center">63</td>
+<td align="center">21</td>
+<td align="center">21</td>
+<td align="center">21</td>
+<td align="center">20</td>
+</tr>
+<tr>
+<td align="center">5.att.</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>"""@lv .
 
-eliozo:SOLN.LV.VOL.2020.10.4..SUB0 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2020.11.1.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Mazākais iespējamais sarokošanos skaits ir $9$, skat., piemēram, 6.att. kur 
-komisijas locekļi ir attēloti ar punktiem, bet sarokošanās - ar līniju starp 
-atbilstošajiem punktiem. Tiešām, no jebkuriem $3$ punktiem divi atrodas vienā 
-daļā, un tie ir savā starpā savienoti.
+levērojam, ka $m \\neq$ 2019. Lai funkcija būtu augoša, jāizpildās nevienādībai $f(1)<f(2)$. Atrisinām šo nevienādību:
 
-![](LV.VOL.2020.10.4A.png)
+$$
+\\begin{aligned}
+m+(m-1)+\\frac{2020}{m-2019} & <4 m+(m-1) \\cdot 2+\\frac{2020}{m-2019} \\\\
+2 m-1 & <6 m-2 \\\\
+m & >\\frac{1}{4}
+\\end{aligned}
+$$
 
-Pierādīsim, ka mazāk sarokošanos (jeb līniju) nevar būt. Pieņemsim, ka ir 
-novilktas $8$ līnijas. Tad ir $16$ līniju gali. Tā kā $7 \\cdot 3=21>16$, tad ir
-tāds punkts $A$, no kura iziet ne vairāk kā $2$ līnijas. Apskatām iespējamos 
-gadījumus.
+Vēl jāgarantē, ka parabolas virsotne neatrodas intervālā $(1 ; 2)$. Tā kā $m$ vērtības ir pozitīvas, tad parabolas zari ir vērsti uz augšu un, lai dotajā intervālā funkcija būtu augoša, jāizpildās nevienādībai $x_{v} \\leq 1$ jeb $\\frac{1-m}{2 m} \\leq 1$. Reizinot nevienādību ar $2 m>0$, iegūstam $1-m \\leq 2 m$ jeb $m \\geq \\frac{1}{3}$. Līdz ar to funkcija ir augoša intervālā $(1 ; 2)$, ja $m \\in\\left[\\frac{1}{3} ; 2019\\right) \\cup$ $\\cup(2019 ;+\\infty)$ .
 
-1) No punkta $A$ neiziet neviena līnija. Tad, lai no katriem trim punktiem 
-   vismaz divi būtu savienoti, visiem citiem punktiem jābūt pa pāriem 
-   savienotiem, bet tādā gadījumā līniju skaits ir $6 \\cdot 5:2=15$ (pretruna).
-2) Punkts $A$ ir savienots ar tieši vienu citu punktu $B$. Tad, lai no katriem 
-   trim punktiem vismaz divi būtu savienoti, pārējiem pieciem punktiem jābūt pa
-   pāriem savienotiem - citādi, izvēloties, piemēram, punktu $A$ un divus citus
-   nesavienotos punktus, iegūsim trīs punktus, no kuriem nekādi divi nav 
-   savienoti. Taču tādā gadījumā līniju skaits ir $1+5 \\cdot 4:2=11$ 
-   (pretruna).
-3) Punkts $A$ ir savienots ar tieši diviem citiem punktiem $B$ un $C$, tas, ir 
-   no $A$ iziet divas līnijas (skat. 7.att.). Bet tad $A$ nav savienots ar $4$ 
-   atlikušajiem punktiem. Visiem šiem punktiem jābūt pa pāriem savienotiem - 
-   citādi, izvēloties punktu $A$ un divus citus nesavienotos punktus, iegūsim 
-   trīs punktus, no kuriem nekādi divi nav savienoti. Taču tad jau kopā ir 
-   novilktas $2+4 \\cdot 3:2=8$ līnijas, tātad citu līniju vairs nav. Šajā 
-   gadījumā var atrast trīs tādus punktus, ka nekādi divi no tiem nav 
-   savienoti, piemēram, izvēloties punktus $B, C$ un vēl kādu citu punktu (ne 
-   $A$)."""@lv ;
+<small>
+
+* questionType:
+* domain:
+
+</small>"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Mazākais iespējamais sarokošanos skaits ir $9$, skat., piemēram, 6.att. kur 
-komisijas locekļi ir attēloti ar punktiem, bet sarokošanās - ar līniju starp 
-atbilstošajiem punktiem. Tiešām, no jebkuriem $3$ punktiem divi atrodas vienā 
-daļā, un tie ir savā starpā savienoti.</p>
-<p><img alt="" src="LV.VOL.2020.10.4A.png" /></p>
-<p>Pierādīsim, ka mazāk sarokošanos (jeb līniju) nevar būt. Pieņemsim, ka ir 
-novilktas $8$ līnijas. Tad ir $16$ līniju gali. Tā kā $7 \\cdot 3=21&gt;16$, tad ir
-tāds punkts $A$, no kura iziet ne vairāk kā $2$ līnijas. Apskatām iespējamos 
-gadījumus.</p>
-<p>1) No punkta $A$ neiziet neviena līnija. Tad, lai no katriem trim punktiem 
-   vismaz divi būtu savienoti, visiem citiem punktiem jābūt pa pāriem 
-   savienotiem, bet tādā gadījumā līniju skaits ir $6 \\cdot 5:2=15$ (pretruna).
-2) Punkts $A$ ir savienots ar tieši vienu citu punktu $B$. Tad, lai no katriem 
-   trim punktiem vismaz divi būtu savienoti, pārējiem pieciem punktiem jābūt pa
-   pāriem savienotiem - citādi, izvēloties, piemēram, punktu $A$ un divus citus
-   nesavienotos punktus, iegūsim trīs punktus, no kuriem nekādi divi nav 
-   savienoti. Taču tādā gadījumā līniju skaits ir $1+5 \\cdot 4:2=11$ 
-   (pretruna).
-3) Punkts $A$ ir savienots ar tieši diviem citiem punktiem $B$ un $C$, tas, ir 
-   no $A$ iziet divas līnijas (skat. 7.att.). Bet tad $A$ nav savienots ar $4$ 
-   atlikušajiem punktiem. Visiem šiem punktiem jābūt pa pāriem savienotiem - 
-   citādi, izvēloties punktu $A$ un divus citus nesavienotos punktus, iegūsim 
-   trīs punktus, no kuriem nekādi divi nav savienoti. Taču tad jau kopā ir 
-   novilktas $2+4 \\cdot 3:2=8$ līnijas, tātad citu līniju vairs nav. Šajā 
-   gadījumā var atrast trīs tādus punktus, ka nekādi divi no tiem nav 
-   savienoti, piemēram, izvēloties punktus $B, C$ un vēl kādu citu punktu (ne 
-   $A$).</p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2020.10.5..SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-Pierādīsim, ka pie $n=1; 2; \\ldots ; 999$ ir spēkā nevienādība
-
-$$\\frac{a_{1}+a_{2}+\\cdots+a_{n}}{n} \\leq \\frac{a_{1}+a_{2}+\\cdots+a_{n}+a_{n+1}}{n+1}$$
-
-Reizinot abas nevienādības puses ar $n(n+1)>0$ un veicot ekvivalentus 
-pārveidojumus, iegūstam
-
-$$\\begin{gathered}
-(n+1)\\left(a_{1}+a_{2}+\\cdots+a_{n}\\right) \\leq n\\left(\\left(a_{1}+a_{2}+\\cdots+a_{n}\\right)+a_{n+1}\\right) \\\\
-n\\left(a_{1}+a_{2}+\\cdots+a_{n}\\right)+\\left(a_{1}+a_{2}+\\cdots+a_{n}\\right) \\leq n\\left(a_{1}+a_{2}+\\cdots+a_{n}\\right)+n \\cdot a_{n+1} \\\\
-a_{1}+a_{2}+\\cdots+a_{n} \\leq n \\cdot a_{n+1}
-\\end{gathered}$$
-
-Pēdējā nevienādība ir patiesa, jo 
-$0 \\leq a_{1} \\leq a_{2} \\leq \\cdots \\leq a_{1000}$.
-
-Tā kā $\\frac{a_{1}+a_{2}+\\cdots+a_{1000}}{1000}=\\frac{1}{1000}$, tad iegūstam, 
-ka
-
-$$\\frac{a_{1}+a_{2}+\\cdots+a_{n}}{n} \\leq \\frac{a_{1}+a_{2}+\\cdots+a_{n}+a_{n+1}}{n+1} \\leq \\frac{1}{1000}$$"""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Pierādīsim, ka pie $n=1; 2; \\ldots ; 999$ ir spēkā nevienādība</p>
-<p>$$\\frac{a_{1}+a_{2}+\\cdots+a_{n}}{n} \\leq \\frac{a_{1}+a_{2}+\\cdots+a_{n}+a_{n+1}}{n+1}$$</p>
-<p>Reizinot abas nevienādības puses ar $n(n+1)&gt;0$ un veicot ekvivalentus 
-pārveidojumus, iegūstam</p>
-<p>$$\\begin{gathered}
-(n+1)\\left(a_{1}+a_{2}+\\cdots+a_{n}\\right) \\leq n\\left(\\left(a_{1}+a_{2}+\\cdots+a_{n}\\right)+a_{n+1}\\right) \\
-n\\left(a_{1}+a_{2}+\\cdots+a_{n}\\right)+\\left(a_{1}+a_{2}+\\cdots+a_{n}\\right) \\leq n\\left(a_{1}+a_{2}+\\cdots+a_{n}\\right)+n \\cdot a_{n+1} \\
-a_{1}+a_{2}+\\cdots+a_{n} \\leq n \\cdot a_{n+1}
-\\end{gathered}$$</p>
-<p>Pēdējā nevienādība ir patiesa, jo 
-$0 \\leq a_{1} \\leq a_{2} \\leq \\cdots \\leq a_{1000}$.</p>
-<p>Tā kā $\\frac{a_{1}+a_{2}+\\cdots+a_{1000}}{1000}=\\frac{1}{1000}$, tad iegūstam, 
-ka</p>
-<p>$$\\frac{a_{1}+a_{2}+\\cdots+a_{n}}{n} \\leq \\frac{a_{1}+a_{2}+\\cdots+a_{n}+a_{n+1}}{n+1} \\leq \\frac{1}{1000}$$</p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2020.11.1..SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-Pamatosim, ka katrai aviokompānijai ir vismaz $9$ biroji. Ja kādai kompānijai 
-būtu ne vairāk kā $8$ biroji, tad tā varētu noorganizēt ne vairāk kā $28$ 
-reisus, jo no $8$ elementiem var izveidot ne vairāk kā $8 \\cdot 7:2=28$ pārus. 
-Tātad katrai kompānijai ir vismaz $9$ biroji, un biroju kopskaits ir vismaz 
-$9 \\cdot 90=810$. Ja katrā no $100$ pilsētām būtu ne vairāk kā $8$ biroji, tad 
-kopā būtu ne vairāk kā $8 \\cdot 100=800$ biroji, bet biroju kopskaits ir vismaz
-$810$. Tātad ir tāda pilsēta, kurā ir vismaz $9$ biroji.
-
-$\\textit {Piezīme.}$ Risinājumā izmantots Dirihlē princips."""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Pamatosim, ka katrai aviokompānijai ir vismaz $9$ biroji. Ja kādai kompānijai 
-būtu ne vairāk kā $8$ biroji, tad tā varētu noorganizēt ne vairāk kā $28$ 
-reisus, jo no $8$ elementiem var izveidot ne vairāk kā $8 \\cdot 7:2=28$ pārus. 
-Tātad katrai kompānijai ir vismaz $9$ biroji, un biroju kopskaits ir vismaz 
-$9 \\cdot 90=810$. Ja katrā no $100$ pilsētām būtu ne vairāk kā $8$ biroji, tad 
-kopā būtu ne vairāk kā $8 \\cdot 100=800$ biroji, bet biroju kopskaits ir vismaz
-$810$. Tātad ir tāda pilsēta, kurā ir vismaz $9$ biroji.</p>
-<p>$\\textit {Piezīme.}$ Risinājumā izmantots Dirihlē princips.</p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2020.11.2..SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-Novelkam nogriezni $BD$ (skat. 8.att.). Ievērojam, ka 
-$\\sphericalangle DAC=\\sphericalangle DBC$ kā ievilktie leņķi, kas balstās uz 
-viena un tā paša loka. Tā kā $DE \\parallel BC$, tad 
-$\\sphericalangle DBC=\\sphericalangle BDM$ kā iekšējie škērsleņķi pie paralēlām 
-taisnēm. Līdz ar to $\\sphericalangle DAC=\\sphericalangle BDM$.
-
-Pamatosim, ka ap $AMD$ apvilktā riņķa līnija pieskaras taisnei $BD$. Ar $O$ 
-apzīmējam trijstūrim $AMD$ apvilktās riņķa līnijas centru (skat. 9.att.). Ja 
-$\\sphericalangle DAC=\\sphericalangle BDM=\\alpha$, tad 
-$\\sphericalangle MOD=2 \\alpha$ kā atbilstošais centra leņķis. Tā kā trijstūris 
-$MOD$ ir vienādsānu, tad 
-$\\sphericalangle ODM=\\frac{180^{\\circ}-2 \\alpha}{2}=90^{\\circ}-\\alpha$. Līdz ar
-to $\\sphericalangle ODB=90^{\\circ}-\\alpha+\\alpha=90^{\\circ}$. Tā kā rādiuss 
-$OD$ ir perpendikulārs taisnei $BD$, tad $BD$ ir pieskare.
-
-Līdzīgi iegūstam, ka ap trijstūri $DNC$ apvilktā riņķa līnija pieskaras taisnei
-$BD$. Tātad esam pierādījuši, ka abas riņķa līnijas pieskaras viena otrai 
-punktā $D$.
-
-![](LV.VOL.2020.11.2A.png)"""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Novelkam nogriezni $BD$ (skat. 8.att.). Ievērojam, ka 
-$\\sphericalangle DAC=\\sphericalangle DBC$ kā ievilktie leņķi, kas balstās uz 
-viena un tā paša loka. Tā kā $DE \\parallel BC$, tad 
-$\\sphericalangle DBC=\\sphericalangle BDM$ kā iekšējie škērsleņķi pie paralēlām 
-taisnēm. Līdz ar to $\\sphericalangle DAC=\\sphericalangle BDM$.</p>
-<p>Pamatosim, ka ap $AMD$ apvilktā riņķa līnija pieskaras taisnei $BD$. Ar $O$ 
-apzīmējam trijstūrim $AMD$ apvilktās riņķa līnijas centru (skat. 9.att.). Ja 
-$\\sphericalangle DAC=\\sphericalangle BDM=\\alpha$, tad 
-$\\sphericalangle MOD=2 \\alpha$ kā atbilstošais centra leņķis. Tā kā trijstūris 
-$MOD$ ir vienādsānu, tad 
-$\\sphericalangle ODM=\\frac{180^{\\circ}-2 \\alpha}{2}=90^{\\circ}-\\alpha$. Līdz ar
-to $\\sphericalangle ODB=90^{\\circ}-\\alpha+\\alpha=90^{\\circ}$. Tā kā rādiuss 
-$OD$ ir perpendikulārs taisnei $BD$, tad $BD$ ir pieskare.</p>
-<p>Līdzīgi iegūstam, ka ap trijstūri $DNC$ apvilktā riņķa līnija pieskaras taisnei
-$BD$. Tātad esam pierādījuši, ka abas riņķa līnijas pieskaras viena otrai 
-punktā $D$.</p>
-<p><img alt="" src="LV.VOL.2020.11.2A.png" /></p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2020.11.3..SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-Ievērojam, ka naturālu skaitli $n$, dalot ar $4$, var iegūt atlikumu $0, 1, 2$ 
-vai $3$, un atrodam, kādu atlikumu var iegūt, ja $n^{2}$ dala ar $4$:
-
-- ja $n \\equiv 0(\\bmod 4)$, tad $n^{2} \\equiv 0^{2} \\equiv 0(\\bmod 4)$;
-- ja $n \\equiv 1(\\bmod 4)$, tad $n^{2} \\equiv 1^{2} \\equiv 1(\\bmod 4)$;
-- ja $n \\equiv 2(\\bmod 4)$, tad $n^{2} \\equiv 2^{2} \\equiv 4 \\equiv 0(\\bmod 4)$;
-- ja $n \\equiv 3(\\bmod 4)$, tad $n^{2} \\equiv 3^{2} \\equiv 9 \\equiv 1(\\bmod 4)$.
-
-
-Tātad naturāla skaitļa kvadrātu, dalot ar $4$, var iegūt atlikumu $0$ vai $1$.
-
-Apskatot doto izteiksmi pēc moduļa $4$, iegūstam 
-$13^{n}+10^{n}+7^{n}+3^{n} \\equiv 1^{n}+2^{n}+(-1)^{n}+(-1)^{n}(\\bmod 4)$. Ja 
-$n=1$, tad $13+10+7+3=33$, kas nav naturāla skaitļa kvadrāts. Ja $n$ ir lielāks
-nekā $1$, tad $2^{n} \\equiv 0(\\bmod 4)$, un šķirojam divus gadījumus:
-
-- ja ir pāra skaitlis, tad 
-  $1^{n}+2^{n}+(-1)^{n}+(-1)^{n} \\equiv 1+0+1+1=3(\\bmod 4)$;
-- ja $n$ ir nepāra skaitlis, tad 
-  $1^{n}+2^{n}+(-1)^{n}+(-1)^{n} \\equiv 1+0-1-1=-1 \\equiv 3(\\bmod 4)$.
-
-Tātad dotā izteiksme, dalot ar $4$, dod atlikumu $3$, tātad tā nevar būt 
-naturāla skaitļa kvadrāts.
-
-$\\textit {Piezīme.}$ legūt pretrunu var arī apskatot doto izteiksmi pēc moduļa 
-$9$. Ja $n=1$, tad atlikums, dalot ar $9$, ir $6$, ja $n$ ir lielāks nekā $1$, 
-tad atlikums, dalot ar $9$, ir $3$, bet naturālu skaitļu kvadrātu vērtības pēc 
-moduļa $9$ var būt tikai $0, 1, 4$ vai $7$."""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Ievērojam, ka naturālu skaitli $n$, dalot ar $4$, var iegūt atlikumu $0, 1, 2$ 
-vai $3$, un atrodam, kādu atlikumu var iegūt, ja $n^{2}$ dala ar $4$:</p>
+<p>levērojam, ka $m \\neq$ 2019. Lai funkcija būtu augoša, jāizpildās nevienādībai $f(1)&lt;f(2)$. Atrisinām šo nevienādību:</p>
+<p>$$
+\\begin{aligned}
+m+(m-1)+\\frac{2020}{m-2019} &amp; &lt;4 m+(m-1) \\cdot 2+\\frac{2020}{m-2019} \\
+2 m-1 &amp; &lt;6 m-2 \\
+m &amp; &gt;\\frac{1}{4}
+\\end{aligned}
+$$</p>
+<p>Vēl jāgarantē, ka parabolas virsotne neatrodas intervālā $(1 ; 2)$. Tā kā $m$ vērtības ir pozitīvas, tad parabolas zari ir vērsti uz augšu un, lai dotajā intervālā funkcija būtu augoša, jāizpildās nevienādībai $x_{v} \\leq 1$ jeb $\\frac{1-m}{2 m} \\leq 1$. Reizinot nevienādību ar $2 m&gt;0$, iegūstam $1-m \\leq 2 m$ jeb $m \\geq \\frac{1}{3}$. Līdz ar to funkcija ir augoša intervālā $(1 ; 2)$, ja $m \\in\\left[\\frac{1}{3} ; 2019\\right) \\cup$ $\\cup(2019 ;+\\infty)$ .</p>
+<p><small></p>
 <ul>
-<li>ja $n \\equiv 0(\\bmod 4)$, tad $n^{2} \\equiv 0^{2} \\equiv 0(\\bmod 4)$;</li>
-<li>ja $n \\equiv 1(\\bmod 4)$, tad $n^{2} \\equiv 1^{2} \\equiv 1(\\bmod 4)$;</li>
-<li>ja $n \\equiv 2(\\bmod 4)$, tad $n^{2} \\equiv 2^{2} \\equiv 4 \\equiv 0(\\bmod 4)$;</li>
-<li>ja $n \\equiv 3(\\bmod 4)$, tad $n^{2} \\equiv 3^{2} \\equiv 9 \\equiv 1(\\bmod 4)$.</li>
+<li>questionType:</li>
+<li>domain:</li>
 </ul>
-<p>Tātad naturāla skaitļa kvadrātu, dalot ar $4$, var iegūt atlikumu $0$ vai $1$.</p>
-<p>Apskatot doto izteiksmi pēc moduļa $4$, iegūstam 
-$13^{n}+10^{n}+7^{n}+3^{n} \\equiv 1^{n}+2^{n}+(-1)^{n}+(-1)^{n}(\\bmod 4)$. Ja 
-$n=1$, tad $13+10+7+3=33$, kas nav naturāla skaitļa kvadrāts. Ja $n$ ir lielāks
-nekā $1$, tad $2^{n} \\equiv 0(\\bmod 4)$, un šķirojam divus gadījumus:</p>
-<ul>
-<li>ja ir pāra skaitlis, tad 
-  $1^{n}+2^{n}+(-1)^{n}+(-1)^{n} \\equiv 1+0+1+1=3(\\bmod 4)$;</li>
-<li>ja $n$ ir nepāra skaitlis, tad 
-  $1^{n}+2^{n}+(-1)^{n}+(-1)^{n} \\equiv 1+0-1-1=-1 \\equiv 3(\\bmod 4)$.</li>
-</ul>
-<p>Tātad dotā izteiksme, dalot ar $4$, dod atlikumu $3$, tātad tā nevar būt 
-naturāla skaitļa kvadrāts.</p>
-<p>$\\textit {Piezīme.}$ legūt pretrunu var arī apskatot doto izteiksmi pēc moduļa 
-$9$. Ja $n=1$, tad atlikums, dalot ar $9$, ir $6$, ja $n$ ir lielāks nekā $1$, 
-tad atlikums, dalot ar $9$, ir $3$, bet naturālu skaitļu kvadrātu vērtības pēc 
-moduļa $9$ var būt tikai $0, 1, 4$ vai $7$.</p>"""@lv .
+<p></small></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2020.11.4..SUB0 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2020.11.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+levērojam, ka $m \\neq 2019$. Ja $m<0$, tad parabolas virsotnes abscisa $\\frac{1-m}{2 m}<0$, kas nozīmē, ka funkcija nav augoša dotajā intervālā. Ja $m=0$, tad iegūstam $f(x)=-x-\\frac{2020}{2019}$ un tā ir dilstoša funkcija. Ja $m>0$, tad parabolas zari ir vērsti uz augšu un, lai dotajā intervālā funkcija būtu augoša, jāizpildās nevienādībai $\\frac{1-m}{2 m} \\leq 1$. Reizinot nevienādību ar $2 m>0$, iegūstam $1-m \\leq 2 m$ jeb $m \\geq \\frac{1}{3}$. Līdz ar to funkcija ir augoša intervālā $(1 ; 2)$, ja $m \\in\\left[\\frac{1}{3} ; 2019\\right) \\cup(2019 ;+\\infty)$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>levērojam, ka $m \\neq 2019$. Ja $m&lt;0$, tad parabolas virsotnes abscisa $\\frac{1-m}{2 m}&lt;0$, kas nozīmē, ka funkcija nav augoša dotajā intervālā. Ja $m=0$, tad iegūstam $f(x)=-x-\\frac{2020}{2019}$ un tā ir dilstoša funkcija. Ja $m&gt;0$, tad parabolas zari ir vērsti uz augšu un, lai dotajā intervālā funkcija būtu augoša, jāizpildās nevienādībai $\\frac{1-m}{2 m} \\leq 1$. Reizinot nevienādību ar $2 m&gt;0$, iegūstam $1-m \\leq 2 m$ jeb $m \\geq \\frac{1}{3}$. Līdz ar to funkcija ir augoša intervālā $(1 ; 2)$, ja $m \\in\\left[\\frac{1}{3} ; 2019\\right) \\cup(2019 ;+\\infty)$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2020.11.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Pamatosim, ka lielākā iespējamā indeksa $i$ vērtība ir $11$.
+Katrs naturāls skaitlis $k$ dotajā virknē atkārtojas $k$ reizes, noskaidrosim, ar kādiem indeksiem (kurās pozīcijās) tas tajā parādās.
 
-Apzīmējam $a_{2}=a_{1}+p$, kur $p>0$. Vispārīgā veidā izteiksim dažus nākamos 
-virknes locekļus:
+Pirms pirmā skaitla $k$ ir viens vieninieks, divi divnieki, trīs trijnieki, ..., $(k-1)$ skaitlis $(k-1)$, tātad kopā
 
-$$\\begin{gathered}
-a_{3}=a_{2}+a_{1}=2a_{1}+p \\\\
-a_{4}=a_{3}+a_{2}=2a_{1}+p+a_{1}+p=3a_{1}+2p \\\\
-a_{5}=5a_{1}+3p \\\\
-a_{6}=8a_{1}+5p \\\\
-a_{7}=13a_{1}+8p \\\\
-a_{8}=21a_{1}+13p \\\\
-a_{9}=34a_{1}+21p \\\\
-a_{10}=55a_{1}+34p \\\\
-a_{11}=89a_{1}+55p \\\\
-a_{12}=144a_{1}+89p
-\\end{gathered}$$
+$$
+1+2+\\ldots+(k-1)=\\frac{k^{2}-k}{2}
+$$
 
-Ievērojam, ka $a_{12}>100a_{1}$. Tātad $i \\leq 11$. Ja $a_{1}=5$ un $a_{2}=6$, 
-tad
+skaitli. Tātad skaitlim $k$ indeksi šajā virnē būs
 
-$$a_{11}=89a_{1}+55p=89 \\cdot 5+55=445+55=500=100a_{1}$$
+$$
+\\frac{k^{2}-k}{2}+1 ; \\frac{k^{2}-k}{2}+2 ; \\ldots ; \\frac{k^{2}-k}{2}+k
+$$
 
-$\\textit {Piezīme.}$ Lai atrastu $a_{1}$ un $a_{2}$ vērtības, jāatrisina 
-vienādojums $89a_{1}+55p=100a_{1}$."""@lv ;
+jeb, citiem vārdiem sakot, jebkurš skaitlis $k$ šajā virknē parādās ar indeksu $\\frac{k^{2}-k}{2}+i$, kur $1 \\leq i \\leq k$. Lai pierādītu formulu, jāpierāda, ka visiem naturāliem $k$ un visiem naturāliem $1 \\leq i \\leq k$ izpildās
+
+$$
+\\left[\\sqrt{2\\left(\\frac{k^{2}-k}{2}+i\\right)}+\\frac{1}{2}\\right]=k \\quad \\text { jeb } \\quad\\left[\\sqrt{k^{2}-k+2 i}+\\frac{1}{2}\\right]=k
+$$
+
+Vienādība $[x]=y$, kur $y$ ir naturāls skaitlis izpildās tad un tikai tad, ja $y \\leq x<y+1$, tāpēc vienādība pārvēršas par divkāršo nevienādību
+
+$$
+k \\leq \\sqrt{k^{2}-k+2 i}+\\frac{1}{2}<k+1
+$$
+
+Atņemot $\\frac{1}{2}$ un kāpinot kvadrātā, iegūstam
+
+$$
+\\begin{gathered}
+\\left(k-\\frac{1}{2}\\right)^{2} \\leq k^{2}-k+2 i<\\left(k+\\frac{1}{2}\\right)^{2} \\\\
+\\frac{1}{4} \\leq 2 i<2 k+\\frac{1}{4}
+\\end{gathered}
+$$
+
+Redzams, ka pēdējā nevienādība ir patiesa visiem $1 \\leq i \\leq k$. Tā kā visi pārveidojumi bija ekvivalenti (kvadrātā tika kāpinātas pozitīvas izteiksmes), tad sākotnējā izteiksme arī ir spēkā."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Pamatosim, ka lielākā iespējamā indeksa $i$ vērtība ir $11$.</p>
-<p>Apzīmējam $a_{2}=a_{1}+p$, kur $p&gt;0$. Vispārīgā veidā izteiksim dažus nākamos 
-virknes locekļus:</p>
-<p>$$\\begin{gathered}
-a_{3}=a_{2}+a_{1}=2a_{1}+p \\
-a_{4}=a_{3}+a_{2}=2a_{1}+p+a_{1}+p=3a_{1}+2p \\
-a_{5}=5a_{1}+3p \\
-a_{6}=8a_{1}+5p \\
-a_{7}=13a_{1}+8p \\
-a_{8}=21a_{1}+13p \\
-a_{9}=34a_{1}+21p \\
-a_{10}=55a_{1}+34p \\
-a_{11}=89a_{1}+55p \\
-a_{12}=144a_{1}+89p
-\\end{gathered}$$</p>
-<p>Ievērojam, ka $a_{12}&gt;100a_{1}$. Tātad $i \\leq 11$. Ja $a_{1}=5$ un $a_{2}=6$, 
-tad</p>
-<p>$$a_{11}=89a_{1}+55p=89 \\cdot 5+55=445+55=500=100a_{1}$$</p>
-<p>$\\textit {Piezīme.}$ Lai atrastu $a_{1}$ un $a_{2}$ vērtības, jāatrisina 
-vienādojums $89a_{1}+55p=100a_{1}$.</p>"""@lv .
+<p>Katrs naturāls skaitlis $k$ dotajā virknē atkārtojas $k$ reizes, noskaidrosim, ar kādiem indeksiem (kurās pozīcijās) tas tajā parādās.</p>
+<p>Pirms pirmā skaitla $k$ ir viens vieninieks, divi divnieki, trīs trijnieki, ..., $(k-1)$ skaitlis $(k-1)$, tātad kopā</p>
+<p>$$
+1+2+\\ldots+(k-1)=\\frac{k^{2}-k}{2}
+$$</p>
+<p>skaitli. Tātad skaitlim $k$ indeksi šajā virnē būs</p>
+<p>$$
+\\frac{k^{2}-k}{2}+1 ; \\frac{k^{2}-k}{2}+2 ; \\ldots ; \\frac{k^{2}-k}{2}+k
+$$</p>
+<p>jeb, citiem vārdiem sakot, jebkurš skaitlis $k$ šajā virknē parādās ar indeksu $\\frac{k^{2}-k}{2}+i$, kur $1 \\leq i \\leq k$. Lai pierādītu formulu, jāpierāda, ka visiem naturāliem $k$ un visiem naturāliem $1 \\leq i \\leq k$ izpildās</p>
+<p>$$
+\\left[\\sqrt{2\\left(\\frac{k^{2}-k}{2}+i\\right)}+\\frac{1}{2}\\right]=k \\quad \\text { jeb } \\quad\\left[\\sqrt{k^{2}-k+2 i}+\\frac{1}{2}\\right]=k
+$$</p>
+<p>Vienādība $[x]=y$, kur $y$ ir naturāls skaitlis izpildās tad un tikai tad, ja $y \\leq x&lt;y+1$, tāpēc vienādība pārvēršas par divkāršo nevienādību</p>
+<p>$$
+k \\leq \\sqrt{k^{2}-k+2 i}+\\frac{1}{2}&lt;k+1
+$$</p>
+<p>Atņemot $\\frac{1}{2}$ un kāpinot kvadrātā, iegūstam</p>
+<p>$$
+\\begin{gathered}
+\\left(k-\\frac{1}{2}\\right)^{2} \\leq k^{2}-k+2 i&lt;\\left(k+\\frac{1}{2}\\right)^{2} \\
+\\frac{1}{4} \\leq 2 i&lt;2 k+\\frac{1}{4}
+\\end{gathered}
+$$</p>
+<p>Redzams, ka pēdējā nevienādība ir patiesa visiem $1 \\leq i \\leq k$. Tā kā visi pārveidojumi bija ekvivalenti (kvadrātā tika kāpinātas pozitīvas izteiksmes), tad sākotnējā izteiksme arī ir spēkā.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2020.11.5..SUB0 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2020.11.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Pamatosim, ka trijstūra ar virsotnēm 
-$A\\left(x_{A}, y_{A}\\right), B\\left(x_{B}, y_{B}\\right)$ un 
-$C\\left(x_{C}, y_{C}\\right)$ mediānu krustpunkta $M$ koordinātas ir 
-$\\left(\\frac{x_{A}+x_{B}+x_{C}}{3}; \\frac{y_{A}+y_{B}+y_{C}}{3}\\right)$.
+Ja $X$ un $Y$ ir attiecīgi $\\triangle A B D$ un $\\triangle A B C$ ievilkto rinka līniju centri (skat. 6.att.), tad $A Y$ un $B Y$ ir attiecīgi $\\sphericalangle B A C$ un $\\sphericalangle A B C$ bisektrises. Tātad
 
-Izmantojot punkta $B$ un $C$ koordinātas, aprēķinām malas $BC$ viduspunkta $D$ 
-(skat. 10.att.) koordinātas, iegūstam 
-$D\\left(\\frac{x_{B}+x_{C}}{2}; \\frac{y_{B}+y_{C}}{2}\\right)$. Tad 
-$\\overrightarrow{AD}=\\left(\\frac{x_{B}+x_{C}}{2}-x_{A}; \\frac{y_{B}+y_{C}}{2}-y_{A}\\right)$.
-Tā kā $\\frac{AM}{MD}=\\frac{2}{1}$, tad
+$$
+\\begin{gathered}
+\\sphericalangle A Y B=180^{\\circ}-(\\sphericalangle B A Y+\\sphericalangle A B Y)=180^{\\circ}-\\frac{1}{2}(\\sphericalangle B A C+\\sphericalangle A B C)= \\\\
+=\\sphericalangle B A C+\\sphericalangle A B C+\\sphericalangle A C B-\\frac{1}{2}(\\sphericalangle B A C+\\sphericalangle A B C)= \\\\
+=\\frac{1}{2}(\\sphericalangle B A C+\\sphericalangle A B C+\\sphericalangle A C B)+\\frac{1}{2} \\sphericalangle A C B=90^{\\circ}+\\frac{1}{2} \\sphericalangle A C B .
+\\end{gathered}
+$$
 
-$$\\overrightarrow{AM}=\\frac{2}{3} \\overrightarrow{AD}=\\left(\\frac{x_{B}+x_{C}-2 x_{A}}{3}; \\frac{y_{B}+y_{C}-2 y_{A}}{3}\\right)$$
+Līdzīgi $\\sphericalangle A X B=90^{\\circ}+\\frac{1}{2} \\sphericalangle A D B$.
 
-Izmantojot vektora $\\overrightarrow{AM}$ koordinātas un punkta $A$ koordinātas,
-nosakām punkta $M$ koordinātas: 
-$M\\left(\\frac{x_{B}+x_{C}-2x_{A}}{3}+x_{A}; \\frac{y_{B}+y_{C}-2y_{A}}{3}+y_{A}\\right)$
-jeb $M\\left(\\frac{x_{A}+x_{B}+x_{C}}{3}, \\frac{y_{A}+y_{B}+y_{C}}{3}\\right)$.
+Tā kā $\\sphericalangle A C B=\\sphericalangle A D B$ kā ievilktie lenki, kas balstās uz vienu un to pašu loku, tad $\\sphericalangle A Y B=\\sphericalangle A X B$. Tātad punkti $A, X, Y, B$ atrodas uz vienas rinka līnijas. Līdz ar to $\\sphericalangle X Y B=180^{\\circ}-\\sphericalangle X A B=180^{\\circ}-\\frac{1}{2} \\sphericalangle D A B$.
 
-Tātad trijstūrim, kura koordinātas ir veseli skaitļi 
-$\\left(x_{A}; y_{A}\\right),\\left(x_{B}; y_{B}\\right)$ un 
-$\\left(x_{C}; y_{C}\\right)$ mediānu krustpunkta koordinātas ir veseli skaitļi 
-tad un tikai tad, ja $\\left(x_{A}+x_{B}+x_{C}\\right)$ un 
-$\\left(y_{A}+y_{B}+y_{C}\\right)$ dalās ar $3$.
+Ja $Z$ ir $\\triangle B C D$ ievilktās riņka līnijas centrs, tad līdzīgi iegūstam, ka $\\sphericalangle Z Y B=180^{\\circ}-\\frac{1}{2} \\sphericalangle D C B$.
 
-![](LV.VOL.2020.11.5A.png)
+Izmantojot šīs divas vienādības, iegūstam
 
-a) Nē, ne noteikti. Piemēram nekādiem trīs no šiem astoņiem punktiem 
-$(3; 0), (0; 3), (6; 1), (0; 4), (1; 0), (4; 3), (4; 1)$ un $(1; 7)$ nav spēkā,
-ka $\\left(x_{A}+x_{B}+x_{C}\\right)$ un $\\left(y_{A}+y_{B}+y_{C}\\right)$ dalās 
-ar $3$, jo šo punktu koordinātas pēc moduļa $3$ ir $(0; 0), (0; 1), (1; 0)$ un 
-$(1; 1)$ (katra vērtība divas reizes), redzams, ka, summējot $3$ no šiem, nevar
-iegūt ne summu $(0; 0)$, ne $(0; 3)$, ne $(3; 0)$, ne $(3; 3)$.
-b) Jā, noteikti. Apskatot patvaļīga punkta koordinātas pēc moduļa $3$, var 
-iegūt $9$ dažādus gadījumus (skat. 11.att.).
+$$
+\\begin{gathered}
+\\sphericalangle X Y Z=360^{\\circ}-\\sphericalangle X Y B-\\sphericalangle Z Y B=360^{\\circ}-\\left(180^{\\circ}-\\frac{1}{2} \\sphericalangle D A B\\right)-\\left(180^{\\circ}-\\frac{1}{2} \\sphericalangle D C B\\right)= \\\\
+=\\frac{1}{2}(\\sphericalangle D A B+\\sphericalangle D C B)=\\frac{1}{2} \\cdot 180^{\\circ}=90^{\\circ} .
+\\end{gathered}
+$$
 
-![](LV.VOL.2020.11.5B.png)
+Līdzīgi pierāda, ka arī pārējie četrstūra leņki ir taisni, tātad tas ir taisnstūris.
 
-Katru no dotajiem $9$ punktiem "ievietosim" atbilstošajā rūtiņā. Ja kādā rūtiņā
-ir ievietoti trīs punkti, tad tos varam ņemt par trijstūra virsotnēm. Ja nav 
-tādas rūtiņas, kurā ir ievietoti vismaz $3$ punkti, tad katrā rūtiņā ir 
-ievietoti ne vairāk kā $2$ punkti. Tā kā kopā ir $9$ punkti, tad ir aizpildītas
-vismaz $5$ rūtiņas. Pietiek apskatīt situāciju, kad ir aizpildītas $5$ rūtiņas.
-Apskatīsim iespējamos gadījumus:
+![](https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-06.jpg?height=454&width=462&top_left_y=586&top_left_x=823)
 
-- ja ir tāda rinda, kolonna vai diagonāle, kurā visas rūtiņas ir aizpildītas, 
-  tad izvēlamies pa vienam punktam no katras šīs rindas (kolonnas vai 
-  diagonāles) rūtiņas - tie ir meklētā trijstūra virsotnes;
-- ja nav ne tāda rinda, ne kolonna, kurā visas rūtiņas ir aizpildītas, tad ir 
-  tieši divas tādas rindas, kurās ir pa divām aizpildītām rūtiņām un tieši 
-  viena rinda, kurā ir aizpildīta viena rūtiņa, tas pats attiecas arī uz 
-  kolonnām.
-* Apskatām gadījumu, kad ir tāda aizpildīta rūtiņa, kas ir vienīgā aizpildītā 
-  rūtiņa gan rindā, gan kolonnā. Apzīmējam tajā ievietotā punkta koordinātas 
-  pēc moduļa $3$ ar $\\left(a_{1}; b_{1}\\right)$. Pārējo četru punktu 
-  koordinātas ir 
-  $\\left(a_{2}; b_{2}\\right),\\left(a_{2}; b_{3}\\right),\\left(a_{3}; b_{2}\\right),\\left(a_{3}; b_{3}\\right)$,
-  kur $a_{i}, b_{i} \\in\\{0, 1, 2\\}$, turklāt visi $a_{i}$ ir atšķirīgi un visi 
-  $b_{i}$ ir atšķirīgi. Tad par trijstūra virsotnēm izvēlamies tādus trīs 
-  punktus, lai $a_{1}+a_{2}+a_{3} \\equiv 0+1+2 \\equiv 0(\\bmod 3)$ un arī 
-  $b_{1}+b_{2}+b_{3} \\equiv 0+1+2 \\equiv 0(\\bmod 3)$. Piemēram, var izvēlēties 
-  punktus, kuru koordinātas pēc moduļa $3$ ir 
-  $\\left(a_{1}; b_{1}\\right),\\left(a_{2}; b_{2}\\right),\\left(a_{3}; b_{3}\\right)$.
-* Apskatām gadījumu, kad ir tāda rūtiņa, kas ir vienīgā aizpildītā rūtiņa 
-  rindā, bet ne kolonnā. Šajā rūtiņā ievietotā punkta koordinātas pēc moduļa 
-  $3$ apzīmējam ar $\\left(a_{1}; b_{1}\\right)$. Tātad noteikti ir cita tāda 
-  rūtiņa, kas ir vienīgā aizpildītā rūtiņa kolonnā. Šajā rūtiņā ievietotā 
-  punkta koordinātas pēc moduļa $3$ apzīmējam ar $\\left(a_{2}; b_{2}\\right)$. 
-  Tā kā abās pārējās kolonnās ir pa divām aizpildītām rūtiņām un nevar būt 
-  aizpildīta rūtiņa, kurā ievietotā punkta koordinātas pēc moduļa $3$ ir 
-  $\\left(a_{1}; b_{3}\\right)$, tad noteikti ir aizpildītas rūtiņas, kurās 
-  ievietoto punktu koordinātas pēc moduļa $3$ ir $\\left(a_{2}; b_{3}\\right)$ un
-  $\\left(a_{3}; b_{3}\\right)$. Tad par trijstūra virsotnēm izvēlamies tādus 
-  trīs punktus, lai $a_{1}+a_{2}+a_{3} \\equiv 0+1+2 \\equiv 0(\\bmod 3)$ un arī 
-  $b_{1}+b_{2}+b_{3} \\equiv 0+1+2 \\equiv 0(\\bmod 3)$. Piemēram, var izvēlēties 
-  punktus, kuru koordinātas pēc moduļa $3$ ir 
-  $\\left(a_{1}; b_{1}\\right),\\left(a_{2}; b_{2}\\right),\\left(a_{3}; b_{3}\\right)$."""@lv ;
+6.att."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Pamatosim, ka trijstūra ar virsotnēm 
-$A\\left(x_{A}, y_{A}\\right), B\\left(x_{B}, y_{B}\\right)$ un 
-$C\\left(x_{C}, y_{C}\\right)$ mediānu krustpunkta $M$ koordinātas ir 
-$\\left(\\frac{x_{A}+x_{B}+x_{C}}{3}; \\frac{y_{A}+y_{B}+y_{C}}{3}\\right)$.</p>
-<p>Izmantojot punkta $B$ un $C$ koordinātas, aprēķinām malas $BC$ viduspunkta $D$ 
-(skat. 10.att.) koordinātas, iegūstam 
-$D\\left(\\frac{x_{B}+x_{C}}{2}; \\frac{y_{B}+y_{C}}{2}\\right)$. Tad 
-$\\overrightarrow{AD}=\\left(\\frac{x_{B}+x_{C}}{2}-x_{A}; \\frac{y_{B}+y_{C}}{2}-y_{A}\\right)$.
-Tā kā $\\frac{AM}{MD}=\\frac{2}{1}$, tad</p>
-<p>$$\\overrightarrow{AM}=\\frac{2}{3} \\overrightarrow{AD}=\\left(\\frac{x_{B}+x_{C}-2 x_{A}}{3}; \\frac{y_{B}+y_{C}-2 y_{A}}{3}\\right)$$</p>
-<p>Izmantojot vektora $\\overrightarrow{AM}$ koordinātas un punkta $A$ koordinātas,
-nosakām punkta $M$ koordinātas: 
-$M\\left(\\frac{x_{B}+x_{C}-2x_{A}}{3}+x_{A}; \\frac{y_{B}+y_{C}-2y_{A}}{3}+y_{A}\\right)$
-jeb $M\\left(\\frac{x_{A}+x_{B}+x_{C}}{3}, \\frac{y_{A}+y_{B}+y_{C}}{3}\\right)$.</p>
-<p>Tātad trijstūrim, kura koordinātas ir veseli skaitļi 
-$\\left(x_{A}; y_{A}\\right),\\left(x_{B}; y_{B}\\right)$ un 
-$\\left(x_{C}; y_{C}\\right)$ mediānu krustpunkta koordinātas ir veseli skaitļi 
-tad un tikai tad, ja $\\left(x_{A}+x_{B}+x_{C}\\right)$ un 
-$\\left(y_{A}+y_{B}+y_{C}\\right)$ dalās ar $3$.</p>
-<p><img alt="" src="LV.VOL.2020.11.5A.png" /></p>
-<p>a) Nē, ne noteikti. Piemēram nekādiem trīs no šiem astoņiem punktiem 
-$(3; 0), (0; 3), (6; 1), (0; 4), (1; 0), (4; 3), (4; 1)$ un $(1; 7)$ nav spēkā,
-ka $\\left(x_{A}+x_{B}+x_{C}\\right)$ un $\\left(y_{A}+y_{B}+y_{C}\\right)$ dalās 
-ar $3$, jo šo punktu koordinātas pēc moduļa $3$ ir $(0; 0), (0; 1), (1; 0)$ un 
-$(1; 1)$ (katra vērtība divas reizes), redzams, ka, summējot $3$ no šiem, nevar
-iegūt ne summu $(0; 0)$, ne $(0; 3)$, ne $(3; 0)$, ne $(3; 3)$.
-b) Jā, noteikti. Apskatot patvaļīga punkta koordinātas pēc moduļa $3$, var 
-iegūt $9$ dažādus gadījumus (skat. 11.att.).</p>
-<p><img alt="" src="LV.VOL.2020.11.5B.png" /></p>
-<p>Katru no dotajiem $9$ punktiem "ievietosim" atbilstošajā rūtiņā. Ja kādā rūtiņā
-ir ievietoti trīs punkti, tad tos varam ņemt par trijstūra virsotnēm. Ja nav 
-tādas rūtiņas, kurā ir ievietoti vismaz $3$ punkti, tad katrā rūtiņā ir 
-ievietoti ne vairāk kā $2$ punkti. Tā kā kopā ir $9$ punkti, tad ir aizpildītas
-vismaz $5$ rūtiņas. Pietiek apskatīt situāciju, kad ir aizpildītas $5$ rūtiņas.
-Apskatīsim iespējamos gadījumus:</p>
+<p>Ja $X$ un $Y$ ir attiecīgi $\\triangle A B D$ un $\\triangle A B C$ ievilkto rinka līniju centri (skat. 6.att.), tad $A Y$ un $B Y$ ir attiecīgi $\\sphericalangle B A C$ un $\\sphericalangle A B C$ bisektrises. Tātad</p>
+<p>$$
+\\begin{gathered}
+\\sphericalangle A Y B=180^{\\circ}-(\\sphericalangle B A Y+\\sphericalangle A B Y)=180^{\\circ}-\\frac{1}{2}(\\sphericalangle B A C+\\sphericalangle A B C)= \\
+=\\sphericalangle B A C+\\sphericalangle A B C+\\sphericalangle A C B-\\frac{1}{2}(\\sphericalangle B A C+\\sphericalangle A B C)= \\
+=\\frac{1}{2}(\\sphericalangle B A C+\\sphericalangle A B C+\\sphericalangle A C B)+\\frac{1}{2} \\sphericalangle A C B=90^{\\circ}+\\frac{1}{2} \\sphericalangle A C B .
+\\end{gathered}
+$$</p>
+<p>Līdzīgi $\\sphericalangle A X B=90^{\\circ}+\\frac{1}{2} \\sphericalangle A D B$.</p>
+<p>Tā kā $\\sphericalangle A C B=\\sphericalangle A D B$ kā ievilktie lenki, kas balstās uz vienu un to pašu loku, tad $\\sphericalangle A Y B=\\sphericalangle A X B$. Tātad punkti $A, X, Y, B$ atrodas uz vienas rinka līnijas. Līdz ar to $\\sphericalangle X Y B=180^{\\circ}-\\sphericalangle X A B=180^{\\circ}-\\frac{1}{2} \\sphericalangle D A B$.</p>
+<p>Ja $Z$ ir $\\triangle B C D$ ievilktās riņka līnijas centrs, tad līdzīgi iegūstam, ka $\\sphericalangle Z Y B=180^{\\circ}-\\frac{1}{2} \\sphericalangle D C B$.</p>
+<p>Izmantojot šīs divas vienādības, iegūstam</p>
+<p>$$
+\\begin{gathered}
+\\sphericalangle X Y Z=360^{\\circ}-\\sphericalangle X Y B-\\sphericalangle Z Y B=360^{\\circ}-\\left(180^{\\circ}-\\frac{1}{2} \\sphericalangle D A B\\right)-\\left(180^{\\circ}-\\frac{1}{2} \\sphericalangle D C B\\right)= \\
+=\\frac{1}{2}(\\sphericalangle D A B+\\sphericalangle D C B)=\\frac{1}{2} \\cdot 180^{\\circ}=90^{\\circ} .
+\\end{gathered}
+$$</p>
+<p>Līdzīgi pierāda, ka arī pārējie četrstūra leņki ir taisni, tātad tas ir taisnstūris.</p>
+<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-06.jpg?height=454&amp;width=462&amp;top_left_y=586&amp;top_left_x=823" /></p>
+<p>6.att.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2020.11.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+a) Nē, saknes nevar būt veseli skaitļi. levērojam, ka $c \\neq 0$, jo pretējā gadījumā $\\overline{a b c}$ nav pirmskaitlis. Tas nozīmē, ka 0 nav vienādojuma sakne. Ja $x \\geq 0$, tad $a x^{2}+b x+c \\geq c>0$. Tātad vienādojumam var būt tikai negatīvas saknes. Apzīmējot saknes ar $-x_{1},-x_{2}$ un sadalot kreisās puses izteiksmi reizinātājos, iegūstam
+
+$$
+a x^{2}+b x+c=a\\left(x+x_{1}\\right)\\left(x+x_{2}\\right)
+$$
+
+Pieņemsim, ka šīs saknes ir veseli skaitļi. Ja $x=10$, tad iegūstam
+
+$$
+a\\left(10+x_{1}\\right)\\left(10+x_{2}\\right)=100 a+10 b+c=\\overline{a b c}
+$$
+
+Tātad esam ieguvuši, ka $\\overline{a b c}$ ir salikts skaitlis, kas ir pretrunā ar doto. Līdz ar to vienādojumam nav veselu sakņu.
+
+b) Nē, saknes nevar būt racionāli skaitļi. Pienemsim pretējo, ka saknes vienādojumam ir racionālas, tas ir, $-\\frac{p_{1}}{q_{1}}$ un $-\\frac{p_{2}}{q_{2}}$, kur $p_{1}, q_{1}$ ir savstarpēji pirmskaitli un arī $p_{2}, q_{2}$ ir savstarpēji pirmskaitli. Sadalām vienādojuma kreiso pusi reizinātājos:
+
+$$
+a x^{2}+b x+c=a\\left(x+\\frac{p_{1}}{q_{1}}\\right)\\left(x+\\frac{p_{2}}{q_{2}}\\right)=\\frac{a}{q_{1} q_{2}}\\left(q_{1} x+p_{1}\\right)\\left(q_{2} x+p_{2}\\right)
+$$
+
+Ievietojot $x=10$, iegūstam
+
+$$
+\\begin{gathered}
+\\frac{a}{q_{1} q_{2}}\\left(10 q_{1}+p_{1}\\right)\\left(10 q_{2}+p_{2}\\right)=100 a+10\\left(\\frac{p_{1}}{q_{1}}+\\frac{p_{2}}{q_{2}}\\right)+\\frac{p_{1} p_{2}}{q_{1} q_{2}}=100 a+10 b+c=\\overline{a b c} \\\\
+a\\left(10 q_{1}+p_{1}\\right)\\left(10 q_{2}+p_{2}\\right)=\\overline{a b c} \\cdot q_{1} q_{2}
+\\end{gathered}
+$$
+
+Pamatosim, ja kvadrātvienādojuma $a x^{2}+b x+c=0$ sakne ir $\\frac{p}{q}$ (nesaīsināma daļa), tad $a$ dalās ar $q$. levietojam vienādojumā $a x^{2}+b x+c=0$ tā sakni $x=\\frac{p}{q}$ un pārveidojam iegūto identitāti:
+
+$$
+\\begin{gathered}
+a\\left(\\frac{p}{q}\\right)^{2}+b\\left(\\frac{p}{q}\\right)+c=0 \\\\
+a p^{2}+b p q+c q^{2}=0 \\\\
+q(c q+b p)=-a p^{2}
+\\end{gathered}
+$$
+
+Tā kā pēdējās vienādības kreisā puse dalās ar $q$, tad arī labās puses izteiksmei jādalās ar $q$. Nemot vērā, ka pēc pieņēmuma $p$ un $q$ ir savstarpēji pirmskaitli, secinām, ka $a$ ir jādalās ar $q$.
+
+Līdz ar to secinām, ka $q_{i}$ ir viencipara skaitlis, jo $a$ ir cipars.
+
+Analogi iegūst, ka $c$ dalās ar $p_{i}$. Tas nozīmē, ka $10 q_{i}+p_{i}$ ir divciparu skaitlis.
+
+Tātad vienādība $q_{1} q_{2} \\cdot \\overline{a b c}=a\\left(10 q_{1}+p_{1}\\right)\\left(10 q_{2}+p_{2}\\right)$ nevar pastāvēt, jo kreisajā pusē ir reizinātājs $\\overline{a b c}$ (trīsciparu pirmskaitlis), bet labajā pusē $a$ ir viencipara skaitlis un pārējie reizinātāji - divciparu. Līdz ar to dotā vienādojuma saknes nav racionāli skaitli."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>a) Nē, saknes nevar būt veseli skaitļi. levērojam, ka $c \\neq 0$, jo pretējā gadījumā $\\overline{a b c}$ nav pirmskaitlis. Tas nozīmē, ka 0 nav vienādojuma sakne. Ja $x \\geq 0$, tad $a x^{2}+b x+c \\geq c&gt;0$. Tātad vienādojumam var būt tikai negatīvas saknes. Apzīmējot saknes ar $-x_{1},-x_{2}$ un sadalot kreisās puses izteiksmi reizinātājos, iegūstam</p>
+<p>$$
+a x^{2}+b x+c=a\\left(x+x_{1}\\right)\\left(x+x_{2}\\right)
+$$</p>
+<p>Pieņemsim, ka šīs saknes ir veseli skaitļi. Ja $x=10$, tad iegūstam</p>
+<p>$$
+a\\left(10+x_{1}\\right)\\left(10+x_{2}\\right)=100 a+10 b+c=\\overline{a b c}
+$$</p>
+<p>Tātad esam ieguvuši, ka $\\overline{a b c}$ ir salikts skaitlis, kas ir pretrunā ar doto. Līdz ar to vienādojumam nav veselu sakņu.</p>
+<p>b) Nē, saknes nevar būt racionāli skaitļi. Pienemsim pretējo, ka saknes vienādojumam ir racionālas, tas ir, $-\\frac{p_{1}}{q_{1}}$ un $-\\frac{p_{2}}{q_{2}}$, kur $p_{1}, q_{1}$ ir savstarpēji pirmskaitli un arī $p_{2}, q_{2}$ ir savstarpēji pirmskaitli. Sadalām vienādojuma kreiso pusi reizinātājos:</p>
+<p>$$
+a x^{2}+b x+c=a\\left(x+\\frac{p_{1}}{q_{1}}\\right)\\left(x+\\frac{p_{2}}{q_{2}}\\right)=\\frac{a}{q_{1} q_{2}}\\left(q_{1} x+p_{1}\\right)\\left(q_{2} x+p_{2}\\right)
+$$</p>
+<p>Ievietojot $x=10$, iegūstam</p>
+<p>$$
+\\begin{gathered}
+\\frac{a}{q_{1} q_{2}}\\left(10 q_{1}+p_{1}\\right)\\left(10 q_{2}+p_{2}\\right)=100 a+10\\left(\\frac{p_{1}}{q_{1}}+\\frac{p_{2}}{q_{2}}\\right)+\\frac{p_{1} p_{2}}{q_{1} q_{2}}=100 a+10 b+c=\\overline{a b c} \\
+a\\left(10 q_{1}+p_{1}\\right)\\left(10 q_{2}+p_{2}\\right)=\\overline{a b c} \\cdot q_{1} q_{2}
+\\end{gathered}
+$$</p>
+<p>Pamatosim, ja kvadrātvienādojuma $a x^{2}+b x+c=0$ sakne ir $\\frac{p}{q}$ (nesaīsināma daļa), tad $a$ dalās ar $q$. levietojam vienādojumā $a x^{2}+b x+c=0$ tā sakni $x=\\frac{p}{q}$ un pārveidojam iegūto identitāti:</p>
+<p>$$
+\\begin{gathered}
+a\\left(\\frac{p}{q}\\right)^{2}+b\\left(\\frac{p}{q}\\right)+c=0 \\
+a p^{2}+b p q+c q^{2}=0 \\
+q(c q+b p)=-a p^{2}
+\\end{gathered}
+$$</p>
+<p>Tā kā pēdējās vienādības kreisā puse dalās ar $q$, tad arī labās puses izteiksmei jādalās ar $q$. Nemot vērā, ka pēc pieņēmuma $p$ un $q$ ir savstarpēji pirmskaitli, secinām, ka $a$ ir jādalās ar $q$.</p>
+<p>Līdz ar to secinām, ka $q_{i}$ ir viencipara skaitlis, jo $a$ ir cipars.</p>
+<p>Analogi iegūst, ka $c$ dalās ar $p_{i}$. Tas nozīmē, ka $10 q_{i}+p_{i}$ ir divciparu skaitlis.</p>
+<p>Tātad vienādība $q_{1} q_{2} \\cdot \\overline{a b c}=a\\left(10 q_{1}+p_{1}\\right)\\left(10 q_{2}+p_{2}\\right)$ nevar pastāvēt, jo kreisajā pusē ir reizinātājs $\\overline{a b c}$ (trīsciparu pirmskaitlis), bet labajā pusē $a$ ir viencipara skaitlis un pārējie reizinātāji - divciparu. Līdz ar to dotā vienādojuma saknes nav racionāli skaitli.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2020.11.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Lielākā $N$ vērtība ir 6. Pamatosim, ja iekrāsotas 6 rūtinas, tad jebkuram krāsojumam izpildās uzdevuma nosacījumi. Ja kādā rindā ir vairāk nekā divas iekrāsotas rūtinas, tad izvēlamies šo rindu un vēl kādu rindu, kurā ir kāda iekrāsota rūtina. Tātad izvēlētajās divās rindās jau ir vismaz četras iekrāsotas rūtinas. Tā kā ir palikušas divas iekrāsotas rūtinas, tad pietiek izvēlēties divas kolonnas, lai iekrāsotās rūtiņas atrastos šajās kolonnās.
+
+Ja nevienā rindā nav vairāk kā divas iekrāsotas rūtiņas, tad pēc Dirihlē principa divas iekrāsotas rūtinas ir vismaz divās rindās. Izvēlamies šīs divas (vai divas no trim, ja trīs rindās ir pa divām iekrāsotām rūtiņām) rindas. Tad izvēlētajās divās rindās jau ir tieši četras iekrāsotas rūtinas. Tā kā ir palikušas divas iekrāsotas rūtinas, tad pietiek izvēēeties divas kolonnas, lai iekrāsotās rūtiņas atrastos šajās kolonnās.
+
+Pamatosim, ka lielākām $N$ vētībām īpašība nav spēkā visām tabulām. Ja $N=7$, tad īpašība nav spēkā, piemēram, 7.att. dotajam rūtinuu izvietojumam. levērojam, ka, izvēloties jebkuras divas rindas, paliek trīs kolonnas, kurās atrodas iekrāsotās rūtiņas.
+
+![](https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-07.jpg?height=237&width=215&top_left_y=1193&top_left_x=955)
+
+7.att."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Lielākā $N$ vērtība ir 6. Pamatosim, ja iekrāsotas 6 rūtinas, tad jebkuram krāsojumam izpildās uzdevuma nosacījumi. Ja kādā rindā ir vairāk nekā divas iekrāsotas rūtinas, tad izvēlamies šo rindu un vēl kādu rindu, kurā ir kāda iekrāsota rūtina. Tātad izvēlētajās divās rindās jau ir vismaz četras iekrāsotas rūtinas. Tā kā ir palikušas divas iekrāsotas rūtinas, tad pietiek izvēlēties divas kolonnas, lai iekrāsotās rūtiņas atrastos šajās kolonnās.</p>
+<p>Ja nevienā rindā nav vairāk kā divas iekrāsotas rūtiņas, tad pēc Dirihlē principa divas iekrāsotas rūtinas ir vismaz divās rindās. Izvēlamies šīs divas (vai divas no trim, ja trīs rindās ir pa divām iekrāsotām rūtiņām) rindas. Tad izvēlētajās divās rindās jau ir tieši četras iekrāsotas rūtinas. Tā kā ir palikušas divas iekrāsotas rūtinas, tad pietiek izvēēeties divas kolonnas, lai iekrāsotās rūtiņas atrastos šajās kolonnās.</p>
+<p>Pamatosim, ka lielākām $N$ vētībām īpašība nav spēkā visām tabulām. Ja $N=7$, tad īpašība nav spēkā, piemēram, 7.att. dotajam rūtinuu izvietojumam. levērojam, ka, izvēloties jebkuras divas rindas, paliek trīs kolonnas, kurās atrodas iekrāsotās rūtiņas.</p>
+<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-07.jpg?height=237&amp;width=215&amp;top_left_y=1193&amp;top_left_x=955" /></p>
+<p>7.att.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2020.12.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Nē, 2019-ais loceklis var nebūt naturāls skaitlis, piemēram, ja $b_{1}=1 \\in \\mathbb{N}$ un $q=\\sqrt[3]{2}$, tad
+
+- $b_{10}=b_{1} \\cdot q^{9}=(\\sqrt[3]{2})^{9}=2^{3}=8 \\in \\mathbb{N}$,
+- $b_{2020}=b_{1} \\cdot q^{2019}=(\\sqrt[3]{2})^{2019}=2^{673} \\in \\mathbb{N}$,
+- $b_{2019}=b_{1} \\cdot q^{2018}=(\\sqrt[3]{2})^{2016} \\cdot(\\sqrt[3]{2})^{2}=2^{672} \\cdot \\sqrt[3]{4}$, kas nav naturāls skaitlis."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Nē, 2019-ais loceklis var nebūt naturāls skaitlis, piemēram, ja $b_{1}=1 \\in \\mathbb{N}$ un $q=\\sqrt[3]{2}$, tad</p>
 <ul>
-<li>ja ir tāda rinda, kolonna vai diagonāle, kurā visas rūtiņas ir aizpildītas, 
-  tad izvēlamies pa vienam punktam no katras šīs rindas (kolonnas vai 
-  diagonāles) rūtiņas - tie ir meklētā trijstūra virsotnes;</li>
-<li>ja nav ne tāda rinda, ne kolonna, kurā visas rūtiņas ir aizpildītas, tad ir 
-  tieši divas tādas rindas, kurās ir pa divām aizpildītām rūtiņām un tieši 
-  viena rinda, kurā ir aizpildīta viena rūtiņa, tas pats attiecas arī uz 
-  kolonnām.</li>
-<li>Apskatām gadījumu, kad ir tāda aizpildīta rūtiņa, kas ir vienīgā aizpildītā 
-  rūtiņa gan rindā, gan kolonnā. Apzīmējam tajā ievietotā punkta koordinātas 
-  pēc moduļa $3$ ar $\\left(a_{1}; b_{1}\\right)$. Pārējo četru punktu 
-  koordinātas ir 
-  $\\left(a_{2}; b_{2}\\right),\\left(a_{2}; b_{3}\\right),\\left(a_{3}; b_{2}\\right),\\left(a_{3}; b_{3}\\right)$,
-  kur $a_{i}, b_{i} \\in{0, 1, 2}$, turklāt visi $a_{i}$ ir atšķirīgi un visi 
-  $b_{i}$ ir atšķirīgi. Tad par trijstūra virsotnēm izvēlamies tādus trīs 
-  punktus, lai $a_{1}+a_{2}+a_{3} \\equiv 0+1+2 \\equiv 0(\\bmod 3)$ un arī 
-  $b_{1}+b_{2}+b_{3} \\equiv 0+1+2 \\equiv 0(\\bmod 3)$. Piemēram, var izvēlēties 
-  punktus, kuru koordinātas pēc moduļa $3$ ir 
-  $\\left(a_{1}; b_{1}\\right),\\left(a_{2}; b_{2}\\right),\\left(a_{3}; b_{3}\\right)$.</li>
-<li>Apskatām gadījumu, kad ir tāda rūtiņa, kas ir vienīgā aizpildītā rūtiņa 
-  rindā, bet ne kolonnā. Šajā rūtiņā ievietotā punkta koordinātas pēc moduļa 
-  $3$ apzīmējam ar $\\left(a_{1}; b_{1}\\right)$. Tātad noteikti ir cita tāda 
-  rūtiņa, kas ir vienīgā aizpildītā rūtiņa kolonnā. Šajā rūtiņā ievietotā 
-  punkta koordinātas pēc moduļa $3$ apzīmējam ar $\\left(a_{2}; b_{2}\\right)$. 
-  Tā kā abās pārējās kolonnās ir pa divām aizpildītām rūtiņām un nevar būt 
-  aizpildīta rūtiņa, kurā ievietotā punkta koordinātas pēc moduļa $3$ ir 
-  $\\left(a_{1}; b_{3}\\right)$, tad noteikti ir aizpildītas rūtiņas, kurās 
-  ievietoto punktu koordinātas pēc moduļa $3$ ir $\\left(a_{2}; b_{3}\\right)$ un
-  $\\left(a_{3}; b_{3}\\right)$. Tad par trijstūra virsotnēm izvēlamies tādus 
-  trīs punktus, lai $a_{1}+a_{2}+a_{3} \\equiv 0+1+2 \\equiv 0(\\bmod 3)$ un arī 
-  $b_{1}+b_{2}+b_{3} \\equiv 0+1+2 \\equiv 0(\\bmod 3)$. Piemēram, var izvēlēties 
-  punktus, kuru koordinātas pēc moduļa $3$ ir 
-  $\\left(a_{1}; b_{1}\\right),\\left(a_{2}; b_{2}\\right),\\left(a_{3}; b_{3}\\right)$.</li>
+<li>$b_{10}=b_{1} \\cdot q^{9}=(\\sqrt[3]{2})^{9}=2^{3}=8 \\in \\mathbb{N}$,</li>
+<li>$b_{2020}=b_{1} \\cdot q^{2019}=(\\sqrt[3]{2})^{2019}=2^{673} \\in \\mathbb{N}$,</li>
+<li>$b_{2019}=b_{1} \\cdot q^{2018}=(\\sqrt[3]{2})^{2016} \\cdot(\\sqrt[3]{2})^{2}=2^{672} \\cdot \\sqrt[3]{4}$, kas nav naturāls skaitlis.</li>
 </ul>"""@lv .
 
-eliozo:SOLN.LV.VOL.2020.12.1..SUB0 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2020.12.2.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Ievērojot, ka $x_{1}, x_{2}, x_{3}$ ir dotā vienādojuma saknes, to var 
-pārrakstīt formā 
-$x^{3}-px+2019=\\left(x-x_{1}\\right)\\left(x-x_{2}\\right)\\left(x-x_{3}\\right)=0$.
-Grupējot locekļus, iegūsim šādas sakarības:
+Pārveidojam doto izteiksmi un lietojam nevienādību $\\frac{a}{b}+\\frac{b}{a} \\geq 2$ :
 
-$$\\left\\{\\begin{array}{l}
-x_{1}+x_{2}+x_{3}=0 \\\\
-x_{1}x_{2}+x_{1}x_{3}+x_{2}x_{3} \\\\
-x_{1}x_{2}x_{3}=-2019
-\\end{array}\\right.$$
+$$
+(x+y+z)\\left(\\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}\\right)=3+\\frac{x}{y}+\\frac{y}{x}+\\frac{x}{z}+\\frac{z}{x}+\\frac{y}{z}+\\frac{z}{y} \\geq 3+2+2+2=9
+$$
 
-Tā kā $x_{1}, x_{2}, x_{3}$ ir dotā vienādojuma saknes, tad iegūstam 
-identitātes:
+Tātad dotās izteiksmes mazākā vērtība ir 9 un to var iegūt, ja $x=y=z$.
 
-$$\\begin{aligned}
-& x_{1}^{3}-px_{1}+2019=0 \\\\
-& x_{2}^{3}-px_{2}+2019=0 \\\\
-& x_{3}^{3}-px_{3}+2019=0
-\\end{aligned}$$
+Lai atrastu izteiksmes $F$ maksimālo vērtību, vispirms pierādīsim lemmu.
 
-Saskaitot iegūtās trīs identitātes, iegūstam
+Lemma. Funkcija $f(x)=x+\\frac{k}{x}, k>0$, dilst pa kreisi no tās minimuma punkta $x=\\sqrt{k}$ un aug pa labi no tā, tas ir,
 
-$$x_{1}^{3}+x_{2}^{3}+x_{3}^{3}-p\\left(x_{1}+x_{2}+x_{3}\\right)+3 \\cdot 2019=0$$
+$$
+0<u<v \\leq \\sqrt{k} \\Rightarrow f(u)>f(v) \\text { un } \\sqrt{k} \\leq u<v \\Rightarrow f(u)<f(v)
+$$
 
-Līdz ar to 
-$x_{1}^{3}+x_{2}^{3}+x_{3}^{3}=p\\left(x_{1}+x_{2}+x_{3}\\right)-3 \\cdot 2019=p \\cdot 0-3 \\cdot 2019=-6057$.
+Pierādīums. Apskatām abus gadijumus.
 
-<small>
+$$
+\\begin{aligned}
+& f(u)>f(v) \\quad \\Leftrightarrow \\quad \\frac{k}{u}-\\frac{k}{v}>v-u \\Leftrightarrow \\frac{k}{u v}>1 \\quad \\Leftrightarrow \\quad k>u v \\\\
+& f(u)<f(v) \\Leftrightarrow \\frac{k}{u}-\\frac{k}{v}<v-u \\Leftrightarrow \\frac{k}{u v}<1 \\quad \\Leftrightarrow \\quad k<u v
+\\end{aligned}
+$$
 
-* questionType:
-* domain:
+Saskaņā ar Lemmu fiksētiem $y, z \\in[1 ; 2020]$, funkcija
 
-</small>"""@lv ;
+$$
+F(x)=x\\left(\\frac{1}{y}+\\frac{1}{z}\\right)+\\frac{1}{x}(y+z)+\\frac{y}{z}+\\frac{z}{y}+3
+$$
+
+maksimālo vērtību sasniedz intervāla galapunktā, tas ir, kad $x=1$ vai $x=2020$. Simetrijas dē las pats attiecas uz gadījumiem, kad fiksējam $x, y$ un $x, z$. Tātad izteiksme $F$ maksimālo vērtību sasniedz tad, kad $x, y, z \\in\\{1 ; 2020\\}$. Apskatām izteiksmes $F$ vērtību, ja $x, y, z \\in\\{1 ; 2020\\}$ :
+
+$$
+\\begin{aligned}
+& \\quad x=y=z=1 \\text { vai } x=y=z=2020, \\operatorname{tad} F(x ; x ; x)=9 \\\\
+& \\quad x=y=1 \\text { un } z=2020, \\operatorname{tad} F(1 ; 1 ; 2020)=2022 \\cdot 2 \\frac{1}{2020}=\\frac{2022 \\cdot 4041}{2020} \\\\
+& \\quad x=y=2020 \\text { un } z=1, \\operatorname{tad} F(2020 ; 2020 ; 1)=4041 \\cdot 1 \\frac{2}{2020}=\\frac{4041 \\cdot 2022}{2020}
+\\end{aligned}
+$$
+
+Līdz ar to dotās izteiksmes vislielākā vērtība ir $\\frac{4041 \\cdot 2022}{2020}$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Ievērojot, ka $x_{1}, x_{2}, x_{3}$ ir dotā vienādojuma saknes, to var 
-pārrakstīt formā 
-$x^{3}-px+2019=\\left(x-x_{1}\\right)\\left(x-x_{2}\\right)\\left(x-x_{3}\\right)=0$.
-Grupējot locekļus, iegūsim šādas sakarības:</p>
-<p>$$\\left{\\begin{array}{l}
-x_{1}+x_{2}+x_{3}=0 \\
-x_{1}x_{2}+x_{1}x_{3}+x_{2}x_{3} \\
-x_{1}x_{2}x_{3}=-2019
-\\end{array}\\right.$$</p>
-<p>Tā kā $x_{1}, x_{2}, x_{3}$ ir dotā vienādojuma saknes, tad iegūstam 
-identitātes:</p>
-<p>$$\\begin{aligned}
-&amp; x_{1}^{3}-px_{1}+2019=0 \\
-&amp; x_{2}^{3}-px_{2}+2019=0 \\
-&amp; x_{3}^{3}-px_{3}+2019=0
-\\end{aligned}$$</p>
-<p>Saskaitot iegūtās trīs identitātes, iegūstam</p>
-<p>$$x_{1}^{3}+x_{2}^{3}+x_{3}^{3}-p\\left(x_{1}+x_{2}+x_{3}\\right)+3 \\cdot 2019=0$$</p>
-<p>Līdz ar to 
-$x_{1}^{3}+x_{2}^{3}+x_{3}^{3}=p\\left(x_{1}+x_{2}+x_{3}\\right)-3 \\cdot 2019=p \\cdot 0-3 \\cdot 2019=-6057$.</p>
-<p><small></p>
-<ul>
-<li>questionType:</li>
-<li>domain:</li>
-</ul>
-<p></small></p>"""@lv .
+<p>Pārveidojam doto izteiksmi un lietojam nevienādību $\\frac{a}{b}+\\frac{b}{a} \\geq 2$ :</p>
+<p>$$
+(x+y+z)\\left(\\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}\\right)=3+\\frac{x}{y}+\\frac{y}{x}+\\frac{x}{z}+\\frac{z}{x}+\\frac{y}{z}+\\frac{z}{y} \\geq 3+2+2+2=9
+$$</p>
+<p>Tātad dotās izteiksmes mazākā vērtība ir 9 un to var iegūt, ja $x=y=z$.</p>
+<p>Lai atrastu izteiksmes $F$ maksimālo vērtību, vispirms pierādīsim lemmu.</p>
+<p>Lemma. Funkcija $f(x)=x+\\frac{k}{x}, k&gt;0$, dilst pa kreisi no tās minimuma punkta $x=\\sqrt{k}$ un aug pa labi no tā, tas ir,</p>
+<p>$$
+0&lt;u<v \\leq \\sqrt{k} \\Rightarrow f(u)>f(v) \\text { un } \\sqrt{k} \\leq u&lt;v \\Rightarrow f(u)&lt;f(v)
+$$</p>
+<p>Pierādīums. Apskatām abus gadijumus.</p>
+<p>$$
+\\begin{aligned}
+&amp; f(u)&gt;f(v) \\quad \\Leftrightarrow \\quad \\frac{k}{u}-\\frac{k}{v}&gt;v-u \\Leftrightarrow \\frac{k}{u v}&gt;1 \\quad \\Leftrightarrow \\quad k&gt;u v \\
+&amp; f(u)&lt;f(v) \\Leftrightarrow \\frac{k}{u}-\\frac{k}{v}&lt;v-u \\Leftrightarrow \\frac{k}{u v}&lt;1 \\quad \\Leftrightarrow \\quad k&lt;u v
+\\end{aligned}
+$$</p>
+<p>Saskaņā ar Lemmu fiksētiem $y, z \\in[1 ; 2020]$, funkcija</p>
+<p>$$
+F(x)=x\\left(\\frac{1}{y}+\\frac{1}{z}\\right)+\\frac{1}{x}(y+z)+\\frac{y}{z}+\\frac{z}{y}+3
+$$</p>
+<p>maksimālo vērtību sasniedz intervāla galapunktā, tas ir, kad $x=1$ vai $x=2020$. Simetrijas dē las pats attiecas uz gadījumiem, kad fiksējam $x, y$ un $x, z$. Tātad izteiksme $F$ maksimālo vērtību sasniedz tad, kad $x, y, z \\in{1 ; 2020}$. Apskatām izteiksmes $F$ vērtību, ja $x, y, z \\in{1 ; 2020}$ :</p>
+<p>$$
+\\begin{aligned}
+&amp; \\quad x=y=z=1 \\text { vai } x=y=z=2020, \\operatorname{tad} F(x ; x ; x)=9 \\
+&amp; \\quad x=y=1 \\text { un } z=2020, \\operatorname{tad} F(1 ; 1 ; 2020)=2022 \\cdot 2 \\frac{1}{2020}=\\frac{2022 \\cdot 4041}{2020} \\
+&amp; \\quad x=y=2020 \\text { un } z=1, \\operatorname{tad} F(2020 ; 2020 ; 1)=4041 \\cdot 1 \\frac{2}{2020}=\\frac{4041 \\cdot 2022}{2020}
+\\end{aligned}
+$$</p>
+<p>Līdz ar to dotās izteiksmes vislielākā vērtība ir $\\frac{4041 \\cdot 2022}{2020}$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2020.12.1..SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
-    eliozo:solutionText """## Atrisinājums
-
-Ievērojot, ka $x_{1}, x_{2}, x_{3}$ ir dotā vienādojuma saknes, to var 
-pārrakstīt formā 
-$x^{3}-p x+2019=\\left(x-x_{1}\\right)\\left(x-x_{2}\\right)\\left(x-x_{3}\\right)=0$.
-Grupējot locekļus, iegūsim šādas sakarības:
-
-$$\\left\\{\\begin{array}{l}
-x_{1}+x_{2}+x_{3}=0 \\\\
-x_{1}x_{2}+x_{1}x_{3}+x_{2}x_{3}=p \\\\
-x_{1}x_{2}x_{3}=-2019
-\\end{array}\\right.$$
-
-Izsakām prasīto summu:
-
-$$\\begin{aligned}
-& x_{1}^{3}+x_{2}^{3}+x_{3}^{3}=\\left(x_{1}+x_{2}+x_{3}\\right)^{3}-3\\left(x_{1}^{2}x_{2}+x_{2}^{2}x_{1}+x_{1}^{2}x_{3}+x_{3}^{2}x_{1}+x_{2}^{2}x_{3}+x_{3}^{2}x_{2}\\right)-6x_{1}x_{2}x_{3}= \\\\
-& =\\left(x_{1}+x_{2}+x_{3}\\right)^{3}-3\\left(p\\left(x_{1}+x_{2}+x_{3}\\right)-3x_{1}x_{2}x_{3}\\right)-6x_{1}x_{2}x_{3}=3 x_{1}x_{2}x_{3}=3 \\cdot(-2019)=-6057
-\\end{aligned}$$"""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Ievērojot, ka $x_{1}, x_{2}, x_{3}$ ir dotā vienādojuma saknes, to var 
-pārrakstīt formā 
-$x^{3}-p x+2019=\\left(x-x_{1}\\right)\\left(x-x_{2}\\right)\\left(x-x_{3}\\right)=0$.
-Grupējot locekļus, iegūsim šādas sakarības:</p>
-<p>$$\\left{\\begin{array}{l}
-x_{1}+x_{2}+x_{3}=0 \\
-x_{1}x_{2}+x_{1}x_{3}+x_{2}x_{3}=p \\
-x_{1}x_{2}x_{3}=-2019
-\\end{array}\\right.$$</p>
-<p>Izsakām prasīto summu:</p>
-<p>$$\\begin{aligned}
-&amp; x_{1}^{3}+x_{2}^{3}+x_{3}^{3}=\\left(x_{1}+x_{2}+x_{3}\\right)^{3}-3\\left(x_{1}^{2}x_{2}+x_{2}^{2}x_{1}+x_{1}^{2}x_{3}+x_{3}^{2}x_{1}+x_{2}^{2}x_{3}+x_{3}^{2}x_{2}\\right)-6x_{1}x_{2}x_{3}= \\
-&amp; =\\left(x_{1}+x_{2}+x_{3}\\right)^{3}-3\\left(p\\left(x_{1}+x_{2}+x_{3}\\right)-3x_{1}x_{2}x_{3}\\right)-6x_{1}x_{2}x_{3}=3 x_{1}x_{2}x_{3}=3 \\cdot(-2019)=-6057
-\\end{aligned}$$</p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2020.12.2..SUB0 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2020.12.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Apzīmējam $OB=OC=R$ (skat. 12.att.). Tā kā $C$ ir loka $AB$ viduspunkts, tad 
-$OC$ ir nogriežņa $AB$ vidusperpendikuls, kas krusto $AB$ punktā $F$. Tātad 
-$OC \\parallel DE$. No $AO=OD$ un $OC \\parallel DE$ izriet, ka $OC$ ir trijstūra
-$ADE$ viduslīija. Tātad $ED=2OC=2R$.
+Pierādīsim, ka $H$ ir rinka līnijas $\\omega$ centrs. Tā kā $A C=D M$, tad $\\overline{C D A}=\\overline{D A M}$ un $\\overline{A k M}=\\overline{D A M}-\\overline{D A}=$ $=\\overline{C D A}-\\overline{D A}=\\overline{C m D}$ (skat. 8.att.). Tā kā uz vienādiem lokiem balstās vienādas hordas, tad $A M=C D$. levērojam, ka $\\sphericalangle M A C=\\sphericalangle C D M$ un $\\sphericalangle A M D=\\sphericalangle D C A$ kā ievilktie leņki, kas balstās attiecīgi uz viena un tā paša loka. Tad $\\triangle A Y M=\\triangle D Y C$ pēc pazīmes $\\ell m \\ell$ un $M Y=Y C$ kā atbilstošās malas. Esam ieguvuši, ka punkts $Y$ atrodas vienādā attālumā no nogriežņa $M C$ galapunktiem. Trijstūris $M X C$ ir vienādsānu, jo $\\sphericalangle D C M=\\sphericalangle A M C$ kā leņki, kas balstās uz vienādiem lokiem $D A M$ un $A D C$, tātad punkts $X$ atrodas vienādā attālumā no nogriežņa $M C$ galapunktiem. Līdz ar to $X Y$ (jeb $X H$ ) ir nogriežņa $M C$ vidusperpendikuls. levērojam, ka simetrijas dē! $M H$ ir malu $A B$ un $C D$ vidusperpendikuls. Tā kā četrstūris $D A M C$ ir ievilkts četrstūris, tad tam apvilktās rinka līnijas centrs atrodas malu vidusperpendikulu krustpunktā, līdz ar to punkts $H$ ir rinka līnijas $\\omega$ centrs.
 
-Taisnes $OE$ krustpunktus ar riņķa līniju apzīmējam ar $X$ un $Y$. Apskatām 
-starpību
+Tā kā punkts $M$ ir mazākā loka $A B$ viduspunkts, tad $A M=M B$. Trijstūris $A M B$ ir vienādsānu taisnleņķa trijstūris, jo balstās uz diametra $A B$, tad pēc Pitagora teorēmas $A B^{2}=A M^{2}+M B^{2}=C D^{2}+C D^{2}=2 C D^{2}$.
 
-$$OE^{2}-OB^{2}=(OE-R)(OE+R)=EX \\cdot EY$$
+![](https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-08.jpg?height=500&width=638&top_left_y=1555&top_left_x=771)
 
-Tā kā pēc sekanšu īpašības $EX \\cdot EY=EB \\cdot ED$, tad
-
-$$OE^{2}-OB^{2}=EB \\cdot ED=EB \\cdot 2R=2 \\cdot EB \\cdot OB$$
-
-Līdz ar to esam ieguvuši, ka $OE^{2}=OB^{2}+2 \\cdot OB \\cdot BE$.
-
-![](LV.VOL.2020.12.2A.png)
-
-<small>
-
-* questionType:
-* domain:
-
-</small>"""@lv ;
+8.att."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Apzīmējam $OB=OC=R$ (skat. 12.att.). Tā kā $C$ ir loka $AB$ viduspunkts, tad 
-$OC$ ir nogriežņa $AB$ vidusperpendikuls, kas krusto $AB$ punktā $F$. Tātad 
-$OC \\parallel DE$. No $AO=OD$ un $OC \\parallel DE$ izriet, ka $OC$ ir trijstūra
-$ADE$ viduslīija. Tātad $ED=2OC=2R$.</p>
-<p>Taisnes $OE$ krustpunktus ar riņķa līniju apzīmējam ar $X$ un $Y$. Apskatām 
-starpību</p>
-<p>$$OE^{2}-OB^{2}=(OE-R)(OE+R)=EX \\cdot EY$$</p>
-<p>Tā kā pēc sekanšu īpašības $EX \\cdot EY=EB \\cdot ED$, tad</p>
-<p>$$OE^{2}-OB^{2}=EB \\cdot ED=EB \\cdot 2R=2 \\cdot EB \\cdot OB$$</p>
-<p>Līdz ar to esam ieguvuši, ka $OE^{2}=OB^{2}+2 \\cdot OB \\cdot BE$.</p>
-<p><img alt="" src="LV.VOL.2020.12.2A.png" /></p>
-<p><small></p>
-<ul>
-<li>questionType:</li>
-<li>domain:</li>
-</ul>
-<p></small></p>"""@lv .
+<p>Pierādīsim, ka $H$ ir rinka līnijas $\\omega$ centrs. Tā kā $A C=D M$, tad $\\overline{C D A}=\\overline{D A M}$ un $\\overline{A k M}=\\overline{D A M}-\\overline{D A}=$ $=\\overline{C D A}-\\overline{D A}=\\overline{C m D}$ (skat. 8.att.). Tā kā uz vienādiem lokiem balstās vienādas hordas, tad $A M=C D$. levērojam, ka $\\sphericalangle M A C=\\sphericalangle C D M$ un $\\sphericalangle A M D=\\sphericalangle D C A$ kā ievilktie leņki, kas balstās attiecīgi uz viena un tā paša loka. Tad $\\triangle A Y M=\\triangle D Y C$ pēc pazīmes $\\ell m \\ell$ un $M Y=Y C$ kā atbilstošās malas. Esam ieguvuši, ka punkts $Y$ atrodas vienādā attālumā no nogriežņa $M C$ galapunktiem. Trijstūris $M X C$ ir vienādsānu, jo $\\sphericalangle D C M=\\sphericalangle A M C$ kā leņki, kas balstās uz vienādiem lokiem $D A M$ un $A D C$, tātad punkts $X$ atrodas vienādā attālumā no nogriežņa $M C$ galapunktiem. Līdz ar to $X Y$ (jeb $X H$ ) ir nogriežņa $M C$ vidusperpendikuls. levērojam, ka simetrijas dē! $M H$ ir malu $A B$ un $C D$ vidusperpendikuls. Tā kā četrstūris $D A M C$ ir ievilkts četrstūris, tad tam apvilktās rinka līnijas centrs atrodas malu vidusperpendikulu krustpunktā, līdz ar to punkts $H$ ir rinka līnijas $\\omega$ centrs.</p>
+<p>Tā kā punkts $M$ ir mazākā loka $A B$ viduspunkts, tad $A M=M B$. Trijstūris $A M B$ ir vienādsānu taisnleņķa trijstūris, jo balstās uz diametra $A B$, tad pēc Pitagora teorēmas $A B^{2}=A M^{2}+M B^{2}=C D^{2}+C D^{2}=2 C D^{2}$.</p>
+<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-08.jpg?height=500&amp;width=638&amp;top_left_y=1555&amp;top_left_x=771" /></p>
+<p>8.att.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2020.12.2..SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.VOL.2020.12.4.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Novelkam rādiusu $OC$ (skat. 13.att.). Tā kā $C$ ir loka $AB$ viduspunkts, tad 
-$OC$ ir nogriežņa $AB$ vidusperpendikuls, kas $AB$ krusto punktā $F$. Tātad 
-$OC \\parallel DE$. No $AO=OD$ un $OC \\parallel DE$ izriet, ka $OC$ ir trijstūra
-$ADE$ viduslīnija. Tātad
+a) Nē, saknes nevar būt veseli skaitli. levērojam, ka $d \\neq 0$, jo pretējā gadījumā $\\overline{a b c d}$ nav pirmskaitlis. Tas nozīmē, ka 0 nav vienādojuma sakne. Ja $x \\geq 0$, tad $a x^{3}+b x^{2}+c x+d \\geq d>0$. Tātad vienādojumam var būt tikai negatīvas saknes. Apzīmējot saknes ar $-x_{1},-x_{2},-x_{3}$ un sadalot kreisās puses izteiksmi reizinātājos, iegūstam
 
-$$ED=2OC=2OB$$
+$$
+a x^{3}+b x^{2}+c x+d=a\\left(x+x_{1}\\right)\\left(x+x_{2}\\right)\\left(x+x_{3}\\right)
+$$
 
-No $O$ velkam perpendikulu $OG$ pret $DB$. Tā kā trijstūris $DOB$ ir 
-vienādsānu, tad $DG=GB$ un līdz ar to
+Pieņemsim, ka vienādojuma saknes ir veseli skaitli. Ja $x=10$, tad iegūstam
 
-$$ED=EB+2BG$$
+$$
+a\\left(10+x_{1}\\right)\\left(10+x_{2}\\right)\\left(10+x_{3}\\right)=1000 a+100 b+10 c+d=\\overline{a b c d}
+$$
 
-Tad, izmantojot Pitagora teorēmu taisnleṇka trijstūrī $OGE$, pakāpeniski iegūstam
+Tātad esam ieguvuši, ka $\\overline{a b c} d$ ir salikts skaitlis, kas ir pretrunā ar doto. Līdz ar to vienādojumam nav veselu sakņu.
+
+b) Nē, saknes nevar būt racionāli skaitli. Pieņemsim, ka saknes vienādojumam ir racionālas, tas ir, $-\\frac{p_{1}}{q_{1}},-\\frac{p_{2}}{q_{2}}$ un $-\\frac{p_{3}}{q_{3}}$, pie kam daļas ir nesaīsināmas jeb $p_{i}$ un $q_{i}$ ir savstarpēji pirmskaitļi. Pārveidojam vienādojuma kreisās puses izteiksmi:
+
+$$
+a x^{3}+b x^{2}+c x+d=a\\left(x+\\frac{p_{1}}{q_{1}}\\right)\\left(x+\\frac{p_{2}}{q_{2}}\\right)\\left(x+\\frac{p_{3}}{q_{3}}\\right)=\\frac{a}{q_{1} q_{2} q_{3}}\\left(q_{1} x+p_{1}\\right)\\left(q_{2} x+p_{2}\\right)\\left(q_{3} x+p_{3}\\right)
+$$
+
+levietojot $x=10$, iegūstam
+
+$$
+\\begin{gathered}
+\\frac{a}{q_{1} q_{2} q_{3}}\\left(10 q_{1}+p_{1}\\right)\\left(10 q_{2}+p_{2}\\right)\\left(10 q_{3}+p_{3}\\right)= \\\\
+=1000 a+100\\left(\\frac{p_{1}}{q_{1}}+\\frac{p_{2}}{q_{2}}+\\frac{p_{3}}{q_{3}}\\right)+10\\left(\\frac{p_{1}}{q_{1}} \\cdot \\frac{p_{2}}{q_{2}}+\\frac{p_{1}}{q_{1}} \\cdot \\frac{p_{3}}{q_{3}}+\\frac{p_{2}}{q_{2}} \\cdot \\frac{p_{3}}{q_{3}}\\right)+\\frac{p_{1}}{q_{1}} \\cdot \\frac{p_{2}}{q_{2}} \\cdot \\frac{p_{3}}{q_{3}}= \\\\
+=1000 a+100 b+10 c+d=\\overline{a b c d} .
+\\end{gathered}
+$$
+
+Reizinot abas puses ar $q_{1} q_{2} q_{3} \\neq 0$, iegūstam
+
+$$
+q_{1} q_{2} q_{3} \\cdot \\overline{a b c d}=a\\left(10 q_{1}+p_{1}\\right)\\left(10 q_{2}+p_{2}\\right)\\left(10 q_{3}+p_{3}\\right)
+$$
+
+Pamatosim, ja vienādojuma $a x^{3}+b x^{2}+c x+d=0$ sakne ir $\\frac{p}{q}$ (nesaīsināma dala), tad $a$ dalās ar $q$. levietojam vienādojumā $a x^{3}+b x^{2}+c x+d=0$ tā sakni $x=\\frac{p}{q}$ un pārveidojam iegūto identitāti:
+
+$$
+\\begin{gathered}
+a\\left(\\frac{p}{p}\\right)^{3}+b\\left(\\frac{p}{q}\\right)^{2}+c\\left(\\frac{p}{q}\\right)+d=0 \\\\
+a p^{3}+b p^{2} q+c q^{2} p+d q^{3}=0 \\\\
+q\\left(b p^{2}+c q p+d q^{2}\\right)=-a p^{3}
+\\end{gathered}
+$$
+
+Tā kā pēdējās vienādības kreisā puse dalās ar $q$, tad arī labās puses izteiksmei jādalās ar $q$. Nemot vērā, ka pēc pieņēmuma $p$ un $q$ ir savstarpēji pirmskaitli, secinām, ka $a$ ir jādalās ar $q$.
+
+Līdz ar to secinām, ka $q_{i}$ ir viencipara skaitlis, jo $a$ ir cipars.
+
+Analogi iegūst, ka $c$ dalās ar $p_{i}$. Tas nozīmē, ka $10 q_{i}+p_{i}$ ir divciparu skaitlis.
+
+Tātad vienādība $q_{1} q_{2} q_{3} \\cdot \\overline{a b c d}=a\\left(10 q_{1}+p_{1}\\right)\\left(10 q_{2}+p_{2}\\right)\\left(10 q_{3}+p_{3}\\right)$ nevar pastāvēt, jo kreisajā pusē ir reizinātājs $\\overline{a b c d}$ (četrciparu pirmskaitlis), bet labajā pusē $a$ ir viencipara skaitlis un pārējie reizinātāji - divciparu. Līdz ar to dotā vienādojuma saknes nav racionāli skaitli."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>a) Nē, saknes nevar būt veseli skaitli. levērojam, ka $d \\neq 0$, jo pretējā gadījumā $\\overline{a b c d}$ nav pirmskaitlis. Tas nozīmē, ka 0 nav vienādojuma sakne. Ja $x \\geq 0$, tad $a x^{3}+b x^{2}+c x+d \\geq d&gt;0$. Tātad vienādojumam var būt tikai negatīvas saknes. Apzīmējot saknes ar $-x_{1},-x_{2},-x_{3}$ un sadalot kreisās puses izteiksmi reizinātājos, iegūstam</p>
+<p>$$
+a x^{3}+b x^{2}+c x+d=a\\left(x+x_{1}\\right)\\left(x+x_{2}\\right)\\left(x+x_{3}\\right)
+$$</p>
+<p>Pieņemsim, ka vienādojuma saknes ir veseli skaitli. Ja $x=10$, tad iegūstam</p>
+<p>$$
+a\\left(10+x_{1}\\right)\\left(10+x_{2}\\right)\\left(10+x_{3}\\right)=1000 a+100 b+10 c+d=\\overline{a b c d}
+$$</p>
+<p>Tātad esam ieguvuši, ka $\\overline{a b c} d$ ir salikts skaitlis, kas ir pretrunā ar doto. Līdz ar to vienādojumam nav veselu sakņu.</p>
+<p>b) Nē, saknes nevar būt racionāli skaitli. Pieņemsim, ka saknes vienādojumam ir racionālas, tas ir, $-\\frac{p_{1}}{q_{1}},-\\frac{p_{2}}{q_{2}}$ un $-\\frac{p_{3}}{q_{3}}$, pie kam daļas ir nesaīsināmas jeb $p_{i}$ un $q_{i}$ ir savstarpēji pirmskaitļi. Pārveidojam vienādojuma kreisās puses izteiksmi:</p>
+<p>$$
+a x^{3}+b x^{2}+c x+d=a\\left(x+\\frac{p_{1}}{q_{1}}\\right)\\left(x+\\frac{p_{2}}{q_{2}}\\right)\\left(x+\\frac{p_{3}}{q_{3}}\\right)=\\frac{a}{q_{1} q_{2} q_{3}}\\left(q_{1} x+p_{1}\\right)\\left(q_{2} x+p_{2}\\right)\\left(q_{3} x+p_{3}\\right)
+$$</p>
+<p>levietojot $x=10$, iegūstam</p>
+<p>$$
+\\begin{gathered}
+\\frac{a}{q_{1} q_{2} q_{3}}\\left(10 q_{1}+p_{1}\\right)\\left(10 q_{2}+p_{2}\\right)\\left(10 q_{3}+p_{3}\\right)= \\
+=1000 a+100\\left(\\frac{p_{1}}{q_{1}}+\\frac{p_{2}}{q_{2}}+\\frac{p_{3}}{q_{3}}\\right)+10\\left(\\frac{p_{1}}{q_{1}} \\cdot \\frac{p_{2}}{q_{2}}+\\frac{p_{1}}{q_{1}} \\cdot \\frac{p_{3}}{q_{3}}+\\frac{p_{2}}{q_{2}} \\cdot \\frac{p_{3}}{q_{3}}\\right)+\\frac{p_{1}}{q_{1}} \\cdot \\frac{p_{2}}{q_{2}} \\cdot \\frac{p_{3}}{q_{3}}= \\
+=1000 a+100 b+10 c+d=\\overline{a b c d} .
+\\end{gathered}
+$$</p>
+<p>Reizinot abas puses ar $q_{1} q_{2} q_{3} \\neq 0$, iegūstam</p>
+<p>$$
+q_{1} q_{2} q_{3} \\cdot \\overline{a b c d}=a\\left(10 q_{1}+p_{1}\\right)\\left(10 q_{2}+p_{2}\\right)\\left(10 q_{3}+p_{3}\\right)
+$$</p>
+<p>Pamatosim, ja vienādojuma $a x^{3}+b x^{2}+c x+d=0$ sakne ir $\\frac{p}{q}$ (nesaīsināma dala), tad $a$ dalās ar $q$. levietojam vienādojumā $a x^{3}+b x^{2}+c x+d=0$ tā sakni $x=\\frac{p}{q}$ un pārveidojam iegūto identitāti:</p>
+<p>$$
+\\begin{gathered}
+a\\left(\\frac{p}{p}\\right)^{3}+b\\left(\\frac{p}{q}\\right)^{2}+c\\left(\\frac{p}{q}\\right)+d=0 \\
+a p^{3}+b p^{2} q+c q^{2} p+d q^{3}=0 \\
+q\\left(b p^{2}+c q p+d q^{2}\\right)=-a p^{3}
+\\end{gathered}
+$$</p>
+<p>Tā kā pēdējās vienādības kreisā puse dalās ar $q$, tad arī labās puses izteiksmei jādalās ar $q$. Nemot vērā, ka pēc pieņēmuma $p$ un $q$ ir savstarpēji pirmskaitli, secinām, ka $a$ ir jādalās ar $q$.</p>
+<p>Līdz ar to secinām, ka $q_{i}$ ir viencipara skaitlis, jo $a$ ir cipars.</p>
+<p>Analogi iegūst, ka $c$ dalās ar $p_{i}$. Tas nozīmē, ka $10 q_{i}+p_{i}$ ir divciparu skaitlis.</p>
+<p>Tātad vienādība $q_{1} q_{2} q_{3} \\cdot \\overline{a b c d}=a\\left(10 q_{1}+p_{1}\\right)\\left(10 q_{2}+p_{2}\\right)\\left(10 q_{3}+p_{3}\\right)$ nevar pastāvēt, jo kreisajā pusē ir reizinātājs $\\overline{a b c d}$ (četrciparu pirmskaitlis), bet labajā pusē $a$ ir viencipara skaitlis un pārējie reizinātāji - divciparu. Līdz ar to dotā vienādojuma saknes nav racionāli skaitli.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2020.12.5.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Vispirms biznesmenis sev var izveidot celu virkni no 67 celiem caur kādām pilsētām $A_{1}-A_{2}-A_{3}-\\ldots-A_{67}-A_{68}$. To noteikti var izdarī, jo pat pēc pēdējā gājiena ceļu pārvalde ir nojaukusi tikai $67 \\cdot 10=670$ celus, bet no katras pilsētas iziet 2019 ceļi. Nosauksim pilsētas $A_{1}, A_{2}, \\ldots, A_{68}$ par zalām.
+
+Nākamajā etapā biznesmenis var sev privatizēt 40 celus, kas iziet no pilsētas $A_{1}$ un iet uz pilsētām $S_{1}, S_{2}, \\ldots, S_{40}$ (skat. 9.att.), kas nav zalas. To noteikti var izdarī, jo no pilsētas $A_{1}$ iziet $2019-68=1951$ celš uz pilsētām, kas nav zaļas, bet ceļu pārvalde pat pēdējā gājienā kopā ir nojaukusi tikai $(67+40) \\cdot 10=1070$ celus. Nosauksim pilsētas $S_{1}, \\ldots, S_{40}$ par sarkanām.
+
+![](https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-10.jpg?height=262&width=1418&top_left_y=658&top_left_x=381)
+
+9.att.
+
+Nākamajā etapā biznesmenis var sev privatizēt 40 celus, kas iziet no pilsētas $A_{68}$ un iet uz pilsētām $D_{1}, D_{2}, \\ldots, D_{40}$, kas nav ne zalas, ne sarkanas. To noteikti var izdarīt, jo no pilsētas $A_{68}$ iziet $2019-68-40=1911$ ceļi uz pilsētām, kas nav ne zaļas, ne sarkanas, bet ceļu pārvalde pat pēdējā gājienā kopā ir nojaukusi tikai $(67+40+40) \\cdot 10=1470$ celus.
+
+Uz doto brīdi ceļu pārvalde ir nojaukusi 1470 celus, bet 40 sarkanās ar 40 zalajām pilsētām kopā savieno $40 \\cdot 40=1600$ ceļi, tātad vismaz 130 no tiem vēl nav nojaukti. Pienemsim, ka nav nojaukts celšs, starp pilsētām $S_{i}$ un $D_{j}$. Tad pēdējā gājienā biznesmenis var privatizēt šo celu un viņš būs ieguvis ciklisku maršrutu caur 70 pilsētām (skat. 10.att.).
+
+![](https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-10.jpg?height=399&width=335&top_left_y=1389&top_left_x=922)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Vispirms biznesmenis sev var izveidot celu virkni no 67 celiem caur kādām pilsētām $A_{1}-A_{2}-A_{3}-\\ldots-A_{67}-A_{68}$. To noteikti var izdarī, jo pat pēc pēdējā gājiena ceļu pārvalde ir nojaukusi tikai $67 \\cdot 10=670$ celus, bet no katras pilsētas iziet 2019 ceļi. Nosauksim pilsētas $A_{1}, A_{2}, \\ldots, A_{68}$ par zalām.</p>
+<p>Nākamajā etapā biznesmenis var sev privatizēt 40 celus, kas iziet no pilsētas $A_{1}$ un iet uz pilsētām $S_{1}, S_{2}, \\ldots, S_{40}$ (skat. 9.att.), kas nav zalas. To noteikti var izdarī, jo no pilsētas $A_{1}$ iziet $2019-68=1951$ celš uz pilsētām, kas nav zaļas, bet ceļu pārvalde pat pēdējā gājienā kopā ir nojaukusi tikai $(67+40) \\cdot 10=1070$ celus. Nosauksim pilsētas $S_{1}, \\ldots, S_{40}$ par sarkanām.</p>
+<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-10.jpg?height=262&amp;width=1418&amp;top_left_y=658&amp;top_left_x=381" /></p>
+<p>9.att.</p>
+<p>Nākamajā etapā biznesmenis var sev privatizēt 40 celus, kas iziet no pilsētas $A_{68}$ un iet uz pilsētām $D_{1}, D_{2}, \\ldots, D_{40}$, kas nav ne zalas, ne sarkanas. To noteikti var izdarīt, jo no pilsētas $A_{68}$ iziet $2019-68-40=1911$ ceļi uz pilsētām, kas nav ne zaļas, ne sarkanas, bet ceļu pārvalde pat pēdējā gājienā kopā ir nojaukusi tikai $(67+40+40) \\cdot 10=1470$ celus.</p>
+<p>Uz doto brīdi ceļu pārvalde ir nojaukusi 1470 celus, bet 40 sarkanās ar 40 zalajām pilsētām kopā savieno $40 \\cdot 40=1600$ ceļi, tātad vismaz 130 no tiem vēl nav nojaukti. Pienemsim, ka nav nojaukts celšs, starp pilsētām $S_{i}$ un $D_{j}$. Tad pēdējā gājienā biznesmenis var privatizēt šo celu un viņš būs ieguvis ciklisku maršrutu caur 70 pilsētām (skat. 10.att.).</p>
+<p><img alt="" src="https://cdn.mathpix.com/cropped/2024_07_24_55494e53b52a18028c6bg-10.jpg?height=399&amp;width=335&amp;top_left_y=1389&amp;top_left_x=922" /></p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2020.9.1.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Ekvivalenti pārveidojam doto izteiksmi:
+
+$$\\frac{(3n-1)(n+4)}{n+2}=\\frac{3n^{2}+11n-4}{n+2}=\\frac{3n(n+2)+5n-4}{n+2}=\\frac{3n(n+2)}{n+2}+\\frac{5(n+2)-14}{n+2}=3n+5-\\frac{14}{n+2}$$
+
+Tā kā $3n+5$ ir naturāls skaitlis, tad dotās izteiksmes vērtība būs vesels
+skaitlis tikai tad, ja $\\frac{-14}{n+2}$ ir vesels skaitlis, bet tas iespējams,
+ja $(n+2)$ ir skaitla $14$ dalītājs. levērojot, ka $n$ ir naturāls, iegūstam,
+ka $n+2=7$ vai $n+2=14$, no kā iegūstam, ka $n=5$ vai $n=12$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Ekvivalenti pārveidojam doto izteiksmi:</p>
+<p>$$\\frac{(3n-1)(n+4)}{n+2}=\\frac{3n^{2}+11n-4}{n+2}=\\frac{3n(n+2)+5n-4}{n+2}=\\frac{3n(n+2)}{n+2}+\\frac{5(n+2)-14}{n+2}=3n+5-\\frac{14}{n+2}$$</p>
+<p>Tā kā $3n+5$ ir naturāls skaitlis, tad dotās izteiksmes vērtība būs vesels
+skaitlis tikai tad, ja $\\frac{-14}{n+2}$ ir vesels skaitlis, bet tas iespējams,
+ja $(n+2)$ ir skaitla $14$ dalītājs. levērojot, ka $n$ ir naturāls, iegūstam,
+ka $n+2=7$ vai $n+2=14$, no kā iegūstam, ka $n=5$ vai $n=12$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2020.9.2.SUB0 a eliozo:Solution ;
+    eliozo:solutionNum 0 ;
+    eliozo:solutionText """## Atrisinājums
+
+Pēc dotā $1 < B < C < 100$. Tā kā $B < C$, tad var pieņemt, ka $C=B+x$, kur
+$1 \\leq x \\leq 99-B$. Līdz ar to iegūstam, ka četru doto skaitļu vidējais
+aritmētiskais ir
+
+$$V=\\frac{1+B+B+x+100}{4}=\\frac{2B+x+101}{4}$$
+
+Ņemot vērā, ka jāizpildās nevienādībām $B \\leq V \\leq C$, iegūstam
 
 $$\\begin{gathered}
-OE^{2}=OG^{2}+EG^{2} \\\\
-OE^{2}=OG^{2}+(EB+BG)^{2} \\\\
-OE^{2}=OG^{2}+EB^{2}+2 \\cdot EB \\cdot BG+BG^{2}
+B \\leq \\frac{2B+x+101}{4} \\leq B+x  
+4B \\leq 2B+x+101 \\leq 4B+4x
 \\end{gathered}$$
 
-Izmantojot Pitagora teorēmu taisnleņķa trijstūrī $OGB$, iegūstam, ka 
-$OG^{2}+BG^{2}=OB^{2}$, tad
+Pārrakstot iegūto divkāršo nevienādību kā nevienādību sistēmu, iegūstam
 
-$$\\begin{gathered}
-OE^{2}=OB^{2}+EB^{2}+2 \\cdot EB \\cdot BG \\\\
-OE^{2}=OB^{2}+EB \\cdot(EB+2BG) \\\\
-OE^{2}=OB^{2}+EB \\cdot ED \\\\
-OE^{2}=OB^{2}+2 \\cdot EB \\cdot OB
-\\end{gathered}$$
+$$\\left\\{\\begin{array} { l } 
+{ 4B \\leq 2B+x+101 } \\\\
+{ 2B+x+101 \\leq 4B+4x }
+\\end{array} \\quad \\text { jeb } \\quad \\left\\{\\begin{array}{l}
+2B \\leq 101+x \\\\
+2B \\geq 101-3x
+\\end{array}\\right.\\right.$$
 
-![](LV.VOL.2020.12.2B.png)"""@lv ;
+Ievērojam, ja nevienādība izpildās pie $x=1$, tad tā izpildās arī pie lielākiem
+$x$. Tāpēc tas, ka šī nevienādība izpildās visiem $x \\geq 1$ ir ekvivalents
+apgalvojumam, ka tā izpildās pie $x=1$. Tātad
+
+$$\\left\\{\\begin{array} { l } 
+{ 2B \\leq 102 } \\\\
+{ 2B \\geq 98 }
+\\end{array} \\text { jeb } \\quad \\left\\{\\begin{array}{l}
+B \\leq 51 \\\\
+B \\geq 49
+\\end{array}\\right.\\right.$$
+
+Līdz ar to esam ieguvuši, ka jebkurai derīgai $C$ vērtībai ir spēkā sakarība
+$B \\leq V \\leq C$, ja $B$ ir $49$, $50$ vai $51$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Novelkam rādiusu $OC$ (skat. 13.att.). Tā kā $C$ ir loka $AB$ viduspunkts, tad 
-$OC$ ir nogriežņa $AB$ vidusperpendikuls, kas $AB$ krusto punktā $F$. Tātad 
-$OC \\parallel DE$. No $AO=OD$ un $OC \\parallel DE$ izriet, ka $OC$ ir trijstūra
-$ADE$ viduslīnija. Tātad</p>
-<p>$$ED=2OC=2OB$$</p>
-<p>No $O$ velkam perpendikulu $OG$ pret $DB$. Tā kā trijstūris $DOB$ ir 
-vienādsānu, tad $DG=GB$ un līdz ar to</p>
-<p>$$ED=EB+2BG$$</p>
-<p>Tad, izmantojot Pitagora teorēmu taisnleṇka trijstūrī $OGE$, pakāpeniski iegūstam</p>
+<p>Pēc dotā $1 &lt; B &lt; C &lt; 100$. Tā kā $B &lt; C$, tad var pieņemt, ka $C=B+x$, kur
+$1 \\leq x \\leq 99-B$. Līdz ar to iegūstam, ka četru doto skaitļu vidējais
+aritmētiskais ir</p>
+<p>$$V=\\frac{1+B+B+x+100}{4}=\\frac{2B+x+101}{4}$$</p>
+<p>Ņemot vērā, ka jāizpildās nevienādībām $B \\leq V \\leq C$, iegūstam</p>
 <p>$$\\begin{gathered}
-OE^{2}=OG^{2}+EG^{2} \\
-OE^{2}=OG^{2}+(EB+BG)^{2} \\
-OE^{2}=OG^{2}+EB^{2}+2 \\cdot EB \\cdot BG+BG^{2}
+B \\leq \\frac{2B+x+101}{4} \\leq B+x<br />
+4B \\leq 2B+x+101 \\leq 4B+4x
 \\end{gathered}$$</p>
-<p>Izmantojot Pitagora teorēmu taisnleņķa trijstūrī $OGB$, iegūstam, ka 
-$OG^{2}+BG^{2}=OB^{2}$, tad</p>
-<p>$$\\begin{gathered}
-OE^{2}=OB^{2}+EB^{2}+2 \\cdot EB \\cdot BG \\
-OE^{2}=OB^{2}+EB \\cdot(EB+2BG) \\
-OE^{2}=OB^{2}+EB \\cdot ED \\
-OE^{2}=OB^{2}+2 \\cdot EB \\cdot OB
-\\end{gathered}$$</p>
-<p><img alt="" src="LV.VOL.2020.12.2B.png" /></p>"""@lv .
+<p>Pārrakstot iegūto divkāršo nevienādību kā nevienādību sistēmu, iegūstam</p>
+<p>$$\\left{\\begin{array} { l } 
+{ 4B \\leq 2B+x+101 } \\
+{ 2B+x+101 \\leq 4B+4x }
+\\end{array} \\quad \\text { jeb } \\quad \\left{\\begin{array}{l}
+2B \\leq 101+x \\
+2B \\geq 101-3x
+\\end{array}\\right.\\right.$$</p>
+<p>Ievērojam, ja nevienādība izpildās pie $x=1$, tad tā izpildās arī pie lielākiem
+$x$. Tāpēc tas, ka šī nevienādība izpildās visiem $x \\geq 1$ ir ekvivalents
+apgalvojumam, ka tā izpildās pie $x=1$. Tātad</p>
+<p>$$\\left{\\begin{array} { l } 
+{ 2B \\leq 102 } \\
+{ 2B \\geq 98 }
+\\end{array} \\text { jeb } \\quad \\left{\\begin{array}{l}
+B \\leq 51 \\
+B \\geq 49
+\\end{array}\\right.\\right.$$</p>
+<p>Līdz ar to esam ieguvuši, ka jebkurai derīgai $C$ vērtībai ir spēkā sakarība
+$B \\leq V \\leq C$, ja $B$ ir $49$, $50$ vai $51$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2020.12.3..SUB0 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2020.9.3.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Doto summu apzīmējam ar $S$. Aplūkojam katru saskaitāmo un summu $S$ pēc moduļa
-$8$ dažādām $n$ vērtībām.
+Pagarinām nogriezni $PR$, tad $\\sphericalangle ORP=\\sphericalangle NRB$ kā
+krustleņķi (skat. 1.att.) un līdz ar to arī $BRQ=\\sphericalangle NRB$.
+Izmantojot bisektrises īpašību, iegūstam, ka punkts $T$ atrodas vienādā
+attālumā no
 
-| $\\boldsymbol{n}$ | $\\mathbf{1}$ | $\\mathbf{2}$ | $\\mathbf{3}$ | $\\mathbf{4}$ | $\\cdots$ |
-| ---------------- | ------------ | ------------ | ------------ | ------------ | -------- |
-| $\\mathbf{4}^{\\boldsymbol{n}}$ | $4$ | $0$ | $0$ | $0$ | $\\cdots$ |
-| $\\mathbf{5}^{\\boldsymbol{n}}$ | $5$ | $1$ | $5$ | $1$ | $\\cdots$ |
-| $\\mathbf{6}^{\\boldsymbol{n}}$ | $6$ | $4$ | $0$ | $0$ | $\\cdots$ |
-| $\\mathbf{7}^{\\boldsymbol{n}}$ | $7$ | $1$ | $7$ | $1$ | $\\cdots$ |
-| $\\mathbf{8}^{\\boldsymbol{n}}$ | $0$ | $0$ | $0$ | $0$ | $\\cdots$ |
-| $\\mathbf{9}^{\\boldsymbol{n}}$ | $1$ | $1$ | $1$ | $1$ | $\\cdots$ |
-| $\\mathbf{10}^{\\boldsymbol{n}}$ | $2$ | $4$ | $0$ | $0$ | $\\cdots$ |
-| $\\mathbf{11}^{\\boldsymbol{n}}$ | $3$ | $1$ | $3$ | $1$ | $\\cdots$ |
-| $\\mathbf{12}^{\\boldsymbol{n}}$ | $4$ | $0$ | $0$ | $0$ | $\\cdots$ |
-| $\\mathbf{13}^{\\boldsymbol{n}}$ | $5$ | $1$ | $5$ | $1$ | $\\cdots$ |
-| $\\boldsymbol{S}$ |  $\\mathbf{5}$ | $\\mathbf{5}$ | $\\mathbf{5}$ | $\\mathbf{5}$ | $\\cdots$ |
+- leņķa $NRQ$ malām $NR$ un $RQ$, tas ir, $TC=TD$;
+- leņķa $QPR$ malām $PR$ un $PQ$, tas ir, $TC=TE$.
 
-Ievērojam, ka
+Tātad $TD=TE$ un esam ieguvuši, ka punkts $T$ atrodas vienādā attālumā no leņķa
+$RQA$ malām. Līdz ar to pēc bisektrises pazīmes esam ieguvuši, ka punkts $T$
+atrodas uz $\\sphericalangle RQA$ bisektrises jeb $QT$ ir
+$\\sphericalangle RQA$ bisektrise.
 
-- virknes $5^{n}; 7^{n}; 11^{n}; 13^{n}$ pēc moduļa $8$ ir periodiskas ar 
-  periodu $2$;
-- sākot ar $n=3$, virknes $4^{n}; 6^{n}; 8^{n}; 9^{n}; 10^{n}; 12^{n}$ ir 
-  periodiskas ar periodu $1$.
-
-Tātad visām $n$ vērtībām summas $S$ vērtība pēc moduļa $8$ ir vienāda ar $5$.
-
-Naturālu skaitļu kvadrātu vērtības pēc moduļa $8$ var būt tikai $0,\\ 1$ vai $4$:
-
-| $n(\\bmod 8)$ | $n^{2}(\\bmod 8)$ |
-| ------------ | ---------------- |
-| $0$          | $0$              |
-| $1$          | $1$              |
-| $2$          | $4$              |
-| $3$          | $1$              |
-| $4$          | $0$              |
-| $5$          | $1$              |
-| $6$          | $4$              |
-| $7$          | $1$              |
-
-Tātad dotā izteiksme nevar būt naturāla skaitļa kvadrāts."""@lv ;
+![](LV.VOL.2020.9.3A.png)"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Doto summu apzīmējam ar $S$. Aplūkojam katru saskaitāmo un summu $S$ pēc moduļa
-$8$ dažādām $n$ vērtībām.</p>
-<table>
-<thead>
-<tr>
-<th>$\\boldsymbol{n}$</th>
-<th>$\\mathbf{1}$</th>
-<th>$\\mathbf{2}$</th>
-<th>$\\mathbf{3}$</th>
-<th>$\\mathbf{4}$</th>
-<th>$\\cdots$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\\mathbf{4}^{\\boldsymbol{n}}$</td>
-<td>$4$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$\\cdots$</td>
-</tr>
-<tr>
-<td>$\\mathbf{5}^{\\boldsymbol{n}}$</td>
-<td>$5$</td>
-<td>$1$</td>
-<td>$5$</td>
-<td>$1$</td>
-<td>$\\cdots$</td>
-</tr>
-<tr>
-<td>$\\mathbf{6}^{\\boldsymbol{n}}$</td>
-<td>$6$</td>
-<td>$4$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$\\cdots$</td>
-</tr>
-<tr>
-<td>$\\mathbf{7}^{\\boldsymbol{n}}$</td>
-<td>$7$</td>
-<td>$1$</td>
-<td>$7$</td>
-<td>$1$</td>
-<td>$\\cdots$</td>
-</tr>
-<tr>
-<td>$\\mathbf{8}^{\\boldsymbol{n}}$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$\\cdots$</td>
-</tr>
-<tr>
-<td>$\\mathbf{9}^{\\boldsymbol{n}}$</td>
-<td>$1$</td>
-<td>$1$</td>
-<td>$1$</td>
-<td>$1$</td>
-<td>$\\cdots$</td>
-</tr>
-<tr>
-<td>$\\mathbf{10}^{\\boldsymbol{n}}$</td>
-<td>$2$</td>
-<td>$4$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$\\cdots$</td>
-</tr>
-<tr>
-<td>$\\mathbf{11}^{\\boldsymbol{n}}$</td>
-<td>$3$</td>
-<td>$1$</td>
-<td>$3$</td>
-<td>$1$</td>
-<td>$\\cdots$</td>
-</tr>
-<tr>
-<td>$\\mathbf{12}^{\\boldsymbol{n}}$</td>
-<td>$4$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$\\cdots$</td>
-</tr>
-<tr>
-<td>$\\mathbf{13}^{\\boldsymbol{n}}$</td>
-<td>$5$</td>
-<td>$1$</td>
-<td>$5$</td>
-<td>$1$</td>
-<td>$\\cdots$</td>
-</tr>
-<tr>
-<td>$\\boldsymbol{S}$</td>
-<td>$\\mathbf{5}$</td>
-<td>$\\mathbf{5}$</td>
-<td>$\\mathbf{5}$</td>
-<td>$\\mathbf{5}$</td>
-<td>$\\cdots$</td>
-</tr>
-</tbody>
-</table>
-<p>Ievērojam, ka</p>
+<p>Pagarinām nogriezni $PR$, tad $\\sphericalangle ORP=\\sphericalangle NRB$ kā
+krustleņķi (skat. 1.att.) un līdz ar to arī $BRQ=\\sphericalangle NRB$.
+Izmantojot bisektrises īpašību, iegūstam, ka punkts $T$ atrodas vienādā
+attālumā no</p>
 <ul>
-<li>virknes $5^{n}; 7^{n}; 11^{n}; 13^{n}$ pēc moduļa $8$ ir periodiskas ar 
-  periodu $2$;</li>
-<li>sākot ar $n=3$, virknes $4^{n}; 6^{n}; 8^{n}; 9^{n}; 10^{n}; 12^{n}$ ir 
-  periodiskas ar periodu $1$.</li>
+<li>leņķa $NRQ$ malām $NR$ un $RQ$, tas ir, $TC=TD$;</li>
+<li>leņķa $QPR$ malām $PR$ un $PQ$, tas ir, $TC=TE$.</li>
 </ul>
-<p>Tātad visām $n$ vērtībām summas $S$ vērtība pēc moduļa $8$ ir vienāda ar $5$.</p>
-<p>Naturālu skaitļu kvadrātu vērtības pēc moduļa $8$ var būt tikai $0,\\ 1$ vai $4$:</p>
-<table>
-<thead>
-<tr>
-<th>$n(\\bmod 8)$</th>
-<th>$n^{2}(\\bmod 8)$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$0$</td>
-<td>$0$</td>
-</tr>
-<tr>
-<td>$1$</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>$2$</td>
-<td>$4$</td>
-</tr>
-<tr>
-<td>$3$</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>$4$</td>
-<td>$0$</td>
-</tr>
-<tr>
-<td>$5$</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>$6$</td>
-<td>$4$</td>
-</tr>
-<tr>
-<td>$7$</td>
-<td>$1$</td>
-</tr>
-</tbody>
-</table>
-<p>Tātad dotā izteiksme nevar būt naturāla skaitļa kvadrāts.</p>"""@lv .
+<p>Tātad $TD=TE$ un esam ieguvuši, ka punkts $T$ atrodas vienādā attālumā no leņķa
+$RQA$ malām. Līdz ar to pēc bisektrises pazīmes esam ieguvuši, ka punkts $T$
+atrodas uz $\\sphericalangle RQA$ bisektrises jeb $QT$ ir
+$\\sphericalangle RQA$ bisektrise.</p>
+<p><img alt="" src="LV.VOL.2020.9.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2020.12.4..SUB0 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2020.9.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Dotos sešus iracionālos skaitļus attēlosim ar punktiem un savienosim divus 
-punktus ar pelēku nogriezni, ja attiecīgo skaitļu summa ir racionāls skaitlis, 
-un ar melnu, ja skaitļu summa ir iracionāls skaitlis.
+**a)** Jā, eksistē. Skaitļiem $1, 2, 3, 6$ izpildās visi uzdevuma nosacijumi:
 
-Pierādīsim, ka eksistē tādi trīs punkti, kas visi savā starpā savienoti ar 
-vienas un tās pašas krāsas nogriežņiem. Apskatām punktu $A$. No tā iziet vismaz
-trīs nogriežņi, kas ir vienā un tajā pašā krāsā (izmantots Dirihlē princips). 
-Nezaudējot vispārīgumu, varam pieņemt, ka nogriežņi $AM, AN$ un $AK$ ir pelēki 
-(skat. 14.att.). Ja kaut viens no nogriežņiem $MN, MK, NK$ ir pelēks, tad 
-iegūstam pelēku trijstūri; ja tie visi ir melni, tad iegūstam melnu trijstūri 
-$MNK$.
+- $2+3+6$ dalās ar $1$ ,
+- $1+3+6$ dalās ar $2$ ,
+- $1+2+6$ dalās ar $3$ ,
+- $1+2+3$ dalās ar $6$ .
 
-![](LV.VOL.2020.12.4A.png)
+**b)** Nē, neeksistē. levērojam, ka
 
-Pierādīsim, ka šis trijstūris, kam visas malas ir vienā krāsā, nav pelēks. Ja 
-$\\alpha+\\beta=c,\\ \\alpha+\\gamma=b$ un $\\beta+\\gamma=a$, kur $a, b, c$ ir 
-racionāli skaitļi, tad, saskaitot pirmās divas vienādības un ņemot vērā trešo 
-vienādību, iegūstam, ka $\\alpha=\\frac{c+b-a}{2}$ ir racionāls skaitlis 
-(pretruna). Tātad vienkrāsainais trijstūris ir melns un tā virsotnēs 
-ierakstītie skaitļi ir meklētie."""@lv ;
+- $a+(b+c+d)$ dalās ar $a$ (jo abi saskaitāmie dalās ar $a$ ),
+- $b+(c+d+a)$ dalās ar $b$,
+- $c+(d+a+b)$ dalās ar $c$,
+- $d+(a+b+c)$ dalās ar $d$.
+
+Tā kā $a, b, c, d$ ir pirmskaitļi, tad $a+b+c+d$ dalās ar $abcd$, no kā izriet,
+ka $a+b+c+d \\geq abcd$. Nezaudējot vispārīgumu varam pieņemt, ka
+$a \\leq b \\leq c \\leq d$. Tādā gadījumā $a+b+c+d \\leq 4d < abcd$, jo pat trīs
+mazāko atšķirīgo pirmskaitļu reizinājums $2 \\cdot 3 \\cdot 5 > 4$. Esam ieguvuši
+pretrunu, tātad neeksistē tādi četri dažādi pirmskaitļi, kuriem izpildās visi
+uzdevuma nosacījumi."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Dotos sešus iracionālos skaitļus attēlosim ar punktiem un savienosim divus 
-punktus ar pelēku nogriezni, ja attiecīgo skaitļu summa ir racionāls skaitlis, 
-un ar melnu, ja skaitļu summa ir iracionāls skaitlis.</p>
-<p>Pierādīsim, ka eksistē tādi trīs punkti, kas visi savā starpā savienoti ar 
-vienas un tās pašas krāsas nogriežņiem. Apskatām punktu $A$. No tā iziet vismaz
-trīs nogriežņi, kas ir vienā un tajā pašā krāsā (izmantots Dirihlē princips). 
-Nezaudējot vispārīgumu, varam pieņemt, ka nogriežņi $AM, AN$ un $AK$ ir pelēki 
-(skat. 14.att.). Ja kaut viens no nogriežņiem $MN, MK, NK$ ir pelēks, tad 
-iegūstam pelēku trijstūri; ja tie visi ir melni, tad iegūstam melnu trijstūri 
-$MNK$.</p>
-<p><img alt="" src="LV.VOL.2020.12.4A.png" /></p>
-<p>Pierādīsim, ka šis trijstūris, kam visas malas ir vienā krāsā, nav pelēks. Ja 
-$\\alpha+\\beta=c,\\ \\alpha+\\gamma=b$ un $\\beta+\\gamma=a$, kur $a, b, c$ ir 
-racionāli skaitļi, tad, saskaitot pirmās divas vienādības un ņemot vērā trešo 
-vienādību, iegūstam, ka $\\alpha=\\frac{c+b-a}{2}$ ir racionāls skaitlis 
-(pretruna). Tātad vienkrāsainais trijstūris ir melns un tā virsotnēs 
-ierakstītie skaitļi ir meklētie.</p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2020.12.5..SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-**a)** Pamatosim, ka der, piemēram, skaitļi $a=2$ un $b=2021$.
-
-legūstam izteiksmi $2n+2021m$. Skaitļi $2019$ nevar izteikt kā šo skaitļu 
-summu, jo
-
-$2021 \\cdot 1=2021 > 2019$;
-
-$2021 \\cdot 0=0$ un $2019-0=2019$, kas nedalās ar $2$.
-
-Pamatosim, ka visus skaitļus, kas lielāki nekā $2019$, var izteikt formā 
-$2n+2021m$. Ievērojam, ka
-
-- $2020=2 \\cdot 1010+2021 \\cdot 0$ un visus pārējos skaitļus, kas lielāki nekā 
-  $2020$ un dalās ar $2$, iegūstam kā summu $2 \\cdot(1010+k)+2021 \\cdot 0$, kur
-  $k \\in \\mathbb{N}$;
-- $2021=2 \\cdot 0+2021 \\cdot 1$ un visus pārējos skaitļus, kas lielāki nekā 
-  $2021$ un, dalot ar $2$, dod atlikumu $1$, iegūstam kā summu 
-  $2 \\cdot k+2021 \\cdot 1$, kur $k \\in \\mathbb{N}$.
-
-**b)** Pierādīsim, ja $a$ un $b$ ir savstarpēji pirmskaitļi, tad lielākais 
-skaitlis, ko nevar izteikt ar šiem skaitļiem, ir $ab-a-b$.
-
-Pieņemsim pretējo, ka $ab-b-a$ var izteikt kā $an+bm$. Apskatot izteiksmi 
-$ab-b-a=an+bm$
-
-- pēc moduļa $a$, iegūstam $-b \\equiv b m(\\bmod a)$ jeb $m \\equiv-1(\\bmod a)$,
-- pēc moduļa $b$, iegūstam $n \\equiv-1(\\bmod b)$.
-
-No šī secinām, ka $m \\geq a-1$, jo $m+1$ dalās ar $a$ un skaitli $m$ un $a$ nav
-negatīvi. Tāpat secinām, ka $n \\geq b-1$. Līdz ar to iegūstam, ka
-
-$$an+bm \\geq a(b-1)+b(a-1)=2ab-a-b > ab-a-b$$
-
-kas noved pie pretrunas.
-
-Tagad pamatosim, ka visus naturālos skaitļus, kas ir lielāki nekā $ab-b-a$, var
-izteikt formā $an+bm$. Tā kā $a$ un $b$ ir savstarpēji pirmskaitļi, tad katram 
-$n$ varam atrast tādus veselus skaitļus $x$ un $y$, lai $ax+by=n$. Tas nozīmē, 
-ka visiem veseliem $k$ ir patiess arī $a(x+bk)+b(y-ak)=n$. Kādam $k$ izteiksme 
-$(x+bk)$ nebūs negatīva. Atrodam mazāko nenegatīvo vērtību šai izteiksmei un 
-apzīmēsim to ar $x^{\\prime}$ un atbilstošo vērtību pie $b$ ar $y^{\\prime}$. 
-Tātad $ax^{\\prime}+by^{\\prime}=n$, pie tam $0 \\leq x^{\\prime} \\leq b-1$, jo 
-pretējā gadijumā $\\left(x^{\\prime}-b\\right) a+\\left(y^{\\prime}+a\\right) b=n$ un
-skaitlis $x^{\\prime}-b$ būtu mazāks nenegatīvs skaitlis nekā mūsu jau mazākais 
-$x^{\\prime}$. Ja $n > ab-a-b$, tad
-
-$$by^{\\prime}=n-ax^{\\prime} > ab-a-b-a(b-1)=-b,$$
-
-no kurienes izriet, ka $y^{\\prime} > -1$ jeb $y^{\\prime} \\geq 0$. Tātad esam 
-atraduši $x^{\\prime}, y^{\\prime} \\geq 0$, lai $ax^{\\prime}+by^{\\prime}=n$.
-
-Tātad, lai iegūtu $a$ un $b$ vērtības, jāatrisina vienādojums $ab-a-b=2019$. 
-Vienādojuma abām pusēm pieskaitot $1$ un sadalot reizinātāos, iegūstam
-
-$$(a-1)(b-1)=2020$$
-
-Ievērojot, ka $2020=2 \\cdot 2 \\cdot 5 \\cdot 101$, iegūstam
-
-| $\\boldsymbol{a}-\\mathbf{1}$ | $\\boldsymbol{b}-\\mathbf{1}$ | $\\boldsymbol{a}$ | $\\boldsymbol{b}$ | $(\\boldsymbol{a} ; \\boldsymbol{b})$ |  |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| $1$ | $2020$ | $2$ | $2021$ | $(2; 2021)$ |  |
-| $2$ | $1010$ | $3$ | $1011$ |  | Neder, jo nav savstarpēji pirmskaitļi |
-| $4$ | $505$ | $5$ | $506$ | $(5; 506)$ |  |
-| $5$ | $404$ | $6$ | $405$ |  | Neder, jo nav savstarpēji pirmskaitļi |
-| $10$ | $202$ | $11$ | $203$ | $(11; 203)$ |  |
-| $20$ | $101$ | $21$ | $102$ |  | Neder, jo nav savstarpēji pirmskaitļi |
-
-$\\textit {Piezīme.}$ Skaitļu pāri $(2; 2021), (5; 506)$ un $(11; 203)$ ir vienīgie 
-derīgie."""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>a)</strong> Pamatosim, ka der, piemēram, skaitļi $a=2$ un $b=2021$.</p>
-<p>legūstam izteiksmi $2n+2021m$. Skaitļi $2019$ nevar izteikt kā šo skaitļu 
-summu, jo</p>
-<p>$2021 \\cdot 1=2021 &gt; 2019$;</p>
-<p>$2021 \\cdot 0=0$ un $2019-0=2019$, kas nedalās ar $2$.</p>
-<p>Pamatosim, ka visus skaitļus, kas lielāki nekā $2019$, var izteikt formā 
-$2n+2021m$. Ievērojam, ka</p>
+<p><strong>a)</strong> Jā, eksistē. Skaitļiem $1, 2, 3, 6$ izpildās visi uzdevuma nosacijumi:</p>
 <ul>
-<li>$2020=2 \\cdot 1010+2021 \\cdot 0$ un visus pārējos skaitļus, kas lielāki nekā 
-  $2020$ un dalās ar $2$, iegūstam kā summu $2 \\cdot(1010+k)+2021 \\cdot 0$, kur
-  $k \\in \\mathbb{N}$;</li>
-<li>$2021=2 \\cdot 0+2021 \\cdot 1$ un visus pārējos skaitļus, kas lielāki nekā 
-  $2021$ un, dalot ar $2$, dod atlikumu $1$, iegūstam kā summu 
-  $2 \\cdot k+2021 \\cdot 1$, kur $k \\in \\mathbb{N}$.</li>
+<li>$2+3+6$ dalās ar $1$ ,</li>
+<li>$1+3+6$ dalās ar $2$ ,</li>
+<li>$1+2+6$ dalās ar $3$ ,</li>
+<li>$1+2+3$ dalās ar $6$ .</li>
 </ul>
-<p><strong>b)</strong> Pierādīsim, ja $a$ un $b$ ir savstarpēji pirmskaitļi, tad lielākais 
-skaitlis, ko nevar izteikt ar šiem skaitļiem, ir $ab-a-b$.</p>
-<p>Pieņemsim pretējo, ka $ab-b-a$ var izteikt kā $an+bm$. Apskatot izteiksmi 
-$ab-b-a=an+bm$</p>
+<p><strong>b)</strong> Nē, neeksistē. levērojam, ka</p>
 <ul>
-<li>pēc moduļa $a$, iegūstam $-b \\equiv b m(\\bmod a)$ jeb $m \\equiv-1(\\bmod a)$,</li>
-<li>pēc moduļa $b$, iegūstam $n \\equiv-1(\\bmod b)$.</li>
+<li>$a+(b+c+d)$ dalās ar $a$ (jo abi saskaitāmie dalās ar $a$ ),</li>
+<li>$b+(c+d+a)$ dalās ar $b$,</li>
+<li>$c+(d+a+b)$ dalās ar $c$,</li>
+<li>$d+(a+b+c)$ dalās ar $d$.</li>
 </ul>
-<p>No šī secinām, ka $m \\geq a-1$, jo $m+1$ dalās ar $a$ un skaitli $m$ un $a$ nav
-negatīvi. Tāpat secinām, ka $n \\geq b-1$. Līdz ar to iegūstam, ka</p>
-<p>$$an+bm \\geq a(b-1)+b(a-1)=2ab-a-b &gt; ab-a-b$$</p>
-<p>kas noved pie pretrunas.</p>
-<p>Tagad pamatosim, ka visus naturālos skaitļus, kas ir lielāki nekā $ab-b-a$, var
-izteikt formā $an+bm$. Tā kā $a$ un $b$ ir savstarpēji pirmskaitļi, tad katram 
-$n$ varam atrast tādus veselus skaitļus $x$ un $y$, lai $ax+by=n$. Tas nozīmē, 
-ka visiem veseliem $k$ ir patiess arī $a(x+bk)+b(y-ak)=n$. Kādam $k$ izteiksme 
-$(x+bk)$ nebūs negatīva. Atrodam mazāko nenegatīvo vērtību šai izteiksmei un 
-apzīmēsim to ar $x^{\\prime}$ un atbilstošo vērtību pie $b$ ar $y^{\\prime}$. 
-Tātad $ax^{\\prime}+by^{\\prime}=n$, pie tam $0 \\leq x^{\\prime} \\leq b-1$, jo 
-pretējā gadijumā $\\left(x^{\\prime}-b\\right) a+\\left(y^{\\prime}+a\\right) b=n$ un
-skaitlis $x^{\\prime}-b$ būtu mazāks nenegatīvs skaitlis nekā mūsu jau mazākais 
-$x^{\\prime}$. Ja $n &gt; ab-a-b$, tad</p>
-<p>$$by^{\\prime}=n-ax^{\\prime} &gt; ab-a-b-a(b-1)=-b,$$</p>
-<p>no kurienes izriet, ka $y^{\\prime} &gt; -1$ jeb $y^{\\prime} \\geq 0$. Tātad esam 
-atraduši $x^{\\prime}, y^{\\prime} \\geq 0$, lai $ax^{\\prime}+by^{\\prime}=n$.</p>
-<p>Tātad, lai iegūtu $a$ un $b$ vērtības, jāatrisina vienādojums $ab-a-b=2019$. 
-Vienādojuma abām pusēm pieskaitot $1$ un sadalot reizinātāos, iegūstam</p>
-<p>$$(a-1)(b-1)=2020$$</p>
-<p>Ievērojot, ka $2020=2 \\cdot 2 \\cdot 5 \\cdot 101$, iegūstam</p>
-<table>
-<thead>
-<tr>
-<th align="center">$\\boldsymbol{a}-\\mathbf{1}$</th>
-<th align="center">$\\boldsymbol{b}-\\mathbf{1}$</th>
-<th align="center">$\\boldsymbol{a}$</th>
-<th align="center">$\\boldsymbol{b}$</th>
-<th align="center">$(\\boldsymbol{a} ; \\boldsymbol{b})$</th>
-<th align="center"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">$1$</td>
-<td align="center">$2020$</td>
-<td align="center">$2$</td>
-<td align="center">$2021$</td>
-<td align="center">$(2; 2021)$</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">$2$</td>
-<td align="center">$1010$</td>
-<td align="center">$3$</td>
-<td align="center">$1011$</td>
-<td align="center"></td>
-<td align="center">Neder, jo nav savstarpēji pirmskaitļi</td>
-</tr>
-<tr>
-<td align="center">$4$</td>
-<td align="center">$505$</td>
-<td align="center">$5$</td>
-<td align="center">$506$</td>
-<td align="center">$(5; 506)$</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">$5$</td>
-<td align="center">$404$</td>
-<td align="center">$6$</td>
-<td align="center">$405$</td>
-<td align="center"></td>
-<td align="center">Neder, jo nav savstarpēji pirmskaitļi</td>
-</tr>
-<tr>
-<td align="center">$10$</td>
-<td align="center">$202$</td>
-<td align="center">$11$</td>
-<td align="center">$203$</td>
-<td align="center">$(11; 203)$</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">$20$</td>
-<td align="center">$101$</td>
-<td align="center">$21$</td>
-<td align="center">$102$</td>
-<td align="center"></td>
-<td align="center">Neder, jo nav savstarpēji pirmskaitļi</td>
-</tr>
-</tbody>
-</table>
-<p>$\\textit {Piezīme.}$ Skaitļu pāri $(2; 2021), (5; 506)$ un $(11; 203)$ ir vienīgie 
-derīgie.</p>"""@lv .
+<p>Tā kā $a, b, c, d$ ir pirmskaitļi, tad $a+b+c+d$ dalās ar $abcd$, no kā izriet,
+ka $a+b+c+d \\geq abcd$. Nezaudējot vispārīgumu varam pieņemt, ka
+$a \\leq b \\leq c \\leq d$. Tādā gadījumā $a+b+c+d \\leq 4d &lt; abcd$, jo pat trīs
+mazāko atšķirīgo pirmskaitļu reizinājums $2 \\cdot 3 \\cdot 5 &gt; 4$. Esam ieguvuši
+pretrunu, tātad neeksistē tādi četri dažādi pirmskaitļi, kuriem izpildās visi
+uzdevuma nosacījumi.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2020.9.1..SUB0 a eliozo:Solution ;
+eliozo:SOLN.LV.VOL.2020.9.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-Pārveidojot doto izteiksmi, iegūstam
+Pamatosim, ka prasīto nevar izdarīt. Sadalām kubu $9$ mazākos kubos, kuru
+izmēri ir $4 \\times 4 \\times 4$, un iekrāsojam tos kā šaha galdiņu
+(skat. 2.att.). Pavisam ir $64 \\cdot 14=896$ melni un $64 \\cdot 13=832$ balti
+kubiņi ar izmēriem $1 \\times 1 \\times 1$. Tā kā katrs kieģelis pārklāj $4$
+melnus un $4$ baltus kubiņus ar izmēriem $1 \\times 1 \\times 1$ (skat. 3.att.),
+tad, ja no šiem kieģeļiem būtu salikts kubs, tas saturētu vienāda skaita melnos
+un baltos kubiņus ar izmēriem $1 \\times 1 \\times 1$, bet $896 \\neq 832$.
 
-$$\\begin{gathered}
-4a^{2}-7b^{2}=12ab \\\\
-4a^{2}-12ab+9b^{2}=16b^{2} \\\\
-(2a-3b)^{2}=(4b)^{2} \\\\
-2a-3b= \\pm 4b
-\\end{gathered}$$
-
-Apskatām katru gadījumu.
-
-1. Ja $2a-3b=4b$ jeb $2a=7b$ un $a=\\frac{7}{2} b$, tad
-
-$$\\frac{4a^{2}+7b^{2}}{ab}=\\frac{(7b)^{2}+7 \\cdot b^{2}}{\\frac{7}{2} b \\cdot b}=\\frac{49b^{2}+7b^{2}}{\\frac{7}{2} b^{2}}=56 \\cdot \\frac{2}{7}=8 \\cdot 2=16$$
-
-2. Ja $2a-3b=-4b$ jeb $b=-2a$, tad
-
-$$\\frac{4a^{2}+7b^{2}}{ab}=\\frac{4a^{2}+7(-2a)^{2}}{-2a^{2}}=\\frac{4a^{2}+28a^{2}}{-2a^{2}}=\\frac{32}{-2}=-16$$
-
-Tātad izteiksmes $\\frac{4a^{2}+7b^{2}}{ab}$ vērtība ir vai nu $16$ (ja 
-$a=\\frac{7b}{2}$), vai $-16$ (ja $b=-2a$).
-
-$\\textit {Piezīme.}$ Sakarību starp $a$ un $b$ var iegūt arī, dotās vienādības kreisās 
-puses izteiksmes skaitītāja katru saskaitāmo izdalot ar $ab$, apzīmējot 
-$\\frac{a}{b}=x$ un atrisinot iegūto vienādojumu 
-$4 \\frac{a}{b}-7 \\frac{b}{a}=12$ jeb $4 x-\\frac{7}{x}=12$."""@lv ;
+![](LV.VOL.2020.9.5A.png)"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Pārveidojot doto izteiksmi, iegūstam</p>
-<p>$$\\begin{gathered}
-4a^{2}-7b^{2}=12ab \\
-4a^{2}-12ab+9b^{2}=16b^{2} \\
-(2a-3b)^{2}=(4b)^{2} \\
-2a-3b= \\pm 4b
-\\end{gathered}$$</p>
-<p>Apskatām katru gadījumu.</p>
-<ol>
-<li>Ja $2a-3b=4b$ jeb $2a=7b$ un $a=\\frac{7}{2} b$, tad</li>
-</ol>
-<p>$$\\frac{4a^{2}+7b^{2}}{ab}=\\frac{(7b)^{2}+7 \\cdot b^{2}}{\\frac{7}{2} b \\cdot b}=\\frac{49b^{2}+7b^{2}}{\\frac{7}{2} b^{2}}=56 \\cdot \\frac{2}{7}=8 \\cdot 2=16$$</p>
-<ol>
-<li>Ja $2a-3b=-4b$ jeb $b=-2a$, tad</li>
-</ol>
-<p>$$\\frac{4a^{2}+7b^{2}}{ab}=\\frac{4a^{2}+7(-2a)^{2}}{-2a^{2}}=\\frac{4a^{2}+28a^{2}}{-2a^{2}}=\\frac{32}{-2}=-16$$</p>
-<p>Tātad izteiksmes $\\frac{4a^{2}+7b^{2}}{ab}$ vērtība ir vai nu $16$ (ja 
-$a=\\frac{7b}{2}$), vai $-16$ (ja $b=-2a$).</p>
-<p>$\\textit {Piezīme.}$ Sakarību starp $a$ un $b$ var iegūt arī, dotās vienādības kreisās 
-puses izteiksmes skaitītāja katru saskaitāmo izdalot ar $ab$, apzīmējot 
-$\\frac{a}{b}=x$ un atrisinot iegūto vienādojumu 
-$4 \\frac{a}{b}-7 \\frac{b}{a}=12$ jeb $4 x-\\frac{7}{x}=12$.</p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2020.9.2..SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-Ievērojam, ka $S(MAN)=S(NBM)=8+4=12$ (skat. 1.att.) un šiem trijstūriem ir 
-kopīga mala $MN$, tāpēc augstumi, kas no virsotnēm $A$ un $B$ novilkti pret šo 
-malu $MN$, ir vienādi jeb punkti $A$ un $B$ atrodas vienādā attālumā no 
-nogriežņa $MN$. Tātad $MN \\parallel AB$. Apskatām attiecību
-
-$$\\frac{S(MNP)}{S(PNB)}=\\frac{\\frac{1}{2} MP \\cdot h_{MP}}{\\frac{1}{2} BP \\cdot h_{BP}}$$
-
-Ievērojot, ka $h_{MP}=h_{BP}$, iegūstam 
-$\\frac{MN}{AB}=\\frac{MP}{BP}=\\frac{4}{8}=\\frac{1}{2}$.
-
-Trijstūri $MPN$ un $BPA$ ir līdzīgi pēc pazīmes $\\ell \\ell$, jo 
-$\\sphericalangle MPN=\\sphericalangle BPA$ kā krustleņķi 
-$\\sphericalangle MNA=\\sphericalangle NAB$ kā iekšējie šķērsleņķi pie paralēlām 
-taisnēm $MN$ un $AB$. Tad 
-$\\frac{S(MPN)}{S(BPA)}=\\left(\\frac{MP}{BP}\\right)^{2}=\\frac{1}{4}$, no kā 
-izriet, ka $S(BPA)=4 \\cdot 4=16$. Esam ieguvuši, ka $S(AMNB)=4+8 \\cdot 2+16=36$
-
-Tā kā $MN \\parallel AB$, tad $\\triangle MCN \\sim \\triangle ACB$ un 
-$\\frac{S(MCN)}{S(ACB)}=\\left(\\frac{MN}{AB}\\right)^{2}=\\left(\\frac{1}{2}\\right)^{2}$
-jeb
-
-$\\frac{S(ACB)-36}{S(ACB)}=\\frac{1}{4}$. Izsakām trijstūra $ACB$ laukumu:
-
-$$\\begin{gathered}
-4 \\cdot S(ACB)-4 \\cdot 36=S(ACB) \\\\
-3 \\cdot S(ACB)=4 \\cdot 36 \\\\
-S(ACB)=48
-\\end{gathered}$$
-
-![](LV.VOL.2020.9.2A.png)"""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Ievērojam, ka $S(MAN)=S(NBM)=8+4=12$ (skat. 1.att.) un šiem trijstūriem ir 
-kopīga mala $MN$, tāpēc augstumi, kas no virsotnēm $A$ un $B$ novilkti pret šo 
-malu $MN$, ir vienādi jeb punkti $A$ un $B$ atrodas vienādā attālumā no 
-nogriežņa $MN$. Tātad $MN \\parallel AB$. Apskatām attiecību</p>
-<p>$$\\frac{S(MNP)}{S(PNB)}=\\frac{\\frac{1}{2} MP \\cdot h_{MP}}{\\frac{1}{2} BP \\cdot h_{BP}}$$</p>
-<p>Ievērojot, ka $h_{MP}=h_{BP}$, iegūstam 
-$\\frac{MN}{AB}=\\frac{MP}{BP}=\\frac{4}{8}=\\frac{1}{2}$.</p>
-<p>Trijstūri $MPN$ un $BPA$ ir līdzīgi pēc pazīmes $\\ell \\ell$, jo 
-$\\sphericalangle MPN=\\sphericalangle BPA$ kā krustleņķi 
-$\\sphericalangle MNA=\\sphericalangle NAB$ kā iekšējie šķērsleņķi pie paralēlām 
-taisnēm $MN$ un $AB$. Tad 
-$\\frac{S(MPN)}{S(BPA)}=\\left(\\frac{MP}{BP}\\right)^{2}=\\frac{1}{4}$, no kā 
-izriet, ka $S(BPA)=4 \\cdot 4=16$. Esam ieguvuši, ka $S(AMNB)=4+8 \\cdot 2+16=36$</p>
-<p>Tā kā $MN \\parallel AB$, tad $\\triangle MCN \\sim \\triangle ACB$ un 
-$\\frac{S(MCN)}{S(ACB)}=\\left(\\frac{MN}{AB}\\right)^{2}=\\left(\\frac{1}{2}\\right)^{2}$
-jeb</p>
-<p>$\\frac{S(ACB)-36}{S(ACB)}=\\frac{1}{4}$. Izsakām trijstūra $ACB$ laukumu:</p>
-<p>$$\\begin{gathered}
-4 \\cdot S(ACB)-4 \\cdot 36=S(ACB) \\
-3 \\cdot S(ACB)=4 \\cdot 36 \\
-S(ACB)=48
-\\end{gathered}$$</p>
-<p><img alt="" src="LV.VOL.2020.9.2A.png" /></p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2020.9.3..SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-**a)** Jā, var, piemēram, $17^{2}=289$ un $2+8+9=19$.
-
-$\\textit {Piezīme.}$ Tā kā $19 \\equiv 1(\\bmod 9)$, tad jāmeklē skaitļi, kuru kvadrāts ir 
-kongruents ar $1(\\bmod 9)$, tātad paši skaitļi ir $\\pm 1$ $(\\bmod 9)$. Der arī 
-skaitļi $26, 28, 37, 44, 53, 62, 64, 73, 82, 89, 91$, utt.
-
-**b)** Nē, nevar. Naturālā skaitļa $n$ kvadrāta ciparu summa $2019$ dalās ar 
-$3$, tātad arī $n^{2}$ dalās ar $3$. Tā kā naturāla skaitļa kvadrāts dalās ar 
-$3$, tad arī pats skaitlis $n$ dalās ar $3$, bet tādā gadījumā $n^{2}$ ir 
-jādalās ar $9$. Bet skaitļa $n^{2}$ ciparu summa ir $2019$, kas nedalās ar $9$ 
-nedalās, tātad $2019$ nevar būt naturāla skaitļa kvadrāta ciparu summa."""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>a)</strong> Jā, var, piemēram, $17^{2}=289$ un $2+8+9=19$.</p>
-<p>$\\textit {Piezīme.}$ Tā kā $19 \\equiv 1(\\bmod 9)$, tad jāmeklē skaitļi, kuru kvadrāts ir 
-kongruents ar $1(\\bmod 9)$, tātad paši skaitļi ir $\\pm 1$ $(\\bmod 9)$. Der arī 
-skaitļi $26, 28, 37, 44, 53, 62, 64, 73, 82, 89, 91$, utt.</p>
-<p><strong>b)</strong> Nē, nevar. Naturālā skaitļa $n$ kvadrāta ciparu summa $2019$ dalās ar 
-$3$, tātad arī $n^{2}$ dalās ar $3$. Tā kā naturāla skaitļa kvadrāts dalās ar 
-$3$, tad arī pats skaitlis $n$ dalās ar $3$, bet tādā gadījumā $n^{2}$ ir 
-jādalās ar $9$. Bet skaitļa $n^{2}$ ciparu summa ir $2019$, kas nedalās ar $9$ 
-nedalās, tātad $2019$ nevar būt naturāla skaitļa kvadrāta ciparu summa.</p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2020.9.4..SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-**a)** Mazākais iespējamais tukšo rūtiņu skaits ir $1$. lekrāsojam doto 
-kvadrātu kā šaha galdiņu (skat. 2.att.). Tad ir $13$ melnas un $12$ baltas 
-rūtiņas. Tās $13$ skudras, kas atrodas $13$ melnajās rūtiņās, ir pārvietojušās
-uz baltajām rūtiņām. Tā kā balto rūtiņu skaits ir $12$, tad vismaz vienā rūtiņā
-nonāks vairāk nekā viena skudra. Tātad vismaz viena rūtiņa paliks tukša. Skat.,
-piemēram, 2.att., kur skudra no augšējās kreisās rūtiņas pārvietojas bultiņas 
-norādītajā virzienā, bet pārējās skudras ar biezāku līniju izceltajos divu 
-rūtiņu laukumos samainās vietām.
-
-**b)** Lielākais iespējamais tukšo rūtiņu skaits ir $16$. Viens no šādiem 
-pārvietojumiem parādīts 4.att.
-
-Pamatosim, ka $16$ ir lielākais iespējamais tukšo rūtiņu skaits. Skudras, kas 
-atrodas 3.att. iekrāsotajās rūtiņās pēc pārvietošanās uz blakus rūtiņām atkal 
-kopā aizņems $9$ rūtiņas, jo nekādas divas no šīm skudrām nevar nonākt vienā un
-tajā pašā rūtiņā. Tātad var palikt ne vairāk kā $25-9=16$ tukšas rūtiņas.
-
-![](LV.VOL.2020.9.4A.png)"""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>a)</strong> Mazākais iespējamais tukšo rūtiņu skaits ir $1$. lekrāsojam doto 
-kvadrātu kā šaha galdiņu (skat. 2.att.). Tad ir $13$ melnas un $12$ baltas 
-rūtiņas. Tās $13$ skudras, kas atrodas $13$ melnajās rūtiņās, ir pārvietojušās
-uz baltajām rūtiņām. Tā kā balto rūtiņu skaits ir $12$, tad vismaz vienā rūtiņā
-nonāks vairāk nekā viena skudra. Tātad vismaz viena rūtiņa paliks tukša. Skat.,
-piemēram, 2.att., kur skudra no augšējās kreisās rūtiņas pārvietojas bultiņas 
-norādītajā virzienā, bet pārējās skudras ar biezāku līniju izceltajos divu 
-rūtiņu laukumos samainās vietām.</p>
-<p><strong>b)</strong> Lielākais iespējamais tukšo rūtiņu skaits ir $16$. Viens no šādiem 
-pārvietojumiem parādīts 4.att.</p>
-<p>Pamatosim, ka $16$ ir lielākais iespējamais tukšo rūtiņu skaits. Skudras, kas 
-atrodas 3.att. iekrāsotajās rūtiņās pēc pārvietošanās uz blakus rūtiņām atkal 
-kopā aizņems $9$ rūtiņas, jo nekādas divas no šīm skudrām nevar nonākt vienā un
-tajā pašā rūtiņā. Tātad var palikt ne vairāk kā $25-9=16$ tukšas rūtiņas.</p>
-<p><img alt="" src="LV.VOL.2020.9.4A.png" /></p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2020.9.5..SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-Tā kā turnīrā piedalījās $16$ komandas un katra komanda spēlēja ar katru citu, 
-tad katra komanda ir piedalījusies tieši $15$ spēlēs.
-
-Tā kā komanda jebkurā spēlē vai nu uzvarēja, vai zaudēja (neizšķirtu nav), tad 
-skaidrs, ka $i$-tās komandas uzvaru skaitu var izteikt ar zaudējumu skaitu, tas
-ir, $x_{i}=15-y_{i}$. Tad
-
-$$\\begin{aligned}
-x_{1}^{2}+x_{2}^{2}+\\cdots+x_{16}^{2} & =\\left(15-y_{1}\\right)^{2}+\\left(15-y_{2}\\right)^{2}+\\cdots+\\left(15-y_{16}\\right)^{2}= \\\\
-& =\\left(225-30 y_{1}+y_{1}^{2}\\right)+\\cdots+\\left(225-30 y_{16}+y_{16}^{2}\\right)= \\\\
-& =16 \\cdot 225-30 \\cdot\\left(y_{1}+y_{2}+\\cdots+y_{16}\\right)+\\left(y_{1}^{2}+y_{2}^{2}+\\ldots+y_{16}^{2}\\right)
-\\end{aligned}$$
-
-Pavisam kopā tika izspēlētas $\\frac{16 \\cdot 15}{2}=120$ spēles, tāpēc 
-zaudējumu kopskaits $y_{1}+y_{2}+\\cdots+y_{16}=120$. Līdz ar to 
-$16 \\cdot 225-30 \\cdot\\left(y_{1}+y_{2}+\\cdots+y_{16}\\right)=16 \\cdot 225-30 \\cdot 120=0$,
-no kā izriet prasītais, tas ir, 
-$x_{1}^{2}+x_{2}^{2}+\\ldots+x_{16}^{2}=y_{1}^{2}+y_{2}^{2}+\\ldots+y_{16}^{2}$."""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Tā kā turnīrā piedalījās $16$ komandas un katra komanda spēlēja ar katru citu, 
-tad katra komanda ir piedalījusies tieši $15$ spēlēs.</p>
-<p>Tā kā komanda jebkurā spēlē vai nu uzvarēja, vai zaudēja (neizšķirtu nav), tad 
-skaidrs, ka $i$-tās komandas uzvaru skaitu var izteikt ar zaudējumu skaitu, tas
-ir, $x_{i}=15-y_{i}$. Tad</p>
-<p>$$\\begin{aligned}
-x_{1}^{2}+x_{2}^{2}+\\cdots+x_{16}^{2} &amp; =\\left(15-y_{1}\\right)^{2}+\\left(15-y_{2}\\right)^{2}+\\cdots+\\left(15-y_{16}\\right)^{2}= \\
-&amp; =\\left(225-30 y_{1}+y_{1}^{2}\\right)+\\cdots+\\left(225-30 y_{16}+y_{16}^{2}\\right)= \\
-&amp; =16 \\cdot 225-30 \\cdot\\left(y_{1}+y_{2}+\\cdots+y_{16}\\right)+\\left(y_{1}^{2}+y_{2}^{2}+\\ldots+y_{16}^{2}\\right)
-\\end{aligned}$$</p>
-<p>Pavisam kopā tika izspēlētas $\\frac{16 \\cdot 15}{2}=120$ spēles, tāpēc 
-zaudējumu kopskaits $y_{1}+y_{2}+\\cdots+y_{16}=120$. Līdz ar to 
-$16 \\cdot 225-30 \\cdot\\left(y_{1}+y_{2}+\\cdots+y_{16}\\right)=16 \\cdot 225-30 \\cdot 120=0$,
-no kā izriet prasītais, tas ir, 
-$x_{1}^{2}+x_{2}^{2}+\\ldots+x_{16}^{2}=y_{1}^{2}+y_{2}^{2}+\\ldots+y_{16}^{2}$.</p>"""@lv .
+<p>Pamatosim, ka prasīto nevar izdarīt. Sadalām kubu $9$ mazākos kubos, kuru
+izmēri ir $4 \\times 4 \\times 4$, un iekrāsojam tos kā šaha galdiņu
+(skat. 2.att.). Pavisam ir $64 \\cdot 14=896$ melni un $64 \\cdot 13=832$ balti
+kubiņi ar izmēriem $1 \\times 1 \\times 1$. Tā kā katrs kieģelis pārklāj $4$
+melnus un $4$ baltus kubiņus ar izmēriem $1 \\times 1 \\times 1$ (skat. 3.att.),
+tad, ja no šiem kieģeļiem būtu salikts kubs, tas saturētu vienāda skaita melnos
+un baltos kubiņus ar izmēriem $1 \\times 1 \\times 1$, bet $896 \\neq 832$.</p>
+<p><img alt="" src="LV.VOL.2020.9.5A.png" /></p>"""@lv .
 

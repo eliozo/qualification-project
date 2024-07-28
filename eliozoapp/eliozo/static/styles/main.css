@@ -251,6 +251,45 @@ div.panel-heading h4 {
   font-weight: normal;
 }
 
+/* Searching text/regex on the "main" page */
+div.main .search-container {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 500px;
+  border: 1px solid #ccc;
+}
+
+div.main  .search-target {
+  background-color: lightgray;
+  padding: 4px;
+}
+
+div.main  .search-input {
+  flex-grow: 1;
+  background-color: white;
+  border: none;
+  padding: 4px;
+  outline: none;
+}
+
+div.main  .search-quadratic {
+  background-color: #FFD580;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+}
+
+
+div.main .search-quadratic img {
+  height: 25px;
+  width: 25px;
+}
+
+
+
+
 
 /* Search form for "filters" */
 .search-form {

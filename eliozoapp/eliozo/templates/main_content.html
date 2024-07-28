@@ -2,13 +2,44 @@
 
 {% block content %}
 <div class="col-sm-8 text-left">
-<p style="font-size:120%">{% trans %}Math Olympiad Problems{% endtrans %}</p>
-<hr>
 
+<div class="main">
+    <form action="{{ url_for('main') }}" method="get">
+        {% if caseSensitive=='1' %}
+        <input type="checkbox" name="caseSensitive" value="1" checked/>
+        {% else %}
+        <input type="checkbox" name="caseSensitive" value="1"/>
+        {% endif %}
+        {% trans %}Case Sensitive{% endtrans %}&nbsp;&nbsp;
+        {% if regex=='1' %}
+        <input type="checkbox" name="regex" value="1" checked/>
+        {% else %}
+        <input type="checkbox" name="regex" value="1"/>
+        {% endif %}
+        {% trans %}Regular Expresion{% endtrans %}
+
+        <div class="search-container">
+        <select class="search-target" name="something">
+            <option value="all" selected>{% trans %}All{% endtrans %}</option>
+            <option value="questions">{% trans %}Questions{% endtrans %}</option>
+            <option value="solutions">{% trans %}Solutions{% endtrans %}</option>
+            <option value="hints">{% trans %}Hints{% endtrans %}</option>
+            <option value="formulas">{% trans %}Formulas{% endtrans %}</option>
+        </select>
+        <input type="text" class="search-input" placeholder="Search ELIOZO" name="keyword" value="{{ keyword }}">
+        <button type="submit" class="search-quadratic">
+            <img src="{{ url_for('static',filename='magnifying-glass.png') }}" alt="Search"/>
+        </button>
+        </div>
+    </form>
+</div>
+
+{#
 <form class="search-form" action="{{ url_for('main') }}" method="get">
 <input class="search-input" type="text" name="keyword" value="{{ keyword }}" placeholder="{% trans %}Text to Search{% endtrans %}">
 <button class="search-button" type="submit">{% trans %}Search{% endtrans %}</button>
 </form>
+#}
 
 {% for problem in problems %}
 <h3 class="problem">{{ problem.problemid }}</h3>
