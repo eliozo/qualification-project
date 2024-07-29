@@ -687,11 +687,11 @@ eliozo:LV.AMO.2019.7.3 a eliozo:Problem ;
     eliozo:problemText """Izliektā četrstūrī $ABCD$ leņķu $BAD$ un $ADC$ bisektrises krustojas punktā 
 $M$. Pierādīt, ka $BM=CM$, ja zināms, ka $AD=AB+CD$.
 
-$\\textit {Piezīme.}$ Četrstūri sauc par izliektu, ja visi tā iekšējie leņķi ir 
+*Piezīme.* Četrstūri sauc par izliektu, ja visi tā iekšējie leņķi ir 
 mazāki nekā $180^{\\circ}$."""@lv ;
     eliozo:problemTextHtml """<p>Izliektā četrstūrī $ABCD$ leņķu $BAD$ un $ADC$ bisektrises krustojas punktā 
 $M$. Pierādīt, ka $BM=CM$, ja zināms, ka $AD=AB+CD$.</p>
-<p>$\\textit {Piezīme.}$ Četrstūri sauc par izliektu, ja visi tā iekšējie leņķi ir 
+<p><em>Piezīme.</em> Četrstūri sauc par izliektu, ja visi tā iekšējie leņķi ir 
 mazāki nekā $180^{\\circ}$.</p>"""@lv ;
     eliozo:problemTimeID "2019" ;
     eliozo:problemYear 2019 ;
@@ -1090,15 +1090,15 @@ eliozo:SOLN.LV.AMO.2019.10.1.SUB0 a eliozo:Solution ;
  
 Izmantosim matemātiskās indukcijas metodi.
 
-$\\textit{Indukcijas bāze.}$ Ja $n=1$, tad 
+*Indukcijas bāze.* Ja $n=1$, tad 
 $1 \\cdot 2 \\cdot 3=\\frac{1 \\cdot 2 \\cdot 3 \\cdot 4}{4}$ jeb $6=6$.
 
-$\\textit{Induktīvais pieņēmums.}$ Pieņemsim, ka vienādība izpildās, ja $n=k$, 
+*Induktīvais pieņēmums.* Pieņemsim, ka vienādība izpildās, ja $n=k$, 
 tas ir,
 
 $$6+24+60+\\cdots+k(k+1)(k+2)=\\frac{k(k+1)(k+2)(k+3)}{4}$$
 
-$\\textit{Induktīvā pāreja.}$ Pierādīsim, ka vienādība ir spēkā arī tad, ja 
+*Induktīvā pāreja.* Pierādīsim, ka vienādība ir spēkā arī tad, ja 
 $n=k+1$, tas ir,
 
 $$6+24+60+\\cdots+(k+1)(k+2)(k+3)=\\frac{(k+1)(k+2)(k+3)(k+4)}{4}$$
@@ -1111,17 +1111,17 @@ $$\\begin{gathered}
 =\\frac{(k+1)(k+2)(k+3)(k+4)}{4}
 \\end{gathered}$$
 
-$\\textit{Secinājums.}$ Tā kā vienādība ir patiesa, ja $n=1$, un no tā, ka 
+*Secinājums.* Tā kā vienādība ir patiesa, ja $n=1$, un no tā, ka 
 vienādība ir spēkā, ja $n=k$, izriet, ka vienādība ir spēkā arī $n=k+1$, 
 secinām, ka vienādība ir spēkā visām naturālām $n$ vērtībām."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Izmantosim matemātiskās indukcijas metodi.</p>
-<p>$\\textit{Indukcijas bāze.}$ Ja $n=1$, tad 
+<p><em>Indukcijas bāze.</em> Ja $n=1$, tad 
 $1 \\cdot 2 \\cdot 3=\\frac{1 \\cdot 2 \\cdot 3 \\cdot 4}{4}$ jeb $6=6$.</p>
-<p>$\\textit{Induktīvais pieņēmums.}$ Pieņemsim, ka vienādība izpildās, ja $n=k$, 
+<p><em>Induktīvais pieņēmums.</em> Pieņemsim, ka vienādība izpildās, ja $n=k$, 
 tas ir,</p>
 <p>$$6+24+60+\\cdots+k(k+1)(k+2)=\\frac{k(k+1)(k+2)(k+3)}{4}$$</p>
-<p>$\\textit{Induktīvā pāreja.}$ Pierādīsim, ka vienādība ir spēkā arī tad, ja 
+<p><em>Induktīvā pāreja.</em> Pierādīsim, ka vienādība ir spēkā arī tad, ja 
 $n=k+1$, tas ir,</p>
 <p>$$6+24+60+\\cdots+(k+1)(k+2)(k+3)=\\frac{(k+1)(k+2)(k+3)(k+4)}{4}$$</p>
 <p>Pārveidosim vienādības kreisās puses izteiksmi:</p>
@@ -1130,7 +1130,7 @@ $n=k+1$, tas ir,</p>
 =\\frac{k(k+1)(k+2)(k+3)}{4}+(k+1)(k+2)(k+3)=(k+1)(k+2)(k+3)\\left(\\frac{k}{4}+1\\right)= \\
 =\\frac{(k+1)(k+2)(k+3)(k+4)}{4}
 \\end{gathered}$$</p>
-<p>$\\textit{Secinājums.}$ Tā kā vienādība ir patiesa, ja $n=1$, un no tā, ka 
+<p><em>Secinājums.</em> Tā kā vienādība ir patiesa, ja $n=1$, un no tā, ka 
 vienādība ir spēkā, ja $n=k$, izriet, ka vienādība ir spēkā arī $n=k+1$, 
 secinām, ka vienādība ir spēkā visām naturālām $n$ vērtībām.</p>"""@lv .
 
@@ -1218,7 +1218,7 @@ Apskatām atlikušās $n$ vērtības, tas ir, vērtības $1, 2, 3, 4, 5, 18$.
 Līdz ar to esam ieguvuši, ka izteiksme $n^{2}+n+19$ ir naturāla skaitļa 
 kvadrāts, ja $n$ ir $2; 5$ vai $18$.
 
-$\\textit {Piezīme.}$ Otrā novērtējuma vietā var arī pārbaudīt $n$ vērtības 
+*Piezīme.* Otrā novērtējuma vietā var arī pārbaudīt $n$ vērtības 
 $1,2,3, \\ldots, 18$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Atradīsim, kādām $n$ vērtībām izteiksmes $n^{2}+n+19$ vērtība atrodas starp 
@@ -1269,7 +1269,7 @@ ar to nav naturāla skaitļa kvadrāts.</p>
 </table>
 <p>Līdz ar to esam ieguvuši, ka izteiksme $n^{2}+n+19$ ir naturāla skaitļa 
 kvadrāts, ja $n$ ir $2; 5$ vai $18$.</p>
-<p>$\\textit {Piezīme.}$ Otrā novērtējuma vietā var arī pārbaudīt $n$ vērtības 
+<p><em>Piezīme.</em> Otrā novērtējuma vietā var arī pārbaudīt $n$ vērtības 
 $1,2,3, \\ldots, 18$.</p>"""@lv .
 
 eliozo:SOLN.LV.AMO.2019.10.5.SUB0 a eliozo:Solution ;
@@ -1612,7 +1612,7 @@ ja $n>\\frac{4}{3}$. Atliek aplūkot gadījumu, kad $n=1$, tad vienādojums $(1)
 ir formā $x^{2}-x=0$ un tam ir divi atrisinājumi $x=0$ un $x=1$, kas abi ir 
 racionāli skaitļi.
 
-$\\textit {Piezīme.}$ To, ka vienādojumam $(1)$ nav atrisinājuma, var pamatot, 
+*Piezīme.* To, ka vienādojumam $(1)$ nav atrisinājuma, var pamatot, 
 aprēķinot diskriminantu, attiecībā pret mainīgo $x$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Apzīmējam $x^{2}-nx=a$, tad</p>
@@ -1634,7 +1634,7 @@ $x^{2}-nx+n^{2}-n=\\left(x-\\frac{n}{2}\\right)^{2}+n\\left(\\frac{3n}{4}-1\\rig
 ja $n&gt;\\frac{4}{3}$. Atliek aplūkot gadījumu, kad $n=1$, tad vienādojums $(1)$ 
 ir formā $x^{2}-x=0$ un tam ir divi atrisinājumi $x=0$ un $x=1$, kas abi ir 
 racionāli skaitļi.</p>
-<p>$\\textit {Piezīme.}$ To, ka vienādojumam $(1)$ nav atrisinājuma, var pamatot, 
+<p><em>Piezīme.</em> To, ka vienādojumam $(1)$ nav atrisinājuma, var pamatot, 
 aprēķinot diskriminantu, attiecībā pret mainīgo $x$.</p>"""@lv .
 
 eliozo:SOLN.LV.AMO.2019.12.1.SUB0 a eliozo:Solution ;
@@ -2250,15 +2250,15 @@ eliozo:SOLN.LV.AMO.2019.6.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
     eliozo:solutionText """## Atrisinājums
 
-**a)** Skat., piemēram, 10.att. **b)** Skat., piemēram, 11.att.
+**(A)** Skat., piemēram, 10.att. **(B)** Skat., piemēram, 11.att.
 
 ![](LV.AMO.2019.6.4A.png)
 
-$\\textit {Piezīme.}$ b) daļas atrisinājums der arī a) daļai."""@lv ;
+*Piezīme.* (B) daļas atrisinājums der arī (A) daļai."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>a)</strong> Skat., piemēram, 10.att. <strong>b)</strong> Skat., piemēram, 11.att.</p>
+<p><strong>(A)</strong> Skat., piemēram, 10.att. <strong>(B)</strong> Skat., piemēram, 11.att.</p>
 <p><img alt="" src="LV.AMO.2019.6.4A.png" /></p>
-<p>$\\textit {Piezīme.}$ b) daļas atrisinājums der arī a) daļai.</p>"""@lv .
+<p><em>Piezīme.</em> (B) daļas atrisinājums der arī (A) daļai.</p>"""@lv .
 
 eliozo:SOLN.LV.AMO.2019.6.5.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -2363,13 +2363,13 @@ eliozo:SOLN.LV.AMO.2019.7.4.SUB0 a eliozo:Solution ;
 
 Skat., piemēram, 16.att.
 
-$\\textit {Piezīme.}$ Mazākais tāds piecstūris sastāv no sešiem trijstūriem un ir 
+*Piezīme.* Mazākais tāds piecstūris sastāv no sešiem trijstūriem un ir 
 pazīstams ar nosaukumu heksamonds sfinksa.
 
 ![](LV.AMO.2019.7.4A.png)"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Skat., piemēram, 16.att.</p>
-<p>$\\textit {Piezīme.}$ Mazākais tāds piecstūris sastāv no sešiem trijstūriem un ir 
+<p><em>Piezīme.</em> Mazākais tāds piecstūris sastāv no sešiem trijstūriem un ir 
 pazīstams ar nosaukumu heksamonds sfinksa.</p>
 <p><img alt="" src="LV.AMO.2019.7.4A.png" /></p>"""@lv .
 
@@ -2495,7 +2495,7 @@ $k$ ir naturāls skaitlis). Tātad stabu skaits ir $2k+1=2 \\cdot 7+1=15$.
 
 ![](LV.AMO.2019.8.1B.png)
 
-$\\textit {Piezīme.}$ Vienādojumu $k \\cdot(2 k+1)=105$ var risināt arī neizmantojot 
+*Piezīme.* Vienādojumu $k \\cdot(2 k+1)=105$ var risināt arī neizmantojot 
 kvadrātvienādojuma atrisināšanas metodes, bet apskatot visas dažādās iespējas, 
 kādu divu naturālu skaitļu reizinājums var būt $105$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
@@ -2518,7 +2518,7 @@ pārrakstīt formā</p>
 $k_{1}=\\frac{-1+29}{4}=7$ un $k_{2}=\\frac{-1-29}{4}=-\\frac{30}{4}$ (neder, jo 
 $k$ ir naturāls skaitlis). Tātad stabu skaits ir $2k+1=2 \\cdot 7+1=15$.</p>
 <p><img alt="" src="LV.AMO.2019.8.1B.png" /></p>
-<p>$\\textit {Piezīme.}$ Vienādojumu $k \\cdot(2 k+1)=105$ var risināt arī neizmantojot 
+<p><em>Piezīme.</em> Vienādojumu $k \\cdot(2 k+1)=105$ var risināt arī neizmantojot 
 kvadrātvienādojuma atrisināšanas metodes, bet apskatot visas dažādās iespējas, 
 kādu divu naturālu skaitļu reizinājums var būt $105$.</p>"""@lv .
 
@@ -2560,7 +2560,7 @@ Tā kā $AD=BC$ kā paralelograma pretējās malas, tad esam ieguvuši, ka $BC=D
 
 ![](LV.AMO.2019.8.3A.png)
 
-$\\textit {Piezīme.}$ Tas, ka $DE$ ir perpendikulārs $AF$, risinājumā nav obligāti 
+*Piezīme.* Tas, ka $DE$ ir perpendikulārs $AF$, risinājumā nav obligāti 
 jāizmanto."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Ievērojam, ka</p>
@@ -2576,7 +2576,7 @@ jāizmanto."""@lv ;
 <p>Tātad trijstūris $ADF$ ir vienādsānu trijstūris (skat. 20.att.), kuram $AD=DF$.
 Tā kā $AD=BC$ kā paralelograma pretējās malas, tad esam ieguvuši, ka $BC=DF$.</p>
 <p><img alt="" src="LV.AMO.2019.8.3A.png" /></p>
-<p>$\\textit {Piezīme.}$ Tas, ka $DE$ ir perpendikulārs $AF$, risinājumā nav obligāti 
+<p><em>Piezīme.</em> Tas, ka $DE$ ir perpendikulārs $AF$, risinājumā nav obligāti 
 jāizmanto.</p>"""@lv .
 
 eliozo:SOLN.LV.AMO.2019.8.4.SUB0 a eliozo:Solution ;

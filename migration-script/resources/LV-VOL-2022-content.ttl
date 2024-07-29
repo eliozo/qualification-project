@@ -109,12 +109,12 @@ eliozo:LV.VOL.2022.10.5 a eliozo:Problem ;
 tieši pieci sieriņi "Kārums". Kādu lielāko secīgu dienu skaitu var ievērot abas
 diētas vienlaicīgi?
 
-$\\textit {Piezīme.}$ Katru dienu var ēst veselu nenegatīvu skaitu sieriṇu."""@lv ;
+*Piezīme.* Katru dienu var ēst veselu nenegatīvu skaitu sieriṇu."""@lv ;
     eliozo:problemTextHtml """<p>Holivudas diētā katrās septiņās secīgās dienās kopā jāapēd tieši trīs sieriņi 
 "Kārums", bet Bolivudas diētā - katrās vienpadsmit secīgās dienās kopā jāapēd 
 tieši pieci sieriņi "Kārums". Kādu lielāko secīgu dienu skaitu var ievērot abas
 diētas vienlaicīgi?</p>
-<p>$\\textit {Piezīme.}$ Katru dienu var ēst veselu nenegatīvu skaitu sieriṇu.</p>"""@lv ;
+<p><em>Piezīme.</em> Katru dienu var ēst veselu nenegatīvu skaitu sieriṇu.</p>"""@lv ;
     eliozo:problemTimeID "2022" ;
     eliozo:problemYear 2022 ;
     eliozo:problem_number 5 ;
@@ -907,7 +907,7 @@ Tas nozīmē, ka uz lapas var iegūt tikai tādus skaitļus, kas dod atlikumu $1
 dalot ar $3$. Tā kā $2022$ dalās ar $3$ (bez atlikuma), tad aprakstītajā veidā 
 šo skaitli uz lapas iegūt nevar.
 
-$\\textit {Piezīme.}$ Uzdevumu var risināt arī pēc moduļa $5$ vai pēc moduļa $15$."""@lv ;
+*Piezīme.* Uzdevumu var risināt arī pēc moduļa $5$ vai pēc moduļa $15$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Pamatosim, ka nevar panākt, lai uz lapas būtu uzrakstīts skaitlis $2022$.</p>
 <p>Sākumā uzrakstītais skaitlis $16$, dalot ar $3$, dod atlikumu $1$.</p>
@@ -920,7 +920,7 @@ $\\textit {Piezīme.}$ Uzdevumu var risināt arī pēc moduļa $5$ vai pēc modu
 <p>Tas nozīmē, ka uz lapas var iegūt tikai tādus skaitļus, kas dod atlikumu $1$, 
 dalot ar $3$. Tā kā $2022$ dalās ar $3$ (bez atlikuma), tad aprakstītajā veidā 
 šo skaitli uz lapas iegūt nevar.</p>
-<p>$\\textit {Piezīme.}$ Uzdevumu var risināt arī pēc moduļa $5$ vai pēc moduļa $15$.</p>"""@lv .
+<p><em>Piezīme.</em> Uzdevumu var risināt arī pēc moduļa $5$ vai pēc moduļa $15$.</p>"""@lv .
 
 eliozo:SOLN.LV.VOL.2022.11.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
@@ -1234,7 +1234,7 @@ $(n-(k-1))^{3}+(n+(k-1))^{3}$ dalās ar $n-k+1+n+k-1=2n$
 Tā kā visas šīs summas dalās ar $2n$, un vidējais saskaitāmais $n^{3}$ dalās 
 ar $n$, tad arī visu $(2k+1)$ kubu summa dalās ar $n$, līdz ar to nav pirmskaitlis.
 
-$\\textit {Piezīme.}$ Uzdevumu var atrisināt arī ar matemātiskās indukcijas metodi."""@lv ;
+*Piezīme.* Uzdevumu var atrisināt arī ar matemātiskās indukcijas metodi."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>No kubu summas formulas $a^{3}+b^{3}=(a+b)\\left(a^{2}-ab+b^{2}\\right)$ redzams,
 ka $a^{3}+b^{3}$ dalās ar $(a+b)$. Apskatīsim divus iespējamos gadījumus.</p>
@@ -1261,7 +1261,7 @@ pirmo saskaitāmo ar pēdējo, otro saskaitāmo - ar pirmspēdējo utt., iegūst
 $(n-(k-1))^{3}+(n+(k-1))^{3}$ dalās ar $n-k+1+n+k-1=2n$</p>
 <p>Tā kā visas šīs summas dalās ar $2n$, un vidējais saskaitāmais $n^{3}$ dalās 
 ar $n$, tad arī visu $(2k+1)$ kubu summa dalās ar $n$, līdz ar to nav pirmskaitlis.</p>
-<p>$\\textit {Piezīme.}$ Uzdevumu var atrisināt arī ar matemātiskās indukcijas metodi.</p>"""@lv .
+<p><em>Piezīme.</em> Uzdevumu var atrisināt arī ar matemātiskās indukcijas metodi.</p>"""@lv .
 
 eliozo:SOLN.LV.VOL.2022.12.4.SUB0 a eliozo:Solution ;
     eliozo:solutionNum 0 ;
