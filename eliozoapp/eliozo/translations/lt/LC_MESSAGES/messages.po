@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-07-28 22:20+0300\n"
+"POT-Creation-Date: 2024-08-12 01:12+0300\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: lt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.15.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: templates/archive_content.html:5 templates/book_problems_content.html:5
 #: templates/concepts_content.html:5 templates/problem_content.html:6
@@ -154,7 +154,7 @@ msgstr "Viename iš sprendimų naudojamas metodas."
 msgid "Unlike other metadata method is often unspecified."
 msgstr "Skirtingai nuo kitų metaduomenų, metodas paprastai nenurodomas."
 
-#: templates/filter_content.html:154
+#: templates/filter_content.html:154 templates/problem_content.html:61
 msgid "Solution"
 msgstr "Sprendimas"
 
@@ -178,7 +178,7 @@ msgstr "Ieškoti"
 msgid "Pages"
 msgstr "Puslapiai"
 
-#: templates/filter_content.html:222 templates/main_content.html:38
+#: templates/filter_content.html:222 templates/main_content.html:49
 msgid "More"
 msgstr "Daugiau"
 
@@ -206,42 +206,43 @@ msgstr "Sąvokos"
 msgid "References"
 msgstr "Nuorodos"
 
-#: templates/main_content.html:8
+#: templates/main_content.html:13
 msgid "Case Sensitive"
 msgstr "Raidžių jautrumas"
 
-#: templates/main_content.html:9
+#: templates/main_content.html:19
 msgid "Regular Expresion"
 msgstr "Reguliarioji išraiška"
 
-#: templates/main_content.html:12
+#: templates/main_content.html:23
 msgid "All"
 msgstr "Viskas"
 
-#: templates/main_content.html:13
+#: templates/main_content.html:24
 msgid "Questions"
 msgstr "Klausimai"
 
-#: templates/main_content.html:14
+#: templates/main_content.html:25
 msgid "Solutions"
 msgstr "Sprendimai"
 
-#: templates/main_content.html:15
+#: templates/main_content.html:26
 msgid "Hints"
 msgstr "Patarimai"
 
-#: templates/main_content.html:16
+#: templates/main_content.html:27
 msgid "Formulas"
 msgstr "Formulės"
+
+#: templates/problem_content.html:63
+msgid "No solution"
+msgstr "Nėra sprendimo"
 
 #~ msgid "Olympiad"
 #~ msgstr "Olimpiada"
 
 #~ msgid "Has solution"
 #~ msgstr "Yra sprendimas"
-
-#~ msgid "No solution"
-#~ msgstr "Nėra sprendimo"
 
 #~ msgid "Has video"
 #~ msgstr "Yra video"

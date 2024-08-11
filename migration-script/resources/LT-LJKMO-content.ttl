@@ -9,7 +9,7 @@ eliozo:LT.LJKMO.1999.7_8.1 a eliozo:Problem ;
     eliozo:olympiadType "Contest" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.1999.7_8.1" ;
-    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.1999.7_8.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.1999.7_8.1.SUB1 ;
     eliozo:problemText """Iššifruokite daugybą "stulpeliu". Kaip visada skirtingoms 
 dauginamojo ir daugiklio raidėms atitinka skirtingi skaičiai. 
 Visi kiti skaičiai pažymėti vienodu simboliu x.  
@@ -52,7 +52,7 @@ eliozo:LT.LJKMO.1999.7_8.3 a eliozo:Problem ;
     eliozo:olympiadType "Contest" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.1999.7_8.3" ;
-    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.1999.7_8.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.1999.7_8.3.SUB1 ;
     eliozo:problemText """**(A)** Raskite kokį nors $100$-ženklį skaičių, kuris dalijasi 
 iš $100$ ir kurio visų skaitmenų suma yra $100$.  
 **(B)** Raskite patį mažiausią tokį skaičių."""@lt,
@@ -84,7 +84,7 @@ eliozo:LT.LJKMO.2000.7_8.3 a eliozo:Problem ;
     eliozo:olympiadType "Contest" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2000.7_8.3" ;
-    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.2000.7_8.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.2000.7_8.3.SUB1 ;
     eliozo:problemText """Kokią pačią mažiausią sumą galime gauti sudėję visus be liekanos iš $23$
 besidalijančio skaičiaus skaitmenis?"""@lt,
         """Kādu pašu mazāko summu var iegūt, saskaitot visus ciparus skaitlim, 
@@ -113,7 +113,7 @@ eliozo:LT.LJKMO.2001.7_8.1 a eliozo:Problem ;
     eliozo:olympiadType "Contest" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2001.7_8.1" ;
-    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.2001.7_8.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.2001.7_8.1.SUB1 ;
     eliozo:problemText """Sveikas teigiamas skaičius yra užrašomas vien tik 
 trejetais ir septynetais, o visų jo
 skaitmenų suma dalijasi ir iš $3$, ir iš $7$. 
@@ -146,7 +146,7 @@ eliozo:LT.LJKMO.2001.7_8.2 a eliozo:Problem ;
     eliozo:olympiadType "Contest" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2001.7_8.2" ;
-    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.2001.7_8.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.2001.7_8.2.SUB1 ;
     eliozo:problemText """Raskite sveikuosius lygties 
 $x-y= x^2 + xy+ y^2$ sprendinius."""@lt,
         """Atrodiet veselus atrisinājumus vienādojumam
@@ -175,7 +175,7 @@ eliozo:LT.LJKMO.2002.7_8.1 a eliozo:Problem ;
     eliozo:olympiadType "Contest" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2002.7_8.1" ;
-    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.2002.7_8.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.2002.7_8.1.SUB1 ;
     eliozo:problemText """Jei iš skaičių $2$, $4$, $6$, $8$, $10$, $12$, 
 $14$ ir $16$ išbrauktume $4$, $8$, $10$, $14$ ir $16$, 
 tai likusių skaičių $2$, $6$ ir $12$ sandauga būtų lygi
@@ -236,14 +236,16 @@ $$3xy - x - 2y = 8.$$
 **(C)** Atrodiet trīs veselu skaitļu pārus, kas apmierina šo vienādojumu.  
 **(D)** Atrodiet visus šī vienādojuma atrisinājumu pārus."""@lv ;
     eliozo:problemTextHtml """<p>Duota lygtis</p>
-<p>$$3xy - x - 2y = 8.$$</p>
-<p><strong>(A)</strong> Raskite vieną sveikųjų skaičių porą $(x; y)$, tenkinančią šią lygtį.<br />
+<p>$$3xy - x - 2y = 8.$$
+
+**(A)** Raskite vieną sveikųjų skaičių porą $(x; y)$, tenkinančią šią lygtį.<br />
 <strong>(B)</strong> Raskite dvi sveikųjų skaičių poras, tenkinančias šią lygtį.<br />
 <strong>(C)</strong> Raskite tris sveikųjų skaičių poras, tenkinančias šią lygtį.<br />
 <strong>(D)</strong> Raskite visas šios lygties sveikųjų sprendinių poras.</p>"""@lt,
         """<p>Dots vienādojums</p>
-<p>$$3xy - x - 2y = 8.$$</p>
-<p><strong>(A)</strong> Atrodiet vienu veselu skaitļu pāri $(x; y)$, kas apmierina šo vienādojumu.<br />
+<p>$$3xy - x - 2y = 8.$$
+
+**(A)** Atrodiet vienu veselu skaitļu pāri $(x; y)$, kas apmierina šo vienādojumu.<br />
 <strong>(B)</strong> Atrodiet divus veselu skaitļu pārus, kas apmierina šo vienādojumu.<br />
 <strong>(C)</strong> Atrodiet trīs veselu skaitļu pārus, kas apmierina šo vienādojumu.<br />
 <strong>(D)</strong> Atrodiet visus šī vienādojuma atrisinājumu pārus.</p>"""@lv ;
@@ -306,7 +308,7 @@ eliozo:LT.LJKMO.2003.7_8.3 a eliozo:Problem ;
     eliozo:olympiadType "Contest" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2003.7_8.3" ;
-    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.2003.7_8.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.2003.7_8.3.SUB1 ;
     eliozo:problemText """Nurodykite nors vieną tokį skaičių, kuris baigiasi "2003", 
 dalijasi iš $2003$ ir kurio skaitmenų suma yra lygi $2003$."""@lt,
         """Atrodiet kaut vienu tādu skaitli, kas beidzas ar "2003", 
@@ -334,8 +336,7 @@ eliozo:LT.LJKMO.2003.7_8.4 a eliozo:Problem ;
     eliozo:olympiadType "Contest" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LT.LJKMO.2003.7_8.4" ;
-    eliozo:problemImage eliozo:IMG.LT.LJKMO.2003.7_8.4.png ;
-    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.2003.7_8.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LT.LJKMO.2003.7_8.4.SUB1 ;
     eliozo:problemText """Iš natūraliųjų skaičių nuo $1$ iki $22$, 
 panaudojus juos visus po vieną kartą, buvo
 sudaryta $11$ trupmenų. Koks galėjo būti 
@@ -424,13 +425,15 @@ $$mn - n + m = 2004.$$
 **(A)** Atrodiet vienu tādu skaitļu $m$ un $n$ pāri $(m; n)$;  
 **(B)** Atrodiet visus iespējamos tādus skaitļu $m$ un $n$ pārus."""@lv ;
     eliozo:problemTextHtml """<p>Neneigiami sveikieji skaičiai $m$ ir $n$ tenkina sąlygą</p>
-<p>$$mn - n + m = 2004.$$</p>
-<p><strong>(A)</strong> Raskite vieną tokią skaičių $m$ ir $n$ porą $(m; n)$;<br />
-<strong>(B)</strong> Raskite visas galimas tokias skaičių $m$ ir $n$ poras.</p>"""@lt,
+<p>$$mn - n + m = 2004.$$
+
+**(A)** Raskite vieną tokią skaičių $m$ ir $n$ porą $(m; n)$;  
+**(B)** Raskite visas galimas tokias skaičių $m$ ir $n$ poras.</p>"""@lt,
         """<p>Nenegatīvi veseli skaitļi $m$ un $n$ apmierina nosacījumu</p>
-<p>$$mn - n + m = 2004.$$</p>
-<p><strong>(A)</strong> Atrodiet vienu tādu skaitļu $m$ un $n$ pāri $(m; n)$;<br />
-<strong>(B)</strong> Atrodiet visus iespējamos tādus skaitļu $m$ un $n$ pārus.</p>"""@lv ;
+<p>$$mn - n + m = 2004.$$
+
+**(A)** Atrodiet vienu tādu skaitļu $m$ un $n$ pāri $(m; n)$;  
+**(B)** Atrodiet visus iespējamos tādus skaitļu $m$ un $n$ pārus.</p>"""@lv ;
     eliozo:problemTimeID "2004" ;
     eliozo:problemYear 2004 ;
     eliozo:problem_number 3 ;
@@ -535,23 +538,23 @@ risināsim veselos skaitļos $a$, $b$, $c$ un $d$.
 **(B)** Atrodiet divus tādus skaitļu $a$, $b$, $c$ un $d$ četriniekus $(a,b,c,d)$.  
 **(C)** Atrodiet visus tādus skaitļu $a$, $b$, $c$ un $d$ četriniekus $(a,b,c,d)$."""@lv ;
     eliozo:problemTextHtml """<p>Lygčių sistemą
-$$\\left{ \\begin{array}{l}
-a^2+b^2= 2(c+d)\\
+$$\\left\\{ \\begin{array}{l}
+a^2+b^2= 2(c+d)\\\\
 c^2+d^2=2(a+b)
 \\end{array} \\right.$$
-spręsime sveikaisiais skaičiais $a$, $b$, $c$ ir $d$.<br />
-<strong>(A)</strong> Nurodykite vieną tokį skaičių $a$, $b$, $c$ ir $d$ ketvertą $(a,b,c,d)$.<br />
-<strong>(B)</strong> Nurodykite du tokius skaičių $a$, $b$, $c$ ir $d$ ketvertus $(a,b,c,d)$.<br />
-<strong>(C)</strong> Raskite visus tokius skaičių $a$, $b$, $c$ ir $d$ ketvertus $(a,b,c,d)$.</p>"""@lt,
+spręsime sveikaisiais skaičiais $a$, $b$, $c$ ir $d$.  
+**(A)** Nurodykite vieną tokį skaičių $a$, $b$, $c$ ir $d$ ketvertą $(a,b,c,d)$.  
+**(B)** Nurodykite du tokius skaičių $a$, $b$, $c$ ir $d$ ketvertus $(a,b,c,d)$.  
+**(C)** Raskite visus tokius skaičių $a$, $b$, $c$ ir $d$ ketvertus $(a,b,c,d)$.</p>"""@lt,
         """<p>Vienādojumu sistēmu
-$$\\left{ \\begin{array}{l}
-a^2+b^2= 2(c+d)\\
+$$\\left\\{ \\begin{array}{l}
+a^2+b^2= 2(c+d)\\\\
 c^2+d^2=2(a+b)
 \\end{array} \\right.$$
-risināsim veselos skaitļos $a$, $b$, $c$ un $d$.<br />
-<strong>(A)</strong> Atrodiet vienu tādu skaitļu $a$, $b$, $c$ un $d$ četrinieku $(a,b,c,d)$.<br />
-<strong>(B)</strong> Atrodiet divus tādus skaitļu $a$, $b$, $c$ un $d$ četriniekus $(a,b,c,d)$.<br />
-<strong>(C)</strong> Atrodiet visus tādus skaitļu $a$, $b$, $c$ un $d$ četriniekus $(a,b,c,d)$.</p>"""@lv ;
+risināsim veselos skaitļos $a$, $b$, $c$ un $d$.  
+**(A)** Atrodiet vienu tādu skaitļu $a$, $b$, $c$ un $d$ četrinieku $(a,b,c,d)$.  
+**(B)** Atrodiet divus tādus skaitļu $a$, $b$, $c$ un $d$ četriniekus $(a,b,c,d)$.  
+**(C)** Atrodiet visus tādus skaitļu $a$, $b$, $c$ un $d$ četriniekus $(a,b,c,d)$.</p>"""@lv ;
     eliozo:problemTimeID "2006" ;
     eliozo:problemYear 2006 ;
     eliozo:problem_number 4 ;
@@ -698,12 +701,12 @@ daliklių kiekį. Už kiekvieną tokį $30$ kartotinį, kuris pats turi
 lygiai $30$ daliklių, jiems buvo pažadėta premija. 
 Už patį pirmą patikrintą skaičių $30$ Tomas ir Džeris premijos negaus, nes pats
 skaičius $30$ tiek daliklių neturi – jų tėra tik $8$, nes visi skaičiaus $30$ dalikliai yra
-$$1, 2, 3, 5, 6, 10, 15\\;\\;\\text{ir}\\;\\;30.$$<br />
-<strong>(A)</strong> Ar galima surasti nors vieną tokį skaičiaus $30$ kartotinį, 
-už kurį Tomas ir Džeris gautų premiją?<br />
-<strong>(B)</strong> Ar galima surasti $2$ tokius $30$ kartotinius, turinčius po $30$ daliklių?<br />
-<strong>(C)</strong> Ar galima surasti $6$ tokius $30$ kartotinius?<br />
-<strong>(D)</strong> Ar gali Tomas ir Džeris gauti $8$ premijas?</p>"""@lt,
+$$1, 2, 3, 5, 6, 10, 15\\;\\;\\text{ir}\\;\\;30.$$  
+**(A)** Ar galima surasti nors vieną tokį skaičiaus $30$ kartotinį, 
+už kurį Tomas ir Džeris gautų premiją?  
+**(B)** Ar galima surasti $2$ tokius $30$ kartotinius, turinčius po $30$ daliklių?  
+**(C)** Ar galima surasti $6$ tokius $30$ kartotinius?  
+**(D)** Ar gali Tomas ir Džeris gauti $8$ premijas?</p>"""@lt,
         """<p>Kļuvuši nopietnāki, Toms un Džerijs 
 iekārtojās darbā dalītāju uzskaites inspekcijā. 
 Pirmais viņiem uzticētais darbs bija pārbaudīt pēc 
@@ -715,11 +718,11 @@ Par pirmo pārbaudīto skaitli $30$ Toms un Džerijs prēmiju nesaņems, jo paš
 skaitlim $30$ tik daudz dalītāju nav. To ir tikai $8$, jo visi 
 skaitļa $30$ dalītāji ir 
 $$1, 2, 3, 5, 6, 10, 15\\;\\;\\text{un}\\;\\;30.$$
-<strong>(A)</strong> Vai var atrast kaut vienu tādu skaitļa $30$ daudzkārtni, par kuru 
-Toms un Džerijs dabūtu prēmiju?<br />
-<strong>(B)</strong> Vai var atrast $2$ tādus $30$ daudzkārtņus, kam ir pa $30$ dalītājiem?<br />
-<strong>(C)</strong> Vai var atrast $6$ tādus $30$ daudzkārtņus?<br />
-<strong>(D)</strong> Vai Toms un Džerijs var iegūt $8$ prēmijas?</p>"""@lv ;
+**(A)** Vai var atrast kaut vienu tādu skaitļa $30$ daudzkārtni, par kuru 
+Toms un Džerijs dabūtu prēmiju?  
+**(B)** Vai var atrast $2$ tādus $30$ daudzkārtņus, kam ir pa $30$ dalītājiem?  
+**(C)** Vai var atrast $6$ tādus $30$ daudzkārtņus?  
+**(D)** Vai Toms un Džerijs var iegūt $8$ prēmijas?</p>"""@lv ;
     eliozo:problemTimeID "2008" ;
     eliozo:problemYear 2008 ;
     eliozo:problem_number 1 ;
@@ -2057,12 +2060,8 @@ Vai arī jums viss ir tikpat acīmredzami kā Zirgam Dominikam?</p>"""@lv ;
     eliozo:suggestedGrade 7,
         8 .
 
-eliozo:IMG.LT.LJKMO.2003.7_8.4.png a eliozo:Image ;
-    eliozo:imageSrc "LT.LJKMO.2003.7_8.4.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:SOLN.LT.LJKMO.1999.7_8.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LT.LJKMO.1999.7_8.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **Atrod S:** Reizināšana pierakstīta, izlaižot otro no četriem saskaitāmajiem. Tas notiek vienīgi tad, ja 
@@ -2087,20 +2086,20 @@ Der vienīgi vērtība $A=2$, kas pārsniedz $1$, bet ir mazāka par $4$ (un nav
 <p><strong>Atrod S:</strong> Reizināšana pierakstīta, izlaižot otro no četriem saskaitāmajiem. Tas notiek vienīgi tad, ja 
 $S=0$. </p>
 <p><strong>Atrod R:</strong> Pēdējais no četriem saskaitāmajiem ir četrciparu skaitlis, 
-tātad $R \\cdot \\overline{RASK} &lt; 10^5$ (četrciparu skaitlis) parāda, ka $R \\leq 3$. 
+tātad $R \\cdot \\overline{RASK} < 10^5$ (četrciparu skaitlis) parāda, ka $R \\leq 3$. 
 Reizināšanas rezultāts tomēr ir astoņciparu skaitlis, tātad $R \\geq 3$.
 Tātad $R=3$. </p>
 <p><strong>Atrod A:</strong> Tā kā $A \\neq 0$, tad mēģinot ņemt $A = 1$ iegūstam $3109^2 = 9665881$, 
 kas nav 8-ciparu rezultāts. No šejienes redzam, ka pat vislielākā 
 $K$ vērtība $K=9$ neder. Tātad $A \\neq 1$.<br />
-Ja $A &gt; 3$ (piemēram $A=4$), tad $R \\cdot \\overline{RASK} \\geq 3 \\cdot 3401$ nav 4-ciparu skaitlis. 
+Ja $A > 3$ (piemēram $A=4$), tad $R \\cdot \\overline{RASK} \\geq 3 \\cdot 3401$ nav 4-ciparu skaitlis. 
 Tātad $A \\leq 3$.<br />
 Der vienīgi vērtība $A=2$, kas pārsniedz $1$, bet ir mazāka par $4$ (un nav vienāda ar $R=3$).</p>
 <p><strong>Atrod K:</strong> Ja $K \\geq 4$, tad $K \\cdot \\overline{RASK}$ nav 4-ciparu. Tātad $K=1$. </p>
 <p><strong>Atbilde:</strong> $\\overline{RASK} = 3201$.</p>"""@lv .
 
-eliozo:SOLN.LT.LJKMO.1999.7_8.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LT.LJKMO.1999.7_8.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 * Pēdējiem diviem cipariem skaitlī jābūt nullēm, lai dalītos ar $100$ 
@@ -2121,17 +2120,18 @@ t.i. skaitlis kļūs lielāks."""@lv ;
   (dalāmības pazīme ar $100 = 2^2 \\cdot 5^2$). </li>
 <li>Ciparu summu $100$ cenšamies iegūt, izvietojot vislielākos ciparus ("9") 
   iespējami tuvu skaitļa beigām:
-$$M = 100\\ldots009999999999900.$$</li>
-<li>Iegūstam skaitli $M$, kam ir $100$ cipari - sākumā $1$ vieninieks, tad $86$ nulles, 
-  tad $11$ deviņnieki, visbeidzot $2$ nulles.</li>
-</ul>
-<p>Mazāks skaitlis nevar būt, jo pirmais cipars nevar būt nulle. 
+$$M = 100\\ldots009999999999900.$$
+* Iegūstam skaitli $M$, kam ir $100$ cipari - sākumā $1$ vieninieks, tad $86$ nulles, 
+  tad $11$ deviņnieki, visbeidzot $2$ nulles.
+
+Mazāks skaitlis nevar būt, jo pirmais cipars nevar būt nulle. 
 Bet jebkurā citā veidā iegūstot to pašu ciparu summu, 
 kāds no esošā skaitļa $M$ cipariem no nulles pārtaps par kaut ko citu, 
-t.i. skaitlis kļūs lielāks.</p>"""@lv .
+t.i. skaitlis kļūs lielāks.</li>
+</ul>"""@lv .
 
-eliozo:SOLN.LT.LJKMO.2000.7_8.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LT.LJKMO.2000.7_8.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 * Ciparu summa nevar būt $1$, jo skaitlis $10\\ldots0 = 10^n$ satur tikai 
@@ -2170,24 +2170,29 @@ loceklis, kurš dalās ar vajadzīgo skaitli."""@lv ;
 <li>Ar pilno pārlasi, mēģinot dalīt $11, 101, 1001,\\ldots$, iegūstam, 
   ka mazākais skaitlis, kuru var izdalīt ar $23$ ir šāds:</li>
 </ul>
-<p>$$100000000001 = 10^{11} + 1.$$</p>
-<p><strong>Piezīme:</strong> Bezgalīgu ciparu virkni $10^k = 1000\\ldots$ dalot "stabiņā" ar $23$ var gaidīt brīdi, 
-kad radīsies atlikums $22$. Tanī brīdī $10^k + 1$ dalās ar $23$ bez atlikuma.</p>
-<p><strong>Piezīme:</strong> Skaitli, kuram $10^k + 1$ dalās ar $23$ var atrast arī, izmantojot 
+<p>$$100000000001 = 10^{11} + 1.$$
+
+**Piezīme:** Bezgalīgu ciparu virkni $10^k = 1000\\ldots$ dalot "stabiņā" ar $23$ var gaidīt brīdi, 
+kad radīsies atlikums $22$. Tanī brīdī $10^k + 1$ dalās ar $23$ bez atlikuma.
+
+**Piezīme:** Skaitli, kuram $10^k + 1$ dalās ar $23$ var atrast arī, izmantojot 
 Mazo Fermā teorēmu. Saskaņā ar to, $10^{22} \\equiv 1 \\pmod {23}$. Tāpēc 
-kāpinot divreiz mazākā pakāpē $10^{11}$ dos vai nu atlikumu $1$, vai atlikumu $-1$, dalot ar $23$. </p>
-<p>Virkni $11,101,1001,10001,\\ldots$ var izteikt ar rekurentu sakarību: </p>
-<p>$$\\left{ \\begin{array}{l}
-a_1 = 11,\\
+kāpinot divreiz mazākā pakāpē $10^{11}$ dos vai nu atlikumu $1$, vai atlikumu $-1$, dalot ar $23$. 
+
+Virkni $11,101,1001,10001,\\ldots$ var izteikt ar rekurentu sakarību: 
+
+$$\\left\\{ \\begin{array}{l}
+a_1 = 11,\\\\
 a_{k+1} = 10 \\cdot (a_k -1) + 1 = 10 \\cdot a_k - 9.
-\\end{array} \\right.$$</p>
-<p>No teorijas zināms, ka rekurenti uzdotām virknēm atlikumi (piemēram, dalot ar $23$) periodiski mainās - katru 
+\\end{array} \\right.$$
+
+No teorijas zināms, ka rekurenti uzdotām virknēm atlikumi (piemēram, dalot ar $23$) periodiski mainās - katru 
 nākamo locekli viennozīmīgi nosaka iepriekšējais. Tāpēc virknē $a_k$ reiz būs loceklis, kas dalās ar $23$ 
 (un šādi locekļi parādīsies bezgalīgi bieži). Var arī sanākt, ka $a_k$ periods iestājas <em>pirms</em> rodas
 loceklis, kurš dalās ar vajadzīgo skaitli.</p>"""@lv .
 
-eliozo:SOLN.LT.LJKMO.2001.7_8.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LT.LJKMO.2001.7_8.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 * Ja skaitļa pierakstā izmantoti $k$ trijnieki, tad $k$ dalās
@@ -2213,8 +2218,8 @@ dalāmību ar $3$ nemaina). </li>
 ir $3333333$. Bet mazākais skaitlis, kur ir abu veidu cipari ir 
 $3333333777$.</p>"""@lv .
 
-eliozo:SOLN.LT.LJKMO.2001.7_8.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LT.LJKMO.2001.7_8.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Vispirms uzminam dažas saknes.
@@ -2272,30 +2277,39 @@ dažas saknes, ievietojot mazus $y$:</p>
   ir $x_1 = 0$, $x_2 = 2$.  </li>
 </ul>
 <p>Fiksētam $y$ vienādojums ir kvadrātvienādojums pret $x$: </p>
-<p>$$x^2 + (y-1)x + (y^2+y) = 0.$$ </p>
-<p>Lai būtu atrisinājumi, diskriminantam jābūt nenegatīvam:</p>
-<p>$$D = (y-1)^2 - 4(y^2 + y) \\geq 0$$</p>
-<p>jeb $y^2 - 2y + 1 - 4y^2 - 4y = -3y^2 -6y + 1\\geq 0$ jeb</p>
-<p>$$3y^2 + 6y - 1 \\leq 0.$$</p>
-<p>Pārbaudām, vai ir citas saknes?</p>
-<p>Nevienādība $3y^2 + 6y - 1 \\leq 0.$ izpildās, ja $y \\in [y_1,y_2]$, kur</p>
-<p>$$y_{1,2} = \\frac{-3 \\pm \\sqrt{9+3}}{3};\\;\\;y_1 \\approx -2.15;\\;\\;y_2 \\approx 0.15.$$</p>
-<p>Intervālā ir veselas $y$ vērtības: $y \\in { -2,-1,0 }$</p>
-<ul>
-<li>Ja $y=-2$, tad $x+2 = x^2 - 2x + 4$ jeb $x^2 - 3x + 2$ un saknes ir $x_1 = 1$, $x_2 = 2$. </li>
-<li>Gadījumus $y = -1$, $y=0$ skatījām agrāk (pie minēšanas). </li>
-</ul>
-<p>Apkopojam visas atbildes:
-$$\\left{ \\begin{array}{l}
-\\text{ja}\\;y=-2,\\;\\text{tad}\\;(x,y)=(1,-2)\\;\\text{vai}\\;(2,-2)\\
-\\text{ja}\\;y=-1,\\;\\text{tad}\\;(x,y) = (0,-1)\\;\\text{vai}\\;(2,-1)\\
+<p>$$x^2 + (y-1)x + (y^2+y) = 0.$$ 
+
+Lai būtu atrisinājumi, diskriminantam jābūt nenegatīvam:
+
+$$D = (y-1)^2 - 4(y^2 + y) \\geq 0$$
+
+jeb $y^2 - 2y + 1 - 4y^2 - 4y = -3y^2 -6y + 1\\geq 0$ jeb
+
+$$3y^2 + 6y - 1 \\leq 0.$$
+
+Pārbaudām, vai ir citas saknes?
+
+Nevienādība $3y^2 + 6y - 1 \\leq 0.$ izpildās, ja $y \\in [y_1,y_2]$, kur
+
+$$y_{1,2} = \\frac{-3 \\pm \\sqrt{9+3}}{3};\\;\\;y_1 \\approx -2.15;\\;\\;y_2 \\approx 0.15.$$
+
+Intervālā ir veselas $y$ vērtības: $y \\in { -2,-1,0 }$
+
+* Ja $y=-2$, tad $x+2 = x^2 - 2x + 4$ jeb $x^2 - 3x + 2$ un saknes ir $x_1 = 1$, $x_2 = 2$. 
+* Gadījumus $y = -1$, $y=0$ skatījām agrāk (pie minēšanas). 
+
+Apkopojam visas atbildes:
+$$\\left\\{ \\begin{array}{l}
+\\text{ja}\\;y=-2,\\;\\text{tad}\\;(x,y)=(1,-2)\\;\\text{vai}\\;(2,-2)\\\\
+\\text{ja}\\;y=-1,\\;\\text{tad}\\;(x,y) = (0,-1)\\;\\text{vai}\\;(2,-1)\\\\
 \\text{ja}\\;y=0,\\;\\text{tad}\\;(x,y) = (0,0)\\;\\text{vai}\\;(1,0)
-\\end{array} \\right.$$</p>
-<p>Citām veselām $y$ vērtībām sakņu nav, jo tad diskriminants 
+\\end{array} \\right.$$
+
+Citām veselām $y$ vērtībām sakņu nav, jo tad diskriminants 
 (vienādojumam attiecībā pret $x$) ir negatīvs.</p>"""@lv .
 
-eliozo:SOLN.LT.LJKMO.2002.7_8.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LT.LJKMO.2002.7_8.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Skaitļi $10$ un $14$ noteikti jāsvītro, jo tie ir vienīgie, kuri 
@@ -2317,8 +2331,8 @@ nebūs pilns kvadrāts). </p>
 Piemēram, $10$, $14$ un arī $2$ ($2$ vietā var ņemt $8$ - abos 
 gadījumos tur pirmreizinātājs $2$ ir nepāru pakāpē).</p>"""@lv .
 
-eliozo:SOLN.LT.LJKMO.2003.7_8.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LT.LJKMO.2003.7_8.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 * Ir viegli panākt, lai skaitlis beigtos ar cipariem "2003" - var vienkārši uzrakstīt $2003$. 
@@ -2370,68 +2384,35 @@ $$14021\\underbrace{2003}_{\\text{1.reize}}\\underbrace{2003}_{\\text{2.reize}}\
 </li>
 </ul>
 <p>Pirmā polsterēšanas doma (var dabūt ciparu summas, kas dalās ar $5$):
-$$\\underbrace{2003}\\underbrace{2003}\\ldots\\underbrace{2003}.$$</p>
-<ul>
-<li>Iespraužot skaitļa pieraksta vidū jaunu fragmentu "2003", 
-ciparu summa pieaug par soli $5$ (tas joprojām 
-beidzas ar cipariem "2003" un dalās ar $2003$). </li>
-<li>Ciparu summu $2000$ var iegūt, iespraužot šo fragmentu $400$ reizes.</li>
-<li>
-<p>Kā dabūt par $3$ lielāku ciparu summu? Vai eksistē fragments, kurš 
-dalās ar $2003$, bet tā ciparu summa ir $3$ (vai skaitlis, kas dod 
-atlikumu $3$, dalot ar $5$)? </p>
-</li>
-<li>
-<p>Aplūkojam aritmētisku progresiju ar $2003$ daudzkārtņiem
-un katra šāda skaitļa $2003k$ ciparu summu $S(2003k)$:</p>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>$k$</th>
-<th>$1$</th>
-<th>$2$</th>
-<th>$3$</th>
-<th>$4$</th>
-<th>$5$</th>
-<th>$6$</th>
-<th>$7$</th>
-<th>$\\ldots$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$2003 \\cdot k$</td>
-<td>$2003$</td>
-<td>$4006$</td>
-<td>$6009$</td>
-<td>$8012$</td>
-<td>$10015$</td>
-<td>$12018$</td>
-<td>$14021$</td>
-<td>$\\ldots$</td>
-</tr>
-<tr>
-<td>$S(2003 \\cdot k)$</td>
-<td>$5$</td>
-<td>$10$</td>
-<td>$15$</td>
-<td>$11$</td>
-<td>$7$</td>
-<td>$12$</td>
-<td>$8$</td>
-<td>$\\ldots$</td>
-</tr>
-</tbody>
-</table>
-<p>Redzam, ka $7\\cdot{}2003$ ciparu summa ir $8$. Tam pievienojot fragmentus 
-$2003$, var dabūt, lai ciparu summa būtu $8,13,18,23,\\ldots,1998,2003$. 
-Meklētā skaitļa piemērs:</p>
-<p>$$14021\\underbrace{2003}<em>{\\text{1.reize}}\\underbrace{2003}</em>{\\text{2.reize}}\\ldots\\underbrace{2003}_{\\text{399.reize}}.$$</p>"""@lv .
+$$\\underbrace{2003}\\underbrace{2003}\\ldots\\underbrace{2003}.$$
 
-eliozo:SOLN.LT.LJKMO.2003.7_8.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+* Iespraužot skaitļa pieraksta vidū jaunu fragmentu "2003", 
+ciparu summa pieaug par soli $5$ (tas joprojām 
+beidzas ar cipariem "2003" un dalās ar $2003$). 
+* Ciparu summu $2000$ var iegūt, iespraužot šo fragmentu $400$ reizes.
+* Kā dabūt par $3$ lielāku ciparu summu? Vai eksistē fragments, kurš 
+dalās ar $2003$, bet tā ciparu summa ir $3$ (vai skaitlis, kas dod 
+atlikumu $3$, dalot ar $5$)? 
+
+
+* Aplūkojam aritmētisku progresiju ar $2003$ daudzkārtņiem
+un katra šāda skaitļa $2003k$ ciparu summu $S(2003k)$:
+
+| $k$               | $1$     | $2$     | $3$     | $4$     | $5$     | $6$     | $7$     | $\\ldots$ |
+| ----------------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | -------- |
+| $2003 \\cdot k$    | $2003$  | $4006$  | $6009$  | $8012$  | $10015$ | $12018$ | $14021$ | $\\ldots$ |
+| $S(2003 \\cdot k)$ | $5$     | $10$    | $15$    | $11$    | $7$     | $12$    | $8$     | $\\ldots$ |
+
+
+
+Redzam, ka $7\\cdot{}2003$ ciparu summa ir $8$. Tam pievienojot fragmentus 
+$2003$, var dabūt, lai ciparu summa būtu $8,13,18,23,\\ldots,1998,2003$. 
+Meklētā skaitļa piemērs:
+
+$$14021\\underbrace{2003}_{\\text{1.reize}}\\underbrace{2003}_{\\text{2.reize}}\\ldots\\underbrace{2003}_{\\text{399.reize}}.$$</p>"""@lv .
+
+eliozo:SOLN.LT.LJKMO.2003.7_8.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 * Sadalām kopu divās daļās (no $1$ līdz $11$ un arī 

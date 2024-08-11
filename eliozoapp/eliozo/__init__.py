@@ -5,7 +5,7 @@ import json
 import html
 import requests
 import re
-from .webmd_utils import fix_image_links
+from .webmd_utils import fix_image_links, mathBeautify
 
 import logging
 # from babel.support import MissingTranslationError
@@ -648,10 +648,10 @@ SELECT ?problemid ?text ?textHtml WHERE {
     return x.text
 
 
-def mathBeautify(a): # Izskaistina formulas ar MathJax Javascript bibliotēku
-    b0 = re.sub(r"\$\$([^\$]+)\$\$", r"<p><span class='math display'>\[\1\]</span></p>", a) # Aizstāj vairākrindu formulas $$..$$
-    b = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", b0) # Aizstāj inline formulas $...$ (Svarīga secība, kā aizstāj)
-    return b
+# def mathBeautify(a): # Izskaistina formulas ar MathJax Javascript bibliotēku
+#     b0 = re.sub(r"\$\$([^\$]+)\$\$", r"<p><span class='math display'>\[\1\]</span></p>", a) # Aizstāj vairākrindu formulas $$..$$
+#     b = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", b0) # Aizstāj inline formulas $...$ (Svarīga secība, kā aizstāj)
+#     return b
 
 
 def get_locale():
@@ -1154,6 +1154,7 @@ def create_app(test_config=None):
     @app.route('/problem', methods=['GET','POST'])
     def getProblem():
         lang = session.get('lang', 'lv')
+        # lang = 'lv'
         problemid = request.args.get('problemid')
         solnData = json.loads(getSPARQLProblemSolutions(problemid, lang))
         hasSolution = False
@@ -1299,6 +1300,7 @@ def create_app(test_config=None):
     def getProblemSolution():
         problemid = request.args.get('problemid')
         lang = session.get('lang', 'lv')
+        # lang = 'lv'
         data = json.loads(getSPARQLProblemSolutions(problemid, lang))
 
         problemTextHtml = data['results']['bindings'][0]['problemTextHtml']['value']
@@ -1385,6 +1387,7 @@ def create_app(test_config=None):
     @app.route('/grade', methods=['GET', 'POST'])
     def getGrades():
         lang = session.get('lang', 'lv')
+        # lang = 'lv'
         year = request.args.get('year')
         country = request.args.get('country')
         grade = request.args.get('grade')

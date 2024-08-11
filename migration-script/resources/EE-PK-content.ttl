@@ -8,7 +8,7 @@ eliozo:EE.PK.1994.7.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "EE.PK.1994.7.2" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.1994.7.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.1994.7.2.SUB1 ;
     eliozo:problemText """Atrast mazāko naturālo skaitli, kura pierakstā ir tikai cipari $5$ un $9$, 
 kurš satur tos vienādā skaitā un dalās ar $5$ un $9$."""@lv ;
     eliozo:problemTextHtml """<p>Atrast mazāko naturālo skaitli, kura pierakstā ir tikai cipari $5$ un $9$, 
@@ -648,9 +648,9 @@ questionType=FindAll
 -->"""@lv ;
     eliozo:problemTextHtml """<p>Atrast visus pirmskaitļu četriniekus $(p,q,s,t)$, 
 kas apmierina vienādojumu sistēmu:
-$$\\left{
+$$\\left\\{
 \\begin{array}{l}
-p + q = s\\
+p + q = s\\\\
 2p + q = t.
 \\end{array} \\right.$$</p>
 <!--
@@ -677,7 +677,7 @@ Atrast visas iespējamās reizinājuma $ab \\cdot (10+b)$ vērtības.
 concepts=primes
 questionType=FindAll
 -->"""@lv ;
-    eliozo:problemTextHtml """<p>Zināms, ka $a$, $b$ un $10a+b$ ir pirmskaitļi un $a \\leq b &lt; 10$. 
+    eliozo:problemTextHtml """<p>Zināms, ka $a$, $b$ un $10a+b$ ir pirmskaitļi un $a \\leq b < 10$. 
 Atrast visas iespējamās reizinājuma $ab \\cdot (10+b)$ vērtības. </p>
 <!--
 concepts=primes
@@ -1416,7 +1416,7 @@ eliozo:EE.PK.2010.10.5 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.PK.2010.10.5" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.2010.10.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.2010.10.5.SUB1 ;
     eliozo:problemText """Pierādīt, ka jebkuram veselam $n \\geq 3$ atradīsies tāds $n$-ciparu
 skaitlis, kurš ir vesela skaitļa kvadrāts, un, pierakstot tam sākumā 
 ciparu 1, arī rodas kāda vesela skaitļa kvadrāts."""@lv ;
@@ -1500,7 +1500,7 @@ eliozo:EE.PK.2011.10.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.PK.2011.10.3" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.2011.10.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.2011.10.3.SUB1 ;
     eliozo:problemText """Matemātikas stundā Jüri dalīja naturālu skaitli $n$ ar naturālu 
 skaitli $m$, iegūstot dalījumu un atlikumu.
 
@@ -1619,7 +1619,7 @@ eliozo:EE.PK.2012.10.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.PK.2012.10.4" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.2012.10.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.2012.10.4.SUB1 ;
     eliozo:problemText """Cik ir veselu skaitļu komplektu $(a, b, c)$, 
 kuri apmierina vienādojumu $(a + b)(b + c)(c + a) = 123456789$?"""@lv ;
     eliozo:problemTextHtml """<p>Cik ir veselu skaitļu komplektu $(a, b, c)$, 
@@ -1697,7 +1697,7 @@ eliozo:EE.PK.2013.10.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.PK.2013.10.3" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.2013.10.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.2013.10.3.SUB1 ;
     eliozo:problemText """Atrast mazāko naturālo skaitli $n$, kuram starp jebkuriem $n$
 veselu skaitļu kvadrātiem atradīsies divi tādi, kuru starpība
 dalās ar $10$."""@lv ;
@@ -1756,7 +1756,7 @@ eliozo:EE.PK.2014.10.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.PK.2014.10.3" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.2014.10.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.2014.10.3.SUB1 ;
     eliozo:problemText """Vienādmalu trijstūra virsotnēs ierakstīti naturāli skaitļi $14$, $20$ un $n$. 
 Jebkuru divu virsotņu skaitļu reizinājums dalās ar skaitli trešajā virsotnē. 
 Atrast visas iespējamās $n$ vērtības."""@lv ;
@@ -1851,7 +1851,7 @@ eliozo:EE.PK.2015.10.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.PK.2015.10.3" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.2015.10.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.2015.10.3.SUB1 ;
     eliozo:problemText """**(A)** 
   Zināms, ka $x^2 − y^2 = 100$, kur $x$ un $y$ ir naturāli skaitļi. Atrast izteiksmes 
   $x − y$ mazāko iespējamo vērtību.  
@@ -1880,7 +1880,7 @@ eliozo:EE.PK.2015.10.6 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.PK.2015.10.6" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.2015.10.6.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.2015.10.6.SUB1 ;
     eliozo:problemText """Vai eksistē tāds naturāls skaitlis $n$, ka vairāk nekā pusei 
 veselo skaitļu no $1$ līdz $n$ ciparu summa ir pāru skaitlis?"""@lv ;
     eliozo:problemTextHtml """<p>Vai eksistē tāds naturāls skaitlis $n$, ka vairāk nekā pusei 
@@ -1928,7 +1928,7 @@ eliozo:EE.PK.2016.10.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.PK.2016.10.3" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.2016.10.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.2016.10.3.SUB1 ;
     eliozo:problemText """Vai var atrast tādus $n$ naturālus skaitļus, lai to summa 
 būtu vienāda ar to mazāko kopīgo dalāmo, ja 
 
@@ -1953,7 +1953,7 @@ eliozo:EE.PK.2016.10.4 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.PK.2016.10.4" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.2016.10.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.2016.10.4.SUB1 ;
     eliozo:problemText """Vai eksistē tāds vienādojuma 
 $x^2 + y^2 + z^2 + w^2 = 3 + xy + yz + zw$,
 atrisinājums, kuram $x$, $y$, $z$ un $w$ ir dažādi veseli skaitļi?"""@lv ;
@@ -2044,7 +2044,7 @@ eliozo:EE.PK.2017.10.2 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.PK.2017.10.2" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.2017.10.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.2017.10.2.SUB1 ;
     eliozo:problemText """Atrast visus veselu skaitļu pārus $(x,y)$, kuriem 
 $324^{x+y} = 2^{x−y} \\cdot 3^{x−3} \\cdot 4^{y−4}$."""@lv ;
     eliozo:problemTextHtml """<p>Atrast visus veselu skaitļu pārus $(x,y)$, kuriem 
@@ -2066,7 +2066,7 @@ eliozo:EE.PK.2017.10.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.PK.2017.10.3" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.2017.10.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.2017.10.3.SUB1 ;
     eliozo:problemText """Pierādīt, ka atradīsies bezgalīgi daudz četrinieku, ko veido 
 dažādi naturāli skaitļi, kuriem
 $$\\frac{1}{a} - \\frac{1}{b} =\\frac{1}{b} - \\frac{1}{c} =\\frac{1}{c} - \\frac{1}{d}.$$"""@lv ;
@@ -2162,7 +2162,7 @@ eliozo:EE.PK.2018.10.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.PK.2018.10.3" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.2018.10.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.2018.10.3.SUB1 ;
     eliozo:problemText """Mari iedomājās naturālu skaitli. Pareizinot šo skaitli ar $4$, 
 viņa ieguva kādu trīsciparu skaitli. Bet, pareizinot sākotnējo 
 skaitli ar $3$ un pārceļot rezultāta pēdējo ciparu uz sākumu, 
@@ -2189,7 +2189,7 @@ eliozo:EE.PK.2019.10.3 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "EE.PK.2019.10.3" ;
-    eliozo:problemSolution eliozo:SOLN.EE.PK.2019.10.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.PK.2019.10.3.SUB1 ;
     eliozo:problemText """Cik ir tādu veselu negatīvu skaitļu pāru $(a,b)$, 
 kas apmierina vienādību $22a + 15b = 2019$?"""@lv ;
     eliozo:problemTextHtml """<p>Cik ir tādu veselu negatīvu skaitļu pāru $(a,b)$, 
@@ -2220,14 +2220,22 @@ var būt uzrakstīts vidū? Atrast visas iespējas.
 
 <!--
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """Саша записывает числа $2, 3, 5, 7, 8, 10, 11$ в тетрадку в 
+таком порядке, что сумма первых четырёх чисел равна сумме 
+последних четырёх чисел. Найти все возможности, 
+какое число может быть записано посередине."""@ru ;
     eliozo:problemTextHtml """<p>Sven's uzrakstījis burtnīcā skaitļus $2, 3, 5, 7, 8, 10, 11$ 
 tādā secībā, ka pirmo četru skaitļu summa vienāda ar pēdējo 
 četru skaitļu summu. Kurš skaitlis
 var būt uzrakstīts vidū? Atrast visas iespējas.</p>
 <!--
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """<p>Саша записывает числа $2, 3, 5, 7, 8, 10, 11$ в тетрадку в 
+таком порядке, что сумма первых четырёх чисел равна сумме 
+последних четырёх чисел. Найти все возможности, 
+какое число может быть записано посередине.</p>"""@ru ;
     eliozo:problemTimeID "2019" ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 1 ;
@@ -2250,22 +2258,28 @@ Atrast visas iespējas, kādi var būt Estas izvēlētie skaitļi.
 <!--
 genre=integer-equation
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """Элла выбрала два натуральных числа. Одно из них она умножила на $20$,
+а другое – на $19$. Сумма полученных произведений равна $292$. Найти все
+возможности, чему могут быть равны два задуманных числа Эллы."""@ru ;
     eliozo:problemTextHtml """<p>Esta izvēlējās divus naturālus skaitļus. Vienu no tiem viņa pareizināja 
 ar $20$, bet otru – ar $19$. Iegūto reizinājumu summa vienāda ar $292$. 
 Atrast visas iespējas, kādi var būt Estas izvēlētie skaitļi.</p>
 <!--
 genre=integer-equation
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """<p>Элла выбрала два натуральных числа. Одно из них она умножила на $20$,
+а другое – на $19$. Сумма полученных произведений равна $292$. Найти все
+возможности, чему могут быть равны два задуманных числа Эллы.</p>"""@ru ;
     eliozo:problemTimeID "2019" ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number 1 ;
     eliozo:suffix "EE.PK.2019.8" ;
     eliozo:suggestedGrade 8 .
 
-eliozo:SOLN.EE.PK.1994.7.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.EE.PK.1994.7.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Ievērojam, ka skaitlis ir nepāru, jo tajā nav pāru ciparu (neizpildās dalāmības pazīme ar $2$).  
@@ -2287,8 +2301,8 @@ Tātad tajā jābūt vismaz deviņiem cipariem "5". </p>
 rezultāts būtu iespējami mazāks.</p>
 <p><strong>Atbilde:</strong> <code>555555559999999995</code>.</p>"""@lv .
 
-eliozo:SOLN.EE.PK.2010.10.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.EE.PK.2010.10.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Mēģinām uzminēt kādu atrisinājumu.
@@ -2323,21 +2337,22 @@ vispirms aprēķina $n(n+1)$, pēc tam galā pieraksta ciparus "25"."""@lv ;
 <li>Redzam arī, ka $35^2 - 15^2 = (35-15)(35+15)=20\\cdot 50 = 1000$. </li>
 </ul>
 <p>Pēc līdzīga šablona var sastādīt arī nākamo sistēmu: 
-$$\\left{ \\begin{array}{l} a+b = 200 \\ a - b = 50 \\ \\end{array} \\right.$$<br />
-Tās atrisinājums ir $a = 125$, $b = 75$. Tādēļ $125^2 = 15625$ un $75^2 = 5625$. </p>
-<p>Lai iegūtu jaunus atrisinājumu pārīšus papildus $(15,35)$ un $(75,125)$, 
-ievērosim, ka skaitļus $15$, $35$, $75$, $125$ u.c. var ātri kāpināt kvadrātā:</p>
-<ul>
-<li>$15^2 = 225$, jo $1 \\cdot 2 = 2$.</li>
-<li>$35^2 = 1225$, jo $3 \\cdot 4 = 12$.</li>
-<li>$75^2 = 5625$, jo $7 \\cdot 8 = 56$.  </li>
-<li>$125^2 = 15625$, jo $12 \\cdot 13 = 156$.</li>
-</ul>
-<p>Visos šajos gadījumos var kāpināt kvadrātā skaitli $(10n + 5)^2$ ar sekojošu metodi: 
+$$\\left\\{ \\begin{array}{l} a+b = 200 \\\\ a - b = 50 \\\\ \\end{array} \\right.$$  
+Tās atrisinājums ir $a = 125$, $b = 75$. Tādēļ $125^2 = 15625$ un $75^2 = 5625$. 
+
+Lai iegūtu jaunus atrisinājumu pārīšus papildus $(15,35)$ un $(75,125)$, 
+ievērosim, ka skaitļus $15$, $35$, $75$, $125$ u.c. var ātri kāpināt kvadrātā:
+
+* $15^2 = 225$, jo $1 \\cdot 2 = 2$.
+* $35^2 = 1225$, jo $3 \\cdot 4 = 12$.
+* $75^2 = 5625$, jo $7 \\cdot 8 = 56$.  
+* $125^2 = 15625$, jo $12 \\cdot 13 = 156$.
+
+Visos šajos gadījumos var kāpināt kvadrātā skaitli $(10n + 5)^2$ ar sekojošu metodi: 
 vispirms aprēķina $n(n+1)$, pēc tam galā pieraksta ciparus "25".</p>"""@lv .
 
-eliozo:SOLN.EE.PK.2011.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.EE.PK.2011.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Apgalvojumu par atlikumu izsakām algebriski: 
@@ -2354,15 +2369,17 @@ un $0 \\neq 25$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Apgalvojumu par atlikumu izsakām algebriski: </p>
 <p>Ja $n$ dalot ar $m$ rezultāts ir $a$ un atlikums ir $a$, tad
-$$n = am + a$$ jeb $n = a(m+1)$. Redzam, ka $n$ dalās ar $(m+1)$. </p>
-<p>Otrā virzienā secināt nevar, jo var gadīties, ka $a\\geq m$, bet
-atlikumi, dalot ar $m$ var būt tikai no kopas ${ 0,\\ldots,m-1 }$.</p>
-<p>Teiksim, $n = 100$, $m=4$. Tad $100$ dalās ar $m+1= 5$. 
+$$n = am + a$$ jeb $n = a(m+1)$. Redzam, ka $n$ dalās ar $(m+1)$. 
+
+Otrā virzienā secināt nevar, jo var gadīties, ka $a\\geq m$, bet
+atlikumi, dalot ar $m$ var būt tikai no kopas ${ 0,\\ldots,m-1 }$.
+
+Teiksim, $n = 100$, $m=4$. Tad $100$ dalās ar $m+1= 5$. 
 Bet dalījums ($100$ dalot ar $4$) ir $25$, bet atlikums ir $0$
 un $0 \\neq 25$.</p>"""@lv .
 
-eliozo:SOLN.EE.PK.2012.10.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.EE.PK.2012.10.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 * $123456789$ ir nepāru skaitlis (pēdējais cipars)
@@ -2395,8 +2412,8 @@ Izdevīgi lietot pazīmes, ka reizinājums ar kaut ko <em>nedalās</em>
 </ul>
 <p>Iegūta pretruna: Ja $a$ ir pāru, tad $b$ ir nepāru, tad $c$ ir pāru, tad $a$ ir nepāru utml.</p>"""@lv .
 
-eliozo:SOLN.EE.PK.2013.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.EE.PK.2013.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 * Ievērojam, ka skaitļa kvadrāta atlikums, dalot ar $10$, atkarīgs tikai no paša skaitļa atlikuma.
@@ -2498,8 +2515,8 @@ eliozo:SOLN.EE.PK.2013.10.3.SUB0 a eliozo:Solution ;
 <li>Ja izvēlas septiņus, tad divi sakritīs (Dirihlē princips).</li>
 </ul>"""@lv .
 
-eliozo:SOLN.EE.PK.2014.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.EE.PK.2014.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Izmantojam apgalvojumus par mazāko kopīgo dalāmo.
@@ -2517,8 +2534,8 @@ Izmantojam apgalvojumus par mazāko kopīgo dalāmo.
 <li>Trīs $n$ vērtības: $(70, 140, 280)$.</li>
 </ul>"""@lv .
 
-eliozo:SOLN.EE.PK.2015.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.EE.PK.2015.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 1. $x^2 - y^2$ dalās reizinātājos: $(x-y)(x+y)$. Lai iegūtu $100$, 
@@ -2539,14 +2556,14 @@ eliozo:SOLN.EE.PK.2015.10.3.SUB0 a eliozo:Solution ;
    tie abi ir pāru skaitļi. </li>
 <li>Aplūkojam visus gadījumus, kā $100$ var izteikt kā divu pāru 
    skaitļu reizinājumu: 
-   $$2 \\cdot 50 = 10 \\cdot 10 = (-2) \\cdot (-50) = (-10) \\cdot (-10)$$</li>
-<li>Citi veidi: $1 \\cdot 100$, $4 \\cdot 25$ vai $5 \\cdot 20$ neder, 
+   $$2 \\cdot 50 = 10 \\cdot 10 = (-2) \\cdot (-50) = (-10) \\cdot (-10)$$
+4. Citi veidi: $1 \\cdot 100$, $4 \\cdot 25$ vai $5 \\cdot 20$ neder, 
    jo reizinātāju paritātes ir dažādas - neeksistēs veselos skaitļos atrisinājumi
    lineāru vienādojumu sistēmai  $x-y=1$ un $x+y=100$ utml.</li>
 </ol>"""@lv .
 
-eliozo:SOLN.EE.PK.2015.10.6.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.EE.PK.2015.10.6.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Lai eksperimentētu, definējam funkcijas:
@@ -2634,8 +2651,8 @@ Aprēķinām $f(n)$ vērtības dažiem pirmajiem $n$: </p>
 </tbody>
 </table>"""@lv .
 
-eliozo:SOLN.EE.PK.2016.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.EE.PK.2016.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pārtulkojam apgalvojumu algebriski
@@ -2667,25 +2684,27 @@ $$1 = \\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z}.$$
 <ul>
 <li>Apzīmējam abu skaitļu $a,b$ mazāko kopīgo dalāmo ar $m$. </li>
 <li>Tad $m = xa$ un $m = yb$. Ja nu $m=a+b$, tad $m = m/x+m/y$ jeb
-  $$1 = \\frac{1}{x} + \\frac{1}{y}.$$</li>
-</ul>
-<p>Šim vienādojumam nav atrisinājumu veselos skaitļos $x,y$, 
+  $$1 = \\frac{1}{x} + \\frac{1}{y}.$$
+
+Šim vienādojumam nav atrisinājumu veselos skaitļos $x,y$, 
 jo nevar izvēlēties $x=y=2$ (šādā gadījumā $a=b$ un to 
-MKD nebūs divreiz lielāks).</p>
-<p><strong>Gadījums n=3:</strong></p>
-<ul>
-<li>Līdzīgi kā iepriekš apzīmējam $m=\\mbox{MKD}(a,b,c)$. </li>
-<li>Apzīmējam $m=xa$, $m=yb$, $m=zc$.</li>
-<li>Tad $m=a+b+c$ ir ekvivalents vienādojumam:</li>
-</ul>
-<p>$$1 = \\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z}.$$</p>
-<ul>
-<li>Var izvēlēties $x=2$, $y=3$ un $z=6$. Ja $m=30$, tad $(a,b,c)=(15,10,5)$.  </li>
-<li>Šis piemērs der, jo $\\mbox{MKD}(15,10,5)=30$ un $15+10+5=30$.</li>
+MKD nebūs divreiz lielāks).
+
+
+**Gadījums n=3:**
+
+* Līdzīgi kā iepriekš apzīmējam $m=\\mbox{MKD}(a,b,c)$. 
+* Apzīmējam $m=xa$, $m=yb$, $m=zc$.
+* Tad $m=a+b+c$ ir ekvivalents vienādojumam:
+
+$$1 = \\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z}.$$
+
+* Var izvēlēties $x=2$, $y=3$ un $z=6$. Ja $m=30$, tad $(a,b,c)=(15,10,5)$.  
+* Šis piemērs der, jo $\\mbox{MKD}(15,10,5)=30$ un $15+10+5=30$.</li>
 </ul>"""@lv .
 
-eliozo:SOLN.EE.PK.2016.10.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.EE.PK.2016.10.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Algebriski pārveidojumi nevienādībai
@@ -2700,12 +2719,13 @@ neviens no šiem kvadrātiem nevar būt $2^2$ vai lielāks."""@lv ;
 <p>Algebriski pārveidojumi nevienādībai</p>
 <p>$$2x^2 + 2y^2 + 2z^2 + 2w^2 = 6 + 2xy + 2yz + 2zw$$
 $$x^2+(x^2 - 2xy + y^2) + \\ldots + (z^2 - 2zw + w^2) + w^2 = 6.$$
-$$x^2 + (x - y)^2 + (y-z)^2 + (z-w)^2 + w^2 = 6.$$</p>
-<p>Četru vai piecu nenulles pilnu kvadrātu summa nevar būt $6$, jo 
+$$x^2 + (x - y)^2 + (y-z)^2 + (z-w)^2 + w^2 = 6.$$
+
+Četru vai piecu nenulles pilnu kvadrātu summa nevar būt $6$, jo 
 neviens no šiem kvadrātiem nevar būt $2^2$ vai lielāks.</p>"""@lv .
 
-eliozo:SOLN.EE.PK.2017.10.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.EE.PK.2017.10.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Dalām pirmreizinātājos. Abās vienādojuma pusēs ir daži salikti skaitļi - 
@@ -2750,24 +2770,31 @@ $324$ un $4$. </p>
 <p><strong>Pielīdzinām pirmskaitļu kāpinātājus:</strong></p>
 <p>Pārrakstām uzdevuma vienādojumu: 
 $$(2^2 \\cdot 3^4)^{x+y} = 2^{x−y} \\cdot 3^{x−3} \\cdot (2^2)^{y−4}$$
-$$2^{2(x+y)} \\cdot 3^{4(x+y)} = 2^{x−y} \\cdot 3^{x−3} \\cdot 2^{2(y−4)}$$</p>
-<p>Pielīdzinām pirmskaitļu pakāpes:</p>
-<p>$$\\left{ \\begin{array}{l}
-2(x+y) = (x-y) + 2(y-4) \\
+$$2^{2(x+y)} \\cdot 3^{4(x+y)} = 2^{x−y} \\cdot 3^{x−3} \\cdot 2^{2(y−4)}$$
+
+Pielīdzinām pirmskaitļu pakāpes:
+
+$$\\left\\{ \\begin{array}{l}
+2(x+y) = (x-y) + 2(y-4) \\\\
 4(x+y) = x-3
 \\end{array}
-\\right.$$</p>
-<p><strong>Risinām lineāru sistēmu:</strong></p>
-<p>$$\\left{ \\begin{array}{l}
-x+y = -8 \\
+\\right.$$
+
+
+**Risinām lineāru sistēmu:**
+
+$$\\left\\{ \\begin{array}{l}
+x+y = -8 \\\\
 3x+4y = -3
 \\end{array}
-\\right.$$</p>
-<p>No pirmā vienādojuma izsaka $y=-8-x$ un ievieto otrajā:</p>
-<p>$3x + 4(-8-x) = -32-x = -3$. Tad $(x,y)=(-29,21)$.</p>"""@lv .
+\\right.$$
 
-eliozo:SOLN.EE.PK.2017.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+No pirmā vienādojuma izsaka $y=-8-x$ un ievieto otrajā:
+
+$3x + 4(-8-x) = -32-x = -3$. Tad $(x,y)=(-29,21)$.</p>"""@lv .
+
+eliozo:SOLN.EE.PK.2017.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **Papildu pieņēmumi (simetrija):** 
@@ -2807,11 +2834,11 @@ daudzkārtņiem reducēt nevar."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p><strong>Papildu pieņēmumi (simetrija):</strong> </p>
 <p>Tā kā visi skaitļi ir dažādi, tad varam ieviest apzīmējumus tā, 
-ka $\\frac{1}{a} &gt; \\frac{1}{b} &gt; \\frac{1}{c} &gt; \\frac{1}{d}$ un 
+ka $\\frac{1}{a} > \\frac{1}{b} > \\frac{1}{c} > \\frac{1}{d}$ un 
 visas starpības ir pozitīvas. 
 Ja starpības patiesībā ir negatīvas, tad aizstājam $(a,b,c,d)$ ar
 pretējā secībā pārrakstītu skaitļu četrinieku $(d,c,b,a)$. 
-Varam tātad pieņemt, ka $a &lt; b &lt; c &lt; d$ un tad tiem 
+Varam tātad pieņemt, ka $a < b < c < d$ un tad tiem 
 apgrieztie skaitļi veido dilstošu aritmētisku progresiju. </p>
 <p><strong>Apskatām skaitļa "a" vērtības:</strong></p>
 <ul>
@@ -2819,22 +2846,28 @@ apgrieztie skaitļi veido dilstošu aritmētisku progresiju. </p>
   jeb aritmētiskās progresijas diference ir $1/6$ un no $\\frac{1}{2}$ to 
   nevar atņemt trīsreiz, lai rezultāts joprojām būtu pozitīvs.</li>
 <li>Ja $a=3$, tad sanāk progresija: 
-  $$\\frac{1}{3},\\frac{1}{4},\\frac{1}{6},\\frac{1}{12}$$</li>
-</ul>
-<p><strong>Izmantojam linearitāti:</strong> </p>
-<p>Eksistējošu atrisinājumu var piereizināt
-ar vienu un to pašu skaitli $m$: </p>
-<p>No 
+  $$\\frac{1}{3},\\frac{1}{4},\\frac{1}{6},\\frac{1}{12}$$
+
+
+**Izmantojam linearitāti:** 
+
+Eksistējošu atrisinājumu var piereizināt
+ar vienu un to pašu skaitli $m$: 
+
+No 
 $$\\frac{1}{a} - \\frac{1}{b} =\\frac{1}{b} - \\frac{1}{c} =\\frac{1}{c} - \\frac{1}{d}.$$
 izriet, ka arī
-$$\\frac{1}{ma} - \\frac{1}{mb} =\\frac{1}{mb} - \\frac{1}{mc} =\\frac{1}{mc} - \\frac{1}{md}.$$</p>
-<p>Tātad bez $(a,b,c,d)=(3,4,6,12)$ var ņemt arī 
-$(a,b,c,d)=(6,8,12,24)$, utt.</p>
-<p>Eksistē arī citādas atbildes, kuras uz $(3,4,6,12)$ vai tā 
-daudzkārtņiem reducēt nevar.</p>"""@lv .
+$$\\frac{1}{ma} - \\frac{1}{mb} =\\frac{1}{mb} - \\frac{1}{mc} =\\frac{1}{mc} - \\frac{1}{md}.$$
 
-eliozo:SOLN.EE.PK.2018.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+Tātad bez $(a,b,c,d)=(3,4,6,12)$ var ņemt arī 
+$(a,b,c,d)=(6,8,12,24)$, utt.
+
+Eksistē arī citādas atbildes, kuras uz $(3,4,6,12)$ vai tā 
+daudzkārtņiem reducēt nevar.</li>
+</ul>"""@lv .
+
+eliozo:SOLN.EE.PK.2018.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Ieviešam mainīgo un sastādām vienādojumu
@@ -2874,59 +2907,30 @@ pēdējo ciparu uz sākumu."""@lv ;
 <li>No desmitkāršota $4x=\\overline{cab}$ atņemsim 
   $3x=\\overline{abc}$ (lai $a$ un $b$ noīsinātos). </li>
 </ul>
-<p>$$40x - 3x = \\overline{cab0}-\\overline{abc}=\\overline{c000} - c = 999\\cdot{}c.$$</p>
-<p>Iegūstam, ka $37x = 999c$ jeb $x = 27c$, kur $c$ ir cipars. </p>
-<p><strong>Gadījumu pārlase:</strong></p>
-<ul>
-<li>Cipars $c \\neq 0$, jo citādi $\\overline{cab}$ nebūtu trīsciparu. </li>
-<li>Cipars $c \\neq 1$, jo $3 \\cdot 27 = 81$ nav trīsciparu.</li>
-<li>Astoņas citas vērtības $c=2,3,4,5,6,7,8,9$ der. </li>
-</ul>
-<p>Apkopojam tabulā $x=27c$, $3x$ un $4x$:</p>
-<table>
-<thead>
-<tr>
-<th>$x$</th>
-<th>$54$</th>
-<th>$81$</th>
-<th>$108$</th>
-<th>$135$</th>
-<th>$162$</th>
-<th>$189$</th>
-<th>$216$</th>
-<th>$243$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$3x$</td>
-<td>$162$</td>
-<td>$243$</td>
-<td>$324$</td>
-<td>$405$</td>
-<td>$486$</td>
-<td>$567$</td>
-<td>$648$</td>
-<td>$729$</td>
-</tr>
-<tr>
-<td>$4x$</td>
-<td>$216$</td>
-<td>$324$</td>
-<td>$432$</td>
-<td>$540$</td>
-<td>$648$</td>
-<td>$756$</td>
-<td>$864$</td>
-<td>$972$</td>
-</tr>
-</tbody>
-</table>
+<p>$$40x - 3x = \\overline{cab0}-\\overline{abc}=\\overline{c000} - c = 999\\cdot{}c.$$
+
+Iegūstam, ka $37x = 999c$ jeb $x = 27c$, kur $c$ ir cipars. 
+
+
+**Gadījumu pārlase:**
+
+* Cipars $c \\neq 0$, jo citādi $\\overline{cab}$ nebūtu trīsciparu. 
+* Cipars $c \\neq 1$, jo $3 \\cdot 27 = 81$ nav trīsciparu.
+* Astoņas citas vērtības $c=2,3,4,5,6,7,8,9$ der. 
+
+Apkopojam tabulā $x=27c$, $3x$ un $4x$:
+
+
+
+| $x$   | $54$  | $81$  | $108$ | $135$ | $162$ | $189$ | $216$ | $243$ |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| $3x$  | $162$ | $243$ | $324$ | $405$ | $486$ | $567$ | $648$ | $729$ |
+| $4x$  | $216$ | $324$ | $432$ | $540$ | $648$ | $756$ | $864$ | $972$ |</p>
 <p>Pēdējā rindiņā skaitļi iegūstami, pārceļot priekšpēdējās rindiņas skaitlim 
 pēdējo ciparu uz sākumu.</p>"""@lv .
 
-eliozo:SOLN.EE.PK.2019.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.EE.PK.2019.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Iedomāsimies, ka vispirms vēlamies atrast lielāko 
@@ -2957,23 +2961,24 @@ $$87\\cdot{}22+7\\cdot{}15=2019$$.
 <p>Iedomāsimies, ka vispirms vēlamies atrast lielāko 
 iespējamo $a$ un mazāko $b$. T.i. cik reizes saskaitāmo 
 $22$ var iekļaut garajā summā, kas ir $2019$. </p>
-<p>$$2019:22\\;=\\;91,\\,\\mbox{Atl.}17$$</p>
-<ul>
-<li>Acīmredzot, $17$ nedalās ar $15$, t.i. pie $a=91$ vienādojumu atrisināt nevar. </li>
-<li>Pakāpeniski samazinām $a$ par $k=1,2,\\ldots$.</li>
-<li>Gaidām brīdi, kad $17+22k$ jeb $17+7k$ dalās ar $15$. </li>
-<li>Pie $k=4$ izteiksme $17 + 7\\cdot{}4=17+28=45$ dalās ar $15$.</li>
-<li>Tātad, $a=91$ jāsamazina par $4$, t.i. der $a=87$. </li>
-</ul>
-<p>Veidojam 2 pretējas aritmētiskas progresijas:</p>
-<p>Pirmais atrisinājums ir $(a,b)=(87,7)$, jo 
-$$87\\cdot{}22+7\\cdot{}15=2019$$. </p>
-<ul>
-<li>Aritmētiskajā progresijā $c_k=2019-15k$ katrs $22$-tais loceklis
-  dalās ar $22$, jo diference $-15$ ir savstarpējs pirmskaitlis ar $22$. </li>
-<li>Tātad, der $b=7,29,51,\\ldots$ savukārt $a$ vērtībai (ja $b$ pieaug
-  par $22$) ir jāsamazinās par $15$, lai summa nemainītos. </li>
-<li>Iegūstam atrisinājumus $(a;b)$:
-  $$(87;7),\\;(72;29),\\;(57;51),\\;(42;73),\\;(27;95),\\;(12;117).$$</li>
-</ul>"""@lv .
+<p>$$2019:22\\;=\\;91,\\,\\mbox{Atl.}17$$
+
+* Acīmredzot, $17$ nedalās ar $15$, t.i. pie $a=91$ vienādojumu atrisināt nevar. 
+* Pakāpeniski samazinām $a$ par $k=1,2,\\ldots$.
+* Gaidām brīdi, kad $17+22k$ jeb $17+7k$ dalās ar $15$. 
+* Pie $k=4$ izteiksme $17 + 7\\cdot{}4=17+28=45$ dalās ar $15$.
+* Tātad, $a=91$ jāsamazina par $4$, t.i. der $a=87$. 
+
+
+Veidojam 2 pretējas aritmētiskas progresijas:
+
+Pirmais atrisinājums ir $(a,b)=(87,7)$, jo 
+$$87\\cdot{}22+7\\cdot{}15=2019$$. 
+
+* Aritmētiskajā progresijā $c_k=2019-15k$ katrs $22$-tais loceklis
+  dalās ar $22$, jo diference $-15$ ir savstarpējs pirmskaitlis ar $22$. 
+* Tātad, der $b=7,29,51,\\ldots$ savukārt $a$ vērtībai (ja $b$ pieaug
+  par $22$) ir jāsamazinās par $15$, lai summa nemainītos. 
+* Iegūstam atrisinājumus $(a;b)$:
+  $$(87;7),\\;(72;29),\\;(57;51),\\;(42;73),\\;(27;95),\\;(12;117).$$</p>"""@lv .
 

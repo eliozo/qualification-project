@@ -273,14 +273,14 @@ b) Kādi ir simtais un $400$-ais cipari?
 c) Kāds ir $2012$-ais cipars?"""@lv ;
     eliozo:problemTextHtml """<p>Natūralieji skaičiai be tarpų iš eilės surašyti vienas po kito:
 $$12345678910111213\\ldots$$
-a) Koks yra trisdešimtasis skaitmuo šioje sekoje?<br />
-b) Koks yra šimtasis bei $400$-asis skaitmenys?<br />
+a) Koks yra trisdešimtasis skaitmuo šioje sekoje?  
+b) Koks yra šimtasis bei $400$-asis skaitmenys?  
 c) Koks yra $2012$-asis skaitmuo?</p>"""@lt,
         """<p>Naturāli skaitļi bez atstarpēm pēc kaŗtas sarakstīti 
 viens pēc cita:
 $$12345678910111213\\ldots$$
-a) Kāds ir trīsdesmitais cipars šajā virknē?<br />
-b) Kādi ir simtais un $400$-ais cipari?<br />
+a) Kāds ir trīsdesmitais cipars šajā virknē?  
+b) Kādi ir simtais un $400$-ais cipari?  
 c) Kāds ir $2012$-ais cipars?</p>"""@lv ;
     eliozo:problemTimeID "2012" ;
     eliozo:problemYear 2012 ;
@@ -325,7 +325,7 @@ d) Pierādīt, ka eksistē tāda uzdevuma nosacījumu apmierinoša
 virkne, ka $x_{2012} = 2012$."""@lv ;
     eliozo:problemTextHtml """<p>Duota tokia sveikųjų skaičių seka $x_1, x_2, x_3, \\ldots$, 
 kad $x_1 = 1$, $x_2 = 2$ ir
-kiekvienam natūraliajam $n &gt; 2$ galioja viena iš dviejų lygybių:
+kiekvienam natūraliajam $n > 2$ galioja viena iš dviejų lygybių:
 $x_n = x_{n-1} - x_{n-2}$ arba $x_n = -(x_{n-1} - x_{n-2})$.<br />
 a) Raskite $x_{2012}$ ir sumą $x_1 + x_2 + \\ldots + x_{2012}$, 
 jei žinoma, kad visi sekos nariai
@@ -339,7 +339,7 @@ d) Įrodykite, kad egzistuoja tokia uždavinio sąlygą
 tenkinati seka, kad $x_{2012} = 2012$.</p>"""@lt,
         """<p>Dota tāda veselu skaitļu virkne $x_1, x_2, x_3, \\ldots$, 
 ka $x_1 = 1$, $x_2 = 2$ un
-katram naturālam $n &gt; 2$ ir spēkā viena no divām vienādībām:
+katram naturālam $n > 2$ ir spēkā viena no divām vienādībām:
 $x_n = x_{n-1} - x_{n-2}$ vai $x_n = -(x_{n-1} - x_{n-2})$.<br />
 a) Atrodiet $x_{2012}$ un summu $x_1 + x_2 + \\ldots + x_{2012}$, 
 ja zināms, ka visi virknes locekļi ir nenegatīvi.<br />
@@ -396,15 +396,15 @@ tad skaitlim $a$ ir vismaz $8$ dažādi naturāli dalītāji
 (ieskaitot vieninieku un viņu pašu)."""@lv ;
     eliozo:problemTextHtml """<p>Duota lygtis
 $$(x^2 − y)(y^2 − x) + x^3 + y^3 = a,$$
-kur $a$ yra tam tikras sveikasis skaičius.<br />
+kur $a$ yra tam tikras sveikasis skaičius.  
 a) Raskite visus natūraliuosius lygties sprendinius $(x, y)$, 
-kai $a = 2$ ir kai $a = 0$.<br />
+kai $a = 2$ ir kai $a = 0$.  
 b) Raskite po bent vieną natūraliąją $a$ reikšmę, 
 su kuria lygtis turi lygiai $2$ ir lygiai
-$3$ natūraliuosius sprendinius $(x, y)$.<br />
+$3$ natūraliuosius sprendinius $(x, y)$.  
 c) Ar turi su kokia nors natūraliąja $a$ reikšme 
 duotoji lygtis lygiai $2012$ natūraliųjų
-sprendinių $(x, y)$? Atsakymą pagrįskite.<br />
+sprendinių $(x, y)$? Atsakymą pagrįskite.  
 d) Įrodykite, kad jei su tam tikru natūraliuoju 
 skaičiumi $a &gt; 20$ lygtis turi bent
 vieną natūralųjį sprendinį $(x, y)$, 
@@ -412,14 +412,14 @@ tai skaičius $a$ turi mažiausiai $8$ skirtingus
 natūraliuosius daliklius (įskaitant vienetą ir jį patį).</p>"""@lt,
         """<p>Dots vienādojums
 $$(x^2 − y)(y^2 − x) + x^3 + y^3 = a,$$
-kur $a$ ir attiecīgs vesels skaitlis.<br />
+kur $a$ ir attiecīgs vesels skaitlis.  
 a) Atrodiet visus naturālus vienādojuma atrisinājumus $(x, y)$, 
-kad $a = 2$ un kad $a = 0$.<br />
+kad $a = 2$ un kad $a = 0$.  
 b) Atrodiet vismaz pa vienai naturālai $a$ vērtībai, ar kuru 
 vienādojumam ir tieši $2$ un tieši $3$ naturāli atrisinājumi 
-$(x,y)$.<br />
+$(x,y)$.  
 c) Vai ar kādu naturālu $a$ vērtību dotajam vienādojumam ir tieši 
-$2012$ naturālu atrisinājumu $(x,y)$? Atbildi pamatojiet.<br />
+$2012$ naturālu atrisinājumu $(x,y)$? Atbildi pamatojiet.  
 d) Pierādiet, ka, ja ar atbilstošu naturālu skaitli $a&gt;20$
 vienādojumam ir vismaz viens naturāls atrisinājums $(x,y)$, 
 tad skaitlim $a$ ir vismaz $8$ dažādi naturāli dalītāji 
@@ -615,10 +615,10 @@ ka trijstūra hipotenūzas garums arī ir naturāls skaitlis.
 ar kuriem definētas izteiksmes.)"""@lv ;
     eliozo:problemTextHtml """<p>a) Ar lygtis
 $$\\frac{3x^2 + 16xy + 15y^2}{x^2 + y^2} = 21$$
-turi sprendinių? Atsakymą pagrįskite.<br />
+turi sprendinių? Atsakymą pagrįskite.  
 b) Raskite didžiausią reiškinio
 $$\\frac{3x^2 + 16xy + 15y^2}{x^2 + y^2}$$
-reikšmę.<br />
+reikšmę.  
 c) Stačiojo trikampio statinių ilgiai 
 $u$ ir $v$ bei reiškinio 
 $$\\frac{ux^2 + vxy}{x^2 + y^2}$$
@@ -629,10 +629,10 @@ yra natūralieji skaičiai. Įrodykite, kad trikampio
 kuriems reiškiniai apibrėžti.)</p>"""@lt,
         """<p>a) Vai vienādojumam
 $$\\frac{3x^2 + 16xy + 15y^2}{x^2 + y^2} = 21$$
-ir atrisinājums? Atbildi pamatojiet.<br />
+ir atrisinājums? Atbildi pamatojiet.  
 b) Atrodiet lielāko izteiksmes 
 $$\\frac{3x^2 + 16xy + 15y^2}{x^2 + y^2}$$
-vērtību.<br />
+vērtību.  
 c) Taisnleņķa trijstūra katešu garumi 
 $u$ un $v$ un izteiksmes 
 $$\\frac{ux^2 + vxy}{x^2 + y^2}$$
@@ -690,11 +690,11 @@ a) Atrodiet kaut vienu šī vienādojuma atrisinājumu $(x,y,z)$.
 b) Atrodiet visus šī vienādojuma atrisinājumus $(x,y,z)$."""@lv ;
     eliozo:problemTextHtml """<p>Sveikieji skaičiai $x$, $y$ ir $z$ tenkina lygtį
 $$x^2 + xy + y^2 = 2013z^2.$$
-a) Raskite bent vieną šios lygties sprendinį $(x,y,z)$.<br />
+a) Raskite bent vieną šios lygties sprendinį $(x,y,z)$.  
 b) Raskite visus šios lygties sprendinius $(x,y,z)$.</p>"""@lt,
         """<p>Veseli skaitļi $x$, $y$ un $z$ apmierina vienādojumu
 $$x^2 + xy + y^2 = 2013z^2.$$
-a) Atrodiet kaut vienu šī vienādojuma atrisinājumu $(x,y,z)$.<br />
+a) Atrodiet kaut vienu šī vienādojuma atrisinājumu $(x,y,z)$.  
 b) Atrodiet visus šī vienādojuma atrisinājumus $(x,y,z)$.</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
@@ -876,14 +876,14 @@ $\\sqrt{a}$ ir iracionāls skaitlis."""@lv ;
 ir kad lygiai trys iš keturių skaičių
 $$x, x + x^{-1}, x^2 + x^{-2}, x2 − 4x$$
 yra sveikieji. Raskite visas galimas skaičiaus $x$ reikšmes.
-<em>Pastaba.</em> Galima naudotis faktu, kad jei natūralusis 
+*Pastaba.* Galima naudotis faktu, kad jei natūralusis 
 skaičius $a$ nėra tikslusis kvadratas, tai 
 $\\sqrt{a}$ yra iracionalusis skaičius.</p>"""@lt,
         """<p>Zināms, ka reāls skaitlis $x$ nav vienāds ar $0$, un 
 ka tieši trīs no četriem skaitļiem
 $$x, x + x^{-1}, x^2 + x^{-2}, x2 − 4x$$
 ir veseli. Atrodiet visas iespējamās skaitļa $x$ vērtības.
-<em>Piezīme.</em> Var izmantot faktu, ka, ja naturāls skaitlis $a$ 
+*Piezīme.* Var izmantot faktu, ka, ja naturāls skaitlis $a$ 
 nav pilns kvadr'ats, tad 
 $\\sqrt{a}$ ir iracionāls skaitlis.</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
@@ -1463,13 +1463,13 @@ ir tieši $1009^{2018}$ atrisinājumu naturālos skaitļos
 $(x, y)$. Atrodiet visas iespējamās $p$ vērtības.
 (Skaitlis $1009$ ir pirmskaitlis.)"""@lv ;
     eliozo:problemTextHtml """<p>Duoti natūralusis skaičius $n$ ir pirminis 
-skaičius $p &lt; 10\\,000$. Lygtis
+skaičius $p < 10\\,000$. Lygtis
 $$\\frac{1}{x} + \\frac{1}{y} = \\frac{1}{n^p}$$
 turi lygiai $1009^{2018}$ natūraliųjų sprendinių 
 $(x, y)$. Raskite visas galimas $p$ reikšmes.
 (Skaičius $1009$ yra pirminis.)</p>"""@lt,
         """<p>Dots naturāls skaitlis $n$ un pirmskaitlis 
-$p &lt; 10\\,000$. Vienādojumam
+$p < 10\\,000$. Vienādojumam
 $$\\frac{1}{x} + \\frac{1}{y} = \\frac{1}{n^p}$$
 ir tieši $1009^{2018}$ atrisinājumu naturālos skaitļos
 $(x, y)$. Atrodiet visas iespējamās $p$ vērtības.
@@ -1584,12 +1584,12 @@ b) Atrodiet lielāko pirmskaitli, ar kuru var dalīties
 skaitlis $x$."""@lv ;
     eliozo:problemTextHtml """<p>Natūralieji skaičiai $x$ ir $y$ tenkina lygybę
 $$\\frac{1}{x} + \\frac{1}{y} = \\frac{1}{120}.$$
-a) Kiek iš viso yra tokių porų $(x, y)$?<br />
+a) Kiek iš viso yra tokių porų $(x, y)$?  
 b) Raskite didžiausią pirminį skaičių, 
 iš kurio gali dalytis skaičius $x$.</p>"""@lt,
         """<p>Naturāli skaitļi $x$ un $y$ apmierina vienādību 
 $$\\frac{1}{x} + \\frac{1}{y} = \\frac{1}{120}.$$
-a) Cik pavisam ir tādu pāru $(x, y)$?<br />
+a) Cik pavisam ir tādu pāru $(x, y)$?  
 b) Atrodiet lielāko pirmskaitli, ar kuru var dalīties
 skaitlis $x$.</p>"""@lv ;
     eliozo:problemTimeID "2018" ;
@@ -1633,7 +1633,7 @@ $$1 + \\frac{1}{28}, 1 + \\frac{1}{29}, 1 + \\frac{1}{30},
 (t.y. $k$-tasis užrašytas skaičius lygus $1 + \\frac{1}{27+k}$). 
 Vienu ėjimu leidžiama nutrinti kairiausiąjį ir 
 dešiniausiąjį tuo metu lentoje užrašytus skaičius. Po kiekvieno tokio ėjimo
-apskaičiuojama lentoje užrašytų skaičių sandauga $P$.<br />
+apskaičiuojama lentoje užrašytų skaičių sandauga $P$.  
 a) Nustatykite, kokia bus $P$ reikšmė po $4$ ir po $228$ ėjimų.<br />
 b) Kiek skirtingų natūraliųjų reikšmių bus įgijusi 
 ši sandauga, prieš nutrinant paskutinius du skaičius?</p>"""@lt,
@@ -1644,7 +1644,7 @@ $$1 + \\frac{1}{28}, 1 + \\frac{1}{29}, 1 + \\frac{1}{30},
 (t.i. $k$-tais uzrakstītais skaitlis vienāds $1 + \\frac{1}{27+k}$). 
 Ar vienu gājienu atļauts nodzēst pašu kreiso un pašu labo
 no tobrīd uz tāfeles uzrakstītajiem skaitļiem. Pēc ikviena tāda
-gājiena aprēķina uz tāfeles uzrakstīto skaitļu reizinājumu $P$.<br />
+gājiena aprēķina uz tāfeles uzrakstīto skaitļu reizinājumu $P$.  
 a) Nosakiet, kāda būs $P$ vērtība pēc $4$ un pēc $228$ gājieniem.<br />
 b) Cik dažādu naturālu vērtību būs ieguvis šis reizinajums pirms
 tiks nodzēsti pēdējie divi skaitļi?</p>"""@lv ;
@@ -1681,14 +1681,14 @@ jei jo skaitmenų suma lygi
 $2019$. Visus šiųmečius natūraliuosius 
 skaičius išrikiuokime didėjimo tvarka:
 $$a_1, a_2, a_3, \\ldots.$$
-a) Raskite $a_1$ ir $a_3$.<br />
+a) Raskite $a_1$ ir $a_3$.  
 b) Keliais nuliais baigiasi skaičius $a_{2019} + 1$?</p>"""@lt,
         """<p>Naturālu skaitli sauksim par <em>šogadīgu</em>, 
 ja tā ciparu summa vienāda ar $2019$. 
 Visus šogadējos naturālos skaitļus sakārtojam 
 pieaugšanas secībā:
 $$a_1, a_2, a_3, \\ldots.$$
-a) Atrodiet $a_1$.<br />
+a) Atrodiet $a_1$.  
 b) Ar cik nullēm beidzas skaitlis $a_{2019}+1$?</p>"""@lv ;
     eliozo:problemTimeID "2019" ;
     eliozo:problemYear 2019 ;
@@ -1732,7 +1732,7 @@ a) Kiek skaitmenų turi mažiausias suderintas
 natūralusis skaičius?<br />
 b) Duota, kad kažkokių dviejų suderintų natūraliųjų 
 skaičių skirtumas nesidalija iš natūraliojo skaičiaus 
-$N &gt; 35$. Kokios yra dvi mažiausios galimos $N$ reikšmės?</p>"""@lt,
+$N > 35$. Kokios yra dvi mažiausios galimos $N$ reikšmės?</p>"""@lt,
         """<p>Naturālu skaitli sauksim par <em>saskaņotu</em>, 
 ja tas apmierina šos divus nosacījumus:
 1) visi tā cipari ir vieninieki; 
@@ -1740,7 +1740,7 @@ ja tas apmierina šos divus nosacījumus:
 bet ar $9$ - ar atlikumu $7$.<br />
 a) Cik ciparu ir mazākajam saskaņotajam naturālajam skaitlim?<br />
 b) Dots, ka divu saskaņotu naturālu skaitļu starpība nedalās 
-ar naturālu skaitli $N &gt; 35$. Kādas ir divas mazākās $N$
+ar naturālu skaitli $N > 35$. Kādas ir divas mazākās $N$
 vērtības?</p>"""@lv ;
     eliozo:problemTimeID "2019" ;
     eliozo:problemYear 2019 ;
@@ -1775,14 +1775,14 @@ jei jo skaitmenų suma lygi
 $2019$. Visus šiųmečius natūraliuosius 
 skaičius išrikiuokime didėjimo tvarka:
 $$a1, a2, a3, \\ldots.$$
-a) Raskite $a_1$ ir $a_3$.<br />
+a) Raskite $a_1$ ir $a_3$.  
 b) Keliais nuliais baigiasi skaičius $a_{100} + 1$?</p>"""@lt,
         """<p>Naturālu skaitli sauksim par <em>šogadēju</em>, 
 ja tā ciparu summa vienāda ar $2019$. 
 Visus šogadējos naturālos skaitļus sakārtojam 
 pieaugšanas secībā:
 $$a_1, a_2, a_3, \\ldots.$$
-a) Atrodiet $a_1$.<br />
+a) Atrodiet $a_1$.  
 b) Ar cik nullēm beidzas skaitlis $a_{100}+1$?</p>"""@lv ;
     eliozo:problemTimeID "2019" ;
     eliozo:problemYear 2019 ;

@@ -150,7 +150,7 @@ eliozo:LV.VOL.2001.10.5 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2001.10.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2001.10.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2001.10.5.SUB1 ;
     eliozo:problemText """Kādiem naturāliem skaitļiem $n$ piemīt sekojoša īpašība: nosvītrojot
 skaitļa $2^n$ pirmo ciparu, iegūst divnieka pakāpi ar naturālu kāpinātāju?"""@lv ;
     eliozo:problemTextHtml """<p>Kādiem naturāliem skaitļiem $n$ piemīt sekojoša īpašība: nosvītrojot
@@ -359,7 +359,7 @@ eliozo:LV.VOL.2002.11.5 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2002.11.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2002.11.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2002.11.5.SUB1 ;
     eliozo:problemText """Kuriem naturāliem skaitļiem $n$, kas lielāki par $3$ 
 un nedalās ar $3$, izpildās
 īpašība: visi tie naturālie skaitļi, kas mazāki par $n$ 
@@ -408,12 +408,12 @@ eliozo:LV.VOL.2002.9.1 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2002.9.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2002.9.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2002.9.1.SUB1 ;
     eliozo:problemText """Par naturāliem skaitļiem $x$ un $y$ zināms, ka 
 $30<x<40<y<50$ un $xy$ ir kāda vesela 
 skaitļa kubs. Kādas ir $x$ un $y$ vērtības?"""@lv ;
     eliozo:problemTextHtml """<p>Par naturāliem skaitļiem $x$ un $y$ zināms, ka 
-$30&lt;x&lt;40&lt;y&lt;50$ un $xy$ ir kāda vesela 
+$30<x<40<y<50$ un $xy$ ir kāda vesela 
 skaitļa kubs. Kādas ir $x$ un $y$ vērtības?</p>"""@lv ;
     eliozo:problemTimeID "2002" ;
     eliozo:problemYear 2002 ;
@@ -533,7 +533,7 @@ eliozo:LV.VOL.2003.9.1 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2003.9.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2003.9.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2003.9.1.SUB1 ;
     eliozo:problemText """Naturālu skaitli sauc par simetrisku, ja, izlasot tā decimālo
 pierakstu no otra gala, iegūst to pašu skaitli. Piemēram,
 simetriski ir skaitļi $111$; $424$; $88$; $5225$; $7$. 
@@ -609,8 +609,9 @@ $$x_{n+1} = 3x_n + 2 y_n,\\;\\; y_{n+1} = 4x_n + 3y_n.$$
 Pierādīt, ka neviens no skaitļiem $y_1, y_2, y_3, \\ldots$
 nav naturāla skaitļa kubs."""@lv ;
     eliozo:problemTextHtml """<p>Dots, ka $x_1 = 3$, $y_1 = 4$ un katram naturālam $n$ pastāv sakarība</p>
-<p>$$x_{n+1} = 3x_n + 2 y_n,\\;\\; y_{n+1} = 4x_n + 3y_n.$$</p>
-<p>Pierādīt, ka neviens no skaitļiem $y_1, y_2, y_3, \\ldots$
+<p>$$x_{n+1} = 3x_n + 2 y_n,\\;\\; y_{n+1} = 4x_n + 3y_n.$$
+
+Pierādīt, ka neviens no skaitļiem $y_1, y_2, y_3, \\ldots$
 nav naturāla skaitļa kubs.</p>"""@lv ;
     eliozo:problemTimeID "2004" ;
     eliozo:problemYear 2004 ;
@@ -660,7 +661,7 @@ c. $f$ ir augoša funkcija,
 d. visiem $x$ un $y$ no definīcijas apgabala skaitlis 
    $x\\cdot{}f(x)+y\\cdot{}f(y)$ dalās ar $x+y$?"""@lv ;
     eliozo:problemTextHtml """<p>Kādām funkcijām $f$ vienlaicīgi piemīt sekojošas īpašības:</p>
-<p>a. $f$ definīcijas apgabals ir ${1; 2; 3; 4; 5; 6; 7; 8; 9; 10}$,<br />
+<p>a. $f$ definīcijas apgabals ir $\\{1; 2; 3; 4; 5; 6; 7; 8; 9; 10\\}$,<br />
 b. $f$ vērtības ir naturāli skaitļi, kas nepārsniedz $100$,<br />
 c. $f$ ir augoša funkcija,<br />
 d. visiem $x$ un $y$ no definīcijas apgabala skaitlis 
@@ -1075,13 +1076,15 @@ ir naturāla skaitļa kvadrāts, ja $k$ - patvaļīgs
 naturāls skaitlis."""@lv ;
     eliozo:problemTextHtml """<p>Reālu skaitļu virknē $a_1, a_2, a_3, \\ldots$ dots, ka $a_{11} = 4$, 
 $a_{22} = 2 un $a_{33} = 1$.
-Bez tam visiem naturāliem $n$ pastāv vienādība</p>
-<p>$$\\frac{a_{n+3} - a_{n+3}}{a_n - a_{n+1}} = 
-\\frac{a_{n+3} + a_{n+3}}{a_n + a_{n+1}}.$$</p>
-<p>Pierādīt, ka<br />
-<strong>(A)</strong> neviens virknes loceklis nav $0$,<br />
-<strong>(B)</strong> virkne ir periodiska,<br />
-<strong>(C)</strong> $a_1^k + a_2^k + \\ldots + a_{100}^k$
+Bez tam visiem naturāliem $n$ pastāv vienādība
+
+$$\\frac{a_{n+3} - a_{n+3}}{a_n - a_{n+1}} = 
+\\frac{a_{n+3} + a_{n+3}}{a_n + a_{n+1}}.$$
+
+Pierādīt, ka  
+**(A)** neviens virknes loceklis nav $0$,  
+**(B)** virkne ir periodiska,  
+**(C)** $a_1^k + a_2^k + \\ldots + a_{100}^k$
 ir naturāla skaitļa kvadrāts, ja $k$ - patvaļīgs
 naturāls skaitlis.</p>"""@lv ;
     eliozo:problemTimeID "2007" ;
@@ -1564,826 +1567,8 @@ naturālu skaitļu visi var būt <em>skaisti</em>?</p>"""@lv ;
     eliozo:suffix "LV.VOL.2010.9" ;
     eliozo:suggestedGrade 9 .
 
-eliozo:LV.VOL.2011.10.5 a eliozo:Problem ;
-    eliozo:concepts eliozo:TRM-integer-polynomial ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 10 ;
-    eliozo:problemID "LV.VOL.2011.10.5" ;
-    eliozo:problemText """Dots polinoms $f(x)$ ar veseliem koeficientiem. Vai iespējams, ka
-$f(2011) = 100$, bet $f(11) = 1000$?"""@lv ;
-    eliozo:problemTextHtml """<p>Dots polinoms $f(x)$ ar veseliem koeficientiem. Vai iespējams, ka
-$f(2011) = 100$, bet $f(11) = 1000$?</p>"""@lv ;
-    eliozo:problemTimeID "2011" ;
-    eliozo:problemYear 2011 ;
-    eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.VOL.2011.10" ;
-    eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:AdvancedIdentities,
-        eliozo:PolynomialDifferenceDivisibility .
-
-eliozo:LV.VOL.2011.11.3 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.VOL.2011.11.3" ;
-    eliozo:problemText """Atrast visus pirmskaitļus $p$, kuriem skaitlis
-$p^{p^2 - 5} + 2$
-arī ir pirmskaitlis."""@lv ;
-    eliozo:problemTextHtml """<p>Atrast visus pirmskaitļus $p$, kuriem skaitlis
-$p^{p^2 - 5} + 2$
-arī ir pirmskaitlis.</p>"""@lv ;
-    eliozo:problemTimeID "2011" ;
-    eliozo:problemYear 2011 ;
-    eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.VOL.2011.11" ;
-    eliozo:suggestedGrade 11 .
-
-eliozo:LV.VOL.2011.12.3 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.VOL.2011.12.3" ;
-    eliozo:problemText """Pierādīt, ka neeksistē tādi naturāli skaitļi $n$ un $m$,
-kuriem ir patiesa
-vienādība $\\left( 2n \\right)^{2n}-1 = m^3$."""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka neeksistē tādi naturāli skaitļi $n$ un $m$,
-kuriem ir patiesa
-vienādība $\\left( 2n \\right)^{2n}-1 = m^3$.</p>"""@lv ;
-    eliozo:problemTimeID "2011" ;
-    eliozo:problemYear 2011 ;
-    eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2011.12" ;
-    eliozo:suggestedGrade 12 .
-
-eliozo:LV.VOL.2011.9.1 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.VOL.2011.9.1" ;
-    eliozo:problemText """Doti $4023$ kvadrātvienādojumi formā $x^2 + ax + b = 0$. 
-Starp visu vienādojumu $a$ vērtībām sastopami visi 
-veselie skaitļi no $-2011$ līdz $2011$
-(ieskaitot), tāpat arī starp $b$ vērtībām 
-sastopami visi veselie skaitļi no $-2011$
-līdz $2011$ (ieskaitot). Vai var gadīties, ka visiem 
-dotajiem vienādojumiem saknes ir veseli skaitļi?"""@lv ;
-    eliozo:problemTextHtml """<p>Doti $4023$ kvadrātvienādojumi formā $x^2 + ax + b = 0$. 
-Starp visu vienādojumu $a$ vērtībām sastopami visi 
-veselie skaitļi no $-2011$ līdz $2011$
-(ieskaitot), tāpat arī starp $b$ vērtībām 
-sastopami visi veselie skaitļi no $-2011$
-līdz $2011$ (ieskaitot). Vai var gadīties, ka visiem 
-dotajiem vienādojumiem saknes ir veseli skaitļi?</p>"""@lv ;
-    eliozo:problemTimeID "2011" ;
-    eliozo:problemYear 2011 ;
-    eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.VOL.2011.9" ;
-    eliozo:suggestedGrade 9 .
-
-eliozo:LV.VOL.2011.9.3 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.VOL.2011.9.3" ;
-    eliozo:problemText """Parādīt, ka no visiem trīsciparu skaitļiem, 
-kuru pierakstā nav cipara $0$, var
-izvēlēties 81 trīsciparu skaitli tā, lai vienlaicīgi 
-izpildītos šādas trīs īpašības:
-
-1. visos izvēlētajos skaitļos izsvītrojot pirmo ciparu, 
-   katrs divciparu skaitlis, kas nesatur $0$, 
-   tiek iegūts tieši vienu reizi;  
-2. visos izvēlētajos skaitļos izsvītrojot otro ciparu, 
-   katrs divciparu skaitlis, kas nesatur $0$, 
-   tiek iegūts tieši vienu reizi;  
-3. visos izvēlētajos skaitļos izsvītrojot trešo ciparu, 
-   katrs divciparu skaitlis, kas nesatur $0$, 
-   tiek iegūts tieši vienu reizi."""@lv ;
-    eliozo:problemTextHtml """<p>Parādīt, ka no visiem trīsciparu skaitļiem, 
-kuru pierakstā nav cipara $0$, var
-izvēlēties 81 trīsciparu skaitli tā, lai vienlaicīgi 
-izpildītos šādas trīs īpašības:</p>
-<ol>
-<li>visos izvēlētajos skaitļos izsvītrojot pirmo ciparu, 
-   katrs divciparu skaitlis, kas nesatur $0$, 
-   tiek iegūts tieši vienu reizi;  </li>
-<li>visos izvēlētajos skaitļos izsvītrojot otro ciparu, 
-   katrs divciparu skaitlis, kas nesatur $0$, 
-   tiek iegūts tieši vienu reizi;  </li>
-<li>visos izvēlētajos skaitļos izsvītrojot trešo ciparu, 
-   katrs divciparu skaitlis, kas nesatur $0$, 
-   tiek iegūts tieši vienu reizi.</li>
-</ol>"""@lv ;
-    eliozo:problemTimeID "2011" ;
-    eliozo:problemYear 2011 ;
-    eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2011.9" ;
-    eliozo:suggestedGrade 9 .
-
-eliozo:LV.VOL.2012.10.3 a eliozo:Problem ;
-    eliozo:concepts eliozo:TRM-full-square ;
-    eliozo:country "LV" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 10 ;
-    eliozo:problemID "LV.VOL.2012.10.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.10.3.SUB0 ;
-    eliozo:problemText """Naturāla skaitļa $N$ decimālajā pierakstā izmantots tikai cipars $6$.
-Pierādīt, ka skaitļa $N^2$ decimālajā pierakstā nav cipara $0$."""@lv ;
-    eliozo:problemTextHtml """<p>Naturāla skaitļa $N$ decimālajā pierakstā izmantots tikai cipars $6$.
-Pierādīt, ka skaitļa $N^2$ decimālajā pierakstā nav cipara $0$.</p>"""@lv ;
-    eliozo:problemTimeID "2012" ;
-    eliozo:problemYear 2012 ;
-    eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" ;
-    eliozo:strategy "TrialAndError" ;
-    eliozo:suffix "LV.VOL.2012.10" ;
-    eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:PeriodicDigitGroups,
-        eliozo:SeriesMembersSumsClosedFormulas .
-
-eliozo:LV.VOL.2012.11.1 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.VOL.2012.11.1" ;
-    eliozo:problemText """Pierādīt, ka eksistē bezgalīgi daudz naturālu 
-skaitļu $a$, kuriem skaitlis
-$n^4 + a$ ir salikts skaitlis visiem naturāliem 
-skaitļiem $n > 1$."""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka eksistē bezgalīgi daudz naturālu 
-skaitļu $a$, kuriem skaitlis
-$n^4 + a$ ir salikts skaitlis visiem naturāliem 
-skaitļiem $n &gt; 1$.</p>"""@lv ;
-    eliozo:problemTimeID "2012" ;
-    eliozo:problemYear 2012 ;
-    eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2012.11" ;
-    eliozo:suggestedGrade 11 .
-
-eliozo:LV.VOL.2012.11.4 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.VOL.2012.11.4" ;
-    eliozo:problemText """Dota naturālu skaitļu virkne $(a_i)$, kur $a_1=5$ 
-un katram $n>1$
-$a_n = a_1 a_2 \\ldots a_{n-1}+4$. 
-Pierādīt, ka visiem $n \\geq 1$ ir spēkā sakarība
-$a_n - \\sqrt{a_{n+1}}=2$."""@lv ;
-    eliozo:problemTextHtml """<p>Dota naturālu skaitļu virkne $(a_i)$, kur $a_1=5$ 
-un katram $n&gt;1$
-$a_n = a_1 a_2 \\ldots a_{n-1}+4$. 
-Pierādīt, ka visiem $n \\geq 1$ ir spēkā sakarība
-$a_n - \\sqrt{a_{n+1}}=2$.</p>"""@lv ;
-    eliozo:problemTimeID "2012" ;
-    eliozo:problemYear 2012 ;
-    eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2012.11" ;
-    eliozo:suggestedGrade 11 .
-
-eliozo:LV.VOL.2012.12.1 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.VOL.2012.12.1" ;
-    eliozo:problemText """Divām naturālu skaitļu virknēm $(a_i)$ 
-un $(b_i)$ katram $i \\geq 1$ ir spēkā
-sakarības:
-$$a_{b_i} = b_{a_i}\\;\\;\\mbox{un}\\;\\;a_i-b_i > 2012.$$
-Atrast vienu šādu virkņu piemēru."""@lv ;
-    eliozo:problemTextHtml """<p>Divām naturālu skaitļu virknēm $(a_i)$ 
-un $(b_i)$ katram $i \\geq 1$ ir spēkā
-sakarības:
-$$a_{b_i} = b_{a_i}\\;\\;\\mbox{un}\\;\\;a_i-b_i &gt; 2012.$$
-Atrast vienu šādu virkņu piemēru.</p>"""@lv ;
-    eliozo:problemTimeID "2012" ;
-    eliozo:problemYear 2012 ;
-    eliozo:problem_number 1 ;
-    eliozo:questionType "FindExample" ;
-    eliozo:suffix "LV.VOL.2012.12" ;
-    eliozo:suggestedGrade 12 .
-
-eliozo:LV.VOL.2012.12.3 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.VOL.2012.12.3" ;
-    eliozo:problemText """Atrisināt naturālos skaitļos vienādojumu
-$$n = \\left\\lfloor \\frac{n}{2} \\right\\rfloor + 
-\\left\\lfloor \\frac{n}{3} \\right\\rfloor + 
-\\left\\lfloor \\frac{n}{4} \\right\\rfloor + 
-\\ldots + 
-\\left\\lfloor \\frac{n}{n+2012} \\right\\rfloor.$$ 
-($\\lfloor x \\rfloor$ ir veselā daļa no $x$ – lielākais veselais skaitlis, kas nepārsniedz $x$;
-piem., $\\lfloor 3 \\rfloor=3$, 
-$\\lfloor 4,6 \\rfloor =4$, 
-$\\lfloor 0,2 \\rfloor =0$ u.tml.)"""@lv ;
-    eliozo:problemTextHtml """<p>Atrisināt naturālos skaitļos vienādojumu
-$$n = \\left\\lfloor \\frac{n}{2} \\right\\rfloor + 
-\\left\\lfloor \\frac{n}{3} \\right\\rfloor + 
-\\left\\lfloor \\frac{n}{4} \\right\\rfloor + 
-\\ldots + 
-\\left\\lfloor \\frac{n}{n+2012} \\right\\rfloor.$$ 
-($\\lfloor x \\rfloor$ ir veselā daļa no $x$ – lielākais veselais skaitlis, kas nepārsniedz $x$;
-piem., $\\lfloor 3 \\rfloor=3$, 
-$\\lfloor 4,6 \\rfloor =4$, 
-$\\lfloor 0,2 \\rfloor =0$ u.tml.)</p>"""@lv ;
-    eliozo:problemTimeID "2012" ;
-    eliozo:problemYear 2012 ;
-    eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.VOL.2012.12" ;
-    eliozo:suggestedGrade 12 .
-
-eliozo:LV.VOL.2012.9.1 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.VOL.2012.9.1" ;
-    eliozo:problemText """**(A)** Vai piecu pēc kārtas ņemtu naturālu 
-skaitļu reizinājums var būt
-skaitlis $20112012$?  
-**(B)** Vai četru pēc kārtas ņemtu naturālu skaitļu
-reizinājums var būt skaitlis $20112012$?"""@lv ;
-    eliozo:problemTextHtml """<p><strong>(A)</strong> Vai piecu pēc kārtas ņemtu naturālu 
-skaitļu reizinājums var būt
-skaitlis $20112012$?<br />
-<strong>(B)</strong> Vai četru pēc kārtas ņemtu naturālu skaitļu
-reizinājums var būt skaitlis $20112012$?</p>"""@lv ;
-    eliozo:problemTimeID "2012" ;
-    eliozo:problemYear 2012 ;
-    eliozo:problem_number 1 ;
-    eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.VOL.2012.9" ;
-    eliozo:suggestedGrade 9 .
-
-eliozo:LV.VOL.2013.10.1 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 10 ;
-    eliozo:problemID "LV.VOL.2013.10.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2013.10.1.SUB0 ;
-    eliozo:problemText """Pierādīt, ka vienādojumam $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2}=\\frac{1}{2}$ 
-nav atrisinājuma naturālos skaitļos."""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka vienādojumam $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2}=\\frac{1}{2}$ 
-nav atrisinājuma naturālos skaitļos.</p>"""@lv ;
-    eliozo:problemTimeID "2013" ;
-    eliozo:problemYear 2013 ;
-    eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2013.10" ;
-    eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:CountingUsingSymmetry,
-        eliozo:NumTheoryInequalityLargeIntervals .
-
-eliozo:LV.VOL.2013.10.4 a eliozo:Problem ;
-    eliozo:concepts eliozo:TRM-fibonacci-sequence,
-        eliozo:TRM-full-square ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 10 ;
-    eliozo:problemID "LV.VOL.2013.10.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2013.10.4.SUB0 ;
-    eliozo:problemText """Dota Fibonači skaitļu virkne
-$F_1 = F_2 = 1$, $F_{i+2} = F_i + F_{i+1}$.  
-Pierādīt, ka šajā virknē ir bezgalīgi daudz skaitļu, kas nav naturāla
-skaitļa kvadrāti."""@lv ;
-    eliozo:problemTextHtml """<p>Dota Fibonači skaitļu virkne
-$F_1 = F_2 = 1$, $F_{i+2} = F_i + F_{i+1}$.<br />
-Pierādīt, ka šajā virknē ir bezgalīgi daudz skaitļu, kas nav naturāla
-skaitļa kvadrāti.</p>"""@lv ;
-    eliozo:problemTimeID "2013" ;
-    eliozo:problemYear 2013 ;
-    eliozo:problem_number 4 ;
-    eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2013.10" ;
-    eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:FibonacciNumbers,
-        eliozo:ModularArithmetic,
-        eliozo:PeriodicRemainders .
-
-eliozo:LV.VOL.2013.11.1 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.VOL.2013.11.1" ;
-    eliozo:problemText """Pierādīt, ka nav tādas naturālas n vērtības, ka 
-$n^2 + 4n + 16$ dalās ar $36$."""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka nav tādas naturālas n vērtības, ka 
-$n^2 + 4n + 16$ dalās ar $36$.</p>"""@lv ;
-    eliozo:problemTimeID "2013" ;
-    eliozo:problemYear 2013 ;
-    eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2013.11" ;
-    eliozo:suggestedGrade 11 .
-
-eliozo:LV.VOL.2013.12.3 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.VOL.2013.12.3" ;
-    eliozo:problemText """Funkcija $f$ apmierina šādas prasības:
-
-1. $f$ ir definēta visiem veseliem nenegatīviem skaitļiem
-   un tās vērtības ir veseli skaitļi;
-2. katram $n$ ($n$ – vesels nenegatīvs skaitlis) 
-   izpildās sakarība
-
-   $$f(n) \\cdot (f(n+1 )-2) = 4n^2-1.$$
-
-Atrast visas šādas funkcijas $f$ un pierādīt, ka citu nav."""@lv ;
-    eliozo:problemTextHtml """<p>Funkcija $f$ apmierina šādas prasības:</p>
-<ol>
-<li>$f$ ir definēta visiem veseliem nenegatīviem skaitļiem
-   un tās vērtības ir veseli skaitļi;</li>
-<li>katram $n$ ($n$ – vesels nenegatīvs skaitlis) 
-   izpildās sakarība</li>
-</ol>
-<p>$$f(n) \\cdot (f(n+1 )-2) = 4n^2-1.$$</p>
-<p>Atrast visas šādas funkcijas $f$ un pierādīt, ka citu nav.</p>"""@lv ;
-    eliozo:problemTimeID "2013" ;
-    eliozo:problemYear 2013 ;
-    eliozo:problem_number 3 ;
-    eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.VOL.2013.12" ;
-    eliozo:suggestedGrade 12 .
-
-eliozo:LV.VOL.2013.12.4 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.VOL.2013.12.4" ;
-    eliozo:problemText """Ar $d_i$, $i = 1,2,\\ldots,k$, 
-apzīmēsim visus naturālā skaitļa $n$ naturālos
-dalītājus, pie tam $d_1 < d_2 < d_3 < \\ldots < d_k$.
-Dots, ka 
-$d_3^2 d_4^2 \\left( d_3^2 + d_4^2 \\right) = n^2$. 
-Atrast visas iespējamās $n$ vērtības."""@lv ;
-    eliozo:problemTextHtml """<p>Ar $d_i$, $i = 1,2,\\ldots,k$, 
-apzīmēsim visus naturālā skaitļa $n$ naturālos
-dalītājus, pie tam $d_1 &lt; d_2 &lt; d_3 &lt; \\ldots &lt; d_k$.
-Dots, ka 
-$d_3^2 d_4^2 \\left( d_3^2 + d_4^2 \\right) = n^2$. 
-Atrast visas iespējamās $n$ vērtības.</p>"""@lv ;
-    eliozo:problemTimeID "2013" ;
-    eliozo:problemYear 2013 ;
-    eliozo:problem_number 4 ;
-    eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.VOL.2013.12" ;
-    eliozo:suggestedGrade 12 .
-
-eliozo:LV.VOL.2013.9.1 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.VOL.2013.9.1" ;
-    eliozo:problemText """Atrast tādas ciparu $a$, $b$, $c$, $d$ 
-vērtības, lai izpildītos vienādība
-$\\overline{abcd} + \\overline{abc} + \\overline{ab} + a = 2013$."""@lv ;
-    eliozo:problemTextHtml """<p>Atrast tādas ciparu $a$, $b$, $c$, $d$ 
-vērtības, lai izpildītos vienādība
-$\\overline{abcd} + \\overline{abc} + \\overline{ab} + a = 2013$.</p>"""@lv ;
-    eliozo:problemTimeID "2013" ;
-    eliozo:problemYear 2013 ;
-    eliozo:problem_number 1 ;
-    eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.VOL.2013.9" ;
-    eliozo:suggestedGrade 9 .
-
-eliozo:LV.VOL.2013.9.3 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.VOL.2013.9.3" ;
-    eliozo:problemText """Dota virkne $a_1, a_2, a_3,\\ldots$, kur 
-$a 1 = a 2 = 1$ un visiem $n > 2$ izpildās
-$$a_{n+1} = \\left\\lfloor
-\\frac{2a_n + a_{n-1}}{3} 
-\\right\\rfloor + 4.$$
-Aprēķināt $a_{2013}$.
-($\\lfloor x \\rfloor$ ir veselā daļa no $x$ – 
-lielākais veselais skaitlis, kas nepārsniedz $x$;
-piemēram, $\\lfloor 3 \\rfloor =3$, 
-$\\lfloor 4,6 \\rfloor =4$, 
-$\\lfloor 0,2 \\rfloor =0$ u.tml.)"""@lv ;
-    eliozo:problemTextHtml """<p>Dota virkne $a_1, a_2, a_3,\\ldots$, kur 
-$a 1 = a 2 = 1$ un visiem $n &gt; 2$ izpildās
-$$a_{n+1} = \\left\\lfloor
-\\frac{2a_n + a_{n-1}}{3} 
-\\right\\rfloor + 4.$$
-Aprēķināt $a_{2013}$.
-($\\lfloor x \\rfloor$ ir veselā daļa no $x$ – 
-lielākais veselais skaitlis, kas nepārsniedz $x$;
-piemēram, $\\lfloor 3 \\rfloor =3$, 
-$\\lfloor 4,6 \\rfloor =4$, 
-$\\lfloor 0,2 \\rfloor =0$ u.tml.)</p>"""@lv ;
-    eliozo:problemTimeID "2013" ;
-    eliozo:problemYear 2013 ;
-    eliozo:problem_number 3 ;
-    eliozo:questionType "FindExample" ;
-    eliozo:suffix "LV.VOL.2013.9" ;
-    eliozo:suggestedGrade 9 .
-
-eliozo:LV.VOL.2014.10.2 a eliozo:Problem ;
-    eliozo:concepts eliozo:TRM-integer-polynomial ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 10 ;
-    eliozo:problemID "LV.VOL.2014.10.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2014.10.2.SUB0 ;
-    eliozo:problemText """Atrast visas tādas vesela skaitļa $n$ vērtības, kurām gan 
-$\\frac{n^3+3}{n+3}$, gan $\\frac{n^4+4}{n+4}$ ir veseli skaitļi."""@lv ;
-    eliozo:problemTextHtml """<p>Atrast visas tādas vesela skaitļa $n$ vērtības, kurām gan 
-$\\frac{n^3+3}{n+3}$, gan $\\frac{n^4+4}{n+4}$ ir veseli skaitļi.</p>"""@lv ;
-    eliozo:problemTimeID "2014" ;
-    eliozo:problemYear 2014 ;
-    eliozo:problem_number 2 ;
-    eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.VOL.2014.10" ;
-    eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:DivisorNumberAndSum,
-        eliozo:PolynomialLongDivision .
-
-eliozo:LV.VOL.2014.10.3 a eliozo:Problem ;
-    eliozo:concepts eliozo:TRM-linear-expression ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 10 ;
-    eliozo:problemID "LV.VOL.2014.10.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2014.10.3.SUB0 ;
-    eliozo:problemText """Ir pieejams neierobežots daudzums $7$ un $13$ centu pastmarku, 
-kuras izmanto pasta sūtījumu apmaksāšanai. Diemžēl dažas summas nav 
-iespējams apmaksāt tikai ar šīm pastmarkām (piemēram, ja sūtījums 
-maksā $6$, $8$ vai $25$ centus). Kāda ir lielākā summa, kuru nav 
-iespējams apmaksāt izmantojot tikai šīs pastmarkas?"""@lv ;
-    eliozo:problemTextHtml """<p>Ir pieejams neierobežots daudzums $7$ un $13$ centu pastmarku, 
-kuras izmanto pasta sūtījumu apmaksāšanai. Diemžēl dažas summas nav 
-iespējams apmaksāt tikai ar šīm pastmarkām (piemēram, ja sūtījums 
-maksā $6$, $8$ vai $25$ centus). Kāda ir lielākā summa, kuru nav 
-iespējams apmaksāt izmantojot tikai šīs pastmarkas?</p>"""@lv ;
-    eliozo:problemTimeID "2014" ;
-    eliozo:problemYear 2014 ;
-    eliozo:problem_number 3 ;
-    eliozo:questionType "FindOptimal" ;
-    eliozo:suffix "LV.VOL.2014.10" ;
-    eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:ArithmeticSeriesAll,
-        eliozo:NumTheoryInequalityLargeIntervals .
-
-eliozo:LV.VOL.2014.11.2 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.VOL.2014.11.2" ;
-    eliozo:problemText """Noteikt, kāds ir lielākais skaits, cik no pieciem
-naturāliem skaitļiem $a$,
-$a+14$, $a+22$, $a+32$, $a+46$ var būt pirmskaitļi."""@lv ;
-    eliozo:problemTextHtml """<p>Noteikt, kāds ir lielākais skaits, cik no pieciem
-naturāliem skaitļiem $a$,
-$a+14$, $a+22$, $a+32$, $a+46$ var būt pirmskaitļi.</p>"""@lv ;
-    eliozo:problemTimeID "2014" ;
-    eliozo:problemYear 2014 ;
-    eliozo:problem_number 2 ;
-    eliozo:questionType "FindOptimal" ;
-    eliozo:suffix "LV.VOL.2014.11" ;
-    eliozo:suggestedGrade 11 .
-
-eliozo:LV.VOL.2014.11.5 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.VOL.2014.11.5" ;
-    eliozo:problemText """Naturālus skaitļus $a$, $b$ un $c$ saista 
-sakarība $c^2 = a^2 + b^2$. 
-Pierādīt, ka katru no skaitļiem 
-$c^2+ab$ un $c^2-ab$ var izteikt kā divu naturālu
-skaitļu kvadrātu summu."""@lv ;
-    eliozo:problemTextHtml """<p>Naturālus skaitļus $a$, $b$ un $c$ saista 
-sakarība $c^2 = a^2 + b^2$. 
-Pierādīt, ka katru no skaitļiem 
-$c^2+ab$ un $c^2-ab$ var izteikt kā divu naturālu
-skaitļu kvadrātu summu.</p>"""@lv ;
-    eliozo:problemTimeID "2014" ;
-    eliozo:problemYear 2014 ;
-    eliozo:problem_number 5 ;
-    eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2014.11" ;
-    eliozo:suggestedGrade 11 .
-
-eliozo:LV.VOL.2014.12.2 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.VOL.2014.12.2" ;
-    eliozo:problemText """Katram naturālam skaitlim $n$
-ir definēta funkcija
-$f(n)=\\frac{1}{1} + \\frac{1}{2} + \\ldots + \\frac{1}{n}$. 
-Pierādīt, ka visiem $n > 1$ ir spēkā sakarība
-
-$$n + f(1) + f(2) + \\ldots + f(n-1) = n\\cdot{}f(n).$$"""@lv ;
-    eliozo:problemTextHtml """<p>Katram naturālam skaitlim $n$
-ir definēta funkcija
-$f(n)=\\frac{1}{1} + \\frac{1}{2} + \\ldots + \\frac{1}{n}$. 
-Pierādīt, ka visiem $n &gt; 1$ ir spēkā sakarība</p>
-<p>$$n + f(1) + f(2) + \\ldots + f(n-1) = n\\cdot{}f(n).$$</p>"""@lv ;
-    eliozo:problemTimeID "2014" ;
-    eliozo:problemYear 2014 ;
-    eliozo:problem_number 2 ;
-    eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2014.12" ;
-    eliozo:suggestedGrade 12 .
-
-eliozo:LV.VOL.2014.12.5 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.VOL.2014.12.5" ;
-    eliozo:problemText """Vai var atrast tādu naturālu $n$ vērtību, 
-kam piemīt īpašība: visu skaitļa
-$n$ naturālo dalītāju, izņemot $1$ un $n$, 
-kvadrātu summa vienāda ar $n^2$."""@lv ;
-    eliozo:problemTextHtml """<p>Vai var atrast tādu naturālu $n$ vērtību, 
-kam piemīt īpašība: visu skaitļa
-$n$ naturālo dalītāju, izņemot $1$ un $n$, 
-kvadrātu summa vienāda ar $n^2$.</p>"""@lv ;
-    eliozo:problemTimeID "2014" ;
-    eliozo:problemYear 2014 ;
-    eliozo:problem_number 5 ;
-    eliozo:questionType "ProveDisprove" ;
-    eliozo:suffix "LV.VOL.2014.12" ;
-    eliozo:suggestedGrade 12 .
-
-eliozo:LV.VOL.2014.9.2 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.VOL.2014.9.2" ;
-    eliozo:problemText """Naturālu skaitļu virknes pirmie trīs locekļi 
-ir vienādi ar $1$, bet katrs
-nākamais ir vienāds ar trīs iepriekšējo skaitļu summu.
-Cik starp virknes
-pirmajiem **(A)** $100$, **(B)** $2014$ locekļiem 
-ir tādi, kas dalās ar $5$?"""@lv ;
-    eliozo:problemTextHtml """<p>Naturālu skaitļu virknes pirmie trīs locekļi 
-ir vienādi ar $1$, bet katrs
-nākamais ir vienāds ar trīs iepriekšējo skaitļu summu.
-Cik starp virknes
-pirmajiem <strong>(A)</strong> $100$, <strong>(B)</strong> $2014$ locekļiem 
-ir tādi, kas dalās ar $5$?</p>"""@lv ;
-    eliozo:problemTimeID "2014" ;
-    eliozo:problemYear 2014 ;
-    eliozo:problem_number 2 ;
-    eliozo:questionType "FindCount" ;
-    eliozo:suffix "LV.VOL.2014.9" ;
-    eliozo:suggestedGrade 9 .
-
-eliozo:LV.VOL.2015.10.2 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 10 ;
-    eliozo:problemID "LV.VOL.2015.10.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2015.10.2.SUB0 ;
-    eliozo:problemText """Pierādīt, ka katram naturālam $n$ izteiksme
-$3n^5+5n^4-8n$
-dalās ar $10$."""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka katram naturālam $n$ izteiksme
-$3n^5+5n^4-8n$
-dalās ar $10$.</p>"""@lv ;
-    eliozo:problemTimeID "2015" ;
-    eliozo:problemYear 2015 ;
-    eliozo:problem_number 2 ;
-    eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2015.10" ;
-    eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:DivisibilityProperties,
-        eliozo:ModularArithmetic,
-        eliozo:ModularParity .
-
-eliozo:LV.VOL.2015.11.1 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.VOL.2015.11.1" ;
-    eliozo:problemText """Kvadrātvienādojuma
-$$(1+\\sqrt{5})x^2 - \\sqrt[4]{7}\\cdot{}(1 + \\sqrt{5})^2x + \\sqrt[4]{7} = 0$$
-saknes ir skaitļi $a$ un $b$.
-Pierādīt, ka izteiksmes
-$a^4b + ab^4+ 3a^3b^2 + 3a^2b^3 + 16a^4b^3 + 16a^3b^4$
-vērtība ir vesels skaitlis!"""@lv ;
-    eliozo:problemTextHtml """<p>Kvadrātvienādojuma
-$$(1+\\sqrt{5})x^2 - \\sqrt[4]{7}\\cdot{}(1 + \\sqrt{5})^2x + \\sqrt[4]{7} = 0$$
-saknes ir skaitļi $a$ un $b$.
-Pierādīt, ka izteiksmes
-$a^4b + ab^4+ 3a^3b^2 + 3a^2b^3 + 16a^4b^3 + 16a^3b^4$
-vērtība ir vesels skaitlis!</p>"""@lv ;
-    eliozo:problemTimeID "2015" ;
-    eliozo:problemYear 2015 ;
-    eliozo:problem_number 1 ;
-    eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2015.11" ;
-    eliozo:suggestedGrade 11 .
-
-eliozo:LV.VOL.2015.11.4 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 11 ;
-    eliozo:problemID "LV.VOL.2015.11.4" ;
-    eliozo:problemText """Naturāli skaitļi $a$, $b$ un $c$ ir 
-savstarpēji pirmskaitļi un visi ir lielāki
-nekā $50$. Zināms, ka $a+b$ dalās ar $c$ un 
-$b+c$ dalās ar $a$. Atrast mazāko
-iespējamo $b$ vērtību!"""@lv ;
-    eliozo:problemTextHtml """<p>Naturāli skaitļi $a$, $b$ un $c$ ir 
-savstarpēji pirmskaitļi un visi ir lielāki
-nekā $50$. Zināms, ka $a+b$ dalās ar $c$ un 
-$b+c$ dalās ar $a$. Atrast mazāko
-iespējamo $b$ vērtību!</p>"""@lv ;
-    eliozo:problemTimeID "2015" ;
-    eliozo:problemYear 2015 ;
-    eliozo:problem_number 4 ;
-    eliozo:questionType "FindOptimal" ;
-    eliozo:suffix "LV.VOL.2015.11" ;
-    eliozo:suggestedGrade 11 .
-
-eliozo:LV.VOL.2015.12.3 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 12 ;
-    eliozo:problemID "LV.VOL.2015.12.3" ;
-    eliozo:problemText """Pierādīt, ka jebkuram naturālam nepāra skaitlim $n$ izteiksme
-$2269^n + 2151^n + 1389^n - 1779^n$ dalās ar $2015$."""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka jebkuram naturālam nepāra skaitlim $n$ izteiksme
-$2269^n + 2151^n + 1389^n - 1779^n$ dalās ar $2015$.</p>"""@lv ;
-    eliozo:problemTimeID "2015" ;
-    eliozo:problemYear 2015 ;
-    eliozo:problem_number 3 ;
-    eliozo:questionType "Prove" ;
-    eliozo:suffix "LV.VOL.2015.12" ;
-    eliozo:suggestedGrade 12 .
-
-eliozo:LV.VOL.2015.9.1 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "NT" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.VOL.2015.9.1" ;
-    eliozo:problemText """Atrast visus tādus naturālus skaitļus $n$ un $m$, 
-kuriem $\\frac{2015}{n^4 - m^4}$ arī ir naturāls skaitlis!"""@lv ;
-    eliozo:problemTextHtml """<p>Atrast visus tādus naturālus skaitļus $n$ un $m$, 
-kuriem $\\frac{2015}{n^4 - m^4}$ arī ir naturāls skaitlis!</p>"""@lv ;
-    eliozo:problemTimeID "2015" ;
-    eliozo:problemYear 2015 ;
-    eliozo:problem_number 1 ;
-    eliozo:questionType "FindAll" ;
-    eliozo:suffix "LV.VOL.2015.9" ;
-    eliozo:suggestedGrade 9 .
-
-eliozo:LV.VOL.2015.9.3 a eliozo:Problem ;
-    eliozo:country "LV" ;
-    eliozo:domain "Alg" ;
-    eliozo:olympiad "LV.VOL" ;
-    eliozo:olympiadCode "VOL" ;
-    eliozo:olympiadType "National" ;
-    eliozo:problemGrade 9 ;
-    eliozo:problemID "LV.VOL.2015.9.3" ;
-    eliozo:problemText """Aija izvēlas naturālu skaitli $n \\leq 100$ 
-un veido skaitļu virkni, kur katru
-nākamo virknes locekli iegūst pēc šāda likuma:
-
-* ja $2n \\leq 100$, tad virknes nākamais loceklis ir $2n$;
-* ja $2n > 100$, tad virknes nākamais loceklis ir $2n-100$.
-
-Ja virknē vēl kādreiz parādās skaitlis $n$, 
-tad skaitli $n$ sauksim par
-*patīkamu*. Cik pavisam ir patīkamu skaitļu, 
-kas nepārsniedz $100$?
-Piemēram, skaitlis $40$ ir patīkams, jo 
-$\\underline{40}; 80; 60; 20; \\underline{40}; \\ldots$, 
-bet $25$ –
-nav, jo $25; 50; 100; 100; \\ldots$ 
-(tālāk virknē nav skaitļu, kas atšķirīgi no $100$)."""@lv ;
-    eliozo:problemTextHtml """<p>Aija izvēlas naturālu skaitli $n \\leq 100$ 
-un veido skaitļu virkni, kur katru
-nākamo virknes locekli iegūst pēc šāda likuma:</p>
-<ul>
-<li>ja $2n \\leq 100$, tad virknes nākamais loceklis ir $2n$;</li>
-<li>ja $2n &gt; 100$, tad virknes nākamais loceklis ir $2n-100$.</li>
-</ul>
-<p>Ja virknē vēl kādreiz parādās skaitlis $n$, 
-tad skaitli $n$ sauksim par
-<em>patīkamu</em>. Cik pavisam ir patīkamu skaitļu, 
-kas nepārsniedz $100$?
-Piemēram, skaitlis $40$ ir patīkams, jo 
-$\\underline{40}; 80; 60; 20; \\underline{40}; \\ldots$, 
-bet $25$ –
-nav, jo $25; 50; 100; 100; \\ldots$ 
-(tālāk virknē nav skaitļu, kas atšķirīgi no $100$).</p>"""@lv ;
-    eliozo:problemTimeID "2015" ;
-    eliozo:problemYear 2015 ;
-    eliozo:problem_number 3 ;
-    eliozo:questionType "FindCount" ;
-    eliozo:suffix "LV.VOL.2015.9" ;
-    eliozo:suggestedGrade 9 .
-
-eliozo:SOLN.LV.VOL.2001.10.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2001.10.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Ar eksperimentēšanu atrodam, ka
@@ -2422,57 +1607,26 @@ iegūsim tikai pirmreizinātājus $3$ un $5$."""@lv ;
 divnieka pakāpes $32$ un $64$ der. 
 Nosvītrotās skaitļa daļas vērtība ($30$ vai $60$) abos gadījumos ir $15$ daudzkārtnis. 
 Piemēram:</p>
-<p>$$2^6-2^2 = 2^2(2^4-1)=2^2(8+4+2+1).$$ </p>
-<p>Lai $2^n - 2^m = 2^m(2^{n-m}-1)$ būtu nosvītrojamais cipars, šai izteiksmei jādalās ar $5$.
-Pakāpes $2^{n-m}$ dalot ar $5$, iegūst šādus atlikumus:</p>
-<table>
-<thead>
-<tr>
-<th>$n-m$</th>
-<th>0</th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-<th>6</th>
-<th>7</th>
-<th>8</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$2^{n-m} \\pmod 5$</td>
-<td>1</td>
-<td>2</td>
-<td>4</td>
-<td>3</td>
-<td>1</td>
-<td>2</td>
-<td>4</td>
-<td>2</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$2^{n-m} \\pmod 3$</td>
-<td>1</td>
-<td>2</td>
-<td>1</td>
-<td>2</td>
-<td>1</td>
-<td>2</td>
-<td>1</td>
-<td>2</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p>Tā kā $n-m \\neq 0$ un vajag, lai $2^{n-m}-1$ dalās ar $5$, iegūstam, ka $n-m &gt; 0$
-dalās ar $4$. Tad $2^{n-m}$ ir $16$, $256$, $4096$, $65536$ utt.   </p>
-<p><strong>Secinājums:</strong> Ja $2^{n-m} - 1$ dalās ar $5$, tad tas
+<p>$$2^6-2^2 = 2^2(2^4-1)=2^2(8+4+2+1).$$ 
+
+
+Lai $2^n - 2^m = 2^m(2^{n-m}-1)$ būtu nosvītrojamais cipars, šai izteiksmei jādalās ar $5$.
+Pakāpes $2^{n-m}$ dalot ar $5$, iegūst šādus atlikumus:
+
+| $n-m$             | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   |
+| ----------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| $2^{n-m} \\pmod 5$ | 1   | 2   | 4   | 3   | 1   | 2   | 4   | 2   | 1   |
+| $2^{n-m} \\pmod 3$ | 1   | 2   | 1   | 2   | 1   | 2   | 1   | 2   | 1   |
+
+
+Tā kā $n-m \\neq 0$ un vajag, lai $2^{n-m}-1$ dalās ar $5$, iegūstam, ka $n-m &gt; 0$
+dalās ar $4$. Tad $2^{n-m}$ ir $16$, $256$, $4096$, $65536$ utt.   
+
+**Secinājums:** Ja $2^{n-m} - 1$ dalās ar $5$, tad tas
 dalās arī ar $3$. To var ieraudzīt tabuliņā, jo arī atlikumi (mod 3) ir periodiski. 
-Un tā kā $n-m$ dalās ar $4$, tad tas dalīsies arī ar $2$. </p>
-<p>Izsvītrotais cipars pareizināts ar $10$ pakāpi 
+Un tā kā $n-m$ dalās ar $4$, tad tas dalīsies arī ar $2$. 
+
+Izsvītrotais cipars pareizināts ar $10$ pakāpi 
 ir $2^m\\cdot{}(2^{n-m}-1)$. Šī skaitļa ciparu summai jādalās ar $3$, bet ne ar $9$. 
 Vienīgi cipari $3$, $6$ apmierina šo īpašību, tātad 
 $2^m\\cdot{}(2^{n-m}-1)$ ir vai nu $3 \\cdot 10^k$ vai  $6 \\cdot 10^k$. 
@@ -2480,8 +1634,8 @@ Bet ja šie skaitļi ir lielāki par $30$ vai $60$, tad
 dalot $300$, $600$ (vai $3000$, $6000$ utt.) ar divnieka pakāpēm, 
 iegūsim tikai pirmreizinātājus $3$ un $5$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2002.11.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2002.11.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 * Der visi pirmskaitļi $n>3$, jo skaitļi, kas mazāki par $n$
@@ -2499,21 +1653,21 @@ Līdzīgu iemeslu dēļ neder arī nepāru skaitļi, kas nav pirmskaitļi, bet
 nedalās ar $3$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <ul>
-<li>Der visi pirmskaitļi $n&gt;3$, jo skaitļi, kas mazāki par $n$
+<li>Der visi pirmskaitļi $n>3$, jo skaitļi, kas mazāki par $n$
   un kas ir savstarpēji pirmskaitļi ar $n$ ir šie:
   $1,2,\\ldots,n-2,n-1$.</li>
-<li>Der visas pakāpes $2^k &gt; 3$, jo savstarpēji pirmskaitļi 
+<li>Der visas pakāpes $2^k > 3$, jo savstarpēji pirmskaitļi 
   ir visi nepāru skaitļi: $1,3,5,\\ldots,2^k-3,2^k-1$.</li>
 </ul>
 <p>Neder citi skaitļi</p>
 <p>Pieņemsim, ka $n = (2k+1)2^m$ ir pāru skaitlis, kas nav $2$ pakāpe un nedalās ar $3$. 
-Ja $n$ ir pāru skaitlis, tad $2k+1 &gt; 1$ un tam ir nepāra dalītājs. 
+Ja $n$ ir pāru skaitlis, tad $2k+1 > 1$ un tam ir nepāra dalītājs. 
 Tāpēc progresijā $1,3,\\ldots,n-1$ būs kāds skaitļa $n$ dalītājs.
 Līdzīgu iemeslu dēļ neder arī nepāru skaitļi, kas nav pirmskaitļi, bet 
 nedalās ar $3$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2002.9.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2002.9.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Kādi skaitļi ir pilni kubi
@@ -2548,23 +1702,26 @@ Der vienīgi $x=36$, $y=48$. Tad $xy=2^63^3$ un $\\sqrt[3]{xy}=12$."""@lv ;
 <li>Daudzas $x,y$ vērtības (kas satur tādus pirmreizinātājus $p$, 
   kas nav kvadrātā, kam nevar piereizināt $p^2$), var izslēgt:</li>
 </ul>
-<p>$$\\left{ 
+<p>$$\\left\\{ 
 \\begin{array}{l}
-x \\neq 31;\\;33;\\;34;\\;35;\\;37;\\;38;\\;39\\
-y \\neq 41;\\;42;\\;43;\\;44;\\;45;\\;46;\\;47;\\;49\\
-\\end{array} \\right.$$</p>
-<p>Šķirojam gadījumus:</p>
-<ul>
-<li>Pirmreizinātājus $5$ un $7$ izmantot nav iespējams, jo $y=49$ 
-  varētu salikt kopā vienīgi ar $x=35$, bet tad kāpinātājs pie
-  $5$ nedalītos ar trīs (jo $x,y \\in (25;50)$). </li>
-<li>Paliek  tikai pirmskaitļi $2$ un $3$ un šādas vērtības:</li>
-</ul>
-<p>$$x = 32;\\;36\\;\\;\\mbox{un}\\;\\;y=48.$$</p>
-<p>Der vienīgi $x=36$, $y=48$. Tad $xy=2^63^3$ un $\\sqrt[3]{xy}=12$.</p>"""@lv .
+x \\neq 31;\\;33;\\;34;\\;35;\\;37;\\;38;\\;39\\\\
+y \\neq 41;\\;42;\\;43;\\;44;\\;45;\\;46;\\;47;\\;49\\\\
+\\end{array} \\right.$$
 
-eliozo:SOLN.LV.VOL.2003.9.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+
+Šķirojam gadījumus:
+
+* Pirmreizinātājus $5$ un $7$ izmantot nav iespējams, jo $y=49$ 
+  varētu salikt kopā vienīgi ar $x=35$, bet tad kāpinātājs pie
+  $5$ nedalītos ar trīs (jo $x,y \\in (25;50)$). 
+* Paliek  tikai pirmskaitļi $2$ un $3$ un šādas vērtības:
+
+$$x = 32;\\;36\\;\\;\\mbox{un}\\;\\;y=48.$$
+
+Der vienīgi $x=36$, $y=48$. Tad $xy=2^63^3$ un $\\sqrt[3]{xy}=12$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2003.9.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Skaitlis $\\overline{abccba} = 100001a + 010010b + 001100c$ 
@@ -2590,371 +1747,7 @@ Atrodam lielāko kopīgo dalītāju simetriskiem sešciparu skaitļiem<br />
 $100001$ un $101101$:
 $$\\mbox{LKD}(101101,100001) = \\mbox{LKD}(100001,1100).$$ 
 * Skaitlis $1100 = 2^2 \\cdot 5^2 \\cdot 11$, bet
-ar $2$ un $5$ nedalās $100001$. </p>
-<p>Tātad $x=11$ ir lielākā $x$ vērtība. Var būt arī vērtība $x=1$.</p>"""@lv .
+ar $2$ un $5$ nedalās $100001$. 
 
-eliozo:SOLN.LV.VOL.2012.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-Parādām, kā kāpināt $66\\ldots{}66$ kvadrātā
-
-$$6^2=36,\\;\\;66^2=4356=4455-99,\\;\\;666^2=443556=444555-999,\\ldots$$
-
-Pamatosim, ka 
-
-$$\\begin{aligned}
-(\\underbrace{6\\ldots6}_n)^2 & = \\overline{\\underbrace{4\\ldots{}4}_n\\underbrace{5\\ldots{}5}_n}-\\underbrace{9\\ldots{}9}_n, \\\\
-\\left( 6\\cdot(10^n-1)/9 \\right)^2 & = 10^n \\cdot (4 \\cdot (10^n - 1)/9) +(5 \\cdot (10^n - 1)/9) - (10^n-1), \\\\
-\\frac{4}{9}(10^n-1)^2 & = 10^n \\cdot \\frac{4}{9}(10^n - 1) +\\frac{5}{9}(10^n-1) - (10^n - 1), \\\\
-4(10^n - 1)^2 & = 4\\cdot{}10^{2n}-4\\cdot{}10^n + 5\\cdot{}10^n-5 - 9\\cdot{}10^n +9.
-\\end{aligned}$$
-
-Tātad $\\overline{6\\ldots6}^2$ pierakstā ir tikai cipari "4","3", "5" un "6":
-
-$$(\\underbrace{6\\ldots6}_n)^2=\\overline{\\underbrace{4\\ldots{}4}\\_{n-1}3\\underbrace{5\\ldots{}5}\\_{n-1}6}$$"""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Parādām, kā kāpināt $66\\ldots{}66$ kvadrātā</p>
-<p>$$6^2=36,\\;\\;66^2=4356=4455-99,\\;\\;666^2=443556=444555-999,\\ldots$$</p>
-<p>Pamatosim, ka </p>
-<p>$$\\begin{aligned}
-(\\underbrace{6\\ldots6}_n)^2 &amp; = \\overline{\\underbrace{4\\ldots{}4}_n\\underbrace{5\\ldots{}5}_n}-\\underbrace{9\\ldots{}9}_n, \\
-\\left( 6\\cdot(10^n-1)/9 \\right)^2 &amp; = 10^n \\cdot (4 \\cdot (10^n - 1)/9) +(5 \\cdot (10^n - 1)/9) - (10^n-1), \\
-\\frac{4}{9}(10^n-1)^2 &amp; = 10^n \\cdot \\frac{4}{9}(10^n - 1) +\\frac{5}{9}(10^n-1) - (10^n - 1), \\
-4(10^n - 1)^2 &amp; = 4\\cdot{}10^{2n}-4\\cdot{}10^n + 5\\cdot{}10^n-5 - 9\\cdot{}10^n +9.
-\\end{aligned}$$</p>
-<p>Tātad $\\overline{6\\ldots6}^2$ pierakstā ir tikai cipari "4","3", "5" un "6":</p>
-<p>$$(\\underbrace{6\\ldots6}_n)^2=\\overline{\\underbrace{4\\ldots{}4}_{n-1}3\\underbrace{5\\ldots{}5}_{n-1}6}$$</p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2013.10.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-Sākotnējie secinājumi par mainīgajiem
-
-Pieņemam, ka $a \\leq b$ (ja tā nav, tad $a$ un $b$ samainām vietām).
-
-* Ja $a \\geq 6$, tad $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2} < \\frac{1}{2}$
-* Ja $a \\leq 2$, tad $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2} > \\frac{1}{2}$
-* Gadījums $a=3$:
-
-    - Ja $b=6$, tad $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2} > \\frac{1}{2}$
-    - Pie $b=7$, tad $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2} < \\frac{1}{2}$
-
-* Gadījums $a=4$:
-
-    - Ja $b=4$, tad $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2} > \\frac{1}{2}$
-    - Ja $b=5$, tad $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2} < \\frac{1}{2}$
-
-Citas $b$ vērtības var neaplūkot, jo dotajam $a$ ($a=3$ vai $a=4$) izteiksme 
-$\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2}$ arvien samazinās tad, ja $b$ pieaug."""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Sākotnējie secinājumi par mainīgajiem</p>
-<p>Pieņemam, ka $a \\leq b$ (ja tā nav, tad $a$ un $b$ samainām vietām).</p>
-<ul>
-<li>Ja $a \\geq 6$, tad $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2} &lt; \\frac{1}{2}$</li>
-<li>Ja $a \\leq 2$, tad $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2} &gt; \\frac{1}{2}$</li>
-<li>
-<p>Gadījums $a=3$:</p>
-<ul>
-<li>Ja $b=6$, tad $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2} &gt; \\frac{1}{2}$</li>
-<li>Pie $b=7$, tad $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2} &lt; \\frac{1}{2}$</li>
-</ul>
-</li>
-<li>
-<p>Gadījums $a=4$:</p>
-<ul>
-<li>Ja $b=4$, tad $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2} &gt; \\frac{1}{2}$</li>
-<li>Ja $b=5$, tad $\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2} &lt; \\frac{1}{2}$</li>
-</ul>
-</li>
-</ul>
-<p>Citas $b$ vērtības var neaplūkot, jo dotajam $a$ ($a=3$ vai $a=4$) izteiksme 
-$\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{a^2+b^2}$ arvien samazinās tad, ja $b$ pieaug.</p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2013.10.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-Atrodam Fibonači virknes atlikumus, dalot ar 3:
-
-| $n$           | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   |
-| ------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
-| $F_n$         | 1    | 1    | 2    | 3    | 5    | 8    | 13   | 21   | 34   | 55   |
-| $F_n \\pmod 3$ | 1    | 1    | 2    | 0    | 2    | 2    | 1    | 0    | 1    | 1    |
-
-Kā redzams tabuliņā $F_1 \\equiv F_9 \\equiv 1$ un $F_2 \\equiv F_{10} \\equiv 1$ pēc
-$3$ moduļa (tāpēc sākot ar devīto locekli atkal atkārtosies tas pats astoņu 
-atlikumu periods: $1,1,2,0,2,2,1,0$). 
-
-
-* Neviens pilns kvadrāts nevar dot atlikumu $2$, dalot ar $3$, jo $(3k+1)^2$ un 
-  $(3k+2)^2$ dod atlikumu $1$. 
-* Fibonači virknē atlikums $2$, dalot ar $3$ parādīsies bezgalīgi bieži - 
-  $x_3$, $x_5$, $x_6$ (un arī $x_{2+8k}$, $x_{2+8k}$, $x_{2+8k}$ jebkuram $k$).
-* Visi šie nebūs naturāla skaitļa kvadrāti. 
-
-Protams, **faktiski** kvadrātu starp Fibonači virknes locekļiem ir vēl krietni mazāk
-(no augšminētajiem tikai $1=1^2$ un $144=12^2$). Bet šajā uzdevumā jāpamato, ka
-no kādas vietas virknes uzvedība nevar izmainīties tā, ka visi 
-pietiekami lielie virknes locekļi ir kvadrāti.
-
-
-**Apgalvojums:** (1) Dalot ar jebkuru fiksētu skaitli, Fibonači virknes locekļu atlikumi veido periodu.  
-(2) Periodiskajai atlikumu virknei nav priekšperioda un tajā bezgalīgi bieži parādās atlikums $0$.  
-
-**Pierādījums:**  
-(1) Katru Fibonači virknes locekļa atlikumu nosaka divu iepriekšējo locekļu atlikumi. 
-Tiklīdz kā divu pēc kārtas sekojošu atlikumu pārītis sakrīt ar tādu, kas bijis agrāk, Fibonači virknes
-atlikumi sāk atkārtoties, izveidojas cikls.  
-(2) Atlikumu virknē nevar rasties priekšperiodi, 
-jo atlikumus var rēķināt arī pretējā secībā: no $F_{i+2}$ un $F_{i+1}$ atlikumiem 
-viennozīmīgi atrodot $F_i$ atlikumu. Tātad atlikumu virkne ir periodiska abos virzienos (nevis tikai 
-kļūst periodiska, sākot no kādas vietas). Tā kā $0$-tais Fibonači skaitlis $F_0 = 0$, tad arī atlikums
-$0$ parādīsies bezgalīgi bieži (vismaz vienreiz katrā periodā)."""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Atrodam Fibonači virknes atlikumus, dalot ar 3:</p>
-<table>
-<thead>
-<tr>
-<th>$n$</th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-<th>6</th>
-<th>7</th>
-<th>8</th>
-<th>9</th>
-<th>10</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$F_n$</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>5</td>
-<td>8</td>
-<td>13</td>
-<td>21</td>
-<td>34</td>
-<td>55</td>
-</tr>
-<tr>
-<td>$F_n \\pmod 3$</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p>Kā redzams tabuliņā $F_1 \\equiv F_9 \\equiv 1$ un $F_2 \\equiv F_{10} \\equiv 1$ pēc
-$3$ moduļa (tāpēc sākot ar devīto locekli atkal atkārtosies tas pats astoņu 
-atlikumu periods: $1,1,2,0,2,2,1,0$). </p>
-<ul>
-<li>Neviens pilns kvadrāts nevar dot atlikumu $2$, dalot ar $3$, jo $(3k+1)^2$ un 
-  $(3k+2)^2$ dod atlikumu $1$. </li>
-<li>Fibonači virknē atlikums $2$, dalot ar $3$ parādīsies bezgalīgi bieži - 
-  $x_3$, $x_5$, $x_6$ (un arī $x_{2+8k}$, $x_{2+8k}$, $x_{2+8k}$ jebkuram $k$).</li>
-<li>Visi šie nebūs naturāla skaitļa kvadrāti. </li>
-</ul>
-<p>Protams, <strong>faktiski</strong> kvadrātu starp Fibonači virknes locekļiem ir vēl krietni mazāk
-(no augšminētajiem tikai $1=1^2$ un $144=12^2$). Bet šajā uzdevumā jāpamato, ka
-no kādas vietas virknes uzvedība nevar izmainīties tā, ka visi 
-pietiekami lielie virknes locekļi ir kvadrāti.</p>
-<p><strong>Apgalvojums:</strong> (1) Dalot ar jebkuru fiksētu skaitli, Fibonači virknes locekļu atlikumi veido periodu.<br />
-(2) Periodiskajai atlikumu virknei nav priekšperioda un tajā bezgalīgi bieži parādās atlikums $0$.  </p>
-<p><strong>Pierādījums:</strong><br />
-(1) Katru Fibonači virknes locekļa atlikumu nosaka divu iepriekšējo locekļu atlikumi. 
-Tiklīdz kā divu pēc kārtas sekojošu atlikumu pārītis sakrīt ar tādu, kas bijis agrāk, Fibonači virknes
-atlikumi sāk atkārtoties, izveidojas cikls.<br />
-(2) Atlikumu virknē nevar rasties priekšperiodi, 
-jo atlikumus var rēķināt arī pretējā secībā: no $F_{i+2}$ un $F_{i+1}$ atlikumiem 
-viennozīmīgi atrodot $F_i$ atlikumu. Tātad atlikumu virkne ir periodiska abos virzienos (nevis tikai 
-kļūst periodiska, sākot no kādas vietas). Tā kā $0$-tais Fibonači skaitlis $F_0 = 0$, tad arī atlikums
-$0$ parādīsies bezgalīgi bieži (vismaz vienreiz katrā periodā).</p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2014.10.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-Polinomus (tāpat kā naturālus skaitļus) var dalīt ar atlikumu. 
-
-**Apgalvojums:**  Ja $A(x)$ un $B(x)$ ir polinomi, $A(x)$ pakāpe ir vismaz tikpat liela kā $B(x)$, 
-tad eksistē divi citi polinomi $Q(x), R(x)$, kam $A(x)=Q(x)B(x)+R(x).  
-$Q(x)$ sauc par *dalījumu*, bet $R(x)$ - par *atlikumu*.  
-$R(x)$ pakāpe ir mazāka nekā $B(x)$ pakāpe.
-
-Var gadīties, ka atlikums $R(x)=0$, ja $A(x)$ izdalās ar $B(x)$ bez atlikuma. 
-Var arī gadīties, ka $R(x)$ ir konstante – t.i. $0$-tās pakāpes polinoms.
-
-**Pirmais dalīšanas piemērs:**
-
-$$\\begin{aligned}
-\\frac{n^3+3}{n+3} & = \\frac{n^2(n+3) - 3n^2 + 3}{n+3} = \\\\
-                  & = n^2+\\frac{-3n^2+3}{n+3} = \\\\
-                  & = n^2+\\frac{-3n(n+3)+9n+3}{n+3} = \\\\
-                  & = n^2-3n+\\frac{9n+3}{n+3} = \\\\
-                  & = n^2-3n+\\frac{9(n+3)-27+3}{n+3} = \\\\
-                  & = n^2-3n+9+\\frac{-24}{n+3}.
-\\end{aligned}$$
-
-Vajag, lai $24$ dalās ar $n+3$.
-
-**Otrais dalīšanas piemērs:**
-
-$$\\frac{n^4 + 4}{n+4} = n^3 - 4n^2 + 16n - 64 + \\frac{256+4}{n+4}$$
-
-Vajag, lai $260=2\\cdot{}2\\cdot{}5\\cdot{}13$ dalās ar $n+4$ jeb 
-
-$$n+4 \\in \\{ \\ldots, -26, -20, -13, -10, -5, -4, -2, -1 \\} \\cup$$ 
-$$\\cup \\{1, 2, 4, 5, 10, 13, 20, 26, \\ldots \\}$$
-
-
-Atradīsim tos veselos $z$, kuriem dalījums $\\frac{24}{x}$ (vai $\\frac{260}{x}$) ir vesels?
-Dalām pirmreizinātājos.
-
-$$24 = 2^3\\cdot{}3^1,\\;\\;260=2^2\\cdot{}5\\cdot{}13$$
-
-Cik šādiem skaitļiem ir dalītāju?
-
-**Apgalvojums:** Ja skaitlis $N$ dalās ar $2$ dažādiem pirmskaitļiem
-($N=p_1^{a_1}p_2^{a_2}$) tad visi veselie $N$ dalītāji ir formā:  
-$d = \\pm p_1^{b_1}\\cdot{}p_2^{b_2}$, kur $b_1 \\leq a_1$ un $b_2 \\leq a_2$.  
-(Analoģiski arī lielākam pirmskaitļu skaitam.)
-
-Piemēram, $N=24=2^3\\cdot{}3^1$ dalītāji ir $d=2^{b_1}3^{b_2}$,
-kur $b_1 \\in \\{ 0,1,2,3 \\}$, $b_2 \\in \\{ 0,1 \\}$.
-
-
-Meklējam divu kopu šķēlumu:
-
-$$n+3 \\in \\{ -24, -12, -8, -6, -4, -3, -2, -1, 1, 2, 3, 4, 6, 8, 12, 24 \\}$$
-
-un
-
-$$\\begin{array}{l}
-n+4 \\in \\{ \\ldots, -26, -20, -13, -10, -5, -4, -2, -1 \\} \\cup \\\\
-\\cup \\{1, 2, 4, 5, 10, 13, 20, 26, \\ldots \\} \\\\
-\\end{array}$$
-
-No šejienes $(n+4) \\in \\{ -5, -2, -1, 2, 4, 5, 13 \\}$ jeb
-$n \\in \\{ -9, -6, -5, -2, 0, 1, 9 \\}$."""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Polinomus (tāpat kā naturālus skaitļus) var dalīt ar atlikumu. </p>
-<p><strong>Apgalvojums:</strong>  Ja $A(x)$ un $B(x)$ ir polinomi, $A(x)$ pakāpe ir vismaz tikpat liela kā $B(x)$, 
-tad eksistē divi citi polinomi $Q(x), R(x)$, kam $A(x)=Q(x)B(x)+R(x).<br />
-$Q(x)$ sauc par <em>dalījumu</em>, bet $R(x)$ - par <em>atlikumu</em>.<br />
-$R(x)$ pakāpe ir mazāka nekā $B(x)$ pakāpe.</p>
-<p>Var gadīties, ka atlikums $R(x)=0$, ja $A(x)$ izdalās ar $B(x)$ bez atlikuma. 
-Var arī gadīties, ka $R(x)$ ir konstante – t.i. $0$-tās pakāpes polinoms.</p>
-<p><strong>Pirmais dalīšanas piemērs:</strong></p>
-<p>$$\\begin{aligned}
-\\frac{n^3+3}{n+3} &amp; = \\frac{n^2(n+3) - 3n^2 + 3}{n+3} = \\
-                  &amp; = n^2+\\frac{-3n^2+3}{n+3} = \\
-                  &amp; = n^2+\\frac{-3n(n+3)+9n+3}{n+3} = \\
-                  &amp; = n^2-3n+\\frac{9n+3}{n+3} = \\
-                  &amp; = n^2-3n+\\frac{9(n+3)-27+3}{n+3} = \\
-                  &amp; = n^2-3n+9+\\frac{-24}{n+3}.
-\\end{aligned}$$</p>
-<p>Vajag, lai $24$ dalās ar $n+3$.</p>
-<p><strong>Otrais dalīšanas piemērs:</strong></p>
-<p>$$\\frac{n^4 + 4}{n+4} = n^3 - 4n^2 + 16n - 64 + \\frac{256+4}{n+4}$$</p>
-<p>Vajag, lai $260=2\\cdot{}2\\cdot{}5\\cdot{}13$ dalās ar $n+4$ jeb </p>
-<p>$$n+4 \\in { \\ldots, -26, -20, -13, -10, -5, -4, -2, -1 } \\cup$$ 
-$$\\cup {1, 2, 4, 5, 10, 13, 20, 26, \\ldots }$$</p>
-<p>Atradīsim tos veselos $z$, kuriem dalījums $\\frac{24}{x}$ (vai $\\frac{260}{x}$) ir vesels?
-Dalām pirmreizinātājos.</p>
-<p>$$24 = 2^3\\cdot{}3^1,\\;\\;260=2^2\\cdot{}5\\cdot{}13$$</p>
-<p>Cik šādiem skaitļiem ir dalītāju?</p>
-<p><strong>Apgalvojums:</strong> Ja skaitlis $N$ dalās ar $2$ dažādiem pirmskaitļiem
-($N=p_1^{a_1}p_2^{a_2}$) tad visi veselie $N$ dalītāji ir formā:<br />
-$d = \\pm p_1^{b_1}\\cdot{}p_2^{b_2}$, kur $b_1 \\leq a_1$ un $b_2 \\leq a_2$.<br />
-(Analoģiski arī lielākam pirmskaitļu skaitam.)</p>
-<p>Piemēram, $N=24=2^3\\cdot{}3^1$ dalītāji ir $d=2^{b_1}3^{b_2}$,
-kur $b_1 \\in { 0,1,2,3 }$, $b_2 \\in { 0,1 }$.</p>
-<p>Meklējam divu kopu šķēlumu:</p>
-<p>$$n+3 \\in { -24, -12, -8, -6, -4, -3, -2, -1, 1, 2, 3, 4, 6, 8, 12, 24 }$$</p>
-<p>un</p>
-<p>$$\\begin{array}{l}
-n+4 \\in { \\ldots, -26, -20, -13, -10, -5, -4, -2, -1 } \\cup \\
-\\cup {1, 2, 4, 5, 10, 13, 20, 26, \\ldots } \\
-\\end{array}$$</p>
-<p>No šejienes $(n+4) \\in { -5, -2, -1, 2, 4, 5, 13 }$ jeb
-$n \\in { -9, -6, -5, -2, 0, 1, 9 }$.</p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2014.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-Šķirojam atkarībā no tā, cik $13$ centu pastmarkas lietotas
-
-* $0\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $0$
-* $1\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $6$
-* $2\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $5$
-* $3\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $4$
-* $4\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $3$
-* $5\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $2$
-* $6\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $1$
-
-**Secinājums:** Lai nomaksātu $8, 15, 22, 29, 36, 43, 50, 57, 64, 71, 78, \\ldots$ centus, vajag
-vismaz sešas $13$ centu markas. Mazākā šāda summa ir $6\\cdot{}13 = 78$.  
-Tātad summu $71$, kas šajā virknē ir
-tieši pirms $78$ (un arī dod atlikumu $1$, dalot ar $7$), nevarēs nomaksāt, jo, lietojot mazāk par sešām
-$13$-centu markām, nevar iegūt atlikumu $1$, dalot ar $7$."""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Šķirojam atkarībā no tā, cik $13$ centu pastmarkas lietotas</p>
-<ul>
-<li>$0\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $0$</li>
-<li>$1\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $6$</li>
-<li>$2\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $5$</li>
-<li>$3\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $4$</li>
-<li>$4\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $3$</li>
-<li>$5\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $2$</li>
-<li>$6\\cdot{}13 + 7a$ - dalot ar $7$, atlikums ir $1$</li>
-</ul>
-<p><strong>Secinājums:</strong> Lai nomaksātu $8, 15, 22, 29, 36, 43, 50, 57, 64, 71, 78, \\ldots$ centus, vajag
-vismaz sešas $13$ centu markas. Mazākā šāda summa ir $6\\cdot{}13 = 78$.<br />
-Tātad summu $71$, kas šajā virknē ir
-tieši pirms $78$ (un arī dod atlikumu $1$, dalot ar $7$), nevarēs nomaksāt, jo, lietojot mazāk par sešām
-$13$-centu markām, nevar iegūt atlikumu $1$, dalot ar $7$.</p>"""@lv .
-
-eliozo:SOLN.LV.VOL.2015.10.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
-    eliozo:solutionText """## Atrisinājums
-
-* Dalāmību ar $10$ pārbaudām, dalot ar $2$ un $5$
-* $3n^5 + 5n^4 - 8n$ vienmēr ir pāru skaitlis (aplūko, ja $n$ ir pāru/nepāru)
-* $3n^5 + 5n^4 - 8n$, dalot ar $5$ dod to pašu atlikumu, ko $3n^5 - 3n$
-
-    - Ja $n$ dalās ar $5$, tad $3n(n^4-1)$ dalās ar $n$ (tātad arī ar $5$).
-    - Visiem citiem $n$ atlikumiem, dalot ar $5$ (atlikumi $1,2,3,4$) iegūstam: $n^4 - 1$ dalās ar $5$
-
-Jāievieto skaitļi $n=1,2,3,4$ izteiksmē $n^4-1$: vienmēr dalīsies ar $5$.  
-Lielākiem skaitļiem ($n=6,7,8,9$) šie atlikumi sāks atkārtoties."""@lv ;
-    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<ul>
-<li>Dalāmību ar $10$ pārbaudām, dalot ar $2$ un $5$</li>
-<li>$3n^5 + 5n^4 - 8n$ vienmēr ir pāru skaitlis (aplūko, ja $n$ ir pāru/nepāru)</li>
-<li>
-<p>$3n^5 + 5n^4 - 8n$, dalot ar $5$ dod to pašu atlikumu, ko $3n^5 - 3n$</p>
-<ul>
-<li>Ja $n$ dalās ar $5$, tad $3n(n^4-1)$ dalās ar $n$ (tātad arī ar $5$).</li>
-<li>Visiem citiem $n$ atlikumiem, dalot ar $5$ (atlikumi $1,2,3,4$) iegūstam: $n^4 - 1$ dalās ar $5$</li>
-</ul>
-</li>
-</ul>
-<p>Jāievieto skaitļi $n=1,2,3,4$ izteiksmē $n^4-1$: vienmēr dalīsies ar $5$.<br />
-Lielākiem skaitļiem ($n=6,7,8,9$) šie atlikumi sāks atkārtoties.</p>"""@lv .
+Tātad $x=11$ ir lielākā $x$ vērtība. Var būt arī vērtība $x=1$.</p>"""@lv .
 

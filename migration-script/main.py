@@ -60,10 +60,8 @@ if __name__ == '__main__':
     results = readCSVfile()
 
     # Testēšanai tikai viens pārītis:
-    # results = [('https://github.com/kapsitis/math/tree/master/src/site/problembase/ee-pktest', 'content.md', 'EE-PKTEST')]
-
-    # results = [('https://github.com/kapsitis/math/tree/master/src/site/problembase/lt-tst', 'content', 'LT-TST')]
-    # results = [('https://github.com/kapsitis/math/tree/master/src/site/problembase/lv-amo-2022b', 'content', 'LV-AMO-2022B')]
+    # results = [('https://github.com/kapsitis/math/tree/master/src/site/problembase/imo-shl-2022', 'content', 'IMO-SHL-2022')]
+    # results = [('https://github.com/maramanaa/nms-uzdevumi/tree/main/lv-amo-2011', 'content', 'LV-AMO-2011')]
 
     for result in results:
         # print("****{}, {}, {}".format(result[0], result[1], result[2]))

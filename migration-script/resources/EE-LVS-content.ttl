@@ -8,7 +8,7 @@ eliozo:EE.LVS.2009.11_12.1 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "EE.LVS.2009.11_12.1" ;
-    eliozo:problemSolution eliozo:SOLN.EE.LVS.2009.11_12.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.LVS.2009.11_12.1.SUB1 ;
     eliozo:problemText """Vai eksistē pirmskaitlis $p$, kuram
 $p^3 + 2008$ un $p^3 + 2010$ arī
 ir pirmskaitļi?"""@lv ;
@@ -31,7 +31,7 @@ eliozo:EE.LVS.2009.9_10.1 a eliozo:Problem ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "EE.LVS.2009.9_10.1" ;
-    eliozo:problemSolution eliozo:SOLN.EE.LVS.2009.9_10.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.EE.LVS.2009.9_10.1.SUB1 ;
     eliozo:problemText """Atrast visus naturālos skaitļus $n$, kuriem 
 $1 + 2^2 + 3^3 + 4^n$
 ir vesela skaitļa kvadrāts."""@lv ;
@@ -66,7 +66,10 @@ vai divu veselu skaitļu kubu summu.
 <!--
 questionType=Prove
 concepts=power-sums
--->"""@lv ;
+-->"""@lv,
+        """Доказать, что ни одно натуральное число, среди цифр которого 
+встречаются по одному разу $2$ и $1$, а остальные все цифры нули, 
+нельзя представить в виду суммы квадратов или суммы кубов двух целых чисел."""@ru ;
     eliozo:problemTextHtml """<p>Pierādīt, ka nevienu naturālu skaitli, starp kura cipariem pa 
 vienai reizei atrodami cipari $2$ un $1$, bet visi pārējie cipari ir
 nulles, nevar izteikt kā divu veselu skaitļu kvadrātu summu 
@@ -74,7 +77,10 @@ vai divu veselu skaitļu kubu summu. </p>
 <!--
 questionType=Prove
 concepts=power-sums
--->"""@lv ;
+-->"""@lv,
+        """<p>Доказать, что ни одно натуральное число, среди цифр которого 
+встречаются по одному разу $2$ и $1$, а остальные все цифры нули, 
+нельзя представить в виду суммы квадратов или суммы кубов двух целых чисел.</p>"""@ru ;
     eliozo:problemTimeID "2010" ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 1 ;
@@ -99,7 +105,11 @@ b) Kāda ir mazākā iespējamā $P(2011)$ pozitīvā vērtība?
 <!--
 questionType=ProveDisprove,FindOptimal
 concepts=integer-polynomial
--->"""@lv ;
+-->"""@lv,
+        """Пусть $P(x)$ –– многочлен с целочисленными коэффициентами, 
+удовлетворяющий условию $P(2010) = P(201) = 2010$.  
+а) Возможно ли, что $P(2011) = 2011$?  
+б) Каково наименьшее возможное положительное значение $P(2011)$?"""@ru ;
     eliozo:problemTextHtml """<p>Ar $P(x)$ apzīmēts polinoms ar veseliem koeficientiem, 
 kas apmierina nosacījumu $P(2010) = P(201) = 2010$.<br />
 a) Vai ir iespējams, ka $P(2011) = 2011$?<br />
@@ -107,7 +117,11 @@ b) Kāda ir mazākā iespējamā $P(2011)$ pozitīvā vērtība?</p>
 <!--
 questionType=ProveDisprove,FindOptimal
 concepts=integer-polynomial
--->"""@lv ;
+-->"""@lv,
+        """<p>Пусть $P(x)$ –– многочлен с целочисленными коэффициентами, 
+удовлетворяющий условию $P(2010) = P(201) = 2010$.<br />
+а) Возможно ли, что $P(2011) = 2011$?<br />
+б) Каково наименьшее возможное положительное значение $P(2011)$?</p>"""@ru ;
     eliozo:problemTimeID "2010" ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 2 ;
@@ -131,14 +145,22 @@ pakāpe ar veselu kāpinātāju.
 <!--
 questionType=FindAll
 concepts=divisors
--->"""@lv ;
+-->"""@lv,
+        """Найти все положительные целые числа $n$, 
+произведение всех положительных делителей которых не 
+является степенью числа $n$ с целочисленным
+показателем."""@ru ;
     eliozo:problemTextHtml """<p>Atrast visus naturālos skaitļus $n$, kuriem 
 visu viņu pozitīvo dalītāju reizinājums nav skaitļa $n$
 pakāpe ar veselu kāpinātāju. </p>
 <!--
 questionType=FindAll
 concepts=divisors
--->"""@lv ;
+-->"""@lv,
+        """<p>Найти все положительные целые числа $n$, 
+произведение всех положительных делителей которых не 
+является степенью числа $n$ с целочисленным
+показателем.</p>"""@ru ;
     eliozo:problemTimeID "2010" ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 1 ;
@@ -162,14 +184,20 @@ $n! + (n + 1)! = k! + 120$.
 <!--
 questionType=FindAll
 concepts=factorial
--->"""@lv ;
+-->"""@lv,
+        """Найти все пары положительных целых чисел $(n, k)$, при которых
+$n! + (n + 1)! = k! + 120$.  
+Замечание. Запись $x!$ обозначает произведение $1 \\cdot 2 \\cdot \\ldots \\cdot x$."""@ru ;
     eliozo:problemTextHtml """<p>Atrast visus naturālu skaitļu pārus $(n,k)$, kuriem
 $n! + (n + 1)! = k! + 120$.<br />
 <em>Piezīme. Pieraksts $x!$ apzīmē reizinājumu $1 \\cdot 2 \\cdot \\ldots \\cdot x$.</em></p>
 <!--
 questionType=FindAll
 concepts=factorial
--->"""@lv ;
+-->"""@lv,
+        """<p>Найти все пары положительных целых чисел $(n, k)$, при которых
+$n! + (n + 1)! = k! + 120$.<br />
+Замечание. Запись $x!$ обозначает произведение $1 \\cdot 2 \\cdot \\ldots \\cdot x$.</p>"""@ru ;
     eliozo:problemTimeID "2010" ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number 5 ;
@@ -195,7 +223,7 @@ nav vesels skaitlis."""@lv ;
 $a_n$ lielāko skaitļa $2$ pakāpi, ar ko dalās skaitlis $n$
 (piemēram, $a_{2011} = 1$,
 $a_{2012} = 4$). Pierādīt, ka patvaļīgiem naturāliem skaitļiem
-$i$ un $j$, kur $i &lt; j$, summa
+$i$ un $j$, kur $i < j$, summa
 $$\\frac{1}{a_i} + \\frac{1}{a_{i+1}} + \\ldots + \\frac{1}{a_j}$$
 nav vesels skaitlis.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
@@ -222,14 +250,20 @@ sākotnējā skaitļa dalītājs.
 <!--
 questionType=FindAll
 genre=digit-manipulation
--->"""@lv ;
+-->"""@lv,
+        """Найти все четырёхзначные числа, при стирании любой 
+цифры которых получается трёхзначное число, 
+являющееся делителем изначального числа."""@ru ;
     eliozo:problemTextHtml """<p>Atrast visus četrciparu skaitļus, kam, nodzēšot
 jebkuru ciparu, rodas trīsciparu skaitlis, kurš ir 
 sākotnējā skaitļa dalītājs. </p>
 <!--
 questionType=FindAll
 genre=digit-manipulation
--->"""@lv ;
+-->"""@lv,
+        """<p>Найти все четырёхзначные числа, при стирании любой 
+цифры которых получается трёхзначное число, 
+являющееся делителем изначального числа.</p>"""@ru ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
@@ -252,13 +286,17 @@ par savu ciparu summu.
 <!--
 questionType=FindAll
 concepts=sum-of-digits
--->"""@lv ;
+-->"""@lv,
+        """Найти все положительные целые числа, которые ровно в $2013$ раз больше
+суммы своих цифр."""@ru ;
     eliozo:problemTextHtml """<p>Atrast visus naturālos skaitļus, kuri ir tieši $2013$ reizes lielāki 
 par savu ciparu summu. </p>
 <!--
 questionType=FindAll
 concepts=sum-of-digits
--->"""@lv ;
+-->"""@lv,
+        """<p>Найти все положительные целые числа, которые ровно в $2013$ раз больше
+суммы своих цифр.</p>"""@ru ;
     eliozo:problemTimeID "2012" ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
@@ -282,14 +320,22 @@ $n^3 = m^2 + m + 1$.
 <!--
 questionType=FindAll
 concepts=remainder
--->"""@lv ;
+-->"""@lv,
+        """Найти все остатки, которые при делении на число $6$ может 
+дать целое число $n$, которое для некоторого 
+целого числа $m$ удовлетворяет равенству
+$n^3 = m^2 + m + 1$."""@ru ;
     eliozo:problemTextHtml """<p>Atrast visus atlikumus, kurus, dalot ar $6$, dod vesels
 skaitlis $n$, kurš kādam veselam $m$ apmierina vienādību 
 $n^3 = m^2 + m + 1$.</p>
 <!--
 questionType=FindAll
 concepts=remainder
--->"""@lv ;
+-->"""@lv,
+        """<p>Найти все остатки, которые при делении на число $6$ может 
+дать целое число $n$, которое для некоторого 
+целого числа $m$ удовлетворяет равенству
+$n^3 = m^2 + m + 1$.</p>"""@ru ;
     eliozo:problemTimeID "2012" ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 2 ;
@@ -321,7 +367,7 @@ questionType=Prove
 concepts=factorial
 genre=proving-inequality
 -->"""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka $(2n)! &lt; n^{2n}$
+    eliozo:problemTextHtml """<p>Pierādīt, ka $(2n)! < n^{2n}$
 katram veselam skaitlim $n \\geq 3$.
 <em>Piezīme. Par naturāla skaitļa $x$ faktoriālu $x!$ 
 sauc reizinājumu $1\\cdot{}2\\cdot\\ldots\\cdot{}x$.</em></p>
@@ -359,13 +405,19 @@ kuri dalās ar katru savu ciparu, kas nav nulle.
 
 <!--
 questionType=FindCount
--->"""@lv ;
+-->"""@lv,
+        """Сколько всего таких шестизначных натуральных чисел, в записи которых
+присутствуют цифры 0, 1, 2, 3, 4 и 5 каждая по одному разу, и которые
+делятся на каждую свою цифру, отличную от нуля?"""@ru ;
     eliozo:problemTextHtml """<p>Cik ir tādu sešciparu naturālu skaitļu, kuru pierakstā ir 
 cipari $0$, $1$, $2$, $3$, $4$ un $5$ katrs vienu reizi un 
 kuri dalās ar katru savu ciparu, kas nav nulle.</p>
 <!--
 questionType=FindCount
--->"""@lv ;
+-->"""@lv,
+        """<p>Сколько всего таких шестизначных натуральных чисел, в записи которых
+присутствуют цифры 0, 1, 2, 3, 4 и 5 каждая по одному разу, и которые
+делятся на каждую свою цифру, отличную от нуля?</p>"""@ru ;
     eliozo:problemTimeID "2012" ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 1 ;
@@ -392,7 +444,11 @@ skaitļus, kuriem ir kopīgs dalītājs, kas lielāks par $1$.
 <!--
 questionType=Prove
 concepts=coprimes
--->"""@lv ;
+-->"""@lv,
+        """Отличные от нуля целые числа $a$, $b$ и $c$ удовлетворяют условию
+$\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}=0$.
+Доказать, что среди чисел $a$, $b$, $c$ можно найти два таких числа, 
+у которых найдётся общий делитель, который больше числа $1$."""@ru ;
     eliozo:problemTextHtml """<p>No nulles atšķirīgi veseli skaitļi $a$, $b$ un $c$ apmierina nosacījumu
 $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}=0$.
 Pierādīt, ka starp skaitļiem $a$, $b$, $c$ var atrast divus tādus
@@ -400,7 +456,11 @@ skaitļus, kuriem ir kopīgs dalītājs, kas lielāks par $1$.</p>
 <!--
 questionType=Prove
 concepts=coprimes
--->"""@lv ;
+-->"""@lv,
+        """<p>Отличные от нуля целые числа $a$, $b$ и $c$ удовлетворяют условию
+$\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}=0$.
+Доказать, что среди чисел $a$, $b$, $c$ можно найти два таких числа, 
+у которых найдётся общий делитель, который больше числа $1$.</p>"""@ru ;
     eliozo:problemTimeID "2012" ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 2 ;
@@ -426,7 +486,12 @@ var atrisināt šo uzdevumu?
 <!--
 questionType=ProveDisprove
 concepts=quadratic-equation
--->"""@lv ;
+-->"""@lv,
+        """Учитель сказал Юре два отличных от нуля целых числа $a$ и $b$, причём
+$b$ делится на $a$. Юра должен найти такое отличное от нуля целое число
+$c$, что $c$ делилось бы на $b$, и чтобы все решения квадратного уравнения
+$ax^2+bx+c=0$ являлись целыми числами. Всегда ли у Юры есть 
+возможность верно решить это задание?"""@ru ;
     eliozo:problemTextHtml """<p>Skolotājs pateica Jüri divus veselus skaitļus $a$ un $b$, kas nav nulles, 
 turklāt $b$ dalās ar $a$. Jüri ir jāatrod tādu nenulles veselu 
 skaitli $c$, ka $c$ dalās ar $b$, un visi kvadrātvienādojuma
@@ -435,7 +500,12 @@ var atrisināt šo uzdevumu?</p>
 <!--
 questionType=ProveDisprove
 concepts=quadratic-equation
--->"""@lv ;
+-->"""@lv,
+        """<p>Учитель сказал Юре два отличных от нуля целых числа $a$ и $b$, причём
+$b$ делится на $a$. Юра должен найти такое отличное от нуля целое число
+$c$, что $c$ делилось бы на $b$, и чтобы все решения квадратного уравнения
+$ax^2+bx+c=0$ являлись целыми числами. Всегда ли у Юры есть 
+возможность верно решить это задание?</p>"""@ru ;
     eliozo:problemTimeID "2012" ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number 3 ;
@@ -461,15 +531,23 @@ kurš nepārsniedz $x$.
 <!--
 questionType=FindAll
 concepts=square-root
--->"""@lv ;
+-->"""@lv,
+        """Найти целую часть числа 
+$$A = \\sqrt{2013 + \\sqrt{2012 + \\sqrt{2011 + \\ldots \\sqrt{2 +\\sqrt{1}}}}}.$$
+Замечание: целой частью числа называется наибольшее 
+целое число, которое не превышает данное число."""@ru ;
     eliozo:problemTextHtml """<p>Atrast veselo daļu skaitlim 
 $$A = \\sqrt{2013 + \\sqrt{2012 + \\sqrt{2011 + \\ldots \\sqrt{2 +\\sqrt{1}}}}}.$$
-<em>Piezīme:</em> Par skaitļa $x$ veselo daļu sauc lielāko veselo skaitli, 
+*Piezīme:* Par skaitļa $x$ veselo daļu sauc lielāko veselo skaitli, 
 kurš nepārsniedz $x$.</p>
 <!--
 questionType=FindAll
 concepts=square-root
--->"""@lv ;
+-->"""@lv,
+        """<p>Найти целую часть числа 
+$$A = \\sqrt{2013 + \\sqrt{2012 + \\sqrt{2011 + \\ldots \\sqrt{2 +\\sqrt{1}}}}}.$$
+Замечание: целой частью числа называется наибольшее 
+целое число, которое не превышает данное число.</p>"""@ru ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
@@ -494,14 +572,20 @@ $$p(p + 1) + q(q + 1) = n(n + 1).$$
 <!--
 questionType=FindAll
 concepts=primes
--->"""@lv ;
+-->"""@lv,
+        """Найти все натуральные числа $n$, при которых найдутся такие простые
+числа $p$ и $q$, что
+$$p(p + 1) + q(q + 1) = n(n + 1).$$"""@ru ;
     eliozo:problemTextHtml """<p>Atrast visus naturālos skaitļus $n$, kuriem atradīsies tādi 
 pirmskaitļi $p$ un $q$, ka 
 $$p(p + 1) + q(q + 1) = n(n + 1).$$</p>
 <!--
 questionType=FindAll
 concepts=primes
--->"""@lv ;
+-->"""@lv,
+        """<p>Найти все натуральные числа $n$, при которых найдутся такие простые
+числа $p$ и $q$, что
+$$p(p + 1) + q(q + 1) = n(n + 1).$$</p>"""@ru ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
@@ -526,7 +610,13 @@ Atrast mazāko skaitļa $x$ vērtību.
 
 <!--
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """Витя желает выбрать среди натуральных чисел 
+$1, 2, 3, \\ldots, 100$ всего $x$ чисел так, 
+чтобы ровно четыре из них делились на число $4$, 
+ровно четыре из них делились на число $5$ и ровно 
+три из них делились на число $6$. Найти
+наименьшее возможное значение числа $x$."""@ru ;
     eliozo:problemTextHtml """<p>Volli grib no naturāliem skaitļiem
 $1, 2, 3, \\ldots, 100$ izvēlēties $x$ skaitļus tā, 
 lai tieši četri no tiem dalītos ar $4$, tieši 
@@ -534,7 +624,13 @@ lai tieši četri no tiem dalītos ar $4$, tieši
 Atrast mazāko skaitļa $x$ vērtību. </p>
 <!--
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """<p>Витя желает выбрать среди натуральных чисел 
+$1, 2, 3, \\ldots, 100$ всего $x$ чисел так, 
+чтобы ровно четыре из них делились на число $4$, 
+ровно четыре из них делились на число $5$ и ровно 
+три из них делились на число $6$. Найти
+наименьшее возможное значение числа $x$.</p>"""@ru ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
@@ -561,7 +657,11 @@ lai darbība izrādītos pareiza.
 <!--
 questionType=FindAll
 genre=cryptarithm
--->"""@lv ;
+-->"""@lv,
+        """Одинаковым буквам соответствуют одинаковые цифры, 
+а различным буквам − различные цифры. 
+Найти все возможные способы замены букв цифрами так, 
+чтобы данное действие было верным."""@ru ;
     eliozo:problemTextHtml """<p>Vienādiem burtiem atbilst vienādi cipari, 
 bet dažādiem burtiem - dažādi cipari. 
 Atrast visus veidus, kā aizstāt burtus ar cipariem tā, 
@@ -570,7 +670,11 @@ lai darbība izrādītos pareiza.</p>
 <!--
 questionType=FindAll
 genre=cryptarithm
--->"""@lv ;
+-->"""@lv,
+        """<p>Одинаковым буквам соответствуют одинаковые цифры, 
+а различным буквам − различные цифры. 
+Найти все возможные способы замены букв цифрами так, 
+чтобы данное действие было верным.</p>"""@ru ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
@@ -596,7 +700,12 @@ Pierādīt, ka arī $a-b$ dalās ar $c$.
 <!--
 questionType=FindAll
 concepts=gcd
--->"""@lv ;
+-->"""@lv,
+        """Даны положительные целые числа $a, b, c$, 
+наибольший общий делитель которых равен 1. 
+Известно, что числа $a+2b$ и $a^2 − b^2$
+делятся на число $c$.
+Доказать, что на число $c$ делится также число $a − b$."""@ru ;
     eliozo:problemTextHtml """<p>Doti naturāli skaitļi $a, b, c$, 
 to lielākais kopīgais dalītājs ir $1$. 
 Zināms, ka skaitļi $a+2b$ un $a^2 − b^2$
@@ -605,7 +714,12 @@ Pierādīt, ka arī $a-b$ dalās ar $c$.</p>
 <!--
 questionType=FindAll
 concepts=gcd
--->"""@lv ;
+-->"""@lv,
+        """<p>Даны положительные целые числа $a, b, c$, 
+наибольший общий делитель которых равен 1. 
+Известно, что числа $a+2b$ и $a^2 − b^2$
+делятся на число $c$.
+Доказать, что на число $c$ делится также число $a − b$.</p>"""@ru ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
@@ -632,7 +746,10 @@ ir atrisinājums naturālos skaitļos.
 <!--
 questionType=FindAll
 genre=integer-equation
--->"""@lv ;
+-->"""@lv,
+        """Найти все такие положительные целые числа $n$, 
+при которых уравнение
+$(x^2+y^2)^n = (xy)^{2014}$ имеет решение в положительных целых числах."""@ru ;
     eliozo:problemTextHtml """<p>Atrast visus tos naturālos skaitļus $n$, kuriem 
 vienādojumam 
 $(x^2+y^2)^n = (xy)^{2014}$ 
@@ -640,7 +757,10 @@ ir atrisinājums naturālos skaitļos.</p>
 <!--
 questionType=FindAll
 genre=integer-equation
--->"""@lv ;
+-->"""@lv,
+        """<p>Найти все такие положительные целые числа $n$, 
+при которых уравнение
+$(x^2+y^2)^n = (xy)^{2014}$ имеет решение в положительных целых числах.</p>"""@ru ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
@@ -666,7 +786,11 @@ un $n+6$.
 <!--
 questionType=FindOptimal
 genre=digit-manipulation
--->"""@lv ;
+-->"""@lv,
+        """Найти такое наименьшее натуральное число $n$, при котором каждая из
+цифр от $0$ до $9$ присутствовала бы в записи хотя бы одного 
+из шести последовательных чисел $n+1$, $n+2$, $n+3$, $n+4$, $n+5$ 
+и $n+6$."""@ru ;
     eliozo:problemTextHtml """<p>Atrast tādu vismazāko naturālo $n$, kuram katrs no cipariem 
 no $0$ līdz $9$ būtu decimālpierakstā kaut vienam no 
 sešiem pēc kārtas sekojošiem skaitļiem
@@ -675,7 +799,11 @@ un $n+6$.</p>
 <!--
 questionType=FindOptimal
 genre=digit-manipulation
--->"""@lv ;
+-->"""@lv,
+        """<p>Найти такое наименьшее натуральное число $n$, при котором каждая из
+цифр от $0$ до $9$ присутствовала бы в записи хотя бы одного 
+из шести последовательных чисел $n+1$, $n+2$, $n+3$, $n+4$, $n+5$ 
+и $n+6$.</p>"""@ru ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
@@ -705,7 +833,17 @@ b) skaitlis $9876543210$?
 <!--
 questionType=ProveDisprove
 genre=digit-manipulation
--->"""@lv ;
+-->"""@lv,
+        """Сначала на листок бумаги записывают число 1. 
+Каждым шагом под последним записанным числом записывают 
+либо число, которое ровно в два
+раза больше этого числа, либо число, полученное 
+перестановкой цифр записанного последним числа 
+(учитывая, что числа не могут начинаться с
+цифры 0). Возможно ли после конечного числа таких шагов записать на
+этом листке бумаги  
+а) число $1000000000$?  
+б) число $9876543210$?"""@ru ;
     eliozo:problemTextHtml """<p>Vispirms uz lapiņas uzraksta skaitli $1$. 
 Katrā solī zem pēdējā uzrakstītā skaitļa uzraksta 
 vai nu skaitli, kurš par to tieši divreiz lielāks, 
@@ -718,7 +856,17 @@ b) skaitlis $9876543210$?</p>
 <!--
 questionType=ProveDisprove
 genre=digit-manipulation
--->"""@lv ;
+-->"""@lv,
+        """<p>Сначала на листок бумаги записывают число 1. 
+Каждым шагом под последним записанным числом записывают 
+либо число, которое ровно в два
+раза больше этого числа, либо число, полученное 
+перестановкой цифр записанного последним числа 
+(учитывая, что числа не могут начинаться с
+цифры 0). Возможно ли после конечного числа таких шагов записать на
+этом листке бумаги<br />
+а) число $1000000000$?<br />
+б) число $9876543210$?</p>"""@ru ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
@@ -741,13 +889,17 @@ $3^{303} \\cdot 4^{404} \\cdot 5^{505}$?
 <!--
 questionType=FindAll
 genre=proving-inequality
--->"""@lv ;
+-->"""@lv,
+        """Какое из чисел больше, $2^{2014}$ или 
+$3^303 \\cdot 4^{404} \\cdot 5^{505}$?"""@ru ;
     eliozo:problemTextHtml """<p>Kurš no skaitļiem lielāks: $2^{2014}$ vai
 $3^{303} \\cdot 4^{404} \\cdot 5^{505}$?</p>
 <!--
 questionType=FindAll
 genre=proving-inequality
--->"""@lv ;
+-->"""@lv,
+        """<p>Какое из чисел больше, $2^{2014}$ или 
+$3^303 \\cdot 4^{404} \\cdot 5^{505}$?</p>"""@ru ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
@@ -770,13 +922,21 @@ b) Atrast lielāko skaitli, kurš ir četru dažādu divciparu skaitļu mazākai
 <!--
 concepts=lcm,gcd
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """а) Найти наибольшее число, являющееся наибольшим общим делителем
+каких-то четырёх различных двузначных чисел.  
+б) Найти наибольшее число, являющееся наименьшим общим кратным
+каких-то четырёх различных двузначных чисел."""@ru ;
     eliozo:problemTextHtml """<p>a) Atrast lielāko skaitli, kurš ir četru dažādu divciparu skaitļu lielākais kopīgais dalītājs.<br />
 b) Atrast lielāko skaitli, kurš ir četru dažādu divciparu skaitļu mazākais kopīgais dalāmais.</p>
 <!--
 concepts=lcm,gcd
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """<p>а) Найти наибольшее число, являющееся наибольшим общим делителем
+каких-то четырёх различных двузначных чисел.<br />
+б) Найти наибольшее число, являющееся наименьшим общим кратным
+каких-то четырёх различных двузначных чисел.</p>"""@ru ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
@@ -800,14 +960,20 @@ skaitli $n$ ar $210$.
 <!--
 concepts=primes,remainder
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """Дано натуральное число $n$ такое, что как $n+1$, $n+3$, $n+7$ и $n+9$, так и
+$n+31$, $n+33$, $n+37$ и $n+39$ − простые числа. Найти остаток от деления
+числа $n$ на $210$."""@ru ;
     eliozo:problemTextHtml """<p>Dots naturāls skaitlis $n$, kam gan $n+1$, $n+3$, $n+7$ un $n+9$, gan arī
 $n+31$, $n+33$, $n+37$ un $n+39$ - ir pirmskaitļi. Atrast atlikumu, dalot
 skaitli $n$ ar $210$.</p>
 <!--
 concepts=primes,remainder
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """<p>Дано натуральное число $n$ такое, что как $n+1$, $n+3$, $n+7$ и $n+9$, так и
+$n+31$, $n+33$, $n+37$ и $n+39$ − простые числа. Найти остаток от деления
+числа $n$ на $210$.</p>"""@ru ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 3 ;
@@ -831,14 +997,22 @@ Atrast šī skaitļa $2015$-to ciparu pēc komata.
 
 <!--
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """В числе
+$$0,123456789101112\\;\\ldots\\;998999$$
+после запятой идут подряд все положительные целые числа от $1$ до $999$.
+Найти $2015$-ую после запятой цифру этого числа."""@ru ;
     eliozo:problemTextHtml """<p>Skaitlī 
 $$0,123456789101112\\;\\ldots\\;998999$$
 pēc komata ir visi pozitīvie skaitļi no $1$ līdz $999$.
 Atrast šī skaitļa $2015$-to ciparu pēc komata.</p>
 <!--
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """<p>В числе
+$$0,123456789101112\\;\\ldots\\;998999$$
+после запятой идут подряд все положительные целые числа от $1$ до $999$.
+Найти $2015$-ую после запятой цифру этого числа.</p>"""@ru ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
@@ -863,7 +1037,12 @@ Atrast vismazāko interesanto skaitli.
 
 <!--
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """Назовём положительное целое число $n$ интересным, если существуют 
+положительное целое число $m$ и положительные целые числа $a$ и $b$ меньшие
+чем $m$, при которых $\\frac{m^2}{ab}=n$. Например, число $10$ интересное, так как
+$\\frac{20^2}{4\\cdot{}10}=10$.  
+Найти наименьшее интересное число."""@ru ;
     eliozo:problemTextHtml """<p>Nosauksim naturālu skaitli $n$ par interesantu, ja eksistē 
 naturāls skaitlis $m$ un naturāli skaitļi $a$ un $b$, kas
 mazāki par $m$, kuriem $\\frac{m^2}{ab}=n$. Piemēram, skaitlis $10$ ir interesants, 
@@ -871,7 +1050,12 @@ jo $\\frac{20^2}{4\\cdot{}10}=10$.<br />
 Atrast vismazāko interesanto skaitli.</p>
 <!--
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """<p>Назовём положительное целое число $n$ интересным, если существуют 
+положительное целое число $m$ и положительные целые числа $a$ и $b$ меньшие
+чем $m$, при которых $\\frac{m^2}{ab}=n$. Например, число $10$ интересное, так как
+$\\frac{20^2}{4\\cdot{}10}=10$.<br />
+Найти наименьшее интересное число.</p>"""@ru ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
@@ -900,7 +1084,14 @@ dalās, bet daži nedalās ar sākotnējo skaitli.
 <!--
 genre=digit-manipulation
 questionType=ProveDisprove
--->"""@lv ;
+-->"""@lv,
+        """Существует ли не оканчивающееся на нуль двузначное число n такое, что  
+а) все числа, получаемые при добавлении одного или нескольких нулей
+между его цифрами, делятся на него?  
+б) ни одно число, получаемое при добавлении одного или нескольких
+нулей между его цифрами, не делится на него?  
+в) какие-то из чисел, получаемых при добавлении одного или нескольких 
+нулей между его цифрами, делятся, а какие-то не делятся на него?"""@ru ;
     eliozo:problemTextHtml """<p>Katrā no trim gadījumiem, noskaidrot, vai 
 eksistē divciparu skaitlis $n$, kurš nebeidzas ar nulli un apmierina attiecīgo nosacījumu:<br />
 a) visi skaitļi, ko iegūst, ievietojot vienu vai dažas nulles starp tā cipariem, 
@@ -912,7 +1103,14 @@ dalās, bet daži nedalās ar sākotnējo skaitli.</p>
 <!--
 genre=digit-manipulation
 questionType=ProveDisprove
--->"""@lv ;
+-->"""@lv,
+        """<p>Существует ли не оканчивающееся на нуль двузначное число n такое, что<br />
+а) все числа, получаемые при добавлении одного или нескольких нулей
+между его цифрами, делятся на него?<br />
+б) ни одно число, получаемое при добавлении одного или нескольких
+нулей между его цифрами, не делится на него?<br />
+в) какие-то из чисел, получаемых при добавлении одного или нескольких 
+нулей между его цифрами, делятся, а какие-то не делятся на него?</p>"""@ru ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 3 ;
@@ -933,11 +1131,13 @@ eliozo:EE.LVS.2015.9_10.6 a eliozo:Problem ;
 
 <!--
 questionType=FindCount
--->"""@lv ;
+-->"""@lv,
+        "Сколько пятизначных делящихся на 8 чисел не имеют в своей записи цифры нуль?"@ru ;
     eliozo:problemTextHtml """<p>Cik ir piecciparu skaitļu, kas dalās ar $8$ un nesatur savā pierakstā ciparu nulle?</p>
 <!--
 questionType=FindCount
--->"""@lv ;
+-->"""@lv,
+        "<p>Сколько пятизначных делящихся на 8 чисел не имеют в своей записи цифры нуль?</p>"@ru ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 6 ;
@@ -966,9 +1166,16 @@ $a_5 = 5 \\cdot a_2$ utt.
 concepts=floor
 genre=prove-inequality
 questionType=Prove
--->"""@lv ;
+-->"""@lv,
+        """Зададим $a_1=1$ и $a_n = n \\cdot a_{\\lfloor{}n/2\\rfloor}$
+для каждого $n>1$. Доказать, что $a_n>n^2$
+для каждого $n \\geq 12$.
+*Примечание.* Целая часть $\\lfloor x \\rfloor$ числа $x$ − это наибольшее целое число, не
+превышающее числа $x$. Например, $\\lfloor 4,6 \\rfloor = 4$. Т.е. $a_2 = 2 \\cdot a_1$, 
+$a_3 = 3 \\cdot a_1$, $a_4 = 4 \\cdot a_2$, 
+$a_5 = 5 \\cdot a_2$ и т.д."""@ru ;
     eliozo:problemTextHtml """<p>Definējam virkni $a_1=1$ un $a_n = n \\cdot a_{\\lfloor{}n/2\\rfloor}$, 
-visiem $n&gt;1$. Pierādīt, ka $a_n&gt;n^2$ katram $n \\geq 12$.<br />
+visiem $n>1$. Pierādīt, ka $a_n>n^2$ katram $n \\geq 12$.<br />
 <em>Piezīme:</em> Skaitļa $x$ veselā daļa $\\lfloor x \\rfloor$ 
 ir lielākais veselais skaitlis, kas 
 nepārsniedz $x$. Piemēram, $\\lfloor 4,6 \\rfloor = 4$. Tātad $a_2 = 2 \\cdot a_1$, 
@@ -978,7 +1185,14 @@ $a_5 = 5 \\cdot a_2$ utt.</p>
 concepts=floor
 genre=prove-inequality
 questionType=Prove
--->"""@lv ;
+-->"""@lv,
+        """<p>Зададим $a_1=1$ и $a_n = n \\cdot a_{\\lfloor{}n/2\\rfloor}$
+для каждого $n>1$. Доказать, что $a_n>n^2$
+для каждого $n \\geq 12$.
+<em>Примечание.</em> Целая часть $\\lfloor x \\rfloor$ числа $x$ − это наибольшее целое число, не
+превышающее числа $x$. Например, $\\lfloor 4,6 \\rfloor = 4$. Т.е. $a_2 = 2 \\cdot a_1$, 
+$a_3 = 3 \\cdot a_1$, $a_4 = 4 \\cdot a_2$, 
+$a_5 = 5 \\cdot a_2$ и т.д.</p>"""@ru ;
     eliozo:problemTimeID "2016" ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 2 ;
@@ -1006,9 +1220,17 @@ viņai jāuzraksta uz tāfeles, lai uzvarētu?
 <!--
 genre=game
 questionType=Algorithm,FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """Катя и Петя играют в следующую игру. Вначале Катя записывает на доске
+какое-то целое положительное число $a > 2016$. Затем Петя дописывает
+на доску числа, на каждом шаге добавляя туда число $2016b + 1$, где $b$
+− наибольшее на данный момент число на доске. Петя выиграет, если на
+каком-то шаге запишет на доске число, делящееся на $2017$. Если он это
+сделать не может, то выигрывает Катя. Может ли Катя выиграть игру и
+если да, то каково наименьшее число $a$, которое она должна записать на
+доске, чтобы выиграть?"""@ru ;
     eliozo:problemTextHtml """<p>Kati un Peeter spēlē sekojošu spēli. Vispirms Kati uzraksta uz tāfeles
-kādu naturālu skaitli $a &gt; 2016$. Pēc tam Peeter pieraksta jaunus skaitļus: 
+kādu naturālu skaitli $a > 2016$. Pēc tam Peeter pieraksta jaunus skaitļus: 
 katrā solī viņš pievieno skaitli $2016b + 1$, kur $b$
 − lielākais skaitlis, kas tobrīd ir uz tāfeles. Peeter uzvar, 
 ja viņš kādā solī uzraksta uz tāfeles skaitli, kas dalās ar $2017$. Ja viņš to nevar izdarīt, 
@@ -1017,7 +1239,15 @@ viņai jāuzraksta uz tāfeles, lai uzvarētu? </p>
 <!--
 genre=game
 questionType=Algorithm,FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """<p>Катя и Петя играют в следующую игру. Вначале Катя записывает на доске
+какое-то целое положительное число $a > 2016$. Затем Петя дописывает
+на доску числа, на каждом шаге добавляя туда число $2016b + 1$, где $b$
+− наибольшее на данный момент число на доске. Петя выиграет, если на
+каком-то шаге запишет на доске число, делящееся на $2017$. Если он это
+сделать не может, то выигрывает Катя. Может ли Катя выиграть игру и
+если да, то каково наименьшее число $a$, которое она должна записать на
+доске, чтобы выиграть?</p>"""@ru ;
     eliozo:problemTimeID "2016" ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
@@ -1043,7 +1273,12 @@ un arī skaitļu summas visās tabulas kolonnās ir vienādas.
 genre=magic-configuration
 concepts=divisors
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """Найти все целые положительные числа $n$, при которых все 
+положительные делители числа $n$ можно без повторений расположить 
+в прямоугольную таблицу так, что в каждой ячейке находится ровно один делитель,
+сумма чисел в каждой строке одинакова, а также сумма чисел в каждом
+столбце одинакова."""@ru ;
     eliozo:problemTextHtml """<p>Atrast visus naturālos skaitļus $n$, kuriem visus $n$ pozitīvos dalītājus
 var bez atkārtošanās izrakstīt taisnstūrveida tabulā tā, lai katrā tabulas 
 šūnā būtu tieši viens dalītājs, skaitļu summas visās tabulas rindiņās ir vienādas, 
@@ -1052,7 +1287,12 @@ un arī skaitļu summas visās tabulas kolonnās ir vienādas. </p>
 genre=magic-configuration
 concepts=divisors
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """<p>Найти все целые положительные числа $n$, при которых все 
+положительные делители числа $n$ можно без повторений расположить 
+в прямоугольную таблицу так, что в каждой ячейке находится ровно один делитель,
+сумма чисел в каждой строке одинакова, а также сумма чисел в каждом
+столбце одинакова.</p>"""@ru ;
     eliozo:problemTimeID "2016" ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 6 ;
@@ -1075,13 +1315,19 @@ skaits no šīm daļām var būt veseli skaitļi?
 
 <!--
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """На доске записано $11$ дробей, числителями и знаменателями которых 
+являются все целые числа от $1$ до $22$. Каково наибольшее возможное 
+количество дробей, значения которых являются целыми числами?"""@ru ;
     eliozo:problemTextHtml """<p>Uz tāfeles uzrakstītas $11$ daļas, kuru skaitītāji un saucēji ir
 visi naturālie skaitļi no $1$ līdz $22$. Kāds lielākais iespējamais
 skaits no šīm daļām var būt veseli skaitļi? </p>
 <!--
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """<p>На доске записано $11$ дробей, числителями и знаменателями которых 
+являются все целые числа от $1$ до $22$. Каково наибольшее возможное 
+количество дробей, значения которых являются целыми числами?</p>"""@ru ;
     eliozo:problemTimeID "2016" ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 2 ;
@@ -1110,7 +1356,13 @@ pirmskaitļiem, ja to lielākais kopīgais dalītājs $\\mbox{LKD}(a, b) = 1$.
 <!--
 concepts=coprimes
 questionType=ProveDisprove
--->"""@lv ;
+-->"""@lv,
+        """Юра выдвинул на математическом кружке следующую гипотезу: всегда,
+когда произведение двух взаимно простых целых чисел $x$ и $y$ делится на
+произведение двух взаимно простых целых чисел $a$ и $b$, то хотя бы одно
+из чисел $x$ и $y$ делится на $a$ или на $b$. Выполняется ли гипотеза Юры?
+Примечание. Говорят, что целые числа $a$ и $b$ взаимно просты, если
+$\\mbox{НОД}(a, b) = 1$."""@ru ;
     eliozo:problemTextHtml """<p>Juku izvirzīja matemātiskā pulciņā šādu hipotēzi: Vienmēr, 
 ja divu savstarpēju pirmskaitļu $x$ un $y$ reizinājums 
 dalās ar citu divu savstarpēju pirmskaitļu $a$ un $b$ reizinājumu, 
@@ -1121,7 +1373,13 @@ pirmskaitļiem, ja to lielākais kopīgais dalītājs $\\mbox{LKD}(a, b) = 1$.</
 <!--
 concepts=coprimes
 questionType=ProveDisprove
--->"""@lv ;
+-->"""@lv,
+        """<p>Юра выдвинул на математическом кружке следующую гипотезу: всегда,
+когда произведение двух взаимно простых целых чисел $x$ и $y$ делится на
+произведение двух взаимно простых целых чисел $a$ и $b$, то хотя бы одно
+из чисел $x$ и $y$ делится на $a$ или на $b$. Выполняется ли гипотеза Юры?
+Примечание. Говорят, что целые числа $a$ и $b$ взаимно просты, если
+$\\mbox{НОД}(a, b) = 1$.</p>"""@ru ;
     eliozo:problemTimeID "2016" ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 3 ;
@@ -1146,7 +1404,11 @@ skaitļu reizinājums būtu viens un tas pats?
 <!--
 genre=magic-configuration
 questionType=ProveDisprove
--->"""@lv ;
+-->"""@lv,
+        """Найдётся ли такое положительное целое число $n$, у которого ровно 
+$9$ положительных делителей, а все его делители можно расположить 
+в таблице $3\\times{}3$ таким образом, что произведение чисел каждой строки, каждого
+столбца и обеих диагоналей будет одинаковым?"""@ru ;
     eliozo:problemTextHtml """<p>Vai eksistē tāds naturāls skaitlis $n$, kuram ir tieši $9$ pozitīvi 
 dalītāji, bet visus tā dalītājus var novietot tabulā 
 $3\\times{}3$ tā, lai katrā rindiņā, katrā kolonnā un abās diagonālēs 
@@ -1154,7 +1416,11 @@ skaitļu reizinājums būtu viens un tas pats?</p>
 <!--
 genre=magic-configuration
 questionType=ProveDisprove
--->"""@lv ;
+-->"""@lv,
+        """<p>Найдётся ли такое положительное целое число $n$, у которого ровно 
+$9$ положительных делителей, а все его делители можно расположить 
+в таблице $3\\times{}3$ таким образом, что произведение чисел каждой строки, каждого
+столбца и обеих диагоналей будет одинаковым?</p>"""@ru ;
     eliozo:problemTimeID "2016" ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number 6 ;
@@ -1178,14 +1444,20 @@ dalītos ar vairāk dažādiem pirmskaitļiem.
 <!--
 concepts=divisors,primes
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """Найти наибольшее целое положительное число меньше чем 500, 
+для которого не найдётся ни одного целого положительного числа меньше чем
+$500$, имеющего больше различных простых делителей."""@ru ;
     eliozo:problemTextHtml """<p>Atrast lielāko naturālo skaitli, kas nepārsniedz $500$ un kuram 
 nevar atrast citu naturālu skaitli, kas ir mazāks par $500$ un kurš
 dalītos ar vairāk dažādiem pirmskaitļiem.</p>
 <!--
 concepts=divisors,primes
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """<p>Найти наибольшее целое положительное число меньше чем 500, 
+для которого не найдётся ни одного целого положительного числа меньше чем
+$500$, имеющего больше различных простых делителей.</p>"""@ru ;
     eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 2 ;
@@ -1210,7 +1482,14 @@ bezgalīgi daudzus pozitīvus racionālus skaitļus $v$, kam $x$ ir $u$ un $v$ m
 <!--
 concepts=mediant-of-fractions
 questionType=Prove
--->"""@lv ;
+-->"""@lv,
+        """Медианта рациональных чисел $u$ и $v$ − это число $x = \\frac{a + c}{b + d}$, где
+$\\frac{a}{b}$ и
+$\\frac{c}{d}$
+являются соответственно представлениями чисел $u$ и $v$ в виде несократимых дробей.
+Доказать, что для любых различных положительных рациональных чисел
+$u$ и $x$ можно найти бесконечно много положительных рациональных чисел 
+$v$ таких, что $x$ будет медиантой $u$ и $v$."""@ru ;
     eliozo:problemTextHtml """<p>Par racionālu skaitļu $u$ un $v$ mediānu sauc skaitli $x = \\frac{a + c}{b + d}$, kur
 $\\frac{a}{b}$ un $\\frac{c}{d}$ Ir attiecīgi skaitļu $u$ un $v$ izteiksmes nesaīsināmu daļu veidā. 
 Pierādīt, ka jebkuriem dažādiem pozitīviem racionāliem skaitļiem $u$ un $x$ var atrast
@@ -1218,7 +1497,14 @@ bezgalīgi daudzus pozitīvus racionālus skaitļus $v$, kam $x$ ir $u$ un $v$ m
 <!--
 concepts=mediant-of-fractions
 questionType=Prove
--->"""@lv ;
+-->"""@lv,
+        """<p>Медианта рациональных чисел $u$ и $v$ − это число $x = \\frac{a + c}{b + d}$, где
+$\\frac{a}{b}$ и
+$\\frac{c}{d}$
+являются соответственно представлениями чисел $u$ и $v$ в виде несократимых дробей.
+Доказать, что для любых различных положительных рациональных чисел
+$u$ и $x$ можно найти бесконечно много положительных рациональных чисел 
+$v$ таких, что $x$ будет медиантой $u$ и $v$.</p>"""@ru ;
     eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 3 ;
@@ -1244,7 +1530,12 @@ dalīties iegūtais reizinājums.
 <!--
 concepts=primes,valuation
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """Маша записывает в тетради $8$ простых чисел, меньших чем $200$ (среди
+простых чисел могут быть повторяющиеся). Далее к первому простому
+числу она прибавляет $1$, ко второму $2$, к третьему $3$ и т.д. 
+пока не прибавит к последнему $8$, затем перемножает все полученные $8$ сумм. Найти
+наибольшую степень числа $2$, на которую может делится полученное произведение."""@ru ;
     eliozo:problemTextHtml """<p>Mari ieraksta burtnīcā $8$ pirmskaitļus, kas mazāki par $200$ (starp 
 šiem pirmskaitļiem var būt arī atkārtojumi). Pirmajam 
 pirmskaitlim viņa pieskaita $1$, otrajam $2$, trešajam $3$, utt., pēdējam $8$. 
@@ -1253,7 +1544,12 @@ dalīties iegūtais reizinājums.</p>
 <!--
 concepts=primes,valuation
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """<p>Маша записывает в тетради $8$ простых чисел, меньших чем $200$ (среди
+простых чисел могут быть повторяющиеся). Далее к первому простому
+числу она прибавляет $1$, ко второму $2$, к третьему $3$ и т.д. 
+пока не прибавит к последнему $8$, затем перемножает все полученные $8$ сумм. Найти
+наибольшую степень числа $2$, на которую может делится полученное произведение.</p>"""@ru ;
     eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 3 ;
@@ -1280,7 +1576,10 @@ dažādus burtus - ar dažādiem cipariem.
 <!--
 genre=cryptarithm
 questionType=FindCount
--->"""@lv ;
+-->"""@lv,
+        """Сколькими способами можно на рисунке заменить буквы цифрами так, 
+чтобы получилось корректное действие? Одну и ту же букву нужно заменять на ту же
+цифру, разные буквы на разные цифры."""@ru ;
     eliozo:problemTextHtml """<p>Cik veidos zīmējumā var aizstāt burtus ar cipariem tā, 
 lai rastos pareiza darbība? 
 Vienādus burtus jāaizstāj ar vienādiem cipariem, 
@@ -1289,7 +1588,10 @@ dažādus burtus - ar dažādiem cipariem.</p>
 <!--
 genre=cryptarithm
 questionType=FindCount
--->"""@lv ;
+-->"""@lv,
+        """<p>Сколькими способами можно на рисунке заменить буквы цифрами так, 
+чтобы получилось корректное действие? Одну и ту же букву нужно заменять на ту же
+цифру, разные буквы на разные цифры.</p>"""@ru ;
     eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 4 ;
@@ -1328,7 +1630,23 @@ tad kalkulators salūst. Vai uz šī kalkulatora var uz ekrāna iegūt skaitli $
 <!--
 genre=procedure
 questionType=Algorithm,ProveDisprove
--->"""@lv ;
+-->"""@lv,
+        """У найденного на чердаке калькулятора есть клавиши от $1$ до $9$ и клавиша
+действия $\\otimes$, где $x \\otimes y$ обозначает число $x+\\frac{x\\cdot{}y}{x-y}$. 
+При первоначальном
+нажатии клавиши действия на экране остаётся введённое до этого число,
+а после каждого следующего нажатия на экране появляется число $x \\otimes y$,
+где $y$ – целое число, введённое непосредственно перед нажатием клавиши
+действия, а $x$ – число, бывшее на экране до ввода числа $y$. Например,
+если пользователь нажимает клавиши в порядке $2$, $2$, $\\otimes$, 
+$3$, $3$, $\\otimes$, $4$, $4$, $\\otimes$, 
+то на экране соответственно будут видны числа $2$, $22$, $22$, $3$, $33$, $-44$
+(результат действия $22 \\otimes 33$), $4$, $44$, $-22$ 
+(результат действия $(-44) \\otimes 44$).
+Если пользователь нажимает клавишу действия в самом начале, нажимает
+её два раза подряд или допускает выполнение действия, значения которого
+не является целым числом, то калькулятор выходит из строя. Можно ли
+на этом калькуляторе получить на экране число $2018$?"""@ru ;
     eliozo:problemTextHtml """<p>Bēniņos atrastam kalkulatoram ir taustiņi no $1$ līdz $9$ 
 un viens darbības taustiņš $\\otimes$, kur 
 $x \\otimes y$ apzīmē skaitli $x+\\frac{x\\cdot{}y}{x-y}$. 
@@ -1349,7 +1667,23 @@ tad kalkulators salūst. Vai uz šī kalkulatora var uz ekrāna iegūt skaitli $
 <!--
 genre=procedure
 questionType=Algorithm,ProveDisprove
--->"""@lv ;
+-->"""@lv,
+        """<p>У найденного на чердаке калькулятора есть клавиши от $1$ до $9$ и клавиша
+действия $\\otimes$, где $x \\otimes y$ обозначает число $x+\\frac{x\\cdot{}y}{x-y}$. 
+При первоначальном
+нажатии клавиши действия на экране остаётся введённое до этого число,
+а после каждого следующего нажатия на экране появляется число $x \\otimes y$,
+где $y$ – целое число, введённое непосредственно перед нажатием клавиши
+действия, а $x$ – число, бывшее на экране до ввода числа $y$. Например,
+если пользователь нажимает клавиши в порядке $2$, $2$, $\\otimes$, 
+$3$, $3$, $\\otimes$, $4$, $4$, $\\otimes$, 
+то на экране соответственно будут видны числа $2$, $22$, $22$, $3$, $33$, $-44$
+(результат действия $22 \\otimes 33$), $4$, $44$, $-22$ 
+(результат действия $(-44) \\otimes 44$).
+Если пользователь нажимает клавишу действия в самом начале, нажимает
+её два раза подряд или допускает выполнение действия, значения которого
+не является целым числом, то калькулятор выходит из строя. Можно ли
+на этом калькуляторе получить на экране число $2018$?</p>"""@ru ;
     eliozo:problemTimeID "2018" ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 3 ;
@@ -1372,13 +1706,19 @@ dalās ar $3$?
 
 <!--
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """Числа $1,2,\\ldots,2018$ записываются одно за другим без промежутков,
+причём все цифры $8$ при записи пропускаются. Делится ли полученное число
+на $3$?"""@ru ;
     eliozo:problemTextHtml """<p>Skaitļus $1,2,\\ldots,2018$ pieraksta vienu pēc otra bez atstarpēm, 
 turklāt no pieraksta izlaiž visus ciparus $8$. Vai iegūtais skaitlis
 dalās ar $3$?</p>
 <!--
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """<p>Числа $1,2,\\ldots,2018$ записываются одно за другим без промежутков,
+причём все цифры $8$ при записи пропускаются. Делится ли полученное число
+на $3$?</p>"""@ru ;
     eliozo:problemTimeID "2018" ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 1 ;
@@ -1405,7 +1745,12 @@ $\\mbox{MKD}$ apzīmē skaitļu $a$ un $b$ mazāko kopīgo dalāmo.
 <!--
 concepts=lcm,gcd
 questionType=Prove
--->"""@lv ;
+-->"""@lv,
+        """Целые положительные числа $n$, $m$ и $k$ таковы, что $\\mbox{НОК}(m,k)$ делится на
+$n$, а $\\mbox{НОК}(n,k)$ делится на $m$. Доказать, что 
+$n\\cdot\\mbox{НОД}(m,k) = m\\cdot\\mbox{НОД}(n,k)$.  
+*Примечание.* $\\mbox{НОД}(a,b)$ обозначает наибольший общий делитель чисел $a$
+и $b$, а $\\mbox{НОК}(a,b)$ – наименьшее общее кратное чисел $a$ и $b$."""@ru ;
     eliozo:problemTextHtml """<p>Naturāli skaitļi $n$, $m$ un $k$ ir tādi, ka $\\mbox{MKD}(m,k)$ dalās ar
 $n$, bet $\\mbox{MKD}(n,k)$ dalās ar $m$. Pierādīt, ka
 $n\\cdot\\mbox{LKD}(m,k) = m\\cdot\\mbox{LKD}(n,k)$.<br />
@@ -1414,7 +1759,12 @@ $\\mbox{MKD}$ apzīmē skaitļu $a$ un $b$ mazāko kopīgo dalāmo. </p>
 <!--
 concepts=lcm,gcd
 questionType=Prove
--->"""@lv ;
+-->"""@lv,
+        """<p>Целые положительные числа $n$, $m$ и $k$ таковы, что $\\mbox{НОК}(m,k)$ делится на
+$n$, а $\\mbox{НОК}(n,k)$ делится на $m$. Доказать, что 
+$n\\cdot\\mbox{НОД}(m,k) = m\\cdot\\mbox{НОД}(n,k)$.<br />
+<em>Примечание.</em> $\\mbox{НОД}(a,b)$ обозначает наибольший общий делитель чисел $a$
+и $b$, а $\\mbox{НОК}(a,b)$ – наименьшее общее кратное чисел $a$ и $b$.</p>"""@ru ;
     eliozo:problemTimeID "2018" ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 3 ;
@@ -1441,7 +1791,13 @@ mazāk māsu kā brāļu?
 <!--
 genre=word-problem
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """Мама Юры и Маши ждёт двойняшек. Если родятся мальчики, то у Юры
+будет ровно в $k$ раз больше братьев, чем сестёр. Если родятся девочки, то
+у Маши будет ровно в $l$ раз меньше сестёр, чем братьев. Однако подходит
+время и рождаются мальчик и девочка. Во сколько раз у родившегося
+мальчика больше братьев, чем сестёр, и во сколько раз у родившейся
+девочки меньше сестёр, чем братьев?"""@ru ;
     eliozo:problemTextHtml """<p>Brālim Jüri ir māsa Mari. Viņu māte gaida dvīņus. Ja piedzimtu
 abi puisīši, tad Jüri būs tieši $k$ reizes vairāk brāļu nekā māsu. 
 Ja piedzimtu abas meitenītes, tad Mari būs $l$ reizes mazāk māsu nekā brāļu. 
@@ -1451,7 +1807,13 @@ mazāk māsu kā brāļu?</p>
 <!--
 genre=word-problem
 questionType=FindAll
--->"""@lv ;
+-->"""@lv,
+        """<p>Мама Юры и Маши ждёт двойняшек. Если родятся мальчики, то у Юры
+будет ровно в $k$ раз больше братьев, чем сестёр. Если родятся девочки, то
+у Маши будет ровно в $l$ раз меньше сестёр, чем братьев. Однако подходит
+время и рождаются мальчик и девочка. Во сколько раз у родившегося
+мальчика больше братьев, чем сестёр, и во сколько раз у родившейся
+девочки меньше сестёр, чем братьев?</p>"""@ru ;
     eliozo:problemTimeID "2018" ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 4 ;
@@ -1477,7 +1839,11 @@ kopīga mala un kur skaitlis no vienas rūtiņas dalās ar skaitli no otras rūt
 <!--
 genre=fill-in-table
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """Числа от $1$ до $9$ записываются в ячейки таблицы $3 \\times 3$ 
+так, что в каждой ячейке ровно одно число, причём числа не повторяются. 
+Найти наибольшее возможное число пар имеющих общую сторону ячеек, 
+где число из первой ячейки делится на число из второй ячейки."""@ru ;
     eliozo:problemTextHtml """<p>Skaitļus no $1$ līdz $9$ ieraksta tabulā $3 \\times 3$ rūtiņas tā, ka
 ikvienā rūtiņā ir viens skaitlis un skaitļi neatkārtojas.
 Atrast lielāko iespējamo skaitu ar tādu rūtiņu pāriem, kam ir 
@@ -1485,7 +1851,11 @@ kopīga mala un kur skaitlis no vienas rūtiņas dalās ar skaitli no otras rūt
 <!--
 genre=fill-in-table
 questionType=FindOptimal
--->"""@lv ;
+-->"""@lv,
+        """<p>Числа от $1$ до $9$ записываются в ячейки таблицы $3 \\times 3$ 
+так, что в каждой ячейке ровно одно число, причём числа не повторяются. 
+Найти наибольшее возможное число пар имеющих общую сторону ячеек, 
+где число из первой ячейки делится на число из второй ячейки.</p>"""@ru ;
     eliozo:problemTimeID "2018" ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 6 ;
@@ -1493,8 +1863,8 @@ questionType=FindOptimal
     eliozo:suggestedGrade 9,
         10 .
 
-eliozo:SOLN.EE.LVS.2009.11_12.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.EE.LVS.2009.11_12.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Kubiskām funkcijām $p^3$ mēdz būt izdevīgi aplūkot 
@@ -1519,23 +1889,25 @@ jābūt $p^3 \\equiv 0$ jeb $p$ jādalās ar $7$.
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Kubiskām funkcijām $p^3$ mēdz būt izdevīgi aplūkot 
 atlikumus, dalot ar $7$ vai $9$. Ir zināms, ka </p>
-<p>$$\\left{ \\begin{array}{ll}
-p^3 \\equiv 0,1,6 &amp; (\\mbox{mod}\\,7)\\
-p^3 \\equiv 0,1,8 &amp; (\\mbox{mod}\\,9)\\
-\\end{array} \\right.$$</p>
-<p>Atrodam pretrunas moduli:</p>
-<ul>
-<li>Pieskaitāmie skaitļi $2008, 2010$ dod atlikumus $6$ un $1$, 
-dalot ar $7$. </li>
-<li>Lai neviena no summām $p^3 + 2008$, $p^3 + 2010$ nedalītos ar $7$, 
-jābūt $p^3 \\equiv 0$ jeb $p$ jādalās ar $7$. </li>
-<li>Vienīgais pirmskaitlis, kas dalās ar $7$, ir pats $7$. </li>
-<li>$7^3 + 2010 = 2353$. Šis skaitlis dalās ar $13$. </li>
-</ul>
-<p><em>Secinājums.</em> Tāda pirmskaitļa $p$ nav.</p>"""@lv .
+<p>$$\\left\\{ \\begin{array}{ll}
+p^3 \\equiv 0,1,6 & (\\mbox{mod}\\,7)\\\\
+p^3 \\equiv 0,1,8 & (\\mbox{mod}\\,9)\\\\
+\\end{array} \\right.$$
 
-eliozo:SOLN.EE.LVS.2009.9_10.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+
+Atrodam pretrunas moduli:
+
+* Pieskaitāmie skaitļi $2008, 2010$ dod atlikumus $6$ un $1$, 
+dalot ar $7$. 
+* Lai neviena no summām $p^3 + 2008$, $p^3 + 2010$ nedalītos ar $7$, 
+jābūt $p^3 \\equiv 0$ jeb $p$ jādalās ar $7$. 
+* Vienīgais pirmskaitlis, kas dalās ar $7$, ir pats $7$. 
+* $7^3 + 2010 = 2353$. Šis skaitlis dalās ar $13$. 
+
+*Secinājums.* Tāda pirmskaitļa $p$ nav.</p>"""@lv .
+
+eliozo:SOLN.EE.LVS.2009.9_10.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Aplūkojam attālumus starp pilniem kvadrātiem
@@ -1564,18 +1936,18 @@ ir pilns kvadrāts."""@lv ;
 <li>Tad $(2^n)^2 + 1 + 2^2 + 3^3 = (2^n)^2 +32$ vērtībām
 $N = 2^n \\geq 16$ noteikti nav pilns kvadrāts, jo nākamais
 pilnais kvadrāts:
-$$(N+1)^2 = N^2 + 2N+ 1 \\geq N^2 + 33.$$</li>
-<li>Piemēram $4^4 = 16^2 = 256$. Bet jau nākamais 
-pilnais kvadrāts $17^2 = 289$. Atstarpe ir $33$. </li>
-</ul>
-<p>Ievietojam vērtības $n=1,2,3$:</p>
-<ul>
-<li>Vērtība $n=4$ neder, kā jau redzējām, jo $288$ nav pilns kvadrāts.</li>
-<li>Vērtībām $n&gt;4$ attālumi starp $4^n$ un nākamo pilno kvadrātu 
-vēl vairāk pieaug (un ir vairāk par $33$). </li>
-<li>Ievietojam visas $n=1,2,3$:
-$$4^1 + 32 = 36;\\;4^2 + 32 = 48;\\;4^3 + 32 = 96.$$</li>
-<li>Secinām, ka tikai pie $n=1$ skaitlis $1 + 2^2 + 3^3 + 4^n = 36$ 
+$$(N+1)^2 = N^2 + 2N+ 1 \\geq N^2 + 33.$$
+* Piemēram $4^4 = 16^2 = 256$. Bet jau nākamais 
+pilnais kvadrāts $17^2 = 289$. Atstarpe ir $33$. 
+
+Ievietojam vērtības $n=1,2,3$:
+
+* Vērtība $n=4$ neder, kā jau redzējām, jo $288$ nav pilns kvadrāts.
+* Vērtībām $n&gt;4$ attālumi starp $4^n$ un nākamo pilno kvadrātu 
+vēl vairāk pieaug (un ir vairāk par $33$). 
+* Ievietojam visas $n=1,2,3$:
+$$4^1 + 32 = 36;\\;4^2 + 32 = 48;\\;4^3 + 32 = 96.$$
+* Secinām, ka tikai pie $n=1$ skaitlis $1 + 2^2 + 3^3 + 4^n = 36$ 
 ir pilns kvadrāts.</li>
 </ul>"""@lv .
 

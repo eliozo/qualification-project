@@ -1,0 +1,1168 @@
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+eliozo:LV.VOL.2012.10.1 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LV.VOL.2012.10.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.10.1.SUB1 ;
+    eliozo:problemText """Kādām $a$ vērtībām vienādojumu sistēmai
+
+$$\\left\\{\\begin{array}{l}
+x+y=2 \\\\
+x^{2}+y^{2}=a \\\\
+x^{3}+y^{3}=a+2
+\\end{array}\\right.$$
+
+ir atrisinājums reālos skaitļos?"""@lv ;
+    eliozo:problemTextHtml """<p>Kādām $a$ vērtībām vienādojumu sistēmai</p>
+<p>$$\\left\\{\\begin{array}{l}
+x+y=2 \\\\
+x^{2}+y^{2}=a \\\\
+x^{3}+y^{3}=a+2
+\\end{array}\\right.$$</p>
+<p>ir atrisinājums reālos skaitļos?</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.10" ;
+    eliozo:suggestedGrade 10 .
+
+eliozo:LV.VOL.2012.10.2 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LV.VOL.2012.10.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.10.2.SUB1 ;
+    eliozo:problemText """2. Trijstūra $ABC$ katra mala sadalīta septiņās vienādās daļās (skat. 3.zīm.). 
+Pierādīt, ka $S_{A_{1}B_{1}C_{1}}+S_{A_{2}B_{2}C_{2}}>S_{ABC}$.
+
+![](LV.VOL.2012.10.2.png)"""@lv ;
+    eliozo:problemTextHtml """<ol>
+<li>Trijstūra $ABC$ katra mala sadalīta septiņās vienādās daļās (skat. 3.zīm.). 
+Pierādīt, ka $S_{A_{1}B_{1}C_{1}}+S_{A_{2}B_{2}C_{2}}>S_{ABC}$.</li>
+</ol>
+<p><img alt="" src="LV.VOL.2012.10.2.png" /></p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.10" ;
+    eliozo:suggestedGrade 10 .
+
+eliozo:LV.VOL.2012.10.3 a eliozo:Problem ;
+    eliozo:concepts eliozo:TRM-full-square ;
+    eliozo:country "LV" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LV.VOL.2012.10.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.10.3.SUB1,
+        eliozo:SOLN.LV.VOL.2012.10.3.SUB2 ;
+    eliozo:problemText """Naturāla skaitļa $N$ decimālajā pierakstā izmantots tikai cipars $6$. Pierādīt,
+ka skaitļa $N^{2}$ decimālajā pierakstā nav cipara $0$."""@lv ;
+    eliozo:problemTextHtml """<p>Naturāla skaitļa $N$ decimālajā pierakstā izmantots tikai cipars $6$. Pierādīt,
+ka skaitļa $N^{2}$ decimālajā pierakstā nav cipara $0$.</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Prove" ;
+    eliozo:strategy "TrialAndError" ;
+    eliozo:suffix "LV.VOL.2012.10" ;
+    eliozo:suggestedGrade 10 ;
+    eliozo:topic eliozo:PeriodicDigitGroups,
+        eliozo:SeriesMembersSumsClosedFormulas .
+
+eliozo:LV.VOL.2012.10.4 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LV.VOL.2012.10.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.10.4.SUB1 ;
+    eliozo:problemText """Trijās no piecstūra virsotnēm atrodas kauliņi $A,\\ B,\\ C$. Atļauts pārbīdīt 
+kauliņu pa piecstūra diagonāli uz citu virsotni, ja tā ir brīva. Vai, atkārtoti
+pārbīdot šos kauliņus, var panākt, lai kauliņš $A$ atrastos savā vietā, bet 
+kauliņi $B$ un $C$ būtu samainīušies vietām?"""@lv ;
+    eliozo:problemTextHtml """<p>Trijās no piecstūra virsotnēm atrodas kauliņi $A,\\ B,\\ C$. Atļauts pārbīdīt 
+kauliņu pa piecstūra diagonāli uz citu virsotni, ja tā ir brīva. Vai, atkārtoti
+pārbīdot šos kauliņus, var panākt, lai kauliņš $A$ atrastos savā vietā, bet 
+kauliņi $B$ un $C$ būtu samainīušies vietām?</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 4 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.10" ;
+    eliozo:suggestedGrade 10 .
+
+eliozo:LV.VOL.2012.10.5 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LV.VOL.2012.10.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.10.5.SUB1 ;
+    eliozo:problemText """Divi spēlētāji uz $N \\times N$ rūtiņas liela laukuma spēlē sekojošu spēli. 
+Spēlētāji gājienus izdara pēc kārtas, katrā gājienā novietojot šaha zirdziņu uz
+pagaidām neapdraudēta lauciņa (visu zirdziņu krāsa ir vienāda). Spēlētājs, kurš
+nevar izdarīt kārtējo gājienu, zaudē. Kurš no spēlētājiem, pareizi spēlējot, 
+uzvar, ja **(A)** $N=12$, **(B)** $N=21$?
+
+(Ja šaha zirdziņš atrodas rūtiņā $A$, tad tas apdraud visas ar $\\ast$ apzīmētās
+rūtiņas, skat. 4.zīm.)
+
+![](LV.VOL.2012.10.5.png)"""@lv ;
+    eliozo:problemTextHtml """<p>Divi spēlētāji uz $N \\times N$ rūtiņas liela laukuma spēlē sekojošu spēli. 
+Spēlētāji gājienus izdara pēc kārtas, katrā gājienā novietojot šaha zirdziņu uz
+pagaidām neapdraudēta lauciņa (visu zirdziņu krāsa ir vienāda). Spēlētājs, kurš
+nevar izdarīt kārtējo gājienu, zaudē. Kurš no spēlētājiem, pareizi spēlējot, 
+uzvar, ja <strong>(A)</strong> $N=12$, <strong>(B)</strong> $N=21$?</p>
+<p>(Ja šaha zirdziņš atrodas rūtiņā $A$, tad tas apdraud visas ar $\\ast$ apzīmētās
+rūtiņas, skat. 4.zīm.)</p>
+<p><img alt="" src="LV.VOL.2012.10.5.png" /></p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.10" ;
+    eliozo:suggestedGrade 10 .
+
+eliozo:LV.VOL.2012.11.1 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "NT" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LV.VOL.2012.11.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.11.1.SUB1 ;
+    eliozo:problemText """Pierādīt, ka eksistē bezgalīgi daudz naturālu skaitļu $a$, kuriem skaitlis 
+$n^{4}+a$ ir salikts skaitlis visiem naturāliem skaitļiem $n>1$."""@lv ;
+    eliozo:problemTextHtml """<p>Pierādīt, ka eksistē bezgalīgi daudz naturālu skaitļu $a$, kuriem skaitlis 
+$n^{4}+a$ ir salikts skaitlis visiem naturāliem skaitļiem $n>1$.</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.VOL.2012.11" ;
+    eliozo:suggestedGrade 11 .
+
+eliozo:LV.VOL.2012.11.2 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LV.VOL.2012.11.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.11.2.SUB1 ;
+    eliozo:problemText """$3 \\times 3$ rūtiņu tabulā katrā no rūtiņām ierakstīts pa atšķsirīgam naturālam
+skaitlim. Ja rūtiņā ierakstītais skaitlis ir lielākais savā rindā, savā kolonnā
+vai diagonālē, kurā ir vismaz divas rūtiņas, tad šī rūtiņa tiek iekrāsota. Cik 
+rūtiņas tabulā var būt iekrāsotas?"""@lv ;
+    eliozo:problemTextHtml """<p>$3 \\times 3$ rūtiņu tabulā katrā no rūtiņām ierakstīts pa atšķsirīgam naturālam
+skaitlim. Ja rūtiņā ierakstītais skaitlis ir lielākais savā rindā, savā kolonnā
+vai diagonālē, kurā ir vismaz divas rūtiņas, tad šī rūtiņa tiek iekrāsota. Cik 
+rūtiņas tabulā var būt iekrāsotas?</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.11" ;
+    eliozo:suggestedGrade 11 .
+
+eliozo:LV.VOL.2012.11.3 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LV.VOL.2012.11.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.11.3.SUB1 ;
+    eliozo:problemText """Taisne, kas iet caur trijstūra mediānu krustpunktu, dala trijstūri divās daļās.
+Kāda ir maksimālā šo daļu laukumu attiecība?"""@lv ;
+    eliozo:problemTextHtml """<p>Taisne, kas iet caur trijstūra mediānu krustpunktu, dala trijstūri divās daļās.
+Kāda ir maksimālā šo daļu laukumu attiecība?</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 3 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.11" ;
+    eliozo:suggestedGrade 11 .
+
+eliozo:LV.VOL.2012.11.4 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "Alg" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LV.VOL.2012.11.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.11.4.SUB1 ;
+    eliozo:problemText """Dota naturālu skaitļu virkne $\\left\\{a_{i}\\right\\}$, kur $a_{1}=5$ un katram 
+$n>1\\ a_{n}=a_{1} a_{2} \\ldots a_{n-1}+4$. Pierādīt, ka visiem $n \\geq 1$ ir 
+spēkā sakarība $a_{n}-\\sqrt{a_{n+1}}=2$."""@lv ;
+    eliozo:problemTextHtml """<p>Dota naturālu skaitļu virkne $\\left\\{a_{i}\\right\\}$, kur $a_{1}=5$ un katram 
+$n>1\\ a_{n}=a_{1} a_{2} \\ldots a_{n-1}+4$. Pierādīt, ka visiem $n \\geq 1$ ir 
+spēkā sakarība $a_{n}-\\sqrt{a_{n+1}}=2$.</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 4 ;
+    eliozo:questionType "Prove" ;
+    eliozo:suffix "LV.VOL.2012.11" ;
+    eliozo:suggestedGrade 11 .
+
+eliozo:LV.VOL.2012.11.5 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LV.VOL.2012.11.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.11.5.SUB1 ;
+    eliozo:problemText """Divi zēni pēc kārtas griež apaļu kūku, katru reizi nogriežot pa vienam gabalam,
+kura virspuse ir dotās kūkas virspuses sektora formā, pie tam gabala virspuses 
+laukumam jābūt ne mazākam kā $\\frac{1}{100}$ un ne lielākam kā $\\frac{1}{2}$ no
+sākotnēja kūkas virspuses laukuma (skat. 5.zīm.).
+
+![](LV.VOL.2012.11.5.png)
+
+Zaudē tas spēlētājs, kurš vairs nevar nogriezt nevienu atļautā lieluma gabalu. 
+Kurš no zēniem uzvarēs, pareizi spēlējot?"""@lv ;
+    eliozo:problemTextHtml """<p>Divi zēni pēc kārtas griež apaļu kūku, katru reizi nogriežot pa vienam gabalam,
+kura virspuse ir dotās kūkas virspuses sektora formā, pie tam gabala virspuses 
+laukumam jābūt ne mazākam kā $\\frac{1}{100}$ un ne lielākam kā $\\frac{1}{2}$ no
+sākotnēja kūkas virspuses laukuma (skat. 5.zīm.).</p>
+<p><img alt="" src="LV.VOL.2012.11.5.png" /></p>
+<p>Zaudē tas spēlētājs, kurš vairs nevar nogriezt nevienu atļautā lieluma gabalu. 
+Kurš no zēniem uzvarēs, pareizi spēlējot?</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.11" ;
+    eliozo:suggestedGrade 11 .
+
+eliozo:LV.VOL.2012.12.1 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "Alg" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LV.VOL.2012.12.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.12.1.SUB1 ;
+    eliozo:problemText """Divām naturālu skaitļu virknēm $\\left\\{a_{i}\\right\\}$ un $\\left\\{b_{i}\\right\\}$
+katram $i \\geq 1$ ir spēkā sakarības:
+
+$$a_{b_{i}}=b_{a_{i}}\\;\\;\\mbox{un}\\;\\;\\left|a_{i}-b_{i}\\right|>2012.$$
+
+Atrast vienu šādu virkņu piemēru."""@lv ;
+    eliozo:problemTextHtml """<p>Divām naturālu skaitļu virknēm $\\left\\{a_{i}\\right\\}$ un $\\left\\{b_{i}\\right\\}$
+katram $i \\geq 1$ ir spēkā sakarības:</p>
+<p>$$a_{b_{i}}=b_{a_{i}}\\;\\;\\mbox{un}\\;\\;\\left|a_{i}-b_{i}\\right|>2012.$$</p>
+<p>Atrast vienu šādu virkņu piemēru.</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindExample" ;
+    eliozo:suffix "LV.VOL.2012.12" ;
+    eliozo:suggestedGrade 12 .
+
+eliozo:LV.VOL.2012.12.2 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LV.VOL.2012.12.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.12.2.SUB1 ;
+    eliozo:problemText """Trijstūra $ABC$ leņķa $ACB$ bisektrise un leņķa $ABC$ papildleņķa bisektrise 
+krustojas punktā $D$. Pierādīt, ka trijstūrim $BCD$ apvilktās riņķa līnijas 
+centrs atrodas uz trijstūrim $ABC$ apvilktās riņķa līnijas."""@lv ;
+    eliozo:problemTextHtml """<p>Trijstūra $ABC$ leņķa $ACB$ bisektrise un leņķa $ABC$ papildleņķa bisektrise 
+krustojas punktā $D$. Pierādīt, ka trijstūrim $BCD$ apvilktās riņķa līnijas 
+centrs atrodas uz trijstūrim $ABC$ apvilktās riņķa līnijas.</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.12" ;
+    eliozo:suggestedGrade 12 .
+
+eliozo:LV.VOL.2012.12.3 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "NT" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LV.VOL.2012.12.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.12.3.SUB1 ;
+    eliozo:problemText """Atrisināt naturālos skaitļos vienādojumu
+$$n = \\left\\lfloor \\frac{n}{2} \\right\\rfloor + 
+\\left\\lfloor \\frac{n}{3} \\right\\rfloor + 
+\\left\\lfloor \\frac{n}{4} \\right\\rfloor + 
+\\ldots + 
+\\left\\lfloor \\frac{n}{n+2012} \\right\\rfloor.$$ 
+
+($\\lfloor x \\rfloor$ ir veselā daļa no $x$ – lielākais veselais skaitlis, kas nepārsniedz $x$;
+piem., $\\lfloor 3 \\rfloor=3$, 
+$\\lfloor 4.6 \\rfloor =4$, 
+$\\lfloor 0.2 \\rfloor =0$ utml.)"""@lv ;
+    eliozo:problemTextHtml """<p>Atrisināt naturālos skaitļos vienādojumu
+$$n = \\left\\lfloor \\frac{n}{2} \\right\\rfloor + 
+\\left\\lfloor \\frac{n}{3} \\right\\rfloor + 
+\\left\\lfloor \\frac{n}{4} \\right\\rfloor + 
+\\ldots + 
+\\left\\lfloor \\frac{n}{n+2012} \\right\\rfloor.$$ 
+
+($\\lfloor x \\rfloor$ ir veselā daļa no $x$ – lielākais veselais skaitlis, kas nepārsniedz $x$;
+piem., $\\lfloor 3 \\rfloor=3$, 
+$\\lfloor 4.6 \\rfloor =4$, 
+$\\lfloor 0.2 \\rfloor =0$ utml.)</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.VOL.2012.12" ;
+    eliozo:suggestedGrade 12 .
+
+eliozo:LV.VOL.2012.12.4 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LV.VOL.2012.12.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.12.4.SUB1 ;
+    eliozo:problemText """Kvadrātā ar izmēriem $N \\times N$ rūtiņas dažas rūtiņas ir nokrāsotas tā, ka 
+katrai nokrāsotai rūtiņai tieši trīs kaimiņu rūtiņas ir nenokrāsotas, bet 
+katrai nenokrāsotai rūtiņai ir tieši viena nokrāsota kaimiņu rūtiņa. Vai šāds 
+krāsojums ir iespējams, ja **(A)** $N=6$, **(B)** $N=8$?
+
+Rūtiņas sauc par kaimiņu rūtiņām, ja tām ir kopīga mala."""@lv ;
+    eliozo:problemTextHtml """<p>Kvadrātā ar izmēriem $N \\times N$ rūtiņas dažas rūtiņas ir nokrāsotas tā, ka 
+katrai nokrāsotai rūtiņai tieši trīs kaimiņu rūtiņas ir nenokrāsotas, bet 
+katrai nenokrāsotai rūtiņai ir tieši viena nokrāsota kaimiņu rūtiņa. Vai šāds 
+krāsojums ir iespējams, ja <strong>(A)</strong> $N=6$, <strong>(B)</strong> $N=8$?</p>
+<p>Rūtiņas sauc par kaimiņu rūtiņām, ja tām ir kopīga mala.</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 4 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.12" ;
+    eliozo:suggestedGrade 12 .
+
+eliozo:LV.VOL.2012.12.5 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LV.VOL.2012.12.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.12.5.SUB1 ;
+    eliozo:problemText """Riņķa ar diametru $1$ iekšpusē uzzīmēti vairāki riņķi, kuru diametru summa ir 
+lielāka nekā $8$. Pierādīt, ka var novilkt taisni, kas krusto vismaz $9$ 
+uzzīmētos riņķus."""@lv ;
+    eliozo:problemTextHtml """<p>Riņķa ar diametru $1$ iekšpusē uzzīmēti vairāki riņķi, kuru diametru summa ir 
+lielāka nekā $8$. Pierādīt, ka var novilkt taisni, kas krusto vismaz $9$ 
+uzzīmētos riņķus.</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.12" ;
+    eliozo:suggestedGrade 12 .
+
+eliozo:LV.VOL.2012.9.1 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "NT" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LV.VOL.2012.9.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.9.1.SUB1 ;
+    eliozo:problemText """**(A)** Vai piecu pēc kārtas ņemtu naturālu skaitļu reizinājums var būt 
+skaitlis $20112012$?
+
+**(B)** Vai četru pēc kārtas ņemtu naturālu skaitļu reizinājums var būt 
+skaitlis $20112012$?"""@lv ;
+    eliozo:problemTextHtml """<p><strong>(A)</strong> Vai piecu pēc kārtas ņemtu naturālu skaitļu reizinājums var būt 
+skaitlis $20112012$?</p>
+<p><strong>(B)</strong> Vai četru pēc kārtas ņemtu naturālu skaitļu reizinājums var būt 
+skaitlis $20112012$?</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.VOL.2012.9" ;
+    eliozo:suggestedGrade 9 .
+
+eliozo:LV.VOL.2012.9.2 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LV.VOL.2012.9.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.9.2.SUB1 ;
+    eliozo:problemText """Pierādīt, ka nav iespējams izveidot trijstūri, kura augstumu garumi ir 
+$4~\\mathrm{cm},\\ 7~\\mathrm{cm}$ un $10~\\mathrm{cm}$."""@lv ;
+    eliozo:problemTextHtml """<p>Pierādīt, ka nav iespējams izveidot trijstūri, kura augstumu garumi ir 
+$4~\\mathrm{cm},\\ 7~\\mathrm{cm}$ un $10~\\mathrm{cm}$.</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.9" ;
+    eliozo:suggestedGrade 9 .
+
+eliozo:LV.VOL.2012.9.3 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LV.VOL.2012.9.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.9.3.SUB1 ;
+    eliozo:problemText """Kvadrātvienādojuma $x^{2}+p_{1}x+q_{1}=0$ saknes ir $a$ un $b$, 
+kvadrātvienādojuma $x^{2}+p_{2}x+q_{2}=0$ saknes ir $b$ un $c$, bet 
+kvadrātvienādojuma $x^{2}+p_{3}x+q_{3}=0$ saknes ir $a$ un $c$. Zināms, ka 
+$q_{1} \\leq q_{2} \\leq q_{3} \\leq 0$. Kādas ir iespējamās $q_{2}$ vērtības?"""@lv ;
+    eliozo:problemTextHtml """<p>Kvadrātvienādojuma $x^{2}+p_{1}x+q_{1}=0$ saknes ir $a$ un $b$, 
+kvadrātvienādojuma $x^{2}+p_{2}x+q_{2}=0$ saknes ir $b$ un $c$, bet 
+kvadrātvienādojuma $x^{2}+p_{3}x+q_{3}=0$ saknes ir $a$ un $c$. Zināms, ka 
+$q_{1} \\leq q_{2} \\leq q_{3} \\leq 0$. Kādas ir iespējamās $q_{2}$ vērtības?</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 3 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.9" ;
+    eliozo:suggestedGrade 9 .
+
+eliozo:LV.VOL.2012.9.4 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LV.VOL.2012.9.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.9.4.SUB1 ;
+    eliozo:problemText """Trijstūra $ABC$ iekšpusē izvēlēts punkts $E$ tā, ka 
+$AB^{2}-BE^{2}+EC^{2}=AC^{2}$. Pierādīt, ka $AE \\perp BC$!"""@lv ;
+    eliozo:problemTextHtml """<p>Trijstūra $ABC$ iekšpusē izvēlēts punkts $E$ tā, ka 
+$AB^{2}-BE^{2}+EC^{2}=AC^{2}$. Pierādīt, ka $AE \\perp BC$!</p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 4 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.9" ;
+    eliozo:suggestedGrade 9 .
+
+eliozo:LV.VOL.2012.9.5 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:olympiad "LV.VOL" ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadType "National" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LV.VOL.2012.9.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2012.9.5.SUB1 ;
+    eliozo:problemText """Kādu lielāko skaitu 1.zīm. attēloto figūru var izgriezt no 2.zīm. attēlotās 
+figūras? Griezuma līnijām jāiet pa rūtiņu malām.
+
+![](LV.VOL.2012.9.5.png)"""@lv ;
+    eliozo:problemTextHtml """<p>Kādu lielāko skaitu 1.zīm. attēloto figūru var izgriezt no 2.zīm. attēlotās 
+figūras? Griezuma līnijām jāiet pa rūtiņu malām.</p>
+<p><img alt="" src="LV.VOL.2012.9.5.png" /></p>"""@lv ;
+    eliozo:problemTimeID "2012" ;
+    eliozo:problemYear 2012 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.VOL.2012.9" ;
+    eliozo:suggestedGrade 9 .
+
+eliozo:SOLN.LV.VOL.2012.10.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+**Atbilde:** $a=3$.
+
+Kāpinot pirmo vienādojumu kvadrātā un atņemot otro, iegūst $2xy=4-a$ jeb 
+$xy=2-\\frac{a}{2}$. Tad 
+$x^{3}+y^{3}=(x+y)\\left(x^{2}-xy+x^{2}\\right)=2\\left(a-2+\\frac{a}{2}\\right)=3a-4=a+2$
+jeb $a=3$.
+
+Ievietojot dotajā sistēmā $a=3$, un atrisinot to, iegūstam atrisinājumus 
+$x=1 \\pm \\sqrt{\\frac{1}{2}}, y=1 \\mp \\sqrt{\\frac{1}{2}}$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>Atbilde:</strong> $a=3$.</p>
+<p>Kāpinot pirmo vienādojumu kvadrātā un atņemot otro, iegūst $2xy=4-a$ jeb 
+$xy=2-\\frac{a}{2}$. Tad 
+$x^{3}+y^{3}=(x+y)\\left(x^{2}-xy+x^{2}\\right)=2\\left(a-2+\\frac{a}{2}\\right)=3a-4=a+2$
+jeb $a=3$.</p>
+<p>Ievietojot dotajā sistēmā $a=3$, un atrisinot to, iegūstam atrisinājumus 
+$x=1 \\pm \\sqrt{\\frac{1}{2}}, y=1 \\mp \\sqrt{\\frac{1}{2}}$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.10.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Aprēķināsim $S_{A_{1}B_{1}C_{1}}$ (skat. 4.zīm.).
+
+$S_{A_{1}B_{1}C_{1}}=S_{ABC}-S_{A_{1}B_{1}C}-S_{AB_{1}C_{1}}-S_{A_{1}BC_{1}} \\cdot \\Delta A_{1}B_{1}C$
+augstums pret malu $A_{1}C$ ir $\\frac{1}{7} \\frac{1}{7}$ no $\\triangle ABC$ 
+augstuma pret malu $BC$. $A_{1}C=\\frac{6}{7} BC$. Tātad 
+$S_{A_{1}B_{1}C}=\\frac{6}{49} S_{ABC}$. Līdzīgi arī 
+$S_{AB_{1}C_{1}}=S_{A_{1}BC_{1}}=\\frac{6}{49} S_{ABC}$. Tātad 
+$S_{A_{1}B_{1}C_{1}}=\\frac{31}{49} S_{ABC}$.
+
+Līdzīgi var aprēķināt 
+$S_{A_{2}B_{2}C_{2}}=S_{ABC}-S_{A_{2}B_{2}C}-S_{AB_{2}C_{2}}-S_{A_{2}BC_{2}}$.
+$\\Delta A_{2}B_{2}C$ augstums pret malu $A_{2}C$ ir $\\frac{2}{7}$ no 
+$\\triangle ABC$ augstuma pret malu $BC$. $A_{2}C=\\frac{5}{7} BC$. Tātad 
+$S_{A_{2}B_{2}C}=\\frac{10}{49} S_{ABC}$. Līdzīgi, arī 
+$S_{AB_{2}C_{2}}=S_{A_{2}BC_{2}}=\\frac{10}{49} S_{ABC}$. Tātad 
+$S_{A_{2}B_{2}C_{2}}=\\frac{19}{49} S_{ABC}$ un 
+$S_{A_{1}B_{1}C_{1}}+S_{A_{2}B_{2}C_{2}}=\\frac{50}{49} S_{ABC}>S_{ABC}$.
+
+![](LV.VOL.2012.10.2A.png)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Aprēķināsim $S_{A_{1}B_{1}C_{1}}$ (skat. 4.zīm.).</p>
+<p>$S_{A_{1}B_{1}C_{1}}=S_{ABC}-S_{A_{1}B_{1}C}-S_{AB_{1}C_{1}}-S_{A_{1}BC_{1}} \\cdot \\Delta A_{1}B_{1}C$
+augstums pret malu $A_{1}C$ ir $\\frac{1}{7} \\frac{1}{7}$ no $\\triangle ABC$ 
+augstuma pret malu $BC$. $A_{1}C=\\frac{6}{7} BC$. Tātad 
+$S_{A_{1}B_{1}C}=\\frac{6}{49} S_{ABC}$. Līdzīgi arī 
+$S_{AB_{1}C_{1}}=S_{A_{1}BC_{1}}=\\frac{6}{49} S_{ABC}$. Tātad 
+$S_{A_{1}B_{1}C_{1}}=\\frac{31}{49} S_{ABC}$.</p>
+<p>Līdzīgi var aprēķināt 
+$S_{A_{2}B_{2}C_{2}}=S_{ABC}-S_{A_{2}B_{2}C}-S_{AB_{2}C_{2}}-S_{A_{2}BC_{2}}$.
+$\\Delta A_{2}B_{2}C$ augstums pret malu $A_{2}C$ ir $\\frac{2}{7}$ no 
+$\\triangle ABC$ augstuma pret malu $BC$. $A_{2}C=\\frac{5}{7} BC$. Tātad 
+$S_{A_{2}B_{2}C}=\\frac{10}{49} S_{ABC}$. Līdzīgi, arī 
+$S_{AB_{2}C_{2}}=S_{A_{2}BC_{2}}=\\frac{10}{49} S_{ABC}$. Tātad 
+$S_{A_{2}B_{2}C_{2}}=\\frac{19}{49} S_{ABC}$ un 
+$S_{A_{1}B_{1}C_{1}}+S_{A_{2}B_{2}C_{2}}=\\frac{50}{49} S_{ABC}>S_{ABC}$.</p>
+<p><img alt="" src="LV.VOL.2012.10.2A.png" /></p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Ja $N=\\underbrace{666 \\ldots}_{n "6"}$, tad
+
+$N^{2}=\\underbrace{66 \\ldots 6}_{n "6"} \\cdot \\underbrace{66 \\ldots 6}_{n "6"}=6 \\cdot 6 \\cdot \\underbrace{11 \\ldots 1}_{n "1"} \\cdot \\underbrace{11 \\ldots 1}_{n "1"}=4 \\cdot 9 \\cdot \\underbrace{11 \\ldots 1}_{n "1"} \\cdot \\underbrace{11 \\ldots 1}_{n "1"}=\\underbrace{44 \\ldots}_{n "4"} \\cdot \\underbrace{99 \\ldots 9}_{n "9"}=$
+
+$=\\underbrace{44 \\ldots 4}_{n "4"} \\cdot(\\underbrace{100 \\ldots 0}_{n "0"}-1)=\\underbrace{44 \\ldots}_{n "4"} \\underbrace{00 \\ldots 0}_{n "0"}-\\underbrace{44 \\ldots 4}_{n "4"}=\\underbrace{44 \\ldots}_{n-1 "4"} 43 \\underbrace{55 \\ldots .56}_{n-1 "5"}.$"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Ja $N=\\underbrace{666 \\ldots}_{n "6"}$, tad</p>
+<p>$N^{2}=\\underbrace{66 \\ldots 6}_{n "6"} \\cdot \\underbrace{66 \\ldots 6}_{n "6"}=6 \\cdot 6 \\cdot \\underbrace{11 \\ldots 1}_{n "1"} \\cdot \\underbrace{11 \\ldots 1}_{n "1"}=4 \\cdot 9 \\cdot \\underbrace{11 \\ldots 1}_{n "1"} \\cdot \\underbrace{11 \\ldots 1}_{n "1"}=\\underbrace{44 \\ldots}_{n "4"} \\cdot \\underbrace{99 \\ldots 9}_{n "9"}=$</p>
+<p>$=\\underbrace{44 \\ldots 4}_{n "4"} \\cdot(\\underbrace{100 \\ldots 0}_{n "0"}-1)=\\underbrace{44 \\ldots}_{n "4"} \\underbrace{00 \\ldots 0}_{n "0"}-\\underbrace{44 \\ldots 4}_{n "4"}=\\underbrace{44 \\ldots}_{n-1 "4"} 43 \\underbrace{55 \\ldots .56}_{n-1 "5"}.$</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.10.3.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
+    eliozo:solutionText """## Atrisinājums
+
+Parādām, kā kāpināt $66\\ldots{}66$ kvadrātā
+
+$$6^2=36,\\;\\;66^2=4356=4455-99,\\;\\;666^2=443556=444555-999,\\ldots$$
+
+Pamatosim, ka 
+
+$$\\begin{aligned}
+(\\underbrace{6\\ldots6}_n)^2 & = \\overline{\\underbrace{4\\ldots{}4}_n\\underbrace{5\\ldots{}5}_n}-\\underbrace{9\\ldots{}9}_n, \\\\
+\\left( 6\\cdot(10^n-1)/9 \\right)^2 & = 10^n \\cdot (4 \\cdot (10^n - 1)/9) +(5 \\cdot (10^n - 1)/9) - (10^n-1), \\\\
+\\frac{4}{9}(10^n-1)^2 & = 10^n \\cdot \\frac{4}{9}(10^n - 1) +\\frac{5}{9}(10^n-1) - (10^n - 1), \\\\
+4(10^n - 1)^2 & = 4\\cdot{}10^{2n}-4\\cdot{}10^n + 5\\cdot{}10^n-5 - 9\\cdot{}10^n +9.
+\\end{aligned}$$
+
+Tātad $\\overline{6\\ldots6}^2$ pierakstā ir tikai cipari "4","3", "5" un "6":
+
+$$(\\underbrace{6\\ldots6}_n)^2=\\overline{\\underbrace{4\\ldots{}4}\\_{n-1}3\\underbrace{5\\ldots{}5}\\_{n-1}6}$$"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Parādām, kā kāpināt $66\\ldots{}66$ kvadrātā</p>
+<p>$$6^2=36,\\;\\;66^2=4356=4455-99,\\;\\;666^2=443556=444555-999,\\ldots$$
+
+Pamatosim, ka 
+
+$$\\begin{aligned}
+(\\underbrace{6\\ldots6}_n)^2 & = \\overline{\\underbrace{4\\ldots{}4}_n\\underbrace{5\\ldots{}5}_n}-\\underbrace{9\\ldots{}9}_n, \\\\
+\\left( 6\\cdot(10^n-1)/9 \\right)^2 & = 10^n \\cdot (4 \\cdot (10^n - 1)/9) +(5 \\cdot (10^n - 1)/9) - (10^n-1), \\\\
+\\frac{4}{9}(10^n-1)^2 & = 10^n \\cdot \\frac{4}{9}(10^n - 1) +\\frac{5}{9}(10^n-1) - (10^n - 1), \\\\
+4(10^n - 1)^2 & = 4\\cdot{}10^{2n}-4\\cdot{}10^n + 5\\cdot{}10^n-5 - 9\\cdot{}10^n +9.
+\\end{aligned}$$
+
+Tātad $\\overline{6\\ldots6}^2$ pierakstā ir tikai cipari "4","3", "5" un "6":
+
+$$(\\underbrace{6\\ldots6}_n)^2=\\overline{\\underbrace{4\\ldots{}4}\\_{n-1}3\\underbrace{5\\ldots{}5}\\_{n-1}6}$$</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.10.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Aplūkosim piecstūri $A_{1}A_{2}A_{3}A_{4}A_{5}$. Ievērosim, ka kauliņi var tikt
+pārvietoti tikai pa ciklu $A_{1}A_{3}A_{5}A_{2}A_{4}A_{1}$, nemainot secību. 
+Tātad kauliņi $B$ un $C$ nevar samainīties vietām."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Aplūkosim piecstūri $A_{1}A_{2}A_{3}A_{4}A_{5}$. Ievērosim, ka kauliņi var tikt
+pārvietoti tikai pa ciklu $A_{1}A_{3}A_{5}A_{2}A_{4}A_{1}$, nemainot secību. 
+Tātad kauliņi $B$ un $C$ nevar samainīties vietām.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.10.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Pieņemsim, ka laukums ir izkrāsots šaha galdiņa veidā. Jebkuram šādi krāsotam 
+kvadrātam piemīt centrālā simetrija. Ievērosim, ka, šaha zirdziņu novietojot uz
+vienas krāsas lauciņa, tas apdraud pretējas krāsas lauciņus.
+
+**(A)** Uzvar otrais spēlētājs. Neatkarīgi no tā, kāds ir pirmā spēlētāja 
+pirmais gājiens, otrais spēlētājs var izdarīt gājienu, kas simetrisks attiecībā
+pret laukuma centru - šis lauciņš ir tādā pašā krāsā, kā lauciņš, uz kura tikko
+uzlikts šaha zirdziņš, tātad tikko izdarītais gājiens neapdraud šo lauciņu. 
+Līdz ar to, ja pirmais spēlētājs varēs izdarīt gājienu, tad arī otrajam 
+spēlētājam būs iespējams izdarīt simetrisko gājienu.
+
+**(B)** Uzvar pirmais spēlētājs. Pirmajā gājienā zirdziņš jānovieto laukuma 
+centrā, un pēc tam jāspēlē simetriski otrā spēlētāja gājieniem kā aprakstīts 
+(A) punktā."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pieņemsim, ka laukums ir izkrāsots šaha galdiņa veidā. Jebkuram šādi krāsotam 
+kvadrātam piemīt centrālā simetrija. Ievērosim, ka, šaha zirdziņu novietojot uz
+vienas krāsas lauciņa, tas apdraud pretējas krāsas lauciņus.</p>
+<p><strong>(A)</strong> Uzvar otrais spēlētājs. Neatkarīgi no tā, kāds ir pirmā spēlētāja 
+pirmais gājiens, otrais spēlētājs var izdarīt gājienu, kas simetrisks attiecībā
+pret laukuma centru - šis lauciņš ir tādā pašā krāsā, kā lauciņš, uz kura tikko
+uzlikts šaha zirdziņš, tātad tikko izdarītais gājiens neapdraud šo lauciņu. 
+Līdz ar to, ja pirmais spēlētājs varēs izdarīt gājienu, tad arī otrajam 
+spēlētājam būs iespējams izdarīt simetrisko gājienu.</p>
+<p><strong>(B)</strong> Uzvar pirmais spēlētājs. Pirmajā gājienā zirdziņš jānovieto laukuma 
+centrā, un pēc tam jāspēlē simetriski otrā spēlētāja gājieniem kā aprakstīts 
+(A) punktā.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.11.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Izvēlēsimies 
+$a=4k^{4}$. Tad $n^{4}+4k^{4}=\\left(n^{2}-2nk+2k^{2}\\right)\\left(n^{2}+2nk+2k^{2}\\right)$
+ir salikts skaitlis. Tā kā par $k$ var izvēlēties jebkuru naturālu skaitli, tad
+ir bezgalīgi daudz atbilstošo $a$ vērtību."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Izvēlēsimies 
+$a=4k^{4}$. Tad $n^{4}+4k^{4}=\\left(n^{2}-2nk+2k^{2}\\right)\\left(n^{2}+2nk+2k^{2}\\right)$
+ir salikts skaitlis. Tā kā par $k$ var izvēlēties jebkuru naturālu skaitli, tad
+ir bezgalīgi daudz atbilstošo $a$ vērtību.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.11.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Nezaudējot vispārīgumu, varam pieņemt, ka tabulā pa reizei ierakstīti skaitļi 
+no $1$ līdz $9$.
+
+1) Pierādīsim, ka iekrāsoto rūtiņu skaits nepārsniedz $7$. Nekad nevar būt 
+   iekrāsota rūtiņa, kurā ierakstīts $1$ (jo katrā no virzieniem kādā rūtiņā 
+   būs ierakstīts lielāks skaitlis). Ja nav iekrāsota rūtiņa ar $2$, tad jau 
+   divas rūtiņas ir neiekrāsotas un kopējais iekrāsoto rūtiņu skaits 
+   nepārsniedz $7$. Ja rūtiņa ar $2$ ir iekrāsota, tad tas iespējams tikai tad,
+   ja $1$ un $2$ abi atrodas uz "īsās" diagonāles (skat. 5.zīm.).
+
+   Aplūkosim tabulas stūra rūtiņas (skat. 6.zīm.). Rūtiņa ar mazāko no šiem 
+   četriem skaitļiem nebūs iekrāsota, jo visos virzienos ir kāda rūtiņa, kurā 
+   ierakstīts lielāks skaitlis. Tātad vēl vismaz viena rūtiņa ir neiekrāsota un
+   kopējais iekrāsoto rūtiņu skaits nepārsniedz $7$.
+
+![](LV.VOL.2012.11.2A.png)
+
+2) pierādīsim, ka iekrāsotas ir vismaz $5$ rūtiņas.
+
+   Aplūkosim četras rūtiņas, kas atrodas tabulas sānu malu vidū (skat. 7.zīm. 
+   iekrāsotās rūtiņas). Tās pa pāriem veido četras īsās diagonāles. Tātad 
+   vismaz divas no tām ir iekrāsotas. Aplūkosim visus trīs iespējamos 
+   variantus:
+
+      a. visas četras vidus rūtiņas ir iekrāsotas (skat. 7.zīm.). Bet tad jābūt
+	     iekrāsotai vismaz vēl vienai rūtiņai uz garās diagonāles. Līdz ar to 
+		 kopējais iekrāsoto rūtiņu skaits ir vismaz $5$.
+
+      b. iekrāsotas trīs vidus rūtiņas (skat. 8.zīm.). Aplūkosim rūtiņas, kas 
+	     atzīmētas ar " $x$ ". Katrām divām " $x$ " rūtiņām ir kopīgs viens 
+		 rūtiņu virziens (augšējā rinda, abas garās diagonāles). Katrā no šiem 
+		 virzieniem jābūt kādai iekrāsotai rūtiņai. Ar vienas rūtiņas 
+		 iekrāsošanu nevar "nosegt" visus trīs virzienus uzreiz. Tātad kopējais
+		 iekrāsoto rūtiņu skaits ir vismaz $3+2=5$.
+
+      c. iekrāsotas ir divas vidus rūtiņas (skat. 9.zīm.). Tā kā tās "nosedz" 
+	     visas četras īsās diagonāles, tad tām jābūt kādas rindas vai kolonnas 
+		 pretējām rūtiņām. Tā kā vairāk neviena sānu malu vidus rūtiņa nav 
+		 iekrāsota, tad vidējā kolonnā jābūt iekrāsotai centrālajai rūtiņai 
+		 (skat. 10.zīm.). Tas nozīmē, ka vēl pa vienai iekrāsotai rūtiņai jābūt
+		 tabulas augšējā un apakšējā rindā un kopējais iekrāsoto rūtiņu skaits 
+		 ir vismaz $5$.
+
+Tātad iekrāsoto rūtiņu skaits ir vismaz $5$ un ne vairāk par $7$. 11., 12. un 
+13.zīm. skat. piemērus katram no gadījumiem.
+
+![](LV.VOL.2012.11.2B.png)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Nezaudējot vispārīgumu, varam pieņemt, ka tabulā pa reizei ierakstīti skaitļi 
+no $1$ līdz $9$.</p>
+<p>1) Pierādīsim, ka iekrāsoto rūtiņu skaits nepārsniedz $7$. Nekad nevar būt 
+   iekrāsota rūtiņa, kurā ierakstīts $1$ (jo katrā no virzieniem kādā rūtiņā 
+   būs ierakstīts lielāks skaitlis). Ja nav iekrāsota rūtiņa ar $2$, tad jau 
+   divas rūtiņas ir neiekrāsotas un kopējais iekrāsoto rūtiņu skaits 
+   nepārsniedz $7$. Ja rūtiņa ar $2$ ir iekrāsota, tad tas iespējams tikai tad,
+   ja $1$ un $2$ abi atrodas uz "īsās" diagonāles (skat. 5.zīm.).</p>
+<p>Aplūkosim tabulas stūra rūtiņas (skat. 6.zīm.). Rūtiņa ar mazāko no šiem 
+   četriem skaitļiem nebūs iekrāsota, jo visos virzienos ir kāda rūtiņa, kurā 
+   ierakstīts lielāks skaitlis. Tātad vēl vismaz viena rūtiņa ir neiekrāsota un
+   kopējais iekrāsoto rūtiņu skaits nepārsniedz $7$.</p>
+<p><img alt="" src="LV.VOL.2012.11.2A.png" /></p>
+<p>2) pierādīsim, ka iekrāsotas ir vismaz $5$ rūtiņas.</p>
+<p>Aplūkosim četras rūtiņas, kas atrodas tabulas sānu malu vidū (skat. 7.zīm. 
+   iekrāsotās rūtiņas). Tās pa pāriem veido četras īsās diagonāles. Tātad 
+   vismaz divas no tām ir iekrāsotas. Aplūkosim visus trīs iespējamos 
+   variantus:</p>
+<pre><code>  a. visas četras vidus rūtiņas ir iekrāsotas (skat. 7.zīm.). Bet tad jābūt
+     iekrāsotai vismaz vēl vienai rūtiņai uz garās diagonāles. Līdz ar to 
+     kopējais iekrāsoto rūtiņu skaits ir vismaz $5$.
+
+  b. iekrāsotas trīs vidus rūtiņas (skat. 8.zīm.). Aplūkosim rūtiņas, kas 
+     atzīmētas ar " $x$ ". Katrām divām " $x$ " rūtiņām ir kopīgs viens 
+     rūtiņu virziens (augšējā rinda, abas garās diagonāles). Katrā no šiem 
+     virzieniem jābūt kādai iekrāsotai rūtiņai. Ar vienas rūtiņas 
+     iekrāsošanu nevar "nosegt" visus trīs virzienus uzreiz. Tātad kopējais
+     iekrāsoto rūtiņu skaits ir vismaz $3+2=5$.
+
+  c. iekrāsotas ir divas vidus rūtiņas (skat. 9.zīm.). Tā kā tās "nosedz" 
+     visas četras īsās diagonāles, tad tām jābūt kādas rindas vai kolonnas 
+     pretējām rūtiņām. Tā kā vairāk neviena sānu malu vidus rūtiņa nav 
+     iekrāsota, tad vidējā kolonnā jābūt iekrāsotai centrālajai rūtiņai 
+     (skat. 10.zīm.). Tas nozīmē, ka vēl pa vienai iekrāsotai rūtiņai jābūt
+     tabulas augšējā un apakšējā rindā un kopējais iekrāsoto rūtiņu skaits 
+     ir vismaz $5$.
+</code></pre>
+<p>Tātad iekrāsoto rūtiņu skaits ir vismaz $5$ un ne vairāk par $7$. 11., 12. un 
+13.zīm. skat. piemērus katram no gadījumiem.</p>
+<p><img alt="" src="LV.VOL.2012.11.2B.png" /></p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.11.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Izvēlēsimies vienu trijstūra malu (piem., $BC$) un caur mediānu $AD,\\ BE$ un 
+$CF$ krustpunktu $M$ novilksim tai paralēlu taisni, kas malas $AB$ un $AC$ 
+krusto attiecīgi punktos $G$ un $H$ (skat. 14.zīm.).
+
+![](LV.VOL.2012.11.3A.png)
+
+Trijstūra $AGH$ laukums ir $\\frac{4}{9}$ no trijstūra $ABC$ laukuma (seko no 
+Talesa teorēmas un mediānu īpašības). Tātad četrstūra $BGHC$ un trijstūra $AGH$
+laukumu attiecība ir $5:4$. Pierādīsim, ka šī arī ir lielākā iespējamā 
+trijstūra daļu laukumu attiecība. Aplūkosim, kas notiek, ja taisni $GH$ pagriež
+ap punktu $M$, iegūstot taisni $JK$. Tad $S_{AJK}=S_{AGH}-S_{KMH}+S_{GMJ}$. 
+Novelkam $HL \\parallel AB(L \\in JK). \\sphericalangle KHL=\\sphericalangle BAC$, 
+tāpēc $S_{KHL}>0,\\ S_{GMJ}=S_{MHL}$ pēc pazīmes ($\\ell m \\ell$): $GM=MH$ ($AM$ 
+ir $\\triangle GAH$ mediāna), $\\sphericalangle GMJ=\\sphericalangle LMH$ un
+$\\sphericalangle MGJ=\\sphericalangle MHL$. Tātad, neatkarīgi no punkta $J$ 
+izvēles, $S_{GMJ}>S_{MKH}$. Aplūkosim četrstūra $BJKC$ un trijstūra $AJK$ 
+laukumu attiecību:
+
+$$\\frac{S_{BJKC}}{S_{AKK}}=\\frac{S_{BGHC}-S_{GMJ}+S_{MKH}}{S_{AGH}+S_{GMJ}-S_{MKH}}<\\frac{S_{BGHC}}{S_{AGH}}=\\frac{5}{4}.$$
+
+Brīdī, kad $J$ punkts "sasniegs" $B$ (vai $K$ "sasniegs" $C$), abu daļu laukumi
+būs vienādi (mediāna dala trijstūri vienlielās daļās), t.i., šo laukumu 
+attiecība būs $1$.
+
+Analogi pierāda, ka $S_{BJM} \\geq S_{EKM}$, tāpēc 
+$\\frac{S_{BJKC}}{S_{AJK}}=\\frac{S_{BEC}+S_{BJM}-S_{EKM}}{S_{ABE}-S_{BJJ}+S_{EKM}} \\geq \\frac{S_{BEC}}{S_{ABE}}=1$.
+Tātad $1 \\leq \\frac{S_{BJKC}}{S_{AJK}} \\leq \\frac{5}{4}$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Izvēlēsimies vienu trijstūra malu (piem., $BC$) un caur mediānu $AD,\\ BE$ un 
+$CF$ krustpunktu $M$ novilksim tai paralēlu taisni, kas malas $AB$ un $AC$ 
+krusto attiecīgi punktos $G$ un $H$ (skat. 14.zīm.).</p>
+<p><img alt="" src="LV.VOL.2012.11.3A.png" /></p>
+<p>Trijstūra $AGH$ laukums ir $\\frac{4}{9}$ no trijstūra $ABC$ laukuma (seko no 
+Talesa teorēmas un mediānu īpašības). Tātad četrstūra $BGHC$ un trijstūra $AGH$
+laukumu attiecība ir $5:4$. Pierādīsim, ka šī arī ir lielākā iespējamā 
+trijstūra daļu laukumu attiecība. Aplūkosim, kas notiek, ja taisni $GH$ pagriež
+ap punktu $M$, iegūstot taisni $JK$. Tad $S_{AJK}=S_{AGH}-S_{KMH}+S_{GMJ}$. 
+Novelkam $HL \\parallel AB(L \\in JK). \\sphericalangle KHL=\\sphericalangle BAC$, 
+tāpēc $S_{KHL}>0,\\ S_{GMJ}=S_{MHL}$ pēc pazīmes ($\\ell m \\ell$): $GM=MH$ ($AM$ 
+ir $\\triangle GAH$ mediāna), $\\sphericalangle GMJ=\\sphericalangle LMH$ un
+$\\sphericalangle MGJ=\\sphericalangle MHL$. Tātad, neatkarīgi no punkta $J$ 
+izvēles, $S_{GMJ}>S_{MKH}$. Aplūkosim četrstūra $BJKC$ un trijstūra $AJK$ 
+laukumu attiecību:</p>
+<p>$$\\frac{S_{BJKC}}{S_{AKK}}=\\frac{S_{BGHC}-S_{GMJ}+S_{MKH}}{S_{AGH}+S_{GMJ}-S_{MKH}}<\\frac{S_{BGHC}}{S_{AGH}}=\\frac{5}{4}.$$
+
+Brīdī, kad $J$ punkts "sasniegs" $B$ (vai $K$ "sasniegs" $C$), abu daļu laukumi
+būs vienādi (mediāna dala trijstūri vienlielās daļās), t.i., šo laukumu 
+attiecība būs $1$.
+
+Analogi pierāda, ka $S_{BJM} \\geq S_{EKM}$, tāpēc 
+$\\frac{S_{BJKC}}{S_{AJK}}=\\frac{S_{BEC}+S_{BJM}-S_{EKM}}{S_{ABE}-S_{BJJ}+S_{EKM}} \\geq \\frac{S_{BEC}}{S_{ABE}}=1$.
+Tātad $1 \\leq \\frac{S_{BJKC}}{S_{AJK}} \\leq \\frac{5}{4}$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.11.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Ievērosim, ka $a_{n}$ ir augoša skaitļu virkne un visi tās locekļi ir lielāki 
+vai vienādi ar $5$.
+
+$$\\begin{gathered}
+a_{n}=a_{1}a_{2} \\ldots a_{n-1}+4 \\\\
+\\left(a_{n}\\right)^{2}=a_{1}a_{2} \\ldots a_{n-1}a_{n}+4a_{n} \\\\
+\\left(a_{n}\\right)^{2}-4a_{n}+4=a_{1}a_{2} \\ldots a_{n-1}a_{n}+4 \\\\
+\\left(a_{n}-2\\right)^{2}=a_{n+1}
+\\end{gathered}$$
+
+Tā kā $a_{n}-2>0$ visām $n$ vērtībām, varam vilkt kvadrātsakni no abām 
+vienādojuma pusēm.
+
+$a_{n}-2=\\sqrt{a_{n+1}}$ jeb $a_{n}-\\sqrt{a_{n+1}}=2$ visiem $n>1$.
+
+Atliek pārbaudīt gadījumu, ka 
+$n=1:a_{1}=5,\\ a_{2}=5+4=9,\\ a_{1}-\\sqrt{a_{2}}=5-\\sqrt{9}=2$. Tātad sakarība 
+ir spēkā visiem $n \\geq 1$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Ievērosim, ka $a_{n}$ ir augoša skaitļu virkne un visi tās locekļi ir lielāki 
+vai vienādi ar $5$.</p>
+<p>$$\\begin{gathered}
+a_{n}=a_{1}a_{2} \\ldots a_{n-1}+4 \\\\
+\\left(a_{n}\\right)^{2}=a_{1}a_{2} \\ldots a_{n-1}a_{n}+4a_{n} \\\\
+\\left(a_{n}\\right)^{2}-4a_{n}+4=a_{1}a_{2} \\ldots a_{n-1}a_{n}+4 \\\\
+\\left(a_{n}-2\\right)^{2}=a_{n+1}
+\\end{gathered}$$
+
+Tā kā $a_{n}-2&gt;0$ visām $n$ vērtībām, varam vilkt kvadrātsakni no abām 
+vienādojuma pusēm.
+
+$a_{n}-2=\\sqrt{a_{n+1}}$ jeb $a_{n}-\\sqrt{a_{n+1}}=2$ visiem $n&gt;1$.
+
+Atliek pārbaudīt gadījumu, ka 
+$n=1:a_{1}=5,\\ a_{2}=5+4=9,\\ a_{1}-\\sqrt{a_{2}}=5-\\sqrt{9}=2$. Tātad sakarība 
+ir spēkā visiem $n \\geq 1$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.11.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Otrais spēlētājs vienmēr var uzvarēt. Lai to panāktu, pēc katra pirmā spēlētāja
+gājiena viņš nogriež sev sektoru, kas ir simetrisks tikko nogrieztajam pirmā 
+spēlētāja sektoram attiecībā pret riņķa centru. Tādā veidā otrais spēlētājs 
+vienmēr varēs veikt gājienu, jo, ja pirmais spēlētājs sev varēja nogriezt kādu 
+sektoru, tad pirms viņa gājiena šis sektors vēl nebija nogriezts un attiecīgi 
+tam simetriskais sektors arī nebija nogriezts (ievērojam, ka sektora laukums 
+nav lielāks par $\\frac{1}{2}$, tāpēc simetriski sektori nepārklājas). Atliek 
+ievērot tikai to, ka spēle noteikti beigsies, jo ar katru gājienu riņķa 
+pieejamais laukums samazinās vismaz par $\\frac{1}{100}$ no pilnā riņķa laukuma 
+vērtības."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Otrais spēlētājs vienmēr var uzvarēt. Lai to panāktu, pēc katra pirmā spēlētāja
+gājiena viņš nogriež sev sektoru, kas ir simetrisks tikko nogrieztajam pirmā 
+spēlētāja sektoram attiecībā pret riņķa centru. Tādā veidā otrais spēlētājs 
+vienmēr varēs veikt gājienu, jo, ja pirmais spēlētājs sev varēja nogriezt kādu 
+sektoru, tad pirms viņa gājiena šis sektors vēl nebija nogriezts un attiecīgi 
+tam simetriskais sektors arī nebija nogriezts (ievērojam, ka sektora laukums 
+nav lielāks par $\\frac{1}{2}$, tāpēc simetriski sektori nepārklājas). Atliek 
+ievērot tikai to, ka spēle noteikti beigsies, jo ar katru gājienu riņķa 
+pieejamais laukums samazinās vismaz par $\\frac{1}{100}$ no pilnā riņķa laukuma 
+vērtības.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.12.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Der, piemēram, virknes $a_{i}=i+2013$ un $b_{i}=i$.
+
+$a_{b_{i}}=a_{i}=i+2013,\\ b_{a_{i}}=b_{i+2013}=i+2013,\\ a_{i}-b_{i}=2013>2012$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Der, piemēram, virknes $a_{i}=i+2013$ un $b_{i}=i$.</p>
+<p>$a_{b_{i}}=a_{i}=i+2013,\\ b_{a_{i}}=b_{i+2013}=i+2013,\\ a_{i}-b_{i}=2013>2012$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.12.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apzīmēsim $\\sphericalangle ACD=\\sphericalangle BCD=\\alpha$ un 
+$\\sphericalangle ABD=\\sphericalangle DBX=\\beta$ (skat. 15.zīm.). Tad 
+$\\sphericalangle ABC=180^{\\circ}-2 \\beta$,
+$\\sphericalangle BAC=180^{\\circ}-\\sphericalangle ABC-\\sphericalangle ACB=2 \\beta-2 \\alpha=2(\\beta-\\alpha)$ un
+$\\sphericalangle BDC=180^{\\circ}-\\sphericalangle DBA-\\sphericalangle ABC-\\sphericalangle DCB=180^{\\circ}-\\beta-\\left(180^{\\circ}-2 \\beta\\right)-\\alpha=\\beta-\\alpha$.
+
+![](LV.VOL.2012.12.2A.png)
+
+Aplūkosim divas riņķa līnijas, kas apvilktas attiecīgi trijstūriem $BDC$ un 
+$ABC$. Abas satur hordu $BC$. Trijstūrim $BDC$ apvilktajā riņķa līnijā uz šīs
+hordas balstās ievilktais leņķis $BDC$. Tātad atbilstošā centra leņķa lielumam 
+jābūt divreiz lielākam par $\\sphericalangle BDC$ jeb jābūt vienādam ar 
+$2(\\beta-\\alpha)=\\sphericalangle BAC$, kas sakrīt ar ap trijstūrim $ABC$ 
+apvilktās riņķa līnijas ievilktā leņķa, kas balstās uz hordu $BC$, lielumu.
+
+Tātad ap trijstūri $BDC$ apvilktās riņķa līnijas centrs atradīsies uz ap 
+trijstūri $ABC$ apvilktās riņķa līnijas."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apzīmēsim $\\sphericalangle ACD=\\sphericalangle BCD=\\alpha$ un 
+$\\sphericalangle ABD=\\sphericalangle DBX=\\beta$ (skat. 15.zīm.). Tad 
+$\\sphericalangle ABC=180^{\\circ}-2 \\beta$,
+$\\sphericalangle BAC=180^{\\circ}-\\sphericalangle ABC-\\sphericalangle ACB=2 \\beta-2 \\alpha=2(\\beta-\\alpha)$ un
+$\\sphericalangle BDC=180^{\\circ}-\\sphericalangle DBA-\\sphericalangle ABC-\\sphericalangle DCB=180^{\\circ}-\\beta-\\left(180^{\\circ}-2 \\beta\\right)-\\alpha=\\beta-\\alpha$.</p>
+<p><img alt="" src="LV.VOL.2012.12.2A.png" /></p>
+<p>Aplūkosim divas riņķa līnijas, kas apvilktas attiecīgi trijstūriem $BDC$ un 
+$ABC$. Abas satur hordu $BC$. Trijstūrim $BDC$ apvilktajā riņķa līnijā uz šīs
+hordas balstās ievilktais leņķis $BDC$. Tātad atbilstošā centra leņķa lielumam 
+jābūt divreiz lielākam par $\\sphericalangle BDC$ jeb jābūt vienādam ar 
+$2(\\beta-\\alpha)=\\sphericalangle BAC$, kas sakrīt ar ap trijstūrim $ABC$ 
+apvilktās riņķa līnijas ievilktā leņķa, kas balstās uz hordu $BC$, lielumu.</p>
+<p>Tātad ap trijstūri $BDC$ apvilktās riņķa līnijas centrs atradīsies uz ap 
+trijstūri $ABC$ apvilktās riņķa līnijas.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.12.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Acīmredzot vērtības $n=1$ un $n=2$ neder par vienādojuma saknēm, tāpēc apskatām
+gadījumu kad $n \\geq 3$. Vienādojuma labajā pusē ir $n-1$ saskaitāmie, kuri 
+visi nav mazāki par $1$ ($\\left[\\frac{n}{n+i}\\right]=0$ katram 
+$i=1,2, \\ldots, 2012$ ), tāpēc šajā gadījumā
+
+$$\\left[\\frac{n}{2}\\right]+\\left[\\frac{n}{3}\\right]+\\ldots \\geq\\left[\\frac{n}{2}\\right]+1+1+\\ldots+1=\\left[\\frac{n}{2}\\right]+n-2$$
+
+Tāpēc $n \\geq\\left[\\frac{n}{2}\\right]+n-2$, jeb 
+$2 \\geq\\left[\\frac{n}{2}\\right]$. No pēdējās nevienādības seko, ka 
+$\\frac{n}{2}<3$ un tāpēc $n \\leq 5$. Tāpēc $3 \\leq n \\leq 5$. Pārbaude rāda, ka
+der vērtības $n=4$ un $n=5$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Acīmredzot vērtības $n=1$ un $n=2$ neder par vienādojuma saknēm, tāpēc apskatām
+gadījumu kad $n \\geq 3$. Vienādojuma labajā pusē ir $n-1$ saskaitāmie, kuri 
+visi nav mazāki par $1$ ($\\left[\\frac{n}{n+i}\\right]=0$ katram 
+$i=1,2, \\ldots, 2012$ ), tāpēc šajā gadījumā</p>
+<p>$$\\left[\\frac{n}{2}\\right]+\\left[\\frac{n}{3}\\right]+\\ldots \\geq\\left[\\frac{n}{2}\\right]+1+1+\\ldots+1=\\left[\\frac{n}{2}\\right]+n-2$$
+
+Tāpēc $n \\geq\\left[\\frac{n}{2}\\right]+n-2$, jeb 
+$2 \\geq\\left[\\frac{n}{2}\\right]$. No pēdējās nevienādības seko, ka 
+$\\frac{n}{2}&lt;3$ un tāpēc $n \\leq 5$. Tāpēc $3 \\leq n \\leq 5$. Pārbaude rāda, ka
+der vērtības $n=4$ un $n=5$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.12.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** nav iespējams.
+
+Aplūkosim laukuma apakšējās malas rūtiņas (skat. 16.zīm.)
+
+![](LV.VOL.2012.12.4A.png)
+
+Ievērosim, ka neviena stūra rūtiņa nevar būt iekrāsota (jo katrai no tām ir 
+tikai divas kaimiņu rūtiņas). Pieņemsim, ka rūtiņas $n1$ iekrāsotā kaimiņu 
+rūtiņa ir $A$ (ja izvēlētos apakšējās rindas blakus rūtiņu, tad tālākie 
+spriedumi būtu simetriski jāattiecina uz kreiso malu). $A$ ir tikai trīs 
+kaimiņu rūtiņas - tātad tās visas ir neiekrāsotas un arī $n2$ ir neiekrāsota 
+(tātad $A$ ir $n2$ iekrāsotā kaimiņu rūtiņa un $n3$ ir neiekrāsota). Vienīgā 
+$n3$ kaiminu rūtiņa, kas var būt iekrāsota, ir $B$ un, tātad, neiekrāsotas ir 
+arī $n4$ un $n5$. $n6$ nevar būt iekrāsota, jo tad $n5$ būtu divi iekrāsoti 
+kaimiņi. $n6$ iekrāsotā kaimiņu rūtiņa var būt tikai $C$. $n7$ nevar būt 
+iekrāsota, jo tai ir tikai trīs kaimiņi, no kuriem viena rūtiņa jau ir 
+iekrāsota. Līdz ar to esam ieguvuši situāciju, ka apakšējā labā stūra rūtiņa 
+nevar būt nedz iekrāsota (tad $n6$ būtu divi iekrāsoti kaimiņi), nedz 
+neiekrāsota (jo tad tai nav iekrāsota kaimiņu rūtiņa). Tātad šāds krāsojums nav
+iespējams.
+
+**(B)** ir iespējams. Piemēram, skat., 17.zīm."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> nav iespējams.</p>
+<p>Aplūkosim laukuma apakšējās malas rūtiņas (skat. 16.zīm.)</p>
+<p><img alt="" src="LV.VOL.2012.12.4A.png" /></p>
+<p>Ievērosim, ka neviena stūra rūtiņa nevar būt iekrāsota (jo katrai no tām ir 
+tikai divas kaimiņu rūtiņas). Pieņemsim, ka rūtiņas $n1$ iekrāsotā kaimiņu 
+rūtiņa ir $A$ (ja izvēlētos apakšējās rindas blakus rūtiņu, tad tālākie 
+spriedumi būtu simetriski jāattiecina uz kreiso malu). $A$ ir tikai trīs 
+kaimiņu rūtiņas - tātad tās visas ir neiekrāsotas un arī $n2$ ir neiekrāsota 
+(tātad $A$ ir $n2$ iekrāsotā kaimiņu rūtiņa un $n3$ ir neiekrāsota). Vienīgā 
+$n3$ kaiminu rūtiņa, kas var būt iekrāsota, ir $B$ un, tātad, neiekrāsotas ir 
+arī $n4$ un $n5$. $n6$ nevar būt iekrāsota, jo tad $n5$ būtu divi iekrāsoti 
+kaimiņi. $n6$ iekrāsotā kaimiņu rūtiņa var būt tikai $C$. $n7$ nevar būt 
+iekrāsota, jo tai ir tikai trīs kaimiņi, no kuriem viena rūtiņa jau ir 
+iekrāsota. Līdz ar to esam ieguvuši situāciju, ka apakšējā labā stūra rūtiņa 
+nevar būt nedz iekrāsota (tad $n6$ būtu divi iekrāsoti kaimiņi), nedz 
+neiekrāsota (jo tad tai nav iekrāsota kaimiņu rūtiņa). Tātad šāds krāsojums nav
+iespējams.</p>
+<p><strong>(B)</strong> ir iespējams. Piemēram, skat., 17.zīm.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.12.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Novilksim dotajam riņķim pieskari un projecēsim uz tās uzzīmēto riņķu 
+diametrus, kas paralēli novilktajai piekarei (piem., skat., 18.zīm.). Šo 
+diametru projekciju garumi ir vienādi ar attiecīgo diametru garumiem. Visu 
+uzzīmēto riņķu diametru projekcijas atrodas nogriežņa $AB$ iekšpusē. Tā kā 
+nogriežņa $AB$ garums ir $1$, bet visu uzzīmēto riņķu diametru kopējais garums 
+(un tātad arī projekciju kopējais garums) lielāks nekā $8$, tad uz nogriežņa 
+$AB$ būs kāds punkts, kas pieder vairāk nekā $8$, t.i., vismaz $9$, riņķu 
+diametru projekcijām (pretējā gadījumā katrs nogriežņa $AB$ punkts pieder ne 
+vairāk kā $8$ diametru projekcijām, tātad to kopējais 18.zīm. garums 
+nepārsniedz $8$). Caur šo punktu velkot taisni perpendikulāri $AB$, tā krustos 
+vismaz deviņus uzzīmētos riņķus.
+
+![](LV.VOL.2012.12.5A.png)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Novilksim dotajam riņķim pieskari un projecēsim uz tās uzzīmēto riņķu 
+diametrus, kas paralēli novilktajai piekarei (piem., skat., 18.zīm.). Šo 
+diametru projekciju garumi ir vienādi ar attiecīgo diametru garumiem. Visu 
+uzzīmēto riņķu diametru projekcijas atrodas nogriežņa $AB$ iekšpusē. Tā kā 
+nogriežņa $AB$ garums ir $1$, bet visu uzzīmēto riņķu diametru kopējais garums 
+(un tātad arī projekciju kopējais garums) lielāks nekā $8$, tad uz nogriežņa 
+$AB$ būs kāds punkts, kas pieder vairāk nekā $8$, t.i., vismaz $9$, riņķu 
+diametru projekcijām (pretējā gadījumā katrs nogriežņa $AB$ punkts pieder ne 
+vairāk kā $8$ diametru projekcijām, tātad to kopējais 18.zīm. garums 
+nepārsniedz $8$). Caur šo punktu velkot taisni perpendikulāri $AB$, tā krustos 
+vismaz deviņus uzzīmētos riņķus.</p>
+<p><img alt="" src="LV.VOL.2012.12.5A.png" /></p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.9.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** No pieciem pēc kārtas ņemtiem naturāliem skaitļiem viens dalās ar $5$. 
+Tātad arī to reizinājums dalās ar $5$, bet $20112012$ ar $5$ nedalās.
+
+**(B)** No četriem pēc kārtas ņemtiem naturāliem skaitļiem ir divi pāra 
+skaitļi, no kuriem viens dalās ar $4$. Tātad to reizinājums dalās ar $8$, bet 
+$20112012$ ar $8$ nedalās."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> No pieciem pēc kārtas ņemtiem naturāliem skaitļiem viens dalās ar $5$. 
+Tātad arī to reizinājums dalās ar $5$, bet $20112012$ ar $5$ nedalās.</p>
+<p><strong>(B)</strong> No četriem pēc kārtas ņemtiem naturāliem skaitļiem ir divi pāra 
+skaitļi, no kuriem viens dalās ar $4$. Tātad to reizinājums dalās ar $8$, bet 
+$20112012$ ar $8$ nedalās.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.9.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Pieņemsim, ka šādu trijstūri iespējams izveidot. Pieņemsim, ka šī trijstūra 
+laukums ir $S$, tad tā malu garumi ir $\\frac{2S}{4}, \\frac{2S}{7}$ un 
+$\\frac{2S}{10}$. Divu īsāko malu garumu summai jābūt lielākai par trešās malas 
+garumu. Bet 
+$\\frac{2S}{7}+\\frac{2S}{10}=\\frac{17}{70} 2S=\\frac{34}{140} 2S<\\frac{35}{140} 2S=\\frac{2S}{4}$ - 
+pretruna. Tātad šādu trijstūri izveidot nav iespējams."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pieņemsim, ka šādu trijstūri iespējams izveidot. Pieņemsim, ka šī trijstūra 
+laukums ir $S$, tad tā malu garumi ir $\\frac{2S}{4}, \\frac{2S}{7}$ un 
+$\\frac{2S}{10}$. Divu īsāko malu garumu summai jābūt lielākai par trešās malas 
+garumu. Bet 
+$\\frac{2S}{7}+\\frac{2S}{10}=\\frac{17}{70} 2S=\\frac{34}{140} 2S<\\frac{35}{140} 2S=\\frac{2S}{4}$ - 
+pretruna. Tātad šādu trijstūri izveidot nav iespējams.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.9.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+**Atbilde:** $q_{2}=0$. 
+
+Pēc Vjeta teorēmas $q_{1}=ab,\\ q_{2}=bc,\\ q_{3}=ac$. Tātad 
+$ab \\leq bc \\leq ac \\leq 0$. Ja neviens no skaitļiem $a,\\ b$, $c$ nav nulle, 
+tad divi no tiem ir vai nu abi pozitīvi, vai abi negatīvi, tāpēc to reizinājums
+ir lielāks nekā nulle. Tātad vismaz viens no skaitļiem $a,\\ b,\\ c$ ir $0$. Tad 
+$q_{3}=ac=0$, tātad $a$ vai $c$ ir $0$. Ja $c=0$, tad $q_{2}=bc=0$. Ja 
+$a=0,\\ c \\neq 0$, tad $q_{1}=ab=0$ un no nevienādības $0 \\leq q_{2} \\leq 0$ 
+seko, ka $q_{2}=0$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>Atbilde:</strong> $q_{2}=0$. </p>
+<p>Pēc Vjeta teorēmas $q_{1}=ab,\\ q_{2}=bc,\\ q_{3}=ac$. Tātad 
+$ab \\leq bc \\leq ac \\leq 0$. Ja neviens no skaitļiem $a,\\ b$, $c$ nav nulle, 
+tad divi no tiem ir vai nu abi pozitīvi, vai abi negatīvi, tāpēc to reizinājums
+ir lielāks nekā nulle. Tātad vismaz viens no skaitļiem $a,\\ b,\\ c$ ir $0$. Tad 
+$q_{3}=ac=0$, tātad $a$ vai $c$ ir $0$. Ja $c=0$, tad $q_{2}=bc=0$. Ja 
+$a=0,\\ c \\neq 0$, tad $q_{1}=ab=0$ un no nevienādības $0 \\leq q_{2} \\leq 0$ 
+seko, ka $q_{2}=0$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.9.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Atradīsim $AE$ un $BC$ krustpunktu $D$ un pieņemsim, ka 
+$\\sphericalangle ADB=\\alpha \\leq 90^{\\circ}$.
+
+Novilksim perpendikulus $BF$ un $CG$ pret $AD$ (skat. 1.zīm.).
+
+![](LV.VOL.2012.9.4A.png)
+
+Pielietojot Pitagora teorēmu taisnleņķa trijstūros $ABF,\\ BEF,\\ ACG$ un $ECG$, 
+iegūstam:
+
+$$\\begin{align*}
+& AB^{2}-BE^{2}=\\left(AF^{2}+BF^{2}\\right)-\\left(BF^{2}+EF^{2}\\right)=AF^{2}-EF^{2}= \\\\
+& =(AF-EF)(AF+EF)=AE(AF+EF) \\\\
+& AC^{2}-EC^{2}=\\left(AG^{2}+CG^{2}\\right)-\\left(EG^{2}+CG^{2}\\right)=AG^{2}-EG^{2}= \\\\
+& =(AG-EG)(AG+EG)=AE(AG+EG)
+\\end{align*}$$
+
+Pēc dotā $AB^{2}-BE^{2}=AC^{2}-EC^{2}$ jeb $AF+EF=AG+EG$. Pieskaitot abām pusēm
+$AE$, iegūstam $AE+AF+EF=AE+AG+EG$ jeb $2AF=2AG$. Tātad punkti $F$ un $G$ 
+sakrīt ar $AD \\perp BC$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Atradīsim $AE$ un $BC$ krustpunktu $D$ un pieņemsim, ka 
+$\\sphericalangle ADB=\\alpha \\leq 90^{\\circ}$.</p>
+<p>Novilksim perpendikulus $BF$ un $CG$ pret $AD$ (skat. 1.zīm.).</p>
+<p><img alt="" src="LV.VOL.2012.9.4A.png" /></p>
+<p>Pielietojot Pitagora teorēmu taisnleņķa trijstūros $ABF,\\ BEF,\\ ACG$ un $ECG$, 
+iegūstam:</p>
+<p>$$\\begin{align*}
+& AB^{2}-BE^{2}=\\left(AF^{2}+BF^{2}\\right)-\\left(BF^{2}+EF^{2}\\right)=AF^{2}-EF^{2}= \\\\
+& =(AF-EF)(AF+EF)=AE(AF+EF) \\\\
+& AC^{2}-EC^{2}=\\left(AG^{2}+CG^{2}\\right)-\\left(EG^{2}+CG^{2}\\right)=AG^{2}-EG^{2}= \\\\
+& =(AG-EG)(AG+EG)=AE(AG+EG)
+\\end{align*}$$
+
+Pēc dotā $AB^{2}-BE^{2}=AC^{2}-EC^{2}$ jeb $AF+EF=AG+EG$. Pieskaitot abām pusēm
+$AE$, iegūstam $AE+AF+EF=AE+AG+EG$ jeb $2AF=2AG$. Tātad punkti $F$ un $G$ 
+sakrīt ar $AD \\perp BC$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2012.9.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Izkrāsosim doto figūru šaha galdiņa veidā, skat. 2.zīm.
+
+![](LV.VOL.2012.9.5A.png)
+
+Katra izgriežamā figūriņa aizņem tieši divas baltas un divas melnas rūtiņas. Tā
+kā ir deviņas baltas rūtiņas, tad var izgriezt ne vairāk kā četras figūriņas. 
+To, ka četras figūriņas var izgriezt, skat., piem., 3.zīm. (vienas figūrinas 
+rūtiņas apzīmētas ar vienādiem burtiem)."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Izkrāsosim doto figūru šaha galdiņa veidā, skat. 2.zīm.</p>
+<p><img alt="" src="LV.VOL.2012.9.5A.png" /></p>
+<p>Katra izgriežamā figūriņa aizņem tieši divas baltas un divas melnas rūtiņas. Tā
+kā ir deviņas baltas rūtiņas, tad var izgriezt ne vairāk kā četras figūriņas. 
+To, ka četras figūriņas var izgriezt, skat., piem., 3.zīm. (vienas figūrinas 
+rūtiņas apzīmētas ar vienādiem burtiem).</p>"""@lv .
+

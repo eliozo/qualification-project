@@ -183,7 +183,7 @@ eliozo:BBK2012.P3.117 a eliozo:Problem ;
     eliozo:problemID "BBK2012.P3.117" ;
     eliozo:problemText """Pierādiet, ka neeksistē tāds naturāls skaitlis $n>1$, 
 kuram $2^n-1$ dalās ar $n$."""@lv ;
-    eliozo:problemTextHtml """<p>Pierādiet, ka neeksistē tāds naturāls skaitlis $n&gt;1$, 
+    eliozo:problemTextHtml """<p>Pierādiet, ka neeksistē tāds naturāls skaitlis $n>1$, 
 kuram $2^n-1$ dalās ar $n$.</p>"""@lv ;
     eliozo:problem_number 117 ;
     eliozo:questionType "Prove" ;
@@ -224,8 +224,9 @@ $$x_1 = 9,\\;x_2 = 161,\\;x_{n+1}=18x_n - x_{n-1},\\;\\mbox{ja $n \\geq 2$}.$$
 Pierādiet, ka skaitlis $x_n^2 - 1$ dalās 
 ar $5$ visiem naturāliem skaitļiem $n$."""@lv ;
     eliozo:problemTextHtml """<p>Virkne ir definēta šādi:</p>
-<p>$$x_1 = 9,\\;x_2 = 161,\\;x_{n+1}=18x_n - x_{n-1},\\;\\mbox{ja $n \\geq 2$}.$$</p>
-<p>Pierādiet, ka skaitlis $x_n^2 - 1$ dalās 
+<p>$$x_1 = 9,\\;x_2 = 161,\\;x_{n+1}=18x_n - x_{n-1},\\;\\mbox{ja $n \\geq 2$}.$$
+
+Pierādiet, ka skaitlis $x_n^2 - 1$ dalās 
 ar $5$ visiem naturāliem skaitļiem $n$.</p>"""@lv ;
     eliozo:problem_number 75 ;
     eliozo:questionType "Prove" ;
@@ -247,8 +248,9 @@ $$a_0=a_1 = 1,\\;a_{n+1}=a_{n-1}a_n + 1,\\;\\mbox{ja $n \\geq 1$}.$$
 
 Pierādiet, ka skaitlis $a_{1964}$ nedalās ar $4$."""@lv ;
     eliozo:problemTextHtml """<p>Virkne ir definēta šādi:</p>
-<p>$$a_0=a_1 = 1,\\;a_{n+1}=a_{n-1}a_n + 1,\\;\\mbox{ja $n \\geq 1$}.$$</p>
-<p>Pierādiet, ka skaitlis $a_{1964}$ nedalās ar $4$.</p>"""@lv ;
+<p>$$a_0=a_1 = 1,\\;a_{n+1}=a_{n-1}a_n + 1,\\;\\mbox{ja $n \\geq 1$}.$$
+
+Pierādiet, ka skaitlis $a_{1964}$ nedalās ar $4$.</p>"""@lv ;
     eliozo:problem_number 76 ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "BBK2012.P3" ;
@@ -289,8 +291,9 @@ $$u_1=u_2=1,\\;u_{n+2}=u_{n+1}+u_n,\\;\\mbox{ja $n \\geq 1$}$$
 
 loceklis $u_{5k}$ dalās ar $5$ jebkurai naturālai $k$ vērtībai."""@lv ;
     eliozo:problemTextHtml """<p>Pierādiet, ka Fibonači virknes</p>
-<p>$$u_1=u_2=1,\\;u_{n+2}=u_{n+1}+u_n,\\;\\mbox{ja $n \\geq 1$}$$</p>
-<p>loceklis $u_{5k}$ dalās ar $5$ jebkurai naturālai $k$ vērtībai.</p>"""@lv ;
+<p>$$u_1=u_2=1,\\;u_{n+2}=u_{n+1}+u_n,\\;\\mbox{ja $n \\geq 1$}$$
+
+loceklis $u_{5k}$ dalās ar $5$ jebkurai naturālai $k$ vērtībai.</p>"""@lv ;
     eliozo:problem_number 78 ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "BBK2012.P3" ;
@@ -391,7 +394,7 @@ eliozo:BBK2012.P3.83 a eliozo:Problem ;
     eliozo:problemID "BBK2012.P3.83" ;
     eliozo:problemText """Pieņemsim, ka $2^n = 10a+b$, kur $n,a,b \\in \\mathbb{N}$ un $b < 10$.
 Pierādīt, ka skaitlis $ab$ dalās ar $6$."""@lv ;
-    eliozo:problemTextHtml """<p>Pieņemsim, ka $2^n = 10a+b$, kur $n,a,b \\in \\mathbb{N}$ un $b &lt; 10$.
+    eliozo:problemTextHtml """<p>Pieņemsim, ka $2^n = 10a+b$, kur $n,a,b \\in \\mathbb{N}$ un $b < 10$.
 Pierādīt, ka skaitlis $ab$ dalās ar $6$.</p>"""@lv ;
     eliozo:problem_number 83 ;
     eliozo:questionType "Prove" ;

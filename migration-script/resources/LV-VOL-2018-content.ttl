@@ -9,7 +9,7 @@ eliozo:LV.VOL.2018.10.1 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2018.10.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.10.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.10.1.SUB1 ;
     eliozo:problemText """Atrast visus tādus veselu skaitļu pārus $(x; y)$, kas apmierina nevienādību 
 sistēmu
 
@@ -19,9 +19,9 @@ x+2y<\\frac{15}{2}
 \\end{array} \\right.$$"""@lv ;
     eliozo:problemTextHtml """<p>Atrast visus tādus veselu skaitļu pārus $(x; y)$, kas apmierina nevienādību 
 sistēmu</p>
-<p>$$\\left{ \\begin{array}{c}
-2x^{2}+2y^{2}+24x-28y+167&lt;0 \\
-x+2y&lt;\\frac{15}{2}
+<p>$$\\left\\{ \\begin{array}{c}
+2x^{2}+2y^{2}+24x-28y+167<0 \\\\
+x+2y<\\frac{15}{2}
 \\end{array} \\right.$$</p>"""@lv ;
     eliozo:problemTimeID "2018" ;
     eliozo:problemYear 2018 ;
@@ -38,8 +38,7 @@ eliozo:LV.VOL.2018.10.2 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2018.10.2" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2018.10.2A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.10.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.10.2.SUB1 ;
     eliozo:problemText """Paralelograma $ABCD$ malu $BC$ un $CD$ viduspunkti attiecīgi ir $K$ un $M$. 
 Aprēķināt $AD$ garumu, ja $AK=6,\\ AM=3$ un $\\sphericalangle KAM=60^{\\circ}$."""@lv ;
     eliozo:problemTextHtml """<p>Paralelograma $ABCD$ malu $BC$ un $CD$ viduspunkti attiecīgi ir $K$ un $M$. 
@@ -60,8 +59,8 @@ eliozo:LV.VOL.2018.10.3 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2018.10.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.10.3.SUB0,
-        eliozo:SOLN.LV.VOL.2018.10.3.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.10.3.SUB1,
+        eliozo:SOLN.LV.VOL.2018.10.3.SUB2 ;
     eliozo:problemText """Skaitļus $a,\\ b,\\ c$ sauksim par *skaistu trijnieku*, ja tiem piemīt 
 šādas īpašības:
 
@@ -103,8 +102,7 @@ eliozo:LV.VOL.2018.10.4 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2018.10.4" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2018.10.4A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.10.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.10.4.SUB1 ;
     eliozo:problemText """Desmit šahisti katrs ar katru izspēlēja vienu šaha partiju, dažas no tām 
 beidzās neizšķirti. Ir zināms, ka bija tieši viens šahists, kas neizšķirti 
 nospēlēja tieši vienu partiju, divi šahisti - kas nospēlēja divas, trīs 
@@ -140,7 +138,7 @@ eliozo:LV.VOL.2018.10.5 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2018.10.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.10.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.10.5.SUB1 ;
     eliozo:problemText """Izvēlēti $12$ dažādi naturāli skaitļi, neviens no tiem nepārsniedz $35$. 
 Pierādīt, ka no šiem skaitļiem iespējams izvēlēties trīs atšķirīgus skaitļu 
 pārus tā, ka visiem trīs pāriem lielākā un mazākā skaitļa starpība ir vienāda! 
@@ -166,11 +164,10 @@ eliozo:LV.VOL.2018.11.1 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2018.11.1" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2018.11.1A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.11.1.SUB0,
-        eliozo:SOLN.LV.VOL.2018.11.1.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.11.1.SUB1,
+        eliozo:SOLN.LV.VOL.2018.11.1.SUB2 ;
     eliozo:problemText "Atrisināt nevienādību $|||x-2|-3|-7|<5$."@lv ;
-    eliozo:problemTextHtml "<p>Atrisināt nevienādību $|||x-2|-3|-7|&lt;5$.</p>"@lv ;
+    eliozo:problemTextHtml "<p>Atrisināt nevienādību $|||x-2|-3|-7|<5$.</p>"@lv ;
     eliozo:problemTimeID "2018" ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number 1 ;
@@ -186,7 +183,7 @@ eliozo:LV.VOL.2018.11.2 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2018.11.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.11.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.11.2.SUB1 ;
     eliozo:problemText """Vienādsānu trijstūrī $ABC$ no pamata $BC$ viduspunkta $H$ novilkts perpendikuls
 $HE$ pret sānu malu $AC$, punkts $O$ ir nogriežņa $HE$ viduspunkts. Pierādīt, 
 ka $AO \\perp BE$ !
@@ -211,7 +208,7 @@ eliozo:LV.VOL.2018.11.3 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2018.11.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.11.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.11.3.SUB1 ;
     eliozo:problemText """Skaitļus $a, b, c, d, e$ sauksim par *skaistu piecinieku*, ja tiem 
 piemīt šādas īpašības:
 
@@ -250,7 +247,7 @@ eliozo:LV.VOL.2018.11.4 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2018.11.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.11.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.11.4.SUB1 ;
     eliozo:problemText """Atrisināt vienādojumu sistēmu reālos skaitļos
 
 $$\\left\\{\\begin{array}{l}
@@ -259,9 +256,9 @@ y^{3}+4y=5z \\\\
 z^{3}+4z=5x
 \\end{array}\\right.$$"""@lv ;
     eliozo:problemTextHtml """<p>Atrisināt vienādojumu sistēmu reālos skaitļos</p>
-<p>$$\\left{\\begin{array}{l}
-x^{3}+4x=5y \\
-y^{3}+4y=5z \\
+<p>$$\\left\\{\\begin{array}{l}
+x^{3}+4x=5y \\\\
+y^{3}+4y=5z \\\\
 z^{3}+4z=5x
 \\end{array}\\right.$$</p>"""@lv ;
     eliozo:problemTimeID "2018" ;
@@ -279,7 +276,7 @@ eliozo:LV.VOL.2018.11.5 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2018.11.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.11.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.11.5.SUB1 ;
     eliozo:problemText """Trīs $500$ litru mucās atrodas attiecīgi $100,\\ 107$ un $113$ litri ūdens. 
 Vienā gājienā atļauts jebkurā mucā $M$ pieliet klāt no jebkuras citas mucas 
 (kurā ir vismaz tikpat daudz ūdens kā mucā $M$) tik daudz ūdens, cik mucā $M$ 
@@ -305,7 +302,7 @@ eliozo:LV.VOL.2018.12.1 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2018.12.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.12.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.12.1.SUB1 ;
     eliozo:problemText """Apzīmēsim $a=2018^{\\lg (\\lg 2018)},\\ b=(\\lg 2018)^{\\lg 2018}$ un 
 $c=(\\lg (\\lg 2018))^{2018}$. Aprēķināt izteiksmes 
 $\\frac{a-b}{c}+\\frac{b-c}{a}+\\frac{c-a}{b}$ vērtību!"""@lv ;
@@ -327,8 +324,7 @@ eliozo:LV.VOL.2018.12.2 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2018.12.2" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2018.12.2A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.12.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.12.2.SUB1 ;
     eliozo:problemText """Uz trijstūra $ABC$ malas $AB$ atlikti punkti $D$ un $E$ tā, ka $AD=DE=EB$, uz 
 malas $BC$ - punkti $F$ un $G$ tā, ka $BF=FG=GC$, uz malas $AC$ - punkts $H$ 
 tā, ka $2AH=CH$. Nogrieznis $DF$ krusto nogriežņus $EH$ un $EG$ attiecīgi 
@@ -352,7 +348,7 @@ eliozo:LV.VOL.2018.12.3 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2018.12.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.12.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.12.3.SUB1 ;
     eliozo:problemText "Atrisināt veselos skaitļos vienādojumu $x^{6}+3x^{3}+1=y^{4}$."@lv ;
     eliozo:problemTextHtml "<p>Atrisināt veselos skaitļos vienādojumu $x^{6}+3x^{3}+1=y^{4}$.</p>"@lv ;
     eliozo:problemTimeID "2018" ;
@@ -370,9 +366,7 @@ eliozo:LV.VOL.2018.12.4 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2018.12.4" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2018.12.4A.png,
-        eliozo:IMG.LV.VOL.2018.12.4B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.12.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.12.4.SUB1 ;
     eliozo:problemText """Taisnstūris, kura izmēri ir $n \\times m$ rūtiņas, griežot par rūtiņu līnijām, 
 sagriezts $1 \\times 6$ rūtiņas lielos taisnstūros. Pierādīt, ka $n$ vai $m$ 
 dalās ar $6$."""@lv ;
@@ -394,7 +388,7 @@ eliozo:LV.VOL.2018.12.5 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2018.12.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.12.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.12.5.SUB1 ;
     eliozo:problemText """Trīs mucās attiecīgi ir $a,\\ b$ un $c$ litri ūdens, kur $a,\\ b,\\ c$ ir naturāli
 skaitļi. Katras mucas tilpums ir lielāks nekā $a+b+c$ litri. Vienā gājienā 
 atļauts jebkurā mucā $M$ pieliet klāt no jebkuras citas mucas (kurā ir vismaz 
@@ -420,8 +414,8 @@ eliozo:LV.VOL.2018.9.1 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2018.9.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.9.1.SUB0,
-        eliozo:SOLN.LV.VOL.2018.9.1.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.9.1.SUB1,
+        eliozo:SOLN.LV.VOL.2018.9.1.SUB2 ;
     eliozo:problemText """Zināms, ka $a$ un $b$ ir pozitīvi skaitļi, un kvadrātfunkciju 
 $y=ax^{2}+2018x+b$ un $y=bx^{2}+2018x+a$ minimālo vērtību summa ir nulle. 
 Pierādīt, ka katrai no šīm kvadrātfunkcijām minimālā vērtība ir nulle!"""@lv ;
@@ -443,7 +437,7 @@ eliozo:LV.VOL.2018.9.2 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2018.9.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.9.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.9.2.SUB1 ;
     eliozo:problemText """Izvēlēti trīs dažādi naturāli skaitļi un aprēķināti to reizinājumi pa pāriem, 
 iegūstot trīs reizinājumus. Pierādīt, ka šos reizinājumus, dalot ar $4$, 
 vismaz divi dod vienādus atlikumus!"""@lv ;
@@ -465,9 +459,8 @@ eliozo:LV.VOL.2018.9.3 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2018.9.3" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2018.9.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.9.3.SUB0,
-        eliozo:SOLN.LV.VOL.2018.9.3.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.9.3.SUB1,
+        eliozo:SOLN.LV.VOL.2018.9.3.SUB2 ;
     eliozo:problemText """Rūtiņu tabulas ar izmēriem $8 \\times 14$ katrā rūtiņā sēž tieši viena muša. 
 Visas mušas pārlido uz citu tabulu ar izmēriem $7 \\times 16$ rūtiņas tā, ka 
 katrā rūtiņā atkal ir tieši viena muša. Vai iespējams, ka visas mušas, kas bija
@@ -493,9 +486,8 @@ eliozo:LV.VOL.2018.9.4 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2018.9.4" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2018.9.4A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.9.4.SUB0,
-        eliozo:SOLN.LV.VOL.2018.9.4.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.9.4.SUB1,
+        eliozo:SOLN.LV.VOL.2018.9.4.SUB2 ;
     eliozo:problemText """Dots vienādsānu trijstūris $ABC$, kuram $AC=6$ un $AB=BC=5$. Uz malas $AB$ 
 atlikts tāds punkts $D$, ka $BD=2$, un uz malas $AC$ atlikts tāds punkts $E$, 
 ka $AE=2$. Nogriežņi $BE$ un $CD$ krustojas punktā $M$. Aprēķināt trijstūra 
@@ -519,8 +511,7 @@ eliozo:LV.VOL.2018.9.5 a eliozo:Problem ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2018.9.5" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2018.9.5A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.9.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2018.9.5.SUB1 ;
     eliozo:problemText """Rindā izvietotas $2018$ monētas. Vienā gājienā drīkst paņemt vienu monētu, 
 pārcelt to pāri tieši divām monētām un uzlikt to uz nākamās monētas. Vai $1009$
 gājienos visas monētas iespējams savākt kaudzītēs pa divām monētām katrā 
@@ -539,44 +530,8 @@ kaudzītē?</p>
     eliozo:suffix "LV.VOL.2018.9" ;
     eliozo:suggestedGrade 9 .
 
-eliozo:IMG.LV.VOL.2018.10.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2018.10.2A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2018.10.4A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2018.10.4A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2018.11.1A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2018.11.1A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2018.12.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2018.12.2A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2018.12.4A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2018.12.4A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2018.12.4B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2018.12.4B.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2018.9.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2018.9.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2018.9.4A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2018.9.4A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2018.9.5A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2018.9.5A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:SOLN.LV.VOL.2018.10.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.10.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pārveidojam sistēmas pirmo nevienādību
@@ -602,70 +557,26 @@ Līdz ar to dotajai sistēmai ir divi atrisinājumi $(-6; 6)$ un $(-7; 7)$."""@l
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Pārveidojam sistēmas pirmo nevienādību</p>
 <p>$$\\begin{gathered}
-2\\left(x^{2}+12 x+36\\right)+2\\left(y^{2}-14y+49\\right)-3&lt;0 \\
-(x+6)^{2}+(y-7)^{2}&lt;\\frac{3}{2}
-\\end{gathered}$$</p>
-<p>Skaitļa kvadrāts ir nenegatīvs. Ja divu nenegatīvu veselu skaitļu summa ir 
-mazāka nekā $\\frac{3}{2}$, tad šie skaitļi var būt tikai $(0; 0),\\ (1; 0)$ vai 
-$(0; 1)$.</p>
-<table>
-<thead>
-<tr>
-<th align="center">$(\\boldsymbol{x}+\\mathbf{6})^{2}$</th>
-<th align="center">$(\\boldsymbol{y}-7)^{2}$</th>
-<th align="center">$\\boldsymbol{x}$</th>
-<th align="center">$\\boldsymbol{y}$</th>
-<th align="center">$\\boldsymbol{x}+\\mathbf{2y}$</th>
-<th align="center"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">$0$</td>
-<td align="center">$0$</td>
-<td align="center">$-6$</td>
-<td align="center">$7$</td>
-<td align="center">$-6+14=8&gt;\\frac{15}{2}$</td>
-<td align="center">neder</td>
-</tr>
-<tr>
-<td align="center">$0$</td>
-<td align="center">$1$</td>
-<td align="center">$-6$</td>
-<td align="center">$8$</td>
-<td align="center">$-6+16=10&gt;\\frac{15}{2}$</td>
-<td align="center">neder</td>
-</tr>
-<tr>
-<td align="center">$0$</td>
-<td align="center">$1$</td>
-<td align="center">$-6$</td>
-<td align="center">$6$</td>
-<td align="center">$-6+12=6&lt;\\frac{15}{2}$</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">$1$</td>
-<td align="center">$0$</td>
-<td align="center">$-5$</td>
-<td align="center">$7$</td>
-<td align="center">$-5+14=9&gt;\\frac{15}{2}$</td>
-<td align="center">neder</td>
-</tr>
-<tr>
-<td align="center">$1$</td>
-<td align="center">$0$</td>
-<td align="center">$-7$</td>
-<td align="center">$7$</td>
-<td align="center">$-7+14=7&lt;\\frac{15}{2}$</td>
-<td align="center"></td>
-</tr>
-</tbody>
-</table>
-<p>Līdz ar to dotajai sistēmai ir divi atrisinājumi $(-6; 6)$ un $(-7; 7)$.</p>"""@lv .
+2\\left(x^{2}+12 x+36\\right)+2\\left(y^{2}-14y+49\\right)-3<0 \\\\
+(x+6)^{2}+(y-7)^{2}<\\frac{3}{2}
+\\end{gathered}$$
 
-eliozo:SOLN.LV.VOL.2018.10.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+Skaitļa kvadrāts ir nenegatīvs. Ja divu nenegatīvu veselu skaitļu summa ir 
+mazāka nekā $\\frac{3}{2}$, tad šie skaitļi var būt tikai $(0; 0),\\ (1; 0)$ vai 
+$(0; 1)$.
+
+| $(\\boldsymbol{x}+\\mathbf{6})^{2}$ | $(\\boldsymbol{y}-7)^{2}$ | $\\boldsymbol{x}$ | $\\boldsymbol{y}$ | $\\boldsymbol{x}+\\mathbf{2y}$ |  |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| $0$ | $0$ | $-6$ | $7$ | $-6+14=8&gt;\\frac{15}{2}$ | neder |
+| $0$ | $1$ | $-6$ | $8$ | $-6+16=10&gt;\\frac{15}{2}$ | neder |
+| $0$ | $1$ | $-6$ | $6$ | $-6+12=6&lt;\\frac{15}{2}$ |  |
+| $1$ | $0$ | $-5$ | $7$ | $-5+14=9&gt;\\frac{15}{2}$ | neder |
+| $1$ | $0$ | $-7$ | $7$ | $-7+14=7&lt;\\frac{15}{2}$ |  |
+
+Līdz ar to dotajai sistēmai ir divi atrisinājumi $(-6; 6)$ un $(-7; 7)$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2018.10.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Novelkam $KM,\\ BD$ un ar $E$ apzīmējam $BD$ un $AM$ krustpunktu (skat. 8.att.).
@@ -737,13 +648,14 @@ teorēmu trijstūrī $KAM$:</p>
 </blockquote>
 </blockquote>
 </blockquote>
-<p>$$KM^{2}=AK^{2}+AM^{2}-2 \\cdot AK \\cdot AM \\cdot \\cos \\sphericalangle KAM \\quad \\Rightarrow \\quad KM=3 \\sqrt{3}$$</p>
-<p>Pamatot, ka $\\sphericalangle KMA=90^{\\circ}$, var arī izmantojot Pitagora 
+<p>$$KM^{2}=AK^{2}+AM^{2}-2 \\cdot AK \\cdot AM \\cdot \\cos \\sphericalangle KAM \\quad \\Rightarrow \\quad KM=3 \\sqrt{3}$$
+
+Pamatot, ka $\\sphericalangle KMA=90^{\\circ}$, var arī izmantojot Pitagora 
 teorēmas apgriezto teorēmu, tas ir, tā kā $AK^{2}+KM^{2}=AM^{2}$, tad 
 trijstūris $KAM$ ir taisnleņķa.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **(A)** *Skaists trijnieks* ir, piemēram, $110$ (dalās ar $2$), $111$
@@ -766,8 +678,9 @@ tad *skaistu trijnieku* ir bezgalīgi daudz.
 (dalās ar $3$), $112$ (dalās ar $4$).</p>
 <p><strong>(B)</strong> Aplūkosim skaitļus, ko iegūst no skaitļiem $110,\\ 111$ un $112$, aiz 
 pirmā cipara ievietojot $n$ nuļļu grupu:</p>
-<p>$$1 \\underbrace{0 \\ldots 0}<em>{n} 10; 1 \\underbrace{0 \\ldots 0}</em>{n} 11; 1 \\underbrace{0 \\ldots 0}_{n} 12$$</p>
-<p>Iegūtie skaitļi joprojām ir secīgi. Pirmā skaitļa ciparu summa ir $2$, un tas 
+<p>$$1 \\underbrace{0 \\ldots 0}_{n} 10; 1 \\underbrace{0 \\ldots 0}_{n} 11; 1 \\underbrace{0 \\ldots 0}_{n} 12$$
+
+Iegūtie skaitļi joprojām ir secīgi. Pirmā skaitļa ciparu summa ir $2$, un tas 
 dalās ar $2$. Otrā skaitļa ciparu summa ir $3$, tātad tas dalās ar $3$. Trešā 
 skaitļa ciparu summa ir $4$, un tas dalās ar $4$, jo tā pēdējo divu ciparu 
 veidotais skaitlis dalās ar $4$. Tā kā $n$ var būt jebkurš naturāls skaitlis, 
@@ -775,8 +688,8 @@ tad <em>skaistu trijnieku</em> ir bezgalīgi daudz.
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 =======</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.10.3.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.VOL.2018.10.3.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums 
 
 Vispirms apskatām vienkāršāku uzdevumu – "labu skaitļu" ķēdītes garumā $2$.  
@@ -822,8 +735,8 @@ Skaitļi $110,111,112$ dalās ar attiecīgi ar $2,3,4$.</p>
 </blockquote>
 </blockquote>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.10.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.10.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Šahistus apzīmējam ar punktiem. Ja divi šahisti spēlējuši neizšķirti viens ar 
@@ -855,8 +768,8 @@ kas spēlējuši viens ar otru, tas ir, noteikti tika izspēlēts vismaz viens
 <p><strong>(B)</strong> Nē, skat., piemēram, 10.att.</p>
 <p><img alt="" src="LV.VOL.2018.10.4A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.10.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.10.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pieņemsim pretējo, ka eksistē tāds $12$ skaitļu komplekts, kur visas starpības 
@@ -974,8 +887,8 @@ aplūkojam iespējamos gadījumus.</p>
    starpība $34$ dod pretrunu.</li>
 </ol>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.11.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.11.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Tā kā moduļa vērtība ir mazāka nekā $5$, tad
@@ -991,16 +904,16 @@ Iespējami divi gadījumi:
    $-1 < x-2 < 1$ jeb $1 < x < 3$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Tā kā moduļa vērtība ir mazāka nekā $5$, tad</p>
-<p>$-5 &lt; ||x-2|-3|-7 &lt; 5$ jeb $2 &lt; || x-2|-3| &lt; 12$</p>
+<p>$-5 < ||x-2|-3|-7 < 5$ jeb $2 < || x-2|-3| < 12$</p>
 <p>Iespējami divi gadījumi:</p>
-<p>1) $2 &lt; |x-2|-3 &lt; 12$ jeb $5 &lt; |x-2| &lt; 15$ un atkal iespējami divi gadījumi
-   a. $5 &lt; x-2 &lt; 15$ jeb $7 &lt; x &lt; 17$;
-   b. $-15 &lt; x-2 &lt; -5$ jeb $-13 &lt; x &lt; -3$;
-2) $-12 &lt; |x-2|-3 &lt; -2$ jeb $-9 &lt; |x-2| &lt; 1$ un tā kā modulis ir nenegatīvs, tad 
-   $-1 &lt; x-2 &lt; 1$ jeb $1 &lt; x &lt; 3$.</p>"""@lv .
+<p>1) $2 < |x-2|-3 < 12$ jeb $5 < |x-2| < 15$ un atkal iespējami divi gadījumi
+   a. $5 < x-2 < 15$ jeb $7 < x < 17$;
+   b. $-15 < x-2 < -5$ jeb $-13 < x < -3$;
+2) $-12 < |x-2|-3 < -2$ jeb $-9 < |x-2| < 1$ un tā kā modulis ir nenegatīvs, tad 
+   $-1 < x-2 < 1$ jeb $1 < x < 3$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.11.1.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.VOL.2018.11.1.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Doto nevienādību var atrisināt, pakāpeniski veidojot funkciju 
@@ -1023,10 +936,10 @@ zem taisnes $y=5$. Līdz ar to $x \\in(-13; -3) \\cup(1; 3) \\cup(7; 17)$.
 $y=|x-2|,\\ y=|x-2|-3$, $y=|| x-2|-3|,\\ y=|| x-2|-3|-7,\\ y=|||x-2|-3|-7|$ 
 grafikus, ievērojot, ka funkcijas</p>
 <ul>
-<li>$y=f(x)-a$, kur $a&gt;0$, grafiku iegūst, funkcijas $y=f(x)$ grafiku pārbīdot 
+<li>$y=f(x)-a$, kur $a>0$, grafiku iegūst, funkcijas $y=f(x)$ grafiku pārbīdot 
   paralēli $Oy$ asij par $a$ vienībām uz leju;</li>
 <li>$y=|f(x)|$ grafiku iegūst, nemainot to grafika $y=f(x)$ daļu, kur 
-  $f(x) \\geq 0$, un to grafika daļu, kur $f(x)&lt;0$, attēlojot simetriski 
+  $f(x) \\geq 0$, un to grafika daļu, kur $f(x)<0$, attēlojot simetriski 
   attiecībā pret $Ox$ asi.</li>
 </ul>
 <p>Rezultātā iegūst 11.att. doto grafiku. Atbildi nolasa no grafika, atrodot 
@@ -1034,8 +947,8 @@ krustpunktus ar taisni $y=5$ un izvēloties tos intervālus, kur grafiks atrodas
 zem taisnes $y=5$. Līdz ar to $x \\in(-13; -3) \\cup(1; 3) \\cup(7; 17)$.</p>
 <p><img alt="" src="LV.VOL.2018.11.1A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.11.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.11.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Vienādsānu trijstūrī mediāna, kas vilkta no virsotnes, ir arī augstums un 
@@ -1060,8 +973,8 @@ tad $\\triangle FOA \\sim \\triangle HEA$ pēc pazīmes $m \\ell m$. Tātad
 $\\sphericalangle FOA=90^{\\circ}$. Bet $BE \\parallel OF$, jo $FO$ ir 
 $\\triangle BHE$ viduslīnija. Tāpēc $BE \\perp AO$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.11.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.11.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **(A)** *Skaists piecinieks* ir, piemēram,
@@ -1113,8 +1026,9 @@ ir bezgalīgi daudz.
 <p><strong>(B)</strong> Aplūkosim skaitļus, ko iegūst no skaitļiem 
 $27027024,\\ 27027025,\\ 27027026,\\ 27027027$ un $27027028$, pirms pēdējiem 
 diviem cipariem ievietojot $n$ nuļļu grupu:</p>
-<p>$$27027 \\underbrace{0 \\ldots 0}<em>{n} 24; 27027 \\underbrace{0 \\ldots 0}</em>{n} 25; 27027 \\underbrace{0 \\ldots 0}<em>{n} 26; 27027 \\underbrace{0 \\ldots 0}</em>{n} 27; 27027 \\underbrace{0 \\ldots 0}_{n} 28$$</p>
-<p>Iegūtie skaitļi joprojām ir secīgi un tā kā tika pievienotas tikai nulles, tad 
+<p>$$27027 \\underbrace{0 \\ldots 0}_{n} 24; 27027 \\underbrace{0 \\ldots 0}_{n} 25; 27027 \\underbrace{0 \\ldots 0}_{n} 26; 27027 \\underbrace{0 \\ldots 0}_{n} 27; 27027 \\underbrace{0 \\ldots 0}_{n} 28$$
+
+Iegūtie skaitļi joprojām ir secīgi un tā kā tika pievienotas tikai nulles, tad 
 ciparu summa nemainās, tas ir, ciparu summas attiecīgi ir $24,\\ 25,\\ 26,\\ 27$ 
 un $28$. Katru no šiem skaitļiem var uzrakstīt formā $27027 \\cdot 10^{n+2}+x$, 
 kur $x=24,25,26,27,28$. Pamatosim, ka šie skaitļi dalās ar savu ciparu summu. 
@@ -1122,9 +1036,10 @@ Ievērojam, ka
 $27027 \\cdot 10^{n+2}+x=27 \\cdot 1001 \\cdot 10^{3} \\cdot 10^{n-1}+x=2^{3} \\cdot 3^{3} \\cdot 5^{3} \\cdot 7 \\cdot 11 \\cdot 13 \\cdot 10^{n-1}+x$
 un ka pirmais saskaitāmais dalās ar visām iespējamām $x$ vērtībām, tas ir, ar 
 $24,\\ 25,\\ 26,\\ 27$ un $28$. Tā kā abi saskaitāmie dalās ar $x$, tad arī pats 
-skaitlis dalās ar $x$.</p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-Tā kā $n$ var būt jebkurš naturāls skaitlis, tad <em>skaistu piecinieku</em> ir 
+skaitlis dalās ar $x$.
+
+<<<<<<< HEAD
+Tā kā $n$ var būt jebkurš naturāls skaitlis, tad *skaistu piecinieku* ir 
 bezgalīgi daudz.
 =======
 Tā kā $n$ var būt jebkurš naturāls skaitlis, tad <em>skaistu piecinieku</em>
@@ -1145,8 +1060,8 @@ ir bezgalīgi daudz.</p>
 </blockquote>
 </blockquote>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.11.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.11.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Dotās sistēmas atrisinājumi ir $(0; 0; 0);\\ (1; 1; 1)$ un $(-1; -1; -1)$. 
@@ -1177,8 +1092,8 @@ jeb $x^{3}-x=0$, tātad $x_{1}=-1,\\ x_{2}=0,\\ x_{3}=1$. Pārbaude apstiprina, 
 $x=y=z=-1,\\ x=y=z=0$ un $x=y=z=1$ patiešām der kā šīs vienādojumu sistēmas 
 atrisinājumi.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.11.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.11.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **(A)** Vienu mucu ir iespējams iztukšot, skat., piemēram, tālāk dotajā tabulā
@@ -1213,46 +1128,46 @@ tā nav iespējams iegūt situāciju, kad visās mucās ūdens daudzums dalās a
 <table>
 <thead>
 <tr>
-<th align="center">$100$</th>
-<th align="center">$107$</th>
-<th align="center">$113$</th>
+<th style="text-align: center;">$100$</th>
+<th style="text-align: center;">$107$</th>
+<th style="text-align: center;">$113$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">$100$</td>
-<td align="center">$107+107=214$</td>
-<td align="center">$113-107=6$</td>
+<td style="text-align: center;">$100$</td>
+<td style="text-align: center;">$107+107=214$</td>
+<td style="text-align: center;">$113-107=6$</td>
 </tr>
 <tr>
-<td align="center">$100+100=200$</td>
-<td align="center">$214-100=114$</td>
-<td align="center">$6$</td>
+<td style="text-align: center;">$100+100=200$</td>
+<td style="text-align: center;">$214-100=114$</td>
+<td style="text-align: center;">$6$</td>
 </tr>
 <tr>
-<td align="center">$200$</td>
-<td align="center">$114-6=108$</td>
-<td align="center">$6+6=12$</td>
+<td style="text-align: center;">$200$</td>
+<td style="text-align: center;">$114-6=108$</td>
+<td style="text-align: center;">$6+6=12$</td>
 </tr>
 <tr>
-<td align="center">$200$</td>
-<td align="center">$108-12=96$</td>
-<td align="center">$12+12=24$</td>
+<td style="text-align: center;">$200$</td>
+<td style="text-align: center;">$108-12=96$</td>
+<td style="text-align: center;">$12+12=24$</td>
 </tr>
 <tr>
-<td align="center">$200-24=176$</td>
-<td align="center">$96$</td>
-<td align="center">$24+24=48$</td>
+<td style="text-align: center;">$200-24=176$</td>
+<td style="text-align: center;">$96$</td>
+<td style="text-align: center;">$24+24=48$</td>
 </tr>
 <tr>
-<td align="center">$176-48=128$</td>
-<td align="center">$96$</td>
-<td align="center">$48+48=96$</td>
+<td style="text-align: center;">$176-48=128$</td>
+<td style="text-align: center;">$96$</td>
+<td style="text-align: center;">$48+48=96$</td>
 </tr>
 <tr>
-<td align="center">$128$</td>
-<td align="center">$0$</td>
-<td align="center">$192$</td>
+<td style="text-align: center;">$128$</td>
+<td style="text-align: center;">$0$</td>
+<td style="text-align: center;">$192$</td>
 </tr>
 </tbody>
 </table>
@@ -1271,8 +1186,8 @@ gan $x$, gan $y$, gan $z$ dalās ar $5$, tātad, ja pēc kāda soļa visās muc�
 kā sākotnējais ūdens daudzums ne visās mucās dalās ar $5$, tad skaidrs, ka no 
 tā nav iespējams iegūt situāciju, kad visās mucās ūdens daudzums dalās ar $5$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.12.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.12.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Izmantojot logaritmu īpašību $m^{\\log m}=t$, iegūstam, ka 
@@ -1288,8 +1203,8 @@ $a=2018^{\\lg (\\lg 2018)}=\\lg 2018^{\\lg 2018}=b$ (šeit $x=2018$ un
 $y=\\lg 2018$). Līdz ar to</p>
 <p>$$\\frac{a-b}{c}+\\frac{b-c}{a}+\\frac{c-a}{b}=0+\\frac{a-c}{a}+\\frac{c-a}{a}=0$$</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.12.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.12.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Nogriežņi $DF$ un $GE$ ir trijstūra $BDG$ mediānas (skat. 13.att.). Mediānas 
@@ -1326,8 +1241,8 @@ $EH \\parallel BJ$. Pēc Talesa teorēmas secinām, ka $DP=PR$.
 Tā kā $DR=2RF$ un $DP=PR$, tad $DP=PR=RF$.</p>
 <p><img alt="" src="LV.VOL.2018.12.2A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.12.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.12.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Der skaitļu pāri $(0; 1)$ un $(0; -1)$. Pierādīsim, ka citu atrisinājumu nav.
@@ -1349,19 +1264,19 @@ tikai divi atrisinājumi $(0; 1)$ un $(0; -1)$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Der skaitļu pāri $(0; 1)$ un $(0; -1)$. Pierādīsim, ka citu atrisinājumu nav.</p>
 <p>Apzīmējam $x^{3}=a$, tad $y^{4}=a^{2}+3a+1$.</p>
-<p>Ja $a \\geq 1$, tad $a^{2}+2a+1 &lt; a^{2}+3a+1 &lt; a^{2}+4a+4$, tātad arī 
-$(a+1)^{2} &lt; y^{4} &lt; (a+2)^{2}$, redzams, ka $y^{4}$ (kas ir naturāla skaitļa 
+<p>Ja $a \\geq 1$, tad $a^{2}+2a+1 < a^{2}+3a+1 < a^{2}+4a+4$, tātad arī 
+$(a+1)^{2} < y^{4} < (a+2)^{2}$, redzams, ka $y^{4}$ (kas ir naturāla skaitļa 
 kvadrāts) atrodas starp divu pēc kārtas esošu naturālu skaitļu kvadrātiem - 
-pretruna. Ja $a \\leq-4$, tad $a^{2}+4a+4 &lt; a^{2}+3a+1 &lt; a^{2}+2a+1$, tātad arī 
-$(a+2)^{2} &lt; y^{4} &lt; (a+1)^{2}$ un, tieši tāpat kā iepriekš, iegūstam pretrunu, ka 
+pretruna. Ja $a \\leq-4$, tad $a^{2}+4a+4 < a^{2}+3a+1 < a^{2}+2a+1$, tātad arī 
+$(a+2)^{2} < y^{4} < (a+1)^{2}$ un, tieši tāpat kā iepriekš, iegūstam pretrunu, ka 
 $y^{4}$ atrodas starp diviem pēc kārtas esošu skaitļu kvadrātiem.</p>
 <p>Tātad $-3 \\leq a \\leq 0$. Tā kā $a=x^{3}$, tad $a=0$ vai $a=-1$.</p>
 <p>Ja $a=0$, tad $x=0$, no kā izriet, ka $y= \\pm 1$. Ja $a=-1$, tad $x=-1$, un 
 iegūstam, ka $y^{4}=-1$, kam atrisinājuma nav. Tātad dotajam vienādojumam ir 
 tikai divi atrisinājumi $(0; 1)$ un $(0; -1)$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.12.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.12.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Sākotnējo rūtiņu laukumu šaha veidā izkrāsosim $3 \\times 3$ rūtiņas lielos 
@@ -1412,8 +1327,8 @@ taisnstūrī melno un balto rūtiņu skaits nav vienāds un to nevar sadalīt
 taisnstūros $1 \\times 6$ rūtiņas.</p>
 <p><img alt="" src="LV.VOL.2018.12.4B.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.12.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.12.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Apskatām mucu, kurā ir vismazāk ūdens. Parādīsim, kā kādā no pārējām mucām 
@@ -1456,33 +1371,37 @@ gājienu virknes, panāksim, ka kādā no mucām ūdens vairs nebūs."""@lv ;
 iegūt mazāk ūdens nekā šajā mucā. Tad skaidrs, ka, atkārtojot šo procesu, agrāk
 vai vēlāk kāda no mucām būs tukša.</p>
 <p>Apzīmējam mucas ar $A$ (sākumā tajā ir $a$ litri), $B$ ($b$ litri) un $C$ ($c$ 
-litri) un, nezaudējot vispārīgumu, pieņemam, ka $0 &lt; a \\leq b \\leq c$. Aplūkojam 
+litri) un, nezaudējot vispārīgumu, pieņemam, ka $0 < a \\leq b \\leq c$. Aplūkojam 
 mucas $A$ un $B$.</p>
-<p>Izsakām $b=a \\cdot x+y$, kur $0 \\leq y &lt; a$, bet $x$ izsakām binārā formā:</p>
-<p>$$x=x_{0}+2 x_{1}+2^{2}x_{2}+2^{3}x_{3}+\\cdots+2^{k}x_{k}$$</p>
-<p>kur $x_{i}$ ir vai nu $0$, vai $1$ visiem $i=0,1, \\ldots, k$.</p>
-<p>Veiksim pārliešanas uz mucu $A$, izdarot $k+1$ gājienu (gājienus numurēsim no 
-$0$ līdz $k$):</p>
-<ul>
-<li>ja $x_{i}=1$, tad $i$-tajā gājienā pārlejam ūdeni no mucas $B$ mucā $A$;</li>
-<li>ja $x_{i}=0$, tad $i$-tajā gājienā pārlejam ūdeni no mucas $C$ mucā $A$.</li>
-</ul>
-<p>Katrā gājienā ūdens daudzums mucā $A$ dubultojas un $i$-tajā gājienā mucā tiek 
+<p>Izsakām $b=a \\cdot x+y$, kur $0 \\leq y < a$, bet $x$ izsakām binārā formā:</p>
+<p>$$x=x_{0}+2 x_{1}+2^{2}x_{2}+2^{3}x_{3}+\\cdots+2^{k}x_{k}$$
+
+kur $x_{i}$ ir vai nu $0$, vai $1$ visiem $i=0,1, \\ldots, k$.
+
+Veiksim pārliešanas uz mucu $A$, izdarot $k+1$ gājienu (gājienus numurēsim no 
+$0$ līdz $k$):
+
+- ja $x_{i}=1$, tad $i$-tajā gājienā pārlejam ūdeni no mucas $B$ mucā $A$;
+- ja $x_{i}=0$, tad $i$-tajā gājienā pārlejam ūdeni no mucas $C$ mucā $A$.
+
+Katrā gājienā ūdens daudzums mucā $A$ dubultojas un $i$-tajā gājienā mucā tiek 
 ielieti $2^{i}a$ litri ūdens. Tā kā katram naturālam $m$ izpildās nevienādība 
 $1+2+2^{2}+2^{3}+\\cdots+2^{m-1}=\\frac{1 \\cdot\\left(2^{m}-1\\right)}{2-1}&lt;2^{m}$,
 tad mucā $B$ pietiks ūdens, lai veiktu kārtējo gājienu neatkarīgi no tā, cik 
-reizes veikta liešana no $C$ uz $A$.</p>
-<p>Pat, ja no $B$ uz $A$ būs jāveic tikai viena - pēdējā liešana, no $C$ 
+reizes veikta liešana no $C$ uz $A$.
+
+Pat, ja no $B$ uz $A$ būs jāveic tikai viena - pēdējā liešana, no $C$ 
 pārlietais ūdens daudzums nepārsniedz 
 $a\\left(1+2+2^{2}+2^{3}+\\cdots+2^{k-1}\\right) &lt; a2^{k} \\leq b \\leq c$, tātad mucā
-$C$ pietiks ūdens, lai veiktu nepieciešamos gājienus.</p>
-<p>Ar aprakstītajiem gājieniem tiks panākts, ka mucā $B$ paliek $y$ litri ūdens, 
+$C$ pietiks ūdens, lai veiktu nepieciešamos gājienus.
+
+Ar aprakstītajiem gājieniem tiks panākts, ka mucā $B$ paliek $y$ litri ūdens, 
 bet, tā kā $y &lt; a$, tad tagad mucā $B$ ir mazāk ūdens nekā sākotnēji bija mucā 
 $A$ (tas ir, tagad mucā $B$ ir vismazākais ūdens daudzums). Atkārtojot līdzīgas
 gājienu virknes, panāksim, ka kādā no mucām ūdens vairs nebūs.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.9.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.9.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Abām dotajām kvadrātfunkcijām ir vienāds sakņu skaits, jo tām ir vienāds 
@@ -1499,8 +1418,8 @@ nebūtu sakņu, tad to minimālās vērtības būtu pozitīvas un summa arī poz
 Tātad tām abām ir tieši viena sakne, kas nozīmē, ka to minimālā vērtība ir 
 nulle.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.9.1.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.VOL.2018.9.1.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Tā kā $a$ un $b$ ir pozitīvi skaitļi, tad abu parabolu zari ir vērsti uz augšu 
@@ -1546,22 +1465,26 @@ $y_{v_{1}}=a \\cdot\\left(-\\frac{1009}{a}\\right)^{2}+2018 \\cdot\\left(-\\frac
 $y_{v_{2}}=b \\cdot\\left(-\\frac{1009}{b}\\right)^{2}+2018 \\cdot\\left(-\\frac{1009}{b}\\right)+a=-\\frac{1009^{2}}{b}+a$</p>
 <p>Tā kā abu kvadrātfunkciju minimālo vērtību summa ir nulle, tad</p>
 <p>$$\\begin{gathered}
--\\frac{1009^{2}}{a}+b-\\frac{1009^{2}}{b}+a=0 \\
-a+b-\\frac{1009^{2}}{ab}(a+b)=0 \\
+-\\frac{1009^{2}}{a}+b-\\frac{1009^{2}}{b}+a=0 \\\\
+a+b-\\frac{1009^{2}}{ab}(a+b)=0 \\\\
 (a+b)\\left(1-\\frac{1009^{2}}{ab}\\right)=0
-\\end{gathered}$$</p>
-<p>Tā kā $a+b&gt;0$, tad $\\left(1-\\frac{1009^{2}}{ab}\\right)=0$ jeb $ab=1009^{2}$. 
+\\end{gathered}$$
+
+Tā kā $a+b&gt;0$, tad $\\left(1-\\frac{1009^{2}}{ab}\\right)=0$ jeb $ab=1009^{2}$. 
 Tātad $b=\\frac{1009^{2}}{a}$ un 
 $y_{v_{1}}=-\\frac{1009^{2}}{a}+\\frac{1009^{2}}{a}=0$. Līdzīgi iegūst, ka 
-$y_{v_{2}}=0$.</p>
-<p><em>Piezīme.</em> Kvadrātfunkcijas minimālo vērtību var atrast arī atdalot 
-pilno kvadrātu:</p>
-<p>$$y=ax^{2}+2018 x+b=a\\left(x^{2}+2 \\cdot 1009 \\cdot x \\cdot \\frac{1}{a}+\\frac{1009^{2}}{a^{2}}\\right)+b-\\frac{1009^{2}}{a^{2}}=a\\left(x+\\frac{1009}{a}\\right)^{2}+b-\\frac{1009^{2}}{a^{2}}$$</p>
-<p>Tā kā $a\\left(x+\\frac{1009}{a}\\right)^{2} \\geq 0$, tad kvadrātfunkcijas 
+$y_{v_{2}}=0$.
+
+*Piezīme.* Kvadrātfunkcijas minimālo vērtību var atrast arī atdalot 
+pilno kvadrātu:
+
+$$y=ax^{2}+2018 x+b=a\\left(x^{2}+2 \\cdot 1009 \\cdot x \\cdot \\frac{1}{a}+\\frac{1009^{2}}{a^{2}}\\right)+b-\\frac{1009^{2}}{a^{2}}=a\\left(x+\\frac{1009}{a}\\right)^{2}+b-\\frac{1009^{2}}{a^{2}}$$
+
+Tā kā $a\\left(x+\\frac{1009}{a}\\right)^{2} \\geq 0$, tad kvadrātfunkcijas 
 minimālā vērtība $y_{v_{1}}=b-\\frac{1009^{2}}{a^{2}}$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.9.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.9.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Katru naturālu skaitli $n$ var izteikt formā $n=4b+a$, kur $b \\in \\mathbb{Z}$ 
@@ -1606,8 +1529,8 @@ reizinājumi dod atlikumu $0$.<br />
    tas ir, ir vienāds ar $2$.</p>
 <p>Esam aplūkojuši visus gadījumus un prasītais pierādīts.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.9.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.9.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pamatosim, ka prasītais nav iespējams. Pieņemsim, ka mušas ir pārlidojušas tā, 
@@ -1641,8 +1564,8 @@ tabulas vidējās rūtiņās, bet tad tās būtu pazaudējušas vismaz vienu kai
 kas ir pretrunā ar pieņēmumu.</p>
 <p><img alt="" src="LV.VOL.2018.9.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.9.3.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.VOL.2018.9.3.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Pamatosim, ka prasītais nav iespējams. Saskaitīsim, cik mušu pāri bija kaimiņi 
@@ -1659,8 +1582,8 @@ pārlidošanas kaimiņu skaits bija $7 \\cdot 14+8 \\cdot 13=202$, bet pēc
 pārlidošanas tas ir $6 \\cdot 16+7 \\cdot 15=201$, tātad ir vismaz viens mušu 
 pāris, kas bija kaimiņi pirms pārlidošanas, bet nav kaimiņi pēc.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.9.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.9.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Novelkam trijstūrī $ABC$ augstumu $BH$ (skat. 2.att.). Tā kā $BH$ ir arī 
@@ -1692,8 +1615,8 @@ vienādi. Tātad
 $S_{BMC}=\\frac{1}{2} S_{BEC}=\\frac{1}{2} \\cdot 4 \\cdot \\frac{4}{2}=4$.</p>
 <p><img alt="" src="LV.VOL.2018.9.4A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.9.4.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.VOL.2018.9.4.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Novelkam trijstūrī $ABC$ augstumu $BH$ (skat. 3.att.). Tā kā $BH$ ir arī 
@@ -1724,8 +1647,8 @@ Tā kā $BM=ME$ kā atbilstošās malas vienādos trijstūros un trijstūriem $B
 $MEC$ sakrīt augstums, tad 
 $S_{BMC}=S_{MEC}=\\frac{1}{2} S_{BEC}=\\frac{1}{2} \\cdot 8=4$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2018.9.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2018.9.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pamatosim, ka prasītais ir iespējams. Ja ir $10$ monētas vai $8$ monētas, tad 
