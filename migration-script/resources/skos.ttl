@@ -13,7 +13,7 @@ eliozo:AddingOrMultiplyingInequalities a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "AddingOrMultiplyingInequalities" ;
     eliozo:skillName "Vairāku nevienādību saskaitīšana vai reizināšana" ;
-    eliozo:skillNumber "1.3.4.1.0" ;
+    eliozo:skillNumber "1.3.3.1.0" ;
     skos:broader eliozo:ProvingInequalitiesWithOtherInequalities ;
     skos:prefLabel "AddingOrMultiplyingInequalities" .
 
@@ -397,7 +397,7 @@ eliozo:CauchyBunyakovsky a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "CauchyBunyakovsky" ;
     eliozo:skillName "Košī-Buņakovska nevienādība" ;
-    eliozo:skillNumber "1.3.4.3.0" ;
+    eliozo:skillNumber "1.3.3.3.0" ;
     skos:broader eliozo:ProvingInequalitiesWithOtherInequalities ;
     skos:prefLabel "CauchyBunyakovsky" .
 
@@ -437,7 +437,7 @@ eliozo:ChebyshevInequality a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "ChebyshevInequality" ;
     eliozo:skillName "Čebiševa nevienādība" ;
-    eliozo:skillNumber "1.3.4.4.0" ;
+    eliozo:skillNumber "1.3.3.4.0" ;
     skos:broader eliozo:ProvingInequalitiesWithOtherInequalities ;
     skos:prefLabel "ChebyshevInequality" .
 
@@ -464,14 +464,6 @@ eliozo:ChineseRemainderTheorem a eliozo:Skill ;
     eliozo:skillNumber "4.4.7.0.0" ;
     skos:broader eliozo:IntegerCongruence ;
     skos:prefLabel "ChineseRemainderTheorem" .
-
-eliozo:ChoosingComplexInductionVariable a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "ChoosingComplexInductionVariable" ;
-    eliozo:skillName "Sarežģīta indukcijas parametra izvēle." ;
-    eliozo:skillNumber "5.1.9.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "ChoosingComplexInductionVariable" .
 
 eliozo:CircleAnglesTangents a eliozo:Skill ;
     eliozo:skillDescription "" ;
@@ -525,7 +517,7 @@ eliozo:CombinatorialInterpretations a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "CombinatorialInterpretations" ;
     eliozo:skillName "Kombinatoriskās interpretācijas" ;
-    eliozo:skillNumber "1.1.8.2.0" ;
+    eliozo:skillNumber "1.1.7.2.0" ;
     skos:broader eliozo:InterpretationsInAlgebra ;
     skos:prefLabel "CombinatorialInterpretations" .
 
@@ -1413,7 +1405,7 @@ eliozo:FactorizingPrimePower a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "FactorizingPrimePower" ;
     eliozo:skillName "Skaitļa pieraksts formā $p^k \\cdot u$" ;
-    eliozo:skillNumber "4.9.9.2.0" ;
+    eliozo:skillNumber "4.9.2.0.0" ;
     skos:broader eliozo:Valuation ;
     skos:prefLabel "FactorizingPrimePower" .
 
@@ -1581,7 +1573,7 @@ eliozo:GeometricInterpretations a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "GeometricInterpretations" ;
     eliozo:skillName "Ģeometriskās interpretācijas" ;
-    eliozo:skillNumber "1.1.8.4.0" ;
+    eliozo:skillNumber "1.1.7.4.0" ;
     skos:broader eliozo:InterpretationsInAlgebra ;
     skos:prefLabel "GeometricInterpretations" .
 
@@ -1849,54 +1841,6 @@ eliozo:IndependentRandomVariables a eliozo:Skill ;
     skos:broader eliozo:DiscreteRandomVariablesMoments ;
     skos:prefLabel "IndependentRandomVariables" .
 
-eliozo:InductionByDigits a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "InductionByDigits" ;
-    eliozo:skillName "Indukcija pa cipariem skaitļa decimālajā pierakstā" ;
-    eliozo:skillNumber "4.9.6.0.0" ;
-    skos:broader eliozo:NumTheoryMathInduction ;
-    skos:prefLabel "InductionByDigits" .
-
-eliozo:InductionByProduct a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "InductionByProduct" ;
-    eliozo:skillName "Indukcija pēc reizinājuma." ;
-    eliozo:skillNumber "5.1.8.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "InductionByProduct" .
-
-eliozo:InductionInAlgorithmCorrectness a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "InductionInAlgorithmCorrectness" ;
-    eliozo:skillName "Indukcija algoritmu pareizības pierādījumos" ;
-    eliozo:skillNumber "5.1.12.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "InductionInAlgorithmCorrectness" .
-
-eliozo:InductionMethodGeometry a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "InductionMethodGeometry" ;
-    eliozo:skillName "Indukcijas metode ģeometrijā" ;
-    eliozo:skillNumber "5.1.13.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "InductionMethodGeometry" .
-
-eliozo:InductionNtoNplusOne a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "InductionNtoNplusOne" ;
-    eliozo:skillName "Shēma $n \\rightarrow n+1$" ;
-    eliozo:skillNumber "5.1.2.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "InductionNtoNplusOne" .
-
-eliozo:InductionOtherStepSizes a eliozo:Skill ;
-    eliozo:skillDescription "Šajā punktā apskatāmi citi indukcijas soļi, kas lielāki par $1$ un arī indukcija ar plašāku bāzi un hipotēzi" ;
-    eliozo:skillID "InductionOtherStepSizes" ;
-    eliozo:skillName "Shēma $n, n+1 \\rightarrow n+2$" ;
-    eliozo:skillNumber "5.1.3.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "InductionOtherStepSizes" .
-
 eliozo:InductiveAlgorithms a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "InductiveAlgorithms" ;
@@ -1925,7 +1869,7 @@ eliozo:InequalitiesAndIntegrals a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "InequalitiesAndIntegrals" ;
     eliozo:skillName "Integrāļa lietošana" ;
-    eliozo:skillNumber "1.3.5.3.0" ;
+    eliozo:skillNumber "1.3.4.3.0" ;
     skos:broader eliozo:InequalitySolvingWithRealAnalysis ;
     skos:prefLabel "InequalitiesAndIntegrals" .
 
@@ -1941,7 +1885,7 @@ eliozo:InequalitiesBetweenMeanValues a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "InequalitiesBetweenMeanValues" ;
     eliozo:skillName "Nevienādības starp klasiskajiem vidējiem lielumiem" ;
-    eliozo:skillNumber "1.3.4.2.0" ;
+    eliozo:skillNumber "1.3.3.2.0" ;
     skos:broader eliozo:ProvingInequalitiesWithOtherInequalities ;
     skos:prefLabel "InequalitiesBetweenMeanValues" .
 
@@ -2021,7 +1965,7 @@ eliozo:InequalitiesGeometricInterpretations a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "InequalitiesGeometricInterpretations" ;
     eliozo:skillName "Ģeometriskās interpretācijas" ;
-    eliozo:skillNumber "1.3.6.1.0" ;
+    eliozo:skillNumber "1.3.5.1.0" ;
     skos:broader eliozo:InequalitiesInterpretations ;
     skos:prefLabel "InequalitiesGeometricInterpretations" .
 
@@ -2037,7 +1981,7 @@ eliozo:InequalitiesProbabilisticInterpretations a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "InequalitiesProbabilisticInterpretations" ;
     eliozo:skillName "Varbūtību teorijas interpretācijas" ;
-    eliozo:skillNumber "1.3.6.2.0" ;
+    eliozo:skillNumber "1.3.5.2.0" ;
     skos:broader eliozo:InequalitiesInterpretations ;
     skos:prefLabel "InequalitiesProbabilisticInterpretations" .
 
@@ -2104,14 +2048,6 @@ eliozo:InequallitiesAcuteTriangle a eliozo:Skill ;
     eliozo:skillNumber "3.10.1.11.0" ;
     skos:broader eliozo:InequalitiesForTriangleElements ;
     skos:prefLabel "InequallitiesAcuteTriangle" .
-
-eliozo:InfiniteDescent a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "InfiniteDescent" ;
-    eliozo:skillName "Bezgalīgā kritiena metode" ;
-    eliozo:skillNumber "4.9.8.0.0" ;
-    skos:broader eliozo:NumTheoryMathInduction ;
-    skos:prefLabel "InfiniteDescent" .
 
 eliozo:InfiniteLoops a eliozo:Skill ;
     eliozo:skillDescription "Spriedumi par algoritmu ieciklošanos" ;
@@ -2365,7 +2301,7 @@ eliozo:JensenInequality a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "JensenInequality" ;
     eliozo:skillName "Jensena nevienādība" ;
-    eliozo:skillNumber "1.3.4.5.0" ;
+    eliozo:skillNumber "1.3.3.5.0" ;
     skos:broader eliozo:ProvingInequalitiesWithOtherInequalities ;
     skos:prefLabel "JensenInequality" .
 
@@ -2389,7 +2325,7 @@ eliozo:KummerTheoremCombinations a eliozo:Skill ;
     eliozo:skillDescription "Lielākā pirmskaitļa pakāpe, ar kuru dalās binomiālais koeficients izteikta ar ciparu summām" ;
     eliozo:skillID "KummerTheoremCombinations" ;
     eliozo:skillName "Kummera teorēma par binomu koeficientiem" ;
-    eliozo:skillNumber "4.9.9.5.2" ;
+    eliozo:skillNumber "4.9.5.2.0" ;
     skos:broader eliozo:ValuationsForFactorials ;
     skos:prefLabel "KummerTheoremCombinations" .
 
@@ -2437,7 +2373,7 @@ eliozo:LegendreFormulaFactorials a eliozo:Skill ;
     eliozo:skillDescription "Izmantot Ležandra formulu $\\nu_p(n!) = \\lfloor p/n \\rfloor + \\lfloor p/n^2 \\rfloor + \\ldots$" ;
     eliozo:skillID "LegendreFormulaFactorials" ;
     eliozo:skillName "Ležandra formula" ;
-    eliozo:skillNumber "4.9.9.5.1" ;
+    eliozo:skillNumber "4.9.5.1.0" ;
     skos:broader eliozo:ValuationsForFactorials ;
     skos:prefLabel "LegendreFormulaFactorials" .
 
@@ -2469,7 +2405,7 @@ eliozo:LiftingTheExponentOdd a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "LiftingTheExponentOdd" ;
     eliozo:skillName "Kāpinātāja pacelšana nepāra pirmskaitlim" ;
-    eliozo:skillNumber "4.9.9.4.1" ;
+    eliozo:skillNumber "4.9.4.1.0" ;
     skos:broader eliozo:LiftingTheExponent ;
     skos:prefLabel "LiftingTheExponentOdd" .
 
@@ -2477,7 +2413,7 @@ eliozo:LiftingTheExponentTwo a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "LiftingTheExponentTwo" ;
     eliozo:skillName "Kāpinātāja pacelšana pie $p=2$" ;
-    eliozo:skillNumber "4.9.9.4.2" ;
+    eliozo:skillNumber "4.9.4.2.0" ;
     skos:broader eliozo:LiftingTheExponent ;
     skos:prefLabel "LiftingTheExponentTwo" .
 
@@ -2493,7 +2429,7 @@ eliozo:LinearOptimization a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "LinearOptimization" ;
     eliozo:skillName "Nevienādību sistēmas; lineārā programmēšana" ;
-    eliozo:skillNumber "1.3.7.0.0" ;
+    eliozo:skillNumber "1.3.6.0.0" ;
     skos:broader eliozo:ProvingInequalities ;
     skos:prefLabel "LinearOptimization" .
 
@@ -2520,14 +2456,6 @@ eliozo:LinearRecurrencesVariable a eliozo:Skill ;
     eliozo:skillNumber "2.1.2.2.0" ;
     skos:broader eliozo:MethodOfRecurrentRelations ;
     skos:prefLabel "LinearRecurrencesVariable" .
-
-eliozo:LinearRecurrentReleations a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "LinearRecurrentReleations" ;
-    eliozo:skillName "Lineārās rekurentās sakarības" ;
-    eliozo:skillNumber "4.9.7.0.0" ;
-    skos:broader eliozo:NumTheoryMathInduction ;
-    skos:prefLabel "LinearRecurrentReleations" .
 
 eliozo:LinearSystemsApplications a eliozo:Skill ;
     eliozo:skillDescription "" ;
@@ -2597,7 +2525,7 @@ eliozo:LucasTheoremCombinations a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "LucasTheoremCombinations" ;
     eliozo:skillName "Lūkas teorēma par binomu koeficientiem" ;
-    eliozo:skillNumber "4.9.9.5.3" ;
+    eliozo:skillNumber "4.9.5.3.0" ;
     skos:broader eliozo:ValuationsForFactorials ;
     skos:prefLabel "LucasTheoremCombinations" .
 
@@ -2608,22 +2536,6 @@ eliozo:MagicGraphs a eliozo:Skill ;
     eliozo:skillNumber "2.2.6.2.0" ;
     skos:broader eliozo:GraphEnumeration ;
     skos:prefLabel "MagicGraphs" .
-
-eliozo:MathInductionAndExpressions a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "MathInductionAndExpressions" ;
-    eliozo:skillName "Matemātiskā indukcija" ;
-    eliozo:skillNumber "1.1.7.0.0" ;
-    skos:broader eliozo:AlgebraicTransformations ;
-    skos:prefLabel "MathInductionAndExpressions" .
-
-eliozo:MathInductionForInequalities a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "MathInductionForInequalities" ;
-    eliozo:skillName "Matemātiskās indukcijas metode" ;
-    eliozo:skillNumber "1.3.3.0.0" ;
-    skos:broader eliozo:ProvingInequalities ;
-    skos:prefLabel "MathInductionForInequalities" .
 
 eliozo:MathObjectsAsGraphs a eliozo:Skill ;
     eliozo:skillDescription "" ;
@@ -2961,14 +2873,6 @@ eliozo:NumTheoryIdentities a eliozo:Skill ;
     skos:broader eliozo:NumTheoryTransformations ;
     skos:prefLabel "NumTheoryIdentities" .
 
-eliozo:NumTheoryInductiveConstructions a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "NumTheoryInductiveConstructions" ;
-    eliozo:skillName "Induktīvas konstrukcijas skaitļu teorijā" ;
-    eliozo:skillNumber "4.9.5.0.0" ;
-    skos:broader eliozo:NumTheoryMathInduction ;
-    skos:prefLabel "NumTheoryInductiveConstructions" .
-
 eliozo:NumTheoryInequalityLargeIntervals a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "NumTheoryInequalityLargeIntervals" ;
@@ -2992,22 +2896,6 @@ eliozo:NumTheoryInequalitySmallIntervals a eliozo:Skill ;
     eliozo:skillNumber "4.6.2.0.0" ;
     skos:broader eliozo:NumTheoryInequalityMethod ;
     skos:prefLabel "NumTheoryInequalitySmallIntervals" .
-
-eliozo:NumTheoryMathInductionPlusA a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "NumTheoryMathInductionPlusA" ;
-    eliozo:skillName "Matemātiskā indukcija skaitļu teorijā $k \\rightarrow k+a$" ;
-    eliozo:skillNumber "4.9.2.0.0" ;
-    skos:broader eliozo:NumTheoryMathInduction ;
-    skos:prefLabel "NumTheoryMathInductionPlusA" .
-
-eliozo:NumTheoryMathInductionPlusOne a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "NumTheoryMathInductionPlusOne" ;
-    eliozo:skillName "Matemātiskā indukcija skaitļu teorijā $k \\rightarrow k+1$" ;
-    eliozo:skillNumber "4.9.1.0.0" ;
-    skos:broader eliozo:NumTheoryMathInduction ;
-    skos:prefLabel "NumTheoryMathInductionPlusOne" .
 
 eliozo:NumTheoryPigeonholeCombinations a eliozo:Skill ;
     eliozo:skillDescription "" ;
@@ -3121,14 +3009,6 @@ eliozo:OtherExtremeElement a eliozo:Skill ;
     skos:broader eliozo:ExtremeElementMethod ;
     skos:prefLabel "OtherExtremeElement" .
 
-eliozo:OtherInduction a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "OtherInduction" ;
-    eliozo:skillName "Citas indukcijas metodes" ;
-    eliozo:skillNumber "5.1.14.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "OtherInduction" .
-
 eliozo:OtherInterpretationsInCounting a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "OtherInterpretationsInCounting" ;
@@ -3184,14 +3064,6 @@ eliozo:ParallelAndCentralProjections a eliozo:Skill ;
     eliozo:skillNumber "5.6.3.0.0" ;
     skos:broader eliozo:InterpretationMethod ;
     skos:prefLabel "ParallelAndCentralProjections" .
-
-eliozo:ParallelInduction a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "ParallelInduction" ;
-    eliozo:skillName "Pastiprinātu apgalvojumu pierādīšana. Paralēlā indukcija." ;
-    eliozo:skillNumber "5.1.6.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "ParallelInduction" .
 
 eliozo:ParallelTranslations a eliozo:Skill ;
     eliozo:skillDescription "" ;
@@ -3545,22 +3417,6 @@ eliozo:ProvingFinitenessOfSomeProcess a eliozo:Skill ;
     skos:broader eliozo:PartitioningInfinityIntoFinitelyManyParts ;
     skos:prefLabel "ProvingFinitenessOfSomeProcess" .
 
-eliozo:ProvingIsolatedCasesWithInduction a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "ProvingIsolatedCasesWithInduction" ;
-    eliozo:skillName "Indukcija atsevišķu apgalvojumu pierādīšanā" ;
-    eliozo:skillNumber "5.1.11.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "ProvingIsolatedCasesWithInduction" .
-
-eliozo:ProvingStatementsInSteps a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "ProvingStatementsInSteps" ;
-    eliozo:skillName "Atsevišķu apgalvojumu pakāpeniska pierādīšana" ;
-    eliozo:skillNumber "5.1.1.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "ProvingStatementsInSteps" .
-
 eliozo:PseudoScalarProduct a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "PseudoScalarProduct" ;
@@ -3749,7 +3605,7 @@ eliozo:RealAnalysisAndExtremes a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "RealAnalysisAndExtremes" ;
     eliozo:skillName "Ekstrēma atrašana" ;
-    eliozo:skillNumber "1.3.5.1.0" ;
+    eliozo:skillNumber "1.3.4.1.0" ;
     skos:broader eliozo:InequalitySolvingWithRealAnalysis ;
     skos:prefLabel "RealAnalysisAndExtremes" .
 
@@ -3757,7 +3613,7 @@ eliozo:RealAnalysisAndMonotonicity a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "RealAnalysisAndMonotonicity" ;
     eliozo:skillName "Funkcijas monotonitāte" ;
-    eliozo:skillNumber "1.3.5.2.0" ;
+    eliozo:skillNumber "1.3.4.2.0" ;
     skos:broader eliozo:InequalitySolvingWithRealAnalysis ;
     skos:prefLabel "RealAnalysisAndMonotonicity" .
 
@@ -4085,7 +3941,7 @@ eliozo:SpecialPropertiesOfNumericCoefficients a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "SpecialPropertiesOfNumericCoefficients" ;
     eliozo:skillName "Skaitlisko koeficientu specifisku īpašību izmantošana" ;
-    eliozo:skillNumber "1.1.9.0.0" ;
+    eliozo:skillNumber "1.1.8.0.0" ;
     skos:broader eliozo:AlgebraicTransformations ;
     skos:prefLabel "SpecialPropertiesOfNumericCoefficients" .
 
@@ -4128,30 +3984,6 @@ eliozo:StandardIdentities a eliozo:Skill ;
     eliozo:skillNumber "1.1.1.2.0" ;
     skos:broader eliozo:Identities ;
     skos:prefLabel "StandardIdentities" .
-
-eliozo:StrengtheningInductiveHypothesis a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "StrengtheningInductiveHypothesis" ;
-    eliozo:skillName "Izmainīto apgalvojumu induktīvie pierādījumi" ;
-    eliozo:skillNumber "4.9.4.0.0" ;
-    skos:broader eliozo:NumTheoryMathInduction ;
-    skos:prefLabel "StrengtheningInductiveHypothesis" .
-
-eliozo:StrongAndReverseInduction a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "StrongAndReverseInduction" ;
-    eliozo:skillName "Stiprā un apgrieztā indukcija skaitļu teorijā" ;
-    eliozo:skillNumber "4.9.3.0.0" ;
-    skos:broader eliozo:NumTheoryMathInduction ;
-    skos:prefLabel "StrongAndReverseInduction" .
-
-eliozo:StrongInduction a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "StrongInduction" ;
-    eliozo:skillName "Shēma $<n \\rightarrow n$" ;
-    eliozo:skillNumber "5.1.4.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "StrongInduction" .
 
 eliozo:StudyingContinuousFunctions a eliozo:Skill ;
     eliozo:skillDescription "" ;
@@ -4509,7 +4341,7 @@ eliozo:TrigonometricInterpretations a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "TrigonometricInterpretations" ;
     eliozo:skillName "Trigonometriskās interpretācijas" ;
-    eliozo:skillNumber "1.1.8.3.0" ;
+    eliozo:skillNumber "1.1.7.3.0" ;
     skos:broader eliozo:InterpretationsInAlgebra ;
     skos:prefLabel "TrigonometricInterpretations" .
 
@@ -4529,14 +4361,6 @@ eliozo:TrueAndFalseStatements a eliozo:Skill ;
     skos:broader eliozo:LogicProblems ;
     skos:prefLabel "TrueAndFalseStatements" .
 
-eliozo:TwoDimensionalInduction a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "TwoDimensionalInduction" ;
-    eliozo:skillName "Divdimensionālā indukcija." ;
-    eliozo:skillNumber "5.1.7.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "TwoDimensionalInduction" .
-
 eliozo:TwoDimensionalLattices a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "TwoDimensionalLattices" ;
@@ -4544,14 +4368,6 @@ eliozo:TwoDimensionalLattices a eliozo:Skill ;
     eliozo:skillNumber "4.10.7.2.0" ;
     skos:broader eliozo:Lattices ;
     skos:prefLabel "TwoDimensionalLattices" .
-
-eliozo:TwoDirectionalInductionSchemas a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "TwoDirectionalInductionSchemas" ;
-    eliozo:skillName "Divvirzienu indukcijas shēmas" ;
-    eliozo:skillNumber "5.1.5.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "TwoDirectionalInductionSchemas" .
 
 eliozo:TwoTangentsFromSinglePoint a eliozo:Skill ;
     eliozo:skillDescription "" ;
@@ -4645,7 +4461,7 @@ eliozo:ValuationChange a eliozo:Skill ;
     eliozo:skillDescription "Izmantot p-valuācijas funkcijas vērtību izmaiņas" ;
     eliozo:skillID "ValuationChange" ;
     eliozo:skillName "Pirmskaitļa kārtas izmaiņas" ;
-    eliozo:skillNumber "4.9.9.3.0" ;
+    eliozo:skillNumber "4.9.3.0.0" ;
     skos:broader eliozo:Valuation ;
     skos:prefLabel "ValuationChange" .
 
@@ -4653,7 +4469,7 @@ eliozo:ValuationProperties a eliozo:Skill ;
     eliozo:skillDescription "$\\nu_p(a+b) = \\min(\\nu_p(a), \\nu_p(b))$, ja valuācijas atšķiras un $\\nu_p(a+b) \\geq \\nu_p(a)$, ja $\\nu_p(a) = \\nu_p(b)$. " ;
     eliozo:skillID "ValuationProperties" ;
     eliozo:skillName "Pirmskaitļa kārtas īpašības" ;
-    eliozo:skillNumber "4.9.9.1.0" ;
+    eliozo:skillNumber "4.9.1.0.0" ;
     skos:broader eliozo:Valuation ;
     skos:prefLabel "ValuationProperties" .
 
@@ -4717,7 +4533,7 @@ eliozo:WordProblemsArithmetic a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "WordProblemsArithmetic" ;
     eliozo:skillName "Teksta uzdevumi ar aritmētisku modeli" ;
-    eliozo:skillNumber "1.1.8.1.0" ;
+    eliozo:skillNumber "1.1.7.1.0" ;
     skos:broader eliozo:InterpretationsInAlgebra ;
     skos:prefLabel "WordProblemsArithmetic" .
 
@@ -4728,14 +4544,6 @@ eliozo:WorkingBackwards a eliozo:Skill ;
     eliozo:skillNumber "5.7.3.0.0" ;
     skos:broader eliozo:AlgebraicMethods ;
     skos:prefLabel "WorkingBackwards" .
-
-eliozo:WrongProofsWithInduction a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "WrongProofsWithInduction" ;
-    eliozo:skillName "Paradoksāli “pierādījumi’’ ar indukciju." ;
-    eliozo:skillNumber "5.1.10.0.0" ;
-    skos:broader eliozo:MathematicalInduction ;
-    skos:prefLabel "WrongProofsWithInduction" .
 
 eliozo:CoordinateMethod a eliozo:Skill ;
     eliozo:skillDescription "" ;
@@ -4870,7 +4678,7 @@ eliozo:InequalitiesInterpretations a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "InequalitiesInterpretations" ;
     eliozo:skillName "Interpretācijas" ;
-    eliozo:skillNumber "1.3.6.0.0" ;
+    eliozo:skillNumber "1.3.5.0.0" ;
     skos:broader eliozo:ProvingInequalities ;
     skos:narrower eliozo:InequalitiesGeometricInterpretations,
         eliozo:InequalitiesProbabilisticInterpretations ;
@@ -4910,7 +4718,7 @@ eliozo:LiftingTheExponent a eliozo:Skill ;
     eliozo:skillDescription "Valuācijas pakāpju starpībai $a^n - b^n$, ja $a - b$ dalās ar $p$" ;
     eliozo:skillID "LiftingTheExponent" ;
     eliozo:skillName "Kāpinātāja pacelšanas lemmas" ;
-    eliozo:skillNumber "4.9.9.4.0" ;
+    eliozo:skillNumber "4.9.4.0.0" ;
     skos:broader eliozo:Valuation ;
     skos:narrower eliozo:LiftingTheExponentOdd,
         eliozo:LiftingTheExponentTwo ;
@@ -5179,7 +4987,7 @@ eliozo:InequalitySolvingWithRealAnalysis a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "InequalitySolvingWithRealAnalysis" ;
     eliozo:skillName "Matemātiskās analīzes metodes" ;
-    eliozo:skillNumber "1.3.5.0.0" ;
+    eliozo:skillNumber "1.3.4.0.0" ;
     skos:broader eliozo:ProvingInequalities ;
     skos:narrower eliozo:InequalitiesAndIntegrals,
         eliozo:RealAnalysisAndExtremes,
@@ -5366,7 +5174,7 @@ eliozo:ValuationsForFactorials a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "ValuationsForFactorials" ;
     eliozo:skillName "Pirmskaitļa kārta faktoriālu izteiksmēs" ;
-    eliozo:skillNumber "4.9.9.5.0" ;
+    eliozo:skillNumber "4.9.5.0.0" ;
     skos:broader eliozo:Valuation ;
     skos:narrower eliozo:KummerTheoremCombinations,
         eliozo:LegendreFormulaFactorials,
@@ -5509,7 +5317,7 @@ eliozo:InterpretationsInAlgebra a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "InterpretationsInAlgebra" ;
     eliozo:skillName "Interpretācijas" ;
-    eliozo:skillNumber "1.1.8.0.0" ;
+    eliozo:skillNumber "1.1.7.0.0" ;
     skos:broader eliozo:AlgebraicTransformations ;
     skos:narrower eliozo:CombinatorialInterpretations,
         eliozo:GeometricInterpretations,
@@ -5862,7 +5670,7 @@ eliozo:ProvingInequalitiesWithOtherInequalities a eliozo:Skill ;
     eliozo:skillDescription "" ;
     eliozo:skillID "ProvingInequalitiesWithOtherInequalities" ;
     eliozo:skillName "Citu nevienādību izmantošana" ;
-    eliozo:skillNumber "1.3.4.0.0" ;
+    eliozo:skillNumber "1.3.3.0.0" ;
     skos:broader eliozo:ProvingInequalities ;
     skos:narrower eliozo:AddingOrMultiplyingInequalities,
         eliozo:CauchyBunyakovsky,
@@ -5914,8 +5722,8 @@ eliozo:Valuation a eliozo:Skill ;
     eliozo:skillDescription "Valuācijas jēdziens $\\nu_p(n) = k$ fiksētam pirmskaitlim $p$: Atrod lielāko $k$, kuram $n$ dalās ar $p^k$" ;
     eliozo:skillID "Valuation" ;
     eliozo:skillName "Pirmskaitļa kārta jeb valuācija" ;
-    eliozo:skillNumber "4.9.9.0.0" ;
-    skos:broader eliozo:NumTheoryMathInduction ;
+    eliozo:skillNumber "4.9.0.0.0" ;
+    skos:broader eliozo:NumTheory ;
     skos:narrower eliozo:FactorizingPrimePower,
         eliozo:LiftingTheExponent,
         eliozo:ValuationChange,
@@ -5936,6 +5744,20 @@ eliozo:AdvancedCounting a eliozo:Skill ;
         eliozo:InterpretationsInCounting,
         eliozo:TelescopicSums ;
     skos:prefLabel "AdvancedCounting" .
+
+eliozo:AllMethods a eliozo:Skill ;
+    eliozo:skillDescription "" ;
+    eliozo:skillID "AllMethods" ;
+    eliozo:skillName "Visas risināšanas metodes" ;
+    eliozo:skillNumber "5.0.0.0.0" ;
+    skos:narrower eliozo:AlgebraicMethods,
+        eliozo:ExtremeElementMethod,
+        eliozo:InterpretationMethod,
+        eliozo:InvariantMethod,
+        eliozo:PigeonholeAndMeanValue,
+        eliozo:ProofsByContradiction,
+        eliozo:StructureAugmentation ;
+    skos:prefLabel "AllMethods" .
 
 eliozo:AnglesAndTriangleSimilarity a eliozo:Skill ;
     eliozo:skillDescription "Uzdevumi, kuros jāpierāda, ka kādas taisnes vai nogriežņi ir paralēli vai perpendikulāri. Uzdevumi, kuros dota vai jāpierāda nogriežņu garumu attiecība vai leņķu vienādība. Uzdevumi par līdzīgiem trijstūriem vai līdzīgiem daudzstūriem un to malu garumu vai laukumu attiecībām." ;
@@ -6077,6 +5899,20 @@ eliozo:ProjectiveTransformations a eliozo:Skill ;
         eliozo:RulerOnlyImpossibleConstructions ;
     skos:prefLabel "ProjectiveTransformations" .
 
+eliozo:ProvingInequalities a eliozo:Skill ;
+    eliozo:skillDescription "Uzdevumi, kuros jāpierāda, ka ir pareiza kāda nevienādība. Uzdevumi, kuros jāatrisina nevienādība." ;
+    eliozo:skillID "ProvingInequalities" ;
+    eliozo:skillName "Nevienādības" ;
+    eliozo:skillNumber "1.3.0.0.0" ;
+    skos:broader eliozo:Algebra ;
+    skos:narrower eliozo:InequalitiesEquivalentTransformations,
+        eliozo:InequalitiesInterpretations,
+        eliozo:InequalityProvingStronger,
+        eliozo:InequalitySolvingWithRealAnalysis,
+        eliozo:LinearOptimization,
+        eliozo:ProvingInequalitiesWithOtherInequalities ;
+    skos:prefLabel "ProvingInequalities" .
+
 eliozo:RealAnalysis a eliozo:Skill ;
     eliozo:skillDescription "Nepārtrauktas funkcijas, reālās analīzes metodes, robežas, atvasinājumi, integrāļi" ;
     eliozo:skillID "RealAnalysis" ;
@@ -6119,21 +5955,6 @@ eliozo:Algebra a eliozo:Skill ;
         eliozo:RealAnalysis,
         eliozo:SystemsOfEquations ;
     skos:prefLabel "Algebra" .
-
-eliozo:AllMethods a eliozo:Skill ;
-    eliozo:skillDescription "" ;
-    eliozo:skillID "AllMethods" ;
-    eliozo:skillName "Visas risināšanas metodes" ;
-    eliozo:skillNumber "5.0.0.0.0" ;
-    skos:narrower eliozo:AlgebraicMethods,
-        eliozo:ExtremeElementMethod,
-        eliozo:InterpretationMethod,
-        eliozo:InvariantMethod,
-        eliozo:MathematicalInduction,
-        eliozo:PigeonholeAndMeanValue,
-        eliozo:ProofsByContradiction,
-        eliozo:StructureAugmentation ;
-    skos:prefLabel "AllMethods" .
 
 eliozo:CombinatorialStructures a eliozo:Skill ;
     eliozo:skillDescription "Izvietojumi uz šaha galdiņa. Apakškopu sistēmas. Apakšvirkņu sistēmas. Paskāla trijstūris. Turnīri. Regulāri režģi. Latīņu kvadrāti" ;
@@ -6255,21 +6076,6 @@ eliozo:PigeonholePrincipleInGeometry a eliozo:Skill ;
         eliozo:RamseyTheoryGeometry ;
     skos:prefLabel "PigeonholePrincipleInGeometry" .
 
-eliozo:ProvingInequalities a eliozo:Skill ;
-    eliozo:skillDescription "Uzdevumi, kuros jāpierāda, ka ir pareiza kāda nevienādība. Uzdevumi, kuros jāatrisina nevienādība." ;
-    eliozo:skillID "ProvingInequalities" ;
-    eliozo:skillName "Nevienādības" ;
-    eliozo:skillNumber "1.3.0.0.0" ;
-    skos:broader eliozo:Algebra ;
-    skos:narrower eliozo:InequalitiesEquivalentTransformations,
-        eliozo:InequalitiesInterpretations,
-        eliozo:InequalityProvingStronger,
-        eliozo:InequalitySolvingWithRealAnalysis,
-        eliozo:LinearOptimization,
-        eliozo:MathInductionForInequalities,
-        eliozo:ProvingInequalitiesWithOtherInequalities ;
-    skos:prefLabel "ProvingInequalities" .
-
 eliozo:Vectors a eliozo:Skill ;
     eliozo:skillDescription "Visi uzdevumi par vektoriem. " ;
     eliozo:skillID "Vectors" ;
@@ -6300,6 +6106,22 @@ eliozo:AlgebraProblemsWithExtremes a eliozo:Skill ;
         eliozo:IncreasingFunctionValues,
         eliozo:ReplacingFunctionWithUpperBound ;
     skos:prefLabel "AlgebraProblemsWithExtremes" .
+
+eliozo:AlgebraicTransformations a eliozo:Skill ;
+    eliozo:skillDescription "Uzdevumi par skaitļiem, to darbībām un skaitliskām nevienādībām. Teksta uzdevumu pārrakstīšana, izveidojot algebrisku modeli; manipulācijas ar algebriskām izteiksmēm." ;
+    eliozo:skillID "AlgebraicTransformations" ;
+    eliozo:skillName "Pārveidojumi un teksta uzdevumi" ;
+    eliozo:skillNumber "1.1.0.0.0" ;
+    skos:broader eliozo:Algebra ;
+    skos:narrower eliozo:ComparingRealAndImaginaryParts,
+        eliozo:ConjugateExpressions,
+        eliozo:DecomposingExpressionAsSum,
+        eliozo:Identities,
+        eliozo:IntegerExpressionsAndOperations,
+        eliozo:InterpretationsInAlgebra,
+        eliozo:SpecialPropertiesOfNumericCoefficients,
+        eliozo:SymmetricAlgebraicExpressions ;
+    skos:prefLabel "AlgebraicTransformations" .
 
 eliozo:CountingObjects a eliozo:Skill ;
     eliozo:skillDescription "Noskaidrot, cik veidos var izvēlēties pārstāvjus, cik veidos var izdarīt kādas specifiskas darbības. Noteikt, cik veidos var sakārtot kādas kopas vai apakškopas elementus." ;
@@ -6445,23 +6267,6 @@ eliozo:SpecialQuadrilaterals a eliozo:Skill ;
         eliozo:Trapezoids ;
     skos:prefLabel "SpecialQuadrilaterals" .
 
-eliozo:AlgebraicTransformations a eliozo:Skill ;
-    eliozo:skillDescription "Uzdevumi par skaitļiem, to darbībām un skaitliskām nevienādībām. Teksta uzdevumu pārrakstīšana, izveidojot algebrisku modeli; manipulācijas ar algebriskām izteiksmēm." ;
-    eliozo:skillID "AlgebraicTransformations" ;
-    eliozo:skillName "Pārveidojumi un teksta uzdevumi" ;
-    eliozo:skillNumber "1.1.0.0.0" ;
-    skos:broader eliozo:Algebra ;
-    skos:narrower eliozo:ComparingRealAndImaginaryParts,
-        eliozo:ConjugateExpressions,
-        eliozo:DecomposingExpressionAsSum,
-        eliozo:Identities,
-        eliozo:IntegerExpressionsAndOperations,
-        eliozo:InterpretationsInAlgebra,
-        eliozo:MathInductionAndExpressions,
-        eliozo:SpecialPropertiesOfNumericCoefficients,
-        eliozo:SymmetricAlgebraicExpressions ;
-    skos:prefLabel "AlgebraicTransformations" .
-
 eliozo:CombinatorialAlgorithms a eliozo:Skill ;
     eliozo:skillDescription "Uzdevumi par elementu sakārtošanu vai lielākā vai mazākā atrašanu. Uzdevumi, kuros ir procesi, kuru realizācijai jāizstrādā algoritms vai jānovērtē algoritma efektivitāte. Uzdevumi par svēršanu, turnīra uzvarētāja atrašanu. " ;
     eliozo:skillID "CombinatorialAlgorithms" ;
@@ -6530,23 +6335,6 @@ eliozo:MetricComputations a eliozo:Skill ;
         eliozo:TriangleAnglesTangentCotangent ;
     skos:prefLabel "MetricComputations" .
 
-eliozo:NumTheoryMathInduction a eliozo:Skill ;
-    eliozo:skillDescription "Skaitļu teorijas apgalvojumu pamatošana ar matemātisko indukciju. Dažādas induktīvo spriedumu shēmas. Indukcija pēc dalītāju skaita, ciparu skaita. Induktīvās hipotēzes pastiprināšana. Lineāras rekurences. Valuācijas pēc pirmskaitļa." ;
-    eliozo:skillID "NumTheoryMathInduction" ;
-    eliozo:skillName "Indukcija skaitļu teorijā" ;
-    eliozo:skillNumber "4.9.0.0.0" ;
-    skos:broader eliozo:NumTheory ;
-    skos:narrower eliozo:InductionByDigits,
-        eliozo:InfiniteDescent,
-        eliozo:LinearRecurrentReleations,
-        eliozo:NumTheoryInductiveConstructions,
-        eliozo:NumTheoryMathInductionPlusA,
-        eliozo:NumTheoryMathInductionPlusOne,
-        eliozo:StrengtheningInductiveHypothesis,
-        eliozo:StrongAndReverseInduction,
-        eliozo:Valuation ;
-    skos:prefLabel "NumTheoryMathInduction" .
-
 eliozo:NumTheory a eliozo:Skill ;
     eliozo:skillDescription "Skaitļu teorija" ;
     eliozo:skillID "NumTheory" ;
@@ -6559,10 +6347,10 @@ eliozo:NumTheory a eliozo:Skill ;
         eliozo:IntegerPolynomials,
         eliozo:NumTheoryExtremeElement,
         eliozo:NumTheoryInequalityMethod,
-        eliozo:NumTheoryMathInduction,
         eliozo:NumTheoryPigeonhole,
         eliozo:NumTheoryTransformations,
-        eliozo:NumeralSystems ;
+        eliozo:NumeralSystems,
+        eliozo:Valuation ;
     skos:prefLabel "NumTheory" .
 
 eliozo:AlgebraicMethods a eliozo:Skill ;
@@ -6644,28 +6432,6 @@ eliozo:Constructions a eliozo:Skill ;
         eliozo:LocusMethod,
         eliozo:SimilarTriangles ;
     skos:prefLabel "Constructions" .
-
-eliozo:MathematicalInduction a eliozo:Skill ;
-    eliozo:skillDescription "Uzdevumi, kas risināti ar matemātisko indukciju - parasti tie ir apgalvojumi par visiem naturālajiem skaitļiem. To risinājumā izmantota indukcijas bāze, induktīvais pieņēmums un pāreja. Arī strukturālā indukcija (kur apgalvojumu dotajai algebriskai izteiksmei reducē uz apgalvojumiem par tās apakšizteiksmēm) vai ģeometriskā indukcija (kombinatoriskas ģeometrijas uzdevumi, kurus reducē uz vienkāršākiem gadījumiem) ir indukcija." ;
-    eliozo:skillID "MathematicalInduction" ;
-    eliozo:skillName "Matemātiskās indukcijas metode" ;
-    eliozo:skillNumber "5.1.0.0.0" ;
-    skos:broader eliozo:AllMethods ;
-    skos:narrower eliozo:ChoosingComplexInductionVariable,
-        eliozo:InductionByProduct,
-        eliozo:InductionInAlgorithmCorrectness,
-        eliozo:InductionMethodGeometry,
-        eliozo:InductionNtoNplusOne,
-        eliozo:InductionOtherStepSizes,
-        eliozo:OtherInduction,
-        eliozo:ParallelInduction,
-        eliozo:ProvingIsolatedCasesWithInduction,
-        eliozo:ProvingStatementsInSteps,
-        eliozo:StrongInduction,
-        eliozo:TwoDimensionalInduction,
-        eliozo:TwoDirectionalInductionSchemas,
-        eliozo:WrongProofsWithInduction ;
-    skos:prefLabel "MathematicalInduction" .
 
 eliozo:Geometry a eliozo:Skill ;
     eliozo:skillDescription "Ģeometrijas tēmas; Apgalvojumi un sakarības par vienkāršām figūrām, kas iegūstamas ar cirkuli un lineālu Eiklīda plaknē un to kongruences vai līdzības pārveidojumiem" ;
