@@ -3,7 +3,8 @@
 
 eliozo:LV.VOL.2011.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -18,37 +19,39 @@ $$|||x-2011|-2011|-2011|=|||x-1201|-1201|-1201|$$"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.VOL.2011.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2011.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2011.10.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2011.10.2.SUB1 ;
-    eliozo:problemText """Trijstūra $ABC(AB>BC)$ bisektrise $BD$ krusto tam apvilkto riņķa līniju 
+    eliozo:problemText """Trijstūra $ABC$ ($AB>BC$) bisektrise $BD$ krusto tam apvilkto riņķa līniju 
 $\\omega$ punktā $M$. Uz malas $AB$ izvēlēts punkts $N$ tā, ka $CN \\perp BM$. 
 $MN$ un $CN$ vēlreiz krusto $\\omega$ attiecīgi punktos $K$ un $O$. Pierādīt, 
 ka $AO=OK$."""@lv ;
-    eliozo:problemTextHtml """<p>Trijstūra $ABC(AB>BC)$ bisektrise $BD$ krusto tam apvilkto riņķa līniju 
+    eliozo:problemTextHtml """<p>Trijstūra $ABC$ ($AB>BC$) bisektrise $BD$ krusto tam apvilkto riņķa līniju 
 $\\omega$ punktā $M$. Uz malas $AB$ izvēlēts punkts $N$ tā, ka $CN \\perp BM$. 
 $MN$ un $CN$ vēlreiz krusto $\\omega$ attiecīgi punktos $K$ un $O$. Pierādīt, 
 ka $AO=OK$.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2011.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2011.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -68,7 +71,7 @@ līnijām jāiet pa rūtiņu malām.)</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.VOL.2011.10" ;
     eliozo:suggestedGrade 10 .
 
@@ -76,6 +79,7 @@ eliozo:LV.VOL.2011.10.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-polynomial ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -97,7 +101,8 @@ $f(2011)=100$, bet $f(11)=1000$?</p>"""@lv ;
 
 eliozo:LV.VOL.2011.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -115,13 +120,14 @@ nesakrīt.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.VOL.2011.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2011.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -135,13 +141,14 @@ $-1 \\leq am+bn+cp \\leq 1$. $(a, b, c, m, n, p$ - reāli skaitļi).</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2011.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2011.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -157,13 +164,14 @@ viduspunktā.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2011.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2011.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -183,7 +191,8 @@ pirmskaitlis.</p>"""@lv ;
 
 eliozo:LV.VOL.2011.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -215,13 +224,14 @@ uzrakstot pa naturālam skaitlim pēc šāda likuma:</p>
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.VOL.2011.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2011.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -239,13 +249,14 @@ atradīsies šī trijstūra iekšpusē vai uz tā malām.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2011.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2011.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -259,13 +270,14 @@ $\\sqrt[3]{6}+\\sqrt[3]{12}-2 \\sqrt[3]{2}$ ir lielāks?</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.VOL.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2011.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -281,13 +293,14 @@ $Y$. Pierādīt, ka $AX=XY=YC$</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2011.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -307,7 +320,8 @@ vienādība $(2n)^{2n}-1=m^{3}$.</p>"""@lv ;
 
 eliozo:LV.VOL.2011.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -323,13 +337,14 @@ $g(g(x))+g(x)=2x$</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.VOL.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2011.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -347,13 +362,14 @@ virkne satur vismaz $55$ ciparus.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2011.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -379,7 +395,8 @@ ir veseli skaitļi?</p>"""@lv ;
 
 eliozo:LV.VOL.2011.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -395,13 +412,14 @@ garumu. Aprēķināt hipotenūzas un īsākās katetes garumu attiecību!</p>"""
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.VOL.2011.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2011.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -446,7 +464,8 @@ izvēlēties $81$ trīsciparu skaitli tā, lai vienlaicīgi izpildītos šādas 
 
 eliozo:LV.VOL.2011.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -458,8 +477,7 @@ iespējamos veidos tika sadalīti pāros, un katrā gadījumā uz sviras svariem
 salīdzinātas abu pāru masas. Vai, zinot visu šo svēršanu rezultātus (nevienā 
 svēršanā svaru kausi nebija līdzsvarā), iespējams noteikt:
 
-**(A)** vienu atsvaru, kurš ir **vai nu** vissmagākais, **vai** visvieglākais;
-
+**(A)** vienu atsvaru, kurš ir **vai nu** vissmagākais, **vai** visvieglākais;  
 **(B)** **gan** vissmagāko, **gan** visvieglāko atsvaru?
 
 (Svari nerāda masu starpību, bet ļauj tikai noteikt, uz kura kausa ir lielāks 
@@ -468,20 +486,21 @@ smagums.)"""@lv ;
 iespējamos veidos tika sadalīti pāros, un katrā gadījumā uz sviras svariem tika
 salīdzinātas abu pāru masas. Vai, zinot visu šo svēršanu rezultātus (nevienā 
 svēršanā svaru kausi nebija līdzsvarā), iespējams noteikt:</p>
-<p><strong>(A)</strong> vienu atsvaru, kurš ir <strong>vai nu</strong> vissmagākais, <strong>vai</strong> visvieglākais;</p>
-<p><strong>(B)</strong> <strong>gan</strong> vissmagāko, <strong>gan</strong> visvieglāko atsvaru?</p>
+<p><strong>(A)</strong> vienu atsvaru, kurš ir <strong>vai nu</strong> vissmagākais, <strong>vai</strong> visvieglākais;<br />
+<strong>(B)</strong> <strong>gan</strong> vissmagāko, <strong>gan</strong> visvieglāko atsvaru?</p>
 <p>(Svari nerāda masu starpību, bet ļauj tikai noteikt, uz kura kausa ir lielāks 
 smagums.)</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.VOL.2011.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2011.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.VOL.2011" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -503,7 +522,7 @@ summā ir <strong>(A)</strong> $48$, <strong>(B)</strong> $49$ punkti?</p>"""@lv
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.VOL.2011.9" ;
     eliozo:suggestedGrade 9 .
 
@@ -1159,10 +1178,10 @@ Pieņemsim, ka atsvaru masas ir $x>y>z>t$. Tad divu svēršanu rezultāti vienm�
 ir noteikti viennozīmīgi: $x+y>z+t$ un $x+z>y+t$. Trešajā svēršanā ir iespējami
 abi rezultāti.
 
-1) Ja $x+t>y+z$, tad atsvars ar masu $x$ vienmēr ir bijis uz smagākā kausa, 
+1. Ja $x+t>y+z$, tad atsvars ar masu $x$ vienmēr ir bijis uz smagākā kausa, 
    tāpēc ir vissmagākais, bet nevar noteikt visvieglāko atsvaru (visi pārēji ir
    $1$ reizi bijuši uz smagākā kausa un $2$ reizes uz vieglākā).
-2) Ja $x+t<y+z$, tad atsvars ar masu $t$ vienmēr ir bijis uz vieglākā kausa, 
+2. Ja $x+t<y+z$, tad atsvars ar masu $t$ vienmēr ir bijis uz vieglākā kausa, 
    tāpēc ir visvieglākais atsvars, bet nevar noteikt vissmagāko atsvaru (visi 
    pārēji ir $1$ reizi bijuši uz vieglākā kausa un $2$ reizes uz smagākā).
 
@@ -1176,12 +1195,14 @@ un $CD,\\ AC$ un $BD,\\ AD$ un $BC$. Tātad pavisam tika veiktas trīs svēršan
 <p>Pieņemsim, ka atsvaru masas ir $x>y>z>t$. Tad divu svēršanu rezultāti vienmēr 
 ir noteikti viennozīmīgi: $x+y>z+t$ un $x+z>y+t$. Trešajā svēršanā ir iespējami
 abi rezultāti.</p>
-<p>1) Ja $x+t>y+z$, tad atsvars ar masu $x$ vienmēr ir bijis uz smagākā kausa, 
+<ol>
+<li>Ja $x+t>y+z$, tad atsvars ar masu $x$ vienmēr ir bijis uz smagākā kausa, 
    tāpēc ir vissmagākais, bet nevar noteikt visvieglāko atsvaru (visi pārēji ir
-   $1$ reizi bijuši uz smagākā kausa un $2$ reizes uz vieglākā).
-2) Ja $x+t<y+z$, tad atsvars ar masu $t$ vienmēr ir bijis uz vieglākā kausa, 
+   $1$ reizi bijuši uz smagākā kausa un $2$ reizes uz vieglākā).</li>
+<li>Ja $x+t<y+z$, tad atsvars ar masu $t$ vienmēr ir bijis uz vieglākā kausa, 
    tāpēc ir visvieglākais atsvars, bet nevar noteikt vissmagāko atsvaru (visi 
-   pārēji ir $1$ reizi bijuši uz vieglākā kausa un $2$ reizes uz smagākā).</p>
+   pārēji ir $1$ reizi bijuši uz vieglākā kausa un $2$ reizes uz smagākā).</li>
+</ol>
 <p>Tātad, saskaitot cik reizes katrs atsvars ir bijis uz vieglākā kausa un cik 
 reizes - uz smagākā, var atrast vai nu vissmagāko, vai visvieglāko atsvaru - to
 kurš visas trīs reizes bijis uz smagākā / vieglākā kausa. Taču abus divus 
@@ -1192,7 +1213,7 @@ eliozo:SOLN.LV.VOL.2011.9.5.SUB1 a eliozo:Solution ;
     eliozo:solutionText """## Atrisinājums
 
 Pieņemsim, ka spēlētāji ap galdu pulksteņrādītāja virzienā sēž secībā 
-$A,\\ B,\\ C$. Saskaitīsim cik kārtās katrs spēlētājs ir ieguvis $3$ punktus. 
+$A$, $B$, $C$. Saskaitīsim cik kārtās katrs spēlētājs ir ieguvis $3$ punktus. 
 Spēlētājam $A$ šo kārtu skaitu apzīmēsim ar $a$, spēlētājam $B$ - ar $b$, 
 spēlētājam $C$ - ar $c$. Tad kopējais spēlētāja $A$ kopsummā iegūto punktu 
 skaits ir $3a-2c-b$, spēlētāja $B$ punktu skaits ir $3b-2a-c$, bet spēlētāja 
@@ -1206,7 +1227,7 @@ piemēram, $A$ ir uzvarējis $7$ kārtās, $B$ ir uzvarējis $21$ kārtā, bet $
 uzvarējis nevienā kārtā."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Pieņemsim, ka spēlētāji ap galdu pulksteņrādītāja virzienā sēž secībā 
-$A,\\ B,\\ C$. Saskaitīsim cik kārtās katrs spēlētājs ir ieguvis $3$ punktus. 
+$A$, $B$, $C$. Saskaitīsim cik kārtās katrs spēlētājs ir ieguvis $3$ punktus. 
 Spēlētājam $A$ šo kārtu skaitu apzīmēsim ar $a$, spēlētājam $B$ - ar $b$, 
 spēlētājam $C$ - ar $c$. Tad kopējais spēlētāja $A$ kopsummā iegūto punktu 
 skaits ir $3a-2c-b$, spēlētāja $B$ punktu skaits ir $3b-2a-c$, bet spēlētāja 

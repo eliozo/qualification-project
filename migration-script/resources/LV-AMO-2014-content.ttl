@@ -3,7 +3,8 @@
 
 eliozo:LV.AMO.2014.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -17,13 +18,15 @@ vai dilstoša!</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2014.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2014.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb",
+        "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -32,25 +35,26 @@ eliozo:LV.AMO.2014.10.2 a eliozo:Problem ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2014.10.2.SUB1 ;
     eliozo:problemText """Dotas divas paralēlas taisnes. Uz vienas no tām atzīmēti $14$ zaļi punkti, uz
 otras- $14$ sarkani punkti. Kādu lielāko skaitu nogriežņu, kuriem viens
-galapunkts ir zaļš, bet otrs- sarkans, var novilkt tā, lai tie nekrustotos?
+galapunkts ir zaļš, bet otrs - sarkans, var novilkt tā, lai tie nekrustotos?
 
 Saka, ka nogriežņi krustojas, ja tiem ir kopīgs iekšējais punkts, t.i., ja tiem
 ir kopīgs tikai galapunkts, tie nekrustojas."""@lv ;
     eliozo:problemTextHtml """<p>Dotas divas paralēlas taisnes. Uz vienas no tām atzīmēti $14$ zaļi punkti, uz
 otras- $14$ sarkani punkti. Kādu lielāko skaitu nogriežņu, kuriem viens
-galapunkts ir zaļš, bet otrs- sarkans, var novilkt tā, lai tie nekrustotos?</p>
+galapunkts ir zaļš, bet otrs - sarkans, var novilkt tā, lai tie nekrustotos?</p>
 <p>Saka, ka nogriežņi krustojas, ja tiem ir kopīgs iekšējais punkts, t.i., ja tiem
 ir kopīgs tikai galapunkts, tie nekrustojas.</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2014.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2014.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -64,7 +68,7 @@ funkciju grafikiem ir kopīgs punkts!</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2014.10" ;
     eliozo:suggestedGrade 10 .
 
@@ -73,6 +77,7 @@ eliozo:LV.AMO.2014.10.4 a eliozo:Problem ;
         eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -97,7 +102,8 @@ aprēķināja to summu. Kāds lielākais skaits no šīm summām var būt pirmsk
 
 eliozo:LV.AMO.2014.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -112,31 +118,32 @@ $\\sphericalangle PAB=\\sphericalangle PCB$. Pierādīt, ka $ABCD$ ir kvadrāts!
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2014.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2014.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2014.11.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2014.11.1.SUB1 ;
-    eliozo:problemText """Uz riņķa līnijas atlikti **a)** $6$; **b)** $2014$ punkti. Viens no tiem
+    eliozo:problemText """Uz riņķa līnijas atlikti **(A)** $6$; **(B)** $2014$ punkti. Viens no tiem
 nokrāsots sarkans, bet pārējie balti. Apskatām visus daudzstūrus, kuriem visas
 virsotnes ir kādi no nokrāsotajiem punktiem. Kādu daudzstūru ir vairāk- to, kam
 viena virsotne ir sarkana, vai to, kam visas virsotnes ir baltas?"""@lv ;
-    eliozo:problemTextHtml """<p>Uz riņķa līnijas atlikti <strong>a)</strong> $6$; <strong>b)</strong> $2014$ punkti. Viens no tiem
+    eliozo:problemTextHtml """<p>Uz riņķa līnijas atlikti <strong>(A)</strong> $6$; <strong>(B)</strong> $2014$ punkti. Viens no tiem
 nokrāsots sarkans, bet pārējie balti. Apskatām visus daudzstūrus, kuriem visas
 virsotnes ir kādi no nokrāsotajiem punktiem. Kādu daudzstūru ir vairāk- to, kam
 viena virsotne ir sarkana, vai to, kam visas virsotnes ir baltas?</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2014.11" ;
     eliozo:suggestedGrade 11 .
 
@@ -144,6 +151,7 @@ eliozo:LV.AMO.2014.11.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-sequence ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -166,7 +174,8 @@ $a_{1}=1000$.</p>"""@lv ;
 
 eliozo:LV.AMO.2014.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -174,17 +183,17 @@ eliozo:LV.AMO.2014.11.3 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2014.11.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2014.11.3.SUB1 ;
     eliozo:problemText """Ap šaurleņķu trijstūri $ABC$ apvilkta riņķa līnija. Loka $AB$ (kuram nepieder
-punkts $C$ ) viduspunkts ir $N$, bet loka $AC$ (kuram nepieder punkts $B$)
+punkts $C$) viduspunkts ir $N$, bet loka $AC$ (kuram nepieder punkts $B$)
 viduspunkts ir $M$. Nogrieznis $NM$ krusto malu $AB$ punktā $K$. Trijstūrī $ABC$
-ievilktās riņķa līnijas centrs ir punktā $O$. Pierādīt, ka $OK || AC$ !"""@lv ;
+ievilktās riņķa līnijas centrs ir punktā $O$. Pierādīt, ka $OK \\| AC$ !"""@lv ;
     eliozo:problemTextHtml """<p>Ap šaurleņķu trijstūri $ABC$ apvilkta riņķa līnija. Loka $AB$ (kuram nepieder
-punkts $C$ ) viduspunkts ir $N$, bet loka $AC$ (kuram nepieder punkts $B$)
+punkts $C$) viduspunkts ir $N$, bet loka $AC$ (kuram nepieder punkts $B$)
 viduspunkts ir $M$. Nogrieznis $NM$ krusto malu $AB$ punktā $K$. Trijstūrī $ABC$
-ievilktās riņķa līnijas centrs ir punktā $O$. Pierādīt, ka $OK || AC$ !</p>"""@lv ;
+ievilktās riņķa līnijas centrs ir punktā $O$. Pierādīt, ka $OK \\| AC$ !</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2014.11" ;
     eliozo:suggestedGrade 11 .
 
@@ -193,6 +202,7 @@ eliozo:LV.AMO.2014.11.4 a eliozo:Problem ;
         eliozo:TRM-square-Alg ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -216,7 +226,8 @@ skaitļa kvadrāts!</p>"""@lv ;
 
 eliozo:LV.AMO.2014.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -228,13 +239,14 @@ eliozo:LV.AMO.2014.11.5 a eliozo:Problem ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2014.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2014.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -246,13 +258,14 @@ eliozo:LV.AMO.2014.12.1 a eliozo:Problem ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2014.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2014.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -272,7 +285,7 @@ apvilkto riņķka līiju krustpunktu!</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2014.12" ;
     eliozo:suggestedGrade 12 .
 
@@ -280,6 +293,7 @@ eliozo:LV.AMO.2014.12.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -297,7 +311,8 @@ eliozo:LV.AMO.2014.12.3 a eliozo:Problem ;
 
 eliozo:LV.AMO.2014.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -316,44 +331,46 @@ drīkst pārklāties, kā arī iziet ārpus dotā kvadrāta malām.</p>
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2014.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2014.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2014.12.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2014.12.5.SUB1 ;
-    eliozo:problemText """Funkcija $f:R \\rightarrow R$ definēta visiem reāliem skaitļiem un pieņem reālas
-vērtūbas. Visiem reāliem skaitļiem $a$ un $b$ izpildās
+    eliozo:problemText """Funkcija $f:\\mathbb{R} \\rightarrow \\mathbb{R}$ definēta visiem reāliem skaitļiem un pieņem reālas
+vērtības. Visiem reāliem skaitļiem $a$ un $b$ izpildās
 
 $$2f(a) \\leq f(b)+f(2a-b)$$
 
-Vai tiesa, ka visiem reāliem $a, b$ un c izpildās
+Vai tiesa, ka visiem reāliem $a, b$ un $c$ izpildās
 
-$$3f(a) \\leq f(b)+f(c)+f(3a-b-c)$$?"""@lv ;
-    eliozo:problemTextHtml """<p>Funkcija $f:R \\rightarrow R$ definēta visiem reāliem skaitļiem un pieņem reālas
-vērtūbas. Visiem reāliem skaitļiem $a$ un $b$ izpildās</p>
+$$3f(a) \\leq f(b)+f(c)+f(3a-b-c)?$$"""@lv ;
+    eliozo:problemTextHtml """<p>Funkcija $f:\\mathbb{R} \\rightarrow \\mathbb{R}$ definēta visiem reāliem skaitļiem un pieņem reālas
+vērtības. Visiem reāliem skaitļiem $a$ un $b$ izpildās</p>
 <p>$$2f(a) \\leq f(b)+f(2a-b)$$
 
-Vai tiesa, ka visiem reāliem $a, b$ un c izpildās
+Vai tiesa, ka visiem reāliem $a, b$ un $c$ izpildās
 
-$$3f(a) \\leq f(b)+f(c)+f(3a-b-c)$$?</p>"""@lv ;
+$$3f(a) \\leq f(b)+f(c)+f(3a-b-c)?$$</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2014.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2014.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -386,6 +403,7 @@ dzeltenas, bet pārējās- zilas. Aprēķini:</p>
 eliozo:LV.AMO.2014.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -410,6 +428,7 @@ eliozo:LV.AMO.2014.5.3 a eliozo:Problem ;
         eliozo:TRM-rectangle ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -440,6 +459,7 @@ nekā otra mala.</p>
 eliozo:LV.AMO.2014.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -470,6 +490,7 @@ eliozo:LV.AMO.2014.5.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-product ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -490,7 +511,8 @@ trīs, gan kā divu dažādu divciparu naturālu skaitļu reizinājumu?</p>"""@l
 
 eliozo:LV.AMO.2014.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -510,13 +532,14 @@ pašai palika $1$ metrs makšķerauklas. Cik gara bija makšķeraukla pašā sā
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2014.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.AMO.2014.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -530,13 +553,14 @@ reizinājumi abās grupās ir vienādi?</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2014.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.AMO.2014.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -547,49 +571,51 @@ eliozo:LV.AMO.2014.6.3 a eliozo:Problem ;
 mikrofoniem un viena patafona. Puszābaks atgriezās, nopircis $20$ ksilofonus,
 vienu mikrofonu un $3$ patafonus, pie tam viņš bija iztērējis tieši tik daudz
 naudas, cik būtu arī, ja būtu nopircis to, ko Ķērpjbārdis viņam lūdza. Zināms,
-ka patafons ir lētāks nekā ksilofons. Kas ir dārgāks- ksilofons vai mikrofons?
+ka patafons ir lētāks nekā ksilofons. Kas ir dārgāks - ksilofons vai mikrofons?
 Atbildi pamatot!"""@lv ;
     eliozo:problemTextHtml """<p>Ķērpjbārdis aizsūtīja Puszābaku uz veikalu pēc $3$ ksilofoniem, $20$
 mikrofoniem un viena patafona. Puszābaks atgriezās, nopircis $20$ ksilofonus,
 vienu mikrofonu un $3$ patafonus, pie tam viņš bija iztērējis tieši tik daudz
 naudas, cik būtu arī, ja būtu nopircis to, ko Ķērpjbārdis viņam lūdza. Zināms,
-ka patafons ir lētāks nekā ksilofons. Kas ir dārgāks- ksilofons vai mikrofons?
+ka patafons ir lētāks nekā ksilofons. Kas ir dārgāks - ksilofons vai mikrofons?
 Atbildi pamatot!</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2014.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.AMO.2014.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2014.6.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2014.6.4.SUB1 ;
-    eliozo:problemText """Kvadrāts, kura malas garums ir $4~ \\mathrm{m}$, sagriezts taisnstūros, kā
-parādīts 3.zīm. Četru izcelto nogriežņu garumu summa ir $2~ \\mathrm{m}$.
+    eliozo:problemText """Kvadrāts, kura malas garums ir $4~\\mathrm{m}$, sagriezts taisnstūros, kā
+parādīts 3.zīm. Četru izcelto nogriežņu garumu summa ir $2~\\mathrm{m}$.
 Aprēķināt iekšējā taisnstūra perimetru!
 
 ![](LV.AMO.2014.6.4.png)"""@lv ;
-    eliozo:problemTextHtml """<p>Kvadrāts, kura malas garums ir $4~ \\mathrm{m}$, sagriezts taisnstūros, kā
-parādīts 3.zīm. Četru izcelto nogriežņu garumu summa ir $2~ \\mathrm{m}$.
+    eliozo:problemTextHtml """<p>Kvadrāts, kura malas garums ir $4~\\mathrm{m}$, sagriezts taisnstūros, kā
+parādīts 3.zīm. Četru izcelto nogriežņu garumu summa ir $2~\\mathrm{m}$.
 Aprēķināt iekšējā taisnstūra perimetru!</p>
 <p><img alt="" src="LV.AMO.2014.6.4.png" /></p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2014.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.AMO.2014.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -610,7 +636,7 @@ iespējamais!</p>
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2014.6" ;
     eliozo:suggestedGrade 6 .
 
@@ -620,6 +646,7 @@ eliozo:LV.AMO.2014.7.1 a eliozo:Problem ;
         eliozo:TRM-triangle ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -640,6 +667,7 @@ garums, ja $ED=4 \\mathrm{~cm}$ un $DC=5 \\mathrm{~cm}$ ?</p>"""@lv ;
 eliozo:LV.AMO.2014.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -662,7 +690,8 @@ $$a \\cdot(3a+5b) \\cdot 7b=7654321$$?"""@lv ;
 
 eliozo:LV.AMO.2014.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -672,23 +701,24 @@ eliozo:LV.AMO.2014.7.3 a eliozo:Problem ;
     eliozo:problemText """Lelde apgalvo, ka sešas skrūves ir smagākas nekā septiņas naglas, bet Elīna
 apgalvo, ka septiņas skrūves ir smagākas nekā astoņas naglas. Zināms, ka vienai
 no meitenēm ir taisnība, bet otra kļūdās. Vai tiesa, ka $18$ skrūves ir
-smagākas nekā **a)** $20$ naglas, **b)** $21$ nagla, **c)** $22$ naglas? Visām
+smagākas nekā **(A)** $20$ naglas, **(B)** $21$ nagla, **(C)** $22$ naglas? Visām
 skrūvēm svars ir vienāds, visām naglām arī."""@lv ;
     eliozo:problemTextHtml """<p>Lelde apgalvo, ka sešas skrūves ir smagākas nekā septiņas naglas, bet Elīna
 apgalvo, ka septiņas skrūves ir smagākas nekā astoņas naglas. Zināms, ka vienai
 no meitenēm ir taisnība, bet otra kļūdās. Vai tiesa, ka $18$ skrūves ir
-smagākas nekā <strong>a)</strong> $20$ naglas, <strong>b)</strong> $21$ nagla, <strong>c)</strong> $22$ naglas? Visām
+smagākas nekā <strong>(A)</strong> $20$ naglas, <strong>(B)</strong> $21$ nagla, <strong>(C)</strong> $22$ naglas? Visām
 skrūvēm svars ir vienāds, visām naglām arī.</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2014.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.AMO.2014.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:genre "magic-configuration" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
@@ -720,7 +750,8 @@ Atrodiet visas iespējamās vērtības un pamatojiet, ka citu nav!</p>
 
 eliozo:LV.AMO.2014.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -739,7 +770,7 @@ līnijām.)</p>
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2014.7" ;
     eliozo:suggestedGrade 7 .
 
@@ -747,6 +778,7 @@ eliozo:LV.AMO.2014.8.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-decimal-fractions ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:genre "digit-manipulation" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
@@ -774,6 +806,7 @@ $2014.$ ciparu aiz komata.</p>
 eliozo:LV.AMO.2014.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -796,7 +829,8 @@ to pirmo ciparu, samazinās $15$ reizes!</p>"""@lv ;
 
 eliozo:LV.AMO.2014.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -813,13 +847,14 @@ ka, izvēloties jebkurus $5$ punktus, tie būs savienoti ar vismaz $3$ šķautn�
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2014.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.AMO.2014.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -838,13 +873,14 @@ $\\sphericalangle ABC$ un $\\sphericalangle CDE$ ir lielāks?</p>
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2014.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.AMO.2014.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -877,6 +913,7 @@ ierakstīts skaitlis <strong>(A)</strong> $7$, <strong>(B)</strong> $17$?</p>
 eliozo:LV.AMO.2014.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -901,6 +938,7 @@ eliozo:LV.AMO.2014.9.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -920,7 +958,8 @@ var izveidot no šiem cipariem, summa ir $1276$. Atrast dotos četrus ciparus!</
 
 eliozo:LV.AMO.2014.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -938,13 +977,14 @@ Zināms, ka $AC || PQ$. Aprēķināt $\\sphericalangle BAC$ vērtību!</p>"""@lv
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2014.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.AMO.2014.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -973,7 +1013,8 @@ mazākais skaitlis, kas var būt ierakstīts tabulas centrālajā rūtiņā?</p>
 
 eliozo:LV.AMO.2014.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2014" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -993,7 +1034,7 @@ marsiešiem var būt $2014$?</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2014.9" ;
     eliozo:suggestedGrade 9 .
 
@@ -1906,18 +1947,18 @@ ir Elīnai, bet Leldes apgalvojums nav patiess.
 
 Pārbaudīsim, kuri no dotajiem apgalvojumiem var būt patiesi:
 
-**a)** No Elīnas apgalvojuma $7s > 8n$ seko, ka patiess ir arī apgalvojums
-       $18 \\cdot 7s > 18 \\cdot 8n$ jeb $126s > 144n > 140n$. No $126s > 140n$
-	   seko, ka $18s > 20n$ ir patiess. Tātad apgalvojums „ $18$ skrūves ir
-	   smagākas nekā $20$ naglas” ir patiess.
+**(A)** No Elīnas apgalvojuma $7s > 8n$ seko, ka patiess ir arī apgalvojums
+$18 \\cdot 7s > 18 \\cdot 8n$ jeb $126s > 144n > 140n$. No $126s > 140n$
+seko, ka $18s > 20n$ ir patiess. Tātad apgalvojums „ $18$ skrūves ir
+smagākas nekā $20$ naglas” ir patiess.
 
-**b)** Tā kā Leldes apgalvojums $6s > 7n$ nav patiess, tad apgalvojums
-       $18s > 21n$ ($18$ skrūves ir smagākas nekā $21$ nagla) arī nav patiess.
+**(B)** Tā kā Leldes apgalvojums $6s > 7n$ nav patiess, tad apgalvojums
+$18s > 21n$ ($18$ skrūves ir smagākas nekā $21$ nagla) arī nav patiess.
 
-**c)** Ja $18s > 22n$ būtu patiess, tad arī $18s > 21n$ būtu patiess. Jau
-       b) gadījumā pierādījām, ka otrais apgalvojums nav patiess. Tātad arī
-	   apgalvojums $18s > 22n$ ($18$ skrūves ir smagākas nekā $22$ naglas) nav
-	   patiess."""@lv ;
+**(C)** Ja $18s > 22n$ būtu patiess, tad arī $18s > 21n$ būtu patiess. Jau
+(B) gadījumā pierādījām, ka otrais apgalvojums nav patiess. Tātad arī
+apgalvojums $18s > 22n$ ($18$ skrūves ir smagākas nekā $22$ naglas) nav
+patiess."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Aplūkosim, ko no meiteņu apgalvojumiem varētu secināt $42$ skrūvju gadījumā:</p>
 <ul>
@@ -1930,16 +1971,16 @@ Pārbaudīsim, kuri no dotajiem apgalvojumiem var būt patiesi:
 ir zināms, ka tikai vienai no meitenēm ir taisnība, bet otrai- nē, tad taisnība
 ir Elīnai, bet Leldes apgalvojums nav patiess.</p>
 <p>Pārbaudīsim, kuri no dotajiem apgalvojumiem var būt patiesi:</p>
-<p><strong>a)</strong> No Elīnas apgalvojuma $7s > 8n$ seko, ka patiess ir arī apgalvojums
-       $18 \\cdot 7s > 18 \\cdot 8n$ jeb $126s > 144n > 140n$. No $126s > 140n$
-       seko, ka $18s > 20n$ ir patiess. Tātad apgalvojums „ $18$ skrūves ir
-       smagākas nekā $20$ naglas” ir patiess.</p>
-<p><strong>b)</strong> Tā kā Leldes apgalvojums $6s > 7n$ nav patiess, tad apgalvojums
-       $18s > 21n$ ($18$ skrūves ir smagākas nekā $21$ nagla) arī nav patiess.</p>
-<p><strong>c)</strong> Ja $18s > 22n$ būtu patiess, tad arī $18s > 21n$ būtu patiess. Jau
-       b) gadījumā pierādījām, ka otrais apgalvojums nav patiess. Tātad arī
-       apgalvojums $18s > 22n$ ($18$ skrūves ir smagākas nekā $22$ naglas) nav
-       patiess.</p>"""@lv .
+<p><strong>(A)</strong> No Elīnas apgalvojuma $7s > 8n$ seko, ka patiess ir arī apgalvojums
+$18 \\cdot 7s > 18 \\cdot 8n$ jeb $126s > 144n > 140n$. No $126s > 140n$
+seko, ka $18s > 20n$ ir patiess. Tātad apgalvojums „ $18$ skrūves ir
+smagākas nekā $20$ naglas” ir patiess.</p>
+<p><strong>(B)</strong> Tā kā Leldes apgalvojums $6s > 7n$ nav patiess, tad apgalvojums
+$18s > 21n$ ($18$ skrūves ir smagākas nekā $21$ nagla) arī nav patiess.</p>
+<p><strong>(C)</strong> Ja $18s > 22n$ būtu patiess, tad arī $18s > 21n$ būtu patiess. Jau
+(B) gadījumā pierādījām, ka otrais apgalvojums nav patiess. Tātad arī
+apgalvojums $18s > 22n$ ($18$ skrūves ir smagākas nekā $22$ naglas) nav
+patiess.</p>"""@lv .
 
 eliozo:SOLN.LV.AMO.2014.7.4.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
@@ -2177,12 +2218,11 @@ eliozo:SOLN.LV.AMO.2014.8.5.SUB2 a eliozo:Solution ;
     eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
-Apzīmējam $a_{22}=x$, $a_{31}=b$. 
-
+Apzīmējam $a_{22}=x$, $a_{31}=b$.
 Tad $a_{13}=2x-b$, $a_{11}=x+b-24$, $a_{33}=x-b+24$, $a_{23}=2b-24$. Pie $b=7$, $a_{23}<0$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Apzīmējam $a_{22}=x$, $a_{31}=b$. </p>
-<p>Tad $a_{13}=2x-b$, $a_{11}=x+b-24$, $a_{33}=x-b+24$, $a_{23}=2b-24$. Pie $b=7$, $a_{23}<0$.</p>"""@lv .
+<p>Apzīmējam $a_{22}=x$, $a_{31}=b$.
+Tad $a_{13}=2x-b$, $a_{11}=x+b-24$, $a_{33}=x-b+24$, $a_{23}=2b-24$. Pie $b=7$, $a_{23}<0$.</p>"""@lv .
 
 eliozo:SOLN.LV.AMO.2014.9.1.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;

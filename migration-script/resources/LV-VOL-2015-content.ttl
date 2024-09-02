@@ -3,7 +3,8 @@
 
 eliozo:LV.VOL.2015.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -24,13 +25,14 @@ $a^{4}b+ab^{4}+3a^{3}b^{2}+3a^{2}b^{3}$ vērtība ir vesels skaitlis!</p>"""@lv 
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2015.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2015.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -53,7 +55,8 @@ eliozo:LV.VOL.2015.10.2 a eliozo:Problem ;
 
 eliozo:LV.VOL.2015.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -70,13 +73,14 @@ $(a+d)^{2}+(b+e)^{2} \\leq(c+f)^{2}$.</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2015.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2015.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -93,13 +97,14 @@ rādiuss!</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2015.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2015.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -107,8 +112,7 @@ eliozo:LV.VOL.2015.10.5 a eliozo:Problem ;
     eliozo:problemID "LV.VOL.2015.10.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2015.10.5.SUB1 ;
     eliozo:problemText """**(A)** Pierādīt, ka, izmantojot visas piecas dotās figūras (skat. 2.att.), 
-katru tieši vienu reizi, nav iespējams salikt taisnstūri!
-
+katru tieši vienu reizi, nav iespējams salikt taisnstūri!  
 **(B)** Vai, izmantojot četras no dotajām figūrām, katru tieši vienu reizi, var
 salikt taisnstūri?
 
@@ -117,8 +121,8 @@ apmest otrādi. Taisnstūrī nedrīkst būt caurumi, un figūras nedrīkst pārk
 
 ![](LV.VOL.2015.10.5.png)"""@lv ;
     eliozo:problemTextHtml """<p><strong>(A)</strong> Pierādīt, ka, izmantojot visas piecas dotās figūras (skat. 2.att.), 
-katru tieši vienu reizi, nav iespējams salikt taisnstūri!</p>
-<p><strong>(B)</strong> Vai, izmantojot četras no dotajām figūrām, katru tieši vienu reizi, var
+katru tieši vienu reizi, nav iespējams salikt taisnstūri!<br />
+<strong>(B)</strong> Vai, izmantojot četras no dotajām figūrām, katru tieši vienu reizi, var
 salikt taisnstūri?</p>
 <p>Visas figūras sastāv no vienādiem kvadrātiem. Figūras drīkst pagriezt vai 
 apmest otrādi. Taisnstūrī nedrīkst būt caurumi, un figūras nedrīkst pārklāties.</p>
@@ -126,13 +130,15 @@ apmest otrādi. Taisnstūrī nedrīkst būt caurumi, un figūras nedrīkst pārk
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove",
+        "ProveDisprove" ;
     eliozo:suffix "LV.VOL.2015.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2015.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -161,7 +167,8 @@ vesels skaitlis!</p>"""@lv ;
 
 eliozo:LV.VOL.2015.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -175,13 +182,14 @@ un kura malas iet pa rūtiņu līnijām?</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.VOL.2015.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2015.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -205,13 +213,14 @@ pietiek, lai panāktu, ka visi papagaiļi atrodas savos sākotnējos krātiņos?
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.VOL.2015.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2015.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -233,7 +242,8 @@ iespējamo $b$ vērtību!</p>"""@lv ;
 
 eliozo:LV.VOL.2015.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -250,13 +260,14 @@ līnijas rādiuss!</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2015.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2015.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -271,13 +282,14 @@ $\\frac{\\sin 3x}{\\sin x}$ vērtību!</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.VOL.2015.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2015.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -293,13 +305,14 @@ $\\sphericalangle PBC=\\sphericalangle PDC$!</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2015.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2015.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -320,7 +333,8 @@ $2269^{n}+2151^{n}+1389^{n}-1779^{n}$ dalās ar $2015$.</p>"""@lv ;
 
 eliozo:LV.VOL.2015.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -338,13 +352,14 @@ kādām naturālām $d$ vērtībām šāds krāsojums ir iespējams!</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.VOL.2015.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2015.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -352,29 +367,32 @@ eliozo:LV.VOL.2015.12.5 a eliozo:Problem ;
     eliozo:problemID "LV.VOL.2015.12.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2015.12.5.SUB1 ;
     eliozo:problemText """Votivapu valodā visi vārdi sastāv tikai no diviem burtiem $a$ un $b$. Jebkuru 
-vārdu var iegūt no vārda " $a$ ", atkārtoti lietojot šādus trīs likumus:
+vārdu var iegūt no vārda "$a$", atkārtoti lietojot šādus trīs likumus:
 
-1) pierakstot vārdam galā burtu $b$;
-2) pierakstot vārdam galā sevi pašu;
-3) aizstājot vārdā trīs pēc kārtas esošus burtus $a$ ar vienu burtu $b$.
+1. pierakstot vārdam galā burtu $b$;
+2. pierakstot vārdam galā sevi pašu;
+3. aizstājot vārdā trīs pēc kārtas esošus burtus $a$ ar vienu burtu $b$.
 
 Vai votivapu valodā ir vārdi **(A)** $abbababab$; **(B)** $baabaabaa$?"""@lv ;
     eliozo:problemTextHtml """<p>Votivapu valodā visi vārdi sastāv tikai no diviem burtiem $a$ un $b$. Jebkuru 
-vārdu var iegūt no vārda " $a$ ", atkārtoti lietojot šādus trīs likumus:</p>
-<p>1) pierakstot vārdam galā burtu $b$;
-2) pierakstot vārdam galā sevi pašu;
-3) aizstājot vārdā trīs pēc kārtas esošus burtus $a$ ar vienu burtu $b$.</p>
+vārdu var iegūt no vārda "$a$", atkārtoti lietojot šādus trīs likumus:</p>
+<ol>
+<li>pierakstot vārdam galā burtu $b$;</li>
+<li>pierakstot vārdam galā sevi pašu;</li>
+<li>aizstājot vārdā trīs pēc kārtas esošus burtus $a$ ar vienu burtu $b$.</li>
+</ol>
 <p>Vai votivapu valodā ir vārdi <strong>(A)</strong> $abbababab$; <strong>(B)</strong> $baabaabaa$?</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.VOL.2015.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2015.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -394,18 +412,17 @@ $\\frac{2015}{n^{4}-m^{4}}$ arī ir naturāls skaitlis!</p>"""@lv ;
 
 eliozo:LV.VOL.2015.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2015.9.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2015.9.2.SUB1 ;
-    eliozo:problemText """Pierādīt, ka, izmantojot
-
+    eliozo:problemText """Pierādīt, ka, izmantojot  
 **(A)** visas septiņas dotās figūras (skat 1.att.), katru tieši vienu reizi, 
-nav iespējams salikt taisnstūri;
-
+nav iespējams salikt taisnstūri;  
 **(B)** sešas no dotajām figūrām, katru tieši vienu reizi, var salikt 
 taisnstūri.
 
@@ -414,10 +431,10 @@ nedrīkst apmest otrādi. Taisnstūrī nedrīkst būt caurumi, un figūras nedr�
 pārklāties.
 
 ![](LV.VOL.2015.9.2.png)"""@lv ;
-    eliozo:problemTextHtml """<p>Pierādīt, ka, izmantojot</p>
-<p><strong>(A)</strong> visas septiņas dotās figūras (skat 1.att.), katru tieši vienu reizi, 
-nav iespējams salikt taisnstūri;</p>
-<p><strong>(B)</strong> sešas no dotajām figūrām, katru tieši vienu reizi, var salikt 
+    eliozo:problemTextHtml """<p>Pierādīt, ka, izmantojot<br />
+<strong>(A)</strong> visas septiņas dotās figūras (skat 1.att.), katru tieši vienu reizi, 
+nav iespējams salikt taisnstūri;<br />
+<strong>(B)</strong> sešas no dotajām figūrām, katru tieši vienu reizi, var salikt 
 taisnstūri.</p>
 <p>Visas figūras sastāv no vienādiem kvadrātiem. Figūras drīkst pagriezt, bet 
 nedrīkst apmest otrādi. Taisnstūrī nedrīkst būt caurumi, un figūras nedrīkst 
@@ -426,13 +443,14 @@ pārklāties.</p>
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2015.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2015.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -472,7 +490,8 @@ atšķirīgi no $100$).</p>"""@lv ;
 
 eliozo:LV.VOL.2015.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -488,13 +507,14 @@ Pierādīt, ka $AB>BC$ !</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2015.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2015.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2015" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -509,7 +529,7 @@ ja $a$ ir reāls skaitlis?</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.VOL.2015.9" ;
     eliozo:suggestedGrade 9 .
 
@@ -1346,7 +1366,7 @@ eliozo:SOLN.LV.VOL.2015.12.5.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-**(A)** Vārdu " $abbababab$ " var iegūt šādi:
+**(A)** Vārdu "$abbababab$" var iegūt šādi:
 
 $$\\begin{aligned}
 & a \\xrightarrow{\\text {2)}} aa \\stackrel{\\text {2)}}{\\rightarrow} aaaa \\xrightarrow{2)} aaaaaaaa \\xrightarrow{2)} aaaaaaaaaaaaaaaa \\xrightarrow{\\text {3)}} abaaaaaaaaaaaa \\xrightarrow{\\text {3)}} \\\\
@@ -1355,29 +1375,29 @@ $$\\begin{aligned}
 \\end{aligned}$$
 
 
-**(B)** Vārdu " $baabaabaa$ " nevar iegūt. Burtu $a$ aizstājam ar ciparu $1$, 
+**(B)** Vārdu "$baabaabaa$" nevar iegūt. Burtu $a$ aizstājam ar ciparu $1$, 
 bet burtu $b$ - ar ciparu $3$. Tad visi vārdi votivapu valodā tiek aizstāti 
 ar naturāliem skaitļiem, kuru pierakstā izmantoti tikai cipari $1$ un $3$.
 
-Ievērojam, ka sākotnējais vārds " $a$ " jeb skaitlis $1$ nedalās ar $3$.
+Ievērojam, ka sākotnējais vārds "$a$" jeb skaitlis $1$ nedalās ar $3$.
 
 Pierādīsim, ja kāds skaitlis nedalās ar $3$, tad skaitlis, kas no tā tiek 
 iegūts ar uzdevumā dotajām darbībām, arī nedalās ar $3$:
 
-1) ja skaitlis nedalās ar $3$, tad, pierakstot tam galā $3$, arī iegūtais 
+1. ja skaitlis nedalās ar $3$, tad, pierakstot tam galā $3$, arī iegūtais 
    skaitlis nedalās ar $3$, jo ciparu summas atlikums, dalot ar $3$, nemainās;
-2) ja skaitļa ciparu summa, dalot ar $3$, dod atlikumu $1$, tad iegūtā skaitļa 
+2. ja skaitļa ciparu summa, dalot ar $3$, dod atlikumu $1$, tad iegūtā skaitļa 
    ciparu summa, dalot ar $3$, dod atlikumu $2$; ja skaitļa ciparu summa, dalot
    ar $3$, dod atlikumu $2$, tad iegūtā skaitļa ciparu summa, dalot ar $3$, dod
    atlikumu $1$; abos gadījumos iegūtais skaitlis nedalās ar $3$;
-3) skaitļa ciparu summa nemainās, aizstājot $111$ ar $3$, tātad iegūtais 
+3. skaitļa ciparu summa nemainās, aizstājot $111$ ar $3$, tātad iegūtais 
    skaitlis nedalās ar $3$.
 
-Aizstājot vārda " $baabaabaa$ " burtus ar cipariem, iegūst skaitli $311311311$,
+Aizstājot vārda "$baabaabaa$" burtus ar cipariem, iegūst skaitli $311311311$,
 kas dalās ar $3$, jo tā ciparu summa ir $15$. Tātad, vairākkārt izmantojot 
 dotos likumus, šo vārdu nav iespējams iegūt."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>(A)</strong> Vārdu " $abbababab$ " var iegūt šādi:</p>
+<p><strong>(A)</strong> Vārdu "$abbababab$" var iegūt šādi:</p>
 <p>$$\\begin{aligned}
 & a \\xrightarrow{\\text {2)}} aa \\stackrel{\\text {2)}}{\\rightarrow} aaaa \\xrightarrow{2)} aaaaaaaa \\xrightarrow{2)} aaaaaaaaaaaaaaaa \\xrightarrow{\\text {3)}} abaaaaaaaaaaaa \\xrightarrow{\\text {3)}} \\\\
 &   \\stackrel{\\text {3)}}\\rightarrow abbaaaaaaaaa \\stackrel{\\text {3)}}\\rightarrow abbabaaaaa \\stackrel{\\text {3)}}\\rightarrow abbababa \\stackrel{\\text {1)}}\\rightarrow abbababab \\\\
@@ -1385,25 +1405,25 @@ dotos likumus, šo vārdu nav iespējams iegūt."""@lv ;
 \\end{aligned}$$
 
 
-**(B)** Vārdu " $baabaabaa$ " nevar iegūt. Burtu $a$ aizstājam ar ciparu $1$, 
+**(B)** Vārdu "$baabaabaa$" nevar iegūt. Burtu $a$ aizstājam ar ciparu $1$, 
 bet burtu $b$ - ar ciparu $3$. Tad visi vārdi votivapu valodā tiek aizstāti 
 ar naturāliem skaitļiem, kuru pierakstā izmantoti tikai cipari $1$ un $3$.
 
-Ievērojam, ka sākotnējais vārds " $a$ " jeb skaitlis $1$ nedalās ar $3$.
+Ievērojam, ka sākotnējais vārds "$a$" jeb skaitlis $1$ nedalās ar $3$.
 
 Pierādīsim, ja kāds skaitlis nedalās ar $3$, tad skaitlis, kas no tā tiek 
 iegūts ar uzdevumā dotajām darbībām, arī nedalās ar $3$:
 
-1) ja skaitlis nedalās ar $3$, tad, pierakstot tam galā $3$, arī iegūtais 
+1. ja skaitlis nedalās ar $3$, tad, pierakstot tam galā $3$, arī iegūtais 
    skaitlis nedalās ar $3$, jo ciparu summas atlikums, dalot ar $3$, nemainās;
-2) ja skaitļa ciparu summa, dalot ar $3$, dod atlikumu $1$, tad iegūtā skaitļa 
+2. ja skaitļa ciparu summa, dalot ar $3$, dod atlikumu $1$, tad iegūtā skaitļa 
    ciparu summa, dalot ar $3$, dod atlikumu $2$; ja skaitļa ciparu summa, dalot
    ar $3$, dod atlikumu $2$, tad iegūtā skaitļa ciparu summa, dalot ar $3$, dod
    atlikumu $1$; abos gadījumos iegūtais skaitlis nedalās ar $3$;
-3) skaitļa ciparu summa nemainās, aizstājot $111$ ar $3$, tātad iegūtais 
+3. skaitļa ciparu summa nemainās, aizstājot $111$ ar $3$, tātad iegūtais 
    skaitlis nedalās ar $3$.
 
-Aizstājot vārda " $baabaabaa$ " burtus ar cipariem, iegūst skaitli $311311311$,
+Aizstājot vārda "$baabaabaa$" burtus ar cipariem, iegūst skaitli $311311311$,
 kas dalās ar $3$, jo tā ciparu summa ir $15$. Tātad, vairākkārt izmantojot 
 dotos likumus, šo vārdu nav iespējams iegūt.</p>"""@lv .
 

@@ -6,6 +6,7 @@ eliozo:LV.AMO.2011.10.1 a eliozo:Problem ;
         eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -26,7 +27,8 @@ sekojošu naturālu skaitļu summu? Saskaitāmo secība nav svarīga.</p>"""@lv 
 
 eliozo:LV.AMO.2011.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -44,13 +46,14 @@ laukumu!</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2011.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2011.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -73,13 +76,14 @@ $$\\left\\{\\begin{array}{l}
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2011.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2011.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -93,13 +97,14 @@ riņķa līniju $19$ lokos. Pierādīt, ka ir loks, kurš nepārsniedz $2^{\\cir
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2011.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2011.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -112,8 +117,7 @@ kubiņi, trešajā slānī $4$ kubiņi un augšā - viens kubiņš (skat. 6.zīm
 
 Vai šo *torni* var salikt no
 
-**(A)** *klucīšiem* ar izmēru $1 \\times 1 \\times 2$ (skat. 7.zīm.)?
-
+**(A)** *klucīšiem* ar izmēru $1 \\times 1 \\times 2$ (skat. 7.zīm.)?  
 **(B)** *stūrīšiem*, ko veido $3$ kubiņi (skat. 8.zīm.)?
 
 ![](LV.AMO.2011.10.5.png)"""@lv ;
@@ -121,13 +125,13 @@ Vai šo *torni* var salikt no
 $1 \\times 1 \\times 1$: apakšējā slānī ir $16$ kubiņi, otrajā slānī ir $9$ 
 kubiņi, trešajā slānī $4$ kubiņi un augšā - viens kubiņš (skat. 6.zīm.)</p>
 <p>Vai šo <em>torni</em> var salikt no</p>
-<p><strong>(A)</strong> <em>klucīšiem</em> ar izmēru $1 \\times 1 \\times 2$ (skat. 7.zīm.)?</p>
-<p><strong>(B)</strong> <em>stūrīšiem</em>, ko veido $3$ kubiņi (skat. 8.zīm.)?</p>
+<p><strong>(A)</strong> <em>klucīšiem</em> ar izmēru $1 \\times 1 \\times 2$ (skat. 7.zīm.)?<br />
+<strong>(B)</strong> <em>stūrīšiem</em>, ko veido $3$ kubiņi (skat. 8.zīm.)?</p>
 <p><img alt="" src="LV.AMO.2011.10.5.png" /></p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2011.10" ;
     eliozo:suggestedGrade 10 .
 
@@ -136,6 +140,7 @@ eliozo:LV.AMO.2011.11.1 a eliozo:Problem ;
         eliozo:TRM-sequence ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -172,7 +177,8 @@ dotajām virknēm!</p>"""@lv ;
 
 eliozo:LV.AMO.2011.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -193,13 +199,15 @@ krustojas punktā $Q;\\ AC$ un $BD$ krustojas punktā $O$.</p>
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2011.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2011.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb",
+        "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -215,13 +223,14 @@ rūtiņu malām, taisnstūri var būt novietoti gan horizontāli, gan vertikāli
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindCount" ;
     eliozo:suffix "LV.AMO.2011.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2011.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -242,7 +251,7 @@ $$\\begin{aligned}
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2011.11" ;
     eliozo:suggestedGrade 11 .
 
@@ -251,6 +260,7 @@ eliozo:LV.AMO.2011.11.5 a eliozo:Problem ;
         eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -275,6 +285,7 @@ eliozo:LV.AMO.2011.12.1 a eliozo:Problem ;
         eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -300,7 +311,8 @@ katrā grupā aprēķināta tajā ietilpstošo skaitļu summa. Vai var būt, ka<
 
 eliozo:LV.AMO.2011.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -312,13 +324,14 @@ eliozo:LV.AMO.2011.12.2 a eliozo:Problem ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2011.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -327,21 +340,22 @@ eliozo:LV.AMO.2011.12.3 a eliozo:Problem ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2011.12.3.SUB1,
         eliozo:SOLN.LV.AMO.2011.12.3.SUB2 ;
     eliozo:problemText """Uz riņķa līnijas ir izvēlētas divas hordas $AC$ un $BD$, kas krustojas punktā 
-$O,\\ AO>BO.\\ MO$ ir $\\triangle AOB$ bisektrise, pie tam $AM=DO$. Pierādīt, ka 
+$O$, $AO>BO$. $MO$ ir $\\triangle AOB$ bisektrise, pie tam $AM=DO$. Pierādīt, ka 
 $BM=CO$."""@lv ;
     eliozo:problemTextHtml """<p>Uz riņķa līnijas ir izvēlētas divas hordas $AC$ un $BD$, kas krustojas punktā 
-$O,\\ AO>BO.\\ MO$ ir $\\triangle AOB$ bisektrise, pie tam $AM=DO$. Pierādīt, ka 
+$O$, $AO>BO$. $MO$ ir $\\triangle AOB$ bisektrise, pie tam $AM=DO$. Pierādīt, ka 
 $BM=CO$.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2011.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -355,13 +369,14 @@ trijstūra virsotnēs un nekādi pieci no tiem neatrastos vienā plaknē?</p>"""
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2011.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -376,13 +391,16 @@ $$x^{y}+y^{x}+x+y<1+\\frac{1}{2011}$$"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2011.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2011" ;
+    eliozo:genre "Cryptarithm" ;
+    eliozo:method "ExhaustiveAlgorithms" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -404,15 +422,17 @@ nav $0$. Atrodi visus iespējamos atrisinājumus!</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
     eliozo:questionType "FindAll" ;
+    eliozo:subdomain "NumeralSystems" ;
     eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:ExhaustionMethod,
-        eliozo:IntegerFactorization .
+    eliozo:topic eliozo:IntegerFactorization .
 
 eliozo:LV.AMO.2011.5.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2011" ;
+    eliozo:genre "MagicConfiguration" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -434,6 +454,7 @@ skaitļu summas būtu vienādas. Ir zināmi trīs rūtiņās ierakstītie skait�
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
     eliozo:questionType "FindAll" ;
+    eliozo:subdomain "EquationSystems" ;
     eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:suggestedGrade 5 ;
     eliozo:topic eliozo:AlgebraicTransformations,
@@ -444,6 +465,7 @@ eliozo:LV.AMO.2011.5.3 a eliozo:Problem ;
         eliozo:TRM-triangle ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -456,6 +478,7 @@ eliozo:LV.AMO.2011.5.3 a eliozo:Problem ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
     eliozo:questionType "FindExample" ;
+    eliozo:subdomain "CuttingCoversColoring" ;
     eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:suggestedGrade 5 ;
     eliozo:topic eliozo:CircleInscribedAngles,
@@ -465,6 +488,7 @@ eliozo:LV.AMO.2011.5.3 a eliozo:Problem ;
 eliozo:LV.AMO.2011.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -494,6 +518,7 @@ starpība ir</p>
 eliozo:LV.AMO.2011.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -531,6 +556,7 @@ eliozo:LV.AMO.2011.6.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-equation ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -553,6 +579,7 @@ $$a \\cdot b \\cdot(a+b)=20102011?$$"""@lv ;
 eliozo:LV.AMO.2011.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -576,6 +603,7 @@ kungiem. Cik starp šiem pensionāriem ir kungu un cik - kundžu?</p>"""@lv ;
 eliozo:LV.AMO.2011.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -601,6 +629,7 @@ atrast nevienu pilnībā baltu taisnstūri ar izmēriem $1 \\times 3$ rūtiņas
 eliozo:LV.AMO.2011.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -634,6 +663,7 @@ skaitli $5 \\cdot b-2 \\cdot a$.</p>
 eliozo:LV.AMO.2011.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -664,6 +694,7 @@ eliozo:LV.AMO.2011.7.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -699,7 +730,8 @@ $100$. Par tiem zināms, ka</p>
 
 eliozo:LV.AMO.2011.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -721,7 +753,7 @@ pilsētā $B$ ierasties vienlaicīgi ar to, ja sarkanās automašīnas ātrums b
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2011.7" ;
     eliozo:suggestedGrade 7 .
 
@@ -729,6 +761,7 @@ eliozo:LV.AMO.2011.7.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-remainder ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -753,6 +786,7 @@ eliozo:LV.AMO.2011.7.4 a eliozo:Problem ;
         eliozo:TRM-square-Geo ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -779,6 +813,7 @@ eliozo:LV.AMO.2011.7.5 a eliozo:Problem ;
         eliozo:TRM-point ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -799,6 +834,7 @@ vienas krāsas punktus, starp kuriem attālums centimetros ir vesels skaitlis.</
 eliozo:LV.AMO.2011.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -831,7 +867,8 @@ nemainot to secību, ievieto aritmētisko darbību zīmes ("+", "-", " $\\cdot$ 
 
 eliozo:LV.AMO.2011.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -847,13 +884,14 @@ $MK,\\ ML,\\ MP$ un $MR$ viduspunkti, ir kvadrāts.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2011.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.AMO.2011.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -869,7 +907,7 @@ vienādas. Nosaki visas iespējamās šo summu vērtības.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2011.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -877,6 +915,7 @@ eliozo:LV.AMO.2011.8.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -902,6 +941,7 @@ dalās ar <strong>(A)</strong> $17$; <strong>(B)</strong> $23$?</p>"""@lv ;
 eliozo:LV.AMO.2011.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -935,6 +975,7 @@ eliozo:LV.AMO.2011.9.1 a eliozo:Problem ;
         eliozo:TRM-pair ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -955,7 +996,8 @@ $$\\frac{1}{x^{2}+24}+\\frac{1}{y^{2}+24}=\\frac{2}{xy+24}$$"""@lv ;
 
 eliozo:LV.AMO.2011.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -971,7 +1013,7 @@ $\\sphericalangle BAC=\\sphericalangle BMN$.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2011.9" ;
     eliozo:suggestedGrade 9 .
 
@@ -979,6 +1021,7 @@ eliozo:LV.AMO.2011.9.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-equation ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1005,6 +1048,7 @@ eliozo:LV.AMO.2011.9.4 a eliozo:Problem ;
         eliozo:TRM-square-Geo ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1024,7 +1068,9 @@ ka katrs no tiem ir izsakāms kā divu naturālu skaitļu kvadrātu starpība?</
 
 eliozo:LV.AMO.2011.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb",
+        "Geom" ;
+    eliozo:event "LV.AMO.2011" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1052,7 +1098,7 @@ nevar, izpildot tikai atļautos gājienus?</p>
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2011.9" ;
     eliozo:suggestedGrade 9 .
 
@@ -1605,7 +1651,7 @@ eliozo:SOLN.LV.AMO.2011.12.3.SUB2 a eliozo:Solution ;
     eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
-Apvilksim ap $M,\\ B$ un $O$ riņķa līniju, kas krusto $AO$ punktā $N$ (skat. 
+Apvilksim ap $M$, $B$ un $O$ riņķa līniju, kas krusto $AO$ punktā $N$ (skat. 
 19.zīm.). $\\sphericalangle ABD=\\sphericalangle ACD$ kā ievilktie leņķi, kas 
 balstās uz vienu loku.
 $\\sphericalangle ANM=180^{\\circ}-\\left(180^{\\circ}-\\sphericalangle ABO\\right)=\\sphericalangle ABO$.
@@ -1628,7 +1674,7 @@ $BM=MN=OC$, k.b.j.
 
 ![](LV.AMO.2011.12.3A.png)"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Apvilksim ap $M,\\ B$ un $O$ riņķa līniju, kas krusto $AO$ punktā $N$ (skat. 
+<p>Apvilksim ap $M$, $B$ un $O$ riņķa līniju, kas krusto $AO$ punktā $N$ (skat. 
 19.zīm.). $\\sphericalangle ABD=\\sphericalangle ACD$ kā ievilktie leņķi, kas 
 balstās uz vienu loku.
 $\\sphericalangle ANM=180^{\\circ}-\\left(180^{\\circ}-\\sphericalangle ABO\\right)=\\sphericalangle ABO$.

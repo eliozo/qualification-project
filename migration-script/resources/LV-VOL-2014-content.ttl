@@ -3,7 +3,8 @@
 
 eliozo:LV.VOL.2014.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -17,18 +18,18 @@ $$\\left\\{\\begin{array}{l}
 x=y+z
 \\end{array}\\right.$$
 
-kur $x,\\ y,\\ z$ - veseli nenegatīvi skaitļi."""@lv ;
+kur $x$, $y$, $z$ - veseli nenegatīvi skaitļi."""@lv ;
     eliozo:problemTextHtml """<p>Atrisināt vienādojumu sistēmu</p>
 <p>$$\\left\\{\\begin{array}{l}
 5(x+y+z)=xyz \\\\
 x=y+z
 \\end{array}\\right.$$
 
-kur $x,\\ y,\\ z$ - veseli nenegatīvi skaitļi.</p>"""@lv ;
+kur $x$, $y$, $z$ - veseli nenegatīvi skaitļi.</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.VOL.2014.10" ;
     eliozo:suggestedGrade 10 .
 
@@ -36,6 +37,7 @@ eliozo:LV.VOL.2014.10.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-integer-polynomial ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -60,6 +62,7 @@ eliozo:LV.VOL.2014.10.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-linear-expression ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -86,7 +89,8 @@ ir lielākā summa, kuru nav iespējams apmaksāt izmantojot tikai šīs pastmar
 
 eliozo:LV.VOL.2014.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -106,13 +110,14 @@ vidusperpendikulu punktā $F$. Pierādīt, ka $BC=2AF$.</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2014.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2014.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -134,13 +139,14 @@ nē. Kāds ir lielākais iespējamais partiju skaits, kas gatavojas vēlēšanā
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.VOL.2014.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2014.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -156,13 +162,14 @@ naturālajam skaitlim, iegūtie skaitļi ir vienādi?</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.VOL.2014.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2014.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -182,7 +189,8 @@ $a,\\ a+14,\\ a+22,\\ a+32,\\ a+46$ var būt pirmskaitļi.</p>"""@lv ;
 
 eliozo:LV.VOL.2014.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -205,13 +213,14 @@ ierakstīto četru skaitļu summa būtu vienāda ar $M$. Vai to var izdarīt, ja
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.VOL.2014.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2014.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -229,13 +238,14 @@ $P,\\ Q$ un $R$. Pierādīt, ka $A$ ir trijstūra $PQR$ bisektrišu krustpunkts.
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2014.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2014.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -257,29 +267,31 @@ skaitļu kvadrātu summu.</p>"""@lv ;
 
 eliozo:LV.VOL.2014.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2014.12.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2014.12.1.SUB1 ;
-    eliozo:problemText """Izteiksmē $\\pm 1 \\pm 2 \\pm 3 \\pm \\ldots \\pm 100=2014$ katru zīmi " $\\pm$ " 
+    eliozo:problemText """Izteiksmē $\\pm 1 \\pm 2 \\pm 3 \\pm \\ldots \\pm 100=2014$ katru zīmi "$\\pm$" 
 aizvietoja vai nu ar "+", vai "-" tā, lai izteiksme būtu patiesa. Kāds 
 lielākais "+" zīmju skaits var būt šajā izteiksmē?"""@lv ;
-    eliozo:problemTextHtml """<p>Izteiksmē $\\pm 1 \\pm 2 \\pm 3 \\pm \\ldots \\pm 100=2014$ katru zīmi " $\\pm$ " 
+    eliozo:problemTextHtml """<p>Izteiksmē $\\pm 1 \\pm 2 \\pm 3 \\pm \\ldots \\pm 100=2014$ katru zīmi "$\\pm$" 
 aizvietoja vai nu ar "+", vai "-" tā, lai izteiksme būtu patiesa. Kāds 
 lielākais "+" zīmju skaits var būt šajā izteiksmē?</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.VOL.2014.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2014.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -301,7 +313,8 @@ spēkā sakarība $n+f(1)+f(2)+\\ldots+f(n-1)=nf(n)$.</p>"""@lv ;
 
 eliozo:LV.VOL.2014.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -319,13 +332,14 @@ ir trijstūra $AEO$ augstums. Aprēķināt leņķa $AED$ lielumu grādos.</p>"""
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.VOL.2014.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2014.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -343,13 +357,14 @@ iespējamais kopējais šaha partiju skaits, kas ir izspēlētas šajā festivā
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.VOL.2014.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2014.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -369,7 +384,8 @@ naturālo dalītāju, izņemot $1$ un $n$, kvadrātu summa vienāda ar $n^{2}$.<
 
 eliozo:LV.VOL.2014.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -382,13 +398,14 @@ eliozo:LV.VOL.2014.9.1 a eliozo:Problem ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.VOL.2014.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2014.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -410,7 +427,8 @@ pirmajiem <strong>(A)</strong> $100$, <strong>(B)</strong> $2014$ locekļiem ir 
 
 eliozo:LV.VOL.2014.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -428,13 +446,14 @@ perpendikulārs $AY$.</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2014.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2014.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -447,8 +466,7 @@ vārdu. Diemžēl, ieņemot vietas pie galda, diplomāti šīs plāksnītes neņ
 un izrādījās, ka neviens no diplomātiem nav apsēdies pretī savai plāksnītei.
 
 **(A)** Pierādīt: nepārsēdinot diplomātus, galdu ir iespējams pagriezt tā, ka 
-vismaz divi diplomāti atradīsies pret savām plāksnītēm.
-
+vismaz divi diplomāti atradīsies pret savām plāksnītēm.  
 **(B)** Pierādīt: ja sākumā tieši viens diplomāts būtu sēdējis pret savu 
 plāksnīti, tad ir iespējams, ka viņi apsēdušies tā, ka, pagriežot galdu, nav 
 iespējams panākt, ka pret savu plāksnīti atradīsies vairāk par vienu diplomātu."""@lv ;
@@ -457,20 +475,21 @@ vienādos attālumos un katrai no vietām tika sagatavota plāksnīte ar diplom�
 vārdu. Diemžēl, ieņemot vietas pie galda, diplomāti šīs plāksnītes neņēma vērā 
 un izrādījās, ka neviens no diplomātiem nav apsēdies pretī savai plāksnītei.</p>
 <p><strong>(A)</strong> Pierādīt: nepārsēdinot diplomātus, galdu ir iespējams pagriezt tā, ka 
-vismaz divi diplomāti atradīsies pret savām plāksnītēm.</p>
-<p><strong>(B)</strong> Pierādīt: ja sākumā tieši viens diplomāts būtu sēdējis pret savu 
+vismaz divi diplomāti atradīsies pret savām plāksnītēm.<br />
+<strong>(B)</strong> Pierādīt: ja sākumā tieši viens diplomāts būtu sēdējis pret savu 
 plāksnīti, tad ir iespējams, ka viņi apsēdušies tā, ka, pagriežot galdu, nav 
 iespējams panākt, ka pret savu plāksnīti atradīsies vairāk par vienu diplomātu.</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2014.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2014.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2014" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -484,7 +503,7 @@ sakņu kubu summu.</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.VOL.2014.9" ;
     eliozo:suggestedGrade 9 .
 
@@ -495,7 +514,6 @@ eliozo:SOLN.LV.VOL.2014.10.1.SUB1 a eliozo:Solution ;
 Ievērojam, ka sistēmas atrisinājums ir $(0,0,0)$.
 
 Pirmajā vienādojumā aizstājot $y+z$ ar $x$, iegūstam
-
 $5(x+x)=xyz$ jeb $10x=xyz$
 
 Ja $x \\neq 0$, tad no pirmā vienādojuma iegūstam, ka
@@ -514,8 +532,8 @@ Tātad dotajai sistēmai ir pieci atrisinājumi:
 $$(0,0,0),(11,10,1),(7,5,2),(7,2,5),(11,1,10)$$"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Ievērojam, ka sistēmas atrisinājums ir $(0,0,0)$.</p>
-<p>Pirmajā vienādojumā aizstājot $y+z$ ar $x$, iegūstam</p>
-<p>$5(x+x)=xyz$ jeb $10x=xyz$</p>
+<p>Pirmajā vienādojumā aizstājot $y+z$ ar $x$, iegūstam
+$5(x+x)=xyz$ jeb $10x=xyz$</p>
 <p>Ja $x \\neq 0$, tad no pirmā vienādojuma iegūstam, ka</p>
 <p>$$10=yz \\Rightarrow y=\\frac{10}{z}$$
 
@@ -567,7 +585,6 @@ Derīgās $n+3$ vērtības apkopotas tabulas otrajā kolonnā:
 | $21$ | $24$ | $25$ |
 
 No skaitļu $n+4$ vērtībām ietonētās ir skaitļa $260$ dalītāji.
-
 Tātad meklētās $n$ vērtības ir $-9,\\ -6,\\ -5,\\ -2,\\ 0,\\ 1,\\ 9$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Apzīmējam $k=n+3$. Tad $n=k-3$ un pārveidojam pirmo izteiksmi:</p>
@@ -602,7 +619,6 @@ Derīgās $n+3$ vērtības apkopotas tabulas otrajā kolonnā:
 | $21$ | $24$ | $25$ |
 
 No skaitļu $n+4$ vērtībām ietonētās ir skaitļa $260$ dalītāji.
-
 Tātad meklētās $n$ vērtības ir $-9,\\ -6,\\ -5,\\ -2,\\ 0,\\ 1,\\ 9$.</p>"""@lv .
 
 eliozo:SOLN.LV.VOL.2014.10.2.SUB2 a eliozo:Solution ;

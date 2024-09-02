@@ -4,6 +4,7 @@
 eliozo:LV.VOL.2013.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -28,7 +29,8 @@ naturālos skaitļos.</p>"""@lv ;
 
 eliozo:LV.VOL.2013.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -44,27 +46,28 @@ Pierādīt, ka $EF \\perp CD$.</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2013.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2013.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2013.10.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2013.10.3.SUB1 ;
-    eliozo:problemText """Funkcija $f(x)=(x+10 x(x-1)(x-11)$ definēta visām reālām $x$ vērtībām. Atrast
+    eliozo:problemText """Funkcija $f(x)=(x+10)x(x-1)(x-11)$ definēta visām reālām $x$ vērtībām. Atrast
 mazāko iespējamo $f(x)$ vērtību."""@lv ;
-    eliozo:problemTextHtml """<p>Funkcija $f(x)=(x+10 x(x-1)(x-11)$ definēta visām reālām $x$ vērtībām. Atrast
+    eliozo:problemTextHtml """<p>Funkcija $f(x)=(x+10)x(x-1)(x-11)$ definēta visām reālām $x$ vērtībām. Atrast
 mazāko iespējamo $f(x)$ vērtību.</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.VOL.2013.10" ;
     eliozo:suggestedGrade 10 .
 
@@ -73,6 +76,7 @@ eliozo:LV.VOL.2013.10.4 a eliozo:Problem ;
         eliozo:TRM-full-square ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -99,37 +103,39 @@ kvadrāti.</p>"""@lv ;
 
 eliozo:LV.VOL.2013.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2013.10.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2013.10.5.SUB1 ;
-    eliozo:problemText """Dota rūtiņu lapa ar izmēriem $n \\times m$ ( $n, m$- naturāli skaitļi) rūtiņas.
+    eliozo:problemText """Dota rūtiņu lapa ar izmēriem $n \\times m$ ($n, m$- naturāli skaitļi) rūtiņas.
 Divi spēlētāji spēlē šādu spēli, pēc kārtas izdarot pa vienam gājienam. Ar vienu
 gājienu atļauts veikt taisnu griezienu, kas sākas kādā lapas malā un iet pa
 rūtiņu malām, pie tam griezuma garumam jābūt naturālam skaitlim. Zaudē tas
 spēlētājs, pēc kura gājiena lapa tiek sagriezta divos atsevišķos gabalos. Kādām
 $n$ un $m$ vērtībām, pareizi spēlējot, vienmēr var uzvarēt pirmais spēlētājs, un
-kad- otrais (spēli vienmēr sāk pirmais spēlētājs)?"""@lv ;
-    eliozo:problemTextHtml """<p>Dota rūtiņu lapa ar izmēriem $n \\times m$ ( $n, m$- naturāli skaitļi) rūtiņas.
+kad - otrais (spēli vienmēr sāk pirmais spēlētājs)?"""@lv ;
+    eliozo:problemTextHtml """<p>Dota rūtiņu lapa ar izmēriem $n \\times m$ ($n, m$- naturāli skaitļi) rūtiņas.
 Divi spēlētāji spēlē šādu spēli, pēc kārtas izdarot pa vienam gājienam. Ar vienu
 gājienu atļauts veikt taisnu griezienu, kas sākas kādā lapas malā un iet pa
 rūtiņu malām, pie tam griezuma garumam jābūt naturālam skaitlim. Zaudē tas
 spēlētājs, pēc kura gājiena lapa tiek sagriezta divos atsevišķos gabalos. Kādām
 $n$ un $m$ vērtībām, pareizi spēlējot, vienmēr var uzvarēt pirmais spēlētājs, un
-kad- otrais (spēli vienmēr sāk pirmais spēlētājs)?</p>"""@lv ;
+kad - otrais (spēli vienmēr sāk pirmais spēlētājs)?</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.VOL.2013.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2013.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -147,7 +153,8 @@ eliozo:LV.VOL.2013.11.1 a eliozo:Problem ;
 
 eliozo:LV.VOL.2013.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -163,13 +170,15 @@ punktā $D$. Pierādīt, ka $AD+BD=BC$.</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2013.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2013.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg",
+        "Geom" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -186,35 +195,37 @@ garumi, kas izteikti centimetros.</p>
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.VOL.2013.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2013.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2013.11.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2013.11.4.SUB1 ;
-    eliozo:problemText """Diviem vienādiem kvadrātiem ar malas garumu $40~ \\mathrm{cm}$ ir kopīgs centrs.
-Vai abu kvadrātu kopīgās daļas laukums noteikti ir lielāks nekā **a)**
-$1250~ \\mathrm{cm}^{2}$, **b)** $1300~ \\mathrm{cm}^{2}$ ?"""@lv ;
-    eliozo:problemTextHtml """<p>Diviem vienādiem kvadrātiem ar malas garumu $40~ \\mathrm{cm}$ ir kopīgs centrs.
-Vai abu kvadrātu kopīgās daļas laukums noteikti ir lielāks nekā <strong>a)</strong>
-$1250~ \\mathrm{cm}^{2}$, <strong>b)</strong> $1300~ \\mathrm{cm}^{2}$ ?</p>"""@lv ;
+    eliozo:problemText """Diviem vienādiem kvadrātiem ar malas garumu $40~\\mathrm{cm}$ ir kopīgs centrs.
+Vai abu kvadrātu kopīgās daļas laukums noteikti ir lielāks nekā **(A)**
+$1250~\\mathrm{cm}^{2}$, **(B)** $1300~\\mathrm{cm}^{2}$?"""@lv ;
+    eliozo:problemTextHtml """<p>Diviem vienādiem kvadrātiem ar malas garumu $40~\\mathrm{cm}$ ir kopīgs centrs.
+Vai abu kvadrātu kopīgās daļas laukums noteikti ir lielāks nekā <strong>(A)</strong>
+$1250~\\mathrm{cm}^{2}$, <strong>(B)</strong> $1300~\\mathrm{cm}^{2}$?</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.VOL.2013.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2013.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -227,9 +238,9 @@ pilsētas, katras divas pilsētas savieno ne vairāk kā viens ceļš, turklāt 
 izbūvētajiem ceļiem no jebkuras pilsētas ir iespējams aizbraukt uz jebkuru citu
 vienā vienīgā veidā.
 
-**a)** Pierādīt, ka ir vismaz viena pilsēta, no kuras iziet tieši viens ceļš.
+**(A)** Pierādīt, ka ir vismaz viena pilsēta, no kuras iziet tieši viens ceļš.
 
-**b)** Pierādīt, ka pilsētas var sanumurēt ar skaitļiem $1,2, \\ldots, n$ tā, lai
+**(B)** Pierādīt, ka pilsētas var sanumurēt ar skaitļiem $1,2, \\ldots, n$ tā, lai
 jebkuru divu pilsētu, kuras ir savienotas ar ceļu, numuru reizinājums būtu pāra
 skaitlis."""@lv ;
     eliozo:problemTextHtml """<p>Valstī Alfa ir $n$ pilsētas, $n \\geq 2$. Dažas no šīm pilsētām ir savienotas ar
@@ -237,20 +248,21 @@ dažām citām ar ceļiem. Ir zināms, ka katrs ceļš savieno tieši divas daž
 pilsētas, katras divas pilsētas savieno ne vairāk kā viens ceļš, turklāt pa
 izbūvētajiem ceļiem no jebkuras pilsētas ir iespējams aizbraukt uz jebkuru citu
 vienā vienīgā veidā.</p>
-<p><strong>a)</strong> Pierādīt, ka ir vismaz viena pilsēta, no kuras iziet tieši viens ceļš.</p>
-<p><strong>b)</strong> Pierādīt, ka pilsētas var sanumurēt ar skaitļiem $1,2, \\ldots, n$ tā, lai
+<p><strong>(A)</strong> Pierādīt, ka ir vismaz viena pilsēta, no kuras iziet tieši viens ceļš.</p>
+<p><strong>(B)</strong> Pierādīt, ka pilsētas var sanumurēt ar skaitļiem $1,2, \\ldots, n$ tā, lai
 jebkuru divu pilsētu, kuras ir savienotas ar ceļu, numuru reizinājums būtu pāra
 skaitlis.</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2013.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2013.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -268,13 +280,14 @@ $AD \\perp MN$.</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2013.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2013.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -288,13 +301,14 @@ $\\left\\{\\begin{array}{l}\\sin x+\\cos y=\\frac{3}{2} \\mbox{tg}\\ z \\\\ \\si
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.VOL.2013.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2013.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -329,6 +343,7 @@ Atrast visas šādas funkcijas $f$ un pierādīt, ka citu nav.</p>"""@lv ;
 eliozo:LV.VOL.2013.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -353,44 +368,47 @@ visas iespējamās $n$ vērtības.</p>"""@lv ;
 
 eliozo:LV.VOL.2013.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2013.12.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2013.12.5.SUB1 ;
-    eliozo:problemText """Uz tāfeles uzrakstīta burtu virkne, kas satur tikai burtus $a, b$ un $c$. Ar šo
+    eliozo:problemText """Uz tāfeles uzrakstīta burtu virkne, kas satur tikai burtus $a$, $b$ un $c$. Ar šo
 virkni atļauts veikt šādus gājienus:
 
-- patvaļīigi mainīt uzrakstīto burtu secību;
+- patvaļīgi mainīt uzrakstīto burtu secību;
 - ja virknes galā ir uzrakstīts fragments $ab$, to drīkst nodzēst;
 - fragmentu $ba$ aizstāt ar fragmentu $aabbcc$;
 - fragmentu $bbc$ aizstāt ar $a$
-- izsvītrot jebkurus trīs vienādus pēc kārtas uzrakstītus burtus. Vai,
-  atkārtojot vairākus šādus gājienus, iespējams iegūt virkni $aba$, ja sākotnēji
-  ir uzrakstīta virkne **1)** $abba$; **2)** $aabbcabaab$?"""@lv ;
-    eliozo:problemTextHtml """<p>Uz tāfeles uzrakstīta burtu virkne, kas satur tikai burtus $a, b$ un $c$. Ar šo
+- izsvītrot jebkurus trīs vienādus pēc kārtas uzrakstītus burtus. 
+
+Vai, atkārtojot vairākus šādus gājienus, iespējams iegūt virkni $aba$, ja sākotnēji
+ir uzrakstīta virkne **(A)** $abba$; **(B)** $aabbcabaab$?"""@lv ;
+    eliozo:problemTextHtml """<p>Uz tāfeles uzrakstīta burtu virkne, kas satur tikai burtus $a$, $b$ un $c$. Ar šo
 virkni atļauts veikt šādus gājienus:</p>
 <ul>
-<li>patvaļīigi mainīt uzrakstīto burtu secību;</li>
+<li>patvaļīgi mainīt uzrakstīto burtu secību;</li>
 <li>ja virknes galā ir uzrakstīts fragments $ab$, to drīkst nodzēst;</li>
 <li>fragmentu $ba$ aizstāt ar fragmentu $aabbcc$;</li>
 <li>fragmentu $bbc$ aizstāt ar $a$</li>
-<li>izsvītrot jebkurus trīs vienādus pēc kārtas uzrakstītus burtus. Vai,
-  atkārtojot vairākus šādus gājienus, iespējams iegūt virkni $aba$, ja sākotnēji
-  ir uzrakstīta virkne <strong>1)</strong> $abba$; <strong>2)</strong> $aabbcabaab$?</li>
-</ul>"""@lv ;
+<li>izsvītrot jebkurus trīs vienādus pēc kārtas uzrakstītus burtus. </li>
+</ul>
+<p>Vai, atkārtojot vairākus šādus gājienus, iespējams iegūt virkni $aba$, ja sākotnēji
+ir uzrakstīta virkne <strong>(A)</strong> $abba$; <strong>(B)</strong> $aabbcabaab$?</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.VOL.2013.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.VOL.2013.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -415,7 +433,8 @@ $y$ simti, $z$ desmiti un $t$ vieni.)</p>"""@lv ;
 
 eliozo:LV.VOL.2013.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -433,13 +452,14 @@ Pierādīt, ka $\\triangle ACE=\\triangle BDF$.</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2013.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2013.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -472,7 +492,8 @@ piemēram, $[3]=3,[4,6]=4,[0,2]=0$ u.tml.)</p>"""@lv ;
 
 eliozo:LV.VOL.2013.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -492,13 +513,14 @@ kopsummā ieguva $92$ punktus. Cik punktus ieguva otra komanda?</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.VOL.2013.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2013.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.VOL.2013" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -506,20 +528,20 @@ eliozo:LV.VOL.2013.9.5 a eliozo:Problem ;
     eliozo:problemID "LV.VOL.2013.9.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2013.9.5.SUB1 ;
     eliozo:problemText """Kādu lielāko skaitu 1.zīm. attēloto figūru var izgriezt no rūtiņu kvadrāta
-$n \\times n$, kuram izṇemtas četras stūra rūtiņas: **a)** ja $n=6$
-(skat. 2.zīm.), **b)** ja $n=7$ (skat. 3.zīm.). Griezuma līnijām jāiet pa rūtiņu
+$n \\times n$, kuram izṇemtas četras stūra rūtiņas: **(A)** ja $n=6$
+(skat. 2.zīm.), **(B)** ja $n=7$ (skat. 3.zīm.). Griezuma līnijām jāiet pa rūtiņu
 malām, 1.zīm. figūra var būt pagriezta vai apgriezta spoguļattēlā.
 
 ![](LV.VOL.2013.9.5.png)"""@lv ;
     eliozo:problemTextHtml """<p>Kādu lielāko skaitu 1.zīm. attēloto figūru var izgriezt no rūtiņu kvadrāta
-$n \\times n$, kuram izṇemtas četras stūra rūtiņas: <strong>a)</strong> ja $n=6$
-(skat. 2.zīm.), <strong>b)</strong> ja $n=7$ (skat. 3.zīm.). Griezuma līnijām jāiet pa rūtiņu
+$n \\times n$, kuram izṇemtas četras stūra rūtiņas: <strong>(A)</strong> ja $n=6$
+(skat. 2.zīm.), <strong>(B)</strong> ja $n=7$ (skat. 3.zīm.). Griezuma līnijām jāiet pa rūtiņu
 malām, 1.zīm. figūra var būt pagriezta vai apgriezta spoguļattēlā.</p>
 <p><img alt="" src="LV.VOL.2013.9.5.png" /></p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.VOL.2013.9" ;
     eliozo:suggestedGrade 9 .
 
@@ -652,11 +674,9 @@ daudz skaitļu, kas ir dod atlikumu $2$, dalot ar $3$.
 
 Taču naturāla skaitļa kvadrāts, dalot ar $3$, var dot atlikumu tikai $0$ vai $1$:
 
-ja $n=3k \\Rightarrow n^{2}=9k^{2}=3 \\cdot 3k^{2}+0$
-
-ja $n=3k+1 \\Rightarrow n^{2}=9k^{2}+6k+1=3 \\cdot\\left(3k^{2}+2k\\right)+1$
-
-ja $n=3k+2 \\Rightarrow n^{2}=9k^{2}+12k+4=3 \\cdot\\left(3k^{2}+4k+1\\right)+1$
+* ja $n=3k \\Rightarrow n^{2}=9k^{2}=3 \\cdot 3k^{2}+0$
+* ja $n=3k+1 \\Rightarrow n^{2}=9k^{2}+6k+1=3 \\cdot\\left(3k^{2}+2k\\right)+1$
+* ja $n=3k+2 \\Rightarrow n^{2}=9k^{2}+12k+4=3 \\cdot\\left(3k^{2}+4k+1\\right)+1$
 
 Tātad Fibonači virknē ir bezgalīgi daudz skaitļu (tie, kas dod atlikumu $2$, dalot
 ar $3$), kas nav naturāla skaitļa kvadrāts."""@lv ;
@@ -666,9 +686,11 @@ $\\underline{1,1,2,0,2,2,1,0,}1,1,2, \\ldots$</p>
 <p>Atlikumu virkne ir periodiska (periods ir pasvītrots). Tātad virknē ir bezgalīgi
 daudz skaitļu, kas ir dod atlikumu $2$, dalot ar $3$.</p>
 <p>Taču naturāla skaitļa kvadrāts, dalot ar $3$, var dot atlikumu tikai $0$ vai $1$:</p>
-<p>ja $n=3k \\Rightarrow n^{2}=9k^{2}=3 \\cdot 3k^{2}+0$</p>
-<p>ja $n=3k+1 \\Rightarrow n^{2}=9k^{2}+6k+1=3 \\cdot\\left(3k^{2}+2k\\right)+1$</p>
-<p>ja $n=3k+2 \\Rightarrow n^{2}=9k^{2}+12k+4=3 \\cdot\\left(3k^{2}+4k+1\\right)+1$</p>
+<ul>
+<li>ja $n=3k \\Rightarrow n^{2}=9k^{2}=3 \\cdot 3k^{2}+0$</li>
+<li>ja $n=3k+1 \\Rightarrow n^{2}=9k^{2}+6k+1=3 \\cdot\\left(3k^{2}+2k\\right)+1$</li>
+<li>ja $n=3k+2 \\Rightarrow n^{2}=9k^{2}+12k+4=3 \\cdot\\left(3k^{2}+4k+1\\right)+1$</li>
+</ul>
 <p>Tātad Fibonači virknē ir bezgalīgi daudz skaitļu (tie, kas dod atlikumu $2$, dalot
 ar $3$), kas nav naturāla skaitļa kvadrāts.</p>"""@lv .
 
@@ -703,15 +725,16 @@ pietiekami lielie virknes locekļi ir kvadrāti.
 **Apgalvojums:** (1) Dalot ar jebkuru fiksētu skaitli, Fibonači virknes locekļu atlikumi veido periodu.  
 (2) Periodiskajai atlikumu virknei nav priekšperioda un tajā bezgalīgi bieži parādās atlikums $0$.  
 
-**Pierādījums:**  
-(1) Katru Fibonači virknes locekļa atlikumu nosaka divu iepriekšējo locekļu atlikumi. 
-Tiklīdz kā divu pēc kārtas sekojošu atlikumu pārītis sakrīt ar tādu, kas bijis agrāk, Fibonači virknes
-atlikumi sāk atkārtoties, izveidojas cikls.  
-(2) Atlikumu virknē nevar rasties priekšperiodi, 
-jo atlikumus var rēķināt arī pretējā secībā: no $F_{i+2}$ un $F_{i+1}$ atlikumiem 
-viennozīmīgi atrodot $F_i$ atlikumu. Tātad atlikumu virkne ir periodiska abos virzienos (nevis tikai 
-kļūst periodiska, sākot no kādas vietas). Tā kā $0$-tais Fibonači skaitlis $F_0 = 0$, tad arī atlikums
-$0$ parādīsies bezgalīgi bieži (vismaz vienreiz katrā periodā)."""@lv ;
+**Pierādījums:**
+
+1. Katru Fibonači virknes locekļa atlikumu nosaka divu iepriekšējo locekļu atlikumi. 
+   Tiklīdz kā divu pēc kārtas sekojošu atlikumu pārītis sakrīt ar tādu, kas bijis agrāk, Fibonači virknes
+   atlikumi sāk atkārtoties, izveidojas cikls.  
+2. Atlikumu virknē nevar rasties priekšperiodi, 
+   jo atlikumus var rēķināt arī pretējā secībā: no $F_{i+2}$ un $F_{i+1}$ atlikumiem 
+   viennozīmīgi atrodot $F_i$ atlikumu. Tātad atlikumu virkne ir periodiska abos virzienos (nevis tikai 
+   kļūst periodiska, sākot no kādas vietas). Tā kā $0$-tais Fibonači skaitlis $F_0 = 0$, tad arī atlikums
+   $0$ parādīsies bezgalīgi bieži (vismaz vienreiz katrā periodā)."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Atrodam Fibonači virknes atlikumus, dalot ar 3:</p>
 <table>
@@ -775,15 +798,17 @@ no kādas vietas virknes uzvedība nevar izmainīties tā, ka visi
 pietiekami lielie virknes locekļi ir kvadrāti.</p>
 <p><strong>Apgalvojums:</strong> (1) Dalot ar jebkuru fiksētu skaitli, Fibonači virknes locekļu atlikumi veido periodu.<br />
 (2) Periodiskajai atlikumu virknei nav priekšperioda un tajā bezgalīgi bieži parādās atlikums $0$.  </p>
-<p><strong>Pierādījums:</strong><br />
-(1) Katru Fibonači virknes locekļa atlikumu nosaka divu iepriekšējo locekļu atlikumi. 
-Tiklīdz kā divu pēc kārtas sekojošu atlikumu pārītis sakrīt ar tādu, kas bijis agrāk, Fibonači virknes
-atlikumi sāk atkārtoties, izveidojas cikls.<br />
-(2) Atlikumu virknē nevar rasties priekšperiodi, 
-jo atlikumus var rēķināt arī pretējā secībā: no $F_{i+2}$ un $F_{i+1}$ atlikumiem 
-viennozīmīgi atrodot $F_i$ atlikumu. Tātad atlikumu virkne ir periodiska abos virzienos (nevis tikai 
-kļūst periodiska, sākot no kādas vietas). Tā kā $0$-tais Fibonači skaitlis $F_0 = 0$, tad arī atlikums
-$0$ parādīsies bezgalīgi bieži (vismaz vienreiz katrā periodā).</p>"""@lv .
+<p><strong>Pierādījums:</strong></p>
+<ol>
+<li>Katru Fibonači virknes locekļa atlikumu nosaka divu iepriekšējo locekļu atlikumi. 
+   Tiklīdz kā divu pēc kārtas sekojošu atlikumu pārītis sakrīt ar tādu, kas bijis agrāk, Fibonači virknes
+   atlikumi sāk atkārtoties, izveidojas cikls.  </li>
+<li>Atlikumu virknē nevar rasties priekšperiodi, 
+   jo atlikumus var rēķināt arī pretējā secībā: no $F_{i+2}$ un $F_{i+1}$ atlikumiem 
+   viennozīmīgi atrodot $F_i$ atlikumu. Tātad atlikumu virkne ir periodiska abos virzienos (nevis tikai 
+   kļūst periodiska, sākot no kādas vietas). Tā kā $0$-tais Fibonači skaitlis $F_0 = 0$, tad arī atlikums
+   $0$ parādīsies bezgalīgi bieži (vismaz vienreiz katrā periodā).</li>
+</ol>"""@lv .
 
 eliozo:SOLN.LV.VOL.2013.10.5.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
@@ -791,28 +816,32 @@ eliozo:SOLN.LV.VOL.2013.10.5.SUB1 a eliozo:Solution ;
 
 Šķirosim divus gadījumus:
 
-1) Skaitļi $n$ un $m$ abi ir nepāra. Šajā gadījumā $2.$ spēlētājs vienmēr var
-veikt griezumu, kas ir simetrisks $1.$ spēlētāja pēdējam griezumam attiecībā
-pret lapas centru (skat., piem., 6.zīm.). Tāpēc šajā gadījumā uzvar $2.$
-spēlētājs.
+1. Skaitļi $n$ un $m$ abi ir nepāra. Šajā gadījumā $2.$ spēlētājs vienmēr var
+   veikt griezumu, kas ir simetrisks $1.$ spēlētāja pēdējam griezumam attiecībā
+   pret lapas centru (skat., piem., 6.zīm.). Tāpēc šajā gadījumā uzvar $2.$
+   spēlētājs.
 
-![](LV.VOL.2013.10.5A.png)
+   ![](LV.VOL.2013.10.5A.png)
 
-2) Vismaz viens no skaitļiem $n$ un $m$ ir pāra. Tad $1.$ spēlētājs sākumā veic
-visgarāko iespējamo griezumu pa vidu malā ar pāra garumu (skat. 7.zīm.). Tālāk
-$1.$ spēlētājs var pielietot 1) punkta $2.$ spēlētāja simetrisko stratēģiju.
-Tāpēc šajā gadījumā uzvar $1.$ spēlētājs."""@lv ;
+2. Vismaz viens no skaitļiem $n$ un $m$ ir pāra. Tad $1.$ spēlētājs sākumā veic
+   visgarāko iespējamo griezumu pa vidu malā ar pāra garumu (skat. 7.zīm.). Tālāk
+   $1.$ spēlētājs var pielietot (1) punkta $2.$ spēlētāja simetrisko stratēģiju.
+   Tāpēc šajā gadījumā uzvar $1.$ spēlētājs."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Šķirosim divus gadījumus:</p>
-<p>1) Skaitļi $n$ un $m$ abi ir nepāra. Šajā gadījumā $2.$ spēlētājs vienmēr var
-veikt griezumu, kas ir simetrisks $1.$ spēlētāja pēdējam griezumam attiecībā
-pret lapas centru (skat., piem., 6.zīm.). Tāpēc šajā gadījumā uzvar $2.$
-spēlētājs.</p>
+<ol>
+<li>Skaitļi $n$ un $m$ abi ir nepāra. Šajā gadījumā $2.$ spēlētājs vienmēr var
+   veikt griezumu, kas ir simetrisks $1.$ spēlētāja pēdējam griezumam attiecībā
+   pret lapas centru (skat., piem., 6.zīm.). Tāpēc šajā gadījumā uzvar $2.$
+   spēlētājs.</li>
+</ol>
 <p><img alt="" src="LV.VOL.2013.10.5A.png" /></p>
-<p>2) Vismaz viens no skaitļiem $n$ un $m$ ir pāra. Tad $1.$ spēlētājs sākumā veic
-visgarāko iespējamo griezumu pa vidu malā ar pāra garumu (skat. 7.zīm.). Tālāk
-$1.$ spēlētājs var pielietot 1) punkta $2.$ spēlētāja simetrisko stratēģiju.
-Tāpēc šajā gadījumā uzvar $1.$ spēlētājs.</p>"""@lv .
+<ol>
+<li>Vismaz viens no skaitļiem $n$ un $m$ ir pāra. Tad $1.$ spēlētājs sākumā veic
+   visgarāko iespējamo griezumu pa vidu malā ar pāra garumu (skat. 7.zīm.). Tālāk
+   $1.$ spēlētājs var pielietot (1) punkta $2.$ spēlētāja simetrisko stratēģiju.
+   Tāpēc šajā gadījumā uzvar $1.$ spēlētājs.</li>
+</ol>"""@lv .
 
 eliozo:SOLN.LV.VOL.2013.11.1.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
@@ -912,12 +941,12 @@ eliozo:SOLN.LV.VOL.2013.11.4.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-**a)** **Atbilde:** jā, noteikti. Tā kā abiem kvadrātiem ir centrs sakrīt, tiem
+**(A)** **Atbilde:** jā, noteikti. Tā kā abiem kvadrātiem ir centrs sakrīt, tiem
 abiem ir kopīgs tajos ievilktais riņķis, kura rādiusa garums ir $20~ \\mathrm{cm}$
 (skat. 9.zīm.). Riņķa laukums ir
 $400 \\pi \\mathrm{cm}^{2} > 400 \\cdot 3,14 \\mathrm{~cm}^{2}==1256 \\mathrm{~cm}^{2} > 1250 \\mathrm{~cm}^{2}$.
 
-**b)** **Atbilde:** jā, noteikti. Ja kvadrāti nesakrīt, tad ārpus kopīgās daļas
+**(B)** **Atbilde:** jā, noteikti. Ja kvadrāti nesakrīt, tad ārpus kopīgās daļas
 veidojas astoņi vienādi taisnleņķa trijstūri
 $AJS, JFK, BKL, LMG, CMN, PHN, DPR$ un $ERS$. Kvadrātu kopīgā daļa būs mazākā
 iespējamā, ja šo trijstūru laukums būs lielākais iespējamais. Apzīmējot
@@ -930,7 +959,7 @@ $$\\begin{aligned}
 
 Tātad, nepieciešams atrast tādu $x$ vērtību, lai
 $xy=40x \\cdot \\frac{20-x}{40-x}$ vērtība būtu maksimāla. Ne $x$, ne $y$ vērtība
-nevar pārsniegt pusi no kvadrāta malas garuma, t.i., $20~ \\mathrm{cm}$ .
+nevar pārsniegt pusi no kvadrāta malas garuma, t.i., $20~\\mathrm{cm}$ .
 
 $40x \\frac{20-x}{40-x}=40\\left(x+20+\\frac{800}{x-40}\\right)=40\\left(60+x-40+\\frac{800}{x-40}\\right)=2400+40\\left(x-40+\\frac{800}{x-40}\\right)$.
 
@@ -944,11 +973,11 @@ $1600-2xy=1600-2(2400-80 \\cdot 20 \\sqrt{2})=3200 \\sqrt{2}-3200=3200(\\sqrt{2}
 
 ![](LV.VOL.2013.11.4A.png)"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>a)</strong> <strong>Atbilde:</strong> jā, noteikti. Tā kā abiem kvadrātiem ir centrs sakrīt, tiem
+<p><strong>(A)</strong> <strong>Atbilde:</strong> jā, noteikti. Tā kā abiem kvadrātiem ir centrs sakrīt, tiem
 abiem ir kopīgs tajos ievilktais riņķis, kura rādiusa garums ir $20~ \\mathrm{cm}$
 (skat. 9.zīm.). Riņķa laukums ir
 $400 \\pi \\mathrm{cm}^{2} > 400 \\cdot 3,14 \\mathrm{~cm}^{2}==1256 \\mathrm{~cm}^{2} > 1250 \\mathrm{~cm}^{2}$.</p>
-<p><strong>b)</strong> <strong>Atbilde:</strong> jā, noteikti. Ja kvadrāti nesakrīt, tad ārpus kopīgās daļas
+<p><strong>(B)</strong> <strong>Atbilde:</strong> jā, noteikti. Ja kvadrāti nesakrīt, tad ārpus kopīgās daļas
 veidojas astoņi vienādi taisnleņķa trijstūri
 $AJS, JFK, BKL, LMG, CMN, PHN, DPR$ un $ERS$. Kvadrātu kopīgā daļa būs mazākā
 iespējamā, ja šo trijstūru laukums būs lielākais iespējamais. Apzīmējot
@@ -960,7 +989,7 @@ $AJ=JF=x$ un $FK=KB=y$, iegūstam, ka</p>
 
 Tātad, nepieciešams atrast tādu $x$ vērtību, lai
 $xy=40x \\cdot \\frac{20-x}{40-x}$ vērtība būtu maksimāla. Ne $x$, ne $y$ vērtība
-nevar pārsniegt pusi no kvadrāta malas garuma, t.i., $20~ \\mathrm{cm}$ .
+nevar pārsniegt pusi no kvadrāta malas garuma, t.i., $20~\\mathrm{cm}$ .
 
 $40x \\frac{20-x}{40-x}=40\\left(x+20+\\frac{800}{x-40}\\right)=40\\left(60+x-40+\\frac{800}{x-40}\\right)=2400+40\\left(x-40+\\frac{800}{x-40}\\right)$.
 
@@ -977,7 +1006,7 @@ eliozo:SOLN.LV.VOL.2013.11.5.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-**a)** Ar matemātisko indukciju pamatosim, ka ir vismaz divas pilsētas, no kurām
+**(A)** Ar matemātisko indukciju pamatosim, ka ir vismaz divas pilsētas, no kurām
 no katras iziet tieši viens ceļš.
 
 Ja $n=2$, tad apgalvojums ir acīmredzami patiess (starp divām pilsētām var būt
@@ -1010,7 +1039,7 @@ apzīmēsim ar $X$ ). Ir divas iespējas:
 
 Līdz ar to ir pamatota induktīvā pāreja un apgalvojums ir pierādīts.
 
-**b)** Ar matemātisko indukciju parādīsim, ka katrai no pilsētām var piešķirt
+**(B)** Ar matemātisko indukciju parādīsim, ka katrai no pilsētām var piešķirt
 vērtību $-1$ vai $1$ tā, lai jebkuru divu pilsētu, kuras ir savienotas ar ceļu,
 vērtības būtu pretējas. Ja $n=2$, tad apgalvojums acīmredzami ir patiess.
 Pieņemsim, ka vajadzīgais ir pierādīts, ja $n=k$ un pamatosim, ka tas ir patiess
@@ -1031,7 +1060,7 @@ Tā kā katrām divām ar ceļu savienotām pilsētām ir pretējas vērtības, 
 jebkurām divām ar ceļu savienotām pilsētām vismaz vienai ir piekārtots pāra
 numurs. Taču tad šo pilsētu numuru reizinājums ir pāra skaitlis."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>a)</strong> Ar matemātisko indukciju pamatosim, ka ir vismaz divas pilsētas, no kurām
+<p><strong>(A)</strong> Ar matemātisko indukciju pamatosim, ka ir vismaz divas pilsētas, no kurām
 no katras iziet tieši viens ceļš.</p>
 <p>Ja $n=2$, tad apgalvojums ir acīmredzami patiess (starp divām pilsētām var būt
 uzbūvēts tikai viens ceļš, kas savieno šīs pilsētas).</p>
@@ -1061,7 +1090,7 @@ apzīmēsim ar $X$ ). Ir divas iespējas:</p>
   sākotnēji no pilsētām $X$ un $Y$ no katras izgāja tieši viens ceļš.</li>
 </ul>
 <p>Līdz ar to ir pamatota induktīvā pāreja un apgalvojums ir pierādīts.</p>
-<p><strong>b)</strong> Ar matemātisko indukciju parādīsim, ka katrai no pilsētām var piešķirt
+<p><strong>(B)</strong> Ar matemātisko indukciju parādīsim, ka katrai no pilsētām var piešķirt
 vērtību $-1$ vai $1$ tā, lai jebkuru divu pilsētu, kuras ir savienotas ar ceļu,
 vērtības būtu pretējas. Ja $n=2$, tad apgalvojums acīmredzami ir patiess.
 Pieņemsim, ka vajadzīgais ir pierādīts, ja $n=k$ un pamatosim, ka tas ir patiess
@@ -1162,9 +1191,9 @@ Ievietojot $n=0$, iegūstam vienādību $f(1)=2-\\frac{1}{f(0)}$. Tā kā gan $f
 gan $f(1)$ ir veseli skaitļi, tad $f(0)$ var būt vai nu $1$, vai $-1$, citu
 iespēju nav.
 
-Apskatīsim abos gadījumus.
+Apskatīsim abus gadījumus.
 
-1) Ja $f(0)=-1$, tad iegūstam $f(1)=2-\\frac{1}{-1}=3$. Izmantojot (1), varam
+**1.gadījums:** Ja $f(0)=-1$, tad iegūstam $f(1)=2-\\frac{1}{-1}=3$. Izmantojot (1), varam
 pakāpeniski aprēķināt
 
 $$\\begin{array}{ll}
@@ -1189,7 +1218,7 @@ $$f(k+1)=2+\\frac{4k^{2}-1}{f(k)}=2+\\frac{\\left(2k+(-1)^{k+1}\\right)\\left(2k
 
 Induktīvā pāreja izdarīta.
 
-2) Ja $f(0)=1$, tad iegūstam $f(1)=2-\\frac{1}{1}=1$. Izmantojot (1), varam
+**2.gadījums:** Ja $f(0)=1$, tad iegūstam $f(1)=2-\\frac{1}{1}=1$. Izmantojot (1), varam
 pakāpeniski aprēķināt
 
 $$\\begin{array}{ll}
@@ -1231,9 +1260,9 @@ Ievietojot $n=0$, iegūstam vienādību $f(1)=2-\\frac{1}{f(0)}$. Tā kā gan $f
 gan $f(1)$ ir veseli skaitļi, tad $f(0)$ var būt vai nu $1$, vai $-1$, citu
 iespēju nav.
 
-Apskatīsim abos gadījumus.
+Apskatīsim abus gadījumus.
 
-1) Ja $f(0)=-1$, tad iegūstam $f(1)=2-\\frac{1}{-1}=3$. Izmantojot (1), varam
+**1.gadījums:** Ja $f(0)=-1$, tad iegūstam $f(1)=2-\\frac{1}{-1}=3$. Izmantojot (1), varam
 pakāpeniski aprēķināt
 
 $$\\begin{array}{ll}
@@ -1258,7 +1287,7 @@ $$f(k+1)=2+\\frac{4k^{2}-1}{f(k)}=2+\\frac{\\left(2k+(-1)^{k+1}\\right)\\left(2k
 
 Induktīvā pāreja izdarīta.
 
-2) Ja $f(0)=1$, tad iegūstam $f(1)=2-\\frac{1}{1}=1$. Izmantojot (1), varam
+**2.gadījums:** Ja $f(0)=1$, tad iegūstam $f(1)=2-\\frac{1}{1}=1$. Izmantojot (1), varam
 pakāpeniski aprēķināt
 
 $$\\begin{array}{ll}
@@ -1323,35 +1352,27 @@ eliozo:SOLN.LV.VOL.2013.12.5.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-**a)** **Atbilde:** nevar.
+**(A)** **Atbilde:** nevar.
 
 Aizstājam burtu $a$ ar ciparu $1$, burtu $b$- ar ciparu $2$, burtu $c$- ar
 ciparu $3$. Tātad sākotnēji uz tāfeles uzrakstītā virkne atbilst skaitlim $1221$
 un jāiegūst skaitli $121$. Ievērosim, ka atļautās darbības atbilst šādām
 darbībām ar skaitļiem:
 
-a) uz tāfeles uzrakstītajā skaitlī var patvaļīgi mainīt ciparu kārtību;
-
-b) ja skaitļa pēdējie divi cipari ir $12$, tad tos var nodzēst;
-
-c) ciparus $21$ var aizstāt ar $112233$;
-
-d) ciparus $223$ var aizstāt ar $1$;
-
-e) drīkst izsvītrot trīs vienādus pēc kārtas uzrakstītus ciparus.
+a. uz tāfeles uzrakstītajā skaitlī var patvaļīgi mainīt ciparu kārtību;
+b. ja skaitļa pēdējie divi cipari ir $12$, tad tos var nodzēst;
+c. ciparus $21$ var aizstāt ar $112233$;
+d. ciparus $223$ var aizstāt ar $1$;
+e. drīkst izsvītrot trīs vienādus pēc kārtas uzrakstītus ciparus.
 
 Ievērosim, ka uz tāfeles uzrakstītā skaitļa ciparu summa, veicot šos gājienus,
 
-a) nemainās;
-
-b) samazinās par $3$;
-
-c) palielinās par $9$;
-
-d) samazinās par $6$;
-
-e) samazinās par $3$ (ja nodzēsti trīs vieninieki), $6$ (ja nodzēsti trīs
-divnieki) vai $9$ (ja nodzēsti trīs trijnieki).
+a. nemainās;
+b. samazinās par $3$;
+c. palielinās par $9$;
+d. samazinās par $6$;
+e. samazinās par $3$ (ja nodzēsti trīs vieninieki), $6$ (ja nodzēsti trīs
+   divnieki) vai $9$ (ja nodzēsti trīs trijnieki).
 
 Sākotnēji uz tāfeles uzrakstīts skaitlis $1221$, kurš dalās ar $3$ un kura
 ciparu summa dalās ar $3$. Veicot aprakstītos gājienus, iegūtā skaitļa ciparu
@@ -1360,32 +1381,32 @@ skaitļus, kuri dalās ar $3$. Taču skaitlis $121$ nedalās ar $3$, tātad ar
 aprakstītajiem gājieniem to nevar iegūt no skaitļa $1221$. Tātad arī virkni $aba$
 nevar iegūt no virknes $abba$ ar aprakstīto gājienu palīdzību.
 
-**b)** **Atbilde:** var, piemēram, $aabbcabaab \\rightarrow aaaaabbbbc \\rightarrow aabbbbc \\rightarrow aabba \\rightarrow abaab \\rightarrow aba$."""@lv ;
+**(B)** **Atbilde:** var, piemēram, $aabbcabaab \\rightarrow aaaaabbbbc \\rightarrow aabbbbc \\rightarrow aabba \\rightarrow abaab \\rightarrow aba$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>a)</strong> <strong>Atbilde:</strong> nevar.</p>
+<p><strong>(A)</strong> <strong>Atbilde:</strong> nevar.</p>
 <p>Aizstājam burtu $a$ ar ciparu $1$, burtu $b$- ar ciparu $2$, burtu $c$- ar
 ciparu $3$. Tātad sākotnēji uz tāfeles uzrakstītā virkne atbilst skaitlim $1221$
 un jāiegūst skaitli $121$. Ievērosim, ka atļautās darbības atbilst šādām
 darbībām ar skaitļiem:</p>
-<p>a) uz tāfeles uzrakstītajā skaitlī var patvaļīgi mainīt ciparu kārtību;</p>
-<p>b) ja skaitļa pēdējie divi cipari ir $12$, tad tos var nodzēst;</p>
-<p>c) ciparus $21$ var aizstāt ar $112233$;</p>
-<p>d) ciparus $223$ var aizstāt ar $1$;</p>
-<p>e) drīkst izsvītrot trīs vienādus pēc kārtas uzrakstītus ciparus.</p>
+<p>a. uz tāfeles uzrakstītajā skaitlī var patvaļīgi mainīt ciparu kārtību;
+b. ja skaitļa pēdējie divi cipari ir $12$, tad tos var nodzēst;
+c. ciparus $21$ var aizstāt ar $112233$;
+d. ciparus $223$ var aizstāt ar $1$;
+e. drīkst izsvītrot trīs vienādus pēc kārtas uzrakstītus ciparus.</p>
 <p>Ievērosim, ka uz tāfeles uzrakstītā skaitļa ciparu summa, veicot šos gājienus,</p>
-<p>a) nemainās;</p>
-<p>b) samazinās par $3$;</p>
-<p>c) palielinās par $9$;</p>
-<p>d) samazinās par $6$;</p>
-<p>e) samazinās par $3$ (ja nodzēsti trīs vieninieki), $6$ (ja nodzēsti trīs
-divnieki) vai $9$ (ja nodzēsti trīs trijnieki).</p>
+<p>a. nemainās;
+b. samazinās par $3$;
+c. palielinās par $9$;
+d. samazinās par $6$;
+e. samazinās par $3$ (ja nodzēsti trīs vieninieki), $6$ (ja nodzēsti trīs
+   divnieki) vai $9$ (ja nodzēsti trīs trijnieki).</p>
 <p>Sākotnēji uz tāfeles uzrakstīts skaitlis $1221$, kurš dalās ar $3$ un kura
 ciparu summa dalās ar $3$. Veicot aprakstītos gājienus, iegūtā skaitļa ciparu
 summa vienmēr dalīsies ar trīs, kas nozīmē, ka gājienu rezultātā var iegūt tikai
 skaitļus, kuri dalās ar $3$. Taču skaitlis $121$ nedalās ar $3$, tātad ar
 aprakstītajiem gājieniem to nevar iegūt no skaitļa $1221$. Tātad arī virkni $aba$
 nevar iegūt no virknes $abba$ ar aprakstīto gājienu palīdzību.</p>
-<p><strong>b)</strong> <strong>Atbilde:</strong> var, piemēram, $aabbcabaab \\rightarrow aaaaabbbbc \\rightarrow aabbbbc \\rightarrow aabba \\rightarrow abaab \\rightarrow aba$.</p>"""@lv .
+<p><strong>(B)</strong> <strong>Atbilde:</strong> var, piemēram, $aabbcabaab \\rightarrow aaaaabbbbc \\rightarrow aabbbbc \\rightarrow aabba \\rightarrow abaab \\rightarrow aba$.</p>"""@lv .
 
 eliozo:SOLN.LV.VOL.2013.9.1.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
@@ -1635,9 +1656,9 @@ eliozo:SOLN.LV.VOL.2013.9.5.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-**a)** **Atbilde:** $8$ , skat., piemēram, 2.zīm.
+**(A)** **Atbilde:** $8$ , skat., piemēram, 2.zīm.
 
-**b)** **Atbilde:** $9$, skat., piemēram, 3.zīm.
+**(B)** **Atbilde:** $9$, skat., piemēram, 3.zīm.
 
 ![](LV.VOL.2013.9.5A.png)
 
@@ -1646,8 +1667,8 @@ figūru kā parādīts 4.zīm. Tad, lai arī kā tiktu ievietota figūriņa, tā
 tieši vienu iekrāsoto rūtiņu. Tātad, ja varētu izgriezt $10$ figūriņas, tās
 pārklātu $10$ iekrāsotās rūtiņas, bet ir tikai $9$- pretruna."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>a)</strong> <strong>Atbilde:</strong> $8$ , skat., piemēram, 2.zīm.</p>
-<p><strong>b)</strong> <strong>Atbilde:</strong> $9$, skat., piemēram, 3.zīm.</p>
+<p><strong>(A)</strong> <strong>Atbilde:</strong> $8$ , skat., piemēram, 2.zīm.</p>
+<p><strong>(B)</strong> <strong>Atbilde:</strong> $9$, skat., piemēram, 3.zīm.</p>
 <p><img alt="" src="LV.VOL.2013.9.5A.png" /></p>
 <p>Pierādīsim, ka nav iespējams izvietot $10$ figūriņas. Izkrāsosim pārklājamo
 figūru kā parādīts 4.zīm. Tad, lai arī kā tiktu ievietota figūriņa, tā pārklās

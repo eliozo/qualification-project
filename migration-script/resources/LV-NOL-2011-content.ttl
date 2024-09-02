@@ -3,28 +3,29 @@
 
 eliozo:LV.NOL.2011.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2011.10.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2011.10.1.SUB1 ;
-    eliozo:problemText """**(A)** Dots, ka $s+t=p$. Pierādīt, ka $2s^{2} \\geq p^{2}-2t^{2}$.
-
+    eliozo:problemText """**(A)** Dots, ka $s+t=p$. Pierādīt, ka $2s^{2} \\geq p^{2}-2t^{2}$.  
 **(B)** Dots, ka $s+t+u=p$. Pierādīt, ka $3s^{2} \\geq p^{2}-3t^{2}-3u^{2}$."""@lv ;
-    eliozo:problemTextHtml """<p><strong>(A)</strong> Dots, ka $s+t=p$. Pierādīt, ka $2s^{2} \\geq p^{2}-2t^{2}$.</p>
-<p><strong>(B)</strong> Dots, ka $s+t+u=p$. Pierādīt, ka $3s^{2} \\geq p^{2}-3t^{2}-3u^{2}$.</p>"""@lv ;
+    eliozo:problemTextHtml """<p><strong>(A)</strong> Dots, ka $s+t=p$. Pierādīt, ka $2s^{2} \\geq p^{2}-2t^{2}$.<br />
+<strong>(B)</strong> Dots, ka $s+t+u=p$. Pierādīt, ka $3s^{2} \\geq p^{2}-3t^{2}-3u^{2}$.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2011.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.NOL.2011.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -38,13 +39,14 @@ $DC-DB > AC-AB$.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2011.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.NOL.2011.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -61,35 +63,37 @@ skaitļos vienādojumu </p>
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2011.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.NOL.2011.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2011.10.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2011.10.4.SUB1 ;
-    eliozo:problemText """Trijstūris $ABC$ ir vienādsānu $(AB=BC)$ un $\\sphericalangle ABC=30^{\\circ}$. Uz malas
-$AB$ izvēlēts punkts $E$, bet uz malas $BC$- punkts $F$, tā, ka trijstūris $CEF$ ir
+    eliozo:problemText """Trijstūris $ABC$ ir vienādsānu ($AB=BC$) un $\\sphericalangle ABC=30^{\\circ}$. Uz malas
+$AB$ izvēlēts punkts $E$, bet uz malas $BC$ - punkts $F$, tā, ka trijstūris $CEF$ ir
 vienādmalu. Aprēķināt trijstūru $CEF$ un $ABC$ laukumu attiecību!"""@lv ;
-    eliozo:problemTextHtml """<p>Trijstūris $ABC$ ir vienādsānu $(AB=BC)$ un $\\sphericalangle ABC=30^{\\circ}$. Uz malas
-$AB$ izvēlēts punkts $E$, bet uz malas $BC$- punkts $F$, tā, ka trijstūris $CEF$ ir
+    eliozo:problemTextHtml """<p>Trijstūris $ABC$ ir vienādsānu ($AB=BC$) un $\\sphericalangle ABC=30^{\\circ}$. Uz malas
+$AB$ izvēlēts punkts $E$, bet uz malas $BC$ - punkts $F$, tā, ka trijstūris $CEF$ ir
 vienādmalu. Aprēķināt trijstūru $CEF$ un $ABC$ laukumu attiecību!</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2011.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.NOL.2011.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -97,13 +101,13 @@ eliozo:LV.NOL.2011.10.5 a eliozo:Problem ;
     eliozo:problemID "LV.NOL.2011.10.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2011.10.5.SUB1 ;
     eliozo:problemText """Bobslejista Jāņa komanda piedalījās sacensībās, kurās uzvarētāju nosaka pēc četru
-braucienu laiku kopsummas- kam šī summa mazāka, tas ieņem augstāku vietu. Jāņa komanda
+braucienu laiku kopsummas - kam šī summa mazāka, tas ieņem augstāku vietu. Jāņa komanda
 pirmajā braucienā ieņēma $2.$, otrajā braucienā- $3.$, trešajā $4.$, bet ceturtajā
 braucienā- $10.$ vietu. Pavisam sacensībās piedalījās $18$ komandas. Atsevišķu komandu
 braucienu laiki atsevišķos braucienos un šo laiku kopsumma visām komandām bija
 atšķirīga. Kādu augstāko un kādu zemāko vietu kopvērtējumā varēja iegūt Jāņa komanda?"""@lv ;
     eliozo:problemTextHtml """<p>Bobslejista Jāņa komanda piedalījās sacensībās, kurās uzvarētāju nosaka pēc četru
-braucienu laiku kopsummas- kam šī summa mazāka, tas ieņem augstāku vietu. Jāņa komanda
+braucienu laiku kopsummas - kam šī summa mazāka, tas ieņem augstāku vietu. Jāņa komanda
 pirmajā braucienā ieņēma $2.$, otrajā braucienā- $3.$, trešajā $4.$, bet ceturtajā
 braucienā- $10.$ vietu. Pavisam sacensībās piedalījās $18$ komandas. Atsevišķu komandu
 braucienu laiki atsevišķos braucienos un šo laiku kopsumma visām komandām bija
@@ -111,13 +115,14 @@ atšķirīga. Kādu augstāko un kādu zemāko vietu kopvērtējumā varēja ieg
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2011.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.NOL.2011.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -132,13 +137,14 @@ $$x^{2}+y^{2}+4 \\geq 2x+2y+xy$$"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2011.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2011.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -156,13 +162,14 @@ starpā vienādi!</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2011.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2011.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -185,13 +192,14 @@ z+zx+x=11
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2011.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2011.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -205,13 +213,14 @@ mazākā iespējamā summas $a+b$ vērtība?</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.NOL.2011.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2011.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -227,13 +236,14 @@ visas iespējamās $n$ vērtības!</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2011.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2011.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -248,13 +258,14 @@ $$\\left(\\frac{1}{2}-\\sqrt{1-a^{2}}\\right)^{2}+\\left(\\frac{1}{2}-\\sqrt{1-b
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.NOL.2011.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -262,23 +273,24 @@ eliozo:LV.NOL.2011.12.2 a eliozo:Problem ;
     eliozo:problemID "LV.NOL.2011.12.2" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2011.12.2.SUB1 ;
     eliozo:problemText """Trijstūrī $ABC$ caur patvaļīgu malas $BC$ iekšējo punktu $P$ tiek vilktas taisnes
-$u || AC$ un $v || AB$, kuras krusto malas $AB$ un $AC$ attiecīgi punktos $M$ un $N$.
+$u \\| AC$ un $v \\| AB$, kuras krusto malas $AB$ un $AC$ attiecīgi punktos $M$ un $N$.
 Pierādīt, ka trijstūra $ABC$ laukums ir vienāds ar trijstūru $MBC$ un $NBC$ laukumu
 summu."""@lv ;
     eliozo:problemTextHtml """<p>Trijstūrī $ABC$ caur patvaļīgu malas $BC$ iekšējo punktu $P$ tiek vilktas taisnes
-$u || AC$ un $v || AB$, kuras krusto malas $AB$ un $AC$ attiecīgi punktos $M$ un $N$.
+$u \\| AC$ un $v \\| AB$, kuras krusto malas $AB$ un $AC$ attiecīgi punktos $M$ un $N$.
 Pierādīt, ka trijstūra $ABC$ laukums ir vienāds ar trijstūru $MBC$ un $NBC$ laukumu
 summu.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.NOL.2011.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -286,23 +298,24 @@ eliozo:LV.NOL.2011.12.3 a eliozo:Problem ;
     eliozo:problemID "LV.NOL.2011.12.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2011.12.3.SUB1 ;
     eliozo:problemText """Naturālu skaitli sauksim par *fantastisku*, ja tas ir vienāds ar sava kvadrāta ciparu
-reizinājumu. Piemēram, $1$ ir *fantastisks* (jo $1^{2}=1$ un $1=1$ ), bet $4$- nē
+reizinājumu. Piemēram, $1$ ir *fantastisks* (jo $1^{2}=1$ un $1=1$), bet $4$- nē
 (jo $4^{2}=16$, bet $1 \\cdot 6=6 \\neq 4$ ). Pierādīt, ka visi nepāra skaitļi, kas
 lielāki par $1$, nav *fantastiski*."""@lv ;
     eliozo:problemTextHtml """<p>Naturālu skaitli sauksim par <em>fantastisku</em>, ja tas ir vienāds ar sava kvadrāta ciparu
-reizinājumu. Piemēram, $1$ ir <em>fantastisks</em> (jo $1^{2}=1$ un $1=1$ ), bet $4$- nē
+reizinājumu. Piemēram, $1$ ir <em>fantastisks</em> (jo $1^{2}=1$ un $1=1$), bet $4$- nē
 (jo $4^{2}=16$, bet $1 \\cdot 6=6 \\neq 4$ ). Pierādīt, ka visi nepāra skaitļi, kas
 lielāki par $1$, nav <em>fantastiski</em>.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.NOL.2011.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -322,13 +335,14 @@ kopīga mala.)</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.NOL.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.NOL.2011.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -342,13 +356,14 @@ skaldnei ir nepāra skaits virsotņu.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2011.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.NOL.2011.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -362,13 +377,14 @@ reizinājums būtu $119$?</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.NOL.2011.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2011.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -383,13 +399,14 @@ eliozo:LV.NOL.2011.5.2 a eliozo:Problem ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2011.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2011.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -466,13 +483,14 @@ nevienā brīdī autobusā netika pārvadāts vairāk pasažieru kā autobusā i
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2011.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2011.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -488,13 +506,14 @@ $3 \\times 3$ rūtiņu kvadrātā, kas ir lielā kvadrāta daļa, ir iekrāsotas
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.NOL.2011.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2011.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -512,13 +531,14 @@ laiks, pēc kura visas raganas būs iemācījušās visas jaunās burvestības?<
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.NOL.2011.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2011.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -532,13 +552,14 @@ skaitlis ir vienāds ar pārējo skaitļu summu?</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.NOL.2011.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2011.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -554,13 +575,14 @@ $12345, 12354, 12435, \\ldots$. Kurš pēc kārtas šajā virknē ir skaitlis $4
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindCount" ;
     eliozo:suffix "LV.NOL.2011.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2011.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -576,13 +598,14 @@ eliozo:LV.NOL.2011.6.3 a eliozo:Problem ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.NOL.2011.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2011.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -599,13 +622,14 @@ vienādās daļās tā, lai katrā no tām būtu pa vienam melnam un pa vienam b
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.NOL.2011.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2011.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -621,13 +645,14 @@ visas rūtiņas ir neizkrāsotas.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.NOL.2011.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2011.7.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -648,6 +673,7 @@ eliozo:LV.NOL.2011.7.1 a eliozo:Problem ;
 eliozo:LV.NOL.2011.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -669,7 +695,8 @@ $(n+1)(n+2)(n+3)$ dalās ar $125$?</p>"""@lv ;
 
 eliozo:LV.NOL.2011.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -685,13 +712,14 @@ reizinājumus. Cik no tiem ir pozitīvi?</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindCount" ;
     eliozo:suffix "LV.NOL.2011.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2011.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -707,13 +735,14 @@ rūtiņām sauksim rūtiņas, kurām ir kopīgs vismaz viens punkts).</p>"""@lv 
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.NOL.2011.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2011.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -724,28 +753,29 @@ eliozo:LV.NOL.2011.7.5 a eliozo:Problem ;
 vienmēr melo), notika domes vēlēšanas, kurās piedalījās visi pilsētas iedzīvotāji.
 Balsot varēja par kādu no četrām partijām $A, B, C$ un $D$, un katrs iedzīvotājs
 nobalsoja tieši par vienu partiju. Pirms rezultātu apkopošanas žurnālisti veica visu
-iedzīvotāju aptauju. Uz jautājumu „Vai jūs balsojāt par partiju $A$?" ar "Jā" atbildēja
-$22 \\%$ pilsētas iedzīvotāju. Uz līdzīgu jautājumu par partiju " $B$ " ar "Jā" atbildēja
-$33 \\%$, par partiju " $C$ "- $44\\%$, bet par partiju " $D$ " $55 \\%$ iedzīvotāju. Cik
+iedzīvotāju aptauju. Uz jautājumu "Vai jūs balsojāt par partiju $A$?" ar "Jā" atbildēja
+$22 \\%$ pilsētas iedzīvotāju. Uz līdzīgu jautājumu par partiju "$B$" ar "Jā" atbildēja
+$33 \\%$, par partiju "$C$" - $44\\%$, bet par partiju "$D$" $55 \\%$ iedzīvotāju. Cik
 procenti pilsētas iedzīvotāju ir godīgie iedzīvotāji un cik blēži?"""@lv ;
     eliozo:problemTextHtml """<p>Pilsētā, kurā dzīvo godīgie iedzīvotāji (kas vienmēr runā tikai taisnību) un blēži (kas
 vienmēr melo), notika domes vēlēšanas, kurās piedalījās visi pilsētas iedzīvotāji.
 Balsot varēja par kādu no četrām partijām $A, B, C$ un $D$, un katrs iedzīvotājs
 nobalsoja tieši par vienu partiju. Pirms rezultātu apkopošanas žurnālisti veica visu
-iedzīvotāju aptauju. Uz jautājumu „Vai jūs balsojāt par partiju $A$?" ar "Jā" atbildēja
-$22 \\%$ pilsētas iedzīvotāju. Uz līdzīgu jautājumu par partiju " $B$ " ar "Jā" atbildēja
-$33 \\%$, par partiju " $C$ "- $44\\%$, bet par partiju " $D$ " $55 \\%$ iedzīvotāju. Cik
+iedzīvotāju aptauju. Uz jautājumu "Vai jūs balsojāt par partiju $A$?" ar "Jā" atbildēja
+$22 \\%$ pilsētas iedzīvotāju. Uz līdzīgu jautājumu par partiju "$B$" ar "Jā" atbildēja
+$33 \\%$, par partiju "$C$" - $44\\%$, bet par partiju "$D$" $55 \\%$ iedzīvotāju. Cik
 procenti pilsētas iedzīvotāju ir godīgie iedzīvotāji un cik blēži?</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2011.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2011.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -769,7 +799,8 @@ ciparus. Pierādīt, ka $B-A$ dalās ar $9$.</p>"""@lv ;
 
 eliozo:LV.NOL.2011.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -783,13 +814,14 @@ $p+q$?</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2011.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.NOL.2011.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -805,13 +837,14 @@ ir malas $BC$ viduspunkts.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2011.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.NOL.2011.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -821,26 +854,27 @@ eliozo:LV.NOL.2011.8.4 a eliozo:Problem ;
     eliozo:problemText """Apskatām zīmējumā parādīto figūru, kas sastāv no $32$ rūtiņām. Kāds ir lielākais dažādu
 taisnstūru skaits, kuros to var sagriezt (griezumus jāveic tikai pa rūtiņu malām)?
 Atbildi pamato! (Divus taisnstūrus uzskata par atšķirīgiem, ja tiem atšķiras izmēri
-nevis tikai novietojums, piem., ![](LV.NOL.2011.8.4_1.png) un ![](LV.NOL.2011.8.4_2.png)
+nevis tikai novietojums, piemēram, ![](LV.NOL.2011.8.4_1.png) un ![](LV.NOL.2011.8.4_2.png)
 ir vienādi taisnstūri.)
 
 ![](LV.NOL.2011.8.4_3.png)"""@lv ;
     eliozo:problemTextHtml """<p>Apskatām zīmējumā parādīto figūru, kas sastāv no $32$ rūtiņām. Kāds ir lielākais dažādu
 taisnstūru skaits, kuros to var sagriezt (griezumus jāveic tikai pa rūtiņu malām)?
 Atbildi pamato! (Divus taisnstūrus uzskata par atšķirīgiem, ja tiem atšķiras izmēri
-nevis tikai novietojums, piem., <img alt="" src="LV.NOL.2011.8.4_1.png" /> un <img alt="" src="LV.NOL.2011.8.4_2.png" />
+nevis tikai novietojums, piemēram, <img alt="" src="LV.NOL.2011.8.4_1.png" /> un <img alt="" src="LV.NOL.2011.8.4_2.png" />
 ir vienādi taisnstūri.)</p>
 <p><img alt="" src="LV.NOL.2011.8.4_3.png" /></p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.NOL.2011.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.NOL.2011.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -849,32 +883,33 @@ eliozo:LV.NOL.2011.8.5 a eliozo:Problem ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2011.8.5.SUB1 ;
     eliozo:problemText """Pilsētā, kurā dzīvo godīgie iedzīvotāji (kas vienmēr runā tikai taisnību) un blēži (kas
 vienmēr melo), notika domes vēlēšanas, kurās piedalījās visi pilsētas iedzīvotāji.
-Balsot varēja par kādu no četrām partijām $A, B, C$ un $D$, un katrs iedzīvotājs
+Balsot varēja par kādu no četrām partijām $A$, $B$, $C$ un $D$, un katrs iedzīvotājs
 nobalsoja tieši par vienu partiju. Pirms rezultātu apkopošanas žurnālisti veica visu
 iedzīvotāju aptauju. Uz jautājumu "Vai jūs balsojāt par partiju $A$?" ar "Jā" atbildēja
-$33\\%$ pilsētas iedzīvotāju. Uz līdzīgu jautājumu par partiju " $B$ " ar "Jā" atbildēja
-$44\\%$, par partiju " $C$ "- $55\\%$, bet par partiju " $D$ " $0\\%$ iedzīvotāju. Kāds
+$33\\%$ pilsētas iedzīvotāju. Uz līdzīgu jautājumu par partiju "$B$" ar "Jā" atbildēja
+$44\\%$, par partiju "$C$"- $55\\%$, bet par partiju "$D$" $0\\%$ iedzīvotāju. Kāds
 patiesībā bija balsu sadalījums, t.i., cik procenti iedzīvotāju nobalsoja par katru
 partiju?"""@lv ;
     eliozo:problemTextHtml """<p>Pilsētā, kurā dzīvo godīgie iedzīvotāji (kas vienmēr runā tikai taisnību) un blēži (kas
 vienmēr melo), notika domes vēlēšanas, kurās piedalījās visi pilsētas iedzīvotāji.
-Balsot varēja par kādu no četrām partijām $A, B, C$ un $D$, un katrs iedzīvotājs
+Balsot varēja par kādu no četrām partijām $A$, $B$, $C$ un $D$, un katrs iedzīvotājs
 nobalsoja tieši par vienu partiju. Pirms rezultātu apkopošanas žurnālisti veica visu
 iedzīvotāju aptauju. Uz jautājumu "Vai jūs balsojāt par partiju $A$?" ar "Jā" atbildēja
-$33\\%$ pilsētas iedzīvotāju. Uz līdzīgu jautājumu par partiju " $B$ " ar "Jā" atbildēja
-$44\\%$, par partiju " $C$ "- $55\\%$, bet par partiju " $D$ " $0\\%$ iedzīvotāju. Kāds
+$33\\%$ pilsētas iedzīvotāju. Uz līdzīgu jautājumu par partiju "$B$" ar "Jā" atbildēja
+$44\\%$, par partiju "$C$"- $55\\%$, bet par partiju "$D$" $0\\%$ iedzīvotāju. Kāds
 patiesībā bija balsu sadalījums, t.i., cik procenti iedzīvotāju nobalsoja par katru
 partiju?</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2011.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.NOL.2011.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -888,13 +923,14 @@ Pierādīt, ka visu šādu funkciju grafikiem ir divi kopīgi punkti.</p>"""@lv 
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2011.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.NOL.2011.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -913,13 +949,14 @@ $\\sphericalangle ADE=2 \\sphericalangle ABE$. Aprēķināt $\\sphericalangle AB
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2011.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.NOL.2011.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -937,13 +974,14 @@ mazākā iespējamā $k$ vērtība?</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.NOL.2011.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.NOL.2011.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -963,7 +1001,8 @@ $7^{a}=7^{x}+7^{y}+7^{z}$.</p>"""@lv ;
 
 eliozo:LV.NOL.2011.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.NOL.2011" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -971,21 +1010,21 @@ eliozo:LV.NOL.2011.9.5 a eliozo:Problem ;
     eliozo:problemID "LV.NOL.2011.9.5" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2011.9.5.SUB1 ;
     eliozo:problemText """Sacensībās piedalījās deviņas kamaniņbraucējas. Sacensību uzvarētāju nosaka pēc četru
-braucienu laiku kopsummas- kam šī summa mazāka, tā ieņem augstāku vietu. Atsevišķu
+braucienu laiku kopsummas - kam šī summa mazāka, tā ieņem augstāku vietu. Atsevišķu
 sportistu braucienu laiki atsevišķos braucienos un šo laiku kopsumma visām sportistēm
-bija atšķirīga. Kamaniņbraucēja Maija visos braucienos ienēma vienu un to pašu- $N$-to
+bija atšķirīga. Kamaniņbraucēja Maija visos braucienos ienēma vienu un to pašu - $N$-to
 vietu. Kādai lielākajai $N$ vērtībai iespējams, ka Maija kopvērtējumā tomēr uzvarēs,
 t.i., iegūs $1.$ vietu?"""@lv ;
     eliozo:problemTextHtml """<p>Sacensībās piedalījās deviņas kamaniņbraucējas. Sacensību uzvarētāju nosaka pēc četru
-braucienu laiku kopsummas- kam šī summa mazāka, tā ieņem augstāku vietu. Atsevišķu
+braucienu laiku kopsummas - kam šī summa mazāka, tā ieņem augstāku vietu. Atsevišķu
 sportistu braucienu laiki atsevišķos braucienos un šo laiku kopsumma visām sportistēm
-bija atšķirīga. Kamaniņbraucēja Maija visos braucienos ienēma vienu un to pašu- $N$-to
+bija atšķirīga. Kamaniņbraucēja Maija visos braucienos ienēma vienu un to pašu - $N$-to
 vietu. Kādai lielākajai $N$ vērtībai iespējams, ka Maija kopvērtējumā tomēr uzvarēs,
 t.i., iegūs $1.$ vietu?</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.NOL.2011.9" ;
     eliozo:suggestedGrade 9 .
 
@@ -1042,9 +1081,9 @@ vienādība neizpildās.
 Tātad $3 \\leq x < 4$ un iegūstam vienādojumu $x \\cdot[3x]=41$. Tā kā $9 \\leq 3x < 12$,
 tad šķirojam variantus:
 
-a) $[3x]=9 ; 9x=41, x=4 \\frac{5}{9} \\quad$- neder, jo $[x] \\neq 3$;
-b) $[3x]=10 ; 10x=41, x=4.1$- neder, jo $[x] \\neq 3$;
-c) $[3x]=11 ; 11x=41, x=3 \\frac{8}{11}$- der (nepieciešama pārbaude)."""@lv ;
+a. $[3x]=9 ; 9x=41, x=4 \\frac{5}{9} \\quad$- neder, jo $[x] \\neq 3$;
+b. $[3x]=10 ; 10x=41, x=4.1$- neder, jo $[x] \\neq 3$;
+c. $[3x]=11 ; 11x=41, x=3 \\frac{8}{11}$- der (nepieciešama pārbaude)."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>$\\underline{Atbilde:}$ vienīgais šāds skaitlis ir $3 \\frac{8}{11}$.</p>
 <p>Ja $x \\geq 4$, tad vienādojuma kreisā puse nav mazāka par $64$ un prasītā vienādība
@@ -1053,9 +1092,9 @@ neizpildās.</p>
 vienādība neizpildās.</p>
 <p>Tātad $3 \\leq x < 4$ un iegūstam vienādojumu $x \\cdot[3x]=41$. Tā kā $9 \\leq 3x < 12$,
 tad šķirojam variantus:</p>
-<p>a) $[3x]=9 ; 9x=41, x=4 \\frac{5}{9} \\quad$- neder, jo $[x] \\neq 3$;
-b) $[3x]=10 ; 10x=41, x=4.1$- neder, jo $[x] \\neq 3$;
-c) $[3x]=11 ; 11x=41, x=3 \\frac{8}{11}$- der (nepieciešama pārbaude).</p>"""@lv .
+<p>a. $[3x]=9 ; 9x=41, x=4 \\frac{5}{9} \\quad$- neder, jo $[x] \\neq 3$;
+b. $[3x]=10 ; 10x=41, x=4.1$- neder, jo $[x] \\neq 3$;
+c. $[3x]=11 ; 11x=41, x=3 \\frac{8}{11}$- der (nepieciešama pārbaude).</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2011.10.4.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
@@ -1127,18 +1166,18 @@ eliozo:SOLN.LV.NOL.2011.11.1.SUB1 a eliozo:Solution ;
 
 Pareizinot doto izteiksmi ar divi, iegūst
 
-$$2x^{2}+2y^{2}+8 \\geq 4x+4y+2xy$$
+$$2x^{2}+2y^{2}+8 \\geq 4x+4y+2xy.$$
 
 To savukārt var pārveidot par triju kvadrātu summu:
 
-$$(x-y)^{2}+(x-2)^{2}+(y-2)^{2} \\geq 0$$"""@lv ;
+$$(x-y)^{2}+(x-2)^{2}+(y-2)^{2} \\geq 0.$$"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Pareizinot doto izteiksmi ar divi, iegūst</p>
-<p>$$2x^{2}+2y^{2}+8 \\geq 4x+4y+2xy$$
+<p>$$2x^{2}+2y^{2}+8 \\geq 4x+4y+2xy.$$
 
 To savukārt var pārveidot par triju kvadrātu summu:
 
-$$(x-y)^{2}+(x-2)^{2}+(y-2)^{2} \\geq 0$$</p>"""@lv .
+$$(x-y)^{2}+(x-2)^{2}+(y-2)^{2} \\geq 0.$$</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2011.11.2.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
@@ -1475,11 +1514,11 @@ eliozo:SOLN.LV.NOL.2011.12.5.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-Katra škautne ir mala tieši divām skaldnēm, tātad divkāršots daudzskaldņa škautņu
+Katra šķautne ir mala tieši divām skaldnēm, tātad divkāršots daudzskaldņa šķautņu
 skaits ir vienāds ar visu skaldņu malu skaitu summu, tāpēc šī summa ir pāra skaitlis.
 Bet nepāra skaita nepāru skaitļu ir nepāra skaitlis, tad iegūstam pretrunu."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Katra škautne ir mala tieši divām skaldnēm, tātad divkāršots daudzskaldņa škautņu
+<p>Katra šķautne ir mala tieši divām skaldnēm, tātad divkāršots daudzskaldņa šķautņu
 skaits ir vienāds ar visu skaldņu malu skaitu summu, tāpēc šī summa ir pāra skaitlis.
 Bet nepāra skaita nepāru skaitļu ir nepāra skaitlis, tad iegūstam pretrunu.</p>"""@lv .
 
@@ -1528,19 +1567,15 @@ Otrā pilsēta var būt $C$, tad pēc maršruta $AC$ nobraukšanas autobusā ir 
 
 Analizēsim iespējamos šo maršrutu turpinājumus:
 
-1) $ACE$ ($23$) $\\rightarrow$ $ACEB$ ($30$) vai $ACED$ ($34$), taču neviens no šiem
-maršrutiem nav tālāk turpināms.
-
-2) $ACF$ ($22$) $\\rightarrow$ $ACFD$ ($33$) $\\rightarrow$ $ACFDB$ ($40$) $\\rightarrow$
-$ACFDBE$ ($28$) $\\rightarrow$ $ACFDBEG$ ($0$)
-
-3) $ACF$ ($22$) $\\rightarrow$ $ACFD$ ($33$) $\\rightarrow$ $ACFDE$ ($21$)- maršruts nav
-turpināms.
-
-4) $AED$ ($33$) $\\rightarrow$ $AEDB$ ($40$) $\\rightarrow$ $AEDBF$ ($27$)- maršruts nav
-turpināms.
-
-5) $AED$ ($33$) $\\rightarrow$ $AEDC$ ($34$)- maršruts nav turpināms.
+1. $ACE$ ($23$) $\\rightarrow$ $ACEB$ ($30$) vai $ACED$ ($34$), taču neviens no šiem
+   maršrutiem nav tālāk turpināms.
+2. $ACF$ ($22$) $\\rightarrow$ $ACFD$ ($33$) $\\rightarrow$ $ACFDB$ ($40$) $\\rightarrow$
+   $ACFDBE$ ($28$) $\\rightarrow$ $ACFDBEG$ ($0$)
+3. $ACF$ ($22$) $\\rightarrow$ $ACFD$ ($33$) $\\rightarrow$ $ACFDE$ ($21$)- maršruts nav
+   turpināms.
+4. $AED$ ($33$) $\\rightarrow$ $AEDB$ ($40$) $\\rightarrow$ $AEDBF$ ($27$)- maršruts nav
+   turpināms.
+5. $AED$ ($33$) $\\rightarrow$ $AEDC$ ($34$)- maršruts nav turpināms.
 
 Tātad vienīgais maršruts, kas apmierina visus noteikumus, ir $ACFDBEG$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
@@ -1553,15 +1588,17 @@ $G$, iebraucot tajā autobusā bija $28$ pasažieri.</p>
 <p>Otrā pilsēta var būt $C$, tad pēc maršruta $AC$ nobraukšanas autobusā ir $35$ pasažieri
 (apzīmēsim to $AC$ ($35$)) vai arī otrā pilsēta var būt $E$, tātad $AE$ ($22$).</p>
 <p>Analizēsim iespējamos šo maršrutu turpinājumus:</p>
-<p>1) $ACE$ ($23$) $\\rightarrow$ $ACEB$ ($30$) vai $ACED$ ($34$), taču neviens no šiem
-maršrutiem nav tālāk turpināms.</p>
-<p>2) $ACF$ ($22$) $\\rightarrow$ $ACFD$ ($33$) $\\rightarrow$ $ACFDB$ ($40$) $\\rightarrow$
-$ACFDBE$ ($28$) $\\rightarrow$ $ACFDBEG$ ($0$)</p>
-<p>3) $ACF$ ($22$) $\\rightarrow$ $ACFD$ ($33$) $\\rightarrow$ $ACFDE$ ($21$)- maršruts nav
-turpināms.</p>
-<p>4) $AED$ ($33$) $\\rightarrow$ $AEDB$ ($40$) $\\rightarrow$ $AEDBF$ ($27$)- maršruts nav
-turpināms.</p>
-<p>5) $AED$ ($33$) $\\rightarrow$ $AEDC$ ($34$)- maršruts nav turpināms.</p>
+<ol>
+<li>$ACE$ ($23$) $\\rightarrow$ $ACEB$ ($30$) vai $ACED$ ($34$), taču neviens no šiem
+   maršrutiem nav tālāk turpināms.</li>
+<li>$ACF$ ($22$) $\\rightarrow$ $ACFD$ ($33$) $\\rightarrow$ $ACFDB$ ($40$) $\\rightarrow$
+   $ACFDBE$ ($28$) $\\rightarrow$ $ACFDBEG$ ($0$)</li>
+<li>$ACF$ ($22$) $\\rightarrow$ $ACFD$ ($33$) $\\rightarrow$ $ACFDE$ ($21$)- maršruts nav
+   turpināms.</li>
+<li>$AED$ ($33$) $\\rightarrow$ $AEDB$ ($40$) $\\rightarrow$ $AEDBF$ ($27$)- maršruts nav
+   turpināms.</li>
+<li>$AED$ ($33$) $\\rightarrow$ $AEDC$ ($34$)- maršruts nav turpināms.</li>
+</ol>
 <p>Tātad vienīgais maršruts, kas apmierina visus noteikumus, ir $ACFDBEG$.</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2011.5.4.SUB1 a eliozo:Solution ;
@@ -1749,25 +1786,25 @@ eliozo:SOLN.LV.NOL.2011.7.5.SUB1 a eliozo:Solution ;
 
 Ar $g$ apzīmēsim cik $\\%$ no visiem iedzīvotājiem ir godīgie, ar $g_{A}$ (resp.
 $g_{B}, g_{C}, g_{D}$)- tos godīgos iedzīvotājus ($\\%$ no visiem iedzīvotājiem), kas
-balsoja par $A$ (resp., B, C, D) partiju, $g_{A}+g_{B}+g_{C}+g_{D}=g$; līdzīgi ar
-$b, b_{A}, b_{B}, b_{C}, b_{D}$ apzīmēsim blēžus ( $\\%$ no visiem iedzīvotājiem).
+balsoja par $A$ (resp., $B$, $C$, $D$) partiju, $g_{A}+g_{B}+g_{C}+g_{D}=g$; līdzīgi ar
+$b, b_{A}, b_{B}, b_{C}, b_{D}$ apzīmēsim blēžus ($\\%$ no visiem iedzīvotājiem).
 
 Par $A$ pozitīvi atbildēja godīgie iedzīvotāji, kas balsoja par $A$ un tie blēži, kas
 nebalsoja par $A$. Tātad $g_{A}+b-b_{A}=22 \\%$. Līdzīgi:
-$g_{B}+b-b_{B}=33 \\%, g_{C}+b-b_{C}=44 \\%$ un $g_{D}+b-b_{D}=55 \\%$.
+$g_{B}+b-b_{B}=33 \\%$, $g_{C}+b-b_{C}=44 \\%$ un $g_{D}+b-b_{D}=55 \\%$.
 
-Saskaitot šīs vienādības, iegūstam $g+3b=154 \\%$, tātad $2b=54 \\%$ jeb $b=27 \\%$ un
-$g=73 \\%$."""@lv ;
+Saskaitot šīs vienādības, iegūstam $g+3b=154\\%$, tātad $2b=54\\%$ jeb $b=27\\%$ un
+$g=73\\%$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Ar $g$ apzīmēsim cik $\\%$ no visiem iedzīvotājiem ir godīgie, ar $g_{A}$ (resp.
 $g_{B}, g_{C}, g_{D}$)- tos godīgos iedzīvotājus ($\\%$ no visiem iedzīvotājiem), kas
-balsoja par $A$ (resp., B, C, D) partiju, $g_{A}+g_{B}+g_{C}+g_{D}=g$; līdzīgi ar
-$b, b_{A}, b_{B}, b_{C}, b_{D}$ apzīmēsim blēžus ( $\\%$ no visiem iedzīvotājiem).</p>
+balsoja par $A$ (resp., $B$, $C$, $D$) partiju, $g_{A}+g_{B}+g_{C}+g_{D}=g$; līdzīgi ar
+$b, b_{A}, b_{B}, b_{C}, b_{D}$ apzīmēsim blēžus ($\\%$ no visiem iedzīvotājiem).</p>
 <p>Par $A$ pozitīvi atbildēja godīgie iedzīvotāji, kas balsoja par $A$ un tie blēži, kas
 nebalsoja par $A$. Tātad $g_{A}+b-b_{A}=22 \\%$. Līdzīgi:
-$g_{B}+b-b_{B}=33 \\%, g_{C}+b-b_{C}=44 \\%$ un $g_{D}+b-b_{D}=55 \\%$.</p>
-<p>Saskaitot šīs vienādības, iegūstam $g+3b=154 \\%$, tātad $2b=54 \\%$ jeb $b=27 \\%$ un
-$g=73 \\%$.</p>"""@lv .
+$g_{B}+b-b_{B}=33 \\%$, $g_{C}+b-b_{C}=44 \\%$ un $g_{D}+b-b_{D}=55 \\%$.</p>
+<p>Saskaitot šīs vienādības, iegūstam $g+3b=154\\%$, tātad $2b=54\\%$ jeb $b=27\\%$ un
+$g=73\\%$.</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2011.8.1.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;

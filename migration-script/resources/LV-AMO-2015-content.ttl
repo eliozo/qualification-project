@@ -3,27 +3,29 @@
 
 eliozo:LV.AMO.2015.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2015.10.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2015.10.1.SUB1 ;
-    eliozo:problemText """Nosaki funkcijas **a)** $y=x^{2}+2x+2$, **b)** $y=\\frac{1}{x^{2}+2x+2}$ vērtību
+    eliozo:problemText """Nosaki funkcijas **(A)** $y=x^{2}+2x+2$, **(B)** $y=\\frac{1}{x^{2}+2x+2}$ vērtību
 kopu!"""@lv ;
-    eliozo:problemTextHtml """<p>Nosaki funkcijas <strong>a)</strong> $y=x^{2}+2x+2$, <strong>b)</strong> $y=\\frac{1}{x^{2}+2x+2}$ vērtību
+    eliozo:problemTextHtml """<p>Nosaki funkcijas <strong>(A)</strong> $y=x^{2}+2x+2$, <strong>(B)</strong> $y=\\frac{1}{x^{2}+2x+2}$ vērtību
 kopu!</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2015.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2015.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -39,7 +41,7 @@ malām.</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2015.10" ;
     eliozo:suggestedGrade 10 .
 
@@ -47,6 +49,7 @@ eliozo:LV.AMO.2015.10.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-product ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -69,7 +72,8 @@ viencipara skaitļa ciparu reizinājumu sauc tā vienīgo ciparu.)</p>"""@lv ;
 
 eliozo:LV.AMO.2015.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -85,13 +89,14 @@ Pierādīt, ka $BD+BE > 2BC$.</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2015.10" ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2015.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -100,16 +105,16 @@ eliozo:LV.AMO.2015.10.5 a eliozo:Problem ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2015.10.5.SUB1 ;
     eliozo:problemText """Jura dzimšanas dienas torte ir biezpiena kubs, kura četras sānu skaldnes un
 augšējā skaldne ir noklāta ar šokolādes glazūru (visur vienādi biezu). Kā šo
-torti sadalīt **a)** $4$ daļās, **b)** $3$ daļās tā, lai katras daļas forma ir
+torti sadalīt **(A)** $4$ daļās, **(B)** $3$ daļās tā, lai katras daļas forma ir
 taisna prizma un gan biezpiena, gan glazūras daudzums visās daļās ir vienāds?"""@lv ;
     eliozo:problemTextHtml """<p>Jura dzimšanas dienas torte ir biezpiena kubs, kura četras sānu skaldnes un
 augšējā skaldne ir noklāta ar šokolādes glazūru (visur vienādi biezu). Kā šo
-torti sadalīt <strong>a)</strong> $4$ daļās, <strong>b)</strong> $3$ daļās tā, lai katras daļas forma ir
+torti sadalīt <strong>(A)</strong> $4$ daļās, <strong>(B)</strong> $3$ daļās tā, lai katras daļas forma ir
 taisna prizma un gan biezpiena, gan glazūras daudzums visās daļās ir vienāds?</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.10" ;
     eliozo:suggestedGrade 10 .
 
@@ -117,6 +122,7 @@ eliozo:LV.AMO.2015.11.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -138,7 +144,8 @@ tādu, kas dalās ar $3$, bet nedalās ar $5$.</p>"""@lv ;
 
 eliozo:LV.AMO.2015.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -157,7 +164,7 @@ taisnstūrus, vēl joprojām var pārklāt doto taisnstūri?</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.11" ;
     eliozo:suggestedGrade 11 .
 
@@ -165,6 +172,7 @@ eliozo:LV.AMO.2015.11.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -186,7 +194,8 @@ bezgalīgi daudz tādu $n$, ka $M(n)$ dalās ar $n$.</p>"""@lv ;
 
 eliozo:LV.AMO.2015.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -207,13 +216,14 @@ un $\\omega_{2}$ krustpunktā, kas atšķirīgs no punkta $E$ !</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2015.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2015.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -227,13 +237,15 @@ vērtību!</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2015.11" ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2015.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg",
+        "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -245,13 +257,14 @@ eliozo:LV.AMO.2015.12.1 a eliozo:Problem ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2015.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2015.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -273,13 +286,14 @@ spoguļattēlā.</p>
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2015.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -295,13 +309,14 @@ ja $a, b, c, d$ ir pozitīvi skaitļi!</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2015.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2015.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -318,7 +333,7 @@ kvadrāts. Pierādīt, ka $AB \\geq 3PS$. Kādā gadījumā $AB=3PS$ ?</p>"""@lv
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2015.12" ;
     eliozo:suggestedGrade 12 .
 
@@ -326,6 +341,7 @@ eliozo:LV.AMO.2015.12.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -347,7 +363,8 @@ ar $b$.</p>"""@lv ;
 
 eliozo:LV.AMO.2015.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -359,13 +376,14 @@ eliozo:LV.AMO.2015.5.1 a eliozo:Problem ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.AMO.2015.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.AMO.2015.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -382,13 +400,15 @@ redzamo figūru un $28$ figūrām, kādas redzamas 2.att.? Figūras drīkst pagr
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.AMO.2015.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom",
+        "NT" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -396,19 +416,20 @@ eliozo:LV.AMO.2015.5.3 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2015.5.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2015.5.3.SUB1 ;
     eliozo:problemText """Vai iespējams uzzīmēt tādu taisnstūri, kura malu garumi ir naturāli skaitļi,
-bet **a)** laukums ir pirmskaitlis; **b)** perimetrs ir pirmskaitlis?"""@lv ;
+bet **(A)** laukums ir pirmskaitlis; **(B)** perimetrs ir pirmskaitlis?"""@lv ;
     eliozo:problemTextHtml """<p>Vai iespējams uzzīmēt tādu taisnstūri, kura malu garumi ir naturāli skaitļi,
-bet <strong>a)</strong> laukums ir pirmskaitlis; <strong>b)</strong> perimetrs ir pirmskaitlis?</p>"""@lv ;
+bet <strong>(A)</strong> laukums ir pirmskaitlis; <strong>(B)</strong> perimetrs ir pirmskaitlis?</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.AMO.2015.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -422,13 +443,14 @@ Atrodi visus tādus skaitļus un pamato, ka citu nav!</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2015.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.AMO.2015.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -446,13 +468,14 @@ atsvariem atrast abas viltotās monētas?</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Algorithm" ;
     eliozo:suffix "LV.AMO.2015.5" ;
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.AMO.2015.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -461,24 +484,28 @@ eliozo:LV.AMO.2015.6.1 a eliozo:Problem ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2015.6.1.SUB1 ;
     eliozo:problemText """Profesors Cipariņš iedomājās četrus skaitļus, kuru summa ir vesels skaitlis.
 Pēc tam viņš saskaitīja šos skaitļus visos iespējamos veidos pa pāriem un ieguva
-sešas summas. Izrādījās, ka viena no šīm summām ir daļskaitlis. **a)** Pierādi,
-ka vēl vismaz viena no iegūtajām summām ir daļskaitlis. **b)** Vai var būt tā,
-ka tieši divas summas ir daļskaitļi, bet pārējās- veseli skaitļi?"""@lv ;
+sešas summas. Izrādījās, ka viena no šīm summām ir daļskaitlis.  
+**(A)** Pierādi, ka vēl vismaz viena no iegūtajām summām ir daļskaitlis.  
+**(B)** Vai var būt tā, ka tieši divas summas ir daļskaitļi, 
+bet pārējās - veseli skaitļi?"""@lv ;
     eliozo:problemTextHtml """<p>Profesors Cipariņš iedomājās četrus skaitļus, kuru summa ir vesels skaitlis.
 Pēc tam viņš saskaitīja šos skaitļus visos iespējamos veidos pa pāriem un ieguva
-sešas summas. Izrādījās, ka viena no šīm summām ir daļskaitlis. <strong>a)</strong> Pierādi,
-ka vēl vismaz viena no iegūtajām summām ir daļskaitlis. <strong>b)</strong> Vai var būt tā,
-ka tieši divas summas ir daļskaitļi, bet pārējās- veseli skaitļi?</p>"""@lv ;
+sešas summas. Izrādījās, ka viena no šīm summām ir daļskaitlis.<br />
+<strong>(A)</strong> Pierādi, ka vēl vismaz viena no iegūtajām summām ir daļskaitlis.<br />
+<strong>(B)</strong> Vai var būt tā, ka tieši divas summas ir daļskaitļi, 
+bet pārējās - veseli skaitļi?</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove",
+        "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.AMO.2015.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -494,13 +521,14 @@ taisnstūriem, kuru izmēri ir $1 \\times 2$ rūtiņas?</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.AMO.2015.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -519,13 +547,14 @@ gadīties, ka visi seši trijstūros ierakstītie skaitļi ir vienādi?</p>
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 3 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.AMO.2015.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -539,13 +568,14 @@ nullēm! (Skaitļa kvadrāts ir skaitļa reizinājums pašam ar sevi).</p>"""@lv
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2015.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.AMO.2015.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -557,26 +587,27 @@ vairākus akmentiņus. Zināms, ka visu akmentiņu masas ir dažādas. Atpūtas 
 katrs no bērniem izvēlējās vienu no saviem akmentiņiem un pēc vienas vai
 vairākām maiņām beigās dabūja kāda cita bērna akmentiņu.
 
-Vai var būt, ka pēc šīs maiņas **a)** katra bērna akmentiņu kopējā masa
-samazinājās, **b)** tieši viena bērna akmentiņu kopējā masa palielinājās, bet
-katram no pārējiem bērniem- samazinājās?"""@lv ;
+Vai var būt, ka pēc šīs maiņas **(A)** katra bērna akmentiņu kopējā masa
+samazinājās, **(B)** tieši viena bērna akmentiņu kopējā masa palielinājās, bet
+katram no pārējiem bērniem - samazinājās?"""@lv ;
     eliozo:problemTextHtml """<p>Vairāki bērni devās pārgājienā un mājupceļā katrs kā suvenīru paņēma vienu vai
 vairākus akmentiņus. Zināms, ka visu akmentiņu masas ir dažādas. Atpūtas brīdī
 katrs no bērniem izvēlējās vienu no saviem akmentiņiem un pēc vienas vai
 vairākām maiņām beigās dabūja kāda cita bērna akmentiņu.</p>
-<p>Vai var būt, ka pēc šīs maiņas <strong>a)</strong> katra bērna akmentiņu kopējā masa
-samazinājās, <strong>b)</strong> tieši viena bērna akmentiņu kopējā masa palielinājās, bet
-katram no pārējiem bērniem- samazinājās?</p>"""@lv ;
+<p>Vai var būt, ka pēc šīs maiņas <strong>(A)</strong> katra bērna akmentiņu kopējā masa
+samazinājās, <strong>(B)</strong> tieši viena bērna akmentiņu kopējā masa palielinājās, bet
+katram no pārējiem bērniem - samazinājās?</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.6" ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.AMO.2015.7.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -590,13 +621,14 @@ vienādas cepures maksā vairāk nekā $11$ eiro. Cik maksā viena cepure?</p>""
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2015.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.AMO.2015.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -614,7 +646,7 @@ apgrieztas spoguļattēlā.</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.7" ;
     eliozo:suggestedGrade 7 .
 
@@ -622,6 +654,7 @@ eliozo:LV.AMO.2015.7.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -651,6 +684,7 @@ eliozo:LV.AMO.2015.7.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-isosceles-triangle ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -672,7 +706,8 @@ Atrodi visus gadījumus un pamato, ka citu nav!</p>"""@lv ;
 
 eliozo:LV.AMO.2015.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -683,18 +718,17 @@ eliozo:LV.AMO.2015.7.5 a eliozo:Problem ;
 $10, 11, 12$ un $13$ grami. Vai ar dažām svēršanām uz sviru svariem bez
 atsvariem, kur katrā kausā drīkst ielikt tieši divas bumbiņas, iespējams
 
-**a)** atrast visvieglāko un vissmagāko bumbiņu;
-
-**b)** noteikt katras bumbiņas masu?"""@lv ;
+**(A)** atrast visvieglāko un vissmagāko bumbiņu;  
+**(B)** noteikt katras bumbiņas masu?"""@lv ;
     eliozo:problemTextHtml """<p>Uz galda stāv četras pēc izskata vienādas bumbiņas, to masas attiecīgi ir
 $10, 11, 12$ un $13$ grami. Vai ar dažām svēršanām uz sviru svariem bez
 atsvariem, kur katrā kausā drīkst ielikt tieši divas bumbiņas, iespējams</p>
-<p><strong>a)</strong> atrast visvieglāko un vissmagāko bumbiņu;</p>
-<p><strong>b)</strong> noteikt katras bumbiņas masu?</p>"""@lv ;
+<p><strong>(A)</strong> atrast visvieglāko un vissmagāko bumbiņu;<br />
+<strong>(B)</strong> noteikt katras bumbiņas masu?</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.7" ;
     eliozo:suggestedGrade 7 .
 
@@ -702,6 +736,7 @@ eliozo:LV.AMO.2015.8.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-rational-numbers ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -723,7 +758,8 @@ racionāls skaitlis!</p>"""@lv ;
 
 eliozo:LV.AMO.2015.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -744,7 +780,7 @@ apgrieztas spoguļattēlā.</p>
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -754,6 +790,7 @@ eliozo:LV.AMO.2015.8.3 a eliozo:Problem ;
         eliozo:TRM-sum ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -775,7 +812,8 @@ naturāla skaitļa kvadrāta un pirmskaitļa summu.</p>"""@lv ;
 
 eliozo:LV.AMO.2015.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -783,25 +821,26 @@ eliozo:LV.AMO.2015.8.4 a eliozo:Problem ;
     eliozo:problemID "LV.AMO.2015.8.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2015.8.4.SUB1 ;
     eliozo:problemText """Divu taisnstūra paralēlskaldņu visu šķautņu garumi ir naturāli skaitļi. Pirmā
-paralēlskaldņa trīs dažādo skaldņu perimetri ir $p_{1}, q_{1}, r_{1}$, bet otrā
-$p_{2}, q_{2}, r_{2}$, turklāt $p_{1} < p_{2}, q_{1} < q_{2}$ un $r_{1} < r_{2}$.
+paralēlskaldņa trīs dažādo skaldņu perimetri ir $p_{1}$, $q_{1}$, $r_{1}$, bet otrā
+$p_{2}$, $q_{2}$, $r_{2}$, turklāt $p_{1} < p_{2}$, $q_{1} < q_{2}$ un $r_{1} < r_{2}$.
 Vai var apgalvot, ka pirmā paralēlskaldņa tilpums ir mazāks nekā otrā
 paralēlskaldņa tilpums?"""@lv ;
     eliozo:problemTextHtml """<p>Divu taisnstūra paralēlskaldņu visu šķautņu garumi ir naturāli skaitļi. Pirmā
-paralēlskaldņa trīs dažādo skaldņu perimetri ir $p_{1}, q_{1}, r_{1}$, bet otrā
-$p_{2}, q_{2}, r_{2}$, turklāt $p_{1} < p_{2}, q_{1} < q_{2}$ un $r_{1} < r_{2}$.
+paralēlskaldņa trīs dažādo skaldņu perimetri ir $p_{1}$, $q_{1}$, $r_{1}$, bet otrā
+$p_{2}$, $q_{2}$, $r_{2}$, turklāt $p_{1} < p_{2}$, $q_{1} < q_{2}$ un $r_{1} < r_{2}$.
 Vai var apgalvot, ka pirmā paralēlskaldņa tilpums ir mazāks nekā otrā
 paralēlskaldņa tilpums?</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.AMO.2015.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -818,13 +857,14 @@ $ABC$ ir vienādmalu!</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2015.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.AMO.2015.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -838,13 +878,14 @@ reizinājums ir vismazākais!</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 1 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2015.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.AMO.2015.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -869,13 +910,14 @@ ar izmēriem $1 \\times 1 \\times 3$ ?</p>
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 2 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.AMO.2015.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -893,7 +935,8 @@ eliozo:LV.AMO.2015.9.3 a eliozo:Problem ;
 
 eliozo:LV.AMO.2015.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -911,13 +954,14 @@ $G$. Nosaki $\\sphericalangle CGD$ lielumu, ja $\\sphericalangle CAD=\\alpha$!</
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2015.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.AMO.2015.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2015" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -926,14 +970,14 @@ eliozo:LV.AMO.2015.9.5 a eliozo:Problem ;
     eliozo:problemSolution eliozo:SOLN.LV.AMO.2015.9.5.SUB1 ;
     eliozo:problemText """Parādi, kā naturālos skaitļus no $1$ līdz $2n-1$ uzrakstīt rindā tā, ka visas
 blakus esošo skaitļu starpības (no lielākā skaitļa atņem mazāko) ir dažādas un
-skaitlis $1$ ir vidējais ($n$-tais), ja **a)** $n=5$; **b)** $n=1008$."""@lv ;
+skaitlis $1$ ir vidējais ($n$-tais), ja **(A)** $n=5$; **(B)** $n=1008$."""@lv ;
     eliozo:problemTextHtml """<p>Parādi, kā naturālos skaitļus no $1$ līdz $2n-1$ uzrakstīt rindā tā, ka visas
 blakus esošo skaitļu starpības (no lielākā skaitļa atņem mazāko) ir dažādas un
-skaitlis $1$ ir vidējais ($n$-tais), ja <strong>a)</strong> $n=5$; <strong>b)</strong> $n=1008$.</p>"""@lv ;
+skaitlis $1$ ir vidējais ($n$-tais), ja <strong>(A)</strong> $n=5$; <strong>(B)</strong> $n=1008$.</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 5 ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.AMO.2015.9" ;
     eliozo:suggestedGrade 9 .
 
@@ -1654,19 +1698,19 @@ eliozo:SOLN.LV.AMO.2015.5.3.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-**a)** Jā, piemēram, der taisnstūris ar malu garumiem $1$ un $3$, tad laukums ir
+**(A)** Jā, piemēram, der taisnstūris ar malu garumiem $1$ un $3$, tad laukums ir
 $3$, kas ir pirmskaitlis.
 
-**b)** Nē, nav iespējams. Ja taisnstūra malu garumi ir $a$ un $b$, tad
+**(B)** Nē, nav iespējams. Ja taisnstūra malu garumi ir $a$ un $b$, tad
 taisnstūra perimetrs ir $P=2 \\cdot(a+b)$.
 
 Perimetrs vienmēr ir pāra skaitlis. Vienīgais pāra pirmskaitlis ir $2$ , tāpēc
 $a+b$ būtu jābūt vienādam ar $1$ , bet tas nav iespējams, jo $a$ un $b$ ir
 naturāli skaitļi."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>a)</strong> Jā, piemēram, der taisnstūris ar malu garumiem $1$ un $3$, tad laukums ir
+<p><strong>(A)</strong> Jā, piemēram, der taisnstūris ar malu garumiem $1$ un $3$, tad laukums ir
 $3$, kas ir pirmskaitlis.</p>
-<p><strong>b)</strong> Nē, nav iespējams. Ja taisnstūra malu garumi ir $a$ un $b$, tad
+<p><strong>(B)</strong> Nē, nav iespējams. Ja taisnstūra malu garumi ir $a$ un $b$, tad
 taisnstūra perimetrs ir $P=2 \\cdot(a+b)$.</p>
 <p>Perimetrs vienmēr ir pāra skaitlis. Vienīgais pāra pirmskaitlis ir $2$ , tāpēc
 $a+b$ būtu jābūt vienādam ar $1$ , bet tas nav iespējams, jo $a$ un $b$ ir
@@ -1796,20 +1840,20 @@ eliozo:SOLN.LV.AMO.2015.6.1.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-**a)** Visu četru skaitļu $a, b, c, d$ summu apzīmēsim ar $S=a+b+c+d$ un to
+**(A)** Visu četru skaitļu $a, b, c, d$ summu apzīmēsim ar $S=a+b+c+d$ un to
 summu, kas ir daļskaitlis, apzīmēsim ar $S_{1}=a+b$. Tā kā $S$ ir vesels
 skaitlis, tad starpība $S-S_{1}=a+b+c+d-(a+b)=c+d$ arī ir daļskaitlis. Tātad vēl
 vismaz viena no iegūtajām summām ir daļskaitlis.
 
-**b)** Jā, tieši divas summas var būt daļskaitļi, ja profesors Cipariņš ir
+**(B)** Jā, tieši divas summas var būt daļskaitļi, ja profesors Cipariņš ir
 iedomājies, piemēram, skaitļus
 $\\frac{1}{3}, \\frac{1}{3}, \\frac{2}{3}, \\frac{2}{3}$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>a)</strong> Visu četru skaitļu $a, b, c, d$ summu apzīmēsim ar $S=a+b+c+d$ un to
+<p><strong>(A)</strong> Visu četru skaitļu $a, b, c, d$ summu apzīmēsim ar $S=a+b+c+d$ un to
 summu, kas ir daļskaitlis, apzīmēsim ar $S_{1}=a+b$. Tā kā $S$ ir vesels
 skaitlis, tad starpība $S-S_{1}=a+b+c+d-(a+b)=c+d$ arī ir daļskaitlis. Tātad vēl
 vismaz viena no iegūtajām summām ir daļskaitlis.</p>
-<p><strong>b)</strong> Jā, tieši divas summas var būt daļskaitļi, ja profesors Cipariņš ir
+<p><strong>(B)</strong> Jā, tieši divas summas var būt daļskaitļi, ja profesors Cipariņš ir
 iedomājies, piemēram, skaitļus
 $\\frac{1}{3}, \\frac{1}{3}, \\frac{2}{3}, \\frac{2}{3}$.</p>"""@lv .
 
@@ -1909,25 +1953,25 @@ eliozo:SOLN.LV.AMO.2015.6.5.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-**a)** Tas nav iespējams. Ja katra bērna akmentiņu masa būtu samazinājusies,
+**(A)** Tas nav iespējams. Ja katra bērna akmentiņu masa būtu samazinājusies,
 tad arī visu akmeņu kopējai masai būtu jāsamazinās, bet maiņas rezultātā visu
 akmeņu kopējā masa nevar samazināties.
 
-**b)** Tas ir iespējams. Parādīsim piemēru, kurā tas izpildās. Visi bērni paņem
+**(B)** Tas ir iespējams. Parādīsim piemēru, kurā tas izpildās. Visi bērni paņem
 rokā to akmentiņu, ko plānojuši mainīt un sastājas rindā tā, ka pirmais stāv
-bērns ar visvieglāko akmeni, otrais- ar otru vieglāko akmeni, ..., pēdējais- ar
+bērns ar visvieglāko akmeni, otrais- ar otru vieglāko akmeni, $\\ldots$, pēdējais- ar
 vissmagāko akmeni. Ja pirmais bērns iedod savu akmeni otrajam, otrais- trešajam,
-..., pēdējais- pirmajam, tad tikai pirmajam bērnam akmentiņu masa ir
+$\\ldots$, pēdējais - pirmajam, tad tikai pirmajam bērnam akmentiņu masa ir
 palielinājusies, bet visiem pārējiem- samazinājusies."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>a)</strong> Tas nav iespējams. Ja katra bērna akmentiņu masa būtu samazinājusies,
+<p><strong>(A)</strong> Tas nav iespējams. Ja katra bērna akmentiņu masa būtu samazinājusies,
 tad arī visu akmeņu kopējai masai būtu jāsamazinās, bet maiņas rezultātā visu
 akmeņu kopējā masa nevar samazināties.</p>
-<p><strong>b)</strong> Tas ir iespējams. Parādīsim piemēru, kurā tas izpildās. Visi bērni paņem
+<p><strong>(B)</strong> Tas ir iespējams. Parādīsim piemēru, kurā tas izpildās. Visi bērni paņem
 rokā to akmentiņu, ko plānojuši mainīt un sastājas rindā tā, ka pirmais stāv
-bērns ar visvieglāko akmeni, otrais- ar otru vieglāko akmeni, ..., pēdējais- ar
+bērns ar visvieglāko akmeni, otrais- ar otru vieglāko akmeni, $\\ldots$, pēdējais- ar
 vissmagāko akmeni. Ja pirmais bērns iedod savu akmeni otrajam, otrais- trešajam,
-..., pēdējais- pirmajam, tad tikai pirmajam bērnam akmentiņu masa ir
+$\\ldots$, pēdējais - pirmajam, tad tikai pirmajam bērnam akmentiņu masa ir
 palielinājusies, bet visiem pārējiem- samazinājusies.</p>"""@lv .
 
 eliozo:SOLN.LV.AMO.2015.7.1.SUB1 a eliozo:Solution ;
@@ -2392,11 +2436,11 @@ eliozo:SOLN.LV.AMO.2015.9.5.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-**a)** Der, piemēram, virkne
+**(A)** Der, piemēram, virkne
 
 ![](LV.AMO.2015.9.5A.png)
 
-**b)** Aplūkosim skaitļu virkni
+**(B)** Aplūkosim skaitļu virkni
 $1; 2015; 2; 2014; 3; 2013; 4; 2012; ...; 1007; 1009; 1008$ (šī virkne sastāv no
 divām virknēm- vienas augošas $1 ; 2 ; 3 ; \\ldots ; 1008$ un otras dilstošas
 $2015; 2014; ...; 1009$). Šajā virknē ir visi skaitļi no $1$ līdz $2015$ un
@@ -2419,9 +2463,9 @@ starpībām atrodami visi skaitļi no $1$ līdz $2014$:
 
 ![](LV.AMO.2015.9.5B.png)"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>a)</strong> Der, piemēram, virkne</p>
+<p><strong>(A)</strong> Der, piemēram, virkne</p>
 <p><img alt="" src="LV.AMO.2015.9.5A.png" /></p>
-<p><strong>b)</strong> Aplūkosim skaitļu virkni
+<p><strong>(B)</strong> Aplūkosim skaitļu virkni
 $1; 2015; 2; 2014; 3; 2013; 4; 2012; ...; 1007; 1009; 1008$ (šī virkne sastāv no
 divām virknēm- vienas augošas $1 ; 2 ; 3 ; \\ldots ; 1008$ un otras dilstošas
 $2015; 2014; ...; 1009$). Šajā virknē ir visi skaitļi no $1$ līdz $2015$ un
