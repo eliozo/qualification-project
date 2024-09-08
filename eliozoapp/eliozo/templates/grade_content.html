@@ -8,9 +8,9 @@
                 {{jsonfile}}
             </div>
            {% if grade == '-1' %}
-             <h2> {% if country and country != '' %}{{ country }}.{% endif %}{{ olympiad }}: {{ year }}. gads</h2>
+             <h2> {% if country and country != '' %}{{ country }}.{% endif %}{{ olympiad }}.{{ event }}</h2>
            {% else %}
-            <h2> {{ country }}.{{ olympiad }}: {{ year }}.gada {{ grade }}. klases uzdevumi </h2>
+            <h2> {% if country and country != '' %}{{ country }}.{% endif %}{{ olympiad }}.{{ event }} olimpiādes {{ grade }}. klases uzdevumi </h2>
            {% endif %}
             {% for problem in problems %}
 

@@ -2,7 +2,6 @@
 
 {% block content %}
        <div class="col-sm-8 text-left">
-               <a href="{{ url_for('main') }}" class="button">{% trans %}Back{% endtrans %}</a>
     <div class="container">
       {{jsonfile}}
     </div>
@@ -13,28 +12,28 @@
 - **Estonia (Sea Blue):** `#006994`
       #}
 
+      <p>{% trans %}Olympiads with full solutions are shown in bold. Others are incomplete.{% endtrans %}</p>
+
       <div class="olympiads">
+
+          {% for (country,color) in [('LV', '#228B22'), ('EE', '#006994'), ('LT', '#FFBF00'), ('', 'black')] %}
+
           {% for link in links %}
-          {% set country_code = link.olympiadCountry %}
-          {% if country_code == 'EE' %}
-          <p class="olympiad" style="border-color: #006994;">
-              <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName }}</a>: {{ link.olympiadDescription }}
-          </p>
-          {% elif country_code == 'LV' %}
-          <p class="olympiad" style="border-color: #228B22;">
-              <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName }}</a>: {{ link.olympiadDescription }}
-          </p>
-          {% elif country_code == 'LT' %}
-          <p class="olympiad" style="border-color: #FFBF00;">
-              <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName }}</a>: {{ link.olympiadDescription }}
-          </p>
-          {% else %}
-          <p class="olympiad" style="border-color: black;">
-              <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName }}</a>: {{ link.olympiadDescription }}
+          {% if link.olympiadCountry == country %}
+          <p class="olympiad" style="border-color: {{ color }};">
+              <a href="{{ url_for('getOlympiad',country_id=link.olympiadCountry,olympiad_id=link.olympiadCode) }}">{{ link.olympiadName }}</a> <span class="tltip"><img style="vertical-align: middle;width:12px;"
+         src="{{ url_for('static',filename='blue_question_mark.png') }}">
+    <span class="tltiptext"><b>{{link.olympiadCountry}}.{{link.olympiadCode}}:</b> {{ link.olympiadDescription }}</span></span>:
+              {% for (event,isComplete) in link.olympiadEvents %}
+              <a href="{{ url_for('getGrades',event=event,grade=-1,country=link.olympiadCountry,olympiad=link.olympiadCode) }}">
+                  {% if isComplete %}<b>{{ event }}</b>{% else %}{{ event }}{% endif %}</a>{%- if not loop.last %};{% endif %}
+              {% endfor %}
           </p>
           {% endif %}
           {% endfor %}
-          </div>
+
+          {% endfor %}
+      </div>
     <hr style="width:90%"/>
     <dl>
       <dt>BBK2012:
