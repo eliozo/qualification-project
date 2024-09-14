@@ -465,24 +465,26 @@ SELECT ?skillID ?prefLabel ?num ?skillName WHERE {{
     x = requests.post(url, myobj, head)
     return x.text
 
-def getSPARQLOlympiads():
+def getSPARQLOlympiads(lang):
     url = FUSEKI_URL
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT DISTINCT ?olympiadCountry ?olympiad ?olympiadCode ?olympiadName ?olympiadDescription WHERE { 
+SELECT DISTINCT ?olympiadCountry ?olympiad ?olympiadCode ?olympiadName ?olympiadDescription WHERE {{ 
   ?olympiad eliozo:olympiadName ?olympiadName ;
             eliozo:olympiadDescription ?olympiadDescription ;
             eliozo:olympiadCode ?olympiadCode .
-  OPTIONAL {
+            FILTER (lang(?olympiadDescription) = "{language}")
+            FILTER (lang(?olympiadName) = "{language}")
+  OPTIONAL {{
     ?olympiad eliozo:olympiadCountry ?olympiadCountry .
-  }
-} ORDER BY ?olympiadCountry ?olympiadName
+  }}
+}} ORDER BY ?olympiadCountry ?olympiadName
 """
 
-    myobj = { 'query': queryTemplate }
+    myobj = { 'query': queryTemplate.format(language=lang) }
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
     return x.text
@@ -1359,7 +1361,8 @@ def create_app(test_config=None):
 
     @app.route('/archive', methods=['GET', 'POST'])
     def getArchive():
-        olympiads = json.loads(getSPARQLOlympiads())
+        lang = session.get('lang', 'lv')
+        olympiads = json.loads(getSPARQLOlympiads(lang))
         olympiadData = []
         for rr in olympiads['results']['bindings']:
             olympiadName = rr['olympiadName']['value']
@@ -1368,9 +1371,9 @@ def create_app(test_config=None):
 
             country = ''
             if 'olympiadCountry' in rr:
-                olympiadCountry = rr['olympiadCountry']['value']
-                if olympiadCountry.find('#') >= 0:
-                    country = olympiadCountry[olympiadCountry.find('#')+1:]
+                country = rr['olympiadCountry']['value']
+                #if olympiadCountry.find('#') >= 0:
+                #    country = olympiadCountry[olympiadCountry.find('#')+1:]
 
             olympiadEvents = []
             eventData = json.loads(getSPARQLOlympiadTimeIDs(country, olympiadCode))

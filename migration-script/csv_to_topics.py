@@ -109,7 +109,7 @@ def produceCSVtoRDF(in_file, out_file): # Pārveido CSV failu par RDF failu
     g.bind("eliozo", eliozo_ns)
 
     # Atver JSON failu
-    f = open(in_file)
+    # f = open(in_file)
 
     topicDictionary = dict()
     topicDictionary['TOP'] = []

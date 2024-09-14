@@ -1,0 +1,207 @@
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+eliozo:EE.LHT a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "LHT" ;
+    eliozo:olympiadCountry "EE" ;
+    eliozo:olympiadDescription "Igaunijas atklātā olimpiāde (Lahtised matemaatikavõistlused)"@en,
+        "Estijos atviros matematikos varžybos (Lahtised matemaatikavõistlused)"@lt,
+        "Igaunijas atklātā olimpiāde (Lahtised matemaatikavõistlused)"@lv ;
+    eliozo:olympiadID "EE.LHT" ;
+    eliozo:olympiadName "Estonian Open Mathematical Competition"@en,
+        "Estijos atviros matematikos varžybos"@lt,
+        "Igaunijas atklātās matemātikas sacensības"@lv .
+
+eliozo:EE.LO a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "LO" ;
+    eliozo:olympiadCountry "EE" ;
+    eliozo:olympiadDescription "Estonian Mathematical Olympiad, Final Round (Matemaatikaolümpiaadi lõppvoorud)"@en,
+        "Estijos matematikos olimpiados finalinis turas (Matemaatikaolümpiaadi lõppvoorud)"@lt,
+        "Igaunijas matemātikas olimpiādes noslēguma kārta (Matemaatikaolümpiaadi lõppvoorud)"@lv ;
+    eliozo:olympiadID "EE.LO" ;
+    eliozo:olympiadName "Estonian Mathematical Olympiad, Final Round"@en,
+        "Estijos matematikos olimpiados finalinis turas"@lt,
+        "Igaunijas olimpiādes noslēguma kārta"@lv .
+
+eliozo:EE.PK a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "PK" ;
+    eliozo:olympiadCountry "EE" ;
+    eliozo:olympiadDescription "Estonian Mathematical Olympiad, Regional Round (Matemaatikaolümpiaadi piirkonnavoorud)"@en,
+        "Estijos matematikos olimpiados rajoniniai turai (Matemaatikaolümpiaadi piirkonnavoorud)"@lt,
+        "Igaunijas matemātikas olimpiādes reģionu kārta (Matemaatikaolümpiaadi piirkonnavoorud)"@lv ;
+    eliozo:olympiadID "EE.PK" ;
+    eliozo:olympiadName "Estonian Mathematical Olympiad, Regional Round"@en,
+        "Estijos matematikos olimpiados rajoniniai turai"@lt,
+        "Igaunijas matemātikas olimpiādes reģionu kārta"@lv .
+
+eliozo:EE.TST a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "TST" ;
+    eliozo:olympiadCountry "EE" ;
+    eliozo:olympiadDescription "Estonian Team Selection Test (Eesti IMO-võistkonna valikvõistlused)"@en,
+        "Estijos atrankos varžybos (Eesti IMO-võistkonna valikvõistlused)"@lt,
+        "Igaunijas atlases sacensības (Eesti IMO-võistkonna valikvõistlused)"@lv ;
+    eliozo:olympiadID "EE.TST" ;
+    eliozo:olympiadName "Estonian Team Selection Test "@en,
+        "Estijos atrankos varžybos"@lt,
+        "Igaunijas atlases sacensības"@lv .
+
+eliozo:IMOSHL a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "IMOSHL" ;
+    eliozo:olympiadCountry "WW" ;
+    eliozo:olympiadDescription "International Mathematical Olympiad (IMO), Shortlist"@en,
+        "Tarptautinė matematikos olimpiada (IMO), trumpasis sąrašas"@lt,
+        "Starptautiskā matemātikas olimpiāde (IMO), īsais saraksts"@lv ;
+    eliozo:olympiadID "IMOSHL" ;
+    eliozo:olympiadName "International Mathematical Olympiad (IMO), Shortlist"@en,
+        "Tarptautinė matematikos olimpiada (IMO), trumpasis sąrašas"@lt,
+        "Starptautiskā matemātikas olimpiāde (IMO), īsais saraksts"@lv .
+
+eliozo:LT.LDK a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "LDK" ;
+    eliozo:olympiadCountry "LT" ;
+    eliozo:olympiadDescription "Mathematical Competition in the Honor of Grand Duchy of Lithuania (Matematinės varžybos Lietuvos Didžiosios Kunigaikštystės garbei)"@en,
+        "Matematinės varžybos Lietuvos Didžiosios Kunigaikštystės garbei"@lt,
+        "Matemātikas sacensības Lietuvas Lielkņazistes godam (Matematinės varžybos Lietuvos Didžiosios Kunigaikštystės garbei)"@lv ;
+    eliozo:olympiadID "LT.LDK" ;
+    eliozo:olympiadName "Mathematical Competition in Honor of Grand Duchy of Lithuania"@en,
+        "Matematinės varžybos Lietuvos Didžiosios Kunigaikštystės garbei"@lt,
+        "Matemātikas sacensības Lietuvas Lielkņazistes godam"@lv .
+
+eliozo:LT.LJMO a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "LJKMO" ;
+    eliozo:olympiadCountry "LT" ;
+    eliozo:olympiadDescription "Lithuanian Junior Mathematical Olympiad (Lietuvos jaunesniųjų klasių matematikos olimpiada)"@en,
+        "Lietuvos jaunesniųjų klasių matematikos olimpiada (Lietuvos 5–6 bei 7–8 klasių mokinių matematikos olimpiada)"@lt,
+        "Lietuvas jaunāko klašu matemātikas olimpiāde (Lietuvos jaunesniųjų klasių matematikos olimpiada)"@lv ;
+    eliozo:olympiadID "LT.LJMO" ;
+    eliozo:olympiadName "Lithuanian Junior Mathematical Olympiad (Lietuvos jaunesniųjų klasių matematikos olimpiada)"@en,
+        "Lietuvos jaunesniųjų klasių matematikos olimpiada (Lietuvos 5–6 bei 7–8 klasių mokinių matematikos olimpiada)"@lt,
+        "Lietuvas jaunāko klašu matemātikas olimpiāde (Lietuvos jaunesniųjų klasių matematikos olimpiada)"@lv .
+
+eliozo:LT.LKMMO a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "LKMMO" ;
+    eliozo:olympiadCountry "LT" ;
+    eliozo:olympiadDescription "Lithuanian School Team Mathematical Olympiad to Win J.Kubilius Cup (Lietuvos komandinė mokinių matematikos olimpiada prof. Jono Kubiliaus taurei laimėti)"@en,
+        "Lietuvos komandinė mokinių matematikos olimpiada prof. Jono Kubiliaus taurei laimėti"@lt,
+        "Lietuvas skolēnu komandu matemātikas olimpiāde par J.Kubiļus kausu (Lietuvos komandinė mokinių matematikos olimpiada prof. Jono Kubiliaus taurei laimėti)"@lv ;
+    eliozo:olympiadID "LT.LKMMO" ;
+    eliozo:olympiadName "Lithuanian School Team Mathematical Olympiad"@en,
+        "Lietuvos komandinė mokinių matematikos olimpiada"@lt,
+        "Lietuvas skolēnu komandu matemātikas olimpiāde"@lv .
+
+eliozo:LT.LMMO a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "LMMO" ;
+    eliozo:olympiadCountry "LT" ;
+    eliozo:olympiadDescription "Lithuanian School Mathematical Olympiad (Lietuvos mokinių matematikos olimpiada)"@en,
+        "Lietuvos mokinių matematikos olimpiada"@lt,
+        "Lietuvas skolēnu matemātikas olimpiāde (Lietuvos mokinių matematikos olimpiada)"@lv ;
+    eliozo:olympiadID "LT.LMMO" ;
+    eliozo:olympiadName "Lithuanian School Mathematical Olympiad"@en,
+        "Lietuvos mokinių matematikos olimpiada"@lt,
+        "Lietuvas skolēnu matemātikas olimpiāde"@lv .
+
+eliozo:LT.SAV a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "SAV" ;
+    eliozo:olympiadCountry "LT" ;
+    eliozo:olympiadDescription "Lithuanian School Mathematical Olympiad, Municipal Round (Lietuvos mokinių matematikos olimpiados savivaldybių etapas)"@en,
+        "Lietuvos mokinių matematikos olimpiados savivaldybių etapas"@lt,
+        "Lietuvas skolēnu matemātikas olimpiādes pašvaldību kārta (Lietuvos mokinių matematikos olimpiados savivaldybių etapas)"@lv ;
+    eliozo:olympiadID "LT.SAV" ;
+    eliozo:olympiadName "Lithuanian School Mathematical Olympiad, Municipal Round"@en,
+        "Lietuvos mokinių matematikos olimpiados savivaldybių etapas"@lt,
+        "Lietuvas skolēnu matemātikas olimpiādes pašvaldību kārta"@lv .
+
+eliozo:LT.TST a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "TST" ;
+    eliozo:olympiadCountry "LT" ;
+    eliozo:olympiadDescription "Lithuanian Team Selection Test (Atrankos į pasaulinę (IMO) ir Vidurio Europos (MEMO) olimpiadas)"@en,
+        "Lietuvos atrankos į pasaulinę (IMO) ir Vidurio Europos (MEMO) olimpiadas"@lt,
+        "Lietuvas atlases sacensības (Atrankos į pasaulinę (IMO) ir Vidurio Europos (MEMO) olimpiadas)"@lv ;
+    eliozo:olympiadID "LT.TST" ;
+    eliozo:olympiadName "Lithuanian Team Selection Test"@en,
+        "Lietuvos atrankos į IMO ir MEMO olimpiadas"@lt,
+        "Lietuvas atlases sacensības"@lv .
+
+eliozo:LT.VUMIF a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "VUMIF" ;
+    eliozo:olympiadCountry "LT" ;
+    eliozo:olympiadDescription "Mathematical Olympiad of Vilnius University Mathematics and Informatics Department (Vilniaus Universiteto Matematikos ir Informatikos Fakulteto matematikos olimpiada)"@en,
+        "Vilniaus Universiteto Matematikos ir Informatikos Fakulteto matematikos olimpiada"@lt,
+        "Viļņas Universitātes Matemātikas un informātikas fakultātes matemātikas olimpiāde (Vilniaus Universiteto Matematikos ir Informatikos Fakulteto matematikos olimpiada)"@lv ;
+    eliozo:olympiadID "LT.VUMIF" ;
+    eliozo:olympiadName "Mathematical Olympiad of Vilnius University Mathematics and Informatics Department"@en,
+        "Vilniaus Universiteto Matematikos ir Informatikos Fakulteto matematikos olimpiada"@lt,
+        "Viļņas Universitātes Matemātikas un informātikas fakultātes matemātikas olimpiāde"@lv .
+
+eliozo:LV.AMO a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "AMO" ;
+    eliozo:olympiadCountry "LV" ;
+    eliozo:olympiadDescription "Latvian Open Mathematical Olympiad (Atklātā matemātikas olimpiāde)"@en,
+        "Latvijos atviroji matematikos olimpiada (Atklātā matemātikas olimpiāde)"@lt,
+        "Atklātā matemātikas olimpiāde"@lv ;
+    eliozo:olympiadID "LV.AMO" ;
+    eliozo:olympiadName "Latvian Open Mathematical Olympiad"@en,
+        "Latvijos atviroji matematikos olimpiada"@lt,
+        "Latvijas Atklātā matemātikas olimpiāde"@lv .
+
+eliozo:LV.NOL a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadCountry "LV" ;
+    eliozo:olympiadDescription "Latvian Municipal Olympiad (Novada olimpiāde)"@en,
+        "Latvijos savivaldybių olimpiada (Novada olimpiāde)"@lt,
+        "Novada olimpiāde (Latvijas matemātikas olimpiādes 2. posms)"@lv ;
+    eliozo:olympiadID "LV.NOL" ;
+    eliozo:olympiadName "Latvian Municipal Olympiad"@en,
+        "Latvijos savivaldybių olimpiada"@lt,
+        "Novada olimpiāde"@lv .
+
+eliozo:LV.SOL a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "SOL" ;
+    eliozo:olympiadCountry "LV" ;
+    eliozo:olympiadDescription "Latvian Preliminary Olympiad (Sagatavošanās olimpiāde)"@en,
+        "Latvijos pasiruošimo olimpiada (Sagatavošanās olimpiāde)"@lt,
+        "Latvijas sagatavošanās olimpiāde (Valsts matemātikas olimpiādes 1. posms)"@lv ;
+    eliozo:olympiadID "LV.SOL" ;
+    eliozo:olympiadName "Latvian Preliminary Olympiad"@en,
+        "Latvijos pasiruošimo olimpiada"@lt,
+        "Latvijas sagatavošanās olimpiāde"@lv .
+
+eliozo:LV.TST a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "TST" ;
+    eliozo:olympiadCountry "LV" ;
+    eliozo:olympiadDescription "Latvian Team Selection Test (Papildsacensības par vietu izlasē)"@en,
+        "Latvijos atrankos varžybos (Papildsacensības par vietu izlasē)"@lt,
+        "Papildsacensības par vietu izlasē"@lv ;
+    eliozo:olympiadID "LV.TST" ;
+    eliozo:olympiadName "Latvian Team Selection Test"@en,
+        "Latvijos atrankos varžybos"@lt,
+        "Latvijas papildsacensības par vietu izlasē"@lv .
+
+eliozo:LV.VOL a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "VOL" ;
+    eliozo:olympiadCountry "LV" ;
+    eliozo:olympiadDescription "Latvian State Olympiad (Valsts olimpiāde)"@en,
+        "Latvijos valstybinė olimpiada (Valsts olimpiāde)"@lt,
+        "Latvijas valsts olimpiāde (Latvijas matemātikas olimpiādes 3. posms)"@lv ;
+    eliozo:olympiadID "LV.VOL" ;
+    eliozo:olympiadName "Latvian State Olympiad"@en,
+        "Latvijos valstybinė olimpiada"@lt,
+        "Latvijas valsts olimpiāde"@lv .
+
