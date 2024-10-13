@@ -286,7 +286,7 @@ def get_olympiad_type(title):
         result = 'National'
     elif prefix2 in ['EE.TST', 'LT.TST', 'LV.TST']:
         result = 'TeamSelection'
-    elif prefix2.startswith('IMO_SHL'):
+    elif prefix2.startswith('WW'):
         result = 'International'
     elif prefix2.startswith('BBK2012'):
         result = 'Book'
@@ -299,7 +299,7 @@ def get_suggested_grade(title):
         return [int(suffix2)]
     if title.startswith('BBK2012'):
         return [9,10,11,12]
-    if title.startswith('IMO_SHL'):
+    if title.startswith('WW'):
         return [10,11,12]
     if title.startswith('EE.TST') or title.startswith('LT.TST') or title.startswith('LV.TST'):
         return [10,11,12]
@@ -322,9 +322,9 @@ def md_to_rdf(md_file_path, ttl_file_path):
     g.bind("skos", SKOS)
     g.bind("eliozo", ELIOZO)
 
-    olympiad_problem_id = re.compile(r"(EE|LV|LT)\.(\w+)\.(\d{4}[A-Z]*)\.([0-9_]+)\.(\d+)") # LV.AO.2000.7.1
+    olympiad_problem_id = re.compile(r"(EE|LV|LT|WW)\.(\w+)\.(\d{4}[A-Z]*)\.([0-9_]+)\.(\d+)") # LV.AO.2000.7.1
     book_problem_id = re.compile(r"([A-Z0-9]+)\.(.*)\.(\d+)")  # BBK2012.P1.1 or BBK2012.P1.E2.1 or similar
-    inter_problem_id = re.compile(r"(\w+)\.(\d{4}[A-Z]*)\.([A-Z])?(\d+)")   # IMO_SHL.2022.A2
+    inter_problem_id = re.compile(r"(\w+)\.(\d{4}[A-Z]*)\.([A-Z])?(\d+)")   # not in use.
 
     for i, (title,section) in enumerate(sections):
         title = title.strip()

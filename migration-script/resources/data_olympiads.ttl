@@ -49,18 +49,6 @@ eliozo:EE.TST a eliozo:Olympiad,
         "Estijos atrankos varžybos"@lt,
         "Igaunijas atlases sacensības"@lv .
 
-eliozo:IMOSHL a eliozo:Olympiad,
-        owl:NamedIndividual ;
-    eliozo:olympiadCode "IMOSHL" ;
-    eliozo:olympiadCountry "WW" ;
-    eliozo:olympiadDescription "International Mathematical Olympiad (IMO), Shortlist"@en,
-        "Tarptautinė matematikos olimpiada (IMO), trumpasis sąrašas"@lt,
-        "Starptautiskā matemātikas olimpiāde (IMO), īsais saraksts"@lv ;
-    eliozo:olympiadID "IMOSHL" ;
-    eliozo:olympiadName "International Mathematical Olympiad (IMO), Shortlist"@en,
-        "Tarptautinė matematikos olimpiada (IMO), trumpasis sąrašas"@lt,
-        "Starptautiskā matemātikas olimpiāde (IMO), īsais saraksts"@lv .
-
 eliozo:LT.LDK a eliozo:Olympiad,
         owl:NamedIndividual ;
     eliozo:olympiadCode "LDK" ;
@@ -75,15 +63,15 @@ eliozo:LT.LDK a eliozo:Olympiad,
 
 eliozo:LT.LJMO a eliozo:Olympiad,
         owl:NamedIndividual ;
-    eliozo:olympiadCode "LJKMO" ;
+    eliozo:olympiadCode "LJMO" ;
     eliozo:olympiadCountry "LT" ;
     eliozo:olympiadDescription "Lithuanian Junior Mathematical Olympiad (Lietuvos jaunesniųjų klasių matematikos olimpiada)"@en,
         "Lietuvos jaunesniųjų klasių matematikos olimpiada (Lietuvos 5–6 bei 7–8 klasių mokinių matematikos olimpiada)"@lt,
         "Lietuvas jaunāko klašu matemātikas olimpiāde (Lietuvos jaunesniųjų klasių matematikos olimpiada)"@lv ;
     eliozo:olympiadID "LT.LJMO" ;
-    eliozo:olympiadName "Lithuanian Junior Mathematical Olympiad (Lietuvos jaunesniųjų klasių matematikos olimpiada)"@en,
-        "Lietuvos jaunesniųjų klasių matematikos olimpiada (Lietuvos 5–6 bei 7–8 klasių mokinių matematikos olimpiada)"@lt,
-        "Lietuvas jaunāko klašu matemātikas olimpiāde (Lietuvos jaunesniųjų klasių matematikos olimpiada)"@lv .
+    eliozo:olympiadName "Lithuanian Junior Mathematical Olympiad"@en,
+        "Lietuvos jaunesniųjų klasių matematikos olimpiada"@lt,
+        "Lietuvas jaunāko klašu matemātikas olimpiāde"@lv .
 
 eliozo:LT.LKMMO a eliozo:Olympiad,
         owl:NamedIndividual ;
@@ -141,9 +129,9 @@ eliozo:LT.VUMIF a eliozo:Olympiad,
         "Vilniaus Universiteto Matematikos ir Informatikos Fakulteto matematikos olimpiada"@lt,
         "Viļņas Universitātes Matemātikas un informātikas fakultātes matemātikas olimpiāde (Vilniaus Universiteto Matematikos ir Informatikos Fakulteto matematikos olimpiada)"@lv ;
     eliozo:olympiadID "LT.VUMIF" ;
-    eliozo:olympiadName "Mathematical Olympiad of Vilnius University Mathematics and Informatics Department"@en,
-        "Vilniaus Universiteto Matematikos ir Informatikos Fakulteto matematikos olimpiada"@lt,
-        "Viļņas Universitātes Matemātikas un informātikas fakultātes matemātikas olimpiāde"@lv .
+    eliozo:olympiadName "Mathematical Olympiad of Vilnius University MIF"@en,
+        "Vilniaus Universiteto MIF matematikos olimpiada"@lt,
+        "Viļņas Universitātes MIF matemātikas olimpiāde"@lv .
 
 eliozo:LV.AMO a eliozo:Olympiad,
         owl:NamedIndividual ;
@@ -204,4 +192,16 @@ eliozo:LV.VOL a eliozo:Olympiad,
     eliozo:olympiadName "Latvian State Olympiad"@en,
         "Latvijos valstybinė olimpiada"@lt,
         "Latvijas valsts olimpiāde"@lv .
+
+eliozo:WW.IMOSHL a eliozo:Olympiad,
+        owl:NamedIndividual ;
+    eliozo:olympiadCode "IMOSHL" ;
+    eliozo:olympiadCountry "WW" ;
+    eliozo:olympiadDescription "International Mathematical Olympiad (IMO), Shortlist"@en,
+        "Tarptautinė matematikos olimpiada (IMO), trumpasis sąrašas"@lt,
+        "Starptautiskā matemātikas olimpiāde (IMO), īsais saraksts"@lv ;
+    eliozo:olympiadID "WW.IMOSHL" ;
+    eliozo:olympiadName "International Mathematical Olympiad (IMO), Shortlist"@en,
+        "Tarptautinė matematikos olimpiada (IMO), trumpasis sąrašas"@lt,
+        "Starptautiskā matemātikas olimpiāde (IMO), īsais saraksts"@lv .
 
