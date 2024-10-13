@@ -276,11 +276,13 @@ def get_suffix(arg):
 # [('Contest','Konkurss'), ('Book','Grāmata'), ('RegionalOrOpen', 'Reģionu vai atklātā'),
 # ('National', 'Nacionālā'), ('TeamSelection', 'Papildsacensības'), ('International', 'Starptautiska')] %}
 # Return olympiadType - a single string value
+# TODO: This should be taken from data_olympiads.ttl
 def get_olympiad_type(title):
     result = 'Contest'
     title_list = title.split(".")
     prefix2 = ".".join(title_list[0:2])
-    if prefix2 in ['EE.LVS', 'EE.LVT', 'EE.PK', 'EE.PKTEST', 'LT.RAJ', 'LT.VUMIF', 'LV.SOL', 'LV.NOL', 'LV.AMO']:
+    if prefix2 in ['EE.LVS', 'EE.LVT', 'EE.PK', 'EE.PKTEST', 
+                   'LT.SAV', 'LT.LJMO', 'LT.VUMIF', 'LV.SOL', 'LV.NOL', 'LV.AMO']:
         result = 'RegionalOrOpen'
     elif prefix2 in ['EE.LO', 'LT.LMMO', 'LT.LKMMO', 'LV.VOL']:
         result = 'National'
@@ -322,9 +324,9 @@ def md_to_rdf(md_file_path, ttl_file_path):
     g.bind("skos", SKOS)
     g.bind("eliozo", ELIOZO)
 
-    olympiad_problem_id = re.compile(r"(EE|LV|LT|WW)\.(\w+)\.(\d{4}[A-Z]*)\.([0-9_]+)\.(\d+)") # LV.AO.2000.7.1
+    olympiad_problem_id = re.compile(r"(EE|LV|LT)\.(\w+)\.(\d{4}[A-Z]*)\.([0-9_]+)\.([A-Z])?(\d+)") # LV.AO.2000.7.1
     book_problem_id = re.compile(r"([A-Z0-9]+)\.(.*)\.(\d+)")  # BBK2012.P1.1 or BBK2012.P1.E2.1 or similar
-    inter_problem_id = re.compile(r"(\w+)\.(\d{4}[A-Z]*)\.([A-Z])?(\d+)")   # not in use.
+    inter_problem_id = re.compile(r"(WW)\.(\w+)\.(\d{4}[A-Z]*)\.([A-Z])?(\d+)") # WW.IMOSHL.2022.A1
 
     for i, (title,section) in enumerate(sections):
         title = title.strip()
@@ -334,9 +336,9 @@ def md_to_rdf(md_file_path, ttl_file_path):
         olympiadType = get_olympiad_type(title)
         problem_node = add_new_problem(g, title)
         match_id = olympiad_problem_id.match(title)
+
         book_match_id = book_problem_id.match(title)
         inter_match_id = inter_problem_id.match(title)
-
 
         if match_id:
             country = match_id.group(1)
@@ -375,21 +377,22 @@ def md_to_rdf(md_file_path, ttl_file_path):
             add_problem_literal_prop(g, problem_node, 'problemID', title)
 
         elif inter_match_id:
-            olympiad = inter_match_id.group(1)
-            timeID = inter_match_id.group(2)
+            country = match_id.group(1)
+            olympiad = inter_match_id.group(2)
+            timeID = inter_match_id.group(3)
             if len(timeID) > 4:
                 year = int(timeID[0:4])
             else:
                 year = int(timeID)
             grade = 12
-            problem_type = inter_match_id.group(3)
-            problem_number = inter_match_id.group(4)
+            problem_type = inter_match_id.group(4)
+            problem_number = inter_match_id.group(5)
             if problem_type:
                 suffix = suffix + "." + problem_type
-
+           
+            add_problem_literal_prop(g, problem_node, 'country', country)
             add_problem_literal_prop(g, problem_node, 'olympiad', olympiad)
             add_problem_literal_prop(g, problem_node, 'olympiadCode', olympiad)
-            add_problem_literal_prop(g, problem_node, 'country', '')
             add_problem_literal_prop(g, problem_node, 'event', olympiad + '.' + timeID)
             add_problem_integer_prop(g, problem_node, 'problemYear', year)
             add_problem_literal_prop(g, problem_node, 'problemTimeID', timeID)

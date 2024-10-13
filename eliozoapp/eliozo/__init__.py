@@ -1470,7 +1470,7 @@ def create_app(test_config=None):
     @app.route('/problem_counts', methods=['GET', 'POST'])
     def getProblemCounts():
         olympiads = ['LV.NOL', 'LV.VOL', 'LV.AMO', 'LV.TST', 
-                     'LT.LKMO', 'LT.SAV', 'LT.LMMO', 'LT.LKMMO', 'LT.LDK', 'LT.VUMIF', 'LT.TST',
+                     'LT.LJMO', 'LT.SAV', 'LT.LMMO', 'LT.LKMMO', 'LT.LDK', 'LT.VUMIF', 'LT.TST',
                      'EE.PK', 'EE.LO', 'EE.LHT', 'EE.TST']
         
         x = getSPARQLProblemCounts()
