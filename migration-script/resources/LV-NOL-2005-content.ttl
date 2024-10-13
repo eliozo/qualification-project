@@ -1,0 +1,2106 @@
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+eliozo:LV.NOL.2005.10.1 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:genre "procedure" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LV.NOL.2005.10.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.10.1.SUB1 ;
+    eliozo:problemText """Sākumā uz tāfeles uzrakstīti naturāli skaitļi no $1$ līdz $10$, katrs vienu 
+reizi. Ar vienu gājienu atļauts izvēlēties jebkuru uz tāfeles uzrakstītu 
+skaitļu grupu, nodzēst to un vietā uzrakstīt atlikumu, kādu dod nodzēsto 
+skaitļu summa, dalot ar $3$. Pēc vairākiem šādiem gājieniem uz tāfeles palika 
+divi skaitļi; viens no tiem bija $8$. Kāds varēja būt otrs skaitlis?"""@lv ;
+    eliozo:problemTextHtml """<p>Sākumā uz tāfeles uzrakstīti naturāli skaitļi no $1$ līdz $10$, katrs vienu 
+reizi. Ar vienu gājienu atļauts izvēlēties jebkuru uz tāfeles uzrakstītu 
+skaitļu grupu, nodzēst to un vietā uzrakstīt atlikumu, kādu dod nodzēsto 
+skaitļu summa, dalot ar $3$. Pēc vairākiem šādiem gājieniem uz tāfeles palika 
+divi skaitļi; viens no tiem bija $8$. Kāds varēja būt otrs skaitlis?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.NOL.2005.10" ;
+    eliozo:suggestedGrade 10 .
+
+eliozo:LV.NOL.2005.10.2 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LV.NOL.2005.10.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.10.2.SUB1 ;
+    eliozo:problemText """Apzīmēsim $f(x)=x^{2}+px+q$. Pieņemsim, ka $a,\\ b,\\ c,\\ d,\\ e$ - kāda piecstūra
+malu garumi. Dots, ka $f(a)=f(b+c+d+e)$.
+
+Vai noteikti jāizpildās vienādībām
+
+$$f(a+b)=f(c+d+e),\\ f(a+b+c)=f(d+e),\\ f(e)=f(a+b+c+d)?$$"""@lv ;
+    eliozo:problemTextHtml """<p>Apzīmēsim $f(x)=x^{2}+px+q$. Pieņemsim, ka $a,\\ b,\\ c,\\ d,\\ e$ - kāda piecstūra
+malu garumi. Dots, ka $f(a)=f(b+c+d+e)$.</p>
+<p>Vai noteikti jāizpildās vienādībām</p>
+<p>$$f(a+b)=f(c+d+e),\\ f(a+b+c)=f(d+e),\\ f(e)=f(a+b+c+d)?$$</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.10" ;
+    eliozo:suggestedGrade 10 .
+
+eliozo:LV.NOL.2005.10.3 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LV.NOL.2005.10.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.10.3.SUB1 ;
+    eliozo:problemText """Turnīrā piedalās $n$ tenisisti $(n \\geq 3)$, katrs ar katru citu spēlē tieši 
+vienu reizi. Tenisā neizšķirtu nav. Zināms, ka katrs turnīra dalībnieks 
+izcīnīja vismaz vienu uzvaru. Pierādīt: pēc turnīra beigām var atrast tādus 
+trīs dalībniekus un apzīmēt tos ar $A,\\ B$ un $C$, ka $A$ uzvarējis pret 
+$B,\\ B$ - pret $C$, bet $C$ - pret $A$."""@lv ;
+    eliozo:problemTextHtml """<p>Turnīrā piedalās $n$ tenisisti $(n \\geq 3)$, katrs ar katru citu spēlē tieši 
+vienu reizi. Tenisā neizšķirtu nav. Zināms, ka katrs turnīra dalībnieks 
+izcīnīja vismaz vienu uzvaru. Pierādīt: pēc turnīra beigām var atrast tādus 
+trīs dalībniekus un apzīmēt tos ar $A,\\ B$ un $C$, ka $A$ uzvarējis pret 
+$B,\\ B$ - pret $C$, bet $C$ - pret $A$.</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 3 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.10" ;
+    eliozo:suggestedGrade 10 .
+
+eliozo:LV.NOL.2005.10.4 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LV.NOL.2005.10.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.10.4.SUB1 ;
+    eliozo:problemText """Uz izliekta četrstūra $ABCD$ diagonāļu pagarinājumiem ņemti tādi punkti $M$ un 
+$N$, ka $AM \\parallel DC$ un $DN \\parallel AB$ (skat. 2.zīm.). Pierādīt, ka 
+$BC \\parallel MN$.
+
+![](LV.NOL.2005.10.4.png)"""@lv ;
+    eliozo:problemTextHtml """<p>Uz izliekta četrstūra $ABCD$ diagonāļu pagarinājumiem ņemti tādi punkti $M$ un 
+$N$, ka $AM \\parallel DC$ un $DN \\parallel AB$ (skat. 2.zīm.). Pierādīt, ka 
+$BC \\parallel MN$.</p>
+<p><img alt="" src="LV.NOL.2005.10.4.png" /></p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 4 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.10" ;
+    eliozo:suggestedGrade 10 .
+
+eliozo:LV.NOL.2005.10.5 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "Comb" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 10 ;
+    eliozo:problemID "LV.NOL.2005.10.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.10.5.SUB1 ;
+    eliozo:problemText """Uz papīra lapas uzrakstīti vairāki dažādi naturāli skaitļi; neviens no tiem 
+nepārsniedz $100$. Zināms, ka:
+
+1. $1$ un $100$ ir uzrakstīti uz lapas,
+2. ja $n$ uzrakstīts uz lapas un $n \\neq A$, tad var atrast vai nu tādu uz 
+   lapas uzrakstītu skaitli $x$ , ka $n=2x$, vai divus tādus uz lapas 
+   uzrakstītus skaitļus $x$ un $y$, ka $n=x+y$. 
+   
+Kāds mazākais daudzums skaitļu var būt uzrakstīti uz lapas?"""@lv ;
+    eliozo:problemTextHtml """<p>Uz papīra lapas uzrakstīti vairāki dažādi naturāli skaitļi; neviens no tiem 
+nepārsniedz $100$. Zināms, ka:</p>
+<ol>
+<li>$1$ un $100$ ir uzrakstīti uz lapas,</li>
+<li>ja $n$ uzrakstīts uz lapas un $n \\neq A$, tad var atrast vai nu tādu uz 
+   lapas uzrakstītu skaitli $x$ , ka $n=2x$, vai divus tādus uz lapas 
+   uzrakstītus skaitļus $x$ un $y$, ka $n=x+y$. </li>
+</ol>
+<p>Kāds mazākais daudzums skaitļu var būt uzrakstīti uz lapas?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "FindOptimal" ;
+    eliozo:suffix "LV.NOL.2005.10" ;
+    eliozo:suggestedGrade 10 .
+
+eliozo:LV.NOL.2005.11.1 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "Alg" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LV.NOL.2005.11.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.11.1.SUB1 ;
+    eliozo:problemText "Aprēķināt $\\sqrt{2005 \\cdot 2003 \\cdot 1999 \\cdot 1997+36}$."@lv ;
+    eliozo:problemTextHtml "<p>Aprēķināt $\\sqrt{2005 \\cdot 2003 \\cdot 1999 \\cdot 1997+36}$.</p>"@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindAll" ;
+    eliozo:suffix "LV.NOL.2005.11" ;
+    eliozo:suggestedGrade 11 .
+
+eliozo:LV.NOL.2005.11.2 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LV.NOL.2005.11.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.11.2.SUB1 ;
+    eliozo:problemText """Aplūkosim visus kvadrātvienādojumus ar reāliem koeficientiem $x^{2}+px+q=0$, 
+kam ir vismaz viena reāla sakne un kam $|p| \\leq 1$ un $|q| \\leq 1$. Kādu 
+apgabalu uz skaitļu ass aizpilda visu šo kvadrātvienādojumu visas saknes?"""@lv ;
+    eliozo:problemTextHtml """<p>Aplūkosim visus kvadrātvienādojumus ar reāliem koeficientiem $x^{2}+px+q=0$, 
+kam ir vismaz viena reāla sakne un kam $|p| \\leq 1$ un $|q| \\leq 1$. Kādu 
+apgabalu uz skaitļu ass aizpilda visu šo kvadrātvienādojumu visas saknes?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.11" ;
+    eliozo:suggestedGrade 11 .
+
+eliozo:LV.NOL.2005.11.3 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LV.NOL.2005.11.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.11.3.SUB1 ;
+    eliozo:problemText """Naturālu skaitli $n$ sauksim par līdzsvarotu, ja tā visus naturālos dalītājus 
+(ieskaitot $1$ un pašu $n$) var sadalīt trīs daļās ar vienādām summām.
+
+**(A)** atrast kaut vienu līdzsvarotu skaitli,  
+**(B)** pierādīt, ka līdzsvarotu skaitļu ir bezgalīgi daudz."""@lv ;
+    eliozo:problemTextHtml """<p>Naturālu skaitli $n$ sauksim par līdzsvarotu, ja tā visus naturālos dalītājus 
+(ieskaitot $1$ un pašu $n$) var sadalīt trīs daļās ar vienādām summām.</p>
+<p><strong>(A)</strong> atrast kaut vienu līdzsvarotu skaitli,<br />
+<strong>(B)</strong> pierādīt, ka līdzsvarotu skaitļu ir bezgalīgi daudz.</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 3 ;
+    eliozo:questionType "FindExample",
+        "Prove" ;
+    eliozo:suffix "LV.NOL.2005.11" ;
+    eliozo:suggestedGrade 11 .
+
+eliozo:LV.NOL.2005.11.4 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LV.NOL.2005.11.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.11.4.SUB1 ;
+    eliozo:problemText """Četrstūris $ABCD$ ievilkts riņķa līnijā. Zināms, ka 
+$\\sphericalangle ABC=60^{\\circ}$ un $BC=CD$. Pierādīt, ka $AB=BC+DA$."""@lv ;
+    eliozo:problemTextHtml """<p>Četrstūris $ABCD$ ievilkts riņķa līnijā. Zināms, ka 
+$\\sphericalangle ABC=60^{\\circ}$ un $BC=CD$. Pierādīt, ka $AB=BC+DA$.</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 4 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.11" ;
+    eliozo:suggestedGrade 11 .
+
+eliozo:LV.NOL.2005.11.5 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 11 ;
+    eliozo:problemID "LV.NOL.2005.11.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.11.5.SUB1 ;
+    eliozo:problemText """Kādā klasē ir $n$ zēni un $n$ meitenes. Katrai meitenei patīk $x$ zēni. Katram 
+zēnam patīk $y$ meitenes. Pierādīt, ka:
+
+**(A)** ja $x+y>n$, tad noteikti var atrast tādu zēnu un tādu meiteni, kas 
+patīk viens otram,
+
+**(B)** ja $x+y \\leq n$, tad var gadīties, ka šādu zēnu un meiteni atrast 
+neizdodas."""@lv ;
+    eliozo:problemTextHtml """<p>Kādā klasē ir $n$ zēni un $n$ meitenes. Katrai meitenei patīk $x$ zēni. Katram 
+zēnam patīk $y$ meitenes. Pierādīt, ka:</p>
+<p><strong>(A)</strong> ja $x+y>n$, tad noteikti var atrast tādu zēnu un tādu meiteni, kas 
+patīk viens otram,</p>
+<p><strong>(B)</strong> ja $x+y \\leq n$, tad var gadīties, ka šādu zēnu un meiteni atrast 
+neizdodas.</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.11" ;
+    eliozo:suggestedGrade 11 .
+
+eliozo:LV.NOL.2005.12.1 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LV.NOL.2005.12.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.12.1.SUB1 ;
+    eliozo:problemText """Atrisināt pozitīvos skaitļos vienādojumu
+
+$$\\frac{1}{x+\\frac{1}{x^{2}+\\frac{1}{x^{3}+\\frac{1}{x^{4}}}}}=\\frac{1}{1+\\frac{1}{x^{3}+\\frac{1}{x^{2}+\\frac{1}{x^{5}}}}}-\\frac{1}{x^{2}+\\frac{1}{x+\\frac{1}{x^{4}+\\frac{1}{x^{3}}}}}$$"""@lv ;
+    eliozo:problemTextHtml """<p>Atrisināt pozitīvos skaitļos vienādojumu</p>
+<p>$$\\frac{1}{x+\\frac{1}{x^{2}+\\frac{1}{x^{3}+\\frac{1}{x^{4}}}}}=\\frac{1}{1+\\frac{1}{x^{3}+\\frac{1}{x^{2}+\\frac{1}{x^{5}}}}}-\\frac{1}{x^{2}+\\frac{1}{x+\\frac{1}{x^{4}+\\frac{1}{x^{3}}}}}$$</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.12" ;
+    eliozo:suggestedGrade 12 .
+
+eliozo:LV.NOL.2005.12.2 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LV.NOL.2005.12.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.12.2.SUB1 ;
+    eliozo:problemText """Skaitļu virknē $a_{1}; a_{2}; a_{3}; \\ldots$ zināms, ka $a_{1}=60$ un 
+$a_{n+1}=a_{n}-\\frac{1}{a_{n}}$ pie $n \\geq 1$, ja vien $a_{n}$ ir definēts un 
+$a_{n} \\neq 0$. Pierādīt:
+
+**(A)** eksistē tāds $k$, ka $a_{k} \\leq$,
+
+**(B)** eksistē tāds $k$, ka $a_{k} \\leq 0$ un $k \\leq 2005$."""@lv ;
+    eliozo:problemTextHtml """<p>Skaitļu virknē $a_{1}; a_{2}; a_{3}; \\ldots$ zināms, ka $a_{1}=60$ un 
+$a_{n+1}=a_{n}-\\frac{1}{a_{n}}$ pie $n \\geq 1$, ja vien $a_{n}$ ir definēts un 
+$a_{n} \\neq 0$. Pierādīt:</p>
+<p><strong>(A)</strong> eksistē tāds $k$, ka $a_{k} \\leq$,</p>
+<p><strong>(B)</strong> eksistē tāds $k$, ka $a_{k} \\leq 0$ un $k \\leq 2005$.</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.12" ;
+    eliozo:suggestedGrade 12 .
+
+eliozo:LV.NOL.2005.12.3 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LV.NOL.2005.12.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.12.3.SUB1 ;
+    eliozo:problemText """Naturāli skaitļi no $1$ līdz $n(n>1)$ kaut kādā secībā izrakstīti virknē, katrs
+vienu reizi. Ja virknē pirmais skaitlis ir $k$, tad pirmos $k$ locekļus virknē 
+uzraksta pretējā secībā; pārējo locekļu vietas nemaina.
+
+Pierādīt: atkārtojot šādas operācijas, noteikti kādreiz virknes pirmajā vietā 
+atradīsies vieninieks."""@lv ;
+    eliozo:problemTextHtml """<p>Naturāli skaitļi no $1$ līdz $n(n>1)$ kaut kādā secībā izrakstīti virknē, katrs
+vienu reizi. Ja virknē pirmais skaitlis ir $k$, tad pirmos $k$ locekļus virknē 
+uzraksta pretējā secībā; pārējo locekļu vietas nemaina.</p>
+<p>Pierādīt: atkārtojot šādas operācijas, noteikti kādreiz virknes pirmajā vietā 
+atradīsies vieninieks.</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 3 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.12" ;
+    eliozo:suggestedGrade 12 .
+
+eliozo:LV.NOL.2005.12.4 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LV.NOL.2005.12.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.12.4.SUB1 ;
+    eliozo:problemText """Dots, ka $AB$ - riņķa līnijas diametrs; $M$ - diametra punkts, kas atšķiras no 
+$A$ un $B$; $N$ un $K$ - tādi divi riņķa līnijas punkti vienā pusē no 
+$AB$, ka $\\sphericalangle NMA=\\sphericalangle KMB$; $L$ - tāds riņķa līnijas 
+punkts, ka $NL \\perp MN$ (skat. 3.zīm.).
+
+![](LV.NOL.2005.12.4.png)
+
+Pierādīt, ka $LK \\parallel AB$."""@lv ;
+    eliozo:problemTextHtml """<p>Dots, ka $AB$ - riņķa līnijas diametrs; $M$ - diametra punkts, kas atšķiras no 
+$A$ un $B$; $N$ un $K$ - tādi divi riņķa līnijas punkti vienā pusē no 
+$AB$, ka $\\sphericalangle NMA=\\sphericalangle KMB$; $L$ - tāds riņķa līnijas 
+punkts, ka $NL \\perp MN$ (skat. 3.zīm.).</p>
+<p><img alt="" src="LV.NOL.2005.12.4.png" /></p>
+<p>Pierādīt, ka $LK \\parallel AB$.</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 4 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.12" ;
+    eliozo:suggestedGrade 12 .
+
+eliozo:LV.NOL.2005.12.5 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "Geom",
+        "NT" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 12 ;
+    eliozo:problemID "LV.NOL.2005.12.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.12.5.SUB1 ;
+    eliozo:problemText """Trijstūra malu garumi izsakās ar pirmskaitļiem. Vai tā laukums var būt naturāls
+skaitlis? (Malas mēra metros, laukumu - kvadrātmetros.)"""@lv ;
+    eliozo:problemTextHtml """<p>Trijstūra malu garumi izsakās ar pirmskaitļiem. Vai tā laukums var būt naturāls
+skaitlis? (Malas mēra metros, laukumu - kvadrātmetros.)</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2005.12" ;
+    eliozo:suggestedGrade 12 .
+
+eliozo:LV.NOL.2005.5.1 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 5 ;
+    eliozo:problemID "LV.NOL.2005.5.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.5.1.SUB1 ;
+    eliozo:problemText """Vai naturālos skaitļus no $1$ līdz $20$ ieskaitot var izrakstīt katru tieši 
+vienu reizi
+
+**(A)** rindā,
+
+**(B)** pa apli
+
+tā, lai katru divu blakus uzrakstītu skaitļu starpība būtu vismaz $10$?"""@lv ;
+    eliozo:problemTextHtml """<p>Vai naturālos skaitļus no $1$ līdz $20$ ieskaitot var izrakstīt katru tieši 
+vienu reizi</p>
+<p><strong>(A)</strong> rindā,</p>
+<p><strong>(B)</strong> pa apli</p>
+<p>tā, lai katru divu blakus uzrakstītu skaitļu starpība būtu vismaz $10$?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.5" ;
+    eliozo:suggestedGrade 5 .
+
+eliozo:LV.NOL.2005.5.2 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 5 ;
+    eliozo:problemID "LV.NOL.2005.5.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.5.2.SUB1 ;
+    eliozo:problemText """Pa sliežu ceļu, kam ir galos noapaļota taisnstūra forma, vienādos attālumos 
+cits no cita kustas $n$ rotaļu vagoniņi (pirmais vagoniņš no pēdējā ir tādā 
+pašā attālumā kā pirmais no otrā). Tie sanumurēti ar naturāliem skaitļiem 
+kustības virzienā, sākot ar $1$. Kādā brīdī $12$-ais vagoniņš atradās pretī 
+$22$-jam, bet $60$-ais vagoniņš - pretī $86$-jam (skat. 1.zīm.). Atrast $n$.
+
+![](LV.NOL.2005.5.2.png)"""@lv ;
+    eliozo:problemTextHtml """<p>Pa sliežu ceļu, kam ir galos noapaļota taisnstūra forma, vienādos attālumos 
+cits no cita kustas $n$ rotaļu vagoniņi (pirmais vagoniņš no pēdējā ir tādā 
+pašā attālumā kā pirmais no otrā). Tie sanumurēti ar naturāliem skaitļiem 
+kustības virzienā, sākot ar $1$. Kādā brīdī $12$-ais vagoniņš atradās pretī 
+$22$-jam, bet $60$-ais vagoniņš - pretī $86$-jam (skat. 1.zīm.). Atrast $n$.</p>
+<p><img alt="" src="LV.NOL.2005.5.2.png" /></p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.5" ;
+    eliozo:suggestedGrade 5 .
+
+eliozo:LV.NOL.2005.5.3 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 5 ;
+    eliozo:problemID "LV.NOL.2005.5.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.5.3.SUB1 ;
+    eliozo:problemText """Piecās kastītēs atrodas attiecīgi $1;\\ 2;\\ 3;\\ 4;\\ 5$ konfektes. Ar vienu 
+gājienu drīkst no vienas kastītes ielikt otrā tik daudz konfekšu, cik šajā 
+otrajā kastītē jau ir (ja kastīte, no kuras ņemam konfektes, to ir pietiekami 
+daudz). Kāds ir lielākais konfekšu daudzums, ko var savākt vienā kastītē, 
+atkārtojot šādus gājienus?"""@lv ;
+    eliozo:problemTextHtml """<p>Piecās kastītēs atrodas attiecīgi $1;\\ 2;\\ 3;\\ 4;\\ 5$ konfektes. Ar vienu 
+gājienu drīkst no vienas kastītes ielikt otrā tik daudz konfekšu, cik šajā 
+otrajā kastītē jau ir (ja kastīte, no kuras ņemam konfektes, to ir pietiekami 
+daudz). Kāds ir lielākais konfekšu daudzums, ko var savākt vienā kastītē, 
+atkārtojot šādus gājienus?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 3 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.5" ;
+    eliozo:suggestedGrade 5 .
+
+eliozo:LV.NOL.2005.5.4 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 5 ;
+    eliozo:problemID "LV.NOL.2005.5.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.5.4.SUB1 ;
+    eliozo:problemText """Kvadrāts sastāv no $3 \\times 3$ rūtiņām. Katra rūtiņa nokrāsota vienā krāsā. Ir
+zināms: ja $a$ un $b$ ir jebkuras divas dažādas izmantotās krāsas, tad var 
+atrast tādas divas rūtiņas, kam ir kopīga mala un no kurām viena nokrāsota 
+krāsā $a$, bet otra krāsā $b$.
+
+Kāds lielākais daudzums krāsu var būt izmantots?"""@lv ;
+    eliozo:problemTextHtml """<p>Kvadrāts sastāv no $3 \\times 3$ rūtiņām. Katra rūtiņa nokrāsota vienā krāsā. Ir
+zināms: ja $a$ un $b$ ir jebkuras divas dažādas izmantotās krāsas, tad var 
+atrast tādas divas rūtiņas, kam ir kopīga mala un no kurām viena nokrāsota 
+krāsā $a$, bet otra krāsā $b$.</p>
+<p>Kāds lielākais daudzums krāsu var būt izmantots?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 4 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.5" ;
+    eliozo:suggestedGrade 5 .
+
+eliozo:LV.NOL.2005.5.5 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 5 ;
+    eliozo:problemID "LV.NOL.2005.5.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.5.5.SUB1 ;
+    eliozo:problemText """Ciemi $A,\\ B,\\ C,\\ D,\\ E,\\ F$ savienoti ar ceļiem tā, kā tas redzams 2.zīm. 
+(mērogs nav ievērots). Blakus katram ceļam norādīts tā garums kilometros.
+
+**(A)** vai pa ceļiem var veikt maršrutu, kas sākas pilsētā $A$, beidzas 
+pilsētā $A$ un kura kopgarums ir tieši $863~\\mathrm{km}$?
+
+**(B)** vai to var izdarit, ja ceļš $DE$ ir slēgts?
+
+($\\underline{Piezīme:}$ sākot braukt pa kādu ceļu, pa to jābrauc līdz galam.)
+
+![](LV.NOL.2005.5.5.png)"""@lv ;
+    eliozo:problemTextHtml """<p>Ciemi $A,\\ B,\\ C,\\ D,\\ E,\\ F$ savienoti ar ceļiem tā, kā tas redzams 2.zīm. 
+(mērogs nav ievērots). Blakus katram ceļam norādīts tā garums kilometros.</p>
+<p><strong>(A)</strong> vai pa ceļiem var veikt maršrutu, kas sākas pilsētā $A$, beidzas 
+pilsētā $A$ un kura kopgarums ir tieši $863~\\mathrm{km}$?</p>
+<p><strong>(B)</strong> vai to var izdarit, ja ceļš $DE$ ir slēgts?</p>
+<p>($\\underline{Piezīme:}$ sākot braukt pa kādu ceļu, pa to jābrauc līdz galam.)</p>
+<p><img alt="" src="LV.NOL.2005.5.5.png" /></p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.5" ;
+    eliozo:suggestedGrade 5 .
+
+eliozo:LV.NOL.2005.6.1 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 6 ;
+    eliozo:problemID "LV.NOL.2005.6.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.6.1.SUB1 ;
+    eliozo:problemText """Kvadrāts sastāv no $3 \\times 3$ rūtiņām. Katrā rūtiņā ierakstīts kaut kāds 
+naturāls skaitlis (starp tiem var būt arī vienādi). Visās rindās un visās 
+kolonnās ierakstīto skaitļu summas ir dažādas. Kāda ir mazākā iespējamā visā 
+tabulā ierakstīto skaitļu summa?"""@lv ;
+    eliozo:problemTextHtml """<p>Kvadrāts sastāv no $3 \\times 3$ rūtiņām. Katrā rūtiņā ierakstīts kaut kāds 
+naturāls skaitlis (starp tiem var būt arī vienādi). Visās rindās un visās 
+kolonnās ierakstīto skaitļu summas ir dažādas. Kāda ir mazākā iespējamā visā 
+tabulā ierakstīto skaitļu summa?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.6" ;
+    eliozo:suggestedGrade 6 .
+
+eliozo:LV.NOL.2005.6.2 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 6 ;
+    eliozo:problemID "LV.NOL.2005.6.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.6.2.SUB1 ;
+    eliozo:problemText """Pa apli stāv $n$ rūķīši ar seju pret centru. Katrs no viņiem vai nu vienmēr 
+runā patiesību, vai vienmēr melo. Katrs no viņiem pasaka savam kaimiņam pa labi
+"Tu esi melis".
+
+Vai tas iespējams, ja **(A)** $n=2004$, **(B)** $n=2005$?"""@lv ;
+    eliozo:problemTextHtml """<p>Pa apli stāv $n$ rūķīši ar seju pret centru. Katrs no viņiem vai nu vienmēr 
+runā patiesību, vai vienmēr melo. Katrs no viņiem pasaka savam kaimiņam pa labi
+"Tu esi melis".</p>
+<p>Vai tas iespējams, ja <strong>(A)</strong> $n=2004$, <strong>(B)</strong> $n=2005$?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.6" ;
+    eliozo:suggestedGrade 6 .
+
+eliozo:LV.NOL.2005.6.3 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 6 ;
+    eliozo:problemID "LV.NOL.2005.6.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.6.3.SUB1 ;
+    eliozo:problemText """Kvadrāts, kas sastāv no $6 \\times 6$ vienādām kvadrātiskām rūtiņām, sagriezts 
+gabalos. Katra gabala forma ir viena no tām, kādas redzamas 3.zīmējumā, pie tam
+ir gan vienas, gan otras formas gabali. Cik katras formas gabalu var būt? 
+Gabali var būt novietoti arī citādi.
+
+![](LV.NOL.2005.6.3.png)"""@lv ;
+    eliozo:problemTextHtml """<p>Kvadrāts, kas sastāv no $6 \\times 6$ vienādām kvadrātiskām rūtiņām, sagriezts 
+gabalos. Katra gabala forma ir viena no tām, kādas redzamas 3.zīmējumā, pie tam
+ir gan vienas, gan otras formas gabali. Cik katras formas gabalu var būt? 
+Gabali var būt novietoti arī citādi.</p>
+<p><img alt="" src="LV.NOL.2005.6.3.png" /></p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 3 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.6" ;
+    eliozo:suggestedGrade 6 .
+
+eliozo:LV.NOL.2005.6.4 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 6 ;
+    eliozo:problemID "LV.NOL.2005.6.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.6.4.SUB1 ;
+    eliozo:problemText """Atrast minimālo naturālo skaitli $n$ ar īpašību: ja uz tāfeles uzrakstīti $n$ 
+dažādi naturāli skaitļi, no kuriem neviens nepārsniedz $100$, tad no 
+uzrakstītajiem var izvēlēties tādus divus, kuru reizinājums dalās ar $21$."""@lv ;
+    eliozo:problemTextHtml """<p>Atrast minimālo naturālo skaitli $n$ ar īpašību: ja uz tāfeles uzrakstīti $n$ 
+dažādi naturāli skaitļi, no kuriem neviens nepārsniedz $100$, tad no 
+uzrakstītajiem var izvēlēties tādus divus, kuru reizinājums dalās ar $21$.</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 4 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.6" ;
+    eliozo:suggestedGrade 6 .
+
+eliozo:LV.NOL.2005.6.5 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 6 ;
+    eliozo:problemID "LV.NOL.2005.6.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.6.5.SUB1 ;
+    eliozo:problemText """Dažas kompānijas ir piemānījušas citas. Ir zināms, ka:
+
+- ja kompānija $A$ ir piemānījusi kompāniju $B$, tad kompānija $B$ nav 
+  piemānījusi kompāniju $A$,
+- katra kompānija ir piemānījusi vismaz vienu citu,
+- ja kompānija $A$ ir piemānījusi kompāniju $C$, tad var atrast tādu kompāniju 
+  $B$, ka $A$ ir piemānījusi $B$, bet $B$ ir piemānījusi $C$.
+
+Pierādīt, ka
+
+**(A)** katra kompānija ir piemānījusi vismaz $3$ citas,
+
+**(B)** kompāniju skaits var būt tieši $7$."""@lv ;
+    eliozo:problemTextHtml """<p>Dažas kompānijas ir piemānījušas citas. Ir zināms, ka:</p>
+<ul>
+<li>ja kompānija $A$ ir piemānījusi kompāniju $B$, tad kompānija $B$ nav 
+  piemānījusi kompāniju $A$,</li>
+<li>katra kompānija ir piemānījusi vismaz vienu citu,</li>
+<li>ja kompānija $A$ ir piemānījusi kompāniju $C$, tad var atrast tādu kompāniju 
+  $B$, ka $A$ ir piemānījusi $B$, bet $B$ ir piemānījusi $C$.</li>
+</ul>
+<p>Pierādīt, ka</p>
+<p><strong>(A)</strong> katra kompānija ir piemānījusi vismaz $3$ citas,</p>
+<p><strong>(B)</strong> kompāniju skaits var būt tieši $7$.</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.6" ;
+    eliozo:suggestedGrade 6 .
+
+eliozo:LV.NOL.2005.7.1 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 7 ;
+    eliozo:problemID "LV.NOL.2005.7.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.7.1.SUB1 ;
+    eliozo:problemText """Kādu mazāko daudzumu no skaitļiem $1;\\ 2;\\ 3;\\ \\ldots;\\ 12;\\ 13$ var izsvītrot,
+lai katru divu atlikušo summa būtu salikts skaitlis?"""@lv ;
+    eliozo:problemTextHtml """<p>Kādu mazāko daudzumu no skaitļiem $1;\\ 2;\\ 3;\\ \\ldots;\\ 12;\\ 13$ var izsvītrot,
+lai katru divu atlikušo summa būtu salikts skaitlis?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindOptimal" ;
+    eliozo:sameAs "LV.NOL.2003.7.4" ;
+    eliozo:suffix "LV.NOL.2005.7" ;
+    eliozo:suggestedGrade 7 .
+
+eliozo:LV.NOL.2005.7.2 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 7 ;
+    eliozo:problemID "LV.NOL.2005.7.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.7.2.SUB1 ;
+    eliozo:problemText """Vai funkciju $y=2003x+4197,\\ y=2004x+4198$ un $y=2005x+4199$ grafiki krustojas 
+vienā punktā?"""@lv ;
+    eliozo:problemTextHtml """<p>Vai funkciju $y=2003x+4197,\\ y=2004x+4198$ un $y=2005x+4199$ grafiki krustojas 
+vienā punktā?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.7" ;
+    eliozo:suggestedGrade 7 .
+
+eliozo:LV.NOL.2005.7.3 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 7 ;
+    eliozo:problemID "LV.NOL.2005.7.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.7.3.SUB1 ;
+    eliozo:problemText """Mūsu rīcībā ir $100$ vienādas trijstūrveida plāksnītes; katras plāksnītes malas
+garums ir $1$. Vai no tām var salikt figūru, kuras apkārtmērs ir **(A)** $56$, 
+**(B)** $57$? Jāizmanto visas plāksnītes.
+
+Saliekot plāksnītes nedrīkst pārklāties. Katras divas plāksnītes vai nu 
+nesaskaras nemaz, vai saskaras tikai ar vienu stūri, vai saskaras ar vienu 
+veselu malu."""@lv ;
+    eliozo:problemTextHtml """<p>Mūsu rīcībā ir $100$ vienādas trijstūrveida plāksnītes; katras plāksnītes malas
+garums ir $1$. Vai no tām var salikt figūru, kuras apkārtmērs ir <strong>(A)</strong> $56$, 
+<strong>(B)</strong> $57$? Jāizmanto visas plāksnītes.</p>
+<p>Saliekot plāksnītes nedrīkst pārklāties. Katras divas plāksnītes vai nu 
+nesaskaras nemaz, vai saskaras tikai ar vienu stūri, vai saskaras ar vienu 
+veselu malu.</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 3 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.7" ;
+    eliozo:suggestedGrade 7 .
+
+eliozo:LV.NOL.2005.7.4 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 7 ;
+    eliozo:problemID "LV.NOL.2005.7.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.7.4.SUB1,
+        eliozo:SOLN.LV.NOL.2005.7.4.SUB2 ;
+    eliozo:problemText """Naturālu skaitli $n$ sauc par īpašu, ja tas ir vienāds ar četru savu dažādu 
+dalītāju summu.
+
+**(A)** atrodiet kaut vienu īpašu skaitli,  
+**(B)** pierādiet, ka īpašu skaitļu ir bezgalīgi daudz,  
+**(C)** pierādiet, ka visi īpaši skaitļi ir pāra."""@lv ;
+    eliozo:problemTextHtml """<p>Naturālu skaitli $n$ sauc par īpašu, ja tas ir vienāds ar četru savu dažādu 
+dalītāju summu.</p>
+<p><strong>(A)</strong> atrodiet kaut vienu īpašu skaitli,<br />
+<strong>(B)</strong> pierādiet, ka īpašu skaitļu ir bezgalīgi daudz,<br />
+<strong>(C)</strong> pierādiet, ka visi īpaši skaitļi ir pāra.</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 4 ;
+    eliozo:questionType "FindExample",
+        "Prove" ;
+    eliozo:suffix "LV.NOL.2005.7" ;
+    eliozo:suggestedGrade 7 ;
+    eliozo:topic eliozo:IntegerFactorization,
+        eliozo:ModularParity,
+        eliozo:NumTheoryExtremeElement .
+
+eliozo:LV.NOL.2005.7.5 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 7 ;
+    eliozo:problemID "LV.NOL.2005.7.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.7.5.SUB1 ;
+    eliozo:problemText """Dotas $8$ pēc ārējā izskata vienādas monētas. Ir zināms, ka vai nu visām tām 
+masas ir vienādas, vai arī $4$ monētām ir viena masa, bet $4$ monētām - cita 
+masa. Kā ar $3$ svēršanām uz sviras svariem bez atsvariem var noskaidrot, kura 
+no iespējām pastāv īstenībā?"""@lv ;
+    eliozo:problemTextHtml """<p>Dotas $8$ pēc ārējā izskata vienādas monētas. Ir zināms, ka vai nu visām tām 
+masas ir vienādas, vai arī $4$ monētām ir viena masa, bet $4$ monētām - cita 
+masa. Kā ar $3$ svēršanām uz sviras svariem bez atsvariem var noskaidrot, kura 
+no iespējām pastāv īstenībā?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.7" ;
+    eliozo:suggestedGrade 7 .
+
+eliozo:LV.NOL.2005.8.1 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 8 ;
+    eliozo:problemID "LV.NOL.2005.8.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.8.1.SUB1 ;
+    eliozo:problemText """Ir zināms, ka skaitļa $2^{100}$ decimālajā pierakstā ir $431$ cipars. Cik 
+daudziem no skaitļiem $2^{1};\\ 2^{2};\\ 2^{3};\\ \\ldots;\\ 2^{99};\\ 2^{100}$ 
+decimālais pieraksts sākas ar ciparu $1$?"""@lv ;
+    eliozo:problemTextHtml """<p>Ir zināms, ka skaitļa $2^{100}$ decimālajā pierakstā ir $431$ cipars. Cik 
+daudziem no skaitļiem $2^{1};\\ 2^{2};\\ 2^{3};\\ \\ldots;\\ 2^{99};\\ 2^{100}$ 
+decimālais pieraksts sākas ar ciparu $1$?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "FindCount" ;
+    eliozo:seeAlso "LV.NOL.2004.8.2" ;
+    eliozo:suffix "LV.NOL.2005.8" ;
+    eliozo:suggestedGrade 8 ;
+    eliozo:topic eliozo:DecimalNotationDigits,
+        eliozo:DefiningRecurrentSequences .
+
+eliozo:LV.NOL.2005.8.2 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 8 ;
+    eliozo:problemID "LV.NOL.2005.8.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.8.2.SUB1 ;
+    eliozo:problemText """Kvadrāts sastāv no $4 \\times 4$ vienādām kvadrātiskām rūtiņām. Rūtiņās 
+ierakstīti naturāli skaitļi no $1$ līdz $16$ (dažādās rūtiņās - dažādi 
+skaitļi). Rūtiņu sauc par izcilu, ja tajā ierakstītais skaitlis mazāks par 
+augstākais vienā kaimiņu rūtiņā ierakstītu skaitli (divas rūtiņas sauc par 
+kaimiņu rūtiņām, ja tām ir kopīga mala vai kopīgs stūris). Kāds lielākais 
+daudzums rūtiņu var būt izcilas?"""@lv ;
+    eliozo:problemTextHtml """<p>Kvadrāts sastāv no $4 \\times 4$ vienādām kvadrātiskām rūtiņām. Rūtiņās 
+ierakstīti naturāli skaitļi no $1$ līdz $16$ (dažādās rūtiņās - dažādi 
+skaitļi). Rūtiņu sauc par izcilu, ja tajā ierakstītais skaitlis mazāks par 
+augstākais vienā kaimiņu rūtiņā ierakstītu skaitli (divas rūtiņas sauc par 
+kaimiņu rūtiņām, ja tām ir kopīga mala vai kopīgs stūris). Kāds lielākais 
+daudzums rūtiņu var būt izcilas?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.8" ;
+    eliozo:suggestedGrade 8 .
+
+eliozo:LV.NOL.2005.8.3 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:genre "procedure" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 8 ;
+    eliozo:problemID "LV.NOL.2005.8.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.8.3.SUB1,
+        eliozo:SOLN.LV.NOL.2005.8.3.SUB2 ;
+    eliozo:problemText """Andris iedomājās patvaļīgu naturālu skaitli $n$. Juris ar vienu gājienu var 
+pateikt Andrim piecus dažādus naturālus skaitļus 
+$x_{1},\\ x_{2},\\ x_{3},\\ x_{4},\\ x_{5}$, un Andris pateiks Jurim **vienu** no 
+skaitļiem $nx_{1},\\ nx_{2},\\ nx_{3},\\ nx_{4},\\ nx_{5}$ (bet nepaskaidros, 
+**kura** reizinājuma vērtību viņš saka).
+
+Ar kādu mazāko jautājumu skaitu Juris var noteikti noskaidrot $n$?"""@lv ;
+    eliozo:problemTextHtml """<p>Andris iedomājās patvaļīgu naturālu skaitli $n$. Juris ar vienu gājienu var 
+pateikt Andrim piecus dažādus naturālus skaitļus 
+$x_{1},\\ x_{2},\\ x_{3},\\ x_{4},\\ x_{5}$, un Andris pateiks Jurim <strong>vienu</strong> no 
+skaitļiem $nx_{1},\\ nx_{2},\\ nx_{3},\\ nx_{4},\\ nx_{5}$ (bet nepaskaidros, 
+<strong>kura</strong> reizinājuma vērtību viņš saka).</p>
+<p>Ar kādu mazāko jautājumu skaitu Juris var noteikti noskaidrot $n$?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 3 ;
+    eliozo:questionType "Algorithm",
+        "FindOptimal" ;
+    eliozo:suffix "LV.NOL.2005.8" ;
+    eliozo:suggestedGrade 8 ;
+    eliozo:topic eliozo:CanonicalFactorization,
+        eliozo:GcdAndLcm,
+        eliozo:PrimesInfinityProof .
+
+eliozo:LV.NOL.2005.8.4 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 8 ;
+    eliozo:problemID "LV.NOL.2005.8.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.8.4.SUB1 ;
+    eliozo:problemText """Taisne $t$ nav nogriežņa $AB$ vidusperpendikuls. Cik uz taisnes $t$ var būt 
+tādu punktu $C$, ka $A,\\ B$ un $C$ ir vienādsānu trijstūra virsotnes?"""@lv ;
+    eliozo:problemTextHtml """<p>Taisne $t$ nav nogriežņa $AB$ vidusperpendikuls. Cik uz taisnes $t$ var būt 
+tādu punktu $C$, ka $A,\\ B$ un $C$ ir vienādsānu trijstūra virsotnes?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 4 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.8" ;
+    eliozo:suggestedGrade 8 .
+
+eliozo:LV.NOL.2005.8.5 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 8 ;
+    eliozo:problemID "LV.NOL.2005.8.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.8.5.SUB1 ;
+    eliozo:problemText """Atrisināt vienādojumu
+
+$$x^{3}\\left(x^{2}-7\\right)^{2}-36x=0$$"""@lv ;
+    eliozo:problemTextHtml """<p>Atrisināt vienādojumu</p>
+<p>$$x^{3}\\left(x^{2}-7\\right)^{2}-36x=0$$</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.8" ;
+    eliozo:suggestedGrade 8 .
+
+eliozo:LV.NOL.2005.9.1 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LV.NOL.2005.9.1" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.9.1.SUB1 ;
+    eliozo:problemText """Dots, ka $a$ un $b$ - kaut kādi reāli skaitļi. Pierādīt, ka
+
+$$a^{2}-ab+b^{2} \\geq 5a+5b-25$$"""@lv ;
+    eliozo:problemTextHtml """<p>Dots, ka $a$ un $b$ - kaut kādi reāli skaitļi. Pierādīt, ka</p>
+<p>$$a^{2}-ab+b^{2} \\geq 5a+5b-25$$</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 1 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.9" ;
+    eliozo:suggestedGrade 9 .
+
+eliozo:LV.NOL.2005.9.2 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LV.NOL.2005.9.2" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.9.2.SUB1 ;
+    eliozo:problemText """Kāda var būt četru tādu divciparu pirmskaitļu summa, kas sastādīti no cipariem 
+$1;\\ 2;\\ 3;\\ 4;\\ 5;\\ 6;\\ 7;\\ 9$, izmantojot katru no tiem tieši vienu reizi?"""@lv ;
+    eliozo:problemTextHtml """<p>Kāda var būt četru tādu divciparu pirmskaitļu summa, kas sastādīti no cipariem 
+$1;\\ 2;\\ 3;\\ 4;\\ 5;\\ 6;\\ 7;\\ 9$, izmantojot katru no tiem tieši vienu reizi?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 2 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.9" ;
+    eliozo:suggestedGrade 9 .
+
+eliozo:LV.NOL.2005.9.3 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LV.NOL.2005.9.3" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.9.3.SUB1 ;
+    eliozo:problemText """Divas riņķa līnijas ar rādiusiem $R$ un $r$ ārēji pieskaras viena otrai punktā 
+$A$. Taisne $t$ pieskaras abām riņķa līnijām punktā $A$ un krusto to kopējās 
+ārējās pieskares punktos $K$ un $L$.
+
+**(A)** pierādīt, ka $MK=KN$ (skat. 1.zīm.);
+
+**(B)** izteikt $KL$ ar $R$ un $r$.
+
+![](LV.NOL.2005.9.3.png)"""@lv ;
+    eliozo:problemTextHtml """<p>Divas riņķa līnijas ar rādiusiem $R$ un $r$ ārēji pieskaras viena otrai punktā 
+$A$. Taisne $t$ pieskaras abām riņķa līnijām punktā $A$ un krusto to kopējās 
+ārējās pieskares punktos $K$ un $L$.</p>
+<p><strong>(A)</strong> pierādīt, ka $MK=KN$ (skat. 1.zīm.);</p>
+<p><strong>(B)</strong> izteikt $KL$ ar $R$ un $r$.</p>
+<p><img alt="" src="LV.NOL.2005.9.3.png" /></p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 3 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.9" ;
+    eliozo:suggestedGrade 9 .
+
+eliozo:LV.NOL.2005.9.4 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LV.NOL.2005.9.4" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.9.4.SUB1 ;
+    eliozo:problemText """Vai eksistē tādi $6$ skaitļi, ka, aprēķinot visas iespējamās to summas pa 
+diviem, iegūst visus naturālos skaitļus no $1$ līdz $15$ ieskaitot?"""@lv ;
+    eliozo:problemTextHtml """<p>Vai eksistē tādi $6$ skaitļi, ka, aprēķinot visas iespējamās to summas pa 
+diviem, iegūst visus naturālos skaitļus no $1$ līdz $15$ ieskaitot?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 4 ;
+    eliozo:questionType "" ;
+    eliozo:suffix "LV.NOL.2005.9" ;
+    eliozo:suggestedGrade 9 .
+
+eliozo:LV.NOL.2005.9.5 a eliozo:Problem ;
+    eliozo:country "LV" ;
+    eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2005" ;
+    eliozo:olympiad "LV.NOL" ;
+    eliozo:olympiadCode "NOL" ;
+    eliozo:olympiadType "RegionalOrOpen" ;
+    eliozo:problemGrade 9 ;
+    eliozo:problemID "LV.NOL.2005.9.5" ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2005.9.5.SUB1 ;
+    eliozo:problemText """Ciparu virkni veido sekojoši: tās pirmie cipari ir $1;\\ 2;\\ 3;\\ 4$, bet katrs 
+nākošais vienāds ar četru iepriekšējo summas pēdējo ciparu. (Tātad virkne ir 
+$1;\\ 2;\\ 3;\\ 4;\\ 0;\\ 9;\\ 6;\\ 9;\\ \\ldots$)
+
+**(A)** Vai virknē kādreiz pēc kārtas parādīsies cipari $2;\\ 0;\\ 0;\\ 5$ tieši 
+šādā secībā?  
+**(B)** Vai virknē kādreiz pēc kārtas citur nekā sākumā parādīsies cipari 
+$1;\\ 2;\\ 3;\\ 4$?"""@lv ;
+    eliozo:problemTextHtml """<p>Ciparu virkni veido sekojoši: tās pirmie cipari ir $1;\\ 2;\\ 3;\\ 4$, bet katrs 
+nākošais vienāds ar četru iepriekšējo summas pēdējo ciparu. (Tātad virkne ir 
+$1;\\ 2;\\ 3;\\ 4;\\ 0;\\ 9;\\ 6;\\ 9;\\ \\ldots$)</p>
+<p><strong>(A)</strong> Vai virknē kādreiz pēc kārtas parādīsies cipari $2;\\ 0;\\ 0;\\ 5$ tieši 
+šādā secībā?<br />
+<strong>(B)</strong> Vai virknē kādreiz pēc kārtas citur nekā sākumā parādīsies cipari 
+$1;\\ 2;\\ 3;\\ 4$?</p>"""@lv ;
+    eliozo:problemTimeID "2005" ;
+    eliozo:problemYear 2005 ;
+    eliozo:problem_number 5 ;
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:suffix "LV.NOL.2005.9" ;
+    eliozo:suggestedGrade 9 .
+
+eliozo:SOLN.LV.NOL.2005.10.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Sākotnēji uzrakstīto skaitļu summa ir $55$. Izdarot gājienus, atlikums, ko 
+iegūst, uz tāfeles esošo skaitļu summu dalot ar $3$, nemainās. Tātad arī beigu 
+situācijā šis atlikums ir $1$, jo $55=18 \\cdot 3+1$.
+
+Ievērosim, ka pēc $1.,\\ 2.,\\ 3.,\\ \\ldots$ gājiena izdarīšanas uz tāfeles 
+vienmēr ir vismaz viens jaunuzrakstīts skaitlis (t.i., $0;\\ 1$; vai $2$). Tātad
+otrais uz tāfeles palikušais skaitlis ir $0;\\ 1$ vai $2$. Vienīgais no tiem, 
+kas apmierina nosacījumu par summas atlikumu, ir skaitlis $2$.
+
+Skaitli $2$ var iegūt, piemēram, aizstājot $1+2+3$ ar $0$ un 
+$0+4+5+6+7+9+10=41$ ar $2$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Sākotnēji uzrakstīto skaitļu summa ir $55$. Izdarot gājienus, atlikums, ko 
+iegūst, uz tāfeles esošo skaitļu summu dalot ar $3$, nemainās. Tātad arī beigu 
+situācijā šis atlikums ir $1$, jo $55=18 \\cdot 3+1$.</p>
+<p>Ievērosim, ka pēc $1.,\\ 2.,\\ 3.,\\ \\ldots$ gājiena izdarīšanas uz tāfeles 
+vienmēr ir vismaz viens jaunuzrakstīts skaitlis (t.i., $0;\\ 1$; vai $2$). Tātad
+otrais uz tāfeles palikušais skaitlis ir $0;\\ 1$ vai $2$. Vienīgais no tiem, 
+kas apmierina nosacījumu par summas atlikumu, ir skaitlis $2$.</p>
+<p>Skaitli $2$ var iegūt, piemēram, aizstājot $1+2+3$ ar $0$ un 
+$0+4+5+6+7+9+10=41$ ar $2$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.10.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Tā kā katras malas garums ir mazāks par visu citu malu garumu summu, tad 
+$a \\neq b+c+d+e$. Kvadrātvienādojuma grafika simetrijas dēļ 
+$f\\left(x_{1}\\right)=f\\left(x_{2}\\right)$ (kur $x_{1} \\neq x_{2}$) tad un tikai 
+tad, ja $\\frac{x_{1}+x_{2}}{2}=x_{0}$, kur $x_{0}$ - parabolas virsotnes 
+abscisa. No dotā seko, ka $a+b+c+d+e=2x_{0}$. No tā savukārt seko visas 
+vajadzīgās vienādības."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Tā kā katras malas garums ir mazāks par visu citu malu garumu summu, tad 
+$a \\neq b+c+d+e$. Kvadrātvienādojuma grafika simetrijas dēļ 
+$f\\left(x_{1}\\right)=f\\left(x_{2}\\right)$ (kur $x_{1} \\neq x_{2}$) tad un tikai 
+tad, ja $\\frac{x_{1}+x_{2}}{2}=x_{0}$, kur $x_{0}$ - parabolas virsotnes 
+abscisa. No dotā seko, ka $a+b+c+d+e=2x_{0}$. No tā savukārt seko visas 
+vajadzīgās vienādības.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Tā kā katrs no $n$ dalībniekiem izcīnīja vismaz vienu un ne vairāk kā $n-1$ 
+uzvaru, tad viena dalībnieka uzvaru skaits var pieņemt tikai $n-1$ dažādas 
+vērtības. Tā kā dalībnieku ir $n$ un $n>n-1$, tad ir divi dalībnieki, kas 
+izcīnījuši vienu un to pašu uzvaru skaitu. Viens no tiem savstarpējā cīņā 
+uzvarējis; apzīmēsim to ar $A$, bet otru minēto dalībnieku ar $B$. Lai $A$ un 
+$B$ uzvaru daudzumi būtu vienādi, $A$ jābūt zaudējušam pret kādu no 
+dalībniekiem, pret kuru $B$ ir uzvarējis, šo dalībnieku varam apzīmēt ar $C$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Tā kā katrs no $n$ dalībniekiem izcīnīja vismaz vienu un ne vairāk kā $n-1$ 
+uzvaru, tad viena dalībnieka uzvaru skaits var pieņemt tikai $n-1$ dažādas 
+vērtības. Tā kā dalībnieku ir $n$ un $n>n-1$, tad ir divi dalībnieki, kas 
+izcīnījuši vienu un to pašu uzvaru skaitu. Viens no tiem savstarpējā cīņā 
+uzvarējis; apzīmēsim to ar $A$, bet otru minēto dalībnieku ar $B$. Lai $A$ un 
+$B$ uzvaru daudzumi būtu vienādi, $A$ jābūt zaudējušam pret kādu no 
+dalībniekiem, pret kuru $B$ ir uzvarējis, šo dalībnieku varam apzīmēt ar $C$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.10.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apzīmēsim $ABCD$ diagonāļu krustpunktu ar $O$. Tad no 
+$\\triangle AOB \\sim \\triangle NOB$ un $\\triangle COD \\sim \\triangle AOM$ seko
+
+$\\frac{OB}{OD}=\\frac{OA}{ON}$ un $\\frac{OD}{OC}=\\frac{OM}{OA}$
+
+Sareizinot šīs vienādības, iegūstam $\\frac{OB}{OC}=\\frac{OM}{ON}$, no kā seko 
+vajadzīgais."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apzīmēsim $ABCD$ diagonāļu krustpunktu ar $O$. Tad no 
+$\\triangle AOB \\sim \\triangle NOB$ un $\\triangle COD \\sim \\triangle AOM$ seko</p>
+<p>$\\frac{OB}{OD}=\\frac{OA}{ON}$ un $\\frac{OD}{OC}=\\frac{OM}{OA}$</p>
+<p>Sareizinot šīs vienādības, iegūstam $\\frac{OB}{OC}=\\frac{OM}{ON}$, no kā seko 
+vajadzīgais.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.10.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apzīmēsim uzrakstītos skaitļus ar $1=n_{1}<n_{2}<\\ldots<n_{k}=100$. Pie 
+$i=1;\\ 2;\\ \\ldots;\\ k-1$ jābūt $n_{i+1} \\leq n_{i}$, citādi $n_{i+1}$ nav 
+izsakāms prasītajā veidā. Tāpēc $n_{2} \\leq$, 
+$n_{3} \\leq 4,\\ n_{4} \\leq 8,\\ n_{5} \\leq 6,\\ n_{6} \\leq 32,\\ n_{7} \\leq 64$. 
+Tā kā uz lapas atrodas arī $100$, tad $k \\geq 8$. Pierādīsim, ka patiesībā 
+$k \\neq 8$. Ja $k=8$, tad $n_{8}=100$. Tā kā $n_{7}+n_{6} \\leq 96$, tad jābūt 
+$100=2n_{7}$, tāpēc $n_{7}=50$. Tā kā $n_{5}+n_{6} \\leq 48$, jābūt 
+$n_{7}=2n_{6}$, tāpēc $n_{6}=25$. Tā kā $n_{5}+n_{4} \\leq 24$, tad jābūt 
+$n_{6}=2n_{5}$, bet tas nav iespējams, jo $n_{6}$ ir nepāra skaitlis.
+
+To, ka $n=9$ der, parāda piemērs $1;\\ 2;\\ 3;\\ 5;\\ 10;\\ 20;\\ 25;\\ 50;\\ 100$ (ir 
+arī citi piemēri)."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apzīmēsim uzrakstītos skaitļus ar $1=n_{1}<n_{2}<\\ldots<n_{k}=100$. Pie 
+$i=1;\\ 2;\\ \\ldots;\\ k-1$ jābūt $n_{i+1} \\leq n_{i}$, citādi $n_{i+1}$ nav 
+izsakāms prasītajā veidā. Tāpēc $n_{2} \\leq$, 
+$n_{3} \\leq 4,\\ n_{4} \\leq 8,\\ n_{5} \\leq 6,\\ n_{6} \\leq 32,\\ n_{7} \\leq 64$. 
+Tā kā uz lapas atrodas arī $100$, tad $k \\geq 8$. Pierādīsim, ka patiesībā 
+$k \\neq 8$. Ja $k=8$, tad $n_{8}=100$. Tā kā $n_{7}+n_{6} \\leq 96$, tad jābūt 
+$100=2n_{7}$, tāpēc $n_{7}=50$. Tā kā $n_{5}+n_{6} \\leq 48$, jābūt 
+$n_{7}=2n_{6}$, tāpēc $n_{6}=25$. Tā kā $n_{5}+n_{4} \\leq 24$, tad jābūt 
+$n_{6}=2n_{5}$, bet tas nav iespējams, jo $n_{6}$ ir nepāra skaitlis.</p>
+<p>To, ka $n=9$ der, parāda piemērs $1;\\ 2;\\ 3;\\ 5;\\ 10;\\ 20;\\ 25;\\ 50;\\ 100$ (ir 
+arī citi piemēri).</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.11.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apzīmēsim $a=2001$. Tad zemsaknes izteiksme ir
+$(a+4)(a+2)(a-2)(a-4)+36=\\left(a^{2}-16\\right)\\left(a^{2}-4\\right)+36=a^{4}-20a^{2}+100=\\left(a^{2}-10\\right)^{2}$,
+tāpēc uzdevuma atbilde ir $\\left|a^{2}-10\\right|=2001^{2}-10=4003991$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apzīmēsim $a=2001$. Tad zemsaknes izteiksme ir
+$(a+4)(a+2)(a-2)(a-4)+36=\\left(a^{2}-16\\right)\\left(a^{2}-4\\right)+36=a^{4}-20a^{2}+100=\\left(a^{2}-10\\right)^{2}$,
+tāpēc uzdevuma atbilde ir $\\left|a^{2}-10\\right|=2001^{2}-10=4003991$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.11.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+$\\underline{Atbilde:}$ intervālu 
+$\\left[-\\frac{1+\\sqrt{5}}{2}; \\frac{1+\\sqrt{5}}{2}\\right]$.
+
+$\\underline{Atrisinājums:}$
+
+**(A)** ja $|p| \\leq 1$ un $|q| \\leq 1$, tad vienādojuma $x^{2}+px+q=0$ reālai 
+saknei $x_{0}$ ir spēkā 
+$\\left|x_{0}\\right|=\\left|\\frac{-p \\pm \\sqrt{p^{2}-4q}}{2}\\right| \\leq\\left|\\frac{p}{2}\\right|+\\frac{1}{2} \\sqrt{p^{2}-4q} \\leq \\frac{1+\\sqrt{5}}{2}$.
+Tātad visas saknes pieder minētajam intervālam.
+
+**(B)** vienādojumu $x^{2} \\pm x-1=0$ saknes ir $\\frac{-1 \\mp \\sqrt{5}}{2}$ un 
+$\\frac{1 \\mp \\sqrt{5}}{2}$. Tātad intervāla galapunkti ir vajadzīgā tipa 
+vienādojumu saknes. Pieņemsim, ka 
+$z \\in\\left[-\\frac{1+\\sqrt{5}}{2}; \\frac{1+\\sqrt{5}}{2}\\right]$, tad 
+$z=\\alpha \\cdot \\frac{1+\\sqrt{5}}{2}$, kur $|\\alpha| \\leq 1$. Apskatām 
+vienādojumu $x^{2}-\\alpha x-\\alpha^{2}=0$. Ievērojam, ka $|-\\alpha| \\leq 1$ un 
+$\\left|-\\alpha^{2}\\right| \\leq 1$, un šī vienādojuma saknes ir 
+$\\frac{\\alpha}{2} \\mp \\sqrt{\\frac{\\alpha^{2}}{4}+\\alpha^{2}}=\\frac{\\alpha}{2} \\mp|\\alpha| \\cdot \\frac{\\sqrt{5}}{2}$.
+Tātad viena no tām ir $\\alpha \\cdot \\frac{1+\\sqrt{5}}{2}=\\mathrm{z}$. Tātad 
+visi apskatāmā intervāla punkti ir vajadzīgā tipa vienādojumu saknes."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$\\underline{Atbilde:}$ intervālu 
+$\\left[-\\frac{1+\\sqrt{5}}{2}; \\frac{1+\\sqrt{5}}{2}\\right]$.</p>
+<p>$\\underline{Atrisinājums:}$</p>
+<p><strong>(A)</strong> ja $|p| \\leq 1$ un $|q| \\leq 1$, tad vienādojuma $x^{2}+px+q=0$ reālai 
+saknei $x_{0}$ ir spēkā 
+$\\left|x_{0}\\right|=\\left|\\frac{-p \\pm \\sqrt{p^{2}-4q}}{2}\\right| \\leq\\left|\\frac{p}{2}\\right|+\\frac{1}{2} \\sqrt{p^{2}-4q} \\leq \\frac{1+\\sqrt{5}}{2}$.
+Tātad visas saknes pieder minētajam intervālam.</p>
+<p><strong>(B)</strong> vienādojumu $x^{2} \\pm x-1=0$ saknes ir $\\frac{-1 \\mp \\sqrt{5}}{2}$ un 
+$\\frac{1 \\mp \\sqrt{5}}{2}$. Tātad intervāla galapunkti ir vajadzīgā tipa 
+vienādojumu saknes. Pieņemsim, ka 
+$z \\in\\left[-\\frac{1+\\sqrt{5}}{2}; \\frac{1+\\sqrt{5}}{2}\\right]$, tad 
+$z=\\alpha \\cdot \\frac{1+\\sqrt{5}}{2}$, kur $|\\alpha| \\leq 1$. Apskatām 
+vienādojumu $x^{2}-\\alpha x-\\alpha^{2}=0$. Ievērojam, ka $|-\\alpha| \\leq 1$ un 
+$\\left|-\\alpha^{2}\\right| \\leq 1$, un šī vienādojuma saknes ir 
+$\\frac{\\alpha}{2} \\mp \\sqrt{\\frac{\\alpha^{2}}{4}+\\alpha^{2}}=\\frac{\\alpha}{2} \\mp|\\alpha| \\cdot \\frac{\\sqrt{5}}{2}$.
+Tātad viena no tām ir $\\alpha \\cdot \\frac{1+\\sqrt{5}}{2}=\\mathrm{z}$. Tātad 
+visi apskatāmā intervāla punkti ir vajadzīgā tipa vienādojumu saknes.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.11.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** Skaitļa $120$ apskatāmie dalītāji ir 
+$1;\\ 2;\\ 3;\\ 4;\\ 5;\\ 6;\\ 8;\\ 10;\\ 12;\\ 15;\\ 20;\\ 24;\\ 30;\\ 40;\\ 60;\\ 120$; to 
+summa ir $360$. Viegli redzēt, ka $120=60+40+20=1+2+3+4+5+6+8+10+12++15+24+30$.
+Tātad $120$ ir viens līdzsvarota skaitļa piemērs.
+
+**(B)** Pieņemsim, ka $n$ - līdzsvarots skaitlis, bet $p$ - pirmskaitlis, ar 
+kuru $n$ nedalās. Tad, ja skaitļa $n$ dalītāji ir 
+$d_{1}; d_{2}; \\ldots; d_{k}$, tad skaitļa $n \\cdot p$ dalītāji ir 
+$d_{1}; d_{2}; \\ldots; d_{k}, pd_{1}; pd_{2}; \\ldots; pd_{k}$. Tāpēc skaidrs, 
+ka arī $n \\cdot p$ ir līdzsvarots.
+
+Tā kā pirmskaitļu ir bezgalīgi daudz, tad, sākot ar $120$, var konstruēt 
+aizvien jaunus līdzsvarotus skaitļus (piemēram, nākošais varētu būt 
+$120 \\cdot 7=840$)."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Skaitļa $120$ apskatāmie dalītāji ir 
+$1;\\ 2;\\ 3;\\ 4;\\ 5;\\ 6;\\ 8;\\ 10;\\ 12;\\ 15;\\ 20;\\ 24;\\ 30;\\ 40;\\ 60;\\ 120$; to 
+summa ir $360$. Viegli redzēt, ka $120=60+40+20=1+2+3+4+5+6+8+10+12++15+24+30$.
+Tātad $120$ ir viens līdzsvarota skaitļa piemērs.</p>
+<p><strong>(B)</strong> Pieņemsim, ka $n$ - līdzsvarots skaitlis, bet $p$ - pirmskaitlis, ar 
+kuru $n$ nedalās. Tad, ja skaitļa $n$ dalītāji ir 
+$d_{1}; d_{2}; \\ldots; d_{k}$, tad skaitļa $n \\cdot p$ dalītāji ir 
+$d_{1}; d_{2}; \\ldots; d_{k}, pd_{1}; pd_{2}; \\ldots; pd_{k}$. Tāpēc skaidrs, 
+ka arī $n \\cdot p$ ir līdzsvarots.</p>
+<p>Tā kā pirmskaitļu ir bezgalīgi daudz, tad, sākot ar $120$, var konstruēt 
+aizvien jaunus līdzsvarotus skaitļus (piemēram, nākošais varētu būt 
+$120 \\cdot 7=840$).</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.11.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Atliekam uz $BA$ tādu punktu $N$, ka $BN=BC$. Tad $\\triangle BCN$ - regulārs, 
+tāpēc $\\sphericalangle CNA=120^{\\circ}$ un $CN=CD$. Tā kā 
+$\\sphericalangle B+\\sphericalangle D=180^{\\circ}$, tad 
+$\\sphericalangle D=120^{\\circ}$; tātad 
+$\\sphericalangle CNA=\\sphericalangle CDA$. Tā kā vienādās hordas $CB$ un $CD$ 
+savelk vienādus lokus, tad $\\sphericalangle NAC=\\sphericalangle DAC$. Secinām, 
+ka $\\sphericalangle NCA=\\sphericalangle DCA$ (katrā trijstūrī iekšējo leņķu 
+summa ir $180^{\\circ}$). Tāpēc $\\triangle CNA=\\triangle CDA\\ (m \\ell m)$; tātad
+$NA=DA$. No tā seko vajadzīgais.
+
+![](LV.NOL.2005.11.4A.png)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Atliekam uz $BA$ tādu punktu $N$, ka $BN=BC$. Tad $\\triangle BCN$ - regulārs, 
+tāpēc $\\sphericalangle CNA=120^{\\circ}$ un $CN=CD$. Tā kā 
+$\\sphericalangle B+\\sphericalangle D=180^{\\circ}$, tad 
+$\\sphericalangle D=120^{\\circ}$; tātad 
+$\\sphericalangle CNA=\\sphericalangle CDA$. Tā kā vienādās hordas $CB$ un $CD$ 
+savelk vienādus lokus, tad $\\sphericalangle NAC=\\sphericalangle DAC$. Secinām, 
+ka $\\sphericalangle NCA=\\sphericalangle DCA$ (katrā trijstūrī iekšējo leņķu 
+summa ir $180^{\\circ}$). Tāpēc $\\triangle CNA=\\triangle CDA\\ (m \\ell m)$; tātad
+$NA=DA$. No tā seko vajadzīgais.</p>
+<p><img alt="" src="LV.NOL.2005.11.4A.png" /></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.11.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** Pieņemsim, ka tāda pāra nav. Lūgsim katram zēnam uzrakstīt $y$ dažādas 
+kartītes - katru ar savu vārdu un kādu tās meitenes vārdu, kas viņam patīk. 
+Līdzīgu darbu lūgsim izdarīt meitenēm. Tā kā savstarpēju simpātiju nav, tad nav
+divu kartīšu, uz kurām būtu vienādi uzraksti; tāpēc kartīšu nav vairāk par 
+$n \\cdot n=n^{2}$. No otras puses, kartīšu ir 
+$x \\cdot n+y \\cdot n=(x+y) \\cdot n>n \\cdot n=n^{2}$ - pretruna.
+
+**(B)** Attēlosim meitenes ar punktiem riņķa līnijas iekšpusē, bet zēnus - ar 
+punktiem riņķa līnijas ārpusē (skat.zīm., kur $n=9$).
+
+![](LV.NOL.2005.11.5A.png)
+
+Ja katrai meitenei patīk $x$ zēni pulksteņa rādītāja kustības virzienā, sākot 
+ar to, kurš stāv viņai blakus, bet katram zēnam - $y$ meitenes pulksteņa 
+rādītāja kustības virzienā, sākot ar to, kura stāv viņam vienu pozīciju 
+priekšā, tad savstarpēju simpātiju nav."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Pieņemsim, ka tāda pāra nav. Lūgsim katram zēnam uzrakstīt $y$ dažādas 
+kartītes - katru ar savu vārdu un kādu tās meitenes vārdu, kas viņam patīk. 
+Līdzīgu darbu lūgsim izdarīt meitenēm. Tā kā savstarpēju simpātiju nav, tad nav
+divu kartīšu, uz kurām būtu vienādi uzraksti; tāpēc kartīšu nav vairāk par 
+$n \\cdot n=n^{2}$. No otras puses, kartīšu ir 
+$x \\cdot n+y \\cdot n=(x+y) \\cdot n>n \\cdot n=n^{2}$ - pretruna.</p>
+<p><strong>(B)</strong> Attēlosim meitenes ar punktiem riņķa līnijas iekšpusē, bet zēnus - ar 
+punktiem riņķa līnijas ārpusē (skat.zīm., kur $n=9$).</p>
+<p><img alt="" src="LV.NOL.2005.11.5A.png" /></p>
+<p>Ja katrai meitenei patīk $x$ zēni pulksteņa rādītāja kustības virzienā, sākot 
+ar to, kurš stāv viņai blakus, bet katram zēnam - $y$ meitenes pulksteņa 
+rādītāja kustības virzienā, sākot ar to, kura stāv viņam vienu pozīciju 
+priekšā, tad savstarpēju simpātiju nav.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.12.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apzīmēsim vienādojuma kreiso pusi ar $a$; tad labās puses mazināmais ir 
+$a \\cdot x$, bet mazinātājs ir $\\frac{a}{x}$. Iegūstam vienādojumu 
+$a=ax-\\frac{a}{x}$ jeb
+
+$$a\\left(1-x+\\frac{1}{x}\\right)=0$$
+
+Tā kā pie $x>0$ arī $a>0$, iegūstam $1-x+\\frac{1}{x}=0$, no kurienes 
+$x=\\frac{1+\\sqrt{5}}{2}$ (otra sakne neder, jo $x>0$)."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apzīmēsim vienādojuma kreiso pusi ar $a$; tad labās puses mazināmais ir 
+$a \\cdot x$, bet mazinātājs ir $\\frac{a}{x}$. Iegūstam vienādojumu 
+$a=ax-\\frac{a}{x}$ jeb</p>
+<p>$$a\\left(1-x+\\frac{1}{x}\\right)=0$$
+
+Tā kā pie $x&gt;0$ arī $a&gt;0$, iegūstam $1-x+\\frac{1}{x}=0$, no kurienes 
+$x=\\frac{1+\\sqrt{5}}{2}$ (otra sakne neder, jo $x&gt;0$).</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.12.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** Pieņemsim no pretējā, ka visiem naturāliem $k$ pastāv nevienādība 
+$a_{k}>0$. Tā kā virkne ir dilstoša, tad $a_{k} \\leq 60$; tāpēc 
+$a_{n+1} \\leq a_{n}-\\frac{1}{60}$ visiem $n$. Tāpēc 
+$a_{n+1} \\leq a_{1}-\\frac{n}{60}=60-\\frac{n}{60}<0$ pie $n>3600$ - pretruna.
+
+**(B)** Pieņemsim no pretējā, ka $a_{k}>0$ visiem $k \\leq 2005$. Spriežot 
+līdzīgi kā (A) punktā, pakāpeniski iegūstam
+
+$$\\begin{array}{ll}
+a_{301}<60-\\frac{300}{60}=55 & a_{1576}<30-\\frac{150}{30}=25 \\\\
+a_{576}<55-\\frac{275}{55}=50 & a_{1701}<25-\\frac{125}{25}=20 \\\\
+a_{826}<50-\\frac{250}{50}=45 & a_{1801}<20-\\frac{100}{20}=15 \\\\
+a_{1051}<45-\\frac{225}{45}=40 & a_{1876}<15-\\frac{75}{15}=10 \\\\
+a_{1251}<40-\\frac{200}{40}=35 & a_{1976}<10-\\frac{100}{10}=0 \\text { - pretruna. } \\\\
+a_{1426}<35-\\frac{175}{35}=30 &
+\\end{array}$$"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Pieņemsim no pretējā, ka visiem naturāliem $k$ pastāv nevienādība 
+$a_{k}>0$. Tā kā virkne ir dilstoša, tad $a_{k} \\leq 60$; tāpēc 
+$a_{n+1} \\leq a_{n}-\\frac{1}{60}$ visiem $n$. Tāpēc 
+$a_{n+1} \\leq a_{1}-\\frac{n}{60}=60-\\frac{n}{60}<0$ pie $n>3600$ - pretruna.</p>
+<p><strong>(B)</strong> Pieņemsim no pretējā, ka $a_{k}>0$ visiem $k \\leq 2005$. Spriežot 
+līdzīgi kā (A) punktā, pakāpeniski iegūstam</p>
+<p>$$\\begin{array}{ll}
+a_{301}<60-\\frac{300}{60}=55 & a_{1576}<30-\\frac{150}{30}=25 \\\\
+a_{576}<55-\\frac{275}{55}=50 & a_{1701}<25-\\frac{125}{25}=20 \\\\
+a_{826}<50-\\frac{250}{50}=45 & a_{1801}<20-\\frac{100}{20}=15 \\\\
+a_{1051}<45-\\frac{225}{45}=40 & a_{1876}<15-\\frac{75}{15}=10 \\\\
+a_{1251}<40-\\frac{200}{40}=35 & a_{1976}<10-\\frac{100}{10}=0 \\text { - pretruna. } \\\\
+a_{1426}<35-\\frac{175}{35}=30 &
+\\end{array}$$</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.12.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Izmantosim matemātisko indukciju. Ja $n=1$, vieninieks jau atrodas vajadzīgajā 
+vietā. Pieņemsim, ka apgalvojums ir pareizs pie $n=1;\\ 2;\\ \\ldots;\\ m$, un 
+apskatīsim situāciju, kad rindā izrakstīti skaitļi no $1$ līdz $m+1$ ieskaitot.
+Pieņemsim, ka vieninieks nekad neatradīsies pirmajā vietā. Šķirosim divus 
+gadījumus:
+
+**(A)** pirmajā vietā kādreiz atradīsies skaitlis $m+1$.Tad ar nākošo gājienu 
+tas nonāks pēdējā vietā un tātad turpmāk vairs neizkustēsies. Tāpēc, sākot ar 
+šo brīdi, visas darbības notiks ar skaitļiem no $1$ līdz $m$ ieskaitot, un 
+vieninieks nonāks virknes sākumā saskaņā ar induktīvo hipotēzi.
+
+**(B)** Skaitlis $(m+1)$ **nekad** neatradīsies pirmajā vietā. Ja $(m+1)$ jau 
+sākumā atrodas pēdējā vietā, spriežam kā (A) gadījumā. Ja nē, $(m+1)$ vienmēr 
+atrodas **starp** pirmo un pēdējo vietu. Tad skaitlis $k$, kas sākumā atrodas 
+pēdējā vietā, nekad no tās neizkustas. Tāpēc, ja mēs **apmainām vietām** 
+$(m+1)$ un $k$, tas neatstās nekādu iespaidu uz vieninieka kustību. Tālāk 
+atsaucamies uz induktīvo hipotēzi."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Izmantosim matemātisko indukciju. Ja $n=1$, vieninieks jau atrodas vajadzīgajā 
+vietā. Pieņemsim, ka apgalvojums ir pareizs pie $n=1;\\ 2;\\ \\ldots;\\ m$, un 
+apskatīsim situāciju, kad rindā izrakstīti skaitļi no $1$ līdz $m+1$ ieskaitot.
+Pieņemsim, ka vieninieks nekad neatradīsies pirmajā vietā. Šķirosim divus 
+gadījumus:</p>
+<p><strong>(A)</strong> pirmajā vietā kādreiz atradīsies skaitlis $m+1$.Tad ar nākošo gājienu 
+tas nonāks pēdējā vietā un tātad turpmāk vairs neizkustēsies. Tāpēc, sākot ar 
+šo brīdi, visas darbības notiks ar skaitļiem no $1$ līdz $m$ ieskaitot, un 
+vieninieks nonāks virknes sākumā saskaņā ar induktīvo hipotēzi.</p>
+<p><strong>(B)</strong> Skaitlis $(m+1)$ <strong>nekad</strong> neatradīsies pirmajā vietā. Ja $(m+1)$ jau 
+sākumā atrodas pēdējā vietā, spriežam kā (A) gadījumā. Ja nē, $(m+1)$ vienmēr 
+atrodas <strong>starp</strong> pirmo un pēdējo vietu. Tad skaitlis $k$, kas sākumā atrodas 
+pēdējā vietā, nekad no tās neizkustas. Tāpēc, ja mēs <strong>apmainām vietām</strong> 
+$(m+1)$ un $k$, tas neatstās nekādu iespaidu uz vieninieka kustību. Tālāk 
+atsaucamies uz induktīvo hipotēzi.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.12.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Pagarinām $NM$ līdz krustpunktam $S$ ar riņķa līniju. Tā kā 
+$\\sphericalangle BMS=\\sphericalangle BMK$, tad $K$ un $S$ ir simetriski 
+attiecībā pret $AB$. Tā kā $\\sphericalangle LNS=90^{\\circ}$, tad $LS$ ir 
+diametrs. Tāpēc $\\sphericalangle LKS=90^{\\circ}$. Tātad $LK \\perp KS$ un 
+$AB \\perp KS$; tātad $LK \\parallel AB$, k.b.j.
+
+![](LV.NOL.2005.12.4A.png)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Pagarinām $NM$ līdz krustpunktam $S$ ar riņķa līniju. Tā kā 
+$\\sphericalangle BMS=\\sphericalangle BMK$, tad $K$ un $S$ ir simetriski 
+attiecībā pret $AB$. Tā kā $\\sphericalangle LNS=90^{\\circ}$, tad $LS$ ir 
+diametrs. Tāpēc $\\sphericalangle LKS=90^{\\circ}$. Tātad $LK \\perp KS$ un 
+$AB \\perp KS$; tātad $LK \\parallel AB$, k.b.j.</p>
+<p><img alt="" src="LV.NOL.2005.12.4A.png" /></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.12.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Apzīmēsim trijstūra malu garumus ar $a,\\ b,\\ c;$ apzīmēsim $a+b+c=x$. No Herona
+formulas iegūstam
+
+$L^{2}=\\frac{x}{2} \\cdot\\left(\\frac{x}{2}-a\\right)\\left(\\frac{x}{2}-b\\right)\\left(\\frac{x}{2}-c\\right)$
+jeb $16L^{2}=x(x-2a)(x-2b)(x-2c)$
+
+Tā kā $16L^{2}$ ir pāra skaitlis, tad arī $x$ ir pāra skaitlis. Šķirojam divas 
+iespējas:
+
+1) visi $a,\\ b,\\ c$ ir pāra skaitļi; tad $a=b=c=2$ un 
+   $L=\\frac{\\sqrt{3}}{4} \\cdot 2^{2}=\\sqrt{3} \\notin N$.
+2) viens no skaitļiem $a,\\ b,\\ c$ ir pāra skaitlis, bet divi - nepāra. Varam 
+   pieņemt, ka $a$ pāra skaitlis; tad $a=2$. Ja $b \\neq c$, varam pieņemt, ka 
+   $b<c$. Tā kā $b$ un $c$ - nepāra pirmskaitļi, tad $c-b \\geq 2$, jeb 
+   $c-b \\geq a$, kas ir pretruna ar trijstūra nevienādību. Tāpēc $b=c$, un 
+   iegūstam
+
+$16L^{2}=x(x-4)(x-2b)^{2}$  
+$16L^{2}=(2b+2)(2b-2) \\cdot 4$  
+$(2b+2)(2b-2)=4L^{2}$  
+$b^{2}-1=L^{2}$  
+$(b-L)(b+L)=1$  
+tāpēc $b-L=\\frac{1}{b+L}$
+
+Acīmredzot tas nav iespējams, jo $b-L \\in Z$, bet $b+L>3$, tāpēc 
+$\\frac{1}{b+L} \\notin Z$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Apzīmēsim trijstūra malu garumus ar $a,\\ b,\\ c;$ apzīmēsim $a+b+c=x$. No Herona
+formulas iegūstam</p>
+<p>$L^{2}=\\frac{x}{2} \\cdot\\left(\\frac{x}{2}-a\\right)\\left(\\frac{x}{2}-b\\right)\\left(\\frac{x}{2}-c\\right)$
+jeb $16L^{2}=x(x-2a)(x-2b)(x-2c)$</p>
+<p>Tā kā $16L^{2}$ ir pāra skaitlis, tad arī $x$ ir pāra skaitlis. Šķirojam divas 
+iespējas:</p>
+<p>1) visi $a,\\ b,\\ c$ ir pāra skaitļi; tad $a=b=c=2$ un 
+   $L=\\frac{\\sqrt{3}}{4} \\cdot 2^{2}=\\sqrt{3} \\notin N$.
+2) viens no skaitļiem $a,\\ b,\\ c$ ir pāra skaitlis, bet divi - nepāra. Varam 
+   pieņemt, ka $a$ pāra skaitlis; tad $a=2$. Ja $b \\neq c$, varam pieņemt, ka 
+   $b<c$. Tā kā $b$ un $c$ - nepāra pirmskaitļi, tad $c-b \\geq 2$, jeb 
+   $c-b \\geq a$, kas ir pretruna ar trijstūra nevienādību. Tāpēc $b=c$, un 
+   iegūstam</p>
+<p>$16L^{2}=x(x-4)(x-2b)^{2}$<br />
+$16L^{2}=(2b+2)(2b-2) \\cdot 4$<br />
+$(2b+2)(2b-2)=4L^{2}$<br />
+$b^{2}-1=L^{2}$<br />
+$(b-L)(b+L)=1$<br />
+tāpēc $b-L=\\frac{1}{b+L}$</p>
+<p>Acīmredzot tas nav iespējams, jo $b-L \\in Z$, bet $b+L>3$, tāpēc 
+$\\frac{1}{b+L} \\notin Z$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.5.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** jā, var; piemēram,
+
+$$\\mathbf{11,\\ 1,\\ 12,\\ 2,\\ 13,\\ 3,\\ 14,\\ 4,\\ 15,\\ 5,\\ 16,\\ 6,\\ 17,\\ 7,\\ 18,\\ 8,\\ 19,\\ 9,\\ 20,\\ 10}$$
+
+**(B)** nē, nevar. Skaitlim $10$ iespējams tikai viens kaimiņš - skaitlis $20$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> jā, var; piemēram,</p>
+<p>$$\\mathbf{11,\\ 1,\\ 12,\\ 2,\\ 13,\\ 3,\\ 14,\\ 4,\\ 15,\\ 5,\\ 16,\\ 6,\\ 17,\\ 7,\\ 18,\\ 8,\\ 19,\\ 9,\\ 20,\\ 10}$$
+
+**(B)** nē, nevar. Skaitlim $10$ iespējams tikai viens kaimiņš - skaitlis $20$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.5.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+No $22.$ līdz $60.$ vagoniņam, tos abus ieskaitot, ir $60-22+1=39$ vagoniņi. 
+Atbilstošajā posmā apakšā arī ir $39$ vagoniņi. Tātad no $86.$ līdz $n$-jam 
+vagoniņam, tos abus ieskaitot, ir $39-12=27$ vagoniņi. Tāpēc $n=86+27-1=112$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>No $22.$ līdz $60.$ vagoniņam, tos abus ieskaitot, ir $60-22+1=39$ vagoniņi. 
+Atbilstošajā posmā apakšā arī ir $39$ vagoniņi. Tātad no $86.$ līdz $n$-jam 
+vagoniņam, tos abus ieskaitot, ir $39-12=27$ vagoniņi. Tāpēc $n=86+27-1=112$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.5.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+$\\underline{Atbilde:}$ $14.$
+
+$\\underline{Risinājums.}$ Visas konfektes nevar savākt vienā kastē, jo to ir 
+nepāra skaits, bet pēc katra gājiena kastītē, kurā ieliek konfektes, to ir pāra
+skaits. Kā savākt kopā $14$ konfektes, redzams shēmā 1.zīm.
+
+![](LV.NOL.2005.5.3A.png)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$\\underline{Atbilde:}$ $14.$</p>
+<p>$\\underline{Risinājums.}$ Visas konfektes nevar savākt vienā kastē, jo to ir 
+nepāra skaits, bet pēc katra gājiena kastītē, kurā ieliek konfektes, to ir pāra
+skaits. Kā savākt kopā $14$ konfektes, redzams shēmā 1.zīm.</p>
+<p><img alt="" src="LV.NOL.2005.5.3A.png" /></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.5.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+$\\underline{Atbilde:}$ $5$ krāsas.
+
+$\\underline{Risinājums.}$ Ja būtu $6$ krāsas $a,\\ b,\\ c,\\ d,\\ e,\\ f$, tad būtu 
+jābūt $15$ blakus esošu krāsu pāru 
+$ab,\\ ac,\\ ad,\\ ae,\\ af,\\ bc,\\ bd,\\ be,\\ bf,\\ cd,\\ ce,\\ cf,\\ de,\\ df,\\ ef$. Bet
+ir tikai $12$ malas, pa kurām robežojas $2$ rūtiņas. Piemēru ar $5$ krāsām 
+skat. 2.zīm."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$\\underline{Atbilde:}$ $5$ krāsas.</p>
+<p>$\\underline{Risinājums.}$ Ja būtu $6$ krāsas $a,\\ b,\\ c,\\ d,\\ e,\\ f$, tad būtu 
+jābūt $15$ blakus esošu krāsu pāru 
+$ab,\\ ac,\\ ad,\\ ae,\\ af,\\ bc,\\ bd,\\ be,\\ bf,\\ cd,\\ ce,\\ cf,\\ de,\\ df,\\ ef$. Bet
+ir tikai $12$ malas, pa kurām robežojas $2$ rūtiņas. Piemēru ar $5$ krāsām 
+skat. 2.zīm.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.5.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** jā. Piemēram, var $20$ reizes veikt ciklisku maršrutu $ABCDEA$ un $1$ 
+reizi - maršrutu $ABCFDEA$.
+
+**(B)** nē. Visu palikušo "ārējo" ceļu garumi ir pāra skaitļi, "radiālo" ceļu 
+garumi - nepāra. Lai sāktu un beigtu kustību ārējā virsotnē $A$, pāra skaitu 
+reižu jābrauc pa radiāliem ceļiem. Tāpēc maršruta kopgarums izsacīsies ar pāra 
+skaitu kilometru."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> jā. Piemēram, var $20$ reizes veikt ciklisku maršrutu $ABCDEA$ un $1$ 
+reizi - maršrutu $ABCFDEA$.</p>
+<p><strong>(B)</strong> nē. Visu palikušo "ārējo" ceļu garumi ir pāra skaitļi, "radiālo" ceļu 
+garumi - nepāra. Lai sāktu un beigtu kustību ārējā virsotnē $A$, pāra skaitu 
+reižu jābrauc pa radiāliem ceļiem. Tāpēc maršruta kopgarums izsacīsies ar pāra 
+skaitu kilometru.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.6.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+$\\underline{Atbilde:}$ $17$;
+
+**(A)** tabula ar skaitļu summu $17$ redzama 3.zīm.
+
+**(B)** mazākā iespējamā summa vienā rindā vai kolonā ir $3$. Tāpēc visu šo 
+sešu summu summa $S$ nav mazāka par $3+4+5+6+7+8=33$. Tā kā $S$ ir pāra 
+skaitlis (katrs tabulas skaitlis tajā ieskaitīts divas reizes), tad 
+$S \\geq 34$, no kurienes seko, ka tabulā ierakstito skaitļu summa nav mazāka 
+par $17$.
+
+![](LV.NOL.2005.6.1A.png)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$\\underline{Atbilde:}$ $17$;</p>
+<p><strong>(A)</strong> tabula ar skaitļu summu $17$ redzama 3.zīm.</p>
+<p><strong>(B)</strong> mazākā iespējamā summa vienā rindā vai kolonā ir $3$. Tāpēc visu šo 
+sešu summu summa $S$ nav mazāka par $3+4+5+6+7+8=33$. Tā kā $S$ ir pāra 
+skaitlis (katrs tabulas skaitlis tajā ieskaitīts divas reizes), tad 
+$S \\geq 34$, no kurienes seko, ka tabulā ierakstito skaitļu summa nav mazāka 
+par $17$.</p>
+<p><img alt="" src="LV.NOL.2005.6.1A.png" /></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.6.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** jā; piemēram, patiesie rūķīši un meļi stāv pamīšus.
+
+**(B)** nē. Sanumurēsim nūķīšus pēc kārtas ar numuriem 
+$1;\\ 2;\\ 3;\\ \\ldots;\\ 2005$. Ja $1.$ rūķītis ir patiess, tad otrais ir melis, 
+trešais - patiess, ceturtais - melis, $\\ldots$, $2005$-ais - patiess, pirmais -
+melis. Iegūta pretruna. Līdzīgi iegūst pretrunu, ja $1.$ rūķītis ir melis."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> jā; piemēram, patiesie rūķīši un meļi stāv pamīšus.</p>
+<p><strong>(B)</strong> nē. Sanumurēsim nūķīšus pēc kārtas ar numuriem 
+$1;\\ 2;\\ 3;\\ \\ldots;\\ 2005$. Ja $1.$ rūķītis ir patiess, tad otrais ir melis, 
+trešais - patiess, ceturtais - melis, $\\ldots$, $2005$-ais - patiess, pirmais -
+melis. Iegūta pretruna. Līdzīgi iegūst pretrunu, ja $1.$ rūķītis ir melis.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.6.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+$\\underline{Atbilde:}$ $4$ vai $8$ trīs rūtiņu gabali un atbilstoši $6$ vai $3$
+četru rūtiņu gabali.
+
+$\\underline{Risinājums.}$ Apzīmēsim $3$ rūtiņu gabalu skaitu ar $a$, bet $4$ 
+rūtiņu gabalu skaitu ar $b$. Tad $3a+4b=36$, $a$ un $b$ - naturāli skaitļi. 
+Skaidrs, ka $1 \\leq a<12$. Pārbaudot visas iespējamās naturālās $a$ vērtības, 
+redzam: $b$ iznāk naturāls tikai pie $a=4$ (tad $b=6$) un $a=8$ (tad $b=3$). 
+Atbilstoši sadalījumi redzami 4.zīm."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$\\underline{Atbilde:}$ $4$ vai $8$ trīs rūtiņu gabali un atbilstoši $6$ vai $3$
+četru rūtiņu gabali.</p>
+<p>$\\underline{Risinājums.}$ Apzīmēsim $3$ rūtiņu gabalu skaitu ar $a$, bet $4$ 
+rūtiņu gabalu skaitu ar $b$. Tad $3a+4b=36$, $a$ un $b$ - naturāli skaitļi. 
+Skaidrs, ka $1 \\leq a<12$. Pārbaudot visas iespējamās naturālās $a$ vērtības, 
+redzam: $b$ iznāk naturāls tikai pie $a=4$ (tad $b=6$) un $a=8$ (tad $b=3$). 
+Atbilstoši sadalījumi redzami 4.zīm.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.6.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+$\\underline{Atbilde:}$ $n=87$;
+
+$\\underline{Risinājums.}$ Ir $14$ skaitļi, kas dalās ar 
+$7:\\ 1 \\cdot 7,\\ 2 \\cdot 7,\\ \\ldots,\\ 13 \\cdot 7=91,\\ 14 \\cdot 7=98$. Ja uz 
+tāfeles ir $87$ skaitļi, tad tur nav $13$ skaitļu; tad tur ir **vismaz viens 
+skaitlis, kas dalās ar** $\\mathbf{7}$. Tā kā ir $33$ skaitļi, kas dalās ar $3$,
+un $33>13$, tad uz tāfeles ir **vismaz viens skaitlis, kas dalās ar** 
+$\\mathbf{3}$. N̦emam abus norādītos skaitļus (ja tie sakrīt, otro skaitli 
+izvēlamies patvaļīgi).
+
+Ja uz tāfeles ir $86$ skaitļi, tad var gadīties, ka tur nav neviena skaitļa, 
+kas dalās ar $7$, un tad divus meklējamos skaitļus atrast nevar."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$\\underline{Atbilde:}$ $n=87$;</p>
+<p>$\\underline{Risinājums.}$ Ir $14$ skaitļi, kas dalās ar 
+$7:\\ 1 \\cdot 7,\\ 2 \\cdot 7,\\ \\ldots,\\ 13 \\cdot 7=91,\\ 14 \\cdot 7=98$. Ja uz 
+tāfeles ir $87$ skaitļi, tad tur nav $13$ skaitļu; tad tur ir <strong>vismaz viens 
+skaitlis, kas dalās ar</strong> $\\mathbf{7}$. Tā kā ir $33$ skaitļi, kas dalās ar $3$,
+un $33>13$, tad uz tāfeles ir <strong>vismaz viens skaitlis, kas dalās ar</strong> 
+$\\mathbf{3}$. N̦emam abus norādītos skaitļus (ja tie sakrīt, otro skaitli 
+izvēlamies patvaļīgi).</p>
+<p>Ja uz tāfeles ir $86$ skaitļi, tad var gadīties, ka tur nav neviena skaitļa, 
+kas dalās ar $7$, un tad divus meklējamos skaitļus atrast nevar.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.6.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+To, ka kompānija $X$ piemānījusi kompāniju $Y$, attēlosim ar $X \\rightarrow Y$.
+
+Apskatām vienu kompāniju $A$; eksistē tāda $C$, ka $A \\rightarrow C$, un tātad 
+$B$, ka $A \\rightarrow B \\rightarrow C$. Eksistē arī tāda $D$, ka 
+$A \\rightarrow D \\rightarrow B \\rightarrow C$, pie tam $D \\neq C$ (pretējā 
+gadījumā būtu $B \\rightarrow C$ un $C \\rightarrow B$). Tātad $A$ ir piemānījusi
+$B,\\ C$ un $D$.
+
+Piemērs ar $7$ kompānijām: 
+$1 \\rightarrow 2 \\rightarrow 3 \\rightarrow 4 \\rightarrow 5 \\rightarrow 6 \\rightarrow 1,\\ 1 \\rightarrow 5 \\rightarrow 3 \\rightarrow 1,\\ 2 \\rightarrow 4 \\rightarrow 6 \\rightarrow 2,\\ 1 \\rightarrow 7 \\rightarrow 4 \\rightarrow 1$,
+$3 \\rightarrow 7 \\rightarrow 6 \\rightarrow 3,\\ 5 \\rightarrow 7 \\rightarrow 2 \\rightarrow 5$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>To, ka kompānija $X$ piemānījusi kompāniju $Y$, attēlosim ar $X \\rightarrow Y$.</p>
+<p>Apskatām vienu kompāniju $A$; eksistē tāda $C$, ka $A \\rightarrow C$, un tātad 
+$B$, ka $A \\rightarrow B \\rightarrow C$. Eksistē arī tāda $D$, ka 
+$A \\rightarrow D \\rightarrow B \\rightarrow C$, pie tam $D \\neq C$ (pretējā 
+gadījumā būtu $B \\rightarrow C$ un $C \\rightarrow B$). Tātad $A$ ir piemānījusi
+$B,\\ C$ un $D$.</p>
+<p>Piemērs ar $7$ kompānijām: 
+$1 \\rightarrow 2 \\rightarrow 3 \\rightarrow 4 \\rightarrow 5 \\rightarrow 6 \\rightarrow 1,\\ 1 \\rightarrow 5 \\rightarrow 3 \\rightarrow 1,\\ 2 \\rightarrow 4 \\rightarrow 6 \\rightarrow 2,\\ 1 \\rightarrow 7 \\rightarrow 4 \\rightarrow 1$,
+$3 \\rightarrow 7 \\rightarrow 6 \\rightarrow 3,\\ 5 \\rightarrow 7 \\rightarrow 2 \\rightarrow 5$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.7.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+$\\underline{Atbilde:}$ $6$ skaitļus.
+
+**(A)** var izsvītrot visus pāra skaitļus
+
+**(B)** katrā no skaitļu pāriem 
+$(1,\\ 2),\\ (3,\\ 4),\\ (5,\\ 6),\\ (7,\\ 10),\\ (8,\\ 9),\\ (11,\\ 12)$ vismaz viens 
+skaitlis ir jāsvītro."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$\\underline{Atbilde:}$ $6$ skaitļus.</p>
+<p><strong>(A)</strong> var izsvītrot visus pāra skaitļus</p>
+<p><strong>(B)</strong> katrā no skaitļu pāriem 
+$(1,\\ 2),\\ (3,\\ 4),\\ (5,\\ 6),\\ (7,\\ 10),\\ (8,\\ 9),\\ (11,\\ 12)$ vismaz viens 
+skaitlis ir jāsvītro.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.7.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Katri divi grafiki krustojas. Ja $1.$ un $3.$ grafiks krustojas punktā 
+$(a;\\ b)$, tad $b=2003a+4197$ un $b=2005a+4199$. Saskaitot šīs vienādības un 
+izdalot rezultātu ar $2$, iegūstam $b=2004a+4198$, t.i., $(a,\\ b)$ atrodas arī 
+uz trešā grafika."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Katri divi grafiki krustojas. Ja $1.$ un $3.$ grafiks krustojas punktā 
+$(a;\\ b)$, tad $b=2003a+4197$ un $b=2005a+4199$. Saskaitot šīs vienādības un 
+izdalot rezultātu ar $2$, iegūstam $b=2004a+4198$, t.i., $(a,\\ b)$ atrodas arī 
+uz trešā grafika.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.7.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+$\\underline{Atbilde:}$ **(A)** jā; **(B)** nē.
+
+$\\underline{Risinājums.}$ **(B)** Visu plāksnīšu apkārtmēru summa ir $300$. 
+Tāpēc saliktās figūras apkārtmērs ir $300-2n$, kur $n$ - to malu skaits, pa 
+kurām saskaras divas plāksnītes. Tātad apkārtmērs ir pāra skaitlis.
+
+Piemēru **(A)** gadījumam skat. 5.zīm.
+
+![](LV.NOL.2005.7.3A.png)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$\\underline{Atbilde:}$ <strong>(A)</strong> jā; <strong>(B)</strong> nē.</p>
+<p>$\\underline{Risinājums.}$ <strong>(B)</strong> Visu plāksnīšu apkārtmēru summa ir $300$. 
+Tāpēc saliktās figūras apkārtmērs ir $300-2n$, kur $n$ - to malu skaits, pa 
+kurām saskaras divas plāksnītes. Tātad apkārtmērs ir pāra skaitlis.</p>
+<p>Piemēru <strong>(A)</strong> gadījumam skat. 5.zīm.</p>
+<p><img alt="" src="LV.NOL.2005.7.3A.png" /></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.7.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** $12=1+2+3+6$
+
+**(B)** $12n=n+2n+3n+6n$
+
+**(C)** ja $a$ - nepāra skaitlis, tad visi tā dalītāji arī ir nepāra skaitļi. 
+Bet četru nepāra skaitļu summa ir pāra skaitlis, tātad nav $a$.
+
+*Piezīme:* Par pusperfektiem skaitļiem sauc naturālus skaitļus, 
+kas vienādi ar dažu savu dalītāju summu: 
+[Semiperfect number](https://en.wikipedia.org/wiki/Semiperfect_number)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> $12=1+2+3+6$</p>
+<p><strong>(B)</strong> $12n=n+2n+3n+6n$</p>
+<p><strong>(C)</strong> ja $a$ - nepāra skaitlis, tad visi tā dalītāji arī ir nepāra skaitļi. 
+Bet četru nepāra skaitļu summa ir pāra skaitlis, tātad nav $a$.</p>
+<p><em>Piezīme:</em> Par pusperfektiem skaitļiem sauc naturālus skaitļus, 
+kas vienādi ar dažu savu dalītāju summu: 
+<a href="https://en.wikipedia.org/wiki/Semiperfect_number">Semiperfect number</a></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.7.4.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
+    eliozo:solutionText """## Atrisinājums
+
+Īpašu skaitļu ir bezgalīgi daudz, jo 
+$n=n/2+n/3+n/7+n/42$. Tātad visi skaitļi 
+formā $42k$ ir īpaši. 
+
+**(C)** Nav nepāra īpašu skaitļu, jo 
+pat lielākie iespējamie dalītāji ir par mazu:
+
+$$\\frac{n}{3}+\\frac{n}{5}+\\frac{n}{7}+\\frac{n}{9} < n.$$
+
+Ievērojam arī, ka nepāra skaitļiem visi dalītāji ir nepāra 
+(pie tam nepāra skaitļa dalījums ar nepāra skaitli ir nepāra skaitlis). 
+Bet četru nepāru summa nevar būt pāru."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Īpašu skaitļu ir bezgalīgi daudz, jo 
+$n=n/2+n/3+n/7+n/42$. Tātad visi skaitļi 
+formā $42k$ ir īpaši. </p>
+<p><strong>(C)</strong> Nav nepāra īpašu skaitļu, jo 
+pat lielākie iespējamie dalītāji ir par mazu:</p>
+<p>$$\\frac{n}{3}+\\frac{n}{5}+\\frac{n}{7}+\\frac{n}{9} < n.$$</p>
+<p>Ievērojam arī, ka nepāra skaitļiem visi dalītāji ir nepāra 
+(pie tam nepāra skaitļa dalījums ar nepāra skaitli ir nepāra skaitlis). 
+Bet četru nepāru summa nevar būt pāru.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.7.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Uzliekam monētas uz kausiem pa $4$. Ja līdzsvara nav, ir divu dažādu masu 
+monētas. Ja līdzsvars ir, otrajā svēršanā uzliekam uz kausiem pa $2$ monētām no
+tām $4$, kas pirmajā svēršanā atradās uz viena kausa. Ja līdzsvara nav, ir divu
+dažādu masu monētas. Ja līdzsvars ir, uzliekam uz kausiem pa $1$ monētai no 
+tām, kas otrajā svēršanā atradās uz viena kausa. Ja līdzsvara nav, ir divu 
+dažādu masu monētas. Ja līdzsvars ir, visām monētām ir vienādas masas."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Uzliekam monētas uz kausiem pa $4$. Ja līdzsvara nav, ir divu dažādu masu 
+monētas. Ja līdzsvars ir, otrajā svēršanā uzliekam uz kausiem pa $2$ monētām no
+tām $4$, kas pirmajā svēršanā atradās uz viena kausa. Ja līdzsvara nav, ir divu
+dažādu masu monētas. Ja līdzsvars ir, uzliekam uz kausiem pa $1$ monētai no 
+tām, kas otrajā svēršanā atradās uz viena kausa. Ja līdzsvara nav, ir divu 
+dažādu masu monētas. Ja līdzsvars ir, visām monētām ir vienādas masas.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.8.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Ievērosim, ka:
+
+- ja $2^{n}$ sākas ar $1$, tad $2^{n+1}$ nesākas ar $1$,
+- $2^{n}$ ciparu skaits nevar par vairāk nekā $1$ pārsniegt $2^{n-1}$ ciparu 
+  skaitu,
+- ja $2^{n}$ sākas ar $1$, tad $2^{n}$ ir par $1$ ciparu vairāk nekā $2^{n-1}$.
+
+No šejienes izriet: sadalot skaitļus $2^{n},\\ n=1;\\ 2;\\ \\ldots;\\ 100$, grupās 
+pēc to ciparu skaita, pavisam ir $31$ grupa un katrā grupā (izņemot viencipara 
+pakāpes) ir tieši viena pakāpe, kas sākas ar ciparu $1$. Tāpēc uzdevuma atbilde
+ir $30$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Ievērosim, ka:</p>
+<ul>
+<li>ja $2^{n}$ sākas ar $1$, tad $2^{n+1}$ nesākas ar $1$,</li>
+<li>$2^{n}$ ciparu skaits nevar par vairāk nekā $1$ pārsniegt $2^{n-1}$ ciparu 
+  skaitu,</li>
+<li>ja $2^{n}$ sākas ar $1$, tad $2^{n}$ ir par $1$ ciparu vairāk nekā $2^{n-1}$.</li>
+</ul>
+<p>No šejienes izriet: sadalot skaitļus $2^{n},\\ n=1;\\ 2;\\ \\ldots;\\ 100$, grupās 
+pēc to ciparu skaita, pavisam ir $31$ grupa un katrā grupā (izņemot viencipara 
+pakāpes) ir tieši viena pakāpe, kas sākas ar ciparu $1$. Tāpēc uzdevuma atbilde
+ir $30$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.8.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+$\\underline{Atbilde:}$ $8$ rūtiņas.
+
+$\\underline{Risinājums.}$ Katrā $2 \\times 2$ rūtiņu kvadrātā ne vairāk kā $2$ 
+rūtiņas var būt izcilas: ja tādu būtu $3$, tad rūtiņa, kurā ierakstīts mazākais
+skaitlis no šiem trim, nevarētu būt izcila - pretruna. Tātad izcilu rūtiņu nav 
+vairāk par $4 \\cdot 2=8$. Piemēru ar $8$ izcilām rūtiņām skat. 6.zīm.
+
+![](LV.NOL.2005.8.2A.png)"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$\\underline{Atbilde:}$ $8$ rūtiņas.</p>
+<p>$\\underline{Risinājums.}$ Katrā $2 \\times 2$ rūtiņu kvadrātā ne vairāk kā $2$ 
+rūtiņas var būt izcilas: ja tādu būtu $3$, tad rūtiņa, kurā ierakstīts mazākais
+skaitlis no šiem trim, nevarētu būt izcila - pretruna. Tātad izcilu rūtiņu nav 
+vairāk par $4 \\cdot 2=8$. Piemēru ar $8$ izcilām rūtiņām skat. 6.zīm.</p>
+<p><img alt="" src="LV.NOL.2005.8.2A.png" /></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.8.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+$\\underline{Atbilde:}$ ar diviem jautājumiem.
+
+$\\underline{Atrisinājums.}$ Ar vienu jautājumu nepietiek: ja Andris pateiks 
+Jurim skaitli $x_{1}x_{2}x_{3}x_{4}x_{5}$, Juris nezinās, vai Andris, 
+iedomājies $x_{1}x_{2}x_{3}x_{4},\\ x_{1}x_{2}x_{3}x_{5},\\ x_{1}x_{3}x_{4}x_{5}$
+vai $x_{2}x_{3}x_{4}x_{5}$.
+
+Izmantojot divus jautājumus, Juris var rīkoties sekojoši. Pēc Andra pirmās 
+atbildes $A$ viņš izvēlas $5$ dažādus pirmskaitļus 
+$p_{1},\\ p_{2},\\ p_{3},\\ p_{4},\\ p_{5}$, ar kuriem nedalās $A$ (un tātad arī 
+$n$), un pasaka tos Andrim. Atkarībā no tā, ar kuru no šiem pirmskaitļiem dalās
+Andra otrā atbilde, Juris noskaidros $n$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$\\underline{Atbilde:}$ ar diviem jautājumiem.</p>
+<p>$\\underline{Atrisinājums.}$ Ar vienu jautājumu nepietiek: ja Andris pateiks 
+Jurim skaitli $x_{1}x_{2}x_{3}x_{4}x_{5}$, Juris nezinās, vai Andris, 
+iedomājies $x_{1}x_{2}x_{3}x_{4},\\ x_{1}x_{2}x_{3}x_{5},\\ x_{1}x_{3}x_{4}x_{5}$
+vai $x_{2}x_{3}x_{4}x_{5}$.</p>
+<p>Izmantojot divus jautājumus, Juris var rīkoties sekojoši. Pēc Andra pirmās 
+atbildes $A$ viņš izvēlas $5$ dažādus pirmskaitļus 
+$p_{1},\\ p_{2},\\ p_{3},\\ p_{4},\\ p_{5}$, ar kuriem nedalās $A$ (un tātad arī 
+$n$), un pasaka tos Andrim. Atkarībā no tā, ar kuru no šiem pirmskaitļiem dalās
+Andra otrā atbilde, Juris noskaidros $n$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.8.3.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
+    eliozo:solutionText """## Atrisinājums
+
+* Ar 1 gājienu nepietiek. Pirmajā gājienā Andris var atbildēt ar tādu $x$, 
+  kas dalās ar vairākiem $x_i$. 
+* Ar 2 gājieniem pietiek. Otrajā gājienā Juris nosauc 5 pirmskaitļus 
+  $p_i > x_1$ (kur $x_1$ - Andra pirmais nosauktais skaitlis). 
+  Atkarībā no tā, ar kuru pirmskaitli dalās Andra atbilde $x_2$, 
+  var noteikt $n$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<ul>
+<li>Ar 1 gājienu nepietiek. Pirmajā gājienā Andris var atbildēt ar tādu $x$, 
+  kas dalās ar vairākiem $x_i$. </li>
+<li>Ar 2 gājieniem pietiek. Otrajā gājienā Juris nosauc 5 pirmskaitļus 
+  $p_i > x_1$ (kur $x_1$ - Andra pirmais nosauktais skaitlis). 
+  Atkarībā no tā, ar kuru pirmskaitli dalās Andra atbilde $x_2$, 
+  var noteikt $n$.</li>
+</ul>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.8.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Punkts $C$ var atrasties vai nu uz $AB$ vidusperpendikula, vai uz 
+$r.l.\\ (A;\\ AB)$, vai uz $r.l.\\ (B;\\ AB)$. Atkarībā no šo $3$ līniju un $t$ 
+savstarpējā novietojuma tādu punktu $C$ uz taisnes $t$ var būt 
+$0;\\ 1;\\ 2;\\ 3;\\ 4;\\ 5$. **Visiem gadījumiem nepieciešami piemēri.**"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Punkts $C$ var atrasties vai nu uz $AB$ vidusperpendikula, vai uz 
+$r.l.\\ (A;\\ AB)$, vai uz $r.l.\\ (B;\\ AB)$. Atkarībā no šo $3$ līniju un $t$ 
+savstarpējā novietojuma tādu punktu $C$ uz taisnes $t$ var būt 
+$0;\\ 1;\\ 2;\\ 3;\\ 4;\\ 5$. <strong>Visiem gadījumiem nepieciešami piemēri.</strong></p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.8.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+$\\underline{Atbilde:}$ $x \\in\\{0;\\ \\pm 1;\\ \\pm 2;\\ \\pm 3\\}$.
+
+$\\underline{Risinājums.}$ Vienādojumu pakāpeniski pārveido par
+
+$$\\begin{aligned}
+& x\\left[x^{2}\\left(x^{2}-7\\right)^{2}-36\\right]=0 \\\\
+& x\\left[\\left(x^{2}\\right)^{3}-14\\left(x^{2}\\right)^{2}+49x^{2}-36\\right]=0 \\\\
+& x\\left(x^{2}-1\\right)\\left(x^{2}-4\\right)\\left(x^{2}-9\\right)=0
+\\end{aligned}$$
+
+utt."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$\\underline{Atbilde:}$ $x \\in\\{0;\\ \\pm 1;\\ \\pm 2;\\ \\pm 3\\}$.</p>
+<p>$\\underline{Risinājums.}$ Vienādojumu pakāpeniski pārveido par</p>
+<p>$$\\begin{aligned}
+& x\\left[x^{2}\\left(x^{2}-7\\right)^{2}-36\\right]=0 \\\\
+& x\\left[\\left(x^{2}\\right)^{3}-14\\left(x^{2}\\right)^{2}+49x^{2}-36\\right]=0 \\\\
+& x\\left(x^{2}-1\\right)\\left(x^{2}-4\\right)\\left(x^{2}-9\\right)=0
+\\end{aligned}$$</p>
+<p>utt.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.9.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Nevienādību pārveido par $(a-5)^{2}-(a-5)(b-5)+(b-5)^{2} \\geq 0$ un ievēro, ka 
+$x^{2}-xy+y^{2}=\\left(x-\\frac{y}{2}\\right)^{2}+\\frac{3}{4} y^{2} \\geq 0$."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Nevienādību pārveido par $(a-5)^{2}-(a-5)(b-5)+(b-5)^{2} \\geq 0$ un ievēro, ka 
+$x^{2}-xy+y^{2}=\\left(x-\\frac{y}{2}\\right)^{2}+\\frac{3}{4} y^{2} \\geq 0$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.9.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+Šādi pirmskaitļi var būt, piemēram, $23;\\ 41;\\ 59;\\ 67$. To summa ir $190$. Tā 
+nevar būt citāda, jo cipari $2;\\ 4;\\ 5;\\ 6$ nevar būt saskaitāmo pirmskaitļu 
+vienu cipari; tāpēc tie ir desmitu cipari, un meklējamā summa noteikti ir 
+$10(2+4+5+6)+(1+3+7+9)=10 \\cdot 17+20=190$"""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>Šādi pirmskaitļi var būt, piemēram, $23;\\ 41;\\ 59;\\ 67$. To summa ir $190$. Tā 
+nevar būt citāda, jo cipari $2;\\ 4;\\ 5;\\ 6$ nevar būt saskaitāmo pirmskaitļu 
+vienu cipari; tāpēc tie ir desmitu cipari, un meklējamā summa noteikti ir 
+$10(2+4+5+6)+(1+3+7+9)=10 \\cdot 17+20=190$</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.9.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** Tā kā $KM=KA$ (pieskares no viena punkta) un $KN=KA$ (tāpat), tad 
+$KM=KN$.
+
+**(B)** Abas kopējās ārējās pieskares ir vienāda garuma. Tāpēc no (A) seko, ka 
+$KL=MN$.
+
+![](LV.NOL.2005.9.3A.png)
+
+No taisnleņķa trijstūra $O_{1}TO_{2}$ seko, ka 
+$MN=TO_{2}=\\sqrt{(R+r)^{2}-(R-r)^{2}}=2 \\sqrt{Rr}$. Tādu pašu rezultātu iegūst,
+ja $R-r=0$ un $\\triangle O_{1}TO_{2}$ reducējas par nogriezni."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Tā kā $KM=KA$ (pieskares no viena punkta) un $KN=KA$ (tāpat), tad 
+$KM=KN$.</p>
+<p><strong>(B)</strong> Abas kopējās ārējās pieskares ir vienāda garuma. Tāpēc no (A) seko, ka 
+$KL=MN$.</p>
+<p><img alt="" src="LV.NOL.2005.9.3A.png" /></p>
+<p>No taisnleņķa trijstūra $O_{1}TO_{2}$ seko, ka 
+$MN=TO_{2}=\\sqrt{(R+r)^{2}-(R-r)^{2}}=2 \\sqrt{Rr}$. Tādu pašu rezultātu iegūst,
+ja $R-r=0$ un $\\triangle O_{1}TO_{2}$ reducējas par nogriezni.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.9.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+$\\underline{Atbilde:}$ nē, neeksistē.
+
+$\\underline{Risinājums.}$ No sešiem skaitļiem $a,\\ b,\\ c,\\ d,\\ e,\\ f$, 
+saskaitot tos pa $2$, iegūst $15$ summas: 
+$a+b,\\ a+c,\\ a+d,\\ a+e,\\ a+f,\\ b+c,\\ b+d,\\ b+e,\\ b+f,\\ c+d,\\ c+e,\\ c+f,\\ d+e,\\ d+f,\\ e+f$.
+Pieņemsim, ka iegūtie skaitļi ir visi naturālie skaitļi no $1$ līdz $15$ 
+ieskaitot. Tad visiem skaitļiem $a,\\ b,\\ c,\\ d,\\ e,\\ f$ jābūt dažādiem. Varam 
+pieņemt, ka $a<b<c<d<e<f$. Skaidrs, ka vismazākā summa ir $a+b$, otrā mazākā 
+summa ir $a+c$, vislielākā summa ir $e+f$, otrā lielākā summa ir $d+f$. Tāpēc 
+$a+b=1,\\ a+c=2,\\ d+f=14,\\ e+f=15$. Tātad $(a+c)-(a+b)=1=(e+f)-(d+f)$, no 
+kurienes seko $c-b=e-d$ un $c+d=b+e$. Bet tad ne visas $15$ pāru summu 
+skaitliskās vērtības ir dažādas, tātad šīs summas nevar pieņemt visas naturālās
+vērtības no $1$ līdz $15$ ieskaitot."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p>$\\underline{Atbilde:}$ nē, neeksistē.</p>
+<p>$\\underline{Risinājums.}$ No sešiem skaitļiem $a,\\ b,\\ c,\\ d,\\ e,\\ f$, 
+saskaitot tos pa $2$, iegūst $15$ summas: 
+$a+b,\\ a+c,\\ a+d,\\ a+e,\\ a+f,\\ b+c,\\ b+d,\\ b+e,\\ b+f,\\ c+d,\\ c+e,\\ c+f,\\ d+e,\\ d+f,\\ e+f$.
+Pieņemsim, ka iegūtie skaitļi ir visi naturālie skaitļi no $1$ līdz $15$ 
+ieskaitot. Tad visiem skaitļiem $a,\\ b,\\ c,\\ d,\\ e,\\ f$ jābūt dažādiem. Varam 
+pieņemt, ka $a<b<c<d<e<f$. Skaidrs, ka vismazākā summa ir $a+b$, otrā mazākā 
+summa ir $a+c$, vislielākā summa ir $e+f$, otrā lielākā summa ir $d+f$. Tāpēc 
+$a+b=1,\\ a+c=2,\\ d+f=14,\\ e+f=15$. Tātad $(a+c)-(a+b)=1=(e+f)-(d+f)$, no 
+kurienes seko $c-b=e-d$ un $c+d=b+e$. Bet tad ne visas $15$ pāru summu 
+skaitliskās vērtības ir dažādas, tātad šīs summas nevar pieņemt visas naturālās
+vērtības no $1$ līdz $15$ ieskaitot.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2005.9.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
+    eliozo:solutionText """## Atrisinājums
+
+**(A)** Apzīmējot pāra ciparu ar $p$, bet nepāra ciparu ar $n$, tieši 
+pārliecināmies, ka virknes sākums ir 
+$\\underline{n\\ p\\ n\\ p\\ p}\\ \\underline{n\\ p\\ n\\ p\\ p} \\ldots$.
+
+Katru virknes locekli viennozīmīgi nosaka četri iepriekšējie. Redzam, ka virknē
+ir $2$ vienādi četru sekojošu burtu fragmenti $n\\ p\\ n\\ p$. Pēc otrās šī 
+fragmenta parādīšanās virkne "attīstīsies" tāpat kā pēc pirmās; tātad tā ir 
+periodiska ar periodu $(n\\ p\\ n\\ p\\ p)$. Tātad virknē nekur pēc kārtas 
+neparādīsies trīs burti $p$; tāpēc uzdevumā minētajā virknē nekad neparādīsies 
+pēc kārtas sekojoši cipari $2;\\ 0;\\ 0;\\ 5$.
+
+**(B)** **Ja zināmi četru saskaitāmo summas pēdējais cipars un trīs saskaitāmo 
+pēdējie cipari, tad ceturtā saskaitāmā pēdējais cipars ir noteikts 
+viennozīmīgi.**
+
+Aplūkosim visus četru pēc kārtas ņemtu ciparu komplektus tādā secībā, kā tie 
+parādīsies mūsu virknē; daži pirmie komplekti ir $1234,\\ 2340,\\ 3409$ utt. Tā 
+kā četru ciparu dažādu komplektu pavisam ir tikai galīgs skaits, tad agri vai 
+vēlu kādam komplektam jāatkārtojas. Aplūkosim **pirmo** šādu atkārtošanos. Mēs 
+apgalvojam, ka tā var būt tikai komplekta $1234$ paša pirmā komplekta - 
+atkārtošanās. Tiešām, ja kā pirmais atkārtotos cits komplekts $\\omega$:
+
+$$\\ldots \\alpha;\\ \\omega;\\ \\ldots \\ \\ldots \\ \\beta;\\ \\omega;\\ \\ldots,$$
+
+tad saskaņā ar augstāk izcelto faktu jābūt $\\alpha=\\beta$, un $\\omega$ nebūtu 
+pirmais komplekts, kas atkārtojas - pretruna.
+
+Tātad $1;\\ 2;\\ 3;\\ 4$ noteikti šajā secībā vēl kādreiz parādīsies mūsu virknē."""@lv ;
+    eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
+<p><strong>(A)</strong> Apzīmējot pāra ciparu ar $p$, bet nepāra ciparu ar $n$, tieši 
+pārliecināmies, ka virknes sākums ir 
+$\\underline{n\\ p\\ n\\ p\\ p}\\ \\underline{n\\ p\\ n\\ p\\ p} \\ldots$.</p>
+<p>Katru virknes locekli viennozīmīgi nosaka četri iepriekšējie. Redzam, ka virknē
+ir $2$ vienādi četru sekojošu burtu fragmenti $n\\ p\\ n\\ p$. Pēc otrās šī 
+fragmenta parādīšanās virkne "attīstīsies" tāpat kā pēc pirmās; tātad tā ir 
+periodiska ar periodu $(n\\ p\\ n\\ p\\ p)$. Tātad virknē nekur pēc kārtas 
+neparādīsies trīs burti $p$; tāpēc uzdevumā minētajā virknē nekad neparādīsies 
+pēc kārtas sekojoši cipari $2;\\ 0;\\ 0;\\ 5$.</p>
+<p><strong>(B)</strong> <strong>Ja zināmi četru saskaitāmo summas pēdējais cipars un trīs saskaitāmo 
+pēdējie cipari, tad ceturtā saskaitāmā pēdējais cipars ir noteikts 
+viennozīmīgi.</strong></p>
+<p>Aplūkosim visus četru pēc kārtas ņemtu ciparu komplektus tādā secībā, kā tie 
+parādīsies mūsu virknē; daži pirmie komplekti ir $1234,\\ 2340,\\ 3409$ utt. Tā 
+kā četru ciparu dažādu komplektu pavisam ir tikai galīgs skaits, tad agri vai 
+vēlu kādam komplektam jāatkārtojas. Aplūkosim <strong>pirmo</strong> šādu atkārtošanos. Mēs 
+apgalvojam, ka tā var būt tikai komplekta $1234$ paša pirmā komplekta - 
+atkārtošanās. Tiešām, ja kā pirmais atkārtotos cits komplekts $\\omega$:</p>
+<p>$$\\ldots \\alpha;\\ \\omega;\\ \\ldots \\ \\ldots \\ \\beta;\\ \\omega;\\ \\ldots,$$
+
+tad saskaņā ar augstāk izcelto faktu jābūt $\\alpha=\\beta$, un $\\omega$ nebūtu 
+pirmais komplekts, kas atkārtojas - pretruna.
+
+Tātad $1;\\ 2;\\ 3;\\ 4$ noteikti šajā secībā vēl kādreiz parādīsies mūsu virknē.</p>"""@lv .
+

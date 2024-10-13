@@ -5,13 +5,14 @@ eliozo:LV.AMO.2023.10.1 a eliozo:Problem ;
     eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2023.10.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.10.1.SUB0,
-        eliozo:SOLN.LV.AMO.2023.10.1.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.10.1.SUB1,
+        eliozo:SOLN.LV.AMO.2023.10.1.SUB2 ;
     eliozo:problemText """Pie galda sēž zaļie bruņinieki un sarkanie bruņinieki, pavisam kopā $10$ bruņinieku. 
 Zaļie bruņinieki vienmēr saka patiesību, sarkanie bruņinieki vienmēr melo. 
 Katrs bruņinieks izteicās:
@@ -45,14 +46,15 @@ eliozo:LV.AMO.2023.10.2 a eliozo:Problem ;
     eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2023.10.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.10.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.10.2.SUB1 ;
     eliozo:problemText "Pierādīt, ka $9x^2 + 5y^2 − 8xy − 4x + 2 > 0$ visām reālām $x$ un $y$ vērtībām!"@lv ;
-    eliozo:problemTextHtml "<p>Pierādīt, ka $9x^2 + 5y^2 − 8xy − 4x + 2 &gt; 0$ visām reālām $x$ un $y$ vērtībām!</p>"@lv ;
+    eliozo:problemTextHtml "<p>Pierādīt, ka $9x^2 + 5y^2 − 8xy − 4x + 2 > 0$ visām reālām $x$ un $y$ vērtībām!</p>"@lv ;
     eliozo:problemTimeID "2023" ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number 2 ;
@@ -64,15 +66,14 @@ eliozo:LV.AMO.2023.10.3 a eliozo:Problem ;
     eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2023.10.3" ;
-    eliozo:problemImage eliozo:IMG.LV.AMO.2023.10.3A.png,
-        eliozo:IMG.LV.AMO.2023.10.3B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.10.3.SUB0,
-        eliozo:SOLN.LV.AMO.2023.10.3.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.10.3.SUB1,
+        eliozo:SOLN.LV.AMO.2023.10.3.SUB2 ;
     eliozo:problemText """Dots ieliekts četrstūris $ABCD$, kuram $AB=BC=CD$. 
 Zināms, ka $\\sphericalangle BAD = \\alpha$ un $\\sphericalangle BCD = 2\\alpha$, bet
 leņķa $ABC$ lielums četrstūra ārpusē ir $7\\alpha$ (skat. 19. att.). Aprēķināt $\\alpha$ vērtību!
@@ -95,12 +96,13 @@ eliozo:LV.AMO.2023.10.4 a eliozo:Problem ;
         "LTMeanValuePrinciple" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2023.10.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.10.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.10.4.SUB1 ;
     eliozo:problemText """Uz katras no $72$ kartītēm uzrakstīts kāds naturāls skaitlis 
 (daži no tiem var būt arī vienādi). Kartītes
 iespējams sadalīt astoņās grupās pa deviņām kartītēm katrā tā, 
@@ -136,13 +138,14 @@ ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?</p>"""
 eliozo:LV.AMO.2023.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.AMO.2023.10.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.10.5.SUB0,
-        eliozo:SOLN.LV.AMO.2023.10.5.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.10.5.SUB1,
+        eliozo:SOLN.LV.AMO.2023.10.5.SUB2 ;
     eliozo:problemText """Uz tāfeles uzrakstīti visi naturālie skaitļi no $1$ līdz $100$ 
 (katrs tieši vienu reizi). Maruta vienu no tiem
 nodzēsa un izrādījās, ka viens no atlikušajiem skaitļiem tagad 
@@ -164,13 +167,14 @@ eliozo:LV.AMO.2023.11.1 a eliozo:Problem ;
     eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2023.11.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.11.1.SUB0,
-        eliozo:SOLN.LV.AMO.2023.11.1.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.11.1.SUB1,
+        eliozo:SOLN.LV.AMO.2023.11.1.SUB2 ;
     eliozo:problemText """Mārim bija četru veidu konfektes: 15 “Serenādes”, 25 “Lācīši Ķepainīši”, 
 35 “Vāverītes” un 45 “Sarkanās magones”. Katru no saviem dzimšanas 
 dienas viesiem viņš uzcienāja ar tieši 3 dažādām konfektēm.
@@ -193,12 +197,13 @@ eliozo:LV.AMO.2023.11.2 a eliozo:Problem ;
     eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2023.11.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.11.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.11.2.SUB1 ;
     eliozo:problemText """Pierādīt, ka $a^2c + ac^2 - 6abc + 3b^2c + ab^2 \\geq 0$
 visām pozitīvām reālām $a$, $b$ un $c$ vērtībām!"""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka $a^2c + ac^2 - 6abc + 3b^2c + ab^2 \\geq 0$
@@ -214,13 +219,13 @@ eliozo:LV.AMO.2023.11.3 a eliozo:Problem ;
     eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2023.11.3" ;
-    eliozo:problemImage eliozo:IMG.LV.AMO.2023.11.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.11.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.11.3.SUB1 ;
     eliozo:problemText """Dota riņķa līnija, uz tās atlikti punkti $A$, $B$ un $D$, 
 bet punkts $C$ atlikts tās iekšpusē tā, ka punkti $A$ un $D$
 atrodas dažādās pusēs no taisnes $BC$. 
@@ -244,12 +249,13 @@ eliozo:LV.AMO.2023.11.4 a eliozo:Problem ;
     eliozo:LTopic "LTMeanValuePrinciple" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2023.11.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.11.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.11.4.SUB1 ;
     eliozo:problemText """Uz katras no $72$ kartītēm uzrakstīts kāds naturāls skaitlis 
 (daži no tiem var būt arī vienādi). Kartītes
 iespējams sadalīt astoņās grupās pa deviņām kartītēm katrā tā, 
@@ -285,12 +291,13 @@ eliozo:LV.AMO.2023.11.5 a eliozo:Problem ;
     eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.AMO.2023.11.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.11.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.11.5.SUB1 ;
     eliozo:problemText "Atrisināt veselos skaitļos vienādojumu $17a^2 - 7b^2 + c^2 = 2023$."@lv ;
     eliozo:problemTextHtml "<p>Atrisināt veselos skaitļos vienādojumu $17a^2 - 7b^2 + c^2 = 2023$.</p>"@lv ;
     eliozo:problemTimeID "2023" ;
@@ -304,12 +311,13 @@ eliozo:LV.AMO.2023.12.1 a eliozo:Problem ;
     eliozo:LTopic "LTEquations" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2023.12.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.12.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.12.1.SUB1 ;
     eliozo:problemText """Vai burtu vietā var ierakstīt $9$ dažādus nenulles ciparus, 
 lai vienādība $\\frac{A}{B} + \\frac{C}{D} + \\frac{E}{F} + \\frac{G}{H} = I$
 būtu patiesa?"""@lv ;
@@ -327,12 +335,13 @@ eliozo:LV.AMO.2023.12.2 a eliozo:Problem ;
     eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2023.12.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.12.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.12.2.SUB1 ;
     eliozo:problemText """Kāda ir izteiksmes $2x^2 − 8xy + 4x + 9y^2 - 14y + 9$
 mazākā iespējamā vērtība, ja $x$ un $y$ ir reāli
 skaitļi?"""@lv ;
@@ -350,13 +359,13 @@ eliozo:LV.AMO.2023.12.3 a eliozo:Problem ;
     eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2023.12.3" ;
-    eliozo:problemImage eliozo:IMG.LV.AMO.2023.12.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.12.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.12.3.SUB1 ;
     eliozo:problemText """Taisnstūra $ABCD$ diagonāle $BD$ ir kvadrāta $BDEF$ viena mala. 
 Punkts $C$ atrodas kvadrāta $BDEF$ iekšpusē. 
 Pierādīt, ka $S_{ABD} \\leq S_{CEF}$."""@lv ;
@@ -374,17 +383,13 @@ eliozo:LV.AMO.2023.12.4 a eliozo:Problem ;
     eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2023.12.4" ;
-    eliozo:problemImage eliozo:IMG.LV.AMO.2023.12.4A.png,
-        eliozo:IMG.LV.AMO.2023.12.4B.png,
-        eliozo:IMG.LV.AMO.2023.12.4C.png,
-        eliozo:IMG.LV.AMO.2023.12.4D.png,
-        eliozo:IMG.LV.AMO.2023.12.4E.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.12.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.12.4.SUB1 ;
     eliozo:problemText """Kvadrātā ar izmēriem $8 \\times 8$ rūtiņas iekrāsotas astoņas rūtiņas tā, 
 ka katrā rindā un katrā kolonnā ir
 iekrāsota tieši viena rūtiņa.
@@ -412,12 +417,13 @@ $2 \\times 5$ rūtiņas nav patiess!</p>"""@lv ;
 eliozo:LV.AMO.2023.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.AMO.2023.12.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.12.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.12.5.SUB1 ;
     eliozo:problemText """Vai eksistē tāds naturāls skaitlis, kuram tieši 
 **(A)** $25\\%$; **(B)** $26\\%$ no visiem tā pozitīvajiem dalītājiem dod
 atlikumu $1$, dalot ar $3$?  
@@ -439,13 +445,13 @@ eliozo:LV.AMO.2023.5.1 a eliozo:Problem ;
         eliozo:TRM-triangle ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2023.5.1" ;
-    eliozo:problemImage eliozo:IMG.LV.AMO.2023.5.1A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.5.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.5.1.SUB1 ;
     eliozo:problemText """Skaitļus no $1$ līdz $9$ ieraksti 1. att. redzamajos mazajos trijstūros 
 (katrā trijstūrī citu naturālo skaitli) tā,
 lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.  
@@ -471,12 +477,13 @@ eliozo:LV.AMO.2023.5.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-decimal-notation ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2023.5.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.5.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.5.2.SUB1 ;
     eliozo:problemText """Doti divi skaitļi. Zināms, ka viens no tiem ir tieši septiņas reizes 
 lielāks nekā otrs un katram no tiem ir vismaz divi
 cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari 
@@ -498,13 +505,13 @@ eliozo:LV.AMO.2023.5.3 a eliozo:Problem ;
     eliozo:LTopic "LTIntegerLattices" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2023.5.3" ;
-    eliozo:problemImage eliozo:IMG.LV.AMO.2023.5.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.5.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.5.3.SUB1 ;
     eliozo:problemText """Rūtiņu lapā, kurā katras rūtiņas malas garums ir $1$, uzzīmē daudzstūri, kuram gan perimetra, gan
 laukuma vērtība ir tāda pati kā malu skaits!"""@lv ;
     eliozo:problemTextHtml """<p>Rūtiņu lapā, kurā katras rūtiņas malas garums ir $1$, uzzīmē daudzstūri, kuram gan perimetra, gan
@@ -522,14 +529,13 @@ eliozo:LV.AMO.2023.5.4 a eliozo:Problem ;
     eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2023.5.4" ;
-    eliozo:problemImage eliozo:IMG.LV.AMO.2023.5.4A.png,
-        eliozo:IMG.LV.AMO.2023.5.4B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.5.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.5.4.SUB1 ;
     eliozo:problemText """Dots kvadrāts ar izmēriem $n \\times n$ rūtiņas. 
 Vienā gājienā kauliņu var pārlikt tieši $2$ rūtiņas uz priekšu pa jebkuru
 no diagonālēm, kas iziet no tā lauciņa, kurā atrodas kauliņš (skat. 4. att., 
@@ -561,13 +567,14 @@ eliozo:LV.AMO.2023.5.5 a eliozo:Problem ;
         "LTExtremes" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.AMO.2023.5.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.5.5.SUB0,
-        eliozo:SOLN.LV.AMO.2023.5.5.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.5.5.SUB1,
+        eliozo:SOLN.LV.AMO.2023.5.5.SUB2 ;
     eliozo:problemText """Gunai bija četru veidu konfektes: 8 “Serenādes”, 14 “Lācīši Ķepainīši”, 
 20 “Vāverītes” un 26 “Sarkanās magones”. 
 Katru no saviem dzimšanas dienas viesiem viņa uzcienāja ar tieši 3 dažādām konfektēm.
@@ -588,13 +595,13 @@ Kāds ir lielākais iespējamais viesu skaits, kas bija ieradušies uz Gunas dzi
 eliozo:LV.AMO.2023.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2023.6.1" ;
-    eliozo:problemImage eliozo:IMG.LV.AMO.2023.6.1A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.6.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.6.1.SUB1 ;
     eliozo:problemText """Skaitļus no $1$ līdz $16$ ieraksti 7.att. redzamajos mazajos trijstūros 
 (katrā trijstūrī citu naturālo skaitli) tā,
 lai blakus trijstūros ierakstīties skaitļi neatšķiras vairāk kā par $4$.  
@@ -616,12 +623,13 @@ lai blakus trijstūros ierakstīties skaitļi neatšķiras vairāk kā par $4$.<
 eliozo:LV.AMO.2023.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2023.6.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.6.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.6.2.SUB1 ;
     eliozo:problemText """Doti divi skaitļi, katram no tiem ir vismaz divi cipari. Zināms, ka pirmais skaitlis ir vienāds ar skaitli, kuru
 iegūst, otro skaitli pareizinot pašu ar sevi. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari
 **(a)** $2$; $3$; $7$ un $8$; **(b)** $1$; $3$; $4$; $5$ un $6$?"""@lv ;
@@ -638,13 +646,13 @@ iegūst, otro skaitli pareizinot pašu ar sevi. Vai var gadīties, ka abu skait�
 eliozo:LV.AMO.2023.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2023.6.3" ;
-    eliozo:problemImage eliozo:IMG.LV.AMO.2023.6.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.6.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.6.3.SUB1 ;
     eliozo:problemText """No četrām tādām figūrām, kāda dota 9. att., uzzīmē figūru, kurai ir tieši: **(A)** $2$ simetrijas asis;
 **(B)** $4$ simetrijas asis!
 
@@ -672,13 +680,14 @@ eliozo:LV.AMO.2023.6.4 a eliozo:Problem ;
     eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2023.6.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.6.4.SUB0,
-        eliozo:SOLN.LV.AMO.2023.6.4.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.6.4.SUB1,
+        eliozo:SOLN.LV.AMO.2023.6.4.SUB2 ;
     eliozo:problemText """Pie galda sēž zaļie bruņinieki un sarkanie bruņinieki, pavisam kopā 10 bruņinieku. Zaļie bruņinieki
 vienmēr saka patiesību, sarkanie bruņinieki vienmēr melo. Katrs bruņinieks izteicās:
 
@@ -710,13 +719,14 @@ eliozo:LV.AMO.2023.6.5 a eliozo:Problem ;
     eliozo:LTopic "LTExtremeElement" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.AMO.2023.6.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.6.5.SUB0,
-        eliozo:SOLN.LV.AMO.2023.6.5.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.6.5.SUB1,
+        eliozo:SOLN.LV.AMO.2023.6.5.SUB2 ;
     eliozo:problemText """Latvijā, tāpat kā visās eirozonas valstīs, apgrozībā ir $1$; $2$; $5$; 
 $10$; $20$ un $50$ centu monētas. Pieņemsim, ka ir zināma no šīm monētām 
 izveidotā naudas summa $S$ un izmantoto monētu skaits $M$. Daudzos gadījumos, 
@@ -744,12 +754,13 @@ eliozo:LV.AMO.2023.7.1 a eliozo:Problem ;
     eliozo:LTopic "LTMeanValuePrinciple" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2023.7.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.7.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.7.1.SUB1 ;
     eliozo:problemText """Vai rindā kaut kādā secībā var uzrakstīt naturālus skaitļus 
 **(A)** no $1$ līdz $23$; **(B)** no $1$ līdz $2023$ tā, lai blakus
 skaitļiem nebūtu vienādu ciparu?"""@lv ;
@@ -766,12 +777,13 @@ skaitļiem nebūtu vienādu ciparu?</p>"""@lv ;
 eliozo:LV.AMO.2023.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2023.7.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.7.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.7.2.SUB1 ;
     eliozo:problemText """Kāds ir lielākais iespējamais septiņciparu skaitlis, 
 kuram vienlaicīgi izpildās šādi nosacījumi:
 
@@ -799,13 +811,13 @@ kuram vienlaicīgi izpildās šādi nosacījumi:</p>
 eliozo:LV.AMO.2023.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2023.7.3" ;
-    eliozo:problemImage eliozo:IMG.LV.AMO.2023.7.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.7.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.7.3.SUB1 ;
     eliozo:problemText """No četrām tādām figūrām, kāda dota 12. att., uzzīmē figūru, kurai ir tieši: 
 **(A)** $2$ simetrijas asis;
 **(B)** $4$ simetrijas asis!  
@@ -837,12 +849,13 @@ rūtiņas uz blakus rūtiņu, ar ko tai ir kopīga mala.</p>
 eliozo:LV.AMO.2023.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2023.7.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.7.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.7.4.SUB1 ;
     eliozo:problemText """Latvijā, tāpat kā visās eirozonas valstīs, apgrozībā ir 
 $1$; $2$; $5$; $10$; $20$ un $50$ centu monētas. Pieņemsim, ka ir zināma 
 no šīm monētām izveidotā naudas summa $S$ un izmantoto monētu skaits $M$.
@@ -875,12 +888,13 @@ eliozo:LV.AMO.2023.7.5 a eliozo:Problem ;
     eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.AMO.2023.7.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.7.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.7.5.SUB1 ;
     eliozo:problemText """Uz palodzes sēž vairākas bizbizmārītes, 
 katrai no tām uz muguras ir vai nu divi punktiņi, vai septiņi
 punktiņi. Tās bizbizmārītes, kurām uz muguras ir septiņi punktiņi, 
@@ -919,12 +933,13 @@ vienmēr melo. Katra bizbizmārīte izteicās:</p>
 eliozo:LV.AMO.2023.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2023.8.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.8.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.8.1.SUB1 ;
     eliozo:problemText """Vai burtu vietā var ierakstīt sešus dažādus nenulles ciparus, 
 lai dotā vienādība būtu patiesa un visas
 daļas būtu nesaīsināmas: $\\frac{A}{B} + \\frac{C}{D} = \\frac{E}{F}$."""@lv ;
@@ -941,12 +956,13 @@ daļas būtu nesaīsināmas: $\\frac{A}{B} + \\frac{C}{D} = \\frac{E}{F}$.</p>""
 eliozo:LV.AMO.2023.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2023.8.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.8.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.8.2.SUB1 ;
     eliozo:problemText """Trīsciparu skaitļa $x$ ciparu summa ir $12$. 
 Ja šim skaitlim nodzēš pēdējo ciparu, tad atlikušais divciparu
 skaitlis dalās ar $9$. Zināms, ka skaitlis $x$ ir par $99$ lielāks 
@@ -967,13 +983,13 @@ ciparus pretējā secībā. Kāds var būt skaitlis $x$?</p>"""@lv ;
 eliozo:LV.AMO.2023.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2023.8.3" ;
-    eliozo:problemImage eliozo:IMG.LV.AMO.2023.8.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.8.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.8.3.SUB1 ;
     eliozo:problemText """Divi vienādmalu trijstūri novietoti plaknē kā parādīts 15. att. 
 Zināms, ka $\\sphericalangle CAD = \\alpha$ un $\\sphericalangle FDJ = \\beta$.
 Izsaki leņķi $CGF$ ar $\\alpha$ un $\\beta$.
@@ -993,12 +1009,13 @@ Izsaki leņķi $CGF$ ar $\\alpha$ un $\\beta$.</p>
 eliozo:LV.AMO.2023.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2023.8.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.8.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.8.4.SUB1 ;
     eliozo:problemText """Četru bērnu – Almas, Bruno, Cēzara un Dorotejas – 
 tēvs mēdz bērniem iedot sīknaudu. Tā reiz tēvs
 saviem bērniem iedeva sīknaudu šādi:
@@ -1038,12 +1055,13 @@ eliozo:LV.AMO.2023.8.5 a eliozo:Problem ;
     eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.AMO.2023.8.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.8.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.8.5.SUB1 ;
     eliozo:problemText """Uz palodzes sēž vairākas bizbizmārītes, katrai no tām uz muguras 
 ir vai nu trīs punktiņi, vai astoņi
 punktiņi. Tās bizbizmārītes, kurām uz muguras ir astoņi punktiņi, 
@@ -1084,12 +1102,13 @@ eliozo:LV.AMO.2023.9.1 a eliozo:Problem ;
     eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2023.9.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.9.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.9.1.SUB1 ;
     eliozo:problemText """Uz tāfeles uzrakstīta daļa $\\frac{10}{2023}$. 
 Katrā gājienā var izvēlēties patvaļīgu naturālu skaitli un vai nu pieskaitīt
 to gan daļas skaitītājam, gan saucējam, vai arī to reizināt ar daļas skaitītāju 
@@ -1112,12 +1131,13 @@ un saucēju. Vai, atkārtojot
 eliozo:LV.AMO.2023.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2023.9.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.9.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.9.2.SUB1 ;
     eliozo:problemText """Ja divciparu skaitlim $\\overline{ab}$ galā pieraksta divciparu skaitli
 $\\overline{cd}$, tad iegūtais četrciparu skaitlis dalās ar $13$.
 Zināms, ka $12a + 9b$ dalās ar $13$. Kāds var būt skaitlis $\\overline{cd}$?"""@lv ;
@@ -1135,13 +1155,13 @@ eliozo:LV.AMO.2023.9.3 a eliozo:Problem ;
     eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2023.9.3" ;
-    eliozo:problemImage eliozo:IMG.LV.AMO.2023.9.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.9.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.9.3.SUB1 ;
     eliozo:problemText """Trijstūrī viens leņķis ir par $120^{\\circ}$ lielāks nekā otrs. 
 Pierādīt, ka bisektrise, kas vilkta no trešā leņķa
 virsotnes, ir divas reizes garāka nekā augstums no tās pašas virsotnes!"""@lv ;
@@ -1160,12 +1180,13 @@ eliozo:LV.AMO.2023.9.4 a eliozo:Problem ;
         "LTMeanValuePrinciple" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2023.9.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.9.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.9.4.SUB1 ;
     eliozo:problemText """Uz katras no $36$ kartītēm uzrakstīts kāds naturāls skaitlis 
 (daži no tiem var būt arī vienādi). Kartītes
 iespējams sadalīt deviņās grupās pa četrām kartītēm katrā tā, ka visās grupās uz 
@@ -1193,13 +1214,13 @@ eliozo:LV.AMO.2023.9.5 a eliozo:Problem ;
     eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
+    eliozo:event "LV.AMO.2023" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.AMO.2023.9.5" ;
-    eliozo:problemImage eliozo:IMG.LV.AMO.2023.9.5A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.9.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.AMO.2023.9.5.SUB1 ;
     eliozo:problemText """Pirmie sešpadsmit naturālie skaitļi patvaļīgā secībā izvietoti pa apli, 
 katriem diviem blakus skaitļiem aprēķināta to starpība (no lielākā skaitļa 
 atņemot mazāko), un pēc tam aprēķināta visu šo $16$ starpību summa $S$. 
@@ -1215,84 +1236,8 @@ Vai var gadīties, ka: <strong>(A)</strong> $S = 100$; <strong>(B)</strong> $S =
     eliozo:suffix "LV.AMO.2023.9" ;
     eliozo:suggestedGrade 9 .
 
-eliozo:IMG.LV.AMO.2023.10.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.10.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.10.3B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.10.3B.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.11.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.11.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.12.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.12.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.12.4A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.12.4A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.12.4B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.12.4B.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.12.4C.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.12.4C.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.12.4D.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.12.4D.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.12.4E.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.12.4E.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.5.1A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.5.1A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.5.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.5.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.5.4A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.5.4A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.5.4B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.5.4B.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.6.1A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.6.1A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.6.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.6.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.7.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.7.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.8.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.8.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.9.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.9.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.AMO.2023.9.5A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.AMO.2023.9.5A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:SOLN.LV.AMO.2023.10.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.10.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pie galda sēž $5$ zaļie un $5$ sarkanie bruņinieki. Pamatosim, ka tā ir vienīgā iespēja.
@@ -1322,8 +1267,8 @@ Pieņemsim pretējo, ka pie galda sēž vairāk vai mazāk nekā pieci zaļie br
 <p>Iegūstam, ka ir tieši pieci zaļie bruņinieki. Ja pirmie pieci bruņinieki ir sarkanie un pēdējie pieci ir zaļie,
 tad uzdevuma nosacījumi izpildās.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.10.1.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.AMO.2023.10.1.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Pie galda sēž $5$ zaļie un $5$ sarkanie bruņinieki. Pamatosim, ka tā ir vienīgā iespēja.
@@ -1339,8 +1284,8 @@ izteikumiem izriet, ka pirmie $x$ bruņinieki melo un ir sarkanie, bet pārējie
 $x = 10−x$ jeb $x=5$.</p>
 <p>Ja pirmie pieci bruņinieki ir sarkanie un pēdējie pieci – zaļie, tad izpildās uzdevuma nosacījumi.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.10.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.10.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Veicam ekvivalentus pārveidojumus:
@@ -1356,15 +1301,16 @@ pārveidojumi, tad arī dotā nevienādība ir patiesa visiem reāliem skaitļie
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Veicam ekvivalentus pārveidojumus:</p>
 <p>$$\\begin{array}{c}
-(4x^2 − 8xy + 4y^2) + y^2 + (4x^2 − 4x + 1) + x^2 + 1 &gt; 0;\\
-(2x − 2y)^2 + y^2 + (2x − 1)^2 + x^2 + 1 &gt; 0.\\
-\\end{array}$$</p>
-<p>Tā kā skaitļa kvadrāts ir nenegatīvs, tad pēdējās nevienādības kreisajā pusē ir četri nenegatīvi
+(4x^2 − 8xy + 4y^2) + y^2 + (4x^2 − 4x + 1) + x^2 + 1 > 0;\\\\
+(2x − 2y)^2 + y^2 + (2x − 1)^2 + x^2 + 1 > 0.\\\\
+\\end{array}$$
+
+Tā kā skaitļa kvadrāts ir nenegatīvs, tad pēdējās nevienādības kreisajā pusē ir četri nenegatīvi
 saskaitāmie un vēl pozitīvs skaitlis $1$. Tātad pēdējā nevienādība ir patiesa. Tā kā tika veikti ekvivalenti
 pārveidojumi, tad arī dotā nevienādība ir patiesa visiem reāliem skaitļiem $x$ un $y$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Savienosim $B$ ar $D$ un novilksim augstumu $BE$ no $B$ pret $AD$ 
@@ -1419,8 +1365,8 @@ $\\sphericalangle ABE = 180^{\\circ} − \\sphericalangle BAE − \\sphericalang
 Tā kā $\\sphericalangle EBD + \\sphericalangle DBC + \\sphericalangle CBA + \\sphericalangle ABE = 360^{\\circ}$ (jo veidojas pilns leņķis), tad
 $$60^{\\circ} + 90^{\\circ} − \\alpha + 7\\alpha + 90^{\\circ} − \\alpha = 360^{\\circ}\\;\\;\\Rightarrow\\;\\;\\alpha=24^{\\circ}.$$</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.10.3.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.AMO.2023.10.3.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Vispirms atliekam punktus $B'$ un $C'$, kas ir attiecīgi punktu 
@@ -1482,8 +1428,8 @@ $$\\sphericalangle ABB' + \\sphericalangle B'BD + \\sphericalangle CBD =
 Tātad 
 $$360^{\\circ} − 7\\alpha = 240^{\\circ} − 2\\alpha \\;\\;\\Rightarrow\\;\\; \\alpha = 24^{\\circ}.$$</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.10.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.10.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Aplūkosim $8 \\times 9$ lielu rūtiņu tabulu:
@@ -1585,15 +1531,15 @@ Pieņemsim pretējo, ka šos skaitļus var
 sadalīt $12$ grupās pa sešām kartītēm katrā tā, lai skaitļu summa 
 visās grupās būtu vienāda. Tad skaitļu summai katrā grupā jābūt $\\frac{144}{12} = 12$. 
 Nevienā grupā nevar būt vairāk kā viena kartīte ar skaitli $9$,
-jo $2 \\cdot 9 = 18 &gt; 12$. Ja grupā ir viena kartīte ar $9$, 
+jo $2 \\cdot 9 = 18 > 12$. Ja grupā ir viena kartīte ar $9$, 
 tad uz atlikušajām piecām kartītēm uzrakstīto skaitļu
 summai jābūt $12 − 9 = 3$, kas nav iespējams, jo mazākā iespējamā summa ir 
 $5 \\cdot 1 = 5$. Esam ieguvuši
 pretrunu, ko izraisīja pieņēmums, ka ir iespējams sadalīt kartītes 
 $12$ grupās pa sešām katrā ar vienādu skaitļu kopsummu.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.10.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.10.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Nodzēstais skaitlis varēja būt $1$ vai $100$. 
@@ -1614,8 +1560,8 @@ Tagad arī redzams, kāpēc neder neviens cits skaitlis –
 šajā gadījumā atlikušo skaitļu vidējais aritmētiskais atradīsies starp $50$ un $51$, 
 tātad nebūs vesels skaitlis.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.10.5.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.AMO.2023.10.5.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums 
 
 Ievērosim, ka pirmo $100$ skaitļu summa ir
@@ -1634,8 +1580,8 @@ Tātad $(51 \\cdot 99 + 1 − y)$ jādalās ar $99$. Tas nozīmē,
 ka $y$ (kam jādod atlikums $1$, dalot ar $99$) 
 var būt tikai $1$ vai $100$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.11.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.11.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums 
 
 Lielākais iespējamais viesu skaits ir $37$. Māris varēja pacienāt $37$ viesus šādi:
@@ -1672,8 +1618,8 @@ $15 + 25 + 35 = 75$. Ja būtu $38$ viesi, tad tiem vajadzētu vismaz
 $38 \\cdot 2 = 76$ šo veidu konfektes. Tātad
 vairāk kā $37$ viesi nevarēja ierasties uz svinībām.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.11.1.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.AMO.2023.11.1.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums 
 
 Lielākais iespējamais viesu skaits ir $37$. Māris varēja pacienāt $37$ viesus šādi:
@@ -1719,8 +1665,8 @@ pretruna, tātad pieņēmums ir aplams, un Māris nevar pacienāt $38$ viesus.
 Ja viņš nevar pacienāt $38$
 viesus, tad nevar arī vairāk, un lielākais iespējamais viesu skaits ir $37$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.11.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.11.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums 
 
 Veicam ekvivalentus pārveidojumus:
@@ -1739,8 +1685,8 @@ vērtībām."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Veicam ekvivalentus pārveidojumus:</p>
 <p>$$\\begin{array}{c}
-c(a^2 - 2 \\cdot a \\cdot 2b + 4b^2) + a(c^2 - 2bc + b^2) \\geq 0;\\
-c(a - 2b)^2 + a(c-b)^2 \\geq 0. \\
+c(a^2 - 2 \\cdot a \\cdot 2b + 4b^2) + a(c^2 - 2bc + b^2) \\geq 0;\\\\
+c(a - 2b)^2 + a(c-b)^2 \\geq 0. \\\\
 \\end{array}$$
 Tā kā skaitļa kvadrāts ir nenegatīvs un skaitļi $a$ un $c$ 
 ir pozitīvi, tad pēdējās nevienādības kreisajā pusē
@@ -1750,8 +1696,8 @@ kā tika veikti ekvivalenti pārveidojumi,
 tad arī dotā nevienādība ir patiesa visām pozitīvām $a$, $b$ un $c$
 vērtībām.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.11.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.11.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums 
 
 Pagarinām nogriezni $BC$ līdz tas krusto riņķa līniju punktā 
@@ -1793,8 +1739,9 @@ $\\sphericalangle AFB = \\sphericalangle CFD$. No šī izriet, ka</p>
 <p>$$\\frac{AB}{BF} = \\frac{CD}{CF}\\;\\;\\Rightarrow\\;\\; 
 \\frac{2}{BF} = \\frac{3}{FC} \\;\\;\\Rightarrow\\;\\;
 \\frac{2}{BF} = \\frac{3}{5 - BF} \\;\\;\\Rightarrow\\;\\;
-BF = 2, CF=3.$$</p>
-<p>Tātad $\\triangle CDF$ ir vienādsānu taisnleņķa trijstūris, 
+BF = 2, CF=3.$$
+
+Tātad $\\triangle CDF$ ir vienādsānu taisnleņķa trijstūris, 
 jo $CF = CD = 3$. Tātad $\\sphericalangle CDF = 45^{\\circ}$.
 Tā kā ievilktais leņķis ∢𝐴𝐷𝐸 balstās uz diametru $AE$, 
 tad $\\sphericalangle ADE = 90^{\\circ}$. 
@@ -1805,8 +1752,8 @@ Tātad $BE = BF + CF + CE = 8$ un diametrs $AE = \\sqrt{8^2 + 2^2} = \\sqrt{68} 
 Līdz ar to riņķa laukums $S = \\frac{\\pi{}AE^2}{4} = 17\\pi$. </p>
 <p><img alt="" src="LV.AMO.2023.11.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.11.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.11.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums 
 
 Aplūkosim $8 \\times 9$ lielu rūtiņu tabulu:
@@ -1978,7 +1925,7 @@ sadalīt $12$ grupās pa sešām kartītēm katrā tā, lai skaitļu summa
 visās grupās būtu vienāda. Tad skaitļu
 summai katrā grupā jābūt $\\frac{144}{12} = 12$. 
 Nevienā grupā nevar būt vairāk par vienu kartīti ar skaitli $9$,
-jo $2 \\cdot 9 = 18 &gt; 12$. 
+jo $2 \\cdot 9 = 18 > 12$. 
 Ja grupā ir viena kartīte ar $9$, tad uz atlikušajām piecām 
 kartītēm uzrakstīto skaitļu summai jābūt $12 − 9 = 3$, 
 kas nav iespējams, jo mazākā iespējamā summa ir $5 \\cdot 1 = 5$. 
@@ -1987,8 +1934,8 @@ pretrunu, ko izraisīja pieņēmums, ka ir iespējams sadalīt kartītes
 $12$ grupās pa sešām katrā ar vienādu
 skaitļu kopsummu.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.11.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.11.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums 
 
 Pierādīsim, ka šim vienādojumam nav atrisinājuma. 
@@ -2048,12 +1995,12 @@ $0$, $1$ vai $4$ (jo $17a^2 = 16a^2 + a^2$)
 un līdzīgi arī $−7b^2$ (jo $−7b^2 = − 8b^2 + b^2$)
 var pieņemt tikai šos trīs atlikumus. Bet skaitlis $2023$, dalot ar $8$,
 dod atlikumu $7$. Redzams, ka nekādā veidā saskaitot trīs skaitļus 
-no kopas ${0; 1; 4}$ mēs nevaram iegūt
+no kopas $\\{0; 1; 4\\}$ mēs nevaram iegūt
 skaitli, kas atlikumā, dalot ar $8$, dotu $7$. 
 Tātad šim vienādojumam nav atrisinājuma.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.12.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.12.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums 
 
 Jā, var, piemēram,
@@ -2062,8 +2009,8 @@ $\\frac{5}{4} + \\frac{9}{3} + \\frac{6}{8} + \\frac{2}{1} = 1\\frac{1}{4} + 3 +
 <p>Jā, var, piemēram,
 $\\frac{5}{4} + \\frac{9}{3} + \\frac{6}{8} + \\frac{2}{1} = 1\\frac{1}{4} + 3 + \\frac{3}{4} + 2 = 7$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.12.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.12.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums 
 
 Ekvivalenti pārveidojam doto izteiksmi:
@@ -2077,15 +2024,16 @@ Tā kā kvadrāti ir nenegatīvi, tad dotās izteiksmes mazākā vērtība
 ir $−2$ un to iegūst, ja $y = 3$ un $x = 5$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Ekvivalenti pārveidojam doto izteiksmi:</p>
-<p>$$\\begin{array}{c}2x^2 − 8xy + 4x + 9y^2 − 14y + 9 = \\
-= 2(x^2 + 4y^2 + 1 − 4xy + 2x − 4y) + y^2 − 6y + 9 − 2 = \\
-= 2(x − 2y + 1)^2 + (y − 3)^2 − 2 \\geq −2.\\
-\\end{array}$$</p>
-<p>Tā kā kvadrāti ir nenegatīvi, tad dotās izteiksmes mazākā vērtība 
+<p>$$\\begin{array}{c}2x^2 − 8xy + 4x + 9y^2 − 14y + 9 = \\\\
+= 2(x^2 + 4y^2 + 1 − 4xy + 2x − 4y) + y^2 − 6y + 9 − 2 = \\\\
+= 2(x − 2y + 1)^2 + (y − 3)^2 − 2 \\geq −2.\\\\
+\\end{array}$$
+
+Tā kā kvadrāti ir nenegatīvi, tad dotās izteiksmes mazākā vērtība 
 ir $−2$ un to iegūst, ja $y = 3$ un $x = 5$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.12.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.12.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums 
 
 Apzīmēsim $AD = a$ un $AB = b$. 
@@ -2127,8 +2075,8 @@ $$S_{CEF} = \\frac{1}{2}S_{EFGH} = \\frac{S_{BDEF} - S_{BDHG}}{2} =
 \\frac{a^2 + b^2 - ab}{2} = \\frac{(a-b)^2 + ab}{2} \\geq \\frac{ab}{2} = S_{ABD}.$$</p>
 <p><img alt="" src="LV.AMO.2023.12.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.12.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.12.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums 
 
 
@@ -2248,8 +2196,8 @@ nav iekrāsota neviena rūtiņa.</p>
 taisnstūri ar neatzīmētu rūtiņu.</p>
 <p><img alt="" src="LV.AMO.2023.12.4E.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.12.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.12.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums 
 
 **(A)** Jā, ir, piemēram, skaitlis $27$. 
@@ -2297,7 +2245,7 @@ pakāpi. Tātad reizinātājam $3$ ir $2$ izvēles, un reizinātājiem $2$ ir $2
 izvēles. Kopā iegūstam $2 \\cdot 25 = 50$
 izvēles jeb dalītājus. Puse no šiem dalītājiem ir formā $3 \\cdot 2^a$ 
 un otra puse ir formā $2^a$, kur
-$a \\in {0; 1; 2; \\ldots ; 24}$. 
+$a \\in \\{0; 1; 2; \\ldots ; 24\\}$. 
 Dalītāji formā $3 \\cdot 2^a$ dalās ar $3$. 
 Noskaidrosim, kuri no dalītājiem formā $2^a$, 
 dalot ar $3$, dod atlikumu $1$. Apskatām divus gadījumus.</p>
@@ -2313,8 +2261,8 @@ dalot ar $3$, dod atlikumu $1$. Apskatām divus gadījumus.</p>
 <p>Tā kā skaitlim $3 \\cdot 2^{24}$ ir $50$ dalītāji, tad $\\frac{13}{50} = 26\\%$ 
 no tiem atlikumā dod $1$, dalot ar $3$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.5.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.5.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Sk., piemēram, 2. att., kur pelēkā krāsā norādītas atbilstošās starpības.
@@ -2324,8 +2272,8 @@ Sk., piemēram, 2. att., kur pelēkā krāsā norādītas atbilstošās starpīb
 <p>Sk., piemēram, 2. att., kur pelēkā krāsā norādītas atbilstošās starpības.</p>
 <p><img alt="" src="LV.AMO.2023.5.1A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.5.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.5.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **(a)** Nē, nevar. Ja skaitļa pēdējais cipars ir $3$, $4$, $6$ vai $7$, tad septiņas reizes lielāka skaitļa
@@ -2338,8 +2286,8 @@ pēdējais cipars ir attiecīgi $1$; $8$; $2$ vai $9$, bet pēc uzdevuma nosacī
 nevar izmantot skaitļu pierakstā.<br />
 <strong>(b)</strong> Jā, var, piemēram, der skaitļi $33$ un $231$, jo $33 \\cdot 7 = 231$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.5.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.5.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Piemēram, skat. 3. att., kur uzzīmēts $32$-stūris, kura laukuma un perimetra vērtība ir $32$.
@@ -2349,8 +2297,8 @@ Piemēram, skat. 3. att., kur uzzīmēts $32$-stūris, kura laukuma un perimetra
 <p>Piemēram, skat. 3. att., kur uzzīmēts $32$-stūris, kura laukuma un perimetra vērtība ir $32$.</p>
 <p><img alt="" src="LV.AMO.2023.5.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.5.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.5.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **(A)** Jā, var, skat., piemēram, 5. att., kur ar skaitļiem parādīti veiktie gājieni.
@@ -2374,8 +2322,8 @@ kreisā stūra rūtiņa ir balta (kvadrātam $10 \\times 10$ tā atzīmēta ar b
 c), tad tajā kauliņš nevar nonākt.</p>
 <p><img alt="" src="LV.AMO.2023.5.4B.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.5.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.5.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Lielākais iespējamais viesu skaits ir $21$. Guna varēja pacienāt 21 viesi šādi:
@@ -2405,8 +2353,8 @@ dažādām konfektēm no “Serenādēm”, “Lācīšiem Ķepainīšiem” un 
 $8 + 14 + 20 = 42$. Ja būtu $22$ viesi vai vairāk, tad tiem vajadzētu vismaz $22 \\cdot 2 = 44$ šo veidu
 konfektes. Tātad vairāk par $21$ viesi nevar ierasties uz svinībām.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.5.5.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.AMO.2023.5.5.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Lielākais iespējamais viesu skaits ir $21$. Guna varēja pacienāt $21$ viesi šādi:
@@ -2440,8 +2388,8 @@ tad pāri paliek 68 − 66 = 2 konfektes. Ievērojam, ka katru viesi var pacien�
 pretruna, tātad pieņēmums ir aplams un $22$ viesus Guna pacienāt nevar. Ja viņa nevar pacienāt $22$
 viesus, tad nevar arī vairāk, un $21$ ir lielākais iespējamais viesu skaits.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.6.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.6.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Skat., piemēram, 8. att., kur pelēkā krāsā norādītas atbilstošās starpības.
@@ -2451,8 +2399,8 @@ Skat., piemēram, 8. att., kur pelēkā krāsā norādītas atbilstošās starp�
 <p>Skat., piemēram, 8. att., kur pelēkā krāsā norādītas atbilstošās starpības.</p>
 <p><img alt="" src="LV.AMO.2023.6.1A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.6.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.6.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **(a)** Nē, prasītais nav iespējams. Ja skaitļa pēdējais cipars ir $2$, $3$, $7$ vai $8$, tad skaitļa, kuru
@@ -2465,8 +2413,8 @@ iegūst, skaitli pareizinot pašu ar sevi, pēdējais cipars ir attiecīgi $4$, 
 nosacījumiem nevienu no šiem cipariem nevar izmantot skaitļu pierakstā.<br />
 <strong>(b)</strong> Jā, piemēram, der skaitļi $34$ un $1156$, jo $34 \\cdot 34 = 1156$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.6.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.6.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **(a)** Skat., piemēram, 10. attēlu. **(b)** Skat., piemēram, 11. attēlu.
@@ -2476,8 +2424,8 @@ eliozo:SOLN.LV.AMO.2023.6.3.SUB0 a eliozo:Solution ;
 <p><strong>(a)</strong> Skat., piemēram, 10. attēlu. <strong>(b)</strong> Skat., piemēram, 11. attēlu.</p>
 <p><img alt="" src="LV.AMO.2023.6.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.6.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.6.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pie galda sēž $5$ zaļie un $5$ sarkanie bruņinieki. Pamatosim, ka tā ir vienīgā iespēja.
@@ -2510,8 +2458,8 @@ Pieņemsim pretējo, ka pie galda sēž vairāk vai mazāk nekā pieci zaļie br
 <p>Iegūstam, ka ir tieši pieci zaļie bruņinieki. Ja pirmie pieci bruņinieki ir sarkanie un pēdējie pieci ir zaļie,
 tad uzdevuma nosacījumi izpildās.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.6.4.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.AMO.2023.6.4.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Pie galda sēž $5$ zaļie un $5$ sarkanie bruņinieki. Pamatosim, ka tā ir vienīgā iespēja.
@@ -2527,8 +2475,8 @@ izteikumiem izriet, ka pirmie $x$ bruņinieki melo un ir sarkanie, bet pārējie
 $x=10−x$ jeb $x=5$.</p>
 <p>Ja pirmie pieci bruņinieki ir sarkanie un pēdējie pieci ir zaļie, tad uzdevuma nosacījumi izpildās.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.6.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.6.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Mazākā $M$ vērtība ir $3$, tai atbilst $S = 12$ un atšķirīgie monētu 
@@ -2614,8 +2562,8 @@ un visas iespējamās divu monētu vērtību summas:</p>
 <p>Kā redzams, visas iespējamās summas ir dažādas, tātad monētu komplektu, ja $M=2$, 
 iespējams noteikt viennozīmīgi.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.6.5.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.AMO.2023.6.5.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Mazākā $M$ vērtība ir $3$, tai atbilst $S=12$ un atšķirīgie monētu komplekti var būt
@@ -2654,8 +2602,8 @@ vienādība $a_1 + a_2 = b_1 + b_2$ nav iespējama,
 jo vienādības kreisā puse noteikti ir lielāka nekā labā puse,
 un mūsu pieņēmums ir aplams.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.7.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.7.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **(A)** Var, piemēram, šādā veidā:
@@ -2677,10 +2625,12 @@ ir vairāk nekā pāru, tātad pēc Dirihlē
 principa kādā pārī atradīsies divi skaitļi, kas abi satur ciparu $1$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p><strong>(A)</strong> Var, piemēram, šādā veidā:
-$$1; 2; 10; 3; 11; 4; 12; 5; 13; 22; 14; 7; 15; 8; 16; 20; 17; 9; 18; 23; 19; 6; 21.$$</p>
-<p><strong>(B)</strong> Nē, nevar. Pierādīsim, ka, lai kā arī šos skaitļus uzrakstītu rindā, 
-vienmēr blakus atradīsies divi skaitļi, kas abi satur ciparu $1$.</p>
-<p>Ievērosim, ka ir daudz skaitļu, kuros ir cipars 1, 
+$$1; 2; 10; 3; 11; 4; 12; 5; 13; 22; 14; 7; 15; 8; 16; 20; 17; 9; 18; 23; 19; 6; 21.$$
+
+**(B)** Nē, nevar. Pierādīsim, ka, lai kā arī šos skaitļus uzrakstītu rindā, 
+vienmēr blakus atradīsies divi skaitļi, kas abi satur ciparu $1$.
+
+Ievērosim, ka ir daudz skaitļu, kuros ir cipars 1, 
 to skaits noteikti ir vismaz $1100$, jo ir $1000$ četrciparu
 skaitļu, kas sākas ar ciparu $1$, un $100$ trīsciparu skaitļu, 
 kas sākas ar ciparu $1$.
@@ -2692,8 +2642,8 @@ Redzam, ka četrciparu un trīsciparu skaitļu, kas satur ciparu $1$,
 ir vairāk nekā pāru, tātad pēc Dirihlē
 principa kādā pārī atradīsies divi skaitļi, kas abi satur ciparu $1$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.7.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.7.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Lielākais iespējamais septiņciparu skaitlis, kas atbilst uzdevuma nosacījumiem, 
@@ -2732,8 +2682,8 @@ tad $a$ vērtībai jābūt pēc iespējas lielākai:</p>
   un meklētais skaitlis ir $4888884$.</li>
 </ul>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.7.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.7.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Skat., piemēram, **(a)** 13. att. un **(b)** 14. att.
@@ -2743,8 +2693,8 @@ Skat., piemēram, **(a)** 13. att. un **(b)** 14. att.
 <p>Skat., piemēram, <strong>(a)</strong> 13. att. un <strong>(b)</strong> 14. att.</p>
 <p><img alt="" src="LV.AMO.2023.7.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.7.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.7.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Mazākā $S$ vērtība ir $8$, tai atbilst $M=4$ un atšķirīgie monētu 
@@ -2779,7 +2729,7 @@ komplekti ir $5+1+1+1$ un $2+2+2+2$.</p>
 <p>Pamatosim, ka mazākām $S$ vērtībām šāda $M$ vērtība neeksistē. 
 Ievērosim, ka nevar izveidot summu $S$,
 ja monētu skaits $M$ ir lielāks nekā $S$.
-Tātad pietiek apskatīt visus gadījumus, kad $M \\leq S &lt; 8$.</p>
+Tātad pietiek apskatīt visus gadījumus, kad $M \\leq S < 8$.</p>
 <p>Ja, piemēram $S=7$ un $M=7$, tad $7 = 1+1+1+1+1+1+1$ un nav citu 
 veidu, kā samaksāt summu 7 ar 7 monētām. Arī citiem $S$ un $M$ 
 samaksāšanas veids ir viens vienīgs (vai neeksistē vispār). </p>
@@ -2865,8 +2815,8 @@ samaksāšanas veids ir viens vienīgs (vai neeksistē vispār). </p>
 komplektu varēja noteikt viennozīmīgi,
 tādēļ $S=8$ ir mazākā iespējamā $S$ vērtība.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.7.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.7.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Uz palodzes sēž $6$ bizbizmārītes. Pamatosim, ka tā ir vienīgā iespēja.
@@ -2931,16 +2881,16 @@ punktiņš un bez pirmajām trim bizbizmārītēm ir vēl $21 ∶ 7 = 3$
 bizbizmārītes. Tātad kopā uz palodzes
 sēž $6$ bizbizmārītes.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.8.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.8.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Jā, var, piemēram, $\\frac{7}{3} + \\frac{1}{6} = \\frac{5}{2}$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Jā, var, piemēram, $\\frac{7}{3} + \\frac{1}{6} = \\frac{5}{2}$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.8.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.8.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Vienīgais derīgais skaitlis $x$ ir $453$. 
@@ -2979,14 +2929,14 @@ tad iegūstam, ka $c = 3$.
 Apzīmējam trīsciparu skaitli, kam cipari uzrakstīti pretējā secībā, 
 ar $\\overline{cba}$. Iegūstam:
 $$\\begin{aligned}
-\\overline{abc} − 99 &amp; = \\overline{cba}; \\
-100a + 10b + c − 99 &amp; = 100c + 10b + a; \\
-99a − 99c = 99; \\
-a - c = 1.\\ \\end{aligned}$$
+\\overline{abc} − 99 & = \\overline{cba}; \\\\
+100a + 10b + c − 99 & = 100c + 10b + a; \\\\
+99a − 99c = 99; \\\\
+a - c = 1.\\\\ \\end{aligned}$$
 Tā kā $c=3$, tad $a=4$. Tā kā $a+b=9$, tad $b=5$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.8.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.8.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Tā kā regulāra trijstūra visi leņķi ir $60^{\\circ}$, tad 
@@ -3014,8 +2964,8 @@ summu, iegūstam:</p>
 <p>Tātad $\\sphericalangle CGF = \\sphericalangle EGH = 60^{\\circ} + \\alpha − \\beta$.</p>
 <p><img alt="" src="LV.AMO.2023.8.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.8.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.8.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **(a)** Lielākā iespējamā starpības starp naudas summām ir $16$ centi.  
@@ -3123,8 +3073,8 @@ nemainās un visas iespējas ir aplūkotas tabulā.</p>
 </table>
 <p>Kā redzams, lielākā iespējamā starpība ir $16$, bet mazākā starpība ir $7$ centi.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.8.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.8.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Uz palodzes sēž 6 bizbizmārītes. Pamatosim, ka tā ir vienīgā iespēja.
@@ -3189,8 +3139,8 @@ $38-14=24$ punktiņi un bez pirmajām trim bizbizmārītēm ir vēl
 $24∶8=3$ bizbizmārītes. Tātad kopā uz palodzes sēž $6$
 bizbizmārītes.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.9.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.9.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **(A)** Jā, var, piemēram, šādi:
@@ -3211,8 +3161,8 @@ nekā saucējs. Pēc katra atļautā gājiena šī īpašība saglabāsies.
 Tātad daļas vērtība nevar kļūt vienāda ar 1 (tā vienmēr būs mazāka 
 nekā viens, jo tās skaitītājs vienmēr būs mazāks nekā saucējs).</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.9.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.9.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Skaitlis $\\overline{cd}$ var būt $13$; $26$; $39$; $52$; $65$; $78$ vai $91$. 
@@ -3232,15 +3182,16 @@ tas ir, $13$; $26$; $39$; $52$; $65$; $78$ vai $91$."""@lv ;
 Apzīmējam iegūto četrciparu skaitli ar $\\overline{abcd}$. 
 Ekvivalenti pārveidojam šo skaitli:</p>
 <p>$$\\overline{abcd} = 1000a + 100b + 10c + d = (12a + 9b) + (10c + d) + 988a + 91b =$$
-$$= (12a + 9b) + (10c + d) + 13 \\cdot 76a + 13 \\cdot 7𝑏.$$</p>
-<p>Tā kā saskaitāmie $13 \\cdot 76a$ un $13 \\cdot 7b$ dalās ar $13$ 
+$$= (12a + 9b) + (10c + d) + 13 \\cdot 76a + 13 \\cdot 7𝑏.$$
+
+Tā kā saskaitāmie $13 \\cdot 76a$ un $13 \\cdot 7b$ dalās ar $13$ 
 un no dotā $12a + 9b$ dalās ar $13$, tad, lai viss skaitlis
 dalītos ar $13$, arī $10c + d = \\overline{cd}$ jādalās ar $13$. 
 Tātad skaitlis $\\overline{cd}$ var būt jebkurš skaitļa $13$ daudzkārtnis,
 tas ir, $13$; $26$; $39$; $52$; $65$; $78$ vai $91$.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.9.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.9.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Apzīmējam trijstūra virsotnes ar $A, B, C$ un pieņemsim, ka 
@@ -3277,8 +3228,8 @@ $AHM$ katete $AH$ atrodas pret $30^{\\circ}$ leņķi, tātad
 tā ir vienāda ar pusi no hipotenūzas $AM$ jeb $AM = 2AH$.</p>
 <p><img alt="" src="LV.AMO.2023.9.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.9.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.9.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Nē, ne vienmēr. Aplūkosim $4 \\times 9$ rūtiņas lielu tabulu.
@@ -3330,8 +3281,8 @@ ir divas kartītes ar $9$, tad jau uz šīm divām kartītēm uzrakstīto skait�
 kartīšu summa ir $4 \\cdot 1 = 4$. Esam ieguvuši pretrunu, ko izraisīja pieņēmums, 
 ka kartītes sešās grupās pa sešām katrā ar vienādu skaitļu kopsummu sadalīt ir iespējams.</p>"""@lv .
 
-eliozo:SOLN.LV.AMO.2023.9.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.AMO.2023.9.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **(A)** Jā, var, piemēram, skat. 18. att., kur ar pelēkā krāsā ir blakus skaitļu starpība. Tādā
@@ -3358,15 +3309,18 @@ skaitļi, skaitlis $S$ vienmēr būs pāra skaitlis."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p><strong>(A)</strong> Jā, var, piemēram, skat. 18. att., kur ar pelēkā krāsā ir blakus skaitļu starpība. Tādā
 gadījumā
-$$S = 3 + 14 + 13 + 12 + 11 + 10 + 3 + 4 + 7 + 6 + 5 + 4 + 1 + 2 + 1 + 4 = 100.$$</p>
-<p><img alt="" src="LV.AMO.2023.9.5A.png" /></p>
-<p><strong>(B)</strong> Pamatosim, ka $S = 123$ nevar iegūt. Šo panāksim pierādot, ka $S$ vienmēr ir jābūt pāra skaitlim. Ja
+$$S = 3 + 14 + 13 + 12 + 11 + 10 + 3 + 4 + 7 + 6 + 5 + 4 + 1 + 2 + 1 + 4 = 100.$$
+
+![](LV.AMO.2023.9.5A.png)
+
+**(B)** Pamatosim, ka $S = 123$ nevar iegūt. Šo panāksim pierādot, ka $S$ vienmēr ir jābūt pāra skaitlim. Ja
 $x_1, x_2, x_3, \\ldots, x_{16}$ ir patvaļīgi sakārtoti pirmie 16 naturālie skaitļi, tad summu $S$ varam izteikt kā
 $$S = |x_1 − x_2| + |x_2 − x_3| + |x_3 − x_4| + \\cdots + |x_{15} − x_{16}| + |x_{16} − x_1|.$$
 Ievērosim, ka $S$ būtu 0, ja, rēķinot starpību, nebūtu vienmēr no lielākā skaitļa jāatņem mazākais, tas ir,
 starpības varētu pieļaut negatīvas vērtības, jo viss pa pāriem noīsinātos: 
-$$x_1 − x_2 + x_2 − x_3 + x_3 − x_4 + \\cdots + x_{15} − x_{16} + x_{16} − x_1 = 0.$$</p>
-<p>Tikko sākam parūpēties par to, lai kāda no negatīvajām starpībām summā būtu pozitīva (no lielāka tiek
+$$x_1 − x_2 + x_2 − x_3 + x_3 − x_4 + \\cdots + x_{15} − x_{16} + x_{16} − x_1 = 0.$$
+
+Tikko sākam parūpēties par to, lai kāda no negatīvajām starpībām summā būtu pozitīva (no lielāka tiek
 atņemts mazākais), tad rezultātā iegūstam, ka 𝑆 pieaug par pāra skaitli. Ja summā ir kāda negatīva
 starpība $x_i − x_j$, kur $x_j &gt; x_i$, un vēlamies to padarīt par pozitīvu izteiksmi $x_j − x_i$ jeb $|x_i − x_j|$, tad
 jāpieskaita $2(x_j − x_i)$, kas ir pāra skaitlis, jo $x_j − x_i = (x_i − x_j) + 2(x_j − x_i)$. 

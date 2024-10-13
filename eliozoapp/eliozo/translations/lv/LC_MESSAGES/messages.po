@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-13 03:55+0300\n"
+"POT-Creation-Date: 2024-10-13 18:38+0300\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: lv\n"
@@ -19,9 +19,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: templates/archive_content.html:5 templates/book_problems_content.html:5
-#: templates/concepts_content.html:5 templates/problem_content.html:6
-#: templates/problem_solution_content.html:6
+#: templates/archive_content.html:15
+msgid "Olympiads with full solutions are shown in bold. Others are incomplete."
+msgstr ""
+"Olimpiādes ar visiem atrisinājumiem ir treknā tekstā. Citas ir "
+"nepabeigtas."
+
+#: templates/book_problems_content.html:5 templates/concepts_content.html:5
+#: templates/problem_content.html:6 templates/problem_solution_content.html:6
 #: templates/references_content.html:5 templates/topic_tasks_content.html:5
 #: templates/topics_content.html:6 templates/video_content.html:5
 msgid "Back"
@@ -152,7 +157,7 @@ msgstr "Metode kas izmantota kādā no atrisinājumiem."
 msgid "Unlike other metadata method is often unspecified."
 msgstr "Atšķirībā no citiem metadatiem metodi bieži nenorāda."
 
-#: templates/filter_content.html:154
+#: templates/filter_content.html:154 templates/problem_content.html:61
 msgid "Solution"
 msgstr "Atrisinājums"
 
@@ -244,6 +249,10 @@ msgstr "Ieteikumi"
 msgid "Formulas"
 msgstr "Formulas"
 
+#: templates/problem_content.html:63
+msgid "No solution"
+msgstr "Nav atrisinājuma"
+
 #: templates/stats_problemcounts.html:15
 msgid "Code"
 msgstr ""
@@ -265,9 +274,6 @@ msgstr ""
 
 #~ msgid "Has solution"
 #~ msgstr "Ir atrisinājums"
-
-#~ msgid "No solution"
-#~ msgstr "Nav atrisinājuma"
 
 #~ msgid "Has video"
 #~ msgstr "Ir video"

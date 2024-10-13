@@ -4,12 +4,13 @@
 eliozo:LV.VOL.2017.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2017.10.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.10.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.10.1.SUB1 ;
     eliozo:problemText """Dots, ka $b$ un $c$ ir naturāli skaitļi un kvadrātvienādojuma $x^{2}-bx+c=0$ 
 reālās saknes ir $x_{1}$ un $x_{2}$. Pierādīt, ka **(A)** 
 $x_{1}^{2}+x_{2}^{2}+2017$; **(B)** $x_{1}^{3}+x_{2}^{3}$ ir naturāls skaitlis!"""@lv ;
@@ -27,13 +28,14 @@ eliozo:LV.VOL.2017.10.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2017.10.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.10.2.SUB0,
-        eliozo:SOLN.LV.VOL.2017.10.2.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.10.2.SUB1,
+        eliozo:SOLN.LV.VOL.2017.10.2.SUB2 ;
     eliozo:problemText """Dots pirmskaitlis, kas satur vismaz $4$ dažādus ciparus. Pierādīt, ka tā 
 ciparus var pārkārtot citā secībā tā, lai jauniegūtais skaitlis nebūtu 
 pirmskaitlis!"""@lv ;
@@ -54,13 +56,13 @@ pirmskaitlis!</p>"""@lv ;
 eliozo:LV.VOL.2017.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2017.10.3" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2017.10.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.10.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.10.3.SUB1 ;
     eliozo:problemText """Četrstūris $ABCD$ ir ievilkts riņķa līnijā $\\omega_{1}$, bet $ABCD$ malu 
 viduspunkti atrodas uz riņķa līnijas $\\omega_{2}$. Pierādīt, ka 
 $\\sphericalangle ABD+\\sphericalangle BDC=90^{\\circ}$."""@lv ;
@@ -77,12 +79,13 @@ $\\sphericalangle ABD+\\sphericalangle BDC=90^{\\circ}$.</p>"""@lv ;
 eliozo:LV.VOL.2017.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2017.10.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.10.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.10.4.SUB1 ;
     eliozo:problemText """Dotas $40$ kartītes, uz divām no tām uzrakstīts skaitlis $1$, uz divām - 
 skaitlis $2,\\ \\ldots$, uz divām - skaitlis $20$. Kāds ir lielākais iespējamais
 komplektu skaits, ko vienlaicīgi var izveidot no šīm $40$ kartītēm tā, lai 
@@ -101,13 +104,13 @@ katrā komplektā būtu trīs kartītes, uz kurām uzrakstīto skaitļu summa ir
 eliozo:LV.VOL.2017.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.VOL.2017.10.5" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2017.10.5A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.10.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.10.5.SUB1 ;
     eliozo:problemText """Seši tūristi bija devušies vairākos ceļojumos uz sešām valstīm, katrā ceļojumā 
 viens tūrists apceļoja tieši vienu valsti. Ja izvēlamies jebkuras trīs valstis 
 un jebkurus trīs tūristus, tad vismaz viens no viņiem ir bijis ceļojumā uz kādu
@@ -126,12 +129,13 @@ no šīm valstīm. Kāds ir mazākais iespējamais kopējais ceļojumu skaits?</
 eliozo:LV.VOL.2017.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2017.11.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.11.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.11.1.SUB1 ;
     eliozo:problemText """Cik ir tādu piecciparu skaitļu, kam katrs nākamais cipars ir lielāks par 
 iepriekšējo?"""@lv ;
     eliozo:problemTextHtml """<p>Cik ir tādu piecciparu skaitļu, kam katrs nākamais cipars ir lielāks par 
@@ -146,12 +150,13 @@ iepriekšējo?</p>"""@lv ;
 eliozo:LV.VOL.2017.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2017.11.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.11.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.11.2.SUB1 ;
     eliozo:problemText """Kurš no skaitļiem $(\\sqrt{7})^{\\sqrt{5}}$ un $(\\sqrt{5})^{\\sqrt{7}}$ ir 
 lielāks?"""@lv ;
     eliozo:problemTextHtml """<p>Kurš no skaitļiem $(\\sqrt{7})^{\\sqrt{5}}$ un $(\\sqrt{5})^{\\sqrt{7}}$ ir 
@@ -166,13 +171,13 @@ lielāks?</p>"""@lv ;
 eliozo:LV.VOL.2017.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2017.11.3" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2017.11.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.11.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.11.3.SUB1 ;
     eliozo:problemText """Trīs riņķa līnijas $\\omega_{1},\\ \\omega_{2}$ un $\\omega_{3}$ krustojas punktā 
 $O$. Riņķa līnijas pa pāriem krustojas arī punktos $P\\left(\\omega_{1}\\right.$ 
 un $\\left.\\omega_{2}\\right), R\\left(\\omega_{2}\\right.$ un 
@@ -199,12 +204,13 @@ un $C$ atrodas uz vienas taisnes!</p>"""@lv ;
 eliozo:LV.VOL.2017.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2017.11.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.11.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.11.4.SUB1 ;
     eliozo:problemText """Pierādīt, ka no jebkuriem $17$ naturāliem skaitļiem var izvēlēties $9$ skaitļus
 tā, lai to summa dalītos ar $9$."""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka no jebkuriem $17$ naturāliem skaitļiem var izvēlēties $9$ skaitļus
@@ -219,14 +225,13 @@ tā, lai to summa dalītos ar $9$.</p>"""@lv ;
 eliozo:LV.VOL.2017.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.VOL.2017.11.5" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2017.11.5A.png,
-        eliozo:IMG.LV.VOL.2017.11.5B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.11.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.11.5.SUB1 ;
     eliozo:problemText """Uz riņķa līnijas atzīmēti $N$ punkti tā, ka šie punkti ir regulāra $N$ - stūra 
 virsotnes. Spēlētāji $A$ un $B$ spēlē šādu spēli: Viņi pārmaiņus novelk pa 
 vienai hordai, kas savieno divus atzīmētos punktus uz riņķa līnijas tā, lai 
@@ -251,12 +256,13 @@ $N=15$?</p>"""@lv ;
 eliozo:LV.VOL.2017.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2017.12.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.12.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.12.1.SUB1 ;
     eliozo:problemText """Doti tādi skaitļi $a,\\ b$ un $c$, ka $a+c=\\frac{b}{3^{3}}$, turklāt neviens no 
 skaitļiem $a,\\ b,\\ c$ nav $0$. Pierādit, ka $f(x)=ax^{2}+bx+c$ grafiks noteikti
 krusto $x$ asi kādā intervāla $[-1 ; 1]$ punktā!"""@lv ;
@@ -273,12 +279,13 @@ krusto $x$ asi kādā intervāla $[-1 ; 1]$ punktā!</p>"""@lv ;
 eliozo:LV.VOL.2017.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2017.12.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.12.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.12.2.SUB1 ;
     eliozo:problemText """Pierādī, ka $\\sqrt{x^{2}+y^{2}}+(2-\\sqrt{2}) \\sqrt{xy} \\geq x+y$, ja $x$ un $y$
 ir reāli pozitīvi skaitļi!"""@lv ;
     eliozo:problemTextHtml """<p>Pierādī, ka $\\sqrt{x^{2}+y^{2}}+(2-\\sqrt{2}) \\sqrt{xy} \\geq x+y$, ja $x$ un $y$
@@ -293,15 +300,14 @@ ir reāli pozitīvi skaitļi!</p>"""@lv ;
 eliozo:LV.VOL.2017.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2017.12.3" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2017.12.3A.png,
-        eliozo:IMG.LV.VOL.2017.12.3B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.12.3.SUB0,
-        eliozo:SOLN.LV.VOL.2017.12.3.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.12.3.SUB1,
+        eliozo:SOLN.LV.VOL.2017.12.3.SUB2 ;
     eliozo:problemText """Dots taisnstūris $ABCD$. Uz taisnes $BD$ atlikts punkts $E$, tā ka $D$ atrodas 
 starp $B$ un $E$. Uz taisnes $EC$ atlikts punkts $F$ tā, ka $BF$ ir paralēls 
 $AC$. Pierādīt, ka trijstūra $BEF$ laukums ir lielāks nekā taisnstūra $ABCD$ 
@@ -320,12 +326,13 @@ laukums!</p>"""@lv ;
 eliozo:LV.VOL.2017.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2017.12.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.12.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.12.4.SUB1 ;
     eliozo:problemText """Naturālu skaitli sauksim par *skaistu*, ja tā visu naturālo dalītāju summa 
 (ieskaitot $1$ un pašu skaitli) ir nepāra skaitlis. Atrast mazāko naturālo 
 skaiti $k$ ar īpašību: starp jebkuriem patvaļīgi izvēlētiem $k$ *skaistiem* 
@@ -346,12 +353,13 @@ naturāla skaitļa kvadrāts!</p>"""@lv ;
 eliozo:LV.VOL.2017.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.VOL.2017.12.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.12.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.12.5.SUB1 ;
     eliozo:problemText """Kādā valstī no parlamenta deputātiem ir izveidotas $100$ komisijas. Katram 
 deputātam ir pienākums strādāt vismaz vienā komisijā, taču deputāti drīkst 
 strādāt arī vairākās komisijās. Deputāti par darbu komisijās katru mēnesi saņem
@@ -388,12 +396,13 @@ darbu komisijās?</p>"""@lv ;
 eliozo:LV.VOL.2017.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2017.9.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.9.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.9.1.SUB1 ;
     eliozo:problemText """Doti $63$ dažādi naturāli skaitļi, kuru summa ir $2017$. Atrodiet šos skaitļus 
 un pamatojiet, ka citu nav!"""@lv ;
     eliozo:problemTextHtml """<p>Doti $63$ dažādi naturāli skaitļi, kuru summa ir $2017$. Atrodiet šos skaitļus 
@@ -408,12 +417,13 @@ un pamatojiet, ka citu nav!</p>"""@lv ;
 eliozo:LV.VOL.2017.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2017.9.2" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.9.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.9.2.SUB1 ;
     eliozo:problemText """Uz taisnes atlikti punkti $P,\\ Q,\\ R$ un $S$ tā, ka $PQ=RS$ (skat. 1.att.). 
 Nogriežņi $PQ,\\ RS,\\ PS,\\ QR$ ir riņķu diametri. Nogrieznis $MN$ ir iekrāsotās 
 figūras simetrijas ass. Pierādīt, ka iekrāsotās figūras laukums ir vienāds ar 
@@ -435,12 +445,13 @@ laukumu riņķim, kura diametrs ir $MN$.</p>
 eliozo:LV.VOL.2017.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2017.9.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.9.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.9.3.SUB1 ;
     eliozo:problemText """Naturālā piecciparu skaitlī vienādus ciparus aizstāja ar vienādiem burtiem, bet
 dažādus ciparus - ar dažādiem burtiem, un ieguva pierakstu $GANGA$. Zināms, ka 
 $GANGA$, dalot ar $7$, dod atlikumu $A,\\ GANGA$, dalot ar $11$, dod atlikumu 
@@ -449,7 +460,7 @@ būt sākotnējais skaitlis?"""@lv ;
     eliozo:problemTextHtml """<p>Naturālā piecciparu skaitlī vienādus ciparus aizstāja ar vienādiem burtiem, bet
 dažādus ciparus - ar dažādiem burtiem, un ieguva pierakstu $GANGA$. Zināms, ka 
 $GANGA$, dalot ar $7$, dod atlikumu $A,\\ GANGA$, dalot ar $11$, dod atlikumu 
-$N$, bet $GANGA$, dalot ar $13$, dod atlikumu $G$, turklāt $G&gt;A&gt;N$. Kāds varēja
+$N$, bet $GANGA$, dalot ar $13$, dod atlikumu $G$, turklāt $G>A>N$. Kāds varēja
 būt sākotnējais skaitlis?</p>"""@lv ;
     eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
@@ -461,14 +472,15 @@ būt sākotnējais skaitlis?</p>"""@lv ;
 eliozo:LV.VOL.2017.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2017.9.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.9.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.9.4.SUB1 ;
     eliozo:problemText "Pierādīt, ka $x^{4}-x^{2}-3x+4>0$ visiem reāliem $x$."@lv ;
-    eliozo:problemTextHtml "<p>Pierādīt, ka $x^{4}-x^{2}-3x+4&gt;0$ visiem reāliem $x$.</p>"@lv ;
+    eliozo:problemTextHtml "<p>Pierādīt, ka $x^{4}-x^{2}-3x+4>0$ visiem reāliem $x$.</p>"@lv ;
     eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number 4 ;
@@ -479,13 +491,13 @@ eliozo:LV.VOL.2017.9.4 a eliozo:Problem ;
 eliozo:LV.VOL.2017.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.VOL.2017" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.VOL.2017.9.5" ;
-    eliozo:problemImage eliozo:IMG.LV.VOL.2017.9.5A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.9.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.VOL.2017.9.5.SUB1 ;
     eliozo:problemText """Katra no bumbiņām, kas atrodas kastē, nokrāsota vienā no $N$ krāsām, un uz 
 katras uzrakstīts naturāls skaitlis, kas nepārsniedz $N$. Zināms, ka katra no 
 $N$ krāsām izmantota vismaz vienu reizi, tāpat arī katrs skaitlis, kas 
@@ -505,40 +517,8 @@ dažādi skaitļi?</p>"""@lv ;
     eliozo:suffix "LV.VOL.2017.9" ;
     eliozo:suggestedGrade 9 .
 
-eliozo:IMG.LV.VOL.2017.10.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2017.10.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2017.10.5A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2017.10.5A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2017.11.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2017.11.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2017.11.5A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2017.11.5A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2017.11.5B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2017.11.5B.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2017.12.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2017.12.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2017.12.3B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2017.12.3B.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.VOL.2017.9.5A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.VOL.2017.9.5A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:SOLN.LV.VOL.2017.10.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.10.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 No Vjeta teorēmas izriet, ka $x_{1}+x_{2}=b$ un $x_{1}x_{2}=c$. Tātad gan sakņu
@@ -575,27 +555,32 @@ $a^{3}+b^{3}=(a+b)\\left(a^{2}-ab+b^{2}\\right)$."""@lv ;
 summa, gan sakņu reizinājums ir naturāls skaitlis un abas saknes ir pozitīvas.</p>
 <p><strong>(A)</strong> Pārveidojam doto izteiksmi:</p>
 <p>$$\\begin{gathered}
-x_{1}^{2}+x_{2}^{2}+2017=x_{1}^{2}+2x_{1}x_{2}+x_{2}^{2}-2x_{1}x_{2}+2017=\\left(x_{1}+x_{2}\\right)^{2}-2x_{1}x_{2}+2017= \\
+x_{1}^{2}+x_{2}^{2}+2017=x_{1}^{2}+2x_{1}x_{2}+x_{2}^{2}-2x_{1}x_{2}+2017=\\left(x_{1}+x_{2}\\right)^{2}-2x_{1}x_{2}+2017= \\\\
 =b^{2}-2c+2017
-\\end{gathered}$$</p>
-<p>Tā kā naturāla skaitļa kvadrāts ir naturāls skaitlis un naturālu skaitļu summa 
+\\end{gathered}$$
+
+Tā kā naturāla skaitļa kvadrāts ir naturāls skaitlis un naturālu skaitļu summa 
 vai starpība ir vesels skaitlis, tad $b^{2}-2c+2017$ ir vesels skaitlis, līdz 
 ar to $x_{1}^{2}+x_{2}^{2}+2017$ arī ir vesels skaitlis. Ņemot vērā, ka 
 $x_{1}^{2}+x_{2}^{2}+2017&gt;0$, secinām, ka $x_{1}^{2}+x_{2}^{2}+2017$ ir 
-naturāls skaitlis.</p>
-<p><strong>(B)</strong> Pārveidojam doto izteiksmi:</p>
-<p>$$\\begin{gathered}
-x_{1}^{3}+x_{2}^{3}=\\left(x_{1}+x_{2}\\right)\\left(x_{1}^{2}+x_{2}^{2}\\right)-x_{1}x_{2}^{2}-x_{1}^{2}x_{2}=b\\left(b^{2}-2c\\right)-x_{1}x_{2}\\left(x_{2}+x_{1}\\right)= \\
+naturāls skaitlis.
+
+**(B)** Pārveidojam doto izteiksmi:
+
+$$\\begin{gathered}
+x_{1}^{3}+x_{2}^{3}=\\left(x_{1}+x_{2}\\right)\\left(x_{1}^{2}+x_{2}^{2}\\right)-x_{1}x_{2}^{2}-x_{1}^{2}x_{2}=b\\left(b^{2}-2c\\right)-x_{1}x_{2}\\left(x_{2}+x_{1}\\right)= \\\\
 =b\\left(b^{2}-2c\\right)-cb=b^{3}-3bc
-\\end{gathered}$$</p>
-<p>Tā kā naturāla skaitļa kubs ir naturāls skaitlis un naturālu skaitļu starpība 
+\\end{gathered}$$
+
+Tā kā naturāla skaitļa kubs ir naturāls skaitlis un naturālu skaitļu starpība 
 ir vesels skaitlis, tad $b^{3}-3bc$ ir vesels skaitlis. Tā kā 
-$x_{1}^{3}+x_{2}^{3}&gt;0$, tad $x_{1}^{3}+x_{2}^{3}$ ir naturāls skaitlis.</p>
-<p><em>Piezīme.</em> (B) gadīumā var izmantot formulu 
+$x_{1}^{3}+x_{2}^{3}&gt;0$, tad $x_{1}^{3}+x_{2}^{3}$ ir naturāls skaitlis.
+
+*Piezīme.* (B) gadīumā var izmantot formulu 
 $a^{3}+b^{3}=(a+b)\\left(a^{2}-ab+b^{2}\\right)$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.10.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.10.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Ja pirmskaitlis satur kādu no cipariem $0,\\ 2,\\ 4,\\ 5,\\ 6$ vai $8$, tad, 
@@ -639,42 +624,42 @@ cipariem, kas paliek, ja pa vienai reizei izmanto ciparus $1,\\ 3,\\ 7$ un $9$
 ($x=0$, ja dotais bija četrciparu skaitlis).</p>
 <p>Aplūkojam atlikumus, kas rodas dalot šos skaitļus ar $7$, turklāt uzskatīsim, 
 ka, skaitli $x \\cdot 10^{4}$ dalot ar $7$, atlikumā iegūst $y$, kur 
-$y \\in{0; 1; 2; 3; 4; 5; 6}$.</p>
+$y \\in\\{0; 1; 2; 3; 4; 5; 6\\}$.</p>
 <table>
 <thead>
 <tr>
-<th align="center"><strong>Skaitlis</strong></th>
-<th align="center"><strong>Atlikums, dalot ar $7$</strong></th>
+<th style="text-align: center;"><strong>Skaitlis</strong></th>
+<th style="text-align: center;"><strong>Atlikums, dalot ar $7$</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">$x \\cdot 10^{4}+1379$</td>
-<td align="center">$y$</td>
+<td style="text-align: center;">$x \\cdot 10^{4}+1379$</td>
+<td style="text-align: center;">$y$</td>
 </tr>
 <tr>
-<td align="center">$x \\cdot 10^{4}+1397$</td>
-<td align="center">$y+4$</td>
+<td style="text-align: center;">$x \\cdot 10^{4}+1397$</td>
+<td style="text-align: center;">$y+4$</td>
 </tr>
 <tr>
-<td align="center">$x \\cdot 10^{4}+1739$</td>
-<td align="center">$y+3$</td>
+<td style="text-align: center;">$x \\cdot 10^{4}+1739$</td>
+<td style="text-align: center;">$y+3$</td>
 </tr>
 <tr>
-<td align="center">$x \\cdot 10^{4}+1793$</td>
-<td align="center">$y+1$</td>
+<td style="text-align: center;">$x \\cdot 10^{4}+1793$</td>
+<td style="text-align: center;">$y+1$</td>
 </tr>
 <tr>
-<td align="center">$x \\cdot 10^{4}+1937$</td>
-<td align="center">$y+5$</td>
+<td style="text-align: center;">$x \\cdot 10^{4}+1937$</td>
+<td style="text-align: center;">$y+5$</td>
 </tr>
 <tr>
-<td align="center">$x \\cdot 10^{4}+1973$</td>
-<td align="center">$y+6$</td>
+<td style="text-align: center;">$x \\cdot 10^{4}+1973$</td>
+<td style="text-align: center;">$y+6$</td>
 </tr>
 <tr>
-<td align="center">$x \\cdot 10^{4}+3719$</td>
-<td align="center">$y+2$</td>
+<td style="text-align: center;">$x \\cdot 10^{4}+3719$</td>
+<td style="text-align: center;">$y+2$</td>
 </tr>
 </tbody>
 </table>
@@ -682,8 +667,8 @@ $y \\in{0; 1; 2; 3; 4; 5; 6}$.</p>
 tātad nebūs pirmskaitlis.</p>
 <p>Līdz ar to esam pierādījuši vajadzīgo.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.10.2.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.VOL.2017.10.2.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Ievērojam, ka jebkurš no cipariem $0,2,4,5,6,8$ skaitļa pierakstā ļauj 
@@ -769,8 +754,8 @@ mainīšana vietām (dalāmības pazīme ar $3$ jeb ciparu summa nav atkarīga n
 Dalāmība ar $11$ nemainās, ja samaina ciparus nepāru pozīcijās (vai arī pāru pozīcijās) -- 
 tātad, arī dalot ar $11$ nevar sagaidīt daudzus atlikumus.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Apzīmēsim malu $AB,\\ BC,\\ CD$ un $DA$ malu viduspunktus attiecīgi ar 
@@ -810,8 +795,8 @@ viena un tā paša loka $AD$, tad
 $\\sphericalangle BDC+\\sphericalangle ABD=90^{\\circ}$.</p>
 <p><img alt="" src="LV.VOL.2017.10.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.10.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.10.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Lielākais komplektu skaits ir astoņi, piemēram, 
@@ -832,11 +817,12 @@ $(6,\\ 7,\\ 8);\\ (5,\\ 7,\\ 9);\\ (4,\\ 5,\\ 12);\\ (3,\\ 4,\\ 14);\\ (3,\\ 6,\
 deviņus komplektus, tad būtu izmantotas $27$ kartītes un uz tām uzrakstīto 
 skaitļu summa būtu $9 \\cdot 21=189$, bet pati mazākā skaitļu summa, ko var 
 iegūt no $27$ kartītēm, ir</p>
-<p>$$2 \\cdot 1+2 \\cdot 2+2 \\cdot 3+\\cdots+2 \\cdot 13+14=2 \\cdot(1+2+\\cdots+13)+14=2 \\cdot \\frac{(1+13) \\cdot 13}{2}+14=196$$</p>
-<p>kas jau ir lielāka nekā $189$. Tātad deviņus komplektus izveidot nevar.</p>"""@lv .
+<p>$$2 \\cdot 1+2 \\cdot 2+2 \\cdot 3+\\cdots+2 \\cdot 13+14=2 \\cdot(1+2+\\cdots+13)+14=2 \\cdot \\frac{(1+13) \\cdot 13}{2}+14=196$$
 
-eliozo:SOLN.LV.VOL.2017.10.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+kas jau ir lielāka nekā $189$. Tātad deviņus komplektus izveidot nevar.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2017.10.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Mazākais iespējamais kopējais ceļojumu skaits ir $10$. Rakstīsim ceļojumus 
@@ -877,8 +863,8 @@ ceļojumos, tātad tie kopā apmeklējuši ne vairāk kā $3$ valstis. Tāpēc i
 $3$ valstis, ko neviens no šiem trim tūristiem nav apmeklējis, kas ir pretrunā 
 ar uzdevuma nosacījumiem.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.11.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.11.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Katru šādu piecciparu skaitli var iegūt izsvītrojot $4$ ciparus no skaitļa 
@@ -891,8 +877,8 @@ $123456789$. Tā kā četrus ciparus var izvēlēties
 $C_{9}^{4}=\\frac{9 \\cdot 8 \\cdot 7 \\cdot 6}{4 \\cdot 3 \\cdot 2 \\cdot 1}=126$ 
 veidos, tad ir tieši $126$ šādi piecciparu skaitļi.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.11.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.11.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Lielāks ir skaitlis $(\\sqrt{7})^{\\sqrt{5}}$. Kāpināsim abus skaitļus pakāpē 
@@ -904,13 +890,13 @@ $(\\sqrt{5})^{\\sqrt{7} \\cdot 2 \\sqrt{5}}=5^{\\sqrt{35}}<5^{6}=15625$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Lielāks ir skaitlis $(\\sqrt{7})^{\\sqrt{5}}$. Kāpināsim abus skaitļus pakāpē 
 $2 \\sqrt{5}$ un pierādīsim, ka 
-$(\\sqrt{5})^{\\sqrt{7} \\cdot 2 \\sqrt{5}}&lt;(\\sqrt{7})^{\\sqrt{5} \\cdot 2 \\sqrt{5}}$.
+$(\\sqrt{5})^{\\sqrt{7} \\cdot 2 \\sqrt{5}}<(\\sqrt{7})^{\\sqrt{5} \\cdot 2 \\sqrt{5}}$.
 Tas savukārt izriet no tā, ka 
 $(\\sqrt{7})^{\\sqrt{5} \\cdot 2 \\sqrt{5}}=7^{5}=16087$, bet 
-$(\\sqrt{5})^{\\sqrt{7} \\cdot 2 \\sqrt{5}}=5^{\\sqrt{35}}&lt;5^{6}=15625$.</p>"""@lv .
+$(\\sqrt{5})^{\\sqrt{7} \\cdot 2 \\sqrt{5}}=5^{\\sqrt{35}}<5^{6}=15625$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.11.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.11.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Savienojam punktu $R$ ar $B$ un $C$ (skat. 3.att.), pietiek pierādīt, ka 
@@ -934,8 +920,8 @@ $\\sphericalangle BRC=\\sphericalangle BRO+\\sphericalangle CRO=\\sphericalangle
 kā ievilktā četrstūra pretējo leņķu summa.</p>
 <p><img alt="" src="LV.VOL.2017.11.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.11.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.11.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pierādīsim, ka no jebkuriem pieciem naturāliem skaitļiem var izvēlēties trīs 
@@ -989,23 +975,28 @@ atlikumu $0;\\ 1$ vai $2$.</p>
 <p>Izmantojot iepriekš pierādīto, no sākotnējiem $17$ skaitļiem varam izveidot 
 piecas grupas pa trīs skaitļiem tā, lai tajās esošo skaitļu summa dalās ar $3$.
 Apzīmējam</p>
-<p>${a_{1}, a_{2}, a_{3} }$; ${b_{1}, b_{2}, b_{3}}$; ${c_{1}, c_{2}, c_{3}}$; ${d_{1}, d_{2}, d_{3}}$; ${e_{1}, e_{2}, e_{3}}.$</p>
+<p>$\\{a_{1}, a_{2}, a_{3} \\}$; $\\{b_{1}, b_{2}, b_{3}\\}$; $\\{c_{1}, c_{2}, c_{3}\\}$; $\\{d_{1}, d_{2}, d_{3}\\}$; $\\{e_{1}, e_{2}, e_{3}\\}.$</p>
 <p>Skaitļus, kurus iegūst katras grupas skaitļu summu dalot ar $3$, apzīmējam 
 attiecīgi ar $A,\\ B,\\ C,\\ D$ un $E$. No iepriekš pierādītā izriet, ka no šiem 
 pieciem iegūtajiem skaitļiem var izvēlēties trīs tā, ka to summa dalās ar $3$. 
 Nezaudējot vispārīgumu, pieņemsim, ka $A+B+C$ dalās ar $3$ jeb</p>
-<p>$$A+B+C=3n,$$</p>
-<p>kur $n$ - naturāls skaitlis. Tā kā 
+<p>$$A+B+C=3n,$$
+
+kur $n$ - naturāls skaitlis. Tā kā 
 $A=\\frac{a_{1}+a_{2}+a_{3}}{3};\\ B=\\frac{b_{1}+b_{2}+b_{3}}{3};\\ C=\\frac{c_{1}+c_{2}+c_{3}}{3}$,
-tad iegūstam</p>
-<p>$$\\frac{a_{1}+a_{2}+a_{3}}{3}+\\frac{b_{1}+b_{2}+b_{3}}{3}+\\frac{c_{1}+c_{2}+c_{3}}{3}=3n$$</p>
-<p>Reizinot abas vienādības puses ar $3$, iegūstam</p>
-<p>$$a_{1}+a_{2}+a_{3}+b_{1}+b_{2}+b_{3}+c_{1}+c_{2}+c_{3}=9n.$$</p>
-<p>Tātad esam ieguvuši, ka $a_{1}+a_{2}+a_{3}+b_{1}+b_{2}+b_{3}+c_{1}+c_{2}+c_{3}$
+tad iegūstam
+
+$$\\frac{a_{1}+a_{2}+a_{3}}{3}+\\frac{b_{1}+b_{2}+b_{3}}{3}+\\frac{c_{1}+c_{2}+c_{3}}{3}=3n$$
+
+Reizinot abas vienādības puses ar $3$, iegūstam
+
+$$a_{1}+a_{2}+a_{3}+b_{1}+b_{2}+b_{3}+c_{1}+c_{2}+c_{3}=9n.$$
+
+Tātad esam ieguvuši, ka $a_{1}+a_{2}+a_{3}+b_{1}+b_{2}+b_{3}+c_{1}+c_{2}+c_{3}$
 dalās ar $9$ un prasītais ir pierādīts.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.11.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.11.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **(A)** Ja $N=14$, tad noteikti var uzvarēt spēlētājs $A$. Pirmajā gājienā 
@@ -1137,10 +1128,10 @@ gājienā spēlētājs var izvēlēties vienu no esošajām grupām un tajās es
 punktus ar hordu sadalīt divās grupās. Tās grupas, kurās ir $0$ vai $1$ punkts,
 atmetam, jo tās neiespaido turpmāko spēles gaitu.</p>
 <p>Piemēram, pirms tiek novilkta horda $CE$ (skat. 5.att.), brīvie punkti sadalās 
-grupās: ${A, B, H, I};{C, E, F, G}$ (tā kā punkts $D$ ir viens pats, tad to
+grupās: $\\{A, B, H, I\\};\\{C, E, F, G\\}$ (tā kā punkts $D$ ir viens pats, tad to
 vienojāmies atmest). Šo pozīciju, kad ir divas grupas katrā pa $4$ 
 neizmantotiem punktiem, apzīmēsim $(4, 4)$. Tad, kad tiek novilkta horda $CE$, 
-iegūstam grupas : ${A, B, H, I}$ un ${F, G}$. Tātad tiek izdarīts gājiens 
+iegūstam grupas : $\\{A, B, H, I\\}$ un $\\{F, G\\}$. Tātad tiek izdarīts gājiens 
 no pozīcijas $(4, 4)$ uz pozīciju $(4, 2)$, apzīmēsim 
 $(4, 4) \\rightarrow(4, 2)$.</p>
 <p><img alt="" src="LV.VOL.2017.11.5B.png" /></p>
@@ -1149,61 +1140,69 @@ iespējamos spēlētāja $A$ gājienus no sākuma pozīcijas $(15)$ un katram no
 gājieniem atradīsim atbilstošu spēlētāja $B$ gājienu, kas viņam nodrošinās 
 uzvaru. Starp $15$ punktiem spēlētājs $A$ var novilkt hordu septiņos dažādos 
 veidos, katrā no šiem gadījumiem spēlētājs $B$ var turpināt šādi:</p>
-<p>$$15 \\rightarrow\\left{\\begin{aligned}
-(13) &amp; \\rightarrow(\\mathbf{8}, \\mathbf{3}) \\
-(12) &amp; \\rightarrow(\\mathbf{5}, \\mathbf{5}) \\
-(11,2) &amp; \\rightarrow(\\mathbf{8}, \\mathbf{2}) \\
-(10,3) &amp; \\rightarrow(\\mathbf{8}, \\mathbf{3}) \\
-(9,4) &amp; \\rightarrow(\\mathbf{9}) \\
-(8,5) &amp; \\rightarrow(\\mathbf{5}, \\mathbf{5}) \\
-(7,6) &amp; \\rightarrow(\\mathbf{7}, \\mathbf{3})
-\\end{aligned}\\right.$$</p>
-<p>Pamatosim, ka treknrakstā izceltās pozīcijas ir "uzvarošās", tas ir, ja šādā 
-pozīcijā spēlētājs nonāk, tad viņš sev var nodrošināt uzvaru.</p>
-<p>Ievērosim, ja pēc spēlētāja $B$ gājiena ir pozīcija 
+<p>$$15 \\rightarrow\\left\\{\\begin{aligned}
+(13) & \\rightarrow(\\mathbf{8}, \\mathbf{3}) \\\\
+(12) & \\rightarrow(\\mathbf{5}, \\mathbf{5}) \\\\
+(11,2) & \\rightarrow(\\mathbf{8}, \\mathbf{2}) \\\\
+(10,3) & \\rightarrow(\\mathbf{8}, \\mathbf{3}) \\\\
+(9,4) & \\rightarrow(\\mathbf{9}) \\\\
+(8,5) & \\rightarrow(\\mathbf{5}, \\mathbf{5}) \\\\
+(7,6) & \\rightarrow(\\mathbf{7}, \\mathbf{3})
+\\end{aligned}\\right.$$
+
+Pamatosim, ka treknrakstā izceltās pozīcijas ir "uzvarošās", tas ir, ja šādā 
+pozīcijā spēlētājs nonāk, tad viņš sev var nodrošināt uzvaru.
+
+Ievērosim, ja pēc spēlētāja $B$ gājiena ir pozīcija 
 $(\\boldsymbol{m}, \\boldsymbol{m})$, tad spēlētājs $B$ var uzvarēt, turpmāk 
-izdarot pretinieka gājieniem simetriskus gājienus otrā punktu grupā.</p>
-<p>Spēlētājs $A$ no pozīcijas $(\\mathbf{8}, \\mathbf{3})$ un no pozīcijas 
+izdarot pretinieka gājieniem simetriskus gājienus otrā punktu grupā.
+
+Spēlētājs $A$ no pozīcijas $(\\mathbf{8}, \\mathbf{3})$ un no pozīcijas 
 $(\\mathbf{8}, \\mathbf{2})$ hordu var novilkt piecos dažādos veidos, katrā no 
-šiem gadījumiem spēlētājs $B$ var turpināt šādi:</p>
-<p>$$(\\mathbf{8}, \\mathbf{3}) \\rightarrow\\left{\\begin{array} {c} 
-{(8) \\rightarrow ( \\mathbf {3, 3})} \\
-{(6, 3) \\rightarrow ( \\mathbf {3, 3})} \\
-{(5, 3) \\rightarrow ( \\mathbf {3, 3})} \\
-{(4, 2, 3) \\rightarrow ( \\mathbf {2, 3}} \\
+šiem gadījumiem spēlētājs $B$ var turpināt šādi:
+
+$$(\\mathbf{8}, \\mathbf{3}) \\rightarrow\\left\\{\\begin{array} {c} 
+{(8) \\rightarrow ( \\mathbf {3, 3})} \\\\
+{(6, 3) \\rightarrow ( \\mathbf {3, 3})} \\\\
+{(5, 3) \\rightarrow ( \\mathbf {3, 3})} \\\\
+{(4, 2, 3) \\rightarrow ( \\mathbf {2, 3}} \\\\
 {(3, 3, 3) \\rightarrow ( \\mathbf {3, 3}}
-\\end{array} \\right. \\quad ( \\mathbf {8} , \\mathbf {2}) \\rightarrow \\left{\\begin{array}{c}
-(8) \\rightarrow(\\mathbf{3,3}) \\
-(6,2) \\rightarrow(\\mathbf{2,3}) \\
-(5,2) \\rightarrow(\\mathbf{2,3}) \\
-(4,2,2) \\rightarrow(\\mathbf{2, 2}) \\
+\\end{array} \\right. \\quad ( \\mathbf {8} , \\mathbf {2}) \\rightarrow \\left\\{\\begin{array}{c}
+(8) \\rightarrow(\\mathbf{3,3}) \\\\
+(6,2) \\rightarrow(\\mathbf{2,3}) \\\\
+(5,2) \\rightarrow(\\mathbf{2,3}) \\\\
+(4,2,2) \\rightarrow(\\mathbf{2, 2}) \\\\
 (3,3,2) \\rightarrow(\\mathbf{3,3})
-\\end{array}\\right.$$</p>
-<p>Pozīcija $(2,3)$ ir uzvarošā spēlētājam $B$, jo no tās var izdarīt tieši divus 
-gājienus.</p>
-<p>Spēlēājs $A$ no pozīcijas $(9)$ un no pozīcijas $(7,3)$ hordu var novilkt 
+\\end{array}\\right.$$
+
+Pozīcija $(2,3)$ ir uzvarošā spēlētājam $B$, jo no tās var izdarīt tieši divus 
+gājienus.
+
+Spēlēājs $A$ no pozīcijas $(9)$ un no pozīcijas $(7,3)$ hordu var novilkt 
 četros dažādos veidos, katrā no šiem gadījumiem spēlētājs $B$ var turpināt 
-šādi:</p>
-<p>$$(\\mathbf{9}) \\rightarrow\\left{\\begin{array} {c} 
-{(7) \\rightarrow (\\mathbf{2, 3})} \\
-{(6) \\rightarrow (\\mathbf{2, 2})} \\
-{(5, 2) \\rightarrow (\\mathbf{2, 2})} \\
+šādi:
+
+$$(\\mathbf{9}) \\rightarrow\\left\\{\\begin{array} {c} 
+{(7) \\rightarrow (\\mathbf{2, 3})} \\\\
+{(6) \\rightarrow (\\mathbf{2, 2})} \\\\
+{(5, 2) \\rightarrow (\\mathbf{2, 2})} \\\\
 {(4, 3) \\rightarrow (\\mathbf{2, 3})}
-\\end{array} \\right. \\quad (\\mathbf{7, 3}) \\rightarrow \\left{\\begin{array}{c}
-(7) \\rightarrow(\\mathbf{2,3}) \\
-(6) \\rightarrow(\\mathbf{2,2}) \\
-(5,2) \\rightarrow(\\mathbf{2,2}) \\
+\\end{array} \\right. \\quad (\\mathbf{7, 3}) \\rightarrow \\left\\{\\begin{array}{c}
+(7) \\rightarrow(\\mathbf{2,3}) \\\\
+(6) \\rightarrow(\\mathbf{2,2}) \\\\
+(5,2) \\rightarrow(\\mathbf{2,2}) \\\\
 (4,3) \\rightarrow(\\mathbf{2,3})
-\\end{array}\\right.$$</p>
-<p>Līdz ar to esam ieguvuši uzvarošu stratēģiju spēlētājam $B$: katrā savā gājienā
+\\end{array}\\right.$$
+
+Līdz ar to esam ieguvuši uzvarošu stratēģiju spēlētājam $B$: katrā savā gājienā
 viņš novelk hordu tā, lai nonāktu "uzvarošajā" pozīcijā, kas izcelta 
 treknrakstā. Visos gadījumos spēlētājs $B$ nonāks pozīcijā $(2,3)$ vai 
 $(\\boldsymbol{m}, \\boldsymbol{m})$ un vēl pēc pāra skaita gājieniem būs tas, 
 kurš novelk pēdējo hordu, kurai ar jau novilktajām hordām nav kopīgu 
 galapunktu.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.12.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.12.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Ievērojam, ka funkcijas vērtībām $f(-1)$ un $f(1)$ ir dažādas zīmes:
@@ -1221,8 +1220,8 @@ jākrusto $x$ ass."""@lv ;
 <p>Tādā gadījumā skaidrs, ka šajā intervālā $[-1,1]$ funkcijas grafikam ir 
 jākrusto $x$ ass.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.12.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.12.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Tā kā abas nevienādības puses ir pozitīvas, tad, kāpinot kvadrātā, iegūstam
@@ -1249,23 +1248,27 @@ visiem reāliem skaitļiem $x$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Tā kā abas nevienādības puses ir pozitīvas, tad, kāpinot kvadrātā, iegūstam</p>
 <p>$$\\begin{gathered}
-x^{2}+y^{2}+2 \\cdot \\sqrt{x^{2}+y^{2}} \\cdot(2-\\sqrt{2}) \\sqrt{xy}+(4-4 \\sqrt{2}+2) xy \\geq x^{2}+2xy+y^{2} \\
+x^{2}+y^{2}+2 \\cdot \\sqrt{x^{2}+y^{2}} \\cdot(2-\\sqrt{2}) \\sqrt{xy}+(4-4 \\sqrt{2}+2) xy \\geq x^{2}+2xy+y^{2} \\\\
 2 \\cdot \\sqrt{x^{2}+y^{2}} \\cdot(2-\\sqrt{2}) \\sqrt{xy} \\geq 4(\\sqrt{2}-1) xy
-\\end{gathered}$$</p>
-<p>Izdalot abas nevienādības puses ar $2 \\sqrt{xy}&gt;0$ un pēc tam kāpinot abas 
-nevienādības puses kvadrātā (abas puses ir pozitīvas), pakāpeniski iegūstam</p>
-<p>$$\\begin{aligned}
-&amp; \\sqrt{x^{2}+y^{2}} \\cdot(2-\\sqrt{2}) \\geq 2(\\sqrt{2}-1) \\sqrt{xy} \\
-&amp; \\left(x^{2}+y^{2}\\right) \\cdot(6-4 \\sqrt{2}) \\geq 4(3-2 \\sqrt{2}) xy
-\\end{aligned}$$</p>
-<p>Izdalot abas nevienādības puses ar $(6-4 \\sqrt{2})&gt;0$, iegūstam 
-$x^{2}+y^{2} \\geq 2xy$ jeb $(x-y)^{2} \\geq 0$.</p>
-<p>Tā kā skaitļa kvadrāts ir nenegatīvs, tad pēdējā nevienādība ir patiesa. Tā kā 
+\\end{gathered}$$
+
+Izdalot abas nevienādības puses ar $2 \\sqrt{xy}&gt;0$ un pēc tam kāpinot abas 
+nevienādības puses kvadrātā (abas puses ir pozitīvas), pakāpeniski iegūstam
+
+$$\\begin{aligned}
+& \\sqrt{x^{2}+y^{2}} \\cdot(2-\\sqrt{2}) \\geq 2(\\sqrt{2}-1) \\sqrt{xy} \\\\
+& \\left(x^{2}+y^{2}\\right) \\cdot(6-4 \\sqrt{2}) \\geq 4(3-2 \\sqrt{2}) xy
+\\end{aligned}$$
+
+Izdalot abas nevienādības puses ar $(6-4 \\sqrt{2})&gt;0$, iegūstam 
+$x^{2}+y^{2} \\geq 2xy$ jeb $(x-y)^{2} \\geq 0$.
+
+Tā kā skaitļa kvadrāts ir nenegatīvs, tad pēdējā nevienādība ir patiesa. Tā kā 
 tika veikti ekvivalenti pārveidojumi, tad arī dotā nevienādība ir patiesa 
 visiem reāliem skaitļiem $x$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.12.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.12.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 No punkta $F$ velkam perpendikulu pret taisni $BC$, šī perpendikula krustpunktu
@@ -1300,19 +1303,19 @@ $FBF^{\\prime}$ ir vienādsānu, no kā izriet, ka punkti $F$ un $F^{\\prime}$ i
 simetriski attiecībā pret taisni $BC$.</p>
 <p>Simetrijas dēļ $S(BFC)=S\\left(BF^{\\prime}C\\right)$ un 
 $S(ABCD)=2 \\cdot S(BFC)+2 \\cdot S\\left(CDF^{\\prime}\\right)$, līdz ar to pietiek
-pierādīt, ka $S(CDE)&gt;S\\left(CDF^{\\prime}\\right)$.</p>
+pierādīt, ka $S(CDE)>S\\left(CDF^{\\prime}\\right)$.</p>
 <p>Apzīmējam $\\sphericalangle F^{\\prime}CD=\\alpha$, tad simetrijas dēļ 
 $\\sphericalangle FCB=\\sphericalangle BCF^{\\prime}=90^{\\circ}-\\alpha$ un 
 $\\sphericalangle ECD=180^{\\circ}-\\sphericalangle FCB-\\sphericalangle BCF^{\\prime}-\\sphericalangle F^{\\prime}CD=180^{\\circ}-2 \\cdot\\left(90^{\\circ}-\\alpha\\right)-\\alpha=\\alpha .$
 Līdz ar to $S(CDE)=\\frac{1}{2} CE \\cdot CD \\cdot \\sin \\alpha$ un 
 $S\\left(CDF^{\\prime}\\right)=\\frac{1}{2} CF^{\\prime} \\cdot CD \\cdot \\sin \\alpha$,
-tātad atliek pamatot, ka $CE&gt;CF^{\\prime}$ jeb $CE&gt;CF$. Tā kā $BE&gt;BF^{\\prime}=BF$
+tātad atliek pamatot, ka $CE>CF^{\\prime}$ jeb $CE>CF$. Tā kā $BE>BF^{\\prime}=BF$
 un nogrieznis $BC$ ir trijstūra $EBF$ bisektrise, tad no bisektrises īpašības 
-izriet, ka $CE&gt;CF$.</p>
+izriet, ka $CE>CF$.</p>
 <p><img alt="" src="LV.VOL.2017.12.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.12.3.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.VOL.2017.12.3.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Apzīmējam $AB=CD=a,\\ DE=p,\\ OA=OB=OC=OD=y$ (kur punkts $O$ ir diagonālu 
@@ -1349,20 +1352,21 @@ $\\sphericalangle DBC=\\sphericalangle DAC=\\sphericalangle CBF=\\alpha$ (skat.
 augstums pret $BC$ ir $h_{2}$.</p>
 <p>Tad $S(ABCD)=BC \\cdot a$ un 
 $S(BEF)=S(BEC)+S(BCF)=\\frac{1}{2} BC \\cdot h_{1}+\\frac{1}{2} BC \\cdot h_{2}=BC \\cdot \\frac{h_{1}+h_{2}}{2}$.</p>
-<p>Tātad nepieciešams pierādīt, ka $h_{1}+h_{2}&gt;2a$.</p>
+<p>Tātad nepieciešams pierādīt, ka $h_{1}+h_{2}>2a$.</p>
 <p>Tā kā $\\triangle OEC \\sim \\triangle BEF$, jo leņķi $BEF$ krusto divas paralēlas
 taisnes $OC$ un $BF$, tad $\\frac{OE}{BE}=\\frac{OC}{BF}$ jeb 
 $\\frac{p+y}{p+2y}=\\frac{y}{x}$. Izsakām $x=y \\cdot \\frac{p+2y}{p+y}$.</p>
 <p>No $\\triangle BCD$ iegūstam, ka $\\sin \\alpha=\\frac{CD}{BD}=\\frac{a}{2y}$.</p>
 <p>Apskatām summu $h_{1}+h_{2}$ :</p>
-<p>$$h_{1}+h_{2}=(2y+p) \\sin \\alpha+x \\sin \\alpha=(2y+p+x) \\sin \\alpha=\\left(2y+p+y \\frac{p+2y}{p+y}\\right) \\frac{a}{2y}=a \\frac{p^{2}+4py+4y^{2}}{2py+2y^{2}}$$</p>
-<p>Tā kā $p&gt;0$, tad $p^{2}&gt;0$ un 
+<p>$$h_{1}+h_{2}=(2y+p) \\sin \\alpha+x \\sin \\alpha=(2y+p+x) \\sin \\alpha=\\left(2y+p+y \\frac{p+2y}{p+y}\\right) \\frac{a}{2y}=a \\frac{p^{2}+4py+4y^{2}}{2py+2y^{2}}$$
+
+Tā kā $p&gt;0$, tad $p^{2}&gt;0$ un 
 $a \\frac{p^{2}+4py+4y^{2}}{2py+2y^{2}}&gt;a \\frac{p^{2}+4py+4y^{2}}{\\frac{p^{2}}{2}+2p y+2y^{2}}=2a$,
 kas arī bija jāpierāda.</p>
 <p><img alt="" src="LV.VOL.2017.12.3B.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.12.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.12.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Mazākā $k$ vērtība ir $3$.
@@ -1418,8 +1422,8 @@ būs ar vienādu paritāti, ja sareizina attiecīgos <em>skaistos</em> skaitļus
 (pieņemsim, ka tie ir $n_{1}$ un $n_{2}$), tad redzams, ka reizinājums 
 $n_{1} \\cdot n_{2}=2^{u1+u2} v_{1}v_{2}$ ir naturāla skaitļa kvadrāts.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.12.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.12.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Sanumurējam deputātus ar numuriem $1, 2, 3, \\ldots, n$. Ar $k(d)$ apzīmējam 
@@ -1458,28 +1462,30 @@ $d$ par darbu komisijās mēnesī saņem
 $10 \\cdot(0+1+2+\\cdots+k(d)-1)=10 \\cdot \\frac{k(d)(k(d)-1)}{2}=10 \\cdot C_{k(d)}^{2}$
 eiro. Līdz ar to visi deputāti kopā par darbu komisijās mēnesī saņem 
 $10 \\cdot\\left(C_{k(1)}^{2}+C_{k(2)}^{2}+\\cdots+C_{k(n)}^{2}\\right)$ eiro.</p>
-<p>Saskaitīsim, cik ir tādu pāru ${A; B}$, ka $A$ un $B$ ir dažādas komisijas:</p>
+<p>Saskaitīsim, cik ir tādu pāru $\\{A; B\\}$, ka $A$ un $B$ ir dažādas komisijas:</p>
 <ul>
 <li>Tā kā pavisam ir $100$ komisijas, tad dažādo komisiju pāru skaits ir 
   $C_{100}^{2}=\\frac{100 \\cdot 99}{2}=4950$.</li>
 <li>Katram šādam pārim atbilst tieši viens deputāts $d$, kas strādā gan $A$, gan 
   $B$, tātad visus komisiju pārus var sadalīt $n$ grupās tā, ka katram komisiju
-  pārim ${A; B}$ no $d$ - tās grupas, $d=1,2, \\ldots, n$, ir kopīgs deputāts.
+  pārim $\\{A; B\\}$ no $d$ - tās grupas, $d=1,2, \\ldots, n$, ir kopīgs deputāts.
   Tādā gadījumā $d$ - tajā grupā ir tieši $C_{k(d)}^{2}$ komisiju pāri (jo no 
   deputāta $d$ apmeklētajām komisijām var izveidot $C_{k(d)}^{2}$ komisiju 
-  pārus). Tā kā katrs komisiju pāris ${A; B}$ pieder tieši vienai no šīm $n$ 
-  grupām, tad no summas likuma izriet, ka pāru ${A; B}$ skaits ir 
+  pārus). Tā kā katrs komisiju pāris $\\{A; B\\}$ pieder tieši vienai no šīm $n$ 
+  grupām, tad no summas likuma izriet, ka pāru $\\{A; B\\}$ skaits ir 
   $C_{k(1)}^{2}+C_{k(2)}^{2}+\\cdots+C_{k(n)}^{2}$</li>
 </ul>
 <p>Vienu un to pašu lielumu esam saskaitījuši divos dažādos veidos, tātad abos 
 gadījumos iegūtie skaitļi ir vienādi:</p>
-<p>$$C_{k(1)}^{2}+C_{k(2)}^{2}+\\cdots+C_{k(n)}^{2}=4950$$</p>
-<p>Līdz ar to esam ieguvuši, ka visi parlamenta deputāti kopā par darbu komisijās 
-mēnesī saņem</p>
-<p>$10 \\cdot\\left(C_{k(1)}^{2}+C_{k(2)}^{2}+\\cdots+C_{k(n)}^{2}\\right)=49500$ eiro.</p>"""@lv .
+<p>$$C_{k(1)}^{2}+C_{k(2)}^{2}+\\cdots+C_{k(n)}^{2}=4950$$
 
-eliozo:SOLN.LV.VOL.2017.9.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+Līdz ar to esam ieguvuši, ka visi parlamenta deputāti kopā par darbu komisijās 
+mēnesī saņem
+
+$10 \\cdot\\left(C_{k(1)}^{2}+C_{k(2)}^{2}+\\cdots+C_{k(n)}^{2}\\right)=49500$ eiro.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2017.9.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Der skaitļi $1,\\ 2,\\ 3,\\ \\ldots,\\ 61,\\ 62,\\ 64$. Pierādīsim, ka citu nav. 
@@ -1494,8 +1500,8 @@ $1+2+\\cdots+63=\\frac{(1+63) \\cdot 63}{2}=2016$. Meklēto skaitļu summa ir ti
 par $1$ lielāka - vienīgais veids, kā to iegūt, ir skaitli $63$ aizstāt ar 
 $64$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.9.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.9.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Nogriežņu $MN$ un $QR$ krustpunktu apzīmējam ar $O,\\ OQ=ON=OR=x$ (kā rādiusi) 
@@ -1518,8 +1524,8 @@ un $PQ=RS=y$. Simetrijas dēļ $OP=OS=OM=x+y$. Aprēķinām laukumus:</p>
 <p>Tātad esam pierādījuši, ka iekrāsotās figūras laukums ir vienāds ar laukumu 
 riņķim, kura diametrs ir $MN$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.9.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.9.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 No tā, ka $GANGA$, dalot ar $7$, dod atlikumu $A,\\ GANGA$, dalot ar $11$, dod 
@@ -1567,84 +1573,41 @@ atlikumu $N$, bet $GANGA$, dalot ar $13$, dod atlikumu $G$, izriet, ka
 $(\\overline{GANGA}-A)$ dalās ar $7,\\ (\\overline{GANGA}-N)$ dalās ar $11$ un 
 $(\\overline{GANGA}-G)$ dalās ar $13$.</p>
 <p>Pārveidojam doto skaitli</p>
-<p>$$\\overline{GANGA}=\\overline{GA} \\cdot 1000+N \\cdot 100+\\overline{GA}=1001 \\cdot \\overline{GA}+100 N=13 \\cdot 11 \\cdot 7 \\cdot \\overline{GA}+100N$$</p>
-<p>Pirmais saskaitāmais dalās gan ar $13$, gan ar $11$, gan ar $7$.</p>
-<p>Lai $(\\overline{GANGA}-G)$ dalītos ar $13,\\ (100N-G)$ ir jādalās ar $13$. 
-Ievērojot, ka</p>
-<p>$$100N-G=91N+9N-G=13 \\cdot 7N+9N-G$$</p>
-<p>iegūstam, ka $(9N-G)$ jādalās ar $13$.</p>
-<p>Līdzīgi, ar $7$ ir jādalās $(100N-A)$. Pārveidojot</p>
-<p>$$100N-A=98N+2N-A=7 \\cdot 14N+2N-A$$</p>
-<p>iegūstam, ka $(2N-A)$ jādalās ar $7$.</p>
-<p>Visbeidzot ar $11$ ir jādalās $100N-N=99 N$, kas vienmēr izpildās.</p>
-<p>Tā kā $A$ ir atlikums, kas rodas, skaitli dalot ar $7$, tad $A \\leq 6$, un tā 
-kā $A&gt;N$, tad lielākā iespējamā $N$ vērtība ir $5$. Apskatīsim visus gadījumus.</p>
-<table>
-<thead>
-<tr>
-<th align="left">$\\boldsymbol{N}$</th>
-<th align="left">$\\mathbf{9N}-\\boldsymbol{G}$</th>
-<th align="left">$\\boldsymbol{G}$, <strong>lai</strong> $(\\mathbf{9N}-\\boldsymbol{G}) \\vdots \\mathbf{13}$</th>
-<th align="left">$\\mathbf{2N}-\\boldsymbol{A}$</th>
-<th align="left">$\\boldsymbol{A}$, <strong>lai</strong> $(\\mathbf{2N}-\\boldsymbol{A}) \\vdots \\mathbf{7}$</th>
-<th align="left">$\\overline{\\mathbf{GANGA}}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">$\\mathbf{0}$</td>
-<td align="left">$-G$</td>
-<td align="left">$0$ (neder, jo $N=0$ )</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">$\\mathbf{1}$</td>
-<td align="left">$9-G$</td>
-<td align="left">$9$</td>
-<td align="left">$2-A$</td>
-<td align="left">$2$ <br> $9$ (neder, jo $G=9)$</td>
-<td align="left">$92192$</td>
-</tr>
-<tr>
-<td align="left">$\\mathbf{2}$</td>
-<td align="left">$18-G$</td>
-<td align="left">$5$</td>
-<td align="left">$4-A$</td>
-<td align="left">$4$</td>
-<td align="left">$54254$</td>
-</tr>
-<tr>
-<td align="left">$\\mathbf{3}$</td>
-<td align="left">$27-G$</td>
-<td align="left">$1$ (neder, jo $G &lt; N)$</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">$\\mathbf{4}$</td>
-<td align="left">$36-G$</td>
-<td align="left">nav</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">$\\mathbf{5}$</td>
-<td align="left">$45-G$</td>
-<td align="left">$6$</td>
-<td align="left">$10-A$</td>
-<td align="left">$3$ (neder, jo $A &lt; N$ )</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<p>Tātad sākotnējais skaitlis varēja būt $54254$ vai $92192$.</p>"""@lv .
+<p>$$\\overline{GANGA}=\\overline{GA} \\cdot 1000+N \\cdot 100+\\overline{GA}=1001 \\cdot \\overline{GA}+100 N=13 \\cdot 11 \\cdot 7 \\cdot \\overline{GA}+100N$$
 
-eliozo:SOLN.LV.VOL.2017.9.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+Pirmais saskaitāmais dalās gan ar $13$, gan ar $11$, gan ar $7$.
+
+Lai $(\\overline{GANGA}-G)$ dalītos ar $13,\\ (100N-G)$ ir jādalās ar $13$. 
+Ievērojot, ka
+
+$$100N-G=91N+9N-G=13 \\cdot 7N+9N-G$$
+
+iegūstam, ka $(9N-G)$ jādalās ar $13$.
+
+Līdzīgi, ar $7$ ir jādalās $(100N-A)$. Pārveidojot
+
+$$100N-A=98N+2N-A=7 \\cdot 14N+2N-A$$
+
+iegūstam, ka $(2N-A)$ jādalās ar $7$.
+
+Visbeidzot ar $11$ ir jādalās $100N-N=99 N$, kas vienmēr izpildās.
+
+Tā kā $A$ ir atlikums, kas rodas, skaitli dalot ar $7$, tad $A \\leq 6$, un tā 
+kā $A&gt;N$, tad lielākā iespējamā $N$ vērtība ir $5$. Apskatīsim visus gadījumus.
+
+| $\\boldsymbol{N}$ | $\\mathbf{9N}-\\boldsymbol{G}$ | $\\boldsymbol{G}$, **lai** $(\\mathbf{9N}-\\boldsymbol{G}) \\vdots \\mathbf{13}$ | $\\mathbf{2N}-\\boldsymbol{A}$ | $\\boldsymbol{A}$, **lai** $(\\mathbf{2N}-\\boldsymbol{A}) \\vdots \\mathbf{7}$ | $\\overline{\\mathbf{GANGA}}$ |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| $\\mathbf{0}$ | $-G$ | $0$ (neder, jo $N=0$ ) |  |  |  |
+| $\\mathbf{1}$ | $9-G$ | $9$ | $2-A$ | $2$ <br> $9$ (neder, jo $G=9)$ | $92192$ |
+| $\\mathbf{2}$ | $18-G$ | $5$ | $4-A$ | $4$ | $54254$ |
+| $\\mathbf{3}$ | $27-G$ | $1$ (neder, jo $G &lt; N)$ |  |  |  |
+| $\\mathbf{4}$ | $36-G$ | nav |  |  |  |
+| $\\mathbf{5}$ | $45-G$ | $6$ | $10-A$ | $3$ (neder, jo $A &lt; N$ ) |  |
+
+Tātad sākotnējais skaitlis varēja būt $54254$ vai $92192$.</p>"""@lv .
+
+eliozo:SOLN.LV.VOL.2017.9.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Veicam ekvivalentus pārveidojumus:
@@ -1660,15 +1623,16 @@ arī dotā nevienādība ir patiesa visiem reāliem skaitļiem $x$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Veicam ekvivalentus pārveidojumus:</p>
 <p>$$\\begin{gathered}
-\\left(x^{2}\\right)^{2}-2x^{2}+1+x^{2}-2 \\cdot x \\cdot \\frac{3}{2}+\\frac{9}{4}+\\frac{3}{4}&gt;0 \\
-\\left(x^{2}-1\\right)^{2}+\\left(x-\\frac{3}{2}\\right)^{2}+\\frac{3}{4}&gt;0
-\\end{gathered}$$</p>
-<p>Tā kā skaitļa kvadrāts ir nenegatīvs un $\\frac{3}{4}$ ir pozitīvs skaitlis, tad
+\\left(x^{2}\\right)^{2}-2x^{2}+1+x^{2}-2 \\cdot x \\cdot \\frac{3}{2}+\\frac{9}{4}+\\frac{3}{4}>0 \\\\
+\\left(x^{2}-1\\right)^{2}+\\left(x-\\frac{3}{2}\\right)^{2}+\\frac{3}{4}>0
+\\end{gathered}$$
+
+Tā kā skaitļa kvadrāts ir nenegatīvs un $\\frac{3}{4}$ ir pozitīvs skaitlis, tad
 pēdējā nevienādība ir patiesa. Tā kā tika veikti ekvivalenti pārveidojumi, tad 
 arī dotā nevienādība ir patiesa visiem reāliem skaitļiem $x$.</p>"""@lv .
 
-eliozo:SOLN.LV.VOL.2017.9.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.VOL.2017.9.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Ja $N=1$, tad kastē ir vismaz viena bumbiņa, kas nokrāsota vienīgajā 

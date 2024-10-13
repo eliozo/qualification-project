@@ -58,9 +58,9 @@
   <p> {{ problemTextHtml | safe }}</p>
 
     {% if hasSolution %}
-    <p style="font-size:80% !important"><a href="{{ url_for('getProblemSolution',problemid=problemid) }}">Atrisinājums</a></p>
+    <p style="font-size:80% !important"><a href="{{ url_for('getProblemSolution',problemid=problemid) }}">{% trans %}Solution{% endtrans %}</a></p>
     {% else %}
-    <p style="font-size:80% !important;color:#999999">Nav atrisinājuma</p>
+    <p style="font-size:80% !important;color:#999999">{% trans %}No solution{% endtrans %}</p>
     {% endif %}
 
   {% if hasVideo %}

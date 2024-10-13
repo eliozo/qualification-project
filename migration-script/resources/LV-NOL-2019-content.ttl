@@ -4,12 +4,13 @@
 eliozo:LV.NOL.2019.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2019.10.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.10.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.10.1.SUB1 ;
     eliozo:problemText """Kvadrātfunkcija $y=x^{2}+\\left(m^{2}+3m\\right)x+m-1$ krusto $x$ asi punktā, 
 kura abscisa ir $1$. Kāda var būt $m$ vērtība? Atrast otru parabolas 
 krustpunktu ar $x$ asi!"""@lv ;
@@ -26,16 +27,14 @@ krustpunktu ar $x$ asi!</p>"""@lv ;
 eliozo:LV.NOL.2019.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2019.10.2" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.10.2A.png,
-        eliozo:IMG.LV.NOL.2019.10.2B.png,
-        eliozo:IMG.LV.NOL.2019.10.2C.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.10.2.SUB0,
-        eliozo:SOLN.LV.NOL.2019.10.2.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.10.2.SUB1,
+        eliozo:SOLN.LV.NOL.2019.10.2.SUB2 ;
     eliozo:problemText """Dotas $6$ pēc ārējā izskata vienādas monētas. Trim no tām masa katrai ir 
 $50~\\mathrm{g}$, bet pārējām trim - katrai $51~\\mathrm{g}$. Kā, lietojot sviras
 svarus bez atsvariem, ar divām svēršanām atrast vienu monētu, kuras masa ir 
@@ -54,13 +53,13 @@ $51~\\mathrm{g}$?</p>"""@lv ;
 eliozo:LV.NOL.2019.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2019.10.3" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.10.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.10.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.10.3.SUB1 ;
     eliozo:problemText """Plaknē dotas divas riņķa līnijas $\\omega_{1}$ un $\\omega_{2}$, kurām nav kopīgu
 punktu un kuru rādiusi nav vienāda garuma. Novilktas trīs pieskares 
 $t_{1}, t_{2}$ un $t_{3}$, kas katra pieskaras abām riņķa līnijām - abas riņķa 
@@ -88,12 +87,13 @@ $\\omega_{2}$ punktā $B$ un krusto $t_{3}$ punktā $D$. Pierādīt, ka $AC=BD$.
 eliozo:LV.NOL.2019.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2019.10.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.10.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.10.4.SUB1 ;
     eliozo:problemText """Doti $2019$ reāli skaitļi ar īpašību, ka jebkuru $1010$ skaitļu summa ir 
 lielāka nekā atlikušo $1009$ skaitļu summa. Pierādīt, ka visi dotie skaitļi ir 
 pozitīvi!"""@lv ;
@@ -111,14 +111,15 @@ eliozo:LV.NOL.2019.10.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:genre "integer-equation" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 10 ;
     eliozo:problemID "LV.NOL.2019.10.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.10.5.SUB0,
-        eliozo:SOLN.LV.NOL.2019.10.5.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.10.5.SUB1,
+        eliozo:SOLN.LV.NOL.2019.10.5.SUB2 ;
     eliozo:problemText "Atrast visus pirmskaitļu pārus $(m, n)$, kuriem $20m+18n=2018$."@lv ;
     eliozo:problemTextHtml "<p>Atrast visus pirmskaitļu pārus $(m, n)$, kuriem $20m+18n=2018$.</p>"@lv ;
     eliozo:problemTimeID "2019" ;
@@ -133,12 +134,13 @@ eliozo:LV.NOL.2019.10.5 a eliozo:Problem ;
 eliozo:LV.NOL.2019.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2019.11.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.11.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.11.1.SUB1 ;
     eliozo:problemText """Vai var gadīties, ka 30.att. ir doti funkciju $y=ax^{2}+bx+c,\\ y=cx^{2}+bx+a$ un
 $y=bx+c$ grafiki? (Funkciju grafiki nav zīmēti mērogā.)
 
@@ -156,13 +158,13 @@ $y=bx+c$ grafiki? (Funkciju grafiki nav zīmēti mērogā.)</p>
 eliozo:LV.NOL.2019.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2019.11.2" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.11.2A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.11.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.11.2.SUB1 ;
     eliozo:problemText """Šaha klubā ir $13$ šahisti. Visu viņu spēles prasme ir atšķirīga un partijā 
 vienmēr uzvar spēcīgākais. **a)** Kā, izspēlējot $12$ partijas, noskaidrot pašu
 labāko šahistu šajā klubā? **b)** Kā, izspēlējot $15$ partijas, noskaidrot gan 
@@ -181,13 +183,14 @@ pašu labāko, gan otru labāko šahistu šajā klubā?</p>"""@lv ;
 eliozo:LV.NOL.2019.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2019.11.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.11.3.SUB0,
-        eliozo:SOLN.LV.NOL.2019.11.3.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.11.3.SUB1,
+        eliozo:SOLN.LV.NOL.2019.11.3.SUB2 ;
     eliozo:problemText """Divas riņķa līnijas $\\omega_{1}$ (ar centru punktā $O_{1}$) un $\\omega_{2}$ (ar 
 centru punktā $O_{2}$) krustojas punktā $A$. Taisne $O_{1} A$ krusto 
 $\\omega_{2}$ punktā $B_{2}$, bet $\\omega_{1}-$ punktā $C_{1}$. Taisne $O_{2}A$ 
@@ -211,14 +214,15 @@ krusto $\\omega_{1}$ punktā $B_{1}$, bet $\\omega_{2}$ - punktā $C_{2}$ (skat.
 eliozo:LV.NOL.2019.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2019.11.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.11.4.SUB0,
-        eliozo:SOLN.LV.NOL.2019.11.4.SUB1,
-        eliozo:SOLN.LV.NOL.2019.11.4.SUB2 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.11.4.SUB1,
+        eliozo:SOLN.LV.NOL.2019.11.4.SUB2,
+        eliozo:SOLN.LV.NOL.2019.11.4.SUB3 ;
     eliozo:problemText """Pierādīt, ka nevienādība 
 $\\frac{a}{b}(a+1)^{2}+\\frac{b}{a}(b+1)^{2} \\geq 2(a+1)(b+1)$ ir spēkā visiem 
 reāliem pozitīviem skaitļiem $a$ un $b$."""@lv ;
@@ -237,14 +241,15 @@ eliozo:LV.NOL.2019.11.5 a eliozo:Problem ;
         eliozo:TRM-primes ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:genre "integer-equation" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2019.11.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.11.5.SUB0,
-        eliozo:SOLN.LV.NOL.2019.11.5.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.11.5.SUB1,
+        eliozo:SOLN.LV.NOL.2019.11.5.SUB2 ;
     eliozo:problemText "Atrast visus pirmskaitļu pārus $(m, n)$, kuriem $20m+19n=2019$."@lv ;
     eliozo:problemTextHtml "<p>Atrast visus pirmskaitļu pārus $(m, n)$, kuriem $20m+19n=2019$.</p>"@lv ;
     eliozo:problemTimeID "2019" ;
@@ -258,12 +263,13 @@ eliozo:LV.NOL.2019.11.5 a eliozo:Problem ;
 eliozo:LV.NOL.2019.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2019.12.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.12.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.12.1.SUB1 ;
     eliozo:problemText """Urnā atrodas $66$ baltas un nezināms skaits melnu lodīšu. Ja uz labu laimi tiek
 izvilktas divas lodītes, tad varbūtība, ka abas lodītes būs vienā krāsā, sakrīt
 ar varbūtību, ka lodītes būs dažādās krāsās. Cik melno lodīšu atrodas urnā?"""@lv ;
@@ -280,14 +286,14 @@ ar varbūtību, ka lodītes būs dažādās krāsās. Cik melno lodīšu atrodas
 eliozo:LV.NOL.2019.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2019.12.2" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.12.2A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.12.2.SUB0,
-        eliozo:SOLN.LV.NOL.2019.12.2.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.12.2.SUB1,
+        eliozo:SOLN.LV.NOL.2019.12.2.SUB2 ;
     eliozo:problemText """Brigita ir iedomājusies naturālu skaitli, kas nepārsniedz $60$. Indra drīkst 
 Brigitai uzdot jautājumus, uz kuriem atbilde ir "jā" vai "nē". Kā, uzdodot 
 sešus jautājumus, Indra noteikti var uzzināt Brigitas iedomāto skaitli?"""@lv ;
@@ -304,13 +310,14 @@ sešus jautājumus, Indra noteikti var uzzināt Brigitas iedomāto skaitli?</p>"
 eliozo:LV.NOL.2019.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2019.12.3" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.12.3.SUB0,
-        eliozo:SOLN.LV.NOL.2019.12.3.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.12.3.SUB1,
+        eliozo:SOLN.LV.NOL.2019.12.3.SUB2 ;
     eliozo:problemText """Trijstūrī $ABC$ ievilktās riņķa līnijas centrs ir $O$. Nogriežņi $OA, OB, OC$ 
 krusto šo riņķa līniju attiecīgi punktos $D, E, F$. Zināms, ka 
 $\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{AC}{DF}$. Pierādīt, ka trijstūris $ABC$ ir 
@@ -329,14 +336,14 @@ regulārs!</p>"""@lv ;
 eliozo:LV.NOL.2019.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2019.12.4" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.12.4A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.12.4.SUB0,
-        eliozo:SOLN.LV.NOL.2019.12.4.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.12.4.SUB1,
+        eliozo:SOLN.LV.NOL.2019.12.4.SUB2 ;
     eliozo:problemText """Pierādīt, ka pozitīviem skaitļiem $a,\\ b,\\ c$ izpildās nevienādība 
 $\\left|\\sqrt{a^{2}+b^{2}}-\\sqrt{a^{2}+c^{2}}\\right| \\leq|b-c|$."""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka pozitīviem skaitļiem $a,\\ b,\\ c$ izpildās nevienādība 
@@ -351,13 +358,14 @@ $\\left|\\sqrt{a^{2}+b^{2}}-\\sqrt{a^{2}+c^{2}}\\right| \\leq|b-c|$.</p>"""@lv ;
 eliozo:LV.NOL.2019.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:genre "integer-equation" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2019.12.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.12.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.12.5.SUB1 ;
     eliozo:problemText """Pierādīt, ka vienādojumam $(a-b)^{2}=a+b$ ir bezgalīgi daudz atrisinājumu 
 naturālos skaitļos!"""@lv ;
     eliozo:problemTextHtml """<p>Pierādīt, ka vienādojumam $(a-b)^{2}=a+b$ ir bezgalīgi daudz atrisinājumu 
@@ -372,12 +380,13 @@ naturālos skaitļos!</p>"""@lv ;
 eliozo:LV.NOL.2019.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2019.5.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.5.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.5.1.SUB1 ;
     eliozo:problemText """Sākumā katrā no divām tvertnēm bija $250$ litri degvielas. No pirmās tvertnes 
 vispirms izlēja $\\frac{1}{5}$ degvielas un tad pielēja $\\frac{1}{5}$ no 
 tvertnē atlikušās degvielas. Otrajā tvertnē vispirms pielēja klāt $\\frac{1}{5}$
@@ -398,15 +407,14 @@ esošās degvielas. Cik litru degvielas tagad ir katrā tvertnē?</p>"""@lv ;
 eliozo:LV.NOL.2019.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2019.5.2" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.5.2A.png,
-        eliozo:IMG.LV.NOL.2019.5.2B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.5.2.SUB0,
-        eliozo:SOLN.LV.NOL.2019.5.2.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.5.2.SUB1,
+        eliozo:SOLN.LV.NOL.2019.5.2.SUB2 ;
     eliozo:problemText """Dotas $15$ pēc ārējā izskata vienādas monētas, bet visas to masas ir dažādas. 
 Kā, izmantojot sviras svarus bez atsvariem, ar $21$ svēršanu atrast gan pašu 
 vieglāko, gan pašu smagāko monētu?"""@lv ;
@@ -423,13 +431,13 @@ vieglāko, gan pašu smagāko monētu?</p>"""@lv ;
 eliozo:LV.NOL.2019.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2019.5.3" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.5.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.5.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.5.3.SUB1 ;
     eliozo:problemText """Anniņa kvadrātā $4 \\times 4$ iekrāsoja dažas pelēkas rūtiņas tā, ka neveidojas 
 neviens stūrītis (skat. 3.att.), kam visas rūtiņas ir pelēkas. Ja Anniņa 
 iekrāsos vēl jebkuru vienu rūtiņu, tad noteikti veidosies stūrītis, kam visas 
@@ -455,13 +463,13 @@ nekā Jānītis? Figūra $stūrītis$ var būt arī pagriezta.</p>
 eliozo:LV.NOL.2019.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2019.5.4" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.5.4A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.5.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.5.4.SUB1 ;
     eliozo:problemText """Veikalā par $28$ uzlīmēm var saņemt mašīnu. Valentīns ieradās veikalā, kur 
 pārdevējs viņam iedeva tikpat uzlīmes, cik Valentīnam jau bija, un tad viņš 
 $28$ uzlīmes samainīja pret mašīnu. Nākamajā dienā Valentīns atkal ieradās 
@@ -488,12 +496,13 @@ Valentīns uzlīmes nesaņem un netērē.)</p>"""@lv ;
 eliozo:LV.NOL.2019.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 5 ;
     eliozo:problemID "LV.NOL.2019.5.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.5.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.5.5.SUB1 ;
     eliozo:problemText """Vai vārdā $NEAPJAUŠAMAIS$ var aizvietot burtus ar cipariem tā, ka dažādus 
 burtus aizstāj dažādi cipari (burti $S$ un $Š$ ir aizstāti ar atšķirīgiem 
 cipariem), bet vienādus - vienādi, turklāt izveidotais skaitlis ir pirmskaitlis?"""@lv ;
@@ -510,12 +519,13 @@ cipariem), bet vienādus - vienādi, turklāt izveidotais skaitlis ir pirmskaitl
 eliozo:LV.NOL.2019.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2019.6.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.6.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.6.1.SUB1 ;
     eliozo:problemText """Konkursā bija $90$ jautājumu. Par katru pareizu atbildi var iegūt $3$ punktus, 
 par katru nepareizu atbildi tiek atņemts $1$ punkts. Ja uz kādu jautājumu nav 
 sniegta atbilde, tad par šo jautājumu ir $0$ punktu. Olafs konkursā ieguva 
@@ -536,15 +546,14 @@ cik jautājumiem Olafs nesniedza atbildi?</p>"""@lv ;
 eliozo:LV.NOL.2019.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2019.6.2" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.6.2A.png,
-        eliozo:IMG.LV.NOL.2019.6.2B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.6.2.SUB0,
-        eliozo:SOLN.LV.NOL.2019.6.2.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.6.2.SUB1,
+        eliozo:SOLN.LV.NOL.2019.6.2.SUB2 ;
     eliozo:problemText """Dotas $11$ pēc ārējā izskata vienādas monētas, no kurām $10$ ir īstas, bet 
 viena ir viltota. Īstās monētas masa ir $12$ grami, bet viltotās - $11$ grami. 
 Kā ar $3$ svēršanām uz sviras svariem bez atsvariem atrast viltoto monētu?"""@lv ;
@@ -561,13 +570,13 @@ Kā ar $3$ svēršanām uz sviras svariem bez atsvariem atrast viltoto monētu?<
 eliozo:LV.NOL.2019.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2019.6.3" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.6.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.6.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.6.3.SUB1 ;
     eliozo:problemText """Vai taisnstūri ar izmēriem **(A)** $5 \\times 8$, **(B)** $5 \\times 12$ rūtiņas 
 var pārklāt ar 8.att. redzamajām figūrām? Taisnstūrim jābūt pilnībā pārklātam. 
 Figūras nedrīkst iziet ārpus taisnstūra un nedrīkst pārklāties, tās drīkst būt 
@@ -589,13 +598,13 @@ pagrieztas vai apgrieztas spoguļattēlā.</p>
 eliozo:LV.NOL.2019.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2019.6.4" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.6.4A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.6.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.6.4.SUB1 ;
     eliozo:problemText """Aizpildi doto kvadrātu (skat. 11.att.), tukšajās rūtiņās ierakstot pa vienam 
 naturālam skaitlim, tā, lai visi deviņi skaitļi ir dažādi un visās rindās, 
 visās kolonnās un abās diagonālēs skaitļu summas būtu vienādas! (Pietiek 
@@ -614,12 +623,13 @@ parādīt vienu veidu, kā to izdarīt.)</p>"""@lv ;
 eliozo:LV.NOL.2019.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 6 ;
     eliozo:problemID "LV.NOL.2019.6.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.6.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.6.5.SUB1 ;
     eliozo:problemText """Dots, ka $LAI + ŠIS + IR + LABS=2019$ un $IR + IR = LAI$. Parādi vienu piemēru,
 kādi cipari var būt burtu vietās, lai dotās vienādības būtu patiesas un 
 vienādus ciparus aizstātu vienādi burti, dažādus - dažādi (burti $Š$ un $S$ ir 
@@ -638,12 +648,13 @@ atšķirīgi).</p>"""@lv ;
 eliozo:LV.NOL.2019.7.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2019.7.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.7.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.7.1.SUB1 ;
     eliozo:problemText """Doti trīs vienādojumi $ax+b=0,\\ bx+c=0$ un $cx+a=0$. Neviens no koeficientiem 
 $a, b, c$ nav $0$.
 
@@ -666,15 +677,14 @@ $a, b, c$ nav $0$.</p>
 eliozo:LV.NOL.2019.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2019.7.2" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.7.2A.png,
-        eliozo:IMG.LV.NOL.2019.7.2B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.7.2.SUB0,
-        eliozo:SOLN.LV.NOL.2019.7.2.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.7.2.SUB1,
+        eliozo:SOLN.LV.NOL.2019.7.2.SUB2 ;
     eliozo:problemText """Dotas $14$ pēc ārējā izskata vienādas monētas. Zināms, ka $13$ monētu masas ir 
 vienādas savā starpā, bet vienas monētas masa ir citāda. Kā ar divām svēršanām 
 uz sviras svariem bez atsvariem noskaidrot, vai atšķirīgā monēta ir vieglāka 
@@ -693,13 +703,13 @@ vai smagāka nekā pārējās? (Pašu monētu atrast nav nepieciešams.)</p>"""@
 eliozo:LV.NOL.2019.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2019.7.3" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.7.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.7.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.7.3.SUB1 ;
     eliozo:problemText """Anniņa kvadrātā $6 \\times 6$ iekrāsoja dažas pelēkas rūtiņas tā, ka neveidojas 
 neviens stūrītis (skat. 15.att.), kam visas rūtiņas ir pelēkas. Ja Anniņa 
 iekrāsos vēl jebkuru vienu rūtiņu, tad noteikti veidosies stūrītis, kam visas 
@@ -725,13 +735,14 @@ nekā Jānītis? Figūra stūrītis var būt arī pagriezta.</p>
 eliozo:LV.NOL.2019.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:genre "integer-equation" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2019.7.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.7.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.7.4.SUB1 ;
     eliozo:problemText "Vai var atrast tādus veselus skaitļus $a$ un $b$, ka $ab(a+5b)=150015$ ?"@lv ;
     eliozo:problemTextHtml "<p>Vai var atrast tādus veselus skaitļus $a$ un $b$, ka $ab(a+5b)=150015$ ?</p>"@lv ;
     eliozo:problemTimeID "2019" ;
@@ -745,20 +756,21 @@ eliozo:LV.NOL.2019.7.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:genre "game" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 7 ;
     eliozo:problemID "LV.NOL.2019.7.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.7.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.7.5.SUB1 ;
     eliozo:problemText """Uz tāfeles uzrakstītas deviņas zvaigznītes $*********$. Mārtiņš ieraksta kādas 
 zvaigznītes vietā jebkuru ciparu no $1$ līdz $9$. Pēc tam Rihards jebkuru divu 
 citu zvaigznīšu vietā ieraksta divus nenulles ciparus (tie var arī 
 atkārtoties). Pēc tam vēl divas reizes viņi atkārto šo darbību. Rihards uzvar, 
 ja iegūtais deviņciparu skaitlis dalās ar $31$. Vai Rihards vienmēr var 
 uzvarēt?"""@lv ;
-    eliozo:problemTextHtml """<p>Uz tāfeles uzrakstītas deviņas zvaigznītes $<strong><em>*</em></strong>**$. Mārtiņš ieraksta kādas 
+    eliozo:problemTextHtml """<p>Uz tāfeles uzrakstītas deviņas zvaigznītes $*********$. Mārtiņš ieraksta kādas 
 zvaigznītes vietā jebkuru ciparu no $1$ līdz $9$. Pēc tam Rihards jebkuru divu 
 citu zvaigznīšu vietā ieraksta divus nenulles ciparus (tie var arī 
 atkārtoties). Pēc tam vēl divas reizes viņi atkārto šo darbību. Rihards uzvar, 
@@ -774,12 +786,13 @@ uzvarēt?</p>"""@lv ;
 eliozo:LV.NOL.2019.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2019.8.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.8.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.8.1.SUB1 ;
     eliozo:problemText """Taisnstūra vienas malas garums ir $(2 \\sqrt{3}-\\sqrt{6})(2 \\sqrt{3}+\\sqrt{6})$,
 bet otras malas garums ir $(\\sqrt{3})^{2}+\\sqrt{1 \\frac{7}{9}}$. Aprēķināt 
 malas garumu kvadrātam, kura laukums ir tikpat liels kā dotajam taisnstūrim 
@@ -798,13 +811,13 @@ malas garumu kvadrātam, kura laukums ir tikpat liels kā dotajam taisnstūrim
 eliozo:LV.NOL.2019.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2019.8.2" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.8.2A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.8.2.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.8.2.SUB1 ;
     eliozo:problemText """Zināms, ka no $26$ monētām viena ir viltota - tā ir vieglāka nekā pārējās, 
 kurām visām ir vienāda masa. Kā ar trīs svēršanām uz sviras svariem bez 
 atsvariem atrast viltoto monētu?"""@lv ;
@@ -821,13 +834,13 @@ atsvariem atrast viltoto monētu?</p>"""@lv ;
 eliozo:LV.NOL.2019.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2019.8.3" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.8.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.8.3.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.8.3.SUB1 ;
     eliozo:problemText """Izliekta piecstūra $ABCDE$ diagonāļu $AC$ un $BD$ krustpunkts ir $M,\\ AC$ un 
 $BE$ krustpunkts ir $K$. Zināms, ka $AK=CM$ un $BK=KE=AE$. Pierādīt, ka 
 $EM=BC$."""@lv ;
@@ -844,13 +857,14 @@ $EM=BC$.</p>"""@lv ;
 eliozo:LV.NOL.2019.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:genre "making-moves" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2019.8.4" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.8.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.8.4.SUB1 ;
     eliozo:problemText """Uz tāfeles uzrakstīti skaitļi $\\frac{3}{2},\\ \\frac{4}{5},\\ \\frac{5}{3}$. Ar vienu
 gājienu atļauts izvēlēties divus no uzrakstītajiem skaitļiem (apzīmēsim tos ar 
 $a$ un $b$), nodzēst tos un to vietā uzrakstīt uz tāfeles skaitļus 
@@ -875,14 +889,13 @@ eliozo:LV.NOL.2019.8.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 8 ;
     eliozo:problemID "LV.NOL.2019.8.5" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.8.5A.png,
-        eliozo:IMG.LV.NOL.2019.8.5B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.8.5.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.8.5.SUB1 ;
     eliozo:problemText """Izmantojot divus atšķirīgus nenulles ciparus $x$ un $y$ ir izveidoti divi 
 trīsciparu skaitļi $\\overline{xyx}$ un $\\overline{yxy}$. Zināms, ka 
 $\\overline{xyx}$ dalās ar $3$, bet $\\overline{yxy}$ dalās ar $4$. Kāds var būt 
@@ -901,12 +914,13 @@ izveidotais trīsciparu skaitlis $\\overline{yxy}$ ?</p>"""@lv ;
 eliozo:LV.NOL.2019.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2019.9.1" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.9.1.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.9.1.SUB1 ;
     eliozo:problemText """Lineāra funkcija $y=\\left(m^{2}-3 m\\right) x+4m-4$ krusto $x$ asi punktā, kura 
 abscisa ir $2$. Atrodi $m$ vērtības un noskaidro, vai atbilstošā funkcija ir 
 augoša vai dilstoša!"""@lv ;
@@ -923,15 +937,14 @@ augoša vai dilstoša!</p>"""@lv ;
 eliozo:LV.NOL.2019.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2019.9.2" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.9.2A.png,
-        eliozo:IMG.LV.NOL.2019.9.2B.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.9.2.SUB0,
-        eliozo:SOLN.LV.NOL.2019.9.2.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.9.2.SUB1,
+        eliozo:SOLN.LV.NOL.2019.9.2.SUB2 ;
     eliozo:problemText """Dotas divas melnas, divas sarkanas un divas zaļas lodītes. Vienas lodītes masa 
 ir $99~\\mathrm{g}$, bet tādas pašas krāsas otras lodītes masa ir 
 $101~\\mathrm{g}$. Pārējās četras lodītes katra sver $100~\\mathrm{g}$. Kā, 
@@ -952,14 +965,14 @@ lodīti?</p>"""@lv ;
 eliozo:LV.NOL.2019.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2019.9.3" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.9.3A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.9.3.SUB0,
-        eliozo:SOLN.LV.NOL.2019.9.3.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.9.3.SUB1,
+        eliozo:SOLN.LV.NOL.2019.9.3.SUB2 ;
     eliozo:problemText """Uz kvadrāta $ABCD$ malām $AB,\\ BC,\\ CD$ un $DA$ attiecīgi atzīmēti punkti 
 $E,\\ F,\\ G,\\ H$ tā, ka $AE=BF=CG=DH$. Kvadrāta iekšpusē atlikts patvaļīgs 
 punkts $O$. Pierādīt, ka $S_{AEOH}+S_{FCGO}=S_{BFOE}+S_{DHOG}$."""@lv ;
@@ -976,13 +989,13 @@ punkts $O$. Pierādīt, ka $S_{AEOH}+S_{FCGO}=S_{BFOE}+S_{DHOG}$.</p>"""@lv ;
 eliozo:LV.NOL.2019.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2019.9.4" ;
-    eliozo:problemImage eliozo:IMG.LV.NOL.2019.9.4A.png ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.9.4.SUB0 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.9.4.SUB1 ;
     eliozo:problemText """Kvadrāts sastāv no $n \\times n$ rūtiņām. Rindas sanumurētas no lejas uz augšu 
 ar skaitļiem $1; 2; \\ldots$; $n$ tāpat sanumurētas kolonnas no kreisās uz labo 
 pusi. Katrā rūtiņā ierakstīts vai nu $(+1)$, vai $(-1)$. Ja rindas un kolonnas 
@@ -1006,14 +1019,15 @@ eliozo:LV.NOL.2019.9.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
+    eliozo:event "LV.NOL.2019" ;
     eliozo:genre "digit-manipulation" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2019.9.5" ;
-    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.9.5.SUB0,
-        eliozo:SOLN.LV.NOL.2019.9.5.SUB1 ;
+    eliozo:problemSolution eliozo:SOLN.LV.NOL.2019.9.5.SUB1,
+        eliozo:SOLN.LV.NOL.2019.9.5.SUB2 ;
     eliozo:problemText """Kāds mazākais ciparu skaits jāpieraksta ciparu virknes $3456$ beigās, lai 
 iegūtu skaitli, kas dalās ar $2019$?"""@lv ;
     eliozo:problemTextHtml """<p>Kāds mazākais ciparu skaits jāpieraksta ciparu virknes $3456$ beigās, lai 
@@ -1025,112 +1039,8 @@ iegūtu skaitli, kas dalās ar $2019$?</p>"""@lv ;
     eliozo:suffix "LV.NOL.2019.9" ;
     eliozo:suggestedGrade 9 .
 
-eliozo:IMG.LV.NOL.2019.10.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.10.2A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.10.2B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.10.2B.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.10.2C.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.10.2C.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.10.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.10.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.11.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.11.2A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.12.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.12.2A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.12.4A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.12.4A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.5.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.5.2A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.5.2B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.5.2B.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.5.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.5.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.5.4A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.5.4A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.6.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.6.2A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.6.2B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.6.2B.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.6.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.6.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.6.4A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.6.4A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.7.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.7.2A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.7.2B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.7.2B.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.7.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.7.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.8.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.8.2A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.8.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.8.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.8.5A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.8.5A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.8.5B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.8.5B.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.9.2A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.9.2A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.9.2B.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.9.2B.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.9.3A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.9.3A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:IMG.LV.NOL.2019.9.4A.png a eliozo:Image ;
-    eliozo:imageSrc "LV.NOL.2019.9.4A.png" ;
-    eliozo:imageWidth "" .
-
-eliozo:SOLN.LV.NOL.2019.10.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.10.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Dotā funkcija krusto $x$ asi punktā $(1; 0)$, līdz ar to, ievietojot šīs 
@@ -1154,8 +1064,8 @@ gadījumi:</p>
   asi ir $(-5; 0)$.</li>
 </ul>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.10.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.10.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pirmajā svēršanā uz katra svaru kausa uzliekam pa $3$ monētām. lespējami divi 
@@ -1205,8 +1115,8 @@ monētām pa vienai uz katra svaru kausa.</p>
 $51~\\mathrm{g}$, un prasītais ir izpildīts.</p>
 <p><img alt="" src="LV.NOL.2019.10.2A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.10.2.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.NOL.2019.10.2.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisināums
 
 Pirmajā svēršanā uz katra svaru kausa uzliekam pa $2$ monētām.
@@ -1268,8 +1178,8 @@ Pirmajā svēršanā uz katra svaru kausa uzliekam pa $2$ monētām.
 </ul>
 <p><img alt="" src="LV.NOL.2019.10.2C.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.10.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.10.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Ar $E, F, G$ un $H$ apzīmējam pārējos pieskaršanās punktus (skat. 29.att.). Tā 
@@ -1295,8 +1205,8 @@ vienādības: $AC=CE,\\ CH=CG,\\ DH=DB,\\ DE=DF$. Tātad</p>
 $XA=XF$. Līdz ar to $AG=FB$, no kā izriet, ka $AC=BD$.</p>
 <p><img alt="" src="LV.NOL.2019.10.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.10.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.10.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pieņemsim pretējo, ka kāds no dotajiem skaitļiem $x$ ir negatīvs vai $0$, tas 
@@ -1314,13 +1224,14 @@ $x \\leq 0$. Tātad visi dotie skaitļi ir pozitīvi."""@lv ;
 ir $x \\leq 0$. Atlikušos $2018$ skaitļus sadalām divās grupās $A$ un $B$ katrā 
 pa $1009$ skaitļiem. Grupas $A$ un $B$ skaitļu summu attiecīgi apzīmējam ar 
 $S_{A}$ un $S_{B}$. Pēc dotā vienlaicīgi ir spēkā divas nevienādības 
-$S_{A}+x&gt;S_{B}$ un $S_{B}+x&gt;S_{A}$. Saskaitot šīs nevienādības, iegūstam</p>
-<p>$$S_{A}+S_{B}+2x&gt;S_{A}+S_{B}$$</p>
-<p>Līdz ar to $2x&gt;0$ jeb $x&gt;0$. Esam ieguvuši pretrunu ar pieņēmumu, ka 
+$S_{A}+x>S_{B}$ un $S_{B}+x>S_{A}$. Saskaitot šīs nevienādības, iegūstam</p>
+<p>$$S_{A}+S_{B}+2x>S_{A}+S_{B}$$
+
+Līdz ar to $2x&gt;0$ jeb $x&gt;0$. Esam ieguvuši pretrunu ar pieņēmumu, ka 
 $x \\leq 0$. Tātad visi dotie skaitļi ir pozitīvi.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.10.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.10.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Dalām abas dotā vienādojuma puses ar $2$ un pārveidojam iegūto vienādojumu:
@@ -1346,25 +1257,26 @@ Tātad dotajam vienādojumam ir divi atrisinājumi: $m=37, n=71$ un $m=73, n=31$
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Dalām abas dotā vienādojuma puses ar $2$ un pārveidojam iegūto vienādojumu:</p>
 <p>$$\\begin{gathered}
-10m+9n=1009 \\
-1000-10m=9n-9 \\
+10m+9n=1009 \\\\
+1000-10m=9n-9 \\\\
 10(100-m)=9(n-1)
-\\end{gathered}$$</p>
-<p>Ievērojam, ka iegūtās vienādības labās puses izteiksme ir pozitīva, tātad arī 
+\\end{gathered}$$
+
+Ievērojam, ka iegūtās vienādības labās puses izteiksme ir pozitīva, tātad arī 
 $(100-m)$ jābūt pozitīvam. Tā kā $10$ un $9$ ir savstarpēji pirmskaitļi, tad 
 $(100-m)$ ir jādalās ar $9$. Iespējamās $m$ vērtības varētu būt 
 $1,\\ 10,\\ 19,\\ 28,\\ 37,\\ 46,\\ 55,\\ 64,\\ 73,\\ 82$ un $91$, no kurām derīgas ir 
 tikai $19,\\ 37$ un $73$, jo tie ir pirmskaitļi. Atrodam atbilstošās $n$ 
-vērtības:</p>
-<ul>
-<li>ja $m=19$, tad $10 \\cdot 81=9(n-1)$ jeb $n=91$ (neder, jo nav pirmskaitlis),</li>
-<li>ja $m=37$, tad $10 \\cdot 63=9(n-1)$ jeb $n=71$ (pirmskaitlis),</li>
-<li>ja $m=73$, tad $10 \\cdot 27=9(n-1)$ jeb $n=31$ (pirmskaitlis).</li>
-</ul>
-<p>Tātad dotajam vienādojumam ir divi atrisinājumi: $m=37, n=71$ un $m=73, n=31$.</p>"""@lv .
+vērtības:
 
-eliozo:SOLN.LV.NOL.2019.10.5.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+- ja $m=19$, tad $10 \\cdot 81=9(n-1)$ jeb $n=91$ (neder, jo nav pirmskaitlis),
+- ja $m=37$, tad $10 \\cdot 63=9(n-1)$ jeb $n=71$ (pirmskaitlis),
+- ja $m=73$, tad $10 \\cdot 27=9(n-1)$ jeb $n=31$ (pirmskaitlis).
+
+Tātad dotajam vienādojumam ir divi atrisinājumi: $m=37, n=71$ un $m=73, n=31$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2019.10.5.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Izdalām abas puses ar $2$: Iegūstam sakarību $10m+9n=1009$.
@@ -1388,8 +1300,8 @@ Tas ir iespējams pie $n=1,11,21,31,41,51,61,71,81,91,101,111$. </p>
 $(55,51)$, $(46,61)$, $(\\mathbf{37},\\mathbf{71})$, $(28,81)$, $(19,91)$, $(10,101)$, $(1,111)$. </p>
 <p>Tikai divos pāros abi skaitļi ir pirmskaitļi: $(m,n)$ var būt $(73,31)$ vai $(37,71)$.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.11.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.11.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Nē, nevar.
@@ -1407,17 +1319,17 @@ $y=bx+c$ grafiki."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Nē, nevar.</p>
 <p>Funkcijas $y=bx+c$ grafiks ir taisne. Ievērojam, ka tā ir dilstoša funkcija un 
-taisne krusto $y$ asi punktā, kura ordinātas vērtība ir pozitīva, tad $b&lt;0$.</p>
+taisne krusto $y$ asi punktā, kura ordinātas vērtība ir pozitīva, tad $b<0$.</p>
 <p>Apskatām funkciju $y=ax^{2}+bx+c$. Tā kā doto parabolu zari ir vērsti uz augšu 
-un krustpunktu ar $y$ asi ordinātas vērtība ir pozitīva, tad $a&gt;0$. Aprēķinām 
+un krustpunktu ar $y$ asi ordinātas vērtība ir pozitīva, tad $a>0$. Aprēķinām 
 šīs parabolas virsotnes abscisas vērtību $x_{v}=-\\frac{b}{2a}$. Tā kā virsotne 
-atrodas trešajā kvadrantā, tad $x_{v}&lt;0$ un, ņemot vērā, ka $a&gt;0$, secinām, ka 
-$b&gt;0$. Esam ieguvuši pretrunu ar to, ka $b&lt;0$ (lineārā funkcija dilstoša), 
+atrodas trešajā kvadrantā, tad $x_{v}<0$ un, ņemot vērā, ka $a>0$, secinām, ka 
+$b>0$. Esam ieguvuši pretrunu ar to, ka $b<0$ (lineārā funkcija dilstoša), 
 tātad 30.att. nevar būt doti funkciju $y=ax^{2}+bx+c$,\\ $y=cx^{2}+bx+a$ un 
 $y=bx+c$ grafiki.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.11.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.11.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **a)** Izvēlamies divus šahistus un noskaidrojam labāko. Pirmās partijas 
@@ -1479,8 +1391,8 @@ a), gan b) gadījumam. Rīkojoties pēc a) gadījumā aprakstītā plāna, nav
 iespējams, izspēlējot $15$ partijas, atrast arī otru labāko šahistu.</p>
 <p><img alt="" src="LV.NOL.2019.11.2A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.11.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.11.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Tā kā $\\sphericalangle C_{1}B_{1}A=\\sphericalangle C_{2}B_{2}A=90^{\\circ}$ (kā 
@@ -1505,8 +1417,8 @@ $\\Delta B_{1}AB_{2} \\sim \\Delta C_{1}AC_{2}$ pēc pazīmes $m \\ell m$. Tāta
 $\\sphericalangle B_{2}B_{1}A=\\sphericalangle C_{2}C_{1}A$ kā atbilstošie leņķi 
 līdzīgos trijstūros.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.11.3.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.NOL.2019.11.3.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Tā kā $\\sphericalangle C_{1}B_{1}A=\\sphericalangle C_{2}B_{2}A=90^{\\circ}$ kā 
@@ -1523,8 +1435,8 @@ $\\sphericalangle B_{2}B_{1}C_{2}=\\sphericalangle C_{2}C_{1}B_{2}$ kā ievilkti
 leņķi, kas balstās uz viena un tā paša loka $B_{2}C_{2}$. Tātad 
 $\\sphericalangle B_{2}B_{1}A=\\sphericalangle C_{2}C_{1}A$.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.11.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.11.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Tā kā $a$ un $b$ ir pozitīvi skaitļi, tad abas nevienādības puses drīkst 
@@ -1549,20 +1461,22 @@ ekvivalenti pārveidojumi."""@lv ;
 <p>Tā kā $a$ un $b$ ir pozitīvi skaitļi, tad abas nevienādības puses drīkst 
 reizināt ar $ab$. Iegūstam pierādāmajai nevienādībai ekvivalentu nevienādību</p>
 <p>$$\\begin{gathered}
-a^{2}(a+1)^{2}+b^{2}(b+1)^{2} \\geq 2a(a+1)b(b+1) \\
+a^{2}(a+1)^{2}+b^{2}(b+1)^{2} \\geq 2a(a+1)b(b+1) \\\\
 a^{2}(a+1)^{2}-2a(a+1) b(b+1)+b^{2}(b+1)^{2} \\geq 0
-\\end{gathered}$$</p>
-<p>Ekvivalenti pārveidojam šīs nevienādības kreisās puses izteiksmi:</p>
-<p>$$\\begin{gathered}
-(a(a+1))^{2}-2a(a+1) b(b+1)+(b(b+1))^{2} \\geq 0 \\
+\\end{gathered}$$
+
+Ekvivalenti pārveidojam šīs nevienādības kreisās puses izteiksmi:
+
+$$\\begin{gathered}
+(a(a+1))^{2}-2a(a+1) b(b+1)+(b(b+1))^{2} \\geq 0 \\\\
 (a(a+1)-b(b+1))^{2} \\geq 0
 \\end{gathered}$$</p>
 <p>Reāla skaitļa kvadrāts ir vienmēr ir nenegatīvs. Līdz ar to iegūta patiesa 
 nevienādība un arī dotā nevienādība ir patiesa, jo tika veikti tikai 
 ekvivalenti pārveidojumi.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.11.4.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.NOL.2019.11.4.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Dotā nevienādība ir ekvivalenta nevienādībai
@@ -1583,20 +1497,22 @@ nevienādība un arī dotā nevienādība ir patiesa, jo tika veikti tikai
 ekvivalenti pārveidojumi."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Dotā nevienādība ir ekvivalenta nevienādībai</p>
-<p>$$\\frac{a}{b}(a+1)^{2}+\\frac{b}{a}(b+1)^{2}-2(a+1)(b+1) \\geq 0$$</p>
-<p>Ievērojot, ka $a$ un $b$ ir pozitīvi skaitļi, ekvivalenti pārveidojam šīs 
-nevienādības kreisās puses izteiksmi:</p>
-<p>$$\\begin{gathered}
-\\left(\\sqrt{\\frac{a}{b}}\\right)^{2}(a+1)^{2}+\\left(\\sqrt{\\frac{b}{a}}\\right)^{2}(b+1)^{2}-2(a+1)(b+1) \\geq 0 \\
-\\left(\\sqrt{\\frac{a}{b}}(a+1)\\right)^{2}-2 \\sqrt{\\frac{a}{b}}(a+1) \\sqrt{\\frac{b}{a}}(b+1)+\\left(\\sqrt{\\frac{b}{a}}(b+1)\\right)^{2} \\geq 0 \\
+<p>$$\\frac{a}{b}(a+1)^{2}+\\frac{b}{a}(b+1)^{2}-2(a+1)(b+1) \\geq 0$$
+
+Ievērojot, ka $a$ un $b$ ir pozitīvi skaitļi, ekvivalenti pārveidojam šīs 
+nevienādības kreisās puses izteiksmi:
+
+$$\\begin{gathered}
+\\left(\\sqrt{\\frac{a}{b}}\\right)^{2}(a+1)^{2}+\\left(\\sqrt{\\frac{b}{a}}\\right)^{2}(b+1)^{2}-2(a+1)(b+1) \\geq 0 \\\\
+\\left(\\sqrt{\\frac{a}{b}}(a+1)\\right)^{2}-2 \\sqrt{\\frac{a}{b}}(a+1) \\sqrt{\\frac{b}{a}}(b+1)+\\left(\\sqrt{\\frac{b}{a}}(b+1)\\right)^{2} \\geq 0 \\\\
 \\left(\\sqrt{\\frac{a}{b}}(a+1)-\\sqrt{\\frac{b}{a}}(b+1)\\right)^{2} \\geq 0
 \\end{gathered}$$</p>
 <p>Reāla skaitļa kvadrāts vienmēr ir nenegatīvs. Līdz ar to iegūta patiesa 
 nevienādība un arī dotā nevienādība ir patiesa, jo tika veikti tikai 
 ekvivalenti pārveidojumi.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.11.4.SUB2 a eliozo:Solution ;
-    eliozo:solutionNum 2 ;
+eliozo:SOLN.LV.NOL.2019.11.4.SUB3 a eliozo:Solution ;
+    eliozo:solutionNum 3 ;
     eliozo:solutionText """## Atrisinājums
 
 Tā kā $a$ un $b$ ir pozitīvi skaitļi, tad dotās nevienādības kreisās puses 
@@ -1613,8 +1529,8 @@ vidējo ģeometrisko:</p>
 <p>$$\\frac{a}{b}(a+1)^{2}+\\frac{b}{a}(b+1)^{2} \\geq 2 \\cdot \\sqrt{\\frac{a}{b}(a+1)^{2} \\cdot \\frac{b}{a}(b+1)^{2}}=2(a+1)(b+1)$$</p>
 <p>kas arī bija jāpierāda.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.11.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.11.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pārveidojam doto vienādojumu
@@ -1639,27 +1555,25 @@ $m=43,\\ n=61$."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Pārveidojam doto vienādojumu</p>
 <p>$$\\begin{aligned}
-2000-20m &amp; =19n-19 \\
-20(100-m) &amp; =19(n-1)
-\\end{aligned}$$</p>
-<p>Ievērojam, ka iegūtās vienādības labās puses izteiksme ir pozitīva, tātad arī 
+2000-20m & =19n-19 \\\\
+20(100-m) & =19(n-1)
+\\end{aligned}$$
+
+Ievērojam, ka iegūtās vienādības labās puses izteiksme ir pozitīva, tātad arī 
 $(100-m)$ jābūt pozitīvam. Tā kā $20$ un $19$ ir savstarpēji pirmskaitļi, tad 
 $(100-m)$ ir jādalās ar $19$. lespējamās $m$ vērtības varētu būt 
 $5,\\ 24,\\ 43,\\ 62$ un $81$, no kurām derīgas ir tikai $5$ un $43$, jo tie ir 
-pirmskaitļi. Atrodam atbilstošās $n$ vērtības:</p>
-<ul>
-<li>
-<p>ja $m=5$, tad $20 \\cdot 95=19(n-1)$ jeb $n=101$ (pirmskaitlis),</p>
-</li>
-<li>
-<p>ja $m=43$, tad $20 \\cdot 57=19(n-1)$ jeb $n=61$ (pirmskaitlis).</p>
-</li>
-</ul>
-<p>Tātad dotajam vienādojumam ir divi atrisinājumi: $m=5,\\ n=101$ un 
+pirmskaitļi. Atrodam atbilstošās $n$ vērtības:
+
+- ja $m=5$, tad $20 \\cdot 95=19(n-1)$ jeb $n=101$ (pirmskaitlis),
+
+- ja $m=43$, tad $20 \\cdot 57=19(n-1)$ jeb $n=61$ (pirmskaitlis).
+
+Tātad dotajam vienādojumam ir divi atrisinājumi: $m=5,\\ n=101$ un 
 $m=43,\\ n=61$.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.11.5.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.NOL.2019.11.5.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Apskatīsim doto vienādojumu pēc moduļa $19$. Tā kā 
@@ -1678,8 +1592,8 @@ Tātad dotajam vienādojumam ir divi atrisinājumi: $m=5,\\ n=101$ un $m=43,\\ n
 <p>Apskatīsim doto vienādojumu pēc moduļa $19$. Tā kā 
 $20m \\equiv 1 \\cdot m \\equiv m(\\bmod 19)$, $19n \\equiv 0(\\bmod 19)$ un 
 $2019 \\equiv 5(\\bmod 19)$, tad, lai būtu vienādība, jāizpildās nosacījumam 
-$m \\equiv 5(\\bmod 19)$. Ievērojot, ka $20 \\cdot 101=2020&gt;2019$, secinām, ka 
-$m&lt;101$. Tātad derīgās $m$ vērtības ir pirmskaitļi, kas mazāki nekā $101$, un, 
+$m \\equiv 5(\\bmod 19)$. Ievērojot, ka $20 \\cdot 101=2020>2019$, secinām, ka 
+$m<101$. Tātad derīgās $m$ vērtības ir pirmskaitļi, kas mazāki nekā $101$, un, 
 dalot ar $19$, dod atlikumu $5$. Šādas vērtības ir tikai divas $m=5$ un $m=43$.
 Atrodam atbilstošās $n$ vērtības:</p>
 <ul>
@@ -1688,8 +1602,8 @@ Atrodam atbilstošās $n$ vērtības:</p>
 </ul>
 <p>Tātad dotajam vienādojumam ir divi atrisinājumi: $m=5,\\ n=101$ un $m=43,\\ n=61$.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.12.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.12.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Tā kā varbūtība, ka abas lodītes būs vienā krāsā, sakrīt ar varbūtību, ka 
@@ -1742,15 +1656,19 @@ vienā krāsā) skaits ir $66 \\cdot 65+m(m-1)$ un visu notikumu kopskaits
 izvilktās lodītes ir vienādā krāsā, ir 
 $\\frac{m(m-1)+66 \\cdot 65}{(66+m)(65+m)}$.</p>
 <p>Lai iegūtu melno lodīšu skaitu, jāatrisina vienādojums</p>
-<p>$$\\frac{m(m-1)+66 \\cdot 65}{(66+m)(65+m)}=\\frac{1}{2}$$</p>
-<p>Reizinām abas vienādojuma puses ar $2(66+m)(65+m)&gt;0$, iegūstam</p>
-<p>$$\\begin{gathered}
-2m^{2}-2m+2 \\cdot 66 \\cdot 65=66 \\cdot 65+131m+m^{2} \\
+<p>$$\\frac{m(m-1)+66 \\cdot 65}{(66+m)(65+m)}=\\frac{1}{2}$$
+
+Reizinām abas vienādojuma puses ar $2(66+m)(65+m)&gt;0$, iegūstam
+
+$$\\begin{gathered}
+2m^{2}-2m+2 \\cdot 66 \\cdot 65=66 \\cdot 65+131m+m^{2} \\\\
 m^{2}-133m+66 \\cdot 65=0
-\\end{gathered}$$</p>
-<p>Šī vienādojuma saknes ir $m_{1}=78$ un $m_{2}=55$. Tātad urnā atrodas $78$ vai 
-$55$ melnas lodītes.</p>
-<p><em>Piezīme.</em> Varbūtību, ka abas izņemtās lodītes ir vienā krāsā, var arī 
+\\end{gathered}$$
+
+Šī vienādojuma saknes ir $m_{1}=78$ un $m_{2}=55$. Tātad urnā atrodas $78$ vai 
+$55$ melnas lodītes.
+
+*Piezīme.* Varbūtību, ka abas izņemtās lodītes ir vienā krāsā, var arī 
 aprēķināt, izmantojot notikumu summas varbūtību, tas ir, ja notikumi $A$ un 
 $B$ ir nesavienojami, tad $P(A \\cup B)=P(A)+P(B)$, kur $A$ - abas izņemtās 
 lodītes ir baltas un $B$ - abas izņemtās lodītes ir melnas. Aprēķinām varbūtību
@@ -1763,8 +1681,8 @@ $P(B)=\\frac{m(m-1)}{(66+m)(65+m)}$. Līdz ar to varbūtība, ka abas izvilktās
 lodītes ir vienādā krāsā, ir 
 $\\frac{m(m-1)}{(66+m)(65+m)}+\\frac{66 \\cdot 65}{(66+m)(65+m)}$.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.12.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.12.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Indra domās sadala skaitļus divos vienāda apjoma intervālos: $[1; 30]$ un 
@@ -1818,8 +1736,8 @@ notiek dalīšana.)</p>
 iedomāto skaitli.</p>
 <p><em>Piezīme.</em> Atrisinājums balstīts uz "skaldi un valdi" algoritmu.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.12.2.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.NOL.2019.12.2.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Tā kā Brigitas iedomātais skaitlis nepārsniedz $60$, tad to binārajā 
@@ -1855,8 +1773,8 @@ jāuzdod jautājums par katru skaitļa ciparu:</p>
 iedomāto skaitli.</p>
 <p><img alt="" src="LV.NOL.2019.12.2A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.12.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.12.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Punkts $O$ ir trijstūra $ABC$ bisektrišu krustpunkts (skat. 35.att.). Apzīmējam
@@ -1900,8 +1818,8 @@ $2 \\alpha=\\frac{\\alpha}{2}+45^{\\circ}, 2 \\beta=\\frac{\\beta}{2}+45^{\\circ
 $2 \\gamma=\\frac{\\gamma}{2}+45^{\\circ}$. Tātad $\\alpha=\\beta=\\gamma=30^{\\circ}$ 
 jeb $2 \\alpha=2 \\beta=2 \\gamma=60^{\\circ}$ un $\\triangle ABC$ ir regulārs.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.12.3.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.NOL.2019.12.3.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Punkts $O$ ir trijstūrim $DEF$ apvilktās riņķa līnijas centrs - 
@@ -1918,8 +1836,8 @@ trijstūrī $DEF$ ievilktās riņķa līnijas centrs arī ir $O$. Tā kā trijst
 $DEF$ bisektrišu krustpunkts sakrīt ar vidusperpendikulu krustpunktu, tad tas 
 ir regulārs trijstūris. Līdz ar to arī trijstūris $ABC$ ir regulārs.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.12.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.12.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Ja $b=c$, tad dotā nevienādība ir patiesa.
@@ -1941,7 +1859,7 @@ Ja $b < c$, tad jāpierāda, ka $\\sqrt{a^{2}+c^{2}}-\\sqrt{a^{2}+b^{2}} \\leq c
 ko var izdarīt analogi kā iepriekšējā gadījumā."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Ja $b=c$, tad dotā nevienādība ir patiesa.</p>
-<p>Ja $b&gt;c$, tad jāpierāda, ka $\\sqrt{a^{2}+b^{2}}-\\sqrt{a^{2}+c^{2}} \\leq b-c$. 
+<p>Ja $b>c$, tad jāpierāda, ka $\\sqrt{a^{2}+b^{2}}-\\sqrt{a^{2}+c^{2}} \\leq b-c$. 
 Reizinot abas nevienādības puses ar saistīto izteiksmi 
 $\\left(\\sqrt{a^{2}+b^{2}}+\\sqrt{a^{2}+c^{2}}\\right)$, iegūstam 
 $b^{2}-c^{2} \\leq(b-c)\\left(\\sqrt{a^{2}+b^{2}}+\\sqrt{a^{2}+c^{2}}\\right)$.</p>
@@ -1950,11 +1868,11 @@ iegūstam</p>
 <p>$b+c \\leq \\sqrt{a^{2}+b^{2}}+\\sqrt{a^{2}+c^{2}}$,</p>
 <p>kas ir patiesa nevienādība, jo $b \\leq \\sqrt{a^{2}+b^{2}}$ un 
 $c \\leq \\sqrt{a^{2}+c^{2}}$.</p>
-<p>Ja $b &lt; c$, tad jāpierāda, ka $\\sqrt{a^{2}+c^{2}}-\\sqrt{a^{2}+b^{2}} \\leq c-b$, 
+<p>Ja $b < c$, tad jāpierāda, ka $\\sqrt{a^{2}+c^{2}}-\\sqrt{a^{2}+b^{2}} \\leq c-b$, 
 ko var izdarīt analogi kā iepriekšējā gadījumā.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.12.4.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.NOL.2019.12.4.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Ja $b=c$, tad dotā nevienādība ir patiesa.
@@ -1979,13 +1897,13 @@ $CD$, kuru garumi attiecīgi ir $b$ un $c$ (iespējami divi gadījumi, skat.
 36.att.). No Pitagora teorēmas trijstūros $ADB$ un $ADC$ iegūstam, ka 
 $AC=\\sqrt{a^{2}+c^{2}}$ un $AB=\\sqrt{a^{2}+b^{2}}$. Ievērojam, ka 
 $BC=|BD-CD|=|b-c|$. No trijstūra nevienādības trijstūrī $ABC$ iegūstam 
-$BC&gt;|AB-AC|$ jeb $|b-c|&gt;\\left|\\sqrt{a^{2}+b^{2}}-\\sqrt{a^{2}+c^{2}}\\right|$.</p>
+$BC>|AB-AC|$ jeb $|b-c|>\\left|\\sqrt{a^{2}+b^{2}}-\\sqrt{a^{2}+c^{2}}\\right|$.</p>
 <p>Līdz ar to esam pierādījuši, ka 
 $\\left|\\sqrt{a^{2}+b^{2}}-\\sqrt{a^{2}+c^{2}}\\right| \\leq|b-c|$.</p>
 <p><img alt="" src="LV.NOL.2019.12.4A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.12.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.12.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pamatosim, ka der vērtības formā $a=\\frac{k(k+1)}{2}$ un $b=\\frac{k(k-1)}{2}$, 
@@ -2021,22 +1939,25 @@ kur $k$ ir naturāls skaitlis, kas lielāks nekā $1$:</p>
 <li>ievietojot šīs vērtības dotajā vienādojumā, iegūstam patiesu vienādību:</li>
 </ul>
 <p>$$\\begin{aligned}
-\\left(\\frac{k(k+1)}{2}-\\frac{k(k-1)}{2}\\right)^{2} &amp; =\\frac{k(k+1)}{2}+\\frac{k(k-1)}{2} \\
-\\left(\\frac{2k}{2}\\right)^{2}=\\frac{2k^{2}}{2} &amp; \\Rightarrow \\quad k^{2}=k^{2}
-\\end{aligned}$$</p>
-<p>Tā kā šādu $k$ vērtību ir bezgalīgi daudz, tad arī dotajam vienādojumam ir 
-bezgalīgi daudz atrisinājumu:</p>
-<p><em>Piezīme.</em> Meklētās $a$ un $b$ vērtības var palīdzēt atrast tālāk 
-aprakstītie spriedumi.</p>
-<p>$1.\\ veids.$ Apzīmējam $a-b=k$, tad $k^{2}=a+b$. Saskaitot abas vienādības, 
+\\left(\\frac{k(k+1)}{2}-\\frac{k(k-1)}{2}\\right)^{2} & =\\frac{k(k+1)}{2}+\\frac{k(k-1)}{2} \\\\
+\\left(\\frac{2k}{2}\\right)^{2}=\\frac{2k^{2}}{2} & \\Rightarrow \\quad k^{2}=k^{2}
+\\end{aligned}$$
+
+Tā kā šādu $k$ vērtību ir bezgalīgi daudz, tad arī dotajam vienādojumam ir 
+bezgalīgi daudz atrisinājumu:
+ 
+*Piezīme.* Meklētās $a$ un $b$ vērtības var palīdzēt atrast tālāk 
+aprakstītie spriedumi.
+
+$1.\\ veids.$ Apzīmējam $a-b=k$, tad $k^{2}=a+b$. Saskaitot abas vienādības, 
 iegūstam $2a=k+k^{2}$ jeb $a=\\frac{k(k+1)}{2}$. Aprēķinām 
-$b=a-k=\\frac{k^{2}+k}{2}-k=\\frac{k^{2}-k}{2}=\\frac{k(k-1)}{2}$<br />
+$b=a-k=\\frac{k^{2}+k}{2}-k=\\frac{k^{2}-k}{2}=\\frac{k(k-1)}{2}$  
 $2.\\ veids.$ Apzīmējam $a-b=k$, tad $a+b=k+2b$, tātad doto vienādojumu var 
 pārrakstīt formā $k^{2}=k+2b$, no kā iegūstam, ka 
 $b=\\frac{k^{2}-k}{2}=\\frac{k(k-1)}{2}$ un $a=k+b$.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.5.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.5.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Vispirms no pirmās degvielas tvertnes izlēja $\\frac{1}{5} \\cdot 250=50$ litrus 
@@ -2058,8 +1979,8 @@ degvielas, tātad tvertnē bija $250+50=300$ litri degvielas. Pēc tam izlēja
 $\\frac{1}{5} \\cdot 300=60$ litrus degvielas. Tātad otrajā tvertnē tagad ir 
 $300-60=240$ litri degvielas.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.5.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.5.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Sadalām monētas septiņos pāros (viena monēta paliek bez pāra; apzīmēsim šo 
@@ -2111,8 +2032,8 @@ monēta. Tam nepieciešamas ne vairāk kā $2$ svēršanas.</p>
 smagāko monētu.</p>
 <p><img alt="" src="LV.NOL.2019.5.2A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.5.2.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.NOL.2019.5.2.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Sākumā izveidojam $7$ monētu pārus (skat. 2.att.) un katrā pārī noskaidrojam, 
@@ -2146,8 +2067,8 @@ svaros katrā svēršanā jāatstāj vieglākā monēta, bet smagākā jānoliek
 <p>Tātad kopā nepieciešama $7+4+2+1+7=21$ svēršana.</p>
 <p><img alt="" src="LV.NOL.2019.5.2B.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.5.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.5.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Jā, var gadīties, piemēram, ja Anniņa iekrāsoja $7$ rūtiņas kā parādīts 4.att.,
@@ -2159,8 +2080,8 @@ bet Jānītis iekrāsoja $8$ rūtiņas kā parādīts 5.att.
 bet Jānītis iekrāsoja $8$ rūtiņas kā parādīts 5.att.</p>
 <p><img alt="" src="LV.NOL.2019.5.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.5.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.5.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Risinām šo uzdevumu no beigām (skat. tabulā).
@@ -2173,8 +2094,8 @@ Tātad Valentīnam pirms pirmā veikala apmeklējuma bija $27$ uzlīmes."""@lv ;
 <p><img alt="" src="LV.NOL.2019.5.4A.png" /></p>
 <p>Tātad Valentīnam pirms pirmā veikala apmeklējuma bija $27$ uzlīmes.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.5.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.5.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Nē, nevar. Vārdā $NEAPJAUŠAMAIS$ izmantoti desmit atšķirīgi burti, tātad būtu 
@@ -2188,13 +2109,14 @@ desmitciparu skaitlis, tātad tas nevar būt pirmskaitlis."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p>Nē, nevar. Vārdā $NEAPJAUŠAMAIS$ izmantoti desmit atšķirīgi burti, tātad būtu 
 jāizmanto visi desmit cipari. Tad $NEAPJAUŠAMAIS$ ciparu summa būtu</p>
-<p>$$(N+E+A+P+J+U+Š+M+I+S)+3 \\cdot A=45+3 \\cdot A$$</p>
-<p>kas dalās ar $3$, līdz ar to arī pats skaitlis dalītos ar $3$. Vienīgais 
+<p>$$(N+E+A+P+J+U+Š+M+I+S)+3 \\cdot A=45+3 \\cdot A$$
+
+kas dalās ar $3$, līdz ar to arī pats skaitlis dalītos ar $3$. Vienīgais 
 pirmskaitlis, kas dalās ar $3$, ir pats skaitlis $3$, bet dotais ir 
 desmitciparu skaitlis, tātad tas nevar būt pirmskaitlis.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.6.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.6.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Tā kā Olafs uz $10$ jautājumiem atbildēja nepareizi, tad par pareizajām 
@@ -2209,8 +2131,8 @@ pareizajām atbildēm iegūtais punktu skaits bija $200+10=210$. Tā kā par kat
 pareizu atbildi iegūst $3$ punktus, tad Olafs pareizi atbildēja uz $210:3=70$ 
 jautājumiem. Tātad Olafs nesniedza atbildi uz $90-10-70=10$ jautājumiem.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.6.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.6.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Katrā svaru kausā ieliekam $5$ monētas, vienu monētu atstājot malā.
@@ -2245,8 +2167,8 @@ monētas no "vieglākā" kausa, vienu monētu atstājot malā.</p>
 </ul>
 <p><img alt="" src="LV.NOL.2019.6.2A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.6.2.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.NOL.2019.6.2.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Katrā svaru kausā ieliekam $4$ monētas, $3$ monētas atstājot malā.
@@ -2285,8 +2207,8 @@ monētas, kas atrodas "vieglākajā" kausā un trešajā svēršanā tās salīd
 savā starpā. Viltotā monēta atradīsies "vieglākajā" kausā.</p>
 <p><img alt="" src="LV.NOL.2019.6.2B.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.6.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.6.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **(A)** Jā, var, piemēram, skat. 9.att.
@@ -2315,8 +2237,8 @@ skaitlis nevar būt vienāds ar pāra skaitli - melno rūtiņu skaitu visā
 taisnstūrī, tad taisnstūri pārklāt nevar.</p>
 <p><img alt="" src="LV.NOL.2019.6.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.6.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.6.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Skaitļu izkārtojumu skat., piemēram, 12.att.
@@ -2351,8 +2273,8 @@ jābūt naturāliem.</p>
 kvadrāta, pieskaitot $1$.</p>
 <p><img alt="" src="LV.NOL.2019.6.4A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.6.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.6.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Vienīgais šī uzdevuma atrisinājums ir $L=1; A=2; I=6; Š=5; S=0; R=3; B=7$, tad 
@@ -2379,8 +2301,8 @@ $LAI + ŠIS + IR + LABS=2019$, un šķirojot dažādos gadījumus, pakāpeniski 
 $R, A, Š$ un $S$ vērtības. Daļa no gadījumiem ir nederīgi, jo dažādiem burtiem 
 atbilst vienādi cipari.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.7.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.7.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **a)** Jā, var. Piemēram, ja $a=4,\\ b=8,\\ c=2$, tad vienādojumi ir 
@@ -2400,8 +2322,8 @@ $x=-\\frac{b}{a},\\ x=-\\frac{c}{b}$ un $x=-\\frac{a}{c}$. Sakņu reizinājums
 ir $-\\frac{b}{a} \\cdot\\left(-\\frac{c}{b}\\right) \\cdot\\left(-\\frac{a}{c}\\right)=-1$,
 tātad vismaz viena sakne ir negatīva.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.7.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.7.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Uzliekam uz katra svaru kausa $4$ monētas, malā atstājot $6$ monētas.
@@ -2449,8 +2371,8 @@ monētām.</p>
 </ul>
 <p><img alt="" src="LV.NOL.2019.7.2A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.7.2.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.NOL.2019.7.2.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Uzliekam uz katra svaru kausa $5$ monētas, malā atstājot $4$ monētas.
@@ -2500,8 +2422,8 @@ kausā liekam pa $3$ monētām no šīs kaudzītes.</p>
 </ul>
 <p><img alt="" src="LV.NOL.2019.7.2B.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.7.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.7.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Jā, var gadīties, piemēram, ja Anniņa iekrāsoja $12$ rūtiņas kā parādīts 
@@ -2513,8 +2435,8 @@ Jā, var gadīties, piemēram, ja Anniņa iekrāsoja $12$ rūtiņas kā parādī
 16.att., bet Jānītis iekrāsoja $18$ rūtiņas kā parādīts 17.att.</p>
 <p><img alt="" src="LV.NOL.2019.7.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.7.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.7.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pamatosim, ka nevar atrast prasītos skaitļus. Ja $a$ vai $b$ ir pāra skaitlis, 
@@ -2531,8 +2453,8 @@ tad $(a+5b)$ ir pāra skaitlis un vienādojuma kreisās puses izteiksmes vērtī
 ir pāra skaitlis, kas nevar būt vienāds ar nepāra skaitli $150015$. Tātad nevar
 atrast tādus veselus skaitļus $a$ un $b$, lai dotā vienādība būtu patiesa.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.7.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.7.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pamatosim, ka Rihards vienmēr var uzvarēt.
@@ -2576,8 +2498,8 @@ iespējams izdarīt.</p>
 $31$ dalās šādi trīsciparu skaitļi: 
 $124;\\ 155;\\ 186;\\ 217;\\ 248;\\ 279;\\ 310;\\ 341;\\ 372;\\ 403;\\ 434;\\ 465;\\ 496;\\ 527;\\ 558;\\ 589;\\ 620;\\ 651;\\ 682;\\ 713;\\ 744;\\ 775;\\ 806;\\ 837;\\ 868;\\ 899;\\ 930;\\ 961;\\ 992$.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.8.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.8.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Aprēķinām taisnstūra malu garumus:
@@ -2595,15 +2517,16 @@ garums ir $\\sqrt{26}$."""@lv ;
 <p>Aprēķinām taisnstūra malu garumus:</p>
 <p>$$
 \\begin{aligned}
-&amp; (2 \\sqrt{3}-\\sqrt{6})(2 \\sqrt{3}+\\sqrt{6})=(2 \\sqrt{3})^{2}-(\\sqrt{6})^{2}=4 \\cdot 3-6=6 \\
-&amp; (\\sqrt{3})^{2}+\\sqrt{1 \\frac{7}{9}}=3+\\sqrt{\\frac{16}{9}}=3+\\frac{4}{3}=4 \\frac{1}{3}
+& (2 \\sqrt{3}-\\sqrt{6})(2 \\sqrt{3}+\\sqrt{6})=(2 \\sqrt{3})^{2}-(\\sqrt{6})^{2}=4 \\cdot 3-6=6 \\\\
+& (\\sqrt{3})^{2}+\\sqrt{1 \\frac{7}{9}}=3+\\sqrt{\\frac{16}{9}}=3+\\frac{4}{3}=4 \\frac{1}{3}
 \\end{aligned}
-$$</p>
-<p>Taisnstūra laukums ir $6 \\cdot 4 \\frac{1}{3}=26$. Līdz ar to kvadrāta malas 
+$$
+
+Taisnstūra laukums ir $6 \\cdot 4 \\frac{1}{3}=26$. Līdz ar to kvadrāta malas 
 garums ir $\\sqrt{26}$.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.8.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.8.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Sadalām monētas trīs kaudzītēs: divas kaudzītes pa $9$ monētām katrā un viena 
@@ -2646,8 +2569,8 @@ attēlota 18.att. </p>
 atsevišķi, varam šai kaudzītei pievienot vienu "parasto" monētu.</p>
 <p><img alt="" src="LV.NOL.2019.8.2A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.8.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.8.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Ievērosim, ka $\\triangle MAE=\\triangle CKB$ pēc pazīmes $m \\ell m$, jo
@@ -2681,8 +2604,8 @@ Līdz ar to $EM=BC$ kā atbilstošās malas vienādos trijstūros.
 <p>Līdz ar to $EM=BC$ kā atbilstošās malas vienādos trijstūros.</p>
 <p><img alt="" src="LV.NOL.2019.8.3A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.8.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.8.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Nē, nevar. Izdarot gājienus, uz tāfeles uzrakstīto skaitļu reizinājums 
@@ -2707,8 +2630,8 @@ $\\frac{4}{3}, \\frac{4}{5}, \\frac{5}{2}$ reizinājums ir
 $\\frac{4}{3} \\cdot \\frac{4}{5} \\cdot \\frac{5}{2}=\\frac{8}{3}$, tad prasītais 
 nav iespējams.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.8.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.8.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Skaitlis dalās ar $3$ tad, ja tā ciparu summa dalās ar $3$. Tātad $(2x+y)$ 
@@ -2744,14 +2667,14 @@ $4$. Tātad $\\overline{xy}=10x+y$ dalās ar $4$.</p>
 <p>Ievērojam, ka $10x+y=8x+2x+y$. Tā kā $10x+y$ dalās ar $4$ un $8x$ dalās ar $4$,
 tad arī $(2x+y)$ ir jādalās ar $4$. Bet tas nozīmē, ka $(2x+y)$ ir jādalās ar 
 $12$, jo $3$ un $4$ ir savstarpēji pirmskaitļi. Ievērojot, ka $x$ un $y$ ir 
-cipari $(2x+y&lt;27)$, iespējami divi gadīumi:</p>
+cipari $(2x+y<27)$, iespējami divi gadīumi:</p>
 <ul>
 <li>ja $2x+y=12$ jeb $y=12-2x$, tad ievērojam, ka $x \\leq 5$, un pārbaudām visus 
   iespējamos gadījumus:</li>
 </ul>
 <p><img alt="" src="LV.NOL.2019.8.5A.png" /></p>
 <ul>
-<li>ja $2x+y=24$ jeb $y=24-2x$, tad ievērojam, ka $x&gt;7$, un pārbaudām abus 
+<li>ja $2x+y=24$ jeb $y=24-2x$, tad ievērojam, ka $x>7$, un pārbaudām abus 
   iespējamos gadījumus:</li>
 </ul>
 <p><img alt="" src="LV.NOL.2019.8.5B.png" /></p>
@@ -2759,8 +2682,8 @@ cipari $(2x+y&lt;27)$, iespējami divi gadīumi:</p>
 <p><em>Piezīme.</em> Uzdevumu var atrisināt, veicot pilno pārlasi, tas ir, pārbaudot 
 visus divciparu skaitļus $\\overline{xy}$, kas dalās ar $4$.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.9.1.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.9.1.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Dotā funkcija krusto $x$ asi punktā $(2; 0)$, ievietojot šīs vērtīas dotajā 
@@ -2784,8 +2707,8 @@ gadījumi:</p>
   pie $x$ ir negatīvs.</li>
 </ul>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.9.2.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.9.2.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Pirmajā svēršanā salī̀dzinām vienas sarkanās un vienas melnās lodītes masu.
@@ -2830,8 +2753,8 @@ atrodas uz vieglākā svaru kausa un nesvērto sarkano lodīti), atrodam vieglā
 vieglākā svaru kausa ar kādu no zaļajām.)</p>
 <p><img alt="" src="LV.NOL.2019.9.2B.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.9.2.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.NOL.2019.9.2.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Pirmajā svēršanā katrā kausā liekam no katras krāsas pa vienai lodītei (katrā 
@@ -2900,8 +2823,8 @@ kas sver $101~\\mathrm{g}$. Otrajā svēršanā salīdzinām abas melnās lodīt
      lodīte, kas sver $99~\\mathrm{g}$.</li>
 </ul>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.9.3.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.9.3.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Nezaudējot vispārīgumu, varam pieņemt, ka kvadrāta malas garums ir $1$. 
@@ -2938,17 +2861,21 @@ kvadrāta paralēlajām malām $BC$ un $AD$, tātad šo perpendikulu (apzīmēja
 attiecīgi ar $h_{BC}$ un $h_{AD}$) summa ir attālums starp paralēlajām malām, 
 no kā secinām, ka $h_{BC}+h_{AD}=1$. Izmantojot trijstūra laukuma aprēķināšanas
 formulu $S_{\\Delta}=\\frac{1}{2} ah_{a}$, iegūstam</p>
-<p>$$S_{OBF}+S_{OHD}=\\frac{1}{2} BF \\cdot h_{BF}+\\frac{1}{2} HD \\cdot h_{HD}=\\frac{1}{2} x \\cdot\\left(h_{BF}+h_{HD}\\right)=\\frac{1}{2} x \\cdot 1=\\frac{1}{2} x$$</p>
-<p>Līdzīgi aprēķinām, ka $S_{OBE}+S_{ODG}=\\frac{1}{2}(1-x)$.</p>
-<p>Tātad</p>
-<p>$$\\begin{gathered}
-S_{BFOE}+S_{DHOG}=S_{OBF}+S_{OHD}+S_{OBE}+S_{ODG}=\\frac{1}{2} x+\\frac{1}{2}(1-x)=\\frac{1}{2} \\
-S_{AEOH}+S_{FCGO}=S_{ABCD}-\\left(S_{BFOE}+S_{DHOG}\\right)=1-\\frac{1}{2}=\\frac{1}{2}
-\\end{gathered}$$</p>
-<p>Līdz ar to esam pierādijuši, ka $S_{AEOH}+S_{FCGO}=S_{BFOE}+S_{DHOG}$.</p>"""@lv .
+<p>$$S_{OBF}+S_{OHD}=\\frac{1}{2} BF \\cdot h_{BF}+\\frac{1}{2} HD \\cdot h_{HD}=\\frac{1}{2} x \\cdot\\left(h_{BF}+h_{HD}\\right)=\\frac{1}{2} x \\cdot 1=\\frac{1}{2} x$$
 
-eliozo:SOLN.LV.NOL.2019.9.3.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+Līdzīgi aprēķinām, ka $S_{OBE}+S_{ODG}=\\frac{1}{2}(1-x)$.
+
+Tātad
+
+$$\\begin{gathered}
+S_{BFOE}+S_{DHOG}=S_{OBF}+S_{OHD}+S_{OBE}+S_{ODG}=\\frac{1}{2} x+\\frac{1}{2}(1-x)=\\frac{1}{2} \\\\
+S_{AEOH}+S_{FCGO}=S_{ABCD}-\\left(S_{BFOE}+S_{DHOG}\\right)=1-\\frac{1}{2}=\\frac{1}{2}
+\\end{gathered}$$
+
+Līdz ar to esam pierādijuši, ka $S_{AEOH}+S_{FCGO}=S_{BFOE}+S_{DHOG}$.</p>"""@lv .
+
+eliozo:SOLN.LV.NOL.2019.9.3.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Novelkam nogriežņus $EF,\\ FG,\\ GH$ un $HE$ (skat. 23.att.). Trijstūri 
@@ -2977,17 +2904,21 @@ ir vienādi, tātad pietiek pierādīt, ka $S_{EOF}+S_{GOH}=S_{FOG}+S_{HOE}$. T�
 trijstūri $HAE,\\ EBF,\\ FCG$ un $GDH$ ir vienādi taisnleņķa trijstūri, tad 
 $EF=FG=GH=HE=a$ un divu trijstūra šauro leņķu summa ir $90^{\\circ}$, tas ir, 
 viens no tiem ir $\\alpha$, bet otrs ir $\\left(90^{\\circ}-\\alpha\\right)$. Tāpēc</p>
-<p>$$\\sphericalangle HEF=\\sphericalangle EFG=\\sphericalangle FGH=\\sphericalangle GHE=180^{\\circ}-\\alpha-\\left(90^{\\circ}-\\alpha\\right)=90^{\\circ}$$</p>
-<p>Līdz ar to četrstūris $EFGH$ ir kvadrāts.</p>
-<p>Izmantojot trijstūra laukuma aprēķināšanas formulu 
-$S_{\\Delta}=\\frac{1}{2} ah_{a}$, iegūstam</p>
-<p>$$S_{EOF}+S_{GOH}=\\frac{1}{2} EF \\cdot h_{EF}+\\frac{1}{2} GH \\cdot h_{GH}=\\frac{1}{2} a\\left(h_{EF}+h_{GH}\\right)=\\frac{1}{2} a^{2}$$</p>
-<p>Līdzīgi iegūstam, ka $S_{FOG}+S_{HOE}=\\frac{1}{2} a^{2}$. Tātad esam 
+<p>$$\\sphericalangle HEF=\\sphericalangle EFG=\\sphericalangle FGH=\\sphericalangle GHE=180^{\\circ}-\\alpha-\\left(90^{\\circ}-\\alpha\\right)=90^{\\circ}$$
+
+Līdz ar to četrstūris $EFGH$ ir kvadrāts.
+
+Izmantojot trijstūra laukuma aprēķināšanas formulu 
+$S_{\\Delta}=\\frac{1}{2} ah_{a}$, iegūstam
+
+$$S_{EOF}+S_{GOH}=\\frac{1}{2} EF \\cdot h_{EF}+\\frac{1}{2} GH \\cdot h_{GH}=\\frac{1}{2} a\\left(h_{EF}+h_{GH}\\right)=\\frac{1}{2} a^{2}$$
+
+Līdzīgi iegūstam, ka $S_{FOG}+S_{HOE}=\\frac{1}{2} a^{2}$. Tātad esam 
 pierādījuši, ka $S_{EOF}+S_{GOH}=S_{FOG}+S_{HOE}$, un līdz ar to arī 
 $S_{AEOH}+S_{FCGO}=S_{BFOE}+S_{DHOG}$.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.9.4.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.9.4.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 **a)** Nē, nav iespējams. Ievērojam, ka rindā vai kolonnā visu ierakstīto 
@@ -3018,16 +2949,18 @@ $k_{1}, k_{2}, \\ldots, k_{7}$. No dotā secinām, ka $i$-tajā rindā un $i$-ta
 kolonnā ierakstīto skaitļu reizinājumi ir attiecīgi $(+1)$ un $(-1)$, vai 
 otrādi. Līdz ar to 
 $r_{1} \\cdot k_{1}=r_{2} \\cdot k_{2}=\\ldots=r_{7} \\cdot k_{7}=-1$, tātad</p>
-<p>$$\\left(r_{1} \\cdot r_{2} \\ldots \\cdot r_{7}\\right) \\cdot\\left(k_{1} \\cdot k_{2} \\cdot \\ldots \\cdot k_{7}\\right)=\\left(r_{1} \\cdot k_{1}\\right)\\left(r_{2} \\cdot k_{2}\\right) \\ldots\\left(r_{7} \\cdot k_{7}\\right)=-1$$</p>
-<p>Taču šis reizinājums ir visu tabulā ierakstīto skaitļu reizinājuma kvadrāts - 
+<p>$$\\left(r_{1} \\cdot r_{2} \\ldots \\cdot r_{7}\\right) \\cdot\\left(k_{1} \\cdot k_{2} \\cdot \\ldots \\cdot k_{7}\\right)=\\left(r_{1} \\cdot k_{1}\\right)\\left(r_{2} \\cdot k_{2}\\right) \\ldots\\left(r_{7} \\cdot k_{7}\\right)=-1$$
+
+Taču šis reizinājums ir visu tabulā ierakstīto skaitļu reizinājuma kvadrāts - 
 pretruna, jo skaitļa kvadrāts ir nenegatīvs. Tātad kvadrātā $7 \\times 7$ nav 
-iespējams ierakstīt skaitļus atbilstoši uzdevuma nosacījumiem.</p>
-<p><strong>b)</strong> Jā, ir iespējams, noteikumiem atbilstošu skaitļu izvietojumu skat., 
+iespējams ierakstīt skaitļus atbilstoši uzdevuma nosacījumiem.
+
+**b)** Jā, ir iespējams, noteikumiem atbilstošu skaitļu izvietojumu skat., 
 piemēram, 24.att., kur tukšajās rūtiņās ierakstīts $(+1)$.</p>
 <p><img alt="" src="LV.NOL.2019.9.4A.png" /></p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.9.5.SUB0 a eliozo:Solution ;
-    eliozo:solutionNum 0 ;
+eliozo:SOLN.LV.NOL.2019.9.5.SUB1 a eliozo:Solution ;
+    eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
 Mazākais ciparu skaits, kas jāpieraksta ciparu virknes beigās, ir trīs. 
@@ -3055,16 +2988,16 @@ Piemēram, skaitlis $3456528$ dalās ar $2019$ ($3456528=2019 \\cdot 1712$).</p>
 beigās, lai izpildītos uzdevuma nosacījumi.</p>
 <p>Skaitlis $3456$ nedalās ar $2019$, tāpēc dotās virknes beigās ir jāpieraksta 
 vismaz viens cipars.</p>
-<p>Ievērojam, ka $17 \\cdot 2019=34323&lt;\\overline{3456x}$ un 
-$18 \\cdot 2019=36342&gt;\\overline{3456x}$, kur $x$ - cipars. Līdz ar to ar viena 
+<p>Ievērojam, ka $17 \\cdot 2019=34323<\\overline{3456x}$ un 
+$18 \\cdot 2019=36342>\\overline{3456x}$, kur $x$ - cipars. Līdz ar to ar viena 
 cipara pievienošanu nevar izveidot skaitli, kas dalās ar $2019$.</p>
-<p>Līdzīgi $171 \\cdot 2019=345249&lt;\\overline{3456xy}$ un 
-$172 \\cdot 2019=347268&gt;\\overline{3456xy}$, kur $x$ un $y$ - cipari. Līdz ar to 
+<p>Līdzīgi $171 \\cdot 2019=345249<\\overline{3456xy}$ un 
+$172 \\cdot 2019=347268>\\overline{3456xy}$, kur $x$ un $y$ - cipari. Līdz ar to 
 ar divu ciparu pievienošanu nevar izveidot skaitli, kas dalās ar $2019$.</p>
 <p>Tātad esam pierādījuši, ka jāpievieno vismaz trīs cipari.</p>"""@lv .
 
-eliozo:SOLN.LV.NOL.2019.9.5.SUB1 a eliozo:Solution ;
-    eliozo:solutionNum 1 ;
+eliozo:SOLN.LV.NOL.2019.9.5.SUB2 a eliozo:Solution ;
+    eliozo:solutionNum 2 ;
     eliozo:solutionText """## Atrisinājums
 
 Mazākais ciparu skaits, kas jāpieraksta ciparu virknes beigās, ir trīs. 

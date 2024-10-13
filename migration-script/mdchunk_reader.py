@@ -1,6 +1,13 @@
 import re
+import os
+import sys
 import markdown
 from collections import defaultdict
+# sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../eliozoapp/eliozo')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../eliozoapp/eliozo')))
+
+# from .webmd_utils import extract_latex, replace_placeholders, proc_markdown
+from webmd_utils import extract_latex, replace_placeholders, proc_markdown
 
 import rdflib
 from rdflib.namespace import RDF, FOAF, SKOS, XSD
@@ -48,7 +55,7 @@ def addSolutionToRdfProblem(g, title, i, solution_text, theLang):
     add_problem_literal_prop_lang(g, solution_node, 'solutionText', solution_text, theLang)
     add_problem_integer_prop(g, solution_node, 'solutionNum', i)
     add_problem_literal_prop_lang(g, solution_node, 'solutionTextHtml',
-                                  markdown.markdown(solution_text, extensions=['tables']), theLang)
+                                  proc_markdown(solution_text), theLang)
     problem_problemsolution_property = rdflib.URIRef(eliozo_ns + 'problemSolution')
     g.add((problem_node, problem_problemsolution_property, solution_node))
 
@@ -78,8 +85,8 @@ def extract_problem(text):
     return '\n'.join(problem_text)
 
 
-
-def extract_solutions(title, text):
+# Drop the question/meta portions from 'text'; leave only solutions.
+def extract_solution_part(text):
     # Drop the starting portion
     f1 = text.find('</small>')
     f2 = text.find('<text num=')
@@ -90,29 +97,49 @@ def extract_solutions(title, text):
         text = text[f2:]
     elif f3 >= 0:
         text = text[f3:]
+    return text
 
-    pattern1 = r'<text\s+num="[0-9]+"\s+lang="lv">'
-    regex1 = re.compile(pattern1)
-    match1 = regex1.search(text)
 
-    if not match1:
-        solutions = []
+def extract_solutions(title, text):
+    # # Drop the starting portion
+    # f1 = text.find('</small>')
+    # f2 = text.find('<text num=')
+    # f3 = text.find('## Atrisin')
+    # if f1 >= 0:
+    #     text = text[f1 + len('</small>'):]
+    # elif f2 >= 0:
+    #     text = text[f2:]
+    # elif f3 >= 0:
+    #     text = text[f3:]
+
+    # pattern1 = r'<text\s+num="[0-9]+"\s+lang="lv">'
+
+    m1 = text.find('<text num=')
+
+    # Plain list of solutions in Latvian; no delimiters
+    if m1 == -1:
+        solutions = dict()
         current_solution = []
         lines = text.split('\n')
+
+        ii = 0
         for line in lines:
             if re.fullmatch(r'## Atrisin.*', line):
                 # append the previous solution
                 if current_solution != []:
-                    solutions.append({'lv': '\n'.join(current_solution)})
+                    ii += 1
+                    solutions[ii] = {'lv': '\n'.join(current_solution)}
                 current_solution = [line]
             elif current_solution != []:
                 # before seeing the first title, we do not append anything
                 current_solution.append(line)
         # Append the last solution, when input ends
         if current_solution != []:
-            solutions.append({'lv': '\n'.join(current_solution)})
+            ii += 1
+            solutions[ii] = {'lv': '\n'.join(current_solution)}
         return solutions
 
+    # Solutions with delimiters
     else:
         pattern = r'<text\s+num="([0-9]+)"\s+lang="([a-z]+)">\s*(.*?)\s*</text>'
         # Compile the regex pattern
@@ -122,19 +149,20 @@ def extract_solutions(title, text):
         matches = regex.findall(text)
 
         # Initialize variables to store the results
-        result = []
+        result = dict()
         current_num = None
         current_dict = defaultdict(str)
 
         # Process each match
         for match in matches:
             num, lang, content = match
+            num = int(num)
 
             # Check if we've encountered a new "num" value
-            if num != current_num:
+            if not num in result:
                 # If there is an existing dictionary, add it to the result list
                 if current_dict:
-                    result.append(dict(current_dict))
+                    result[current_num] = current_dict
 
                 # Start a new dictionary for the new "num" value
                 current_dict = defaultdict(str)
@@ -145,7 +173,7 @@ def extract_solutions(title, text):
 
         # Don't forget to add the last dictionary to the result list
         if current_dict:
-            result.append(dict(current_dict))
+            result[current_num] = current_dict
 
         return result
 
@@ -201,7 +229,7 @@ def extract_sections_from_md(filepath):
 
     heading_re = re.compile(r'^#\s+<lo-sample/>\s+(.*)')
 
-    with open(filepath, 'r') as file:
+    with open(filepath, 'r', encoding='UTF-8') as file:
         for line in file:
             m = heading_re.match(line)
             if m:
@@ -221,19 +249,19 @@ def extract_sections_from_md(filepath):
 
 
 def remove_translation_tags(text):
+    result = {}
     lv_tag = '<text lang="lv">'
     if text.find(lv_tag) == -1:
         pattern = re.compile(r'<text lang=.*?>.*?</text>', re.DOTALL)
-        return {'lv': re.sub(pattern, '', text)}
-    else:
-        result = {}
-        pattern = r'<text lang="(?P<lang>\w+)">\s*(?P<content>.*?)\s*</text>'
-        matches = re.finditer(pattern, text, re.DOTALL)
-        for match in matches:
-            lang = match.group('lang')
-            content = match.group('content').strip()  # Strip any leading/trailing whitespace
-            result[lang] = content
-        return result
+        result['lv'] = re.sub(pattern, '', text)
+
+    pattern = r'<text lang="(?P<lang>\w+)">\s*(?P<content>.*?)\s*</text>'
+    matches = re.finditer(pattern, text, re.DOTALL)
+    for match in matches:
+        lang = match.group('lang')
+        content = match.group('content').strip()  # Strip any leading/trailing whitespace
+        result[lang] = content
+    return result
 
 
 def get_suffix(arg):
@@ -258,7 +286,7 @@ def get_olympiad_type(title):
         result = 'National'
     elif prefix2 in ['EE.TST', 'LT.TST', 'LV.TST']:
         result = 'TeamSelection'
-    elif prefix2.startswith('IMO_SHL'):
+    elif prefix2.startswith('WW'):
         result = 'International'
     elif prefix2.startswith('BBK2012'):
         result = 'Book'
@@ -271,7 +299,7 @@ def get_suggested_grade(title):
         return [int(suffix2)]
     if title.startswith('BBK2012'):
         return [9,10,11,12]
-    if title.startswith('IMO_SHL'):
+    if title.startswith('WW'):
         return [10,11,12]
     if title.startswith('EE.TST') or title.startswith('LT.TST') or title.startswith('LV.TST'):
         return [10,11,12]
@@ -287,17 +315,20 @@ def get_suggested_grade(title):
 def md_to_rdf(md_file_path, ttl_file_path):
     sections = extract_sections_from_md(md_file_path)
 
+    # sections = sections[0:1]
+
     g = rdflib.Graph()
     g.bind("foaf", FOAF)
     g.bind("skos", SKOS)
     g.bind("eliozo", ELIOZO)
 
-    olympiad_problem_id = re.compile(r"(EE|LV|LT)\.(\w+)\.(\d{4}[A-Z]?)\.([0-9_]+)\.(\d+)") # LV.AO.2000.7.1
+    olympiad_problem_id = re.compile(r"(EE|LV|LT|WW)\.(\w+)\.(\d{4}[A-Z]*)\.([0-9_]+)\.(\d+)") # LV.AO.2000.7.1
     book_problem_id = re.compile(r"([A-Z0-9]+)\.(.*)\.(\d+)")  # BBK2012.P1.1 or BBK2012.P1.E2.1 or similar
-    inter_problem_id = re.compile(r"(\w+)\.(\d{4}[A-Z]?)\.([A-Z])?(\d+)")   # IMO_SHL.2022.A2
+    inter_problem_id = re.compile(r"(\w+)\.(\d{4}[A-Z]*)\.([A-Z])?(\d+)")   # not in use.
 
     for i, (title,section) in enumerate(sections):
         title = title.strip()
+        section = section.strip()
         suffix = get_suffix(title)
         suggestGrade = get_suggested_grade(title)
         olympiadType = get_olympiad_type(title)
@@ -325,6 +356,7 @@ def md_to_rdf(md_file_path, ttl_file_path):
             add_problem_literal_prop(g, problem_node, 'country', country)
             add_problem_literal_prop(g, problem_node, 'olympiadCode', olympiad)
             add_problem_literal_prop(g, problem_node, 'olympiad', country + '.' + olympiad)
+            add_problem_literal_prop(g, problem_node, 'event', country + '.' + olympiad + '.' + timeID)
             add_problem_literal_prop(g, problem_node, 'suffix', suffix)
             add_problem_integer_prop(g, problem_node, 'problemYear', year)
             add_problem_literal_prop(g, problem_node, 'problemTimeID', timeID)
@@ -358,6 +390,7 @@ def md_to_rdf(md_file_path, ttl_file_path):
             add_problem_literal_prop(g, problem_node, 'olympiad', olympiad)
             add_problem_literal_prop(g, problem_node, 'olympiadCode', olympiad)
             add_problem_literal_prop(g, problem_node, 'country', '')
+            add_problem_literal_prop(g, problem_node, 'event', olympiad + '.' + timeID)
             add_problem_integer_prop(g, problem_node, 'problemYear', year)
             add_problem_literal_prop(g, problem_node, 'problemTimeID', timeID)
             add_problem_literal_prop(g, problem_node, 'suffix', suffix)
@@ -370,16 +403,14 @@ def md_to_rdf(md_file_path, ttl_file_path):
 
         # Get everything above <small>...</small> metadata block
         problem_text_md = extract_problem(section).strip()
+
+
         # return a dictionary of all problem translations
         # (Latvian text can be without <text lang="lv">)
         problem_text_dict = remove_translation_tags(problem_text_md)
 
-        # img_list = extract_images(problem_text_md)
-        # for (img_src, img_width) in img_list:
-        #     addImageToRDFGraph(g, title, img_src, img_width)
-
         for theLang, problem_text_md in problem_text_dict.items():
-            problem_text_html = markdown.markdown(problem_text_md, extensions=['tables']).strip()
+            problem_text_html = proc_markdown(problem_text_md).strip()
 
             add_problem_literal_prop_lang(g, problem_node, 'problemText', problem_text_md, theLang)
             add_problem_literal_prop_lang(g, problem_node, 'problemTextHtml', problem_text_html, theLang)
@@ -398,14 +429,24 @@ def md_to_rdf(md_file_path, ttl_file_path):
                 else:
                     add_problem_literal_prop(g, problem_node, k, vv)
 
-        solutions = extract_solutions(title,section)
-        for i, soln_text_dict in enumerate(solutions):
+
+        solution_part = extract_solution_part(section)
+
+        solutions = extract_solutions(title,solution_part)
+
+        # print("8888888888888888888888888888888888")
+        # print(solution_part)
+        # print("9999999999999999999999999999999999")
+        # print(solutions)
+        # print("0000000000000000000000000000000000")
+
+        for i, soln_text_dict in solutions.items():
             for theLang, soln_text in soln_text_dict.items():
                 soln_text = soln_text.strip()
                 addSolutionToRdfProblem(g, title, i, soln_text, theLang)
-                img_list = extract_images(soln_text)
-                for (img_src, img_width) in img_list:
-                    addImageToRDFGraph(g, title, img_src, img_width)
+                # img_list = extract_images(soln_text)
+                # for (img_src, img_width) in img_list:
+                #     addImageToRDFGraph(g, title, img_src, img_width)
     g.serialize(destination=ttl_file_path)
 
 

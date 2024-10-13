@@ -10,13 +10,13 @@
             <p>Olimpiādes uzdevumi pa gadiem un klasēm</p>
 
             <table>
-            {% for year in all_years %}
+            {% for event in all_events %}
             <tr>
-                <th style="font-weight:bold"><a href="{{ url_for('getGrades',year=year,grade=-1,country=country_id,olympiad=olympiad_id) }}">{{ year }}</a>:&nbsp;</th>
+                <th style="font-weight:bold"><a href="{{ url_for('getGrades',event=event,grade=-1,country=country_id,olympiad=olympiad_id) }}">{{ event }}</a>:&nbsp;</th>
                 <td>
                     {% for grade in range(5,13) %}
-                    {% if all_grades[year][grade-5] != 'NA' %}
-                    <a href="{{ url_for('getGrades',year=year,grade=grade,country=country_id,olympiad=olympiad_id) }}">{{ grade }}</a>
+                    {% if all_grades[event][grade-5] != 'NA' %}
+                    <a href="{{ url_for('getGrades',event=event,grade=grade,country=country_id,olympiad=olympiad_id) }}">{{ grade }}</a>
                     {% endif %}
                     {% endfor %}
                 </td>

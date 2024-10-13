@@ -4,6 +4,7 @@
 eliozo:LT.TST.2008.12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2008" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -23,6 +24,7 @@ eliozo:LT.TST.2008.12.1 a eliozo:Problem ;
 eliozo:LT.TST.2009.12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2009" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -47,17 +49,20 @@ $$x^3 + x^2 = 2^y + 16.$$
 **(b)** Atrodiet visus pārējos šī vienādojuma naturālo risinājumu pārus $(x;y)$
 $(x; y)$, ja tādi ir, vai pierādiet, ka citu atrisinājumu nav."""@lv ;
     eliozo:problemTextHtml """<p>Duota lygtis</p>
-<p>$$x^3 + x^2 = 2^y + 16.$$</p>
-<p><strong>(A)</strong> Nurodykite kokią nors vieną tos lygties sveikujų 
-teigiamų sprendinių $x$ ir $y$ porą $(x; y)$;  </p>
-<p><strong>(B)</strong> Raskite visas (likusias)
+<p>$$x^3 + x^2 = 2^y + 16.$$
+
+**(A)** Nurodykite kokią nors vieną tos lygties sveikujų 
+teigiamų sprendinių $x$ ir $y$ porą $(x; y)$;  
+
+**(B)** Raskite visas (likusias)
 tos lygties sveikųjų teigiamų sprendinių poras
 $(x; y)$, jeigu jų apskritai esama, arba įrodykite, 
 kad daugiau (jokių) sprendinių nėra.</p>"""@lt,
         """<p>Dots vienādojums</p>
-<p>$$x^3 + x^2 = 2^y + 16.$$</p>
-<p><strong>(A)</strong> Atrodiet kādu vienu šī vienādojuma naturālu atrisinājumu $x$ un $y$ pāri $(x;y)$<br />
-<strong>(b)</strong> Atrodiet visus pārējos šī vienādojuma naturālo risinājumu pārus $(x;y)$
+<p>$$x^3 + x^2 = 2^y + 16.$$
+
+**(A)** Atrodiet kādu vienu šī vienādojuma naturālu atrisinājumu $x$ un $y$ pāri $(x;y)$  
+**(b)** Atrodiet visus pārējos šī vienādojuma naturālo risinājumu pārus $(x;y)$
 $(x; y)$, ja tādi ir, vai pierādiet, ka citu atrisinājumu nav.</p>"""@lv ;
     eliozo:problemTimeID "2009" ;
     eliozo:problemYear 2009 ;
@@ -70,6 +75,7 @@ $(x; y)$, ja tādi ir, vai pierādiet, ka citu atrisinājumu nav.</p>"""@lv ;
 eliozo:LT.TST.2010.12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2010" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -95,17 +101,17 @@ x^5 + y^5 = u^5 + 12.
 \\right.$$"""@lv ;
     eliozo:problemTextHtml """<p>Raskite visus natūraliųjų skaičių trejetus $(x,y,u)$, 
 tenkinančius lygčių sistemą</p>
-<p>$$\\left{ 
+<p>$$\\left\\{ 
 \\begin{array}{l}
-x + y = u + 12;\\
+x + y = u + 12;\\\\
 x^5 + y^5 = u^5 + 12.
 \\end{array}
 \\right.$$</p>"""@lt,
         """<p>Atrodiet visus naturālu skaitļu trijniekus $(x,y,u)$, 
 kas apmierina vienādojumu sistēmu</p>
-<p>$$\\left{ 
+<p>$$\\left\\{ 
 \\begin{array}{l}
-x + y = u + 12;\\
+x + y = u + 12;\\\\
 x^5 + y^5 = u^5 + 12.
 \\end{array}
 \\right.$$</p>"""@lv ;
@@ -119,6 +125,7 @@ x^5 + y^5 = u^5 + 12.
 eliozo:LT.TST.2011.12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LT.TST.2011" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -160,6 +167,7 @@ Kāda ir mazākā iespējamā $n$ vērtība?</p>"""@lv ;
 eliozo:LT.TST.2011.12.6 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2011" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -184,7 +192,7 @@ Atrodiet kopas $S(m,n)$ elementu skaitu, ja
     eliozo:problemTextHtml """<p>Tegul $m \\geq 2$ ir $n$ yra natūralieji skaičiai. 
 Aibę $S(m,n)$ sudaro visi daugianariai $P(x)$,
 kurių koeficientai priklauso aibei 
-${ 0,1,2,\\ldots,m^2 − 1}$, tenkinantys sąlygą $P(m) = n$.
+$\\{ 0,1,2,\\ldots,m^2 − 1\\}$, tenkinantys sąlygą $P(m) = n$.
 Raskite aibės $S(m,n)$ elementų skaičių, kai<br />
 <strong>(A)</strong> $n = 10m$;<br />
 <strong>(B)</strong> $n = m^2$;<br />
@@ -192,7 +200,7 @@ Raskite aibės $S(m,n)$ elementų skaičių, kai<br />
         """<p>Doti naturāli skaitļi $m \\geq 2$ un $n$. 
 Kopu $S(m,n)$ veido visi polinomi $P(x)$,
 kuru koeficienti pieder kopai 
-${ 0,1,2,\\ldots,m^2 − 1}$, kas apmierina nosacījumu $P(m) = n$.
+$\\{ 0,1,2,\\ldots,m^2 − 1\\}$, kas apmierina nosacījumu $P(m) = n$.
 Atrodiet kopas $S(m,n)$ elementu skaitu, ja<br />
 <strong>(A)</strong> $n = 10m$;<br />
 <strong>(B)</strong> $n = m^2$;<br />
@@ -207,6 +215,7 @@ Atrodiet kopas $S(m,n)$ elementu skaitu, ja<br />
 eliozo:LT.TST.2012.12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2012" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -252,6 +261,7 @@ iespējamās divu ciparu kombinācijas $00,01,\\ldots,98,99$?</p>"""@lv ;
 eliozo:LT.TST.2012.12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LT.TST.2012" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -290,7 +300,7 @@ sveikojo skaičiaus kubą, neviršijantį $m$,
 pažymėkime $f(m)$. Pavyzdžiui, $f(26) = 8$ ir $f(27) = 27$. 
 Duota natūraliųjų skaičių
 seka $a_1,a_2,a_3,\\ldots$, kur $a_{n+1} = 3a_n − 2f(a_n)$ 
-su kiekvienu $n &gt; 1$.<br />
+su kiekvienu $n > 1$.<br />
 <strong>(A)</strong> Raskite bent vieną pirmojo nario $a_1$ 
 reikšmę intervale $[2012,3000]$, kuriai egzistuoja 
 toks skaičius $M$ (priklausantis tik nuo $a_1$), 
@@ -304,7 +314,7 @@ kas nepārsniedz $m$, apzīmējam ar $f(m)$.
 Piemēram, $f(26) = 8$ un $f(27) = 27$. 
 Dota naturālu skaitļu virkne 
 $a_1,a_2,a_3,\\ldots$, kur $a_{n+1} = 3a_n − 2f(a_n)$ 
-katram $n &gt; 1$.<br />
+katram $n > 1$.<br />
 <strong>(A)</strong> Atrodiet kaut vienu pirmā skaitļa $a_1$ 
 vērtību intervālā $[2012,3000]$, kam eksistē 
 tāds skaitlis $M$ (atkarīgs tikai no $a_1$), 
@@ -324,6 +334,7 @@ $n \\geq 1$.</p>"""@lv ;
 eliozo:LT.TST.2012.12.6 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LT.TST.2012" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -377,6 +388,7 @@ tādās apakškopās, ja $k \\geq 4$.</p>"""@lv ;
 eliozo:LT.TST.2013.12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2013" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -420,6 +432,7 @@ $c^2 + d^2$ lielākais kopīgais dalītājs var būt vienāds ar:<br />
 eliozo:LT.TST.2013.12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LT.TST.2013" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -449,6 +462,7 @@ $m$ ir vesels skaitlis.</p>"""@lv ;
 eliozo:LT.TST.2013.12.6 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LT.TST.2013" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -476,18 +490,18 @@ realieji skaičiai, o $n$ – natūralusis
 skaičius, vadinsime {\\em tobulu}, jei
 $$\\sqrt{x} + \\sqrt{y} + \\sqrt{z} = 1$$
 ir $\\sqrt{x + n} + \\sqrt{y + n} + \\sqrt{z + n}$ 
-yra sveikasis skaičius.<br />
-<strong>(A)</strong> Raskite bent vieną tobulą ketvertą $(x,y,z,n)$, 
-kuriame $n &gt; 2013$.<br />
-<strong>(B)</strong> Raskite visus tobulus ketvertus $(x,y,z,n)$.</p>"""@lt,
+yra sveikasis skaičius.  
+**(A)** Raskite bent vieną tobulą ketvertą $(x,y,z,n)$, 
+kuriame $n &gt; 2013$.  
+**(B)** Raskite visus tobulus ketvertus $(x,y,z,n)$.</p>"""@lt,
         """<p>Četrinieku $(x,y,z,n)$, kur $x,y,z$ ir pozitīvi reāli skaitļi, 
 bet $n$ – naturāls skaitlis, sauksim par <em>pilnīgu</em>, ja
 $$\\sqrt{x} + \\sqrt{y} + \\sqrt{z} = 1$$
 un $\\sqrt{x + n} + \\sqrt{y + n} + \\sqrt{z + n}$ 
-ir vesels skaitlis.<br />
-<strong>(A)</strong> Atrodiet kaut vienu pilnīgu četrinieku $(x,y,z,n)$, 
-kurā $n &gt; 2013$.<br />
-<strong>(B)</strong> Atrodiet visus pilnīgos četriniekus $(x,y,z,n)$.</p>"""@lv ;
+ir vesels skaitlis.  
+**(A)** Atrodiet kaut vienu pilnīgu četrinieku $(x,y,z,n)$, 
+kurā $n &gt; 2013$.  
+**(B)** Atrodiet visus pilnīgos četriniekus $(x,y,z,n)$.</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number 6 ;
@@ -499,6 +513,7 @@ kurā $n &gt; 2013$.<br />
 eliozo:LT.TST.2014.12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2014" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -543,6 +558,7 @@ veido $11$ dažādi naturāli skaitļi?</p>"""@lv ;
 eliozo:LT.TST.2014.12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2014" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -582,6 +598,7 @@ vienāda ar $3$?</p>"""@lv ;
 eliozo:LT.TST.2014.12.5 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LT.TST.2014" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -660,6 +677,7 @@ $\\sqrt{5}$.)</p>"""@lv ;
 eliozo:LT.TST.2015.12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2015" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -695,6 +713,7 @@ piemēram, $4! = 1 \\cdot 2 \\cdot 3 \\cdot 4 = 24$.)</p>"""@lv ;
 eliozo:LT.TST.2015.12.5 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LT.TST.2015" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -727,7 +746,7 @@ Kāds ir lielākais iespējamais elementu skaits kopu apvienojumā  $A \\cup B$?
 (Kopu $A \\cup B$ veido elementi, kuri pieder vismaz vienai 
 no kopām $A$ un $B$.)"""@lv ;
     eliozo:problemTextHtml """<p>Aibės $A$ ir $B$ yra natūraliųjų skaičių aibės 
-${ 1,2,3,\\ldots }$ poaibiai, pasižymintys 
+$\\{ 1,2,3,\\ldots \\}$ poaibiai, pasižymintys 
 tokiomis dviem savybėmis:</p>
 <p>a. Bet kurių dviejų skirtingų aibės $A$ elementų 
    $x$ ir $y$ suma $x + y$ priklauso aibei $B$.<br />
@@ -738,7 +757,7 @@ b. Bet kurių dviejų skirtingų aibės $B$ elementų
 (Aibę $A \\cup B$ sudaro elementai, priklausantys bent 
 vienai iš dviejų aibių $A$ ir $B$.)</p>"""@lt,
         """<p>Kopas $A$ un $B$ ir naturālo skaitļu kopas 
-${ 1,2,3,\\ldots }$ apakškopas, kam piemīt šādas
+$\\{ 1,2,3,\\ldots \\}$ apakškopas, kam piemīt šādas
 divas īpašības:</p>
 <p>a. Jebkuru divu dažādu kopas $A$ elementu $x$ un 
    $y$ summa $x+y$ pieder kopai $B$. <br />
@@ -758,6 +777,7 @@ no kopām $A$ un $B$.)</p>"""@lv ;
 eliozo:LT.TST.2016.12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2016" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -785,6 +805,7 @@ naturālos atrisinājumus $(a,b,c,d)$.</p>"""@lv ;
 eliozo:LT.TST.2017.12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2017" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -800,15 +821,15 @@ jebkuri divi šīs kopas elementi ir savstarpēji pirmskaitļi.
 Atrodiet mazāko naturālo $n$, ka jebkurai vienkāršai kopai, kas ir kopas
 $S = \\{1, 2, \\ldots, 2017\\}$ apakškopa un kurā ir tieši $n$ elementu, noteikti
 pieder kaut viens pirmskaitlis."""@lv ;
-    eliozo:problemTextHtml """<p>Aibę, sudarytą iš $m &gt; 2$ natūraliųjų skaičių, vadiname <em>paprasta</em>, jei bet
+    eliozo:problemTextHtml """<p>Aibę, sudarytą iš $m > 2$ natūraliųjų skaičių, vadiname <em>paprasta</em>, jei bet
 kurie du tos aibės elementai yra tarpusavyje pirminiai skaičiai. Raskite
 mažiausią natūralųjį skaičių $n$, kad bet kuriai paprastai aibei, kuri yra
-aibės $S = {1, 2, \\ldots, 2017}$ poaibis ir kuri turi lygiai $n$ elementų, visada
+aibės $S = \\{1, 2, \\ldots, 2017\\}$ poaibis ir kuri turi lygiai $n$ elementų, visada
 priklausytų bent vienas pirminis skaičius.</p>"""@lt,
-        """<p>Kopu, ko veido $m &gt; 2$ naturāli skaitļi, sauksim par <em>vienkāršu</em>, ja 
+        """<p>Kopu, ko veido $m > 2$ naturāli skaitļi, sauksim par <em>vienkāršu</em>, ja 
 jebkuri divi šīs kopas elementi ir savstarpēji pirmskaitļi. 
 Atrodiet mazāko naturālo $n$, ka jebkurai vienkāršai kopai, kas ir kopas
-$S = {1, 2, \\ldots, 2017}$ apakškopa un kurā ir tieši $n$ elementu, noteikti
+$S = \\{1, 2, \\ldots, 2017\\}$ apakškopa un kurā ir tieši $n$ elementu, noteikti
 pieder kaut viens pirmskaitlis.</p>"""@lv ;
     eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
@@ -820,6 +841,7 @@ pieder kaut viens pirmskaitlis.</p>"""@lv ;
 eliozo:LT.TST.2017.12.3 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LT.TST.2017" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -844,7 +866,7 @@ $P(16) = 3^{2012}$.
 **(A)** Pierādiet, ka $Q(3^{2012}) \\neq 0$.  
 **(B)** Atrodiet mazāko iespējamo izteiksmes $|Q(3^{2012}|$ vērtību."""@lv ;
     eliozo:problemTextHtml """<p>Du daugianarius su sveikaisiais koeficientais $A(x) = a_nx^n+\\ldots+a_1x+a_0$
-ir $B(x) = b_mx^m + \\ldots + b_1x + b_0$ (čia $m, n &gt; 0$ ir $a_n, b_m \\neq 0$) vadiname
+ir $B(x) = b_mx^m + \\ldots + b_1x + b_0$ (čia $m, n > 0$ ir $a_n, b_m \\neq 0$) vadiname
 <em>panašiaisiais</em>, jei $m = n$ ir jei rinkiniuose 
 $a_0,a_1,\\ldots,a_n$ ir $b_0,b_1,\\ldots,b_n$
 kiekvienas sveikasis skaičius sutinkamas po tiek pat kartų.
@@ -853,7 +875,7 @@ $P(16) = 3^{2012}$.<br />
 <strong>(A)</strong> Įrodykite, kad $Q(3^{2012}) \\neq 0$.<br />
 <strong>(B)</strong> Raskite mažiausią galimą $|Q(3^{2012}|$ reikšmę.</p>"""@lt,
         """<p>Divus polinomus ar veseliem koeficientiem $A(x) = a_nx^n+\\ldots+a_1x+a_0$ un
-$B(x) = b_mx^m + \\ldots + b_1x + b_0$ (šeit $m, n &gt; 0$ un $a_n, b_m \\neq 0$) sauksim par 
+$B(x) = b_mx^m + \\ldots + b_1x + b_0$ (šeit $m, n > 0$ un $a_n, b_m \\neq 0$) sauksim par 
 <em>līdzīgiem</em>, ja $m = n$ un ja abos skaitļu sarakstos
 $a_0,a_1,\\ldots,a_n$ un $b_0,b_1,\\ldots,b_n$
 ikviens vesels skaitlis ir sastopams vienādu skaitu reižu.
@@ -872,6 +894,7 @@ $P(16) = 3^{2012}$.<br />
 eliozo:LT.TST.2017.12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2017" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -893,20 +916,20 @@ visi naturālie skaitļi $n$, kuriem $p^kq^{\\ell}n$ dalās ar $p + n$.
 **(D)** Vai eksistē pirmskaitļu pāris $p > q$, kuram $|A| = 127$, kad
 $k = \\ell = 10$?  
 (Šeit $|A|$ apzīmē kopas $A$ elementu skaitu.)"""@lv ;
-    eliozo:problemTextHtml """<p>Duoti pirminiai skaičiai $p &gt; q$ ir natūralieji skaičiai $k,\\ell$. Aibę $A$ sudaro
+    eliozo:problemTextHtml """<p>Duoti pirminiai skaičiai $p > q$ ir natūralieji skaičiai $k,\\ell$. Aibę $A$ sudaro
 visi natūralieji skaičiai $n$, su kuriais $p^kq^{\\ell}n$ dalijasi iš $p + n$.<br />
 <strong>(A)</strong> Įrodykite, kad $|A| \\geq 1$.<br />
 <strong>(B)</strong> Įrodykite, kad $|A| \\geq k\\ell + k + \\ell$.<br />
 <strong>(C)</strong> Įrodykite, kad $|A| \\leq k\\ell + k + 2\\ell − 1$.<br />
-<strong>(D)</strong> Ar egzistuoja pirminių skaičių pora $p &gt; q$, su kuria $|A| = 127$, kai
+<strong>(D)</strong> Ar egzistuoja pirminių skaičių pora $p > q$, su kuria $|A| = 127$, kai
 $k = \\ell = 10$?<br />
 (Čia $|A|$ žymi aibės $A$ elementų skaičių.)</p>"""@lt,
-        """<p>Doti pirmskaitļi $p &gt; q$ un naturāli skaitļi $k,\\ell$. Kopu $A$ veido
+        """<p>Doti pirmskaitļi $p > q$ un naturāli skaitļi $k,\\ell$. Kopu $A$ veido
 visi naturālie skaitļi $n$, kuriem $p^kq^{\\ell}n$ dalās ar $p + n$.<br />
 <strong>(A)</strong> Pierādiet, ka $|A| \\geq 1$.<br />
 <strong>(B)</strong> Pierādiet, ka $|A| \\geq k\\ell + k + \\ell$.<br />
 <strong>(C)</strong> Pierādiet, ka $|A| \\leq k\\ell + k + 2\\ell − 1$.<br />
-<strong>(D)</strong> Vai eksistē pirmskaitļu pāris $p &gt; q$, kuram $|A| = 127$, kad
+<strong>(D)</strong> Vai eksistē pirmskaitļu pāris $p > q$, kuram $|A| = 127$, kad
 $k = \\ell = 10$?<br />
 (Šeit $|A|$ apzīmē kopas $A$ elementu skaitu.)</p>"""@lv ;
     eliozo:problemTimeID "2017" ;
@@ -920,6 +943,7 @@ $k = \\ell = 10$?<br />
 eliozo:LT.TST.2018.12.3 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2018" ;
     eliozo:genre "SpecialNumbers" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
@@ -977,6 +1001,7 @@ $a_1 = 1$. Skaitļiem $a_1,\\ldots,a_n$ nav noteikti jābūt dažādiem.)<br />
 eliozo:LT.TST.2018.12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "Alg" ;
+    eliozo:event "LT.TST.2018" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -1008,6 +1033,7 @@ bet skaitļa $\\pi = 3,14\\ldots$ vienu cipars ir $3$.)</p>"""@lv ;
 eliozo:LT.TST.2019.12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2019" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;
     eliozo:olympiadType "TeamSelection" ;
@@ -1036,7 +1062,7 @@ kad kiekvienas iš skaičių $b_1, b_2, b_3, \\ldots$ būtų<br />
 <strong>(B)</strong> natūraliojo skaičiaus kubas?</p>"""@lt,
         """<p>Mīkolas izdomāja naturālu skaitļu virkni $a_1,a_2,a_3,\\ldots$, 
 bet tad definēja jaunu virkni $b_1, b_2, b_3,\\ldots$ ar šādām vienādībām:
-$$b_1 = a_1,\\;\\;b_2 = a_2, b_n = a_nb_{n-1} + b_{n-2}\\;\\;\\text{visiem}\\;\\;n &gt; 3.$$
+$$b_1 = a_1,\\;\\;b_2 = a_2, b_n = a_nb_{n-1} + b_{n-2}\\;\\;\\text{visiem}\\;\\;n > 3.$$
 Vai Mīkolas varēja izvēlēties sākotnējo virkni $a_1, a_2, a_3,\\ldots$ tā, 
 ka jebkurš no skaitļiem $b_1, b_2, b_3, \\ldots$ būtu<br />
 <strong>(A)</strong> naturāla skaitļa kvadrāts?<br />
@@ -1051,6 +1077,7 @@ ka jebkurš no skaitļiem $b_1, b_2, b_3, \\ldots$ būtu<br />
 eliozo:LT.TST.2019.12.5 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
+    eliozo:event "LT.TST.2019" ;
     eliozo:genre "SpecialNumbers" ;
     eliozo:olympiad "LT.TST" ;
     eliozo:olympiadCode "TST" ;

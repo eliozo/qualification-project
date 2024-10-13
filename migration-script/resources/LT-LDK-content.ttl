@@ -3,6 +3,7 @@
 
 eliozo:LT.LDK.2009.9_12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2009" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -35,6 +36,7 @@ tā decimālpieraksta ciparu summa vienāda ar $2009$.<br />
 
 eliozo:LT.LDK.2009.9_12.5 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2009" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -71,6 +73,7 @@ var iegūt tabulu, kur visi elementi ir nulles.</p>"""@lv ;
 
 eliozo:LT.LDK.2010.9_12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2010" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -97,6 +100,7 @@ $$\\frac{1}{a_1}+\\frac{2}{a_2}+\\cdots+\\frac{n}{a_n}=\\frac{a_1 + a_2 + \\cdot
 
 eliozo:LT.LDK.2010.9_12.5 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2010" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -131,6 +135,7 @@ ir $2$, $0$, $0$, $9$ kaut kādā secībā.</p>"""@lv ;
 
 eliozo:LT.LDK.2011.9_12.1 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2011" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -161,6 +166,7 @@ ir pilns kvadrāts? Kāpēc?</p>"""@lv ;
 
 eliozo:LT.LDK.2011.9_12.3 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2011" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -183,6 +189,7 @@ $p^3 - q^7 = p-q$.</p>"""@lv ;
 
 eliozo:LT.LDK.2011.9_12.5 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2011" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -195,11 +202,11 @@ possible."""@en,
         """Naturāli skaitļi $1,2,3,\\ldots,n$ ir uzrakstīti uz tāfeles ($n > 2$). Katru 
 minūti divus skaitļus nodzēš un to vietā uzraksta to summas mazāko pirmreizinātāju. 
 Beigās paliek tikai skaitlis $97$. Atrast mazāko $n$, kuram tasir iespējams."""@lv ;
-    eliozo:problemTextHtml """<p>Positive integers $1,2,3,\\ldots,n$ are written on a blackboard ($n &gt; 2$). Every
+    eliozo:problemTextHtml """<p>Positive integers $1,2,3,\\ldots,n$ are written on a blackboard ($n > 2$). Every
 minute two numbers are erased and the least prime divisor of their sum is
 written. In the end only the number $97$ remains. Find the least $n$ for which it is
 possible.</p>"""@en,
-        """<p>Naturāli skaitļi $1,2,3,\\ldots,n$ ir uzrakstīti uz tāfeles ($n &gt; 2$). Katru 
+        """<p>Naturāli skaitļi $1,2,3,\\ldots,n$ ir uzrakstīti uz tāfeles ($n > 2$). Katru 
 minūti divus skaitļus nodzēš un to vietā uzraksta to summas mazāko pirmreizinātāju. 
 Beigās paliek tikai skaitlis $97$. Atrast mazāko $n$, kuram tasir iespējams.</p>"""@lv ;
     eliozo:problemTimeID "2011" ;
@@ -211,6 +218,7 @@ Beigās paliek tikai skaitlis $97$. Atrast mazāko $n$, kuram tasir iespējams.<
 
 eliozo:LT.LDK.2012.9_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2012" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -239,6 +247,7 @@ $n \\in \\mathbb{N}$.</p>"""@lv ;
 
 eliozo:LT.LDK.2013.9_12.3 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2013" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -287,6 +296,7 @@ spēlētājs $A$ izdara pirmo gājienu.</p>"""@lv ;
 
 eliozo:LT.LDK.2013.9_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2013" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -304,7 +314,7 @@ Atrodiet visus savdabīgos skaitļus."""@lv ;
 $${n \\choose i} + {n \\choose j} - i - j$$
 is even for all integers $i$ and $j$ such that $0 \\leq i \\leq j \\leq n$.
 Determine all peculiar numbers.</p>"""@en,
-        """<p>Naturālu skaitli $n&gt;2$ saucam par <em>savdabīgu</em>, ja skaitlis 
+        """<p>Naturālu skaitli $n>2$ saucam par <em>savdabīgu</em>, ja skaitlis 
 $${n \\choose i} + {n \\choose j} - i - j$$
 ir pāru skaitlis visiem $i$ un $j$ tādiem, ka $0 \\leq i \\leq j \\leq n$.
 Atrodiet visus savdabīgos skaitļus.</p>"""@lv ;
@@ -317,6 +327,7 @@ Atrodiet visus savdabīgos skaitļus.</p>"""@lv ;
 
 eliozo:LT.LDK.2014.9_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2014" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -328,12 +339,12 @@ $n$ satisfying $D(n) < n$."""@en,
         """Noteikt visus naturālos skaitļus $n > 1$, kuriem $n+D(n)$ ir skaitļa
 $10$ pakāpe, kur $D(n)$ apzīmē lielāko skaitļa $n$ dalītāju, kuram 
 $D(n) < n$."""@lv ;
-    eliozo:problemTextHtml """<p>Determine all positive integers $n &gt; 1$ for which $n+D(n)$ is a
+    eliozo:problemTextHtml """<p>Determine all positive integers $n > 1$ for which $n+D(n)$ is a
 power of $10$, where $D(n)$ denotes the largest integer divisor of
-$n$ satisfying $D(n) &lt; n$.</p>"""@en,
-        """<p>Noteikt visus naturālos skaitļus $n &gt; 1$, kuriem $n+D(n)$ ir skaitļa
+$n$ satisfying $D(n) < n$.</p>"""@en,
+        """<p>Noteikt visus naturālos skaitļus $n > 1$, kuriem $n+D(n)$ ir skaitļa
 $10$ pakāpe, kur $D(n)$ apzīmē lielāko skaitļa $n$ dalītāju, kuram 
-$D(n) &lt; n$.</p>"""@lv ;
+$D(n) < n$.</p>"""@lv ;
     eliozo:problemTimeID "2014" ;
     eliozo:problemYear 2014 ;
     eliozo:problem_number 4 ;
@@ -343,6 +354,7 @@ $D(n) &lt; n$.</p>"""@lv ;
 
 eliozo:LT.LDK.2015.9_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2015" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -379,25 +391,27 @@ $$\\begin{array}{rcl}
 $(\\ldots)$. (For example, $\\mbox{gcd}(4, 6, 8)=2$ and $\\mbox{gcd}(12, 15)=3$.) Suppose that
 positive integers $a,b,c$ satisfy the following four conditions:</p>
 <p>$$\\begin{array}{rcl}
-gcd(a, b, c) &amp; = &amp; 1, \\
-gcd(a, b + c) &amp; &gt; &amp; 1, \\
-gcd(b, c + a) &amp; &gt; &amp; 1, \\
-gcd(c, a + b) &amp; &gt; &amp; 1. \\
-\\end{array}$$</p>
-<p><strong>(A)</strong> Is it possible that $a + b + c = 2015$?<br />
-<strong>(B)</strong> Determine the minimum possible value that the sum $a+b+c$ can
+gcd(a, b, c) & = & 1, \\\\
+gcd(a, b + c) & > & 1, \\\\
+gcd(b, c + a) & > & 1, \\\\
+gcd(c, a + b) & > & 1. \\\\
+\\end{array}$$
+
+**(A)** Is it possible that $a + b + c = 2015$?  
+**(B)** Determine the minimum possible value that the sum $a+b+c$ can
 take.</p>"""@en,
         """<p>Ar $\\mbox{LKD}(\\ldots)$ apzīmē skaitļu
 $(\\ldots)$ lielāko kopīgo dalītāju. 
 Naturāli skaitļi $a,b,c$ apmierina četrus nosacījumus:</p>
 <p>$$\\begin{array}{rcl}
-\\mbox{LKD}(a, b, c) &amp; = &amp; 1, \\
-\\mbox{LKD}(a, b + c) &amp; &gt; &amp; 1, \\
-\\mbox{LKD}(b, c + a) &amp; &gt; &amp; 1, \\
-\\mbox{LKD}(c, a + b) &amp; &gt; &amp; 1. \\
-\\end{array}$$</p>
-<p><strong>(A)</strong> Vai ir iespējams, ka $a + b + c = 2015$?<br />
-<strong>(B)</strong> Noteikt mazāko iespējamo vērtību summai $a+b+c$.</p>"""@lv ;
+\\mbox{LKD}(a, b, c) & = & 1, \\\\
+\\mbox{LKD}(a, b + c) & > & 1, \\\\
+\\mbox{LKD}(b, c + a) & > & 1, \\\\
+\\mbox{LKD}(c, a + b) & > & 1. \\\\
+\\end{array}$$
+
+**(A)** Vai ir iespējams, ka $a + b + c = 2015$?  
+**(B)** Noteikt mazāko iespējamo vērtību summai $a+b+c$.</p>"""@lv ;
     eliozo:problemTimeID "2015" ;
     eliozo:problemYear 2015 ;
     eliozo:problem_number 4 ;
@@ -407,6 +421,7 @@ Naturāli skaitļi $a,b,c$ apmierina četrus nosacījumus:</p>
 
 eliozo:LT.LDK.2016.9_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2016" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -429,6 +444,7 @@ $7^n−1$ dalās ar $6^n−1$.</p>"""@lv ;
 
 eliozo:LT.LDK.2017.9_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2017" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;
@@ -461,6 +477,7 @@ $840 = 2^3 \\cdot 3 \\cdot 5 \\cdot 7$ tādu ir trīs.)</p>"""@lv ;
 
 eliozo:LT.LDK.2018.9_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
+    eliozo:event "LT.LDK.2018" ;
     eliozo:olympiad "LT.LDK" ;
     eliozo:olympiadCode "LDK" ;
     eliozo:olympiadType "Contest" ;

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S73XXGK0ZP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-S73XXGK0ZP');
+    </script>
+    <title>Testi: LaTeX</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    <!-- Load MathJax 3 with TeX input and HTML-CSS output -->
+    {#
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    #}
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
+    <style>
+            body {
+    background-color: #f9f9f9; /* Slightly off-white color */
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border: none;
+    margin-top: 12px; /* Adds margin to the top of the navbar */
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    background-color: #FFFFFF; /* Pure white background for each link */
+    border-radius: 20px; /* Adjust this value to control the roundness of the 'buttons' */
+    color: #333; /* Text color, can be adjusted as needed */
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin: 4px; /* Adds some space around each link */
+    padding: 10px 15px; /* Padding inside each link, making it appear larger */
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: #555; /* Slightly darker text on hover/focus for better accessibility */
+    background-color: #e7e7e7; /* Light grey background on hover/focus */
+}
+
+/* Additional styling to make sure the dropdown works nicely on mobile */
+.navbar-inverse .navbar-toggle {
+    border: none;
+    color: #333; /* Set the color of the 'hamburger' icon */
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        background-color: #FFFFFF; /* Ensure dropdown links on mobile also adhere to the styling */
+        color: #333;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+}
+
+
+
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}"/>
+
+
+</head>
+<body>
+
+<div class="container-fluid text-center mycontainer" style="padding-left: 12px; padding-top: 12px;">
+    <h1>Testu lapa</h1>
+
+<div>
+    $$\begin{align*}
+& 2 \sqrt{ab} \leq a+b \leq 1 \\
+& ab \leq\left(\frac{a+b}{2}\right)^{2} \leq\left(\frac{1}{2}\right)^{2} \\
+& ab \leq \frac{1}{4} \tag{1}
+\end{align*}$$
+</div>
+
+ <p>Ievērosim, ka</p>
+<p><span class='math display'>\[\underbrace{111\ldots{}1}_{\mbox{81 vieninieki}} =
+\underbrace{111\ldots{}1}_{\mbox{9 vieninieki}} \cdot \underbrace{100\ldots{}0100\ldots{}01}_{\mbox{9 vieninieki}}.\]</span></p>
+
+Katrs no reizinātājiem dalās ar <span class='math inline'>\(9\)</span>, jo ciparu summa dalās ar <span class='math inline'>\(9\)</span>. Tātad reizinājums dalās ar <span class='math inline'>\(81\)</span>.
+
+</body>
+</html>

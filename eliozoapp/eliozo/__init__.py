@@ -5,7 +5,7 @@ import json
 import html
 import requests
 import re
-from .webmd_utils import fix_image_links
+from .webmd_utils import fix_image_links, mathBeautify
 
 import logging
 # from babel.support import MissingTranslationError
@@ -31,9 +31,7 @@ else:
 
 # Integrācija ar Jena Fuseki serveri
 def getSPARQLskills():
-    ##url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     url = FUSEKI_URL
-
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -58,7 +56,6 @@ SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?skillName ?prob
 
 
 def getSPARQLtopics(root):
-    ##url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     url = FUSEKI_URL
     myobj = {'query': '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -107,7 +104,6 @@ SELECT ?concept ?termLV ?termEN ?conceptID ?descLV ?problemID WHERE {
 
 def getSPARQLProblem(arg, lang):
     url = FUSEKI_URL
-
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -213,9 +209,7 @@ SELECT ?problemTextHtml ?solutionTextHtml WHERE {{
 
 
 def getSkillProblemsSPARQL(skillID):
-    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     url = FUSEKI_URL
-
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -505,9 +499,7 @@ SELECT ?skillID ?skillNumber ?skillName ?skillDesc WHERE {{
 
 
 def getAllSkillChildren(skillID):
-    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     url = FUSEKI_URL
-
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -527,32 +519,31 @@ SELECT ?skillID ?prefLabel ?num ?skillName WHERE {{
     x = requests.post(url, myobj, head)
     return x.text
 
-def getSPARQLOlympiads():
-    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
+def getSPARQLOlympiads(lang):
     url = FUSEKI_URL
-
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT DISTINCT ?olympiadCountry ?olympiad ?olympiadCode ?olympiadName ?olympiadDescription WHERE { 
+SELECT DISTINCT ?olympiadCountry ?olympiad ?olympiadCode ?olympiadName ?olympiadDescription WHERE {{ 
   ?olympiad eliozo:olympiadName ?olympiadName ;
             eliozo:olympiadDescription ?olympiadDescription ;
             eliozo:olympiadCode ?olympiadCode .
-  OPTIONAL {
+            FILTER (lang(?olympiadDescription) = "{language}")
+            FILTER (lang(?olympiadName) = "{language}")
+  OPTIONAL {{
     ?olympiad eliozo:olympiadCountry ?olympiadCountry .
-  }
-} ORDER BY ?olympiadCountry ?olympiadName
+  }}
+}} ORDER BY ?olympiadCountry ?olympiadName
 """
 
-    myobj = { 'query': queryTemplate }
+    myobj = { 'query': queryTemplate.format(language=lang) }
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
     return x.text
 
 def getSPARQLOlympiadYears(country, olympiad):
-    # url = 'http://localhost:8080/jena-fuseki-war-4.6.1/abc/'
     url = FUSEKI_URL
     queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -570,7 +561,45 @@ SELECT DISTINCT ?year ?grade WHERE {{
     x = requests.post(url, myobj, head)
     return x.text
 
-def getSPARQLOlympiadGrades(year, country, grade, olympiad, lang):
+
+def getSPARQLOlympiadTimeIDs(country, olympiad):
+    url = FUSEKI_URL
+    queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
+SELECT DISTINCT ?problemTimeID  WHERE {{
+  ?problem eliozo:country '{country}' ;
+           eliozo:olympiadCode '{olympiad}' ; 
+           eliozo:problemTimeID ?problemTimeID . 
+}} ORDER BY DESC(?problemTimeID)"""
+    myobj = {'query': queryTemplate.format(country=country, olympiad=olympiad)}
+    head = {'Content-Type': 'application/x-www-form-urlencoded'}
+    x = requests.post(url, myobj, head)
+    return x.text
+
+
+def getSPARQLOlympiadTimeIDsGrades(country, olympiad):
+    url = FUSEKI_URL
+    queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
+SELECT DISTINCT ?problemTimeID ?grade WHERE {{
+  ?problem eliozo:country '{country}' ;
+           eliozo:olympiadCode '{olympiad}' ; 
+           eliozo:problemTimeID ?problemTimeID ; 
+           eliozo:problemGrade ?grade . 
+}} ORDER BY DESC(?problemTimeID) ?grade"""
+    myobj = {'query': queryTemplate.format(country=country, olympiad=olympiad)}
+    head = {'Content-Type': 'application/x-www-form-urlencoded'}
+    x = requests.post(url, myobj, head)
+    return x.text
+
+
+
+
+def getSPARQLOlympiadProblemsByEventAndGrade(event, country, grade, olympiad, lang):
     url = FUSEKI_URL
     queryTemplate = """
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -578,7 +607,7 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad, lang):
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
     SELECT ?text ?problemid ?problem_number WHERE {{
-      ?problem eliozo:problemYear {year} .
+      ?problem eliozo:problemTimeID '{event}' .
       ?problem eliozo:country '{country}' .
       ?problem eliozo:problemTextHtml ?text .
       ?problem eliozo:problemID ?problemid .
@@ -591,13 +620,13 @@ def getSPARQLOlympiadGrades(year, country, grade, olympiad, lang):
 
 
     myobj = { 'query':
-        queryTemplate.format(year=year, country=country, grade=grade, olympiad_code=olympiad, language=lang)
+        queryTemplate.format(event=event, country=country, grade=grade, olympiad_code=olympiad, language=lang)
     }
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
     return x.text
 
-def getSPARQLOlympiadYear(year, country, olympiad, lang):
+def getSPARQLOlympiadProblemsByEvent(event, country, olympiad, lang):
     url = FUSEKI_URL
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -605,7 +634,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
 SELECT ?text ?problemid ?problem_number ?problem_grade ?suffix WHERE {{
-  ?problem eliozo:problemYear {year} .
+  ?problem eliozo:problemTimeID '{event}' .
   ?problem eliozo:country '{country}' .
   ?problem eliozo:problemTextHtml ?text .
   ?problem eliozo:problemID ?problemid .
@@ -619,10 +648,13 @@ SELECT ?text ?problemid ?problem_number ?problem_grade ?suffix WHERE {{
 
 
     myobj = { 'query':
-        queryTemplate.format(year=year, country=country, olympiad_code=olympiad, language=lang)
+        queryTemplate.format(event=event, country=country, olympiad_code=olympiad, language=lang)
     }
+    # print(f"wrongSPARQL = {myobj}")
+
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
+    # print(f'myxtext = {x.text}')
     return x.text
 
 def getSPARQLBook(bookid, sectionid):
@@ -702,10 +734,10 @@ SELECT ?problemid ?text ?textHtml WHERE {
     return x.text
 
 
-def mathBeautify(a): # Izskaistina formulas ar MathJax Javascript bibliotēku
-    b0 = re.sub(r"\$\$([^\$]+)\$\$", r"<p><span class='math display'>\[\1\]</span></p>", a) # Aizstāj vairākrindu formulas $$..$$
-    b = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", b0) # Aizstāj inline formulas $...$ (Svarīga secība, kā aizstāj)
-    return b
+# def mathBeautify(a): # Izskaistina formulas ar MathJax Javascript bibliotēku
+#     b0 = re.sub(r"\$\$([^\$]+)\$\$", r"<p><span class='math display'>\[\1\]</span></p>", a) # Aizstāj vairākrindu formulas $$..$$
+#     b = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", b0) # Aizstāj inline formulas $...$ (Svarīga secība, kā aizstāj)
+#     return b
 
 
 def get_locale():
@@ -1186,6 +1218,7 @@ def create_app(test_config=None):
     @app.route('/problem', methods=['GET','POST'])
     def getProblem():
         lang = session.get('lang', 'lv')
+        # lang = 'lv'
         problemid = request.args.get('problemid')
         solnData = json.loads(getSPARQLProblemSolutions(problemid, lang))
         hasSolution = False
@@ -1331,6 +1364,7 @@ def create_app(test_config=None):
     def getProblemSolution():
         problemid = request.args.get('problemid')
         lang = session.get('lang', 'lv')
+        # lang = 'lv'
         data = json.loads(getSPARQLProblemSolutions(problemid, lang))
 
         problemTextHtml = data['results']['bindings'][0]['problemTextHtml']['value']
@@ -1359,7 +1393,8 @@ def create_app(test_config=None):
 
     @app.route('/archive', methods=['GET', 'POST'])
     def getArchive():
-        olympiads = json.loads(getSPARQLOlympiads())
+        lang = session.get('lang', 'lv')
+        olympiads = json.loads(getSPARQLOlympiads(lang))
         olympiadData = []
         for rr in olympiads['results']['bindings']:
             olympiadName = rr['olympiadName']['value']
@@ -1368,10 +1403,29 @@ def create_app(test_config=None):
 
             country = ''
             if 'olympiadCountry' in rr:
-                olympiadCountry = rr['olympiadCountry']['value']
-                if olympiadCountry.find('#') >= 0:
-                    country = olympiadCountry[olympiadCountry.find('#')+1:]
-            olympiadData.append({'olympiadName': olympiadName, 'olympiadDescription': olympiadDescription, 'olympiadCountry':country, 'olympiadCode': olympiadCode})
+                country = rr['olympiadCountry']['value']
+                #if olympiadCountry.find('#') >= 0:
+                #    country = olympiadCountry[olympiadCountry.find('#')+1:]
+
+            olympiadEvents = []
+            eventData = json.loads(getSPARQLOlympiadTimeIDs(country, olympiadCode))
+            for event in eventData['results']['bindings']:
+                timeID = event['problemTimeID']['value']
+                isComplete = False
+                if country == 'LV' and olympiadCode in ['AMO', 'NOL', 'SOL', 'VOL']:
+                    year = int(timeID[0:4])
+                    if year >= 2004:
+                        isComplete = True
+                    if olympiadCode == 'VOL' and year == 2004:
+                        isComplete = False
+                olympiadEvents.append((timeID, isComplete))
+
+
+            olympiadData.append({'olympiadName': olympiadName,
+                                 'olympiadDescription': olympiadDescription,
+                                 'olympiadCountry':country,
+                                 'olympiadCode': olympiadCode,
+                                 'olympiadEvents': olympiadEvents})
 
         template_context = {
             'links': olympiadData,
@@ -1386,24 +1440,24 @@ def create_app(test_config=None):
     def getOlympiad():
         country_id = request.args.get('country_id')
         olympiad_id= request.args.get('olympiad_id')
-        x = getSPARQLOlympiadYears(country_id, olympiad_id)
-        olympiads = json.loads(x)
+        olympiads = json.loads(getSPARQLOlympiadTimeIDsGrades(country_id, olympiad_id))
 
-        all_years = []
+        all_events = []
         all_grades = dict()
 
-        current_year = "NA"
+        current_event = "NA"
 
         for item in olympiads['results']['bindings']:
-            if item['year']['value'] != current_year:
-                all_years.append(item['year']['value']) # Pievienojam jaunu gadu sarakstam all_years
-                current_year = item['year']['value'] # Atceramies pēdējo pievienoto vērtību, lai neiespraustu atkārtoti
-                all_grades[current_year] = ['NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA'] # Sagatavojamies pievienot visas klases
+            timeID = item['problemTimeID']['value']
+            if timeID != current_event:
+                all_events.append(timeID) # Pievienojam jaunu gadu sarakstam all_years
+                current_event = timeID # Atceramies pēdējo pievienoto vērtību, lai neiespraustu atkārtoti
+                all_grades[current_event] = ['NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA'] # Sagatavojamies pievienot visas klases
             grade = int(item['grade']['value'])
-            all_grades[current_year][grade-5] = item['grade']['value'] # 0. 5.klase, 1. 6.klase utt.
+            all_grades[current_event][grade-5] = item['grade']['value'] # 0. 5.klase, 1. 6.klase utt.
 
         template_context = {
-            'all_years': all_years,
+            'all_events': all_events,
             'all_grades': all_grades,
             'country_id': country_id,
             'olympiad_id': olympiad_id,
@@ -1499,14 +1553,15 @@ def create_app(test_config=None):
     @app.route('/grade', methods=['GET', 'POST'])
     def getGrades():
         lang = session.get('lang', 'lv')
-        year = request.args.get('year')
+        # lang = 'lv'
+        event = request.args.get('event')
         country = request.args.get('country')
         grade = request.args.get('grade')
         olympiad= request.args.get('olympiad')
         if grade == '-1':
-            link = json.loads(getSPARQLOlympiadYear(year, country, olympiad, lang))
+            link = json.loads(getSPARQLOlympiadProblemsByEvent(event, country, olympiad, lang))
         else:
-            link = json.loads(getSPARQLOlympiadGrades(year,country,grade,olympiad, lang))
+            link = json.loads(getSPARQLOlympiadProblemsByEventAndGrade(event, country, grade, olympiad, lang))
 
         problems = []
         
@@ -1526,7 +1581,7 @@ def create_app(test_config=None):
 
         template_context = {
             'problems': problems,
-            'year': year,
+            'event': event,
             'country': country,
             'grade': grade,
             'olympiad': olympiad,
