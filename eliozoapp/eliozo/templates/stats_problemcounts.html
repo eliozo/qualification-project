@@ -1,0 +1,29 @@
+{% extends 'global.html' %}
+
+{% block content %}
+
+<table class="tasks">
+    <!--
+    <colgroup>
+        <col class="aaa">
+        <col class="bbb">
+        <col class="ccc">
+    </colgroup>
+    -->
+    <tbody>
+        <tr>
+            <th>{% trans %}Code{% endtrans %}</th>
+            <th>{% trans %}Olympiad{% endtrans %}</th>
+            <th>{% trans %}Entered{% endtrans %} <br/> ({% trans %}Solved{% endtrans %})</th>
+        </tr>
+        {% for olympiad in olympiads %}
+        <tr class="{{ loop.cycle('odd', 'even') }}">
+            <td class="stat">{{ olympiad }}</td>
+            <td class="stat">{{ all_counts[olympiad].lv }}</td>
+            <td class="stat">{{ all_counts[olympiad].entered }} ({{ all_counts[olympiad].solved }})</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-07-28 22:20+0300\n"
+"POT-Creation-Date: 2024-10-13 03:55+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,7 +152,7 @@ msgstr ""
 msgid "Problems having at least one solution."
 msgstr ""
 
-#: templates/filter_content.html:179 templates/global.html:114
+#: templates/filter_content.html:179 templates/global.html:124
 msgid "Video"
 msgstr ""
 
@@ -168,7 +168,7 @@ msgstr ""
 msgid "Pages"
 msgstr ""
 
-#: templates/filter_content.html:222 templates/main_content.html:38
+#: templates/filter_content.html:222 templates/main_content.html:49
 msgid "More"
 msgstr ""
 
@@ -192,35 +192,63 @@ msgstr ""
 msgid "Concepts"
 msgstr ""
 
-#: templates/global.html:116
+#: templates/global.html:119
+msgid "Statistics"
+msgstr ""
+
+#: templates/global.html:122
+msgid "Problem Count"
+msgstr ""
+
+#: templates/global.html:123
+msgid "Result Summary"
+msgstr ""
+
+#: templates/global.html:128
 msgid "References"
 msgstr ""
 
-#: templates/main_content.html:8
+#: templates/main_content.html:13
 msgid "Case Sensitive"
 msgstr ""
 
-#: templates/main_content.html:9
+#: templates/main_content.html:19
 msgid "Regular Expresion"
 msgstr ""
 
-#: templates/main_content.html:12
+#: templates/main_content.html:23
 msgid "All"
 msgstr ""
 
-#: templates/main_content.html:13
+#: templates/main_content.html:24
 msgid "Questions"
 msgstr ""
 
-#: templates/main_content.html:14
+#: templates/main_content.html:25
 msgid "Solutions"
 msgstr ""
 
-#: templates/main_content.html:15
+#: templates/main_content.html:26
 msgid "Hints"
 msgstr ""
 
-#: templates/main_content.html:16
+#: templates/main_content.html:27
 msgid "Formulas"
+msgstr ""
+
+#: templates/stats_problemcounts.html:15
+msgid "Code"
+msgstr ""
+
+#: templates/stats_problemcounts.html:16
+msgid "Olympiad"
+msgstr ""
+
+#: templates/stats_problemcounts.html:17
+msgid "Entered"
+msgstr ""
+
+#: templates/stats_problemcounts.html:17
+msgid "Solved"
 msgstr ""
 

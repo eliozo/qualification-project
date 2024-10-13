@@ -429,6 +429,60 @@ SELECT (COUNT(*) AS ?count) WHERE {{
     # print(f'x = "{x.text}"')
     return x.text
 
+
+def getSPARQLProblemCounts():
+    url = FUSEKI_URL
+    query = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+
+SELECT ?country ?code ?olympiadName (COUNT(DISTINCT ?problem) AS ?ProblemCount)
+WHERE {
+  ?olympiad eliozo:olympiadName ?olympiadName ;
+            eliozo:olympiadDescription ?olympiadDescription ;
+            eliozo:olympiadCountry ?country ;
+            eliozo:olympiadCode ?code .
+  ?problem rdf:type eliozo:Problem ;
+           eliozo:country ?country ;
+           eliozo:olympiadCode ?code .
+  FILTER (lang(?olympiadName) = "lv")
+            FILTER (lang(?olympiadDescription) = "lv")
+}
+GROUP BY ?country ?code ?olympiadName"""
+    myobj = {'query': query}
+    head = {'Content-Type': 'application/x-www-form-urlencoded'}
+    x = requests.post(url, myobj, head)
+    return x.text
+
+
+def getSPARQLProblemSolvedCounts():
+    url = FUSEKI_URL
+    query = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+
+SELECT ?country ?code ?olympiadName (COUNT(DISTINCT ?problem) AS ?ProblemCount)
+WHERE {
+  ?olympiad eliozo:olympiadName ?olympiadName ;
+            eliozo:olympiadDescription ?olympiadDescription ;
+            eliozo:olympiadCountry ?country ;
+            eliozo:olympiadCode ?code .
+  ?problem rdf:type eliozo:Problem ;
+           eliozo:problemSolution ?soln ;
+           eliozo:country ?country ;
+           eliozo:olympiadCode ?code .
+  FILTER (lang(?olympiadName) = "lv")
+            FILTER (lang(?olympiadDescription) = "lv")
+}
+GROUP BY ?country ?code ?olympiadName"""
+    myobj = {'query': query}
+    head = {'Content-Type': 'application/x-www-form-urlencoded'}
+    x = requests.post(url, myobj, head)
+    return x.text 
+
+
 def getSkillDetails(skillID):
     url = FUSEKI_URL
     queryTemplate = """
@@ -909,29 +963,7 @@ def create_app(test_config=None):
         return render_template('references_content.html', **template_context)
 
 
-    @app.route("/video")
-    def getVideo():
-        data = json.loads(getAllSPARQLVideos())
 
-        all_problemids = []
-
-        for item in data['results']['bindings']:
-            problemID = item['problemid']['value']
-            text = item['text']['value']
-            text = text.replace("$$", "$")
-            text = text[:80]
-            # text = mathBeautify(text)
-            textHtml = item['textHtml']['value']
-            all_problemids.append({'problemID': problemID, 'text': text, 'textHtml': textHtml})
-
-        template_context = {
-            'all_problemids' : all_problemids,
-            'active': 'video',
-            'lang': session.get('lang', 'lv'),
-            'title': 'Video'
-        }
-
-        return render_template('video_content.html', **template_context)
 
     @app.route('/topics', methods=['GET','POST'])
     def getTopics():
@@ -1380,6 +1412,88 @@ def create_app(test_config=None):
             'title': 'Olimpiāde'
         }
         return render_template('olympiad_content.html', **template_context)
+
+    @app.route('/problem_counts', methods=['GET', 'POST'])
+    def getProblemCounts():
+        olympiads = ['LV.NOL', 'LV.VOL', 'LV.AMO', 'LV.TST', 
+                     'LT.LKMO', 'LT.SAV', 'LT.LMMO', 'LT.LKMMO', 'LT.LDK', 'LT.VUMIF', 'LT.TST',
+                     'EE.PK', 'EE.LO', 'EE.LHT', 'EE.TST']
+        
+        x = getSPARQLProblemCounts()
+        probCounts = json.loads(x)
+
+        all_counts = dict()
+        for item in probCounts['results']['bindings']:
+            country = item['country']['value']
+            code = item['code']['value']
+            olympiadName = item['olympiadName']['value']
+            entered = int(item['ProblemCount']['value'])
+            all_counts[f'{country}.{code}'] = {'lv':olympiadName, 'entered': entered, 'solved': 0}
+
+
+        x = getSPARQLProblemSolvedCounts()
+        probSolvedCounts = json.loads(x)
+        for item in probSolvedCounts['results']['bindings']:
+            country = item['country']['value']
+            code = item['code']['value']
+            solved = int(item['ProblemCount']['value'])
+            all_counts[f'{country}.{code}']['solved'] = solved
+
+        # all_counts = {'LV.NOL': {'lv':'Latvijas Novada olimpiāde', 'entered': 100, 'solved': 28}, 
+        #               'LV.VOL': {'lv':'Latvijas Valsts olimpiāde', 'entered': 101, 'solved': 39}, 
+        #               'LV.AMO': {'lv':'Latvijas atklātā olimpiāde', 'entered': 102, 'solved': 49},
+        #               'LT.LJKMO': {'lv':'Lietuvas jaunāko klašu olimpiāde', 'entered': 103, 'solved': 25}}
+
+        print('------------------')
+        print(f'all_counts = {all_counts}')
+        print('==================')
+
+        template_context = {
+            'olympiads': olympiads,
+            'all_counts': all_counts,
+            'active': 'video',
+            'lang': session.get('lang', 'lv'),
+            'title': 'OlimpiādeAAA'
+        }
+
+        return render_template('stats_problemcounts.html', **template_context)
+
+
+    @app.route('/results', methods=['GET', 'POST'])
+    def getResults():
+        template_context = {
+            'active': 'video',
+            'lang': session.get('lang', 'lv'),
+            'title': 'OlimpiādeBBB'
+        }
+
+        return render_template('stats_results.html', **template_context)
+
+
+    @app.route("/video")
+    def getVideo():
+        data = json.loads(getAllSPARQLVideos())
+
+        all_problemids = []
+
+        for item in data['results']['bindings']:
+            problemID = item['problemid']['value']
+            text = item['text']['value']
+            text = text.replace("$$", "$")
+            text = text[:80]
+            # text = mathBeautify(text)
+            textHtml = item['textHtml']['value']
+            all_problemids.append({'problemID': problemID, 'text': text, 'textHtml': textHtml})
+
+        template_context = {
+            'all_problemids' : all_problemids,
+            'active': 'video',
+            'lang': session.get('lang', 'lv'),
+            'title': 'Video'
+        }
+
+        return render_template('video_content.html', **template_context)
+
 
 #year, country, grade, olympiad
     @app.route('/grade', methods=['GET', 'POST'])
