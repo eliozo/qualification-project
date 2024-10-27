@@ -143,8 +143,9 @@ eliozo:LV.NOL.2016.11.1 a eliozo:Problem ;
 
 eliozo:LV.NOL.2016.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "NT" ;
     eliozo:event "LV.NOL.2016" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -158,7 +159,7 @@ divus tādus, ka to summa vai starpība dalās ar $13$.</p>"""@lv ;
     eliozo:problemTimeID "2016" ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2016.11" ;
     eliozo:suggestedGrade 11 .
 

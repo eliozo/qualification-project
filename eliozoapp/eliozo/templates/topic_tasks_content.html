@@ -2,7 +2,6 @@
 
 {% block content %}
 <div class="col-sm-8 text-left">
-    <a href="{{ url_for('getSkills') }}" class="button">{% trans %}Back{% endtrans %}</a>
   <div class="container">
     {{jsonfile}}
   </div>
@@ -11,9 +10,9 @@
          <p style="font-size:90%">{{ parentDesc | safe }}</p>
          {% endif %}
   <ol class="custom-list">
-    {% for skill in skill_list %}
-    <li data-label="{{ skill.skillNum }}">
-      <a href="{{ url_for('getTopic',skillIdentifier=skill.prefLabel)}}">{{ skill.skillName | safe }}</a>
+    {% for topic in topic_list %}
+    <li data-label="{{ topic.topicNum }}">
+      <a href="{{ url_for('getTopic',topicIdentifier=topic.prefLabel)}}">{{ topic.topicName | safe }}</a>
     </li>
     {% endfor %}
   </ol>

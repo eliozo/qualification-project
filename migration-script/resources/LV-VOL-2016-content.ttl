@@ -97,8 +97,9 @@ ir naturāli skaitļi.</p>"""@lv ;
 
 eliozo:LV.VOL.2016.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:event "LV.VOL.2016" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -116,7 +117,7 @@ baltajās virsotnēs?</p>"""@lv ;
     eliozo:problemTimeID "2016" ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.VOL.2016.10" ;
     eliozo:suggestedGrade 10 .
 

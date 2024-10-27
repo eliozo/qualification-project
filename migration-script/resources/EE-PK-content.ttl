@@ -1743,7 +1743,9 @@ questionType=FindAll
 
 eliozo:EE.PK.2013.10.3 a eliozo:Problem ;
     eliozo:country "EE" ;
+    eliozo:domain "NT" ;
     eliozo:event "EE.PK.2013" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1759,6 +1761,7 @@ dalās ar $10$.</p>"""@lv ;
     eliozo:problemTimeID "2013" ;
     eliozo:problemYear 2013 ;
     eliozo:problem_number "None"^^xsd:integer ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "EE.PK.2013.10" ;
     eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:ExhaustionMethod,

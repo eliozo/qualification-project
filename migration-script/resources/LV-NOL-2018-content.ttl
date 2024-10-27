@@ -405,8 +405,9 @@ dažādi.</p>"""@lv ;
 
 eliozo:LV.NOL.2018.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2018" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -438,7 +439,7 @@ gadu skaits?</p>"""@lv ;
     eliozo:problemTimeID "2018" ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.NOL.2018.5" ;
     eliozo:suggestedGrade 5 .
 

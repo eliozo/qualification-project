@@ -2,7 +2,7 @@ import mistletoe
 import mistletoe.ast_renderer
 import requests
 import csv
-from json_reader import *
+# from json_reader import *
 from mdchunk_reader import *
 from csv_to_skos import *
 
@@ -38,19 +38,19 @@ def getMarkdownFile(URL, content_file_name, file_suffix): # Funkcija, kas iegūs
     response = requests.get(URL)
     open('resources/'+file_suffix+'-'+content_file_name + '.md', "wb").write(response.content)
 
-def convertToJSON(URL_suffix):  # Pārveido Markdown failu par JSON failu
-    # my_path = 'C:/Users/eliz_/Documents/math/'+URL_suffix[0]+'/content.md'
-    my_path = 'resources/'+URL_suffix[2]+'-'+ URL_suffix[1] + '.md'
-    print(my_path)
-    with open(my_path, 'r', encoding='utf-8') as fin:
-        with mistletoe.ast_renderer.ASTRenderer() as renderer:
-            doc = mistletoe.Document(fin)
-            rendered = renderer.render(doc)
-            out_file = open('resources/'+URL_suffix[2]+'-'+URL_suffix[1] + '.json', "w", encoding='utf-8')
-            out_file.write(rendered)
-            out_file.close()
-    # Izsauc funkciju no json_reader.py, kas pārveido olimpiāžu uzd datus no JSON par RDF
-    produceRDF('resources/'+URL_suffix[2]+'-'+URL_suffix[1], 'resources/'+URL_suffix[2]+'-'+URL_suffix[1]+'.ttl')
+# def convertToJSON(URL_suffix):  # Pārveido Markdown failu par JSON failu
+#     # my_path = 'C:/Users/eliz_/Documents/math/'+URL_suffix[0]+'/content.md'
+#     my_path = 'resources/'+URL_suffix[2]+'-'+ URL_suffix[1] + '.md'
+#     print(my_path)
+#     with open(my_path, 'r', encoding='utf-8') as fin:
+#         with mistletoe.ast_renderer.ASTRenderer() as renderer:
+#             doc = mistletoe.Document(fin)
+#             rendered = renderer.render(doc)
+#             out_file = open('resources/'+URL_suffix[2]+'-'+URL_suffix[1] + '.json', "w", encoding='utf-8')
+#             out_file.write(rendered)
+#             out_file.close()
+#     # Izsauc funkciju no json_reader.py, kas pārveido olimpiāžu uzd datus no JSON par RDF
+#     produceRDF('resources/'+URL_suffix[2]+'-'+URL_suffix[1], 'resources/'+URL_suffix[2]+'-'+URL_suffix[1]+'.ttl')
 
 
 if __name__ == '__main__':
@@ -70,5 +70,3 @@ if __name__ == '__main__':
         ttl_path = 'resources/' + result[2] + '-' + result[1].strip() + '.ttl'
         md_to_rdf(md_path, ttl_path)
 
-
-        # convertToJSON(result)

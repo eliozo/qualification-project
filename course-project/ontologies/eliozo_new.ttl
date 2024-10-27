@@ -314,13 +314,6 @@ eliozo:topicID rdf:type owl:DatatypeProperty ,
                rdfs:range xsd:string .
 
 
-###  http://www.dudajevagatve.lv/eliozo#topicTitle
-eliozo:topicTitle rdf:type owl:DatatypeProperty ,
-                           owl:FunctionalProperty ;
-                  rdfs:domain eliozo:Topic ;
-                  rdfs:range xsd:string .
-
-
 ###  http://www.dudajevagatve.lv/eliozo#videoBookmarkText
 eliozo:videoBookmarkText rdf:type owl:DatatypeProperty ;
                          rdfs:domain eliozo:Video ;
@@ -346,6 +339,18 @@ eliozo:videoYoutube rdf:type owl:DatatypeProperty ,
                              owl:FunctionalProperty ;
                     rdfs:domain eliozo:Video ;
                     rdfs:range xsd:anyURI .
+
+
+###  http://www.dudajevagatve.lv/eozol#topicName
+:topicName rdf:type owl:DatatypeProperty ;
+           rdfs:domain eliozo:Topic ;
+           rdfs:range xsd:string .
+
+
+###  http://www.dudajevagatve.lv/eozol#topicNumber
+:topicNumber rdf:type owl:DatatypeProperty ;
+             rdfs:domain eliozo:Topic ;
+             rdfs:range xsd:string .
 
 
 #################################################################
@@ -398,7 +403,8 @@ eliozo:Solution rdf:type owl:Class .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#Topic
-eliozo:Topic rdf:type owl:Class .
+eliozo:Topic rdf:type owl:Class ;
+             rdfs:subClassOf skos:Concept .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#Video
@@ -425,22 +431,19 @@ eliozo:BBK2012 rdf:type owl:NamedIndividual ,
 ###  http://www.dudajevagatve.lv/eliozo#DomainAlg
 eliozo:DomainAlg rdf:type owl:NamedIndividual ,
                           eliozo:Domain ;
-                 eliozo:topicID "Alg"@lv ;
-                 eliozo:topicTitle "Algebra"@lv .
+                 eliozo:topicID "Alg"@lv .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#DomainComb
 eliozo:DomainComb rdf:type owl:NamedIndividual ,
                            eliozo:Domain ;
-                  eliozo:topicID "Comb"@lv ;
-                  eliozo:topicTitle "Kombinatorika"@lv .
+                  eliozo:topicID "Comb"@lv .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#DomainGeom
 eliozo:DomainGeom rdf:type owl:NamedIndividual ,
                            eliozo:Domain ;
-                  eliozo:topicID "Geom"@lv ;
-                  eliozo:topicTitle "Ģeometrija"@lv .
+                  eliozo:topicID "Geom"@lv .
 
 
 ###  http://www.dudajevagatve.lv/eliozo#DomainNT
@@ -659,7 +662,7 @@ eliozo:LV.VOL rdf:type owl:NamedIndividual ,
               eliozo:olympiadName "Latvijas valsts olimpiāde"@lv .
 
 
-###  http://www.dudajevagatve.lv/eozol#LT.LDK
+###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/LT.LDK
 :LT.LDK rdf:type owl:NamedIndividual ,
                  eliozo:Olympiad ;
         eliozo:olympiadCountry eliozo:LT ;
@@ -669,7 +672,7 @@ eliozo:LV.VOL rdf:type owl:NamedIndividual ,
         eliozo:olympiadName "Sacensības Lietuvas lielkņazistes godam"@lv .
 
 
-###  http://www.dudajevagatve.lv/eozol#LT.LJKMO
+###  http://www.semanticweb.org/eozolina/ontologies/2023/11/untitled-ontology-2/LT.LJKMO
 :LT.LJKMO rdf:type owl:NamedIndividual ,
                    eliozo:Olympiad ;
           eliozo:olympiadCountry eliozo:LT ;

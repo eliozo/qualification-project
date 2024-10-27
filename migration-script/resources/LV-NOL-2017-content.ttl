@@ -842,8 +842,9 @@ $\\sphericalangle BAF=\\sphericalangle BEF!$</p>"""@lv ;
 
 eliozo:LV.NOL.2017.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2017" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -859,7 +860,7 @@ izmestas, vismaz viena iekrāsotā rūtiņa paliktu neizmesta?</p>"""@lv ;
     eliozo:problemTimeID "2017" ;
     eliozo:problemYear 2017 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.NOL.2017.7" ;
     eliozo:suggestedGrade 7 .
 

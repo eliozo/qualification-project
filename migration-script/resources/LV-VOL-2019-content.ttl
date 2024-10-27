@@ -123,8 +123,9 @@ $\\frac{a_{1}+a_{2}+\\cdots+a_{n}}{n} \\leq \\frac{1}{1000}$</p>"""@lv ;
 
 eliozo:LV.VOL.2019.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:event "LV.VOL.2019" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -133,14 +134,14 @@ eliozo:LV.VOL.2019.11.1 a eliozo:Problem ;
     eliozo:problemSolution eliozo:SOLN.LV.VOL.2019.11.1.SUB1 ;
     eliozo:problemText """Kādā valstī ir $100$ pilsētas. Starp dažām no tām organizēti avioreisi. Starp 
 katrām divām pilsētām ir augstākais viens reiss. Katrs reiss savieno tikai $2$ 
-pilsētas, pa ceļam nenolaižoties citās. Katrs reiss „darbojas" abos virzienos. 
+pilsētas, pa ceļam nenolaižoties citās. Katrs reiss "darbojas" abos virzienos. 
 Reisus organizē $90$ aviokompānijas, katra aviokompānija organizē tieši $30$ 
 reisus. Ja kompānija organizē reisu starp kādām divām pilsētām (apzīmēsim tās 
 ar $A$ un $B$), tad tai ir biroji gan pilsētā $A$, gan pilsētā $B$. Pierādīt, 
 ka ir tāda pilsēta, kurā ir vismaz $9$ biroji!"""@lv ;
     eliozo:problemTextHtml """<p>Kādā valstī ir $100$ pilsētas. Starp dažām no tām organizēti avioreisi. Starp 
 katrām divām pilsētām ir augstākais viens reiss. Katrs reiss savieno tikai $2$ 
-pilsētas, pa ceļam nenolaižoties citās. Katrs reiss „darbojas" abos virzienos. 
+pilsētas, pa ceļam nenolaižoties citās. Katrs reiss "darbojas" abos virzienos. 
 Reisus organizē $90$ aviokompānijas, katra aviokompānija organizē tieši $30$ 
 reisus. Ja kompānija organizē reisu starp kādām divām pilsētām (apzīmēsim tās 
 ar $A$ un $B$), tad tai ir biroji gan pilsētā $A$, gan pilsētā $B$. Pierādīt, 
@@ -148,7 +149,7 @@ ka ir tāda pilsēta, kurā ir vismaz $9$ biroji!</p>"""@lv ;
     eliozo:problemTimeID "2019" ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2019.11" ;
     eliozo:suggestedGrade 11 .
 
@@ -327,8 +328,9 @@ vērtība nav naturāla skaitļa kvadrāts!"""@lv ;
 
 eliozo:LV.VOL.2019.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:event "LV.VOL.2019" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -344,7 +346,7 @@ ir iracionāli!</p>"""@lv ;
     eliozo:problemTimeID "2019" ;
     eliozo:problemYear 2019 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2019.12" ;
     eliozo:suggestedGrade 12 .
 

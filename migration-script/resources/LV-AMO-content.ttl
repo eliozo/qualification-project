@@ -191,6 +191,7 @@ eliozo:LV.AMO.2000.7.4 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:event "LV.AMO.2000" ;
     eliozo:genre "construction" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -216,7 +217,6 @@ var tā sadalīt pa pāriem, lai visas pāros ieejošo skaitļu summas būtu da�
     eliozo:suffix "LV.AMO.2000.7" ;
     eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:ExhaustionMethod,
-        eliozo:NumTheoryPigeonhole,
         eliozo:PrimesDistribution .
 
 eliozo:LV.AMO.2000.8.3 a eliozo:Problem ;
@@ -225,6 +225,7 @@ eliozo:LV.AMO.2000.8.3 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2000" ;
     eliozo:genre "construction" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -245,8 +246,7 @@ eliozo:LV.AMO.2000.8.3 a eliozo:Problem ;
     eliozo:strategy "Interpretation" ;
     eliozo:suffix "LV.AMO.2000.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:NumTheoryMathInduction,
-        eliozo:NumTheoryPigeonhole .
+    eliozo:topic eliozo:NumTheoryMathInduction .
 
 eliozo:LV.AMO.2000.9.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-inverse-number,

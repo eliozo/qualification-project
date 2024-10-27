@@ -2,10 +2,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 eliozo:LV.AMO.2023.10.1 a eliozo:Problem ;
-    eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "ContradictionForExistence" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -43,10 +43,10 @@ Katrs bruņinieks izteicās:</p>
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2023.10.2 a eliozo:Problem ;
-    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "PolynomialTransformations" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -63,10 +63,10 @@ eliozo:LV.AMO.2023.10.2 a eliozo:Problem ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2023.10.3 a eliozo:Problem ;
-    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "AugmentationWithNewElements" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -92,11 +92,10 @@ leņķa $ABC$ lielums četrstūra ārpusē ir $7\\alpha$ (skat. 19. att.). Aprē
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2023.10.4 a eliozo:Problem ;
-    eliozo:LTopic "LTCombinatorialStructures",
-        "LTMeanValuePrinciple" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -132,6 +131,7 @@ ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?</p>"""
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "CombinatorialStructures" ;
     eliozo:suffix "LV.AMO.2023.10" ;
     eliozo:suggestedGrade 10 .
 
@@ -164,10 +164,10 @@ aritmētiskais. Kāds varēja būt Marutas nodzēstais skaitlis?</p>"""@lv ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.AMO.2023.11.1 a eliozo:Problem ;
-    eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "ContradictionForExistence" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -194,10 +194,10 @@ Māra dzimšanas dienas svinībām?</p>"""@lv ;
     eliozo:topic eliozo:LinearOptimization .
 
 eliozo:LV.AMO.2023.11.2 a eliozo:Problem ;
-    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "PolynomialTransformations" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -216,10 +216,10 @@ visām pozitīvām reālām $a$, $b$ un $c$ vērtībām!</p>"""@lv ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2023.11.3 a eliozo:Problem ;
-    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "AugmentationWithNewElements" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -246,10 +246,10 @@ Aprēķināt riņķa, ko ierobežo dotā riņķa līnija, laukumu!</p>"""@lv ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2023.11.4 a eliozo:Problem ;
-    eliozo:LTopic "LTMeanValuePrinciple" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -288,10 +288,10 @@ ka visās grupās uz kartītēm uzrakstīto skaitļu summas ir vienādas?</p>"""
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2023.11.5 a eliozo:Problem ;
-    eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "ContradictionForExistence" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -308,7 +308,6 @@ eliozo:LV.AMO.2023.11.5 a eliozo:Problem ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.AMO.2023.12.1 a eliozo:Problem ;
-    eliozo:LTopic "LTEquations" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.AMO.2023" ;
@@ -328,14 +327,15 @@ būtu patiesa?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "Equations" ;
     eliozo:suffix "LV.AMO.2023.12" ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2023.12.2 a eliozo:Problem ;
-    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "PolynomialTransformations" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -356,10 +356,10 @@ skaitļi?</p>"""@lv ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2023.12.3 a eliozo:Problem ;
-    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "AugmentationWithNewElements" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -380,10 +380,10 @@ Pierādīt, ka $S_{ABD} \\leq S_{CEF}$.</p>"""@lv ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.AMO.2023.12.4 a eliozo:Problem ;
-    eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "ContradictionForExistence" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -473,7 +473,6 @@ lai blakus trijstūros ierakstītie skaitļi neatšķiras vairāk kā par $3$.<b
     eliozo:topic eliozo:ArithmeticIdentities .
 
 eliozo:LV.AMO.2023.5.2 a eliozo:Problem ;
-    eliozo:LTopic "LTNumeralSystems" ;
     eliozo:concepts eliozo:TRM-decimal-notation ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
@@ -497,12 +496,12 @@ cipari. Vai var gadīties, ka abu skaitļu pierakstā izmantoti tikai cipari
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:strategy "CaseAnalysis" ;
+    eliozo:subdomain "NumeralSystems" ;
     eliozo:suffix "LV.AMO.2023.5" ;
     eliozo:suggestedGrade 5 ;
     eliozo:topic eliozo:ModularArithmeticLastDigit .
 
 eliozo:LV.AMO.2023.5.3 a eliozo:Problem ;
-    eliozo:LTopic "LTIntegerLattices" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2023" ;
@@ -521,12 +520,12 @@ laukuma vērtība ir tāda pati kā malu skaits!</p>"""@lv ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindExample" ;
     eliozo:strategy "TrialAndError" ;
+    eliozo:subdomain "IntegerLattices" ;
     eliozo:suffix "LV.AMO.2023.5" ;
     eliozo:suggestedGrade 5 ;
     eliozo:topic eliozo:SquareGridShapes .
 
 eliozo:LV.AMO.2023.5.4 a eliozo:Problem ;
-    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
@@ -558,16 +557,17 @@ rūtiņas var pārvietot uz kreiso augšējo rūtiņu, ja kvadrāta izmēri ir:
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "FixedInvariant" ;
     eliozo:suffix "LV.AMO.2023.5" ;
     eliozo:suggestedGrade 5 ;
     eliozo:topic eliozo:InvariantParity .
 
 eliozo:LV.AMO.2023.5.5 a eliozo:Problem ;
-    eliozo:LTTopic "LTContradiction",
-        "LTExtremes" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "ContradictionForExistence",
+        "ExtremeElements" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -677,10 +677,10 @@ ar ko tai ir kopīga mala.</p>"""@lv ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.AMO.2023.6.4 a eliozo:Problem ;
-    eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "ContradictionForExistence" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -716,10 +716,10 @@ vienmēr saka patiesību, sarkanie bruņinieki vienmēr melo. Katrs bruņinieks 
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.AMO.2023.6.5 a eliozo:Problem ;
-    eliozo:LTopic "LTExtremeElement" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "ExtremeElements" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -751,10 +751,10 @@ komplektu viennozīmīgi nav iespējams noteikt?</p>"""@lv ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.AMO.2023.7.1 a eliozo:Problem ;
-    eliozo:LTopic "LTMeanValuePrinciple" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -885,10 +885,10 @@ komplektu viennozīmīgi nav iespējams noteikt?</p>"""@lv ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.AMO.2023.7.5 a eliozo:Problem ;
-    eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "ContradictionForExistence" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1052,10 +1052,10 @@ Dorotejai un Almai iedotajām naudas summām?</p>"""@lv ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.AMO.2023.8.5 a eliozo:Problem ;
-    eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "ContradictionForExistence" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1099,7 +1099,6 @@ Katra bizbizmārīte izteicās:</p>
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.AMO.2023.9.1 a eliozo:Problem ;
-    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.AMO.2023" ;
@@ -1125,6 +1124,7 @@ un saucēju. Vai, atkārtojot
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "FixedInvariant" ;
     eliozo:suffix "LV.AMO.2023.9" ;
     eliozo:suggestedGrade 9 .
 
@@ -1152,10 +1152,10 @@ Zināms, ka $12a + 9b$ dalās ar $13$. Kāds var būt skaitlis $\\overline{cd}$?
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.AMO.2023.9.3 a eliozo:Problem ;
-    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "AugmentationWithNewElements" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1176,11 +1176,10 @@ virsotnes, ir divas reizes garāka nekā augstums no tās pašas virsotnes!</p>"
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.AMO.2023.9.4 a eliozo:Problem ;
-    eliozo:LTopic "LTCombinatorialStructures",
-        "LTMeanValuePrinciple" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1207,11 +1206,11 @@ kartītēm uzrakstīto skaitļu summas ir vienādas?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "CombinatorialStructures" ;
     eliozo:suffix "LV.AMO.2023.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.AMO.2023.9.5 a eliozo:Problem ;
-    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2023" ;
@@ -1233,6 +1232,7 @@ Vai var gadīties, ka: <strong>(A)</strong> $S = 100$; <strong>(B)</strong> $S =
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "FixedInvariant" ;
     eliozo:suffix "LV.AMO.2023.9" ;
     eliozo:suggestedGrade 9 .
 

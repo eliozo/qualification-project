@@ -7,6 +7,7 @@ import requests
 import re
 from .webmd_utils import fix_image_links, mathBeautify
 
+
 import logging
 # from babel.support import MissingTranslationError
 
@@ -30,23 +31,23 @@ else:
     FUSEKI_URL=FUSEKI_URL_LINUX
 
 # Integrācija ar Jena Fuseki serveri
-def getSPARQLskills():
+def getSPARQLtopics():
     url = FUSEKI_URL
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?skillName ?problemid WHERE { 
-  ?skill eliozo:skillID ?skillIdentifier .
-  ?skill eliozo:skillNumber ?skillNumber .
-  ?skill eliozo:skillDescription ?skillDescription .
-  ?skill eliozo:skillName ?skillName .
+SELECT DISTINCT ?topicIdentifier ?topicNumber ?topicDescription ?topicName ?problemid WHERE { 
+  ?topic eliozo:topicID ?topicIdentifier .
+  ?topic eliozo:topicNumber ?topicNumber .
+  ?topic eliozo:topicDescription ?topicDescription .
+  ?topic eliozo:topicName ?topicName .
   OPTIONAL {
-    ?prob eliozo:topic ?skill ;
+    ?prob eliozo:topic ?topic ;
           eliozo:problemID ?problemid . 
   }.
-} ORDER BY ?skillNumber
+} ORDER BY ?topicNumber
 """
 
     myobj = {'query': queryTemplate }
@@ -55,25 +56,25 @@ SELECT DISTINCT ?skillIdentifier ?skillNumber ?skillDescription ?skillName ?prob
     return x.text
 
 
-def getSPARQLtopics(root):
-    url = FUSEKI_URL
-    myobj = {'query': '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT ?topicID ?topicParent ?topicTitle ?topicDesc WHERE {
-  ?topic rdf:type eliozo:Topic ; 
-         eliozo:topicID ?topicID ; 
-         eliozo:topicTitle ?topicTitle ;
-  		 eliozo:topicDescription ?topicDesc ;
-     	 skos:broader ?topicParent ;''' +
-         'skos:broader* {topParent} .'.format(topParent=root) +
-'''}'''
-    }
+# def getSPARQLtopics(root):
+#     url = FUSEKI_URL
+#     myobj = {'query': '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+# PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+# PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+# SELECT ?topicID ?topicParent ?topicTitle ?topicDesc WHERE {
+#   ?topic rdf:type eliozo:Topic ; 
+#          eliozo:topicID ?topicID ; 
+#          eliozo:topicTitle ?topicTitle ;
+#   		 eliozo:topicDescription ?topicDesc ;
+#      	 skos:broader ?topicParent ;''' +
+#          'skos:broader* {topParent} .'.format(topParent=root) +
+# '''}'''
+#     }
 
-    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
+#     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+#     x = requests.post(url, myobj, head)
+#     return x.text
 
 def getSPARQLconcepts():
     url = FUSEKI_URL
@@ -104,14 +105,72 @@ SELECT ?concept ?termLV ?termEN ?conceptID ?descLV ?problemID WHERE {
 
 def getSPARQLProblem(arg, lang):
     url = FUSEKI_URL
-    queryTemplate = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+#     queryTemplate = """
+# PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+# PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+# PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+# SELECT ?problemTextHtml ?video ?problemYear ?country ?olympiad 
+# ?problemBook ?problemBookSection ?problemGrade ?problem_number
+# ?topicIdentifier ?LTopic ?questionType ?domain WHERE {{
+#   ?problem eliozo:problemID '{problemid}' ;
+#            eliozo:problemTextHtml ?problemTextHtml .
+#            FILTER (lang(?problemTextHtml) = "{language}")
+#   OPTIONAL {{
+#     ?problem eliozo:problemYear ?year ;
+#              eliozo:olympiadCode ?olympiad ;
+#              eliozo:problemGrade ?grade ;
+#              eliozo:country ?country .
+#   }}
+#   OPTIONAL {{
+#     ?problem eliozo:hasVideo ?video .
+#   }}
+#   OPTIONAL {{
+#     ?problem eliozo:problemYear ?problemYear .
+#   }}
+#   OPTIONAL {{
+#     ?problem eliozo:country ?country .
+#   }}
+#   OPTIONAL {{
+#     ?problem eliozo:olympiad ?olympiad .
+#   }}
+#   OPTIONAL {{
+#     ?problem eliozo:problemBook ?problemBook .
+#   }}
+#   OPTIONAL {{
+#     ?problem eliozo:problemBookSection ?problemBookSection .
+#   }}
+#   OPTIONAL {{
+#     ?problem eliozo:problemGrade ?problemGrade .
+#   }}
+#   OPTIONAL {{
+#     ?problem eliozo:problem_number ?problem_number .
+#   }}  
+#   OPTIONAL {{
+#     ?problem eliozo:topic ?topic .
+#     ?topic eliozo:topicID ?topicIdentifier .
+#   }}  
+#   OPTIONAL {{
+#     ?problem eliozo:LTopic ?LTopic .
+#   }}  
+#   OPTIONAL {{
+#     ?problem eliozo:concepts ?concepts .
+#   }}  
+#   OPTIONAL {{
+#     ?problem eliozo:questionType ?questionType .
+#   }}  
+#   OPTIONAL {{
+#     ?problem eliozo:domain ?domain .
+#   }}  
+# }}"""
+
+    queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
 SELECT ?problemTextHtml ?video ?problemYear ?country ?olympiad 
 ?problemBook ?problemBookSection ?problemGrade ?problem_number
-?strategy ?topic ?LTopic ?concepts ?questionType ?domain WHERE {{
+?topicIdentifier ?methodIdentifier ?questionType ?domain WHERE {{
   ?problem eliozo:problemID '{problemid}' ;
            eliozo:problemTextHtml ?problemTextHtml .
            FILTER (lang(?problemTextHtml) = "{language}")
@@ -120,10 +179,6 @@ SELECT ?problemTextHtml ?video ?problemYear ?country ?olympiad
              eliozo:olympiadCode ?olympiad ;
              eliozo:problemGrade ?grade ;
              eliozo:country ?country .
-  }}
-  OPTIONAL {{
-    ?problem eliozo:topic ?skill .
-    ?skill eliozo:skillID ?skillIdentifier .
   }}
   OPTIONAL {{
     ?problem eliozo:hasVideo ?video .
@@ -150,16 +205,12 @@ SELECT ?problemTextHtml ?video ?problemYear ?country ?olympiad
     ?problem eliozo:problem_number ?problem_number .
   }}  
   OPTIONAL {{
-    ?problem eliozo:strategy ?strategy .
-  }}  
-  OPTIONAL {{
     ?problem eliozo:topic ?topic .
+    ?topic eliozo:topicID ?topicIdentifier .
   }}  
   OPTIONAL {{
-    ?problem eliozo:LTopic ?LTopic .
-  }}  
-  OPTIONAL {{
-    ?problem eliozo:concepts ?concepts .
+    ?problem eliozo:method ?method .
+    ?method eliozo:topicID ?methodIdentifier .
   }}  
   OPTIONAL {{
     ?problem eliozo:questionType ?questionType .
@@ -168,7 +219,6 @@ SELECT ?problemTextHtml ?video ?problemYear ?country ?olympiad
     ?problem eliozo:domain ?domain .
   }}  
 }}"""
-
 
     myobj = {'query':  queryTemplate.format(problemid=arg, language=lang) }
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
@@ -208,25 +258,25 @@ SELECT ?problemTextHtml ?solutionTextHtml WHERE {{
     return x.text
 
 
-def getSkillProblemsSPARQL(skillID):
+def getTopicProblemsSPARQL(topicID):
     url = FUSEKI_URL
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT DISTINCT ?problem ?problemid ?subskill ?text ?grade
+SELECT DISTINCT ?problem ?problemid ?subtopic ?text ?grade
 WHERE {{
-    ?parent skos:prefLabel '{skill}' .
-    ?parent skos:narrower* ?subskill .
-    ?problem eliozo:topic ?subskill ;
+    ?parent skos:prefLabel '{topic}' .
+    ?parent skos:narrower* ?subtopic .
+    ?problem eliozo:topic ?subtopic ;
              eliozo:problemID ?problemid ;
              eliozo:problemTextHtml ?text ;
              eliozo:problemGrade ?grade .
 }} ORDER BY ?grade
 """
 
-    myobj = {'query': queryTemplate.format(skill=skillID)}
+    myobj = {'query': queryTemplate.format(topic=topicID)}
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
     return x.text
@@ -477,44 +527,44 @@ GROUP BY ?country ?code ?olympiadName"""
     return x.text 
 
 
-def getSkillDetails(skillID):
+def getTopicDetails(topicID):
     url = FUSEKI_URL
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT ?skillID ?skillNumber ?skillName ?skillDesc WHERE {{
-  ?skill skos:prefLabel '{skill}' ;
-      eliozo:skillNumber ?skillNumber ;
-      eliozo:skillName ?skillName ;
-      eliozo:skillDescription ?skillDesc .
+SELECT ?topicID ?topicNumber ?topicName ?topicDesc WHERE {{
+  ?topic skos:prefLabel '{topic}' ;
+      eliozo:topicNumber ?topicNumber ;
+      eliozo:topicName ?topicName ;
+      eliozo:topicDescription ?topicDesc .
 }}
 """
 
-    myobj = {'query': queryTemplate.format(skill=skillID)}
+    myobj = {'query': queryTemplate.format(topic=topicID)}
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
     return x.text
 
 
-def getAllSkillChildren(skillID):
+def getAllTopicChildren(topicID):
     url = FUSEKI_URL
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT ?skillID ?prefLabel ?num ?skillName WHERE {{
-  ?parentskill skos:prefLabel '{skill}' .
-  ?skillID skos:broader ?parentskill ;
+SELECT ?topicID ?prefLabel ?num ?topicName WHERE {{
+  ?parentTopic skos:prefLabel '{topic}' .
+  ?topicID skos:broader ?parentTopic ;
       skos:prefLabel ?prefLabel ;
-      eliozo:skillName ?skillName ;
-      eliozo:skillNumber ?num .
+      eliozo:topicName ?topicName ;
+      eliozo:topicNumber ?num .
 }} ORDER BY ?num
 """
 
-    myobj = {'query': queryTemplate.format(skill=skillID)}
+    myobj = {'query': queryTemplate.format(topic=topicID)}
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
     return x.text
@@ -789,6 +839,7 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+
     def replace_non_ascii_with_unicode_escape(text):
         non_ascii_characters = {'ā': '\\u0101', 'č': '\\u010D', 'ē': '\\u0113', 'ģ': '\\u0123', 'ī': '\\u012B',
                             'ķ': '\\u0137', 'ļ': '\\u013C', 'ņ': '\\u0146', 'š': '\\u0161', 'ū': '\\u016B',
@@ -907,6 +958,12 @@ def create_app(test_config=None):
             template_context = {
                 'problems': problems,
                 'active': 'filter',
+                'navlinks': [
+                    {
+                        'url': 'getFilter', 
+                        'title': 'Filters'
+                    }
+                ],
                 'lang': session.get('lang', 'lv'),
                 'params': params,
                 'all_counts': all_counts,
@@ -943,8 +1000,6 @@ def create_app(test_config=None):
                 params1 = params.copy()
                 for curr_val in all_values[par]:
                     params1[par] = curr_val
-                    if par == 'hasSolution':
-                        print(f'params1 = {params1}')
 
                     count_json = json.loads(getProblemCountsByFiltersSPARQL(params1))
                     all_counts[par][curr_val] = count_json['results']['bindings'][0]['count']['value']
@@ -971,6 +1026,12 @@ def create_app(test_config=None):
                 'page_offsets': page_offsets,
                 'myoffset': offset,
                 'active': 'filter',
+                'navlinks': [
+                    {
+                        'url': 'getFilter', 
+                        'title': 'Filters'
+                    }
+                ],
                 'lang': session.get('lang', 'lv'),
                 'title': 'Filtri'
             }
@@ -989,6 +1050,12 @@ def create_app(test_config=None):
         # return render_template("info.html")
         template_context = {
             'active': 'references',
+            'navlinks': [
+                {
+                    'url': 'getReferences', 
+                    'title': 'References'
+                }
+            ],
             'lang': session.get('lang', 'lv'),
             'title': 'Atsauces'
         }
@@ -999,97 +1066,102 @@ def create_app(test_config=None):
 
     @app.route('/topics', methods=['GET','POST'])
     def getTopics():
-        data = json.loads(getSPARQLskills())
+        data = json.loads(getSPARQLtopics())
 
-        all_skills = []
-        all_skill_info = dict() # Vārdnīca visai prasmju tabulai
+        all_topics = []
+        all_topic_info = dict() # Vārdnīca visai prasmju tabulai
 
-        current_skill = "NA"
+        current_topic = "NA"
 
         for item in data['results']['bindings']:
-            # A new skill appears
-            if item['skillIdentifier']['value'] != current_skill:
-                all_skills.append(item['skillIdentifier']['value']) # Pievienojam jaunu prasmi sarakstam all_skills
-                current_skill = item['skillIdentifier']['value'] # Atceramies pēdējo pievienoto vērtību, lai neiespraustu atkārtoti
-                current_skill_info = dict() # Vārdnīca vienai tabulas rindai
-                current_skill_info['skillIdentifier'] = current_skill
-                current_skill_info['skillNumber'] = item['skillNumber']['value']
-                number_items = item['skillNumber']['value'].split(".")
-                # current_skill_info['skillIndent'] = '&nbsp;&nbsp;'*(4 - sum([theItem == "0" for theItem in number_items]))
+            # A new topic appears
+            if item['topicIdentifier']['value'] != current_topic:
+                all_topics.append(item['topicIdentifier']['value']) # Pievienojam jaunu prasmi sarakstam all_topics
+                current_topic = item['topicIdentifier']['value'] # Atceramies pēdējo pievienoto vērtību, lai neiespraustu atkārtoti
+                current_topic_info = dict() # Vārdnīca vienai tabulas rindai
+                current_topic_info['topicIdentifier'] = current_topic
+                current_topic_info['topicNumber'] = item['topicNumber']['value']
+                number_items = item['topicNumber']['value'].split(".")
 
-                beautiful_description = mathBeautify(item['skillDescription']['value'])
-                current_skill_info['skillDescription'] = beautiful_description
-                current_skill_info['skillName'] = mathBeautify(item['skillName']['value'])
+                beautiful_description = mathBeautify(item['topicDescription']['value'])
+                current_topic_info['topicDescription'] = beautiful_description
+                current_topic_info['topicName'] = mathBeautify(item['topicName']['value'])
                 if "problemid" in item:
-                    current_skill_info['problems'] = [item['problemid']['value']]
+                    current_topic_info['problems'] = [item['problemid']['value']]
                 else:
-                    current_skill_info['problems'] = []
-                all_skill_info[current_skill] = current_skill_info # Lielajā vārdnīcā iesprauž mazo vārdnīcu
+                    current_topic_info['problems'] = []
+                all_topic_info[current_topic] = current_topic_info # Lielajā vārdnīcā iesprauž mazo vārdnīcu
             else:
-                current_skill_info['problems'].append(item['problemid']['value']) # Pievieno tikai jauno uzdevuma ID
+                current_topic_info['problems'].append(item['problemid']['value']) # Pievieno tikai jauno uzdevuma ID
 
         # domain_titles = {'1': 'Algebra', '2': 'Kombinatorika', '3': 'Ģeometrija', '4': 'Skaitļu teorija'}
-        structured_skills = []
+        structured_topics = []
         current_LTopics = None
         current_subtopics = None
         current_subsubtopics = None
-        for skill in all_skills:
-            skillNumber = all_skill_info[skill]['skillNumber']
+        for topic in all_topics:
+            topicNumber = all_topic_info[topic]['topicNumber']
 
-            if skillNumber.endswith('.0.0.0.0'):
+            if topicNumber.endswith('.0.0.0.0'):
                 LTopics = []
                 current_LTopics = LTopics
-                L1_number = skillNumber[:-len('.0.0.0.0')]
-                L1_name = all_skill_info[skill]['skillName']
-                L1_desc = all_skill_info[skill]['skillDescription']
-                L1_prob = all_skill_info[skill]['problems']
-                structured_skills.append({'number':L1_number,
+                L1_number = topicNumber[:-len('.0.0.0.0')]
+                L1_name = all_topic_info[topic]['topicName']
+                L1_desc = all_topic_info[topic]['topicDescription']
+                L1_prob = all_topic_info[topic]['problems']
+                structured_topics.append({'number':L1_number,
                                           'name':L1_name,
                                           'desc':L1_desc,
                                           'prob':L1_prob,
                                           'subtopics': LTopics})
-            elif skillNumber.endswith('.0.0.0'):
+            elif topicNumber.endswith('.0.0.0'):
                 subtopics = []
                 current_subtopics = subtopics
-                L2_number = skillNumber[:-len('.0.0.0')]
+                L2_number = topicNumber[:-len('.0.0.0')]
                 L2_label = L2_number.replace('.', '_')
-                L2_name = all_skill_info[skill]['skillName']
-                L2_desc = all_skill_info[skill]['skillDescription']
-                L2_prob = all_skill_info[skill]['problems']
+                L2_name = all_topic_info[topic]['topicName']
+                L2_desc = all_topic_info[topic]['topicDescription']
+                L2_prob = all_topic_info[topic]['problems']
                 current_LTopics.append({'number':L2_number,
                                         'label':L2_label,
                                         'name':L2_name,
                                         'desc':L2_desc,
                                         'prob': L2_prob,
                                         'subtopics': subtopics})
-            elif skillNumber.endswith('.0.0'):
+            elif topicNumber.endswith('.0.0'):
                 subsubtopics = []
                 current_subsubtopics = subsubtopics
-                L3_number = skillNumber[:-len('.0.0')]
-                L3_name = all_skill_info[skill]['skillName']
-                L3_desc = all_skill_info[skill]['skillDescription']
-                L3_prob = all_skill_info[skill]['problems']
+                L3_number = topicNumber[:-len('.0.0')]
+                L3_name = all_topic_info[topic]['topicName']
+                L3_desc = all_topic_info[topic]['topicDescription']
+                L3_prob = all_topic_info[topic]['problems']
                 current_subtopics.append({'number':L3_number,
                                           'name':L3_name,
                                           'desc': L3_desc,
                                           'prob': L3_prob,
                                           'subtopics':subsubtopics})
             else:
-                L45_number = skillNumber
-                if skillNumber.endswith('.0'):
-                    L45_number = skillNumber[:-len('.0')]
-                L45_name = all_skill_info[skill]['skillName']
-                L45_desc = all_skill_info[skill]['skillDescription']
-                L45_prob = all_skill_info[skill]['problems']
+                L45_number = topicNumber
+                if topicNumber.endswith('.0'):
+                    L45_number = topicNumber[:-len('.0')]
+                L45_name = all_topic_info[topic]['topicName']
+                L45_desc = all_topic_info[topic]['topicDescription']
+                L45_prob = all_topic_info[topic]['problems']
                 current_subsubtopics.append({'number':L45_number, 'name':L45_name, 'desc': L45_desc, 'prob':L45_prob})
 
         template_context = {
-            'all_skills': all_skills,
-            'all_skill_info': all_skill_info,
+            'all_topics': all_topics,
+            'all_topic_info': all_topic_info,
             'active': 'topics',
+            'navlinks': [
+                {
+                    'url': 'getTopics', 
+                    'title': 'Topics'
+                }
+            ],
             'lang': session.get('lang', 'lv'),
             'title': 'Tēmas',
-            'structured_topics': structured_skills
+            'structured_topics': structured_topics
         }
 
         return render_template('topics_content.html', **template_context)
@@ -1097,8 +1169,6 @@ def create_app(test_config=None):
 
     @app.route('/concepts', methods=['GET','POST'])
     def getConcepts():
-
-        # all_topics = json.loads(getSPARQLtopics('eliozo:analysis'))
         concepts_problems = json.loads(getSPARQLconcepts())
 
         concept_list = []
@@ -1136,6 +1206,12 @@ def create_app(test_config=None):
         template_context = {
             'all_concepts': concept_list,
             'active': 'concepts',
+            'navlinks': [
+                {
+                    'url': 'getConcepts', 
+                    'title': 'Concepts'
+                }
+            ],
             'lang': session.get('lang', 'lv'),
             'title': 'Jēdzieni'
         }
@@ -1143,25 +1219,25 @@ def create_app(test_config=None):
 
     @app.route('/topic_tasks', methods=['GET','POST']) # Kontrolieris, kas iegūst prasmes kopā ar uzdevumiem
     def getTopic():
-        skill = request.args.get('skillIdentifier')
+        topic = request.args.get('topicIdentifier')
 
-        skill_details = json.loads(getSkillDetails(skill))
-        parentNumber = skill_details['results']['bindings'][0]['skillNumber']['value']
-        parentName = skill_details['results']['bindings'][0]['skillName']['value']
-        parentDesc = skill_details['results']['bindings'][0]['skillDesc']['value']
+        topic_details = json.loads(getTopicDetails(topic))
+        parentNumber = topic_details['results']['bindings'][0]['topicNumber']['value']
+        parentName = topic_details['results']['bindings'][0]['topicName']['value']
+        parentDesc = topic_details['results']['bindings'][0]['topicDesc']['value']
         parentDesc = mathBeautify(parentDesc)
 
-        all_skills = json.loads(getAllSkillChildren(skill))
-        skill_list = []
-        for skill_item in all_skills['results']['bindings']: # all_skills saraksts ar vārdnīcām
-            prefLabel = skill_item['prefLabel']['value']
-            skillName = skill_item['skillName']['value']
-            skillName = mathBeautify(skillName)
-            skillNum = skill_item['num']['value']
-            dd = {'prefLabel': prefLabel, 'skillNum': skillNum, 'skillName': skillName}
-            skill_list.append(dd)
+        all_topics = json.loads(getAllTopicChildren(topic))
+        topic_list = []
+        for topic_item in all_topics['results']['bindings']: # all_topics saraksts ar vārdnīcām
+            prefLabel = topic_item['prefLabel']['value']
+            topicName = topic_item['topicName']['value']
+            topicName = mathBeautify(topicName)
+            topicNum = topic_item['num']['value']
+            dd = {'prefLabel': prefLabel, 'topicNum': topicNum, 'topicName': topicName}
+            topic_list.append(dd)
 
-        data = json.loads(getSkillProblemsSPARQL(skill))
+        data = json.loads(getTopicProblemsSPARQL(topic))
         problem_list = []
         for data_item in data['results']['bindings']:
             problemTextHtml = data_item['text']['value']
@@ -1170,12 +1246,12 @@ def create_app(test_config=None):
             problem_list.append({'problemid': data_item['problemid']['value'], 'text': problemTextHtml})
 
         template_context = {
-            'skill': skill,
+            'topic': topic,
             'parentNumber': parentNumber,
             'parentName': parentName,
             'parentDesc': parentDesc,
             'problem_list': problem_list,
-            'skill_list' : skill_list,
+            'topic_list' : topic_list,
             'active': 'topics',
             'lang': session.get('lang', 'lv'),
             'title': 'Tēma'
@@ -1274,10 +1350,8 @@ def create_app(test_config=None):
         problemBookSection = "NA"
         problemGrade = "NA"
         problem_number = "NA"
-        problemStrategy = "NA"
         LTopic = "NA"
         topic = "NA"
-        strategy = "NA"
         concepts = "NA"
         questionType = "NA"
         domain = "NA"
@@ -1298,9 +1372,6 @@ def create_app(test_config=None):
             problemGrade = data['results']['bindings'][0]['problemGrade']['value']
         if 'problem_number' in data['results']['bindings'][0]:
             problem_number = data['results']['bindings'][0]['problem_number']['value']
-
-        if 'strategy' in data['results']['bindings'][0]:
-            strategy = data['results']['bindings'][0]['strategy']['value']
         if 'topic' in data['results']['bindings'][0]:
             topic = data['results']['bindings'][0]['topic']['value']
         if 'LTopic' in data['results']['bindings'][0]:
@@ -1332,8 +1403,6 @@ def create_app(test_config=None):
             metaitems.append({'key': 'LTopic', 'value': LTopic})
         if topic != 'NA':
             metaitems.append({'key': 'topic', 'value': topic.replace('http://www.dudajevagatve.lv/eliozo#', '')})
-        if strategy != 'NA':
-            metaitems.append({'key': 'strategy', 'value': strategy})
         if concepts != 'NA':
             metaitems.append({'key': 'concepts', 'value': concepts.replace('http://www.dudajevagatve.lv/eliozo#TRM-','')})
         if questionType != 'NA':
@@ -1430,6 +1499,9 @@ def create_app(test_config=None):
         template_context = {
             'links': olympiadData,
             'active': 'archive',
+            'navlinks': [
+                {'url':'getArchive', 'title':'Archive'}
+            ],
             'lang': session.get('lang', 'lv'),
             'title': 'Arhīvs'
         }
@@ -1505,9 +1577,13 @@ def create_app(test_config=None):
         template_context = {
             'olympiads': olympiads,
             'all_counts': all_counts,
-            'active': 'video',
+            'active': 'statistics',
+            'navlinks': [
+                {'title':'Statistics'}, 
+                {'url':'getProblemCounts', 'title':'Problem Count'}
+            ],
             'lang': session.get('lang', 'lv'),
-            'title': 'OlimpiādeAAA'
+            'title': 'Problem Count'
         }
 
         return render_template('stats_problemcounts.html', **template_context)
@@ -1516,9 +1592,13 @@ def create_app(test_config=None):
     @app.route('/results', methods=['GET', 'POST'])
     def getResults():
         template_context = {
-            'active': 'video',
+            'active': 'statistics',
+            'navlinks': [
+                {'title':'Statistics'}, 
+                {'url':'getResults', 'title':'Result Summary'}
+            ],
             'lang': session.get('lang', 'lv'),
-            'title': 'OlimpiādeBBB'
+            'title': 'Result Summary'
         }
 
         return render_template('stats_results.html', **template_context)
@@ -1541,7 +1621,11 @@ def create_app(test_config=None):
 
         template_context = {
             'all_problemids' : all_problemids,
-            'active': 'video',
+            'active': 'statistics',
+            'navlinks': [
+                {'title':'Statistics'}, 
+                {'url':'getVideo', 'title':'Video'}
+            ],
             'lang': session.get('lang', 'lv'),
             'title': 'Video'
         }
@@ -1586,8 +1670,24 @@ def create_app(test_config=None):
             'grade': grade,
             'olympiad': olympiad,
             'active': 'archive',
+            'navlinks': [
+                {
+                    'url': 'getArchive', 
+                    'title': 'Archive'
+                }, 
+                {
+                    'url': 'getGrades', 
+                    'params': {
+                        'event': event, 
+                        'country': country, 
+                        'grade': grade, 
+                        'olympiad': olympiad
+                    },
+                    'title': f'{country}.{olympiad}.{event}'
+                }
+            ],
             'lang': session.get('lang', 'lv'),
-            'title': 'Klase'
+            'title': f'{country}.{olympiad}.{event}'
         }
 
         return render_template('grade_content.html', **template_context)

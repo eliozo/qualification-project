@@ -60,20 +60,9 @@ def readCSVfile(g, topicDictionary, depthDictionary, allIDs, allAttributes): # F
                 allIDs[sortingLabel] = topicID
                 allAttributes[topicID] = {'parentID': parentTopicId, 'title': myTitle, 'descr': myDescription, 'url': myURL}
 
-
-            # skill_numeric_id = row[0]+'.'+row[1]+'.'+row[2]+'.'+row[3]+'.'+row[4]
-            # skill_id = row[5]
-            # skill_prefLabel = row[5]
-            # skill_description = row[6]
-            # x = skill_id.rfind(".")
-            # if x == -1:
-            #     parent_skill_id = '' # Nav vecāka
-            # else:
-            #     parent_skill_id = skill_id[:x]
-            # addToRdfGraph(g, skill_numeric_id, skill_id, skill_description, skill_prefLabel, parent_skill_id)
     print(f'line_count = {line_count}')
 
-# skillDescription ir string mainīgais, kurā glabājas RDF objekta vērtība
+# topicDescription ir string mainīgais, kurā glabājas RDF objekta vērtība
 def addToRdfGraph(g, topicID, sorter, topicTitle, topicDescription, topicUrl, parentTopicID):
     global eliozo_ns
     topic_node = rdflib.URIRef(eliozo_ns+topicID) # RDF subjekts
@@ -83,8 +72,8 @@ def addToRdfGraph(g, topicID, sorter, topicTitle, topicDescription, topicUrl, pa
     topic_title_property = rdflib.URIRef(eliozo_ns+'topicTitle') # ''
     topic_url_property = rdflib.URIRef(SKOS+'topicUrl')
     topic_rdf_type_property = rdflib.URIRef(RDF_NS+'type')
-    skill_broader_property = rdflib.URIRef(SKOS+'broader')
-    skill_narrower_property = rdflib.URIRef(SKOS+'narrower')
+    topic_broader_property = rdflib.URIRef(SKOS+'broader')
+    topic_narrower_property = rdflib.URIRef(SKOS+'narrower')
 
     g.add((topic_node, topic_id_property, rdflib.term.Literal(topicID)))
     g.add((topic_node, topic_sorter_property, rdflib.term.Literal(sorter)))
@@ -92,11 +81,10 @@ def addToRdfGraph(g, topicID, sorter, topicTitle, topicDescription, topicUrl, pa
     g.add((topic_node, topic_description_property, rdflib.term.Literal(topicDescription)))
     g.add((topic_node, topic_rdf_type_property, rdflib.URIRef(eliozo_ns+"Topic")))
     g.add((topic_node, topic_url_property, rdflib.term.Literal(topicUrl)))
-    # g.add((topic_node, skill_prefLabel_property, rdflib.term.Literal(prefLabel)))
     if parentTopicID != '' and parentTopicID != 'TOP':
         parent_topic_node = rdflib.URIRef(eliozo_ns+parentTopicID)
-        g.add((topic_node, skill_broader_property, parent_topic_node)) # bērns iedur vecākam
-        g.add((parent_topic_node, skill_narrower_property, topic_node)) # vecāks iedur bērnam
+        g.add((topic_node, topic_broader_property, parent_topic_node)) # bērns iedur vecākam
+        g.add((parent_topic_node, topic_narrower_property, topic_node)) # vecāks iedur bērnam
     
 
 def produceCSVtoRDF(in_file, out_file): # Pārveido CSV failu par RDF failu
@@ -131,11 +119,7 @@ def produceCSVtoRDF(in_file, out_file): # Pārveido CSV failu par RDF failu
         title = allAttributes[topicID]['title']
         description = allAttributes[topicID]['descr']
         url = allAttributes[topicID]['url']
-
-        # subtopics = topicDictionary[topicID]
-        # print(f'map {topicID} to ({kk}, {parentTopicID}): {subtopics}')
         addToRdfGraph(g, topicID, kk, title, description, url, parentTopicID)
-        # print(f'{topicID}: {kk}')
 
     g.serialize(destination=out_file)
 

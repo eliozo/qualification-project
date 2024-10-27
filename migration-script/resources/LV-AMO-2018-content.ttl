@@ -264,7 +264,7 @@ $$\\log _{81} 96=\\frac{14-\\log _{48} 54}{16 \\log _{48} 54-4}$$"""@lv ;
 
 eliozo:LV.AMO.2018.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2018" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
@@ -283,7 +283,7 @@ dažādi.)</p>"""@lv ;
     eliozo:problemTimeID "2018" ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindCount" ;
     eliozo:suffix "LV.AMO.2018.12" ;
     eliozo:suggestedGrade 12 .
 
@@ -341,8 +341,9 @@ ciparus. Zināms, ka $A+B=10^{45}$. Pierādīt, ka gan $A$, gan $B$ dalās ar $5
 
 eliozo:LV.AMO.2018.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2018" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -365,7 +366,8 @@ trijstūris?</p>
     eliozo:problemTimeID "2018" ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove",
+        "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2018.12" ;
     eliozo:suggestedGrade 12 .
 

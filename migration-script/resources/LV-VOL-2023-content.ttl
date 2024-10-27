@@ -2,10 +2,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 eliozo:LV.VOL.2023.10.1 a eliozo:Problem ;
-    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.VOL.2023" ;
+    eliozo:method "PolynomialTransformations" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -59,7 +59,6 @@ kausiem tā, lai izpildās abi nosacījumi:</p>
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2023.10.3 a eliozo:Problem ;
-    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.VOL.2023" ;
@@ -91,6 +90,7 @@ pēdējā skaitļa vērtības!</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindAll" ;
+    eliozo:subdomain "FixedInvariant" ;
     eliozo:suffix "LV.VOL.2023.10" ;
     eliozo:suggestedGrade 10 .
 
@@ -118,10 +118,10 @@ un $\\sphericalangle ABC = 2 \\sphericalangle ADC$. Aprēķināt $\\sphericalang
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2023.10.5 a eliozo:Problem ;
-    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.VOL.2023" ;
+    eliozo:method "AugmentationWithNewElements" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -152,10 +152,10 @@ apli uzrakstītie skaitļi kļūst vienādi?</p>"""@lv ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.VOL.2023.11.1 a eliozo:Problem ;
-    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.VOL.2023" ;
+    eliozo:method "PolynomialTransformations" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -203,10 +203,10 @@ jebkura cita, samainot vietām tā ciparus. Kāda ir mazākā iespējamā
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2023.11.3 a eliozo:Problem ;
-    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.VOL.2023" ;
+    eliozo:method "AugmentationWithNewElements" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -286,10 +286,10 @@ Kādas ir iespējamās naturālās šīs skaitļa vērtības?</p>"""@lv ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.VOL.2023.12.1 a eliozo:Problem ;
-    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.VOL.2023" ;
+    eliozo:method "PolynomialTransformations" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -471,10 +471,10 @@ kausiem tā, lai izpildās abi nosacijumi:</p>
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2023.9.3 a eliozo:Problem ;
-    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.VOL.2023" ;
+    eliozo:method "AugmentationWithNewElements" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -526,10 +526,10 @@ Kādām reālām $m$ vērtībām trijstūris $ABC$ ir taisnleṇka trijstūris?<
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.VOL.2023.9.5 a eliozo:Problem ;
-    eliozo:LTopic "LTExtremeElement" ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.VOL.2023" ;
+    eliozo:method "ExtremeElements" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;

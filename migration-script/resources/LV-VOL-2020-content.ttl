@@ -215,8 +215,9 @@ saknes ir <strong>a)</strong> veseli skaitļi, <strong>b)</strong> racionāli sk
 
 eliozo:LV.VOL.2020.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:event "LV.VOL.2020" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -234,7 +235,7 @@ izvēlētajā rindā, vai izvēlētajā kolonnā (vai abās).</p>"""@lv ;
     eliozo:problemTimeID "2020" ;
     eliozo:problemYear 2020 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.VOL.2020.11" ;
     eliozo:suggestedGrade 11 .
 

@@ -114,7 +114,7 @@
                 {#
                 <li class="{{ 'active' if active == 'video' else '' }}"><a href="{{ url_for('getVideo') }}">{% trans %}Video{% endtrans %}</a></li>        
                 #}
-                <li class="dropdown {{ 'active' if active == 'references' else '' }}">
+                <li class="dropdown {{ 'active' if active == 'statistics' else '' }}">
                     <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         {% trans %}Statistics{% endtrans %} <span class="caret"></span>
                     </a>
@@ -140,6 +140,24 @@
         </div>
     </div>
 </nav>
+
+
+<p style="padding-left: 15px; padding-bottom: 0px; font-size:80%;">
+    <a href="{{ url_for('main') }}">{% trans %}Home{% endtrans %}</a>{% if navlinks %} &gt;{% endif %}
+    {% for navlink in navlinks %}
+    {% if navlink.url %}
+    <a href="{% if navlink.params %}{{ url_for(navlink.url, **navlink.params) }}{% 
+        else %}{{ url_for(navlink.url) }}{% endif %}">
+        {% if loop.last %}<b>{{ _(navlink.title) }}</b>{% else %}{{ _(navlink.title) }}{% endif %}
+    </a> 
+    {% else %}
+    {{ _(navlink.title) }}
+    {% endif %}
+    {% if not loop.last %} &gt;{% endif %}
+    {% endfor %}
+</p>
+
+
 <div class="container-fluid text-center mycontainer" style="padding-left: 12px; padding-top: 12px;">
     {% block content %}{% endblock %}
 </div>

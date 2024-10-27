@@ -1,9 +1,7 @@
 {% extends 'global.html' %}
 
 {% block content %}
-       <div class="text-left">
-
-               <a href="{{ url_for('main') }}"class="button">{% trans %}Back{% endtrans %}</a>
+<div class="text-left">
     <div class="container">
         {{jsonfile}}
     </div>
@@ -80,12 +78,12 @@ data-parent="#accordion" href="#collapse{{L2_topic.label}}">{{ L2_topic.number }
                 <th>Apraksts</th>
                 <th>Piemēri</th>
             </tr>
-            {% for skill in all_skills %}
+            {% for topic in all_topics %}
             <tr class="{{ loop.cycle('odd', 'even') }}">
-                <td>{{ all_skill_info[skill].skillNumber |safe }}</td>
-                <td><a href="{{ url_for('getTopic',skillIdentifier=skill) }}" title="{{ skill }}">{{ all_skill_info[skill].skillName |safe }}</a></td>
-                <td>{{ all_skill_info[skill].skillDescription |safe }}</td>
-                <td>{% for problem in all_skill_info[skill].problems %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                <td>{{ all_topic_info[topic].topicNumber |safe }}</td>
+                <td><a href="{{ url_for('getTopic',topicIdentifier=topic) }}" title="{{ topic }}">{{ all_topic_info[topic].topicName |safe }}</a></td>
+                <td>{{ all_topic_info[topic].topicDescription |safe }}</td>
+                <td>{% for problem in all_topic_info[topic].problems %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
                         problem }}</a>, {% endfor %} </td>
             </tr>
             {% endfor %}

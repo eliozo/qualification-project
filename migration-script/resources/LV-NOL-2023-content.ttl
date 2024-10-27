@@ -53,10 +53,10 @@ kas var būt atzīmēti uz papīra lapas?</p>"""@lv ;
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.NOL.2023.10.3 a eliozo:Problem ;
-    eliozo:LTopic "StructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2023" ;
+    eliozo:method "AugmentationWithNewElements" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -126,10 +126,10 @@ Kāds var būt komandu skaits, kas piedalījās šajā turnīrā?
     eliozo:suggestedGrade 10 .
 
 eliozo:LV.NOL.2023.11.1 a eliozo:Problem ;
-    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.NOL.2023" ;
+    eliozo:method "PolynomialTransformations" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -147,10 +147,11 @@ eliozo:LV.NOL.2023.11.1 a eliozo:Problem ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2023.11.2 a eliozo:Problem ;
-    eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2023" ;
+    eliozo:method "ContradictionForExistence",
+        "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -175,10 +176,10 @@ trīs rūḳus, kas visi savā starpā draudzējas, ja šajā zemē ir
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2023.11.3 a eliozo:Problem ;
-    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2023" ;
+    eliozo:method "AugmentationWithNewElements" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -204,10 +205,10 @@ ja $\\frac{AE}{EB}=\\frac{2}{5}$.</p>"""@lv ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2023.11.4 a eliozo:Problem ;
-    eliozo:LTopic "LTContradiction" ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.NOL.2023" ;
+    eliozo:method "ContradictionForExistence" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -272,10 +273,10 @@ naturālo skaitļu permutācijas!</p>"""@lv ;
     eliozo:suggestedGrade 11 .
 
 eliozo:LV.NOL.2023.12.1 a eliozo:Problem ;
-    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.NOL.2023" ;
+    eliozo:method "PolynomialTransformations" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -297,10 +298,10 @@ skaitliem $x, y, z$ ir spēkā nevienādība:</p>
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.NOL.2023.12.2 a eliozo:Problem ;
-    eliozo:LTopic "LTMeanValuePrinciple" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2023" ;
+    eliozo:method "PigeonholePrincipleBasic" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -350,10 +351,10 @@ un $E$. Pierādīt, ka $AD < 2AE$.</p>"""@lv ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.NOL.2023.12.4 a eliozo:Problem ;
-    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.NOL.2023" ;
+    eliozo:method "PolynomialTransformations" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -373,10 +374,10 @@ formā $27n+11$, kur $n$ ir naturāls skaitlis.</p>"""@lv ;
     eliozo:suggestedGrade 12 .
 
 eliozo:LV.NOL.2023.12.5 a eliozo:Problem ;
-    eliozo:LTopic "LTInduction" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2023" ;
+    eliozo:method "InductionWithStepOne" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -442,7 +443,6 @@ vienu veidu, kā to var izdarīt.</p>
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2023.5.2 a eliozo:Problem ;
-    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2023" ;
@@ -478,6 +478,7 @@ taciņas var krustoties. Vai iespējams, ka no mājiņām iziet attiecīgi:
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "FixedInvariant" ;
     eliozo:suffix "LV.NOL.2023.5" ;
     eliozo:suggestedGrade 5 .
 
@@ -533,7 +534,6 @@ summu tā, lai katru divu šo skaitļu summa dalītos ar trešo skaitli!</p>"""@
     eliozo:suggestedGrade 5 .
 
 eliozo:LV.NOL.2023.5.5 a eliozo:Problem ;
-    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2023" ;
@@ -555,6 +555,7 @@ sarkanās un zilās monētas, ja sākumā ir dota viena sarkana monēta?</p>"""@
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "FixedInvariant" ;
     eliozo:suffix "LV.NOL.2023.5" ;
     eliozo:suggestedGrade 5 .
 
@@ -586,7 +587,6 @@ vietā, lai vienādība</p>
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2023.6.2 a eliozo:Problem ;
-    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2023" ;
@@ -608,6 +608,7 @@ krustoties. Vai iespējams, ka no mājiņām iziet attiecīgi:<br />
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "FixedInvariant" ;
     eliozo:suffix "LV.NOL.2023.6" ;
     eliozo:suggestedGrade 6 .
 
@@ -661,7 +662,6 @@ ar atlikušo skaitli?</p>"""@lv ;
     eliozo:suggestedGrade 6 .
 
 eliozo:LV.NOL.2023.6.5 a eliozo:Problem ;
-    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.NOL.2023" ;
@@ -683,6 +683,7 @@ Vai, vairākkārt izpildot šādus gājienus, no skaitla $17$ var iegūt:
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "FixedInvariant" ;
     eliozo:suffix "LV.NOL.2023.6" ;
     eliozo:suggestedGrade 6 .
 
@@ -715,7 +716,6 @@ būtu ierakstīti rūtiņās ar kopīgu malu?</p>
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2023.7.2 a eliozo:Problem ;
-    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2023" ;
@@ -735,14 +735,15 @@ $5$ citām lampiņām?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "FixedInvariant" ;
     eliozo:suffix "LV.NOL.2023.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2023.7.3 a eliozo:Problem ;
-    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2023" ;
+    eliozo:method "AugmentationWithNewElements" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -784,7 +785,6 @@ ir tikpat ciparu, cik skaitlim $n^{3}$?</p>"""@lv ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2023.7.5 a eliozo:Problem ;
-    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2023" ;
@@ -812,6 +812,7 @@ ja sākumā kastē atrodas:<br />
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "FixedInvariant" ;
     eliozo:suffix "LV.NOL.2023.7" ;
     eliozo:suggestedGrade 7 .
 
@@ -846,7 +847,6 @@ Pietiek parādīt vienu veidu, kā to var izdarīt.</p>
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.NOL.2023.8.2 a eliozo:Problem ;
-    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2023" ;
@@ -868,14 +868,15 @@ nedraudzējas. Vai var gadīties, ka <strong>(A)</strong> $m=11$, <strong>(B)</s
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "FixedInvariant" ;
     eliozo:suffix "LV.NOL.2023.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.NOL.2023.8.3 a eliozo:Problem ;
-    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2023" ;
+    eliozo:method "AugmentationWithNewElements" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -975,7 +976,6 @@ $x$; $x+2$; $x+4$; $x+6$; $x+8$ vienlaicīgi var būt pirmskaitḷi?</p>"""@lv ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.NOL.2023.9.2 a eliozo:Problem ;
-    eliozo:LTopic "LTInvariant" ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2023" ;
@@ -997,14 +997,15 @@ katram rūķim ir tieši $9$ draugi?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain "FixedInvariant" ;
     eliozo:suffix "LV.NOL.2023.9" ;
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.NOL.2023.9.3 a eliozo:Problem ;
-    eliozo:LTopic "LTStructureAugmentation" ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2023" ;
+    eliozo:method "AugmentationWithNewElements" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1024,10 +1025,10 @@ Zināms, ka $CD \\| BX$. Aprēķināt $AD$ garumu, ja $BX=3, BC=7$ un $CD=6$.</p
     eliozo:suggestedGrade 9 .
 
 eliozo:LV.NOL.2023.9.4 a eliozo:Problem ;
-    eliozo:LTopic "LTExpressionTransforms" ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.NOL.2023" ;
+    eliozo:method "PolynomialTransformations" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
