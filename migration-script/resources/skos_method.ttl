@@ -1,0 +1,418 @@
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+eliozo:AlgebraicModel a eliozo:Method ;
+    eliozo:methodDescription "Teksta uzdevumu vai ģeometrijas uzdevumu risinājumi, ja uzdevuma jēdzienus risinājumā aizstāj ar algebriskiem mainīgajiem un izteiksmēm." ;
+    eliozo:methodID "AlgebraicModel" ;
+    eliozo:methodName "Algebrisks modelis" ;
+    eliozo:methodNumber "6.1" ;
+    skos:broader eliozo:InterpretationMethod ;
+    skos:prefLabel "AlgebraicModel" .
+
+eliozo:AlgorithmAnalysis a eliozo:Method ;
+    eliozo:methodDescription "Algoritmu izpratne, analīze, izstrāde, optimizācija. Nealgoritmisku uzdevumu pārveidošana par algoritmiem vai otrādi; ātrdarbības analīze. Optimizācijas uzdevumi, kuros atļauts izmantot ierobežotu skaitu svēršanu vai citu soļu." ;
+    eliozo:methodID "AlgorithmAnalysis" ;
+    eliozo:methodName "Algoritmu analīze" ;
+    eliozo:methodNumber "9.1" ;
+    skos:broader eliozo:Algorithms ;
+    skos:prefLabel "AlgorithmAnalysis" .
+
+eliozo:AugmentationWithNewElements a eliozo:Method ;
+    eliozo:methodDescription "Jaunu elementu pievienošana eksistējošām konstrukcijām." ;
+    eliozo:methodID "AugmentationWithNewElements" ;
+    eliozo:methodName "Papildināšana ar jauniem elementiem" ;
+    eliozo:methodNumber "8.1" ;
+    skos:broader eliozo:Augmentation ;
+    skos:prefLabel "AugmentationWithNewElements" .
+
+eliozo:AuxiliaryColoring a eliozo:Method ;
+    eliozo:methodDescription "Risinājumi, kur uzdevuma objektus izkrāso galīgā skaitā krāsu." ;
+    eliozo:methodID "AuxiliaryColoring" ;
+    eliozo:methodName "Papildināšana ar krāsojumiem" ;
+    eliozo:methodNumber "8.2" ;
+    skos:broader eliozo:Augmentation ;
+    skos:prefLabel "AuxiliaryColoring" .
+
+eliozo:ContinuousPigeonholePrinciple a eliozo:Method ;
+    eliozo:methodDescription "Dirihlē principa vispārinājumi, kur saskaitāmie lielumi ir reāli nevis naturāli skaitļi" ;
+    eliozo:methodID "ContinuousPigeonholePrinciple" ;
+    eliozo:methodName "Nepārtrauktais Dirihlē princips" ;
+    eliozo:methodNumber "2.3" ;
+    skos:broader eliozo:MeanValuePrinciple ;
+    skos:prefLabel "ContinuousPigeonholePrinciple" .
+
+eliozo:ContradictionForExistence a eliozo:Method ;
+    eliozo:methodDescription "Pieņemam kāda objekta eksistēšanu un iegūstam no tā pretrunu. Šo izmanto arī induktīvie pierādījumi, kas balstās uz laba sakārtojuma īpašību (katrā netukšā kopā eksistē mazākais elements). " ;
+    eliozo:methodID "ContradictionForExistence" ;
+    eliozo:methodName "Neeksistence no pretējā" ;
+    eliozo:methodNumber "5.1" ;
+    skos:broader eliozo:ContradictionMethod ;
+    skos:prefLabel "ContradictionForExistence" .
+
+eliozo:ContradictionForNonExistence a eliozo:Method ;
+    eliozo:methodDescription "Pieņemam kāda objekta neeksistēšanu un iegūstam no tā pretrunu. Šajā sadaļā ietilpst nekonstruktīvie pierādījumi; piemēram, divu spēlētāju spēles analīze ar stratēģijas nozagšanu." ;
+    eliozo:methodID "ContradictionForNonExistence" ;
+    eliozo:methodName "Eksistence no pretējā" ;
+    eliozo:methodNumber "5.2" ;
+    skos:broader eliozo:ContradictionMethod ;
+    skos:prefLabel "ContradictionForNonExistence" .
+
+eliozo:CoordinateMethod a eliozo:Method ;
+    eliozo:methodDescription "Risinājumi, kas izmanto Dekarta, polārās vai līdzīgas koordinātes, kas apraksta plaknes/telpas punktus. Arī vektoru algebras un komplekso skaitļu metodes." ;
+    eliozo:methodID "CoordinateMethod" ;
+    eliozo:methodName "Koordinātu metode" ;
+    eliozo:methodNumber "6.2" ;
+    skos:broader eliozo:InterpretationMethod ;
+    skos:prefLabel "CoordinateMethod" .
+
+eliozo:DivideAndConquerAlgorithms a eliozo:Method ;
+    eliozo:methodDescription "Metodes, kas atkārtoti dala ievades datus vairākās daļās." ;
+    eliozo:methodID "DivideAndConquerAlgorithms" ;
+    eliozo:methodName "“Skaldi un valdi” paradigma" ;
+    eliozo:methodNumber "9.4" ;
+    skos:broader eliozo:Algorithms ;
+    skos:prefLabel "DivideAndConquerAlgorithms" .
+
+eliozo:DynamicProgrammingAlgorithms a eliozo:Method ;
+    eliozo:methodDescription "Metodes, kas taupa laiku, iegaumējot starprezultātus, ko izmantot vēlāk, kas aizpilda dažādas tabulas ar datiem, ieraksta datus kokos vai līdzīgās datu struktūrās." ;
+    eliozo:methodID "DynamicProgrammingAlgorithms" ;
+    eliozo:methodName "Dinamiskā programmēšana" ;
+    eliozo:methodNumber "9.6" ;
+    skos:broader eliozo:Algorithms ;
+    skos:prefLabel "DynamicProgrammingAlgorithms" .
+
+eliozo:ExhaustiveAlgorithms a eliozo:Method ;
+    eliozo:methodDescription "Risināšanas metodes, kas izmanto pilno pārlasi, pārdomātā secībā aplūko gadījumus. Arī risinājumi, kas apstaigā gadījumu koku -- iegūst atrisinājumu ar sistemātisku variantu pārlasi, izveidojot \"backtracking\" koku un apstaigājot to." ;
+    eliozo:methodID "ExhaustiveAlgorithms" ;
+    eliozo:methodName "Pārlases algoritmi" ;
+    eliozo:methodNumber "9.2" ;
+    skos:broader eliozo:Algorithms ;
+    skos:prefLabel "ExhaustiveAlgorithms" .
+
+eliozo:ExtremeConstructions a eliozo:Method ;
+    eliozo:methodDescription "Risinājumi, kuros konstruē jaunus objektus ar ekstrēmām īpašībām un izmantotas to īpašības. Piemēram punktu kopas izliektais apvalks, bināru attiecību transitīvais vai simetriskais slēgums, kopu saimes šķēlums, lielākais kopīgais dalāmais utml." ;
+    eliozo:methodID "ExtremeConstructions" ;
+    eliozo:methodName "Ekstremālas konstrukcijas" ;
+    eliozo:methodNumber "3.2" ;
+    skos:broader eliozo:ExtremePrinciple ;
+    skos:prefLabel "ExtremeConstructions" .
+
+eliozo:ExtremeElements a eliozo:Method ;
+    eliozo:methodDescription "Risinājumi, kuros izdala elekementu ar ekstremālu īpašību un izmanto to tālākos novērtējumos vai konstrukcijās." ;
+    eliozo:methodID "ExtremeElements" ;
+    eliozo:methodName "Ekstremālie elementi" ;
+    eliozo:methodNumber "3.1" ;
+    skos:broader eliozo:ExtremePrinciple ;
+    skos:prefLabel "ExtremeElements" .
+
+eliozo:FixedInvariant a eliozo:Method ;
+    eliozo:methodDescription "Risinājumi, kuros izraudzītais invariants saglabājas nemainīgs soļu izpildes laikā un to var izmantot neiespējamības pierādījumos (kopā ar metodi \"Pierādījums no pretējā\")." ;
+    eliozo:methodID "FixedInvariant" ;
+    eliozo:methodName "Fiksēts invariants" ;
+    eliozo:methodNumber "4.1" ;
+    skos:broader eliozo:InvariantMethod ;
+    skos:prefLabel "FixedInvariant" .
+
+eliozo:GeometricInterpretation a eliozo:Method ;
+    eliozo:methodDescription "Ģeometriska interpretācija neģeometriskam uzdevumam. Arī citas telpiskas interpretācijas vai vizualizācijas, kurās attēls vai diagramma ir būtiska risinājuma sastāvdaļa." ;
+    eliozo:methodID "GeometricInterpretation" ;
+    eliozo:methodName "Ģeometriska interpretācija" ;
+    eliozo:methodNumber "6.3" ;
+    skos:broader eliozo:InterpretationMethod ;
+    skos:prefLabel "GeometricInterpretation" .
+
+eliozo:GraphTransformations a eliozo:Method ;
+    eliozo:methodDescription "Grafu pārveidojumi un to pārzīmēšana par izomorfiem grafiem. " ;
+    eliozo:methodID "GraphTransformations" ;
+    eliozo:methodName "Pārveidojumi grafos" ;
+    eliozo:methodNumber "7.3" ;
+    skos:broader eliozo:Transformations ;
+    skos:prefLabel "GraphTransformations" .
+
+eliozo:GreedyAlgorithms a eliozo:Method ;
+    eliozo:methodDescription "Algoritmi, kuri meklē labāko risinājumu ar lokālām optimizācijām, katrā solī pievienojot lielāko uzlabojumu." ;
+    eliozo:methodID "GreedyAlgorithms" ;
+    eliozo:methodName "Rijīgie algoritmi" ;
+    eliozo:methodNumber "9.7" ;
+    skos:broader eliozo:Algorithms ;
+    skos:prefLabel "GreedyAlgorithms" .
+
+eliozo:InductionConstructions a eliozo:Method ;
+    eliozo:methodDescription "Induktīvas konstrukcijas; rekurenti definētas virknes; algoritmu pareizības pierādījumi." ;
+    eliozo:methodID "InductionConstructions" ;
+    eliozo:methodName "Induktīvas konstrukcijas" ;
+    eliozo:methodNumber "1.7" ;
+    skos:broader eliozo:MathematicalInduction ;
+    skos:prefLabel "InductionConstructions" .
+
+eliozo:InductionInfiniteDescent a eliozo:Method ;
+    eliozo:methodDescription "Labi sakārtotu kopu definīcijas izmantošana (katrā netukšā kopā ir mazākais elements) - induktīvs spriedums bezgalīgā kritiena formā." ;
+    eliozo:methodID "InductionInfiniteDescent" ;
+    eliozo:methodName "Bezgalīgā kritiena metode" ;
+    eliozo:methodNumber "1.9" ;
+    skos:broader eliozo:MathematicalInduction ;
+    skos:prefLabel "InductionInfiniteDescent" .
+
+eliozo:InductionStructural a eliozo:Method ;
+    eliozo:methodDescription "Indukcija kokveida hierarhijā, algebriskā izteiksmē. Piemēram, apgalvojumu dotajai algebriskai izteiksmei reducē uz apgalvojumiem par tās apakšizteiksmēm; kombinatoriskas ģeometrijas uzdevumi, kurus reducē uz vienkāršākiem gadījumiem." ;
+    eliozo:methodID "InductionStructural" ;
+    eliozo:methodName "Strukturālā indukcija" ;
+    eliozo:methodNumber "1.6" ;
+    skos:broader eliozo:MathematicalInduction ;
+    skos:prefLabel "InductionStructural" .
+
+eliozo:InductionWithCombinedStep a eliozo:Method ;
+    eliozo:methodDescription "Matemātiskā indukcija $k,k+1 \\rightarrow k+2$ vai pēc līdzīgas saliktas shēmas. Piemēram, apgalvojumi par Fibonači skaitļiem un citām lineārām rekurencēm." ;
+    eliozo:methodID "InductionWithCombinedStep" ;
+    eliozo:methodName "Kombinēts indukcijas solis" ;
+    eliozo:methodNumber "1.3" ;
+    skos:broader eliozo:MathematicalInduction ;
+    skos:prefLabel "InductionWithCombinedStep" .
+
+eliozo:InductionWithLargerStep a eliozo:Method ;
+    eliozo:methodDescription "Matemātiskā indukcija $k \\rightarrow k+a$. Indukcijas solis, kas lielāks par $1$; šajā gadījumā arī indukcijas bāzei jābūt lielākai. Piemēram, viena spriedumu ķēdīte sāk ar $P(1)$ un pierāda apgalvojumu visiem nepāra skaitļiem; otra sāk ar $P(2)$ un pierāda apgalvojumu visiem pāra skaitļiem." ;
+    eliozo:methodID "InductionWithLargerStep" ;
+    eliozo:methodName "Indukcija ar lielāku soli" ;
+    eliozo:methodNumber "1.2" ;
+    skos:broader eliozo:MathematicalInduction ;
+    skos:prefLabel "InductionWithLargerStep" .
+
+eliozo:InductionWithStepOne a eliozo:Method ;
+    eliozo:methodDescription "Matemātiskā indukcija ar $k \\rightarrow k+1$. Biežākais induktīvo spriedumu veids parāda, kā no apgalvojuma $P(k)$ loģiski seko $P(k+1)$. " ;
+    eliozo:methodID "InductionWithStepOne" ;
+    eliozo:methodName "Indukcija ar soli 1" ;
+    eliozo:methodNumber "1.1" ;
+    skos:broader eliozo:MathematicalInduction ;
+    skos:prefLabel "InductionWithStepOne" .
+
+eliozo:InductiveAlgorithms a eliozo:Method ;
+    eliozo:methodDescription "Metodes, kas konstruē rezultātu induktīvi. Tai skaitā pielieto vienas un tās pašas funkcijas iterācijas vai arī iteratīvi uzlabo risinājumu." ;
+    eliozo:methodID "InductiveAlgorithms" ;
+    eliozo:methodName "Induktīvie algoritmi" ;
+    eliozo:methodNumber "9.3" ;
+    skos:broader eliozo:Algorithms ;
+    skos:prefLabel "InductiveAlgorithms" .
+
+eliozo:InterpretationWithCoding a eliozo:Method ;
+    eliozo:methodDescription "Uzdevumā aplūkojamo objektu aizstāšana ar galīgām simbolu virknītēm (kodējumiem), darbības ar šiem kodējumiem." ;
+    eliozo:methodID "InterpretationWithCoding" ;
+    eliozo:methodName "Interpretācija ar iekodēšanu" ;
+    eliozo:methodNumber "6.4" ;
+    skos:broader eliozo:InterpretationMethod ;
+    skos:prefLabel "InterpretationWithCoding" .
+
+eliozo:LinearTransformations a eliozo:Method ;
+    eliozo:methodDescription "Gausa izslēgšanas metode, determinants un inversā matrica. Matricu reizināšana ģeometrijā un grafu uzdevumos. Paplašinātā Eiklīda metode (Blankinšipa algoritms). Pārveidojumi lineārās programmēšanas uzdevumos. " ;
+    eliozo:methodID "LinearTransformations" ;
+    eliozo:methodName "Lineārās algebras pārveidojumi" ;
+    eliozo:methodNumber "7.2" ;
+    skos:broader eliozo:Transformations ;
+    skos:prefLabel "LinearTransformations" .
+
+eliozo:MeanWeights a eliozo:Method ;
+    eliozo:methodDescription "Masas centra īpašības, masu grupēšana, inerces moments, baricentriskās koordinātes. Šajos risinājumos vidējai vērtībai piemīt telpiska vai vizuāla interpretācija, ko vēlāk var iztulkot atpakaļ par matemātisku rezultātu. Tāds piemērs ir arī Jensena nevienādība (par izliektas/ieliektas funkcijas vērtību vidējo aritmētisko vai svērtu vidējo). Ja vien pašā uzdevumā nav minēti masu centri utml., masas centru metode lietota kopā ar interpretāciju metodi un jāapzīmē abas divas." ;
+    eliozo:methodID "MeanWeights" ;
+    eliozo:methodName "Masas centru metode" ;
+    eliozo:methodNumber "2.4" ;
+    skos:broader eliozo:MeanValuePrinciple ;
+    skos:prefLabel "MeanWeights" .
+
+eliozo:Monovariant a eliozo:Method ;
+    eliozo:methodDescription "Risinājumi, kuros izraudzītā izteiksme prognozējami mainās noteiktā virzienā (piemēram, visu laiku aug vai dilst). Šādos gadījumos invarianta ir, piemēram, nevienādība, kas saglabājas. Šādas izteiksmes sauc par pusinvariantiem vai monovariantiem." ;
+    eliozo:methodID "Monovariant" ;
+    eliozo:methodName "Monovariants" ;
+    eliozo:methodNumber "4.3" ;
+    skos:broader eliozo:InvariantMethod ;
+    skos:prefLabel "Monovariant" .
+
+eliozo:OrderingElements a eliozo:Method ;
+    eliozo:methodDescription "Risinājumi, kuros ekstremālos elementus aplūko ar mērķi sakārtot aplūkojamos datus, izmantojot dotu (vai risinātāja ieviestu) sakārtojuma attiecību." ;
+    eliozo:methodID "OrderingElements" ;
+    eliozo:methodName "Elementu kārtošana" ;
+    eliozo:methodNumber "3.3" ;
+    skos:broader eliozo:ExtremePrinciple ;
+    skos:prefLabel "OrderingElements" .
+
+eliozo:PeriodicInvariant a eliozo:Method ;
+    eliozo:methodDescription "Risinājumi, kuros izraudzītais invariants cikliski pieņem vairākas vērtības un to var prognozēt daudzus soļus uz priekšu." ;
+    eliozo:methodID "PeriodicInvariant" ;
+    eliozo:methodName "Periodisks invariants" ;
+    eliozo:methodNumber "4.2" ;
+    skos:broader eliozo:InvariantMethod ;
+    skos:prefLabel "PeriodicInvariant" .
+
+eliozo:PigeonholePrincipleBasic a eliozo:Method ;
+    eliozo:methodDescription "Risinājumi, kuros kopu sadala $N$ daļās un izvieto tajā $N+k$ objektus, lai parādītu, ka vismaz vienā kopā būs vismaz divi objekti. " ;
+    eliozo:methodID "PigeonholePrincipleBasic" ;
+    eliozo:methodName "Dirihlē princips" ;
+    eliozo:methodNumber "2.1" ;
+    skos:broader eliozo:MeanValuePrinciple ;
+    skos:prefLabel "PigeonholePrincipleBasic" .
+
+eliozo:PigeonholePrincipleGeneralized a eliozo:Method ;
+    eliozo:methodDescription "Risinājumi, kuros kopu dala $N$ daļās un izvieto tajā $M$ objektus, lai parādītu, ka vismaz vienā kopā būs $\\lceil M/N \\rceil$ objekti. Arī dažādu krāsu zeķu izvilkšana no atvilknēm un citas situācijas, kur objektu kategorijas ir atšķiramas, bet joprojām ir saskaitāmas." ;
+    eliozo:methodID "PigeonholePrincipleGeneralized" ;
+    eliozo:methodName "Vispārinātais Dirihlē princips" ;
+    eliozo:methodNumber "2.2" ;
+    skos:broader eliozo:MeanValuePrinciple ;
+    skos:prefLabel "PigeonholePrincipleGeneralized" .
+
+eliozo:PolynomialTransformations a eliozo:Method ;
+    eliozo:methodDescription "Risinājumi ar polinomu vai racionālu izteiksmju pārveidojumiem. Algebriskas identitātes. Hornera shēma." ;
+    eliozo:methodID "PolynomialTransformations" ;
+    eliozo:methodName "Polinomu pārveidojumi" ;
+    eliozo:methodNumber "7.1" ;
+    skos:broader eliozo:Transformations ;
+    skos:prefLabel "PolynomialTransformations" .
+
+eliozo:StrentheningInductiveHypothesis a eliozo:Method ;
+    eliozo:methodDescription "Indukcijas pierādījumi, kur jāstiprina apgalvojums un induktīvā hipotēze, lai varētu veikt pāreju. Paralēla indukcija, kur divas apgalvojumu virknītes izmanto hipotēzes viena no otras." ;
+    eliozo:methodID "StrentheningInductiveHypothesis" ;
+    eliozo:methodName "Induktīvās hipotēzes pastiprināšana" ;
+    eliozo:methodNumber "1.8" ;
+    skos:broader eliozo:MathematicalInduction ;
+    skos:prefLabel "StrentheningInductiveHypothesis" .
+
+eliozo:StrongInduction a eliozo:Method ;
+    eliozo:methodDescription "Indukcija ar stipru indukcijas pieņēmumu $\\leq k \\rightarrow k+1$." ;
+    eliozo:methodID "StrongInduction" ;
+    eliozo:methodName "Stiprā indukcija" ;
+    eliozo:methodNumber "1.4" ;
+    skos:broader eliozo:MathematicalInduction ;
+    skos:prefLabel "StrongInduction" .
+
+eliozo:TransitionToHigherDimension a eliozo:Method ;
+    eliozo:methodDescription "Uzdevumi, kuros nav telpisku objektu, bet risinājuma gaitā to papildina, pārejot uz telpisku uzdevumu." ;
+    eliozo:methodID "TransitionToHigherDimension" ;
+    eliozo:methodName "Pāriešana augstākā dimensijā" ;
+    eliozo:methodNumber "8.3" ;
+    skos:broader eliozo:Augmentation ;
+    skos:prefLabel "TransitionToHigherDimension" .
+
+eliozo:TwoDirectionalInduction a eliozo:Method ;
+    eliozo:methodDescription "Indukcijas spriedumi ar pārejām divās dimensijās un līdzīgi pamatojumi apgalvojumiem par naturālu skaitļu pāriem vai citām sanumurējamām kopām. Indukcija pēc skaitļu reizinājuma vai cita sarežģīta indukcijas parametra izvēle." ;
+    eliozo:methodID "TwoDirectionalInduction" ;
+    eliozo:methodName "Divvirzienu indukcija" ;
+    eliozo:methodNumber "1.5" ;
+    skos:broader eliozo:MathematicalInduction ;
+    skos:prefLabel "TwoDirectionalInduction" .
+
+eliozo:ContradictionMethod a eliozo:Method ;
+    eliozo:methodDescription """Uzdevumi, kuros prasīto apgalvojumu vispirms noliedz, lai no tā iegūtu secinājumus, kuri ved pie pretrunas. Nekonstruktīvie eksistences pierādījumi. Pierādījumi no pretējā kopā ar labās sakārtotības principu - piemēram, ja eksistētu netukša kopa ar naturāliem skaitļiem, tad tajā atrastos mazākais elements - no kura eksistences pieņēmuma var iegūt pretrunu.
+**Algebra:** Lineāras algebras apgalvojumi par vektoru sistēmām, kas nav lineāri neatkarīgas. Daži iracionalitātes pierādījumi.
+**Kombinatorika:** Grafu teorijas pierādījumi no pretējā, piemēram, ar virsotņu, šķautņu galu utt. saskaitīšanu.
+**Ģeometrija:** Pretrunas kombinatoriskajā ģeometrijā.
+**Skaitļu teorija:** Pirmskaitļu kopas bezgalības pamatojums.""" ;
+    eliozo:methodID "ContradictionMethod" ;
+    eliozo:methodName "Pierādījums no pretējā" ;
+    eliozo:methodNumber "5.0" ;
+    skos:narrower eliozo:ContradictionForExistence,
+        eliozo:ContradictionForNonExistence ;
+    skos:prefLabel "ContradictionMethod" .
+
+eliozo:Augmentation a eliozo:Method ;
+    eliozo:methodDescription "Ģeometrisku un citu struktūru papildināšana ar jauniem elementiem, lai vispirms pierādītu apgalvojumus par šiem elementiem un vēlāk atgrieztos pie sākotnējā jautājuma. Uz šo attiecas arī pretpiemēru konstruēšana kā arī novērtējumu iegūšana, konstruējot piemērus. " ;
+    eliozo:methodID "Augmentation" ;
+    eliozo:methodName "Struktūru papildināšana" ;
+    eliozo:methodNumber "8.0" ;
+    skos:narrower eliozo:AugmentationWithNewElements,
+        eliozo:AuxiliaryColoring,
+        eliozo:TransitionToHigherDimension ;
+    skos:prefLabel "Augmentation" .
+
+eliozo:ExtremePrinciple a eliozo:Method ;
+    eliozo:methodDescription """Uzdevumi, kuru risinājumā izmantots lielākais vai elements, lai kaut ko secinātu par to. Ekstremālais elements vai nu tieši izmantojams atbildē vai palīdz pamatot kādu īpašību vai novērtējumu.
+**Algebrā:** Nevienādību pamatošana izmantojot ekstremālos elementus vai sakārtojuma īpašības.
+**Kombinatorikā:** Elementi ar ekstrēmālām īpašībām grafu un relāciju apgalvojumos.
+**Ģeometrijā:** Lielākā/mazākā leņķa, attāluma, laukuma aplūkošana. Nogrieznis kā īsākais attālums, izliektā čaula kā mazākais daudzstūris.
+**Skaitļu teorijā:** Risinājumi, kas izvēlas mazāko pirmreizinātāju, kopīgo dalītāju vai dalāmo. Sakārtotas skaitļu kopas īpašības. Optimizācijas uzdevumi veseliem skaitļiem.""" ;
+    eliozo:methodID "ExtremePrinciple" ;
+    eliozo:methodName "Ekstrēmālā elementa metode" ;
+    eliozo:methodNumber "3.0" ;
+    skos:narrower eliozo:ExtremeConstructions,
+        eliozo:ExtremeElements,
+        eliozo:OrderingElements ;
+    skos:prefLabel "ExtremePrinciple" .
+
+eliozo:InvariantMethod a eliozo:Method ;
+    eliozo:methodDescription """Uzdevumos ar pārveidojumu virkni vai spēles gājieniem ieviests nemainīgs lielums, kura vērtība pārveidojumu gaidā nemainās un kas atļauj iegūt pretrunu - neiespējamību nonākt vajadzīgajā stāvoklī. Vai pamatot uzvarošu spēles stratēģiju. Arī krāsojumi un citas palīgkonstrukcijas, kuru mērķis ir uzkonstruēt un pareizi saskaitīt kādu invariantu, pieder invariantu metodei.
+**Algebrā:** Invariants var būt, piemēram, summa, reizinājums vai cita algebriska izteiksme.
+**Ģeometrijā:** Invariants var būt, piemēram, laukums, garums vai orientācija.
+**Skaitļu teorijā:** Invariants var būt, piemēram, paritāte vai kāda cita atlikuma vērtība.""" ;
+    eliozo:methodID "InvariantMethod" ;
+    eliozo:methodName "Invariantu metode" ;
+    eliozo:methodNumber "4.0" ;
+    skos:narrower eliozo:FixedInvariant,
+        eliozo:Monovariant,
+        eliozo:PeriodicInvariant ;
+    skos:prefLabel "InvariantMethod" .
+
+eliozo:Transformations a eliozo:Method ;
+    eliozo:methodDescription "Uzdevumi, kuros jaunu mainīgo ievietošana, identiski pārveidojumi un arī nevienādību pastiprināšana ir būtiska atrisinājuma sastāvdaļa. Arī citas situācijas, kurās ievietojot piemērotas izteiksmes, var izmantot kādu zināmu rezultātu." ;
+    eliozo:methodID "Transformations" ;
+    eliozo:methodName "Izteiksmju pārveidojumi" ;
+    eliozo:methodNumber "7.0" ;
+    skos:narrower eliozo:GraphTransformations,
+        eliozo:LinearTransformations,
+        eliozo:PolynomialTransformations ;
+    skos:prefLabel "Transformations" .
+
+eliozo:InterpretationMethod a eliozo:Method ;
+    eliozo:methodDescription "Interpretācija pārtulko uzdevumu jaunos apzīmējumos; ievieš jaunas datu struktūras (piemēram, grafus) vai kodējumus (objektu attēlošanu par izteiksmēm). Dažas interpretāciju metodes ir jāveido katrā atrisinājumā no jauna, citas ir standartizētas un labi zināmas - piemēram ģeometrijas uzdevuma pārveidošana koordinātu formā. " ;
+    eliozo:methodID "InterpretationMethod" ;
+    eliozo:methodName "Interpretāciju metode" ;
+    eliozo:methodNumber "6.0" ;
+    skos:narrower eliozo:AlgebraicModel,
+        eliozo:CoordinateMethod,
+        eliozo:GeometricInterpretation,
+        eliozo:InterpretationWithCoding ;
+    skos:prefLabel "InterpretationMethod" .
+
+eliozo:MeanValuePrinciple a eliozo:Method ;
+    eliozo:methodDescription """Vērtību pierakstīšana atsevišķiem elementiem, šo vērtību summas un citu apkopotu datu izmantošana, lai novērtētu atsevišķos elementus. Dirihlē princips, ja elementu skaits par vienu pārsniedz kastu skaitu. Dirihlē principa vispārinājumi. Dirihlē principa izmantošana kombinatoriskajā ģeometrijā par laukumu pārklāšanu ar figūriņām un citiem figūru izvietojumiem.
+**Algebrā:** Vidējās vērtības izmantošana dažādos novērtējumos.
+**Kombinatorikā:** Dirihlē princips pierādot apgalvojumus.
+**Ģeometrijā:** Uzdevumos par laukumu pārklāšanu ar figūriņām un citiem figūru izvietojumiem.par laukumu pārklāšanu ar figūriņām un citiem figūru izvietojumiem.
+**Skaitļu teorijā:** Dirihlē princips attiecībā uz atlikumiem, sadalījumu pirmreizinātājos, skaitļu racionāliem tuvinājumiem un skaitļu izvietojuma blīvumu. Jaunu kopu definēšana, Dirihlē princips, salīdzinot vienādas vai dažādas galīgas kopas, galīgu un bezgalīgu kopu.""" ;
+    eliozo:methodID "MeanValuePrinciple" ;
+    eliozo:methodName "Vidējās vērtības metode" ;
+    eliozo:methodNumber "2.0" ;
+    skos:narrower eliozo:ContinuousPigeonholePrinciple,
+        eliozo:MeanWeights,
+        eliozo:PigeonholePrincipleBasic,
+        eliozo:PigeonholePrincipleGeneralized ;
+    skos:prefLabel "MeanValuePrinciple" .
+
+eliozo:Algorithms a eliozo:Method ;
+    eliozo:methodDescription "Uzdevumi par elementu sakārtošanu vai lielākā vai mazākā atrašanu. Uzdevumi, kuros ir procesi, kuru realizācijai jāizstrādā algoritms vai jānovērtē algoritma efektivitāte. Uzdevumi par svēršanu, turnīra uzvarētāja atrašanu. " ;
+    eliozo:methodID "Algorithms" ;
+    eliozo:methodName "Kombinatoriskie algoritmi" ;
+    eliozo:methodNumber "9.0" ;
+    skos:narrower eliozo:AlgorithmAnalysis,
+        eliozo:DivideAndConquerAlgorithms,
+        eliozo:DynamicProgrammingAlgorithms,
+        eliozo:ExhaustiveAlgorithms,
+        eliozo:GreedyAlgorithms,
+        eliozo:InductiveAlgorithms ;
+    skos:prefLabel "Algorithms" .
+
+eliozo:MathematicalInduction a eliozo:Method ;
+    eliozo:methodDescription """Apgalvojumu pamatošana ar matemātisko indukciju. Parasti tie ir apgalvojumi par visiem naturālajiem skaitļiem. Risinājumā atklātā tekstā parādās indukcijas bāze, induktīvais pieņēmums un pāreja.  
+**Algebrā:** Nevienādību pierādīšana, izmantojot induktīvo hipotēzi.  
+**Kombinatorikā:** Uzdevuma reducēšana uz vienkāršāku.
+**Ģeometrijā:** Kombinatoriskajā ģeometrijā var ieviest naturālu skaitli kā parametru un parādīt, kā no vienkāršākām konstrukcijām vai pierādījumiem var iegūt sarežģītākas konstrukcijas vai pierādījumus. 
+**Skaitļu teorijā:** Risinājumā būtiski izmantoti algebriski pārveidojumi, sadalīšana reizinātājos un citas algebriskas identitātes, mainīgo aizvietošana. Algebrisku pārveidojumu aplūkošana kopsakarā ar dalāmības apsvērumiem. Indukcija pēc dalītāju skaita, ciparu skaita, induktīvās hipotēzes pastiprināšana, lineāras rekurences, valuācijas pēc pirmskaitļa.""" ;
+    eliozo:methodID "MathematicalInduction" ;
+    eliozo:methodName "Matemātiskā indukcija" ;
+    eliozo:methodNumber "1.0" ;
+    skos:narrower eliozo:InductionConstructions,
+        eliozo:InductionInfiniteDescent,
+        eliozo:InductionStructural,
+        eliozo:InductionWithCombinedStep,
+        eliozo:InductionWithLargerStep,
+        eliozo:InductionWithStepOne,
+        eliozo:StrentheningInductiveHypothesis,
+        eliozo:StrongInduction,
+        eliozo:TwoDirectionalInduction ;
+    skos:prefLabel "MathematicalInduction" .
+

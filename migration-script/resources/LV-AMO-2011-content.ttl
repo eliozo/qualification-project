@@ -400,7 +400,7 @@ eliozo:LV.AMO.2011.5.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:event "LV.AMO.2011" ;
     eliozo:genre "Cryptarithm" ;
-    eliozo:method "ExhaustiveAlgorithms" ;
+    eliozo:method eliozo:ExhaustiveAlgorithms ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -422,7 +422,7 @@ nav $0$. Atrodi visus iespējamos atrisinājumus!</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindAll" ;
-    eliozo:subdomain "NumeralSystems" ;
+    eliozo:subdomain eliozo:NumeralSystems ;
     eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:suggestedGrade 5 ;
     eliozo:topic eliozo:IntegerFactorization .
@@ -454,7 +454,7 @@ skaitļu summas būtu vienādas. Ir zināmi trīs rūtiņās ierakstītie skait�
     eliozo:problemYear 2011 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindAll" ;
-    eliozo:subdomain "EquationSystems" ;
+    eliozo:subdomain eliozo:EquationSystems ;
     eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:suggestedGrade 5 ;
     eliozo:topic eliozo:AlgebraicTransformations,
@@ -478,7 +478,7 @@ eliozo:LV.AMO.2011.5.3 a eliozo:Problem ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindExample" ;
-    eliozo:subdomain "CuttingCoversColoring" ;
+    eliozo:subdomain eliozo:CuttingCoversColoring ;
     eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:suggestedGrade 5 ;
     eliozo:topic eliozo:CircleInscribedAngles,
@@ -814,7 +814,7 @@ eliozo:LV.AMO.2011.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2011" ;
-    eliozo:method "PigeonholePrincipleBasic" ;
+    eliozo:method eliozo:PigeonholePrincipleBasic ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;

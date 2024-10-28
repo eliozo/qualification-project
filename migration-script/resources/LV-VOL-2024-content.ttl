@@ -56,7 +56,7 @@ eliozo:LV.VOL.2024.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.VOL.2024" ;
-    eliozo:method "PolynomialTransformations" ;
+    eliozo:method eliozo:PolynomialTransformations ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -180,7 +180,7 @@ eliozo:LV.VOL.2024.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.VOL.2024" ;
-    eliozo:method "AlgebraicModel" ;
+    eliozo:method eliozo:AlgebraicModel ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -240,7 +240,7 @@ eliozo:LV.VOL.2024.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.VOL.2024" ;
-    eliozo:method "ExtremeElements" ;
+    eliozo:method eliozo:ExtremeElements ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -300,7 +300,7 @@ saskaitītas. Pierādīt, ka spēlētājs $B$ var panākt, lai iegūtā summa b�
     eliozo:problemYear 2024 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "Prove" ;
-    eliozo:subdomain "FixedInvariant" ;
+    eliozo:subdomain eliozo:FixedInvariant ;
     eliozo:suffix "LV.VOL.2024.11" ;
     eliozo:suggestedGrade 11 .
 
@@ -387,7 +387,7 @@ uzvarēs pareizi spēlējot, ja papildus zināms, ka katrs no viņiem var apēst
     eliozo:problemYear 2024 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "Algorithm" ;
-    eliozo:subdomain "FixedInvariant" ;
+    eliozo:subdomain eliozo:FixedInvariant ;
     eliozo:suffix "LV.VOL.2024.12" ;
     eliozo:suggestedGrade 12 .
 
@@ -444,7 +444,7 @@ eliozo:LV.VOL.2024.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.VOL.2024" ;
-    eliozo:method "ExtremeElements" ;
+    eliozo:method eliozo:ExtremeElements ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -495,7 +495,7 @@ eliozo:LV.VOL.2024.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.VOL.2024" ;
-    eliozo:method "ContradictionForExistence" ;
+    eliozo:method eliozo:ContradictionForExistence ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;

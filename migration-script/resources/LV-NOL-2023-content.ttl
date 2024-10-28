@@ -56,7 +56,7 @@ eliozo:LV.NOL.2023.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2023" ;
-    eliozo:method "AugmentationWithNewElements" ;
+    eliozo:method eliozo:AugmentationWithNewElements ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -129,7 +129,7 @@ eliozo:LV.NOL.2023.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.NOL.2023" ;
-    eliozo:method "PolynomialTransformations" ;
+    eliozo:method eliozo:PolynomialTransformations ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -150,8 +150,8 @@ eliozo:LV.NOL.2023.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2023" ;
-    eliozo:method "ContradictionForExistence",
-        "PigeonholePrincipleBasic" ;
+    eliozo:method eliozo:ContradictionForExistence,
+        eliozo:PigeonholePrincipleBasic ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -179,7 +179,7 @@ eliozo:LV.NOL.2023.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2023" ;
-    eliozo:method "AugmentationWithNewElements" ;
+    eliozo:method eliozo:AugmentationWithNewElements ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -208,7 +208,7 @@ eliozo:LV.NOL.2023.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.NOL.2023" ;
-    eliozo:method "ContradictionForExistence" ;
+    eliozo:method eliozo:ContradictionForExistence ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -276,7 +276,7 @@ eliozo:LV.NOL.2023.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.NOL.2023" ;
-    eliozo:method "PolynomialTransformations" ;
+    eliozo:method eliozo:PolynomialTransformations ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -301,7 +301,7 @@ eliozo:LV.NOL.2023.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2023" ;
-    eliozo:method "PigeonholePrincipleBasic" ;
+    eliozo:method eliozo:PigeonholePrincipleBasic ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -354,7 +354,7 @@ eliozo:LV.NOL.2023.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.NOL.2023" ;
-    eliozo:method "PolynomialTransformations" ;
+    eliozo:method eliozo:PolynomialTransformations ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -377,7 +377,7 @@ eliozo:LV.NOL.2023.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2023" ;
-    eliozo:method "InductionWithStepOne" ;
+    eliozo:method eliozo:InductionWithStepOne ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -478,7 +478,7 @@ taciņas var krustoties. Vai iespējams, ka no mājiņām iziet attiecīgi:
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain "FixedInvariant" ;
+    eliozo:subdomain eliozo:FixedInvariant ;
     eliozo:suffix "LV.NOL.2023.5" ;
     eliozo:suggestedGrade 5 .
 
@@ -555,7 +555,7 @@ sarkanās un zilās monētas, ja sākumā ir dota viena sarkana monēta?</p>"""@
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain "FixedInvariant" ;
+    eliozo:subdomain eliozo:FixedInvariant ;
     eliozo:suffix "LV.NOL.2023.5" ;
     eliozo:suggestedGrade 5 .
 
@@ -608,7 +608,7 @@ krustoties. Vai iespējams, ka no mājiņām iziet attiecīgi:<br />
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain "FixedInvariant" ;
+    eliozo:subdomain eliozo:FixedInvariant ;
     eliozo:suffix "LV.NOL.2023.6" ;
     eliozo:suggestedGrade 6 .
 
@@ -683,7 +683,7 @@ Vai, vairākkārt izpildot šādus gājienus, no skaitla $17$ var iegūt:
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain "FixedInvariant" ;
+    eliozo:subdomain eliozo:FixedInvariant ;
     eliozo:suffix "LV.NOL.2023.6" ;
     eliozo:suggestedGrade 6 .
 
@@ -735,7 +735,7 @@ $5$ citām lampiņām?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain "FixedInvariant" ;
+    eliozo:subdomain eliozo:FixedInvariant ;
     eliozo:suffix "LV.NOL.2023.7" ;
     eliozo:suggestedGrade 7 .
 
@@ -743,7 +743,7 @@ eliozo:LV.NOL.2023.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2023" ;
-    eliozo:method "AugmentationWithNewElements" ;
+    eliozo:method eliozo:AugmentationWithNewElements ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -812,7 +812,7 @@ ja sākumā kastē atrodas:<br />
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain "FixedInvariant" ;
+    eliozo:subdomain eliozo:FixedInvariant ;
     eliozo:suffix "LV.NOL.2023.7" ;
     eliozo:suggestedGrade 7 .
 
@@ -868,7 +868,7 @@ nedraudzējas. Vai var gadīties, ka <strong>(A)</strong> $m=11$, <strong>(B)</s
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain "FixedInvariant" ;
+    eliozo:subdomain eliozo:FixedInvariant ;
     eliozo:suffix "LV.NOL.2023.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -876,7 +876,7 @@ eliozo:LV.NOL.2023.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2023" ;
-    eliozo:method "AugmentationWithNewElements" ;
+    eliozo:method eliozo:AugmentationWithNewElements ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -997,7 +997,7 @@ katram rūķim ir tieši $9$ draugi?</p>"""@lv ;
     eliozo:problemYear 2023 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain "FixedInvariant" ;
+    eliozo:subdomain eliozo:FixedInvariant ;
     eliozo:suffix "LV.NOL.2023.9" ;
     eliozo:suggestedGrade 9 .
 
@@ -1005,7 +1005,7 @@ eliozo:LV.NOL.2023.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2023" ;
-    eliozo:method "AugmentationWithNewElements" ;
+    eliozo:method eliozo:AugmentationWithNewElements ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1028,7 +1028,7 @@ eliozo:LV.NOL.2023.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.NOL.2023" ;
-    eliozo:method "PolynomialTransformations" ;
+    eliozo:method eliozo:PolynomialTransformations ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;

@@ -425,9 +425,13 @@ def md_to_rdf(md_file_path, ttl_file_path):
         meta_dict = extract_metadata(section)
         for k, vvv in meta_dict.items():
             for vv in vvv:
-                if k == 'topic':
+                if k == 'topic' and vv != '':
                     add_problem_topiclike_prop(g, problem_node, 'topic', vv)
-                elif k == 'concepts':
+                elif k == 'method' and vv != '': 
+                    add_problem_topiclike_prop(g, problem_node, 'method', vv)
+                elif k == 'subdomain' and vv != '': 
+                    add_problem_topiclike_prop(g, problem_node, 'subdomain', vv)
+                elif k == 'concepts' and vv != '':
                     add_problem_topiclike_prop(g, problem_node, 'concepts', "TRM-"+vv)
                 else:
                     add_problem_literal_prop(g, problem_node, k, vv)
@@ -436,12 +440,6 @@ def md_to_rdf(md_file_path, ttl_file_path):
         solution_part = extract_solution_part(section)
 
         solutions = extract_solutions(title,solution_part)
-
-        # print("8888888888888888888888888888888888")
-        # print(solution_part)
-        # print("9999999999999999999999999999999999")
-        # print(solutions)
-        # print("0000000000000000000000000000000000")
 
         for i, soln_text_dict in solutions.items():
             for theLang, soln_text in soln_text_dict.items():

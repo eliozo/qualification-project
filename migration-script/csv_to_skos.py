@@ -63,7 +63,7 @@ def readCSVfile(in_file, g, class_name):
             if parent_id_str == num_zeroes:
                 parent_label = ''
             else:
-                print(f'current_label = {current_label}, parent_id_str = {parent_id_str}, topic_id = {topic_id}, last_non_zero = {last_non_zero}')
+                # print(f'current_label = {current_label}, parent_id_str = {parent_id_str}, topic_id = {topic_id}, last_non_zero = {last_non_zero}')
                 parent_label = label_dictionary[parent_id_str]
 
             addToRdfGraph(g,

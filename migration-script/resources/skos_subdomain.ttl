@@ -1,0 +1,409 @@
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+eliozo:AnglesParallelsSimilarity a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi, kuros jāpierāda, ka kādas taisnes vai nogriežņi ir paralēli vai perpendikulāri. Uzdevumi, kuros dota vai jāpierāda nogriežņu garumu attiecība vai leņķu vienādība. Uzdevumi par līdzīgiem trijstūriem vai līdzīgiem daudzstūriem un to malu garumu vai laukumu attiecībām." ;
+    eliozo:domainID "AnglesParallelsSimilarity" ;
+    eliozo:domainName "Leņķi, paralēlas taisnes un figūru līdzība" ;
+    eliozo:domainNumber "3.2" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "AnglesParallelsSimilarity" .
+
+eliozo:Area a eliozo:Domain ;
+    eliozo:domainDescription "Laukumu aprēķināšana. Četrstūra laukuma formulas. Laukumi trijstūriem vai citām figūrām, kurās ir sadalīts daudzstūris. Vienlielas figūras. Mediāna sadala trijstūri vienādu laukumu trijstūros. Taisnes un līknes, kas sadala figūras vienlielās daļās. Laukumu pārgrupēšana." ;
+    eliozo:domainID "Area" ;
+    eliozo:domainName "Laukumi" ;
+    eliozo:domainNumber "3.7" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "Area" .
+
+eliozo:CirclesAndRelatedAngles a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi par riņķa līnijām un to hordām, pieskarēm, ievilktiem leņķiem.Punkti uz riņķa līnijas. Riņķa līnijā ievilkts trijstūris, četrstūris, daudzstūris. Leņķis riņķa līnijā. Ievilkta riņķa līnija. Apvilkta riņķa līnija." ;
+    eliozo:domainID "CirclesAndRelatedAngles" ;
+    eliozo:domainName "Riņķa līnija un ar to saistīti leņķi" ;
+    eliozo:domainNumber "3.3" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "CirclesAndRelatedAngles" .
+
+eliozo:CombinatorialAlgorithms a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi par elementu sakārtošanu vai lielākā vai mazākā atrašanu. Uzdevumi, kuros ir procesi, kuru realizācijai jāizstrādā algoritms vai jānovērtē algoritma efektivitāte. Uzdevumi par svēršanu, turnīra uzvarētāja atrašanu. " ;
+    eliozo:domainID "CombinatorialAlgorithms" ;
+    eliozo:domainName "Kombinatoriskie algoritmi" ;
+    eliozo:domainNumber "2.4" ;
+    skos:broader eliozo:Combinatorics ;
+    skos:prefLabel "CombinatorialAlgorithms" .
+
+eliozo:CombinatorialGames a eliozo:Domain ;
+    eliozo:domainDescription "Dots, ka divi spēlētāji spēlē spēli, pārmaiņus izdarot. Jāizstrādā uzvarošā stratēģija kādam no spēlētājiem vai jānoskaidro, kurš no spēlētājiem uzvar, pareizi spēlējot. Šajā kategorijā neietilpst skaitļu teorijas spēles, kur gājieni ir veselu skaitļu vai to ciparu manipulācijas." ;
+    eliozo:domainID "CombinatorialGames" ;
+    eliozo:domainName "Kombinatoriskas spēles" ;
+    eliozo:domainNumber "2.3" ;
+    skos:broader eliozo:Combinatorics ;
+    skos:prefLabel "CombinatorialGames" .
+
+eliozo:CombinatorialStructures a eliozo:Domain ;
+    eliozo:domainDescription "Izvietojumi uz šaha galdiņa. Apakškopu sistēmas. Apakšvirkņu sistēmas. Paskāla trijstūris. Turnīri. Regulāri režģi. Latīņu kvadrāti" ;
+    eliozo:domainID "CombinatorialStructures" ;
+    eliozo:domainName "Kombinatoriskās struktūras" ;
+    eliozo:domainNumber "2.5" ;
+    skos:broader eliozo:Combinatorics ;
+    skos:prefLabel "CombinatorialStructures" .
+
+eliozo:Congruences a eliozo:Domain ;
+    eliozo:domainDescription "Modulārā aritmētika - saskaitīšana, atņemšana, reizināšana un kāpināšana pēc moduļa. Skaitļa multiplikatīvi inversais pēc dotā moduļa. Pazīstamas teorēmas par kongruencēm - M.Fermā teorēma, Eilera teorēma, Vilsona teorēma. Ķīniešu atlikumu teorēma." ;
+    eliozo:domainID "Congruences" ;
+    eliozo:domainName "Kongruence pēc moduļa" ;
+    eliozo:domainNumber "4.3" ;
+    skos:broader eliozo:NumberTheory ;
+    skos:prefLabel "Congruences" .
+
+eliozo:Constructions a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi, kuros doti specifiski trijstūra elementi un, izmantojot cirkuli un lineālu, jākonstruē trijstūri. Uzdevumi, kuros doti konkrēti punkti un/ vai nogriežņi, taisnes, leņķi vai riņķa līnijas un nepieciešams konstruēt trijstūri, četrstūri, leņķi, taisni, staru vai riņķa līniju, izmantojot cirkuli un lineālu. Iespējami arī uzdevumi, kuros ļauts izmantot tikai lineālu, divpusēju lineālu vai uzstūri (taisnleņķa lineālu). Citi konstrukcijas uzdevumi." ;
+    eliozo:domainID "Constructions" ;
+    eliozo:domainName "Ģeometriskas konstrukcijas" ;
+    eliozo:domainNumber "3.1" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "Constructions" .
+
+eliozo:CountingObjects a eliozo:Domain ;
+    eliozo:domainDescription "Noskaidrot, cik veidos var izvēlēties pārstāvjus, cik veidos var izdarīt kādas specifiskas darbības. Noteikt, cik veidos var sakārtot kādas kopas vai apakškopas elementus." ;
+    eliozo:domainID "CountingObjects" ;
+    eliozo:domainName "Objektu skaitīšana" ;
+    eliozo:domainNumber "2.1" ;
+    skos:broader eliozo:Combinatorics ;
+    skos:prefLabel "CountingObjects" .
+
+eliozo:CuttingCoversColoring a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi, kuros jāsagriež daudzstūri speciāla veida daļās un tad no tām jāsaliek prasītā figūra. Uzdevumi, kuros jāpierāda, ka nevar sagriezt daudzstūri prasītā veida daļās. Uzdevumi, kuros jāpēta sagriežot iegūto daļu īpašības. Uzdevumi, kuros jānoskaidro, vai ir iespējams sagriezt daudzstūri prasītā veida daļās. Daļas var būt trijstūri, paralelogrami, rombi, trapeces. Jāsaliek var būt taisnstūris, cits daudzstūris. Uzdevumi, kuros jāpārklāj ģeometriska figūra ar citām. Te var būt nogriežņi, trijstūri, daudzstūri, riņķi. Uzdevumi par daudzstūru novietojumu plaknē tā lai tie nepārklājas. Uzdevumi par daudzstūru sagiešans rezultātā iegūto daļu  krāsošanu un par plaknes krāsojumu īpašībām." ;
+    eliozo:domainID "CuttingCoversColoring" ;
+    eliozo:domainName "Griezumi, pārklājumi, krāsojumi" ;
+    eliozo:domainNumber "3.15" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "CuttingCoversColoring" .
+
+eliozo:DiscreteProbability a eliozo:Domain ;
+    eliozo:domainDescription "Atrast varbūtības izmantojot klasisko varbūtības definīciju. Aprēķināt notikumu varbūtības, izmantojot reizināšanas likumu un citus kombinatorikas paņēmienus. Nosacītas varbūtības un spriedumi par operācijām ar diskrētiem gadījumlielumiem (kuri var pieņemt sanumurējami daudz vērtību)." ;
+    eliozo:domainID "DiscreteProbability" ;
+    eliozo:domainName "Diskrētās varbūtības" ;
+    eliozo:domainNumber "2.7" ;
+    skos:broader eliozo:Combinatorics ;
+    skos:prefLabel "DiscreteProbability" .
+
+eliozo:Divisibility a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi par dalāmības attiecību, saliktu skaitļu un pirmskaitļu pazīšana. Uzdevumi par LKD un MKD; fiksēta skaitļa visu dalītāju režģis. Skaitļa visu dalītāju skaita un summas formulas." ;
+    eliozo:domainID "Divisibility" ;
+    eliozo:domainName "Skaitļu dalāmība" ;
+    eliozo:domainNumber "4.1" ;
+    skos:broader eliozo:NumberTheory ;
+    skos:prefLabel "Divisibility" .
+
+eliozo:EquationSystems a eliozo:Domain ;
+    eliozo:domainDescription "Vienādojumu sistēmu risināšana un atrisinājumu eksistences analīze." ;
+    eliozo:domainID "EquationSystems" ;
+    eliozo:domainName "Vienādojumu sistēmas" ;
+    eliozo:domainNumber "1.4" ;
+    skos:broader eliozo:Algebra ;
+    skos:prefLabel "EquationSystems" .
+
+eliozo:Equations a eliozo:Domain ;
+    eliozo:domainDescription "Algebras uzdevumi, kuros prasīts atrisināt vienādojumu vai noteikt vienādojuma sakņu skaitu. Uzdevumi, kuros jāpēta vienādojuma atrisinājuma eksistence, jāpierāda, ka eksistē atrisinājums vai ka tas neeksistē." ;
+    eliozo:domainID "Equations" ;
+    eliozo:domainName "Vienādojumi" ;
+    eliozo:domainNumber "1.2" ;
+    skos:broader eliozo:Algebra ;
+    skos:prefLabel "Equations" .
+
+eliozo:Extremes a eliozo:Domain ;
+    eliozo:domainDescription "Algebras uzdevumi, kuros jāatrod lielākā vai mazākā iespējamā vērtība." ;
+    eliozo:domainID "Extremes" ;
+    eliozo:domainName "Ekstrēmu uzdevumi" ;
+    eliozo:domainNumber "1.5" ;
+    skos:broader eliozo:Algebra ;
+    skos:prefLabel "Extremes" .
+
+eliozo:FunctionalEquationsReal a eliozo:Domain ;
+    eliozo:domainDescription "Funkcionālvienādojumi, kuru atrisinājumi ir viena argumenta funkcijas vai vairākvietīgas operācijas reālos skaitļos." ;
+    eliozo:domainID "FunctionalEquationsReal" ;
+    eliozo:domainName "Funkcionālvienādojumi reālos skaitļos" ;
+    eliozo:domainNumber "1.8" ;
+    skos:broader eliozo:Algebra ;
+    skos:prefLabel "FunctionalEquationsReal" .
+
+eliozo:GeometricTransforms a eliozo:Domain ;
+    eliozo:domainDescription "Paralēlā pārnese, centrālā simetrija, aksiālā simetrija. Simetrijas kompozīcijas. Simetrijas un simetrijas asu īpašības. Pagriezieni un pagriezienu kompozīcijas. Homotētija, homotētiju kompozīcijas un pagrieziena homotētija. Inversija. Afīnie pārveidojumi, projektīvās transformācijas." ;
+    eliozo:domainID "GeometricTransforms" ;
+    eliozo:domainName "Ģeometriskās transformācijas" ;
+    eliozo:domainNumber "3.13" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "GeometricTransforms" .
+
+eliozo:Graphs a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi, kuros ir dots skaits objektu, starp katriem diviem no tiem var būt vai nebūt attiecība. Uzdevumi par draudzībām, pazīšanos, ceļiem starp pilsētām, saziņu ar vēstulēm vai pa telefonu." ;
+    eliozo:domainID "Graphs" ;
+    eliozo:domainName "Uzdevumi, kas risināmi ar grafiem" ;
+    eliozo:domainNumber "2.2" ;
+    skos:broader eliozo:Combinatorics ;
+    skos:prefLabel "Graphs" .
+
+eliozo:Inequalities a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi, kuros jāpierāda, ka ir pareiza kāda nevienādība. Uzdevumi, kuros jāatrisina nevienādība." ;
+    eliozo:domainID "Inequalities" ;
+    eliozo:domainName "Nevienādību pierādīšana" ;
+    eliozo:domainNumber "1.3" ;
+    skos:broader eliozo:Algebra ;
+    skos:prefLabel "Inequalities" .
+
+eliozo:InequalitiesGeometry a eliozo:Domain ;
+    eliozo:domainDescription "Pierādīt, ka kāds attālums nepārsniedz citu attālumu vai citu ģeometrisku nevienādību." ;
+    eliozo:domainID "InequalitiesGeometry" ;
+    eliozo:domainName "Ģeometriskās nevienādības" ;
+    eliozo:domainNumber "3.10" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "InequalitiesGeometry" .
+
+eliozo:IntegerConditions a eliozo:Domain ;
+    eliozo:domainDescription "Nevienādības veseliem skaitļiem; skaitļa kvalitatīvu īpašību izteikšana ar nevienādībām.  Skaitļa kvalitatīvu īpašību pārtulkošana par algebrisku vienādību vai kongruenci. Spriedumi par īsiem intervāliem un gariem intervāliem novērtējumos. Citu skaitļu kopu atrašana atbilstoši īpašībām, kuras nav vienādojumi." ;
+    eliozo:domainID "IntegerConditions" ;
+    eliozo:domainName "Veselu skaitļu kopas" ;
+    eliozo:domainNumber "4.7" ;
+    skos:broader eliozo:NumberTheory ;
+    skos:prefLabel "IntegerConditions" .
+
+eliozo:IntegerEquations a eliozo:Domain ;
+    eliozo:domainDescription "Vienādojumi ar vienu vai vairākiem mainīgajiem, kuros jāatrod visi veselie atrisinājumi. Arī uzdevumi, kas izsakāmi kā kongruenču vienādojumi." ;
+    eliozo:domainID "IntegerEquations" ;
+    eliozo:domainName "Vienādojumi veselos skaitļos" ;
+    eliozo:domainNumber "4.6" ;
+    skos:broader eliozo:NumberTheory ;
+    skos:prefLabel "IntegerEquations" .
+
+eliozo:IntegerFunctionalEquations a eliozo:Domain ;
+    eliozo:domainDescription "Vienādojumi vai to sistēmas, kas tieši nedefinē veselu skaitļu funkcijas, bet jāatrod tās, kuras šos vienādojumus apmierina." ;
+    eliozo:domainID "IntegerFunctionalEquations" ;
+    eliozo:domainName "Funkcionālvienādojumi veselos skaitļos" ;
+    eliozo:domainNumber "4.11" ;
+    skos:broader eliozo:NumberTheory ;
+    skos:prefLabel "IntegerFunctionalEquations" .
+
+eliozo:IntegerLattices a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi, kuros tiek lietotas rūtiņu režģa virsotnes vai pieminētas veselas koordinātas. Citi uzdevumi plaknē, kas sadalīta bezgalīgi daudzos regulāros trijstūrīšos, kvadrātiņos vai sešstūrīšos." ;
+    eliozo:domainID "IntegerLattices" ;
+    eliozo:domainName "Veselu skaitļu režģi" ;
+    eliozo:domainNumber "3.16" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "IntegerLattices" .
+
+eliozo:IntegerPolynomials a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi par polinomiem, kur koeficienti ir veseli skaitļi (vai arī polinoma vērtības veseliem argumentiem ir veseli skaitļi). Polinomu dalīšana ar atlikumu; " ;
+    eliozo:domainID "IntegerPolynomials" ;
+    eliozo:domainName "Polinomi ar veseliem koeficientiem" ;
+    eliozo:domainNumber "4.8" ;
+    skos:broader eliozo:NumberTheory ;
+    skos:prefLabel "IntegerPolynomials" .
+
+eliozo:IntegerSequences a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi, kuros definētas veselu skaitļu virknes/funkcijas (kuras nav polinomi) un ir jāpamato to īpašības. " ;
+    eliozo:domainID "IntegerSequences" ;
+    eliozo:domainName "Veselu skaitļu virknes" ;
+    eliozo:domainNumber "4.10" ;
+    skos:broader eliozo:NumberTheory ;
+    skos:prefLabel "IntegerSequences" .
+
+eliozo:Locus a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi, kuros jāatrod punktu ģeometrskā vieta vai trajektorija. Atrast punktu kopu plaknē ar noteiktām īpašībām.  Pierādīt, ka dotajā veidā iegūtie punkti ir uz vienas taisnes vai vienas riņķa līnijas. Pierādīt, ka dotās līnijas krustojas vienā punktā. Karno teorēma." ;
+    eliozo:domainID "Locus" ;
+    eliozo:domainName "Punktu ģeometriskā vieta" ;
+    eliozo:domainNumber "3.8" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "Locus" .
+
+eliozo:Logic a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi par patiesiem un aplamiem izteikumiem, patiesības teikšanu un melošanu. Uzdevumi ar apslēptu informāciju. Paradoksi." ;
+    eliozo:domainID "Logic" ;
+    eliozo:domainName "Loģiska rakstura uzdevumi" ;
+    eliozo:domainNumber "2.6" ;
+    skos:broader eliozo:Combinatorics ;
+    skos:prefLabel "Logic" .
+
+eliozo:MaxMinGeometry a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi, kuros jāatrod punkti, no kuriem attālumi vai attālumu summas veido maksimālo jeb lielāko vai minimālo jeb mazāko kādas izteiksmes vērtību. Uzdevumi, kuros jāatrod lielākais iespējamais leņķis. Uzdevumi, kuros jāatrod minimālais vai maksimālais laukums.Uzdevumi, kuros jāatrod punkta vai taisnes stāvoklis, pie kura tiek iegūts minimālais vai maksimālais laukums." ;
+    eliozo:domainID "MaxMinGeometry" ;
+    eliozo:domainName "Maksimumi un minimumi ģeometrijā" ;
+    eliozo:domainNumber "3.11" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "MaxMinGeometry" .
+
+eliozo:MetricRelations a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi, kuros ģeometrisku apgalvojumu pamato ar algebrisku vai trigonometrisku izteiksmi. Uzdevumi, kuros dota sakarība starp ģeometriskiem lielumiem un jāpierāda, ka tā nav atkarīga no punkta vai taisnes izvēles. Uzdevumi, kuros jāpierāda nogriežņu vienādība vai jāaprēķina to attiecība. Uzdevumi, kuros jāaprēķina leņķi vai attālumi. Sinusu teorēma, kosinusu teorēma. Koordinātu izmantošana. Ievilkto, apvilkto un pievilkto riņķa līniju rādiusi. Malu, augstumu, bisektrišu garumi. Trijstūra leņķu sinusi un kosinusi. Trijstūra leņķu tangensi un kotangensi." ;
+    eliozo:domainID "MetricRelations" ;
+    eliozo:domainName "Aprēķini un metriskās attiecības" ;
+    eliozo:domainNumber "3.9" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "MetricRelations" .
+
+eliozo:NumberRepresentation a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumi, kuros jāpamato skaitļu racionalitāte vai iracionalitāte. Citi uzdevumi, kuros skaitlis jāizsaka speciālā formā." ;
+    eliozo:domainID "NumberRepresentation" ;
+    eliozo:domainName "Racionāli un iracionāli skaitļi" ;
+    eliozo:domainNumber "4.5" ;
+    skos:broader eliozo:NumberTheory ;
+    skos:prefLabel "NumberRepresentation" .
+
+eliozo:NumeralSystems a eliozo:Domain ;
+    eliozo:domainDescription "Veselu skaitļu decimālpieraksts un ciparu manipulācijas tajā; ieskaitot spēles ar skaitļa cipariem. Dalāmības pazīmes. Skaitļa pieraksts binārajā un dažās citās pozicionālajās sistēmās. Neparasti skaitļu kodējumi (ar Fibonači skaitļiem, ar \"negatīviem cipariem\" utt.). Decimāldaļas, periodisku daļskaitļu izteikšana ar bezgalīgas ģeometriskas progresijas summu. Neperiodiskas decimāldaļas un iracionāli skaitļi. " ;
+    eliozo:domainID "NumeralSystems" ;
+    eliozo:domainName "Skaitīšanas sistēmas" ;
+    eliozo:domainNumber "4.4" ;
+    skos:broader eliozo:NumberTheory ;
+    skos:prefLabel "NumeralSystems" .
+
+eliozo:NumericGamesAndAlgorithms a eliozo:Domain ;
+    eliozo:domainDescription "Spēles, kurās pozīciju nosaka viens vai vairāki skaitļi; citas algoritmiskas procedūras ar skaitļiem." ;
+    eliozo:domainID "NumericGamesAndAlgorithms" ;
+    eliozo:domainName "Skaitļu spēles un algoritmi" ;
+    eliozo:domainNumber "4.9" ;
+    skos:broader eliozo:NumberTheory ;
+    skos:prefLabel "NumericGamesAndAlgorithms" .
+
+eliozo:ObjectSystemsGeometry a eliozo:Domain ;
+    eliozo:domainDescription "Punktu, nogriežņu un citu ģeometrisku objektu sistēmas. Doti n punkti, jāpierāda kādas to īpašības. Jānoskaidro, vai kaut kas ir iespējams. " ;
+    eliozo:domainID "ObjectSystemsGeometry" ;
+    eliozo:domainName "Ģeometrisku objektu sistēmas" ;
+    eliozo:domainNumber "3.14" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "ObjectSystemsGeometry" .
+
+eliozo:Polygons a eliozo:Domain ;
+    eliozo:domainDescription "Piecstūri. Sešstūri. Regulāri daudzstūri. Ievilkti un apvilkti daudzstūri. Patvaļīgi izliekti daudzstūri. Paskāla teorēma. Helli teorēma. Ieliekti daudzstūri. Izoperimetriskā nevienādība." ;
+    eliozo:domainID "Polygons" ;
+    eliozo:domainName "Daudzstūri" ;
+    eliozo:domainNumber "3.6" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "Polygons" .
+
+eliozo:PrimeFactors a eliozo:Domain ;
+    eliozo:domainDescription "Pirmskaitļu īpašības. Aritmētikas pamatteorēma par dalījumu pirmreizinātājos. Uzdevumi, kas pārbauda dalāmību ar visu pirmreizinātāju pakāpēm. Valuācija kā augstākā pirmskaitļa pakāpe, ar ko dotais skaitlis dalās." ;
+    eliozo:domainID "PrimeFactors" ;
+    eliozo:domainName "Pirmskaitļi" ;
+    eliozo:domainNumber "4.2" ;
+    skos:broader eliozo:NumberTheory ;
+    skos:prefLabel "PrimeFactors" .
+
+eliozo:Quadrilaterals a eliozo:Domain ;
+    eliozo:domainDescription "Kvadrāts. Taisnstūris. Rombs. Trapece. Ievilkti četrstūri. Apvilkti četrstūri. Ptolemaja teorēma." ;
+    eliozo:domainID "Quadrilaterals" ;
+    eliozo:domainName "Četrstūri" ;
+    eliozo:domainNumber "3.5" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "Quadrilaterals" .
+
+eliozo:RealAnalysis a eliozo:Domain ;
+    eliozo:domainDescription "Nepārtrauktas funkcijas, reālās analīzes metodes, robežas, atvasinājumi, integrāļi" ;
+    eliozo:domainID "RealAnalysis" ;
+    eliozo:domainName "Nepārtrauktība un reālā analīze" ;
+    eliozo:domainNumber "1.7" ;
+    skos:broader eliozo:Algebra ;
+    skos:prefLabel "RealAnalysis" .
+
+eliozo:RealSequences a eliozo:Domain ;
+    eliozo:domainDescription "Aritmētiskā progresija. Ģeometriskā progresija. Rekurentas skaitļu virknes. Galīgas un bezgalīgas summas." ;
+    eliozo:domainID "RealSequences" ;
+    eliozo:domainName "Skaitļu virknes un summas" ;
+    eliozo:domainNumber "1.6" ;
+    skos:broader eliozo:Algebra ;
+    skos:prefLabel "RealSequences" .
+
+eliozo:Triangles a eliozo:Domain ;
+    eliozo:domainDescription "Uzdevumos dots trijstūris un ar to saistīti punkti vai taisnes, vai riņķa līnijas. Trijstūris un tā ievilktā un apvilktā riņķa līnija. Taisnleņķa trijstūri. Vienādmalu trijstūris.  Vienādsānu trijstūri. Trijstūri ar leņķiem $60^{\\circ}$ vai $120^{\\circ}$.Trijstūri, kuru malu garumi ir veseli skaitļi.  Ar trijstūri saistītas līnijas un ģeometriskas sakarības.  Menelaja teorēma. Čevas teorēma. Simsona taisne. Pēdas punktu trijstūris. Eilera taisne un deviņu punktu riņķa līnija. Brokāra punkti . Lemuāna punkts." ;
+    eliozo:domainID "Triangles" ;
+    eliozo:domainName "Trijstūri" ;
+    eliozo:domainNumber "3.4" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "Triangles" .
+
+eliozo:Vectors a eliozo:Domain ;
+    eliozo:domainDescription "Visi uzdevumi par vektoriem. " ;
+    eliozo:domainID "Vectors" ;
+    eliozo:domainName "Vektori" ;
+    eliozo:domainNumber "3.12" ;
+    skos:broader eliozo:Geometry ;
+    skos:prefLabel "Vectors" .
+
+eliozo:WordProblems a eliozo:Domain ;
+    eliozo:domainDescription "Tradicionāli teksta uzdevumi, kur reālās dzīves situācija aprakstīta ar kvantitatīvām sakarībām." ;
+    eliozo:domainID "WordProblems" ;
+    eliozo:domainName "Teksta uzdevumi" ;
+    eliozo:domainNumber "1.1" ;
+    skos:broader eliozo:Algebra ;
+    skos:prefLabel "WordProblems" .
+
+eliozo:Combinatorics a eliozo:Domain ;
+    eliozo:domainDescription "Visi kombinatorikas uzdevumi." ;
+    eliozo:domainID "Combinatorics" ;
+    eliozo:domainName "Kombinatorika" ;
+    eliozo:domainNumber "2.0" ;
+    skos:narrower eliozo:CombinatorialAlgorithms,
+        eliozo:CombinatorialGames,
+        eliozo:CombinatorialStructures,
+        eliozo:CountingObjects,
+        eliozo:DiscreteProbability,
+        eliozo:Graphs,
+        eliozo:Logic ;
+    skos:prefLabel "Combinatorics" .
+
+eliozo:Algebra a eliozo:Domain ;
+    eliozo:domainDescription "Visi algebras uzdevumi." ;
+    eliozo:domainID "Algebra" ;
+    eliozo:domainName "Algebra" ;
+    eliozo:domainNumber "1.0" ;
+    skos:narrower eliozo:EquationSystems,
+        eliozo:Equations,
+        eliozo:Extremes,
+        eliozo:FunctionalEquationsReal,
+        eliozo:Inequalities,
+        eliozo:RealAnalysis,
+        eliozo:RealSequences,
+        eliozo:WordProblems ;
+    skos:prefLabel "Algebra" .
+
+eliozo:NumberTheory a eliozo:Domain ;
+    eliozo:domainDescription "Visi skaitļu teorijas uzdevumi" ;
+    eliozo:domainID "NumberTheory" ;
+    eliozo:domainName "Skaitļu teorija" ;
+    eliozo:domainNumber "4.0" ;
+    skos:narrower eliozo:Congruences,
+        eliozo:Divisibility,
+        eliozo:IntegerConditions,
+        eliozo:IntegerEquations,
+        eliozo:IntegerFunctionalEquations,
+        eliozo:IntegerPolynomials,
+        eliozo:IntegerSequences,
+        eliozo:NumberRepresentation,
+        eliozo:NumeralSystems,
+        eliozo:NumericGamesAndAlgorithms,
+        eliozo:PrimeFactors ;
+    skos:prefLabel "NumberTheory" .
+
+eliozo:Geometry a eliozo:Domain ;
+    eliozo:domainDescription "Visi ģeometrijas uzdevumi." ;
+    eliozo:domainID "Geometry" ;
+    eliozo:domainName "Ģeometrija" ;
+    eliozo:domainNumber "3.0" ;
+    skos:narrower eliozo:AnglesParallelsSimilarity,
+        eliozo:Area,
+        eliozo:CirclesAndRelatedAngles,
+        eliozo:Constructions,
+        eliozo:CuttingCoversColoring,
+        eliozo:GeometricTransforms,
+        eliozo:InequalitiesGeometry,
+        eliozo:IntegerLattices,
+        eliozo:Locus,
+        eliozo:MaxMinGeometry,
+        eliozo:MetricRelations,
+        eliozo:ObjectSystemsGeometry,
+        eliozo:Polygons,
+        eliozo:Quadrilaterals,
+        eliozo:Triangles,
+        eliozo:Vectors ;
+    skos:prefLabel "Geometry" .
+

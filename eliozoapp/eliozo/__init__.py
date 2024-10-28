@@ -399,7 +399,7 @@ SELECT ?problemid ?text ?grade WHERE {{
     theOlympiad = "" if params["olympiad"] in ["NA","-"] else f'eliozo:olympiadType "{params["olympiad"]}" ; '
     theDomain = "" if params["domain"] in ["NA","-"] else f'eliozo:domain "{params["domain"]}" ; '
     theQuestionType = "" if params["questionType"] in ["NA","-"] else f'eliozo:questionType "{params["questionType"]}" ; '
-    theMethod = "" if params["method"] in ["NA","-"] else f'eliozo:LTopic "{params["method"]}" ; '
+    theMethod = "" if params["method"] in ["NA","-"] else f'eliozo:method ?mymethod . ?mymethod skos:broader* {params["method"]} ; '
     theSolution = "" if params["hasSolution"] in ["NA","-"] else f'eliozo:problemSolution ?someSolution ; '
     theVideo = "" if params["hasVideo"] in ["NA","-"] else f'eliozo:hasVideo ?someVideo ; '
 
@@ -407,7 +407,7 @@ SELECT ?problemid ?text ?grade WHERE {{
     theFOlympiad = "" if params["olympiad"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:olympiadType ?oo . }"
     theFDomain = "" if params["domain"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:domain ?dd . }"
     theFQuestionType = "" if params["questionType"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:questionType ?qq . }"
-    theFMethod = "" if params["method"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:LTopic ?mm . }"
+    theFMethod = "" if params["method"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:method ?mm . }"
     theFSolution = "" if params["hasSolution"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:problemSolution ?ss . }"
     theFVideo = "" if params["hasVideo"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:hasVideo ?vv . }"
 
@@ -447,14 +447,14 @@ SELECT (COUNT(*) AS ?count) WHERE {{
     theOlympiad = '' if params["olympiad"] in ["NA","-"] else f'eliozo:olympiadType "{params["olympiad"]}" ; '
     theDomain = '' if params["domain"] in ["NA","-"] else f'eliozo:domain "{params["domain"]}" ; '
     theQuestionType = '' if params["questionType"] in ["NA","-"] else f'eliozo:questionType "{params["questionType"]}" ; '
-    theMethod = '' if params["method"] in ["NA","-"] else f'eliozo:LTopic "{params["method"]}" ; '
+    theMethod = '' if params["method"] in ["NA","-"] else f'eliozo:method ?mymethod . ?mymethod skos:broader* {params["method"]} ; '
     theSolution = "" if params["hasSolution"] in ["NA","-"] else f'eliozo:problemSolution ?someSolution ; '
     theVideo = "" if params["hasVideo"] in ["NA","-"] else f'eliozo:hasVideo ?someVideo ; '
     theFGrade = "" if params["grade"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:suggestedGrade ?gg . }"
     theFOlympiad = "" if params["olympiad"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:olympiadType ?oo . }"
     theFDomain = "" if params["domain"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:domain ?dd . }"
     theFQuestionType = "" if params["questionType"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:questionType ?qq . }"
-    theFMethod = "" if params["method"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:LTopic ?mm . }"
+    theFMethod = "" if params["method"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:method ?mm . }"
     theFSolution = "" if params["hasSolution"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:problemSolution ?ss . }"
     theFVideo = "" if params["hasVideo"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:hasVideo ?vv . }"
 
@@ -940,14 +940,15 @@ def create_app(test_config=None):
                             ('International', {'en':'International', 'lt':'Tarptautinė', 'lv':'Starptautiska'}),
                             ('-', {'en':'NA', 'lt':'NA', 'lv':'NA'})]
 
-        methodDict = [('LTInduction', {'en':'Induction', 'lt':'Indukcija', 'lv':'Indukcija'}),
-                      ('LTMeanValuePrinciple', {'en':'MeanValue', 'lt':'Vidutinė Vertė', 'lv':'Vid.Vērtība'}),
-                      ('LTExtremeElement', {'en':'Extreme element','lt':'Kraštinis Elementas', 'lv':'Ekstr.Elements'}),
-                      ('LTInvariant', {'en':'Invariant','lt':'Invariantas', 'lv':'Invariants'}),
-                      ('LTContradiction', {'en':'Contradiction', 'lt':'Prieštaravimas', 'lv': 'Pretruna'}),
-                      ('LTInterpretation', {'en':'Interpretation', 'lt': 'Interpretacija', 'lv':'Interpretācija'}),
-                      ('LTExpressionTransforms', {'en':'Transforms', 'lt':'Pertvarkymai', 'lv':'Pārveidojumi'}),
-                      ('LTStructureAugmentation', {'en':'Structure augmentation', 'lt':'Pagalbinės Konstrukcijos', 'lv':'Papildkonstrukcijas'}),
+        methodDict = [('eliozo:MathematicalInduction', {'en':'Induction', 'lt':'Indukcija', 'lv':'Indukcija'}),
+                      ('eliozo:MeanValuePrinciple', {'en':'MeanValue', 'lt':'Vidutinė Vertė', 'lv':'Vid.Vērtība'}),
+                      ('eliozo:ExtremePrinciple', {'en':'Extreme element','lt':'Kraštinis Elementas', 'lv':'Ekstr.Elements'}),
+                      ('eliozo:InvariantMethod', {'en':'Invariant','lt':'Invariantas', 'lv':'Invariants'}),
+                      ('eliozo:ContradictionMethod', {'en':'Contradiction', 'lt':'Prieštaravimas', 'lv': 'Pretruna'}),
+                      ('eliozo:InterpretationMethod', {'en':'Interpretation', 'lt': 'Interpretacija', 'lv':'Interpretācija'}),
+                      ('eliozo:Transformations', {'en':'Transforms', 'lt':'Pertvarkymai', 'lv':'Pārveidojumi'}),
+                      ('eliozo:Augmentation', {'en':'Structure augmentation', 'lt':'Pagalbinės Konstrukcijos', 'lv':'Papildkonstrukcijas'}),
+                      ('eliozo:Algorithms', {'en':'Algorithms', 'lt':'Algoritmai', 'lv':'Algoritmi'}),
                       ('-', {'en':'NA', 'lt':'NA', 'lv':'NA'})]
 
         solutionDict = [('1', {'en':'Yes', 'lt':'Yra', 'lv':'Ir'}),
@@ -990,9 +991,16 @@ def create_app(test_config=None):
                           'domain':['Alg', 'Comb', 'Geom', 'NT', '-'],
                           'questionType':['FindAll', 'FindCount', 'FindOptimal', 'FindExample',
                                           'Prove', 'ProveDisprove', 'Algorithm', 'ShortAnswer', '-'],
-                          'method':['LTInduction', 'LTMeanValuePrinciple', 'LTExtremeElement',
-                                    'LTInvariant', 'LTContradiction', 'LTInterpretation',
-                                    'LTExpressionTransforms', 'LTStructureAugmentation', '-'],
+                          'method':['eliozo:MathematicalInduction', 
+                                    'eliozo:MeanValuePrinciple', 
+                                    'eliozo:ExtremePrinciple',
+                                    'eliozo:InvariantMethod', 
+                                    'eliozo:ContradictionMethod', 
+                                    'eliozo:InterpretationMethod',
+                                    'eliozo:Transformations', 
+                                    'eliozo:Augmentation', 
+                                    'eliozo:Algorithms',
+                                    '-'],
                           'hasSolution':['1', '-'],
                           'hasVideo':['1', '-']}
 
@@ -1015,6 +1023,10 @@ def create_app(test_config=None):
                 while curr_filter_count - current_offset > 0:
                     page_offsets.append(current_offset)
                     current_offset += 10
+
+            print('======================')
+            print(f'all_counts = {all_counts}')
+            print('++++++++++++++++++++++')
 
             template_context = {
                 'problems': problems,
@@ -1350,7 +1362,7 @@ def create_app(test_config=None):
         problemBookSection = "NA"
         problemGrade = "NA"
         problem_number = "NA"
-        LTopic = "NA"
+        methodIdentifier = "NA"
         topic = "NA"
         concepts = "NA"
         questionType = "NA"
@@ -1372,10 +1384,10 @@ def create_app(test_config=None):
             problemGrade = data['results']['bindings'][0]['problemGrade']['value']
         if 'problem_number' in data['results']['bindings'][0]:
             problem_number = data['results']['bindings'][0]['problem_number']['value']
-        if 'topic' in data['results']['bindings'][0]:
-            topic = data['results']['bindings'][0]['topic']['value']
-        if 'LTopic' in data['results']['bindings'][0]:
-            LTopic = data['results']['bindings'][0]['LTopic']['value']
+        if 'topicIdentifier' in data['results']['bindings'][0]:
+            topicIdentifier = data['results']['bindings'][0]['topicIdentifier']['value']
+        if 'methodIdentifier' in data['results']['bindings'][0]:
+            methodIdentifier = data['results']['bindings'][0]['methodIdentifier']['value']
         if 'concepts' in data['results']['bindings'][0]:
             concepts = data['results']['bindings'][0]['concepts']['value']
         if 'questionType' in data['results']['bindings'][0]:
@@ -1397,12 +1409,14 @@ def create_app(test_config=None):
             if problemBookSection != 'NA':
                 metaitems.append({'key': 'section', 'value': problemBookSection})
 
+        all_topics = []
         if problem_number != 'NA':
             metaitems.append({'key': 'num', 'value': problem_number})
-        if LTopic != 'NA':
-            metaitems.append({'key': 'LTopic', 'value': LTopic})
-        if topic != 'NA':
-            metaitems.append({'key': 'topic', 'value': topic.replace('http://www.dudajevagatve.lv/eliozo#', '')})
+        if methodIdentifier != 'NA':
+            metaitems.append({'key': 'method', 'value': methodIdentifier})
+        if topicIdentifier != 'NA':
+            metaitems.append({'key': 'topic', 'value': topicIdentifier})
+            all_topics.append(topicIdentifier)
         if concepts != 'NA':
             metaitems.append({'key': 'concepts', 'value': concepts.replace('http://www.dudajevagatve.lv/eliozo#TRM-','')})
         if questionType != 'NA':
@@ -1411,15 +1425,20 @@ def create_app(test_config=None):
             all_domains = {"Alg":"Algebra", "Comb":"Kombinatorika", "Geom":"Ģeometrija", "NT":"Skaitļu teorija"}
             metaitems.append({'key': 'domain', 'value': all_domains[domain]})
 
+        unique_sorted_topics = list(sorted(set(all_topics)))
+        print("---------------------")
+        print(f'unique_sorted_topics = {unique_sorted_topics}')
+        print("=====================")
+
         template_context = {
             'problemid': problemid,
             'data': data['results']['bindings'],
+            'topics': unique_sorted_topics,
             'problemTextHtml': problemTextHtml,
             'hasVideo': hasVideo,
             'video_title': video_title,
             'bookmarks': bookmarks,
             'youtubeID': youtubeID,
-            # 'solutionTextHtml': solutionTextHtml,
             'hasSolution': hasSolution,
             'active': 'archive',
             'lang': session.get('lang', 'lv'),
