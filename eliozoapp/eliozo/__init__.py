@@ -34,21 +34,43 @@ else:
 def getSPARQLtopics():
     url = FUSEKI_URL
     queryTemplate = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT DISTINCT ?topicIdentifier ?topicNumber ?topicDescription ?topicName ?problemid WHERE { 
-  ?topic eliozo:topicID ?topicIdentifier .
-  ?topic eliozo:topicNumber ?topicNumber .
-  ?topic eliozo:topicDescription ?topicDescription .
-  ?topic eliozo:topicName ?topicName .
-  OPTIONAL {
-    ?prob eliozo:topic ?topic ;
-          eliozo:problemID ?problemid . 
-  }.
-} ORDER BY ?topicNumber
-"""
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+    SELECT DISTINCT ?topicIdentifier ?topicNumber ?topicDescription ?topicName ?problemid WHERE { 
+    ?topic eliozo:topicID ?topicIdentifier .
+    ?topic eliozo:topicNumber ?topicNumber .
+    ?topic eliozo:topicDescription ?topicDescription .
+    ?topic eliozo:topicName ?topicName .
+    ?topic eliozo:sorter_L1 ?L1 ; 
+            eliozo:sorter_L2 ?L2 ; 
+            eliozo:sorter_L3 ?L3 ; 
+            eliozo:sorter_L4 ?L4 ; 
+            eliozo:sorter_L5 ?L5 .
+    OPTIONAL {
+        ?prob eliozo:topic ?topic ;
+            eliozo:problemID ?problemid . 
+    }.
+    } ORDER BY ?L1 ?L2 ?L3 ?L4 ?L5
+    """
+
+#     queryTemplate = """
+# PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+# PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+# PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+# SELECT DISTINCT ?topicIdentifier ?topicNumber ?topicDescription ?topicName ?problemid WHERE { 
+#   ?topic eliozo:topicID ?topicIdentifier .
+#   ?topic eliozo:topicNumber ?topicNumber .
+#   ?topic eliozo:topicDescription ?topicDescription .
+#   ?topic eliozo:topicName ?topicName .
+#   OPTIONAL {
+#     ?prob eliozo:topic ?topic ;
+#           eliozo:problemID ?problemid . 
+#   }.
+# } ORDER BY ?topicNumber
+# """
 
     myobj = {'query': queryTemplate }
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
@@ -378,6 +400,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
 SELECT ?problemid ?text ?grade WHERE {{
+  {extraClauses}
   ?problem eliozo:problemID ?problemid ;
            {grade}
            {olympiad}
@@ -399,9 +422,10 @@ SELECT ?problemid ?text ?grade WHERE {{
     theOlympiad = "" if params["olympiad"] in ["NA","-"] else f'eliozo:olympiadType "{params["olympiad"]}" ; '
     theDomain = "" if params["domain"] in ["NA","-"] else f'eliozo:domain "{params["domain"]}" ; '
     theQuestionType = "" if params["questionType"] in ["NA","-"] else f'eliozo:questionType "{params["questionType"]}" ; '
-    theMethod = "" if params["method"] in ["NA","-"] else f'eliozo:method ?mymethod . ?mymethod skos:broader* {params["method"]} ; '
+    theMethod = "" if params["method"] in ["NA","-"] else f'eliozo:method ?mymethod ; '
     theSolution = "" if params["hasSolution"] in ["NA","-"] else f'eliozo:problemSolution ?someSolution ; '
     theVideo = "" if params["hasVideo"] in ["NA","-"] else f'eliozo:hasVideo ?someVideo ; '
+    theExtraClauses = "" if params["method"] in ["NA", "-"] else f'?mymethod skos:broader* {params["method"]} . '
 
     theFGrade = "" if params["grade"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:suggestedGrade ?gg . }"
     theFOlympiad = "" if params["olympiad"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:olympiadType ?oo . }"
@@ -415,9 +439,15 @@ SELECT ?problemid ?text ?grade WHERE {{
                              domain=theDomain, questionType=theQuestionType,
                              method=theMethod, offset=theOffset,
                              solution=theSolution, video=theVideo,
+                             extraClauses=theExtraClauses,
                              fGrade=theFGrade, fOlympiad=theFOlympiad, fDomain=theFDomain,
                              fQuestionType=theFQuestionType, fMethod=theFMethod,
                              fSolution=theFSolution, fVideo=theFVideo)
+    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+    print(f"q = {q}")
+    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+
+
     myobj = {'query': q}
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)

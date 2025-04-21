@@ -1,6 +1,7 @@
 import copy
 
-from rdflib import Graph, Namespace, URIRef, Literal, RDF
+from rdflib import Graph, Namespace, URIRef, Literal, RDF, XSD
+# from rdflib.namespace import RDF, FOAF, SKOS, XSD
 import csv
 import rdflib
 import requests
@@ -104,6 +105,12 @@ def addToRdfGraph(g, class_name, numeric_id, topicID, topicDescription, prefLabe
 
     topicNode = rdflib.URIRef(eliozo_ns+topicID) # RDF subjekts
     topic_numeric_id_property = rdflib.URIRef(eliozo_ns + propNames[class_name]['number']) # 1 0 0 0
+    topic_sorter_l1_property = rdflib.URIRef(eliozo_ns + 'sorter_L1')
+    topic_sorter_l2_property = rdflib.URIRef(eliozo_ns + 'sorter_L2')
+    topic_sorter_l3_property = rdflib.URIRef(eliozo_ns + 'sorter_L3')
+    topic_sorter_l4_property = rdflib.URIRef(eliozo_ns + 'sorter_L4')
+    topic_sorter_l5_property = rdflib.URIRef(eliozo_ns + 'sorter_L5')
+
     topic_id_property = rdflib.URIRef(eliozo_ns + propNames[class_name]['id']) # alg.expr
     topic_description_property = rdflib.URIRef(eliozo_ns + propNames[class_name]['description']) # Fiksēts URL, kas apraksta RDF predikātu
     topic_name_property = rdflib.URIRef(eliozo_ns + propNames[class_name]['name'])
@@ -117,6 +124,14 @@ def addToRdfGraph(g, class_name, numeric_id, topicID, topicDescription, prefLabe
     g.add((topicNode, topic_name_property, rdflib.term.Literal(topicName)))
     g.add((topicNode, topic_rdf_type_property, rdflib.URIRef(eliozo_ns+propNames[class_name]['class'])))
     g.add((topicNode, topic_numeric_id_property, rdflib.term.Literal(numeric_id)))
+    # Add levels L1, L2 (possibly also L3-L5) as integers
+    sorters = [int(num) for num in numeric_id.split(".")]
+    g.add((topicNode, topic_sorter_l1_property, rdflib.term.Literal(sorters[0], datatype=XSD.integer)))
+    g.add((topicNode, topic_sorter_l2_property, rdflib.term.Literal(sorters[1], datatype=XSD.integer)))
+    if class_name == 'topic':
+        g.add((topicNode, topic_sorter_l3_property, rdflib.term.Literal(sorters[2], datatype=XSD.integer)))
+        g.add((topicNode, topic_sorter_l4_property, rdflib.term.Literal(sorters[3], datatype=XSD.integer)))
+        g.add((topicNode, topic_sorter_l5_property, rdflib.term.Literal(sorters[4], datatype=XSD.integer)))
     g.add((topicNode, topic_prefLabel_property, rdflib.term.Literal(prefLabel)))
     if parentTopicID != '':
         parent_topic_node = rdflib.URIRef(eliozo_ns+parentTopicID)

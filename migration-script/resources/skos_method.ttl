@@ -1,11 +1,14 @@
 @prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 eliozo:AlgebraicModel a eliozo:Method ;
     eliozo:methodDescription "Teksta uzdevumu vai ģeometrijas uzdevumu risinājumi, ja uzdevuma jēdzienus risinājumā aizstāj ar algebriskiem mainīgajiem un izteiksmēm." ;
     eliozo:methodID "AlgebraicModel" ;
     eliozo:methodName "Algebrisks modelis" ;
     eliozo:methodNumber "6.1" ;
+    eliozo:sorter_L1 6 ;
+    eliozo:sorter_L2 1 ;
     skos:broader eliozo:InterpretationMethod ;
     skos:prefLabel "AlgebraicModel" .
 
@@ -14,6 +17,8 @@ eliozo:AlgorithmAnalysis a eliozo:Method ;
     eliozo:methodID "AlgorithmAnalysis" ;
     eliozo:methodName "Algoritmu analīze" ;
     eliozo:methodNumber "9.1" ;
+    eliozo:sorter_L1 9 ;
+    eliozo:sorter_L2 1 ;
     skos:broader eliozo:Algorithms ;
     skos:prefLabel "AlgorithmAnalysis" .
 
@@ -22,6 +27,8 @@ eliozo:AugmentationWithNewElements a eliozo:Method ;
     eliozo:methodID "AugmentationWithNewElements" ;
     eliozo:methodName "Papildināšana ar jauniem elementiem" ;
     eliozo:methodNumber "8.1" ;
+    eliozo:sorter_L1 8 ;
+    eliozo:sorter_L2 1 ;
     skos:broader eliozo:Augmentation ;
     skos:prefLabel "AugmentationWithNewElements" .
 
@@ -30,6 +37,8 @@ eliozo:AuxiliaryColoring a eliozo:Method ;
     eliozo:methodID "AuxiliaryColoring" ;
     eliozo:methodName "Papildināšana ar krāsojumiem" ;
     eliozo:methodNumber "8.2" ;
+    eliozo:sorter_L1 8 ;
+    eliozo:sorter_L2 2 ;
     skos:broader eliozo:Augmentation ;
     skos:prefLabel "AuxiliaryColoring" .
 
@@ -38,6 +47,8 @@ eliozo:ContinuousPigeonholePrinciple a eliozo:Method ;
     eliozo:methodID "ContinuousPigeonholePrinciple" ;
     eliozo:methodName "Nepārtrauktais Dirihlē princips" ;
     eliozo:methodNumber "2.3" ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 3 ;
     skos:broader eliozo:MeanValuePrinciple ;
     skos:prefLabel "ContinuousPigeonholePrinciple" .
 
@@ -46,6 +57,8 @@ eliozo:ContradictionForExistence a eliozo:Method ;
     eliozo:methodID "ContradictionForExistence" ;
     eliozo:methodName "Neeksistence no pretējā" ;
     eliozo:methodNumber "5.1" ;
+    eliozo:sorter_L1 5 ;
+    eliozo:sorter_L2 1 ;
     skos:broader eliozo:ContradictionMethod ;
     skos:prefLabel "ContradictionForExistence" .
 
@@ -54,6 +67,8 @@ eliozo:ContradictionForNonExistence a eliozo:Method ;
     eliozo:methodID "ContradictionForNonExistence" ;
     eliozo:methodName "Eksistence no pretējā" ;
     eliozo:methodNumber "5.2" ;
+    eliozo:sorter_L1 5 ;
+    eliozo:sorter_L2 2 ;
     skos:broader eliozo:ContradictionMethod ;
     skos:prefLabel "ContradictionForNonExistence" .
 
@@ -62,6 +77,8 @@ eliozo:CoordinateMethod a eliozo:Method ;
     eliozo:methodID "CoordinateMethod" ;
     eliozo:methodName "Koordinātu metode" ;
     eliozo:methodNumber "6.2" ;
+    eliozo:sorter_L1 6 ;
+    eliozo:sorter_L2 2 ;
     skos:broader eliozo:InterpretationMethod ;
     skos:prefLabel "CoordinateMethod" .
 
@@ -70,6 +87,8 @@ eliozo:DivideAndConquerAlgorithms a eliozo:Method ;
     eliozo:methodID "DivideAndConquerAlgorithms" ;
     eliozo:methodName "“Skaldi un valdi” paradigma" ;
     eliozo:methodNumber "9.4" ;
+    eliozo:sorter_L1 9 ;
+    eliozo:sorter_L2 4 ;
     skos:broader eliozo:Algorithms ;
     skos:prefLabel "DivideAndConquerAlgorithms" .
 
@@ -78,6 +97,8 @@ eliozo:DynamicProgrammingAlgorithms a eliozo:Method ;
     eliozo:methodID "DynamicProgrammingAlgorithms" ;
     eliozo:methodName "Dinamiskā programmēšana" ;
     eliozo:methodNumber "9.6" ;
+    eliozo:sorter_L1 9 ;
+    eliozo:sorter_L2 6 ;
     skos:broader eliozo:Algorithms ;
     skos:prefLabel "DynamicProgrammingAlgorithms" .
 
@@ -86,6 +107,8 @@ eliozo:ExhaustiveAlgorithms a eliozo:Method ;
     eliozo:methodID "ExhaustiveAlgorithms" ;
     eliozo:methodName "Pārlases algoritmi" ;
     eliozo:methodNumber "9.2" ;
+    eliozo:sorter_L1 9 ;
+    eliozo:sorter_L2 2 ;
     skos:broader eliozo:Algorithms ;
     skos:prefLabel "ExhaustiveAlgorithms" .
 
@@ -94,6 +117,8 @@ eliozo:ExtremeConstructions a eliozo:Method ;
     eliozo:methodID "ExtremeConstructions" ;
     eliozo:methodName "Ekstremālas konstrukcijas" ;
     eliozo:methodNumber "3.2" ;
+    eliozo:sorter_L1 3 ;
+    eliozo:sorter_L2 2 ;
     skos:broader eliozo:ExtremePrinciple ;
     skos:prefLabel "ExtremeConstructions" .
 
@@ -102,6 +127,8 @@ eliozo:ExtremeElements a eliozo:Method ;
     eliozo:methodID "ExtremeElements" ;
     eliozo:methodName "Ekstremālie elementi" ;
     eliozo:methodNumber "3.1" ;
+    eliozo:sorter_L1 3 ;
+    eliozo:sorter_L2 1 ;
     skos:broader eliozo:ExtremePrinciple ;
     skos:prefLabel "ExtremeElements" .
 
@@ -110,6 +137,8 @@ eliozo:FixedInvariant a eliozo:Method ;
     eliozo:methodID "FixedInvariant" ;
     eliozo:methodName "Fiksēts invariants" ;
     eliozo:methodNumber "4.1" ;
+    eliozo:sorter_L1 4 ;
+    eliozo:sorter_L2 1 ;
     skos:broader eliozo:InvariantMethod ;
     skos:prefLabel "FixedInvariant" .
 
@@ -118,6 +147,8 @@ eliozo:GeometricInterpretation a eliozo:Method ;
     eliozo:methodID "GeometricInterpretation" ;
     eliozo:methodName "Ģeometriska interpretācija" ;
     eliozo:methodNumber "6.3" ;
+    eliozo:sorter_L1 6 ;
+    eliozo:sorter_L2 3 ;
     skos:broader eliozo:InterpretationMethod ;
     skos:prefLabel "GeometricInterpretation" .
 
@@ -126,6 +157,8 @@ eliozo:GraphTransformations a eliozo:Method ;
     eliozo:methodID "GraphTransformations" ;
     eliozo:methodName "Pārveidojumi grafos" ;
     eliozo:methodNumber "7.3" ;
+    eliozo:sorter_L1 7 ;
+    eliozo:sorter_L2 3 ;
     skos:broader eliozo:Transformations ;
     skos:prefLabel "GraphTransformations" .
 
@@ -134,6 +167,8 @@ eliozo:GreedyAlgorithms a eliozo:Method ;
     eliozo:methodID "GreedyAlgorithms" ;
     eliozo:methodName "Rijīgie algoritmi" ;
     eliozo:methodNumber "9.7" ;
+    eliozo:sorter_L1 9 ;
+    eliozo:sorter_L2 7 ;
     skos:broader eliozo:Algorithms ;
     skos:prefLabel "GreedyAlgorithms" .
 
@@ -142,6 +177,8 @@ eliozo:InductionConstructions a eliozo:Method ;
     eliozo:methodID "InductionConstructions" ;
     eliozo:methodName "Induktīvas konstrukcijas" ;
     eliozo:methodNumber "1.7" ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 7 ;
     skos:broader eliozo:MathematicalInduction ;
     skos:prefLabel "InductionConstructions" .
 
@@ -150,6 +187,8 @@ eliozo:InductionInfiniteDescent a eliozo:Method ;
     eliozo:methodID "InductionInfiniteDescent" ;
     eliozo:methodName "Bezgalīgā kritiena metode" ;
     eliozo:methodNumber "1.9" ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 9 ;
     skos:broader eliozo:MathematicalInduction ;
     skos:prefLabel "InductionInfiniteDescent" .
 
@@ -158,6 +197,8 @@ eliozo:InductionStructural a eliozo:Method ;
     eliozo:methodID "InductionStructural" ;
     eliozo:methodName "Strukturālā indukcija" ;
     eliozo:methodNumber "1.6" ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 6 ;
     skos:broader eliozo:MathematicalInduction ;
     skos:prefLabel "InductionStructural" .
 
@@ -166,6 +207,8 @@ eliozo:InductionWithCombinedStep a eliozo:Method ;
     eliozo:methodID "InductionWithCombinedStep" ;
     eliozo:methodName "Kombinēts indukcijas solis" ;
     eliozo:methodNumber "1.3" ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 3 ;
     skos:broader eliozo:MathematicalInduction ;
     skos:prefLabel "InductionWithCombinedStep" .
 
@@ -174,6 +217,8 @@ eliozo:InductionWithLargerStep a eliozo:Method ;
     eliozo:methodID "InductionWithLargerStep" ;
     eliozo:methodName "Indukcija ar lielāku soli" ;
     eliozo:methodNumber "1.2" ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 2 ;
     skos:broader eliozo:MathematicalInduction ;
     skos:prefLabel "InductionWithLargerStep" .
 
@@ -182,6 +227,8 @@ eliozo:InductionWithStepOne a eliozo:Method ;
     eliozo:methodID "InductionWithStepOne" ;
     eliozo:methodName "Indukcija ar soli 1" ;
     eliozo:methodNumber "1.1" ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 1 ;
     skos:broader eliozo:MathematicalInduction ;
     skos:prefLabel "InductionWithStepOne" .
 
@@ -190,6 +237,8 @@ eliozo:InductiveAlgorithms a eliozo:Method ;
     eliozo:methodID "InductiveAlgorithms" ;
     eliozo:methodName "Induktīvie algoritmi" ;
     eliozo:methodNumber "9.3" ;
+    eliozo:sorter_L1 9 ;
+    eliozo:sorter_L2 3 ;
     skos:broader eliozo:Algorithms ;
     skos:prefLabel "InductiveAlgorithms" .
 
@@ -198,6 +247,8 @@ eliozo:InterpretationWithCoding a eliozo:Method ;
     eliozo:methodID "InterpretationWithCoding" ;
     eliozo:methodName "Interpretācija ar iekodēšanu" ;
     eliozo:methodNumber "6.4" ;
+    eliozo:sorter_L1 6 ;
+    eliozo:sorter_L2 4 ;
     skos:broader eliozo:InterpretationMethod ;
     skos:prefLabel "InterpretationWithCoding" .
 
@@ -206,6 +257,8 @@ eliozo:LinearTransformations a eliozo:Method ;
     eliozo:methodID "LinearTransformations" ;
     eliozo:methodName "Lineārās algebras pārveidojumi" ;
     eliozo:methodNumber "7.2" ;
+    eliozo:sorter_L1 7 ;
+    eliozo:sorter_L2 2 ;
     skos:broader eliozo:Transformations ;
     skos:prefLabel "LinearTransformations" .
 
@@ -214,6 +267,8 @@ eliozo:MeanWeights a eliozo:Method ;
     eliozo:methodID "MeanWeights" ;
     eliozo:methodName "Masas centru metode" ;
     eliozo:methodNumber "2.4" ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 4 ;
     skos:broader eliozo:MeanValuePrinciple ;
     skos:prefLabel "MeanWeights" .
 
@@ -222,6 +277,8 @@ eliozo:Monovariant a eliozo:Method ;
     eliozo:methodID "Monovariant" ;
     eliozo:methodName "Monovariants" ;
     eliozo:methodNumber "4.3" ;
+    eliozo:sorter_L1 4 ;
+    eliozo:sorter_L2 3 ;
     skos:broader eliozo:InvariantMethod ;
     skos:prefLabel "Monovariant" .
 
@@ -230,6 +287,8 @@ eliozo:OrderingElements a eliozo:Method ;
     eliozo:methodID "OrderingElements" ;
     eliozo:methodName "Elementu kārtošana" ;
     eliozo:methodNumber "3.3" ;
+    eliozo:sorter_L1 3 ;
+    eliozo:sorter_L2 3 ;
     skos:broader eliozo:ExtremePrinciple ;
     skos:prefLabel "OrderingElements" .
 
@@ -238,6 +297,8 @@ eliozo:PeriodicInvariant a eliozo:Method ;
     eliozo:methodID "PeriodicInvariant" ;
     eliozo:methodName "Periodisks invariants" ;
     eliozo:methodNumber "4.2" ;
+    eliozo:sorter_L1 4 ;
+    eliozo:sorter_L2 2 ;
     skos:broader eliozo:InvariantMethod ;
     skos:prefLabel "PeriodicInvariant" .
 
@@ -246,6 +307,8 @@ eliozo:PigeonholePrincipleBasic a eliozo:Method ;
     eliozo:methodID "PigeonholePrincipleBasic" ;
     eliozo:methodName "Dirihlē princips" ;
     eliozo:methodNumber "2.1" ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 1 ;
     skos:broader eliozo:MeanValuePrinciple ;
     skos:prefLabel "PigeonholePrincipleBasic" .
 
@@ -254,6 +317,8 @@ eliozo:PigeonholePrincipleGeneralized a eliozo:Method ;
     eliozo:methodID "PigeonholePrincipleGeneralized" ;
     eliozo:methodName "Vispārinātais Dirihlē princips" ;
     eliozo:methodNumber "2.2" ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 2 ;
     skos:broader eliozo:MeanValuePrinciple ;
     skos:prefLabel "PigeonholePrincipleGeneralized" .
 
@@ -262,6 +327,8 @@ eliozo:PolynomialTransformations a eliozo:Method ;
     eliozo:methodID "PolynomialTransformations" ;
     eliozo:methodName "Polinomu pārveidojumi" ;
     eliozo:methodNumber "7.1" ;
+    eliozo:sorter_L1 7 ;
+    eliozo:sorter_L2 1 ;
     skos:broader eliozo:Transformations ;
     skos:prefLabel "PolynomialTransformations" .
 
@@ -270,6 +337,8 @@ eliozo:StrentheningInductiveHypothesis a eliozo:Method ;
     eliozo:methodID "StrentheningInductiveHypothesis" ;
     eliozo:methodName "Induktīvās hipotēzes pastiprināšana" ;
     eliozo:methodNumber "1.8" ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 8 ;
     skos:broader eliozo:MathematicalInduction ;
     skos:prefLabel "StrentheningInductiveHypothesis" .
 
@@ -278,6 +347,8 @@ eliozo:StrongInduction a eliozo:Method ;
     eliozo:methodID "StrongInduction" ;
     eliozo:methodName "Stiprā indukcija" ;
     eliozo:methodNumber "1.4" ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 4 ;
     skos:broader eliozo:MathematicalInduction ;
     skos:prefLabel "StrongInduction" .
 
@@ -286,6 +357,8 @@ eliozo:TransitionToHigherDimension a eliozo:Method ;
     eliozo:methodID "TransitionToHigherDimension" ;
     eliozo:methodName "Pāriešana augstākā dimensijā" ;
     eliozo:methodNumber "8.3" ;
+    eliozo:sorter_L1 8 ;
+    eliozo:sorter_L2 3 ;
     skos:broader eliozo:Augmentation ;
     skos:prefLabel "TransitionToHigherDimension" .
 
@@ -294,6 +367,8 @@ eliozo:TwoDirectionalInduction a eliozo:Method ;
     eliozo:methodID "TwoDirectionalInduction" ;
     eliozo:methodName "Divvirzienu indukcija" ;
     eliozo:methodNumber "1.5" ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 5 ;
     skos:broader eliozo:MathematicalInduction ;
     skos:prefLabel "TwoDirectionalInduction" .
 
@@ -306,6 +381,8 @@ eliozo:ContradictionMethod a eliozo:Method ;
     eliozo:methodID "ContradictionMethod" ;
     eliozo:methodName "Pierādījums no pretējā" ;
     eliozo:methodNumber "5.0" ;
+    eliozo:sorter_L1 5 ;
+    eliozo:sorter_L2 0 ;
     skos:narrower eliozo:ContradictionForExistence,
         eliozo:ContradictionForNonExistence ;
     skos:prefLabel "ContradictionMethod" .
@@ -315,6 +392,8 @@ eliozo:Augmentation a eliozo:Method ;
     eliozo:methodID "Augmentation" ;
     eliozo:methodName "Struktūru papildināšana" ;
     eliozo:methodNumber "8.0" ;
+    eliozo:sorter_L1 8 ;
+    eliozo:sorter_L2 0 ;
     skos:narrower eliozo:AugmentationWithNewElements,
         eliozo:AuxiliaryColoring,
         eliozo:TransitionToHigherDimension ;
@@ -329,6 +408,8 @@ eliozo:ExtremePrinciple a eliozo:Method ;
     eliozo:methodID "ExtremePrinciple" ;
     eliozo:methodName "Ekstrēmālā elementa metode" ;
     eliozo:methodNumber "3.0" ;
+    eliozo:sorter_L1 3 ;
+    eliozo:sorter_L2 0 ;
     skos:narrower eliozo:ExtremeConstructions,
         eliozo:ExtremeElements,
         eliozo:OrderingElements ;
@@ -342,6 +423,8 @@ eliozo:InvariantMethod a eliozo:Method ;
     eliozo:methodID "InvariantMethod" ;
     eliozo:methodName "Invariantu metode" ;
     eliozo:methodNumber "4.0" ;
+    eliozo:sorter_L1 4 ;
+    eliozo:sorter_L2 0 ;
     skos:narrower eliozo:FixedInvariant,
         eliozo:Monovariant,
         eliozo:PeriodicInvariant ;
@@ -352,6 +435,8 @@ eliozo:Transformations a eliozo:Method ;
     eliozo:methodID "Transformations" ;
     eliozo:methodName "Izteiksmju pārveidojumi" ;
     eliozo:methodNumber "7.0" ;
+    eliozo:sorter_L1 7 ;
+    eliozo:sorter_L2 0 ;
     skos:narrower eliozo:GraphTransformations,
         eliozo:LinearTransformations,
         eliozo:PolynomialTransformations ;
@@ -362,6 +447,8 @@ eliozo:InterpretationMethod a eliozo:Method ;
     eliozo:methodID "InterpretationMethod" ;
     eliozo:methodName "Interpretāciju metode" ;
     eliozo:methodNumber "6.0" ;
+    eliozo:sorter_L1 6 ;
+    eliozo:sorter_L2 0 ;
     skos:narrower eliozo:AlgebraicModel,
         eliozo:CoordinateMethod,
         eliozo:GeometricInterpretation,
@@ -377,6 +464,8 @@ eliozo:MeanValuePrinciple a eliozo:Method ;
     eliozo:methodID "MeanValuePrinciple" ;
     eliozo:methodName "Vidējās vērtības metode" ;
     eliozo:methodNumber "2.0" ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 0 ;
     skos:narrower eliozo:ContinuousPigeonholePrinciple,
         eliozo:MeanWeights,
         eliozo:PigeonholePrincipleBasic,
@@ -388,6 +477,8 @@ eliozo:Algorithms a eliozo:Method ;
     eliozo:methodID "Algorithms" ;
     eliozo:methodName "Kombinatoriskie algoritmi" ;
     eliozo:methodNumber "9.0" ;
+    eliozo:sorter_L1 9 ;
+    eliozo:sorter_L2 0 ;
     skos:narrower eliozo:AlgorithmAnalysis,
         eliozo:DivideAndConquerAlgorithms,
         eliozo:DynamicProgrammingAlgorithms,
@@ -405,6 +496,8 @@ eliozo:MathematicalInduction a eliozo:Method ;
     eliozo:methodID "MathematicalInduction" ;
     eliozo:methodName "Matemātiskā indukcija" ;
     eliozo:methodNumber "1.0" ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 0 ;
     skos:narrower eliozo:InductionConstructions,
         eliozo:InductionInfiniteDescent,
         eliozo:InductionStructural,
