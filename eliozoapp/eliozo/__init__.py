@@ -1525,17 +1525,20 @@ def create_app(test_config=None):
                 #if olympiadCountry.find('#') >= 0:
                 #    country = olympiadCountry[olympiadCountry.find('#')+1:]
 
+            if olympiadCode not in ['AMO', 'NOL', 'SOL', 'VOL']:
+                continue
+
             olympiadEvents = []
             eventData = json.loads(getSPARQLOlympiadTimeIDs(country, olympiadCode))
             for event in eventData['results']['bindings']:
                 timeID = event['problemTimeID']['value']
-                isComplete = False
-                if country == 'LV' and olympiadCode in ['AMO', 'NOL', 'SOL', 'VOL']:
-                    year = int(timeID[0:4])
-                    if year >= 2004:
-                        isComplete = True
-                    if olympiadCode == 'VOL' and year == 2004:
-                        isComplete = False
+                isComplete = True
+                # if country == 'LV' and olympiadCode in ['AMO', 'NOL', 'SOL', 'VOL']:
+                #     year = int(timeID[0:4])
+                #     if year >= 2004:
+                #         isComplete = True
+                #     if olympiadCode == 'VOL' and year == 2004:
+                #         isComplete = False
                 olympiadEvents.append((timeID, isComplete))
 
 

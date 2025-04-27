@@ -627,8 +627,9 @@ visus jaunumus.</p>
 
 eliozo:LV.NOL.2010.7.1 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:event "LV.NOL.2010" ;
+    eliozo:method eliozo:FixedInvariant ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -639,25 +640,27 @@ eliozo:LV.NOL.2010.7.1 a eliozo:Problem ;
 rindā esošos skaitļus un tās otrā galā pieraksta abu nodzēsto skaitļu summu. Šādus
 gājienus atkārto, līdz rindā paliek tikai viens skaitlis.
 
-**(A)** cik gājienu tiks izdarīti?
-
+**(A)** cik gājienu tiks izdarīti?  
 **(B)** atrast vienīgo palikušo skaitli."""@lv ;
     eliozo:problemTextHtml """<p>Rindā no sākuma bija uzrakstīti $2009$ vieninieki. Ar vienu gājienu nodzēš divus pirmos
 rindā esošos skaitļus un tās otrā galā pieraksta abu nodzēsto skaitļu summu. Šādus
 gājienus atkārto, līdz rindā paliek tikai viens skaitlis.</p>
-<p><strong>(A)</strong> cik gājienu tiks izdarīti?</p>
-<p><strong>(B)</strong> atrast vienīgo palikušo skaitli.</p>"""@lv ;
+<p><strong>(A)</strong> cik gājienu tiks izdarīti?<br />
+<strong>(B)</strong> atrast vienīgo palikušo skaitli.</p>"""@lv ;
     eliozo:problemTimeID "2010" ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll",
+        "FindCount" ;
+    eliozo:subdomain eliozo:RealSequences ;
     eliozo:suffix "LV.NOL.2010.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2010.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:event "LV.NOL.2010" ;
+    eliozo:method eliozo:PolynomialTransformations ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -669,7 +672,8 @@ eliozo:LV.NOL.2010.7.2 a eliozo:Problem ;
     eliozo:problemTimeID "2010" ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindAll" ;
+    eliozo:subdomain eliozo:EquationSystems ;
     eliozo:suffix "LV.NOL.2010.7" ;
     eliozo:suggestedGrade 7 .
 
@@ -677,6 +681,7 @@ eliozo:LV.NOL.2010.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.NOL.2010" ;
+    eliozo:method "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -692,6 +697,8 @@ $(x+1)(x+2)(x+3)$ dalās ar $343$?</p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindCount" ;
+    eliozo:subdomain eliozo:Divisibility,
+        eliozo:PrimeFactors ;
     eliozo:suffix "LV.NOL.2010.7" ;
     eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:FactorizationAndDivisibility,
@@ -699,8 +706,9 @@ $(x+1)(x+2)(x+3)$ dalās ar $343$?</p>"""@lv ;
 
 eliozo:LV.NOL.2010.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2010" ;
+    eliozo:method eliozo:MeanValuePrinciple ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -716,14 +724,17 @@ rūtiņām nebūtu nokrāsotas visas malas?</p>"""@lv ;
     eliozo:problemTimeID "2010" ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "FindOptimal" ;
+    eliozo:subdomain eliozo:IntegerLattices,
+        eliozo:ObjectSystemsGeometry ;
     eliozo:suffix "LV.NOL.2010.7" ;
     eliozo:suggestedGrade 7 .
 
 eliozo:LV.NOL.2010.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2010" ;
+    eliozo:method eliozo:InductiveAlgorithms ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -743,6 +754,7 @@ visus jaunumus.</p>
     eliozo:problemYear 2010 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "" ;
+    eliozo:subdomain eliozo:CombinatorialAlgorithms ;
     eliozo:suffix "LV.NOL.2010.7" ;
     eliozo:suggestedGrade 7 .
 
@@ -750,6 +762,7 @@ eliozo:LV.NOL.2010.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.NOL.2010" ;
+    eliozo:method eliozo:PolynomialTransformations ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -775,6 +788,7 @@ $2$ un $3$.)</p>"""@lv ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindCount",
         "ProveDisprove" ;
+    eliozo:subdomain eliozo:PrimeFactors ;
     eliozo:suffix "LV.NOL.2010.8" ;
     eliozo:suggestedGrade 8 ;
     eliozo:topic eliozo:PrimesDistribution,
@@ -783,8 +797,9 @@ $2$ un $3$.)</p>"""@lv ;
 
 eliozo:LV.NOL.2010.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2010" ;
+    eliozo:method "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -798,14 +813,17 @@ $\\sphericalangle ABC=20^{\\circ}$. Pierādiet, ka $3 \\cdot AC > AB$.</p>"""@lv
     eliozo:problemTimeID "2010" ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
+    eliozo:subdomain eliozo:Triangles ;
     eliozo:suffix "LV.NOL.2010.8" ;
-    eliozo:suggestedGrade 8 .
+    eliozo:suggestedGrade 8 ;
+    eliozo:topic eliozo:TriangleInequality .
 
 eliozo:LV.NOL.2010.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.NOL.2010" ;
+    eliozo:method eliozo:FixedInvariant ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -821,6 +839,7 @@ starpība dalās ar $9$.</p>"""@lv ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "Prove" ;
+    eliozo:subdomain eliozo:NumeralSystems ;
     eliozo:suffix "LV.NOL.2010.8" ;
     eliozo:suggestedGrade 8 ;
     eliozo:topic eliozo:DivisibilityRulesFor3And9,
@@ -829,8 +848,9 @@ starpība dalās ar $9$.</p>"""@lv ;
 
 eliozo:LV.NOL.2010.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Alg" ;
     eliozo:event "LV.NOL.2010" ;
+    eliozo:method "" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -848,14 +868,16 @@ ir identitāte?</p>"""@lv ;
     eliozo:problemTimeID "2010" ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "ProveDisprove" ;
+    eliozo:subdomain eliozo:Equations ;
     eliozo:suffix "LV.NOL.2010.8" ;
     eliozo:suggestedGrade 8 .
 
 eliozo:LV.NOL.2010.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2010" ;
+    eliozo:method eliozo:ExtremeConstructions ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -869,7 +891,8 @@ tādas $3$ lampas, kuras visas savā starpā savienotas ar vienas krāsas vītn�
     eliozo:problemTimeID "2010" ;
     eliozo:problemYear 2010 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Prove" ;
+    eliozo:subdomain eliozo:Graphs ;
     eliozo:suffix "LV.NOL.2010.8" ;
     eliozo:suggestedGrade 8 .
 
@@ -1795,12 +1818,12 @@ eliozo:SOLN.LV.NOL.2010.9.1.SUB1 a eliozo:Solution ;
 
 **(A)** piemēram, $x^{2}-2x-1=0$.
 
-**(B)** ievērojam, ka $\\sqrt{7+4 \\sqrt{3}}=\\sqrt{(\\sqrt{3}+2)^{2}}=\\sqrt{3}+2$. Tāpēc
-    der, piemēram, vienādojums $x^{2}-4x+1=0$"""@lv ;
+**(B)** ievērojam, ka $\\sqrt{7+4 \\sqrt{3}}=\\sqrt{(\\sqrt{3}+2)^{2}}=\\sqrt{3}+2$. 
+Tāpēc der, piemēram, vienādojums $x^{2}-4x+1=0$"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
 <p><strong>(A)</strong> piemēram, $x^{2}-2x-1=0$.</p>
-<p><strong>(B)</strong> ievērojam, ka $\\sqrt{7+4 \\sqrt{3}}=\\sqrt{(\\sqrt{3}+2)^{2}}=\\sqrt{3}+2$. Tāpēc
-    der, piemēram, vienādojums $x^{2}-4x+1=0$</p>"""@lv .
+<p><strong>(B)</strong> ievērojam, ka $\\sqrt{7+4 \\sqrt{3}}=\\sqrt{(\\sqrt{3}+2)^{2}}=\\sqrt{3}+2$. 
+Tāpēc der, piemēram, vienādojums $x^{2}-4x+1=0$</p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2010.9.2.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;

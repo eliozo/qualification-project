@@ -12,11 +12,9 @@
 - **Estonia (Sea Blue):** `#006994`
       #}
 
-      <p>{% trans %}Olympiads with full solutions are shown in bold. Others are incomplete.{% endtrans %}</p>
-
       <div class="olympiads">
 
-          {% for (country,color) in [('LV', '#228B22'), ('EE', '#006994'), ('LT', '#FFBF00'), ('', 'black')] %}
+          {% for (country,color) in [('LV', '#228B22'), ('EE', '#006994'), ('LT', '#FFBF00'), ('', 'black'), ('ZZ', 'black')] %}
 
           {% for link in links %}
           {% if link.olympiadCountry == country %}
@@ -26,7 +24,7 @@
     <span class="tltiptext"><b>{{link.olympiadCountry}}.{{link.olympiadCode}}:</b> {{ link.olympiadDescription }}</span></span>:
               {% for (event,isComplete) in link.olympiadEvents %}
               <a href="{{ url_for('getGrades',event=event,grade=-1,country=link.olympiadCountry,olympiad=link.olympiadCode) }}">
-                  {% if isComplete %}<b>{{ event }}</b>{% else %}{{ event }}{% endif %}</a>{%- if not loop.last %};{% endif %}
+                  <b>{{ event }}</b></a>{%- if not loop.last %};{% endif %}
               {% endfor %}
           </p>
           {% endif %}
@@ -34,6 +32,8 @@
 
           {% endfor %}
       </div>
+
+    {#  
     <hr style="width:90%"/>
     <dl>
       <dt>BBK2012:
@@ -41,6 +41,7 @@
       <a href="{{ url_for('getBook',book_id='BBK2012',section_id='P3') }}">3.daļa</a></dt>
       <dd style="margin-left:20px">A.Bērziņš, D.Kūma. Olimpiāžu un konkursu uzdevumu krājums skaitļu teorijā.</dd>
     </dl>
+    #}
 
         </div>
 {% endblock %}

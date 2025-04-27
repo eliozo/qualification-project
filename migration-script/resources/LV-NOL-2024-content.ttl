@@ -13,20 +13,21 @@ eliozo:LV.NOL.2024.10.1 a eliozo:Problem ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2024.10.1.SUB1 ;
     eliozo:problemText """Dotas divas riṇka līnijas $\\omega_{1}$ un $\\omega_{2}$, kas krustojas punktos 
 $X$ un $Y$. Taisne $t_{1}$, kas vilkta caur $X$, krusto $\\omega_{1}$ un $\\omega_{2}$ 
-attiecīgi punktos $A$ un $B$ (punkts $X$ atrodas starp $A$ un $B$ ), 
+attiecīgi punktos $A$ un $B$ (punkts $X$ atrodas starp $A$ un $B$), 
 savukārt taisne $t_{2}$, kas vilkta caur $Y$, krusto $\\omega_{1}$ un $\\omega_{2}$ 
-attiecīgi punktos $C$ un $D$ (punkts $Y$ atrodas starp $C$ un $D$ ). 
+attiecīgi punktos $C$ un $D$ (punkts $Y$ atrodas starp $C$ un $D$). 
 Pierādīt, ka $AC$ ir paralēla ar $BD$!"""@lv ;
     eliozo:problemTextHtml """<p>Dotas divas riṇka līnijas $\\omega_{1}$ un $\\omega_{2}$, kas krustojas punktos 
 $X$ un $Y$. Taisne $t_{1}$, kas vilkta caur $X$, krusto $\\omega_{1}$ un $\\omega_{2}$ 
-attiecīgi punktos $A$ un $B$ (punkts $X$ atrodas starp $A$ un $B$ ), 
+attiecīgi punktos $A$ un $B$ (punkts $X$ atrodas starp $A$ un $B$), 
 savukārt taisne $t_{2}$, kas vilkta caur $Y$, krusto $\\omega_{1}$ un $\\omega_{2}$ 
-attiecīgi punktos $C$ un $D$ (punkts $Y$ atrodas starp $C$ un $D$ ). 
+attiecīgi punktos $C$ un $D$ (punkts $Y$ atrodas starp $C$ un $D$). 
 Pierādīt, ka $AC$ ir paralēla ar $BD$!</p>"""@lv ;
     eliozo:problemTimeID "2024" ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "Prove" ;
+    eliozo:subdomain "" ;
     eliozo:suffix "LV.NOL.2024.10" ;
     eliozo:suggestedGrade 10 .
 
@@ -129,11 +130,11 @@ eliozo:LV.NOL.2024.11.1 a eliozo:Problem ;
     eliozo:problemGrade 11 ;
     eliozo:problemID "LV.NOL.2024.11.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2024.11.1.SUB1 ;
-    eliozo:problemText """No punkta $A$, kas atrodas ārpus riṇḳa līnijas ar centru $O$, novilktas divas pieskares, 
+    eliozo:problemText """No punkta $A$, kas atrodas ārpus riṇķa līnijas ar centru $O$, novilktas divas pieskares, 
 kas pieskaras riṇka līnijai punktos $D$ un $E$. Uz taisnēm $AD$ un $AE$ atlikti attiecīgi 
 punkti $B$ un $C$ tā, ka punkts $D$ atrodas starp $A$ un $B$, punkts $C$ atrodas starp 
 $A$ un $E$ un $OB = OC$. Pierādīt, ka punkti $O$, $A$, $B$ un $C$ atrodas uz vienas rinkta līnijas!"""@lv ;
-    eliozo:problemTextHtml """<p>No punkta $A$, kas atrodas ārpus riṇḳa līnijas ar centru $O$, novilktas divas pieskares, 
+    eliozo:problemTextHtml """<p>No punkta $A$, kas atrodas ārpus riṇķa līnijas ar centru $O$, novilktas divas pieskares, 
 kas pieskaras riṇka līnijai punktos $D$ un $E$. Uz taisnēm $AD$ un $AE$ atlikti attiecīgi 
 punkti $B$ un $C$ tā, ka punkts $D$ atrodas starp $A$ un $B$, punkts $C$ atrodas starp 
 $A$ un $E$ un $OB = OC$. Pierādīt, ka punkti $O$, $A$, $B$ un $C$ atrodas uz vienas rinkta līnijas!</p>"""@lv ;
@@ -179,10 +180,14 @@ eliozo:LV.NOL.2024.11.3 a eliozo:Problem ;
     eliozo:problemID "LV.NOL.2024.11.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2024.11.3.SUB1,
         eliozo:SOLN.LV.NOL.2024.11.3.SUB2 ;
-    eliozo:problemText """Taisnlen̦ḳa trijstūrī $ABC\\left(\\sphericalangle ABC=90^{\\circ}\\right)$ uz malas $BC$ atlikti punkti $D$ un $E$ tā, ka $\\sphericalangle BAD=\\sphericalangle DAE, \\sphericalangle EAC=2 \\sphericalangle BAD$, $BD=3$, $DE=4$. 
-Aprēḳināt $EC$ garumu!"""@lv ;
-    eliozo:problemTextHtml """<p>Taisnlen̦ḳa trijstūrī $ABC\\left(\\sphericalangle ABC=90^{\\circ}\\right)$ uz malas $BC$ atlikti punkti $D$ un $E$ tā, ka $\\sphericalangle BAD=\\sphericalangle DAE, \\sphericalangle EAC=2 \\sphericalangle BAD$, $BD=3$, $DE=4$. 
-Aprēḳināt $EC$ garumu!</p>"""@lv ;
+    eliozo:problemText """Taisnlen̦ķa trijstūrī $ABC\\left(\\sphericalangle ABC=90^{\\circ}\\right)$ uz malas 
+$BC$ atlikti punkti $D$ un $E$ tā, ka 
+$\\sphericalangle BAD=\\sphericalangle DAE, \\sphericalangle EAC=2 \\sphericalangle BAD$, $BD=3$, $DE=4$. 
+Aprēķināt $EC$ garumu!"""@lv ;
+    eliozo:problemTextHtml """<p>Taisnlen̦ķa trijstūrī $ABC\\left(\\sphericalangle ABC=90^{\\circ}\\right)$ uz malas 
+$BC$ atlikti punkti $D$ un $E$ tā, ka 
+$\\sphericalangle BAD=\\sphericalangle DAE, \\sphericalangle EAC=2 \\sphericalangle BAD$, $BD=3$, $DE=4$. 
+Aprēķināt $EC$ garumu!</p>"""@lv ;
     eliozo:problemTimeID "2024" ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number "None"^^xsd:integer ;
@@ -253,9 +258,9 @@ eliozo:LV.NOL.2024.12.1 a eliozo:Problem ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2024.12.1" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2024.12.1.SUB1 ;
-    eliozo:problemText """Šaurlen̦ḳu trijstūrī $ABC$ novilkti augstumi $AD, BE$ un $CF$, kas krustojas punktā $H$. 
+    eliozo:problemText """Šaurlen̦ķu trijstūrī $ABC$ novilkti augstumi $AD, BE$ un $CF$, kas krustojas punktā $H$. 
 Pierādīt, ka $DH$ ir leṇka $EDF$ bisektrise!"""@lv ;
-    eliozo:problemTextHtml """<p>Šaurlen̦ḳu trijstūrī $ABC$ novilkti augstumi $AD, BE$ un $CF$, kas krustojas punktā $H$. 
+    eliozo:problemTextHtml """<p>Šaurlen̦ķu trijstūrī $ABC$ novilkti augstumi $AD, BE$ un $CF$, kas krustojas punktā $H$. 
 Pierādīt, ka $DH$ ir leṇka $EDF$ bisektrise!</p>"""@lv ;
     eliozo:problemTimeID "2024" ;
     eliozo:problemYear 2024 ;
@@ -298,8 +303,12 @@ eliozo:LV.NOL.2024.12.3 a eliozo:Problem ;
     eliozo:problemGrade 12 ;
     eliozo:problemID "LV.NOL.2024.12.3" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2024.12.3.SUB1 ;
-    eliozo:problemText "Taisnleṇḳa trijstūrī $A B C\\left(\\sphericalangle A B C=90^{\\circ}\\right)$ uz malas $B C$ atlikti punkti $D$ un $E$ tā, ka $\\sphericalangle EAC=\\sphericalangle DAE=2 \\sphericalangle BAD$, $BD=1, DE=3$. Aprēķināt $EC$ garumu!"@lv ;
-    eliozo:problemTextHtml "<p>Taisnleṇḳa trijstūrī $A B C\\left(\\sphericalangle A B C=90^{\\circ}\\right)$ uz malas $B C$ atlikti punkti $D$ un $E$ tā, ka $\\sphericalangle EAC=\\sphericalangle DAE=2 \\sphericalangle BAD$, $BD=1, DE=3$. Aprēķināt $EC$ garumu!</p>"@lv ;
+    eliozo:problemText """Taisnleṇķa trijstūrī $ABC\\left(\\sphericalangle ABC=90^{\\circ}\\right)$ uz malas 
+$BC$ atlikti punkti $D$ un $E$ tā, ka $\\sphericalangle EAC=\\sphericalangle DAE=2 \\sphericalangle BAD$, 
+$BD=1, DE=3$. Aprēķināt $EC$ garumu!"""@lv ;
+    eliozo:problemTextHtml """<p>Taisnleṇķa trijstūrī $ABC\\left(\\sphericalangle ABC=90^{\\circ}\\right)$ uz malas 
+$BC$ atlikti punkti $D$ un $E$ tā, ka $\\sphericalangle EAC=\\sphericalangle DAE=2 \\sphericalangle BAD$, 
+$BD=1, DE=3$. Aprēķināt $EC$ garumu!</p>"""@lv ;
     eliozo:problemTimeID "2024" ;
     eliozo:problemYear 2024 ;
     eliozo:problem_number "None"^^xsd:integer ;
@@ -947,14 +956,14 @@ eliozo:LV.NOL.2024.9.4 a eliozo:Problem ;
     eliozo:problemGrade 9 ;
     eliozo:problemID "LV.NOL.2024.9.4" ;
     eliozo:problemSolution eliozo:SOLN.LV.NOL.2024.9.4.SUB1 ;
-    eliozo:problemText """Taisnstūrī ar izmēriem $4 \\times 6$ rūtinas sākotnēji katrā rūtịnā atradās tieši viens kaḳis. 
-Vienā brīdī katrs kaķis pārlēca uz kādu no blakus rūtiṇām (katrs kaḳis pārlēca tieši vienu reizi). 
-Vai var gadīties, ka tagad visi kaḳi atrodas tieši: **(A)** $8$ rūtiņās; **(B)** $7$ rūtiṇās?
+    eliozo:problemText """Taisnstūrī ar izmēriem $4 \\times 6$ rūtinas sākotnēji katrā rūtịnā atradās tieši viens kaķis. 
+Vienā brīdī katrs kaķis pārlēca uz kādu no blakus rūtiṇām (katrs kaķis pārlēca tieši vienu reizi). 
+Vai var gadīties, ka tagad visi kaķi atrodas tieši: **(A)** $8$ rūtiņās; **(B)** $7$ rūtiṇās?
 
 *Piezīme.* Divas rūtiņas sauc par blakus rūtiņām, ja tām ir kopīga mala."""@lv ;
-    eliozo:problemTextHtml """<p>Taisnstūrī ar izmēriem $4 \\times 6$ rūtinas sākotnēji katrā rūtịnā atradās tieši viens kaḳis. 
-Vienā brīdī katrs kaķis pārlēca uz kādu no blakus rūtiṇām (katrs kaḳis pārlēca tieši vienu reizi). 
-Vai var gadīties, ka tagad visi kaḳi atrodas tieši: <strong>(A)</strong> $8$ rūtiņās; <strong>(B)</strong> $7$ rūtiṇās?</p>
+    eliozo:problemTextHtml """<p>Taisnstūrī ar izmēriem $4 \\times 6$ rūtinas sākotnēji katrā rūtịnā atradās tieši viens kaķis. 
+Vienā brīdī katrs kaķis pārlēca uz kādu no blakus rūtiṇām (katrs kaķis pārlēca tieši vienu reizi). 
+Vai var gadīties, ka tagad visi kaķi atrodas tieši: <strong>(A)</strong> $8$ rūtiņās; <strong>(B)</strong> $7$ rūtiṇās?</p>
 <p><em>Piezīme.</em> Divas rūtiņas sauc par blakus rūtiņām, ja tām ir kopīga mala.</p>"""@lv ;
     eliozo:problemTimeID "2024" ;
     eliozo:problemYear 2024 ;
@@ -1199,25 +1208,25 @@ eliozo:SOLN.LV.NOL.2024.11.1.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-Tā kā $OD=OE$ (rādiusi) un $OB=OC$ (dots), tad abi taisnleṇḳa trijstūri $OBD$ un $OCE$ 
+Tā kā $OD=OE$ (rādiusi) un $OB=OC$ (dots), tad abi taisnleṇķa trijstūri $OBD$ un $OCE$ 
 ir vienādi pēc pazīmes $hk$, tātad to atbilstošie leṇķi ir vienādi: 
 $\\sphericalangle OBD=\\sphericalangle OCE$ (skat. 7. att.). 
 Ievērosim, ka pēc blakusleṇku īpašības 
 $\\sphericalangle OCA=180^{\\circ}-\\sphericalangle OCE=180^{\\circ}-\\sphericalangle OBD$, 
 tātad $\\sphericalangle OBA+\\sphericalangle OCA=\\sphericalangle OBD+\\left(180^{\\circ}-\\sphericalangle OBD\\right)=180^{\\circ}$. 
-Tātad ap četrstūri $OCAB$ var apvilkt riṇḳa līniju un punkti 
-$O$, $A$, $B$ un $C$ atrodas uz vienas riṇḳa līnijas.
+Tātad ap četrstūri $OCAB$ var apvilkt riṇķa līniju un punkti 
+$O$, $A$, $B$ un $C$ atrodas uz vienas riṇķa līnijas.
 
 ![](LV.NOL.2024.11.1A.png)"""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p>Tā kā $OD=OE$ (rādiusi) un $OB=OC$ (dots), tad abi taisnleṇḳa trijstūri $OBD$ un $OCE$ 
+<p>Tā kā $OD=OE$ (rādiusi) un $OB=OC$ (dots), tad abi taisnleṇķa trijstūri $OBD$ un $OCE$ 
 ir vienādi pēc pazīmes $hk$, tātad to atbilstošie leṇķi ir vienādi: 
 $\\sphericalangle OBD=\\sphericalangle OCE$ (skat. 7. att.). 
 Ievērosim, ka pēc blakusleṇku īpašības 
 $\\sphericalangle OCA=180^{\\circ}-\\sphericalangle OCE=180^{\\circ}-\\sphericalangle OBD$, 
 tātad $\\sphericalangle OBA+\\sphericalangle OCA=\\sphericalangle OBD+\\left(180^{\\circ}-\\sphericalangle OBD\\right)=180^{\\circ}$. 
-Tātad ap četrstūri $OCAB$ var apvilkt riṇḳa līniju un punkti 
-$O$, $A$, $B$ un $C$ atrodas uz vienas riṇḳa līnijas.</p>
+Tātad ap četrstūri $OCAB$ var apvilkt riṇķa līniju un punkti 
+$O$, $A$, $B$ un $C$ atrodas uz vienas riṇķa līnijas.</p>
 <p><img alt="" src="LV.NOL.2024.11.1A.png" /></p>"""@lv .
 
 eliozo:SOLN.LV.NOL.2024.11.2.SUB1 a eliozo:Solution ;
@@ -2192,14 +2201,14 @@ Diagonāle $B D$ ir kvadrāta simetrijas ass, tāpēc $EA = EC$ (skat. 2. att.).
 
 ![](LV.NOL.2024.9.3A.png)
 
-Kvadrāta diagonāles ir perpendikulāras un krustpunktā dalās uz pusēm, tāpēc trijstūris $A O E$ ir taisnleṇḳa trijstūris, kurā pēc Pitagora teorēmas iegūstam, ka $E A^{2}=A O^{2}+O E^{2}=\\left(\\frac{d}{2}\\right)^{2}+x^{2}$. Tādā gadījumā iegūstam:
+Kvadrāta diagonāles ir perpendikulāras un krustpunktā dalās uz pusēm, tāpēc trijstūris $A O E$ ir taisnleṇķa trijstūris, kurā pēc Pitagora teorēmas iegūstam, ka $E A^{2}=A O^{2}+O E^{2}=\\left(\\frac{d}{2}\\right)^{2}+x^{2}$. Tādā gadījumā iegūstam:
 
 $$\\begin{gathered}
 E D \\cdot E B+E A \\cdot E C=(O D-O E)(O B+O E)+E A^{2}= \\\\
 =\\left(\\frac{d}{2}-x\\right)\\left(\\frac{d}{2}+x\\right)+\\left(\\frac{d}{2}\\right)^{2}+x^{2}=\\left(\\frac{d}{2}\\right)^{2}-x^{2}+\\left(\\frac{d}{2}\\right)^{2}+x^{2}=2 \\cdot \\frac{d^{2}}{4}=\\frac{d^{2}}{2} .
 \\end{gathered}$$
 
-Izmantojot Pitagora teorēmu vienādsānu taisnleṇḳa trijstūrī $ABD$, iegūstam, ka $A B^{2}+A D^{2}=B D^{2}$. Tā kā 
+Izmantojot Pitagora teorēmu vienādsānu taisnleṇķa trijstūrī $ABD$, iegūstam, ka $A B^{2}+A D^{2}=B D^{2}$. Tā kā 
 $AB=AD$, tad $2AB^{2}=d^{2}$ jeb $AB^{2}=\\frac{d^{2}}{2}$.
 
 Līdz ar to esam ieguvuši, ka $ED \\cdot EB+EA \\cdot EC=\\frac{d^{2}}{2}=AB^{2}$."""@lv ;
@@ -2207,13 +2216,13 @@ Līdz ar to esam ieguvuši, ka $ED \\cdot EB+EA \\cdot EC=\\frac{d^{2}}{2}=AB^{2
 <p>Apzīmējam diagonālu krustpunktu ar $O$; apzīmējam $BD=d$ un $OE=x$. 
 Diagonāle $B D$ ir kvadrāta simetrijas ass, tāpēc $EA = EC$ (skat. 2. att.).</p>
 <p><img alt="" src="LV.NOL.2024.9.3A.png" /></p>
-<p>Kvadrāta diagonāles ir perpendikulāras un krustpunktā dalās uz pusēm, tāpēc trijstūris $A O E$ ir taisnleṇḳa trijstūris, kurā pēc Pitagora teorēmas iegūstam, ka $E A^{2}=A O^{2}+O E^{2}=\\left(\\frac{d}{2}\\right)^{2}+x^{2}$. Tādā gadījumā iegūstam:</p>
+<p>Kvadrāta diagonāles ir perpendikulāras un krustpunktā dalās uz pusēm, tāpēc trijstūris $A O E$ ir taisnleṇķa trijstūris, kurā pēc Pitagora teorēmas iegūstam, ka $E A^{2}=A O^{2}+O E^{2}=\\left(\\frac{d}{2}\\right)^{2}+x^{2}$. Tādā gadījumā iegūstam:</p>
 <p>$$\\begin{gathered}
 E D \\cdot E B+E A \\cdot E C=(O D-O E)(O B+O E)+E A^{2}= \\\\
 =\\left(\\frac{d}{2}-x\\right)\\left(\\frac{d}{2}+x\\right)+\\left(\\frac{d}{2}\\right)^{2}+x^{2}=\\left(\\frac{d}{2}\\right)^{2}-x^{2}+\\left(\\frac{d}{2}\\right)^{2}+x^{2}=2 \\cdot \\frac{d^{2}}{4}=\\frac{d^{2}}{2} .
 \\end{gathered}$$
 
-Izmantojot Pitagora teorēmu vienādsānu taisnleṇḳa trijstūrī $ABD$, iegūstam, ka $A B^{2}+A D^{2}=B D^{2}$. Tā kā 
+Izmantojot Pitagora teorēmu vienādsānu taisnleṇķa trijstūrī $ABD$, iegūstam, ka $A B^{2}+A D^{2}=B D^{2}$. Tā kā 
 $AB=AD$, tad $2AB^{2}=d^{2}$ jeb $AB^{2}=\\frac{d^{2}}{2}$.
 
 Līdz ar to esam ieguvuši, ka $ED \\cdot EB+EA \\cdot EC=\\frac{d^{2}}{2}=AB^{2}$.</p>"""@lv .
@@ -2222,7 +2231,7 @@ eliozo:SOLN.LV.NOL.2024.9.4.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;
     eliozo:solutionText """## Atrisinājums
 
-**(A)** Jā, var, piemēram, skat. 3. att., kur visi kaḳi atrodas pelēkajās rūtiṇās 
+**(A)** Jā, var, piemēram, skat. 3. att., kur visi kaķi atrodas pelēkajās rūtiṇās 
 (katrs kaķis no baltās rūtiṇas varēja pārlēkt uz kādu pelēko rūtịnu, 
 un kaķi, kas sākumā atradās kādā no pelēkajām rūtiṇām, pārlēca uz blakus esošo pelēko rūtiņu).
 
@@ -2232,20 +2241,20 @@ un kaķi, kas sākumā atradās kādā no pelēkajām rūtiṇām, pārlēca uz 
 
 **(B)** Nē, nevar. Pierādīsim, ka kaķi tagad atrodas vismaz $8$ rūtiṇās.
 
-Aplūkojam tos $8$ kaḳus, kas sākumā atradās 3. att. 
+Aplūkojam tos $8$ kaķus, kas sākumā atradās 3. att. 
 iekrāsotajās rūtiṇās, un ievērosim, ka nekādi divi no tiem pēc pārlēkšanas 
 nevar atrasties vienā un tajā pašā rūtiņā. Lai divi kaķi 
 no pelēkajām rūtiṇām varētu nonākt vienā un tajā pašā rūtiņā, būtu jābūt 
 tādai rūtiṇai, kurai divas blakus rūtiṇas ir pelēkā krāsā, bet tādas rūtiṇas nav. 
 Tātad pēc pārlēkšanas kaķi atradīsies vismaz $8$ rūtiņās."""@lv ;
     eliozo:solutionTextHtml """<h2>Atrisinājums</h2>
-<p><strong>(A)</strong> Jā, var, piemēram, skat. 3. att., kur visi kaḳi atrodas pelēkajās rūtiṇās 
+<p><strong>(A)</strong> Jā, var, piemēram, skat. 3. att., kur visi kaķi atrodas pelēkajās rūtiṇās 
 (katrs kaķis no baltās rūtiṇas varēja pārlēkt uz kādu pelēko rūtịnu, 
 un kaķi, kas sākumā atradās kādā no pelēkajām rūtiṇām, pārlēca uz blakus esošo pelēko rūtiņu).</p>
 <p><img alt="" src="LV.NOL.2024.9.4A.png" /></p>
 <p><em>Piezīme.</em> Der arī piemērs, kur kaķi pārlec uz otrās un piektās kolonnas rūtiṇām.</p>
 <p><strong>(B)</strong> Nē, nevar. Pierādīsim, ka kaķi tagad atrodas vismaz $8$ rūtiṇās.</p>
-<p>Aplūkojam tos $8$ kaḳus, kas sākumā atradās 3. att. 
+<p>Aplūkojam tos $8$ kaķus, kas sākumā atradās 3. att. 
 iekrāsotajās rūtiṇās, un ievērosim, ka nekādi divi no tiem pēc pārlēkšanas 
 nevar atrasties vienā un tajā pašā rūtiņā. Lai divi kaķi 
 no pelēkajām rūtiṇām varētu nonākt vienā un tajā pašā rūtiņā, būtu jābūt 

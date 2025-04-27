@@ -682,7 +682,7 @@ sakrīt.</p>
 
 eliozo:LV.NOL.2016.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
-    eliozo:domain "" ;
+    eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2016" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
@@ -701,7 +701,9 @@ pārējām? Pašu monētu atrast nav nepieciešams.</p>"""@lv ;
     eliozo:problemTimeID "2016" ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:questionType "" ;
+    eliozo:questionType "Algorithm" ;
+    eliozo:seeAlso "LV.NOL.2019.7.2",
+        "LV.SOL.2020.9.3" ;
     eliozo:suffix "LV.NOL.2016.7" ;
     eliozo:suggestedGrade 7 .
 
