@@ -18,10 +18,22 @@ def getGoogleSpreadsheet(URL, FILE): # Funkcija, kas iegūst Google Spreadsheet 
     open(FILE, "wb").write(response.content)
 
 def readCSVfile(in_file, g, class_name):
-    num_count = 5 if class_name == 'topic' else 2
-    label_nums = [4,3,2,1,0] if class_name == 'topic' else [1,0]
-    num_zeroes = '0.0.0.0.0' if class_name == 'topic' else '0.0'
+    if class_name == 'topic':
+        num_count = 5
+        label_nums = [4,3,2,1,0]
+        num_zeroes = '0.0.0.0.0'
+    if class_name == 'domain':
+        num_count = 3
+        label_nums = [2,1,0]
+        num_zeroes = '0.0.0'
+    if class_name == 'method':
+        num_count = 2
+        label_nums = [1,0]
+        num_zeroes = '0.0'
 
+    # num_count = 5 if class_name == 'topic' else 2
+    # label_nums = [4,3,2,1,0] if class_name == 'topic' else [1,0]
+    # num_zeroes = '0.0.0.0.0' if class_name == 'topic' else '0.0'
 
     # result = []
     label_dictionary = dict()

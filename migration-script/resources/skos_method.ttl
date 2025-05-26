@@ -246,9 +246,9 @@ eliozo:InterpretationWithCoding a eliozo:Method ;
     eliozo:methodDescription "Uzdevumā aplūkojamo objektu aizstāšana ar galīgām simbolu virknītēm (kodējumiem), darbības ar šiem kodējumiem." ;
     eliozo:methodID "InterpretationWithCoding" ;
     eliozo:methodName "Interpretācija ar iekodēšanu" ;
-    eliozo:methodNumber "6.4" ;
+    eliozo:methodNumber "6.6" ;
     eliozo:sorter_L1 6 ;
-    eliozo:sorter_L2 4 ;
+    eliozo:sorter_L2 6 ;
     skos:broader eliozo:InterpretationMethod ;
     skos:prefLabel "InterpretationWithCoding" .
 
@@ -302,6 +302,16 @@ eliozo:PeriodicInvariant a eliozo:Method ;
     skos:broader eliozo:InvariantMethod ;
     skos:prefLabel "PeriodicInvariant" .
 
+eliozo:PhysicalInterpretation a eliozo:Method ;
+    eliozo:methodDescription "Fizikālu modeļu lietošana - smaguma centru izmantošana ģeometrijas, algebras un varbūtību uzdevumos. Impulsa nezūdamība. Enerģijas un impulsa nezūdamība. Potenciālās enerģijas minimuma princips." ;
+    eliozo:methodID "PhysicalInterpretation" ;
+    eliozo:methodName "Fizikāla interpretācija" ;
+    eliozo:methodNumber "6.5" ;
+    eliozo:sorter_L1 6 ;
+    eliozo:sorter_L2 5 ;
+    skos:broader eliozo:InterpretationMethod ;
+    skos:prefLabel "PhysicalInterpretation" .
+
 eliozo:PigeonholePrincipleBasic a eliozo:Method ;
     eliozo:methodDescription "Risinājumi, kuros kopu sadala $N$ daļās un izvieto tajā $N+k$ objektus, lai parādītu, ka vismaz vienā kopā būs vismaz divi objekti. " ;
     eliozo:methodID "PigeonholePrincipleBasic" ;
@@ -331,6 +341,16 @@ eliozo:PolynomialTransformations a eliozo:Method ;
     eliozo:sorter_L2 1 ;
     skos:broader eliozo:Transformations ;
     skos:prefLabel "PolynomialTransformations" .
+
+eliozo:ProbabilisticInterpretation a eliozo:Method ;
+    eliozo:methodDescription "Varbūtisku modeļu lietošana, lai pārformulētu uzdevumus, piemēram, algebrā vai ģeometrijā" ;
+    eliozo:methodID "ProbabilisticInterpretation" ;
+    eliozo:methodName "Varbūtiska interpretācija" ;
+    eliozo:methodNumber "6.4" ;
+    eliozo:sorter_L1 6 ;
+    eliozo:sorter_L2 4 ;
+    skos:broader eliozo:InterpretationMethod ;
+    skos:prefLabel "ProbabilisticInterpretation" .
 
 eliozo:StrentheningInductiveHypothesis a eliozo:Method ;
     eliozo:methodDescription "Indukcijas pierādījumi, kur jāstiprina apgalvojums un induktīvā hipotēze, lai varētu veikt pāreju. Paralēla indukcija, kur divas apgalvojumu virknītes izmanto hipotēzes viena no otras." ;
@@ -442,19 +462,6 @@ eliozo:Transformations a eliozo:Method ;
         eliozo:PolynomialTransformations ;
     skos:prefLabel "Transformations" .
 
-eliozo:InterpretationMethod a eliozo:Method ;
-    eliozo:methodDescription "Interpretācija pārtulko uzdevumu jaunos apzīmējumos; ievieš jaunas datu struktūras (piemēram, grafus) vai kodējumus (objektu attēlošanu par izteiksmēm). Dažas interpretāciju metodes ir jāveido katrā atrisinājumā no jauna, citas ir standartizētas un labi zināmas - piemēram ģeometrijas uzdevuma pārveidošana koordinātu formā. " ;
-    eliozo:methodID "InterpretationMethod" ;
-    eliozo:methodName "Interpretāciju metode" ;
-    eliozo:methodNumber "6.0" ;
-    eliozo:sorter_L1 6 ;
-    eliozo:sorter_L2 0 ;
-    skos:narrower eliozo:AlgebraicModel,
-        eliozo:CoordinateMethod,
-        eliozo:GeometricInterpretation,
-        eliozo:InterpretationWithCoding ;
-    skos:prefLabel "InterpretationMethod" .
-
 eliozo:MeanValuePrinciple a eliozo:Method ;
     eliozo:methodDescription """Vērtību pierakstīšana atsevišķiem elementiem, šo vērtību summas un citu apkopotu datu izmantošana, lai novērtētu atsevišķos elementus. Dirihlē princips, ja elementu skaits par vienu pārsniedz kastu skaitu. Dirihlē principa vispārinājumi. Dirihlē principa izmantošana kombinatoriskajā ģeometrijā par laukumu pārklāšanu ar figūriņām un citiem figūru izvietojumiem.
 **Algebrā:** Vidējās vērtības izmantošana dažādos novērtējumos.
@@ -486,6 +493,21 @@ eliozo:Algorithms a eliozo:Method ;
         eliozo:GreedyAlgorithms,
         eliozo:InductiveAlgorithms ;
     skos:prefLabel "Algorithms" .
+
+eliozo:InterpretationMethod a eliozo:Method ;
+    eliozo:methodDescription "Interpretācija pārtulko uzdevumu jaunos apzīmējumos; ievieš jaunas datu struktūras (piemēram, grafus) vai kodējumus (objektu attēlošanu par izteiksmēm). Dažas interpretāciju metodes ir jāveido katrā atrisinājumā no jauna, citas ir standartizētas un labi zināmas - piemēram ģeometrijas uzdevuma pārveidošana koordinātu formā. " ;
+    eliozo:methodID "InterpretationMethod" ;
+    eliozo:methodName "Interpretāciju metode" ;
+    eliozo:methodNumber "6.0" ;
+    eliozo:sorter_L1 6 ;
+    eliozo:sorter_L2 0 ;
+    skos:narrower eliozo:AlgebraicModel,
+        eliozo:CoordinateMethod,
+        eliozo:GeometricInterpretation,
+        eliozo:InterpretationWithCoding,
+        eliozo:PhysicalInterpretation,
+        eliozo:ProbabilisticInterpretation ;
+    skos:prefLabel "InterpretationMethod" .
 
 eliozo:MathematicalInduction a eliozo:Method ;
     eliozo:methodDescription """Apgalvojumu pamatošana ar matemātisko indukciju. Parasti tie ir apgalvojumi par visiem naturālajiem skaitļiem. Risinājumā atklātā tekstā parādās indukcijas bāze, induktīvais pieņēmums un pāreja.  

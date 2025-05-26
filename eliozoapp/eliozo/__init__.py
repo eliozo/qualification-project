@@ -1143,6 +1143,7 @@ def create_app(test_config=None):
         current_subsubtopics = None
         for topic in all_topics:
             topicNumber = all_topic_info[topic]['topicNumber']
+            topicId = all_topic_info[topic]['topicIdentifier']
 
             if topicNumber.endswith('.0.0.0.0'):
                 LTopics = []
@@ -1152,6 +1153,7 @@ def create_app(test_config=None):
                 L1_desc = all_topic_info[topic]['topicDescription']
                 L1_prob = all_topic_info[topic]['problems']
                 structured_topics.append({'number':L1_number,
+                                          'topicId':topicId,
                                           'name':L1_name,
                                           'desc':L1_desc,
                                           'prob':L1_prob,
@@ -1165,6 +1167,7 @@ def create_app(test_config=None):
                 L2_desc = all_topic_info[topic]['topicDescription']
                 L2_prob = all_topic_info[topic]['problems']
                 current_LTopics.append({'number':L2_number,
+                                        'topicId':topicId,
                                         'label':L2_label,
                                         'name':L2_name,
                                         'desc':L2_desc,
@@ -1178,6 +1181,7 @@ def create_app(test_config=None):
                 L3_desc = all_topic_info[topic]['topicDescription']
                 L3_prob = all_topic_info[topic]['problems']
                 current_subtopics.append({'number':L3_number,
+                                          'topicId':topicId,
                                           'name':L3_name,
                                           'desc': L3_desc,
                                           'prob': L3_prob,
@@ -1189,7 +1193,11 @@ def create_app(test_config=None):
                 L45_name = all_topic_info[topic]['topicName']
                 L45_desc = all_topic_info[topic]['topicDescription']
                 L45_prob = all_topic_info[topic]['problems']
-                current_subsubtopics.append({'number':L45_number, 'name':L45_name, 'desc': L45_desc, 'prob':L45_prob})
+                current_subsubtopics.append({'number':L45_number,
+                                             'topicId':topicId,
+                                             'name':L45_name, 
+                                             'desc': L45_desc, 
+                                             'prob':L45_prob})
 
         template_context = {
             'all_topics': all_topics,

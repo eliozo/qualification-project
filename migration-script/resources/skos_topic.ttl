@@ -18,26 +18,26 @@ eliozo:AbelFormula a eliozo:Topic ;
 eliozo:AddingOrMultiplyingInequalities a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 3 ;
+    eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "AddingOrMultiplyingInequalities" ;
     eliozo:topicName "Vairāku nevienādību saskaitīšana vai reizināšana" ;
-    eliozo:topicNumber "1.3.3.1.0" ;
+    eliozo:topicNumber "1.3.4.1.0" ;
     skos:broader eliozo:ProvingInequalitiesWithOtherInequalities ;
     skos:prefLabel "AddingOrMultiplyingInequalities" .
 
 eliozo:AdditiveFunctions a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 6 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "AdditiveFunctions" ;
     eliozo:topicName "Aditīvas funkcijas" ;
-    eliozo:topicNumber "1.10.2.6.0" ;
+    eliozo:topicNumber "1.9.2.6.0" ;
     skos:broader eliozo:FunctionalEquationsForRealFunctions ;
     skos:prefLabel "AdditiveFunctions" .
 
@@ -60,7 +60,7 @@ eliozo:AffineTransformations a eliozo:Topic ;
     eliozo:sorter_L3 7 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Afīnie pārveidojumi, ieskaitot plaknes paralēlās projekcijas" ;
     eliozo:topicID "AffineTransformations" ;
     eliozo:topicName "Afīnie pārveidojumi" ;
     eliozo:topicNumber "3.13.7.0.0" ;
@@ -251,14 +251,14 @@ eliozo:ArithmeticSeriesGaps a eliozo:Topic ;
 
 eliozo:AuxiliaryFunctionMethod a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 3 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "AuxiliaryFunctionMethod" ;
     eliozo:topicName "Palīgfunkcijas metode" ;
-    eliozo:topicNumber "1.10.2.3.0" ;
+    eliozo:topicNumber "1.9.2.3.0" ;
     skos:broader eliozo:FunctionalEquationsForRealFunctions ;
     skos:prefLabel "AuxiliaryFunctionMethod" .
 
@@ -268,7 +268,7 @@ eliozo:AuxiliaryProjections a eliozo:Topic ;
     eliozo:sorter_L3 5 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Vektoru projicēšana, piemēram, uz divām perpendikulārām taisnēm. Vektora izteikšana ar abu tā projekciju summu. " ;
     eliozo:topicID "AuxiliaryProjections" ;
     eliozo:topicName "Palīgprojekcijas" ;
     eliozo:topicNumber "3.12.5.0.0" ;
@@ -300,19 +300,6 @@ eliozo:AxisSymmetryConstructions a eliozo:Topic ;
     eliozo:topicNumber "3.13.3.2.0" ;
     skos:broader eliozo:AxisSymmetry ;
     skos:prefLabel "AxisSymmetryConstructions" .
-
-eliozo:Baricenter a eliozo:Topic ;
-    eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 9 ;
-    eliozo:sorter_L3 8 ;
-    eliozo:sorter_L4 1 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "Baricenter" ;
-    eliozo:topicName "Smaguma centrs" ;
-    eliozo:topicNumber "1.9.8.1.0" ;
-    skos:broader eliozo:PhysicalInterpretations ;
-    skos:prefLabel "Baricenter" .
 
 eliozo:BaricenterAsMeanValueVariant a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
@@ -372,25 +359,25 @@ eliozo:BinomialPolynomialCoefficients a eliozo:Topic ;
     eliozo:sorter_L3 6 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Formulas, lai saskaitītu parastas kombinācijas $C^k_n$ un arī kombinācijas ar atkārtojumiem. Lietojumi Ņūtona formulā $(a+b)^n$ un arī polinomiālajā formulā, atverot iekavas garāku izteiksmju pakāpēm." ;
     eliozo:topicID "BinomialPolynomialCoefficients" ;
     eliozo:topicName "Binomiālie un polinomiālie koeficienti" ;
     eliozo:topicNumber "2.1.6.2.0" ;
     skos:broader eliozo:StandardCombinatorialNumbers ;
     skos:prefLabel "BinomialPolynomialCoefficients" .
 
-eliozo:BipartiteGraphs a eliozo:Topic ;
+eliozo:BipartiteGraphsCycles a eliozo:Topic ;
     eliozo:sorter_L1 2 ;
     eliozo:sorter_L2 2 ;
     eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 4 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "BipartiteGraphs" ;
+    eliozo:topicDescription "Divdaļīgo grafu nepieciešamais un pietiekamais nosacījums - grafā nav ciklu ar nepāra garumu." ;
+    eliozo:topicID "BipartiteGraphsCycles" ;
     eliozo:topicName "Divdaļīgi (bipartite) grafi" ;
     eliozo:topicNumber "2.2.4.4.0" ;
     skos:broader eliozo:PathsAndCyclesInGraphs ;
-    skos:prefLabel "BipartiteGraphs" .
+    skos:prefLabel "BipartiteGraphsCycles" .
 
 eliozo:BisectorDividingArcInTwo a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
@@ -512,26 +499,26 @@ eliozo:CasesByCongruenceClass a eliozo:Topic ;
 eliozo:CauchyBunyakovsky a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 3 ;
+    eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "CauchyBunyakovsky" ;
     eliozo:topicName "Košī-Buņakovska nevienādība" ;
-    eliozo:topicNumber "1.3.3.2.0" ;
+    eliozo:topicNumber "1.3.4.2.0" ;
     skos:broader eliozo:ProvingInequalitiesWithOtherInequalities ;
     skos:prefLabel "CauchyBunyakovsky" .
 
 eliozo:CauchyEquationsAndRelated a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "CauchyEquationsAndRelated" ;
     eliozo:topicName "Košī vienādojumi un vienādojumi, kas uz tiem reducējas" ;
-    eliozo:topicNumber "1.10.2.1.0" ;
+    eliozo:topicNumber "1.9.2.1.0" ;
     skos:broader eliozo:FunctionalEquationsForRealFunctions ;
     skos:prefLabel "CauchyEquationsAndRelated" .
 
@@ -574,16 +561,29 @@ eliozo:ChainsOfCircles a eliozo:Topic ;
     skos:broader eliozo:Inversion ;
     skos:prefLabel "ChainsOfCircles" .
 
+eliozo:ChasingGames a eliozo:Topic ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 3 ;
+    eliozo:sorter_L3 7 ;
+    eliozo:sorter_L4 2 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Spēles, kur viens spēlētājs ķer otru, pārvietojoties ģeometriskā figūrā." ;
+    eliozo:topicID "ChasingGames" ;
+    eliozo:topicName "Ķeršanas spēles" ;
+    eliozo:topicNumber "2.3.7.2.0" ;
+    skos:broader eliozo:ContinuousGames ;
+    skos:prefLabel "ChasingGames" .
+
 eliozo:ChebyshevInequality a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 3 ;
+    eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 3 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "ChebyshevInequality" ;
     eliozo:topicName "Čebiševa nevienādība" ;
-    eliozo:topicNumber "1.3.3.3.0" ;
+    eliozo:topicNumber "1.3.4.3.0" ;
     skos:broader eliozo:ProvingInequalitiesWithOtherInequalities ;
     skos:prefLabel "ChebyshevInequality" .
 
@@ -593,7 +593,7 @@ eliozo:ChessPositions a eliozo:Topic ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Spēles pozīcijas šahā; torņu, laidņu, dāmu, zirdziņu utt. izvietojumi. " ;
     eliozo:topicID "ChessPositions" ;
     eliozo:topicName "Izvietojumi uz šaha galdiņa" ;
     eliozo:topicNumber "2.4.1.0.0" ;
@@ -1109,29 +1109,16 @@ eliozo:ConstructionsTriangulate a eliozo:Topic ;
 
 eliozo:ContinuityForFunctionalEquations a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 5 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "ContinuityForFunctionalEquations" ;
     eliozo:topicName "Nepārtrauktības īpašības izmantošana" ;
-    eliozo:topicNumber "1.10.2.5.0" ;
+    eliozo:topicNumber "1.9.2.5.0" ;
     skos:broader eliozo:FunctionalEquationsForRealFunctions ;
     skos:prefLabel "ContinuityForFunctionalEquations" .
-
-eliozo:ContinuousGames a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 7 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "LINKS?" ;
-    eliozo:topicID "ContinuousGames" ;
-    eliozo:topicName "Nepārtrauktās spēles" ;
-    eliozo:topicNumber "2.3.7.0.0" ;
-    skos:broader eliozo:Games ;
-    skos:prefLabel "ContinuousGames" .
 
 eliozo:ConvexPolygons a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
@@ -1211,26 +1198,13 @@ eliozo:CountingPointsSegmentsAndOthers a eliozo:Topic ;
     skos:broader eliozo:SystemsGeometricObjects ;
     skos:prefLabel "CountingPointsSegmentsAndOthers" .
 
-eliozo:CountingSetDifference a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 1 ;
-    eliozo:sorter_L3 1 ;
-    eliozo:sorter_L4 2 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "CountingSetDifference" ;
-    eliozo:topicName "Kopu starpības elementu saskaitīšana" ;
-    eliozo:topicNumber "2.1.1.2.0" ;
-    skos:broader eliozo:RuleOfProduct ;
-    skos:prefLabel "CountingSetDifference" .
-
 eliozo:CountingUsingSymmetry a eliozo:Topic ;
     eliozo:sorter_L1 2 ;
     eliozo:sorter_L2 1 ;
     eliozo:sorter_L3 8 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Variantu saskaitīšana izmantojot simetriju kopā ar dalīšanas likumu simetrijas dēļ atmetot daļu variantu" ;
     eliozo:topicID "CountingUsingSymmetry" ;
     eliozo:topicName "Variantu saskaitīšana, izmantojot simetriju" ;
     eliozo:topicNumber "2.1.8.0.0" ;
@@ -1252,14 +1226,14 @@ eliozo:CoverProblems a eliozo:Topic ;
 
 eliozo:CreatingEquationSystems a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "CreatingEquationSystems" ;
     eliozo:topicName "Vienādojumu sistēmu veidošanas metode" ;
-    eliozo:topicNumber "1.10.1.1.0" ;
+    eliozo:topicNumber "1.9.1.1.0" ;
     skos:broader eliozo:FunctionalEquationsInDiscreteSets ;
     skos:prefLabel "CreatingEquationSystems" .
 
@@ -1276,26 +1250,13 @@ eliozo:CreatingLinearCombinations a eliozo:Topic ;
     skos:broader eliozo:AdvancedCounting ;
     skos:prefLabel "CreatingLinearCombinations" .
 
-eliozo:CriticalRamseyGraphs a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 2 ;
-    eliozo:sorter_L3 9 ;
-    eliozo:sorter_L4 1 ;
-    eliozo:sorter_L5 3 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "CriticalRamseyGraphs" ;
-    eliozo:topicName "Kritiskie Ramseja grafi" ;
-    eliozo:topicNumber "2.2.9.1.3" ;
-    skos:broader eliozo:GraphsWithColoredEdges ;
-    skos:prefLabel "CriticalRamseyGraphs" .
-
 eliozo:CuttingInParallelograms a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
     eliozo:sorter_L2 15 ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Figūru pārklāšana ar paralelogramiem vai rombiem. " ;
     eliozo:topicID "CuttingInParallelograms" ;
     eliozo:topicName "Sadalīšana paralelogramos." ;
     eliozo:topicNumber "3.15.2.0.0" ;
@@ -1308,7 +1269,7 @@ eliozo:CuttingPlaneWithLines a eliozo:Topic ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Uzdevumi par taišņu izvietojumiem plaknē, apgabaliem, kuri rodas pēc taišņu novilkšanas." ;
     eliozo:topicID "CuttingPlaneWithLines" ;
     eliozo:topicName "Kā taisnes sadala plakni" ;
     eliozo:topicNumber "3.15.1.0.0" ;
@@ -1423,25 +1384,25 @@ eliozo:DegreesInSubgraphs a eliozo:Topic ;
     eliozo:sorter_L1 2 ;
     eliozo:sorter_L2 2 ;
     eliozo:sorter_L3 2 ;
-    eliozo:sorter_L4 2 ;
+    eliozo:sorter_L4 3 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Katrs grafs $G$, kurā vidējā virsotnes kārta ir vismaz $d$, satur apakšgrafu, kurā minimālā virsotnes kārta ir vismaz $\\lfloor d/2 \\rfloor$." ;
     eliozo:topicID "DegreesInSubgraphs" ;
-    eliozo:topicName "Apakšgrafu virsotņu kārtas" ;
-    eliozo:topicNumber "2.2.2.2.0" ;
+    eliozo:topicName "Teorēma par to, ka eksistē apakšgrafs ar noteiktu minimālo virsotnes kārtu" ;
+    eliozo:topicNumber "2.2.2.3.0" ;
     skos:broader eliozo:GraphVertexDegree ;
     skos:prefLabel "DegreesInSubgraphs" .
 
 eliozo:DerivingNewPropertiesFromOthers a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 3 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "DerivingNewPropertiesFromOthers" ;
     eliozo:topicName "Vienu īpašību secināšana no citām" ;
-    eliozo:topicNumber "1.10.3.1.0" ;
+    eliozo:topicNumber "1.9.3.1.0" ;
     skos:broader eliozo:MultiargumentOpearationsAsAxioms ;
     skos:prefLabel "DerivingNewPropertiesFromOthers" .
 
@@ -1477,7 +1438,8 @@ eliozo:DilworthLemmaAndTheorem a eliozo:Topic ;
     eliozo:sorter_L3 9 ;
     eliozo:sorter_L4 4 ;
     eliozo:sorter_L5 2 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription """Ja daļēji sakārtota kopa satur $m \\cdot n + 1$ elementus, tad tajā var atrast
+vai nu ķēdi, kuras garums ir $m + 1$, vai antiķēdi, kuras garums ir $n + 1$ (un citi radniecīgi rezultāti).""" ;
     eliozo:topicID "DilworthLemmaAndTheorem" ;
     eliozo:topicName "Dilvorsa lemma un Dilvorsa teorēma" ;
     eliozo:topicNumber "2.2.9.4.2" ;
@@ -1490,7 +1452,7 @@ eliozo:DirectedGraphs a eliozo:Topic ;
     eliozo:sorter_L3 3 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Orientēti grafi (grafa šķautnēm ir noteikts virziens, ko apzīmē, piemēram, ar bultiņu)." ;
     eliozo:topicID "DirectedGraphs" ;
     eliozo:topicName "Orientēti grafi" ;
     eliozo:topicNumber "2.2.3.0.0" ;
@@ -1614,19 +1576,6 @@ eliozo:DoubleCounting a eliozo:Topic ;
     skos:broader eliozo:AlgebraicTechniques ;
     skos:prefLabel "DoubleCounting" .
 
-eliozo:EnergyPreservation a eliozo:Topic ;
-    eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 9 ;
-    eliozo:sorter_L3 8 ;
-    eliozo:sorter_L4 3 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "EnergyPreservation" ;
-    eliozo:topicName "Enerģijas nezūdamības likums" ;
-    eliozo:topicNumber "1.9.8.3.0" ;
-    skos:broader eliozo:PhysicalInterpretations ;
-    skos:prefLabel "EnergyPreservation" .
-
 eliozo:EquationComparingSidesAsFunctions a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 2 ;
@@ -1672,7 +1621,7 @@ eliozo:EquationSubstitution a eliozo:Topic ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Vienādojumu risināšana ar substitūcijas metodi, apzīmējot apakšizteiksmes ar jauniem mainīgajiem. " ;
     eliozo:topicID "EquationSubstitution" ;
     eliozo:topicName "Jaunu mainīgo ieviešana" ;
     eliozo:topicNumber "1.2.1.2.0" ;
@@ -1750,7 +1699,7 @@ eliozo:EquationsApplyInequalities a eliozo:Topic ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 3 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Vienādojumu analīze, izmantojot zināmas nevienādības." ;
     eliozo:topicID "EquationsApplyInequalities" ;
     eliozo:topicName "Nevienādību pielietošana" ;
     eliozo:topicNumber "1.2.1.3.0" ;
@@ -1759,14 +1708,14 @@ eliozo:EquationsApplyInequalities a eliozo:Topic ;
 
 eliozo:EquationsDescribingElementaryFunctions a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "Klasisko elementāro funkciju raksturīgākie funkcionālvienādojumi un to pielietojumi" ;
     eliozo:topicID "EquationsDescribingElementaryFunctions" ;
     eliozo:topicName "Elementāro funkciju funkcionālvienādojumi" ;
-    eliozo:topicNumber "1.10.2.2.0" ;
+    eliozo:topicNumber "1.9.2.2.0" ;
     skos:broader eliozo:FunctionalEquationsForRealFunctions ;
     skos:prefLabel "EquationsDescribingElementaryFunctions" .
 
@@ -1815,7 +1764,7 @@ eliozo:EulerCircuits a eliozo:Topic ;
     eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Eilera cikls grafā iespējams tad un tikai tad, ja grafs ir sakarīgs un tajā katras virsotnes kārta ir pāra skaitlis. (Eilera ceļš, kuram nav jābeidzas tajā pašā punktā, kur tas sācies, pietiek, lai visu, izņemot divu virsotņu kārtas ir pāra skaitļi.)" ;
     eliozo:topicID "EulerCircuits" ;
     eliozo:topicName "Eilera cikla eksistence" ;
     eliozo:topicNumber "2.2.4.1.0" ;
@@ -1854,7 +1803,7 @@ eliozo:EulerVennDiagrams a eliozo:Topic ;
     eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Eilera-Venna diagrammas, attēlojot dažādas kopu piederības kombinācijas." ;
     eliozo:topicID "EulerVennDiagrams" ;
     eliozo:topicName "Eilera un Venna diagrammu izmantošana kopas aprakstam" ;
     eliozo:topicNumber "2.1.4.1.0" ;
@@ -1938,6 +1887,19 @@ eliozo:FactorizingPrimePower a eliozo:Topic ;
     eliozo:topicNumber "4.7.2.0.0" ;
     skos:broader eliozo:Valuation ;
     skos:prefLabel "FactorizingPrimePower" .
+
+eliozo:FairDivisonGames a eliozo:Topic ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 3 ;
+    eliozo:sorter_L3 7 ;
+    eliozo:sorter_L4 1 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Kā \"taisnīgi\" sadalīt torti (vai laupījumu utml.), ja drīkst veikt noteikta veida dalīšanu - ar šķirošanu daļās, taisniem griezieniem utml. " ;
+    eliozo:topicID "FairDivisonGames" ;
+    eliozo:topicName "Taisnīgas dalīšanas spēles" ;
+    eliozo:topicNumber "2.3.7.1.0" ;
+    skos:broader eliozo:ContinuousGames ;
+    skos:prefLabel "FairDivisonGames" .
 
 eliozo:FermatApolloniusCircles a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
@@ -2045,14 +2007,14 @@ eliozo:FullPowerGaps a eliozo:Topic ;
 
 eliozo:FunctionalEquationsReduction a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 3 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "FunctionalEquationsReduction" ;
     eliozo:topicName "Reducēšanas metode" ;
-    eliozo:topicNumber "1.10.1.3.0" ;
+    eliozo:topicNumber "1.9.1.3.0" ;
     skos:broader eliozo:FunctionalEquationsInDiscreteSets ;
     skos:prefLabel "FunctionalEquationsReduction" .
 
@@ -2062,7 +2024,7 @@ eliozo:FundamentalTheoremAlgebra a eliozo:Topic ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 6 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Algebras pamatteorēma reālo skaitļu variantā - ja $n$-tās pakāpes polinomam $P(x)$ ir $n$ saknes, tad to var izteikt kā vecākā koeficienta $a_n$ reizinājumu ar pirmās pakāpes polinomiem $x_x_i$, kur $x_i$ ir $i$-tā sakne. Un ja polinomam ir sakne $x_i$, tātad tas dalās ar $x-x_i$ bez atlikuma." ;
     eliozo:topicID "FundamentalTheoremAlgebra" ;
     eliozo:topicName "Algebras pamatteorēma" ;
     eliozo:topicNumber "1.2.1.6.0" ;
@@ -2075,7 +2037,7 @@ eliozo:GameInvariant a eliozo:Topic ;
     eliozo:sorter_L3 5 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Spēles, kurās uzvarošo stratēģiju var pamatot, izmantojot invariantu (kādu īpašību, kuru spēlētājs ar uzvarošo stratēģiju vienmēr var atjaunot). " ;
     eliozo:topicID "GameInvariant" ;
     eliozo:topicName "Spēles invariants" ;
     eliozo:topicNumber "2.3.5.0.0" ;
@@ -2088,7 +2050,7 @@ eliozo:GameModelAsGraph a eliozo:Topic ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Spēles pozīciju attēlošana ar grafu, tsk. lēmumu pieņemšanas grafu (*decision graph*)" ;
     eliozo:topicID "GameModelAsGraph" ;
     eliozo:topicName "Spēles modelis grafā" ;
     eliozo:topicNumber "2.3.2.2.0" ;
@@ -2101,38 +2063,25 @@ eliozo:GameModelAsGrid a eliozo:Topic ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Spēles ar skaitļu pāru pārveidošanu (NIM varianti ar divām kaudzītēm u.c.); to vizualizācija ar pārvietojumiem Dekarta plaknē. " ;
     eliozo:topicID "GameModelAsGrid" ;
     eliozo:topicName "Spēles modelis rūtiņu režģī" ;
     eliozo:topicNumber "2.3.2.1.0" ;
     skos:broader eliozo:GameModelCreation ;
     skos:prefLabel "GameModelAsGrid" .
 
-eliozo:GamesSymmetryDirect a eliozo:Topic ;
+eliozo:GamesSymmetry a eliozo:Topic ;
     eliozo:sorter_L1 2 ;
     eliozo:sorter_L2 3 ;
     eliozo:sorter_L3 1 ;
-    eliozo:sorter_L4 1 ;
+    eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "GamesSymmetryDirect" ;
-    eliozo:topicName "Spēles ar tiešu simetriju" ;
-    eliozo:topicNumber "2.3.1.1.0" ;
-    skos:broader eliozo:GamesSymmetry ;
-    skos:prefLabel "GamesSymmetryDirect" .
-
-eliozo:GamesSymmetryGeneralized a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 1 ;
-    eliozo:sorter_L4 2 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "GamesSymmetryGeneralized" ;
-    eliozo:topicName "Spēles ar vispārinātu simetriju" ;
-    eliozo:topicNumber "2.3.1.2.0" ;
-    skos:broader eliozo:GamesSymmetry ;
-    skos:prefLabel "GamesSymmetryGeneralized" .
+    eliozo:topicDescription "Simetrijas izmantošana spēļu analīzē. Spēles ar tiešu simetriju. Spēles ar vispārinātu simetriju. " ;
+    eliozo:topicID "GamesSymmetry" ;
+    eliozo:topicName "Spēles ar simetriju" ;
+    eliozo:topicNumber "2.3.1.0.0" ;
+    skos:broader eliozo:Games ;
+    skos:prefLabel "GamesSymmetry" .
 
 eliozo:GamesWithBackground a eliozo:Topic ;
     eliozo:sorter_L1 2 ;
@@ -2140,7 +2089,7 @@ eliozo:GamesWithBackground a eliozo:Topic ;
     eliozo:sorter_L3 3 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "LINKS?" ;
+    eliozo:topicDescription "Spēles, kurās nedrīkst atkārtoties neviena no agrāk bijušām pozīcijām vai līdzīgas spēles, kurām jāuzkrāj agrāk bijušie stāvokļi. Susan Epp un Thomas S. Ferguson rezultāti. Markova procesi. " ;
     eliozo:topicID "GamesWithBackground" ;
     eliozo:topicName "Spēles ar priekšvēsturi. Eppa-Fērgusona teorēma" ;
     eliozo:topicNumber "2.3.3.0.0" ;
@@ -2244,7 +2193,7 @@ eliozo:GraphColoredVertices a eliozo:Topic ;
     eliozo:sorter_L3 9 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Grafu virsotņu krāsošana. Četru krāsu teorēmai līdzīgi rezultāti." ;
     eliozo:topicID "GraphColoredVertices" ;
     eliozo:topicName "Grafi ar krāsainām virsotnēm" ;
     eliozo:topicNumber "2.2.9.2.0" ;
@@ -2257,7 +2206,7 @@ eliozo:GraphConnectivity a eliozo:Topic ;
     eliozo:sorter_L3 5 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Sakarīgs grafs (*connected graph*), kurā starp katrām divām virsotnēm ir ceļš. " ;
     eliozo:topicID "GraphConnectivity" ;
     eliozo:topicName "Sakarīgi grafi un dalīšana sakarīgās komponentēs" ;
     eliozo:topicNumber "2.2.5.0.0" ;
@@ -2270,7 +2219,7 @@ eliozo:GraphDecompositionInCircuits a eliozo:Topic ;
     eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 3 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Grafa šķautņu nokrāsošana vairākās krāsās tā, lai katra krāsa veidotu ciklu. " ;
     eliozo:topicID "GraphDecompositionInCircuits" ;
     eliozo:topicName "Grafa šķautņu sadalīšana ciklos" ;
     eliozo:topicNumber "2.2.4.3.0" ;
@@ -2283,7 +2232,7 @@ eliozo:GraphPlanarityConditions a eliozo:Topic ;
     eliozo:sorter_L3 8 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Grafa planaritātes nosacījumi. Planārs grafs nesatur $K_5$ vai $K_{3,3}$ kā apakšgrafus. " ;
     eliozo:topicID "GraphPlanarityConditions" ;
     eliozo:topicName "Planaritātes nosacījumi" ;
     eliozo:topicNumber "2.2.8.1.0" ;
@@ -2296,7 +2245,7 @@ eliozo:GraphTraversal a eliozo:Topic ;
     eliozo:sorter_L3 7 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "DFS (*Depth first search* jeb apstaigāšana dziļumā), BFS (*Breadth first search* jeb apstaigāšana platumā), koku un patvaļīgu grafu apstaigāšana." ;
     eliozo:topicID "GraphTraversal" ;
     eliozo:topicName "Grafu apstaigāšana" ;
     eliozo:topicNumber "2.2.7.0.0" ;
@@ -2309,12 +2258,25 @@ eliozo:GraphVertexMaxDegree a eliozo:Topic ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Apgalvojumi, kuros izvēlas virsotni ar lielāko kārtu, lai iegūtu novērtējumus." ;
     eliozo:topicID "GraphVertexMaxDegree" ;
     eliozo:topicName "Virsotne ar maksimālo kārtu" ;
     eliozo:topicNumber "2.2.2.1.0" ;
     skos:broader eliozo:GraphVertexDegree ;
     skos:prefLabel "GraphVertexMaxDegree" .
+
+eliozo:GraphsWithColoredEdges a eliozo:Topic ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 2 ;
+    eliozo:sorter_L3 9 ;
+    eliozo:sorter_L4 1 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Uzdevumi par pazīstamiem/nepazīstamiem cilvēkiem vai citām situācijām, kur pilna grafa šķautnes izkrāsotas vairākās krāsās. Ramseja teorēma. Ramseja skaitļi pilniem grafiem. Piesātināti grafi. Vispārināti Ramseja skaitļi. Ramseja uzdevumi nepilniem grafiem. " ;
+    eliozo:topicID "GraphsWithColoredEdges" ;
+    eliozo:topicName "Grafi ar krāsainām šķautnēm" ;
+    eliozo:topicNumber "2.2.9.1.0" ;
+    skos:broader eliozo:GraphColoringAndLabeling ;
+    skos:prefLabel "GraphsWithColoredEdges" .
 
 eliozo:GroupingMoreThanPairs a eliozo:Topic ;
     eliozo:sorter_L1 4 ;
@@ -2335,7 +2297,7 @@ eliozo:HallMarriageTheorem a eliozo:Topic ;
     eliozo:sorter_L3 9 ;
     eliozo:sorter_L4 4 ;
     eliozo:sorter_L5 1 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Holla teorēma par nepieciešamo un pietiekamo nosacījumu, lai divdaļīgā grafā eksistētu maksimālais sapārojums." ;
     eliozo:topicID "HallMarriageTheorem" ;
     eliozo:topicName "Holla teorēma" ;
     eliozo:topicNumber "2.2.9.4.1" ;
@@ -2348,12 +2310,25 @@ eliozo:HamiltonCircuits a eliozo:Topic ;
     eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Daži Hamiltona cikla nepieciešamie nosacījumi. " ;
     eliozo:topicID "HamiltonCircuits" ;
     eliozo:topicName "Hamiltona cikla eksistence" ;
     eliozo:topicNumber "2.2.4.2.0" ;
     skos:broader eliozo:PathsAndCyclesInGraphs ;
     skos:prefLabel "HamiltonCircuits" .
+
+eliozo:HandshakingLemma a eliozo:Topic ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 2 ;
+    eliozo:sorter_L3 2 ;
+    eliozo:sorter_L4 2 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Visu grafa virsotņu kārtu summa ir $2|E|$, kur $E$ apzīmē visu šķautņu kopu." ;
+    eliozo:topicID "HandshakingLemma" ;
+    eliozo:topicName "Rokasspiedienu lemma" ;
+    eliozo:topicNumber "2.2.2.2.0" ;
+    skos:broader eliozo:GraphVertexDegree ;
+    skos:prefLabel "HandshakingLemma" .
 
 eliozo:HellyTheorem a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
@@ -2478,7 +2453,7 @@ eliozo:InclusionExclusionPrinciple a eliozo:Topic ;
     eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Ieslēgšanas izslēgšanas princips. Piemēram, divu kopu gadījumā $|A \\cup B| = |A| + |B| - |A \\cap B|$ un līdzīga kopu apvienojuma izteikšana ar dažādiem kopu šķēlumiem." ;
     eliozo:topicID "InclusionExclusionPrinciple" ;
     eliozo:topicName "Ieslēgšanas – izslēgšanas formula" ;
     eliozo:topicNumber "2.1.4.2.0" ;
@@ -2511,19 +2486,6 @@ eliozo:IndependentRandomVariables a eliozo:Topic ;
     skos:broader eliozo:DiscreteRandomVariablesMoments ;
     skos:prefLabel "IndependentRandomVariables" .
 
-eliozo:Inequalities a eliozo:Topic ;
-    eliozo:sorter_L1 3 ;
-    eliozo:sorter_L2 12 ;
-    eliozo:sorter_L3 3 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "Inequalities" ;
-    eliozo:topicName "Nevienādības" ;
-    eliozo:topicNumber "3.12.3.0.0" ;
-    skos:broader eliozo:Vectors ;
-    skos:prefLabel "Inequalities" .
-
 eliozo:InequalitiesAndExtremesWithSymmetry a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
     eliozo:sorter_L2 13 ;
@@ -2540,13 +2502,13 @@ eliozo:InequalitiesAndExtremesWithSymmetry a eliozo:Topic ;
 eliozo:InequalitiesAndIntegrals a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 4 ;
+    eliozo:sorter_L3 5 ;
     eliozo:sorter_L4 3 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "InequalitiesAndIntegrals" ;
     eliozo:topicName "Integrāļa lietošana" ;
-    eliozo:topicNumber "1.3.4.3.0" ;
+    eliozo:topicNumber "1.3.5.3.0" ;
     skos:broader eliozo:InequalitySolvingWithRealAnalysis ;
     skos:prefLabel "InequalitiesAndIntegrals" .
 
@@ -2604,27 +2566,27 @@ eliozo:InequalitiesForDistanceSums a eliozo:Topic ;
 
 eliozo:InequalitiesForFunctionalEquations a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "InequalitiesForFunctionalEquations" ;
     eliozo:topicName "Nevienādību lietošana" ;
-    eliozo:topicNumber "1.10.1.2.0" ;
+    eliozo:topicNumber "1.9.1.2.0" ;
     skos:broader eliozo:FunctionalEquationsInDiscreteSets ;
     skos:prefLabel "InequalitiesForFunctionalEquations" .
 
 eliozo:InequalitiesForRealFunctionalEquations a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 4 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "InequalitiesForRealFunctionalEquations" ;
     eliozo:topicName "Nevienādību lietošana" ;
-    eliozo:topicNumber "1.10.2.4.0" ;
+    eliozo:topicNumber "1.9.2.4.0" ;
     skos:broader eliozo:FunctionalEquationsForRealFunctions ;
     skos:prefLabel "InequalitiesForRealFunctionalEquations" .
 
@@ -2683,13 +2645,13 @@ eliozo:InequalitiesForTriangleMedians a eliozo:Topic ;
 eliozo:InequalitiesGeometricInterpretations a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 5 ;
+    eliozo:sorter_L3 6 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "InequalitiesGeometricInterpretations" ;
     eliozo:topicName "Ģeometriskās interpretācijas" ;
-    eliozo:topicNumber "1.3.5.1.0" ;
+    eliozo:topicNumber "1.3.6.1.0" ;
     skos:broader eliozo:InequalitiesInterpretations ;
     skos:prefLabel "InequalitiesGeometricInterpretations" .
 
@@ -2709,28 +2671,15 @@ eliozo:InequalitiesIncircleCircumcircleExcircle a eliozo:Topic ;
 eliozo:InequalitiesProbabilisticInterpretations a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 5 ;
+    eliozo:sorter_L3 6 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "InequalitiesProbabilisticInterpretations" ;
     eliozo:topicName "Varbūtību teorijas interpretācijas" ;
-    eliozo:topicNumber "1.3.5.2.0" ;
+    eliozo:topicNumber "1.3.6.2.0" ;
     skos:broader eliozo:InequalitiesInterpretations ;
     skos:prefLabel "InequalitiesProbabilisticInterpretations" .
-
-eliozo:InequalitiesProbabilisticProofs a eliozo:Topic ;
-    eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 9 ;
-    eliozo:sorter_L3 7 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "InequalitiesProbabilisticProofs" ;
-    eliozo:topicName "Varbūtību teorijas metodes nevienādību pierādīšanā" ;
-    eliozo:topicNumber "1.9.7.0.0" ;
-    skos:broader eliozo:AnalysisMethods ;
-    skos:prefLabel "InequalitiesProbabilisticProofs" .
 
 eliozo:InequalitiesRightTriangle a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
@@ -2881,9 +2830,9 @@ eliozo:IntegerExpressionsAndOperations a eliozo:Topic ;
     eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Problems involving integer arithmetic, puzzles to fill in digits and operation signs, simple magic squares and other magic configurations. " ;
     eliozo:topicID "IntegerExpressionsAndOperations" ;
-    eliozo:topicName "Operācijas ar veselām izteiksmēm" ;
+    eliozo:topicName "Operācijas ar veselu skaitļu izteiksmēm" ;
     eliozo:topicNumber "1.1.4.0.0" ;
     skos:broader eliozo:AlgebraicTransformations ;
     skos:prefLabel "IntegerExpressionsAndOperations" .
@@ -2916,14 +2865,14 @@ eliozo:IntegerPolynomialsValues a eliozo:Topic ;
 
 eliozo:InterpretingAxiomSystems a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "InterpretingAxiomSystems" ;
     eliozo:topicName "Aksiomu sistēmu interpretācijas." ;
-    eliozo:topicNumber "1.10.4.0.0" ;
+    eliozo:topicNumber "1.9.4.0.0" ;
     skos:broader eliozo:FunctionalEquations ;
     skos:prefLabel "InterpretingAxiomSystems" .
 
@@ -3047,13 +2996,13 @@ eliozo:IterativeProcesses a eliozo:Topic ;
 eliozo:JensenInequality a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 3 ;
+    eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 4 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "JensenInequality" ;
     eliozo:topicName "Jensena nevienādība" ;
-    eliozo:topicNumber "1.3.3.4.0" ;
+    eliozo:topicNumber "1.3.4.4.0" ;
     skos:broader eliozo:ProvingInequalitiesWithOtherInequalities ;
     skos:prefLabel "JensenInequality" .
 
@@ -3102,7 +3051,7 @@ eliozo:LatinSquares a eliozo:Topic ;
     eliozo:sorter_L3 6 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Kvadrāti $n \\times n$, kas aizpildīti ar $n$ dažādu veidu simboliem tā, lai katrs simbols katrā rindiņā un katrā kolonnā parādītos tieši vienreiz. " ;
     eliozo:topicID "LatinSquares" ;
     eliozo:topicName "Latīņu kvadrāti" ;
     eliozo:topicNumber "2.4.6.0.0" ;
@@ -3242,26 +3191,26 @@ eliozo:LimitDefinitionAndProperties a eliozo:Topic ;
 eliozo:LinearOptimization a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 6 ;
+    eliozo:sorter_L3 7 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "LinearOptimization" ;
     eliozo:topicName "Nevienādību sistēmas; lineārā programmēšana" ;
-    eliozo:topicNumber "1.3.6.0.0" ;
+    eliozo:topicNumber "1.3.7.0.0" ;
     skos:broader eliozo:ProvingInequalities ;
     skos:prefLabel "LinearOptimization" .
 
 eliozo:LinearRecurrences a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 5 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "Rekurentās sakarības ar konstantiem koeficientiem un to atrisināšana" ;
     eliozo:topicID "LinearRecurrences" ;
     eliozo:topicName "Lineāru rekurenču atrisināšana" ;
-    eliozo:topicNumber "1.10.1.5.0" ;
+    eliozo:topicNumber "1.9.1.5.0" ;
     skos:broader eliozo:FunctionalEquationsInDiscreteSets ;
     skos:prefLabel "LinearRecurrences" .
 
@@ -3271,7 +3220,7 @@ eliozo:LinearRecurrencesConstant a eliozo:Topic ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Variantu skaitīšana, izmantojot homogēnas lineāras rekurences." ;
     eliozo:topicID "LinearRecurrencesConstant" ;
     eliozo:topicName "Lineārās rekurentās sakarības ar konstantiem koeficientiem" ;
     eliozo:topicNumber "2.1.2.1.0" ;
@@ -3284,7 +3233,7 @@ eliozo:LinearRecurrencesVariable a eliozo:Topic ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Variantu skaitīšana, izmantojot rekurences ar homogēno un nehomogēno daļu." ;
     eliozo:topicID "LinearRecurrencesVariable" ;
     eliozo:topicName "Lineārās rekurentās sakarības ar mainīgiem koeficientiem" ;
     eliozo:topicNumber "2.1.2.2.0" ;
@@ -3427,7 +3376,7 @@ eliozo:MathObjectsAsGraphs a eliozo:Topic ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "Bināru attiecību; disjunktu kopu; turnīru attēlošana ar grafiem." ;
+    eliozo:topicDescription "Bināru attiecību, svēršanas uzdevumu vai turnīru attēlošana ar grafiem." ;
     eliozo:topicID "MathObjectsAsGraphs" ;
     eliozo:topicName "Matemātisku objektu interpretācijas ar grafiem" ;
     eliozo:topicNumber "2.2.1.0.0" ;
@@ -3531,7 +3480,7 @@ eliozo:MeanValueInGraphAnalysis a eliozo:Topic ;
     eliozo:sorter_L3 9 ;
     eliozo:sorter_L4 5 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Vidējā vērtība un citu novērtējumu izmantošana, apskatot bezgalīgus grafus. " ;
     eliozo:topicID "MeanValueInGraphAnalysis" ;
     eliozo:topicName "Vidējā vērtība bezgalīgiem grafiem" ;
     eliozo:topicNumber "2.2.9.5.0" ;
@@ -3579,40 +3528,40 @@ eliozo:MethodOfInfiniteDescent a eliozo:Topic ;
 
 eliozo:ModelsForDiscreteFunctionalEquations a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 4 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "ModelsForDiscreteFunctionalEquations" ;
     eliozo:topicName "Modeļu veidošana" ;
-    eliozo:topicNumber "1.10.1.4.0" ;
+    eliozo:topicNumber "1.9.1.4.0" ;
     skos:broader eliozo:FunctionalEquationsInDiscreteSets ;
     skos:prefLabel "ModelsForDiscreteFunctionalEquations" .
 
 eliozo:ModelsForMultiargumentOperations a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 3 ;
     eliozo:sorter_L4 3 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "ModelsForMultiargumentOperations" ;
     eliozo:topicName "Modeļu veidošana" ;
-    eliozo:topicNumber "1.10.3.3.0" ;
+    eliozo:topicNumber "1.9.3.3.0" ;
     skos:broader eliozo:MultiargumentOpearationsAsAxioms ;
     skos:prefLabel "ModelsForMultiargumentOperations" .
 
 eliozo:ModelsForRealFunctionalEquations a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 7 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "ModelsForRealFunctionalEquations" ;
     eliozo:topicName "Modeļu veidošana" ;
-    eliozo:topicNumber "1.10.2.7.0" ;
+    eliozo:topicNumber "1.9.2.7.0" ;
     skos:broader eliozo:FunctionalEquationsForRealFunctions ;
     skos:prefLabel "ModelsForRealFunctionalEquations" .
 
@@ -3668,6 +3617,19 @@ eliozo:ModularParity a eliozo:Topic ;
     skos:broader eliozo:ModularArithmetic ;
     skos:prefLabel "ModularParity" .
 
+eliozo:ModulusFunctionProperties a eliozo:Topic ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 3 ;
+    eliozo:sorter_L3 3 ;
+    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "" ;
+    eliozo:topicID "ModulusFunctionProperties" ;
+    eliozo:topicName "Absolūtās vērtības funkcijas īpašības" ;
+    eliozo:topicNumber "1.3.3.0.0" ;
+    skos:broader eliozo:ProvingInequalities ;
+    skos:prefLabel "ModulusFunctionProperties" .
+
 eliozo:Monotonicity a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 7 ;
@@ -3713,7 +3675,7 @@ eliozo:NonlinearRecurrences a eliozo:Topic ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 3 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Variantu skaitīšana, izmantojot nelineāras rekurences." ;
     eliozo:topicID "NonlinearRecurrences" ;
     eliozo:topicName "Nelineāras rekurentas sakarības" ;
     eliozo:topicNumber "2.1.2.3.0" ;
@@ -3943,14 +3905,14 @@ eliozo:OneDimensionalLattices a eliozo:Topic ;
 
 eliozo:OtherAnalysisMethods a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 9 ;
-    eliozo:sorter_L3 9 ;
-    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L2 8 ;
+    eliozo:sorter_L3 7 ;
+    eliozo:sorter_L4 5 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "OtherAnalysisMethods" ;
     eliozo:topicName "Citas analīzes metodes" ;
-    eliozo:topicNumber "1.9.9.0.0" ;
+    eliozo:topicNumber "1.8.7.5.0" ;
     skos:broader eliozo:AnalysisMethods ;
     skos:prefLabel "OtherAnalysisMethods" .
 
@@ -4025,25 +3987,12 @@ eliozo:Paradoxes a eliozo:Topic ;
     eliozo:sorter_L3 3 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Loģikas uzdevumi, kur jāpamato neparasti apgalvojumi vai jāatrod secinājumos kļūdas." ;
     eliozo:topicID "Paradoxes" ;
     eliozo:topicName "Paradoksi" ;
     eliozo:topicNumber "2.6.3.0.0" ;
     skos:broader eliozo:LogicProblems ;
     skos:prefLabel "Paradoxes" .
-
-eliozo:ParallelAndCentralProjections a eliozo:Topic ;
-    eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 9 ;
-    eliozo:sorter_L3 6 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "ParallelAndCentralProjections" ;
-    eliozo:topicName "Paralēlā un centrālā projekcijas" ;
-    eliozo:topicNumber "1.9.6.0.0" ;
-    skos:broader eliozo:AnalysisMethods ;
-    skos:prefLabel "ParallelAndCentralProjections" .
 
 eliozo:ParallelTranslations a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
@@ -4116,7 +4065,7 @@ eliozo:PascalTriangle a eliozo:Topic ;
     eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Paskāla trijstūra īpašības un to interpretācijas binomiālajiem koeficientiem $C_n^k$. " ;
     eliozo:topicID "PascalTriangle" ;
     eliozo:topicName "Paskāla trijstūris" ;
     eliozo:topicNumber "2.4.4.0.0" ;
@@ -4331,19 +4280,6 @@ eliozo:PolynomialVietaFormula a eliozo:Topic ;
     skos:broader eliozo:IntegerPolynomials ;
     skos:prefLabel "PolynomialVietaFormula" .
 
-eliozo:PotentialEnergyMinimumPrinciple a eliozo:Topic ;
-    eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 9 ;
-    eliozo:sorter_L3 8 ;
-    eliozo:sorter_L4 2 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "PotentialEnergyMinimumPrinciple" ;
-    eliozo:topicName "Potenciālās enerģijas minimuma princips" ;
-    eliozo:topicNumber "1.9.8.2.0" ;
-    skos:broader eliozo:PhysicalInterpretations ;
-    skos:prefLabel "PotentialEnergyMinimumPrinciple" .
-
 eliozo:PrimalityTests a eliozo:Topic ;
     eliozo:sorter_L1 4 ;
     eliozo:sorter_L2 2 ;
@@ -4415,7 +4351,7 @@ eliozo:ProbabilisticGames a eliozo:Topic ;
     eliozo:sorter_L3 6 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Varbūtiskas spēles un spēles, kuru rezultātu noteiktai divu spēlētāju gājienu kombinācijai nosaka tabulveida matrica. " ;
     eliozo:topicID "ProbabilisticGames" ;
     eliozo:topicName "Varbūtiskās spēles" ;
     eliozo:topicNumber "2.3.6.0.0" ;
@@ -4428,7 +4364,7 @@ eliozo:ProblemsWithHiddenInformation a eliozo:Topic ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Uzdevumi, kur jānoskaidro apslēptā informācija, uzdodot jautājumus noteiktā formā." ;
     eliozo:topicID "ProblemsWithHiddenInformation" ;
     eliozo:topicName "Uzdevumi ar apslēptu informāciju" ;
     eliozo:topicNumber "2.6.2.0.0" ;
@@ -4519,7 +4455,7 @@ eliozo:PseudoScalarProduct a eliozo:Topic ;
     eliozo:sorter_L3 7 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Pseidoskalārais reizinājums definēts kā $|a| \\cdot |b| \\cdot \\sin \\gamma$, kur $\\gamma$ ir leņķis starp vektoriem $\\mathbb{a}$ un $\\mathbb{b}$. Tas apraksta paralelograma laukumu, ko veido abi vektori (var būt arī ar mīnusa zīmi - atkarībā no leņķa griešanās virziena)." ;
     eliozo:topicID "PseudoScalarProduct" ;
     eliozo:topicName "Pseidoskalārais reizinājums." ;
     eliozo:topicNumber "3.12.7.0.0" ;
@@ -4708,58 +4644,6 @@ eliozo:RamseyConfigurationsOther a eliozo:Topic ;
     skos:broader eliozo:RamseyTheoryGeometry ;
     skos:prefLabel "RamseyConfigurationsOther" .
 
-eliozo:RamseyNumbers a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 2 ;
-    eliozo:sorter_L3 9 ;
-    eliozo:sorter_L4 1 ;
-    eliozo:sorter_L5 2 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "RamseyNumbers" ;
-    eliozo:topicName "Ramseja skaitļi pilniem grafiem" ;
-    eliozo:topicNumber "2.2.9.1.2" ;
-    skos:broader eliozo:GraphsWithColoredEdges ;
-    skos:prefLabel "RamseyNumbers" .
-
-eliozo:RamseyNumbersGeneralization a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 2 ;
-    eliozo:sorter_L3 9 ;
-    eliozo:sorter_L4 1 ;
-    eliozo:sorter_L5 5 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "RamseyNumbersGeneralization" ;
-    eliozo:topicName "Vispārinātie Ramseja skaitļi" ;
-    eliozo:topicNumber "2.2.9.1.5" ;
-    skos:broader eliozo:GraphsWithColoredEdges ;
-    skos:prefLabel "RamseyNumbersGeneralization" .
-
-eliozo:RamseyProblemsIncompleteGraphs a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 2 ;
-    eliozo:sorter_L3 9 ;
-    eliozo:sorter_L4 1 ;
-    eliozo:sorter_L5 6 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "RamseyProblemsIncompleteGraphs" ;
-    eliozo:topicName "Ramseja tipa uzdevumi nepilniem grafiem" ;
-    eliozo:topicNumber "2.2.9.1.6" ;
-    skos:broader eliozo:GraphsWithColoredEdges ;
-    skos:prefLabel "RamseyProblemsIncompleteGraphs" .
-
-eliozo:RamseyTheorem a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 2 ;
-    eliozo:sorter_L3 9 ;
-    eliozo:sorter_L4 1 ;
-    eliozo:sorter_L5 1 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "RamseyTheorem" ;
-    eliozo:topicName "Ramseja teorēma" ;
-    eliozo:topicNumber "2.2.9.1.1" ;
-    skos:broader eliozo:GraphsWithColoredEdges ;
-    skos:prefLabel "RamseyTheorem" .
-
 eliozo:RandomVariableInequalities a eliozo:Topic ;
     eliozo:sorter_L1 2 ;
     eliozo:sorter_L2 7 ;
@@ -4802,26 +4686,26 @@ eliozo:RationalRootTheorem a eliozo:Topic ;
 eliozo:RealAnalysisAndExtremes a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 4 ;
+    eliozo:sorter_L3 5 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "RealAnalysisAndExtremes" ;
     eliozo:topicName "Ekstrēma atrašana" ;
-    eliozo:topicNumber "1.3.4.1.0" ;
+    eliozo:topicNumber "1.3.5.1.0" ;
     skos:broader eliozo:InequalitySolvingWithRealAnalysis ;
     skos:prefLabel "RealAnalysisAndExtremes" .
 
 eliozo:RealAnalysisAndMonotonicity a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 4 ;
+    eliozo:sorter_L3 5 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "RealAnalysisAndMonotonicity" ;
     eliozo:topicName "Funkcijas monotonitāte" ;
-    eliozo:topicNumber "1.3.4.2.0" ;
+    eliozo:topicNumber "1.3.5.2.0" ;
     skos:broader eliozo:InequalitySolvingWithRealAnalysis ;
     skos:prefLabel "RealAnalysisAndMonotonicity" .
 
@@ -4877,26 +4761,13 @@ eliozo:RegroupingAreas a eliozo:Topic ;
     skos:broader eliozo:Area ;
     skos:prefLabel "RegroupingAreas" .
 
-eliozo:RegularLattices a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 4 ;
-    eliozo:sorter_L3 5 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "RegularLattices" ;
-    eliozo:topicName "Regulāri režģi" ;
-    eliozo:topicNumber "2.4.5.0.0" ;
-    skos:broader eliozo:CombinatorialStructures ;
-    skos:prefLabel "RegularLattices" .
-
 eliozo:RemaindersInCombinatorics a eliozo:Topic ;
     eliozo:sorter_L1 2 ;
     eliozo:sorter_L2 1 ;
     eliozo:sorter_L3 5 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Atlikumu izmantošana kombinatoriskos interpretāciju uzdevumos. " ;
     eliozo:topicID "RemaindersInCombinatorics" ;
     eliozo:topicName "Paritāte un citi atlikumi interpretācijās ar skaitīšanu" ;
     eliozo:topicNumber "2.1.5.1.0" ;
@@ -5007,18 +4878,44 @@ eliozo:RotationByAnyAngle a eliozo:Topic ;
     skos:broader eliozo:Rotation ;
     skos:prefLabel "RotationByAnyAngle" .
 
-eliozo:RuleOfProductWithRepetitions a eliozo:Topic ;
+eliozo:RuleOfDivision a eliozo:Topic ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 1 ;
+    eliozo:sorter_L3 1 ;
+    eliozo:sorter_L4 3 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Reizināšanas likuma variants, ja to pašu elementu ieskaita atkārtoti. Šajā gadījumā reizināšanas likuma rezultātu dala ar to skaitu, cik reizes katrs elements ieskaitīts. (Piemēram, aprēķinot permutācijas ar atkārtojumiem, rezultātu dala ar atkārtojamo elementu faktoriāliem.)" ;
+    eliozo:topicID "RuleOfDivision" ;
+    eliozo:topicName "Dalīšanas likums kombinatorikā." ;
+    eliozo:topicNumber "2.1.1.3.0" ;
+    skos:broader eliozo:CountingSetSizes ;
+    skos:prefLabel "RuleOfDivision" .
+
+eliozo:RuleOfProduct a eliozo:Topic ;
     eliozo:sorter_L1 2 ;
     eliozo:sorter_L2 1 ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "Atkārtotu (neatšķiramu) elementu gadījumā reizināšanas likumā iegūto reizinājumu dala ar atkārtoto elementu faktoriāliem." ;
-    eliozo:topicID "RuleOfProductWithRepetitions" ;
-    eliozo:topicName "Reizināšanas likums, ja iespējami atkārtojumi" ;
+    eliozo:topicDescription "Ja pirmajā solī ir $a$ izvēles, bet otrajā solī (neatkarīgi no pirmā soļa) ir $b$ izvēles, tad pavisam var veikt $a \\cdot b$ izvēles. (Kopu valodā - ja kopā $A$ ir $a$ elementi, bet kopā $B$ ir $b$ elementi, tad to Dekarta reizinājums $A \\times B$ satur visus pārīšus un šīs kopas elementu skaits ir $a \\cdot b$.) " ;
+    eliozo:topicID "RuleOfProduct" ;
+    eliozo:topicName "Reizināšanas likums kombinatorikā" ;
     eliozo:topicNumber "2.1.1.1.0" ;
-    skos:broader eliozo:RuleOfProduct ;
-    skos:prefLabel "RuleOfProductWithRepetitions" .
+    skos:broader eliozo:CountingSetSizes ;
+    skos:prefLabel "RuleOfProduct" .
+
+eliozo:RuleOfSum a eliozo:Topic ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 1 ;
+    eliozo:sorter_L3 1 ;
+    eliozo:sorter_L4 2 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Ja var izdarīt vai nu kādu no $a$ dažādām izvēlēm vai kādu no $b$ dažādām izvēlēm (bet nevar tās kombinēt), tad pavisam ir $a+b$ izvēles. (Kopu valodā - ja $A$ un $B$ ir kopas bez kopīgiem elementiem, tad to apvienojumā $A \\cup B$ ir $a+b$ elementi.)" ;
+    eliozo:topicID "RuleOfSum" ;
+    eliozo:topicName "Saskaitīšanas likums kombinatorikā" ;
+    eliozo:topicNumber "2.1.1.2.0" ;
+    skos:broader eliozo:CountingSetSizes ;
+    skos:prefLabel "RuleOfSum" .
 
 eliozo:RulerOnlyImpossibleConstructions a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
@@ -5033,26 +4930,13 @@ eliozo:RulerOnlyImpossibleConstructions a eliozo:Topic ;
     skos:broader eliozo:ProjectiveTransformations ;
     skos:prefLabel "RulerOnlyImpossibleConstructions" .
 
-eliozo:SaturatedGraphs a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 2 ;
-    eliozo:sorter_L3 9 ;
-    eliozo:sorter_L4 1 ;
-    eliozo:sorter_L5 4 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "SaturatedGraphs" ;
-    eliozo:topicName "Piesātinātie grafi" ;
-    eliozo:topicNumber "2.2.9.1.4" ;
-    skos:broader eliozo:GraphsWithColoredEdges ;
-    skos:prefLabel "SaturatedGraphs" .
-
 eliozo:ScalarProduct a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
     eliozo:sorter_L2 12 ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Skalārais reizinājums definēts kā $|a| \\cdot |b| \\cdot \\cos \\gamma$, kur $\\gamma$ ir leņķis starp vektoriem $a$ un $b$." ;
     eliozo:topicID "ScalarProduct" ;
     eliozo:topicName "Skalārais reizinājums. Attiecības" ;
     eliozo:topicNumber "3.12.2.0.0" ;
@@ -5182,7 +5066,7 @@ eliozo:SetTraversalOrganization a eliozo:Topic ;
     eliozo:sorter_L3 3 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Kopas elementu pārlasīšana sistemātiskā veidā." ;
     eliozo:topicID "SetTraversalOrganization" ;
     eliozo:topicName "Pārlases organizācija" ;
     eliozo:topicNumber "2.1.3.0.0" ;
@@ -5260,7 +5144,7 @@ eliozo:SineTheorem a eliozo:Topic ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Teorēma $\\frac{a}{\\sin \\alpha} = \\frac{b}{\\sin \\beta} = \\frac{c}{\\sin \\gamma} = 2R$, kur $a,b,c$ ir trijstūra malas; $\\alpha, \\beta, \\gamma$ ir trijstūra leņķi un $R$ ir trijstūrim apvilktā riņķa rādiuss." ;
     eliozo:topicID "SineTheorem" ;
     eliozo:topicName "Sinusu teorēma" ;
     eliozo:topicNumber "3.9.1.0.0" ;
@@ -5280,18 +5164,18 @@ eliozo:SolutionsWithSymmetry a eliozo:Topic ;
     skos:broader eliozo:AxisSymmetry ;
     skos:prefLabel "SolutionsWithSymmetry" .
 
-eliozo:SpecialPropertiesOfNumericCoefficients a eliozo:Topic ;
-    eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 1 ;
-    eliozo:sorter_L3 7 ;
+eliozo:SpecialLattices a eliozo:Topic ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 4 ;
+    eliozo:sorter_L3 5 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "SpecialPropertiesOfNumericCoefficients" ;
-    eliozo:topicName "Skaitlisko koeficientu specifisku īpašību izmantošana" ;
-    eliozo:topicNumber "1.1.7.0.0" ;
-    skos:broader eliozo:AlgebraicTransformations ;
-    skos:prefLabel "SpecialPropertiesOfNumericCoefficients" .
+    eliozo:topicDescription "Hiperkubi un līdzīgas struktūras ar \"regulārām\" (globāli aprakstāmām) īpašībām un elementu savstarpējām sakarībām." ;
+    eliozo:topicID "SpecialLattices" ;
+    eliozo:topicName "Īpaši režģi" ;
+    eliozo:topicNumber "2.4.5.0.0" ;
+    skos:broader eliozo:CombinatorialStructures ;
+    skos:prefLabel "SpecialLattices" .
 
 eliozo:Square a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
@@ -5371,6 +5255,19 @@ eliozo:SubsequenceSystems a eliozo:Topic ;
     skos:broader eliozo:NumericSequences ;
     skos:prefLabel "SubsequenceSystems" .
 
+eliozo:SubtractionRule a eliozo:Topic ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 1 ;
+    eliozo:sorter_L3 1 ;
+    eliozo:sorter_L4 4 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Kopu $A$ un $B$ starpībā $A-B$ elementu skaits ir $|A| - |A \\cap B|$, t.i. tas samazinās par $|A \\cap B|$ jeb abu kopu šķēlumu. " ;
+    eliozo:topicID "SubtractionRule" ;
+    eliozo:topicName "Atņemšanas likums kombinatorikā." ;
+    eliozo:topicNumber "2.1.1.4.0" ;
+    skos:broader eliozo:CountingSetSizes ;
+    skos:prefLabel "SubtractionRule" .
+
 eliozo:SumEstimatesOverlaps a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
     eliozo:sorter_L2 11 ;
@@ -5442,7 +5339,7 @@ eliozo:SymmetryInCounting a eliozo:Topic ;
     eliozo:sorter_L3 5 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Simetrijas izmantošana interpretācijās. Piemēram, lai pamatotu Mazo Fermā teorēmu ($a^p - a$ dalās ar $p$), iztēlojamies $a^p$ kā dažāda veida kreļļu krāsojumu saskaitīšanu, kur $a$ ir pērlīšu krāsu skaits, bet $p$ ir pērlīšu skaits cikliskā krellē. Tad ir tieši $a$ vienkrāsainās krelles, bet pārējām ir jādalās ar $p$, jo tās veido simetriskas apakškopas ar izmēru $p$. " ;
     eliozo:topicID "SymmetryInCounting" ;
     eliozo:topicName "Simetrija interpretācijās ar skaitīšanu" ;
     eliozo:topicNumber "2.1.5.2.0" ;
@@ -5494,7 +5391,7 @@ eliozo:SystemsOfSubsequences a eliozo:Topic ;
     eliozo:sorter_L3 3 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Kā saskaitīt virknes ar noteiktām īpašībām." ;
     eliozo:topicID "SystemsOfSubsequences" ;
     eliozo:topicName "Apakšvirkņu sistēmas" ;
     eliozo:topicNumber "2.4.3.0.0" ;
@@ -5507,7 +5404,7 @@ eliozo:SystemsOfSubsets a eliozo:Topic ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Kā saskaitīt visas kādas kopas apakškopas ar noteiktām īpašībām." ;
     eliozo:topicID "SystemsOfSubsets" ;
     eliozo:topicName "Apakškopu sistēmas" ;
     eliozo:topicNumber "2.4.2.0.0" ;
@@ -5618,6 +5515,19 @@ eliozo:ThreeEqualCircles a eliozo:Topic ;
     skos:broader eliozo:Circle ;
     skos:prefLabel "ThreeEqualCircles" .
 
+eliozo:TopologicalGames a eliozo:Topic ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 3 ;
+    eliozo:sorter_L3 7 ;
+    eliozo:sorter_L4 3 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Spēles, kurās spēlētāji pēc kārtas izvēlas intervālus vai punktus, cenšoties konverģēt uz noteiktu robežu. " ;
+    eliozo:topicID "TopologicalGames" ;
+    eliozo:topicName "Topoloģiskas spēles" ;
+    eliozo:topicNumber "2.3.7.3.0" ;
+    skos:broader eliozo:ContinuousGames ;
+    skos:prefLabel "TopologicalGames" .
+
 eliozo:TournamentFullOrdering a eliozo:Topic ;
     eliozo:sorter_L1 2 ;
     eliozo:sorter_L2 5 ;
@@ -5689,7 +5599,7 @@ eliozo:Trees a eliozo:Topic ;
     eliozo:sorter_L3 6 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Apgalvojumi par neorientētiem kokiem bez definētas saknes. Sakarīgs grafs bez cikliem satur tieši $m=n-1$ šķautnes (par vienu šķautni mazāk nekā virsotņu). Kokā pārgriežot jebkuru šķautni, rodas divi komponenti (kas arī ir koki, ja vientuļu virsotni arī uzskatām par \"koku\")." ;
     eliozo:topicID "Trees" ;
     eliozo:topicName "Koki" ;
     eliozo:topicNumber "2.2.6.0.0" ;
@@ -5910,7 +5820,7 @@ eliozo:TrueAndFalseStatements a eliozo:Topic ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Uzdevumi, kur izteikti vairāki apgalvojumi un jāanalizē, kuri (vai cik) no tiem var būt patiesi. " ;
     eliozo:topicID "TrueAndFalseStatements" ;
     eliozo:topicName "Uzdevumi par izteikumu patiesumu" ;
     eliozo:topicNumber "2.6.1.0.0" ;
@@ -5945,14 +5855,14 @@ eliozo:TwoTangentsFromSinglePoint a eliozo:Topic ;
 
 eliozo:UniquelyDeterminedOperations a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 3 ;
     eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "UniquelyDeterminedOperations" ;
     eliozo:topicName "Operāciju viennozīmīga noteikšana" ;
-    eliozo:topicNumber "1.10.3.2.0" ;
+    eliozo:topicNumber "1.9.3.2.0" ;
     skos:broader eliozo:MultiargumentOpearationsAsAxioms ;
     skos:prefLabel "UniquelyDeterminedOperations" .
 
@@ -5971,27 +5881,27 @@ eliozo:UsingAreaInSolution a eliozo:Topic ;
 
 eliozo:UsingCommensurability a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 9 ;
-    eliozo:sorter_L3 2 ;
-    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L2 8 ;
+    eliozo:sorter_L3 7 ;
+    eliozo:sorter_L4 2 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Uzdevumi par skaitļu racionālām un iracionālām attiecībām, iespēju izteikt vienus skaitļus kā citu skaitļu lineāru kombināciju." ;
     eliozo:topicID "UsingCommensurability" ;
     eliozo:topicName "Samērojamības izmantošana" ;
-    eliozo:topicNumber "1.9.2.0.0" ;
+    eliozo:topicNumber "1.8.7.2.0" ;
     skos:broader eliozo:AnalysisMethods ;
     skos:prefLabel "UsingCommensurability" .
 
 eliozo:UsingContinuity a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 9 ;
-    eliozo:sorter_L3 1 ;
-    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L2 8 ;
+    eliozo:sorter_L3 7 ;
+    eliozo:sorter_L4 1 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Funkciju nepārtrauktibas īpašību izmantošana, tsk. teorēma par starpvērtību." ;
     eliozo:topicID "UsingContinuity" ;
     eliozo:topicName "Nepārtrauktības izmantošana" ;
-    eliozo:topicNumber "1.9.1.0.0" ;
+    eliozo:topicNumber "1.8.7.1.0" ;
     skos:broader eliozo:AnalysisMethods ;
     skos:prefLabel "UsingContinuity" .
 
@@ -6008,19 +5918,6 @@ eliozo:UsingEqualTriangles a eliozo:Topic ;
     skos:broader eliozo:AnglesAndTriangleSimilarity ;
     skos:prefLabel "UsingEqualTriangles" .
 
-eliozo:UsingGeometryInAlgebra a eliozo:Topic ;
-    eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 9 ;
-    eliozo:sorter_L3 5 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "UsingGeometryInAlgebra" ;
-    eliozo:topicName "Ģeometrijas pielietojumi algebrā" ;
-    eliozo:topicNumber "1.9.5.0.0" ;
-    skos:broader eliozo:AnalysisMethods ;
-    skos:prefLabel "UsingGeometryInAlgebra" .
-
 eliozo:UsingIntegrals a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 8 ;
@@ -6036,27 +5933,27 @@ eliozo:UsingIntegrals a eliozo:Topic ;
 
 eliozo:UsingMonotonicityAndBoundedness a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 9 ;
-    eliozo:sorter_L3 3 ;
-    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L2 8 ;
+    eliozo:sorter_L3 7 ;
+    eliozo:sorter_L4 3 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Funkciju monotonitātes un ierobežotības izmantošana. Teorēma par monotonas un ierobežotas funkcijas robežu. " ;
     eliozo:topicID "UsingMonotonicityAndBoundedness" ;
     eliozo:topicName "Monotonitātes un ierobežotības izmantošana" ;
-    eliozo:topicNumber "1.9.3.0.0" ;
+    eliozo:topicNumber "1.8.7.3.0" ;
     skos:broader eliozo:AnalysisMethods ;
     skos:prefLabel "UsingMonotonicityAndBoundedness" .
 
 eliozo:UsingSmallPerturbations a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 9 ;
-    eliozo:sorter_L3 4 ;
-    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L2 8 ;
+    eliozo:sorter_L3 7 ;
+    eliozo:sorter_L4 4 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "UsingSmallPerturbations" ;
     eliozo:topicName "Mazo izmaiņu metode" ;
-    eliozo:topicNumber "1.9.4.0.0" ;
+    eliozo:topicNumber "1.8.7.4.0" ;
     skos:broader eliozo:AnalysisMethods ;
     skos:prefLabel "UsingSmallPerturbations" .
 
@@ -6086,13 +5983,26 @@ eliozo:ValuationProperties a eliozo:Topic ;
     skos:broader eliozo:Valuation ;
     skos:prefLabel "ValuationProperties" .
 
+eliozo:VectorInequalities a eliozo:Topic ;
+    eliozo:sorter_L1 3 ;
+    eliozo:sorter_L2 12 ;
+    eliozo:sorter_L3 3 ;
+    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Vektori ļauj ieviest dažus skalārus lielumus (vektoru garumus, skalāro reizinājumu, laukumu, ko veido divu vektoru noteikts paralelograms). Tie apmierina vairākas nevienādības, no kurām pazīstamākā ir trijstūra nevienādība. Vektoru izteiksmē tā ir $|a+b| \\leq |a| + |b|$. " ;
+    eliozo:topicID "VectorInequalities" ;
+    eliozo:topicName "Nevienādības vektoru garumiem, laukumiem u.c." ;
+    eliozo:topicNumber "3.12.3.0.0" ;
+    skos:broader eliozo:Vectors ;
+    skos:prefLabel "VectorInequalities" .
+
 eliozo:VectorSums a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
     eliozo:sorter_L2 12 ;
     eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Vektoru summēšana. Ģeometrisku elementu izteikšana ar vektoru summām (varbūt arī par noteiktu leņķi pagrieztu vai projicētu vektoru summām)." ;
     eliozo:topicID "VectorSums" ;
     eliozo:topicName "Vektoru summas" ;
     eliozo:topicNumber "3.12.4.0.0" ;
@@ -6105,7 +6015,7 @@ eliozo:VectorsAsPolygonSides a eliozo:Topic ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Daudzstūra malas var uzskatīt par vektoriem; tad slēgtā lauztā līnija, ko apraksta daudzstūris, rodas tikai tad, ja visu malu vektoru summa ir nulles vektors." ;
     eliozo:topicID "VectorsAsPolygonSides" ;
     eliozo:topicName "Vektori, ko veido daudzstūru malas" ;
     eliozo:topicNumber "3.12.1.0.0" ;
@@ -6120,7 +6030,7 @@ eliozo:VectorsMeanValueMethod a eliozo:Topic ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "VectorsMeanValueMethod" ;
-    eliozo:topicName "Vidējās vērtības metode" ;
+    eliozo:topicName "Vidējās vērtības metode vektoriem" ;
     eliozo:topicNumber "3.12.6.0.0" ;
     skos:broader eliozo:Vectors ;
     skos:prefLabel "VectorsMeanValueMethod" .
@@ -6144,7 +6054,7 @@ eliozo:WinningStrategyCleanProofs a eliozo:Topic ;
     eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Nosacījumi, pie kuriem kombinatoriskai spēlei eksistē uzvarošā stratēģija." ;
     eliozo:topicID "WinningStrategyCleanProofs" ;
     eliozo:topicName "Tīrie uzvarošās stratēģijas eksistences pierādījumi" ;
     eliozo:topicNumber "2.3.4.0.0" ;
@@ -6273,7 +6183,7 @@ eliozo:GameModelCreation a eliozo:Topic ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Spēles, kurās no apraksta jāizveido spēles modelis, kuru vieglāk analizēt nekā sākotnējo spēli." ;
     eliozo:topicID "GameModelCreation" ;
     eliozo:topicName "Spēles modeļa veidošana" ;
     eliozo:topicNumber "2.3.2.0.0" ;
@@ -6282,28 +6192,13 @@ eliozo:GameModelCreation a eliozo:Topic ;
         eliozo:GameModelAsGrid ;
     skos:prefLabel "GameModelCreation" .
 
-eliozo:GamesSymmetry a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 1 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "GamesSymmetry" ;
-    eliozo:topicName "Spēles ar simetriju" ;
-    eliozo:topicNumber "2.3.1.0.0" ;
-    skos:broader eliozo:Games ;
-    skos:narrower eliozo:GamesSymmetryDirect,
-        eliozo:GamesSymmetryGeneralized ;
-    skos:prefLabel "GamesSymmetry" .
-
 eliozo:GraphEnumeration a eliozo:Topic ;
     eliozo:sorter_L1 2 ;
     eliozo:sorter_L2 2 ;
     eliozo:sorter_L3 9 ;
     eliozo:sorter_L4 3 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Grafa virsotņu vai šķautņu numerēšana ar veseliem skaitļiem, ievērojot noteiktus ierobežojumus." ;
     eliozo:topicID "GraphEnumeration" ;
     eliozo:topicName "Grafu numerācijas" ;
     eliozo:topicNumber "2.2.9.3.0" ;
@@ -6312,31 +6207,16 @@ eliozo:GraphEnumeration a eliozo:Topic ;
         eliozo:MagicGraphs ;
     skos:prefLabel "GraphEnumeration" .
 
-eliozo:GraphVertexDegree a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 2 ;
-    eliozo:sorter_L3 2 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "Apgalvojums: Katrā grafā ir divas virsotnes ar vienādu kārtu." ;
-    eliozo:topicID "GraphVertexDegree" ;
-    eliozo:topicName "Uzdevumi par virsotnes pakāpi jeb kārtu." ;
-    eliozo:topicNumber "2.2.2.0.0" ;
-    skos:broader eliozo:GraphProblems ;
-    skos:narrower eliozo:DegreesInSubgraphs,
-        eliozo:GraphVertexMaxDegree ;
-    skos:prefLabel "GraphVertexDegree" .
-
 eliozo:InequalitiesInterpretations a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 5 ;
+    eliozo:sorter_L3 6 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "Nevienādību pamatošana tās interpretējot - pārveidojot citos jēdzienos vai apzīmējumos." ;
     eliozo:topicID "InequalitiesInterpretations" ;
     eliozo:topicName "Interpretācijas" ;
-    eliozo:topicNumber "1.3.5.0.0" ;
+    eliozo:topicNumber "1.3.6.0.0" ;
     skos:broader eliozo:ProvingInequalities ;
     skos:narrower eliozo:InequalitiesGeometricInterpretations,
         eliozo:InequalitiesProbabilisticInterpretations ;
@@ -6378,7 +6258,7 @@ eliozo:InterpretationMethodInCounting a eliozo:Topic ;
     eliozo:sorter_L3 5 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Objektu saskaitīšana, izmantojot interpretāciju metodi - iekodējot elementus noteiktā veidā. " ;
     eliozo:topicID "InterpretationMethodInCounting" ;
     eliozo:topicName "Interpretāciju metode skaitīšanā" ;
     eliozo:topicNumber "2.1.5.0.0" ;
@@ -6461,21 +6341,6 @@ eliozo:PlanarGraphs a eliozo:Topic ;
     skos:narrower eliozo:EulerFormulaPlanarGraphs,
         eliozo:GraphPlanarityConditions ;
     skos:prefLabel "PlanarGraphs" .
-
-eliozo:RuleOfProduct a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 1 ;
-    eliozo:sorter_L3 1 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "RuleOfProduct" ;
-    eliozo:topicName "Reizinājuma likums un saskaitīšanas likums" ;
-    eliozo:topicNumber "2.1.1.0.0" ;
-    skos:broader eliozo:CountingObjects ;
-    skos:narrower eliozo:CountingSetDifference,
-        eliozo:RuleOfProductWithRepetitions ;
-    skos:prefLabel "RuleOfProduct" .
 
 eliozo:SequenceGaps a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
@@ -6615,6 +6480,22 @@ eliozo:ConstructingTriangles a eliozo:Topic ;
         eliozo:SimilarTriangles ;
     skos:prefLabel "ConstructingTriangles" .
 
+eliozo:ContinuousGames a eliozo:Topic ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 3 ;
+    eliozo:sorter_L3 7 ;
+    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Spēles, kuru pozīcija nav viegli aprakstāma ar kombinatoriskām struktūrām." ;
+    eliozo:topicID "ContinuousGames" ;
+    eliozo:topicName "Nepārtrauktās spēles" ;
+    eliozo:topicNumber "2.3.7.0.0" ;
+    skos:broader eliozo:Games ;
+    skos:narrower eliozo:ChasingGames,
+        eliozo:FairDivisonGames,
+        eliozo:TopologicalGames ;
+    skos:prefLabel "ContinuousGames" .
+
 eliozo:CountingSetOperations a eliozo:Topic ;
     eliozo:sorter_L1 2 ;
     eliozo:sorter_L2 1 ;
@@ -6711,16 +6592,32 @@ eliozo:GeometricIntepretationOfInequalities a eliozo:Topic ;
         eliozo:LengthOfPolygonalChain ;
     skos:prefLabel "GeometricIntepretationOfInequalities" .
 
+eliozo:GraphVertexDegree a eliozo:Topic ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 2 ;
+    eliozo:sorter_L3 2 ;
+    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Apgalvojums: Katrā grafā ir divas virsotnes ar vienādu kārtu." ;
+    eliozo:topicID "GraphVertexDegree" ;
+    eliozo:topicName "Uzdevumi par virsotnes pakāpi jeb kārtu." ;
+    eliozo:topicNumber "2.2.2.0.0" ;
+    skos:broader eliozo:GraphProblems ;
+    skos:narrower eliozo:DegreesInSubgraphs,
+        eliozo:GraphVertexMaxDegree,
+        eliozo:HandshakingLemma ;
+    skos:prefLabel "GraphVertexDegree" .
+
 eliozo:InequalitySolvingWithRealAnalysis a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 4 ;
+    eliozo:sorter_L3 5 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "Funkciju pētīšana, monotonitāte, nepārtrauktība un citas analīzes metodes nevienādību pamatošanā. " ;
     eliozo:topicID "InequalitySolvingWithRealAnalysis" ;
     eliozo:topicName "Matemātiskā analīze nevienādību pamatošanā" ;
-    eliozo:topicNumber "1.3.4.0.0" ;
+    eliozo:topicNumber "1.3.5.0.0" ;
     skos:broader eliozo:ProvingInequalities ;
     skos:narrower eliozo:InequalitiesAndIntegrals,
         eliozo:RealAnalysisAndExtremes,
@@ -6797,9 +6694,9 @@ eliozo:MethodOfRecurrentRelations a eliozo:Topic ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Variantu skaitīšana, izmantojot rekurentas sakarības." ;
     eliozo:topicID "MethodOfRecurrentRelations" ;
-    eliozo:topicName "Rekurento sakarību metode" ;
+    eliozo:topicName "Rekurento sakarību metode kombinatorikā" ;
     eliozo:topicNumber "2.1.2.0.0" ;
     skos:broader eliozo:CountingObjects ;
     skos:narrower eliozo:LinearRecurrencesConstant,
@@ -6825,14 +6722,14 @@ eliozo:ModularArithmetic a eliozo:Topic ;
 
 eliozo:MultiargumentOpearationsAsAxioms a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 3 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "MultiargumentOpearationsAsAxioms" ;
     eliozo:topicName "Vairākvietīgo operāciju aksiomātiskie apraksti" ;
-    eliozo:topicNumber "1.10.3.0.0" ;
+    eliozo:topicNumber "1.9.3.0.0" ;
     skos:broader eliozo:FunctionalEquations ;
     skos:narrower eliozo:DerivingNewPropertiesFromOthers,
         eliozo:ModelsForMultiargumentOperations,
@@ -6870,22 +6767,6 @@ eliozo:NumTheoryInequalityMethod a eliozo:Topic ;
         eliozo:NumTheoryInequalitySideComparison,
         eliozo:NumTheoryInequalitySmallIntervals ;
     skos:prefLabel "NumTheoryInequalityMethod" .
-
-eliozo:PhysicalInterpretations a eliozo:Topic ;
-    eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 9 ;
-    eliozo:sorter_L3 8 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "PhysicalInterpretations" ;
-    eliozo:topicName "Fizikālās interpretācijas" ;
-    eliozo:topicNumber "1.9.8.0.0" ;
-    skos:broader eliozo:AnalysisMethods ;
-    skos:narrower eliozo:Baricenter,
-        eliozo:EnergyPreservation,
-        eliozo:PotentialEnergyMinimumPrinciple ;
-    skos:prefLabel "PhysicalInterpretations" .
 
 eliozo:QuadrilateralArea a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
@@ -7017,6 +6898,23 @@ eliozo:ConjugateNumbers a eliozo:Topic ;
         eliozo:QuadraticFieldNorm ;
     skos:prefLabel "ConjugateNumbers" .
 
+eliozo:CountingSetSizes a eliozo:Topic ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 1 ;
+    eliozo:sorter_L3 1 ;
+    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Reizināšanas, saskaitīšanas, atņemšanas un dalīšanas likumi." ;
+    eliozo:topicID "CountingSetSizes" ;
+    eliozo:topicName "Kopu elementu skaitīšana ar vienkāršu aritmētiku" ;
+    eliozo:topicNumber "2.1.1.0.0" ;
+    skos:broader eliozo:CountingObjects ;
+    skos:narrower eliozo:RuleOfDivision,
+        eliozo:RuleOfProduct,
+        eliozo:RuleOfSum,
+        eliozo:SubtractionRule ;
+    skos:prefLabel "CountingSetSizes" .
+
 eliozo:DecimalNotation a eliozo:Topic ;
     eliozo:sorter_L1 4 ;
     eliozo:sorter_L2 3 ;
@@ -7036,14 +6934,14 @@ eliozo:DecimalNotation a eliozo:Topic ;
 
 eliozo:FunctionalEquations a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 0 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "Funkcionālvienādojumi, viena argumenta funkciju un vairākvietīgu operāciju aksiomas un interpretācijas" ;
     eliozo:topicID "FunctionalEquations" ;
     eliozo:topicName "Funkcionālvienādojumi" ;
-    eliozo:topicNumber "1.10.0.0.0" ;
+    eliozo:topicNumber "1.9.0.0.0" ;
     skos:broader eliozo:Algebra ;
     skos:narrower eliozo:FunctionalEquationsForRealFunctions,
         eliozo:FunctionalEquationsInDiscreteSets,
@@ -7091,7 +6989,7 @@ eliozo:MinMaxTheorems a eliozo:Topic ;
     eliozo:sorter_L3 9 ;
     eliozo:sorter_L4 4 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Vairākas teorēmas par optimālām konfigurācijām grafos." ;
     eliozo:topicID "MinMaxTheorems" ;
     eliozo:topicName "Minimaksa teorēmas" ;
     eliozo:topicNumber "2.2.9.4.0" ;
@@ -7139,13 +7037,13 @@ eliozo:Primes a eliozo:Topic ;
 eliozo:ProvingInequalitiesWithOtherInequalities a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
     eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 3 ;
+    eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "Zināmu nevienādību izmantošana, lai pierādītu citas nevienādības." ;
     eliozo:topicID "ProvingInequalitiesWithOtherInequalities" ;
     eliozo:topicName "Citu nevienādību izmantošana" ;
-    eliozo:topicNumber "1.3.3.0.0" ;
+    eliozo:topicNumber "1.3.4.0.0" ;
     skos:broader eliozo:ProvingInequalities ;
     skos:narrower eliozo:AddingOrMultiplyingInequalities,
         eliozo:CauchyBunyakovsky,
@@ -7221,6 +7119,24 @@ eliozo:SeriesMembersSumsClosedFormulas a eliozo:Topic ;
         eliozo:SeriesOneToNSum ;
     skos:prefLabel "SeriesMembersSumsClosedFormulas" .
 
+eliozo:AnalysisMethods a eliozo:Topic ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 8 ;
+    eliozo:sorter_L3 7 ;
+    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Analītisku metožu lietošana citu veidu uzdevumos" ;
+    eliozo:topicID "AnalysisMethods" ;
+    eliozo:topicName "Matemātiskās analīzes metodes" ;
+    eliozo:topicNumber "1.8.7.0.0" ;
+    skos:broader eliozo:RealAnalysis ;
+    skos:narrower eliozo:OtherAnalysisMethods,
+        eliozo:UsingCommensurability,
+        eliozo:UsingContinuity,
+        eliozo:UsingMonotonicityAndBoundedness,
+        eliozo:UsingSmallPerturbations ;
+    skos:prefLabel "AnalysisMethods" .
+
 eliozo:Area a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
     eliozo:sorter_L2 6 ;
@@ -7263,9 +7179,9 @@ eliozo:CombinatorialAlgorithms a eliozo:Topic ;
     eliozo:sorter_L3 0 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Kombinatoriski algoritmi un to lietojumi procedūru veidošanai kā arī kombinatoriskiem uzdevumiem vispār." ;
     eliozo:topicID "CombinatorialAlgorithms" ;
-    eliozo:topicName "Pielietojumi datorzinātnē" ;
+    eliozo:topicName "Kombinatoriski algoritmi" ;
     eliozo:topicNumber "2.5.0.0.0" ;
     skos:broader eliozo:Combinatorics ;
     skos:narrower eliozo:AlgorithmLooping,
@@ -7349,14 +7265,14 @@ eliozo:EquationSolvingWithRealAnalysis a eliozo:Topic ;
 
 eliozo:FunctionalEquationsInDiscreteSets a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 1 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "" ;
     eliozo:topicID "FunctionalEquationsInDiscreteSets" ;
     eliozo:topicName "Funkcionālvienādojumi veseliem un racionāliem skaitļiem" ;
-    eliozo:topicNumber "1.10.1.0.0" ;
+    eliozo:topicNumber "1.9.1.0.0" ;
     skos:broader eliozo:FunctionalEquations ;
     skos:narrower eliozo:CreatingEquationSystems,
         eliozo:FunctionalEquationsReduction,
@@ -7461,12 +7377,12 @@ eliozo:PathsAndCyclesInGraphs a eliozo:Topic ;
     eliozo:sorter_L3 4 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Ceļš kā savstarpēji savienojamu šķautņu virkne. Vienkāršs ceļš - tāds, kurā nekādām divām šķautnēm nav kopīgu virsotņu (izņemot tās virsotnes, kur viena šķautne virknē savienota ar nākamo šķautni). " ;
     eliozo:topicID "PathsAndCyclesInGraphs" ;
-    eliozo:topicName "Virknes un cikli grafos" ;
+    eliozo:topicName "Ceļi un cikli grafos" ;
     eliozo:topicNumber "2.2.4.0.0" ;
     skos:broader eliozo:GraphProblems ;
-    skos:narrower eliozo:BipartiteGraphs,
+    skos:narrower eliozo:BipartiteGraphsCycles,
         eliozo:EulerCircuits,
         eliozo:GraphAugmentationWithRestrictions,
         eliozo:GraphDecompositionInCircuits,
@@ -7546,6 +7462,25 @@ eliozo:AdvancedCounting a eliozo:Topic ;
         eliozo:TelescopicSums ;
     skos:prefLabel "AdvancedCounting" .
 
+eliozo:AlgebraicTransformations a eliozo:Topic ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 1 ;
+    eliozo:sorter_L3 0 ;
+    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Uzdevumi par skaitļiem, to darbībām un skaitliskām nevienādībām. Teksta uzdevumu pārrakstīšana, izveidojot algebrisku modeli; manipulācijas ar algebriskām izteiksmēm." ;
+    eliozo:topicID "AlgebraicTransformations" ;
+    eliozo:topicName "Pārveidojumi un teksta uzdevumi" ;
+    eliozo:topicNumber "1.1.0.0.0" ;
+    skos:broader eliozo:Algebra ;
+    skos:narrower eliozo:ComplexNumbers,
+        eliozo:ConjugateExpressions,
+        eliozo:DecomposingExpressionAsSum,
+        eliozo:Identities,
+        eliozo:IntegerExpressionsAndOperations,
+        eliozo:SymmetricAlgebraicExpressions ;
+    skos:prefLabel "AlgebraicTransformations" .
+
 eliozo:AnglesAndTriangleSimilarity a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
     eliozo:sorter_L2 1 ;
@@ -7598,7 +7533,7 @@ eliozo:CombinatorialStructures a eliozo:Topic ;
     skos:narrower eliozo:ChessPositions,
         eliozo:LatinSquares,
         eliozo:PascalTriangle,
-        eliozo:RegularLattices,
+        eliozo:SpecialLattices,
         eliozo:SystemsOfSubsequences,
         eliozo:SystemsOfSubsets ;
     skos:prefLabel "CombinatorialStructures" .
@@ -7609,7 +7544,7 @@ eliozo:Combinatorics a eliozo:Topic ;
     eliozo:sorter_L3 0 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Visi uzdevumi par kombinatoriku" ;
     eliozo:topicID "Combinatorics" ;
     eliozo:topicName "Kombinatorika" ;
     eliozo:topicNumber "2.0.0.0.0" ;
@@ -7698,25 +7633,6 @@ eliozo:GeometricInequalities a eliozo:Topic ;
         eliozo:TriangleInequality ;
     skos:prefLabel "GeometricInequalities" .
 
-eliozo:GraphsWithColoredEdges a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 2 ;
-    eliozo:sorter_L3 9 ;
-    eliozo:sorter_L4 1 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "GraphsWithColoredEdges" ;
-    eliozo:topicName "Grafi ar krāsainām šķautnēm" ;
-    eliozo:topicNumber "2.2.9.1.0" ;
-    skos:broader eliozo:GraphColoringAndLabeling ;
-    skos:narrower eliozo:CriticalRamseyGraphs,
-        eliozo:RamseyNumbers,
-        eliozo:RamseyNumbersGeneralization,
-        eliozo:RamseyProblemsIncompleteGraphs,
-        eliozo:RamseyTheorem,
-        eliozo:SaturatedGraphs ;
-    skos:prefLabel "GraphsWithColoredEdges" .
-
 eliozo:HomothetyAndDilation a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
     eliozo:sorter_L2 13 ;
@@ -7780,7 +7696,7 @@ eliozo:ProjectiveTransformations a eliozo:Topic ;
     eliozo:sorter_L3 8 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
+    eliozo:topicDescription "Centrālās projekcijas" ;
     eliozo:topicID "ProjectiveTransformations" ;
     eliozo:topicName "Projektīvās transformācijas" ;
     eliozo:topicNumber "3.13.8.0.0" ;
@@ -7793,74 +7709,16 @@ eliozo:ProjectiveTransformations a eliozo:Topic ;
         eliozo:RulerOnlyImpossibleConstructions ;
     skos:prefLabel "ProjectiveTransformations" .
 
-eliozo:ProvingInequalities a eliozo:Topic ;
-    eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 3 ;
-    eliozo:sorter_L3 0 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "Uzdevumi, kuros jāpierāda vai jāapgāž, ka vienmēr ir pareiza kāda nevienādība. Kā arī uzdevumi, kuros jārisina nevienādības kādam mainīgajam." ;
-    eliozo:topicID "ProvingInequalities" ;
-    eliozo:topicName "Nevienādības" ;
-    eliozo:topicNumber "1.3.0.0.0" ;
-    skos:broader eliozo:Algebra ;
-    skos:narrower eliozo:InequalitiesEquivalentTransformations,
-        eliozo:InequalitiesInterpretations,
-        eliozo:InequalityProvingStronger,
-        eliozo:InequalitySolvingWithRealAnalysis,
-        eliozo:LinearOptimization,
-        eliozo:ProvingInequalitiesWithOtherInequalities ;
-    skos:prefLabel "ProvingInequalities" .
-
-eliozo:RealAnalysis a eliozo:Topic ;
-    eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 8 ;
-    eliozo:sorter_L3 0 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "Nepārtrauktas funkcijas, reālās analīzes metodes, robežas, atvasinājumi, integrāļi" ;
-    eliozo:topicID "RealAnalysis" ;
-    eliozo:topicName "Reālā analīze" ;
-    eliozo:topicNumber "1.8.0.0.0" ;
-    skos:broader eliozo:Algebra ;
-    skos:narrower eliozo:AdvancedCounting,
-        eliozo:ComputingLimits,
-        eliozo:ExtremeProblemsForRealFunctions,
-        eliozo:NumberSets,
-        eliozo:StudyingContinuousFunctions,
-        eliozo:UsingIntegrals ;
-    skos:prefLabel "RealAnalysis" .
-
-eliozo:AlgebraicTransformations a eliozo:Topic ;
-    eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 1 ;
-    eliozo:sorter_L3 0 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "Uzdevumi par skaitļiem, to darbībām un skaitliskām nevienādībām. Teksta uzdevumu pārrakstīšana, izveidojot algebrisku modeli; manipulācijas ar algebriskām izteiksmēm." ;
-    eliozo:topicID "AlgebraicTransformations" ;
-    eliozo:topicName "Pārveidojumi un teksta uzdevumi" ;
-    eliozo:topicNumber "1.1.0.0.0" ;
-    skos:broader eliozo:Algebra ;
-    skos:narrower eliozo:ComplexNumbers,
-        eliozo:ConjugateExpressions,
-        eliozo:DecomposingExpressionAsSum,
-        eliozo:Identities,
-        eliozo:IntegerExpressionsAndOperations,
-        eliozo:SpecialPropertiesOfNumericCoefficients,
-        eliozo:SymmetricAlgebraicExpressions ;
-    skos:prefLabel "AlgebraicTransformations" .
-
 eliozo:FunctionalEquationsForRealFunctions a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 10 ;
+    eliozo:sorter_L2 9 ;
     eliozo:sorter_L3 2 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
     eliozo:topicDescription "Funkcionālvienādojumi reālo skaitļu kopā" ;
     eliozo:topicID "FunctionalEquationsForRealFunctions" ;
     eliozo:topicName "Reālu funkciju funkcionālvienādojumi" ;
-    eliozo:topicNumber "1.10.2.0.0" ;
+    eliozo:topicNumber "1.9.2.0.0" ;
     skos:broader eliozo:FunctionalEquations ;
     skos:narrower eliozo:AdditiveFunctions,
         eliozo:AuxiliaryFunctionMethod,
@@ -7931,6 +7789,46 @@ eliozo:PlaneConstructions a eliozo:Topic ;
         eliozo:ConstructionsTriangulate ;
     skos:prefLabel "PlaneConstructions" .
 
+eliozo:ProvingInequalities a eliozo:Topic ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 3 ;
+    eliozo:sorter_L3 0 ;
+    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Uzdevumi, kuros jāpierāda vai jāapgāž, ka vienmēr ir pareiza kāda nevienādība. Kā arī uzdevumi, kuros jārisina nevienādības kādam mainīgajam." ;
+    eliozo:topicID "ProvingInequalities" ;
+    eliozo:topicName "Nevienādības" ;
+    eliozo:topicNumber "1.3.0.0.0" ;
+    skos:broader eliozo:Algebra ;
+    skos:narrower eliozo:InequalitiesEquivalentTransformations,
+        eliozo:InequalitiesInterpretations,
+        eliozo:InequalityProvingStronger,
+        eliozo:InequalitySolvingWithRealAnalysis,
+        eliozo:LinearOptimization,
+        eliozo:ModulusFunctionProperties,
+        eliozo:ProvingInequalitiesWithOtherInequalities ;
+    skos:prefLabel "ProvingInequalities" .
+
+eliozo:RealAnalysis a eliozo:Topic ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 8 ;
+    eliozo:sorter_L3 0 ;
+    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Nepārtrauktas funkcijas, reālās analīzes metodes, robežas, atvasinājumi, integrāļi" ;
+    eliozo:topicID "RealAnalysis" ;
+    eliozo:topicName "Reālā analīze" ;
+    eliozo:topicNumber "1.8.0.0.0" ;
+    skos:broader eliozo:Algebra ;
+    skos:narrower eliozo:AdvancedCounting,
+        eliozo:AnalysisMethods,
+        eliozo:ComputingLimits,
+        eliozo:ExtremeProblemsForRealFunctions,
+        eliozo:NumberSets,
+        eliozo:StudyingContinuousFunctions,
+        eliozo:UsingIntegrals ;
+    skos:prefLabel "RealAnalysis" .
+
 eliozo:TriangleAugmenting a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
     eliozo:sorter_L2 3 ;
@@ -7963,13 +7861,34 @@ eliozo:Vectors a eliozo:Topic ;
     eliozo:topicNumber "3.12.0.0.0" ;
     skos:broader eliozo:Geometry ;
     skos:narrower eliozo:AuxiliaryProjections,
-        eliozo:Inequalities,
         eliozo:PseudoScalarProduct,
         eliozo:ScalarProduct,
+        eliozo:VectorInequalities,
         eliozo:VectorSums,
         eliozo:VectorsAsPolygonSides,
         eliozo:VectorsMeanValueMethod ;
     skos:prefLabel "Vectors" .
+
+eliozo:Algebra a eliozo:Topic ;
+    eliozo:sorter_L1 1 ;
+    eliozo:sorter_L2 0 ;
+    eliozo:sorter_L3 0 ;
+    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Visi uzdevumi par algebru" ;
+    eliozo:topicID "Algebra" ;
+    eliozo:topicName "Algebra" ;
+    eliozo:topicNumber "1.0.0.0.0" ;
+    skos:narrower eliozo:AlgebraProblemsWithExtremes,
+        eliozo:AlgebraicEquations,
+        eliozo:AlgebraicTechniques,
+        eliozo:AlgebraicTransformations,
+        eliozo:EquationSystems,
+        eliozo:FunctionalEquations,
+        eliozo:NumericSequences,
+        eliozo:ProvingInequalities,
+        eliozo:RealAnalysis ;
+    skos:prefLabel "Algebra" .
 
 eliozo:AlgebraProblemsWithExtremes a eliozo:Topic ;
     eliozo:sorter_L1 1 ;
@@ -8005,10 +7924,10 @@ eliozo:CountingObjects a eliozo:Topic ;
     skos:broader eliozo:Combinatorics ;
     skos:narrower eliozo:CountingFromEncoding,
         eliozo:CountingSetOperations,
+        eliozo:CountingSetSizes,
         eliozo:CountingUsingSymmetry,
         eliozo:InterpretationMethodInCounting,
         eliozo:MethodOfRecurrentRelations,
-        eliozo:RuleOfProduct,
         eliozo:SetTraversalOrganization,
         eliozo:StandardCombinatorialNumbers ;
     skos:prefLabel "CountingObjects" .
@@ -8061,7 +7980,7 @@ eliozo:NumTheory a eliozo:Topic ;
     eliozo:sorter_L3 0 ;
     eliozo:sorter_L4 0 ;
     eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "Skaitļu teorija" ;
+    eliozo:topicDescription "Visi uzdevumi par skaitļu teoriju" ;
     eliozo:topicID "NumTheory" ;
     eliozo:topicName "Skaitļu teorija" ;
     eliozo:topicNumber "4.0.0.0.0" ;
@@ -8117,50 +8036,6 @@ eliozo:SpecialQuadrilaterals a eliozo:Topic ;
         eliozo:Square,
         eliozo:Trapezoids ;
     skos:prefLabel "SpecialQuadrilaterals" .
-
-eliozo:Algebra a eliozo:Topic ;
-    eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 0 ;
-    eliozo:sorter_L3 0 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "Visi uzdevumi par algebru" ;
-    eliozo:topicID "Algebra" ;
-    eliozo:topicName "Algebra" ;
-    eliozo:topicNumber "1.0.0.0.0" ;
-    skos:narrower eliozo:AlgebraProblemsWithExtremes,
-        eliozo:AlgebraicEquations,
-        eliozo:AlgebraicTechniques,
-        eliozo:AlgebraicTransformations,
-        eliozo:AnalysisMethods,
-        eliozo:EquationSystems,
-        eliozo:FunctionalEquations,
-        eliozo:NumericSequences,
-        eliozo:ProvingInequalities,
-        eliozo:RealAnalysis ;
-    skos:prefLabel "Algebra" .
-
-eliozo:AnalysisMethods a eliozo:Topic ;
-    eliozo:sorter_L1 1 ;
-    eliozo:sorter_L2 9 ;
-    eliozo:sorter_L3 0 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "" ;
-    eliozo:topicID "AnalysisMethods" ;
-    eliozo:topicName "Matemātiskās analīzes metodes" ;
-    eliozo:topicNumber "1.9.0.0.0" ;
-    skos:broader eliozo:Algebra ;
-    skos:narrower eliozo:InequalitiesProbabilisticProofs,
-        eliozo:OtherAnalysisMethods,
-        eliozo:ParallelAndCentralProjections,
-        eliozo:PhysicalInterpretations,
-        eliozo:UsingCommensurability,
-        eliozo:UsingContinuity,
-        eliozo:UsingGeometryInAlgebra,
-        eliozo:UsingMonotonicityAndBoundedness,
-        eliozo:UsingSmallPerturbations ;
-    skos:prefLabel "AnalysisMethods" .
 
 eliozo:GeometricTransformations a eliozo:Topic ;
     eliozo:sorter_L1 3 ;
