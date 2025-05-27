@@ -166,6 +166,7 @@ eliozo:LV.NOL.2006.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2006" ;
+    eliozo:image_file "LV.NOL.2006.11.2.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -384,6 +385,7 @@ eliozo:LV.NOL.2006.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.NOL.2006" ;
+    eliozo:image_file "LV.NOL.2006.12.5.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -603,6 +605,7 @@ eliozo:LV.NOL.2006.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2006" ;
+    eliozo:image_file "LV.NOL.2006.6.3.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -774,7 +777,9 @@ eliozo:LV.NOL.2006.7.4 a eliozo:Problem ;
     eliozo:suffix "LV.NOL.2006.7" ;
     eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:IntegerFactorization,
-        eliozo:NumTheoryInequalityLargeIntervals .
+        eliozo:NumTheory,
+        eliozo:NumTheoryInequalityLargeIntervals,
+        eliozo:NumTheoryInequalityMethod .
 
 eliozo:LV.NOL.2006.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -825,12 +830,16 @@ operāciju palīdzību. Atrast $A$.</p>"""@lv ;
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2006.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:CompletingSquare .
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:CompletingSquare,
+        eliozo:Identities .
 
 eliozo:LV.NOL.2006.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2006" ;
+    eliozo:image_file "LV.NOL.2006.8.2.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -880,12 +889,15 @@ ar $4$?</p>"""@lv ;
     eliozo:suffix "LV.NOL.2006.8" ;
     eliozo:suggestedGrade 8 ;
     eliozo:topic eliozo:CongruenceClasses,
+        eliozo:IntegerCongruence,
+        eliozo:NumTheory,
         eliozo:PeriodicRemainders .
 
 eliozo:LV.NOL.2006.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2006" ;
+    eliozo:image_file "LV.NOL.2006.8.4.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;

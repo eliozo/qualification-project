@@ -63,10 +63,15 @@ if __name__ == '__main__':
     # results = [('https://github.com/kapsitis/math/tree/master/src/site/problembase/imo-shl-2022', 'content', 'IMO-SHL-2022')]
     # results = [('https://github.com/maramanaa/nms-uzdevumi/tree/main/lv-amo-2011', 'content', 'LV-AMO-2011')]
 
+    topic_lineage_dict = get_skos_lineage_dict("resources/skos_topic.ttl")
+    subdomain_lineage_dict = get_skos_lineage_dict("resources/skos_subdomain.ttl")
+    method_lineage_dict = get_skos_lineage_dict("resources/skos_method.ttl")
+
     for result in results:
         # print("****{}, {}, {}".format(result[0], result[1], result[2]))
         getMarkdownFile(result[0].strip(), result[1].strip(), result[2].strip())
         md_path = 'resources/' + result[2] + '-' + result[1].strip() + '.md'
         ttl_path = 'resources/' + result[2] + '-' + result[1].strip() + '.ttl'
-        md_to_rdf(md_path, ttl_path)
+
+        md_to_rdf(md_path, ttl_path, topic_lineage_dict, subdomain_lineage_dict, method_lineage_dict)
 

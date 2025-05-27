@@ -240,6 +240,7 @@ eliozo:LV.NOL.2004.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2004" ;
+    eliozo:image_file "LV.NOL.2004.11.5.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -300,6 +301,7 @@ eliozo:LV.NOL.2004.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2004" ;
+    eliozo:image_file "LV.NOL.2004.12.2.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -469,6 +471,7 @@ eliozo:LV.NOL.2004.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2004" ;
+    eliozo:image_file "LV.NOL.2004.5.3.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -694,7 +697,10 @@ lai katru divu atlikušo summa būtu salikts skaitlis?</p>"""@lv ;
     eliozo:suffix "LV.NOL.2004.7" ;
     eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:BipartiteGraphs,
+        eliozo:IntegerFactorization,
         eliozo:InvariantParity,
+        eliozo:NumTheory,
+        eliozo:Primes,
         eliozo:PrimesDistribution .
 
 eliozo:LV.NOL.2004.7.2 a eliozo:Problem ;
@@ -825,7 +831,10 @@ skaitļu reizinājums vienāds ar otras grupas visu skaitļu reizinājumu?</p>""
     eliozo:suffix "LV.NOL.2004.8" ;
     eliozo:suggestedGrade 8 ;
     eliozo:topic eliozo:CanonicalFactorization,
-        eliozo:EuclideanLemma .
+        eliozo:EuclideanLemma,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
+        eliozo:Primes .
 
 eliozo:LV.NOL.2004.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -850,8 +859,14 @@ decimālais pieraksts sākas ar ciparu $1$?</p>"""@lv ;
     eliozo:seeAlso "LV.NOL.2005.8.1" ;
     eliozo:suffix "LV.NOL.2004.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:DecimalNotationDigits,
-        eliozo:DefiningRecurrentSequences .
+    eliozo:topic eliozo:Algebra,
+        eliozo:DecimalNotation,
+        eliozo:DecimalNotationDigits,
+        eliozo:DefiningRecurrentSequences,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems,
+        eliozo:NumericSequences,
+        eliozo:RecurrentSequences .
 
 eliozo:LV.NOL.2004.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -919,6 +934,7 @@ eliozo:LV.NOL.2004.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2004" ;
+    eliozo:image_file "LV.NOL.2004.8.5.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;

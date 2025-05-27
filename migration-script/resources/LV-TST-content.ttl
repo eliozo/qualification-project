@@ -1774,7 +1774,10 @@ Aprēķināt $S(S(S(2012^{2012})))$.</p>"""@lv ;
     eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.TST.2012.12" ;
     eliozo:suggestedGrade 12 ;
-    eliozo:topic eliozo:DivisibilityRulesForRemainders,
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesForRemainders,
+        eliozo:NumTheory,
         eliozo:NumTheoryInequalityMethod .
 
 eliozo:LV.TST.2012.12.2 a eliozo:Problem ;

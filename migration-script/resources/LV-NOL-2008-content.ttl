@@ -21,8 +21,15 @@ kā $17$ pēc kārtas ņemtu naturālu skaitļu summu.</p>"""@lv ;
     eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.NOL.2008.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:GcdAndLcmProperties,
-        eliozo:SeriesArithmeticSum .
+    eliozo:topic eliozo:Algebra,
+        eliozo:ArithmeticAndGeometricSeries,
+        eliozo:Divisibility,
+        eliozo:GcdAndLcm,
+        eliozo:GcdAndLcmProperties,
+        eliozo:NumTheory,
+        eliozo:NumericSequences,
+        eliozo:SeriesArithmeticSum,
+        eliozo:SeriesMembersSumsClosedFormulas .
 
 eliozo:LV.NOL.2008.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -47,6 +54,7 @@ eliozo:LV.NOL.2008.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2008" ;
+    eliozo:image_file "LV.NOL.2008.10.3.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -94,6 +102,7 @@ eliozo:LV.NOL.2008.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2008" ;
+    eliozo:image_file "LV.NOL.2008.10.5.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -143,6 +152,7 @@ eliozo:LV.NOL.2008.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2008" ;
+    eliozo:image_file "LV.NOL.2008.11.2.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -477,6 +487,7 @@ eliozo:LV.NOL.2008.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2008" ;
+    eliozo:image_file "LV.NOL.2008.5.4.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -505,6 +516,7 @@ eliozo:LV.NOL.2008.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2008" ;
+    eliozo:image_file "LV.NOL.2008.5.5.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -556,6 +568,7 @@ eliozo:LV.NOL.2008.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2008" ;
+    eliozo:image_file "LV.NOL.2008.6.2.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -683,8 +696,15 @@ $x=a^{3},\\ y=b^{4},\\ a$ un $b$ - naturāli skaitļi?</p>"""@lv ;
         "LV.NOL.2009.7.1" ;
     eliozo:suffix "LV.NOL.2008.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:BezoutIdentity,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:BezoutIdentity,
         eliozo:CanonicalFactorization,
+        eliozo:Divisibility,
+        eliozo:GcdAndLcm,
+        eliozo:Identities,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
         eliozo:StandardIdentities .
 
 eliozo:LV.NOL.2008.7.2 a eliozo:Problem ;
@@ -744,8 +764,13 @@ vidējais svars ir $71~\\mathrm{kg}$. Pierādīt, ka cīkstoņu skaits dalās ar
     eliozo:suffix "LV.NOL.2008.7" ;
     eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:BaricenterCoordinates,
+        eliozo:Geometry,
+        eliozo:GrahamPollakTheorem,
         eliozo:IntegerFactorization,
-        eliozo:NumTheoryInequalityMethod .
+        eliozo:MaxMinProblems,
+        eliozo:NumTheory,
+        eliozo:NumTheoryInequalityMethod,
+        eliozo:PigeonholePrincipleInGeometry .
 
 eliozo:LV.NOL.2008.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -819,7 +844,10 @@ laimīgi. Pierādīt, ka viens no tiem dalās ar $10$.</p>"""@lv ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2008.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:InvariantParity,
+    eliozo:topic eliozo:Algebra,
+        eliozo:ArithmeticAndGeometricSeries,
+        eliozo:InvariantParity,
+        eliozo:NumericSequences,
         eliozo:SequenceGaps .
 
 eliozo:LV.NOL.2008.8.2 a eliozo:Problem ;

@@ -28,6 +28,7 @@ eliozo:LV.AMO.2008.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2008" ;
+    eliozo:image_file "LV.AMO.2008.10.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -278,6 +279,7 @@ eliozo:LV.AMO.2008.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2008" ;
+    eliozo:image_file "LV.AMO.2008.12.1.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -435,6 +437,7 @@ eliozo:LV.AMO.2008.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2008" ;
+    eliozo:image_file "LV.AMO.2008.5.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -716,7 +719,13 @@ būt, ka ne $x$, ne $y$ nesatur savā pierakstā nevienu ciparu $0$?</p>"""@lv ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2008.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:DivisibilityRulesLastDigits,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesLastDigits,
+        eliozo:Identities,
+        eliozo:NumTheory,
         eliozo:StandardIdentities .
 
 eliozo:LV.AMO.2008.7.3 a eliozo:Problem ;
@@ -752,6 +761,7 @@ eliozo:LV.AMO.2008.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2008" ;
+    eliozo:image_file "LV.AMO.2008.7.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -865,14 +875,19 @@ $a_{1}+a_{2}+\\ldots+a_{k}=n \\cdot\\left(\\frac{1}{a_{1}}+\\frac{1}{a_{2}}+\\ld
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2008.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:DivisorNumberAndSum,
+    eliozo:topic eliozo:AdvancedCounting,
+        eliozo:Algebra,
+        eliozo:DivisorNumberAndSum,
         eliozo:IntegerFactorization,
+        eliozo:NumTheory,
+        eliozo:RealAnalysis,
         eliozo:TelescopicSums .
 
 eliozo:LV.AMO.2008.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2008" ;
+    eliozo:image_file "LV.AMO.2008.8.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -953,6 +968,7 @@ eliozo:LV.AMO.2008.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2008" ;
+    eliozo:image_file "LV.AMO.2008.9.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;

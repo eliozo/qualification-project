@@ -19,8 +19,11 @@ kurš satur tos vienādā skaitā un dalās ar $5$ un $9$.</p>"""@lv ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "EE.PK.1994.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:DivisibilityRulesFor3And9,
-        eliozo:DivisibilityRulesLastDigits .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesFor3And9,
+        eliozo:DivisibilityRulesLastDigits,
+        eliozo:NumTheory .
 
 eliozo:EE.PK.1994.8.2 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1471,8 +1474,15 @@ ciparu 1, arī rodas kāda vesela skaitļa kvadrāts.</p>"""@lv ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "EE.PK.2010.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:CountingObjects,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:DecimalNotation,
         eliozo:DigitsInOperationResult,
+        eliozo:Identities,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems,
         eliozo:NumericAlgorithms,
         eliozo:StandardIdentities .
 
@@ -1573,7 +1583,8 @@ skaitli $m$, iegūstot dalījumu un atlikumu.</p>
     eliozo:suffix "EE.PK.2011.10" ;
     eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:CongruenceClasses,
-        eliozo:IntegerCongruence .
+        eliozo:IntegerCongruence,
+        eliozo:NumTheory .
 
 eliozo:EE.PK.2011.7.1 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1678,8 +1689,13 @@ kuri apmierina vienādojumu $(a + b)(b + c)(c + a) = 123456789$?</p>"""@lv ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "EE.PK.2012.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:DivisibilityRulesFor2And4,
-        eliozo:ModularParity .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesFor2And4,
+        eliozo:IntegerCongruence,
+        eliozo:ModularArithmetic,
+        eliozo:ModularParity,
+        eliozo:NumTheory .
 
 eliozo:EE.PK.2012.7.3 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -1745,7 +1761,8 @@ eliozo:EE.PK.2013.10.3 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "NT" ;
     eliozo:event "EE.PK.2013" ;
-    eliozo:method eliozo:PigeonholePrincipleBasic ;
+    eliozo:method eliozo:MeanValuePrinciple,
+        eliozo:PigeonholePrincipleBasic ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1765,7 +1782,9 @@ dalās ar $10$.</p>"""@lv ;
     eliozo:suffix "EE.PK.2013.10" ;
     eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:ExhaustionMethod,
+        eliozo:IntegerCongruence,
         eliozo:ModularArithmetic,
+        eliozo:NumTheory,
         eliozo:NumTheoryPigeonhole .
 
 eliozo:EE.PK.2013.8.1 a eliozo:Problem ;
@@ -1825,13 +1844,16 @@ Atrast visas iespējamās $n$ vērtības.</p>"""@lv ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "EE.PK.2014.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:ExhaustionMethod,
+    eliozo:topic eliozo:Divisibility,
+        eliozo:ExhaustionMethod,
         eliozo:GcdAndLcm,
-        eliozo:GcdAndLcmProperties .
+        eliozo:GcdAndLcmProperties,
+        eliozo:NumTheory .
 
 eliozo:EE.PK.2014.7.1 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:event "EE.PK.2014" ;
+    eliozo:image_file "EE.PK.2014.7.1.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1928,9 +1950,15 @@ eliozo:EE.PK.2015.10.3 a eliozo:Problem ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "EE.PK.2015.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:ExhaustionMethod,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:ExhaustionMethod,
+        eliozo:Identities,
+        eliozo:IntegerCongruence,
         eliozo:LinearSystemsTransforms,
+        eliozo:ModularArithmetic,
         eliozo:ModularParity,
+        eliozo:NumTheory,
         eliozo:StandardIdentities .
 
 eliozo:EE.PK.2015.10.6 a eliozo:Problem ;
@@ -1951,7 +1979,8 @@ veselo skaitļu no $1$ līdz $n$ ciparu summa ir pāru skaitlis?</p>"""@lv ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "EE.PK.2015.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:CountingObjects,
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:CountingObjects,
         eliozo:NumTheoryMathInduction .
 
 eliozo:EE.PK.2015.8.1 a eliozo:Problem ;
@@ -2006,7 +2035,13 @@ būtu vienāda ar to mazāko kopīgo dalāmo, ja </p>
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "EE.PK.2016.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:GcdAndLcmProperties,
+    eliozo:topic eliozo:BuildingExamples,
+        eliozo:Divisibility,
+        eliozo:ExamplesInNumberTheory,
+        eliozo:GcdAndLcm,
+        eliozo:GcdAndLcmProperties,
+        eliozo:NumTheory,
+        eliozo:NumTheoryExpr,
         eliozo:NumTheoryExprForConcepts .
 
 eliozo:EE.PK.2016.10.4 a eliozo:Problem ;
@@ -2030,8 +2065,14 @@ atrisinājums, kuram $x$, $y$, $z$ un $w$ ir dažādi veseli skaitļi?</p>"""@lv
     eliozo:suffix "EE.PK.2016.10" ;
     eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:AddingOrMultiplyingInequalities,
+        eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
         eliozo:CompletingSquare,
-        eliozo:NumTheoryInequalityMethod .
+        eliozo:Identities,
+        eliozo:NumTheory,
+        eliozo:NumTheoryInequalityMethod,
+        eliozo:ProvingInequalities,
+        eliozo:ProvingInequalitiesWithOtherInequalities .
 
 eliozo:EE.PK.2016.7.3 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -2121,8 +2162,14 @@ $324^{x+y} = 2^{x−y} \\cdot 3^{x−3} \\cdot 4^{y−4}$.</p>"""@lv ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "EE.PK.2017.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:CanonicalFactorization,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:CanonicalFactorization,
+        eliozo:FactorizationAndProperties,
+        eliozo:Identities,
+        eliozo:IntegerFactorization,
         eliozo:LinearSystemsTransforms,
+        eliozo:NumTheory,
         eliozo:StandardIdentities,
         eliozo:SystemOfEqualExponents .
 
@@ -2146,8 +2193,13 @@ $$\\frac{1}{a} - \\frac{1}{b} =\\frac{1}{b} - \\frac{1}{c} =\\frac{1}{c} - \\fra
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "EE.PK.2017.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:CountingObjects,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:ArithmeticAndGeometricSeries,
+        eliozo:Combinatorics,
+        eliozo:CountingObjects,
         eliozo:CountingUsingSymmetry,
+        eliozo:NumericSequences,
         eliozo:SeriesMembersSumsClosedFormulas,
         eliozo:SymmetricAlgebraicExpressions .
 
@@ -2249,9 +2301,14 @@ Atrast visas iespējamās vērtības Mari iedomātajam skaitlim.</p>"""@lv ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "EE.PK.2018.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:ExhaustionMethod,
+    eliozo:topic eliozo:BuildingExamples,
+        eliozo:ExamplesInNumberTheory,
+        eliozo:ExhaustionMethod,
+        eliozo:NotationManipulate,
         eliozo:NotationPolynomial,
-        eliozo:NumTheoryExpr .
+        eliozo:NumTheory,
+        eliozo:NumTheoryExpr,
+        eliozo:NumeralSystems .
 
 eliozo:EE.PK.2019.10.3 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -2272,8 +2329,14 @@ kas apmierina vienādību $22a + 15b = 2019$?</p>"""@lv ;
     eliozo:suffix "EE.PK.2019.10" ;
     eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:ArithmeticSeriesGaps,
+        eliozo:BezoutIdentity,
+        eliozo:Combinatorics,
         eliozo:CountingObjects,
+        eliozo:Divisibility,
+        eliozo:GcdAndLcm,
+        eliozo:IntegerCongruence,
         eliozo:ModularArithmetic,
+        eliozo:NumTheory,
         eliozo:NumTheoryExtremeElement .
 
 eliozo:EE.PK.2019.7.1 a eliozo:Problem ;

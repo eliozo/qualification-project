@@ -91,8 +91,12 @@ uzrakstīja vienu aiz otra. Cik cipari uzrakstīti?</p>"""@lv ;
     eliozo:sameAs "LV.NOL.2012.10.4" ;
     eliozo:suffix "LV.NOL.2013.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:CountingObjects,
-        eliozo:DigitsInOperationResult .
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:DecimalNotation,
+        eliozo:DigitsInOperationResult,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems .
 
 eliozo:LV.NOL.2013.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -304,7 +308,9 @@ eliozo:LV.NOL.2013.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2013" ;
-    eliozo:method eliozo:ContinuousPigeonholePrinciple ;
+    eliozo:image_file "LV.NOL.2013.12.4.png" ;
+    eliozo:method eliozo:ContinuousPigeonholePrinciple,
+        eliozo:MeanValuePrinciple ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -585,6 +591,7 @@ eliozo:LV.NOL.2013.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2013" ;
+    eliozo:image_file "LV.NOL.2013.6.5.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -635,6 +642,7 @@ skaitļu summa ir naturāla skaitļa kvadrāts. Ar ko pārī apvienots skaitlis 
     eliozo:suffix "LV.NOL.2013.7" ;
     eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:BipartiteGraphs,
+        eliozo:NumTheory,
         eliozo:NumTheoryInequalityMethod .
 
 eliozo:LV.NOL.2013.7.2 a eliozo:Problem ;
@@ -659,8 +667,11 @@ skaitlis $x(x+1)(x+2)$ dalās ar $111$?</p>"""@lv ;
     eliozo:seeAlso "LV.NOL.2014.7.3" ;
     eliozo:suffix "LV.NOL.2013.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:DivisibilityRulesOther,
-        eliozo:MultiplesInInterval .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesOther,
+        eliozo:MultiplesInInterval,
+        eliozo:NumTheory .
 
 eliozo:LV.NOL.2013.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -710,6 +721,7 @@ eliozo:LV.NOL.2013.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2013" ;
+    eliozo:image_file "LV.NOL.2013.7.5.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -758,7 +770,10 @@ reizinātājiem ir lielāks nekā $1$.</p>"""@lv ;
     eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.NOL.2013.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:StandardIdentities .
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:Identities,
+        eliozo:StandardIdentities .
 
 eliozo:LV.NOL.2013.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -806,7 +821,10 @@ eliozo:LV.NOL.2013.8.3 a eliozo:Problem ;
     eliozo:questionType "FindCount" ;
     eliozo:suffix "LV.NOL.2013.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:CountingSetDifference,
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:CountingSetDifference,
+        eliozo:CountingSetSizes,
         eliozo:RuleOfProduct .
 
 eliozo:LV.NOL.2013.8.4 a eliozo:Problem ;
@@ -833,7 +851,10 @@ skaitļu reizinājums būtu viens un tas pats.</p>"""@lv ;
     eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.NOL.2013.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:StandardIdentities,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:Identities,
+        eliozo:StandardIdentities,
         eliozo:TreeTraversalBacktracking .
 
 eliozo:LV.NOL.2013.8.5 a eliozo:Problem ;
@@ -960,7 +981,8 @@ eliozo:LV.NOL.2013.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2013" ;
-    eliozo:method eliozo:PigeonholePrincipleBasic ;
+    eliozo:method eliozo:MeanValuePrinciple,
+        eliozo:PigeonholePrincipleBasic ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;

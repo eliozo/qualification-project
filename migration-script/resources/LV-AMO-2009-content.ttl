@@ -5,6 +5,7 @@ eliozo:LV.AMO.2009.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2009" ;
+    eliozo:image_file "LV.AMO.2009.10.1.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -479,6 +480,7 @@ eliozo:LV.AMO.2009.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2009" ;
+    eliozo:image_file "LV.AMO.2009.5.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -663,6 +665,7 @@ eliozo:LV.AMO.2009.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2009" ;
+    eliozo:image_file "LV.AMO.2009.6.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -775,8 +778,16 @@ visas ir dažādas.</p>
     eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2009.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:ExhaustionMethod,
+    eliozo:topic eliozo:Algebra,
+        eliozo:ArithmeticAndGeometricSeries,
+        eliozo:ExhaustionMethod,
+        eliozo:IntegerCongruence,
+        eliozo:IntegerFactorization,
+        eliozo:ModularArithmetic,
         eliozo:ModularParity,
+        eliozo:NumTheory,
+        eliozo:NumericSequences,
+        eliozo:Primes,
         eliozo:PrimesDistribution,
         eliozo:SeriesMembersSumsClosedFormulas .
 
@@ -945,7 +956,9 @@ Cipariņam un cik - viņa kolēgim? (Visus vecumus izsaka veselos gados.)</p>"""
     eliozo:suffix "LV.AMO.2009.8" ;
     eliozo:suggestedGrade 8 ;
     eliozo:topic eliozo:CanonicalFactorization,
-        eliozo:ExhaustionMethod .
+        eliozo:ExhaustionMethod,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2009.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -983,6 +996,7 @@ eliozo:LV.AMO.2009.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2009" ;
+    eliozo:image_file "LV.AMO.2009.9.1.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1091,6 +1105,7 @@ eliozo:LV.AMO.2009.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2009" ;
+    eliozo:image_file "LV.AMO.2009.9.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;

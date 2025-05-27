@@ -94,7 +94,10 @@ kvadrāts?</p>"""@lv ;
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2019.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:StandardIdentities .
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:Identities,
+        eliozo:StandardIdentities .
 
 eliozo:LV.AMO.2019.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -180,8 +183,12 @@ otrais - vienmēr var uzvarēt?</p>"""@lv ;
     eliozo:seeAlso "LV.AMO.2019.12.2" ;
     eliozo:suffix "LV.AMO.2019.11" ;
     eliozo:suggestedGrade 11 ;
-    eliozo:topic eliozo:FactorizationAndDivisibility,
-        eliozo:GameInvariant .
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:FactorizationAndDivisibility,
+        eliozo:GameInvariant,
+        eliozo:Games,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2019.11.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-circumscribed-circle,
@@ -233,7 +240,9 @@ ir lielākais iespējamais šo skaitļu reizinājums?</p>"""@lv ;
     eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2019.11" ;
     eliozo:suggestedGrade 11 ;
-    eliozo:topic eliozo:InequalityProvingStronger .
+    eliozo:topic eliozo:Algebra,
+        eliozo:InequalityProvingStronger,
+        eliozo:ProvingInequalities .
 
 eliozo:LV.AMO.2019.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -365,7 +374,12 @@ svarīga). Ar kādu lielāko trijnieka pakāpi dalās $N$?</p>"""@lv ;
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2019.12" ;
     eliozo:suggestedGrade 12 ;
-    eliozo:topic eliozo:RuleOfProduct,
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:CountingSetSizes,
+        eliozo:NumTheory,
+        eliozo:RuleOfProduct,
+        eliozo:Valuation,
         eliozo:ValuationProperties .
 
 eliozo:LV.AMO.2019.12.5 a eliozo:Problem ;
@@ -547,6 +561,7 @@ eliozo:LV.AMO.2019.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2019" ;
+    eliozo:image_file "LV.AMO.2019.6.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -596,6 +611,7 @@ eliozo:LV.AMO.2019.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2019" ;
+    eliozo:image_file "LV.AMO.2019.6.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -666,6 +682,7 @@ eliozo:LV.AMO.2019.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2019" ;
+    eliozo:image_file "LV.AMO.2019.7.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;

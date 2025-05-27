@@ -392,6 +392,7 @@ eliozo:LV.AMO.2005.5.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2005" ;
+    eliozo:image_file "LV.AMO.2005.5.1.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -502,6 +503,7 @@ eliozo:LV.AMO.2005.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2005" ;
+    eliozo:image_file "LV.AMO.2005.5.5_1.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -618,6 +620,7 @@ eliozo:LV.AMO.2005.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2005" ;
+    eliozo:image_file "LV.AMO.2005.6.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -741,8 +744,12 @@ var beigties šo skaitļu reizinājums?</p>"""@lv ;
     eliozo:seeAlso "LT.VILNIUS.2008.12.1" ;
     eliozo:suffix "LV.AMO.2005.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:DivisibilityRulesLastDigits,
-        eliozo:ModularArithmetic .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesLastDigits,
+        eliozo:IntegerCongruence,
+        eliozo:ModularArithmetic,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2005.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1002,6 +1009,7 @@ eliozo:LV.AMO.2005.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2005" ;
+    eliozo:image_file "LV.AMO.2005.9.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;

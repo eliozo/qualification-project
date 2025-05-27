@@ -49,9 +49,12 @@ eliozo:LV.VOL.2015.10.2 a eliozo:Problem ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2015.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:DivisibilityProperties,
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityProperties,
+        eliozo:IntegerCongruence,
         eliozo:ModularArithmetic,
-        eliozo:ModularParity .
+        eliozo:ModularParity,
+        eliozo:NumTheory .
 
 eliozo:LV.VOL.2015.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -105,6 +108,7 @@ eliozo:LV.VOL.2015.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.VOL.2015" ;
+    eliozo:image_file "LV.VOL.2015.10.5.png" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -414,6 +418,7 @@ eliozo:LV.VOL.2015.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.VOL.2015" ;
+    eliozo:image_file "LV.VOL.2015.9.2.png" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;

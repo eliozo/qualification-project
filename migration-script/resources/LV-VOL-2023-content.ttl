@@ -5,7 +5,8 @@ eliozo:LV.VOL.2023.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.VOL.2023" ;
-    eliozo:method eliozo:PolynomialTransformations ;
+    eliozo:method eliozo:PolynomialTransformations,
+        eliozo:Transformations ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -121,7 +122,8 @@ eliozo:LV.VOL.2023.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.VOL.2023" ;
-    eliozo:method eliozo:AugmentationWithNewElements ;
+    eliozo:method eliozo:Augmentation,
+        eliozo:AugmentationWithNewElements ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -155,7 +157,8 @@ eliozo:LV.VOL.2023.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.VOL.2023" ;
-    eliozo:method eliozo:PolynomialTransformations ;
+    eliozo:method eliozo:PolynomialTransformations,
+        eliozo:Transformations ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -206,7 +209,8 @@ eliozo:LV.VOL.2023.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.VOL.2023" ;
-    eliozo:method eliozo:AugmentationWithNewElements ;
+    eliozo:method eliozo:Augmentation,
+        eliozo:AugmentationWithNewElements ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -289,7 +293,8 @@ eliozo:LV.VOL.2023.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.VOL.2023" ;
-    eliozo:method eliozo:PolynomialTransformations ;
+    eliozo:method eliozo:PolynomialTransformations,
+        eliozo:Transformations ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -474,7 +479,8 @@ eliozo:LV.VOL.2023.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.VOL.2023" ;
-    eliozo:method eliozo:AugmentationWithNewElements ;
+    eliozo:method eliozo:Augmentation,
+        eliozo:AugmentationWithNewElements ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -529,7 +535,8 @@ eliozo:LV.VOL.2023.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.VOL.2023" ;
-    eliozo:method eliozo:ExtremeElements ;
+    eliozo:method eliozo:ExtremeElements,
+        eliozo:ExtremePrinciple ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;

@@ -24,8 +24,12 @@ naturālos skaitļos.</p>"""@lv ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2013.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:CountingUsingSymmetry,
-        eliozo:NumTheoryInequalityLargeIntervals .
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:CountingUsingSymmetry,
+        eliozo:NumTheory,
+        eliozo:NumTheoryInequalityLargeIntervals,
+        eliozo:NumTheoryInequalityMethod .
 
 eliozo:LV.VOL.2013.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -97,9 +101,14 @@ kvadrāti.</p>"""@lv ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2013.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:FibonacciNumbers,
+    eliozo:topic eliozo:Algebra,
+        eliozo:FibonacciNumbers,
+        eliozo:IntegerCongruence,
         eliozo:ModularArithmetic,
-        eliozo:PeriodicRemainders .
+        eliozo:NumTheory,
+        eliozo:NumericSequences,
+        eliozo:PeriodicRemainders,
+        eliozo:RecurrentSequences .
 
 eliozo:LV.VOL.2013.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -521,6 +530,7 @@ eliozo:LV.VOL.2013.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.VOL.2013" ;
+    eliozo:image_file "LV.VOL.2013.9.5.png" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;

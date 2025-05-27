@@ -23,7 +23,10 @@ ir pirmskaitļi?</p>"""@lv ;
     eliozo:suffix "EE.LHT.2009S.11_12" ;
     eliozo:suggestedGrade 11,
         12 ;
-    eliozo:topic eliozo:ModularArithmeticContradiction .
+    eliozo:topic eliozo:IntegerCongruence,
+        eliozo:ModularArithmeticContradiction,
+        eliozo:NumTheory,
+        eliozo:SelectingModule .
 
 eliozo:EE.LHT.2009S.9_10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -46,9 +49,16 @@ ir vesela skaitļa kvadrāts.</p>"""@lv ;
     eliozo:suffix "EE.LHT.2009S.9_10" ;
     eliozo:suggestedGrade 9,
         10 ;
-    eliozo:topic eliozo:ExhaustionMethod,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:ArithmeticAndGeometricSeries,
+        eliozo:ExhaustionMethod,
         eliozo:FullPowerGaps,
+        eliozo:Identities,
+        eliozo:NumTheory,
         eliozo:NumTheoryInequalityMethod,
+        eliozo:NumericSequences,
+        eliozo:SequenceGaps,
         eliozo:StandardIdentities .
 
 eliozo:EE.LHT.2010S.11_12.1 a eliozo:Problem ;
@@ -239,7 +249,9 @@ nav vesels skaitlis.</p>"""@lv ;
     eliozo:suffix "EE.LHT.2011S.11_12" ;
     eliozo:suggestedGrade 11,
         12 ;
-    eliozo:topic eliozo:ValuationChange .
+    eliozo:topic eliozo:NumTheory,
+        eliozo:Valuation,
+        eliozo:ValuationChange .
 
 eliozo:EE.LHT.2011S.9_10.1 a eliozo:Problem ;
     eliozo:country "EE" ;

@@ -99,7 +99,8 @@ eliozo:LV.VOL.2016.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.VOL.2016" ;
-    eliozo:method eliozo:PigeonholePrincipleBasic ;
+    eliozo:method eliozo:MeanValuePrinciple,
+        eliozo:PigeonholePrincipleBasic ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -146,7 +147,9 @@ pakāpe!</p>"""@lv ;
     eliozo:suffix "LV.VOL.2016.11" ;
     eliozo:suggestedGrade 11 ;
     eliozo:topic eliozo:FactorizationAndProperties,
-        eliozo:LinearSystemsTransforms .
+        eliozo:IntegerFactorization,
+        eliozo:LinearSystemsTransforms,
+        eliozo:NumTheory .
 
 eliozo:LV.VOL.2016.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -199,7 +202,12 @@ skaitļus $x$ un $y(x \\leq y)$, ka</p>
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2016.11" ;
     eliozo:suggestedGrade 11 ;
-    eliozo:topic eliozo:StandardIdentities,
+    eliozo:topic eliozo:AdvancedCounting,
+        eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:Identities,
+        eliozo:RealAnalysis,
+        eliozo:StandardIdentities,
         eliozo:TelescopicSums .
 
 eliozo:LV.VOL.2016.11.4 a eliozo:Problem ;
@@ -421,6 +429,7 @@ eliozo:LV.VOL.2016.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.VOL.2016" ;
+    eliozo:image_file "LV.VOL.2016.9.3A.png" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;

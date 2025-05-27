@@ -97,8 +97,13 @@ sekojošu naturālu skaitļu summu? Saskaitāmo secība nav svarīga.</p>"""@lv 
     eliozo:questionType "FindCount" ;
     eliozo:suffix "LV.AMO.2010.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:CanonicalFactorization,
+    eliozo:topic eliozo:Algebra,
+        eliozo:ArithmeticAndGeometricSeries,
+        eliozo:CanonicalFactorization,
         eliozo:ExhaustionMethod,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
+        eliozo:NumericSequences,
         eliozo:SeriesMembersSumsClosedFormulas .
 
 eliozo:LV.AMO.2010.10.5 a eliozo:Problem ;
@@ -262,6 +267,7 @@ eliozo:LV.AMO.2010.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2010" ;
+    eliozo:image_file "LV.AMO.2010.11.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -446,6 +452,7 @@ eliozo:LV.AMO.2010.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2010" ;
+    eliozo:image_file "LV.AMO.2010.5.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -470,6 +477,7 @@ eliozo:LV.AMO.2010.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2010" ;
+    eliozo:image_file "LV.AMO.2010.5.3.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -498,6 +506,7 @@ eliozo:LV.AMO.2010.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2010" ;
+    eliozo:image_file "LV.AMO.2010.5.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -621,6 +630,7 @@ eliozo:LV.AMO.2010.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2010" ;
+    eliozo:image_file "LV.AMO.2010.6.3.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -657,6 +667,7 @@ eliozo:LV.AMO.2010.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2010" ;
+    eliozo:image_file "LV.AMO.2010.6.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -757,6 +768,9 @@ zināms, ka</p>
     eliozo:suffix "LV.AMO.2010.7" ;
     eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:CanonicalFactorization,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
+        eliozo:Primes,
         eliozo:PrimesDistribution .
 
 eliozo:LV.AMO.2010.7.2 a eliozo:Problem ;
@@ -819,7 +833,10 @@ skaitli tā, lai vienlaicīgi izpildītos šādas divas īpašības:</p>
     eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.AMO.2010.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:LinearSystemsApplications,
+    eliozo:topic eliozo:Algebra,
+        eliozo:EquationSystems,
+        eliozo:LinearSystems,
+        eliozo:LinearSystemsApplications,
         eliozo:TreeTraversalBacktracking .
 
 eliozo:LV.AMO.2010.7.4 a eliozo:Problem ;
@@ -948,7 +965,11 @@ vismaz astoņi būs savā starpā atšķirīgi!</p>"""@lv ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2010.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:ExhaustionMethod,
+    eliozo:topic eliozo:BuildingExamples,
+        eliozo:ExamplesInNumberTheory,
+        eliozo:ExhaustionMethod,
+        eliozo:NumTheory,
+        eliozo:NumTheoryExpr,
         eliozo:NumTheoryExprForConcepts .
 
 eliozo:LV.AMO.2010.8.3 a eliozo:Problem ;
@@ -1116,6 +1137,7 @@ eliozo:LV.AMO.2010.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2010" ;
+    eliozo:image_file "LV.AMO.2010.9.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1150,6 +1172,7 @@ eliozo:LV.AMO.2010.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2010" ;
+    eliozo:image_file "LV.AMO.2010.9.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;

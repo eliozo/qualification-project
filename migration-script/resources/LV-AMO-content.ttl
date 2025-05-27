@@ -156,7 +156,10 @@ var izsacīt kā divu veselu skaitļu kvadrātu summu. Vai to noteikti var izsac
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2000.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:StandardIdentities .
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:Identities,
+        eliozo:StandardIdentities .
 
 eliozo:LV.AMO.2000.7.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-decimal-notation,
@@ -180,8 +183,10 @@ eliozo:LV.AMO.2000.7.2 a eliozo:Problem ;
     eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2000.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:IntegerFactorization,
-        eliozo:LittleFermatAndEuler .
+    eliozo:topic eliozo:IntegerCongruence,
+        eliozo:IntegerFactorization,
+        eliozo:LittleFermatAndEuler,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2000.7.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-partition,
@@ -191,7 +196,8 @@ eliozo:LV.AMO.2000.7.4 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:event "LV.AMO.2000" ;
     eliozo:genre "construction" ;
-    eliozo:method eliozo:PigeonholePrincipleBasic ;
+    eliozo:method eliozo:MeanValuePrinciple,
+        eliozo:PigeonholePrincipleBasic ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -217,6 +223,9 @@ var tā sadalīt pa pāriem, lai visas pāros ieejošo skaitļu summas būtu da�
     eliozo:suffix "LV.AMO.2000.7" ;
     eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:ExhaustionMethod,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
+        eliozo:Primes,
         eliozo:PrimesDistribution .
 
 eliozo:LV.AMO.2000.8.3 a eliozo:Problem ;
@@ -225,7 +234,8 @@ eliozo:LV.AMO.2000.8.3 a eliozo:Problem ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2000" ;
     eliozo:genre "construction" ;
-    eliozo:method eliozo:PigeonholePrincipleBasic ;
+    eliozo:method eliozo:MeanValuePrinciple,
+        eliozo:PigeonholePrincipleBasic ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -409,9 +419,14 @@ skaitlis nemainās. Piemēram, $1221$ ir simetrisks skaitlis, bet $1231$ - nav.<
         "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2001.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:DivisibilityRulesOther,
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesOther,
         eliozo:IntegerCongruence,
-        eliozo:NotationPolynomial .
+        eliozo:NotationManipulate,
+        eliozo:NotationPolynomial,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems .
 
 eliozo:LV.AMO.2001.8.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-decimal-notation ;
@@ -439,8 +454,14 @@ kuru Andrim vajadzēja iegūt. Kādu sešciparu skaitli Andris uzrakstīja?</p>"
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2001.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:NotationShift,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:Identities,
+        eliozo:NotationManipulate,
+        eliozo:NotationShift,
+        eliozo:NumTheory,
         eliozo:NumTheoryInequalityMethod,
+        eliozo:NumeralSystems,
         eliozo:StandardIdentities .
 
 eliozo:LV.AMO.2001.9.4 a eliozo:Problem ;
@@ -597,7 +618,9 @@ lai nekādu divu izvēlēto skaitļu starpība nebūtu ne $3$, ne $4$, ne $7$?</
         "Symmetry" ;
     eliozo:suffix "LV.AMO.2002.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:NumTheoryPigeonhole,
+    eliozo:topic eliozo:Algebra,
+        eliozo:NumTheoryPigeonhole,
+        eliozo:NumericSequences,
         eliozo:SequencePeriodicity .
 
 eliozo:LV.AMO.2002.8.2 a eliozo:Problem ;
@@ -627,8 +650,14 @@ Kādu četrciparu skaitli Andris uzrakstīja?</p>"""@lv ;
     eliozo:seeAlso "LV.AMO.2001.8.3" ;
     eliozo:suffix "LV.AMO.2002.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:NotationShift,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:Identities,
+        eliozo:NotationManipulate,
+        eliozo:NotationShift,
+        eliozo:NumTheory,
         eliozo:NumTheoryInequalityMethod,
+        eliozo:NumeralSystems,
         eliozo:StandardIdentities .
 
 eliozo:LV.AMO.2002.8.3 a eliozo:Problem ;
@@ -815,8 +844,11 @@ Vai tas var būt $0$, ja <strong>(A)</strong> $n=8$, <strong>(B)</strong> $n=9$?
     eliozo:strategy "Invariant" ;
     eliozo:suffix "LV.AMO.2003.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:ExhaustionMethod,
+    eliozo:topic eliozo:Algebra,
+        eliozo:ArithmeticAndGeometricSeries,
+        eliozo:ExhaustionMethod,
         eliozo:InvariantParity,
+        eliozo:NumericSequences,
         eliozo:SeriesMembersSumsClosedFormulas .
 
 eliozo:LV.AMO.2003.8.3 a eliozo:Problem ;
@@ -845,7 +877,10 @@ saskaitāmo lielākais kopīgais dalītājs būtu $1$?</p>"""@lv ;
     eliozo:strategy "ExtremeElement" ;
     eliozo:suffix "LV.AMO.2003.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:NumTheoryExtremeElement,
+    eliozo:topic eliozo:IntegerFactorization,
+        eliozo:NumTheory,
+        eliozo:NumTheoryExtremeElement,
+        eliozo:Primes,
         eliozo:PrimesDistribution .
 
 eliozo:LV.AMO.2003.8.5 a eliozo:Problem ;
@@ -876,7 +911,11 @@ Vai tas iespējams, ja <strong>(A)</strong> $n=3$, <strong>(B)</strong> $n=4$, <
     eliozo:strategy "Symmetry" ;
     eliozo:suffix "LV.AMO.2003.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:ExhaustionMethod,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:ExhaustionMethod,
+        eliozo:Identities,
+        eliozo:NumericSequences,
         eliozo:SequencePeriodicity,
         eliozo:StandardIdentities .
 

@@ -105,6 +105,7 @@ eliozo:LV.AMO.2011.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2011" ;
+    eliozo:image_file "LV.AMO.2011.10.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -400,7 +401,8 @@ eliozo:LV.AMO.2011.5.1 a eliozo:Problem ;
     eliozo:domain "NT" ;
     eliozo:event "LV.AMO.2011" ;
     eliozo:genre "Cryptarithm" ;
-    eliozo:method eliozo:ExhaustiveAlgorithms ;
+    eliozo:method eliozo:Algorithms,
+        eliozo:ExhaustiveAlgorithms ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -422,10 +424,12 @@ nav $0$. Atrodi visus iespējamos atrisinājumus!</p>"""@lv ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindAll" ;
-    eliozo:subdomain eliozo:NumeralSystems ;
+    eliozo:subdomain eliozo:NumberTheory,
+        eliozo:NumeralSystems ;
     eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:IntegerFactorization .
+    eliozo:topic eliozo:IntegerFactorization,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2011.5.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-sum ;
@@ -433,6 +437,7 @@ eliozo:LV.AMO.2011.5.2 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.AMO.2011" ;
     eliozo:genre "MagicConfigurations" ;
+    eliozo:image_file "LV.AMO.2011.5.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -454,10 +459,16 @@ skaitļu summas būtu vienādas. Ir zināmi trīs rūtiņās ierakstītie skait�
     eliozo:problemYear 2011 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindAll" ;
-    eliozo:subdomain eliozo:EquationSystems ;
+    eliozo:subdomain eliozo:Algebra,
+        eliozo:EquationSystems ;
     eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:AlgebraicTransformations,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:BuildingExamples,
+        eliozo:ExamplesInNumberTheory,
+        eliozo:NumTheory,
+        eliozo:NumTheoryExpr,
         eliozo:NumTheoryExprVariables .
 
 eliozo:LV.AMO.2011.5.3 a eliozo:Problem ;
@@ -478,12 +489,17 @@ eliozo:LV.AMO.2011.5.3 a eliozo:Problem ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindExample" ;
-    eliozo:subdomain eliozo:CuttingCoversColoring ;
+    eliozo:subdomain eliozo:CuttingCoversColoring,
+        eliozo:Geometry ;
     eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:CircleInscribedAngles,
+    eliozo:topic eliozo:Circle,
+        eliozo:CircleInscribedAngles,
         eliozo:ConstructionsSmallMovements,
-        eliozo:ConstructionsTriangulate .
+        eliozo:ConstructionsTriangulate,
+        eliozo:GeometricTransformations,
+        eliozo:Geometry,
+        eliozo:PlaneConstructions .
 
 eliozo:LV.AMO.2011.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -512,13 +528,15 @@ starpība ir</p>
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:GraphProblems,
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:GraphProblems,
         eliozo:TreeTraversalBacktracking .
 
 eliozo:LV.AMO.2011.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2011" ;
+    eliozo:image_file "LV.AMO.2011.5.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -549,7 +567,9 @@ pagriezti citādāk.)</p>
     eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.AMO.2011.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:CountingUsingSymmetry,
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:CountingUsingSymmetry,
         eliozo:TreeTraversalBacktracking .
 
 eliozo:LV.AMO.2011.6.1 a eliozo:Problem ;
@@ -574,7 +594,8 @@ $$a \\cdot b \\cdot(a+b)=20102011?$$"""@lv ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2011.6" ;
     eliozo:suggestedGrade 6 ;
-    eliozo:topic eliozo:IntegerFactorization .
+    eliozo:topic eliozo:IntegerFactorization,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2011.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -630,6 +651,7 @@ eliozo:LV.AMO.2011.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.AMO.2011" ;
+    eliozo:image_file "LV.AMO.2011.6.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -688,7 +710,8 @@ vienāds konfekšu skaits. Cik konfekšu sākumā bija katrai no māsām?</p>"""
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2011.6" ;
     eliozo:suggestedGrade 6 ;
-    eliozo:topic eliozo:AlgebraicTransformations .
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations .
 
 eliozo:LV.AMO.2011.7.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes ;
@@ -726,7 +749,10 @@ $100$. Par tiem zināms, ka</p>
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2011.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:PrimesDistribution .
+    eliozo:topic eliozo:IntegerFactorization,
+        eliozo:NumTheory,
+        eliozo:Primes,
+        eliozo:PrimesDistribution .
 
 eliozo:LV.AMO.2011.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -779,7 +805,12 @@ dalot ar $2011$, atlikumā iegūst $3$.</p>"""@lv ;
     eliozo:suffix "LV.AMO.2011.7" ;
     eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:ArithmeticSeriesDivisibility,
-        eliozo:ChineseRemainderTheorem .
+        eliozo:BezoutIdentity,
+        eliozo:ChineseRemainderTheorem,
+        eliozo:Divisibility,
+        eliozo:GcdAndLcm,
+        eliozo:IntegerCongruence,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2011.7.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-rectangle,
@@ -814,7 +845,8 @@ eliozo:LV.AMO.2011.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2011" ;
-    eliozo:method eliozo:PigeonholePrincipleBasic ;
+    eliozo:method eliozo:MeanValuePrinciple,
+        eliozo:PigeonholePrincipleBasic ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -937,7 +969,11 @@ dalās ar <strong>(A)</strong> $17$; <strong>(B)</strong> $23$?</p>"""@lv ;
     eliozo:suffix "LV.AMO.2011.8" ;
     eliozo:suggestedGrade 8 ;
     eliozo:topic eliozo:CanonicalFactorization,
-        eliozo:NotationShift .
+        eliozo:IntegerFactorization,
+        eliozo:NotationManipulate,
+        eliozo:NotationShift,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems .
 
 eliozo:LV.AMO.2011.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -969,7 +1005,9 @@ spēlētājiem, pareizi spēlējot, uzvarēs? Apraksti, kā uzvarētājam jārī
         "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2011.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:GameInvariant .
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:GameInvariant,
+        eliozo:Games .
 
 eliozo:LV.AMO.2011.9.1 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-natural-numbers,
@@ -1072,6 +1110,7 @@ eliozo:LV.AMO.2011.9.5 a eliozo:Problem ;
     eliozo:domain "Comb",
         "Geom" ;
     eliozo:event "LV.AMO.2011" ;
+    eliozo:image_file "LV.AMO.2011.9.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;

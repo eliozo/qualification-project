@@ -5,6 +5,7 @@ eliozo:LT.LJMO.1999.7_8.1 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
     eliozo:event "LT.LJMO.1999" ;
+    eliozo:image_file "LT.LJMO.1999.7_8.1.png" ;
     eliozo:olympiad "LT.LJMO" ;
     eliozo:olympiadCode "LJMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -40,9 +41,12 @@ Atšifrējiet reizinājumu:</p>
     eliozo:suffix "LT.LJMO.1999.7_8" ;
     eliozo:suggestedGrade 7,
         8 ;
-    eliozo:topic eliozo:DecimalNotationDigits,
+    eliozo:topic eliozo:DecimalNotation,
+        eliozo:DecimalNotationDigits,
+        eliozo:NumTheory,
         eliozo:NumTheoryExtremeElement,
         eliozo:NumTheoryInequalityMethod,
+        eliozo:NumeralSystems,
         eliozo:NumericAlgorithms .
 
 eliozo:LT.LJMO.1999.7_8.3 a eliozo:Problem ;
@@ -75,8 +79,11 @@ un kura visu ciparu summa ir $100$. <br />
     eliozo:suffix "LT.LJMO.1999.7_8" ;
     eliozo:suggestedGrade 7,
         8 ;
-    eliozo:topic eliozo:DivisibilityRulesLastDigits,
-        eliozo:ExtremeElementMethod .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesLastDigits,
+        eliozo:ExtremeElementMethod,
+        eliozo:NumTheory .
 
 eliozo:LT.LJMO.2000.7_8.3 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -103,9 +110,14 @@ kurš bez atlikuma dalās ar $23$?</p>"""@lv ;
     eliozo:suffix "LT.LJMO.2000.7_8" ;
     eliozo:suggestedGrade 7,
         8 ;
-    eliozo:topic eliozo:ExhaustionMethod,
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:ExhaustionMethod,
         eliozo:IntegerFactorization,
         eliozo:LinearRecurrencesConstant,
+        eliozo:MethodOfRecurrentRelations,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems,
         eliozo:NumericAlgorithms .
 
 eliozo:LT.LJMO.2001.7_8.1 a eliozo:Problem ;
@@ -140,7 +152,8 @@ Atrodiet pašu mazāko tādu skaitli.</p>"""@lv ;
     eliozo:suggestedGrade 7,
         8 ;
     eliozo:topic eliozo:ExtremeElementMethod,
-        eliozo:IntegerFactorization .
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory .
 
 eliozo:LT.LJMO.2001.7_8.2 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -167,8 +180,14 @@ $x-y= x^2 + xy + y^2$.</p>"""@lv ;
     eliozo:suffix "LT.LJMO.2001.7_8" ;
     eliozo:suggestedGrade 7,
         8 ;
-    eliozo:topic eliozo:EquationComparingSidesAsFunctions,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicEquations,
+        eliozo:EquationAnalysis,
+        eliozo:EquationComparingSidesAsFunctions,
         eliozo:EquationFactorization,
+        eliozo:EquationSolving,
+        eliozo:NumTheory,
+        eliozo:NumTheoryInequalityMethod,
         eliozo:NumTheoryInequalitySideComparison,
         eliozo:QuadraticEquationRootConditions .
 
@@ -215,7 +234,10 @@ atlikušo skaitļu reizinājums būtu pilns kvadrāts?</p>"""@lv ;
     eliozo:suffix "LT.LJMO.2002.7_8" ;
     eliozo:suggestedGrade 7,
         8 ;
-    eliozo:topic eliozo:PrimeFactorizationAndPowers .
+    eliozo:topic eliozo:FactorizationAndProperties,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
+        eliozo:PrimeFactorizationAndPowers .
 
 eliozo:LT.LJMO.2002.7_8.2 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -264,7 +286,10 @@ $$3xy - x - 2y = 8.$$
     eliozo:suffix "LT.LJMO.2002.7_8" ;
     eliozo:suggestedGrade 7,
         8 ;
-    eliozo:topic eliozo:PrimeFactorizationAndPowers .
+    eliozo:topic eliozo:FactorizationAndProperties,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
+        eliozo:PrimeFactorizationAndPowers .
 
 eliozo:LT.LJMO.2002.7_8.4 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -334,8 +359,14 @@ dalās ar $2003$ un kura ciparu summa vienāda ar $2003$.</p>"""@lv ;
     eliozo:suggestedGrade 7,
         8 ;
     eliozo:topic eliozo:ArithmeticSeriesDivisibility,
+        eliozo:BezoutIdentity,
+        eliozo:Divisibility,
+        eliozo:GcdAndLcm,
         eliozo:Invariant,
-        eliozo:NotationInsert .
+        eliozo:NotationInsert,
+        eliozo:NotationManipulate,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems .
 
 eliozo:LT.LJMO.2003.7_8.4 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -375,6 +406,8 @@ vienāds veseliem skaitļiem?</p>"""@lv ;
     eliozo:suggestedGrade 7,
         8 ;
     eliozo:topic eliozo:BipartiteGraphs,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
         eliozo:Primes .
 
 eliozo:LT.LJMO.2004.7_8.1 a eliozo:Problem ;
@@ -622,7 +655,10 @@ summa būtu pilns kvadrāts. Vai baronam ir taisnība, šādi uzskatot?</p>"""@l
     eliozo:suffix "LT.LJMO.2007.7_8" ;
     eliozo:suggestedGrade 7,
         8 ;
-    eliozo:topic eliozo:HamiltonCircuits .
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:GraphProblems,
+        eliozo:HamiltonCircuits,
+        eliozo:PathsAndCyclesInGraphs .
 
 eliozo:LT.LJMO.2007.7_8.4 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -753,6 +789,7 @@ eliozo:LT.LJMO.2008.7_8.2 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
     eliozo:event "LT.LJMO.2008" ;
+    eliozo:image_file "LT.LJMO.2008.7_8.2.png" ;
     eliozo:olympiad "LT.LJMO" ;
     eliozo:olympiadCode "LJMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -942,6 +979,7 @@ eliozo:LT.LJMO.2009.7_8.4 a eliozo:Problem ;
     eliozo:country "LT" ;
     eliozo:domain "NT" ;
     eliozo:event "LT.LJMO.2009" ;
+    eliozo:image_file "LT.LJMO.2009.7_8.4.png" ;
     eliozo:olympiad "LT.LJMO" ;
     eliozo:olympiadCode "LJMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;

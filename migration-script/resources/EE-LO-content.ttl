@@ -41,6 +41,7 @@ $$\\frac{2}{a^2}+\\frac{3}{b^2}+\\frac{4}{c^2}=1$$
     eliozo:suffix "EE.LO.2010.10" ;
     eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:ExhaustionMethod,
+        eliozo:NumTheory,
         eliozo:NumTheoryInequalityMethod .
 
 eliozo:EE.LO.2011.10.2 a eliozo:Problem ;
@@ -136,9 +137,14 @@ eliozo:EE.LO.2013.10.1 a eliozo:Problem ;
     eliozo:strategy "ModularArithmeticContradiction" ;
     eliozo:suffix "EE.LO.2013.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:DivisibilityRulesForRemainders,
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesForRemainders,
+        eliozo:IntegerCongruence,
         eliozo:ModularArithmetic,
-        eliozo:ModularArithmeticContradiction .
+        eliozo:ModularArithmeticContradiction,
+        eliozo:NumTheory,
+        eliozo:SelectingModule .
 
 eliozo:EE.LO.2014.10.1 a eliozo:Problem ;
     eliozo:country "EE" ;
@@ -514,7 +520,13 @@ eliozo:EE.LO.2019.10.1 a eliozo:Problem ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "EE.LO.2019.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:MutualPrimes,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:Divisibility,
+        eliozo:GcdAndLcm,
+        eliozo:Identities,
+        eliozo:MutualPrimes,
+        eliozo:NumTheory,
         eliozo:StandardIdentities .
 
 eliozo:SOLN.EE.LO.2010.10.2.SUB1 a eliozo:Solution ;

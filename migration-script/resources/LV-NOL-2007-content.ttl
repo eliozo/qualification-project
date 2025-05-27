@@ -283,6 +283,7 @@ eliozo:LV.NOL.2007.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2007" ;
+    eliozo:image_file "LV.NOL.2007.12.2.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -562,6 +563,7 @@ eliozo:LV.NOL.2007.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2007" ;
+    eliozo:image_file "LV.NOL.2007.6.2.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -593,6 +595,7 @@ eliozo:LV.NOL.2007.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2007" ;
+    eliozo:image_file "LV.NOL.2007.6.3.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -690,8 +693,15 @@ $x=a^{5},\\ y=b^{3}$, $a$ un $b$ - naturāli skaitļi?</p>"""@lv ;
         "LV.NOL.2009.7.1" ;
     eliozo:suffix "LV.NOL.2007.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:BezoutIdentity,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:BezoutIdentity,
         eliozo:CanonicalFactorization,
+        eliozo:Divisibility,
+        eliozo:GcdAndLcm,
+        eliozo:Identities,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
         eliozo:StandardIdentities .
 
 eliozo:LV.NOL.2007.7.2 a eliozo:Problem ;
@@ -769,7 +779,9 @@ eliozo:LV.NOL.2007.7.4 a eliozo:Problem ;
     eliozo:suffix "LV.NOL.2007.7" ;
     eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:IntegerFactorization,
-        eliozo:NumTheoryInequalityLargeIntervals .
+        eliozo:NumTheory,
+        eliozo:NumTheoryInequalityLargeIntervals,
+        eliozo:NumTheoryInequalityMethod .
 
 eliozo:LV.NOL.2007.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -895,8 +907,10 @@ kārtas ņemtiem naturāliem skaitļiem.</p>"""@lv ;
     eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.NOL.2007.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:GcdAndLcm,
-        eliozo:MultiplesInInterval .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:GcdAndLcm,
+        eliozo:MultiplesInInterval,
+        eliozo:NumTheory .
 
 eliozo:LV.NOL.2007.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;

@@ -385,6 +385,7 @@ eliozo:LV.NOL.2011.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2011" ;
+    eliozo:image_file "LV.NOL.2011.5.2.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -606,6 +607,7 @@ eliozo:LV.NOL.2011.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2011" ;
+    eliozo:image_file "LV.NOL.2011.6.4.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -667,7 +669,11 @@ eliozo:LV.NOL.2011.7.1 a eliozo:Problem ;
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2011.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:CongruenceClasses,
+    eliozo:topic eliozo:Algebra,
+        eliozo:CongruenceClasses,
+        eliozo:IntegerCongruence,
+        eliozo:NumTheory,
+        eliozo:NumericSequences,
         eliozo:SequencePeriodicity .
 
 eliozo:LV.NOL.2011.7.2 a eliozo:Problem ;
@@ -690,8 +696,11 @@ $(n+1)(n+2)(n+3)$ dalās ar $125$?</p>"""@lv ;
     eliozo:questionType "FindCount" ;
     eliozo:suffix "LV.NOL.2011.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:FactorizationAndDivisibility,
-        eliozo:MultiplesInInterval .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:FactorizationAndDivisibility,
+        eliozo:IntegerFactorization,
+        eliozo:MultiplesInInterval,
+        eliozo:NumTheory .
 
 eliozo:LV.NOL.2011.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -793,9 +802,13 @@ ciparus. Pierādīt, ka $B-A$ dalās ar $9$.</p>"""@lv ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2011.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:DivisibilityRulesFor3And9,
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesFor3And9,
         eliozo:DivisibilityRulesForRemainders,
-        eliozo:NotationManipulate .
+        eliozo:NotationManipulate,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems .
 
 eliozo:LV.NOL.2011.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -845,6 +858,7 @@ eliozo:LV.NOL.2011.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2011" ;
+    eliozo:image_file "LV.NOL.2011.8.4_1.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -931,6 +945,7 @@ eliozo:LV.NOL.2011.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.NOL.2011" ;
+    eliozo:image_file "LV.NOL.2011.9.2.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;

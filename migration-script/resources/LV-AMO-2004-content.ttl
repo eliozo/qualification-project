@@ -421,6 +421,7 @@ eliozo:LV.AMO.2004.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2004" ;
+    eliozo:image_file "LV.AMO.2004.5.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -494,6 +495,7 @@ eliozo:LV.AMO.2004.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2004" ;
+    eliozo:image_file "LV.AMO.2004.5.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -567,6 +569,7 @@ eliozo:LV.AMO.2004.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2004" ;
+    eliozo:image_file "LV.AMO.2004.6.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -752,7 +755,11 @@ ir nesaīsināmas?</p>"""@lv ;
     eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2004.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:EuclideanAlgorithm,
+    eliozo:topic eliozo:Divisibility,
+        eliozo:EuclideanAlgorithm,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
+        eliozo:Primes,
         eliozo:PrimesDistribution .
 
 eliozo:LV.AMO.2004.7.4 a eliozo:Problem ;
@@ -834,6 +841,7 @@ eliozo:LV.AMO.2004.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2004" ;
+    eliozo:image_file "LV.AMO.2004.8.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -888,12 +896,16 @@ $A=B$.</p>"""@lv ;
     eliozo:suffix "LV.AMO.2004.8" ;
     eliozo:suggestedGrade 8 ;
     eliozo:topic eliozo:IntegerFactorization,
-        eliozo:NotationShift .
+        eliozo:NotationManipulate,
+        eliozo:NotationShift,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems .
 
 eliozo:LV.AMO.2004.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2004" ;
+    eliozo:image_file "LV.AMO.2004.8.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -947,9 +959,17 @@ rīkojamies tāpat, utt., kamēr paliek neizsvītrots viens skaitlis. Kurš tas 
     eliozo:strategy "WorkingBackwards" ;
     eliozo:suffix "LV.AMO.2004.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:DefiningRecurrentSequences,
+    eliozo:topic eliozo:Algebra,
+        eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:DefiningRecurrentSequences,
+        eliozo:Divisibility,
+        eliozo:MethodOfRecurrentRelations,
         eliozo:MultiplesInInterval,
-        eliozo:NonlinearRecurrences .
+        eliozo:NonlinearRecurrences,
+        eliozo:NumTheory,
+        eliozo:NumericSequences,
+        eliozo:RecurrentSequences .
 
 eliozo:LV.AMO.2004.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;

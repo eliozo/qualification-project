@@ -31,7 +31,8 @@ eliozo:LV.NOL.2014.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2014" ;
-    eliozo:method eliozo:PigeonholePrincipleBasic ;
+    eliozo:method eliozo:MeanValuePrinciple,
+        eliozo:PigeonholePrincipleBasic ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -51,8 +52,13 @@ skaitļiem var atrast divus skaitļus, kuru summa ir $302$.</p>"""@lv ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.NOL.2014.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:MultiplesInInterval,
+    eliozo:topic eliozo:Algebra,
+        eliozo:ArithmeticAndGeometricSeries,
+        eliozo:Divisibility,
+        eliozo:MultiplesInInterval,
+        eliozo:NumTheory,
         eliozo:NumTheoryPigeonhole,
+        eliozo:NumericSequences,
         eliozo:SeriesMembersSumsClosedFormulas .
 
 eliozo:LV.NOL.2014.10.3 a eliozo:Problem ;
@@ -708,8 +714,11 @@ skaitlis $x(x+1)(x+2)$ dalās ar $87$?</p>"""@lv ;
     eliozo:questionType "FindCount" ;
     eliozo:suffix "LV.NOL.2014.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:DivisibilityRulesOther,
-        eliozo:MultiplesInInterval .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesOther,
+        eliozo:MultiplesInInterval,
+        eliozo:NumTheory .
 
 eliozo:LV.NOL.2014.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -830,7 +839,10 @@ eliozo:LV.NOL.2014.8.3 a eliozo:Problem ;
     eliozo:questionType "FindCount" ;
     eliozo:suffix "LV.NOL.2014.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:CountingSetDifference,
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:CountingSetDifference,
+        eliozo:CountingSetSizes,
         eliozo:RuleOfProduct .
 
 eliozo:LV.NOL.2014.8.4 a eliozo:Problem ;
@@ -949,6 +961,7 @@ eliozo:LV.NOL.2014.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2014" ;
+    eliozo:image_file "LV.NOL.2014.9.4.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;

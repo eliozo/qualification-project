@@ -5,6 +5,7 @@ eliozo:LV.NOL.2017.10.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2017" ;
+    eliozo:image_file "LV.NOL.2017.10.1.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -144,11 +145,14 @@ sākotnējais desmitciparu skaitlis!</p>"""@lv ;
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.NOL.2017.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:DivisibilityRulesFor2And4,
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesFor2And4,
         eliozo:DivisibilityRulesFor3And9,
         eliozo:DivisibilityRulesLastDigits,
         eliozo:DivisibilityRulesOther,
-        eliozo:ExhaustionMethod .
+        eliozo:ExhaustionMethod,
+        eliozo:NumTheory .
 
 eliozo:LV.NOL.2017.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -228,6 +232,7 @@ eliozo:LV.NOL.2017.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2017" ;
+    eliozo:image_file "LV.NOL.2017.11.4.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -358,6 +363,7 @@ eliozo:LV.NOL.2017.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2017" ;
+    eliozo:image_file "LV.NOL.2017.12.4.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -508,6 +514,7 @@ eliozo:LV.NOL.2017.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2017" ;
+    eliozo:image_file "LV.NOL.2017.5.4.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -538,6 +545,7 @@ eliozo:LV.NOL.2017.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2017" ;
+    eliozo:image_file "LV.NOL.2017.5.5.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -635,6 +643,7 @@ eliozo:LV.NOL.2017.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2017" ;
+    eliozo:image_file "LV.NOL.2017.6.3.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -742,6 +751,7 @@ eliozo:LV.NOL.2017.7.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2017" ;
+    eliozo:image_file "LV.NOL.2017.7.1.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -791,6 +801,7 @@ eliozo:LV.NOL.2017.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2017" ;
+    eliozo:image_file "LV.NOL.2017.7.3.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -844,7 +855,8 @@ eliozo:LV.NOL.2017.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.NOL.2017" ;
-    eliozo:method eliozo:PigeonholePrincipleBasic ;
+    eliozo:method eliozo:MeanValuePrinciple,
+        eliozo:PigeonholePrincipleBasic ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -868,6 +880,7 @@ eliozo:LV.NOL.2017.8.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2017" ;
+    eliozo:image_file "LV.NOL.2017.8.1.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -923,6 +936,7 @@ eliozo:LV.NOL.2017.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2017" ;
+    eliozo:image_file "LV.NOL.2017.8.3.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -967,6 +981,7 @@ eliozo:LV.NOL.2017.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.NOL.2017" ;
+    eliozo:image_file "LV.NOL.2017.8.4.png" ;
     eliozo:olympiad "LV.NOL" ;
     eliozo:olympiadCode "NOL" ;
     eliozo:olympiadType "RegionalOrOpen" ;

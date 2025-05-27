@@ -93,9 +93,14 @@ lielāks nekā $10$.</p>
         "Prove" ;
     eliozo:suffix "LV.VOL.2018.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:DivisibilityRulesFor2And4,
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesFor2And4,
         eliozo:DivisibilityRulesFor3And9,
-        eliozo:NotationInsert .
+        eliozo:NotationInsert,
+        eliozo:NotationManipulate,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems .
 
 eliozo:LV.VOL.2018.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -185,6 +190,7 @@ eliozo:LV.VOL.2018.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.VOL.2018" ;
+    eliozo:image_file "LV.VOL.2018.11.2.png" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;
@@ -526,6 +532,7 @@ eliozo:LV.VOL.2018.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.VOL.2018" ;
+    eliozo:image_file "LV.VOL.2018.9.5.png" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;

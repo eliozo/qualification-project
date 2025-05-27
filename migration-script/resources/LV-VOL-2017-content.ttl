@@ -48,10 +48,16 @@ pirmskaitlis!</p>"""@lv ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.VOL.2017.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:DivisibilityRulesFor2And4,
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesFor2And4,
         eliozo:ExhaustionMethod,
+        eliozo:IntegerCongruence,
         eliozo:ModularArithmetic,
-        eliozo:NotationShift .
+        eliozo:NotationManipulate,
+        eliozo:NotationShift,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems .
 
 eliozo:LV.VOL.2017.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -418,6 +424,7 @@ eliozo:LV.VOL.2017.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.VOL.2017" ;
+    eliozo:image_file "LV.VOL.2017.9.2A.png" ;
     eliozo:olympiad "LV.VOL" ;
     eliozo:olympiadCode "VOL" ;
     eliozo:olympiadType "National" ;

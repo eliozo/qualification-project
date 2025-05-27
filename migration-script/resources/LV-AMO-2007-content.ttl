@@ -296,6 +296,7 @@ eliozo:LV.AMO.2007.12.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2007" ;
+    eliozo:image_file "LV.AMO.2007.12.1.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -611,6 +612,7 @@ eliozo:LV.AMO.2007.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2007" ;
+    eliozo:image_file "LV.AMO.2007.6.3.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -713,13 +715,20 @@ pierakstu?</p>"""@lv ;
     eliozo:seeAlso "LV.AMO.2008.7.2" ;
     eliozo:suffix "LV.AMO.2007.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:HamiltonCircuits,
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:GraphProblems,
+        eliozo:HamiltonCircuits,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
+        eliozo:PathsAndCyclesInGraphs,
+        eliozo:Primes,
         eliozo:PrimesDistribution .
 
 eliozo:LV.AMO.2007.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2007" ;
+    eliozo:image_file "LV.AMO.2007.7.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -774,7 +783,10 @@ spēlēts pietiekoši ilgi).</p>"""@lv ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2007.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:InfiniteDescent,
+    eliozo:topic eliozo:Algebra,
+        eliozo:ArithmeticAndGeometricSeries,
+        eliozo:InfiniteDescent,
+        eliozo:NumericSequences,
         eliozo:SequenceGaps .
 
 eliozo:LV.AMO.2007.7.4 a eliozo:Problem ;
@@ -898,6 +910,8 @@ $1716$. Kādu skaitli viņa iedomājās sākumā?</p>"""@lv ;
     eliozo:suffix "LV.AMO.2007.8" ;
     eliozo:suggestedGrade 8 ;
     eliozo:topic eliozo:CanonicalFactorization,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
         eliozo:NumTheoryInequalityMethod .
 
 eliozo:LV.AMO.2007.8.4 a eliozo:Problem ;
@@ -1001,6 +1015,7 @@ eliozo:LV.AMO.2007.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2007" ;
+    eliozo:image_file "LV.AMO.2007.9.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1091,6 +1106,7 @@ eliozo:LV.AMO.2007.9.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2007" ;
+    eliozo:image_file "LV.AMO.2007.9.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;

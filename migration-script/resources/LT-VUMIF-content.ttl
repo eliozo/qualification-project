@@ -28,9 +28,16 @@ ir naturāli.</p>"""@lv ;
     eliozo:suffix "LT.VUMIF.2016.10" ;
     eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:ArithmeticSeriesGaps,
+        eliozo:BezoutIdentity,
         eliozo:CanonicalFactorization,
         eliozo:ChineseRemainderTheorem,
+        eliozo:Divisibility,
+        eliozo:FactorizationAndProperties,
+        eliozo:GcdAndLcm,
         eliozo:GcdAndLcmProperties,
+        eliozo:IntegerCongruence,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
         eliozo:PrimeFactorizationAndPowers .
 
 eliozo:LT.VUMIF.2016.11_12.1 a eliozo:Problem ;
@@ -139,6 +146,8 @@ ir naturāls.</p>"""@lv ;
     eliozo:suffix "LT.VUMIF.2016.9" ;
     eliozo:suggestedGrade 9 ;
     eliozo:topic eliozo:ExhaustionMethod,
+        eliozo:IntegerPolynomials,
+        eliozo:NumTheory,
         eliozo:NumTheoryInequalityMethod,
         eliozo:PolynomialLongDivision .
 
@@ -198,10 +207,18 @@ $$m^2 + 2m - 9 = n^2 + n.$$</p>"""@lv ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "LT.VUMIF.2017.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:CompletingSquare,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:ArithmeticAndGeometricSeries,
+        eliozo:CompletingSquare,
         eliozo:ExhaustionMethod,
         eliozo:FullPowerGaps,
-        eliozo:NumTheoryInequalityLargeIntervals .
+        eliozo:Identities,
+        eliozo:NumTheory,
+        eliozo:NumTheoryInequalityLargeIntervals,
+        eliozo:NumTheoryInequalityMethod,
+        eliozo:NumericSequences,
+        eliozo:SequenceGaps .
 
 eliozo:LT.VUMIF.2017.11_12.2 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -284,7 +301,9 @@ spēlētājam ir uzvaras stratēģija, un parādiet to.</p>"""@lv ;
     eliozo:suffix "LT.VUMIF.2017.11_12" ;
     eliozo:suggestedGrade 11,
         12 ;
-    eliozo:topic eliozo:GameInvariant .
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:GameInvariant,
+        eliozo:Games .
 
 eliozo:LT.VUMIF.2017.9.2 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -316,8 +335,11 @@ viens skaitlis būtu otra kvadrāts?<br />
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "LT.VUMIF.2017.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:DigitsInOperationResult,
-        eliozo:ExhaustionMethod .
+    eliozo:topic eliozo:DecimalNotation,
+        eliozo:DigitsInOperationResult,
+        eliozo:ExhaustionMethod,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems .
 
 eliozo:LT.VUMIF.2018.10.4 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -352,7 +374,9 @@ uzrakstot, kāds var būt skaitļa $n$ sadalījums pirmreizinātājos.</p>"""@lv
     eliozo:suffix "LT.VUMIF.2018.10" ;
     eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:DivisorNumberAndSum,
-        eliozo:FactorizationAndDivisibility .
+        eliozo:FactorizationAndDivisibility,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory .
 
 eliozo:LT.VUMIF.2018.11_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -471,9 +495,13 @@ ar citu septiņīgu skaitli, tad tie ir vienādi.</p>"""@lv ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "LT.VUMIF.2019.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:DivisibilityRulesForRemainders,
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesForRemainders,
+        eliozo:IntegerCongruence,
         eliozo:Invariant,
-        eliozo:ModularArithmetic .
+        eliozo:ModularArithmetic,
+        eliozo:NumTheory .
 
 eliozo:LT.VUMIF.2019.11_12.4 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -525,10 +553,15 @@ b) $N$ nedalās ne ar vienu piecīgu skaitli.</p>"""@lv ;
     eliozo:suggestedGrade 11,
         12 ;
     eliozo:topic eliozo:ChineseRemainderTheorem,
+        eliozo:Divisibility,
+        eliozo:DivisibilityRules,
         eliozo:DivisibilityRulesForRemainders,
         eliozo:ExhaustionMethod,
+        eliozo:IntegerCongruence,
         eliozo:ModularArithmetic,
-        eliozo:NumTheoryInequalityLargeIntervals .
+        eliozo:NumTheory,
+        eliozo:NumTheoryInequalityLargeIntervals,
+        eliozo:NumTheoryInequalityMethod .
 
 eliozo:LT.VUMIF.2019.9.1 a eliozo:Problem ;
     eliozo:country "LT" ;
@@ -643,8 +676,13 @@ nodrošināt uzvaru, lai kā spēlētu Algis.</p>"""@lv ;
     eliozo:strategy "WorkingBackwards" ;
     eliozo:suffix "LT.VUMIF.2019.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:GameInvariant,
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:GameInvariant,
+        eliozo:Games,
+        eliozo:IntegerCongruence,
+        eliozo:ModularArithmetic,
         eliozo:ModularParity,
+        eliozo:NumTheory,
         eliozo:StrongAndReverseInduction .
 
 eliozo:LT.VUMIF.2019.9.4 a eliozo:Problem ;
@@ -687,11 +725,18 @@ Atrodiet visas iespējas.</p>"""@lv ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:suffix "LT.VUMIF.2019.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:CongruenceEquations,
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:CongruenceEquations,
+        eliozo:CountingObjects,
         eliozo:CountingUsingSymmetry,
+        eliozo:Divisibility,
+        eliozo:DivisibilityRules,
         eliozo:DivisibilityRulesLastDigits,
         eliozo:ExhaustionMethod,
-        eliozo:ModularArithmeticOther .
+        eliozo:IntegerCongruence,
+        eliozo:ModularArithmetic,
+        eliozo:ModularArithmeticOther,
+        eliozo:NumTheory .
 
 eliozo:SOLN.LT.VUMIF.2016.10.3.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;

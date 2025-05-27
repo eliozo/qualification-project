@@ -96,8 +96,10 @@ aprēķināja to summu. Kāds lielākais skaits no šīm summām var būt pirmsk
     eliozo:suffix "LV.AMO.2014.10" ;
     eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:BipartiteGraphs,
+        eliozo:IntegerCongruence,
         eliozo:ModularArithmetic,
         eliozo:ModularParity,
+        eliozo:NumTheory,
         eliozo:TreeTraversalBacktracking .
 
 eliozo:LV.AMO.2014.10.5 a eliozo:Problem ;
@@ -313,6 +315,7 @@ eliozo:LV.AMO.2014.12.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2014" ;
+    eliozo:image_file "LV.AMO.2014.12.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -398,7 +401,8 @@ dzeltenas, bet pārējās- zilas. Aprēķini:</p>
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2014.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:AlgebraicEquations .
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicEquations .
 
 eliozo:LV.AMO.2014.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -420,7 +424,8 @@ gadīties, ka viens skaitlis ir tieši trīs reizes lielāks nekā otrs skaitlis
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2014.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:IntegerCongruence .
+    eliozo:topic eliozo:IntegerCongruence,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2014.5.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-area,
@@ -429,6 +434,7 @@ eliozo:LV.AMO.2014.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2014" ;
+    eliozo:image_file "LV.AMO.2014.5.3.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -454,12 +460,16 @@ nekā otra mala.</p>
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2014.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:Rectangles .
+    eliozo:topic eliozo:Geometry,
+        eliozo:Quadrilaterals,
+        eliozo:Rectangles,
+        eliozo:SpecialQuadrilaterals .
 
 eliozo:LV.AMO.2014.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2014" ;
+    eliozo:image_file "LV.AMO.2014.5.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -484,7 +494,10 @@ būt pagrieztas jebkurā stāvoklī)?</p>
     eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2014.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:SquareGridCutting .
+    eliozo:topic eliozo:Geometry,
+        eliozo:IntegerLattices,
+        eliozo:SquareGrid,
+        eliozo:SquareGridCutting .
 
 eliozo:LV.AMO.2014.5.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-product ;
@@ -507,7 +520,9 @@ trīs, gan kā divu dažādu divciparu naturālu skaitļu reizinājumu?</p>"""@l
     eliozo:questionType "FindOptimal" ;
     eliozo:suffix "LV.AMO.2014.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:NumTheoryInequalityLargeIntervals .
+    eliozo:topic eliozo:NumTheory,
+        eliozo:NumTheoryInequalityLargeIntervals,
+        eliozo:NumTheoryInequalityMethod .
 
 eliozo:LV.AMO.2014.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -590,6 +605,7 @@ eliozo:LV.AMO.2014.6.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2014" ;
+    eliozo:image_file "LV.AMO.2014.6.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -616,6 +632,7 @@ eliozo:LV.AMO.2014.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2014" ;
+    eliozo:image_file "LV.AMO.2014.6.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -686,7 +703,10 @@ $$a \\cdot(3a+5b) \\cdot 7b=7654321$$?"""@lv ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2014.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:ModularParity .
+    eliozo:topic eliozo:IntegerCongruence,
+        eliozo:ModularArithmetic,
+        eliozo:ModularParity,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2014.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -720,6 +740,7 @@ eliozo:LV.AMO.2014.7.4 a eliozo:Problem ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.AMO.2014" ;
     eliozo:genre "magic-configuration" ;
+    eliozo:image_file "LV.AMO.2014.7.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -746,12 +767,17 @@ Atrodiet visas iespējamās vērtības un pamatojiet, ka citu nav!</p>
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2014.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:NumTheoryExprVariables .
+    eliozo:topic eliozo:BuildingExamples,
+        eliozo:ExamplesInNumberTheory,
+        eliozo:NumTheory,
+        eliozo:NumTheoryExpr,
+        eliozo:NumTheoryExprVariables .
 
 eliozo:LV.AMO.2014.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2014" ;
+    eliozo:image_file "LV.AMO.2014.7.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -800,7 +826,10 @@ $2014.$ ciparu aiz komata.</p>
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2014.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:NumericAlgorithms,
+    eliozo:topic eliozo:IntegerCongruence,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems,
+        eliozo:NumericAlgorithms,
         eliozo:PeriodicRemainders .
 
 eliozo:LV.AMO.2014.8.2 a eliozo:Problem ;
@@ -824,13 +853,19 @@ to pirmo ciparu, samazinās $15$ reizes!</p>"""@lv ;
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2014.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:NotationFragments,
-        eliozo:NumTheoryExpr .
+    eliozo:topic eliozo:BuildingExamples,
+        eliozo:ExamplesInNumberTheory,
+        eliozo:NotationFragments,
+        eliozo:NotationManipulate,
+        eliozo:NumTheory,
+        eliozo:NumTheoryExpr,
+        eliozo:NumeralSystems .
 
 eliozo:LV.AMO.2014.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2014" ;
+    eliozo:image_file "LV.AMO.2014.8.3.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -855,6 +890,7 @@ eliozo:LV.AMO.2014.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2014" ;
+    eliozo:image_file "LV.AMO.2014.8.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -881,6 +917,7 @@ eliozo:LV.AMO.2014.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.AMO.2014" ;
+    eliozo:image_file "LV.AMO.2014.8.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -907,13 +944,18 @@ ierakstīts skaitlis <strong>(A)</strong> $7$, <strong>(B)</strong> $17$?</p>
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2014.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:NumTheoryExprVariables,
+    eliozo:topic eliozo:BuildingExamples,
+        eliozo:ExamplesInNumberTheory,
+        eliozo:NumTheory,
+        eliozo:NumTheoryExpr,
+        eliozo:NumTheoryExprVariables,
         eliozo:TreeTraversalBacktracking .
 
 eliozo:LV.AMO.2014.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2014" ;
+    eliozo:image_file "LV.AMO.2014.9.1.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -985,6 +1027,7 @@ eliozo:LV.AMO.2014.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.AMO.2014" ;
+    eliozo:image_file "LV.AMO.2014.9.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;

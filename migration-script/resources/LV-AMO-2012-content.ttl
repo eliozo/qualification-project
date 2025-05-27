@@ -21,7 +21,9 @@ eliozo:LV.AMO.2012.10.1 a eliozo:Problem ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2012.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:ModularArithmetic .
+    eliozo:topic eliozo:IntegerCongruence,
+        eliozo:ModularArithmetic,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2012.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -214,6 +216,7 @@ eliozo:LV.AMO.2012.11.5 a eliozo:Problem ;
     eliozo:domain "Comb",
         "Geom" ;
     eliozo:event "LV.AMO.2012" ;
+    eliozo:image_file "LV.AMO.2012.11.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -404,8 +407,11 @@ platleņķa trijstūri, ja tam ir viens plats leņķis un divi šauri leņķi.)<
     eliozo:sameAs "LV.AMO.2011.5.3" ;
     eliozo:suffix "LV.AMO.2012.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:CircleInscribedAngles,
-        eliozo:ConstructionsTriangulate .
+    eliozo:topic eliozo:Circle,
+        eliozo:CircleInscribedAngles,
+        eliozo:ConstructionsTriangulate,
+        eliozo:Geometry,
+        eliozo:PlaneConstructions .
 
 eliozo:LV.AMO.2012.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -461,6 +467,7 @@ eliozo:LV.AMO.2012.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2012" ;
+    eliozo:image_file "LV.AMO.2012.5.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -480,7 +487,10 @@ saucam par vienādām figūrām.)</p>
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2012.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:SquareGridCutting .
+    eliozo:topic eliozo:Geometry,
+        eliozo:IntegerLattices,
+        eliozo:SquareGrid,
+        eliozo:SquareGridCutting .
 
 eliozo:LV.AMO.2012.6.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -635,7 +645,10 @@ $$ab(3a+5b)=1234567$$?"""@lv ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2012.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:ModularParity .
+    eliozo:topic eliozo:IntegerCongruence,
+        eliozo:ModularArithmetic,
+        eliozo:ModularParity,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2012.7.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-segment,
@@ -719,6 +732,7 @@ eliozo:LV.AMO.2012.7.5 a eliozo:Problem ;
     eliozo:domain "Comb",
         "Geom" ;
     eliozo:event "LV.AMO.2012" ;
+    eliozo:image_file "LV.AMO.2012.7.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -821,7 +835,12 @@ olimpiādē?</p>"""@lv ;
     eliozo:suffix "LV.AMO.2012.8" ;
     eliozo:suggestedGrade 8 ;
     eliozo:topic eliozo:BaricenterCoordinates,
-        eliozo:NumTheoryInequalityMethod .
+        eliozo:Geometry,
+        eliozo:GrahamPollakTheorem,
+        eliozo:MaxMinProblems,
+        eliozo:NumTheory,
+        eliozo:NumTheoryInequalityMethod,
+        eliozo:PigeonholePrincipleInGeometry .
 
 eliozo:LV.AMO.2012.8.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-divisibility,
@@ -846,7 +865,9 @@ dalās ar $5$. Pierādi, ka visi uzrakstītie skaitļi dalās ar $5$ .</p>"""@lv
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2012.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:PeriodicRemainders .
+    eliozo:topic eliozo:IntegerCongruence,
+        eliozo:NumTheory,
+        eliozo:PeriodicRemainders .
 
 eliozo:LV.AMO.2012.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -897,7 +918,9 @@ eliozo:LV.AMO.2012.9.1 a eliozo:Problem ;
     eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.AMO.2012.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:ModularArithmetic .
+    eliozo:topic eliozo:IntegerCongruence,
+        eliozo:ModularArithmetic,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2012.9.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-triangle ;
@@ -922,7 +945,9 @@ $\\sphericalangle BAC=\\sphericalangle BMN$</p>"""@lv ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2012.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:TriangleCongruence .
+    eliozo:topic eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleCongruence .
 
 eliozo:LV.AMO.2012.9.3 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-primes,
@@ -946,7 +971,9 @@ pirmskaitļi. Aprēķini $a$ skaitlisko vērtību.</p>"""@lv ;
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2012.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:ModularArithmetic .
+    eliozo:topic eliozo:IntegerCongruence,
+        eliozo:ModularArithmetic,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2012.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -974,7 +1001,9 @@ ar $37$. Vai Pēteris vienmēr var uzvarēt?</p>"""@lv ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2012.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:ModularArithmetic .
+    eliozo:topic eliozo:IntegerCongruence,
+        eliozo:ModularArithmetic,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2012.9.5 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-trapezoid,
@@ -1001,7 +1030,10 @@ piecos vienlielos trijstūros.</p>
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2012.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:Trapezoids,
+    eliozo:topic eliozo:Geometry,
+        eliozo:Quadrilaterals,
+        eliozo:SpecialQuadrilaterals,
+        eliozo:Trapezoids,
         eliozo:TriangleAreaBaseHeight .
 
 eliozo:SOLN.LV.AMO.2012.10.1.SUB1 a eliozo:Solution ;

@@ -92,9 +92,14 @@ eliozo:LV.AMO.2018.10.4 a eliozo:Problem ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2018.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:DivisibilityProperties,
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityProperties,
+        eliozo:DivisibilityRules,
         eliozo:DivisibilityRulesFor3And9,
+        eliozo:IntegerCongruence,
+        eliozo:IntegerPolynomials,
         eliozo:ModularArithmetic,
+        eliozo:NumTheory,
         eliozo:PolynomialDifferenceDivisibility .
 
 eliozo:LV.AMO.2018.10.5 a eliozo:Problem ;
@@ -149,6 +154,7 @@ eliozo:LV.AMO.2018.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2018" ;
+    eliozo:image_file "LV.AMO.2018.11.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -291,6 +297,7 @@ eliozo:LV.AMO.2018.12.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2018" ;
+    eliozo:image_file "LV.AMO.2018.12.3.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -343,7 +350,8 @@ eliozo:LV.AMO.2018.12.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2018" ;
-    eliozo:method eliozo:PigeonholePrincipleBasic ;
+    eliozo:method eliozo:MeanValuePrinciple,
+        eliozo:PigeonholePrincipleBasic ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -761,6 +769,7 @@ eliozo:LV.AMO.2018.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2018" ;
+    eliozo:image_file "LV.AMO.2018.7.5.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;

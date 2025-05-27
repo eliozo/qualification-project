@@ -488,16 +488,16 @@ def md_to_rdf(md_file_path, ttl_file_path, topic_lineage, subdomain_lineage, met
                     if vv in topic_lineage:
                         for ancestor in topic_lineage[vv]: 
                             add_problem_topiclike_prop(g, problem_node, 'topic', ancestor)
-                elif k == 'method' and vv != '': 
-                    add_problem_topiclike_prop(g, problem_node, 'method', vv)
-                    if vv in method_lineage:
-                        for ancestor in method_lineage[vv]: 
-                            add_problem_topiclike_prop(g, problem_node, 'method', ancestor)
                 elif k == 'subdomain' and vv != '': 
                     add_problem_topiclike_prop(g, problem_node, 'subdomain', vv)
                     if vv in subdomain_lineage:
                         for ancestor in subdomain_lineage[vv]: 
                             add_problem_topiclike_prop(g, problem_node, 'subdomain', ancestor)
+                elif k == 'method' and vv != '': 
+                    add_problem_topiclike_prop(g, problem_node, 'method', vv)
+                    if vv in method_lineage:
+                        for ancestor in method_lineage[vv]: 
+                            add_problem_topiclike_prop(g, problem_node, 'method', ancestor)
                 elif k == 'concepts' and vv != '':
                     add_problem_topiclike_prop(g, problem_node, 'concepts', "TRM-"+vv)
                 else:

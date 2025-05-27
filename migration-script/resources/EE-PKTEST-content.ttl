@@ -8,6 +8,7 @@ eliozo:EE.PK.2010TEST.7.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2010TEST" ;
+    eliozo:image_file "EE.PK.2010TEST.7.6.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -39,12 +40,18 @@ Atrast $\\sphericalangle BAC$, ja $\\sphericalangle CED = 25^{\\circ}$. </p>
     eliozo:problemYear 2010 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2010TEST.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:AnglesParallelLines,
+    eliozo:topic eliozo:AnglesAndTriangleSimilarity,
+        eliozo:AnglesParallelLines,
+        eliozo:Geometry,
+        eliozo:Triangle,
         eliozo:TriangleAngles,
-        eliozo:TrianglesIsosceles .
+        eliozo:TriangleMetric,
+        eliozo:TrianglesIsosceles,
+        eliozo:TrianglesSpecial .
 
 eliozo:EE.PK.2010TEST.8.6 a eliozo:Problem ;
     eliozo:Answer "360" ;
@@ -53,6 +60,7 @@ eliozo:EE.PK.2010TEST.8.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2010TEST" ;
+    eliozo:image_file "EE.PK.2010TEST.8.6.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -80,10 +88,14 @@ kas apzīmēti ar lociņiem.</p>
     eliozo:problemYear 2010 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2010TEST.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:TriangleAngles .
+    eliozo:topic eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2011TEST.7.7 a eliozo:Problem ;
     eliozo:Answer "45" ;
@@ -92,6 +104,7 @@ eliozo:EE.PK.2011TEST.7.7 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2011TEST" ;
+    eliozo:image_file "EE.PK.2011TEST.7.7.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -123,12 +136,18 @@ $40^{\\circ}$ и $50^{\\circ}$, и основания которых лежат 
     eliozo:problemYear 2011 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2011TEST.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:AnglesParallelLines,
+    eliozo:topic eliozo:AnglesAndTriangleSimilarity,
+        eliozo:AnglesParallelLines,
+        eliozo:Geometry,
+        eliozo:Triangle,
         eliozo:TriangleAngles,
-        eliozo:TrianglesIsosceles .
+        eliozo:TriangleMetric,
+        eliozo:TrianglesIsosceles,
+        eliozo:TrianglesSpecial .
 
 eliozo:EE.PK.2011TEST.9.7 a eliozo:Problem ;
     eliozo:Answer "150" ;
@@ -138,6 +157,7 @@ eliozo:EE.PK.2011TEST.9.7 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2011TEST" ;
+    eliozo:image_file "EE.PK.2011TEST.9.7.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -161,11 +181,14 @@ eliozo:EE.PK.2011TEST.9.7 a eliozo:Problem ;
     eliozo:problemYear 2011 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:Polygons ;
+    eliozo:subdomain eliozo:Geometry,
+        eliozo:Polygons ;
     eliozo:suffix "EE.PK.2011TEST.9" ;
     eliozo:suggestedGrade 9 ;
     eliozo:topic eliozo:AnglesCentral,
-        eliozo:PolygonAnglesSum .
+        eliozo:Geometry,
+        eliozo:PolygonAnglesSum,
+        eliozo:Polygons .
 
 eliozo:EE.PK.2012TEST.7.8 a eliozo:Problem ;
     eliozo:Answer "120" ;
@@ -174,6 +197,7 @@ eliozo:EE.PK.2012TEST.7.8 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2012TEST" ;
+    eliozo:image_file "EE.PK.2012TEST.7.8.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -209,11 +233,16 @@ taisnstūra malu. </p>
     eliozo:problemYear 2012 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2012TEST.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:AnglesParallelLines,
-        eliozo:TrianglesEquilateral .
+    eliozo:topic eliozo:AnglesAndTriangleSimilarity,
+        eliozo:AnglesParallelLines,
+        eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TrianglesEquilateral,
+        eliozo:TrianglesSpecial .
 
 eliozo:EE.PK.2012TEST.8.6 a eliozo:Problem ;
     eliozo:Answer "20" ;
@@ -222,6 +251,7 @@ eliozo:EE.PK.2012TEST.8.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2012TEST" ;
+    eliozo:image_file "EE.PK.2012TEST.8.6.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -248,10 +278,14 @@ $CD$ делят углы этого треугольника пополам, а 
     eliozo:problemTimeID "2012TEST" ;
     eliozo:problemYear 2012 ;
     eliozo:problem_number "None"^^xsd:integer ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2012TEST.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:TriangleAngles .
+    eliozo:topic eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2013TEST.7.6 a eliozo:Problem ;
     eliozo:Answer "340" ;
@@ -289,7 +323,8 @@ Kāda ir leņķu $\\alpha$ un $\\gamma$ summa?</p>
     eliozo:problemYear 2013 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:CirclesAndRelatedAngles ;
+    eliozo:subdomain eliozo:CirclesAndRelatedAngles,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2013TEST.7" ;
     eliozo:suggestedGrade 7 ;
     eliozo:topic eliozo:AnglesCentral,
@@ -302,6 +337,7 @@ eliozo:EE.PK.2013TEST.8.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2013TEST" ;
+    eliozo:image_file "EE.PK.2013TEST.8.6.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -337,12 +373,18 @@ $\\sphearicalangle CBD = 25^{\\circ}$.
     eliozo:problemYear 2013 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2013TEST.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:AnglesParallelLines,
+    eliozo:topic eliozo:AnglesAndTriangleSimilarity,
+        eliozo:AnglesParallelLines,
+        eliozo:Geometry,
+        eliozo:Triangle,
         eliozo:TriangleAngles,
-        eliozo:TrianglesIsosceles .
+        eliozo:TriangleMetric,
+        eliozo:TrianglesIsosceles,
+        eliozo:TrianglesSpecial .
 
 eliozo:EE.PK.2014TEST.7.8 a eliozo:Problem ;
     eliozo:Answer "65" ;
@@ -351,6 +393,7 @@ eliozo:EE.PK.2014TEST.7.8 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2014TEST" ;
+    eliozo:image_file "EE.PK.2014TEST.7.8.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -378,10 +421,14 @@ $|AB| = |CD|$. Найти величину угла $ABC$.</p>
     eliozo:problemYear 2014 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2014TEST.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:TrianglesIsosceles .
+    eliozo:topic eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TrianglesIsosceles,
+        eliozo:TrianglesSpecial .
 
 eliozo:EE.PK.2014TEST.8.7 a eliozo:Problem ;
     eliozo:Answer "30" ;
@@ -390,6 +437,7 @@ eliozo:EE.PK.2014TEST.8.7 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2014TEST" ;
+    eliozo:image_file "EE.PK.2014TEST.8.7.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -421,10 +469,14 @@ malas $AC$ garumu.</p>
     eliozo:problemYear 2014 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2014TEST.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:TriangleAngles .
+    eliozo:topic eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2015TEST.7.6 a eliozo:Problem ;
     eliozo:Answer "30" ;
@@ -433,6 +485,7 @@ eliozo:EE.PK.2015TEST.7.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2015TEST" ;
+    eliozo:image_file "EE.PK.2015TEST.7.6.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -468,11 +521,16 @@ $BC$ оказались равной длины. Найти величину у�
     eliozo:problemYear 2015 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2015TEST.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:TriangleAngles,
-        eliozo:TrianglesIsosceles .
+    eliozo:topic eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric,
+        eliozo:TrianglesIsosceles,
+        eliozo:TrianglesSpecial .
 
 eliozo:EE.PK.2015TEST.8.8 a eliozo:Problem ;
     eliozo:Answer "130" ;
@@ -481,6 +539,7 @@ eliozo:EE.PK.2015TEST.8.8 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2015TEST" ;
+    eliozo:image_file "EE.PK.2015TEST.8.8.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -510,11 +569,15 @@ Aprēķināt leņķi, kas apzīmēts ar $x$. </p>
     eliozo:problemYear 2015 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2015TEST.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:AnglesParallelLines,
-        eliozo:PolygonRegular .
+    eliozo:topic eliozo:AnglesAndTriangleSimilarity,
+        eliozo:AnglesParallelLines,
+        eliozo:Geometry,
+        eliozo:PolygonRegular,
+        eliozo:Polygons .
 
 eliozo:EE.PK.2015TEST.9.6 a eliozo:Problem ;
     eliozo:Answer "50" ;
@@ -523,6 +586,7 @@ eliozo:EE.PK.2015TEST.9.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2015TEST" ;
+    eliozo:image_file "EE.PK.2015TEST.9.6.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -560,11 +624,16 @@ bet $\\sphericalangle ABC$ ir $80^{\\circ}$. Aprēķināt $y$. </p>
     eliozo:problemYear 2015 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2015TEST.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:AnglesParallelLines,
-        eliozo:TriangleAngles .
+    eliozo:topic eliozo:AnglesAndTriangleSimilarity,
+        eliozo:AnglesParallelLines,
+        eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2016TEST.7.8 a eliozo:Problem ;
     eliozo:Answer "48" ;
@@ -573,6 +642,7 @@ eliozo:EE.PK.2016TEST.7.8 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2016TEST" ;
+    eliozo:image_file "EE.PK.2016TEST.7.8.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -598,11 +668,16 @@ eliozo:EE.PK.2016TEST.7.8 a eliozo:Problem ;
     eliozo:problemYear 2016 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2016TEST.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:AnglesParallelLines,
-        eliozo:TriangleAngles .
+    eliozo:topic eliozo:AnglesAndTriangleSimilarity,
+        eliozo:AnglesParallelLines,
+        eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2016TEST.8.9 a eliozo:Problem ;
     eliozo:Answer "57" ;
@@ -611,6 +686,7 @@ eliozo:EE.PK.2016TEST.8.9 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2016TEST" ;
+    eliozo:image_file "EE.PK.2016TEST.8.9.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -638,11 +714,16 @@ Trijstūris $ACE$ ir vienādsānu. Atrast leņķi $\\sphericalangle EAB$.</p>
     eliozo:problemYear 2016 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2016TEST.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:AnglesParallelLines,
-        eliozo:TriangleAngles .
+    eliozo:topic eliozo:AnglesAndTriangleSimilarity,
+        eliozo:AnglesParallelLines,
+        eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2016TEST.9.9 a eliozo:Problem ;
     eliozo:Answer "20" ;
@@ -651,6 +732,7 @@ eliozo:EE.PK.2016TEST.9.9 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2016TEST" ;
+    eliozo:image_file "EE.PK.2016TEST.9.9.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -682,11 +764,16 @@ $AD$ и $BE$ пересекаются в точке $C$, и действует �
     eliozo:problemYear 2016 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2016TEST.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:AnglesParallelLines,
-        eliozo:TriangleAngles .
+    eliozo:topic eliozo:AnglesAndTriangleSimilarity,
+        eliozo:AnglesParallelLines,
+        eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2017TEST.7.6 a eliozo:Problem ;
     eliozo:Answer "30" ;
@@ -716,11 +803,16 @@ bet trijstūris $ACD$ ir vienādsānu. Aprēķināt leņķi $ACB$. </p>
     eliozo:problemYear 2017 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2017TEST.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:AnglesParallelLines,
-        eliozo:TriangleAngles .
+    eliozo:topic eliozo:AnglesAndTriangleSimilarity,
+        eliozo:AnglesParallelLines,
+        eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2017TEST.8.6 a eliozo:Problem ;
     eliozo:Answer "40" ;
@@ -729,6 +821,7 @@ eliozo:EE.PK.2017TEST.8.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2017TEST" ;
+    eliozo:image_file "EE.PK.2017TEST.8.6.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -764,10 +857,14 @@ Aprēķināt leņķi $ACD$. </p>
     eliozo:problemYear 2017 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2017TEST.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:TriangleAngles .
+    eliozo:topic eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2017TEST.9.6 a eliozo:Problem ;
     eliozo:Answer "80" ;
@@ -805,11 +902,16 @@ $CD$. Величина одного из внутренних углов тре�
     eliozo:problemYear 2017 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2017TEST.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:AnglesParallelLines,
-        eliozo:TriangleAngles .
+    eliozo:topic eliozo:AnglesAndTriangleSimilarity,
+        eliozo:AnglesParallelLines,
+        eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2018TEST.7.6 a eliozo:Problem ;
     eliozo:Answer "80" ;
@@ -818,6 +920,7 @@ eliozo:EE.PK.2018TEST.7.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2018TEST" ;
+    eliozo:image_file "EE.PK.2018TEST.7.6.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -847,11 +950,16 @@ leņķis $x$ ir $23^{\\circ}$ un leņķis $y$ ir $32^{\\circ}$.</p>
     eliozo:problemYear 2018 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2018TEST.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:PolygonAnglesSum,
-        eliozo:TriangleAngles .
+    eliozo:topic eliozo:Geometry,
+        eliozo:PolygonAnglesSum,
+        eliozo:Polygons,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2018TEST.8.7 a eliozo:Problem ;
     eliozo:Answer "44" ;
@@ -860,6 +968,7 @@ eliozo:EE.PK.2018TEST.8.7 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2018TEST" ;
+    eliozo:image_file "EE.PK.2018TEST.8.7.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -883,11 +992,16 @@ eliozo:EE.PK.2018TEST.8.7 a eliozo:Problem ;
     eliozo:problemYear 2018 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2018TEST.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:PolygonAnglesSum,
-        eliozo:TriangleAngles .
+    eliozo:topic eliozo:Geometry,
+        eliozo:PolygonAnglesSum,
+        eliozo:Polygons,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2018TEST.9.6 a eliozo:Problem ;
     eliozo:Answer "120" ;
@@ -896,6 +1010,7 @@ eliozo:EE.PK.2018TEST.9.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2018TEST" ;
+    eliozo:image_file "EE.PK.2018TEST.9.6.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -923,10 +1038,14 @@ $M$ ir tā malas viduspunkts.</p>
     eliozo:problemYear 2018 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2018TEST.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:TrianglesEquilateral .
+    eliozo:topic eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TrianglesEquilateral,
+        eliozo:TrianglesSpecial .
 
 eliozo:EE.PK.2019TEST.7.6 a eliozo:Problem ;
     eliozo:Answer "33" ;
@@ -935,6 +1054,7 @@ eliozo:EE.PK.2019TEST.7.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2019TEST" ;
+    eliozo:image_file "EE.PK.2019TEST.7.6.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -966,11 +1086,16 @@ Aprēķināt $\\sphericalangle ABC$. </p>
     eliozo:problemYear 2019 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2019TEST.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:AnglesParallelLines,
-        eliozo:TriangleAngles .
+    eliozo:topic eliozo:AnglesAndTriangleSimilarity,
+        eliozo:AnglesParallelLines,
+        eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2019TEST.8.6 a eliozo:Problem ;
     eliozo:Answer "128" ;
@@ -979,6 +1104,7 @@ eliozo:EE.PK.2019TEST.8.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2019TEST" ;
+    eliozo:image_file "EE.PK.2019TEST.8.6.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1016,11 +1142,16 @@ $BC$ равны. Из точки $D$, лежащей на
     eliozo:problemYear 2019 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:AnglesParallelsSimilarity ;
+    eliozo:subdomain eliozo:AnglesParallelsSimilarity,
+        eliozo:Geometry ;
     eliozo:suffix "EE.PK.2019TEST.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:AnglesParallelLines,
-        eliozo:TriangleAngles .
+    eliozo:topic eliozo:AnglesAndTriangleSimilarity,
+        eliozo:AnglesParallelLines,
+        eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TriangleAngles,
+        eliozo:TriangleMetric .
 
 eliozo:EE.PK.2019TEST.9.6 a eliozo:Problem ;
     eliozo:Answer "39" ;
@@ -1029,6 +1160,7 @@ eliozo:EE.PK.2019TEST.9.6 a eliozo:Problem ;
     eliozo:country "EE" ;
     eliozo:domain "Geom" ;
     eliozo:event "EE.PK.2019TEST" ;
+    eliozo:image_file "EE.PK.2019TEST.9.6.png" ;
     eliozo:olympiad "EE.PK" ;
     eliozo:olympiadCode "PK" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -1062,7 +1194,8 @@ Atrast leņķi $\\sphericalangle BKL$.</p>
     eliozo:problemYear 2019 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ShortAnswer" ;
-    eliozo:subdomain eliozo:Polygons ;
+    eliozo:subdomain eliozo:Geometry,
+        eliozo:Polygons ;
     eliozo:suffix "EE.PK.2019TEST.9" ;
     eliozo:suggestedGrade 9 .
 

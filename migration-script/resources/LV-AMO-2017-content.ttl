@@ -76,6 +76,7 @@ eliozo:LV.AMO.2017.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2017" ;
+    eliozo:image_file "LV.AMO.2017.10.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -126,7 +127,11 @@ pirmskaitļi, tad trešais skaitlis dalās ar $6$.</p>"""@lv ;
     eliozo:suffix "LV.AMO.2017.10" ;
     eliozo:suggestedGrade 10 ;
     eliozo:topic eliozo:ArithmeticSeriesAll,
-        eliozo:DivisibilityProperties .
+        eliozo:BezoutIdentity,
+        eliozo:Divisibility,
+        eliozo:DivisibilityProperties,
+        eliozo:GcdAndLcm,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2017.11.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -411,6 +416,7 @@ eliozo:LV.AMO.2017.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2017" ;
+    eliozo:image_file "LV.AMO.2017.5.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -539,6 +545,7 @@ eliozo:LV.AMO.2017.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2017" ;
+    eliozo:image_file "LV.AMO.2017.6.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -565,6 +572,7 @@ eliozo:LV.AMO.2017.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2017" ;
+    eliozo:image_file "LV.AMO.2017.6.3.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -672,6 +680,7 @@ eliozo:LV.AMO.2017.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2017" ;
+    eliozo:image_file "LV.AMO.2017.7.2_1.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -705,6 +714,7 @@ eliozo:LV.AMO.2017.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2017" ;
+    eliozo:image_file "LV.AMO.2017.7.3.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -817,6 +827,7 @@ eliozo:LV.AMO.2017.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2017" ;
+    eliozo:image_file "LV.AMO.2017.8.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -843,6 +854,7 @@ eliozo:LV.AMO.2017.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2017" ;
+    eliozo:image_file "LV.AMO.2017.8.3.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -993,6 +1005,7 @@ eliozo:LV.AMO.2017.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "" ;
     eliozo:event "LV.AMO.2017" ;
+    eliozo:image_file "LV.AMO.2017.9.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;

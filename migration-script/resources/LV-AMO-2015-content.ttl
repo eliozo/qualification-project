@@ -68,7 +68,9 @@ viencipara skaitļa ciparu reizinājumu sauc tā vienīgo ciparu.)</p>"""@lv ;
     eliozo:strategies "TrialAndError" ;
     eliozo:suffix "LV.AMO.2015.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:InequalityProvingStronger .
+    eliozo:topic eliozo:Algebra,
+        eliozo:InequalityProvingStronger,
+        eliozo:ProvingInequalities .
 
 eliozo:LV.AMO.2015.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -265,6 +267,7 @@ eliozo:LV.AMO.2015.12.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2015" ;
+    eliozo:image_file "LV.AMO.2015.12.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -384,6 +387,7 @@ eliozo:LV.AMO.2015.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2015" ;
+    eliozo:image_file "LV.AMO.2015.5.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -529,6 +533,7 @@ eliozo:LV.AMO.2015.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2015" ;
+    eliozo:image_file "LV.AMO.2015.6.3.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -677,8 +682,11 @@ divi cipari ir $11$ un kurš dalās ar $11$?</p>"""@lv ;
         "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:DivisibilityRuleFor11,
-        eliozo:DivisibilityRulesFor3And9 .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityRuleFor11,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesFor3And9,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2015.7.4 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-isosceles-triangle ;
@@ -753,13 +761,17 @@ racionāls skaitlis!</p>"""@lv ;
     eliozo:questionType "ProveDisprove" ;
     eliozo:suffix "LV.AMO.2015.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:InfiniteDescent,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:Identities,
+        eliozo:InfiniteDescent,
         eliozo:StandardIdentities .
 
 eliozo:LV.AMO.2015.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2015" ;
+    eliozo:image_file "LV.AMO.2015.8.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -807,7 +819,13 @@ naturāla skaitļa kvadrāta un pirmskaitļa summu.</p>"""@lv ;
     eliozo:questionType "FindExample" ;
     eliozo:suffix "LV.AMO.2015.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:PrimesDistribution,
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:Identities,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
+        eliozo:Primes,
+        eliozo:PrimesDistribution,
         eliozo:StandardIdentities .
 
 eliozo:LV.AMO.2015.8.4 a eliozo:Problem ;
@@ -886,6 +904,7 @@ eliozo:LV.AMO.2015.9.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2015" ;
+    eliozo:image_file "LV.AMO.2015.9.2.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;

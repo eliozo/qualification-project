@@ -597,7 +597,7 @@ eliozo:ChessPositions a eliozo:Topic ;
     eliozo:topicID "ChessPositions" ;
     eliozo:topicName "Izvietojumi uz šaha galdiņa" ;
     eliozo:topicNumber "2.4.1.0.0" ;
-    skos:broader eliozo:CombinatorialStructures ;
+    skos:broader eliozo:SystemsAndStructures ;
     skos:prefLabel "ChessPositions" .
 
 eliozo:ChineseRemainderTheorem a eliozo:Topic ;
@@ -3055,7 +3055,7 @@ eliozo:LatinSquares a eliozo:Topic ;
     eliozo:topicID "LatinSquares" ;
     eliozo:topicName "Latīņu kvadrāti" ;
     eliozo:topicNumber "2.4.6.0.0" ;
-    skos:broader eliozo:CombinatorialStructures ;
+    skos:broader eliozo:SystemsAndStructures ;
     skos:prefLabel "LatinSquares" .
 
 eliozo:LatticePointsWithinBounds a eliozo:Topic ;
@@ -4069,7 +4069,7 @@ eliozo:PascalTriangle a eliozo:Topic ;
     eliozo:topicID "PascalTriangle" ;
     eliozo:topicName "Paskāla trijstūris" ;
     eliozo:topicNumber "2.4.4.0.0" ;
-    skos:broader eliozo:CombinatorialStructures ;
+    skos:broader eliozo:SystemsAndStructures ;
     skos:prefLabel "PascalTriangle" .
 
 eliozo:PedalTriangle a eliozo:Topic ;
@@ -5174,7 +5174,7 @@ eliozo:SpecialLattices a eliozo:Topic ;
     eliozo:topicID "SpecialLattices" ;
     eliozo:topicName "Īpaši režģi" ;
     eliozo:topicNumber "2.4.5.0.0" ;
-    skos:broader eliozo:CombinatorialStructures ;
+    skos:broader eliozo:SystemsAndStructures ;
     skos:prefLabel "SpecialLattices" .
 
 eliozo:Square a eliozo:Topic ;
@@ -5395,7 +5395,7 @@ eliozo:SystemsOfSubsequences a eliozo:Topic ;
     eliozo:topicID "SystemsOfSubsequences" ;
     eliozo:topicName "Apakšvirkņu sistēmas" ;
     eliozo:topicNumber "2.4.3.0.0" ;
-    skos:broader eliozo:CombinatorialStructures ;
+    skos:broader eliozo:SystemsAndStructures ;
     skos:prefLabel "SystemsOfSubsequences" .
 
 eliozo:SystemsOfSubsets a eliozo:Topic ;
@@ -5408,7 +5408,7 @@ eliozo:SystemsOfSubsets a eliozo:Topic ;
     eliozo:topicID "SystemsOfSubsets" ;
     eliozo:topicName "Apakškopu sistēmas" ;
     eliozo:topicNumber "2.4.2.0.0" ;
-    skos:broader eliozo:CombinatorialStructures ;
+    skos:broader eliozo:SystemsAndStructures ;
     skos:prefLabel "SystemsOfSubsets" .
 
 eliozo:SystemsOtherMethods a eliozo:Topic ;
@@ -7519,25 +7519,6 @@ eliozo:ArithmeticAndGeometricSeries a eliozo:Topic ;
         eliozo:SeriesMembersSumsClosedFormulas ;
     skos:prefLabel "ArithmeticAndGeometricSeries" .
 
-eliozo:CombinatorialStructures a eliozo:Topic ;
-    eliozo:sorter_L1 2 ;
-    eliozo:sorter_L2 4 ;
-    eliozo:sorter_L3 0 ;
-    eliozo:sorter_L4 0 ;
-    eliozo:sorter_L5 0 ;
-    eliozo:topicDescription "Izvietojumi uz šaha galdiņa. Apakškopu sistēmas. Apakšvirkņu sistēmas. Paskāla trijstūris. Turnīri. Regulāri režģi. Latīņu kvadrāti" ;
-    eliozo:topicID "CombinatorialStructures" ;
-    eliozo:topicName "Kombinatoriskas struktūras" ;
-    eliozo:topicNumber "2.4.0.0.0" ;
-    skos:broader eliozo:Combinatorics ;
-    skos:narrower eliozo:ChessPositions,
-        eliozo:LatinSquares,
-        eliozo:PascalTriangle,
-        eliozo:SpecialLattices,
-        eliozo:SystemsOfSubsequences,
-        eliozo:SystemsOfSubsets ;
-    skos:prefLabel "CombinatorialStructures" .
-
 eliozo:Combinatorics a eliozo:Topic ;
     eliozo:sorter_L1 2 ;
     eliozo:sorter_L2 0 ;
@@ -7549,12 +7530,12 @@ eliozo:Combinatorics a eliozo:Topic ;
     eliozo:topicName "Kombinatorika" ;
     eliozo:topicNumber "2.0.0.0.0" ;
     skos:narrower eliozo:CombinatorialAlgorithms,
-        eliozo:CombinatorialStructures,
         eliozo:CountingObjects,
         eliozo:DiscreteProbability,
         eliozo:Games,
         eliozo:GraphProblems,
-        eliozo:LogicProblems ;
+        eliozo:LogicProblems,
+        eliozo:SystemsAndStructures ;
     skos:prefLabel "Combinatorics" .
 
 eliozo:CuttingCoversColoring a eliozo:Topic ;
@@ -7708,6 +7689,25 @@ eliozo:ProjectiveTransformations a eliozo:Topic ;
         eliozo:ProjectionsPreservingCircle,
         eliozo:RulerOnlyImpossibleConstructions ;
     skos:prefLabel "ProjectiveTransformations" .
+
+eliozo:SystemsAndStructures a eliozo:Topic ;
+    eliozo:sorter_L1 2 ;
+    eliozo:sorter_L2 4 ;
+    eliozo:sorter_L3 0 ;
+    eliozo:sorter_L4 0 ;
+    eliozo:sorter_L5 0 ;
+    eliozo:topicDescription "Izvietojumi uz šaha galdiņa. Apakškopu sistēmas. Apakšvirkņu sistēmas. Paskāla trijstūris. Turnīri. Regulāri režģi. Latīņu kvadrāti" ;
+    eliozo:topicID "SystemsAndStructures" ;
+    eliozo:topicName "Kombinatoriskas struktūras" ;
+    eliozo:topicNumber "2.4.0.0.0" ;
+    skos:broader eliozo:Combinatorics ;
+    skos:narrower eliozo:ChessPositions,
+        eliozo:LatinSquares,
+        eliozo:PascalTriangle,
+        eliozo:SpecialLattices,
+        eliozo:SystemsOfSubsequences,
+        eliozo:SystemsOfSubsets ;
+    skos:prefLabel "SystemsAndStructures" .
 
 eliozo:FunctionalEquationsForRealFunctions a eliozo:Topic ;
     eliozo:sorter_L1 1 ;

@@ -20,10 +20,13 @@ eliozo:LV.AMO.2003.10.1 a eliozo:Problem ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain eliozo:Inequalities ;
+    eliozo:subdomain eliozo:Algebra,
+        eliozo:Inequalities ;
     eliozo:suffix "LV.AMO.2003.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:InequalitiesEquivalentTransformations .
+    eliozo:topic eliozo:Algebra,
+        eliozo:InequalitiesEquivalentTransformations,
+        eliozo:ProvingInequalities .
 
 eliozo:LV.AMO.2003.10.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -49,16 +52,20 @@ līdzīgi savā starpā.</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "Prove" ;
-    eliozo:subdomain eliozo:Triangles ;
+    eliozo:subdomain eliozo:Geometry,
+        eliozo:Triangles ;
     eliozo:suffix "LV.AMO.2003.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:CircleInscribedAngles .
+    eliozo:topic eliozo:Circle,
+        eliozo:CircleInscribedAngles,
+        eliozo:Geometry .
 
 eliozo:LV.AMO.2003.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.AMO.2003" ;
-    eliozo:method eliozo:ContradictionForExistence ;
+    eliozo:method eliozo:ContradictionForExistence,
+        eliozo:ContradictionMethod ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -80,10 +87,12 @@ skaitļu kvadrāti.</p>
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindExample",
         "ProveDisprove" ;
-    eliozo:subdomain eliozo:PrimeFactors ;
+    eliozo:subdomain eliozo:NumberTheory,
+        eliozo:PrimeFactors ;
     eliozo:suffix "LV.AMO.2003.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:AlgebraicTransformations .
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations .
 
 eliozo:LV.AMO.2003.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -108,10 +117,14 @@ vai nu iepriekšējā vietā, vai tieši blakus iepriekšējai vietai.</p>
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindCount" ;
-    eliozo:subdomain eliozo:CountingObjects ;
+    eliozo:subdomain eliozo:Combinatorics,
+        eliozo:CountingObjects ;
     eliozo:suffix "LV.AMO.2003.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:LinearRecurrencesVariable .
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:LinearRecurrencesVariable,
+        eliozo:MethodOfRecurrentRelations .
 
 eliozo:LV.AMO.2003.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -135,7 +148,8 @@ $m+n \\geq 3$).</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindAll" ;
-    eliozo:subdomain eliozo:CombinatorialStructures ;
+    eliozo:subdomain eliozo:CombinatorialStructures,
+        eliozo:Combinatorics ;
     eliozo:suffix "LV.AMO.2003.10" ;
     eliozo:suggestedGrade 10 .
 
@@ -162,10 +176,14 @@ Kāda ir lielākā iespējamā $z$ vērtība?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindOptimal" ;
-    eliozo:subdomain eliozo:MultivariableEquations ;
+    eliozo:subdomain eliozo:Algebra,
+        eliozo:Equations,
+        eliozo:MultivariableEquations ;
     eliozo:suffix "LV.AMO.2003.11" ;
     eliozo:suggestedGrade 11 ;
-    eliozo:topic eliozo:ModulusFunctionProperties .
+    eliozo:topic eliozo:Algebra,
+        eliozo:ModulusFunctionProperties,
+        eliozo:ProvingInequalities .
 
 eliozo:LV.AMO.2003.11.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -190,10 +208,13 @@ $B$ pieder nogrieznim $YZ$ un $XB \\perp YZ$.</p>
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "Prove" ;
-    eliozo:subdomain eliozo:CirclesAndRelatedAngles ;
+    eliozo:subdomain eliozo:CirclesAndRelatedAngles,
+        eliozo:Geometry ;
     eliozo:suffix "LV.AMO.2003.11" ;
     eliozo:suggestedGrade 11 ;
-    eliozo:topic eliozo:CircleInscribedAngles .
+    eliozo:topic eliozo:Circle,
+        eliozo:CircleInscribedAngles,
+        eliozo:Geometry .
 
 eliozo:LV.AMO.2003.11.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -211,7 +232,8 @@ eliozo:LV.AMO.2003.11.3 a eliozo:Problem ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain eliozo:Divisibility ;
+    eliozo:subdomain eliozo:Divisibility,
+        eliozo:NumberTheory ;
     eliozo:suffix "LV.AMO.2003.11" ;
     eliozo:suggestedGrade 11 ;
     eliozo:topic "" .
@@ -220,7 +242,8 @@ eliozo:LV.AMO.2003.11.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2003" ;
-    eliozo:method eliozo:GeometricInterpretation ;
+    eliozo:method eliozo:GeometricInterpretation,
+        eliozo:InterpretationMethod ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -242,7 +265,9 @@ vienlaicīgi izpildītos divas prasības:</p>
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain eliozo:CombinatorialCounterexamples ;
+    eliozo:subdomain eliozo:CombinatorialCounterexamples,
+        eliozo:CombinatorialStructures,
+        eliozo:Combinatorics ;
     eliozo:suffix "LV.AMO.2003.11" ;
     eliozo:suggestedGrade 11 .
 
@@ -250,7 +275,8 @@ eliozo:LV.AMO.2003.11.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2003" ;
-    eliozo:method eliozo:ExtremeElements ;
+    eliozo:method eliozo:ExtremeElements,
+        eliozo:ExtremePrinciple ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -269,7 +295,8 @@ pārējām zaudējusi vismaz vienai no izvēlētajām $n$.</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "Prove" ;
-    eliozo:subdomain eliozo:Graphs ;
+    eliozo:subdomain eliozo:Combinatorics,
+        eliozo:Graphs ;
     eliozo:suffix "LV.AMO.2003.11" ;
     eliozo:suggestedGrade 11 .
 
@@ -419,16 +446,21 @@ pirmais cipars par $1$ mazāks nekā visu citu ciparu summa.</p>
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindOptimal" ;
-    eliozo:subdomain eliozo:NumeralSystems ;
+    eliozo:subdomain eliozo:NumberTheory,
+        eliozo:NumeralSystems ;
     eliozo:suffix "LV.AMO.2003.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:DecimalNotationDigits .
+    eliozo:topic eliozo:DecimalNotation,
+        eliozo:DecimalNotationDigits,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems .
 
 eliozo:LV.AMO.2003.5.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2003" ;
-    eliozo:method eliozo:ExhaustiveAlgorithms ;
+    eliozo:method eliozo:Algorithms,
+        eliozo:ExhaustiveAlgorithms ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -447,7 +479,8 @@ un, ja tā ir, tad vai tā vieglāka vai smagāka par citām?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "Algorithm" ;
-    eliozo:subdomain eliozo:CombinatorialAlgorithms ;
+    eliozo:subdomain eliozo:CombinatorialAlgorithms,
+        eliozo:Combinatorics ;
     eliozo:suffix "LV.AMO.2003.5" ;
     eliozo:suggestedGrade 5 .
 
@@ -475,7 +508,9 @@ mazākais iespējamais).</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindExample" ;
-    eliozo:subdomain eliozo:SquareGridReorder ;
+    eliozo:subdomain eliozo:Geometry,
+        eliozo:IntegerLattices,
+        eliozo:SquareGridReorder ;
     eliozo:suffix "LV.AMO.2003.5" ;
     eliozo:suggestedGrade 5 .
 
@@ -501,16 +536,20 @@ ne ar vienu citu naturālu skaitli kā $1$?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain eliozo:CombinatorialStructures ;
+    eliozo:subdomain eliozo:CombinatorialStructures,
+        eliozo:Combinatorics ;
     eliozo:suffix "LV.AMO.2003.5" ;
     eliozo:suggestedGrade 5 ;
-    eliozo:topic eliozo:GraphColoringAndLabeling .
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:GraphColoringAndLabeling,
+        eliozo:GraphProblems .
 
 eliozo:LV.AMO.2003.5.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2003" ;
-    eliozo:method eliozo:PeriodicInvariant ;
+    eliozo:method eliozo:InvariantMethod,
+        eliozo:PeriodicInvariant ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -529,7 +568,8 @@ to var panākt, ja sākotnējie lodīšu daudzumi ir $10,\\ 12$ un $15$?</p>"""@
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain eliozo:CombinatorialAlgorithms ;
+    eliozo:subdomain eliozo:CombinatorialAlgorithms,
+        eliozo:Combinatorics ;
     eliozo:suffix "LV.AMO.2003.5" ;
     eliozo:suggestedGrade 5 .
 
@@ -555,16 +595,20 @@ pulkst. $12^{00}$ abi pulksteņi atkal rādīs pareizu laiku?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindOptimal" ;
-    eliozo:subdomain eliozo:WordProblems ;
+    eliozo:subdomain eliozo:Algebra,
+        eliozo:WordProblems ;
     eliozo:suffix "LV.AMO.2003.6" ;
     eliozo:suggestedGrade 6 ;
-    eliozo:topic eliozo:GcdAndLcm .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:GcdAndLcm,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2003.6.2 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2003" ;
-    eliozo:method eliozo:FixedInvariant ;
+    eliozo:method eliozo:FixedInvariant,
+        eliozo:InvariantMethod ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -583,17 +627,23 @@ otrā. Vai to var izdarīt, ja <strong>(A)</strong> $n=5$, <strong>(B)</strong> 
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain eliozo:SquareGridCut ;
+    eliozo:subdomain eliozo:Geometry,
+        eliozo:IntegerLattices,
+        eliozo:SquareGridCut ;
     eliozo:suffix "LV.AMO.2003.6" ;
     eliozo:suggestedGrade 6 ;
-    eliozo:topic eliozo:RemaindersInCombinatorics .
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:InterpretationMethodInCounting,
+        eliozo:RemaindersInCombinatorics .
 
 eliozo:LV.AMO.2003.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg",
         "Comb" ;
     eliozo:event "LV.AMO.2003" ;
-    eliozo:method eliozo:ExhaustiveAlgorithms ;
+    eliozo:method eliozo:Algorithms,
+        eliozo:ExhaustiveAlgorithms ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -610,7 +660,8 @@ pēdējo, būtu vienāds ar savu abu kaimiņu summu vai starpību?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain eliozo:CombinatorialStructures ;
+    eliozo:subdomain eliozo:CombinatorialStructures,
+        eliozo:Combinatorics ;
     eliozo:suffix "LV.AMO.2003.6" ;
     eliozo:suggestedGrade 6 .
 
@@ -640,16 +691,20 @@ un cik punktus viņi ieguva?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindAll" ;
-    eliozo:subdomain eliozo:Graphs ;
+    eliozo:subdomain eliozo:Combinatorics,
+        eliozo:Graphs ;
     eliozo:suffix "LV.AMO.2003.6" ;
     eliozo:suggestedGrade 6 ;
-    eliozo:topic eliozo:GraphVertexDegree .
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:GraphProblems,
+        eliozo:GraphVertexDegree .
 
 eliozo:LV.AMO.2003.6.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2003" ;
-    eliozo:method eliozo:ExhaustiveAlgorithms ;
+    eliozo:method eliozo:Algorithms,
+        eliozo:ExhaustiveAlgorithms ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -666,7 +721,8 @@ svēršanām var noteikt katra atsvara masu?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain eliozo:CombinatorialAlgorithms ;
+    eliozo:subdomain eliozo:CombinatorialAlgorithms,
+        eliozo:Combinatorics ;
     eliozo:suffix "LV.AMO.2003.6" ;
     eliozo:suggestedGrade 6 .
 
@@ -686,10 +742,14 @@ eliozo:LV.AMO.2003.7.1 a eliozo:Problem ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindOptimal" ;
-    eliozo:subdomain eliozo:MultivariableEquations ;
+    eliozo:subdomain eliozo:Algebra,
+        eliozo:Equations,
+        eliozo:MultivariableEquations ;
     eliozo:suffix "LV.AMO.2003.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:CaseAnalysis .
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTechniques,
+        eliozo:CaseAnalysis .
 
 eliozo:LV.AMO.2003.7.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -716,16 +776,20 @@ kā minēts iepriekš?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain eliozo:ObjectSystemsGeometry ;
+    eliozo:subdomain eliozo:Geometry,
+        eliozo:ObjectSystemsGeometry ;
     eliozo:suffix "LV.AMO.2003.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:CuttingShapesSpecial .
+    eliozo:topic eliozo:CuttingCoversColoring,
+        eliozo:CuttingShapesSpecial,
+        eliozo:Geometry .
 
 eliozo:LV.AMO.2003.7.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.AMO.2003" ;
-    eliozo:method eliozo:ContradictionForNonExistence ;
+    eliozo:method eliozo:ContradictionForNonExistence,
+        eliozo:ContradictionMethod ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -745,10 +809,13 @@ uzrakstīts skaitlis. Kas nevar izdarīt gājienu, zaudē.</p>
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "Prove" ;
-    eliozo:subdomain eliozo:NumericGamesAndAlgorithms ;
+    eliozo:subdomain eliozo:NumberTheory,
+        eliozo:NumericGamesAndAlgorithms ;
     eliozo:suffix "LV.AMO.2003.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:GamesSymmetry .
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:Games,
+        eliozo:GamesSymmetry .
 
 eliozo:LV.AMO.2003.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -772,16 +839,21 @@ Pierādiet, ka $EE_{1} \\perp BC$.</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "Prove" ;
-    eliozo:subdomain eliozo:Polygons ;
+    eliozo:subdomain eliozo:Geometry,
+        eliozo:Polygons ;
     eliozo:suffix "LV.AMO.2003.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:TrianglesIsosceles .
+    eliozo:topic eliozo:Geometry,
+        eliozo:Triangle,
+        eliozo:TrianglesIsosceles,
+        eliozo:TrianglesSpecial .
 
 eliozo:LV.AMO.2003.7.5 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Comb" ;
     eliozo:event "LV.AMO.2003" ;
-    eliozo:method eliozo:Monovariant ;
+    eliozo:method eliozo:InvariantMethod,
+        eliozo:Monovariant ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -802,7 +874,8 @@ var būt $0$, ja <strong>(A)</strong> $n=8$, <strong>(B)</strong> $n=9$?</p>"""@
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain eliozo:CombinatorialAlgorithms ;
+    eliozo:subdomain eliozo:CombinatorialAlgorithms,
+        eliozo:Combinatorics ;
     eliozo:suffix "LV.AMO.2003.7" ;
     eliozo:suggestedGrade 7 .
 
@@ -830,10 +903,14 @@ $x_{0},\\ x_{1},\\ x_{2}$ un $x_{3}$, nelietojot kvadrātsaknes zīmi.</p>"""@lv
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindExample" ;
-    eliozo:subdomain eliozo:Equations ;
+    eliozo:subdomain eliozo:Algebra,
+        eliozo:Equations ;
     eliozo:suffix "LV.AMO.2003.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:VietaFormulas .
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicEquations,
+        eliozo:EquationAnalysis,
+        eliozo:VietaFormulas .
 
 eliozo:LV.AMO.2003.8.2 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -857,10 +934,14 @@ vajadzēja iegūt. Kādu sešciparu skaitli Andris uzrakstīja?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindAll" ;
-    eliozo:subdomain eliozo:NumeralSystems ;
+    eliozo:subdomain eliozo:NumberTheory,
+        eliozo:NumeralSystems ;
     eliozo:suffix "LV.AMO.2003.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:NotationShift .
+    eliozo:topic eliozo:NotationManipulate,
+        eliozo:NotationShift,
+        eliozo:NumTheory,
+        eliozo:NumeralSystems .
 
 eliozo:LV.AMO.2003.8.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -882,10 +963,13 @@ dalītājs būtu $1$?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindOptimal" ;
-    eliozo:subdomain eliozo:NumberRepresentation ;
+    eliozo:subdomain eliozo:NumberRepresentation,
+        eliozo:NumberTheory ;
     eliozo:suffix "LV.AMO.2003.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:GcdAndLcm .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:GcdAndLcm,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2003.8.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -916,10 +1000,14 @@ kopgarumu. (Tika novilktas <strong>tikai</strong> līnijas, kas dala kvadrātus 
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "Prove" ;
-    eliozo:subdomain eliozo:SquareGridCut ;
+    eliozo:subdomain eliozo:Geometry,
+        eliozo:IntegerLattices,
+        eliozo:SquareGridCut ;
     eliozo:suffix "LV.AMO.2003.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:PolygonPerimeter .
+    eliozo:topic eliozo:Geometry,
+        eliozo:PolygonPerimeter,
+        eliozo:Polygons .
 
 eliozo:LV.AMO.2003.8.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -946,10 +1034,14 @@ kvadrātu summām arī jābūt vienādām savā starpā.</p>
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain eliozo:IntegerEquations ;
+    eliozo:subdomain eliozo:IntegerEquations,
+        eliozo:NumberTheory ;
     eliozo:suffix "LV.AMO.2003.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:StandardIdentities .
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTransformations,
+        eliozo:Identities,
+        eliozo:StandardIdentities .
 
 eliozo:LV.AMO.2003.9.1 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -996,10 +1088,14 @@ $8$?</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain eliozo:MagicConfigurations ;
+    eliozo:subdomain eliozo:CombinatorialStructures,
+        eliozo:Combinatorics,
+        eliozo:MagicConfigurations ;
     eliozo:suffix "LV.AMO.2003.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:DoubleCounting .
+    eliozo:topic eliozo:Algebra,
+        eliozo:AlgebraicTechniques,
+        eliozo:DoubleCounting .
 
 eliozo:LV.AMO.2003.9.3 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1021,10 +1117,13 @@ $\\left(p_{1}-1\\right)\\left(p_{2}-1\\right) \\ldots \\left(p_{n}-1\\right)$.</
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "FindAll" ;
-    eliozo:subdomain eliozo:PrimeFactors ;
+    eliozo:subdomain eliozo:NumberTheory,
+        eliozo:PrimeFactors ;
     eliozo:suffix "LV.AMO.2003.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:DivisibilityProperties .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:DivisibilityProperties,
+        eliozo:NumTheory .
 
 eliozo:LV.AMO.2003.9.4 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -1044,10 +1143,14 @@ $\\sphericalangle BAC=2 \\sphericalangle CBA$.</p>"""@lv ;
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "Prove" ;
-    eliozo:subdomain eliozo:Triangles ;
+    eliozo:subdomain eliozo:Geometry,
+        eliozo:Triangles ;
     eliozo:suffix "LV.AMO.2003.9" ;
     eliozo:suggestedGrade 9 ;
     eliozo:topic eliozo:BisectorDividingArcInTwo,
+        eliozo:Circle,
+        eliozo:Geometry,
+        eliozo:Triangle,
         eliozo:TriangleCongruence .
 
 eliozo:LV.AMO.2003.9.5 a eliozo:Problem ;
@@ -1075,10 +1178,13 @@ ne vairāk par $n$ konfektēm. Kas apēd pēdējo konfekti, uzvar.</p>
     eliozo:problemYear 2003 ;
     eliozo:problem_number "None"^^xsd:integer ;
     eliozo:questionType "ProveDisprove" ;
-    eliozo:subdomain eliozo:CombinatorialGames ;
+    eliozo:subdomain eliozo:CombinatorialGames,
+        eliozo:Combinatorics ;
     eliozo:suffix "LV.AMO.2003.9" ;
     eliozo:suggestedGrade 9 ;
-    eliozo:topic eliozo:GameInvariant .
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:GameInvariant,
+        eliozo:Games .
 
 eliozo:SOLN.LV.AMO.2003.10.1.SUB1 a eliozo:Solution ;
     eliozo:solutionNum 1 ;

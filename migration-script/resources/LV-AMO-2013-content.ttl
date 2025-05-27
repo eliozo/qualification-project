@@ -58,6 +58,7 @@ eliozo:LV.AMO.2013.10.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2013" ;
+    eliozo:image_file "LV.AMO.2013.10.3.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -92,7 +93,8 @@ eliozo:LV.AMO.2013.10.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "NT" ;
     eliozo:event "LV.AMO.2013" ;
-    eliozo:method eliozo:PigeonholePrincipleBasic ;
+    eliozo:method eliozo:MeanValuePrinciple,
+        eliozo:PigeonholePrincipleBasic ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -110,7 +112,9 @@ no tiem var izvēlēties divus, no kuriem viens dalās ar otru.</p>"""@lv ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2013.10" ;
     eliozo:suggestedGrade 10 ;
-    eliozo:topic eliozo:ArithmeticAndGeometricSeries .
+    eliozo:topic eliozo:Algebra,
+        eliozo:ArithmeticAndGeometricSeries,
+        eliozo:NumericSequences .
 
 eliozo:LV.AMO.2013.10.5 a eliozo:Problem ;
     eliozo:country "LV" ;
@@ -448,6 +452,7 @@ eliozo:LV.AMO.2013.5.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Alg" ;
     eliozo:event "LV.AMO.2013" ;
+    eliozo:image_file "LV.AMO.2013.5.3.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -474,6 +479,7 @@ eliozo:LV.AMO.2013.5.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2013" ;
+    eliozo:image_file "LV.AMO.2013.5.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -593,6 +599,7 @@ eliozo:LV.AMO.2013.6.3 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2013" ;
+    eliozo:image_file "LV.AMO.2013.6.3.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -682,9 +689,13 @@ skaitli ar tā ciparu reizinājumu, dalījums ir vismaz $\\frac{11}{9}$.</p>"""@
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2013.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:NotationPolynomial,
+    eliozo:topic eliozo:NotationManipulate,
+        eliozo:NotationPolynomial,
+        eliozo:NumTheory,
         eliozo:NumTheoryExtremeElement,
-        eliozo:NumTheoryInequalityLargeIntervals .
+        eliozo:NumTheoryInequalityLargeIntervals,
+        eliozo:NumTheoryInequalityMethod,
+        eliozo:NumeralSystems .
 
 eliozo:LV.AMO.2013.7.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-triangle ;
@@ -736,8 +747,16 @@ kvadrāts ir skaitļa reizinājums pašam ar sevi.)</p>"""@lv ;
     eliozo:questionType "Prove" ;
     eliozo:suffix "LV.AMO.2013.7" ;
     eliozo:suggestedGrade 7 ;
-    eliozo:topic eliozo:DivisibilityRulesForRemainders,
+    eliozo:topic eliozo:Algebra,
+        eliozo:ArithmeticAndGeometricSeries,
+        eliozo:Divisibility,
+        eliozo:DivisibilityRules,
+        eliozo:DivisibilityRulesForRemainders,
         eliozo:DivisibilityRulesLastDigits,
+        eliozo:FactorizationAndProperties,
+        eliozo:IntegerFactorization,
+        eliozo:NumTheory,
+        eliozo:NumericSequences,
         eliozo:PrimeFactorizationAndPowers,
         eliozo:SeriesMembersSumsClosedFormulas .
 
@@ -745,6 +764,7 @@ eliozo:LV.AMO.2013.7.4 a eliozo:Problem ;
     eliozo:country "LV" ;
     eliozo:domain "Geom" ;
     eliozo:event "LV.AMO.2013" ;
+    eliozo:image_file "LV.AMO.2013.7.4.png" ;
     eliozo:olympiad "LV.AMO" ;
     eliozo:olympiadCode "AMO" ;
     eliozo:olympiadType "RegionalOrOpen" ;
@@ -816,8 +836,13 @@ to pirmo ciparu, samazinās $36$ reizes.</p>"""@lv ;
     eliozo:questionType "FindAll" ;
     eliozo:suffix "LV.AMO.2013.8" ;
     eliozo:suggestedGrade 8 ;
-    eliozo:topic eliozo:NotationFragments,
-        eliozo:NumTheoryExpr .
+    eliozo:topic eliozo:BuildingExamples,
+        eliozo:ExamplesInNumberTheory,
+        eliozo:NotationFragments,
+        eliozo:NotationManipulate,
+        eliozo:NumTheory,
+        eliozo:NumTheoryExpr,
+        eliozo:NumeralSystems .
 
 eliozo:LV.AMO.2013.8.2 a eliozo:Problem ;
     eliozo:concepts eliozo:TRM-perimeter,

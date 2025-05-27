@@ -143,8 +143,11 @@ Atrast skaitļu $a_{1989}$ un $a_{1990}$ lielāko kopīgo dalītāju.</p>"""@lv 
         10,
         11,
         12 ;
-    eliozo:topic eliozo:InvariantAlgebraic,
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:InvariantAlgebraic,
         eliozo:LinearRecurrencesConstant,
+        eliozo:MethodOfRecurrentRelations,
         eliozo:NumTheoryMathInduction .
 
 eliozo:BBK2012.P1.105 a eliozo:Problem ;
@@ -500,7 +503,11 @@ ir bezgalīgi daudz locekļu, kas ir savstarpēji pirmskaitļi ar skaitli $m$.</
         10,
         11,
         12 ;
-    eliozo:topic eliozo:ArithmeticSeriesAll .
+    eliozo:topic eliozo:ArithmeticSeriesAll,
+        eliozo:BezoutIdentity,
+        eliozo:Divisibility,
+        eliozo:GcdAndLcm,
+        eliozo:NumTheory .
 
 eliozo:BBK2012.P1.12 a eliozo:Problem ;
     eliozo:domain "NT" ;
@@ -575,7 +582,10 @@ lielāko kopīgo dalītāju.</p>"""@lv ;
         10,
         11,
         12 ;
-    eliozo:topic eliozo:InvariantAlgebraic,
+    eliozo:topic eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:InvariantAlgebraic,
+        eliozo:MethodOfRecurrentRelations,
         eliozo:NonlinearRecurrences,
         eliozo:NumTheoryMathInduction .
 
@@ -596,8 +606,14 @@ eliozo:BBK2012.P1.122 a eliozo:Problem ;
         10,
         11,
         12 ;
-    eliozo:topic eliozo:ArithmeticSeriesDivisibility,
+    eliozo:topic eliozo:Algebra,
+        eliozo:ArithmeticSeriesDivisibility,
+        eliozo:BezoutIdentity,
+        eliozo:Divisibility,
+        eliozo:GcdAndLcm,
         eliozo:MultiplesInInterval,
+        eliozo:NumTheory,
+        eliozo:NumericSequences,
         eliozo:SequencePeriodicity .
 
 eliozo:BBK2012.P1.123 a eliozo:Problem ;
@@ -616,9 +632,14 @@ eliozo:BBK2012.P1.123 a eliozo:Problem ;
         10,
         11,
         12 ;
-    eliozo:topic eliozo:ArithmeticSeriesDivisibility,
+    eliozo:topic eliozo:Algebra,
+        eliozo:ArithmeticSeriesDivisibility,
+        eliozo:BezoutIdentity,
+        eliozo:Divisibility,
         eliozo:GcdAndLcm,
         eliozo:MultiplesInInterval,
+        eliozo:NumTheory,
+        eliozo:NumericSequences,
         eliozo:SequencePeriodicity .
 
 eliozo:BBK2012.P1.124 a eliozo:Problem ;
@@ -643,7 +664,12 @@ vai nu ar $3$, vai ar $5$.</p>"""@lv ;
         10,
         11,
         12 ;
-    eliozo:topic eliozo:InclusionExclusionPrinciple,
+    eliozo:topic eliozo:Algebra,
+        eliozo:Combinatorics,
+        eliozo:CountingObjects,
+        eliozo:CountingSetOperations,
+        eliozo:InclusionExclusionPrinciple,
+        eliozo:NumericSequences,
         eliozo:SequencePeriodicity .
 
 eliozo:BBK2012.P1.125 a eliozo:Problem ;
@@ -664,7 +690,11 @@ un kuri dalās ar $3$?</p>"""@lv ;
         10,
         11,
         12 ;
-    eliozo:topic eliozo:ChineseRemainderTheorem,
+    eliozo:topic eliozo:Algebra,
+        eliozo:ChineseRemainderTheorem,
+        eliozo:IntegerCongruence,
+        eliozo:NumTheory,
+        eliozo:NumericSequences,
         eliozo:SequencePeriodicity .
 
 eliozo:BBK2012.P1.126 a eliozo:Problem ;
@@ -691,7 +721,9 @@ Pietiek uzrādīt vienu šādu $1328$ skaitļu komplektu.</p>"""@lv ;
         10,
         11,
         12 ;
-    eliozo:topic eliozo:SequencePeriodicity .
+    eliozo:topic eliozo:Algebra,
+        eliozo:NumericSequences,
+        eliozo:SequencePeriodicity .
 
 eliozo:BBK2012.P1.127 a eliozo:Problem ;
     eliozo:domain "NT" ;
@@ -1331,6 +1363,7 @@ Pierādīt, ka $ab$ nedalās ar $210$.</p>"""@lv ;
 
 eliozo:BBK2012.P1.32 a eliozo:Problem ;
     eliozo:domain "NT" ;
+    eliozo:image_file "BBK2012.P1.32.png" ;
     eliozo:olympiadType "Book" ;
     eliozo:problemBook "BBK2012" ;
     eliozo:problemBookSection "P1" ;
@@ -1441,7 +1474,9 @@ Atrast lielāko iespējamo diferences vērtību, ja zināms, ka tā ir vesels sk
         10,
         11,
         12 ;
-    eliozo:topic eliozo:GcdAndLcm .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:GcdAndLcm,
+        eliozo:NumTheory .
 
 eliozo:BBK2012.P1.37 a eliozo:Problem ;
     eliozo:domain "NT" ;
@@ -1780,7 +1815,11 @@ piederētu vismaz vienai progresijai?</p>"""@lv ;
         10,
         11,
         12 ;
-    eliozo:topic eliozo:GeometricSeriesGaps .
+    eliozo:topic eliozo:Algebra,
+        eliozo:ArithmeticAndGeometricSeries,
+        eliozo:GeometricSeriesGaps,
+        eliozo:NumericSequences,
+        eliozo:SequenceGaps .
 
 eliozo:BBK2012.P1.53 a eliozo:Problem ;
     eliozo:domain "NT" ;
@@ -2729,7 +2768,9 @@ Kāda var būt lielākā šīs progresijas diferences vērtība?</p>"""@lv ;
         10,
         11,
         12 ;
-    eliozo:topic eliozo:GcdAndLcm .
+    eliozo:topic eliozo:Divisibility,
+        eliozo:GcdAndLcm,
+        eliozo:NumTheory .
 
 eliozo:BBK2012.P1.95 a eliozo:Problem ;
     eliozo:domain "NT" ;
