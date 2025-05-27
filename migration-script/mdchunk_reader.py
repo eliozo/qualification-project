@@ -10,11 +10,56 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../e
 from webmd_utils import extract_latex, replace_placeholders, proc_markdown
 
 import rdflib
-from rdflib.namespace import RDF, FOAF, SKOS, XSD
+# from rdflib.namespace import RDF, FOAF, SKOS, XSD
+
+from rdflib import Graph, RDF, FOAF, SKOS, XSD, URIRef, Namespace
 
 RDF_NS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 eliozo_ns = "http://www.dudajevagatve.lv/eliozo#"
 ELIOZO = rdflib.Namespace("http://www.dudajevagatve.lv/eliozo#")
+
+
+def get_skos_lineage_dict(filename):
+    # Load RDF graph
+    g = Graph()
+    g.parse(filename, format="turtle")
+
+    SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
+    ELIOZO = Namespace("http://your.eliozo.namespace/")  # Update to actual namespace!
+
+    # Mapping: URIRef -> skos:prefLabel
+    uri_to_label = {}
+    # Mapping: skos:prefLabel (str) -> URIRef
+    label_to_uri = {}
+
+    # Build mappings for all topics that have skos:prefLabel
+    for s, p, o in g.triples((None, SKOS.prefLabel, None)):
+        label = str(o)
+        uri_to_label[s] = label
+        label_to_uri[label] = s
+
+    result = {}
+
+    for label, topic_uri in label_to_uri.items():
+        parent_labels = []
+        current = topic_uri
+
+        while True:
+            broader = list(g.objects(current, SKOS.broader))
+            if not broader:
+                break
+            parent_uri = broader[0]
+            if parent_uri in uri_to_label:
+                parent_label = uri_to_label[parent_uri]
+                parent_labels.append(parent_label)
+            else:
+                # If the parent doesn't have a label, use its URI as last-resort 
+                parent_labels.append(str(parent_uri))
+            current = parent_uri
+
+        result[label] = parent_labels
+
+    return result
 
 
 # RDF methods
@@ -83,6 +128,14 @@ def extract_problem(text):
         else:
             problem_text.append(line)
     return '\n'.join(problem_text)
+
+
+def get_image_filename(arg):
+    pattern = r'!\[\]\(([^\(\)]*\.png)\)'
+    match = re.search(pattern, arg)
+    if match:
+        return match.group(1)
+    return None
 
 
 # Drop the question/meta portions from 'text'; leave only solutions.
@@ -314,7 +367,7 @@ def get_suggested_grade(title):
         return []
 
 
-def md_to_rdf(md_file_path, ttl_file_path):
+def md_to_rdf(md_file_path, ttl_file_path, topic_lineage, subdomain_lineage, method_lineage):
     sections = extract_sections_from_md(md_file_path)
 
     # sections = sections[0:1]
@@ -418,6 +471,10 @@ def md_to_rdf(md_file_path, ttl_file_path):
             add_problem_literal_prop_lang(g, problem_node, 'problemText', problem_text_md, theLang)
             add_problem_literal_prop_lang(g, problem_node, 'problemTextHtml', problem_text_html, theLang)
 
+            img_file = get_image_filename(problem_text_md)
+            if img_file is not None: 
+                add_problem_literal_prop(g, problem_node, 'image_file', img_file)
+
         add_problem_literal_prop(g, problem_node, 'olympiadType', olympiadType)
         for sug_grade in suggestGrade:
             add_problem_integer_prop(g, problem_node, 'suggestedGrade', sug_grade)
@@ -427,10 +484,20 @@ def md_to_rdf(md_file_path, ttl_file_path):
             for vv in vvv:
                 if k == 'topic' and vv != '':
                     add_problem_topiclike_prop(g, problem_node, 'topic', vv)
+                    # TODO: Avoid this check - not needed, if all labels are valid/existing
+                    if vv in topic_lineage:
+                        for ancestor in topic_lineage[vv]: 
+                            add_problem_topiclike_prop(g, problem_node, 'topic', ancestor)
                 elif k == 'method' and vv != '': 
                     add_problem_topiclike_prop(g, problem_node, 'method', vv)
+                    if vv in method_lineage:
+                        for ancestor in method_lineage[vv]: 
+                            add_problem_topiclike_prop(g, problem_node, 'method', ancestor)
                 elif k == 'subdomain' and vv != '': 
                     add_problem_topiclike_prop(g, problem_node, 'subdomain', vv)
+                    if vv in subdomain_lineage:
+                        for ancestor in subdomain_lineage[vv]: 
+                            add_problem_topiclike_prop(g, problem_node, 'subdomain', ancestor)
                 elif k == 'concepts' and vv != '':
                     add_problem_topiclike_prop(g, problem_node, 'concepts', "TRM-"+vv)
                 else:
@@ -452,5 +519,13 @@ def md_to_rdf(md_file_path, ttl_file_path):
 
 
 if __name__ == '__main__':
-    md_to_rdf('resources/LV-AMO-lv-amo-2023.md', 'resources/temp.ttl')
+    topic_lineage_dict = get_skos_lineage_dict("resources/skos_topic.ttl")
+    subdomain_lineage_dict = get_skos_lineage_dict("resources/skos_subdomain.ttl")
+    method_lineage_dict = get_skos_lineage_dict("resources/skos_method.ttl")
+    
+
+
+    # print(f"topic_lineage_dict = {topic_lineage_dict}")
+
+    md_to_rdf('resources/LV-AMO-2023-content.md', 'resources/temp.ttl', topic_lineage_dict, subdomain_lineage_dict, method_lineage_dict)
 
