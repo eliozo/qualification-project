@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, abort, url_for, json, jsonify, request, session, redirect
+from flask import Flask, render_template, abort, url_for, json, jsonify, request, session, redirect, send_from_directory
 from flask_babel import Babel, _
 import json
 import html
@@ -841,10 +841,16 @@ def custom_gettext(string, **variables):
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
+
+    app.config.from_pyfile(os.path.join(os.path.dirname(__file__), '..', 'config.py'))
     app.config.from_mapping(
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
     )
+
+
+    # The directory where your images are
+    STATIC_IMAGE_ROOT = os.path.join(app.root_path, 'static', 'eliozo', 'images')
 
     # Configure the available languages
     LANGUAGES = {
@@ -894,6 +900,12 @@ def create_app(test_config=None):
             session['lang'] = 'lv'
 
         return redirect(next_url)
+
+    @app.route('/eliozo/static/eliozo/images/<path:filename>')
+    def eliozo_static_images(filename):
+        # Return file from $APP_ROOT/eliozo/static/eliozo/images/
+        return send_from_directory(STATIC_IMAGE_ROOT, filename)
+
 
     @app.route('/')
     def main():
