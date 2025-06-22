@@ -14,7 +14,7 @@ from flask import current_app, url_for
 
 def fix_image_links(arg):
     USE_REMOTE_STATIC = current_app.config.get('USE_REMOTE_STATIC', False)
-    STATIC_PREFIX = ('https://www.dudajevagatve.lv/static/eliozo/images/' 
+    STATIC_PREFIX = ('/static/eliozo/images/' 
                      if USE_REMOTE_STATIC 
                      else url_for('static', filename='eliozo/images/'))
 
