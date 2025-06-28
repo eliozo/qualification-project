@@ -6,7 +6,9 @@ import html
 import requests
 import re
 from .webmd_utils import fix_image_links, mathBeautify
-from .sparql_access import SparqlAccess
+# from .dao.sparql_access import SparqlAccess
+
+from eliozo_dao.sparql_access import SparqlAccess
 
 
 import logging
