@@ -6,6 +6,7 @@ import html
 import requests
 import re
 from .webmd_utils import fix_image_links, mathBeautify
+from .sparql_access import SparqlAccess
 
 
 import logging
@@ -910,24 +911,33 @@ def create_app(test_config=None):
     @app.route('/')
     def main():
         keyword = request.args.get('keyword')
+        
+        fuseki_url = 'http://127.0.0.1:9080/jena-fuseki-war-4.7.0/abc/'
+        sparql_access = SparqlAccess(fuseki_url)
+        hello_message = sparql_access.get_message()
+
         if keyword is None or keyword == "":
             template_context = {
                 'active': 'main',
-                'lang': session.get('lang', 'lv')
+                'lang': session.get('lang', 'lv'),
+                'searchMode': 'exact', 
+                'hello_message': hello_message
             }
             return render_template('main_content.html',  **template_context)
         new_keyword = replace_non_ascii_with_unicode_escape(keyword)
-        caseSensitive = request.args.get('caseSensitive')
-        print(f'caseSensitive = {caseSensitive}')
-        isCaseSensitive = (caseSensitive == '1')
-        regex = request.args.get('regex')
-        print(f'regex = {regex}')
-        isRegex = (regex == '1')
+        # caseSensitive = request.args.get('caseSensitive')
+        # print(f'caseSensitive = {caseSensitive}')
+        # isCaseSensitive = (caseSensitive == '1')
+        # regex = request.args.get('regex')
+        # print(f'regex = {regex}')
+        searchMode = request.args.get('searchMode')
+
+        isRegex = (searchMode == 'regex')
 
         if not isRegex:
-            link = json.loads(getProblemsByKeywordSPARQL(new_keyword, isCaseSensitive))
+            link = json.loads(getProblemsByKeywordSPARQL(new_keyword, False))
         else:
-            link = json.loads(getProblemsByRegexSPARQL(new_keyword, isCaseSensitive))
+            link = json.loads(getProblemsByRegexSPARQL(new_keyword, False))
 
         problems = []
         
@@ -945,10 +955,12 @@ def create_app(test_config=None):
             'problems': problems,
             'keyword' : keyword,
             'active': 'main',
-            'regex': regex,
-            'caseSensitive': caseSensitive,
+            # 'regex': regex,
+            # 'caseSensitive': caseSensitive,
+            'searchMode': searchMode,
             'lang': session.get('lang', 'lv'),
-            'title': 'Sākumlapa'
+            'title': 'Sākumlapa', 
+            'hello_message': hello_message
         }
         return render_template('main_content.html', **template_context)
 

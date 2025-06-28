@@ -1,14 +1,14 @@
 # Translations template for PROJECT.
-# Copyright (C) 2024 ORGANIZATION
+# Copyright (C) 2025 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-13 20:18+0300\n"
+"POT-Creation-Date: 2025-06-28 01:43+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: templates/archive_content.html:15
-msgid "Olympiads with full solutions are shown in bold. Others are incomplete."
-msgstr ""
-
-#: templates/book_problems_content.html:5 templates/concepts_content.html:5
-#: templates/problem_content.html:6 templates/problem_solution_content.html:6
-#: templates/references_content.html:5 templates/topic_tasks_content.html:5
-#: templates/topics_content.html:6 templates/video_content.html:5
+#: templates/book_problems_content.html:5 templates/video_content.html:5
 msgid "Back"
 msgstr ""
 
@@ -163,7 +156,7 @@ msgstr ""
 msgid "Problems with video-recorded solutions."
 msgstr ""
 
-#: templates/filter_content.html:204
+#: templates/filter_content.html:204 templates/main_content.html:23
 msgid "Search"
 msgstr ""
 
@@ -171,11 +164,11 @@ msgstr ""
 msgid "Pages"
 msgstr ""
 
-#: templates/filter_content.html:222 templates/main_content.html:49
+#: templates/filter_content.html:222 templates/main_content.html:69
 msgid "More"
 msgstr ""
 
-#: templates/global.html:16 templates/global.html:105
+#: templates/global.html:16 templates/global.html:105 templates/global.html:146
 msgid "Home"
 msgstr ""
 
@@ -187,7 +180,7 @@ msgstr ""
 msgid "Archive"
 msgstr ""
 
-#: templates/global.html:111 templates/problem_content.html:54
+#: templates/global.html:111 templates/problem_content.html:52
 msgid "Topics"
 msgstr ""
 
@@ -211,32 +204,24 @@ msgstr ""
 msgid "References"
 msgstr ""
 
-#: templates/main_content.html:13
-msgid "Case Sensitive"
+#: templates/main_content.html:27
+msgid "Exact"
 msgstr ""
 
-#: templates/main_content.html:19
-msgid "Regular Expresion"
+#: templates/main_content.html:33
+msgid "Regex"
 msgstr ""
 
-#: templates/main_content.html:23
-msgid "All"
+#: templates/main_content.html:39
+msgid "Semantic"
 msgstr ""
 
-#: templates/main_content.html:24
+#: templates/main_content.html:46
 msgid "Questions"
 msgstr ""
 
-#: templates/main_content.html:25
-msgid "Solutions"
-msgstr ""
-
-#: templates/main_content.html:26
-msgid "Hints"
-msgstr ""
-
-#: templates/main_content.html:27
-msgid "Formulas"
+#: templates/main_content.html:47
+msgid "All"
 msgstr ""
 
 #: templates/problem_content.html:63

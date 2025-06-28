@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-13 20:18+0300\n"
+"POT-Creation-Date: 2025-06-28 01:43+0300\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -18,14 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: templates/archive_content.html:15
-msgid "Olympiads with full solutions are shown in bold. Others are incomplete."
-msgstr ""
-
-#: templates/book_problems_content.html:5 templates/concepts_content.html:5
-#: templates/problem_content.html:6 templates/problem_solution_content.html:6
-#: templates/references_content.html:5 templates/topic_tasks_content.html:5
-#: templates/topics_content.html:6 templates/video_content.html:5
+#: templates/book_problems_content.html:5 templates/video_content.html:5
 msgid "Back"
 msgstr "Back"
 
@@ -168,7 +161,7 @@ msgstr "Video"
 msgid "Problems with video-recorded solutions."
 msgstr "Problems with video-recorded solutions."
 
-#: templates/filter_content.html:204
+#: templates/filter_content.html:204 templates/main_content.html:23
 msgid "Search"
 msgstr "Search"
 
@@ -176,11 +169,11 @@ msgstr "Search"
 msgid "Pages"
 msgstr "Pages"
 
-#: templates/filter_content.html:222 templates/main_content.html:49
+#: templates/filter_content.html:222 templates/main_content.html:69
 msgid "More"
 msgstr "More"
 
-#: templates/global.html:16 templates/global.html:105
+#: templates/global.html:16 templates/global.html:105 templates/global.html:146
 msgid "Home"
 msgstr "Home"
 
@@ -192,7 +185,7 @@ msgstr "Filters"
 msgid "Archive"
 msgstr "Archive"
 
-#: templates/global.html:111 templates/problem_content.html:54
+#: templates/global.html:111 templates/problem_content.html:52
 msgid "Topics"
 msgstr "Topics"
 
@@ -216,35 +209,26 @@ msgstr "Result Summary"
 msgid "References"
 msgstr "References"
 
-#: templates/main_content.html:13
-msgid "Case Sensitive"
-msgstr "Case Sensitive"
+#: templates/main_content.html:27
+msgid "Exact"
+msgstr "Exact"
 
-#: templates/main_content.html:19
-msgid "Regular Expresion"
-msgstr "Regular Expression"
+#: templates/main_content.html:33
+msgid "Regex"
+msgstr "Regex"
 
-#: templates/main_content.html:23
-msgid "All"
-msgstr "All"
+#: templates/main_content.html:39
+msgid "Semantic"
+msgstr "Semantic"
 
-#: templates/main_content.html:24
+#: templates/main_content.html:46
 #, fuzzy
 msgid "Questions"
 msgstr "Question"
 
-#: templates/main_content.html:25
-#, fuzzy
-msgid "Solutions"
-msgstr "Solution"
-
-#: templates/main_content.html:26
-msgid "Hints"
-msgstr "Hints"
-
-#: templates/main_content.html:27
-msgid "Formulas"
-msgstr "Formulas"
+#: templates/main_content.html:47
+msgid "All"
+msgstr "All"
 
 #: templates/problem_content.html:63
 msgid "No solution"
@@ -283,4 +267,22 @@ msgstr "Solved"
 
 #~ msgid "Text to Search"
 #~ msgstr "Text to Search"
+
+#~ msgid "Olympiads with full solutions are shown in bold. Others are incomplete."
+#~ msgstr ""
+
+#~ msgid "Hints"
+#~ msgstr "Hints"
+
+#~ msgid "Formulas"
+#~ msgstr "Formulas"
+
+#~ msgid "Case Sensitive"
+#~ msgstr "Case Sensitive"
+
+#~ msgid "Regular Expresion"
+#~ msgstr "Regular Expression"
+
+#~ msgid "Solutions"
+#~ msgstr "Solution"
 
