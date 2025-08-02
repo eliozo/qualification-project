@@ -916,14 +916,12 @@ def create_app(test_config=None):
         
         fuseki_url = 'http://127.0.0.1:9080/jena-fuseki-war-4.7.0/abc/'
         sparql_access = SparqlAccess(fuseki_url)
-        hello_message = sparql_access.get_message()
 
         if keyword is None or keyword == "":
             template_context = {
                 'active': 'main',
                 'lang': session.get('lang', 'lv'),
-                'searchMode': 'exact', 
-                'hello_message': hello_message
+                'searchMode': 'exact'
             }
             return render_template('main_content.html',  **template_context)
         new_keyword = replace_non_ascii_with_unicode_escape(keyword)
@@ -961,8 +959,7 @@ def create_app(test_config=None):
             # 'caseSensitive': caseSensitive,
             'searchMode': searchMode,
             'lang': session.get('lang', 'lv'),
-            'title': 'Sākumlapa', 
-            'hello_message': hello_message
+            'title': 'Sākumlapa'
         }
         return render_template('main_content.html', **template_context)
 
