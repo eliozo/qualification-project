@@ -6,7 +6,6 @@ import html
 import requests
 import re
 from .webmd_utils import fix_image_links, mathBeautify
-# from .dao.sparql_access import SparqlAccess
 
 from eliozo_dao.sparql_access import SparqlAccess
 
@@ -915,8 +914,7 @@ def create_app(test_config=None):
         keyword = request.args.get('keyword')
         
         fuseki_url = 'http://127.0.0.1:9080/jena-fuseki-war-4.7.0/abc/'
-        sparql_access = SparqlAccess(fuseki_url)
-
+        
         if keyword is None or keyword == "":
             template_context = {
                 'active': 'main',
@@ -1113,6 +1111,10 @@ def create_app(test_config=None):
     @app.route("/references")
     def getReferences():
         # return render_template("info.html")
+        lang = session.get('lang', 'lv')
+        fuseki_url = 'http://127.0.0.1:9080/jena-fuseki-war-4.7.0/abc/'
+        sparql_access = SparqlAccess(fuseki_url)
+        sources = sparql_access.getSPARQLSources(lang)
         template_context = {
             'active': 'references',
             'navlinks': [
@@ -1121,7 +1123,8 @@ def create_app(test_config=None):
                     'title': 'References'
                 }
             ],
-            'lang': session.get('lang', 'lv'),
+            'lang': lang,
+            'sources': sources,
             'title': 'Atsauces'
         }
         return render_template('references_content.html', **template_context)

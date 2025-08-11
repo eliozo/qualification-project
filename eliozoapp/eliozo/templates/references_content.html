@@ -1,29 +1,13 @@
 {% extends 'global.html' %}
 
 {% block content %}
-       <div class="col-sm-8 text-left">
-            <p>Norādes uz olimpiāžu uzdevumu pirmavotiem.</p>
-            <dl>
-            <dt><a class="info" href="https://artofproblemsolving.com/community/c14_international_contests">Art of Problem
-                    Solving: International Contests</a></dt>
-            <dd class="info">Forums, kur risināti IMO, IMO īso sarakstu, Baltijas ceļa, EGMO uzdevumu komplekti</dd>
-
-            <dt><a class="info" href="https://artofproblemsolving.com/community/c58_national_olympiads">Art of Problem Solving:
-                    National Olympiads</a></dt>
-            <dd class="info">Ķīnas u.c. valstu sacensību uzdevumi</dd>
-
-            <dt><a class="info" href="http://nms.lu.lv/uzdevumu-arhivs/latvijas-olimpiades/"> NMS arhīvs </a></dt>
-            <dd class="info">Latvijas nacionālās olimpiādes</dd>
-
-            <dt><a class="info" href="http://www.math.olympiaadid.ut.ee/html/index.php?id=piirk/">Igaunijas žūrijas arhīvs</a>
-            </dt>
-            <dd class="info">Uzdevumu teksti igauņu un krievu valodās.
-                Piirkonnavoorud (reģionu kārta), Lõppvoorud (gala/nacionālā kārta), Lahtised võistlused (rudens un ziemas
-                atklātie konkursi), Valikvõistlused (atlases sacensības).</dd>
-
-            <dt><a class="info" href="http://mif.vu.lt/matematikos-olimpiados/">Lietuvas olimpiāžu uzdevumu arhīvs</a></dt>
-            <dd class="info">Uzdevumu teksti lietuviešu valodā.</dd>
-
-            </dl>
+        <div class="col-sm-8 text-left">
+        <p>Norādes uz olimpiāžu uzdevumu pirmavotiem.</p>
+        <dl>
+        {% for source in sources %}
+        <dt>[{{ source.label }}] <a class="info" href="{{ source.url }}">{{ source.name }}</a></dt>
+        <dd class="info">{{ source.description }}</dd>
+        {% endfor %}
+        </dl>
         </div>
 {% endblock %}
