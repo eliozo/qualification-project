@@ -6,25 +6,11 @@
 <div class="main">
     <form action="{{ url_for('main') }}" method="get">
 
-        {# 
-        {% if caseSensitive=='1' %}
-        <input type="checkbox" name="caseSensitive" value="1" checked/>
-        {% else %}
-        <input type="checkbox" name="caseSensitive" value="1"/>
-        {% endif %}
-        {% trans %}Case Sensitive{% endtrans %}&nbsp;&nbsp;
-        {% if regex=='1' %}
-        <input type="checkbox" name="regex" value="1" checked/>
-        {% else %}
-        <input type="checkbox" name="regex" value="1"/>
-        {% endif %}
-        {% trans %}Regular Expresion{% endtrans %}
-        #}
         <div>{% trans %}Search{% endtrans %}:
         <label style="font-weight:normal;">
             <input type="radio" name="searchMode" value="exact"
             {% if searchMode == 'exact' %}checked{% endif %}>
-            {% trans %}Exact{% endtrans %}
+            {% trans %}Exactly{% endtrans %}
         </label>
         &nbsp;&nbsp;
         <label style="font-weight:normal;">
@@ -36,15 +22,15 @@
         <label style="font-weight:normal;">
             <input type="radio" name="searchMode" value="semantic"
             {% if searchMode == 'semantic' %}checked{% endif %}>
-            {% trans %}Semantic{% endtrans %}
+            {% trans %}By meaning{% endtrans %}
         </label>
         </div>
 
 
         <div class="search-container">
         <select class="search-target" name="something">
-            <option value="questions" selected>{% trans %}Questions{% endtrans %}</option>
-            <option value="solutions">{% trans %}All{% endtrans %}</option>
+            <option value="questions" selected>{% trans %}In questions{% endtrans %}</option>
+            <option value="solutions">{% trans %}Everywhere{% endtrans %}</option>
         </select>
         <input type="text" class="search-input" placeholder="Search ELIOZO" name="keyword" value="{{ keyword }}">
         <button type="submit" class="search-quadratic">

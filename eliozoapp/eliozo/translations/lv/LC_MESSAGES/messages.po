@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-06-28 01:43+0300\n"
+"POT-Creation-Date: 2025-08-16 20:43+0300\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: lv\n"
@@ -164,7 +164,7 @@ msgstr "Video"
 msgid "Problems with video-recorded solutions."
 msgstr "Uzdevumi ar atrisinājumu video formā."
 
-#: templates/filter_content.html:204 templates/main_content.html:23
+#: templates/filter_content.html:204 templates/main_content.html:9
 msgid "Search"
 msgstr "Meklēt"
 
@@ -172,7 +172,7 @@ msgstr "Meklēt"
 msgid "Pages"
 msgstr "Lapas"
 
-#: templates/filter_content.html:222 templates/main_content.html:69
+#: templates/filter_content.html:222 templates/main_content.html:55
 msgid "More"
 msgstr "Vairāk"
 
@@ -212,25 +212,25 @@ msgstr "Rezultāti"
 msgid "References"
 msgstr "Atsauces"
 
-#: templates/main_content.html:27
-msgid "Exact"
-msgstr "precīzi"
+#: templates/main_content.html:13
+msgid "Exactly"
+msgstr "Precīzi"
+
+#: templates/main_content.html:19
+msgid "Regex"
+msgstr "Reg. izteiksmi"
+
+#: templates/main_content.html:25
+msgid "By meaning"
+msgstr "Pēc nozīmes"
+
+#: templates/main_content.html:32
+msgid "In questions"
+msgstr "Jautājumos"
 
 #: templates/main_content.html:33
-msgid "Regex"
-msgstr "reg. izteiksmi"
-
-#: templates/main_content.html:39
-msgid "Semantic"
-msgstr "semantiski"
-
-#: templates/main_content.html:46
-msgid "Questions"
-msgstr "Jautājumi"
-
-#: templates/main_content.html:47
-msgid "All"
-msgstr "Viss"
+msgid "Everywhere"
+msgstr "Visur"
 
 #: templates/problem_content.html:63
 msgid "No solution"
@@ -289,4 +289,16 @@ msgstr "Atrisināti"
 
 #~ msgid "Solutions"
 #~ msgstr "Atrisinājumi"
+
+#~ msgid "Exact"
+#~ msgstr "precīzi"
+
+#~ msgid "Semantic"
+#~ msgstr "semantiski"
+
+#~ msgid "All"
+#~ msgstr "Viss"
+
+#~ msgid "Substring"
+#~ msgstr "Precīzi"
 

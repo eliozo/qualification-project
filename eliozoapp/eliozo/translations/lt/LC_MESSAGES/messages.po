@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-06-28 01:43+0300\n"
+"POT-Creation-Date: 2025-08-16 20:43+0300\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: lt\n"
@@ -166,7 +166,7 @@ msgstr "Video"
 msgid "Problems with video-recorded solutions."
 msgstr "Problemos su vaizdo sprendimais."
 
-#: templates/filter_content.html:204 templates/main_content.html:23
+#: templates/filter_content.html:204 templates/main_content.html:9
 msgid "Search"
 msgstr "Ieškoti"
 
@@ -174,7 +174,7 @@ msgstr "Ieškoti"
 msgid "Pages"
 msgstr "Puslapiai"
 
-#: templates/filter_content.html:222 templates/main_content.html:69
+#: templates/filter_content.html:222 templates/main_content.html:55
 msgid "More"
 msgstr "Daugiau"
 
@@ -214,25 +214,25 @@ msgstr "Rezultatai"
 msgid "References"
 msgstr "Nuorodos"
 
-#: templates/main_content.html:27
-msgid "Exact"
-msgstr "tiksliai"
+#: templates/main_content.html:13
+msgid "Exactly"
+msgstr "Tiksliai"
+
+#: templates/main_content.html:19
+msgid "Regex"
+msgstr "Reg. išraiškos"
+
+#: templates/main_content.html:25
+msgid "By meaning"
+msgstr "Pagal reikšmę"
+
+#: templates/main_content.html:32
+msgid "In questions"
+msgstr "Klausimuose"
 
 #: templates/main_content.html:33
-msgid "Regex"
-msgstr "reg. išraiškos"
-
-#: templates/main_content.html:39
-msgid "Semantic"
-msgstr "semantiškai"
-
-#: templates/main_content.html:46
-msgid "Questions"
-msgstr "Klausimai"
-
-#: templates/main_content.html:47
-msgid "All"
-msgstr "Viskas"
+msgid "Everywhere"
+msgstr "Visur"
 
 #: templates/problem_content.html:63
 msgid "No solution"
@@ -291,4 +291,16 @@ msgstr "Išspręstos"
 
 #~ msgid "Solutions"
 #~ msgstr "Sprendimai"
+
+#~ msgid "Exact"
+#~ msgstr "tiksliai"
+
+#~ msgid "Semantic"
+#~ msgstr "semantiškai"
+
+#~ msgid "All"
+#~ msgstr "Viskas"
+
+#~ msgid "Substring"
+#~ msgstr "Tiksliai"
 
