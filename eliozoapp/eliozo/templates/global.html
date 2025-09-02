@@ -107,26 +107,54 @@
                 <li class="{{ 'active' if active == 'filter' else '' }}"><a href="{{ url_for('getFilter') }}">{% trans %}Filters{% endtrans %}</a>
                 </li>
                 <li class="{{ 'active' if active == 'archive' else '' }}"><a href="{{ url_for('getArchive') }}">{% trans %}Archive{% endtrans %}</a></li>
+                
+                {#
                 <li class="{{ 'active' if active == 'topics' else '' }}"><a
                         href="{{ url_for('getTopics') }}">{% trans %}Topics{% endtrans %}</a></li>
-                <li class="{{ 'active' if active == 'concepts' else '' }}"><a href="{{ url_for('getConcepts') }}">{% trans %}Concepts{% endtrans %}</a>
-                </li>
-                {#
-                <li class="{{ 'active' if active == 'video' else '' }}"><a href="{{ url_for('getVideo') }}">{% trans %}Video{% endtrans %}</a></li>        
+                <li class="{{ 'active' if active == 'concepts' else '' }}"><a href="{{ url_for('getConcepts') }}">{% trans %}Concepts{% endtrans %}</a></li>
                 #}
-                <li class="dropdown {{ 'active' if active == 'statistics' else '' }}">
+
+                <li class="dropdown {{ 'active' if active == 'order_by' else '' }}">
                     <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        {% trans %}Statistics{% endtrans %} <span class="caret"></span>
+                        {% trans %}Order{% endtrans %} <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
+                        <li><a href="{{ url_for('getTopics') }}">{% trans %}by Topic{% endtrans %}</a></li>
+                        <li><a href="{{ url_for('getMethods') }}">{% trans %}by Method{% endtrans %}</a></li>
+                        <li><a href="{{ url_for('getGenres') }}">{% trans %}by Genre{% endtrans %}</a></li>
+                        <li><a href="{{ url_for('getConcepts') }}">{% trans %}by Concept{% endtrans %}</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown {{ 'active' if active == 'statistics' else '' }}">
+                    <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        {% trans %}Reports{% endtrans %} <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url_for('getCurriculum', olympiad='LV.AMO', minyear=2014, maxyear=2024) }}">{% trans %}LV.AMO Overview{% endtrans %}</a></li>
                         <li><a href="{{ url_for('getProblemCounts') }}">{% trans %}Problem Count{% endtrans %}</a></li>
                         <li><a href="{{ url_for('getResults') }}">{% trans %}Result Summary{% endtrans %}</a></li>
                         <li><a href="{{ url_for('getVideo') }}">{% trans %}Video{% endtrans %}</a></li>
                     </ul>
                 </li>
+
+
+                <li class="dropdown {{ 'active' if active == 'about_us' else '' }}">
+                    <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        {% trans %}About Us{% endtrans %} <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url_for('getReferences') }}">{% trans %}References{% endtrans %}</a></li>
+                    </ul>
+                </li>
+
+                {#
                 <li class="{{ 'active' if active == 'references' else '' }}"><a
                         href="{{ url_for('getReferences') }}">{% trans %}References{% endtrans %}</a></li>
-                <li><small>
+                
+                #}
+                        <li><small>
                     {% set current_url = request.full_path %}
                     <a title="English" class="{{ 'selectedlang' if lang == 'en' else '' }}"
                        href="{{ url_for('setLanguage', lang='en', next=current_url) }}">en</a>&nbsp;

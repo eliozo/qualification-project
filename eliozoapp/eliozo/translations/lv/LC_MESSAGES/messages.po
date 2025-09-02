@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-08-16 20:43+0300\n"
+"POT-Creation-Date: 2025-09-02 14:48+0300\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: lv\n"
@@ -156,7 +156,7 @@ msgstr "Atrisinājums"
 msgid "Problems having at least one solution."
 msgstr "Uzdevumi ar vismaz vienu atrisinājumu."
 
-#: templates/filter_content.html:179 templates/global.html:124
+#: templates/filter_content.html:179 templates/global.html:138
 msgid "Video"
 msgstr "Video"
 
@@ -176,7 +176,7 @@ msgstr "Lapas"
 msgid "More"
 msgstr "Vairāk"
 
-#: templates/global.html:16 templates/global.html:105 templates/global.html:146
+#: templates/global.html:16 templates/global.html:105 templates/global.html:174
 msgid "Home"
 msgstr "Sākums"
 
@@ -188,27 +188,47 @@ msgstr "Filtri"
 msgid "Archive"
 msgstr "Arhīvs"
 
-#: templates/global.html:111 templates/problem_content.html:52
-msgid "Topics"
-msgstr "Tēmas"
-
-#: templates/global.html:112
-msgid "Concepts"
-msgstr "Jēdzieni"
-
 #: templates/global.html:119
-msgid "Statistics"
-msgstr "Statistika"
+msgid "Order"
+msgstr "Kārtot"
 
 #: templates/global.html:122
+msgid "by Topic"
+msgstr "pēc tēmas"
+
+#: templates/global.html:123
+msgid "by Method"
+msgstr "pēc metodes"
+
+#: templates/global.html:124
+msgid "by Genre"
+msgstr "pēc žanra"
+
+#: templates/global.html:125
+msgid "by Concept"
+msgstr "pēc jēdziena"
+
+#: templates/global.html:132
+msgid "Reports"
+msgstr "Pārskati"
+
+#: templates/global.html:135
+msgid "LV.AMO Overview"
+msgstr "LV.AMO kopsavilkums"
+
+#: templates/global.html:136
 msgid "Problem Count"
 msgstr "Uzdevumu skaits"
 
-#: templates/global.html:123
+#: templates/global.html:137
 msgid "Result Summary"
 msgstr "Rezultāti"
 
-#: templates/global.html:128
+#: templates/global.html:145
+msgid "About Us"
+msgstr "Par mums"
+
+#: templates/global.html:148
 msgid "References"
 msgstr "Atsauces"
 
@@ -231,6 +251,10 @@ msgstr "Jautājumos"
 #: templates/main_content.html:33
 msgid "Everywhere"
 msgstr "Visur"
+
+#: templates/problem_content.html:52
+msgid "Topics"
+msgstr "Tēmas"
 
 #: templates/problem_content.html:63
 msgid "No solution"
@@ -301,4 +325,7 @@ msgstr "Atrisināti"
 
 #~ msgid "Substring"
 #~ msgstr "Precīzi"
+
+#~ msgid "Statistics"
+#~ msgstr "Statistika"
 

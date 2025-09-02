@@ -1,0 +1,116 @@
+{% set keys = current_problem.keys()|list %}
+{% set default_lang = 'en' if 'en' in current_problem else keys[0] %}
+{% set lang_names = {
+  'en': 'English',
+  'lv': 'Latviešu'
+} %}
+
+<!doctype html>
+<html lang="{{ default_lang }}">
+<head>
+  <meta charset="utf-8">
+  <title>Problem</title>
+  <style>
+    /* Compact, non-intrusive language switch */
+    .lang-switch {
+      font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      color: #444;
+      margin-bottom: 0.5rem;
+      user-select: none;
+    }
+    .lang-link {
+      color: #3366cc;
+      text-decoration: none;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-right: 4px;
+    }
+    .lang-link:hover { background: #eef3ff; }
+    .lang-link.active {
+      font-weight: 600;
+      color: #000;
+      background: #e8eefc;
+    }
+    /* Only the active translation is displayed */
+    .translation { display: none; }
+  </style>
+</head>
+<body>
+
+  <nav class="lang-switch" aria-label="Choose language">
+    {% for code, html in current_problem.items() %}
+      <a href="#lang={{ code }}" class="lang-link" data-lang="{{ code }}"
+         onclick="showLang('{{ code }}'); return false;">
+        {{ lang_names.get(code, code) }}
+      </a>
+    {% endfor %}
+  </nav>
+
+  <section id="translations">
+    {% for code, html in current_problem.items() %}
+      <article class="translation" data-lang="{{ code }}" aria-hidden="true">
+        {{ html | safe }}
+      </article>
+    {% endfor %}
+  </section>
+
+  <script>
+    (function () {
+      const links = document.querySelectorAll('.lang-link');
+
+      function availableLangs() {
+        return Array.from(document.querySelectorAll('.translation'))
+          .map(el => el.dataset.lang);
+      }
+
+      function getLangFromHash() {
+        const m = location.hash.match(/lang=([a-zA-Z-]+)/);
+        return m ? m[1] : null;
+      }
+
+      function pickLang() {
+        const langs = availableLangs();
+        const fromHash = getLangFromHash();
+        if (fromHash && langs.includes(fromHash)) return fromHash;
+
+        try {
+          const stored = localStorage.getItem('lang');
+          if (stored && langs.includes(stored)) return stored;
+        } catch (e) {}
+
+        const nav = (navigator.language || navigator.userLanguage || '').split('-')[0];
+        if (langs.includes(nav)) return nav;
+
+        return '{{ default_lang }}';
+      }
+
+      window.showLang = function (lang) {
+        const items = document.querySelectorAll('.translation');
+        items.forEach(el => {
+          const active = el.dataset.lang === lang;
+          el.style.display = active ? 'block' : 'none';
+          el.setAttribute('aria-hidden', String(!active));
+        });
+
+        links.forEach(a => a.classList.toggle('active', a.dataset.lang === lang));
+        document.documentElement.lang = lang;
+
+        try { localStorage.setItem('lang', lang); } catch (e) {}
+
+        const hash = '#lang=' + lang;
+        if (location.hash !== hash) history.replaceState(null, '', hash);
+      };
+
+      document.addEventListener('DOMContentLoaded', function () {
+        showLang(pickLang());
+      });
+
+      window.addEventListener('hashchange', function () {
+        const lang = getLangFromHash();
+        if (lang) showLang(lang);
+      });
+    })();
+  </script>
+
+</body>
+</html>

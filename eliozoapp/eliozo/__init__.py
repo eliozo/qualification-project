@@ -446,7 +446,7 @@ SELECT ?problemid ?text ?grade WHERE {{
                              fQuestionType=theFQuestionType, fMethod=theFMethod,
                              fSolution=theFSolution, fVideo=theFVideo)
     print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-    print(f"q = {q}")
+    print(f"filter_query = {q}")
     print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
 
 
@@ -1116,7 +1116,7 @@ def create_app(test_config=None):
         sparql_access = SparqlAccess(fuseki_url)
         sources = sparql_access.getSPARQLSources(lang)
         template_context = {
-            'active': 'references',
+            'active': 'about_us',
             'navlinks': [
                 {
                     'url': 'getReferences', 
@@ -1243,6 +1243,40 @@ def create_app(test_config=None):
         return render_template('topics_content.html', **template_context)
 
 
+    @app.route('/methods', methods=['GET', 'POST'])
+    def getMethods():
+        lang = session.get('lang', 'lv')
+        template_context = {
+            'active': 'order_by',
+            'navlinks': [
+                {
+                    'url': 'getMethods', 
+                    'title': 'Methods'
+                }
+            ],
+            'lang': lang,
+            'title': 'Metodes'
+        }
+        return render_template('methods_content.html', **template_context)
+    
+
+    @app.route('/genres', methods=['GET', 'POST'])
+    def getGenres():
+        lang = session.get('lang', 'lv')
+        template_context = {
+            'active': 'order_by',
+            'navlinks': [
+                {
+                    'url': 'getGenres', 
+                    'title': 'Genres'
+                }
+            ],
+            'lang': lang,
+            'title': 'Žanri'
+        }
+        return render_template('genres_content.html', **template_context)    
+
+
     @app.route('/concepts', methods=['GET','POST'])
     def getConcepts():
         concepts_problems = json.loads(getSPARQLconcepts())
@@ -1281,7 +1315,7 @@ def create_app(test_config=None):
 
         template_context = {
             'all_concepts': concept_list,
-            'active': 'concepts',
+            'active': 'order_by',
             'navlinks': [
                 {
                     'url': 'getConcepts', 
@@ -1625,6 +1659,21 @@ def create_app(test_config=None):
         }
         return render_template('olympiad_content.html', **template_context)
 
+
+    @app.route('/getCurriculum', methods=['GET', 'POST'])
+    def getCurriculum(): 
+        olympiad_id = request.args.get('olympiad')
+        minyear = request.args.get('minyear')
+        maxyear = request.args.get('maxyear')
+        template_context = {
+            'olympiad_id': olympiad_id, 
+            'minyear': minyear, 
+            'maxyear': maxyear,
+            'active': 'statistics',
+        }
+
+        return render_template('get_curriculum_content.html', **template_context)
+
     @app.route('/problem_counts', methods=['GET', 'POST'])
     def getProblemCounts():
         olympiads = ['LV.SOL', 'LV.NOL', 'LV.VOL', 'LV.AMO']
@@ -1719,6 +1768,19 @@ def create_app(test_config=None):
         }
 
         return render_template('video_content.html', **template_context)
+
+
+
+    @app.route('/temp_langswitch', methods=['GET', 'POST'])
+    def getTempLangswitch():
+        current_problem = { 
+            "en": """<p>There are $2023$ boxes, initially containing $1, 2, 3, \\ldots, 2023$ candies respectively. \nIn a single move, you may choose a natural number $n$ and eat $n$ candies from some boxes \n(possibly only from one). What is the smallest number of moves needed to make all boxes empty?</p>""", 
+            "lv": """<p>Dotas $2023$ kastes, sākumā tajās ir attiecīgi $1, 2, 3, \\ldots, 2023$ \nkonfektes. Vienā gājienā var izvēlēties naturālu skaitli $n$ un no \ndažām kastēm (varbūt tikai no vienas) apēst $n$ konfektes. \nKāds ir mazākais gājienu skaits, ar kuru var panākt, \nka visas kastes ir tukšas?</p>"""
+        }
+        template_context = {
+            'current_problem': current_problem
+        }
+        return render_template('temp_langswitch_template.html', **template_context)
 
 
 #year, country, grade, olympiad
