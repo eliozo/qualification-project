@@ -2,6 +2,36 @@
 
 {% block content %}
         <div class="col-sm-8 text-left">
-        <p>Žanri</p>
+
+
+        {% for domain in domain_keys %}
+        <b style="font-size:120%;">{{ domain_names[domain] }}</b>
+
+        <table class="tasks">
+
+        <tbody>
+
+            {% for genre in all_genres[domain] %}            
+            <tr class="{{ loop.cycle('odd', 'even') }}">
+            <td>{{ all_genres_info[genre].domainNumber }}. {{ all_genres_info[genre].domainName }}
+
+            <span class="tltip"><img style="vertical-align: middle;width:12px;"
+            src="{{ url_for('static',filename='blue_question_mark.png') }}">
+            <span class="tltiptext"><tt class="metahelp">{{ all_genres_info[genre].domainIdentifier }}:</tt> 
+            {% if all_genres_info[genre].domainDescription != '' %} 
+                <small>{{ all_genres_info[genre].domainDescription | safe }}</small> 
+            {% endif %}
+            </span></span>
+            </td>
+
+            <td>{% for problem in all_genres_info[genre].problems %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                problem }}</a>{%- if not loop.last %},{% endif %} {% endfor %}
+            </td>
+            </tr>
+            
+            {% endfor %}
+            </tbody>
+            </table>
+        {% endfor %}
         </div>
 {% endblock %}

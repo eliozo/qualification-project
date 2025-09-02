@@ -57,48 +57,11 @@ def getSPARQLtopics():
     } ORDER BY ?L1 ?L2 ?L3 ?L4 ?L5
     """
 
-#     queryTemplate = """
-# PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-# PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-# PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-# SELECT DISTINCT ?topicIdentifier ?topicNumber ?topicDescription ?topicName ?problemid WHERE { 
-#   ?topic eliozo:topicID ?topicIdentifier .
-#   ?topic eliozo:topicNumber ?topicNumber .
-#   ?topic eliozo:topicDescription ?topicDescription .
-#   ?topic eliozo:topicName ?topicName .
-#   OPTIONAL {
-#     ?prob eliozo:topic ?topic ;
-#           eliozo:problemID ?problemid . 
-#   }.
-# } ORDER BY ?topicNumber
-# """
-
     myobj = {'query': queryTemplate }
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
     return x.text
 
-
-# def getSPARQLtopics(root):
-#     url = FUSEKI_URL
-#     myobj = {'query': '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-# PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-# PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-# SELECT ?topicID ?topicParent ?topicTitle ?topicDesc WHERE {
-#   ?topic rdf:type eliozo:Topic ; 
-#          eliozo:topicID ?topicID ; 
-#          eliozo:topicTitle ?topicTitle ;
-#   		 eliozo:topicDescription ?topicDesc ;
-#      	 skos:broader ?topicParent ;''' +
-#          'skos:broader* {topParent} .'.format(topParent=root) +
-# '''}'''
-#     }
-
-#     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-#     x = requests.post(url, myobj, head)
-#     return x.text
 
 def getSPARQLconcepts():
     url = FUSEKI_URL
@@ -126,68 +89,37 @@ SELECT ?concept ?termLV ?termEN ?conceptID ?descLV ?problemID WHERE {
 
 
 
+def getSPARQLdomains():
+    url = FUSEKI_URL
+    queryTemplate = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+SELECT ?domainID ?domainNumber ?domainName ?domainDescription ?problemid ?L1 ?L2 ?L3 WHERE {
+  ?domain a eliozo:Domain ;
+            eliozo:domainID ?domainID ;
+            eliozo:domainNumber ?domainNumber ;
+            eliozo:domainName ?domainName ;
+            eliozo:domainDescription ?domainDescription ;
+            eliozo:sorter_L1 ?L1 ;
+            eliozo:sorter_L2 ?L2 ;
+            eliozo:sorter_L3 ?L3 .
+  OPTIONAL {
+    ?prob eliozo:subdomain ?domain ;
+    eliozo:problemID ?problemid . 
+  }
+} ORDER BY ?L1 ?L2 ?L3
+"""
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+    myobj = {'query': queryTemplate}
+    x = requests.post(url, myobj, head)
+    return x.text
+
+
 
 def getSPARQLProblem(arg, lang):
     url = FUSEKI_URL
-#     queryTemplate = """
-# PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-# PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-# PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-# SELECT ?problemTextHtml ?video ?problemYear ?country ?olympiad 
-# ?problemBook ?problemBookSection ?problemGrade ?problem_number
-# ?topicIdentifier ?LTopic ?questionType ?domain WHERE {{
-#   ?problem eliozo:problemID '{problemid}' ;
-#            eliozo:problemTextHtml ?problemTextHtml .
-#            FILTER (lang(?problemTextHtml) = "{language}")
-#   OPTIONAL {{
-#     ?problem eliozo:problemYear ?year ;
-#              eliozo:olympiadCode ?olympiad ;
-#              eliozo:problemGrade ?grade ;
-#              eliozo:country ?country .
-#   }}
-#   OPTIONAL {{
-#     ?problem eliozo:hasVideo ?video .
-#   }}
-#   OPTIONAL {{
-#     ?problem eliozo:problemYear ?problemYear .
-#   }}
-#   OPTIONAL {{
-#     ?problem eliozo:country ?country .
-#   }}
-#   OPTIONAL {{
-#     ?problem eliozo:olympiad ?olympiad .
-#   }}
-#   OPTIONAL {{
-#     ?problem eliozo:problemBook ?problemBook .
-#   }}
-#   OPTIONAL {{
-#     ?problem eliozo:problemBookSection ?problemBookSection .
-#   }}
-#   OPTIONAL {{
-#     ?problem eliozo:problemGrade ?problemGrade .
-#   }}
-#   OPTIONAL {{
-#     ?problem eliozo:problem_number ?problem_number .
-#   }}  
-#   OPTIONAL {{
-#     ?problem eliozo:topic ?topic .
-#     ?topic eliozo:topicID ?topicIdentifier .
-#   }}  
-#   OPTIONAL {{
-#     ?problem eliozo:LTopic ?LTopic .
-#   }}  
-#   OPTIONAL {{
-#     ?problem eliozo:concepts ?concepts .
-#   }}  
-#   OPTIONAL {{
-#     ?problem eliozo:questionType ?questionType .
-#   }}  
-#   OPTIONAL {{
-#     ?problem eliozo:domain ?domain .
-#   }}  
-# }}"""
-
     queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -1263,7 +1195,42 @@ def create_app(test_config=None):
     @app.route('/genres', methods=['GET', 'POST'])
     def getGenres():
         lang = session.get('lang', 'lv')
+        data = json.loads(getSPARQLdomains())
+
+        all_genres = {'1':[], '2':[], '3':[], '4':[]}
+        all_genres_info = dict()
+
+        current_genre = "NA"
+
+        for item in data['results']['bindings']:
+            if item['domainNumber']['value'].endswith('0.0'):
+                pass
+
+            elif item['domainID']['value'] != current_genre:
+                current_genre = item['domainID']['value']
+                current_domain = item['L1']['value']
+                all_genres[current_domain].append(item['domainID']['value'])
+
+                current_genre_info = dict()
+                current_genre_info['domainIdentifier'] = item['domainID']['value'][4:]
+                current_genre_info['domainNumber'] = item['domainNumber']['value']
+                current_genre_info['domainName'] = item['domainName']['value']
+                beautiful_description = mathBeautify(item['domainDescription']['value'])
+                current_genre_info['domainDescription'] = beautiful_description
+                if "problemid" in item:
+                    current_genre_info['problems'] = [item['problemid']['value']]
+                else:
+                    current_genre_info['problems'] = []
+                all_genres_info[current_genre] = current_genre_info # Lielajā vārdnīcā iesprauž mazo vārdnīcu
+            else:
+                current_genre_info['problems'].append(item['problemid']['value']) # Pievieno tikai jauno uzdevuma ID
+
+
         template_context = {
+            'all_genres': all_genres,
+            'domain_names': {'1':'Alg', '2':'Comb', '3':'Geom', '4':'NT'},
+            'domain_keys': ['1', '2', '3', '4'],
+            'all_genres_info': all_genres_info,
             'active': 'order_by',
             'navlinks': [
                 {
