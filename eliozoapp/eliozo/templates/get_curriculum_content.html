@@ -2,6 +2,24 @@
 
 {% block content %}
         <div class="col-sm-8 text-left">
-        <p>Olimpiāde: {{ olympiad_id }}</p>
+        <p>Olimpiāde: {{ olympiad_id }}; klases: {{ mingrade }}..{{ maxgrade }}; gadi: {{ minyear }}..{{ maxyear }}</p>
+        <ul>
+                {% for topic in all_topics %}
+                <li>{{ all_topics_info[topic].topicName }}
+                <span class="tltip"><img style="vertical-align: middle;width:12px;"
+                src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                <span class="tltiptext" style="font-weight:normal;"><tt class="metahelp">{{ topic }}:</tt> 
+                {% if all_topics_info[topic].topicDescription != '' %} 
+                        <small>{{ all_topics_info[topic].topicDescription | safe }}</small> 
+                {% endif %}
+                </span></span>        
+                <small>
+                {% for problem in all_topics_info[topic].problems %}
+                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                problem }}</a>{%- if not loop.last %},{% endif %}
+                {% endfor %}</small>
+                {% endfor %}
+        </ul>
         </div>
+
 {% endblock %}

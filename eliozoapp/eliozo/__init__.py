@@ -491,6 +491,45 @@ GROUP BY ?country ?code ?olympiadName"""
     return x.text 
 
 
+def getSPARQLOlympiadOverview(olympiad, grades, years):
+    url = FUSEKI_URL
+    queryTemplate = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+SELECT ?problemID ?topicID ?topicNumber ?topicName ?topicDescription ?L1 ?L2 ?L3 WHERE {{
+  ?problem eliozo:topic ?topic ; 
+           eliozo:problemID ?problemID ;
+           eliozo:olympiad '{olympiadCode}' ;
+           eliozo:problemGrade ?grade ;
+           eliozo:problemYear ?year .
+  FILTER (?grade < {gradeMax} && ?grade > {gradeMin})
+  FILTER (?year < {yearMax} && ?year > {yearMin})
+  ?topic a eliozo:Topic ;
+            eliozo:topicID ?topicID ;
+            eliozo:topicNumber ?topicNumber ;
+            eliozo:topicName ?topicName ;
+            eliozo:topicDescription ?topicDescription ;
+            eliozo:sorter_L1 ?L1 ;
+            eliozo:sorter_L2 ?L2 ;
+            eliozo:sorter_L3 ?L3 ;
+            eliozo:sorter_L4 ?L4 ;
+            eliozo:sorter_L5 ?L5 .
+}} ORDER BY ?L1 ?L2 ?L3 ?L4 ?L5
+"""
+    myobj = {'query': 
+        queryTemplate.format(olympiadCode=olympiad, 
+                             gradeMax = (grades[1]),
+                             gradeMin = (grades[0]-1),
+                             yearMax = (years[1]),
+                             yearMin = (years[0] - 1))
+    }
+    head = {'Content-Type': 'application/x-www-form-urlencoded'}
+    x = requests.post(url, myobj, head)
+    return x.text
+
+
 def getTopicDetails(topicID):
     url = FUSEKI_URL
     queryTemplate = """
@@ -1629,13 +1668,41 @@ def create_app(test_config=None):
 
     @app.route('/getCurriculum', methods=['GET', 'POST'])
     def getCurriculum(): 
+        lang = session.get('lang', 'lv')
         olympiad_id = request.args.get('olympiad')
-        minyear = request.args.get('minyear')
-        maxyear = request.args.get('maxyear')
+        minyear = int(request.args.get('minyear'))
+        maxyear = int(request.args.get('maxyear'))
+        mingrade = int(request.args.get('mingrade'))
+        maxgrade = int(request.args.get('maxgrade'))
+
+        data = json.loads(getSPARQLOlympiadOverview(olympiad_id, (mingrade, maxgrade), (minyear, maxyear)))
+
+        all_topics = []
+        all_topics_info = dict()
+
+        current_topic = "NA"
+
+        for item in data['results']['bindings']:
+            if item['topicID']['value'] != current_topic:
+                current_problem_id = item['problemID']['value']
+                current_topic = item['topicID']['value']
+                current_topic_name = item['topicName']['value']
+                current_topic_description = mathBeautify(item['topicDescription']['value'])
+                all_topics.append(current_topic)
+                all_topics_info[current_topic] = {'topicName': current_topic_name, 
+                                                  'topicDescription': current_topic_description }
+                all_topics_info[current_topic]['problems'] = [current_problem_id]
+            else: 
+                all_topics_info[current_topic]['problems'].append(current_problem_id)
+
         template_context = {
             'olympiad_id': olympiad_id, 
             'minyear': minyear, 
             'maxyear': maxyear,
+            'mingrade': mingrade, 
+            'maxgrade': maxgrade, 
+            'all_topics': all_topics,
+            'all_topics_info': all_topics_info,
             'active': 'statistics',
         }
 
