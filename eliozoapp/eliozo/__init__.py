@@ -6,6 +6,8 @@ import html
 import requests
 import re
 from .webmd_utils import fix_image_links, mathBeautify
+from collections import defaultdict
+
 
 from eliozo_dao.sparql_access import SparqlAccess
 
@@ -528,6 +530,99 @@ SELECT ?problemID ?topicID ?topicNumber ?topicName ?topicDescription ?L1 ?L2 ?L3
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
     return x.text
+
+
+def getSPARQLCurriculumMethods(olympiad, grades, years): 
+    url = FUSEKI_URL 
+    queryTemplate = """
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+    SELECT ?problemID ?methodID ?methodNumber ?methodName ?methodDescription ?L1 ?L2 WHERE {{
+    ?problem eliozo:method ?method ;
+            eliozo:problemID ?problemID ;
+            eliozo:olympiad '{olympiadCode}' ;
+            eliozo:problemGrade ?grade ;
+            eliozo:problemYear ?year .
+    FILTER (?grade < {gradeMax} && ?grade > {gradeMin})
+    FILTER (?year < {yearMax} && ?year > {yearMin})
+    ?method a eliozo:Method ;
+                eliozo:methodNumber ?methodNumber ; 
+                eliozo:methodID ?methodID ;
+                eliozo:methodName ?methodName ;
+                eliozo:methodDescription ?methodDescription ;
+                eliozo:sorter_L1 ?L1 ;
+                eliozo:sorter_L2 ?L2 .
+    }} ORDER BY ?L1 ?L2
+    """
+    myobj = {'query': 
+        queryTemplate.format(olympiadCode=olympiad, 
+                             gradeMax = (grades[1]),
+                             gradeMin = (grades[0]-1),
+                             yearMax = (years[1]),
+                             yearMin = (years[0] - 1))
+    }
+    head = {'Content-Type': 'application/x-www-form-urlencoded'}
+    x = requests.post(url, myobj, head)
+    return x.text
+
+
+def getSPARQLCurriculumQtypeStats(olympiad, grades, years): 
+    url = FUSEKI_URL 
+    queryTemplate = """
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+
+    SELECT ?domain ?questionType (COUNT(DISTINCT ?problem) AS ?count)
+    WHERE {{
+        ?problem a eliozo:Problem ;
+        eliozo:olympiad '{olympiadCode}' ;
+        eliozo:problemGrade ?grade ;
+        eliozo:problemYear ?year ;
+        eliozo:domain ?domain ;
+        eliozo:questionType ?questionType .
+        FILTER (?grade < {gradeMax} && ?grade > {gradeMin})
+        FILTER (?year < {yearMax} && ?year > {yearMin})
+    }}
+    GROUP BY ?domain ?questionType
+    ORDER BY ?domain ?questionType
+    """
+    myobj = {'query': 
+        queryTemplate.format(olympiadCode=olympiad, 
+                             gradeMax = (grades[1]),
+                             gradeMin = (grades[0]-1),
+                             yearMax = (years[1]),
+                             yearMin = (years[0] - 1))
+    }
+    head = {'Content-Type': 'application/x-www-form-urlencoded'}
+    x = requests.post(url, myobj, head)
+    return x.text
+
+
+# @app.route("/report/domains-by-qtype")
+# def domains_by_qtype():
+#     # If you already have the JSON, skip the request and pass it in directly
+#     r = requests.get(
+#         SPARQL_ENDPOINT,
+#         params={"query": SPARQL_QUERY, "format": "application/sparql-results+json"},
+#         timeout=30,
+#     )
+#     r.raise_for_status()
+#     sparql_json = r.json()
+
+#     domains, question_types, matrix = build_matrix(sparql_json)
+#     return render_template(
+#         "domain_qtype_table.html",
+#         domains=domains,
+#         question_types=question_types,
+#         matrix=matrix,
+#     )
+
+
+
 
 
 def getTopicDetails(topicID):
@@ -1599,7 +1694,7 @@ def create_app(test_config=None):
                 #if olympiadCountry.find('#') >= 0:
                 #    country = olympiadCountry[olympiadCountry.find('#')+1:]
 
-            if olympiadCode not in ['AMO', 'NOL', 'SOL', 'VOL']:
+            if olympiadCode not in ['AMO', 'NOL', 'SOL', 'VOL', 'IMOSHL']:
                 continue
 
             olympiadEvents = []
@@ -1666,7 +1761,7 @@ def create_app(test_config=None):
         return render_template('olympiad_content.html', **template_context)
 
 
-    @app.route('/getCurriculum', methods=['GET', 'POST'])
+    @app.route('/curriculum', methods=['GET', 'POST'])
     def getCurriculum(): 
         lang = session.get('lang', 'lv')
         olympiad_id = request.args.get('olympiad')
@@ -1675,8 +1770,37 @@ def create_app(test_config=None):
         mingrade = int(request.args.get('mingrade'))
         maxgrade = int(request.args.get('maxgrade'))
 
+
+        # data_qtypes = 
+
+        domains=('Alg', 'Comb', 'Geom', 'NT')
+        domains = list(domains)
+        # matrix[questionType][domain] -> count, default 0
+        matrix = defaultdict(lambda: {d: 0 for d in domains})
+        qtypes = set()
+        data_qtypes = json.loads(getSPARQLCurriculumQtypeStats(olympiad_id, (mingrade, maxgrade), (minyear, maxyear)))
+
+        for b in data_qtypes["results"]["bindings"]:
+            d = b["domain"]["value"]
+            qt = b["questionType"]["value"]
+            # skip unexpected domains
+            if d not in domains:
+                continue
+            cnt = int(b["count"]["value"])
+            matrix[qt][d] = cnt
+            qtypes.add(qt)
+
+        question_types = sorted(qtypes)
+        # return domains, question_types, matrix
+
         data = json.loads(getSPARQLOlympiadOverview(olympiad_id, (mingrade, maxgrade), (minyear, maxyear)))
 
+        all_domains = [
+            {"name": "Algebra", "prefix": "1."},
+            {"name": "Combinatorics", "prefix": "2."},
+            {"name": "Geometry", "prefix": "3."},
+            {"name": "Number theory", "prefix": "4."},
+        ]
         all_topics = []
         all_topics_info = dict()
 
@@ -1686,14 +1810,44 @@ def create_app(test_config=None):
             if item['topicID']['value'] != current_topic:
                 current_problem_id = item['problemID']['value']
                 current_topic = item['topicID']['value']
+                current_topic_number = item['topicNumber']['value']
                 current_topic_name = item['topicName']['value']
                 current_topic_description = mathBeautify(item['topicDescription']['value'])
                 all_topics.append(current_topic)
-                all_topics_info[current_topic] = {'topicName': current_topic_name, 
-                                                  'topicDescription': current_topic_description }
+                all_topics_info[current_topic] = {
+                    'topicNumber': current_topic_number,
+                    'topicName': current_topic_name,
+                    'topicDescription': current_topic_description 
+                }
                 all_topics_info[current_topic]['problems'] = [current_problem_id]
-            else: 
+            else:
+                current_problem_id = item['problemID']['value']
                 all_topics_info[current_topic]['problems'].append(current_problem_id)
+
+        data_methods = json.loads(getSPARQLCurriculumMethods(olympiad_id, (mingrade, maxgrade), (minyear, maxyear)))
+        
+        all_methods = []
+        all_methods_info = dict()
+        current_method = "NA"
+
+        for item in data_methods['results']['bindings']:
+            if item['methodID']['value'] != current_method:
+                current_problem_id = item['problemID']['value']
+                current_method = item['methodID']['value']
+                current_method_number = item['methodNumber']['value']
+                current_method_name = item['methodName']['value']
+                current_method_description = mathBeautify(item['methodDescription']['value'])
+                all_methods.append(current_method)
+                all_methods_info[current_method] = {
+                    'methodNumber': current_method_number,
+                    'methodName': current_method_name,
+                    'methodDescription': current_method_description 
+                }
+                all_methods_info[current_method]['problems'] = [current_problem_id]
+            else:
+                current_problem_id = item['problemID']['value']
+                all_methods_info[current_method]['problems'].append(current_problem_id)
+
 
         template_context = {
             'olympiad_id': olympiad_id, 
@@ -1703,10 +1857,23 @@ def create_app(test_config=None):
             'maxgrade': maxgrade, 
             'all_topics': all_topics,
             'all_topics_info': all_topics_info,
+            'all_domains': all_domains,
+            'all_methods': all_methods,
+            'all_methods_info': all_methods_info,
             'active': 'statistics',
+
+            'domains': domains, 
+            'question_types': question_types, 
+            'matrix': matrix,
+
+
+            'navlinks': [
+                {'title':'Reports'}, 
+                {'url':'getCurriculum', 'title':'Olimpiad Curriculum'}
+            ]
         }
 
-        return render_template('get_curriculum_content.html', **template_context)
+        return render_template('curriculum_content.html', **template_context)
 
     @app.route('/problem_counts', methods=['GET', 'POST'])
     def getProblemCounts():
