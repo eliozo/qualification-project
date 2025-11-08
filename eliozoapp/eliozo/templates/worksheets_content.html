@@ -1,0 +1,8 @@
+{% extends 'global.html' %}
+
+{% block content %}
+       <div class="col-sm-8 text-left">
+        <a href="{{ url_for('main') }}" class="button">{% trans %}Back{% endtrans %}</a>
+        {{ title }}
+        </div>
+{% endblock %}

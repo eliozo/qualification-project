@@ -138,7 +138,10 @@
                         <li><a href="{{ url_for('getVideo') }}">{% trans %}Video{% endtrans %}</a></li>
                     </ul>
                 </li>
+                
 
+                <li class="{{ 'active' if active == 'worksheets' else '' }}"><a href="{{ url_for('getWorksheets') }}">{% trans %}Worksheets{% endtrans %}</a></li>
+                
 
                 <li class="dropdown {{ 'active' if active == 'about_us' else '' }}">
                     <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">

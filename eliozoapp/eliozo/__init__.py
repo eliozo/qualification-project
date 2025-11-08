@@ -10,6 +10,7 @@ from collections import defaultdict
 
 
 from eliozo_dao.sparql_access import SparqlAccess
+from controllers.worksheets import getWorksheets
 
 
 import logging
@@ -1970,6 +1971,8 @@ def create_app(test_config=None):
 
         return render_template('video_content.html', **template_context)
 
+
+    app.route("/worksheets")(getWorksheets)
 
 
     @app.route('/temp_langswitch', methods=['GET', 'POST'])
