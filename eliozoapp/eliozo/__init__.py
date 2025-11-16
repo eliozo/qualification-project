@@ -7,6 +7,7 @@ import requests
 import re
 from .webmd_utils import fix_image_links, mathBeautify
 from collections import defaultdict
+from authlib.integrations.flask_client import OAuth
 
 
 from eliozo_dao.sparql_access import SparqlAccess
@@ -915,6 +916,24 @@ def create_app(test_config=None):
     app.config.from_mapping(
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
+    )
+    app.secret_key = 'random_secret'  # Set a strong secret in production
+
+    # Create OAuth instance
+    oauth = OAuth(app)
+
+    # Register Google OAuth client
+    oauth.register(
+        name='google',
+        client_id= os.environ['GOOGLE_CLIENT_ID'],
+        client_secret=os.environ['GOOGLE_CLIENT_SECRET'],
+        access_token_url='https://oauth2.googleapis.com/token',
+        access_token_params=None,
+        authorize_url='https://accounts.google.com/o/oauth2/v2/auth',
+        authorize_params=None,
+        api_base_url='https://www.googleapis.com/oauth2/v2/',
+        userinfo_endpoint='https://openidconnect.googleapis.com/v1/userinfo',
+        client_kwargs={'scope': 'openid email profile'},
     )
 
 
@@ -2045,6 +2064,28 @@ def create_app(test_config=None):
         }
 
         return render_template('grade_content.html', **template_context)
+
+    @app.route('/login')
+    def login():
+        redirect_uri_for_callback = url_for('auth_callback', _external=True)
+        return oauth.google.authorize_redirect(redirect_uri_for_callback)
+
+    @app.route('/auth/callback')
+    def auth_callback():
+        token = oauth.google.authorize_access_token()
+        user_info = oauth.google.parse_id_token(token)
+        return redirect(url_for('dashboard'))
+
+    @app.route('/logout')
+    def logout():
+        session.clear()
+        return redirect(url_for('index'))
+
+    @app.route('/dashboard')
+    def dashboard():
+        if 'user' not in session:
+            return redirect(url_for('login'))
+        return render_template('dashboard.html', user=session['user'])
 
     # register the database commands
 
