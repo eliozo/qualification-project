@@ -923,16 +923,32 @@ def create_app(test_config=None):
     oauth = OAuth(app)
 
     # Register Google OAuth client
+    # oauth.register(
+    #     name='google',
+    #     client_id= os.environ['GOOGLE_CLIENT_ID'],
+    #     client_secret=os.environ['GOOGLE_CLIENT_SECRET'],
+    #     access_token_url='https://oauth2.googleapis.com/token',
+    #     access_token_params=None,
+    #     authorize_url='https://accounts.google.com/o/oauth2/v2/auth',
+    #     authorize_params=None,
+    #     api_base_url='https://www.googleapis.com/oauth2/v2/',
+    #     userinfo_endpoint='https://openidconnect.googleapis.com/v1/userinfo',
+    #     client_kwargs={'scope': 'openid email profile'},
+    # )
+
+    # Register Google OAuth client
     oauth.register(
         name='google',
-        client_id= os.environ['GOOGLE_CLIENT_ID'],
-        client_secret=os.environ['GOOGLE_CLIENT_SECRET'],
+        client_id=os.environ['GOOGLE_CLIENT_ID'].strip(),
+        client_secret=os.environ['GOOGLE_CLIENT_SECRET'].strip(),
         access_token_url='https://oauth2.googleapis.com/token',
         access_token_params=None,
         authorize_url='https://accounts.google.com/o/oauth2/v2/auth',
         authorize_params=None,
         api_base_url='https://www.googleapis.com/oauth2/v2/',
         userinfo_endpoint='https://openidconnect.googleapis.com/v1/userinfo',
+        # Add this line explicitly:
+        jwks_uri='https://www.googleapis.com/oauth2/v3/certs',
         client_kwargs={'scope': 'openid email profile'},
     )
 
