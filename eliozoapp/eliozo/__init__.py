@@ -2086,11 +2086,27 @@ def create_app(test_config=None):
         redirect_uri_for_callback = url_for('auth_callback', _external=True)
         return oauth.google.authorize_redirect(redirect_uri_for_callback)
 
+    # @app.route('/auth/callback')
+    # def auth_callback():
+    #     token = oauth.google.authorize_access_token()
+    #     user_info = oauth.google.parse_id_token(token)
+    #     return redirect(url_for('dashboard'))
+
     @app.route('/auth/callback')
     def auth_callback():
+        # This function now exchanges the code for a token AND parses the ID token
         token = oauth.google.authorize_access_token()
-        user_info = oauth.google.parse_id_token(token)
+        
+        # The user info is now automatically inside the 'userinfo' key
+        user_info = token.get('userinfo')
+        
+        # Optional: Print to logs to see what you got
+        if user_info:
+            print(f"User Email: {user_info.get('email')}")
+            
         return redirect(url_for('dashboard'))
+    
+
 
     @app.route('/logout')
     def logout():
