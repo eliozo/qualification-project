@@ -930,16 +930,37 @@ def create_app(test_config=None):
         f.write(f"client_secret={my_secret}\n")
 
     # Register Google OAuth client
+    # oauth.register(
+    #     name='google',
+    #     client_id= os.environ['GOOGLE_CLIENT_ID'],
+    #     client_secret=os.environ['GOOGLE_CLIENT_SECRET'],
+    #     access_token_url='https://oauth2.googleapis.com/token',
+    #     access_token_params=None,
+    #     authorize_url='https://accounts.google.com/o/oauth2/v2/auth',
+    #     authorize_params=None,
+    #     api_base_url='https://www.googleapis.com/oauth2/v2/',
+    #     userinfo_endpoint='https://openidconnect.googleapis.com/v1/userinfo',
+    #     client_kwargs={'scope': 'openid email profile'},
+    # )
+
+    # Register Google OAuth client
     oauth.register(
         name='google',
+<<<<<<< HEAD
         client_id= my_client_id,
         client_secret=my_secret,
+=======
+        client_id=os.environ['GOOGLE_CLIENT_ID'].strip(),
+        client_secret=os.environ['GOOGLE_CLIENT_SECRET'].strip(),
+>>>>>>> refs/remotes/origin/main
         access_token_url='https://oauth2.googleapis.com/token',
         access_token_params=None,
         authorize_url='https://accounts.google.com/o/oauth2/v2/auth',
         authorize_params=None,
         api_base_url='https://www.googleapis.com/oauth2/v2/',
         userinfo_endpoint='https://openidconnect.googleapis.com/v1/userinfo',
+        # Add this line explicitly:
+        jwks_uri='https://www.googleapis.com/oauth2/v3/certs',
         client_kwargs={'scope': 'openid email profile'},
     )
 
@@ -2076,11 +2097,27 @@ def create_app(test_config=None):
         redirect_uri_for_callback = url_for('auth_callback', _external=True)
         return oauth.google.authorize_redirect(redirect_uri_for_callback)
 
+    # @app.route('/auth/callback')
+    # def auth_callback():
+    #     token = oauth.google.authorize_access_token()
+    #     user_info = oauth.google.parse_id_token(token)
+    #     return redirect(url_for('dashboard'))
+
     @app.route('/auth/callback')
     def auth_callback():
+        # This function now exchanges the code for a token AND parses the ID token
         token = oauth.google.authorize_access_token()
-        user_info = oauth.google.parse_id_token(token)
+        
+        # The user info is now automatically inside the 'userinfo' key
+        user_info = token.get('userinfo')
+        
+        # Optional: Print to logs to see what you got
+        if user_info:
+            print(f"User Email: {user_info.get('email')}")
+            
         return redirect(url_for('dashboard'))
+    
+
 
     @app.route('/logout')
     def logout():
