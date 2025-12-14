@@ -922,11 +922,18 @@ def create_app(test_config=None):
     # Create OAuth instance
     oauth = OAuth(app)
 
+    my_client_id= os.environ['GOOGLE_CLIENT_ID']
+    my_secret=os.environ['GOOGLE_CLIENT_SECRET']
+
+    with open('/tmp/eliozo.txt', 'w') as f:
+        f.write(f"client_id={my_client_id}\n")
+        f.write(f"client_secret={my_secret}\n")
+
     # Register Google OAuth client
     oauth.register(
         name='google',
-        client_id= os.environ['GOOGLE_CLIENT_ID'],
-        client_secret=os.environ['GOOGLE_CLIENT_SECRET'],
+        client_id= my_client_id,
+        client_secret=my_secret,
         access_token_url='https://oauth2.googleapis.com/token',
         access_token_params=None,
         authorize_url='https://accounts.google.com/o/oauth2/v2/auth',
@@ -935,7 +942,6 @@ def create_app(test_config=None):
         userinfo_endpoint='https://openidconnect.googleapis.com/v1/userinfo',
         client_kwargs={'scope': 'openid email profile'},
     )
-
 
     # The directory where your images are
     STATIC_IMAGE_ROOT = os.path.join(app.root_path, 'static', 'eliozo', 'images')
