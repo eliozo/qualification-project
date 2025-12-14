@@ -946,13 +946,11 @@ def create_app(test_config=None):
     # Register Google OAuth client
     oauth.register(
         name='google',
-<<<<<<< HEAD
-        client_id= my_client_id,
-        client_secret=my_secret,
-=======
+        #client_id= my_client_id,
+        #client_secret=my_secret,
         client_id=os.environ['GOOGLE_CLIENT_ID'].strip(),
         client_secret=os.environ['GOOGLE_CLIENT_SECRET'].strip(),
->>>>>>> refs/remotes/origin/main
+
         access_token_url='https://oauth2.googleapis.com/token',
         access_token_params=None,
         authorize_url='https://accounts.google.com/o/oauth2/v2/auth',
