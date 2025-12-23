@@ -925,9 +925,9 @@ def create_app(test_config=None):
     my_client_id= os.environ['GOOGLE_CLIENT_ID']
     my_secret=os.environ['GOOGLE_CLIENT_SECRET']
 
-    with open('/tmp/eliozo.txt', 'w') as f:
-        f.write(f"client_id={my_client_id}\n")
-        f.write(f"client_secret={my_secret}\n")
+    # with open('/tmp/eliozo.txt', 'w') as f:
+    #     f.write(f"client_id={my_client_id}\n")
+    #     f.write(f"client_secret={my_secret}\n")
 
     # Register Google OAuth client
     # oauth.register(
