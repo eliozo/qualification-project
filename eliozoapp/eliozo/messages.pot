@@ -8,20 +8,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-09-07 18:03+0300\n"
+"POT-Creation-Date: 2025-12-29 03:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.15.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: templates/book_problems_content.html:5 templates/video_content.html:5
+#: templates/worksheets_content.html:5
 msgid "Back"
 msgstr ""
 
-#: templates/curriculum_content.html:36
+#: templates/curriculum_content.html:60
 msgid "Methods"
 msgstr ""
 
@@ -152,7 +153,7 @@ msgstr ""
 msgid "Problems having at least one solution."
 msgstr ""
 
-#: templates/filter_content.html:179 templates/global.html:138
+#: templates/filter_content.html:179 templates/global.html:139
 msgid "Video"
 msgstr ""
 
@@ -160,7 +161,7 @@ msgstr ""
 msgid "Problems with video-recorded solutions."
 msgstr ""
 
-#: templates/filter_content.html:204 templates/main_content.html:9
+#: templates/filter_content.html:204 templates/main_content.html:11
 msgid "Search"
 msgstr ""
 
@@ -168,11 +169,11 @@ msgstr ""
 msgid "Pages"
 msgstr ""
 
-#: templates/filter_content.html:222 templates/main_content.html:55
+#: templates/filter_content.html:222 templates/main_content.html:57
 msgid "More"
 msgstr ""
 
-#: templates/global.html:16 templates/global.html:105 templates/global.html:174
+#: templates/global.html:16 templates/global.html:105 templates/global.html:179
 msgid "Home"
 msgstr ""
 
@@ -217,34 +218,42 @@ msgid "Problem Count"
 msgstr ""
 
 #: templates/global.html:137
+msgid "Property Usage"
+msgstr ""
+
+#: templates/global.html:138
 msgid "Result Summary"
 msgstr ""
 
-#: templates/global.html:145
+#: templates/global.html:149
 msgid "About Us"
 msgstr ""
 
-#: templates/global.html:148
+#: templates/global.html:152
 msgid "References"
 msgstr ""
 
-#: templates/main_content.html:13
+#: templates/global.html:153
+msgid "Contact information"
+msgstr ""
+
+#: templates/main_content.html:15
 msgid "Exactly"
 msgstr ""
 
-#: templates/main_content.html:19
+#: templates/main_content.html:21
 msgid "Regex"
 msgstr ""
 
-#: templates/main_content.html:25
+#: templates/main_content.html:27
 msgid "By meaning"
 msgstr ""
 
-#: templates/main_content.html:32
+#: templates/main_content.html:34
 msgid "In questions"
 msgstr ""
 
-#: templates/main_content.html:33
+#: templates/main_content.html:35
 msgid "Everywhere"
 msgstr ""
 
@@ -257,18 +266,77 @@ msgid "No solution"
 msgstr ""
 
 #: templates/stats_problemcounts.html:15
-msgid "Code"
+msgid "Problem Source"
 msgstr ""
 
 #: templates/stats_problemcounts.html:16
-msgid "Olympiad"
-msgstr ""
-
-#: templates/stats_problemcounts.html:17
 msgid "Entered"
 msgstr ""
 
-#: templates/stats_problemcounts.html:17
+#: templates/stats_problemcounts.html:16
 msgid "Solved"
+msgstr ""
+
+#: templates/stats_problemcounts.html:18
+msgid "Olympiad"
+msgstr ""
+
+#: templates/stats_propertycounts.html:7
+msgid ""
+"Metadata properties (problem classification types) and the number of "
+"problems using them."
+msgstr ""
+
+#: templates/stats_propertycounts.html:8
+msgid "The metadata properties are described"
+msgstr ""
+
+#: templates/stats_propertycounts.html:8
+msgid "in the ontology"
+msgstr ""
+
+#: templates/stats_propertycounts.html:13
+#: templates/stats_propertycounts.html:45
+msgid "Property Name"
+msgstr ""
+
+#: templates/stats_propertycounts.html:14
+msgid "Olympiads"
+msgstr ""
+
+#: templates/stats_propertycounts.html:16
+msgid "Olympiad problems"
+msgstr ""
+
+#: templates/stats_propertycounts.html:17
+msgid "Take-home"
+msgstr ""
+
+#: templates/stats_propertycounts.html:19
+msgid "Take-home contests and problem sets"
+msgstr ""
+
+#: templates/stats_propertycounts.html:20
+msgid "Textbooks"
+msgstr ""
+
+#: templates/stats_propertycounts.html:22
+msgid "Problems from textbooks"
+msgstr ""
+
+#: templates/stats_propertycounts.html:23
+msgid "Training"
+msgstr ""
+
+#: templates/stats_propertycounts.html:25
+msgid "Training examples and miscellaneous"
+msgstr ""
+
+#: templates/stats_propertycounts.html:39
+msgid "Number of metadata attribute values"
+msgstr ""
+
+#: templates/stats_propertycounts.html:46
+msgid "Number of Values"
 msgstr ""
 

@@ -3,6 +3,8 @@
 {% block content %}
 <div class="col-sm-8 text-left">
 
+    <p>Message = {{ clickcount }}</p>
+
 <div class="main">
     <form action="{{ url_for('main') }}" method="get">
 
@@ -39,8 +41,6 @@
         </div>
     </form>
 </div>
-
-<p>This is the main branch!</p>
 
 {#
 <form class="search-form" action="{{ url_for('main') }}" method="get">

@@ -12,15 +12,16 @@
     -->
     <tbody>
         <tr>
-            <th>{% trans %}Code{% endtrans %}</th>
-            <th>{% trans %}Olympiad{% endtrans %}</th>
-            <th>{% trans %}Entered{% endtrans %} <br/> ({% trans %}Solved{% endtrans %})</th>
+            <th>{% trans %}Problem Source{% endtrans %}</th>
+            <th colspan="2">{% trans %}Entered{% endtrans %} <br/> ({% trans %}Solved{% endtrans %})</th>
         </tr>
+        <td class="stat" colspan="3"><b>{% trans %}Olympiad{% endtrans %}</b></td>
         {% for olympiad in olympiads %}
         <tr class="{{ loop.cycle('odd', 'even') }}">
-            <td class="stat">{{ olympiad }}</td>
-            <td class="stat">{{ all_counts[olympiad].lv }}</td>
-            <td class="stat">{{ all_counts[olympiad].entered }} ({{ all_counts[olympiad].solved }})</td>
+            
+            <td class="stat">{{ olympiad }}: {{ all_counts[olympiad].lv }}</td>
+            <td class="borderlessstat" style="text-align:right">{{ all_counts[olympiad].entered }}</td>
+            <td class="stat" style="text-align:right">({{ all_counts[olympiad].solved }})</td>
         </tr>
         {% endfor %}
     </tbody>

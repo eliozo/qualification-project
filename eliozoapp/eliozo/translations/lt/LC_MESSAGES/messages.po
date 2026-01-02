@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-09-07 18:03+0300\n"
+"POT-Creation-Date: 2025-12-29 03:08+0200\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: lt\n"
@@ -17,13 +17,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.15.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: templates/book_problems_content.html:5 templates/video_content.html:5
+#: templates/worksheets_content.html:5
 msgid "Back"
 msgstr "Atgal"
 
-#: templates/curriculum_content.html:36
+#: templates/curriculum_content.html:60
 msgid "Methods"
 msgstr "Metodai"
 
@@ -162,7 +163,7 @@ msgstr "Sprendimas"
 msgid "Problems having at least one solution."
 msgstr "Problemos su bent vienu sprendimu."
 
-#: templates/filter_content.html:179 templates/global.html:138
+#: templates/filter_content.html:179 templates/global.html:139
 msgid "Video"
 msgstr "Video"
 
@@ -170,7 +171,7 @@ msgstr "Video"
 msgid "Problems with video-recorded solutions."
 msgstr "Problemos su vaizdo sprendimais."
 
-#: templates/filter_content.html:204 templates/main_content.html:9
+#: templates/filter_content.html:204 templates/main_content.html:11
 msgid "Search"
 msgstr "Ieškoti"
 
@@ -178,11 +179,11 @@ msgstr "Ieškoti"
 msgid "Pages"
 msgstr "Puslapiai"
 
-#: templates/filter_content.html:222 templates/main_content.html:55
+#: templates/filter_content.html:222 templates/main_content.html:57
 msgid "More"
 msgstr "Daugiau"
 
-#: templates/global.html:16 templates/global.html:105 templates/global.html:174
+#: templates/global.html:16 templates/global.html:105 templates/global.html:179
 msgid "Home"
 msgstr "Pagrindinis"
 
@@ -227,34 +228,42 @@ msgid "Problem Count"
 msgstr "Uždavinių skaičius"
 
 #: templates/global.html:137
+msgid "Property Usage"
+msgstr "Savybių naudojimas"
+
+#: templates/global.html:138
 msgid "Result Summary"
 msgstr "Rezultatai"
 
-#: templates/global.html:145
+#: templates/global.html:149
 msgid "About Us"
 msgstr "Apie mus"
 
-#: templates/global.html:148
+#: templates/global.html:152
 msgid "References"
 msgstr "Nuorodos"
 
-#: templates/main_content.html:13
+#: templates/global.html:153
+msgid "Contact information"
+msgstr "Kontaktinė informacija"
+
+#: templates/main_content.html:15
 msgid "Exactly"
 msgstr "Tiksliai"
 
-#: templates/main_content.html:19
+#: templates/main_content.html:21
 msgid "Regex"
 msgstr "Reg. išraiškos"
 
-#: templates/main_content.html:25
+#: templates/main_content.html:27
 msgid "By meaning"
 msgstr "Pagal reikšmę"
 
-#: templates/main_content.html:32
+#: templates/main_content.html:34
 msgid "In questions"
 msgstr "Klausimuose"
 
-#: templates/main_content.html:33
+#: templates/main_content.html:35
 msgid "Everywhere"
 msgstr "Visur"
 
@@ -267,20 +276,81 @@ msgid "No solution"
 msgstr "Nėra sprendimo"
 
 #: templates/stats_problemcounts.html:15
-msgid "Code"
-msgstr "Kodas"
+msgid "Problem Source"
+msgstr "Uždavinių šaltinis"
 
 #: templates/stats_problemcounts.html:16
-msgid "Olympiad"
-msgstr "Olimpiada"
-
-#: templates/stats_problemcounts.html:17
 msgid "Entered"
 msgstr "Įvestos"
 
-#: templates/stats_problemcounts.html:17
+#: templates/stats_problemcounts.html:16
 msgid "Solved"
 msgstr "Išspręstos"
+
+#: templates/stats_problemcounts.html:18
+msgid "Olympiad"
+msgstr "Olimpiada"
+
+#: templates/stats_propertycounts.html:7
+msgid ""
+"Metadata properties (problem classification types) and the number of "
+"problems using them."
+msgstr ""
+"Metaduomenų savybės (uždavinių klasifikacijos tipai) ir uždavinių, "
+"kuriuose jos naudojamos, skaičius."
+
+#: templates/stats_propertycounts.html:8
+msgid "The metadata properties are described"
+msgstr "Metaduomenų atributai aprašyti"
+
+#: templates/stats_propertycounts.html:8
+msgid "in the ontology"
+msgstr "ontologijoje"
+
+#: templates/stats_propertycounts.html:13
+#: templates/stats_propertycounts.html:45
+msgid "Property Name"
+msgstr "Savybės pavadinimas"
+
+#: templates/stats_propertycounts.html:14
+msgid "Olympiads"
+msgstr "Olimpiada"
+
+#: templates/stats_propertycounts.html:16
+msgid "Olympiad problems"
+msgstr "Olimpiadų uždaviniai"
+
+#: templates/stats_propertycounts.html:17
+msgid "Take-home"
+msgstr "Konkursai"
+
+#: templates/stats_propertycounts.html:19
+msgid "Take-home contests and problem sets"
+msgstr "Konkursai ir uždavinių rinkiniai"
+
+#: templates/stats_propertycounts.html:20
+msgid "Textbooks"
+msgstr "Vadovėliai"
+
+#: templates/stats_propertycounts.html:22
+msgid "Problems from textbooks"
+msgstr "Uždaviniai iš vadovėlių"
+
+#: templates/stats_propertycounts.html:23
+msgid "Training"
+msgstr "Treniruotės"
+
+#: templates/stats_propertycounts.html:25
+msgid "Training examples and miscellaneous"
+msgstr "Treniruočių uždaviniai ir kiti"
+
+#: templates/stats_propertycounts.html:39
+msgid "Number of metadata attribute values"
+msgstr "Metaduomenų atributų reikšmių skaičius"
+
+#: templates/stats_propertycounts.html:46
+msgid "Number of Values"
+msgstr "Atributų reikšmių skaičius"
 
 #~ msgid "Olympiad"
 #~ msgstr "Olimpiada"
@@ -299,11 +369,6 @@ msgstr "Išspręstos"
 
 #~ msgid "Text to Search"
 #~ msgstr "Ko ieškoti"
-
-#~ msgid "Olympiads with full solutions are shown in bold. Others are incomplete."
-#~ msgstr ""
-#~ "Olimpiados su visais sprendimais rodomos "
-#~ "pusjuodžiu šriftu. Kitos yra nebaigtos."
 
 #~ msgid "Hints"
 #~ msgstr "Patarimai"
@@ -335,6 +400,9 @@ msgstr "Išspręstos"
 #~ msgid "Statistics"
 #~ msgstr "Statistika"
 
-#~ msgid "LV.AMO Overview"
-#~ msgstr "LV.AMO apžvalga"
+#~ msgid "Property Counts"
+#~ msgstr "Uždavinių skaičius"
+
+#~ msgid "Code"
+#~ msgstr "Kodas"
 

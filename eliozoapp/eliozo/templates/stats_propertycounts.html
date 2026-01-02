@@ -1,0 +1,64 @@
+{% extends 'global.html' %}
+
+{% block content %}
+
+<div class="col-sm-8 text-left">
+
+<p>{% trans %}Metadata properties (problem classification types) and the number of problems using them.{% endtrans %}<br/>
+{% trans %}The metadata properties are described{% endtrans %} <a href="#">{% trans %}in the ontology{% endtrans %}</a>.</p>
+
+<table class="tasks">
+    <tbody>
+        <tr>
+            <th>{% trans %}Property Name{% endtrans %}</th>
+            <th>{% trans %}Olympiads{% endtrans %} <span class="tltip"><img style="vertical-align: middle;width:12px;"
+         src="{{ url_for('static',filename='blue_question_mark.png') }}">
+    <span class="tltiptext">{% trans %}Olympiad problems{% endtrans %}</span></th>
+            <th>{% trans %}Take-home{% endtrans %} <span class="tltip"><img style="vertical-align: middle;width:12px;"
+         src="{{ url_for('static',filename='blue_question_mark.png') }}">
+    <span class="tltiptext">{% trans %}Take-home contests and problem sets{% endtrans %}</span></th>     
+            <th>{% trans %}Textbooks{% endtrans %} <span class="tltip"><img style="vertical-align: middle;width:12px;"
+         src="{{ url_for('static',filename='blue_question_mark.png') }}">
+    <span class="tltiptext">{% trans %}Problems from textbooks{% endtrans %}</span></th>   
+            <th>{% trans %}Training{% endtrans %} <span class="tltip"><img style="vertical-align: middle;width:12px;"
+         src="{{ url_for('static',filename='blue_question_mark.png') }}">
+    <span class="tltiptext">{% trans %}Training examples and miscellaneous{% endtrans %}</span></th>
+        </tr>
+        {% for property in properties %}
+        <tr class="{{ loop.cycle('odd', 'even') }}">
+            <td class="stat"><tt>{{ property }}</tt></td>
+            <td class="stat">{{ problem_counts[property].olympiads }}</td>
+            <td class="stat">{{ problem_counts[property].takehome }}</td>
+            <td class="stat">{{ problem_counts[property].textbooks }}</td>
+            <td class="stat">{{ problem_counts[property].training }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<p><b>{% trans %}Number of metadata attribute values{% endtrans %}:</b></p>
+
+
+<table class="tasks">
+    <tbody>
+        <tr>
+            <th>{% trans %}Property Name{% endtrans %}</th>
+            <th>{% trans %}Number of Values{% endtrans %}</th>
+            <th>Max Values</th>
+            <th>See full list</th>
+        </tr>
+        {% for property in properties %}
+        <tr class="{{ loop.cycle('odd', 'even') }}">
+            <td class="stat"><tt>{{ property }}</tt></td>
+            <td class="stat">{{ actual_values[property] }}</td>
+            <td class="stat">{{ max_values[property] }}</td>
+            <td>TBD</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</div>
+
+
+{% endblock %}

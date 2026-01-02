@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-09-07 18:03+0300\n"
+"POT-Creation-Date: 2025-12-29 03:08+0200\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: lv\n"
@@ -17,13 +17,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.15.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: templates/book_problems_content.html:5 templates/video_content.html:5
+#: templates/worksheets_content.html:5
 msgid "Back"
 msgstr "Atpakaļ"
 
-#: templates/curriculum_content.html:36
+#: templates/curriculum_content.html:60
 msgid "Methods"
 msgstr "Metodes"
 
@@ -160,7 +161,7 @@ msgstr "Atrisinājums"
 msgid "Problems having at least one solution."
 msgstr "Uzdevumi ar vismaz vienu atrisinājumu."
 
-#: templates/filter_content.html:179 templates/global.html:138
+#: templates/filter_content.html:179 templates/global.html:139
 msgid "Video"
 msgstr "Video"
 
@@ -168,7 +169,7 @@ msgstr "Video"
 msgid "Problems with video-recorded solutions."
 msgstr "Uzdevumi ar atrisinājumu video formā."
 
-#: templates/filter_content.html:204 templates/main_content.html:9
+#: templates/filter_content.html:204 templates/main_content.html:11
 msgid "Search"
 msgstr "Meklēt"
 
@@ -176,11 +177,11 @@ msgstr "Meklēt"
 msgid "Pages"
 msgstr "Lapas"
 
-#: templates/filter_content.html:222 templates/main_content.html:55
+#: templates/filter_content.html:222 templates/main_content.html:57
 msgid "More"
 msgstr "Vairāk"
 
-#: templates/global.html:16 templates/global.html:105 templates/global.html:174
+#: templates/global.html:16 templates/global.html:105 templates/global.html:179
 msgid "Home"
 msgstr "Sākums"
 
@@ -225,34 +226,42 @@ msgid "Problem Count"
 msgstr "Uzdevumu skaits"
 
 #: templates/global.html:137
+msgid "Property Usage"
+msgstr "Atribūtu lietojums"
+
+#: templates/global.html:138
 msgid "Result Summary"
 msgstr "Rezultāti"
 
-#: templates/global.html:145
+#: templates/global.html:149
 msgid "About Us"
 msgstr "Par mums"
 
-#: templates/global.html:148
+#: templates/global.html:152
 msgid "References"
 msgstr "Atsauces"
 
-#: templates/main_content.html:13
+#: templates/global.html:153
+msgid "Contact information"
+msgstr "Kontaktinformācija"
+
+#: templates/main_content.html:15
 msgid "Exactly"
 msgstr "Precīzi"
 
-#: templates/main_content.html:19
+#: templates/main_content.html:21
 msgid "Regex"
 msgstr "Reg. izteiksmi"
 
-#: templates/main_content.html:25
+#: templates/main_content.html:27
 msgid "By meaning"
 msgstr "Pēc nozīmes"
 
-#: templates/main_content.html:32
+#: templates/main_content.html:34
 msgid "In questions"
 msgstr "Jautājumos"
 
-#: templates/main_content.html:33
+#: templates/main_content.html:35
 msgid "Everywhere"
 msgstr "Visur"
 
@@ -265,20 +274,81 @@ msgid "No solution"
 msgstr "Nav atrisinājuma"
 
 #: templates/stats_problemcounts.html:15
-msgid "Code"
-msgstr "Kods"
+msgid "Problem Source"
+msgstr "Uzdevumu avots"
 
 #: templates/stats_problemcounts.html:16
-msgid "Olympiad"
-msgstr "Olimpiāde"
-
-#: templates/stats_problemcounts.html:17
 msgid "Entered"
 msgstr "Ievadīti"
 
-#: templates/stats_problemcounts.html:17
+#: templates/stats_problemcounts.html:16
 msgid "Solved"
 msgstr "Atrisināti"
+
+#: templates/stats_problemcounts.html:18
+msgid "Olympiad"
+msgstr "Olimpiāde"
+
+#: templates/stats_propertycounts.html:7
+msgid ""
+"Metadata properties (problem classification types) and the number of "
+"problems using them."
+msgstr ""
+"Katram metadatu atribūtam (uzdevumu klasifikācijas veidam) norādīts "
+"uzdevumu skaits, kuros tas lietots."
+
+#: templates/stats_propertycounts.html:8
+msgid "The metadata properties are described"
+msgstr "Metadatu atribūti aprakstīti"
+
+#: templates/stats_propertycounts.html:8
+msgid "in the ontology"
+msgstr "ontoloģijā"
+
+#: templates/stats_propertycounts.html:13
+#: templates/stats_propertycounts.html:45
+msgid "Property Name"
+msgstr "Atribūta nosaukums"
+
+#: templates/stats_propertycounts.html:14
+msgid "Olympiads"
+msgstr "Olimpiādes"
+
+#: templates/stats_propertycounts.html:16
+msgid "Olympiad problems"
+msgstr "Olimpiāžu uzdevumi"
+
+#: templates/stats_propertycounts.html:17
+msgid "Take-home"
+msgstr "Konkursi"
+
+#: templates/stats_propertycounts.html:19
+msgid "Take-home contests and problem sets"
+msgstr "Konkursi un uzdevumu komplekti"
+
+#: templates/stats_propertycounts.html:20
+msgid "Textbooks"
+msgstr "Mācību grāmatas"
+
+#: templates/stats_propertycounts.html:22
+msgid "Problems from textbooks"
+msgstr "Uzdevumi no mācību grāmatām"
+
+#: templates/stats_propertycounts.html:23
+msgid "Training"
+msgstr "Treniņuzdevumi"
+
+#: templates/stats_propertycounts.html:25
+msgid "Training examples and miscellaneous"
+msgstr "Treniņuzdevumi un citi"
+
+#: templates/stats_propertycounts.html:39
+msgid "Number of metadata attribute values"
+msgstr "Metadatu atribūtu vērtību skaits"
+
+#: templates/stats_propertycounts.html:46
+msgid "Number of Values"
+msgstr "Atribūtu vērtību skaits"
 
 #~ msgid "Olympiad"
 #~ msgstr "Olimpiāde"
@@ -297,11 +367,6 @@ msgstr "Atrisināti"
 
 #~ msgid "Text to Search"
 #~ msgstr "Meklējamais teksts"
-
-#~ msgid "Olympiads with full solutions are shown in bold. Others are incomplete."
-#~ msgstr ""
-#~ "Olimpiādes ar visiem atrisinājumiem ir "
-#~ "treknā tekstā. Citas ir nepabeigtas."
 
 #~ msgid "Hints"
 #~ msgstr "Ieteikumi"
@@ -333,6 +398,9 @@ msgstr "Atrisināti"
 #~ msgid "Statistics"
 #~ msgstr "Statistika"
 
-#~ msgid "LV.AMO Overview"
-#~ msgstr "LV.AMO kopsavilkums"
+#~ msgid "Property Counts"
+#~ msgstr "Īpašību skaits"
+
+#~ msgid "Code"
+#~ msgstr "Kods"
 

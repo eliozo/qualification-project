@@ -12,6 +12,8 @@ from authlib.integrations.flask_client import OAuth
 
 from eliozo_dao.sparql_access import SparqlAccess
 from controllers.worksheets import getWorksheets
+from controllers.stats_controllers import getProblemCounts, getPropertyCounts
+from controllers.reference_controllers import getReferences, getContactInfo
 
 
 import logging
@@ -442,57 +444,57 @@ SELECT (COUNT(*) AS ?count) WHERE {{
     return x.text
 
 
-def getSPARQLProblemCounts():
-    url = FUSEKI_URL
-    query = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+# def getSPARQLProblemCounts():
+#     url = FUSEKI_URL
+#     query = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+# PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+# PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
 
-SELECT ?country ?code ?olympiadName (COUNT(DISTINCT ?problem) AS ?ProblemCount)
-WHERE {
-  ?olympiad eliozo:olympiadName ?olympiadName ;
-            eliozo:olympiadDescription ?olympiadDescription ;
-            eliozo:olympiadCountry ?country ;
-            eliozo:olympiadCode ?code .
-  ?problem rdf:type eliozo:Problem ;
-           eliozo:country ?country ;
-           eliozo:olympiadCode ?code .
-  FILTER (lang(?olympiadName) = "lv")
-            FILTER (lang(?olympiadDescription) = "lv")
-}
-GROUP BY ?country ?code ?olympiadName"""
-    myobj = {'query': query}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
+# SELECT ?country ?code ?olympiadName (COUNT(DISTINCT ?problem) AS ?ProblemCount)
+# WHERE {
+#   ?olympiad eliozo:olympiadName ?olympiadName ;
+#             eliozo:olympiadDescription ?olympiadDescription ;
+#             eliozo:olympiadCountry ?country ;
+#             eliozo:olympiadCode ?code .
+#   ?problem rdf:type eliozo:Problem ;
+#            eliozo:country ?country ;
+#            eliozo:olympiadCode ?code .
+#   FILTER (lang(?olympiadName) = "lv")
+#             FILTER (lang(?olympiadDescription) = "lv")
+# }
+# GROUP BY ?country ?code ?olympiadName"""
+#     myobj = {'query': query}
+#     head = {'Content-Type': 'application/x-www-form-urlencoded'}
+#     x = requests.post(url, myobj, head)
+#     return x.text
 
 
-def getSPARQLProblemSolvedCounts():
-    url = FUSEKI_URL
-    query = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+# def getSPARQLProblemSolvedCounts():
+#     url = FUSEKI_URL
+#     query = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+# PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+# PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
 
-SELECT ?country ?code ?olympiadName (COUNT(DISTINCT ?problem) AS ?ProblemCount)
-WHERE {
-  ?olympiad eliozo:olympiadName ?olympiadName ;
-            eliozo:olympiadDescription ?olympiadDescription ;
-            eliozo:olympiadCountry ?country ;
-            eliozo:olympiadCode ?code .
-  ?problem rdf:type eliozo:Problem ;
-           eliozo:problemSolution ?soln ;
-           eliozo:country ?country ;
-           eliozo:olympiadCode ?code .
-  FILTER (lang(?olympiadName) = "lv")
-            FILTER (lang(?olympiadDescription) = "lv")
-}
-GROUP BY ?country ?code ?olympiadName"""
-    myobj = {'query': query}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text 
+# SELECT ?country ?code ?olympiadName (COUNT(DISTINCT ?problem) AS ?ProblemCount)
+# WHERE {
+#   ?olympiad eliozo:olympiadName ?olympiadName ;
+#             eliozo:olympiadDescription ?olympiadDescription ;
+#             eliozo:olympiadCountry ?country ;
+#             eliozo:olympiadCode ?code .
+#   ?problem rdf:type eliozo:Problem ;
+#            eliozo:problemSolution ?soln ;
+#            eliozo:country ?country ;
+#            eliozo:olympiadCode ?code .
+#   FILTER (lang(?olympiadName) = "lv")
+#             FILTER (lang(?olympiadDescription) = "lv")
+# }
+# GROUP BY ?country ?code ?olympiadName"""
+#     myobj = {'query': query}
+#     head = {'Content-Type': 'application/x-www-form-urlencoded'}
+#     x = requests.post(url, myobj, head)
+#     return x.text 
 
 
 def getSPARQLOlympiadOverview(olympiad, grades, years):
@@ -1001,11 +1003,25 @@ def create_app(test_config=None):
                 replaced_text += char
         return replaced_text
 
+
+
+    app.route("/worksheets", methods=['GET', 'POST'])(getWorksheets)
+    app.route('/problem_counts', methods=['GET', 'POST'])(getProblemCounts)
+    app.route('/property_counts', methods=['GET', 'POST'])(getPropertyCounts)
+    app.route('/references', methods=['GET'])(getReferences)
+    app.route('/contact_info', methods=['GET'])(getContactInfo)
+
+
     @app.route('/setlang')
     def setLanguage():
         lang = request.args.get('lang')
         next_url = request.args.get('next')
         next_url = '/eliozo' + request.args.get('next') if next_url else url_for('main')
+
+        if lang == 'lv': 
+            session['clickcount'] = session.get('clickcount', 0) + 1
+        else: 
+            session['clickcount'] = 0
 
         if lang in LANGUAGES:
             session['lang'] = lang
@@ -1023,6 +1039,11 @@ def create_app(test_config=None):
     @app.route('/')
     def main():
         keyword = request.args.get('keyword')
+        if 'clickcount' in session: 
+            clickcount = session['clickcount']
+        else:
+            clickcount = 0
+        print(f"clickcount = {clickcount}")
         
         fuseki_url = 'http://127.0.0.1:9080/jena-fuseki-war-4.7.0/abc/'
         
@@ -1068,7 +1089,8 @@ def create_app(test_config=None):
             # 'caseSensitive': caseSensitive,
             'searchMode': searchMode,
             'lang': session.get('lang', 'lv'),
-            'title': 'Sākumlapa'
+            'title': 'Sākumlapa', 
+            'clickcount': '17'
         }
         return render_template('main_content.html', **template_context)
 
@@ -1218,28 +1240,6 @@ def create_app(test_config=None):
         with open('C:/Users/eliz_/Documents/qualification-project/flask-application/data/file.json', 'r', encoding="utf-8") as myfile:
             data = myfile.read()
         return render_template('index.html', title="page", jsonfile=json.dumps(data))
-
-    @app.route("/references")
-    def getReferences():
-        # return render_template("info.html")
-        lang = session.get('lang', 'lv')
-        fuseki_url = 'http://127.0.0.1:9080/jena-fuseki-war-4.7.0/abc/'
-        sparql_access = SparqlAccess(fuseki_url)
-        sources = sparql_access.getSPARQLSources(lang)
-        template_context = {
-            'active': 'about_us',
-            'navlinks': [
-                {
-                    'url': 'getReferences', 
-                    'title': 'References'
-                }
-            ],
-            'lang': lang,
-            'sources': sources,
-            'title': 'Atsauces'
-        }
-        return render_template('references_content.html', **template_context)
-
 
 
 
@@ -1920,56 +1920,6 @@ def create_app(test_config=None):
 
         return render_template('curriculum_content.html', **template_context)
 
-    @app.route('/problem_counts', methods=['GET', 'POST'])
-    def getProblemCounts():
-        olympiads = ['LV.SOL', 'LV.NOL', 'LV.VOL', 'LV.AMO']
-                     
-                    #  , 'LV.TST', 
-                    #  'LT.LJMO', 'LT.SAV', 'LT.LMMO', 'LT.LKMMO', 'LT.LDK', 'LT.VUMIF', 'LT.TST',
-                    #  'EE.PK', 'EE.LO', 'EE.LHT', 'EE.TST']
-        
-        x = getSPARQLProblemCounts()
-        probCounts = json.loads(x)
-
-        all_counts = dict()
-        for item in probCounts['results']['bindings']:
-            country = item['country']['value']
-            code = item['code']['value']
-            olympiadName = item['olympiadName']['value']
-            entered = int(item['ProblemCount']['value'])
-            all_counts[f'{country}.{code}'] = {'lv':olympiadName, 'entered': entered, 'solved': 0}
-
-
-        x = getSPARQLProblemSolvedCounts()
-        probSolvedCounts = json.loads(x)
-        for item in probSolvedCounts['results']['bindings']:
-            country = item['country']['value']
-            code = item['code']['value']
-            solved = int(item['ProblemCount']['value'])
-            all_counts[f'{country}.{code}']['solved'] = solved
-
-        # all_counts = {'LV.NOL': {'lv':'Latvijas Novada olimpiāde', 'entered': 100, 'solved': 28}, 
-        #               'LV.VOL': {'lv':'Latvijas Valsts olimpiāde', 'entered': 101, 'solved': 39}, 
-        #               'LV.AMO': {'lv':'Latvijas atklātā olimpiāde', 'entered': 102, 'solved': 49},
-        #               'LT.LJKMO': {'lv':'Lietuvas jaunāko klašu olimpiāde', 'entered': 103, 'solved': 25}}
-
-        print('------------------')
-        print(f'all_counts = {all_counts}')
-        print('==================')
-
-        template_context = {
-            'olympiads': olympiads,
-            'all_counts': all_counts,
-            'active': 'statistics',
-            'navlinks': [
-                {'title':'Statistics'}, 
-                {'url':'getProblemCounts', 'title':'Problem Count'}
-            ],
-            'lang': session.get('lang', 'lv'),
-            'title': 'Problem Count'
-        }
-
-        return render_template('stats_problemcounts.html', **template_context)
 
 
     @app.route('/results', methods=['GET', 'POST'])
@@ -2014,9 +1964,6 @@ def create_app(test_config=None):
         }
 
         return render_template('video_content.html', **template_context)
-
-
-    app.route("/worksheets")(getWorksheets)
 
 
     @app.route('/temp_langswitch', methods=['GET', 'POST'])
