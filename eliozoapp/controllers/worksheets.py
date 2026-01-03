@@ -5,7 +5,6 @@ def getWorksheets():
     username = user.get('name') if user and 'name' in user else None
 
     template_context = {
-        'lang': session.get('lang', 'lv'),
         'title': 'Darbalapas',
         'username': username
     }

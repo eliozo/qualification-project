@@ -183,7 +183,6 @@ def getProblemCounts():
             {'title':'Statistics'}, 
             {'url':'getProblemCounts', 'title':'Problem Count'}
         ],
-        'lang': session.get('lang', 'lv'),
         'title': 'Problem Count'
     }
 
@@ -246,7 +245,6 @@ def getPropertyCounts():
             {'title':'Statistics'}, 
             {'url':'getPropertyCounts', 'title':'Property Count'}
         ],
-        'lang': session.get('lang', 'lv'),
         'title': 'Property Count'
     }
     return render_template('stats_propertycounts.html', **template_context)

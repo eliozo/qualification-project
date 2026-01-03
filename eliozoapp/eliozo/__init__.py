@@ -1012,6 +1012,19 @@ def create_app(test_config=None):
     app.route('/contact_info', methods=['GET'])(getContactInfo)
 
 
+    @app.before_request
+    def ensure_clickcount():
+        session.setdefault("clickcount", 0)
+
+    @app.context_processor
+    def inject_globals():
+        return {
+            "clickcount": session.get("clickcount", 0),
+            # you can inject other common vars too:
+            "lang": session.get("lang", "lv"),
+        }
+
+
     @app.route('/setlang')
     def setLanguage():
         lang = request.args.get('lang')
@@ -1050,16 +1063,10 @@ def create_app(test_config=None):
         if keyword is None or keyword == "":
             template_context = {
                 'active': 'main',
-                'lang': session.get('lang', 'lv'),
                 'searchMode': 'exact'
             }
             return render_template('main_content.html',  **template_context)
         new_keyword = replace_non_ascii_with_unicode_escape(keyword)
-        # caseSensitive = request.args.get('caseSensitive')
-        # print(f'caseSensitive = {caseSensitive}')
-        # isCaseSensitive = (caseSensitive == '1')
-        # regex = request.args.get('regex')
-        # print(f'regex = {regex}')
         searchMode = request.args.get('searchMode')
 
         isRegex = (searchMode == 'regex')
@@ -1074,8 +1081,6 @@ def create_app(test_config=None):
         for item in link['results']['bindings']:
             problem_id_value = item['problemid']['value']
             problem_imagefile = ''
-            # if 'imagefile' in item:
-            #     problem_imagefile = item['imagefile']['value']
             problem_text_value = mathBeautify(item['textHtml']['value'])
             problem_text_value = fix_image_links(problem_text_value)
             d = {'problemid': problem_id_value, 'text': problem_text_value, 'imagefile': problem_imagefile}
@@ -1085,12 +1090,10 @@ def create_app(test_config=None):
             'problems': problems,
             'keyword' : keyword,
             'active': 'main',
-            # 'regex': regex,
-            # 'caseSensitive': caseSensitive,
             'searchMode': searchMode,
             'lang': session.get('lang', 'lv'),
             'title': 'Sākumlapa', 
-            'clickcount': '17'
+            'clickcount': clickcount
         }
         return render_template('main_content.html', **template_context)
 
@@ -1149,7 +1152,6 @@ def create_app(test_config=None):
                         'title': 'Filters'
                     }
                 ],
-                'lang': session.get('lang', 'lv'),
                 'params': params,
                 'all_counts': all_counts,
                 'olympiadTypeDict': olympiadTypeDict,
@@ -1228,7 +1230,6 @@ def create_app(test_config=None):
                         'title': 'Filters'
                     }
                 ],
-                'lang': session.get('lang', 'lv'),
                 'title': 'Filtri'
             }
             return render_template('filter_content.html', **template_context)
@@ -1346,7 +1347,6 @@ def create_app(test_config=None):
                     'title': 'Topics'
                 }
             ],
-            'lang': session.get('lang', 'lv'),
             'title': 'Tēmas',
             'structured_topics': structured_topics
         }
@@ -1468,7 +1468,6 @@ def create_app(test_config=None):
                     'title': 'Concepts'
                 }
             ],
-            'lang': session.get('lang', 'lv'),
             'title': 'Jēdzieni'
         }
         return render_template('concepts_content.html', **template_context)
@@ -1509,7 +1508,6 @@ def create_app(test_config=None):
             'problem_list': problem_list,
             'topic_list' : topic_list,
             'active': 'topics',
-            'lang': session.get('lang', 'lv'),
             'title': 'Tēma'
         }
         return render_template('topic_tasks_content.html', **template_context)
@@ -1540,7 +1538,6 @@ def create_app(test_config=None):
             'problems': problems,
             'bookid' : bookid,
             'active': 'archive',
-            'lang': session.get('lang', 'lv'),
             'title': 'Grāmata'
         }
 
@@ -1685,7 +1682,6 @@ def create_app(test_config=None):
             'youtubeID': youtubeID,
             'hasSolution': hasSolution,
             'active': 'archive',
-            'lang': session.get('lang', 'lv'),
             'title': 'Uzdevums',
             'metaitems': metaitems
         }
@@ -1717,7 +1713,6 @@ def create_app(test_config=None):
             'problemTextHtml': problemTextHtml,
             'solutionsHtml': solutionsHtml,
             'active': 'archive',
-            'lang': session.get('lang', 'lv'),
             'title': 'Uzdevums'
         }
         return render_template('problem_solution_content.html', **template_context)
@@ -1768,7 +1763,6 @@ def create_app(test_config=None):
             'navlinks': [
                 {'url':'getArchive', 'title':'Archive'}
             ],
-            'lang': session.get('lang', 'lv'),
             'title': 'Arhīvs'
         }
 
@@ -1800,7 +1794,6 @@ def create_app(test_config=None):
             'country_id': country_id,
             'olympiad_id': olympiad_id,
             'active': 'archive',
-            'lang': session.get('lang', 'lv'),
             'title': 'Olimpiāde'
         }
         return render_template('olympiad_content.html', **template_context)
@@ -1930,7 +1923,6 @@ def create_app(test_config=None):
                 {'title':'Statistics'}, 
                 {'url':'getResults', 'title':'Result Summary'}
             ],
-            'lang': session.get('lang', 'lv'),
             'title': 'Result Summary'
         }
 
@@ -1959,7 +1951,6 @@ def create_app(test_config=None):
                 {'title':'Statistics'}, 
                 {'url':'getVideo', 'title':'Video'}
             ],
-            'lang': session.get('lang', 'lv'),
             'title': 'Video'
         }
 
@@ -1982,7 +1973,6 @@ def create_app(test_config=None):
     @app.route('/grade', methods=['GET', 'POST'])
     def getGrades():
         lang = session.get('lang', 'lv')
-        # lang = 'lv'
         event = request.args.get('event')
         country = request.args.get('country')
         grade = request.args.get('grade')
@@ -2031,7 +2021,6 @@ def create_app(test_config=None):
                     'title': f'{country}.{olympiad}.{event}'
                 }
             ],
-            'lang': session.get('lang', 'lv'),
             'title': f'{country}.{olympiad}.{event}'
         }
 
