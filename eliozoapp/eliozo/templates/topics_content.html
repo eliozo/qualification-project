@@ -1,13 +1,21 @@
 {% extends 'global.html' %}
 
+
+
 {% block content %}
 <div class="text-left">
-    <div class="container">
-        {{jsonfile}}
-    </div>
 
- {% for L1_topic in structured_topics %}
- <h3>{{ L1_topic.number }}. {{ L1_topic.name }}</h3>
+{% if lang != 'lv' %}
+<p><small><b>Note: </b>Topic names/descriptions only available in Latvian.</small></p>
+{% endif %}
+
+
+<div class="container">
+    {{jsonfile}}
+</div>
+
+{% for L1_topic in structured_topics %}
+<h3>{{ L1_topic.number }}. {{ L1_topic.name }}</h3>
 <div class="panel-group" id="accordion">
 {% for L2_topic in L1_topic.subtopics %}
 <div class="panel panel-default">
@@ -90,6 +98,7 @@ data-parent="#accordion" href="#collapse{{L2_topic.label}}">{{ L2_topic.number }
         </tbody>
     </table>
            #}
+
 
 
         </div>

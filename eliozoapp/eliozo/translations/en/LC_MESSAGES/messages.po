@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-12-29 03:08+0200\n"
+"POT-Creation-Date: 2026-01-03 23:55+0200\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -22,6 +22,14 @@ msgstr ""
 #: templates/worksheets_content.html:5
 msgid "Back"
 msgstr "Back"
+
+#: templates/concepts_content.html:17 templates/concepts_content.html:18
+msgid "Concept"
+msgstr "Concept"
+
+#: templates/concepts_content.html:19
+msgid "Usage"
+msgstr "Usage"
 
 #: templates/curriculum_content.html:60
 msgid "Methods"
@@ -166,7 +174,7 @@ msgstr "Video"
 msgid "Problems with video-recorded solutions."
 msgstr "Problems with video-recorded solutions."
 
-#: templates/filter_content.html:204 templates/main_content.html:11
+#: templates/filter_content.html:204 templates/main_content.html:13
 msgid "Search"
 msgstr "Search"
 
@@ -174,11 +182,11 @@ msgstr "Search"
 msgid "Pages"
 msgstr "Pages"
 
-#: templates/filter_content.html:222 templates/main_content.html:57
+#: templates/filter_content.html:222 templates/main_content.html:59
 msgid "More"
 msgstr "More"
 
-#: templates/global.html:16 templates/global.html:105 templates/global.html:179
+#: templates/global.html:16 templates/global.html:105 templates/global.html:174
 msgid "Home"
 msgstr "Home"
 
@@ -230,6 +238,10 @@ msgstr "Property Usage"
 msgid "Result Summary"
 msgstr "Result Summary"
 
+#: templates/global.html:144
+msgid "Worksheets"
+msgstr ""
+
 #: templates/global.html:149
 msgid "About Us"
 msgstr "About Us"
@@ -242,23 +254,23 @@ msgstr "References"
 msgid "Contact information"
 msgstr "Contact information"
 
-#: templates/main_content.html:15
+#: templates/main_content.html:17
 msgid "Exactly"
 msgstr "Exactly"
 
-#: templates/main_content.html:21
+#: templates/main_content.html:23
 msgid "Regex"
 msgstr "Regex"
 
-#: templates/main_content.html:27
+#: templates/main_content.html:29
 msgid "By meaning"
 msgstr "By meaning"
 
-#: templates/main_content.html:34
+#: templates/main_content.html:36
 msgid "In questions"
 msgstr "In questions"
 
-#: templates/main_content.html:35
+#: templates/main_content.html:37
 msgid "Everywhere"
 msgstr "Everywhere"
 
@@ -269,6 +281,11 @@ msgstr "Topics"
 #: templates/problem_content.html:63
 msgid "No solution"
 msgstr "No solution"
+
+#: templates/problem_solution_content.html:14
+#, fuzzy
+msgid "Hide solution"
+msgstr "Solution"
 
 #: templates/stats_problemcounts.html:15
 msgid "Problem Source"

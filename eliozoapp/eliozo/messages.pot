@@ -1,14 +1,14 @@
 # Translations template for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
+# Copyright (C) 2026 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-12-29 03:08+0200\n"
+"POT-Creation-Date: 2026-01-03 23:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,14 @@ msgstr ""
 #: templates/book_problems_content.html:5 templates/video_content.html:5
 #: templates/worksheets_content.html:5
 msgid "Back"
+msgstr ""
+
+#: templates/concepts_content.html:17 templates/concepts_content.html:18
+msgid "Concept"
+msgstr ""
+
+#: templates/concepts_content.html:19
+msgid "Usage"
 msgstr ""
 
 #: templates/curriculum_content.html:60
@@ -161,7 +169,7 @@ msgstr ""
 msgid "Problems with video-recorded solutions."
 msgstr ""
 
-#: templates/filter_content.html:204 templates/main_content.html:11
+#: templates/filter_content.html:204 templates/main_content.html:13
 msgid "Search"
 msgstr ""
 
@@ -169,11 +177,11 @@ msgstr ""
 msgid "Pages"
 msgstr ""
 
-#: templates/filter_content.html:222 templates/main_content.html:57
+#: templates/filter_content.html:222 templates/main_content.html:59
 msgid "More"
 msgstr ""
 
-#: templates/global.html:16 templates/global.html:105 templates/global.html:179
+#: templates/global.html:16 templates/global.html:105 templates/global.html:174
 msgid "Home"
 msgstr ""
 
@@ -225,6 +233,10 @@ msgstr ""
 msgid "Result Summary"
 msgstr ""
 
+#: templates/global.html:144
+msgid "Worksheets"
+msgstr ""
+
 #: templates/global.html:149
 msgid "About Us"
 msgstr ""
@@ -237,23 +249,23 @@ msgstr ""
 msgid "Contact information"
 msgstr ""
 
-#: templates/main_content.html:15
+#: templates/main_content.html:17
 msgid "Exactly"
 msgstr ""
 
-#: templates/main_content.html:21
+#: templates/main_content.html:23
 msgid "Regex"
 msgstr ""
 
-#: templates/main_content.html:27
+#: templates/main_content.html:29
 msgid "By meaning"
 msgstr ""
 
-#: templates/main_content.html:34
+#: templates/main_content.html:36
 msgid "In questions"
 msgstr ""
 
-#: templates/main_content.html:35
+#: templates/main_content.html:37
 msgid "Everywhere"
 msgstr ""
 
@@ -263,6 +275,10 @@ msgstr ""
 
 #: templates/problem_content.html:63
 msgid "No solution"
+msgstr ""
+
+#: templates/problem_solution_content.html:14
+msgid "Hide solution"
 msgstr ""
 
 #: templates/stats_problemcounts.html:15

@@ -1,8 +1,11 @@
 {% extends 'global.html' %}
 
 {% block content %}
-        <div class="col-sm-8 text-left">
+<div class="col-sm-8 text-left">
 
+{% if lang != 'lv' %}
+<p><small><b>Note: </b>Genre names/descriptions only available in Latvian.</small></p>
+{% endif %}
 
         {% for domain in domain_keys %}
         <b style="font-size:120%;">{{ domain_names[domain] }}</b>
@@ -33,5 +36,5 @@
             </tbody>
             </table>
         {% endfor %}
-        </div>
+</div>
 {% endblock %}

@@ -11,7 +11,7 @@
 
 <p> {{ problemTextHtml | safe }}</p>
 
-<p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problemid) }}">Noslēpt atrisinājumu</a></p>
+<p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problemid) }}">{% trans %}Hide solution{% endtrans %}</a></p>
 
 
   {% for soln in solutionsHtml %}

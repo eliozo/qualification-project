@@ -1,29 +1,34 @@
 {% extends 'global.html' %}
 
 {% block content %}
-       <div class="col-sm-8 text-left">
-           <div class="container">
-               {{jsonfile}}
-           </div>
+<div class="col-sm-8 text-left">
+<div class="container">
+    {{jsonfile}}
+</div>
 
-           <table class="tasks">
-        <colgroup>
-            <col class="aaa">
-            <col class="bbb">
-            <col class="ccc">
-        </colgroup>
-        <tbody>
-            {% for concept in all_concepts %}
-            <tr class="{{ loop.cycle('odd', 'even') }}">
-                <td>{{ concept.termEN }}</a></td>
-                <td>{{ concept.termLV }}</td>
-                <td>{% if concept.descLV != '' %}  <small>{{ concept.descLV | safe }}</small><br /> {% endif %}
-                {% for problem in concept.problems %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
-                        problem }}</a>, {% endfor %}
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-        </div>
+<table class="tasks">
+<colgroup>
+    <col class="aaa">
+    <col class="bbb">
+    <col class="ccc">
+</colgroup>
+<tbody>
+    <tr>
+        <th>{% trans %}Concept{% endtrans %} (en)</th>
+        <th>{% trans %}Concept{% endtrans %} (lv)</th>
+        <th>{% trans %}Usage{% endtrans %}</th>
+    </tr>
+    {% for concept in all_concepts %}
+    <tr class="{{ loop.cycle('odd', 'even') }}">
+        <td>{{ concept.termEN }}</a></td>
+        <td>{{ concept.termLV }}</td>
+        <td>{% if concept.descLV != '' %}  <small>{{ concept.descLV | safe }}</small><br /> {% endif %}
+        {% for problem in concept.problems %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                problem }}</a>, {% endfor %}
+        </td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+</div>
 {% endblock %}
