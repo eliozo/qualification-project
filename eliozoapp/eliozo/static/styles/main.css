@@ -395,3 +395,18 @@ tt.metahelp {
   color:#999999;
   font-size: 80%;
 }
+
+
+dl.problem-list dd {
+  margin-left: 40px;
+}
+
+dl.problem-list dt.parent {
+  font-weight: bold;
+  margin-left: 0px;
+}
+
+dl.problem-list dt.child {
+  font-weight: normal;
+  margin-left: 20px;
+}

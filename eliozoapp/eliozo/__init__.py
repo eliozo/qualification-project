@@ -95,6 +95,35 @@ SELECT ?concept ?termLV ?termEN ?conceptID ?descLV ?problemID WHERE {
 
 
 
+def getSPARQLmethods():
+    url = FUSEKI_URL
+    queryTemplate = """
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+
+SELECT ?methodID ?methodNumber ?methodName ?methodDescription ?problemid ?L1 ?L2 WHERE {
+  ?method a eliozo:Method ;
+            eliozo:methodID ?methodID ;
+            eliozo:methodNumber ?methodNumber ;
+            eliozo:methodName ?methodName ;
+            eliozo:methodDescription ?methodDescription ;
+            eliozo:sorter_L1 ?L1 ;
+            eliozo:sorter_L2 ?L2 .
+  OPTIONAL {
+    ?prob eliozo:method ?method ;
+    eliozo:problemID ?problemid . 
+  }
+} ORDER BY ?L1 ?L2
+"""
+    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+    myobj = {'query': queryTemplate}
+    x = requests.post(url, myobj, head)
+    return x.text
+
+
+
 def getSPARQLdomains():
     url = FUSEKI_URL
     queryTemplate = """
@@ -1357,15 +1386,41 @@ def create_app(test_config=None):
     @app.route('/methods', methods=['GET', 'POST'])
     def getMethods():
         lang = session.get('lang', 'lv')
+        data = json.loads(getSPARQLmethods())
+
+        all_methods = []
+        all_methods_info = dict()
+
+        current_method = "NA"
+
+        for item in data['results']['bindings']:
+            if item['methodID']['value'] != current_method:
+                current_method = item['methodID']['value']
+                all_methods.append(current_method)
+
+                current_method_info = dict()
+
+                current_method_info['identifier'] = item['methodID']['value'][4:]
+                current_method_info['number'] = item['methodNumber']['value']
+                current_method_info['name'] = item['methodName']['value']
+                current_method_info['description'] = item['methodDescription']['value']
+
+                if "problemid" in item:
+                    current_method_info['problems'] = [item['problemid']['value']]
+                else:
+                    current_method_info['problems'] = []
+                all_methods_info[current_method] = current_method_info
+            else:
+                current_method_info['problems'].append(item['problemid']['value'])    
+
+
         template_context = {
             'active': 'order_by',
+            'all_methods': all_methods, 
+            'all_methods_info': all_methods_info,
             'navlinks': [
-                {
-                    'url': 'getMethods', 
-                    'title': 'Methods'
-                }
+                { 'url': 'getMethods', 'title': 'Methods' }
             ],
-            'lang': lang,
             'title': 'Metodes'
         }
         return render_template('methods_content.html', **template_context)
@@ -1417,7 +1472,6 @@ def create_app(test_config=None):
                     'title': 'Genres'
                 }
             ],
-            'lang': lang,
             'title': 'Žanri'
         }
         return render_template('genres_content.html', **template_context)    
@@ -1907,7 +1961,7 @@ def create_app(test_config=None):
 
             'navlinks': [
                 {'title':'Reports'}, 
-                {'url':'getCurriculum', 'title':'Olimpiad Curriculum'}
+                {'url':'getCurriculum', 'title':'Olympiad Curriculum'}
             ]
         }
 

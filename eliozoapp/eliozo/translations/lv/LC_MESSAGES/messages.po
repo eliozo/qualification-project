@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-01-03 23:55+0200\n"
+"POT-Creation-Date: 2026-01-04 00:47+0200\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: lv\n"
@@ -19,6 +19,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
+#: templates/archive_content.html:41
+msgid "Books"
+msgstr "Mācību grāmatas"
+
 #: templates/book_problems_content.html:5 templates/video_content.html:5
 #: templates/worksheets_content.html:5
 msgid "Back"
@@ -29,7 +33,6 @@ msgid "Concept"
 msgstr "Jēdziens"
 
 #: templates/concepts_content.html:19
-#, fuzzy
 msgid "Usage"
 msgstr "Lietojums"
 
@@ -255,7 +258,7 @@ msgid "References"
 msgstr "Atsauces"
 
 #: templates/global.html:153
-msgid "Contact information"
+msgid "Contact Information"
 msgstr "Kontaktinformācija"
 
 #: templates/main_content.html:17
@@ -287,9 +290,8 @@ msgid "No solution"
 msgstr "Nav atrisinājuma"
 
 #: templates/problem_solution_content.html:14
-#, fuzzy
 msgid "Hide solution"
-msgstr "Atrisinājums"
+msgstr "Noslēpt atrisinājumu"
 
 #: templates/stats_problemcounts.html:15
 msgid "Problem Source"

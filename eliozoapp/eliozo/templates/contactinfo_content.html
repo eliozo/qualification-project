@@ -2,8 +2,18 @@
 
 {% block content %}
 <div class="col-sm-8 text-left">
-<p><b>Kontaktinformācija</b></p>
 
-<p>TBD</p>
+{% if lang == 'en' %} 
+<p><b>Contact Information</b>: This site was created by Elizabete Ozoliņa and Kalvis Apsītis.
+Your feedback and suggestions are welcome: <tt>liliyang146@gmail.com</tt>.</p>
+{% elif lang == 'lt' %} 
+<p><b>Kontaktinė informacija</b>: Puslapį sukūrė Elizabete Ozoliņa ir Kalvis Apsītis.
+Prašome siųsti pasiūlymus adresu <tt>liliyang146@gmail.com</tt>.</p>
+{% elif lang == 'lv' %}
+<p><b>Kontaktinformācija</b>: Lapu izstrādājuši Elizabete Ozoliņa un Kalvis Apsītis.
+Ierosinājumus lūdzam sūtīt uz epastu <tt>liliyang146@gmail.com</tt>.</p>
+{% endif %}
+
+
 </div>
 {% endblock %}

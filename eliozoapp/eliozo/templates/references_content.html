@@ -1,13 +1,23 @@
 {% extends 'global.html' %}
 
 {% block content %}
-        <div class="col-sm-8 text-left">
-        <p>Norādes uz olimpiāžu uzdevumu pirmavotiem.</p>
-        <dl>
-        {% for source in sources %}
-        <dt>[{{ source.label }}] <a class="info" href="{{ source.url }}">{{ source.name }}</a></dt>
-        <dd class="info">{{ source.description }}</dd>
-        {% endfor %}
-        </dl>
-        </div>
+<div class="col-sm-8 text-left">
+
+
+
+{% if lang == 'en' %} 
+<p>Sources of the primary sources of olympiad problems.</p>
+{% elif lang == 'lt' %} 
+<p>Nuorodos į olimpiadų užduočių pirminius šaltinius.</p>
+{% elif lang == 'lv' %}
+<p>Norādes uz olimpiāžu uzdevumu pirmavotiem.</p>
+{% endif %}
+
+<dl>
+{% for source in sources %}
+<dt>[{{ source.label }}] <a class="info" href="{{ source.url }}">{{ source.name }}</a></dt>
+<dd class="info">{{ source.description }}</dd>
+{% endfor %}
+</dl>
+</div>
 {% endblock %}

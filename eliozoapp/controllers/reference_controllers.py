@@ -10,10 +10,8 @@ def getReferences():
     template_context = {
         'active': 'about_us',
         'navlinks': [
-            {
-                'url': 'getReferences', 
-                'title': 'References'
-            }
+            { 'title':'About Us' },
+            { 'url': 'getReferences', 'title': 'References'}
         ],
         'lang': lang,
         'sources': sources,
@@ -27,10 +25,8 @@ def getContactInfo():
     template_context = {
         'active': 'about_us',
         'navlinks': [
-            {
-                'url': 'getContactInfo', 
-                'title': 'Contact Information'
-            }
+            {'title':'About Us'},
+            {'url': 'getContactInfo', 'title': 'Contact Information'}
         ],
         'lang': lang,
         'title': 'Contact Information'

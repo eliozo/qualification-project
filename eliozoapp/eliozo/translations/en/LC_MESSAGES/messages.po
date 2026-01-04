@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-01-03 23:55+0200\n"
+"POT-Creation-Date: 2026-01-04 00:47+0200\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
+
+#: templates/archive_content.html:41
+msgid "Books"
+msgstr "Books"
 
 #: templates/book_problems_content.html:5 templates/video_content.html:5
 #: templates/worksheets_content.html:5
@@ -251,8 +255,8 @@ msgid "References"
 msgstr "References"
 
 #: templates/global.html:153
-msgid "Contact information"
-msgstr "Contact information"
+msgid "Contact Information"
+msgstr "Contact Information"
 
 #: templates/main_content.html:17
 msgid "Exactly"
@@ -283,9 +287,8 @@ msgid "No solution"
 msgstr "No solution"
 
 #: templates/problem_solution_content.html:14
-#, fuzzy
 msgid "Hide solution"
-msgstr "Solution"
+msgstr "Hide solution"
 
 #: templates/stats_problemcounts.html:15
 msgid "Problem Source"
