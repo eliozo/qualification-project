@@ -26,14 +26,15 @@
                         endif %}>
                     {% trans %}By meaning{% endtrans %}
                 </label>
+                &nbsp;&nbsp;
+                <select class="search-target" name="something" style="margin-left: 10px; padding: 2px;">
+                    <option value="questions" selected>{% trans %}In questions{% endtrans %}</option>
+                    <option value="solutions">{% trans %}Everywhere{% endtrans %}</option>
+                </select>
             </div>
 
 
             <div class="search-container" style="border-radius: 24px; align-items: flex-end; padding: 5px;">
-                <select class="search-target" name="something" style="margin-bottom: 5px;">
-                    <option value="questions" selected>{% trans %}In questions{% endtrans %}</option>
-                    <option value="solutions">{% trans %}Everywhere{% endtrans %}</option>
-                </select>
                 <textarea class="search-input" placeholder="Search ELIOZO" name="keyword" rows="1"
                     style="resize: none; padding: 10px; border-radius: 20px; margin: 0 5px;">{{ keyword }}</textarea>
                 <button type="submit" class="search-quadratic"
