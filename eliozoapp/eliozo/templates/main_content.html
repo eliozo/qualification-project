@@ -3,61 +3,92 @@
 {% block content %}
 <div class="col-sm-8 text-left">
 
-{#
-<p>Message = {{ clickcount }}</p>
-#}
+    {#
+    <p>Message = {{ clickcount }}</p>
+    #}
 
-<div class="main">
-    <form action="{{ url_for('main') }}" method="get">
+    <div class="main">
+        <form action="{{ url_for('main') }}" method="get">
 
-        <div>{% trans %}Search{% endtrans %}:
-        <label style="font-weight:normal;">
-            <input type="radio" name="searchMode" value="exact"
-            {% if searchMode == 'exact' %}checked{% endif %}>
-            {% trans %}Exactly{% endtrans %}
-        </label>
-        &nbsp;&nbsp;
-        <label style="font-weight:normal;">
-            <input type="radio" name="searchMode" value="regex"
-            {% if searchMode == 'regex' %}checked{% endif %}>
-            {% trans %}Regex{% endtrans %}
-        </label>
-        &nbsp;&nbsp;
-        <label style="font-weight:normal;">
-            <input type="radio" name="searchMode" value="semantic"
-            {% if searchMode == 'semantic' %}checked{% endif %}>
-            {% trans %}By meaning{% endtrans %}
-        </label>
-        </div>
+            <div>{% trans %}Search{% endtrans %}:
+                <label style="font-weight:normal;">
+                    <input type="radio" name="searchMode" value="exact" {% if searchMode=='exact' %}checked{% endif %}>
+                    {% trans %}Exactly{% endtrans %}
+                </label>
+                &nbsp;&nbsp;
+                <label style="font-weight:normal;">
+                    <input type="radio" name="searchMode" value="regex" {% if searchMode=='regex' %}checked{% endif %}>
+                    {% trans %}Regex{% endtrans %}
+                </label>
+                &nbsp;&nbsp;
+                <label style="font-weight:normal;">
+                    <input type="radio" name="searchMode" value="semantic" {% if searchMode=='semantic' %}checked{%
+                        endif %}>
+                    {% trans %}By meaning{% endtrans %}
+                </label>
+            </div>
 
 
-        <div class="search-container">
-        <select class="search-target" name="something">
-            <option value="questions" selected>{% trans %}In questions{% endtrans %}</option>
-            <option value="solutions">{% trans %}Everywhere{% endtrans %}</option>
-        </select>
-        <input type="text" class="search-input" placeholder="Search ELIOZO" name="keyword" value="{{ keyword }}">
-        <button type="submit" class="search-quadratic">
-            <img src="{{ url_for('static',filename='magnifying-glass.png') }}" alt="Search"/>
-        </button>
-        </div>
+            <div class="search-container" style="border-radius: 24px; align-items: flex-end; padding: 5px;">
+                <select class="search-target" name="something" style="margin-bottom: 5px;">
+                    <option value="questions" selected>{% trans %}In questions{% endtrans %}</option>
+                    <option value="solutions">{% trans %}Everywhere{% endtrans %}</option>
+                </select>
+                <textarea class="search-input" placeholder="Search ELIOZO" name="keyword" rows="1"
+                    style="resize: none; padding: 10px; border-radius: 20px; margin: 0 5px;">{{ keyword }}</textarea>
+                <button type="submit" class="search-quadratic"
+                    style="border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; margin-bottom: 2px;">
+                    <img src="{{ url_for('static',filename='magnifying-glass.png') }}" alt="Search" />
+                </button>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    const searchInput = $('.search-input');
+                    const searchModeRadios = $('input[name="searchMode"]');
+                    const form = searchInput.closest('form');
+
+                    function updateSearchInput() {
+                        const mode = searchModeRadios.filter(':checked').val();
+                        if (mode === 'semantic') {
+                            searchInput.attr('rows', '3');
+                        } else {
+                            searchInput.attr('rows', '1');
+                        }
+                    }
+
+                    searchModeRadios.change(updateSearchInput);
+
+                    // Initialize on load
+                    updateSearchInput();
+
+                    // Handle Enter key in textarea
+                    searchInput.keypress(function (e) {
+                        if (e.which == 13 && !e.shiftKey) {
+                            e.preventDefault();
+                            form.submit();
+                        }
+                    });
+                });
+            </script>
+        </form>
+    </div>
+
+    {#
+    <form class="search-form" action="{{ url_for('main') }}" method="get">
+        <input class="search-input" type="text" name="keyword" value="{{ keyword }}"
+            placeholder="{% trans %}Text to Search{% endtrans %}">
+        <button class="search-button" type="submit">{% trans %}Search{% endtrans %}</button>
     </form>
-</div>
+    #}
 
-{#
-<form class="search-form" action="{{ url_for('main') }}" method="get">
-<input class="search-input" type="text" name="keyword" value="{{ keyword }}" placeholder="{% trans %}Text to Search{% endtrans %}">
-<button class="search-button" type="submit">{% trans %}Search{% endtrans %}</button>
-</form>
-#}
+    {% for problem in problems %}
+    <h3 class="problem">{{ problem.problemid }}</h3>
 
-{% for problem in problems %}
-<h3 class="problem">{{ problem.problemid }}</h3>
+    {{ problem.text | safe }}
 
-{{ problem.text | safe }}
-
-<p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">{% trans %}More{% endtrans %}...</a></p>
-{% endfor %}
+    <p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">{% trans
+            %}More{% endtrans %}...</a></p>
+    {% endfor %}
 
     {#
     <ul style="color:#cccccc">
