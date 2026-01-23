@@ -12,6 +12,7 @@ from authlib.integrations.flask_client import OAuth
 
 from eliozo_dao.sparql_access import SparqlAccess
 from controllers.worksheets import getWorksheets
+from controllers.search_controller import search_problems
 from controllers.stats_controllers import getProblemCounts, getPropertyCounts
 from controllers.reference_controllers import getReferences, getContactInfo
 
@@ -272,91 +273,9 @@ WHERE {{
     x = requests.post(url, myobj, head)
     return x.text
 
-def getProblemsByKeywordSPARQL(thePattern, isCaseSensitive):
-    if not isCaseSensitive:
-        escapedPattern = thePattern.lower()
-        isLcase = 'lcase'
-    else:
-        escapedPattern = thePattern
-        isLcase = ''
 
-    url = FUSEKI_URL
-    queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT DISTINCT ?problem ?problemid ?text ?textHtml ?grade
-WHERE {{
-    ?problem eliozo:problemID ?problemid ;
-    eliozo:problemText ?text ;
-    eliozo:problemTextHtml ?textHtml .
-    OPTIONAL {{
-        ?problem eliozo:problemGrade ?grade .
-    }}
-    FILTER (contains({lcase}(?text), "{pattern}"))
-}} ORDER BY ?grade ?problemid
-LIMIT 10
-"""
-    escapedPattern = escapedPattern.replace('"', '\\"')
 
-    query = queryTemplate.format(pattern=escapedPattern, lcase=isLcase)
-    myobj = {'query': query}
-    print(f"***** query in getProblemsByKeywordSPARQL('{thePattern}')")
-    print(query)
-    print("===== END =====")
 
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    print("===== THEEND =====")
-    x = requests.post(url, myobj, head)
-    print("===== THETHEEND =====")
-    print(f"***** x.text in getProblemsByKeywordSPARQL('{thePattern}')")
-    print(x.text)
-    print("===== END =====")
-
-    return x.text
-
-def getProblemsByRegexSPARQL(thePattern, isCaseSensitive):
-    # so far no escaping pattern
-    if not isCaseSensitive:
-        escapedPattern = thePattern.lower()
-        isLcase = 'lcase'
-    else:
-        escapedPattern = thePattern
-        isLcase = ''
-
-    url = FUSEKI_URL
-    queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT DISTINCT ?problem ?problemid ?text ?textHtml ?grade
-WHERE {{
-    ?problem eliozo:problemID ?problemid ;
-    eliozo:problemText ?text ;
-    eliozo:problemTextHtml ?textHtml ;
-    OPTIONAL {{
-        ?problem eliozo:problemGrade ?grade .
-    }}
-    FILTER (regex({lcase}(?text), "{pattern}"))
-}} ORDER BY ?grade ?problemid
-LIMIT 10
-"""
-    escapedPattern = escapedPattern.replace('"', '\\"')
-    escapedPattern = escapedPattern.replace('\\', '\\\\')
-
-    query = queryTemplate.format(pattern=escapedPattern, lcase=isLcase)
-    myobj = {'query': query}
-    print(f"***** query in getProblemsByRegexSPARQL('{thePattern}')")
-    print(query)
-    print("===== END =====")
-
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    print("===== THEEND =====")
-    x = requests.post(url, myobj, head)
-    print("===== THETHEEND =====")
-    print(f"***** x.text in getProblemsByRegexSPARQL('{thePattern}')")
-    print(x.text)
-    print("===== END =====")
-
-    return x.text
 
 
 
@@ -1020,17 +939,7 @@ def create_app(test_config=None):
         pass
 
 
-    def replace_non_ascii_with_unicode_escape(text):
-        non_ascii_characters = {'ā': '\\u0101', 'č': '\\u010D', 'ē': '\\u0113', 'ģ': '\\u0123', 'ī': '\\u012B',
-                            'ķ': '\\u0137', 'ļ': '\\u013C', 'ņ': '\\u0146', 'š': '\\u0161', 'ū': '\\u016B',
-                            'ž': '\\u017E'}
-        replaced_text = ''
-        for char in text:
-            if char in non_ascii_characters:
-                replaced_text += non_ascii_characters[char]
-            else:
-                replaced_text += char
-        return replaced_text
+
 
 
 
@@ -1078,53 +987,7 @@ def create_app(test_config=None):
         return send_from_directory(STATIC_IMAGE_ROOT, filename)
 
 
-    @app.route('/')
-    def main():
-        keyword = request.args.get('keyword')
-        if 'clickcount' in session: 
-            clickcount = session['clickcount']
-        else:
-            clickcount = 0
-        print(f"clickcount = {clickcount}")
-        
-        fuseki_url = 'http://127.0.0.1:9080/jena-fuseki-war-4.7.0/abc/'
-        
-        if keyword is None or keyword == "":
-            template_context = {
-                'active': 'main',
-                'searchMode': 'exact'
-            }
-            return render_template('main_content.html',  **template_context)
-        new_keyword = replace_non_ascii_with_unicode_escape(keyword)
-        searchMode = request.args.get('searchMode')
-
-        isRegex = (searchMode == 'regex')
-
-        if not isRegex:
-            link = json.loads(getProblemsByKeywordSPARQL(new_keyword, False))
-        else:
-            link = json.loads(getProblemsByRegexSPARQL(new_keyword, False))
-
-        problems = []
-        
-        for item in link['results']['bindings']:
-            problem_id_value = item['problemid']['value']
-            problem_imagefile = ''
-            problem_text_value = mathBeautify(item['textHtml']['value'])
-            problem_text_value = fix_image_links(problem_text_value)
-            d = {'problemid': problem_id_value, 'text': problem_text_value, 'imagefile': problem_imagefile}
-            problems.append(d)
-
-        template_context = {
-            'problems': problems,
-            'keyword' : keyword,
-            'active': 'main',
-            'searchMode': searchMode,
-            'lang': session.get('lang', 'lv'),
-            'title': 'Sākumlapa', 
-            'clickcount': clickcount
-        }
-        return render_template('main_content.html', **template_context)
+    app.route('/', endpoint='main')(search_problems)
 
     # faceted browse
     @app.route('/filter')

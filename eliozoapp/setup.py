@@ -7,6 +7,8 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'flask'
+        'flask',
+        'weaviate-client>=4.0.0',
+        'python-dotenv'
     ],
 )
