@@ -130,15 +130,6 @@ def getCurriculum():
     today = datetime.date.today()
     current_year = today.year
 
-    # Check if request has parameters
-    if not request.args.get('olympiad') and not request.args.getlist('olympiad_list'):
-        # No Olympiad parameter - show form
-        # Pass context for limits if needed
-        return render_template('curriculum_form.html', current_year=current_year, navlinks=[
-                {'title':'Reports'}, 
-                {'url':'curriculum_bp.getCurriculum', 'title':'Olympiad Curriculum'}
-            ], active='statistics')
-    
     # Handle both old linking style (comma separated GET) and new MultiDict from checkboxes
     olympiads = request.args.getlist('olympiad_list') # From form
     if not olympiads:
@@ -162,16 +153,6 @@ def getCurriculum():
         mingrade = 5
         maxgrade = 12
 
-    # Process all selected olympiads
-    # The original controller only handled ONE olympiad. The requirement says:
-    # "If user checks something... and searches - then ... it displays lists ... found in the respective olympiads"
-    # This implies we might need to iterate or union the results. 
-    # For simplicity and given the SPARQL endpoints take a SINGLE 'olympiadCode' string usually, 
-    # we might need to modify the query OR make multiple calls.
-    # The existing query `eliozo:olympiad '{olympiadCode}'` matches exact literal.
-    # If we want multiple, we can loop over them and merge data structures.
-
-    # Data structures to aggregate results
     domains=('Alg', 'Comb', 'Geom', 'NT')
     domains = list(domains)
     matrix = defaultdict(lambda: {d: 0 for d in domains})
@@ -182,68 +163,62 @@ def getCurriculum():
     
     all_methods = []
     all_methods_info = dict()
-    
-    # We will loop over selected olympiads and aggregate
-    for olympiad_id in olympiads:
-        try:
-            # 1. QType Stats
-            data_qtypes = json.loads(getSPARQLCurriculumQtypeStats(olympiad_id, (mingrade, maxgrade), (minyear, maxyear)))
-            for b in data_qtypes.get("results", {}).get("bindings", []):
-                d = b["domain"]["value"]
-                qt = b["questionType"]["value"]
-                if d not in domains: continue
-                cnt = int(b["count"]["value"])
-                matrix[qt][d] += cnt # Add to existing
-                qtypes.add(qt)
 
-            # 2. Topic Overview
-            data = json.loads(getSPARQLOlympiadOverview(olympiad_id, (mingrade, maxgrade), (minyear, maxyear)))
-            current_topic = "NA"
-            # Note: The original logic relies on Order By to group items.
-            # Merging multiple olympiads might break order if we just append.
-            # However, if we process them sequentially, we just grow list.
-            # Duplicates? Same topic might appear in multiple olympiads.
-            # We should check `if item['topicID']['value'] in all_topics_info` before overwriting metadata
-            # but usually metadata is same. The `problems` list should be extended.
+    # Only fetch data if we have selected olympiads
+    if olympiads:
+        # We will loop over selected olympiads and aggregate
+        for olympiad_id in olympiads:
+            try:
+                # 1. QType Stats
+                data_qtypes = json.loads(getSPARQLCurriculumQtypeStats(olympiad_id, (mingrade, maxgrade), (minyear, maxyear)))
+                for b in data_qtypes.get("results", {}).get("bindings", []):
+                    d = b["domain"]["value"]
+                    qt = b["questionType"]["value"]
+                    if d not in domains: continue
+                    cnt = int(b["count"]["value"])
+                    matrix[qt][d] += cnt # Add to existing
+                    qtypes.add(qt)
 
-            for item in data.get('results', {}).get('bindings', []):
-                t_id = item['topicID']['value']
+                # 2. Topic Overview
+                data = json.loads(getSPARQLOlympiadOverview(olympiad_id, (mingrade, maxgrade), (minyear, maxyear)))
                 
-                if t_id not in all_topics_info:
-                    all_topics.append(t_id) # Maintain order of first appearance
-                    all_topics_info[t_id] = {
-                        'topicNumber': item['topicNumber']['value'],
-                        'topicName': item['topicName']['value'],
-                        'topicDescription': mathBeautify(item['topicDescription']['value']),
-                        'problems': []
-                    }
-                
-                p_id = item['problemID']['value']
-                # Avoid dupes if same problem somehow returned (unlikely across diff olympiads unless data overlap)
-                if p_id not in all_topics_info[t_id]['problems']:
-                    all_topics_info[t_id]['problems'].append(p_id)
+                for item in data.get('results', {}).get('bindings', []):
+                    t_id = item['topicID']['value']
+                    
+                    if t_id not in all_topics_info:
+                        all_topics.append(t_id) # Maintain order of first appearance
+                        all_topics_info[t_id] = {
+                            'topicNumber': item['topicNumber']['value'],
+                            'topicName': item['topicName']['value'],
+                            'topicDescription': mathBeautify(item['topicDescription']['value']),
+                            'problems': []
+                        }
+                    
+                    p_id = item['problemID']['value']
+                    if p_id not in all_topics_info[t_id]['problems']:
+                        all_topics_info[t_id]['problems'].append(p_id)
 
-            # 3. Method Overview
-            data_methods = json.loads(getSPARQLCurriculumMethods(olympiad_id, (mingrade, maxgrade), (minyear, maxyear)))
-            for item in data_methods.get('results', {}).get('bindings', []):
-                m_id = item['methodID']['value']
-                
-                if m_id not in all_methods_info:
-                    all_methods.append(m_id)
-                    all_methods_info[m_id] = {
-                        'methodNumber': item['methodNumber']['value'],
-                        'methodName': item['methodName']['value'],
-                        'methodDescription': mathBeautify(item['methodDescription']['value']),
-                        'problems': []
-                    }
-                
-                p_id = item['problemID']['value']
-                if p_id not in all_methods_info[m_id]['problems']:
-                    all_methods_info[m_id]['problems'].append(p_id)
+                # 3. Method Overview
+                data_methods = json.loads(getSPARQLCurriculumMethods(olympiad_id, (mingrade, maxgrade), (minyear, maxyear)))
+                for item in data_methods.get('results', {}).get('bindings', []):
+                    m_id = item['methodID']['value']
+                    
+                    if m_id not in all_methods_info:
+                        all_methods.append(m_id)
+                        all_methods_info[m_id] = {
+                            'methodNumber': item['methodNumber']['value'],
+                            'methodName': item['methodName']['value'],
+                            'methodDescription': mathBeautify(item['methodDescription']['value']),
+                            'problems': []
+                        }
+                    
+                    p_id = item['problemID']['value']
+                    if p_id not in all_methods_info[m_id]['problems']:
+                        all_methods_info[m_id]['problems'].append(p_id)
 
-        except Exception as e:
-            print(f"Error fetching data for {olympiad_id}: {e}")
-            continue
+            except Exception as e:
+                print(f"Error fetching data for {olympiad_id}: {e}")
+                continue
 
     question_types = sorted(qtypes)
     
@@ -255,11 +230,13 @@ def getCurriculum():
     ]
 
     template_context = {
-        'olympiad_id': ",".join(olympiads), # Display purpose
+        'olympiads': olympiads, # List for checkboxes
+        'olympiad_id': ",".join(olympiads), # Display purpose if needed
         'minyear': minyear, 
         'maxyear': maxyear,
         'mingrade': mingrade, 
         'maxgrade': maxgrade, 
+        'current_year': current_year,
         'all_topics': all_topics,
         'all_topics_info': all_topics_info,
         'all_domains': all_domains_meta,

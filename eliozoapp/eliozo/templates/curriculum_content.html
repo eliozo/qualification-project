@@ -1,29 +1,58 @@
 {% extends 'global.html' %}
 
 {% block content %}
-        <div class="col-sm-8 text-left">
-        <p>Olimpiāde: {{ olympiad_id }}; klases: {{ mingrade }}..{{ maxgrade }}; gadi: {{ minyear }}..{{ maxyear }}</p>
+<div class="col-sm-8 text-left">
+        <form action="{{ url_for('curriculum_bp.getCurriculum') }}" method="get" class="form-inline"
+                style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
+                <div>
+                        <label style="font-weight: normal; font-style: italic;">{% trans %}Olympiad{% endtrans
+                                %}:</label>
+                        <label class="checkbox-inline"><input type="checkbox" name="olympiad_list" value="LV.AMO" {%
+                                        if 'LV.AMO' in olympiads %}checked{% endif %}> LV.AMO</label>
+                        <label class="checkbox-inline"><input type="checkbox" name="olympiad_list" value="LV.NOL" {%
+                                        if 'LV.NOL' in olympiads %}checked{% endif %}> LV.NOL</label>
+                        <label class="checkbox-inline"><input type="checkbox" name="olympiad_list" value="LV.VOL" {%
+                                        if 'LV.VOL' in olympiads %}checked{% endif %}> LV.VOL</label>
+                </div>
+                <div>
+                        <label style="font-weight: normal; font-style: italic;">{% trans %}Years{% endtrans %}:</label>
+                        <input type="number" name="minyear" value="{{ minyear }}" min="2000" max="{{ current_year }}"
+                                class="form-control input-sm" style="width: 70px">
+                        -
+                        <input type="number" name="maxyear" value="{{ maxyear }}" min="2000" max="{{ current_year }}"
+                                class="form-control input-sm" style="width: 70px">
+                </div>
+                <div>
+                        <label style="font-weight: normal; font-style: italic;">{% trans %}Grades{% endtrans %}:</label>
+                        <input type="number" name="mingrade" value="{{ mingrade }}" min="5" max="12"
+                                class="form-control input-sm" style="width: 60px">
+                        -
+                        <input type="number" name="maxgrade" value="{{ maxgrade }}" min="5" max="12"
+                                class="form-control input-sm" style="width: 60px">
+                </div>
+                <button type="submit" class="btn btn-default btn-sm">{% trans %}Show{% endtrans %}</button>
+        </form>
 
 
         <table class="table table-sm table-striped">
-        <thead>
-        <tr>
-        <th>Jautājuma tips</th>
-        {% for d in domains %}
-                <th>{{ d }}</th>
-        {% endfor %}
-        </tr>
-        </thead>
-        <tbody>
-        {% for qt in question_types %}
-        <tr>
-                <th scope="row">{{ qt }}</th>
-                {% for d in domains %}
-                <td>{{ matrix[qt][d] }}</td>
-                {% endfor %}
-        </tr>
-        {% endfor %}
-        </tbody>
+                <thead>
+                        <tr>
+                                <th>Jautājuma tips</th>
+                                {% for d in domains %}
+                                <th>{{ d }}</th>
+                                {% endfor %}
+                        </tr>
+                </thead>
+                <tbody>
+                        {% for qt in question_types %}
+                        <tr>
+                                <th scope="row">{{ qt }}</th>
+                                {% for d in domains %}
+                                <td>{{ matrix[qt][d] }}</td>
+                                {% endfor %}
+                        </tr>
+                        {% endfor %}
+                </tbody>
         </table>
 
 
@@ -36,20 +65,21 @@
                 {% if all_topics_info[topic].topicNumber.startswith(domain.prefix) %}
 
                 <li>{{ all_topics_info[topic].topicNumber }}. {{ all_topics_info[topic].topicName }}
-                <span class="tltip"><img style="vertical-align: middle;width:12px;"
-                src="{{ url_for('static',filename='blue_question_mark.png') }}">
-                <span class="tltiptext" style="font-weight:normal;"><tt class="metahelp">{{ topic }}:</tt> 
-                {% if all_topics_info[topic].topicDescription != '' %} 
-                        <small>{{ all_topics_info[topic].topicDescription | safe }}</small> 
-                {% endif %}
-                </span></span>        
-                <small>
-                {% for problem in all_topics_info[topic].problems %}
-                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
-                problem }}</a>{%- if not loop.last %},{% endif %}
-                {% endfor %}</small>
+                        <span class="tltip"><img style="vertical-align: middle;width:12px;"
+                                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                                <span class="tltiptext" style="font-weight:normal;"><tt class="metahelp">{{ topic
+                                                }}:</tt>
+                                        {% if all_topics_info[topic].topicDescription != '' %}
+                                        <small>{{ all_topics_info[topic].topicDescription | safe }}</small>
+                                        {% endif %}
+                                </span></span>
+                        <small>
+                                {% for problem in all_topics_info[topic].problems %}
+                                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                                        problem }}</a>{%- if not loop.last %},{% endif %}
+                                {% endfor %}</small>
                 </li>
-                
+
                 {% endif %}
 
 
@@ -60,26 +90,27 @@
         <b style="font-size:150%">{% trans %}Methods{% endtrans %}</b>
 
         <ul>
-        {% for method in all_methods %}
+                {% for method in all_methods %}
 
-        <li>{{ all_methods_info[method].methodNumber }}. {{ all_methods_info[method].methodName }}
-                <span class="tltip"><img style="vertical-align: middle;width:12px;"
-                src="{{ url_for('static',filename='blue_question_mark.png') }}">
-                <span class="tltiptext" style="font-weight:normal;"><tt class="metahelp">{{ method }}:</tt> 
-                {% if all_methods_info[method].methodDescription != '' %} 
-                        <small>{{ all_methods_info[method].methodDescription | safe }}</small> 
-                {% endif %}
-                </span></span>        
-                <small>
-                {% for problem in all_methods_info[method].problems %}
-                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
-                problem }}</a>{%- if not loop.last %},{% endif %}
-                {% endfor %}</small>
+                <li>{{ all_methods_info[method].methodNumber }}. {{ all_methods_info[method].methodName }}
+                        <span class="tltip"><img style="vertical-align: middle;width:12px;"
+                                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                                <span class="tltiptext" style="font-weight:normal;"><tt class="metahelp">{{ method
+                                                }}:</tt>
+                                        {% if all_methods_info[method].methodDescription != '' %}
+                                        <small>{{ all_methods_info[method].methodDescription | safe }}</small>
+                                        {% endif %}
+                                </span></span>
+                        <small>
+                                {% for problem in all_methods_info[method].problems %}
+                                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                                        problem }}</a>{%- if not loop.last %},{% endif %}
+                                {% endfor %}</small>
                 </li>
 
-        {% endfor %}
+                {% endfor %}
         </ul>
 
-        </div>
+</div>
 
 {% endblock %}
