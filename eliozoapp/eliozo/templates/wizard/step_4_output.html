@@ -1,0 +1,73 @@
+{% extends 'wizard/layout_wizard.html' %}
+
+{% block wizard_content %}
+<fieldset>
+    <legend>Output Configuration</legend>
+
+    <label>
+        Solutions / answers:
+        <select name="solution_mode" required>
+            <option value="answers_only" {% if wizard_data.get('solution_mode', 'answers_only' )=='answers_only'
+                %}selected{% endif %}>Answer key only (end of worksheet)</option>
+            <option value="short_solutions" {% if wizard_data.get('solution_mode')=='short_solutions' %}selected{% endif
+                %}>Short solutions (end of worksheet)</option>
+            <option value="full_solutions" {% if wizard_data.get('solution_mode')=='full_solutions' %}selected{% endif
+                %}>Full solutions (end of worksheet)</option>
+            <option value="none" {% if wizard_data.get('solution_mode')=='none' %}selected{% endif %}>No
+                answers/solutions included</option>
+        </select>
+    </label>
+
+    <label>
+        Include space for work:
+        <select name="workspace_style" required>
+            <option value="compact" {% if wizard_data.get('workspace_style')=='compact' %}selected{% endif %}>Compact
+            </option>
+            <option value="standard" {% if wizard_data.get('workspace_style', 'standard' )=='standard' %}selected{%
+                endif %}>Standard</option>
+            <option value="extra" {% if wizard_data.get('workspace_style')=='extra' %}selected{% endif %}>Extra space
+            </option>
+        </select>
+    </label>
+
+    <label>
+        Include problem source citation:
+        <select name="include_citations" required>
+            <option value="yes" {% if wizard_data.get('include_citations', 'yes' )=='yes' %}selected{% endif %}>Yes
+            </option>
+            <option value="no" {% if wizard_data.get('include_citations')=='no' %}selected{% endif %}>No</option>
+        </select>
+    </label>
+
+    <label>
+        Output format:
+        <select name="output_format" required>
+            <option value="pdf" {% if wizard_data.get('output_format', 'pdf' )=='pdf' %}selected{% endif %}>Printable
+                PDF</option>
+            <option value="google_docs" {% if wizard_data.get('output_format')=='google_docs' %}selected{% endif %}>
+                Google Docs</option>
+            <option value="docx" {% if wizard_data.get('output_format')=='docx' %}selected{% endif %}>Word (.docx)
+            </option>
+            <option value="latex" {% if wizard_data.get('output_format')=='latex' %}selected{% endif %}>LaTeX source
+                (.tex)</option>
+            <option value="html" {% if wizard_data.get('output_format')=='html' %}selected{% endif %}>HTML</option>
+        </select>
+    </label>
+
+    <label>
+        Show difficulty labels on worksheet:
+        <select name="show_difficulty_labels">
+            <option value="no" {% if wizard_data.get('show_difficulty_labels', 'no' )=='no' %}selected{% endif %}>No
+            </option>
+            <option value="yes" {% if wizard_data.get('show_difficulty_labels')=='yes' %}selected{% endif %}>Yes
+            </option>
+        </select>
+    </label>
+
+</fieldset>
+
+<div class="alert alert-info">
+    <p><strong>Ready to Generate!</strong> Click the "Generate Worksheet" button below to create your worksheet with
+        these settings.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,90 @@
+{% extends 'wizard/layout_wizard.html' %}
+
+{% block wizard_content %}
+<fieldset>
+    <legend>Difficulty Control</legend>
+
+    <label>
+        Difficulty Profile:
+        <select name="difficulty_profile" required>
+            <option value="easy" {% if wizard_data.get('difficulty_profile')=='easy' %}selected{% endif %}>Easy (mostly
+                warm-up)</option>
+            <option value="medium" {% if wizard_data.get('difficulty_profile', 'medium' )=='medium' %}selected{% endif
+                %}>Medium (typical practice)</option>
+            <option value="hard" {% if wizard_data.get('difficulty_profile')=='hard' %}selected{% endif %}>Hard (mostly
+                challenge)</option>
+            <option value="ramp" {% if wizard_data.get('difficulty_profile')=='ramp' %}selected{% endif %}>Ramped (easy
+                → medium → hard)</option>
+        </select>
+    </label>
+
+    <label style="margin-top: 15px;">Problem Mix (Counts):</label>
+    <div class="row">
+        <div class="col-xs-4">
+            <label>Warm-up
+                <input type="number" name="count_warmup" min="0" max="20"
+                    value="{{ wizard_data.get('count_warmup', 3) }}" />
+            </label>
+        </div>
+        <div class="col-xs-4">
+            <label>Core
+                <input type="number" name="count_core" min="0" max="30"
+                    value="{{ wizard_data.get('count_core', 6) }}" />
+            </label>
+        </div>
+        <div class="col-xs-4">
+            <label>Challenge
+                <input type="number" name="count_challenge" min="0" max="20"
+                    value="{{ wizard_data.get('count_challenge', 2) }}" />
+            </label>
+        </div>
+    </div>
+
+    <label style="margin-top: 15px;">
+        Total number of problems (optional override):
+        <input type="number" name="problem_count" min="3" max="40" value="{{ wizard_data.get('problem_count', '') }}"
+            placeholder="Auto" />
+    </label>
+
+</fieldset>
+
+<fieldset>
+    <legend>Style & Methods</legend>
+
+    <label>
+        Theory section style:
+        <select name="theory_style" required>
+            <option value="reminders" {% if wizard_data.get('theory_style', 'reminders' )=='reminders' %}selected{%
+                endif %}>Brief reminders (refresher)</option>
+            <option value="careful" {% if wizard_data.get('theory_style')=='careful' %}selected{% endif %}>Careful
+                theory (first-time learning)</option>
+            <option value="none" {% if wizard_data.get('theory_style')=='none' %}selected{% endif %}>No theory section
+            </option>
+        </select>
+    </label>
+
+    <label style="margin-top: 15px;">Preferred Method/Topics (Solution Patterns):</label>
+    <div style="column-count: 2;">
+        {% set methods_list = [
+        ('pigeonhole', 'Pigeonhole Principle'),
+        ('invariants', 'Invariants'),
+        ('induction', 'Mathematical Induction'),
+        ('contradiction', 'Proof by Contradiction'),
+        ('extreme_element', 'Extreme Element'),
+        ('parity', 'Parity'),
+        ('mod_arithmetic', 'Modular Arithmetic'),
+        ('bounding', 'Bounding / Inequalities'),
+        ('casework', 'Casework'),
+        ('symmetry', 'Symmetry'),
+        ('counting', 'Counting / Double Counting'),
+        ('graph', 'Graphs / Networks')
+        ] %}
+        {% for val, label in methods_list %}
+        <label style="font-weight: normal; display: block;">
+            <input type="checkbox" name="methods" value="{{ val }}" {% if val in wizard_data.get('methods', [])
+                %}checked{% endif %}> {{ label }}
+        </label>
+        {% endfor %}
+    </div>
+</fieldset>
+{% endblock %}

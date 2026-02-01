@@ -70,3 +70,15 @@ Add olympiad
 Remove country from Problem (can infer from olympiad)
 
 
+        {#
+        <a href="{{ url_for('main') }}" class="button">{% trans %}Back{% endtrans %}</a>
+        {{ title }}
+
+        {% if not session.get('user') %}
+        <a href="{{ url_for('login') }}">
+                <button type="button">Sign in with Google</button>
+        </a>
+        {% else %}
+        Hello, {{ session['user']['name'] }}! <a href="{{ url_for('logout') }}">Logout</a>
+        {% endif %}
+        #}

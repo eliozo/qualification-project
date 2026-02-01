@@ -1,15 +1,470 @@
 {% extends 'global.html' %}
 
 {% block content %}
-       <div class="col-sm-8 text-left">
-        <a href="{{ url_for('main') }}" class="button">{% trans %}Back{% endtrans %}</a>
-        {{ title }}
-        </div>
-        {% if not session.get('user') %}
-        <a href="{{ url_for('login') }}">
-                <button type="button">Sign in with Google</button>
-        </a>
-        {% else %}
-        Hello, {{ session['user']['name'] }}! <a href="{{ url_for('logout') }}">Logout</a>
-        {% endif %}
+<div class="col-sm-8 text-left">
+        <form id="worksheet-generator" method="post" action="/api/generate-worksheet">
+
+                <!-- 1) Basic context -->
+                <fieldset>
+                        <legend>Class Context</legend>
+
+                        <label>
+                                Worksheet title (optional):
+                                <input type="text" name="title" maxlength="120"
+                                        placeholder="e.g., Ratios & Rates — Week 3" />
+                        </label>
+                        <br />
+
+                        <label>
+                                Grade level:
+                                <select name="grade_level" required>
+                                        <option value="">Select…</option>
+                                        <option value="4">Grade 4</option>
+                                        <option value="5">Grade 5</option>
+                                        <option value="6">Grade 6</option>
+                                        <option value="7">Grade 7</option>
+                                        <option value="8">Grade 8</option>
+                                        <option value="9">Grade 9</option>
+                                        <option value="10">Grade 10</option>
+                                        <option value="11">Grade 11</option>
+                                        <option value="12">Grade 12</option>
+                                </select>
+                        </label>
+                        <br />
+
+                        <label>
+                                Class size (optional):
+                                <input type="number" name="class_size" min="1" max="200" placeholder="e.g., 24" />
+                        </label>
+                        <br />
+
+                        <label>
+                                Total worksheet time:
+                                <select name="time_budget_minutes" required>
+                                        <option value="45">45 minutes</option>
+                                        <option value="60">60 minutes</option>
+                                        <option value="75">75 minutes</option>
+                                        <option value="90">90 minutes</option>
+                                        <option value="120">120 minutes</option>
+                                </select>
+                        </label>
+                        <br />
+
+                        <label>
+                                Intended use / purpose:
+                                <select name="purpose" required>
+                                        <option value="refresher">Refresher / Warm-up</option>
+                                        <option value="core">Core practice</option>
+                                        <option value="challenge">Challenge / Enrichment</option>
+                                        <option value="mixed" selected>Mixed (recommended)</option>
+                                </select>
+                        </label>
+                        <br />
+
+                        <label>
+                                Student profile (optional notes):
+                                <textarea name="student_profile_notes" rows="3" cols="80"
+                                        placeholder="e.g., strong algebra, weak geometry; easily bored by long computations; enjoy puzzles"></textarea>
+                        </label>
+                </fieldset>
+
+                <!-- 2) Topic selection -->
+                <fieldset>
+                        <legend>Topic & Scope</legend>
+
+                        <label>
+                                Primary topic (free text, used for retrieval):
+                                <input type="text" name="primary_topic" required
+                                        placeholder="e.g., ratios; modular arithmetic; triangle similarity; invariants" />
+                        </label>
+                        <br />
+
+                        <label>
+                                Subtopics (optional, comma-separated):
+                                <input type="text" name="subtopics" placeholder="e.g., unit rate, scaling, mixtures" />
+                        </label>
+                        <br />
+
+                        <label>
+                                Include multiple domains (choose all that apply):
+                        </label>
+                        <div>
+                                <label><input type="checkbox" name="domains[]" value="algebra" /> Algebra</label>
+                                <label><input type="checkbox" name="domains[]" value="geometry" /> Geometry</label>
+                                <label><input type="checkbox" name="domains[]" value="number_theory" /> Number
+                                        Theory</label>
+                                <label><input type="checkbox" name="domains[]" value="combinatorics" />
+                                        Combinatorics</label>
+                                <label><input type="checkbox" name="domains[]" value="mixed" /> Mixed /
+                                        Cross-domain</label>
+                        </div>
+
+                        <p style="margin-top: 0.8em;">
+                                Preferred method/topics (solution patterns & theory; optional — choose any):
+                        </p>
+                        <div>
+                                <label><input type="checkbox" name="methods[]" value="pigeonhole" /> Pigeonhole
+                                        Principle</label>
+                                <label><input type="checkbox" name="methods[]" value="invariants" /> Invariants</label>
+                                <label><input type="checkbox" name="methods[]" value="induction" /> Mathematical
+                                        Induction</label>
+                                <label><input type="checkbox" name="methods[]" value="contradiction" /> Proof by
+                                        Contradiction</label>
+                                <label><input type="checkbox" name="methods[]" value="extreme_element" /> Extreme
+                                        Element</label>
+                                <label><input type="checkbox" name="methods[]" value="parity" /> Parity</label>
+                                <label><input type="checkbox" name="methods[]" value="mod_arithmetic" /> Modular
+                                        Arithmetic</label>
+                                <label><input type="checkbox" name="methods[]" value="bounding" /> Bounding /
+                                        Inequalities</label>
+                                <label><input type="checkbox" name="methods[]" value="casework" /> Casework</label>
+                                <label><input type="checkbox" name="methods[]" value="symmetry" /> Symmetry</label>
+                                <label><input type="checkbox" name="methods[]" value="counting" /> Counting / Double
+                                        counting</label>
+                                <label><input type="checkbox" name="methods[]" value="graph" /> Graphs /
+                                        Networks</label>
+                        </div>
+
+                        <p style="margin-top: 0.8em;">
+                                Exclude method/topics (avoid; optional):
+                        </p>
+                        <label>
+                                <input type="text" name="exclude_methods"
+                                        placeholder="e.g., heavy casework, generating functions" />
+                        </label>
+
+                        <p style="margin-top: 0.8em;">
+                                Prerequisite knowledge (optional; used to keep content accessible):
+                        </p>
+                        <label>
+                                <textarea name="prerequisites" rows="3" cols="80"
+                                        placeholder="e.g., basic ratio/proportion, linear equations, angle chasing; no trig; no logarithms"></textarea>
+                        </label>
+                </fieldset>
+
+                <!-- 3) Problem source constraints (metadata-based filters) -->
+                <fieldset>
+                        <legend>Problem Sources & Metadata Filters</legend>
+
+                        <label>
+                                Olympiad / contest source(s) (choose any):
+                        </label>
+                        <div>
+                                <label><input type="checkbox" name="events[]" value="mathcounts" /> MATHCOUNTS</label>
+                                <label><input type="checkbox" name="events[]" value="amc8" /> AMC 8</label>
+                                <label><input type="checkbox" name="events[]" value="amc10" /> AMC 10</label>
+                                <label><input type="checkbox" name="events[]" value="amc12" /> AMC 12</label>
+                                <label><input type="checkbox" name="events[]" value="aime" /> AIME</label>
+                                <label><input type="checkbox" name="events[]" value="usamo" /> USAMO /
+                                        Proof-based</label>
+                                <label><input type="checkbox" name="events[]" value="other" /> Other / Mixed
+                                        Database</label>
+                        </div>
+
+                        <label style="display:block; margin-top:0.8em;">
+                                Competition year range (optional):
+                        </label>
+                        <label>
+                                From:
+                                <input type="number" name="year_from" min="1950" max="2100" placeholder="e.g., 2010" />
+                        </label>
+                        <label>
+                                To:
+                                <input type="number" name="year_to" min="1950" max="2100" placeholder="e.g., 2024" />
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Grade range of problems (optional; defaults to your selected grade ± 1):
+                        </label>
+                        <div>
+                                <label>Min:
+                                        <input type="number" name="problem_grade_min" min="1" max="12"
+                                                placeholder="e.g., 6" />
+                                </label>
+                                <label>Max:
+                                        <input type="number" name="problem_grade_max" min="1" max="12"
+                                                placeholder="e.g., 8" />
+                                </label>
+                        </div>
+
+                        <p style="margin-top:0.8em;">
+                                Genre/domain classification (condition-only) preference:
+                        </p>
+                        <label>
+                                <select name="genre_mode">
+                                        <option value="match_primary">Primarily match selected domain/topic</option>
+                                        <option value="allow_mixed" selected>Allow mixed if relevant</option>
+                                        <option value="strict">Strictly restrict to chosen domains</option>
+                                </select>
+                        </label>
+
+                        <p style="margin-top:0.8em;">
+                                Question types to include (choose any):
+                        </p>
+                        <div>
+                                <label><input type="checkbox" name="question_types[]" value="numeric" checked /> Numeric
+                                        answer</label>
+                                <label><input type="checkbox" name="question_types[]" value="multiple_choice" />
+                                        Multiple choice</label>
+                                <label><input type="checkbox" name="question_types[]" value="short_answer" /> Short
+                                        answer</label>
+                                <label><input type="checkbox" name="question_types[]" value="proof" /> Proof</label>
+                                <label><input type="checkbox" name="question_types[]" value="find_example" /> Find any
+                                        example / construct</label>
+                                <label><input type="checkbox" name="question_types[]" value="optimization" /> Max/Min /
+                                        Best possible</label>
+                                <label><input type="checkbox" name="question_types[]" value="prove_disprove" /> Prove or
+                                        disprove</label>
+                        </div>
+
+                        <p style="margin-top:0.8em;">
+                                Difficulty control (simple):
+                        </p>
+                        <label>
+                                <select name="difficulty_profile" required>
+                                        <option value="easy">Easy (mostly warm-up)</option>
+                                        <option value="medium" selected>Medium (typical practice)</option>
+                                        <option value="hard">Hard (mostly challenge)</option>
+                                        <option value="ramp">Ramped (easy → medium → hard)</option>
+                                </select>
+                        </label>
+
+                        <label style="display:block; margin-top:0.8em;">
+                                Avoid (optional constraints):
+                                <textarea name="avoid_constraints" rows="3" cols="80"
+                                        placeholder="e.g., avoid long computations, avoid advanced theorems, avoid geometry diagrams, avoid probability"></textarea>
+                        </label>
+                </fieldset>
+
+                <!-- 4) Worksheet structure -->
+                <fieldset>
+                        <legend>Worksheet Structure</legend>
+
+                        <label>
+                                Total number of problems (optional; leave blank for auto based on time):
+                                <input type="number" name="problem_count" min="3" max="40" placeholder="e.g., 12" />
+                        </label>
+                        <br /><br />
+
+                        <label>Section mix:</label>
+                        <div>
+                                <label>
+                                        Warm-up problems:
+                                        <input type="number" name="count_warmup" min="0" max="20" value="3" />
+                                </label>
+                                <label>
+                                        Core problems:
+                                        <input type="number" name="count_core" min="0" max="30" value="6" />
+                                </label>
+                                <label>
+                                        Challenge problems:
+                                        <input type="number" name="count_challenge" min="0" max="20" value="2" />
+                                </label>
+                        </div>
+
+                        <p style="margin-top:0.8em;">
+                                Theory section style:
+                        </p>
+                        <label>
+                                <select name="theory_style" required>
+                                        <option value="reminders" selected>Brief reminders (refresher)</option>
+                                        <option value="careful">Careful theory (first-time learning)</option>
+                                        <option value="none">No theory section</option>
+                                </select>
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Include warm-up mini-exercises (very short, skill drills):
+                                <select name="include_mini_exercises">
+                                        <option value="auto" selected>Auto</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                </select>
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Include “common mistakes / tips” box:
+                                <select name="include_tips_box">
+                                        <option value="auto" selected>Auto</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                </select>
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Allow adapted variants (same concept, adjusted numbers/context):
+                                <select name="allow_variants" required>
+                                        <option value="no">No (only original past problems)</option>
+                                        <option value="light" selected>Yes, light edits (numbers only)</option>
+                                        <option value="medium">Yes, moderate edits (numbers + context)</option>
+                                </select>
+                        </label>
+                </fieldset>
+
+                <!-- 5) Output & teacher-facing options -->
+                <fieldset>
+                        <legend>Output Options</legend>
+
+                        <label>
+                                Solutions / answers:
+                                <select name="solution_mode" required>
+                                        <option value="answers_only" selected>Answer key only (end of worksheet)
+                                        </option>
+                                        <option value="short_solutions">Short solutions (end of worksheet)</option>
+                                        <option value="full_solutions">Full solutions (end of worksheet)</option>
+                                        <option value="none">No answers/solutions included</option>
+                                </select>
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Include space for work:
+                                <select name="workspace_style" required>
+                                        <option value="compact">Compact</option>
+                                        <option value="standard" selected>Standard</option>
+                                        <option value="extra">Extra space</option>
+                                </select>
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Include problem source citation (contest/year) on worksheet:
+                                <select name="include_citations" required>
+                                        <option value="yes" selected>Yes</option>
+                                        <option value="no">No</option>
+                                </select>
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Output format:
+                                <select name="output_format" required>
+                                        <option value="pdf" selected>Printable PDF</option>
+                                        <option value="google_docs">Google Docs</option>
+                                        <option value="docx">Word (.docx)</option>
+                                        <option value="latex">LaTeX source (.tex)</option>
+                                        <option value="html">HTML</option>
+                                </select>
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Paper size:
+                                <select name="paper_size">
+                                        <option value="letter" selected>US Letter</option>
+                                        <option value="a4">A4</option>
+                                </select>
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Show difficulty labels on worksheet:
+                                <select name="show_difficulty_labels">
+                                        <option value="no" selected>No</option>
+                                        <option value="yes">Yes (e.g., Warm-up/Core/Challenge)</option>
+                                </select>
+                        </label>
+                </fieldset>
+
+                <!-- 6) Personalization and classroom preferences -->
+                <fieldset>
+                        <legend>Classroom Preferences (Optional)</legend>
+
+                        <label>
+                                Themes students enjoy (comma-separated):
+                                <input type="text" name="likes"
+                                        placeholder="e.g., logic puzzles, geometry, games, real-life word problems" />
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Themes to avoid (comma-separated):
+                                <input type="text" name="dislikes"
+                                        placeholder="e.g., messy arithmetic, long proofs, probability" />
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Language/wording preference:
+                                <select name="wording_style">
+                                        <option value="contest" selected>Contest style (concise)</option>
+                                        <option value="classroom">Classroom style (more guidance)</option>
+                                </select>
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Accessibility options:
+                        </label>
+                        <div>
+                                <label><input type="checkbox" name="accessibility[]" value="large_font" /> Large
+                                        font</label>
+                                <label><input type="checkbox" name="accessibility[]" value="high_contrast" /> High
+                                        contrast</label>
+                                <label><input type="checkbox" name="accessibility[]" value="dyslexia_friendly" />
+                                        Dyslexia-friendly font (if supported)</label>
+                        </div>
+                </fieldset>
+
+                <!-- 7) RAG / retrieval behavior (optional advanced, but still teacher-friendly) -->
+                <fieldset>
+                        <legend>Retrieval Preferences (Optional)</legend>
+
+                        <label>
+                                Problem diversity:
+                                <select name="diversity_level">
+                                        <option value="high" selected>High (avoid similar problems)</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="low">Low (allow similar patterns)</option>
+                                </select>
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Strictness of prerequisites:
+                                <select name="prereq_strictness">
+                                        <option value="strict">Strict (never exceed prerequisites)</option>
+                                        <option value="balanced" selected>Balanced</option>
+                                        <option value="lenient">Lenient (allow a small stretch)</option>
+                                </select>
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Use only problems with verified solutions in database:
+                                <select name="require_verified_solution">
+                                        <option value="yes" selected>Yes</option>
+                                        <option value="no">No</option>
+                                </select>
+                        </label>
+                </fieldset>
+
+                <!-- 8) Legal / usage / notes -->
+                <fieldset>
+                        <legend>Notes & Compliance</legend>
+
+                        <label>
+                                Licensing / usage note (optional; shown in footer):
+                                <input type="text" name="footer_note" maxlength="200"
+                                        placeholder="e.g., For classroom use only. Sources cited where applicable." />
+                        </label>
+                        <br /><br />
+
+                        <label>
+                                Special instructions to the generator (optional):
+                                <textarea name="special_instructions" rows="3" cols="80"
+                                        placeholder="e.g., prioritize problems with elegant solutions; include at least one proof; keep arithmetic light"></textarea>
+                        </label>
+                </fieldset>
+
+                <hr />
+
+                <button type="submit">Generate Worksheet</button>
+        </form>
+
+</div>
 {% endblock %}

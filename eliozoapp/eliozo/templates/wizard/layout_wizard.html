@@ -1,0 +1,179 @@
+{% extends 'global.html' %}
+
+{% block content %}
+<style>
+    .wizard-progress {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .wizard-progress::before {
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #e0e0e0;
+        z-index: 0;
+    }
+
+    .step-indicator {
+        position: relative;
+        z-index: 1;
+        background: white;
+        padding: 0 10px;
+        text-align: center;
+        color: #999;
+    }
+
+    .step-indicator.active {
+        color: #337ab7;
+        font-weight: bold;
+    }
+
+    .step-circle {
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border: 2px solid #e0e0e0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 5px;
+    }
+
+    .step-indicator.active .step-circle {
+        border-color: #337ab7;
+        background: #e6f7ff;
+    }
+
+    .step-indicator.completed .step-circle {
+        border-color: #5cb85c;
+        background: #dff0d8;
+        color: #5cb85c;
+    }
+
+    .wizard-actions {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .advanced-options-container {
+        margin-top: 40px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 10px;
+        background-color: #f8f8f8;
+        text-align: left;
+    }
+
+    .advanced-options-summary {
+        cursor: pointer;
+        font-weight: bold;
+        color: #337ab7;
+        outline: none;
+    }
+
+    /* Ensure form blocks are clearly separated */
+    fieldset {
+        border: none;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    legend {
+        font-size: 1.2em;
+        font-weight: bold;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: normal;
+    }
+
+    /* Make inputs look a bit better */
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+        margin-right: 5px;
+    }
+
+    div>label {
+        display: block;
+        /* Align checkboxes vertically in groups */
+    }
+
+    div>label>input {
+        float: left;
+        margin-top: 2px;
+    }
+
+    div>label {
+        padding-left: 20px;
+    }
+</style>
+
+<div class="col-sm-8 text-left">
+
+    <div class="wizard-progress">
+        <div class="step-indicator {% if step_id >= 1 %}active{% endif %} {% if step_id > 1 %}completed{% endif %}">
+            <div class="step-circle">1</div>
+            Goal
+        </div>
+        <div class="step-indicator {% if step_id >= 2 %}active{% endif %} {% if step_id > 2 %}completed{% endif %}">
+            <div class="step-circle">2</div>
+            Difficulty
+        </div>
+        <div class="step-indicator {% if step_id >= 3 %}active{% endif %} {% if step_id > 3 %}completed{% endif %}">
+            <div class="step-circle">3</div>
+            Sources
+        </div>
+        <div class="step-indicator {% if step_id >= 4 %}active{% endif %} {% if step_id > 4 %}completed{% endif %}">
+            <div class="step-circle">4</div>
+            Output
+        </div>
+    </div>
+
+    <form method="post">
+        {% block wizard_content %}{% endblock %}
+
+        {% include 'wizard/_advanced_options.html' %}
+
+        <div class="wizard-actions">
+            <div>
+                {% if step_id > 1 %}
+                <button type="submit" name="back" class="btn btn-default">Back</button>
+                {% endif %}
+            </div>
+            <div>
+                {% if step_id < 4 %} <button type="submit" name="next" class="btn btn-primary">Next</button>
+                    {% else %}
+                    <button type="submit" name="generate" class="btn btn-success">Generate Worksheet</button>
+                    {% endif %}
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

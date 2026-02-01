@@ -1,0 +1,107 @@
+{% extends 'wizard/layout_wizard.html' %}
+
+{% block wizard_content %}
+<script>
+    function updateSubtopics() {
+        var primaryTopic = document.getElementById('primary_topic').value;
+        var subtopicContainer = document.getElementById('subtopics-container');
+        var allSubtopicGroups = subtopicContainer.getElementsByClassName('subtopic-group');
+
+        for (var i = 0; i < allSubtopicGroups.length; i++) {
+            allSubtopicGroups[i].style.display = 'none';
+        }
+
+        if (primaryTopic) {
+            var selectedGroup = document.getElementById('subtopics-' + primaryTopic);
+            if (selectedGroup) {
+                selectedGroup.style.display = 'block';
+            }
+        }
+    }
+
+    // Run on load
+    window.addEventListener('load', updateSubtopics);
+</script>
+
+<fieldset>
+    <legend>Class Context</legend>
+
+    <label>
+        Worksheet title (optional):
+        <input type="text" name="title" value="{{ wizard_data.get('title', '') }}" maxlength="120"
+            placeholder="e.g., Ratios & Rates — Week 3" />
+    </label>
+
+    <label>
+        Grade level:
+        <select name="grade_level" required>
+            <option value="">Select…</option>
+            {% for g in range(4, 13) %}
+            <option value="{{ g }}" {% if wizard_data.get('grade_level')|string==g|string %}selected{% endif %}>Grade {{
+                g }}</option>
+            {% endfor %}
+        </select>
+    </label>
+
+    <label>
+        Total worksheet time:
+        <select name="time_budget_minutes" required>
+            <option value="45" {% if wizard_data.get('time_budget_minutes')=='45' %}selected{% endif %}>45 minutes
+            </option>
+            <option value="60" {% if wizard_data.get('time_budget_minutes')=='60' %}selected{% endif %}>60 minutes
+            </option>
+            <option value="75" {% if wizard_data.get('time_budget_minutes')=='75' %}selected{% endif %}>75 minutes
+            </option>
+            <option value="90" {% if wizard_data.get('time_budget_minutes')=='90' %}selected{% endif %}>90 minutes
+            </option>
+            <option value="120" {% if wizard_data.get('time_budget_minutes')=='120' %}selected{% endif %}>120 minutes
+            </option>
+        </select>
+    </label>
+
+    <label>
+        Intended use / purpose:
+        <select name="purpose" required>
+            <option value="refresher" {% if wizard_data.get('purpose')=='refresher' %}selected{% endif %}>Refresher /
+                Warm-up</option>
+            <option value="core" {% if wizard_data.get('purpose')=='core' %}selected{% endif %}>Core practice</option>
+            <option value="challenge" {% if wizard_data.get('purpose')=='challenge' %}selected{% endif %}>Challenge /
+                Enrichment</option>
+            <option value="mixed" {% if wizard_data.get('purpose', 'mixed' )=='mixed' %}selected{% endif %}>Mixed
+                (recommended)</option>
+        </select>
+    </label>
+
+</fieldset>
+
+<fieldset>
+    <legend>Topic Selection</legend>
+
+    <label>
+        Primary Topic:
+        <select name="primary_topic" id="primary_topic" onchange="updateSubtopics()" required>
+            <option value="">Select a Topic...</option>
+            {% for topic, subtopics in topics_data.items() %}
+            <option value="{{ topic }}" {% if wizard_data.get('primary_topic')==topic %}selected{% endif %}>{{ topic }}
+            </option>
+            {% endfor %}
+        </select>
+    </label>
+
+    <div id="subtopics-container" style="margin-top: 15px;">
+        <label>Subtopics (optional):</label>
+        {% for topic, subtopics in topics_data.items() %}
+        <div id="subtopics-{{ topic }}" class="subtopic-group"
+            style="display: none; padding-left: 20px; border-left: 3px solid #eee;">
+            {% for sub in subtopics %}
+            <label style="font-weight: normal;">
+                <input type="checkbox" name="subtopics" value="{{ sub }}" {% if sub in wizard_data.get('subtopics', [])
+                    %}checked{% endif %}> {{ sub }}
+            </label>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+
+</fieldset>
+{% endblock %}

@@ -11,7 +11,7 @@ from authlib.integrations.flask_client import OAuth
 
 
 from eliozo_dao.sparql_access import SparqlAccess
-from controllers.worksheets import getWorksheets
+from controllers.worksheets import getWorksheets, worksheet_wizard
 from controllers.search_controller import search_problems
 from controllers.stats_controllers import getProblemCounts, getPropertyCounts
 from controllers.reference_controllers import getReferences, getContactInfo
@@ -944,6 +944,7 @@ def create_app(test_config=None):
 
 
     app.route("/worksheets", methods=['GET', 'POST'])(getWorksheets)
+    app.route("/worksheets/wizard/step/<int:step_id>", methods=['GET', 'POST'])(worksheet_wizard)
     app.route('/problem_counts', methods=['GET', 'POST'])(getProblemCounts)
     app.route('/property_counts', methods=['GET', 'POST'])(getPropertyCounts)
     app.route('/references', methods=['GET'])(getReferences)

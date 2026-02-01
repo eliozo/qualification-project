@@ -1,0 +1,159 @@
+<div class="advanced-options-container">
+    <details>
+        <summary class="advanced-options-summary">Advanced Options</summary>
+        <div style="padding-top: 15px;">
+            <p class="help-block">These settings are optional and apply to the entire worksheet request.</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <fieldset>
+                        <legend>Classroom Preferences</legend>
+                        <label>
+                            Student profile notes:
+                            <textarea name="student_profile_notes" rows="2"
+                                placeholder="e.g., strong algebra, weak geometry...">{{ wizard_data.get('student_profile_notes', '') }}</textarea>
+                        </label>
+                        <label>
+                            Themes students enjoy:
+                            <input type="text" name="likes" value="{{ wizard_data.get('likes', '') }}"
+                                placeholder="e.g., puzzles, real-life problems">
+                        </label>
+                        <label>
+                            Themes to avoid:
+                            <input type="text" name="dislikes" value="{{ wizard_data.get('dislikes', '') }}"
+                                placeholder="e.g., messy arithmetic">
+                        </label>
+                        <label>
+                            Wording style:
+                            <select name="wording_style">
+                                <option value="contest" {% if wizard_data.get('wording_style')=='contest' %}selected{%
+                                    endif %}>Contest style (concise)</option>
+                                <option value="classroom" {% if wizard_data.get('wording_style')=='classroom'
+                                    %}selected{% endif %}>Classroom style (more guidance)</option>
+                            </select>
+                        </label>
+                        <label>Accessibility:</label>
+                        <div>
+                            <label><input type="checkbox" name="accessibility" value="large_font" {% if 'large_font' in
+                                    wizard_data.get('accessibility', []) %}checked{% endif %}> Large font</label>
+                            <label><input type="checkbox" name="accessibility" value="high_contrast" {%
+                                    if 'high_contrast' in wizard_data.get('accessibility', []) %}checked{% endif %}>
+                                High contrast</label>
+                            <label><input type="checkbox" name="accessibility" value="dyslexia_friendly" {%
+                                    if 'dyslexia_friendly' in wizard_data.get('accessibility', []) %}checked{% endif %}>
+                                Dyslexia-friendly</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="col-md-6">
+                    <fieldset>
+                        <legend>Content Constraints</legend>
+                        <label>
+                            Exclude method/topics:
+                            <input type="text" name="exclude_methods"
+                                value="{{ wizard_data.get('exclude_methods', '') }}" placeholder="e.g., heavy casework">
+                        </label>
+                        <label>
+                            Prerequisite knowledge:
+                            <textarea name="prerequisites" rows="2"
+                                placeholder="e.g., basic ratio/proportion...">{{ wizard_data.get('prerequisites', '') }}</textarea>
+                        </label>
+                        <label>
+                            Avoid constraints:
+                            <textarea name="avoid_constraints" rows="2"
+                                placeholder="e.g., avoid long computations...">{{ wizard_data.get('avoid_constraints', '') }}</textarea>
+                        </label>
+                        <label>
+                            Strictness of prerequisites:
+                            <select name="prereq_strictness">
+                                <option value="strict" {% if wizard_data.get('prereq_strictness')=='strict' %}selected{%
+                                    endif %}>Strict</option>
+                                <option value="balanced" {% if wizard_data.get('prereq_strictness', 'balanced'
+                                    )=='balanced' %}selected{% endif %}>Balanced</option>
+                                <option value="lenient" {% if wizard_data.get('prereq_strictness')=='lenient'
+                                    %}selected{% endif %}>Lenient</option>
+                            </select>
+                        </label>
+                        <label>
+                            Problem diversity:
+                            <select name="diversity_level">
+                                <option value="high" {% if wizard_data.get('diversity_level', 'high' )=='high'
+                                    %}selected{% endif %}>High</option>
+                                <option value="medium" {% if wizard_data.get('diversity_level')=='medium' %}selected{%
+                                    endif %}>Medium</option>
+                                <option value="low" {% if wizard_data.get('diversity_level')=='low' %}selected{% endif
+                                    %}>Low</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <fieldset>
+                        <legend>Extra Features</legend>
+                        <label>
+                            Include warm-up mini-exercises:
+                            <select name="include_mini_exercises">
+                                <option value="auto" {% if wizard_data.get('include_mini_exercises', 'auto' )=='auto'
+                                    %}selected{% endif %}>Auto</option>
+                                <option value="yes" {% if wizard_data.get('include_mini_exercises')=='yes' %}selected{%
+                                    endif %}>Yes</option>
+                                <option value="no" {% if wizard_data.get('include_mini_exercises')=='no' %}selected{%
+                                    endif %}>No</option>
+                            </select>
+                        </label>
+                        <label>
+                            Include “common mistakes / tips” box:
+                            <select name="include_tips_box">
+                                <option value="auto" {% if wizard_data.get('include_tips_box', 'auto' )=='auto'
+                                    %}selected{% endif %}>Auto</option>
+                                <option value="yes" {% if wizard_data.get('include_tips_box')=='yes' %}selected{% endif
+                                    %}>Yes</option>
+                                <option value="no" {% if wizard_data.get('include_tips_box')=='no' %}selected{% endif
+                                    %}>No</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="col-md-6">
+                    <fieldset>
+                        <legend>Misc</legend>
+                        <label>
+                            Genre/domain classification preference:
+                            <select name="genre_mode">
+                                <option value="match_primary" {% if wizard_data.get('genre_mode')=='match_primary'
+                                    %}selected{% endif %}>Primarily match selected</option>
+                                <option value="allow_mixed" {% if wizard_data.get('genre_mode', 'allow_mixed'
+                                    )=='allow_mixed' %}selected{% endif %}>Allow mixed</option>
+                                <option value="strict" {% if wizard_data.get('genre_mode')=='strict' %}selected{% endif
+                                    %}>Strictly restrict</option>
+                            </select>
+                        </label>
+                        <label>
+                            Require verified solution:
+                            <select name="require_verified_solution">
+                                <option value="yes" {% if wizard_data.get('require_verified_solution', 'yes' )=='yes'
+                                    %}selected{% endif %}>Yes</option>
+                                <option value="no" {% if wizard_data.get('require_verified_solution')=='no' %}selected{%
+                                    endif %}>No</option>
+                            </select>
+                        </label>
+                        <label>
+                            Footer note:
+                            <input type="text" name="footer_note" value="{{ wizard_data.get('footer_note', '') }}"
+                                placeholder="e.g., For classroom use only.">
+                        </label>
+                        <label>
+                            Special instructions:
+                            <textarea name="special_instructions" rows="2"
+                                placeholder="e.g., prioritize elegant solutions">{{ wizard_data.get('special_instructions', '') }}</textarea>
+                        </label>
+                    </fieldset>
+                </div>
+            </div>
+
+        </div>
+    </details>
+</div>

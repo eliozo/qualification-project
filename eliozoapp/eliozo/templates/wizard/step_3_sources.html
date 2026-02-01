@@ -1,0 +1,81 @@
+{% extends 'wizard/layout_wizard.html' %}
+
+{% block wizard_content %}
+<fieldset>
+    <legend>Problem Sources</legend>
+
+    <label>Olympiad / contest source(s):</label>
+    <div style="column-count: 2;">
+        {% set events_list = [
+        ('mathcounts', 'MATHCOUNTS'),
+        ('amc8', 'AMC 8'),
+        ('amc10', 'AMC 10'),
+        ('amc12', 'AMC 12'),
+        ('aime', 'AIME'),
+        ('usamo', 'USAMO / Proof-based'),
+        ('other', 'Other / Mixed Database')
+        ] %}
+        {% for val, label in events_list %}
+        <label style="font-weight: normal; display: block;">
+            <input type="checkbox" name="events" value="{{ val }}" {% if val in wizard_data.get('events', [])
+                %}checked{% endif %}> {{ label }}
+        </label>
+        {% endfor %}
+    </div>
+
+    <label style="margin-top: 20px;">Competition year range:</label>
+    <div class="row">
+        <div class="col-xs-6">
+            <label>From:
+                <input type="number" name="year_from" min="1950" max="2100"
+                    value="{{ wizard_data.get('year_from', '') }}" placeholder="e.g., 2010" />
+            </label>
+        </div>
+        <div class="col-xs-6">
+            <label>To:
+                <input type="number" name="year_to" min="1950" max="2100" value="{{ wizard_data.get('year_to', '') }}"
+                    placeholder="e.g., 2024" />
+            </label>
+        </div>
+    </div>
+
+    <label style="margin-top: 15px;">Problem Grade Range:</label>
+    <div class="row">
+        <div class="col-xs-6">
+            <label>Min:
+                <input type="number" name="problem_grade_min" min="1" max="12"
+                    value="{{ wizard_data.get('problem_grade_min', '') }}" placeholder="e.g., 6" />
+            </label>
+        </div>
+        <div class="col-xs-6">
+            <label>Max:
+                <input type="number" name="problem_grade_max" min="1" max="12"
+                    value="{{ wizard_data.get('problem_grade_max', '') }}" placeholder="e.g., 8" />
+            </label>
+        </div>
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend>Question Types</legend>
+    <p>Select allowed types:</p>
+    <div>
+        {% set qtypes = [
+        ('numeric', 'Numeric answer'),
+        ('multiple_choice', 'Multiple choice'),
+        ('short_answer', 'Short answer'),
+        ('proof', 'Proof'),
+        ('find_example', 'Find any example / construct'),
+        ('optimization', 'Max/Min / Best possible'),
+        ('prove_disprove', 'Prove or disprove')
+        ] %}
+        {% for val, label in qtypes %}
+        <label style="font-weight: normal; margin-right: 15px;">
+            <input type="checkbox" name="question_types" value="{{ val }}" {% if val in
+                wizard_data.get('question_types', ['numeric']) %}checked{% endif %}> {{ label }}
+        </label>
+        {% endfor %}
+    </div>
+</fieldset>
+{% endblock %}
