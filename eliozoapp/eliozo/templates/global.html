@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S73XXGK0ZP"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-S73XXGK0ZP');
+        gtag('config', 'G-S73XXGK0ZP');
     </script>
     {% if title %}
     <title>{{ title }}</title>
@@ -17,7 +18,7 @@
     {% endif %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -31,163 +32,185 @@
     <![endif]-->
 
     <style>
-            body {
-    background-color: #f9f9f9; /* Slightly off-white color */
-}
+        body {
+            background-color: #f9f9f9;
+            /* Slightly off-white color */
+        }
 
-.navbar-inverse {
-    background-color: transparent;
-    border: none;
-    margin-top: 12px; /* Adds margin to the top of the navbar */
-}
+        .navbar-inverse {
+            background-color: transparent;
+            border: none;
+            margin-top: 12px;
+            /* Adds margin to the top of the navbar */
+        }
 
-.navbar-inverse .navbar-nav>li>a {
-    background-color: #FFFFFF; /* Pure white background for each link */
-    border-radius: 20px; /* Adjust this value to control the roundness of the 'buttons' */
-    color: #333; /* Text color, can be adjusted as needed */
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    margin: 4px; /* Adds some space around each link */
-    padding: 4px 16px; /* Padding inside each link, making it appear larger */
-}
+        .navbar-inverse .navbar-nav>li>a {
+            background-color: #FFFFFF;
+            /* Pure white background for each link */
+            border-radius: 20px;
+            /* Adjust this value to control the roundness of the 'buttons' */
+            color: #333;
+            /* Text color, can be adjusted as needed */
+            font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            margin: 4px;
+            /* Adds some space around each link */
+            padding: 4px 16px;
+            /* Padding inside each link, making it appear larger */
+        }
 
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
-    color: #555; /* Slightly darker text on hover/focus for better accessibility */
-    background-color: #e7e7e7; /* Light grey background on hover/focus */
-}
+        .navbar-inverse .navbar-nav>li>a:hover,
+        .navbar-inverse .navbar-nav>li>a:focus {
+            color: #555;
+            /* Slightly darker text on hover/focus for better accessibility */
+            background-color: #e7e7e7;
+            /* Light grey background on hover/focus */
+        }
 
-/* Additional styling to make sure the dropdown works nicely on mobile */
-.navbar-inverse .navbar-toggle {
-    border: none;
-    color: #333; /* Set the color of the 'hamburger' icon */
-}
+        /* Additional styling to make sure the dropdown works nicely on mobile */
+        .navbar-inverse .navbar-toggle {
+            border: none;
+            color: #333;
+            /* Set the color of the 'hamburger' icon */
+        }
 
-.navbar-inverse .navbar-toggle:hover,
-.navbar-inverse .navbar-toggle:focus {
-    background-color: #ddd;
-}
+        .navbar-inverse .navbar-toggle:hover,
+        .navbar-inverse .navbar-toggle:focus {
+            background-color: #ddd;
+        }
 
-@media (max-width: 767px) {
-    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-        background-color: #FFFFFF; /* Ensure dropdown links on mobile also adhere to the styling */
-        color: #333;
-    }
-    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
-    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus {
-        color: #555;
-        background-color: #e7e7e7;
-    }
-}
+        @media (max-width: 767px) {
+            .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+                background-color: #FFFFFF;
+                /* Ensure dropdown links on mobile also adhere to the styling */
+                color: #333;
+            }
 
-
-
-
+            .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
+            .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus {
+                color: #555;
+                background-color: #e7e7e7;
+            }
+        }
     </style>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}" />
 
 
 </head>
+
 <body>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ url_for('main') }}" style="padding: 5px 5px"><a
-                    href="{{ url_for('main') }}"><img src="{{ url_for('static',filename='logo.png') }}"
-                                                      style="width:72px;" alt="NMS-logo"></a></a>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ url_for('main') }}" style="padding: 5px 5px"><a
+                        href="{{ url_for('main') }}"><img src="{{ url_for('static',filename='logo.png') }}"
+                            style="width:72px;" alt="NMS-logo"></a></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="{{ 'active' if active == 'main' else '' }}"><a href="{{ url_for('main') }}">{% trans
+                            %}Home{% endtrans %}</a>
+                    </li>
+                    <li class="{{ 'active' if active == 'filter' else '' }}"><a href="{{ url_for('getFilter') }}">{%
+                            trans %}Filters{% endtrans %}</a>
+                    </li>
+                    <li class="{{ 'active' if active == 'archive' else '' }}"><a href="{{ url_for('getArchive') }}">{%
+                            trans %}Archive{% endtrans %}</a></li>
+
+                    {#
+                    <li class="{{ 'active' if active == 'topics' else '' }}"><a href="{{ url_for('getTopics') }}">{%
+                            trans %}Topics{% endtrans %}</a></li>
+                    <li class="{{ 'active' if active == 'concepts' else '' }}"><a href="{{ url_for('getConcepts') }}">{%
+                            trans %}Concepts{% endtrans %}</a></li>
+                    #}
+
+                    <li class="dropdown {{ 'active' if active == 'order_by' else '' }}">
+                        <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown"
+                            role="button" aria-haspopup="true" aria-expanded="false">
+                            {% trans %}Order{% endtrans %} <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('getTopics') }}">{% trans %}by Topic{% endtrans %}</a></li>
+                            <li><a href="{{ url_for('getMethods') }}">{% trans %}by Method{% endtrans %}</a></li>
+                            <li><a href="{{ url_for('getGenres') }}">{% trans %}by Genre{% endtrans %}</a></li>
+                            <li><a href="{{ url_for('getConcepts') }}">{% trans %}by Concept{% endtrans %}</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown {{ 'active' if active == 'statistics' else '' }}">
+                        <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown"
+                            role="button" aria-haspopup="true" aria-expanded="false">
+                            {% trans %}Reports{% endtrans %} <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('curriculum_bp.getCurriculum') }}">{% trans %}Olympiad Curriculum{%
+                                    endtrans %}</a></li>
+                            <li><a href="{{ url_for('getProblemCounts') }}">{% trans %}Problem Count{% endtrans %}</a>
+                            </li>
+                            <li><a href="{{ url_for('getPropertyCounts') }}">{% trans %}Property Usage{% endtrans %}</a>
+                            </li>
+                            <li><a href="{{ url_for('getResults') }}">{% trans %}Result Summary{% endtrans %}</a></li>
+                            <li><a href="{{ url_for('getVideo') }}">{% trans %}Video{% endtrans %}</a></li>
+                        </ul>
+                    </li>
+
+                    {% if clickcount >= 7 %}
+                    <li class="{{ 'active' if active == 'worksheets' else '' }}"><a
+                            href="{{ url_for('getWorksheets') }}">{% trans %}Worksheets{% endtrans %}</a></li>
+                    {% endif %}
+
+                    <li class="dropdown {{ 'active' if active == 'about_us' else '' }}">
+                        <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown"
+                            role="button" aria-haspopup="true" aria-expanded="false">
+                            {% trans %}About Us{% endtrans %} <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url_for('getReferences') }}">{% trans %}References{% endtrans %}</a></li>
+                            <li><a href="{{ url_for('getContactInfo') }}">{% trans %}Contact Information{% endtrans
+                                    %}</a></li>
+                        </ul>
+                    </li>
+
+                    <li><small>
+                            {% set current_url = request.full_path %}
+                            <a title="English" class="{{ 'selectedlang' if lang == 'en' else '' }}"
+                                href="{{ url_for('setLanguage', lang='en', next=current_url) }}">en</a>&nbsp;
+                            <a title="Lietuvių" class="{{ 'selectedlang' if lang == 'lt' else '' }}"
+                                href="{{ url_for('setLanguage', lang='lt', next=current_url) }}">lt</a>&nbsp;
+                            <a title="Latviešu" class="{{ 'selectedlang' if lang == 'lv' else '' }}"
+                                href="{{ url_for('setLanguage', lang='lv', next=current_url) }}">lv</a>
+
+                        </small></li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="{{ 'active' if active == 'main' else '' }}"><a href="{{ url_for('main') }}">{% trans %}Home{% endtrans %}</a>
-                </li>
-                <li class="{{ 'active' if active == 'filter' else '' }}"><a href="{{ url_for('getFilter') }}">{% trans %}Filters{% endtrans %}</a>
-                </li>
-                <li class="{{ 'active' if active == 'archive' else '' }}"><a href="{{ url_for('getArchive') }}">{% trans %}Archive{% endtrans %}</a></li>
-                
-                {#
-                <li class="{{ 'active' if active == 'topics' else '' }}"><a
-                        href="{{ url_for('getTopics') }}">{% trans %}Topics{% endtrans %}</a></li>
-                <li class="{{ 'active' if active == 'concepts' else '' }}"><a href="{{ url_for('getConcepts') }}">{% trans %}Concepts{% endtrans %}</a></li>
-                #}
-
-                <li class="dropdown {{ 'active' if active == 'order_by' else '' }}">
-                    <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        {% trans %}Order{% endtrans %} <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ url_for('getTopics') }}">{% trans %}by Topic{% endtrans %}</a></li>
-                        <li><a href="{{ url_for('getMethods') }}">{% trans %}by Method{% endtrans %}</a></li>
-                        <li><a href="{{ url_for('getGenres') }}">{% trans %}by Genre{% endtrans %}</a></li>
-                        <li><a href="{{ url_for('getConcepts') }}">{% trans %}by Concept{% endtrans %}</a></li>
-                    </ul>
-                </li>
+    </nav>
 
 
-                <li class="dropdown {{ 'active' if active == 'statistics' else '' }}">
-                    <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        {% trans %}Reports{% endtrans %} <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ url_for('getCurriculum', olympiad='LV.AMO', minyear=2014, maxyear=2024, mingrade=7, maxgrade=10) }}">{% trans %}Olympiad Curriculum{% endtrans %}</a></li>
-                        <li><a href="{{ url_for('getProblemCounts') }}">{% trans %}Problem Count{% endtrans %}</a></li>
-                        <li><a href="{{ url_for('getPropertyCounts') }}">{% trans %}Property Usage{% endtrans %}</a></li>
-                        <li><a href="{{ url_for('getResults') }}">{% trans %}Result Summary{% endtrans %}</a></li>
-                        <li><a href="{{ url_for('getVideo') }}">{% trans %}Video{% endtrans %}</a></li>
-                    </ul>
-                </li>
-                
-                {% if clickcount >= 7 %} 
-                <li class="{{ 'active' if active == 'worksheets' else '' }}"><a href="{{ url_for('getWorksheets') }}">{% trans %}Worksheets{% endtrans %}</a></li>
-                {% endif %}
-
-                <li class="dropdown {{ 'active' if active == 'about_us' else '' }}">
-                    <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        {% trans %}About Us{% endtrans %} <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ url_for('getReferences') }}">{% trans %}References{% endtrans %}</a></li>
-                        <li><a href="{{ url_for('getContactInfo') }}">{% trans %}Contact Information{% endtrans %}</a></li>
-                    </ul>
-                </li>
-
-                <li><small>
-                    {% set current_url = request.full_path %}
-                    <a title="English" class="{{ 'selectedlang' if lang == 'en' else '' }}"
-                       href="{{ url_for('setLanguage', lang='en', next=current_url) }}">en</a>&nbsp;
-                    <a title="Lietuvių" class="{{ 'selectedlang' if lang == 'lt' else '' }}"
-                       href="{{ url_for('setLanguage', lang='lt', next=current_url) }}">lt</a>&nbsp;
-                    <a title="Latviešu" class="{{ 'selectedlang' if lang == 'lv' else '' }}"
-                       href="{{ url_for('setLanguage', lang='lv', next=current_url) }}">lv</a>
-
-                </small></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-
-<p style="padding-left: 15px; padding-bottom: 0px; font-size:80%;">
-    <a href="{{ url_for('main') }}">{% trans %}Home{% endtrans %}</a>{% if navlinks %} &gt;{% endif %}
-    {% for navlink in navlinks %}
-    {% if navlink.url %}
-    <a href="{% if navlink.params %}{{ url_for(navlink.url, **navlink.params) }}{% 
+    <p style="padding-left: 15px; padding-bottom: 0px; font-size:80%;">
+        <a href="{{ url_for('main') }}">{% trans %}Home{% endtrans %}</a>{% if navlinks %} &gt;{% endif %}
+        {% for navlink in navlinks %}
+        {% if navlink.url %}
+        <a href="{% if navlink.params %}{{ url_for(navlink.url, **navlink.params) }}{% 
         else %}{{ url_for(navlink.url) }}{% endif %}">
-        {% if loop.last %}<b>{{ _(navlink.title) }}</b>{% else %}{{ _(navlink.title) }}{% endif %}
-    </a> 
-    {% else %}
-    {{ _(navlink.title) }}
-    {% endif %}
-    {% if not loop.last %} &gt;{% endif %}
-    {% endfor %}
-</p>
+            {% if loop.last %}<b>{{ _(navlink.title) }}</b>{% else %}{{ _(navlink.title) }}{% endif %}
+        </a>
+        {% else %}
+        {{ _(navlink.title) }}
+        {% endif %}
+        {% if not loop.last %} &gt;{% endif %}
+        {% endfor %}
+    </p>
 
 
-<div class="container-fluid text-center mycontainer" style="padding-left: 12px; padding-top: 12px;">
-    {% block content %}{% endblock %}
-</div>
+    <div class="container-fluid text-center mycontainer" style="padding-left: 12px; padding-top: 12px;">
+        {% block content %}{% endblock %}
+    </div>
 </body>
+
 </html>

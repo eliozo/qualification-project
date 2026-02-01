@@ -1,0 +1,66 @@
+{% extends "global.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-8 text-left">
+
+        <p style="font-size: 120%;">{% trans %}Select Olympiad Parameters{% endtrans %}</p>
+        <br>
+        <form action="{{ url_for('curriculum_bp.getCurriculum') }}" method="get" class="form-horizontal">
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" style="font-weight: normal; font-style: italic;">{% trans
+                    %}Olympiad{% endtrans %}:</label>
+                <div class="col-sm-10">
+                    <label><input type="checkbox" name="olympiad_list" value="LV.AMO"> LV.AMO</label>; &nbsp;&nbsp;
+                    <label><input type="checkbox" name="olympiad_list" value="LV.NOL"> LV.NOL</label>; &nbsp;&nbsp;
+                    <label><input type="checkbox" name="olympiad_list" value="LV.VOL"> LV.VOL</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="minyear" style="font-weight: normal; font-style: italic;">{%
+                    trans %}Min Year{% endtrans %}:</label>
+                <div class="col-sm-4">
+                    <input type="range" id="minyear" name="minyear" min="2000" max="{{ current_year }}" value="2014"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output>2014</output>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="maxyear" style="font-weight: normal; font-style: italic;">{%
+                    trans %}Max Year{% endtrans %}:</label>
+                <div class="col-sm-4">
+                    <input type="range" id="maxyear" name="maxyear" min="2000" max="{{ current_year }}"
+                        value="{{ current_year }}" oninput="this.nextElementSibling.value = this.value">
+                    <output>{{ current_year }}</output>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="mingrade" style="font-weight: normal; font-style: italic;">{%
+                    trans %}Min Grade{% endtrans %}:</label>
+                <div class="col-sm-1">
+                    <input type="number" class="form-control" id="mingrade" name="mingrade" min="5" max="12" value="7"
+                        style="width: 55px; padding-left: 5px; padding-right: 5px;">
+                </div>
+
+                <label class="control-label col-sm-2" for="maxgrade" style="font-weight: normal; font-style: italic;">{%
+                    trans %}Max Grade{% endtrans %}:</label>
+                <div class="col-sm-1">
+                    <input type="number" class="form-control" id="maxgrade" name="maxgrade" min="5" max="12" value="10"
+                        style="width: 55px; padding-left: 5px; padding-right: 5px;">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">{% trans %}Show Curriculum{% endtrans %}</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+{% endblock %}
