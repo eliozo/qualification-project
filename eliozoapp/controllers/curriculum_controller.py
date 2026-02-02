@@ -32,18 +32,18 @@ def getSPARQLCurriculumQtypeStats(olympiad, grades, years):
         eliozo:problemYear ?year ;
         eliozo:domain ?domain ;
         eliozo:questionType ?questionType .
-        FILTER (?grade < {gradeMax} && ?grade > {gradeMin})
-        FILTER (?year < {yearMax} && ?year > {yearMin})
+        FILTER (?grade <= {gradeMax} && ?grade >= {gradeMin})
+        FILTER (?year <= {yearMax} && ?year >= {yearMin})
     }}
     GROUP BY ?domain ?questionType
     ORDER BY ?domain ?questionType
     """
     myobj = {'query': 
         queryTemplate.format(olympiadCode=olympiad, 
-                             gradeMax = (grades[1]),
-                             gradeMin = (grades[0]-1),
-                             yearMax = (years[1]),
-                             yearMin = (years[0] - 1))
+                             gradeMax = grades[1],
+                             gradeMin = grades[0],
+                             yearMax = years[1],
+                             yearMin = years[0])
     }
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
@@ -63,8 +63,8 @@ SELECT ?problemID ?topicID ?topicNumber ?topicName ?topicDescription ?L1 ?L2 ?L3
            eliozo:olympiad '{olympiadCode}' ;
            eliozo:problemGrade ?grade ;
            eliozo:problemYear ?year .
-  FILTER (?grade < {gradeMax} && ?grade > {gradeMin})
-  FILTER (?year < {yearMax} && ?year > {yearMin})
+  FILTER (?grade <= {gradeMax} && ?grade >= {gradeMin})
+  FILTER (?year <= {yearMax} && ?year >= {yearMin})
   ?topic a eliozo:Topic ;
             eliozo:topicID ?topicID ;
             eliozo:topicNumber ?topicNumber ;
@@ -79,14 +79,15 @@ SELECT ?problemID ?topicID ?topicNumber ?topicName ?topicDescription ?L1 ?L2 ?L3
 """
     myobj = {'query': 
         queryTemplate.format(olympiadCode=olympiad, 
-                             gradeMax = (grades[1]),
-                             gradeMin = (grades[0]-1),
-                             yearMax = (years[1]),
-                             yearMin = (years[0] - 1))
+                             gradeMax = grades[1],
+                             gradeMin = grades[0],
+                             yearMax = years[1],
+                             yearMin = years[0])
     }
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
     return x.text
+
 
 
 def getSPARQLCurriculumMethods(olympiad, grades, years): 
@@ -102,8 +103,8 @@ def getSPARQLCurriculumMethods(olympiad, grades, years):
             eliozo:olympiad '{olympiadCode}' ;
             eliozo:problemGrade ?grade ;
             eliozo:problemYear ?year .
-    FILTER (?grade < {gradeMax} && ?grade > {gradeMin})
-    FILTER (?year < {yearMax} && ?year > {yearMin})
+    FILTER (?grade <= {gradeMax} && ?grade >= {gradeMin})
+    FILTER (?year <= {yearMax} && ?year >= {yearMin})
     ?method a eliozo:Method ;
                 eliozo:methodNumber ?methodNumber ; 
                 eliozo:methodID ?methodID ;
@@ -115,10 +116,46 @@ def getSPARQLCurriculumMethods(olympiad, grades, years):
     """
     myobj = {'query': 
         queryTemplate.format(olympiadCode=olympiad, 
-                             gradeMax = (grades[1]),
-                             gradeMin = (grades[0]-1),
-                             yearMax = (years[1]),
-                             yearMin = (years[0] - 1))
+                             gradeMax = grades[1],
+                             gradeMin = grades[0],
+                             yearMax = years[1],
+                             yearMin = years[0])
+    }
+    head = {'Content-Type': 'application/x-www-form-urlencoded'}
+    x = requests.post(url, myobj, head)
+    return x.text
+
+
+def getSPARQLCurriculumSubdomains(olympiad, grades, years):
+    url = FUSEKI_URL
+    queryTemplate = """
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+    SELECT ?problemID ?domainID ?domainName ?domainDescription ?L1 ?L2 ?L3 WHERE {{
+      ?problem eliozo:subdomain ?domain ;
+               eliozo:problemID ?problemID ;
+               eliozo:olympiad '{olympiadCode}' ;
+               eliozo:problemGrade ?grade ;
+               eliozo:problemYear ?year .
+      FILTER (?grade <= {gradeMax} && ?grade >= {gradeMin})
+      FILTER (?year <= {yearMax} && ?year >= {yearMin})
+      ?domain a eliozo:Domain ;
+              eliozo:domainID ?domainID ;
+              eliozo:domainName ?domainName ;
+              eliozo:domainDescription ?domainDescription ;
+              eliozo:sorter_L1 ?L1 ;
+              eliozo:sorter_L2 ?L2 ;
+              eliozo:sorter_L3 ?L3 .
+    }} ORDER BY ?L1 ?L2 ?L3 ?problemID
+    """
+    myobj = {'query':
+        queryTemplate.format(olympiadCode=olympiad,
+                             gradeMax=grades[1],
+                             gradeMin=grades[0],
+                             yearMax=years[1],
+                             yearMin=years[0])
     }
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
@@ -163,6 +200,9 @@ def getCurriculum():
     
     all_methods = []
     all_methods_info = dict()
+
+    all_subdomains = []
+    all_subdomains_info = dict()
 
     # Only fetch data if we have selected olympiads
     if olympiads:
@@ -216,6 +256,23 @@ def getCurriculum():
                     if p_id not in all_methods_info[m_id]['problems']:
                         all_methods_info[m_id]['problems'].append(p_id)
 
+                # 4. Subdomain Overview
+                data_subdomains = json.loads(getSPARQLCurriculumSubdomains(olympiad_id, (mingrade, maxgrade), (minyear, maxyear)))
+                for item in data_subdomains.get('results', {}).get('bindings', []):
+                    sd_id = item['domainID']['value']
+
+                    if sd_id not in all_subdomains_info:
+                        all_subdomains.append(sd_id)
+                        all_subdomains_info[sd_id] = {
+                            'domainName': item['domainName']['value'],
+                            'domainDescription': mathBeautify(item['domainDescription']['value']),
+                            'problems': []
+                        }
+
+                    p_id = item['problemID']['value']
+                    if p_id not in all_subdomains_info[sd_id]['problems']:
+                        all_subdomains_info[sd_id]['problems'].append(p_id)
+
             except Exception as e:
                 print(f"Error fetching data for {olympiad_id}: {e}")
                 continue
@@ -242,6 +299,8 @@ def getCurriculum():
         'all_domains': all_domains_meta,
         'all_methods': all_methods,
         'all_methods_info': all_methods_info,
+        'all_subdomains': all_subdomains,
+        'all_subdomains_info': all_subdomains_info,
         'active': 'statistics',
         'domains': domains, 
         'question_types': question_types, 

@@ -34,6 +34,7 @@
         </form>
 
 
+        {% if olympiads %}
         <table class="table table-sm table-striped">
                 <thead>
                         <tr>
@@ -54,9 +55,10 @@
                         {% endfor %}
                 </tbody>
         </table>
+        {% endif %}
 
 
-
+        {% if all_topics %}
         {% for domain in all_domains %}
         <b>{{ _(domain.name) }}:</b>
         <ul>
@@ -86,8 +88,11 @@
                 {% endfor %}
         </ul>
         {% endfor %}
+        {% endif %}
 
+        {% if all_methods %}
         <b style="font-size:150%">{% trans %}Methods{% endtrans %}</b>
+
 
         <ul>
                 {% for method in all_methods %}
@@ -110,6 +115,34 @@
 
                 {% endfor %}
         </ul>
+        {% endif %}
+
+        {% if all_subdomains %}
+        <b style="font-size:150%">{% trans %}Subdomains{% endtrans %}</b>
+
+
+        <ul>
+                {% for subdomain in all_subdomains %}
+
+                <li>{{ all_subdomains_info[subdomain].domainName }}
+                        <span class="tltip"><img style="vertical-align: middle;width:12px;"
+                                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                                <span class="tltiptext" style="font-weight:normal;"><tt class="metahelp">{{ subdomain
+                                                }}:</tt>
+                                        {% if all_subdomains_info[subdomain].domainDescription != '' %}
+                                        <small>{{ all_subdomains_info[subdomain].domainDescription | safe }}</small>
+                                        {% endif %}
+                                </span></span>
+                        <small>
+                                {% for problem in all_subdomains_info[subdomain].problems %}
+                                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                                        problem }}</a>{%- if not loop.last %},{% endif %}
+                                {% endfor %}</small>
+                </li>
+
+                {% endfor %}
+        </ul>
+        {% endif %}
 
 </div>
 

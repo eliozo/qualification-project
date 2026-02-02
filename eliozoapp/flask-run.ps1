@@ -12,11 +12,3 @@ $env:FLASK_APP = "eliozo"
 $env:FLASK_ENV = "development"
 flask run
 
-# To ensure the environment stays active after termination if the script was not dot-sourced
-if ($MyInvocation.CommandOrigin -eq 'Runspace') {
-   # Script was run directly (not dot-sourced)
-   Write-Host "Flask process terminated."
-   Write-Host "Entering nested shell to maintain virtual environment..."
-   # Spawn a new interactive PowerShell session which inherits the current environment (including venv)
-   powershell
-}

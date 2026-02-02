@@ -15,5 +15,3 @@ set FLASK_APP=eliozo
 set FLASK_ENV=development
 flask run
 
-REM Keep the window open and environment active
-cmd /k
