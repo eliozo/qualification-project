@@ -35,115 +35,177 @@
 
 
         {% if olympiads %}
-        <table class="table table-sm table-striped">
-                <thead>
-                        <tr>
-                                <th>Jautājuma tips</th>
-                                {% for d in domains %}
-                                <th>{{ d }}</th>
+        <!-- Tabs Nav -->
+        <ul class="nav nav-tabs" id="curriculumTabs">
+                <li class="active"><a data-toggle="tab" href="#matrix">{% trans %}Question Types{% endtrans %}</a></li>
+                {% if all_topics %}<li><a data-toggle="tab" href="#topics">{% trans %}Topics{% endtrans %}</a></li>{%
+                endif %}
+                {% if all_methods %}<li><a data-toggle="tab" href="#methods">{% trans %}Methods{% endtrans %}</a></li>{%
+                endif %}
+                {% if all_subdomains %}<li><a data-toggle="tab" href="#subdomains">{% trans %}Subdomains{% endtrans
+                                %}</a></li>{% endif %}
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content" style="padding-top: 15px;">
+
+                <!-- Question Types Matrix Tab -->
+                <div id="matrix" class="tab-pane fade in active">
+                        <table class="table table-sm table-striped">
+                                <thead>
+                                        <tr>
+                                                <th>Jautājuma tips</th>
+                                                {% for d in domains %}
+                                                <th>{{ d }}</th>
+                                                {% endfor %}
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        {% for qt in question_types %}
+                                        <tr>
+                                                <th scope="row">{{ qt }}</th>
+                                                {% for d in domains %}
+                                                <td>{{ matrix[qt][d] }}</td>
+                                                {% endfor %}
+                                        </tr>
+                                        {% endfor %}
+                                </tbody>
+                        </table>
+                </div>
+
+                <!-- Topics Tab -->
+                {% if all_topics %}
+                <div id="topics" class="tab-pane fade">
+                        {% for domain in all_domains %}
+                        <b>{{ _(domain.name) }}:</b>
+                        <ul>
+                                {% for topic in all_topics %}
+
+                                {% if all_topics_info[topic].topicNumber.startswith(domain.prefix) %}
+
+                                <li>{{ all_topics_info[topic].topicNumber }}. {{ all_topics_info[topic].topicName }}
+                                        <span class="tltip"><img style="vertical-align: middle;width:12px;"
+                                                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                                                <span class="tltiptext" style="font-weight:normal;"><tt
+                                                                class="metahelp">{{ topic
+                                                                }}:</tt>
+                                                        {% if all_topics_info[topic].topicDescription != '' %}
+                                                        <small>{{ all_topics_info[topic].topicDescription | safe
+                                                                }}</small>
+                                                        {% endif %}
+                                                </span></span>
+                                        <small>
+                                                {% for problem in all_topics_info[topic].problems %}
+                                                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                                                        problem }}</a>{%- if not loop.last %},{% endif %}
+                                                {% endfor %}</small>
+                                </li>
+
+                                {% endif %}
+
+
                                 {% endfor %}
-                        </tr>
-                </thead>
-                <tbody>
-                        {% for qt in question_types %}
-                        <tr>
-                                <th scope="row">{{ qt }}</th>
-                                {% for d in domains %}
-                                <td>{{ matrix[qt][d] }}</td>
-                                {% endfor %}
-                        </tr>
+                        </ul>
                         {% endfor %}
-                </tbody>
-        </table>
-        {% endif %}
-
-
-        {% if all_topics %}
-        {% for domain in all_domains %}
-        <b>{{ _(domain.name) }}:</b>
-        <ul>
-                {% for topic in all_topics %}
-
-                {% if all_topics_info[topic].topicNumber.startswith(domain.prefix) %}
-
-                <li>{{ all_topics_info[topic].topicNumber }}. {{ all_topics_info[topic].topicName }}
-                        <span class="tltip"><img style="vertical-align: middle;width:12px;"
-                                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
-                                <span class="tltiptext" style="font-weight:normal;"><tt class="metahelp">{{ topic
-                                                }}:</tt>
-                                        {% if all_topics_info[topic].topicDescription != '' %}
-                                        <small>{{ all_topics_info[topic].topicDescription | safe }}</small>
-                                        {% endif %}
-                                </span></span>
-                        <small>
-                                {% for problem in all_topics_info[topic].problems %}
-                                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
-                                        problem }}</a>{%- if not loop.last %},{% endif %}
-                                {% endfor %}</small>
-                </li>
-
+                </div>
                 {% endif %}
 
+                <!-- Methods Tab -->
+                {% if all_methods %}
+                <div id="methods" class="tab-pane fade">
+                        <b style="font-size:150%">{% trans %}Methods{% endtrans %}</b>
+                        <ul>
+                                {% for method in all_methods %}
 
-                {% endfor %}
-        </ul>
-        {% endfor %}
-        {% endif %}
+                                <li>{{ all_methods_info[method].methodNumber }}. {{ all_methods_info[method].methodName
+                                        }}
+                                        <span class="tltip"><img style="vertical-align: middle;width:12px;"
+                                                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                                                <span class="tltiptext" style="font-weight:normal;"><tt
+                                                                class="metahelp">{{ method
+                                                                }}:</tt>
+                                                        {% if all_methods_info[method].methodDescription != '' %}
+                                                        <small>{{ all_methods_info[method].methodDescription | safe
+                                                                }}</small>
+                                                        {% endif %}
+                                                </span></span>
+                                        <small>
+                                                {% for problem in all_methods_info[method].problems %}
+                                                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                                                        problem }}</a>{%- if not loop.last %},{% endif %}
+                                                {% endfor %}</small>
+                                </li>
 
-        {% if all_methods %}
-        <b style="font-size:150%">{% trans %}Methods{% endtrans %}</b>
+                                {% endfor %}
+                        </ul>
+                </div>
+                {% endif %}
 
+                <!-- Subdomains Tab -->
+                {% if all_subdomains %}
+                <div id="subdomains" class="tab-pane fade">
+                        <b style="font-size:150%">{% trans %}Subdomains{% endtrans %}</b>
+                        <ul>
+                                {% for subdomain in all_subdomains %}
 
-        <ul>
-                {% for method in all_methods %}
+                                <li>{{ all_subdomains_info[subdomain].domainName }}
+                                        <span class="tltip"><img style="vertical-align: middle;width:12px;"
+                                                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                                                <span class="tltiptext" style="font-weight:normal;"><tt
+                                                                class="metahelp">{{ subdomain
+                                                                }}:</tt>
+                                                        {% if all_subdomains_info[subdomain].domainDescription != '' %}
+                                                        <small>{{ all_subdomains_info[subdomain].domainDescription |
+                                                                safe }}</small>
+                                                        {% endif %}
+                                                </span></span>
+                                        <small>
+                                                {% for problem in all_subdomains_info[subdomain].problems %}
+                                                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                                                        problem }}</a>{%- if not loop.last %},{% endif %}
+                                                {% endfor %}</small>
+                                </li>
 
-                <li>{{ all_methods_info[method].methodNumber }}. {{ all_methods_info[method].methodName }}
-                        <span class="tltip"><img style="vertical-align: middle;width:12px;"
-                                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
-                                <span class="tltiptext" style="font-weight:normal;"><tt class="metahelp">{{ method
-                                                }}:</tt>
-                                        {% if all_methods_info[method].methodDescription != '' %}
-                                        <small>{{ all_methods_info[method].methodDescription | safe }}</small>
-                                        {% endif %}
-                                </span></span>
-                        <small>
-                                {% for problem in all_methods_info[method].problems %}
-                                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
-                                        problem }}</a>{%- if not loop.last %},{% endif %}
-                                {% endfor %}</small>
-                </li>
+                                {% endfor %}
+                        </ul>
+                </div>
+                {% endif %}
 
-                {% endfor %}
-        </ul>
-        {% endif %}
-
-        {% if all_subdomains %}
-        <b style="font-size:150%">{% trans %}Subdomains{% endtrans %}</b>
-
-
-        <ul>
-                {% for subdomain in all_subdomains %}
-
-                <li>{{ all_subdomains_info[subdomain].domainName }}
-                        <span class="tltip"><img style="vertical-align: middle;width:12px;"
-                                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
-                                <span class="tltiptext" style="font-weight:normal;"><tt class="metahelp">{{ subdomain
-                                                }}:</tt>
-                                        {% if all_subdomains_info[subdomain].domainDescription != '' %}
-                                        <small>{{ all_subdomains_info[subdomain].domainDescription | safe }}</small>
-                                        {% endif %}
-                                </span></span>
-                        <small>
-                                {% for problem in all_subdomains_info[subdomain].problems %}
-                                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
-                                        problem }}</a>{%- if not loop.last %},{% endif %}
-                                {% endfor %}</small>
-                </li>
-
-                {% endfor %}
-        </ul>
+        </div>
         {% endif %}
 
 </div>
+
+<script>
+        $(document).ready(function () {
+                // Function to activate tab based on hash
+                function activateTabFromHash() {
+                        var hash = window.location.hash;
+                        if (hash) {
+                                var tabToActive = $('ul.nav-tabs a[href="' + hash + '"]');
+                                if (tabToActive.length > 0) {
+                                        tabToActive.tab('show');
+                                }
+                        }
+                }
+
+                // Activate tab on page load
+                activateTabFromHash();
+
+                // Update hash when a tab is clicked
+                $('.nav-tabs a').on('shown.bs.tab', function (e) {
+                        if (history.pushState) {
+                                history.pushState(null, null, e.target.hash);
+                        } else {
+                                window.location.hash = e.target.hash;
+                        }
+                });
+
+                // Handle hash change (e.g. back button)
+                $(window).on('hashchange', function () {
+                        activateTabFromHash();
+                });
+        });
+</script>
 
 {% endblock %}
