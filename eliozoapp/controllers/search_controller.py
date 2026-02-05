@@ -5,8 +5,8 @@ from flask import render_template, request, session, json
 
 # Add path to weaviate_utils
 # Using the path provided by the user
-sys.path.append("/Users/kapsitis/workspace-public/worksheet-generation-with-llms/scripts")
-from weaviate_utils import WeaviateUtils
+# sys.path.append("/Users/kapsitis/workspace-public/worksheet-generation-with-llms/scripts")
+from controllers.weaviate_utils import WeaviateUtils
 
 from eliozo.webmd_utils import fix_image_links, mathBeautify
 from eliozo.search_helpers import (
@@ -37,9 +37,9 @@ def search_problems():
 
     if searchMode == 'semantic':
         # Load env vars for Weaviate
-        env_path = "/Users/kapsitis/workspace-public/worksheet-generation-with-llms/tests/.env"
+        # env_path = "/Users/kapsitis/workspace-public/worksheet-generation-with-llms/tests/.env"
         # override=True ensures we pick up the values from this file even if env has others
-        load_dotenv(env_path, override=True)
+        #load_dotenv(env_path, override=True)
         
         # Note: WeaviateUtils expects "WEAVIATE_URL", but .env usually has it. 
         # Check what the .env usage expects. The user just said "The .env file... is located under..."
@@ -48,12 +48,12 @@ def search_problems():
         # Let's try to fetch them. If different names, we might fail. 
         # But typically they are standard. 
         
-        weaviate_url = os.getenv("WCS_URL") or os.getenv("WEAVIATE_URL")
-        weaviate_api_key = os.getenv("WCS_API_KEY") or os.getenv("WEAVIATE_API_KEY")
+        weaviate_url = os.getenv("WEAVIATE_URL")
+        weaviate_api_key = os.getenv("WEAVIATE_API_KEY")
         openai_api_key = os.getenv("OPENAI_API_KEY")
 
         if not weaviate_url:
-             print("Error: WEAVIATE_URL/WCS_URL not found in .env")
+             print("Error: WEAVIATE_URL not found in .env")
         
         try:
             # WeaviateUtils uses 'Problem' collection by default in get_problems?
