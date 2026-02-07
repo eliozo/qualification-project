@@ -2,133 +2,155 @@
 
 {% block content %}
 <div class="col-sm-8 text-left">
-  <div class="container">
-    {{jsonfile}}
-  </div>
+    <div class="container">
+        {{jsonfile}}
+    </div>
 
-  <div class="problemDiv">
-      <h3 class="problem">{{ problemid }}&nbsp;&nbsp;
-          <div class="info-icon" onclick="showPopup()">i</div>
-<div class="popup-overlay" onclick="closePopup()"></div>
-<div class="popup-dialog" id="popup-dialog"></div>
-      </h3>
+    <div class="problemDiv">
+        <h3 class="problem">{{ problemid }}&nbsp;&nbsp;
+            {% for lang in problem.available_langs %}
+            <a class="btn btn-xs btn-default" href="#" onclick="showLanguage('{{ lang }}'); return false;">{{ lang
+                }}</a>
+            {% endfor %}
+            <div class="info-icon" onclick="showPopup()">i</div>
+            <div class="popup-overlay" onclick="closePopup()"></div>
+            <div class="popup-dialog" id="popup-dialog"></div>
+        </h3>
 
-
-
-<script>
-    const data = {
+        <script>
+            const data = {
     {% for meta in metaitems %}
-      '{{ meta.key }}': '{{ meta.value }}',
-    {% endfor %}
+            '{{ meta.key }}': '{{ meta.value }}',
+                {% endfor %}
     };
 
 
-    function showPopup() {
-        const dialog = document.getElementById('popup-dialog');
-        dialog.innerHTML = '';  // Clear previous content
+            function showPopup() {
+                const dialog = document.getElementById('popup-dialog');
+                dialog.innerHTML = '';  // Clear previous content
 
-        for (const [key, value] of Object.entries(data)) {
-            const entry = document.createElement('div');
-            if (key === '_domain') {
-                entry.style.fontStyle = 'italic';
+                for (const [key, value] of Object.entries(data)) {
+                    const entry = document.createElement('div');
+                    if (key === '_domain') {
+                        entry.style.fontStyle = 'italic';
+                    }
+                    entry.textContent = `${key}: ${value}`;
+                    dialog.appendChild(entry);
+                }
+
+                dialog.style.display = 'block';
+                document.querySelector('.popup-overlay').style.display = 'block';
             }
-            entry.textContent = `${key}: ${value}`;
-            dialog.appendChild(entry);
-        }
 
-        dialog.style.display = 'block';
-        document.querySelector('.popup-overlay').style.display = 'block';
-    }
+            function closePopup() {
+                document.getElementById('popup-dialog').style.display = 'none';
+                document.querySelector('.popup-overlay').style.display = 'none';
+            }
 
-    function closePopup() {
-        document.getElementById('popup-dialog').style.display = 'none';
-        document.querySelector('.popup-overlay').style.display = 'none';
-    }
-</script>
-
-
-
-  {% if topics %}
-  <p><i>{% trans %}Topics{% endtrans %}:</i> {% for topic in topics %}
-    <a href="{{ url_for('getTopic',topicIdentifier=topic) }}">{{ topic }} </a>
-    {% endfor %}</p>
-  {% endif %}
-
-
-  <p> {{ problemTextHtml | safe }}</p>
-
-    {% if hasSolution %}
-    <p style="font-size:80% !important"><a href="{{ url_for('getProblemSolution',problemid=problemid) }}">{% trans %}Solution{% endtrans %}</a></p>
-    {% else %}
-    <p style="font-size:80% !important;color:#999999">{% trans %}No solution{% endtrans %}</p>
-    {% endif %}
-
-  {% if hasVideo %}
-  <table border="1" cellspacing="0" style="border:1px solid #eeeeee; width:80%; margin-left:5%">
-    <tr>
-        <td style="width:50%">
-<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player">
-
-        <script>
-            // 2. This code loads the IFrame Player API code asynchronously.
-            var tag = document.createElement('script');
-
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-            // 3. This function creates an <iframe> (and YouTube player)
-            //    after the API code downloads.
-            var player;
-            function onYouTubeIframeAPIReady() {
-                player = new YT.Player('player', {
-                    height: '390',
-                    width: '640',
-                    videoId: '{{ youtubeID }}', // šo jāpārtaisa
-                    playerVars: {
-                        'playsinline': 1
-                    },
-                    events: {
-                        'onReady': onPlayerReady,
-                        'onStateChange': onPlayerStateChange
+            function showLanguage(lang) {
+                const texts = document.querySelectorAll('.problem-text');
+                texts.forEach(div => {
+                    if (div.dataset.lang === lang) {
+                        div.style.display = 'block';
+                    } else {
+                        div.style.display = 'none';
                     }
                 });
             }
-
-            // 4. The API will call this function when the video player is ready.
-            function onPlayerReady(event) {
-                // event.target.playVideo();
-            }
-
-            // 5. The API calls this function when the player's state changes.
-            //    The function indicates that when playing a video (state=1),
-            //    the player should play for six seconds and then stop.
-            var done = false;
-            function onPlayerStateChange(event) {
-                if (event.data == YT.PlayerState.PLAYING && !done) {
-                    setTimeout(stopVideo, 6000000);
-                    done = true;
-                }
-            }
-            function stopVideo() {
-                player.stopVideo();
-            }
         </script>
-    </div>
-        </td>
-        <td style="width:50%; vertical-align:top;">
-            {{ video_title }}
-            <ul>
-            {% for bookmark in bookmarks %}
-                <li>
-                {{ bookmark.minutes }}:{{ bookmark.sec }} <a href="#">{{ bookmark.bmtext }} </a>
-                </li>
+
+
+
+        {% if topics %}
+        <p><i>{% trans %}Topics{% endtrans %}:</i> {% for topic in topics %}
+            <a href="{{ url_for('getTopic',topicIdentifier=topic) }}">{{ topic }} </a>
             {% endfor %}
-            </ul>
-        </td>
-    </tr>
-</table>
-      {% endif %}
-</div>
-{% endblock %}
+        </p>
+        {% endif %}
+
+
+        <div id="problem-content-container">
+            {% for lang, text in problem.translations.items() %}
+            <div class="problem-text" data-lang="{{ lang }}" {% if lang !=problem.current_lang %}style="display:none" {%
+                endif %}>
+                {{ text | safe }}
+            </div>
+            {% endfor %}
+        </div>
+
+        {% if hasSolution %}
+        <p style="font-size:80% !important"><a href="{{ url_for('getProblemSolution',problemid=problemid) }}">{% trans
+                %}Solution{% endtrans %}</a></p>
+        {% else %}
+        <p style="font-size:80% !important;color:#999999">{% trans %}No solution{% endtrans %}</p>
+        {% endif %}
+
+        {% if hasVideo %}
+        <table border="1" cellspacing="0" style="border:1px solid #eeeeee; width:80%; margin-left:5%">
+            <tr>
+                <td style="width:50%">
+                    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+                    <div id="player">
+
+                        <script>
+                            // 2. This code loads the IFrame Player API code asynchronously.
+                            var tag = document.createElement('script');
+
+                            tag.src = "https://www.youtube.com/iframe_api";
+                            var firstScriptTag = document.getElementsByTagName('script')[0];
+                            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                            // 3. This function creates an <iframe> (and YouTube player)
+                            //    after the API code downloads.
+                            var player;
+                            function onYouTubeIframeAPIReady() {
+                                player = new YT.Player('player', {
+                                    height: '390',
+                                    width: '640',
+                                    videoId: '{{ youtubeID }}', // šo jāpārtaisa
+                                    playerVars: {
+                                        'playsinline': 1
+                                    },
+                                    events: {
+                                        'onReady': onPlayerReady,
+                                        'onStateChange': onPlayerStateChange
+                                    }
+                                });
+                            }
+
+                            // 4. The API will call this function when the video player is ready.
+                            function onPlayerReady(event) {
+                                // event.target.playVideo();
+                            }
+
+                            // 5. The API calls this function when the player's state changes.
+                            //    The function indicates that when playing a video (state=1),
+                            //    the player should play for six seconds and then stop.
+                            var done = false;
+                            function onPlayerStateChange(event) {
+                                if (event.data == YT.PlayerState.PLAYING && !done) {
+                                    setTimeout(stopVideo, 6000000);
+                                    done = true;
+                                }
+                            }
+                            function stopVideo() {
+                                player.stopVideo();
+                            }
+                        </script>
+                    </div>
+                </td>
+                <td style="width:50%; vertical-align:top;">
+                    {{ video_title }}
+                    <ul>
+                        {% for bookmark in bookmarks %}
+                        <li>
+                            {{ bookmark.minutes }}:{{ bookmark.sec }} <a href="#">{{ bookmark.bmtext }} </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        {% endif %}
+    </div>
+    {% endblock %}

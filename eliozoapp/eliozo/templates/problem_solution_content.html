@@ -7,17 +7,75 @@
   </div>
 
   <div class="problemDiv">
-      <h3 class="problem">{{ problemid }}</h3>
+    <h3 class="problem">{{ problemid }}&nbsp;&nbsp;
+      {% for lang in problem.available_langs %}
+      <a class="btn btn-xs btn-default" href="#" onclick="showLanguage('{{ lang }}'); return false;">{{ lang }}</a>
+      {% endfor %}
+    </h3>
 
-<p> {{ problemTextHtml | safe }}</p>
+    <script>
+      function showLanguage(lang) {
+        const texts = document.querySelectorAll('.problem-text');
+        texts.forEach(div => {
+          if (div.dataset.lang === lang) {
+            div.style.display = 'block';
+          } else {
+            div.style.display = 'none';
+          }
+        });
+      }
 
-<p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problemid) }}">{% trans %}Hide solution{% endtrans %}</a></p>
+      function showSolutionLanguage(link, lang) {
+        // Find the parent container of the clicked butto to scope the search
+        // structure: .soln-langs -> (buttons)
+        // parent of .soln-langs is .solution-container
+        // .solution-container contains .solution-text divs
+
+        const container = link.closest('.solution-container');
+        const texts = container.querySelectorAll('.solution-text');
+        texts.forEach(div => {
+          if (div.dataset.lang === lang) {
+            div.style.display = 'block';
+          } else {
+            div.style.display = 'none';
+          }
+        });
+      }
+    </script>
+
+    <div id="problem-content-container">
+      {% for lang, text in problem.translations.items() %}
+      <div class="problem-text" data-lang="{{ lang }}" {% if lang !=problem.current_lang %}style="display:none" {% endif
+        %}>
+        {{ text | safe }}
+      </div>
+      {% endfor %}
+    </div>
+
+    <p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problemid) }}">{% trans %}Hide
+        solution{% endtrans %}</a></p>
 
 
-  {% for soln in solutionsHtml %}
-  <div id="solutionDiv" class="solution">{{soln | safe}}</div>
+    {% for soln in solutions %}
+    <div class="solution-container">
+      {% if soln.available_langs|length > 1 %}
+      <div class="soln-langs" style="margin-bottom: 5px;">
+        {% for lang in soln.available_langs %}
+        <a class="btn btn-xs btn-default" href="#" onclick="showSolutionLanguage(this, '{{ lang }}'); return false;">{{
+          lang }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
 
-  {% endfor %}
+      {% for lang, text in soln.translations.items() %}
+      <div class="solution-text" data-lang="{{ lang }}" {% if lang !=soln.current_lang %}style="display:none" {% endif
+        %}>
+        <div class="solution">{{ text | safe }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    <hr />
+    {% endfor %}
 
-</div>
-{% endblock %}
+  </div>
+  {% endblock %}

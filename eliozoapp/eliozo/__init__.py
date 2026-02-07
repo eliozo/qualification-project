@@ -157,97 +157,61 @@ SELECT ?domainID ?domainNumber ?domainName ?domainDescription ?problemid ?L1 ?L2
 
 def getSPARQLProblem(arg, lang):
     url = FUSEKI_URL
-    queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT ?problemTextHtml ?video ?problemYear ?country ?olympiad 
-?problemBook ?problemBookSection ?problemGrade ?problem_number
-?topicIdentifier ?methodIdentifier ?questionType ?domain WHERE {{
-  ?problem eliozo:problemID '{problemid}' ;
-           eliozo:problemTextHtml ?problemTextHtml .
-           FILTER (lang(?problemTextHtml) = "{language}")
-  OPTIONAL {{
-    ?problem eliozo:problemYear ?year ;
-             eliozo:olympiadCode ?olympiad ;
-             eliozo:problemGrade ?grade ;
-             eliozo:country ?country .
-  }}
-  OPTIONAL {{
-    ?problem eliozo:hasVideo ?video .
-  }}
-  OPTIONAL {{
-    ?problem eliozo:problemYear ?problemYear .
-  }}
-  OPTIONAL {{
-    ?problem eliozo:country ?country .
-  }}
-  OPTIONAL {{
-    ?problem eliozo:olympiad ?olympiad .
-  }}
-  OPTIONAL {{
-    ?problem eliozo:problemBook ?problemBook .
-  }}
-  OPTIONAL {{
-    ?problem eliozo:problemBookSection ?problemBookSection .
-  }}
-  OPTIONAL {{
-    ?problem eliozo:problemGrade ?problemGrade .
-  }}
-  OPTIONAL {{
-    ?problem eliozo:problem_number ?problem_number .
-  }}  
-  OPTIONAL {{
-    ?problem eliozo:topic ?topic .
-    ?topic eliozo:topicID ?topicIdentifier .
-  }}  
-  OPTIONAL {{
-    ?problem eliozo:method ?method .
-    ?method eliozo:topicID ?methodIdentifier .
-  }}  
-  OPTIONAL {{
-    ?problem eliozo:questionType ?questionType .
-  }}  
-  OPTIONAL {{
-    ?problem eliozo:domain ?domain .
-  }}  
-}}"""
-
-    myobj = {'query':  queryTemplate.format(problemid=arg, language=lang) }
-    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
+    # query = 'PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#> SELECT ?text WHERE {?problem eliozo:problemID \''+arg+'\' . ?problem eliozo:problemText ?text .}'
+    queryTemplate = """
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
+    SELECT ?problemTextHtml ?problemYear ?country ?olympiad 
+           ?problemGrade ?problemBook ?problemBookSection 
+           ?problem_number ?topicIdentifier ?methodIdentifier 
+           ?concepts ?questionType ?domain ?video 
+           WHERE {{
+      ?problem eliozo:problemID '{problemID}' ;
+               eliozo:problemTextHtml ?problemTextHtml .
+      OPTIONAL {{ ?problem eliozo:problemYear ?problemYear . }}
+      OPTIONAL {{ ?problem eliozo:country ?country . }}
+      OPTIONAL {{ ?problem eliozo:olympiad ?olympiad . }}
+      OPTIONAL {{ ?problem eliozo:problemGrade ?problemGrade . }}
+      OPTIONAL {{ ?problem eliozo:problemBook ?problemBook . }}
+      OPTIONAL {{ ?problem eliozo:problemBookSection ?problemBookSection . }}
+      OPTIONAL {{ ?problem eliozo:problem_number ?problem_number . }}
+      OPTIONAL {{ ?problem eliozo:topic ?topic . ?topic eliozo:topicIdentifier ?topicIdentifier . }}
+      OPTIONAL {{ ?problem eliozo:method ?method . ?method eliozo:methodIdentifier ?methodIdentifier . }}
+      OPTIONAL {{ ?problem eliozo:concepts ?concepts . }}
+      OPTIONAL {{ ?problem eliozo:questionType ?questionType . }}
+      OPTIONAL {{ ?problem eliozo:domain ?domain . }}
+      OPTIONAL {{ ?problem eliozo:hasVideo ?video . }}
+    }}
+    """
+    myobj = {'query': queryTemplate.format(problemID=arg)}
+    head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
+    # print(x.text)
     return x.text
 
 
 def getSPARQLProblemSolutions(arg, lang):
     url = FUSEKI_URL
     queryTemplate = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT ?problemTextHtml ?solutionTextHtml WHERE {{
-  ?problem eliozo:problemID '{problemid}' ;
-  eliozo:problemTextHtml ?problemTextHtml .
-  FILTER (lang(?problemTextHtml) = "{language}")
-  FILTER (lang(?solutionTextHtml) = "{language}")
-  OPTIONAL {{
-    ?problem eliozo:problemSolution ?problemSolution . 
-    ?problemSolution eliozo:solutionTextHtml ?solutionTextHtml .
-  }}  
-}}    
-"""
-
-    actual_query = queryTemplate.format(problemid=arg, language=lang)
-    myobj = {'query':  actual_query}
-    print('*** query ***')
-    print(actual_query)
-    print('*** end query ***')
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
+    SELECT ?problemTextHtml ?solutionTextHtml ?solutionID WHERE {{
+      ?problem eliozo:problemID '{problemID}' ;
+              eliozo:problemTextHtml ?problemTextHtml .
+      OPTIONAL {{ 
+        ?problem eliozo:problemSolution ?soln . 
+        ?soln eliozo:solutionTextHtml ?solutionTextHtml .
+        OPTIONAL {{ ?soln eliozo:solutionID ?solutionID . }}
+      }}
+    }}
+    """
+    myobj = {'query': queryTemplate.format(problemID=arg)}
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
-    print('*** results ***')
-    print(x.text)
-    print('*** end results ***')
     return x.text
 
 
@@ -1364,43 +1328,70 @@ def create_app(test_config=None):
     @app.route('/problem', methods=['GET','POST'])
     def getProblem():
         lang = session.get('lang', 'lv')
-        # lang = 'lv'
         problemid = request.args.get('problemid')
+        
+        # Check for solution existence
+        # The new getSPARQLProblemSolutions returns all translations, so if any row has solutionTextHtml, a solution exists.
         solnData = json.loads(getSPARQLProblemSolutions(problemid, lang))
         hasSolution = False
-        if len(solnData['results']['bindings']) > 0 and 'solutionTextHtml' in solnData['results']['bindings'][0]:
-            hasSolution = True
-        # if 'solutionTextHtml' in solnData['results']['bindings'][0]:
-        #     hasSolution = True
-
+        if 'results' in solnData and 'bindings' in solnData['results']:
+             for item in solnData['results']['bindings']:
+                 if 'solutionTextHtml' in item:
+                     hasSolution = True
+                     break
 
         data = json.loads(getSPARQLProblem(problemid, lang))
+        
+        problem_translations = {}
+        # Iterate to find all translations and metadata
+        # Metadata *should* be the same across rows, but we can take from the first one that has it.
+        # Problem text differs by language.
+        
+        first_binding = None
+        if 'results' in data and 'bindings' in data['results'] and len(data['results']['bindings']) > 0:
+            first_binding = data['results']['bindings'][0]
+            for item in data['results']['bindings']:
+                if 'problemTextHtml' in item:
+                    p_text = item['problemTextHtml']['value']
+                    p_lang = item['problemTextHtml'].get('xml:lang', 'unk')
+                    problem_translations[p_lang] = mathBeautify(fix_image_links(p_text))
 
-        problemTextHtml = data['results']['bindings'][0]['problemTextHtml']['value']
+        problemTextHtml = ""
+        available_langs = sorted(list(problem_translations.keys()))
+        current_lang = lang
 
-        problemTextHtml = fix_image_links(problemTextHtml)
-        problemTextHtml = mathBeautify(problemTextHtml)
+        if lang in problem_translations:
+            problemTextHtml = problem_translations[lang]
+            current_lang = lang
+        elif 'lv' in problem_translations:
+            problemTextHtml = problem_translations['lv']
+            current_lang = 'lv'
+        elif 'en' in problem_translations:
+            problemTextHtml = problem_translations['en']
+            current_lang = 'en'
+        elif len(available_langs) > 0:
+            current_lang = available_langs[0]
+            problemTextHtml = problem_translations[current_lang]
+        
+        problem = {
+            'problemid': problemid,
+            'translations': problem_translations,
+            'available_langs': available_langs,
+            'current_lang': current_lang
+        }
 
-        if 'video' in data['results']['bindings'][0]:
-            hasVideo = data['results']['bindings'][0]['video']['value'] != ''
+        # Metadata extraction (using first binding)
+        if 'video' in first_binding:
+            hasVideo = first_binding['video']['value'] != ''
         else:
             hasVideo = False
-
-        # if 'solutionTextHtml' in data['results']['bindings'][0]:
-        #     solutionTextHtml = data['results']['bindings'][0]['solutionTextHtml']['value']
-        #     solutionTextHtml = fix_image_links(solutionTextHtml)
-        #     solutionTextHtml = mathBeautify(solutionTextHtml)
-        # else:
-        #     solutionTextHtml = ''
 
         bookmarks = []
         video_title = "NA"
         youtubeID = "NA"
 
         if hasVideo:
-
             video_data = json.loads(getSPARQLVideoBookmarks(problemid))
-
             for item in video_data['results']['bindings']:
                 video_title = item['videoTitle']['value']
                 youtubeID = item['youtubeID']['value']
@@ -1410,7 +1401,7 @@ def create_app(test_config=None):
                 seconds = int(item['tstamp']['value']) % 60
                 if seconds < 10:
                     seconds = '0' + str(seconds)
-                bookmarks.append({'tstamp': item['tstamp']['value'], 'bmtext': item['bmtext']['value'], 'minutes': minutes, 'sec': seconds}) # Bookmarkos sakrāta informācija par tstamp un bmtext
+                bookmarks.append({'tstamp': item['tstamp']['value'], 'bmtext': item['bmtext']['value'], 'minutes': minutes, 'sec': seconds}) 
 
         metaitems = []
         problemYear = "NA"
@@ -1428,30 +1419,31 @@ def create_app(test_config=None):
 
         metaitems.append({'key':'problemID','value': problemid})
 
-        if 'problemYear' in data['results']['bindings'][0]:
-            problemYear = data['results']['bindings'][0]['problemYear']['value']
-        if 'country' in data['results']['bindings'][0]:
-            country = data['results']['bindings'][0]['country']['value']
-        if 'olympiad' in data['results']['bindings'][0]:
-            olympiad = data['results']['bindings'][0]['olympiad']['value']
-        if 'problemBook' in data['results']['bindings'][0]:
-            problemBook = data['results']['bindings'][0]['problemBook']['value']
-        if 'problemBookSection' in data['results']['bindings'][0]:
-            problemBookSection = data['results']['bindings'][0]['problemBookSection']['value']
-        if 'problemGrade' in data['results']['bindings'][0]:
-            problemGrade = data['results']['bindings'][0]['problemGrade']['value']
-        if 'problem_number' in data['results']['bindings'][0]:
-            problem_number = data['results']['bindings'][0]['problem_number']['value']
-        if 'topicIdentifier' in data['results']['bindings'][0]:
-            topicIdentifier = data['results']['bindings'][0]['topicIdentifier']['value']
-        if 'methodIdentifier' in data['results']['bindings'][0]:
-            methodIdentifier = data['results']['bindings'][0]['methodIdentifier']['value']
-        if 'concepts' in data['results']['bindings'][0]:
-            concepts = data['results']['bindings'][0]['concepts']['value']
-        if 'questionType' in data['results']['bindings'][0]:
-            questionType = data['results']['bindings'][0]['questionType']['value']
-        if 'domain' in data['results']['bindings'][0]:
-            domain = data['results']['bindings'][0]['domain']['value']
+        if first_binding:
+            if 'problemYear' in first_binding:
+                problemYear = first_binding['problemYear']['value']
+            if 'country' in first_binding:
+                country = first_binding['country']['value']
+            if 'olympiad' in first_binding:
+                olympiad = first_binding['olympiad']['value']
+            if 'problemBook' in first_binding:
+                problemBook = first_binding['problemBook']['value']
+            if 'problemBookSection' in first_binding:
+                problemBookSection = first_binding['problemBookSection']['value']
+            if 'problemGrade' in first_binding:
+                problemGrade = first_binding['problemGrade']['value']
+            if 'problem_number' in first_binding:
+                problem_number = first_binding['problem_number']['value']
+            if 'topicIdentifier' in first_binding:
+                topicIdentifier = first_binding['topicIdentifier']['value']
+            if 'methodIdentifier' in first_binding:
+                methodIdentifier = first_binding['methodIdentifier']['value']
+            if 'concepts' in first_binding:
+                concepts = first_binding['concepts']['value']
+            if 'questionType' in first_binding:
+                questionType = first_binding['questionType']['value']
+            if 'domain' in first_binding:
+                domain = first_binding['domain']['value']
 
         if problemYear != 'NA':
             metaitems.append({'key':'year', 'value': problemYear})
@@ -1484,15 +1476,16 @@ def create_app(test_config=None):
             metaitems.append({'key': 'domain', 'value': all_domains[domain]})
 
         unique_sorted_topics = list(sorted(set(all_topics)))
-        print("---------------------")
-        print(f'unique_sorted_topics = {unique_sorted_topics}')
-        print("=====================")
+        # print("---------------------")
+        # print(f'unique_sorted_topics = {unique_sorted_topics}')
+        # print("=====================")
 
         template_context = {
             'problemid': problemid,
-            'data': data['results']['bindings'],
+            'problem': problem, # Pass the structured problem object
+            'data': data['results']['bindings'], # Keep original data just in case, though maybe less needed now
             'topics': unique_sorted_topics,
-            'problemTextHtml': problemTextHtml,
+            'problemTextHtml': problemTextHtml, # Deprecated in template but kept for compatibility logic if any remains
             'hasVideo': hasVideo,
             'video_title': video_title,
             'bookmarks': bookmarks,
@@ -1509,26 +1502,88 @@ def create_app(test_config=None):
     def getProblemSolution():
         problemid = request.args.get('problemid')
         lang = session.get('lang', 'lv')
-        # lang = 'lv'
         data = json.loads(getSPARQLProblemSolutions(problemid, lang))
 
-        problemTextHtml = data['results']['bindings'][0]['problemTextHtml']['value']
-        problemTextHtml = fix_image_links(problemTextHtml)
-        problemTextHtml = mathBeautify(problemTextHtml)
-
-        solutionsHtml = []
+        problem_translations = {}
+        solutions_map = {} # solutionID -> { lang -> text }
+        
         for item in data['results']['bindings']:
+            # Problem Text
+            if 'problemTextHtml' in item:
+                p_text = item['problemTextHtml']['value']
+                p_lang = item['problemTextHtml'].get('xml:lang', 'unk')
+                if p_lang not in problem_translations:
+                    problem_translations[p_lang] = mathBeautify(fix_image_links(p_text))
+            
+            # Solution Text
             if 'solutionTextHtml' in item:
-                solutionTextHtml = item['solutionTextHtml']['value']
-                solutionTextHtml = fix_image_links(solutionTextHtml)
-                solutionTextHtml = mathBeautify(solutionTextHtml)
-                solutionsHtml.append(solutionTextHtml)
+                s_text = item['solutionTextHtml']['value']
+                s_lang = item['solutionTextHtml'].get('xml:lang', 'unk')
+                s_id = "default"
+                if 'solutionID' in item:
+                    s_id = item['solutionID']['value']
+
+                if s_id not in solutions_map:
+                    solutions_map[s_id] = {}
+                solutions_map[s_id][s_lang] = mathBeautify(fix_image_links(s_text))
+
+        problemTextHtml = ""
+        available_langs = sorted(list(problem_translations.keys()))
+        current_lang = lang
+
+        if lang in problem_translations:
+            problemTextHtml = problem_translations[lang]
+            current_lang = lang
+        elif 'lv' in problem_translations:
+            problemTextHtml = problem_translations['lv']
+            current_lang = 'lv'
+        elif 'en' in problem_translations:
+            problemTextHtml = problem_translations['en']
+            current_lang = 'en'
+        elif len(available_langs) > 0:
+            current_lang = available_langs[0]
+            problemTextHtml = problem_translations[current_lang]
+        
+        problem = {
+            'problemid': problemid,
+            'translations': problem_translations,
+            'available_langs': available_langs,
+            'current_lang': current_lang
+        }
+        
+        solutions = []
+        for s_id in sorted(solutions_map.keys()):
+            s_trans = solutions_map[s_id]
+            s_avail = sorted(list(s_trans.keys()))
+            s_curr = lang
+            s_text = ""
+            if lang in s_trans:
+                s_text = s_trans[lang]
+                s_curr = lang
+            elif 'lv' in s_trans:
+                s_text = s_trans['lv']
+                s_curr = 'lv'
+            elif 'en' in s_trans:
+                s_text = s_trans['en']
+                s_curr = 'en'
+            elif len(s_avail) > 0:
+                s_curr = s_avail[0]
+                s_text = s_trans[s_curr]
+                
+            solutions.append({
+                'id': s_id,
+                'translations': s_trans,
+                'available_langs': s_avail,
+                'current_lang': s_curr,
+                'text': s_text
+            })
 
         template_context = {
             'problemid': problemid,
             'data': data['results']['bindings'],
+            'problem': problem,
             'problemTextHtml': problemTextHtml,
-            'solutionsHtml': solutionsHtml,
+            'solutions': solutions,
             'active': 'archive',
             'title': 'Uzdevums'
         }
