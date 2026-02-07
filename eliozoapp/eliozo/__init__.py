@@ -609,13 +609,12 @@ def getSPARQLOlympiadProblemsByEventAndGrade(event, country, grade, olympiad, la
       ?problem eliozo:problem_number ?problem_number .
       ?problem eliozo:problemGrade {grade} .
       ?problem eliozo:olympiadCode '{olympiad_code}' .
-      FILTER (lang(?text) = "{language}")
     }} ORDER BY ?problem_number
     """
 
 
     myobj = { 'query':
-        queryTemplate.format(event=event, country=country, grade=grade, olympiad_code=olympiad, language=lang)
+        queryTemplate.format(event=event, country=country, grade=grade, olympiad_code=olympiad)
     }
     head = {'Content-Type' : 'application/x-www-form-urlencoded'}
     x = requests.post(url, myobj, head)
@@ -637,13 +636,12 @@ SELECT ?text ?problemid ?problem_number ?problem_grade ?suffix WHERE {{
   ?problem eliozo:problemGrade ?problem_grade .
   ?problem eliozo:olympiadCode '{olympiad_code}' .
   ?problem eliozo:suffix ?suffix .
-  FILTER (lang(?text) = "{language}")
 }} ORDER BY ?problem_grade ?suffix ?problem_number
 """
 
 
     myobj = { 'query':
-        queryTemplate.format(event=event, country=country, olympiad_code=olympiad, language=lang)
+        queryTemplate.format(event=event, country=country, olympiad_code=olympiad)
     }
     # print(f"wrongSPARQL = {myobj}")
 
@@ -1689,7 +1687,7 @@ def create_app(test_config=None):
         else:
             link = json.loads(getSPARQLOlympiadProblemsByEventAndGrade(event, country, grade, olympiad, lang))
 
-        problems = []
+        problems_map = {}
         
         for item in link['results']['bindings']:
             problem_id_value = item['problemid']['value']
@@ -1698,11 +1696,52 @@ def create_app(test_config=None):
                 problem_grade_value = item['problem_grade']['value']
             else:
                 problem_grade_value = grade
+            
             problem_text_value = item['text']['value']
             problem_text_value = fix_image_links(problem_text_value)
             problem_text_value = mathBeautify(problem_text_value)
-            d = {'problemid': problem_id_value, 'problem_number':problem_number_value, 'text': problem_text_value, 'problem_grade': problem_grade_value}
-            problems.append(d)
+            
+            problem_lang = item['text'].get('xml:lang', 'unk')
+
+            if problem_id_value not in problems_map:
+                problems_map[problem_id_value] = {
+                    'problemid': problem_id_value,
+                    'problem_number': problem_number_value,
+                    'problem_grade': problem_grade_value,
+                    'translations': {}
+                }
+            
+            problems_map[problem_id_value]['translations'][problem_lang] = problem_text_value
+
+        problems = list(problems_map.values())
+        
+        # Sort problems
+        # Assuming problem_number is an integer or comparable
+        # If it's a string, we might need to cast to int for correct sorting
+        try:
+             problems.sort(key=lambda x: (int(x['problem_grade']), int(x['problem_number'])))
+        except ValueError:
+             problems.sort(key=lambda x: (x['problem_grade'], x['problem_number']))
+
+        # Set default text and available languages for template
+        for p in problems:
+            # Default to current session language, fallback to 'lv', then 'en', then first available
+            available_langs = sorted(list(p['translations'].keys()))
+            if lang in p['translations']:
+                p['text'] = p['translations'][lang]
+                p['current_lang'] = lang
+            elif 'lv' in p['translations']:
+                p['text'] = p['translations']['lv']
+                p['current_lang'] = 'lv'
+            elif 'en' in p['translations']:
+                p['text'] = p['translations']['en']
+                p['current_lang'] = 'en'
+            else:
+                first_lang = available_langs[0]
+                p['text'] = p['translations'][first_lang]
+                p['current_lang'] = first_lang
+            
+            p['available_langs'] = available_langs
 
 
         template_context = {

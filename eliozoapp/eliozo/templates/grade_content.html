@@ -1,24 +1,86 @@
 {% extends 'global.html' %}
 
 {% block content %}
-       <div class="col-sm-8 text-left">
-            <div class="container">
-                {{jsonfile}}
-            </div>
-           {% if grade == '-1' %}
-             <h2> {% if country and country != '' %}{{ country }}.{% endif %}{{ olympiad }}.{{ event }}</h2>
-           {% else %}
-            <h2> {% if country and country != '' %}{{ country }}.{% endif %}{{ olympiad }}.{{ event }} olimpiādes {{ grade }}. klases uzdevumi </h2>
-           {% endif %}
-            {% for problem in problems %}
 
-            <h3 class="problem">{{ problem.problemid }}</h3>
+<div class="col-sm-8 text-left">
+  <div class="container">
+    {{jsonfile}}
+  </div>
+  {% if grade == '-1' %}
+  <h2> {% if country and country != '' %}{{ country }}.{% endif %}{{ olympiad }}.{{ event }}</h2>
+  {% else %}
+  <h2> {% if country and country != '' %}{{ country }}.{% endif %}{{ olympiad }}.{{ event }} olimpiādes {{ grade }}.
+    klases uzdevumi </h2>
+  {% endif %}
+  {% for problem in problems %}
+  <div data-problem-id="{{ problem.problemid }}">
+    <h3 class="problem">
+      {{ problem.problemid }}
+      <span style="margin-left: 10px;">
+        {% for lang in problem.available_langs %}
+        <a href="javascript:void(0)" onclick="toggleLanguage('{{ problem.problemid }}', '{{ lang }}')"
+          class="btn btn-xs btn-default lang-link {{ 'active' if lang == problem.current_lang else '' }}"
+          data-lang="{{ lang }}">
+          {{ lang }}
+        </a>
+        {% endfor %}
+      </span>
+    </h3>
 
-            {{ problem.text | safe }}
+    {% for lang, text in problem.translations.items() %}
+    <div id="content-{{ problem.problemid }}-{{ lang }}" class="problem-content"
+      style="display: {{ 'block' if lang == problem.current_lang else 'none' }}">
+      {{ text | safe }}
+    </div>
+    {% endfor %}
 
-            <p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">
-                    {% trans %}More{% endtrans %}...
-            </a></p>
-            {% endfor %}
-       </div>
+    <p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">
+        {% trans %}More{% endtrans %}...
+      </a></p>
+  </div>
+  {% endfor %}
+</div>
+
+<script>
+  function toggleLanguage(problemId, lang) {
+    // Hide all contents for this problem
+    var contents = document.querySelectorAll('div[id^="content-' + problemId + '-"]');
+    contents.forEach(function (el) {
+      el.style.display = 'none';
+    });
+
+    // Show the selected content
+    document.getElementById('content-' + problemId + '-' + lang).style.display = 'block';
+
+    // Update active link style (optional)
+    var container = document.querySelector('div[data-problem-id="' + problemId + '"]');
+    var links = container.querySelectorAll('.lang-link');
+    links.forEach(function (el) {
+      if (el.getAttribute('data-lang') === lang) {
+        el.classList.add('active');
+        el.classList.add('btn-primary');
+        el.classList.remove('btn-default');
+      } else {
+        el.classList.remove('active');
+        el.classList.remove('btn-primary');
+        el.classList.add('btn-default');
+      }
+    });
+  }
+
+  // Initialize bold for default languages
+  document.addEventListener("DOMContentLoaded", function () {
+    var activeLinks = document.querySelector('div[data-problem-id]').querySelectorAll('.active'); // Select active links within problem divs? specific logic might not be needed if simple class addition works.
+    // Actually, just loop through all problems and highlight current_lang
+    // But valid HTML comes active class already.
+    // Let's just ensure the style is correct on load
+    var allLinks = document.querySelectorAll('.lang-link');
+    allLinks.forEach(function (el) {
+      if (el.classList.contains('active')) {
+        el.classList.add('btn-primary');
+        el.classList.remove('btn-default');
+      }
+    });
+  });
+</script>
 {% endblock %}

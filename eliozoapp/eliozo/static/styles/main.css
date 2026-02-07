@@ -1,179 +1,190 @@
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
-    margin-bottom: 0;
-    border-radius: 0;
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
-    height: 450px
+  height: 450px
 }
 
 /* Set gray background color and 100% height */
 .sidenav {
-    padding-top: 20px;
-    background-color: #f1f1f1;
-    height: 100%;
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
 }
 
 /* Set black background color, white text and some padding */
 footer {
-    background-color: #555;
-    color: white;
-    padding: 15px;
+  background-color: #555;
+  color: white;
+  padding: 15px;
 }
 
 div.mycontainer {
-    padding-left: 5px;
-    padding-top: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
 }
 
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
-    .sidenav {
-        height: auto;
-        padding: 15px;
-    }
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
 
-    .row.content {
-        height: auto;
-    }
+  .row.content {
+    height: auto;
+  }
 }
 
-table.tasks, table.proofs {
-    border-left: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
-    border-spacing: 0;
-    border-collapse: collapse;
-    margin: 10px 0px 10px 0px;
+table.tasks,
+table.proofs {
+  border-left: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 10px 0px 10px 0px;
 }
 
-table.tasks tr td, table.proofs tr td {
-    border-top: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
+table.tasks tr td,
+table.proofs tr td {
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
 }
 
-table.tasks tr th, table.proofs tr th {
-    border-top: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
-    font-size: 120%;
+table.tasks tr th,
+table.proofs tr th {
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  font-size: 120%;
 }
 
-table.tasks tr.odd, table.proofs tr.odd {
-    background-color: #eeeeee;
+table.tasks tr.odd,
+table.proofs tr.odd {
+  background-color: #eeeeee;
 }
 
 table.tasks td.stat {
-  padding-left: 5px; 
+  padding-left: 5px;
   padding-right: 5px;
   text-align: left;
 }
 
 table.tasks td.borderlessstat {
-  padding-left: 5px; 
+  padding-left: 5px;
   padding-right: 5px;
   border-right: 0px;
-  text-align: left;  
+  text-align: left;
 }
 
 table.tasks th {
-  padding-left: 5px; 
+  padding-left: 5px;
   padding-right: 5px;
-  font-weight: 200; 
+  font-weight: 200;
   font-style: italic;
 }
 
 body {
-    margin-top: 0%;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 2%
+  margin-top: 0%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 2%
 }
 
 h2.top {
-    margin-top: 0px;
-    color:black;
+  margin-top: 0px;
+  color: black;
 }
 
 h2 {
-    color: blue;
-    text-align: center;
+  color: blue;
+  text-align: center;
 }
 
-div#solutionDiv > h2 {
-    font-size: 120%;
-    color: #1565C0;
-    text-align: left;
+div#solutionDiv>h2 {
+  font-size: 120%;
+  color: #1565C0;
+  text-align: left;
 }
 
 /* CSS for info.html */
-a.info{
-    color: blue;
+a.info {
+  color: blue;
 }
 
-p.info{
-    color:black;
+p.info {
+  color: black;
 }
 
-h2.info{
-    text-align:left;
+h2.info {
+  text-align: left;
 }
 
 /* CSS for buttons */
 a.button {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 10px 15px;;
-    border-radius: 12px;
-    border: 1px solid darkgrey;
-    transition-duration: 0.5s;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 4px 0px 4px 0px;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  ;
+  border-radius: 12px;
+  border: 1px solid darkgrey;
+  transition-duration: 0.5s;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 0px 4px 0px;
 }
 
 
 a.button:hover {
-    background-color: gray;
-    color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: gray;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 dd.info {
-    margin-left: 30px !important;
+  margin-left: 30px !important;
 }
 
 h3.problem {
-    font-size: 120%;
-    color: #1565C0;
+  font-size: 120%;
+  color: #1565C0;
 }
 
 div.problemDiv {
-    font-family: Calibri Arial sans-serif;
+  font-family: Calibri Arial sans-serif;
 }
 
 /* Avoid default-white background making the navigation button invisible */
 .navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #999999 !important;
+  background-color: #999999 !important;
 }
 
 
 .custom-list li {
-  list-style: none; /* Remove default numbering */
-  position: relative; /* For positioning the pseudo-element */
-  padding-left: 60px; /* Space for the custom label */
+  list-style: none;
+  /* Remove default numbering */
+  position: relative;
+  /* For positioning the pseudo-element */
+  padding-left: 60px;
+  /* Space for the custom label */
 }
 
 .custom-list li::before {
-  content: attr(data-label); /* Use the data-label attribute */
+  content: attr(data-label);
+  /* Use the data-label attribute */
   position: absolute;
   left: 0;
-  width: 50px; /* Adjust width as necessary */
-  font-weight: bold; /* Optional: make label bold */
+  width: 50px;
+  /* Adjust width as necessary */
+  font-weight: bold;
+  /* Optional: make label bold */
 }
 
 
@@ -201,7 +212,7 @@ div.problemDiv {
   border: 1px solid #000;
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-size: 80%;
 }
 
@@ -223,12 +234,12 @@ div.problemDiv {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 
 div.panel-body i {
-  font-size:85%;
+  font-size: 85%;
 }
 
 table.colornavigation a {
@@ -239,7 +250,7 @@ table.colornavigation a {
   position: relative;
   display: inline-block;
   font-style: italic;
-  font-size:80%;
+  font-size: 80%;
   color: #2B547E;
   border-bottom: 1px dotted black;
 }
@@ -282,12 +293,12 @@ div.main .search-container {
   border: 1px solid #ccc;
 }
 
-div.main  .search-target {
+div.main .search-target {
   background-color: lightgray;
   padding: 4px;
 }
 
-div.main  .search-input {
+div.main .search-input {
   flex-grow: 1;
   background-color: white;
   border: none;
@@ -295,7 +306,7 @@ div.main  .search-input {
   outline: none;
 }
 
-div.main  .search-quadratic {
+div.main .search-quadratic {
   background-color: #FFD580;
   border: none;
   padding: 2px;
@@ -329,7 +340,8 @@ div.main .search-quadratic img {
   background-color: #f0f0f0;
   border-radius: 8px;
   padding: 10px;
-  flex: 1 1 200px; /* Flex-grow, flex-shrink, and base flex-basis */
+  flex: 1 1 200px;
+  /* Flex-grow, flex-shrink, and base flex-basis */
   min-width: 150px;
   box-sizing: border-box;
 }
@@ -370,6 +382,7 @@ div.main .search-quadratic img {
   .search-form {
     flex-direction: row;
   }
+
   .search-button {
     align-self: flex-start;
     margin-top: 0;
@@ -377,22 +390,25 @@ div.main .search-quadratic img {
   }
 }
 
-a.selectedlang, a.selectedlang:visited, a.selectedlang:hover, a.selectedlang:active {
-    text-decoration: none;
-    font-weight: bold;
-    color: darkred;
+a.selectedlang,
+a.selectedlang:visited,
+a.selectedlang:hover,
+a.selectedlang:active {
+  text-decoration: none;
+  font-weight: bold;
+  color: darkred;
 }
 
 div.olympiads p.olympiad {
-    border: 2px solid;
-    border-radius: 5px;
-    padding: 2px;
-    box-sizing: border-box;
-    margin-bottom: 4px;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 2px;
+  box-sizing: border-box;
+  margin-bottom: 4px;
 }
 
 tt.metahelp {
-  color:#999999;
+  color: #999999;
   font-size: 80%;
 }
 
@@ -409,4 +425,11 @@ dl.problem-list dt.parent {
 dl.problem-list dt.child {
   font-weight: normal;
   margin-left: 20px;
+}
+
+.btn-xs {
+  padding: 1px 2px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
 }
