@@ -14,7 +14,7 @@ from eliozo_dao.sparql_access import SparqlAccess
 from controllers.worksheets import getWorksheets, worksheet_wizard
 from controllers.search_controller import search_problems
 from controllers.stats_controllers import getProblemCounts, getPropertyCounts
-from controllers.reference_controllers import getReferences, getContactInfo
+from controllers.reference_controllers import getReferences, getContactInfo, getOntology
 from controllers.curriculum_controller import curriculum_bp
 
 
@@ -849,6 +849,7 @@ def create_app(test_config=None):
     app.route('/property_counts', methods=['GET', 'POST'])(getPropertyCounts)
     app.route('/references', methods=['GET'])(getReferences)
     app.route('/contact_info', methods=['GET'])(getContactInfo)
+    app.route('/ontology', methods=['GET'])(getOntology)
 
 
     @app.before_request

@@ -148,7 +148,8 @@
                         <ul>
                                 {% for subdomain in all_subdomains %}
 
-                                <li>{{ all_subdomains_info[subdomain].domainName }}
+                                <li>{{ all_subdomains_info[subdomain].domainNumber }} {{
+                                        all_subdomains_info[subdomain].domainName }}
                                         <span class="tltip"><img style="vertical-align: middle;width:12px;"
                                                         src="{{ url_for('static',filename='blue_question_mark.png') }}">
                                                 <span class="tltiptext" style="font-weight:normal;"><tt

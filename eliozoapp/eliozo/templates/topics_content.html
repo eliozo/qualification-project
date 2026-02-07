@@ -5,73 +5,77 @@
 {% block content %}
 <div class="text-left">
 
-{% if lang != 'lv' %}
-<p><small><b>Note: </b>Topic names/descriptions only available in Latvian.</small></p>
-{% endif %}
+    {% if lang != 'lv' %}
+    <p><small><b>Note: </b>Topic names/descriptions only available in Latvian.</small></p>
+    {% endif %}
 
 
-<div class="container">
-    {{jsonfile}}
-</div>
+    <div class="container">
+        {{jsonfile}}
+    </div>
 
-{% for L1_topic in structured_topics %}
-<h3>{{ L1_topic.number }}. {{ L1_topic.name }}</h3>
-<div class="panel-group" id="accordion">
-{% for L2_topic in L1_topic.subtopics %}
-<div class="panel panel-default">
+    {% for L1_topic in structured_topics %}
+    <h3>{{ L1_topic.number }}. {{ L1_topic.name }}</h3>
+    <div class="panel-group" id="accordion">
+        {% for L2_topic in L1_topic.subtopics %}
+        <div class="panel panel-default">
 
-<div class="panel-heading">
-<h4 class="panel-title">
-<a data-toggle="collapse"
-data-parent="#accordion" href="#collapse{{L2_topic.label}}">{{ L2_topic.number }}. {{ L2_topic.name }}</a>
-{% if L2_topic.desc != "" %}
-<span class="tltip"><img style="vertical-align: middle;width:12px;"
-         src="{{ url_for('static',filename='blue_question_mark.png') }}">
-<span class="tltiptext"><tt class="metahelp">{{ L2_topic.topicId }}:</tt> {{ L2_topic.desc | safe }}</span>{% endif %}
-</h4>
-</div>
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{L2_topic.label}}">{{
+                        L2_topic.number }}. {{ L2_topic.name }}</a>
+                    {% if L2_topic.desc != "" %}
+                    <span class="tltip"><img style="vertical-align: middle;width:12px;"
+                            src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                        <span class="tltiptext"><tt class="metahelp">{{ L2_topic.topicId }}:</tt> {{ L2_topic.desc |
+                            safe }}</span>{% endif %}
+                </h4>
+            </div>
 
-<div id="collapse{{L2_topic.label}}" class="panel-collapse collapse">
-<div class="panel-body">
+            <div id="collapse{{L2_topic.label}}" class="panel-collapse collapse">
+                <div class="panel-body">
 
-{% if L2_topic.prob %} {% for problem in L2_topic.prob %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
-                        problem }}</a>, {% endfor %} <br/> {% endif %}
+                    {% if L2_topic.prob %} {% for problem in L2_topic.prob %} <a
+                        href="{{ url_for('getProblem',problemid=problem) }}">{{
+                        problem }}</a>, {% endfor %} <br /> {% endif %}
 
-{% for L3_topic in L2_topic.subtopics %}
-<b>{{ L3_topic.number }}. {{ L3_topic.name | safe }}</b>{% if L3_topic.desc != "" %}
-<span class="tltip"><img style="vertical-align: middle;width:12px;"
-         src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext"><tt class="metahelp">{{ L3_topic.topicId }}:</tt> {{ L3_topic.desc | safe }}</span></span>{% endif %} {% if L3_topic.prob %} : {% endif %}
-    {% for problem in L3_topic.prob %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                    {% for L3_topic in L2_topic.subtopics %}
+                    <b>{{ L3_topic.number }}. {{ L3_topic.name | safe }}</b>{% if L3_topic.desc != "" %}
+                    <span class="tltip"><img style="vertical-align: middle;width:12px;"
+                            src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                        <span class="tltiptext"><tt class="metahelp">{{ L3_topic.topicId }}:</tt> {{ L3_topic.desc |
+                            safe }}</span></span>{% endif %} {% if L3_topic.prob %} : {% endif %}
+                    {% for problem in L3_topic.prob %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
                         problem }}</a>, {% endfor %}
 
-    <br/>
-{% for L45_topic in L3_topic.subtopics %}
-    {{ L45_topic.number }}. {{ L45_topic.name | safe }}{% if L45_topic.desc != "" %}
-<span class="tltip"><img style="vertical-align: middle;width:12px;"
-         src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext"><tt  class="metahelp">{{ L45_topic.topicId }}:</tt> {{ L45_topic.desc | safe }}</span></span>{% endif %} {% if L45_topic.prob %} : {% endif %}
-    {% for problem in L45_topic.prob %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                    <br />
+                    {% for L45_topic in L3_topic.subtopics %}
+                    {{ L45_topic.number }}. {{ L45_topic.name | safe }}{% if L45_topic.desc != "" %}
+                    <span class="tltip"><img style="vertical-align: middle;width:12px;"
+                            src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                        <span class="tltiptext"><tt class="metahelp">{{ L45_topic.topicId }}:</tt> {{ L45_topic.desc |
+                            safe }}</span></span>{% endif %} {% if L45_topic.prob %} : {% endif %}
+                    {% for problem in L45_topic.prob %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
                         problem }}</a>, {% endfor %}
-    <br/>
-{% endfor %}
-{% endfor %}
+                    <br />
+                    {% endfor %}
+                    {% endfor %}
 
 
-</div>
-</div>
+                </div>
+            </div>
 
-</div>
-{% endfor %}
-</div>
-{% endfor %}
-
-
-
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
 
 
 
-           {#
+
+
+
+    {#
     <table class="tasks">
         <colgroup>
             <col class="aaa">
@@ -89,17 +93,19 @@ data-parent="#accordion" href="#collapse{{L2_topic.label}}">{{ L2_topic.number }
             {% for topic in all_topics %}
             <tr class="{{ loop.cycle('odd', 'even') }}">
                 <td>{{ all_topic_info[topic].topicNumber |safe }}</td>
-                <td><a href="{{ url_for('getTopic',topicIdentifier=topic) }}" title="{{ topic }}">{{ all_topic_info[topic].topicName |safe }}</a></td>
+                <td><a href="{{ url_for('getTopic',topicIdentifier=topic) }}" title="{{ topic }}">{{
+                        all_topic_info[topic].topicName |safe }}</a></td>
                 <td>{{ all_topic_info[topic].topicDescription |safe }}</td>
-                <td>{% for problem in all_topic_info[topic].problems %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                <td>{% for problem in all_topic_info[topic].problems %} <a
+                        href="{{ url_for('getProblem',problemid=problem) }}">{{
                         problem }}</a>, {% endfor %} </td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
-           #}
+    #}
 
 
 
-        </div>
+</div>
 {% endblock %}

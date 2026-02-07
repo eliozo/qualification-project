@@ -266,6 +266,7 @@ def getCurriculum():
                         all_subdomains_info[sd_id] = {
                             'domainName': item['domainName']['value'],
                             'domainDescription': mathBeautify(item['domainDescription']['value']),
+                            'domainNumber': f"{item['L1']['value']}.{item['L2']['value']}.{item['L3']['value']}",
                             'problems': []
                         }
 
