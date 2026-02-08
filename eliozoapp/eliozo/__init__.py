@@ -13,13 +13,17 @@ from collections import defaultdict
 from authlib.integrations.flask_client import OAuth
 
 
-from eliozo_dao.sparql_access import SparqlAccess
+
+
 from controllers.worksheets import getWorksheets, worksheet_wizard
 from controllers.search_controller import search_problems
-from controllers.stats_controllers import getProblemCounts, getPropertyCounts
-from controllers.reference_controllers import getReferences, getContactInfo, getOntology
+from controllers.search_controller import search_problems
 from blueprints.curriculum import curriculum_bp
 from blueprints.problems import problems_bp
+from blueprints.indexes import indexes_bp
+from blueprints.stats import stats_bp
+from blueprints.references import references_bp
+from .navigation import get_navigation
 
 
 import logging
@@ -34,19 +38,6 @@ from werkzeug.wrappers import Response
 from eliozo_dao import FUSEKI_URL
 
 # Integrācija ar Jena Fuseki serveri
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -352,11 +343,10 @@ def create_app(test_config=None):
     db.init_app(app)
 
     app.register_blueprint(problems_bp)
-    
     app.register_blueprint(curriculum_bp)
-    
-    from blueprints.indexes import indexes_bp
     app.register_blueprint(indexes_bp)
+    app.register_blueprint(stats_bp)
+    app.register_blueprint(references_bp)
 
     @app.errorhandler(404)
     def page_not_found(e):
@@ -364,11 +354,7 @@ def create_app(test_config=None):
 
     app.route("/worksheets", methods=['GET', 'POST'])(getWorksheets)
     app.route("/worksheets/wizard/step/<int:step_id>", methods=['GET', 'POST'])(worksheet_wizard)
-    app.route('/problem_counts', methods=['GET', 'POST'])(getProblemCounts)
-    app.route('/property_counts', methods=['GET', 'POST'])(getPropertyCounts)
-    app.route('/references', methods=['GET'])(getReferences)
-    app.route('/contact_info', methods=['GET'])(getContactInfo)
-    app.route('/ontology', methods=['GET'])(getOntology)
+
 
 
     @app.before_request
@@ -381,6 +367,7 @@ def create_app(test_config=None):
             "clickcount": session.get("clickcount", 0),
             # you can inject other common vars too:
             "lang": session.get("lang", "lv"),
+            "navigation": get_navigation(),
         }
 
 
@@ -615,18 +602,7 @@ def create_app(test_config=None):
 
 
 
-    @app.route('/results', methods=['GET', 'POST'])
-    def getResults():
-        template_context = {
-            'active': 'statistics',
-            'navlinks': [
-                {'title':'Statistics'}, 
-                {'url':'getResults', 'title':'Result Summary'}
-            ],
-            'title': 'Result Summary'
-        }
 
-        return render_template('stats_results.html', **template_context)
 
 
 

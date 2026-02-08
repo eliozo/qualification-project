@@ -112,73 +112,25 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="{{ 'active' if active == 'main' else '' }}"><a href="{{ url_for('main') }}">{% trans
-                            %}Home{% endtrans %}</a>
-                    </li>
-                    <li class="{{ 'active' if active == 'filter' else '' }}"><a href="{{ url_for('getFilter') }}">{%
-                            trans %}Filters{% endtrans %}</a>
-                    </li>
-                    <li class="{{ 'active' if active == 'archive' else '' }}"><a
-                            href="{{ url_for('problems.getArchive') }}">{%
-                            trans %}Archive{% endtrans %}</a></li>
-
-                    {#
-                    <li class="{{ 'active' if active == 'topics' else '' }}"><a href="{{ url_for('getTopics') }}">{%
-                            trans %}Topics{% endtrans %}</a></li>
-                    <li class="{{ 'active' if active == 'concepts' else '' }}"><a href="{{ url_for('getConcepts') }}">{%
-                            trans %}Concepts{% endtrans %}</a></li>
-                    #}
-
-                    <li class="dropdown {{ 'active' if active == 'order_by' else '' }}">
-                        <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown"
+                    {% for item in navigation %}
+                    {% if item.children %}
+                    <li class="dropdown {{ 'active' if active == item.active_key else '' }}">
+                        <a href="{{ item.url }}" class="dropdown-toggle" data-toggle="dropdown"
                             role="button" aria-haspopup="true" aria-expanded="false">
-                            {% trans %}Order{% endtrans %} <span class="caret"></span>
+                            {{ item.label }} <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{ url_for('indexes.getTopics') }}">{% trans %}by Topic{% endtrans %}</a></li>
-                            <li><a href="{{ url_for('indexes.getMethods') }}">{% trans %}by Method{% endtrans %}</a>
-                            </li>
-                            <li><a href="{{ url_for('indexes.getGenres') }}">{% trans %}by Genre{% endtrans %}</a></li>
-                            <li><a href="{{ url_for('indexes.getConcepts') }}">{% trans %}by Concept{% endtrans %}</a>
-                            </li>
+                            {% for child in item.children %}
+                            <li><a href="{{ child.url }}">{{ child.label }}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
-
-
-                    <li class="dropdown {{ 'active' if active == 'statistics' else '' }}">
-                        <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown"
-                            role="button" aria-haspopup="true" aria-expanded="false">
-                            {% trans %}Reports{% endtrans %} <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ url_for('curriculum_bp.getCurriculum') }}">{% trans %}Olympiad Curriculum{%
-                                    endtrans %}</a></li>
-                            <li><a href="{{ url_for('getProblemCounts') }}">{% trans %}Problem Count{% endtrans %}</a>
-                            </li>
-                            <li><a href="{{ url_for('getPropertyCounts') }}">{% trans %}Property Usage{% endtrans %}</a>
-                            </li>
-                            <li><a href="{{ url_for('getResults') }}">{% trans %}Result Summary{% endtrans %}</a></li>
-                            <li><a href="{{ url_for('problems.getVideo') }}">{% trans %}Video{% endtrans %}</a></li>
-                        </ul>
+                    {% else %}
+                    <li class="{{ 'active' if active == item.active_key else '' }}">
+                        <a href="{{ item.url }}">{{ item.label }}</a>
                     </li>
-
-                    {% if clickcount >= 7 %}
-                    <li class="{{ 'active' if active == 'worksheets' else '' }}"><a
-                            href="{{ url_for('getWorksheets') }}">{% trans %}Worksheets{% endtrans %}</a></li>
                     {% endif %}
-
-                    <li class="dropdown {{ 'active' if active == 'about_us' else '' }}">
-                        <a href="{{ url_for('getReferences') }}" class="dropdown-toggle" data-toggle="dropdown"
-                            role="button" aria-haspopup="true" aria-expanded="false">
-                            {% trans %}About Us{% endtrans %} <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ url_for('getReferences') }}">{% trans %}References{% endtrans %}</a></li>
-                            <li><a href="{{ url_for('getContactInfo') }}">{% trans %}Contact Information{% endtrans
-                                    %}</a></li>
-                            <li><a href="{{ url_for('getOntology') }}">{% trans %}Ontology{% endtrans %}</a></li>
-                        </ul>
-                    </li>
+                    {% endfor %}
 
                     <li><small>
                             {% set current_url = request.full_path %}

@@ -14,8 +14,8 @@ from eliozo_dao.problem_repository import (
 
 problems_bp = Blueprint('problems', __name__)
 
-@problems_bp.route('/archive', methods=['GET', 'POST'])
-def getArchive():
+@problems_bp.route('/olympiads', methods=['GET', 'POST'])
+def getOlympiads():
     lang = session.get('lang', 'lv')
     olympiads = json.loads(getSPARQLOlympiads(lang))
     olympiadData = []
@@ -49,7 +49,7 @@ def getArchive():
         'links': olympiadData,
         'active': 'archive',
         'navlinks': [
-            {'url':'problems.getArchive', 'title':'Archive'}
+            {'url':'problems.getOlympiads', 'title':'Olympiads'}
         ],
         'title': 'Arhīvs'
     }
@@ -159,8 +159,8 @@ def getGrades():
         'active': 'archive',
         'navlinks': [
             {
-                'url': 'problems.getArchive', 
-                'title': 'Archive'
+                'url': 'problems.getOlympiads', 
+                'title': 'Olympiads'
             }, 
             {
                 'url': 'problems.getGrades', 
@@ -452,7 +452,6 @@ def getVideo():
         'all_problemids' : all_problemids,
         'active': 'statistics',
         'navlinks': [
-            {'title':'Statistics'}, 
             {'url':'problems.getVideo', 'title':'Video'}
         ],
         'title': 'Video'
