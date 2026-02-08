@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="col-sm-8 text-left">
-        <a href="{{ url_for('main') }}" class="button">{% trans %}Back{% endtrans %}</a>
+        <a href="{{ url_for('search_bp.search_problems') }}" class="button">{% trans %}Back{% endtrans %}</a>
         <ul>
                 {% for problem in all_problemids %}
                 <li><a href="{{ url_for('problems.getProblem',problemid=problem.problemID) }}">{{ problem.problemID

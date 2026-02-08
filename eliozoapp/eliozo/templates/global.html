@@ -106,17 +106,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url_for('main') }}" style="padding: 5px 5px"><a
-                        href="{{ url_for('main') }}"><img src="{{ url_for('static',filename='logo.png') }}"
-                            style="width:72px;" alt="NMS-logo"></a></a>
+                <a class="navbar-brand" href="{{ url_for('search_bp.search_problems') }}" style="padding: 5px 5px"><a
+                        href="{{ url_for('search_bp.search_problems') }}"><img
+                            src="{{ url_for('static',filename='logo.png') }}" style="width:72px;"
+                            alt="NMS-logo"></a></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     {% for item in navigation %}
                     {% if item.children %}
                     <li class="dropdown {{ 'active' if active == item.active_key else '' }}">
-                        <a href="{{ item.url }}" class="dropdown-toggle" data-toggle="dropdown"
-                            role="button" aria-haspopup="true" aria-expanded="false">
+                        <a href="{{ item.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">
                             {{ item.label }} <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
@@ -149,7 +150,8 @@
 
 
     <p style="padding-left: 15px; padding-bottom: 0px; font-size:80%;">
-        <a href="{{ url_for('main') }}">{% trans %}Home{% endtrans %}</a>{% if navlinks %} &gt;{% endif %}
+        <a href="{{ url_for('search_bp.search_problems') }}">{% trans %}Home{% endtrans %}</a>{% if navlinks %} &gt;{%
+        endif %}
         {% for navlink in navlinks %}
         {% if navlink.url %}
         <a href="{% if navlink.params %}{{ url_for(navlink.url, **navlink.params) }}{% 

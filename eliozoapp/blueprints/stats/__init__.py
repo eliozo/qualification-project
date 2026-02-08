@@ -1,11 +1,14 @@
+from eliozo import mathBeautify
 from flask import Blueprint, render_template, json
 from eliozo_dao.stats_repository import (
     getSPARQLProblemCounts,
     getSPARQLProblemSolvedCounts,
     getSPARQLPropertyCount,
     getSPARQLActualValueCount,
-    getSPARQLMaxValueCount
+    getSPARQLMaxValueCount,
+    getAllTopicsTableSPARQL
 )
+
 
 stats_bp = Blueprint('stats_bp', __name__)
 
@@ -123,3 +126,38 @@ def getResults():
     }
 
     return render_template('stats_results.html', **template_context)
+
+
+@stats_bp.route('/topics_table', methods=['GET', 'POST'])
+def getTopicsTable():
+    x = getAllTopicsTableSPARQL()
+    topics_json = json.loads(x)
+    topics = []
+    
+    for item in topics_json['results']['bindings']:
+        t_id = item['topicIdentifier']['value']
+        t_name = item['topicName']['value']
+        t_desc = item['topicDescription']['value']
+        l1 = item['L1']['value']
+        l2 = item['L2']['value']
+        l3 = item['L3']['value']
+        l4 = item['L4']['value']
+        l5 = item['L5']['value']
+        
+        number = f"{l1}.{l2}.{l3}.{l4}.{l5}"
+        topics.append({
+            'number': number,
+            'name': mathBeautify(t_name),
+            'description': mathBeautify(t_desc)
+        })
+
+    template_context = {
+        'topics': topics,
+        'active': 'statistics',
+        'navlinks': [
+            {'title':'Statistics'}, 
+            {'url':'stats_bp.getTopicsTable', 'title':'Topics'}
+        ],
+        'title': 'Topics List'
+    }
+    return render_template('topics_table.html', **template_context)

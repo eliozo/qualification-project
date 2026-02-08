@@ -12,11 +12,7 @@ from eliozo_dao.problem_repository import (
 from collections import defaultdict
 from authlib.integrations.flask_client import OAuth
 
-
-
-
 from controllers.worksheets import getWorksheets, worksheet_wizard
-
 
 from blueprints.curriculum import curriculum_bp
 from blueprints.problems import problems_bp
@@ -26,20 +22,13 @@ from blueprints.references import references_bp
 from blueprints.search import search_bp
 from .navigation import get_navigation
 
-
 import logging
-# from babel.support import MissingTranslationError
-
 from flask_babel import Babel, gettext as original_gettext
 
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from werkzeug.wrappers import Response
 
-
 from eliozo_dao import FUSEKI_URL
-
-# Integrācija ar Jena Fuseki serveri
-
 
 
 def getProblemsByFiltersSPARQL(params, theOffset):
@@ -154,91 +143,6 @@ SELECT (COUNT(*) AS ?count) WHERE {{
     return x.text
 
 
-# def getSPARQLProblemCounts():
-#     url = FUSEKI_URL
-#     query = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-# PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-# PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-
-# SELECT ?country ?code ?olympiadName (COUNT(DISTINCT ?problem) AS ?ProblemCount)
-# WHERE {
-#   ?olympiad eliozo:olympiadName ?olympiadName ;
-#             eliozo:olympiadDescription ?olympiadDescription ;
-#             eliozo:olympiadCountry ?country ;
-#             eliozo:olympiadCode ?code .
-#   ?problem rdf:type eliozo:Problem ;
-#            eliozo:country ?country ;
-#            eliozo:olympiadCode ?code .
-#   FILTER (lang(?olympiadName) = "lv")
-#             FILTER (lang(?olympiadDescription) = "lv")
-# }
-# GROUP BY ?country ?code ?olympiadName"""
-#     myobj = {'query': query}
-#     head = {'Content-Type': 'application/x-www-form-urlencoded'}
-#     x = requests.post(url, myobj, head)
-#     return x.text
-
-
-# def getSPARQLProblemSolvedCounts():
-#     url = FUSEKI_URL
-#     query = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-# PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-# PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-
-# SELECT ?country ?code ?olympiadName (COUNT(DISTINCT ?problem) AS ?ProblemCount)
-# WHERE {
-#   ?olympiad eliozo:olympiadName ?olympiadName ;
-#             eliozo:olympiadDescription ?olympiadDescription ;
-#             eliozo:olympiadCountry ?country ;
-#             eliozo:olympiadCode ?code .
-#   ?problem rdf:type eliozo:Problem ;
-#            eliozo:problemSolution ?soln ;
-#            eliozo:country ?country ;
-#            eliozo:olympiadCode ?code .
-#   FILTER (lang(?olympiadName) = "lv")
-#             FILTER (lang(?olympiadDescription) = "lv")
-# }
-# GROUP BY ?country ?code ?olympiadName"""
-#     myobj = {'query': query}
-#     head = {'Content-Type': 'application/x-www-form-urlencoded'}
-#     x = requests.post(url, myobj, head)
-#     return x.text 
-
-
-
-
-
-# @app.route("/report/domains-by-qtype")
-# def domains_by_qtype():
-#     # If you already have the JSON, skip the request and pass it in directly
-#     r = requests.get(
-#         SPARQL_ENDPOINT,
-#         params={"query": SPARQL_QUERY, "format": "application/sparql-results+json"},
-#         timeout=30,
-#     )
-#     r.raise_for_status()
-#     sparql_json = r.json()
-
-#     domains, question_types, matrix = build_matrix(sparql_json)
-#     return render_template(
-#         "domain_qtype_table.html",
-#         domains=domains,
-#         question_types=question_types,
-#         matrix=matrix,
-#     )
-
-
-
-
-
-
-
-# def mathBeautify(a): # Izskaistina formulas ar MathJax Javascript bibliotēku
-#     b0 = re.sub(r"\$\$([^\$]+)\$\$", r"<p><span class='math display'>\[\1\]</span></p>", a) # Aizstāj vairākrindu formulas $$..$$
-#     b = re.sub(r"\$([^\$]+)\$", r"<span class='math inline'>\(\1\)</span>", b0) # Aizstāj inline formulas $...$ (Svarīga secība, kā aizstāj)
-#     return b
 
 
 def get_locale():
@@ -544,20 +448,6 @@ def create_app(test_config=None):
             data = myfile.read()
         return render_template('index.html', title="page", jsonfile=json.dumps(data))
 
-
-
-
-
-
-
-    
-
-    
-
-
-
-
-
     
     @app.route('/book_problems', methods=['GET', 'POST'])
     def getBook():
@@ -592,24 +482,6 @@ def create_app(test_config=None):
 
 
 
-
-
-
-
-
-
-
-
-    @app.route('/curriculum', methods=['GET', 'POST'])
-
-
-
-
-
-
-
-
-
     @app.route('/temp_langswitch', methods=['GET', 'POST'])
     def getTempLangswitch():
         current_problem = { 
@@ -628,11 +500,7 @@ def create_app(test_config=None):
         redirect_uri_for_callback = url_for('auth_callback', _external=True)
         return oauth.google.authorize_redirect(redirect_uri_for_callback)
 
-    # @app.route('/auth/callback')
-    # def auth_callback():
-    #     token = oauth.google.authorize_access_token()
-    #     user_info = oauth.google.parse_id_token(token)
-    #     return redirect(url_for('dashboard'))
+
 
     @app.route('/auth/callback')
     def auth_callback():

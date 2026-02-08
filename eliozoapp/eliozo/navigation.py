@@ -35,9 +35,7 @@ def get_navigation():
                 {'label': _('Olympiads'), 'endpoint': 'problems.getOlympiads'},
                 {'label': _('Video'), 'endpoint': 'problems.getVideo'},
             ]
-        },
-        # Topics and Concepts are commented out in original HTML, so omitting them here
-        
+        },        
         {
             'label': _('Order'),
             'active_key': 'order_by',
@@ -56,6 +54,7 @@ def get_navigation():
                 {'label': _('Problem Count'), 'endpoint': 'stats_bp.getProblemCounts'},
                 {'label': _('Property Usage'), 'endpoint': 'stats_bp.getPropertyCounts'},
                 {'label': _('Result Summary'), 'endpoint': 'stats_bp.getResults'},
+                {'label': _('Topics Table'), 'endpoint': 'stats_bp.getTopicsTable'},
             ]
         },
         {

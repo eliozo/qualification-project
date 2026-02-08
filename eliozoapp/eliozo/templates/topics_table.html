@@ -1,0 +1,24 @@
+{% extends 'global.html' %}
+
+{% block content %}
+<div class="col-sm-8 text-left">
+    <table class="tasks">
+        <thead>
+            <tr>
+                <th>{% trans %}Number{% endtrans %}</th>
+                <th>{% trans %}Topic Name{% endtrans %}</th>
+                <th>{% trans %}Description{% endtrans %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for topic in topics %}
+            <tr class="{{ loop.cycle('odd', 'even') }}">
+                <td>{{ topic.number }}</td>
+                <td>{{ topic.name | safe }}</td>
+                <td>{{ topic.description | safe }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
