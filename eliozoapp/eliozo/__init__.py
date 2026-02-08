@@ -16,12 +16,14 @@ from authlib.integrations.flask_client import OAuth
 
 
 from controllers.worksheets import getWorksheets, worksheet_wizard
-from controllers.search_controller import search_problems
+
+
 from blueprints.curriculum import curriculum_bp
 from blueprints.problems import problems_bp
 from blueprints.indexes import indexes_bp
 from blueprints.stats import stats_bp
 from blueprints.references import references_bp
+from blueprints.search import search_bp
 from .navigation import get_navigation
 
 
@@ -346,6 +348,7 @@ def create_app(test_config=None):
     app.register_blueprint(indexes_bp)
     app.register_blueprint(stats_bp)
     app.register_blueprint(references_bp)
+    app.register_blueprint(search_bp)
 
     @app.errorhandler(404)
     def page_not_found(e):
@@ -374,7 +377,7 @@ def create_app(test_config=None):
     def setLanguage():
         lang = request.args.get('lang')
         next_url = request.args.get('next')
-        next_url = '/eliozo' + request.args.get('next') if next_url else url_for('main')
+        next_url = '/eliozo' + request.args.get('next') if next_url else url_for('search_bp.search_problems')
 
         if lang == 'lv': 
             session['clickcount'] = session.get('clickcount', 0) + 1
@@ -394,7 +397,7 @@ def create_app(test_config=None):
         return send_from_directory(STATIC_IMAGE_ROOT, filename)
 
 
-    app.route('/', endpoint='main')(search_problems)
+
 
     # faceted browse
     @app.route('/filter')

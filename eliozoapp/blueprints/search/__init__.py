@@ -1,27 +1,28 @@
-import sys
+from flask import Blueprint, render_template, request, session, json
 import os
 from dotenv import load_dotenv
-from flask import render_template, request, session, json
 
-# Add path to weaviate_utils
-# Using the path provided by the user
-# sys.path.append("/Users/kapsitis/workspace-public/worksheet-generation-with-llms/scripts")
+# Add path to weaviate_utils if needed, or assume it's in python path
+# based on imports in other files, controllers seems to be a package
 from controllers.weaviate_utils import WeaviateUtils
 
 from eliozo.webmd_utils import fix_image_links, mathBeautify
-from eliozo.search_helpers import (
+from eliozo_dao.search_repository import (
     replace_non_ascii_with_unicode_escape, 
     getProblemsByKeywordSPARQL, 
     getProblemsByRegexSPARQL
 )
 
+search_bp = Blueprint('search_bp', __name__)
+
+@search_bp.route('/', methods=['GET', 'POST'])
 def search_problems():
     keyword = request.args.get('keyword')
     if 'clickcount' in session: 
         clickcount = session['clickcount']
     else:
         clickcount = 0
-    print(f"clickcount = {clickcount}")
+    # print(f"clickcount = {clickcount}")
     
     if keyword is None or keyword == "":
         template_context = {
@@ -41,13 +42,6 @@ def search_problems():
         # override=True ensures we pick up the values from this file even if env has others
         #load_dotenv(env_path, override=True)
         
-        # Note: WeaviateUtils expects "WEAVIATE_URL", but .env usually has it. 
-        # Check what the .env usage expects. The user just said "The .env file... is located under..."
-        # WeaviateUtils constructor takes (weaviate_url, weaviate_api_key, openai_api_key).
-        # We assume the keys in .env are WEAVIATE_URL, WEAVIATE_API_KEY, OPENAI_API_KEY or similar.
-        # Let's try to fetch them. If different names, we might fail. 
-        # But typically they are standard. 
-        
         weaviate_url = os.getenv("WEAVIATE_URL")
         weaviate_api_key = os.getenv("WEAVIATE_API_KEY")
         openai_api_key = os.getenv("OPENAI_API_KEY")
@@ -56,8 +50,6 @@ def search_problems():
              print("Error: WEAVIATE_URL not found in .env")
         
         try:
-            # WeaviateUtils uses 'Problem' collection by default in get_problems?
-            # get_problems calls near_search("Problem", ...)
             with WeaviateUtils(weaviate_url, weaviate_api_key, openai_api_key) as wu:
                 limit = 10
                 # Use raw keyword for semantic search

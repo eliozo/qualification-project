@@ -1,18 +1,5 @@
-import platform
 import requests
-import urllib.parse
-import re
-
-FUSEKI_URL_LINUX = 'http://127.0.0.1:9080/jena-fuseki-war-4.7.0/abc/'
-
-# Get the operating system name
-os_name = platform.system()
-
-# Check if it's Windows
-if os_name == 'Windows':
-    FUSEKI_URL=FUSEKI_URL_LINUX
-else:
-    FUSEKI_URL=FUSEKI_URL_LINUX
+from . import FUSEKI_URL
 
 def replace_non_ascii_with_unicode_escape(text):
     non_ascii_characters = {'ā': '\\u0101', 'č': '\\u010D', 'ē': '\\u0113', 'ģ': '\\u0123', 'ī': '\\u012B',
@@ -54,17 +41,12 @@ LIMIT 10
 
     query = queryTemplate.format(pattern=escapedPattern, lcase=isLcase)
     myobj = {'query': query}
-    print(f"***** query in getProblemsByKeywordSPARQL('{thePattern}')")
-    print(query)
-    print("===== END =====")
+    # print(f"***** query in getProblemsByKeywordSPARQL('{thePattern}')")
+    # print(query)
+    # print("===== END =====")
 
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    print("===== THEEND =====")
     x = requests.post(url, myobj, head)
-    print("===== THETHEEND =====")
-    print(f"***** x.text in getProblemsByKeywordSPARQL('{thePattern}')")
-    print(x.text)
-    print("===== END =====")
 
     return x.text
 
@@ -98,16 +80,11 @@ LIMIT 10
 
     query = queryTemplate.format(pattern=escapedPattern, lcase=isLcase)
     myobj = {'query': query}
-    print(f"***** query in getProblemsByRegexSPARQL('{thePattern}')")
-    print(query)
-    print("===== END =====")
+    # print(f"***** query in getProblemsByRegexSPARQL('{thePattern}')")
+    # print(query)
+    # print("===== END =====")
 
     head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    print("===== THEEND =====")
     x = requests.post(url, myobj, head)
-    print("===== THETHEEND =====")
-    print(f"***** x.text in getProblemsByRegexSPARQL('{thePattern}')")
-    print(x.text)
-    print("===== END =====")
 
     return x.text

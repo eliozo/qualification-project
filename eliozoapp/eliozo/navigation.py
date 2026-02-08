@@ -20,7 +20,7 @@ def get_navigation():
     nav_items = [
         {
             'label': _('Home'),
-            'endpoint': 'main',
+            'endpoint': 'search_bp.search_problems',
             'active_key': 'main'
         },
         {
