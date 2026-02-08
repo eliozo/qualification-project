@@ -14,7 +14,8 @@
             {% for topic in topics %}
             <tr class="{{ loop.cycle('odd', 'even') }}">
                 <td>{{ topic.number }}</td>
-                <td>{{ topic.name | safe }}</td>
+                <td><a href="{{ url_for('indexes.getTopic', topicIdentifier=topic.identifier) }}">{{ topic.name | safe
+                        }}</a></td>
                 <td>{{ topic.description | safe }}</td>
             </tr>
             {% endfor %}

@@ -8,7 +8,8 @@ from eliozo_dao.indexes_repository import (
     getSPARQLconcepts,
     getTopicDetails,
     getAllTopicChildren,
-    getTopicProblemsSPARQL
+    getTopicProblemsSPARQL,
+    getAllTopicsTableSPARQL
 )
 
 indexes_bp = Blueprint('indexes', __name__)
@@ -305,3 +306,38 @@ def getTopic():
         'title': 'Tēma'
     }
     return render_template('topic_tasks_content.html', **template_context)
+
+
+@indexes_bp.route('/topics_table', methods=['GET', 'POST'])
+def getTopicsTable():
+    x = getAllTopicsTableSPARQL()
+    topics_json = json.loads(x)
+    topics = []
+    
+    for item in topics_json['results']['bindings']:
+        t_id = item['topicIdentifier']['value']
+        t_name = item['topicName']['value']
+        t_desc = item['topicDescription']['value']
+        l1 = item['L1']['value']
+        l2 = item['L2']['value']
+        l3 = item['L3']['value']
+        l4 = item['L4']['value']
+        l5 = item['L5']['value']
+        
+        number = f"{l1}.{l2}.{l3}.{l4}.{l5}"
+        topics.append({
+            'number': number,
+            'identifier': t_id,
+            'name': mathBeautify(t_name),
+            'description': mathBeautify(t_desc)
+        })
+
+    template_context = {
+        'topics': topics,
+        'active': 'order_by',
+        'navlinks': [
+            {'url':'indexes.getTopicsTable', 'title':'Topics Table'}
+        ],
+        'title': 'Topics List'
+    }
+    return render_template('topics_table.html', **template_context)

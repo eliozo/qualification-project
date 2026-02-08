@@ -44,6 +44,7 @@ def get_navigation():
                 {'label': _('by Method'), 'endpoint': 'indexes.getMethods'},
                 {'label': _('by Genre'), 'endpoint': 'indexes.getGenres'},
                 {'label': _('by Concept'), 'endpoint': 'indexes.getConcepts'},
+                {'label': _('Topics Table'), 'endpoint': 'indexes.getTopicsTable'},
             ]
         },
         {
@@ -54,7 +55,6 @@ def get_navigation():
                 {'label': _('Problem Count'), 'endpoint': 'stats_bp.getProblemCounts'},
                 {'label': _('Property Usage'), 'endpoint': 'stats_bp.getPropertyCounts'},
                 {'label': _('Result Summary'), 'endpoint': 'stats_bp.getResults'},
-                {'label': _('Topics Table'), 'endpoint': 'stats_bp.getTopicsTable'},
             ]
         },
         {
