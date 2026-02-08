@@ -135,10 +135,12 @@
                             {% trans %}Order{% endtrans %} <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{ url_for('getTopics') }}">{% trans %}by Topic{% endtrans %}</a></li>
-                            <li><a href="{{ url_for('getMethods') }}">{% trans %}by Method{% endtrans %}</a></li>
-                            <li><a href="{{ url_for('getGenres') }}">{% trans %}by Genre{% endtrans %}</a></li>
-                            <li><a href="{{ url_for('getConcepts') }}">{% trans %}by Concept{% endtrans %}</a></li>
+                            <li><a href="{{ url_for('indexes.getTopics') }}">{% trans %}by Topic{% endtrans %}</a></li>
+                            <li><a href="{{ url_for('indexes.getMethods') }}">{% trans %}by Method{% endtrans %}</a>
+                            </li>
+                            <li><a href="{{ url_for('indexes.getGenres') }}">{% trans %}by Genre{% endtrans %}</a></li>
+                            <li><a href="{{ url_for('indexes.getConcepts') }}">{% trans %}by Concept{% endtrans %}</a>
+                            </li>
                         </ul>
                     </li>
 

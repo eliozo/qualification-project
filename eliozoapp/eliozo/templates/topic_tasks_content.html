@@ -12,7 +12,7 @@
   <ol class="custom-list">
     {% for topic in topic_list %}
     <li data-label="{{ topic.topicNum }}">
-      <a href="{{ url_for('getTopic',topicIdentifier=topic.prefLabel)}}">{{ topic.topicName | safe }}</a>
+      <a href="{{ url_for('indexes.getTopic',topicIdentifier=topic.prefLabel)}}">{{ topic.topicName | safe }}</a>
     </li>
     {% endfor %}
   </ol>

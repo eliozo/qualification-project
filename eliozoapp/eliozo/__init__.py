@@ -34,145 +34,14 @@ from werkzeug.wrappers import Response
 from eliozo_dao import FUSEKI_URL
 
 # Integrācija ar Jena Fuseki serveri
-def getSPARQLtopics():
-    url = FUSEKI_URL
-    queryTemplate = """
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT DISTINCT ?topicIdentifier ?topicNumber ?topicDescription ?topicName ?problemid WHERE { 
-    ?topic eliozo:topicID ?topicIdentifier .
-    ?topic eliozo:topicNumber ?topicNumber .
-    ?topic eliozo:topicDescription ?topicDescription .
-    ?topic eliozo:topicName ?topicName .
-    ?topic eliozo:sorter_L1 ?L1 ; 
-            eliozo:sorter_L2 ?L2 ; 
-            eliozo:sorter_L3 ?L3 ; 
-            eliozo:sorter_L4 ?L4 ; 
-            eliozo:sorter_L5 ?L5 .
-    OPTIONAL {
-        ?prob eliozo:topic ?topic ;
-            eliozo:problemID ?problemid . 
-    }.
-    } ORDER BY ?L1 ?L2 ?L3 ?L4 ?L5
-    """
-
-    myobj = {'query': queryTemplate }
-    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
-
-
-def getSPARQLconcepts():
-    url = FUSEKI_URL
-    queryTemplate = """
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT ?concept ?termLV ?termEN ?conceptID ?descLV ?problemID WHERE {
-  ?concept a eliozo:Concept ;
-           eliozo:termLV ?termLV ; 
-           eliozo:termEN ?termEN ;
-           eliozo:conceptID ?conceptID .
-  OPTIONAL {
-    ?concept eliozo:descLV ?descLV .
-  }
-  ?problem eliozo:concepts ?concept ;
-           eliozo:problemID ?problemID .
-} ORDER BY ?termEN ?problemID
-"""
-
-    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-    myobj = {'query': queryTemplate}
-    x = requests.post(url, myobj, head)
-    return x.text
-
-
-
-def getSPARQLmethods():
-    url = FUSEKI_URL
-    queryTemplate = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-
-SELECT ?methodID ?methodNumber ?methodName ?methodDescription ?problemid ?L1 ?L2 WHERE {
-  ?method a eliozo:Method ;
-            eliozo:methodID ?methodID ;
-            eliozo:methodNumber ?methodNumber ;
-            eliozo:methodName ?methodName ;
-            eliozo:methodDescription ?methodDescription ;
-            eliozo:sorter_L1 ?L1 ;
-            eliozo:sorter_L2 ?L2 .
-  OPTIONAL {
-    ?prob eliozo:method ?method ;
-    eliozo:problemID ?problemid . 
-  }
-} ORDER BY ?L1 ?L2
-"""
-    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-    myobj = {'query': queryTemplate}
-    x = requests.post(url, myobj, head)
-    return x.text
-
-
-
-def getSPARQLdomains():
-    url = FUSEKI_URL
-    queryTemplate = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT ?domainID ?domainNumber ?domainName ?domainDescription ?problemid ?L1 ?L2 ?L3 WHERE {
-  ?domain a eliozo:Domain ;
-            eliozo:domainID ?domainID ;
-            eliozo:domainNumber ?domainNumber ;
-            eliozo:domainName ?domainName ;
-            eliozo:domainDescription ?domainDescription ;
-            eliozo:sorter_L1 ?L1 ;
-            eliozo:sorter_L2 ?L2 ;
-            eliozo:sorter_L3 ?L3 .
-  OPTIONAL {
-    ?prob eliozo:subdomain ?domain ;
-    eliozo:problemID ?problemid . 
-  }
-} ORDER BY ?L1 ?L2 ?L3
-"""
-    head = {'Content-Type' : 'application/x-www-form-urlencoded'}
-    myobj = {'query': queryTemplate}
-    x = requests.post(url, myobj, head)
-    return x.text
 
 
 
 
 
 
-def getTopicProblemsSPARQL(topicID):
-    url = FUSEKI_URL
-    queryTemplate = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT DISTINCT ?problem ?problemid ?subtopic ?text ?grade
-WHERE {{
-    ?parent skos:prefLabel '{topic}' .
-    ?parent skos:narrower* ?subtopic .
-    ?problem eliozo:topic ?subtopic ;
-             eliozo:problemID ?problemid ;
-             eliozo:problemTextHtml ?text ;
-             eliozo:problemGrade ?grade .
-}} ORDER BY ?grade
-"""
 
-    myobj = {'query': queryTemplate.format(topic=topicID)}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
+
 
 
 
@@ -372,42 +241,7 @@ SELECT (COUNT(*) AS ?count) WHERE {{
 
 
 
-def getTopicDetails(topicID):
-    url = FUSEKI_URL
-    queryTemplate = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT ?topicID ?topicNumber ?topicName ?topicDesc WHERE {{
-  ?topic skos:prefLabel '{topic}' ;
-      eliozo:topicNumber ?topicNumber ;
-      eliozo:topicName ?topicName ;
-      eliozo:topicDescription ?topicDesc .
-}}
-"""
 
-    myobj = {'query': queryTemplate.format(topic=topicID)}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
-
-
-def getAllTopicChildren(topicID):
-    url = FUSEKI_URL
-    queryTemplate = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT ?topicID ?prefLabel ?num ?topicName WHERE {{
-  ?parentTopic skos:prefLabel '{topic}' .
-  ?topicID skos:broader ?parentTopic ;
-      skos:prefLabel ?prefLabel ;
-      eliozo:topicName ?topicName ;
-      eliozo:topicNumber ?num .
-}} ORDER BY ?num
-"""
 
 # def mathBeautify(a): # Izskaistina formulas ar MathJax Javascript bibliotēku
 #     b0 = re.sub(r"\$\$([^\$]+)\$\$", r"<p><span class='math display'>\[\1\]</span></p>", a) # Aizstāj vairākrindu formulas $$..$$
@@ -520,6 +354,9 @@ def create_app(test_config=None):
     app.register_blueprint(problems_bp)
     
     app.register_blueprint(curriculum_bp)
+    
+    from blueprints.indexes import indexes_bp
+    app.register_blueprint(indexes_bp)
 
     @app.errorhandler(404)
     def page_not_found(e):
@@ -720,298 +557,18 @@ def create_app(test_config=None):
 
 
 
-    @app.route('/topics', methods=['GET','POST'])
-    def getTopics():
-        data = json.loads(getSPARQLtopics())
-
-        all_topics = []
-        all_topic_info = dict() # Vārdnīca visai prasmju tabulai
-
-        current_topic = "NA"
-
-        for item in data['results']['bindings']:
-            # A new topic appears
-            if item['topicIdentifier']['value'] != current_topic:
-                all_topics.append(item['topicIdentifier']['value']) # Pievienojam jaunu prasmi sarakstam all_topics
-                current_topic = item['topicIdentifier']['value'] # Atceramies pēdējo pievienoto vērtību, lai neiespraustu atkārtoti
-                current_topic_info = dict() # Vārdnīca vienai tabulas rindai
-                current_topic_info['topicIdentifier'] = current_topic
-                current_topic_info['topicNumber'] = item['topicNumber']['value']
-                number_items = item['topicNumber']['value'].split(".")
-
-                beautiful_description = mathBeautify(item['topicDescription']['value'])
-                current_topic_info['topicDescription'] = beautiful_description
-                current_topic_info['topicName'] = mathBeautify(item['topicName']['value'])
-                if "problemid" in item:
-                    current_topic_info['problems'] = [item['problemid']['value']]
-                else:
-                    current_topic_info['problems'] = []
-                all_topic_info[current_topic] = current_topic_info # Lielajā vārdnīcā iesprauž mazo vārdnīcu
-            else:
-                current_topic_info['problems'].append(item['problemid']['value']) # Pievieno tikai jauno uzdevuma ID
-
-        # domain_titles = {'1': 'Algebra', '2': 'Kombinatorika', '3': 'Ģeometrija', '4': 'Skaitļu teorija'}
-        structured_topics = []
-        current_LTopics = None
-        current_subtopics = None
-        current_subsubtopics = None
-        for topic in all_topics:
-            topicNumber = all_topic_info[topic]['topicNumber']
-            topicId = all_topic_info[topic]['topicIdentifier']
-
-            if topicNumber.endswith('.0.0.0.0'):
-                LTopics = []
-                current_LTopics = LTopics
-                L1_number = topicNumber[:-len('.0.0.0.0')]
-                L1_name = all_topic_info[topic]['topicName']
-                L1_desc = all_topic_info[topic]['topicDescription']
-                L1_prob = all_topic_info[topic]['problems']
-                structured_topics.append({'number':L1_number,
-                                          'topicId':topicId,
-                                          'name':L1_name,
-                                          'desc':L1_desc,
-                                          'prob':L1_prob,
-                                          'subtopics': LTopics})
-            elif topicNumber.endswith('.0.0.0'):
-                subtopics = []
-                current_subtopics = subtopics
-                L2_number = topicNumber[:-len('.0.0.0')]
-                L2_label = L2_number.replace('.', '_')
-                L2_name = all_topic_info[topic]['topicName']
-                L2_desc = all_topic_info[topic]['topicDescription']
-                L2_prob = all_topic_info[topic]['problems']
-                current_LTopics.append({'number':L2_number,
-                                        'topicId':topicId,
-                                        'label':L2_label,
-                                        'name':L2_name,
-                                        'desc':L2_desc,
-                                        'prob': L2_prob,
-                                        'subtopics': subtopics})
-            elif topicNumber.endswith('.0.0'):
-                subsubtopics = []
-                current_subsubtopics = subsubtopics
-                L3_number = topicNumber[:-len('.0.0')]
-                L3_name = all_topic_info[topic]['topicName']
-                L3_desc = all_topic_info[topic]['topicDescription']
-                L3_prob = all_topic_info[topic]['problems']
-                current_subtopics.append({'number':L3_number,
-                                          'topicId':topicId,
-                                          'name':L3_name,
-                                          'desc': L3_desc,
-                                          'prob': L3_prob,
-                                          'subtopics':subsubtopics})
-            else:
-                L45_number = topicNumber
-                if topicNumber.endswith('.0'):
-                    L45_number = topicNumber[:-len('.0')]
-                L45_name = all_topic_info[topic]['topicName']
-                L45_desc = all_topic_info[topic]['topicDescription']
-                L45_prob = all_topic_info[topic]['problems']
-                current_subsubtopics.append({'number':L45_number,
-                                             'topicId':topicId,
-                                             'name':L45_name, 
-                                             'desc': L45_desc, 
-                                             'prob':L45_prob})
-
-        template_context = {
-            'all_topics': all_topics,
-            'all_topic_info': all_topic_info,
-            'active': 'topics',
-            'navlinks': [
-                {
-                    'url': 'getTopics', 
-                    'title': 'Topics'
-                }
-            ],
-            'title': 'Tēmas',
-            'structured_topics': structured_topics
-        }
-
-        return render_template('topics_content.html', **template_context)
 
 
-    @app.route('/methods', methods=['GET', 'POST'])
-    def getMethods():
-        lang = session.get('lang', 'lv')
-        data = json.loads(getSPARQLmethods())
-
-        all_methods = []
-        all_methods_info = dict()
-
-        current_method = "NA"
-
-        for item in data['results']['bindings']:
-            if item['methodID']['value'] != current_method:
-                current_method = item['methodID']['value']
-                all_methods.append(current_method)
-
-                current_method_info = dict()
-
-                current_method_info['identifier'] = item['methodID']['value'][4:]
-                current_method_info['number'] = item['methodNumber']['value']
-                current_method_info['name'] = item['methodName']['value']
-                current_method_info['description'] = item['methodDescription']['value']
-
-                if "problemid" in item:
-                    current_method_info['problems'] = [item['problemid']['value']]
-                else:
-                    current_method_info['problems'] = []
-                all_methods_info[current_method] = current_method_info
-            else:
-                current_method_info['problems'].append(item['problemid']['value'])    
 
 
-        template_context = {
-            'active': 'order_by',
-            'all_methods': all_methods, 
-            'all_methods_info': all_methods_info,
-            'navlinks': [
-                { 'url': 'getMethods', 'title': 'Methods' }
-            ],
-            'title': 'Metodes'
-        }
-        return render_template('methods_content.html', **template_context)
     
 
-    @app.route('/genres', methods=['GET', 'POST'])
-    def getGenres():
-        lang = session.get('lang', 'lv')
-        data = json.loads(getSPARQLdomains())
-
-        all_genres = {'1':[], '2':[], '3':[], '4':[]}
-        all_genres_info = dict()
-
-        current_genre = "NA"
-
-        for item in data['results']['bindings']:
-            if item['domainNumber']['value'].endswith('0.0'):
-                pass
-
-            elif item['domainID']['value'] != current_genre:
-                current_genre = item['domainID']['value']
-                current_domain = item['L1']['value']
-                all_genres[current_domain].append(item['domainID']['value'])
-
-                current_genre_info = dict()
-                current_genre_info['domainIdentifier'] = item['domainID']['value'][4:]
-                current_genre_info['domainNumber'] = item['domainNumber']['value']
-                current_genre_info['domainName'] = item['domainName']['value']
-                beautiful_description = mathBeautify(item['domainDescription']['value'])
-                current_genre_info['domainDescription'] = beautiful_description
-                if "problemid" in item:
-                    current_genre_info['problems'] = [item['problemid']['value']]
-                else:
-                    current_genre_info['problems'] = []
-                all_genres_info[current_genre] = current_genre_info # Lielajā vārdnīcā iesprauž mazo vārdnīcu
-            else:
-                current_genre_info['problems'].append(item['problemid']['value']) # Pievieno tikai jauno uzdevuma ID
+    
 
 
-        template_context = {
-            'all_genres': all_genres,
-            'domain_names': {'1':'Alg', '2':'Comb', '3':'Geom', '4':'NT'},
-            'domain_keys': ['1', '2', '3', '4'],
-            'all_genres_info': all_genres_info,
-            'active': 'order_by',
-            'navlinks': [
-                {
-                    'url': 'getGenres', 
-                    'title': 'Genres'
-                }
-            ],
-            'title': 'Žanri'
-        }
-        return render_template('genres_content.html', **template_context)    
 
 
-    @app.route('/concepts', methods=['GET','POST'])
-    def getConcepts():
-        concepts_problems = json.loads(getSPARQLconcepts())
 
-        concept_list = []
-        current_concept = "NA"
-        current_problems = []
-        for item in concepts_problems['results']['bindings']:
-            concept = item['concept']['value']
-            if concept != current_concept:
-                termLV = item['termLV']['value']
-                termEN = item['termEN']['value']
-                conceptID = item['conceptID']['value']
-                descLV = ''
-                if 'descLV' in item:
-                    descLV = mathBeautify(item['descLV']['value'])
-
-                current_concept = concept
-                current_problems = [item['problemID']['value']]
-                concept_list.append({
-                    'termLV': termLV,
-                    'termEN': termEN,
-                    'conceptID': conceptID,
-                    'descLV': descLV,
-                    'problems': current_problems
-                })
-
-            else:
-                current_problems.append(item['problemID']['value'])
-        concept_list.append({
-                    'termLV': termLV,
-                    'termEN': termEN,
-                    'conceptID': conceptID,
-                    'descLV': descLV,
-                    'problems': current_problems})
-
-        template_context = {
-            'all_concepts': concept_list,
-            'active': 'order_by',
-            'navlinks': [
-                {
-                    'url': 'getConcepts', 
-                    'title': 'Concepts'
-                }
-            ],
-            'title': 'Jēdzieni'
-        }
-        return render_template('concepts_content.html', **template_context)
-
-    @app.route('/topic_tasks', methods=['GET','POST']) # Kontrolieris, kas iegūst prasmes kopā ar uzdevumiem
-    def getTopic():
-        topic = request.args.get('topicIdentifier')
-
-        topic_details = json.loads(getTopicDetails(topic))
-        parentNumber = topic_details['results']['bindings'][0]['topicNumber']['value']
-        parentName = topic_details['results']['bindings'][0]['topicName']['value']
-        parentDesc = topic_details['results']['bindings'][0]['topicDesc']['value']
-        parentDesc = mathBeautify(parentDesc)
-
-        all_topics = json.loads(getAllTopicChildren(topic))
-        topic_list = []
-        for topic_item in all_topics['results']['bindings']: # all_topics saraksts ar vārdnīcām
-            prefLabel = topic_item['prefLabel']['value']
-            topicName = topic_item['topicName']['value']
-            topicName = mathBeautify(topicName)
-            topicNum = topic_item['num']['value']
-            dd = {'prefLabel': prefLabel, 'topicNum': topicNum, 'topicName': topicName}
-            topic_list.append(dd)
-
-        data = json.loads(getTopicProblemsSPARQL(topic))
-        problem_list = []
-        for data_item in data['results']['bindings']:
-            problemTextHtml = data_item['text']['value']
-            problemTextHtml = fix_image_links(problemTextHtml)
-            problemTextHtml = mathBeautify(problemTextHtml)
-            problem_list.append({'problemid': data_item['problemid']['value'], 'text': problemTextHtml})
-
-        template_context = {
-            'topic': topic,
-            'parentNumber': parentNumber,
-            'parentName': parentName,
-            'parentDesc': parentDesc,
-            'problem_list': problem_list,
-            'topic_list' : topic_list,
-            'active': 'topics',
-            'title': 'Tēma'
-        }
-        return render_template('topic_tasks_content.html', **template_context)
     
     @app.route('/book_problems', methods=['GET', 'POST'])
     def getBook():

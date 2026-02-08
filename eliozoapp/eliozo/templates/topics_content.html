@@ -95,7 +95,7 @@
             {% for topic in all_topics %}
             <tr class="{{ loop.cycle('odd', 'even') }}">
                 <td>{{ all_topic_info[topic].topicNumber |safe }}</td>
-                <td><a href="{{ url_for('getTopic',topicIdentifier=topic) }}" title="{{ topic }}">{{
+                <td><a href="{{ url_for('indexes.getTopic',topicIdentifier=topic) }}" title="{{ topic }}">{{
                         all_topic_info[topic].topicName |safe }}</a></td>
                 <td>{{ all_topic_info[topic].topicDescription |safe }}</td>
                 <td>{% for problem in all_topic_info[topic].problems %} <a
