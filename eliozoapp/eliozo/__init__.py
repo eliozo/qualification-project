@@ -17,7 +17,6 @@ from authlib.integrations.flask_client import OAuth
 
 from controllers.worksheets import getWorksheets, worksheet_wizard
 from controllers.search_controller import search_problems
-from controllers.search_controller import search_problems
 from blueprints.curriculum import curriculum_bp
 from blueprints.problems import problems_bp
 from blueprints.indexes import indexes_bp
