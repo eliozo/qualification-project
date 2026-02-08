@@ -9,8 +9,8 @@
     <div class="problemDiv">
         <h3 class="problem">{{ problemid }}&nbsp;&nbsp;
             {% for lang in problem.available_langs %}
-            <a class="btn btn-xs btn-default" href="#" onclick="showLanguage('{{ lang }}'); return false;">{{ lang
-                }}</a>
+            <a class="btn btn-xs {{ 'btn-primary' if lang == problem.current_lang else 'btn-default' }} problem-lang-btn"
+                href="#" data-lang="{{ lang }}" onclick="showLanguage('{{ lang }}'); return false;">{{ lang }}</a>
             {% endfor %}
             <div class="info-icon" onclick="showPopup()">i</div>
             <div class="popup-overlay" onclick="closePopup()"></div>
@@ -54,6 +54,18 @@
                         div.style.display = 'block';
                     } else {
                         div.style.display = 'none';
+                    }
+                });
+
+                // Update button styles
+                const buttons = document.querySelectorAll('.problem-lang-btn');
+                buttons.forEach(btn => {
+                    if (btn.dataset.lang === lang) {
+                        btn.classList.remove('btn-default');
+                        btn.classList.add('btn-primary');
+                    } else {
+                        btn.classList.remove('btn-primary');
+                        btn.classList.add('btn-default');
                     }
                 });
             }
