@@ -7,57 +7,57 @@
         <div class="filter-box">
             <!-- Grade Filter -->
             <div class="filter" style="max-width: 140px;">
-                <b>{% trans %}Grade{% endtrans %}:</b><br/>
+                <b>{% trans %}Grade{% endtrans %}:</b><br />
                 {% for (val,lbl) in [('5','5'), ('6','6'), ('7', '7'), ('8', '8'),
                 ('9', '9'), ('10', '10'), ('11', '11'), ('12', '12'), ('-', 'NA')] %}
                 {% if val == params['grade'] %}
                 <label class="selected"><input type="radio" name="grade" checked="1" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl }}
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl }}
                     {% if all_counts['grade'] %} [{{ all_counts['grade'][val] }}]&nbsp; {% endif %}</label>
                 {% else %}
                 <label><input type="radio" name="grade" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl }}&nbsp;
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl }}&nbsp;
                     {% if all_counts['grade'] %} [{{ all_counts['grade'][val] }}]&nbsp; {% endif %}</label>
                 {% endif %}
-                {% if val in ['6', '8', '10', '12'] %}<br/>{% endif %}
+                {% if val in ['6', '8', '10', '12'] %}<br />{% endif %}
                 {% endfor %}
-                <small><a href="#" onclick=
-                    "document.querySelectorAll('input[name=grade]').forEach(el => {
+                <small><a href="#" onclick="document.querySelectorAll('input[name=grade]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
                     }); document.getElementById('searchForm').submit(); return false;">
-                {% trans %}Remove Filter{% endtrans %}</a></small>
+                        {% trans %}Remove Filter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
-         src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext">{% trans %}An olympiad problem usually belongs to some grade.{% endtrans %}
-    {% trans %}Problems in textbooks, contests or international olympiads are often suggested for multiple grades.{% endtrans %}</span></span>
+                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                    <span class="tltiptext">{% trans %}An olympiad problem usually belongs to some grade.{% endtrans %}
+                        {% trans %}Problems in textbooks, contests or international olympiads are often suggested for
+                        multiple grades.{% endtrans %}</span></span>
             </div>
 
             <div class="filter" style="max-width: 190px;">
-                <b>{% trans %}Source{% endtrans %}:</b><br/>
+                <b>{% trans %}Source{% endtrans %}:</b><br />
                 {% for (val,lbl) in olympiadTypeDict %}
                 {% if val == params['olympiad'] %}
                 <label class="selected"><input type="radio" name="olympiad" checked="1" value="{{ val }}"
-                onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
                     {% if all_counts['olympiad'] %} [{{ all_counts['olympiad'][val] }}]&nbsp; {% endif %}</label>
                 {% else %}
                 <label><input type="radio" name="olympiad" value="{{ val }}"
-                onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
                     {% if all_counts['olympiad'] %} [{{ all_counts['olympiad'][val] }}]&nbsp; {% endif %}</label>
                 {% endif %}
-                <br/>
+                <br />
                 {% endfor %}
-                <small><a href="#" onclick=
-                    "document.querySelectorAll('input[name=olympiad]').forEach(el => {
+                <small><a href="#" onclick="document.querySelectorAll('input[name=olympiad]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
                     }); document.getElementById('searchForm').submit(); return false;">
-                {% trans %}Remove Filter{% endtrans %}</a></small>
+                        {% trans %}Remove Filter{% endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
-         src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext">{% trans %}Regional or open olympiads cover fewer topics and require less preparation compared to others.{% endtrans %}
-        {% trans %}Contest problems could take longer as the time limit is several days.{% endtrans %}
-        {% trans %}A book is shown as source, if no other source is known.{% endtrans %}</span></span>
+                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                    <span class="tltiptext">{% trans %}Regional or open olympiads cover fewer topics and require less
+                        preparation compared to others.{% endtrans %}
+                        {% trans %}Contest problems could take longer as the time limit is several days.{% endtrans %}
+                        {% trans %}A book is shown as source, if no other source is known.{% endtrans %}</span></span>
             </div>
 
             <!-- Domain Filter -->
@@ -67,63 +67,72 @@
                 ('NT', 'NT'), ('-', 'NA')] %}
                 {% if val == params['domain'] %}
                 <label class="selected"><input type="radio" name="domain" checked="1" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl }}
-                {% if all_counts['domain'] %} [{{ all_counts['domain'][val] }}]&nbsp; {% endif %}
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl }}
+                    {% if all_counts['domain'] %} [{{ all_counts['domain'][val] }}]&nbsp; {% endif %}
                 </label>
                 {% else %}
                 <label><input type="radio" name="domain" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl }}
-                {% if all_counts['domain'] %} [{{ all_counts['domain'][val] }}]&nbsp; {% endif %}
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl }}
+                    {% if all_counts['domain'] %} [{{ all_counts['domain'][val] }}]&nbsp; {% endif %}
                 </label>
                 {% endif %}
-                <br/>
+                <br />
                 {% endfor %}
-                <small><a href="#" onclick=
-                    "document.querySelectorAll('input[name=domain]').forEach(el => {
+                <small><a href="#" onclick="document.querySelectorAll('input[name=domain]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
-                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{% endtrans %}</a></small>
+                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{%
+                        endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
-         src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext">{% trans %}Every problem belongs to a domain{% endtrans %}: <br/>
-    <b>Alg</b> - {% trans %}Algebra{% endtrans %},<br/>
-    <b>Comb</b> - {% trans %}Combinatorics{% endtrans %},<br/>
-    <b>Geom</b> - {% trans %}Geometry{% endtrans %},<br/>
-    <b>NT</b> - {% trans %}Number theory{% endtrans %}.</span></span>
+                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                    <span class="tltiptext">{% trans %}Every problem belongs to a domain{% endtrans %}: <br />
+                        <b>Alg</b> - {% trans %}Algebra{% endtrans %},<br />
+                        <b>Comb</b> - {% trans %}Combinatorics{% endtrans %},<br />
+                        <b>Geom</b> - {% trans %}Geometry{% endtrans %},<br />
+                        <b>NT</b> - {% trans %}Number theory{% endtrans %}.</span></span>
             </div>
 
-            <div class="filter"  style="max-width: 180px;">
+            <div class="filter" style="max-width: 180px;">
                 <b>{% trans %}Question{% endtrans %}:</b>
                 {% for (val,lbl) in [('FindAll','FindAll'), ('FindCount','FindCount'), ('FindOptimal', 'FindOptimal'),
                 ('FindExample','FindExample'),('Prove','Prove'),('ProveDisprove','ProveDisprove'),
                 ('Algorithm','Algorithm'),('ShortAnswer','ShortAnswer'), ('-', 'NA')] %}
                 {% if val == params['questionType'] %}
                 <label class="selected"><input type="radio" name="questionType" checked="1" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl }}
-                    {% if all_counts['questionType'] %} [{{ all_counts['questionType'][val] }}]&nbsp; {% endif %}</label>
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl }}
+                    {% if all_counts['questionType'] %} [{{ all_counts['questionType'][val] }}]&nbsp; {% endif
+                    %}</label>
                 {% else %}
                 <label><input type="radio" name="questionType" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl }}
-                    {% if all_counts['questionType'] %} [{{ all_counts['questionType'][val] }}]&nbsp; {% endif %}</label>
-                {% endif %}{% if not loop.last %}<br/>{% endif %}
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl }}
+                    {% if all_counts['questionType'] %} [{{ all_counts['questionType'][val] }}]&nbsp; {% endif
+                    %}</label>
+                {% endif %}{% if not loop.last %}<br />{% endif %}
                 {% endfor %}
-                <br/><small><a href="#" onclick=
-                    "document.querySelectorAll('input[name=questionType]').forEach(el => {
+                <br /><small><a href="#" onclick="document.querySelectorAll('input[name=questionType]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
-                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{% endtrans %}</a></small>
+                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{%
+                        endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
-         src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext">{% trans %}A question type implies the structure of a solution.{% endtrans %}
-        {% trans %}Every subitem (A,B,...) may have its own question type.{% endtrans %}<br/>
-    <b>FindAll</b> - {% trans %}Find all solutions, show that there are no others.{% endtrans %}<br/>
-    <b>FindCount</b> - {% trans %}Determine the count of answers or other objects.{% endtrans %}<br/>
-    <b>FindOptimal</b> - {% trans %}Find the largest, the smallest or the "best" solution.{% endtrans %}<br/>
-    <b>FindExample</b> - {% trans %}Provide any example satisfying the requirements.{% endtrans %}<br/>
-    <b>Prove</b> - {% trans %}Prove the given statement.{% endtrans %}<br/>
-    <b>ProveDisprove</b> - {% trans %}Prove or disprove the given statement.{% endtrans %}<br/>
-    <b>Algorithm</b> - {% trans %}Describe a procedure, a construction, a game strategy.{% endtrans %}<br/>
-    <b>ShortAnswer</b> - {% trans %}Enter an answer such as a number, a multiple choice or Yes/No.{% endtrans %}</span></span>
+                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                    <span class="tltiptext">{% trans %}A question type implies the structure of a solution.{% endtrans
+                        %}
+                        {% trans %}Every subitem (A,B,...) may have its own question type.{% endtrans %}<br />
+                        <b>FindAll</b> - {% trans %}Find all solutions, show that there are no others.{% endtrans
+                        %}<br />
+                        <b>FindCount</b> - {% trans %}Determine the count of answers or other objects.{% endtrans
+                        %}<br />
+                        <b>FindOptimal</b> - {% trans %}Find the largest, the smallest or the "best" solution.{%
+                        endtrans %}<br />
+                        <b>FindExample</b> - {% trans %}Provide any example satisfying the requirements.{% endtrans
+                        %}<br />
+                        <b>Prove</b> - {% trans %}Prove the given statement.{% endtrans %}<br />
+                        <b>ProveDisprove</b> - {% trans %}Prove or disprove the given statement.{% endtrans %}<br />
+                        <b>Algorithm</b> - {% trans %}Describe a procedure, a construction, a game strategy.{% endtrans
+                        %}<br />
+                        <b>ShortAnswer</b> - {% trans %}Enter an answer such as a number, a multiple choice or Yes/No.{%
+                        endtrans %}</span></span>
             </div>
 
             <div class="filter">
@@ -131,23 +140,23 @@
                 {% for (val,lbl) in methodDict %}
                 {% if val == params['method'] %}
                 <label class="selected"><input type="radio" name="method" checked="1" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
                     {% if all_counts['method'] %} [{{ all_counts['method'][val] }}]&nbsp; {% endif %}</label>
                 {% else %}
                 <label><input type="radio" name="method" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
                     {% if all_counts['method'] %} [{{ all_counts['method'][val] }}]&nbsp; {% endif %}</label>
                 {% endif %}
                 {% endfor %}
-                <br/><small><a href="#" onclick=
-                    "document.querySelectorAll('input[name=method]').forEach(el => {
+                <br /><small><a href="#" onclick="document.querySelectorAll('input[name=method]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
-                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{% endtrans %}</a></small>
+                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{%
+                        endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
-         src="{{ url_for('static',filename='blue_question_mark.png') }}">
-    <span class="tltiptext">{% trans %}Method used in a solution.{% endtrans %}
-    {% trans %}Unlike other metadata method is often unspecified.{% endtrans %}</span></span>
+                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                    <span class="tltiptext">{% trans %}Method used in a solution.{% endtrans %}
+                        {% trans %}Unlike other metadata method is often unspecified.{% endtrans %}</span></span>
             </div>
 
             <div class="filter" style="max-width: 160px;">
@@ -156,23 +165,24 @@
                 {% for (val,lbl) in solutionDict %}
                 {% if val == params['hasSolution'] %}
                 <label class="selected"><input type="radio" name="hasSolution" checked="1" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
                     {% if all_counts['hasSolution'] %} [{{ all_counts['hasSolution'][val] }}]&nbsp; {% endif %}</label>
                 {% else %}
                 <label><input type="radio" name="hasSolution" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
                     {% if all_counts['hasSolution'] %} [{{ all_counts['hasSolution'][val] }}]&nbsp; {% endif %}</label>
-                {% endif %}{% if not loop.last %}<br/>{% endif %}
+                {% endif %}{% if not loop.last %}<br />{% endif %}
                 {% endfor %}
 
-                <br/><small><a href="#" onclick=
-                    "document.querySelectorAll('input[name=hasSolution]').forEach(el => {
+                <br /><small><a href="#" onclick="document.querySelectorAll('input[name=hasSolution]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
-                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{% endtrans %}</a></small>
+                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{%
+                        endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
-         src="{{ url_for('static',filename='blue_question_mark.png') }}">
-        <span class="tltiptext">{% trans %}Problems having at least one solution.{% endtrans %}</span></span>
+                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                    <span class="tltiptext">{% trans %}Problems having at least one solution.{% endtrans
+                        %}</span></span>
             </div>
 
             <div class="filter" style="max-width: 160px;">
@@ -181,23 +191,24 @@
                 {% for (val,lbl) in solutionDict %}
                 {% if val == params['hasVideo'] %}
                 <label class="selected"><input type="radio" name="hasVideo" checked="1" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
                     {% if all_counts['hasVideo'] %} [{{ all_counts['hasVideo'][val] }}]&nbsp; {% endif %}</label>
                 {% else %}
                 <label><input type="radio" name="hasVideo" value="{{ val }}"
-                    onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
+                        onchange="document.getElementById('searchForm').submit();">{{ lbl[lang] }}
                     {% if all_counts['hasVideo'] %} [{{ all_counts['hasVideo'][val] }}]&nbsp; {% endif %}</label>
-                {% endif %}{% if not loop.last %}<br/>{% endif %}
+                {% endif %}{% if not loop.last %}<br />{% endif %}
                 {% endfor %}
 
-                 <br/><small><a href="#" onclick=
-                    "document.querySelectorAll('input[name=hasVideo]').forEach(el => {
+                <br /><small><a href="#" onclick="document.querySelectorAll('input[name=hasVideo]').forEach(el => {
                     el.checked = false;
                     el.parentElement.classList.remove('selected');
-                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{% endtrans %}</a></small>
+                    }); document.getElementById('searchForm').submit(); return false;">{% trans %}Remove Filter{%
+                        endtrans %}</a></small>
                 <span class="tltip"><img style="vertical-align: middle;width:12px;"
-         src="{{ url_for('static',filename='blue_question_mark.png') }}">
-        <span class="tltiptext">{% trans %}Problems with video-recorded solutions.{% endtrans %}</span></span>
+                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                    <span class="tltiptext">{% trans %}Problems with video-recorded solutions.{% endtrans
+                        %}</span></span>
 
             </div>
         </div>
@@ -208,19 +219,22 @@
         {% if curr_offset == myoffset %}
         <b>{{ curr_offset//10+1 }}</b>
         {% else %}
-        <a href="{{ url_for('getFilter',grade=params['grade'],olympiad=params['olympiad'],domain=params['domain'],questionType=params['questionType'],method=params['method'],hasSolution=params['hasSolution'],hasVideo=params['hasVideo'],offset=curr_offset) }}">{{ curr_offset//10+1 }}</a>
+        <a
+            href="{{ url_for('getFilter',grade=params['grade'],olympiad=params['olympiad'],domain=params['domain'],questionType=params['questionType'],method=params['method'],hasSolution=params['hasSolution'],hasVideo=params['hasVideo'],offset=curr_offset) }}">{{
+            curr_offset//10+1 }}</a>
         {% endif %}
         {% endfor %}
         {% endif %}
     </form>
 
-{% for problem in problems %}
-<h3 style="font-size: 120%; color: #1565C0;">{{ problem.problemid }}</h3>
+    {% for problem in problems %}
+    <h3 style="font-size: 120%; color: #1565C0;">{{ problem.problemid }}</h3>
 
-{{ problem.text | safe }}
+    {{ problem.text | safe }}
 
-<p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">{% trans %}More{% endtrans %}...</a></p>
-{% endfor %}
+    <p style="font-size:80% !important"><a href="{{ url_for('problems.getProblem',problemid=problem.problemid) }}">{%
+            trans %}More{% endtrans %}...</a></p>
+    {% endfor %}
 
 </div>
 {% endblock %}

@@ -1,24 +1,24 @@
 {% extends 'global.html' %}
 
 {% block content %}
-       <div class="col-sm-8 text-left">
-            <a href="{{ url_for('getArchive') }}" class="button">{% trans %}Back{% endtrans %}</a>
-            <div class="container">
-                {{jsonfile}}
-            </div>
-            <h2> A.Bērziņa grāmata</h2>
+<div class="col-sm-8 text-left">
+    <a href="{{ url_for('problems.getArchive') }}" class="button">{% trans %}Back{% endtrans %}</a>
+    <div class="container">
+        {{jsonfile}}
+    </div>
+    <h2> A.Bērziņa grāmata</h2>
 
-            {% for problem in problems %}
+    {% for problem in problems %}
 
-            <h3 style="font-size: 120%; color: #1565C0;">{{ problem.problemid }}</h3>
+    <h3 style="font-size: 120%; color: #1565C0;">{{ problem.problemid }}</h3>
 
-            {{ problem.text |safe }}
-            {% if problem.imagefile != '' %}
-            <p><img src="http://www.dudajevagatve.lv/static/eliozo/images/{{ problem.imagefile }}" width="250"/></p>
-            {% endif %}
-            <p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">
-                    Vairāk...
-            </a></p>
-            {% endfor %}
-        </div>
+    {{ problem.text |safe }}
+    {% if problem.imagefile != '' %}
+    <p><img src="http://www.dudajevagatve.lv/static/eliozo/images/{{ problem.imagefile }}" width="250" /></p>
+    {% endif %}
+    <p style="font-size:80% !important"><a href="{{ url_for('problems.getProblem',problemid=problem.problemid) }}">
+            Vairāk...
+        </a></p>
+    {% endfor %}
+</div>
 {% endblock %}

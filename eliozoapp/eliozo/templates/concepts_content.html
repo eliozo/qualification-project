@@ -23,7 +23,8 @@
                 <td>{{ concept.termEN }}</a></td>
                 <td>{{ concept.termLV }}</td>
                 <td>{% if concept.descLV != '' %} <small>{{ concept.descLV | safe }}</small><br /> {% endif %}
-                    {% for problem in concept.problems %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                    {% for problem in concept.problems %} <a
+                        href="{{ url_for('problems.getProblem',problemid=problem) }}">{{
                         problem }}</a>, {% endfor %}
                 </td>
             </tr>

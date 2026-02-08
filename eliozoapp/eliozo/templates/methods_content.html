@@ -3,23 +3,26 @@
 {% block content %}
 <div class="col-sm-8 text-left">
 
-<dl class="problem-list">
+        <dl class="problem-list">
 
-{% for method in all_methods %}            
-<dt class="{% if all_methods_info[method].number.endswith('.0') %}parent{% else %}child{% endif %}">{{ all_methods_info[method].number }}. {{ all_methods_info[method].name }}
-<span class="tltip"><img style="vertical-align: middle;width:12px;"
-src="{{ url_for('static',filename='blue_question_mark.png') }}">
-<span class="tltiptext"><tt class="metahelp">{{ all_methods_info[method].identifier }}:</tt> 
-{% if all_methods_info[method].description %} 
-<small>{{ all_methods_info[method].description | safe }}</small>
-{% endif %}
-</dt>
-<dd>{% for problem in all_methods_info[method].problems %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
-        problem }}</a>{%- if not loop.last %},{% endif %} {% endfor %}</td>
-</dd>
-{% endfor %}
+                {% for method in all_methods %}
+                <dt class="{% if all_methods_info[method].number.endswith('.0') %}parent{% else %}child{% endif %}">{{
+                        all_methods_info[method].number }}. {{ all_methods_info[method].name }}
+                        <span class="tltip"><img style="vertical-align: middle;width:12px;"
+                                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                                <span class="tltiptext"><tt class="metahelp">{{ all_methods_info[method].identifier
+                                                }}:</tt>
+                                        {% if all_methods_info[method].description %}
+                                        <small>{{ all_methods_info[method].description | safe }}</small>
+                                        {% endif %}
+                </dt>
+                <dd>{% for problem in all_methods_info[method].problems %} <a
+                                href="{{ url_for('problems.getProblem',problemid=problem) }}">{{
+                                problem }}</a>{%- if not loop.last %},{% endif %} {% endfor %}</td>
+                </dd>
+                {% endfor %}
 
-</dl>
+        </dl>
 
 </div>
 {% endblock %}

@@ -96,7 +96,7 @@
                                                 </span></span>
                                         <small>
                                                 {% for problem in all_topics_info[topic].problems %}
-                                                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                                                <a href="{{ url_for('problems.getProblem',problemid=problem) }}">{{
                                                         problem }}</a>{%- if not loop.last %},{% endif %}
                                                 {% endfor %}</small>
                                 </li>
@@ -131,7 +131,7 @@
                                                 </span></span>
                                         <small>
                                                 {% for problem in all_methods_info[method].problems %}
-                                                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                                                <a href="{{ url_for('problems.getProblem',problemid=problem) }}">{{
                                                         problem }}</a>{%- if not loop.last %},{% endif %}
                                                 {% endfor %}</small>
                                 </li>
@@ -162,7 +162,7 @@
                                                 </span></span>
                                         <small>
                                                 {% for problem in all_subdomains_info[subdomain].problems %}
-                                                <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                                                <a href="{{ url_for('problems.getProblem',problemid=problem) }}">{{
                                                         problem }}</a>{%- if not loop.last %},{% endif %}
                                                 {% endfor %}</small>
                                 </li>

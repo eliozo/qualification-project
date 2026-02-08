@@ -52,7 +52,8 @@
       {% endfor %}
     </div>
 
-    <p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problemid) }}">{% trans %}Hide
+    <p style="font-size:80% !important"><a href="{{ url_for('problems.getProblem',problemid=problemid) }}">{% trans
+        %}Hide
         solution{% endtrans %}</a></p>
 
 

@@ -87,7 +87,8 @@
 
     {{ problem.text | safe }}
 
-    <p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">{% trans
+    <p style="font-size:80% !important"><a href="{{ url_for('problems.getProblem',problemid=problem.problemid) }}">{%
+            trans
             %}More{% endtrans %}...</a></p>
     {% endfor %}
 

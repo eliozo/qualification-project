@@ -36,7 +36,7 @@
                 <div class="panel-body">
 
                     {% if L2_topic.prob %} {% for problem in L2_topic.prob %} <a
-                        href="{{ url_for('getProblem',problemid=problem) }}">{{
+                        href="{{ url_for('problems.getProblem',problemid=problem) }}">{{
                         problem }}</a>, {% endfor %} <br /> {% endif %}
 
                     {% for L3_topic in L2_topic.subtopics %}
@@ -45,7 +45,8 @@
                             src="{{ url_for('static',filename='blue_question_mark.png') }}">
                         <span class="tltiptext"><tt class="metahelp">{{ L3_topic.topicId }}:</tt> {{ L3_topic.desc |
                             safe }}</span></span>{% endif %} {% if L3_topic.prob %} : {% endif %}
-                    {% for problem in L3_topic.prob %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                    {% for problem in L3_topic.prob %} <a
+                        href="{{ url_for('problems.getProblem',problemid=problem) }}">{{
                         problem }}</a>, {% endfor %}
 
                     <br />
@@ -55,7 +56,8 @@
                             src="{{ url_for('static',filename='blue_question_mark.png') }}">
                         <span class="tltiptext"><tt class="metahelp">{{ L45_topic.topicId }}:</tt> {{ L45_topic.desc |
                             safe }}</span></span>{% endif %} {% if L45_topic.prob %} : {% endif %}
-                    {% for problem in L45_topic.prob %} <a href="{{ url_for('getProblem',problemid=problem) }}">{{
+                    {% for problem in L45_topic.prob %} <a
+                        href="{{ url_for('problems.getProblem',problemid=problem) }}">{{
                         problem }}</a>, {% endfor %}
                     <br />
                     {% endfor %}
@@ -97,7 +99,7 @@
                         all_topic_info[topic].topicName |safe }}</a></td>
                 <td>{{ all_topic_info[topic].topicDescription |safe }}</td>
                 <td>{% for problem in all_topic_info[topic].problems %} <a
-                        href="{{ url_for('getProblem',problemid=problem) }}">{{
+                        href="{{ url_for('problems.getProblem',problemid=problem) }}">{{
                         problem }}</a>, {% endfor %} </td>
             </tr>
             {% endfor %}

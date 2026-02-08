@@ -118,7 +118,8 @@
                     <li class="{{ 'active' if active == 'filter' else '' }}"><a href="{{ url_for('getFilter') }}">{%
                             trans %}Filters{% endtrans %}</a>
                     </li>
-                    <li class="{{ 'active' if active == 'archive' else '' }}"><a href="{{ url_for('getArchive') }}">{%
+                    <li class="{{ 'active' if active == 'archive' else '' }}"><a
+                            href="{{ url_for('problems.getArchive') }}">{%
                             trans %}Archive{% endtrans %}</a></li>
 
                     {#
@@ -155,7 +156,7 @@
                             <li><a href="{{ url_for('getPropertyCounts') }}">{% trans %}Property Usage{% endtrans %}</a>
                             </li>
                             <li><a href="{{ url_for('getResults') }}">{% trans %}Result Summary{% endtrans %}</a></li>
-                            <li><a href="{{ url_for('getVideo') }}">{% trans %}Video{% endtrans %}</a></li>
+                            <li><a href="{{ url_for('problems.getVideo') }}">{% trans %}Video{% endtrans %}</a></li>
                         </ul>
                     </li>
 

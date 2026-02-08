@@ -6,9 +6,9 @@
     {{jsonfile}}
   </div>
   <h3>{{ parentNumber }}. {{ parentName }}</h3>
-         {% if parentDesc != ''%}
-         <p style="font-size:90%">{{ parentDesc | safe }}</p>
-         {% endif %}
+  {% if parentDesc != ''%}
+  <p style="font-size:90%">{{ parentDesc | safe }}</p>
+  {% endif %}
   <ol class="custom-list">
     {% for topic in topic_list %}
     <li data-label="{{ topic.topicNum }}">
@@ -21,8 +21,8 @@
   {% for problem in problem_list %}
   <h3 style="font-size: 120%; color: #1565C0;">{{ problem.problemid }}</h3>
   <p style="margin-left:5%"> {{ problem.text | safe }}</p>
-    <p style="font-size:80% !important"><a href="{{ url_for('getProblem',problemid=problem.problemid) }}">
-        Vairāk...
+  <p style="font-size:80% !important"><a href="{{ url_for('problems.getProblem',problemid=problem.problemid) }}">
+      Vairāk...
     </a></p>
   {% endfor %}
 </div>
