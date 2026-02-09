@@ -95,8 +95,8 @@
             style="display: none; padding-left: 20px; border-left: 3px solid #eee;">
             {% for sub in subtopics %}
             <label style="font-weight: normal;">
-                <input type="checkbox" name="subtopics" value="{{ sub }}" {% if sub in wizard_data.get('subtopics', [])
-                    %}checked{% endif %}> {{ sub }}
+                <input type="checkbox" name="subtopics" value="{{ sub.id }}" {% if sub.id in wizard_data.get('subtopics', [])
+                    %}checked{% endif %}> {{ sub.name }}
             </label>
             {% endfor %}
         </div>
