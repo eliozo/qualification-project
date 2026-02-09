@@ -12,14 +12,13 @@ from eliozo_dao.problem_repository import (
 from collections import defaultdict
 from authlib.integrations.flask_client import OAuth
 
-from controllers.worksheets import getWorksheets, worksheet_wizard
-
 from blueprints.curriculum import curriculum_bp
 from blueprints.problems import problems_bp
 from blueprints.indexes import indexes_bp
 from blueprints.stats import stats_bp
 from blueprints.references import references_bp
 from blueprints.search import search_bp
+from blueprints.worksheets import worksheets_bp
 from .navigation import get_navigation
 
 import logging
@@ -253,13 +252,11 @@ def create_app(test_config=None):
     app.register_blueprint(stats_bp)
     app.register_blueprint(references_bp)
     app.register_blueprint(search_bp)
+    app.register_blueprint(worksheets_bp)
 
     @app.errorhandler(404)
     def page_not_found(e):
         return render_template('404.html'), 404
-
-    app.route("/worksheets", methods=['GET', 'POST'])(getWorksheets)
-    app.route("/worksheets/wizard/step/<int:step_id>", methods=['GET', 'POST'])(worksheet_wizard)
 
 
 

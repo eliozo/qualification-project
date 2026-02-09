@@ -59,7 +59,7 @@ def get_navigation():
         },
         {
             'label': _('Worksheets'),
-            'endpoint': 'getWorksheets',
+            'endpoint': 'worksheets.getWorksheets',
             'active_key': 'worksheets',
             'condition': show_worksheets
         },

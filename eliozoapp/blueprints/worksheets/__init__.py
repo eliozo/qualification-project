@@ -1,10 +1,13 @@
-from flask import Flask, render_template, abort, url_for, json, jsonify, request, session, redirect, send_from_directory
-from eliozoapp.eliozo_dao.indexes_repository import getWizardTopicsSPARQL
+from flask import Blueprint, render_template, abort, url_for, json, jsonify, request, session, redirect, send_from_directory
+from eliozo_dao.indexes_repository import getWizardTopicsSPARQL
 
+worksheets_bp = Blueprint('worksheets', __name__)
+
+@worksheets_bp.route('/worksheets', methods=['GET', 'POST'])
 def getWorksheets():
     # Clear previous wizard data if starting fresh, or just redirect
     # session['worksheet_wizard_data'] = {} # Uncomment if we want to force reset on fresh visit
-    return redirect(url_for('worksheet_wizard', step_id=1))
+    return redirect(url_for('worksheets.worksheet_wizard', step_id=1))
 
 def _process_sparql_topics(sparql_response):
     """
@@ -45,6 +48,7 @@ def _process_sparql_topics(sparql_response):
             
     return topics_map
 
+@worksheets_bp.route('/worksheets/wizard/step/<int:step_id>', methods=['GET', 'POST'])
 def worksheet_wizard(step_id):
     if 'worksheet_wizard_data' not in session:
         session['worksheet_wizard_data'] = {}
@@ -86,18 +90,18 @@ def worksheet_wizard(step_id):
 
         # Navigation
         if 'next' in request.form:
-            return redirect(url_for('worksheet_wizard', step_id=step_id + 1))
+            return redirect(url_for('worksheets.worksheet_wizard', step_id=step_id + 1))
         elif 'back' in request.form:
-            return redirect(url_for('worksheet_wizard', step_id=step_id - 1))
+            return redirect(url_for('worksheets.worksheet_wizard', step_id=step_id - 1))
         elif 'generate' in request.form:
             # Final submission
             return generate_worksheet_from_wizard(wizard_data)
 
     # GET request - valid step check
     if step_id < 1:
-        return redirect(url_for('worksheet_wizard', step_id=1))
+        return redirect(url_for('worksheets.worksheet_wizard', step_id=1))
     if step_id > 4:
-         return redirect(url_for('worksheet_wizard', step_id=4))
+         return redirect(url_for('worksheets.worksheet_wizard', step_id=4))
 
     # Breadcrumbs construction
     # Global template already includes "main" (Home), so we only need to append the specific page path.
@@ -115,7 +119,7 @@ def worksheet_wizard(step_id):
     # We pass a single navlink that represents the current state.
     # It points to the current wizard step (bolded by template because it is loop.last).
     navlinks = [
-        {'url': 'worksheet_wizard', 'params': {'step_id': step_id}, 'title': f'Worksheets {step_id} ({current_step_name})'}
+        {'url': 'worksheets.worksheet_wizard', 'params': {'step_id': step_id}, 'title': f'Worksheets {step_id} ({current_step_name})'}
     ]
 
     # Fetch dynamic topics data
