@@ -185,7 +185,10 @@ def create_app(test_config=None):
             problem_imagefile = ''
             if 'imagefile' in item:
                 problem_imagefile = item['imagefile']['value']
-            problem_number_value = item['problem_number']['value']
+            if 'problem_number' in item:
+                problem_number_value = item['problem_number']['value']
+            else:
+                problem_number_value = ''
             problemTextHtml = mathBeautify(item['text']['value'])
             problemTextHtml = fix_image_links(problemTextHtml)
             problemTextHtml = mathBeautify(problemTextHtml)

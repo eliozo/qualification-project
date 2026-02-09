@@ -2,11 +2,9 @@
 
 {% block content %}
 <div class="col-sm-8 text-left">
-    <a href="{{ url_for('problems.getArchive') }}" class="button">{% trans %}Back{% endtrans %}</a>
     <div class="container">
         {{jsonfile}}
     </div>
-    <h2> A.Bērziņa grāmata</h2>
 
     {% for problem in problems %}
 

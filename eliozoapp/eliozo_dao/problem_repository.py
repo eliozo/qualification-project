@@ -227,12 +227,13 @@ def getSPARQLBook(bookid, sectionid):
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     PREFIX eliozo:<http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problem ?text ?imagefile ?problemid WHERE {{
+    SELECT ?problem ?text ?imagefile ?problemid ?problem_number WHERE {{
       ?problem eliozo:problemBook '{bookid}' ;
                eliozo:problemBookSection '{sectionid}' ;
                eliozo:problemID ?problemid ;
                eliozo:problemTextHtml ?text .
       OPTIONAL {{ ?problem eliozo:hasImage ?imagefile . }}
+      OPTIONAL {{ ?problem eliozo:problem_number ?problem_number . }}
     }} ORDER BY ?problemid
     """
     myobj = {'query': queryTemplate.format(bookid=bookid, sectionid=sectionid)}
