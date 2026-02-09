@@ -44,31 +44,34 @@ def mathBeautify(a): # Izskaistina formulas ar MathJax Javascript bibliotēku
 
 def extract_latex(text):
     # Find all the LaTeX patterns and replace them with placeholders
-    # We use a more specific regex for display math to ensure we capture it correctly
-    # and handle it as a block element
+    # We prioritize display latex to ensure it captures block elements correctly
+    # before inline latex runs
     
-    # Note: re.findall returns strings, not match objects, so we need to be careful
-    # about which list we are iterating over.
-    
-    inline_latex = re.findall(r'\$[^\$]+\$', text)
+    # Use negative lookbehind and lookahead to ensure we match single $...$ and not part of $$...$$
+    inline_latex = re.findall(r'(?<!\$)\$[^\$]+\$(?!\$)', text)
     display_latex = re.findall(r'\$\$[^\$]+\$\$', text)
 
     placeholders = {}
     idx = 0
     
-    # Process display latex first to avoid inline capturing parts of it (though regex differs)
+    # Process display latex first
+    import uuid
     for latex in display_latex:
-        placeholder = f"\n\n@@LATEXPLACEHOLDER_{idx}@@\n\n"
-        placeholders[placeholder.strip()] = latex # Key is stripped because that's what we want to replace back
-        # But we replace with surrounding newlines to force block level
+        # Wrap in newlines and use UUID to ensure uniqueness and block element treatment
+        u = uuid.uuid4().hex
+        placeholder = f"\n\n@@LATEX_PH_{idx}_{u}@@\n\n"
+        placeholders[placeholder.strip()] = latex
         text = text.replace(latex, placeholder, 1)
         idx += 1
         
     for latex in inline_latex:
-        placeholder = f"@@LATEXPLACEHOLDER_{idx}@@"
-        placeholders[placeholder] = latex
-        text = text.replace(latex, placeholder, 1)
-        idx += 1
+        # Only replace if it still exists (might have been part of display latex matches)
+        if latex in text:
+            u = uuid.uuid4().hex
+            placeholder = f"@@LATEX_PH_{idx}_{u}@@"
+            placeholders[placeholder] = latex
+            text = text.replace(latex, placeholder, 1)
+            idx += 1
 
     return text, placeholders
 
@@ -76,7 +79,8 @@ def extract_latex(text):
 def replace_placeholders(text, placeholders):
     # Replace the placeholders with the original LaTeX content
     for placeholder, latex in placeholders.items():
-        text = text.replace(placeholder, latex)
+        escaped = latex.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        text = text.replace(placeholder, escaped)
     return text
 
 def proc_markdown(text):
