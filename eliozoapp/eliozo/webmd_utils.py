@@ -58,14 +58,14 @@ def extract_latex(text):
     
     # Process display latex first to avoid inline capturing parts of it (though regex differs)
     for latex in display_latex:
-        placeholder = f"\n\nLaTeXPlaceholder({idx})\n\n"
+        placeholder = f"\n\n@@LATEXPLACEHOLDER_{idx}@@\n\n"
         placeholders[placeholder.strip()] = latex # Key is stripped because that's what we want to replace back
         # But we replace with surrounding newlines to force block level
         text = text.replace(latex, placeholder, 1)
         idx += 1
         
     for latex in inline_latex:
-        placeholder = f"LaTeXPlaceholder({idx})"
+        placeholder = f"@@LATEXPLACEHOLDER_{idx}@@"
         placeholders[placeholder] = latex
         text = text.replace(latex, placeholder, 1)
         idx += 1
