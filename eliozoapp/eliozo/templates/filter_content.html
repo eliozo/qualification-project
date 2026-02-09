@@ -220,7 +220,7 @@
         <b>{{ curr_offset//10+1 }}</b>
         {% else %}
         <a
-            href="{{ url_for('getFilter',grade=params['grade'],olympiad=params['olympiad'],domain=params['domain'],questionType=params['questionType'],method=params['method'],hasSolution=params['hasSolution'],hasVideo=params['hasVideo'],offset=curr_offset) }}">{{
+            href="{{ url_for('filter.getFilter',grade=params['grade'],olympiad=params['olympiad'],domain=params['domain'],questionType=params['questionType'],method=params['method'],hasSolution=params['hasSolution'],hasVideo=params['hasVideo'],offset=curr_offset) }}">{{
             curr_offset//10+1 }}</a>
         {% endif %}
         {% endfor %}

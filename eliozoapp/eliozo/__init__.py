@@ -19,6 +19,7 @@ from blueprints.stats import stats_bp
 from blueprints.references import references_bp
 from blueprints.search import search_bp
 from blueprints.worksheets import worksheets_bp
+from blueprints.filter import filter_bp
 from .navigation import get_navigation
 
 import logging
@@ -28,120 +29,6 @@ from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from werkzeug.wrappers import Response
 
 from eliozo_dao import FUSEKI_URL
-
-
-def getProblemsByFiltersSPARQL(params, theOffset):
-    url = FUSEKI_URL
-    queryTemplate = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT ?problemid ?text ?grade WHERE {{
-  {extraClauses}
-  ?problem eliozo:problemID ?problemid ;
-           {grade}
-           {olympiad}
-           {domain}
-           {questionType}
-           {method}
-           {solution}
-           {video}
-      eliozo:problemTextHtml ?text .
-      
-      {fGrade} {fOlympiad} {fDomain} {fQuestionType} {fMethod} {fSolution} {fVideo}
-      
-      OPTIONAL {{
-        ?problem eliozo:problemGrade ?grade .
-      }}
-}} ORDER BY ?grade ?problemid LIMIT 10 OFFSET {offset}
-"""
-    theGrade = "" if params["grade"] in ["NA","-"] else f'eliozo:suggestedGrade {params["grade"]} ; '
-    theOlympiad = "" if params["olympiad"] in ["NA","-"] else f'eliozo:olympiadType "{params["olympiad"]}" ; '
-    theDomain = "" if params["domain"] in ["NA","-"] else f'eliozo:domain "{params["domain"]}" ; '
-    theQuestionType = "" if params["questionType"] in ["NA","-"] else f'eliozo:questionType "{params["questionType"]}" ; '
-    theMethod = "" if params["method"] in ["NA","-"] else f'eliozo:method ?mymethod ; '
-    theSolution = "" if params["hasSolution"] in ["NA","-"] else f'eliozo:problemSolution ?someSolution ; '
-    theVideo = "" if params["hasVideo"] in ["NA","-"] else f'eliozo:hasVideo ?someVideo ; '
-    theExtraClauses = "" if params["method"] in ["NA", "-"] else f'?mymethod skos:broader* {params["method"]} . '
-
-    theFGrade = "" if params["grade"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:suggestedGrade ?gg . }"
-    theFOlympiad = "" if params["olympiad"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:olympiadType ?oo . }"
-    theFDomain = "" if params["domain"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:domain ?dd . }"
-    theFQuestionType = "" if params["questionType"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:questionType ?qq . }"
-    theFMethod = "" if params["method"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:method ?mm . }"
-    theFSolution = "" if params["hasSolution"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:problemSolution ?ss . }"
-    theFVideo = "" if params["hasVideo"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:hasVideo ?vv . }"
-
-    q = queryTemplate.format(grade=theGrade, olympiad=theOlympiad,
-                             domain=theDomain, questionType=theQuestionType,
-                             method=theMethod, offset=theOffset,
-                             solution=theSolution, video=theVideo,
-                             extraClauses=theExtraClauses,
-                             fGrade=theFGrade, fOlympiad=theFOlympiad, fDomain=theFDomain,
-                             fQuestionType=theFQuestionType, fMethod=theFMethod,
-                             fSolution=theFSolution, fVideo=theFVideo)
-    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-    print(f"filter_query = {q}")
-    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-
-
-    myobj = {'query': q}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
-
-
-def getProblemCountsByFiltersSPARQL(params):
-    url = FUSEKI_URL
-    queryTemplate = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-SELECT (COUNT(*) AS ?count) WHERE {{
-  ?problem eliozo:problemID ?problemid ;
-           {grade}
-           {olympiad}
-           {domain}
-           {questionType}
-           {method} 
-           {solution}
-           {video} .
-           {fGrade} {fOlympiad} {fDomain} {fQuestionType} {fMethod} {fSolution} {fVideo}
-}}
-"""
-    theGrade = '' if params["grade"] in ["NA","-"] else f'eliozo:suggestedGrade {params["grade"]} ; '
-    theOlympiad = '' if params["olympiad"] in ["NA","-"] else f'eliozo:olympiadType "{params["olympiad"]}" ; '
-    theDomain = '' if params["domain"] in ["NA","-"] else f'eliozo:domain "{params["domain"]}" ; '
-    theQuestionType = '' if params["questionType"] in ["NA","-"] else f'eliozo:questionType "{params["questionType"]}" ; '
-    theMethod = '' if params["method"] in ["NA","-"] else f'eliozo:method ?mymethod . ?mymethod skos:broader* {params["method"]} ; '
-    theSolution = "" if params["hasSolution"] in ["NA","-"] else f'eliozo:problemSolution ?someSolution ; '
-    theVideo = "" if params["hasVideo"] in ["NA","-"] else f'eliozo:hasVideo ?someVideo ; '
-    theFGrade = "" if params["grade"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:suggestedGrade ?gg . }"
-    theFOlympiad = "" if params["olympiad"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:olympiadType ?oo . }"
-    theFDomain = "" if params["domain"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:domain ?dd . }"
-    theFQuestionType = "" if params["questionType"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:questionType ?qq . }"
-    theFMethod = "" if params["method"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:method ?mm . }"
-    theFSolution = "" if params["hasSolution"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:problemSolution ?ss . }"
-    theFVideo = "" if params["hasVideo"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:hasVideo ?vv . }"
-
-    q = queryTemplate.format(grade=theGrade, olympiad=theOlympiad,
-                             domain=theDomain, questionType=theQuestionType,
-                             method=theMethod, solution=theSolution, video=theVideo,
-                             fGrade=theFGrade, fOlympiad=theFOlympiad, fDomain=theFDomain,
-                             fQuestionType=theFQuestionType, fMethod=theFMethod,
-                             fSolution=theFSolution, fVideo=theFVideo)
-    myobj = {'query': q}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    # print('************')
-    # print(f'q = {q}')
-    # print("============")
-    x = requests.post(url, myobj, head)
-    # print(f'x = "{x.text}"')
-    return x.text
-
-
 
 
 def get_locale():
@@ -176,32 +63,9 @@ def create_app(test_config=None):
     # Create OAuth instance
     oauth = OAuth(app)
 
-    my_client_id= os.environ['GOOGLE_CLIENT_ID']
-    my_secret=os.environ['GOOGLE_CLIENT_SECRET']
-
-    # with open('/tmp/eliozo.txt', 'w') as f:
-    #     f.write(f"client_id={my_client_id}\n")
-    #     f.write(f"client_secret={my_secret}\n")
-
-    # Register Google OAuth client
-    # oauth.register(
-    #     name='google',
-    #     client_id= os.environ['GOOGLE_CLIENT_ID'],
-    #     client_secret=os.environ['GOOGLE_CLIENT_SECRET'],
-    #     access_token_url='https://oauth2.googleapis.com/token',
-    #     access_token_params=None,
-    #     authorize_url='https://accounts.google.com/o/oauth2/v2/auth',
-    #     authorize_params=None,
-    #     api_base_url='https://www.googleapis.com/oauth2/v2/',
-    #     userinfo_endpoint='https://openidconnect.googleapis.com/v1/userinfo',
-    #     client_kwargs={'scope': 'openid email profile'},
-    # )
-
     # Register Google OAuth client
     oauth.register(
         name='google',
-        #client_id= my_client_id,
-        #client_secret=my_secret,
         client_id=os.environ['GOOGLE_CLIENT_ID'].strip(),
         client_secret=os.environ['GOOGLE_CLIENT_SECRET'].strip(),
 
@@ -253,6 +117,7 @@ def create_app(test_config=None):
     app.register_blueprint(references_bp)
     app.register_blueprint(search_bp)
     app.register_blueprint(worksheets_bp)
+    app.register_blueprint(filter_bp)
 
     @app.errorhandler(404)
     def page_not_found(e):
@@ -297,145 +162,6 @@ def create_app(test_config=None):
         # Return file from $APP_ROOT/eliozo/static/eliozo/images/
         return send_from_directory(STATIC_IMAGE_ROOT, filename)
 
-
-
-
-    # faceted browse
-    @app.route('/filter')
-    def getFilter():
-        requestParams = ['grade', 'olympiad', 'domain', 'questionType', 'method', 'hasSolution', 'hasVideo']
-        params = dict()
-        all_counts = {'grade': dict(), 'olympiad': dict(), 'domain': dict(),
-                      'questionType': dict(), 'method': dict(), 'hasSolution': dict(), 'hasVideo': dict()}
-
-        for requestParam in requestParams:
-            requestVal = request.args.get(requestParam)
-            if requestVal is None:
-                requestVal = "NA"
-            params[requestParam] = requestVal
-
-        offset = request.args.get('offset')
-        if offset is None or offset == '':
-            offset = 0
-        else:
-            offset = int(offset)
-
-        problems = []
-
-        olympiadTypeDict = [('Contest', {'en':'Contest', 'lt':'Konkursas', 'lv':'Konkurss'}),
-                            ('Book', {'en':'Book', 'lt':'Knyga', 'lv':'Grāmata'}),
-                            ('RegionalOrOpen', {'en':'Regional/Open', 'lt':'Rajoninės/atviros', 'lv':'Reģionālās/atklātās'}),
-                            ('National', {'en':'National', 'lt':'Respublikinė', 'lv':'Nacionālā'}),
-                            ('TeamSelection', {'en':'Team selection', 'lt':'Atrankos', 'lv':'Papildsacensības'}),
-                            ('International', {'en':'International', 'lt':'Tarptautinė', 'lv':'Starptautiska'}),
-                            ('-', {'en':'NA', 'lt':'NA', 'lv':'NA'})]
-
-        methodDict = [('eliozo:MTH_MathematicalInduction', {'en':'Induction', 'lt':'Indukcija', 'lv':'Indukcija'}),
-                      ('eliozo:MTH_MeanValuePrinciple', {'en':'MeanValue', 'lt':'Vidutinė Vertė', 'lv':'Vid.Vērtība'}),
-                      ('eliozo:MTH_ExtremePrinciple', {'en':'Extreme element','lt':'Kraštinis Elementas', 'lv':'Ekstr.Elements'}),
-                      ('eliozo:MTH_InvariantMethod', {'en':'Invariant','lt':'Invariantas', 'lv':'Invariants'}),
-                      ('eliozo:MTH_ContradictionMethod', {'en':'Contradiction', 'lt':'Prieštaravimas', 'lv': 'Pretruna'}),
-                      ('eliozo:MTH_InterpretationMethod', {'en':'Interpretation', 'lt': 'Interpretacija', 'lv':'Interpretācija'}),
-                      ('eliozo:MTH_Transformations', {'en':'Transforms', 'lt':'Pertvarkymai', 'lv':'Pārveidojumi'}),
-                      ('eliozo:MTH_Augmentation', {'en':'Structure augmentation', 'lt':'Pagalbinės Konstrukcijos', 'lv':'Papildkonstrukcijas'}),
-                      ('eliozo:MTH_Algorithms', {'en':'Algorithms', 'lt':'Algoritmai', 'lv':'Algoritmi'}),
-                      ('-', {'en':'NA', 'lt':'NA', 'lv':'NA'})]
-
-        solutionDict = [('1', {'en':'Yes', 'lt':'Yra', 'lv':'Ir'}),
-                        ('-', {'en':'No', 'lt':'Nėra', 'lv':'Nav'})]
-
-        if all(value == 'NA' for value in params.values()):
-        # if grade == "NA" and olympiad == "NA" and  domain == "NA" and questionType == "NA" and method == "NA" and hasSolution == "NA" and hasVideo == "NA":
-            template_context = {
-                'problems': problems,
-                'active': 'filter',
-                'navlinks': [
-                    {
-                        'url': 'getFilter', 
-                        'title': 'Filters'
-                    }
-                ],
-                'params': params,
-                'all_counts': all_counts,
-                'olympiadTypeDict': olympiadTypeDict,
-                'methodDict': methodDict,
-                'solutionDict': solutionDict,
-                'title': 'Filtri'
-            }
-            return render_template('filter_content.html', **template_context)
-
-        else:
-            link = json.loads(getProblemsByFiltersSPARQL(params, offset))
-            for item in link['results']['bindings']:
-                problem_id_value = item['problemid']['value']
-                problem_text_value = mathBeautify(item['text']['value'])
-                problem_text_value = fix_image_links(problem_text_value)
-                d = {'problemid': problem_id_value, 'text': problem_text_value}
-                problems.append(d)
-
-            all_values = {'grade':['5', '6', '7', '8',
-                                   '9', '10', '11', '12', '-'],
-                          'olympiad':['Contest', 'Book', 'RegionalOrOpen',
-                                      'National', 'TeamSelection', 'International', '-'],
-                          'domain':['Alg', 'Comb', 'Geom', 'NT', '-'],
-                          'questionType':['FindAll', 'FindCount', 'FindOptimal', 'FindExample',
-                                          'Prove', 'ProveDisprove', 'Algorithm', 'ShortAnswer', '-'],
-                          'method':['eliozo:MTH_MathematicalInduction', 
-                                    'eliozo:MTH_MeanValuePrinciple', 
-                                    'eliozo:MTH_ExtremePrinciple',
-                                    'eliozo:MTH_InvariantMethod', 
-                                    'eliozo:MTH_ContradictionMethod', 
-                                    'eliozo:MTH_InterpretationMethod',
-                                    'eliozo:MTH_Transformations', 
-                                    'eliozo:MTH_Augmentation', 
-                                    'eliozo:MTH_Algorithms',
-                                    '-'],
-                          'hasSolution':['1', '-'],
-                          'hasVideo':['1', '-']}
-
-            for par in ['grade', 'olympiad', 'domain', 'questionType', 'method', 'hasSolution', 'hasVideo']:
-                params1 = params.copy()
-                for curr_val in all_values[par]:
-                    params1[par] = curr_val
-
-                    count_json = json.loads(getProblemCountsByFiltersSPARQL(params1))
-                    all_counts[par][curr_val] = count_json['results']['bindings'][0]['count']['value']
-
-            # if params['domain'] not in all_counts['domain']:
-            #     params['domain'] = ''
-            page_offsets = []
-            count_json = json.loads(getProblemCountsByFiltersSPARQL(params))
-            curr_filter_count = int(count_json['results']['bindings'][0]['count']['value'])
-
-            if curr_filter_count > 10:
-                current_offset = 0
-                while curr_filter_count - current_offset > 0:
-                    page_offsets.append(current_offset)
-                    current_offset += 10
-
-            print('======================')
-            print(f'all_counts = {all_counts}')
-            print('++++++++++++++++++++++')
-
-            template_context = {
-                'problems': problems,
-                'params': params,
-                'all_counts': all_counts,
-                'olympiadTypeDict': olympiadTypeDict,
-                'methodDict': methodDict,
-                'solutionDict': solutionDict,
-                'page_offsets': page_offsets,
-                'myoffset': offset,
-                'active': 'filter',
-                'navlinks': [
-                    {
-                        'url': 'getFilter', 
-                        'title': 'Filters'
-                    }
-                ],
-                'title': 'Filtri'
-            }
-            return render_template('filter_content.html', **template_context)
 
     # json 
     @app.route("/json")

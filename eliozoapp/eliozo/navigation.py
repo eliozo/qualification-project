@@ -25,7 +25,7 @@ def get_navigation():
         },
         {
             'label': _('Filters'),
-            'endpoint': 'getFilter',
+            'endpoint': 'filter.getFilter',
             'active_key': 'filter'
         },
         {
