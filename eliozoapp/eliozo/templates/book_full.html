@@ -1,0 +1,13 @@
+{% extends 'global.html' %}
+
+{% block content %}
+<div class="col-sm-8 text-left">
+    <div class="container">
+        <!-- <h1>{{ title }}</h1> -->
+
+        <div class="book-content">
+            {{ content|safe }}
+        </div>
+    </div>
+</div>
+{% endblock %}

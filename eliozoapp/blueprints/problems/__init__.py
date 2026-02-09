@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template, request, session, url_for, json
-from eliozo.webmd_utils import mathBeautify, fix_image_links
+import os
+from eliozo.webmd_utils import mathBeautify, fix_image_links, get_cached_book_content
 from eliozo_dao.problem_repository import (
     getSPARQLOlympiads,
     getSPARQLOlympiadTimeIDs,
@@ -458,4 +459,21 @@ def getVideo():
     }
 
     return render_template('video_content.html', **template_context)
+
+
+@problems_bp.route('/book_full', methods=['GET', 'POST'])
+def getBookFull():
+    subdir = request.args.get('subdir')
+    
+    problembase_root = os.getenv('PROBLEMBASE_ROOT')
+    
+    content = get_cached_book_content(subdir, problembase_root)
+    
+    template_context = {
+        'content': content,
+        'subdir': subdir,
+        'active': 'archive',
+        'title': 'Grāmata'
+    }
+    return render_template('book_full.html', **template_context)
 
