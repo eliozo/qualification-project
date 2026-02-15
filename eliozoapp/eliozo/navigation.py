@@ -59,9 +59,12 @@ def get_navigation():
         },
         {
             'label': _('Worksheets'),
-            'endpoint': 'worksheets.getWorksheets',
             'active_key': 'worksheets',
-            'condition': show_worksheets
+            'condition': show_worksheets,
+            'children': [
+                {'label': _('Worksheets'), 'endpoint': 'worksheets.getWorksheets'},
+                {'label': _('Login'), 'endpoint': 'login'},
+            ]
         },
         {
             'label': _('About Us'),
