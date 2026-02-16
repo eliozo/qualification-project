@@ -243,13 +243,14 @@ def getProblem():
         for item in video_data['results']['bindings']:
             video_title = item['videoTitle']['value']
             youtubeID = item['youtubeID']['value']
-            minutes = int(item['tstamp']['value']) // 60
-            if minutes < 10:
-                minutes = '0' + str(minutes)
-            seconds = int(item['tstamp']['value']) % 60
-            if seconds < 10:
-                seconds = '0' + str(seconds)
-            bookmarks.append({'tstamp': item['tstamp']['value'], 'bmtext': item['bmtext']['value'], 'minutes': minutes, 'sec': seconds}) 
+            if 'tstamp' in item:
+                minutes = int(item['tstamp']['value']) // 60
+                if minutes < 10:
+                    minutes = '0' + str(minutes)
+                seconds = int(item['tstamp']['value']) % 60
+                if seconds < 10:
+                    seconds = '0' + str(seconds)
+                bookmarks.append({'tstamp': item['tstamp']['value'], 'bmtext': item['bmtext']['value'], 'minutes': minutes, 'sec': seconds}) 
 
     metaitems = []
     problemYear = "NA"
