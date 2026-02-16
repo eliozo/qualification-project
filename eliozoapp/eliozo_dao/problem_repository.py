@@ -240,8 +240,9 @@ def getAllSPARQLVideos():
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemid ?text ?textHtml WHERE {
+    SELECT ?problemid ?text ?textHtml ?youtubeID WHERE {
         ?problem eliozo:hasVideo ?video .
+        ?video eliozo:videoYoutube ?youtubeID .
         ?problem eliozo:problemID ?problemid .
         ?problem eliozo:problemText ?text .
         ?problem eliozo:problemTextHtml ?textHtml .

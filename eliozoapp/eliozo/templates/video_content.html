@@ -1,13 +1,58 @@
 {% extends 'global.html' %}
 
 {% block content %}
-<div class="col-sm-8 text-left">
-        <a href="{{ url_for('search_bp.search_problems') }}" class="button">{% trans %}Back{% endtrans %}</a>
-        <ul>
+<div class="col-sm-12 text-left">
+        <div class="row" style="margin-top: 20px;">
                 {% for problem in all_problemids %}
-                <li><a href="{{ url_for('problems.getProblem',problemid=problem.problemID) }}">{{ problem.problemID
-                                }}</a>: <tt>{{ problem.text }}...</tt></li>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="margin-bottom: 20px;">
+                        <a href="{{ url_for('problems.getProblem', problemid=problem.problemID) }}"
+                                title="{{ problem.text }}">
+                                <div class="thumbnail" style="border: none; padding: 0;">
+                                        <img src="https://img.youtube.com/vi/{{ problem.youtubeID }}/mqdefault.jpg"
+                                                alt="{{ problem.problemID }}" style="width: 100%; display: block;">
+                                        <div class="caption text-center" style="padding: 5px;">
+                                                <small>{{ problem.problemID }}</small>
+                                        </div>
+                                </div>
+                        </a>
+                </div>
                 {% endfor %}
-        </ul>
+        </div>
+
+        {% if total_pages > 1 %}
+        <div class="text-center">
+                <nav>
+                        <ul class="pagination">
+                                {% set params = request.args.to_dict() %}
+
+                                {# Prev #}
+                                {% if page > 1 %}
+                                {% set _ = params.update({'page': page - 1}) %}
+                                <li>
+                                        <a href="{{ url_for('problems.getVideo', **params) }}">&laquo; Prev</a>
+                                </li>
+                                {% else %}
+                                <li class="disabled"><span>&laquo; Prev</span></li>
+                                {% endif %}
+
+                                {# Page Numbers: simple version, show all #}
+                                {% for p in range(1, total_pages + 1) %}
+                                {% set _ = params.update({'page': p}) %}
+                                <li class="{% if p == page %}active{% endif %}">
+                                        <a href="{{ url_for('problems.getVideo', **params) }}">{{ p }}</a>
+                                </li>
+                                {% endfor %}
+
+                                {# Next #}
+                                {% if page < total_pages %} {% set _=params.update({'page': page + 1}) %} <li>
+                                        <a href="{{ url_for('problems.getVideo', **params) }}">Next &raquo;</a>
+                                        </li>
+                                        {% else %}
+                                        <li class="disabled"><span>Next &raquo;</span></li>
+                                        {% endif %}
+                        </ul>
+                </nav>
+        </div>
+        {% endif %}
 </div>
 {% endblock %}

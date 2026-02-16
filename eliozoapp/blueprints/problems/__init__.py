@@ -437,6 +437,9 @@ def getProblemSolution():
 
 @problems_bp.route("/video")
 def getVideo():
+    page = request.args.get('page', 1, type=int)
+    per_page = 48  # Number of thumbnails per page
+    
     data = json.loads(getAllSPARQLVideos())
 
     all_problemids = []
@@ -445,18 +448,40 @@ def getVideo():
         problemID = item['problemid']['value']
         text = item['text']['value']
         text = text.replace("$$", "$")
-        text = text[:80]
-        # text = mathBeautify(text)
+        # text = mathBeautify(text)  # Commented out in original
         textHtml = item['textHtml']['value']
-        all_problemids.append({'problemID': problemID, 'text': text, 'textHtml': textHtml})
+        youtubeID = item.get('youtubeID', {}).get('value', '')
+        
+        if youtubeID:
+            all_problemids.append({
+                'problemID': problemID, 
+                'text': text, 
+                'textHtml': textHtml, 
+                'youtubeID': youtubeID
+            })
+
+    # Pagination logic
+    total_videos = len(all_problemids)
+    total_pages = (total_videos + per_page - 1) // per_page
+    
+    # Ensure page is within valid range
+    if page < 1: page = 1
+    if page > total_pages and total_pages > 0: page = total_pages
+    
+    start_idx = (page - 1) * per_page
+    end_idx = start_idx + per_page
+    
+    paginated_videos = all_problemids[start_idx:end_idx]
 
     template_context = {
-        'all_problemids' : all_problemids,
-        'active': 'statistics',
+        'all_problemids' : paginated_videos,
+        'page': page,
+        'total_pages': total_pages,
+        'active': 'archive',
         'navlinks': [
             {'url':'problems.getVideo', 'title':'Video'}
         ],
-        'title': 'Video'
+        'title': 'Video Galerija'
     }
 
     return render_template('video_content.html', **template_context)
