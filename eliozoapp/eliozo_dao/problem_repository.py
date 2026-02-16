@@ -201,6 +201,38 @@ def getSPARQLVideoBookmarks(arg):
     x = requests.post(url, myobj, head)
     return x.text
 
+
+def getSPARQLVideoBookmarks(arg):
+    url = FUSEKI_URL
+    queryTemplate = """
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+
+    SELECT ?problem ?youtubeID ?videoTitle ?tstamp ?bmtext WHERE {{
+        ?problem eliozo:problemID '{problemID}' .
+        ?problem eliozo:hasVideo ?video .
+        ?video eliozo:videoTitle ?videoTitle ;
+              eliozo:videoYoutube ?youtubeID .
+        OPTIONAL {{
+            ?video eliozo:videoBookmarks ?seq .
+            ?seq ?p ?bm .        
+            ?bm eliozo:videoBookmarkTstamp ?tstamp ;
+                eliozo:videoBookmarkText ?bmtext .
+        }}
+    }}
+    ORDER BY ?tstamp
+    """
+    myobj = {'query': queryTemplate.format(problemID=arg)}
+    head = {'Content-Type': 'application/x-www-form-urlencoded'}
+    x = requests.post(url, myobj, head)
+    return x.text
+
+
+
+
+
 def getAllSPARQLVideos():
     url = FUSEKI_URL
     queryTemplate = """
