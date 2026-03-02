@@ -27,6 +27,7 @@ from flask_babel import Babel, gettext as original_gettext
 
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from werkzeug.wrappers import Response
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 from eliozo_dao import FUSEKI_URL
 
@@ -66,8 +67,8 @@ def create_app(test_config=None):
     # Register Google OAuth client
     oauth.register(
         name='google',
-        client_id=os.environ['GOOGLE_CLIENT_ID'].strip(),
-        client_secret=os.environ['GOOGLE_CLIENT_SECRET'].strip(),
+        client_id=os.environ.get('GOOGLE_CLIENT_ID', '').strip(' "\''),
+        client_secret=os.environ.get('GOOGLE_CLIENT_SECRET', '').strip(' "\''),
 
         access_token_url='https://oauth2.googleapis.com/token',
         access_token_params=None,
@@ -223,7 +224,10 @@ def create_app(test_config=None):
 
     @app.route('/login')
     def login():
-        redirect_uri_for_callback = url_for('auth_callback', _external=True)
+        # Use HTTPS if the app is accessed via HTTPS
+        scheme = request.headers.get('X-Forwarded-Proto', 'http')
+        redirect_uri_for_callback = url_for('auth_callback', _external=True, _scheme=scheme)
+        # print(f"Redirect URI: {redirect_uri_for_callback}") # Debug
         return oauth.google.authorize_redirect(redirect_uri_for_callback)
 
 
@@ -238,7 +242,8 @@ def create_app(test_config=None):
         
         # Optional: Print to logs to see what you got
         if user_info:
-            print(f"User Email: {user_info.get('email')}")
+            # print(f"User Email: {user_info.get('email')}")
+            session['user'] = user_info
             
         return redirect(url_for('dashboard'))
     
@@ -265,6 +270,9 @@ def create_app(test_config=None):
         Response('Not Found', status=404),
         {'/eliozo': app.wsgi_app}
     )
+    
+    # Apply ProxyFix to handle HTTPS when behind a reverse proxy
+    app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
 
     # Use the custom_gettext function in templates
     app.jinja_env.globals.update(_=custom_gettext)
