@@ -63,7 +63,6 @@ def get_navigation():
             'condition': show_worksheets,
             'children': [
                 {'label': _('Worksheets'), 'endpoint': 'worksheets.getWorksheets'},
-                {'label': _('Login'), 'endpoint': 'login'},
             ]
         },
         {
@@ -76,6 +75,14 @@ def get_navigation():
             ]
         }
     ]
+
+    # Add login/logout based on session
+    if 'user' in session:
+        username = session['user'].get('name', 'User')
+        nav_items[5]['children'].append({'label': f"Welcome, {username}", 'endpoint': 'dashboard'})
+        nav_items[5]['children'].append({'label': _('Logout'), 'endpoint': 'logout'})
+    else:
+        nav_items[5]['children'].append({'label': _('Login'), 'endpoint': 'login'})
 
     # Process items to generate URLs and filter by condition
     final_nav = []

@@ -254,7 +254,8 @@ def create_app(test_config=None):
     @app.route('/logout')
     def logout():
         session.clear()
-        return redirect(url_for('index'))
+        session['clickcount'] = 0
+        return redirect(url_for('search_bp.search_problems'))
 
     @app.route('/dashboard')
     def dashboard():
