@@ -224,8 +224,10 @@ def create_app(test_config=None):
 
     @app.route('/login')
     def login():
-        # Use HTTPS if the app is accessed via HTTPS
-        scheme = request.headers.get('X-Forwarded-Proto', 'http')
+        # Use HTTPS if the app is accessed via HTTPS or non-localhost domain
+        is_local = request.host.startswith('127.0.0.1') or request.host.startswith('localhost')
+        default_scheme = 'http' if is_local else 'https'
+        scheme = request.headers.get('X-Forwarded-Proto', default_scheme)
         redirect_uri_for_callback = url_for('auth_callback', _external=True, _scheme=scheme)
         # print(f"Redirect URI: {redirect_uri_for_callback}") # Debug
         return oauth.google.authorize_redirect(redirect_uri_for_callback)
