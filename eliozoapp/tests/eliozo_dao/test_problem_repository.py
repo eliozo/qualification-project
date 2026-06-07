@@ -1,42 +1,59 @@
+"""Repository-level tests against an in-memory oxigraph store.
+
+Uses the ``hermetic_store`` fixture from ``tests/conftest.py``.
+"""
 
 import json
-import os
-import pytest
-from eliozo_dao.problem_repository import getSPARQLVideoBookmarks
 
-def test_get_video_bookmarks():
-    # Use environment variables if set, otherwise rely on default
-    # This test assumes a running Fuseki instance or appropriate mocking, 
-    # but as requested, it calls the real function.
-    
-    video_bookmarks_json = getSPARQLVideoBookmarks("LV.AMO.2011.5.1")
-    video_bookmarks = json.loads(video_bookmarks_json)
-    
-    # Expected structure verification
-    assert "head" in video_bookmarks
-    assert "vars" in video_bookmarks["head"]
-    assert video_bookmarks["head"]["vars"] == ["problem", "youtubeID", "videoTitle", "tstamp", "bmtext"]
-    
-    assert "results" in video_bookmarks
-    assert "bindings" in video_bookmarks["results"]
-    
-    bindings = video_bookmarks["results"]["bindings"]
-    assert len(bindings) == 8 # Verify total count as requested
-    
-    # Verify the first two items as specified in the request
-    # Note: The order returned by SPARQL is by ?tstamp (ORDER BY ?tstamp in the query)
-    # The example provided shows tstamp 5 then 45, which matches the order.
-    
-    item1 = bindings[0]
-    assert item1["problem"]["value"] == "http://www.dudajevagatve.lv/eliozo#LV.AMO.2011.5.1"
-    assert item1["youtubeID"]["value"] == "tWx-UGFeuSA"
-    assert item1["videoTitle"]["value"] == "AMO2011, 5.klases 1.uzdevums"
-    assert item1["tstamp"]["value"] == "5"
-    assert item1["bmtext"]["value"] == "Uzdevuma saprašana: Piemērā abi reizinātāji ir īsti divciparu skaitļi."
-    
-    item2 = bindings[1]
-    assert item2["problem"]["value"] == "http://www.dudajevagatve.lv/eliozo#LV.AMO.2011.5.1"
-    assert item2["youtubeID"]["value"] == "tWx-UGFeuSA"
-    assert item2["videoTitle"]["value"] == "AMO2011, 5.klases 1.uzdevums"
-    assert item2["tstamp"]["value"] == "45"
-    assert item2["bmtext"]["value"] == "Uzdevuma saprašana: Kādēļ pilnā pārlase neder."
+from eliozo_dao.problem_repository import (
+    getSPARQLOlympiads,
+    getSPARQLProblem,
+    getSPARQLVideoBookmarks,
+)
+
+
+def test_get_olympiads_returns_lv_language(hermetic_store):
+    raw = getSPARQLOlympiads("lv")
+    data = json.loads(raw)
+    bindings = data["results"]["bindings"]
+    assert len(bindings) == 1, "fixture has exactly one olympiad tagged @lv"
+    row = bindings[0]
+    assert row["olympiadCountry"]["value"] == "LV"
+    assert row["olympiadCode"]["value"] == "AMO"
+    assert row["olympiadName"]["xml:lang"] == "lv"
+
+
+def test_get_olympiads_language_filter_works(hermetic_store):
+    """The query's ``FILTER (lang(?name)=...)`` must exclude other languages."""
+    lv_count = len(json.loads(getSPARQLOlympiads("lv"))["results"]["bindings"])
+    en_count = len(json.loads(getSPARQLOlympiads("en"))["results"]["bindings"])
+    assert lv_count == 1
+    assert en_count == 1
+    assert lv_count + en_count == 2  # fixture has one of each
+
+
+def test_get_problem_returns_bound_text(hermetic_store):
+    raw = getSPARQLProblem("LV.AMO.2011.5.1", "lv")
+    data = json.loads(raw)
+    bindings = data["results"]["bindings"]
+    assert len(bindings) == 1
+    assert "Test problem" in bindings[0]["problemTextHtml"]["value"]
+
+
+def test_get_video_bookmarks_returns_ordered_rows(hermetic_store):
+    raw = getSPARQLVideoBookmarks("LV.AMO.2011.5.1")
+    data = json.loads(raw)
+    bindings = data["results"]["bindings"]
+    assert len(bindings) == 2, "fixture has exactly two bookmarks"
+    # ORDER BY ?tstamp in the query — first row should be tstamp=5
+    assert bindings[0]["tstamp"]["value"] == "5"
+    assert bindings[1]["tstamp"]["value"] == "45"
+    for row in bindings:
+        assert row["youtubeID"]["value"] == "tWx-UGFeuSA"
+        assert row["videoTitle"]["value"] == "AMO2011, 5.klases 1.uzdevums"
+
+
+def test_get_problem_missing_returns_empty_bindings(hermetic_store):
+    raw = getSPARQLProblem("DOES.NOT.EXIST", "lv")
+    data = json.loads(raw)
+    assert data["results"]["bindings"] == []

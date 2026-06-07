@@ -1,5 +1,5 @@
-import requests
-from . import FUSEKI_URL
+from . import sparql_query
+
 
 def replace_non_ascii_with_unicode_escape(text):
     non_ascii_characters = {'ā': '\\u0101', 'č': '\\u010D', 'ē': '\\u0113', 'ģ': '\\u0123', 'ī': '\\u012B',
@@ -13,6 +13,7 @@ def replace_non_ascii_with_unicode_escape(text):
             replaced_text += char
     return replaced_text
 
+
 def getProblemsByKeywordSPARQL(thePattern, isCaseSensitive):
     if not isCaseSensitive:
         escapedPattern = thePattern.lower()
@@ -21,7 +22,6 @@ def getProblemsByKeywordSPARQL(thePattern, isCaseSensitive):
         escapedPattern = thePattern
         isLcase = ''
 
-    url = FUSEKI_URL
     queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
@@ -38,20 +38,10 @@ WHERE {{
 LIMIT 10
 """
     escapedPattern = escapedPattern.replace('"', '\\"')
+    return sparql_query(queryTemplate.format(pattern=escapedPattern, lcase=isLcase))
 
-    query = queryTemplate.format(pattern=escapedPattern, lcase=isLcase)
-    myobj = {'query': query}
-    # print(f"***** query in getProblemsByKeywordSPARQL('{thePattern}')")
-    # print(query)
-    # print("===== END =====")
-
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-
-    return x.text
 
 def getProblemsByRegexSPARQL(thePattern, isCaseSensitive):
-    # so far no escaping pattern
     if not isCaseSensitive:
         escapedPattern = thePattern.lower()
         isLcase = 'lcase'
@@ -59,7 +49,6 @@ def getProblemsByRegexSPARQL(thePattern, isCaseSensitive):
         escapedPattern = thePattern
         isLcase = ''
 
-    url = FUSEKI_URL
     queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
@@ -77,14 +66,4 @@ LIMIT 10
 """
     escapedPattern = escapedPattern.replace('"', '\\"')
     escapedPattern = escapedPattern.replace('\\', '\\\\')
-
-    query = queryTemplate.format(pattern=escapedPattern, lcase=isLcase)
-    myobj = {'query': query}
-    # print(f"***** query in getProblemsByRegexSPARQL('{thePattern}')")
-    # print(query)
-    # print("===== END =====")
-
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-
-    return x.text
+    return sparql_query(queryTemplate.format(pattern=escapedPattern, lcase=isLcase))
