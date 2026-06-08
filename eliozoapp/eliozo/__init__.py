@@ -29,8 +29,6 @@ from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from werkzeug.wrappers import Response
 from werkzeug.middleware.proxy_fix import ProxyFix
 
-from eliozo_dao import FUSEKI_URL
-
 
 def get_locale():
     locale = session.get('lang', 'lv')

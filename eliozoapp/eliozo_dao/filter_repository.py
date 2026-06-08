@@ -1,9 +1,7 @@
-import requests
-import json
-from . import FUSEKI_URL
+from . import sparql_query
+
 
 def getProblemsByFiltersSPARQL(params, theOffset):
-    url = FUSEKI_URL
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -20,9 +18,9 @@ SELECT ?problemid ?text ?grade WHERE {{
            {solution}
            {video}
       eliozo:problemTextHtml ?text .
-      
+
       {fGrade} {fOlympiad} {fDomain} {fQuestionType} {fMethod} {fSolution} {fVideo}
-      
+
       OPTIONAL {{
         ?problem eliozo:problemGrade ?grade .
       }}
@@ -53,19 +51,10 @@ SELECT ?problemid ?text ?grade WHERE {{
                              fGrade=theFGrade, fOlympiad=theFOlympiad, fDomain=theFDomain,
                              fQuestionType=theFQuestionType, fMethod=theFMethod,
                              fSolution=theFSolution, fVideo=theFVideo)
-    # print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-    # print(f"filter_query = {q}")
-    # print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-
-
-    myobj = {'query': q}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
+    return sparql_query(q)
 
 
 def getProblemCountsByFiltersSPARQL(params):
-    url = FUSEKI_URL
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -77,7 +66,7 @@ SELECT (COUNT(*) AS ?count) WHERE {{
            {olympiad}
            {domain}
            {questionType}
-           {method} 
+           {method}
            {solution}
            {video} .
            {fGrade} {fOlympiad} {fDomain} {fQuestionType} {fMethod} {fSolution} {fVideo}
@@ -104,11 +93,4 @@ SELECT (COUNT(*) AS ?count) WHERE {{
                              fGrade=theFGrade, fOlympiad=theFOlympiad, fDomain=theFDomain,
                              fQuestionType=theFQuestionType, fMethod=theFMethod,
                              fSolution=theFSolution, fVideo=theFVideo)
-    myobj = {'query': q}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    # print('************')
-    # print(f'q = {q}')
-    # print("============")
-    x = requests.post(url, myobj, head)
-    # print(f'x = "{x.text}"')
-    return x.text
+    return sparql_query(q)

@@ -9,6 +9,7 @@ setup(
     install_requires=[
         'flask',
         'weaviate-client>=4.0.0',
-        'python-dotenv'
+        'python-dotenv',
+        'pyoxigraph>=0.5',
     ],
 )

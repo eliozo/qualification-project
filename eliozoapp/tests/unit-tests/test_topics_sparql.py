@@ -1,88 +1,52 @@
-import pytest
-from unittest.mock import patch, MagicMock
-from eliozo_dao.indexes_repository import getWizardTopicsSPARQL
+"""Tests for the topics/wizard queries against the embedded oxigraph store."""
+
 import json
-import os
 
-def test_get_wizard_topics():
-    """
-    Test that getWizardTopicsSPARQL returns a valid JSON response with expected fields.
-    Default: Test against REAL Fuseki.
-    Set USE_MOCK_FUSEKI=true env var to test with a mock response.
-    """
-    use_mock_fuseki = os.environ.get('USE_MOCK_FUSEKI', 'false').lower() == 'true'
+from eliozo_dao.indexes_repository import (
+    getAllTopicsTableSPARQL,
+    getSPARQLtopics,
+    getWizardTopicsSPARQL,
+)
 
-    if not use_mock_fuseki:
-        print("\nTesting against REAL Fuseki instance...")
-        # Ensure FUSEKI_URL is reachable or this will fail.
-        # We assume the user has set up the tunnel or environment as per instructions.
-        response_text = getWizardTopicsSPARQL()
-    else:
-        print("\nTesting with MOCK Fuseki response...")
-        # Mock response data
-        mock_response_data = {
-            "head": {"vars": ["topicIdentifier", "topicNumber", "topicDescription", "topicName", "L1", "L2"]},
-            "results": {
-                "bindings": [
-                    {
-                        "topicIdentifier": {"type": "literal", "value": "ID_1"},
-                        "topicName": {"type": "literal", "value": "Algebra"},
-                        "L1": {"type": "literal", "value": "1"},
-                        "L2": {"type": "literal", "value": "0"}
-                    },
-                    {
-                        "topicIdentifier": {"type": "literal", "value": "ID_2"},
-                        "topicName": {"type": "literal", "value": "Linear Equations"},
-                        "L1": {"type": "literal", "value": "1"},
-                        "L2": {"type": "literal", "value": "1"}
-                    }
-                ]
-            }
-        }
-        
-        # Configure the mock
-        with patch('eliozo_dao.indexes_repository.requests.post') as mock_post:
-            mock_response = MagicMock()
-            mock_response.text = json.dumps(mock_response_data)
-            mock_post.return_value = mock_response
-            response_text = getWizardTopicsSPARQL()
-    
-    # Verify it's valid JSON
-    try:
-        data = json.loads(response_text)
-    except json.JSONDecodeError:
-        pytest.fail("getWizardTopicsSPARQL did not return valid JSON")
-        
-    # Verify basic structure of SPARQL response
-    assert 'results' in data
-    assert 'bindings' in data['results']
-    
-    bindings = data['results']['bindings']
-    
-    # For real Fuseki, we expect some data, but if the DB is empty, this might fail.
-    # We'll assert > 0 with a helpful message.
-    assert len(bindings) > 0, "No topics returned (Check DB content if testing real Fuseki)"
-    
-    if len(bindings) > 0:
-        # Check first item for expected fields
-        first_item = bindings[0]
-        expected_fields = ['topicIdentifier', 'topicName', 'L1', 'L2']
-        for field in expected_fields:
-            assert field in first_item, f"Missing field {field} in response"
-        
-        # Verify hierarchy logic (L1/L2 presence)
-        has_categories = False
-        has_subtopics = False
-        
-        for item in bindings:
-            l2_val = item['L2']['value']
-            if int(l2_val) == 0:
-                has_categories = True
-            else:
-                has_subtopics = True
-                
-        assert has_categories, "No top-level categories (L2=0) found"
-        # Subtopics might not exist in a minimal test DB, but in a real one they should.
-        # In mock mode, we force them.
-        if use_mock_fuseki:
-            assert has_subtopics, "No subtopics (L2>0) found"
+
+def test_wizard_topics_response_shape(hermetic_store):
+    """The wizard query should return valid SPARQL JSON with the expected vars."""
+    response_text = getWizardTopicsSPARQL()
+    data = json.loads(response_text)
+
+    assert "head" in data and "vars" in data["head"]
+    assert "results" in data and "bindings" in data["results"]
+
+    expected_vars = {"topicIdentifier", "topicNumber",
+                     "topicDescription", "topicName", "L1", "L2"}
+    assert set(data["head"]["vars"]) == expected_vars
+
+
+def test_wizard_topics_returns_top_level_categories_only(hermetic_store):
+    """The wizard query filters to L3=L4=L5=0 (top-level categories only)."""
+    response_text = getWizardTopicsSPARQL()
+    bindings = json.loads(response_text)["results"]["bindings"]
+    assert len(bindings) == 2, "fixture has two top-level topics"
+    for item in bindings:
+        # Wizard FILTER drops anything where L3/L4/L5 are non-zero
+        assert int(item["L2"]["value"]) == 0
+
+
+def test_all_topics_table_returns_full_hierarchy(hermetic_store):
+    """getAllTopicsTableSPARQL has no L3/L4/L5 filter, so it returns
+    everything the topic queries are designed to return."""
+    response_text = getAllTopicsTableSPARQL()
+    bindings = json.loads(response_text)["results"]["bindings"]
+    assert len(bindings) == 2
+    names = {b["topicName"]["value"] for b in bindings}
+    assert names == {"Algebra", "Geometry"}
+
+
+def test_get_topics_returns_distinct_rows(hermetic_store):
+    """getSPARQLtopics uses SELECT DISTINCT; with one Topic the count is 1
+    even though OPTIONAL would otherwise multiply rows."""
+    response_text = getSPARQLtopics()
+    bindings = json.loads(response_text)["results"]["bindings"]
+    # Two distinct topics in the fixture, each with a single (or zero) problem
+    topic_ids = {b["topicIdentifier"]["value"] for b in bindings}
+    assert topic_ids == {"ALG", "GEO"}

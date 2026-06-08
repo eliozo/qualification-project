@@ -1,9 +1,9 @@
-import requests
 import json
-from . import FUSEKI_URL
+
+from . import sparql_query
+
 
 def getSPARQLSources(lang):
-    url = FUSEKI_URL
     queryTemplate = """
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -18,12 +18,8 @@ def getSPARQLSources(lang):
       FILTER (lang(?srcDescription) = "{language}")
     }} ORDER BY ?srcLabel ?srcName
     """
-    actual_query = queryTemplate.format(language=lang)
-    myobj = {'query': actual_query}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-
-    items = json.loads(x.text)
+    response = sparql_query(queryTemplate.format(language=lang))
+    items = json.loads(response)
     itemData = []
     for rr in items['results']['bindings']:
         srcLabel = rr['srcLabel']['value']
