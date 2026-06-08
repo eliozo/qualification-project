@@ -120,9 +120,17 @@ def create_app(test_config=None):
     app.register_blueprint(worksheets_bp)
     app.register_blueprint(filter_bp)
 
+    @app.route('/health')
+    def health():
+        import flask as _flask
+        return jsonify({'status': 'ok', 'message': 'Flask is deployed and running correctly', 'flask_version': _flask.__version__}), 200
+
     @app.errorhandler(404)
     def page_not_found(e):
-        return render_template('404.html'), 404
+        try:
+            return render_template('404.html'), 404
+        except Exception:
+            return jsonify({'error': 'Not Found'}), 404
 
 
 
