@@ -1,0 +1,41 @@
+# systemd unit for the prog-validate MCP service (ASGI / streamable-http).
+#
+# Install:
+#   sudo cp deploy/prog-validate.service /etc/systemd/system/prog-validate.service
+#   # edit the paths below to match the server, then:
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now prog-validate
+#   sudo systemctl status prog-validate
+#
+# The Flask/Gunicorn deployment is NOT touched; this is a separate process that
+# Nginx reverse-proxies at /mcp/ (see deploy/nginx-mcp.conf).
+
+[Unit]
+Description=prog-validate MCP service (streamable-http, ASGI)
+After=network.target
+
+[Service]
+Type=simple
+
+# --- adjust these three to the server layout -----------------------------
+# WorkingDirectory MUST be the prog-validate dir (server.py does `import
+# coverage`/`import server` relative to it, and ./index, ./data resolve here).
+WorkingDirectory=/etc/our-flasks/eliozo/mcp/prog-validate
+# Python from the same virtualenv the Flask app uses (must have: mcp, PyYAML,
+# uvicorn). If missing:  <venv>/bin/pip install -r requirements.txt uvicorn
+ExecStartPre=/etc/our-flasks/eliozo/venv/bin/python build_index.py
+ExecStart=/etc/our-flasks/eliozo/venv/bin/python -m uvicorn asgi:app --host 127.0.0.1 --port 8001
+# -------------------------------------------------------------------------
+
+# Optional explicit data/index locations (default: ./data and ./index):
+# Environment=PROG_VALIDATE_DATA=/etc/our-flasks/eliozo/mcp/prog-validate/data
+# Environment=PROG_VALIDATE_INDEX=/etc/our-flasks/eliozo/mcp/prog-validate/index
+
+Restart=on-failure
+RestartSec=3
+# Runs as the same user that owns the deployment; adjust if needed.
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target

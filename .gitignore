@@ -1,5 +1,7 @@
 .DS_Store
 **/__pycache__/*
+*.pyc
+
 *_private.sh
 .idea/
 catalog-v001.xml
@@ -7,3 +9,17 @@ migration-script/resources/*.md
 logs/*
 eliozoapp/eliozo/static/eliozo/images/*.png
 eliozoapp/eliozo/static/books
+
+
+eliozoapp/venv/
+eliozoapp/instance/
+
+eliozoapp/.pytest_cache/
+eliozoapp/.coverage
+eliozoapp/htmlcov/
+
+eliozoapp/dist/
+eliozoapp/build/
+eliozoapp/*.egg-info/
+
+eliozoapp/mcp/prog-validate/index/
