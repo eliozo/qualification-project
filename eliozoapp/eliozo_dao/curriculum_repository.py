@@ -1,9 +1,7 @@
-import requests
-import json
-from . import FUSEKI_URL
+from . import sparql_query
 
-def getSPARQLCurriculumQtypeStats(olympiad, grades, years): 
-    url = FUSEKI_URL 
+
+def getSPARQLCurriculumQtypeStats(olympiad, grades, years):
     queryTemplate = """
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -24,27 +22,21 @@ def getSPARQLCurriculumQtypeStats(olympiad, grades, years):
     GROUP BY ?domain ?questionType
     ORDER BY ?domain ?questionType
     """
-    myobj = {'query': 
-        queryTemplate.format(olympiadCode=olympiad, 
-                             gradeMax = grades[1],
-                             gradeMin = grades[0],
-                             yearMax = years[1],
-                             yearMin = years[0])
-    }
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
+    return sparql_query(queryTemplate.format(olympiadCode=olympiad,
+                                             gradeMax=grades[1],
+                                             gradeMin=grades[0],
+                                             yearMax=years[1],
+                                             yearMin=years[0]))
 
 
 def getSPARQLOlympiadOverview(olympiad, grades, years):
-    url = FUSEKI_URL
     queryTemplate = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
 SELECT ?problemID ?topicID ?topicNumber ?topicName ?topicDescription ?L1 ?L2 ?L3 WHERE {{
-  ?problem eliozo:topic ?topic ; 
+  ?problem eliozo:topic ?topic ;
            eliozo:problemID ?problemID ;
            eliozo:olympiad '{olympiadCode}' ;
            eliozo:problemGrade ?grade ;
@@ -63,21 +55,14 @@ SELECT ?problemID ?topicID ?topicNumber ?topicName ?topicDescription ?L1 ?L2 ?L3
             eliozo:sorter_L5 ?L5 .
 }} ORDER BY ?L1 ?L2 ?L3 ?L4 ?L5
 """
-    myobj = {'query': 
-        queryTemplate.format(olympiadCode=olympiad, 
-                             gradeMax = grades[1],
-                             gradeMin = grades[0],
-                             yearMax = years[1],
-                             yearMin = years[0])
-    }
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
+    return sparql_query(queryTemplate.format(olympiadCode=olympiad,
+                                             gradeMax=grades[1],
+                                             gradeMin=grades[0],
+                                             yearMax=years[1],
+                                             yearMin=years[0]))
 
 
-
-def getSPARQLCurriculumMethods(olympiad, grades, years): 
-    url = FUSEKI_URL 
+def getSPARQLCurriculumMethods(olympiad, grades, years):
     queryTemplate = """
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -92,7 +77,7 @@ def getSPARQLCurriculumMethods(olympiad, grades, years):
     FILTER (?grade <= {gradeMax} && ?grade >= {gradeMin})
     FILTER (?year <= {yearMax} && ?year >= {yearMin})
     ?method a eliozo:Method ;
-                eliozo:methodNumber ?methodNumber ; 
+                eliozo:methodNumber ?methodNumber ;
                 eliozo:methodID ?methodID ;
                 eliozo:methodName ?methodName ;
                 eliozo:methodDescription ?methodDescription ;
@@ -100,20 +85,14 @@ def getSPARQLCurriculumMethods(olympiad, grades, years):
                 eliozo:sorter_L2 ?L2 .
     }} ORDER BY ?L1 ?L2
     """
-    myobj = {'query': 
-        queryTemplate.format(olympiadCode=olympiad, 
-                             gradeMax = grades[1],
-                             gradeMin = grades[0],
-                             yearMax = years[1],
-                             yearMin = years[0])
-    }
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
+    return sparql_query(queryTemplate.format(olympiadCode=olympiad,
+                                             gradeMax=grades[1],
+                                             gradeMin=grades[0],
+                                             yearMax=years[1],
+                                             yearMin=years[0]))
 
 
 def getSPARQLCurriculumSubdomains(olympiad, grades, years):
-    url = FUSEKI_URL
     queryTemplate = """
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -136,13 +115,8 @@ def getSPARQLCurriculumSubdomains(olympiad, grades, years):
               eliozo:sorter_L3 ?L3 .
     }} ORDER BY ?L1 ?L2 ?L3 ?problemID
     """
-    myobj = {'query':
-        queryTemplate.format(olympiadCode=olympiad,
-                             gradeMax=grades[1],
-                             gradeMin=grades[0],
-                             yearMax=years[1],
-                             yearMin=years[0])
-    }
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
+    return sparql_query(queryTemplate.format(olympiadCode=olympiad,
+                                             gradeMax=grades[1],
+                                             gradeMin=grades[0],
+                                             yearMax=years[1],
+                                             yearMin=years[0]))

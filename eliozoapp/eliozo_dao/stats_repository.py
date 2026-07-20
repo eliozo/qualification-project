@@ -1,10 +1,7 @@
-import requests
-import platform
-import json
-from eliozo_dao import FUSEKI_URL
+from eliozo_dao import sparql_query
+
 
 def getSPARQLProblemCounts():
-    url = FUSEKI_URL
     query = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -23,14 +20,10 @@ WHERE {
             FILTER (lang(?olympiadDescription) = "lv")
 }
 GROUP BY ?country ?code ?olympiadName"""
-    myobj = {'query': query}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
+    return sparql_query(query)
 
 
 def getSPARQLProblemSolvedCounts():
-    url = FUSEKI_URL
     query = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -50,14 +43,10 @@ def getSPARQLProblemSolvedCounts():
                 FILTER (lang(?olympiadDescription) = "lv")
     }
     GROUP BY ?country ?code ?olympiadName"""
-    myobj = {'query': query}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text 
+    return sparql_query(query)
 
 
 def getSPARQLPropertyCount(arg):
-    url = FUSEKI_URL
     queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -74,14 +63,10 @@ def getSPARQLPropertyCount(arg):
         actual_query = queryTemplate.format(propertyClause='')
     else:
         actual_query = queryTemplate.format(propertyClause=f'eliozo:{arg} ?dummy ; ')
-    myobj = {'query': actual_query}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
+    return sparql_query(actual_query)
 
 
 def getSPARQLActualValueCount(arg):
-    url = FUSEKI_URL
     queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -92,14 +77,10 @@ def getSPARQLActualValueCount(arg):
     ?problem rdf:type eliozo:Problem ;
             eliozo:{propertyName} ?tt .
     }}"""
-    actual_query = queryTemplate.format(propertyName=arg)
-    myobj = {'query': actual_query}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
+    return sparql_query(queryTemplate.format(propertyName=arg))
 
-def getSPARQLMaxValueCount(arg): 
-    url = FUSEKI_URL
+
+def getSPARQLMaxValueCount(arg):
     queryTemplate = """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -110,26 +91,20 @@ def getSPARQLMaxValueCount(arg):
     ?vv rdf:type eliozo:{propType} .
     }}
     """
-    
+
     if arg == 'questionType':
         propType = 'Question'
     elif arg == 'method':
         propType = 'Method'
     elif arg == 'topic':
         propType = 'Topic'
-    elif arg == 'subdomain': 
+    elif arg == 'subdomain':
         propType = 'Domain'
     elif arg == 'concepts':
         propType = 'Concept'
-    elif arg == 'olympiad': 
+    elif arg == 'olympiad':
         propType = 'Olympiad'
     else:
         propType = 'Question'
 
-    actual_query = queryTemplate.format(propType=propType)
-    myobj = {'query': actual_query}
-    head = {'Content-Type': 'application/x-www-form-urlencoded'}
-    x = requests.post(url, myobj, head)
-    return x.text
-
-
+    return sparql_query(queryTemplate.format(propType=propType))

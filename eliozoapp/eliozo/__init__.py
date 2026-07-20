@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, abort, url_for, json, jsonify, request, session, redirect, send_from_directory
+from flask import Flask, render_template, abort, url_for, json, jsonify, request, session, redirect
 from flask_babel import Babel, _
 import json
 import html
@@ -25,11 +25,7 @@ from .navigation import get_navigation
 import logging
 from flask_babel import Babel, gettext as original_gettext
 
-from werkzeug.middleware.dispatcher import DispatcherMiddleware
-from werkzeug.wrappers import Response
 from werkzeug.middleware.proxy_fix import ProxyFix
-
-from eliozo_dao import FUSEKI_URL
 
 
 def get_locale():
@@ -120,9 +116,17 @@ def create_app(test_config=None):
     app.register_blueprint(worksheets_bp)
     app.register_blueprint(filter_bp)
 
+    @app.route('/health')
+    def health():
+        import flask as _flask
+        return jsonify({'status': 'ok', 'message': 'Flask is deployed and running correctly', 'flask_version': _flask.__version__}), 200
+
     @app.errorhandler(404)
     def page_not_found(e):
-        return render_template('404.html'), 404
+        try:
+            return render_template('404.html'), 404
+        except Exception:
+            return jsonify({'error': 'Not Found'}), 404
 
 
 
@@ -143,8 +147,7 @@ def create_app(test_config=None):
     @app.route('/setlang')
     def setLanguage():
         lang = request.args.get('lang')
-        next_url = request.args.get('next')
-        next_url = '/eliozo' + request.args.get('next') if next_url else url_for('search_bp.search_problems')
+        next_url = request.args.get('next') or url_for('search_bp.search_problems')
 
         if lang == 'lv': 
             session['clickcount'] = session.get('clickcount', 0) + 1
@@ -158,13 +161,7 @@ def create_app(test_config=None):
 
         return redirect(next_url)
 
-    @app.route('/eliozo/static/eliozo/images/<path:filename>')
-    def eliozo_static_images(filename):
-        # Return file from $APP_ROOT/eliozo/static/eliozo/images/
-        return send_from_directory(STATIC_IMAGE_ROOT, filename)
-
-
-    # json 
+    # json
     @app.route("/json")
     def getJson():
         # Lasa failu
@@ -269,11 +266,6 @@ def create_app(test_config=None):
     
     db.init_app(app)
 
-    app.wsgi_app = DispatcherMiddleware(
-        Response('Not Found', status=404),
-        {'/eliozo': app.wsgi_app}
-    )
-    
     # Apply ProxyFix to handle HTTPS when behind a reverse proxy
     app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
 
