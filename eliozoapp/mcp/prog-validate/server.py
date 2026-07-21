@@ -238,10 +238,58 @@ def get_sr_matrix_impl(
 
 
 # --------------------------------------------------------------------------
+# Transporta drošība (DNS-rebinding aizsardzība)
+# --------------------------------------------------------------------------
+# MCP SDK pēc noklusējuma atļauj tikai localhost Host/Origin galvenes un noraida
+# pārējās ar 421 ("Invalid Host header") / 403 ("Invalid Origin"). Aiz TLS
+# reverse-proxy (Nginx) backends redz PUBLISKO resursdatoru
+# (Host: eliozo.dudajevagatve.lv), tāpēc bez šī allow-list neviens publiskais
+# pieprasījums netiek apkalpots — tieši tas izraisīja claude.ai savienojuma kļūdu.
+#
+# Aizsardzība paliek IESLĒGTA — atļaujam tikai konkrētās vērtības (drošāk nekā to
+# pilnībā izslēgt; ļaunprātīgs Host joprojām tiek noraidīts). Serviss ir tikai
+# lasāms un bez autentifikācijas. Vērtības pārrakstāmas ar env mainīgajiem
+# PROG_VALIDATE_ALLOWED_HOSTS / PROG_VALIDATE_ALLOWED_ORIGINS (komatatdalīti).
+
+def _saraksts_no_env(nosaukums: str, noklusejums: list[str]) -> list[str]:
+    raw = os.environ.get(nosaukums)
+    if raw is None:
+        return noklusejums
+    return [x.strip() for x in raw.split(",") if x.strip()]
+
+
+_ATLAUTIE_HOSTI = _saraksts_no_env(
+    "PROG_VALIDATE_ALLOWED_HOSTS",
+    ["eliozo.dudajevagatve.lv", "eliozo.dudajevagatve.lv:*",
+     "127.0.0.1:*", "localhost:*", "[::1]:*"],
+)
+_ATLAUTIE_ORIGINS = _saraksts_no_env(
+    "PROG_VALIDATE_ALLOWED_ORIGINS",
+    ["https://eliozo.dudajevagatve.lv", "https://claude.ai",
+     "http://127.0.0.1:*", "http://localhost:*", "http://[::1]:*"],
+)
+
+
+# --------------------------------------------------------------------------
 # MCP
 # --------------------------------------------------------------------------
 
-mcp = FastMCP("prog-validate")
+try:
+    from mcp.server.transport_security import TransportSecuritySettings
+
+    mcp = FastMCP(
+        "prog-validate",
+        transport_security=TransportSecuritySettings(
+            enable_dns_rebinding_protection=True,
+            allowed_hosts=_ATLAUTIE_HOSTI,
+            allowed_origins=_ATLAUTIE_ORIGINS,
+        ),
+    )
+except ImportError:
+    # Vecāks MCP SDK bez TransportSecuritySettings — tādās versijās nav arī
+    # noklusējuma DNS-rebinding aizsardzības, tāpēc publiskie pieprasījumi strādā
+    # bez papildu konfigurācijas.
+    mcp = FastMCP("prog-validate")
 
 
 @mcp.tool(
