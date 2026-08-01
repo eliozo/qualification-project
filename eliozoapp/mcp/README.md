@@ -169,3 +169,14 @@ claude mcp list        # jāparāda "Connected"
 **Lokāli (stdio), izstrādei bez izvietošanas** — sk.
 [`prog-validate/README.md`](prog-validate/README.md) 45. rindu (`mcpServers`
 konfigurācija ar `python server.py`).
+
+
+
+## Kā pārlūkot MCP servisu
+
+```
+winget install OpenJS.NodeJS.LTS
+node -v
+npx -y @modelcontextprotocol/inspector https://eliozo.dudajevagatve.lv/mcp
+```
+
