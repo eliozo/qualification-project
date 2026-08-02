@@ -9,7 +9,8 @@ var palaist ar uvicorn vai gunicorn (ar uvicorn worker):
 
 Lietotne apkalpo:
     /mcp            – MCP `streamable-http` protokols (claude.ai custom connector)
-    /api/v1/temati            – REST atkļūdošana
+    /api/v1/programmas         – REST atkļūdošana
+    /api/v1/temati             – REST atkļūdošana
     /api/v1/sr-matrix/{temats} – REST atkļūdošana
 
 Nginx reverse-proxy pārsūta `https://<host>/mcp/` → šo procesu (sk. deploy/).

@@ -36,6 +36,14 @@ MCP serviss, kas matemātikas satura vienībai (uzdevums, darba lapa, pierādīj
 
 Uzskaita servisā reģistrētās mācību programmas (kalendāros plānus). Sākumpunkts smalkajai (nedēļas/mēneša) klasifikācijai un atklājamībai — LLM aģents vispirms uzzina, kādi `program_id` vispār eksistē.
 
+> **Ieviests** (`prog-validate/server.py`), ar atkāpēm no šeit plānotā:
+> lauku nosaukumi ir latviski (kā pārējos rīkos), reģistrā līdzās kalendārajiem
+> plāniem (`tips: "stundu_plans"`) ir arī programmu paraugi (`tips: "paraugs"`),
+> kuriem nav ne `grade`, ne `span`, bet ir `klasu_grupas` un `apguves_limenis`.
+> Paralēlās klases ir atsevišķas programmas, sasaistītas ar lauku `kopa`, un
+> atbilde blakus `programmas` satur arī `kopas` sarakstu. Filtri: `tips`,
+> `klase`, `klasu_grupa`, `macibu_gads`. Sk. `prog-validate/README.md`.
+
 ```ts
 list_programs(input: {
   grade?: number,          // filtrs, piem. 7

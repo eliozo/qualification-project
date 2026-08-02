@@ -1,8 +1,10 @@
-# Manuālas pārklājuma korekcijas. Atslēga = programmas SR `id` (piem., "12.B2.SR5").
+# Manuālas pārklājuma korekcijas. Atslēga = programmas SR `id`, kas satur arī
+# programmu, jo tematu numuri dažādās programmās atkārtojas:
+#   <program_id>#T<temata nr>.B<bloka nr>.SR<sr nr>
 # Šeit ierakstītais pilnībā aizstāj leksisko heiristiku attiecīgajam SR.
 #
 # parklajums:
-#   "12.B2.SR5":
+#   "lv.skola2030.mat1#T12.B2.SR5":
 #     statuss: nav_atrasts        # pilns | dalejs | tikai_pieminets | nav_atrasts
 #     vietas: []
 #     komentars: "Nav ne plānojuma tabulā, ne stundu aprakstos, ne darba lapās."

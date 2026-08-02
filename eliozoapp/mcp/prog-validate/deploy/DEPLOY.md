@@ -48,7 +48,8 @@ claude.ai ──HTTPS──> Nginx ──/eliozo──> Gunicorn (WSGI)  Flask  
 
 ```bash
 # REST (lokāli uz servera):
-curl -s http://127.0.0.1:8001/api/v1/temati | head -c 200
+curl -s http://127.0.0.1:8001/api/v1/programmas | head -c 200
+curl -s "http://127.0.0.1:8001/api/v1/temati?programma=visas" | head -c 200
 
 # MCP handshake caur publisko HTTPS:
 curl -s -X POST https://eliozo.dudajevagatve.lv/mcp \
@@ -59,8 +60,8 @@ curl -s -X POST https://eliozo.dudajevagatve.lv/mcp \
 ```
 
 claude.ai pusē: **Settings → Connectors → Add custom connector**, URL
-`https://eliozo.dudajevagatve.lv/mcp`. Rīki `get_sr_matrix` un `list_temati`
-parādās pēc pievienošanas.
+`https://eliozo.dudajevagatve.lv/mcp`. Rīki `list_programs`, `list_temati` un
+`get_sr_matrix` parādās pēc pievienošanas.
 
 ## Atjaunināšana
 

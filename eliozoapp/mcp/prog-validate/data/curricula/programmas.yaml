@@ -1,0 +1,90 @@
+# Mācību programmu reģistrs.
+#
+# Failu nosaukumu shēma (visi programmu faili dzīvo šajā mapē):
+#
+#     program_<program_id>[_<loma>].<md|json|csv>
+#
+#     <program_id> ::= <valsts>.<izdevejs>.<kurss-vai-macibu-gads>[.<grupa>]
+#     <loma>       ::= papildu tabulas pie tās pašas programmas (piem. concepts)
+#
+#     program_lv.skola2030.mat1.md            programmas paraugs (Markdown)
+#     program_lv.avg.2025-26.7a.json          stundu plāns (kalendārs + jēdzieni)
+#     program_lv.avg.2025-26.7a_concepts.csv  tā paša plāna jēdzienu tabula
+#
+# Programmas tiek ATRASTAS pēc faila nosaukuma (glob), nevis pēc šī saraksta,
+# tāpēc jaunu stundu plānu pievieno, vienkārši iekopējot failu ar pareizu vārdu.
+# Šeit glabājas tikai tas, ko no paša faila nevar nolasīt: Markdown paraugiem —
+# metadati un parsētāja profils; JSON plāniem — iestāde un klašu kopa (pārējo
+# lasa no JSON). Nezināms program_id nav kļūda — tas iegūst noklusējuma vērtības.
+
+programmas:
+
+  # --- 1A. Skola2030 / VISC programmu paraugi (aut. Maruta Avotiņa) ---------
+
+  lv.skola2030.mat1:
+    nosaukums: "Matemātika I"
+    tips: paraugs
+    parseris: avotina_html          # pandoc <table> tabulas
+    autors: "Maruta Avotiņa"
+    izdevejs: "Skola2030"
+    standarts: vidusskola
+    apguves_limenis: optimalais
+    klasu_grupas: ["10-12"]
+    klases: [10, 11, 12]
+    ol_materiali: true              # tematiem atbilst OL_<nr> mācību materiāli
+    avota_fails: "MATEMATIKA_1_programmas_paraugs_19_maijs.md"
+
+  lv.skola2030.mat2:
+    nosaukums: "Matemātika II"
+    tips: paraugs
+    parseris: avotina_grid          # pandoc grid tabulas (+---+---+)
+    autors: "Maruta Avotiņa"
+    izdevejs: "Skola2030"
+    standarts: vidusskola
+    apguves_limenis: augstakais
+    klasu_grupas: ["10-12"]
+    klases: [10, 11, 12]
+    avota_fails: "MATEMATIKA_2_programmas_paraugs.md"
+
+  lv.skola2030.mat1-9:
+    nosaukums: "Matemātika 1.–9. klasei"
+    tips: paraugs
+    parseris: avotina_grid_1_9      # grid tabulas + A/G tematu marķieri
+    autors: "Maruta Avotiņa"
+    izdevejs: "Skola2030"
+    standarts: pamatskola
+    apguves_limenis: null           # pamatizglītībā apguves līmeņu nav
+    klasu_grupas: ["1-3", "4-6", "7-9"]
+    klases: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    avota_fails: "programmas_paraugs_Matematika_1_9_klase.md"
+
+  # --- 1B. Reāli stundu plāni no e-klases žurnāliem -------------------------
+  # Paralēlas klases mācīja dažādi skolotāji, tāpēc katra ir atsevišķa
+  # programma; `kopa` tās sasaista vienā skolas gada komplektā.
+
+  lv.avg.2025-26.7a:
+    tips: stundu_plans
+    kopa: lv.avg.2025-26
+    iestade: "Āgenskalna Valsts ģimnāzija"
+    standarts: pamatskola
+    klasu_grupas: ["7-9"]
+
+  lv.avg.2025-26.8a:
+    tips: stundu_plans
+    kopa: lv.avg.2025-26
+    iestade: "Āgenskalna Valsts ģimnāzija"
+    standarts: pamatskola
+    klasu_grupas: ["7-9"]
+
+  lv.avg.2025-26.9a:
+    tips: stundu_plans
+    kopa: lv.avg.2025-26
+    iestade: "Āgenskalna Valsts ģimnāzija"
+    standarts: pamatskola
+    klasu_grupas: ["7-9"]
+
+kopas:
+  lv.avg.2025-26:
+    nosaukums: "Āgenskalna Valsts ģimnāzija, 2025./2026. m. g."
+    iestade: "Āgenskalna Valsts ģimnāzija"
+    macibu_gads: "2025/2026"
