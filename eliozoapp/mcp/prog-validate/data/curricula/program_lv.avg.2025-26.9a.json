@@ -1,0 +1,463 @@
+{
+  "program_id": "lv.avg.2025-26.9a",
+  "title": "Matemātika, 9.a klase — Āgenskalna Valsts Ģimnāzija, 2025./2026.",
+  "grade": 9,
+  "school_year": "2025/2026",
+  "teacher": "Ilze Veinberga-Indriķe",
+  "source": "avg_2526_9a_program.csv (skolas stundu plānošanas aplikācijas eksports)",
+  "program_revision": "2025-05-19.compiled-1",
+  "taxonomy_version": "solutionConcepts@grade-groups",
+  "week1_monday": "2025-09-01",
+  "span": {
+    "from": "2025-09-01",
+    "to": "2026-05-29"
+  },
+  "total_lesson_days": 136,
+  "topics": [
+    {
+      "topic_id": "lv.avg.2025-26.9a#T01",
+      "order": 1,
+      "marker": "1.temats",
+      "title": "Virknes un progresijas.",
+      "taught": {
+        "from": {
+          "date": "2025-09-01",
+          "school_week": 1,
+          "month": 9
+        },
+        "to": {
+          "date": "2025-10-01",
+          "school_week": 5,
+          "month": 10
+        }
+      },
+      "lesson_days": 19,
+      "has_homework": true,
+      "test_events": [],
+      "introduces_concepts": [
+        {
+          "label": "NumberSequence",
+          "confidence": 0.9
+        },
+        {
+          "label": "RecurrentSequence",
+          "confidence": 0.8
+        },
+        {
+          "label": "ArithmeticProgression",
+          "confidence": 1.0
+        },
+        {
+          "label": "GeometricProgression",
+          "confidence": 1.0
+        },
+        {
+          "label": "SequenceSum",
+          "confidence": 0.8
+        }
+      ],
+      "taxonomy_gaps": [
+        {
+          "kind": "grade_group_mismatch",
+          "label": "ArithmeticProgression",
+          "catalog_grade_group": "GR_10_12",
+          "taught_grade": 9,
+          "note": "Progresijas šajā plānā (un LV pamatskolas praksē) mācītas 9. klasē; katalogā GR_10_12."
+        },
+        {
+          "kind": "grade_group_mismatch",
+          "label": "GeometricProgression",
+          "catalog_grade_group": "GR_10_12",
+          "taught_grade": 9,
+          "note": "Sk. iepriekšējo — ģeom. progresija 9. klasē."
+        },
+        {
+          "kind": "grade_group_mismatch",
+          "label": "RecurrentSequence",
+          "catalog_grade_group": "GR_10_12",
+          "taught_grade": 9,
+          "note": "Rekurenti uzdotas virknes 9. klasē; katalogā GR_10_12."
+        }
+      ]
+    },
+    {
+      "topic_id": "lv.avg.2025-26.9a#T02",
+      "order": 2,
+      "marker": "2.temats",
+      "title": "Līdzīgi trijstūri.",
+      "taught": {
+        "from": {
+          "date": "2025-10-03",
+          "school_week": 5,
+          "month": 10
+        },
+        "to": {
+          "date": "2025-10-29",
+          "school_week": 9,
+          "month": 10
+        }
+      },
+      "lesson_days": 12,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2025-10-14",
+          "school_week": 7,
+          "kind": "test_independent"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "TriangleSimilarity",
+          "confidence": 1.0
+        },
+        {
+          "label": "RatioProportion",
+          "confidence": 0.7
+        }
+      ],
+      "taxonomy_gaps": [
+        {
+          "kind": "missing_label",
+          "needed": "ThalesTheorem",
+          "title_lv": "Talesa teorēma",
+          "note": "Stunda 'Talesa teorēma' (nogriežņa dalīšana vienādās daļās) — nav Label."
+        }
+      ]
+    },
+    {
+      "topic_id": "lv.avg.2025-26.9a#T03",
+      "order": 3,
+      "marker": "3.temats",
+      "title": "Sakarības taisnleņķa trijstūrī.",
+      "taught": {
+        "from": {
+          "date": "2025-10-31",
+          "school_week": 9,
+          "month": 10
+        },
+        "to": {
+          "date": "2025-11-19",
+          "school_week": 12,
+          "month": 11
+        }
+      },
+      "lesson_days": 11,
+      "has_homework": true,
+      "test_events": [],
+      "introduces_concepts": [
+        {
+          "label": "PythagoreanTheorem",
+          "confidence": 0.7
+        }
+      ],
+      "taxonomy_gaps": [
+        {
+          "kind": "missing_label",
+          "needed": "RightTriangleTrig",
+          "title_lv": "Šaurā leņķa trigonometriskās sakarības",
+          "note": "Sk. 8a — taisnleņķa trijstūra sin/cos/tan nav Label."
+        },
+        {
+          "kind": "missing_label",
+          "needed": "Midsegment",
+          "title_lv": "Trijstūra viduslīnija",
+          "note": "Stunda par trijstūra viduslīniju — nav Label."
+        }
+      ]
+    },
+    {
+      "topic_id": "lv.avg.2025-26.9a#T04",
+      "order": 4,
+      "marker": "4.temats",
+      "title": "Kvadrātfunkcijas.",
+      "taught": {
+        "from": {
+          "date": "2025-11-21",
+          "school_week": 12,
+          "month": 11
+        },
+        "to": {
+          "date": "2025-12-10",
+          "school_week": 15,
+          "month": 12
+        }
+      },
+      "lesson_days": 12,
+      "has_homework": true,
+      "test_events": [],
+      "introduces_concepts": [
+        {
+          "label": "QuadraticFunction",
+          "confidence": 1.0
+        },
+        {
+          "label": "QuadraticEquation",
+          "confidence": 1.0
+        }
+      ],
+      "taxonomy_gaps": []
+    },
+    {
+      "topic_id": "lv.avg.2025-26.9a#T05",
+      "order": 5,
+      "marker": "5.temats",
+      "title": "Nevienādības un to sistēmas.",
+      "taught": {
+        "from": {
+          "date": "2025-12-10",
+          "school_week": 15,
+          "month": 12
+        },
+        "to": {
+          "date": "2026-01-16",
+          "school_week": 20,
+          "month": 1
+        }
+      },
+      "lesson_days": 14,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2026-01-06",
+          "school_week": 19,
+          "kind": "test_independent"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "LinearInequality",
+          "confidence": 0.4
+        }
+      ],
+      "taxonomy_gaps": [
+        {
+          "kind": "missing_label",
+          "needed": "QuadraticInequality",
+          "title_lv": "Kvadrātnevienādība",
+          "note": "Temata kodols (kvadrātnevienādības ar grafika skici) — nav Label; ir tikai LinearInequality."
+        },
+        {
+          "kind": "missing_label",
+          "needed": "InequalitySystem",
+          "title_lv": "Nevienādību sistēma",
+          "note": "'Nevienādību sistēmas' (lineāras + kvadrāt-) — nav Label."
+        }
+      ]
+    },
+    {
+      "topic_id": "lv.avg.2025-26.9a#T06",
+      "order": 6,
+      "marker": "6.temats",
+      "title": "Vienādojumu sistēmas.",
+      "taught": {
+        "from": {
+          "date": "2026-01-19",
+          "school_week": 21,
+          "month": 1
+        },
+        "to": {
+          "date": "2026-02-06",
+          "school_week": 23,
+          "month": 2
+        }
+      },
+      "lesson_days": 12,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2026-01-26",
+          "school_week": 22,
+          "kind": "test_independent"
+        },
+        {
+          "date": "2026-01-28",
+          "school_week": 22,
+          "kind": "test_independent"
+        },
+        {
+          "date": "2026-02-03",
+          "school_week": 23,
+          "kind": "test_independent"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "EquationSystem",
+          "confidence": 1.0
+        }
+      ],
+      "taxonomy_gaps": []
+    },
+    {
+      "topic_id": "lv.avg.2025-26.9a#T07",
+      "order": 7,
+      "marker": "7.temats",
+      "title": "Riņķis un daudzstūris.",
+      "taught": {
+        "from": {
+          "date": "2026-02-09",
+          "school_week": 24,
+          "month": 2
+        },
+        "to": {
+          "date": "2026-03-27",
+          "school_week": 30,
+          "month": 3
+        }
+      },
+      "lesson_days": 25,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2026-02-20",
+          "school_week": 25,
+          "kind": "test_independent"
+        },
+        {
+          "date": "2026-02-27",
+          "school_week": 26,
+          "kind": "test_independent"
+        },
+        {
+          "date": "2026-03-17",
+          "school_week": 29,
+          "kind": "test_independent"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "CircleAndDisk",
+          "confidence": 0.5
+        },
+        {
+          "label": "ArcOfCircle",
+          "confidence": 0.8
+        },
+        {
+          "label": "ChordTangentSecant",
+          "confidence": 1.0
+        },
+        {
+          "label": "InscribedCentralAngle",
+          "confidence": 1.0
+        },
+        {
+          "label": "IncircleCircumcircle",
+          "confidence": 1.0
+        },
+        {
+          "label": "RegularPolygon",
+          "confidence": 0.8
+        },
+        {
+          "label": "Polygon",
+          "confidence": 0.5
+        }
+      ],
+      "taxonomy_gaps": [
+        {
+          "kind": "grade_group_mismatch",
+          "label": "ChordTangentSecant",
+          "catalog_grade_group": "GR_10_12",
+          "taught_grade": 9,
+          "note": "Hordas/pieskares/sekantes 9. klasē; katalogā GR_10_12."
+        },
+        {
+          "kind": "grade_group_mismatch",
+          "label": "InscribedCentralAngle",
+          "catalog_grade_group": "GR_10_12",
+          "taught_grade": 9,
+          "note": "Ievilktais/centra leņķis 9. klasē; katalogā GR_10_12."
+        },
+        {
+          "kind": "grade_group_mismatch",
+          "label": "IncircleCircumcircle",
+          "catalog_grade_group": "GR_OLY",
+          "taught_grade": 9,
+          "note": "Ievilkta/apvilkta riņķa līnija — katalogā GR_OLY, bet ir standarta 9. klases viela šajā plānā."
+        }
+      ]
+    },
+    {
+      "topic_id": "lv.avg.2025-26.9a#T08",
+      "order": 8,
+      "marker": "8.temats",
+      "title": "Algebriskas daļas.",
+      "taught": {
+        "from": {
+          "date": "2026-03-30",
+          "school_week": 31,
+          "month": 3
+        },
+        "to": {
+          "date": "2026-05-06",
+          "school_week": 36,
+          "month": 5
+        }
+      },
+      "lesson_days": 19,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2026-04-14",
+          "school_week": 33,
+          "kind": "test_independent"
+        },
+        {
+          "date": "2026-04-21",
+          "school_week": 34,
+          "kind": "test_independent"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "FractionalEquation",
+          "confidence": 0.8
+        },
+        {
+          "label": "VariableExpression",
+          "confidence": 0.4
+        }
+      ],
+      "taxonomy_gaps": [
+        {
+          "kind": "missing_label",
+          "needed": "AlgebraicFraction",
+          "title_lv": "Algebriskā daļa un darbības ar tām",
+          "note": "VISS 8. temats (daļu saīsināšana, reiz./dal., saskait./atņemš.) — katalogā NAV Label; tas ir centrāls 9. klases jēdziens."
+        },
+        {
+          "kind": "grade_group_mismatch",
+          "label": "FractionalEquation",
+          "catalog_grade_group": "GR_10_12",
+          "taught_grade": 9,
+          "note": "Daļveida vienādojumi 9. klasē; katalogā vidusskolas jēdziens."
+        }
+      ]
+    },
+    {
+      "topic_id": "lv.avg.2025-26.9a#T09",
+      "order": 9,
+      "marker": "NA",
+      "title": "Nobeigums.",
+      "taught": {
+        "from": {
+          "date": "2026-05-08",
+          "school_week": 36,
+          "month": 5
+        },
+        "to": {
+          "date": "2026-05-29",
+          "school_week": 39,
+          "month": 5
+        }
+      },
+      "lesson_days": 12,
+      "has_homework": true,
+      "test_events": [],
+      "introduces_concepts": [],
+      "taxonomy_gaps": []
+    }
+  ]
+}

@@ -1,0 +1,500 @@
+{
+  "program_id": "lv.avg.2025-26.8a",
+  "title": "Matemātika, 8.a klase — Āgenskalna Valsts Ģimnāzija, 2025./2026.",
+  "grade": 8,
+  "school_year": "2025/2026",
+  "teacher": "Ilze Veinberga-Indriķe",
+  "source": "avg_2526_8a_program.csv (skolas stundu plānošanas aplikācijas eksports)",
+  "program_revision": "2025-05-19.compiled-1",
+  "taxonomy_version": "solutionConcepts@grade-groups",
+  "week1_monday": "2025-09-01",
+  "span": {
+    "from": "2025-09-01",
+    "to": "2026-05-29"
+  },
+  "total_lesson_days": 126,
+  "topics": [
+    {
+      "topic_id": "lv.avg.2025-26.8a#T01",
+      "order": 1,
+      "marker": "1.temats",
+      "title": "Monomi un polinomi.",
+      "taught": {
+        "from": {
+          "date": "2025-09-01",
+          "school_week": 1,
+          "month": 9
+        },
+        "to": {
+          "date": "2025-09-23",
+          "school_week": 4,
+          "month": 9
+        }
+      },
+      "lesson_days": 14,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2025-09-15",
+          "school_week": 3,
+          "kind": "test_current"
+        },
+        {
+          "date": "2025-09-19",
+          "school_week": 3,
+          "kind": "test_current"
+        },
+        {
+          "date": "2025-09-22",
+          "school_week": 4,
+          "kind": "test_summative"
+        },
+        {
+          "date": "2025-09-23",
+          "school_week": 4,
+          "kind": "test_summative"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "PolynomialAndRoots",
+          "confidence": 0.7
+        }
+      ],
+      "taxonomy_gaps": []
+    },
+    {
+      "topic_id": "lv.avg.2025-26.8a#T02",
+      "order": 2,
+      "marker": "2.temats",
+      "title": "Kvadrātsakne.",
+      "taught": {
+        "from": {
+          "date": "2025-09-25",
+          "school_week": 4,
+          "month": 9
+        },
+        "to": {
+          "date": "2025-10-14",
+          "school_week": 7,
+          "month": 10
+        }
+      },
+      "lesson_days": 12,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2025-09-30",
+          "school_week": 5,
+          "kind": "test_current"
+        },
+        {
+          "date": "2025-10-14",
+          "school_week": 7,
+          "kind": "test_summative"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "IrrationalAndReals",
+          "confidence": 0.8
+        }
+      ],
+      "taxonomy_gaps": [
+        {
+          "kind": "missing_label",
+          "needed": "SquareRoot",
+          "title_lv": "Aritmētiskā kvadrātsakne un tās īpašības",
+          "note": "Viss 2. temats (kvadrātsakne no reizinājuma/daļas/pakāpes, reizinātāja iznešana) — katalogā nav operacionālas kvadrātsaknes Label; PerfectSquares apzīmē pilnus kvadrātus (NT), nevis saknes darbību."
+        }
+      ]
+    },
+    {
+      "topic_id": "lv.avg.2025-26.8a#T03",
+      "order": 3,
+      "marker": "3.temats",
+      "title": "Polinomu sadalīšana reizinātājos.",
+      "taught": {
+        "from": {
+          "date": "2025-10-16",
+          "school_week": 7,
+          "month": 10
+        },
+        "to": {
+          "date": "2025-11-10",
+          "school_week": 11,
+          "month": 11
+        }
+      },
+      "lesson_days": 12,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2025-11-10",
+          "school_week": 11,
+          "kind": "test_summative"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "DiffOfSquaresFactoring",
+          "confidence": 0.9
+        },
+        {
+          "label": "SquareOfSumIdentity",
+          "confidence": 0.9
+        },
+        {
+          "label": "FactoredForm",
+          "confidence": 1.0
+        }
+      ],
+      "taxonomy_gaps": []
+    },
+    {
+      "topic_id": "lv.avg.2025-26.8a#T04",
+      "order": 4,
+      "marker": "4.temats",
+      "title": "Trijstūra un riņķa laukums.",
+      "taught": {
+        "from": {
+          "date": "2025-11-11",
+          "school_week": 11,
+          "month": 11
+        },
+        "to": {
+          "date": "2025-12-11",
+          "school_week": 15,
+          "month": 12
+        }
+      },
+      "lesson_days": 15,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2025-11-28",
+          "school_week": 13,
+          "kind": "test_current"
+        },
+        {
+          "date": "2025-12-11",
+          "school_week": 15,
+          "kind": "test_summative"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "AreaConcept",
+          "confidence": 1.0
+        },
+        {
+          "label": "ArcOfCircle",
+          "confidence": 0.6
+        },
+        {
+          "label": "BasicSolids",
+          "confidence": 0.8
+        },
+        {
+          "label": "VolumeConcept",
+          "confidence": 0.7
+        }
+      ],
+      "taxonomy_gaps": [
+        {
+          "kind": "missing_label",
+          "needed": "PickFormula",
+          "title_lv": "Pīka formula",
+          "note": "Stunda 'Laukuma īpašības... Pīka formula' — nav atsevišķa Label; daļēji sedz AreaConcept."
+        }
+      ]
+    },
+    {
+      "topic_id": "lv.avg.2025-26.8a#T05",
+      "order": 5,
+      "marker": "5.temats",
+      "title": "Ievads statistikā.",
+      "taught": {
+        "from": {
+          "date": "2025-12-11",
+          "school_week": 15,
+          "month": 12
+        },
+        "to": {
+          "date": "2026-01-16",
+          "school_week": 20,
+          "month": 1
+        }
+      },
+      "lesson_days": 11,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2026-01-16",
+          "school_week": 20,
+          "kind": "test_summative"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "DataStatistics",
+          "confidence": 1.0
+        },
+        {
+          "label": "ArithmeticMean",
+          "confidence": 0.7
+        }
+      ],
+      "taxonomy_gaps": []
+    },
+    {
+      "topic_id": "lv.avg.2025-26.8a#T06",
+      "order": 6,
+      "marker": "6.temats",
+      "title": "Kvadrātfunkcija un kvadrātvienādojumi.",
+      "taught": {
+        "from": {
+          "date": "2026-01-16",
+          "school_week": 20,
+          "month": 1
+        },
+        "to": {
+          "date": "2026-02-17",
+          "school_week": 25,
+          "month": 2
+        }
+      },
+      "lesson_days": 19,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2026-02-05",
+          "school_week": 23,
+          "kind": "test_current"
+        },
+        {
+          "date": "2026-02-17",
+          "school_week": 25,
+          "kind": "test_summative"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "QuadraticFunction",
+          "confidence": 1.0
+        },
+        {
+          "label": "QuadraticEquation",
+          "confidence": 1.0
+        },
+        {
+          "label": "VietasFormulas",
+          "confidence": 0.8
+        },
+        {
+          "label": "ParameterConcept",
+          "confidence": 0.5
+        }
+      ],
+      "taxonomy_gaps": [
+        {
+          "kind": "grade_group_mismatch",
+          "label": "VietasFormulas",
+          "catalog_grade_group": "GR_10_12",
+          "taught_grade": 8,
+          "note": "Vjeta teorēma šajā plānā mācīta 8. klasē; katalogā piesaistīta vidusskolai."
+        },
+        {
+          "kind": "grade_group_mismatch",
+          "label": "ParameterConcept",
+          "catalog_grade_group": "GR_10_12",
+          "taught_grade": 8,
+          "note": "'Uzdevumi ar parametru' 8. klasē; katalogā vidusskolas jēdziens."
+        }
+      ]
+    },
+    {
+      "topic_id": "lv.avg.2025-26.8a#T07",
+      "order": 7,
+      "marker": "7.temats",
+      "title": "Pitagora teorēma.",
+      "taught": {
+        "from": {
+          "date": "2026-02-19",
+          "school_week": 25,
+          "month": 2
+        },
+        "to": {
+          "date": "2026-03-06",
+          "school_week": 27,
+          "month": 3
+        }
+      },
+      "lesson_days": 10,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2026-03-06",
+          "school_week": 27,
+          "kind": "test_summative"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "PythagoreanTheorem",
+          "confidence": 1.0
+        },
+        {
+          "label": "TriangleCongruence",
+          "confidence": 0.6
+        }
+      ],
+      "taxonomy_gaps": []
+    },
+    {
+      "topic_id": "lv.avg.2025-26.8a#T08",
+      "order": 8,
+      "marker": "8.temats",
+      "title": "Trigonometrija taisnleņķa trijstūrī.",
+      "taught": {
+        "from": {
+          "date": "2026-03-06",
+          "school_week": 27,
+          "month": 3
+        },
+        "to": {
+          "date": "2026-03-27",
+          "school_week": 30,
+          "month": 3
+        }
+      },
+      "lesson_days": 7,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2026-03-27",
+          "school_week": 30,
+          "kind": "test_summative"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "TrigonometricFunctions",
+          "confidence": 0.3
+        }
+      ],
+      "taxonomy_gaps": [
+        {
+          "kind": "missing_label",
+          "needed": "RightTriangleTrig",
+          "title_lv": "Šaurā leņķa sinuss, kosinuss, tangenss taisnleņķa trijstūrī",
+          "note": "Viss 8. temats — nav Label taisnleņķa trijstūra trigonometriskajām sakarībām; TrigonometricFunctions (GR_10_12) apzīmē funkcijas, nevis attiecības."
+        }
+      ]
+    },
+    {
+      "topic_id": "lv.avg.2025-26.8a#T09",
+      "order": 9,
+      "marker": "9.temats",
+      "title": "Paralelograma īpašības.",
+      "taught": {
+        "from": {
+          "date": "2026-03-31",
+          "school_week": 31,
+          "month": 3
+        },
+        "to": {
+          "date": "2026-04-24",
+          "school_week": 34,
+          "month": 4
+        }
+      },
+      "lesson_days": 11,
+      "has_homework": true,
+      "test_events": [
+        {
+          "date": "2026-04-24",
+          "school_week": 34,
+          "kind": "test_summative"
+        }
+      ],
+      "introduces_concepts": [
+        {
+          "label": "ParallelogramProperties",
+          "confidence": 1.0
+        },
+        {
+          "label": "QuadrilateralFamilies",
+          "confidence": 0.8
+        },
+        {
+          "label": "Polygon",
+          "confidence": 0.5
+        }
+      ],
+      "taxonomy_gaps": []
+    },
+    {
+      "topic_id": "lv.avg.2025-26.8a#T10",
+      "order": 10,
+      "marker": "10.temats",
+      "title": "Trapeces īpašības.",
+      "taught": {
+        "from": {
+          "date": "2026-04-24",
+          "school_week": 34,
+          "month": 4
+        },
+        "to": {
+          "date": "2026-05-15",
+          "school_week": 37,
+          "month": 5
+        }
+      },
+      "lesson_days": 9,
+      "has_homework": true,
+      "test_events": [],
+      "introduces_concepts": [
+        {
+          "label": "QuadrilateralFamilies",
+          "confidence": 0.6
+        },
+        {
+          "label": "AreaConcept",
+          "confidence": 0.5
+        }
+      ],
+      "taxonomy_gaps": [
+        {
+          "kind": "missing_label",
+          "needed": "Midsegment",
+          "title_lv": "Trijstūra un trapeces viduslīnija",
+          "note": "Stunda par viduslīniju — katalogā nav Label."
+        }
+      ]
+    },
+    {
+      "topic_id": "lv.avg.2025-26.8a#T11",
+      "order": 11,
+      "marker": "NA",
+      "title": "Nobeigums.",
+      "taught": {
+        "from": {
+          "date": "2026-05-15",
+          "school_week": 37,
+          "month": 5
+        },
+        "to": {
+          "date": "2026-05-29",
+          "school_week": 39,
+          "month": 5
+        }
+      },
+      "lesson_days": 6,
+      "has_homework": true,
+      "test_events": [],
+      "introduces_concepts": [],
+      "taxonomy_gaps": []
+    }
+  ]
+}
