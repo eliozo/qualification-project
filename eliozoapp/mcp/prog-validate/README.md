@@ -1,7 +1,7 @@
 # prog-validate — MCP serviss
 
 Rīki `list_programs`, `list_temati` un `get_sr_matrix`
-(SPEC v0.1, sk. `prompts/prog_validate_get_sr_matrix_SPEC.md`).
+(SPEC v0.1, sk. [`../prog_validate_get_sr_matrix_SPEC.md`](../prog_validate_get_sr_matrix_SPEC.md)).
 
 Serviss savieno trīs dokumentu slāņus: valsts standartus, mācību programmas un
 OL mācību materiālus. **Mape ir pašpietiekama** — visi avota dati ir `data/`, un
@@ -11,10 +11,14 @@ repozitoriju bez izmaiņām.
 ## Uzstādīšana
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt  # mcp, PyYAML, uvicorn, pytest
 python build_index.py            # ģenerē index/*.json no data/
 python build_index.py --strikti  # nezināms citētais kods = būves kļūda
 ```
+
+`index/` ir `.gitignore`d — to **vienmēr** ģenerē uz vietas. Būve aizņem
+mazāk par sekundi, tāpēc produkcijā to pārbūvē katrā servisa startā
+(sk. `ExecStartPre` zemāk).
 
 `build_index.py` vienlaikus ir konsekvences tests: tas pārbauda, ka neviens
 pamatskolas standarta kods nav pazudis parsējot, un ka katrs programmā citētais
@@ -65,6 +69,10 @@ program_<program_id>[_<loma>].<md|json|csv>
 | `program_lv.skola2030.mat1-9.md` | Matemātika 1.–9. klasei |
 | `program_lv.avg.2025-26.7a.json` | Āgenskalna Valsts ģimnāzijas 7.a stundu plāns |
 | `program_lv.avg.2025-26.7a_concepts.csv` | tā paša plāna jēdzienu tabula |
+| `program_lv.avg.2025-26.8a.json` + `…8a_concepts.csv` | tas pats 8.a klasei |
+| `program_lv.avg.2025-26.9a.json` + `…9a_concepts.csv` | tas pats 9.a klasei |
+
+Kopā 6 programmas (3 paraugi + 3 stundu plāni); `build_index.py` izdrukā sarakstu.
 
 Divi programmu **tipi**: `paraugs` (Skola2030 paraugi — temati ar SR blokiem un
 citētiem standarta kodiem) un `stundu_plans` (reāli skolas plāni — temati ar
@@ -102,13 +110,74 @@ GET /api/v1/sr-matrix/12?limeni=V,O,A&parklajums=true&programma=lv.skola2030.mat
 ### HTTPS izvietošana (ASGI process aiz Nginx)
 
 Produkcijā MCP galapunktu apkalpo `asgi.py` (module-level `app`, Starlette/ASGI)
-zem uvicorn — atsevišķs process no Flask/Gunicorn, ko Nginx proxy pārsūta `/mcp/`:
+zem uvicorn — atsevišķs process no Flask/Gunicorn, ko Nginx proxy pārsūta `/mcp`:
 
 ```bash
 python -m uvicorn asgi:app --host 127.0.0.1 --port 8001
 ```
 
-Pilna instrukcija (systemd unit + Nginx snippets): **`deploy/DEPLOY.md`**.
+Vispārīga instrukcija (systemd unit + Nginx snippets): **`deploy/DEPLOY.md`**.
+
+#### Faktiskais izvietojums uz `eliozo.dudajevagatve.lv` (pārbaudīts 2026-08-03)
+
+| Elements | Vērtība |
+|---|---|
+| Publiskais URL | `https://eliozo.dudajevagatve.lv/mcp` (**bez** slīpsvītras beigās) |
+| systemd unit | `prog-validate` → `/etc/systemd/system/prog-validate.service` |
+| Upstream | `uvicorn asgi:app` uz `127.0.0.1:8001` (tikai loopback, ugunsmūrī neko neatver) |
+| Servisa lietotājs | `eliozo:www-data` (tas pats, kas Flask lietotnei — **nevis** `www-data`) |
+| `WorkingDirectory` | `/home/eliozo/workspace/qualification-project/eliozoapp/mcp/prog-validate` |
+| Python | `/home/eliozo/workspace/qualification-project/venv-eliozo/bin/python` (kopīgs ar Flask) |
+| Nginx | `location = /mcp` + `location /mcp/` failā `/etc/nginx/sites-available/eliozo` (tas pats `server` bloks, kas Flask lietotnei; kopīgs Certbot sertifikāts) |
+| Pirmreizējā uzstādīšana | `sudo python3 eliozo-setup/scripts/setup-mcp-prog-validate.py` |
+| Kārtējā izvietošana | Jenkins `deploy_mcp` (vai `deploy_eliozo` ar `DEPLOY_MCP=true`) |
+
+`WorkingDirectory` **nav** pati šī mape — repozitorijs (`/home/kalvis/workspace/…`)
+ir izstrādes koks; produkcijā strādā `eliozo` lietotāja koks, uz kuru Jenkins
+rsync'o. Izmaiņas, kas nav izvietotas, dzīvajā servisā **neparādās**.
+
+#### Ko ir viegli sajaukt
+
+- **`/api/v1/…` publiski nav pieejami.** Nginx pārsūta tikai `/mcp` un `/mcp/`;
+  `/api/v1/temati` uz publiskā hosta aiziet uz Flask un atbild ar 404. Tā ir
+  apzināta izvēle — REST maršruti ir atkļūdošanai uz servera:
+  ```bash
+  curl -s http://127.0.0.1:8001/api/v1/programmas | head -c 200
+  ```
+- **SSE iestatījumus Nginx blokos nedrīkst "sakopt".** `proxy_buffering off`,
+  `proxy_http_version 1.1`, `proxy_set_header Connection ""` un 3600 s
+  `proxy_read_timeout`/`proxy_send_timeout` ir obligāti — bez tiem straumētās
+  atbildes apstājas vai tiek nogrieztas.
+- **DNS-rebinding allow-list.** `server.py` atļauj tikai zināmus `Host`/`Origin`
+  (sk. `_ATLAUTIE_HOSTI`). Ja serviss tiek pacelts zem cita hosta vārda, tas
+  jāpievieno `PROG_VALIDATE_ALLOWED_HOSTS` (systemd `Environment=`), citādi
+  galapunkts atbild **421 "Invalid Host header"**, ko klienti parāda kā
+  maldinošu autentifikācijas kļūdu.
+- **`index/` pārbūve ir daļa no servisa starta.** `ExecStartPre` palaiž
+  `build_index.py`, tāpēc pēc koda vai `data/` izmaiņām pietiek ar
+  `sudo systemctl restart prog-validate`. Ja būve krīt (programmā citēts kods
+  nav standartā), serviss **netiek startēts** — tas ir apzināts konsekvences
+  vārti, nevis kļūda izvietošanā.
+
+#### Pārbaude pēc izvietošanas
+
+```bash
+sudo systemctl status prog-validate
+curl -s http://127.0.0.1:8001/api/v1/programmas | head -c 200   # lokāli
+
+# Publiskais MCP handshake + rīku saraksts (jābūt 3 rīkiem):
+SID=$(curl -sS -D - -o /dev/null -X POST https://eliozo.dudajevagatve.lv/mcp \
+  -H "Content-Type: application/json" -H "Accept: application/json, text/event-stream" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"probe","version":"1"}}}' \
+  | grep -i '^mcp-session-id' | tr -d '\r' | awk '{print $2}')
+curl -sS -o /dev/null -X POST https://eliozo.dudajevagatve.lv/mcp \
+  -H "Content-Type: application/json" -H "Accept: application/json, text/event-stream" \
+  -H "mcp-session-id: $SID" -d '{"jsonrpc":"2.0","method":"notifications/initialized"}'
+curl -sS -X POST https://eliozo.dudajevagatve.lv/mcp \
+  -H "Content-Type: application/json" -H "Accept: application/json, text/event-stream" \
+  -H "mcp-session-id: $SID" -d '{"jsonrpc":"2.0","id":2,"method":"tools/list"}'
+# Sagaidāms: list_programs, list_temati, get_sr_matrix
+```
 
 ### Claude Desktop / Claude Code konfigurācija (stdio)
 

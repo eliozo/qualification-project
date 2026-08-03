@@ -7,8 +7,13 @@
 #   sudo systemctl enable --now prog-validate
 #   sudo systemctl status prog-validate
 #
+# On eliozo.dudajevagatve.lv you normally do NOT install this by hand: the unit
+# is generated (with the live paths auto-detected from eliozo-gunicorn.service)
+# by  eliozo-setup/scripts/setup-mcp-prog-validate.py.  This file is the
+# reference template / the shape of what that script writes.
+#
 # The Flask/Gunicorn deployment is NOT touched; this is a separate process that
-# Nginx reverse-proxies at /mcp/ (see deploy/nginx-mcp.conf).
+# Nginx reverse-proxies at /mcp (see deploy/nginx-mcp.conf).
 
 [Unit]
 Description=prog-validate MCP service (streamable-http, ASGI)
@@ -18,23 +23,35 @@ After=network.target
 Type=simple
 
 # --- adjust these three to the server layout -----------------------------
+# The values below are the ones actually in use on eliozo.dudajevagatve.lv;
+# on another host substitute that host's app dir and virtualenv.
+#
 # WorkingDirectory MUST be the prog-validate dir (server.py does `import
 # coverage`/`import server` relative to it, and ./index, ./data resolve here).
-WorkingDirectory=/etc/our-flasks/eliozo/mcp/prog-validate
+WorkingDirectory=/home/eliozo/workspace/qualification-project/eliozoapp/mcp/prog-validate
 # Python from the same virtualenv the Flask app uses (must have: mcp, PyYAML,
-# uvicorn). If missing:  <venv>/bin/pip install -r requirements.txt uvicorn
-ExecStartPre=/etc/our-flasks/eliozo/venv/bin/python build_index.py
-ExecStart=/etc/our-flasks/eliozo/venv/bin/python -m uvicorn asgi:app --host 127.0.0.1 --port 8001
+# uvicorn). If missing:  <venv>/bin/pip install -r requirements.txt
+ExecStartPre=/home/eliozo/workspace/qualification-project/venv-eliozo/bin/python build_index.py
+ExecStart=/home/eliozo/workspace/qualification-project/venv-eliozo/bin/python -m uvicorn asgi:app --host 127.0.0.1 --port 8001
 # -------------------------------------------------------------------------
 
-# Optional explicit data/index locations (default: ./data and ./index):
-# Environment=PROG_VALIDATE_DATA=/etc/our-flasks/eliozo/mcp/prog-validate/data
-# Environment=PROG_VALIDATE_INDEX=/etc/our-flasks/eliozo/mcp/prog-validate/index
+# Optional explicit data/index locations (default: ./data and ./index relative
+# to WorkingDirectory, which is what we rely on here):
+# Environment=PROG_VALIDATE_DATA=/home/eliozo/workspace/qualification-project/eliozoapp/mcp/prog-validate/data
+# Environment=PROG_VALIDATE_INDEX=/home/eliozo/workspace/qualification-project/eliozoapp/mcp/prog-validate/index
+
+# Extra Host/Origin values for the MCP SDK DNS-rebinding allow-list. Needed if
+# the service is fronted by a hostname other than the ones baked into
+# server.py, otherwise the endpoint answers 421 "Invalid Host header".
+# Environment=PROG_VALIDATE_ALLOWED_HOSTS=example.org,example.org:*,127.0.0.1:*
+# Environment=PROG_VALIDATE_ALLOWED_ORIGINS=https://example.org,https://claude.ai
 
 Restart=on-failure
 RestartSec=3
-# Runs as the same user that owns the deployment; adjust if needed.
-User=www-data
+# Must be the user that OWNS the deployment tree: ExecStartPre (build_index.py)
+# writes ./index, so a read-only user such as www-data is not sufficient.
+# On this host that is the same user the Flask app runs as.
+User=eliozo
 Group=www-data
 
 [Install]
