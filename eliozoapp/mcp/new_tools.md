@@ -68,26 +68,27 @@ Brīva teksta (vai neprecīzu nosaukumu) pārvēršana kanoniskos identifikatoro
 
 ```ts
 search_taxonomy(input: {
-  query?: string,                       // "atlikumi pēc moduļa"
-  ids?: string[],                       // precīza izgūšana pēc ID (alternatīva query)
-  kind?: "concept" | "topic" | "any",   // noklusēti "any"
-  domain?: Domain,
-  max_first_grade?: number,             // tikai jēdzieni, ko sāk mācīt ≤ šai klasei
-  limit?: number                        // noklusēti 10
+  query?: string,                  // "atlikumi pēc moduļa"
+  ids?: string[],                  // precīza izgūšana pēc Label (alternatīva query)
+  facet?: Facet | Facet[] | "any", // Facet = "concept" | "topic" | "model" | "method" | "genre" | "questionType"
+  mode?: "lexical" | "semantic" | "hybrid",   // noklusēti "hybrid"
+  domain?: Domain,                 // nākotnē caur šo varēs pārslēgt nozari
+  max_earliest_grade?: number,        // tikai jēdzieni, ko sāk mācīt ≤ šai klasei (katram jēdzienam zināma noklusētā minimālā klase; ar šo atmetam "lielo klašu" rindas, ja vaicājumam tās nevajag)
+  include_hierarchy?: boolean,     // L1..L5 vecāku ķēde
+  include_examples?: number,       // 0..5 enkura uzdevumi katrai rindai
+  limit?: number
 }) => {
   matches: [{
-    id: string,                 // ConceptLabel vai TopicId
-    kind: "concept" | "topic",
-    title_lv: string,
-    title_en?: string,
-    description_lv?: string,
-    domain?: Domain,
-    concept_group?: string,     // piem. "DivisibilityStructures"
-    first_grade?: number,       // jēdzieniem: agrākā klase (kataloga Grade)
-    vsk_level?: VskLevel,       // vidusskolas vienībām
-    score: number               // atbilstības rangs 0..1
+    id: string, facet: Facet,
+    title_lv, title_en?, description_lv?,
+    parents?: [{ id, title_lv }],
+    annotation_policy?: string,    // piem. "anotē apakštipu, ne virsmezglu" (questionTypes)
+    curricular_status?, first_grade?, vsk_level?,
+    anchor_examples?: [{ problem_id, statement_excerpt }],
+    score: number,
+    score_components?: { lexical?: number, semantic?: number }
   }],
-  taxonomy_version: string
+  taxonomy_version, embedding_model_version?
 }
 ```
 
@@ -98,21 +99,28 @@ search_taxonomy(input: {
 Satura vienība → taksonomijas jēdzieni un temati (prasība 5). **Vienīgais rīks ar LLM** — izmanto MCP sampling (izsaucēja modeli), rezultātu vienmēr validē pret taksonomiju: labels, kas katalogā neeksistē, tiek izmesti, nevis atgriezti.
 
 ```ts
-extract_content_concepts(input: {
-  content: string,                       // uzdevuma/teorijas teksts (Markdown/LaTeX)
-  content_kind?: "task" | "solution" | "proof" | "theory" | "worksheet" | "test",
-  include_topics?: boolean               // noklusēti true — arī standartu/programmu temati
+extract_content_annotations(input: {
+  statement: string,
+  solution?: string,
+  content_kind?: "problem" | "solution" | "theorem" | "explanation" | "worksheet" ,
+  facets?: Facet[],                 // noklusēti visas piemērojamās
+  allow_inferred_solution?: boolean, // atļaut "solve-then-classify" models/methods prognozei
+  min_confidence?: number
 }) => {
-  concepts: [{
-    label: ConceptLabel,
-    title_lv: string,
-    confidence: number,        // 0..1
-    evidence: string           // citāts/frāze no satura, kas pamato piesaisti
-  }],
-  topics: [{ topic_id: TopicId, title: string, confidence: number }],
-  summary: string,             // 1–2 teikumu LLM kopsavilkums (var izmantot kešošanai)
-  taxonomy_version: string
+  annotations: {                    // confidence is a number in [0;1]
+    concepts:  [{ label, confidence, basis, evidence }],
+    topics:    [{ label, confidence, basis, evidence }],
+    models:    [{ label, confidence, basis, evidence }],  // tukšs + piezīme, ja nav atrisinājuma
+    methods:   [{ label, confidence, basis, evidence }],
+    genre:     { label, confidence } | null,
+    question_type: { label, confidence, rule_based: boolean } | null
+  },
+  needs_review: boolean,
+  review_reasons: string[],          // "models bez atrisinājuma", "divi kandidāti ar tuvu score" ...
+  nearest_classified_problems: [{ problem_id, similarity, shared_labels: string[] }],
+  taxonomy_version, pipeline_version
 }
+
 ```
 
 *Piezīme izsaucējiem:* ja pirmsklasifikācija jau veikta pašu spēkiem, šo rīku var izlaist un `concept_labels` padot tieši 3.4.–3.6. rīkiem.
