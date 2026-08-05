@@ -6,7 +6,14 @@
 |---|---|---|
 | `prog-validate` | `https://eliozo.dudajevagatve.lv/mcp` | [`prog-validate/`](prog-validate/) |
 
-Izvietošanas apraksts: [`prog-validate/deploy/DEPLOY.md`](prog-validate/deploy/DEPLOY.md).
+Rīki: `list_programs`, `list_temati`, `get_sr_matrix`.
+
+Izvietošana:
+- vispārīgi — [`prog-validate/deploy/DEPLOY.md`](prog-validate/deploy/DEPLOY.md);
+- faktiskie ceļi uz servera — [`prog-validate/README.md`](prog-validate/README.md)
+  sadaļa "HTTPS izvietošana";
+- ekspluatācija (Jenkins `deploy_mcp`, žurnāli, tipiskās kļūmes) —
+  `eliozo-setup/ADMIN-GUIDE.md` sadaļa "MCP Service (`prog-validate`)".
 
 ---
 
@@ -87,16 +94,23 @@ OAuth-aizsargātu un pieprasīs pieteikšanos.
 Kritiskā atšķirība: **401 nekad neparādās** un `WWW-Authenticate` nekad netiek
 sūtīts. Tikai tas nosaka, vai klients sāks OAuth plūsmu.
 
-### 1.6. Pārbaudes rezultāts (2026-08-01)
+### 1.6. Pārbaudes rezultāts (atkārtots 2026-08-03)
 
 | Pārbaude | Rezultāts |
 |---|---|
-| `POST /mcp` `initialize` bez auth | **200** ✅ (`prog-validate` v1.28.1) |
+| `POST /mcp` `initialize` bez auth | **200** ✅ (`serverInfo` `prog-validate`, MCP SDK 1.28.1) |
 | `notifications/initialized` | **202** ✅ |
-| `tools/list` bez auth | **200** ✅ (`list_temati`, `get_sr_matrix`) |
-| `GET /mcp` ar sesijas ID | **200**, SSE straume ✅ |
+| `tools/list` bez auth | **200** ✅ |
+| `GET /mcp` bez sesijas ID | **400** `Missing session ID` ✅ (protokols, ne auth) |
+| `HEAD /mcp` | **405** ✅ |
+| `GET /mcp/` | **307** → `https://eliozo.dudajevagatve.lv/mcp` ✅ (HTTPS, ne HTTP) |
 | `WWW-Authenticate` galvene | nav nevienā ceļā ✅ |
 | `/.well-known/oauth-*`, `/register` | visi **404** ✅ |
+
+> **Piezīme (2026-08-03).** `tools/list` uz dzīvā servisa atgriež **tikai
+> `list_temati` un `get_sr_matrix`** — `list_programs` repozitorijā ir, bet uz
+> produkcijas serveri vēl nav izvietots (to pašu rāda `/api/v1/programmas` → 404
+> uz `127.0.0.1:8001`). Pēc `deploy_mcp` palaišanas te jābūt 3 rīkiem.
 
 Secinājums: `prog-validate` ir pilnībā authless un derīgs pievienošanai
 claude.ai kā *custom connector* bez OAuth.
@@ -124,11 +138,17 @@ Pro (vai Max / Team / Enterprise) abonements.
    Ja Claude pieprasa pieteikšanos vai rāda auth kļūdu, atkārto 1. sadaļas
    pārbaudes — kaut kas galapunktā sūta 401 vai OAuth metadatus.
 5. Jaunā sarunā spied rīku/spraudņa ikonu ievades laukā un pārliecinies, ka
-   `prog-validate` ir ieslēgts un rāda abus rīkus.
+   `prog-validate` ir ieslēgts un rāda visus trīs rīkus.
 
 ### 2.1. Dūmu tests sarunā
 
 Uzdod Claude šos jautājumus — katrs izsauc citu rīku:
+
+```
+Izmanto prog-validate rīku list_programs un uzskaiti visas programmas.
+```
+Sagaidāms: 6 programmas — 3 `paraugs` (`lv.skola2030.mat1`, `…mat2`, `…mat1-9`)
+un 3 `stundu_plans` (`lv.avg.2025-26.7a` / `.8a` / `.9a`).
 
 ```
 Izmanto prog-validate rīku list_temati un parādi visus tematus tabulā.
@@ -167,8 +187,8 @@ claude mcp list        # jāparāda "Connected"
 ```
 
 **Lokāli (stdio), izstrādei bez izvietošanas** — sk.
-[`prog-validate/README.md`](prog-validate/README.md) 45. rindu (`mcpServers`
-konfigurācija ar `python server.py`).
+[`prog-validate/README.md`](prog-validate/README.md) sadaļu "Claude Desktop /
+Claude Code konfigurācija (stdio)" (`mcpServers` ar `python server.py`).
 
 
 
