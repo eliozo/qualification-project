@@ -6,6 +6,7 @@ in-memory oxigraph store via the ``hermetic_store`` fixture (see
 """
 
 import json
+import os
 
 import pytest
 
@@ -15,7 +16,8 @@ from eliozo_dao import sparql_query
 
 def test_default_db_path_is_under_eliozoapp_data():
     """The default OXIGRAPH_DB_PATH should live next to the eliozoapp tree."""
-    assert eliozo_dao.OXIGRAPH_DB_PATH.endswith("data/oxigraph_db")
+    # os.path.join so this also holds on Windows, where the separator is "\\".
+    assert eliozo_dao.OXIGRAPH_DB_PATH.endswith(os.path.join("data", "oxigraph_db"))
 
 
 def test_sparql_query_returns_valid_sparql_json(hermetic_store):

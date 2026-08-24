@@ -228,31 +228,24 @@ def getConcepts():
     for item in concepts_problems['results']['bindings']:
         concept = item['concept']['value']
         if concept != current_concept:
-            termLV = item['termLV']['value']
-            termEN = item['termEN']['value']
-            conceptID = item['conceptID']['value']
             descLV = ''
             if 'descLV' in item:
                 descLV = mathBeautify(item['descLV']['value'])
 
             current_concept = concept
+            # current_problems is stored by reference, so problems of the same
+            # concept found on later rows are picked up by the entry below.
             current_problems = [item['problemID']['value']]
             concept_list.append({
-                'termLV': termLV,
-                'termEN': termEN,
-                'conceptID': conceptID,
+                'termLV': item['termLV']['value'],
+                'termEN': item['termEN']['value'],
+                'conceptID': item['conceptID']['value'],
                 'descLV': descLV,
                 'problems': current_problems
             })
 
         else:
             current_problems.append(item['problemID']['value'])
-    concept_list.append({
-                'termLV': termLV,
-                'termEN': termEN,
-                'conceptID': conceptID,
-                'descLV': descLV,
-                'problems': current_problems})
 
     template_context = {
         'all_concepts': concept_list,
