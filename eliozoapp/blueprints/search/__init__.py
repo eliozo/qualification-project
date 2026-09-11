@@ -8,8 +8,9 @@ from controllers.weaviate_utils import WeaviateUtils
 
 from eliozo.webmd_utils import fix_image_links, mathBeautify
 from eliozo_dao.search_repository import (
-    replace_non_ascii_with_unicode_escape, 
-    getProblemsByKeywordSPARQL, 
+    SEARCH_TARGET_PROBLEMS,
+    SEARCH_TARGET_SOLUTIONS,
+    getProblemsByKeywordSPARQL,
     getProblemsByRegexSPARQL
 )
 
@@ -24,16 +25,20 @@ def search_problems():
         clickcount = 0
     # print(f"clickcount = {clickcount}")
     
+    searchTarget = request.args.get('searchTarget', SEARCH_TARGET_PROBLEMS)
+    if searchTarget != SEARCH_TARGET_SOLUTIONS:
+        searchTarget = SEARCH_TARGET_PROBLEMS
+
     if keyword is None or keyword == "":
         template_context = {
             'active': 'main',
-            'searchMode': 'exact'
+            'searchMode': 'exact',
+            'searchTarget': searchTarget
         }
         return render_template('main_content.html',  **template_context)
-    
-    new_keyword = replace_non_ascii_with_unicode_escape(keyword)
+
     searchMode = request.args.get('searchMode')
-    
+
     problems = []
 
     if searchMode == 'semantic':
@@ -81,9 +86,9 @@ def search_problems():
         isRegex = (searchMode == 'regex')
 
         if not isRegex:
-            link = json.loads(getProblemsByKeywordSPARQL(new_keyword, False))
+            link = json.loads(getProblemsByKeywordSPARQL(keyword, False, searchTarget))
         else:
-            link = json.loads(getProblemsByRegexSPARQL(new_keyword, False))
+            link = json.loads(getProblemsByRegexSPARQL(keyword, False, searchTarget))
         
         if 'results' in link and 'bindings' in link['results']:
             for item in link['results']['bindings']:
@@ -99,6 +104,7 @@ def search_problems():
         'keyword' : keyword,
         'active': 'main',
         'searchMode': searchMode,
+        'searchTarget': searchTarget,
         'lang': session.get('lang', 'lv'),
         'title': 'Sākumlapa', 
         'clickcount': clickcount

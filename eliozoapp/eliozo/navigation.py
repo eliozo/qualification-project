@@ -72,6 +72,10 @@ def get_navigation():
                 {'label': _('References'), 'endpoint': 'references_bp.getReferences'},
                 {'label': _('Contact Information'), 'endpoint': 'references_bp.getContactInfo'},
                 {'label': _('Ontology'), 'endpoint': 'references_bp.getOntology'},
+                {'label': _('Exact Search'), 'endpoint': 'references_bp.getContentPage',
+                 'url_params': {'docname': 'search_by_keyword'}},
+                {'label': _('Regex Search'), 'endpoint': 'references_bp.getContentPage',
+                 'url_params': {'docname': 'search_by_regex'}},
             ]
         }
     ]

@@ -26,10 +26,20 @@
                         endif %}>
                     {% trans %}By meaning{% endtrans %}
                 </label>
+                <a class="info-icon search-help" data-mode="exact" title="{% trans %}How exact search works{% endtrans %}"
+                    data-fragment-url="{{ url_for('references_bp.getContentPage', docname='search_by_keyword', fragment=1) }}"
+                    data-page-url="{{ url_for('references_bp.getContentPage', docname='search_by_keyword') }}"
+                    href="{{ url_for('references_bp.getContentPage', docname='search_by_keyword') }}">i</a>
+                <a class="info-icon search-help" data-mode="regex" title="{% trans %}How regular expression search works{% endtrans %}"
+                    data-fragment-url="{{ url_for('references_bp.getContentPage', docname='search_by_regex', fragment=1) }}"
+                    data-page-url="{{ url_for('references_bp.getContentPage', docname='search_by_regex') }}"
+                    href="{{ url_for('references_bp.getContentPage', docname='search_by_regex') }}">i</a>
                 &nbsp;&nbsp;
-                <select class="search-target" name="something" style="margin-left: 10px; padding: 2px;">
-                    <option value="questions" selected>{% trans %}In problems{% endtrans %}</option>
-                    <option value="solutions">{% trans %}In solutions{% endtrans %}</option>
+                <select class="search-target" name="searchTarget" style="margin-left: 10px; padding: 2px;">
+                    <option value="questions" {% if searchTarget !='solutions' %}selected{% endif %}>
+                        {% trans %}In problems{% endtrans %}</option>
+                    <option value="solutions" {% if searchTarget=='solutions' %}selected{% endif %}>
+                        {% trans %}In solutions{% endtrans %}</option>
                 </select>
             </div>
 
@@ -49,15 +59,36 @@
                     const form = searchInput.closest('form');
 
                     function updateSearchInput() {
-                        const mode = searchModeRadios.filter(':checked').val();
+                        const mode = searchModeRadios.filter(':checked').val() || 'exact';
                         if (mode === 'semantic') {
                             searchInput.attr('rows', '3');
                         } else {
                             searchInput.attr('rows', '1');
                         }
+                        // Context sensitive help: show the (i) of the selected
+                        // search mode only. "By meaning" has no help document yet.
+                        $('.search-help').each(function () {
+                            $(this).toggleClass('active', $(this).data('mode') === mode);
+                        });
                     }
 
                     searchModeRadios.change(updateSearchInput);
+
+                    // Open the help document in a pop-up instead of navigating
+                    // away; the plain href stays as the no-JavaScript fallback.
+                    $('.search-help').on('click', function (e) {
+                        e.preventDefault();
+                        const link = $(this);
+                        $('#searchHelpTitle').text(link.attr('title'));
+                        $('#searchHelpFullPage').attr('href', link.data('page-url'));
+                        $('#searchHelpBody').html('<p>&hellip;</p>');
+                        $('#searchHelpModal').modal('show');
+                        $('#searchHelpBody').load(link.data('fragment-url'), function () {
+                            if (window.MathJax && window.MathJax.typesetPromise) {
+                                window.MathJax.typesetPromise([document.getElementById('searchHelpBody')]);
+                            }
+                        });
+                    });
 
                     // Initialize on load
                     updateSearchInput();
@@ -72,6 +103,59 @@
                 });
             </script>
         </form>
+    </div>
+
+    <style>
+        /* Reuses the .info-icon circle from main.css; only the visibility of
+           the currently relevant one is handled here. */
+        a.search-help {
+            display: none;
+            margin-left: 6px;
+            vertical-align: text-top;
+        }
+
+        a.search-help.active {
+            display: inline-block;
+        }
+
+        a.search-help:hover,
+        a.search-help:focus {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #searchHelpBody {
+            text-align: left;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        #searchHelpBody pre,
+        #searchHelpBody table {
+            overflow-x: auto;
+            max-width: 100%;
+        }
+    </style>
+
+    <div class="modal fade" id="searchHelpModal" tabindex="-1" role="dialog"
+        aria-labelledby="searchHelpTitle">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="searchHelpTitle"></h4>
+                </div>
+                <div class="modal-body" id="searchHelpBody"></div>
+                <div class="modal-footer">
+                    <a href="#" id="searchHelpFullPage" class="btn btn-link pull-left">
+                        {% trans %}Open as a page{% endtrans %}</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        {% trans %}Close{% endtrans %}</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     {#
