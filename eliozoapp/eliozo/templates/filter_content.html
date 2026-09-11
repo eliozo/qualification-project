@@ -213,18 +213,8 @@
             </div>
         </div>
         <button type="submit" class="search-button">{% trans %}Search{% endtrans %}</button>
-        {% if page_offsets %}
-        &nbsp; {% trans %}Pages{% endtrans %}:
-        {% for curr_offset in page_offsets %}
-        {% if curr_offset == myoffset %}
-        <b>{{ curr_offset//10+1 }}</b>
-        {% else %}
-        <a
-            href="{{ url_for('filter.getFilter',grade=params['grade'],olympiad=params['olympiad'],domain=params['domain'],questionType=params['questionType'],method=params['method'],hasSolution=params['hasSolution'],hasVideo=params['hasVideo'],offset=curr_offset) }}">{{
-            curr_offset//10+1 }}</a>
-        {% endif %}
-        {% endfor %}
-        {% endif %}
+        {% from '_paging.html' import page_bar %}
+        {{ page_bar(page_links) }}
     </form>
 
     {% for problem in problems %}

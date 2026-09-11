@@ -29,18 +29,14 @@ CONTENT_DOC_TITLES = {
 
 
 def find_content_file(docname, lang):
-    """Path of the best Markdown file for ``docname`` in ``lang``, or None.
+    """Path of ``content/<docname>/content_<lang>.md``, or None.
 
-    Both naming conventions in use are accepted -- ``content_lv.md`` (new
-    documents) and ``<docname>_lv.md`` (the ontology) -- and English is the
-    fallback when the requested language is missing.
+    English is the fallback when the requested language is missing.
     """
     if not docname or not _DOC_NAME_RE.fullmatch(docname):
         return None
     doc_dir = os.path.join(CONTENT_ROOT, docname)
-    candidates = [f'content_{lang}.md', f'{docname}_{lang}.md',
-                  'content_en.md', f'{docname}_en.md']
-    for name in candidates:
+    for name in (f'content_{lang}.md', 'content_en.md'):
         path = os.path.join(doc_dir, name)
         if os.path.isfile(path):
             return path

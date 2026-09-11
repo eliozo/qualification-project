@@ -166,8 +166,47 @@
     </form>
     #}
 
+    {% from '_paging.html' import page_bar %}
+    {% if page_links %}
+    <p class="search-pages">{{ page_bar(page_links) }}</p>
+    {% endif %}
+
+    <style>
+        /* Where the match is, when the shown text does not contain it. */
+        a.match-note {
+            display: inline-block;
+            margin-left: 8px;
+            padding: 1px 7px;
+            border: 1px solid #f0d58c;
+            border-radius: 10px;
+            background-color: #fff3cd;
+            color: #7a5b00;
+            font-size: 55%;
+            font-weight: normal;
+            vertical-align: middle;
+        }
+
+        a.match-note:hover,
+        a.match-note:focus {
+            background-color: #ffe8a1;
+            color: #5c4400;
+            text-decoration: none;
+        }
+    </style>
+
     {% for problem in problems %}
-    <h3 class="problem">{{ problem.problemid }}</h3>
+    <h3 class="problem">{{ problem.problemid }}
+        {% if problem.matchLang %}
+        <a class="match-note"
+            href="{{ url_for('problems.getProblem', problemid=problem.problemid, lang=problem.matchLang) }}">{% trans
+            code=problem.matchLang %}Found in the {{ code }} translation{% endtrans %}</a>
+        {% endif %}
+        {% if problem.solutionMatchLang %}
+        <a class="match-note"
+            href="{{ url_for('problems.getProblemSolution', problemid=problem.problemid, lang=problem.solutionMatchLang) }}">{%
+            trans code=problem.solutionMatchLang %}Found in a solution ({{ code }}){% endtrans %}</a>
+        {% endif %}
+    </h3>
 
     {{ problem.text | safe }}
 

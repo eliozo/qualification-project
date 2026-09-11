@@ -1,5 +1,7 @@
 from flask import Blueprint, render_template, request, session, url_for, json
+from blueprints.paging import page_links, parse_offset
 from eliozo.webmd_utils import mathBeautify, fix_image_links
+from eliozo_dao.problem_listing import listProblemsPage
 from eliozo_dao.filter_repository import (
     getProblemsByFiltersSPARQL,
     getProblemCountsByFiltersSPARQL
@@ -21,11 +23,7 @@ def getFilter():
             requestVal = "NA"
         params[requestParam] = requestVal
 
-    offset = request.args.get('offset')
-    if offset is None or offset == '':
-        offset = 0
-    else:
-        offset = int(offset)
+    offset = parse_offset(request.args.get('offset'))
 
     problems = []
 
@@ -82,12 +80,13 @@ def getFilter():
         return render_template('filter_content.html', **template_context)
 
     else:
-        link = json.loads(getProblemsByFiltersSPARQL(params, offset))
-        for item in link['results']['bindings']:
-            problem_id_value = item['problemid']['value']
-            problem_text_value = mathBeautify(item['text']['value'])
+        # One row per problem, ranked by SEARCH_RESULT_ORDER; the page's
+        # translations are chosen by the shared precedence rules.
+        result = listProblemsPage(getProblemsByFiltersSPARQL(params), lang, offset)
+        for item in result['problems']:
+            problem_text_value = mathBeautify(item['textHtml'])
             problem_text_value = fix_image_links(problem_text_value)
-            d = {'problemid': problem_id_value, 'text': problem_text_value}
+            d = {'problemid': item['problemid'], 'text': problem_text_value}
             problems.append(d)
 
         all_values = {'grade':['5', '6', '7', '8',
@@ -120,15 +119,7 @@ def getFilter():
 
         # if params['domain'] not in all_counts['domain']:
         #     params['domain'] = ''
-        page_offsets = []
-        count_json = json.loads(getProblemCountsByFiltersSPARQL(params))
-        curr_filter_count = int(count_json['results']['bindings'][0]['count']['value'])
-
-        if curr_filter_count > 10:
-            current_offset = 0
-            while curr_filter_count - current_offset > 0:
-                page_offsets.append(current_offset)
-                current_offset += 10
+        pageLinks = page_links(result['total'], offset, 'filter.getFilter', params)
 
         # print('======================')
         # print(f'all_counts = {all_counts}')
@@ -141,8 +132,7 @@ def getFilter():
             'olympiadTypeDict': olympiadTypeDict,
             'methodDict': methodDict,
             'solutionDict': solutionDict,
-            'page_offsets': page_offsets,
-            'myoffset': offset,
+            'page_links': pageLinks,
             'active': 'filter',
             'navlinks': [
                 {

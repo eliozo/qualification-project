@@ -1,0 +1,17 @@
+{# Page bar shared by the Filter page and the search results.
+   page_links comes from blueprints.paging.page_links; nothing is rendered
+   when it is empty or undefined. #}
+{% macro page_bar(page_links) %}
+{% if page_links %}
+&nbsp; {% trans %}Pages{% endtrans %}:
+{% for link in page_links %}
+{% if link.gap %}
+&hellip;
+{% elif link.current %}
+<b>{{ link.number }}</b>
+{% else %}
+<a href="{{ link.url }}">{{ link.number }}</a>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endmacro %}
