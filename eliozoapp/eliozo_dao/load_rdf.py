@@ -3,11 +3,12 @@
 Usage:
     python -m eliozo_dao.load_rdf [SOURCE_DIR ...]
 
-If no directories are given, the script loads from the two default locations
-used by the worksheet-generation project:
+If no directories are given, the script loads from the two default locations:
 
   * <repo>/../worksheet-generation-with-llms/scripts/setup/resources
-  * <repo>/../worksheet-generation-with-llms/scripts/setup/temp
+    (metadata: topics, methods, olympiads, ...)
+  * eliozoapp/data/problem_ttl
+    (problems, written by ``python -m eliozo_dao.import_problems``)
 
 Override the store location with the ``OXIGRAPH_DB_PATH`` env var
 (default: ``eliozoapp/data/oxigraph_db``).
@@ -27,14 +28,13 @@ from glob import glob
 from pyoxigraph import RdfFormat, Store
 
 from . import OXIGRAPH_DB_PATH
+from .import_problems import PROBLEM_TTL_DIR
 
 _DEFAULT_SOURCE_DIRS = [
     os.path.normpath(os.path.join(
         os.path.dirname(__file__), "..", "..", "..",
         "worksheet-generation-with-llms", "scripts", "setup", "resources")),
-    os.path.normpath(os.path.join(
-        os.path.dirname(__file__), "..", "..", "..",
-        "worksheet-generation-with-llms", "scripts", "setup", "temp")),
+    PROBLEM_TTL_DIR,
 ]
 
 
@@ -59,6 +59,10 @@ def main():
     args = parser.parse_args()
 
     source_dirs = args.source_dirs or _DEFAULT_SOURCE_DIRS
+    if not args.source_dirs and not glob(os.path.join(PROBLEM_TTL_DIR, "*.ttl")):
+        print(f"error: no problem TTL files in {PROBLEM_TTL_DIR}\n"
+              "Generate them first:  python -m eliozo_dao.import_problems", file=sys.stderr)
+        sys.exit(1)
     ttl_files = collect_ttl_files(source_dirs)
     if not ttl_files:
         print("error: no .ttl files found in: " + ", ".join(source_dirs), file=sys.stderr)

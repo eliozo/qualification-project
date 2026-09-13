@@ -1,0 +1,20 @@
+{
+  "_about": [
+    "Git problem repositories published by `python -m eliozo_dao.import_problems`.",
+    "For every listed olympiad directory, each <problembase>/<olympiad>/<event>/content_<lang>.md is converted to Turtle.",
+    "The olympiad's own config.json supplies default_lang (that file is the master, the others are translations) and exclude_events.",
+    "exclude_events below is added to those. local_checkout is resolved against this file's directory and, when it exists,",
+    "is used instead of cloning git_url (pass --source git to force a clone, as the Jenkins load_rdf pipeline does)."
+  ],
+  "repositories": [
+    {
+      "name": "kapsitis-math",
+      "git_url": "https://github.com/kapsitis/math.git",
+      "branch": "master",
+      "local_checkout": "../../math",
+      "problembase": "problembase",
+      "olympiads": ["BOOK.BBK", "LV.AMO", "LV.NOL", "LV.SOL", "LV.VOL", "WW.IMO"],
+      "exclude_events": ["bbk2012-part1"]
+    }
+  ]
+}

@@ -28,14 +28,55 @@ pip install pyoxigraph
 
 (Once `setup.py` is updated, this is pulled in automatically.)
 
+## Importing problems from Git repositories
+
+Problems are published from Git problem repositories listed in
+[`eliozoapp/problem_repositories.json`](../problem_repositories.json) — one
+entry per repository, each naming the olympiad directories to publish:
+
+```json
+{
+  "name": "kapsitis-math",
+  "git_url": "https://github.com/kapsitis/math.git",
+  "branch": "master",
+  "local_checkout": "../../math",
+  "problembase": "problembase",
+  "olympiads": ["BOOK.BBK", "LV.AMO", "LV.NOL", "LV.SOL", "LV.VOL", "WW.IMO"],
+  "exclude_events": ["bbk2012-part1"]
+}
+```
+
+Every `<problembase>/<olympiad>/<event>/content_<lang>.md` is published.
+The olympiad's own `config.json` decides which language is the master
+(`default_lang`) and may list `exclude_events`; the entry above adds to those.
+Adding another repository is just another entry. No Google Sheet is involved.
+
+```bash
+python -m eliozo_dao.import_problems
+```
+
+| Option | Default | Effect |
+|---|---|---|
+| `--source auto` | ✓ | use `local_checkout` if it exists (uncommitted edits included), else clone `git_url` |
+| `--source git` | | always use a shallow, sparse clone in `data/problem_repos/<name>` (Jenkins) |
+| `--source local` | | only local checkouts; fail if one is missing |
+| `--output DIR` | `data/problem_ttl` | where the TTL files go (old `*.ttl` there are removed) |
+| `--images-dir DIR` | `eliozo/static/eliozo/images` | flat image directory (`ELIOZO_IMAGES_DIR`) |
+| `--no-images` | | skip copying images |
+
+The importer exits non-zero if any content file yields no problems (for
+example a `404: Not Found` body), and warns about image links in the Markdown
+whose file is missing. The converter itself is imported from the sibling
+`worksheet-generation-with-llms` checkout (`WORKSHEET_GENERATION_ROOT`).
+
 ## Importing RDF data
 
 The loader walks one or more directories for `*.ttl` files and bulk-loads
-them. Default source directories are the two TTL trees in the sibling
-`worksheet-generation-with-llms` project:
+them. Default source directories:
 
-- `worksheet-generation-with-llms/scripts/setup/resources/`
-- `worksheet-generation-with-llms/scripts/setup/temp/`
+- `worksheet-generation-with-llms/scripts/setup/resources/` — metadata
+  (topics, methods, olympiads, …)
+- `eliozoapp/data/problem_ttl/` — problems, written by `import_problems`
 
 Stop the Flask app first (oxigraph holds an exclusive lock on the store),
 then run:
@@ -43,6 +84,7 @@ then run:
 ```bash
 cd qualification-project/eliozoapp
 source ../venv-eliozo/bin/activate
+python -m eliozo_dao.import_problems
 python -m eliozo_dao.load_rdf
 ```
 
