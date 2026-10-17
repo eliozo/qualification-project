@@ -29,8 +29,22 @@ fi
 
 echo "OXIGRAPH_DB_PATH = $OXIGRAPH_DB_PATH"
 
+# Search by meaning uses PostgreSQL + pgvector and the OpenAI API. Their
+# settings (DB_*, OPENAI_API_KEY) are read from this dotenv file; it overrides
+# settings in the environment.
+: "${ELIOZO_ENV_FILE:=$PWD/../../eliozo-db/.env}"
+export ELIOZO_ENV_FILE
+
+# Make sure PostgreSQL is up; starts the eliozo-db Docker container if needed,
+# otherwise explains how to start the database and stops here.
+python -m eliozo_dao.postgres.check --start || exit 1
+
 export FLASK_APP=eliozo
 export FLASK_ENV=development
+# macOS AirPlay Receiver occupies port 5000, so use 5001 there by default.
+if [[ -z "$FLASK_RUN_PORT" && "$(uname)" == "Darwin" ]]; then
+    export FLASK_RUN_PORT=5001
+fi
 # Use "python -m flask" rather than the flask console script: a relocated venv
 # keeps an absolute interpreter path in its bin/ wrappers and they then fail.
 python -m flask run

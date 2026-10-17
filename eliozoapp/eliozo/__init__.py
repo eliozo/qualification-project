@@ -9,6 +9,7 @@ from .webmd_utils import fix_image_links, mathBeautify
 from eliozo_dao.problem_repository import (
     getSPARQLBook
 )
+from eliozo_dao.postgres.db import load_environment
 from collections import defaultdict
 from authlib.integrations.flask_client import OAuth
 
@@ -47,6 +48,10 @@ def custom_gettext(string, **variables):
     return translation
 
 def create_app(test_config=None):
+    # PostgreSQL settings and OPENAI_API_KEY (search by meaning) come from the
+    # environment, or from the dotenv file named by ELIOZO_ENV_FILE.
+    load_environment()
+
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
 

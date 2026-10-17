@@ -32,6 +32,20 @@ Build it first:
 
 Write-Host "OXIGRAPH_DB_PATH = $($env:OXIGRAPH_DB_PATH)"
 
+# Search by meaning uses PostgreSQL + pgvector and the OpenAI API. Their
+# settings (DB_*, OPENAI_API_KEY) are read from this dotenv file; it overrides
+# settings in the environment.
+if (-not $env:ELIOZO_ENV_FILE) {
+    $env:ELIOZO_ENV_FILE = Join-Path $PSScriptRoot "..\..\eliozo-db\.env"
+}
+
+# Make sure PostgreSQL is up; starts the eliozo-db Docker container if needed,
+# otherwise explains how to start the database and stops here.
+python -m eliozo_dao.postgres.check --start
+if ($LASTEXITCODE -ne 0) {
+    exit 1
+}
+
 $env:FLASK_APP = "eliozo"
 $env:FLASK_ENV = "development"
 # Use "python -m flask" rather than the flask.exe shim: this venv was created

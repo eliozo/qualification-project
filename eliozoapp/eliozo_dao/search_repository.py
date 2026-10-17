@@ -1,10 +1,14 @@
+import html
 import json
 
 from . import sparql_query
 from .problem_listing import (
+    PAGE_SIZE,
     SORT_KEY_PATTERN,
     SORT_KEY_VARIABLES,
     UNTAGGED,
+    chooseTranslation,
+    collectTranslation,
     listProblemsPage,
     preferredLanguage,
 )
@@ -14,6 +18,7 @@ from .problem_listing import (
 # in main_content.html.
 SEARCH_MODE_EXACT = 'exact'
 SEARCH_MODE_REGEX = 'regex'
+SEARCH_MODE_SEMANTIC = 'semantic'
 SEARCH_TARGET_PROBLEMS = 'questions'
 SEARCH_TARGET_SOLUTIONS = 'solutions'
 
@@ -193,3 +198,62 @@ def searchProblems(pattern, searchMode, searchTarget=SEARCH_TARGET_PROBLEMS, uiL
         p['matchLang'] = preferredLanguage(where['problem'] & set(p['translations']), uiLang)
         p['solutionMatchLang'] = preferredLanguage(where['solution'], uiLang)
     return result
+
+
+def getProblemTranslationsByIdSPARQL(problemIds):
+    """SPARQL JSON with every (problemid, problemTextHtml) pair of the given problem IDs."""
+    values = ' '.join('"%s"' % escape_sparql_literal(pid) for pid in problemIds)
+    return sparql_query("""PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+SELECT ?problemid ?textHtml
+WHERE {{
+    VALUES ?problemid {{ {values} }}
+    ?problem eliozo:problemID ?problemid ;
+             eliozo:problemTextHtml ?textHtml .
+}}
+""".format(values=values))
+
+
+def semanticSearchProblems(queryText, searchTarget=SEARCH_TARGET_PROBLEMS, uiLang=None,
+                           offset=0, pageSize=None):
+    """One page of search-by-meaning results, closest first.
+
+    The nearest problems come from PostgreSQL (``eliozo_dao.postgres``); the
+    texts shown are the HTML translations from the RDF store, chosen as on the
+    other result lists. Returns the same dict as ``searchProblems``; here
+    'solutionMatchLang' is set when a solution text is closer to the query
+    than the problem statement, and 'matchLang' is always None.
+
+    Raises if PostgreSQL or the embedding API is unavailable.
+    """
+    # Imported here so that the other search modes work without the
+    # PostgreSQL / OpenAI libraries installed.
+    from .postgres.semantic_search import semanticSearch
+
+    pageSize = PAGE_SIZE if pageSize is None else pageSize
+    offset = max(0, offset)
+    hits = semanticSearch(queryText, includeSolutions=(searchTarget == SEARCH_TARGET_SOLUTIONS))
+    page = hits[offset:offset + pageSize]
+
+    translations = {hit['problemid']: {} for hit in page}
+    if page:
+        for row in json.loads(getProblemTranslationsByIdSPARQL(list(translations)))['results']['bindings']:
+            collectTranslation(translations[row['problemid']['value']],
+                               row['textHtml'].get('xml:lang', UNTAGGED), row['textHtml']['value'])
+
+    problems = []
+    for hit in page:
+        texts = translations[hit['problemid']]
+        lang = chooseTranslation(texts, uiLang)
+        if lang is None:
+            # Not (or no longer) in the RDF store: show the stored Markdown as is.
+            lang = hit['contentLang']
+            textHtml = '<p>%s</p>' % html.escape(hit['content'])
+        else:
+            textHtml = texts[lang]
+        solutionMatchLang = None
+        if hit['inSolution']:
+            solutionMatchLang = hit['solutionLang'] if hit['solutionLang'] not in (None, UNTAGGED) else lang
+        problems.append({'problemid': hit['problemid'], 'lang': lang, 'textHtml': textHtml,
+                         'distance': hit['distance'], 'matchLang': None,
+                         'solutionMatchLang': solutionMatchLang})
+    return {'total': len(hits), 'offset': offset, 'pageSize': pageSize, 'problems': problems}

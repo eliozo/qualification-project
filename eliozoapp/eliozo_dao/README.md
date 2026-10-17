@@ -236,3 +236,39 @@ After confirming the app works against oxigraph you can safely:
 - Remove any port-9080 nginx / firewall rules.
 
 No code in this repo references Fuseki any more.
+
+## Search by meaning (PostgreSQL + pgvector)
+
+The "By meaning" search mode uses a second store: PostgreSQL with the
+pgvector extension, run from the sibling `eliozo-db` project (Docker on the
+workstation, a system PostgreSQL on the server). The code is in
+`eliozo_dao/postgres/`:
+
+| Module | Purpose |
+|---|---|
+| `db.py` | SQLAlchemy engine; `Problem` / `SolutionChunk` models mirroring the Alembic schema in `eliozo-db` |
+| `embeddings.py` | OpenAI `text-embedding-3-small` client (query embeddings are cached per process) |
+| `semantic_search.py` | the 20 nearest problems to a query (`SEMANTIC_RESULT_LIMIT`), by statement and, with "In solutions", by solution text |
+| `check.py` | `python -m eliozo_dao.postgres.check [--start]`, run by the `flask-run.*` scripts |
+| `load_problems.py` | copies problems and solutions from the oxigraph store into PostgreSQL |
+
+Settings come only from the environment: `DB_HOST`, `DB_PORT`, `DB_NAME`,
+`DB_USER`, `DB_PASSWORD` (or a single `DATABASE_URL`) and `OPENAI_API_KEY`.
+If `ELIOZO_ENV_FILE` names a dotenv file, it is loaded over the environment;
+the `flask-run.*` scripts point it at `../../eliozo-db/.env`.
+
+Before starting Flask, `flask-run.*` checks the database. If it is down and
+`docker-compose.yml` sits next to the env file (or in `ELIOZO_DB_COMPOSE_DIR`),
+the container is started; otherwise the script prints how to start
+PostgreSQL and exits.
+
+Loading data (re-creates both tables; the oxigraph store must be built):
+
+```bash
+export ELIOZO_ENV_FILE=$PWD/../../eliozo-db/.env
+python -m eliozo_dao.postgres.load_problems                      # fake vectors
+python -m eliozo_dao.postgres.load_problems --embeddings openai  # real vectors
+```
+
+With fake vectors the search runs end to end but the ranking is random;
+`--embeddings openai` embeds about 5300 texts (~1M tokens) in one go.
