@@ -1,0 +1,21 @@
+# Direct dependencies of the Eliozo Flask app, its tests and the problem
+# importer. Not installed directly: requirements.txt pins these and all their
+# dependencies to exact, tested versions. To refresh the pins see the header
+# of requirements.txt.
+#
+# The MCP service has its own file: mcp/prog-validate/requirements.txt.
+
+flask
+flask-babel
+authlib              # Google login
+requests
+markdown
+pyoxigraph           # embedded RDF store
+python-dotenv
+sqlalchemy           # search by meaning: PostgreSQL + pgvector
+psycopg[binary]
+pgvector
+openai               #   ... query embeddings
+mistletoe            # eliozo_dao.import_problems (converter in worksheet-generation-with-llms)
+rdflib               #   ... same
+pytest

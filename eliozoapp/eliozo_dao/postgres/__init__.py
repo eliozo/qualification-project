@@ -6,7 +6,8 @@ embeddings, so that they can be searched by meaning.
 
 Modules:
 
-  db               engine, environment loading, ``Problem`` / ``SolutionChunk``
+  env              loading of ELIOZO_ENV_FILE (needs only python-dotenv)
+  db               engine, ``Problem`` / ``SolutionChunk``
   embeddings       OpenAI embedding client
   semantic_search  nearest problems to a query text
   check            ``python -m eliozo_dao.postgres.check``: is the DB up?
@@ -15,5 +16,5 @@ Modules:
 
 The schema itself is owned by the Alembic migrations in ``eliozo-db``.
 Connection settings and the OpenAI key come from the environment only; see
-``db.load_environment``.
+``env.load_environment``.
 """

@@ -5,8 +5,8 @@ by ``DATABASE_URL`` or by the ``DB_HOST``, ``DB_PORT``, ``DB_NAME``,
 ``DB_USER`` and ``DB_PASSWORD`` variables. On the workstation they point at the
 Docker container of ``eliozo-db``; on the server at the system PostgreSQL.
 
-The variables come from the dotenv file named by ``ELIOZO_ENV_FILE`` (the
-``flask-run.*`` scripts set it to ``eliozo-db/.env``) or, without it, from the
+The variables come from the dotenv file named by ``ELIOZO_ENV_FILE``
+(``flask-run.py`` sets it to ``eliozo-db/.env``) or, without it, from the
 process environment (a systemd ``EnvironmentFile``, the shell). A file named
 explicitly wins over variables already in the environment, so that a stale
 OPENAI_API_KEY in the shell does not shadow the project's key.
@@ -18,12 +18,13 @@ The models mirror the tables created by the Alembic migrations in
 import os
 import threading
 
-from dotenv import load_dotenv
 from pgvector.sqlalchemy import Vector
 from sqlalchemy import (Boolean, DateTime, ForeignKey, Integer, Text, UniqueConstraint,
                         create_engine, func)
 from sqlalchemy.engine import URL
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
+
+from .env import load_environment
 
 # OpenAI text-embedding-3-small; the vector(...) width of both tables.
 EMBEDDING_DIM = 1536
@@ -36,18 +37,6 @@ DB_VARIABLES = ('DB_HOST', 'DB_PORT', 'DB_NAME', 'DB_USER', 'DB_PASSWORD')
 
 _engine = None
 _engine_lock = threading.Lock()
-
-
-def load_environment():
-    """Load the dotenv file named by ELIOZO_ENV_FILE, if any, over the environment.
-
-    Returns the path of the loaded file, or None.
-    """
-    path = os.environ.get('ELIOZO_ENV_FILE')
-    if path and os.path.isfile(path):
-        load_dotenv(path, override=True)
-        return path
-    return None
 
 
 def missing_settings():

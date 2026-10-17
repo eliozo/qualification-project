@@ -20,13 +20,16 @@ backend was Fuseki.
 
 ## One-time setup
 
-Install the dependency into your venv:
+Install the app's locked dependencies (pyoxigraph among them) into your venv:
 
 ```bash
-pip install pyoxigraph
+cd qualification-project/eliozoapp
+python -m pip install -r requirements.txt
 ```
 
-(Once `setup.py` is updated, this is pulled in automatically.)
+`requirements.txt` pins every package to an exact version that has been on
+PyPI for at least 14 days; `requirements.in` lists the direct dependencies.
+The header of `requirements.txt` explains how to refresh the pins.
 
 ## Importing problems from Git repositories
 
@@ -109,7 +112,7 @@ OXIGRAPH_DB_PATH=/var/lib/eliozo/oxigraph python -m eliozo_dao.load_rdf
 After loading you can start the Flask app:
 
 ```bash
-./flask-run.sh
+python flask-run.py
 ```
 
 ## Persistence and how often to run `load_rdf`
@@ -246,18 +249,19 @@ workstation, a system PostgreSQL on the server). The code is in
 
 | Module | Purpose |
 |---|---|
+| `env.py` | loads `ELIOZO_ENV_FILE`; needs only python-dotenv, so the app starts even without the PostgreSQL packages ("By meaning" then reports it is unavailable) |
 | `db.py` | SQLAlchemy engine; `Problem` / `SolutionChunk` models mirroring the Alembic schema in `eliozo-db` |
 | `embeddings.py` | OpenAI `text-embedding-3-small` client (query embeddings are cached per process) |
 | `semantic_search.py` | the 20 nearest problems to a query (`SEMANTIC_RESULT_LIMIT`), by statement and, with "In solutions", by solution text |
-| `check.py` | `python -m eliozo_dao.postgres.check [--start]`, run by the `flask-run.*` scripts |
+| `check.py` | `python -m eliozo_dao.postgres.check [--start]`, run by `flask-run.py` |
 | `load_problems.py` | copies problems and solutions from the oxigraph store into PostgreSQL |
 
 Settings come only from the environment: `DB_HOST`, `DB_PORT`, `DB_NAME`,
 `DB_USER`, `DB_PASSWORD` (or a single `DATABASE_URL`) and `OPENAI_API_KEY`.
 If `ELIOZO_ENV_FILE` names a dotenv file, it is loaded over the environment;
-the `flask-run.*` scripts point it at `../../eliozo-db/.env`.
+`flask-run.py` points it at `../../eliozo-db/.env`.
 
-Before starting Flask, `flask-run.*` checks the database. If it is down and
+Before starting Flask, `flask-run.py` checks the database. If it is down and
 `docker-compose.yml` sits next to the env file (or in `ELIOZO_DB_COMPOSE_DIR`),
 the container is started; otherwise the script prints how to start
 PostgreSQL and exits.

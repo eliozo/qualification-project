@@ -3,8 +3,8 @@
     python -m eliozo_dao.postgres.check           # check only
     python -m eliozo_dao.postgres.check --start   # also try `docker compose up`
 
-The ``flask-run.*`` scripts call this with ``--start`` before starting Flask
-and stop if it exits non-zero. ``--start`` only starts a database that is run
+``flask-run.py`` calls this with ``--start`` before starting Flask and stops
+if it fails. ``--start`` only starts a database that is run
 by Docker Compose: a ``docker-compose.yml`` in ELIOZO_DB_COMPOSE_DIR, or else
 next to the ELIOZO_ENV_FILE. A system-managed PostgreSQL (the Ubuntu server)
 is never started from here; a reminder is printed instead.

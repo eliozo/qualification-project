@@ -9,7 +9,7 @@ from .webmd_utils import fix_image_links, mathBeautify
 from eliozo_dao.problem_repository import (
     getSPARQLBook
 )
-from eliozo_dao.postgres.db import load_environment
+from eliozo_dao.postgres.env import load_environment
 from collections import defaultdict
 from authlib.integrations.flask_client import OAuth
 

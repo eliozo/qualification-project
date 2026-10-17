@@ -1,0 +1,75 @@
+# Locked dependencies of the Eliozo Flask app (generated from requirements.in).
+#
+#     python -m pip install -r requirements.txt
+#
+# Every package -- direct and indirect -- is pinned to an exact version, so an
+# install never picks up a release published after these pins were made (a
+# compromised or broken "zero-day" upload). The pins are the newest versions
+# uploaded to PyPI before the cut-off below, 14 days before they were made,
+# resolved with wheels only (no build scripts run during install).
+#
+#   cut-off:   2026-10-03T00:00:00Z   (pins made 2026-10-17)
+#   checked:   Windows x64, Linux x86_64 (manylinux), macOS x86_64 and arm64;
+#              Python 3.11 - 3.14; tests + app smoke test on macOS / 3.14
+#
+# Exceptions to "newest before the cut-off":
+#   cryptography 48.0.1   newer releases have no wheels for Intel Macs
+#
+# Refreshing: in a fresh venv, with pip >= 26 and a new cut-off date C,
+#     python -m pip install --only-binary :all: --uploaded-prior-to C -r requirements.in
+#     python -m pip freeze
+# then review the changes, re-check the platforms, run the tests, and keep
+# the Windows-only pins at the end (pip freeze on macOS/Linux omits them).
+
+annotated-types==0.8.0
+anyio==4.15.1
+Authlib==1.8.0
+babel==2.18.0
+blinker==1.9.0
+certifi==2026.7.22
+cffi==2.1.1
+charset-normalizer==3.5.2
+click==8.5.0
+cryptography==48.0.1
+Flask==3.1.3
+flask-babel==4.0.0
+h11==0.16.0
+httpcore2==2.13.1
+httpx2==2.13.1
+idna==3.20
+iniconfig==2.3.0
+itsdangerous==2.2.0
+Jinja2==3.1.6
+jiter==0.17.0
+joserfc==1.7.5
+Markdown==3.11
+MarkupSafe==3.0.4
+mistletoe==1.6.0
+openai==3.24.0
+packaging==26.3
+pgvector==0.5.0
+pluggy==1.6.0
+psycopg[binary]==3.3.6
+psycopg-binary==3.3.6
+pycparser==3.0
+pydantic==2.13.5
+pydantic_core==2.46.5
+Pygments==2.21.0
+pyoxigraph==0.5.11
+pyparsing==3.3.3
+pytest==9.1.1
+python-dotenv==1.2.4
+pytz==2026.4
+rdflib==7.6.0
+requests==2.34.2
+sniffio==1.3.1
+SQLAlchemy==2.1.2
+truststore==0.10.4
+typing-inspection==0.4.4
+typing_extensions==4.16.0
+urllib3==2.8.0
+Werkzeug==3.1.9
+
+# Windows only (dependencies of click, pytest and psycopg there)
+colorama==0.4.6 ; sys_platform == "win32"
+tzdata==2026.4 ; sys_platform == "win32"
