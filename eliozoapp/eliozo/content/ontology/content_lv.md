@@ -13,17 +13,17 @@ Visi turpmāk lietotie nosaukumi pieder divām vārdtelpām:
 
 ## Klasifikatori
 
-| Klasifikators | Ko tas apraksta | Uzdevuma īpašība | Vērtības | Pārlūkot |
+| Klasifikators | Kas tajā aprakstīts | Uzdevuma īpašība | Vērtības | Pārlūkot |
 |---|---|---|---|---|
-| [Temati](/content/ontology_topics) | teoriju, ko izmanto atrisinājums | `eliozo:topic` | `eliozo:Topic` virsotnes | [pēc tēmas](/topics), [tēmu tabula](/topics_table) |
-| [Metodes](/content/ontology_methods) | atrisinājuma spriedumu šablonu | `eliozo:method` | `eliozo:Method` virsotnes | [pēc metodes](/methods) |
-| [Žanri](/content/ontology_genres) | kā uzdevums izskatās, tā "sižetu" | `eliozo:domain`, `eliozo:subdomain` | teksts; `eliozo:Domain` virsotnes | [pēc žanra](/genres) |
-| [Jautājumu tipi](/content/ontology_question_types) | kāda veida atbilde prasīta | `eliozo:questionType` | teksts | [Filtri](/filter) |
-| [Jēdzieni](/content/ontology_concepts) | jēdzienus uzdevuma formulējumā | `eliozo:concepts` | `eliozo:Concept` virsotnes | [pēc jēdziena](/concepts) |
-| [Olimpiādes](/content/ontology_olympiads) | sacensības | `eliozo:olympiad` | teksts | [Olimpiādes](/olympiads) |
-| [Modeļi](/content/ontology_models) | matemātisko struktūru, ko uzbūvē risinātājs | *plānots* | | |
-| [Norāžu tipi](/content/ontology_hint_types) | heiristisko norāžu veidus | *plānots* | | |
-| [Norādes](/content/ontology_hints) | viena uzdevuma norādes | *plānots* | | |
+| [Temati](/content/ontology_topics) | teorija atrisinājumos | `eliozo:topic` | `eliozo:Topic` virsotnes | [pēc tēmas](/topics), [tēmu tabula](/topics_table) |
+| [Metodes](/content/ontology_methods) | atrisinājuma spriedumu šablons | `eliozo:method` | `eliozo:Method` virsotnes | [pēc metodes](/methods) |
+| [Žanri](/content/ontology_genres) | uzdevuma formulējuma piederība grupai | `eliozo:domain`, `eliozo:subdomain` | teksts; `eliozo:Domain` virsotnes | [pēc žanra](/genres) |
+| [Jautājumu tipi](/content/ontology_question_types) | jautājuma tips (un atrisinājuma sagaidāmā struktūra) | `eliozo:questionType` | teksts | [Filtri](/filter) |
+| [Jēdzieni](/content/ontology_concepts) | jēdzieni uzdevuma formulējumā vai atrisinājumos | `eliozo:concepts` | `eliozo:Concept` virsotnes | [pēc jēdziena](/concepts) |
+| [Olimpiādes](/content/ontology_olympiads) | olimpiāde vai cits avots | `eliozo:olympiad` | teksts | [Olimpiādes](/olympiads) |
+| [Modeļi](/content/ontology_models) | "nesošā" matemātiskā struktūra atrisinājumā | *plānots* | | |
+| [Ieteikumu tipi](/content/ontology_hint_types) | risināšanas fāze vai ieteikuma heiristika | *plānots* | | |
+| [Ieteikumi](/content/ontology_hints) | ieteikumi konkrētajam uzdevumam | *plānots* | | |
 
 Kā klasifikatori saistīti savā starpā:
 
@@ -34,11 +34,11 @@ vēl nerisinot: tā *žanrs* (ārējā līdzība, sižets), *jēdzieni* nosacīj
 *jautājuma tips* (prasītās atbildes struktūra). **Atrisinājuma slānis** (pa labi)
 apraksta vienu konkrētu atrisinājumu: tā *tematu* (teoriju), *modeli* (matemātisko
 struktūru, ko uzbūvē risinātājs; modelis ir tilts starp abiem slāņiem) un *metodi*
-(spriedumu šablonu). Zem tiem *norāžu kāpnes* (hint ladder) atbalsta risinātāju un
+(spriedumu šablonu). Zem tiem *ieteikumu kāpnes* (hint ladder) atbalsta risinātāju un
 iesaka modeļus un metodes.
 
-Nepārtrauktās bultas ir strukturālas atsauces starp klasifikatoru tabulām,
-svītrotās — tipiskas saistības ("skatīt arī"), punktētās — norādes risinātājam.
+Nepārtrauktās līnijas ir strukturālās saites starp klasifikatoru tabulām,
+svītrotās — citas saites ("skatīt arī").
 Ar `*` atzīmētās saites ir ierosinātas un vēl nav aizpildītas.
 
 ## Uzdevuma virsotne

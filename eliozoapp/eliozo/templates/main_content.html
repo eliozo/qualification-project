@@ -41,8 +41,9 @@
                     <option value="solutions" {% if searchTarget=='solutions' %}selected{% endif %}>
                         {% trans %}In solutions{% endtrans %}</option>
                 </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="{{ url_for('advanced_search.getAdvancedSearch') }}">{% trans %}Advanced search{% endtrans %}</a>
             </div>
-
 
             <div class="search-container" style="border-radius: 24px; align-items: flex-end; padding: 5px;">
                 <textarea class="search-input" placeholder="Search ELIOZO" name="keyword" rows="1"
@@ -52,9 +53,7 @@
                     <img src="{{ url_for('static',filename='magnifying-glass.png') }}" alt="Search" />
                 </button>
             </div>
-            <p style="text-align: right; font-size: 85%; margin: 4px 12px 0 0;">
-                <a href="{{ url_for('advanced_search.getAdvancedSearch') }}">{% trans %}Advanced search{% endtrans %}</a>
-            </p>
+
             <script>
                 $(document).ready(function () {
                     const searchInput = $('.search-input');

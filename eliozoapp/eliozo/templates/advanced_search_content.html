@@ -69,8 +69,6 @@
         }
     </style>
 
-    <h2>{% trans %}Advanced search{% endtrans %}</h2>
-
     <form class="advanced-search" action="{{ url_for('advanced_search.getAdvancedSearch') }}" method="post">
         <div class="form-group">
             <label for="sparqlQuery">{% trans %}SPARQL query{% endtrans %}</label>

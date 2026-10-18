@@ -1,15 +1,18 @@
-# Norāžu tipi
+# Ieteikumu tipi
 
-**Norādes tips** ir heiristiska padoma veids, kas palīdz risinātājam, kurš iestrēdzis:
-"izmēģini mazos gadījumus", "meklē invariantu", "pieņem pretējo". Norāžu tipi seko
-uzdevumu risināšanas fāzēm, ko aprakstījuši Dž. Poja un P. Zeics. Katra konkrēta
-uzdevuma [norāde](/content/ontology_hints) ir kāda norādes tipa. Skatīt arī
+**Ieteikuma tips** ir heiristisks padoms, lai palīdzētu sākt risināt:
+"izmēģini mazos gadījumus", "meklē invariantu", "pieņem pretējo". Daži 
+ieteikumu tipi atbilst
+uzdevumu risināšanas fāzēm, ko aprakstījuši Dž. Poja un P. Zeics
+(*Saprašana → Izpēte → Pārformulēšana → Risināšana → Atskats*)
+Konkrētam uzdevumam [norāde](/content/ontology_hints) ir īss vēstījums (līdz 140 drukas 
+simboliem), kas satur 1-2 ieteikumu tipus kā heštagus. Sk. arī
 [ontoloģijas pārskatu](/ontology).
 
-**Statuss: plānots.** Norāžu tipu saraksts ir izveidots, taču RDF krātuvē tā vēl nav,
-tāpēc vaicājumos to vēl nevar izmantot.
+**Statuss: plānots.** Ieteikumu tipu saraksts ir izveidots, taču RDF krātuvē 
+tos neatspoguļojam, tāpēc arī SPARQL vaicājumos tos pagaidām neizmantojam.
 
-## Norāžu tipi
+## Ieteikumu tipi
 
 | Fāze | Norāžu tipi |
 |---|---|

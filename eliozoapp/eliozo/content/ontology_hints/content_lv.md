@@ -1,17 +1,15 @@
-# Norādes
+# Ieteikumi
 
-**Norādes** pieder vienam uzdevumam: īsa padomu virkne no vispārīgākā līdz
-konkrētākajam (*norāžu kāpnes*, hint ladder). Risinātājs, kurš iestrēdzis, lasa pa
-vienai norādei un saņem tieši tik daudz palīdzības, cik vajag.
-[Klasifikatoru grafā](/ontology) norāžu kāpnes ir risinātāja atbalsts: to norādes
-iesaka [modeļus](/content/ontology_models) un [metodes](/content/ontology_methods).
+**Ieteikumi** pieder vienam uzdevumam: ieteikumi parasti veido virkni no vispārīgāka
+līdz konkrētākajam (*ieteikumu kāpnes*, hint ladder). Risinātājs, kurš iestrēdzis, 
+var tās atvērt pa vienai. 
+[Klasifikatoru grafā](/ontology) ieteikumu kāpnes ir risinātāja atbalsts: to ieteikumi
+mēdz norādīt [modeļus](/content/ontology_models) un [metodes](/content/ontology_methods).
 
-Katra norāde ir klasificēta ar [norādes tipu](/content/ontology_hint_types), lai,
-piemēram, varētu atrast visus uzdevumus, kuru kāpnēs ir "meklē invariantu", un
-salīdzināt kāpņu fāzes (saprast, izpētīt, pārformulēt, risināt, atskatīties) dažādos
-uzdevumos.
+Katru ieteikumu klasificē 1-2 [ieteikumu tipi](/content/ontology_hint_types), lai
+varētu grupēt uzdevumus, kuros lietojamas līdzīgas heiristikas (piemēram, "meklē invariantu"). 
+Ieteikumi mēdz atbilst risināšanas fāzei (*Saprašana → Izpēte → Pārformulēšana → Risināšana → Atskats*)
 
-**Statuss: plānots.** Norādes vēl netiek glabātas kopā ar uzdevumiem, un vaicājumos tās
-vēl nevar izmantot. Līdz tam tuvākais aizstājējs, lai atrastu uzdevumus pēc to
-atrisinājuma idejas, ir automātiski ieteiktās īpašības `eliozo:_hasReasoningMethod`
+**Statuss: plānots.** Vairumam uzdevumu ieteikumu vēl nav; 
+vaicājumos tās nevar izmantot. Tuvākais aizstājējs ir automātiski ieteiktās īpašības `eliozo:_hasReasoningMethod`
 un `eliozo:_hasSolutionConcept` (sk. [pārskatu](/ontology)).

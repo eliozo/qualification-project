@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-01-04 00:47+0200\n"
+"POT-Creation-Date: 2026-10-18 20:12+0300\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -18,14 +18,238 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: templates/archive_content.html:41
-msgid "Books"
-msgstr "Books"
+#: navigation.py:22 templates/global.html:17 templates/global.html:152
+msgid "Home"
+msgstr "Home"
 
-#: templates/book_problems_content.html:5 templates/video_content.html:5
-#: templates/worksheets_content.html:5
-msgid "Back"
-msgstr "Back"
+#: navigation.py:27
+msgid "Filters"
+msgstr "Filters"
+
+#: navigation.py:32
+msgid "Archive"
+msgstr "Archive"
+
+#: navigation.py:35 templates/stats_propertycounts.html:14
+msgid "Olympiads"
+msgstr "Olympiads"
+
+#: navigation.py:36 templates/filter_content.html:189
+msgid "Video"
+msgstr "Video"
+
+#: navigation.py:40
+msgid "Order"
+msgstr "Order"
+
+#: navigation.py:43
+msgid "by Topic"
+msgstr "by Topic"
+
+#: navigation.py:44
+msgid "by Method"
+msgstr "by Method"
+
+#: navigation.py:45
+msgid "by Genre"
+msgstr "by Genre"
+
+#: navigation.py:46
+msgid "by Concept"
+msgstr "by Concept"
+
+#: navigation.py:47
+#, fuzzy
+msgid "Topics Table"
+msgstr "Topics"
+
+#: navigation.py:51
+msgid "Reports"
+msgstr "Reports"
+
+#: navigation.py:54
+msgid "Olympiad Curriculum"
+msgstr "Olympiad Curriculum"
+
+#: navigation.py:55
+msgid "Problem Count"
+msgstr "Problem Count"
+
+#: navigation.py:56
+msgid "Property Usage"
+msgstr "Property Usage"
+
+#: navigation.py:57
+msgid "Result Summary"
+msgstr "Result Summary"
+
+#: navigation.py:61 navigation.py:65
+msgid "Worksheets"
+msgstr ""
+
+#: navigation.py:69
+msgid "About Us"
+msgstr "About Us"
+
+#: navigation.py:72
+msgid "References"
+msgstr "References"
+
+#: navigation.py:73
+msgid "Contact Information"
+msgstr "Contact Information"
+
+# Ontology documentation (blueprints/references,
+# templates/advanced_search_content.html)
+#: navigation.py:74
+msgid "Ontology"
+msgstr "Ontology"
+
+#: navigation.py:75
+msgid "Exact Search"
+msgstr "Exact Search"
+
+#: navigation.py:77
+msgid "Regex Search"
+msgstr "Regex Search"
+
+#: navigation.py:87
+msgid "Logout"
+msgstr ""
+
+#: navigation.py:89
+msgid "Login"
+msgstr ""
+
+#: templates/_paging.html:6
+msgid "Pages"
+msgstr "Pages"
+
+# Advanced search (templates/advanced_search_content.html)
+#: templates/advanced_search_content.html:72 templates/main_content.html:56
+msgid "Advanced search"
+msgstr "Advanced search"
+
+#: templates/advanced_search_content.html:76
+msgid "SPARQL query"
+msgstr "SPARQL query"
+
+#: templates/advanced_search_content.html:78
+msgid "Ontology: classes and properties to use in queries"
+msgstr "Ontology: classes and properties to use in queries"
+
+#: templates/advanced_search_content.html:84
+msgid "Preset queries"
+msgstr "Preset queries"
+
+#: templates/advanced_search_content.html:94
+msgid ""
+"The query must select the variable <code>?problemID</code>. The optional "
+"variables <code>?section</code> and <code>?subsection</code> group the "
+"problems under subtitles."
+msgstr ""
+"The query must select the variable <code>?problemID</code>. The optional "
+"variables <code>?section</code> and <code>?subsection</code> group the "
+"problems under subtitles."
+
+#: templates/advanced_search_content.html:95
+msgid "Ctrl+Enter starts the search."
+msgstr "Ctrl+Enter starts the search."
+
+#: templates/advanced_search_content.html:100
+msgid "Limit"
+msgstr "Limit"
+
+#: templates/advanced_search_content.html:103
+#, python-format
+msgid "at most %(max)s"
+msgstr "at most %(max)s"
+
+#: templates/advanced_search_content.html:106 templates/filter_content.html:215
+#: templates/main_content.html:13
+msgid "Search"
+msgstr "Search"
+
+#: templates/advanced_search_content.html:124
+#: templates/advanced_search_content.html:240
+#, python-format
+msgid "Syntax error at line %(line)s, column %(column)s"
+msgstr "Syntax error at line %(line)s, column %(column)s"
+
+#: templates/advanced_search_content.html:125
+#, python-format
+msgid "unexpected %(token)s"
+msgstr "unexpected %(token)s"
+
+#: templates/advanced_search_content.html:126
+msgid "the query ends too early"
+msgstr "the query ends too early"
+
+#: templates/advanced_search_content.html:127
+msgid "expected one of"
+msgstr "expected one of"
+
+#: templates/advanced_search_content.html:195
+msgid "Replace the query in the text field?"
+msgstr "Replace the query in the text field?"
+
+#: templates/advanced_search_content.html:219
+#, python-format
+msgid "The limit must be a whole number from 1 to %(max)s."
+msgstr "The limit must be a whole number from 1 to %(max)s."
+
+#: templates/advanced_search_content.html:226
+msgid "Please enter a SPARQL query."
+msgstr "Please enter a SPARQL query."
+
+#: templates/advanced_search_content.html:228
+msgid "The query is too long."
+msgstr "The query is too long."
+
+#: templates/advanced_search_content.html:230
+msgid "Only SELECT queries can be run."
+msgstr "Only SELECT queries can be run."
+
+#: templates/advanced_search_content.html:232
+msgid "Queries that change data are not allowed."
+msgstr "Queries that change data are not allowed."
+
+#: templates/advanced_search_content.html:234
+msgid "SERVICE (federated queries) is not allowed."
+msgstr "SERVICE (federated queries) is not allowed."
+
+#: templates/advanced_search_content.html:236
+msgid "The query must select the variable ?problemID."
+msgstr "The query must select the variable ?problemID."
+
+#: templates/advanced_search_content.html:238
+msgid "The query took too long and was stopped."
+msgstr "The query took too long and was stopped."
+
+#: templates/advanced_search_content.html:240
+msgid "Syntax error"
+msgstr "Syntax error"
+
+#: templates/advanced_search_content.html:247
+msgid "The query could not be run"
+msgstr "The query could not be run"
+
+#: templates/advanced_search_content.html:255
+msgid "Nothing was found."
+msgstr "Nothing was found."
+
+#: templates/advanced_search_content.html:258
+#, python-format
+msgid "Results: %(n)s"
+msgstr "Results: %(n)s"
+
+#: templates/advanced_search_content.html:259
+msgid "The query has more results; increase the limit to see them."
+msgstr "The query has more results; increase the limit to see them."
+
+#: templates/archive_content.html:45
+msgid "Books and Collections:"
+msgstr ""
 
 #: templates/concepts_content.html:17 templates/concepts_content.html:18
 msgid "Concept"
@@ -35,29 +259,61 @@ msgstr "Concept"
 msgid "Usage"
 msgstr "Usage"
 
-#: templates/curriculum_content.html:60
+#: templates/curriculum_content.html:8 templates/stats_problemcounts.html:18
+msgid "Olympiad"
+msgstr "Olympiad"
+
+#: templates/curriculum_content.html:18
+msgid "Years"
+msgstr ""
+
+#: templates/curriculum_content.html:26
+#, fuzzy
+msgid "Grades"
+msgstr "Grade"
+
+#: templates/curriculum_content.html:33
+msgid "Show"
+msgstr ""
+
+#: templates/curriculum_content.html:40
+msgid "Question Types"
+msgstr "Question Types"
+
+#: templates/curriculum_content.html:41 templates/problem_content.html:77
+msgid "Topics"
+msgstr "Topics"
+
+#: templates/curriculum_content.html:43 templates/curriculum_content.html:116
 msgid "Methods"
 msgstr "Methods"
+
+#: templates/curriculum_content.html:45 templates/curriculum_content.html:147
+#, fuzzy
+msgid "Subdomains"
+msgstr "Domain"
 
 #: templates/filter_content.html:10
 msgid "Grade"
 msgstr "Grade"
 
-#: templates/filter_content.html:29 templates/filter_content.html:55
-#: templates/filter_content.html:85 templates/filter_content.html:114
-#: templates/filter_content.html:146 templates/filter_content.html:172
-#: templates/filter_content.html:197
+#: templates/filter_content.html:28 templates/filter_content.html:54
+#: templates/filter_content.html:84 templates/filter_content.html:115
+#: templates/filter_content.html:154 templates/filter_content.html:180
+#: templates/filter_content.html:206
 msgid "Remove Filter"
 msgstr "Remove filter"
 
-#: templates/filter_content.html:32
+#: templates/filter_content.html:31
 msgid "An olympiad problem usually belongs to some grade."
 msgstr "An olympiad problem usually belongs to some grade."
 
-#: templates/filter_content.html:33
+#: templates/filter_content.html:32
+#, fuzzy
 msgid ""
 "Problems in textbooks, contests or international olympiads are often "
-"suggested for multiple grades."
+"suggested for\n"
+"                        multiple grades."
 msgstr ""
 "Problems in textbooks, contests or international olympiads are often "
 "suggested for multiple grades."
@@ -66,10 +322,11 @@ msgstr ""
 msgid "Source"
 msgstr "Source"
 
-#: templates/filter_content.html:58
+#: templates/filter_content.html:57
+#, fuzzy
 msgid ""
-"Regional or open olympiads cover fewer topics and require less "
-"preparation compared to others."
+"Regional or open olympiads cover fewer topics and require less\n"
+"                        preparation compared to others."
 msgstr ""
 "Regional or open olympiads cover fewer topics and require less "
 "preparation compared to others."
@@ -110,184 +367,138 @@ msgstr "Number theory"
 msgid "Question"
 msgstr "Question"
 
-#: templates/filter_content.html:117
+#: templates/filter_content.html:119
 msgid "A question type implies the structure of a solution."
 msgstr "A question type implies the structure of a solution."
 
-#: templates/filter_content.html:118
+#: templates/filter_content.html:121
 msgid "Every subitem (A,B,...) may have its own question type."
 msgstr "Every subitem (A,B,...) may have its own question type."
 
-#: templates/filter_content.html:119
+#: templates/filter_content.html:122
 msgid "Find all solutions, show that there are no others."
 msgstr "Find all solutions, show that there are no others."
 
-#: templates/filter_content.html:120
+#: templates/filter_content.html:124
 msgid "Determine the count of answers or other objects."
 msgstr "Determine the count of answers or other objects."
 
-#: templates/filter_content.html:121
+#: templates/filter_content.html:126
 msgid "Find the largest, the smallest or the \"best\" solution."
 msgstr "Find the largest, the smallest or the \"best\" solution."
 
-#: templates/filter_content.html:122
+#: templates/filter_content.html:128
 msgid "Provide any example satisfying the requirements."
 msgstr "Provide any example satisfying the requirements."
 
-#: templates/filter_content.html:123
+#: templates/filter_content.html:130
 msgid "Prove the given statement."
 msgstr "Prove the given statement."
 
-#: templates/filter_content.html:124
+#: templates/filter_content.html:131
 msgid "Prove or disprove the given statement."
 msgstr "Prove or disprove the given statement."
 
-#: templates/filter_content.html:125
+#: templates/filter_content.html:132
 msgid "Describe a procedure, a construction, a game strategy."
 msgstr "Describe a procedure, a construction, a game strategy."
 
-#: templates/filter_content.html:126
+#: templates/filter_content.html:134
 msgid "Enter an answer such as a number, a multiple choice or Yes/No."
 msgstr "Enter an answer such as a number, a multiple choice or Yes/No."
 
-#: templates/filter_content.html:130
+#: templates/filter_content.html:139
 msgid "Method"
 msgstr "Method"
 
-#: templates/filter_content.html:149
+#: templates/filter_content.html:158
 msgid "Method used in a solution."
 msgstr "Method used in a solution."
 
-#: templates/filter_content.html:150
+#: templates/filter_content.html:159
 msgid "Unlike other metadata method is often unspecified."
 msgstr "Unlike other metadata method is often unspecified."
 
-#: templates/filter_content.html:154 templates/problem_content.html:61
+#: templates/filter_content.html:163 templates/problem_content.html:95
 msgid "Solution"
 msgstr "Solution"
 
-#: templates/filter_content.html:175
+#: templates/filter_content.html:184
 msgid "Problems having at least one solution."
 msgstr "Problems having at least one solution."
 
-#: templates/filter_content.html:179 templates/global.html:139
-msgid "Video"
-msgstr "Video"
-
-#: templates/filter_content.html:200
+#: templates/filter_content.html:210
 msgid "Problems with video-recorded solutions."
 msgstr "Problems with video-recorded solutions."
 
-#: templates/filter_content.html:204 templates/main_content.html:13
-msgid "Search"
-msgstr "Search"
-
-#: templates/filter_content.html:206
-msgid "Pages"
-msgstr "Pages"
-
-#: templates/filter_content.html:222 templates/main_content.html:59
+#: templates/filter_content.html:226 templates/grade_content.html:38
+#: templates/main_content.html:223
 msgid "More"
 msgstr "More"
 
-#: templates/global.html:16 templates/global.html:105 templates/global.html:174
-msgid "Home"
-msgstr "Home"
-
-#: templates/global.html:107
-msgid "Filters"
-msgstr "Filters"
-
-#: templates/global.html:109
-msgid "Archive"
-msgstr "Archive"
-
-#: templates/global.html:119
-msgid "Order"
-msgstr "Order"
-
-#: templates/global.html:122
-msgid "by Topic"
-msgstr "by Topic"
-
-#: templates/global.html:123
-msgid "by Method"
-msgstr "by Method"
-
-#: templates/global.html:124
-msgid "by Genre"
-msgstr "by Genre"
-
-#: templates/global.html:125
-msgid "by Concept"
-msgstr "by Concept"
-
-#: templates/global.html:132
-msgid "Reports"
-msgstr "Reports"
-
-#: templates/global.html:135
-msgid "Olympiad Curriculum"
-msgstr "Olympiad Curriculum"
-
-#: templates/global.html:136
-msgid "Problem Count"
-msgstr "Problem Count"
-
-#: templates/global.html:137
-msgid "Property Usage"
-msgstr "Property Usage"
-
-#: templates/global.html:138
-msgid "Result Summary"
-msgstr "Result Summary"
-
-#: templates/global.html:144
-msgid "Worksheets"
-msgstr ""
-
-#: templates/global.html:149
-msgid "About Us"
-msgstr "About Us"
-
-#: templates/global.html:152
-msgid "References"
-msgstr "References"
-
-#: templates/global.html:153
-msgid "Contact Information"
-msgstr "Contact Information"
-
-#: templates/main_content.html:17
+#: templates/main_content.html:16
 msgid "Exactly"
 msgstr "Exactly"
 
-#: templates/main_content.html:23
+#: templates/main_content.html:21
 msgid "Regex"
 msgstr "Regex"
 
-#: templates/main_content.html:29
+#: templates/main_content.html:27
 msgid "By meaning"
 msgstr "By meaning"
 
-#: templates/main_content.html:36
-msgid "In questions"
-msgstr "In questions"
+#: templates/main_content.html:29
+msgid "How exact search works"
+msgstr "How exact search works"
 
-#: templates/main_content.html:37
-msgid "Everywhere"
-msgstr "Everywhere"
+#: templates/main_content.html:33
+msgid "How regular expression search works"
+msgstr "How regular expression search works"
 
-#: templates/problem_content.html:52
-msgid "Topics"
-msgstr "Topics"
+#: templates/main_content.html:40
+msgid "In problems"
+msgstr "In problems"
 
-#: templates/problem_content.html:63
+#: templates/main_content.html:42
+msgid "In solutions"
+msgstr "In solutions"
+
+#: templates/main_content.html:156
+msgid "Open as a page"
+msgstr "Open as a page"
+
+#: templates/main_content.html:158
+msgid "Close"
+msgstr "Close"
+
+#: templates/main_content.html:174
+msgid ""
+"Search by meaning is not available right now. Please try the exact or "
+"regex search."
+msgstr ""
+"Search by meaning is not available right now. Please try the exact or "
+"regex search."
+
+#: templates/main_content.html:210
+#, python-format
+msgid "Found in the %(code)s translation"
+msgstr "Found in the %(code)s translation"
+
+#: templates/main_content.html:216
+#, python-format
+msgid "Found in a solution (%(code)s)"
+msgstr "Found in a solution (%(code)s)"
+
+#: templates/problem_content.html:98
 msgid "No solution"
 msgstr "No solution"
 
-#: templates/problem_solution_content.html:14
-msgid "Hide solution"
+#: templates/problem_solution_content.html:80
+#, fuzzy
+msgid ""
+"Hide\n"
+"        solution"
 msgstr "Hide solution"
 
 #: templates/stats_problemcounts.html:15
@@ -301,10 +512,6 @@ msgstr "Entered"
 #: templates/stats_problemcounts.html:16
 msgid "Solved"
 msgstr "Solved"
-
-#: templates/stats_problemcounts.html:18
-msgid "Olympiad"
-msgstr "Olympiad"
 
 #: templates/stats_propertycounts.html:7
 msgid ""
@@ -326,10 +533,6 @@ msgstr "in the ontology"
 #: templates/stats_propertycounts.html:45
 msgid "Property Name"
 msgstr "Property Name"
-
-#: templates/stats_propertycounts.html:14
-msgid "Olympiads"
-msgstr "Olympiads"
 
 #: templates/stats_propertycounts.html:16
 msgid "Olympiad problems"
@@ -367,41 +570,20 @@ msgstr "Number of metadata attribute values"
 msgid "Number of Values"
 msgstr "Number of Values"
 
-msgid "Exact Search"
-msgstr "Exact Search"
+#: templates/topics_table.html:8
+#, fuzzy
+msgid "Number"
+msgstr "Number theory"
 
-msgid "Regex Search"
-msgstr "Regex Search"
+#: templates/topics_table.html:9
+#, fuzzy
+msgid "Topic Name"
+msgstr "Topics"
 
-msgid "How exact search works"
-msgstr "How exact search works"
-
-msgid "How regular expression search works"
-msgstr "How regular expression search works"
-
-msgid "Open as a page"
-msgstr "Open as a page"
-
-msgid "Close"
-msgstr "Close"
-
-msgid "In problems"
-msgstr "In problems"
-
-msgid "In solutions"
-msgstr "In solutions"
-
-#, python-format
-msgid "Found in the %(code)s translation"
-msgstr "Found in the %(code)s translation"
-
-#, python-format
-msgid "Found in a solution (%(code)s)"
-msgstr "Found in a solution (%(code)s)"
-
-#: templates/main_content.html
-msgid "Search by meaning is not available right now. Please try the exact or regex search."
-msgstr "Search by meaning is not available right now. Please try the exact or regex search."
+#: templates/topics_table.html:10
+#, fuzzy
+msgid "Description"
+msgstr "Question"
 
 #~ msgid "Olympiad"
 #~ msgstr "Olympiad"
@@ -460,108 +642,27 @@ msgstr "Search by meaning is not available right now. Please try the exact or re
 #~ msgid "Code"
 #~ msgstr "Code"
 
-# Advanced search (templates/advanced_search_content.html)
-msgid "Advanced search"
-msgstr "Advanced search"
+#~ msgid "Books"
+#~ msgstr "Books"
 
-msgid "SPARQL query"
-msgstr "SPARQL query"
+#~ msgid "Back"
+#~ msgstr "Back"
 
-msgid "Preset queries"
-msgstr "Preset queries"
+#~ msgid "In questions"
+#~ msgstr "In questions"
 
-msgid "The query must select the variable <code>?problemID</code>. The optional variables <code>?section</code> and <code>?subsection</code> group the problems under subtitles."
-msgstr "The query must select the variable <code>?problemID</code>. The optional variables <code>?section</code> and <code>?subsection</code> group the problems under subtitles."
+#~ msgid "Everywhere"
+#~ msgstr "Everywhere"
 
-msgid "Ctrl+Enter starts the search."
-msgstr "Ctrl+Enter starts the search."
+#~ msgid "Genres"
+#~ msgstr "Genres"
 
-msgid "Limit"
-msgstr "Limit"
+#~ msgid "Concepts"
+#~ msgstr "Concepts"
 
-#, python-format
-msgid "at most %(max)s"
-msgstr "at most %(max)s"
+#~ msgid "Models"
+#~ msgstr "Models"
 
-#, python-format
-msgid "Syntax error at line %(line)s, column %(column)s"
-msgstr "Syntax error at line %(line)s, column %(column)s"
+#~ msgid "Hint Types"
+#~ msgstr "Hint Types"
 
-#, python-format
-msgid "unexpected %(token)s"
-msgstr "unexpected %(token)s"
-
-msgid "the query ends too early"
-msgstr "the query ends too early"
-
-msgid "expected one of"
-msgstr "expected one of"
-
-msgid "Replace the query in the text field?"
-msgstr "Replace the query in the text field?"
-
-#, python-format
-msgid "The limit must be a whole number from 1 to %(max)s."
-msgstr "The limit must be a whole number from 1 to %(max)s."
-
-msgid "Please enter a SPARQL query."
-msgstr "Please enter a SPARQL query."
-
-msgid "The query is too long."
-msgstr "The query is too long."
-
-msgid "Only SELECT queries can be run."
-msgstr "Only SELECT queries can be run."
-
-msgid "Queries that change data are not allowed."
-msgstr "Queries that change data are not allowed."
-
-msgid "SERVICE (federated queries) is not allowed."
-msgstr "SERVICE (federated queries) is not allowed."
-
-msgid "The query must select the variable ?problemID."
-msgstr "The query must select the variable ?problemID."
-
-msgid "The query took too long and was stopped."
-msgstr "The query took too long and was stopped."
-
-msgid "Syntax error"
-msgstr "Syntax error"
-
-msgid "The query could not be run"
-msgstr "The query could not be run"
-
-msgid "Nothing was found."
-msgstr "Nothing was found."
-
-#, python-format
-msgid "Results: %(n)s"
-msgstr "Results: %(n)s"
-
-msgid "The query has more results; increase the limit to see them."
-msgstr "The query has more results; increase the limit to see them."
-
-# Ontology documentation (blueprints/references, templates/advanced_search_content.html)
-msgid "Ontology"
-msgstr "Ontology"
-
-msgid "Genres"
-msgstr "Genres"
-
-msgid "Concepts"
-msgstr "Concepts"
-
-msgid "Question Types"
-msgstr "Question Types"
-
-msgid "Models"
-msgstr "Models"
-
-msgid "Hints"
-msgstr "Hints"
-
-msgid "Hint Types"
-msgstr "Hint Types"
-
-msgid "Ontology: classes and properties to use in queries"
-msgstr "Ontology: classes and properties to use in queries"

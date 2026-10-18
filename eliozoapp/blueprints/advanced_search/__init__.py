@@ -109,6 +109,9 @@ def getAdvancedSearch():
 
     template_context = {
         'active': 'main',
+        'navlinks': [
+            {'url':'advanced_search.getAdvancedSearch', 'title':'Advanced Search'},
+        ],
         'title': 'SPARQL',
         'query': query,
         'limit': limitText,
