@@ -460,3 +460,83 @@ msgstr "Meklēšana pēc nozīmes šobrīd nav pieejama. Lūdzu, izmantojiet pre
 #~ msgid "Code"
 #~ msgstr "Kods"
 
+# Advanced search (templates/advanced_search_content.html)
+msgid "Advanced search"
+msgstr "Paplašinātā meklēšana"
+
+msgid "SPARQL query"
+msgstr "SPARQL vaicājums"
+
+msgid "Preset queries"
+msgstr "Sagatavotie vaicājumi"
+
+msgid "The query must select the variable <code>?problemID</code>. The optional variables <code>?section</code> and <code>?subsection</code> group the problems under subtitles."
+msgstr "Vaicājumam jāatlasa mainīgais <code>?problemID</code>. Ar neobligātajiem mainīgajiem <code>?section</code> un <code>?subsection</code> uzdevumus sagrupē zem apakšvirsrakstiem."
+
+msgid "Ctrl+Enter starts the search."
+msgstr "Ctrl+Enter sāk meklēšanu."
+
+msgid "Limit"
+msgstr "Limits"
+
+#, python-format
+msgid "at most %(max)s"
+msgstr "ne vairāk kā %(max)s"
+
+#, python-format
+msgid "Syntax error at line %(line)s, column %(column)s"
+msgstr "Sintakses kļūda %(line)s. rindā, %(column)s. pozīcijā"
+
+#, python-format
+msgid "unexpected %(token)s"
+msgstr "negaidīts %(token)s"
+
+msgid "the query ends too early"
+msgstr "vaicājums beidzas par agru"
+
+msgid "expected one of"
+msgstr "gaidīja kādu no"
+
+msgid "Replace the query in the text field?"
+msgstr "Aizstāt teksta laukā esošo vaicājumu?"
+
+#, python-format
+msgid "The limit must be a whole number from 1 to %(max)s."
+msgstr "Limitam jābūt veselam skaitlim no 1 līdz %(max)s."
+
+msgid "Please enter a SPARQL query."
+msgstr "Lūdzu, ievadiet SPARQL vaicājumu."
+
+msgid "The query is too long."
+msgstr "Vaicājums ir pārāk garš."
+
+msgid "Only SELECT queries can be run."
+msgstr "Var izpildīt tikai SELECT vaicājumus."
+
+msgid "Queries that change data are not allowed."
+msgstr "Vaicājumi, kas maina datus, nav atļauti."
+
+msgid "SERVICE (federated queries) is not allowed."
+msgstr "SERVICE (federētie vaicājumi) nav atļauts."
+
+msgid "The query must select the variable ?problemID."
+msgstr "Vaicājumam jāatlasa mainīgais ?problemID."
+
+msgid "The query took too long and was stopped."
+msgstr "Vaicājums izpildījās pārāk ilgi un tika apturēts."
+
+msgid "Syntax error"
+msgstr "Sintakses kļūda"
+
+msgid "The query could not be run"
+msgstr "Vaicājumu neizdevās izpildīt"
+
+msgid "Nothing was found."
+msgstr "Nekas netika atrasts."
+
+#, python-format
+msgid "Results: %(n)s"
+msgstr "Rezultāti: %(n)s"
+
+msgid "The query has more results; increase the limit to see them."
+msgstr "Vaicājumam ir vairāk rezultātu; palieliniet limitu, lai tos redzētu."

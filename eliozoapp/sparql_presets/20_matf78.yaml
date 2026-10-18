@@ -1,0 +1,304 @@
+# Preset SPARQL queries for the "Advanced search" page (/advanced_search).
+# See README.md in this directory for the file format.
+title: {lv: "Fakultatīvs 7.-8. klasei", en: "Elective course, grades 7-8", lt: "Fakultatyvas 7-8 klasėms"}
+items:
+  - title: {lv: "Atrisinājumu struktūra", en: "Solution structure", lt: "Sprendimų struktūra"}
+    query: |
+      # Avots: nms-courses/docs/matf78/26_27/78_solution_structure/problems.rq
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+      SELECT ?problemID (?questionType AS ?section) (?domain AS ?subsection) (STRLEN(?text) AS ?len) ?text
+      WHERE {
+        ?p a eliozo:Problem ;
+           eliozo:problemID ?problemID ;
+           eliozo:problemGrade ?grade ;
+           eliozo:problemYear ?year ;
+           eliozo:questionType ?questionType ;
+           eliozo:domain ?domain ;
+           eliozo:_readingDifficulty "low" ;
+           eliozo:problemText ?text .
+        FILTER (LANGMATCHES(LANG(?text), "lv"))
+        FILTER (?grade >= 5 && ?grade <= 7)
+        FILTER (?year >= 2011 && ?year <= 2026)
+        FILTER (?questionType != "ShortAnswer")
+        FILTER (?domain != "Geom")
+        FILTER (STRLEN(?text) <= 220)
+        FILTER (!CONTAINS(?text, "![") && !CONTAINS(?text, "att.") && !CONTAINS(?text, "zīm.")
+                && !CONTAINS(?text, "frac") && !CONTAINS(?text, "sqrt") && !CONTAINS(?text, "^"))
+      }
+      ORDER BY ?questionType ?len ?problemID
+  - title: {lv: "Invarianti", en: "Invariants", lt: "Invariantai"}
+    query: |
+      # Avots: nms-courses/docs/matf78/26_27/78_invariants/problems.rq
+      # 7.2. temats "Invarianti": garais kandidātu saraksts.
+      #
+      # Meklējam 6.-9. klases uzdevumus, kuros atrisinājuma kodols ir INVARIANTS -
+      # lielums vai apgalvojums, kas atļauto gājienu laikā nemainās. Šī ideja
+      # datubāzē ir ierakstīta trīs dažādos birku slāņos, tāpēc tos apvienojam
+      # ar UNION un salīdzinām kā vienu tekstisku ?tag:
+      #
+      #   * eliozo:_hasSolutionConcept - "Invariant", "ParityInvariant",
+      #     "ChessboardColoring", "Monovariant";
+      #   * eliozo:_hasReasoningMethod - "FixedInvariantNumeric", "InvariantMethod",
+      #     "ColoringInvariant", "ColoringArgumentForCoverageOrUnreachability",
+      #     "GameInvariantsInNT", "ParameterizedInvariantValue",
+      #     "MonovariantStrictlyChangingQuantity", "InvariantByColoring";
+      #   * eliozo:topic / eliozo:method IRI - InvariantParity, InvariantRemainder,
+      #     InvariantAlgebraic, GameInvariant, ColoringProblems, MTH_FixedInvariant,
+      #     MTH_PeriodicInvariant, MTH_Monovariant.
+      #
+      # Apzināti NEŅEMAM vērā birkas "Tiling" un "Coloring" pašas par sevi: tās
+      # apzīmē tikai to, ka uzdevumā kaut ko sagriež vai izkrāso (arī sudoku un
+      # grafu krāsošanu), nevis to, ka krāsojums kalpo par invariantu. Palīgkrāsojumu
+      # atpazīstam pēc "ChessboardColoring", "ColoringInvariant", "ColoringProblems"
+      # un "ColoringArgumentForCoverageOrUnreachability".
+      #
+      # ?section sagrupē kandidātus pēc invarianta tipa, lai no garā saraksta būtu
+      # ērti veidot abu nodarbību "trepes":
+      #   Parity   - paritātes invariants                      (1. nodarbība),
+      #   Numeric  - nemainīga izteiksme, summa vai atlikums    (1. nodarbība),
+      #   Coloring - palīgkrāsojums: pārklāšana, izgriešana,
+      #              apstaigāšana                               (2. nodarbība),
+      #   Game     - invariants spēles stratēģijas pamatošanai  (2. nodarbība),
+      #   Mono     - monovariants (tikai aug vai tikai dilst)   (2. nodarbība).
+      #
+
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+
+      SELECT ?problemID ?grade ?diff
+             (GROUP_CONCAT(DISTINCT ?family;       separator="+") AS ?section)
+             (GROUP_CONCAT(DISTINCT ?domain;       separator="/") AS ?domains)
+             (GROUP_CONCAT(DISTINCT ?questionType; separator="/") AS ?questionTypes)
+             (GROUP_CONCAT(DISTINCT ?tag;          separator=",") AS ?tags)
+      WHERE {
+        ?p a eliozo:Problem ;
+           eliozo:problemID ?problemID ;
+           eliozo:problemGrade ?grade ;
+           eliozo:problemYear ?year ;
+           eliozo:domain ?domain ;
+           eliozo:questionType ?questionType ;
+           eliozo:problemText ?text .
+        OPTIONAL { ?p eliozo:_readingDifficulty ?diff }
+
+        {
+          { ?p eliozo:_hasSolutionConcept ?tag }
+          UNION
+          { ?p eliozo:_hasReasoningMethod ?tag }
+          UNION
+          { ?p eliozo:topic  ?topicIRI  . BIND(REPLACE(STR(?topicIRI),  "^.*#", "") AS ?tag) }
+          UNION
+          { ?p eliozo:method ?methodIRI . BIND(REPLACE(STR(?methodIRI), "^.*#", "") AS ?tag) }
+        }
+
+        FILTER (CONTAINS(?tag, "Invariant") || CONTAINS(?tag, "Monovariant")
+                || ?tag = "ChessboardColoring" || ?tag = "ColoringProblems"
+                || ?tag = "ColoringArgumentForCoverageOrUnreachability")
+
+        # Invarianta tips; krāsojumu pārbaudām pirms paritātes, jo krāsojuma
+        # uzdevumi gandrīz vienmēr nes līdzi arī ParityInvariant birku.
+        BIND (
+          IF (CONTAINS(?tag, "Monovariant"), "Mono",
+          IF (CONTAINS(?tag, "Game"),        "Game",
+          IF (CONTAINS(?tag, "Coloring"),    "Coloring",
+          IF (CONTAINS(?tag, "Parity"),      "Parity",
+                                             "Numeric")))) AS ?family )
+
+        FILTER (LANGMATCHES(LANG(?text), "lv"))
+        FILTER (?grade >= 6 && ?grade <= 9)   # 7.-8. klases līmenis ar rezervi uz abām pusēm
+        FILTER (?year >= 2003 && ?year <= 2026)
+
+        # Invarianta stāsts prasa pierādījumu, nevis tikai skaitlisku atbildi.
+        FILTER (?questionType != "ShortAnswer")
+      }
+      GROUP BY ?problemID ?grade ?diff
+      ORDER BY ?section ?grade ?problemID
+  - title: {lv: "Dirihlē princips", en: "Pigeonhole principle", lt: "Dirichlė principas"}
+    query: |
+      # Avots: nms-courses/docs/matf78/26_27/78_pigeonhole/problems.rq
+      # 7.3. temats "Dirihlē princips": garais kandidātu saraksts.
+      #
+      # Meklējam 6.-9. klases uzdevumus, kuros atrisinājuma kodols ir DIRIHLĒ
+      # PRINCIPS ("ja n+1 trusis ir n būros, tad kādā būrī ir vismaz divi truši")
+      # vai tā tuvākie radinieki - vidējās vērtības spriedums un ekstremālā elementa
+      # metode, kad tos lieto novērtējuma pierādīšanai. Kandidātus atrodam divos
+      # neatkarīgos veidos un apvienojam ar UNION:
+      #
+      #   (a) birkas - trīs slāņi, salīdzināti kā viens tekstisks ?tag:
+      #       * eliozo:_hasSolutionConcept / _hasReasoningMethod - "PigeonholePrinciple",
+      #         "PigeonholePrincipleBasic", "PigeonholePrincipleGeneralized",
+      #         "PigeonholeInNT", "NumTheoryPigeonhole", "ExtremalElementArgument",
+      #         "NumTheoryExtremeElement";
+      #       * eliozo:topic / eliozo:method IRI - MTH_PigeonholePrincipleBasic,
+      #         MTH_PigeonholePrincipleGeneralized, MTH_ContinuousPigeonholePrinciple,
+      #         MTH_ExtremeElements, MTH_MeanValuePrinciple;
+      #   (b) atrisinājuma teksts - kāds no oficiālajiem atrisinājumiem
+      #       (eliozo:problemSolution / eliozo:solutionText) piemin "Dirihl...".
+      #       Tas noķer vecākus uzdevumus, kuriem birkas vēl nav pievienotas.
+      #
+      # Apzināti NEŅEMAM birku "ArithmeticMean" pašu par sevi: ar to iezīmēti arī
+      # vienkārši vidējā aritmētiskā aprēķini (vidējā atzīme, vidējais ātrums),
+      # kuros nav nekāda novērtējuma "kāds elements ir vismaz vidējais".
+      #
+      # ?section sagrupē kandidātus, lai no garā saraksta būtu ērti veidot
+      # abu nodarbību "trepes":
+      #   Basic    - vienkāršais/vispārinātais princips, kastes - krāsas, atlikumi,
+      #              komplekti                                     (1. nodarbība),
+      #   Geom     - kastes - plaknes apgabali, rūtiņas, rindas    (1.-2. nodarbība),
+      #   Extremal - ekstremālais elements, vidējā vērtība,
+      #              optimizācija "piemērs + novērtējums"          (2. nodarbība),
+      #   Text     - atrasts tikai pēc atrisinājuma teksta.
+      #
+
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+
+      SELECT ?problemID ?grade ?diff
+             (GROUP_CONCAT(DISTINCT ?family;       separator="+") AS ?section)
+             (GROUP_CONCAT(DISTINCT ?domain;       separator="/") AS ?domains)
+             (GROUP_CONCAT(DISTINCT ?questionType; separator="/") AS ?questionTypes)
+             (GROUP_CONCAT(DISTINCT ?tag;          separator=",") AS ?tags)
+      WHERE {
+        ?p a eliozo:Problem ;
+           eliozo:problemID ?problemID ;
+           eliozo:problemGrade ?grade ;
+           eliozo:problemYear ?year ;
+           eliozo:domain ?domain ;
+           eliozo:questionType ?questionType ;
+           eliozo:problemText ?text .
+        OPTIONAL { ?p eliozo:_readingDifficulty ?diff }
+
+        {
+          {
+            { ?p eliozo:_hasSolutionConcept ?tag }
+            UNION
+            { ?p eliozo:_hasReasoningMethod ?tag }
+            UNION
+            { ?p eliozo:topic  ?topicIRI  . BIND(REPLACE(STR(?topicIRI),  "^.*#", "") AS ?tag) }
+            UNION
+            { ?p eliozo:method ?methodIRI . BIND(REPLACE(STR(?methodIRI), "^.*#", "") AS ?tag) }
+            FILTER (REGEX(STR(?tag), "Pigeonhole|ExtremalElement|ExtremeElement|MeanValuePrinciple"))
+          }
+          UNION
+          {
+            ?p eliozo:problemSolution ?sol .
+            ?sol eliozo:solutionText ?solText .
+            FILTER (CONTAINS(STR(?solText), "Dirihl"))
+            BIND ("SolutionMentionsDirichlet" AS ?tag)
+          }
+        }
+
+        BIND (
+          IF (REGEX(?tag, "Extrem|Mean"),                 "Extremal",
+          IF (?tag = "SolutionMentionsDirichlet",         "Text",
+          IF (?domain = "Geom" || CONTAINS(?tag, "Continuous"), "Geom",
+                                                          "Basic"))) AS ?family )
+
+        FILTER (LANGMATCHES(LANG(?text), "lv"))
+        FILTER (?grade >= 6 && ?grade <= 9)   # 7.-8. klases līmenis ar rezervi uz abām pusēm
+        FILTER (?year >= 2003 && ?year <= 2026)
+
+        # Dirihlē uzdevumā vērtīgs ir pamatojums, nevis tikai skaitliskā atbilde.
+        FILTER (?questionType != "ShortAnswer")
+      }
+      GROUP BY ?problemID ?grade ?diff
+      ORDER BY ?section ?grade ?problemID
+  - title: "AMO"
+    items:
+      - title: {lv: "Svēršanas uzdevumi", en: "Weighing problems", lt: "Svėrimo uždaviniai"}
+        query: |
+          # Avots: nms-courses/docs/matf78/26_27/78AMO_PREPARATION/78_weighing_problems/problems.rq
+          # 7.AMO. temats "Svēršanas uzdevumi": garais kandidātu saraksts.
+          #
+          # Meklējam uzdevumus, kuros jāapraksta PROCEDŪRA, kas ar sviras svariem (vai
+          # citu informācijas avotu) garantēti noskaidro kaut ko par nezināmiem
+          # priekšmetiem. Temats atbilst curriculum_7_8.md 9. tematam "Svēršanas un
+          # algoritmi: Kā uzzināt vairāk ar mazāk jautājumiem".
+          #
+          # Birku slānis šim tematam ir gandrīz tukšs: visā krātuvē nav nevienas birkas
+          # ar "Weigh", "Balance" vai "Coin"; vienīgās tuvās ir jēdziens "DecisionTree"
+          # (30 uzdevumi), tēmas SearchProblems un ProblemsWithHiddenInformation (kopā 3
+          # uzdevumi) un apakšdomēns DOM_CombinatorialAlgorithms (14 uzdevumi). Ar to
+          # vien pietrūktu: pati svēršanas uzdevumu kodola sērija (LV.NOL.2019.7.2,
+          # LV.NOL.2019.8.2, LV.SOL.2020.9.3 u.c.) nav apbirkota nemaz. Tāpēc vaicājumam
+          # ir divi zari:
+          #
+          #   (A) TEKSTA zars - svēršanas uzdevumi pēc formulējuma. Latviešu olimpiāžu
+          #       tekstos šis žanrs ir ļoti stabili formulēts: "svēršan", "sviras svari",
+          #       "sviru svari", "atsvar". Vienīgā viltus sakritība ir vārds "īpatsvars"
+          #       (LV.NOL.2017.6.5 par liepām un ozoliem), ko izslēdzam atsevišķi.
+          #
+          #   (B) BIRKU zars - radniecīgie "cik informācijas dod viens jautājums"
+          #       uzdevumi BEZ svariem (mēģenes ar reaģentiem, minēšana ar jautājumiem,
+          #       pārbaudes ierīce). Tie ir 2. nodarbības pēdējiem pakāpieniem.
+          #
+          # ?section sadala kandidātus pēc tā, KAS tieši jānoskaidro - tas ir arī abu
+          # nodarbību dalījums:
+          #   Counterfeit - atrast viltoto/atšķirīgo priekšmetu vai pateikt, vai tas ir
+          #                 vieglāks vai smagāks               (1. nodarbība),
+          #   Extremes    - atrast vieglāko/smagāko, sarindot  (2. nodarbība),
+          #   Weights     - atsvari ar zināmām masām, līdzsvars, bilance (abas),
+          #   Questions   - informācija bez svariem: jautājumi, testi, ierīces
+          #                                                    (2. nodarbība).
+          #
+          # Attēlus NEIZSLĒDZAM: šajā tematā zīmējums gandrīz vienmēr ir tikai sviras
+          # svaru ilustrācija (LV.NOL.2025.6.5), nevis uzdevuma nesējs.
+          #
+
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+
+          SELECT ?problemID ?grade ?section ?diff
+                 (GROUP_CONCAT(DISTINCT ?domain;       separator="/") AS ?domains)
+                 (GROUP_CONCAT(DISTINCT ?questionType; separator="/") AS ?questionTypes)
+          WHERE {
+            ?p a eliozo:Problem ;
+               eliozo:problemID ?problemID ;
+               eliozo:problemGrade ?grade ;
+               eliozo:problemYear ?year ;
+               eliozo:problemText ?text .
+            OPTIONAL { ?p eliozo:domain ?domain }
+            OPTIONAL { ?p eliozo:questionType ?questionType }
+            OPTIONAL { ?p eliozo:_readingDifficulty ?diff }
+
+            {
+              # ---- (A) teksta zars: svēršanas uzdevumi ----------------------------
+              # UNION zaram ir sava mainīgo telpa: ?p un ?text te jāsaista vēlreiz,
+              # citādi zara iekšējie FILTER strādātu ar nesaistītiem mainīgajiem.
+              ?p eliozo:problemText ?text .
+              FILTER (CONTAINS(?text, "svēršan") || CONTAINS(?text, "sviras svar")
+                      || CONTAINS(?text, "sviru svar")
+                      || (CONTAINS(?text, "atsvar") && !CONTAINS(?text, "īpatsvar")))
+
+              # Ko tieši prasa noskaidrot. Secība ir svarīga: "viltotā/atšķirīgā" ir
+              # šaurāka pazīme nekā "vieglākais/smagākais" un jāpārbauda pirmā.
+              BIND (
+                IF (CONTAINS(?text, "viltot") || CONTAINS(?text, "atšķirīg"), "Counterfeit",
+                IF (CONTAINS(?text, "vieglāko") || CONTAINS(?text, "smagāko")
+                    || CONTAINS(?text, "visvieglāk") || CONTAINS(?text, "vissmagāk")
+                    || CONTAINS(?text, "sarindot"), "Extremes",
+                                                    "Weights")) AS ?section )
+            }
+            UNION
+            {
+              # ---- (B) birku zars: informācija bez svariem -------------------------
+              ?p eliozo:problemText ?text .
+              { ?p eliozo:_hasSolutionConcept "DecisionTree" }
+              UNION
+              { ?p eliozo:topic ?topicIRI .
+                FILTER (CONTAINS(STR(?topicIRI), "SearchProblems")
+                        || CONTAINS(STR(?topicIRI), "ProblemsWithHiddenInformation")) }
+
+              # Svēršanas jau paņēma (A) zars.
+              FILTER (!CONTAINS(?text, "svēršan") && !CONTAINS(?text, "sviras svar")
+                      && !CONTAINS(?text, "sviru svar"))
+              # Vajag tieši "uzzināt ar jautājumiem", nevis jebkuru gājienu procesu:
+              # bez šī filtra iekrīt lodīšu maiņas un skaitļu dzēšanas invariantu uzdevumi.
+              FILTER (CONTAINS(?text, "jautājum") || CONTAINS(?text, "pārbaud")
+                      || CONTAINS(?text, "uzminēt") || CONTAINS(?text, "noskaidrot")
+                      || CONTAINS(?text, "ierīc"))
+              BIND ("Questions" AS ?section)
+            }
+
+            FILTER (LANG(?text) = "" || LANGMATCHES(LANG(?text), "lv"))
+            FILTER (?grade >= 5 && ?grade <= 12)   # 7.-8. klases līmenis ar lielu rezervi
+            FILTER (?year >= 2003 && ?year <= 2026)
+          }
+          GROUP BY ?problemID ?grade ?section ?diff
+          ORDER BY ?section ?grade ?problemID

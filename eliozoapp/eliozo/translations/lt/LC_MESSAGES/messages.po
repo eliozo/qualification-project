@@ -465,3 +465,83 @@ msgstr "Paieška pagal prasmę šiuo metu negalima. Bandykite tikslią arba regu
 #~ msgid "Slėpti sprendimą"
 #~ msgstr "Sprendimas"
 
+# Advanced search (templates/advanced_search_content.html)
+msgid "Advanced search"
+msgstr "Išplėstinė paieška"
+
+msgid "SPARQL query"
+msgstr "SPARQL užklausa"
+
+msgid "Preset queries"
+msgstr "Paruoštos užklausos"
+
+msgid "The query must select the variable <code>?problemID</code>. The optional variables <code>?section</code> and <code>?subsection</code> group the problems under subtitles."
+msgstr "Užklausa turi pasirinkti kintamąjį <code>?problemID</code>. Neprivalomi kintamieji <code>?section</code> ir <code>?subsection</code> sugrupuoja uždavinius po paantraštėmis."
+
+msgid "Ctrl+Enter starts the search."
+msgstr "Ctrl+Enter pradeda paiešką."
+
+msgid "Limit"
+msgstr "Riba"
+
+#, python-format
+msgid "at most %(max)s"
+msgstr "ne daugiau kaip %(max)s"
+
+#, python-format
+msgid "Syntax error at line %(line)s, column %(column)s"
+msgstr "Sintaksės klaida %(line)s eilutėje, %(column)s pozicijoje"
+
+#, python-format
+msgid "unexpected %(token)s"
+msgstr "netikėtas %(token)s"
+
+msgid "the query ends too early"
+msgstr "užklausa baigiasi per anksti"
+
+msgid "expected one of"
+msgstr "tikėtasi vieno iš"
+
+msgid "Replace the query in the text field?"
+msgstr "Pakeisti teksto lauke esančią užklausą?"
+
+#, python-format
+msgid "The limit must be a whole number from 1 to %(max)s."
+msgstr "Riba turi būti sveikasis skaičius nuo 1 iki %(max)s."
+
+msgid "Please enter a SPARQL query."
+msgstr "Įveskite SPARQL užklausą."
+
+msgid "The query is too long."
+msgstr "Užklausa per ilga."
+
+msgid "Only SELECT queries can be run."
+msgstr "Galima vykdyti tik SELECT užklausas."
+
+msgid "Queries that change data are not allowed."
+msgstr "Užklausos, keičiančios duomenis, neleidžiamos."
+
+msgid "SERVICE (federated queries) is not allowed."
+msgstr "SERVICE (federacinės užklausos) neleidžiama."
+
+msgid "The query must select the variable ?problemID."
+msgstr "Užklausa turi pasirinkti kintamąjį ?problemID."
+
+msgid "The query took too long and was stopped."
+msgstr "Užklausa vykdyta per ilgai ir buvo sustabdyta."
+
+msgid "Syntax error"
+msgstr "Sintaksės klaida"
+
+msgid "The query could not be run"
+msgstr "Užklausos nepavyko įvykdyti"
+
+msgid "Nothing was found."
+msgstr "Nieko nerasta."
+
+#, python-format
+msgid "Results: %(n)s"
+msgstr "Rezultatai: %(n)s"
+
+msgid "The query has more results; increase the limit to see them."
+msgstr "Užklausa turi daugiau rezultatų; padidinkite ribą, kad juos pamatytumėte."

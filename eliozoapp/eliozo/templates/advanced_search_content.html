@@ -1,0 +1,269 @@
+{% extends 'global.html' %}
+
+{% macro preset_items(items) %}
+{% for item in items %}
+{% if item.children is defined %}
+<li class="dropdown-submenu">
+    <a href="#" tabindex="-1">{{ item.title }}</a>
+    <ul class="dropdown-menu">
+        {{ preset_items(item.children) }}
+    </ul>
+</li>
+{% else %}
+<li><a href="#" class="preset-query" data-index="{{ item.index }}">{{ item.title }}</a></li>
+{% endif %}
+{% endfor %}
+{% endmacro %}
+
+{% block content %}
+<div class="col-sm-10 text-left">
+
+    <style>
+        .advanced-search textarea.sparql {
+            font-family: Menlo, Consolas, "DejaVu Sans Mono", monospace;
+            font-size: 13px;
+            width: auto;
+            max-width: 100%;
+            resize: both;
+        }
+
+        .advanced-search .limit-input {
+            width: 90px;
+            display: inline-block;
+        }
+
+        /* Bootstrap 3 has no nested dropdowns: submenus open to the right on click. */
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu > .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+        }
+
+        .dropdown-submenu > a:after {
+            content: "\25B8";
+            float: right;
+            margin-left: 10px;
+            color: #999;
+        }
+
+        pre.sparql-error-line {
+            margin: 6px 0 0 0;
+            background: #fff;
+            white-space: pre;
+            overflow-x: auto;
+        }
+
+        .found-problems a {
+            display: inline-block;
+            margin: 2px 14px 2px 0;
+        }
+    </style>
+
+    <h2>{% trans %}Advanced search{% endtrans %}</h2>
+
+    <form class="advanced-search" action="{{ url_for('advanced_search.getAdvancedSearch') }}" method="post">
+        <div class="form-group">
+            <label for="sparqlQuery">{% trans %}SPARQL query{% endtrans %}</label>
+            {% if presetMenu %}
+            <div class="dropdown" style="margin-bottom: 6px;">
+                <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    {% trans %}Preset queries{% endtrans %} <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    {{ preset_items(presetMenu) }}
+                </ul>
+            </div>
+            {% endif %}
+            <textarea id="sparqlQuery" class="form-control sparql" name="query" rows="10" cols="80"
+                spellcheck="false" autocapitalize="off" autocomplete="off">{{ query }}</textarea>
+            <p class="help-block">
+                {% trans %}The query must select the variable <code>?problemID</code>. The optional variables <code>?section</code> and <code>?subsection</code> group the problems under subtitles.{% endtrans %}
+                {% trans %}Ctrl+Enter starts the search.{% endtrans %}
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label for="resultLimit">{% trans %}Limit{% endtrans %}</label>
+            <input id="resultLimit" class="form-control limit-input" type="number" name="limit" min="1"
+                max="{{ maxLimit }}" step="1" value="{{ limit }}" required>
+            <span class="text-muted">({% trans max=maxLimit %}at most {{ max }}{% endtrans %})</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">{% trans %}Search{% endtrans %}</button>
+    </form>
+
+    <div id="clientSyntaxError" class="alert alert-danger" role="alert" style="margin-top: 16px; display: none;">
+        <strong class="error-title"></strong> <span class="error-message"></span>
+        <pre class="sparql-error-line"></pre>
+    </div>
+
+    <script type="application/json" id="presetQueries">{{ presetQueries | tojson }}</script>
+    <script src="{{ url_for('static', filename='js/sparqljs.min.js') }}"></script>
+    <script>
+        $(document).ready(function () {
+            const textarea = $('#sparqlQuery');
+            const form = textarea.closest('form');
+            const presets = JSON.parse($('#presetQueries').text());
+            let lastPreset = null;
+
+            const messages = {
+                title: {{ _('Syntax error at line %(line)s, column %(column)s', line='{line}', column='{column}') | tojson }},
+                unexpected: {{ _('unexpected %(token)s', token='{token}') | tojson }},
+                endOfQuery: {{ _('the query ends too early') | tojson }},
+                expected: {{ _('expected one of') | tojson }}
+            };
+
+            function placeCursor(line, column) {
+                const lines = textarea.val().split('\n');
+                let pos = 0;
+                for (let i = 0; i < line - 1 && i < lines.length; i++) {
+                    pos += lines[i].length + 1;
+                }
+                textarea.focus();
+                textarea[0].setSelectionRange(pos + column - 1, pos + column - 1);
+            }
+
+            // The same check as the server's, but with SPARQL.js: an LR parser
+            // that stops at the first token that cannot continue the query, so
+            // its position is more exact than the one the store reports.
+            // Returns false (and shows the error) for an invalid query. Without
+            // the parser script the server does the check alone.
+            function checkSyntax() {
+                const box = $('#clientSyntaxError').hide();
+                if (!window.SparqlJs || textarea.val().trim() === '') {
+                    return true;
+                }
+                try {
+                    new SparqlJs.Parser().parse(textarea.val());
+                    return true;
+                } catch (e) {
+                    if (!e.hash || !e.hash.loc) {
+                        return true;
+                    }
+                    const line = e.hash.loc.first_line;
+                    const column = e.hash.loc.first_column + 1;
+                    const expected = (e.hash.expected || []).map(function (t) { return t.replace(/^'|'$/g, ''); });
+                    let message = e.hash.token === 'EOF' ? messages.endOfQuery
+                        : messages.unexpected.replace('{token}', '"' + e.hash.text + '"');
+                    if (expected.length) {
+                        message += '; ' + messages.expected + ': ' + expected.slice(0, 12).join(', ')
+                            + (expected.length > 12 ? ', ...' : '');
+                    }
+                    $('.alert-server-error').hide();
+                    box.find('.error-title').text(messages.title.replace('{line}', line).replace('{column}', column) + ':');
+                    box.find('.error-message').text(message);
+                    box.find('pre').text((textarea.val().split('\n')[line - 1] || '') + '\n'
+                        + ' '.repeat(column - 1) + '^');
+                    box.show();
+                    placeCursor(line, column);
+                    return false;
+                }
+            }
+
+            form.on('submit', function (e) {
+                if (!checkSyntax()) {
+                    e.preventDefault();
+                }
+            });
+
+            $('.dropdown-submenu > a').on('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const item = $(this).parent();
+                item.siblings('.open').removeClass('open').find('.open').removeClass('open');
+                item.toggleClass('open');
+            });
+
+            $('.preset-query').on('click', function (e) {
+                e.preventDefault();
+                const current = textarea.val().trim();
+                if (current !== '' && current !== lastPreset &&
+                    !window.confirm({{ _('Replace the query in the text field?') | tojson }})) {
+                    return;
+                }
+                lastPreset = presets[$(this).data('index')].trim();
+                textarea.val(presets[$(this).data('index')]).focus();
+                textarea[0].setSelectionRange(0, 0);
+                textarea.scrollTop(0);
+            });
+
+            textarea.on('keydown', function (e) {
+                if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
+                    e.preventDefault();
+                    form.trigger('submit');
+                }
+            });
+
+            {% if error and error.line %}
+            placeCursor({{ error.line }}, {{ error.column }});
+            {% endif %}
+        });
+    </script>
+
+    {% if limitError %}
+    <div class="alert alert-danger" role="alert" style="margin-top: 16px;">
+        {% trans max=maxLimit %}The limit must be a whole number from 1 to {{ max }}.{% endtrans %}
+    </div>
+    {% endif %}
+
+    {% if error %}
+    <div class="alert alert-danger alert-server-error" role="alert" style="margin-top: 16px;">
+        {% if error.kind == 'empty' %}
+        {% trans %}Please enter a SPARQL query.{% endtrans %}
+        {% elif error.kind == 'too_long' %}
+        {% trans %}The query is too long.{% endtrans %}
+        {% elif error.kind == 'not_select' %}
+        {% trans %}Only SELECT queries can be run.{% endtrans %}
+        {% elif error.kind == 'update' %}
+        {% trans %}Queries that change data are not allowed.{% endtrans %}
+        {% elif error.kind == 'service' %}
+        {% trans %}SERVICE (federated queries) is not allowed.{% endtrans %}
+        {% elif error.kind == 'no_problem_id' %}
+        {% trans %}The query must select the variable ?problemID.{% endtrans %}
+        {% elif error.kind == 'timeout' %}
+        {% trans %}The query took too long and was stopped.{% endtrans %}
+        {% elif error.kind == 'syntax' %}
+        <strong>{% if error.line %}{% trans line=error.line, column=error.column %}Syntax error at line {{ line }}, column {{ column }}{% endtrans %}{% else %}{% trans %}Syntax error{% endtrans %}{% endif %}:</strong>
+        {{ error.message }}
+        {% if error.line_text is not none %}
+        <pre class="sparql-error-line">{{ error.line_text }}
+{{ ' ' * (error.column - 1) }}^</pre>
+        {% endif %}
+        {% else %}
+        <strong>{% trans %}The query could not be run{% endtrans %}:</strong> {{ error.message }}
+        {% endif %}
+    </div>
+    {% endif %}
+
+    {% if sections is not none %}
+    <div class="found-problems" style="margin-top: 16px;">
+        {% if resultCount == 0 %}
+        <p>{% trans %}Nothing was found.{% endtrans %}</p>
+        {% else %}
+        <p class="text-muted">
+            {% trans n=resultCount %}Results: {{ n }}{% endtrans %}{% if truncated %}.
+            {% trans %}The query has more results; increase the limit to see them.{% endtrans %}{% endif %}
+        </p>
+        {% endif %}
+
+        {% for section in sections %}
+        {% if section.title is not none %}<h3>{{ section.title }}</h3>{% endif %}
+        {% for sub in section.subsections %}
+        {% if sub.title is not none %}<h4>{{ sub.title }}</h4>{% endif %}
+        <p>
+            {% for problemid in sub.problemids %}
+            <a href="{{ url_for('problems.getProblem', problemid=problemid) }}">{{ problemid }}</a>
+            {% endfor %}
+        </p>
+        {% endfor %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+</div>
+{% endblock %}

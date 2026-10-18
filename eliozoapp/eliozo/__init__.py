@@ -21,6 +21,7 @@ from blueprints.references import references_bp
 from blueprints.search import search_bp
 from blueprints.worksheets import worksheets_bp
 from blueprints.filter import filter_bp
+from blueprints.advanced_search import advanced_search_bp
 from .navigation import get_navigation
 
 import logging
@@ -120,6 +121,7 @@ def create_app(test_config=None):
     app.register_blueprint(search_bp)
     app.register_blueprint(worksheets_bp)
     app.register_blueprint(filter_bp)
+    app.register_blueprint(advanced_search_bp)
 
     @app.route('/health')
     def health():

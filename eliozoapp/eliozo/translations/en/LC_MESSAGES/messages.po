@@ -460,3 +460,83 @@ msgstr "Search by meaning is not available right now. Please try the exact or re
 #~ msgid "Code"
 #~ msgstr "Code"
 
+# Advanced search (templates/advanced_search_content.html)
+msgid "Advanced search"
+msgstr "Advanced search"
+
+msgid "SPARQL query"
+msgstr "SPARQL query"
+
+msgid "Preset queries"
+msgstr "Preset queries"
+
+msgid "The query must select the variable <code>?problemID</code>. The optional variables <code>?section</code> and <code>?subsection</code> group the problems under subtitles."
+msgstr "The query must select the variable <code>?problemID</code>. The optional variables <code>?section</code> and <code>?subsection</code> group the problems under subtitles."
+
+msgid "Ctrl+Enter starts the search."
+msgstr "Ctrl+Enter starts the search."
+
+msgid "Limit"
+msgstr "Limit"
+
+#, python-format
+msgid "at most %(max)s"
+msgstr "at most %(max)s"
+
+#, python-format
+msgid "Syntax error at line %(line)s, column %(column)s"
+msgstr "Syntax error at line %(line)s, column %(column)s"
+
+#, python-format
+msgid "unexpected %(token)s"
+msgstr "unexpected %(token)s"
+
+msgid "the query ends too early"
+msgstr "the query ends too early"
+
+msgid "expected one of"
+msgstr "expected one of"
+
+msgid "Replace the query in the text field?"
+msgstr "Replace the query in the text field?"
+
+#, python-format
+msgid "The limit must be a whole number from 1 to %(max)s."
+msgstr "The limit must be a whole number from 1 to %(max)s."
+
+msgid "Please enter a SPARQL query."
+msgstr "Please enter a SPARQL query."
+
+msgid "The query is too long."
+msgstr "The query is too long."
+
+msgid "Only SELECT queries can be run."
+msgstr "Only SELECT queries can be run."
+
+msgid "Queries that change data are not allowed."
+msgstr "Queries that change data are not allowed."
+
+msgid "SERVICE (federated queries) is not allowed."
+msgstr "SERVICE (federated queries) is not allowed."
+
+msgid "The query must select the variable ?problemID."
+msgstr "The query must select the variable ?problemID."
+
+msgid "The query took too long and was stopped."
+msgstr "The query took too long and was stopped."
+
+msgid "Syntax error"
+msgstr "Syntax error"
+
+msgid "The query could not be run"
+msgstr "The query could not be run"
+
+msgid "Nothing was found."
+msgstr "Nothing was found."
+
+#, python-format
+msgid "Results: %(n)s"
+msgstr "Results: %(n)s"
+
+msgid "The query has more results; increase the limit to see them."
+msgstr "The query has more results; increase the limit to see them."

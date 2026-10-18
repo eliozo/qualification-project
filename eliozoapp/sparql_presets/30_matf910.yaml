@@ -1,0 +1,175 @@
+# Preset SPARQL queries for the "Advanced search" page (/advanced_search).
+# See README.md in this directory for the file format.
+title: {lv: "Fakultatīvs 9.-10. klasei", en: "Elective course, grades 9-10", lt: "Fakultatyvas 9-10 klasėms"}
+items:
+  - title: {lv: "Atrisinājumu struktūra", en: "Solution structure", lt: "Sprendimų struktūra"}
+    query: |
+      # Avots: nms-courses/docs/matf910/26_27/910_solution_structure/problems.rq
+      # 9.1. temats "Atrisinājumu struktūras": kandidāti "Tipiskiem uzdevumiem" un
+      # "Skaidrojamiem piemēriem".
+      #
+      # Meklējam 8.-9. klases uzdevumus, kuros svarīga ir apgalvojuma NOLIEGŠANA:
+      # "vai var / vai vienmēr" (ProveDisprove), pierādījumi no pretējā
+      # (MTH_ContradictionForExistence) un konstruktīvi piemēri (FindExample).
+      # Teksts - īss un viegli lasāms, bez attēliem un bez smagas formulu tehnikas,
+      # lai priekšplānā paliek spriedumu loģiskā struktūra.
+      #
+
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+
+      SELECT ?problemID (?questionType AS ?section) (?domain AS ?subsection) ?method (STRLEN(?text) AS ?len) ?text
+      WHERE {
+        ?p a eliozo:Problem ;
+           eliozo:problemID ?problemID ;
+           eliozo:problemGrade ?grade ;
+           eliozo:problemYear ?year ;
+           eliozo:questionType ?questionType ;
+           eliozo:domain ?domain ;
+           eliozo:_readingDifficulty "low" ;
+           eliozo:problemText ?text .
+        OPTIONAL { ?p eliozo:method ?method }
+
+        FILTER (LANGMATCHES(LANG(?text), "lv"))
+        FILTER (?grade >= 8 && ?grade <= 9)
+        FILTER (?year >= 2011 && ?year <= 2026)
+
+        # Noliegšana: "vai var/vai vienmēr", pierādi, konstruē piemēru
+        FILTER (?questionType IN ("ProveDisprove", "Prove", "FindExample"))
+
+        # Formulu tehnika (nevienādības, GCD) lai neaizēno spriedumu struktūru
+        FILTER (?domain != "Geom")
+        FILTER (STRLEN(?text) <= 300)
+        FILTER (!CONTAINS(?text, "![") && !CONTAINS(?text, "att.") && !CONTAINS(?text, "zīm.")
+                && !CONTAINS(?text, "frac") && !CONTAINS(?text, "sqrt") && !CONTAINS(?text, "^"))
+
+        # Skaidri izslēgtie (skat. curriculum_9_10.md)
+        FILTER (?problemID != "LV.AMO.2025.9.5" && ?problemID != "LV.VOL.2024.10.1")
+      }
+      ORDER BY ?questionType ?len ?problemID
+  - title: {lv: "Izteiksmes un nevienādības", en: "Expressions and inequalities", lt: "Reiškiniai ir nelygybės"}
+    query: |
+      # Avots: nms-courses/docs/matf910/26_27/910_expressions_inequalities/problems.rq
+      # 9.2. temats "Izteiksmes un nevienādības": garais kandidātu saraksts.
+      #
+      # Meklējam 8.-11. klases uzdevumus, kuros ALGEBRISKS PĀRVEIDOJUMS ir
+      # pierādīšanas instruments: saīsinātās reizināšanas formulas, pilnais kvadrāts
+      # un $t^2 \geq 0$, nevienādības $a+\frac{1}{a} \geq 2$ tipa, darbības ar daļām
+      # un kvadrātsaknēm. Tas NAV "atrisini vienādojumu" temats - meklējam uzdevumus,
+      # kuros pārveidojums kaut ko PIERĀDA.
+      #
+      # Datubāzē uzdevumi ir sameklējami divos ļoti atšķirīgos veidos, tāpēc
+      # vaicājumam ir divi zari, kas apvienoti ar UNION:
+      #
+      #   (A) BIRKU zars - uzdevumiem, kam ir piešķirtas birkas. Birkas glabājas
+      #       četros dažādos slāņos (eliozo:_hasSolutionConcept, _hasReasoningMethod,
+      #       eliozo:topic un eliozo:method), tāpēc tos salīdzinām kā vienu tekstu
+      #       ?tag un sagrupējam ?family vērtībās.
+      #
+      #   (B) TEKSTA zars - uzdevumiem, kam birku NAV vispār. Bez tā no saraksta
+      #       izkristu, piemēram, LV.AMO.2025.10.1 un visa LV.VOL sērija, kur
+      #       ir tieši šī temata klasiskās nevienādības. Šeit uzdevumu atlasām pēc
+      #       formulējuma ("Pierādīt, ka ... \geq ...", "nevienādīb", "izteiksm"
+      #       kopā ar daļu, sakni vai pakāpi).
+      #
+      # ?section sagrupē kandidātus pēc metodes, lai no garā saraksta būtu ērti
+      # veidot abu nodarbību "trepes":
+      #   Ident   - saīsinātās reizināšanas formulas, sadalīšana reizinātājos (1.nod.),
+      #   Square  - pilnais kvadrāts un $t^2 \geq 0$                          (1.nod.),
+      #   Mean    - $a+\frac{1}{a} \geq 2$, AM-GM, nevienādību saskaitīšana   (2.nod.),
+      #   Frac    - daļas, kvadrātsaknes, definīcijas apgabals                (2.nod.),
+      #   Subst   - atkārtota fragmenta apzīmēšana ar jaunu mainīgo           (abas),
+      #   Transf  - ekvivalenti polinomu/nevienādību pārveidojumi             (abas),
+      #   ByText  - atrasts teksta zarā, birku nav (jāizskata ar roku).
+      #
+      # Apzināti NEŅEMAM vērā birku "ArithmeticMean" pašu par sevi: datubāzē tā
+      # apzīmē arī "vidējais aritmētiskais" tipa teksta uzdevumus (vidējais punktu
+      # skaits, vidējais koku vecums), kas ar šo tematu nav saistīti. Tāpēc šī birka
+      # dod ?family "Mean" tikai kopā ar kādu citu algebrisku birku.
+      #
+
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+
+      SELECT ?problemID ?grade ?diff
+             (GROUP_CONCAT(DISTINCT ?family;       separator="+") AS ?section)
+             (GROUP_CONCAT(DISTINCT ?domain;       separator="/") AS ?domains)
+             (GROUP_CONCAT(DISTINCT ?questionType; separator="/") AS ?questionTypes)
+      WHERE {
+        ?p a eliozo:Problem ;
+           eliozo:problemID ?problemID ;
+           eliozo:problemGrade ?grade ;
+           eliozo:problemYear ?year ;
+           eliozo:problemText ?text .
+        OPTIONAL { ?p eliozo:domain ?domain }
+        OPTIONAL { ?p eliozo:questionType ?questionType }
+        OPTIONAL { ?p eliozo:_readingDifficulty ?diff }
+
+        {
+          # ---- (A) birku zars ------------------------------------------------
+          # UNION zaram ir sava mainīgo telpa: ?p un ?text te jāsaista vēlreiz,
+          # citādi zara iekšējie FILTER nostrādātu uz nesaistītiem mainīgajiem.
+          ?p eliozo:problemText ?text .
+          {
+            { ?p eliozo:_hasSolutionConcept ?tag }
+            UNION
+            { ?p eliozo:_hasReasoningMethod ?tag }
+            UNION
+            { ?p eliozo:topic  ?topicIRI  . BIND(REPLACE(STR(?topicIRI),  "^.*#", "") AS ?tag) }
+            UNION
+            { ?p eliozo:method ?methodIRI . BIND(REPLACE(STR(?methodIRI), "^.*#", "") AS ?tag) }
+          }
+
+          # Metodes tips. Pilno kvadrātu pārbaudām pirms identitātēm, jo tas gandrīz
+          # vienmēr nes līdzi arī SquareOfSumIdentity birku.
+          BIND (
+            IF (CONTAINS(?tag, "CompleteTheSquare") || CONTAINS(?tag, "CompletingSquare"), "Square",
+            IF (CONTAINS(?tag, "AMGM") || CONTAINS(?tag, "AmGm")
+                || ?tag = "UseTrivialInequalitiesAndAddThem" || ?tag = "AddingOrMultiplyingInequalities"
+                || ?tag = "InequalityProvingStronger" || ?tag = "ProvingInequalities", "Mean",
+            IF (CONTAINS(?tag, "Identit") || CONTAINS(?tag, "SquareOfSum") || CONTAINS(?tag, "DiffOfSquares")
+                || ?tag = "FactoringAlgebraicExpressions" || ?tag = "ExpressionRegrouping", "Ident",
+            IF (CONTAINS(?tag, "Substitut") || ?tag = "SystemsSubstituteVariables", "Subst",
+            IF (?tag = "IrrationalAndReals" || ?tag = "RationalOperations" || ?tag = "FunctionDomainRange", "Frac",
+            IF (CONTAINS(?tag, "PolynomialTransformations") || ?tag = "AlgebraicTransformations"
+                || ?tag = "SymmetricAlgebraicExpressions"
+                || ?tag = "InequalitiesEquivalentTransformations"
+                || ?tag = "InequalitySolvingWithTransformations", "Transf",
+                                                                  "")))))) AS ?family )
+          FILTER (?family != "")
+
+          # Temata kodols ir algebra; kombinatorikas uzdevumus, kuros algebriska birka
+          # pielipusi blakus, neņemam.
+          FILTER EXISTS { ?p eliozo:domain "Alg" }
+          FILTER NOT EXISTS { ?p eliozo:domain "Comb" }
+
+          # Īsās atbildes un attēlus prasošie uzdevumi šim tematam neder.
+          FILTER (!CONTAINS(?text, "!["))
+          FILTER NOT EXISTS { ?p eliozo:questionType "ShortAnswer" }
+        }
+        UNION
+        {
+          # ---- (B) teksta zars: uzdevumi bez birkām ---------------------------
+          ?p eliozo:problemText ?text .
+          FILTER NOT EXISTS { ?p eliozo:_hasSolutionConcept ?anyConcept }
+          FILTER NOT EXISTS { ?p eliozo:method             ?anyMethod }
+          BIND ("ByText" AS ?family)
+
+          FILTER NOT EXISTS { ?p eliozo:domain "Comb" }
+          FILTER NOT EXISTS { ?p eliozo:domain "Geom" }
+          FILTER NOT EXISTS { ?p eliozo:domain "NT" }
+
+          FILTER (!CONTAINS(?text, "![") && !CONTAINS(?text, "sphericalangle"))
+          FILTER (STRLEN(?text) <= 320)          # gari teksti = ietērpts, nevis algebras uzdevums
+
+          # "geq"/"leq" ir \geq un \leq fragmenti (Oxigraph nepieņem \ virknēs).
+          FILTER (CONTAINS(?text, "nevienādīb")
+                  || (CONTAINS(?text, "ierād") && (CONTAINS(?text, "geq") || CONTAINS(?text, "leq")))
+                  || (CONTAINS(?text, "izteiksm")
+                      && (CONTAINS(?text, "frac") || CONTAINS(?text, "sqrt") || CONTAINS(?text, "^"))))
+        }
+
+        FILTER (LANG(?text) = "" || LANGMATCHES(LANG(?text), "lv"))
+        FILTER (?grade >= 8 && ?grade <= 11)   # 9.-10. klases līmenis ar rezervi uz abām pusēm
+        FILTER (?year >= 2003 && ?year <= 2026)
+      }
+      GROUP BY ?problemID ?grade ?diff
+      ORDER BY ?section ?grade ?problemID
