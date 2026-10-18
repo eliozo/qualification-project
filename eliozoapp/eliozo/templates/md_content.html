@@ -1,6 +1,32 @@
 {% extends "global.html" %}
 
 {% block content %}
+<style>
+    .mdcontent table {
+        margin: 10px 0 16px 0;
+        border-collapse: collapse;
+    }
+
+    .mdcontent th,
+    .mdcontent td {
+        border: 1px solid #ddd;
+        padding: 4px 8px;
+        vertical-align: top;
+    }
+
+    .mdcontent th {
+        background-color: #f2f2f2;
+    }
+
+    .mdcontent pre {
+        white-space: pre;
+        overflow-x: auto;
+    }
+
+    .mdcontent img {
+        max-width: 100%;
+    }
+</style>
 <div class="col-sm-8 text-left mdcontent">
     {{ content_html | safe }}
 </div>

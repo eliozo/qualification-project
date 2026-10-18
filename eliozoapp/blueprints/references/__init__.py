@@ -1,4 +1,4 @@
-from flask import Blueprint, abort, render_template, request, session
+from flask import Blueprint, abort, render_template, request, send_from_directory, session
 from eliozo_dao.references_repository import getSPARQLSources
 from eliozo.webmd_utils import fix_image_links, mathBeautify
 import os
@@ -25,7 +25,24 @@ CONTENT_DOC_TITLES = {
     'ontology': 'Ontology',
     'search_by_keyword': 'Exact Search',
     'search_by_regex': 'Regex Search',
+    'ontology_topics': 'Topics',
+    'ontology_methods': 'Methods',
+    'ontology_genres': 'Genres',
+    'ontology_question_types': 'Question Types',
+    'ontology_concepts': 'Concepts',
+    'ontology_olympiads': 'Olympiads',
+    'ontology_models': 'Models',
+    'ontology_hints': 'Hints',
+    'ontology_hint_types': 'Hint Types',
 }
+
+# The help page of each metadata type (ontology_<type>) is a subpage of the
+# ontology overview in the breadcrumb.
+ONTOLOGY_SUBPAGE_PREFIX = 'ontology_'
+
+# Files a document may show besides its text, e.g. the diagram on the
+# ontology page: ![...](/content/ontology/klasifikatoru_attiecibu_grafs.svg)
+_CONTENT_FILE_RE = re.compile(r'[A-Za-z0-9_-]+\.(?:svg|png|jpg|jpeg|gif)')
 
 
 def find_content_file(docname, lang):
@@ -87,21 +104,7 @@ def getContactInfo():
 def getOntology():
     # Kept as its own URL because it is linked from elsewhere; the document
     # itself is loaded by the generic content loader.
-    lang = session.get('lang', 'lv')
-    file_path = find_content_file('ontology', lang)
-    html_content = render_content_file(file_path) if file_path else ""
-
-    template_context = {
-        'active': 'about_us',
-        'navlinks': [
-            {'title':'About Us'},
-            {'url': 'references_bp.getOntology', 'title': 'Ontology'}
-        ],
-        'lang': lang,
-        'title': 'Ontology',
-        'ontology_html': html_content
-    }
-    return render_template('ontology_content.html', **template_context)
+    return getContentPage('ontology')
 
 
 @references_bp.route('/content/<docname>', methods=['GET'])
@@ -122,15 +125,24 @@ def getContentPage(docname):
         return html_content
 
     title = CONTENT_DOC_TITLES.get(docname, docname.replace('_', ' ').title())
+    navlinks = [{'title': 'About Us'}]
+    if docname.startswith(ONTOLOGY_SUBPAGE_PREFIX):
+        navlinks.append({'url': 'references_bp.getOntology', 'title': 'Ontology'})
+    navlinks.append({'url': 'references_bp.getContentPage',
+                     'params': {'docname': docname}, 'title': title})
     template_context = {
         'active': 'about_us',
-        'navlinks': [
-            {'title': 'About Us'},
-            {'url': 'references_bp.getContentPage',
-             'params': {'docname': docname}, 'title': title}
-        ],
+        'navlinks': navlinks,
         'lang': lang,
         'title': title,
         'content_html': html_content
     }
     return render_template('md_content.html', **template_context)
+
+
+@references_bp.route('/content/<docname>/<filename>', methods=['GET'])
+def getContentFile(docname, filename):
+    """An image stored next to the Markdown files of a document."""
+    if not _DOC_NAME_RE.fullmatch(docname) or not _CONTENT_FILE_RE.fullmatch(filename):
+        abort(404)
+    return send_from_directory(os.path.join(CONTENT_ROOT, docname), filename)
