@@ -89,8 +89,7 @@ def getFilter():
             d = {'problemid': item['problemid'], 'text': problem_text_value}
             problems.append(d)
 
-        all_values = {'grade':['5', '6', '7', '8',
-                               '9', '10', '11', '12', '-'],
+        all_values = {'grade':[str(g) for g in range(1, 13)] + ['-'],
                       'olympiad':['Contest', 'Book', 'RegionalOrOpen',
                                   'National', 'TeamSelection', 'International', '-'],
                       'domain':['Alg', 'Comb', 'Geom', 'NT', '-'],

@@ -16,12 +16,10 @@
                     href="{{ url_for('problems.getGrades',event=event,grade=-1,country=country_id,olympiad=olympiad_id) }}">{{
                     event }}</a>:&nbsp;</th>
             <td>
-                {% for grade in range(5,13) %}
-                {% if all_grades[event][grade-5] != 'NA' %}
+                {% for grade in all_grades[event] %}
                 <a
                     href="{{ url_for('problems.getGrades',event=event,grade=grade,country=country_id,olympiad=olympiad_id) }}">{{
                     grade }}</a>
-                {% endif %}
                 {% endfor %}
             </td>
         </tr>

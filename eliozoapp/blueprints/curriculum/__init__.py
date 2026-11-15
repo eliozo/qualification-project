@@ -32,12 +32,12 @@ def getCurriculum():
     try:
         minyear = int(request.args.get('minyear', 2000))
         maxyear = int(request.args.get('maxyear', current_year))
-        mingrade = int(request.args.get('mingrade', 5))
+        mingrade = int(request.args.get('mingrade', 1))
         maxgrade = int(request.args.get('maxgrade', 12))
     except ValueError:
         minyear = 2000
         maxyear = current_year
-        mingrade = 5
+        mingrade = 1
         maxgrade = 12
 
     domains=('Alg', 'Comb', 'Geom', 'NT')

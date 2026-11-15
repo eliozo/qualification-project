@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template, request, session, url_for, json
 import os
+import re
 from eliozo.webmd_utils import mathBeautify, fix_image_links, get_cached_book_content
 from eliozo_dao.problem_listing import UNTAGGED, chooseTranslation, collectTranslation
 from eliozo_dao.problem_repository import (
@@ -74,9 +75,13 @@ def getOlympiad():
         if timeID != current_event:
             all_events.append(timeID) # Pievienojam jaunu gadu sarakstam all_years
             current_event = timeID # Atceramies pēdējo pievienoto vērtību, lai neiespraustu atkārtoti
-            all_grades[current_event] = ['NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA'] # Sagatavojamies pievienot visas klases
+            all_grades[current_event] = [] # Šī gada klases (jebkuras no 1 līdz 12)
         grade = int(item['grade']['value'])
-        all_grades[current_event][grade-5] = item['grade']['value'] # 0. 5.klase, 1. 6.klase utt.
+        if grade not in all_grades[current_event]:
+            all_grades[current_event].append(grade)
+
+    for grades in all_grades.values():
+        grades.sort()
 
     template_context = {
         'all_events': all_events,
@@ -105,8 +110,8 @@ def getGrades():
     for item in link['results']['bindings']:
         problem_id_value = item['problemid']['value']
         problem_number_value = item['problem_number']['value']
-        if grade == -1:
-            problem_grade_value = item['problem_grade']['value']
+        if grade == '-1':
+            problem_grade_value = item.get('problem_grade', {}).get('value')
         else:
             problem_grade_value = grade
 
@@ -128,10 +133,18 @@ def getGrades():
 
     problems = list(problems_map.values())
 
-    try:
-            problems.sort(key=lambda x: (int(x['problem_grade']), int(x['problem_number'])))
-    except ValueError:
-            problems.sort(key=lambda x: (x['problem_grade'], x['problem_number']))
+    # Sort by grade (problems without a numeric grade go last), then by problem id
+    # with numeric parts compared as numbers (so "9.2" comes before "9.10").
+    def problem_sort_key(p):
+        try:
+            grade_key = (0, int(p['problem_grade']))
+        except (TypeError, ValueError):
+            grade_key = (1, 0)
+        id_key = [(0, int(part), '') if part.isdigit() else (1, 0, part)
+                  for part in re.split(r'(\d+)', p['problemid'])]
+        return (grade_key, id_key)
+
+    problems.sort(key=problem_sort_key)
 
     for p in problems:
         p['current_lang'] = chooseTranslation(p['translations'], lang)
@@ -321,6 +334,27 @@ def getProblem():
     return render_template('problem_content.html', **template_context)
 
 
+# Solution headings by language, for solutions whose text has no heading of its own.
+SOLUTION_TITLES = {'lv': 'Atrisinājums', 'en': 'Solution', 'lt': 'Sprendimas', 'et': 'Lahendus'}
+
+SOLUTION_HEADING_RE = re.compile(r'^\s*<h2[^>]*>(.*?)</h2>\s*', re.DOTALL)
+
+
+def splitSolutionHeading(html):
+    """Split '<h2>Atrisinājums-2</h2>...' into ('Atrisinājums', '...'); (None, html) without a heading."""
+    m = SOLUTION_HEADING_RE.match(html)
+    if not m:
+        return None, html
+    title = re.sub(r'[\s.]*-?\s*\d*\s*$', '', m.group(1).strip())
+    return (title or None), html[m.end():]
+
+
+def solutionNumber(solution_id):
+    """N from 'SOLN.LV.AMO.2022B.12.4.SUB<N>', so that SUB10 sorts after SUB2."""
+    m = re.search(r'(\d+)$', solution_id)
+    return int(m.group(1)) if m else 0
+
+
 @problems_bp.route('/problem_solution', methods=['GET','POST'])
 def getProblemSolution():
     problemid = request.args.get('problemid')
@@ -345,7 +379,10 @@ def getProblemSolution():
             if 'solutionID' in item:
                 s_id = item['solutionID']['value']
 
-            collectTranslation(solutions_map.setdefault(s_id, {}), s_lang, mathBeautify(fix_image_links(s_text)))
+            s_title, s_text = splitSolutionHeading(s_text)
+            soln = solutions_map.setdefault(s_id, {'translations': {}, 'titles': {}})
+            collectTranslation(soln['translations'], s_lang, mathBeautify(fix_image_links(s_text)))
+            soln['titles'].setdefault(s_lang, s_title or SOLUTION_TITLES.get(s_lang, SOLUTION_TITLES['en']))
 
     # A "lang" URL parameter (the notes on search results link with one) picks
     # the translation shown first; otherwise the shared precedence rules do.
@@ -363,13 +400,22 @@ def getProblemSolution():
     }
 
     solutions = []
-    for s_id in sorted(solutions_map.keys()):
-        s_trans = solutions_map[s_id]
-        if not s_trans:
-            continue
-        s_curr = chooseTranslation(s_trans, lang, requested_lang)
+    s_ids = [s_id for s_id in solutions_map if solutions_map[s_id]['translations']]
+    s_ids.sort(key=lambda s_id: (solutionNumber(s_id), s_id))
+    for num, s_id in enumerate(s_ids, start=1):
+        s_trans = solutions_map[s_id]['translations']
+        # A solution starts in the problem's language (if it has that translation)
+        if current_lang in s_trans:
+            s_curr = current_lang
+        else:
+            s_curr = chooseTranslation(s_trans, lang, requested_lang)
+        # "Atrisinājums-2" when there are several solutions, plain "Atrisinājums" for the only one
+        titles = {l: (f'{t}-{num}' if len(s_ids) > 1 else t)
+                  for l, t in solutions_map[s_id]['titles'].items()}
         solutions.append({
             'id': s_id,
+            'num': num,
+            'titles': titles,
             'translations': s_trans,
             'available_langs': sorted(list(s_trans.keys())),
             'current_lang': s_curr,

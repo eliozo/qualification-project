@@ -1,5 +1,32 @@
 {% extends 'global.html' %}
 
+{# Solution title (in each of its languages) followed by its language buttons #}
+{% macro solution_title(soln) %}
+<h3 class="solution">
+  {% for lang, title in soln.titles.items() %}
+  <span class="solution-title" data-lang="{{ lang }}" {% if lang !=soln.current_lang %}style="display:none" {% endif
+    %}>{{ title }}</span>
+  {% endfor %}
+  {% if soln.available_langs|length > 1 %}
+  &nbsp;&nbsp;
+  {% for lang in soln.available_langs %}
+  <a class="btn btn-xs {{ 'btn-primary' if lang == soln.current_lang else 'btn-default' }} soln-lang-btn" href="#"
+    data-lang="{{ lang }}"
+    onclick="event.stopPropagation(); showSolutionLanguage(this.closest('.solution-container'), '{{ lang }}'); return false;">{{
+    lang }}</a>
+  {% endfor %}
+  {% endif %}
+</h3>
+{% endmacro %}
+
+{% macro solution_texts(soln) %}
+{% for lang, text in soln.translations.items() %}
+<div class="solution-text" data-lang="{{ lang }}" {% if lang !=soln.current_lang %}style="display:none" {% endif %}>
+  <div class="solution">{{ text | safe }}</div>
+</div>
+{% endfor %}
+{% endmacro %}
+
 {% block content %}
 <div class="col-sm-8 text-left">
   <div class="container">
@@ -15,56 +42,30 @@
     </h3>
 
     <script>
-      function showLanguage(lang) {
-        const texts = document.querySelectorAll('.problem-text');
-        texts.forEach(div => {
-          if (div.dataset.lang === lang) {
-            div.style.display = 'block';
-          } else {
-            div.style.display = 'none';
-          }
+      // Show the elements (texts, titles) of one language and highlight its button.
+      function selectLanguage(container, itemSelector, buttonSelector, lang) {
+        container.querySelectorAll(itemSelector).forEach(el => {
+          el.style.display = (el.dataset.lang === lang) ? '' : 'none';
         });
+        container.querySelectorAll(buttonSelector).forEach(btn => {
+          btn.classList.toggle('btn-primary', btn.dataset.lang === lang);
+          btn.classList.toggle('btn-default', btn.dataset.lang !== lang);
+        });
+      }
 
-        // Update button styles
-        const buttons = document.querySelectorAll('.problem-lang-btn');
-        buttons.forEach(btn => {
-          if (btn.dataset.lang === lang) {
-            btn.classList.remove('btn-default');
-            btn.classList.add('btn-primary');
-          } else {
-            btn.classList.remove('btn-primary');
-            btn.classList.add('btn-default');
+      // Switching the problem's language switches the solutions too (those that have it);
+      // a solution's own buttons switch only that solution.
+      function showLanguage(lang) {
+        selectLanguage(document, '.problem-text', '.problem-lang-btn', lang);
+        document.querySelectorAll('.solution-container').forEach(container => {
+          if (container.querySelector('.solution-text[data-lang="' + lang + '"]')) {
+            showSolutionLanguage(container, lang);
           }
         });
       }
 
-      function showSolutionLanguage(link, lang) {
-        // Find the parent container of the clicked butto to scope the search
-        // structure: .soln-langs -> (buttons)
-        // parent of .soln-langs is .solution-container
-        // .solution-container contains .solution-text divs
-
-        const container = link.closest('.solution-container');
-        const texts = container.querySelectorAll('.solution-text');
-        texts.forEach(div => {
-          if (div.dataset.lang === lang) {
-            div.style.display = 'block';
-          } else {
-            div.style.display = 'none';
-          }
-        });
-
-        // Update button styles
-        const buttons = container.querySelectorAll('.soln-lang-btn');
-        buttons.forEach(btn => {
-          if (btn.dataset.lang === lang) {
-            btn.classList.remove('btn-default');
-            btn.classList.add('btn-primary');
-          } else {
-            btn.classList.remove('btn-primary');
-            btn.classList.add('btn-default');
-          }
-        });
+      function showSolutionLanguage(container, lang) {
+        selectLanguage(container, '.solution-text, .solution-title', '.soln-lang-btn', lang);
       }
     </script>
 
@@ -81,27 +82,30 @@
         %}Hide
         solution{% endtrans %}</a></p>
 
-
-    {% for soln in solutions %}
+    {% if solutions|length == 1 %}
+    {% set soln = solutions[0] %}
     <div class="solution-container">
-      {% if soln.available_langs|length > 1 %}
-      <div class="soln-langs" style="margin-bottom: 5px;">
-        {% for lang in soln.available_langs %}
-        <a class="btn btn-xs {{ 'btn-primary' if lang == soln.current_lang else 'btn-default' }} soln-lang-btn" href="#"
-          data-lang="{{ lang }}" onclick="showSolutionLanguage(this, '{{ lang }}'); return false;">{{ lang }}</a>
-        {% endfor %}
-      </div>
-      {% endif %}
-
-      {% for lang, text in soln.translations.items() %}
-      <div class="solution-text" data-lang="{{ lang }}" {% if lang !=soln.current_lang %}style="display:none" {% endif
-        %}>
-        <div class="solution">{{ text | safe }}</div>
+      {{ solution_title(soln) }}
+      {{ solution_texts(soln) }}
+    </div>
+    {% elif solutions %}
+    {# Accordion: one solution open at a time (the first one initially) #}
+    <div class="panel-group solutions-accordion" id="solutions-accordion">
+      {% for soln in solutions %}
+      <div class="panel panel-default solution-container">
+        <div class="panel-heading solution-heading" data-toggle="collapse" data-parent="#solutions-accordion"
+          data-target="#solution-{{ soln.num }}">
+          {{ solution_title(soln) }}
+        </div>
+        <div id="solution-{{ soln.num }}" class="panel-collapse collapse {% if loop.first %}in{% endif %}">
+          <div class="panel-body">
+            {{ solution_texts(soln) }}
+          </div>
+        </div>
       </div>
       {% endfor %}
     </div>
-    <hr />
-    {% endfor %}
+    {% endif %}
 
   </div>
   {% endblock %}

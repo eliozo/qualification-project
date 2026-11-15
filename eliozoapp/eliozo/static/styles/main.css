@@ -152,9 +152,19 @@ dd.info {
   margin-left: 30px !important;
 }
 
-h3.problem {
+h3.problem,
+h3.solution {
   font-size: 120%;
   color: #1565C0;
+}
+
+/* Solutions accordion on the problem_solution page */
+div.solution-heading {
+  cursor: pointer;
+}
+
+div.solution-heading h3.solution {
+  margin: 0;
 }
 
 div.problemDiv {

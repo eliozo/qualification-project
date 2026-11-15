@@ -8,9 +8,13 @@
             <!-- Grade Filter -->
             <div class="filter" style="max-width: 140px;">
                 <b>{% trans %}Grade{% endtrans %}:</b><br />
-                {% for (val,lbl) in [('5','5'), ('6','6'), ('7', '7'), ('8', '8'),
+                {% for (val,lbl) in [('1','1'), ('2','2'), ('3','3'), ('4','4'), ('5','5'), ('6','6'), ('7', '7'), ('8', '8'),
                 ('9', '9'), ('10', '10'), ('11', '11'), ('12', '12'), ('-', 'NA')] %}
-                {% if val == params['grade'] %}
+                {# Grades 1-4 are rare: show them only when they have matching problems #}
+                {% set hidden = val in ['1', '2', '3', '4'] and val != params['grade']
+                      and (not all_counts['grade'] or all_counts['grade'][val] == '0') %}
+                {% if hidden %}
+                {% elif val == params['grade'] %}
                 <label class="selected"><input type="radio" name="grade" checked="1" value="{{ val }}"
                         onchange="document.getElementById('searchForm').submit();">{{ lbl }}
                     {% if all_counts['grade'] %} [{{ all_counts['grade'][val] }}]&nbsp; {% endif %}</label>
@@ -19,7 +23,7 @@
                         onchange="document.getElementById('searchForm').submit();">{{ lbl }}&nbsp;
                     {% if all_counts['grade'] %} [{{ all_counts['grade'][val] }}]&nbsp; {% endif %}</label>
                 {% endif %}
-                {% if val in ['6', '8', '10', '12'] %}<br />{% endif %}
+                {% if val in ['6', '8', '10', '12'] or (val in ['2', '4'] and not hidden) %}<br />{% endif %}
                 {% endfor %}
                 <small><a href="#" onclick="document.querySelectorAll('input[name=grade]').forEach(el => {
                     el.checked = false;

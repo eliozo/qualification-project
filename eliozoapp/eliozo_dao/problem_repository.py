@@ -74,7 +74,7 @@ def getSPARQLOlympiadProblemsByEvent(event, country, olympiad, lang):
       ?problem eliozo:problemTextHtml ?text .
       ?problem eliozo:problemID ?problemid .
       ?problem eliozo:problem_number ?problem_number .
-      ?problem eliozo:problemGrade ?problem_grade .
+      OPTIONAL {{ ?problem eliozo:problemGrade ?problem_grade . }}
       ?problem eliozo:olympiadCode '{olympiad_code}' .
       OPTIONAL {{ ?problem eliozo:problemSuffix ?suffix . }}
     }} ORDER BY ?problem_number
