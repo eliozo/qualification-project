@@ -1,40 +1,51 @@
 {% extends 'global.html' %}
 
+{# A row of toggle chips (checkboxes styled as buttons): any combination can be selected #}
+{% macro chips(name, values, selected, legend) %}
+<fieldset class="chip-group">
+        <legend>{{ legend }}:</legend>
+        <span class="chips">
+                {% for v in values %}
+                <input type="checkbox" class="chip-input" name="{{ name }}" id="{{ name }}-{{ v }}" value="{{ v }}"
+                        {% if v in selected %}checked{% endif %}>
+                <label class="chip" for="{{ name }}-{{ v }}">{{ v }}</label>
+                {% endfor %}
+        </span>
+</fieldset>
+{% endmacro %}
+
 {% block content %}
 <div class="col-sm-8 text-left">
-        <form action="{{ url_for('curriculum_bp.getCurriculum') }}" method="get" class="form-inline"
-                style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
+        <form action="{{ url_for('curriculum_bp.getCurriculum') }}" method="get" class="curriculum-form">
+                {{ chips('olympiad', cov.olympiads, sel_olympiads, _('Olympiad')) }}
+
+                <fieldset class="chip-group">
+                        <legend>{% trans %}Years{% endtrans %}:</legend>
+                        <select name="year_from" class="form-control input-sm" aria-label="{{ _('From year') }}">
+                                {% for y in cov.years %}
+                                <option value="{{ y }}" {% if y == year_from %}selected{% endif %}>{{ y }}</option>
+                                {% endfor %}
+                        </select>
+                        <span aria-hidden="true">&ndash;</span>
+                        <select name="year_to" class="form-control input-sm" aria-label="{{ _('To year') }}">
+                                {% for y in cov.years %}
+                                <option value="{{ y }}" {% if y == year_to %}selected{% endif %}>{{ y }}</option>
+                                {% endfor %}
+                        </select>
+                        {% if cov.years %}
+                        <small class="hint">{% trans %}Archive{% endtrans %}: {{ cov.years[0] }}&ndash;{{ cov.years[-1] }}</small>
+                        {% endif %}
+                </fieldset>
+
+                {{ chips('grade', cov.grades, sel_grades, _('Grades')) }}
+
                 <div>
-                        <label style="font-weight: normal; font-style: italic;">{% trans %}Olympiad{% endtrans
-                                %}:</label>
-                        <label class="checkbox-inline"><input type="checkbox" name="olympiad_list" value="LV.AMO" {%
-                                        if 'LV.AMO' in olympiads %}checked{% endif %}> LV.AMO</label>
-                        <label class="checkbox-inline"><input type="checkbox" name="olympiad_list" value="LV.NOL" {%
-                                        if 'LV.NOL' in olympiads %}checked{% endif %}> LV.NOL</label>
-                        <label class="checkbox-inline"><input type="checkbox" name="olympiad_list" value="LV.VOL" {%
-                                        if 'LV.VOL' in olympiads %}checked{% endif %}> LV.VOL</label>
+                        <button type="submit" class="btn btn-default btn-sm">{% trans %}Show{% endtrans %}</button>
+                        <small class="hint">{% trans %}Nothing selected means all olympiads / all grades{% endtrans %}</small>
                 </div>
-                <div>
-                        <label style="font-weight: normal; font-style: italic;">{% trans %}Years{% endtrans %}:</label>
-                        <input type="number" name="minyear" value="{{ minyear }}" min="2000" max="{{ current_year }}"
-                                class="form-control input-sm" style="width: 70px">
-                        -
-                        <input type="number" name="maxyear" value="{{ maxyear }}" min="2000" max="{{ current_year }}"
-                                class="form-control input-sm" style="width: 70px">
-                </div>
-                <div>
-                        <label style="font-weight: normal; font-style: italic;">{% trans %}Grades{% endtrans %}:</label>
-                        <input type="number" name="mingrade" value="{{ mingrade }}" min="1" max="12"
-                                class="form-control input-sm" style="width: 60px">
-                        -
-                        <input type="number" name="maxgrade" value="{{ maxgrade }}" min="1" max="12"
-                                class="form-control input-sm" style="width: 60px">
-                </div>
-                <button type="submit" class="btn btn-default btn-sm">{% trans %}Show{% endtrans %}</button>
         </form>
 
 
-        {% if olympiads %}
         <!-- Tabs Nav -->
         <ul class="nav nav-tabs" id="curriculumTabs">
                 <li class="active"><a data-toggle="tab" href="#matrix">{% trans %}Question Types{% endtrans %}</a></li>
@@ -49,28 +60,30 @@
         <!-- Tabs Content -->
         <div class="tab-content" style="padding-top: 15px;">
 
-                <!-- Question Types Matrix Tab -->
+                <!-- Question Types Tab: problem IDs by question type and domain -->
                 <div id="matrix" class="tab-pane fade in active">
-                        <table class="table table-sm table-striped">
-                                <thead>
-                                        <tr>
-                                                <th>Jautājuma tips</th>
-                                                {% for d in domains %}
-                                                <th>{{ d }}</th>
-                                                {% endfor %}
-                                        </tr>
-                                </thead>
-                                <tbody>
-                                        {% for qt in question_types %}
-                                        <tr>
-                                                <th scope="row">{{ qt }}</th>
-                                                {% for d in domains %}
-                                                <td>{{ matrix[qt][d] }}</td>
-                                                {% endfor %}
-                                        </tr>
+                        <ul>
+                                {% for qt in all_qtypes %}
+                                {% set info = all_qtypes_info[qt] %}
+                                <li>{{ qt }}{% if info.questionName %} ({{ info.questionName }}){% endif %}
+                                        <span class="tltip"><img style="vertical-align: middle;width:12px;"
+                                                        src="{{ url_for('static',filename='blue_question_mark.png') }}">
+                                                <span class="tltiptext" style="font-weight:normal;"><tt
+                                                                class="metahelp">{{ qt }}:</tt>
+                                                        {% if info.questionDescription != '' %}
+                                                        <small>{{ info.questionDescription | safe }}</small>
+                                                        {% endif %}
+                                                </span></span>
+                                        {% for domain, problems in info.problems %}
+                                        <br /><small><b>{{ domain }}:</b>
+                                                {% for problem in problems %}
+                                                <a href="{{ url_for('problems.getProblem',problemid=problem) }}">{{
+                                                        problem }}</a>{%- if not loop.last %},{% endif %}
+                                                {% endfor %}</small>
                                         {% endfor %}
-                                </tbody>
-                        </table>
+                                </li>
+                                {% endfor %}
+                        </ul>
                 </div>
 
                 <!-- Topics Tab -->
@@ -173,7 +186,6 @@
                 {% endif %}
 
         </div>
-        {% endif %}
 
 </div>
 

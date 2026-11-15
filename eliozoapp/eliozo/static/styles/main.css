@@ -443,3 +443,79 @@ dl.problem-list dt.child {
   line-height: 1.5;
   border-radius: 3px;
 }
+/* Curriculum form: toggle chips, year range */
+.curriculum-form {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.curriculum-form fieldset.chip-group {
+  margin-bottom: 8px;
+}
+
+.curriculum-form legend {
+  display: inline;
+  width: auto;
+  border: none;
+  margin: 0 6px 0 0;
+  font-size: inherit;
+  font-style: italic;
+  color: inherit;
+}
+
+.curriculum-form select.form-control {
+  display: inline-block;
+  width: auto;
+}
+
+.curriculum-form .hint {
+  color: #777;
+  margin-left: 6px;
+}
+
+.chips {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  vertical-align: middle;
+}
+
+/* The checkbox stays in the form and keyboard focus order, but only its label shows */
+.chip-input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.chip {
+  display: inline-block;
+  min-width: 2.5em;
+  margin: 0;
+  padding: 3px 10px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  background-color: #fff;
+  color: #333;
+  font-weight: normal;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chip:hover {
+  background-color: #e6e6e6;
+}
+
+.chip-input:checked + .chip {
+  background-color: #1565C0;
+  border-color: #1565C0;
+  color: #fff;
+}
+
+.chip-input:focus-visible + .chip {
+  outline: 2px solid #66afe9;
+  outline-offset: 1px;
+}

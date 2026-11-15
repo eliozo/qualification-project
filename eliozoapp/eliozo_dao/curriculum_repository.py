@@ -1,30 +1,57 @@
 from . import sparql_query
 
 
-def getSPARQLCurriculumQtypeStats(olympiad, grades, years):
-    queryTemplate = """
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+# The curriculum functions take ``grades`` as a collection of grade numbers
+# (problems of any of these grades match; empty or None means all grades)
+# and ``years`` as an inclusive (min, max) pair.
+def _gradeFilter(grades):
+    if not grades:
+        return ''
+    return 'FILTER (?grade IN (%s))' % ', '.join(str(int(g)) for g in sorted(grades))
 
-    SELECT ?domain ?questionType (COUNT(DISTINCT ?problem) AS ?count)
-    WHERE {{
+
+def getSPARQLCurriculumCoverage(olympiads):
+    """Distinct (olympiad, year, grade) combinations of the given olympiads' problems."""
+    queryTemplate = """
+    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+    SELECT DISTINCT ?olympiad ?year ?grade WHERE {{
+        VALUES ?olympiad {{ {olympiads} }}
         ?problem a eliozo:Problem ;
-        eliozo:olympiad '{olympiadCode}' ;
-        eliozo:problemGrade ?grade ;
-        eliozo:problemYear ?year ;
-        eliozo:domain ?domain ;
-        eliozo:questionType ?questionType .
-        FILTER (?grade <= {gradeMax} && ?grade >= {gradeMin})
-        FILTER (?year <= {yearMax} && ?year >= {yearMin})
+                 eliozo:olympiad ?olympiad ;
+                 eliozo:problemYear ?year ;
+                 eliozo:problemGrade ?grade .
     }}
-    GROUP BY ?domain ?questionType
-    ORDER BY ?domain ?questionType
+    """
+    return sparql_query(queryTemplate.format(olympiads=' '.join("'%s'" % o for o in olympiads)))
+
+
+def getSPARQLCurriculumQuestionTypes(olympiad, grades, years):
+    """Problems with their question type and domain (if any); the question type's
+    name, description and sort keys come from its eliozo:Question resource, if there is one."""
+    queryTemplate = """
+    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+    SELECT ?problemID ?questionType ?domain ?questionName ?questionDescription ?L1 ?L2 WHERE {{
+        ?problem a eliozo:Problem ;
+                 eliozo:problemID ?problemID ;
+                 eliozo:olympiad '{olympiadCode}' ;
+                 eliozo:problemGrade ?grade ;
+                 eliozo:problemYear ?year ;
+                 eliozo:questionType ?questionType .
+        {gradeFilter}
+        FILTER (?year <= {yearMax} && ?year >= {yearMin})
+        OPTIONAL {{ ?problem eliozo:domain ?domain . }}
+        OPTIONAL {{
+            ?question a eliozo:Question ;
+                      eliozo:questionID ?questionType ;
+                      eliozo:questionName ?questionName ;
+                      eliozo:questionDescription ?questionDescription ;
+                      eliozo:sorter_L1 ?L1 ;
+                      eliozo:sorter_L2 ?L2 .
+        }}
+    }}
     """
     return sparql_query(queryTemplate.format(olympiadCode=olympiad,
-                                             gradeMax=grades[1],
-                                             gradeMin=grades[0],
+                                             gradeFilter=_gradeFilter(grades),
                                              yearMax=years[1],
                                              yearMin=years[0]))
 
@@ -41,7 +68,7 @@ SELECT ?problemID ?topicID ?topicNumber ?topicName ?topicDescription ?L1 ?L2 ?L3
            eliozo:olympiad '{olympiadCode}' ;
            eliozo:problemGrade ?grade ;
            eliozo:problemYear ?year .
-  FILTER (?grade <= {gradeMax} && ?grade >= {gradeMin})
+  {gradeFilter}
   FILTER (?year <= {yearMax} && ?year >= {yearMin})
   ?topic a eliozo:Topic ;
             eliozo:topicID ?topicID ;
@@ -56,8 +83,7 @@ SELECT ?problemID ?topicID ?topicNumber ?topicName ?topicDescription ?L1 ?L2 ?L3
 }} ORDER BY ?L1 ?L2 ?L3 ?L4 ?L5
 """
     return sparql_query(queryTemplate.format(olympiadCode=olympiad,
-                                             gradeMax=grades[1],
-                                             gradeMin=grades[0],
+                                             gradeFilter=_gradeFilter(grades),
                                              yearMax=years[1],
                                              yearMin=years[0]))
 
@@ -74,7 +100,7 @@ def getSPARQLCurriculumMethods(olympiad, grades, years):
             eliozo:olympiad '{olympiadCode}' ;
             eliozo:problemGrade ?grade ;
             eliozo:problemYear ?year .
-    FILTER (?grade <= {gradeMax} && ?grade >= {gradeMin})
+    {gradeFilter}
     FILTER (?year <= {yearMax} && ?year >= {yearMin})
     ?method a eliozo:Method ;
                 eliozo:methodNumber ?methodNumber ;
@@ -86,8 +112,7 @@ def getSPARQLCurriculumMethods(olympiad, grades, years):
     }} ORDER BY ?L1 ?L2
     """
     return sparql_query(queryTemplate.format(olympiadCode=olympiad,
-                                             gradeMax=grades[1],
-                                             gradeMin=grades[0],
+                                             gradeFilter=_gradeFilter(grades),
                                              yearMax=years[1],
                                              yearMin=years[0]))
 
@@ -104,7 +129,7 @@ def getSPARQLCurriculumSubdomains(olympiad, grades, years):
                eliozo:olympiad '{olympiadCode}' ;
                eliozo:problemGrade ?grade ;
                eliozo:problemYear ?year .
-      FILTER (?grade <= {gradeMax} && ?grade >= {gradeMin})
+      {gradeFilter}
       FILTER (?year <= {yearMax} && ?year >= {yearMin})
       ?domain a eliozo:Domain ;
               eliozo:domainID ?domainID ;
@@ -116,7 +141,6 @@ def getSPARQLCurriculumSubdomains(olympiad, grades, years):
     }} ORDER BY ?L1 ?L2 ?L3 ?problemID
     """
     return sparql_query(queryTemplate.format(olympiadCode=olympiad,
-                                             gradeMax=grades[1],
-                                             gradeMin=grades[0],
+                                             gradeFilter=_gradeFilter(grades),
                                              yearMax=years[1],
                                              yearMin=years[0]))

@@ -1,0 +1,114 @@
+"""The /getCurriculum form: chips for olympiads and grades, year dropdowns
+computed from the archive; nothing selected means all."""
+
+import re
+
+import pytest
+
+CURRICULUM_TTL = """
+@prefix eliozo: <http://www.dudajevagatve.lv/eliozo#> .
+
+eliozo:LV.AMO.1988.4.1 a eliozo:Problem ; eliozo:problemID "LV.AMO.1988.4.1" ;
+    eliozo:olympiad "LV.AMO" ; eliozo:problemYear 1988 ; eliozo:problemGrade 4 ;
+    eliozo:domain "Alg" ; eliozo:questionType "Prove" .
+eliozo:LV.AMO.2011.7.1 a eliozo:Problem ; eliozo:problemID "LV.AMO.2011.7.1" ;
+    eliozo:olympiad "LV.AMO" ; eliozo:problemYear 2011 ; eliozo:problemGrade 7 ;
+    eliozo:domain "Comb" ; eliozo:questionType "FindAll" .
+eliozo:LV.SOL.2020.9.1 a eliozo:Problem ; eliozo:problemID "LV.SOL.2020.9.1" ;
+    eliozo:olympiad "LV.SOL" ; eliozo:problemYear 2020 ; eliozo:problemGrade 9 ;
+    eliozo:domain "Geom" ; eliozo:questionType "Prove" .
+eliozo:LV.SOL.2020.9.2 a eliozo:Problem ; eliozo:problemID "LV.SOL.2020.9.2" ;
+    eliozo:olympiad "LV.SOL" ; eliozo:problemYear 2020 ; eliozo:problemGrade 9 ;
+    eliozo:questionType "Prove" .
+eliozo:LV.SOL.2020.9.10 a eliozo:Problem ; eliozo:problemID "LV.SOL.2020.9.10" ;
+    eliozo:olympiad "LV.SOL" ; eliozo:problemYear 2020 ; eliozo:problemGrade 9 ;
+    eliozo:domain "Geom" ; eliozo:questionType "Prove" .
+eliozo:Prove a eliozo:Question ; eliozo:questionID "Prove" ; eliozo:questionName "Pierādīt" ;
+    eliozo:questionDescription "Pierādīt apgalvojumu." ; eliozo:sorter_L1 3 ; eliozo:sorter_L2 0 .
+eliozo:FindAll a eliozo:Question ; eliozo:questionID "FindAll" ; eliozo:questionName "Atrast visus" ;
+    eliozo:questionDescription "Atrast visus atrisinājumus." ; eliozo:sorter_L1 1 ; eliozo:sorter_L2 1 .
+# Not a curriculum olympiad: its year and grade must not appear on the form
+eliozo:LV.TST.1970.2.1 a eliozo:Problem ; eliozo:problemID "LV.TST.1970.2.1" ;
+    eliozo:olympiad "LV.TST" ; eliozo:problemYear 1970 ; eliozo:problemGrade 2 ;
+    eliozo:domain "NT" ; eliozo:questionType "Prove" .
+"""
+
+
+@pytest.fixture
+def client(monkeypatch):
+    from pyoxigraph import RdfFormat, Store
+
+    import eliozo
+    import eliozo_dao
+
+    store = Store()
+    store.load(input=CURRICULUM_TTL, format=RdfFormat.TURTLE)
+    monkeypatch.setattr(eliozo_dao, "_store", store, raising=False)
+    return eliozo.create_app({'TESTING': True}).test_client()
+
+
+def options(html, name):
+    select = re.search(r'<select name="%s".*?</select>' % name, html, re.DOTALL).group(0)
+    return re.findall(r'<option value="(\d+)" (selected)?', select)
+
+
+def chips(html, name):
+    return re.findall(r'name="%s" id="[^"]+" value="([^"]+)"\s*(checked)?' % name, html)
+
+
+def qtype_problems(html):
+    """Problem IDs linked from the Question Types tab."""
+    tab = re.search(r'<div id="matrix".*?</ul>', html, re.DOTALL).group(0)
+    return re.findall(r'problemid=([\w.]+)', tab)
+
+
+def matrix_total(html):
+    return len(qtype_problems(html))
+
+
+def test_default_form_shows_archive_coverage_and_queries_everything(client):
+    with client.session_transaction() as session:
+        session['lang'] = 'en'
+    html = client.get('/getCurriculum').get_data(as_text=True)
+
+    assert options(html, 'year_from') == [('1988', 'selected'), ('2011', ''), ('2020', '')]
+    assert options(html, 'year_to') == [('1988', ''), ('2011', ''), ('2020', 'selected')]
+    assert 'Archive: 1988&ndash;2020' in html
+    assert chips(html, 'olympiad') == [('LV.AMO', ''), ('LV.NOL', ''), ('LV.VOL', ''), ('LV.SOL', '')]
+    assert chips(html, 'grade') == [('4', ''), ('7', ''), ('9', '')]
+    assert matrix_total(html) == 5
+
+
+def test_selected_chips_and_years_filter_the_results(client):
+    html = client.get('/getCurriculum?olympiad=LV.AMO&grade=4&grade=9').get_data(as_text=True)
+    assert ('LV.AMO', 'checked') in chips(html, 'olympiad')
+    assert chips(html, 'grade') == [('4', 'checked'), ('7', ''), ('9', 'checked')]
+    assert qtype_problems(html) == ['LV.AMO.1988.4.1']
+
+    html = client.get('/getCurriculum?year_from=2011&year_to=2020').get_data(as_text=True)
+    assert matrix_total(html) == 4
+
+
+def test_invalid_values_are_ignored(client):
+    html = client.get('/getCurriculum?olympiad=LV.TST&grade=x&grade=2'
+                      '&year_from=2020&year_to=1900').get_data(as_text=True)
+    assert all(not checked for _, checked in chips(html, 'olympiad') + chips(html, 'grade'))
+    # Years are clamped to the archive and put in order
+    assert ('1988', 'selected') in options(html, 'year_from')
+    assert ('2020', 'selected') in options(html, 'year_to')
+    assert matrix_total(html) == 5
+
+
+def test_question_types_list_problems_by_domain(client):
+    html = client.get('/getCurriculum').get_data(as_text=True)
+    tab = re.search(r'<div id="matrix".*?</ul>', html, re.DOTALL).group(0)
+    items = [re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', li)).strip()
+             for li in re.findall(r'<li>(.*?)</li>', tab, re.DOTALL)]
+    # Vocabulary order (FindAll 1.1 before Prove 3.0), names and descriptions shown;
+    # domains without problems left out, problems without a domain listed as NA,
+    # problem IDs in natural order (9.2 before 9.10)
+    assert items == [
+        'FindAll (Atrast visus) FindAll: Atrast visus atrisinājumus. Comb: LV.AMO.2011.7.1',
+        'Prove (Pierādīt) Prove: Pierādīt apgalvojumu. Alg: LV.AMO.1988.4.1 '
+        'Geom: LV.SOL.2020.9.1 , LV.SOL.2020.9.10 NA: LV.SOL.2020.9.2',
+    ]
