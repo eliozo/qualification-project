@@ -96,22 +96,22 @@
                         <b>NT</b> - {% trans %}Number theory{% endtrans %}.</span></span>
             </div>
 
-            <div class="filter" style="max-width: 180px;">
+            <div class="filter" style="max-width: 200px;">
                 <b>{% trans %}Question{% endtrans %}:</b>
-                {% for (val,lbl) in [('FindAll','FindAll'), ('FindCount','FindCount'), ('FindOptimal', 'FindOptimal'),
-                ('FindExample','FindExample'),('Prove','Prove'),('ProveDisprove','ProveDisprove'),
-                ('Algorithm','Algorithm'),('ShortAnswer','ShortAnswer'), ('-', 'NA')] %}
-                {% if val == params['questionType'] %}
-                <label class="selected"><input type="radio" name="questionType" checked="1" value="{{ val }}"
+                {# Group types with their subtypes indented; a subtype is listed only if it has
+                   problems for the current filters (or is selected) #}
+                {% for val in questionTypes.keys()|list + ['-'] %}
+                {% set qt = questionTypes.get(val) %}
+                {% set count = all_counts['questionType'].get(val) if all_counts['questionType'] else None %}
+                {% if val == '-' or qt.isGroup or val == params['questionType'] or (count and count != '0') %}
+                {% set lbl = qt.name if qt else 'NA' %}
+                <br />{% if qt and not qt.isGroup %}&nbsp;&nbsp;&nbsp;{% endif %}
+                <label {% if val == params['questionType'] %}class="selected"{% endif %}
+                       {% if qt and qt.canonical %}title="{{ qt.canonical }}"{% endif %}><input type="radio"
+                        name="questionType" value="{{ val }}" {% if val == params['questionType'] %}checked="1"{% endif %}
                         onchange="document.getElementById('searchForm').submit();">{{ lbl }}
-                    {% if all_counts['questionType'] %} [{{ all_counts['questionType'][val] }}]&nbsp; {% endif
-                    %}</label>
-                {% else %}
-                <label><input type="radio" name="questionType" value="{{ val }}"
-                        onchange="document.getElementById('searchForm').submit();">{{ lbl }}
-                    {% if all_counts['questionType'] %} [{{ all_counts['questionType'][val] }}]&nbsp; {% endif
-                    %}</label>
-                {% endif %}{% if not loop.last %}<br />{% endif %}
+                    {% if count is not none %} [{{ count }}]&nbsp; {% endif %}</label>
+                {% endif %}
                 {% endfor %}
                 <br /><small><a href="#" onclick="document.querySelectorAll('input[name=questionType]').forEach(el => {
                     el.checked = false;
@@ -122,21 +122,12 @@
                         src="{{ url_for('static',filename='blue_question_mark.png') }}">
                     <span class="tltiptext">{% trans %}A question type implies the structure of a solution.{% endtrans
                         %}
-                        {% trans %}Every subitem (A,B,...) may have its own question type.{% endtrans %}<br />
-                        <b>FindAll</b> - {% trans %}Find all solutions, show that there are no others.{% endtrans
-                        %}<br />
-                        <b>FindCount</b> - {% trans %}Determine the count of answers or other objects.{% endtrans
-                        %}<br />
-                        <b>FindOptimal</b> - {% trans %}Find the largest, the smallest or the "best" solution.{%
-                        endtrans %}<br />
-                        <b>FindExample</b> - {% trans %}Provide any example satisfying the requirements.{% endtrans
-                        %}<br />
-                        <b>Prove</b> - {% trans %}Prove the given statement.{% endtrans %}<br />
-                        <b>ProveDisprove</b> - {% trans %}Prove or disprove the given statement.{% endtrans %}<br />
-                        <b>Algorithm</b> - {% trans %}Describe a procedure, a construction, a game strategy.{% endtrans
-                        %}<br />
-                        <b>ShortAnswer</b> - {% trans %}Enter an answer such as a number, a multiple choice or Yes/No.{%
-                        endtrans %}</span></span>
+                        {% trans %}Every subitem (A,B,...) may have its own question type.{% endtrans %}
+                        {% trans %}A group of question types includes its subtypes.{% endtrans %}<br />
+                        {% for qt in questionTypes.values() %}
+                        {% if not qt.isGroup %}&nbsp;&nbsp;&nbsp;{% endif %}<b>{{ qt.name }}</b>{% if qt.canonical %}
+                        – {{ qt.canonical }}{% endif %}<br />
+                        {% endfor %}</span></span>
             </div>
 
             <div class="filter">

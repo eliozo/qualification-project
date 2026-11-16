@@ -65,15 +65,23 @@
                         <ul>
                                 {% for qt in all_qtypes %}
                                 {% set info = all_qtypes_info[qt] %}
-                                <li>{{ qt }}{% if info.questionName %} ({{ info.questionName }}){% endif %}
+                                <li {% if info.isSubtype %}style="margin-left: 1.5em;"{% endif %}><b>{{
+                                        info.questionName }}</b>{% if info.questionCanonical %} –
+                                        <i>{{ info.questionCanonical }}</i>{% endif %}
+                                        {% if info.questionDescription or info.questionRequiredParts %}
                                         <span class="tltip"><img style="vertical-align: middle;width:12px;"
                                                         src="{{ url_for('static',filename='blue_question_mark.png') }}">
-                                                <span class="tltiptext" style="font-weight:normal;"><tt
-                                                                class="metahelp">{{ qt }}:</tt>
-                                                        {% if info.questionDescription != '' %}
+                                                <span class="tltiptext" style="font-weight:normal;">
+                                                        {% if info.questionDescription %}
                                                         <small>{{ info.questionDescription | safe }}</small>
                                                         {% endif %}
+                                                        {% if info.questionRequiredParts %}
+                                                        <br /><small><b>{% trans %}Required parts{% endtrans
+                                                                        %}:</b> {{ info.questionRequiredParts
+                                                                }}</small>
+                                                        {% endif %}
                                                 </span></span>
+                                        {% endif %}
                                         {% for domain, problems in info.problems %}
                                         <br /><small><b>{{ domain }}:</b>
                                                 {% for problem in problems %}

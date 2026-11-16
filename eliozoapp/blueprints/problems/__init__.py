@@ -3,6 +3,7 @@ import os
 import re
 from eliozo.webmd_utils import mathBeautify, fix_image_links, get_cached_book_content
 from eliozo_dao.problem_listing import UNTAGGED, chooseTranslation, collectTranslation
+from eliozo_dao.question_type_repository import getQuestionTypes, questionTypeName
 from eliozo_dao.problem_repository import (
     getSPARQLOlympiads,
     getSPARQLOlympiadTimeIDs,
@@ -253,7 +254,6 @@ def getProblem():
     methodIdentifier = "NA"
     topicIdentifier = "NA"
     concepts = "NA"
-    questionType = "NA"
     domain = "NA"
 
     metaitems.append({'key':'problemID','value': problemid})
@@ -279,8 +279,6 @@ def getProblem():
             methodIdentifier = first_binding['methodIdentifier']['value']
         if 'concepts' in first_binding:
             concepts = first_binding['concepts']['value']
-        if 'questionType' in first_binding:
-            questionType = first_binding['questionType']['value']
         if 'domain' in first_binding:
             domain = first_binding['domain']['value']
 
@@ -308,8 +306,13 @@ def getProblem():
         all_topics.append(topicIdentifier)
     if concepts != 'NA':
         metaitems.append({'key': 'concepts', 'value': concepts.replace('http://www.dudajevagatve.lv/eliozo#TRM-','')})
-    if questionType != 'NA':
-        metaitems.append({'key': 'questionType', 'value': questionType})
+    # All the question types of the problem (and of its sub-parts), by their names
+    question_type_ids = list(dict.fromkeys(b['questionType']['value'] for b in data['results']['bindings']
+                                           if 'questionType' in b)) if first_binding else []
+    if question_type_ids:
+        question_types = getQuestionTypes(session.get('lang', 'lv'))
+        metaitems.append({'key': 'questionType',
+                          'value': ', '.join(questionTypeName(question_types, q) for q in question_type_ids)})
     if domain in ['Alg', 'Comb', 'Geom', 'NT']:
         all_domains = {"Alg":"Algebra", "Comb":"Kombinatorika", "Geom":"Ģeometrija", "NT":"Skaitļu teorija"}
         metaitems.append({'key': 'domain', 'value': all_domains[domain]})

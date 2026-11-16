@@ -1,3 +1,5 @@
+import re
+
 from . import sparql_query
 from .problem_listing import SORT_KEY_PATTERN, SORT_KEY_VARIABLES
 
@@ -19,11 +21,18 @@ def _filterPattern(params):
     theGrade = "" if params["grade"] in ["NA","-"] else f'eliozo:suggestedGrade {params["grade"]} ; '
     theOlympiad = "" if params["olympiad"] in ["NA","-"] else f'eliozo:olympiadType "{params["olympiad"]}" ; '
     theDomain = "" if params["domain"] in ["NA","-"] else f'eliozo:domain "{params["domain"]}" ; '
-    theQuestionType = "" if params["questionType"] in ["NA","-"] else f'eliozo:questionType "{params["questionType"]}" ; '
+    # A question type also matches its subtypes (QTY_Decide: QTY_DecideExistence, ...)
+    theQuestionType = ""
+    theQuestionTypeClauses = ""
+    if re.fullmatch(r'QTY_\w+', params["questionType"]):
+        theQuestionType = 'eliozo:questionType ?myqtype ; '
+        theQuestionTypeClauses = (f'?myqtnode eliozo:questionID ?myqtype ; '
+                                  f'skos:broader* eliozo:{params["questionType"]} . ')
     theMethod = "" if params["method"] in ["NA","-"] else f'eliozo:method ?mymethod ; '
     theSolution = "" if params["hasSolution"] in ["NA","-"] else f'eliozo:problemSolution ?someSolution ; '
     theVideo = "" if params["hasVideo"] in ["NA","-"] else f'eliozo:hasVideo ?someVideo ; '
     theExtraClauses = "" if params["method"] in ["NA", "-"] else f'?mymethod skos:broader* {params["method"]} . '
+    theExtraClauses += theQuestionTypeClauses
 
     theFGrade = "" if params["grade"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:suggestedGrade ?gg . }"
     theFOlympiad = "" if params["olympiad"] != "-" else "FILTER NOT EXISTS { ?problem eliozo:olympiadType ?oo . }"

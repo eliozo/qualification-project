@@ -2,6 +2,7 @@ from flask import Blueprint, render_template, request, session, url_for, json
 from blueprints.paging import page_links, parse_offset
 from eliozo.webmd_utils import mathBeautify, fix_image_links
 from eliozo_dao.problem_listing import listProblemsPage
+from eliozo_dao.question_type_repository import getQuestionTypes
 from eliozo_dao.filter_repository import (
     getProblemsByFiltersSPARQL,
     getProblemCountsByFiltersSPARQL
@@ -24,6 +25,11 @@ def getFilter():
         params[requestParam] = requestVal
 
     offset = parse_offset(request.args.get('offset'))
+
+    # Question types v2 (QTY_...) from the vocabulary; anything else is ignored
+    question_types = getQuestionTypes(lang)
+    if params['questionType'] not in question_types and params['questionType'] != '-':
+        params['questionType'] = 'NA'
 
     problems = []
 
@@ -73,6 +79,7 @@ def getFilter():
             'params': params,
             'all_counts': all_counts,
             'olympiadTypeDict': olympiadTypeDict,
+            'questionTypes': question_types,
             'methodDict': methodDict,
             'solutionDict': solutionDict,
             'title': 'Filtri'
@@ -93,8 +100,7 @@ def getFilter():
                       'olympiad':['Contest', 'Book', 'RegionalOrOpen',
                                   'National', 'TeamSelection', 'International', '-'],
                       'domain':['Alg', 'Comb', 'Geom', 'NT', '-'],
-                      'questionType':['FindAll', 'FindCount', 'FindOptimal', 'FindExample',
-                                      'Prove', 'ProveDisprove', 'Algorithm', 'ShortAnswer', '-'],
+                      'questionType': list(question_types) + ['-'],
                       'method':['eliozo:MTH_MathematicalInduction', 
                                 'eliozo:MTH_MeanValuePrinciple', 
                                 'eliozo:MTH_ExtremePrinciple',
@@ -129,6 +135,7 @@ def getFilter():
             'params': params,
             'all_counts': all_counts,
             'olympiadTypeDict': olympiadTypeDict,
+            'questionTypes': question_types,
             'methodDict': methodDict,
             'solutionDict': solutionDict,
             'page_links': pageLinks,

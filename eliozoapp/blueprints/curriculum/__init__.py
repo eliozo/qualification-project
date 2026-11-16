@@ -1,7 +1,8 @@
 import json
-from flask import Blueprint, render_template, request, url_for
+from flask import Blueprint, render_template, request, session, url_for
 from eliozo.webmd_utils import mathBeautify
 from eliozo_dao.problem_listing import _naturalKey
+from eliozo_dao.question_type_repository import getQuestionTypes
 from eliozo_dao.curriculum_repository import (
     getSPARQLCurriculumCoverage,
     getSPARQLCurriculumQuestionTypes,
@@ -43,6 +44,8 @@ def parseInt(value, default):
 @curriculum_bp.route('/getCurriculum', methods=['GET', 'POST'])
 def getCurriculum():
     cov = getCurriculumCoverage()
+    question_types = getQuestionTypes(session.get('lang', 'lv'))
+    qtype_order = {qid: n for n, qid in enumerate(question_types)}
 
     # Chips: any combination of olympiads and grades; nothing selected means all.
     sel_olympiads = [o for o in CURRICULUM_OLYMPIADS if o in request.args.getlist('olympiad')]
@@ -80,11 +83,15 @@ def getCurriculum():
             for item in data_qtypes.get('results', {}).get('bindings', []):
                 qt = item['questionType']['value']
                 if qt not in all_qtypes_info:
-                    # Question types missing from the vocabulary have no name or description
+                    # Values missing from the vocabulary are shown by their ID, without a description
+                    vocabulary = question_types.get(qt, {})
                     all_qtypes_info[qt] = {
-                        'questionName': item.get('questionName', {}).get('value', ''),
-                        'questionDescription': mathBeautify(item.get('questionDescription', {}).get('value', '')),
-                        'sorter': (int(item['L1']['value']), int(item['L2']['value'])) if 'L1' in item else None,
+                        'questionName': vocabulary.get('name', qt),
+                        'questionCanonical': vocabulary.get('canonical', ''),
+                        'questionDescription': mathBeautify(vocabulary.get('description', '')),
+                        'questionRequiredParts': vocabulary.get('requiredParts', ''),
+                        'isSubtype': qt in question_types and not vocabulary['isGroup'],
+                        'sorter': qtype_order.get(qt),
                         'problems': {d: [] for d in QUESTION_TYPE_DOMAINS}
                     }
                 d = item.get('domain', {}).get('value', 'NA')
@@ -155,7 +162,7 @@ def getCurriculum():
     # Question types in vocabulary order (unknown ones last, by ID); problem IDs
     # in natural order; domains without problems are left out
     all_qtypes = sorted(all_qtypes_info, key=lambda qt: (all_qtypes_info[qt]['sorter'] is None,
-                                                       all_qtypes_info[qt]['sorter'] or (0, 0), qt))
+                                                       all_qtypes_info[qt]['sorter'] or 0, qt))
     for info in all_qtypes_info.values():
         info['problems'] = [(d, sorted(ids, key=_naturalKey)) for d, ids in info['problems'].items() if ids]
 

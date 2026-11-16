@@ -26,11 +26,11 @@ def getSPARQLCurriculumCoverage(olympiads):
 
 
 def getSPARQLCurriculumQuestionTypes(olympiad, grades, years):
-    """Problems with their question type and domain (if any); the question type's
-    name, description and sort keys come from its eliozo:Question resource, if there is one."""
+    """Problems with their question type and domain (if any). The question types' names
+    and descriptions come from question_type_repository.getQuestionTypes()."""
     queryTemplate = """
     PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID ?questionType ?domain ?questionName ?questionDescription ?L1 ?L2 WHERE {{
+    SELECT ?problemID ?questionType ?domain WHERE {{
         ?problem a eliozo:Problem ;
                  eliozo:problemID ?problemID ;
                  eliozo:olympiad '{olympiadCode}' ;
@@ -40,14 +40,6 @@ def getSPARQLCurriculumQuestionTypes(olympiad, grades, years):
         {gradeFilter}
         FILTER (?year <= {yearMax} && ?year >= {yearMin})
         OPTIONAL {{ ?problem eliozo:domain ?domain . }}
-        OPTIONAL {{
-            ?question a eliozo:Question ;
-                      eliozo:questionID ?questionType ;
-                      eliozo:questionName ?questionName ;
-                      eliozo:questionDescription ?questionDescription ;
-                      eliozo:sorter_L1 ?L1 ;
-                      eliozo:sorter_L2 ?L2 .
-        }}
     }}
     """
     return sparql_query(queryTemplate.format(olympiadCode=olympiad,
