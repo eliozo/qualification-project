@@ -5,59 +5,31 @@ import os
 import re
 import markdown
 from eliozo.webmd_utils import proc_markdown
+from eliozo.content_docs import (CONTENT_ROOT, DOC_NAME_RE, ONTOLOGY_DOC, ONTOLOGY_SUBPAGES,
+                                 content_doc_title, find_content_file)
 
 references_bp = Blueprint('references_bp', __name__)
 
-# eliozoapp/eliozo/content -- one directory per document, holding one Markdown
-# file per language.
-CONTENT_ROOT = os.path.normpath(os.path.join(
-    os.path.dirname(os.path.abspath(__file__)), '..', '..', 'eliozo', 'content'))
-
-# Only letters, digits, underscore and hyphen: no '/' and no '.', so a document
-# name can never escape CONTENT_ROOT.
-_DOC_NAME_RE = re.compile(r'[A-Za-z0-9_-]+')
-
 # Page titles for the documents reachable from the menu. The values must match
 # the msgids used in navigation.py so that the breadcrumb is translated too.
-# Documents that are not listed still render; they fall back to their directory
-# name.
+# The ontology documents use their own first heading instead; other documents
+# that are not listed fall back to their directory name.
 CONTENT_DOC_TITLES = {
-    'ontology': 'Ontology',
     'search_by_keyword': 'Exact Search',
     'search_by_regex': 'Regex Search',
-    'ontology_topics': 'Topics',
-    'ontology_methods': 'Methods',
-    'ontology_genres': 'Genres',
-    'ontology_question_types': 'Question Types',
-    'ontology_concepts': 'Concepts',
-    'ontology_olympiads': 'Olympiads',
-    'ontology_models': 'Models',
-    'ontology_hints': 'Hints',
-    'ontology_hint_types': 'Hint Types',
 }
-
-# The help page of each metadata type (ontology_<type>) is a subpage of the
-# ontology overview in the breadcrumb.
-ONTOLOGY_SUBPAGE_PREFIX = 'ontology_'
 
 # Files a document may show besides its text, e.g. the diagram on the
 # ontology page: ![...](/content/ontology/klasifikatoru_attiecibu_grafs.svg)
 _CONTENT_FILE_RE = re.compile(r'[A-Za-z0-9_-]+\.(?:svg|png|jpg|jpeg|gif)')
 
 
-def find_content_file(docname, lang):
-    """Path of ``content/<docname>/content_<lang>.md``, or None.
-
-    English is the fallback when the requested language is missing.
-    """
-    if not docname or not _DOC_NAME_RE.fullmatch(docname):
-        return None
-    doc_dir = os.path.join(CONTENT_ROOT, docname)
-    for name in (f'content_{lang}.md', 'content_en.md'):
-        path = os.path.join(doc_dir, name)
-        if os.path.isfile(path):
-            return path
-    return None
+def _doc_title(docname, lang):
+    if docname == ONTOLOGY_DOC or docname in ONTOLOGY_SUBPAGES:
+        title = content_doc_title(docname, lang)
+        if title:
+            return title
+    return CONTENT_DOC_TITLES.get(docname, docname.replace('_', ' ').title())
 
 
 def render_content_file(path):
@@ -124,10 +96,10 @@ def getContentPage(docname):
     if request.args.get('fragment'):
         return html_content
 
-    title = CONTENT_DOC_TITLES.get(docname, docname.replace('_', ' ').title())
+    title = _doc_title(docname, lang)
     navlinks = [{'title': 'About Us'}]
-    if docname.startswith(ONTOLOGY_SUBPAGE_PREFIX):
-        navlinks.append({'url': 'references_bp.getOntology', 'title': 'Ontology'})
+    if docname in ONTOLOGY_SUBPAGES:
+        navlinks.append({'url': 'references_bp.getOntology', 'title': _doc_title(ONTOLOGY_DOC, lang)})
     navlinks.append({'url': 'references_bp.getContentPage',
                      'params': {'docname': docname}, 'title': title})
     template_context = {
@@ -143,6 +115,6 @@ def getContentPage(docname):
 @references_bp.route('/content/<docname>/<filename>', methods=['GET'])
 def getContentFile(docname, filename):
     """An image stored next to the Markdown files of a document."""
-    if not _DOC_NAME_RE.fullmatch(docname) or not _CONTENT_FILE_RE.fullmatch(filename):
+    if not DOC_NAME_RE.fullmatch(docname) or not _CONTENT_FILE_RE.fullmatch(filename):
         abort(404)
     return send_from_directory(os.path.join(CONTENT_ROOT, docname), filename)

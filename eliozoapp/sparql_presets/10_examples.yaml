@@ -3,6 +3,7 @@
 title: {lv: "Piemēri", en: "Examples", lt: "Pavyzdžiai"}
 items:
   - title: {lv: "Vienkāršs saraksts", en: "Plain list", lt: "Paprastas sąrašas"}
+    label: plain-list
     query: |
       # AMO 2011. gada 5. klases uzdevumi.
       # Vaicājumam jāatlasa mainīgais ?problemID.
@@ -16,35 +17,42 @@ items:
            eliozo:problemGrade 5 .
       }
       ORDER BY ?problemID
-  - title: {lv: "Grupēti", en: "Grouped", lt: "Sugrupuoti"}
-    items:
-      - title: {lv: "Pa klasēm (?section)", en: "By grade (?section)", lt: "Pagal klases (?section)"}
-        query: |
-          # Uzdevumi ar video atrisinājumu, sagrupēti pa klasēm.
-          # Mainīgā ?section vērtības kļūst par apakšvirsrakstiem.
-          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-          SELECT ?problemID (CONCAT(STR(?grade), ". klase") AS ?section)
-          WHERE {
-            ?p a eliozo:Problem ;
-               eliozo:problemID ?problemID ;
-               eliozo:problemGrade ?grade ;
-               eliozo:hasVideo ?video .
-          }
-          ORDER BY ?grade ?problemID
-      - title: {lv: "Divos līmeņos (?section, ?subsection)", en: "Two levels (?section, ?subsection)", lt: "Dviem lygiais (?section, ?subsection)"}
-        query: |
-          # 2024. gada uzdevumi: ?section - olimpiāde, ?subsection - nozare.
-          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-          SELECT ?problemID (?olympiad AS ?section) (?domain AS ?subsection)
-          WHERE {
-            ?p a eliozo:Problem ;
-               eliozo:problemID ?problemID ;
-               eliozo:olympiadCode ?olympiad ;
-               eliozo:problemYear 2024 ;
-               eliozo:domain ?domain .
-          }
-          ORDER BY ?olympiad ?domain ?problemID
+  - title: {lv: "Viena līmeņa grupas", en: "One-level groups", lt: "Vieno lygio grupės"}
+    label: one-level-groups
+    query: |
+      # 2024. gada AMO, NOL un VOL uzdevumi 9.-12. klasei, sagrupēti pa klasēm.
+      # Mainīgā ?section vērtības kļūst par apakšvirsrakstiem;
+      # katrā klasē uzdevumi sakārtoti pēc olimpiādes un uzdevuma numura.
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+      PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+      SELECT ?problemID (CONCAT(STR(?grade), ". klase") AS ?section)
+      WHERE {
+        ?p a eliozo:Problem ;
+           eliozo:problemID ?problemID ;
+           eliozo:olympiad ?olympiad ;
+           eliozo:problemYear 2024 ;
+           eliozo:problemGrade ?grade ;
+           eliozo:problem_number ?number .
+        FILTER (?olympiad IN ("LV.AMO", "LV.NOL", "LV.VOL"))
+        FILTER (?grade >= 9 && ?grade <= 12)
+      }
+      ORDER BY ?grade ?olympiad xsd:integer(?number) ?problemID
+  - title: {lv: "Divu līmeņu grupas", en: "Two-level groups", lt: "Dviejų lygių grupės"}
+    label: two-level-groups
+    query: |
+      # 2024. gada uzdevumi: ?section - olimpiāde, ?subsection - nozare.
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+      SELECT ?problemID (?olympiad AS ?section) (?domain AS ?subsection)
+      WHERE {
+        ?p a eliozo:Problem ;
+           eliozo:problemID ?problemID ;
+           eliozo:olympiadCode ?olympiad ;
+           eliozo:problemYear 2024 ;
+           eliozo:domain ?domain .
+      }
+      ORDER BY ?olympiad ?domain ?problemID
   - title: {lv: "Teksta meklēšana ar REGEX", en: "Text search with REGEX", lt: "Teksto paieška su REGEX"}
+    label: regex-search
     query: |
       # Uzdevumi, kuru latviskajā formulējumā ir vārds "šaha" vai "šahs".
       PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>

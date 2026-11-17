@@ -1,0 +1,63 @@
+# Preset SPARQL queries for the "Advanced search" page (/advanced_search).
+# See README.md in this directory for the file format.
+#
+# Each query selects the problems marked with one concept of the methods or
+# topics vocabulary, or with any concept below it (skos:broader* follows the
+# hierarchy to any depth). To make a query for another theme, copy one and
+# change the starting concept(s).
+title: {lv: "Teorijas temati", en: "Theory topics", lt: "Teorijos temos"}
+items:
+  - title: {lv: "Dirihlē princips", en: "Pigeonhole principle", lt: "Dirichlė principas"}
+    label: pigeonhole
+    query: |
+      # Uzdevumi, kuru atrisinājuma metode (eliozo:method) ir Dirihlē princips
+      # vai kāda tā paveida metode; sagrupēti pa metodēm.
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      SELECT ?problemID (CONCAT(?number, " ", ?name) AS ?section)
+      WHERE {
+        VALUES ?start {
+          eliozo:MTH_PigeonholePrincipleBasic
+          eliozo:MTH_PigeonholePrincipleGeneralized
+          eliozo:MTH_ContinuousPigeonholePrinciple
+        }
+        ?method skos:broader* ?start ;
+                eliozo:methodNumber ?number ;
+                eliozo:methodName ?name .
+        ?p eliozo:method ?method ;
+           eliozo:problemID ?problemID .
+      }
+      ORDER BY ?number ?problemID
+  - title: {lv: "Invarianti", en: "Invariants", lt: "Invariantai"}
+    label: invariants
+    query: |
+      # Uzdevumi, kuru atrisinājuma metode ir invariantu metode vai kāda tās
+      # apakšmetode (fiksēts, periodisks invariants, monovariants).
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      SELECT ?problemID (CONCAT(?number, " ", ?name) AS ?section)
+      WHERE {
+        ?method skos:broader* eliozo:MTH_InvariantMethod ;
+                eliozo:methodNumber ?number ;
+                eliozo:methodName ?name .
+        ?p eliozo:method ?method ;
+           eliozo:problemID ?problemID .
+      }
+      ORDER BY ?number ?problemID
+  - title: {lv: "Svēršanas uzdevumi", en: "Weighing problems", lt: "Svėrimo uždaviniai"}
+    label: weighing
+    query: |
+      # Uzdevumi, kuru tēma (eliozo:topic) ir svēršanas uzdevumi vai kāda to
+      # apakštēma (procedūras, informācijas analīze, skaitliskas masas ...);
+      # sagrupēti pa tēmām.
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      SELECT ?problemID (CONCAT(?number, " ", ?name) AS ?section)
+      WHERE {
+        ?topic skos:broader* eliozo:WeighingProblems ;
+               eliozo:topicNumber ?number ;
+               eliozo:topicName ?name .
+        ?p eliozo:topic ?topic ;
+           eliozo:problemID ?problemID .
+      }
+      ORDER BY ?number ?problemID

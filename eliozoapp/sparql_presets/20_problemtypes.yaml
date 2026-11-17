@@ -1,0 +1,86 @@
+# Preset SPARQL queries for the "Advanced search" page (/advanced_search).
+# See README.md in this directory for the file format.
+title: {lv: "Uzdevumu tipi", en: "Problem types", lt: "Uždavinių tipai"}
+items:
+  - title: {lv: "Jautājuma tips", en: "Question type", lt: "Klausimo tipas"}
+    label: question-types
+    query: |
+      # Katram jautājuma tipam (QTY_...) - ne vairāk kā 8 uzdevumi bez attēliem
+      # (7.-8. klase, kopš 2000. gada; jaunākie vispirms), lai neviens tips
+      # neaizņem visu rezultātu limitu.
+      #
+      # SPARQL nav "TOP N katrā grupā". Šeit: (1) apakšvaicājums sakārto
+      # kandidātus; (2) GROUP_CONCAT savāc katra tipa ID vienā rindā, un REPLACE
+      # atstāj pirmos 8 (regulārā izteiksme: 7 reizes "ID atstarpe", tad vēl ID);
+      # (3) uzdevumus atlasa, pārbaudot, vai to ID ir šajā rindā.
+      # ?section ir jautājuma tipa nosaukums no vārdnīcas (eliozo:Question).
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+      SELECT ?problemID ?section
+      WHERE {
+        {
+          SELECT ?type (REPLACE(GROUP_CONCAT(?id; separator=" "), "^((\\S+ ){7}\\S+).*$", "$1") AS ?firstIDs)
+          WHERE {
+            {
+              SELECT ?type ?id
+              WHERE {
+                ?p eliozo:questionType ?type ;
+                   eliozo:problemID ?id ;
+                   eliozo:problemYear ?year ;
+                   eliozo:problemGrade ?grade ;
+                   eliozo:problemText ?text .
+                FILTER (?year >= 2000 && ?grade >= 7 && ?grade <= 8)
+                FILTER (LANGMATCHES(LANG(?text), "lv"))
+                FILTER (!CONTAINS(?text, "!["))       # nav attēla
+              }
+              ORDER BY DESC(?year) ?id
+            }
+          }
+          GROUP BY ?type
+        }
+        ?q a eliozo:Question ;
+           eliozo:questionID ?type ;
+           eliozo:sorter_L1 ?L1 ;
+           eliozo:sorter_L2 ?L2 ;
+           eliozo:questionName ?section .
+        FILTER (LANGMATCHES(LANG(?section), "lv"))
+        ?p eliozo:questionType ?type ;
+           eliozo:problemID ?problemID .
+        FILTER (CONTAINS(CONCAT(" ", ?firstIDs, " "), CONCAT(" ", ?problemID, " ")))
+      }
+      ORDER BY ?L1 ?L2 ?problemID
+  - title: {lv: "Vairāki atrisinājumi", en: "Multiple solutions", lt: "Keli sprendimai"}
+    label: multiple-solutions
+    query: |
+      # Uzdevumi ar vismaz diviem atrisinājumiem, sagrupēti pa klasēm.
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+      SELECT ?problemID (CONCAT(STR(?grade), ". klase") AS ?section)
+      WHERE {
+        {
+          SELECT ?problemID ?grade (COUNT(DISTINCT ?solution) AS ?solutions)
+          WHERE {
+            ?p a eliozo:Problem ;
+               eliozo:problemID ?problemID ;
+               eliozo:problemGrade ?grade ;
+               eliozo:problemSolution ?solution .
+          }
+          GROUP BY ?problemID ?grade
+          HAVING (COUNT(DISTINCT ?solution) >= 2)
+        }
+      }
+      ORDER BY ?grade ?problemID
+  - title: {lv: "Rūtiņu režģi", en: "Grid problems", lt: "Langelių lentelės"}
+    label: grid-problems
+    query: |
+      # Uzdevumi par režģiem un rūtiņu figūrām: žanri 3.16.0-3.16.4
+      # (kā lapā "Pēc žanra"), sagrupēti pa žanriem.
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+      SELECT ?problemID (CONCAT(?number, " ", ?name) AS ?section)
+      WHERE {
+        ?genre a eliozo:Domain ;
+               eliozo:domainNumber ?number ;
+               eliozo:domainName ?name .
+        FILTER (STRSTARTS(?number, "3.16."))
+        ?p eliozo:subdomain ?genre ;
+           eliozo:problemID ?problemID .
+      }
+      ORDER BY ?number ?problemID

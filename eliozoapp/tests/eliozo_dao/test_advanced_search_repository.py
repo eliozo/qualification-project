@@ -101,7 +101,7 @@ SELECT ?problemID ?service WHERE {
 
 @pytest.mark.parametrize('value, limit', [
     (None, DEFAULT_LIMIT), ('', DEFAULT_LIMIT), ('5', 5), (' 7 ', 7),
-    ('100', 100), ('101', MAX_LIMIT), ('100000', MAX_LIMIT),
+    ('500', 500), ('501', MAX_LIMIT), ('100000', MAX_LIMIT),
     ('0', None), ('-3', None), ('2.5', None), ('abc', None),
 ])
 def test_parse_limit(value, limit):
@@ -299,7 +299,7 @@ def client(db_path, monkeypatch):
 
 def test_page_shows_form_and_presets(client):
     html = client.get('/advanced_search').get_data(as_text=True)
-    assert 'name="query"' in html and 'name="limit"' in html and 'value="20"' in html
+    assert 'name="query"' in html and 'name="limit"' in html and 'value="100"' in html
     assert 'preset-query' in html and 'dropdown-submenu' in html
 
 

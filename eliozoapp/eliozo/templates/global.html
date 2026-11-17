@@ -90,6 +90,88 @@
                 background-color: #e7e7e7;
             }
         }
+        /* Nested menu inside a dropdown (About Us > Ontology > ...) */
+        .nav-submenu-row {
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown-menu>li.nav-submenu .nav-submenu-row>a {
+            flex: 1 1 auto;
+            display: block;
+            padding: 3px 8px 3px 20px;
+            color: #333;
+            white-space: nowrap;
+        }
+
+        .nav-submenu-toggle {
+            flex: 0 0 auto;
+            min-width: 44px;
+            min-height: 32px;
+            margin-right: 6px;
+            border: none;
+            border-radius: 12px;
+            background: transparent;
+            color: #333;
+        }
+
+        .nav-submenu-toggle:hover,
+        .nav-submenu-toggle:focus,
+        .dropdown-menu>li.nav-submenu .nav-submenu-row>a:hover,
+        .dropdown-menu>li.nav-submenu .nav-submenu-row>a:focus {
+            background-color: #e7e7e7;
+            text-decoration: none;
+        }
+
+        .nav-submenu-toggle .caret {
+            transition: transform 0.15s;
+        }
+
+        .nav-submenu-toggle[aria-expanded="true"] .caret {
+            transform: rotate(180deg);
+        }
+
+        .nav-submenu-list {
+            list-style: none;
+            margin: 0 0 4px 0;
+            padding: 0;
+        }
+
+        .nav-submenu-list>li>a {
+            display: block;
+            padding: 3px 20px 3px 36px;
+            color: #333;
+            white-space: nowrap;
+            border-left: 2px solid #e7e7e7;
+            margin-left: 20px;
+            padding-left: 12px;
+        }
+
+        .nav-submenu-list>li>a:hover,
+        .nav-submenu-list>li>a:focus {
+            background-color: #e7e7e7;
+            text-decoration: none;
+        }
+
+        /* The page being shown */
+        .dropdown-menu li.current>a,
+        .dropdown-menu li.current>.nav-submenu-row>a {
+            font-weight: bold;
+        }
+
+        @media (max-width: 767px) {
+            /* Bigger touch targets in the collapsed (phone) menu */
+            .navbar-nav .open .dropdown-menu .nav-submenu-row>a,
+            .navbar-nav .open .dropdown-menu .nav-submenu-list>li>a {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                background-color: #FFFFFF;
+            }
+
+            .nav-submenu-toggle {
+                min-height: 40px;
+            }
+        }
     </style>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}" />
 
@@ -121,7 +203,33 @@
                         </a>
                         <ul class="dropdown-menu">
                             {% for child in item.children %}
-                            <li><a href="{{ child.url }}">{{ child.label }}</a></li>
+                            {% if child.children %}
+                            {# Nested menu: the label opens the overview page, the arrow button
+                               unfolds the child pages in place (no fly-out, so it also fits phones) #}
+                            {% set submenu_id = 'submenu-' ~ loop.index %}
+                            <li class="nav-submenu{{ ' current' if child.current else '' }}">
+                                <div class="nav-submenu-row">
+                                    <a href="{{ child.url }}">{{ child.label }}</a>
+                                    <button type="button" class="nav-submenu-toggle"
+                                        aria-expanded="{{ 'true' if child.expanded else 'false' }}"
+                                        aria-controls="{{ item.active_key }}-{{ submenu_id }}"
+                                        title="{% trans %}Show subtopics{% endtrans %}"
+                                        aria-label="{{ child.label }}: {% trans %}Show subtopics{% endtrans %}">
+                                        <span class="caret"></span>
+                                    </button>
+                                </div>
+                                <ul class="nav-submenu-list" id="{{ item.active_key }}-{{ submenu_id }}"
+                                    {% if not child.expanded %}hidden{% endif %}>
+                                    {% for grandchild in child.children %}
+                                    <li class="{{ 'current' if grandchild.current else '' }}">
+                                        <a href="{{ grandchild.url }}">{{ grandchild.label }}</a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                            {% else %}
+                            <li class="{{ 'current' if child.current else '' }}"><a href="{{ child.url }}">{{ child.label }}</a></li>
+                            {% endif %}
                             {% endfor %}
                         </ul>
                     </li>
@@ -168,6 +276,16 @@
     <div class="container-fluid text-center mycontainer" style="padding-left: 12px; padding-top: 12px;">
         {% block content %}{% endblock %}
     </div>
+    <script>
+        // Unfold/fold a nested menu without closing the dropdown it is in
+        $(document).on('click', '.nav-submenu-toggle', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var expanded = $(this).attr('aria-expanded') === 'true';
+            $(this).attr('aria-expanded', expanded ? 'false' : 'true');
+            $('#' + $(this).attr('aria-controls')).prop('hidden', expanded);
+        });
+    </script>
 </body>
 
 </html>

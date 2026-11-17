@@ -10,7 +10,10 @@
     </ul>
 </li>
 {% else %}
-<li><a href="#" class="preset-query" data-index="{{ item.index }}">{{ item.title }}</a></li>
+{# A click loads the query into the text field; the href is the preset's canned link
+   (to copy, or to open in a new tab where it runs at once) #}
+<li><a href="{% if item.label %}{{ url_for('advanced_search.getAdvancedSearch', queryLabel=item.label) }}{% else %}#{% endif %}"
+        class="preset-query" data-index="{{ item.index }}">{{ item.title }}</a></li>
 {% endif %}
 {% endfor %}
 {% endmacro %}
@@ -69,7 +72,7 @@
         }
     </style>
 
-    <form class="advanced-search" action="{{ url_for('advanced_search.getAdvancedSearch') }}" method="post">
+    <form class="advanced-search" action="{{ url_for('advanced_search.getAdvancedSearch') }}" method="get">
         <div class="form-group">
             <label for="sparqlQuery">{% trans %}SPARQL query{% endtrans %}</label>
             <a class="ontology-help" href="{{ url_for('references_bp.getOntology') }}" target="_blank"
@@ -102,6 +105,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary">{% trans %}Search{% endtrans %}</button>
+        <a class="btn btn-default new-query" href="{{ url_for('advanced_search.getAdvancedSearch') }}">{% trans %}New query{% endtrans %}</a>
     </form>
 
     <div id="clientSyntaxError" class="alert alert-danger" role="alert" style="margin-top: 16px; display: none;">
@@ -117,6 +121,27 @@
             const form = textarea.closest('form');
             const presets = JSON.parse($('#presetQueries').text());
             let lastPreset = null;
+            let submitting = false;
+
+            // Hand-written text: different from the query this page was loaded with
+            // (which is in the URL, so it can be found again) and from the last preset.
+            function hasUnsavedEdits() {
+                const current = textarea.val().trim();
+                return current !== '' && current !== textarea[0].defaultValue.trim() && current !== lastPreset;
+            }
+
+            // The browser asks before leaving the page (another menu item, "New query",
+            // a link, closing the tab) when the query field has unsaved edits.
+            $(window).on('beforeunload', function (e) {
+                if (!submitting && hasUnsavedEdits()) {
+                    e.preventDefault();
+                    e.originalEvent.returnValue = '';
+                    return '';
+                }
+            });
+
+            // A page restored from the back/forward cache must not keep the flag
+            $(window).on('pageshow', function () { submitting = false; });
 
             const messages = {
                 title: {{ _('Syntax error at line %(line)s, column %(column)s', line='{line}', column='{column}') | tojson }},
@@ -175,7 +200,13 @@
             form.on('submit', function (e) {
                 if (!checkSyntax()) {
                     e.preventDefault();
+                    return;
                 }
+                // GET keeps the results in the browser history; a query too long
+                // for a URL is POSTed instead.
+                const url = form.attr('action') + '?' + form.serialize();
+                form.attr('method', url.length > {{ maxGetLength }} ? 'post' : 'get');
+                submitting = true;
             });
 
             $('.dropdown-submenu > a').on('click', function (e) {
@@ -188,8 +219,7 @@
 
             $('.preset-query').on('click', function (e) {
                 e.preventDefault();
-                const current = textarea.val().trim();
-                if (current !== '' && current !== lastPreset &&
+                if (hasUnsavedEdits() &&
                     !window.confirm({{ _('Replace the query in the text field?') | tojson }})) {
                     return;
                 }
@@ -211,6 +241,19 @@
             {% endif %}
         });
     </script>
+
+    {% if unknownLabel %}
+    <div class="alert alert-danger" role="alert" style="margin-top: 16px;">
+        {% trans label=unknownLabel %}There is no preset query "{{ label }}".{% endtrans %}
+    </div>
+    {% endif %}
+
+    {% if queryLabel %}
+    {% set cannedLink = url_for('advanced_search.getAdvancedSearch', queryLabel=queryLabel, _external=True) %}
+    <p class="text-muted" style="margin-top: 16px;">
+        {% trans %}Link to this query{% endtrans %}: <a href="{{ cannedLink }}">{{ cannedLink }}</a>
+    </p>
+    {% endif %}
 
     {% if limitError %}
     <div class="alert alert-danger" role="alert" style="margin-top: 16px;">

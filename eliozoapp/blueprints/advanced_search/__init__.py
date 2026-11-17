@@ -8,6 +8,7 @@ without restarting the app.
 import glob
 import logging
 import os
+import re
 
 import yaml
 from flask import Blueprint, render_template, request, session
@@ -24,6 +25,13 @@ from eliozo_dao.advanced_search_repository import (
 logger = logging.getLogger(__name__)
 
 advanced_search_bp = Blueprint('advanced_search', __name__)
+
+# Longer search URLs are sent as POST instead: uWSGI's default buffer for the
+# request line and headers is 4096 bytes (see buffer-size in eliozo.ini).
+MAX_GET_URL_LENGTH = 3500
+
+# Preset labels, used in canned links: /advanced_search?queryLabel=pigeonhole
+PRESET_LABEL_RE = re.compile(r'[a-z0-9]+(?:-[a-z0-9]+)*')
 
 PRESETS_DIR = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', '..', 'sparql_presets'))
 
@@ -50,6 +58,12 @@ def _menu_items(items, lang, queries, source):
         elif isinstance(item.get('query'), str):
             entry['index'] = len(queries)
             queries.append(item['query'])
+            label = item.get('label')
+            if label is not None:
+                if isinstance(label, str) and PRESET_LABEL_RE.fullmatch(label):
+                    entry['label'] = label
+                else:
+                    logger.warning('Ignoring invalid preset label in %s: %r', source, label)
         else:
             logger.warning('Skipping preset without "query" or "items" in %s: %r', source, item)
             continue
@@ -82,20 +96,50 @@ def load_presets(lang, presets_dir=PRESETS_DIR):
     return menu, queries
 
 
+def preset_by_label(menu, queries, label):
+    """The query of the preset with this label, or None. Labels are unique across
+    all preset files; if one is repeated, the first one (in menu order) is used."""
+    for entry in menu:
+        if entry.get('label') == label:
+            return queries[entry['index']]
+        found = preset_by_label(entry.get('children', []), queries, label)
+        if found is not None:
+            return found
+    return None
+
+
 @advanced_search_bp.route('/advanced_search', methods=['GET', 'POST'])
 def getAdvancedSearch():
     lang = session.get('lang', 'lv')
     menu, presetQueries = load_presets(lang)
 
+    # The search is a GET form, so that results have a URL and the browser's
+    # Back button returns to them without a "resubmit the form?" page. Only
+    # queries too long for a URL are POSTed (the page's script decides).
+    # Without a query parameter the page is the empty form.
+    #
+    # A canned link names a preset instead of carrying the query text:
+    # /advanced_search?queryLabel=pigeonhole. The label takes precedence over
+    # ?query; an unknown label shows an error and the empty form.
     form = request.form if request.method == 'POST' else request.args
     query = form.get('query', '')
     limitText = form.get('limit', str(DEFAULT_LIMIT))
+    queryLabel = request.args.get('queryLabel', '').strip()
 
     sections = None
     truncated = False
     error = None
     limitError = False
-    if request.method == 'POST':
+    unknownLabel = False
+    runQuery = 'query' in form
+    if queryLabel:
+        preset = preset_by_label(menu, presetQueries, queryLabel)
+        if preset is None:
+            unknownLabel = True
+            query, runQuery = '', False
+        else:
+            query, runQuery = preset, True
+    if runQuery:
         limit = parse_limit(limitText)
         if limit is None:
             limitError = True
@@ -124,5 +168,8 @@ def getAdvancedSearch():
         'truncated': truncated,
         'presetMenu': menu,
         'presetQueries': presetQueries,
+        'maxGetLength': MAX_GET_URL_LENGTH,
+        'queryLabel': queryLabel if queryLabel and not unknownLabel else None,
+        'unknownLabel': queryLabel if unknownLabel else None,
     }
     return render_template('advanced_search_content.html', **template_context)

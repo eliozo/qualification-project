@@ -9,12 +9,13 @@ read again on every page load.
 
 Every `*.yaml` file is one top-level menu entry. Files are shown in the
 order of their names, hence the number prefixes (`10_examples.yaml`,
-`20_matf78.yaml`, ...).
+`20_problemtypes.yaml`, ...).
 
 ```yaml
 title: {lv: "Fakultatīvs 7.-8. klasei", en: "Elective course, grades 7-8", lt: "Fakultatyvas 7-8 klasėms"}
 items:
   - title: {lv: "Invarianti", en: "Invariants", lt: "Invariantai"}
+    label: invariants            # optional: name for canned links
     query: |
       PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
       SELECT ?problemID ...
@@ -29,6 +30,13 @@ items:
   language falls back to `lv`, then to any given one.
 * An entry has either `query` (a menu item) or `items` (a submenu), which
   may be nested to any depth.
+* `label` (optional, but give one to every query) names the query in a
+  short link that opens the page and runs it at once:
+  `/advanced_search?queryLabel=invariants`. Lowercase letters, digits and
+  hyphens; unique across all files (a test checks this). The label takes
+  precedence over a `query` parameter in the same URL. In the preset menu
+  the items link to these URLs, so "Copy link" on a menu item gives the
+  canned link, and a page opened by label shows its link under the form.
 * Write the query as a YAML block (`query: |`, then the query indented
   below it); then no characters need escaping.
 

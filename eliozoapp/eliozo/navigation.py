@@ -1,5 +1,39 @@
-from flask import url_for, session
+from flask import url_for, session, request
 from flask_babel import _
+
+from .content_docs import ONTOLOGY_SUBPAGES, content_doc_title
+
+
+def _ontology_menu(lang):
+    """'Ontology' with its child documents as a nested menu; the item itself opens the overview."""
+    return {
+        'label': _('Ontology'),
+        'endpoint': 'references_bp.getOntology',
+        'children': [
+            {'label': content_doc_title(doc, lang) or doc,
+             'endpoint': 'references_bp.getContentPage', 'url_params': {'docname': doc}}
+            for doc in ONTOLOGY_SUBPAGES
+        ],
+    }
+
+
+def _process(items, current_path):
+    """Resolve the URLs of visible items, recursively; mark the current page and its ancestors."""
+    result = []
+    for item in items:
+        if not item.get('condition', True):
+            continue
+        if 'endpoint' in item:
+            item['url'] = url_for(item['endpoint'], **item.get('url_params', {}))
+        else:
+            item['url'] = '#'  # Placeholder for dropdowns without direct link
+        item['current'] = item['url'] == current_path
+        if 'children' in item:
+            item['children'] = _process(item['children'], current_path)
+            # Open a nested menu when the current page is in it
+            item['expanded'] = any(c['current'] or c.get('expanded') for c in item['children'])
+        result.append(item)
+    return result
 
 def get_navigation():
     """
@@ -9,7 +43,8 @@ def get_navigation():
     - endpoint: Flask endpoint name (optional)
     - url_params: Parameters for url_for (optional)
     - active_key: Key to match against 'active' variable in template
-    - children: List of sub-items (optional)
+    - children: List of sub-items (optional); a child may have children of its own
+      (a nested menu, e.g. About Us > Ontology > Question Types)
     - condition: Boolean to determine visibility (optional, default True)
     """
     
@@ -71,7 +106,7 @@ def get_navigation():
             'children': [
                 {'label': _('References'), 'endpoint': 'references_bp.getReferences'},
                 {'label': _('Contact Information'), 'endpoint': 'references_bp.getContactInfo'},
-                {'label': _('Ontology'), 'endpoint': 'references_bp.getOntology'},
+                _ontology_menu(session.get('lang', 'lv')),
                 {'label': _('Exact Search'), 'endpoint': 'references_bp.getContentPage',
                  'url_params': {'docname': 'search_by_keyword'}},
                 {'label': _('Regex Search'), 'endpoint': 'references_bp.getContentPage',
@@ -88,26 +123,4 @@ def get_navigation():
     else:
         nav_items[5]['children'].append({'label': _('Login'), 'endpoint': 'login'})
 
-    # Process items to generate URLs and filter by condition
-    final_nav = []
-    for item in nav_items:
-        if item.get('condition', True):
-            # Process main item
-            if 'endpoint' in item:
-                item['url'] = url_for(item['endpoint'], **item.get('url_params', {}))
-            else:
-                item['url'] = '#' # Placeholder for dropdowns without direct link
-
-            # Process children
-            if 'children' in item:
-                final_children = []
-                for child in item['children']:
-                    if child.get('condition', True):
-                        if 'endpoint' in child:
-                            child['url'] = url_for(child['endpoint'], **child.get('url_params', {}))
-                        final_children.append(child)
-                item['children'] = final_children
-            
-            final_nav.append(item)
-
-    return final_nav
+    return _process(nav_items, request.path)
