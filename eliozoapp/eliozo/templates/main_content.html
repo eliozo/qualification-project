@@ -13,7 +13,7 @@
             <div>{% trans %}Search{% endtrans %}:
                 <label style="font-weight:normal;">
                     <input type="radio" name="searchMode" value="exact" {% if searchMode=='exact' %}checked{% endif %}>
-                    {% trans %}Exactly{% endtrans %}
+                    {% trans %}Exact{% endtrans %}
                 </label>
                 &nbsp;&nbsp;
                 <label style="font-weight:normal;">
@@ -24,7 +24,7 @@
                 <label style="font-weight:normal;">
                     <input type="radio" name="searchMode" value="semantic" {% if searchMode=='semantic' %}checked{%
                         endif %}>
-                    {% trans %}By meaning{% endtrans %}
+                    {% trans %}Semantic{% endtrans %}
                 </label>
                 <a class="info-icon search-help" data-mode="exact" title="{% trans %}How exact search works{% endtrans %}"
                     data-fragment-url="{{ url_for('references_bp.getContentPage', docname='search_by_keyword', fragment=1) }}"
@@ -34,6 +34,10 @@
                     data-fragment-url="{{ url_for('references_bp.getContentPage', docname='search_by_regex', fragment=1) }}"
                     data-page-url="{{ url_for('references_bp.getContentPage', docname='search_by_regex') }}"
                     href="{{ url_for('references_bp.getContentPage', docname='search_by_regex') }}">i</a>
+                <a class="info-icon search-help" data-mode="semantic" title="{% trans %}How semantic search works{% endtrans %}"
+                    data-fragment-url="{{ url_for('references_bp.getContentPage', docname='search_by_meaning', fragment=1) }}"
+                    data-page-url="{{ url_for('references_bp.getContentPage', docname='search_by_meaning') }}"
+                    href="{{ url_for('references_bp.getContentPage', docname='search_by_meaning') }}">i</a>
                 &nbsp;&nbsp;
                 <select class="search-target" name="searchTarget" style="margin-left: 10px; padding: 2px;">
                     <option value="questions" {% if searchTarget !='solutions' %}selected{% endif %}>
@@ -68,7 +72,7 @@
                             searchInput.attr('rows', '1');
                         }
                         // Context sensitive help: show the (i) of the selected
-                        // search mode only. "By meaning" has no help document yet.
+                        // search mode only.
                         $('.search-help').each(function () {
                             $(this).toggleClass('active', $(this).data('mode') === mode);
                         });
@@ -106,6 +110,79 @@
             </script>
         </form>
     </div>
+
+    {% if news and news['items'] %}
+    {# News: no heading; dates in a narrow muted column set them apart from problems #}
+    <section class="news" aria-label="{% trans %}News{% endtrans %}">
+        <dl class="news-list">
+            {% for item in news['items'] %}
+            <dt><time datetime="{{ item.date }}">{{ item.date }}</time></dt>
+            <dd>{{ item.html }}</dd>
+            {% endfor %}
+        </dl>
+        {% if news.newer is not none or news.older is not none %}
+        <p class="news-pages">
+            {% if news.newer is not none %}
+            <a href="{{ url_for('search_bp.search_problems', newsOffset=news.newer) if news.newer else url_for('search_bp.search_problems') }}"
+                title="{% trans %}Newer news{% endtrans %}" rel="prev">[&lt;&lt;]</a>
+            {% endif %}
+            {% if news.older is not none %}
+            <a href="{{ url_for('search_bp.search_problems', newsOffset=news.older) }}"
+                title="{% trans %}Older news{% endtrans %}" rel="next">[&gt;&gt;]</a>
+            {% endif %}
+        </p>
+        {% endif %}
+    </section>
+
+    <style>
+        .news {
+            margin: 18px 5px 0 5px;
+            padding-top: 10px;
+            border-top: 1px solid #e7e7e7;
+            font-size: 90%;
+            color: #555;
+        }
+
+        .news-list {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            column-gap: 16px;
+            row-gap: 6px;
+            margin: 0;
+        }
+
+        .news-list dt {
+            font-weight: normal;
+            color: #888;
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+        }
+
+        .news-list dd {
+            margin: 0;
+        }
+
+        .news-pages {
+            margin: 8px 0 0 0;
+        }
+
+        .news-pages a+a {
+            margin-left: 8px;
+        }
+
+        /* Phones: the date above its text */
+        @media (max-width: 480px) {
+            .news-list {
+                grid-template-columns: 1fr;
+                row-gap: 0;
+            }
+
+            .news-list dd {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+    {% endif %}
 
     <style>
         /* Reuses the .info-icon circle from main.css; only the visibility of

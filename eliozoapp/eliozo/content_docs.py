@@ -13,7 +13,7 @@ CONTENT_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'content
 DOC_NAME_RE = re.compile(r'[A-Za-z0-9_-]+')
 
 # The overview of the metadata types and its child documents, in the order of
-# the table in ontology/content_*.md. Shown as a nested menu under "About Us".
+# the table in ontology/content_*.md. Shown as a nested menu "Info > Advanced Search".
 ONTOLOGY_DOC = 'ontology'
 ONTOLOGY_SUBPAGES = [
     'ontology_topics',

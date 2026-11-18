@@ -90,7 +90,7 @@
                 background-color: #e7e7e7;
             }
         }
-        /* Nested menu inside a dropdown (About Us > Ontology > ...) */
+        /* Nested menu inside a dropdown (Info > Advanced Search > ...) */
         .nav-submenu-row {
             display: flex;
             align-items: center;
@@ -113,6 +113,16 @@
             border-radius: 12px;
             background: transparent;
             color: #333;
+        }
+
+        /* A node without a page of its own: label and caret form one button */
+        .nav-submenu-toggle.nav-submenu-label {
+            flex: 1 1 auto;
+            margin-right: 0;
+            border-radius: 0;
+            padding: 3px 8px 3px 20px;
+            text-align: left;
+            white-space: nowrap;
         }
 
         .nav-submenu-toggle:hover,
@@ -209,13 +219,18 @@
                             {% set submenu_id = 'submenu-' ~ loop.index %}
                             <li class="nav-submenu{{ ' current' if child.current else '' }}">
                                 <div class="nav-submenu-row">
+                                    {% if child.endpoint %}
                                     <a href="{{ child.url }}">{{ child.label }}</a>
                                     <button type="button" class="nav-submenu-toggle"
+                                    {% else %}
+                                    {# Only a navigation node: the whole row unfolds the child pages #}
+                                    <button type="button" class="nav-submenu-toggle nav-submenu-label"
+                                    {% endif %}
                                         aria-expanded="{{ 'true' if child.expanded else 'false' }}"
                                         aria-controls="{{ item.active_key }}-{{ submenu_id }}"
                                         title="{% trans %}Show subtopics{% endtrans %}"
                                         aria-label="{{ child.label }}: {% trans %}Show subtopics{% endtrans %}">
-                                        <span class="caret"></span>
+                                        {% if not child.endpoint %}{{ child.label }} {% endif %}<span class="caret"></span>
                                     </button>
                                 </div>
                                 <ul class="nav-submenu-list" id="{{ item.active_key }}-{{ submenu_id }}"

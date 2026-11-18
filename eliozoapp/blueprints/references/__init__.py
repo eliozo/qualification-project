@@ -17,7 +17,14 @@ references_bp = Blueprint('references_bp', __name__)
 CONTENT_DOC_TITLES = {
     'search_by_keyword': 'Exact Search',
     'search_by_regex': 'Regex Search',
+    'search_by_meaning': 'Semantic Search',
 }
+
+# Help documents of the plain search modes, under "Info > Plain Search".
+PLAIN_SEARCH_DOCS = ('search_by_keyword', 'search_by_regex', 'search_by_meaning')
+
+# The top-level menu item all these pages belong to (msgid in navigation.py).
+INFO_MENU_TITLE = 'Info'
 
 # Files a document may show besides its text, e.g. the diagram on the
 # ontology page: ![...](/content/ontology/klasifikatoru_attiecibu_grafs.svg)
@@ -47,7 +54,7 @@ def getReferences():
     template_context = {
         'active': 'about_us',
         'navlinks': [
-            { 'title':'About Us' },
+            { 'title': INFO_MENU_TITLE },
             { 'url': 'references_bp.getReferences', 'title': 'References'}
         ],
         'lang': lang,
@@ -63,7 +70,7 @@ def getContactInfo():
     template_context = {
         'active': 'about_us',
         'navlinks': [
-            {'title':'About Us'},
+            {'title': INFO_MENU_TITLE},
             {'url': 'references_bp.getContactInfo', 'title': 'Contact Information'}
         ],
         'lang': lang,
@@ -97,7 +104,9 @@ def getContentPage(docname):
         return html_content
 
     title = _doc_title(docname, lang)
-    navlinks = [{'title': 'About Us'}]
+    navlinks = [{'title': INFO_MENU_TITLE}]
+    if docname in PLAIN_SEARCH_DOCS:
+        navlinks.append({'title': 'Plain Search'})
     if docname in ONTOLOGY_SUBPAGES:
         navlinks.append({'url': 'references_bp.getOntology', 'title': _doc_title(ONTOLOGY_DOC, lang)})
     navlinks.append({'url': 'references_bp.getContentPage',

@@ -1,0 +1,21 @@
+# Jaunumi sākumlapā ("/") zem meklēšanas lodziņa.
+#
+# Katrs jaunums ir viens saraksta elements ar diviem laukiem:
+#   date: GGGG-MM-DD
+#   text: viena Markdown rindiņa (saites, *slīpraksts*, **trekns**, `kods`).
+#         Iekšējām saitēm lietot relatīvu adresi, kas sākas ar "/",
+#         piem. [paplašinātajā meklēšanā](/advanced_search?queryLabel=weighing).
+#         Ja tekstu vajag vairākās valodās, text var būt arī vārdnīca:
+#           text:
+#             lv: ...
+#             en: ...
+#             lt: ...
+#         (trūkstošai valodai rāda latvisko tekstu).
+#
+# Secībai failā nav nozīmes: sākumlapa rāda jaunākos pirmos, pa 10 lapā.
+
+- date: 2026-11-18
+  text:
+    lv: Vaicājums svēršanas uzdevumiem [paplašinātajā meklēšanā](/advanced_search?queryLabel=weighing)
+    lt: Užklausa svėrimo uždaviniams [išplėstinėje paieškoje](/advanced_search?queryLabel=weighing)
+    en: A query for weighing problems in the [advanced search](/advanced_search?queryLabel=weighing)

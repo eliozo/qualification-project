@@ -3,6 +3,7 @@ import logging
 from flask import Blueprint, render_template, request, session
 
 from blueprints.paging import page_links, parse_offset
+from eliozo.news import news_page
 from eliozo.webmd_utils import fix_image_links, mathBeautify
 from eliozo_dao.search_repository import (
     SEARCH_MODE_SEMANTIC,
@@ -33,7 +34,10 @@ def search_problems():
         template_context = {
             'active': 'main',
             'searchMode': 'exact',
-            'searchTarget': searchTarget
+            'searchTarget': searchTarget,
+            # News under the search box; ?newsOffset=10 shows the next older ten
+            'news': news_page(parse_offset(request.args.get('newsOffset')),
+                              session.get('lang', 'lv')),
         }
         return render_template('main_content.html',  **template_context)
 

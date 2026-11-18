@@ -4,15 +4,34 @@ from flask_babel import _
 from .content_docs import ONTOLOGY_SUBPAGES, content_doc_title
 
 
-def _ontology_menu(lang):
-    """'Ontology' with its child documents as a nested menu; the item itself opens the overview."""
+def _advanced_search_menu(lang):
+    """'Advanced Search': the ontology overview (classes and properties for
+    writing SPARQL queries) with its child documents as a nested menu; the
+    item itself opens the overview."""
     return {
-        'label': _('Ontology'),
+        'label': _('Advanced Search'),
         'endpoint': 'references_bp.getOntology',
         'children': [
             {'label': content_doc_title(doc, lang) or doc,
              'endpoint': 'references_bp.getContentPage', 'url_params': {'docname': doc}}
             for doc in ONTOLOGY_SUBPAGES
+        ],
+    }
+
+
+def _plain_search_menu():
+    """'Plain Search': only a navigation node (no page of its own) with the
+    help documents of the search modes of the main page ("/"), in the order
+    of its radio buttons."""
+    def doc(label, docname):
+        return {'label': label, 'endpoint': 'references_bp.getContentPage',
+                'url_params': {'docname': docname}}
+    return {
+        'label': _('Plain Search'),
+        'children': [
+            doc(_('Exact Search'), 'search_by_keyword'),
+            doc(_('Regex Search'), 'search_by_regex'),
+            doc(_('Semantic Search'), 'search_by_meaning'),
         ],
     }
 
@@ -44,7 +63,7 @@ def get_navigation():
     - url_params: Parameters for url_for (optional)
     - active_key: Key to match against 'active' variable in template
     - children: List of sub-items (optional); a child may have children of its own
-      (a nested menu, e.g. About Us > Ontology > Question Types)
+      (a nested menu, e.g. Info > Advanced Search > Question Types)
     - condition: Boolean to determine visibility (optional, default True)
     """
     
@@ -101,16 +120,15 @@ def get_navigation():
             ]
         },
         {
-            'label': _('About Us'),
+            # References, the authors, and help on searching (plain search
+            # modes and the ontology for SPARQL queries)
+            'label': _('Info'),
             'active_key': 'about_us',
             'children': [
                 {'label': _('References'), 'endpoint': 'references_bp.getReferences'},
                 {'label': _('Contact Information'), 'endpoint': 'references_bp.getContactInfo'},
-                _ontology_menu(session.get('lang', 'lv')),
-                {'label': _('Exact Search'), 'endpoint': 'references_bp.getContentPage',
-                 'url_params': {'docname': 'search_by_keyword'}},
-                {'label': _('Regex Search'), 'endpoint': 'references_bp.getContentPage',
-                 'url_params': {'docname': 'search_by_regex'}},
+                _plain_search_menu(),
+                _advanced_search_menu(session.get('lang', 'lv')),
             ]
         }
     ]

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-18 20:12+0300\n"
+"POT-Creation-Date: 2026-11-18 02:08+0200\n"
 "PO-Revision-Date: 2024-07-06 19:31+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: lv\n"
@@ -19,106 +19,112 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: navigation.py:22 templates/global.html:17 templates/global.html:152
+#: navigation.py:12
+msgid "Advanced Search"
+msgstr "Paplašinātā meklēšana"
+
+#: navigation.py:30
+msgid "Plain Search"
+msgstr "Vienkāršā meklēšana"
+
+#: navigation.py:32
+msgid "Exact Search"
+msgstr "Precīzā meklēšana"
+
+#: navigation.py:33
+msgid "Regex Search"
+msgstr "Meklēšana ar regulārajām izteiksmēm"
+
+#: navigation.py:34
+msgid "Semantic Search"
+msgstr "Semantiskā meklēšana"
+
+#: navigation.py:76 templates/global.html:17 templates/global.html:275
 msgid "Home"
 msgstr "Sākums"
 
-#: navigation.py:27
+#: navigation.py:81
 msgid "Filters"
 msgstr "Filtri"
 
-#: navigation.py:32
+#: navigation.py:86 templates/curriculum_content.html:36
 msgid "Archive"
 msgstr "Arhīvs"
 
-#: navigation.py:35 templates/stats_propertycounts.html:14
+#: navigation.py:89 templates/stats_propertycounts.html:14
 msgid "Olympiads"
 msgstr "Olimpiādes"
 
-#: navigation.py:36 templates/filter_content.html:189
+#: navigation.py:90 templates/filter_content.html:184
 msgid "Video"
 msgstr "Video"
 
-#: navigation.py:40
+#: navigation.py:94
 msgid "Order"
 msgstr "Kārtot"
 
-#: navigation.py:43
+#: navigation.py:97
 msgid "by Topic"
 msgstr "pēc tēmas"
 
-#: navigation.py:44
+#: navigation.py:98
 msgid "by Method"
 msgstr "pēc metodes"
 
-#: navigation.py:45
+#: navigation.py:99
 msgid "by Genre"
 msgstr "pēc žanra"
 
-#: navigation.py:46
+#: navigation.py:100
 msgid "by Concept"
 msgstr "pēc jēdziena"
 
-#: navigation.py:47
+#: navigation.py:101
 #, fuzzy
 msgid "Topics Table"
 msgstr "Tēmas"
 
-#: navigation.py:51
+#: navigation.py:105
 msgid "Reports"
 msgstr "Pārskati"
 
-#: navigation.py:54
+#: navigation.py:108
 msgid "Olympiad Curriculum"
 msgstr "Olimpiāžu saturs"
 
-#: navigation.py:55
+#: navigation.py:109
 msgid "Problem Count"
 msgstr "Uzdevumu skaits"
 
-#: navigation.py:56
+#: navigation.py:110
 msgid "Property Usage"
 msgstr "Atribūtu lietojums"
 
-#: navigation.py:57
+#: navigation.py:111
 msgid "Result Summary"
 msgstr "Rezultāti"
 
-#: navigation.py:61 navigation.py:65
+#: navigation.py:115 navigation.py:119
 msgid "Worksheets"
 msgstr ""
 
-#: navigation.py:69
-msgid "About Us"
-msgstr "Par mums"
+#: navigation.py:125
+msgid "Info"
+msgstr "Informācija"
 
-#: navigation.py:72
+#: navigation.py:128
 msgid "References"
 msgstr "Atsauces"
 
-#: navigation.py:73
+#: navigation.py:129
 msgid "Contact Information"
 msgstr "Kontaktinformācija"
 
-# Ontology documentation (blueprints/references,
-# templates/advanced_search_content.html)
-#: navigation.py:74
-msgid "Ontology"
-msgstr "Ontoloģija"
-
-#: navigation.py:75
-msgid "Exact Search"
-msgstr "Precīzā meklēšana"
-
-#: navigation.py:77
-msgid "Regex Search"
-msgstr "Meklēšana ar regulārajām izteiksmēm"
-
-#: navigation.py:87
+#: navigation.py:140
 msgid "Logout"
 msgstr ""
 
-#: navigation.py:89
+#: navigation.py:142
 msgid "Login"
 msgstr ""
 
@@ -126,24 +132,19 @@ msgstr ""
 msgid "Pages"
 msgstr "Lapas"
 
-# Advanced search (templates/advanced_search_content.html)
-#: templates/advanced_search_content.html:72 templates/main_content.html:56
-msgid "Advanced search"
-msgstr "Paplašinātā meklēšana"
-
-#: templates/advanced_search_content.html:76
+#: templates/advanced_search_content.html:77
 msgid "SPARQL query"
 msgstr "SPARQL vaicājums"
 
-#: templates/advanced_search_content.html:78
+#: templates/advanced_search_content.html:79
 msgid "Ontology: classes and properties to use in queries"
 msgstr "Ontoloģija: klases un īpašības, ko lietot vaicājumos"
 
-#: templates/advanced_search_content.html:84
+#: templates/advanced_search_content.html:85
 msgid "Preset queries"
 msgstr "Sagatavotie vaicājumi"
 
-#: templates/advanced_search_content.html:94
+#: templates/advanced_search_content.html:95
 msgid ""
 "The query must select the variable <code>?problemID</code>. The optional "
 "variables <code>?section</code> and <code>?subsection</code> group the "
@@ -153,98 +154,111 @@ msgstr ""
 "mainīgajiem <code>?section</code> un <code>?subsection</code> uzdevumus "
 "sagrupē zem apakšvirsrakstiem."
 
-#: templates/advanced_search_content.html:95
+#: templates/advanced_search_content.html:96
 msgid "Ctrl+Enter starts the search."
 msgstr "Ctrl+Enter sāk meklēšanu."
 
-#: templates/advanced_search_content.html:100
+#: templates/advanced_search_content.html:101
 msgid "Limit"
 msgstr "Limits"
 
-#: templates/advanced_search_content.html:103
+#: templates/advanced_search_content.html:104
 #, python-format
 msgid "at most %(max)s"
 msgstr "ne vairāk kā %(max)s"
 
-#: templates/advanced_search_content.html:106 templates/filter_content.html:215
+#: templates/advanced_search_content.html:107 templates/filter_content.html:210
 #: templates/main_content.html:13
 msgid "Search"
 msgstr "Meklēt"
 
-#: templates/advanced_search_content.html:124
-#: templates/advanced_search_content.html:240
+#: templates/advanced_search_content.html:108
+msgid "New query"
+msgstr "Jauns vaicājums"
+
+#: templates/advanced_search_content.html:147
+#: templates/advanced_search_content.html:281
 #, python-format
 msgid "Syntax error at line %(line)s, column %(column)s"
 msgstr "Sintakses kļūda %(line)s. rindā, %(column)s. pozīcijā"
 
-#: templates/advanced_search_content.html:125
+#: templates/advanced_search_content.html:148
 #, python-format
 msgid "unexpected %(token)s"
 msgstr "negaidīts %(token)s"
 
-#: templates/advanced_search_content.html:126
+#: templates/advanced_search_content.html:149
 msgid "the query ends too early"
 msgstr "vaicājums beidzas par agru"
 
-#: templates/advanced_search_content.html:127
+#: templates/advanced_search_content.html:150
 msgid "expected one of"
 msgstr "gaidīja kādu no"
 
-#: templates/advanced_search_content.html:195
+#: templates/advanced_search_content.html:223
 msgid "Replace the query in the text field?"
 msgstr "Aizstāt teksta laukā esošo vaicājumu?"
 
-#: templates/advanced_search_content.html:219
+#: templates/advanced_search_content.html:247
+#, python-format
+msgid "There is no preset query \"%(label)s\"."
+msgstr "Nav sagatavota vaicājuma \"%(label)s\"."
+
+#: templates/advanced_search_content.html:254
+msgid "Link to this query"
+msgstr "Saite uz šo vaicājumu"
+
+#: templates/advanced_search_content.html:260
 #, python-format
 msgid "The limit must be a whole number from 1 to %(max)s."
 msgstr "Limitam jābūt veselam skaitlim no 1 līdz %(max)s."
 
-#: templates/advanced_search_content.html:226
+#: templates/advanced_search_content.html:267
 msgid "Please enter a SPARQL query."
 msgstr "Lūdzu, ievadiet SPARQL vaicājumu."
 
-#: templates/advanced_search_content.html:228
+#: templates/advanced_search_content.html:269
 msgid "The query is too long."
 msgstr "Vaicājums ir pārāk garš."
 
-#: templates/advanced_search_content.html:230
+#: templates/advanced_search_content.html:271
 msgid "Only SELECT queries can be run."
 msgstr "Var izpildīt tikai SELECT vaicājumus."
 
-#: templates/advanced_search_content.html:232
+#: templates/advanced_search_content.html:273
 msgid "Queries that change data are not allowed."
 msgstr "Vaicājumi, kas maina datus, nav atļauti."
 
-#: templates/advanced_search_content.html:234
+#: templates/advanced_search_content.html:275
 msgid "SERVICE (federated queries) is not allowed."
 msgstr "SERVICE (federētie vaicājumi) nav atļauts."
 
-#: templates/advanced_search_content.html:236
+#: templates/advanced_search_content.html:277
 msgid "The query must select the variable ?problemID."
 msgstr "Vaicājumam jāatlasa mainīgais ?problemID."
 
-#: templates/advanced_search_content.html:238
+#: templates/advanced_search_content.html:279
 msgid "The query took too long and was stopped."
 msgstr "Vaicājums izpildījās pārāk ilgi un tika apturēts."
 
-#: templates/advanced_search_content.html:240
+#: templates/advanced_search_content.html:281
 msgid "Syntax error"
 msgstr "Sintakses kļūda"
 
-#: templates/advanced_search_content.html:247
+#: templates/advanced_search_content.html:288
 msgid "The query could not be run"
 msgstr "Vaicājumu neizdevās izpildīt"
 
-#: templates/advanced_search_content.html:255
+#: templates/advanced_search_content.html:296
 msgid "Nothing was found."
 msgstr "Nekas netika atrasts."
 
-#: templates/advanced_search_content.html:258
+#: templates/advanced_search_content.html:299
 #, python-format
 msgid "Results: %(n)s"
 msgstr "Rezultāti: %(n)s"
 
-#: templates/advanced_search_content.html:259
+#: templates/advanced_search_content.html:300
 msgid "The query has more results; increase the limit to see them."
 msgstr "Vaicājumam ir vairāk rezultātu; palieliniet limitu, lai tos redzētu."
 
@@ -260,55 +274,71 @@ msgstr "Jēdziens"
 msgid "Usage"
 msgstr "Lietojums"
 
-#: templates/curriculum_content.html:8 templates/stats_problemcounts.html:18
+#: templates/curriculum_content.html:20 templates/stats_problemcounts.html:18
 msgid "Olympiad"
 msgstr "Olimpiāde"
 
-#: templates/curriculum_content.html:18
+#: templates/curriculum_content.html:23
 msgid "Years"
 msgstr "Gadi"
 
-#: templates/curriculum_content.html:26
+#: templates/curriculum_content.html:24
+msgid "From year"
+msgstr "No gada"
+
+#: templates/curriculum_content.html:30
+msgid "To year"
+msgstr "Līdz gadam"
+
+#: templates/curriculum_content.html:40
 msgid "Grades"
 msgstr "Klases"
 
-#: templates/curriculum_content.html:33
+#: templates/curriculum_content.html:43
 msgid "Show"
 msgstr "Rādīt"
 
-#: templates/curriculum_content.html:40
+#: templates/curriculum_content.html:44
+msgid "Nothing selected means all olympiads / all grades"
+msgstr "Ja nekas nav atzīmēts, tiek rādītas visas olimpiādes / visas klases"
+
+#: templates/curriculum_content.html:51
 msgid "Question Types"
 msgstr "Jautājumu tipi"
 
-#: templates/curriculum_content.html:41 templates/problem_content.html:77
+#: templates/curriculum_content.html:52 templates/problem_content.html:77
 msgid "Topics"
 msgstr "Tēmas"
 
-#: templates/curriculum_content.html:43 templates/curriculum_content.html:116
+#: templates/curriculum_content.html:54 templates/curriculum_content.html:137
 msgid "Methods"
 msgstr "Metodes"
 
-#: templates/curriculum_content.html:45 templates/curriculum_content.html:147
+#: templates/curriculum_content.html:56 templates/curriculum_content.html:168
 #, fuzzy
 msgid "Subdomains"
 msgstr "Nozare"
+
+#: templates/curriculum_content.html:79
+msgid "Required parts"
+msgstr "Nepieciešamās daļas"
 
 #: templates/filter_content.html:10
 msgid "Grade"
 msgstr "Klase"
 
-#: templates/filter_content.html:28 templates/filter_content.html:54
-#: templates/filter_content.html:84 templates/filter_content.html:115
-#: templates/filter_content.html:154 templates/filter_content.html:180
-#: templates/filter_content.html:206
+#: templates/filter_content.html:32 templates/filter_content.html:58
+#: templates/filter_content.html:88 templates/filter_content.html:119
+#: templates/filter_content.html:149 templates/filter_content.html:175
+#: templates/filter_content.html:201
 msgid "Remove Filter"
 msgstr "Noņemt filtru"
 
-#: templates/filter_content.html:31
+#: templates/filter_content.html:35
 msgid "An olympiad problem usually belongs to some grade."
 msgstr "Olimpiādes uzdevums parasti domāts noteiktai klasei."
 
-#: templates/filter_content.html:32
+#: templates/filter_content.html:36
 #, fuzzy
 msgid ""
 "Problems in textbooks, contests or international olympiads are often "
@@ -318,11 +348,11 @@ msgstr ""
 "Uzdevumi grāmatās, konkursos vai starptautiskās olimpiādēs bieži ir "
 "piemēroti vairākām klasēm."
 
-#: templates/filter_content.html:37
+#: templates/filter_content.html:41
 msgid "Source"
 msgstr "Avots"
 
-#: templates/filter_content.html:57
+#: templates/filter_content.html:61
 #, fuzzy
 msgid ""
 "Regional or open olympiads cover fewer topics and require less\n"
@@ -331,124 +361,100 @@ msgstr ""
 "Reģionu vai atklātās olimpiādes aptver mazāk tēmu un prasa mazāku "
 "sagatavotību, salīdzinot ar citām."
 
-#: templates/filter_content.html:59
+#: templates/filter_content.html:63
 msgid "Contest problems could take longer as the time limit is several days."
 msgstr ""
 "Konkursu uzdevumi var aizņemt vairāk laika, jo risināšanai atvēlētas "
 "vairākas dienas."
 
-#: templates/filter_content.html:60
+#: templates/filter_content.html:64
 msgid "A book is shown as source, if no other source is known."
 msgstr "Grāmatu norāda kā avotu, ja cits avots nav zināms."
 
-#: templates/filter_content.html:65
+#: templates/filter_content.html:69
 msgid "Domain"
 msgstr "Nozare"
 
-#: templates/filter_content.html:88
+#: templates/filter_content.html:92
 msgid "Every problem belongs to a domain"
 msgstr "Katram uzdevumam ir nozare"
 
-#: templates/filter_content.html:89
+#: templates/filter_content.html:93
 msgid "Algebra"
 msgstr "Algebra"
 
-#: templates/filter_content.html:90
+#: templates/filter_content.html:94
 msgid "Combinatorics"
 msgstr "Kombinatorika"
 
-#: templates/filter_content.html:91
+#: templates/filter_content.html:95
 msgid "Geometry"
 msgstr "Ģeometrija"
 
-#: templates/filter_content.html:92
+#: templates/filter_content.html:96
 msgid "Number theory"
 msgstr "Skaitļu teorija"
 
-#: templates/filter_content.html:96
+#: templates/filter_content.html:100
 msgid "Question"
 msgstr "Jautājums"
 
-#: templates/filter_content.html:119
+#: templates/filter_content.html:123
 msgid "A question type implies the structure of a solution."
 msgstr "Jautājuma tips nosaka atrisinājuma struktūru."
 
-#: templates/filter_content.html:121
+#: templates/filter_content.html:125
 msgid "Every subitem (A,B,...) may have its own question type."
 msgstr "Katram apakšpunktam (A,B,...) var būt savs jautājuma tips."
 
-#: templates/filter_content.html:122
-msgid "Find all solutions, show that there are no others."
-msgstr "Atrast visus atrisinājumus, pamatot, ka citu nav."
-
-#: templates/filter_content.html:124
-msgid "Determine the count of answers or other objects."
-msgstr "Noteikt atrisinājumu vai objektu skaitu."
-
 #: templates/filter_content.html:126
-msgid "Find the largest, the smallest or the \"best\" solution."
-msgstr "Atrast lielāko, mazāko vai \"labāko\" atrisinājumu."
-
-#: templates/filter_content.html:128
-msgid "Provide any example satisfying the requirements."
-msgstr "Atrast kādu piemēru, kas apmierina prasības."
-
-#: templates/filter_content.html:130
-msgid "Prove the given statement."
-msgstr "Pierādīt doto apgalvojumu."
-
-#: templates/filter_content.html:131
-msgid "Prove or disprove the given statement."
-msgstr "Pierādīt vai apgāzt doto apgalvojumu."
-
-#: templates/filter_content.html:132
-msgid "Describe a procedure, a construction, a game strategy."
-msgstr "Atrast procedūru, konstrukciju vai spēles stratēģiju."
+msgid "A group of question types includes its subtypes."
+msgstr "Jautājumu tipu grupa ietver arī tās apakštipus."
 
 #: templates/filter_content.html:134
-msgid "Enter an answer such as a number, a multiple choice or Yes/No."
-msgstr "Ierakstīt atbildi, piemēram, skaitli, izvēlēto alternatīvu vai Jā/Nē."
-
-#: templates/filter_content.html:139
 msgid "Method"
 msgstr "Metode"
 
-#: templates/filter_content.html:158
+#: templates/filter_content.html:153
 msgid "Method used in a solution."
 msgstr "Metode kas izmantota kādā no atrisinājumiem."
 
-#: templates/filter_content.html:159
+#: templates/filter_content.html:154
 msgid "Unlike other metadata method is often unspecified."
 msgstr "Atšķirībā no citiem metadatiem metodi bieži nenorāda."
 
-#: templates/filter_content.html:163 templates/problem_content.html:95
+#: templates/filter_content.html:158 templates/problem_content.html:95
 msgid "Solution"
 msgstr "Atrisinājums"
 
-#: templates/filter_content.html:184
+#: templates/filter_content.html:179
 msgid "Problems having at least one solution."
 msgstr "Uzdevumi ar vismaz vienu atrisinājumu."
 
-#: templates/filter_content.html:210
+#: templates/filter_content.html:205
 msgid "Problems with video-recorded solutions."
 msgstr "Uzdevumi ar atrisinājumu video formā."
 
-#: templates/filter_content.html:226 templates/grade_content.html:38
-#: templates/main_content.html:223
+#: templates/filter_content.html:221 templates/grade_content.html:38
+#: templates/main_content.html:299
 msgid "More"
 msgstr "Vairāk"
 
+#: templates/global.html:231 templates/global.html:232
+msgid "Show subtopics"
+msgstr "Rādīt apakštēmas"
+
 #: templates/main_content.html:16
-msgid "Exactly"
+msgid "Exact"
 msgstr "Precīzi"
 
 #: templates/main_content.html:21
 msgid "Regex"
-msgstr "Reg. izteiksmi"
+msgstr "Regex"
 
 #: templates/main_content.html:27
-msgid "By meaning"
-msgstr "Pēc nozīmes"
+msgid "Semantic"
+msgstr "Semantiski"
 
 #: templates/main_content.html:29
 msgid "How exact search works"
@@ -458,23 +464,44 @@ msgstr "Kā darbojas precīzā meklēšana"
 msgid "How regular expression search works"
 msgstr "Kā darbojas meklēšana ar regulārajām izteiksmēm"
 
-#: templates/main_content.html:40
+#: templates/main_content.html:37
+msgid "How semantic search works"
+msgstr "Kā darbojas semantiskā meklēšana"
+
+#: templates/main_content.html:44
 msgid "In problems"
 msgstr "Uzdevumos"
 
-#: templates/main_content.html:42
+#: templates/main_content.html:46
 msgid "In solutions"
 msgstr "Atrisinājumos"
 
-#: templates/main_content.html:156
+# Advanced search (templates/advanced_search_content.html)
+#: templates/main_content.html:49
+msgid "Advanced search"
+msgstr "Paplašinātā meklēšana"
+
+#: templates/main_content.html:116
+msgid "News"
+msgstr "Jaunumi"
+
+#: templates/main_content.html:127
+msgid "Newer news"
+msgstr "Jaunāki jaunumi"
+
+#: templates/main_content.html:131
+msgid "Older news"
+msgstr "Vecāki jaunumi"
+
+#: templates/main_content.html:232
 msgid "Open as a page"
 msgstr "Atvērt kā lapu"
 
-#: templates/main_content.html:158
+#: templates/main_content.html:234
 msgid "Close"
 msgstr "Aizvērt"
 
-#: templates/main_content.html:174
+#: templates/main_content.html:250
 msgid ""
 "Search by meaning is not available right now. Please try the exact or "
 "regex search."
@@ -482,12 +509,12 @@ msgstr ""
 "Meklēšana pēc nozīmes šobrīd nav pieejama. Lūdzu, izmantojiet precīzo vai"
 " regulārās izteiksmes meklēšanu."
 
-#: templates/main_content.html:210
+#: templates/main_content.html:286
 #, python-format
 msgid "Found in the %(code)s translation"
 msgstr "Atrasts tulkojumā: %(code)s"
 
-#: templates/main_content.html:216
+#: templates/main_content.html:292
 #, python-format
 msgid "Found in a solution (%(code)s)"
 msgstr "Atrasts atrisinājumā (%(code)s)"
@@ -496,7 +523,7 @@ msgstr "Atrasts atrisinājumā (%(code)s)"
 msgid "No solution"
 msgstr "Nav atrisinājuma"
 
-#: templates/problem_solution_content.html:80
+#: templates/problem_solution_content.html:81
 #, fuzzy
 msgid ""
 "Hide\n"
@@ -665,34 +692,41 @@ msgstr "Jautājums"
 #~ msgid "Hint Types"
 #~ msgstr "Norāžu tipi"
 
-#: templates/curriculum_content.html
-msgid "From year"
-msgstr "No gada"
+#~ msgid "About Us"
+#~ msgstr "Par mums"
 
-#: templates/curriculum_content.html
-msgid "To year"
-msgstr "Līdz gadam"
+# Ontology documentation (blueprints/references,
+# templates/advanced_search_content.html)
+#~ msgid "Ontology"
+#~ msgstr "Ontoloģija"
 
-#: templates/curriculum_content.html
-msgid "Nothing selected means all olympiads / all grades"
-msgstr "Ja nekas nav atzīmēts, tiek rādītas visas olimpiādes / visas klases"
+#~ msgid "Find all solutions, show that there are no others."
+#~ msgstr "Atrast visus atrisinājumus, pamatot, ka citu nav."
 
-#: templates/filter_content.html templates/curriculum_content.html
-msgid "A group of question types includes its subtypes."
-msgstr "Jautājumu tipu grupa ietver arī tās apakštipus."
+#~ msgid "Determine the count of answers or other objects."
+#~ msgstr "Noteikt atrisinājumu vai objektu skaitu."
 
-#: templates/filter_content.html templates/curriculum_content.html
-msgid "Required parts"
-msgstr "Nepieciešamās daļas"
+#~ msgid "Find the largest, the smallest or the \"best\" solution."
+#~ msgstr "Atrast lielāko, mazāko vai \"labāko\" atrisinājumu."
 
-msgid "Show subtopics"
-msgstr "Rādīt apakštēmas"
+#~ msgid "Provide any example satisfying the requirements."
+#~ msgstr "Atrast kādu piemēru, kas apmierina prasības."
 
-msgid "New query"
-msgstr "Jauns vaicājums"
+#~ msgid "Prove the given statement."
+#~ msgstr "Pierādīt doto apgalvojumu."
 
-msgid "Link to this query"
-msgstr "Saite uz šo vaicājumu"
+#~ msgid "Prove or disprove the given statement."
+#~ msgstr "Pierādīt vai apgāzt doto apgalvojumu."
 
-msgid "There is no preset query \"%(label)s\"."
-msgstr "Nav sagatavota vaicājuma \"%(label)s\"."
+#~ msgid "Describe a procedure, a construction, a game strategy."
+#~ msgstr "Atrast procedūru, konstrukciju vai spēles stratēģiju."
+
+#~ msgid "Enter an answer such as a number, a multiple choice or Yes/No."
+#~ msgstr "Ierakstīt atbildi, piemēram, skaitli, izvēlēto alternatīvu vai Jā/Nē."
+
+#~ msgid "Exactly"
+#~ msgstr "Precīzi"
+
+#~ msgid "By meaning"
+#~ msgstr "Pēc nozīmes"
+
