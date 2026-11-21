@@ -57,31 +57,7 @@ grade 7 of the Latvian Open Olympiad in 2019.
 
 ## Examples
 
-Grade 5 problems of the Latvian Open Olympiad since 2020, grouped by year:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID (STR(?year) AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:olympiad "LV.AMO" ;
-         eliozo:problemYear ?year ;
-         eliozo:problemGrade 5 .
-      FILTER (?year >= 2020)
-    }
-    ORDER BY DESC(?year) ?problemID
+Grade 5 problems of the Latvian Open Olympiad since 2020, grouped by year: [open the query](/advanced_search?queryLabel=onto-olympiad-amo-grade-5).
 
 Geometry problems of all national olympiads, with the English name of the
-olympiad as subtitle:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID (?name AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:olympiad ?olympiad ;
-         eliozo:olympiadType "National" ;
-         eliozo:domain "Geom" .
-      ?o eliozo:OlympiadID ?olympiad ;
-         eliozo:olympiadName ?name .
-      FILTER (LANG(?name) = "en")
-    }
-    ORDER BY ?name ?problemID
+olympiad as subtitle: [open the query](/advanced_search?queryLabel=onto-olympiad-national-geometry).

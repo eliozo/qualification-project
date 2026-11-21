@@ -1,0 +1,280 @@
+# Preset SPARQL queries for the "Advanced search" page (/advanced_search).
+# See README.md in this directory for the file format.
+#
+# These are the examples of the ontology documentation
+# (eliozo/content/ontology*/content_{lv,en,lt}.md). The documents do not embed
+# the queries; they link to them by label: /advanced_search?queryLabel=onto-...
+# When renaming a label, update the links in all three languages (a test
+# checks that every link resolves to a preset).
+#
+# Submenus follow the order of the classifier table on the overview page
+# (/ontology): overview, topics, methods, genres, question types, concepts,
+# olympiads. Labels are "onto-<classifier>-<what>".
+title: {lv: "Ontoloģija", en: "Ontology", lt: "Ontologija"}
+items:
+  - title: {lv: "Pārskats", en: "Overview", lt: "Apžvalga"}
+    items:
+      - title: {lv: "Dalāmība 5.–7. klasei", en: "Divisibility, grades 5-7", lt: "Dalumas 5–7 klasėms"}
+        label: onto-divisibility-grades-5-7
+        query: |
+          # Problems on divisibility for grades 5-7 (topic Divisibility and everything
+          # below it), grouped by topic. Documentation: /ontology
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+          SELECT DISTINCT ?problemID (?topicName AS ?section)
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:problemGrade ?grade ;
+               eliozo:topic ?topic .
+            ?topic skos:broader* eliozo:Divisibility ;
+                   eliozo:topicName ?topicName .
+            FILTER (?grade >= 5 && ?grade <= 7)
+          }
+          ORDER BY ?topicName ?problemID
+
+  - title: {lv: "Temati", en: "Topics", lt: "Temos"}
+    items:
+      - title: {lv: "Kongruences", en: "Congruences", lt: "Lyginiai"}
+        label: onto-topic-congruence
+        query: |
+          # Problems on congruences (IntegerCongruence and all topics below it),
+          # grouped by the narrowest topic. Documentation: /content/ontology_topics
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+          SELECT DISTINCT ?problemID (?name AS ?section)
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:topic ?topic .
+            ?topic skos:broader* eliozo:IntegerCongruence ;
+                   eliozo:topicName ?name .
+          }
+          ORDER BY ?name ?problemID
+      - title: {lv: "Ar tematu, bez metodes", en: "With a topic, without a method", lt: "Su tema, be metodo"}
+        label: onto-topic-without-method
+        query: |
+          # Problems that have a topic but no method yet,
+          # grouped by top-level topic. Documentation: /content/ontology_topics
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+          SELECT DISTINCT ?problemID (?rootName AS ?section)
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:topic ?topic .
+            ?topic skos:broader* ?root .
+            ?root eliozo:topicName ?rootName .
+            FILTER NOT EXISTS { ?root skos:broader ?anyParent }
+            FILTER NOT EXISTS { ?p eliozo:method ?anyMethod }
+          }
+          ORDER BY ?rootName ?problemID
+
+  - title: {lv: "Metodes", en: "Methods", lt: "Metodai"}
+    items:
+      - title: {lv: "Invarianti pēc veida", en: "Invariants by kind", lt: "Invariantai pagal rūšį"}
+        label: onto-method-invariants
+        query: |
+          # Invariant problems, grouped by the kind of invariant.
+          # Documentation: /content/ontology_methods
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+          SELECT DISTINCT ?problemID (?name AS ?section)
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:method ?method .
+            ?method skos:broader* eliozo:MTH_InvariantMethod ;
+                    eliozo:methodName ?name .
+          }
+          ORDER BY ?name ?problemID
+      - title: {lv: "Indukcija 9.–12. klasei", en: "Induction, grades 9-12", lt: "Indukcija 9–12 klasėms"}
+        label: onto-method-induction
+        query: |
+          # Induction problems for grades 9-12, grouped by grade.
+          # Documentation: /content/ontology_methods
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+          SELECT DISTINCT ?problemID ?grade (CONCAT(STR(?grade), ". klase") AS ?section)
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:problemGrade ?grade ;
+               eliozo:method ?method .
+            ?method skos:broader* eliozo:MTH_MathematicalInduction .
+            FILTER (?grade >= 9)
+          }
+          ORDER BY ?grade ?problemID
+
+  - title: {lv: "Žanri", en: "Genres", lt: "Žanrai"}
+    items:
+      - title: {lv: "Rūtiņu režģi pēc klasēm", en: "Grid problems by grade", lt: "Langelių lentelės pagal klases"}
+        label: onto-genre-grid-by-grade
+        query: |
+          # Problems on grids and grid figures (genres 3.16.0-3.16.4:
+          # cutting, colouring, rearranging ...), grouped by grade.
+          # For cutting only: ?p eliozo:subdomain eliozo:DOM_GridCut .
+          # Documentation: /content/ontology_genres
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          SELECT DISTINCT ?problemID ?grade (CONCAT(STR(?grade), ". klase") AS ?section)
+          WHERE {
+            ?genre a eliozo:Domain ;
+                   eliozo:domainNumber ?number .
+            FILTER (STRSTARTS(?number, "3.16."))
+            ?p eliozo:problemID ?problemID ;
+               eliozo:problemGrade ?grade ;
+               eliozo:subdomain ?genre .
+          }
+          ORDER BY ?grade ?problemID
+      - title: {lv: "Rūtiņu režģi pēc tēmas", en: "Grid problems by topic", lt: "Langelių lentelės pagal temą"}
+        label: grid-problems
+        query: |
+          # Problems on grids and grid figures: genres 3.16.0-3.16.4
+          # (as on the page "By genre"), grouped by genre.
+          # Documentation: /content/ontology_genres
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          SELECT ?problemID (CONCAT(?number, " ", ?name) AS ?section)
+          WHERE {
+            ?genre a eliozo:Domain ;
+                   eliozo:domainNumber ?number ;
+                   eliozo:domainName ?name .
+            FILTER (STRSTARTS(?number, "3.16."))
+            ?p eliozo:subdomain ?genre ;
+               eliozo:problemID ?problemID .
+          }
+          ORDER BY ?number ?problemID
+      - title: {lv: "Ģeometrijas žanri", en: "Geometry genres", lt: "Geometrijos žanrai"}
+        label: onto-genre-geometry
+        query: |
+          # All geometry genres with their problems, in two levels of subtitles.
+          # Documentation: /content/ontology_genres
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+          SELECT DISTINCT ?problemID (?parentName AS ?section) (?name AS ?subsection)
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:subdomain ?genre .
+            ?genre eliozo:domainName ?name ;
+                   skos:broader ?parent .
+            ?parent skos:broader* eliozo:Geom ;
+                    eliozo:domainName ?parentName .
+          }
+          ORDER BY ?parentName ?name ?problemID
+
+  - title: {lv: "Jautājumu tipi", en: "Question types", lt: "Klausimų tipai"}
+    items:
+      - title: {lv: "\"Atrast visus\" skaitļu teorijā", en: "\"Find all\" in number theory", lt: "„Rasti visus“ skaičių teorijoje"}
+        label: onto-qtype-find-all-nt
+        query: |
+          # "Find all" problems in number theory.
+          # Documentation: /content/ontology_question_types
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          SELECT ?problemID
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:questionType "QTY_FindAll" ;
+               eliozo:domain "NT" .
+          }
+          ORDER BY ?problemID
+      - title: {lv: "Grupa \"Atrast\" pēc tipa", en: "Group \"Find\" by type", lt: "Grupė „Rasti“ pagal tipą"}
+        label: onto-qtype-find-group
+        query: |
+          # A problem stores the question type ID as text; it is joined with the
+          # vocabulary through eliozo:questionID. Here: all problems of the QTY_Find
+          # group, grouped by type. Documentation: /content/ontology_question_types
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+          SELECT ?problemID (?type AS ?section)
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:questionType ?type .
+            ?q eliozo:questionID ?type ;
+               skos:broader* eliozo:QTY_Find .
+          }
+          ORDER BY ?type ?problemID
+      - title: {lv: "Izvēles atbildes ar \"atrast lielāko\"", en: "Multiple choice \"find the optimum\"", lt: "Pasirenkami atsakymai „rasti didžiausią“"}
+        label: onto-qtype-find-optimal-choice
+        query: |
+          # Multiple-choice test problems that can be turned into
+          # "find the largest or smallest" problems with a full solution.
+          # Documentation: /content/ontology_question_types
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          SELECT ?problemID
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:questionType "QTY_FindOptimal" ;
+               eliozo:responseFormat "RSP_AnswerChoice" .
+          }
+          ORDER BY ?problemID
+
+  - title: {lv: "Jēdzieni", en: "Concepts", lt: "Sąvokos"}
+    items:
+      - title: {lv: "Dalāmība un pirmskaitļi", en: "Divisibility and primes", lt: "Dalumas ir pirminiai skaičiai"}
+        label: onto-concept-divisibility-primes
+        query: |
+          # Problems that use both divisibility and prime numbers.
+          # Documentation: /content/ontology_concepts
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          SELECT ?problemID
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:concepts eliozo:TRM-divisibility, eliozo:TRM-primes .
+          }
+          ORDER BY ?problemID
+      - title: {lv: "Uzdevumi pēc jēdziena", en: "Problems by concept", lt: "Uždaviniai pagal sąvoką"}
+        label: onto-concept-by-term
+        query: |
+          # Problems grouped by concept, with the Latvian term as subtitle
+          # (for English use eliozo:termEN).
+          # Documentation: /content/ontology_concepts
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          SELECT ?problemID (?term AS ?section)
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:concepts ?concept .
+            ?concept eliozo:termLV ?term .
+          }
+          ORDER BY ?term ?problemID
+      - title: {lv: "Ieteiktais jēdziens \"Invariant\"", en: "Suggested concept \"Invariant\"", lt: "Pasiūlyta sąvoka „Invariant“"}
+        label: onto-concept-suggested-invariant
+        query: |
+          # Problems whose machine-suggested concepts include "Invariant".
+          # Documentation: /content/ontology_concepts
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          SELECT ?problemID
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:_hasSolutionConcept "Invariant" .
+          }
+          ORDER BY ?problemID
+
+  - title: {lv: "Olimpiādes", en: "Olympiads", lt: "Olimpiados"}
+    items:
+      - title: {lv: "AMO 5. klase kopš 2020", en: "AMO grade 5 since 2020", lt: "AMO 5 klasė nuo 2020"}
+        label: onto-olympiad-amo-grade-5
+        query: |
+          # Grade 5 problems of the Latvian Open Olympiad since 2020, grouped by year.
+          # Documentation: /content/ontology_olympiads
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          SELECT ?problemID (STR(?year) AS ?section)
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:olympiad "LV.AMO" ;
+               eliozo:problemYear ?year ;
+               eliozo:problemGrade 5 .
+            FILTER (?year >= 2020)
+          }
+          ORDER BY DESC(?year) ?problemID
+      - title: {lv: "Valsts olimpiāžu ģeometrija", en: "National olympiads: geometry", lt: "Nacionalinių olimpiadų geometrija"}
+        label: onto-olympiad-national-geometry
+        query: |
+          # Geometry problems of all national olympiads, with the Latvian name of the
+          # olympiad as subtitle (for another language change "lv" to "en" or "lt").
+          # Documentation: /content/ontology_olympiads
+          PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+          SELECT ?problemID (?name AS ?section)
+          WHERE {
+            ?p eliozo:problemID ?problemID ;
+               eliozo:olympiad ?olympiad ;
+               eliozo:olympiadType "National" ;
+               eliozo:domain "Geom" .
+            ?o eliozo:OlympiadID ?olympiad ;
+               eliozo:olympiadName ?name .
+            FILTER (LANG(?name) = "lv")
+          }
+          ORDER BY ?name ?problemID

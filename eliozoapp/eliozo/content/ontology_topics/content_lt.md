@@ -35,34 +35,10 @@ nė vienas uždavinys. Norėdami palikti tik pagrindinį medį, pridėkite prie 
 ## Pavyzdžiai
 
 Uždaviniai apie lyginius (`IntegerCongruence` ir visos temos po ja), sugrupuoti pagal
-siauriausią temą:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?name AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:topic ?topic .
-      ?topic skos:broader* eliozo:IntegerCongruence ;
-             eliozo:topicName ?name .
-    }
-    ORDER BY ?name ?problemID
+siauriausią temą: [atverti užklausą](/advanced_search?queryLabel=onto-topic-congruence).
 
 Uždaviniai, kurie turi temą, bet dar neturi [metodo](/content/ontology_methods),
-sugrupuoti pagal viršutinio lygio temą:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?rootName AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:topic ?topic .
-      ?topic skos:broader* ?root .
-      ?root eliozo:topicName ?rootName .
-      FILTER NOT EXISTS { ?root skos:broader ?anyParent }
-      FILTER NOT EXISTS { ?p eliozo:method ?anyMethod }
-    }
-    ORDER BY ?rootName ?problemID
+sugrupuoti pagal viršutinio lygio temą: [atverti užklausą](/advanced_search?queryLabel=onto-topic-without-method).
 
 Susiję: tema dažnai turi tipinius [metodus](/content/ontology_methods);
 [žanrai](/content/ontology_genres) ir [sąvokos](/content/ontology_concepts) nurodo

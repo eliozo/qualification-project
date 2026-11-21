@@ -39,31 +39,14 @@ Klausimo tipo viršūnė turi `eliozo:questionID`, `eliozo:questionName` (latvi�
 
 ## Pavyzdžiai
 
-„Rasti visus“ uždaviniai skaičių teorijoje:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:questionType "FindAll" ;
-         eliozo:domain "NT" .
-    }
-    ORDER BY ?problemID
+„Rasti visus“ uždaviniai skaičių teorijoje: [atverti užklausą](/advanced_search?queryLabel=onto-qtype-find-all-nt).
 
 Kadangi uždavinyje ID saugomas kaip tekstas, su žodynu jis susiejamas per
 `eliozo:questionID`, pavyzdžiui, norint visus grupės `Find` uždavinius sugrupuoti pagal
-tipą:
+tipą: [atverti užklausą](/advanced_search?queryLabel=onto-qtype-find-group).
 
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT ?problemID (?type AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:questionType ?type .
-      ?q eliozo:questionID ?type ;
-         skos:broader* eliozo:Find .
-    }
-    ORDER BY ?type ?problemID
+Testų uždaviniai su pasirenkamais atsakymais, kuriuos galima paversti „rasti didžiausią
+arba mažiausią“ uždaviniais su pilnu sprendimu: [atverti užklausą](/advanced_search?queryLabel=onto-qtype-find-optimal-choice).
 
 Susiję: klausimo tipas yra uždavinio formuluotės sluoksnyje šalia
 [žanrų](/content/ontology_genres) ir [sąvokų](/content/ontology_concepts); jis nurodo

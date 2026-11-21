@@ -144,11 +144,8 @@ norādīt atsevišķi tikai tad, ja tas atšķiras. Ja formāts nav norādīts, 
 
 | ID | Vecākais | Nosaukums | Kanoniskā norāde | Kas jāiesniedz |
 |---|---|---|---|---|
-| `RSP_Solution` | | Atrisinājums ar pamatojumu | Pamato savu atbildi. | atkarīgs no apakštipa |
 | `RSP_SolutionFull` | `RSP_Solution` | Pilns rakstisks atrisinājums | Uzraksti pilnu atrisinājumu. | atbilde un visas jautājuma tipa prasītās daļas |
 | `RSP_SolutionBrief` | `RSP_Solution` | Atbilde ar īsu pamatojumu | Ieraksti atbildi un īsi to pamato. | atbilde un viens vai daži teikumi ar galveno ideju |
-| `RSP_SolutionOral` | `RSP_Solution` | Mutiska prezentācija | Izstāsti atrisinājumu un atbildi uz jautājumiem. | izklāsts pie tāfeles un atbildes uz oponenta jautājumiem |
-| `RSP_Answer` | | Tikai atbilde | Ieraksti tikai atbildi. | atkarīgs no apakštipa |
 | `RSP_AnswerNumeric` | `RSP_Answer` | Skaitliska atbilde | Ieraksti atbildi kā skaitli. | viens skaitlis noteiktā pierakstā |
 | `RSP_AnswerOpen` | `RSP_Answer` | Īsa brīva atbilde | Ieraksti atbildi. | izteiksme, kopa, vārds vai piemērs |
 | `RSP_AnswerChoice` | `RSP_Answer` | Viena izvēle no vairākām | Izvēlies pareizo atbildi. | viens no piedāvātajiem variantiem |
@@ -156,8 +153,7 @@ norādīt atsevišķi tikai tad, ja tas atšķiras. Ja formāts nav norādīts, 
 | `RSP_AnswerYesNo` | `RSP_Answer` | Jā vai nē | Atbildi ar jā vai nē. | viena no divām atbildēm |
 
 Formāts `RSP_SolutionBrief` ir starpposms starp testu un pilnu atrisinājumu: īss
-paskaidrojums attur no minēšanas, un to var vērtēt automātiski. Formāts
-`RSP_SolutionOral` atbilst matemātiskajām cīņām un mutiskajām olimpiādēm.
+paskaidrojums attur no minēšanas, un to var vērtēt automātiski. 
 
 ## Vecās vērtības
 
@@ -174,42 +170,13 @@ paskaidrojums attur no minēšanas, un to var vērtēt automātiski. Formāts
 
 ## Piemēri
 
-"Atrast visus" uzdevumi skaitļu teorijā:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:questionType "QTY_FindAll" ;
-         eliozo:domain "NT" .
-    }
-    ORDER BY ?problemID
+"Atrast visus" uzdevumi skaitļu teorijā: [atvērt vaicājumu](/advanced_search?queryLabel=onto-qtype-find-all-nt).
 
 Tā kā uzdevumā ID glabājas kā teksts, ar vārdnīcu to savieno caur
-`eliozo:questionID`, piemēram, lai visus grupas `QTY_Find` uzdevumus sagrupētu pēc tipa:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT ?problemID (?type AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:questionType ?type .
-      ?q eliozo:questionID ?type ;
-         skos:broader* eliozo:QTY_Find .
-    }
-    ORDER BY ?type ?problemID
+`eliozo:questionID`, piemēram, lai visus grupas `QTY_Find` uzdevumus sagrupētu pēc tipa: [atvērt vaicājumu](/advanced_search?queryLabel=onto-qtype-find-group).
 
 Testu uzdevumi ar izvēles atbildēm, kurus var pārveidot par "atrast lielāko vai mazāko"
-uzdevumiem ar pilnu atrisinājumu:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:questionType "QTY_FindOptimal" ;
-         eliozo:responseFormat "RSP_AnswerChoice" .
-    }
-    ORDER BY ?problemID
+uzdevumiem ar pilnu atrisinājumu: [atvērt vaicājumu](/advanced_search?queryLabel=onto-qtype-find-optimal-choice).
 
 Saistīts: jautājuma tips ir uzdevuma formulējuma slānī blakus
 [žanriem](/content/ontology_genres) un [jēdzieniem](/content/ontology_concepts); tas

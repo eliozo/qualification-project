@@ -37,31 +37,9 @@ bet `eliozo:subdomain` ir hierarhijas **virsotne**.
 
 ## Piemēri
 
-Rūtiņu figūru sagriešanas uzdevumi, sagrupēti pa klasēm:
+Uzdevumi par rūtiņu režģiem (visi žanri 3.16.x), sagrupēti pa klasēm: [atvērt vaicājumu](/advanced_search?queryLabel=onto-genre-grid-by-grade). Tie paši uzdevumi, sagrupēti pa žanriem: [atvērt vaicājumu](/advanced_search?queryLabel=grid-problems).
 
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT DISTINCT ?problemID ?grade (CONCAT(STR(?grade), ". klase") AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:problemGrade ?grade ;
-         eliozo:subdomain eliozo:DOM_GridCut .
-    }
-    ORDER BY ?grade ?problemID
-
-Visi ģeometrijas žanri ar to uzdevumiem, divos apakšvirsrakstu līmeņos:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?parentName AS ?section) (?name AS ?subsection)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:subdomain ?genre .
-      ?genre eliozo:domainName ?name ;
-             skos:broader ?parent .
-      ?parent skos:broader* eliozo:Geom ;
-              eliozo:domainName ?parentName .
-    }
-    ORDER BY ?parentName ?name ?problemID
+Visi ģeometrijas žanri ar to uzdevumiem, divos apakšvirsrakstu līmeņos: [atvērt vaicājumu](/advanced_search?queryLabel=onto-genre-geometry).
 
 Saistīts: žanri atsaucas uz saviem tipiskajiem [tematiem](/content/ontology_topics)
 un [modeļiem](/content/ontology_models).

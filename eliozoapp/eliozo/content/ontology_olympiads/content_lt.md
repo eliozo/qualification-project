@@ -59,31 +59,7 @@ atvirosios matematikos olimpiados 7 klasės 4 uždavinys.
 ## Pavyzdžiai
 
 Latvijos atvirosios olimpiados 5 klasės uždaviniai nuo 2020 metų, sugrupuoti pagal
-metus:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID (STR(?year) AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:olympiad "LV.AMO" ;
-         eliozo:problemYear ?year ;
-         eliozo:problemGrade 5 .
-      FILTER (?year >= 2020)
-    }
-    ORDER BY DESC(?year) ?problemID
+metus: [atverti užklausą](/advanced_search?queryLabel=onto-olympiad-amo-grade-5).
 
 Visų nacionalinių olimpiadų geometrijos uždaviniai su lietuvišku olimpiados
-pavadinimu kaip paantrašte:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID (?name AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:olympiad ?olympiad ;
-         eliozo:olympiadType "National" ;
-         eliozo:domain "Geom" .
-      ?o eliozo:OlympiadID ?olympiad ;
-         eliozo:olympiadName ?name .
-      FILTER (LANG(?name) = "lt")
-    }
-    ORDER BY ?name ?problemID
+pavadinimu kaip paantrašte: [atverti užklausą](/advanced_search?queryLabel=onto-olympiad-national-geometry).

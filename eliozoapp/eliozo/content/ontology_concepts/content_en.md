@@ -31,36 +31,11 @@ text, see the [overview](/ontology)) already uses mostly names from that list.
 
 ## Examples
 
-Problems that use both divisibility and prime numbers:
+Problems that use both divisibility and prime numbers: [open the query](/advanced_search?queryLabel=onto-concept-divisibility-primes).
 
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:concepts eliozo:TRM-divisibility, eliozo:TRM-primes .
-    }
-    ORDER BY ?problemID
+Problems grouped by their concepts, with the English term as subtitle: [open the query](/advanced_search?queryLabel=onto-concept-by-term).
 
-Problems grouped by their concepts, with the English term as subtitle:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID (?term AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:concepts ?concept .
-      ?concept eliozo:termEN ?term .
-    }
-    ORDER BY ?term ?problemID
-
-Problems whose machine-suggested concepts include "Invariant":
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:_hasSolutionConcept "Invariant" .
-    }
-    ORDER BY ?problemID
+Problems whose machine-suggested concepts include "Invariant": [open the query](/advanced_search?queryLabel=onto-concept-suggested-invariant).
 
 Related: [models](/content/ontology_models) refer to the concepts they are built
 from.

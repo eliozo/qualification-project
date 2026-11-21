@@ -37,31 +37,9 @@ Note the difference: `eliozo:domain` is **text** and holds only the top level,
 
 ## Examples
 
-Grid cutting problems, grouped by grade:
+Grid problems (all genres 3.16.x), grouped by grade: [open the query](/advanced_search?queryLabel=onto-genre-grid-by-grade). The same problems grouped by genre: [open the query](/advanced_search?queryLabel=grid-problems).
 
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT DISTINCT ?problemID ?grade (CONCAT("Grade ", STR(?grade)) AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:problemGrade ?grade ;
-         eliozo:subdomain eliozo:DOM_GridCut .
-    }
-    ORDER BY ?grade ?problemID
-
-All geometry genres with their problems, two levels of subtitles:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?parentName AS ?section) (?name AS ?subsection)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:subdomain ?genre .
-      ?genre eliozo:domainName ?name ;
-             skos:broader ?parent .
-      ?parent skos:broader* eliozo:Geom ;
-              eliozo:domainName ?parentName .
-    }
-    ORDER BY ?parentName ?name ?problemID
+All geometry genres with their problems, two levels of subtitles: [open the query](/advanced_search?queryLabel=onto-genre-geometry).
 
 Related: genres refer to their typical [topics](/content/ontology_topics) and
 [models](/content/ontology_models).

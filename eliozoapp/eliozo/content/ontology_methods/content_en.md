@@ -43,32 +43,9 @@ see the [overview](/ontology)) uses its own, finer names.
 
 ## Examples
 
-Invariant problems, grouped by the kind of invariant:
+Invariant problems, grouped by the kind of invariant: [open the query](/advanced_search?queryLabel=onto-method-invariants).
 
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?name AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:method ?method .
-      ?method skos:broader* eliozo:MTH_InvariantMethod ;
-              eliozo:methodName ?name .
-    }
-    ORDER BY ?name ?problemID
-
-Induction problems for grades 9 to 12, grouped by grade:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID ?grade (CONCAT("Grade ", STR(?grade)) AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:problemGrade ?grade ;
-         eliozo:method ?method .
-      ?method skos:broader* eliozo:MTH_MathematicalInduction .
-      FILTER (?grade >= 9)
-    }
-    ORDER BY ?grade ?problemID
+Induction problems for grades 9 to 12, grouped by grade: [open the query](/advanced_search?queryLabel=onto-method-induction).
 
 Related: [hint types](/content/ontology_hint_types) suggest methods; a
 [model](/content/ontology_models) refers to the method usually applied to it.

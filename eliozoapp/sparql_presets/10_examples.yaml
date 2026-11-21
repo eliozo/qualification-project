@@ -5,8 +5,8 @@ items:
   - title: {lv: "Vienkāršs saraksts", en: "Plain list", lt: "Paprastas sąrašas"}
     label: plain-list
     query: |
-      # AMO 2011. gada 5. klases uzdevumi.
-      # Vaicājumam jāatlasa mainīgais ?problemID.
+      # Grade 5 problems of AMO (Latvian Open Olympiad) 2011.
+      # A query must select the variable ?problemID.
       PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
       SELECT ?problemID
       WHERE {
@@ -20,9 +20,9 @@ items:
   - title: {lv: "Viena līmeņa grupas", en: "One-level groups", lt: "Vieno lygio grupės"}
     label: one-level-groups
     query: |
-      # 2024. gada AMO, NOL un VOL uzdevumi 9.-12. klasei, sagrupēti pa klasēm.
-      # Mainīgā ?section vērtības kļūst par apakšvirsrakstiem;
-      # katrā klasē uzdevumi sakārtoti pēc olimpiādes un uzdevuma numura.
+      # AMO, NOL and VOL problems of 2024 for grades 9-12, grouped by grade.
+      # The values of ?section become subtitles;
+      # within each grade, problems are ordered by olympiad and problem number.
       PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
       PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
       SELECT ?problemID (CONCAT(STR(?grade), ". klase") AS ?section)
@@ -40,7 +40,7 @@ items:
   - title: {lv: "Divu līmeņu grupas", en: "Two-level groups", lt: "Dviejų lygių grupės"}
     label: two-level-groups
     query: |
-      # 2024. gada uzdevumi: ?section - olimpiāde, ?subsection - nozare.
+      # Problems of 2024: ?section - olympiad, ?subsection - domain.
       PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
       SELECT ?problemID (?olympiad AS ?section) (?domain AS ?subsection)
       WHERE {
@@ -54,7 +54,7 @@ items:
   - title: {lv: "Teksta meklēšana ar REGEX", en: "Text search with REGEX", lt: "Teksto paieška su REGEX"}
     label: regex-search
     query: |
-      # Uzdevumi, kuru latviskajā formulējumā ir vārds "šaha" vai "šahs".
+      # Problems whose Latvian statement contains the word "šaha" or "šahs" (chess).
       PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
       SELECT DISTINCT ?problemID
       WHERE {

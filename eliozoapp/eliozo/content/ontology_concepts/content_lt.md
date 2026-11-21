@@ -32,35 +32,10 @@ jau naudoja daugiausia šio sąrašo pavadinimus.
 
 ## Pavyzdžiai
 
-Uždaviniai, kuriuose naudojamas ir dalumas, ir pirminiai skaičiai:
+Uždaviniai, kuriuose naudojamas ir dalumas, ir pirminiai skaičiai: [atverti užklausą](/advanced_search?queryLabel=onto-concept-divisibility-primes).
 
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:concepts eliozo:TRM-divisibility, eliozo:TRM-primes .
-    }
-    ORDER BY ?problemID
+Uždaviniai, sugrupuoti pagal sąvokas, su angliškuoju terminu kaip paantrašte: [atverti užklausą](/advanced_search?queryLabel=onto-concept-by-term).
 
-Uždaviniai, sugrupuoti pagal sąvokas, su angliškuoju terminu kaip paantrašte:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID (?term AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:concepts ?concept .
-      ?concept eliozo:termEN ?term .
-    }
-    ORDER BY ?term ?problemID
-
-Uždaviniai, kurių automatiškai pasiūlytose sąvokose yra „Invariant“:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:_hasSolutionConcept "Invariant" .
-    }
-    ORDER BY ?problemID
+Uždaviniai, kurių automatiškai pasiūlytose sąvokose yra „Invariant“: [atverti užklausą](/advanced_search?queryLabel=onto-concept-suggested-invariant).
 
 Susiję: [modeliai](/content/ontology_models) nurodo sąvokas, iš kurių jie sudaryti.

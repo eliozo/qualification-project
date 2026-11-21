@@ -114,22 +114,9 @@ matches `Divisibility` itself and every node below it.
   group them under subtitles.
 
 Example: number theory problems for grades 5 to 7 about divisibility (the
-`Divisibility` topic and everything under it), grouped by topic:
+`Divisibility` topic and everything under it), grouped by topic: [open the query](/advanced_search?queryLabel=onto-divisibility-grades-5-7).
 
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?topicName AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:problemGrade ?grade ;
-         eliozo:topic ?topic .
-      ?topic skos:broader* eliozo:Divisibility ;
-             eliozo:topicName ?topicName .
-      FILTER (?grade >= 5 && ?grade <= 7)
-    }
-    ORDER BY ?topicName ?problemID
-
-The menu "Preset queries" above the query field has more examples.
+All examples of this documentation are also in the menu "Preset queries > Ontology" above the query field.
 
 ## Where the data comes from
 

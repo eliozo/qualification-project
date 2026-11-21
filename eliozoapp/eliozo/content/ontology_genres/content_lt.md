@@ -37,31 +37,9 @@ lygį, o `eliozo:subdomain` yra hierarchijos **viršūnė**.
 
 ## Pavyzdžiai
 
-Langelių figūrų karpymo uždaviniai, sugrupuoti pagal klases:
+Langelių lentelių uždaviniai (visi žanrai 3.16.x), sugrupuoti pagal klases: [atverti užklausą](/advanced_search?queryLabel=onto-genre-grid-by-grade). Tie patys uždaviniai, sugrupuoti pagal žanrus: [atverti užklausą](/advanced_search?queryLabel=grid-problems).
 
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT DISTINCT ?problemID ?grade (CONCAT(STR(?grade), " klasė") AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:problemGrade ?grade ;
-         eliozo:subdomain eliozo:DOM_GridCut .
-    }
-    ORDER BY ?grade ?problemID
-
-Visi geometrijos žanrai su jų uždaviniais, dviem paantraščių lygiais:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?parentName AS ?section) (?name AS ?subsection)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:subdomain ?genre .
-      ?genre eliozo:domainName ?name ;
-             skos:broader ?parent .
-      ?parent skos:broader* eliozo:Geom ;
-              eliozo:domainName ?parentName .
-    }
-    ORDER BY ?parentName ?name ?problemID
+Visi geometrijos žanrai su jų uždaviniais, dviem paantraščių lygiais: [atverti užklausą](/advanced_search?queryLabel=onto-genre-geometry).
 
 Susiję: žanrai nurodo savo tipines [temas](/content/ontology_topics) ir
 [modelius](/content/ontology_models).

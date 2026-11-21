@@ -52,3 +52,13 @@ are shown and a query is stopped after 10 seconds.
 
 The `matf*` presets are the `problems.rq` files of `nms-courses/docs`, with
 their grouping variable (`?families` or `?family`) renamed to `?section`.
+
+## Examples of the ontology documentation
+
+The SPARQL examples of the ontology documentation
+(`eliozo/content/ontology*/content_{lv,en,lt}.md`) live in `40_ontology.yaml`,
+one submenu per classifier page. The documents do not embed the queries but
+link to them: `[atvērt vaicājumu](/advanced_search?queryLabel=onto-topic-congruence)`.
+To add an example, add a labelled query there and link it from the page in all
+three languages; `tests/test_ontology_docs.py` checks that every link names an
+existing preset and that the documents contain no embedded `SELECT` queries.

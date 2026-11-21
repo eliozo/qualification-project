@@ -32,36 +32,11 @@ jau lieto galvenokārt šī saraksta nosaukumus.
 
 ## Piemēri
 
-Uzdevumi, kuros izmantota gan dalāmība, gan pirmskaitļi:
+Uzdevumi, kuros izmantota gan dalāmība, gan pirmskaitļi: [atvērt vaicājumu](/advanced_search?queryLabel=onto-concept-divisibility-primes).
 
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:concepts eliozo:TRM-divisibility, eliozo:TRM-primes .
-    }
-    ORDER BY ?problemID
+Uzdevumi, sagrupēti pēc jēdzieniem, ar latvisko terminu kā apakšvirsrakstu: [atvērt vaicājumu](/advanced_search?queryLabel=onto-concept-by-term).
 
-Uzdevumi, sagrupēti pēc jēdzieniem, ar latvisko terminu kā apakšvirsrakstu:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID (?term AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:concepts ?concept .
-      ?concept eliozo:termLV ?term .
-    }
-    ORDER BY ?term ?problemID
-
-Uzdevumi, kuru automātiski ieteiktajos jēdzienos ir "Invariant":
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:_hasSolutionConcept "Invariant" .
-    }
-    ORDER BY ?problemID
+Uzdevumi, kuru automātiski ieteiktajos jēdzienos ir "Invariant": [atvērt vaicājumu](/advanced_search?queryLabel=onto-concept-suggested-invariant).
 
 Saistīts: [modeļi](/content/ontology_models) atsaucas uz jēdzieniem, no kuriem tie
 veidoti.

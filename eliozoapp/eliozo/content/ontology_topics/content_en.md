@@ -34,34 +34,10 @@ point to them. Add `eliozo:topicNumber ?n` to a pattern to keep only the main tr
 ## Examples
 
 Problems on congruences (`IntegerCongruence` and all topics under it), grouped by
-the narrowest topic:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?name AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:topic ?topic .
-      ?topic skos:broader* eliozo:IntegerCongruence ;
-             eliozo:topicName ?name .
-    }
-    ORDER BY ?name ?problemID
+the narrowest topic: [open the query](/advanced_search?queryLabel=onto-topic-congruence).
 
 Problems that have a topic but no [method](/content/ontology_methods) yet, grouped by
-top-level topic:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?rootName AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:topic ?topic .
-      ?topic skos:broader* ?root .
-      ?root eliozo:topicName ?rootName .
-      FILTER NOT EXISTS { ?root skos:broader ?anyParent }
-      FILTER NOT EXISTS { ?p eliozo:method ?anyMethod }
-    }
-    ORDER BY ?rootName ?problemID
+top-level topic: [open the query](/advanced_search?queryLabel=onto-topic-without-method).
 
 Related: a topic often comes with typical [methods](/content/ontology_methods);
 [genres](/content/ontology_genres) and [concepts](/content/ontology_concepts) refer

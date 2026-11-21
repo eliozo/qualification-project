@@ -1,9 +1,10 @@
 """Tests for the ontology documentation under ``eliozo/content/ontology*``.
 
-Every document must exist in all three languages, render, link only to pages
-that exist, and contain SPARQL examples that the advanced search accepts.
-The examples are only parsed here (on the small fixture store), not checked for
-results: the real problem base changes with every import.
+Every document must exist in all three languages, render and link only to pages
+that exist. The SPARQL examples are not embedded in the documents: they are
+presets of the advanced search (``sparql_presets/40_ontology.yaml``), linked as
+``/advanced_search?queryLabel=...``; the presets themselves are checked in
+test_advanced_search_page.py.
 """
 
 import glob
@@ -11,15 +12,13 @@ import os
 import re
 
 import pytest
-from pyoxigraph import Store
-
-from eliozo_dao.advanced_search_repository import check_query, collect_rows
 
 CONTENT_ROOT = os.path.join(os.path.dirname(__file__), '..', 'eliozo', 'content')
 LANGS = ('en', 'lv', 'lt')
 DOCS = sorted(os.path.basename(d) for d in glob.glob(os.path.join(CONTENT_ROOT, 'ontology*'))
               if os.path.isdir(d))
 LINK_RE = re.compile(r'\]\((/[^)\s]*)\)')
+QUERY_LABEL_RE = re.compile(r'\]\(/advanced_search\?queryLabel=([^)\s&#]+)\)')
 
 
 def _text(doc, lang):
@@ -66,18 +65,28 @@ def test_document_exists_and_has_no_stray_dollars(doc, lang):
 
 @pytest.mark.parametrize('doc', DOCS)
 @pytest.mark.parametrize('lang', LANGS)
-def test_sparql_examples_are_accepted(doc, lang):
-    store = Store()
-    for query in _sparql_examples(_text(doc, lang)):
-        check_query(query)
-        collect_rows(store, query, 10)
+def test_no_embedded_sparql_examples(doc, lang):
+    # Examples belong in sparql_presets/40_ontology.yaml, linked by queryLabel.
+    assert _sparql_examples(_text(doc, lang)) == []
 
 
-def test_languages_have_the_same_examples():
-    # Translations change the comments and subtitles, not the query structure.
+@pytest.mark.parametrize('doc', DOCS)
+@pytest.mark.parametrize('lang', LANGS)
+def test_query_links_name_existing_presets(doc, lang):
+    from blueprints.advanced_search import load_presets, preset_by_label
+    menu, queries = load_presets(lang)
+    for label in QUERY_LABEL_RE.findall(_text(doc, lang)):
+        assert preset_by_label(menu, queries, label) is not None, (doc, lang, label)
+
+
+def test_languages_link_the_same_examples():
+    # The overview (ontology) is left out: its Latvian version lists the
+    # examples of all subpages, the other languages are not yet restructured.
     for doc in DOCS:
-        counts = {lang: len(_sparql_examples(_text(doc, lang))) for lang in LANGS}
-        assert len(set(counts.values())) == 1, (doc, counts)
+        if doc == 'ontology':
+            continue
+        labels = {lang: sorted(set(QUERY_LABEL_RE.findall(_text(doc, lang)))) for lang in LANGS}
+        assert labels['en'] == labels['lv'] == labels['lt'], (doc, labels)
 
 
 @pytest.mark.parametrize('lang', LANGS)

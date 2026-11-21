@@ -114,22 +114,9 @@ viršūnę po juo.
   sugrupuoja po paantraštėmis.
 
 Pavyzdys: 5–7 klasių uždaviniai apie dalumą (tema `Divisibility` ir viskas po ja),
-sugrupuoti pagal temas:
+sugrupuoti pagal temas: [atverti užklausą](/advanced_search?queryLabel=onto-divisibility-grades-5-7).
 
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?topicName AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:problemGrade ?grade ;
-         eliozo:topic ?topic .
-      ?topic skos:broader* eliozo:Divisibility ;
-             eliozo:topicName ?topicName .
-      FILTER (?grade >= 5 && ?grade <= 7)
-    }
-    ORDER BY ?topicName ?problemID
-
-Daugiau pavyzdžių yra meniu „Paruoštos užklausos“ virš užklausos lauko.
+Visi šios dokumentacijos pavyzdžiai yra ir meniu „Paruoštos užklausos > Ontologija“ virš užklausos lauko.
 
 ## Iš kur gaunami duomenys
 

@@ -39,30 +39,13 @@ A question type node has `eliozo:questionID`, `eliozo:questionName` (Latvian),
 
 ## Examples
 
-"Find all" problems in number theory:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    SELECT ?problemID
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:questionType "FindAll" ;
-         eliozo:domain "NT" .
-    }
-    ORDER BY ?problemID
+"Find all" problems in number theory: [open the query](/advanced_search?queryLabel=onto-qtype-find-all-nt).
 
 Because the problem holds the ID as text, join it with the vocabulary through
-`eliozo:questionID`, e.g. to group all problems of the `Find` group by type:
+`eliozo:questionID`, e.g. to group all problems of the `Find` group by type: [open the query](/advanced_search?queryLabel=onto-qtype-find-group).
 
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT ?problemID (?type AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:questionType ?type .
-      ?q eliozo:questionID ?type ;
-         skos:broader* eliozo:Find .
-    }
-    ORDER BY ?type ?problemID
+Multiple-choice test problems that can be turned into "find the largest or smallest"
+problems with a full solution: [open the query](/advanced_search?queryLabel=onto-qtype-find-optimal-choice).
 
 Related: the question type is in the problem statement layer, next to
 [genres](/content/ontology_genres) and [concepts](/content/ontology_concepts); it

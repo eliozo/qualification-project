@@ -43,32 +43,9 @@ Automatiškai pasiūlyta savybė `eliozo:_hasReasoningMethod` (paprastas tekstas
 
 ## Pavyzdžiai
 
-Invariantų uždaviniai, sugrupuoti pagal invarianto rūšį:
+Invariantų uždaviniai, sugrupuoti pagal invarianto rūšį: [atverti užklausą](/advanced_search?queryLabel=onto-method-invariants).
 
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?name AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:method ?method .
-      ?method skos:broader* eliozo:MTH_InvariantMethod ;
-              eliozo:methodName ?name .
-    }
-    ORDER BY ?name ?problemID
-
-Indukcijos uždaviniai 9–12 klasėms, sugrupuoti pagal klases:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID ?grade (CONCAT(STR(?grade), " klasė") AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:problemGrade ?grade ;
-         eliozo:method ?method .
-      ?method skos:broader* eliozo:MTH_MathematicalInduction .
-      FILTER (?grade >= 9)
-    }
-    ORDER BY ?grade ?problemID
+Indukcijos uždaviniai 9–12 klasėms, sugrupuoti pagal klases: [atverti užklausą](/advanced_search?queryLabel=onto-method-induction).
 
 Susiję: [užuominų tipai](/content/ontology_hint_types) siūlo metodus;
 [modelis](/content/ontology_models) nurodo metodą, kuris jam paprastai taikomas.

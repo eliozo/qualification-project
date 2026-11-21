@@ -35,34 +35,10 @@ neattiecas neviens uzdevums. Lai paturētu tikai galveno koku, pievienojiet šab
 ## Piemēri
 
 Uzdevumi par kongruencēm (`IntegerCongruence` un visi temati zem tā), sagrupēti pēc
-šaurākā temata:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?name AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:topic ?topic .
-      ?topic skos:broader* eliozo:IntegerCongruence ;
-             eliozo:topicName ?name .
-    }
-    ORDER BY ?name ?problemID
+šaurākā temata: [atvērt vaicājumu](/advanced_search?queryLabel=onto-topic-congruence).
 
 Uzdevumi, kuriem ir temats, bet vēl nav [metodes](/content/ontology_methods),
-sagrupēti pēc augšējā līmeņa temata:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?rootName AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:topic ?topic .
-      ?topic skos:broader* ?root .
-      ?root eliozo:topicName ?rootName .
-      FILTER NOT EXISTS { ?root skos:broader ?anyParent }
-      FILTER NOT EXISTS { ?p eliozo:method ?anyMethod }
-    }
-    ORDER BY ?rootName ?problemID
+sagrupēti pēc augšējā līmeņa temata: [atvērt vaicājumu](/advanced_search?queryLabel=onto-topic-without-method).
 
 Saistīts: tematam bieži ir tipiskas [metodes](/content/ontology_methods);
 [žanri](/content/ontology_genres) un [jēdzieni](/content/ontology_concepts) atsaucas

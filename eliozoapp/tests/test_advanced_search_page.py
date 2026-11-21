@@ -53,12 +53,35 @@ def test_unknown_query_label(client):
     assert 'no-such-preset' in html and 'alert-danger' in html
 
 
-def test_all_presets_have_unique_labels():
+def _preset_items(items):
+    """All query items of a preset file, including those in submenus."""
+    for item in items:
+        if 'items' in item:
+            yield from _preset_items(item['items'])
+        else:
+            yield item
+
+
+def _all_preset_items():
     import glob, os, yaml
-    from blueprints.advanced_search import PRESET_LABEL_RE, PRESETS_DIR
-    labels = []
-    for path in glob.glob(os.path.join(PRESETS_DIR, '*.yaml')):
+    from blueprints.advanced_search import PRESETS_DIR
+    for path in sorted(glob.glob(os.path.join(PRESETS_DIR, '*.yaml'))):
         with open(path, encoding='utf-8') as f:
-            labels += [item.get('label') for item in yaml.safe_load(f)['items'] if 'query' in item]
+            yield from _preset_items(yaml.safe_load(f)['items'])
+
+
+def test_all_presets_have_unique_labels():
+    from blueprints.advanced_search import PRESET_LABEL_RE
+    labels = [item.get('label') for item in _all_preset_items() if 'query' in item]
     assert all(l and PRESET_LABEL_RE.fullmatch(l) for l in labels), labels
     assert len(labels) == len(set(labels))
+
+
+def test_all_presets_are_accepted():
+    # Parsed and run on an empty store only: results depend on the real problem base.
+    from pyoxigraph import Store
+    from eliozo_dao.advanced_search_repository import check_query, collect_rows
+    store = Store()
+    for item in _all_preset_items():
+        check_query(item['query'])
+        collect_rows(store, item['query'], 10)

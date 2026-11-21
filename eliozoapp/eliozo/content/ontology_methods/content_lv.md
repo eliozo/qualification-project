@@ -43,32 +43,9 @@ Automātiski ieteiktā īpašība `eliozo:_hasReasoningMethod` (vienkāršs teks
 
 ## Piemēri
 
-Invariantu uzdevumi, sagrupēti pēc invarianta veida:
+Invariantu uzdevumi, sagrupēti pēc invarianta veida: [atvērt vaicājumu](/advanced_search?queryLabel=onto-method-invariants).
 
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID (?name AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:method ?method .
-      ?method skos:broader* eliozo:MTH_InvariantMethod ;
-              eliozo:methodName ?name .
-    }
-    ORDER BY ?name ?problemID
-
-Indukcijas uzdevumi 9.–12. klasei, sagrupēti pa klasēm:
-
-    PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-    PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?problemID ?grade (CONCAT(STR(?grade), ". klase") AS ?section)
-    WHERE {
-      ?p eliozo:problemID ?problemID ;
-         eliozo:problemGrade ?grade ;
-         eliozo:method ?method .
-      ?method skos:broader* eliozo:MTH_MathematicalInduction .
-      FILTER (?grade >= 9)
-    }
-    ORDER BY ?grade ?problemID
+Indukcijas uzdevumi 9.–12. klasei, sagrupēti pa klasēm: [atvērt vaicājumu](/advanced_search?queryLabel=onto-method-induction).
 
 Saistīts: [norāžu tipi](/content/ontology_hint_types) iesaka metodes;
 [modelis](/content/ontology_models) atsaucas uz metodi, ko tam parasti lieto.

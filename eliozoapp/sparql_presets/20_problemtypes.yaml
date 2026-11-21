@@ -5,15 +5,15 @@ items:
   - title: {lv: "Jautājuma tips", en: "Question type", lt: "Klausimo tipas"}
     label: question-types
     query: |
-      # Katram jautājuma tipam (QTY_...) - ne vairāk kā 8 uzdevumi bez attēliem
-      # (7.-8. klase, kopš 2000. gada; jaunākie vispirms), lai neviens tips
-      # neaizņem visu rezultātu limitu.
+      # For each question type (QTY_...) - at most 8 problems without images
+      # (grades 7-8, since 2000; newest first), so that no single type
+      # takes up the whole result limit.
       #
-      # SPARQL nav "TOP N katrā grupā". Šeit: (1) apakšvaicājums sakārto
-      # kandidātus; (2) GROUP_CONCAT savāc katra tipa ID vienā rindā, un REPLACE
-      # atstāj pirmos 8 (regulārā izteiksme: 7 reizes "ID atstarpe", tad vēl ID);
-      # (3) uzdevumus atlasa, pārbaudot, vai to ID ir šajā rindā.
-      # ?section ir jautājuma tipa nosaukums no vārdnīcas (eliozo:Question).
+      # SPARQL has no "TOP N per group". Here: (1) a subquery orders the
+      # candidates; (2) GROUP_CONCAT collects the IDs of each type into one string,
+      # and REPLACE keeps the first 8 (regex: 7 times "ID space", then one more ID);
+      # (3) problems are selected by checking whether their ID is in that string.
+      # ?section is the name of the question type from the vocabulary (eliozo:Question).
       PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
       SELECT ?problemID ?section
       WHERE {
@@ -30,7 +30,7 @@ items:
                    eliozo:problemText ?text .
                 FILTER (?year >= 2000 && ?grade >= 7 && ?grade <= 8)
                 FILTER (LANGMATCHES(LANG(?text), "lv"))
-                FILTER (!CONTAINS(?text, "!["))       # nav attēla
+                FILTER (!CONTAINS(?text, "!["))       # no image
               }
               ORDER BY DESC(?year) ?id
             }
@@ -51,7 +51,7 @@ items:
   - title: {lv: "Vairāki atrisinājumi", en: "Multiple solutions", lt: "Keli sprendimai"}
     label: multiple-solutions
     query: |
-      # Uzdevumi ar vismaz diviem atrisinājumiem, sagrupēti pa klasēm.
+      # Problems with at least two solutions, grouped by grade.
       PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
       SELECT ?problemID (CONCAT(STR(?grade), ". klase") AS ?section)
       WHERE {
@@ -68,19 +68,44 @@ items:
         }
       }
       ORDER BY ?grade ?problemID
-  - title: {lv: "Rūtiņu režģi", en: "Grid problems", lt: "Langelių lentelės"}
-    label: grid-problems
+  - title: {lv: "Attēli formulējumā", en: "Images in the statement", lt: "Paveikslai formuluotėje"}
+    label: images-in-statement
     query: |
-      # Uzdevumi par režģiem un rūtiņu figūrām: žanri 3.16.0-3.16.4
-      # (kā lapā "Pēc žanra"), sagrupēti pa žanriem.
+      # Problems with an image in the statement (in at least one language): a Markdown
+      # image ![...](...) or HTML <img>. Grouped by olympiad or book.
       PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
-      SELECT ?problemID (CONCAT(?number, " ", ?name) AS ?section)
+      SELECT DISTINCT ?problemID ?section
       WHERE {
-        ?genre a eliozo:Domain ;
-               eliozo:domainNumber ?number ;
-               eliozo:domainName ?name .
-        FILTER (STRSTARTS(?number, "3.16."))
-        ?p eliozo:subdomain ?genre ;
-           eliozo:problemID ?problemID .
+        ?p a eliozo:Problem ;
+           eliozo:problemID ?problemID ;
+           eliozo:problemText ?text .
+        FILTER (CONTAINS(?text, "![") || CONTAINS(?text, "<img"))
+        OPTIONAL { ?p eliozo:olympiad ?olympiad }
+        OPTIONAL { ?p eliozo:problemBook ?book }
+        BIND (COALESCE(?olympiad, ?book, "Citi") AS ?section)
       }
-      ORDER BY ?number ?problemID
+      ORDER BY ?section ?problemID
+  - title: {lv: "Attēli formulējumā vai atrisinājumos", en: "Images in the statement or solutions", lt: "Paveikslai formuluotėje ar sprendimuose"}
+    label: images-anywhere
+    query: |
+      # Problems with an image in the statement or in any of the solutions (Markdown
+      # ![...](...) or HTML <img>, any language). ?section tells where the image is.
+      PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
+      SELECT ?problemID ?section
+      WHERE {
+        ?p a eliozo:Problem ;
+           eliozo:problemID ?problemID .
+        BIND (EXISTS {
+          ?p eliozo:problemText ?text .
+          FILTER (CONTAINS(?text, "![") || CONTAINS(?text, "<img"))
+        } AS ?inStatement)
+        BIND (EXISTS {
+          ?p eliozo:problemSolution ?solution .
+          ?solution eliozo:solutionText ?solutionText .
+          FILTER (CONTAINS(?solutionText, "![") || CONTAINS(?solutionText, "<img"))
+        } AS ?inSolution)
+        FILTER (?inStatement || ?inSolution)
+        BIND (IF(?inStatement && ?inSolution, "1. Formulējumā un atrisinājumā",
+                 IF(?inStatement, "2. Tikai formulējumā", "3. Tikai atrisinājumā")) AS ?section)
+      }
+      ORDER BY ?section ?problemID
