@@ -1,19 +1,22 @@
-from flask import Blueprint, abort, render_template, request, send_from_directory, session
-from eliozo_dao.references_repository import getSPARQLSources
+from flask import (Blueprint, abort, redirect, render_template, request, send_from_directory,
+                   session, url_for)
 from eliozo.webmd_utils import fix_image_links, mathBeautify
 import os
 import re
 import markdown
 from eliozo.webmd_utils import proc_markdown
-from eliozo.content_docs import (CONTENT_ROOT, DOC_NAME_RE, ONTOLOGY_DOC, ONTOLOGY_SUBPAGES,
+from eliozo.content_docs import (ABOUT_PROJECT_DOC, CONTENT_ROOT, DOC_NAME_RE, ONTOLOGY_DOC,
+                                 ONTOLOGY_SUBPAGES,
                                  content_doc_title, find_content_file)
+
+# Documents shown under the nested menu "Info > Advanced Search" (msgid in navigation.py).
+ADVANCED_SEARCH_DOCS = (ONTOLOGY_DOC, *ONTOLOGY_SUBPAGES)
 
 references_bp = Blueprint('references_bp', __name__)
 
 # Page titles for the documents reachable from the menu. The values must match
 # the msgids used in navigation.py so that the breadcrumb is translated too.
-# The ontology documents use their own first heading instead; other documents
-# that are not listed fall back to their directory name.
+# Other documents use their own first heading, or else their directory name.
 CONTENT_DOC_TITLES = {
     'search_by_keyword': 'Exact Search',
     'search_by_regex': 'Regex Search',
@@ -32,11 +35,9 @@ _CONTENT_FILE_RE = re.compile(r'[A-Za-z0-9_-]+\.(?:svg|png|jpg|jpeg|gif)')
 
 
 def _doc_title(docname, lang):
-    if docname == ONTOLOGY_DOC or docname in ONTOLOGY_SUBPAGES:
-        title = content_doc_title(docname, lang)
-        if title:
-            return title
-    return CONTENT_DOC_TITLES.get(docname, docname.replace('_', ' ').title())
+    if docname in CONTENT_DOC_TITLES:
+        return CONTENT_DOC_TITLES[docname]
+    return content_doc_title(docname, lang) or docname.replace('_', ' ').title()
 
 
 def render_content_file(path):
@@ -46,37 +47,16 @@ def render_content_file(path):
     html_content = proc_markdown(text)
     return mathBeautify(html_content)
 
+# The former "References" and "Contact Information" pages are now sections of
+# the "About the Project" document; the old URLs stay valid.
 @references_bp.route('/references', methods=['GET'])
 def getReferences():
-    # return render_template("info.html")
-    lang = session.get('lang', 'lv')
-    sources = getSPARQLSources(lang)
-    template_context = {
-        'active': 'about_us',
-        'navlinks': [
-            { 'title': INFO_MENU_TITLE },
-            { 'url': 'references_bp.getReferences', 'title': 'References'}
-        ],
-        'lang': lang,
-        'sources': sources,
-        'title': 'Atsauces'
-    }
-    return render_template('references_content.html', **template_context)
+    return redirect(url_for('references_bp.getContentPage', docname=ABOUT_PROJECT_DOC))
 
 
 @references_bp.route('/contact_info', methods=['GET'])
 def getContactInfo():
-    lang = session.get('lang', 'lv')
-    template_context = {
-        'active': 'about_us',
-        'navlinks': [
-            {'title': INFO_MENU_TITLE},
-            {'url': 'references_bp.getContactInfo', 'title': 'Contact Information'}
-        ],
-        'lang': lang,
-        'title': 'Contact Information'
-    }
-    return render_template('contactinfo_content.html', **template_context)
+    return redirect(url_for('references_bp.getContentPage', docname=ABOUT_PROJECT_DOC))
 
 
 @references_bp.route('/ontology', methods=['GET'])
@@ -107,10 +87,13 @@ def getContentPage(docname):
     navlinks = [{'title': INFO_MENU_TITLE}]
     if docname in PLAIN_SEARCH_DOCS:
         navlinks.append({'title': 'Plain Search'})
-    if docname in ONTOLOGY_SUBPAGES:
-        navlinks.append({'url': 'references_bp.getOntology', 'title': _doc_title(ONTOLOGY_DOC, lang)})
-    navlinks.append({'url': 'references_bp.getContentPage',
-                     'params': {'docname': docname}, 'title': title})
+    elif docname in ADVANCED_SEARCH_DOCS:
+        navlinks.append({'title': 'Advanced Search'})
+    if docname == ONTOLOGY_DOC:
+        navlinks.append({'url': 'references_bp.getOntology', 'title': title})
+    else:
+        navlinks.append({'url': 'references_bp.getContentPage',
+                         'params': {'docname': docname}, 'title': title})
     template_context = {
         'active': 'about_us',
         'navlinks': navlinks,

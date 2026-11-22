@@ -31,12 +31,14 @@ def _links(menu):
     return re.findall(r'<a href="([^"]+)">\s*([^<]+?)\s*</a>', menu)
 
 
-def test_ontology_menu_lists_the_overview_and_its_subpages(client):
+def test_ontology_menu_lists_the_intro_and_its_siblings(client):
     _set_lang(client, 'lv')
     html = client.get('/content/search_by_keyword').get_data(as_text=True)
     menu = _submenu(html)
+    # No page of its own: the label is the toggle button, not a link
+    assert re.search(r'<button[^>]*nav-submenu-label[^>]*>\s*Paplašinātā meklēšana', menu)
     links = _links(menu)
-    assert links[0] == ('/ontology', 'Paplašinātā meklēšana')
+    assert links[0] == ('/ontology', 'Ievads ontoloģijā')
     assert ('/content/ontology_question_types', 'Jautājumu tipi') in links
     assert len(links) == 10
     assert re.search(r'<ul class="nav-submenu-list"[^>]*\bhidden\b', menu)   # folded elsewhere
@@ -49,8 +51,20 @@ def test_ontology_menu_is_unfolded_on_a_subpage(client):
     assert 'aria-expanded="true"' in menu
     assert not re.search(r'<ul class="nav-submenu-list"[^>]*\bhidden\b', menu)
     assert re.search(r'<li class="current">\s*<a href="/content/ontology_question_types">Question types</a>', menu)
-    # Breadcrumb: Info > Ontology > Question types
+    # Breadcrumb: Info > Advanced Search > Question types
     assert re.search(r'<b>Question types</b>', html)
+
+
+def test_info_menu_starts_with_the_project_and_ends_with_the_sparql_help(client):
+    _set_lang(client, 'en')
+    html = client.get('/').get_data(as_text=True)
+    start = html.index('href="/content/about_project"')
+    assert start < html.index('href="/content/search_by_keyword"')
+    # References and Contact Information are sections of About the Project now
+    assert 'href="/references"' not in html and 'href="/contact_info"' not in html
+    assert html.index('href="/content/ontology_hints"') < html.index('href="/content/about_advanced_search"')
+    assert re.search(r'<a href="/content/about_project">\s*About the Project\s*</a>', html)
+    assert re.search(r'<a href="/content/about_advanced_search">\s*About Advanced Search\s*</a>', html)
 
 
 def test_plain_search_menu_is_a_node_with_the_three_search_modes(client):
@@ -74,3 +88,10 @@ def test_main_page_radio_labels(client):
     html = client.get('/').get_data(as_text=True)
     for label in ('Exact', 'Regex', 'Semantic'):
         assert re.search(r'name="searchMode"[^>]*>\s*%s\s*</label>' % label, html)
+
+
+@pytest.mark.parametrize('path', ['/references', '/contact_info'])
+def test_old_info_pages_redirect_to_about_project(client, path):
+    response = client.get(path)
+    assert response.status_code == 302
+    assert response.headers['Location'].endswith('/content/about_project')

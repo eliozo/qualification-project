@@ -1,8 +1,8 @@
-# Ieteikumi
+# Norādes
 
-**Ieteikumi** pieder vienam uzdevumam: ieteikumi parasti veido virkni no vispārīgāka
-līdz konkrētākajam (*ieteikumu kāpnes*, hint ladder). Risinātājs, kurš iestrēdzis, 
-var tās atvērt pa vienai. 
+**Norādes** pieder vienam uzdevumam: ieteikumi parasti veido virkni no vispārīgāka
+līdz konkrētākajam (*ieteikumu kāpnes*, hint ladder). Risinātājs var tās atvērt pa vienai, 
+bet var arī uzreiz skatīties atrisinājumu (abos gadījumos viņš redzēs "spoiler alert"). 
 [Klasifikatoru grafā](/ontology) ieteikumu kāpnes ir risinātāja atbalsts: to ieteikumi
 mēdz norādīt [modeļus](/content/ontology_models) un [metodes](/content/ontology_methods).
 

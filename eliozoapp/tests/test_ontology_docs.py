@@ -1,4 +1,5 @@
-"""Tests for the ontology documentation under ``eliozo/content/ontology*``.
+"""Tests for the ontology documentation under ``eliozo/content/ontology*`` and the
+"About the project" / "About Advanced Search" documents next to it.
 
 Every document must exist in all three languages, render and link only to pages
 that exist. The SPARQL examples are not embedded in the documents: they are
@@ -15,8 +16,8 @@ import pytest
 
 CONTENT_ROOT = os.path.join(os.path.dirname(__file__), '..', 'eliozo', 'content')
 LANGS = ('en', 'lv', 'lt')
-DOCS = sorted(os.path.basename(d) for d in glob.glob(os.path.join(CONTENT_ROOT, 'ontology*'))
-              if os.path.isdir(d))
+DOCS = sorted([os.path.basename(d) for d in glob.glob(os.path.join(CONTENT_ROOT, 'ontology*'))
+               if os.path.isdir(d)] + ['about_advanced_search', 'about_project'])
 LINK_RE = re.compile(r'\]\((/[^)\s]*)\)')
 QUERY_LABEL_RE = re.compile(r'\]\(/advanced_search\?queryLabel=([^)\s&#]+)\)')
 
@@ -51,7 +52,7 @@ def _set_lang(client, lang):
 
 
 def test_all_metadata_types_are_documented():
-    assert DOCS == ['ontology', 'ontology_concepts', 'ontology_genres', 'ontology_hint_types',
+    assert DOCS == ['about_advanced_search', 'about_project', 'ontology', 'ontology_concepts', 'ontology_genres', 'ontology_hint_types',
                     'ontology_hints', 'ontology_methods', 'ontology_models', 'ontology_olympiads',
                     'ontology_question_types', 'ontology_topics']
 
@@ -80,11 +81,7 @@ def test_query_links_name_existing_presets(doc, lang):
 
 
 def test_languages_link_the_same_examples():
-    # The overview (ontology) is left out: its Latvian version lists the
-    # examples of all subpages, the other languages are not yet restructured.
     for doc in DOCS:
-        if doc == 'ontology':
-            continue
         labels = {lang: sorted(set(QUERY_LABEL_RE.findall(_text(doc, lang)))) for lang in LANGS}
         assert labels['en'] == labels['lv'] == labels['lt'], (doc, labels)
 
@@ -107,9 +104,18 @@ def test_pages_render_and_links_resolve(client, lang):
             urls.match(link.split('?')[0])
 
 
-def test_subpage_breadcrumb_goes_through_ontology(client):
-    html = client.get('/content/ontology_topics').get_data(as_text=True)
-    assert 'href="/ontology"' in html
+@pytest.mark.parametrize('path', ['/ontology', '/content/ontology_topics'])
+def test_breadcrumb_goes_through_advanced_search(client, path):
+    _set_lang(client, 'en')
+    html = client.get(path).get_data(as_text=True)
+    assert re.search(r'Info\s*&gt;\s*Advanced Search\s*&gt;', html)
+
+
+@pytest.mark.parametrize('path', ['/content/about_project', '/content/about_advanced_search'])
+def test_about_pages_sit_directly_under_info(client, path):
+    _set_lang(client, 'en')
+    html = client.get(path).get_data(as_text=True)
+    assert re.search(r'Info\s*&gt;\s*<a href="%s">\s*<b>' % path, html)
 
 
 def test_ontology_page_shows_the_diagram(client):
@@ -130,7 +136,7 @@ def test_content_file_route_serves_only_existing_images(client, path):
     assert client.get(path).status_code == 404
 
 
-def test_advanced_search_links_to_ontology(client):
+def test_advanced_search_links_to_its_help(client):
     html = client.get('/advanced_search').get_data(as_text=True)
-    assert 'class="ontology-help" href="/ontology"' in html
+    assert 'class="ontology-help" href="/content/about_advanced_search"' in html
     assert 'blue_question_mark.png' in html

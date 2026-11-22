@@ -12,8 +12,14 @@ CONTENT_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'content
 # name can never escape CONTENT_ROOT.
 DOC_NAME_RE = re.compile(r'[A-Za-z0-9_-]+')
 
-# The overview of the metadata types and its child documents, in the order of
-# the table in ontology/content_*.md. Shown as a nested menu "Info > Advanced Search".
+# Top-level documents under "Info": about the project (first item) and the
+# help on writing SPARQL queries for the Advanced Search page.
+ABOUT_PROJECT_DOC = 'about_project'
+ABOUT_ADVANCED_SEARCH_DOC = 'about_advanced_search'
+
+# The introduction to the ontology and the documents of the classifiers, in the
+# order of the table in ontology/content_*.md. They are the leaves of the nested
+# menu "Info > Advanced Search" (the node itself opens no document).
 ONTOLOGY_DOC = 'ontology'
 ONTOLOGY_SUBPAGES = [
     'ontology_topics',

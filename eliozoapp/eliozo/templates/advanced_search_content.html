@@ -75,7 +75,7 @@
     <form class="advanced-search" action="{{ url_for('advanced_search.getAdvancedSearch') }}" method="get">
         <div class="form-group">
             <label for="sparqlQuery">{% trans %}SPARQL query{% endtrans %}</label>
-            <a class="ontology-help" href="{{ url_for('references_bp.getOntology') }}" target="_blank"
+            <a class="ontology-help" href="{{ url_for('references_bp.getContentPage', docname='about_advanced_search') }}" target="_blank"
                 title="{% trans %}Ontology: classes and properties to use in queries{% endtrans %}"><img
                     src="{{ url_for('static', filename='blue_question_mark.png') }}" alt="?"></a>
             {% if presetMenu %}

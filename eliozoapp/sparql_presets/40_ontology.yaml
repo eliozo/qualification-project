@@ -2,12 +2,13 @@
 # See README.md in this directory for the file format.
 #
 # These are the examples of the ontology documentation
-# (eliozo/content/ontology*/content_{lv,en,lt}.md). The documents do not embed
+# (eliozo/content/ontology*/ and about_advanced_search/content_{lv,en,lt}.md;
+# the latter lists all of them). The documents do not embed
 # the queries; they link to them by label: /advanced_search?queryLabel=onto-...
 # When renaming a label, update the links in all three languages (a test
 # checks that every link resolves to a preset).
 #
-# Submenus follow the order of the classifier table on the overview page
+# Submenus follow the order of the classifier table on the ontology intro page
 # (/ontology): overview, topics, methods, genres, question types, concepts,
 # olympiads. Labels are "onto-<classifier>-<what>".
 title: {lv: "Ontoloģija", en: "Ontology", lt: "Ontologija"}
@@ -18,7 +19,7 @@ items:
         label: onto-divisibility-grades-5-7
         query: |
           # Problems on divisibility for grades 5-7 (topic Divisibility and everything
-          # below it), grouped by topic. Documentation: /ontology
+          # below it), grouped by topic. Documentation: /content/about_advanced_search
           PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
           PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
           SELECT DISTINCT ?problemID (?topicName AS ?section)

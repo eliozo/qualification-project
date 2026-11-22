@@ -1,21 +1,25 @@
 from flask import url_for, session, request
 from flask_babel import _
 
-from .content_docs import ONTOLOGY_SUBPAGES, content_doc_title
+from .content_docs import (ABOUT_ADVANCED_SEARCH_DOC, ABOUT_PROJECT_DOC, ONTOLOGY_SUBPAGES,
+                           content_doc_title)
+
+
+def _content_doc_item(doc, lang):
+    """A menu leaf opening a Markdown document; its label is the document's own title."""
+    return {'label': content_doc_title(doc, lang) or doc,
+            'endpoint': 'references_bp.getContentPage', 'url_params': {'docname': doc}}
 
 
 def _advanced_search_menu(lang):
-    """'Advanced Search': the ontology overview (classes and properties for
-    writing SPARQL queries) with its child documents as a nested menu; the
-    item itself opens the overview."""
+    """'Advanced Search': only a navigation node (no page of its own) with the
+    introduction to the ontology first and the classifier documents after it."""
     return {
         'label': _('Advanced Search'),
-        'endpoint': 'references_bp.getOntology',
         'children': [
-            {'label': content_doc_title(doc, lang) or doc,
-             'endpoint': 'references_bp.getContentPage', 'url_params': {'docname': doc}}
-            for doc in ONTOLOGY_SUBPAGES
-        ],
+            {'label': content_doc_title('ontology', lang) or 'ontology',
+             'endpoint': 'references_bp.getOntology'},
+        ] + [_content_doc_item(doc, lang) for doc in ONTOLOGY_SUBPAGES],
     }
 
 
@@ -69,6 +73,7 @@ def get_navigation():
     
     # Check clickcount for Worksheets visibility
     clickcount = session.get('clickcount', 0)
+    lang = session.get('lang', 'lv')
     show_worksheets = clickcount >= 7
 
     nav_items = [
@@ -120,15 +125,15 @@ def get_navigation():
             ]
         },
         {
-            # References, the authors, and help on searching (plain search
-            # modes and the ontology for SPARQL queries)
+            # About the project (with its references and contact information),
+            # and help on searching (plain search modes, the ontology, SPARQL queries)
             'label': _('Info'),
             'active_key': 'about_us',
             'children': [
-                {'label': _('References'), 'endpoint': 'references_bp.getReferences'},
-                {'label': _('Contact Information'), 'endpoint': 'references_bp.getContactInfo'},
+                _content_doc_item(ABOUT_PROJECT_DOC, lang),
                 _plain_search_menu(),
-                _advanced_search_menu(session.get('lang', 'lv')),
+                _advanced_search_menu(lang),
+                _content_doc_item(ABOUT_ADVANCED_SEARCH_DOC, lang),
             ]
         }
     ]
