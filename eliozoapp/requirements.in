@@ -20,3 +20,4 @@ openai               #   ... query embeddings
 mistletoe            # eliozo_dao.import_problems (converter in worksheet-generation-with-llms)
 rdflib               #   ... same
 pytest
+gunicorn             # server only: WSGI server of the site and of sparql_endpoint

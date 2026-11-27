@@ -15,6 +15,9 @@
 # Exceptions to "newest before the cut-off":
 #   cryptography 48.0.1   newer releases have no wheels for Intel Macs
 #
+# Added later: gunicorn 26.2.0 (2026-11-28, REQUEST022 in eliozo-setup) -- the
+# newest release before the same cut-off; pure Python, no dependencies.
+#
 # Refreshing: in a fresh venv, with pip >= 26 and a new cut-off date C,
 #     python -m pip install --only-binary :all: --uploaded-prior-to C -r requirements.in
 #     python -m pip freeze
@@ -33,6 +36,7 @@ click==8.5.0
 cryptography==48.0.1
 Flask==3.1.3
 flask-babel==4.0.0
+gunicorn==26.2.0
 h11==0.16.0
 httpcore2==2.13.1
 httpx2==2.13.1
